@@ -11,7 +11,8 @@ What is PowerShell?
 * PowerShell is easy to learn
 
 
-Each Script Provides:
----------------------
+Script Standards
+----------------
+Each script provides:
 * A comment header containing a description, author, license and source
 * Exits 0 for success, otherwise the error code (mostly 1)
