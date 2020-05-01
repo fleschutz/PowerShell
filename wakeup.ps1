@@ -1,3 +1,5 @@
+# PowerShell script
+
 function Send-WOL 
 { 
 <#  
