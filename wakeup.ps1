@@ -1,4 +1,8 @@
-# PowerShell script
+# PowerShell Script to Wake-up Other Computers
+# --------------------------------------------
+# Author:  Markus Fleschutz
+# Source:  github.com/fleschutz/PowerShell
+# License: CC0
 
 function Send-WOL 
 { 
