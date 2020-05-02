@@ -17,6 +17,10 @@ Each script provides:
 * A comment header containing a description, author, license and source
 * Exits 0 for success, otherwise the error code (mostly 1)
 
+Links
+-----
+* Official PowerShell documentation: https://docs.microsoft.com/en-us/powershell/
+
 License & Copyright
 -------------------
 This open source release is licensed under the CC0 license. All trademarks are the property of their respective owners.
