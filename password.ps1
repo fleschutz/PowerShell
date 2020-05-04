@@ -1,10 +1,9 @@
-# PowerShell Script to Create New Passwords
-# -----------------------------------------
+# PowerShell Script to Create a New Password
+# ------------------------------------------
 # Author:  Markus Fleschutz
 # Source:  github.com/fleschutz/PowerShell
 # License: CC0
 
-$NumPasswords = 1
 $CharsPerPassword = 15
 $MinCharCode = 33
 $MaxCharCode = 126
@@ -18,8 +17,6 @@ function new_password() {
 	return $password
 }
 
-for ($j = 0; $j -lt $NumPasswords; $j++) {
-	$password = new_password
-	write-output $password
-}
+$password = new_password
+write-output $password
 exit 0
