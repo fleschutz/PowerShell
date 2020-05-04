@@ -5,7 +5,7 @@ Useful cross-platform PowerShell scripts, to be used on the command-line (CLI) o
 
 What is PowerShell?
 -------------------
-* PowerShell is open-source: see the repository at github.com/PowerShell/PowerShell 
+* PowerShell is open-source: see the repository at https://github.com/PowerShell/PowerShell 
 * PowerShell is cross-platform: available for Windows, Linux and Mac OS
 * PowerShell is powerful: fully control your computer
 * PowerShell is easy to learn
