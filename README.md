@@ -3,6 +3,17 @@ Collection of PowerShell Scripts
 
 Useful cross-platform PowerShell scripts, to be used on the command-line (CLI) or by automation software like Jenkins.
 
+PowerShell Scripts
+------------------
+* password.ps1 - generates and prints a single new password
+* passwords.ps1 - generates and prints a list of new passwords
+* poweroff.ps1 - halts the local computer, administrator rights might be needed
+* reboot.ps1 - reboots the local computer, administrator rights might be needed
+* speak.ps1 - speaks the given text
+* translate.ps1 - translates the given text
+* txt2wav.ps1 - converts text into a audio .WAV file
+* wakeup.ps1 - sends a magic packet to the given computer, waking him up
+
 What is PowerShell?
 -------------------
 PowerShell is a task automation and configuration management framework from Microsoft, consisting of a command-line shell and associated scripting language. 
