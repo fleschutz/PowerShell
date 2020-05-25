@@ -23,6 +23,10 @@ PowerShell is a task automation and configuration management framework from Micr
 * PowerShell is easy to learn: see the tutorial at https://www.guru99.com/powershell-tutorial.html
 * PowerShell is fully documented: see the official docs at https://docs.microsoft.com/en-us/powershell/
 
+Add Subfolder Scripts/ to the Search Path for Command-line Usage
+----------------------------------------------------------------
+* **Windows:** open the environment variables dialogue and add the full path to Scripts/ to the system environment variable "Path" 
+
 Script Standards
 ----------------
 Each script provides:
