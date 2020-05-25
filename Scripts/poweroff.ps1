@@ -1,3 +1,5 @@
+#!/snap/bin/powershell
+#
 # PowerShell Script to Shutdown the Local Computer
 # ------------------------------------------------
 # Author:  Markus Fleschutz

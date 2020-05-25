@@ -1,3 +1,5 @@
+#!/snap/bin/powershell
+#
 # PowerShell Script to Wake-up Other Computers
 # --------------------------------------------
 # Author:  Markus Fleschutz

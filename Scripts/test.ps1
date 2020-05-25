@@ -1,3 +1,5 @@
+#!/snap/bin/powershell
+#
 # PowerShell Script for Testing
 # -----------------------------
 # Author:  Markus Fleschutz

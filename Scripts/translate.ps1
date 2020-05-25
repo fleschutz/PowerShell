@@ -1,3 +1,5 @@
+#!/snap/bin/powershell
+#
 # PowerShell Script for Translating Texts
 # ---------------------------------------
 # Author:  Markus Fleschutz

@@ -1,3 +1,5 @@
+#!/snap/bin/powershell
+#
 # PowerShell Script to Create New Passwords
 # -----------------------------------------
 # Author:  Markus Fleschutz

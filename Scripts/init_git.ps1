@@ -1,3 +1,4 @@
+#!/snap/bin/powershell
 #
 
 

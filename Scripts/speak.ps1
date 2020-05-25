@@ -1,3 +1,5 @@
+#!/snap/bin/powershell
+#
 # PowerShell Script for Text-To-Speech (TTS)
 # ------------------------------------------
 # Author:  Markus Fleschutz

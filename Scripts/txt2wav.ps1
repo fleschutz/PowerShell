@@ -1,3 +1,5 @@
+#!/snap/bin/powershell
+#
 # PowerShell Script to Convert Text to Audio WAV files
 # ----------------------------------------------------
 # Author:  Markus Fleschutz
