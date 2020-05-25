@@ -25,7 +25,8 @@ PowerShell is a task automation and configuration management framework from Micr
 
 Add Subfolder Scripts/ to the Search Path for Command-line Usage
 ----------------------------------------------------------------
-* **Windows:** open the environment variables dialogue and add the full path to Scripts/ to the system environment variable "Path" 
+* **Windows:** open the environment variables dialogue and add the full path to Scripts/ to the system environment variable "Path"
+* **Bash or sh:** edit .profile in your home directory and add the line: PATH="$PATH:/path/to/PowerShell/Scripts"
 
 Script Standards
 ----------------
