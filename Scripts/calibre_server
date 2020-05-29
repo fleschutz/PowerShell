@@ -1,4 +1,5 @@
 #!/bin/sh
-calibre-server --port 8099 --num-per-page 100 --userdb /home/mf/CalibreUsers.sqlite --log /home/mf/CalibreServer.log --daemonize /home/mf/'Calibre Library'
-echo "Calibre Server started."
+echo "Starting Calibre Server ..."
+calibre-server --port 8099 --num-per-page 100 --userdb $HOME/CalibreUsers.sqlite --log $HOME/CalibreServer.log --daemonize $HOME/'Calibre Library'
+echo "OK - Calibre Server started."
 exit 0
