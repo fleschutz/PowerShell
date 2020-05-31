@@ -1,0 +1,23 @@
+#!/bin/sh
+#
+# Usage: ipfs_publish <directory>
+# NOTE:  requires <ipfs> and <hashdeep>!
+
+DIR=$1
+IPFS_HASHES="IPFS-Hashes.txt"
+DF_HASHES="DF.xml"
+
+echo "(1) Removing Thumbs.db ..."
+nice find "$DIR" -name Thumbs.db -exec rm -rf {} \;
+
+echo "(2) Adding $DIR to IPFS ..."
+nice ipfs add -r "$DIR" > $IPFS_HASHES
+
+echo "(3) Verifying ..."
+nice ipfs pin verify
+
+echo "(4) Calculating digital forensics hashes to $DF_HASHES ..."
+nice hashdeep -c md5,sha1,sha256,tiger,whirlpool -r -d -l -j 1 "$DIR" > $DF_HASHES
+
+echo "DONE - to publish the content, execute: ipfs name publish <HASH>"
+exit 0
