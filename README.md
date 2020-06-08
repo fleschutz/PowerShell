@@ -5,9 +5,11 @@ Useful cross-platform PowerShell scripts, to be used on the command-line (CLI) o
 
 PowerShell Scripts
 ------------------
+* **SHA2556.ps1** - prints the SHA256 checksum of the given file
 * **password.ps1** - generates and prints a single new password
 * **passwords.ps1** - generates and prints a list of new passwords
 * **poweroff.ps1** - halts the local computer, administrator rights might be needed
+* **refresh_dns_cache.ps1** - refreshes the DNS cache with common used domain names
 * **reboot.ps1** - reboots the local computer, administrator rights might be needed
 * **speak.ps1** - speaks the given text
 * **translate.ps1** - translates the given text
