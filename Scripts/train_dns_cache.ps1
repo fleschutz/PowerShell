@@ -6,12 +6,14 @@
 # Source:  github.com/fleschutz/PowerShell
 # License: CC0
 
-$DomainTable = import-csv refresh_domains.csv
+$DomainTable = import-csv domain_table.csv
 
 foreach($Row in $DomainTable) {
 	$DomainName = $Row.Domain
-	write-progress "Training $DomainName ..."
+	write-progress "Training DNS cache: $DomainName ..."
 	$Ignore = dig $DomainName
 }
-write-host "Done."
+
+$Count = $DomainTable.Length
+write-host "OK - trained DNS cache with $Count domain names from domain_table.csv"
 exit 0
