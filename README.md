@@ -9,7 +9,7 @@ PowerShell Scripts
 * **password.ps1** - generates and prints a single new password
 * **passwords.ps1** - generates and prints a list of new passwords
 * **poweroff.ps1** - halts the local computer, administrator rights might be needed
-* **refresh_dns_cache.ps1** - refreshes the DNS cache with common used domain names
+* **train_dns_cache.ps1** - trains the DNS cache with frequently used domain names
 * **reboot.ps1** - reboots the local computer, administrator rights might be needed
 * **speak.ps1** - speaks the given text
 * **translate.ps1** - translates the given text
