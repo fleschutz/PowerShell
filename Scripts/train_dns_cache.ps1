@@ -11,7 +11,7 @@ $DomainTable = import-csv domain_table.csv
 foreach($Row in $DomainTable) {
 	$DomainName = $Row.Domain
 	write-progress "Training DNS cache: $DomainName ..."
-	$Ignore = dig $DomainName
+	$Ignore = Resolve-DnsName $DomainName
 }
 
 $Count = $DomainTable.Length
