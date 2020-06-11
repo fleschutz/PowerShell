@@ -6,9 +6,10 @@
 # Source:  github.com/fleschutz/PowerShell
 # License: CC0
 
-$DomainList = import-csv refresh_domains.csv
+$DomainTable = import-csv refresh_domains.csv
 
-foreach($Domain in $DomainList) {
-	ping -c 1 $Domain
+foreach($Line in $DomainTable) {
+	$Ignore = Invoke-WebRequest $Line.Domain
 }
+write-host "Done."
 exit 0
