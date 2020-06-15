@@ -38,6 +38,10 @@ Each script provides:
 2. prefers command-line options but may ask the user if missing
 3. exits 0 for success, otherwise the error code (mostly 1)
 
+Feedback
+--------
+Send your email feedback to markus [at] fleschutz [dot] de.
+
 License & Copyright
 -------------------
 This open source release is licensed under the CC0 license. All trademarks are the property of their respective owners.
