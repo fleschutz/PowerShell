@@ -17,8 +17,9 @@ Scripts Explained
 * **txt2wav.ps1** - converts text into a audio .WAV file
 * **wakeup.ps1** - sends a magic packet to the given computer, waking him up
 
-What is PowerShell?
--------------------
+Frequently Asked Questions (FAQ)
+--------------------------------
+**What is PowerShell?**
 PowerShell is a task automation and configuration management framework from Microsoft, consisting of a command-line shell and associated scripting language. 
 * PowerShell is cross-platform: available for Windows, Linux and Mac OS
 * PowerShell is powerful: fully control your computer
@@ -26,8 +27,11 @@ PowerShell is a task automation and configuration management framework from Micr
 * PowerShell is easy to learn: see the tutorial at https://www.guru99.com/powershell-tutorial.html
 * PowerShell is fully documented: see the official docs at https://docs.microsoft.com/en-us/powershell/
 
-Add Subfolder Scripts/ to the Search Path for Command-line Usage
-----------------------------------------------------------------
+**How to configure PowerShell as default shell on Linux?**
+Make sure PowerShell is installed, then use the `chsh` as follows:
+`chsh -s /bin/powershell username`
+
+**How to add the subfolder Scripts/ to the search path for command-line usage?**
 * **Windows:** open the environment variables dialogue and add the full path to Scripts/ to the system environment variable "Path"
 * **Bash or sh:** edit .profile in your home directory and add the line: PATH="$PATH:/path/to/PowerShell/Scripts"
 
