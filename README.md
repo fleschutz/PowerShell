@@ -1,17 +1,18 @@
-Collection of PowerShell Scripts
-================================
+Collection of Useful PowerShell Scripts
+=======================================
 
 Useful cross-platform PowerShell scripts, to be used on the command-line (CLI) or by automation software like Jenkins.
 
-PowerShell Scripts
-------------------
-* **SHA2556.ps1** - prints the SHA256 checksum of the given file
+Scripts Explained
+-----------------
+* **SHA256.ps1** - prints the SHA256 checksum of the given file
 * **password.ps1** - generates and prints a single new password
 * **passwords.ps1** - generates and prints a list of new passwords
 * **poweroff.ps1** - halts the local computer, administrator rights might be needed
 * **train_dns_cache.ps1** - trains the DNS cache with frequently used domain names
 * **reboot.ps1** - reboots the local computer, administrator rights might be needed
 * **speak.ps1** - speaks the given text
+* **test.ps1** - simple test script
 * **translate.ps1** - translates the given text
 * **txt2wav.ps1** - converts text into a audio .WAV file
 * **wakeup.ps1** - sends a magic packet to the given computer, waking him up
