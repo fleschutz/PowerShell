@@ -1,11 +1,11 @@
-Collection of PowerShell Scripts
-================================
+Collection of Useful PowerShell Scripts
+=======================================
 
 Useful cross-platform PowerShell scripts, to be used on the command-line (CLI) or by automation software like Jenkins.
 
 PowerShell Scripts
 ------------------
-* **SHA2556.ps1** - prints the SHA256 checksum of the given file
+* **SHA256.ps1** - prints the SHA256 checksum of the given file
 * **password.ps1** - generates and prints a single new password
 * **passwords.ps1** - generates and prints a list of new passwords
 * **poweroff.ps1** - halts the local computer, administrator rights might be needed
