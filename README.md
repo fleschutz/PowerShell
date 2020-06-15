@@ -32,8 +32,8 @@ PowerShell is a task automation and configuration management framework from Micr
 
 **How to configure PowerShell as default shell on Linux?**
 
-Make sure PowerShell is installed, then use the `chsh` as follows:
-* `chsh -s /bin/powershell username`
+Make sure PowerShell is installed, then use the `chsh` commmand as follows:
+* `chsh -s /bin/powershell <username>`
 
 **How to add the subfolder Scripts/ to the search path for command-line usage?**
 
@@ -43,7 +43,7 @@ Make sure PowerShell is installed, then use the `chsh` as follows:
 Script Standards
 ----------------
 Each script provides:
-1. a comment header containing the description, author, source, and license
+1. a comment header containing the syntax, description, author, source, and license
 2. prefers command-line options but may ask the user in case no option is given
 3. exits 0 for success, otherwise the error code (mostly 1)
 
