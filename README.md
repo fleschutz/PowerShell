@@ -22,7 +22,7 @@ What is PowerShell?
 PowerShell is a task automation and configuration management framework from Microsoft, consisting of a command-line shell and associated scripting language. 
 * PowerShell is cross-platform: available for Windows, Linux and Mac OS
 * PowerShell is powerful: fully control your computer
-* PowerShell is open-source: see the repository at https://github.com/PowerShell/PowerShell 
+* PowerShell is open-source: see the Github repository at https://github.com/PowerShell/PowerShell 
 * PowerShell is easy to learn: see the tutorial at https://www.guru99.com/powershell-tutorial.html
 * PowerShell is fully documented: see the official docs at https://docs.microsoft.com/en-us/powershell/
 
