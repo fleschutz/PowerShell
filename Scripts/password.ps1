@@ -1,11 +1,10 @@
 #!/snap/bin/powershell
 #
-# PowerShell Script to Create a New Password
-# ------------------------------------------
-# Author:  Markus Fleschutz
-# Source:  github.com/fleschutz/PowerShell
-# License: CC0
-
+# Description:	generates and prints a single new password
+# Author:	Markus Fleschutz
+# Source:	github.com/fleschutz/PowerShell
+# License:	CC0
+# 
 $CharsPerPassword = 15
 $MinCharCode = 33
 $MaxCharCode = 126

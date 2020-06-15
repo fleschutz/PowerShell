@@ -1,11 +1,10 @@
 #!/snap/bin/powershell
 #
-# PowerShell Script to Convert Text to Audio WAV files
-# ----------------------------------------------------
-# Author:  Markus Fleschutz
-# Source:  github.com/fleschutz/PowerShell
-# License: CC0
-
+# Description:	converts the given text into an audio .WAV file
+# Author:	Markus Fleschutz
+# Source:	github.com/fleschutz/PowerShell
+# License:	CC0
+# 
 # Configuration:
 $Text = "Hello, my name ist Bond, James Bond"
 $Speed = -1 # -10 is slowest, 10 is fastest

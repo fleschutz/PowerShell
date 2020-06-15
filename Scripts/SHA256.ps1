@@ -1,10 +1,10 @@
 #!/snap/bin/powershell
 #
-# PowerShell Script to Calculate SHA256 Hashes for Files
-# ------------------------------------------------------
-# Author:  Markus Fleschutz
-# Source:  github.com/fleschutz/PowerShell
-# License: CC0
+# Description:	prints the SHA256 checksum of the given file
+# Author: 	Markus Fleschutz
+# Source:	github.com/fleschutz/PowerShell
+# License:	CC0
+# 
 param(
 [string]$File)
 

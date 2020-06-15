@@ -1,11 +1,10 @@
 #!/snap/bin/powershell
 #
-# PowerShell Script for Text-To-Speech (TTS)
-# ------------------------------------------
-# Author:  Markus Fleschutz
-# Source:  github.com/fleschutz/PowerShell
-# License: CC0
-
+# Description:	speaks the given text
+# Author:	Markus Fleschutz
+# Source:	github.com/fleschutz/PowerShell
+# License:	CC0
+# 
 $Text = "Hello World!"
 
 $voice = New-Object ComObject SAPI.SPVoice

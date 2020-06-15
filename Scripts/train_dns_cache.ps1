@@ -1,11 +1,10 @@
 #!/snap/bin/powershell
 #
-# PowerShell Script to Train the DNS Cache
-# ----------------------------------------
-# Author:  Markus Fleschutz
-# Source:  github.com/fleschutz/PowerShell
-# License: CC0
-
+# Description:	trains the DNS cache with frequently used domain names
+# Author:	Markus Fleschutz
+# Source:	github.com/fleschutz/PowerShell
+# License:	CC0
+# 
 $DomainTable = import-csv domain_table.csv
 
 foreach($Row in $DomainTable) {
