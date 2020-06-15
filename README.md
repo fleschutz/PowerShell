@@ -12,6 +12,7 @@ Scripts Explained
 * **train_dns_cache.ps1** - trains the DNS cache with frequently used domain names
 * **reboot.ps1** - reboots the local computer, administrator rights might be needed
 * **speak.ps1** - speaks the given text
+* **test.ps1** - simple test script
 * **translate.ps1** - translates the given text
 * **txt2wav.ps1** - converts text into a audio .WAV file
 * **wakeup.ps1** - sends a magic packet to the given computer, waking him up
