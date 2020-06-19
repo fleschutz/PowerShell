@@ -4,8 +4,8 @@
 # NOTE:  requires <ipfs> and <hashdeep>!
 
 DIR=$1
-IPFS_HASHES="IPFS-Hashes.txt"
-DF_HASHES="DF.xml"
+IPFS_HASHES="IPFS_hash_list.txt"
+DF_HASHES="checksum_list.xml"
 
 echo "(1) Removing Thumbs.db ..."
 nice find "$DIR" -name Thumbs.db -exec rm -rf {} \;
