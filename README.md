@@ -1,5 +1,5 @@
-Collection of Useful PowerShell Scripts
-=======================================
+Collection of Useful PowerShell Scripts (CUPS)
+==============================================
 
 Useful cross-platform PowerShell scripts, to be used on the command-line (CLI) or by automation software like Jenkins.
 
