@@ -9,6 +9,7 @@ Scripts Explained
 * **password.ps1** - generates and prints a single new password
 * **passwords.ps1** - generates and prints a list of new passwords
 * **poweroff.ps1** - halts the local computer, administrator rights might be needed
+* **news.ps1** - print the latest news
 * **reboot.ps1** - reboots the local computer, administrator rights might be needed
 * **SHA1.ps1** - prints the SHA1 checksum of the given file
 * **SHA256.ps1** - prints the SHA256 checksum of the given file
