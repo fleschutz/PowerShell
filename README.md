@@ -6,6 +6,7 @@ Useful cross-platform PowerShell scripts, to be used on the command-line (CLI) o
 Scripts Explained
 -----------------
 * **MD5.ps1** - prints the MD5 checksum of the given file
+* **moon.ps1** - prints the current moon phase
 * **password.ps1** - generates and prints a single new password
 * **passwords.ps1** - generates and prints a list of new passwords
 * **poweroff.ps1** - halts the local computer, administrator rights might be needed
@@ -18,6 +19,7 @@ Scripts Explained
 * **train_dns_cache.ps1** - trains the DNS cache with frequently used domain names
 * **translate.ps1** - translates the given text
 * **txt2wav.ps1** - converts text into a audio .WAV file
+* **weather.ps1** - prints the current weather forecast
 * **wakeup.ps1** - sends a magic packet to the given computer, waking him up
 
 Frequently Asked Questions (FAQ)
