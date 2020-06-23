@@ -21,6 +21,7 @@ Scripts Explained
 * **txt2wav.ps1** - converts text into a audio .WAV file
 * **weather.ps1** - prints the current weather forecast
 * **wakeup.ps1** - sends a magic packet to the given computer, waking him up
+* **zipdir.ps1** - creates a zip archive of the given folder
 
 Frequently Asked Questions (FAQ)
 --------------------------------
