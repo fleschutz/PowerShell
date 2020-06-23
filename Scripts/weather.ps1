@@ -6,5 +6,5 @@
 # Source:	github.com/fleschutz/PowerShell
 # License:	CC0
 # 
-(curl de.wttr.in/Berlin -UserAgent "curl" ).Content
+(Invoke-WebRequest http://wttr.in/Berlin -UserAgent "curl" ).Content
 exit 0
