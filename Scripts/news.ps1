@@ -6,14 +6,19 @@
 # Source:	github.com/fleschutz/PowerShell
 # License:	CC0
 # 
-Invoke-WebRequest -Uri 'https://rss.nytimes.com/services/xml/rss/nyt/HomePage.xml' -OutFile news.temp.xml
 
-[xml]$FileContent = Get-Content news.temp.xml
+#$RSS_URL = "http://feeds.skynews.com/feeds/rss/world.xml"
+$RSS_URL = "https://yahoo.com/news/rss/world"
+# $RSS_URL = "https://rss.nytimes.com/services/xml/rss/nyt/HomePage.xml"
+
+[xml]$FileContent = (Invoke-WebRequest -Uri $RSS_URL).Content
+
+write-host ""
+write-host "+++ " $FileContent.rss.channel.title " +++"
+write-host ""
 
 foreach ($item in $FileContent.rss.channel.item) {
-	write-output "+++"$item.title
+	write-host "* "$item.title
 }
-
-remove-item news.temp.xml 
 
 exit 0
