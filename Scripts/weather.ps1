@@ -6,5 +6,6 @@
 # Source:	github.com/fleschutz/PowerShell
 # License:	CC0
 # 
-(Invoke-WebRequest http://wttr.in/Berlin -UserAgent "curl" ).Content
+$GeoLocation="" # empty means determine automatically
+(Invoke-WebRequest http://wttr.in/$GeoLocation -UserAgent "curl" ).Content
 exit 0
