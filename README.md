@@ -39,7 +39,7 @@ Windows 7 and newer do provide PowerShell by default. It's recommended to use it
 
 For installation on alternative platforms (CentOS, Debian, Docker, Fedora, macOS, openSUSE, Red Hat, Ubuntu) visit https://github.com/PowerShell/PowerShell.
 
-To install the scripts (CUPS) click on the green "Code" button or execute:
+Afterward, install the scripts by clicking on the green "Code" button or execute:
 ```
 $ git clone https://github.com/fleschutz/PowerShell
 ```
