@@ -23,9 +23,8 @@ Scripts Explained
 * **wakeup.ps1** - sends a magic packet to the given computer, waking him up
 * **zipdir.ps1** - creates a zip archive of the given folder
 
-Frequently Asked Questions (FAQ)
---------------------------------
-**What is PowerShell?**
+What is PowerShell?
+-------------------
 
 PowerShell is a task automation and configuration management framework from Microsoft, consisting of a command-line shell and associated scripting language. 
 * PowerShell is cross-platform: available for Windows, Linux and Mac OS
@@ -34,12 +33,19 @@ PowerShell is a task automation and configuration management framework from Micr
 * PowerShell is easy to learn: see the tutorial at https://www.guru99.com/powershell-tutorial.html
 * PowerShell is fully documented: see the official docs at https://docs.microsoft.com/en-us/powershell/
 
-**How to configure PowerShell as default shell on Linux?**
+How to get PowerShell?
+----------------------
+Windows 7 and newer do provide PowerShell by default. For other platforms or for a newer PowerShell version please visit https://github.com/PowerShell/PowerShell.
+
+
+How to configure PowerShell as default shell on Linux?
+------------------------------------------------------
 
 Make sure PowerShell is installed, then use the `chsh` commmand as follows:
 * `chsh -s /bin/powershell <username>`
 
-**How to add the subfolder Scripts/ to the search path for command-line usage?**
+How to add the subfolder Scripts/ to the search path for command-line usage?
+----------------------------------------------------------------------------
 
 * **Windows:** open the environment variables dialogue and add the full path to Scripts/ to the system environment variable "Path"
 * **Bash or sh:** edit .profile in your home directory and add the line: PATH="$PATH:/path/to/PowerShell/Scripts"
