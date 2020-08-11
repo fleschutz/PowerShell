@@ -35,7 +35,9 @@ PowerShell is a task automation and configuration management framework from Micr
 
 How to get PowerShell?
 ----------------------
-Windows 7 and newer do provide PowerShell by default. For other platforms or for a newer PowerShell version please visit https://github.com/PowerShell/PowerShell.
+Windows 7 and newer do provide PowerShell by default. It's recommended to use it via **Windows Terminal** (see the Microsoft Store at https://www.aka.ms/terminal).
+
+For installation on alternative platforms (CentOS, Debian, Docker, Fedora, macOS, openSUSE, Red Hat, Ubuntu) visit https://github.com/PowerShell/PowerShell.
 
 
 How to configure PowerShell as default shell on Linux?
@@ -43,6 +45,7 @@ How to configure PowerShell as default shell on Linux?
 
 Make sure PowerShell is installed, then use the `chsh` commmand as follows:
 * `chsh -s /bin/powershell <username>`
+
 
 How to add the subfolder Scripts/ to the search path for command-line usage?
 ----------------------------------------------------------------------------
