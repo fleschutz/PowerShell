@@ -17,8 +17,7 @@ zpool list
 zpool status
 
 echo "\n+++ Checking Updates +++"
-apt update && apt upgrade
-snap refresh
+apt update && apt upgrade && apt autoremove && snap refresh
 
 echo "\n+++ Cleaning Swap Space +++"
 swapoff --all && swapon --all
