@@ -3,8 +3,8 @@ Collection of Useful PowerShell Scripts (CUPS)
 
 Useful cross-platform PowerShell scripts, to be used on the command-line (CLI) or by automation software like Jenkins.
 
-Scripts Explained
------------------
+PowerShell Scripts Included
+---------------------------
 * **exe_info.ps1** - prints basic information of the given executable file
 * **lscmdlets.ps1** - lists all PowerShell cmdlets
 * **lsmods.ps1** - lists all PowerShell modules
