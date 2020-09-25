@@ -5,7 +5,7 @@ Useful cross-platform PowerShell scripts, to be used on the command-line (CLI) o
 
 PowerShell Scripts Included
 ---------------------------
-* **exe_info.ps1** - prints basic information of the given executable file
+* [exe_info.ps1](Scripts/exe_info.ps1) - prints basic information of the given executable file
 * **lscmdlets.ps1** - lists all PowerShell cmdlets
 * **lsmods.ps1** - lists all PowerShell modules
 * **lsproc.ps1** - lists the local computer processes
