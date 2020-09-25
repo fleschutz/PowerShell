@@ -6,26 +6,26 @@ Useful cross-platform PowerShell scripts, to be used on the command-line (CLI) o
 PowerShell Scripts Included
 ---------------------------
 * [exe_info.ps1](Scripts/exe_info.ps1) - prints basic information of the given executable file
-* **lscmdlets.ps1** - lists all PowerShell cmdlets
-* **lsmods.ps1** - lists all PowerShell modules
-* **lsproc.ps1** - lists the local computer processes
-* **MD5.ps1** - prints the MD5 checksum of the given file
-* **moon.ps1** - prints the current moon phase
-* **password.ps1** - generates and prints a single new password
-* **passwords.ps1** - generates and prints a list of new passwords
-* **poweroff.ps1** - halts the local computer, administrator rights might be needed
-* **news.ps1** - print the latest news
-* **reboot.ps1** - reboots the local computer, administrator rights might be needed
-* **SHA1.ps1** - prints the SHA1 checksum of the given file
-* **SHA256.ps1** - prints the SHA256 checksum of the given file
-* **speak.ps1** - speaks the given text
-* **test.ps1** - simple test script
-* **train_dns_cache.ps1** - trains the DNS cache with frequently used domain names
-* **translate.ps1** - translates the given text
-* **txt2wav.ps1** - converts text into a audio .WAV file
-* **weather.ps1** - prints the current weather forecast
-* **wakeup.ps1** - sends a magic packet to the given computer, waking him up
-* **zipdir.ps1** - creates a zip archive of the given folder
+* [lscmdlets.ps1](Scripts/lscmdlets.ps1) - lists all PowerShell cmdlets
+* [lsmods.ps1](Scripts/lsmods.ps1) - lists all PowerShell modules
+* [lsproc.ps1](Scripts/lsproc.ps1) - lists the local computer processes
+* [MD5.ps1](Scripts/MD5.ps1) - prints the MD5 checksum of the given file
+* [moon.ps1](Scripts/moon.ps1) - prints the current moon phase
+* [password.ps1](Scripts/password.ps1) - generates and prints a single new password
+* [passwords.ps1](Scripts/passwords.ps1) - generates and prints a list of new passwords
+* [poweroff.ps1](Scripts/poweroff.ps1) - halts the local computer, administrator rights might be needed
+* [news.ps1](Scripts/news.ps1) - prints the latest news
+* [reboot.ps1](Scripts/reboot.ps1) - reboots the local computer, administrator rights might be needed
+* [SHA1.ps1](Scripts/SHA1.ps1) - prints the SHA1 checksum of the given file
+* [SHA256.ps1](Scripts/SHA256.ps1) - prints the SHA256 checksum of the given file
+* [speak.ps1](Scripts/speak.ps1) - speaks the given text by text-to-speech (TTS)
+* [test.ps1](Scripts/test.ps1) - simple test script
+* [train_dns_cache.ps1](Scripts/train_dns_cache.ps1) - trains the DNS cache with frequently used domain names
+* [translate.ps1](Scripts/translate.ps1) - translates the given text
+* [txt2wav.ps1](Scripts/txt2wav.ps1) - converts text into a audio .WAV file
+* [weather.ps1](Scripts/weather.ps1) - prints the current weather forecast
+* [wakeup.ps1](Scripts/wakeup.ps1) - sends a magic packet to the given computer, waking him up
+* [zipdir.ps1](Scripts/zipdir.ps1) - creates a zip archive of the given folder
 
 What is PowerShell?
 -------------------
