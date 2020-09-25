@@ -1,7 +1,7 @@
 #!/snap/bin/powershell
 #
 # Syntax:	lscmdlets.ps1 
-# Description:	lists the PowerShell cmdlets
+# Description:	lists all PowerShell cmdlets
 # Author: 	Markus Fleschutz
 # Source:	github.com/fleschutz/PowerShell
 # License:	CC0

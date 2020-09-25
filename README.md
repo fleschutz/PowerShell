@@ -5,6 +5,10 @@ Useful cross-platform PowerShell scripts, to be used on the command-line (CLI) o
 
 Scripts Explained
 -----------------
+* **exe_info.ps1** - prints basic information of the given executable file
+* **lscmdlets.ps1** - lists all PowerShell cmdlets
+* **lsmods.ps1** - lists all PowerShell modules
+* **lsproc.ps1** - lists the local computer processes
 * **MD5.ps1** - prints the MD5 checksum of the given file
 * **moon.ps1** - prints the current moon phase
 * **password.ps1** - generates and prints a single new password
