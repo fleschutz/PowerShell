@@ -17,7 +17,7 @@ echo "(3) Verifying ..."
 nice ipfs pin verify
 
 echo "(4) Calculating digital forensics hashes to $DF_HASHES ..."
-nice hashdeep -c md5,sha1,sha256,tiger,whirlpool -r -d -l -j 1 "$DIR" > $DF_HASHES
+nice hashdeep -c md5,sha1,sha256 -r -d -l -j 1 "$DIR" > $DF_HASHES
 
-echo "DONE - to publish the content, execute: ipfs name publish <HASH>"
+echo "DONE - to publish the content execute: ipfs name publish <HASH>"
 exit 0
