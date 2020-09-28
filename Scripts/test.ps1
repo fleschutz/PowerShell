@@ -5,5 +5,6 @@
 # Source:	github.com/fleschutz/PowerShell
 # License:	CC0
 # 
-write-output "PowerShell Works!"
+write-output "OK - PowerShell is working. Details are:"
+echo $PSVersionTable
 exit 0
