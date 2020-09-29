@@ -48,10 +48,7 @@ foreach($item in $MyMACAddresses) {
 	$thisMAC=$array[1]
 	if ($thisHost -like $Hostname) {
 		Send-WOL $thisMAC
-		echo ""
-		echo "OK - host $thisHost waked up (MAC $thisMAC)."
-		echo ""
-		pause
+		write-output "✔️  host $thisHost waked up (MAC $thisMAC)"
 		exit 0
 	}
 }

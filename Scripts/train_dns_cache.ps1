@@ -18,5 +18,5 @@ foreach($Row in $Table) {
 $Count = $Table.Length
 $StopTime = Get-Date
 $TimeInterval = New-Timespan -start $StartTime -end $StopTime
-write-host "OK - DNS cache trained with $Count domain names in $TimeInterval sec."
+write-host "✔️ DNS cache trained with $Count domain names in $TimeInterval sec."
 exit 0
