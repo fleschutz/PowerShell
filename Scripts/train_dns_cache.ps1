@@ -1,11 +1,11 @@
 #!/snap/bin/powershell
 #
-# Syntax:	train_dns_cache 
+# Syntax:	./train_dns_cache.ps1
 # Description:	trains the DNS cache with frequently used domain names
 # Author:	Markus Fleschutz
 # Source:	github.com/fleschutz/PowerShell
 # License:	CC0
-# 
+ 
 $Table = import-csv domain_table.csv
 
 $StartTime = Get-Date

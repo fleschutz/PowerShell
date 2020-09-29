@@ -1,4 +1,10 @@
-#!/bin/sh
+#!/snap/bin/powershell
+#
+# Syntax:       ./download_homepage.ps1 
+# Description:	downloads from the given URL
+# Author:	Markus Fleschutz
+# Source:	github.com/fleschutz/PowerShell
+# License:	CC0
 
 backup()
 {
@@ -7,3 +13,4 @@ backup()
 }
 
 backup $1
+exit 0

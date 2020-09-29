@@ -5,7 +5,7 @@
 # Author:	Markus Fleschutz
 # Source:	github.com/fleschutz/PowerShell
 # License:	CC0
-# 
+ 
 write-output "✔️ PowerShell works. Details are:"
 echo $PSVersionTable
 exit 0

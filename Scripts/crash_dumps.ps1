@@ -1,4 +1,11 @@
 ﻿#!/snap/bin/powershell
+#
+# Syntax:       ./crash_dumps.ps1 
+# Description:	enables crash dumps
+# Author:	Markus Fleschutz
+# Source:	github.com/fleschutz/PowerShell
+# License:	CC0
+
 ##################################################################
 #                                                                #
 # Written by: Ryan Waters                                        #

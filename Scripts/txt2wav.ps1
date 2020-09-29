@@ -1,10 +1,11 @@
 #!/snap/bin/powershell
 #
+# Syntax:	./txt2wav.ps1
 # Description:	converts the given text into an audio .WAV file
 # Author:	Markus Fleschutz
 # Source:	github.com/fleschutz/PowerShell
 # License:	CC0
-# 
+
 # Configuration:
 $Text = "Hello, my name ist Bond, James Bond"
 $Speed = -1 # -10 is slowest, 10 is fastest

@@ -1,3 +1,11 @@
+#!/snap/bin/powershell
+#
+# Syntax:       ./calculator.ps1 
+# Description:	starts a calculator (GUI)
+# Author:	Markus Fleschutz
+# Source:	github.com/fleschutz/PowerShell
+# License:	CC0
+
 clear-host  
 write-host "      PowerShell Calculator      " -for green 
 write-host "" 

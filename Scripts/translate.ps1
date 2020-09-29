@@ -1,10 +1,11 @@
 #!/snap/bin/powershell
 #
+# Syntax:	./translate.ps1
 # Description:	translates the given text
 # Author:	Markus Fleschutz
 # Source:	github.com/fleschutz/PowerShell
 # License:	CC0
-# 
+
 $SourceText = "Hello World!"
 $SourceLang = "en"
 $TargetLanguages = "af","da","de","el","es","hr","it","ja","ko","pl","pt","nl","ru","tr","uk","vi"
