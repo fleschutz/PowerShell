@@ -5,6 +5,7 @@ Useful cross-platform PowerShell scripts, to be used on the command-line (CLI) o
 
 PowerShell Scripts Included
 ---------------------------
+* [download.ps1](Scripts/download.ps1) - downloads the file/directory from the given URL
 * [exe_info.ps1](Scripts/exe_info.ps1) - prints basic information of the given executable file
 * [lscmdlets.ps1](Scripts/lscmdlets.ps1) - lists all PowerShell cmdlets
 * [lsmods.ps1](Scripts/lsmods.ps1) - lists all PowerShell modules
