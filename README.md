@@ -65,10 +65,11 @@ How to add the subfolder Scripts/ to the search path for command-line usage?
 
 Script Standards
 ----------------
-Each script provides:
-1. a comment header containing the syntax, description, author, source, and license
-2. prefers command-line options but may ask the user in case no option is given
-3. exits 0 for success, otherwise the error code (mostly 1)
+Each script supports the following:
+1. **a metadata header** containing the syntax, description, author, source, and license
+2. **prefers command-line options** but may ask the user in case no option is given
+3. **encoding in UTF-8 with BOM** to support Unicode characters
+4. **exits 0 for success**, otherwise the error code (mostly 1)
 
 Feedback
 --------
