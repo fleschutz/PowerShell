@@ -11,6 +11,7 @@ PowerShell Scripts Included
 * [lsmods.ps1](Scripts/lsmods.ps1) - lists all PowerShell modules
 * [lsproc.ps1](Scripts/lsproc.ps1) - lists the local computer processes
 * [MD5.ps1](Scripts/MD5.ps1) - prints the MD5 checksum of the given file
+* [make-install.ps1](Scripts/make-install.ps1) - installs built executables and libs to the installation directory
 * [moon.ps1](Scripts/moon.ps1) - prints the current moon phase
 * [password.ps1](Scripts/password.ps1) - generates and prints a single new password
 * [passwords.ps1](Scripts/passwords.ps1) - generates and prints a list of new passwords
