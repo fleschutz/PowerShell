@@ -1,4 +1,4 @@
-@echo off
+#!/snap/bin/powershell
 ::
 :: Syntax:	make-install.ps1 <build-dir>
 :: Description:	Copies newer EXE's + DLL's from the build directory to the installation directory.

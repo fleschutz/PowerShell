@@ -1,3 +1,5 @@
+#!/snap/bin/powershell
+
 Function Get-TimedScreenshot {
 <#
 .SYNOPSIS

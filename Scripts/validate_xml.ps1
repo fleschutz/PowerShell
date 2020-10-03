@@ -1,3 +1,5 @@
+#!/snap/bin/powershell
+
 function Validate-Xml {
 	param ([string]$XmlFilePath)
 	try {
