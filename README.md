@@ -3,8 +3,10 @@ Collection of Useful PowerShell Scripts (CUPS)
 
 Useful cross-platform PowerShell scripts, to be used on the command-line (CLI) or by automation software like Jenkins.
 
-PowerShell Scripts Included
----------------------------
+List of Scripts
+---------------
+The following PowerShell scripts can be found in the Scripts/ subfolder:
+
 * [download.ps1](Scripts/download.ps1) - downloads the file/directory from the given URL
 * [exe_info.ps1](Scripts/exe_info.ps1) - prints basic information of the given executable file
 * [lscmdlets.ps1](Scripts/lscmdlets.ps1) - lists all PowerShell cmdlets
@@ -68,11 +70,13 @@ How to add the subfolder Scripts/ to the search path for command-line usage?
 
 Script Standards
 ----------------
-Each script supports the following:
-1. **a metadata header** containing the syntax, description, author, source, and license
-2. **prefers command-line options** but may ask the user in case no option is given
-3. **encoding in UTF-8 with BOM** to support Unicode characters
-4. **exits 0 for success**, otherwise the error code (mostly 1)
+Each script should support the following rules:
+
+* **Rule 1:** to support PowerShell on Linux the first line reads: #!/snap/bin/powershell
+* **Rule 2:** a metadata header containing the syntax, description, author, source, and license
+* **Rule 3:** prefer command-line options, but may ask the user in case no option is given
+* **Rule 4:** the script encoding is in UTF-8 with BOM to support Unicode characters
+* **Rule 5:** the script exits with "exit 0" for success* otherwise the error code (mostly 1)
 
 Feedback
 --------
