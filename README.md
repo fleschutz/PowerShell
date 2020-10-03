@@ -73,10 +73,11 @@ Script Standards
 Each script should support the following rules:
 
 * **Rule 1:** to support PowerShell on Linux the first line reads: #!/snap/bin/powershell
-* **Rule 2:** add a metadata header containing the syntax, description, author, source, and license
-* **Rule 3:** prefer command-line options, but may ask the user in case no option is given
-* **Rule 4:** the encoding of the script is in UTF-8 with BOM to support Unicode characters
-* **Rule 5:** exit 0 for success, otherwise exit with the error code (mostly 1)
+* **Rule 2:** to support PowerShell on Linux the script has execute file permissions (chmod a+rx <file>)
+* **Rule 3:** add a metadata header containing the syntax, description, author, source, and license
+* **Rule 4:** prefer command-line options, but may ask the user in case no option is given
+* **Rule 5:** the encoding of the script is in UTF-8 with BOM to support Unicode characters
+* **Rule 6:** exit 0 for success, otherwise exit with the error code (mostly 1)
 
 Feedback
 --------
