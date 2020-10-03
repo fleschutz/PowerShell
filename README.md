@@ -18,6 +18,8 @@ PowerShell Scripts Included
 * [poweroff.ps1](Scripts/poweroff.ps1) - halts the local computer, administrator rights might be needed
 * [news.ps1](Scripts/news.ps1) - prints the latest news
 * [reboot.ps1](Scripts/reboot.ps1) - reboots the local computer, administrator rights might be needed
+* [screenshot.ps1](Scripts/screenshot.ps1) - takes a single screenshot
+* [screenshots.ps1](Scripts/screenshots.ps1) - takes multiple screenshots
 * [SHA1.ps1](Scripts/SHA1.ps1) - prints the SHA1 checksum of the given file
 * [SHA256.ps1](Scripts/SHA256.ps1) - prints the SHA256 checksum of the given file
 * [speak.ps1](Scripts/speak.ps1) - speaks the given text by text-to-speech (TTS)
