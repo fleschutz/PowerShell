@@ -6,5 +6,8 @@
 # Source:	github.com/fleschutz/PowerShell
 # License:	CC0
 
-Get-Process | Format-Table -Property Id, @{Label="CPU(s)";Expression={$_.CPU.ToString("N")+"%"};Alignment="Right"}, ProcessName -AutoSize
-exit 0
+try {
+	Get-Process | Format-Table -Property Id, @{Label="CPU(s)";Expression={$_.CPU.ToString("N")+"%"};Alignment="Right"}, ProcessName -AutoSize
+	exit 0
+} catch { Write-Error $Error[0] }
+exit 1

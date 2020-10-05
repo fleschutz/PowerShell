@@ -20,8 +20,11 @@ function new_password() {
 	return $password
 }
 
-for ($j = 0; $j -lt $NumPasswords; $j++) {
-	$password = new_password
-	write-output $password
-}
-exit 0
+try {
+	for ($j = 0; $j -lt $NumPasswords; $j++) {
+		$password = new_password
+		write-output $password
+	}
+	exit 0
+} catch { Write-Error $Error[0] }
+exit 1

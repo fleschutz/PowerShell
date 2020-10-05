@@ -6,5 +6,8 @@
 # Source:	github.com/fleschutz/PowerShell
 # License:	CC0
 
-Get-Command -Command-Type cmdlet
-exit 0
+try {
+	Get-Command -Command-Type cmdlet
+	exit 0
+} catch { Write-Error $Error[0] }
+exit 1

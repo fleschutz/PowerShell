@@ -7,5 +7,8 @@
 # License:	CC0
 
 #Requires -RunAsAdministrator
-Restart-Computer
-exit 0
+try {
+	Restart-Computer
+	exit 0
+} catch { Write-Error $Error[0] }
+exit 1

@@ -10,12 +10,15 @@ set "DST_DIR=C:\Program Files\MyApp\bin"
 set FILTER=*.exe *.dll
 set OPTIONS=/E /njh /np
 
-title Syncing to %DST_DIR% ...
-robocopy %SRC_DIR% %DST_DIR% %FILTER% %OPTIONS%
+try {
+	title Syncing to %DST_DIR% ...
+	robocopy %SRC_DIR% %DST_DIR% %FILTER% %OPTIONS%
 
-echo ------------------------------------------------------------------------------
-echo.
-echo DONE - synced to %DST_DIR%
-echo.
-pause
-exit /b 0
+	echo ------------------------------------------------------------------------------
+	echo.
+	echo DONE - synced to %DST_DIR%
+	echo.
+	pause
+	exit 0
+} catch { Write-Error $Error[0] }
+exit 1

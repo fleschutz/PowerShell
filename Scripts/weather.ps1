@@ -7,5 +7,9 @@
 # License:	CC0
  
 $GeoLocation="" # empty means determine automatically
-(Invoke-WebRequest http://wttr.in/$GeoLocation -UserAgent "curl" ).Content
-exit 0
+
+try {
+	(Invoke-WebRequest http://wttr.in/$GeoLocation -UserAgent "curl" ).Content
+	exit 0
+} catch { Write-Error $Error[0] }
+exit 1

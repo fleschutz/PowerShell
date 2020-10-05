@@ -7,5 +7,10 @@
 # License:	CC0
 
 param([string]$URL)
-wget --mirror --convert-links --adjust-extension --page-requisites --no-parent $URL --directory-prefix . --no-verbose
-exit 0
+
+
+try {
+	wget --mirror --convert-links --adjust-extension --page-requisites --no-parent $URL --directory-prefix . --no-verbose
+	exit 0
+} catch { Write-Error $Error[0] }
+exit 1

@@ -10,13 +10,16 @@
 $RSS_URL = "https://yahoo.com/news/rss/world"
 # $RSS_URL = "https://rss.nytimes.com/services/xml/rss/nyt/HomePage.xml"
 
-[xml]$FileContent = (Invoke-WebRequest -Uri $RSS_URL).Content
+try {
+	[xml]$FileContent = (Invoke-WebRequest -Uri $RSS_URL).Content
 
-write-host ""
-write-host "+++ " $FileContent.rss.channel.title " +++"
-write-host ""
+	write-host ""
+	write-host "+++ " $FileContent.rss.channel.title " +++"
+	write-host ""
 
-foreach ($item in $FileContent.rss.channel.item) {
-	write-host "* "$item.title
-}
-exit 0
+	foreach ($item in $FileContent.rss.channel.item) {
+		write-host "* "$item.title
+	}
+	exit 0
+} catch { Write-Error $Error[0] }
+exit 1

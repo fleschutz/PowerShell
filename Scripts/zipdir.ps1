@@ -7,5 +7,10 @@
 # License:	CC0
 
 param([string]$Path)
-Compress-Archive -Path $Path -DestinationPath $Path.zip
-exit 0
+
+
+try {
+	Compress-Archive -Path $Path -DestinationPath $Path.zip
+	exit 0
+} catch { Write-Error $Error[0] }
+exit 1

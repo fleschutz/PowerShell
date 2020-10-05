@@ -7,6 +7,10 @@
 # License:	CC0
  
 param([string]$File)
-$Result = get-filehash $File -algorithm MD5
-write-host $Result.Hash
-exit 0
+
+try {
+	$Result = get-filehash $File -algorithm MD5
+	write-host $Result.Hash
+	exit 0
+} catch { Write-Error $Error[0] }
+exit 1

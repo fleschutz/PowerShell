@@ -6,5 +6,8 @@
 # Source:	github.com/fleschutz/PowerShell
 # License:	CC0
 
-Get-Module
-exit 0
+try {
+	Get-Module
+	exit 0
+} catch { Write-Error $Error[0] }
+exit 1

@@ -31,8 +31,11 @@ function TranslateWithGoogle {
 	return $result[0][0][0]
 }
 
-foreach($TargetLang in $TargetLanguages) {
-	$Result = TranslateWithGoogle $SourceText $SourceLang $TargetLang
-	write-output $TargetLang" : "$Result
-}
-exit 0
+try {
+	foreach($TargetLang in $TargetLanguages) {
+		$Result = TranslateWithGoogle $SourceText $SourceLang $TargetLang
+		write-output $TargetLang" : "$Result
+	}
+	exit 0
+} catch { Write-Error $Error[0] }
+exit 1

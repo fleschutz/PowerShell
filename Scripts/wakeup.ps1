@@ -42,17 +42,20 @@ $UDPclient.Connect($broadcast,$port)
 $Hostname = read-host "Enter hostname: "
 $MyMACAddresses = "io=11:22:33:44:55:66","pi=11:22:33:44:55:66"
 
-foreach($item in $MyMACAddresses) {
-	$array = $item.Split("=")
-	$thisHost=$array[0]
-	$thisMAC=$array[1]
-	if ($thisHost -like $Hostname) {
-		Send-WOL $thisMAC
-		write-output "✔️  host $thisHost waked up (MAC $thisMAC)"
-		exit 0
+try {
+	foreach($item in $MyMACAddresses) {
+		$array = $item.Split("=")
+		$thisHost=$array[0]
+		$thisMAC=$array[1]
+		if ($thisHost -like $Hostname) {
+			Send-WOL $thisMAC
+			write-output "✔️  host $thisHost waked up (MAC $thisMAC)"
+			exit 0
+		}
 	}
-}
 
-echo "Sorry, hostname $Hostname is unknown."
-pause
+	echo "Sorry, hostname $Hostname is unknown."
+	pause
+	exit 1
+} catch { Write-Error $Error[0] }
 exit 1

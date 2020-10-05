@@ -19,6 +19,9 @@ function new_password() {
 	return $password
 }
 
-$password = new_password
-write-output $password
-exit 0
+try {
+	$password = new_password
+	write-output $password
+	exit 0
+} catch { Write-Error $Error[0] }
+exit 1

@@ -7,5 +7,10 @@
 # License:	CC0
  
 param([string]$File)
-get-childitem $File | % {$_.VersionInfo} | Select *
-exit 0
+
+
+try {
+	get-childitem $File | % {$_.VersionInfo} | Select *
+	exit 0
+} catch { Write-Error $Error[0] }
+exit 1
