@@ -10,6 +10,7 @@ The following PowerShell scripts can be found in the Scripts/ subfolder:
 * [download.ps1](Scripts/download.ps1) - downloads the file/directory from the given URL
 * [empty-dir.ps1](Scripts/empty-dir.ps1) - empties the given directory
 * [exe_info.ps1](Scripts/exe_info.ps1) - prints basic information of the given executable file
+* [list-unused-files.ps1](Scripts/list-unused-files.ps1) - lists unused files in a dir tree
 * [lscmdlets.ps1](Scripts/lscmdlets.ps1) - lists all PowerShell cmdlets
 * [lsmods.ps1](Scripts/lsmods.ps1) - lists all PowerShell modules
 * [lsproc.ps1](Scripts/lsproc.ps1) - lists the local computer processes
