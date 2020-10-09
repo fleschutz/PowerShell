@@ -1,12 +1,11 @@
 #!/bin/sh
 
-mem=$(LC_ALL=C free  | awk '/Mem:/ {print $4}')
-swap=$(LC_ALL=C free | awk '/Swap:/ {print $3}')
+RAMsize=$(LC_ALL=C free  | awk '/Mem:/ {print $2}')
+RAMfree=$(LC_ALL=C free  | awk '/Mem:/ {print $4}')
+SwapUsed=$(LC_ALL=C free | awk '/Swap:/ {print $3}')
 
-if [ $mem -lt $swap ]; then
-    echo "ERROR: not enough RAM to write swap back, nothing done" >&2
-    exit 1
-fi
-
+echo "Swapping $SwapUsed bytes back to $RAMsize bytes RAM ($RAMfree bytes free) ..."
 swapoff -a && swapon -a
+
+echo "Done."
 exit 0
