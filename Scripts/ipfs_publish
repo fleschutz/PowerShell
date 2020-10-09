@@ -7,7 +7,8 @@ DIR=$1
 IPFS_HASHES="IPFS_hash_list.txt"
 DF_HASHES="checksum_list.xml"
 
-echo "(1) Removing Thumbs.db ..."
+echo "Publishing directory tree $DIR to IPFS"
+echo "(1) Removing Thumbs.db in subfolders ..."
 nice find "$DIR" -name Thumbs.db -exec rm -rf {} \;
 
 echo "(2) Adding $DIR to IPFS ..."
