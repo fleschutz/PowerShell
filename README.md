@@ -29,7 +29,7 @@ The following PowerShell scripts can be found in the Scripts/ subfolder:
 * [SHA256.ps1](Scripts/SHA256.ps1) - prints the SHA256 checksum of the given file
 * [speak.ps1](Scripts/speak.ps1) - speaks the given text by text-to-speech (TTS)
 * [test.ps1](Scripts/test.ps1) - simple test script
-* [train_dns_cache.ps1](Scripts/train_dns_cache.ps1) - trains the DNS cache with frequently used domain names
+* [train-dns-cache.ps1](Scripts/train-dns-cache.ps1) - trains the DNS cache with frequently used domain names
 * [translate.ps1](Scripts/translate.ps1) - translates the given text
 * [txt2wav.ps1](Scripts/txt2wav.ps1) - converts text into a audio .WAV file
 * [validate-xml.ps1](Scripts/validate-xml.ps1) - validates the given XML file
