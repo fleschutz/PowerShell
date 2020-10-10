@@ -1,5 +1,5 @@
 #!/snap/bin/powershell
-#
+
 # Syntax:	./speak.ps1 [<text>]
 # Description:	speaks the given text
 # Author:	Markus Fleschutz

@@ -1,5 +1,5 @@
 #!/snap/bin/powershell
-#
+
 # Syntax:	./SHA256.ps1 <file>
 # Description:	prints the SHA256 checksum of the given file
 # Author: 	Markus Fleschutz

@@ -1,5 +1,5 @@
 #!/snap/bin/powershell
-#
+
 # Syntax:	./MD5.ps1 <file>
 # Description:	prints the MD5 checksum of the given file
 # Author: 	Markus Fleschutz

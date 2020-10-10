@@ -1,5 +1,5 @@
 #!/snap/bin/powershell
-#
+
 # Syntax:	./passwords.ps1
 # Description:	generates and prints a list of new passwords
 # Author:	Markus Fleschutz

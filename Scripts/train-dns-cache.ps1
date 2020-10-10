@@ -1,5 +1,5 @@
 #!/snap/bin/powershell
-#
+
 # Syntax:	./train-dns-cache.ps1
 # Description:	trains the DNS cache with frequently used domain names
 # Author:	Markus Fleschutz

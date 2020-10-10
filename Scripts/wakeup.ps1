@@ -1,5 +1,5 @@
 #!/snap/bin/powershell
-#
+
 # Syntax:	./wakeup.ps1
 # Description:	sends a magic packet to the given computer, waking him up
 # Author:	Markus Fleschutz

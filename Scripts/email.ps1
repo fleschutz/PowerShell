@@ -1,5 +1,5 @@
 #!/snap/bin/powershell
-#
+
 # Syntax:       ./email.ps1 
 # Description:	sends an email
 # Author:	Markus Fleschutz

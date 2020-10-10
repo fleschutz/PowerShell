@@ -1,5 +1,5 @@
 #!/snap/bin/powershell
-#
+
 # Syntax:	./password.ps1
 # Description:	generates and prints a single new password
 # Author:	Markus Fleschutz

@@ -1,5 +1,5 @@
 #!/snap/bin/powershell
-#
+
 # Syntax:	./weather.ps1
 # Description:	prints the current weather forecast
 # Author:	Markus Fleschutz

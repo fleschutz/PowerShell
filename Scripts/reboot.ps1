@@ -1,5 +1,5 @@
 #!/snap/bin/powershell
-#
+
 # Syntax:	./reboot.ps1
 # Description:	reboots the local computer, administrator rights are required
 # Author:	Markus Fleschutz

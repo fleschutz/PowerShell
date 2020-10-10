@@ -1,5 +1,5 @@
 #!/snap/bin/powershell
-#
+
 # Syntax:	./poweroff.ps1
 # Description:	halts the local computer, administrator rights are required 
 # Author:	Markus Fleschutz

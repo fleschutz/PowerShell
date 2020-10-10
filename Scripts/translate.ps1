@@ -1,5 +1,5 @@
 #!/snap/bin/powershell
-#
+
 # Syntax:	./translate.ps1
 # Description:	translates the given text
 # Author:	Markus Fleschutz

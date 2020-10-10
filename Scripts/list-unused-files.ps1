@@ -1,5 +1,5 @@
 #!/snap/bin/powershell
-#
+
 # Syntax:       ./list-unused-files.ps1 <dirtree> <days>
 # Description:	lists files in the <directory tree> with last access time older than <days>
 # Author:	Markus Fleschutz
@@ -13,7 +13,7 @@ write-host "Listing files in $DirTree with last access time older than $NumberOf
 try {
 	$cutOffDate = (Get-Date).AddDays(-$NumberOfDaysUnused)
 
-	Get-ChildItem -Path $DirTree -Recurse | Where-Object {$_.LastAccessTime -le $cutOffDate} | select fullname
+	Get-ChildItem -path $DirTree -recurse | Where-Object {$_.LastAccessTime -le $cutOffDate} | select fullname
 
 	exit 0
 } catch { Write-Error $Error[0] }

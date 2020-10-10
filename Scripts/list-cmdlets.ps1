@@ -1,5 +1,5 @@
 #!/snap/bin/powershell
-#
+
 # Syntax:	./list-cmdlets.ps1 
 # Description:	lists all PowerShell cmdlets
 # Author: 	Markus Fleschutz

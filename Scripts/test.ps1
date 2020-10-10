@@ -1,5 +1,5 @@
 ﻿#!/snap/bin/powershell
-#
+
 # Syntax:       ./test.ps1
 # Description:	simple PowerShell test script
 # Author:	Markus Fleschutz

@@ -1,5 +1,5 @@
 #!/snap/bin/powershell
-#
+
 # Syntax:       ./download.ps1 <URL>
 # Description:	downloads the file/directory from the given URL
 # Author:	Markus Fleschutz
@@ -7,7 +7,6 @@
 # License:	CC0
 
 param([string]$URL)
-
 
 try {
 	wget --mirror --convert-links --adjust-extension --page-requisites --no-parent $URL --directory-prefix . --no-verbose

@@ -1,5 +1,5 @@
 #!/snap/bin/powershell
-#
+
 # Syntax:       ./calculator.ps1 
 # Description:	starts a calculator (GUI)
 # Author:	Markus Fleschutz

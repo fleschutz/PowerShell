@@ -1,5 +1,5 @@
 #!/snap/bin/powershell
-#
+
 # Syntax:	./list-processes.ps1 
 # Description:	lists the local computer processes
 # Author: 	Markus Fleschutz

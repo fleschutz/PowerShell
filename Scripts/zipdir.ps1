@@ -1,5 +1,5 @@
 #!/snap/bin/powershell
-#
+
 # Syntax:       ./zipdir.ps1 <path-to-folder>
 # Description:	creates a zip archive from the given folder
 # Author:	Markus Fleschutz

@@ -1,5 +1,5 @@
 #!/snap/bin/powershell
-#
+
 # Syntax:	./txt2wav.ps1
 # Description:	converts the given text into an audio .WAV file
 # Author:	Markus Fleschutz

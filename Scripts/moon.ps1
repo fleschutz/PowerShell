@@ -1,5 +1,5 @@
 #!/snap/bin/powershell
-#
+
 # Syntax:	./moon.ps1
 # Description:	prints the current moon phase
 # Author:	Markus Fleschutz

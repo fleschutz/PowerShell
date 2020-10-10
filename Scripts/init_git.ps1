@@ -1,5 +1,5 @@
 #!/snap/bin/powershell
-#
+
 # Syntax:	./init_git.ps1
 # Description:	initializes Git
 # Author:	Markus Fleschutz

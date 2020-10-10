@@ -1,5 +1,5 @@
 #!/snap/bin/powershell
-#
+
 # Syntax:       ./news.ps1
 # Description:	print the latest news
 # Author:	Markus Fleschutz
