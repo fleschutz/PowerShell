@@ -1,6 +1,6 @@
 #!/snap/bin/powershell
 #
-# Syntax:	./lsmods.ps1 
+# Syntax:	./list-modules.ps1 
 # Description:	lists all PowerShell modules
 # Author: 	Markus Fleschutz
 # Source:	github.com/fleschutz/PowerShell

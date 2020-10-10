@@ -12,9 +12,9 @@ The following PowerShell scripts can be found in the Scripts/ subfolder:
 * [exe_info.ps1](Scripts/exe_info.ps1) - prints basic information of the given executable file
 * [list-empty-dirs.ps1](Scripts/list-empty-dirs.ps1) - lists empty subfolders in a directory tree
 * [list-unused-files.ps1](Scripts/list-unused-files.ps1) - lists unused files in a directory tree
-* [lscmdlets.ps1](Scripts/lscmdlets.ps1) - lists all PowerShell cmdlets
-* [lsmods.ps1](Scripts/lsmods.ps1) - lists all PowerShell modules
-* [lsproc.ps1](Scripts/lsproc.ps1) - lists the local computer processes
+* [list-cmdlets.ps1](Scripts/list-cmdlets.ps1) - lists the PowerShell cmdlets
+* [list-modules.ps1](Scripts/list-modules.ps1) - lists the PowerShell modules
+* [list-processes.ps1](Scripts/list-processes.ps1) - lists the local computer processes
 * [MD5.ps1](Scripts/MD5.ps1) - prints the MD5 checksum of the given file
 * [make-install.ps1](Scripts/make-install.ps1) - installs built executables and libs to the installation directory
 * [moon.ps1](Scripts/moon.ps1) - prints the current moon phase

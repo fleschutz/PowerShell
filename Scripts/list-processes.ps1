@@ -1,6 +1,6 @@
 #!/snap/bin/powershell
 #
-# Syntax:	./lsproc.ps1 
+# Syntax:	./list-processes.ps1 
 # Description:	lists the local computer processes
 # Author: 	Markus Fleschutz
 # Source:	github.com/fleschutz/PowerShell
