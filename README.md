@@ -5,7 +5,7 @@ Useful cross-platform PowerShell scripts, to be used on the command-line (CLI) o
 
 List of Scripts
 ---------------
-The following PowerShell scripts can be found in the Scripts/ subfolder:
+The following PowerShell scripts can be found in the ´Scripts/´ subfolder:
 
 * [download.ps1](Scripts/download.ps1) - downloads the file/directory from the given URL
 * [empty-dir.ps1](Scripts/empty-dir.ps1) - empties the given directory
