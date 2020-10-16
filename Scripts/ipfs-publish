@@ -1,7 +1,11 @@
 #!/bin/sh
-#
-# Usage: ipfs_publish <directory>
-# NOTE:  requires <ipfs> and <hashdeep>!
+
+# Syntax:	./ipfs-publish <dir-tree>
+# Description:	publishes the given directory tree to IPDS
+# Author:	Markus Fleschutz
+# Source:	github.com/fleschutz/PowerShell
+# License:	CC0
+# NOTE: 	requires <ipfs> and <hashdeep>
 
 DIR=$1
 IPFS_HASHES="IPFS_hash_list.txt"

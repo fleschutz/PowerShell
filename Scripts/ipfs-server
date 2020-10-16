@@ -1,5 +1,11 @@
 #!/bin/sh
 
+# Syntax:       ./ipfs-server
+# Description:	starts an IPFS server
+# Author:	Markus Fleschutz
+# Source:	github.com/fleschutz/PowerShell
+# License:	CC0
+
 ipfs init --profile server
 
 ipfs config Addresses.API /ip4/0.0.0.0/tcp/5001
