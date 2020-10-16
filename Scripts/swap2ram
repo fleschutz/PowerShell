@@ -1,4 +1,6 @@
 #!/bin/sh
+#
+# NOTE: for automation copy me to /etc/cron.daily 
 
 RAMsize=$(LC_ALL=C free  | awk '/Mem:/ {print $2}')
 RAMfree=$(LC_ALL=C free  | awk '/Mem:/ {print $4}')
