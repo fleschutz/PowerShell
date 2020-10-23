@@ -1,11 +1,15 @@
 #!/bin/sh
-#
-# NOTE: for automation copy me to /etc/cron.daily 
 
+# Syntax:       ./swap2ram
+# Description:	swaps back to RAM
+# Author:	Markus Fleschutz
+# Source:	github.com/fleschutz/PowerShell
+# License:	CC0
+# NOTE:		for automation copy me to /etc/cron.daily 
+
+SwapUsed=$(LC_ALL=C free | awk '/Swap:/ {print $3}')
 RAMsize=$(LC_ALL=C free  | awk '/Mem:/ {print $2}')
 RAMfree=$(LC_ALL=C free  | awk '/Mem:/ {print $4}')
-SwapUsed=$(LC_ALL=C free | awk '/Swap:/ {print $3}')
-
 
 echo "Swapping $SwapUsed bytes back to $RAMsize bytes RAM ($RAMfree bytes free) ..."
 start=`date +%s`
