@@ -11,6 +11,7 @@ The following PowerShell scripts can be found in the `Scripts/` subfolder:
 * [empty-dir.ps1](Scripts/empty-dir.ps1) - empties the given directory
 * [exe_info.ps1](Scripts/exe_info.ps1) - prints basic information of the given executable file
 * [init-git.ps1](Scripts/init-git.ps1) - initializes the Git configuration
+* [latlong.ps1](Scripts/latlong.ps1) - prints the lat/long coordinates of the given city
 * [list-empty-dirs.ps1](Scripts/list-empty-dirs.ps1) - lists empty subfolders in a directory tree
 * [list-unused-files.ps1](Scripts/list-unused-files.ps1) - lists unused files in a directory tree
 * [list-cmdlets.ps1](Scripts/list-cmdlets.ps1) - lists the PowerShell cmdlets

@@ -1,7 +1,7 @@
 #!/snap/bin/powershell
 
 # Syntax:	./latlong.ps1 <city>
-# Description:	prints the Lat/Long of the given city
+# Description:	prints the lat/long coordinates of the given city
 # Author:	Markus Fleschutz
 # Source:	github.com/fleschutz/PowerShell
 # License:	CC0
@@ -19,7 +19,7 @@ try {
 			$Lat = $Row.lat
 			$Long = $Row.lng
 			$Population = $Row.population
-			write-host "✔️ $City ($Country, $Region, $Population people) is at N$Lat° / W$Long°"
+			write-host "✔️ $City ($Country, $Region, $Population people) is at $Lat°N, $Long°W"
 		}
 	}
 
