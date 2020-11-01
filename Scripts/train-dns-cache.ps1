@@ -6,10 +6,10 @@
 # Source:	github.com/fleschutz/PowerShell
 # License:	CC0
  
-$Table = import-csv domain_table.csv
-
 try {
 	$StartTime = Get-Date
+
+	$Table = import-csv domain_table.csv
 	foreach($Row in $Table) {
 		$Domain = $Row.Domain
 		write-progress "Training DNS cache with $Domain ..."
