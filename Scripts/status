@@ -6,10 +6,11 @@ echo ""
 hostnamectl
 echo "            Uptime: `uptime --pretty` since `uptime --since`"
 echo "   HDD Temperature: `hddtemp --unit=C /dev/sda`" 
-echo ""
+echo "-------------------------------------------------------------------------------"
+landscape-sysinfo
+echo "-------------------------------------------------------------------------------"
 free -h
-
-echo "\n+++ Checking S.M.A.R.T. +++"
+echo "-------------------------------------------------------------------------------"
 smartctl --smart=on --nocheck=standby --offlineauto=on --health /dev/sda
 
 echo "\n+++ Checking Filesystem +++"
