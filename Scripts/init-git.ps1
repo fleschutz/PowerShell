@@ -6,9 +6,9 @@
 # Source:	github.com/fleschutz/PowerShell
 # License:	CC0
 
-$UserName   = read-host "Your full name: "
-$UserEmail  = read-host "Your email address: "
-$UserEditor = read-host "Your favorite editor (nano, vi, emacs): "
+$UserName   = read-host "Your full name"
+$UserEmail  = read-host "Your email address"
+$UserEditor = read-host "Your favorite editor (nano, vi, emacs)"
 
 try {
 	git config --global user.name $UserName

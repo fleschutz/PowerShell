@@ -12,7 +12,7 @@ try {
 	$Table = import-csv domain_table.csv
 	foreach($Row in $Table) {
 		$Domain = $Row.Domain
-		write-progress "Training DNS cache with $Domain ..."
+		write-progress "Training DNS cache with $Domain..."
 		$Ignore = nslookup $Domain
 	}
 

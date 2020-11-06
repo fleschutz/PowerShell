@@ -1,6 +1,6 @@
 #!/snap/bin/powershell
 
-# Syntax:	./MD5.ps1 <file>
+# Syntax:	./MD5.ps1 [<file>]
 # Description:	prints the MD5 checksum of the given file
 # Author: 	Markus Fleschutz
 # Source:	github.com/fleschutz/PowerShell
@@ -8,7 +8,7 @@
  
 param([string]$File)
 if ($File -eq "" ) {
-	$File = read-host "Enter file: "
+	$File = read-host "Enter file"
 }
 
 try {

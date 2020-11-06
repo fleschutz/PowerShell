@@ -1,4 +1,4 @@
-﻿#!/snap/bin/powershell
+#!/snap/bin/powershell
 
 # Syntax:       ./crash_dumps.ps1 
 # Description:	enables crash dumps

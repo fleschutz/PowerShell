@@ -1,10 +1,15 @@
 #!/snap/bin/powershell
 
-# Syntax:	./wakeup.ps1
+# Syntax:	./wakeup.ps1 [<hostname>]
 # Description:	sends a magic packet to the given computer, waking him up
 # Author:	Markus Fleschutz
 # Source:	github.com/fleschutz/PowerShell
 # License:	CC0
+
+param([string]$Hostname)
+if ($Hostname -eq "" ) {
+	$Hostname = read-host "Enter hostname"
+}
 
 function Send-WOL 
 { 
@@ -39,7 +44,6 @@ $UDPclient.Connect($broadcast,$port)
 [void]$UDPclient.Send($packet, 102)  
 } 
 
-$Hostname = read-host "Enter hostname: "
 $MyMACAddresses = "io=11:22:33:44:55:66","pi=11:22:33:44:55:66"
 
 try {

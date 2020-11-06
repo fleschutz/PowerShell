@@ -1,14 +1,18 @@
 #!/snap/bin/powershell
 
-# Syntax:	./latlong.ps1 <city>
+# Syntax:	./latlong.ps1 [<city>]
 # Description:	prints the lat/long coordinates of the given city
 # Author:	Markus Fleschutz
 # Source:	github.com/fleschutz/PowerShell
 # License:	CC0
 
 param([string]$City)
+if ($City -eq "" ) {
+	$City = read-host "Enter city"
+}
  
 try {
+	write-progress "Reading worldcities.csv..."
 	$Table = import-csv worldcities.csv
 	$FoundOne = 0
 	foreach($Row in $Table) {

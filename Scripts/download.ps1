@@ -1,6 +1,6 @@
 #!/snap/bin/powershell
 
-# Syntax:       ./download.ps1 <URL>
+# Syntax:       ./download.ps1 [<URL>]
 # Description:	downloads the file/directory from the given URL
 # Author:	Markus Fleschutz
 # Source:	github.com/fleschutz/PowerShell
@@ -8,7 +8,7 @@
 
 param([string]$URL)
 if ($URL -eq "" ) {
-	$URL = read-host "Enter URL to download: "
+	$URL = read-host "Enter URL to download"
 }
 
 try {
