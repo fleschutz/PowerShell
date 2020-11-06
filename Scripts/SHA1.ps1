@@ -7,10 +7,13 @@
 # License:	CC0
  
 param([string]$File)
+if ($File -eq "" ) {
+	$File = read-host "Enter file: "
+}
 
 try {
 	$Result = get-filehash $File -algorithm SHA1
-	write-host $Result.Hash
+	write-host "✔️ SHA1 hash is" $Result.Hash
 	exit 0
 } catch { Write-Error $Error[0] }
 exit 1

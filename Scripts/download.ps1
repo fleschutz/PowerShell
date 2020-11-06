@@ -7,9 +7,13 @@
 # License:	CC0
 
 param([string]$URL)
+if ($URL -eq "" ) {
+	$URL = read-host "Enter URL to download: "
+}
 
 try {
 	wget --mirror --convert-links --adjust-extension --page-requisites --no-parent $URL --directory-prefix . --no-verbose
+	write-host "✔️ Done."
 	exit 0
 } catch { Write-Error $Error[0] }
 exit 1

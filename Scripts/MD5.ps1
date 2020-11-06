@@ -7,10 +7,13 @@
 # License:	CC0
  
 param([string]$File)
+if ($File -eq "" ) {
+	$File = read-host "Enter file: "
+}
 
 try {
 	$Result = get-filehash $File -algorithm MD5
-	write-host $Result.Hash
+	write-host "✔️ MD5 hash is" $Result.Hash
 	exit 0
 } catch { Write-Error $Error[0] }
 exit 1
