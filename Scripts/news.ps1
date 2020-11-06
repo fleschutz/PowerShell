@@ -18,7 +18,7 @@ try {
 	write-host ""
 
 	foreach ($item in $FileContent.rss.channel.item) {
-		write-host "* "$item.title
+		write-host "*" $item.title
 	}
 	exit 0
 } catch { Write-Error $Error[0] }
