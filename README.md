@@ -36,6 +36,7 @@ The following PowerShell scripts can be found in the `Scripts/` subfolder:
 * [txt2wav.ps1](Scripts/txt2wav.ps1) - converts text into a audio .WAV file
 * [validate-xml.ps1](Scripts/validate-xml.ps1) - validates the given XML file
 * [weather.ps1](Scripts/weather.ps1) - prints the current weather forecast
+* [weather-report.ps1](Scripts/weather-report.ps1) - prints the local weather report
 * [weather-worldwide.ps1](Scripts/weather-worldwide.ps1) - prints the current weather of cities world-wide
 * [wakeup.ps1](Scripts/wakeup.ps1) - sends a magic packet to the given computer, waking him up
 * [zipdir.ps1](Scripts/zipdir.ps1) - creates a zip archive of the given folder
