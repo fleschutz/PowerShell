@@ -9,11 +9,11 @@
 $GeoLocation="" # empty means determine automatically
 
 function Check {
-	param ([int]$Value, [int]$Min,  [int]$Max, [string]$Unit)  
-	if ($Value -lt $Min) {
+	param ([int]$Value, [int]$NormalMin,  [int]$NormalMax, [string]$Unit)  
+	if ($Value -lt $NormalMin) {
 		return "$Value $Unit !"
 	}
-	if ($Value -gt $Max) {
+	if ($Value -gt $NormalMax) {
 		return "$Value $Unit !"
 	}
 	return ""
@@ -23,11 +23,12 @@ try {
 	$Weather=(Invoke-WebRequest http://wttr.in/${GeoLocation}?format=j1 -UserAgent "curl" ).Content | ConvertFrom-Json
 
 	$Result+=Check $Weather.current_condition.windspeedKmph 0 48 "km/h"
-	$Result+=Check $Weather.current_condition.temp_C -20 35 "°C"
-	$Result+=Check $Weather.current_condition.uvIndex 0 10 "UV"
+	$Result+=Check $Weather.current_condition.visibility 1 1000 "km visibility"
+	$Result+=Check $Weather.current_condition.temp_C -20 40 "°C"
+	$Result+=Check $Weather.current_condition.uvIndex 0 6 "UV"
 
 	if ($Result -eq "") {
-		echo "Calm weather"
+		echo "No weather alert"
 	} else {
 		echo "WEATHER ALERT: $Result"
 	}
