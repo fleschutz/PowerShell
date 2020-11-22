@@ -26,11 +26,11 @@ The following PowerShell scripts can be found in the `Scripts/` subfolder:
 * [news.ps1](Scripts/news.ps1) - prints the latest news
 * [reboot.ps1](Scripts/reboot.ps1) - reboots the local computer, administrator rights might be needed
 * [send-email.ps1](Scripts/send-email.ps1) - sends an email
-* [screenshot.ps1](Scripts/screenshot.ps1) - takes a single screenshot
-* [screenshots.ps1](Scripts/screenshots.ps1) - takes multiple screenshots
 * [SHA1.ps1](Scripts/SHA1.ps1) - prints the SHA1 checksum of the given file
 * [SHA256.ps1](Scripts/SHA256.ps1) - prints the SHA256 checksum of the given file
 * [speak.ps1](Scripts/speak.ps1) - speaks the given text by text-to-speech (TTS)
+* [take-screenshot.ps1](Scripts/take-screenshot.ps1) - takes a single screenshot
+* [take-screenshots.ps1](Scripts/take-screenshots.ps1) - takes multiple screenshots
 * [test.ps1](Scripts/test.ps1) - simple test script
 * [train-dns-cache.ps1](Scripts/train-dns-cache.ps1) - trains the DNS cache with frequently used domain names
 * [translate.ps1](Scripts/translate.ps1) - translates the given text
