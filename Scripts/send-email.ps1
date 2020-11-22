@@ -1,20 +1,26 @@
 #!/snap/bin/powershell
 
-# Syntax:       ./email.ps1 
+# Syntax:       ./send-email.ps1 
 # Description:	sends an email
 # Author:	Markus Fleschutz
 # Source:	github.com/fleschutz/PowerShell
 # License:	CC0
 
+$smtpServer = "smtp.example.com"
+$From = read-host "Enter sender email address"
+$To = read-host "Enter recipient email address"
+$Subject = read-host "Enter subject"
+$Body = read-host "Enter message"
+
 try {
-	$smtpServer = "smtp.example.com"
 	$msg = new-object Net.Mail.MailMessage
 	$smtp = new-object Net.Mail.SmtpClient($smtpServer)
-	$msg.From = "me@example.com"
-	$msg.ReplyTo = "me@example.com"
-	$msg.To.Add("you@example.com")
-	$msg.subject = "Test Mail"
-	$msg.body = "This is a test mail."
+	$msg.From = $From
+	$msg.ReplyTo = $From
+	$msg.To.Add($To)
+	$msg.subject = $Subject
+	$msg.body = $Body
 	$smtp.Send($msg)
+	exit 0
 } catch { Write-Error $Error[0] }
 exit 1
