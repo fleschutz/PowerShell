@@ -11,10 +11,10 @@ $GeoLocation="" # empty means determine automatically
 function Check {
 	param ([int]$Value, [int]$NormalMin,  [int]$NormalMax, [string]$Unit)  
 	if ($Value -lt $NormalMin) {
-		return "$Value $Unit !"
+		return "$Value $Unit ! "
 	}
 	if ($Value -gt $NormalMax) {
-		return "$Value $Unit !"
+		return "$Value $Unit ! "
 	}
 	return ""
 }
