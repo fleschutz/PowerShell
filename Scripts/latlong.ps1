@@ -8,7 +8,7 @@
 
 param([string]$City)
 if ($City -eq "" ) {
-	$City = read-host "Enter city"
+	$City = read-host "Enter the city"
 }
  
 try {
@@ -23,7 +23,7 @@ try {
 			$Lat = $Row.lat
 			$Long = $Row.lng
 			$Population = $Row.population
-			write-host "✔️ $City ($Country, $Region, $Population people) is at $Lat°N, $Long°W"
+			write-host "* $City ($Country, $Region, population $Population) is at $Lat°N, $Long°W"
 		}
 	}
 
