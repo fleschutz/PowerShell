@@ -25,7 +25,8 @@ The following PowerShell scripts can be found in the `Scripts/` subfolder:
 * [poweroff.ps1](Scripts/poweroff.ps1) - halts the local computer, administrator rights might be needed
 * [news.ps1](Scripts/news.ps1) - prints the latest news
 * [reboot.ps1](Scripts/reboot.ps1) - reboots the local computer, administrator rights might be needed
-* [send-email.ps1](Scripts/send-email.ps1) - sends an email
+* [send-email.ps1](Scripts/send-email.ps1) - sends an email message
+* [send-udp.ps1](Scripts/send-udp.ps1) - sends a UDP datagram message to the given IP address and port
 * [SHA1.ps1](Scripts/SHA1.ps1) - prints the SHA1 checksum of the given file
 * [SHA256.ps1](Scripts/SHA256.ps1) - prints the SHA256 checksum of the given file
 * [speak.ps1](Scripts/speak.ps1) - speaks the given text by text-to-speech (TTS)
