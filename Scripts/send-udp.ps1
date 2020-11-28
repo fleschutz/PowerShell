@@ -6,31 +6,27 @@
 # Source:	github.com/fleschutz/PowerShell
 # License:	CC0
 
-param([string]$IP, [int]$Port, [string]$Message)
+param([string]$TargetIP, [int]$TargetPort, [string]$Message)
 
-if ($IP -eq "" ) {
-	$IP = read-host "Enter target IP address"
+if ($TargetIP -eq "" ) {
+	$TargetIP = read-host "Enter target IP address"
 }
-if ($Port -eq 0 ) {
-	$Port = read-host "Enter target port"
+if ($TargetPort -eq 0 ) {
+	$TargetPort = read-host "Enter target port"
 }
 if ($Message -eq "" ) {
 	$Message = read-host "Enter message to send"
 }
 
-function Send-UdpDatagram
-{
-      param([string]$EndPoint, [int]$Port, [string]$Message)
-
-      $IP = [System.Net.Dns]::GetHostAddresses($EndPoint) 
-      $Address = [System.Net.IPAddress]::Parse($IP) 
-      $EndPoints = New-Object System.Net.IPEndPoint($Address, $Port) 
-      $Socket = New-Object System.Net.Sockets.UDPClient 
-      $EncodedText = [Text.Encoding]::ASCII.GetBytes($Message) 
-      $SendMessage = $Socket.Send($EncodedText, $EncodedText.Length, $EndPoints) 
-      $Socket.Close() 
-}
-
-Send-UdpDatagram $IP $Port $Message
-echo "Done."
-exit 0
+try {
+	$IP = [System.Net.Dns]::GetHostAddresses($TargetIP) 
+	$Address = [System.Net.IPAddress]::Parse($IP) 
+	$EndPoints = New-Object System.Net.IPEndPoint($Address, $TargetPort) 
+	$Socket = New-Object System.Net.Sockets.UDPClient 
+	$EncodedText = [Text.Encoding]::ASCII.GetBytes($Message) 
+	$SendMessage = $Socket.Send($EncodedText, $EncodedText.Length, $EndPoints) 
+	$Socket.Close() 
+	echo "Done."
+	exit 0
+} catch { Write-Error $Error[0] }
+exit 1
