@@ -9,8 +9,8 @@
 $Cities="Hawaii","Los Angeles","Mexico City","Miami","New York","Rio de Janeiro","Paris","London","Berlin","Cape Town","Dubai","Mumbai","Singapore","Hong Kong","Peking","Tokyo","Sydney"
 
 try {
-	write-host "Weather Report World-wide"
-	write-host "========================="
+	write-host "Current Weather Report World-wide"
+	write-host "================================="
 	foreach($City in $Cities) {
 		(Invoke-WebRequest http://wttr.in/${City}?format="* %l:+%c+%t+%p+%h+%P+%w +%S ->+%s" -UserAgent "curl" ).Content
 	}
