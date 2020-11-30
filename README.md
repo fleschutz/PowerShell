@@ -84,7 +84,7 @@ Conventions Used
 ----------------
 Each PowerShell script should follow the 7 golden rules:
 
-* **Rule 1:** the script filename should be named "<verb>-<object>.ps1"
+* **Rule 1:** the script filename should be named `<verb>-<object>.ps1`
 * **Rule 2:** to support PowerShell on Linux the first line reads: #!/snap/bin/powershell
 * **Rule 3:** to support PowerShell on Linux the script has execute file permissions (chmod a+rx <file>)
 * **Rule 4:** add a metadata header containing the syntax, description, author, source, and license
