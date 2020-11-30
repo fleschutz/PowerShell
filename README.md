@@ -30,6 +30,7 @@ The following PowerShell scripts can be found in the `Scripts/` subfolder:
 * [send-udp.ps1](Scripts/send-udp.ps1) - sends a UDP datagram message to the given IP address and port
 * [SHA1.ps1](Scripts/SHA1.ps1) - prints the SHA1 checksum of the given file
 * [SHA256.ps1](Scripts/SHA256.ps1) - prints the SHA256 checksum of the given file
+* [simulate-presence.ps1](Scripts/simulate-presence.ps1) - simulates the human presence against burglars
 * [speak.ps1](Scripts/speak.ps1) - speaks the given text by text-to-speech (TTS)
 * [take-screenshot.ps1](Scripts/take-screenshot.ps1) - takes a single screenshot
 * [take-screenshots.ps1](Scripts/take-screenshots.ps1) - takes multiple screenshots
