@@ -32,6 +32,7 @@ The following PowerShell scripts can be found in the `Scripts/` subfolder:
 * [SHA256.ps1](Scripts/SHA256.ps1) - prints the SHA256 checksum of the given file
 * [simulate-presence.ps1](Scripts/simulate-presence.ps1) - simulates the human presence against burglars
 * [speak.ps1](Scripts/speak.ps1) - speaks the given text by text-to-speech (TTS)
+* [switch-shelly1.ps1](Scripts/switch-shelly1.ps1) - switches a Shelly1 device in the local network
 * [take-screenshot.ps1](Scripts/take-screenshot.ps1) - takes a single screenshot
 * [take-screenshots.ps1](Scripts/take-screenshots.ps1) - takes multiple screenshots
 * [test.ps1](Scripts/test.ps1) - simple test script
