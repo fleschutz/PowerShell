@@ -7,6 +7,7 @@ List of Scripts
 ---------------
 The following PowerShell scripts can be found in the `Scripts/` subfolder:
 
+* [clone-repos.ps1](Scripts/clone-repos.ps1) - clones well-known Git repositories
 * [download.ps1](Scripts/download.ps1) - downloads the file/directory from the given URL
 * [empty-dir.ps1](Scripts/empty-dir.ps1) - empties the given directory
 * [exe_info.ps1](Scripts/exe_info.ps1) - prints basic information of the given executable file
