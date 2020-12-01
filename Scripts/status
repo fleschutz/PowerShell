@@ -5,7 +5,7 @@
 echo ""
 hostnamectl
 echo "            Uptime: `uptime --pretty` since `uptime --since`"
-echo "   HDD Temperature: `hddtemp --unit=C /dev/sda`" 
+echo "          HDD temp: `hddtemp --unit=C /dev/sda`" 
 echo "-------------------------------------------------------------------------------"
 landscape-sysinfo
 echo "-------------------------------------------------------------------------------"
