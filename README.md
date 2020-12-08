@@ -49,9 +49,9 @@ The following PowerShell scripts can be found in the [Scripts/](Scripts/) subfol
 * [wakeup.ps1](Scripts/wakeup.ps1) - sends a magic packet to the given computer, waking him up
 * [zip-dir.ps1](Scripts/zip-dir.ps1) - creates a zip archive of the given folder
 
+
 What is PowerShell?
 -------------------
-
 PowerShell is a task automation and configuration management framework from Microsoft, consisting of a command-line shell and associated scripting language. 
 * it's **cross-platform**: available for Linux, Mac OS and Windows
 * it's **powerful**: fully control your computer
@@ -70,24 +70,28 @@ Afterward, install the scripts by clicking on the green "Code" button or execute
 $ git clone https://github.com/fleschutz/PowerShell
 ```
 
-How to configure PowerShell as default shell on Linux?
-------------------------------------------------------
+Configure PowerShell as Default Shell
+-------------------------------------
+* **Linux:** make sure PowerShell is installed, then execute: `chsh -s /snap/bin/powershell <username>`
+* **Windows:** no need to, PowerShell is the default shell
 
-Make sure PowerShell is installed, then use the `chsh` commmand as follows:
-* `chsh -s /bin/powershell <username>`
 
-
-How to add the subfolder Scripts/ to the search path for command-line usage?
-----------------------------------------------------------------------------
-
-* **Windows:** open the environment variables dialogue and add the full path to Scripts/ to the system environment variable "Path"
+Adding Subfolder Scripts/ to the Search Path for Command-line Usage
+-------------------------------------------------------------------
 * **Bash or sh:** edit .profile in your home directory and add the line: PATH="$PATH:/path/to/PowerShell/Scripts"
+* **Windows:** open the environment variables dialogue and add the full path to Scripts/ to the system environment variable "Path"
 
-Conventions Used
-----------------
+
+Using PowerShell in Windows Context Menus
+------------------------------------------
+* to enable "right-click > New > Windows PowerShell Script" just execute Context_Menus/add_ps1_to_New_context_menu.reg
+* to disable it just execute Context_Menus/remove_ps1_from_New_context_menu.reg
+
+Script Conventions
+------------------
 Each PowerShell script should follow the 7 golden rules:
 
-* **Rule 1:** the script filename should be named `<verb>-<object>.ps1`
+* **Rule 1:** the filename should be named `<verb>-<object>.ps1`
 * **Rule 2:** to support PowerShell on Linux the first line reads: #!/snap/bin/powershell
 * **Rule 3:** to support PowerShell on Linux the script has execute file permissions (chmod a+rx <file>)
 * **Rule 4:** add a metadata header containing the syntax, description, author, source, and license
