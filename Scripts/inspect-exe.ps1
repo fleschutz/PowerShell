@@ -1,12 +1,15 @@
 #!/snap/bin/powershell
 
-# Syntax:	./exe_info.ps1 <file>
+# Syntax:	./inspect-exe.ps1 [<executable-file>]
 # Description:	prints basic information of the given executable file
 # Author: 	Markus Fleschutz
 # Source:	github.com/fleschutz/PowerShell
 # License:	CC0
  
 param([string]$File)
+if ($File -eq "" ) {
+	$File = read-host "Enter path to executable file"
+}
 
 
 try {
