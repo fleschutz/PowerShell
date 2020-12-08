@@ -1,7 +1,7 @@
 #!/snap/bin/powershell
 
-# Syntax:	./speak.ps1 [<text>]
-# Description:	speaks the given text
+# Syntax:	./speak-text.ps1 [<text>]
+# Description:	speaks the given text by text-to-speech (TTS)
 # Author:	Markus Fleschutz
 # Source:	github.com/fleschutz/PowerShell
 # License:	CC0

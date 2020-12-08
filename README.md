@@ -1,7 +1,7 @@
 Collection of Useful PowerShell Scripts (CUPS)
 ==============================================
 
-This repository contains 40 useful cross-platform PowerShell scripts - to be used on the command-line (CLI), by context menu, by voice control, or by automation software (e.g. Jenkins).
+This repository contains 41 useful cross-platform PowerShell scripts - to be used on the command-line (CLI), by context menu, by voice control, or by automation software (e.g. Jenkins).
 
 List of Scripts
 ---------------
@@ -32,7 +32,8 @@ The following PowerShell scripts can be found in the `Scripts/` subfolder:
 * [SHA1.ps1](Scripts/SHA1.ps1) - prints the SHA1 checksum of the given file
 * [SHA256.ps1](Scripts/SHA256.ps1) - prints the SHA256 checksum of the given file
 * [simulate-presence.ps1](Scripts/simulate-presence.ps1) - simulates the human presence against burglars
-* [speak.ps1](Scripts/speak.ps1) - speaks the given text by text-to-speech (TTS)
+* [speak-file.ps1](Scripts/speak-file.ps1) - speaks the content of the given text file by text-to-speech (TTS)
+* [speak-text.ps1](Scripts/speak-text.ps1) - speaks the given text by text-to-speech (TTS)
 * [switch-shelly1.ps1](Scripts/switch-shelly1.ps1) - switches a Shelly1 device in the local network
 * [take-screenshot.ps1](Scripts/take-screenshot.ps1) - takes a single screenshot
 * [take-screenshots.ps1](Scripts/take-screenshots.ps1) - takes multiple screenshots
