@@ -97,7 +97,7 @@ Each PowerShell script should follow the 7 golden rules:
 * **Rule 4:** add a metadata header containing the syntax, description, author, source, and license
 * **Rule 5:** prefer command-line options, but may ask the user in case no option is given
 * **Rule 6:** the encoding of the script is in UTF-8 with BOM to support Unicode characters
-* **Rule 7:** exit 0 for success, otherwise exit with the error code (mostly 1)
+* **Rule 7:** exit 0 for success, else print an error message and exit with the error code (mostly 1)
 
 Feedback
 --------
