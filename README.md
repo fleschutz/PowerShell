@@ -61,11 +61,10 @@ PowerShell is a task automation and configuration management framework from Micr
 
 How to get PowerShell?
 ----------------------
-Windows 7 and newer do provide PowerShell by default. It's recommended to use it via **Windows Terminal** (see the Microsoft Store at https://www.aka.ms/terminal).
+* **Windows 7 and newer** do provide PowerShell by default. It's recommended to install **Windows Terminal** (see the Microsoft Store at https://www.aka.ms/terminal) for a comfortable command-line usage.
+* **On CentOS, Debian, Docker, Fedora, macOS, openSUSE, Red Hat, Ubuntu** visit https://github.com/PowerShell/PowerShell for installation.
 
-For installation on alternative platforms (CentOS, Debian, Docker, Fedora, macOS, openSUSE, Red Hat, Ubuntu) visit https://github.com/PowerShell/PowerShell.
-
-Afterward, install the scripts by clicking on the green "Code" button or execute:
+Afterward, install CUPS by clicking on the green "Code" button or execute:
 ```
 $ git clone https://github.com/fleschutz/PowerShell
 ```
