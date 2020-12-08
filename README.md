@@ -1,7 +1,7 @@
 Collection of Useful PowerShell Scripts (CUPS)
 ==============================================
 
-This repository contains 40 useful cross-platform PowerShell scripts - to be used on the command-line (CLI), by voice control or by automation software like Jenkins.
+This repository contains 40 useful cross-platform PowerShell scripts - to be used on the command-line (CLI), by context menu, by voice control, or by automation software (e.g. Jenkins).
 
 List of Scripts
 ---------------
