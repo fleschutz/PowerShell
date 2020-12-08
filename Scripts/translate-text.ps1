@@ -10,7 +10,7 @@ param([string]$SourceText)
 if ($SourceText -eq "" ) {
 	$SourceText = "Hello World!"
 }
-$SourceLang = "en"
+$SourceLanguage = "en"
 $TargetLanguages = "af","da","de","el","es","hr","it","ja","ko","pl","pt","nl","ru","tr","uk","vi"
 
 function TranslateWithGoogle {
@@ -35,9 +35,9 @@ function TranslateWithGoogle {
 }
 
 try {
-	foreach($TargetLang in $TargetLanguages) {
-		$Result = TranslateWithGoogle $SourceText $SourceLang $TargetLang
-		write-output $TargetLang" : "$Result
+	foreach($TargetLanguage in $TargetLanguages) {
+		$Result = TranslateWithGoogle $SourceText $SourceLanguage $TargetLanguage
+		write-output $TargetLanguage" : "$Result
 	}
 	exit 0
 } catch { Write-Error $Error[0] }
