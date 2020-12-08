@@ -5,7 +5,7 @@ This repository contains 41 useful cross-platform PowerShell scripts - to be use
 
 List of Scripts
 ---------------
-The following PowerShell scripts can be found in the `[Scripts/](Scripts/)` subfolder:
+The following PowerShell scripts can be found in the [Scripts/](Scripts/) subfolder:
 
 * [clone-repos.ps1](Scripts/clone-repos.ps1) - clones well-known Git repositories
 * [configure-git.ps1](Scripts/configure-git.ps1) - sets up the Git configuration
