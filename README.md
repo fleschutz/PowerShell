@@ -11,6 +11,7 @@ The following PowerShell scripts can be found in the [Scripts/](Scripts/) subfol
 * [configure-git.ps1](Scripts/configure-git.ps1) - sets up the Git configuration
 * [download.ps1](Scripts/download.ps1) - downloads the file/directory from the given URL
 * [empty-dir.ps1](Scripts/empty-dir.ps1) - empties the given directory
+* [enable-crash-dumps.ps1](Scripts/enable-crash-dumps.ps1) - enables the writing of crash dumps
 * [inspect-exe.ps1](Scripts/inspect-exe.ps1) - prints basic information of the given executable file
 * [latlong.ps1](Scripts/latlong.ps1) - prints the lat/long coordinates of the given city
 * [list-empty-dirs.ps1](Scripts/list-empty-dirs.ps1) - lists empty subfolders in a directory tree

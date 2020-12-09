@@ -1,7 +1,7 @@
 #!/snap/bin/powershell
 
-# Syntax:       ./crash_dumps.ps1 
-# Description:	enables crash dumps
+# Syntax:       ./enable-crash-dumps.ps1 
+# Description:	enables the writing of crash dumps
 # Author:	Markus Fleschutz
 # Source:	github.com/fleschutz/PowerShell
 # License:	CC0
