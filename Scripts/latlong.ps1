@@ -32,5 +32,7 @@ try {
 	}
 	write-error "City $City not found"
 	exit 1
-} catch { write-error $Error[0] }
-exit 1
+} catch {
+	Write-Error "ERROR in line $($_.InvocationInfo.ScriptLineNumber): $($Error[0])"
+	exit 1
+}

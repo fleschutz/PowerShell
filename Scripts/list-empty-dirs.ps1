@@ -14,5 +14,7 @@ try {
 	(Get-ChildItem $DirTree -recurse | ? {$_.PSIsContainer -eq $True}) | ?{$_.GetFileSystemInfos().Count -eq 0} | select FullName
 	echo "Done."
 	exit 0
-} catch { Write-Error $Error[0] }
-exit 1
+} catch {
+	Write-Error "ERROR in line $($_.InvocationInfo.ScriptLineNumber): $($Error[0])"
+	exit 1
+}

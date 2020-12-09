@@ -23,5 +23,7 @@ try {
 
 	write-host "OK - switched Shelly1 device at $IPaddr to $TurnMode for $Timer second(s)"
 	exit 0
-} catch { Write-Error $Error[0] }
-exit 1
+} catch {
+	Write-Error "ERROR in line $($_.InvocationInfo.ScriptLineNumber): $($Error[0])"
+	exit 1
+}

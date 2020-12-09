@@ -21,5 +21,7 @@ try {
 		write-host "*" $item.title
 	}
 	exit 0
-} catch { Write-Error $Error[0] }
-exit 1
+} catch {
+	Write-Error "ERROR in line $($_.InvocationInfo.ScriptLineNumber): $($Error[0])"
+	exit 1
+}

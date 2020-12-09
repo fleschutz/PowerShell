@@ -21,5 +21,7 @@ try {
 	$TimeInterval = New-Timespan -start $StartTime -end $StopTime
 	write-host "OK - DNS cache trained with $Count domain names in $TimeInterval sec."
 	exit 0
-} catch { Write-Error $Error[0] }
-exit 1
+} catch {
+	Write-Error "ERROR in line $($_.InvocationInfo.ScriptLineNumber): $($Error[0])"
+	exit 1
+}

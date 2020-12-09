@@ -15,5 +15,7 @@ try {
 	$Result = get-filehash $File -algorithm SHA1
 	write-host "✔️ SHA1 hash is" $Result.Hash
 	exit 0
-} catch { Write-Error $Error[0] }
-exit 1
+} catch {
+	Write-Error "ERROR in line $($_.InvocationInfo.ScriptLineNumber): $($Error[0])"
+	exit 1
+}
