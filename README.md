@@ -28,6 +28,7 @@ The following PowerShell scripts can be found in the [Scripts/](Scripts/) subfol
 * [reboot.ps1](Scripts/reboot.ps1) - reboots the local computer, administrator rights might be needed
 * [scan-ports.ps1](Scripts/scan-ports.ps1) - scans the network for open/closed ports
 * [send-email.ps1](Scripts/send-email.ps1) - sends an email message
+* [send-tcp.ps1](Scripts/send-udp.ps1) - sends a TCP message to the given IP address and port
 * [send-udp.ps1](Scripts/send-udp.ps1) - sends a UDP datagram message to the given IP address and port
 * [SHA1.ps1](Scripts/SHA1.ps1) - prints the SHA1 checksum of the given file
 * [SHA256.ps1](Scripts/SHA256.ps1) - prints the SHA256 checksum of the given file
