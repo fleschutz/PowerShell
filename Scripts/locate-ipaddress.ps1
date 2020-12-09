@@ -8,7 +8,7 @@
  
 param([string]$IPaddr)
 if ($IPaddr -eq "" ) {
-	$URL = read-host "Enter IP address to locate"
+	$IPaddr = read-host "Enter IP address to locate"
 }
 
 try {
