@@ -19,6 +19,7 @@ The following PowerShell scripts can be found in the [Scripts/](Scripts/) subfol
 * [list-cmdlets.ps1](Scripts/list-cmdlets.ps1) - lists the PowerShell cmdlets
 * [list-modules.ps1](Scripts/list-modules.ps1) - lists the PowerShell modules
 * [list-processes.ps1](Scripts/list-processes.ps1) - lists the local computer processes
+* [locate-ipaddress.ps1](Scripts/locate-ipaddress.ps1) - locates the geographic position of the given IP address
 * [MD5.ps1](Scripts/MD5.ps1) - prints the MD5 checksum of the given file
 * [make-install.ps1](Scripts/make-install.ps1) - installs built executables and libs to the installation directory
 * [moon.ps1](Scripts/moon.ps1) - prints the current moon phase
