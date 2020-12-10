@@ -86,8 +86,8 @@ Adding Subfolder Scripts/ to the Search Path for Command-line Usage
 
 Using PowerShell in Context Menus
 ----------------------------------
-* to enable "right-click > New > Windows PowerShell Script" execute `add_ps1_to_New_context_menu.reg` in subfolder [Context_Menus/](Context_Menus)
-* to disable this execute `remove_ps1_from_New_context_menu.reg` in subfolder [Context_Menus/](Context_Menus)
+* to enable "right-click > New > Windows PowerShell Script" execute `Add_ps1_to_New_context_menu.reg` in subfolder [Context_Menus/](Context_Menus)
+* to disable this execute `Remove_ps1_from_New_context_menu.reg` in subfolder [Context_Menus/](Context_Menus)
 
 Script Conventions
 ------------------
