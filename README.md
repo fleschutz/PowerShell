@@ -1,7 +1,7 @@
 Collection of Useful PowerShell Scripts (CUPS)
 ==============================================
 
-This repository contains 40+ useful cross-platform PowerShell scripts - to be used on the command-line (CLI), by context menu, by voice control, or by automation software (e.g. Jenkins).
+This repository contains 40+ useful cross-platform PowerShell scripts - to be used on the command-line (CLI), for remote control, by context menu, by voice control, or by automation software (e.g. Jenkins).
 
 List of Scripts
 ---------------
@@ -84,10 +84,10 @@ Adding Subfolder Scripts/ to the Search Path for Command-line Usage
 * **Windows:** open the environment variables dialogue and add the full path to Scripts/ to the system environment variable "Path"
 
 
-Using PowerShell in Windows Context Menus
-------------------------------------------
-* to enable "right-click > New > Windows PowerShell Script" just execute Context_Menus/add_ps1_to_New_context_menu.reg
-* to disable it just execute Context_Menus/remove_ps1_from_New_context_menu.reg
+Using PowerShell in Context Menus
+----------------------------------
+* to enable "right-click > New > Windows PowerShell Script" execute `add_ps1_to_New_context_menu.reg` in subfolder [Context_Menus/](Context_Menus)
+* to disable this execute `remove_ps1_from_New_context_menu.reg` in subfolder [Context_Menus/](Context_Menus)
 
 Script Conventions
 ------------------
