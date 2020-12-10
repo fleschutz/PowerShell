@@ -23,6 +23,7 @@ The following PowerShell scripts can be found in the [Scripts/](Scripts/) subfol
 * [MD5.ps1](Scripts/MD5.ps1) - prints the MD5 checksum of the given file
 * [make-install.ps1](Scripts/make-install.ps1) - installs built executables and libs to the installation directory
 * [moon.ps1](Scripts/moon.ps1) - prints the current moon phase
+* [open-browser.ps1](Scripts/open-browser.ps1) - starts the default Web browser
 * [password.ps1](Scripts/password.ps1) - generates and prints a single new password
 * [passwords.ps1](Scripts/passwords.ps1) - generates and prints a list of new passwords
 * [poweroff.ps1](Scripts/poweroff.ps1) - halts the local computer, administrator rights might be needed
