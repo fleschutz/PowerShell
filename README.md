@@ -43,6 +43,7 @@ The following PowerShell scripts can be found in the [Scripts/](Scripts/) subfol
 * [take-screenshots.ps1](Scripts/take-screenshots.ps1) - takes multiple screenshots
 * [test.ps1](Scripts/test.ps1) - simple test script
 * [train-dns-cache.ps1](Scripts/train-dns-cache.ps1) - trains the DNS cache with frequently used domain names
+* [translate-file.ps1](Scripts/translate-file.ps1) - translates the given file from source to target language
 * [translate-text.ps1](Scripts/translate-text.ps1) - translates the given text into other languages
 * [txt2wav.ps1](Scripts/txt2wav.ps1) - converts text into a audio .WAV file
 * [validate-xml.ps1](Scripts/validate-xml.ps1) - validates the given XML file
