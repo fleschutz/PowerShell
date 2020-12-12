@@ -18,7 +18,8 @@ if ($TargetLanguage -eq "" ) {
 }
 
 try {
-	./trans -i $SourceFile -s $SourceLanguage -t $TargetLanguage -e google -brief
+	$ScriptPath=$MyInvocation.MyCommand.Path
+	$ScriptPath/trans -i $SourceFile -s $SourceLanguage -t $TargetLanguage -e google -brief
 	exit 0
 } catch {
 	Write-Error "ERROR in line $($_.InvocationInfo.ScriptLineNumber): $($Error[0])"
