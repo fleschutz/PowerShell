@@ -11,15 +11,16 @@ if ($SourceFile -eq "" ) {
 	$SourceFile = read-host "Enter path to file"
 }
 if ($SourceLanguage -eq "" ) {
-	$SourceLanguage = read-host "Enter source language"
+	$SourceLanguage = read-host "Enter language of this file"
 }
 if ($TargetLanguage -eq "" ) {
-	$TargetLanguage = read-host "Enter target language"
+	$TargetLanguage = read-host "Enter language to translate to"
 }
 
 try {
-	$ScriptPath=$MyInvocation.MyCommand.Path
-	$ScriptPath/trans -i $SourceFile -s $SourceLanguage -t $TargetLanguage -e google -brief
+	$PathToScript=(get-item $MyInvocation.MyCommand.Path).directory
+	$PathToScript="$PathToScript/trans"
+	Start-Process -FilePath $PathToScript -ArgumentList "-i $SourceFile -s $SourceLanguage -t $TargetLanguage -e google -brief" -NoNewWindow -Wait
 	exit 0
 } catch {
 	Write-Error "ERROR in line $($_.InvocationInfo.ScriptLineNumber): $($Error[0])"
