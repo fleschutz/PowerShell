@@ -12,14 +12,14 @@ try {
 	$Table = import-csv domain_table.csv
 	foreach($Row in $Table) {
 		$Domain = $Row.Domain
-		write-progress "Training DNS cache with $Domain..."
+		Write-Progress "Training DNS cache with $Domain..."
 		$Ignore = nslookup $Domain
 	}
 
 	$Count = $Table.Length
 	$StopTime = Get-Date
 	$TimeInterval = New-Timespan -start $StartTime -end $StopTime
-	write-host "OK - DNS cache trained with $Count domain names in $TimeInterval sec."
+	Write-Output "OK - DNS cache trained with $Count domain names in $TimeInterval seconds"
 	exit 0
 } catch {
 	Write-Error "ERROR in line $($_.InvocationInfo.ScriptLineNumber): $($Error[0])"
