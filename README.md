@@ -26,9 +26,9 @@ The following PowerShell scripts can be found in the [Scripts/](Scripts/) subfol
 * [open-browser.ps1](Scripts/open-browser.ps1) - starts the default Web browser
 * [password.ps1](Scripts/password.ps1) - generates and prints a single new password
 * [passwords.ps1](Scripts/passwords.ps1) - generates and prints a list of new passwords
-* [poweroff.ps1](Scripts/poweroff.ps1) - halts the local computer, administrator rights might be needed
+* [poweroff.ps1](Scripts/poweroff.ps1) - halts the local computer (needs administrator rights)
 * [news.ps1](Scripts/news.ps1) - prints the latest news
-* [reboot.ps1](Scripts/reboot.ps1) - reboots the local computer, administrator rights might be needed
+* [reboot.ps1](Scripts/reboot.ps1) - reboots the local computer (needs administrator rights)
 * [scan-ports.ps1](Scripts/scan-ports.ps1) - scans the network for open/closed ports
 * [send-email.ps1](Scripts/send-email.ps1) - sends an email message
 * [send-tcp.ps1](Scripts/send-udp.ps1) - sends a TCP message to the given IP address and port
