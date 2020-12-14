@@ -35,6 +35,7 @@ The following PowerShell scripts can be found in the [Scripts/](Scripts/) subfol
 * [SHA1.ps1](Scripts/SHA1.ps1) - prints the SHA1 checksum of the given file
 * [SHA256.ps1](Scripts/SHA256.ps1) - prints the SHA256 checksum of the given file
 * [simulate-presence.ps1](Scripts/simulate-presence.ps1) - simulates the human presence against burglars
+* [simulate-typewriter.ps1](Scripts/simulate-typewriter.ps1) - prints a message with the typewriter effect
 * [speak-file.ps1](Scripts/speak-file.ps1) - speaks the content of the given text file by text-to-speech (TTS)
 * [speak-text.ps1](Scripts/speak-text.ps1) - speaks the given text by text-to-speech (TTS)
 * [switch-shelly1.ps1](Scripts/switch-shelly1.ps1) - switches a Shelly1 device in the local network
