@@ -7,13 +7,14 @@
 # License:	CC0
 
 param([string]$URL)
-if ($URL -eq "" ) {
-	$URL = read-host "Enter URL to download"
-}
 
 try {
+	if ($URL -eq "" ) {
+		$URL = read-host "Enter URL to download"
+	}
+
 	wget --mirror --convert-links --adjust-extension --page-requisites --no-parent $URL --directory-prefix . --no-verbose
-	write-host "✔️ Done."
+	Write-Output "OK."
 	exit 0
 } catch {
 	Write-Error "ERROR in line $($_.InvocationInfo.ScriptLineNumber): $($Error[0])"

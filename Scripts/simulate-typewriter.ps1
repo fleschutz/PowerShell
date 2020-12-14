@@ -10,14 +10,19 @@ param([string]$message)
 if ($message -eq "" ) {
 	$message = "`nHello World`n-----------`nPowerShell is cross-platform`nPowerShell is open-source`nPowerShell is easy to learn`nPowerShell is fully documented`n`nThanks for watching`n`n:-)`n`n"
 }
+$speed = 250
 
-$Speed = 250
-$Random = New-Object System.Random
+try {
+	$Random = New-Object System.Random
 
-$message -split '' |
-  ForEach-Object {
-    Write-Host -nonewline $_
-    Start-Sleep -milliseconds $(1 + $Random.Next($Speed))
-   }
+	$message -split '' |
+	  ForEach-Object {
+	    Write-Host -nonewline $_
+	    Start-Sleep -milliseconds $(1 + $Random.Next($speed))
+	   }
 
-exit 0
+	exit 0
+} catch {
+	Write-Error "ERROR in line $($_.InvocationInfo.ScriptLineNumber): $($Error[0])"
+	exit 1
+}
