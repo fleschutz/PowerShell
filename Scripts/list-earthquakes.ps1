@@ -1,7 +1,7 @@
 #!/snap/bin/powershell
 
-# Syntax:	./earthquakes.ps1
-# Description:	prints the stronger earthquakes for the last 30 days
+# Syntax:	./list-earthquakes.ps1
+# Description:	lists earthquakes >= 6.0 for the last 30 days
 # Author:	Markus Fleschutz
 # Source:	github.com/fleschutz/PowerShell
 # License:	CC0

@@ -10,13 +10,13 @@ The following PowerShell scripts can be found in the [Scripts/](Scripts/) subfol
 * [clone-repos.ps1](Scripts/clone-repos.ps1) - clones well-known Git repositories
 * [configure-git.ps1](Scripts/configure-git.ps1) - sets up the Git configuration
 * [download.ps1](Scripts/download.ps1) - downloads the file/directory from the given URL
-* [earthquakes.ps1](Scripts/earthquakes.ps1) - prints the stronger earthquakes for the last 30 days
 * [empty-dir.ps1](Scripts/empty-dir.ps1) - empties the given directory
 * [enable-crash-dumps.ps1](Scripts/enable-crash-dumps.ps1) - enables the writing of crash dumps
 * [inspect-exe.ps1](Scripts/inspect-exe.ps1) - prints basic information of the given executable file
 * [list-empty-dirs.ps1](Scripts/list-empty-dirs.ps1) - lists empty subfolders in a directory tree
 * [list-unused-files.ps1](Scripts/list-unused-files.ps1) - lists unused files in a directory tree
 * [list-cmdlets.ps1](Scripts/list-cmdlets.ps1) - lists the PowerShell cmdlets
+* [list-earthquakes.ps1](Scripts/list-earthquakes.ps1) - lists earthquakes >= 6.0 for the last 30 days
 * [list-modules.ps1](Scripts/list-modules.ps1) - lists the PowerShell modules
 * [list-passwords.ps1](Scripts/list-passwords.ps1) - generates and prints a list of new passwords
 * [list-processes.ps1](Scripts/list-processes.ps1) - lists the local computer processes
