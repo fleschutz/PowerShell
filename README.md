@@ -101,13 +101,13 @@ Script Conventions
 ------------------
 Each PowerShell script should follow the 7 golden rules:
 
-* **Rule 1:** the filename should be named `<verb>-<object>.ps1`
-* **Rule 2:** to support PowerShell on Linux the first line reads: #!/snap/bin/powershell
-* **Rule 3:** to support PowerShell on Linux the script has execute file permissions (chmod a+rx <file>)
-* **Rule 4:** add a metadata header containing the syntax, description, author, source, and license
-* **Rule 5:** prefer command-line options, but may ask the user in case no option is given
-* **Rule 6:** the encoding of the script is in UTF-8 with BOM to support Unicode characters
-* **Rule 7:** exit 0 for success, else print an error message and exit with the error code (mostly 1)
+* **Rule #1:** the filename should be named `<verb>-<object>.ps1`
+* **Rule #2:** the first line reads: #!/snap/bin/powershell (to support PowerShell on Linux)
+* **Rule #3:** the script has execute file permissions (chmod a+rx <file>) to support PowerShell on Linux
+* **Rule #4:** provide a metadata header with syntax, description, author, source, and license
+* **Rule #5:** prefer command-line options, else ask the user
+* **Rule #6:** the encoding of the script is in UTF-8 with BOM to support Unicode characters
+* **Rule #7:** exits 0 for success, else print an error message and exit with the error code (mostly 1)
 
 Feedback
 --------
