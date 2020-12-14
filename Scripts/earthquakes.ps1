@@ -7,12 +7,12 @@
 # License:	CC0
 
 $Format="csv" # csv, geojson, kml, text, xml
-$Order="time" # time, time-asc, magnitude, magnitude-asc
 $MinMagnitude=6.0
+$OrderBy="time" # time, time-asc, magnitude, magnitude-asc
  
 try {
 	Write-Progress "Querying earthquakes for the last 30 days ..."
-	(Invoke-WebRequest -Uri "https://earthquake.usgs.gov/fdsnws/event/1/query?format=$Format&orderby=$Order&minmagnitude=$MinMagnitude" -UserAgent "curl" ).Content
+	(Invoke-WebRequest -Uri "https://earthquake.usgs.gov/fdsnws/event/1/query?format=$Format&minmagnitude=$MinMagnitude&orderby=$OrderBy" -UserAgent "curl" ).Content
 	exit 0
 } catch {
 	Write-Error "ERROR in line $($_.InvocationInfo.ScriptLineNumber): $($Error[0])"
