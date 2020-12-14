@@ -17,6 +17,7 @@ The following PowerShell scripts can be found in the [Scripts/](Scripts/) subfol
 * [list-unused-files.ps1](Scripts/list-unused-files.ps1) - lists unused files in a directory tree
 * [list-cmdlets.ps1](Scripts/list-cmdlets.ps1) - lists the PowerShell cmdlets
 * [list-modules.ps1](Scripts/list-modules.ps1) - lists the PowerShell modules
+* [list-passwords.ps1](Scripts/list-passwords.ps1) - generates and prints a list of new passwords
 * [list-processes.ps1](Scripts/list-processes.ps1) - lists the local computer processes
 * [locate-city.ps1](Scripts/locate-city.ps1) - prints the lat/long coordinates of the given city
 * [locate-ipaddress.ps1](Scripts/locate-ipaddress.ps1) - locates the geographic position of the given IP address
@@ -24,8 +25,6 @@ The following PowerShell scripts can be found in the [Scripts/](Scripts/) subfol
 * [make-install.ps1](Scripts/make-install.ps1) - installs built executables and libs to the installation directory
 * [moon.ps1](Scripts/moon.ps1) - prints the current moon phase
 * [open-browser.ps1](Scripts/open-browser.ps1) - starts the default Web browser
-* [password.ps1](Scripts/password.ps1) - generates and prints a single new password
-* [passwords.ps1](Scripts/passwords.ps1) - generates and prints a list of new passwords
 * [poweroff.ps1](Scripts/poweroff.ps1) - halts the local computer (needs administrator rights)
 * [news.ps1](Scripts/news.ps1) - prints the latest news
 * [reboot.ps1](Scripts/reboot.ps1) - reboots the local computer (needs administrator rights)

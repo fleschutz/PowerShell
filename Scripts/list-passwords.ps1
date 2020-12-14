@@ -1,15 +1,16 @@
 #!/snap/bin/powershell
 
-# Syntax:	./passwords.ps1
+# Syntax:	./list-passwords.ps1
 # Description:	generates and prints a list of new passwords
 # Author:	Markus Fleschutz
 # Source:	github.com/fleschutz/PowerShell
 # License:	CC0
  
-$NumPasswords = 20
 $CharsPerPassword = 15
 $MinCharCode = 33
 $MaxCharCode = 126
+$NumLines = 24
+$NumColumns = 6
 
 function new_password() {
 	$password = ""
@@ -21,9 +22,12 @@ function new_password() {
 }
 
 try {
-	for ($j = 0; $j -lt $NumPasswords; $j++) {
-		$password = new_password
-		write-output $password
+	for ($j = 0; $j -lt $NumLines; $j++) {
+		for ($k = 0; $k -lt $NumColumns; $k++) {
+			$password = new_password
+			Write-Host -NoNewline "$password   "
+		}
+		Write-Host ""
 	}
 	exit 0
 } catch {
