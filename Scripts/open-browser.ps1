@@ -11,7 +11,6 @@ if ($URL -eq "" ) {
 	$URL = "http://www.fleschutz.de"
 }
 
-
 try {
 	Start-Process $URL
 	exit 0
