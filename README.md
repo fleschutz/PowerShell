@@ -73,7 +73,7 @@ How to get PowerShell?
    ```
 * **On CentOS, Debian, Docker, Fedora, macOS, openSUSE, Red Hat, Ubuntu** visit https://github.com/PowerShell/PowerShell for installation.
 
-Afterward, install CUPS by clicking on the green "Code" button or execute:
+Afterward, install this collection by clicking on the green "Code" button or execute:
 ```
 $ git clone https://github.com/fleschutz/PowerShell
 ```
