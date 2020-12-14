@@ -11,12 +11,13 @@ if ($message -eq "" ) {
 	$message = "`nHello World`n-----------`nPowerShell is cross-platform`nPowerShell is open-source`nPowerShell is easy to learn`nPowerShell is fully documented`n`nThanks for watching`n`n:-)`n`n"
 }
 
+$Speed = 250
 $Random = New-Object System.Random
 
 $message -split '' |
   ForEach-Object {
-    Write-Host $_ -nonew
-    Start-Sleep -milliseconds $(1 + $Random.Next(250))
+    Write-Host -nonewline $_
+    Start-Sleep -milliseconds $(1 + $Random.Next($Speed))
    }
 
 exit 0
