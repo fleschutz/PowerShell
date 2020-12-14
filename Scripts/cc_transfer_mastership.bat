@@ -5,7 +5,6 @@ cls
 echo.
 echo.
 echo *******************************************
-echo *        CearCase ATCSim Kaufbeuren       *
 echo *           Transfer Mastership           *
 echo *******************************************
 echo.
@@ -53,8 +52,6 @@ echo.
 echo *******************************************
 echo *           Transfer Mastership           *
 echo *******************************************
-echo * Destination = ufa | atcsim | kb | scott *
-echo *******************************************
 echo.
 echo.
 pause
@@ -82,8 +79,6 @@ REM ##############################################################
   echo.
   echo [USAGE]: %~1 BRANCH VOB DESTINATION
   echo.
-  echo [USAGE]: VOB = attower, ateditor, ...
-  echo [USAGE]: DESTINATION = kb, atcsim, ufa
   echo.
 
   if NOT "%~2" == "" (
