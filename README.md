@@ -25,7 +25,9 @@ The following PowerShell scripts can be found in the [Scripts/](Scripts/) subfol
 * [make-install.ps1](Scripts/make-install.ps1) - installs built executables and libs to the installation directory
 * [moon.ps1](Scripts/moon.ps1) - prints the current moon phase
 * [open-browser.ps1](Scripts/open-browser.ps1) - starts the default Web browser
+* [open-email-client.ps1](Scripts/open-browser.ps1) - starts the default email client
 * [poweroff.ps1](Scripts/poweroff.ps1) - halts the local computer (needs administrator rights)
+* [new-email.ps1](Scripts/new-email.ps1) - starts the default email client to write a new email
 * [news.ps1](Scripts/news.ps1) - prints the latest news
 * [reboot.ps1](Scripts/reboot.ps1) - reboots the local computer (needs administrator rights)
 * [scan-ports.ps1](Scripts/scan-ports.ps1) - scans the network for open/closed ports
