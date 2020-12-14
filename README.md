@@ -58,11 +58,12 @@ The following PowerShell scripts can be found in the [Scripts/](Scripts/) subfol
 What is PowerShell?
 -------------------
 PowerShell is a task automation and configuration management framework from Microsoft, consisting of a command-line shell and associated scripting language. 
-* it's **cross-platform**: available for Linux, Mac OS and Windows
-* it's **powerful**: fully control your computer
-* it's **open-source**: see the Github repository at https://github.com/PowerShell/PowerShell 
-* it's **easy to learn**: see the tutorial at https://www.guru99.com/powershell-tutorial.html
-* it's **fully documented**: see the official docs at https://docs.microsoft.com/en-us/powershell/
+
+* **it's powerful**: fully control your computer
+* **it's cross-platform**: available for Linux, Mac OS and Windows
+* **it's open-source**: see the Github repository at https://github.com/PowerShell/PowerShell 
+* **it's easy to learn**: see the tutorial at https://www.guru99.com/powershell-tutorial.html
+* **it's fully documented**: see the official docs at https://docs.microsoft.com/en-us/powershell/
 
 How to get PowerShell?
 ----------------------
@@ -83,8 +84,10 @@ Configure PowerShell as Default Shell
 * **Windows:** no need to, PowerShell is the default shell
 
 
-Adding Subfolder Scripts/ to the Search Path for Command-line Usage
--------------------------------------------------------------------
+Adding the Scripts to the Search Path
+-------------------------------------
+Want to use the PowerShell scripts everywhere on the command-line? Then you need to add the Scripts/ subfolder to the search path:
+
 * **Bash or sh:** edit .profile in your home directory and add the line: PATH="$PATH:/path/to/PowerShell/Scripts"
 * **Windows:** open the environment variables dialogue and add the full path to Scripts/ to the system environment variable "Path"
 
