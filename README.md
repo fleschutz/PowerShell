@@ -10,6 +10,7 @@ The following PowerShell scripts can be found in the [Scripts/](Scripts/) subfol
 * [clone-repos.ps1](Scripts/clone-repos.ps1) - clones well-known Git repositories
 * [configure-git.ps1](Scripts/configure-git.ps1) - sets up the Git configuration
 * [download.ps1](Scripts/download.ps1) - downloads the file/directory from the given URL
+* [earthquakes.ps1](Scripts/earthquakes.ps1) - prints the stronger earthquakes for the last 30 days
 * [empty-dir.ps1](Scripts/empty-dir.ps1) - empties the given directory
 * [enable-crash-dumps.ps1](Scripts/enable-crash-dumps.ps1) - enables the writing of crash dumps
 * [inspect-exe.ps1](Scripts/inspect-exe.ps1) - prints basic information of the given executable file
