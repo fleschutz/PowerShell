@@ -1,4 +1,3 @@
-#!/snap/bin/powershell
 
 # Syntax:	./train-dns-cache.ps1
 # Description:	trains the DNS cache with frequently used domain names
@@ -9,7 +8,10 @@
 try {
 	$StartTime = Get-Date
 
-	$Table = import-csv domain_table.csv
+	$PathToData=(get-item $MyInvocation.MyCommand.Path).directory
+	$PathToData="$PathToData/../Data"
+	$Table = import-csv "$PathToData/domain_table.csv"
+
 	foreach($Row in $Table) {
 		$Domain = $Row.Domain
 		Write-Progress "Training DNS cache with $Domain..."

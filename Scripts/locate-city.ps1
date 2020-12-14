@@ -13,7 +13,9 @@ if ($City -eq "" ) {
  
 try {
 	write-progress "Reading worldcities.csv..."
-	$Table = import-csv worldcities.csv
+	$PathToData=(get-item $MyInvocation.MyCommand.Path).directory
+	$PathToData="$PathToData/../Data"
+	$Table = import-csv "$PathToData/worldcities.csv"
 	$FoundOne = 0
 	foreach($Row in $Table) {
 		if ($Row.city -eq $City) {

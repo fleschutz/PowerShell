@@ -18,9 +18,9 @@ if ($TargetLanguage -eq "" ) {
 }
 
 try {
-	$PathToScript=(get-item $MyInvocation.MyCommand.Path).directory
-	$PathToScript="$PathToScript/trans"
-	Start-Process -FilePath $PathToScript -ArgumentList "-i $SourceFile -s $SourceLanguage -t $TargetLanguage -e google -brief" -NoNewWindow -Wait
+	$PathToData=(get-item $MyInvocation.MyCommand.Path).directory
+	$PathToData="$PathToData/../Data"
+	Start-Process -FilePath "$PathToData/trans" -ArgumentList "-i $SourceFile -s $SourceLanguage -t $TargetLanguage -e google -brief" -NoNewWindow -Wait
 	exit 0
 } catch {
 	Write-Error "ERROR in line $($_.InvocationInfo.ScriptLineNumber): $($Error[0])"
