@@ -13,12 +13,12 @@ The following PowerShell scripts can be found in the [Scripts/](Scripts/) subfol
 * [empty-dir.ps1](Scripts/empty-dir.ps1) - empties the given directory
 * [enable-crash-dumps.ps1](Scripts/enable-crash-dumps.ps1) - enables the writing of crash dumps
 * [inspect-exe.ps1](Scripts/inspect-exe.ps1) - prints basic information of the given executable file
-* [latlong.ps1](Scripts/latlong.ps1) - prints the lat/long coordinates of the given city
 * [list-empty-dirs.ps1](Scripts/list-empty-dirs.ps1) - lists empty subfolders in a directory tree
 * [list-unused-files.ps1](Scripts/list-unused-files.ps1) - lists unused files in a directory tree
 * [list-cmdlets.ps1](Scripts/list-cmdlets.ps1) - lists the PowerShell cmdlets
 * [list-modules.ps1](Scripts/list-modules.ps1) - lists the PowerShell modules
 * [list-processes.ps1](Scripts/list-processes.ps1) - lists the local computer processes
+* [locate-city.ps1](Scripts/locate-city.ps1) - prints the lat/long coordinates of the given city
 * [locate-ipaddress.ps1](Scripts/locate-ipaddress.ps1) - locates the geographic position of the given IP address
 * [MD5.ps1](Scripts/MD5.ps1) - prints the MD5 checksum of the given file
 * [make-install.ps1](Scripts/make-install.ps1) - installs built executables and libs to the installation directory

@@ -1,6 +1,6 @@
 #!/snap/bin/powershell
 
-# Syntax:	./latlong.ps1 [<city>]
+# Syntax:	./locate-city.ps1 [<city>]
 # Description:	prints the lat/long coordinates of the given city
 # Author:	Markus Fleschutz
 # Source:	github.com/fleschutz/PowerShell
