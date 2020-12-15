@@ -24,7 +24,6 @@ The following PowerShell scripts can be found in the [Scripts/](Scripts/) subfol
 * [locate-ipaddress.ps1](Scripts/locate-ipaddress.ps1) - locates the geographic position of the given IP address
 * [MD5.ps1](Scripts/MD5.ps1) - prints the MD5 checksum of the given file
 * [make-install.ps1](Scripts/make-install.ps1) - installs built executables and libs to the installation directory
-* [matrix-effect.ps1](Scripts/matrix-effect.ps1) - shows the Matrix effect
 * [moon.ps1](Scripts/moon.ps1) - prints the current moon phase
 * [open-browser.ps1](Scripts/open-browser.ps1) - starts the default Web browser
 * [open-email-client.ps1](Scripts/open-browser.ps1) - starts the default email client
@@ -38,6 +37,7 @@ The following PowerShell scripts can be found in the [Scripts/](Scripts/) subfol
 * [send-udp.ps1](Scripts/send-udp.ps1) - sends a UDP datagram message to the given IP address and port
 * [SHA1.ps1](Scripts/SHA1.ps1) - prints the SHA1 checksum of the given file
 * [SHA256.ps1](Scripts/SHA256.ps1) - prints the SHA256 checksum of the given file
+* [simulate-matrix.ps1](Scripts/simulate-matrix.ps1) - simulates the Matrix (fun)
 * [simulate-presence.ps1](Scripts/simulate-presence.ps1) - simulates the human presence against burglars
 * [simulate-typewriter.ps1](Scripts/simulate-typewriter.ps1) - prints a message with the typewriter effect
 * [speak-file.ps1](Scripts/speak-file.ps1) - speaks the content of the given text file by text-to-speech (TTS)
