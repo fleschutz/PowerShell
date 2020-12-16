@@ -24,10 +24,11 @@ try {
 	foreach($Row in $Table) {
 		if ($Row.country -eq $CountryCode) {
 			if ($Row.postal_code -eq $ZipCode) {
+				$Country=$Row.country
 				$City = $Row.city
 				$Lat = $Row.latitude
 				$Lon = $Row.longitude
-				write-host "* $City is at $Lat°N, $Lon°W"
+				write-host "* $Country $ZipCode $City is at $Lat°N, $Lon°W"
 				$FoundOne = 1
 			}
 		}
