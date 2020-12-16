@@ -1,7 +1,7 @@
 Collection of Useful PowerShell Scripts
 =======================================
 
-This repository contains 50+ useful cross-platform PowerShell scripts - to be used by command-line (CLI), for remote control (RC), by context menu, by voice control, by automation software (e.g. Jenkins), or simply for learning.
+This repository contains 50+ useful cross-platform PowerShell scripts - to be used by command-line (CLI), for remote control (RC), by context menu, by voice control, by automation software (e.g. Jenkins), or simply to learn PowerShell.
 
 List of Scripts
 ---------------
