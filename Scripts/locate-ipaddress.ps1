@@ -1,7 +1,7 @@
 #!/snap/bin/powershell
 
 # Syntax:	./locate-ipaddress.ps1 [<IPaddress>]
-# Description:	locates the geographic position of the given IP address
+# Description:	prints the geographic location of the given IP address
 # Author:	Markus Fleschutz
 # Source:	github.com/fleschutz/PowerShell
 # License:	CC0
