@@ -13,12 +13,12 @@ if ($CountryCode -eq "" ) {
 if ($ZipCode -eq "" ) {
 	$ZipCode = read-host "Enter the zip code"
 }
+$PathToDataDir=(get-item $MyInvocation.MyCommand.Path).directory
+$PathToDataDir="$PathToDataDir/../Data"
  
 try {
 	write-progress "Reading zip-codes.csv..."
-	$PathToData=(get-item $MyInvocation.MyCommand.Path).directory
-	$PathToData="$PathToData/../Data"
-	$Table = import-csv "$PathToData/zip-codes.csv"
+	$Table = import-csv "$PathToDataDir/zip-codes.csv"
 
 	$FoundOne = 0
 	foreach($Row in $Table) {
