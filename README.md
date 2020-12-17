@@ -22,7 +22,7 @@ The following PowerShell scripts can be found in the [Scripts/](Scripts/) subfol
 * [list-processes.ps1](Scripts/list-processes.ps1) - lists the local computer processes
 * [locate-city.ps1](Scripts/locate-city.ps1) - prints the geographic location of the given city
 * [locate-ipaddress.ps1](Scripts/locate-ipaddress.ps1) - prints the geographic location of the given IP address
-* [locate-zipcode.ps1](Scripts/locate-zip-code.ps1) - prints the geographic location of the given zip-code
+* [locate-zip-code.ps1](Scripts/locate-zip-code.ps1) - prints the geographic location of the given zip-code
 * [MD5.ps1](Scripts/MD5.ps1) - prints the MD5 checksum of the given file
 * [make-install.ps1](Scripts/make-install.ps1) - installs built executables and libs to the installation directory
 * [moon.ps1](Scripts/moon.ps1) - prints the current moon phase
@@ -55,7 +55,7 @@ The following PowerShell scripts can be found in the [Scripts/](Scripts/) subfol
 * [weather.ps1](Scripts/weather.ps1) - prints the current weather forecast
 * [weather-alert.ps1](Scripts/weather-alert.ps1) - checks the current weather for critical values
 * [weather-report.ps1](Scripts/weather-report.ps1) - prints the local weather report
-* [weather-worldwide.ps1](Scripts/weather-worldwide.ps1) - prints the current weather of cities world-wide
+* [weather-worldwide.ps1](Scripts/weather-worldwide.ps1) - prints the current weather of cities worldwide
 * [wakeup.ps1](Scripts/wakeup.ps1) - sends a magic packet to the given computer, waking him up
 * [zip-dir.ps1](Scripts/zip-dir.ps1) - creates a zip archive of the given folder
 
