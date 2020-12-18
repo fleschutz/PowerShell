@@ -62,6 +62,7 @@ The following PowerShell scripts can be found in the [Scripts/](Scripts/) subfol
 * [write-green.ps1](Scripts/write-green.ps1) - writes the given text in green
 * [write-red.ps1](Scripts/write-red.ps1) - writes the given text in red
 * [write-uppercase.ps1](Scripts/write-uppercase.ps1) - writes the given text in uppercase letters
+* [write-vertical.ps1](Scripts/write-vertical.ps1) - writes the given text in vertical direction
 * [zip-dir.ps1](Scripts/zip-dir.ps1) - creates a zip archive of the given folder
 
 
