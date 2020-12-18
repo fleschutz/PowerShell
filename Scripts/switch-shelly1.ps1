@@ -14,7 +14,7 @@ if ($TurnMode -eq "" ) {
 	$TurnMode = read-host "Enter turn mode (on/off/toggle)"
 }
 if ($Timer -eq 0 ) {
-	$Timer = read-host "Enter timer (0=endless)"
+	[int]$Timer = read-host "Enter timer (0=endless)"
 }
 
 try {
