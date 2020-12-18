@@ -44,6 +44,24 @@ function BigD() { param([Int]$Row)
 	}
 }
 
+function BigE() { param([Int]$Row)
+	switch($Row) {
+	1 { return " ____  " }
+	2 { return "| ___) " }
+	3 { return "| __)  " }
+	4 { return "|____) " }
+	}
+}
+
+function BigF() { param([Int]$Row)
+	switch($Row) {
+	1 { return " ____  " }
+	2 { return "| ___) " }
+	3 { return "| __)  " }
+	4 { return "|_)    " }
+	}
+}
+
 function BigChar() {
 	param([String]$Char, [Int]$Row)
 	switch($Char) {
@@ -51,8 +69,8 @@ function BigChar() {
 	'B' { return BigB $Row }
 	'C' { return BigC $Row }
 	'D' { return BigD $Row }
-	'E' { return BigA $Row }
-	'F' { return BigA $Row }
+	'E' { return BigE $Row }
+	'F' { return BigF $Row }
 	'G' { return BigA $Row }
 	'H' { return BigA $Row }
 	'I' { return BigA $Row }
