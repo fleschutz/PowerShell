@@ -8,69 +8,81 @@
 
 param([String]$Text)
 
-function big_A() {
-	param([Int]$Line)
-	switch($Line) {
-	0 { return "     A      " }
-	1 { return "    A A     " }
-	2 { return "   A   A    " }
-	3 { return "  AAAAAAA   " }
-	4 { return " AAAAAAAAA  " }
-	5 { return "AA       AA " }
+function BigA() { param([Int]$Row)
+	switch($Row) {
+	1 { return "   __    " }
+	2 { return "  /__\   " }
+	3 { return " /(__)\  " }
+	4 { return "(__)(__) " }
 	}
 }
 
-function big_B() {
-	param([Int]$Line)
-	switch($Line) {
-	0 { return "BBBBBBB  " }
-	1 { return "B      B " }
-	2 { return "BBBBBBB  " }
-	3 { return "BBBBBBB  " }
-	4 { return "B      B " }
-	5 { return "BBBBBBB  " }
+function BigB() { param([Int]$Row)
+	switch($Row) {
+	1 { return " ____  " }
+	2 { return "| _  ) " }
+	3 { return "| _ (  " }
+	4 { return "|____) " }
 	}
 }
 
-function big_char() {
-	param([String]$Char, [Int]$Line)
+function BigC() { param([Int]$Row)
+	switch($Row) {
+	1 { return "  ___  " }
+	2 { return " / __) " }
+	3 { return "( (__  " }
+	4 { return " \___) " }
+	}
+}
+
+function BigD() { param([Int]$Row)
+	switch($Row) {
+	1 { return " ____   " }
+	2 { return "|  _ \  " }
+	3 { return "| (_) ) " }
+	4 { return "|____/  " }
+	}
+}
+
+function BigChar() {
+	param([String]$Char, [Int]$Row)
 	switch($Char) {
-	'A' { return big_A $Line }
-	'B' { return big_B $Line }
-	'C' { return big_A $Line }
-	'D' { return big_A $Line }
-	'E' { return big_A $Line }
-	'F' { return big_A $Line }
-	'G' { return big_A $Line }
-	'H' { return big_A $Line }
-	'I' { return big_A $Line }
-	'J' { return big_A $Line }
-	'K' { return big_A $Line }
-	'L' { return big_A $Line }
-	'M' { return big_A $Line }
-	'N' { return big_A $Line }
-	'O' { return big_A $Line }
-	'P' { return big_A $Line }
-	'Q' { return big_A $Line }
-	'R' { return big_A $Line }
-	'S' { return big_A $Line }
-	'T' { return big_A $Line }
-	'U' { return big_A $Line }
-	'V' { return big_A $Line }
-	'W' { return big_A $Line }
-	'X' { return big_A $Line }
-	'Y' { return big_A $Line }
-	'Z' { return big_A $Line }
-	'0' { return big_A $Line }
-	'1' { return big_A $Line }
-	'2' { return big_A $Line }
-	'3' { return big_A $Line }
-	'4' { return big_A $Line }
-	'5' { return big_A $Line }
-	'6' { return big_A $Line }
-	'7' { return big_A $Line }
-	'8' { return big_A $Line }
-	'9' { return big_A $Line }
+	'A' { return BigA $Row }
+	'B' { return BigB $Row }
+	'C' { return BigC $Row }
+	'D' { return BigD $Row }
+	'E' { return BigA $Row }
+	'F' { return BigA $Row }
+	'G' { return BigA $Row }
+	'H' { return BigA $Row }
+	'I' { return BigA $Row }
+	'J' { return BigA $Row }
+	'K' { return BigA $Row }
+	'L' { return BigA $Row }
+	'M' { return BigA $Row }
+	'N' { return BigA $Row }
+	'O' { return BigA $Row }
+	'P' { return BigA $Row }
+	'Q' { return BigA $Row }
+	'R' { return BigA $Row }
+	'S' { return BigA $Row }
+	'T' { return BigA $Row }
+	'U' { return BigA $Row }
+	'V' { return BigA $Row }
+	'W' { return BigA $Row }
+	'X' { return BigA $Row }
+	'Y' { return BigA $Row }
+	'Z' { return BigA $Row }
+	'0' { return BigA $Row }
+	'1' { return BigA $Row }
+	'2' { return BigA $Row }
+	'3' { return BigA $Row }
+	'4' { return BigA $Row }
+	'5' { return BigA $Row }
+	'6' { return BigA $Row }
+	'7' { return BigA $Row }
+	'8' { return BigA $Row }
+	'9' { return BigA $Row }
 	}
 	return "        "
 }
@@ -79,14 +91,14 @@ try {
 	if ($Text -eq "" ) {
 		[String]$Text = read-host "Enter text to write"
 	}
-	write-host ""
-	[char[]]$TextArray = $Text.ToUpper()
-	for ($Line = 0; $Line -lt 6; $Line++) {
-		foreach($Char in $TextArray) {
-			$Out = big_char $Char $Line
-			write-host -nonewline $Out
+	[char[]]$CharArray = $Text.ToUpper()
+	write-output ""
+	for ($Row = 1; $Row -lt 5; $Row++) {
+		$Line = ""
+		foreach($Char in $CharArray) {
+			$Line += BigChar $Char $Row
 		}
-		write-host ""
+		write-output $Line
 	}
 	write-host ""
 	exit 0
