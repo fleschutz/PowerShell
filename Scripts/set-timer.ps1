@@ -7,11 +7,10 @@
 # License:	CC0
 
 param([int]$Seconds)
-if ($Seconds -eq 0 ) {
-	[int]$Seconds = read-host "Enter number of seconds"
-}
-
 try {
+	if ($Seconds -eq 0 ) {
+		[int]$Seconds = read-host "Enter number of seconds"
+	}
 	for ($i = $Seconds; $i -gt 0; $i--) {
 		write-progress "$i seconds"
 		start-sleep -s 1
