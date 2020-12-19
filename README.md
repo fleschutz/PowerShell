@@ -61,6 +61,7 @@ The following PowerShell scripts can be found in the [Scripts/](Scripts/) subfol
 * [write-big.ps1](Scripts/write-big.ps1) - writes the given text in big letters
 * [write-blue.ps1](Scripts/write-blue.ps1) - writes the given text in blue
 * [write-green.ps1](Scripts/write-green.ps1) - writes the given text in green
+* [write-MOTD.ps1](Scripts/write-MOTD.ps1) - writes the message of the day (MOTD)
 * [write-red.ps1](Scripts/write-red.ps1) - writes the given text in red
 * [write-uppercase.ps1](Scripts/write-uppercase.ps1) - writes the given text in uppercase letters
 * [write-vertical.ps1](Scripts/write-vertical.ps1) - writes the given text in vertical direction
