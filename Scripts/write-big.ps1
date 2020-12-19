@@ -297,6 +297,42 @@ function Big5() { param([Int]$Row)
 	}
 }
 
+function Big6() { param([Int]$Row)
+	switch($Row) {
+	1 { return "  _   " }
+	2 { return " / )  " }
+	3 { return "/ _ \ " }
+	4 { return "\___/ " }
+	}
+}
+
+function Big7() { param([Int]$Row)
+	switch($Row) {
+	1 { return " ___  " }
+	2 { return "(__ ) " }
+	3 { return " / /  " }
+	4 { return "(_/   " }
+	}
+} 
+
+function Big8() { param([Int]$Row)
+	switch($Row) {
+	1 { return " ___  " }
+	2 { return "( _ ) " }
+	3 { return "/ _ \ " }
+	4 { return "\___/ " }
+	}
+} 
+
+function Big9() { param([Int]$Row)
+	switch($Row) {
+	1 { return " ___  " }
+	2 { return "/ _ \ " }
+	3 { return "\_  / " }
+	4 { return " (_/  " }
+	}
+} 
+
 function BigChar() { param([String]$Char, [Int]$Row)
 	switch($Char) {
 	'A' { return BigA $Row }
