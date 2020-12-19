@@ -80,6 +80,178 @@ function BigH() { param([Int]$Row)
 	}
 }
 
+function BigI() { param([Int]$Row)
+	switch($Row) {
+	1 { return " _  " }
+	2 { return "| | " }
+	3 { return "| | " }
+	4 { return "|_| " }
+	}
+}
+
+function BigJ() { param([Int]$Row)
+	switch($Row) {
+	1 { return "   __  " }
+	2 { return "  (  | " }
+	3 { return ".-_) | " }
+	4 { return "\____| " }
+	}
+}
+
+function BigK() { param([Int]$Row)
+	switch($Row) {
+	1 { return " _  _  " }
+	2 { return "| |/ ) " }
+	3 { return "|   (  " }
+	4 { return "|_|\_) " }
+	}
+}
+
+function BigL() { param([Int]$Row)
+	switch($Row) {
+	1 { return " _     " }
+	2 { return "| |    " }
+	3 { return "| |__  " }
+	4 { return "|____) " }
+	}
+}
+
+function BigM() { param([Int]$Row)
+	switch($Row) {
+	1 { return " _    _  " }
+	2 { return "| \  / | " }
+	3 { return "|  \/  | " }
+	4 { return "|_|  |_| " }
+	}
+}
+
+function BigN() { param([Int]$Row)
+	switch($Row) {
+	1 { return " _   _  " }
+	2 { return "| \ | | " }
+	3 { return "|  \| | " }
+	4 { return "|_| \_| " }
+	}
+}
+
+function BigO() { param([Int]$Row)
+	switch($Row) {
+	1 { return "  ___   " }
+	2 { return " / _ \  " }
+	3 { return "( (_) ) " }
+	4 { return " \___/  " }
+	}
+}
+
+function BigP() { param([Int]$Row)
+	switch($Row) {
+	1 { return " ____  " }
+	2 { return "|  _ \ " }
+	3 { return "|  __/ " }
+	4 { return "|_|    " }
+	}
+}
+
+function BigQ() { param([Int]$Row)
+	switch($Row) {
+	1 { return "  ____   " }
+	2 { return " / _  \  " }
+	3 { return "( (_) (  " }
+	4 { return " \___/\\ " }
+	}
+}
+
+function BigR() { param([Int]$Row)
+	switch($Row) {
+	1 { return " ____  " }
+	2 { return "|  _ \ " }
+	3 { return "|    / " }
+	4 { return "|_|\_) " }
+	}
+}
+
+function BigS() { param([Int]$Row)
+	switch($Row) {
+	1 { return " ____  " }
+	2 { return "/  __) " }
+	3 { return "\__  \ " }
+	4 { return "(____/ " }
+	}
+}
+
+function BigT() { param([Int]$Row)
+	switch($Row) {
+	1 { return " _____  " }
+	2 { return "|_   _| " }
+	3 { return "  | |   " }
+	4 { return "  |_|   " }
+	}
+}
+
+function BigU() { param([Int]$Row)
+	switch($Row) {
+	1 { return " _   _  " }
+	2 { return "| | | | " }
+	3 { return "| |_| | " }
+	4 { return "|_____| " }
+	}
+}
+
+function BigV() { param([Int]$Row)
+	switch($Row) {
+	1 { return " _  _  " }
+	2 { return "( \/ ) " }
+	3 { return " \  /  " }
+	4 { return "  \/   " }
+	}
+}
+
+function BigW() { param([Int]$Row)
+	switch($Row) {
+	1 { return " __    __  " }
+	2 { return "\  \/\/  / " }
+	3 { return " \      /  " }
+	4 { return "  \_/\_/   " }
+	}
+}
+
+function BigX() { param([Int]$Row)
+	switch($Row) {
+	1 { return " _  _  " }
+	2 { return "( \/ ) " }
+	3 { return " )  (  " }
+	4 { return "(_/\_) " }
+	}
+}
+
+function BigY() { param([Int]$Row)
+	switch($Row) {
+	1 { return " _  _  " }
+	2 { return "( \/ ) " }
+	3 { return " \  /  " }
+	4 { return " (__)  " }
+	}
+}
+
+function BigZ() { param([Int]$Row)
+	switch($Row) {
+	1 { return " ____  " }
+	2 { return "(_   ) " }
+	3 { return " / /_  " }
+	4 { return "(____) " }
+	}
+}
+
+
+function Big0() { param([Int]$Row)
+	switch($Row) {
+	1 { return "  ___   " }
+	2 { return " / _ \  " }
+	3 { return "( (_) ) " }
+	4 { return " \___/  " }
+	}
+}
+
 function BigChar() {
 	param([String]$Char, [Int]$Row)
 	switch($Char) {
@@ -91,34 +263,34 @@ function BigChar() {
 	'F' { return BigF $Row }
 	'G' { return BigG $Row }
 	'H' { return BigH $Row }
-	'I' { return BigA $Row }
-	'J' { return BigA $Row }
-	'K' { return BigA $Row }
-	'L' { return BigA $Row }
-	'M' { return BigA $Row }
-	'N' { return BigA $Row }
-	'O' { return BigA $Row }
-	'P' { return BigA $Row }
-	'Q' { return BigA $Row }
-	'R' { return BigA $Row }
-	'S' { return BigA $Row }
-	'T' { return BigA $Row }
-	'U' { return BigA $Row }
-	'V' { return BigA $Row }
-	'W' { return BigA $Row }
-	'X' { return BigA $Row }
-	'Y' { return BigA $Row }
-	'Z' { return BigA $Row }
-	'0' { return BigA $Row }
-	'1' { return BigA $Row }
-	'2' { return BigA $Row }
-	'3' { return BigA $Row }
-	'4' { return BigA $Row }
-	'5' { return BigA $Row }
-	'6' { return BigA $Row }
-	'7' { return BigA $Row }
-	'8' { return BigA $Row }
-	'9' { return BigA $Row }
+	'I' { return BigI $Row }
+	'J' { return BigJ $Row }
+	'K' { return BigK $Row }
+	'L' { return BigL $Row }
+	'M' { return BigM $Row }
+	'N' { return BigN $Row }
+	'O' { return BigO $Row }
+	'P' { return BigP $Row }
+	'Q' { return BigQ $Row }
+	'R' { return BigR $Row }
+	'S' { return BigS $Row }
+	'T' { return BigT $Row }
+	'U' { return BigU $Row }
+	'V' { return BigV $Row }
+	'W' { return BigW $Row }
+	'X' { return BigX $Row }
+	'Y' { return BigY $Row }
+	'Z' { return BigZ $Row }
+	'0' { return Big0 $Row }
+	'1' { return Big1 $Row }
+	'2' { return Big2 $Row }
+	'3' { return Big3 $Row }
+	'4' { return Big4 $Row }
+	'5' { return Big5 $Row }
+	'6' { return Big6 $Row }
+	'7' { return Big6 $Row }
+	'8' { return Big7 $Row }
+	'9' { return Big9 $Row }
 	}
 	return "        "
 }
