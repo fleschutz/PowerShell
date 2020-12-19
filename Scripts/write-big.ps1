@@ -252,8 +252,52 @@ function Big0() { param([Int]$Row)
 	}
 }
 
-function BigChar() {
-	param([String]$Char, [Int]$Row)
+function Big1() { param([Int]$Row)
+	switch($Row) {
+	1 { return " ___  " }
+	2 { return "/_  | " }
+	3 { return "  | | " }
+	4 { return "  |_| " }
+	}
+}
+
+function Big2() { param([Int]$Row)
+	switch($Row) {
+	1 { return " ___   " }
+	2 { return "(__ \  " }
+	3 { return " / _/  " }
+	4 { return "(____) " }
+	}
+}
+
+function Big3() { param([Int]$Row)
+	switch($Row) {
+	1 { return " ___  " }
+	2 { return "(__ ) " }
+	3 { return " (_ \ " }
+	4 { return "(___/ " }
+	}
+}
+
+function Big4() { param([Int]$Row)
+	switch($Row) {
+	1 { return "  __   " }
+	2 { return " /. |  " }
+	3 { return "(_  _) " }
+	4 { return "  |_|  " }
+	}
+}
+
+function Big5() { param([Int]$Row)
+	switch($Row) {
+	1 { return " ____  " }
+	2 { return "| ___) " }
+	3 { return "|__ \  " }
+	4 { return "(___/  " }
+	}
+}
+
+function BigChar() { param([String]$Char, [Int]$Row)
 	switch($Char) {
 	'A' { return BigA $Row }
 	'B' { return BigB $Row }
@@ -288,8 +332,8 @@ function BigChar() {
 	'4' { return Big4 $Row }
 	'5' { return Big5 $Row }
 	'6' { return Big6 $Row }
-	'7' { return Big6 $Row }
-	'8' { return Big7 $Row }
+	'7' { return Big7 $Row }
+	'8' { return Big8 $Row }
 	'9' { return Big9 $Row }
 	}
 	return "        "
@@ -299,16 +343,16 @@ try {
 	if ($Text -eq "" ) {
 		[String]$Text = read-host "Enter text to write"
 	}
-	[char[]]$CharArray = $Text.ToUpper()
+	[char[]]$ArrayOfChars = $Text.ToUpper()
 	write-output ""
 	for ($Row = 1; $Row -lt 5; $Row++) {
 		$Line = ""
-		foreach($Char in $CharArray) {
+		foreach($Char in $ArrayOfChars) {
 			$Line += BigChar $Char $Row
 		}
 		write-output $Line
 	}
-	write-host ""
+	write-output ""
 	exit 0
 } catch {
 	write-error "ERROR in line $($_.InvocationInfo.ScriptLineNumber): $($Error[0])"
