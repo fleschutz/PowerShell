@@ -14,6 +14,7 @@ The following PowerShell scripts can be found in the [Scripts/](Scripts/) subfol
 * [enable-crash-dumps.ps1](Scripts/enable-crash-dumps.ps1) - enables the writing of crash dumps
 * [inspect-exe.ps1](Scripts/inspect-exe.ps1) - prints basic information of the given executable file
 * [list-empty-dirs.ps1](Scripts/list-empty-dirs.ps1) - lists empty subfolders in a directory tree
+* [list-files.ps1](Scripts/list-files.ps1) - lists all files in the given folder and also in every subfolder
 * [list-unused-files.ps1](Scripts/list-unused-files.ps1) - lists unused files in a directory tree
 * [list-cmdlets.ps1](Scripts/list-cmdlets.ps1) - lists the PowerShell cmdlets
 * [list-earthquakes.ps1](Scripts/list-earthquakes.ps1) - lists earthquakes >= 6.0 for the last 30 days
