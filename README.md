@@ -62,6 +62,7 @@ The following PowerShell scripts can be found in the [Scripts/](Scripts/) subfol
 * [write-big.ps1](Scripts/write-big.ps1) - writes the given text in big letters
 * [write-blue.ps1](Scripts/write-blue.ps1) - writes the given text in a blue foreground color
 * [write-green.ps1](Scripts/write-green.ps1) - writes the given text in a green foreground color
+* [write-morse-code.ps1](Scripts/write-morse-code.ps1) - writes the given text in Morse code
 * [write-MOTD.ps1](Scripts/write-MOTD.ps1) - writes the message of the day (MOTD)
 * [write-red.ps1](Scripts/write-red.ps1) - writes the given text in a red foreground color
 * [write-typewriter.ps1](Scripts/write-typewriter.ps1) - writes the given text with the typewriter effect
