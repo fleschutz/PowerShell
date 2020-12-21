@@ -9,20 +9,20 @@
 
 # Retrieve information:
 
+$CurrentTime = Get-Date -format "yyyy-MM-dd HH:mm"
+$TimeZone = (Get-TimeZone).id
 $UserName = $(whoami)
 $ComputerName = $(hostname)
-$CurrentDate = Get-Date
-$PowerShellVersion = "{0}.{1}" -f $PSVersionTable.PSVersion.Major,$PSVersionTable.PSVersion.Minor
+$OSName = $PSVersionTable.OS
+$PowerShellVersion = $PSVersionTable.PSVersion
+$PowerShellEdition = $PSVersionTable.PSEdition
+$UptimeDays = (Get-Uptime).Days
+$UptimeHours = (Get-Uptime).Hours
+$Uptime = "$UptimeDays days, $UptimeHours hours"
+$NumberOfProcesses = (Get-Process).Count
 
-#$OS = Get-CimInstance -ClassName Win32_OperatingSystem
 #$Logical_Disk = Get-CimInstance -ClassName Win32_LogicalDisk | Where-Object -Property DeviceID -eq $OS.SystemDrive
 #$Processor = Get-CimInstance -ClassName Win32_Processor
-$Process_Count = (Get-Process).Count
-#$OS_Name = $ReturnedValues.Operating_System.Caption
-#$Kernel_Info = $ReturnedValues.Operating_System.Version
-#$Process_Count = $ReturnedValues.Process_Count
-#$Uptime = "$(($Uptime = $CurrentDate - $($ReturnedValues.Operating_System.LastBootUpTime)).Days) days, $($Uptime.Hours) hours, $($Uptime.Minutes) minutes"
-#$CPU_Info = $ReturnedValues.Processor.Name -replace '\(C\)', '' -replace '\(R\)', '' -replace '\(TM\)', '' -replace 'CPU', '' -replace '\s+', ' '
 #$Current_Load = $ReturnedValues.Processor.LoadPercentage    
 #$Memory_Size = "{0}mb/{1}mb Used" -f (([math]::round($ReturnedValues.Operating_System.TotalVisibleMemorySize/1KB))-
 #([math]::round($ReturnedValues.Operating_System.FreePhysicalMemory/1KB))),([math]::round($ReturnedValues.Operating_System.TotalVisibleMemorySize/1KB))    
@@ -31,63 +31,70 @@ $Process_Count = (Get-Process).Count
 
 # Write to the Console
 
-Write-Host ""
-Write-Host ""
-Write-Host " ,.=:^!^!t3Z3z., " -ForegroundColor Red
-Write-Host " :tt:::tt333EE3 " -ForegroundColor Red
-Write-Host " Et:::ztt33EEE " -NoNewline -ForegroundColor Red
-Write-Host " @Ee., ..,           $CurrentDate" -ForegroundColor Green
-Write-Host " ;tt:::tt333EE7" -NoNewline -ForegroundColor Red
-Write-Host " ;EEEEEEttttt33# " -ForegroundColor Green
-Write-Host " :Et:::zt333EEQ." -NoNewline -ForegroundColor Red
-Write-Host " SEEEEEttttt33QL " -NoNewline -ForegroundColor Green
-Write-Host "   User: " -NoNewline -ForegroundColor Red
-Write-Host "$UserName" -ForegroundColor Cyan
-Write-Host " it::::tt333EEF" -NoNewline -ForegroundColor Red
-Write-Host " @EEEEEEttttt33F " -NoNewline -ForeGroundColor Green
-Write-Host "    Hostname: " -NoNewline -ForegroundColor Red
-Write-Host "$ComputerName" -ForegroundColor Cyan
-Write-Host " ;3=*^``````'*4EEV" -NoNewline -ForegroundColor Red
-Write-Host " :EEEEEEttttt33@. " -NoNewline -ForegroundColor Green
-Write-Host "   OS: " -NoNewline -ForegroundColor Red
-Write-Host "$OS_Name" -ForegroundColor Cyan
-Write-Host " ,.=::::it=., " -NoNewline -ForegroundColor Cyan
-Write-Host "``" -NoNewline -ForegroundColor Red
-Write-Host " @EEEEEEtttz33QF " -NoNewline -ForegroundColor Green
-Write-Host "    Kernel: " -NoNewline -ForegroundColor Red
-Write-Host "NT " -NoNewline -ForegroundColor Cyan
-Write-Host "$Kernel_Info" -ForegroundColor Cyan
-Write-Host " ;::::::::zt33) " -NoNewline -ForegroundColor Cyan
-Write-Host " '4EEEtttji3P* " -NoNewline -ForegroundColor Green
-Write-Host "     Uptime: " -NoNewline -ForegroundColor Red
-Write-Host "$Uptime" -ForegroundColor Cyan
-Write-Host " :t::::::::tt33." -NoNewline -ForegroundColor Cyan
-Write-Host ":Z3z.. " -NoNewline -ForegroundColor Yellow
-Write-Host " ````" -NoNewline -ForegroundColor Green
-Write-Host " ,..g. " -NoNewline -ForegroundColor Yellow
-Write-Host "   Shell: " -NoNewline -ForegroundColor Red
-Write-Host "Powershell $PowerShellVersion" -ForegroundColor Cyan
-Write-Host " i::::::::zt33F" -NoNewline -ForegroundColor Cyan
-Write-Host " AEEEtttt::::ztF " -NoNewline -ForegroundColor Yellow
-Write-Host "    CPU: " -NoNewline -ForegroundColor Red
-Write-Host "$CPU_Info" -ForegroundColor Cyan
-Write-Host " ;:::::::::t33V" -NoNewline -ForegroundColor Cyan
-Write-Host " ;EEEttttt::::t3 " -NoNewline -ForegroundColor Yellow
-Write-Host "    Processes: " -NoNewline -ForegroundColor Red
-Write-Host "$Process_Count" -ForegroundColor Cyan
-Write-Host " E::::::::zt33L" -NoNewline -ForegroundColor Cyan
-Write-Host " @EEEtttt::::z3F " -NoNewline -ForegroundColor Yellow
-Write-Host "    Current Load: " -NoNewline -ForegroundColor Red
-Write-Host "$Current_Load" -ForegroundColor Cyan
-#Write-Host "%" -ForegroundColor Cyan
-Write-Host " {3=*^``````'*4E3)" -NoNewline -ForegroundColor Cyan
-Write-Host " ;EEEtttt:::::tZ`` " -NoNewline -ForegroundColor Yellow
-Write-Host "   Memory: " -NoNewline -ForegroundColor Red
-Write-Host "$Memory_Size" -ForegroundColor Cyan
-Write-Host "              ``" -NoNewline -ForegroundColor Cyan
-Write-Host " :EEEEtttt::::z7 " -NoNewline -ForegroundColor Yellow
-Write-Host "    System Volume: " -NoNewline -ForegroundColor Red
-Write-Host "$Disk_Size" -ForegroundColor Cyan
-Write-Host "                 'VEzjt:;;z>*`` " -ForegroundColor Yellow
-Write-Host ""
+write-host ""
+write-host ""
+write-host " ,.=:^!^!t3Z3z., " -foregroundcolor Red
+write-host " :tt:::tt333EE3 " -foregroundcolor Red
+
+write-host " Et:::ztt33EEE " -foregroundcolor Red -nonewline
+write-host " @Ee., ..,     " -foregroundcolor green -nonewline
+write-host "      Time: " -foregroundcolor Red -nonewline
+write-host "$CurrentTime" -foregroundcolor Cyan
+
+write-host " ;tt:::tt333EE7" -foregroundcolor Red -nonewline
+write-host " ;EEEEEEttttt33# " -foregroundcolor Green -nonewline
+write-host "    Timezone: " -foregroundcolor Red -nonewline
+write-host "$TimeZone" -foregroundcolor Cyan
+
+write-host " :Et:::zt333EEQ." -NoNewline -foregroundcolor Red
+write-host " SEEEEEttttt33QL " -NoNewline -foregroundcolor Green
+write-host "   User: " -NoNewline -foregroundcolor Red
+write-host "$UserName" -foregroundcolor Cyan
+write-host " it::::tt333EEF" -NoNewline -foregroundcolor Red
+write-host " @EEEEEEttttt33F " -NoNewline -ForeGroundColor Green
+write-host "    Hostname: " -NoNewline -foregroundcolor Red
+write-host "$ComputerName" -foregroundcolor Cyan
+write-host " ;3=*^``````'*4EEV" -NoNewline -foregroundcolor Red
+write-host " :EEEEEEttttt33@. " -NoNewline -foregroundcolor Green
+write-host "   OS: " -NoNewline -foregroundcolor Red
+write-host "$OSName" -foregroundcolor Cyan
+write-host " ,.=::::it=., " -NoNewline -foregroundcolor Cyan
+write-host "``" -NoNewline -foregroundcolor Red
+write-host " @EEEEEEtttz33QF " -NoNewline -foregroundcolor Green
+write-host "    Kernel: " -NoNewline -foregroundcolor Red
+write-host "NT " -NoNewline -foregroundcolor Cyan
+write-host "$Kernel_Info" -foregroundcolor Cyan
+write-host " ;::::::::zt33) " -NoNewline -foregroundcolor Cyan
+write-host " '4EEEtttji3P* " -NoNewline -foregroundcolor Green
+write-host "     Uptime: " -NoNewline -foregroundcolor Red
+write-host "$Uptime" -foregroundcolor Cyan
+write-host " :t::::::::tt33." -NoNewline -foregroundcolor Cyan
+write-host ":Z3z.. " -NoNewline -foregroundcolor Yellow
+write-host " ````" -NoNewline -foregroundcolor Green
+write-host " ,..g. " -NoNewline -foregroundcolor Yellow
+write-host "   PowerShell: " -NoNewline -foregroundcolor Red
+write-host "$PowerShellVersion $PowerShellEdition" -foregroundcolor Cyan
+write-host " i::::::::zt33F" -NoNewline -foregroundcolor Cyan
+write-host " AEEEtttt::::ztF " -NoNewline -foregroundcolor Yellow
+write-host "    CPU: " -NoNewline -foregroundcolor Red
+write-host "$CPU_Info" -foregroundcolor Cyan
+write-host " ;:::::::::t33V" -NoNewline -foregroundcolor Cyan
+write-host " ;EEEttttt::::t3 " -NoNewline -foregroundcolor Yellow
+write-host "    Processes: " -NoNewline -foregroundcolor Red
+write-host "$NumberOfProcesses" -foregroundcolor Cyan
+write-host " E::::::::zt33L" -NoNewline -foregroundcolor Cyan
+write-host " @EEEtttt::::z3F " -NoNewline -foregroundcolor Yellow
+write-host "    Current Load: " -NoNewline -foregroundcolor Red
+write-host "$Current_Load" -foregroundcolor Cyan
+#write-host "%" -foregroundcolor Cyan
+write-host " {3=*^``````'*4E3)" -NoNewline -foregroundcolor Cyan
+write-host " ;EEEtttt:::::tZ`` " -NoNewline -foregroundcolor Yellow
+write-host "   Memory: " -NoNewline -foregroundcolor Red
+write-host "$Memory_Size" -foregroundcolor Cyan
+write-host "              ``" -NoNewline -foregroundcolor Cyan
+write-host " :EEEEtttt::::z7 " -NoNewline -foregroundcolor Yellow
+write-host "    System Volume: " -NoNewline -foregroundcolor Red
+write-host "$Disk_Size" -foregroundcolor Cyan
+write-host "                 'VEzjt:;;z>*`` " -foregroundcolor Yellow
+write-host ""
 exit 0
