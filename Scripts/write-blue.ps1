@@ -1,7 +1,7 @@
 #!/snap/bin/powershell
 
 # Syntax:       ./write-blue.ps1 [<text>]
-# Description:	writes the given text in blue
+# Description:	writes the given text in a blue foreground color
 # Author:	Markus Fleschutz
 # Source:	github.com/fleschutz/PowerShell
 # License:	CC0

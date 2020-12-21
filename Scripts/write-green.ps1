@@ -1,7 +1,7 @@
 #!/snap/bin/powershell
 
 # Syntax:       ./write-green.ps1 [<text>]
-# Description:	writes the given text in green
+# Description:	writes the given text in a green foreground color
 # Author:	Markus Fleschutz
 # Source:	github.com/fleschutz/PowerShell
 # License:	CC0

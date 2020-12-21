@@ -1,7 +1,7 @@
 #!/snap/bin/powershell
 
 # Syntax:       ./write-red.ps1 [<text>]
-# Description:	writes the given text in red
+# Description:	writes the given text in a red foreground color
 # Author:	Markus Fleschutz
 # Source:	github.com/fleschutz/PowerShell
 # License:	CC0

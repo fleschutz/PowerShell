@@ -41,7 +41,6 @@ The following PowerShell scripts can be found in the [Scripts/](Scripts/) subfol
 * [SHA256.ps1](Scripts/SHA256.ps1) - prints the SHA256 checksum of the given file
 * [simulate-matrix.ps1](Scripts/simulate-matrix.ps1) - simulates the Matrix (fun)
 * [simulate-presence.ps1](Scripts/simulate-presence.ps1) - simulates the human presence against burglars
-* [simulate-typewriter.ps1](Scripts/simulate-typewriter.ps1) - prints a message with the typewriter effect
 * [speak-file.ps1](Scripts/speak-file.ps1) - speaks the content of the given text file by text-to-speech (TTS)
 * [speak-text.ps1](Scripts/speak-text.ps1) - speaks the given text by text-to-speech (TTS)
 * [switch-shelly1.ps1](Scripts/switch-shelly1.ps1) - switches a Shelly1 device in the local network
@@ -59,10 +58,11 @@ The following PowerShell scripts can be found in the [Scripts/](Scripts/) subfol
 * [weather-worldwide.ps1](Scripts/weather-worldwide.ps1) - prints the current weather of cities worldwide
 * [wakeup.ps1](Scripts/wakeup.ps1) - sends a magic packet to the given computer, waking him up
 * [write-big.ps1](Scripts/write-big.ps1) - writes the given text in big letters
-* [write-blue.ps1](Scripts/write-blue.ps1) - writes the given text in blue
-* [write-green.ps1](Scripts/write-green.ps1) - writes the given text in green
+* [write-blue.ps1](Scripts/write-blue.ps1) - writes the given text in a blue foreground color
+* [write-green.ps1](Scripts/write-green.ps1) - writes the given text in a green foreground color
 * [write-MOTD.ps1](Scripts/write-MOTD.ps1) - writes the message of the day (MOTD)
-* [write-red.ps1](Scripts/write-red.ps1) - writes the given text in red
+* [write-red.ps1](Scripts/write-red.ps1) - writes the given text in a red foreground color
+* [write-typewriter.ps1](Scripts/write-typewriter.ps1) - writes the given text with the typewriter effect
 * [write-uppercase.ps1](Scripts/write-uppercase.ps1) - writes the given text in uppercase letters
 * [write-vertical.ps1](Scripts/write-vertical.ps1) - writes the given text in vertical direction
 * [zip-dir.ps1](Scripts/zip-dir.ps1) - creates a zip archive of the given folder
