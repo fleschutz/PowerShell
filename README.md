@@ -28,6 +28,7 @@ The following PowerShell scripts can be found in the [Scripts/](Scripts/) subfol
 * [moon.ps1](Scripts/moon.ps1) - prints the current moon phase
 * [open-browser.ps1](Scripts/open-browser.ps1) - starts the default Web browser
 * [open-email-client.ps1](Scripts/open-browser.ps1) - starts the default email client
+* [play-beep.ps1](Scripts/play-beep.ps1) - plays a beep sound
 * [poweroff.ps1](Scripts/poweroff.ps1) - halts the local computer (needs administrator rights)
 * [new-email.ps1](Scripts/new-email.ps1) - starts the default email client to write a new email
 * [news.ps1](Scripts/news.ps1) - prints the latest news
