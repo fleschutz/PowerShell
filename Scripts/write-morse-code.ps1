@@ -7,61 +7,64 @@
 # License:	CC0
 
 param([String]$Text)
+$OneTimeUnit = 100 # milliseconds
+
+function gap() { param([Int]$Length)
+	for ($i = 1; $i -lt $Length; $i++) {
+		write-host " " -nonewline
+	}
+	start-sleep -milliseconds ($Length * $OneTimeUnit)
+}
 
 function dot() {
 	write-host "." -nonewline
-	start-sleep -milliseconds 100
+	start-sleep -milliseconds $OneTimeUnit # signal
 }
 
 function dash() {
-	write-host "-" -nonewline
-	start-sleep -milliseconds 300
-}
-
-function pause() {
-	write-host "   " -nonewline
-	start-sleep -milliseconds 400
+	write-host "_" -nonewline
+	start-sleep -milliseconds (3 * $OneTimeUnit) # signal
 }
 
 function Char2MorseCode() { param([String]$Char)
 	switch($Char) {
-	'A' { dot; dash }
-	'B' { dash; dot; dot; dot }
-	'C' { dash; dot; dash; dot }
-	'D' { dash; dot; dot }
-	'E' { dot }
-	'F' { dot; dot; dash; dot }
-	'G' { dash; dash; dot }
-	'H' { dot; dot; dot; dot }
-	'I' { dot; dot }
-	'J' { dot; dash; dash; dash }
-	'K' { dash; dot; dash }
-	'L' { dot; dash; dot; dot }
-	'M' { dash; dash }
-	'N' { dash; dot }
-	'O' { dash; dash; dash }
-	'P' { dot; dash; dash; dot }
-	'Q' { dash; dash; dot; dash }
-	'R' { dot; dash; dot }
-	'S' { dot; dot; dot }
-	'T' { dash }
-	'U' { dot; dot; dash }
-	'V' { dot; dot; dot; dash }
-	'W' { dot; dash; dash }
-	'X' { dash; dot; dot; dash }
-	'Y' { dash; dot; dash; dash }
-	'Z' { dash; dash; dot; dot }
-	'1' { dot; dash; dash; dash; dash }
-	'2' { dot; dot; dash; dash; dash }
-	'3' { dot; dot; dot; dash; dash }
-	'4' { dot; dot; dot; dot; dash }
-	'5' { dot; dot; dot; dot; dot }
-	'6' { dash; dot; dot; dot; dot }
-	'7' { dash; dash; dot; dot; dot }
-	'8' { dash; dash; dash; dot; dot }
-	'9' { dash; dash; dash; dash; dot }
-	'0' { dash; dash; dash; dash; dash }
-	default { pause }
+	'A' { dot; gap 1; dash; gap 3 }
+	'B' { dash; gap 1; dot; gap 1; dot; gap 1; dot; gap 3 }
+	'C' { dash; gap 1; dot; gap 1; dash; gap 1; dot; gap 3 }
+	'D' { dash; gap 1; dot; gap 1; dot; gap 3 }
+	'E' { dot; gap 3 }
+	'F' { dot; gap 1; dot; gap 1; dash; gap 1; dot; gap 3 }
+	'G' { dash; gap 1; dash; gap 1; dot; gap 3 }
+	'H' { dot; gap 1; dot; gap 1; dot; gap 1; dot; gap 3 }
+	'I' { dot; gap 1; dot; gap 3 }
+	'J' { dot; gap 1; dash; gap 1; dash; gap 1; dash; gap 3 }
+	'K' { dash; gap 1; dot; gap 1; dash; gap 3 }
+	'L' { dot; gap 1; dash; gap 1; dot; gap 1; dot; gap 3 }
+	'M' { dash; gap 1; dash; gap 3 }
+	'N' { dash; gap 1; dot; gap 3 }
+	'O' { dash; gap 1; dash; gap 1; dash; gap 3 }
+	'P' { dot; gap 1; dash; gap 1; dash; gap 1; dot; gap 3 }
+	'Q' { dash; gap 1; dash; gap 1; dot; gap 1; dash; gap 3 }
+	'R' { dot; gap 1; dash; gap 1; dot; gap 3 }
+	'S' { dot; gap 1; dot; gap 1; dot; gap 3 }
+	'T' { dash; gap 3 }
+	'U' { dot; gap 1; dot; gap 1; dash; gap 3 }
+	'V' { dot; gap 1; dot; gap 1; dot; gap 1; dash; gap 3 }
+	'W' { dot; gap 1; dash; gap 1; dash; gap 3 }
+	'X' { dash; gap 1; dot; gap 1; dot; gap 1; dash; gap 3 }
+	'Y' { dash; gap 1; dot; gap 1; dash; gap 1; dash; gap 3 }
+	'Z' { dash; gap 1; dash; gap 1; dot; gap 1; dot; gap 3 }
+	'1' { dot; gap 1; dash; gap 1; dash; gap 1; dash; gap 1; dash; gap 3 }
+	'2' { dot; gap 1; dot; gap 1; dash; gap 1; dash; gap 1; dash; gap 3 }
+	'3' { dot; gap 1; dot; gap 1; dot; gap 1; dash; gap 1; dash; gap 3 }
+	'4' { dot; gap 1; dot; gap 1; dot; gap 1; dot; gap 1; dash; gap 3 }
+	'5' { dot; gap 1; dot; gap 1; dot; gap 1; dot; gap 1; dot; gap 3 }
+	'6' { dash; gap 1; dot; gap 1; dot; gap 1; dot; gap 1; dot; gap 3 }
+	'7' { dash; gap 1; dash; gap 1; dot; gap 1; dot; gap 1; dot; gap 3 }
+	'8' { dash; gap 1; dash; gap 1; dash; gap 1; dot; gap 1; dot; gap 3 }
+	'9' { dash; gap 1; dash; gap 1; dash; gap 1; dash; gap 1; dot; gap 3 }
+	'0' { dash; gap 1; dash; gap 1; dash; gap 1; dash; gap 1; dash; gap 3 }
+	default { gap 7 } # medium gap (between words)
 	}
 }
 
@@ -73,6 +76,7 @@ try {
 	foreach($Char in $ArrayOfChars) {
 		Char2MorseCode $Char 
 	}
+	write-host ""
 	write-host ""
 	exit 0
 } catch {

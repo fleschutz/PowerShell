@@ -61,6 +61,7 @@ The following PowerShell scripts can be found in the [Scripts/](Scripts/) subfol
 * [wakeup.ps1](Scripts/wakeup.ps1) - sends a magic packet to the given computer, waking him up
 * [write-big.ps1](Scripts/write-big.ps1) - writes the given text in big letters
 * [write-blue.ps1](Scripts/write-blue.ps1) - writes the given text in a blue foreground color
+* [write-braille.ps1](Scripts/write-braille.ps1) - writes the given text in Braille
 * [write-green.ps1](Scripts/write-green.ps1) - writes the given text in a green foreground color
 * [write-morse-code.ps1](Scripts/write-morse-code.ps1) - writes the given text in Morse code
 * [write-MOTD.ps1](Scripts/write-MOTD.ps1) - writes the message of the day (MOTD)
