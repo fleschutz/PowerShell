@@ -66,6 +66,7 @@ The following PowerShell scripts can be found in the [Scripts/](Scripts/) subfol
 * [write-morse-code.ps1](Scripts/write-morse-code.ps1) - writes the given text in Morse code
 * [write-MOTD.ps1](Scripts/write-MOTD.ps1) - writes the message of the day (MOTD)
 * [write-red.ps1](Scripts/write-red.ps1) - writes the given text in a red foreground color
+* [write-ROT13.ps1](Scripts/write-ROT1.ps1) - encodes or decodes the given text with ROT13
 * [write-typewriter.ps1](Scripts/write-typewriter.ps1) - writes the given text with the typewriter effect
 * [write-uppercase.ps1](Scripts/write-uppercase.ps1) - writes the given text in uppercase letters
 * [write-vertical.ps1](Scripts/write-vertical.ps1) - writes the given text in vertical direction
