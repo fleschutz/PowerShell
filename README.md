@@ -19,7 +19,7 @@ The following PowerShell scripts can be found in the [Scripts/](Scripts/) subfol
 * [list-cmdlets.ps1](Scripts/list-cmdlets.ps1) - lists the PowerShell cmdlets
 * [list-earthquakes.ps1](Scripts/list-earthquakes.ps1) - lists earthquakes >= 6.0 for the last 30 days
 * [list-modules.ps1](Scripts/list-modules.ps1) - lists the PowerShell modules
-* [list-passwords.ps1](Scripts/list-passwords.ps1) - generates and prints a list of new passwords
+* [list-random-passwords.ps1](Scripts/list-random-passwords.ps1) - prints a list of random passwords
 * [list-processes.ps1](Scripts/list-processes.ps1) - lists the local computer processes
 * [locate-city.ps1](Scripts/locate-city.ps1) - prints the geographic location of the given city
 * [locate-ipaddress.ps1](Scripts/locate-ipaddress.ps1) - prints the geographic location of the given IP address

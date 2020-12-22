@@ -1,7 +1,7 @@
 #!/snap/bin/powershell
 
-# Syntax:	./list-passwords.ps1
-# Description:	generates and prints a list of new passwords
+# Syntax:	./list-random-passwords.ps1
+# Description:	prints a list of random passwords
 # Author:	Markus Fleschutz
 # Source:	github.com/fleschutz/PowerShell
 # License:	CC0
@@ -9,10 +9,10 @@
 $CharsPerPassword = 15
 $MinCharCode = 33
 $MaxCharCode = 126
-$NumLines = 24
-$NumColumns = 6
+$Lines = 24
+$Columns = 6
 
-function new_password() {
+function GeneratePassword() {
 	$password = ""
 	$generator = New-Object System.Random
 	for ($i = 0; $i -lt $CharsPerPassword; $i++) {
@@ -22,9 +22,9 @@ function new_password() {
 }
 
 try {
-	for ($j = 0; $j -lt $NumLines; $j++) {
-		for ($k = 0; $k -lt $NumColumns; $k++) {
-			$password = new_password
+	for ($j = 0; $j -lt $Lines; $j++) {
+		for ($k = 0; $k -lt $Columns; $k++) {
+			$password = GeneratePassword
 			Write-Host -NoNewline "$password   "
 		}
 		Write-Host ""
