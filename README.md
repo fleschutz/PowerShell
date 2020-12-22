@@ -7,6 +7,9 @@ List of Scripts
 ---------------
 The following PowerShell scripts can be found in the [Scripts/](Scripts/) subfolder:
 
+* [check-ipv4-address.ps1](Scripts/check-ipv4-address.ps1) - checks the given IPv4 address for validity
+* [check-mac-address.ps1](Scripts/check-mac-address.ps1) - checks the given MAC address for validity
+* [check-xml-file.ps1](Scripts/check-xml-file.ps1) - checks the given XML file for validity
 * [clone-repos.ps1](Scripts/clone-repos.ps1) - clones well-known Git repositories
 * [configure-git.ps1](Scripts/configure-git.ps1) - sets up the Git configuration
 * [download.ps1](Scripts/download.ps1) - downloads the file/directory from the given URL
@@ -54,7 +57,6 @@ The following PowerShell scripts can be found in the [Scripts/](Scripts/) subfol
 * [translate-file.ps1](Scripts/translate-file.ps1) - translates the given file from source to target language
 * [translate-text.ps1](Scripts/translate-text.ps1) - translates the given text into other languages
 * [txt2wav.ps1](Scripts/txt2wav.ps1) - converts text into a audio .WAV file
-* [validate-xml.ps1](Scripts/validate-xml.ps1) - validates the given XML file
 * [weather.ps1](Scripts/weather.ps1) - prints the current weather forecast
 * [weather-alert.ps1](Scripts/weather-alert.ps1) - checks the current weather for critical values
 * [weather-report.ps1](Scripts/weather-report.ps1) - prints the local weather report
