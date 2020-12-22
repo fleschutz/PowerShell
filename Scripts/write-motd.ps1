@@ -1,6 +1,6 @@
 #!/snap/bin/powershell
 
-# Syntax:       ./write-MOTD.ps1 
+# Syntax:       ./write-motd.ps1 
 # Description:	writes the message of the day (MOTD)
 # Author:	Markus Fleschutz
 # Source:	github.com/fleschutz/PowerShell

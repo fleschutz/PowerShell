@@ -1,6 +1,6 @@
 #!/snap/bin/powershell
 
-# Syntax:       ./write-ROT13.ps1 [<text>]
+# Syntax:       ./write-rot13.ps1 [<text>]
 # Description:	encodes or decodes the given text with ROT13
 # Author:	Markus Fleschutz
 # Source:	github.com/fleschutz/PowerShell

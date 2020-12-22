@@ -1,7 +1,7 @@
 Collection of Useful PowerShell Scripts
 =======================================
 
-This repository contains 60+ useful and cross-platform PowerShell scripts - to be used by command-line (CLI), for remote control (RC), by context menu, by voice control, by automation software (e.g. Jenkins), or simply to learn PowerShell.
+This repository contains 70+ useful and cross-platform PowerShell scripts - to be used by command-line (CLI), for remote control (RC), by context menu, by voice control, by automation software (e.g. Jenkins), or simply to learn PowerShell.
 
 List of Scripts
 ---------------
@@ -16,6 +16,7 @@ The following PowerShell scripts can be found in the [Scripts/](Scripts/) subfol
 * [empty-dir.ps1](Scripts/empty-dir.ps1) - empties the given directory
 * [enable-crash-dumps.ps1](Scripts/enable-crash-dumps.ps1) - enables the writing of crash dumps
 * [inspect-exe.ps1](Scripts/inspect-exe.ps1) - prints basic information of the given executable file
+* [list-anagrams.ps1](Scripts/list-anagrams.ps1) - lists all anagrams of the given word
 * [list-empty-dirs.ps1](Scripts/list-empty-dirs.ps1) - lists empty subfolders in a directory tree
 * [list-files.ps1](Scripts/list-files.ps1) - lists all files in the given folder and also in every subfolder
 * [list-unused-files.ps1](Scripts/list-unused-files.ps1) - lists unused files in a directory tree
@@ -67,9 +68,9 @@ The following PowerShell scripts can be found in the [Scripts/](Scripts/) subfol
 * [write-braille.ps1](Scripts/write-braille.ps1) - writes the given text in Braille
 * [write-green.ps1](Scripts/write-green.ps1) - writes the given text in a green foreground color
 * [write-morse-code.ps1](Scripts/write-morse-code.ps1) - writes the given text in Morse code
-* [write-MOTD.ps1](Scripts/write-MOTD.ps1) - writes the message of the day (MOTD)
+* [write-motd.ps1](Scripts/write-motd.ps1) - writes the message of the day (MOTD)
 * [write-red.ps1](Scripts/write-red.ps1) - writes the given text in a red foreground color
-* [write-ROT13.ps1](Scripts/write-ROT1.ps1) - encodes or decodes the given text with ROT13
+* [write-rot13.ps1](Scripts/write-rot13.ps1) - encodes or decodes the given text with ROT13
 * [write-typewriter.ps1](Scripts/write-typewriter.ps1) - writes the given text with the typewriter effect
 * [write-uppercase.ps1](Scripts/write-uppercase.ps1) - writes the given text in uppercase letters
 * [write-vertical.ps1](Scripts/write-vertical.ps1) - writes the given text in vertical direction
