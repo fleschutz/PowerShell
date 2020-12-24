@@ -1,7 +1,7 @@
 #!/snap/bin/powershell
 
 # Syntax:       ./write-logbook.ps1 [<text>]
-# Description:	writes the given text to Data/Logbook.csv
+# Description:	writes the given text to the logbook (../Data/Logbook.csv)
 # Author:	Markus Fleschutz
 # Source:	github.com/fleschutz/PowerShell
 # License:	CC0

@@ -20,6 +20,7 @@ The following PowerShell scripts can be found in the [Scripts/](Scripts/) subfol
 * [list-anagrams.ps1](Scripts/list-anagrams.ps1) - lists all anagrams of the given word
 * [list-empty-dirs.ps1](Scripts/list-empty-dirs.ps1) - lists empty subfolders in a directory tree
 * [list-files.ps1](Scripts/list-files.ps1) - lists all files in the given folder and also in every subfolder
+* [list-logbook.ps1](Scripts/list-logbook.ps1) - lists the content of the logbook 
 * [list-unused-files.ps1](Scripts/list-unused-files.ps1) - lists unused files in a directory tree
 * [list-cmdlets.ps1](Scripts/list-cmdlets.ps1) - lists the PowerShell cmdlets
 * [list-earthquakes.ps1](Scripts/list-earthquakes.ps1) - lists earthquakes >= 6.0 for the last 30 days
@@ -68,7 +69,7 @@ The following PowerShell scripts can be found in the [Scripts/](Scripts/) subfol
 * [write-blue.ps1](Scripts/write-blue.ps1) - writes the given text in a blue foreground color
 * [write-braille.ps1](Scripts/write-braille.ps1) - writes the given text in Braille
 * [write-green.ps1](Scripts/write-green.ps1) - writes the given text in a green foreground color
-* [write-logbook.ps1](Scripts/write-logbook.ps1) - writes the given text to Data/Logbook.csv
+* [write-logbook.ps1](Scripts/write-logbook.ps1) - writes the given text to the logbook
 * [write-morse-code.ps1](Scripts/write-morse-code.ps1) - writes the given text in Morse code
 * [write-motd.ps1](Scripts/write-motd.ps1) - writes the message of the day (MOTD)
 * [write-red.ps1](Scripts/write-red.ps1) - writes the given text in a red foreground color
