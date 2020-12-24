@@ -274,7 +274,7 @@ function Big3() { param([Int]$Row)
 	switch($Row) {
 	1 { return " ___ " }
 	2 { return "(__ )" }
-	3 { return " (_ \\" }
+	3 { return " (_ \" }
 	4 { return "(___/" }
 	}
 }
@@ -333,6 +333,24 @@ function Big9() { param([Int]$Row)
 	}
 } 
 
+function BigColon() { param([Int]$Row)
+	switch($Row) {
+	1 { return "   " }
+	2 { return " o " }
+	3 { return " o " }
+	4 { return "   " }
+	}
+} 
+
+function BigMinus() { param([Int]$Row)
+	switch($Row) {
+	1 { return "      " }
+	2 { return " ____ " }
+	3 { return "(____)" }
+	4 { return "      " }
+	}
+} 
+
 function BigChar() { param([String]$Char, [Int]$Row)
 	switch($Char) {
 	'A' { return BigA $Row }
@@ -371,6 +389,8 @@ function BigChar() { param([String]$Char, [Int]$Row)
 	'7' { return Big7 $Row }
 	'8' { return Big8 $Row }
 	'9' { return Big9 $Row }
+	':' { return BigColon $Row }
+	'-' { return BigMinus $Row }
 	}
 	return "      "
 }
