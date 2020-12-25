@@ -12,11 +12,11 @@ try {
 	$Table = import-csv "$PathToRepo/Data/Logbook.csv"
 
 	write-output ""
-	write-output "UTC                 User  Text"
+	write-output "Time                 User  Text"
 	write-output "---------------------------------------------------------------"
 	foreach($Row in $Table) {
-		$Time = $Row.UTC
-		$User = $Row.Username
+		$Time = $Row.Time
+		$User = $Row.User
 		$Text = $Row.Text
 		write-output "$Time ($User)  $Text"
 	}
