@@ -11,8 +11,10 @@ try {
 	if ($Seconds -eq 0 ) {
 		[int]$Seconds = read-host "Enter number of seconds"
 	}
+
 	for ($i = $Seconds; $i -gt 0; $i--) {
-		write-progress "$i seconds"
+		clear-host
+		write-big "T-$i seconds"
 		start-sleep -s 1
 	}
 	write-output "OK - $Seconds seconds countdown finished"
