@@ -14,11 +14,11 @@ try {
 	[xml]$FileContent = (Invoke-WebRequest -Uri $RSS_URL).Content
 
 	write-output ""
-	write-output "+++ " $FileContent.rss.channel.title " +++"
+	write-output "+++ $($FileContent.rss.channel.title) +++"
 	write-output ""
 
 	foreach ($item in $FileContent.rss.channel.item) {
-		write-output "*" $item.title
+		write-output "* $($item.title)"
 	}
 	exit 0
 } catch {
