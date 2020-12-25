@@ -120,8 +120,8 @@ Want to use the PowerShell scripts everywhere on the command-line? Then you need
 
 Using PowerShell in Context Menus
 ----------------------------------
-* to enable "right-click > New > Windows PowerShell Script" execute `Add_ps1_to_New_context_menu.reg` in subfolder [Context_Menus/](Context_Menus)
-* to disable this execute `Remove_ps1_from_New_context_menu.reg` in subfolder [Context_Menus/](Context_Menus)
+* to enable "right-click > New > Windows PowerShell Script" execute `Add_ps1_to_New_context_menu.reg` in subfolder [Misc/](Misc)
+* to disable this execute `Remove_ps1_from_New_context_menu.reg` in subfolder [Misc/](Misc)
 
 Script Conventions
 ------------------
