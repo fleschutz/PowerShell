@@ -13,15 +13,15 @@ $RSS_URL = "https://yahoo.com/news/rss/world"
 try {
 	[xml]$FileContent = (Invoke-WebRequest -Uri $RSS_URL).Content
 
-	write-host ""
-	write-host "+++ " $FileContent.rss.channel.title " +++"
-	write-host ""
+	write-output ""
+	write-output "+++ " $FileContent.rss.channel.title " +++"
+	write-output ""
 
 	foreach ($item in $FileContent.rss.channel.item) {
-		write-host "*" $item.title
+		write-output "*" $item.title
 	}
 	exit 0
 } catch {
-	Write-Error "ERROR in line $($_.InvocationInfo.ScriptLineNumber): $($Error[0])"
+	write-error "ERROR in line $($_.InvocationInfo.ScriptLineNumber): $($Error[0])"
 	exit 1
 }

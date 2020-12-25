@@ -10,6 +10,6 @@ try {
 	Get-Command -Command-Type cmdlet
 	exit 0
 } catch {
-	Write-Error "ERROR in line $($_.InvocationInfo.ScriptLineNumber): $($Error[0])"
+	write-error "ERROR in line $($_.InvocationInfo.ScriptLineNumber): $($Error[0])"
 	exit 1
 }

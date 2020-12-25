@@ -13,9 +13,9 @@ if ($City -eq "" ) {
  
 try {
 	write-progress "Reading worldcities.csv..."
-	$PathToData=(get-item $MyInvocation.MyCommand.Path).directory
-	$PathToData="$PathToData/../Data"
-	$Table = import-csv "$PathToData/worldcities.csv"
+	$PathToRepo=(get-item $MyInvocation.MyCommand.Path).directory.parent
+	$Table = import-csv "$PathToRepo/Data/worldcities.csv"
+
 	$FoundOne = 0
 	foreach($Row in $Table) {
 		if ($Row.city -eq $City) {
@@ -35,6 +35,6 @@ try {
 	write-error "City $City not found"
 	exit 1
 } catch {
-	Write-Error "ERROR in line $($_.InvocationInfo.ScriptLineNumber): $($Error[0])"
+	write-error "ERROR in line $($_.InvocationInfo.ScriptLineNumber): $($Error[0])"
 	exit 1
 }

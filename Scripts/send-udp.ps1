@@ -8,17 +8,17 @@
 
 param([string]$TargetIP, [int]$TargetPort, [string]$Message)
 
-if ($TargetIP -eq "" ) {
-	$TargetIP = read-host "Enter target IP address"
-}
-if ($TargetPort -eq 0 ) {
-	$TargetPort = read-host "Enter target port"
-}
-if ($Message -eq "" ) {
-	$Message = read-host "Enter message to send"
-}
-
 try {
+	if ($TargetIP -eq "" ) {
+		$TargetIP = read-host "Enter target IP address"
+	}
+	if ($TargetPort -eq 0 ) {
+		$TargetPort = read-host "Enter target port"
+	}
+	if ($Message -eq "" ) {
+		$Message = read-host "Enter message to send"
+	}
+
 	$IP = [System.Net.Dns]::GetHostAddresses($TargetIP) 
 	$Address = [System.Net.IPAddress]::Parse($IP) 
 	$EndPoints = New-Object System.Net.IPEndPoint($Address, $TargetPort) 
@@ -26,9 +26,9 @@ try {
 	$EncodedText = [Text.Encoding]::ASCII.GetBytes($Message) 
 	$SendMessage = $Socket.Send($EncodedText, $EncodedText.Length, $EndPoints) 
 	$Socket.Close() 
-	echo "Done."
+	write-output "Done."
 	exit 0
 } catch {
-	Write-Error "ERROR in line $($_.InvocationInfo.ScriptLineNumber): $($Error[0])"
+	write-error "ERROR in line $($_.InvocationInfo.ScriptLineNumber): $($Error[0])"
 	exit 1
 }

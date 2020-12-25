@@ -9,22 +9,21 @@
 try {
 	$StartTime = Get-Date
 
-	$PathToData=(get-item $MyInvocation.MyCommand.Path).directory
-	$PathToData="$PathToData/../Data"
-	$Table = import-csv "$PathToData/domain_table.csv"
+	$PathToRepo=(get-item $MyInvocation.MyCommand.Path).directory.parent
+	$Table = import-csv "$PathToRepo/Data/domain_table.csv"
 
 	foreach($Row in $Table) {
 		$Domain = $Row.Domain
-		Write-Progress "Training DNS cache with $Domain..."
+		write-progress "Training DNS cache with $Domain..."
 		$Ignore = nslookup $Domain
 	}
 
 	$Count = $Table.Length
 	$StopTime = Get-Date
 	$TimeInterval = New-Timespan -start $StartTime -end $StopTime
-	Write-Output "OK - DNS cache trained with $Count domain names in $TimeInterval seconds"
+	write-output "OK - DNS cache trained with $Count domain names in $TimeInterval seconds"
 	exit 0
 } catch {
-	Write-Error "ERROR in line $($_.InvocationInfo.ScriptLineNumber): $($Error[0])"
+	write-error "ERROR in line $($_.InvocationInfo.ScriptLineNumber): $($Error[0])"
 	exit 1
 }

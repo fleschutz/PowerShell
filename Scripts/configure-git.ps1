@@ -16,9 +16,9 @@ try {
 	git config --global user.email $UserEmail
 	git config --global core.editor $UserEditor
 	git config --global init.defaultBranch main
-	echo "Done."
+	write-output "Done."
 	exit 0
 } catch {
-	Write-Error "ERROR in line $($_.InvocationInfo.ScriptLineNumber): $($Error[0])"
+	write-error "ERROR in line $($_.InvocationInfo.ScriptLineNumber): $($Error[0])"
 	exit 1
 }

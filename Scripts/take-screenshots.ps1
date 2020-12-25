@@ -84,7 +84,7 @@ Function Get-TimedScreenshot {
                 #run screenshot function
                 GenScreenshot
                 
-                Write-Verbose "Saved screenshot to $FilePath. Sleeping for $Interval seconds"
+                write-verbose "Saved screenshot to $FilePath. Sleeping for $Interval seconds"
 
                 Start-Sleep -Seconds $Interval
             }
@@ -93,6 +93,6 @@ Function Get-TimedScreenshot {
             While ((Get-Date -Format HH:%m) -lt $EndTime)
         }
 
-       Catch {Write-Warning "$Error[0].ToString() + $Error[0].InvocationInfo.PositionMessage"}
+       Catch {write-error "$Error[0].ToString() + $Error[0].InvocationInfo.PositionMessage"}
 
 }

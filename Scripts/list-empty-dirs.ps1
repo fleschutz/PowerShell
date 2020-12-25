@@ -8,13 +8,12 @@
 
 param([string]$DirTree)
 
-write-host "Listing empty subfolders in $DirTree ..."
-
 try {
+	write-progress "Listing empty subfolders in $DirTree ..."
 	(Get-ChildItem $DirTree -recurse | ? {$_.PSIsContainer -eq $True}) | ?{$_.GetFileSystemInfos().Count -eq 0} | select FullName
 	echo "Done."
 	exit 0
 } catch {
-	Write-Error "ERROR in line $($_.InvocationInfo.ScriptLineNumber): $($Error[0])"
+	write-error "ERROR in line $($_.InvocationInfo.ScriptLineNumber): $($Error[0])"
 	exit 1
 }

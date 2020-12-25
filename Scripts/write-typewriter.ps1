@@ -15,14 +15,12 @@ $Speed = 250 # milliseconds
 try {
 	$Random = New-Object System.Random
 
-	$Text -split '' |
-	  ForEach-Object {
-	    Write-Host -nonewline $_
-	    Start-Sleep -milliseconds $(1 + $Random.Next($Speed))
-	   }
-
+	$Text -split '' | ForEach-Object {
+		Write-Host -nonewline $_
+		Start-Sleep -milliseconds $(1 + $Random.Next($Speed))
+	}
 	exit 0
 } catch {
-	Write-Error "ERROR in line $($_.InvocationInfo.ScriptLineNumber): $($Error[0])"
+	write-error "ERROR in line $($_.InvocationInfo.ScriptLineNumber): $($Error[0])"
 	exit 1
 }

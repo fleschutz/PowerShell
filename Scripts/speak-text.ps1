@@ -7,15 +7,15 @@
 # License:	CC0
 
 param([string]$Text)
-if ($Text -eq "") {
-	$Text = "Hello World!"
-}
-
 try {
+	if ($Text -eq "") {
+		$Text = read-host "Enter text to speak"
+	}
+
 	$voice = New-Object ComObject SAPI.SPVoice
 	$voice.Speak($Text);
 	exit 0
 } catch {
-	Write-Error "ERROR in line $($_.InvocationInfo.ScriptLineNumber): $($Error[0])"
+	write-error "ERROR in line $($_.InvocationInfo.ScriptLineNumber): $($Error[0])"
 	exit 1
 }

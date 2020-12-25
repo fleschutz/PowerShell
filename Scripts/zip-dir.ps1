@@ -7,14 +7,14 @@
 # License:	CC0
 
 param([string]$Path)
-if ($Path -eq "" ) {
-	$URL = read-host "Enter path to folder to zip"
-}
-
 try {
+	if ($Path -eq "" ) {
+		$URL = read-host "Enter path to folder to zip"
+	}
+
 	Compress-Archive -Path $Path -DestinationPath $Path.zip
 	exit 0
 } catch {
-	Write-Error "ERROR in line $($_.InvocationInfo.ScriptLineNumber): $($Error[0])"
+	write-error "ERROR in line $($_.InvocationInfo.ScriptLineNumber): $($Error[0])"
 	exit 1
 }

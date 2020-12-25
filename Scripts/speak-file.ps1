@@ -7,17 +7,16 @@
 # License:	CC0
 
 param([string]$File)
-if ($File -eq "") {
-	$File = read-host "Enter path to file"
-}
-
 try {
+	if ($File -eq "") {
+		$File = read-host "Enter path to file"
+	}
 	$Text = Get-Content $File
 
 	$voice = New-Object ComObject SAPI.SPVoice
 	$voice.Speak($Text);
 	exit 0
 } catch {
-	Write-Error "ERROR in line $($_.InvocationInfo.ScriptLineNumber): $($Error[0])"
+	write-error "ERROR in line $($_.InvocationInfo.ScriptLineNumber): $($Error[0])"
 	exit 1
 }

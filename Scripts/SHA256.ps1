@@ -7,15 +7,15 @@
 # License:	CC0
 
 param([string]$File)
-if ($File -eq "" ) {
-	$File = read-host "Enter file"
-}
-
 try {
+	if ($File -eq "" ) {
+		$File = read-host "Enter file"
+	}
+
 	$Result = get-filehash $File -algorithm SHA256
-	write-host "✔️ SHA256 hash is" $Result.Hash
+	write-output "SHA256 hash is:" $Result.Hash
 	exit 0
 } catch {
-	Write-Error "ERROR in line $($_.InvocationInfo.ScriptLineNumber): $($Error[0])"
+	write-error "ERROR in line $($_.InvocationInfo.ScriptLineNumber): $($Error[0])"
 	exit 1
 }

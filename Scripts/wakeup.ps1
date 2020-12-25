@@ -53,15 +53,15 @@ try {
 		$thisMAC=$array[1]
 		if ($thisHost -like $Hostname) {
 			Send-WOL $thisMAC
-			write-output "✔️  host $thisHost waked up (MAC $thisMAC)"
+			write-output "OK - host $thisHost waked up (MAC $thisMAC)"
 			exit 0
 		}
 	}
 
-	echo "Sorry, hostname $Hostname is unknown."
+	write-output "Sorry, hostname $Hostname is unknown."
 	pause
 	exit 1
 } catch {
-	Write-Error "ERROR in line $($_.InvocationInfo.ScriptLineNumber): $($Error[0])"
+	write-error "ERROR in line $($_.InvocationInfo.ScriptLineNumber): $($Error[0])"
 	exit 1
 }

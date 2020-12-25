@@ -7,9 +7,9 @@
 # License:	CC0
 
 try {
-	$PathToData=(get-item $MyInvocation.MyCommand.Path).directory
-	$PathToData="$PathToData/../Data"
-	$Table = import-csv "$PathToData/Matrix.csv"
+	write-progress "Reading Matrix.csv..."
+	$PathToRepo=(get-item $MyInvocation.MyCommand.Path).directory.parent
+	$Table = import-csv "$PathToRepo/Data/Matrix.csv"
 
 	Clear-Host
 	foreach($Row in $Table) {
@@ -46,6 +46,6 @@ try {
 	}
 	exit 0
 } catch {
-	Write-Error "ERROR in line $($_.InvocationInfo.ScriptLineNumber): $($Error[0])"
+	write-error "ERROR in line $($_.InvocationInfo.ScriptLineNumber): $($Error[0])"
 	exit 1
 }

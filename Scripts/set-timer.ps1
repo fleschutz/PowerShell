@@ -15,7 +15,7 @@ try {
 		write-progress "$i seconds"
 		start-sleep -s 1
 	}
-	write-host "OK - $Seconds seconds countdown finished"
+	write-output "OK - $Seconds seconds countdown finished"
 	exit 0
 } catch {
 	write-error "ERROR in line $($_.InvocationInfo.ScriptLineNumber): $($Error[0])"

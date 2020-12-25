@@ -7,15 +7,14 @@
 # License:	CC0
  
 param([string]$File)
-if ($File -eq "" ) {
-	$File = read-host "Enter path to executable file"
-}
-
 
 try {
+	if ($File -eq "" ) {
+		$File = read-host "Enter path to executable file"
+	}
 	get-childitem $File | % {$_.VersionInfo} | Select *
 	exit 0
 } catch {
-	Write-Error "ERROR in line $($_.InvocationInfo.ScriptLineNumber): $($Error[0])"
+	write-error "ERROR in line $($_.InvocationInfo.ScriptLineNumber): $($Error[0])"
 	exit 1
 }

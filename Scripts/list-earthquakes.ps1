@@ -11,10 +11,10 @@ $MinMagnitude=6.0
 $OrderBy="time" # time, time-asc, magnitude, magnitude-asc
  
 try {
-	Write-Progress "Querying earthquakes for the last 30 days ..."
+	write-progress "Querying earthquakes for the last 30 days ..."
 	(Invoke-WebRequest -Uri "https://earthquake.usgs.gov/fdsnws/event/1/query?format=$Format&minmagnitude=$MinMagnitude&orderby=$OrderBy" -UserAgent "curl" ).Content
 	exit 0
 } catch {
-	Write-Error "ERROR in line $($_.InvocationInfo.ScriptLineNumber): $($Error[0])"
+	write-error "ERROR in line $($_.InvocationInfo.ScriptLineNumber): $($Error[0])"
 	exit 1
 }

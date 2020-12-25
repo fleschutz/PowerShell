@@ -7,14 +7,13 @@
 # License:	CC0
 
 param([string]$URL)
-if ($URL -eq "" ) {
-	$URL = "http://www.fleschutz.de"
-}
-
 try {
+	if ($URL -eq "" ) {
+		$URL = "http://www.fleschutz.de"
+	}
 	Start-Process $URL
 	exit 0
 } catch {
-	Write-Error "ERROR in line $($_.InvocationInfo.ScriptLineNumber): $($Error[0])"
+	write-error "ERROR in line $($_.InvocationInfo.ScriptLineNumber): $($Error[0])"
 	exit 1
 }

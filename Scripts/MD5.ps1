@@ -7,15 +7,14 @@
 # License:	CC0
  
 param([string]$File)
-if ($File -eq "" ) {
-	$File = read-host "Enter file"
-}
-
 try {
+	if ($File -eq "" ) {
+		$File = read-host "Enter path to file"
+	}
 	$Result = get-filehash $File -algorithm MD5
-	write-host "✔️ MD5 hash is" $Result.Hash
+	write-output "MD5 hash is" $Result.Hash
 	exit 0
 } catch {
-	Write-Error "ERROR in line $($_.InvocationInfo.ScriptLineNumber): $($Error[0])"
+	write-error "ERROR in line $($_.InvocationInfo.ScriptLineNumber): $($Error[0])"
 	exit 1
 }
