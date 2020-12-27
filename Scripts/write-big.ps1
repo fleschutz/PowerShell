@@ -8,6 +8,8 @@
 
 param([String]$Text)
 
+Set-StrictMode -Version Latest
+
 function BigA() { param([Int]$Row)
 	switch($Row) {
 	1 { return "   __   " }

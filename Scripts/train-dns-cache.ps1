@@ -5,6 +5,8 @@
 # Author:	Markus Fleschutz
 # Source:	github.com/fleschutz/PowerShell
 # License:	CC0
+
+Set-StrictMode -Version Latest
  
 try {
 	$StartTime = Get-Date
