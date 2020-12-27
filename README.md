@@ -127,7 +127,7 @@ Using PowerShell in Context Menus
 
 Script Conventions
 ------------------
-Each PowerShell script should follow the 7 golden rules:
+Each PowerShell script should follow the 8 golden rules:
 
 * **Rule #1:** the filename should be named `<verb>-<object>.ps1`
 * **Rule #2:** the first line reads `#!/snap/bin/powershell` to support PowerShell on Linux
