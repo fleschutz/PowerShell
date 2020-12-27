@@ -11,6 +11,8 @@ The following PowerShell scripts can be found in the [Scripts/](Scripts/) subfol
 * [check-mac-address.ps1](Scripts/check-mac-address.ps1) - checks the given MAC address for validity
 * [check-xml-file.ps1](Scripts/check-xml-file.ps1) - checks the given XML file for validity
 * [clone-repos.ps1](Scripts/clone-repos.ps1) - clones well-known Git repositories
+* [close-program.ps1](Scripts/close-program.ps1) - closes the given program gracefully
+* [close-windows-terminal.ps1](Scripts/close-windows-terminal.ps1) - closes Windows Terminal gracefully
 * [configure-git.ps1](Scripts/configure-git.ps1) - sets up the Git configuration
 * [csv-to-text.ps1](Scripts/csv-to-text.ps1) - converts the given CSV file into a text list
 * [display-time.ps1](Scripts/display-time.ps1) - displays the current time
