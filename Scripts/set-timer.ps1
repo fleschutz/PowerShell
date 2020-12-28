@@ -14,7 +14,7 @@ try {
 
 	for ($i = $Seconds; $i -gt 0; $i--) {
 		clear-host
-		write-big "T-$i seconds"
+		./write-big "T-$i seconds"
 		start-sleep -s 1
 	}
 	write-output "OK - $Seconds seconds countdown finished"
