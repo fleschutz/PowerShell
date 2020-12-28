@@ -14,15 +14,16 @@ try {
 		$ProgramName = read-host "Enter program to close"
 	}
 	$List = Get-Process -name $ProgramName -erroraction 'silentlycontinue'
-	$NumProc = 0
-	$List | Foreach-Object { $NumProc++; $_.CloseMainWindow() | Out-Null } | stop-process -force
-	if ($NumProc -eq 0) {
-		write-error "ERROR: No processes for program '$ProgramName' found"
-		exit 1
-	} else {
-		write-output "Done - $NumProc processes stopped."
-		exit 0
+	$NumProcKilled = 0
+	$List | Foreach-Object {
+		$_.CloseMainWindow() | Out-Null
+		$NumProcKilled++
+	} | stop-process -force
+	if ($NumProcKilled -eq 0) {
+		throw "program '$ProgramName' is not started yet"
 	}
+	write-output "OK - program '$ProgramName' has been closed ($NumProcKilled processes)."
+	exit 0
 } catch {
 	write-error "ERROR in line $($_.InvocationInfo.ScriptLineNumber): $($Error[0])"
 	exit 1
