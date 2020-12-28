@@ -66,6 +66,8 @@ The following PowerShell scripts can be found in the [Scripts/](Scripts/) subfol
 * [train-dns-cache.ps1](Scripts/train-dns-cache.ps1) - trains the DNS cache with frequently used domain names
 * [translate-file.ps1](Scripts/translate-file.ps1) - translates the given file from source to target language
 * [translate-text.ps1](Scripts/translate-text.ps1) - translates the given text into other languages
+* [turn-volume-up.ps1](Scripts/turn-volume-up.ps1) - turns the volume up
+* [turn-volume-down.ps1](Scripts/turn-volume-down.ps1) - turns the volume down
 * [txt2wav.ps1](Scripts/txt2wav.ps1) - converts text into a audio .WAV file
 * [weather.ps1](Scripts/weather.ps1) - prints the current weather forecast
 * [weather-alert.ps1](Scripts/weather-alert.ps1) - checks the current weather for critical values
