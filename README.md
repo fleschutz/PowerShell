@@ -1,7 +1,7 @@
 Collection of Useful PowerShell Scripts
 =======================================
 
-This repository contains 70+ useful and cross-platform PowerShell scripts - to be used by command-line interface (CLI), for remote control (RC), by context menu, by voice control, by automation software (e.g. Jenkins), or simply to learn PowerShell.
+This repository contains 80+ useful and cross-platform PowerShell scripts - to be used by command-line interface (CLI), for remote control (RC), by context menu, by voice control, by automation software (e.g. Jenkins), or simply to learn PowerShell.
 
 List of Scripts
 ---------------
@@ -12,6 +12,8 @@ The following PowerShell scripts can be found in the [Scripts/](Scripts/) subfol
 * [check-xml-file.ps1](Scripts/check-xml-file.ps1) - checks the given XML file for validity
 * [clone-repos.ps1](Scripts/clone-repos.ps1) - clones well-known Git repositories
 * [close-chrome.ps1](Scripts/close-chrome.ps1) - closes Google Chrome gracefully
+* [close-edge.ps1](Scripts/close-edge.ps1) - closes Microsoft Edge gracefully
+* [close-file-explorer.ps1](Scripts/close-file-explorer.ps1) - closes Microsoft File Explorer gracefully
 * [close-program.ps1](Scripts/close-program.ps1) - closes the given program gracefully
 * [close-thunderbird.ps1](Scripts/close-thunderbird.ps1) - closes Mozilla Thunderbird gracefully
 * [close-windows-terminal.ps1](Scripts/close-windows-terminal.ps1) - closes Windows Terminal gracefully

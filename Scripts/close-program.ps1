@@ -13,16 +13,19 @@ try {
 		Get-Process | Where-Object {$_.mainWindowTitle} | Format-Table Id, Name, mainWindowtitle -AutoSize
 		$ProgramName = read-host "Enter program to close"
 	}
-	$List = Get-Process -name $ProgramName -erroraction 'silentlycontinue'
-	$NumProcKilled = 0
-	$List | Foreach-Object {
+
+	$Processes = Get-Process -name $ProgramName -erroraction 'silentlycontinue'
+	foreach ($Process in $Processes) {
 		$_.CloseMainWindow() | Out-Null
-		$NumProcKilled++
-	} | stop-process -force
-	if ($NumProcKilled -eq 0) {
+	} 
+	start-sleep -milliseconds 100
+	Stop-Process -name $ProgramName -force -erroraction 'silentlycontinue'
+
+	$ProcessCount = $Processes.Count
+	if ($ProcessCount -eq 0) {
 		throw "program '$ProgramName' is not started yet"
 	}
-	write-output "OK - program '$ProgramName' has been closed ($NumProcKilled processes)."
+	write-output "OK - program '$ProgramName' with $ProcessCount process(es) has been closed."
 	exit 0
 } catch {
 	write-error "ERROR in line $($_.InvocationInfo.ScriptLineNumber): $($Error[0])"
