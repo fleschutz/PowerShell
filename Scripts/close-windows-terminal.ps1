@@ -6,5 +6,6 @@
 # Source:	github.com/fleschutz/PowerShell
 # License:	CC0
 
-$ExitCode = close-program.ps1 "WindowsTerminal"
-exit $ExitCode
+$PathToRepo=(get-item $MyInvocation.MyCommand.Path).directory.parent
+
+Start-Process -WorkingDirectory "$PathToRepo/Scripts" -FilePath "close-program.ps1" -ArgumentList "WindowsTerminal" -NoNewWindow -Wait

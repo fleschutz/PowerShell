@@ -6,5 +6,6 @@
 # Source:	github.com/fleschutz/PowerShell
 # License:	CC0
 
-$ExitCode = close-program.ps1 "thunderbird" 
-exit $ExitCode
+$PathToRepo=(get-item $MyInvocation.MyCommand.Path).directory.parent
+
+Start-Process -WorkingDirectory "$PathToRepo/Scripts" -FilePath "close-program.ps1" -ArgumentList "thunderbird" -NoNewWindow -Wait
