@@ -41,6 +41,7 @@ The following PowerShell scripts can be found in the [Scripts/](Scripts/) subfol
 * [MD5.ps1](Scripts/MD5.ps1) - prints the MD5 checksum of the given file
 * [make-install.ps1](Scripts/make-install.ps1) - installs built executables and libs to the installation directory
 * [moon.ps1](Scripts/moon.ps1) - prints the current moon phase
+* [mute-audio.ps1](Scripts/mute-audio.ps1) - mutes audio
 * [open-browser.ps1](Scripts/open-browser.ps1) - starts the default Web browser
 * [open-email-client.ps1](Scripts/open-browser.ps1) - starts the default email client
 * [play-beep.ps1](Scripts/play-beep.ps1) - plays a beep sound
@@ -69,6 +70,7 @@ The following PowerShell scripts can be found in the [Scripts/](Scripts/) subfol
 * [turn-volume-up.ps1](Scripts/turn-volume-up.ps1) - turns the volume up
 * [turn-volume-down.ps1](Scripts/turn-volume-down.ps1) - turns the volume down
 * [txt2wav.ps1](Scripts/txt2wav.ps1) - converts text into a audio .WAV file
+* [unmute-audio.ps1](Scripts/unmute-audio.ps1) - unmutes audio
 * [weather.ps1](Scripts/weather.ps1) - prints the current weather forecast
 * [weather-alert.ps1](Scripts/weather-alert.ps1) - checks the current weather for critical values
 * [weather-report.ps1](Scripts/weather-report.ps1) - prints the local weather report
