@@ -8,4 +8,4 @@
 
 $PathToRepo=(get-item $MyInvocation.MyCommand.Path).directory.parent
 
-Start-Process -WorkingDirectory "$PathToRepo/Scripts" -FilePath "./close-program.ps1" -ArgumentList "explorer" -NoNewWindow -Wait
+Start-Process -FilePath "$PathToRepo/Scripts/close-program.ps1" -ArgumentList "explorer" -NoNewWindow -Wait
