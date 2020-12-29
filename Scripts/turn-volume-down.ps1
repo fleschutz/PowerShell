@@ -1,7 +1,7 @@
 #!/snap/bin/powershell
 
 # Syntax:       ./turn-volume-down.ps1 [<percent>]
-# Description:	turns the volume down (-10% by default)
+# Description:	turns the audio volume down (-10% by default)
 # Author:	Markus Fleschutz
 # Source:	github.com/fleschutz/PowerShell
 # License:	CC0

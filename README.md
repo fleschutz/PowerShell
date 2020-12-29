@@ -49,6 +49,7 @@ The following PowerShell scripts can be found in the [Scripts/](Scripts/) subfol
 * [new-email.ps1](Scripts/new-email.ps1) - starts the default email client to write a new email
 * [news.ps1](Scripts/news.ps1) - prints the latest news
 * [reboot.ps1](Scripts/reboot.ps1) - reboots the local computer (needs administrator rights)
+* [search-files.ps1](Scripts/search-files.ps1) - searches the given pattern in the given files
 * [scan-ports.ps1](Scripts/scan-ports.ps1) - scans the network for open/closed ports
 * [send-email.ps1](Scripts/send-email.ps1) - sends an email message
 * [send-tcp.ps1](Scripts/send-udp.ps1) - sends a TCP message to the given IP address and port
@@ -67,8 +68,8 @@ The following PowerShell scripts can be found in the [Scripts/](Scripts/) subfol
 * [train-dns-cache.ps1](Scripts/train-dns-cache.ps1) - trains the DNS cache with frequently used domain names
 * [translate-file.ps1](Scripts/translate-file.ps1) - translates the given file from source to target language
 * [translate-text.ps1](Scripts/translate-text.ps1) - translates the given text into other languages
-* [turn-volume-up.ps1](Scripts/turn-volume-up.ps1) - turns the volume up (+10% by default)
-* [turn-volume-down.ps1](Scripts/turn-volume-down.ps1) - turns the volume down (-10% by default)
+* [turn-volume-up.ps1](Scripts/turn-volume-up.ps1) - turns the audio volume up (+10% by default)
+* [turn-volume-down.ps1](Scripts/turn-volume-down.ps1) - turns the audio volume down (-10% by default)
 * [txt2wav.ps1](Scripts/txt2wav.ps1) - converts text into a audio .WAV file
 * [unmute-audio.ps1](Scripts/unmute-audio.ps1) - unmutes audio
 * [weather.ps1](Scripts/weather.ps1) - prints the current weather forecast
