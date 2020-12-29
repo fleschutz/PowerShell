@@ -1,7 +1,7 @@
 #!/snap/bin/powershell
 <#
 .SYNTAX         ./download.ps1 [<URL>]
-.SYNOPSIS	downloads the file/directory from the given URL
+.DESCRIPTION	downloads the file/directory from the given URL
 .LINK		https://github.com/fleschutz/PowerShell
 .NOTES		Author:	Markus Fleschutz / License: CC0
 #>

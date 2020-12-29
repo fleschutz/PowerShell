@@ -141,7 +141,7 @@ Each PowerShell script should follow the 8 golden rules:
 * **Rule #1:** the filename should be named `<verb>-<object>.ps1`
 * **Rule #2:** the first line reads `#!/snap/bin/powershell` to support PowerShell on Linux
 * **Rule #3:** the script has execute file permissions (chmod a+rx <file>) to support PowerShell on Linux
-* **Rule #4:** provide a metadata header with syntax, description, author, source, and license
+* **Rule #4:** provide a comment-based help with syntax, description, link, author, and license
 * **Rule #5:** prefer command-line options, else ask the user
 * **Rule #6:** the encoding of the script is in UTF-8 with BOM to support Unicode characters
 * **Rule #7:** use `Set-StrictMode -Version Latest` to enable additional error checking
