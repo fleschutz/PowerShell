@@ -12,8 +12,8 @@ try {
 	$Table = import-csv "$PathToRepo/Data/scripts.csv"
 
 	write-output ""
-	write-output "List of PowerShell Scripts"
-	write-output "=========================="
+	write-output "Collection of $($Table.Count) PowerShell Scripts"
+	write-output "==================================="
 	foreach($Row in $Table) {
 		write-output "* $($Row.Filename) - $($Row.Description)"
 	}
