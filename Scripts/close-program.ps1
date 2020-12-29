@@ -1,31 +1,34 @@
 #!/snap/bin/powershell
 <#
-.SYNTAX         ./close-program.ps1 [<program-name>]
-.DESCRIPTION	closes the given program gracefully
+.SYNTAX         ./close-program.ps1 [<program-name>] [<full-program-name>]
+.DESCRIPTION	closes the processes of the given program gracefully
 .LINK		https://github.com/fleschutz/PowerShell
 .NOTES		Author:	Markus Fleschutz / License: CC0
 #>
 
-param([string]$ProgramName)
+param([string]$ProgramName = "", [string]$FullProgramName = "")
 
 try {
-	if ($ProgramName -eq "" ) {
-		Get-Process | Where-Object {$_.mainWindowTitle} | Format-Table Id, Name, mainWindowtitle -AutoSize
-		$ProgramName = read-host "Enter program to close"
+	if ($ProgramName -eq "") {
+		get-process | where-object {$_.mainWindowTitle} | format-table Id, Name, mainWindowtitle -AutoSize
+		$ProgramName = read-host "Enter program name"
+	}
+	if ($FullProgramName -eq "") {
+		$FullProgramName = $ProgramName
 	}
 
-	$Processes = Get-Process -name $ProgramName -erroraction 'silentlycontinue'
+	$Processes = get-process -name $ProgramName -errorAction 'silentlycontinue'
 	foreach ($Process in $Processes) {
 		$_.CloseMainWindow() | Out-Null
 	} 
 	start-sleep -milliseconds 100
-	Stop-Process -name $ProgramName -force -erroraction 'silentlycontinue'
+	stop-process -name $ProgramName -force -errorAction 'silentlycontinue'
 
 	$ProcessCount = $Processes.Count
 	if ($ProcessCount -eq 0) {
-		throw "program '$ProgramName' is not started yet"
+		throw "$FullProgramName is not started yet"
 	}
-	write-output "OK - program '$ProgramName' with $ProcessCount process(es) has been closed."
+	write-output "OK - $FullProgramName with $ProcessCount process(es) has been closed."
 	exit 0
 } catch {
 	write-error "ERROR in line $($_.InvocationInfo.ScriptLineNumber): $($Error[0])"
