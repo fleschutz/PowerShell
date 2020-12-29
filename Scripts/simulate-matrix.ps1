@@ -7,9 +7,9 @@
 #>
 
 try {
-	write-progress "Reading Matrix.csv..."
+	write-progress "Reading Data/matrix.csv..."
 	$PathToRepo=(get-item $MyInvocation.MyCommand.Path).directory.parent
-	$Table = import-csv "$PathToRepo/Data/Matrix.csv"
+	$Table = import-csv "$PathToRepo/Data/matrix.csv"
 
 	clear-host
 	foreach($Row in $Table) {

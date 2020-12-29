@@ -1,15 +1,15 @@
 #!/snap/bin/powershell
 <#
 .SYNTAX         ./list-logbook.ps1 
-.DESCRIPTION	lists the content of the logbook (../Data/Logbook.csv)
+.DESCRIPTION	lists the content of the logbook (in ../Data/logbook.csv)
 .LINK		https://github.com/fleschutz/PowerShell
 .NOTES		Author:	Markus Fleschutz / License: CC0
 #>
 
 try {
+	write-progress "Reading Data/logbook.csv..."
 	$PathToRepo=(get-item $MyInvocation.MyCommand.Path).directory.parent
-
-	$Table = import-csv "$PathToRepo/Data/Logbook.csv"
+	$Table = import-csv "$PathToRepo/Data/logbook.csv"
 
 	write-output ""
 	write-output "Time                 User  Text"
