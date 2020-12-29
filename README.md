@@ -30,8 +30,9 @@ The following PowerShell scripts can be found in the [Scripts/](Scripts/) subfol
 * [list-logbook.ps1](Scripts/list-logbook.ps1) - lists the content of the logbook 
 * [list-unused-files.ps1](Scripts/list-unused-files.ps1) - lists unused files in a directory tree
 * [list-cmdlets.ps1](Scripts/list-cmdlets.ps1) - lists the PowerShell cmdlets
-* [list-earthquakes.ps1](Scripts/list-earthquakes.ps1) - lists earthquakes >= 6.0 for the last 30 days
+* [list-earthquakes.ps1](Scripts/list-earthquakes.ps1) - lists earthquakes with magnitude >= 6.0 for the last 30 days
 * [list-modules.ps1](Scripts/list-modules.ps1) - lists the PowerShell modules
+* [list-news.ps1](Scripts/list-news.ps1) - lists the latest news
 * [list-random-passwords.ps1](Scripts/list-random-passwords.ps1) - prints a list of random passwords
 * [list-random-pins.ps1](Scripts/list-random-pins.ps1) - prints a list of random PIN's
 * [list-processes.ps1](Scripts/list-processes.ps1) - lists the local computer processes
@@ -47,7 +48,6 @@ The following PowerShell scripts can be found in the [Scripts/](Scripts/) subfol
 * [play-beep.ps1](Scripts/play-beep.ps1) - plays a beep sound
 * [poweroff.ps1](Scripts/poweroff.ps1) - halts the local computer (needs administrator rights)
 * [new-email.ps1](Scripts/new-email.ps1) - starts the default email client to write a new email
-* [news.ps1](Scripts/news.ps1) - prints the latest news
 * [reboot.ps1](Scripts/reboot.ps1) - reboots the local computer (needs administrator rights)
 * [search-files.ps1](Scripts/search-files.ps1) - searches the given pattern in the given files
 * [scan-ports.ps1](Scripts/scan-ports.ps1) - scans the network for open/closed ports
