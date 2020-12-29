@@ -1,10 +1,10 @@
 #!/snap/bin/powershell
-
-# Syntax:       ./download.ps1 [<URL>]
-# Description:	downloads the file/directory from the given URL
-# Author:	Markus Fleschutz
-# Source:	github.com/fleschutz/PowerShell
-# License:	CC0
+<#
+.SYNTAX         ./download.ps1 [<URL>]
+.SYNOPSIS	downloads the file/directory from the given URL
+.LINK		https://github.com/fleschutz/PowerShell
+.NOTES		Author:	Markus Fleschutz / License: CC0
+#>
 
 param([string]$URL)
 
