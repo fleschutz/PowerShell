@@ -1,10 +1,10 @@
 #!/snap/bin/powershell
-
-# Syntax:	./wakeup.ps1 [<hostname>]
-# Description:	sends a magic packet to the given computer, waking him up
-# Author:	Markus Fleschutz
-# Source:	github.com/fleschutz/PowerShell
-# License:	CC0
+<#
+.SYNTAX         ./wakeup.ps1 [<hostname>]
+.DESCRIPTION	sends a magic packet to the given computer, waking him up
+.LINK		https://github.com/fleschutz/PowerShell
+.NOTES		Author:	Markus Fleschutz / License: CC0
+#>
 
 param([string]$Hostname)
 if ($Hostname -eq "" ) {

@@ -1,9 +1,9 @@
 #!/snap/bin/powershell
-
-# Syntax:       ./close-file-explorer.ps1 
-# Description:	closes Microsoft File Explorer gracefully
-# Author:	Markus Fleschutz
-# Source:	github.com/fleschutz/PowerShell
-# License:	CC0
+<#
+.SYNTAX         ./close-file-explorer.ps1 
+.DESCRIPTION	closes Microsoft File Explorer gracefully
+.LINK		https://github.com/fleschutz/PowerShell
+.NOTES		Author:	Markus Fleschutz / License: CC0
+#>
 
 ./close-program "explorer" 

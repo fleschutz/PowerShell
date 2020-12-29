@@ -1,12 +1,13 @@
 #!/snap/bin/powershell
-
-# Syntax:	./speak-file.ps1 [<file>]
-# Description:	speaks the content of the given text file by text-to-speech (TTS)
-# Author:	Markus Fleschutz
-# Source:	github.com/fleschutz/PowerShell
-# License:	CC0
+<#
+.SYNTAX         ./speak-file.ps1 [<file>]
+.DESCRIPTION	speaks the content of the given text file by text-to-speech (TTS)
+.LINK		https://github.com/fleschutz/PowerShell
+.NOTES		Author:	Markus Fleschutz / License: CC0
+#>
 
 param([string]$File)
+
 try {
 	if ($File -eq "") {
 		$File = read-host "Enter path to file"

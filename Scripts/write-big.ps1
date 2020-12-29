@@ -1,16 +1,16 @@
 #!/snap/bin/powershell
+<#
+.SYNTAX         ./write-big.ps1 [<text>]
+.DESCRIPTION	writes the given text in big letters
+.LINK		https://github.com/fleschutz/PowerShell
+.NOTES		Author:	Markus Fleschutz / License: CC0
+#>
 
-# Syntax:       ./write-big.ps1 [<text>]
-# Description:	writes the given text in big letters
-# Author:	Markus Fleschutz
-# Source:	github.com/fleschutz/PowerShell
-# License:	CC0
-
-param([String]$Text)
+param([string]$Text)
 
 Set-StrictMode -Version Latest
 
-function BigA() { param([Int]$Row)
+function BigA() { param([int]$Row)
 	switch($Row) {
 	1 { return "   __   " }
 	2 { return "  /__\  " }
@@ -19,7 +19,7 @@ function BigA() { param([Int]$Row)
 	}
 }
 
-function BigB() { param([Int]$Row)
+function BigB() { param([int]$Row)
 	switch($Row) {
 	1 { return " ____ " }
 	2 { return "| _  )" }
@@ -28,7 +28,7 @@ function BigB() { param([Int]$Row)
 	}
 }
 
-function BigC() { param([Int]$Row)
+function BigC() { param([int]$Row)
 	switch($Row) {
 	1 { return "  ___ " }
 	2 { return " / __)" }
@@ -37,7 +37,7 @@ function BigC() { param([Int]$Row)
 	}
 }
 
-function BigD() { param([Int]$Row)
+function BigD() { param([int]$Row)
 	switch($Row) {
 	1 { return " ____  " }
 	2 { return "|  _ \ " }
@@ -46,7 +46,7 @@ function BigD() { param([Int]$Row)
 	}
 }
 
-function BigE() { param([Int]$Row)
+function BigE() { param([int]$Row)
 	switch($Row) {
 	1 { return " ____ " }
 	2 { return "| ___)" }
@@ -55,7 +55,7 @@ function BigE() { param([Int]$Row)
 	}
 }
 
-function BigF() { param([Int]$Row)
+function BigF() { param([int]$Row)
 	switch($Row) {
 	1 { return " ____ " }
 	2 { return "| ___)" }
@@ -64,7 +64,7 @@ function BigF() { param([Int]$Row)
 	}
 }
 
-function BigG() { param([Int]$Row)
+function BigG() { param([int]$Row)
 	switch($Row) {
 	1 { return "  ____ " }
 	2 { return " / ___)" }
@@ -73,7 +73,7 @@ function BigG() { param([Int]$Row)
 	}
 }
 
-function BigH() { param([Int]$Row)
+function BigH() { param([int]$Row)
 	switch($Row) {
 	1 { return " _   _ " }
 	2 { return "| |_| |" }
@@ -82,7 +82,7 @@ function BigH() { param([Int]$Row)
 	}
 }
 
-function BigI() { param([Int]$Row)
+function BigI() { param([int]$Row)
 	switch($Row) {
 	1 { return " _ " }
 	2 { return "| |" }
@@ -91,7 +91,7 @@ function BigI() { param([Int]$Row)
 	}
 }
 
-function BigJ() { param([Int]$Row)
+function BigJ() { param([int]$Row)
 	switch($Row) {
 	1 { return "   __ " }
 	2 { return "  (  |" }
@@ -100,7 +100,7 @@ function BigJ() { param([Int]$Row)
 	}
 }
 
-function BigK() { param([Int]$Row)
+function BigK() { param([int]$Row)
 	switch($Row) {
 	1 { return " _  _ " }
 	2 { return "| |/ )" }
@@ -109,7 +109,7 @@ function BigK() { param([Int]$Row)
 	}
 }
 
-function BigL() { param([Int]$Row)
+function BigL() { param([int]$Row)
 	switch($Row) {
 	1 { return " _    " }
 	2 { return "| |   " }
@@ -118,7 +118,7 @@ function BigL() { param([Int]$Row)
 	}
 }
 
-function BigM() { param([Int]$Row)
+function BigM() { param([int]$Row)
 	switch($Row) {
 	1 { return " _    _ " }
 	2 { return "| \  / |" }
@@ -127,7 +127,7 @@ function BigM() { param([Int]$Row)
 	}
 }
 
-function BigN() { param([Int]$Row)
+function BigN() { param([int]$Row)
 	switch($Row) {
 	1 { return " _   _ " }
 	2 { return "| \ | |" }
@@ -136,7 +136,7 @@ function BigN() { param([Int]$Row)
 	}
 }
 
-function BigO() { param([Int]$Row)
+function BigO() { param([int]$Row)
 	switch($Row) {
 	1 { return "  ___  " }
 	2 { return " / _ \ " }
@@ -145,7 +145,7 @@ function BigO() { param([Int]$Row)
 	}
 }
 
-function BigP() { param([Int]$Row)
+function BigP() { param([int]$Row)
 	switch($Row) {
 	1 { return " ____ " }
 	2 { return "|  _ \" }
@@ -154,7 +154,7 @@ function BigP() { param([Int]$Row)
 	}
 }
 
-function BigQ() { param([Int]$Row)
+function BigQ() { param([int]$Row)
 	switch($Row) {
 	1 { return "  ____  " }
 	2 { return " / _  \ " }
@@ -163,7 +163,7 @@ function BigQ() { param([Int]$Row)
 	}
 }
 
-function BigR() { param([Int]$Row)
+function BigR() { param([int]$Row)
 	switch($Row) {
 	1 { return " ____ " }
 	2 { return "|  _ \" }
@@ -172,7 +172,7 @@ function BigR() { param([Int]$Row)
 	}
 }
 
-function BigS() { param([Int]$Row)
+function BigS() { param([int]$Row)
 	switch($Row) {
 	1 { return " ____ " }
 	2 { return "/  __)" }
@@ -181,7 +181,7 @@ function BigS() { param([Int]$Row)
 	}
 }
 
-function BigT() { param([Int]$Row)
+function BigT() { param([int]$Row)
 	switch($Row) {
 	1 { return " _____ " }
 	2 { return "|_   _|" }
@@ -190,7 +190,7 @@ function BigT() { param([Int]$Row)
 	}
 }
 
-function BigU() { param([Int]$Row)
+function BigU() { param([int]$Row)
 	switch($Row) {
 	1 { return " _   _ " }
 	2 { return "| | | |" }
@@ -199,7 +199,7 @@ function BigU() { param([Int]$Row)
 	}
 }
 
-function BigV() { param([Int]$Row)
+function BigV() { param([int]$Row)
 	switch($Row) {
 	1 { return " _  _ " }
 	2 { return "( \/ )" }
@@ -208,7 +208,7 @@ function BigV() { param([Int]$Row)
 	}
 }
 
-function BigW() { param([Int]$Row)
+function BigW() { param([int]$Row)
 	switch($Row) {
 	1 { return " __    __ " }
 	2 { return "\  \/\/  /" }
@@ -217,7 +217,7 @@ function BigW() { param([Int]$Row)
 	}
 }
 
-function BigX() { param([Int]$Row)
+function BigX() { param([int]$Row)
 	switch($Row) {
 	1 { return " _  _ " }
 	2 { return "( \/ )" }
@@ -226,7 +226,7 @@ function BigX() { param([Int]$Row)
 	}
 }
 
-function BigY() { param([Int]$Row)
+function BigY() { param([int]$Row)
 	switch($Row) {
 	1 { return " _  _ " }
 	2 { return "( \/ )" }
@@ -235,7 +235,7 @@ function BigY() { param([Int]$Row)
 	}
 }
 
-function BigZ() { param([Int]$Row)
+function BigZ() { param([int]$Row)
 	switch($Row) {
 	1 { return " ____ " }
 	2 { return "(_   )" }
@@ -245,7 +245,7 @@ function BigZ() { param([Int]$Row)
 }
 
 
-function Big0() { param([Int]$Row)
+function Big0() { param([int]$Row)
 	switch($Row) {
 	1 { return "  ___  " }
 	2 { return " / _ \ " }
@@ -254,7 +254,7 @@ function Big0() { param([Int]$Row)
 	}
 }
 
-function Big1() { param([Int]$Row)
+function Big1() { param([int]$Row)
 	switch($Row) {
 	1 { return " ___ " }
 	2 { return "/_  |" }
@@ -263,7 +263,7 @@ function Big1() { param([Int]$Row)
 	}
 }
 
-function Big2() { param([Int]$Row)
+function Big2() { param([int]$Row)
 	switch($Row) {
 	1 { return " ___  " }
 	2 { return "(__ \ " }
@@ -272,7 +272,7 @@ function Big2() { param([Int]$Row)
 	}
 }
 
-function Big3() { param([Int]$Row)
+function Big3() { param([int]$Row)
 	switch($Row) {
 	1 { return " ___ " }
 	2 { return "(__ )" }
@@ -281,7 +281,7 @@ function Big3() { param([Int]$Row)
 	}
 }
 
-function Big4() { param([Int]$Row)
+function Big4() { param([int]$Row)
 	switch($Row) {
 	1 { return "  __  " }
 	2 { return " /. | " }
@@ -290,7 +290,7 @@ function Big4() { param([Int]$Row)
 	}
 }
 
-function Big5() { param([Int]$Row)
+function Big5() { param([int]$Row)
 	switch($Row) {
 	1 { return " ____ " }
 	2 { return "| ___)" }
@@ -299,7 +299,7 @@ function Big5() { param([Int]$Row)
 	}
 }
 
-function Big6() { param([Int]$Row)
+function Big6() { param([int]$Row)
 	switch($Row) {
 	1 { return "  _  " }
 	2 { return " / ) " }
@@ -308,7 +308,7 @@ function Big6() { param([Int]$Row)
 	}
 }
 
-function Big7() { param([Int]$Row)
+function Big7() { param([int]$Row)
 	switch($Row) {
 	1 { return " ___ " }
 	2 { return "(__ )" }
@@ -317,7 +317,7 @@ function Big7() { param([Int]$Row)
 	}
 } 
 
-function Big8() { param([Int]$Row)
+function Big8() { param([int]$Row)
 	switch($Row) {
 	1 { return " ___ " }
 	2 { return "( _ )" }
@@ -326,7 +326,7 @@ function Big8() { param([Int]$Row)
 	}
 } 
 
-function Big9() { param([Int]$Row)
+function Big9() { param([int]$Row)
 	switch($Row) {
 	1 { return " ___ " }
 	2 { return "/ _ \" }
@@ -335,7 +335,7 @@ function Big9() { param([Int]$Row)
 	}
 } 
 
-function BigColon() { param([Int]$Row)
+function BigColon() { param([int]$Row)
 	switch($Row) {
 	1 { return "   " }
 	2 { return " o " }
@@ -344,7 +344,7 @@ function BigColon() { param([Int]$Row)
 	}
 } 
 
-function BigMinus() { param([Int]$Row)
+function BigMinus() { param([int]$Row)
 	switch($Row) {
 	1 { return "      " }
 	2 { return " ____ " }
@@ -353,7 +353,7 @@ function BigMinus() { param([Int]$Row)
 	}
 } 
 
-function BigChar() { param([String]$Char, [Int]$Row)
+function BigChar() { param([string]$Char, [int]$Row)
 	switch($Char) {
 	'A' { return BigA $Row }
 	'B' { return BigB $Row }

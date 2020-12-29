@@ -1,12 +1,13 @@
 #!/snap/bin/powershell
-
-# Syntax:	./SHA256.ps1 [<file>]
-# Description:	prints the SHA256 checksum of the given file
-# Author: 	Markus Fleschutz
-# Source:	github.com/fleschutz/PowerShell
-# License:	CC0
+<#
+.SYNTAX         ./SHA256.ps1 [<file>]
+.DESCRIPTION	prints the SHA256 checksum of the given file
+.LINK		https://github.com/fleschutz/PowerShell
+.NOTES		Author:	Markus Fleschutz / License: CC0
+#>
 
 param([string]$File)
+
 try {
 	if ($File -eq "" ) {
 		$File = read-host "Enter file"

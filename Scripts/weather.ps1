@@ -1,15 +1,15 @@
 #!/snap/bin/powershell
+<#
+.SYNTAX         ./weather.ps1 [<geo-location>]
+.DESCRIPTION	prints the current weather forecast
+.LINK		https://github.com/fleschutz/PowerShell
+.NOTES		Author:	Markus Fleschutz / License: CC0
+#>
 
-# Syntax:	./weather.ps1
-# Description:	prints the current weather forecast
-# Author:	Markus Fleschutz
-# Source:	github.com/fleschutz/PowerShell
-# License:	CC0
- 
-$GeoLocation="" # empty means determine automatically
+param([string]$GeoLocation = "") # empty means determine automatically
 
 try {
-	(Invoke-WebRequest http://wttr.in/$GeoLocation -UserAgent "curl" ).Content
+	(invoke-webRequest http://wttr.in/$GeoLocation -UserAgent "curl" ).Content
 	exit 0
 } catch {
 	write-error "ERROR in line $($_.InvocationInfo.ScriptLineNumber): $($Error[0])"

@@ -1,11 +1,11 @@
 #!/snap/bin/powershell
+<#
+.SYNTAX         ./weather-worldwide.ps1
+.DESCRIPTION	prints the current weather of cities world-wide
+.LINK		https://github.com/fleschutz/PowerShell
+.NOTES		Author:	Markus Fleschutz / License: CC0
+#>
 
-# Syntax:	./weather-worldwide.ps1
-# Description:	prints the current weather of cities world-wide
-# Author:	Markus Fleschutz
-# Source:	github.com/fleschutz/PowerShell
-# License:	CC0
- 
 $Cities="Hawaii","Los Angeles","Mexico City","Miami","New York","Rio de Janeiro","Paris","London","Berlin","Cape Town","Dubai","Mumbai","Singapore","Hong Kong","Peking","Tokyo","Sydney"
 
 try {

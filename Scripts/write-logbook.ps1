@@ -1,17 +1,18 @@
 #!/snap/bin/powershell
+<#
+.SYNTAX         ./write-logbook.ps1 [<text>]
+.DESCRIPTION	writes the given text to the logbook (../Data/Logbook.csv)
+.LINK		https://github.com/fleschutz/PowerShell
+.NOTES		Author:	Markus Fleschutz / License: CC0
+#>
 
-# Syntax:       ./write-logbook.ps1 [<text>]
-# Description:	writes the given text to the logbook (../Data/Logbook.csv)
-# Author:	Markus Fleschutz
-# Source:	github.com/fleschutz/PowerShell
-# License:	CC0
+param([string]$Text = "")
 
-param([String]$Text)
 try {
-	$Time = Get-Date -format "yyyy-MM-ddTHH:mm:ssZ" -AsUTC
+	$Time = get-date -format "yyyy-MM-ddTHH:mm:ssZ" -asUTC
 	$User = $(whoami)
 	if ($Text -eq "" ) {
-		[String]$Text = read-host "Enter text to write"
+		[string]$Text = read-host "Enter text to write"
 	}
 	$Line = "$Time,$User,$Text"
 

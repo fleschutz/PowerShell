@@ -1,12 +1,13 @@
 #!/snap/bin/powershell
-
-# Syntax:	./translate-file.ps1 [<file>]
-# Description:	translates the given file from source to target language.
-# Author:	Markus Fleschutz
-# Source:	github.com/fleschutz/PowerShell
-# License:	CC0
+<#
+.SYNTAX         ./translate-file.ps1 [<file>] [<source-lang>] [<target-lang>]
+.DESCRIPTION	translates the given file from source to target language.
+.LINK		https://github.com/fleschutz/PowerShell
+.NOTES		Author:	Markus Fleschutz / License: CC0
+#>
 
 param([string]$SourceFile, [string]$SourceLanguage, [string]$TargetLanguage)
+
 try {
 	if ($SourceFile -eq "" ) {
 		$SourceFile = read-host "Enter path to file"

@@ -1,17 +1,18 @@
 #!/snap/bin/powershell
+<#
+.SYNTAX         ./new-email.ps1 [<address>]
+.DESCRIPTION	starts the default email client to write a new email
+.LINK		https://github.com/fleschutz/PowerShell
+.NOTES		Author:	Markus Fleschutz / License: CC0
+#>
 
-# Syntax:       ./new-email.ps1 [<address>]
-# Description:	starts the default email client to write a new email
-# Author:	Markus Fleschutz
-# Source:	github.com/fleschutz/PowerShell
-# License:	CC0
+param([string]$EmailAddress)
 
-param([string]$emailAddress)
 try {
-	if ($emailAddress -eq "" ) {
-		$emailAddress = "markus@fleschutz.de"
+	if ($EmailAddress -eq "" ) {
+		$EmailAddress = "markus@fleschutz.de"
 	}
-	$URL="mailto:$emailAddress"
+	$URL="mailto:$EmailAddress"
 	Start-Process $URL
 	exit 0
 } catch {

@@ -1,18 +1,18 @@
 #!/snap/bin/powershell
+<#
+.SYNTAX         ./inspect-exe.ps1 [<path-to-exe-file>]
+.DESCRIPTION	prints basic information of the given executable file
+.LINK		https://github.com/fleschutz/PowerShell
+.NOTES		Author:	Markus Fleschutz / License: CC0
+#>
 
-# Syntax:	./inspect-exe.ps1 [<executable-file>]
-# Description:	prints basic information of the given executable file
-# Author: 	Markus Fleschutz
-# Source:	github.com/fleschutz/PowerShell
-# License:	CC0
- 
-param([string]$File)
+param([string]$PathToExe)
 
 try {
-	if ($File -eq "" ) {
-		$File = read-host "Enter path to executable file"
+	if ($PathToExe -eq "" ) {
+		$PathToExe = read-host "Enter path to executable file"
 	}
-	get-childitem $File | % {$_.VersionInfo} | Select *
+	get-childitem $PathToExe | % {$_.VersionInfo} | Select *
 	exit 0
 } catch {
 	write-error "ERROR in line $($_.InvocationInfo.ScriptLineNumber): $($Error[0])"

@@ -1,10 +1,10 @@
 #!/snap/bin/powershell
-
-# Syntax:       ./send-email.ps1 
-# Description:	sends an email
-# Author:	Markus Fleschutz
-# Source:	github.com/fleschutz/PowerShell
-# License:	CC0
+<#
+.SYNTAX         ./send-email.ps1 
+.DESCRIPTION	sends an email
+.LINK		https://github.com/fleschutz/PowerShell
+.NOTES		Author:	Markus Fleschutz / License: CC0
+#>
 
 $smtpServer = "smtp.example.com"
 $From = read-host "Enter sender email address"

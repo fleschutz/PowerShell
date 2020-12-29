@@ -1,12 +1,13 @@
 #!/snap/bin/powershell
-
-# Syntax:	./speak-text.ps1 [<text>]
-# Description:	speaks the given text by text-to-speech (TTS)
-# Author:	Markus Fleschutz
-# Source:	github.com/fleschutz/PowerShell
-# License:	CC0
+<#
+.SYNTAX         ./speak-text.ps1 [<text>]
+.DESCRIPTION	speaks the given text by text-to-speech (TTS)
+.LINK		https://github.com/fleschutz/PowerShell
+.NOTES		Author:	Markus Fleschutz / License: CC0
+#>
 
 param([string]$Text)
+
 try {
 	if ($Text -eq "") {
 		$Text = read-host "Enter text to speak"

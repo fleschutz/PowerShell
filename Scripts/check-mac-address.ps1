@@ -1,7 +1,11 @@
 #!/snap/bin/powershell
+<#
+.SYNTAX         ./check-mac-address.ps1 [<MAC>]
+.DESCRIPTION	checks the given MAC address for validity
+.LINK		https://github.com/fleschutz/PowerShell
+.NOTES		Author:	Markus Fleschutz / License: CC0
+#>
 
-# Syntax:       ./check-mac-address.ps1 [<MAC>]
-# Description:	checks the given MAC address for validity
 # Author:	Markus Fleschutz
 # Source:	github.com/fleschutz/PowerShell
 # License:	CC0

@@ -1,14 +1,12 @@
 #!/snap/bin/powershell
-
-# Syntax:       ./write-motd.ps1 
-# Description:	writes the message of the day (MOTD)
-# Author:	Markus Fleschutz
-# Source:	github.com/fleschutz/PowerShell
-# License:	CC0
-
+<#
+.SYNTAX         ./write-motd.ps1 
+.DESCRIPTION	writes the message of the day (MOTD)
+.LINK		https://github.com/fleschutz/PowerShell
+.NOTES		Author:	Markus Fleschutz / License: CC0
+#>
 
 # Retrieve information:
-
 $CurrentTime = Get-Date -format "yyyy-MM-dd HH:mm"
 $TimeZone = (Get-TimeZone).id
 $UserName = $(whoami)

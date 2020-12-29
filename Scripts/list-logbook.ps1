@@ -1,10 +1,10 @@
 #!/snap/bin/powershell
-
-# Syntax:       ./list-logbook.ps1 
-# Description:	lists the content of the logbook (../Data/Logbook.csv)
-# Author:	Markus Fleschutz
-# Source:	github.com/fleschutz/PowerShell
-# License:	CC0
+<#
+.SYNTAX         ./list-logbook.ps1 
+.DESCRIPTION	lists the content of the logbook (../Data/Logbook.csv)
+.LINK		https://github.com/fleschutz/PowerShell
+.NOTES		Author:	Markus Fleschutz / License: CC0
+#>
 
 try {
 	$PathToRepo=(get-item $MyInvocation.MyCommand.Path).directory.parent

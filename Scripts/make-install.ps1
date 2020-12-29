@@ -1,9 +1,10 @@
 #!/snap/bin/powershell
-
-# Syntax:	make-install.ps1 <build-dir>
-# Description:	Copies newer EXE's + DLL's from the build directory to the installation directory.
-# Author:	Markus Fleschutz
-# License:	CC0
+<#
+.SYNTAX         make-install.ps1 <build-dir>
+.DESCRIPTION	Copies newer EXE's + DLL's from the build directory to the installation directory.
+.LINK		https://github.com/fleschutz/PowerShell
+.NOTES		Author:	Markus Fleschutz / License: CC0
+#>
 
 set SRC_DIR=%1
 set "DST_DIR=C:\Program Files\MyApp\bin"

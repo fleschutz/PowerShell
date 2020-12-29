@@ -1,10 +1,10 @@
 #!/snap/bin/powershell
-
-# Syntax:	./train-dns-cache.ps1
-# Description:	trains the DNS cache with frequently used domain names
-# Author:	Markus Fleschutz
-# Source:	github.com/fleschutz/PowerShell
-# License:	CC0
+<#
+.SYNTAX         ./train-dns-cache.ps1
+.DESCRIPTION	trains the DNS cache with frequently used domain names
+.LINK		https://github.com/fleschutz/PowerShell
+.NOTES		Author:	Markus Fleschutz / License: CC0
+#>
 
 Set-StrictMode -Version Latest
  

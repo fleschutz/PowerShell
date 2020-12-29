@@ -1,12 +1,13 @@
 #!/snap/bin/powershell
-
-# Syntax:	./poweroff.ps1
-# Description:	halts the local computer, administrator rights are required 
-# Author:	Markus Fleschutz
-# Source:	github.com/fleschutz/PowerShell
-# License:	CC0
+<#
+.SYNTAX         ./poweroff.ps1
+.DESCRIPTION	halts the local computer, administrator rights are required 
+.LINK		https://github.com/fleschutz/PowerShell
+.NOTES		Author:	Markus Fleschutz / License: CC0
+#>
 
 #Requires -RunAsAdministrator
+
 try {
 	Stop-Computer
 	exit 0

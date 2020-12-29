@@ -1,11 +1,11 @@
 #!/snap/bin/powershell
+<#
+.SYNTAX         ./moon.ps1
+.DESCRIPTION	prints the current moon phase
+.LINK		https://github.com/fleschutz/PowerShell
+.NOTES		Author:	Markus Fleschutz / License: CC0
+#>
 
-# Syntax:	./moon.ps1
-# Description:	prints the current moon phase
-# Author:	Markus Fleschutz
-# Source:	github.com/fleschutz/PowerShell
-# License:	CC0
- 
 try {
 	(Invoke-WebRequest http://wttr.in/Moon -UserAgent "curl" ).Content
 	exit 0

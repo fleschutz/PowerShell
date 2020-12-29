@@ -1,16 +1,15 @@
 #!/snap/bin/powershell
+<#
+.SYNTAX         ./write-morse-code.ps1 [<text>] [<speed>]
+.DESCRIPTION	writes the given text in Morse code
+.LINK		https://github.com/fleschutz/PowerShell
+.NOTES		Author:	Markus Fleschutz / License: CC0
+#>
 
-# Syntax:       ./write-morse-code.ps1 [<text>]
-# Description:	writes the given text in Morse code
-# Author:	Markus Fleschutz
-# Source:	github.com/fleschutz/PowerShell
-# License:	CC0
+param([string]$Text, [int]$OneTimeUnit = 100) # in milliseconds
 
-param([String]$Text)
-$OneTimeUnit = 100 # milliseconds
-
-function gap() { param([Int]$Length)
-	for ($i = 1; $i -lt $Length; $i++) {
+function gap() { param([int]$Length)
+	for ([int]$i = 1; $i -lt $Length; $i++) {
 		write-host " " -nonewline
 	}
 	start-sleep -milliseconds ($Length * $OneTimeUnit)
@@ -26,7 +25,7 @@ function dash() {
 	start-sleep -milliseconds (3 * $OneTimeUnit) # signal
 }
 
-function Char2MorseCode() { param([String]$Char)
+function Char2MorseCode() { param([string]$Char)
 	switch($Char) {
 	'A' { dot; gap 1; dash; gap 3 }
 	'B' { dash; gap 1; dot; gap 1; dot; gap 1; dot; gap 3 }
@@ -70,7 +69,7 @@ function Char2MorseCode() { param([String]$Char)
 
 try {
 	if ($Text -eq "" ) {
-		[String]$Text = read-host "Enter text to write"
+		[string]$Text = read-host "Enter text to write"
 	}
 	[char[]]$ArrayOfChars = $Text.ToUpper()
 	foreach($Char in $ArrayOfChars) {

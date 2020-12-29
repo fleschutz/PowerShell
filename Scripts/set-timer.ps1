@@ -1,10 +1,10 @@
 #!/snap/bin/powershell
-
-# Syntax:       ./set-timer.ps1 [<seconds>]
-# Description:	sets a timer for a countdown
-# Author:	Markus Fleschutz
-# Source:	github.com/fleschutz/PowerShell
-# License:	CC0
+<#
+.SYNTAX         ./set-timer.ps1 [<seconds>]
+.DESCRIPTION	sets a timer for a countdown
+.LINK		https://github.com/fleschutz/PowerShell
+.NOTES		Author:	Markus Fleschutz / License: CC0
+#>
 
 param([int]$Seconds)
 try {

@@ -1,10 +1,10 @@
 #!/snap/bin/powershell
-
-# Syntax:       ./list-empty-dirs.ps1 <dirtree> 
-# Description:	lists empty subfolders in the <directory tree> 
-# Author:	Markus Fleschutz
-# Source:	github.com/fleschutz/PowerShell
-# License:	CC0
+<#
+.SYNTAX         ./list-empty-dirs.ps1 <dirtree> 
+.DESCRIPTION	lists empty subfolders in the <directory tree> 
+.LINK		https://github.com/fleschutz/PowerShell
+.NOTES		Author:	Markus Fleschutz / License: CC0
+#>
 
 param([string]$DirTree)
 

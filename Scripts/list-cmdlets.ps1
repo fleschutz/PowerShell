@@ -1,10 +1,10 @@
 #!/snap/bin/powershell
-
-# Syntax:	./list-cmdlets.ps1 
-# Description:	lists all PowerShell cmdlets
-# Author: 	Markus Fleschutz
-# Source:	github.com/fleschutz/PowerShell
-# License:	CC0
+<#
+.SYNTAX         ./list-cmdlets.ps1 
+.DESCRIPTION	lists all PowerShell cmdlets
+.LINK		https://github.com/fleschutz/PowerShell
+.NOTES		Author:	Markus Fleschutz / License: CC0
+#>
 
 try {
 	Get-Command -Command-Type cmdlet

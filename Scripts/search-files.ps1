@@ -1,12 +1,12 @@
 #!/snap/bin/powershell
+<#
+.SYNTAX         ./search-files.ps1 [<pattern>] [<path>]
+.DESCRIPTION	searches the given pattern in the given files
+.LINK		https://github.com/fleschutz/PowerShell
+.NOTES		Author:	Markus Fleschutz / License: CC0
+#>
 
-# Syntax:       ./search-files.ps1 [<pattern>] [<path>]
-# Description:	searches the given pattern in the given files
-# Author:	Markus Fleschutz
-# Source:	github.com/fleschutz/PowerShell
-# License:	CC0
-
-param([String]$Pattern, [String]$Path)
+param([string]$Pattern, [string]$Path)
 
 Set-StrictMode -Version Latest
 

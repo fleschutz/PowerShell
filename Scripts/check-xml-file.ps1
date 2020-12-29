@@ -1,10 +1,10 @@
 #!/snap/bin/powershell
-
-# Syntax:       ./check-xml-file [<file>]
-# Description:	checks the given XML file for validity
-# Author:	Markus Fleschutz
-# Source:	github.com/fleschutz/PowerShell
-# License:	CC0
+<#
+.SYNTAX         ./check-xml-file [<file>]
+.DESCRIPTION	checks the given XML file for validity
+.LINK		https://github.com/fleschutz/PowerShell
+.NOTES		Author:	Markus Fleschutz / License: CC0
+#>
 
 param ([String]$XmlFilePath)
 

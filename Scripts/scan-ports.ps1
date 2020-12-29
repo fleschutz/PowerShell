@@ -1,10 +1,10 @@
 #!/snap/bin/powershell
-
-# Syntax:       ./scan-ports.ps1
-# Description:	scans the network for open/closed ports
-# Author:	Markus Fleschutz
-# Source:	github.com/fleschutz/PowerShell
-# License:	CC0
+<#
+.SYNTAX         ./scan-ports.ps1
+.DESCRIPTION	scans the network for open/closed ports
+.LINK		https://github.com/fleschutz/PowerShell
+.NOTES		Author:	Markus Fleschutz / License: CC0
+#>
 
 $network = "192.168.178"
 $port = 8080

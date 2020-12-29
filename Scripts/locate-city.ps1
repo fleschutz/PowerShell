@@ -1,10 +1,10 @@
 #!/snap/bin/powershell
-
-# Syntax:	./locate-city.ps1 [<city>]
-# Description:	prints the geographic location of the given city
-# Author:	Markus Fleschutz
-# Source:	github.com/fleschutz/PowerShell
-# License:	CC0
+<#
+.SYNTAX         ./locate-city.ps1 [<city>]
+.DESCRIPTION	prints the geographic location of the given city
+.LINK		https://github.com/fleschutz/PowerShell
+.NOTES		Author:	Markus Fleschutz / License: CC0
+#>
 
 param([string]$City)
 if ($City -eq "" ) {

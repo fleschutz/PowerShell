@@ -1,10 +1,10 @@
 #!/snap/bin/powershell
-
-# Syntax:       ./csv-to-text.ps1 [<csv-file>]
-# Description:	converts the given CSV file into a text list
-# Author:	Markus Fleschutz
-# Source:	github.com/fleschutz/PowerShell
-# License:	CC0
+<#
+.SYNTAX         ./csv-to-text.ps1 [<csv-file>]
+.DESCRIPTION	converts the given CSV file into a text list
+.LINK		https://github.com/fleschutz/PowerShell
+.NOTES		Author:	Markus Fleschutz / License: CC0
+#>
 
 param([String]$Path)
 

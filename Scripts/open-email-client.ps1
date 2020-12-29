@@ -1,10 +1,10 @@
 #!/snap/bin/powershell
-
-# Syntax:       ./open-email-client.ps1
-# Description:	starts the default email client 
-# Author:	Markus Fleschutz
-# Source:	github.com/fleschutz/PowerShell
-# License:	CC0
+<#
+.SYNTAX         ./open-email-client.ps1
+.DESCRIPTION	starts the default email client 
+.LINK		https://github.com/fleschutz/PowerShell
+.NOTES		Author:	Markus Fleschutz / License: CC0
+#>
 
 try {
 	Start-Process "mailto:markus@fleschutz.de"

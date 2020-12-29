@@ -1,10 +1,10 @@
 #!/snap/bin/powershell
-
-# Syntax:       ./display-time.ps1 
-# Description:	displays the current time
-# Author:	Markus Fleschutz
-# Source:	github.com/fleschutz/PowerShell
-# License:	CC0
+<#
+.SYNTAX         ./display-time.ps1 
+.DESCRIPTION	displays the current time
+.LINK		https://github.com/fleschutz/PowerShell
+.NOTES		Author:	Markus Fleschutz / License: CC0
+#>
 
 try {
 	for ($i = 0; $i -lt 1000; $i++) {

@@ -1,10 +1,10 @@
 #!/snap/bin/powershell
-
-# Syntax:       ./unmute-audio.ps1
-# Description:	unmutes the audio
-# Author:	Markus Fleschutz
-# Source:	github.com/fleschutz/PowerShell
-# License:	CC0
+<#
+.SYNTAX         ./unmute-audio.ps1
+.DESCRIPTION	unmutes audio output
+.LINK		https://github.com/fleschutz/PowerShell
+.NOTES		Author:	Markus Fleschutz / License: CC0
+#>
 
 try {
 	$obj = new-object -com wscript.shell

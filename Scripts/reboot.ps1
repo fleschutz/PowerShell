@@ -1,12 +1,13 @@
 #!/snap/bin/powershell
-
-# Syntax:	./reboot.ps1
-# Description:	reboots the local computer, administrator rights are required
-# Author:	Markus Fleschutz
-# Source:	github.com/fleschutz/PowerShell
-# License:	CC0
+<#
+.SYNTAX         ./reboot.ps1
+.DESCRIPTION	reboots the local computer, administrator rights are required
+.LINK		https://github.com/fleschutz/PowerShell
+.NOTES		Author:	Markus Fleschutz / License: CC0
+#>
 
 #Requires -RunAsAdministrator
+
 try {
 	Restart-Computer
 	exit 0

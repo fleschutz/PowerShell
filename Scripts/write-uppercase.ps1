@@ -1,15 +1,16 @@
 #!/snap/bin/powershell
+<#
+.SYNTAX         ./write-uppercase.ps1 [<text>]
+.DESCRIPTION	writes the given text in uppercase letters
+.LINK		https://github.com/fleschutz/PowerShell
+.NOTES		Author:	Markus Fleschutz / License: CC0
+#>
 
-# Syntax:       ./write-uppercase.ps1 [<text>]
-# Description:	writes the given text in uppercase letters
-# Author:	Markus Fleschutz
-# Source:	github.com/fleschutz/PowerShell
-# License:	CC0
+param([string]$Text = "")
 
-param([String]$Text)
 try {
 	if ($Text -eq "" ) {
-		[String]$Text = read-host "Enter text to write"
+		[string]$Text = read-host "Enter text to write"
 	}
 	write-output $Text.ToUpper()
 	exit 0

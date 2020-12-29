@@ -1,17 +1,15 @@
 #!/snap/bin/powershell
+<#
+.SYNTAX         ./txt2wav.ps1
+.DESCRIPTION	converts the given text into an audio .WAV file
+.LINK		https://github.com/fleschutz/PowerShell
+.NOTES		Author:	Markus Fleschutz / License: CC0
+#>
 
-# Syntax:	./txt2wav.ps1
-# Description:	converts the given text into an audio .WAV file
-# Author:	Markus Fleschutz
-# Source:	github.com/fleschutz/PowerShell
-# License:	CC0
-
-# Configuration:
 $Text = "Hello, my name ist Bond, James Bond"
 $Speed = -1 # -10 is slowest, 10 is fastest
 $TargetWavFile = "spoken.wav"
 
-# Run:
 try {
 	Add-Type -AssemblyName System.Speech
 	$SpeechSynthesizer = New-Object System.Speech.Synthesis.SpeechSynthesizer

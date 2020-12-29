@@ -1,11 +1,11 @@
 #!/snap/bin/powershell
-
-# Syntax:	./configure-git.ps1
-# Description:	sets up the Git configuration
-# Author:	Markus Fleschutz
-# Source:	github.com/fleschutz/PowerShell
-# License:	CC0
-# NOTE:		requires installation of Git 
+<#
+.SYNTAX         ./configure-git.ps1
+.DESCRIPTION	sets up the Git configuration
+.LINK		https://github.com/fleschutz/PowerShell
+.NOTES		Author:	Markus Fleschutz / License: CC0
+		requires installation of Git 
+#>
 
 $UserName   = read-host "Enter your full name"
 $UserEmail  = read-host "Enter your email address"

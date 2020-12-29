@@ -1,48 +1,48 @@
 #!/snap/bin/powershell
-
-# Syntax:       ./simulate-matrix.ps1 
-# Description:	simulates the Matrix (fun)
-# Author:	Markus Fleschutz
-# Source:	github.com/fleschutz/PowerShell
-# License:	CC0
+<#
+.SYNTAX         ./simulate-matrix.ps1 
+.DESCRIPTION	simulates the Matrix (fun)
+.LINK		https://github.com/fleschutz/PowerShell
+.NOTES		Author:	Markus Fleschutz / License: CC0
+#>
 
 try {
 	write-progress "Reading Matrix.csv..."
 	$PathToRepo=(get-item $MyInvocation.MyCommand.Path).directory.parent
 	$Table = import-csv "$PathToRepo/Data/Matrix.csv"
 
-	Clear-Host
+	clear-host
 	foreach($Row in $Table) {
 		for ($i = 0; $i -lt 4; $i++) {
-			Write-Host -nonewline $($Row.A); Start-Sleep -milliseconds 5
-			Write-Host -nonewline $($Row.B); Start-Sleep -milliseconds 5
-			Write-Host -nonewline $($Row.C); Start-Sleep -milliseconds 5
-			Write-Host -nonewline $($Row.D); Start-Sleep -milliseconds 5
-			Write-Host -nonewline $($Row.E); Start-Sleep -milliseconds 5
-			Write-Host -nonewline $($Row.F); Start-Sleep -milliseconds 5
-			Write-Host -nonewline $($Row.G); Start-Sleep -milliseconds 5
-			Write-Host -nonewline $($Row.H); Start-Sleep -milliseconds 5
-			Write-Host -nonewline $($Row.I); Start-Sleep -milliseconds 5
-			Write-Host -nonewline $($Row.J); Start-Sleep -milliseconds 5
-			Write-Host -nonewline $($Row.K); Start-Sleep -milliseconds 5
-			Write-Host -nonewline $($Row.L); Start-Sleep -milliseconds 5
-			Write-Host -nonewline $($Row.M); Start-Sleep -milliseconds 5
-			Write-Host -nonewline $($Row.N); Start-Sleep -milliseconds 5
-			Write-Host -nonewline $($Row.O); Start-Sleep -milliseconds 5
-			Write-Host -nonewline $($Row.P); Start-Sleep -milliseconds 5
-			Write-Host -nonewline $($Row.Q); Start-Sleep -milliseconds 5
-			Write-Host -nonewline $($Row.R); Start-Sleep -milliseconds 5
-			Write-Host -nonewline $($Row.S); Start-Sleep -milliseconds 5
-			Write-Host -nonewline $($Row.T); Start-Sleep -milliseconds 5
-			Write-Host -nonewline $($Row.U); Start-Sleep -milliseconds 5
-			Write-Host -nonewline $($Row.V); Start-Sleep -milliseconds 5
-			Write-Host -nonewline $($Row.W); Start-Sleep -milliseconds 5
-			Write-Host -nonewline $($Row.X); Start-Sleep -milliseconds 5
-			Write-Host -nonewline $($Row.Y); Start-Sleep -milliseconds 5
-			Write-Host -nonewline $($Row.Z); Start-Sleep -milliseconds 5
+			write-host -nonewline $($Row.A); start-sleep -milliseconds 5
+			write-host -nonewline $($Row.B); start-sleep -milliseconds 5
+			write-host -nonewline $($Row.C); start-sleep -milliseconds 5
+			write-host -nonewline $($Row.D); start-sleep -milliseconds 5
+			write-host -nonewline $($Row.E); start-sleep -milliseconds 5
+			write-host -nonewline $($Row.F); start-sleep -milliseconds 5
+			write-host -nonewline $($Row.G); start-sleep -milliseconds 5
+			write-host -nonewline $($Row.H); start-sleep -milliseconds 5
+			write-host -nonewline $($Row.I); start-sleep -milliseconds 5
+			write-host -nonewline $($Row.J); start-sleep -milliseconds 5
+			write-host -nonewline $($Row.K); start-sleep -milliseconds 5
+			write-host -nonewline $($Row.L); start-sleep -milliseconds 5
+			write-host -nonewline $($Row.M); start-sleep -milliseconds 5
+			write-host -nonewline $($Row.N); start-sleep -milliseconds 5
+			write-host -nonewline $($Row.O); start-sleep -milliseconds 5
+			write-host -nonewline $($Row.P); start-sleep -milliseconds 5
+			write-host -nonewline $($Row.Q); start-sleep -milliseconds 5
+			write-host -nonewline $($Row.R); start-sleep -milliseconds 5
+			write-host -nonewline $($Row.S); start-sleep -milliseconds 5
+			write-host -nonewline $($Row.T); start-sleep -milliseconds 5
+			write-host -nonewline $($Row.U); start-sleep -milliseconds 5
+			write-host -nonewline $($Row.V); start-sleep -milliseconds 5
+			write-host -nonewline $($Row.W); start-sleep -milliseconds 5
+			write-host -nonewline $($Row.X); start-sleep -milliseconds 5
+			write-host -nonewline $($Row.Y); start-sleep -milliseconds 5
+			write-host -nonewline $($Row.Z); start-sleep -milliseconds 5
 		}
-		Write-Host ""
-	    	Start-Sleep -milliseconds 200
+		write-host ""
+	    	start-sleep -milliseconds 200
 	}
 	exit 0
 } catch {

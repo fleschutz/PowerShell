@@ -1,10 +1,10 @@
 #!/snap/bin/powershell
-
-# Syntax:       ./check-ipv4-address.ps1 [<address>]
-# Description:	checks the given IPv4 address for validity
-# Author:	Markus Fleschutz
-# Source:	github.com/fleschutz/PowerShell
-# License:	CC0
+<#
+.SYNTAX         ./check-ipv4-address.ps1 [<address>]
+.DESCRIPTION	checks the given IPv4 address for validity
+.LINK		https://github.com/fleschutz/PowerShell
+.NOTES		Author:	Markus Fleschutz / License: CC0
+#>
 
 param([string]$Addr)
 

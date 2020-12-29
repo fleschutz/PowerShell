@@ -1,16 +1,16 @@
 #!/snap/bin/powershell
+<#
+.SYNTAX         ./turn-volume-down.ps1 [<percent>]
+.DESCRIPTION	turns the audio volume down (-10% by default)
+.LINK		https://github.com/fleschutz/PowerShell
+.NOTES		Author:	Markus Fleschutz / License: CC0
+#>
 
-# Syntax:       ./turn-volume-down.ps1 [<percent>]
-# Description:	turns the audio volume down (-10% by default)
-# Author:	Markus Fleschutz
-# Source:	github.com/fleschutz/PowerShell
-# License:	CC0
-
-Param([Int]$Percent = 10)
+param([int]$Percent = 10)
 
 try {
 	$obj = New-Object -com wscript.shell
-	for ($i = 0; $i -lt $Percent; $i += 2) {
+	for ([int]$i = 0; $i -lt $Percent; $i += 2) {
 		$obj.SendKeys([char]174) # each tick is -2%
 	}
 	write-output "OK"

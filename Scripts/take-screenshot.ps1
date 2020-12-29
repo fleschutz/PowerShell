@@ -1,38 +1,12 @@
 #!/snap/bin/powershell
-
-Function Get-TimedScreenshot {
 <#
-.SYNOPSIS
- 
-    Get-TimedScreenshot
-    
-.DESCRIPTION
-
-    A function that takes screenshots and saves them to a folder.
-
-.PARAMETER $Path
-
-    Specifies the folder path.
-    
-.PARAMETER $Interval
-    
-    Specifies the interval in seconds between taking screenshots.
-
-.PARAMETER $EndTime
-
-    Specifies when the script should stop running in the format HH-MM 
-
-.EXAMPLE 
-
-    PS C:\> Get-TimedScreenshot -Path c:\temp\ -Interval 30 -EndTime 14:00 
- 
-.LINK
-
-    http://obscuresecurity.blogspot.com/2013/01/Get-TimedScreenshot.html
-    https://github.com/obscuresec/random/blob/master/Get-TimedScreenshot
-
+.SYNTAX         ./take-screenshot.ps1
+.DESCRIPTION	takes a single screenshots
+.LINK		https://github.com/fleschutz/PowerShell
+.NOTES		Author:	Markus Fleschutz / License: CC0
 #>
 
+Function Get-TimedScreenshot {
     [CmdletBinding()] Param(
             [Parameter(Mandatory=$True)]             
             [ValidateScript({Test-Path -Path $_ })]

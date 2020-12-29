@@ -1,18 +1,16 @@
 #!/snap/bin/powershell
+<#
+.SYNTAX         ./list-random-pins.ps1 [<pin-length>] [<columns>] [<rows>]
+.DESCRIPTION	prints a list of random PIN's
+.LINK		https://github.com/fleschutz/PowerShell
+.NOTES		Author:	Markus Fleschutz / License: CC0
+#>
 
-# Syntax:	./list-random-pins.ps1
-# Description:	prints a list of random PIN's
-# Author:	Markus Fleschutz
-# Source:	github.com/fleschutz/PowerShell
-# License:	CC0
- 
-$PIN_Length = 5
-$Columns = 12
-$Lines = 24
+param([int]$PinLength = 5, [int]$Columns = 12, [int]$Rows = 24)
 
 function GeneratePIN() {
 	$Generator = New-Object System.Random
-	for ($i = 0; $i -lt $PIN_Length; $i++) {
+	for ($i = 0; $i -lt $PinLength; $i++) {
 		$PIN += [char]$Generator.next(48,57)
 	}
 	return $PIN
@@ -20,7 +18,7 @@ function GeneratePIN() {
 
 try {
 	write-output ""
-	for ($j = 0; $j -lt $Lines; $j++) {
+	for ($j = 0; $j -lt $Rows; $j++) {
 		$Line = ""
 		for ($k = 0; $k -lt $Columns; $k++) {
 			$Line += GeneratePIN

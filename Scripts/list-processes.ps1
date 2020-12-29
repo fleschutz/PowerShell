@@ -1,10 +1,10 @@
 #!/snap/bin/powershell
-
-# Syntax:	./list-processes.ps1 
-# Description:	lists the local computer processes
-# Author: 	Markus Fleschutz
-# Source:	github.com/fleschutz/PowerShell
-# License:	CC0
+<#
+.SYNTAX         ./list-processes.ps1 
+.DESCRIPTION	lists the local computer processes
+.LINK		https://github.com/fleschutz/PowerShell
+.NOTES		Author:	Markus Fleschutz / License: CC0
+#>
 
 try {
 	Get-Process | Format-Table -Property Id, @{Label="CPU(s)";Expression={$_.CPU.ToString("N")+"%"};Alignment="Right"}, ProcessName -AutoSize

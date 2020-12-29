@@ -1,10 +1,10 @@
 #!/snap/bin/powershell
-
-# Syntax:	./locate-zip-code.ps1 [<country-code>] [<zip-code>]
-# Description:	prints the geographic location of the given zip-code
-# Author:	Markus Fleschutz
-# Source:	github.com/fleschutz/PowerShell
-# License:	CC0
+<#
+.SYNTAX         ./locate-zip-code.ps1 [<country-code>] [<zip-code>]
+.DESCRIPTION	prints the geographic location of the given zip-code
+.LINK		https://github.com/fleschutz/PowerShell
+.NOTES		Author:	Markus Fleschutz / License: CC0
+#>
 
 param([string]$CountryCode, [string]$ZipCode)
 

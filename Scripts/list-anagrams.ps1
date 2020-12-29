@@ -1,15 +1,14 @@
 #!/snap/bin/powershell
+<#
+.SYNTAX         ./list-anagrams.ps1 [<word>] [<columns>]
+.DESCRIPTION	lists all anagrams of the given word
+.LINK		https://github.com/fleschutz/PowerShell
+.NOTES		Author:	Markus Fleschutz / License: CC0
+#>
 
-# Syntax:       ./list-anagrams.ps1 [<word>]
-# Description:	lists all anagrams of the given word
-# Author:	Markus Fleschutz
-# Source:	github.com/fleschutz/PowerShell
-# License:	CC0
+param([string]$Word, [int]$Columns = 8)
 
-param([string]$Word)
-$Columns = 8
-
-Function GetPermutations {
+function GetPermutations {
     [cmdletbinding()]
     Param(
         [parameter(ValueFromPipeline=$True)]

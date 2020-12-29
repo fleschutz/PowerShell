@@ -1,10 +1,10 @@
 #!/snap/bin/powershell
-
-# Syntax:       ./close-program.ps1 [<program-name>]
-# Description:	closes the given program gracefully
-# Author:	Markus Fleschutz
-# Source:	github.com/fleschutz/PowerShell
-# License:	CC0
+<#
+.SYNTAX         ./close-program.ps1 [<program-name>]
+.DESCRIPTION	closes the given program gracefully
+.LINK		https://github.com/fleschutz/PowerShell
+.NOTES		Author:	Markus Fleschutz / License: CC0
+#>
 
 param([string]$ProgramName)
 

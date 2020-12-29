@@ -1,14 +1,14 @@
 #!/snap/bin/powershell
+<#
+.SYNTAX         ./write-rot13.ps1 [<text>]
+.DESCRIPTION	encodes or decodes the given text with ROT13
+.LINK		https://github.com/fleschutz/PowerShell
+.NOTES		Author:	Markus Fleschutz / License: CC0
+#>
 
-# Syntax:       ./write-rot13.ps1 [<text>]
-# Description:	encodes or decodes the given text with ROT13
-# Author:	Markus Fleschutz
-# Source:	github.com/fleschutz/PowerShell
-# License:	CC0
+param([string]$Text)
 
-param([String]$Text)
-
-function ROT13 { param([String]$Text)
+function ROT13 { param([string]$Text)
 	$Text.ToCharArray() | ForEach-Object {
 		if ((([int] $_ -ge 97) -and ([int] $_ -le 109)) -or (([int] $_ -ge 65) -and ([int] $_ -le 77))) {
 			$Result += [char] ([int] $_ + 13);
@@ -23,7 +23,7 @@ function ROT13 { param([String]$Text)
 
 try {
 	if ($Text -eq "" ) {
-		[String]$Text = read-host "Enter text to write"
+		[string]$Text = read-host "Enter text to write"
 	}
 	$Result = ROT13 $Text
 	write-output $Result

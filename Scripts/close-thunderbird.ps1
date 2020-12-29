@@ -1,9 +1,9 @@
 #!/snap/bin/powershell
-
-# Syntax:       ./close-thunderbird.ps1 
-# Description:	closes Mozilla Thunderbird gracefully
-# Author:	Markus Fleschutz
-# Source:	github.com/fleschutz/PowerShell
-# License:	CC0
+<#
+.SYNTAX         ./close-thunderbird.ps1 
+.DESCRIPTION	closes Mozilla Thunderbird gracefully
+.LINK		https://github.com/fleschutz/PowerShell
+.NOTES		Author:	Markus Fleschutz / License: CC0
+#>
 
 ./close-program "thunderbird" 

@@ -1,11 +1,11 @@
 #!/snap/bin/powershell
+<#
+.SYNTAX         ./test.ps1
+.DESCRIPTION	simple PowerShell test script
+.LINK		https://github.com/fleschutz/PowerShell
+.NOTES		Author:	Markus Fleschutz / License: CC0
+#>
 
-# Syntax:       ./test.ps1
-# Description:	simple PowerShell test script
-# Author:	Markus Fleschutz
-# Source:	github.com/fleschutz/PowerShell
-# License:	CC0
- 
 try {
 	write-output "✔️ PowerShell works. Details are:"
 	echo $PSVersionTable

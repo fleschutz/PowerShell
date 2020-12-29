@@ -1,15 +1,14 @@
 #!/snap/bin/powershell
+<#
+.SYNTAX         ./weather-alert.ps1
+.DESCRIPTION	checks the current weather for critical values
+.LINK		https://github.com/fleschutz/PowerShell
+.NOTES		Author:	Markus Fleschutz / License: CC0
+#>
 
-# Syntax:	./weather-alert.ps1
-# Description:	checks the current weather for critical values
-# Author:	Markus Fleschutz
-# Source:	github.com/fleschutz/PowerShell
-# License:	CC0
- 
 $GeoLocation="" # empty means determine automatically
 
-function Check {
-	param ([int]$Value, [int]$NormalMin,  [int]$NormalMax, [string]$Unit)  
+function Check { param([int]$Value, [int]$NormalMin,  [int]$NormalMax, [string]$Unit)  
 	if ($Value -lt $NormalMin) {
 		return "$Value $Unit ! "
 	}

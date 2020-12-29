@@ -1,10 +1,10 @@
 #!/snap/bin/powershell
-
-# Syntax:	./alert.ps1 [<message>]
-# Description:	handle and escalate the given alert message
-# Author:	Markus Fleschutz
-# Source:	github.com/fleschutz/PowerShell
-# License:	CC0
+<#
+.SYNTAX         ./alert.ps1 [<message>]
+.DESCRIPTION	handle and escalate the given alert message
+.LINK		https://github.com/fleschutz/PowerShell
+.NOTES		Author:	Markus Fleschutz / License: CC0
+#>
 
 param([string]$Message)
 if ($Message -eq "" ) {

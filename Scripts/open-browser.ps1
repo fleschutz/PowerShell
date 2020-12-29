@@ -1,12 +1,13 @@
 #!/snap/bin/powershell
-
-# Syntax:       ./open-browser.ps1 [<URL>]
-# Description:	starts the default Web browser, optional with given URL
-# Author:	Markus Fleschutz
-# Source:	github.com/fleschutz/PowerShell
-# License:	CC0
+<#
+.SYNTAX         ./open-browser.ps1 [<URL>]
+.DESCRIPTION	starts the default Web browser, optional with given URL
+.LINK		https://github.com/fleschutz/PowerShell
+.NOTES		Author:	Markus Fleschutz / License: CC0
+#>
 
 param([string]$URL)
+
 try {
 	if ($URL -eq "" ) {
 		$URL = "http://www.fleschutz.de"

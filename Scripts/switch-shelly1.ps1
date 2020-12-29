@@ -1,21 +1,21 @@
 #!/snap/bin/powershell
+<#
+.SYNTAX         ./switch-shelly1.ps1 [<IP-address>] [<turn-mode>] [<timer>]
+.DESCRIPTION	switches a Shelly1 device in the local network
+.LINK		https://github.com/fleschutz/PowerShell
+.NOTES		Author:	Markus Fleschutz / License: CC0
+#>
 
-# Syntax:       ./switch-shelly1.ps1 [<IP addr>] [<turn-mode>] [<timer>]
-# Description:	switches a Shelly1 device in the local network
-# Author:	Markus Fleschutz
-# Source:	github.com/fleschutz/PowerShell
-# License:	CC0
-
-param([String]$IPaddr, [String]$TurnMode, [Int]$Timer)
+param([string]$IPaddr, [string]$TurnMode, [int]$Timer = -999)
 
 try {
-	if ($IPaddr -eq "" ) {
+	if ($IPaddr -eq "") {
 		[String]$IPaddr = read-host "Enter IP address of the Shelly1 device"
 	}
-	if ($TurnMode -eq "" ) {
+	if ($TurnMode -eq "") {
 		[String]$TurnMode = read-host "Enter turn mode (on/off/toggle)"
 	}
-	if ($Timer -eq 0 ) {
+	if ($Timer -eq -999) {
 		[Int]$Timer = read-host "Enter timer (0=endless)"
 	}
 

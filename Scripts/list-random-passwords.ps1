@@ -1,11 +1,11 @@
 #!/snap/bin/powershell
+<#
+.SYNTAX         ./list-random-passwords.ps1
+.DESCRIPTION	prints a list of random passwords
+.LINK		https://github.com/fleschutz/PowerShell
+.NOTES		Author:	Markus Fleschutz / License: CC0
+#>
 
-# Syntax:	./list-random-passwords.ps1
-# Description:	prints a list of random passwords
-# Author:	Markus Fleschutz
-# Source:	github.com/fleschutz/PowerShell
-# License:	CC0
- 
 $PasswordLength = 15
 $Columns = 6
 $Lines = 24

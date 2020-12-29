@@ -1,16 +1,16 @@
 #!/snap/bin/powershell
+<#
+.SYNTAX         ./translate-text.ps1 [<text>] [<source-lang>]
+.DESCRIPTION	translates the given text into other languages
+.LINK		https://github.com/fleschutz/PowerShell
+.NOTES		Author:	Markus Fleschutz / License: CC0
+#>
 
-# Syntax:	./translate-text.ps1 [<text>]
-# Description:	translates the given text into other languages
-# Author:	Markus Fleschutz
-# Source:	github.com/fleschutz/PowerShell
-# License:	CC0
+param([string]$SourceText, [string]$SourceLang = "en")
 
-param([string]$SourceText)
 if ($SourceText -eq "" ) {
-	$SourceText = "Hello World!"
+	$SourceText = read-host "Enter text to translate"
 }
-$SourceLanguage = "en"
 $TargetLanguages = "af","da","de","el","es","hr","it","ja","ko","pl","pt","nl","ru","tr","uk","vi"
 
 function TranslateWithGoogle {
@@ -36,7 +36,7 @@ function TranslateWithGoogle {
 
 try {
 	foreach($TargetLanguage in $TargetLanguages) {
-		$Result = TranslateWithGoogle $SourceText $SourceLanguage $TargetLanguage
+		$Result = TranslateWithGoogle $SourceText $SourceLang $TargetLanguage
 		write-output $TargetLanguage" : "$Result
 	}
 	exit 0

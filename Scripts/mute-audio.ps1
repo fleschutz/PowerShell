@@ -1,10 +1,10 @@
 #!/snap/bin/powershell
-
-# Syntax:       ./mute-audio.ps1
-# Description:	mutes the audio
-# Author:	Markus Fleschutz
-# Source:	github.com/fleschutz/PowerShell
-# License:	CC0
+<#
+.SYNTAX         ./mute-audio.ps1
+.DESCRIPTION	mutes the audio
+.LINK		https://github.com/fleschutz/PowerShell
+.NOTES		Author:	Markus Fleschutz / License: CC0
+#>
 
 try {
 	$obj = new-object -com wscript.shell
