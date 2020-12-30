@@ -6,14 +6,15 @@
 .NOTES		Author:	Markus Fleschutz / License: CC0
 #>
 
-param([string]$Text = "http://www.fleschutz.de", $ImageSize = "500x500")
+param([string]$Text = "", $ImageSize = "")
 if ($Text -eq "") {
 	$Text = read-input "Enter text or URL"
 }
 if ($ImageSize -eq "") {
 	$ImageSize = read-input "Enter image size (e.g. 500x500)"
 }
-$ECC = "L" # can be L, M, Q, H
+
+$ECC = "M" # can be L, M, Q, H
 $QuietZone = 1
 $ForegroundColor = "000000"
 $BackgroundColor = "ffffff"
