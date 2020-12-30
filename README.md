@@ -23,6 +23,7 @@ The following PowerShell scripts can be found in the [Scripts/](Scripts/) subfol
 * [download.ps1](Scripts/download.ps1) - downloads the file/directory from the given URL
 * [empty-dir.ps1](Scripts/empty-dir.ps1) - empties the given directory
 * [enable-crash-dumps.ps1](Scripts/enable-crash-dumps.ps1) - enables the writing of crash dumps
+* [generate-qrcode.ps1](Scripts/generate-qrcode.ps1) - generates a QR code
 * [inspect-exe.ps1](Scripts/inspect-exe.ps1) - prints basic information of the given executable file
 * [list-anagrams.ps1](Scripts/list-anagrams.ps1) - lists all anagrams of the given word
 * [list-automatic-variables.ps1](Scripts/list-automatic-variables.ps1) - lists PowerShell automatic variables 
