@@ -10,7 +10,7 @@ try {
 	write-output "PowerShell Automatic Variables"
 	write-output "=============================="
 	write-output "`$ConsoleFileName= $ConsoleFileName"
-	write-output "`$Error         = $Error"
+	write-output "`$Error[0]      = $($Error[0])"
 	write-output "`$Event         = $Event"
 	write-output "`$EventArgs     = $EventArgs"
 	write-output "`$EventSubscriber= $EventSubscriber"
