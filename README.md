@@ -26,6 +26,7 @@ The following PowerShell scripts can be found in the [Scripts/](Scripts/) subfol
 * [inspect-exe.ps1](Scripts/inspect-exe.ps1) - prints basic information of the given executable file
 * [list-anagrams.ps1](Scripts/list-anagrams.ps1) - lists all anagrams of the given word
 * [list-empty-dirs.ps1](Scripts/list-empty-dirs.ps1) - lists empty subfolders in a directory tree
+* [list-installed-software.ps1](Scripts/list-installed-software.ps1) - lists the installed software
 * [list-files.ps1](Scripts/list-files.ps1) - lists all files in the given folder and also in every subfolder
 * [list-logbook.ps1](Scripts/list-logbook.ps1) - lists the content of the logbook 
 * [list-unused-files.ps1](Scripts/list-unused-files.ps1) - lists unused files in a directory tree
