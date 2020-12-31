@@ -8,7 +8,7 @@
 
 try {
 	$Voice = new-object -ComObject SAPI.SPVoice
-	Result = $Voice.Speak("This is the default voice")
+	$Result = $Voice.Speak("This is the default voice")
 
 	$Voice.rate = 10
 	$Result = $Voice.Speak("Let's speak fast")
@@ -27,7 +27,7 @@ try {
 		$Description = $OtherVoice.GetDescription()
 		write-output "This is: $Description"
 		$Voice.Voice = $OtherVoice
-		Result = $Voice.Speak("1 2 3 - this is $Description")
+		$Result = $Voice.Speak("1 2 3 - this is $Description")
 	}
 	exit 0
 } catch {
