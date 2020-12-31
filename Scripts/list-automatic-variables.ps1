@@ -7,6 +7,7 @@
 #>
 
 try {
+	write-output ""
 	write-output "PowerShell Automatic Variables"
 	write-output "=============================="
 	write-output "`$args            = $args"
