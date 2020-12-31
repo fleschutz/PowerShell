@@ -14,7 +14,7 @@ try {
 	}
 
 	$Voice = new-object -ComObject SAPI.SPVoice
-	$Voice.Speak($Text);
+	$Result = $Voice.Speak($Text)
 	exit 0
 } catch {
 	write-error "ERROR in line $($_.InvocationInfo.ScriptLineNumber): $($Error[0])"
