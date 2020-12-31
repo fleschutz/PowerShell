@@ -10,12 +10,12 @@ param([string]$File)
 
 try {
 	if ($File -eq "") {
-		$File = read-host "Enter path to file"
+		$File = read-host "Enter path to text file"
 	}
 	$Text = Get-Content $File
 
-	$voice = New-Object ComObject SAPI.SPVoice
-	$voice.Speak($Text);
+	$Voice = new-object -ComObject SAPI.SPVoice
+	$Result = $Voice.Speak($Text)
 	exit 0
 } catch {
 	write-error "ERROR in line $($_.InvocationInfo.ScriptLineNumber): $($Error[0])"
