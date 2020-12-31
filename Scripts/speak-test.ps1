@@ -8,14 +8,26 @@
 
 try {
 	$Voice = new-object -ComObject SAPI.SPVoice
-	$Voice.Speak("This is the default voice")
-	$Voice.Speak("Let's also try the other voices")
+	Result = $Voice.Speak("This is the default voice")
+
+	$Voice.rate = 10
+	$Result = $Voice.Speak("Let's speak fast")
+	$Voice.rate = -10
+	$Result = $Voice.Speak("Let's speak slow")
+
+	$PrevVolume = $Voice.Volume
+	$Voice.volume = 100
+	$Result = $Voice.Speak("Let's speak with maximum volume")
+	$Voice.volume = 50
+	$Result = $Voice.Speak("Let's speak with half volume")
+	$Voice.volume = $PrevVolume
 
 	$Voices = $Voice.GetVoices()
 	foreach ($OtherVoice in $Voices) {
-		$OtherVoice.GetDescription()
+		$Description = $OtherVoice.GetDescription()
+		write-output "This is: $Description"
 		$Voice.Voice = $OtherVoice
-		$Voice.Speak("1 2 3 - this is a test")
+		Result = $Voice.Speak("1 2 3 - this is $Description")
 	}
 	exit 0
 } catch {
