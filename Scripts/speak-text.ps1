@@ -13,8 +13,8 @@ try {
 		$Text = read-host "Enter text to speak"
 	}
 
-	$voice = New-Object ComObject SAPI.SPVoice
-	$voice.Speak($Text);
+	$Voice = new-object -ComObject SAPI.SPVoice
+	$Voice.Speak($Text);
 	exit 0
 } catch {
 	write-error "ERROR in line $($_.InvocationInfo.ScriptLineNumber): $($Error[0])"
