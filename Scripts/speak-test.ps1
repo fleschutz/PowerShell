@@ -10,10 +10,11 @@ try {
 	$Voice = new-object -ComObject SAPI.SPVoice
 	$Result = $Voice.Speak("This is the default voice")
 
-	$Voice.rate = 10
-	$Result = $Voice.Speak("Let's speak fast")
+	$Voice.rate = 8
+	$Result = $Voice.Speak("Let's speak very, very fast")
 	$Voice.rate = -10
-	$Result = $Voice.Speak("Let's speak slow")
+	$Result = $Voice.Speak("Let's speak very, very slow")
+	$Voice.rate = 0
 
 	$PrevVolume = $Voice.Volume
 	$Voice.volume = 100
