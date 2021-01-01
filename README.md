@@ -36,6 +36,7 @@ The following PowerShell scripts can be found in the [Scripts/](Scripts/) subfol
 * [list-earthquakes.ps1](Scripts/list-earthquakes.ps1) - lists earthquakes with magnitude >= 6.0 for the last 30 days
 * [list-modules.ps1](Scripts/list-modules.ps1) - lists the PowerShell modules
 * [list-news.ps1](Scripts/list-news.ps1) - lists the latest news
+* [list-os-releases.ps1](Scripts/list-os-releases.ps1) - lists OS releases and download URL
 * [list-processes.ps1](Scripts/list-processes.ps1) - lists the local computer processes
 * [list-random-passwords.ps1](Scripts/list-random-passwords.ps1) - prints a list of random passwords
 * [list-random-pins.ps1](Scripts/list-random-pins.ps1) - prints a list of random PIN's
