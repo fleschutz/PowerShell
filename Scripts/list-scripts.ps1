@@ -6,18 +6,22 @@
 .NOTES		Author:	Markus Fleschutz / License: CC0
 #>
 
-$PathToRepo = "$PSScriptRoot/.."
+function ListScripts { param([string]$Path)
+	write-progress "Reading $Path..."
+	$Table = import-csv "$Path"
+	foreach($Row in $Table) {
+		New-Object PSObject -Property @{
+			'Script' = "$($Row.Filename)"
+			'Description' = "$($Row.Description)"
+		}
+	}
+	write-output ""
+	write-output "($($Table.Count) PowerShell scripts total)"
+}
 
 try {
-	write-progress "Reading Data/scripts.csv..."
-	$Table = import-csv "$PathToRepo/Data/scripts.csv"
-
-	write-output ""
-	write-output "Collection of $($Table.Count) PowerShell Scripts"
-	write-output "==================================="
-	foreach($Row in $Table) {
-		write-output "* $($Row.Filename) - $($Row.Description)"
-	}
+	$PathToRepo = "$PSScriptRoot/.."
+	ListScripts "$PathToRepo/Data/scripts.csv" | format-table -property Script, Description
 	exit 0
 } catch {
 	write-error "ERROR in line $($_.InvocationInfo.ScriptLineNumber): $($Error[0])"
