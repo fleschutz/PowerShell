@@ -30,6 +30,7 @@ The following PowerShell scripts can be found in the [Scripts/](Scripts/) subfol
 * [list-empty-dirs.ps1](Scripts/list-empty-dirs.ps1) - lists empty subfolders in a directory tree
 * [list-installed-software.ps1](Scripts/list-installed-software.ps1) - lists the installed software
 * [list-files.ps1](Scripts/list-files.ps1) - lists all files in the given folder and also in every subfolder
+* [list-formatted.ps1](Scripts/list-formatted.ps1) - lists the current working directory formatted in columns
 * [list-logbook.ps1](Scripts/list-logbook.ps1) - lists the content of the logbook 
 * [list-unused-files.ps1](Scripts/list-unused-files.ps1) - lists unused files in a directory tree
 * [list-cmdlets.ps1](Scripts/list-cmdlets.ps1) - lists the PowerShell cmdlets

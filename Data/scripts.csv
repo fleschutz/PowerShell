@@ -21,6 +21,7 @@ list-anagrams.ps1, lists all anagrams of the given word
 list-automatic-variables.ps1, lists PowerShell automatic variables 
 list-empty-dirs.ps1, lists empty subfolders in a directory tree
 list-files.ps1, lists all files in the given folder and also in every subfolder
+list-formatted.ps1, lists the current working directory formatted in columns
 list-installed-software.ps1, lists the installed software
 list-logbook.ps1, lists the content of the logbook
 list-unused-files.ps1, lists unused files in a directory tree
