@@ -19,7 +19,7 @@ $QuietZone = 1
 $ForegroundColor = "000000"
 $BackgroundColor = "ffffff"
 $FileFormat = "jpg"
-$PathToRepo=(get-item $MyInvocation.MyCommand.Path).directory.parent
+$PathToRepo = "$PSScriptRoot/.."
 $NewFile = "$PathToRepo/Data/qrcode.jpg"
 
 try {

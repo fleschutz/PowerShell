@@ -7,12 +7,13 @@
 #>
 
 Set-StrictMode -Version Latest
+
+$PathToRepo = "$PSScriptRoot/.."
  
 try {
 	$StartTime = Get-Date
 
 	write-progress "Reading Data/domain-names.csv..."
-	$PathToRepo=(get-item $MyInvocation.MyCommand.Path).directory.parent
 	$Table = import-csv "$PathToRepo/Data/domain-names.csv"
 
 	foreach($Row in $Table) {

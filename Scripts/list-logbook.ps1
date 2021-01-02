@@ -6,9 +6,10 @@
 .NOTES		Author:	Markus Fleschutz / License: CC0
 #>
 
+$PathToRepo = "$PSScriptRoot/.."
+
 try {
 	write-progress "Reading Data/logbook.csv..."
-	$PathToRepo=(get-item $MyInvocation.MyCommand.Path).directory.parent
 	$Table = import-csv "$PathToRepo/Data/logbook.csv"
 
 	write-output ""

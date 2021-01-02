@@ -6,7 +6,7 @@
 .NOTES		Author:	Markus Fleschutz / License: CC0
 #>
 
-param([string]$Path)
+param([string]$Path = "")
 
 try {
 	if ($Path -eq "" ) {

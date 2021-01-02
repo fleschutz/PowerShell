@@ -6,7 +6,7 @@
 .NOTES		Author:	Markus Fleschutz / License: CC0
 #>
 
-param([string]$IPaddr, [string]$TurnMode, [int]$Timer = -999)
+param([string]$IPaddr = "", [string]$TurnMode = "", [int]$Timer = -999)
 
 try {
 	if ($IPaddr -eq "") {

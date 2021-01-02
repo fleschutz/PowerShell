@@ -6,7 +6,7 @@
 .NOTES		Author:	Markus Fleschutz / License: CC0
 #>
 
-param([string]$Text)
+param([string]$Text = "")
 
 Set-StrictMode -Version Latest
 

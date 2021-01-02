@@ -6,7 +6,7 @@
 .NOTES		Author:	Markus Fleschutz / License: CC0
 #>
 
-param([string]$SourceText, [string]$SourceLang = "en")
+param([string]$SourceText = "", [string]$SourceLang = "en")
 
 if ($SourceText -eq "" ) {
 	$SourceText = read-host "Enter text to translate"

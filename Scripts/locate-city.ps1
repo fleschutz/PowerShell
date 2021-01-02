@@ -10,10 +10,10 @@ param([string]$City)
 if ($City -eq "" ) {
 	$City = read-host "Enter the city"
 }
+$PathToRepo = "$PSScriptRoot/.."
  
 try {
 	write-progress "Reading worldcities.csv..."
-	$PathToRepo=(get-item $MyInvocation.MyCommand.Path).directory.parent
 	$Table = import-csv "$PathToRepo/Data/worldcities.csv"
 
 	$FoundOne = 0

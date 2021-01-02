@@ -6,7 +6,7 @@
 .NOTES		Author:	Markus Fleschutz / License: CC0
 #>
 
-param([string]$File)
+param([string]$File = "")
 
 try {
 	if ($File -eq "") {

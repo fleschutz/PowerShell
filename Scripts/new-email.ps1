@@ -6,7 +6,7 @@
 .NOTES		Author:	Markus Fleschutz / License: CC0
 #>
 
-param([string]$EmailAddress)
+param([string]$EmailAddress = "")
 
 try {
 	if ($EmailAddress -eq "" ) {

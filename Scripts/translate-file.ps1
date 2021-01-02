@@ -6,7 +6,9 @@
 .NOTES		Author:	Markus Fleschutz / License: CC0
 #>
 
-param([string]$SourceFile, [string]$SourceLanguage, [string]$TargetLanguage)
+param([string]$SourceFile = "", [string]$SourceLanguage = "", [string]$TargetLanguage = "")
+
+$PathToRepo = "$PSScriptRoot/.."
 
 try {
 	if ($SourceFile -eq "" ) {
@@ -18,8 +20,6 @@ try {
 	if ($TargetLanguage -eq "" ) {
 		$TargetLanguage = read-host "Enter language to translate to"
 	}
-
-	$PathToRepo=(get-item $MyInvocation.MyCommand.Path).directory.parent
 
 	Start-Process -FilePath "$PathToRepo/Data/trans" -ArgumentList "-i $SourceFile -s $SourceLanguage -t $TargetLanguage -e google -brief" -NoNewWindow -Wait
 	exit 0

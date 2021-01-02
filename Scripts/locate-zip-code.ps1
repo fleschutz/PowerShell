@@ -6,7 +6,8 @@
 .NOTES		Author:	Markus Fleschutz / License: CC0
 #>
 
-param([string]$CountryCode, [string]$ZipCode)
+param([string]$CountryCode = "", [string]$ZipCode = "")
+$PathToRepo = "$PSScriptRoot/.."
 
 try {
 	if ($CountryCode -eq "" ) {
@@ -17,7 +18,6 @@ try {
 	}
 
 	write-progress "Reading zip-codes.csv..."
-	$PathToRepo=(get-item $MyInvocation.MyCommand.Path).directory.parent
 	$Table = import-csv "$PathToRepo/Data/zip-codes.csv"
 
 	$FoundOne = 0

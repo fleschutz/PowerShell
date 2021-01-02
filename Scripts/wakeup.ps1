@@ -6,7 +6,7 @@
 .NOTES		Author:	Markus Fleschutz / License: CC0
 #>
 
-param([string]$Hostname)
+param([string]$Hostname = "")
 if ($Hostname -eq "" ) {
 	$Hostname = read-host "Enter hostname"
 }

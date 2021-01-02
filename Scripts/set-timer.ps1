@@ -6,7 +6,8 @@
 .NOTES		Author:	Markus Fleschutz / License: CC0
 #>
 
-param([int]$Seconds)
+param([int]$Seconds = 0)
+
 try {
 	if ($Seconds -eq 0 ) {
 		[int]$Seconds = read-host "Enter number of seconds"

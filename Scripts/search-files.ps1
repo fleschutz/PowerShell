@@ -6,7 +6,7 @@
 .NOTES		Author:	Markus Fleschutz / License: CC0
 #>
 
-param([string]$Pattern, [string]$Path)
+param([string]$Pattern = "", [string]$Path = "")
 
 Set-StrictMode -Version Latest
 
