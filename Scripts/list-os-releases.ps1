@@ -8,7 +8,7 @@
 
 try {
 	write-progress "Reading OS_IPFS_hashes.csv"
-	$PathToRepo = (get-item $MyInvocation.MyCommand.Path).directory.parent
+	$PathToRepo = "$PSScriptRoot/.."
 	$PathToCsvFile = "$PathToRepo/Data/os-release.csv"
 	invoke-webRequest -URI "https://fleschutz.droppages.com/downloads/OS_IPFS_hashes.csv" -outFile "$PathToCsvFile"
 	$Table = import-csv "$PathToCsvFile"
