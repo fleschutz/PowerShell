@@ -8,7 +8,17 @@
 
 param([string]$Pattern = "", [string]$Path = "")
 
-Set-StrictMode -Version Latest
+function ListScripts { param([string]$Pattern, [string]$Path)
+	$List = Select-String -Path $Path -Pattern "$Pattern" 
+	foreach ($Item in $List) {
+		New-Object PSObject -Property @{
+			'Path' = "$($Item.Path)"
+			'Line' = "$($Item.LineNumber)"
+			'Text' = "$($Item.Line)"
+		}
+	}
+	write-output "(pattern found at $($List.Count) locations)"
+}
 
 try {
 	if ($Pattern -eq "" ) {
@@ -18,10 +28,7 @@ try {
 		$Path = read-host "Enter path to files"
 	}
 
-	$List = Select-String -Path $Path -Pattern "$Pattern" 
-	foreach ($Item in $List) {
-		write-output "$($Item.Path) @$($Item.LineNumber)`t$($Item.Line)"
-	}
+	ListScripts $Pattern $Path | format-table -property Path,Line,Text
 	exit 0
 } catch {
 	write-error "ERROR in line $($_.InvocationInfo.ScriptLineNumber): $($Error[0])"
