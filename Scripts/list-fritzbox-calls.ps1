@@ -6,23 +6,21 @@
 .NOTES		Author:	Markus Fleschutz / License: CC0
 #>
 
-param([string]$USERNAME = "", [string]$PASSWORD = "")
-if ($USERNAME -eq "") {
-	$USERNAME = read-host "Enter username for FRITZ!Box"
-}
-if ($PASSWORD -eq "") {
-	$PASSWORD = read-host "Enter password for FRITZ!Box"
-}
-$FB_FQDN = "fritz.box"
+#Requires -Version 3
 
-if ($PSVersionTable.PSVersion.Major -lt 3) {
-	write-host "ERROR: Minimum Powershell Version 3.0 is required!" -F Yellow
-	return
+param([string]$Username = "", [string]$Password = "")
+if ($Username -eq "") {
+	$Username = read-host "Enter username for FRITZ!Box"
 }
+if ($Password -eq "") {
+	$Password = read-host "Enter password for FRITZ!Box"
+}
+write-progress "Contacting FRITZ!Box ..."
+$FQDN = "fritz.box"
 
 [System.Net.ServicePointManager]::SecurityProtocol = [System.Net.SecurityProtocolType]'Tls,Tls11,Tls12'
 
-[xml]$serviceinfo = Invoke-RestMethod -Method GET -Uri "http://$($FB_FQDN):49000/tr64desc.xml"
+[xml]$serviceinfo = Invoke-RestMethod -Method GET -Uri "http://$($FQDN):49000/tr64desc.xml"
 [System.Xml.XmlNamespaceManager]$ns = new-Object System.Xml.XmlNamespaceManager $serviceinfo.NameTable
 $ns.AddNamespace("ns",$serviceinfo.DocumentElement.NamespaceURI)
 [System.Net.ServicePointManager]::ServerCertificateValidationCallback = { $true }
@@ -36,7 +34,7 @@ function Execute-SOAPRequest { param([Xml]$SOAPRequest, [string]$soapactionheade
         $wr.Accept      = 'text/xml'
         $wr.Method      = 'POST'
         $wr.PreAuthenticate = $true
-        $wr.Credentials = [System.Net.NetworkCredential]::new($USERNAME,$PASSWORD)
+        $wr.Credentials = [System.Net.NetworkCredential]::new($Username,$Password)
 
         $requestStream = $wr.GetRequestStream()
         $SOAPRequest.Save($requestStream)
@@ -79,19 +77,16 @@ function New-Request {
           $actiontag.AppendChild($el)| out-null
     }
     $request.GetElementsByTagName('s:Body')[0].AppendChild($actiontag) | out-null
-    $resp = Execute-SOAPRequest $request "$($service.serviceType)#$($action)" "$($Protocol)://$($FB_FQDN):$(@{$true=$script:secport;$false=49000}[($Protocol -eq 'https')])$($service.controlURL)"
+    $resp = Execute-SOAPRequest $request "$($service.serviceType)#$($action)" "$($Protocol)://$($FQDN):$(@{$true=$script:secport;$false=49000}[($Protocol -eq 'https')])$($service.controlURL)"
     return $resp
 }
 
 $script:secport = (New-Request -urn "urn:dslforum-org:service:DeviceInfo:1" -action 'GetSecurityPort' -proto 'http').Envelope.Body.GetSecurityPortResponse.NewSecurityPort
 
-function GetCallList(){
-    param(
-        [int]$maxentries = 999,
-        [int]$days = 999
+function GetCallList() { param([int]$MaxEntries = 999, [int]$MaxDays = 999
     )
     $resp = New-Request -urn 'urn:dslforum-org:service:X_AVM-DE_OnTel:1' -action 'GetCallList'
-    $list = [xml](new-object System.Net.WebClient).DownloadString("$($resp.Envelope.Body.GetCallListResponse.NewCallListURL)&max=$maxentries&days=$days")
+    $list = [xml](new-object System.Net.WebClient).DownloadString("$($resp.Envelope.Body.GetCallListResponse.NewCallListURL)&max=$MaxEntries&MaxDays=$days")
     return $list.root.call
 }
 
