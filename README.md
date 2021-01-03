@@ -92,6 +92,7 @@ The following PowerShell scripts can be found in the [Scripts/](Scripts/) subfol
 * [write-braille.ps1](Scripts/write-braille.ps1) - writes the given text in Braille
 * [write-green.ps1](Scripts/write-green.ps1) - writes the given text in a green foreground color
 * [write-logbook.ps1](Scripts/write-logbook.ps1) - writes the given text to the logbook
+* [write-marquee.ps1](Scripts/write-marquee.ps1) - writes the given text as marquee
 * [write-morse-code.ps1](Scripts/write-morse-code.ps1) - writes the given text in Morse code
 * [write-motd.ps1](Scripts/write-motd.ps1) - writes the message of the day (MOTD)
 * [write-red.ps1](Scripts/write-red.ps1) - writes the given text in a red foreground color
