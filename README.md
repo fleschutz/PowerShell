@@ -55,6 +55,7 @@ The following PowerShell scripts can be found in the [Scripts/](Scripts/) subfol
 * [poweroff.ps1](Scripts/poweroff.ps1) - halts the local computer (needs administrator rights)
 * [new-email.ps1](Scripts/new-email.ps1) - starts the default email client to write a new email
 * [reboot.ps1](Scripts/reboot.ps1) - reboots the local computer (needs administrator rights)
+* [reboot-fritzbox.ps1](Scripts/reboot-fritzbox.ps1) - reboots the FRITZ!box device
 * [search-files.ps1](Scripts/search-files.ps1) - searches the given pattern in the given files
 * [scan-ports.ps1](Scripts/scan-ports.ps1) - scans the network for open/closed ports
 * [send-email.ps1](Scripts/send-email.ps1) - sends an email message

@@ -47,6 +47,7 @@ play-beep.ps1, plays a beep sound
 poweroff.ps1, halts the local computer (needs administrator rights)
 new-email.ps1, starts the default email client to write a new email
 reboot.ps1, reboots the local computer (needs administrator rights)
+reboot-fritzbox.ps1, reboots the FRITZ!box device
 search-files.ps1, searches the given pattern in the given files
 scan-ports.ps1, scans the network for open/closed ports
 send-email.ps1, sends an email message
