@@ -1,7 +1,7 @@
 #!/snap/bin/powershell
 <#
-.SYNTAX         ./reboot-fritzbox.ps1 [<username>] [<password>]
-.DESCRIPTION	reboots the FRITZ!Box device
+.SYNTAX         ./list-fritzbox-calls.ps1 [<username>] [<password>]
+.DESCRIPTION	lists the phone calls of the FRITZ!Box device
 .LINK		https://github.com/fleschutz/PowerShell
 .NOTES		Author:	Markus Fleschutz / License: CC0
 #>
@@ -85,11 +85,16 @@ function New-Request {
 
 $script:secport = (New-Request -urn "urn:dslforum-org:service:DeviceInfo:1" -action 'GetSecurityPort' -proto 'http').Envelope.Body.GetSecurityPortResponse.NewSecurityPort
 
-function Reboot-FritzBox() {
-    $resp = New-Request -urn 'urn:dslforum-org:service:DeviceConfig:1' -action 'Reboot'
-    return $resp.Envelope.Body.InnerText
+function GetCallList(){
+    param(
+        [int]$maxentries = 999,
+        [int]$days = 999
+    )
+    $resp = New-Request -urn 'urn:dslforum-org:service:X_AVM-DE_OnTel:1' -action 'GetCallList'
+    $list = [xml](new-object System.Net.WebClient).DownloadString("$($resp.Envelope.Body.GetCallListResponse.NewCallListURL)&max=$maxentries&days=$days")
+    return $list.root.call
 }
 
-$Result = Reboot-FritzBox
+GetCallList | format-table -property Date,Duration,Caller,Called
 echo $Result
 exit 0
