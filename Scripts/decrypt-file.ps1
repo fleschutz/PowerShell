@@ -8,9 +8,8 @@
 
 param([string]$Path = "", [string]$Password = "")
 
-Set-StrictMode -Version Latest
 
-Function Unprotect-File
+function DecryptFile
 {
 <#
 .SYNOPSIS 
@@ -42,22 +41,6 @@ Removes the source (encrypted) file after decrypting.
 
 .OUTPUTS
 System.IO.FileInfo. Unprotect-File will return FileInfo with the SourceFile as an added NoteProperty
-
-.EXAMPLE
-Unprotect-File 'C:\secrets.txt.AES' $key
-This example decrypts C:\secrets.txt.AES using the key stored in the variable $key. The decrypted file would remove the default extension of '.AES' and the source (encrypted) file would not be removed.
-
-.EXAMPLE
-Unprotect-File 'C:\secrets.txt.Encrypted' -Algorithm DES -Key $key -Suffix '.Encrypted' -RemoveSource
-This example decrypts C:\secrets.txt.Encrypted using DES and the key stored in the variable $key. The decrypted file would remove the extension of '.Encrypted' and the source (encrypted) file would be removed.
-
-.EXAMPLE
-Get-ChildItem 'C:\Files' -Recurse | Unprotect-File -Algorithm AES -Key $key -RemoveSource
-This example decrypts all of the files under the C:\Files directory using the key stored in the variable $key. The decrypted files would remove the default extension of '.AES' and the source (encrypted) files would be removed.
-
-.NOTES
-Author: Tyler Siegrist
-Date: 9/22/2017
 #>
 [CmdletBinding(DefaultParameterSetName='SecureString')]
 [OutputType([System.IO.FileInfo[]])]
@@ -77,13 +60,12 @@ Param(
     [Parameter(Mandatory=$false, Position=5, ValueFromPipelineByPropertyName=$true)]
     [System.Security.Cryptography.PaddingMode]$PaddingMode = 'PKCS7',
     [Parameter(Mandatory=$false, Position=6)]
-    [String]$Suffix, #Assigning default value in code due to it not processing ".$Algorithm" properly when Algorithm is ValueFromPipelineByPropertyName
+    [String]$Suffix,
     [Parameter()]
     [Switch]$RemoveSource
 )
     Process
     {
-        #Configure cryptography
         try
         {
             if($PSCmdlet.ParameterSetName -eq 'PlainText')
@@ -91,7 +73,6 @@ Param(
                 $Key = $KeyAsPlainText | ConvertTo-SecureString -AsPlainText -Force
             }
 
-            #Decrypt cryptography Key from SecureString
             $BSTR = [System.Runtime.InteropServices.Marshal]::SecureStringToBSTR($Key)
             $EncryptionKey = [System.Convert]::FromBase64String([System.Runtime.InteropServices.Marshal]::PtrToStringAuto($BSTR))
 
@@ -111,12 +92,10 @@ Param(
             $Suffix = ".$Algorithm"
         }
 
-        #Used to store successfully decrypted file names.
         $Files = Get-Item -LiteralPath $FileName
 
         ForEach($File in $Files)
         {
-            #Verify file ends with supplied suffix
             If(-not $File.Name.EndsWith($Suffix))
             {
                 Write-Error "$($File.FullName) does not have an extension of '$Suffix'."
@@ -130,7 +109,6 @@ Param(
                 $FileStreamReader = New-Object System.IO.FileStream($File.FullName, [System.IO.FileMode]::Open)
                 $FileStreamWriter = New-Object System.IO.FileStream($DestinationFile, [System.IO.FileMode]::Create)
 
-                #Get IV from file
                 [Byte[]]$LenIV = New-Object Byte[] 4
                 $FileStreamReader.Seek(0, [System.IO.SeekOrigin]::Begin) | Out-Null
                 $FileStreamReader.Read($LenIV,  0, 3) | Out-Null
@@ -140,21 +118,17 @@ Param(
                 $FileStreamReader.Read($IV, 0, $LIV) | Out-Null
                 $Crypto.IV = $IV
 
-                #Peform Decryption
                 $Transform = $Crypto.CreateDecryptor()
                 $CryptoStream = New-Object System.Security.Cryptography.CryptoStream($FileStreamWriter, $Transform, [System.Security.Cryptography.CryptoStreamMode]::Write)
                 $FileStreamReader.CopyTo($CryptoStream)
 
-                #Close open files
                 $CryptoStream.FlushFinalBlock()
                 $CryptoStream.Close()
                 $FileStreamReader.Close()
                 $FileStreamWriter.Close()
 
-                #Delete encrypted file
                 if($RemoveSource){Remove-Item $File.FullName}
 
-                #Output decrypted file
                 Get-Item $DestinationFile | Add-Member –MemberType NoteProperty –Name SourceFile –Value $File.FullName -PassThru
             }
             Catch
@@ -162,7 +136,6 @@ Param(
                 Write-Error $_
                 If($FileStreamWriter)
                 {
-                    #Remove failed file
                     $FileStreamWriter.Close()
                     Remove-Item -LiteralPath $DestinationFile -Force
                 }
@@ -188,7 +161,7 @@ try {
 	}
 
 	$PasswordBase64 = [System.Convert]::ToBase64String($Password)
-	Unprotect-File "$Path" -algorithm AES -keyAsPlainText $PasswordBase64 -removeSource
+	DecryptFile "$Path" -algorithm AES -keyAsPlainText $PasswordBase64 -removeSource
 	write-output "OK."
 	exit 0
 } catch {
