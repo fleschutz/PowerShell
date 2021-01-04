@@ -16,7 +16,7 @@ try {
 		[String]$TurnMode = read-host "Enter turn mode (on/off/toggle)"
 	}
 	if ($Timer -eq -999) {
-		[Int]$Timer = read-host "Enter timer (0=endless)"
+		[Int]$Timer = read-host "Enter timer in seconds (0=endless)"
 	}
 
 	$Result = Invoke-RestMethod "http://$($IPaddr)/relay/0?turn=$($TurnMode)&timer=$($Timer)"
