@@ -19,10 +19,12 @@ The following PowerShell scripts can be found in the [Scripts/](Scripts/) subfol
 * [close-windows-terminal.ps1](Scripts/close-windows-terminal.ps1) - closes Windows Terminal gracefully
 * [configure-git.ps1](Scripts/configure-git.ps1) - sets up the Git configuration
 * [csv-to-text.ps1](Scripts/csv-to-text.ps1) - converts the given CSV file into a text list
+* [decrypt-file.ps1](Scripts/decrypt-file.ps1) - encrypts the given file
 * [display-time.ps1](Scripts/display-time.ps1) - displays the current time
 * [download.ps1](Scripts/download.ps1) - downloads the file/directory from the given URL
 * [empty-dir.ps1](Scripts/empty-dir.ps1) - empties the given directory
 * [enable-crash-dumps.ps1](Scripts/enable-crash-dumps.ps1) - enables the writing of crash dumps
+* [encrypt-file.ps1](Scripts/encrypt-file.ps1) - encrypts the given file
 * [generate-qrcode.ps1](Scripts/generate-qrcode.ps1) - generates a QR code
 * [inspect-exe.ps1](Scripts/inspect-exe.ps1) - prints basic information of the given executable file
 * [list-anagrams.ps1](Scripts/list-anagrams.ps1) - lists all anagrams of the given word
