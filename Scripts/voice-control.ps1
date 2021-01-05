@@ -6,30 +6,36 @@
 .NOTES		Author:	Markus Fleschutz / License: CC0
 #>
 
+[double]$MinConfidence = 0.05
+$PathToRepo = "$PSScriptRoot/.."
+
 write-output "Initializing the speech recognition engine..."
 $speechRecogEng = [System.Speech.Recognition.SpeechRecognitionEngine]::new();
-$speechRecogEng.InitialSilenceTimeout = 15
+#$speechRecogEng.InitialSilenceTimeout = 15
 $speechRecogEng.SetInputToDefaultAudioDevice();
 
 write-output "Loading the grammar..."
-$grammar1 = [System.Speech.Recognition.GrammarBuilder]::new();
-$grammar1.Append("hello");
-$speechRecogEng.LoadGrammar($grammar1);
+$Items = get-childItem -path "$PathToRepo/Scripts/"
+$Count = 0
+foreach ($Item in $Items) {
+	$Name = $Item.Name.Split('.')[0]
+	if ($Name -eq "") { continue }
+	$grammar1 = [System.Speech.Recognition.GrammarBuilder]::new()
+	$grammar1.Append($Name)
+	$speechRecogEng.LoadGrammar($grammar1)
+	$Count++
+}
 
 $grammar2 = [System.Speech.Recognition.GrammarBuilder]::new();
-$grammar2.Append("open notepad");
+$grammar2.Append("exit");
 $speechRecogEng.LoadGrammar($grammar2);
 
-$grammar3 = [System.Speech.Recognition.GrammarBuilder]::new();
-$grammar3.Append("exit");
-$speechRecogEng.LoadGrammar($grammar3);
-
-write-output "Listening now..."
-$done = $false;
-while (!$done) {
+write-output "Got $Count voice commands, listening now..."
+$done = $false
+do {
 	$recognized = $speechRecogEng.Recognize()
 	write-host -nonewline "."
-	if ($recognized.confidence -lt 0.30) { continue }
+	if ($recognized.confidence -lt $MinConfidence) { continue }
 	$myWords = $recognized.text
 	write-host -nonewline "$myWords ($($recognized.confidence) %)"
 	if ($myWords -match "hello") {
@@ -39,8 +45,8 @@ while (!$done) {
 		continue
 	}
 	if ($myWords -match "exit") {
-		$done = $true
+		break
 	}
-}
+} until ($done)
 
 exit 0
