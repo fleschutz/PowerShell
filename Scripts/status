@@ -4,6 +4,7 @@
 
 echo ""
 hostnamectl
+timedatectl
 echo "            Uptime: `uptime --pretty` since `uptime --since`"
 echo "          HDD temp: `hddtemp --unit=C /dev/sda`" 
 echo "-------------------------------------------------------------------------------"
