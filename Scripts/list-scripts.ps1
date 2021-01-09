@@ -15,6 +15,7 @@ function ListScripts { param([string]$Path)
 			'Description' = "$($Row.Description)"
 		}
 	}
+	write-progress -completed "Reading $Path..."
 	write-output ""
 	write-output "($($Table.Count) PowerShell scripts total)"
 }

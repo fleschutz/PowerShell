@@ -20,7 +20,7 @@ The following PowerShell scripts can be found in the [Scripts/](Scripts/) subfol
 * [configure-git.ps1](Scripts/configure-git.ps1) - sets up the Git configuration
 * [csv-to-text.ps1](Scripts/csv-to-text.ps1) - converts the given CSV file into a text list
 * [decrypt-file.ps1](Scripts/decrypt-file.ps1) - encrypts the given file
-* [display-time.ps1](Scripts/display-time.ps1) - displays the current time
+* [display-time.ps1](Scripts/display-time.ps1) - displays the current time for 10 seconds by default
 * [download.ps1](Scripts/download.ps1) - downloads the file/directory from the given URL
 * [empty-dir.ps1](Scripts/empty-dir.ps1) - empties the given directory
 * [enable-crash-dumps.ps1](Scripts/enable-crash-dumps.ps1) - enables the writing of crash dumps

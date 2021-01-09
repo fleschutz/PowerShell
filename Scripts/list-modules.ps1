@@ -7,7 +7,7 @@
 #>
 
 try {
-	Get-Module
+	get-module | format-table
 	exit 0
 } catch {
 	write-error "ERROR in line $($_.InvocationInfo.ScriptLineNumber): $($Error[0])"
