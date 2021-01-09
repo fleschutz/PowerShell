@@ -54,6 +54,7 @@ The following PowerShell scripts can be found in the [Scripts/](Scripts/) subfol
 * [moon.ps1](Scripts/moon.ps1) - prints the current moon phase
 * [mute-audio.ps1](Scripts/mute-audio.ps1) - mutes audio
 * [open-browser.ps1](Scripts/open-browser.ps1) - starts the default Web browser
+* [open-calculator.ps1](Scripts/open-calculator.ps1) - starts the calculator program
 * [open-email-client.ps1](Scripts/open-browser.ps1) - starts the default email client
 * [play-beep.ps1](Scripts/play-beep.ps1) - plays a beep sound
 * [poweroff.ps1](Scripts/poweroff.ps1) - halts the local computer (needs administrator rights)

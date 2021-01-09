@@ -46,6 +46,7 @@ make-install.ps1, installs built executables and libs to the installation direct
 moon.ps1, prints the current moon phase
 mute-audio.ps1, mutes audio
 open-browser.ps1, starts the default Web browser
+open-calculator.ps1, starts the calculator program
 open-email-client.ps1, starts the default email client
 play-beep.ps1, plays a beep sound
 poweroff.ps1, halts the local computer (needs administrator rights)
