@@ -11,6 +11,7 @@ $PathToRepo = "$PSScriptRoot/.."
 
 try {
 	write-output "Init speech recognition engine..."
+	[system.threading.thread]::currentthread.currentculture=[system.globalization.cultureinfo]"en-US"
 	[void][System.Reflection.Assembly]::LoadWithPartialName("System.Speech") 
 	$speechRecogEng = [System.Speech.Recognition.SpeechRecognitionEngine]::new()
 	#$speechRecogEng.InitialSilenceTimeout = 15

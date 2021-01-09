@@ -8,7 +8,7 @@
 
 function Speak { param([string]$Text)
 	write-output "'$Text'"
-	$Result = $Voice.speak("$Text")
+	[void]$Voice.speak("$Text")
 }
 
 try {
