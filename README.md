@@ -42,6 +42,7 @@ The following PowerShell scripts can be found in the [Scripts/](Scripts/) subfol
 * [list-modules.ps1](Scripts/list-modules.ps1) - lists the PowerShell modules
 * [list-news.ps1](Scripts/list-news.ps1) - lists the latest news
 * [list-os-releases.ps1](Scripts/list-os-releases.ps1) - lists OS releases and download URL
+* [list-printers.ps1](Scripts/list-printers.ps1) - lists all printer known to the computer
 * [list-processes.ps1](Scripts/list-processes.ps1) - lists the local computer processes
 * [list-random-passwords.ps1](Scripts/list-random-passwords.ps1) - prints a list of random passwords
 * [list-random-pins.ps1](Scripts/list-random-pins.ps1) - prints a list of random PIN's
