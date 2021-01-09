@@ -11,6 +11,7 @@ $PathToRepo = "$PSScriptRoot/.."
 try {
 	write-progress "Reading Data/logbook.csv..."
 	$Table = import-csv "$PathToRepo/Data/logbook.csv"
+	write-progress -completed "Reading Data/logbook.csv..."
 
 	write-output ""
 	write-output "Time                 User  Text"
