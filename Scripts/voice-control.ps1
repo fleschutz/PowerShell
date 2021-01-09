@@ -11,7 +11,7 @@ $PathToRepo = "$PSScriptRoot/.."
 
 try {
 	write-output "Init speech recognition engine..."
-	$null = [Reflection.Assembly]::LoadWithPartialName("System.Speech") 
+	[void][System.Reflection.Assembly]::LoadWithPartialName("System.Speech") 
 	$speechRecogEng = [System.Speech.Recognition.SpeechRecognitionEngine]::new()
 	#$speechRecogEng.InitialSilenceTimeout = 15
 	$speechRecogEng.SetInputToDefaultAudioDevice()
@@ -32,6 +32,8 @@ try {
 	$grammar2 = [System.Speech.Recognition.GrammarBuilder]::new()
 	$grammar2.Append("exit")
 	$speechRecogEng.LoadGrammar($grammar2)
+
+	write-output "NOTE: make sure the microphone volume is not too silent or too loud!"
 
 	write-output "Listening now ($Count voice commands)..."
 	while ($true) {
