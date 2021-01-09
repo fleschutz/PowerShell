@@ -1,7 +1,7 @@
 #!/snap/bin/powershell
 <#
-.SYNTAX         ./speak-time.ps1
-.DESCRIPTION	speaks the current time by text-to-speech (TTS)
+.SYNTAX         ./speak-date.ps1
+.DESCRIPTION	speaks the current date by text-to-speech (TTS)
 .LINK		https://github.com/fleschutz/PowerShell
 .NOTES		Author:	Markus Fleschutz / License: CC0
 #>
@@ -14,7 +14,7 @@ function Speak([string]$Text) {
 }
 
 try {
-	Speak("It's now $((Get-Date).ToShortTimeString())")
+	Speak("Today is $((Get-Date).ToShortDateString())")
 	exit 0
 } catch {
 	write-error "ERROR in line $($_.InvocationInfo.ScriptLineNumber): $($Error[0])"
