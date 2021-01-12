@@ -48,6 +48,7 @@ The following PowerShell scripts can be found in the [Scripts/](Scripts/) subfol
 * [list-random-passwords.ps1](Scripts/list-random-passwords.ps1) - prints a list of random passwords
 * [list-random-pins.ps1](Scripts/list-random-pins.ps1) - prints a list of random PIN's
 * [list-scripts.ps1](Scripts/list-scripts.ps1) - lists the PowerShell scripts in this repository
+* [list-timezones.ps1](Scripts/list-timezones.ps1) - lists all timezones available 
 * [locate-city.ps1](Scripts/locate-city.ps1) - prints the geographic location of the given city
 * [locate-ipaddress.ps1](Scripts/locate-ipaddress.ps1) - prints the geographic location of the given IP address
 * [locate-zip-code.ps1](Scripts/locate-zip-code.ps1) - prints the geographic location of the given zip-code
