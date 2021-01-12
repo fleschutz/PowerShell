@@ -23,6 +23,7 @@ inspect-exe.ps1, prints basic information of the given executable file
 list-anagrams.ps1, lists all anagrams of the given word
 list-automatic-variables.ps1, lists PowerShell automatic variables 
 list-empty-dirs.ps1, lists empty subfolders in a directory tree
+list-current-timezone.ps1, lists the current time zone details
 list-files.ps1, lists all files in the given folder and also in every subfolder
 list-formatted.ps1, lists the current working directory formatted in columns
 list-fritzbox-calls.ps1, lists the FRITZ!Box calls
@@ -40,7 +41,7 @@ list-processes.ps1, lists the local computer processes
 list-random-passwords.ps1, prints a list of random passwords
 list-random-pins.ps1, prints a list of random PIN's
 list-scripts.ps1, lists the PowerShell scripts in this repository
-list-timezones.ps1, lists all timezones available 
+list-timezones.ps1, lists all time zones available 
 locate-city.ps1, prints the geographic location of the given city
 locate-ipaddress.ps1, prints the geographic location of the given IP address
 locate-zip-code.ps1, prints the geographic location of the given zip-code

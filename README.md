@@ -30,6 +30,7 @@ The following PowerShell scripts can be found in the [Scripts/](Scripts/) subfol
 * [inspect-exe.ps1](Scripts/inspect-exe.ps1) - prints basic information of the given executable file
 * [list-anagrams.ps1](Scripts/list-anagrams.ps1) - lists all anagrams of the given word
 * [list-automatic-variables.ps1](Scripts/list-automatic-variables.ps1) - lists PowerShell automatic variables 
+* [list-current-timezone.ps1](Scripts/list-current-timezone.ps1) - lists the current time zone details
 * [list-empty-dirs.ps1](Scripts/list-empty-dirs.ps1) - lists empty subfolders in a directory tree
 * [list-installed-software.ps1](Scripts/list-installed-software.ps1) - lists the installed software
 * [list-files.ps1](Scripts/list-files.ps1) - lists all files in the given folder and also in every subfolder
@@ -48,7 +49,7 @@ The following PowerShell scripts can be found in the [Scripts/](Scripts/) subfol
 * [list-random-passwords.ps1](Scripts/list-random-passwords.ps1) - prints a list of random passwords
 * [list-random-pins.ps1](Scripts/list-random-pins.ps1) - prints a list of random PIN's
 * [list-scripts.ps1](Scripts/list-scripts.ps1) - lists the PowerShell scripts in this repository
-* [list-timezones.ps1](Scripts/list-timezones.ps1) - lists all timezones available 
+* [list-timezones.ps1](Scripts/list-timezones.ps1) - lists all time zones available 
 * [locate-city.ps1](Scripts/locate-city.ps1) - prints the geographic location of the given city
 * [locate-ipaddress.ps1](Scripts/locate-ipaddress.ps1) - prints the geographic location of the given IP address
 * [locate-zip-code.ps1](Scripts/locate-zip-code.ps1) - prints the geographic location of the given zip-code
