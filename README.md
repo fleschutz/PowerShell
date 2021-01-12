@@ -64,6 +64,7 @@ The following PowerShell scripts can be found in the [Scripts/](Scripts/) subfol
 * [play-beep.ps1](Scripts/play-beep.ps1) - plays a beep sound
 * [poweroff.ps1](Scripts/poweroff.ps1) - halts the local computer (needs administrator rights)
 * [new-email.ps1](Scripts/new-email.ps1) - starts the default email client to write a new email
+* [next-joke.ps1](Scripts/next-joke.ps1) - gets the next random Juck Norris joke
 * [reboot.ps1](Scripts/reboot.ps1) - reboots the local computer (needs administrator rights)
 * [reboot-fritzbox.ps1](Scripts/reboot-fritzbox.ps1) - reboots the FRITZ!box device
 * [search-files.ps1](Scripts/search-files.ps1) - searches the given pattern in the given files

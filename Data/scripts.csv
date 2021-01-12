@@ -50,6 +50,7 @@ MD5.ps1, prints the MD5 checksum of the given file
 make-install.ps1, installs built executables and libs to the installation directory
 moon.ps1, prints the current moon phase
 mute-audio.ps1, mutes audio
+next-joke.ps1], gets the next random Juck Norris joke
 open-browser.ps1, starts the default Web browser
 open-calculator.ps1, starts the calculator program
 open-email-client.ps1, starts the default email client
