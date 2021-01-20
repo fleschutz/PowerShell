@@ -6,14 +6,16 @@
 .NOTES		Author:	Markus Fleschutz / License: CC0
 #>
 
-$Repos = "https://github.com/commonmark/cmark", "https://github.com/opencv/opencv", "https://github.com/openzfs/zfs", "https://github.com/synesthesiam/voice2json", "https://github.com/fleschutz/CWTS", "https://github.com/fleschutz/cubesum", "https://github.com/fleschutz/PowerShell","https://github.com/fleschutz/CWTS", "https://github.com/fleschutz/eventdriven"
+$PathToRepo = "$PSScriptRoot/.."
 
 try {
-	foreach ($Repo in $Repos) {
-		$Answer = read-host "Do you want to clone $Repo (y/n)"
-		if ($Answer -eq "y") {
-			git clone $Repo
-		}
+	$Table = import-csv "$PathToRepo/Data/repos.csv"
+
+	foreach($Row in $Table) {
+		$URL = $Row.URL
+		write-output ""
+		write-output "Cloning $URL..."
+		git clone $URL
 	}
 
 	write-output "Done."
