@@ -14,7 +14,7 @@ try {
 	foreach($Row in $Table) {
 		$URL = $Row.URL
 		write-output ""
-		write-output "Cloning $URL..."
+		write-output "Cloning from $URL..."
 		git clone $URL
 	}
 
