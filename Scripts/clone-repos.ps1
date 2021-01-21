@@ -13,12 +13,15 @@ try {
 
 	foreach($Row in $Table) {
 		$URL = $Row.URL
+		$Directory = $Row.Directory
 		write-output ""
+		if (Test-Path($Directory)) {
+			write-output "Skipping $Directory (already existent) ..."
+			continue
+		}
 		write-output "Cloning from $URL..."
 		git clone $URL
 	}
-
-	write-output "Done."
 	exit 0
 } catch {
 	write-error "ERROR in line $($_.InvocationInfo.ScriptLineNumber): $($Error[0])"
