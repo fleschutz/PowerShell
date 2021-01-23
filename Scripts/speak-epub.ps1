@@ -1,40 +1,45 @@
 #!/snap/bin/powershell
 <#
-.SYNTAX         ./speak-epub.ps1 [<epub-file>]
+.SYNTAX         ./speak-epub.ps1 [<filename>]
 .DESCRIPTION	speaks the content of the given Epub file by text-to-speech (TTS)
 .LINK		https://github.com/fleschutz/PowerShell
 .NOTES		Author:	Markus Fleschutz / License: CC0
 #>
 
-$read = New-Object -com SAPI.SpVoice
+param([string]$Filename = "")
+
+function Speak([string]$Text) {
+	write-output "$Text"
+	$Voice = new-object -ComObject SAPI.SPVoice
+	$Voices = $Voice.GetVoices()
+	foreach ($OtherVoice in $Voices) {
+		$Description = $OtherVoice.GetDescription()
+		if ($Description -like "*- English (United States)") {
+			$Voice.Voice = $OtherVoice
+			break
+		}
+	}
+	[void]$Voice.Speak($Text)
+}
  
-function readBook() { param([string]$book, [string]$bookPath, [int]$lineNumber = 0)
+function ReadBook() { param([string]$book, [string]$bookPath, [int]$lineNumber = 0)
 	$data = Get-Content $book
 	for([int]$i=$lineNumber;$i -lt $data.Count;$i++) {
 		Set-Content -Path $bookPath"\progress.txt" -Value ($book+","+$i)
 		$line = $data[$i]
 		if ($line.Contains("<title>")) {
 			$line = $line -Replace "<.+?>",""
-		 	$read.Speak($line)
+		 	Speak $line
 		}
 		if ($line.contains("<p")) {
 			$line = $line -Replace "<.+?>",""
-			$read.Speak($line)
+			Speak $line
 		}
 	 }
 	 Set-Content -Path $bookPath"\progress.txt" -Value ("")
 }
 
-function Get-FileName() {
-	[System.Reflection.Assembly]::LoadWithPartialName("System.windows.forms") | Out-Null
-	$OpenFileDialog = New-Object System.Windows.Forms.OpenFileDialog
-	#$OpenFileDialog.initialDirectory = "c:\"
-	$OpenFileDialog.filter = "ePub files (*.epub)| *.epub"
-	$OpenFileDialog.ShowDialog() | Out-Null
-	return $OpenFileDialog.filename
-}
- 
-function unzip() { param([string]$file, [string]$dest)
+function UnzipFile() { param([string]$file, [string]$dest)
 	$shell = new-object -com shell.application
 	$zip = $shell.NameSpace($file)
 	foreach($item in $zip.items()) {
@@ -42,8 +47,11 @@ function unzip() { param([string]$file, [string]$dest)
 	}
 }
  
-$epubFile = Get-FileName
-$file = get-item $epubFile
+if ($Filename -eq "") {
+	$Filename = read-host "Enter path to .epub file"
+}
+write-output "Reading $Filename ..."
+$file = get-item $Filename
 if (!(Test-Path($file.DirectoryName+"\"+$file.Name+".zip"))) {
 	$zipFile = $file.DirectoryName+"\"+$file.Name+".zip"
 	$file.CopyTo($zipFile)
@@ -52,7 +60,7 @@ if (!(Test-Path($file.DirectoryName+"\"+$file.Name+".zip"))) {
 $destination = $file.DirectoryName+"\"+$file.Name.Replace($file.Extension,"")
 if (!(Test-Path($destination))) {
 	md $destination
-	unzip -file $zipFile -dest $destination
+	UnzipFile -file $zipFile -dest $destination
 }
  
 [xml]$container = Get-Content $destination"\META-INF\container.xml"
@@ -71,11 +79,11 @@ foreach($item in $content.package.manifest.Item) {
 		$bookFileName = $item.href
 		if ($progress.Count -eq 2) {
 			if ($progress[0] -eq $bookPath+"\"+$bookFileName) {
-				readBook -book $bookPath"\"$bookFileName -bookPath $bookPath -lineNumber $progress[1]
+				ReadBook -book $bookPath"\"$bookFileName -bookPath $bookPath -lineNumber $progress[1]
 			}
 		}
 		else {
-			readBook -book $bookPath"\"$bookFileName -bookPath $bookPath
+			ReadBook -book $bookPath"\"$bookFileName -bookPath $bookPath
 		}
 	}
 }
