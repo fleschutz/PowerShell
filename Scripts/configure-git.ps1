@@ -7,16 +7,17 @@
 		requires installation of Git 
 #>
 
-$UserName   = read-host "Enter your full name"
-$UserEmail  = read-host "Enter your email address"
-$UserEditor = read-host "Enter your favorite editor (nano, vi, emacs, ...)"
+$FullName       = read-host "Enter your full name"
+$EmailAddress   = read-host "Enter your email address"
+$FavoriteEditor = read-host "Enter your favorite editor (emacs,nano,vi,vim,...)"
 
 try {
-	git config --global user.name $UserName
-	git config --global user.email $UserEmail
-	git config --global core.editor $UserEditor
+	git config --global user.name $FullName
+	git config --global user.email $EmailAddress
+	git config --global core.editor $FavoriteEditor
 	git config --global init.defaultBranch main
-	write-output "Done."
+	write-output "OK - git configuration is now:"
+	git config --list
 	exit 0
 } catch {
 	write-error "ERROR in line $($_.InvocationInfo.ScriptLineNumber): $($Error[0])"
