@@ -73,6 +73,7 @@ The following PowerShell scripts can be found in the [Scripts/](Scripts/) subfol
 * [send-tcp.ps1](Scripts/send-udp.ps1) - sends a TCP message to the given IP address and port
 * [send-udp.ps1](Scripts/send-udp.ps1) - sends a UDP datagram message to the given IP address and port
 * [set-timer.ps1](Scripts/set-timer.ps1) - sets a timer for a countdown
+* [set-wallpaper.ps1](Scripts/set-wallpaper.ps1) - sets the given image as wallpaper
 * [SHA1.ps1](Scripts/SHA1.ps1) - prints the SHA1 checksum of the given file
 * [SHA256.ps1](Scripts/SHA256.ps1) - prints the SHA256 checksum of the given file
 * [simulate-matrix.ps1](Scripts/simulate-matrix.ps1) - simulates the Matrix (fun)
