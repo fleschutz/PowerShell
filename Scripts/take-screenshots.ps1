@@ -1,26 +1,27 @@
 #!/snap/bin/powershell
 <#
-.SYNTAX         ./take-screenshots.ps1
-.DESCRIPTION	takes multiple screenshots
+.SYNTAX         ./take-screenshot.ps1 [<directory>] [<interval>]
+.DESCRIPTION	takes screenshots every 60 seconds and saves them into the current/given directory
 .LINK		https://github.com/fleschutz/PowerShell
 .NOTES		Author:	Markus Fleschutz / License: CC0
 #>
 
-Function Get-TimedScreenshot {
+param([string]$Directory = "", [int]$Interval = 60)
+
+function GetTimedScreenshots {
     [CmdletBinding()] Param(
             [Parameter(Mandatory=$True)]             
             [ValidateScript({Test-Path -Path $_ })]
-            [string] $Path, 
+            [string]$Path, 
 
             [Parameter(Mandatory=$True)]             
-            [int32] $Interval,
+            [int32]$Interval,
 
             [Parameter(Mandatory=$True)]             
-            [string] $EndTime    
+            [string]$EndTime    
             )
     
-        #Define helper function that generates and saves screenshot
-        Function GenScreenshot {
+        function GenScreenshot {
            $ScreenBounds = [Windows.Forms.SystemInformation]::VirtualScreen
            $ScreenshotObject = New-Object Drawing.Bitmap $ScreenBounds.Width, $ScreenBounds.Height
            $DrawingGraphics = [Drawing.Graphics]::FromImage($ScreenshotObject)
@@ -30,43 +31,27 @@ Function Get-TimedScreenshot {
            $ScreenshotObject.Dispose()
         }
 
-        Try {
-            
-            #load required assembly
-            Add-Type -Assembly System.Windows.Forms            
+    Add-Type -Assembly System.Windows.Forms            
 
-            Do {
-                #get the current time and build the filename from it
-                $Time = (Get-Date)
-                
-                [string] $FileName = "$($Time.Month)"
-                $FileName += '-'
-                $FileName += "$($Time.Day)" 
-                $FileName += '-'
-                $FileName += "$($Time.Year)"
-                $FileName += '-'
-                $FileName += "$($Time.Hour)"
-                $FileName += '-'
-                $FileName += "$($Time.Minute)"
-                $FileName += '-'
-                $FileName += "$($Time.Second)"
-                $FileName += '.png'
-            
-                #use join-path to add path to filename
-                [string] $FilePath = (Join-Path $Path $FileName)
+    do {
+	$Time = (Get-Date)
+	$FileName = "$($Time.Year)-$($Time.Month)-$($Time.Day)-$($Time.Hour)-$($Time.Minute)-$($Time.Second).png"
+	[string]$FilePath = (Join-Path $Path $FileName)
 
-                #run screenshot function
-                GenScreenshot
-                
-                write-verbose "Saved screenshot to $FilePath. Sleeping for $Interval seconds"
+	write-output "Saving screenshot to $FilePath..."
+	GenScreenshot
 
-                Start-Sleep -Seconds $Interval
-            }
+	Start-Sleep -Seconds $Interval
+    } while ((Get-Date -Format HH:%m) -lt $EndTime)
+}
 
-            #note that this will run once regardless if the specified time as passed
-            While ((Get-Date -Format HH:%m) -lt $EndTime)
-        }
-
-       Catch {write-error "$Error[0].ToString() + $Error[0].InvocationInfo.PositionMessage"}
-
+try {
+	if ($Directory -eq "") {
+		$Directory = "$PWD"
+	}
+	GetTimedScreenshots $Directory $Interval "23:59"
+	exit 0
+} catch {
+	write-error "ERROR in line $($_.InvocationInfo.ScriptLineNumber): $($Error[0])"
+	exit 1
 }
