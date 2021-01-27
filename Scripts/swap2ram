@@ -7,14 +7,19 @@
 # License:	CC0
 # NOTE:		for automation copy me to /etc/cron.daily 
 
+if ! [ $(id -u) = 0 ]; then
+	echo "Please run this script as root"
+	exit 1
+fi
+
 SwapUsed=$(LC_ALL=C free | awk '/Swap:/ {print $3}')
 RAMsize=$(LC_ALL=C free  | awk '/Mem:/ {print $2}')
 RAMfree=$(LC_ALL=C free  | awk '/Mem:/ {print $4}')
 
-echo "Swapping $SwapUsed bytes back to $RAMsize bytes RAM ($RAMfree bytes free) ..."
+printf "Swapping $SwapUsed bytes back to RAM ($RAMfree bytes free of $RAMsize bytes total) ...    "
 start=`date +%s`
 swapoff -a && swapon -a
 end=`date +%s`
 
-echo "✔️ Done - running for `expr $end - $start` seconds"
+echo "DONE (`expr $end - $start` sec.)"
 exit 0
