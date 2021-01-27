@@ -6,7 +6,7 @@
 .NOTES		Author:	Markus Fleschutz / License: CC0
 #>
 
-function Speak([string]$Text) {
+function Speak { param([string]$Text)
 	write-progress "$Text"
 	$Voice = new-object -ComObject SAPI.SPVoice
 	$Voices = $Voice.GetVoices()

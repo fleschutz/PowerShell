@@ -85,7 +85,7 @@ function New-Request {
 
 $script:secport = (New-Request -urn "urn:dslforum-org:service:DeviceInfo:1" -action 'GetSecurityPort' -proto 'http').Envelope.Body.GetSecurityPortResponse.NewSecurityPort
 
-function Reboot-FritzBox() {
+function Reboot-FritzBox {
     $resp = New-Request -urn 'urn:dslforum-org:service:DeviceConfig:1' -action 'Reboot'
     return $resp.Envelope.Body.InnerText
 }

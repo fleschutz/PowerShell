@@ -8,8 +8,7 @@
 
 param([string]$Path = "", [string]$Password = "")
 
-function EncryptFile
-{
+function EncryptFile {
 <#
 .SYNOPSIS 
 Encrypts a file using a symmetrical algorithm.

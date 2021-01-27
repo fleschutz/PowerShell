@@ -11,8 +11,7 @@ if ($Hostname -eq "" ) {
 	$Hostname = read-host "Enter hostname"
 }
 
-function Send-WOL 
-{ 
+function Send-WOL { 
 <#  
   .SYNOPSIS   
     Send a WOL packet to a broadcast address 

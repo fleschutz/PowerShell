@@ -9,8 +9,7 @@
 param([string]$Path = "", [string]$Password = "")
 
 
-function DecryptFile
-{
+function DecryptFile {
 <#
 .SYNOPSIS 
 Decrypts a file encrypted with Protect-File.

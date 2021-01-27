@@ -8,24 +8,24 @@
 
 param([string]$Text = "", [int]$OneTimeUnit = 100) # in milliseconds
 
-function gap() { param([int]$Length)
+function gap { param([int]$Length)
 	for ([int]$i = 1; $i -lt $Length; $i++) {
 		write-host " " -nonewline
 	}
 	start-sleep -milliseconds ($Length * $OneTimeUnit)
 }
 
-function dot() {
+function dot {
 	write-host "." -nonewline
 	start-sleep -milliseconds $OneTimeUnit # signal
 }
 
-function dash() {
+function dash {
 	write-host "_" -nonewline
 	start-sleep -milliseconds (3 * $OneTimeUnit) # signal
 }
 
-function Char2MorseCode() { param([string]$Char)
+function Char2MorseCode { param([string]$Char)
 	switch($Char) {
 	'A' { dot; gap 1; dash; gap 3 }
 	'B' { dash; gap 1; dot; gap 1; dot; gap 1; dot; gap 3 }

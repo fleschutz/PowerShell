@@ -10,7 +10,7 @@ param([string]$Text = "")
 
 Set-StrictMode -Version Latest
 
-function BigA() { param([int]$Row)
+function BigA { param([int]$Row)
 	switch($Row) {
 	1 { return "   __   " }
 	2 { return "  /__\  " }
@@ -19,7 +19,7 @@ function BigA() { param([int]$Row)
 	}
 }
 
-function BigB() { param([int]$Row)
+function BigB { param([int]$Row)
 	switch($Row) {
 	1 { return " ____ " }
 	2 { return "| _  )" }
@@ -28,7 +28,7 @@ function BigB() { param([int]$Row)
 	}
 }
 
-function BigC() { param([int]$Row)
+function BigC { param([int]$Row)
 	switch($Row) {
 	1 { return "  ___ " }
 	2 { return " / __)" }
@@ -37,7 +37,7 @@ function BigC() { param([int]$Row)
 	}
 }
 
-function BigD() { param([int]$Row)
+function BigD { param([int]$Row)
 	switch($Row) {
 	1 { return " ____  " }
 	2 { return "|  _ \ " }
@@ -46,7 +46,7 @@ function BigD() { param([int]$Row)
 	}
 }
 
-function BigE() { param([int]$Row)
+function BigE { param([int]$Row)
 	switch($Row) {
 	1 { return " ____ " }
 	2 { return "| ___)" }
@@ -55,7 +55,7 @@ function BigE() { param([int]$Row)
 	}
 }
 
-function BigF() { param([int]$Row)
+function BigF { param([int]$Row)
 	switch($Row) {
 	1 { return " ____ " }
 	2 { return "| ___)" }
@@ -64,7 +64,7 @@ function BigF() { param([int]$Row)
 	}
 }
 
-function BigG() { param([int]$Row)
+function BigG { param([int]$Row)
 	switch($Row) {
 	1 { return "  ____ " }
 	2 { return " / ___)" }
@@ -73,7 +73,7 @@ function BigG() { param([int]$Row)
 	}
 }
 
-function BigH() { param([int]$Row)
+function BigH { param([int]$Row)
 	switch($Row) {
 	1 { return " _   _ " }
 	2 { return "| |_| |" }
@@ -82,7 +82,7 @@ function BigH() { param([int]$Row)
 	}
 }
 
-function BigI() { param([int]$Row)
+function BigI { param([int]$Row)
 	switch($Row) {
 	1 { return " _ " }
 	2 { return "| |" }
@@ -91,7 +91,7 @@ function BigI() { param([int]$Row)
 	}
 }
 
-function BigJ() { param([int]$Row)
+function BigJ { param([int]$Row)
 	switch($Row) {
 	1 { return "   __ " }
 	2 { return "  (  |" }
@@ -100,7 +100,7 @@ function BigJ() { param([int]$Row)
 	}
 }
 
-function BigK() { param([int]$Row)
+function BigK { param([int]$Row)
 	switch($Row) {
 	1 { return " _  _ " }
 	2 { return "| |/ )" }
@@ -109,7 +109,7 @@ function BigK() { param([int]$Row)
 	}
 }
 
-function BigL() { param([int]$Row)
+function BigL { param([int]$Row)
 	switch($Row) {
 	1 { return " _    " }
 	2 { return "| |   " }
@@ -118,7 +118,7 @@ function BigL() { param([int]$Row)
 	}
 }
 
-function BigM() { param([int]$Row)
+function BigM { param([int]$Row)
 	switch($Row) {
 	1 { return " _    _ " }
 	2 { return "| \  / |" }
@@ -127,7 +127,7 @@ function BigM() { param([int]$Row)
 	}
 }
 
-function BigN() { param([int]$Row)
+function BigN { param([int]$Row)
 	switch($Row) {
 	1 { return " _   _ " }
 	2 { return "| \ | |" }
@@ -136,7 +136,7 @@ function BigN() { param([int]$Row)
 	}
 }
 
-function BigO() { param([int]$Row)
+function BigO { param([int]$Row)
 	switch($Row) {
 	1 { return "  ___  " }
 	2 { return " / _ \ " }
@@ -145,7 +145,7 @@ function BigO() { param([int]$Row)
 	}
 }
 
-function BigP() { param([int]$Row)
+function BigP { param([int]$Row)
 	switch($Row) {
 	1 { return " ____ " }
 	2 { return "|  _ \" }
@@ -154,7 +154,7 @@ function BigP() { param([int]$Row)
 	}
 }
 
-function BigQ() { param([int]$Row)
+function BigQ { param([int]$Row)
 	switch($Row) {
 	1 { return "  ____  " }
 	2 { return " / _  \ " }
@@ -163,7 +163,7 @@ function BigQ() { param([int]$Row)
 	}
 }
 
-function BigR() { param([int]$Row)
+function BigR { param([int]$Row)
 	switch($Row) {
 	1 { return " ____ " }
 	2 { return "|  _ \" }
@@ -172,7 +172,7 @@ function BigR() { param([int]$Row)
 	}
 }
 
-function BigS() { param([int]$Row)
+function BigS { param([int]$Row)
 	switch($Row) {
 	1 { return " ____ " }
 	2 { return "/  __)" }
@@ -181,7 +181,7 @@ function BigS() { param([int]$Row)
 	}
 }
 
-function BigT() { param([int]$Row)
+function BigT { param([int]$Row)
 	switch($Row) {
 	1 { return " _____ " }
 	2 { return "|_   _|" }
@@ -190,7 +190,7 @@ function BigT() { param([int]$Row)
 	}
 }
 
-function BigU() { param([int]$Row)
+function BigU { param([int]$Row)
 	switch($Row) {
 	1 { return " _   _ " }
 	2 { return "| | | |" }
@@ -199,7 +199,7 @@ function BigU() { param([int]$Row)
 	}
 }
 
-function BigV() { param([int]$Row)
+function BigV { param([int]$Row)
 	switch($Row) {
 	1 { return " _  _ " }
 	2 { return "( \/ )" }
@@ -208,7 +208,7 @@ function BigV() { param([int]$Row)
 	}
 }
 
-function BigW() { param([int]$Row)
+function BigW { param([int]$Row)
 	switch($Row) {
 	1 { return " __    __ " }
 	2 { return "\  \/\/  /" }
@@ -217,7 +217,7 @@ function BigW() { param([int]$Row)
 	}
 }
 
-function BigX() { param([int]$Row)
+function BigX { param([int]$Row)
 	switch($Row) {
 	1 { return " _  _ " }
 	2 { return "( \/ )" }
@@ -226,7 +226,7 @@ function BigX() { param([int]$Row)
 	}
 }
 
-function BigY() { param([int]$Row)
+function BigY { param([int]$Row)
 	switch($Row) {
 	1 { return " _  _ " }
 	2 { return "( \/ )" }
@@ -235,7 +235,7 @@ function BigY() { param([int]$Row)
 	}
 }
 
-function BigZ() { param([int]$Row)
+function BigZ { param([int]$Row)
 	switch($Row) {
 	1 { return " ____ " }
 	2 { return "(_   )" }
@@ -244,8 +244,7 @@ function BigZ() { param([int]$Row)
 	}
 }
 
-
-function Big0() { param([int]$Row)
+function Big0 { param([int]$Row)
 	switch($Row) {
 	1 { return "  ___  " }
 	2 { return " / _ \ " }
@@ -254,7 +253,7 @@ function Big0() { param([int]$Row)
 	}
 }
 
-function Big1() { param([int]$Row)
+function Big1 { param([int]$Row)
 	switch($Row) {
 	1 { return " ___ " }
 	2 { return "/_  |" }
@@ -263,7 +262,7 @@ function Big1() { param([int]$Row)
 	}
 }
 
-function Big2() { param([int]$Row)
+function Big2 { param([int]$Row)
 	switch($Row) {
 	1 { return " ___  " }
 	2 { return "(__ \ " }
@@ -272,7 +271,7 @@ function Big2() { param([int]$Row)
 	}
 }
 
-function Big3() { param([int]$Row)
+function Big3 { param([int]$Row)
 	switch($Row) {
 	1 { return " ___ " }
 	2 { return "(__ )" }
@@ -281,7 +280,7 @@ function Big3() { param([int]$Row)
 	}
 }
 
-function Big4() { param([int]$Row)
+function Big4 { param([int]$Row)
 	switch($Row) {
 	1 { return "  __  " }
 	2 { return " /. | " }
@@ -290,7 +289,7 @@ function Big4() { param([int]$Row)
 	}
 }
 
-function Big5() { param([int]$Row)
+function Big5 { param([int]$Row)
 	switch($Row) {
 	1 { return " ____ " }
 	2 { return "| ___)" }
@@ -299,7 +298,7 @@ function Big5() { param([int]$Row)
 	}
 }
 
-function Big6() { param([int]$Row)
+function Big6 { param([int]$Row)
 	switch($Row) {
 	1 { return "  _  " }
 	2 { return " / ) " }
@@ -308,7 +307,7 @@ function Big6() { param([int]$Row)
 	}
 }
 
-function Big7() { param([int]$Row)
+function Big7 { param([int]$Row)
 	switch($Row) {
 	1 { return " ___ " }
 	2 { return "(__ )" }
@@ -317,7 +316,7 @@ function Big7() { param([int]$Row)
 	}
 } 
 
-function Big8() { param([int]$Row)
+function Big8 { param([int]$Row)
 	switch($Row) {
 	1 { return " ___ " }
 	2 { return "( _ )" }
@@ -326,7 +325,7 @@ function Big8() { param([int]$Row)
 	}
 } 
 
-function Big9() { param([int]$Row)
+function Big9 { param([int]$Row)
 	switch($Row) {
 	1 { return " ___ " }
 	2 { return "/ _ \" }
@@ -335,7 +334,7 @@ function Big9() { param([int]$Row)
 	}
 } 
 
-function BigColon() { param([int]$Row)
+function BigColon { param([int]$Row)
 	switch($Row) {
 	1 { return "   " }
 	2 { return " o " }
@@ -344,7 +343,7 @@ function BigColon() { param([int]$Row)
 	}
 } 
 
-function BigMinus() { param([int]$Row)
+function BigMinus { param([int]$Row)
 	switch($Row) {
 	1 { return "      " }
 	2 { return " ____ " }
@@ -353,7 +352,7 @@ function BigMinus() { param([int]$Row)
 	}
 } 
 
-function BigChar() { param([string]$Char, [int]$Row)
+function BigChar { param([string]$Char, [int]$Row)
 	switch($Char) {
 	'A' { return BigA $Row }
 	'B' { return BigB $Row }

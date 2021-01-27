@@ -83,7 +83,7 @@ function New-Request {
 
 $script:secport = (New-Request -urn "urn:dslforum-org:service:DeviceInfo:1" -action 'GetSecurityPort' -proto 'http').Envelope.Body.GetSecurityPortResponse.NewSecurityPort
 
-function GetCallList() { param([int]$MaxEntries = 999, [int]$MaxDays = 999
+function GetCallList { param([int]$MaxEntries = 999, [int]$MaxDays = 999
     )
     $resp = New-Request -urn 'urn:dslforum-org:service:X_AVM-DE_OnTel:1' -action 'GetCallList'
     $list = [xml](new-object System.Net.WebClient).DownloadString("$($resp.Envelope.Body.GetCallListResponse.NewCallListURL)&max=$MaxEntries&MaxDays=$days")

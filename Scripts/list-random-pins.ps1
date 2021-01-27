@@ -8,7 +8,7 @@
 
 param([int]$PinLength = 5, [int]$Columns = 12, [int]$Rows = 24)
 
-function GeneratePIN() {
+function GeneratePIN {
 	$Generator = New-Object System.Random
 	for ($i = 0; $i -lt $PinLength; $i++) {
 		$PIN += [char]$Generator.next(48,57)

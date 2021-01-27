@@ -8,7 +8,7 @@
 
 param([string]$Filename = "")
 
-function Speak([string]$Text) {
+function Speak { param([string]$Text)
 	write-output "$Text"
 	$Voice = new-object -ComObject SAPI.SPVoice
 	$Voices = $Voice.GetVoices()

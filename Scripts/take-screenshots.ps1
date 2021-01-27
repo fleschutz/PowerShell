@@ -8,7 +8,7 @@
 
 param([string]$Directory = "", [int]$Interval = 60)
 
-function TakeScreenshot() { param([string]$FilePath)
+function TakeScreenshot { param([string]$FilePath)
 	Add-Type -Assembly System.Windows.Forms            
 	$ScreenBounds = [Windows.Forms.SystemInformation]::VirtualScreen
 	$ScreenshotObject = New-Object Drawing.Bitmap $ScreenBounds.Width, $ScreenBounds.Height

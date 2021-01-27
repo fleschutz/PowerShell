@@ -8,7 +8,7 @@
 
 param([string]$Text = "")
 
-function BrailleA() { param([int]$Row)
+function BrailleA { param([int]$Row)
 	switch($Row) {
 	1 { return ".o" }
 	2 { return "oo" }
@@ -16,7 +16,7 @@ function BrailleA() { param([int]$Row)
 	}
 }
 
-function BrailleB() { param([int]$Row)
+function BrailleB { param([int]$Row)
 	switch($Row) {
 	1 { return ".o" }
 	2 { return ".o" }
@@ -24,7 +24,7 @@ function BrailleB() { param([int]$Row)
 	}
 }
 
-function BrailleC() { param([int]$Row)
+function BrailleC { param([int]$Row)
 	switch($Row) {
 	1 { return ".." }
 	2 { return "oo" }
@@ -32,7 +32,7 @@ function BrailleC() { param([int]$Row)
 	}
 }
 
-function BrailleD() { param([int]$Row)
+function BrailleD { param([int]$Row)
 	switch($Row) {
 	1 { return ".." }
 	2 { return "o." }
@@ -40,7 +40,7 @@ function BrailleD() { param([int]$Row)
 	}
 }
 
-function BrailleE() { param([int]$Row)
+function BrailleE { param([int]$Row)
 	switch($Row) {
 	1 { return ".o" }
 	2 { return "o." }
@@ -48,7 +48,7 @@ function BrailleE() { param([int]$Row)
 	}
 }
 
-function BrailleF() { param([int]$Row)
+function BrailleF { param([int]$Row)
 	switch($Row) {
 	1 { return ".." }
 	2 { return ".o" }
@@ -56,7 +56,7 @@ function BrailleF() { param([int]$Row)
 	}
 }
 
-function BrailleG() { param([int]$Row)
+function BrailleG { param([int]$Row)
 	switch($Row) {
 	1 { return ".." }
 	2 { return ".." }
@@ -64,7 +64,7 @@ function BrailleG() { param([int]$Row)
 	}
 }
 
-function BrailleH() { param([int]$Row)
+function BrailleH { param([int]$Row)
 	switch($Row) {
 	1 { return ".o" }
 	2 { return ".." }
@@ -72,7 +72,7 @@ function BrailleH() { param([int]$Row)
 	}
 }
 
-function BrailleI() { param([int]$Row)
+function BrailleI { param([int]$Row)
 	switch($Row) {
 	1 { return "o." }
 	2 { return ".o" }
@@ -80,7 +80,7 @@ function BrailleI() { param([int]$Row)
 	}
 }
 
-function BrailleJ() { param([int]$Row)
+function BrailleJ { param([int]$Row)
 	switch($Row) {
 	1 { return "o." }
 	2 { return ".." }
@@ -88,7 +88,7 @@ function BrailleJ() { param([int]$Row)
 	}
 }
 
-function BrailleK() { param([int]$Row)
+function BrailleK { param([int]$Row)
 	switch($Row) {
 	1 { return ".o" }
 	2 { return "oo" }
@@ -96,7 +96,7 @@ function BrailleK() { param([int]$Row)
 	}
 }
 
-function BrailleL() { param([int]$Row)
+function BrailleL { param([int]$Row)
 	switch($Row) {
 	1 { return ".o" }
 	2 { return ".o" }
@@ -104,7 +104,7 @@ function BrailleL() { param([int]$Row)
 	}
 }
 
-function BrailleM() { param([int]$Row)
+function BrailleM { param([int]$Row)
 	switch($Row) {
 	1 { return ".." }
 	2 { return "oo" }
@@ -112,7 +112,7 @@ function BrailleM() { param([int]$Row)
 	}
 }
 
-function BrailleN() { param([int]$Row)
+function BrailleN { param([int]$Row)
 	switch($Row) {
 	1 { return ".." }
 	2 { return "o." }
@@ -120,7 +120,7 @@ function BrailleN() { param([int]$Row)
 	}
 }
 
-function BrailleO() { param([int]$Row)
+function BrailleO { param([int]$Row)
 	switch($Row) {
 	1 { return ".o" }
 	2 { return "o." }
@@ -128,7 +128,7 @@ function BrailleO() { param([int]$Row)
 	}
 }
 
-function BrailleP() { param([int]$Row)
+function BrailleP { param([int]$Row)
 	switch($Row) {
 	1 { return ".." }
 	2 { return ".o" }
@@ -136,7 +136,7 @@ function BrailleP() { param([int]$Row)
 	}
 }
 
-function BrailleQ() { param([int]$Row)
+function BrailleQ { param([int]$Row)
 	switch($Row) {
 	1 { return ".." }
 	2 { return ".." }
@@ -144,7 +144,7 @@ function BrailleQ() { param([int]$Row)
 	}
 }
 
-function BrailleR() { param([int]$Row)
+function BrailleR { param([int]$Row)
 	switch($Row) {
 	1 { return ".o" }
 	2 { return ".." }
@@ -152,7 +152,7 @@ function BrailleR() { param([int]$Row)
 	}
 }
 
-function BrailleS() { param([int]$Row)
+function BrailleS { param([int]$Row)
 	switch($Row) {
 	1 { return "o." }
 	2 { return ".o" }
@@ -160,7 +160,7 @@ function BrailleS() { param([int]$Row)
 	}
 }
 
-function BrailleT() { param([int]$Row)
+function BrailleT { param([int]$Row)
 	switch($Row) {
 	1 { return "o." }
 	2 { return ".." }
@@ -168,7 +168,7 @@ function BrailleT() { param([int]$Row)
 	}
 }
 
-function BrailleU() { param([int]$Row)
+function BrailleU { param([int]$Row)
 	switch($Row) {
 	1 { return ".o" }
 	2 { return "oo" }
@@ -176,7 +176,7 @@ function BrailleU() { param([int]$Row)
 	}
 }
 
-function BrailleV() { param([int]$Row)
+function BrailleV { param([int]$Row)
 	switch($Row) {
 	1 { return ".o" }
 	2 { return ".o" }
@@ -184,7 +184,7 @@ function BrailleV() { param([int]$Row)
 	}
 }
 
-function BrailleW() { param([int]$Row)
+function BrailleW { param([int]$Row)
 	switch($Row) {
 	1 { return "o." }
 	2 { return ".." }
@@ -192,7 +192,7 @@ function BrailleW() { param([int]$Row)
 	}
 }
 
-function BrailleX() { param([int]$Row)
+function BrailleX { param([int]$Row)
 	switch($Row) {
 	1 { return ".." }
 	2 { return "oo" }
@@ -200,7 +200,7 @@ function BrailleX() { param([int]$Row)
 	}
 }
 
-function BrailleY() { param([int]$Row)
+function BrailleY { param([int]$Row)
 	switch($Row) {
 	1 { return ".." }
 	2 { return "o." }
@@ -208,7 +208,7 @@ function BrailleY() { param([int]$Row)
 	}
 }
 
-function BrailleZ() { param([int]$Row)
+function BrailleZ { param([int]$Row)
 	switch($Row) {
 	1 { return ".o" }
 	2 { return "o." }
@@ -216,7 +216,7 @@ function BrailleZ() { param([int]$Row)
 	}
 }
 
-function Braille1() { param([int]$Row)
+function Braille1 { param([int]$Row)
 	switch($Row) {
 	1 { return ".o" }
 	2 { return "oo" }
@@ -224,7 +224,7 @@ function Braille1() { param([int]$Row)
 	}
 }
 
-function Braille2() { param([int]$Row)
+function Braille2 { param([int]$Row)
 	switch($Row) {
 	1 { return ".o" }
 	2 { return ".o" }
@@ -232,7 +232,7 @@ function Braille2() { param([int]$Row)
 	}
 }
 
-function Braille3() { param([int]$Row)
+function Braille3 { param([int]$Row)
 	switch($Row) {
 	1 { return ".." }
 	2 { return "oo" }
@@ -240,7 +240,7 @@ function Braille3() { param([int]$Row)
 	}
 }
 
-function Braille4() { param([int]$Row)
+function Braille4 { param([int]$Row)
 	switch($Row) {
 	1 { return ".." }
 	2 { return "o." }
@@ -248,7 +248,7 @@ function Braille4() { param([int]$Row)
 	}
 }
 
-function Braille5() { param([int]$Row)
+function Braille5 { param([int]$Row)
 	switch($Row) {
 	1 { return ".o" }
 	2 { return "o." }
@@ -256,7 +256,7 @@ function Braille5() { param([int]$Row)
 	}
 }
 
-function Braille6() { param([int]$Row)
+function Braille6 { param([int]$Row)
 	switch($Row) {
 	1 { return ".." }
 	2 { return ".o" }
@@ -264,7 +264,7 @@ function Braille6() { param([int]$Row)
 	}
 }
 
-function Braille7() { param([int]$Row)
+function Braille7 { param([int]$Row)
 	switch($Row) {
 	1 { return ".." }
 	2 { return ".." }
@@ -272,7 +272,7 @@ function Braille7() { param([int]$Row)
 	}
 } 
 
-function Braille8() { param([int]$Row)
+function Braille8 { param([int]$Row)
 	switch($Row) {
 	1 { return ".o" }
 	2 { return ".." }
@@ -280,7 +280,7 @@ function Braille8() { param([int]$Row)
 	}
 } 
 
-function Braille9() { param([int]$Row)
+function Braille9 { param([int]$Row)
 	switch($Row) {
 	1 { return "o." }
 	2 { return ".o" }
@@ -288,7 +288,7 @@ function Braille9() { param([int]$Row)
 	}
 } 
 
-function Braille0() { param([int]$Row)
+function Braille0 { param([int]$Row)
 	switch($Row) {
 	1 { return "o." }
 	2 { return ".." }
@@ -296,7 +296,7 @@ function Braille0() { param([int]$Row)
 	}
 }
 
-function BrailleChar() { param([string]$Char, [int]$Row)
+function BrailleChar { param([string]$Char, [int]$Row)
 	switch($Char) {
 	'A' { return BrailleA $Row }
 	'B' { return BrailleB $Row }
