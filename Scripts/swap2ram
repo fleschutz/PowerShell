@@ -12,11 +12,12 @@ if ! [ $(id -u) = 0 ]; then
 	exit 1
 fi
 
-SwapUsed=$(LC_ALL=C free | awk '/Swap:/ {print $3}')
-RAMsize=$(LC_ALL=C free  | awk '/Mem:/ {print $2}')
-RAMfree=$(LC_ALL=C free  | awk '/Mem:/ {print $4}')
+SwapUsed=$(LC_ALL=C free --human --si | awk '/Swap:/ {print $3}')
+RAMsize=$(LC_ALL=C free --human --si | awk '/Mem:/ {print $2}')
+RAMused=$(LC_ALL=C free --human --si | awk '/Mem:/ {print $3}')
+RAMfree=$(LC_ALL=C free --human --si | awk '/Mem:/ {print $4}')
 
-printf "Swapping $SwapUsed bytes back to RAM ($RAMfree bytes free of $RAMsize bytes total) ...    "
+printf "Swapping $SwapUsed back to RAM ($RAMsize total, $RAMused used, $RAMfree free) ...    "
 start=`date +%s`
 swapoff -a && swapon -a
 end=`date +%s`
