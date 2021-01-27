@@ -8,48 +8,31 @@
 
 param([string]$Directory = "", [int]$Interval = 60)
 
-function GetTimedScreenshots {
-    [CmdletBinding()] Param(
-            [Parameter(Mandatory=$True)]             
-            [ValidateScript({Test-Path -Path $_ })]
-            [string]$Path, 
-
-            [Parameter(Mandatory=$True)]             
-            [int32]$Interval,
-
-            [Parameter(Mandatory=$True)]             
-            [string]$EndTime    
-            )
-    
-        function GenScreenshot {
-           $ScreenBounds = [Windows.Forms.SystemInformation]::VirtualScreen
-           $ScreenshotObject = New-Object Drawing.Bitmap $ScreenBounds.Width, $ScreenBounds.Height
-           $DrawingGraphics = [Drawing.Graphics]::FromImage($ScreenshotObject)
-           $DrawingGraphics.CopyFromScreen( $ScreenBounds.Location, [Drawing.Point]::Empty, $ScreenBounds.Size)
-           $DrawingGraphics.Dispose()
-           $ScreenshotObject.Save($FilePath)
-           $ScreenshotObject.Dispose()
-        }
-
-    Add-Type -Assembly System.Windows.Forms            
-
-    do {
-	$Time = (Get-Date)
-	$FileName = "$($Time.Year)-$($Time.Month)-$($Time.Day)-$($Time.Hour)-$($Time.Minute)-$($Time.Second).png"
-	[string]$FilePath = (Join-Path $Path $FileName)
-
-	write-output "Saving screenshot to $FilePath..."
-	GenScreenshot
-
-	Start-Sleep -Seconds $Interval
-    } while ((Get-Date -Format HH:%m) -lt $EndTime)
+function TakeScreenshot() { param([string]$FilePath)
+	Add-Type -Assembly System.Windows.Forms            
+	$ScreenBounds = [Windows.Forms.SystemInformation]::VirtualScreen
+	$ScreenshotObject = New-Object Drawing.Bitmap $ScreenBounds.Width, $ScreenBounds.Height
+	$DrawingGraphics = [Drawing.Graphics]::FromImage($ScreenshotObject)
+	$DrawingGraphics.CopyFromScreen( $ScreenBounds.Location, [Drawing.Point]::Empty, $ScreenBounds.Size)
+	$DrawingGraphics.Dispose()
+	$ScreenshotObject.Save($FilePath)
+	$ScreenshotObject.Dispose()
 }
 
 try {
 	if ($Directory -eq "") {
 		$Directory = "$PWD"
 	}
-	GetTimedScreenshots $Directory $Interval "23:59"
+
+	do {
+		$Time = (Get-Date)
+		$Filename = "$($Time.Year)-$($Time.Month)-$($Time.Day)-$($Time.Hour)-$($Time.Minute)-$($Time.Second).png"
+		$FilePath = (Join-Path $Directory $Filename)
+
+		write-output "Saving screenshot to $FilePath..."
+		TakeScreenshot $FilePath
+		Start-Sleep -Seconds $Interval
+	} while (1)
 	exit 0
 } catch {
 	write-error "ERROR in line $($_.InvocationInfo.ScriptLineNumber): $($Error[0])"
