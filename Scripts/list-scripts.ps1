@@ -6,16 +6,16 @@
 .NOTES		Author:	Markus Fleschutz / License: CC0
 #>
 
-function ListScripts { param([string]$Path)
-	write-progress "Reading $Path..."
-	$Table = import-csv "$Path"
+function ListScripts { param([string]$FilePath)
+	write-progress "Reading $FilePath..."
+	$Table = import-csv "$FilePath"
 	foreach($Row in $Table) {
 		New-Object PSObject -Property @{
 			'Script' = "$($Row.Filename)"
 			'Description' = "$($Row.Description)"
 		}
 	}
-	write-progress -completed "Reading $Path..."
+	write-progress -completed "Reading $FilePath..."
 	write-output ""
 	write-output "($($Table.Count) PowerShell scripts total)"
 }
