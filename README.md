@@ -7,6 +7,7 @@ List of Scripts
 ---------------
 The following PowerShell scripts can be found in the [Scripts/](Scripts/) subfolder:
 
+* [add-firewall-rules.ps1](Scripts/add-firewall-rules.ps1) - adds firewall rules for the given executables
 * [check-ipv4-address.ps1](Scripts/check-ipv4-address.ps1) - checks the given IPv4 address for validity
 * [check-mac-address.ps1](Scripts/check-mac-address.ps1) - checks the given MAC address for validity
 * [check-xml-file.ps1](Scripts/check-xml-file.ps1) - checks the given XML file for validity
