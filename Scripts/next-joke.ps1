@@ -7,9 +7,15 @@
 #>
 
 try {
-	$Response = (invoke-webRequest http://api.icndb.com/jokes/random).Content | ConvertFrom-Json
-	$Joke = $Response.value.joke
-	write-output "$Text"
+	$PathToRepo = "$PSScriptRoot/.."
+
+	$Table = import-csv "$PathToRepo/Data/jokes.csv"
+
+	$Generator = New-Object System.Random
+	$Index = [int]$Generator.next(0,66)
+
+	$Joke = $Table[$Index].Joke
+	write-output "$Joke"
 	exit 0
 } catch {
 	write-error "ERROR in line $($_.InvocationInfo.ScriptLineNumber): $($Error[0])"
