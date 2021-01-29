@@ -1,7 +1,7 @@
 Collection of Useful PowerShell Scripts
 =======================================
 
-This repository contains 100+ useful and cross-platform PowerShell scripts - to be used by command-line interface (CLI), for remote control (RC), by context menu, by voice control, by automation software (e.g. Jenkins), or simply to learn PowerShell.
+This repository contains 110+ useful and cross-platform PowerShell scripts - to be used by command-line interface (CLI), for remote control (RC), by context menu, by voice control, by automation software (e.g. Jenkins), or simply to learn PowerShell.
 
 List of Scripts
 ---------------
@@ -96,6 +96,7 @@ The following PowerShell scripts can be found in the [Scripts/](Scripts/) subfol
 * [txt2wav.ps1](Scripts/txt2wav.ps1) - converts text into a audio .WAV file
 * [unmute-audio.ps1](Scripts/unmute-audio.ps1) - unmutes audio
 * [update-repos.ps1](Scripts/update-repos.ps1) - updates all Git repositories under the current directory
+* [visualize-dir-tree.ps1](Scripts/visualize-dir-tree.ps1) - visualizes the given/current directory tree
 * [voice-control.ps1](Scripts/voice-control.ps1) - executes the PowerShell scripts by voice
 * [weather.ps1](Scripts/weather.ps1) - prints the current weather forecast
 * [weather-alert.ps1](Scripts/weather-alert.ps1) - checks the current weather for critical values
