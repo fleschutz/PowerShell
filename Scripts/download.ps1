@@ -6,7 +6,7 @@
 .NOTES		Author:	Markus Fleschutz / License: CC0
 #>
 
-param([string]$URL)
+param([string]$URL = "")
 
 try {
 	if ($URL -eq "" ) {
