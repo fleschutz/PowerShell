@@ -1,12 +1,12 @@
 #!/snap/bin/powershell
 <#
-.SYNTAX         ./wakeup.ps1 [<hostname>] [<MAC-address>]
-.DESCRIPTION	sends a magic packet to the given computer, waking him up
+.SYNTAX         ./wakeup.ps1 [<MAC-address>] [<IP-address>]
+.DESCRIPTION	sends a magic packet to the given computer to wake him up
 .LINK		https://github.com/fleschutz/PowerShell
 .NOTES		Author:	Markus Fleschutz / License: CC0
 #>
 
-param([string]$Hostname = "", [string]MACaddress = "")
+param([string]$MACaddress = "", [string]$IPaddress = "")
 
 function Send-WOL { param([string]$mac, [string]$ip="255.255.255.255", [int]$port=9) 
 	$broadcast = [Net.IPAddress]::Parse($ip) 
@@ -21,14 +21,18 @@ function Send-WOL { param([string]$mac, [string]$ip="255.255.255.255", [int]$por
 } 
 
 try {
-	if ($Hostname -eq "" ) {
-		$Hostname = read-host "Enter hostname or IP address"
-	}
 	if ($MACaddress -eq "" ) {
-		$MACaddress = read-host "Enter the MAC address"
+		$MACaddress = read-host "Enter the MAC address (e.g. 00:11:22:33:44:55)"
 	}
-	Send-WOL $MACaddress $Hostname
-	write-output "OK - sent magic packet to $Hostname (MAC $MACaddress) to wake him up"
+	if ($IPaddress -eq "" ) {
+		$IPaddress = read-host "Enter the IP address or subnet address (e.g. 255.255.255.255)"
+	}
+
+	Send-WOL $MACaddress $IPaddress
+	start-sleep -milliseconds 100
+	Send-WOL $MACaddress $IPaddress
+
+	write-output "OK - magic packet sent twice to IP $IPaddress (MAC $MACaddress)"
 	exit 0
 } catch {
 	write-error "ERROR in line $($_.InvocationInfo.ScriptLineNumber): $($Error[0])"
