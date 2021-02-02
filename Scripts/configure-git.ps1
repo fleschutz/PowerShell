@@ -4,8 +4,14 @@
 .DESCRIPTION	sets up the Git configuration
 .LINK		https://github.com/fleschutz/PowerShell
 .NOTES		Author:	Markus Fleschutz / License: CC0
-		requires installation of Git 
 #>
+
+try {
+	git --version
+} catch {
+	write-error "No Git installation found - make sure Git is installed"
+	exit 1
+}
 
 $FullName       = read-host "Enter your full name"
 $EmailAddress   = read-host "Enter your e-mail address"
@@ -18,7 +24,7 @@ try {
 	git config --global http.sslVerify false
 	git config --global core.autocrlf false
 	git config --global core.symlinks true
-#	git config --global init.defaultBranch main
+	git config --global init.defaultBranch main
 	write-output "OK - your Git configuration is now:"
 	git config --list
 	exit 0
