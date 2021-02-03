@@ -65,6 +65,7 @@ The following PowerShell scripts can be found in the [Scripts/](Scripts/) subfol
 * [open-email-client.ps1](Scripts/open-browser.ps1) - starts the default email client
 * [play-beep.ps1](Scripts/play-beep.ps1) - plays a beep sound
 * [poweroff.ps1](Scripts/poweroff.ps1) - halts the local computer (needs administrator rights)
+* [query-smart-data.ps1](Scripts/query-smart-data.ps1) - queries the S.M.A.R.T. data of your HDD/SSD's 
 * [new-email.ps1](Scripts/new-email.ps1) - starts the default email client to write a new email
 * [next-joke.ps1](Scripts/next-joke.ps1) - gets the next random Juck Norris joke
 * [reboot.ps1](Scripts/reboot.ps1) - reboots the local computer (needs administrator rights)
