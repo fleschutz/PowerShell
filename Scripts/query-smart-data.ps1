@@ -4,8 +4,8 @@
 .DESCRIPTION	queries the S.M.A.R.T. data of your HDD/SSD's and saves it to the current/given directory
 .LINK		https://github.com/fleschutz/PowerShell
 .NOTES		Author:	Markus Fleschutz / License: CC0
-                requires smartctl from smartmontools
-		it's recommended to call this script once per day
+                requires smartctl (smartmontools) and admin rights
+		for automation copy this script to /etc/cron.daily 
 #>
 
 #Requires -RunAsAdministrator

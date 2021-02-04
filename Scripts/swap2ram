@@ -5,7 +5,7 @@
 # Author:	Markus Fleschutz
 # Source:	github.com/fleschutz/PowerShell
 # License:	CC0
-# NOTE:		for automation copy me to /etc/cron.daily 
+# NOTE:		for automation copy this script to /etc/cron.daily 
 
 if ! [ $(id -u) = 0 ]; then
 	echo "Please run this script as root"
