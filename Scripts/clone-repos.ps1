@@ -20,7 +20,7 @@ try {
 			continue
 		}
 		write-output "Cloning from $URL..."
-		git clone $URL
+		git clone --recurse-submodules $URL
 	}
 	exit 0
 } catch {
