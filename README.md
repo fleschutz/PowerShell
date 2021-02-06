@@ -21,6 +21,7 @@ The following PowerShell scripts can be found in the [Scripts/](Scripts/) subfol
 * [close-windows-terminal.ps1](Scripts/close-windows-terminal.ps1) - closes Windows Terminal gracefully
 * [configure-git.ps1](Scripts/configure-git.ps1) - sets up the Git configuration
 * [csv-to-text.ps1](Scripts/csv-to-text.ps1) - converts the given CSV file into a text list
+* [daily-tasks.sh](Scripts/daily-tasks.sh) - execute PowerShell scripts automatically as daily tasks (Linux only)
 * [decrypt-file.ps1](Scripts/decrypt-file.ps1) - encrypts the given file
 * [display-time.ps1](Scripts/display-time.ps1) - displays the current time for 10 seconds by default
 * [download.ps1](Scripts/download.ps1) - downloads the file/directory from the given URL
