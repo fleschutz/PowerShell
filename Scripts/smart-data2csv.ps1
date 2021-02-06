@@ -1,7 +1,8 @@
 #!/snap/bin/powershell
 <#
 .SYNTAX         ./smart-data2csv.ps1 [<wildcard>]
-.DESCRIPTION	converts the given S.M.A.R.T. data (.json) to a CSV table
+.DESCRIPTION	converts the given S.M.A.R.T. data files (.json) to a CSV table for analysis
+                (use query-smart-data.ps1 to generate those .json files)
 .LINK		https://github.com/fleschutz/PowerShell
 .NOTES		Author:	Markus Fleschutz / License: CC0
 #>
@@ -9,19 +10,33 @@
 param([string]$Wildcard = "")
 
 function WriteCsvHeader { param([PSCustomObject]$File) 
-	for ([int]$i = 0; $i -lt 20; $i++) {
-		$ID = $File.ata_smart_attributes.table[$i].id
-		$Name = $File.ata_smart_attributes.table[$i].name
-		write-host -nonewline "$ID ($Name);"
+	foreach($Entry in $File.ata_smart_attributes.table) {
+		[int]$ID = $Entry.id
+		$Name = $Entry.name
+		write-host -nonewline "$Name ($ID);"
 	}
 	write-host ""
 }
 
-function WriteCsvRow { param([PSCustomObject]$File) 
-	for ([int]$i = 0; $i -lt 20; $i++) {
-		$ID = $File.ata_smart_attributes.table[$i].id
-		$Value = $File.ata_smart_attributes.table[$i].value
-		write-host -nonewline "$Value;"
+function WriteCsvDataRow { param([PSCustomObject]$File) 
+	foreach($Entry in $File.ata_smart_attributes.table) {
+		[int]$ID = $Entry.id
+		switch ($ID) {
+		1 { write-host -nonewline "$($Entry.raw.value);" }
+		4 { write-host -nonewline "$($Entry.raw.value);" }
+		7 { write-host -nonewline "$($Entry.raw.value);" }
+		9 { write-host -nonewline "$($Entry.raw.value);" }
+		12 { write-host -nonewline "$($Entry.raw.value);" }
+		190 { write-host -nonewline "$($Entry.raw.string);" }
+		191 { write-host -nonewline "$($Entry.raw.value);" }
+		192 { write-host -nonewline "$($Entry.raw.value);" }
+		193 { write-host -nonewline "$($Entry.raw.value);" }
+		195 { write-host -nonewline "$($Entry.raw.value);" }
+		240 { write-host -nonewline "$($Entry.raw.string);" }
+		241 { write-host -nonewline "$($Entry.raw.value);" }
+		242 { write-host -nonewline "$($Entry.raw.value);" }
+		default { write-host -nonewline "$($Entry.value);" }
+		}
 	}
 	write-host ""
 }
@@ -34,6 +49,7 @@ try {
 	$Filenames = get-childitem -path $Wildcard
 	$ModelFamily = $ModelName = $SerialNumber = ""
 
+	[int]$Row = 1
 	foreach($Filename in $Filenames) {
 		$File = get-content $Filename | ConvertFrom-Json
 
@@ -62,8 +78,11 @@ try {
 			}
 		}
 
-		WriteCsvHeader $File
-		WriteCsvRow $File
+		if ($Row -eq 1) {
+			WriteCsvHeader $File
+		}
+		WriteCsvDataRow $File
+		$Row++
 	}
 	exit 0
 } catch {
