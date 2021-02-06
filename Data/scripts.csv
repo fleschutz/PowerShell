@@ -79,6 +79,7 @@ simulate-presence.ps1, simulates the human presence against burglars
 speak-date.ps1, speaks the current date by text-to-speech (TTS)
 speak-epub.ps1, speaks the content of the given Epub file by text-to-speech (TTS)
 speak-file.ps1, speaks the content of the given text file by text-to-speech (TTS)
+speak-joke.ps1, speaks the next joke by text-to-speech (TTS)
 speak-test.ps1, performs a speak test by text-to-speech (TTS)
 speak-text.ps1, speaks the given text by text-to-speech (TTS)
 speak-time.ps1, speaks the current time by text-to-speech (TTS)
