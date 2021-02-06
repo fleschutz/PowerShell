@@ -1,6 +1,6 @@
 #!/snap/bin/powershell
 <#
-.SYNTAX         ./write-marquee.ps1 [<text>] <speed>]
+.SYNTAX         ./write-marquee.ps1 [<text>] [<speed>]
 .DESCRIPTION	writes the given text as marquee
 .LINK		https://github.com/fleschutz/PowerShell
 .NOTES		Author:	Markus Fleschutz / License: CC0

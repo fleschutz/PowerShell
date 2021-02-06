@@ -107,6 +107,7 @@ The following PowerShell scripts can be found in the [Scripts/](Scripts/) subfol
 * [weather-report.ps1](Scripts/weather-report.ps1) - prints the local weather report
 * [weather-worldwide.ps1](Scripts/weather-worldwide.ps1) - prints the current weather of cities worldwide
 * [wakeup.ps1](Scripts/wakeup.ps1) - sends a magic packet to the given computer, waking him up
+* [write-animated.ps1](Scripts/write-animated.ps1) - writes animated text
 * [write-big.ps1](Scripts/write-big.ps1) - writes the given text in big letters
 * [write-blue.ps1](Scripts/write-blue.ps1) - writes the given text in a blue foreground color
 * [write-braille.ps1](Scripts/write-braille.ps1) - writes the given text in Braille
