@@ -1,7 +1,7 @@
 #!/snap/bin/powershell
 <#
 .SYNTAX         ./reboot.ps1
-.DESCRIPTION	reboots the local computer, administrator rights are required
+.DESCRIPTION	reboots the local computer (requires admin rights)
 .LINK		https://github.com/fleschutz/PowerShell
 .NOTES		Author:	Markus Fleschutz / License: CC0
 #>

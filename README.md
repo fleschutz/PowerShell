@@ -7,7 +7,7 @@ List of Scripts
 ---------------
 The following PowerShell scripts can be found in the [Scripts/](Scripts/) subfolder:
 
-* [add-firewall-rules.ps1](Scripts/add-firewall-rules.ps1) - adds firewall rules for the given executables
+* [add-firewall-rules.ps1](Scripts/add-firewall-rules.ps1) - adds firewall rules for the given executables (requires admin rights)
 * [check-ipv4-address.ps1](Scripts/check-ipv4-address.ps1) - checks the given IPv4 address for validity
 * [check-mac-address.ps1](Scripts/check-mac-address.ps1) - checks the given MAC address for validity
 * [check-xml-file.ps1](Scripts/check-xml-file.ps1) - checks the given XML file for validity
@@ -28,6 +28,7 @@ The following PowerShell scripts can be found in the [Scripts/](Scripts/) subfol
 * [enable-crash-dumps.ps1](Scripts/enable-crash-dumps.ps1) - enables the writing of crash dumps
 * [encrypt-file.ps1](Scripts/encrypt-file.ps1) - encrypts the given file
 * [generate-qrcode.ps1](Scripts/generate-qrcode.ps1) - generates a QR code
+* [hibernate.ps1](Scripts/hibernate.ps1) - enables hibernate mode for the local computer (requires admin rights)
 * [inspect-exe.ps1](Scripts/inspect-exe.ps1) - prints basic information of the given executable file
 * [list-anagrams.ps1](Scripts/list-anagrams.ps1) - lists all anagrams of the given word
 * [list-automatic-variables.ps1](Scripts/list-automatic-variables.ps1) - lists PowerShell automatic variables 
@@ -64,11 +65,11 @@ The following PowerShell scripts can be found in the [Scripts/](Scripts/) subfol
 * [open-calculator.ps1](Scripts/open-calculator.ps1) - starts the calculator program
 * [open-email-client.ps1](Scripts/open-browser.ps1) - starts the default email client
 * [play-beep.ps1](Scripts/play-beep.ps1) - plays a beep sound
-* [poweroff.ps1](Scripts/poweroff.ps1) - halts the local computer (needs administrator rights)
+* [poweroff.ps1](Scripts/poweroff.ps1) - halts the local computer (requires admin rights)
 * [query-smart-data.ps1](Scripts/query-smart-data.ps1) - queries the S.M.A.R.T. data of your HDD/SSD's 
 * [new-email.ps1](Scripts/new-email.ps1) - starts the default email client to write a new email
 * [next-joke.ps1](Scripts/next-joke.ps1) - gets the next random Juck Norris joke
-* [reboot.ps1](Scripts/reboot.ps1) - reboots the local computer (needs administrator rights)
+* [reboot.ps1](Scripts/reboot.ps1) - reboots the local computer (requires admin rights)
 * [reboot-fritzbox.ps1](Scripts/reboot-fritzbox.ps1) - reboots the FRITZ!box device
 * [search-files.ps1](Scripts/search-files.ps1) - searches the given pattern in the given files
 * [scan-ports.ps1](Scripts/scan-ports.ps1) - scans the network for open/closed ports

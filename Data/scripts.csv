@@ -1,5 +1,5 @@
 Filename,Description
-add-firewall-rules.ps1, adds firewall rules to the given executables, requires admin rights
+add-firewall-rules.ps1, adds firewall rules to the given executables (requires admin rights)
 check-ipv4-address.ps1, checks the given IPv4 address for validity
 check-mac-address.ps1, checks the given MAC address for validity
 check-xml-file.ps1, checks the given XML file for validity
@@ -20,6 +20,7 @@ empty-dir.ps1, empties the given directory
 enable-crash-dumps.ps1, enables the writing of crash dumps
 encrypt-file.ps1, encrypts the given file
 generate-qrcode.ps1, generates a QR code
+hibernate.ps1, enables hibernate mode for the local computer (requires admin rights)
 inspect-exe.ps1, prints basic information of the given executable file
 list-anagrams.ps1, lists all anagrams of the given word
 list-automatic-variables.ps1, lists PowerShell automatic variables 
@@ -57,10 +58,10 @@ open-browser.ps1, starts the default Web browser
 open-calculator.ps1, starts the calculator program
 open-email-client.ps1, starts the default email client
 play-beep.ps1, plays a beep sound
-poweroff.ps1, halts the local computer (needs administrator rights)
+poweroff.ps1, halts the local computer (requires admin rights)
 query-smart-data.ps1, queries the S.M.A.R.T. data of your HDD/SSD's and saves it to the current/given directory
 new-email.ps1, starts the default email client to write a new email
-reboot.ps1, reboots the local computer (needs administrator rights)
+reboot.ps1, reboots the local computer (requires admin rights)
 reboot-fritzbox.ps1, reboots the FRITZ!box device
 search-files.ps1, searches the given pattern in the given files
 scan-ports.ps1, scans the network for open/closed ports
