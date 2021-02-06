@@ -13,17 +13,19 @@ function VisualizeDirectory { param([string]$Directory, [int]$Depth)
 	$Items = get-childItem -path $Directory
 	foreach ($Item in $Items) {
 		$Filename = $Item.Name
-		if ($Item.Mode -eq "d----") {
+		if ($Item.Mode -like "d*") {
 			for ($i = 0; $i -lt $Depth; $i++) {
 				write-host -nonewline "+--"
 			}
-			write-host "$Filename/"
+			write-host -foregroundColor green "$Filename/"
 			VisualizeDirectory "$Directory\$Filename" $Depth
+			$global:NumDirs++
 		} else {
 			for ($i = 1; $i -lt $Depth; $i++) {
 				write-host -nonewline "|  "
 			}
-			write-host "|-$Filename"
+			write-host "|-$Filename ($($Item.Length) bytes)"
+			$global:NumBytes += $Item.Length
 		}
 	}
 }
@@ -32,7 +34,10 @@ try {
 	if ($DirTree -eq "") {
 		$DirTree = "$PWD"
 	}
+	$global:NumDirs = 1
+	$global:NumBytes = 0
 	VisualizeDirectory $DirTree 0
+	write-host "($($global:NumDirs) dirs, $($global:NumBytes) bytes total)"
 	exit 0
 } catch {
 	write-error "ERROR in line $($_.InvocationInfo.ScriptLineNumber): $($Error[0])"
