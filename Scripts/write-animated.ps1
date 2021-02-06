@@ -43,4 +43,5 @@ WriteAnimatedLine $Line6 $Speed
 WriteAnimatedLine $Line7 $Speed
 WriteAnimatedLine $Line8 $Speed
 WriteAnimatedLine $Line9 $Speed
+write-host ""
 exit 0
