@@ -11,7 +11,7 @@ param([string]$Dir = "")
 function ListDirectory { param([string]$Path)
 	$Items = get-childItem -path $Path
 	foreach ($Item in $Items) {
-		if ($Item.Mode -eq "d----") {
+		if ($Item.Mode -like "d*") {
                     	New-Object PSObject -Property @{ Filename = "$($Item.Name)/" }
 		} else {
                     	New-Object PSObject -Property @{ Filename = "$($Item.Name)" }

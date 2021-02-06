@@ -14,7 +14,7 @@ try {
 	}
 	$Items = get-childItem -path $Directory
 	foreach ($Item in $Items) {
-		if ($Item.Mode -eq "d----") {
+		if ($Item.Mode -like "d*") {
 			$Filename = $Item.Name
 			write-host ""
 			write-host -nonewline "Updating $Filename ..."
