@@ -1,13 +1,13 @@
 #!/snap/bin/powershell
 <#
-.SYNTAX         ./smart-data2csv.ps1 [<wildcard>]
-.DESCRIPTION	converts the given S.M.A.R.T. data files (.json) to a CSV table for analysis
-                (use query-smart-data.ps1 to generate those .json files)
+.SYNTAX         ./smart-data2csv.ps1 [<directory>]
+.DESCRIPTION	converts the S.M.A.R.T. JSON files in the current/given directory to a CSV table for analysis
+                (use query-smart-data.ps1 to generate those JSON files)
 .LINK		https://github.com/fleschutz/PowerShell
 .NOTES		Author:	Markus Fleschutz / License: CC0
 #>
 
-param([string]$Wildcard = "")
+param([string]$Directory = "")
 
 function WriteCsvHeader { param([PSCustomObject]$File) 
 	foreach($Entry in $File.ata_smart_attributes.table) {
@@ -42,11 +42,11 @@ function WriteCsvDataRow { param([PSCustomObject]$File)
 }
 
 try {
-	if ($Wildcard -eq "" ) {
-		$Wildcard = read-host "Enter path to S.M.A.R.T data (.json file)"
+	if ($Directory -eq "" ) {
+		$Directory = "$PWD"
 	}
 
-	$Filenames = get-childitem -path $Wildcard
+	$Filenames = get-childitem -path "$Directory/SMART*.json"
 	$ModelFamily = $ModelName = $SerialNumber = ""
 
 	[int]$Row = 1
