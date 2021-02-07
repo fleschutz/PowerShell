@@ -1,20 +1,20 @@
 #!/snap/bin/powershell
 <#
-.SYNTAX         ./zip-dir.ps1 [<path-to-folder>]
-.DESCRIPTION	creates a zip archive of the given folder
+.SYNTAX         ./zip-dir.ps1 [<directory>]
+.DESCRIPTION	creates a zip archive of the given directory
 .LINK		https://github.com/fleschutz/PowerShell
 .NOTES		Author:	Markus Fleschutz / License: CC0
 #>
 
-param([string]$Path = "")
+param([string]$Directory = "")
 
 try {
-	if ($Path -eq "" ) {
-		$URL = read-host "Enter path to folder"
+	if ($Directory -eq "" ) {
+		$Directory = read-host "Enter path to directory to zip"
 	}
 
-	compress-archive -path $Path -destinationPath $Path.zip
-	write-output "OK - folder has been compressed to $($Path).zip"
+	compress-archive -path $Directory -destinationPath $Directory.zip
+	write-output "OK - created zip archive $($Directory).zip"
 	exit 0
 } catch {
 	write-error "ERROR in line $($_.InvocationInfo.ScriptLineNumber): $($Error[0])"

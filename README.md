@@ -19,7 +19,7 @@ The following PowerShell scripts can be found in the [Scripts/](Scripts/) subfol
 * [close-program.ps1](Scripts/close-program.ps1) - closes the given program gracefully
 * [close-thunderbird.ps1](Scripts/close-thunderbird.ps1) - closes Mozilla Thunderbird gracefully
 * [close-windows-terminal.ps1](Scripts/close-windows-terminal.ps1) - closes Windows Terminal gracefully
-* [configure-git.ps1](Scripts/configure-git.ps1) - sets up the Git configuration
+* [configure-git.ps1](Scripts/configure-git.ps1) - sets up the Git user configuration
 * [csv-to-text.ps1](Scripts/csv-to-text.ps1) - converts the given CSV file into a text list
 * [daily-tasks.sh](Scripts/daily-tasks.sh) - execute PowerShell scripts automatically as daily tasks (Linux only)
 * [decrypt-file.ps1](Scripts/decrypt-file.ps1) - encrypts the given file
@@ -123,7 +123,7 @@ The following PowerShell scripts can be found in the [Scripts/](Scripts/) subfol
 * [write-typewriter.ps1](Scripts/write-typewriter.ps1) - writes the given text with the typewriter effect
 * [write-uppercase.ps1](Scripts/write-uppercase.ps1) - writes the given text in uppercase letters
 * [write-vertical.ps1](Scripts/write-vertical.ps1) - writes the given text in vertical direction
-* [zip-dir.ps1](Scripts/zip-dir.ps1) - creates a zip archive of the given folder
+* [zip-dir.ps1](Scripts/zip-dir.ps1) - creates a zip archive of the given directory
 
 
 What is PowerShell?
