@@ -14,6 +14,9 @@ try {
 	foreach ($OtherVoice in $Voices) {
 		$Description = $OtherVoice.GetDescription()
 		if ($Description -like "*- English*") {
+			if ($Text -eq "") {
+				$Text = read-host "Enter the text to speak"
+			}
 			write-progress "$Text"
 			$Voice.Voice = $OtherVoice
 			[void]$Voice.Speak($Text)
