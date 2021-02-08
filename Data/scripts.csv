@@ -24,7 +24,7 @@ generate-qrcode.ps1, generates a QR code
 hibernate.ps1, enables hibernate mode for the local computer (requires admin rights)
 inspect-exe.ps1, prints basic information of the given executable file
 list-anagrams.ps1, lists all anagrams of the given word
-list-automatic-variables.ps1, lists PowerShell automatic variables 
+list-automatic-variables.ps1, lists the automatic variables of PowerShell 
 list-current-timezone.ps1, lists the current time zone details
 list-clipboard.ps1, lists the contents of the clipboard
 list-environment-variables.ps1, lists all environment variables

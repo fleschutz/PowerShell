@@ -1,7 +1,7 @@
 #!/snap/bin/powershell
 <#
 .SYNTAX         ./list-automatic-variables.ps1
-.DESCRIPTION	lists PowerShell automatic variables
+.DESCRIPTION	lists the automatic variables of PowerShell 
 .LINK		https://github.com/fleschutz/PowerShell
 .NOTES		Author:	Markus Fleschutz / License: CC0
 #>

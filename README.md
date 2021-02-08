@@ -32,7 +32,7 @@ The following PowerShell scripts can be found in the [Scripts/](Scripts/) subfol
 * [hibernate.ps1](Scripts/hibernate.ps1) - enables hibernate mode for the local computer (requires admin rights)
 * [inspect-exe.ps1](Scripts/inspect-exe.ps1) - prints basic information of the given executable file
 * [list-anagrams.ps1](Scripts/list-anagrams.ps1) - lists all anagrams of the given word
-* [list-automatic-variables.ps1](Scripts/list-automatic-variables.ps1) - lists PowerShell automatic variables 
+* [list-automatic-variables.ps1](Scripts/list-automatic-variables.ps1) - lists the automatic variables of PowerShell 
 * [list-clipboard.ps1](Scripts/list-clipboard.ps1) - lists the contents of the clipboard
 * [list-current-timezone.ps1](Scripts/list-current-timezone.ps1) - lists the current time zone details
 * [list-environment-variables.ps1](Scripts/list-environment-variables.ps1) - lists all environment variables
