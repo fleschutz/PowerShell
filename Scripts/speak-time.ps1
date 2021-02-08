@@ -6,24 +6,9 @@
 .NOTES		Author:	Markus Fleschutz / License: CC0
 #>
 
-function Speak { param([string]$Text)
-	write-progress "$Text"
-	$Voice = new-object -ComObject SAPI.SPVoice
-	$Voices = $Voice.GetVoices()
-	foreach ($OtherVoice in $Voices) {
-		$Description = $OtherVoice.GetDescription()
-		if ($Description -like "*- English (United States)") {
-			$Voice.Voice = $OtherVoice
-			break
-		}
-	}
-	[void]$Voice.Speak($Text)
-	write-progress -complete "$Text"
-}
-
 try {
 	[system.threading.thread]::currentthread.currentculture=[system.globalization.cultureinfo]"en-US"
-	Speak("It's now $((Get-Date).ToShortTimeString())")
+	& ./speak-english.ps1 "It's now $((Get-Date).ToShortTimeString())"
 	exit 0
 } catch {
 	write-error "ERROR in line $($_.InvocationInfo.ScriptLineNumber): $($Error[0])"

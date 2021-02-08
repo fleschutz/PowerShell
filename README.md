@@ -88,6 +88,7 @@ The following PowerShell scripts can be found in the [Scripts/](Scripts/) subfol
 * [speak-english.ps1](Scripts/speak-english.ps1) - speaks the given text with an English text-to-speech (TTS) voice
 * [speak-epub.ps1](Scripts/speak-epub.ps1) - speaks the content of the given Epub file by text-to-speech (TTS)
 * [speak-file.ps1](Scripts/speak-file.ps1) - speaks the content of the given text file by text-to-speech (TTS)
+* [speak-german.ps1](Scripts/speak-german.ps1) - speaks the given text with a German text-to-speech (TTS) voice
 * [speak-joke.ps1](Scripts/speak-joke.ps1) - speaks the next joke by text-to-speech (TTS)
 * [speak-test.ps1](Scripts/speak-test.ps1) - performs a speak test by text-to-speech (TTS)
 * [speak-text.ps1](Scripts/speak-text.ps1) - speaks the given text by text-to-speech (TTS)

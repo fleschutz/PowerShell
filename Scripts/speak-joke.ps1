@@ -6,21 +6,6 @@
 .NOTES		Author:	Markus Fleschutz / License: CC0
 #>
 
-function Speak { param([string]$Text)
-	write-progress "$Text"
-	$Voice = new-object -ComObject SAPI.SPVoice
-	$Voices = $Voice.GetVoices()
-	foreach ($OtherVoice in $Voices) {
-		$Description = $OtherVoice.GetDescription()
-		if ($Description -like "*- English (United States)") {
-			$Voice.Voice = $OtherVoice
-			break
-		}
-	}
-	[void]$Voice.Speak($Text)
-	write-progress -complete "$Text"
-}
-
 try {
 	$PathToRepo = "$PSScriptRoot/.."
 
@@ -31,8 +16,7 @@ try {
 
 	$Joke = $Table[$Index].Joke
 
-	[system.threading.thread]::currentthread.currentculture=[system.globalization.cultureinfo]"en-US"
-	Speak $Joke
+	& ./speak-english.ps1 "$Joke"
 	exit 0
 } catch {
 	write-error "ERROR in line $($_.InvocationInfo.ScriptLineNumber): $($Error[0])"
