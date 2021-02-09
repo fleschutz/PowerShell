@@ -1,4 +1,4 @@
-#!/snap/bin/powershell
+#!/bin/powershell
 <#
 .SYNTAX         ./update-repos.ps1 [<directory>]
 .DESCRIPTION	updates all Git repositories under the current directory

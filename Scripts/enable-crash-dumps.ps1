@@ -1,4 +1,4 @@
-#!/snap/bin/powershell
+#!/bin/powershell
 <#
 .SYNTAX         ./enable-crash-dumps.ps1 
 .DESCRIPTION	enables the writing of crash dumps

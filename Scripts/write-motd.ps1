@@ -1,4 +1,4 @@
-#!/snap/bin/powershell
+#!/bin/powershell
 <#
 .SYNTAX         ./write-motd.ps1 
 .DESCRIPTION	writes the message of the day (MOTD)

@@ -1,4 +1,4 @@
-#!/snap/bin/powershell
+#!/bin/powershell
 <#
 .SYNTAX         ./reboot-fritzbox.ps1 [<username>] [<password>]
 .DESCRIPTION	reboots the FRITZ!Box device

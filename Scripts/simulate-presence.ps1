@@ -1,4 +1,4 @@
-#!/snap/bin/powershell
+#!/bin/powershell
 <#
 .SYNTAX         ./simulate-presence.ps1 [<IP-address>]
 .DESCRIPTION	simulates the human presence against burglars

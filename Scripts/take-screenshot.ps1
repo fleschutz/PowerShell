@@ -1,4 +1,4 @@
-#!/snap/bin/powershell
+#!/bin/powershell
 <#
 .SYNTAX         ./take-screenshot.ps1 [<directory>]
 .DESCRIPTION	takes a single screenshot and saves it into the current/given directory

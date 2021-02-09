@@ -1,4 +1,4 @@
-#!/snap/bin/powershell
+#!/bin/powershell
 <#
 .SYNTAX         ./speak-english.ps1 [<text>]
 .DESCRIPTION	speaks the given text with an English text-to-speech (TTS) voice

@@ -1,4 +1,4 @@
-#!/snap/bin/powershell
+#!/bin/powershell
 <#
 .SYNTAX         ./locate-city.ps1 [<city>]
 .DESCRIPTION	prints the geographic location of the given city

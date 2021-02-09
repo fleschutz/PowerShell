@@ -152,7 +152,7 @@ $ git clone https://github.com/fleschutz/PowerShell
 
 Configure PowerShell as Default Shell
 -------------------------------------
-* **Linux:** make sure PowerShell is installed, then execute: `chsh -s /snap/bin/powershell <username>`
+* **Linux:** make sure PowerShell is installed, then execute: `chsh -s /bin/powershell <username>`
 * **Windows:** no need to, PowerShell is the default shell
 
 
@@ -174,7 +174,7 @@ Script Conventions
 Each PowerShell script should follow the 8 golden rules:
 
 1. the filename should be named `<verb>-<object>.ps1`
-2. the first line reads `#!/snap/bin/powershell` to support PowerShell on Linux
+2. the first line reads `#!/bin/powershell` to support PowerShell on Linux
 3. the script has execute file permissions (chmod a+rx <file>) to support PowerShell on Linux
 4. provide a comment-based help with syntax, description, link, author, and license
 5. prefer command-line options, else ask the user

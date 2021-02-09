@@ -1,4 +1,4 @@
-#!/snap/bin/powershell
+#!/bin/powershell
 <#
 .SYNTAX         ./SHA1.ps1 [<file>]
 .DESCRIPTION	prints the SHA1 checksum of the given file

@@ -1,4 +1,4 @@
-#!/snap/bin/powershell
+#!/bin/powershell
 <#
 .SYNTAX         ./next-joke.ps1 
 .DESCRIPTION	gets the next random Juck Norris joke

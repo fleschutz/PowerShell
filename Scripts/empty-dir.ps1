@@ -1,4 +1,4 @@
-#!/snap/bin/powershell
+#!/bin/powershell
 <#
 .SYNTAX         ./empty-dir.ps1 [<path-to-dir>]
 .DESCRIPTION	Empties the given directory by removing(!) any file and subdirectories.

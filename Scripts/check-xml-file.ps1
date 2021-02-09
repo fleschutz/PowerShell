@@ -1,4 +1,4 @@
-#!/snap/bin/powershell
+#!/bin/powershell
 <#
 .SYNTAX         ./check-xml-file [<file>]
 .DESCRIPTION	checks the given XML file for validity

@@ -1,4 +1,4 @@
-#!/snap/bin/powershell
+#!/bin/powershell
 <#
 .SYNTAX         ./open-calculator.ps1
 .DESCRIPTION	starts the calculator program

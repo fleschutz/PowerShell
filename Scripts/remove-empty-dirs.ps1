@@ -1,4 +1,4 @@
-#!/snap/bin/powershell
+#!/bin/powershell
 <#
 .SYNTAX         ./remove-empty-dirs.ps1 [<dir-tree>]
 .DESCRIPTION	removes empty subfolders within the given directory tree

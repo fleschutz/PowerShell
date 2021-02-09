@@ -1,4 +1,4 @@
-#!/snap/bin/powershell
+#!/bin/powershell
 <#
 .SYNTAX         ./send-email.ps1 
 .DESCRIPTION	sends an email

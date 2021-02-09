@@ -1,4 +1,4 @@
-#!/snap/bin/powershell
+#!/bin/powershell
 <#
 .SYNTAX         ./voice-control.ps1 
 .DESCRIPTION	executes the PowerShell scripts by voice

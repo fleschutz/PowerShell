@@ -1,4 +1,4 @@
-#!/snap/bin/powershell
+#!/bin/powershell
 <#
 .SYNTAX         ./alert.ps1 [<message>]
 .DESCRIPTION	handle and escalate the given alert message

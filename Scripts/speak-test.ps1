@@ -1,4 +1,4 @@
-#!/snap/bin/powershell
+#!/bin/powershell
 <#
 .SYNTAX         ./speak-test.ps1
 .DESCRIPTION	performs a test speak by text-to-speech (TTS)

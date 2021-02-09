@@ -1,4 +1,4 @@
-#!/snap/bin/powershell
+#!/bin/powershell
 <#
 .SYNTAX         ./weather-report.ps1 [<geo-location>]
 .DESCRIPTION	prints the local weather report 

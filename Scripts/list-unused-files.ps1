@@ -1,4 +1,4 @@
-#!/snap/bin/powershell
+#!/bin/powershell
 <#
 .SYNTAX         ./list-unused-files.ps1 <dirtree> <days>
 .DESCRIPTION	lists files in the <directory tree> with last access time older than <days>

@@ -1,4 +1,4 @@
-#!/snap/bin/powershell
+#!/bin/powershell
 <#
 .SYNTAX         ./list-installed-software.ps1
 .DESCRIPTION	lists the installed software

@@ -1,4 +1,4 @@
-#!/snap/bin/powershell
+#!/bin/powershell
 <#
 .SYNTAX         ./list-fritzbox-calls.ps1 [<username>] [<password>]
 .DESCRIPTION	lists the phone calls of the FRITZ!Box device

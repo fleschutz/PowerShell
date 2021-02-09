@@ -1,4 +1,4 @@
-#!/snap/bin/powershell
+#!/bin/powershell
 <#
 .SYNTAX         ./list-processes.ps1 
 .DESCRIPTION	lists the local computer processes

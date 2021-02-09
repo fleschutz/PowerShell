@@ -1,4 +1,4 @@
-#!/snap/bin/powershell
+#!/bin/powershell
 <#
 .SYNTAX         ./set-wallpaper.ps1 [<image-file>] [<style>]
 .DESCRIPTION	sets the given image file as wallpaper

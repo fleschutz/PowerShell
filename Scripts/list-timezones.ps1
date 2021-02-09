@@ -1,4 +1,4 @@
-#!/snap/bin/powershell
+#!/bin/powershell
 <#
 .SYNTAX         ./list-timezones.ps1 
 .DESCRIPTION	lists all time zones available

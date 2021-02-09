@@ -1,4 +1,4 @@
-#!/snap/bin/powershell
+#!/bin/powershell
 <#
 .SYNTAX         ./search-files.ps1 [<pattern>] [<path>]
 .DESCRIPTION	searches the given pattern in the given files

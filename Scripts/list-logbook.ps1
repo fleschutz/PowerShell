@@ -1,4 +1,4 @@
-#!/snap/bin/powershell
+#!/bin/powershell
 <#
 .SYNTAX         ./list-logbook.ps1 
 .DESCRIPTION	lists the content of the logbook (in ../Data/logbook.csv)

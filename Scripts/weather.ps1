@@ -1,4 +1,4 @@
-#!/snap/bin/powershell
+#!/bin/powershell
 <#
 .SYNTAX         ./weather.ps1 [<geo-location>]
 .DESCRIPTION	prints the current weather forecast

@@ -1,4 +1,4 @@
-#!/snap/bin/powershell
+#!/bin/powershell
 <#
 .SYNTAX         ./list-random-pins.ps1 [<pin-length>] [<columns>] [<rows>]
 .DESCRIPTION	prints a list of random PIN's

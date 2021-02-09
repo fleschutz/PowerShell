@@ -1,4 +1,4 @@
-#!/snap/bin/powershell
+#!/bin/powershell
 <#
 .SYNTAX         ./txt2wav.ps1
 .DESCRIPTION	converts the given text into an audio .WAV file

@@ -1,4 +1,4 @@
-#!/snap/bin/powershell
+#!/bin/powershell
 <#
 .SYNTAX         ./list-environment-variables.ps1
 .DESCRIPTION	lists all environment variables

@@ -1,4 +1,4 @@
-#!/snap/bin/powershell
+#!/bin/powershell
 <#
 .SYNTAX         ./turn-volume-up.ps1 [<percent>]
 .DESCRIPTION	turns the audio volume up (+10% by default)

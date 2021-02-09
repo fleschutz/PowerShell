@@ -1,4 +1,4 @@
-#!/snap/bin/powershell
+#!/bin/powershell
 <#
 .SYNTAX         ./zip-dir.ps1 [<directory>]
 .DESCRIPTION	creates a zip archive of the given directory

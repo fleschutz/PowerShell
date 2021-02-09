@@ -1,4 +1,4 @@
-#!/snap/bin/powershell
+#!/bin/powershell
 <#
 .SYNTAX         ./list-clipboard.ps1
 .DESCRIPTION	lists the contents of the clipboard

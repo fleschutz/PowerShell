@@ -1,4 +1,4 @@
-#!/snap/bin/powershell
+#!/bin/powershell
 <#
 .SYNTAX         ./write-blue.ps1 [<text>]
 .DESCRIPTION	writes the given text in a blue foreground color

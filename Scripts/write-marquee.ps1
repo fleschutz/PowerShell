@@ -1,4 +1,4 @@
-#!/snap/bin/powershell
+#!/bin/powershell
 <#
 .SYNTAX         ./write-marquee.ps1 [<text>] [<speed>]
 .DESCRIPTION	writes the given text as marquee

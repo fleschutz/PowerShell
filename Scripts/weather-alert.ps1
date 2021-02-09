@@ -1,4 +1,4 @@
-#!/snap/bin/powershell
+#!/bin/powershell
 <#
 .SYNTAX         ./weather-alert.ps1
 .DESCRIPTION	checks the current weather for critical values

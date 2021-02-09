@@ -1,4 +1,4 @@
-#!/snap/bin/powershell
+#!/bin/powershell
 <#
 .SYNTAX         ./write-typewriter.ps1 [<text>] [<speed>]
 .DESCRIPTION	writes the given text with the typewriter effect

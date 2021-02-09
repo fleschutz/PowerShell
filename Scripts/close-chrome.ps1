@@ -1,4 +1,4 @@
-#!/snap/bin/powershell
+#!/bin/powershell
 <#
 .SYNTAX         ./close-chrome.ps1 
 .DESCRIPTION	closes Google Chrome gracefully

@@ -1,4 +1,4 @@
-#!/snap/bin/powershell
+#!/bin/powershell
 <#
 .SYNTAX         ./simulate-matrix.ps1 
 .DESCRIPTION	simulates the Matrix (fun)

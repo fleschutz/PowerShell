@@ -1,4 +1,4 @@
-#!/snap/bin/powershell
+#!/bin/powershell
 <#
 .SYNTAX         ./switch-shelly1.ps1 [<IP-address>] [<turn-mode>] [<timer>]
 .DESCRIPTION	switches a Shelly1 device in the local network

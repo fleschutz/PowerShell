@@ -1,4 +1,4 @@
-#!/snap/bin/powershell
+#!/bin/powershell
 <#
 .SYNTAX         ./MD5.ps1 [<file>]
 .DESCRIPTION	prints the MD5 checksum of the given file

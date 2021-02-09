@@ -1,4 +1,4 @@
-#!/snap/bin/powershell
+#!/bin/powershell
 <#
 .SYNTAX         ./reboot.ps1
 .DESCRIPTION	reboots the local computer (requires admin rights)

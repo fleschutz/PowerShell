@@ -1,4 +1,4 @@
-#!/snap/bin/powershell
+#!/bin/powershell
 <#
 .SYNTAX         ./scan-ports.ps1
 .DESCRIPTION	scans the network for open/closed ports

@@ -1,4 +1,4 @@
-#!/snap/bin/powershell
+#!/bin/powershell
 <#
 .SYNTAX         ./download.ps1 [<URL>]
 .DESCRIPTION	downloads the file/directory from the given URL

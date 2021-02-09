@@ -1,4 +1,4 @@
-#!/snap/bin/powershell
+#!/bin/powershell
 <#
 .SYNTAX         ./translate-text.ps1 [<text>] [<source-lang>]
 .DESCRIPTION	translates the given text into other languages

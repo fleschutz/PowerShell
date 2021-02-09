@@ -1,4 +1,4 @@
-#!/snap/bin/powershell
+#!/bin/powershell
 <#
 .SYNTAX         ./list-os-releases.ps1
 .DESCRIPTION	lists OS releases and download URL

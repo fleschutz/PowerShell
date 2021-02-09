@@ -1,4 +1,4 @@
-#!/snap/bin/powershell
+#!/bin/powershell
 <#
 .SYNTAX         ./check-mac-address.ps1 [<MAC>]
 .DESCRIPTION	checks the given MAC address for validity

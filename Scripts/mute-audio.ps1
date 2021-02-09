@@ -1,4 +1,4 @@
-#!/snap/bin/powershell
+#!/bin/powershell
 <#
 .SYNTAX         ./mute-audio.ps1
 .DESCRIPTION	mutes the audio

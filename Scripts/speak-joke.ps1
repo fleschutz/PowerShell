@@ -1,4 +1,4 @@
-#!/snap/bin/powershell
+#!/bin/powershell
 <#
 .SYNTAX         ./speak-joke.ps1
 .DESCRIPTION	speaks the next joke by text-to-speech (TTS)

@@ -1,4 +1,4 @@
-#!/snap/bin/powershell
+#!/bin/powershell
 <#
 .SYNTAX         ./query-smart-data.ps1 [<directory>]
 .DESCRIPTION	queries the S.M.A.R.T. data of your HDD/SSD's and saves it to the current/given directory

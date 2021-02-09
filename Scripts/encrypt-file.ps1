@@ -1,4 +1,4 @@
-#!/snap/bin/powershell
+#!/bin/powershell
 <#
 .SYNTAX         ./encrypt-file.ps1 [<path>] [<password>]
 .DESCRIPTION	encrypts the given file

@@ -1,4 +1,4 @@
-#!/snap/bin/powershell
+#!/bin/powershell
 <#
 .SYNTAX         ./list-formatted.ps1 [<directory>]
 .DESCRIPTION	lists the current working directory formatted in columns

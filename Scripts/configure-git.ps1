@@ -1,4 +1,4 @@
-#!/snap/bin/powershell
+#!/bin/powershell
 <#
 .SYNTAX         ./configure-git.ps1 [<full-name>] [<email-address>] [<favorite-editor>]
 .DESCRIPTION	sets up the Git user configuration

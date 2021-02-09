@@ -1,4 +1,4 @@
-#!/snap/bin/powershell
+#!/bin/powershell
 <#
 .SYNTAX         ./speak-time.ps1
 .DESCRIPTION	speaks the current time by text-to-speech (TTS)

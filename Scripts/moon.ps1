@@ -1,4 +1,4 @@
-#!/snap/bin/powershell
+#!/bin/powershell
 <#
 .SYNTAX         ./moon.ps1
 .DESCRIPTION	prints the current moon phase

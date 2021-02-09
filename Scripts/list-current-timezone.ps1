@@ -1,4 +1,4 @@
-#!/snap/bin/powershell
+#!/bin/powershell
 <#
 .SYNTAX         ./list-current-timezone.ps1 
 .DESCRIPTION	lists the current time zone details

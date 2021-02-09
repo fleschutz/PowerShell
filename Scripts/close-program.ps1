@@ -1,4 +1,4 @@
-#!/snap/bin/powershell
+#!/bin/powershell
 <#
 .SYNTAX         ./close-program.ps1 [<program-name>] [<full-program-name>]
 .DESCRIPTION	closes the processes of the given program gracefully

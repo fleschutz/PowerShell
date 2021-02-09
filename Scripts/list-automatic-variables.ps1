@@ -1,4 +1,4 @@
-#!/snap/bin/powershell
+#!/bin/powershell
 <#
 .SYNTAX         ./list-automatic-variables.ps1
 .DESCRIPTION	lists the automatic variables of PowerShell 

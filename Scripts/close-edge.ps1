@@ -1,4 +1,4 @@
-#!/snap/bin/powershell
+#!/bin/powershell
 <#
 .SYNTAX         ./close-edge.ps1 
 .DESCRIPTION	closes Microsoft Edge gracefully

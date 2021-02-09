@@ -1,4 +1,4 @@
-#!/snap/bin/powershell
+#!/bin/powershell
 <#
 .SYNTAX         ./unmute-audio.ps1
 .DESCRIPTION	unmutes audio output

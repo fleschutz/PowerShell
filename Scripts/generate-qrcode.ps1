@@ -1,4 +1,4 @@
-#!/snap/bin/powershell
+#!/bin/powershell
 <#
 .SYNTAX         ./generate-qrcode.ps1 [<text>] [<image-size>]
 .DESCRIPTION	generates a QR code

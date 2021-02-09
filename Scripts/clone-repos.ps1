@@ -1,4 +1,4 @@
-#!/snap/bin/powershell
+#!/bin/powershell
 <#
 .SYNTAX         ./clone-repos.ps1
 .DESCRIPTION	clones well-known Git repositories into the current directory.

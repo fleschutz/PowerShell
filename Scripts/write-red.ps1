@@ -1,4 +1,4 @@
-#!/snap/bin/powershell
+#!/bin/powershell
 <#
 .SYNTAX         ./write-red.ps1 [<text>]
 .DESCRIPTION	writes the given text in a red foreground color

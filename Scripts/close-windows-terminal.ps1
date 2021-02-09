@@ -1,4 +1,4 @@
-#!/snap/bin/powershell
+#!/bin/powershell
 <#
 .SYNTAX         ./close-windows-terminal.ps1 
 .DESCRIPTION	closes Windows Terminal gracefully

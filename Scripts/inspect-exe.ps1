@@ -1,4 +1,4 @@
-#!/snap/bin/powershell
+#!/bin/powershell
 <#
 .SYNTAX         ./inspect-exe.ps1 [<path-to-exe-file>]
 .DESCRIPTION	prints basic information of the given executable file

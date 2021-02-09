@@ -1,4 +1,4 @@
-#!/snap/bin/powershell
+#!/bin/powershell
 <#
 .SYNTAX         ./train-dns-cache.ps1
 .DESCRIPTION	trains the DNS cache with frequently used domain names

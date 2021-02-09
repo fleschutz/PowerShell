@@ -1,4 +1,4 @@
-#!/snap/bin/powershell
+#!/bin/powershell
 <#
 .SYNTAX         ./close-calculator.ps1 
 .DESCRIPTION	closes the calculator program gracefully

@@ -1,4 +1,4 @@
-#!/snap/bin/powershell
+#!/bin/powershell
 <#
 .SYNTAX         ./speak-german.ps1 [<text>]
 .DESCRIPTION	speaks the given text with a German text-to-speech (TTS) voice

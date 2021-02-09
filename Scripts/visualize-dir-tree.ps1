@@ -1,4 +1,4 @@
-#!/snap/bin/powershell
+#!/bin/powershell
 <#
 .SYNTAX         ./visualize-dir-tree.ps1 [<dir-tree>]
 .DESCRIPTION	visualizes the given/current directory tree

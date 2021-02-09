@@ -1,4 +1,4 @@
-#!/snap/bin/powershell
+#!/bin/powershell
 <#
 .SYNTAX         ./play-beep.ps1
 .DESCRIPTION	plays a beep sound

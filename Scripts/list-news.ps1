@@ -1,4 +1,4 @@
-#!/snap/bin/powershell
+#!/bin/powershell
 <#
 .SYNTAX         ./list-news.ps1 [<RSS-URL>]
 .DESCRIPTION	lists the latest news

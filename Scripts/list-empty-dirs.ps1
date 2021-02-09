@@ -1,4 +1,4 @@
-#!/snap/bin/powershell
+#!/bin/powershell
 <#
 .SYNTAX         ./list-empty-dirs.ps1 <dirtree> 
 .DESCRIPTION	lists empty subfolders in the <directory tree> 

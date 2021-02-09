@@ -1,4 +1,4 @@
-#!/snap/bin/powershell
+#!/bin/powershell
 <#
 .SYNTAX         ./list-scripts.ps1
 .DESCRIPTION	lists the PowerShell scripts in this repository
