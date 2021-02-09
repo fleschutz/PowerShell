@@ -65,6 +65,7 @@ query-smart-data.ps1, queries the S.M.A.R.T. data of your HDD/SSD's and saves it
 new-email.ps1, starts the default email client to write a new email
 reboot.ps1, reboots the local computer (requires admin rights)
 reboot-fritzbox.ps1, reboots the FRITZ!box device
+remove-empty-dirs.ps1, removes empty subfolders within the given directory tree
 search-files.ps1, searches the given pattern in the given files
 scan-ports.ps1, scans the network for open/closed ports
 send-email.ps1, sends an email message

@@ -73,6 +73,7 @@ The following PowerShell scripts can be found in the [Scripts/](Scripts/) subfol
 * [next-joke.ps1](Scripts/next-joke.ps1) - gets the next random Juck Norris joke
 * [reboot.ps1](Scripts/reboot.ps1) - reboots the local computer (requires admin rights)
 * [reboot-fritzbox.ps1](Scripts/reboot-fritzbox.ps1) - reboots the FRITZ!box device
+* [remove-empty-dirs.ps1](Scripts/remove-empty-dirs.ps1) - removes empty subfolders within the given directory tree
 * [search-files.ps1](Scripts/search-files.ps1) - searches the given pattern in the given files
 * [scan-ports.ps1](Scripts/scan-ports.ps1) - scans the network for open/closed ports
 * [send-email.ps1](Scripts/send-email.ps1) - sends an email message
