@@ -173,17 +173,16 @@ Using PowerShell in Context Menus
 
 Script Conventions
 ------------------
-Each PowerShell script should follow the 9 golden rules:
+Each PowerShell script should follow the 8 golden rules:
 
-* **Rule #1:** the filename should be named `<verb>-<object>.ps1`
-* **Rule #2:** the first line reads `#!/snap/bin/powershell` to support PowerShell on Linux
-* **Rule #3:** the script has execute file permissions (chmod a+rx <file>) to support PowerShell on Linux
-* **Rule #4:** provide a comment-based help with syntax, description, link, author, and license
-* **Rule #5:** prefer command-line options, else ask the user
-* **Rule #6:** the encoding of the script is in UTF-8 with BOM to support Unicode characters
-* **Rule #7:** use `Set-StrictMode -Version Latest` to enable additional error checking
-* **Rule #8:** for readibility use UpperCamelCase for variables and functions, lowerCamelCase for everything else
-* **Rule #9:** exits 0 for success, else print an error message and exit with the error code (mostly 1)
+1. the filename should be named `<verb>-<object>.ps1`
+2. the first line reads `#!/snap/bin/powershell` to support PowerShell on Linux
+3. the script has execute file permissions (chmod a+rx <file>) to support PowerShell on Linux
+4. provide a comment-based help with syntax, description, link, author, and license
+5. prefer command-line options, else ask the user
+6. use `Set-StrictMode -Version Latest` to enable additional error checking
+7. for readibility use UpperCamelCase for variables and functions, lowerCamelCase for everything else
+8. exit 0 for success, else print an error message and exit with the error code (mostly 1)
 
 Feedback
 --------
