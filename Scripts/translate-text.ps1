@@ -6,12 +6,12 @@
 .NOTES		Author:	Markus Fleschutz / License: CC0
 #>
 
-param([string]$SourceText = "", [string]$SourceLang = "en")
+param($SourceText = "", $SourceLang = "en")
 
 if ($SourceText -eq "" ) {
 	$SourceText = read-host "Enter text to translate"
 }
-$TargetLanguages = "af","da","de","el","es","hr","it","ja","ko","pl","pt","nl","ru","tr","uk","vi"
+$TargetLanguages = "af","da","de","el","es","fr","hr","it","ja","ko","pl","pt","nl","ru","tr","uk","vi"
 
 function TranslateWithGoogle {
 	[CmdletBinding()]
