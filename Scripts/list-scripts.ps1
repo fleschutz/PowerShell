@@ -11,7 +11,7 @@ function ListScripts { param([string]$FilePath)
 	$Table = import-csv "$FilePath"
 	foreach($Row in $Table) {
 		New-Object PSObject -Property @{
-			'Script' = "$($Row.Filename)"
+			'Script' = "$($Row.Script)"
 			'Description' = "$($Row.Description)"
 		}
 	}

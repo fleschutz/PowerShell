@@ -6,20 +6,26 @@
 .NOTES		Author:	Markus Fleschutz / License: CC0
 #>
 
-param([string]$Addr)
+param($Address = "")
 
-# IPv4-Address like 192.168.178.1
-$RegEx = "^(?:(?:25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)\.){3}(?:25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)$"
+function IsIPv4AddressValid { param([string]$IP)
+	$RegEx = "^(?:(?:25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)\.){3}(?:25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)$"
+	if ($IP -match $RegEx) {
+		return $true
+	} else {
+		return $false
+	}
+}
 
 try {
-	if ($Addr -eq "" ) {
-		$Addr = read-host "Enter IPv4 address to validate"
+	if ($Address -eq "" ) {
+		$Address = read-host "Enter IPv4 address to validate"
 	}
-	if ($Addr -match $RegEx) {
-		write-output "IPv4 address $Addr is valid"
+	if (IsIPv4AddressValid $Address) {
+		write-host -foregroundColor green "OK - IPv4 address $Address is valid"
 		exit 0
 	} else {
-		write-output "IPv4 address $Addr is NOT valid"
+		write-warning "Invalid IPv4 address: $Address"
 		exit 1
 	}
 } catch {
