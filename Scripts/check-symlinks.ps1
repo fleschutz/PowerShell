@@ -21,13 +21,13 @@ try {
 			$path = $_.FullName + "\..\" + ($_ | Select-Object -ExpandProperty Target)
 			$item = Get-Item $path -ErrorAction Ignore
 			if (!$item) {
-				write-output "Symlink $Symlink -> $Target is broken"
+				write-warning "Broken symlink: $Symlink -> $Target"
 				$SymlinksBroken++
 			}
 		}
 		$SymlinksTotal++
 	}
-	echo "Done - found $SymlinksTotal symlinks total, $SymlinksBroken are broken"
+	write-output "Done - found $SymlinksTotal symlinks total, $SymlinksBroken are broken"
 	exit $SymlinksBroken
 } catch {
 	write-error "ERROR in line $($_.InvocationInfo.ScriptLineNumber): $($Error[0])"
