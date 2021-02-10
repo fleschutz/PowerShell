@@ -63,7 +63,9 @@ function ListAutomaticVariables {
 }
 
 try {
-	ListAutomaticVariables | format-table -property Variable,Content
+	$Vars = ListAutomaticVariables
+	$Vars | format-table -property Variable,Content
+	write-output "($($Vars.Count) automatic variables total)"
 	exit 0
 } catch {
 	write-error "ERROR in line $($_.InvocationInfo.ScriptLineNumber): $($Error[0])"
