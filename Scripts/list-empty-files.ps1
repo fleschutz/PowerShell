@@ -13,8 +13,12 @@ try {
 		$DirTree = read-host "Enter the path to the directory tree"
 	}
 	write-progress "Listing empty files in $DirTree ..."
-	Get-ChildItem $DirTree -recurse | Where {$_.PSIsContainer -eq $false} | Where {$_.Length -eq 0} | select FullName
-	echo "Done."
+	[int]$Count = 0
+	Get-ChildItem $DirTree -recurse | Where {$_.PSIsContainer -eq $false} | Where {$_.Length -eq 0} | ForEach-Object {
+		write-output $_.FullName
+		$Count++
+	}
+	write-host -foregroundColor green "Done - found $Count empty files" 
 	exit 0
 } catch {
 	write-error "ERROR in line $($_.InvocationInfo.ScriptLineNumber): $($Error[0])"

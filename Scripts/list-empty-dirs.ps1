@@ -12,9 +12,13 @@ try {
 	if ($DirTree -eq "" ) {
 		$DirTree = read-host "Enter the path to the directory tree"
 	}
-	write-progress "Listing empty subfolders in $DirTree ..."
-	(Get-ChildItem $DirTree -recurse | ? {$_.PSIsContainer -eq $True}) | ?{$_.GetFileSystemInfos().Count -eq 0} | select FullName
-	echo "Done."
+	write-progress "Listing empty directories in $DirTree..."
+	[int]$Count = 0
+	Get-ChildItem $DirTree -recurse | Where {$_.PSIsContainer -eq $true} | Where {$_.GetFileSystemInfos().Count -eq 0} | ForEach-Object {
+		write-output $_.FullName
+		$Count++
+	}
+	write-host -foregroundColor green "Done - found $Count empty directories" 
 	exit 0
 } catch {
 	write-error "ERROR in line $($_.InvocationInfo.ScriptLineNumber): $($Error[0])"
