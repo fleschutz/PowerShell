@@ -13,8 +13,9 @@ try {
 		$DirTree = read-host "Enter the path to the directory tree"
 	}
 
+	write-progress "Checking symlinks in $DirTree..."
 	[int]$SymlinksTotal = [int]$SymlinksBroken = 0
-	gci $DirTree -Recurse  | Where { $_.Attributes -match "ReparsePoint" } | ForEach-Object {
+	Get-ChildItem $DirTree -recurse  | Where { $_.Attributes -match "ReparsePoint" } | ForEach-Object {
 		$Symlink = $_.FullName
 		$Target = ($_ | Select-Object -ExpandProperty Target -ErrorAction Ignore)
 		if ($Target) {
