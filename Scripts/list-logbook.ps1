@@ -15,12 +15,12 @@ try {
 
 	write-output ""
 	write-output "Time                 User  Text"
-	write-output "---------------------------------------------------------------"
+	write-output "----                 ----  ----"
 	foreach($Row in $Table) {
 		$Time = $Row.Time
 		$User = $Row.User
 		$Text = $Row.Text
-		write-output "$Time ($User)  $Text"
+		write-output "$Time $User    $Text"
 	}
 	write-output ""
 	exit 0
