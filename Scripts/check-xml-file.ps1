@@ -6,16 +6,14 @@
 .NOTES		Author:	Markus Fleschutz / License: CC0
 #>
 
-param ([String]$XmlFilePath)
+param($File = "")
 
 try {
-	if ($XmlFilePath -eq "" ) {
-		$XmlFilePath = read-host "Enter path to XML file"
+	if ($File -eq "" ) {
+		$File = read-host "Enter path to XML file"
 	}
-	# Get the file
-	$XmlFile = Get-Item($XmlFilePath)
+	$XmlFile = Get-Item $File
 	
-	# Keep count of how many errors there are in the XML file
 	$script:ErrorCount = 0
 	
 	# Perform the XSD Validation
@@ -27,14 +25,12 @@ try {
 	while ($Reader.Read()) { }
 	$Reader.Close()
 	
-	# Verify the results of the XSD validation
 	if ($script:ErrorCount -gt 0) {
-		write-output "XML file is NOT valid"
+		write-warning "Invalid XML file"
 		exit 1
-	} else {
-		write-output "XML file is valid"
-		exit 0
-	}
+	} 
+	write-host -foregroundColor green "OK - XML file is valid"
+	exit 0
 } catch {
 	write-error "ERROR in line $($_.InvocationInfo.ScriptLineNumber): $($Error[0])"
 	exit 1
