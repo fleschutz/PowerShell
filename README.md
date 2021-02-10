@@ -34,7 +34,7 @@ Table of Contents
 * [list-clipboard.ps1](Scripts/list-clipboard.ps1) - lists the contents of the clipboard
 * [list-current-timezone.ps1](Scripts/list-current-timezone.ps1) - lists the current time zone details
 * [list-environment-variables.ps1](Scripts/list-environment-variables.ps1) - lists all environment variables
-* [list-empty-dirs.ps1](Scripts/list-empty-dirs.ps1) - lists empty subfolders in a directory tree
+* [list-empty-dirs.ps1](Scripts/list-empty-dirs.ps1) - lists empty subfolders within the given directory tree
 * [list-installed-software.ps1](Scripts/list-installed-software.ps1) - lists the installed software
 * [list-files.ps1](Scripts/list-files.ps1) - lists all files in the given folder and also in every subfolder
 * [list-formatted.ps1](Scripts/list-formatted.ps1) - lists the current working directory formatted in columns
