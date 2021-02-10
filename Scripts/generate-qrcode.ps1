@@ -28,7 +28,8 @@ try {
 		"&size=" + $ImageSize + "&qzone=" + $QuietZone + `
 		"&color=" + $ForegroundColor + "&bgcolor=" + $BackgroundColor.Text + `
 		"&format=" + $FileFormat), $NewFile)
-	write-output "OK - QR code has been written to $NewFile"
+
+	write-host -foregroundColor green "Done - QR code has been written to $NewFile"
 	exit 0
 } catch {
 	write-error "ERROR in line $($_.InvocationInfo.ScriptLineNumber): $($Error[0])"

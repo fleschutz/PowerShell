@@ -32,7 +32,7 @@ try {
 	start-sleep -milliseconds 100
 	Send-WOL $MACaddress $IPaddress
 
-	write-output "OK - magic packet sent twice to IP $IPaddress (MAC $MACaddress)"
+	write-host -foregroundColor green "Done - magic packet sent twice to IP $IPaddress (MAC $MACaddress)"
 	exit 0
 } catch {
 	write-error "ERROR in line $($_.InvocationInfo.ScriptLineNumber): $($Error[0])"

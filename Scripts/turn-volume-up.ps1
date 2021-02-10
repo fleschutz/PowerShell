@@ -13,7 +13,7 @@ try {
 	for ([int]$i = 0; $i -lt $Percent; $i += 2) {
 		$obj.SendKeys([char]175) # each tick is +2%
 	}
-	write-output "OK"
+	write-host -foregroundColor green "Done."
 	exit 0
 } catch {
 	write-error "ERROR in line $($_.InvocationInfo.ScriptLineNumber): $($Error[0])"

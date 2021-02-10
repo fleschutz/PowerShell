@@ -17,9 +17,7 @@ try {
 
 	echo ------------------------------------------------------------------------------
 	echo.
-	echo DONE - synced to %DST_DIR%
-	echo.
-	pause
+	write-host -foregroundColor green "Done - synced to %DST_DIR%"
 	exit 0
 } catch {
 	write-error "ERROR in line $($_.InvocationInfo.ScriptLineNumber): $($Error[0])"

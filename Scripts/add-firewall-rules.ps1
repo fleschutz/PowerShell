@@ -24,7 +24,7 @@ for($i = 1; $i -lt $args.count; $i++){
 	write-output $output
 	$null = New-NetFirewallRule -DisplayName $name -Direction Inbound -Program $path -Profile Domain, Private -Action Allow
 }
-Write-Host -NoNewLine ''Done - press any key to continue...'';
+write-host -foregroundColor green -noNewline ''Done - press any key to continue...'';
 [void]$Host.UI.RawUI.ReadKey(''NoEcho,IncludeKeyDown'');
 '
 

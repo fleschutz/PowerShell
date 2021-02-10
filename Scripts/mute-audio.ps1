@@ -9,7 +9,8 @@
 try {
 	$obj = new-object -com wscript.shell
 	$obj.SendKeys([char]173)
-	write-output "OK"
+
+	write-host -foregroundColor green "Done."
 	exit 0
 } catch {
 	write-error "ERROR in line $($_.InvocationInfo.ScriptLineNumber): $($Error[0])"

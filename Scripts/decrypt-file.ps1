@@ -161,7 +161,7 @@ try {
 
 	$PasswordBase64 = [System.Convert]::ToBase64String($Password)
 	DecryptFile "$Path" -algorithm AES -keyAsPlainText $PasswordBase64 -removeSource
-	write-output "OK."
+	write-host -foregroundColor green "Done."
 	exit 0
 } catch {
 	write-error "ERROR in line $($_.InvocationInfo.ScriptLineNumber): $($Error[0])"

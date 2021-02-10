@@ -47,7 +47,7 @@ try {
 		Invoke-Expression $Cmd > $Filename
 		$DevInfo++
 	}
-	write-output "DONE."
+	write-host -foregroundColor green "Done."
 	exit 0
 } catch {
 	write-error "ERROR in line $($_.InvocationInfo.ScriptLineNumber): $($Error[0])"

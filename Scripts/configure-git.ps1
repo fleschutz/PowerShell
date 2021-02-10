@@ -33,7 +33,7 @@ try {
 	git config --global core.autocrlf false
 	git config --global core.symlinks true
 	git config --global init.defaultBranch main
-	write-output "OK - your Git user configuration is now:"
+	write-host -foregroundColor green "Done - your Git user configuration is now:"
 	git config --list
 	exit 0
 } catch {

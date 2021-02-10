@@ -28,7 +28,7 @@ try {
 	if ($ProcessCount -eq 0) {
 		throw "$FullProgramName is not started yet"
 	}
-	write-output "OK - $FullProgramName with $ProcessCount process(es) has been closed."
+	write-host -foregroundColor green "Done - $FullProgramName with $ProcessCount process(es) has been closed."
 	exit 0
 } catch {
 	write-error "ERROR in line $($_.InvocationInfo.ScriptLineNumber): $($Error[0])"

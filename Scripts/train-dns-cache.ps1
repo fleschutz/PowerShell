@@ -25,7 +25,7 @@ try {
 	$Count = $Table.Length
 	$StopTime = Get-Date
 	$TimeInterval = New-Timespan -start $StartTime -end $StopTime
-	write-output "OK - DNS cache trained with $Count domain names in $TimeInterval seconds"
+	write-host -foregroundColor green "Done - DNS cache trained with $Count domain names in $TimeInterval seconds"
 	exit 0
 } catch {
 	write-error "ERROR in line $($_.InvocationInfo.ScriptLineNumber): $($Error[0])"

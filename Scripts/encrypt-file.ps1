@@ -145,7 +145,8 @@ try {
 
 	$PasswordBase64 = [System.Convert]::ToBase64String($Password)
 	EnryptFile "$Path" -Algorithm AES -KeyAsPlainText $PasswordBase64 -RemoveSource
-	write-output "OK."
+
+	write-host -foregroundColor green "Done."
 	exit 0
 } catch {
 	write-error "ERROR in line $($_.InvocationInfo.ScriptLineNumber): $($Error[0])"

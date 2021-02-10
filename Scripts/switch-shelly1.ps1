@@ -20,7 +20,7 @@ try {
 	}
 
 	$Result = Invoke-RestMethod "http://$($IPaddr)/relay/0?turn=$($TurnMode)&timer=$($Timer)"
-	write-output "OK - switched Shelly1 device at $IPaddr to $TurnMode for $Timer second(s)"
+	write-host -foregroundColor green "Done - switched Shelly1 device at $IPaddr to $TurnMode for $Timer second(s)"
 	exit 0
 } catch {
 	write-error "ERROR in line $($_.InvocationInfo.ScriptLineNumber): $($Error[0])"
