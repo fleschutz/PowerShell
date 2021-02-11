@@ -26,12 +26,12 @@ How to get PowerShell?
 
 How to get the PowerShell Scripts?
 ----------------------------------
-Git users simply execute:
+Git users do execute:
 ```
 $ git clone https://github.com/fleschutz/PowerShell
 ```
 
-otherwise download it from:
+otherwise simply download it from:
 
 https://github.com/fleschutz/PowerShell/archive/master.zip
 
