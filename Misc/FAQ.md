@@ -20,6 +20,7 @@ How to get PowerShell?
 * **Want to use Snaps?** Install the PowerShell snap by executing:
    ```
    $ snap install PowerShell
+   $ ln -s /snap/bin/powershell /bin/powershell
    ```
 * **On CentOS, Debian, Docker, Fedora, macOS, openSUSE, Red Hat, Ubuntu** visit https://github.com/PowerShell/PowerShell for installation.
 
