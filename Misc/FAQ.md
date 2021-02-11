@@ -17,7 +17,7 @@ How to get PowerShell?
    ```
    $ Set-ExecutionPolicy RemoteSigned
    ```
-* **Want to use Snaps?** Install PowerShell by executing:
+* **Want to use Snaps?** Install the PowerShell snap by executing:
    ```
    $ snap install PowerShell
    ```
