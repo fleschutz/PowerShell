@@ -1,7 +1,7 @@
 Collection of PowerShell Scripts
 ================================
 
-**This repository contains 120+ useful and cross-platform PowerShell scripts in the [Scripts/](Scripts/) subfolder - to be used by command-line interface (CLI), for remote control (RC), by context menu, by voice control, by automation software like Jenkins, automatically as daily tasks, or simply to learn PowerShell. See the [FAQ page](Misc/FAQ.md) if you need help or have questions.**
+**This repository contains 120+ useful and cross-platform PowerShell scripts in the [Scripts/ folder](Scripts/) - to be used by command-line interface (CLI), for remote control (RC), by context menu, by voice control, by automation software like Jenkins, automatically as daily tasks, or simply to learn PowerShell. See the [FAQ page](Misc/FAQ.md) if you need help or have any question.**
 
 Table of Contents
 -----------------
@@ -128,63 +128,6 @@ Table of Contents
 * [write-uppercase.ps1](Scripts/write-uppercase.ps1) - writes the given text in uppercase letters
 * [write-vertical.ps1](Scripts/write-vertical.ps1) - writes the given text in vertical direction
 * [zip-dir.ps1](Scripts/zip-dir.ps1) - creates a zip archive of the given directory
-
-
-What is PowerShell?
--------------------
-PowerShell is a task automation and configuration management framework from Microsoft, consisting of a command-line shell and associated scripting language. 
-
-* **it's powerful**: fully control your computer
-* **it's cross-platform**: available for Linux, Mac OS and Windows
-* **it's open-source**: see the Github repository at https://github.com/PowerShell/PowerShell 
-* **it's easy to learn**: see the tutorial at https://www.guru99.com/powershell-tutorial.html
-* **it's fully documented**: see the official docs at https://docs.microsoft.com/en-us/powershell/
-
-How to get PowerShell?
-----------------------
-* **Windows 7 and newer** do provide PowerShell by default. It's recommended to install **Windows Terminal** (see the Microsoft Store at https://www.aka.ms/terminal) for a comfortable command-line usage. Per default, Windows does not allow script execution (execution policy "restricted"). To enable this, enter as administrator:
-   ```
-   $ Set-ExecutionPolicy RemoteSigned
-   ```
-* **On CentOS, Debian, Docker, Fedora, macOS, openSUSE, Red Hat, Ubuntu** visit https://github.com/PowerShell/PowerShell for installation.
-
-Afterward, install this collection by clicking on the green "Code" button or execute:
-```
-$ git clone https://github.com/fleschutz/PowerShell
-```
-
-Configure PowerShell as Default Shell
--------------------------------------
-* **Linux:** make sure PowerShell is installed, then execute: `chsh -s /bin/powershell <username>`
-* **Windows:** no need to, PowerShell is the default shell
-
-
-Adding the Scripts to the Search Path
--------------------------------------
-Want to use the PowerShell scripts everywhere on the command-line? Then you need to add the Scripts/ subfolder to the search path:
-
-* **Bash or sh:** edit .profile in your home directory and add the line: PATH="$PATH:/path/to/PowerShell/Scripts"
-* **Windows:** open the environment variables dialogue and add the full path to Scripts/ to the system environment variable "Path"
-
-
-Using PowerShell in Context Menus
-----------------------------------
-* to enable "right-click > New > Windows PowerShell Script" execute `Add_ps1_to_New_context_menu.reg` in subfolder [Misc/](Misc)
-* to disable this execute `Remove_ps1_from_New_context_menu.reg` in subfolder [Misc/](Misc)
-
-Script Conventions
-------------------
-Each PowerShell script should follow the 9 golden rules:
-
-1. the filename should be named `<verb>-<object>.ps1`
-2. the first line reads `#!/bin/powershell` to support PowerShell on Linux
-3. the script has execute file permissions (chmod a+rx <file>) to support PowerShell on Linux
-4. provide a comment-based help with syntax, description, link, author, and license
-5. check the requirements (e.g. #Requires -RunAsAdministrator, or #Requires -Version 3)
-6. prefer command-line options, else ask the user
-7. use `Set-StrictMode -Version Latest` to enable additional error checking
-8. for readibility use UpperCamelCase for variables and functions, lowerCamelCase for everything else
-9. exit 0 for success, else print an error message and exit with the error code (mostly 1)
 
 Feedback
 --------
