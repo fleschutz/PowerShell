@@ -13,7 +13,7 @@ PowerShell is a task automation and configuration management framework from Micr
 
 How to get PowerShell?
 ----------------------
-* **Windows 7 and newer** do provide PowerShell by default. It's recommended to install **Windows Terminal** (see the Microsoft Store at https://www.aka.ms/terminal) for a comfortable command-line usage. Per default, Windows does not allow script execution (execution policy "restricted"). To enable this, enter as administrator:
+* **Windows 7 and newer** do provide PowerShell by default. Per default, Windows does not allow script execution (execution policy "restricted"). To enable this, enter as administrator:
    ```
    $ Set-ExecutionPolicy RemoteSigned
    ```
@@ -69,6 +69,6 @@ Each PowerShell script should follow the 9 golden rules:
 8. for readibility use UpperCamelCase for variables and functions, lowerCamelCase for everything else
 9. exit 0 for success, else print an error message and exit with the error code (mostly 1)
 
-Found no Answer for Your Question?
-----------------------------------
+Found No Answer to Your Question?
+---------------------------------
 Send your question to: markus [at] fleschutz [dot] de
