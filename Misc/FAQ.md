@@ -19,10 +19,22 @@ How to get PowerShell?
    ```
 * **On CentOS, Debian, Docker, Fedora, macOS, openSUSE, Red Hat, Ubuntu** visit https://github.com/PowerShell/PowerShell for installation.
 
-Afterward, install this collection by clicking on the green "Code" button or execute:
+* **Using Snaps?** If yes, install PowerShell by simply executing:
+   ```
+   $ snap install PowerShell
+   ```
+
+How to get the PowerShell Scripts?
+----------------------------------
+Git users simply execute:
 ```
 $ git clone https://github.com/fleschutz/PowerShell
 ```
+
+otherwise download it from:
+
+https://github.com/fleschutz/PowerShell/archive/master.zip
+
 
 How to Configure PowerShell as Default Shell?
 ---------------------------------------------
