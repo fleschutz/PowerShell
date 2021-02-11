@@ -55,6 +55,13 @@ How to use PowerShell in Context Menus?
 * to enable "right-click > New > Windows PowerShell Script" execute `Add_ps1_to_New_context_menu.reg` in subfolder [Misc/](Misc)
 * to disable this execute `Remove_ps1_from_New_context_menu.reg` in subfolder [Misc/](Misc)
 
+
+How to edit PowerShell Scripts?
+-------------------------------
+* use your favorite text editor
+* use Visual Studio Code (available for free) - providing syntax highlighting, on-the-fly problem checking and an integrated PowerShell Console.
+
+
 How to write Good PowerShell Scripts?
 -------------------------------------
 Each PowerShell script should follow the 9 golden rules:
