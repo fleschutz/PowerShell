@@ -6,11 +6,11 @@
 .NOTES		Author:	Markus Fleschutz / License: CC0
 #>
 
-param([string]$SourceFile = "", [string]$SourceLanguage = "", [string]$TargetLanguage = "")
-
-$PathToRepo = "$PSScriptRoot/.."
+param($SourceFile = "", $SourceLanguage = "", $TargetLanguage = "")
 
 try {
+	$PathToRepo = "$PSScriptRoot/.."
+	
 	if ($SourceFile -eq "" ) {
 		$SourceFile = read-host "Enter path to file"
 	}
