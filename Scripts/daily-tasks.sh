@@ -13,6 +13,6 @@ $HOMEDIR/PowerShell/Scripts/query-smart-data.ps1 $HOMEDIR
 # to query S.M.A.R.T. data of all your HDD's/SSD's 
 
 $HOMEDIR/PowerShell/Scripts/train-dns-cache.ps1 
-# to train the DNS cache with well-known domain names 
+# to train the DNS cache with frequently used domain names 
 
 exit 0
