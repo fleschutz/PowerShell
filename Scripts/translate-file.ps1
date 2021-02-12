@@ -6,13 +6,13 @@
 .NOTES		Author:	Markus Fleschutz / License: CC0
 #>
 
-param($SourceFile = "", $SourceLanguage = "", $TargetLanguage = "")
+param($File = "", $SourceLanguage = "", $TargetLanguage = "")
 
 try {
 	$PathToRepo = "$PSScriptRoot/.."
 	
-	if ($SourceFile -eq "" ) {
-		$SourceFile = read-host "Enter path to file"
+	if ($File -eq "" ) {
+		$File = read-host "Enter path to file"
 	}
 	if ($SourceLanguage -eq "" ) {
 		$SourceLanguage = read-host "Enter language of this file"
@@ -21,7 +21,7 @@ try {
 		$TargetLanguage = read-host "Enter language to translate to"
 	}
 
-	Start-Process -FilePath "$PathToRepo/Data/trans" -ArgumentList "-i $SourceFile -s $SourceLanguage -t $TargetLanguage -e google -brief" -NoNewWindow -Wait
+	Start-Process -FilePath "$PathToRepo/Data/trans" -ArgumentList "-i $File -s $SourceLanguage -t $TargetLanguage -e google -brief" -NoNewWindow -Wait
 	exit 0
 } catch {
 	write-error "ERROR in line $($_.InvocationInfo.ScriptLineNumber): $($Error[0])"
