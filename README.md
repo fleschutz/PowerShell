@@ -20,6 +20,7 @@ Table of Contents
 * [close-program.ps1](Scripts/close-program.ps1) - closes the given program gracefully
 * [close-system-settings.ps1](Scripts/close-system-settings.ps1) - closes the System Settings gracefully
 * [close-thunderbird.ps1](Scripts/close-thunderbird.ps1) - closes Mozilla Thunderbird gracefully
+* [close-vlc.ps1](Scripts/close-vlc.ps1) - closes the VLC media player gracefully
 * [close-windows-terminal.ps1](Scripts/close-windows-terminal.ps1) - closes Windows Terminal gracefully
 * [configure-git.ps1](Scripts/configure-git.ps1) - sets up the Git user configuration
 * [csv-to-text.ps1](Scripts/csv-to-text.ps1) - converts the given CSV file into a text list
