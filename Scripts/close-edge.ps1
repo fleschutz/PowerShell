@@ -6,4 +6,4 @@
 .NOTES		Author:	Markus Fleschutz / License: CC0
 #>
 
-./close-process "msedge" "Microsoft Edge"
+./close-program "Microsoft Edge" "msedge"

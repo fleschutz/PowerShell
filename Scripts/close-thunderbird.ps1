@@ -6,4 +6,4 @@
 .NOTES		Author:	Markus Fleschutz / License: CC0
 #>
 
-./close-program "thunderbird" "Mozilla Thunderbird"
+./close-program "Mozilla Thunderbird" "thunderbird"

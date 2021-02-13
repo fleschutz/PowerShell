@@ -6,4 +6,4 @@
 .NOTES		Author:	Markus Fleschutz / License: CC0
 #>
 
-./close-program "calc" "Calculator"
+./close-program "Calculator" "Calculator" "calc"

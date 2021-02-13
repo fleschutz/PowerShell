@@ -6,4 +6,4 @@
 .NOTES		Author:	Markus Fleschutz / License: CC0
 #>
 
-./close-program "chrome" "Google Chrome"
+./close-program "Google Chrome" "chrome"

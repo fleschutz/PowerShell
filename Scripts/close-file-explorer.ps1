@@ -6,4 +6,4 @@
 .NOTES		Author:	Markus Fleschutz / License: CC0
 #>
 
-./close-process "explorer" "File Explorer"
+./close-program "File Explorer" "explorer"
