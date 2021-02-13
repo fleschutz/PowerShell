@@ -9,9 +9,9 @@
 param($FullName = "", $EmailAddress = "", $FavoriteEditor = "")
 
 try {
-	git --version
+	& git --version
 } catch {
-	write-error "No Git installation found - make sure Git is installed"
+	write-error "Can't execute 'git' - make sure Git is installed and available"
 	exit 1
 }
 
@@ -25,15 +25,15 @@ try {
 	if ($FavoriteEditor -eq "") {
 		$FavoriteEditor = read-host "Enter your favorite text editor (emacs,nano,vi,vim,...)"
 	}
-	git config --global user.name $FullName
-	git config --global user.email $EmailAddress
-	git config --global core.editor $FavoriteEditor
-	git config --global http.sslVerify false
-	git config --global core.autocrlf false
-	git config --global core.symlinks true
-	git config --global init.defaultBranch main
+	& git config --global user.name $FullName
+	& git config --global user.email $EmailAddress
+	& git config --global core.editor $FavoriteEditor
+	& git config --global http.sslVerify false
+	& git config --global core.autocrlf false
+	& git config --global core.symlinks true
+	& git config --global init.defaultBranch main
 	write-host -foregroundColor green "Done - your Git user configuration is now:"
-	git config --list
+	& git config --list
 	exit 0
 } catch {
 	write-error "ERROR in line $($_.InvocationInfo.ScriptLineNumber): $($Error[0])"

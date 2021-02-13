@@ -6,7 +6,14 @@
 .NOTES		Author:	Markus Fleschutz / License: CC0
 #>
 
-param([string]$Directory = "")
+param($Directory = "")
+
+try {
+	& git --version
+} catch {
+	write-error "Can't execute 'git' - make sure Git is installed and available"
+	exit 1
+}
 
 try {
 	if ($Directory -eq "") {
@@ -19,7 +26,7 @@ try {
 			write-host ""
 			write-host -nonewline "Updating $Filename ..."
 			set-location $Filename
-			git pull
+			& git pull --recurse-submodules
 			set-location ..
 		} 
 	}

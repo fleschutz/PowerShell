@@ -6,9 +6,15 @@
 .NOTES		Author:	Markus Fleschutz / License: CC0
 #>
 
-$PathToRepo = "$PSScriptRoot/.."
+try {
+	& git --version
+} catch {
+	write-error "Can't execute 'git' - make sure Git is installed and available"
+	exit 1
+}
 
 try {
+	$PathToRepo = "$PSScriptRoot/.."
 	$Table = import-csv "$PathToRepo/Data/repos.csv"
 
 	foreach($Row in $Table) {
@@ -16,11 +22,11 @@ try {
 		$Directory = $Row.Directory
 		write-output ""
 		if (Test-Path($Directory)) {
-			write-output "Skipping $Directory (already existent) ..."
+			write-output "Skipping existing $Directory ..."
 			continue
 		}
 		write-output "Cloning from $URL..."
-		git clone --recurse-submodules $URL
+		& git clone --recurse-submodules $URL
 	}
 	exit 0
 } catch {
