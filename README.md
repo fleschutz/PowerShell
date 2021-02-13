@@ -14,6 +14,7 @@ Table of Contents
 * [clone-repos.ps1](Scripts/clone-repos.ps1) - clones well-known Git repositories
 * [close-calculator.ps1](Scripts/close-calculator.ps1) - closes the calculator program gracefully
 * [close-chrome.ps1](Scripts/close-chrome.ps1) - closes Google Chrome gracefully
+* [close-cortana.ps1](Scripts/close-cortana.ps1) - closes Cortana gracefully
 * [close-edge.ps1](Scripts/close-edge.ps1) - closes Microsoft Edge gracefully
 * [close-file-explorer.ps1](Scripts/close-file-explorer.ps1) - closes Microsoft File Explorer gracefully
 * [close-program.ps1](Scripts/close-program.ps1) - closes the given program gracefully
