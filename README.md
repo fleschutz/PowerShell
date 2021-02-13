@@ -18,6 +18,7 @@ Table of Contents
 * [close-edge.ps1](Scripts/close-edge.ps1) - closes Microsoft Edge gracefully
 * [close-file-explorer.ps1](Scripts/close-file-explorer.ps1) - closes Microsoft File Explorer gracefully
 * [close-program.ps1](Scripts/close-program.ps1) - closes the given program gracefully
+* [close-system-settings.ps1](Scripts/close-system-settings.ps1) - closes the System Settings gracefully
 * [close-thunderbird.ps1](Scripts/close-thunderbird.ps1) - closes Mozilla Thunderbird gracefully
 * [close-windows-terminal.ps1](Scripts/close-windows-terminal.ps1) - closes Windows Terminal gracefully
 * [configure-git.ps1](Scripts/configure-git.ps1) - sets up the Git user configuration
