@@ -11,6 +11,7 @@ Table of Contents
 * [check-mac-address.ps1](Scripts/check-mac-address.ps1) - checks the given MAC address for validity
 * [check-symlinks.ps1](Scripts/check-symlinks.ps1) - checks every symlink in the given directory tree
 * [check-xml-file.ps1](Scripts/check-xml-file.ps1) - checks the given XML file for validity
+* [clean-branch.ps1](Scripts/clean-branch.ps1) - cleans the current Git branch (and submodules) from generated files
 * [clone-repos.ps1](Scripts/clone-repos.ps1) - clones well-known Git repositories
 * [close-calculator.ps1](Scripts/close-calculator.ps1) - closes the calculator program gracefully
 * [close-chrome.ps1](Scripts/close-chrome.ps1) - closes Google Chrome gracefully
