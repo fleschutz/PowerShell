@@ -63,7 +63,7 @@ How to edit PowerShell Scripts?
 * use Visual Studio Code (available for free) - providing syntax highlighting, on-the-fly problem checking and an integrated PowerShell Console.
 
 
-How to write Good PowerShell Scripts?
+How to write good PowerShell Scripts?
 -------------------------------------
 Each PowerShell script should follow the 10 golden rules:
 
