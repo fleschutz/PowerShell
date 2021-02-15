@@ -20,6 +20,10 @@ try {
 		$Branch = read-host "Enter branch name to switch to"
 	}
 	& git switch --recurse-submodules $Branch
+	if ($lastExitCode -ne "0") {
+		throw "'git switch --recurse-submodules $Branch' failed"
+	}
+	& git status
 	exit 0
 } catch {
 	write-error "ERROR in line $($_.InvocationInfo.ScriptLineNumber): $($Error[0])"
