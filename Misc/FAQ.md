@@ -65,7 +65,7 @@ How to edit PowerShell Scripts?
 
 How to write Good PowerShell Scripts?
 -------------------------------------
-Each PowerShell script should follow the 9 golden rules:
+Each PowerShell script should follow the 10 golden rules:
 
 1. the filename should be named `<verb>-<object>.ps1`
 2. the first line reads `#!/bin/powershell` to support PowerShell on Linux
@@ -75,8 +75,9 @@ Each PowerShell script should follow the 9 golden rules:
 6. prefer command-line options, else ask the user
 7. use `Set-StrictMode -Version Latest` to enable additional error checking
 8. for readibility use UpperCamelCase for variables and functions, lowerCamelCase for everything else
-9. exit 0 for success, else print an error message and exit with the error code (mostly 1)
+9. on error call write-error with keyword "ERROR:" (required by log parser) and exit the error code (mostly 1)
+10. on success call write-host -foregroundColor green with keyword "DONE" and call exit 0
 
-Found No Answer to Your Question?
----------------------------------
+Your Question is not answered here?
+-----------------------------------
 Send your question to: markus [at] fleschutz [dot] de
