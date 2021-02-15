@@ -23,8 +23,11 @@ try {
 	& git switch --recurse-submodules $Branch
 	if ($lastExitCode -ne "0") { throw "'git switch --recurse-submodules $Branch' failed" }
 
+	& git submodule update --init --recursive
+	if ($lastExitCode -ne "0") { throw "'git submodule update' failed" }
+
 	& git pull --recurse-submodules 
-	if ($lastExitCode -ne "0") { throw "'git pull --recurse-submodules' failed" }
+	if ($lastExitCode -ne "0") { throw "'git pull' failed" }
 
 	& git status
 	if ($lastExitCode -ne "0") { throw "'git status' failed" }
