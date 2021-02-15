@@ -11,7 +11,7 @@ param($Directory = "")
 try {
 	& git --version
 } catch {
-	write-error "Can't execute 'git' - make sure Git is installed and available"
+	write-error "ERROR: can't execute 'git' - make sure Git is installed and available"
 	exit 1
 }
 
@@ -32,6 +32,6 @@ try {
 	}
 	exit 0
 } catch {
-	write-error "ERROR in line $($_.InvocationInfo.ScriptLineNumber): $($Error[0])"
+	write-error "ERROR: line $($_.InvocationInfo.ScriptLineNumber): $($Error[0])"
 	exit 1
 }
