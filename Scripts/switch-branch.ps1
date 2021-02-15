@@ -11,7 +11,7 @@ param($Branch = "")
 try {
 	& git --version
 } catch {
-	write-error "Can't execute 'git' - make sure Git is installed and available"
+	write-error "ERROR: can't execute 'git' - make sure Git is installed and available"
 	exit 1
 }
 
@@ -19,11 +19,16 @@ try {
 	if ($Branch -eq "") {
 		$Branch = read-host "Enter branch name to switch to"
 	}
+
 	& git switch --recurse-submodules $Branch
-	if ($lastExitCode -ne "0") {
-		throw "'git switch --recurse-submodules $Branch' failed"
-	}
+	if ($lastExitCode -ne "0") { throw "'git switch --recurse-submodules $Branch' failed" }
+
+	& git pull --recurse-submodules 
+	if ($lastExitCode -ne "0") { throw "'git pull --recurse-submodules' failed" }
+
 	& git status
+	if ($lastExitCode -ne "0") { throw "'git status' failed" }
+
 	exit 0
 } catch {
 	write-error "ERROR in line $($_.InvocationInfo.ScriptLineNumber): $($Error[0])"
