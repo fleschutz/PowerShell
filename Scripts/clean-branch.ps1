@@ -1,7 +1,7 @@
 #!/bin/powershell
 <#
 .SYNTAX         ./clean-branch.ps1
-.DESCRIPTION	cleans the current Git branch (and submodules) from generated files
+.DESCRIPTION	cleans the current Git branch (including submodules) from generated files
 .LINK		https://github.com/fleschutz/PowerShell
 .NOTES		Author:	Markus Fleschutz / License: CC0
 #>
