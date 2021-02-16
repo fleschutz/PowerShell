@@ -12,9 +12,9 @@ try {
 	if ($DirTree -eq "" ) {
 		$DirTree = read-host "Enter the path to the directory tree"
 	}
-	write-progress "Listing empty files in $DirTree ..."
 	[int]$Count = 0
-	Get-ChildItem $DirTree -recurse | Where {$_.PSIsContainer -eq $false} | Where {$_.Length -eq 0} | ForEach-Object {
+	write-progress "Listing empty files in $DirTree ..."
+	get-childItem $DirTree -recurse | where {$_.PSIsContainer -eq $false} | where {$_.Length -eq 0} | foreach-object {
 		write-output $_.FullName
 		$Count++
 	}

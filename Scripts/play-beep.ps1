@@ -6,10 +6,5 @@
 .NOTES		Author:	Markus Fleschutz / License: CC0
 #>
 
-try {
-	[console]::beep(500,300)
-	exit 0
-} catch {
-	write-error "ERROR: line $($_.InvocationInfo.ScriptLineNumber): $($Error[0])"
-	exit 1
-}
+[console]::beep(500,300)
+exit 0
