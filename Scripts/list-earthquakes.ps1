@@ -15,6 +15,6 @@ try {
 	(Invoke-WebRequest -Uri "https://earthquake.usgs.gov/fdsnws/event/1/query?format=$Format&minmagnitude=$MinMagnitude&orderby=$OrderBy" -UserAgent "curl" ).Content
 	exit 0
 } catch {
-	write-error "ERROR in line $($_.InvocationInfo.ScriptLineNumber): $($Error[0])"
+	write-error "ERROR: line $($_.InvocationInfo.ScriptLineNumber): $($Error[0])"
 	exit 1
 }

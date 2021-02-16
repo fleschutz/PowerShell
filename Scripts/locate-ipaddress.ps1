@@ -6,7 +6,7 @@
 .NOTES		Author:	Markus Fleschutz / License: CC0
 #>
 
-param([string]$IPaddr)
+param($IPaddr = "")
 try {
 	if ($IPaddr -eq "" ) {
 		$IPaddr = read-host "Enter IP address to locate"
@@ -15,6 +15,6 @@ try {
 	write-output $result
 	exit 0
 } catch {
-	write-error "ERROR in line $($_.InvocationInfo.ScriptLineNumber): $($Error[0])"
+	write-error "ERROR: line $($_.InvocationInfo.ScriptLineNumber): $($Error[0])"
 	exit 1
 }

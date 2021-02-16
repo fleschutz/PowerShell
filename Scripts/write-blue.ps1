@@ -6,7 +6,7 @@
 .NOTES		Author:	Markus Fleschutz / License: CC0
 #>
 
-param([string]$Text = "")
+param($Text = "")
 
 try {
 	if ($Text -eq "" ) {
@@ -15,6 +15,6 @@ try {
 	write-host -foregroundColor blue $Text
 	exit 0
 } catch {
-	write-error "ERROR in line $($_.InvocationInfo.ScriptLineNumber): $($Error[0])"
+	write-error "ERROR: line $($_.InvocationInfo.ScriptLineNumber): $($Error[0])"
 	exit 1
 }
