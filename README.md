@@ -51,6 +51,7 @@ Table of Contents
 * [list-cmdlets.ps1](Scripts/list-cmdlets.ps1) - lists the PowerShell cmdlets
 * [list-earthquakes.ps1](Scripts/list-earthquakes.ps1) - lists earthquakes with magnitude >= 6.0 for the last 30 days
 * [list-modules.ps1](Scripts/list-modules.ps1) - lists the PowerShell modules
+* [list-network-shares.ps1](Scripts/list-network-shares.ps1) - lists the network shares of the local computer
 * [list-news.ps1](Scripts/list-news.ps1) - lists the latest news
 * [list-os-releases.ps1](Scripts/list-os-releases.ps1) - lists OS releases and download URL
 * [list-printers.ps1](Scripts/list-printers.ps1) - lists all printer known to the computer
