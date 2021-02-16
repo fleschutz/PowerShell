@@ -9,6 +9,13 @@
 param($URL = "")
 
 try {
+	& wget --version
+} catch {
+	write-error "Can't execute 'wget' - make sure wget is installed and available"
+	exit 1
+}
+
+try {
 	if ($URL -eq "" ) {
 		$URL = read-host "Enter URL to download"
 	}

@@ -110,7 +110,7 @@ Table of Contents
 * [turn-volume-down.ps1](Scripts/turn-volume-down.ps1) - turns the audio volume down (-10% by default)
 * [txt2wav.ps1](Scripts/txt2wav.ps1) - converts text into a audio .WAV file
 * [unmute-audio.ps1](Scripts/unmute-audio.ps1) - unmutes audio
-* [update-repos.ps1](Scripts/update-repos.ps1) - updates all Git repositories under the current directory
+* [update-repos.ps1](Scripts/update-repos.ps1) - updates all Git repositories under the current/given directory
 * [visualize-dir-tree.ps1](Scripts/visualize-dir-tree.ps1) - visualizes the given/current directory tree
 * [voice-control.ps1](Scripts/voice-control.ps1) - executes the PowerShell scripts by voice
 * [weather.ps1](Scripts/weather.ps1) - prints the current weather forecast

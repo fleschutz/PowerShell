@@ -1,7 +1,7 @@
 #!/bin/powershell
 <#
 .SYNTAX         ./update-repos.ps1 [<directory>]
-.DESCRIPTION	updates all Git repositories under the current directory
+.DESCRIPTION	updates all Git repositories under the current/given directory
 .LINK		https://github.com/fleschutz/PowerShell
 .NOTES		Author:	Markus Fleschutz / License: CC0
 #>
@@ -19,10 +19,10 @@ try {
 	if ($Directory -eq "") {
 		$Directory = "$PWD"
 	}
-	$Items = get-childItem -path $Directory
-	foreach ($Item in $Items) {
-		if ($Item.Mode -like "d*") {
-			$Filename = $Item.Name
+	$Files = get-childItem -path $Directory
+	foreach ($File in $Files) {
+		if ($File.Mode -like "d*") {
+			$Filename = $File.Name
 			write-host ""
 			write-host -nonewline "Updating $Filename ..."
 			set-location $Filename
