@@ -6,7 +6,7 @@
 .NOTES		Author:	Markus Fleschutz / License: CC0
 #>
 
-param(IPaddress = "")
+param($IPaddress = "")
 
 try {
 	if ($IPaddress -eq "" ) {
