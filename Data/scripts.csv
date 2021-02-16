@@ -13,9 +13,9 @@ close-cortana.ps1, closes Cortana gracefully
 close-edge.ps1, closes Microsoft Edge gracefully
 close-file-explorer.ps1, closes Microsoft File Explorer gracefully
 close-program.ps1, closes the given program gracefully
-close-system-settings.ps1 - closes the System Settings gracefully
+close-system-settings.ps1, closes the System Settings gracefully
 close-thunderbird.ps1, closes Mozilla Thunderbird gracefully
-close-vlc.ps1 - closes the VLC media player gracefully
+close-vlc.ps1, closes the VLC media player gracefully
 close-windows-terminal.ps1, closes Windows Terminal gracefully
 configure-git.ps1, sets up the Git user configuration
 csv-to-text.ps1, converts the given CSV file into a text list
@@ -23,7 +23,6 @@ daily-tasks.sh, execute PowerShell scripts automatically as daily tasks (Linux o
 decrypt-file.ps1, decrypts the given file
 display-time.ps1, displays the current time for 10 seconds by default
 download.ps1, downloads the file/directory from the given URL
-empty-dir.ps1, empties the given directory
 enable-crash-dumps.ps1, enables the writing of crash dumps
 encrypt-file.ps1, encrypts the given file
 generate-qrcode.ps1, generates a QR code

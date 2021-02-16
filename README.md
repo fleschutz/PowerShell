@@ -1,7 +1,7 @@
 Collection of PowerShell Scripts
 ================================
 
-**This repository contains 120+ useful and cross-platform PowerShell scripts in the [Scripts/ folder](Scripts/) - to be used by command-line interface (CLI), for remote control (RC), by context menu, by voice control, by automation software like Jenkins, automatically as daily tasks, or simply to learn PowerShell. See the [FAQ page](Misc/FAQ.md) if you need help or have any question.**
+**This repository contains 120+ useful and cross-platform PowerShell scripts in the [Scripts/ folder](Scripts/) - to be used by command-line interface (CLI), for remote control (RC), by context menu, by voice control, by automation software like Jenkins, automatically as daily tasks, or simply to learn PowerShell. See the [FAQ page](Misc/FAQ.md) if you need help or have any questions.**
 
 Table of Contents
 -----------------
@@ -29,7 +29,6 @@ Table of Contents
 * [decrypt-file.ps1](Scripts/decrypt-file.ps1) - encrypts the given file
 * [display-time.ps1](Scripts/display-time.ps1) - displays the current time for 10 seconds by default
 * [download.ps1](Scripts/download.ps1) - downloads the file/directory from the given URL
-* [empty-dir.ps1](Scripts/empty-dir.ps1) - empties the given directory
 * [enable-crash-dumps.ps1](Scripts/enable-crash-dumps.ps1) - enables the writing of crash dumps
 * [encrypt-file.ps1](Scripts/encrypt-file.ps1) - encrypts the given file
 * [generate-qrcode.ps1](Scripts/generate-qrcode.ps1) - generates a QR code
