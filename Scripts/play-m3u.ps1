@@ -1,7 +1,7 @@
 #!/bin/powershell
 <#
-.SYNTAX         ./play-mp3.ps1 [<MP3-file>]
-.DESCRIPTION	plays the given sound file (MP3 file format)
+.SYNTAX         ./play-m3u.ps1 [<playlist-file>]
+.DESCRIPTION	plays the given playlist (M3U file format)
 .LINK		https://github.com/fleschutz/PowerShell
 .NOTES		Author:	Markus Fleschutz / License: CC0
 #>
@@ -10,13 +10,20 @@ param($Filename = "")
 
 try {
 	if ($Filename -eq "" ) {
-		$Filename = read-host "Enter the MP3 filename"
+		$Filename = read-host "Enter the M3U playlist filename"
 	}
+	$Lines = get-content $Filename
+
 	add-type -assemblyName presentationCore
 	$MediaPlayer = new-object system.windows.media.mediaplayer
-	$MediaPlayer.open("$Filename")
-	$MediaPlayer.play()
 
+	for ([int]$i=0; $i -lt $Lines.Count; $i++) {
+		$Line = $Lines[$i]
+		if ($Line[0] -ne "#") {
+			$MediaPlayer.open("$Line")
+			$MediaPlayer.play()
+		}
+	}
 	exit 0
 } catch {
 	write-error "ERROR: line $($_.InvocationInfo.ScriptLineNumber): $($Error[0])"

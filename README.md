@@ -74,7 +74,8 @@ Table of Contents
 * [open-email-client.ps1](Scripts/open-browser.ps1) - starts the default email client
 * [play-beep.ps1](Scripts/play-beep.ps1) - plays a beep sound
 * [play-mission-impossible.ps1](Scripts/play-mission-impossible.ps1) - plays the Mission Impossible theme
-* [play-mp3.ps1](Scripts/play-mp3.ps1) - plays the given MP3 sound file
+* [play-m3u.ps1](Scripts/play-m3u.ps1) - plays the given playlist (M3U file format)
+* [play-mp3.ps1](Scripts/play-mp3.ps1) - plays the given sound file (MP3 file format)
 * [play-super-mario.ps1](Scripts/play-super-mario.ps1) - plays the Super Mario Intro
 * [play-the-imperial-march.ps1](Scripts/play-the-imperial-march.ps1) - plays the Imperial March (Star Wars)
 * [poweroff.ps1](Scripts/poweroff.ps1) - halts the local computer (requires admin rights)
