@@ -24,6 +24,7 @@ Table of Contents
 * [close-vlc.ps1](Scripts/close-vlc.ps1) - closes the VLC media player gracefully
 * [close-windows-terminal.ps1](Scripts/close-windows-terminal.ps1) - closes Windows Terminal gracefully
 * [configure-git.ps1](Scripts/configure-git.ps1) - sets up the Git user configuration
+* [create-symlink.ps1](Scripts/create-symlink.ps1) - creates a symbolic link
 * [csv-to-text.ps1](Scripts/csv-to-text.ps1) - converts the given CSV file into a text list
 * [daily-tasks.sh](Scripts/daily-tasks.sh) - execute PowerShell scripts automatically as daily tasks (Linux only)
 * [decrypt-file.ps1](Scripts/decrypt-file.ps1) - encrypts the given file

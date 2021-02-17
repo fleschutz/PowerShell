@@ -18,6 +18,7 @@ close-thunderbird.ps1, closes Mozilla Thunderbird gracefully
 close-vlc.ps1, closes the VLC media player gracefully
 close-windows-terminal.ps1, closes Windows Terminal gracefully
 configure-git.ps1, sets up the Git user configuration
+create-symlink.ps1, creates a symbolic link
 csv-to-text.ps1, converts the given CSV file into a text list
 daily-tasks.sh, execute PowerShell scripts automatically as daily tasks (Linux only)
 decrypt-file.ps1, decrypts the given file
