@@ -8,10 +8,11 @@
 
 param($Text = "")
 
+if ($Text -eq "" ) {
+	$Text = read-host "Enter the text to write"
+}
+
 try {
-	if ($Text -eq "" ) {
-		[String]$Text = read-host "Enter text to write"
-	}
 	write-host -foregroundColor blue $Text
 	exit 0
 } catch {

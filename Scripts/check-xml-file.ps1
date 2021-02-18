@@ -8,10 +8,11 @@
 
 param($File = "")
 
+if ($File -eq "" ) {
+	$File = read-host "Enter path to XML file"
+}
+
 try {
-	if ($File -eq "" ) {
-		$File = read-host "Enter path to XML file"
-	}
 	$XmlFile = Get-Item $File
 	
 	$script:ErrorCount = 0

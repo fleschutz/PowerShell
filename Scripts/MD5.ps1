@@ -6,12 +6,13 @@
 .NOTES		Author:	Markus Fleschutz / License: CC0
 #>
 
-param([string]$File = "")
+param($File = "")
+
+if ($File -eq "" ) {
+	$File = read-host "Enter path to file"
+}
 
 try {
-	if ($File -eq "" ) {
-		$File = read-host "Enter path to file"
-	}
 	$Result = get-filehash $File -algorithm MD5
 	write-output "MD5 hash is" $Result.Hash
 	exit 0

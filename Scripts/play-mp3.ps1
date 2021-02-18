@@ -8,10 +8,11 @@
 
 param($Filename = "")
 
+if ($Filename -eq "" ) {
+	$Filename = read-host "Enter the MP3 filename"
+}
+
 try {
-	if ($Filename -eq "" ) {
-		$Filename = read-host "Enter the MP3 filename"
-	}
 	add-type -assemblyName presentationCore
 	$MediaPlayer = new-object system.windows.media.mediaplayer
 	$MediaPlayer.open("$Filename")

@@ -11,7 +11,7 @@
 
 #Requires -RunAsAdministrator
 
-param([string]$Directory = "")
+param($Directory = "")
 
 
 function CheckIfInstalled {

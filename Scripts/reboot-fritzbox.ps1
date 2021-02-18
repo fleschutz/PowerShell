@@ -6,7 +6,7 @@
 .NOTES		Author:	Markus Fleschutz / License: CC0
 #>
 
-param([string]$USERNAME = "", [string]$PASSWORD = "")
+param($USERNAME = "", $PASSWORD = "")
 if ($USERNAME -eq "") {
 	$USERNAME = read-host "Enter username for FRITZ!Box"
 }

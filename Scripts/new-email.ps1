@@ -6,12 +6,13 @@
 .NOTES		Author:	Markus Fleschutz / License: CC0
 #>
 
-param([string]$EmailAddress = "")
+param($EmailAddress = "")
+
+if ($EmailAddress -eq "" ) {
+	$EmailAddress = "markus@fleschutz.de"
+}
 
 try {
-	if ($EmailAddress -eq "" ) {
-		$EmailAddress = "markus@fleschutz.de"
-	}
 	$URL="mailto:$EmailAddress"
 	Start-Process $URL
 	exit 0

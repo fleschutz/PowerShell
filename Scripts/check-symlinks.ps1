@@ -8,11 +8,11 @@
 
 param($DirTree = "")
 
-try {
-	if ($DirTree -eq "" ) {
-		$DirTree = read-host "Enter the path to the directory tree"
-	}
+if ($DirTree -eq "" ) {
+	$DirTree = read-host "Enter the path to the directory tree"
+}
 
+try {
 	write-progress "Checking symlinks in $DirTree..."
 	[int]$SymlinksTotal = [int]$SymlinksBroken = 0
 	Get-ChildItem $DirTree -recurse  | Where { $_.Attributes -match "ReparsePoint" } | ForEach-Object {

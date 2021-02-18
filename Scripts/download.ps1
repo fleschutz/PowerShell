@@ -8,6 +8,10 @@
 
 param($URL = "")
 
+if ($URL -eq "" ) {
+	$URL = read-host "Enter URL to download"
+}
+
 try {
 	& wget --version
 } catch {
@@ -16,10 +20,6 @@ try {
 }
 
 try {
-	if ($URL -eq "" ) {
-		$URL = read-host "Enter URL to download"
-	}
-
 	wget --mirror --convert-links --adjust-extension --page-requisites --no-parent $URL --directory-prefix . --no-verbose
 
 	write-host -foregroundColor green "Done."

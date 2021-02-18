@@ -6,14 +6,15 @@
 .NOTES		Author:	Markus Fleschutz / License: CC0
 #>
 
-param([string]$Text = "")
+param($Text = "")
+
+if ($Text -eq "" ) {
+	$Text = read-host "Enter the text to write"
+}
 
 try {
 	$Time = get-date -format "yyyy-MM-ddTHH:mm:ssZ" -asUTC
 	$User = $(whoami)
-	if ($Text -eq "" ) {
-		[string]$Text = read-host "Enter text to write"
-	}
 	$Line = "$Time,$User,$Text"
 
 	$PathToRepo=(get-item $MyInvocation.MyCommand.Path).directory.parent

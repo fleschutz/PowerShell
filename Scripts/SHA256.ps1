@@ -6,13 +6,13 @@
 .NOTES		Author:	Markus Fleschutz / License: CC0
 #>
 
-param([string]$File = "")
+param($File = "")
+
+if ($File -eq "" ) {
+	$File = read-host "Enter the filename"
+}
 
 try {
-	if ($File -eq "" ) {
-		$File = read-host "Enter file"
-	}
-
 	$Result = get-filehash $File -algorithm SHA256
 	write-output "SHA256 hash is:" $Result.Hash
 	exit 0

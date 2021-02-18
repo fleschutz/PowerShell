@@ -6,10 +6,12 @@
 .NOTES		Author:	Markus Fleschutz / License: CC0
 #>
 
-param([string]$City)
+param($City = "")
+
 if ($City -eq "" ) {
-	$City = read-host "Enter the city"
+	$City = read-host "Enter the city name"
 }
+
 $PathToRepo = "$PSScriptRoot/.."
  
 try {

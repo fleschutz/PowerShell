@@ -6,12 +6,13 @@
 .NOTES		Author:	Markus Fleschutz / License: CC0
 #>
 
-param([string]$Text = "")
+param($Text = "")
+
+if ($Text -eq "" ) {
+	$Text = read-host "Enter the text to write"
+}
 
 try {
-	if ($Text -eq "" ) {
-		[string]$Text = read-host "Enter text to write"
-	}
 	write-output $Text.ToUpper()
 	exit 0
 } catch {

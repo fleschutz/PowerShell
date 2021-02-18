@@ -6,7 +6,7 @@
 .NOTES		Author:	Markus Fleschutz / License: CC0
 #>
 
-param([string]$Filename = "")
+param($Filename = "")
 
 function Speak { param([string]$Text)
 	write-output "$Text"

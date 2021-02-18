@@ -6,7 +6,7 @@
 .NOTES		Author:	Markus Fleschutz / License: CC0
 #>
 
-param([string]$Text = "")
+param($Text = "")
 
 function BrailleA { param([int]$Row)
 	switch($Row) {

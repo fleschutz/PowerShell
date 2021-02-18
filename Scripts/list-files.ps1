@@ -6,12 +6,13 @@
 .NOTES		Author:	Markus Fleschutz / License: CC0
 #>
 
-param([string]$Folder)
+param($Folder = "")
+
+if ($Folder -eq "" ) {
+	$Folder = read-host "Enter path to folder"
+}
 
 try {
-	if ($Folder -eq "" ) {
-		[string]$Folder = read-host "Enter path to folder"
-	}
 	Get-ChildItem -path $Folder -recurse | select FullName
 	exit 0
 } catch {

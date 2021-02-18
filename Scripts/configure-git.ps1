@@ -8,6 +8,16 @@
 
 param($FullName = "", $EmailAddress = "", $FavoriteEditor = "")
 
+if ($FullName -eq "") {
+	$FullName       = read-host "Enter your full name"
+}
+if ($EmailAddress -eq "") {
+	$EmailAddress   = read-host "Enter your e-mail address"
+}
+if ($FavoriteEditor -eq "") {
+	$FavoriteEditor = read-host "Enter your favorite text editor (emacs,nano,vi,vim,...)"
+}
+
 try {
 	& git --version
 } catch {
@@ -16,15 +26,6 @@ try {
 }
 
 try {
-	if ($FullName -eq "") {
-		$FullName       = read-host "Enter your full name"
-	}
-	if ($EmailAddress -eq "") {
-		$EmailAddress   = read-host "Enter your e-mail address"
-	}
-	if ($FavoriteEditor -eq "") {
-		$FavoriteEditor = read-host "Enter your favorite text editor (emacs,nano,vi,vim,...)"
-	}
 	& git config --global user.name $FullName
 	& git config --global user.email $EmailAddress
 	& git config --global core.editor $FavoriteEditor

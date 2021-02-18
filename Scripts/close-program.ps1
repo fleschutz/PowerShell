@@ -8,15 +8,15 @@
 
 param($FullProgramName = "", $ProgramName = "", $ProgramAliasName = "")
 
-try {
-	if ($ProgramName -eq "") {
-		get-process | where-object {$_.mainWindowTitle} | format-table Id, Name, mainWindowtitle -AutoSize
-		$ProgramName = read-host "Enter program name"
-	}
-	if ($FullProgramName -eq "") {
-		$FullProgramName = $ProgramName
-	}
+if ($ProgramName -eq "") {
+	get-process | where-object {$_.mainWindowTitle} | format-table Id, Name, mainWindowtitle -AutoSize
+	$ProgramName = read-host "Enter program name"
+}
+if ($FullProgramName -eq "") {
+	$FullProgramName = $ProgramName
+}
 
+try {
 	$Processes = get-process -name $ProgramName -errorAction 'silentlycontinue'
 	if ($Processes.Count -ne 0) {
 		foreach ($Process in $Processes) {

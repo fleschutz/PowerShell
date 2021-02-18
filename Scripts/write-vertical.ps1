@@ -6,12 +6,13 @@
 .NOTES		Author:	Markus Fleschutz / License: CC0
 #>
 
-param([string]$Text = "")
+param($Text = "")
+
+if ($Text -eq "" ) {
+	$Text = read-host "Enter the text to write"
+}
 
 try {
-	if ($Text -eq "" ) {
-		[String]$Text = read-host "Enter text to write"
-	}
 	[char[]]$TextArray = $Text
 	foreach($Char in $TextArray) {
 		write-output $Char

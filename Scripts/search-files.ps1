@@ -6,7 +6,7 @@
 .NOTES		Author:	Markus Fleschutz / License: CC0
 #>
 
-param([string]$Pattern = "", [string]$Path = "")
+param($Pattern = "", $Path = "")
 
 function ListScripts { param([string]$Pattern, [string]$Path)
 	$List = Select-String -Path $Path -Pattern "$Pattern" 

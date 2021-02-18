@@ -6,7 +6,8 @@
 .NOTES		Author:	Markus Fleschutz / License: CC0
 #>
 
-param([string]$Message)
+param($Message = "")
+
 if ($Message -eq "" ) {
 	$URL = read-host "Enter alert message"
 }

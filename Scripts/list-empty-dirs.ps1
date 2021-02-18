@@ -8,10 +8,11 @@
 
 param($DirTree = "")
 
+if ($DirTree -eq "" ) {
+	$DirTree = read-host "Enter the path to the directory tree"
+}
+
 try {
-	if ($DirTree -eq "" ) {
-		$DirTree = read-host "Enter the path to the directory tree"
-	}
 	write-progress "Listing empty directories in $DirTree..."
 	[int]$Count = 0
 	Get-ChildItem $DirTree -recurse | Where {$_.PSIsContainer -eq $true} | Where {$_.GetFileSystemInfos().Count -eq 0} | ForEach-Object {

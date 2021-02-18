@@ -7,7 +7,7 @@
 .NOTES		Author:	Markus Fleschutz / License: CC0
 #>
 
-param([string]$Directory = "")
+param($Directory = "")
 
 function WriteCsvHeader { param([PSCustomObject]$File) 
 	foreach($Entry in $File.ata_smart_attributes.table) {

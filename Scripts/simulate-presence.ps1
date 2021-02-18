@@ -8,10 +8,11 @@
 
 param($IPaddress = "")
 
+if ($IPaddress -eq "" ) {
+	$IPaddress = read-host "Enter IP address of Shelly1 device"
+}
+
 try {
-	if ($IPaddress -eq "" ) {
-		$IPaddress = read-host "Enter IP address of Shelly1 device"
-	}
 	for ([int]$i = 0; $i -lt 1000; $i++) {
 		& ./switch-shelly1.ps1 $IPaddress on 0
 		start-sleep -s 10

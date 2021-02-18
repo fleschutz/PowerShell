@@ -6,7 +6,7 @@
 .NOTES		Author:	Markus Fleschutz / License: CC0
 #>
 
-param([string]$Dir = "")
+param($Dir = "")
 
 function ListDirectory { param([string]$Path)
 	$Items = get-childItem -path $Path

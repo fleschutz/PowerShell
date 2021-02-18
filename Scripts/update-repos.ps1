@@ -8,6 +8,10 @@
 
 param($Directory = "")
 
+if ($Directory -eq "") {
+	$Directory = "$PWD"
+}
+
 try {
 	& git --version
 } catch {
@@ -16,9 +20,6 @@ try {
 }
 
 try {
-	if ($Directory -eq "") {
-		$Directory = "$PWD"
-	}
 	$Files = get-childItem -path $Directory
 	foreach ($File in $Files) {
 		if ($File.Mode -like "d*") {

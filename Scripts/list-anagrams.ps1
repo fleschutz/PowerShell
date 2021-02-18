@@ -6,7 +6,7 @@
 .NOTES		Author:	Markus Fleschutz / License: CC0
 #>
 
-param([string]$Word, [int]$Columns = 8)
+param($Word = "", [int]$Columns = 8)
 
 function GetPermutations {
     [cmdletbinding()]

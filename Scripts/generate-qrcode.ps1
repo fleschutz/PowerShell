@@ -8,13 +8,14 @@
 
 param($Text = "", $ImageSize = "")
 
+if ($Text -eq "") {
+	$Text = read-input "Enter text or URL"
+}
+if ($ImageSize -eq "") {
+	$ImageSize = read-input "Enter image size (e.g. 500x500)"
+}
+
 try {
-	if ($Text -eq "") {
-		$Text = read-input "Enter text or URL"
-	}
-	if ($ImageSize -eq "") {
-		$ImageSize = read-input "Enter image size (e.g. 500x500)"
-	}
 	$ECC = "M" # can be L, M, Q, H
 	$QuietZone = 1
 	$ForegroundColor = "000000"

@@ -6,12 +6,13 @@
 .NOTES		Author:	Markus Fleschutz / License: CC0
 #>
 
-param([string]$URL = "")
+param($URL = "")
+
+if ($URL -eq "" ) {
+	$URL = "http://www.fleschutz.de"
+}
 
 try {
-	if ($URL -eq "" ) {
-		$URL = "http://www.fleschutz.de"
-	}
 	Start-Process $URL
 	exit 0
 } catch {

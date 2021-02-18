@@ -6,7 +6,7 @@
 .NOTES		Author:	Markus Fleschutz / License: CC0
 #>
 
-param([string]$RSS_URL = "https://yahoo.com/news/rss/world")
+param($RSS_URL = "https://yahoo.com/news/rss/world")
 
 try {
 	[xml]$Content = (invoke-webRequest -URI $RSS_URL).Content

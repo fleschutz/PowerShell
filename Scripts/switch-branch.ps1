@@ -8,6 +8,10 @@
 
 param($Branch = "")
 
+if ($Branch -eq "") {
+	$Branch = read-host "Enter branch name to switch to"
+}
+
 try {
 	& git --version
 } catch {
@@ -16,10 +20,6 @@ try {
 }
 
 try {
-	if ($Branch -eq "") {
-		$Branch = read-host "Enter branch name to switch to"
-	}
-
 	& git switch --recurse-submodules $Branch
 	if ($lastExitCode -ne "0") { throw "'git switch --recurse-submodules $Branch' failed" }
 

@@ -6,12 +6,13 @@
 .NOTES		Author:	Markus Fleschutz / License: CC0
 #>
 
-param([string]$File = "")
+param($File = "")
+
+if ($File -eq "") {
+	$File = read-host "Enter path to text file"
+}
 
 try {
-	if ($File -eq "") {
-		$File = read-host "Enter path to text file"
-	}
 	$Text = Get-Content $File
 
 	$Voice = new-object -ComObject SAPI.SPVoice

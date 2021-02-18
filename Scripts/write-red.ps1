@@ -6,15 +6,11 @@
 .NOTES		Author:	Markus Fleschutz / License: CC0
 #>
 
-param([string]$Text = "")
+param($Text = "")
 
-try {
-	if ($Text -eq "" ) {
-		[string]$Text = read-host "Enter text to write"
-	}
-	write-host -foregroundcolor red $Text
-	exit 0
-} catch {
-	write-error "ERROR: line $($_.InvocationInfo.ScriptLineNumber): $($Error[0])"
-	exit 1
+if ($Text -eq "" ) {
+	$Text = read-host "Enter the text to write"
 }
+
+write-host -foregroundcolor red $Text
+exit 0

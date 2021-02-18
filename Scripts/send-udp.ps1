@@ -6,7 +6,7 @@
 .NOTES		Author:	Markus Fleschutz / License: CC0
 #>
 
-param([string]$TargetIP = "", [int]$TargetPort = 0, [string]$Message = "")
+param($TargetIP = "", [int]$TargetPort = 0, $Message = "")
 
 try {
 	if ($TargetIP -eq "" ) {

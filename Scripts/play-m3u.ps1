@@ -8,10 +8,11 @@
 
 param($Filename = "")
 
+if ($Filename -eq "" ) {
+	$Filename = read-host "Enter the M3U playlist filename"
+}
+
 try {
-	if ($Filename -eq "" ) {
-		$Filename = read-host "Enter the M3U playlist filename"
-	}
 	$Lines = get-content $Filename
 
 	add-type -assemblyName presentationCore

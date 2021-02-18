@@ -8,14 +8,14 @@
 
 param($Symlink = "", $Target = "")
 
-try {
-	if ($Symlink -eq "" ) {
-		$Symlink = read-host "Enter filename of symlink"
-	}
-	if ($Target -eq "" ) {
-		$Target = read-host "Enter path to target"
-	}
+if ($Symlink -eq "" ) {
+	$Symlink = read-host "Enter filename of symlink"
+}
+if ($Target -eq "" ) {
+	$Target = read-host "Enter path to target"
+}
 
+try {
 	new-item -path "$Symlink" -itemType SymbolicLink -Value "$Target"
 
 	write-host -foregroundColor green "Done."

@@ -6,7 +6,7 @@
 .NOTES		Author:	Markus Fleschutz / License: CC0
 #>
 
-param([string]$MACaddress = "", [string]$IPaddress = "")
+param($MACaddress = "", $IPaddress = "")
 
 function Send-WOL { param([string]$mac, [string]$ip="255.255.255.255", [int]$port=9) 
 	$broadcast = [Net.IPAddress]::Parse($ip) 

@@ -6,12 +6,13 @@
 .NOTES		Author:	Markus Fleschutz / License: CC0
 #>
 
-param([string]$PathToExe)
+param($PathToExe = "")
+
+if ($PathToExe -eq "" ) {
+	$PathToExe = read-host "Enter path to executable file"
+}
 
 try {
-	if ($PathToExe -eq "" ) {
-		$PathToExe = read-host "Enter path to executable file"
-	}
 	get-childitem $PathToExe | % {$_.VersionInfo} | Select *
 	exit 0
 } catch {

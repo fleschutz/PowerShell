@@ -8,11 +8,11 @@
 
 param($Directory = "")
 
-try {
-	if ($Directory -eq "" ) {
-		$Directory = read-host "Enter path to directory to zip"
-	}
+if ($Directory -eq "" ) {
+	$Directory = read-host "Enter the path to the directory to zip"
+}
 
+try {
 	compress-archive -path $Directory -destinationPath $Directory.zip
 
 	write-host -foregroundColor green "Done - created zip archive $($Directory).zip"

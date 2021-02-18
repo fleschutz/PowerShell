@@ -6,7 +6,7 @@
 .NOTES		Author:	Markus Fleschutz / License: CC0
 #>
 
-param([string]$DirTree = "")
+param($DirTree = "")
 
 function VisualizeDirectory { param([string]$Directory, [int]$Depth)
 	$Depth++

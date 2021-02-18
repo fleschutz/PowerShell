@@ -6,18 +6,18 @@
 .NOTES		Author:	Markus Fleschutz / License: CC0
 #>
 
-param([string]$CountryCode = "", [string]$ZipCode = "")
-$PathToRepo = "$PSScriptRoot/.."
+param($CountryCode = "", $ZipCode = "")
+
+if ($CountryCode -eq "" ) {
+	$CountryCode = read-host "Enter the country code"
+}
+if ($ZipCode -eq "" ) {
+	$ZipCode = read-host "Enter the zip code"
+}
 
 try {
-	if ($CountryCode -eq "" ) {
-		$CountryCode = read-host "Enter the country code"
-	}
-	if ($ZipCode -eq "" ) {
-		$ZipCode = read-host "Enter the zip code"
-	}
-
 	write-progress "Reading zip-codes.csv..."
+	$PathToRepo = "$PSScriptRoot/.."
 	$Table = import-csv "$PathToRepo/Data/zip-codes.csv"
 
 	$FoundOne = 0

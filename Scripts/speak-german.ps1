@@ -8,15 +8,16 @@
 
 param($Text = "")
 
+if ($Text -eq "") {
+	$Text = read-host "Enter the text to speak"
+}
+
 try {
 	$Voice = new-object -ComObject SAPI.SPVoice
 	$Voices = $Voice.GetVoices()
 	foreach ($OtherVoice in $Voices) {
 		$Description = $OtherVoice.GetDescription()
 		if ($Description -like "*- German*") {
-			if ($Text -eq "") {
-				$Text = read-host "Enter the text to speak"
-			}
 			write-progress "$Text"
 			$Voice.Voice = $OtherVoice
 			[void]$Voice.Speak($Text)

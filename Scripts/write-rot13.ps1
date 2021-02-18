@@ -6,7 +6,7 @@
 .NOTES		Author:	Markus Fleschutz / License: CC0
 #>
 
-param([string]$Text = "")
+param($Text = "")
 
 function ROT13 { param([string]$Text)
 	$Text.ToCharArray() | ForEach-Object {

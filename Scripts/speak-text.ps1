@@ -6,13 +6,13 @@
 .NOTES		Author:	Markus Fleschutz / License: CC0
 #>
 
-param([string]$Text = "")
+param($Text = "")
+
+if ($Text -eq "") {
+	$Text = read-host "Enter the text to speak"
+}
 
 try {
-	if ($Text -eq "") {
-		$Text = read-host "Enter the text to speak"
-	}
-
 	$Voice = new-object -ComObject SAPI.SPVoice
 	$Result = $Voice.Speak($Text)
 	exit 0
