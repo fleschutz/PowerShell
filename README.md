@@ -3,16 +3,32 @@ Collection of PowerShell Scripts
 
 **This repository contains 130+ useful and cross-platform PowerShell scripts in the [Scripts/ folder](Scripts/) - to be used by command-line interface (CLI), for remote control (RC), by context menu, by voice control, by automation software like Jenkins, automatically as daily tasks, or simply to learn PowerShell. See the [FAQ page](Misc/FAQ.md) if you need help or have any questions.**
 
-Table of Contents
------------------
-* [add-firewall-rules.ps1](Scripts/add-firewall-rules.ps1) - adds firewall rules for the given executables (requires admin rights)
-* [check-ipv4-address.ps1](Scripts/check-ipv4-address.ps1) - checks the given IPv4 address for validity
-* [check-ipv6-address.ps1](Scripts/check-ipv6-address.ps1) - checks the given IPv6 address for validity
-* [check-mac-address.ps1](Scripts/check-mac-address.ps1) - checks the given MAC address for validity
-* [check-symlinks.ps1](Scripts/check-symlinks.ps1) - checks every symlink in the given directory tree
-* [check-xml-file.ps1](Scripts/check-xml-file.ps1) - checks the given XML file for validity
-* [clean-branch.ps1](Scripts/clean-branch.ps1) - cleans the current Git branch (including submodules) from generated files
-* [clone-repos.ps1](Scripts/clone-repos.ps1) - clones well-known Git repositories
+Scripts for Audio & Voice
+-------------------------
+* [mute-audio.ps1](Scripts/mute-audio.ps1) - mutes audio
+* [play-beep.ps1](Scripts/play-beep.ps1) - plays a beep sound
+* [play-mission-impossible.ps1](Scripts/play-mission-impossible.ps1) - plays the Mission Impossible theme
+* [play-m3u.ps1](Scripts/play-m3u.ps1) - plays the given playlist (M3U file format)
+* [play-mp3.ps1](Scripts/play-mp3.ps1) - plays the given sound file (MP3 file format)
+* [play-super-mario.ps1](Scripts/play-super-mario.ps1) - plays the Super Mario Intro
+* [play-the-imperial-march.ps1](Scripts/play-the-imperial-march.ps1) - plays the Imperial March (Star Wars)
+* [speak-date.ps1](Scripts/speak-date.ps1) - speaks the current date by text-to-speech (TTS)
+* [speak-english.ps1](Scripts/speak-english.ps1) - speaks the given text with an English text-to-speech (TTS) voice
+* [speak-epub.ps1](Scripts/speak-epub.ps1) - speaks the content of the given Epub file by text-to-speech (TTS)
+* [speak-file.ps1](Scripts/speak-file.ps1) - speaks the content of the given text file by text-to-speech (TTS)
+* [speak-german.ps1](Scripts/speak-german.ps1) - speaks the given text with a German text-to-speech (TTS) voice
+* [speak-joke.ps1](Scripts/speak-joke.ps1) - speaks the next joke by text-to-speech (TTS)
+* [speak-test.ps1](Scripts/speak-test.ps1) - performs a speak test by text-to-speech (TTS)
+* [speak-text.ps1](Scripts/speak-text.ps1) - speaks the given text by text-to-speech (TTS)
+* [speak-time.ps1](Scripts/speak-time.ps1) - speaks the current time by text-to-speech (TTS)
+* [txt2wav.ps1](Scripts/txt2wav.ps1) - converts text into a audio .WAV file
+* [turn-volume-up.ps1](Scripts/turn-volume-up.ps1) - turns the audio volume up (+10% by default)
+* [turn-volume-down.ps1](Scripts/turn-volume-down.ps1) - turns the audio volume down (-10% by default)
+* [unmute-audio.ps1](Scripts/unmute-audio.ps1) - unmutes audio
+* [voice-control.ps1](Scripts/voice-control.ps1) - executes the PowerShell scripts by voice
+
+Script for the Desktop
+----------------------
 * [close-calculator.ps1](Scripts/close-calculator.ps1) - closes the calculator program gracefully
 * [close-chrome.ps1](Scripts/close-chrome.ps1) - closes Google Chrome gracefully
 * [close-cortana.ps1](Scripts/close-cortana.ps1) - closes Cortana gracefully
@@ -23,28 +39,59 @@ Table of Contents
 * [close-thunderbird.ps1](Scripts/close-thunderbird.ps1) - closes Mozilla Thunderbird gracefully
 * [close-vlc.ps1](Scripts/close-vlc.ps1) - closes the VLC media player gracefully
 * [close-windows-terminal.ps1](Scripts/close-windows-terminal.ps1) - closes Windows Terminal gracefully
+* [list-clipboard.ps1](Scripts/list-clipboard.ps1) - lists the contents of the clipboard
+* [new-email.ps1](Scripts/new-email.ps1) - starts the default email client to write a new email
+* [open-browser.ps1](Scripts/open-browser.ps1) - starts the default Web browser
+* [open-calculator.ps1](Scripts/open-calculator.ps1) - starts the calculator program
+* [open-email-client.ps1](Scripts/open-browser.ps1) - starts the default email client
+* [set-wallpaper.ps1](Scripts/set-wallpaper.ps1) - sets the given image as wallpaper
+
+Scripts for Git Usage
+---------------------
+* [clean-branch.ps1](Scripts/clean-branch.ps1) - cleans the current Git branch (including submodules) from generated files
+* [clone-repos.ps1](Scripts/clone-repos.ps1) - clones well-known Git repositories
 * [configure-git.ps1](Scripts/configure-git.ps1) - sets up the Git user configuration
+* [switch-branch.ps1](Scripts/switch-branch.ps1) - switches to the given Git branch
+* [update-repos.ps1](Scripts/update-repos.ps1) - updates all Git repositories under the current/given directory
+
+Scripts for Files & Folders
+---------------------------
+* [check-symlinks.ps1](Scripts/check-symlinks.ps1) - checks every symlink in the given directory tree
+* [check-xml-file.ps1](Scripts/check-xml-file.ps1) - checks the given XML file for validity
 * [create-symlink.ps1](Scripts/create-symlink.ps1) - creates a symbolic link
+* [decrypt-file.ps1](Scripts/decrypt-file.ps1) - encrypts the given file
+* [encrypt-file.ps1](Scripts/encrypt-file.ps1) - encrypts the given file
+* [inspect-exe.ps1](Scripts/inspect-exe.ps1) - prints basic information of the given executable file
+* [list-empty-dirs.ps1](Scripts/list-empty-dirs.ps1) - lists empty subfolders within the given directory tree
+* [list-empty-files.ps1](Scripts/list-empty-files.ps1) - lists empty files within the given directory tree
+* [list-files.ps1](Scripts/list-files.ps1) - lists all files in the given folder and also in every subfolder
+* [list-formatted.ps1](Scripts/list-formatted.ps1) - lists the current working directory formatted in columns
+* [MD5.ps1](Scripts/MD5.ps1) - prints the MD5 checksum of the given file
+* [remove-empty-dirs.ps1](Scripts/remove-empty-dirs.ps1) - removes empty subfolders within the given directory tree
+* [search-files.ps1](Scripts/search-files.ps1) - searches the given pattern in the given files
+* [SHA1.ps1](Scripts/SHA1.ps1) - prints the SHA1 checksum of the given file
+* [SHA256.ps1](Scripts/SHA256.ps1) - prints the SHA256 checksum of the given file
+* [show-dir-tree.ps1](Scripts/show-dir-tree.ps1) - visualizes the given/current directory tree
+* [zip-dir.ps1](Scripts/zip-dir.ps1) - creates a zip archive of the given directory
+
+Various Scripts
+---------------
+* [add-firewall-rules.ps1](Scripts/add-firewall-rules.ps1) - adds firewall rules for the given executables (requires admin rights)
+* [check-ipv4-address.ps1](Scripts/check-ipv4-address.ps1) - checks the given IPv4 address for validity
+* [check-ipv6-address.ps1](Scripts/check-ipv6-address.ps1) - checks the given IPv6 address for validity
+* [check-mac-address.ps1](Scripts/check-mac-address.ps1) - checks the given MAC address for validity
 * [csv-to-text.ps1](Scripts/csv-to-text.ps1) - converts the given CSV file into a text list
 * [daily-tasks.sh](Scripts/daily-tasks.sh) - execute PowerShell scripts automatically as daily tasks (Linux only)
-* [decrypt-file.ps1](Scripts/decrypt-file.ps1) - encrypts the given file
 * [display-time.ps1](Scripts/display-time.ps1) - displays the current time for 10 seconds by default
 * [download.ps1](Scripts/download.ps1) - downloads the file/directory from the given URL
 * [enable-crash-dumps.ps1](Scripts/enable-crash-dumps.ps1) - enables the writing of crash dumps
-* [encrypt-file.ps1](Scripts/encrypt-file.ps1) - encrypts the given file
 * [generate-qrcode.ps1](Scripts/generate-qrcode.ps1) - generates a QR code
 * [hibernate.ps1](Scripts/hibernate.ps1) - enables hibernate mode for the local computer (requires admin rights)
-* [inspect-exe.ps1](Scripts/inspect-exe.ps1) - prints basic information of the given executable file
 * [list-anagrams.ps1](Scripts/list-anagrams.ps1) - lists all anagrams of the given word
 * [list-automatic-variables.ps1](Scripts/list-automatic-variables.ps1) - lists the automatic variables of PowerShell 
-* [list-clipboard.ps1](Scripts/list-clipboard.ps1) - lists the contents of the clipboard
 * [list-current-timezone.ps1](Scripts/list-current-timezone.ps1) - lists the current time zone details
 * [list-environment-variables.ps1](Scripts/list-environment-variables.ps1) - lists all environment variables
-* [list-empty-dirs.ps1](Scripts/list-empty-dirs.ps1) - lists empty subfolders within the given directory tree
-* [list-empty-files.ps1](Scripts/list-empty-files.ps1) - lists empty files within the given directory tree
 * [list-installed-software.ps1](Scripts/list-installed-software.ps1) - lists the installed software
-* [list-files.ps1](Scripts/list-files.ps1) - lists all files in the given folder and also in every subfolder
-* [list-formatted.ps1](Scripts/list-formatted.ps1) - lists the current working directory formatted in columns
 * [list-fritzbox-calls.ps1](Scripts/list-fritzbox-calls.ps1) - lists the FRITZ!Box calls
 * [list-fritzbox-devices.ps1](Scripts/list-fritzbox-devices.ps1) - lists FRITZ!Box's known devices 
 * [list-logbook.ps1](Scripts/list-logbook.ps1) - lists the content of the logbook 
@@ -65,60 +112,26 @@ Table of Contents
 * [locate-city.ps1](Scripts/locate-city.ps1) - prints the geographic location of the given city
 * [locate-ipaddress.ps1](Scripts/locate-ipaddress.ps1) - prints the geographic location of the given IP address
 * [locate-zip-code.ps1](Scripts/locate-zip-code.ps1) - prints the geographic location of the given zip-code
-* [MD5.ps1](Scripts/MD5.ps1) - prints the MD5 checksum of the given file
 * [make-install.ps1](Scripts/make-install.ps1) - installs built executables and libs to the installation directory
 * [moon.ps1](Scripts/moon.ps1) - prints the current moon phase
-* [mute-audio.ps1](Scripts/mute-audio.ps1) - mutes audio
-* [open-browser.ps1](Scripts/open-browser.ps1) - starts the default Web browser
-* [open-calculator.ps1](Scripts/open-calculator.ps1) - starts the calculator program
-* [open-email-client.ps1](Scripts/open-browser.ps1) - starts the default email client
-* [play-beep.ps1](Scripts/play-beep.ps1) - plays a beep sound
-* [play-mission-impossible.ps1](Scripts/play-mission-impossible.ps1) - plays the Mission Impossible theme
-* [play-m3u.ps1](Scripts/play-m3u.ps1) - plays the given playlist (M3U file format)
-* [play-mp3.ps1](Scripts/play-mp3.ps1) - plays the given sound file (MP3 file format)
-* [play-super-mario.ps1](Scripts/play-super-mario.ps1) - plays the Super Mario Intro
-* [play-the-imperial-march.ps1](Scripts/play-the-imperial-march.ps1) - plays the Imperial March (Star Wars)
 * [poweroff.ps1](Scripts/poweroff.ps1) - halts the local computer (requires admin rights)
 * [query-smart-data.ps1](Scripts/query-smart-data.ps1) - queries the S.M.A.R.T. data of your HDD/SSD's 
-* [new-email.ps1](Scripts/new-email.ps1) - starts the default email client to write a new email
 * [next-joke.ps1](Scripts/next-joke.ps1) - gets the next random Juck Norris joke
 * [reboot.ps1](Scripts/reboot.ps1) - reboots the local computer (requires admin rights)
 * [reboot-fritzbox.ps1](Scripts/reboot-fritzbox.ps1) - reboots the FRITZ!box device
-* [remove-empty-dirs.ps1](Scripts/remove-empty-dirs.ps1) - removes empty subfolders within the given directory tree
-* [search-files.ps1](Scripts/search-files.ps1) - searches the given pattern in the given files
 * [scan-ports.ps1](Scripts/scan-ports.ps1) - scans the network for open/closed ports
 * [send-email.ps1](Scripts/send-email.ps1) - sends an email message
 * [send-tcp.ps1](Scripts/send-udp.ps1) - sends a TCP message to the given IP address and port
 * [send-udp.ps1](Scripts/send-udp.ps1) - sends a UDP datagram message to the given IP address and port
 * [set-timer.ps1](Scripts/set-timer.ps1) - sets a timer for a countdown
-* [set-wallpaper.ps1](Scripts/set-wallpaper.ps1) - sets the given image as wallpaper
-* [SHA1.ps1](Scripts/SHA1.ps1) - prints the SHA1 checksum of the given file
-* [SHA256.ps1](Scripts/SHA256.ps1) - prints the SHA256 checksum of the given file
 * [simulate-matrix.ps1](Scripts/simulate-matrix.ps1) - simulates the Matrix (fun)
 * [simulate-presence.ps1](Scripts/simulate-presence.ps1) - simulates the human presence against burglars
-* [speak-date.ps1](Scripts/speak-date.ps1) - speaks the current date by text-to-speech (TTS)
-* [speak-english.ps1](Scripts/speak-english.ps1) - speaks the given text with an English text-to-speech (TTS) voice
-* [speak-epub.ps1](Scripts/speak-epub.ps1) - speaks the content of the given Epub file by text-to-speech (TTS)
-* [speak-file.ps1](Scripts/speak-file.ps1) - speaks the content of the given text file by text-to-speech (TTS)
-* [speak-german.ps1](Scripts/speak-german.ps1) - speaks the given text with a German text-to-speech (TTS) voice
-* [speak-joke.ps1](Scripts/speak-joke.ps1) - speaks the next joke by text-to-speech (TTS)
-* [speak-test.ps1](Scripts/speak-test.ps1) - performs a speak test by text-to-speech (TTS)
-* [speak-text.ps1](Scripts/speak-text.ps1) - speaks the given text by text-to-speech (TTS)
-* [speak-time.ps1](Scripts/speak-time.ps1) - speaks the current time by text-to-speech (TTS)
-* [switch-branch.ps1](Scripts/switch-branch.ps1) - switches to the given Git branch
 * [switch-shelly1.ps1](Scripts/switch-shelly1.ps1) - switches a Shelly1 device in the local network
 * [take-screenshot.ps1](Scripts/take-screenshot.ps1) - takes a single screenshot
 * [take-screenshots.ps1](Scripts/take-screenshots.ps1) - takes multiple screenshots
 * [train-dns-cache.ps1](Scripts/train-dns-cache.ps1) - trains the DNS cache with frequently used domain names
 * [translate-file.ps1](Scripts/translate-file.ps1) - translates the given file from source to target language
 * [translate-text.ps1](Scripts/translate-text.ps1) - translates the given text into other languages
-* [turn-volume-up.ps1](Scripts/turn-volume-up.ps1) - turns the audio volume up (+10% by default)
-* [turn-volume-down.ps1](Scripts/turn-volume-down.ps1) - turns the audio volume down (-10% by default)
-* [txt2wav.ps1](Scripts/txt2wav.ps1) - converts text into a audio .WAV file
-* [unmute-audio.ps1](Scripts/unmute-audio.ps1) - unmutes audio
-* [update-repos.ps1](Scripts/update-repos.ps1) - updates all Git repositories under the current/given directory
-* [visualize-dir-tree.ps1](Scripts/visualize-dir-tree.ps1) - visualizes the given/current directory tree
-* [voice-control.ps1](Scripts/voice-control.ps1) - executes the PowerShell scripts by voice
 * [weather.ps1](Scripts/weather.ps1) - prints the current weather forecast
 * [weather-alert.ps1](Scripts/weather-alert.ps1) - checks the current weather for critical values
 * [weather-report.ps1](Scripts/weather-report.ps1) - prints the local weather report
@@ -138,7 +151,6 @@ Table of Contents
 * [write-typewriter.ps1](Scripts/write-typewriter.ps1) - writes the given text with the typewriter effect
 * [write-uppercase.ps1](Scripts/write-uppercase.ps1) - writes the given text in uppercase letters
 * [write-vertical.ps1](Scripts/write-vertical.ps1) - writes the given text in vertical direction
-* [zip-dir.ps1](Scripts/zip-dir.ps1) - creates a zip archive of the given directory
 
 Feedback
 --------
