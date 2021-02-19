@@ -46,8 +46,8 @@ Script for the Desktop
 * [open-email-client.ps1](Scripts/open-browser.ps1) - starts the default email client
 * [set-wallpaper.ps1](Scripts/set-wallpaper.ps1) - sets the given image as wallpaper
 
-Scripts for Git Usage
----------------------
+Scripts for Git
+---------------
 * [clean-branch.ps1](Scripts/clean-branch.ps1) - cleans the current Git branch (including submodules) from generated files
 * [clone-repos.ps1](Scripts/clone-repos.ps1) - clones well-known Git repositories
 * [configure-git.ps1](Scripts/configure-git.ps1) - sets up the Git user configuration
