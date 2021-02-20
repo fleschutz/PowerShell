@@ -45,6 +45,8 @@ Script for the Desktop
 * [open-calculator.ps1](Scripts/open-calculator.ps1) - starts the calculator program
 * [open-email-client.ps1](Scripts/open-browser.ps1) - starts the default email client
 * [set-wallpaper.ps1](Scripts/set-wallpaper.ps1) - sets the given image as wallpaper
+* [take-screenshot.ps1](Scripts/take-screenshot.ps1) - takes a single screenshot
+* [take-screenshots.ps1](Scripts/take-screenshots.ps1) - takes multiple screenshots
 
 Scripts for Git
 ---------------
@@ -66,6 +68,8 @@ Scripts for Files & Folders
 * [list-empty-files.ps1](Scripts/list-empty-files.ps1) - lists empty files within the given directory tree
 * [list-files.ps1](Scripts/list-files.ps1) - lists all files in the given folder and also in every subfolder
 * [list-formatted.ps1](Scripts/list-formatted.ps1) - lists the current working directory formatted in columns
+* [list-unused-files.ps1](Scripts/list-unused-files.ps1) - lists unused files in a directory tree
+* [make-install.ps1](Scripts/make-install.ps1) - installs built executables and libs to the installation directory
 * [MD5.ps1](Scripts/MD5.ps1) - prints the MD5 checksum of the given file
 * [remove-empty-dirs.ps1](Scripts/remove-empty-dirs.ps1) - removes empty subfolders within the given directory tree
 * [search-files.ps1](Scripts/search-files.ps1) - searches the given pattern in the given files
@@ -95,7 +99,6 @@ Various Scripts
 * [list-fritzbox-calls.ps1](Scripts/list-fritzbox-calls.ps1) - lists the FRITZ!Box calls
 * [list-fritzbox-devices.ps1](Scripts/list-fritzbox-devices.ps1) - lists FRITZ!Box's known devices 
 * [list-logbook.ps1](Scripts/list-logbook.ps1) - lists the content of the logbook 
-* [list-unused-files.ps1](Scripts/list-unused-files.ps1) - lists unused files in a directory tree
 * [list-cmdlets.ps1](Scripts/list-cmdlets.ps1) - lists the PowerShell cmdlets
 * [list-earthquakes.ps1](Scripts/list-earthquakes.ps1) - lists earthquakes with magnitude >= 6.0 for the last 30 days
 * [list-modules.ps1](Scripts/list-modules.ps1) - lists the PowerShell modules
@@ -112,7 +115,6 @@ Various Scripts
 * [locate-city.ps1](Scripts/locate-city.ps1) - prints the geographic location of the given city
 * [locate-ipaddress.ps1](Scripts/locate-ipaddress.ps1) - prints the geographic location of the given IP address
 * [locate-zip-code.ps1](Scripts/locate-zip-code.ps1) - prints the geographic location of the given zip-code
-* [make-install.ps1](Scripts/make-install.ps1) - installs built executables and libs to the installation directory
 * [moon.ps1](Scripts/moon.ps1) - prints the current moon phase
 * [poweroff.ps1](Scripts/poweroff.ps1) - halts the local computer (requires admin rights)
 * [query-smart-data.ps1](Scripts/query-smart-data.ps1) - queries the S.M.A.R.T. data of your HDD/SSD's 
@@ -127,8 +129,6 @@ Various Scripts
 * [simulate-matrix.ps1](Scripts/simulate-matrix.ps1) - simulates the Matrix (fun)
 * [simulate-presence.ps1](Scripts/simulate-presence.ps1) - simulates the human presence against burglars
 * [switch-shelly1.ps1](Scripts/switch-shelly1.ps1) - switches a Shelly1 device in the local network
-* [take-screenshot.ps1](Scripts/take-screenshot.ps1) - takes a single screenshot
-* [take-screenshots.ps1](Scripts/take-screenshots.ps1) - takes multiple screenshots
 * [train-dns-cache.ps1](Scripts/train-dns-cache.ps1) - trains the DNS cache with frequently used domain names
 * [translate-file.ps1](Scripts/translate-file.ps1) - translates the given file from source to target language
 * [translate-text.ps1](Scripts/translate-text.ps1) - translates the given text into other languages
