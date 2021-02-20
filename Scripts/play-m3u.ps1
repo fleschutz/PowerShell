@@ -13,6 +13,7 @@ if ($Filename -eq "" ) {
 }
 
 try {
+	write-progress "Reading playlist '$Filename' ..."
 	$Lines = get-content $Filename
 
 	add-type -assemblyName presentationCore
@@ -21,8 +22,17 @@ try {
 	for ([int]$i=0; $i -lt $Lines.Count; $i++) {
 		$Line = $Lines[$i]
 		if ($Line[0] -ne "#") {
-			$MediaPlayer.open("$Line")
+			write-output "Playing '$Line' ..."
+			$FullPath = (get-childItem "$Line").fullname
+			do {
+				$MediaPlayer.open("$Line")
+				$Duration = $MediaPlayer.NaturalDuration.TimeSpan.TotalMilliseconds
+			} until ($Duration)
+			$MediaPlayer.Volume = 1
 			$MediaPlayer.play()
+			start-sleep -milliseconds $Duration
+			$MediaPlayer.stop()
+			$MediaPlayer.close()
 		}
 	}
 	exit 0

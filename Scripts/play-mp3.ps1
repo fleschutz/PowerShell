@@ -13,10 +13,20 @@ if ($Filename -eq "" ) {
 }
 
 try {
-	add-type -assemblyName presentationCore
-	$MediaPlayer = new-object system.windows.media.mediaplayer
-	$MediaPlayer.open("$Filename")
+	add-type -assemblyName PresentationCore
+	$MediaPlayer = new-object System.Windows.Media.MediaPlayer
+
+	$FullPath = (get-childItem $Filename).fullname
+	do {
+		$MediaPlayer.open($FullPath)
+		$Duration = $MediaPlayer.NaturalDuration.TimeSpan.TotalMilliseconds
+	} until ($Duration)
+	write-progress "Playing $Filename ..."
+	$MediaPlayer.Volume = 1
 	$MediaPlayer.play()
+	start-sleep -milliseconds $Duration
+	$MediaPlayer.stop()
+	$MediaPlayer.close()
 
 	exit 0
 } catch {
