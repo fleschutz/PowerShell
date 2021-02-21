@@ -48,15 +48,6 @@ Scripts for the Desktop
 * [take-screenshot.ps1](Scripts/take-screenshot.ps1) - takes a single screenshot
 * [take-screenshots.ps1](Scripts/take-screenshots.ps1) - takes multiple screenshots
 
-Scripts for Git
----------------
-* [clean-branch.ps1](Scripts/clean-branch.ps1) - cleans the current Git branch (including submodules) from generated files
-* [clone-repos.ps1](Scripts/clone-repos.ps1) - clones well-known Git repositories
-* [configure-git.ps1](Scripts/configure-git.ps1) - sets up the Git user configuration
-* [fetch-repos.ps1](Scripts/fetch-repos.ps1) - fetches all Git repositories under the current/given directory (including submodules)
-* [switch-branch.ps1](Scripts/switch-branch.ps1) - switches the current Git repository to the given branch (including submodules)
-* [update-repos.ps1](Scripts/update-repos.ps1) - updates all Git repositories under the current/given directory (including submodules)
-
 Scripts for Files & Folders
 ---------------------------
 * [check-symlinks.ps1](Scripts/check-symlinks.ps1) - checks every symlink in the given directory tree
@@ -78,6 +69,15 @@ Scripts for Files & Folders
 * [SHA256.ps1](Scripts/SHA256.ps1) - prints the SHA256 checksum of the given file
 * [show-dir-tree.ps1](Scripts/show-dir-tree.ps1) - visualizes the given/current directory tree
 * [zip-dir.ps1](Scripts/zip-dir.ps1) - creates a zip archive of the given directory
+
+Scripts for Git
+---------------
+* [clean-branch.ps1](Scripts/clean-branch.ps1) - cleans the current Git branch (including submodules) from generated files
+* [clone-repos.ps1](Scripts/clone-repos.ps1) - clones well-known Git repositories
+* [configure-git.ps1](Scripts/configure-git.ps1) - sets up the Git user configuration
+* [fetch-repos.ps1](Scripts/fetch-repos.ps1) - fetches all Git repositories under the current/given directory (including submodules)
+* [switch-branch.ps1](Scripts/switch-branch.ps1) - switches the current Git repository to the given branch (including submodules)
+* [update-repos.ps1](Scripts/update-repos.ps1) - updates all Git repositories under the current/given directory (including submodules)
 
 Various Scripts
 ---------------
