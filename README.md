@@ -27,8 +27,8 @@ Scripts for Audio & Voice
 * [unmute-audio.ps1](Scripts/unmute-audio.ps1) - unmutes audio
 * [voice-control.ps1](Scripts/voice-control.ps1) - executes the PowerShell scripts by voice
 
-Script for the Desktop
-----------------------
+Scripts for the Desktop
+-----------------------
 * [close-calculator.ps1](Scripts/close-calculator.ps1) - closes the calculator program gracefully
 * [close-chrome.ps1](Scripts/close-chrome.ps1) - closes Google Chrome gracefully
 * [close-cortana.ps1](Scripts/close-cortana.ps1) - closes Cortana gracefully
