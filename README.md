@@ -53,9 +53,9 @@ Scripts for Git
 * [clean-branch.ps1](Scripts/clean-branch.ps1) - cleans the current Git branch (including submodules) from generated files
 * [clone-repos.ps1](Scripts/clone-repos.ps1) - clones well-known Git repositories
 * [configure-git.ps1](Scripts/configure-git.ps1) - sets up the Git user configuration
-* [fetch-repos.ps1](Scripts/fetch-repos.ps1) - fetches all Git repositories under the current/given directory
-* [switch-branch.ps1](Scripts/switch-branch.ps1) - switches the current Git repository to the given branch
-* [update-repos.ps1](Scripts/update-repos.ps1) - updates all Git repositories under the current/given directory
+* [fetch-repos.ps1](Scripts/fetch-repos.ps1) - fetches all Git repositories under the current/given directory (including submodules)
+* [switch-branch.ps1](Scripts/switch-branch.ps1) - switches the current Git repository to the given branch (including submodules)
+* [update-repos.ps1](Scripts/update-repos.ps1) - updates all Git repositories under the current/given directory (including submodules)
 
 Scripts for Files & Folders
 ---------------------------

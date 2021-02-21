@@ -1,7 +1,7 @@
 #!/bin/powershell
 <#
 .SYNTAX         ./update-repos.ps1 [<directory>]
-.DESCRIPTION	updates all Git repositories under the current/given directory
+.DESCRIPTION	updates all Git repositories under the current/given directory (including submodules)
 .LINK		https://github.com/fleschutz/PowerShell
 .NOTES		Author:	Markus Fleschutz / License: CC0
 #>
