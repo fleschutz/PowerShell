@@ -1,7 +1,7 @@
 #!/bin/powershell
 <#
 .SYNTAX         ./switch-branch.ps1 [<branch>]
-.DESCRIPTION	switches to the given Git branch
+.DESCRIPTION	switches the current Git repository to the given branch
 .LINK		https://github.com/fleschutz/PowerShell
 .NOTES		Author:	Markus Fleschutz / License: CC0
 #>
