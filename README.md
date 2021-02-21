@@ -46,7 +46,7 @@ Scripts for the Desktop
 * [open-email-client.ps1](Scripts/open-browser.ps1) - starts the default email client
 * [set-wallpaper.ps1](Scripts/set-wallpaper.ps1) - sets the given image as wallpaper
 * [take-screenshot.ps1](Scripts/take-screenshot.ps1) - takes a single screenshot
-* [take-screenshots.ps1](Scripts/take-screenshots.ps1) - takes multiple screenshots
+* [take-screenshots.ps1](Scripts/take-screenshots.ps1) - takes multiple screenshots (every minute by default)
 
 Scripts for Files & Folders
 ---------------------------
