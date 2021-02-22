@@ -25,7 +25,7 @@ try {
 			write-output "Playing '$Line' ..."
 			$FullPath = (get-childItem "$Line").fullname
 			do {
-				$MediaPlayer.open("$Line")
+				$MediaPlayer.open($FullPath)
 				$Duration = $MediaPlayer.NaturalDuration.TimeSpan.TotalMilliseconds
 			} until ($Duration)
 			$MediaPlayer.Volume = 1
