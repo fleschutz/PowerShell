@@ -96,7 +96,8 @@ Various Scripts 🛒
 * [list-automatic-variables.ps1](Scripts/list-automatic-variables.ps1) - lists the automatic variables of PowerShell 
 * [list-current-timezone.ps1](Scripts/list-current-timezone.ps1) - lists the current time zone details
 * [list-environment-variables.ps1](Scripts/list-environment-variables.ps1) - lists all environment variables
-* [list-installed-software.ps1](Scripts/list-installed-software.ps1) - lists the installed software
+* [list-installed-apps.ps1](Scripts/list-installed-apps.ps1) - lists the installed Windows Store apps
+* [list-installed-software.ps1](Scripts/list-installed-software.ps1) - lists the installed software (except Windows Store apps)
 * [list-fritzbox-calls.ps1](Scripts/list-fritzbox-calls.ps1) - lists the FRITZ!Box calls
 * [list-fritzbox-devices.ps1](Scripts/list-fritzbox-devices.ps1) - lists FRITZ!Box's known devices 
 * [list-logbook.ps1](Scripts/list-logbook.ps1) - lists the content of the logbook 

@@ -41,8 +41,9 @@ list-files.ps1, lists all files in the given folder and also in every subfolder
 list-formatted.ps1, lists the current working directory formatted in columns
 list-fritzbox-calls.ps1, lists the FRITZ!Box calls
 list-fritzbox-devices.ps1, lists FRITZ!Box's known devices 
-list-installed-software.ps1, lists the installed software
-list-logbook.ps1, lists the content of the logbook
+list-installed-apps.ps1, lists the installed Windows Store apps
+list-installed-software.ps1, lists the installed software (except Windows Store apps)
+list-logbook.ps1, lists the content of the logbook 
 list-unused-files.ps1, lists unused files in a directory tree
 list-cmdlets.ps1, lists the PowerShell cmdlets
 list-earthquakes.ps1, lists earthquakes with magnitude >= 6.0 for the last 30 days
