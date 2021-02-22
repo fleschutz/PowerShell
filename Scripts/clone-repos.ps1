@@ -21,7 +21,7 @@ try {
 		$URL = $Row.URL
 		$Directory = $Row.Directory
 		write-output ""
-		if (Test-Path($Directory)) {
+		if (Test-Path $Directory) {
 			write-output "Skipping existing $Directory ..."
 			continue
 		}

@@ -52,13 +52,13 @@ if ($Filename -eq "") {
 }
 write-output "Reading $Filename ..."
 $file = get-item $Filename
-if (!(Test-Path($file.DirectoryName+"\"+$file.Name+".zip"))) {
+if (-not(Test-Path $file.DirectoryName+"\"+$file.Name+".zip")) {
 	$zipFile = $file.DirectoryName+"\"+$file.Name+".zip"
 	$file.CopyTo($zipFile)
 }
 
 $destination = $file.DirectoryName+"\"+$file.Name.Replace($file.Extension,"")
-if (!(Test-Path($destination))) {
+if (-not(Test-Path $destination)) {
 	md $destination
 	UnzipFile -file $zipFile -dest $destination
 }
@@ -72,7 +72,7 @@ $progress = $null
  
 foreach($item in $content.package.manifest.Item) {
 	if ($item."media-type" -eq "application/xhtml+xml") {
-		if (Test-Path($bookPath+"\progress.txt")) {
+		if (Test-Path $bookPath+"\progress.txt") {
 			$progress = Get-Content $bookPath"\progress.txt"
 			$progress = $progress.Split(",")
 		}
