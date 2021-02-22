@@ -3,8 +3,8 @@ Collection of PowerShell Scripts
 
 **This repository contains 130+ useful and cross-platform PowerShell scripts in the [Scripts/ folder](Scripts/) - to be used by command-line interface (CLI), for remote control (RC), by context menu, by voice control, by automation software like Jenkins, automatically as daily tasks, or simply to learn PowerShell. See the [FAQ page](Misc/FAQ.md) if you need help or have any questions.**
 
-Scripts for Audio & Voice
--------------------------
+Scripts for Audio & Voice 🔊
+---------------------------
 * [mute-audio.ps1](Scripts/mute-audio.ps1) - mutes audio
 * [play-beep.ps1](Scripts/play-beep.ps1) - plays a beep sound
 * [play-mission-impossible.ps1](Scripts/play-mission-impossible.ps1) - plays the Mission Impossible theme
@@ -27,8 +27,8 @@ Scripts for Audio & Voice
 * [unmute-audio.ps1](Scripts/unmute-audio.ps1) - unmutes audio
 * [voice-control.ps1](Scripts/voice-control.ps1) - executes the PowerShell scripts by voice
 
-Scripts for the Desktop
------------------------
+Scripts for the Desktop 💻
+-------------------------
 * [close-calculator.ps1](Scripts/close-calculator.ps1) - closes the calculator program gracefully
 * [close-chrome.ps1](Scripts/close-chrome.ps1) - closes Google Chrome gracefully
 * [close-cortana.ps1](Scripts/close-cortana.ps1) - closes Cortana gracefully
@@ -48,8 +48,8 @@ Scripts for the Desktop
 * [take-screenshot.ps1](Scripts/take-screenshot.ps1) - takes a single screenshot
 * [take-screenshots.ps1](Scripts/take-screenshots.ps1) - takes multiple screenshots (every minute by default)
 
-Scripts for Files & Folders
----------------------------
+Scripts for Files & Folders 📁 
+-----------------------------
 * [check-symlinks.ps1](Scripts/check-symlinks.ps1) - checks every symlink in the given directory tree
 * [check-xml-file.ps1](Scripts/check-xml-file.ps1) - checks the given XML file for validity
 * [create-symlink.ps1](Scripts/create-symlink.ps1) - creates a symbolic link
@@ -70,8 +70,8 @@ Scripts for Files & Folders
 * [show-dir-tree.ps1](Scripts/show-dir-tree.ps1) - visualizes the given/current directory tree
 * [zip-dir.ps1](Scripts/zip-dir.ps1) - creates a zip archive of the given directory
 
-Scripts for Git
----------------
+Scripts for Git 📝
+-----------------
 * [clean-branch.ps1](Scripts/clean-branch.ps1) - cleans the current Git branch (including submodules) from generated files
 * [clone-repos.ps1](Scripts/clone-repos.ps1) - clones well-known Git repositories
 * [configure-git.ps1](Scripts/configure-git.ps1) - sets up the Git user configuration
@@ -79,8 +79,8 @@ Scripts for Git
 * [switch-branch.ps1](Scripts/switch-branch.ps1) - switches the current Git repository to the given branch (including submodules)
 * [update-repos.ps1](Scripts/update-repos.ps1) - updates all Git repositories under the current/given directory (including submodules)
 
-Various Scripts
----------------
+Various Scripts 🛒
+-----------------
 * [add-firewall-rules.ps1](Scripts/add-firewall-rules.ps1) - adds firewall rules for the given executables (requires admin rights)
 * [check-ipv4-address.ps1](Scripts/check-ipv4-address.ps1) - checks the given IPv4 address for validity
 * [check-ipv6-address.ps1](Scripts/check-ipv6-address.ps1) - checks the given IPv6 address for validity
