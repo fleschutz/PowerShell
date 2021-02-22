@@ -15,14 +15,15 @@ function ListScripts { param([string]$FilePath)
 			'Description' = "$($Row.Description)"
 		}
 	}
+	$global:NumScripts = $Table.Count
 	write-progress -completed "Reading $FilePath..."
-	write-output ""
-	write-output "($($Table.Count) PowerShell scripts total)"
 }
 
 try {
 	$PathToRepo = "$PSScriptRoot/.."
-	ListScripts "$PathToRepo/Data/scripts.csv" | format-table -property Script, Description
+	ListScripts "$PathToRepo/Data/scripts.csv" | format-table -property Script,Description
+
+	write-host -foregroundColor green "OK - $($global:NumScripts) PowerShell scripts total"
 	exit 0
 } catch {
 	write-error "ERROR: line $($_.InvocationInfo.ScriptLineNumber): $($Error[0])"
