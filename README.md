@@ -79,6 +79,15 @@ Scripts for Git 📝
 * [switch-branch.ps1](Scripts/switch-branch.ps1) - switches the current Git repository to the given branch (including submodules)
 * [update-repos.ps1](Scripts/update-repos.ps1) - updates all Git repositories under the current/given directory (including submodules)
 
+Scripts for PowerShell 
+------------------------
+* [daily-tasks.sh](Scripts/daily-tasks.sh) - execute PowerShell scripts automatically as daily tasks (Linux only)
+* [list-automatic-variables.ps1](Scripts/list-automatic-variables.ps1) - lists the automatic variables of PowerShell 
+* [list-cmdlets.ps1](Scripts/list-cmdlets.ps1) - lists the PowerShell cmdlets
+* [list-modules.ps1](Scripts/list-modules.ps1) - lists the PowerShell modules
+* [list-profile.ps1](Scripts/list-profile.ps1) - lists your PowerShell profile file
+* [list-scripts.ps1](Scripts/list-scripts.ps1) - lists all PowerShell scripts in this repository
+
 Various Scripts 🛒
 -----------------
 * [add-firewall-rules.ps1](Scripts/add-firewall-rules.ps1) - adds firewall rules for the given executables (requires admin rights)
@@ -86,14 +95,12 @@ Various Scripts 🛒
 * [check-ipv6-address.ps1](Scripts/check-ipv6-address.ps1) - checks the given IPv6 address for validity
 * [check-mac-address.ps1](Scripts/check-mac-address.ps1) - checks the given MAC address for validity
 * [csv-to-text.ps1](Scripts/csv-to-text.ps1) - converts the given CSV file into a text list
-* [daily-tasks.sh](Scripts/daily-tasks.sh) - execute PowerShell scripts automatically as daily tasks (Linux only)
 * [display-time.ps1](Scripts/display-time.ps1) - displays the current time for 10 seconds by default
 * [download.ps1](Scripts/download.ps1) - downloads the file/directory from the given URL
 * [enable-crash-dumps.ps1](Scripts/enable-crash-dumps.ps1) - enables the writing of crash dumps
 * [generate-qrcode.ps1](Scripts/generate-qrcode.ps1) - generates a QR code
 * [hibernate.ps1](Scripts/hibernate.ps1) - enables hibernate mode for the local computer (requires admin rights)
 * [list-anagrams.ps1](Scripts/list-anagrams.ps1) - lists all anagrams of the given word
-* [list-automatic-variables.ps1](Scripts/list-automatic-variables.ps1) - lists the automatic variables of PowerShell 
 * [list-current-timezone.ps1](Scripts/list-current-timezone.ps1) - lists the current time zone details
 * [list-environment-variables.ps1](Scripts/list-environment-variables.ps1) - lists all environment variables
 * [list-installed-apps.ps1](Scripts/list-installed-apps.ps1) - lists the installed Windows Store apps
@@ -101,9 +108,7 @@ Various Scripts 🛒
 * [list-fritzbox-calls.ps1](Scripts/list-fritzbox-calls.ps1) - lists the FRITZ!Box calls
 * [list-fritzbox-devices.ps1](Scripts/list-fritzbox-devices.ps1) - lists FRITZ!Box's known devices 
 * [list-logbook.ps1](Scripts/list-logbook.ps1) - lists the content of the logbook 
-* [list-cmdlets.ps1](Scripts/list-cmdlets.ps1) - lists the PowerShell cmdlets
 * [list-earthquakes.ps1](Scripts/list-earthquakes.ps1) - lists earthquakes with magnitude >= 6.0 for the last 30 days
-* [list-modules.ps1](Scripts/list-modules.ps1) - lists the PowerShell modules
 * [list-network-shares.ps1](Scripts/list-network-shares.ps1) - lists the network shares of the local computer
 * [list-news.ps1](Scripts/list-news.ps1) - lists the latest news
 * [list-os-releases.ps1](Scripts/list-os-releases.ps1) - lists OS releases and download URL
@@ -111,7 +116,6 @@ Various Scripts 🛒
 * [list-processes.ps1](Scripts/list-processes.ps1) - lists the local computer processes
 * [list-random-passwords.ps1](Scripts/list-random-passwords.ps1) - prints a list of random passwords
 * [list-random-pins.ps1](Scripts/list-random-pins.ps1) - prints a list of random PIN's
-* [list-scripts.ps1](Scripts/list-scripts.ps1) - lists the PowerShell scripts in this repository
 * [list-timezones.ps1](Scripts/list-timezones.ps1) - lists all time zones available 
 * [list-user-groups.ps1](Scripts/list-user-groups.ps1) - lists the user groups on the local computer
 * [locate-city.ps1](Scripts/locate-city.ps1) - prints the geographic location of the given city
