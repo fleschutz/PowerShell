@@ -27,6 +27,24 @@ Scripts for Audio & Voice 🔊
 * [unmute-audio.ps1](Scripts/unmute-audio.ps1) - unmutes audio
 * [voice-control.ps1](Scripts/voice-control.ps1) - executes the PowerShell scripts by voice
 
+Scripts for Computer Management
+-------------------------------
+* [add-firewall-rules.ps1](Scripts/add-firewall-rules.ps1) - adds firewall rules for the given executables (requires admin rights)
+* [enable-crash-dumps.ps1](Scripts/enable-crash-dumps.ps1) - enables the writing of crash dumps
+* [hibernate.ps1](Scripts/hibernate.ps1) - enables hibernate mode for the local computer (requires admin rights)
+* [list-network-shares.ps1](Scripts/list-network-shares.ps1) - lists the network shares of the local computer
+* [list-current-timezone.ps1](Scripts/list-current-timezone.ps1) - lists the current time zone details
+* [list-installed-apps.ps1](Scripts/list-installed-apps.ps1) - lists the installed Windows Store apps
+* [list-installed-software.ps1](Scripts/list-installed-software.ps1) - lists the installed software (except Windows Store apps)
+* [list-printers.ps1](Scripts/list-printers.ps1) - lists all printer known to the computer
+* [list-processes.ps1](Scripts/list-processes.ps1) - lists the local computer processes
+* [list-timezones.ps1](Scripts/list-timezones.ps1) - lists all time zones available 
+* [list-user-groups.ps1](Scripts/list-user-groups.ps1) - lists the user groups on the local computer
+* [poweroff.ps1](Scripts/poweroff.ps1) - halts the local computer (requires admin rights)
+* [query-smart-data.ps1](Scripts/query-smart-data.ps1) - queries the S.M.A.R.T. data of your HDD/SSD's 
+* [reboot.ps1](Scripts/reboot.ps1) - reboots the local computer (requires admin rights)
+* [wakeup.ps1](Scripts/wakeup.ps1) - sends a magic packet to the given computer, waking him up
+
 Scripts for the Desktop 💻
 -------------------------
 * [close-calculator.ps1](Scripts/close-calculator.ps1) - closes the calculator program gracefully
@@ -90,42 +108,28 @@ Scripts for PowerShell 🔎
 
 Various Scripts 🛒
 -----------------
-* [add-firewall-rules.ps1](Scripts/add-firewall-rules.ps1) - adds firewall rules for the given executables (requires admin rights)
 * [check-ipv4-address.ps1](Scripts/check-ipv4-address.ps1) - checks the given IPv4 address for validity
 * [check-ipv6-address.ps1](Scripts/check-ipv6-address.ps1) - checks the given IPv6 address for validity
 * [check-mac-address.ps1](Scripts/check-mac-address.ps1) - checks the given MAC address for validity
 * [csv-to-text.ps1](Scripts/csv-to-text.ps1) - converts the given CSV file into a text list
 * [display-time.ps1](Scripts/display-time.ps1) - displays the current time for 10 seconds by default
 * [download.ps1](Scripts/download.ps1) - downloads the file/directory from the given URL
-* [enable-crash-dumps.ps1](Scripts/enable-crash-dumps.ps1) - enables the writing of crash dumps
 * [generate-qrcode.ps1](Scripts/generate-qrcode.ps1) - generates a QR code
-* [hibernate.ps1](Scripts/hibernate.ps1) - enables hibernate mode for the local computer (requires admin rights)
 * [list-anagrams.ps1](Scripts/list-anagrams.ps1) - lists all anagrams of the given word
-* [list-current-timezone.ps1](Scripts/list-current-timezone.ps1) - lists the current time zone details
 * [list-environment-variables.ps1](Scripts/list-environment-variables.ps1) - lists all environment variables
-* [list-installed-apps.ps1](Scripts/list-installed-apps.ps1) - lists the installed Windows Store apps
-* [list-installed-software.ps1](Scripts/list-installed-software.ps1) - lists the installed software (except Windows Store apps)
 * [list-fritzbox-calls.ps1](Scripts/list-fritzbox-calls.ps1) - lists the FRITZ!Box calls
 * [list-fritzbox-devices.ps1](Scripts/list-fritzbox-devices.ps1) - lists FRITZ!Box's known devices 
 * [list-logbook.ps1](Scripts/list-logbook.ps1) - lists the content of the logbook 
 * [list-earthquakes.ps1](Scripts/list-earthquakes.ps1) - lists earthquakes with magnitude >= 6.0 for the last 30 days
-* [list-network-shares.ps1](Scripts/list-network-shares.ps1) - lists the network shares of the local computer
 * [list-news.ps1](Scripts/list-news.ps1) - lists the latest news
 * [list-os-releases.ps1](Scripts/list-os-releases.ps1) - lists OS releases and download URL
-* [list-printers.ps1](Scripts/list-printers.ps1) - lists all printer known to the computer
-* [list-processes.ps1](Scripts/list-processes.ps1) - lists the local computer processes
 * [list-random-passwords.ps1](Scripts/list-random-passwords.ps1) - prints a list of random passwords
 * [list-random-pins.ps1](Scripts/list-random-pins.ps1) - prints a list of random PIN's
-* [list-timezones.ps1](Scripts/list-timezones.ps1) - lists all time zones available 
-* [list-user-groups.ps1](Scripts/list-user-groups.ps1) - lists the user groups on the local computer
 * [locate-city.ps1](Scripts/locate-city.ps1) - prints the geographic location of the given city
 * [locate-ipaddress.ps1](Scripts/locate-ipaddress.ps1) - prints the geographic location of the given IP address
 * [locate-zip-code.ps1](Scripts/locate-zip-code.ps1) - prints the geographic location of the given zip-code
 * [moon.ps1](Scripts/moon.ps1) - prints the current moon phase
-* [poweroff.ps1](Scripts/poweroff.ps1) - halts the local computer (requires admin rights)
-* [query-smart-data.ps1](Scripts/query-smart-data.ps1) - queries the S.M.A.R.T. data of your HDD/SSD's 
 * [next-joke.ps1](Scripts/next-joke.ps1) - gets the next random Juck Norris joke
-* [reboot.ps1](Scripts/reboot.ps1) - reboots the local computer (requires admin rights)
 * [reboot-fritzbox.ps1](Scripts/reboot-fritzbox.ps1) - reboots the FRITZ!box device
 * [scan-ports.ps1](Scripts/scan-ports.ps1) - scans the network for open/closed ports
 * [send-email.ps1](Scripts/send-email.ps1) - sends an email message
@@ -142,7 +146,6 @@ Various Scripts 🛒
 * [weather-alert.ps1](Scripts/weather-alert.ps1) - checks the current weather for critical values
 * [weather-report.ps1](Scripts/weather-report.ps1) - prints the local weather report
 * [weather-worldwide.ps1](Scripts/weather-worldwide.ps1) - prints the current weather of cities worldwide
-* [wakeup.ps1](Scripts/wakeup.ps1) - sends a magic packet to the given computer, waking him up
 * [write-animated.ps1](Scripts/write-animated.ps1) - writes animated text
 * [write-big.ps1](Scripts/write-big.ps1) - writes the given text in big letters
 * [write-blue.ps1](Scripts/write-blue.ps1) - writes the given text in a blue foreground color
