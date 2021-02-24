@@ -79,7 +79,7 @@ Scripts for Git 📝
 * [switch-branch.ps1](Scripts/switch-branch.ps1) - switches the current Git repository to the given branch (including submodules)
 * [update-repos.ps1](Scripts/update-repos.ps1) - updates all Git repositories under the current/given directory (including submodules)
 
-Scripts for PowerShell 
+Scripts for PowerShell 🔎
 ------------------------
 * [daily-tasks.sh](Scripts/daily-tasks.sh) - execute PowerShell scripts automatically as daily tasks (Linux only)
 * [list-automatic-variables.ps1](Scripts/list-automatic-variables.ps1) - lists the automatic variables of PowerShell 
