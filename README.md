@@ -27,8 +27,8 @@ Scripts for Audio & Voice 🔊
 * [unmute-audio.ps1](Scripts/unmute-audio.ps1) - unmutes audio
 * [voice-control.ps1](Scripts/voice-control.ps1) - executes the PowerShell scripts by voice
 
-Scripts for Computer Management
--------------------------------
+Scripts for Computer Management ⚙️
+---------------------------------
 * [add-firewall-rules.ps1](Scripts/add-firewall-rules.ps1) - adds firewall rules for the given executables (requires admin rights)
 * [enable-crash-dumps.ps1](Scripts/enable-crash-dumps.ps1) - enables the writing of crash dumps
 * [hibernate.ps1](Scripts/hibernate.ps1) - enables hibernate mode for the local computer (requires admin rights)
