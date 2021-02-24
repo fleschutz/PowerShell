@@ -103,7 +103,7 @@ Scripts for PowerShell 🔎
 * [list-automatic-variables.ps1](Scripts/list-automatic-variables.ps1) - lists the automatic variables of PowerShell 
 * [list-cmdlets.ps1](Scripts/list-cmdlets.ps1) - lists the PowerShell cmdlets
 * [list-modules.ps1](Scripts/list-modules.ps1) - lists the PowerShell modules
-* [list-profile.ps1](Scripts/list-profile.ps1) - lists your PowerShell profile file
+* [list-profiles.ps1](Scripts/list-profiles.ps1) - lists your PowerShell profiles
 * [list-scripts.ps1](Scripts/list-scripts.ps1) - lists all PowerShell scripts in this repository
 
 Various Scripts 🛒
