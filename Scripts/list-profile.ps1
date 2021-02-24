@@ -14,7 +14,7 @@ try {
 		write-output "Profile file at: $PathToProfile"
 		write-output "$Content"
 	} else {
-		write-warning "Missing profile file at: $PathToProfile"
+		write-warning "No profile file at: $PathToProfile"
 	}
 	exit 0
 } catch {
