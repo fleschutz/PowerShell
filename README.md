@@ -105,6 +105,7 @@ Scripts for PowerShell 🔎
 * [list-modules.ps1](Scripts/list-modules.ps1) - lists the PowerShell modules
 * [list-profiles.ps1](Scripts/list-profiles.ps1) - lists your PowerShell profiles
 * [list-scripts.ps1](Scripts/list-scripts.ps1) - lists all PowerShell scripts in this repository
+* [set-profile.ps1](Scripts/set-profile.ps1) - updates your PowerShell user profile
 
 Various Scripts 🛒
 -----------------
