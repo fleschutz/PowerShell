@@ -32,6 +32,7 @@ try {
 	& git config --global http.sslVerify false
 	& git config --global core.autocrlf false
 	& git config --global core.symlinks true
+	& git config --global core.longpaths true
 	& git config --global init.defaultBranch main
 	write-host -foregroundColor green "Done - your Git user configuration is now:"
 	& git config --list
