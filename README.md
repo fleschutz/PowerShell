@@ -77,6 +77,7 @@ Scripts for Files & Folders 📁
 * [go-downloads.ps1](Scripts/go-downloads.ps1) - go to the user's downloads folder
 * [go-home.ps1](Scripts/go-home.ps1) - go to the user's home folder
 * [go-music.ps1](Scripts/go-music.ps1) - go to the user's music folder
+* [go-scripts.ps1](Scripts/go-scripts.ps1) - go to the PowerShell Scripts folder
 * [inspect-exe.ps1](Scripts/inspect-exe.ps1) - prints basic information of the given executable file
 * [list-empty-dirs.ps1](Scripts/list-empty-dirs.ps1) - lists empty subfolders within the given directory tree
 * [list-empty-files.ps1](Scripts/list-empty-files.ps1) - lists empty files within the given directory tree
