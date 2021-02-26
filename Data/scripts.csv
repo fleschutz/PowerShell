@@ -1,5 +1,6 @@
 Script,Description
 add-firewall-rules.ps1, adds firewall rules to the given executables (requires admin rights)
+check-drive-space.ps1, checks the given drive for free space left
 check-ipv4-address.ps1, checks the given IPv4 address for validity
 check-ipv6-address.ps1, checks the given IPv6 address for validity
 check-mac-address.ps1, checks the given MAC address for validity
