@@ -1,7 +1,7 @@
 #!/bin/powershell
 <#
 .SYNTAX         ./clean-branch.ps1
-.DESCRIPTION	cleans the current Git branch (including submodules) from generated files
+.DESCRIPTION	cleans the current Git branch including submodules from generated files (e.g. for a fresh build)
 .LINK		https://github.com/fleschutz/PowerShell
 .NOTES		Author:	Markus Fleschutz / License: CC0
 #>
@@ -14,11 +14,11 @@ try {
 }
 
 try {
-	& git clean --force -d -x
-	if ($lastExitCode -ne "0") { throw "'git clean' failed" }
+	& git clean -fdx # force + recurse into dirs + don't use the standard ignore rules
+	if ($lastExitCode -ne "0") { throw "'git clean -fdx' failed" }
 
-	& git submodule foreach --recursive git clean --force -d -x
-	if ($lastExitCode -ne "0") { throw "'git clean' in submodules failed" }
+	& git submodule foreach --recursive git clean -fdx 
+	if ($lastExitCode -ne "0") { throw "'git clean -fdx' in submodules failed" }
 
 	& git status
 	if ($lastExitCode -ne "0") { throw "'git status' failed" }
