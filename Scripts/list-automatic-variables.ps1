@@ -66,7 +66,7 @@ try {
 	$Vars = ListAutomaticVariables
 	$Vars | format-table -property Variable,Content
 	
-	write-host -foregroundColor green "OK - $($Vars.Count) automatic variables total"
+	write-host -foregroundColor green "OK - $($Vars.Count) PowerShell automatic variables total"
 	exit 0
 } catch {
 	write-error "ERROR: line $($_.InvocationInfo.ScriptLineNumber): $($Error[0])"

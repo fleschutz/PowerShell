@@ -29,6 +29,9 @@ enable-crash-dumps.ps1, enables the writing of crash dumps
 encrypt-file.ps1, encrypts the given file
 fetch-repos.ps1, fetches all Git repositories under the current/given directory (including submodules)
 generate-qrcode.ps1, generates a QR code
+go-downloads.ps1, go to the user's downloads folder
+go-home.ps1, go to the user's home folder
+go-music.ps1, go to the user's music folder
 hibernate.ps1, enables hibernate mode for the local computer (requires admin rights)
 inspect-exe.ps1, prints basic information of the given executable file
 list-anagrams.ps1, lists all anagrams of the given word

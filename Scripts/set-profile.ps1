@@ -12,7 +12,7 @@ try {
 
 	copy-item "$PathToRepo/Scripts/my-profile.ps1" "$PathToProfile" -force
 
-	write-host -foregroundColor green "OK - updated profile 'CurrentUserCurrentHost' (gets active on next login)"
+	write-host -foregroundColor green "OK - updated profile 'CurrentUserCurrentHost', gets active on next login"
 	exit 0
 } catch {
 	write-error "ERROR: line $($_.InvocationInfo.ScriptLineNumber): $($Error[0])"
