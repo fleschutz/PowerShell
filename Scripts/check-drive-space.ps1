@@ -6,7 +6,7 @@
 .NOTES		Author:	Markus Fleschutz / License: CC0
 #>
 
-param($Drive = "", $WarningLevel = 50) #limit in gb
+param($Drive = "", [int]$WarningLevel = 50) # warning level in GB
 
 if ($Drive -eq "" ) {
 	$Drive = read-host "Enter drive to check"
