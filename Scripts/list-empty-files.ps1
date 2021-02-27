@@ -15,11 +15,11 @@ if ($DirTree -eq "" ) {
 try {
 	[int]$Count = 0
 	write-progress "Listing empty files in $DirTree ..."
-	get-childItem $DirTree -recurse | where {$_.PSIsContainer -eq $false} | where {$_.Length -eq 0} | foreach-object {
+	get-childItem $DirTree -attributes !Directory -recurse | where {$_.Length -eq 0} | foreach-object {
 		write-output $_.FullName
 		$Count++
 	}
-	write-host -foregroundColor green "Done - found $Count empty files" 
+	write-host -foregroundColor green "OK - found $Count empty file(s)" 
 	exit 0
 } catch {
 	write-error "ERROR: line $($_.InvocationInfo.ScriptLineNumber): $($Error[0])"

@@ -15,11 +15,11 @@ if ($DirTree -eq "" ) {
 try {
 	write-progress "Listing empty directories in $DirTree..."
 	[int]$Count = 0
-	Get-ChildItem $DirTree -recurse | Where {$_.PSIsContainer -eq $true} | Where {$_.GetFileSystemInfos().Count -eq 0} | ForEach-Object {
+	Get-ChildItem $DirTree -attributes Directory -recurse | Where {$_.GetFileSystemInfos().Count -eq 0} | ForEach-Object {
 		write-output $_.FullName
 		$Count++
 	}
-	write-host -foregroundColor green "Done - found $Count empty directories" 
+	write-host -foregroundColor green "OK - found $Count empty directories" 
 	exit 0
 } catch {
 	write-error "ERROR: line $($_.InvocationInfo.ScriptLineNumber): $($Error[0])"
