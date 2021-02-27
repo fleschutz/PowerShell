@@ -106,6 +106,7 @@ Scripts for Git 📝
 Scripts for PowerShell 🔎
 ------------------------
 * [daily-tasks.sh](Scripts/daily-tasks.sh) - execute PowerShell scripts automatically as daily tasks (Linux only)
+* [list-aliases.ps1](Scripts/list-aliases.ps1) - lists all PowerShell aliases 
 * [list-automatic-variables.ps1](Scripts/list-automatic-variables.ps1) - lists the automatic variables of PowerShell 
 * [list-cmdlets.ps1](Scripts/list-cmdlets.ps1) - lists the PowerShell cmdlets
 * [list-modules.ps1](Scripts/list-modules.ps1) - lists the PowerShell modules

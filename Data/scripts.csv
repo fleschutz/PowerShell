@@ -36,6 +36,7 @@ go-music.ps1, go to the user's music folder
 go-scripts.ps1, go to the PowerShell Scripts folder
 hibernate.ps1, enables hibernate mode for the local computer (requires admin rights)
 inspect-exe.ps1, prints basic information of the given executable file
+list-aliases.ps1, lists all PowerShell aliases 
 list-anagrams.ps1, lists all anagrams of the given word
 list-automatic-variables.ps1, lists the automatic variables of PowerShell 
 list-current-timezone.ps1, lists the current time zone details
