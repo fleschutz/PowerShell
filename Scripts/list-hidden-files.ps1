@@ -16,7 +16,7 @@ try {
 	[int]$Count = 0
 	write-progress "Listing hidden files in $DirTree ..."
 	get-childItem $DirTree -attributes Hidden -recurse | foreach-object {
-		write-output "$_.FullName"
+		write-output $_.FullName
 		$Count++
 	}
 	write-host -foregroundColor green "OK - found $Count hidden file(s)" 
