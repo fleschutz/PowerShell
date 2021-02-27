@@ -84,6 +84,7 @@ Scripts for Files & Folders 📁
 * [list-empty-files.ps1](Scripts/list-empty-files.ps1) - lists empty files within the given directory tree
 * [list-files.ps1](Scripts/list-files.ps1) - lists all files in the given folder and also in every subfolder
 * [list-formatted.ps1](Scripts/list-formatted.ps1) - lists the current working directory formatted in columns
+* [list-hidden-files.ps1](Scripts/list-hidden-files.ps1) - lists hidden files within the given directory tree
 * [list-unused-files.ps1](Scripts/list-unused-files.ps1) - lists unused files in a directory tree
 * [make-install.ps1](Scripts/make-install.ps1) - installs built executables and libs to the installation directory
 * [MD5.ps1](Scripts/MD5.ps1) - prints the MD5 checksum of the given file
