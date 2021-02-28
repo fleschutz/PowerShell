@@ -1,12 +1,12 @@
 #!/bin/powershell
 <#
-.SYNTAX         ./list-branches.ps1 [<repo-dir>]
+.SYNTAX         ./list-branches.ps1 [<repo-dir>] [<pattern>]
 .DESCRIPTION	lists the branches of the current/given Git repository 
 .LINK		https://github.com/fleschutz/PowerShell
 .NOTES		Author:	Markus Fleschutz / License: CC0
 #>
 
-param($RepoDir = "$PWD")
+param($RepoDir = "$PWD", $Pattern = "*")
 
 try {
 	$null = $(git --version)
@@ -17,8 +17,9 @@ try {
 
 try {
 	set-location $RepoDir
-	& git branch --list --no-color --no-column
-	if ($lastExitCode -ne "0") { throw "'git branch' failed" }
+
+	& git branch --list "$Pattern" --no-color --no-column
+	if ($lastExitCode -ne "0") { throw "'git branch --list' failed" }
 
 	exit 0
 } catch {
