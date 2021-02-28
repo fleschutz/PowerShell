@@ -1,7 +1,7 @@
 #!/bin/powershell
 <#
-.SYNTAX         ./fetch-repos.ps1 [<repo-dir>]
-.DESCRIPTION	fetches all Git repositories under the current/given directory (including submodules)
+.SYNTAX         ./list-branches.ps1 [<repo-dir>]
+.DESCRIPTION	lists the branches of the current/given Git repository 
 .LINK		https://github.com/fleschutz/PowerShell
 .NOTES		Author:	Markus Fleschutz / License: CC0
 #>
@@ -16,12 +16,10 @@ try {
 }
 
 try {
-	write-progress "Fetching repository $RepoDir ..."
 	set-location $RepoDir
-	& git fetch --recurse-submodules
-	if ($lastExitCode -ne "0") { throw "'git fetch --recurse-submodules' failed" }
+	& git branch --list --no-color --no-column
+	if ($lastExitCode -ne "0") { throw "'git branch' failed" }
 
-	write-host -foregroundColor green "OK - fetched repository $RepoDir"
 	exit 0
 } catch {
 	write-error "ERROR: line $($_.InvocationInfo.ScriptLineNumber): $($Error[0])"

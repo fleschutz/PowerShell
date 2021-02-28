@@ -1,10 +1,12 @@
 #!/bin/powershell
 <#
-.SYNTAX         ./clean-branch.ps1
-.DESCRIPTION	cleans the current Git branch including submodules from generated files (e.g. for a fresh build)
+.SYNTAX         ./clean-branch.ps1 [<repo-dir>]
+.DESCRIPTION	cleans the current/given Git branch including submodules from generated files (e.g. for a fresh build)
 .LINK		https://github.com/fleschutz/PowerShell
 .NOTES		Author:	Markus Fleschutz / License: CC0
 #>
+
+param($RepoDir = "$PWD")
 
 try {
 	& git --version
@@ -14,6 +16,7 @@ try {
 }
 
 try {
+	set-location $RepoDir
 	& git clean -fdx # force + recurse into dirs + don't use the standard ignore rules
 	if ($lastExitCode -ne "0") { throw "'git clean -fdx' failed" }
 
