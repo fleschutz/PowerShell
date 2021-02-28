@@ -1,7 +1,7 @@
 #!/bin/powershell
 <#
 .SYNTAX         ./clean-branch.ps1 [<repo-dir>]
-.DESCRIPTION	cleans the current/given Git branch including submodules from generated files (e.g. for a fresh build)
+.DESCRIPTION	cleans the current Git branch including submodules from generated files (e.g. for a fresh build)
 .LINK		https://github.com/fleschutz/PowerShell
 .NOTES		Author:	Markus Fleschutz / License: CC0
 #>
@@ -16,6 +16,7 @@ try {
 }
 
 try {
+	write-progress "Cleaning current branch in repository $RepoDir..."
 	set-location $RepoDir
 	& git clean -fdx # force + recurse into dirs + don't use the standard ignore rules
 	if ($lastExitCode -ne "0") { throw "'git clean -fdx' failed" }
@@ -26,6 +27,7 @@ try {
 	& git status
 	if ($lastExitCode -ne "0") { throw "'git status' failed" }
 
+	write-host -foregroundColor green "OK - cleaned current branch in repository $RepoDir"
 	exit 0
 } catch {
 	write-error "ERROR: line $($_.InvocationInfo.ScriptLineNumber): $($Error[0])"

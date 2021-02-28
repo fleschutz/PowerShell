@@ -1,12 +1,12 @@
 #!/bin/powershell
 <#
-.SYNTAX         ./switch-branch.ps1 [<branch>]
-.DESCRIPTION	switches the current Git repository to the given branch (including submodules)
+.SYNTAX         ./switch-branch.ps1 [<branch>] [<repo-dir>]
+.DESCRIPTION	switches the current/given Git repository to the given branch (including submodules)
 .LINK		https://github.com/fleschutz/PowerShell
 .NOTES		Author:	Markus Fleschutz / License: CC0
 #>
 
-param($Branch = "")
+param($Branch = "", $RepoDir = "$PWD")
 
 if ($Branch -eq "") {
 	$Branch = read-host "Enter branch name to switch to"
@@ -20,6 +20,8 @@ try {
 }
 
 try {
+	set-location $RepoDir
+
 	& git switch --recurse-submodules $Branch
 	if ($lastExitCode -ne "0") { throw "'git switch --recurse-submodules $Branch' failed" }
 
@@ -28,9 +30,6 @@ try {
 
 	& git pull --recurse-submodules 
 	if ($lastExitCode -ne "0") { throw "'git pull' failed" }
-
-	& git status
-	if ($lastExitCode -ne "0") { throw "'git status' failed" }
 
 	exit 0
 } catch {

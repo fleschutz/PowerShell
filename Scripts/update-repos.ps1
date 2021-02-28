@@ -1,16 +1,12 @@
 #!/bin/powershell
 <#
-.SYNTAX         ./update-repos.ps1 [<directory>]
+.SYNTAX         ./update-repos.ps1 [<parent-dir>]
 .DESCRIPTION	updates all Git repositories under the current/given directory (including submodules)
 .LINK		https://github.com/fleschutz/PowerShell
 .NOTES		Author:	Markus Fleschutz / License: CC0
 #>
 
-param($Directory = "")
-
-if ($Directory -eq "") {
-	$Directory = "$PWD"
-}
+param($ParentDir = "$PWD")
 
 try {
 	& git --version
@@ -20,16 +16,16 @@ try {
 }
 
 try {
-	$Files = get-childItem -path $Directory
-	foreach ($File in $Files) {
-		if ($File.Mode -like "d*") {
-			$Filename = $File.Name
-			write-host ""
-			write-host -nonewline "Updating $Filename ..."
-			set-location $Filename
-			& git pull --recurse-submodules
-			set-location ..
-		} 
+	set-location $ParentDir
+	get-childItem $ParentDir -attributes Directory | foreach-object {
+		set-location $_.FullName
+		write-host ""
+		write-host -nonewline "Updating $($_.FullName)..."
+
+		& git pull --recurse-submodules
+		if ($lastExitCode -ne "0") { throw "'git pull --recurse-submodules' failed" }
+
+		set-location ..
 	}
 	exit 0
 } catch {

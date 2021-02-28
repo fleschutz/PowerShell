@@ -1,12 +1,12 @@
 #!/bin/powershell
 <#
-.SYNTAX         ./fetch-repos.ps1 [<repo-dir>]
+.SYNTAX         ./fetch-repos.ps1 [<parent-dir>]
 .DESCRIPTION	fetches all Git repositories under the current/given directory (including submodules)
 .LINK		https://github.com/fleschutz/PowerShell
 .NOTES		Author:	Markus Fleschutz / License: CC0
 #>
 
-param($RepoDir = "$PWD")
+param($ParentDir = "$PWD")
 
 try {
 	$null = $(git --version)
@@ -16,12 +16,18 @@ try {
 }
 
 try {
-	write-progress "Fetching repository $RepoDir ..."
-	set-location $RepoDir
-	& git fetch --recurse-submodules
-	if ($lastExitCode -ne "0") { throw "'git fetch --recurse-submodules' failed" }
+	write-progress "Fetching repositories under $ParentDir ..."
+	set-location $ParentDir
+	get-childItem $ParentDir -attributes Directory | foreach-object {
+		set-location $_.FullName
 
-	write-host -foregroundColor green "OK - fetched repository $RepoDir"
+		& git fetch --recurse-submodules
+		if ($lastExitCode -ne "0") { throw "'git fetch --recurse-submodules' failed" }
+
+		set-location ..
+	}
+
+	write-host -foregroundColor green "OK - fetched repositories under $ParentDir"
 	exit 0
 } catch {
 	write-error "ERROR: line $($_.InvocationInfo.ScriptLineNumber): $($Error[0])"
