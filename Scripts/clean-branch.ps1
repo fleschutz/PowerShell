@@ -18,14 +18,12 @@ try {
 try {
 	write-progress "Cleaning current branch in repository $RepoDir..."
 	set-location $RepoDir
+	
 	& git clean -fdx # force + recurse into dirs + don't use the standard ignore rules
 	if ($lastExitCode -ne "0") { throw "'git clean -fdx' failed" }
 
 	& git submodule foreach --recursive git clean -fdx 
 	if ($lastExitCode -ne "0") { throw "'git clean -fdx' in submodules failed" }
-
-	& git status
-	if ($lastExitCode -ne "0") { throw "'git status' failed" }
 
 	write-host -foregroundColor green "OK - cleaned current branch in repository $RepoDir"
 	exit 0
