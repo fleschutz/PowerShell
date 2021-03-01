@@ -1,7 +1,7 @@
 #!/bin/powershell
 <#
 .SYNTAX         ./list-branches.ps1 [<repo-dir>] [<pattern>]
-.DESCRIPTION	lists the branches of the current/given Git repository 
+.DESCRIPTION	lists all branches of the current/given Git repository 
 .LINK		https://github.com/fleschutz/PowerShell
 .NOTES		Author:	Markus Fleschutz / License: CC0
 #>
@@ -18,9 +18,13 @@ try {
 try {
 	set-location $RepoDir
 
-	& git branch --list "$Pattern" --no-color --no-column
+	$Branches = $(git branch --list "$Pattern" --remotes --no-color --no-column)
 	if ($lastExitCode -ne "0") { throw "'git branch --list' failed" }
 
+	foreach($Branch in $Branches) {
+		if ("$Branch" -match "origin/HEAD") { continue }
+		write-output "$($Branch.substring(9))"
+	}
 	exit 0
 } catch {
 	write-error "ERROR: line $($_.InvocationInfo.ScriptLineNumber): $($Error[0])"
