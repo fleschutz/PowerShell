@@ -18,12 +18,14 @@ try {
 try {
 	set-location $RepoDir
 
-	$Branches = $(git branch --list "$Pattern" --remotes --no-color --no-column)
+	$Branches = $(git branch --list --remotes --no-color --no-column)
 	if ($lastExitCode -ne "0") { throw "'git branch --list' failed" }
 
 	foreach($Branch in $Branches) {
 		if ("$Branch" -match "origin/HEAD") { continue }
-		write-output "$($Branch.substring(9))"
+		$BranchName = $Branch.substring(9)
+		if ("$BranchName" -notlike "$Pattern") { continue }
+		write-output "$BranchName"
 	}
 	exit 0
 } catch {
