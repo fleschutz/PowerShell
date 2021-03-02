@@ -13,9 +13,8 @@ if ($Drive -eq "" ) {
 }
 
 try {
-	$FreeSpace = (get-psdrive $Drive).free
-	if ($lastExitCode -ne "0") { throw "'get-psdrive $Drive' failed" }
-	[int]$FreeSpace = (($FreeSpace / 1024) / 1024) / 1024
+	$FreeSpace = (get-psdrive $Drive)
+	[int]$FreeSpace = (($FreeSpace.free / 1024) / 1024) / 1024
 
 	if ($FreeSpace -lt $WarningLevel) {
         	write-warning "Drive $Drive has only $FreeSpace GB free space left! (warning level is < $WarningLevel GB)"
