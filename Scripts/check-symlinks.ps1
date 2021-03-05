@@ -28,7 +28,7 @@ try {
 		}
 		$SymlinksTotal++
 	}
-	write-host -foregroundColor green "Done - $SymlinksBroken out of $SymlinksTotal are broken"
+	write-host -foregroundColor green "OK - found $SymlinksTotal symlinks total, $SymlinksBroken symlinks are broken"
 	exit $SymlinksBroken
 } catch {
 	write-error "ERROR: line $($_.InvocationInfo.ScriptLineNumber): $($Error[0])"
