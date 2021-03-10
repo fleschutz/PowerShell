@@ -9,7 +9,7 @@
 param($RepoDir = "$PWD")
 
 try {
-	write-output "Fetching repository $RepoDir at $env:computername ..."
+	write-output "Fetching repository $RepoDir ..."
 
 	if (-not(test-path "$RepoDir")) { throw "Repository at $RepoDir is non-existing" }
 	set-location "$RepoDir"
