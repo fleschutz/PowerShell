@@ -21,7 +21,7 @@ try {
 	get-childItem $ParentDir -attributes Directory | foreach-object {
 		set-location $_.FullName
 
-		& git fetch --recurse-submodules
+		& git fetch --all --recurse-submodules
 		if ($lastExitCode -ne "0") { throw "'git fetch --recurse-submodules' failed" }
 
 		set-location ..
