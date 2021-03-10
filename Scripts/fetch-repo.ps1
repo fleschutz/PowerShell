@@ -11,7 +11,7 @@ param($RepoDir = "$PWD")
 try {
 	write-output "Fetching repository $RepoDir ..."
 
-	if (-not(test-path "$RepoDir")) { throw "Repository at $RepoDir is non-existing" }
+	if (-not(test-path "$RepoDir")) { throw "Can't access Git repository at: $RepoDir" }
 	set-location "$RepoDir"
 
 	& git --version

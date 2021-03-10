@@ -9,14 +9,16 @@
 param($RepoDir = "$PWD", $Pattern = "*")
 
 try {
-	$null = $(git --version)
-} catch {
-	write-error "ERROR: can't execute 'git' - make sure Git is installed and available"
-	exit 1
-}
+	write-output "Listing Git branches of repository $RepoDir ..."
 
-try {
+	if (-not(test-path "$RepoDir")) { throw "Can't access Git repository at: $RepoDir" }
 	set-location $RepoDir
+
+	$null = (git --version)
+	if ($lastExitCode -ne "0") { throw "Can't execute 'git' - make sure Git is installed and available" }
+
+	& git fetch --recurse-submodules
+	if ($lastExitCode -ne "0") { throw "'git fetch --recurse-submodules' failed" }
 
 	$Branches = $(git branch --list --remotes --no-color --no-column)
 	if ($lastExitCode -ne "0") { throw "'git branch --list' failed" }
