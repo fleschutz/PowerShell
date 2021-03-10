@@ -21,7 +21,7 @@ try {
 	if ($lastExitCode -ne "0") { throw "'git fetch --all --recurse-submodules' failed" }
 
 	if ($Format -eq "compact") {
-		& git log --pretty=format:'%Cred%h%Creset %C(yellow)%d%Creset %s %C(bold blue)by %an %cr%Creset' --abbrev-commit
+		& git log --graph --pretty=format:'%Cred%h%Creset%C(yellow)%d%Creset %s %C(bold blue)by %an %cr%Creset' --abbrev-commit
 	} else {
 		& git log
 	}
