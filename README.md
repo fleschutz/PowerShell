@@ -31,7 +31,7 @@ Collection of PowerShell Scripts
 ---------------------------------
 * [add-firewall-rules.ps1](Scripts/add-firewall-rules.ps1) - adds firewall rules for the given executables (requires admin rights)
 * [check-drive-space.ps1](Scripts/check-drive-space.ps1) - checks the given drive for free space left
-* [check-windows-system-files.ps1](Scripts/check-windows-system-files.ps1) - checks the validity of the Windows system files 
+* [check-windows-system-files.ps1](Scripts/check-windows-system-files.ps1) - checks the validity of the Windows system files (requires admin rights)
 * [enable-crash-dumps.ps1](Scripts/enable-crash-dumps.ps1) - enables the writing of crash dumps
 * [hibernate.ps1](Scripts/hibernate.ps1) - enables hibernate mode for the local computer (requires admin rights)
 * [list-network-shares.ps1](Scripts/list-network-shares.ps1) - lists the network shares of the local computer
