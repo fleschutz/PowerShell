@@ -6,17 +6,20 @@
 .NOTES		Author:	Markus Fleschutz / License: CC0
 #>
 
-$PathToRepo = "$PSScriptRoot/.."
-
 try {
-	write-progress "Reading OS_IPFS_hashes.csv"
+	write-progress "Reading OS_IPFS_hashes.csv ..."
+
+	$PathToRepo = "$PSScriptRoot/.."
 	$PathToCsvFile = "$PathToRepo/Data/os-release.csv"
 	invoke-webRequest -URI "https://fleschutz.droppages.com/downloads/OS_IPFS_hashes.csv" -outFile "$PathToCsvFile"
+
 	$Table = import-csv "$PathToCsvFile"
 	remove-item -path "$PathToCsvFile"
 
+	write-output "Operating System Releases"
+	write-output "========================="
 	foreach ($Row in $Table) {
-		write-output "* $($Row.Path) -> IPFS://$($Row.IPFS)"
+		write-output "* $($Row.Path.substring(3)) -> ipfs://$($Row.IPFS)"
 	}
 	exit 0
 } catch {
