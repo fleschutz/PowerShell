@@ -9,7 +9,7 @@
 param($RepoDir = "$PWD", $Format = "compact")
 
 try {
-	write-progress "Fetching changes in Git repository $RepoDir ..."
+	write-output "Fetching changes in Git repository $RepoDir ..."
 
 	if (-not(test-path "$RepoDir")) { throw "Can't access Git repository directory: $RepoDir" }
 	set-location $RepoDir
@@ -20,15 +20,17 @@ try {
 	& git fetch --all --recurse-submodules
 	if ($lastExitCode -ne "0") { throw "'git fetch --all --recurse-submodules' failed" }
 
-	write-output "List of commits in Git repository $($RepoDir):"
+	write-output ""
+	write-output "List of Git Commits"
+	write-output "-------------------"
 	if ($Format -eq "compact") {
 		& git log --graph --pretty=format:'%Cred%h%Creset%C(yellow)%d%Creset %s %C(bold blue)by %an %cr%Creset' --abbrev-commit
+		if ($lastExitCode -ne "0") { throw "'git log' failed" }
 	} else {
 		& git log
+		if ($lastExitCode -ne "0") { throw "'git log' failed" }
 	}
-	
-	if ($lastExitCode -ne "0") { throw "'git log' failed" }
-
+	write-output ""
 	exit 0
 } catch {
 	write-error "ERROR: line $($_.InvocationInfo.ScriptLineNumber): $($Error[0])"

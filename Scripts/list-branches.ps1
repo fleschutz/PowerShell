@@ -9,7 +9,7 @@
 param($RepoDir = "$PWD", $Pattern = "*")
 
 try {
-	write-progress "Fetching changes in repository $RepoDir ..."
+	write-output "Fetching changes in repository $RepoDir ..."
 
 	if (-not(test-path "$RepoDir")) { throw "Can't access Git repository directory: $RepoDir" }
 	set-location $RepoDir
@@ -20,7 +20,9 @@ try {
 	& git fetch --all --recurse-submodules
 	if ($lastExitCode -ne "0") { throw "'git fetch --all --recurse-submodules' failed" }
 
-	write-output "List of Git branches in repository $($RepoDir):"
+	write-output ""
+	write-output "List of Git Branches"
+	write-output "--------------------"
 	$Branches = $(git branch --list --remotes --no-color --no-column)
 	if ($lastExitCode -ne "0") { throw "'git branch --list' failed" }
 
@@ -30,6 +32,7 @@ try {
 		if ("$BranchName" -notlike "$Pattern") { continue }
 		write-output "$BranchName"
 	}
+	write-output ""
 	exit 0
 } catch {
 	write-error "ERROR: line $($_.InvocationInfo.ScriptLineNumber): $($Error[0])"
