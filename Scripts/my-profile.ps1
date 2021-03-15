@@ -1,11 +1,12 @@
-# Personal PowerShell Profile
-# ---------------------------
-# comment/uncomment/adapt as you like
+# my-profile.ps1 - Your Personal PowerShell Profile
+# -------------------------------------------------
+# 
+# NOTE: simply comment/uncomment/adapt the following lines:
 
 #function prompt {$null} # PS> 
 
 #function prompt { "$ " } # $
 
-function prompt { "$(Get-Location)> " } # C:\> 
+function prompt { write-host -foregroundColor blue "$(Get-Location)> " } # C:\> 
 
-set-alias -name lsf -value get-childitem # lsf means list formatted
+set-alias -name lsf -value get-childitem # lsf means list directory formatted
