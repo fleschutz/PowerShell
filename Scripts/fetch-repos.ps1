@@ -16,7 +16,7 @@ try {
 }
 
 try {
-	write-progress "Fetching repositories under $ParentDir ..."
+	write-progress "Fetching Git repositories under $ParentDir ..."
 	set-location $ParentDir
 	get-childItem $ParentDir -attributes Directory | foreach-object {
 		set-location $_.FullName
