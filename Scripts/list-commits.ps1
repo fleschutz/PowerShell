@@ -1,7 +1,7 @@
 #!/bin/powershell
 <#
 .SYNTAX         ./list-commits.ps1 [<repo-dir>] [<format>]
-.DESCRIPTION	lists all commits of the current/given Git repository 
+.DESCRIPTION	lists all commits in the current/given Git repository 
 .LINK		https://github.com/fleschutz/PowerShell
 .NOTES		Author:	Markus Fleschutz / License: CC0
 #>
