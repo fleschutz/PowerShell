@@ -13,14 +13,14 @@ try {
  
 	foreach ($Item in $Items) { 
 		$Total = $Item.AllocatedBaseSize
-		$Current = $Item.CurrentUsage
-		$FreeSpace = ($Total - $Current)
+		$InUse = $Item.CurrentUsage
+		$FreeSpace = ($Total - $InUse)
 	} 
 	if ($FreeSpace -lt $MinLevel) {
-        	write-warning "Swap space has only $FreeSpace GB left to use! ($Current GB out of $Total GB in use, minimum is $MinLevel GB)"
+        	write-warning "Swap space has only $FreeSpace GB left to use! ($InUse GB out of $Total GB in use, minimum is $MinLevel GB)"
 		exit 1
 	}
-	write-host -foregroundColor green "OK - swap space has $FreeSpace GB left to use ($Current GB out of $Total GB in use, minimum is $MinLevel GB)"
+	write-host -foregroundColor green "OK - swap space has $FreeSpace GB left to use ($InUse GB out of $Total GB in use, minimum is $MinLevel GB)"
 	exit 0
 } catch {
 	write-error "ERROR: line $($_.InvocationInfo.ScriptLineNumber): $($Error[0])"
