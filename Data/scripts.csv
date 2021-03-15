@@ -4,6 +4,7 @@ check-drive-space.ps1, checks the given drive for free space left
 check-ipv4-address.ps1, checks the given IPv4 address for validity
 check-ipv6-address.ps1, checks the given IPv6 address for validity
 check-mac-address.ps1, checks the given MAC address for validity
+check-swap-space.ps1, checks the swap space for free space left
 check-symlinks.ps1, checks every symlink in the given directory tree
 check-windows-system-files.ps1, checks the validity of the Windows system files 
 check-xml-file.ps1, checks the given XML file for validity
@@ -46,6 +47,7 @@ list-branches.ps1, lists the Git branches in the current/given repository
 list-commits.ps1, lists the Git commits in the current/given repository 
 list-current-timezone.ps1, lists the current time zone details
 list-clipboard.ps1, lists the contents of the clipboard
+list-drives.ps1, lists all drives
 list-environment-variables.ps1, lists all environment variables
 list-empty-dirs.ps1, lists empty subfolders within the given directory tree
 list-empty-files.ps1, lists empty files within the given directory tree
