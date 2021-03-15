@@ -31,6 +31,7 @@ try {
 		if ($lastExitCode -ne "0") { throw "'git log' failed" }
 	}
 	write-output ""
+	write-output ""
 	exit 0
 } catch {
 	write-error "ERROR: line $($_.InvocationInfo.ScriptLineNumber): $($Error[0])"
