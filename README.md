@@ -72,6 +72,7 @@ Collection of PowerShell Scripts
 -----------------------------
 * [check-symlinks.ps1](Scripts/check-symlinks.ps1) - checks every symlink in the given directory tree
 * [check-xml-file.ps1](Scripts/check-xml-file.ps1) - checks the given XML file for validity
+* [create-shortcut.ps1](Scripts/create-shortcut.ps1) - creates a shortcut
 * [create-symlink.ps1](Scripts/create-symlink.ps1) - creates a symbolic link
 * [decrypt-file.ps1](Scripts/decrypt-file.ps1) - encrypts the given file
 * [encrypt-file.ps1](Scripts/encrypt-file.ps1) - encrypts the given file
