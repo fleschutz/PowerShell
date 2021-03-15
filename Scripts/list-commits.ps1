@@ -17,7 +17,7 @@ try {
 	$null = (git --version)
 	if ($lastExitCode -ne "0") { throw "Can't execute 'git' - make sure Git is installed and available" }
 
-	& git fetch --all --recurse-submodules
+	$null = (git fetch --all --recurse-submodules)
 	if ($lastExitCode -ne "0") { throw "'git fetch --all --recurse-submodules' failed" }
 
 	if ($Format -eq "compact") {
