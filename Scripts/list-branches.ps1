@@ -9,7 +9,7 @@
 param($RepoDir = "$PWD", $Pattern = "*")
 
 try {
-	write-output "Fetching changes in repository $RepoDir ..."
+	write-output "Fetching updates in Git repository $RepoDir ..."
 
 	if (-not(test-path "$RepoDir")) { throw "Can't access Git repository directory: $RepoDir" }
 	set-location $RepoDir
