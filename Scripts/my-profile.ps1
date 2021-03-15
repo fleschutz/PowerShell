@@ -7,6 +7,6 @@
 
 #function prompt { "$ " } # $
 
-function prompt { write-host -foregroundColor blue "$(Get-Location)> " } # C:\> 
+function prompt { write-host -foregroundColor blue -noNewLine "$(Get-Location)"; return "> " } # C:\> 
 
 set-alias -name lsf -value get-childitem # lsf means list directory formatted
