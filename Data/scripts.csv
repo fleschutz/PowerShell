@@ -8,6 +8,7 @@ check-swap-space.ps1, checks the swap space for free space left
 check-symlinks.ps1, checks every symlink in the given directory tree
 check-windows-system-files.ps1, checks the validity of the Windows system files 
 check-xml-file.ps1, checks the given XML file for validity
+cherry-picker.ps1, cherry-picks a Git commit into multiple branches
 clean-branch.ps1, cleans the current Git branch (including submodules) from generated files
 clone-repos.ps1, clones well-known Git repositories
 close-calculator.ps1, closes the calculator program gracefully
