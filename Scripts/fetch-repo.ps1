@@ -1,7 +1,7 @@
 #!/bin/powershell
 <#
 .SYNTAX         ./fetch-repo.ps1 [<repo-dir>]
-.DESCRIPTION	fetches a single Git repository at the current/given directory (including submodules)
+.DESCRIPTION	fetches updates for the current/given Git repository (including submodules)
 .LINK		https://github.com/fleschutz/PowerShell
 .NOTES		Author:	Markus Fleschutz / License: CC0
 #>
