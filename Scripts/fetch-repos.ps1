@@ -16,8 +16,11 @@ try {
 }
 
 try {
-	write-progress "Fetching Git repositories under $ParentDir ..."
+	write-progress "Fetching updates for Git repositories under $ParentDir ..."
+
+	if (-not(test-path "$ParentDir" -pathType container)) { throw "Can't access directory: $ParentDir" }
 	set-location $ParentDir
+
 	get-childItem $ParentDir -attributes Directory | foreach-object {
 		set-location $_.FullName
 

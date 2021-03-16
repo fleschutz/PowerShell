@@ -9,10 +9,10 @@
 param($RepoDir = "$PWD", $Pattern = "*")
 
 try {
-	write-output "Fetching updates in Git repository $RepoDir ..."
+	write-output "Fetching updates for Git repository $RepoDir ..."
 
-	if (-not(test-path "$RepoDir")) { throw "Can't access Git repository directory: $RepoDir" }
-	set-location $RepoDir
+	if (-not(test-path "$RepoDir" -pathType container)) { throw "Can't access directory: $RepoDir" }
+	set-location "$RepoDir"
 
 	& git --version
 	if ($lastExitCode -ne "0") { throw "Can't execute 'git' - make sure Git is installed and available" }
