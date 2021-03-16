@@ -1,7 +1,7 @@
 #!/bin/powershell
 <#
 .SYNTAX         ./switch-branch.ps1 [<branch>] [<repo-dir>]
-.DESCRIPTION	switches the current/given Git repository to the given branch (including submodules)
+.DESCRIPTION	switches the branch in the current/given Git repository (including submodules)
 .LINK		https://github.com/fleschutz/PowerShell
 .NOTES		Author:	Markus Fleschutz / License: CC0
 #>
@@ -9,7 +9,7 @@
 param($Branch = "", $RepoDir = "$PWD")
 
 if ($Branch -eq "") {
-	$Branch = read-host "Enter branch name to switch to"
+	$Branch = read-host "Enter branch to switch to"
 }
 
 try {
