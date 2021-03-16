@@ -107,8 +107,8 @@ Collection of PowerShell Scripts
 * [configure-git.ps1](Scripts/configure-git.ps1) - sets up the Git user configuration
 * [fetch-repo.ps1](Scripts/fetch-repo.ps1) - fetches updates for the current/given Git repository (including submodules)
 * [fetch-repos.ps1](Scripts/fetch-repos.ps1) - fetches updates for all Git repositories under the current/given directory (including submodules)
-* [list-branches.ps1](Scripts/list-branches.ps1) - lists the Git branches in the current/given repository 
-* [list-commits.ps1](Scripts/list-commits.ps1) - lists the Git commits in the current/given repository 
+* [list-branches.ps1](Scripts/list-branches.ps1) - lists all branches in the current/given Git repository 
+* [list-commits.ps1](Scripts/list-commits.ps1) - lists all commits in the current/given Git repository 
 * [switch-branch.ps1](Scripts/switch-branch.ps1) - switches the current Git repository to the given branch (including submodules)
 * [update-repos.ps1](Scripts/update-repos.ps1) - updates all Git repositories under the current/given directory (including submodules)
 
