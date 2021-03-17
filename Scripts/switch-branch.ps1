@@ -23,6 +23,9 @@ try {
 	if (-not(test-path "$RepoDir" -pathType container)) { throw "Can't access directory: $RepoDir" }
 	set-location "$RepoDir"
 
+	& git fetch --all --recurse-submodules
+	if ($lastExitCode -ne "0") { throw "'git fetch --all --recurse-submodules' failed" }
+
 	& git switch --recurse-submodules $Branch
 	if ($lastExitCode -ne "0") { throw "'git switch --recurse-submodules $Branch' failed" }
 
