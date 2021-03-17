@@ -24,10 +24,10 @@ try {
 	set-location "$RepoDir"
 
 	& git fetch --all --recurse-submodules
-	if ($lastExitCode -ne "0") { throw "'git fetch --all --recurse-submodules' failed" }
+	if ($lastExitCode -ne "0") { throw "'git fetch' failed" }
 
 	& git switch --recurse-submodules $Branch
-	if ($lastExitCode -ne "0") { throw "'git switch --recurse-submodules $Branch' failed" }
+	if ($lastExitCode -ne "0") { throw "'git switch $Branch' failed" }
 
 	& git submodule update --init --recursive
 	if ($lastExitCode -ne "0") { throw "'git submodule update' failed" }
