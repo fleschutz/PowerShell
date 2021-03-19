@@ -30,7 +30,7 @@ try {
 		set-location ..
 	}
 
-	write-host -foregroundColor green "OK - fetched repositories under $ParentDir"
+	write-host -foregroundColor green "OK - fetched updates for Git repositories under $ParentDir"
 	exit 0
 } catch {
 	write-error "ERROR: line $($_.InvocationInfo.ScriptLineNumber): $($Error[0])"
