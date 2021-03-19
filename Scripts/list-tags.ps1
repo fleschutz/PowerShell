@@ -1,12 +1,12 @@
 #!/bin/powershell
 <#
-.SYNTAX         ./list-tags.ps1 [<repo-dir>] 
+.SYNTAX         ./list-tags.ps1 [<repo-dir>] [<pattern>]
 .DESCRIPTION	lists all tags in the current/given Git repository 
 .LINK		https://github.com/fleschutz/PowerShell
 .NOTES		Author:	Markus Fleschutz / License: CC0
 #>
 
-param($RepoDir = "$PWD")
+param($RepoDir = "$PWD", $Pattern="*")
 
 try {
 	write-output "Fetching updates for Git repository $RepoDir ..."
@@ -24,8 +24,8 @@ try {
 	write-output "List of Git Tags"
 	write-output "----------------"
 
-	& git tag
-	if ($lastExitCode -ne "0") { throw "'git tag' failed" }
+	& git tag --list "$Pattern"
+	if ($lastExitCode -ne "0") { throw "'git tag --list' failed" }
 
 	write-output ""
 	exit 0
