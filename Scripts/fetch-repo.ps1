@@ -23,7 +23,7 @@ try {
 	& git status
 	if ($lastExitCode -ne "0") { throw "'git status' failed" }
 
-	write-host -foregroundColor green "OK - repository $RepoDir has been fetched"
+	write-host -foregroundColor green "OK - fetched updates for Git repository $RepoDir"
 	exit 0
 } catch {
 	write-error "ERROR: line $($_.InvocationInfo.ScriptLineNumber): $($Error[0])"
