@@ -11,7 +11,7 @@ function ListScripts { param([string]$FilePath)
 	$Table = import-csv "$FilePath"
 	foreach($Row in $Table) {
 		New-Object PSObject -Property @{
-			'Script' = "$($Row.Script)"
+			'PowerShell Script' = "$($Row.Script)"
 			'Description' = "$($Row.Description)"
 		}
 	}
@@ -21,7 +21,7 @@ function ListScripts { param([string]$FilePath)
 
 try {
 	$PathToRepo = "$PSScriptRoot/.."
-	ListScripts "$PathToRepo/Data/scripts.csv" | format-table -property Script,Description
+	ListScripts "$PathToRepo/Data/scripts.csv" | format-table -property "PowerShell Script",Description
 
 	write-host -foregroundColor green "OK - $($global:NumScripts) PowerShell scripts total"
 	exit 0
