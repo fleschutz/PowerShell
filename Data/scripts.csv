@@ -94,6 +94,7 @@ play-mp3.ps1, plays the given sound file (MP3 file format)
 play-super-mario.ps1, plays the Super Mario Intro
 play-the-imperial-march.ps1, plays the Imperial March (Star Wars)
 poweroff.ps1, halts the local computer (requires admin rights)
+pull-repo.ps1, pulls updates for the current/given Git repository (including submodules)
 pull-repos.ps1, pulls updates for all Git repositories under the current/given directory (including submodules)
 query-smart-data.ps1, queries the S.M.A.R.T. data of your HDD/SSD's and saves it to the current/given directory
 new-email.ps1, starts the default email client to write a new email
