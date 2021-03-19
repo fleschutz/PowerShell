@@ -1,7 +1,7 @@
 #!/bin/powershell
 <#
-.SYNTAX         ./update-repos.ps1 [<parent-dir>]
-.DESCRIPTION	updates all Git repositories under the current/given directory (including submodules)
+.SYNTAX         ./pull-repos.ps1 [<parent-dir>]
+.DESCRIPTION	pulls updates for all Git repositories under the current/given directory (including submodules)
 .LINK		https://github.com/fleschutz/PowerShell
 .NOTES		Author:	Markus Fleschutz / License: CC0
 #>
@@ -16,11 +16,15 @@ try {
 }
 
 try {
-	set-location $ParentDir
+	write-progress "Pulling updates for Git repositories under $ParentDir ..."
+
+	if (-not(test-path "$ParentDir" -pathType container)) { throw "Can't access directory: $ParentDir" }
+	set-location "$ParentDir"
+
 	get-childItem $ParentDir -attributes Directory | foreach-object {
 		set-location $_.FullName
 		write-host ""
-		write-host -nonewline "Updating $($_.FullName)..."
+		write-host -nonewline "Pulling $($_.FullName)..."
 
 		& git pull --recurse-submodules
 		if ($lastExitCode -ne "0") { throw "'git pull --recurse-submodules' failed" }

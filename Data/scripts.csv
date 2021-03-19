@@ -94,6 +94,7 @@ play-mp3.ps1, plays the given sound file (MP3 file format)
 play-super-mario.ps1, plays the Super Mario Intro
 play-the-imperial-march.ps1, plays the Imperial March (Star Wars)
 poweroff.ps1, halts the local computer (requires admin rights)
+pull-repos.ps1, pulls updates for all Git repositories under the current/given directory (including submodules)
 query-smart-data.ps1, queries the S.M.A.R.T. data of your HDD/SSD's and saves it to the current/given directory
 new-email.ps1, starts the default email client to write a new email
 reboot.ps1, reboots the local computer (requires admin rights)
@@ -131,7 +132,6 @@ turn-volume-up.ps1, turns the audio volume up (+10% by default)
 turn-volume-down.ps1, turns the audio volume down (-10% by default)
 txt2wav.ps1, converts text into a audio .WAV file
 unmute-audio.ps1, unmutes audio
-update-repos.ps1, updates all Git repositories under the current/given directory (including submodules)
 voice-control.ps1, executes the PowerShell scripts by voice
 weather.ps1, prints the current weather forecast
 weather-alert.ps1, checks the current weather for critical values
