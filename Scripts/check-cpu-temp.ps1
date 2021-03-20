@@ -11,7 +11,7 @@ try {
 		$Temp = get-content "/sys/class/thermal/thermal_zone0/temp"
 		$Temp = $Temp / 1000.0
 	} else {
-		write-warning "No CPU temperature retrieved"
+		write-warning "No CPU temperature available"
 		exit 0
 	}
 
