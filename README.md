@@ -30,6 +30,7 @@ Collection of PowerShell Scripts
 ⚙️ Scripts for Computer Management
 ---------------------------------
 * [add-firewall-rules.ps1](Scripts/add-firewall-rules.ps1) - adds firewall rules for the given executables (requires admin rights)
+* [check-cpu-temp.ps1](Scripts/check-cpu-temp.ps1) - checks the CPU temperature
 * [check-dns-resolution.ps1](Scripts/check-dns-resolution.ps1) - checks the DNS resolution with frequently used domain names
 * [check-drive-space.ps1](Scripts/check-drive-space.ps1) - checks the given drive for free space left
 * [check-health.ps1](Scripts/check-health.ps1) - checks the system health
