@@ -30,7 +30,9 @@ Collection of PowerShell Scripts
 ⚙️ Scripts for Computer Management
 ---------------------------------
 * [add-firewall-rules.ps1](Scripts/add-firewall-rules.ps1) - adds firewall rules for the given executables (requires admin rights)
+* [check-dns-resolution.ps1](Scripts/check-dns-resolution.ps1) - checks the DNS resolution with frequently used domain names
 * [check-drive-space.ps1](Scripts/check-drive-space.ps1) - checks the given drive for free space left
+* [check-health.ps1](Scripts/check-health.ps1) - checks the system health
 * [check-swap-space.ps1](Scripts/check-swap-space.ps1) - checks the swap space for free space left
 * [check-windows-system-files.ps1](Scripts/check-windows-system-files.ps1) - checks the validity of the Windows system files (requires admin rights)
 * [enable-crash-dumps.ps1](Scripts/enable-crash-dumps.ps1) - enables the writing of crash dumps
@@ -158,7 +160,6 @@ Collection of PowerShell Scripts
 * [simulate-matrix.ps1](Scripts/simulate-matrix.ps1) - simulates the Matrix (fun)
 * [simulate-presence.ps1](Scripts/simulate-presence.ps1) - simulates the human presence against burglars
 * [switch-shelly1.ps1](Scripts/switch-shelly1.ps1) - switches a Shelly1 device in the local network
-* [train-dns-cache.ps1](Scripts/train-dns-cache.ps1) - trains the DNS cache with frequently used domain names
 * [translate-text.ps1](Scripts/translate-text.ps1) - translates the given text into other languages
 * [weather.ps1](Scripts/weather.ps1) - prints the current weather forecast
 * [weather-alert.ps1](Scripts/weather-alert.ps1) - checks the current weather for critical values

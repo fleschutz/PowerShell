@@ -1,6 +1,8 @@
 Script,Description
 add-firewall-rules.ps1, adds firewall rules to the given executables (requires admin rights)
+check-dns-resolution.ps1, checks the DNS resolution with frequently used domain names
 check-drive-space.ps1, checks the given drive for free space left
+check-health.ps1, checks the system health
 check-ipv4-address.ps1, checks the given IPv4 address for validity
 check-ipv6-address.ps1, checks the given IPv6 address for validity
 check-mac-address.ps1, checks the given MAC address for validity
@@ -127,7 +129,6 @@ switch-branch.ps1, switches the branch in the current/given Git repository (incl
 switch-shelly1.ps1, switches a Shelly1 device in the local network
 take-screenshot.ps1, takes a single screenshot
 take-screenshots.ps1, takes multiple screenshots
-train-dns-cache.ps1, trains the DNS cache with frequently used domain names
 translate-text.ps1, translates the given text into other languages
 turn-volume-up.ps1, turns the audio volume up (+10% by default)
 turn-volume-down.ps1, turns the audio volume down (-10% by default)

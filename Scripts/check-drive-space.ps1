@@ -14,15 +14,15 @@ if ($Drive -eq "" ) {
 
 try {
 	$DriveDetails = (get-psdrive $Drive)
-	[int]$FreeSpace = (($DriveDetails.Free / 1024) / 1024) / 1024
-	[int]$InUse = (($DriveDetails.Used / 1024) / 1024) / 1024
-	[int]$Total = ($InUse + $FreeSpace)
+	[int]$Free = (($DriveDetails.Free / 1024) / 1024) / 1024
+	[int]$Used = (($DriveDetails.Used / 1024) / 1024) / 1024
+	[int]$Total = ($Used + $Free)
 
-	if ($FreeSpace -lt $MinLevel) {
-        	write-warning "Drive $Drive has only $FreeSpace GB left to use! ($InUse GB out of $Total GB in use, minimum is $MinLevel GB)"
+	if ($Free -lt $MinLevel) {
+        	write-warning "Drive $Drive has only $Free GB left to use! ($Used GB out of $Total GB in use, minimum is $MinLevel GB)"
 		exit 1
 	}
-	write-host -foregroundColor green "OK - drive $Drive has $FreeSpace GB left to use ($InUse GB out of $Total GB in use, minimum is $MinLevel GB)"
+	write-host -foregroundColor green "OK - $Free GB free at drive $Drive ($Used GB used out of $Total GB, $MinLevel GB is minimum)"
 	exit 0
 } catch {
 	write-error "ERROR: line $($_.InvocationInfo.ScriptLineNumber): $($Error[0])"
