@@ -12,7 +12,7 @@ HOMEDIR=/home/mf
 $HOMEDIR/PowerShell/Scripts/query-smart-data.ps1 $HOMEDIR
 # to query S.M.A.R.T. data of all your HDD's/SSD's 
 
-$HOMEDIR/PowerShell/Scripts/train-dns-cache.ps1 
+$HOMEDIR/PowerShell/Scripts/check-dns-resolution.ps1 
 # to train the DNS cache with frequently used domain names 
 
 exit 0
