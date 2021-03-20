@@ -9,28 +9,27 @@
 param($ParentDir = "$PWD")
 
 try {
-	& git --version
-} catch {
-	write-error "ERROR: can't execute 'git' - make sure Git is installed and available"
-	exit 1
-}
-
-try {
-	write-progress "Pulling updates for Git repositories under $ParentDir ..."
+	"Pulling updates for Git repositories under $ParentDir ..."
 
 	if (-not(test-path "$ParentDir" -pathType container)) { throw "Can't access directory: $ParentDir" }
 	set-location "$ParentDir"
 
+	& git --version
+	if ($lastExitCode -ne "0") { throw "Can't execute 'git' - make sure Git is installed and available" }
+
+	[int]$Count = 0
 	get-childItem $ParentDir -attributes Directory | foreach-object {
+		"Pulling Git repository $($_.FullName)..."
+
 		set-location $_.FullName
-		write-host ""
-		write-host -nonewline "Pulling $($_.FullName)..."
 
 		& git pull --recurse-submodules
 		if ($lastExitCode -ne "0") { throw "'git pull --recurse-submodules' failed" }
 
 		set-location ..
+		$Count++
 	}
+	write-host -foregroundColor green "OK - pulled updates for $Count Git repositories under $ParentDir"
 	exit 0
 } catch {
 	write-error "ERROR: line $($_.InvocationInfo.ScriptLineNumber): $($Error[0])"
