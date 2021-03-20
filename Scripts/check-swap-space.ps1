@@ -27,7 +27,7 @@ try {
         	write-warning "Swap space has only $Free GB left to use! ($Used GB out of $Total GB in use, minimum is $MinLevel GB)"
 		exit 1
 	}
-	write-host -foregroundColor green "OK - swap space has $Free GB left ($Used GB of $Total GB used, minimum is $MinLevel GB)"
+	write-host -foregroundColor green "OK - swap space has $Free GB left ($Used GB of $Total GB used)"
 	exit 0
 } catch {
 	write-error "ERROR: line $($_.InvocationInfo.ScriptLineNumber): $($Error[0])"
