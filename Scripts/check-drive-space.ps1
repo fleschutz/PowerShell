@@ -22,7 +22,7 @@ try {
         	write-warning "Drive $Drive has only $Free GB left to use! ($Used GB out of $Total GB in use, minimum is $MinLevel GB)"
 		exit 1
 	}
-	write-host -foregroundColor green "OK - drive $Drive has $Free GB left ($Used GB used out of $Total GB, $MinLevel GB is minimum)"
+	write-host -foregroundColor green "OK - drive $Drive has $Free GB left ($Used GB of $Total GB used, $MinLevel GB is minimum)"
 	exit 0
 } catch {
 	write-error "ERROR: line $($_.InvocationInfo.ScriptLineNumber): $($Error[0])"

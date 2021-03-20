@@ -15,7 +15,11 @@ try {
 		exit 0
 	}
 
-	write-host -foregroundColor green "OK - CPU has $Temp °C"
+	if ($Temp -gt "80") {
+		write-warning "CPU has $Temp °C!"
+	} else {
+		write-host -foregroundColor green "OK - CPU has $Temp °C"
+	}
 	exit 0
 } catch {
 	write-error "ERROR: line $($_.InvocationInfo.ScriptLineNumber): $($Error[0])"
