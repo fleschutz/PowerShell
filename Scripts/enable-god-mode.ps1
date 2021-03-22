@@ -12,7 +12,7 @@ try {
 		Name = "GodMode.{ED7BA470-8E54-465E-825C-99712043E01C}"
 		ItemType = 'Directory'
 	}
-	new-item @GodModeSplat
+	$null = new-item @GodModeSplat
 
 	write-host -foregroundColor green "OK - see the new desktop icon"
 	exit 0
