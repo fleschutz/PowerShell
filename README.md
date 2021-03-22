@@ -64,6 +64,7 @@ Collection of PowerShell Scripts
 * [close-thunderbird.ps1](Scripts/close-thunderbird.ps1) - closes Mozilla Thunderbird gracefully
 * [close-vlc.ps1](Scripts/close-vlc.ps1) - closes the VLC media player gracefully
 * [close-windows-terminal.ps1](Scripts/close-windows-terminal.ps1) - closes Windows Terminal gracefully
+* [enable-god-mode.ps1](Scripts/enable-god-mode.ps1) - enables the god mode (adds a new icon to the desktop)
 * [list-clipboard.ps1](Scripts/list-clipboard.ps1) - lists the contents of the clipboard
 * [new-email.ps1](Scripts/new-email.ps1) - starts the default email client to write a new email
 * [open-browser.ps1](Scripts/open-browser.ps1) - starts the default Web browser
