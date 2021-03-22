@@ -1,9 +1,9 @@
 #!/bin/powershell
 <#
-.SYNTAX         ./send-tcp.ps1 [<target-IP>] [<target-port>] [<message>]
-.DESCRIPTION	sends a TCP message to the given IP address and port
-.LINK		https://github.com/fleschutz/PowerShell
-.NOTES		Author:	Markus Fleschutz / License: CC0
+.SYNTAX       ./send-tcp.ps1 [<target-IP>] [<target-port>] [<message>]
+.DESCRIPTION  sends a TCP message to the given IP address and port
+.LINK         https://github.com/fleschutz/PowerShell
+.NOTES        Author: Markus Fleschutz / License: CC0
 #>
 
 param($TargetIP = "", [int]$TargetPort = 0, $Message = "")

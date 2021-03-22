@@ -1,9 +1,9 @@
 #!/bin/powershell
 <#
-.SYNTAX         write-braille.ps1 [<text>]
-.DESCRIPTION	writes the given text in Braille
-.LINK		https://github.com/fleschutz/PowerShell
-.NOTES		Author:	Markus Fleschutz / License: CC0
+.SYNTAX       write-braille.ps1 [<text>]
+.DESCRIPTION  writes the given text in Braille
+.LINK         https://github.com/fleschutz/PowerShell
+.NOTES        Author: Markus Fleschutz / License: CC0
 #>
 
 param($Text = "")

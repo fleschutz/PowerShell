@@ -1,9 +1,9 @@
 #!/bin/powershell
 <#
-.SYNTAX         ./list-timezones.ps1 
-.DESCRIPTION	lists all time zones available
-.LINK		https://github.com/fleschutz/PowerShell
-.NOTES		Author:	Markus Fleschutz / License: CC0
+.SYNTAX       ./list-timezones.ps1 
+.DESCRIPTION  lists all time zones available
+.LINK         https://github.com/fleschutz/PowerShell
+.NOTES        Author: Markus Fleschutz / License: CC0
 #>
 
 try {

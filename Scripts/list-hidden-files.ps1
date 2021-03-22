@@ -1,9 +1,9 @@
 #!/bin/powershell
 <#
-.SYNTAX         ./list-hidden-files.ps1 [<dir-tree>]
-.DESCRIPTION	lists hidden files within the given directory tree
-.LINK		https://github.com/fleschutz/PowerShell
-.NOTES		Author:	Markus Fleschutz / License: CC0
+.SYNTAX       ./list-hidden-files.ps1 [<dir-tree>]
+.DESCRIPTION  lists hidden files within the given directory tree
+.LINK         https://github.com/fleschutz/PowerShell
+.NOTES        Author: Markus Fleschutz / License: CC0
 #>
 
 param($DirTree = "")

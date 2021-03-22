@@ -1,13 +1,13 @@
 #!/bin/powershell
 <#
-.SYNTAX         ./open-email-client.ps1
-.DESCRIPTION	starts the default email client 
-.LINK		https://github.com/fleschutz/PowerShell
-.NOTES		Author:	Markus Fleschutz / License: CC0
+.SYNTAX       ./open-email-client.ps1
+.DESCRIPTION  starts the default email client 
+.LINK         https://github.com/fleschutz/PowerShell
+.NOTES        Author: Markus Fleschutz / License: CC0
 #>
 
 try {
-	Start-Process "mailto:markus@fleschutz.de"
+	start-process "mailto:markus@fleschutz.de"
 	exit 0
 } catch {
 	write-error "ERROR: line $($_.InvocationInfo.ScriptLineNumber): $($Error[0])"

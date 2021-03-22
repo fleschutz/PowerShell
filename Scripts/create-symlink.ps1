@@ -1,9 +1,9 @@
 #!/bin/powershell
 <#
-.SYNTAX         ./create-symlink.ps1 [<symlink>] [<target>]
-.DESCRIPTION	creates a symbolic link
-.LINK		https://github.com/fleschutz/PowerShell
-.NOTES		Author:	Markus Fleschutz / License: CC0
+.SYNTAX       ./create-symlink.ps1 [<symlink>] [<target>]
+.DESCRIPTION  creates a symbolic link
+.LINK         https://github.com/fleschutz/PowerShell
+.NOTES        Author: Markus Fleschutz / License: CC0
 #>
 
 param($Symlink = "", $Target = "")

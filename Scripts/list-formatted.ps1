@@ -1,9 +1,9 @@
 #!/bin/powershell
 <#
-.SYNTAX         ./list-formatted.ps1 [<directory>]
-.DESCRIPTION	lists the current working directory formatted in columns
-.LINK		https://github.com/fleschutz/PowerShell
-.NOTES		Author:	Markus Fleschutz / License: CC0
+.SYNTAX       ./list-formatted.ps1 [<directory>]
+.DESCRIPTION  lists the current working directory formatted in columns
+.LINK         https://github.com/fleschutz/PowerShell
+.NOTES        Author: Markus Fleschutz / License: CC0
 #>
 
 param($Dir = "")

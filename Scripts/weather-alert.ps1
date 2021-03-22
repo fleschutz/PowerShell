@@ -1,9 +1,9 @@
 #!/bin/powershell
 <#
-.SYNTAX         ./weather-alert.ps1
-.DESCRIPTION	checks the current weather for critical values
-.LINK		https://github.com/fleschutz/PowerShell
-.NOTES		Author:	Markus Fleschutz / License: CC0
+.SYNTAX       ./weather-alert.ps1
+.DESCRIPTION  checks the current weather for critical values
+.LINK         https://github.com/fleschutz/PowerShell
+.NOTES        Author: Markus Fleschutz / License: CC0
 #>
 
 $GeoLocation="" # empty means determine automatically

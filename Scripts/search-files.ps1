@@ -1,9 +1,9 @@
 #!/bin/powershell
 <#
-.SYNTAX         ./search-files.ps1 [<pattern>] [<path>]
-.DESCRIPTION	searches the given pattern in the given files
-.LINK		https://github.com/fleschutz/PowerShell
-.NOTES		Author:	Markus Fleschutz / License: CC0
+.SYNTAX       ./search-files.ps1 [<pattern>] [<path>]
+.DESCRIPTION  searches the given pattern in the given files
+.LINK         https://github.com/fleschutz/PowerShell
+.NOTES        Author: Markus Fleschutz / License: CC0
 #>
 
 param($Pattern = "", $Path = "")

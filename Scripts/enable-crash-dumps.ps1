@@ -1,9 +1,9 @@
 #!/bin/powershell
 <#
-.SYNTAX         ./enable-crash-dumps.ps1 
-.DESCRIPTION	enables the writing of crash dumps
-.LINK		https://github.com/fleschutz/PowerShell
-.NOTES		Author:	Markus Fleschutz / License: CC0
+.SYNTAX       ./enable-crash-dumps.ps1 
+.DESCRIPTION  enables the writing of crash dumps
+.LINK         https://github.com/fleschutz/PowerShell
+.NOTES        Author: Markus Fleschutz / License: CC0
 #>
 
 ##################################################################

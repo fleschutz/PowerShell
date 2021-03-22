@@ -1,9 +1,9 @@
 #!/bin/powershell
 <#
-.SYNTAX         ./speak-joke.ps1
-.DESCRIPTION	speaks the next joke by text-to-speech (TTS)
-.LINK		https://github.com/fleschutz/PowerShell
-.NOTES		Author:	Markus Fleschutz / License: CC0
+.SYNTAX       ./speak-joke.ps1
+.DESCRIPTION  speaks the next joke by text-to-speech (TTS)
+.LINK         https://github.com/fleschutz/PowerShell
+.NOTES        Author: Markus Fleschutz / License: CC0
 #>
 
 try {

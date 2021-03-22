@@ -1,9 +1,9 @@
 #!/bin/powershell
 <#
-.SYNTAX         ./speak-file.ps1 [<file>]
-.DESCRIPTION	speaks the content of the given text file by text-to-speech (TTS)
-.LINK		https://github.com/fleschutz/PowerShell
-.NOTES		Author:	Markus Fleschutz / License: CC0
+.SYNTAX       ./speak-file.ps1 [<file>]
+.DESCRIPTION  speaks the content of the given text file by text-to-speech (TTS)
+.LINK         https://github.com/fleschutz/PowerShell
+.NOTES        Author: Markus Fleschutz / License: CC0
 #>
 
 param($File = "")

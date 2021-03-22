@@ -1,9 +1,9 @@
 #!/bin/powershell
 <#
-.SYNTAX         ./list-news.ps1 [<RSS-URL>]
-.DESCRIPTION	lists the latest news
-.LINK		https://github.com/fleschutz/PowerShell
-.NOTES		Author:	Markus Fleschutz / License: CC0
+.SYNTAX       ./list-news.ps1 [<RSS-URL>]
+.DESCRIPTION  lists the latest news
+.LINK         https://github.com/fleschutz/PowerShell
+.NOTES        Author: Markus Fleschutz / License: CC0
 #>
 
 param($RSS_URL = "https://yahoo.com/news/rss/world")

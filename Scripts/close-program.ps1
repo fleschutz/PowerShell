@@ -1,9 +1,9 @@
 #!/bin/powershell
 <#
-.SYNTAX         ./close-program.ps1 [<full-program-name>][<program-name>] [<program-alias-name>]
-.DESCRIPTION	closes the processes of the given program gracefully
-.LINK		https://github.com/fleschutz/PowerShell
-.NOTES		Author:	Markus Fleschutz / License: CC0
+.SYNTAX       ./close-program.ps1 [<full-program-name>][<program-name>] [<program-alias-name>]
+.DESCRIPTION  closes the processes of the given program gracefully
+.LINK         https://github.com/fleschutz/PowerShell
+.NOTES        Author: Markus Fleschutz / License: CC0
 #>
 
 param($FullProgramName = "", $ProgramName = "", $ProgramAliasName = "")

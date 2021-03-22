@@ -1,9 +1,9 @@
 #!/bin/powershell
 <#
-.SYNTAX         ./fetch-repos.ps1 [<parent-dir>]
-.DESCRIPTION	fetches updates for all Git repositories under the current/given directory (including submodules)
-.LINK		https://github.com/fleschutz/PowerShell
-.NOTES		Author:	Markus Fleschutz / License: CC0
+.SYNTAX       ./fetch-repos.ps1 [<parent-dir>]
+.DESCRIPTION  fetches updates for all Git repositories under the current/given directory (including submodules)
+.LINK         https://github.com/fleschutz/PowerShell
+.NOTES        Author: Markus Fleschutz / License: CC0
 #>
 
 param($ParentDir = "$PWD")

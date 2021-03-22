@@ -1,9 +1,9 @@
 #!/bin/powershell
 <#
-.SYNTAX         ./speak-english.ps1 [<text>]
-.DESCRIPTION	speaks the given text with an English text-to-speech (TTS) voice
-.LINK		https://github.com/fleschutz/PowerShell
-.NOTES		Author:	Markus Fleschutz / License: CC0
+.SYNTAX       ./speak-english.ps1 [<text>]
+.DESCRIPTION  speaks the given text with an English text-to-speech (TTS) voice
+.LINK         https://github.com/fleschutz/PowerShell
+.NOTES        Author: Markus Fleschutz / License: CC0
 #>
 
 param($Text = "")

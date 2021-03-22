@@ -1,9 +1,9 @@
 #!/bin/powershell
 <#
-.SYNTAX         ./txt2wav.ps1
-.DESCRIPTION	converts the given text into an audio .WAV file
-.LINK		https://github.com/fleschutz/PowerShell
-.NOTES		Author:	Markus Fleschutz / License: CC0
+.SYNTAX       ./txt2wav.ps1
+.DESCRIPTION  converts the given text into an audio .WAV file
+.LINK         https://github.com/fleschutz/PowerShell
+.NOTES        Author: Markus Fleschutz / License: CC0
 #>
 
 $Text = "Hello, my name ist Bond, James Bond"

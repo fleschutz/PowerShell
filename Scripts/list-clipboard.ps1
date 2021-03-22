@@ -1,9 +1,9 @@
 #!/bin/powershell
 <#
-.SYNTAX         ./list-clipboard.ps1
-.DESCRIPTION	lists the contents of the clipboard
-.LINK		https://github.com/fleschutz/PowerShell
-.NOTES		Author:	Markus Fleschutz / License: CC0
+.SYNTAX       ./list-clipboard.ps1
+.DESCRIPTION  lists the contents of the clipboard
+.LINK         https://github.com/fleschutz/PowerShell
+.NOTES        Author: Markus Fleschutz / License: CC0
 #>
 
 try {

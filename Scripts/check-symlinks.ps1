@@ -1,9 +1,9 @@
 #!/bin/powershell
 <#
-.SYNTAX         ./check-symlinks.ps1 [<dir-tree>]
-.DESCRIPTION	checks every symlink in the given directory tree
-.LINK		https://github.com/fleschutz/PowerShell
-.NOTES		Author:	Markus Fleschutz / License: CC0
+.SYNTAX       ./check-symlinks.ps1 [<dir-tree>]
+.DESCRIPTION  checks every symlink in the given directory tree
+.LINK         https://github.com/fleschutz/PowerShell
+.NOTES        Author: Markus Fleschutz / License: CC0
 #>
 
 param($DirTree = "")

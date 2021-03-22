@@ -1,9 +1,9 @@
 #!/bin/powershell
 <#
-.SYNTAX         ./check-drive-space.ps1 [<drive>] [<min-level>]
-.DESCRIPTION	checks the given drive for free space left
-.LINK		https://github.com/fleschutz/PowerShell
-.NOTES		Author:	Markus Fleschutz / License: CC0
+.SYNTAX       ./check-drive-space.ps1 [<drive>] [<min-level>]
+.DESCRIPTION  checks the given drive for free space left
+.LINK         https://github.com/fleschutz/PowerShell
+.NOTES        Author: Markus Fleschutz / License: CC0
 #>
 
 param($Drive = "", [int]$MinLevel = 50) # minimum level in GB

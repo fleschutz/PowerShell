@@ -1,9 +1,9 @@
 #!/bin/powershell
 <#
-.SYNTAX         ./write-vertical.ps1 [<text>]
-.DESCRIPTION	writes the given text in vertical direction
-.LINK		https://github.com/fleschutz/PowerShell
-.NOTES		Author:	Markus Fleschutz / License: CC0
+.SYNTAX       ./write-vertical.ps1 [<text>]
+.DESCRIPTION  writes the given text in vertical direction
+.LINK         https://github.com/fleschutz/PowerShell
+.NOTES        Author: Markus Fleschutz / License: CC0
 #>
 
 param($Text = "")

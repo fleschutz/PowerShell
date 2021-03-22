@@ -1,9 +1,9 @@
 #!/bin/powershell
 <#
-.SYNTAX         ./list-empty-dirs.ps1 [<dir-tree>]
-.DESCRIPTION	lists empty subfolders within the given directory tree
-.LINK		https://github.com/fleschutz/PowerShell
-.NOTES		Author:	Markus Fleschutz / License: CC0
+.SYNTAX       ./list-empty-dirs.ps1 [<dir-tree>]
+.DESCRIPTION  lists empty subfolders within the given directory tree
+.LINK         https://github.com/fleschutz/PowerShell
+.NOTES        Author: Markus Fleschutz / License: CC0
 #>
 
 param($DirTree = "")

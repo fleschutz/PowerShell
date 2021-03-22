@@ -1,9 +1,9 @@
 #!/bin/powershell
 <#
-.SYNTAX         ./simulate-presence.ps1 [<IP-address>]
-.DESCRIPTION	simulates the human presence against burglars
-.LINK		https://github.com/fleschutz/PowerShell
-.NOTES		Author:	Markus Fleschutz / License: CC0
+.SYNTAX       ./simulate-presence.ps1 [<IP-address>]
+.DESCRIPTION  simulates the human presence against burglars
+.LINK         https://github.com/fleschutz/PowerShell
+.NOTES        Author: Markus Fleschutz / License: CC0
 #>
 
 param($IPaddress = "")

@@ -1,9 +1,9 @@
 #!/bin/powershell
 <#
-.SYNTAX         ./list-logbook.ps1 
-.DESCRIPTION	lists the content of the logbook (in ../Data/logbook.csv)
-.LINK		https://github.com/fleschutz/PowerShell
-.NOTES		Author:	Markus Fleschutz / License: CC0
+.SYNTAX       ./list-logbook.ps1 
+.DESCRIPTION  lists the content of the logbook (in ../Data/logbook.csv)
+.LINK         https://github.com/fleschutz/PowerShell
+.NOTES        Author: Markus Fleschutz / License: CC0
 #>
 
 $PathToRepo = "$PSScriptRoot/.."

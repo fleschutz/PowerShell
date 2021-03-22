@@ -1,9 +1,9 @@
 #!/bin/powershell
 <#
-.SYNTAX         ./list-tags.ps1 [<repo-dir>] [<pattern>]
-.DESCRIPTION	lists all tags in the current/given Git repository 
-.LINK		https://github.com/fleschutz/PowerShell
-.NOTES		Author:	Markus Fleschutz / License: CC0
+.SYNTAX       ./list-tags.ps1 [<repo-dir>] [<pattern>]
+.DESCRIPTION  lists all tags in the current/given Git repository 
+.LINK         https://github.com/fleschutz/PowerShell
+.NOTES        Author: Markus Fleschutz / License: CC0
 #>
 
 param($RepoDir = "$PWD", $Pattern="*")

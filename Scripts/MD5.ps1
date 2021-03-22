@@ -1,9 +1,9 @@
 #!/bin/powershell
 <#
-.SYNTAX         ./MD5.ps1 [<file>]
-.DESCRIPTION	prints the MD5 checksum of the given file
-.LINK		https://github.com/fleschutz/PowerShell
-.NOTES		Author:	Markus Fleschutz / License: CC0
+.SYNTAX       ./MD5.ps1 [<file>]
+.DESCRIPTION  prints the MD5 checksum of the given file
+.LINK         https://github.com/fleschutz/PowerShell
+.NOTES        Author: Markus Fleschutz / License: CC0
 #>
 
 param($File = "")

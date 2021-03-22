@@ -1,9 +1,9 @@
 #!/bin/powershell
 <#
-.SYNTAX         ./simulate-matrix.ps1 
-.DESCRIPTION	simulates the Matrix (fun)
-.LINK		https://github.com/fleschutz/PowerShell
-.NOTES		Author:	Markus Fleschutz / License: CC0
+.SYNTAX       ./simulate-matrix.ps1 
+.DESCRIPTION  simulates the Matrix (fun)
+.LINK         https://github.com/fleschutz/PowerShell
+.NOTES        Author: Markus Fleschutz / License: CC0
 #>
 
 $PathToRepo = "$PSScriptRoot/.."

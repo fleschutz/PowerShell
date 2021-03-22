@@ -1,9 +1,9 @@
 #!/bin/powershell
 <#
-.SYNTAX         ./add-firewall-rules.ps1 [<path-to-executables>]
-.DESCRIPTION	adds firewall rules for the given executables, administrator rights are required
-.LINK		https://github.com/fleschutz/PowerShell
-.NOTES		Author:	Markus Fleschutz / License: CC0
+.SYNTAX       ./add-firewall-rules.ps1 [<path-to-executables>]
+.DESCRIPTION  adds firewall rules for the given executables, administrator rights are required
+.LINK         https://github.com/fleschutz/PowerShell
+.NOTES        Author: Markus Fleschutz / License: CC0
 #>
 
 #Requires -RunAsAdministrator

@@ -1,9 +1,9 @@
 #!/bin/powershell
 <#
-.SYNTAX         ./check-health.ps1 
-.DESCRIPTION	checks the system health
-.LINK		https://github.com/fleschutz/PowerShell
-.NOTES		Author:	Markus Fleschutz / License: CC0
+.SYNTAX       ./check-health.ps1 
+.DESCRIPTION  checks the system health
+.LINK         https://github.com/fleschutz/PowerShell
+.NOTES        Author: Markus Fleschutz / License: CC0
 #>
 
 $Hostname = $(hostname)

@@ -1,9 +1,9 @@
 #!/bin/powershell
 <#
-.SYNTAX         ./voice-control.ps1 
-.DESCRIPTION	executes the PowerShell scripts by voice
-.LINK		https://github.com/fleschutz/PowerShell
-.NOTES		Author:	Markus Fleschutz / License: CC0
+.SYNTAX       ./voice-control.ps1 
+.DESCRIPTION  executes the PowerShell scripts by voice
+.LINK         https://github.com/fleschutz/PowerShell
+.NOTES        Author: Markus Fleschutz / License: CC0
 #>
 
 [double]$MinConfidence = 0.04

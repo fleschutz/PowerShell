@@ -1,9 +1,9 @@
 #!/bin/powershell
 <#
-.SYNTAX         ./write-logbook.ps1 [<text>]
-.DESCRIPTION	writes the given text to the logbook (in ../Data/logbook.csv)
-.LINK		https://github.com/fleschutz/PowerShell
-.NOTES		Author:	Markus Fleschutz / License: CC0
+.SYNTAX       ./write-logbook.ps1 [<text>]
+.DESCRIPTION  writes the given text to the logbook (in ../Data/logbook.csv)
+.LINK         https://github.com/fleschutz/PowerShell
+.NOTES        Author: Markus Fleschutz / License: CC0
 #>
 
 param($Text = "")

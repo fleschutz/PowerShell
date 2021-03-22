@@ -1,9 +1,9 @@
 #!/bin/powershell
 <#
-.SYNTAX         ./write-big.ps1 [<text>]
-.DESCRIPTION	writes the given text in big letters
-.LINK		https://github.com/fleschutz/PowerShell
-.NOTES		Author:	Markus Fleschutz / License: CC0
+.SYNTAX       ./write-big.ps1 [<text>]
+.DESCRIPTION  writes the given text in big letters
+.LINK         https://github.com/fleschutz/PowerShell
+.NOTES        Author: Markus Fleschutz / License: CC0
 #>
 
 param($Text = "")

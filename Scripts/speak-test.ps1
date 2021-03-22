@@ -1,9 +1,9 @@
 #!/bin/powershell
 <#
-.SYNTAX         ./speak-test.ps1
-.DESCRIPTION	performs a test speak by text-to-speech (TTS)
-.LINK		https://github.com/fleschutz/PowerShell
-.NOTES		Author:	Markus Fleschutz / License: CC0
+.SYNTAX       ./speak-test.ps1
+.DESCRIPTION  performs a test speak by text-to-speech (TTS)
+.LINK         https://github.com/fleschutz/PowerShell
+.NOTES        Author: Markus Fleschutz / License: CC0
 #>
 
 function Speak { param([string]$Text)

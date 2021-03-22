@@ -1,9 +1,9 @@
 #!/bin/powershell
 <#
-.SYNTAX         ./speak-time.ps1
-.DESCRIPTION	speaks the current time by text-to-speech (TTS)
-.LINK		https://github.com/fleschutz/PowerShell
-.NOTES		Author:	Markus Fleschutz / License: CC0
+.SYNTAX       ./speak-time.ps1
+.DESCRIPTION  speaks the current time by text-to-speech (TTS)
+.LINK         https://github.com/fleschutz/PowerShell
+.NOTES        Author: Markus Fleschutz / License: CC0
 #>
 
 try {

@@ -1,9 +1,9 @@
 #!/bin/powershell
 <#
-.SYNTAX         ./write-rot13.ps1 [<text>]
-.DESCRIPTION	encodes or decodes the given text with ROT13
-.LINK		https://github.com/fleschutz/PowerShell
-.NOTES		Author:	Markus Fleschutz / License: CC0
+.SYNTAX       ./write-rot13.ps1 [<text>]
+.DESCRIPTION  encodes or decodes the given text with ROT13
+.LINK         https://github.com/fleschutz/PowerShell
+.NOTES        Author: Markus Fleschutz / License: CC0
 #>
 
 param($Text = "")

@@ -1,9 +1,9 @@
 #!/bin/powershell
 <#
-.SYNTAX         ./take-screenshot.ps1 [<directory>]
-.DESCRIPTION	takes a single screenshot and saves it into the current/given directory
-.LINK		https://github.com/fleschutz/PowerShell
-.NOTES		Author:	Markus Fleschutz / License: CC0
+.SYNTAX       ./take-screenshot.ps1 [<directory>]
+.DESCRIPTION  takes a single screenshot and saves it into the current/given directory
+.LINK         https://github.com/fleschutz/PowerShell
+.NOTES        Author: Markus Fleschutz / License: CC0
 #>
 
 param($Directory = "")

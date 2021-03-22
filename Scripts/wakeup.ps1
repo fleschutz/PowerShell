@@ -1,9 +1,9 @@
 #!/bin/powershell
 <#
-.SYNTAX         ./wakeup.ps1 [<MAC-address>] [<IP-address>]
-.DESCRIPTION	sends a magic packet to the given computer to wake him up
-.LINK		https://github.com/fleschutz/PowerShell
-.NOTES		Author:	Markus Fleschutz / License: CC0
+.SYNTAX       ./wakeup.ps1 [<MAC-address>] [<IP-address>]
+.DESCRIPTION  sends a magic packet to the given computer to wake him up
+.LINK         https://github.com/fleschutz/PowerShell
+.NOTES        Author: Markus Fleschutz / License: CC0
 #>
 
 param($MACaddress = "", $IPaddress = "")

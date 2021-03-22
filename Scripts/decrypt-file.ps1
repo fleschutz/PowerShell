@@ -1,9 +1,9 @@
 #!/bin/powershell
 <#
-.SYNTAX         ./decrypt-file.ps1 [<path>] [<password>]
-.DESCRIPTION	decrypts the given file
-.LINK		https://github.com/fleschutz/PowerShell
-.NOTES		Author:	Markus Fleschutz / License: CC0
+.SYNTAX       ./decrypt-file.ps1 [<path>] [<password>]
+.DESCRIPTION  decrypts the given file
+.LINK         https://github.com/fleschutz/PowerShell
+.NOTES        Author: Markus Fleschutz / License: CC0
 #>
 
 param([string]$Path = "", [string]$Password = "")

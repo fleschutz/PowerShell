@@ -1,9 +1,9 @@
 #!/bin/powershell
 <#
-.SYNTAX         ./list-anagrams.ps1 [<word>] [<columns>]
-.DESCRIPTION	lists all anagrams of the given word
-.LINK		https://github.com/fleschutz/PowerShell
-.NOTES		Author:	Markus Fleschutz / License: CC0
+.SYNTAX       ./list-anagrams.ps1 [<word>] [<columns>]
+.DESCRIPTION  lists all anagrams of the given word
+.LINK         https://github.com/fleschutz/PowerShell
+.NOTES        Author: Markus Fleschutz / License: CC0
 #>
 
 param($Word = "", [int]$Columns = 8)

@@ -1,9 +1,9 @@
 #!/bin/powershell
 <#
-.SYNTAX         ./check-ipv6-address.ps1 [<address>]
-.DESCRIPTION	checks the given IPv6 address for validity
-.LINK		https://github.com/fleschutz/PowerShell
-.NOTES		Author:	Markus Fleschutz / License: CC0
+.SYNTAX       ./check-ipv6-address.ps1 [<address>]
+.DESCRIPTION  checks the given IPv6 address for validity
+.LINK         https://github.com/fleschutz/PowerShell
+.NOTES        Author: Markus Fleschutz / License: CC0
 #>
 
 param($Address = "")

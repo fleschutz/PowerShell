@@ -1,9 +1,9 @@
 #!/bin/powershell
 <#
-.SYNTAX         ./write-green.ps1 [<text>]
-.DESCRIPTION	writes the given text in a green foreground color
-.LINK		https://github.com/fleschutz/PowerShell
-.NOTES		Author:	Markus Fleschutz / License: CC0
+.SYNTAX       ./write-green.ps1 [<text>]
+.DESCRIPTION  writes the given text in a green foreground color
+.LINK         https://github.com/fleschutz/PowerShell
+.NOTES        Author: Markus Fleschutz / License: CC0
 #>
 
 param($Text = "")

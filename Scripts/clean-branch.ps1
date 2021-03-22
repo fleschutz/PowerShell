@@ -1,9 +1,9 @@
 #!/bin/powershell
 <#
-.SYNTAX         ./clean-branch.ps1 [<repo-dir>]
-.DESCRIPTION	cleans the current/given Git repository from generated files (including submodules, e.g. for a fresh build)
-.LINK		https://github.com/fleschutz/PowerShell
-.NOTES		Author:	Markus Fleschutz / License: CC0
+.SYNTAX       ./clean-branch.ps1 [<repo-dir>]
+.DESCRIPTION  cleans the current/given Git repository from generated files (including submodules, e.g. for a fresh build)
+.LINK         https://github.com/fleschutz/PowerShell
+.NOTES        Author: Markus Fleschutz / License: CC0
 #>
 
 param($RepoDir = "$PWD")

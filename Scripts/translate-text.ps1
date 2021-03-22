@@ -1,9 +1,9 @@
 #!/bin/powershell
 <#
-.SYNTAX         ./translate-text.ps1 [<text>] [<source-lang>]
-.DESCRIPTION	translates the given text into other languages
-.LINK		https://github.com/fleschutz/PowerShell
-.NOTES		Author:	Markus Fleschutz / License: CC0
+.SYNTAX       ./translate-text.ps1 [<text>] [<source-lang>]
+.DESCRIPTION  translates the given text into other languages
+.LINK         https://github.com/fleschutz/PowerShell
+.NOTES        Author: Markus Fleschutz / License: CC0
 #>
 
 param($SourceText = "", $SourceLang = "en")

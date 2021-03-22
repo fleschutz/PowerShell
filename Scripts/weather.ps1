@@ -1,9 +1,9 @@
 #!/bin/powershell
 <#
-.SYNTAX         ./weather.ps1 [<geo-location>]
-.DESCRIPTION	prints the current weather forecast
-.LINK		https://github.com/fleschutz/PowerShell
-.NOTES		Author:	Markus Fleschutz / License: CC0
+.SYNTAX       ./weather.ps1 [<geo-location>]
+.DESCRIPTION  prints the current weather forecast
+.LINK         https://github.com/fleschutz/PowerShell
+.NOTES        Author: Markus Fleschutz / License: CC0
 #>
 
 param($GeoLocation = "") # empty means determine automatically

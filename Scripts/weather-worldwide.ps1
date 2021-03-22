@@ -1,9 +1,9 @@
 #!/bin/powershell
 <#
-.SYNTAX         ./weather-worldwide.ps1
-.DESCRIPTION	prints the current weather of cities world-wide
-.LINK		https://github.com/fleschutz/PowerShell
-.NOTES		Author:	Markus Fleschutz / License: CC0
+.SYNTAX       ./weather-worldwide.ps1
+.DESCRIPTION  prints the current weather of cities world-wide
+.LINK         https://github.com/fleschutz/PowerShell
+.NOTES        Author: Markus Fleschutz / License: CC0
 #>
 
 $Cities="Hawaii","Los Angeles","Mexico City","Miami","New York","Rio de Janeiro","Paris","London","Berlin","Cape Town","Dubai","Mumbai","Singapore","Hong Kong","Peking","Tokyo","Sydney"
