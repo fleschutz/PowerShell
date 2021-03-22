@@ -1,20 +1,18 @@
 #!/bin/powershell
 <#
-.SYNTAX         ./enable-god-mode.ps1 
-.DESCRIPTION	enables the god mode (adds a new icon to the desktop)
-.LINK		https://github.com/fleschutz/PowerShell
-.NOTES		Author:	Markus Fleschutz / License: CC0
+.SYNTAX       ./enable-god-mode.ps1 
+.DESCRIPTION  enables the god mode (adds a new icon to the desktop)
+.LINK         https://github.com/fleschutz/PowerShell
+.NOTES        Author: Markus Fleschutz / License: CC0
 #>
 
-#Requires -RunAsAdministrator
-
 try {
-	$godmodeSplat = @{
-		Path = "$env:USERPROFILEDesktop"
+	$GodModeSplat = @{
+		Path = "$HOME\Desktop"
 		Name = "GodMode.{ED7BA470-8E54-465E-825C-99712043E01C}"
 		ItemType = 'Directory'
 	}
-	new-item @godmodeSplat
+	new-item @GodModeSplat
 
 	write-host -foregroundColor green "OK - see the new desktop icon"
 	exit 0
