@@ -23,7 +23,7 @@ try {
 	& git submodule foreach --recursive git clean -fdx 
 	if ($lastExitCode -ne "0") { throw "'git clean -fdx' in submodules failed" }
 
-	write-host -foregroundColor green "OK - cleaned Git repository $RepoDir from generated files"
+	write-host -foregroundColor green "OK - cleaned Git repository $RepoDir from untracked files"
 	exit 0
 } catch {
 	write-error "ERROR: line $($_.InvocationInfo.ScriptLineNumber): $($Error[0])"
