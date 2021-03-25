@@ -34,6 +34,7 @@ display-time.ps1, displays the current time for 10 seconds by default
 download.ps1, downloads the file/directory from the given URL
 enable-crash-dumps.ps1, enables the writing of crash dumps
 enable-god-mode.ps1, enables the god mode (adds a new icon to the desktop)
+enable-ssh-server.ps1, enables the SSH server
 encrypt-file.ps1, encrypts the given file
 fetch-repo.ps1, fetches updates for the current/given Git repository (including submodules)
 fetch-repos.ps1, fetches updates for all Git repositories under the current/given directory (including submodules)
