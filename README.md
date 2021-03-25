@@ -3,8 +3,8 @@ Collection of PowerShell Scripts
 
 **This repository contains 150+ useful and cross-platform PowerShell scripts in the [Scripts/](Scripts/) subfolder - to be used by command-line interface (CLI), for remote control (e.g. via SSH), by context menu, by voice control, by automation software like Jenkins, automatically as daily tasks, or simply to learn PowerShell. See the [FAQ page](Misc/FAQ.md) if you need help or have any questions.**
 
-🔊 Scripts for Audio & Voice 
----------------------------
+🔊 PowerShell Scripts for Audio & Voice 
+----------------------------------------
 * [mute-audio.ps1](Scripts/mute-audio.ps1) - mutes audio
 * [play-beep.ps1](Scripts/play-beep.ps1) - plays a beep sound
 * [play-mission-impossible.ps1](Scripts/play-mission-impossible.ps1) - plays the Mission Impossible theme
@@ -27,8 +27,8 @@ Collection of PowerShell Scripts
 * [unmute-audio.ps1](Scripts/unmute-audio.ps1) - unmutes audio
 * [voice-control.ps1](Scripts/voice-control.ps1) - executes the PowerShell scripts by voice
 
-⚙️ Scripts for Computer Management
----------------------------------
+⚙️ PowerShell Scripts for Computer Management
+----------------------------------------------
 * [add-firewall-rules.ps1](Scripts/add-firewall-rules.ps1) - adds firewall rules for the given executables (requires admin rights)
 * [check-cpu-temp.ps1](Scripts/check-cpu-temp.ps1) - checks the CPU temperature
 * [check-dns-resolution.ps1](Scripts/check-dns-resolution.ps1) - checks the DNS resolution with frequently used domain names
@@ -52,8 +52,8 @@ Collection of PowerShell Scripts
 * [reboot.ps1](Scripts/reboot.ps1) - reboots the local computer (requires admin rights)
 * [wakeup.ps1](Scripts/wakeup.ps1) - sends a magic packet to the given computer, waking him up
 
-💻 Scripts for the Desktop
--------------------------
+💻 PowerShell Scripts for the Desktop
+--------------------------------------
 * [close-calculator.ps1](Scripts/close-calculator.ps1) - closes the calculator program gracefully
 * [close-chrome.ps1](Scripts/close-chrome.ps1) - closes Google Chrome gracefully
 * [close-cortana.ps1](Scripts/close-cortana.ps1) - closes Cortana gracefully
@@ -74,8 +74,8 @@ Collection of PowerShell Scripts
 * [take-screenshot.ps1](Scripts/take-screenshot.ps1) - takes a single screenshot
 * [take-screenshots.ps1](Scripts/take-screenshots.ps1) - takes multiple screenshots (every minute by default)
 
-📁 Scripts for Files & Folders 
------------------------------
+📁 PowerShell Scripts for Files & Folders 
+------------------------------------------
 * [check-symlinks.ps1](Scripts/check-symlinks.ps1) - checks every symlink in the given directory tree
 * [check-xml-file.ps1](Scripts/check-xml-file.ps1) - checks the given XML file for validity
 * [create-shortcut.ps1](Scripts/create-shortcut.ps1) - creates a shortcut
@@ -103,8 +103,8 @@ Collection of PowerShell Scripts
 * [show-dir-tree.ps1](Scripts/show-dir-tree.ps1) - visualizes the given/current directory tree
 * [zip-dir.ps1](Scripts/zip-dir.ps1) - creates a zip archive of the given directory
 
-📝 Scripts for Git
------------------
+📝 PowerShell Scripts for Git
+------------------------------
 * [cherry-picker.ps1](Scripts/cherry-picker.ps1) - cherry-picks a Git commit into multiple branches
 * [clean-branch.ps1](Scripts/clean-branch.ps1) - cleans the current Git branch (including submodules) from generated files
 * [clone-repos.ps1](Scripts/clone-repos.ps1) - clones well-known Git repositories
@@ -129,8 +129,8 @@ Collection of PowerShell Scripts
 * [list-scripts.ps1](Scripts/list-scripts.ps1) - lists all PowerShell scripts in this repository
 * [set-profile.ps1](Scripts/set-profile.ps1) - updates your PowerShell user profile
 
-🛒 Various Scripts 
------------------
+🛒 Various PowerShell Scripts 
+------------------------------
 * [check-ipv4-address.ps1](Scripts/check-ipv4-address.ps1) - checks the given IPv4 address for validity
 * [check-ipv6-address.ps1](Scripts/check-ipv6-address.ps1) - checks the given IPv6 address for validity
 * [check-mac-address.ps1](Scripts/check-mac-address.ps1) - checks the given MAC address for validity
