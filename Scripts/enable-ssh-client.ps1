@@ -6,6 +6,8 @@
 .NOTES        Author: Markus Fleschutz / License: CC0
 #>
 
+#Requires -RunAsAdministrator
+
 try {
 	Add-WindowsCapability -Online -Name OpenSSH.Client*
 
