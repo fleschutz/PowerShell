@@ -41,16 +41,16 @@ How to Configure PowerShell as Default Shell?
 ---------------------------------------------
 The default shell on Windows is PowerShell, on Linux it's mostly Bash.
 
-* **Linux:** make sure PowerShell is installed, then execute: `chsh -s /bin/powershell <username>`
-* **Windows:** no need to, PowerShell is the default shell
+* **On Linux:** make sure PowerShell is installed, then execute: `chsh -s /bin/powershell <username>`
+* **On Windows:** no need to, PowerShell is the default shell
 
 
 How to add the Scripts to the Search Path?
 ------------------------------------------
 Want to use the PowerShell scripts everywhere on the command-line? Then you need to add the Scripts/ subfolder to the search path:
 
-* **Linux & Bash:** edit .profile in your home directory and add the line: PATH="$PATH:/path/to/PowerShell/Scripts"
-* **Windows:** open the environment variables dialogue and add the full path to Scripts/ to the system environment variable "Path"
+* **On Linux using Bash:** edit .profile in your home directory and add the line: PATH="$PATH:/path/to/PowerShell/Scripts"
+* **On Windows:** open the environment variables dialogue and add the full path to Scripts/ to the system environment variable "Path"
 
 
 How to use PowerShell in Context Menus?
