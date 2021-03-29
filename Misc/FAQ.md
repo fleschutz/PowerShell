@@ -39,16 +39,18 @@ https://github.com/fleschutz/PowerShell/archive/master.zip
 
 How to Configure PowerShell as Default Shell?
 ---------------------------------------------
-* **Linux:** make sure PowerShell is installed, then execute: `chsh -s /bin/powershell <username>`
-* **Windows:** no need to, PowerShell is the default shell
+The default shell on Windows is PowerShell, on Linux it's mostly Bash.
+
+* **On Linux:** make sure PowerShell is installed, then execute: `chsh -s /bin/powershell <username>`
+* **On Windows:** no need to, PowerShell is the default shell
 
 
 How to add the Scripts to the Search Path?
 ------------------------------------------
 Want to use the PowerShell scripts everywhere on the command-line? Then you need to add the Scripts/ subfolder to the search path:
 
-* **Bash or sh:** edit .profile in your home directory and add the line: PATH="$PATH:/path/to/PowerShell/Scripts"
-* **Windows:** open the environment variables dialogue and add the full path to Scripts/ to the system environment variable "Path"
+* **On Linux using Bash:** edit .profile in your home directory and add the line: PATH="$PATH:/path/to/PowerShell/Scripts"
+* **On Windows:** open the environment variables dialogue and add the full path to Scripts/ to the system environment variable "Path"
 
 
 How to use PowerShell in Context Menus?
@@ -59,9 +61,9 @@ How to use PowerShell in Context Menus?
 
 How to edit PowerShell Scripts?
 -------------------------------
-* use your favorite text editor
-* use Visual Studio Code (available for free) - providing syntax highlighting, on-the-fly problem checking and an integrated PowerShell Console.
-
+* use PowerShell ISE (Integrated Scripting Environment) on Windows to write, test and debug scripts
+* use Visual Studio Code (available for free on Linux, Mac OS and Windows) - supporting syntax highlighting, on-the-fly problem checking and an integrated PowerShell Console.
+* or simply use your favorite text editor
 
 How to write good PowerShell Scripts?
 -------------------------------------
