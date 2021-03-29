@@ -11,12 +11,20 @@ try {
 		$Temp = get-content "/sys/class/thermal/thermal_zone0/temp"
 		$Temp = $Temp / 1000.0
 	} else {
-		write-warning "No CPU temperature available"
+		write-warning "Sorry, no CPU temperature available"
 		exit 0
 	}
 
 	if ($Temp -gt "80") {
-		write-warning "CPU has $Temp °C!"
+		write-error "CPU has $Temp °C - too high!"
+		exit 1
+	} elseif ($Temp -lt "-20") {
+		write-error "CPU has $Temp °C - too low!"
+		exit 1
+	} elseif ($Temp -gt "50") {
+		write-warning "CPU has $Temp °C - quite high"
+	} elseif ($Temp -lt "0") {
+		write-warning "CPU has $Temp °C - quite low"
 	} else {
 		write-host -foregroundColor green "OK - CPU has $Temp °C"
 	}
