@@ -9,8 +9,13 @@
 param($Filename = "")
 
 try {
-	& notepad.exe "$Filename"
-	if ($lastExitCode -ne "0") { throw "Can't execute 'notepad.exet' - make sure notepad.exe is installed and available" }
+	if ($IsLinux) {
+		& vi "$Filename"
+		if ($lastExitCode -ne "0") { throw "Can't execute 'vi' - make sure vi is installed and available" }
+	} else {
+		& notepad.exe "$Filename"
+		if ($lastExitCode -ne "0") { throw "Can't execute 'notepad.exe' - make sure notepad.exe is installed and available" }
+	}
 
 	exit 0
 } catch {
