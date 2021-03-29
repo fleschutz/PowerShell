@@ -8,21 +8,14 @@
 
 param($URL = "")
 
-if ($URL -eq "" ) {
-	$URL = read-host "Enter URL to download"
-}
-
 try {
 	& wget --version
-} catch {
-	write-error "Can't execute 'wget' - make sure wget is installed and available"
-	exit 1
-}
+	if ($lastExitCode -ne "0") { throw "Can't execute 'wget' - make sure wget is installed and available" }
 
-try {
-	wget --mirror --convert-links --adjust-extension --page-requisites --no-parent $URL --directory-prefix . --no-verbose
+	& wget --mirror --convert-links --adjust-extension --page-requisites --no-parent $URL --directory-prefix . --no-verbose
+	if ($lastExitCode -ne "0") { throw "Can't execute 'wget --mirror $URL'" }
 
-	write-host -foregroundColor green "Done."
+	write-host -foregroundColor green "OK - downloaded from $URL"
 	exit 0
 } catch {
 	write-error "ERROR: line $($_.InvocationInfo.ScriptLineNumber): $($Error[0])"
