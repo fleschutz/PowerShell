@@ -62,7 +62,7 @@ How to use PowerShell in Context Menus?
 How to edit PowerShell Scripts?
 -------------------------------
 * use your favorite text editor
-* use Visual Studio Code (available for free) - providing syntax highlighting, on-the-fly problem checking and an integrated PowerShell Console.
+* use Visual Studio Code (available for free for Linux, Mac OS and Windows) - supporting syntax highlighting, on-the-fly problem checking and an integrated PowerShell Console.
 
 
 How to write good PowerShell Scripts?
