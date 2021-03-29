@@ -1,0 +1,30 @@
+#!/bin/powershell
+<#
+.SYNTAX       ./introduce-powershell.ps1
+.DESCRIPTION  introduces PowerShell to new users
+.LINK         https://github.com/fleschutz/PowerShell
+.NOTES        Author: Markus Fleschutz / License: CC0
+#>
+
+try {
+	& write-big.ps1 "PowerShell"
+
+	& write-animated.ps1 "Welcome to PowerShell"
+	& write-animated.ps1 "Feel the power of the console and scripting"
+
+	""
+	"* Want to learn PowerShell? See the tutorials at: https://www.guru99.com/powershell-tutorial.html"
+	""
+	"* Need documentation? See the PowerShell docs at: https://docs.microsoft.com/en-us/powershell/"
+	""
+	"* Want sample scripts? See PowerShell Scripts at: https://github.com/fleschutz/PowerShell/"
+	""
+
+	& write-typewriter.ps1 "P.S. PowerShell is looking forward to execute your next command"
+	""
+
+	exit 0
+} catch {
+	write-error "ERROR: line $($_.InvocationInfo.ScriptLineNumber): $($Error[0])"
+	exit 1
+}

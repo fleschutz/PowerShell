@@ -84,6 +84,8 @@ Mega Collection of PowerShell Scripts
 * [create-shortcut.ps1](Scripts/create-shortcut.ps1) - creates a shortcut
 * [create-symlink.ps1](Scripts/create-symlink.ps1) - creates a symbolic link
 * [decrypt-file.ps1](Scripts/decrypt-file.ps1) - encrypts the given file
+* [download.ps1](Scripts/download.ps1) - downloads the file/directory from the given URL
+* [edit.ps1](Scripts/edit.ps1) - edits the given file with the built-in text editor
 * [encrypt-file.ps1](Scripts/encrypt-file.ps1) - encrypts the given file
 * [go-downloads.ps1](Scripts/go-downloads.ps1) - go to the user's downloads folder
 * [go-home.ps1](Scripts/go-home.ps1) - go to the user's home folder
@@ -124,6 +126,7 @@ Mega Collection of PowerShell Scripts
 🔎 Scripts for PowerShell 
 ------------------------
 * [daily-tasks.sh](Scripts/daily-tasks.sh) - execute PowerShell scripts automatically as daily tasks (Linux only)
+* [introduce-powershell.sh](Scripts/introduce-powershell.sh) - introduces PowerShell to new users
 * [list-aliases.ps1](Scripts/list-aliases.ps1) - lists all PowerShell aliases 
 * [list-automatic-variables.ps1](Scripts/list-automatic-variables.ps1) - lists the automatic variables of PowerShell 
 * [list-cmdlets.ps1](Scripts/list-cmdlets.ps1) - lists the PowerShell cmdlets
@@ -139,7 +142,6 @@ Mega Collection of PowerShell Scripts
 * [check-mac-address.ps1](Scripts/check-mac-address.ps1) - checks the given MAC address for validity
 * [csv-to-text.ps1](Scripts/csv-to-text.ps1) - converts the given CSV file into a text list
 * [display-time.ps1](Scripts/display-time.ps1) - displays the current time for 10 seconds by default
-* [download.ps1](Scripts/download.ps1) - downloads the file/directory from the given URL
 * [generate-qrcode.ps1](Scripts/generate-qrcode.ps1) - generates a QR code
 * [list-anagrams.ps1](Scripts/list-anagrams.ps1) - lists all anagrams of the given word
 * [list-environment-variables.ps1](Scripts/list-environment-variables.ps1) - lists all environment variables

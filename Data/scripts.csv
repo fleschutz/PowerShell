@@ -32,6 +32,7 @@ daily-tasks.sh, execute PowerShell scripts automatically as daily tasks (Linux o
 decrypt-file.ps1, decrypts the given file
 display-time.ps1, displays the current time for 10 seconds by default
 download.ps1, downloads the file/directory from the given URL
+edit.ps1, edits the given file with the built-in text editor
 enable-crash-dumps.ps1, enables the writing of crash dumps
 enable-god-mode.ps1, enables the god mode (adds a new icon to the desktop)
 enable-ssh-client.ps1, enables the SSH client
@@ -47,6 +48,7 @@ go-root.ps1, go to the root directory (C: on Windows)
 go-scripts.ps1, go to the PowerShell Scripts folder
 hibernate.ps1, enables hibernate mode for the local computer (requires admin rights)
 inspect-exe.ps1, prints basic information of the given executable file
+introduce-powershell.ps1, introduces PowerShell to new users
 list-aliases.ps1, lists all PowerShell aliases 
 list-anagrams.ps1, lists all anagrams of the given word
 list-automatic-variables.ps1, lists the automatic variables of PowerShell 
