@@ -8,8 +8,8 @@
 
 try {
 	if (test-path "/sys/class/thermal/thermal_zone0/temp") {
-		$Temp = get-content "/sys/class/thermal/thermal_zone0/temp"
-		$Temp = $Temp / 1000.0
+		[int]$IntTemp = get-content "/sys/class/thermal/thermal_zone0/temp"
+		$Temp = [math]::round($IntTemp / 1000.0, 1)
 	} else {
 		write-warning "Sorry, no CPU temperature available"
 		exit 0
@@ -26,7 +26,7 @@ try {
 	} elseif ($Temp -lt "0") {
 		write-warning "CPU has $Temp °C - quite low"
 	} else {
-		write-host -foregroundColor green "OK - CPU has $Temp °C"
+		write-host -foregroundColor green "OK - $Temp °C CPU temperature"
 	}
 	exit 0
 } catch {

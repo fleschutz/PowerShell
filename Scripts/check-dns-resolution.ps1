@@ -21,7 +21,8 @@ try {
 	$Count = $Table.Length
 	$StopTime = Get-Date
 	$TimeInterval = New-Timespan -start $StartTime -end $StopTime
-	write-host -foregroundColor green "OK - resolved $Count domain names in $($TimeInterval.seconds) seconds"
+	$Average = [math]::round($Count / $TimeInterval.seconds, 1)
+	write-host -foregroundColor green "OK - $Average domains/s ($Count domains resolved in $($TimeInterval.seconds) seconds)"
 	exit 0
 } catch {
 	write-error "ERROR: line $($_.InvocationInfo.ScriptLineNumber): $($Error[0])"
