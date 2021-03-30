@@ -24,11 +24,6 @@ if ($IsLinux) {
 & check-cpu-temp.ps1
 if ($lastExitCode -ne "0") { $Healthy = 0 }
 
-if (-not($IsLinux)) {
-	& check-windows-system-files.ps1
-	if ($lastExitCode -ne "0") { $Healthy = 0 }
-}
-
 & check-dns-resolution.ps1
 if ($lastExitCode -ne "0") { $Healthy = 0 }
 
