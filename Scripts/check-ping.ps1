@@ -17,7 +17,7 @@ try {
 		if ($IsLinux) {
 			[int]$Latency = $Ping.latency
 		} else {
-			[int]$Latency = $Ping.time
+			[int]$Latency = $Ping.ResponseTime
 		}
 		if ($Latency -lt $Min) { $Min = $Latency }
 		if ($Latency -gt $Max) { $Max = $Latency }
