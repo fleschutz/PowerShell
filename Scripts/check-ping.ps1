@@ -14,9 +14,14 @@ try {
 	[int]$Max = 0
 	[int]$Avg = 0
 	foreach($Ping in $Pings) {
-		if ($Ping.latency -lt $Min) { $Min = $Ping.latency }
-		if ($Ping.latency -gt $Max) { $Max = $Ping.latency }
-		$Avg += $Ping.latency
+		if ($IsLinux) {
+			[int]$Latency = $Ping.latency
+		} else {
+			[int]$Latency = $Ping.time
+		}
+		if ($Latency -lt $Min) { $Min = $Latency }
+		if ($Latency -gt $Max) { $Max = $Latency }
+		$Avg += $Latency
 	}
 	$Avg = $Avg / $Pings.count
 
