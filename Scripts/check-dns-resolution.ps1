@@ -15,7 +15,11 @@ try {
 
 	foreach($Row in $Table) {
 		write-progress "Resolving $($Row.Domain) ..."
-		$Ignore = nslookup $Row.Domain
+		if ($IsLinux) {
+			$Ignore = nslookup $Row.Domain
+		} else {
+			$Ignore = resolve-dnsName $Row.Domain
+		}
 	}
 
 	$Count = $Table.Length
