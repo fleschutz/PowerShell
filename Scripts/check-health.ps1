@@ -32,6 +32,9 @@ if (-not($IsLinux)) {
 & check-dns-resolution.ps1
 if ($lastExitCode -ne "0") { $Healthy = 0 }
 
+& check-ping.ps1
+if ($lastExitCode -ne "0") { $Healthy = 0 }
+
 if ($Healthy) {
 	write-host -foregroundColor green "OK - $Hostname is healthy"
 	exit 0

@@ -34,6 +34,7 @@ Mega Collection of PowerShell Scripts
 * [check-dns-resolution.ps1](Scripts/check-dns-resolution.ps1) - checks the DNS resolution with frequently used domain names
 * [check-drive-space.ps1](Scripts/check-drive-space.ps1) - checks the given drive for free space left
 * [check-health.ps1](Scripts/check-health.ps1) - checks the system health
+* [check-ping.ps1](Scripts/check-ping.ps1) - checks the ping latency to the internet
 * [check-swap-space.ps1](Scripts/check-swap-space.ps1) - checks the swap space for free space left
 * [check-windows-system-files.ps1](Scripts/check-windows-system-files.ps1) - checks the validity of the Windows system files (requires admin rights)
 * [enable-crash-dumps.ps1](Scripts/enable-crash-dumps.ps1) - enables the writing of crash dumps
