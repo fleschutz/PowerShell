@@ -23,6 +23,10 @@ try {
 		} 
 	}
 
+	if ($Total -eq "0") {
+        	write-warning "No swap space configured!"
+		exit 1
+	}
 	if ($Free -lt $MinLevel) {
         	write-warning "Swap space has only $Free GB left to use! ($Used GB out of $Total GB in use, minimum is $MinLevel GB)"
 		exit 1
