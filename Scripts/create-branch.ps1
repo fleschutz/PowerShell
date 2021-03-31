@@ -19,6 +19,13 @@ try {
 	& git --version
 	if ($lastExitCode -ne "0") { throw "Can't execute 'git' - make sure Git is installed and available" }
 
+	$Result = (git status)
+	if ($lastExitCode -ne "0") { throw "'git status' failed in $RepoDir" }
+	if ("$Result" -notmatch "nothing to commit, working tree clean") { throw "Repository is NOT clean: $Result" }
+
+	& git fetch --all --recurse-submodules
+	if ($lastExitCode -ne "0") { throw "'git fetch --all --recurse-submodules' failed" }
+
 	& git checkout -b "$NewBranchName"
 	if ($lastExitCode -ne "0") { throw "'git checkout -b $NewBranchName' failed" }
 
