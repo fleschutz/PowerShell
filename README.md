@@ -115,6 +115,7 @@ Mega Collection of PowerShell Scripts
 * [clean-branch.ps1](Scripts/clean-branch.ps1) - cleans the current Git branch (including submodules) from generated files
 * [clone-repos.ps1](Scripts/clone-repos.ps1) - clones well-known Git repositories
 * [configure-git.ps1](Scripts/configure-git.ps1) - sets up the Git user configuration
+* [create-branch.ps1](Scripts/create-branch.ps1) - creates a new branch in the current/given Git repository 
 * [fetch-repo.ps1](Scripts/fetch-repo.ps1) - fetches updates for the current/given Git repository (including submodules)
 * [fetch-repos.ps1](Scripts/fetch-repos.ps1) - fetches updates for all Git repositories under the current/given directory (including submodules)
 * [list-branches.ps1](Scripts/list-branches.ps1) - lists all branches in the current/given Git repository 
