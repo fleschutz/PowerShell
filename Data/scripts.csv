@@ -29,6 +29,7 @@ configure-git.ps1, sets up the Git user configuration
 create-branch.ps1, creates a new branch in the current/given Git repository 
 create-shortcut.ps1, creates a shortcut
 create-symlink.ps1, creates a symbolic link
+create-tag.ps1, creates a new tag in the current/given Git repository 
 csv-to-text.ps1, converts the given CSV file into a text list
 daily-tasks.sh, execute PowerShell scripts automatically as daily tasks (Linux only)
 decrypt-file.ps1, decrypts the given file
