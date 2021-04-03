@@ -1,6 +1,6 @@
 #  My PowerShell Profile
 #  =====================
-#  Welcome to 'my-profile.ps1' - this file defines the look&feel of PowerShell.
+#  Welcome to 'my-profile.ps1' - this file defines the look&feel of PowerShell for the user.
 #  Simply comment/uncomment/adapt the following lines.
 #
 #
@@ -22,3 +22,10 @@ function prompt {
 #  My Alias Names
 #  --------------
 set-alias -name lsf -value get-childitem # lsf means list directory formatted
+
+
+#  My Welcome Message
+#  ------------------
+clear
+Write-Host "PowerShell $($PSVersionTable.PSVersion) at $(hostname) - $(Get-date)"
+Write-Host ''
