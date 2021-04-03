@@ -1,19 +1,24 @@
-# my-profile.ps1 - Your Personal PowerShell Profile
-# -------------------------------------------------
-# 
-# NOTE: simply comment/uncomment/adapt the following lines:
+#  My PowerShell Profile
+#  =====================
+#  Welcome to 'my-profile.ps1' - this file defines the look&feel of PowerShell.
+#  Simply comment/uncomment/adapt the following lines.
+#
+#
+#  My Command Prompt
+#  -----------------
 
-# function prompt {$null}
-# resulting prompt is: PS> 
+# function prompt {$null}	# result is: PS> 
 
-# function prompt { "$ " }
-# resultinng prompt is: $
+# function prompt { "$ " }	# result is: $
 
 function prompt {
-	$host.ui.RawUI.WindowTitle = "$(whoami)@$(hostname)"
+	if ($IsLinux) { $Username = $(whoami) } else { $Username = $env:USERNAME }
+	$host.ui.RawUI.WindowTitle = "$Username @ $(hostname)"
 	write-host -foregroundColor blue -noNewLine "$(Get-Location)"
 	return "> "
-}
-# resulting prompt is: C:\> 
+} # result is: C:\> 
 
+
+#  My Alias Names
+#  --------------
 set-alias -name lsf -value get-childitem # lsf means list directory formatted
