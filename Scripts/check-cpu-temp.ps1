@@ -16,15 +16,15 @@ try {
 	}
 
 	if ($Temp -gt "80") {
-		write-error "CPU has $Temp °C - too high!"
+		write-error "FAIL - $Temp °C CPU temperature is too high!"
 		exit 1
 	} elseif ($Temp -lt "-20") {
-		write-error "CPU has $Temp °C - too low!"
+		write-error "FAIL - $Temp °C CPU temperature is too low!"
 		exit 1
 	} elseif ($Temp -gt "50") {
-		write-warning "CPU has $Temp °C - quite high"
+		write-warning "$Temp °C CPU temperature is quite high"
 	} elseif ($Temp -lt "0") {
-		write-warning "CPU has $Temp °C - quite low"
+		write-warning "$Temp °C CPU temperature is quite low"
 	} else {
 		write-host -foregroundColor green "OK - $Temp °C CPU temperature"
 	}
