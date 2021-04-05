@@ -15,9 +15,10 @@ if ($Drive -eq "" ) {
 }
 
 try {
-	repair-volume -driveLetter $Drive -scan
+	$Result = repair-volume -driveLetter $Drive -scan
+	if ($Result -ne "NoErrorsFound") { throw "'repair-volume' failed" }
 
-	write-host -foregroundColor green "OK - drive $Drive is non-corrupt"
+	write-host -foregroundColor green "OK - file system on drive $Drive is clean"
 	exit 0
 } catch {
 	write-error "ERROR: line $($_.InvocationInfo.ScriptLineNumber): $($Error[0])"
