@@ -29,18 +29,19 @@ Mega Collection of PowerShell Scripts
 
 ⚙️ PowerShell Scripts for Computer Management
 ----------------------------------------------
-* [add-firewall-rules.ps1](Scripts/add-firewall-rules.ps1) - adds firewall rules for the given executables (requires admin rights)
+* [add-firewall-rules.ps1](Scripts/add-firewall-rules.ps1) - adds firewall rules for the given executables (needs admin rights)
 * [check-cpu-temp.ps1](Scripts/check-cpu-temp.ps1) - checks the CPU temperature
 * [check-dns-resolution.ps1](Scripts/check-dns-resolution.ps1) - checks the DNS resolution with frequently used domain names
 * [check-drive-space.ps1](Scripts/check-drive-space.ps1) - checks the given drive for free space left
+* [check-file-system.ps1](Scripts/check-file-system.ps1) - checks the validity of the file system (needs admin rights)
 * [check-health.ps1](Scripts/check-health.ps1) - checks the system health
 * [check-ping.ps1](Scripts/check-ping.ps1) - checks the ping latency to the internet
 * [check-swap-space.ps1](Scripts/check-swap-space.ps1) - checks the swap space for free space left
-* [check-windows-system-files.ps1](Scripts/check-windows-system-files.ps1) - checks the validity of the Windows system files (requires admin rights)
+* [check-windows-system-files.ps1](Scripts/check-windows-system-files.ps1) - checks the validity of the Windows system files (needs admin rights)
 * [enable-crash-dumps.ps1](Scripts/enable-crash-dumps.ps1) - enables the writing of crash dumps
 * [enable-ssh-client.ps1](Scripts/enable-ssh-client.ps1) - enables the SSH client
 * [enable-ssh-server.ps1](Scripts/enable-ssh-server.ps1) - enables the SSH server
-* [hibernate.ps1](Scripts/hibernate.ps1) - enables hibernate mode for the local computer (requires admin rights)
+* [hibernate.ps1](Scripts/hibernate.ps1) - enables hibernate mode for the local computer (needs admin rights)
 * [list-drives.ps1](Scripts/list-drives.ps1) - lists all drives
 * [list-network-shares.ps1](Scripts/list-network-shares.ps1) - lists the network shares of the local computer
 * [list-current-timezone.ps1](Scripts/list-current-timezone.ps1) - lists the current time zone details
@@ -51,9 +52,9 @@ Mega Collection of PowerShell Scripts
 * [list-tasks.ps1](Scripts/list-tasks.ps1) - lists all Windows scheduler tasks
 * [list-timezones.ps1](Scripts/list-timezones.ps1) - lists all time zones available 
 * [list-user-groups.ps1](Scripts/list-user-groups.ps1) - lists the user groups on the local computer
-* [poweroff.ps1](Scripts/poweroff.ps1) - halts the local computer (requires admin rights)
+* [poweroff.ps1](Scripts/poweroff.ps1) - halts the local computer (needs admin rights)
 * [query-smart-data.ps1](Scripts/query-smart-data.ps1) - queries the S.M.A.R.T. data of your HDD/SSD's 
-* [reboot.ps1](Scripts/reboot.ps1) - reboots the local computer (requires admin rights)
+* [reboot.ps1](Scripts/reboot.ps1) - reboots the local computer (needs admin rights)
 * [wakeup.ps1](Scripts/wakeup.ps1) - sends a magic packet to the given computer, waking him up
 
 💻 PowerShell Scripts for the Desktop
