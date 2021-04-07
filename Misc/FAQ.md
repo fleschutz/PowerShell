@@ -23,7 +23,7 @@ How to get PowerShell?
 * **Want to use Snaps?** Install the PowerShell snap by executing:
    ```
    $ snap install PowerShell
-   $ ln -s /snap/bin/powershell /bin/powershell
+   $ ln -s /snap/bin/pwsh /usr/bin/pwsh
    ```
 
 How to get the PowerShell Scripts?
