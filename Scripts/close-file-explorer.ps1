@@ -6,4 +6,5 @@
 .NOTES        Author: Markus Fleschutz / License: CC0
 #>
 
-./close-program "File Explorer" "explorer"
+& "$PSScriptRoot/close-program.ps1" "File Explorer" "explorer" "explorer"
+exit 0

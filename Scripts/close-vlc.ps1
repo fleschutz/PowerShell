@@ -6,4 +6,5 @@
 .NOTES        Author: Markus Fleschutz / License: CC0
 #>
 
-./close-program "VLC media player" "vlc"
+& "$PSScriptRoot/close-program.ps1" "VLC media player" "vlc" "vlc"
+exit 0

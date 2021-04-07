@@ -6,4 +6,5 @@
 .NOTES        Author: Markus Fleschutz / License: CC0
 #>
 
-./close-program "Calculator" "Calculator" "calc"
+& "$PSScriptRoot/close-program.ps1" "Calculator" "Calculator" "calc"
+exit 0

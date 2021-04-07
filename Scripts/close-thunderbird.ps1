@@ -6,4 +6,5 @@
 .NOTES        Author: Markus Fleschutz / License: CC0
 #>
 
-./close-program "Mozilla Thunderbird" "thunderbird"
+& "$PSScriptRoot/close-program.ps1" "Mozilla Thunderbird" "thunderbird" "thunderbird"
+exit 0

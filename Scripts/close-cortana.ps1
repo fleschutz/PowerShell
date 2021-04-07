@@ -6,4 +6,5 @@
 .NOTES        Author: Markus Fleschutz / License: CC0
 #>
 
-./close-program "Cortana" "Cortana"
+& "$PSScriptRoot/close-program.ps1" "Cortana" "Cortana" "Cortana"
+exit 0

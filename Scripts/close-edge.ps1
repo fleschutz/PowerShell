@@ -6,4 +6,5 @@
 .NOTES        Author: Markus Fleschutz / License: CC0
 #>
 
-./close-program "Microsoft Edge" "msedge"
+& "$PSScriptRoot/close-program.ps1" "Microsoft Edge" "msedge" "msedge"
+exit 0

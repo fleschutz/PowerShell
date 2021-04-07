@@ -6,4 +6,5 @@
 .NOTES        Author: Markus Fleschutz / License: CC0
 #>
 
-./close-program "Google Chrome" "chrome"
+& "$PSScriptRoot/close-program.ps1" "Google Chrome" "chrome" "chrome"
+exit 0

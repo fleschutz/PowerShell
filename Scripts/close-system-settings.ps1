@@ -6,4 +6,5 @@
 .NOTES        Author: Markus Fleschutz / License: CC0
 #>
 
-./close-program "System Settings" "SystemSettings"
+& "$PSScriptRoot/close-program.ps1" "System Settings" "SystemSettings" "SystemSettings"
+exit 0
