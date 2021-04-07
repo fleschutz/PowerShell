@@ -32,8 +32,8 @@ How to get the PowerShell Scripts?
 * otherwise download it from: https://github.com/fleschutz/PowerShell/archive/master.zip
 
 
-How to use PowerShell by Default?
----------------------------------
+How to set PowerShell as Default Shell?
+---------------------------------------
 * **On Linux:** make sure PowerShell is installed, then execute: `chsh -s /usr/bin/pwsh <username>`. In case you experience an "invalid shell" error, add "/usr/bin/pwsh" to /etc/shells.
 * **On Windows:** no need to, PowerShell is the default shell
 
