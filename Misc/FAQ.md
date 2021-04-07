@@ -63,7 +63,7 @@ How to write good PowerShell Scripts?
 Each PowerShell script should follow the 10 golden rules:
 
 1. the filename should be named `<verb>-<object>.ps1`
-2. the first line reads `#!/bin/powershell` (to support Linux)
+2. the first line reads `#!/usr/bin/pwsh` (to support Linux)
 3. the script has execute file permissions: chmod a+rx <file> (to support Linux)
 4. provide a comment-based help with syntax, description, link, author, and license
 5. check the requirements (e.g. #Requires -RunAsAdministrator, or #Requires -Version 3)
