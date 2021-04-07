@@ -1,7 +1,7 @@
 #!/usr/bin/pwsh
 <#
 .SYNTAX       ./enable-ssh-server.ps1
-.DESCRIPTION  enables the SSH server
+.DESCRIPTION  enables the SSH server (needs admin rights)
 .LINK         https://github.com/fleschutz/PowerShell
 .NOTES        Author: Markus Fleschutz / License: CC0
 #>
