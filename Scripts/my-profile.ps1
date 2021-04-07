@@ -26,6 +26,5 @@ set-alias -name lsf -value get-childitem # lsf means list directory formatted
 
 #  My Welcome Message
 #  ------------------
-write-host ""
 write-host "+++ Welcome to PowerShell $($PSVersionTable.PSVersion) at $(hostname), it's $(Get-date) +++"
 write-host ""
