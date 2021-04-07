@@ -15,34 +15,25 @@ Why use PowerShell?
 
 How to get PowerShell?
 ----------------------
-* **Windows 7 and newer** do provide PowerShell by default. However, script execution is **not allowed by default** (execution policy is "restricted"). To enable this, enter as administrator:
+* **On Windows 7 and newer** PowerShell is provided by default. However, script execution is **not allowed by default** (execution policy is "restricted"). To enable this, enter as administrator:
    ```
    $ Set-ExecutionPolicy RemoteSigned
    ```
+* **On CentOS, Debian, Docker, Fedora, macOS, openSUSE, Red Hat, Ubuntu** visit https://github.com/PowerShell/PowerShell for installation.
 * **Want to use Snaps?** Install the PowerShell snap by executing:
    ```
    $ snap install PowerShell
    $ ln -s /snap/bin/powershell /bin/powershell
    ```
-* **On CentOS, Debian, Docker, Fedora, macOS, openSUSE, Red Hat, Ubuntu** visit https://github.com/PowerShell/PowerShell for installation.
-
 
 How to get the PowerShell Scripts?
 ----------------------------------
-Git users do execute:
-```
-$ git clone https://github.com/fleschutz/PowerShell
-```
-
-otherwise simply download it from:
-
-https://github.com/fleschutz/PowerShell/archive/master.zip
+* Git users execute: `$ git clone https://github.com/fleschutz/PowerShell`
+* otherwise download it from: https://github.com/fleschutz/PowerShell/archive/master.zip
 
 
-How to Configure PowerShell as Default Shell?
----------------------------------------------
-The default shell on Windows is PowerShell, on Linux it's mostly Bash.
-
+How to use PowerShell by Default?
+---------------------------------
 * **On Linux:** make sure PowerShell is installed, then execute: `chsh -s /bin/powershell <username>`
 * **On Windows:** no need to, PowerShell is the default shell
 
@@ -61,11 +52,11 @@ How to use PowerShell in Context Menus?
 * to disable this execute `Remove_ps1_from_New_context_menu.reg` in subfolder [Misc/](Misc)
 
 
-How to edit PowerShell Scripts?
--------------------------------
-* use PowerShell ISE (Integrated Scripting Environment) on Windows to write, test and debug scripts
-* use Visual Studio Code (available for free on Linux, Mac OS and Windows) - supporting syntax highlighting, on-the-fly problem checking and an integrated PowerShell Console.
-* or simply use your favorite text editor
+How to edit the PowerShell Scripts?
+-----------------------------------
+* use *PowerShell ISE* (Integrated Scripting Environment) to write, test and debug scripts (available for free on Windows only).
+* use *Visual Studio Code* supporting syntax highlighting, on-the-fly problem checking and an integrated PowerShell Console (available for free on Linux, Mac OS and Windows).
+* or simply use your *favorite text editor*
 
 How to write good PowerShell Scripts?
 -------------------------------------
