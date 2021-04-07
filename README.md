@@ -49,6 +49,7 @@ Mega Collection of PowerShell Scripts
 * [list-installed-software.ps1](Scripts/list-installed-software.ps1) - lists the installed software (except Windows Store apps)
 * [list-printers.ps1](Scripts/list-printers.ps1) - lists all printer known to the computer
 * [list-processes.ps1](Scripts/list-processes.ps1) - lists the local computer processes
+* [list-services.ps1](Scripts/list-services.ps1) - lists the services on the local computer
 * [list-tasks.ps1](Scripts/list-tasks.ps1) - lists all Windows scheduler tasks
 * [list-timezones.ps1](Scripts/list-timezones.ps1) - lists all time zones available 
 * [list-user-groups.ps1](Scripts/list-user-groups.ps1) - lists the user groups on the local computer

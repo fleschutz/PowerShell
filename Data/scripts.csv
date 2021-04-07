@@ -85,6 +85,7 @@ list-profiles.ps1, lists your PowerShell profiles
 list-random-passwords.ps1, prints a list of random passwords
 list-random-pins.ps1, prints a list of random PIN's
 list-scripts.ps1, lists all PowerShell scripts in this repository
+list-services.ps1, lists the services on the local computer
 list-tags.ps1, lists all tags in the current/given Git repository 
 list-tasks.ps1, lists all Windows scheduler tasks
 list-timezones.ps1, lists all time zones available 
