@@ -16,7 +16,7 @@ try {
 
 	$Joke = $Table[$Index].Joke
 
-	& ./speak-english.ps1 "$Joke"
+	& "$PSScriptRoot/speak-english.ps1" "$Joke"
 	exit 0
 } catch {
 	write-error "ERROR: line $($_.InvocationInfo.ScriptLineNumber): $($Error[0])"

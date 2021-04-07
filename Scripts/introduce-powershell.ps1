@@ -7,10 +7,10 @@
 #>
 
 try {
-	& write-big.ps1 "PowerShell"
+	& "$PSScriptRoot/write-big.ps1" "PowerShell"
 
-	& write-animated.ps1 "Welcome to PowerShell"
-	& write-animated.ps1 "Feel the power of the console and scripting"
+	& "$PSScriptRoot/write-animated.ps1" "Welcome to PowerShell"
+	& "$PSScriptRoot/write-animated.ps1" "Feel the power of the console and scripting"
 
 	""
 	"* Want to learn PowerShell? See the tutorials at: https://www.guru99.com/powershell-tutorial.html"
@@ -20,7 +20,7 @@ try {
 	"* Want sample scripts? See PowerShell Scripts at: https://github.com/fleschutz/PowerShell/"
 	""
 
-	& write-typewriter.ps1 "P.S. PowerShell is looking forward to execute your next command"
+	& "$PSScriptRoot/write-typewriter.ps1" "P.S. PowerShell is looking forward to execute your next command"
 	""
 
 	exit 0

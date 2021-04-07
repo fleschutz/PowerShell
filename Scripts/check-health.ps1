@@ -10,24 +10,24 @@ $Hostname = $(hostname)
 $Healthy = 1
 "Checking health of $Hostname ..."
 
-& ./check-swap-space.ps1
+& "$PSScriptRoot/check-swap-space.ps1"
 if ($lastExitCode -ne "0") { $Healthy = 0 }
 
 if ($IsLinux) {
-	& ./check-drive-space.ps1 /
+	& "$PSScriptRoot/check-drive-space.ps1" /
 	if ($lastExitCode -ne "0") { $Healthy = 0 }
 } else {
-	& ./check-drive-space.ps1 C
+	& "$PSScriptRoot/check-drive-space.ps1" C
 	if ($lastExitCode -ne "0") { $Healthy = 0 }
 }
 
-& ./check-cpu-temp.ps1
+& "$PSScriptRoot/check-cpu-temp.ps1"
 if ($lastExitCode -ne "0") { $Healthy = 0 }
 
-& ./check-dns-resolution.ps1
+& "$PSScriptRoot/check-dns-resolution.ps1"
 if ($lastExitCode -ne "0") { $Healthy = 0 }
 
-& ./check-ping.ps1
+& "$PSScriptRoot/check-ping.ps1"
 if ($lastExitCode -ne "0") { $Healthy = 0 }
 
 if ($Healthy) {

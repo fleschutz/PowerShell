@@ -8,7 +8,7 @@
 
 try {
 	[system.threading.thread]::currentthread.currentculture=[system.globalization.cultureinfo]"en-US"
-	& ./speak-english.ps1 "Today is $((Get-Date).ToShortDateString())"
+	& "$PSScriptRoot/speak-english.ps1" "Today is $((Get-Date).ToShortDateString())"
 	exit 0
 } catch {
 	write-error "ERROR: line $($_.InvocationInfo.ScriptLineNumber): $($Error[0])"

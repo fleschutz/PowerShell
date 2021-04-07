@@ -14,9 +14,9 @@ if ($IPaddress -eq "" ) {
 
 try {
 	for ([int]$i = 0; $i -lt 1000; $i++) {
-		& ./switch-shelly1.ps1 $IPaddress on 0
+		& "$PSScriptRoot/switch-shelly1.ps1" $IPaddress on 0
 		start-sleep -s 10
-		& ./switch-shelly1.ps1 $IPaddress off 0
+		& "$PSScriptRoot/switch-shelly1.ps1" $IPaddress off 0
 		start-sleep -s 60
 	}
 	write-host -foregroundColor green "Done."
