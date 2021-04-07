@@ -100,6 +100,7 @@ next-joke.ps1], gets the next random Juck Norris joke
 open-browser.ps1, starts the default Web browser
 open-calculator.ps1, starts the calculator program
 open-email-client.ps1, starts the default email client
+open-file-explorer.ps1, starts the Microsoft File Explorer
 play-beep.ps1, plays a beep sound
 play-mission-impossible.ps1, plays the Mission Impossible theme
 play-m3u.ps1, plays the given playlist (M3U file format)
