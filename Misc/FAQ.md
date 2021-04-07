@@ -1,5 +1,5 @@
-PowerShell Scripts FAQ
-======================
+PowerShell FAQ
+==============
 
 What is PowerShell?
 -------------------
