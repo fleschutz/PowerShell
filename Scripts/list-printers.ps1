@@ -1,6 +1,6 @@
 #!/usr/bin/pwsh
 <#
-.SYNTAX       ./list-printers.ps1
+.SYNTAX       list-printers.ps1
 .DESCRIPTION  lists all printer known to the computer
 .LINK         https://github.com/fleschutz/PowerShell
 .NOTES        Author: Markus Fleschutz / License: CC0

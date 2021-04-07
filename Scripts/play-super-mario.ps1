@@ -1,6 +1,6 @@
 #!/usr/bin/pwsh
 <#
-.SYNTAX       ./play-super-mario.ps1
+.SYNTAX       play-super-mario.ps1
 .DESCRIPTION  plays the Super Mario Intro
 .LINK         https://github.com/fleschutz/PowerShell
 .NOTES        Author: Markus Fleschutz / License: CC0

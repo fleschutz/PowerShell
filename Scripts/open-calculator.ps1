@@ -1,6 +1,6 @@
 #!/usr/bin/pwsh
 <#
-.SYNTAX       ./open-calculator.ps1
+.SYNTAX       open-calculator.ps1
 .DESCRIPTION  starts the calculator program
 .LINK         https://github.com/fleschutz/PowerShell
 .NOTES        Author: Markus Fleschutz / License: CC0

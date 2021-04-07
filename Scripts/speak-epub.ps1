@@ -1,6 +1,6 @@
 #!/usr/bin/pwsh
 <#
-.SYNTAX       ./speak-epub.ps1 [<filename>]
+.SYNTAX       speak-epub.ps1 [<filename>]
 .DESCRIPTION  speaks the content of the given Epub file by text-to-speech (TTS)
 .LINK         https://github.com/fleschutz/PowerShell
 .NOTES        Author: Markus Fleschutz / License: CC0

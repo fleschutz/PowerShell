@@ -1,6 +1,6 @@
 #!/usr/bin/pwsh
 <#
-.SYNTAX       ./list-news.ps1 [<RSS-URL>]
+.SYNTAX       list-news.ps1 [<RSS-URL>]
 .DESCRIPTION  lists the latest news
 .LINK         https://github.com/fleschutz/PowerShell
 .NOTES        Author: Markus Fleschutz / License: CC0

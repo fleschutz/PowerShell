@@ -1,16 +1,13 @@
 #!/usr/bin/pwsh
 <#
-.SYNTAX       ./speak-file.ps1 [<file>]
+.SYNTAX       speak-file.ps1 [<file>]
 .DESCRIPTION  speaks the content of the given text file by text-to-speech (TTS)
 .LINK         https://github.com/fleschutz/PowerShell
 .NOTES        Author: Markus Fleschutz / License: CC0
 #>
 
 param($File = "")
-
-if ($File -eq "") {
-	$File = read-host "Enter path to text file"
-}
+if ($File -eq "") { $File = read-host "Enter path to text file" }
 
 try {
 	$Text = Get-Content $File

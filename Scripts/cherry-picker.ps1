@@ -1,6 +1,6 @@
 #!/usr/bin/pwsh
 <#
-.SYNTAX       ./cherry-picker.ps1 [<commit-id>] [<commit-message>] [<branches>] [<repo-dir>]
+.SYNTAX       cherry-picker.ps1 [<commit-id>] [<commit-message>] [<branches>] [<repo-dir>]
 .DESCRIPTION  cherry-picks a Git commit into multiple branches
 .LINK         https://github.com/fleschutz/PowerShell
 .NOTES        Author: Markus Fleschutz / License: CC0

@@ -1,6 +1,6 @@
 #!/usr/bin/pwsh
 <#
-.SYNTAX       ./play-mp3.ps1 [<MP3-file>]
+.SYNTAX       play-mp3.ps1 [<MP3-file>]
 .DESCRIPTION  plays the given sound file (MP3 file format)
 .LINK         https://github.com/fleschutz/PowerShell
 .NOTES        Author: Markus Fleschutz / License: CC0

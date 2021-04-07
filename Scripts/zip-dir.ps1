@@ -1,16 +1,13 @@
 #!/usr/bin/pwsh
 <#
-.SYNTAX       ./zip-dir.ps1 [<directory>]
+.SYNTAX       zip-dir.ps1 [<directory>]
 .DESCRIPTION  creates a zip archive of the given directory
 .LINK         https://github.com/fleschutz/PowerShell
 .NOTES        Author: Markus Fleschutz / License: CC0
 #>
 
 param($Directory = "")
-
-if ($Directory -eq "" ) {
-	$Directory = read-host "Enter the path to the directory to zip"
-}
+if ($Directory -eq "" ) { $Directory = read-host "Enter the path to the directory to zip" }
 
 try {
 	compress-archive -path $Directory -destinationPath $Directory.zip

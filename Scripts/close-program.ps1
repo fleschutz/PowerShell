@@ -1,6 +1,6 @@
 #!/usr/bin/pwsh
 <#
-.SYNTAX       ./close-program.ps1 [<full-program-name>] [<program-name>] [<program-alias-name>]
+.SYNTAX       close-program.ps1 [<full-program-name>] [<program-name>] [<program-alias-name>]
 .DESCRIPTION  closes the processes of the given program gracefully
 .LINK         https://github.com/fleschutz/PowerShell
 .NOTES        Author: Markus Fleschutz / License: CC0

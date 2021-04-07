@@ -1,6 +1,6 @@
 #!/usr/bin/pwsh
 <#
-.SYNTAX       ./take-screenshot.ps1 [<directory>]
+.SYNTAX       take-screenshot.ps1 [<directory>]
 .DESCRIPTION  takes a single screenshot and saves it into the current/given directory
 .LINK         https://github.com/fleschutz/PowerShell
 .NOTES        Author: Markus Fleschutz / License: CC0

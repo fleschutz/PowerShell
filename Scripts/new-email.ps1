@@ -1,6 +1,6 @@
 #!/usr/bin/pwsh
 <#
-.SYNTAX       ./new-email.ps1 [<address>]
+.SYNTAX       new-email.ps1 [<address>]
 .DESCRIPTION  starts the default email client to write a new email
 .LINK         https://github.com/fleschutz/PowerShell
 .NOTES        Author: Markus Fleschutz / License: CC0

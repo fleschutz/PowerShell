@@ -1,6 +1,6 @@
 #!/usr/bin/pwsh
 <#
-.SYNTAX       ./check-ipv4-address.ps1 [<address>]
+.SYNTAX       check-ipv4-address.ps1 [<address>]
 .DESCRIPTION  checks the given IPv4 address for validity
 .LINK         https://github.com/fleschutz/PowerShell
 .NOTES        Author: Markus Fleschutz / License: CC0

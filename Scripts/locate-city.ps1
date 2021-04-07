@@ -1,6 +1,6 @@
 #!/usr/bin/pwsh
 <#
-.SYNTAX       ./locate-city.ps1 [<city>]
+.SYNTAX       locate-city.ps1 [<city>]
 .DESCRIPTION  prints the geographic location of the given city
 .LINK         https://github.com/fleschutz/PowerShell
 .NOTES        Author: Markus Fleschutz / License: CC0

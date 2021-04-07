@@ -1,6 +1,6 @@
 #!/usr/bin/pwsh
 <#
-.SYNTAX       ./check-swap-space.ps1 [<min-level>]
+.SYNTAX       check-swap-space.ps1 [<min-level>]
 .DESCRIPTION  checks the free swap space 
 .LINK         https://github.com/fleschutz/PowerShell
 .NOTES        Author: Markus Fleschutz / License: CC0

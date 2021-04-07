@@ -1,6 +1,6 @@
 #!/usr/bin/pwsh
 <#
-.SYNTAX       ./close-vlc.ps1 
+.SYNTAX       close-vlc.ps1 
 .DESCRIPTION  closes the VLC media player gracefully
 .LINK         https://github.com/fleschutz/PowerShell
 .NOTES        Author: Markus Fleschutz / License: CC0

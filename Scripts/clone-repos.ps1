@@ -1,6 +1,6 @@
 #!/usr/bin/pwsh
 <#
-.SYNTAX       ./clone-repos.ps1 [<target-dir>]
+.SYNTAX       clone-repos.ps1 [<target-dir>]
 .DESCRIPTION  clones well-known Git repositories into the current/given directory.
 .LINK         https://github.com/fleschutz/PowerShell
 .NOTES        Author: Markus Fleschutz / License: CC0

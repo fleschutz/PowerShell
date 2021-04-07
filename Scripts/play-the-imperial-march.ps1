@@ -1,6 +1,6 @@
 #!/usr/bin/pwsh
 <#
-.SYNTAX       ./play-the-imperial-march.ps1
+.SYNTAX       play-the-imperial-march.ps1
 .DESCRIPTION  plays the Imperial March (Star Wars)
 .LINK         https://github.com/fleschutz/PowerShell
 .NOTES        Author: Markus Fleschutz / License: CC0

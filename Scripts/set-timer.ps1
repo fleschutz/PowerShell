@@ -1,16 +1,13 @@
 #!/usr/bin/pwsh
 <#
-.SYNTAX       ./set-timer.ps1 [<seconds>]
+.SYNTAX       set-timer.ps1 [<seconds>]
 .DESCRIPTION  sets a timer for a countdown
 .LINK         https://github.com/fleschutz/PowerShell
 .NOTES        Author: Markus Fleschutz / License: CC0
 #>
 
 param([int]$Seconds = 0)
-
-if ($Seconds -eq 0 ) {
-	[int]$Seconds = read-host "Enter number of seconds"
-}
+if ($Seconds -eq 0 ) { [int]$Seconds = read-host "Enter number of seconds" }
 
 try {
 	for ($i = $Seconds; $i -gt 0; $i--) {

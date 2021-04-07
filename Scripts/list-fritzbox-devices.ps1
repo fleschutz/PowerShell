@@ -1,6 +1,6 @@
 #!/usr/bin/pwsh
 <#
-.SYNTAX       ./list-fritzbox-calls.ps1 [<username>] [<password>]
+.SYNTAX       list-fritzbox-calls.ps1 [<username>] [<password>]
 .DESCRIPTION  lists FRITZ!Box's known devices
 .LINK         https://github.com/fleschutz/PowerShell
 .NOTES        Author: Markus Fleschutz / License: CC0

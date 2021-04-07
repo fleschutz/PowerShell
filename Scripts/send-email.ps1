@@ -1,6 +1,6 @@
 #!/usr/bin/pwsh
 <#
-.SYNTAX       ./send-email.ps1 
+.SYNTAX       send-email.ps1 
 .DESCRIPTION  sends an email
 .LINK         https://github.com/fleschutz/PowerShell
 .NOTES        Author: Markus Fleschutz / License: CC0

@@ -1,16 +1,13 @@
 #!/usr/bin/pwsh
 <#
-.SYNTAX       ./translate-text.ps1 [<text>] [<source-lang>]
+.SYNTAX       translate-text.ps1 [<text>] [<source-lang>]
 .DESCRIPTION  translates the given text into other languages
 .LINK         https://github.com/fleschutz/PowerShell
 .NOTES        Author: Markus Fleschutz / License: CC0
 #>
 
 param($SourceText = "", $SourceLang = "en")
-
-if ($SourceText -eq "" ) {
-	$SourceText = read-host "Enter text to translate"
-}
+if ($SourceText -eq "" ) { $SourceText = read-host "Enter text to translate" }
 $TargetLanguages = "af","da","de","el","es","fr","hr","it","ja","ko","pl","pt","nl","ru","tr","uk","vi"
 
 function TranslateWithGoogle {

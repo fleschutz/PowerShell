@@ -1,6 +1,6 @@
 #!/usr/bin/pwsh
 <#
-.SYNTAX       ./weather.ps1 [<geo-location>]
+.SYNTAX       weather.ps1 [<geo-location>]
 .DESCRIPTION  prints the current weather forecast
 .LINK         https://github.com/fleschutz/PowerShell
 .NOTES        Author: Markus Fleschutz / License: CC0

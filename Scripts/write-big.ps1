@@ -1,6 +1,6 @@
 #!/usr/bin/pwsh
 <#
-.SYNTAX       ./write-big.ps1 [<text>]
+.SYNTAX       write-big.ps1 [<text>]
 .DESCRIPTION  writes the given text in big letters
 .LINK         https://github.com/fleschutz/PowerShell
 .NOTES        Author: Markus Fleschutz / License: CC0

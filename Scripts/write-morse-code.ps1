@@ -1,6 +1,6 @@
 #!/usr/bin/pwsh
 <#
-.SYNTAX       ./write-morse-code.ps1 [<text>] [<speed>]
+.SYNTAX       write-morse-code.ps1 [<text>] [<speed>]
 .DESCRIPTION  writes the given text in Morse code
 .LINK         https://github.com/fleschutz/PowerShell
 .NOTES        Author: Markus Fleschutz / License: CC0

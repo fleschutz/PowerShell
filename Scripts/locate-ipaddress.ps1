@@ -1,6 +1,6 @@
 #!/usr/bin/pwsh
 <#
-.SYNTAX       ./locate-ipaddress.ps1 [<IPaddress>]
+.SYNTAX       locate-ipaddress.ps1 [<IPaddress>]
 .DESCRIPTION  prints the geographic location of the given IP address
 .LINK         https://github.com/fleschutz/PowerShell
 .NOTES        Author: Markus Fleschutz / License: CC0

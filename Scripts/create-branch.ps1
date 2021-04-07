@@ -1,6 +1,6 @@
 #!/usr/bin/pwsh
 <#
-.SYNTAX       ./create-branch.ps1 [<new-branch-name>] [<repo-dir>]
+.SYNTAX       create-branch.ps1 [<new-branch-name>] [<repo-dir>]
 .DESCRIPTION  creates a new branch in the current/given Git repository 
 .LINK         https://github.com/fleschutz/PowerShell
 .NOTES        Author: Markus Fleschutz / License: CC0

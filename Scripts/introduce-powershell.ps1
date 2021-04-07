@@ -1,6 +1,6 @@
 #!/usr/bin/pwsh
 <#
-.SYNTAX       ./introduce-powershell.ps1
+.SYNTAX       introduce-powershell.ps1
 .DESCRIPTION  introduces PowerShell to new users
 .LINK         https://github.com/fleschutz/PowerShell
 .NOTES        Author: Markus Fleschutz / License: CC0

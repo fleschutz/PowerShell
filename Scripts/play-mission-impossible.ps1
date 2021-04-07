@@ -1,6 +1,6 @@
 #!/usr/bin/pwsh
 <#
-.SYNTAX       ./play-mission-impossible.ps1
+.SYNTAX       play-mission-impossible.ps1
 .DESCRIPTION  plays the Mission Impossible theme
 .LINK         https://github.com/fleschutz/PowerShell
 .NOTES        Author: Markus Fleschutz / License: CC0

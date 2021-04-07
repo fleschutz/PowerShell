@@ -1,6 +1,6 @@
 #!/usr/bin/pwsh
 <#
-.SYNTAX       ./weather-worldwide.ps1
+.SYNTAX       weather-worldwide.ps1
 .DESCRIPTION  prints the current weather of cities world-wide
 .LINK         https://github.com/fleschutz/PowerShell
 .NOTES        Author: Markus Fleschutz / License: CC0

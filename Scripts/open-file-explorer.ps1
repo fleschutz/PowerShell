@@ -1,6 +1,6 @@
 #!/usr/bin/pwsh
 <#
-.SYNTAX       ./open-file-explorer.ps1
+.SYNTAX       open-file-explorer.ps1
 .DESCRIPTION  starts the File Explorerer
 .LINK         https://github.com/fleschutz/PowerShell
 .NOTES        Author: Markus Fleschutz / License: CC0

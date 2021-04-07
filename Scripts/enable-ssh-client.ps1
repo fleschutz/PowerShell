@@ -1,6 +1,6 @@
 #!/usr/bin/pwsh
 <#
-.SYNTAX       ./enable-ssh-client.ps1
+.SYNTAX       enable-ssh-client.ps1
 .DESCRIPTION  enables the SSH client (needs admin rights)
 .LINK         https://github.com/fleschutz/PowerShell
 .NOTES        Author: Markus Fleschutz / License: CC0

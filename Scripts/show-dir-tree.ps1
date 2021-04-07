@@ -1,6 +1,6 @@
 #!/usr/bin/pwsh
 <#
-.SYNTAX       ./show-dir-tree.ps1 [<dir-tree>]
+.SYNTAX       show-dir-tree.ps1 [<dir-tree>]
 .DESCRIPTION  visualizes the given/current directory tree
 .LINK         https://github.com/fleschutz/PowerShell
 .NOTES        Author: Markus Fleschutz / License: CC0

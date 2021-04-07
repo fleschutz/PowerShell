@@ -1,6 +1,6 @@
 #!/usr/bin/pwsh
 <#
-.SYNTAX       ./list-earthquakes.ps1
+.SYNTAX       list-earthquakes.ps1
 .DESCRIPTION  lists earthquakes with magnitude >= 6.0 for the last 30 days
 .LINK         https://github.com/fleschutz/PowerShell
 .NOTES        Author: Markus Fleschutz / License: CC0

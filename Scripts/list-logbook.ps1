@@ -1,6 +1,6 @@
 #!/usr/bin/pwsh
 <#
-.SYNTAX       ./list-logbook.ps1 
+.SYNTAX       list-logbook.ps1 
 .DESCRIPTION  lists the content of the logbook (in ../Data/logbook.csv)
 .LINK         https://github.com/fleschutz/PowerShell
 .NOTES        Author: Markus Fleschutz / License: CC0

@@ -1,6 +1,6 @@
 #!/usr/bin/pwsh
 <#
-.SYNTAX       ./check-mac-address.ps1 [<MAC>]
+.SYNTAX       check-mac-address.ps1 [<MAC>]
 .DESCRIPTION  checks the given MAC address for validity
               MAC address like 00:00:00:00:00:00 or 00-00-00-00-00-00 or 000000000000
 .LINK         https://github.com/fleschutz/PowerShell

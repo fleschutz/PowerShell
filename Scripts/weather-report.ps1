@@ -1,6 +1,6 @@
 #!/usr/bin/pwsh
 <#
-.SYNTAX       ./weather-report.ps1 [<geo-location>]
+.SYNTAX       weather-report.ps1 [<geo-location>]
 .DESCRIPTION  prints the local weather report 
 .LINK         https://github.com/fleschutz/PowerShell
 .NOTES        Author: Markus Fleschutz / License: CC0

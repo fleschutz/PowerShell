@@ -1,12 +1,12 @@
 #!/usr/bin/pwsh
 <#
-.SYNTAX       ./write-animated.ps1 [<line1>] .. [line9>] [<speed>]
+.SYNTAX       write-animated.ps1 [<line1>] .. [line9>] [<speed>]
 .DESCRIPTION  writes animated text
 .LINK         https://github.com/fleschutz/PowerShell
 .NOTES        Author: Markus Fleschutz / License: CC0
 #>
 
-param([string]$Line1 = "", [string]$Line2 = "", [string]$Line3 = "", [string]$Line4 = "", [string]$Line5 = "", [string]$Line6 = "", [string]$Line7 = "", [string]$Line8 = "", [string]$Line9 = "", [int]$Speed = 50) # 50 ms pause
+param($Line1 = "", $Line2 = "", $Line3 = "", $Line4 = "", $Line5 = "", $Line6 = "", $Line7 = "", $Line8 = "", $Line9 = "", [int]$Speed = 50) # 50 ms pause
 
 function WriteAnimatedLine { param([string]$Line, [int]$Speed)
 	[int]$Start = 1

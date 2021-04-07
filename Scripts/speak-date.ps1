@@ -1,6 +1,6 @@
 #!/usr/bin/pwsh
 <#
-.SYNTAX       ./speak-date.ps1
+.SYNTAX       speak-date.ps1
 .DESCRIPTION  speaks the current date by text-to-speech (TTS)
 .LINK         https://github.com/fleschutz/PowerShell
 .NOTES        Author: Markus Fleschutz / License: CC0

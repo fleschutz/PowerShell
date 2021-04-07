@@ -1,6 +1,6 @@
 #!/usr/bin/pwsh
 <#
-.SYNTAX       ./go-home.ps1 
+.SYNTAX       go-home.ps1 
 .DESCRIPTION  go to the user's home folder
 .LINK         https://github.com/fleschutz/PowerShell
 .NOTES        Author: Markus Fleschutz / License: CC0

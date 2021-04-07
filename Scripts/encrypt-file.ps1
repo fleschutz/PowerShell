@@ -1,6 +1,6 @@
 #!/usr/bin/pwsh
 <#
-.SYNTAX       ./encrypt-file.ps1 [<path>] [<password>]
+.SYNTAX       encrypt-file.ps1 [<path>] [<password>]
 .DESCRIPTION  encrypts the given file
 .LINK         https://github.com/fleschutz/PowerShell
 .NOTES        Author: Markus Fleschutz / License: CC0

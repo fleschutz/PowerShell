@@ -1,6 +1,6 @@
 #!/usr/bin/pwsh
 <#
-.SYNTAX       ./list-random-passwords.ps1
+.SYNTAX       list-random-passwords.ps1
 .DESCRIPTION  prints a list of random passwords
 .LINK         https://github.com/fleschutz/PowerShell
 .NOTES        Author: Markus Fleschutz / License: CC0

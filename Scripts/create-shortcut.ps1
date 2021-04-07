@@ -1,6 +1,6 @@
 #!/usr/bin/pwsh
 <#
-.SYNTAX       ./create-shortcut.ps1 [<shortcut>] [<target>] [<description>]
+.SYNTAX       create-shortcut.ps1 [<shortcut>] [<target>] [<description>]
 .DESCRIPTION  creates a new shortcut
 .LINK         https://github.com/fleschutz/PowerShell
 .NOTES        Author: Markus Fleschutz / License: CC0

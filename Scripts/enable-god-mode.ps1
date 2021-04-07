@@ -1,6 +1,6 @@
 #!/usr/bin/pwsh
 <#
-.SYNTAX       ./enable-god-mode.ps1 
+.SYNTAX       enable-god-mode.ps1 
 .DESCRIPTION  enables the god mode (adds a new icon to the desktop)
 .LINK         https://github.com/fleschutz/PowerShell
 .NOTES        Author: Markus Fleschutz / License: CC0

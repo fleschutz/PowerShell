@@ -1,6 +1,6 @@
 #!/usr/bin/pwsh
 <#
-.SYNTAX       ./write-typewriter.ps1 [<text>] [<speed>]
+.SYNTAX       write-typewriter.ps1 [<text>] [<speed>]
 .DESCRIPTION  writes the given text with the typewriter effect
 .LINK         https://github.com/fleschutz/PowerShell
 .NOTES        Author: Markus Fleschutz / License: CC0

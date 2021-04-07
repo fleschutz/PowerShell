@@ -1,6 +1,6 @@
 #!/usr/bin/pwsh
 <#
-.SYNTAX       ./moon.ps1
+.SYNTAX       moon.ps1
 .DESCRIPTION  prints the current moon phase
 .LINK         https://github.com/fleschutz/PowerShell
 .NOTES        Author: Markus Fleschutz / License: CC0

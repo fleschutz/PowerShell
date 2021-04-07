@@ -1,6 +1,6 @@
 #!/usr/bin/pwsh
 <#
-.SYNTAX       ./list-timezones.ps1 
+.SYNTAX       list-timezones.ps1 
 .DESCRIPTION  lists all time zones available
 .LINK         https://github.com/fleschutz/PowerShell
 .NOTES        Author: Markus Fleschutz / License: CC0

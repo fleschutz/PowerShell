@@ -1,6 +1,6 @@
 #!/usr/bin/pwsh
 <#
-.SYNTAX       ./list-random-pins.ps1 [<pin-length>] [<columns>] [<rows>]
+.SYNTAX       list-random-pins.ps1 [<pin-length>] [<columns>] [<rows>]
 .DESCRIPTION  prints a list of random PIN's
 .LINK         https://github.com/fleschutz/PowerShell
 .NOTES        Author: Markus Fleschutz / License: CC0

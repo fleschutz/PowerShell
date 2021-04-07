@@ -1,6 +1,6 @@
 #!/usr/bin/pwsh
 <#
-.SYNTAX       ./check-dns-resolution.ps1
+.SYNTAX       check-dns-resolution.ps1
 .DESCRIPTION  checks the DNS resolution with frequently used domain names
 .LINK         https://github.com/fleschutz/PowerShell
 .NOTES        Author: Markus Fleschutz / License: CC0

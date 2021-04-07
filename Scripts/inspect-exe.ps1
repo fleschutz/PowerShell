@@ -1,6 +1,6 @@
 #!/usr/bin/pwsh
 <#
-.SYNTAX       ./inspect-exe.ps1 [<path-to-exe-file>]
+.SYNTAX       inspect-exe.ps1 [<path-to-exe-file>]
 .DESCRIPTION  prints basic information of the given executable file
 .LINK         https://github.com/fleschutz/PowerShell
 .NOTES        Author: Markus Fleschutz / License: CC0

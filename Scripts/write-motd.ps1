@@ -1,6 +1,6 @@
 #!/usr/bin/pwsh
 <#
-.SYNTAX       ./write-motd.ps1 
+.SYNTAX       write-motd.ps1 
 .DESCRIPTION  writes the message of the day (MOTD)
 .LINK         https://github.com/fleschutz/PowerShell
 .NOTES        Author: Markus Fleschutz / License: CC0

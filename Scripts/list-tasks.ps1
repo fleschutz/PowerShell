@@ -1,6 +1,6 @@
 #!/usr/bin/pwsh
 <#
-.SYNTAX       ./list-tasks.ps1 
+.SYNTAX       list-tasks.ps1 
 .DESCRIPTION  lists all Windows scheduler tasks
 .LINK         https://github.com/fleschutz/PowerShell
 .NOTES        Author: Markus Fleschutz / License: CC0

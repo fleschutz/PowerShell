@@ -1,6 +1,6 @@
 #!/usr/bin/pwsh
 <#
-.SYNTAX       ./check-drive-space.ps1 [<drive>] [<min-level>]
+.SYNTAX       check-drive-space.ps1 [<drive>] [<min-level>]
 .DESCRIPTION  checks the given drive for free space left
 .LINK         https://github.com/fleschutz/PowerShell
 .NOTES        Author: Markus Fleschutz / License: CC0

@@ -1,12 +1,13 @@
 #!/usr/bin/pwsh
 <#
-.SYNTAX       ./speak-english.ps1 [<text>]
+.SYNTAX       speak-english.ps1 [<text>]
 .DESCRIPTION  speaks the given text with an English text-to-speech (TTS) voice
 .LINK         https://github.com/fleschutz/PowerShell
 .NOTES        Author: Markus Fleschutz / License: CC0
 #>
 
 param($Text = "")
+if ($Text -eq "") { $Text = read-host "Enter the text to speak" }
 
 try {
 	$Voice = new-object -ComObject SAPI.SPVoice
@@ -14,9 +15,6 @@ try {
 	foreach ($OtherVoice in $Voices) {
 		$Description = $OtherVoice.GetDescription()
 		if ($Description -like "*- English*") {
-			if ($Text -eq "") {
-				$Text = read-host "Enter the text to speak"
-			}
 			write-progress "$Text"
 			$Voice.Voice = $OtherVoice
 			[void]$Voice.Speak($Text)

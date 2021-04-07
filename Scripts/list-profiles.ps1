@@ -1,6 +1,6 @@
 #!/usr/bin/pwsh
 <#
-.SYNTAX       ./list-profiles.ps1
+.SYNTAX       list-profiles.ps1
 .DESCRIPTION  lists your PowerShell profiles
 .LINK         https://github.com/fleschutz/PowerShell
 .NOTES        Author: Markus Fleschutz / License: CC0

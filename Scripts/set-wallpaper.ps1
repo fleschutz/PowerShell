@@ -1,6 +1,6 @@
 #!/usr/bin/pwsh
 <#
-.SYNTAX       ./set-wallpaper.ps1 [<image-file>] [<style>]
+.SYNTAX       set-wallpaper.ps1 [<image-file>] [<style>]
 .DESCRIPTION  sets the given image file as wallpaper
               (style is either Fill, Fit, Stretch, Tile, Center, or Span)
 .LINK         https://github.com/fleschutz/PowerShell

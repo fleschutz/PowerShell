@@ -1,6 +1,6 @@
 #!/usr/bin/pwsh
 <#
-.SYNTAX       ./voice-control.ps1 
+.SYNTAX       voice-control.ps1 
 .DESCRIPTION  executes the PowerShell scripts by voice
 .LINK         https://github.com/fleschutz/PowerShell
 .NOTES        Author: Markus Fleschutz / License: CC0

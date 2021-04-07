@@ -1,6 +1,6 @@
 #!/usr/bin/pwsh
 <#
-.SYNTAX       ./simulate-matrix.ps1 
+.SYNTAX       simulate-matrix.ps1 
 .DESCRIPTION  simulates the Matrix (fun)
 .LINK         https://github.com/fleschutz/PowerShell
 .NOTES        Author: Markus Fleschutz / License: CC0

@@ -1,7 +1,7 @@
 #!/usr/bin/pwsh
 <#
-.SYNTAX       ./poweroff.ps1
-.DESCRIPTION  halts the local computer, administrator rights are required 
+.SYNTAX       poweroff.ps1
+.DESCRIPTION  halts the local computer (needs admin rights)
 .LINK         https://github.com/fleschutz/PowerShell
 .NOTES        Author: Markus Fleschutz / License: CC0
 #>
@@ -9,7 +9,7 @@
 #Requires -RunAsAdministrator
 
 try {
-	stop-computer
+	Stop-Computer
 	exit 0
 } catch {
 	write-error "ERROR: line $($_.InvocationInfo.ScriptLineNumber): $($Error[0])"

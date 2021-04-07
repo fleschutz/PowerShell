@@ -1,6 +1,6 @@
 #!/usr/bin/pwsh
 <#
-.SYNTAX       ./list-scripts.ps1
+.SYNTAX       list-scripts.ps1
 .DESCRIPTION  lists all PowerShell scripts in this repository (sorted alphabetically)
 .LINK         https://github.com/fleschutz/PowerShell
 .NOTES        Author: Markus Fleschutz / License: CC0

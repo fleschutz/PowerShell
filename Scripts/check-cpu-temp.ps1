@@ -1,6 +1,6 @@
 #!/usr/bin/pwsh
 <#
-.SYNTAX       ./check-cpu-temp.ps1 
+.SYNTAX       check-cpu-temp.ps1 
 .DESCRIPTION  checks the CPU temperature
 .LINK         https://github.com/fleschutz/PowerShell
 .NOTES        Author: Markus Fleschutz / License: CC0

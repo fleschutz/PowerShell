@@ -1,6 +1,6 @@
 #!/usr/bin/pwsh
 <#
-.SYNTAX       ./list-cmdlets.ps1 
+.SYNTAX       list-cmdlets.ps1 
 .DESCRIPTION  lists all PowerShell cmdlets
 .LINK         https://github.com/fleschutz/PowerShell
 .NOTES        Author: Markus Fleschutz / License: CC0

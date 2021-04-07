@@ -1,6 +1,6 @@
 #!/usr/bin/pwsh
 <#
-.SYNTAX       ./download.ps1 [<URL>]
+.SYNTAX       download.ps1 [<URL>]
 .DESCRIPTION  downloads the file/directory from the given URL
 .LINK         https://github.com/fleschutz/PowerShell
 .NOTES        Author: Markus Fleschutz / License: CC0

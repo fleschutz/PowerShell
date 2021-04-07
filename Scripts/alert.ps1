@@ -1,6 +1,6 @@
 #!/usr/bin/pwsh
 <#
-.SYNTAX       ./alert.ps1 [<message>]
+.SYNTAX       alert.ps1 [<message>]
 .DESCRIPTION  handle and escalate the given alert message
 .LINK         https://github.com/fleschutz/PowerShell
 .NOTES        Author: Markus Fleschutz / License: CC0

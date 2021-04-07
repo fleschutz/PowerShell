@@ -1,16 +1,13 @@
 #!/usr/bin/pwsh
 <#
-.SYNTAX       ./speak-german.ps1 [<text>]
+.SYNTAX       speak-german.ps1 [<text>]
 .DESCRIPTION  speaks the given text with a German text-to-speech (TTS) voice
 .LINK         https://github.com/fleschutz/PowerShell
 .NOTES        Author: Markus Fleschutz / License: CC0
 #>
 
 param($Text = "")
-
-if ($Text -eq "") {
-	$Text = read-host "Enter the text to speak"
-}
+if ($Text -eq "") { $Text = read-host "Enter the text to speak" }
 
 try {
 	$Voice = new-object -ComObject SAPI.SPVoice

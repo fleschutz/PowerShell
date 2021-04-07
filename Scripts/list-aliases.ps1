@@ -1,6 +1,6 @@
 #!/usr/bin/pwsh
 <#
-.SYNTAX       ./list-aliases.ps1
+.SYNTAX       list-aliases.ps1
 .DESCRIPTION  lists all PowerShell aliases 
 .LINK         https://github.com/fleschutz/PowerShell
 .NOTES        Author: Markus Fleschutz / License: CC0

@@ -1,6 +1,6 @@
 #!/usr/bin/pwsh
 <#
-.SYNTAX       ./unmute-audio.ps1
+.SYNTAX       unmute-audio.ps1
 .DESCRIPTION  unmutes audio output
 .LINK         https://github.com/fleschutz/PowerShell
 .NOTES        Author: Markus Fleschutz / License: CC0

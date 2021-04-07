@@ -1,6 +1,6 @@
 #!/usr/bin/pwsh
 <#
-.SYNTAX       ./check-file-system.ps1 [<drive>] 
+.SYNTAX       check-file-system.ps1 [<drive>] 
 .DESCRIPTION  checks the validity of the file system (needs admin rights)
 .LINK         https://github.com/fleschutz/PowerShell
 .NOTES        Author: Markus Fleschutz / License: CC0

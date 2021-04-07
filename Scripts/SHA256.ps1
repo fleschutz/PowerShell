@@ -1,16 +1,13 @@
 #!/usr/bin/pwsh
 <#
-.SYNTAX       ./SHA256.ps1 [<file>]
+.SYNTAX       SHA256.ps1 [<file>]
 .DESCRIPTION  prints the SHA256 checksum of the given file
 .LINK         https://github.com/fleschutz/PowerShell
 .NOTES        Author: Markus Fleschutz / License: CC0
 #>
 
 param($File = "")
-
-if ($File -eq "" ) {
-	$File = read-host "Enter the filename"
-}
+if ($File -eq "" ) { $File = read-host "Enter the filename" }
 
 try {
 	$Result = get-filehash $File -algorithm SHA256
