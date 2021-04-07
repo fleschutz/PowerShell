@@ -1,4 +1,4 @@
-#!/bin/powershell
+#!/usr/bin/pwsh
 <#
 .SYNTAX       ./play-mp3.ps1 [<MP3-file>]
 .DESCRIPTION  plays the given sound file (MP3 file format)

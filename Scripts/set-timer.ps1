@@ -1,4 +1,4 @@
-#!/bin/powershell
+#!/usr/bin/pwsh
 <#
 .SYNTAX       ./set-timer.ps1 [<seconds>]
 .DESCRIPTION  sets a timer for a countdown

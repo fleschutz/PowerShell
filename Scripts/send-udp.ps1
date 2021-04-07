@@ -1,4 +1,4 @@
-#!/bin/powershell
+#!/usr/bin/pwsh
 <#
 .SYNTAX       ./send-udp.ps1 [<target-IP>] [<target-port>] [<message>]
 .DESCRIPTION  sends a UDP datagram message to the given IP address and port

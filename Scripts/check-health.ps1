@@ -1,4 +1,4 @@
-#!/bin/powershell
+#!/usr/bin/pwsh
 <#
 .SYNTAX       ./check-health.ps1 
 .DESCRIPTION  checks the system health

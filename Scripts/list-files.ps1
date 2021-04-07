@@ -1,4 +1,4 @@
-#!/bin/powershell
+#!/usr/bin/pwsh
 <#
 .SYNTAX       ./list-files.ps1 [<folder>]
 .DESCRIPTION  lists all files in the given folder and also in every subfolder

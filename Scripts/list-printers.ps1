@@ -1,4 +1,4 @@
-#!/bin/powershell
+#!/usr/bin/pwsh
 <#
 .SYNTAX       ./list-printers.ps1
 .DESCRIPTION  lists all printer known to the computer

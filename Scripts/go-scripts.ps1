@@ -1,4 +1,4 @@
-#!/bin/powershell
+#!/usr/bin/pwsh
 <#
 .SYNTAX       ./go-scripts.ps1 
 .DESCRIPTION  go to the PowerShell Scripts folder

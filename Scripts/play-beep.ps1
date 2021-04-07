@@ -1,4 +1,4 @@
-#!/bin/powershell
+#!/usr/bin/pwsh
 <#
 .SYNTAX       ./play-beep.ps1
 .DESCRIPTION  plays a beep sound

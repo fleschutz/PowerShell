@@ -1,4 +1,4 @@
-#!/bin/powershell
+#!/usr/bin/pwsh
 <#
 .SYNTAX       ./clone-repos.ps1 [<target-dir>]
 .DESCRIPTION  clones well-known Git repositories into the current/given directory.

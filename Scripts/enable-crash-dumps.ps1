@@ -1,4 +1,4 @@
-#!/bin/powershell
+#!/usr/bin/pwsh
 <#
 .SYNTAX       ./enable-crash-dumps.ps1 
 .DESCRIPTION  enables the writing of crash dumps

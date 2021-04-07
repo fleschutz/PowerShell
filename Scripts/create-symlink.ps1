@@ -1,4 +1,4 @@
-#!/bin/powershell
+#!/usr/bin/pwsh
 <#
 .SYNTAX       ./create-symlink.ps1 [<symlink>] [<target>]
 .DESCRIPTION  creates a symbolic link

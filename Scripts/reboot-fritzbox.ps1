@@ -1,4 +1,4 @@
-#!/bin/powershell
+#!/usr/bin/pwsh
 <#
 .SYNTAX       ./reboot-fritzbox.ps1 [<username>] [<password>]
 .DESCRIPTION  reboots the FRITZ!Box device

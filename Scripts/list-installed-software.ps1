@@ -1,4 +1,4 @@
-#!/bin/powershell
+#!/usr/bin/pwsh
 <#
 .SYNTAX       ./list-installed-software.ps1
 .DESCRIPTION  lists the installed software (except Windows Store apps)

@@ -1,4 +1,4 @@
-#!/bin/powershell
+#!/usr/bin/pwsh
 <#
 .SYNTAX       ./set-wallpaper.ps1 [<image-file>] [<style>]
 .DESCRIPTION  sets the given image file as wallpaper

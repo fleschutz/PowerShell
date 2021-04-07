@@ -1,4 +1,4 @@
-#!/bin/powershell
+#!/usr/bin/pwsh
 <#
 .SYNTAX       ./encrypt-file.ps1 [<path>] [<password>]
 .DESCRIPTION  encrypts the given file

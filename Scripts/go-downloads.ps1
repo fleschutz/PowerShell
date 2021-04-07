@@ -1,4 +1,4 @@
-#!/bin/powershell
+#!/usr/bin/pwsh
 <#
 .SYNTAX       ./go-downloads.ps1 
 .DESCRIPTION  go to the user's downloads folder

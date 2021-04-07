@@ -1,4 +1,4 @@
-#!/bin/powershell
+#!/usr/bin/pwsh
 <#
 .SYNTAX       ./unmute-audio.ps1
 .DESCRIPTION  unmutes audio output

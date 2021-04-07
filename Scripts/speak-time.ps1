@@ -1,4 +1,4 @@
-#!/bin/powershell
+#!/usr/bin/pwsh
 <#
 .SYNTAX       ./speak-time.ps1
 .DESCRIPTION  speaks the current time by text-to-speech (TTS)

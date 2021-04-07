@@ -1,4 +1,4 @@
-#!/bin/powershell
+#!/usr/bin/pwsh
 <#
 .SYNTAX       ./weather-alert.ps1
 .DESCRIPTION  checks the current weather for critical values

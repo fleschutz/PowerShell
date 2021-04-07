@@ -1,4 +1,4 @@
-#!/bin/powershell
+#!/usr/bin/pwsh
 <#
 .SYNTAX       ./list-installed-apps.ps1
 .DESCRIPTION  lists the installed Windows Store apps

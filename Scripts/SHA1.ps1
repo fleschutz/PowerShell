@@ -1,4 +1,4 @@
-#!/bin/powershell
+#!/usr/bin/pwsh
 <#
 .SYNTAX       ./SHA1.ps1 [<file>]
 .DESCRIPTION  prints the SHA1 checksum of the given file

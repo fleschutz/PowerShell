@@ -1,4 +1,4 @@
-#!/bin/powershell
+#!/usr/bin/pwsh
 <#
 .SYNTAX       ./enable-god-mode.ps1 
 .DESCRIPTION  enables the god mode (adds a new icon to the desktop)

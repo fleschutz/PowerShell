@@ -1,4 +1,4 @@
-#!/bin/powershell
+#!/usr/bin/pwsh
 <#
 .SYNTAX       ./go-root.ps1 
 .DESCRIPTION  go to the root directory (C: on Windows)

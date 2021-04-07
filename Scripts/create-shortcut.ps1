@@ -1,4 +1,4 @@
-#!/bin/powershell
+#!/usr/bin/pwsh
 <#
 .SYNTAX       ./create-shortcut.ps1 [<shortcut>] [<target>] [<description>]
 .DESCRIPTION  creates a new shortcut

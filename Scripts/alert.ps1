@@ -1,4 +1,4 @@
-#!/bin/powershell
+#!/usr/bin/pwsh
 <#
 .SYNTAX       ./alert.ps1 [<message>]
 .DESCRIPTION  handle and escalate the given alert message

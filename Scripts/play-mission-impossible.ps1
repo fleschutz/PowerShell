@@ -1,4 +1,4 @@
-#!/bin/powershell
+#!/usr/bin/pwsh
 <#
 .SYNTAX       ./play-mission-impossible.ps1
 .DESCRIPTION  plays the Mission Impossible theme

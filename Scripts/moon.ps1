@@ -1,4 +1,4 @@
-#!/bin/powershell
+#!/usr/bin/pwsh
 <#
 .SYNTAX       ./moon.ps1
 .DESCRIPTION  prints the current moon phase

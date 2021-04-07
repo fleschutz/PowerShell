@@ -1,4 +1,4 @@
-#!/bin/powershell
+#!/usr/bin/pwsh
 <#
 .SYNTAX       ./download.ps1 [<URL>]
 .DESCRIPTION  downloads the file/directory from the given URL

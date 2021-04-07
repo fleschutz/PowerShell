@@ -1,4 +1,4 @@
-#!/bin/powershell
+#!/usr/bin/pwsh
 <#
 .SYNTAX       ./weather.ps1 [<geo-location>]
 .DESCRIPTION  prints the current weather forecast

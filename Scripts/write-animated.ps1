@@ -1,4 +1,4 @@
-#!/bin/powershell
+#!/usr/bin/pwsh
 <#
 .SYNTAX       ./write-animated.ps1 [<line1>] .. [line9>] [<speed>]
 .DESCRIPTION  writes animated text

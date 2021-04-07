@@ -1,4 +1,4 @@
-#!/bin/powershell
+#!/usr/bin/pwsh
 <#
 .SYNTAX       ./edit.ps1 <filename>
 .DESCRIPTION  starts the built-in text editor to edit the given file

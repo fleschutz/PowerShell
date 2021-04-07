@@ -1,4 +1,4 @@
-#!/bin/powershell
+#!/usr/bin/pwsh
 <#
 .SYNTAX       ./list-profiles.ps1
 .DESCRIPTION  lists your PowerShell profiles

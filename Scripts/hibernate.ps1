@@ -1,4 +1,4 @@
-#!/bin/powershell
+#!/usr/bin/pwsh
 <#
 .SYNTAX       ./hibernate.ps1
 .DESCRIPTION  enables hibernate mode for the local computer (requires admin rights)

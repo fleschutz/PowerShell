@@ -1,4 +1,4 @@
-#!/bin/powershell
+#!/usr/bin/pwsh
 <#
 .SYNTAX       ./check-cpu-temp.ps1 
 .DESCRIPTION  checks the CPU temperature

@@ -1,4 +1,4 @@
-#!/bin/powershell
+#!/usr/bin/pwsh
 <#
 .SYNTAX       ./list-automatic-variables.ps1
 .DESCRIPTION  lists the automatic variables of PowerShell 

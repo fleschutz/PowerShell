@@ -1,4 +1,4 @@
-#!/bin/powershell
+#!/usr/bin/pwsh
 <#
 .SYNTAX       ./enable-ssh-server.ps1
 .DESCRIPTION  enables the SSH server

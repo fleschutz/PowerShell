@@ -1,4 +1,4 @@
-#!/bin/powershell
+#!/usr/bin/pwsh
 <#
 .SYNTAX       ./list-network-shares.ps1 
 .DESCRIPTION  lists the network shares of the local computer

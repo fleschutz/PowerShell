@@ -1,4 +1,4 @@
-#!/bin/powershell
+#!/usr/bin/pwsh
 <#
 .SYNTAX       ./list-commits.ps1 [<repo-dir>] [<format>]
 .DESCRIPTION  lists all commits in the current/given Git repository 

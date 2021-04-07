@@ -1,4 +1,4 @@
-#!/bin/powershell
+#!/usr/bin/pwsh
 <#
 .SYNTAX       ./write-marquee.ps1 [<text>] [<speed>]
 .DESCRIPTION  writes the given text as marquee

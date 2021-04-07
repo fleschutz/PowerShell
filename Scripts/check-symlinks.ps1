@@ -1,4 +1,4 @@
-#!/bin/powershell
+#!/usr/bin/pwsh
 <#
 .SYNTAX       ./check-symlinks.ps1 [<dir-tree>]
 .DESCRIPTION  checks every symlink in the given directory tree

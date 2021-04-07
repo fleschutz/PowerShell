@@ -1,4 +1,4 @@
-#!/bin/powershell
+#!/usr/bin/pwsh
 <#
 .SYNTAX       ./write-motd.ps1 
 .DESCRIPTION  writes the message of the day (MOTD)

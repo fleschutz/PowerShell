@@ -1,4 +1,4 @@
-#!/bin/powershell
+#!/usr/bin/pwsh
 <#
 .SYNTAX       ./go-home.ps1 
 .DESCRIPTION  go to the user's home folder

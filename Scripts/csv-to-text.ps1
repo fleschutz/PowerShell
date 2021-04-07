@@ -1,4 +1,4 @@
-#!/bin/powershell
+#!/usr/bin/pwsh
 <#
 .SYNTAX       ./csv-to-text.ps1 [<csv-file>]
 .DESCRIPTION  converts the given CSV file into a text list

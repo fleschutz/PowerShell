@@ -1,4 +1,4 @@
-#!/bin/powershell
+#!/usr/bin/pwsh
 <#
 .SYNTAX       ./mute-audio.ps1
 .DESCRIPTION  mutes the audio

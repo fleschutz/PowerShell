@@ -1,4 +1,4 @@
-#!/bin/powershell
+#!/usr/bin/pwsh
 <#
 .SYNTAX       ./reboot.ps1
 .DESCRIPTION  reboots the local computer (requires admin rights)

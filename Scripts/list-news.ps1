@@ -1,4 +1,4 @@
-#!/bin/powershell
+#!/usr/bin/pwsh
 <#
 .SYNTAX       ./list-news.ps1 [<RSS-URL>]
 .DESCRIPTION  lists the latest news

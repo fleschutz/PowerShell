@@ -1,4 +1,4 @@
-#!/bin/powershell
+#!/usr/bin/pwsh
 <#
 .SYNTAX       ./create-branch.ps1 [<new-branch-name>] [<repo-dir>]
 .DESCRIPTION  creates a new branch in the current/given Git repository 

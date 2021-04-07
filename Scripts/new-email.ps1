@@ -1,4 +1,4 @@
-#!/bin/powershell
+#!/usr/bin/pwsh
 <#
 .SYNTAX       ./new-email.ps1 [<address>]
 .DESCRIPTION  starts the default email client to write a new email

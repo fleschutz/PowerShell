@@ -1,4 +1,4 @@
-#!/bin/powershell
+#!/usr/bin/pwsh
 <#
 .SYNTAX       ./search-files.ps1 [<pattern>] [<path>]
 .DESCRIPTION  searches the given pattern in the given files

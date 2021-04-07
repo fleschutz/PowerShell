@@ -1,4 +1,4 @@
-#!/bin/powershell
+#!/usr/bin/pwsh
 <#
 .SYNTAX       make-install.ps1 <build-dir>
 .DESCRIPTION  Copies newer EXE's + DLL's from the build directory to the installation directory.

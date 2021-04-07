@@ -1,4 +1,4 @@
-#!/bin/powershell
+#!/usr/bin/pwsh
 <#
 .SYNTAX       ./weather-report.ps1 [<geo-location>]
 .DESCRIPTION  prints the local weather report 

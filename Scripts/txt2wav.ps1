@@ -1,4 +1,4 @@
-#!/bin/powershell
+#!/usr/bin/pwsh
 <#
 .SYNTAX       ./txt2wav.ps1
 .DESCRIPTION  converts the given text into an audio .WAV file

@@ -1,4 +1,4 @@
-#!/bin/powershell
+#!/usr/bin/pwsh
 <#
 .SYNTAX       ./poweroff.ps1
 .DESCRIPTION  halts the local computer, administrator rights are required 

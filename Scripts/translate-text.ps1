@@ -1,4 +1,4 @@
-#!/bin/powershell
+#!/usr/bin/pwsh
 <#
 .SYNTAX       ./translate-text.ps1 [<text>] [<source-lang>]
 .DESCRIPTION  translates the given text into other languages

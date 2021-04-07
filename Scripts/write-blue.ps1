@@ -1,4 +1,4 @@
-#!/bin/powershell
+#!/usr/bin/pwsh
 <#
 .SYNTAX       ./write-blue.ps1 [<text>]
 .DESCRIPTION  writes the given text in a blue foreground color

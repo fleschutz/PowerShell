@@ -1,4 +1,4 @@
-#!/bin/powershell
+#!/usr/bin/pwsh
 <#
 .SYNTAX       ./list-timezones.ps1 
 .DESCRIPTION  lists all time zones available

@@ -1,4 +1,4 @@
-#!/bin/powershell
+#!/usr/bin/pwsh
 <#
 .SYNTAX       ./list-processes.ps1 
 .DESCRIPTION  lists the local computer processes

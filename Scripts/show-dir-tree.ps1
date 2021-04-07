@@ -1,4 +1,4 @@
-#!/bin/powershell
+#!/usr/bin/pwsh
 <#
 .SYNTAX       ./show-dir-tree.ps1 [<dir-tree>]
 .DESCRIPTION  visualizes the given/current directory tree

@@ -1,4 +1,4 @@
-#!/bin/powershell
+#!/usr/bin/pwsh
 <#
 .SYNTAX       ./check-xml-file [<file>]
 .DESCRIPTION  checks the given XML file for validity

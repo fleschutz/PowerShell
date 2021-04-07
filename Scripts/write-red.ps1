@@ -1,4 +1,4 @@
-#!/bin/powershell
+#!/usr/bin/pwsh
 <#
 .SYNTAX       ./write-red.ps1 [<text>]
 .DESCRIPTION  writes the given text in a red foreground color

@@ -1,4 +1,4 @@
-#!/bin/powershell
+#!/usr/bin/pwsh
 <#
 .SYNTAX       ./speak-english.ps1 [<text>]
 .DESCRIPTION  speaks the given text with an English text-to-speech (TTS) voice

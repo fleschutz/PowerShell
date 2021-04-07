@@ -1,4 +1,4 @@
-#!/bin/powershell
+#!/usr/bin/pwsh
 <#
 .SYNTAX       ./locate-zip-code.ps1 [<country-code>] [<zip-code>]
 .DESCRIPTION  prints the geographic location of the given zip-code

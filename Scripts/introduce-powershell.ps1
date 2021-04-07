@@ -1,4 +1,4 @@
-#!/bin/powershell
+#!/usr/bin/pwsh
 <#
 .SYNTAX       ./introduce-powershell.ps1
 .DESCRIPTION  introduces PowerShell to new users

@@ -1,4 +1,4 @@
-#!/bin/powershell
+#!/usr/bin/pwsh
 <#
 .SYNTAX       ./play-m3u.ps1 [<playlist-file>]
 .DESCRIPTION  plays the given playlist (M3U file format)

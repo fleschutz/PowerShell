@@ -1,4 +1,4 @@
-#!/bin/powershell
+#!/usr/bin/pwsh
 <#
 .SYNTAX       ./smart-data2csv.ps1 [<directory>]
 .DESCRIPTION  converts the S.M.A.R.T. JSON files in the current/given directory to a CSV table for analysis

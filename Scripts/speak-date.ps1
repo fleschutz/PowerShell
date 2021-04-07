@@ -1,4 +1,4 @@
-#!/bin/powershell
+#!/usr/bin/pwsh
 <#
 .SYNTAX       ./speak-date.ps1
 .DESCRIPTION  speaks the current date by text-to-speech (TTS)

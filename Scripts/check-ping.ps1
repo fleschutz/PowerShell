@@ -1,4 +1,4 @@
-#!/bin/powershell
+#!/usr/bin/pwsh
 <#
 .SYNTAX       ./check-ping.ps1 
 .DESCRIPTION  checks the ping latency to the internet

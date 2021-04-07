@@ -1,4 +1,4 @@
-#!/bin/powershell
+#!/usr/bin/pwsh
 <#
 .SYNTAX       ./list-formatted.ps1 [<directory>]
 .DESCRIPTION  lists the current working directory formatted in columns

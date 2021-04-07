@@ -1,4 +1,4 @@
-#!/bin/powershell
+#!/usr/bin/pwsh
 <#
 .SYNTAX       ./list-tasks.ps1 
 .DESCRIPTION  lists all Windows scheduler tasks

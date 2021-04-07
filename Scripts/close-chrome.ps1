@@ -1,4 +1,4 @@
-#!/bin/powershell
+#!/usr/bin/pwsh
 <#
 .SYNTAX       ./close-chrome.ps1 
 .DESCRIPTION  closes Google Chrome gracefully

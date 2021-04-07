@@ -1,4 +1,4 @@
-#!/bin/powershell
+#!/usr/bin/pwsh
 <#
 .SYNTAX       ./list-environment-variables.ps1
 .DESCRIPTION  lists all environment variables

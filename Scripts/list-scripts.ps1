@@ -1,4 +1,4 @@
-#!/bin/powershell
+#!/usr/bin/pwsh
 <#
 .SYNTAX       ./list-scripts.ps1
 .DESCRIPTION  lists all PowerShell scripts in this repository (sorted alphabetically)

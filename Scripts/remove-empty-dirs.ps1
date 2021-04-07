@@ -1,4 +1,4 @@
-#!/bin/powershell
+#!/usr/bin/pwsh
 <#
 .SYNTAX       ./remove-empty-dirs.ps1 [<dir-tree>]
 .DESCRIPTION  removes empty subfolders within the given directory tree

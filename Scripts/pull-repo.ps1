@@ -1,4 +1,4 @@
-#!/bin/powershell
+#!/usr/bin/pwsh
 <#
 .SYNTAX       ./pull-repo.ps1 [<repo-dir>]
 .DESCRIPTION  pulls updates for the current/given Git repository (including submodules)

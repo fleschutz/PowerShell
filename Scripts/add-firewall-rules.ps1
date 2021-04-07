@@ -1,4 +1,4 @@
-#!/bin/powershell
+#!/usr/bin/pwsh
 <#
 .SYNTAX       ./add-firewall-rules.ps1 [<path-to-executables>]
 .DESCRIPTION  adds firewall rules for the given executables, administrator rights are required

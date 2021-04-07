@@ -1,4 +1,4 @@
-#!/bin/powershell
+#!/usr/bin/pwsh
 <#
 .SYNTAX       ./list-logbook.ps1 
 .DESCRIPTION  lists the content of the logbook (in ../Data/logbook.csv)
