@@ -34,7 +34,7 @@ How to get the PowerShell Scripts?
 
 How to use PowerShell by Default?
 ---------------------------------
-* **On Linux:** make sure PowerShell is installed, then execute: `chsh -s /bin/powershell <username>`
+* **On Linux:** make sure PowerShell is installed, then execute: `chsh -s /usr/bin/pwsh <username>`. In case you experience an "invalid shell" error, add "/usr/bin/pwsh" to /etc/shells.
 * **On Windows:** no need to, PowerShell is the default shell
 
 
