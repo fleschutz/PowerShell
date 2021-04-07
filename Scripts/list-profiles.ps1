@@ -7,13 +7,12 @@
 #>
 
 function ShowProfile { param([int]$Level, [string]$Name, [string]$Filename)
-	write-output "$($Level). '$($Name)'"
+	write-output "Level: $Level"
+	write-output "Name:  $Name"
 	if (test-path "$Filename") {
-		write-output "   at $($Filename) containing:"
-		$Content = get-content $Filename
-		write-output "$Content"
+		write-output "File:  $Filename"
 	} else {
-		write-output "   at $Filename (file non-existent)"
+		write-output "File:  $Filename (file missing)"
 	}
 	write-output ""
 }
@@ -21,7 +20,7 @@ function ShowProfile { param([int]$Level, [string]$Name, [string]$Filename)
 try {
 	write-output ""
 	write-output "PowerShell Profiles"
-	write-output "-------------------"
+	write-output "==================="
 	ShowProfile 1 "AllUsersAllHosts"       $PROFILE.AllUsersAllHosts
 	ShowProfile 2 "AllUsersCurrentHost"    $PROFILE.AllUsersCurrentHost
 	ShowProfile 3 "CurrentUserAllHosts"    $PROFILE.CurrentUserAllHosts
