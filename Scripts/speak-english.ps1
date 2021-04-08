@@ -7,20 +7,19 @@
 #>
 
 param($Text = "")
-if ($Text -eq "") { $Text = read-host "Enter the text to speak" }
+if ("$Text" -eq "") { $Text = read-host "Enter the text to speak" }
 
 try {
 	$Voice = new-object -ComObject SAPI.SPVoice
 	$Voices = $Voice.GetVoices()
 	foreach ($OtherVoice in $Voices) {
 		$Description = $OtherVoice.GetDescription()
-		if ($Description -like "*- English*") {
-			write-progress "$Text"
-			$Voice.Voice = $OtherVoice
-			[void]$Voice.Speak($Text)
-			write-progress -complete "$Text"
-			exit 0
-		}
+		if ($Description -notlike "*- English*") { continue }
+#		write-progress "$Text"
+		$Voice.Voice = $OtherVoice
+		[void]$Voice.Speak($Text)
+#		write-progress -complete "$Text"
+		exit 0
 	}
 	write-error "Sorry, no English text-to-speech (TTS) voice found"
 	exit 1

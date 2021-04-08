@@ -12,7 +12,7 @@ Mega Collection of PowerShell Scripts
 * [play-mp3.ps1](Scripts/play-mp3.ps1) - plays the given sound file (MP3 file format)
 * [play-super-mario.ps1](Scripts/play-super-mario.ps1) - plays the Super Mario Intro
 * [play-the-imperial-march.ps1](Scripts/play-the-imperial-march.ps1) - plays the Imperial March (Star Wars)
-* [speak-countdown.ps1](Scripts/speak-countdown.ps1) - speaks a countdown by text-to-speech (TTS)
+* [speak-countdown.ps1](Scripts/speak-countdown.ps1) - starts a countdown by text-to-speech (TTS)
 * [speak-date.ps1](Scripts/speak-date.ps1) - speaks the current date by text-to-speech (TTS)
 * [speak-english.ps1](Scripts/speak-english.ps1) - speaks the given text with an English text-to-speech (TTS) voice
 * [speak-epub.ps1](Scripts/speak-epub.ps1) - speaks the content of the given Epub file by text-to-speech (TTS)

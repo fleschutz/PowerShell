@@ -14,13 +14,12 @@ try {
 	$Voices = $Voice.GetVoices()
 	foreach ($OtherVoice in $Voices) {
 		$Description = $OtherVoice.GetDescription()
-		if ($Description -like "*- German*") {
-			write-progress "$Text"
-			$Voice.Voice = $OtherVoice
-			[void]$Voice.Speak($Text)
-			write-progress -complete "$Text"
-			exit 0
-		}
+		if ($Description -notlike "*- German*") { continue }
+#		write-progress "$Text"
+		$Voice.Voice = $OtherVoice
+		[void]$Voice.Speak($Text)
+#		write-progress -complete "$Text"
+		exit 0
 	}
 	write-error "No German text-to-speech (TTS) voice found"
 	exit 1
