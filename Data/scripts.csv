@@ -129,6 +129,7 @@ SHA256.ps1, prints the SHA256 checksum of the given file
 show-dir-tree.ps1, visualizes the given/current directory tree
 simulate-matrix.ps1, simulates the Matrix (fun)
 simulate-presence.ps1, simulates the human presence against burglars
+speak-countdown.ps1, speaks a countdown by text-to-speech (TTS)
 speak-date.ps1, speaks the current date by text-to-speech (TTS)
 speak-english.ps1, speaks the given text with an English text-to-speech (TTS) voice
 speak-epub.ps1, speaks the content of the given Epub file by text-to-speech (TTS)
