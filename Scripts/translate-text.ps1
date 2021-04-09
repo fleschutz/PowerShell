@@ -1,15 +1,13 @@
 #!/usr/bin/pwsh
 <#
-.SYNTAX       translate-text.ps1 [<text>] [<source-lang>]
-.DESCRIPTION  translates the given text in English into other languages
+.SYNTAX       translate-text.ps1 [<text>] [<source-lang>] [<target-lang>]
+.DESCRIPTION  translates the given text into other languages
 .LINK         https://github.com/fleschutz/PowerShell
 .NOTES        Author: Markus Fleschutz / License: CC0
 #>
 
-param($Text = "", $SourceLang = "en")
-
+param($Text = "", $SourceLang = "en", $TargetLang = "any")
 if ($Text -eq "" ) { $Text = read-host "Enter text in English to translate" }
-$TargetLanguages = "Arabic","Chinese","French","German","Hindi","Irish","Italian","Japanese","Korean","Portuguese","Russian","Spanish"
 
 function Language2Code { param([string]$Language)
 	$Code = switch($Language) {
@@ -47,10 +45,17 @@ function UseArgosTranslateCLI { param([string]$Text, [string]$SourceLang, [strin
 }
 
 try {
-	foreach($TargetLanguage in $TargetLanguages) {
-		$TargetLangCode = Language2Code $TargetLanguage
+	if ($TargetLang -eq "any") {
+		$TargetLanguages = "Arabic","Chinese","French","German","Hindi","Irish","Italian","Japanese","Korean","Portuguese","Russian","Spanish"
+		foreach($TargetLang in $TargetLanguages) {
+			$TargetLangCode = Language2Code $TargetLang
+			$Result = UseLibreTranslate $Text $SourceLang $TargetLangCode
+			write-output "$TargetLang : $Result"
+		}
+	} else {
+		$TargetLangCode = Language2Code $TargetLang
 		$Result = UseLibreTranslate $Text $SourceLang $TargetLangCode
-		write-output "$TargetLanguage : $Result"
+		write-output "$Result"
 	}
 	exit 0
 } catch {

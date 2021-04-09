@@ -175,6 +175,7 @@ Mega Collection of PowerShell Scripts
 * [simulate-presence.ps1](Scripts/simulate-presence.ps1) - simulates the human presence against burglars
 * [switch-shelly1.ps1](Scripts/switch-shelly1.ps1) - switches a Shelly1 device in the local network
 * [translate-file.ps1](Scripts/translate-file.ps1) - translates the given text file into other languages
+* [translate-files.ps1](Scripts/translate-files.ps1) - translates the given text files into any supported language
 * [translate-text.ps1](Scripts/translate-text.ps1) - translates the given text in English into other languages
 * [weather.ps1](Scripts/weather.ps1) - prints the current weather forecast
 * [weather-alert.ps1](Scripts/weather-alert.ps1) - checks the current weather for critical values

@@ -144,6 +144,7 @@ switch-shelly1.ps1, switches a Shelly1 device in the local network
 take-screenshot.ps1, takes a single screenshot
 take-screenshots.ps1, takes multiple screenshots
 translate-file.ps1, translates the given text file into another language
+translate-files.ps1, translates the given text files into any supported language
 translate-text.ps1, translates the given text into other languages
 turn-volume-up.ps1, turns the audio volume up (+10% by default)
 turn-volume-down.ps1, turns the audio volume down (-10% by default)
