@@ -1,9 +1,15 @@
 #  My PowerShell Profile
 #  =====================
-#  Welcome to 'my-profile.ps1' - this file defines the look&feel of PowerShell for the user.
-#  Simply comment/uncomment/adapt the following lines.
-#
-#
+#  Welcome to 'my-profile.ps1' - this file defines the look & feel of PowerShell.
+#  Comment, uncomment or adapt the following lines to your needs, please.
+
+
+#  My Welcome Message
+#  ------------------
+write-host "+++ Welcome to PowerShell $($PSVersionTable.PSVersion) at $(hostname), it's $(Get-date) +++"
+write-host ""
+
+
 #  My Command Prompt
 #  -----------------
 
@@ -12,19 +18,17 @@
 # function prompt { "$ " }	# result is: $
 
 function prompt {
-	if ($IsLinux) { $Username = $(whoami) } else { $Username = $env:USERNAME }
-	$host.ui.RawUI.WindowTitle = "$Username @ $(hostname)"
+	if ($IsLinux) { $User = $(whoami) } else { $User = $env:USERNAME }
+	$host.ui.RawUI.WindowTitle = "$User @ $(hostname)"
 	write-host -foregroundColor blue -noNewLine "$(Get-Location)"
 	return "> "
 } # result is: C:\> 
 
 
-#  My Alias Names
+#  My Alias Names (sorted alphabetically)
 #  --------------
-set-alias -name lsf -value get-childitem # lsf means list directory formatted
+set-alias -name ll -value get-childitem		# ll = list long
+set-alias -name lsf -value list-formatted.ps1	# lsf = list directory formatted in columns
 
 
-#  My Welcome Message
-#  ------------------
-write-host "+++ Welcome to PowerShell $($PSVersionTable.PSVersion) at $(hostname), it's $(Get-date) +++"
-write-host ""
+
