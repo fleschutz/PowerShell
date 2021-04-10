@@ -29,6 +29,7 @@ close-windows-terminal.ps1, closes Windows Terminal gracefully
 configure-git.ps1, sets up the Git user configuration
 convert-csv2txt.ps1, converts the given CSV file into a text list
 convert-mysql2csv.ps1, converts the MySQL database table to a CSV file
+convert-sql2csv.ps1, converts the SQL database table to a CSV file
 create-branch.ps1, creates a new branch in the current/given Git repository 
 create-shortcut.ps1, creates a shortcut
 create-symlink.ps1, creates a symbolic link

@@ -150,6 +150,7 @@ Mega Collection of PowerShell Scripts
 * [check-mac-address.ps1](Scripts/check-mac-address.ps1) - checks the given MAC address for validity
 * [convert-csv2txt.ps1](Scripts/convert-csv2txt.ps1) - converts the given CSV file into a text list
 * [convert-mysql2csv.ps1](Scripts/convert-mysql2csv.ps1) - converts the MySQL database table to a CSV file
+* [convert-sql2csv.ps1](Scripts/convert-sql2csv.ps1) - converts the SQL database table to a CSV file
 * [display-time.ps1](Scripts/display-time.ps1) - displays the current time for 10 seconds by default
 * [generate-qrcode.ps1](Scripts/generate-qrcode.ps1) - generates a QR code
 * [list-anagrams.ps1](Scripts/list-anagrams.ps1) - lists all anagrams of the given word
