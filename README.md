@@ -109,6 +109,7 @@ Mega Collection of PowerShell Scripts
 * [make-install.ps1](Scripts/make-install.ps1) - installs built executables and libs to the installation directory
 * [MD5.ps1](Scripts/MD5.ps1) - prints the MD5 checksum of the given file
 * [remove-empty-dirs.ps1](Scripts/remove-empty-dirs.ps1) - removes empty subfolders within the given directory tree
+* [search-filename.ps1](Scripts/search-filename.ps1) - searches the directory tree for filenames by given pattern 
 * [search-files.ps1](Scripts/search-files.ps1) - searches the given pattern in the given files
 * [SHA1.ps1](Scripts/SHA1.ps1) - prints the SHA1 checksum of the given file
 * [SHA256.ps1](Scripts/SHA256.ps1) - prints the SHA256 checksum of the given file
