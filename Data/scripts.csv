@@ -60,6 +60,7 @@ list-aliases.ps1, lists all PowerShell aliases
 list-anagrams.ps1, lists all anagrams of the given word
 list-automatic-variables.ps1, lists the automatic variables of PowerShell 
 list-branches.ps1, lists all branches in the current/given Git repository 
+list-cheat-sheet.ps1, lists the PowerShell cheat sheet
 list-commits.ps1, lists all commits in the current/given Git repository 
 list-current-timezone.ps1, lists the current time zone details
 list-clipboard.ps1, lists the contents of the clipboard

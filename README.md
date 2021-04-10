@@ -139,6 +139,7 @@ Mega Collection of PowerShell Scripts
 * [introduce-powershell.sh](Scripts/introduce-powershell.sh) - introduces PowerShell to new users
 * [list-aliases.ps1](Scripts/list-aliases.ps1) - lists all PowerShell aliases 
 * [list-automatic-variables.ps1](Scripts/list-automatic-variables.ps1) - lists the automatic variables of PowerShell 
+* [list-cheat-sheet.ps1](Scripts/list-cheat-sheet.ps1) - lists the PowerShell cheat sheet
 * [list-cmdlets.ps1](Scripts/list-cmdlets.ps1) - lists the PowerShell cmdlets
 * [list-modules.ps1](Scripts/list-modules.ps1) - lists the PowerShell modules
 * [list-profiles.ps1](Scripts/list-profiles.ps1) - lists your PowerShell profiles
