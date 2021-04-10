@@ -78,6 +78,7 @@ list-unused-files.ps1, lists unused files in a directory tree
 list-cmdlets.ps1, lists the PowerShell cmdlets
 list-earthquakes.ps1, lists earthquakes with magnitude >= 6.0 for the last 30 days
 list-modules.ps1, lists the PowerShell modules
+list-mysql-tables.ps1, lists the MySQL server tables
 list-network-shares.ps1, lists the network shares of the local computer
 list-news.ps1, lists the latest news
 list-os-releases.ps1, lists OS releases and download URL 
@@ -88,6 +89,7 @@ list-random-passwords.ps1, prints a list of random passwords
 list-random-pins.ps1, prints a list of random PIN's
 list-scripts.ps1, lists all PowerShell scripts in this repository
 list-services.ps1, lists the services on the local computer
+list-sql-tables.ps1, lists the SQL server tables
 list-system-info.ps1, lists system information on the local computer
 list-tags.ps1, lists all tags in the current/given Git repository 
 list-tasks.ps1, lists all Windows scheduler tasks
