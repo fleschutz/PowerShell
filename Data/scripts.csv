@@ -27,6 +27,7 @@ close-thunderbird.ps1, closes Mozilla Thunderbird gracefully
 close-vlc.ps1, closes the VLC media player gracefully
 close-windows-terminal.ps1, closes Windows Terminal gracefully
 configure-git.ps1, sets up the Git user configuration
+convert-mysql2csv.ps1, converts the MySQL database table to a CSV file
 create-branch.ps1, creates a new branch in the current/given Git repository 
 create-shortcut.ps1, creates a shortcut
 create-symlink.ps1, creates a symbolic link

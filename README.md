@@ -148,6 +148,7 @@ Mega Collection of PowerShell Scripts
 * [check-ipv4-address.ps1](Scripts/check-ipv4-address.ps1) - checks the given IPv4 address for validity
 * [check-ipv6-address.ps1](Scripts/check-ipv6-address.ps1) - checks the given IPv6 address for validity
 * [check-mac-address.ps1](Scripts/check-mac-address.ps1) - checks the given MAC address for validity
+* [convert-mysql2csv.ps1](Scripts/convert-mysql2csv.ps1) - converts the MySQL database table to a CSV file
 * [csv-to-text.ps1](Scripts/csv-to-text.ps1) - converts the given CSV file into a text list
 * [display-time.ps1](Scripts/display-time.ps1) - displays the current time for 10 seconds by default
 * [generate-qrcode.ps1](Scripts/generate-qrcode.ps1) - generates a QR code
