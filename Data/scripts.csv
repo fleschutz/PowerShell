@@ -27,12 +27,12 @@ close-thunderbird.ps1, closes Mozilla Thunderbird gracefully
 close-vlc.ps1, closes the VLC media player gracefully
 close-windows-terminal.ps1, closes Windows Terminal gracefully
 configure-git.ps1, sets up the Git user configuration
+convert-csv2txt.ps1, converts the given CSV file into a text list
 convert-mysql2csv.ps1, converts the MySQL database table to a CSV file
 create-branch.ps1, creates a new branch in the current/given Git repository 
 create-shortcut.ps1, creates a shortcut
 create-symlink.ps1, creates a symbolic link
 create-tag.ps1, creates a new tag in the current/given Git repository 
-csv-to-text.ps1, converts the given CSV file into a text list
 daily-tasks.sh, execute PowerShell scripts automatically as daily tasks (Linux only)
 decrypt-file.ps1, decrypts the given file
 display-time.ps1, displays the current time for 10 seconds by default
