@@ -43,6 +43,7 @@ Mega Collection of PowerShell Scripts
 * [enable-ssh-client.ps1](Scripts/enable-ssh-client.ps1) - enables the SSH client (needs admin rights)
 * [enable-ssh-server.ps1](Scripts/enable-ssh-server.ps1) - enables the SSH server (needs admin rights)
 * [hibernate.ps1](Scripts/hibernate.ps1) - enables hibernate mode for the local computer (needs admin rights)
+* [install-google-chrome.ps1](Scripts/install-google-chrome.ps1) - installs the Google Chrome browser
 * [list-drives.ps1](Scripts/list-drives.ps1) - lists all drives
 * [list-network-shares.ps1](Scripts/list-network-shares.ps1) - lists the network shares of the local computer
 * [list-current-timezone.ps1](Scripts/list-current-timezone.ps1) - lists the current time zone details

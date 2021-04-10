@@ -54,6 +54,7 @@ go-root.ps1, go to the root directory (C: on Windows)
 go-scripts.ps1, go to the PowerShell Scripts folder
 hibernate.ps1, enables hibernate mode for the local computer (requires admin rights)
 inspect-exe.ps1, prints basic information of the given executable file
+install-google-chrome.ps1, installs the Google Chrome browser
 introduce-powershell.ps1, introduces PowerShell to new users
 list-aliases.ps1, lists all PowerShell aliases 
 list-anagrams.ps1, lists all anagrams of the given word
