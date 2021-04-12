@@ -1,3 +1,4 @@
+#!/usr/bin/pwsh
 <#
 .SYNTAX       list-cheat-sheet.ps1 
 .DESCRIPTION  lists the PowerShell cheat sheet 
