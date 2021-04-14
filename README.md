@@ -197,6 +197,7 @@ Mega Collection of PowerShell Scripts
 * [write-braille.ps1](Scripts/write-braille.ps1) - writes the given text in Braille
 * [write-green.ps1](Scripts/write-green.ps1) - writes the given text in a green foreground color
 * [write-logbook.ps1](Scripts/write-logbook.ps1) - writes the given text to the logbook
+* [write-lowercase.ps1](Scripts/write-lowercase.ps1) - writes the given text in lowercase letters
 * [write-marquee.ps1](Scripts/write-marquee.ps1) - writes the given text as marquee
 * [write-morse-code.ps1](Scripts/write-morse-code.ps1) - writes the given text in Morse code
 * [write-motd.ps1](Scripts/write-motd.ps1) - writes the message of the day (MOTD)
