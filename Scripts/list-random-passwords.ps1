@@ -12,23 +12,18 @@ $Lines = 24
 $MinCharCode = 33
 $MaxCharCode = 126
 
-function GeneratePassword {
-	$Generator = New-Object System.Random
-	for ($i = 0; $i -lt $PasswordLength; $i++) {
-		$Result += [char]$Generator.next($MinCharCode,$MaxCharCode)
-	}
-	return $Result
-}
-
 try {
 	write-output ""
+	$Generator = New-Object System.Random
 	for ($j = 0; $j -lt $Lines; $j++) {
 		$Line = ""
 		for ($k = 0; $k -lt $Columns; $k++) {
-			$Line += GeneratePassword
+			for ($i = 0; $i -lt $PasswordLength; $i++) {
+				$Line += [char]$Generator.next($MinCharCode,$MaxCharCode)
+			}
 			$Line += "   "
 		}
-		write-output $Line
+		write-output "$Line"
 	}
 	write-output ""
 	exit 0
