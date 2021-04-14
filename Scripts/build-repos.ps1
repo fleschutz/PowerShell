@@ -17,8 +17,8 @@ try {
 
 	[int]$Count = 0
 	get-childItem $ParentDir -attributes Directory | foreach-object {
-		& "$PSScriptRoot/build-repo.ps1" "$ParentDir/$($_.FullName)"
-		if ($lastExitCode -ne "0") { throw "'git fetch --all --recurse-submodules' failed" }
+		& "$PSScriptRoot/build-repo.ps1" "$($_.FullName)"
+		if ($lastExitCode -ne "0") { throw "Script 'build-repo.ps1' failed" }
 
 		$Count++
 	}

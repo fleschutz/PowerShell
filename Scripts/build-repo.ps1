@@ -9,10 +9,12 @@
 param($RepoDir = "$PWD")
 
 try {
-	if (test-path "$Repodir/CMakeLists.txt") { 
+	if (test-path "$RepoDir/CMakeLists.txt") { 
 		"Building $RepoDir using CMakeLists.txt..."
-		& mkdir CMakeBuild
-		set-location CMakeBuild
+		if (-not(test-path "$RepoDir/CMakeBuild") { 
+			& mkdir "$RepoDir/CMakeBuild/"
+		}
+		set-location "$RepoDir/CMakeBuild/"
 
 		& cmake ..
 		if ($lastExitCode -ne "0") { throw "Executing 'cmake ..' has failed" }
@@ -21,9 +23,17 @@ try {
 		if ($lastExitCode -ne "0") { throw "Executing 'make -j4' has failed" }
 	} elseif (test-path "$RepoDir/Makefile") {
 		"Building $RepoDir using Makefile..."
+		set-location "$RepoDir/"
 
 		& make -j4
 		if ($lastExitCode -ne "0") { throw "Executing 'make -j4' has failed" }
+	} elseif (test-path "$RepoDir/attower/src/build/DevBuild/build-all-release.bat") {
+		"Building $RepoDir using build-all-release.bat..."
+		set-location "$RepoDir/attower/src/build/DevBuild/"
+
+		& build-all-release.bat
+		if ($lastExitCode -ne "0") { throw "Script 'build-all-release.bat' returned error(s)" }
+
 	} else {
 		write-warning "Sorry, no clue how to build $RepoDir"
 		exit 0
