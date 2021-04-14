@@ -19,7 +19,8 @@ try {
 	if (-not(test-path "$File" -pathType leaf)) { throw "Can't access file: $File" }
 	$FullPath = Resolve-Path $File
 	$Filename = (Get-Item $File).Name
-	write-debug "Local file: $FullPath, filename: $Filename"
+	$FileSize = (Get-Item $File).Length
+	"Local file: $FullPath ($FileSize bytes)"
 
 	$request = [Net.WebRequest]::Create("$URL/$Filename")
 	$request.Credentials = New-Object System.Net.NetworkCredential("$Username", "$Password")
@@ -32,7 +33,14 @@ try {
 	$fileStream = [System.IO.File]::OpenRead("$FullPath")
 	$ftpStream = $request.GetRequestStream()
 
-	$fileStream.CopyTo($ftpStream)
+	"Uploading ..."
+	$buffer = New-Object Byte[] 64KB
+	while (($read = $fileStream.Read($buffer, 0, $buffer.Length)) -gt 0)
+	{
+	    $ftpStream.Write($buffer, 0, $read)
+	    $pct = ($fileStream.Position / $fileStream.Length)
+	    Write-Progress -Activity "Uploading" -Status ("{0:P0} complete:" -f $pct) -PercentComplete ($pct * 100)
+	}
 
 	# cleanup:
 	$ftpStream.Dispose()
