@@ -30,6 +30,7 @@ configure-git.ps1, sets up the Git user configuration
 convert-csv2txt.ps1, converts the given CSV file into a text list
 convert-mysql2csv.ps1, converts the MySQL database table to a CSV file
 convert-sql2csv.ps1, converts the SQL database table to a CSV file
+convert-txt2wav.ps1, converts text into a audio .WAV file
 create-branch.ps1, creates a new branch in the current/given Git repository 
 create-shortcut.ps1, creates a shortcut
 create-symlink.ps1, creates a symbolic link
@@ -157,7 +158,6 @@ translate-files.ps1, translates the given text files into any supported language
 translate-text.ps1, translates the given text into other languages
 turn-volume-up.ps1, turns the audio volume up (+10% by default)
 turn-volume-down.ps1, turns the audio volume down (-10% by default)
-txt2wav.ps1, converts text into a audio .WAV file
 unmute-audio.ps1, unmutes audio
 upload-file.ps1, uploads the local file to the given FTP server
 voice-control.ps1, executes the PowerShell scripts by voice

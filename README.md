@@ -5,6 +5,7 @@ Mega Collection of PowerShell Scripts
 
 🔊 PowerShell Scripts for Audio & Voice 
 ----------------------------------------
+* [convert-txt2wav.ps1](Scripts/convert-txt2wav.ps1) - converts text into a audio .WAV file
 * [mute-audio.ps1](Scripts/mute-audio.ps1) - mutes audio
 * [play-beep.ps1](Scripts/play-beep.ps1) - plays a beep sound
 * [play-mission-impossible.ps1](Scripts/play-mission-impossible.ps1) - plays the Mission Impossible theme
@@ -22,7 +23,6 @@ Mega Collection of PowerShell Scripts
 * [speak-test.ps1](Scripts/speak-test.ps1) - performs a speak test by text-to-speech (TTS)
 * [speak-text.ps1](Scripts/speak-text.ps1) - speaks the given text by text-to-speech (TTS)
 * [speak-time.ps1](Scripts/speak-time.ps1) - speaks the current time by text-to-speech (TTS)
-* [txt2wav.ps1](Scripts/txt2wav.ps1) - converts text into a audio .WAV file
 * [turn-volume-up.ps1](Scripts/turn-volume-up.ps1) - turns the audio volume up (+10% by default)
 * [turn-volume-down.ps1](Scripts/turn-volume-down.ps1) - turns the audio volume down (-10% by default)
 * [unmute-audio.ps1](Scripts/unmute-audio.ps1) - unmutes audio
