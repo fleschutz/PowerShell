@@ -9,19 +9,24 @@
 param($RepoDir = "$PWD")
 
 try {
-	if (test-path CMakeLists.txt) { 
+	if (test-path "$Repodir/CMakeLists.txt") { 
 		"Building $RepoDir using CMakeLists.txt..."
-		& cmake .
-		if ($lastExitCode -ne "0") { throw "Can't execute 'cmake .'" }
+		& mkdir CMakeBuild
+		set-location CMakeBuild
 
-		& make
-		if ($lastExitCode -ne "0") { throw "Can't execute 'make .'" }
-	} elseif (test-path Makefile) {
+		& cmake ..
+		if ($lastExitCode -ne "0") { throw "Executing 'cmake ..' has failed" }
+
+		& make -j4
+		if ($lastExitCode -ne "0") { throw "Executing 'make -j4' has failed" }
+	} elseif (test-path "$RepoDir/Makefile") {
 		"Building $RepoDir using Makefile..."
-		& make
-		if ($lastExitCode -ne "0") { throw "Can't execute 'make .'" }
+
+		& make -j4
+		if ($lastExitCode -ne "0") { throw "Executing 'make -j4' has failed" }
 	} else {
 		write-warning "Sorry, no clue how to build $RepoDir"
+		exit 0
 	}
 	write-host -foregroundColor green "OK - built Git repository $RepoDir"
 	exit 0
