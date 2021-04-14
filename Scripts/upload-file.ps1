@@ -46,9 +46,8 @@ try {
 	$ftpStream.Dispose()
 	$fileStream.Dispose()
 
-	$StopTime = get-date
-	$TimeInterval = New-Timespan -start $StartTime -end $StopTime
-	write-host -foregroundColor green "OK - uploaded $File to $URL in $($TimeInterval.seconds) second(s)"
+	$Elapsed = New-Timespan -start $StartTime -end (get-date)
+	write-host -foregroundColor green "OK - uploaded $File to $URL in $($Elapsed.seconds) second(s)"
 	exit 0
 } catch {
 	write-error "ERROR: line $($_.InvocationInfo.ScriptLineNumber): $($Error[0])"

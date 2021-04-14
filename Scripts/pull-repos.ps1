@@ -31,9 +31,8 @@ try {
 		$Count++
 	}
 
-	$StopTime = get-date
-	$TimeSpan = new-timeSpan -start $StartTime -end $StopTime
-	write-host -foregroundColor green "OK - pulled updates for $Count Git repositories under $ParentDir in $($TimeSpan.seconds) second(s)"
+	$Elapsed = new-timeSpan -start $StartTime -end (get-date)
+	write-host -foregroundColor green "OK - pulled updates for $Count Git repositories under $ParentDir in $($Elapsed.seconds) second(s)"
 	exit 0
 } catch {
 	write-error "ERROR: line $($_.InvocationInfo.ScriptLineNumber): $($Error[0])"

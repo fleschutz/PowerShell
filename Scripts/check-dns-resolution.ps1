@@ -7,7 +7,7 @@
 #>
  
 try {
-	$StartTime = Get-Date
+	$StartTime = get-date
 
 	write-progress "Reading Data/domain-names.csv..."
 	$PathToRepo = "$PSScriptRoot/.."
@@ -21,12 +21,11 @@ try {
 			$Ignore = resolve-dnsName $Row.Domain
 		}
 	}
-
 	$Count = $Table.Length
-	$StopTime = Get-Date
-	$TimeInterval = New-Timespan -start $StartTime -end $StopTime
-	$Average = [math]::round($Count / $TimeInterval.seconds, 1)
-	write-host -foregroundColor green "OK - $Average domains/s ($Count domains resolved in $($TimeInterval.seconds) seconds)"
+
+	$Elapsed = New-Timespan -start $StartTime -end (get-date)
+	$Average = [math]::round($Count / $Elapsed.seconds, 1)
+	write-host -foregroundColor green "OK - $Average domains/s ($Count domains resolved in $($Elapsed.seconds) seconds)"
 	exit 0
 } catch {
 	write-error "ERROR: line $($_.InvocationInfo.ScriptLineNumber): $($Error[0])"
