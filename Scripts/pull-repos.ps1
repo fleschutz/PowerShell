@@ -10,6 +10,7 @@ param($ParentDir = "$PWD")
 
 try {
 	"Pulling updates for Git repositories under $ParentDir ..."
+	$StartTime = get-date
 
 	if (-not(test-path "$ParentDir" -pathType container)) { throw "Can't access directory: $ParentDir" }
 	set-location "$ParentDir"
@@ -29,7 +30,10 @@ try {
 		set-location ..
 		$Count++
 	}
-	write-host -foregroundColor green "OK - pulled updates for $Count Git repositories under $ParentDir"
+
+	$StopTime = get-date
+	$TimeSpan = new-timeSpan -start $StartTime -end $StopTime
+	write-host -foregroundColor green "OK - pulled updates for $Count Git repositories under $ParentDir in $($TimeSpan.seconds) second(s)"
 	exit 0
 } catch {
 	write-error "ERROR: line $($_.InvocationInfo.ScriptLineNumber): $($Error[0])"
