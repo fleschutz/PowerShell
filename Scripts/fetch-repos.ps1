@@ -9,7 +9,7 @@
 param($ParentDir = "$PWD")
 
 try {
-	"Fetching updates for Git repositories under $ParentDir ..."
+	"Fetching updates for Git repositories under $($ParentDir)..."
 	$StartTime = get-date
 
 	if (-not(test-path "$ParentDir" -pathType container)) { throw "Can't access directory: $ParentDir" }
@@ -20,7 +20,7 @@ try {
 
 	[int]$Count = 0
 	get-childItem $ParentDir -attributes Directory | foreach-object {
-		"Fetching Git repository $($_.FullName) ..."
+		"Fetching updates for $($_.FullName)..."
 		set-location $_.FullName
 
 		& git fetch --all --recurse-submodules
