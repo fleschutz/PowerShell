@@ -114,6 +114,7 @@ Mega Collection of PowerShell Scripts
 * [SHA1.ps1](Scripts/SHA1.ps1) - prints the SHA1 checksum of the given file
 * [SHA256.ps1](Scripts/SHA256.ps1) - prints the SHA256 checksum of the given file
 * [show-dir-tree.ps1](Scripts/show-dir-tree.ps1) - visualizes the given/current directory tree
+* [upload-file.ps1](Scripts/zip-dir.ps1) - uploads the local file to the given FTP server
 * [zip-dir.ps1](Scripts/zip-dir.ps1) - creates a zip archive of the given directory
 
 📝 PowerShell Scripts for Git
