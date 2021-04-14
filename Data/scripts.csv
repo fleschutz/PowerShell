@@ -37,7 +37,8 @@ create-tag.ps1, creates a new tag in the current/given Git repository
 daily-tasks.sh, execute PowerShell scripts automatically as daily tasks (Linux only)
 decrypt-file.ps1, decrypts the given file
 display-time.ps1, displays the current time for 10 seconds by default
-download.ps1, downloads the file/directory from the given URL
+download-dir.ps1, downloads a directory tree from the given URL
+download-file.ps1, downloads a file from the given URL
 edit.ps1, edits the given file with the built-in text editor
 enable-crash-dumps.ps1, enables the writing of crash dumps
 enable-god-mode.ps1, enables the god mode (adds a new icon to the desktop)

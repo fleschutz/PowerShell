@@ -91,7 +91,8 @@ Mega Collection of PowerShell Scripts
 * [create-shortcut.ps1](Scripts/create-shortcut.ps1) - creates a shortcut
 * [create-symlink.ps1](Scripts/create-symlink.ps1) - creates a symbolic link
 * [decrypt-file.ps1](Scripts/decrypt-file.ps1) - encrypts the given file
-* [download.ps1](Scripts/download.ps1) - downloads the file/directory from the given URL
+* [download-dir.ps1](Scripts/download-dir.ps1) - downloads a directory tree from the given URL
+* [download-file.ps1](Scripts/download-file.ps1) - downloads a file from the given URL
 * [edit.ps1](Scripts/edit.ps1) - edits the given file with the built-in text editor
 * [encrypt-file.ps1](Scripts/encrypt-file.ps1) - encrypts the given file
 * [go-downloads.ps1](Scripts/go-downloads.ps1) - go to the user's downloads folder
