@@ -6,22 +6,17 @@
 .NOTES        Author: Markus Fleschutz / License: CC0
 #>
 
-param([int]$PinLength = 5, [int]$Columns = 12, [int]$Rows = 24)
-
-function GeneratePIN {
-	$Generator = New-Object System.Random
-	for ($i = 0; $i -lt $PinLength; $i++) {
-		$PIN += [char]$Generator.next(48,57)
-	}
-	return $PIN
-}
+param([int]$PinLength = 5, [int]$Columns = 12, [int]$Rows = 26)
 
 try {
 	write-output ""
+	$Generator = New-Object System.Random
 	for ($j = 0; $j -lt $Rows; $j++) {
 		$Line = ""
 		for ($k = 0; $k -lt $Columns; $k++) {
-			$Line += GeneratePIN
+			for ($i = 0; $i -lt $PinLength; $i++) {
+				$Line += [char]$Generator.next(48,57)
+			}
 			$Line += "   "
 		}
 		write-output $Line
