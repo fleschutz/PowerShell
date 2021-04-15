@@ -5,7 +5,7 @@ Mega Collection of PowerShell Scripts
 
 🔊 PowerShell Scripts for Audio & Voice 
 ----------------------------------------
-* [convert-txt2wav.ps1](Scripts/convert-txt2wav.ps1) - converts text into a audio .WAV file
+* [convert-txt2wav.ps1](Scripts/convert-txt2wav.ps1) - converts text to a .WAV audio file
 * [mute-audio.ps1](Scripts/mute-audio.ps1) - mutes audio
 * [play-beep.ps1](Scripts/play-beep.ps1) - plays a beep sound
 * [play-mission-impossible.ps1](Scripts/play-mission-impossible.ps1) - plays the Mission Impossible theme
@@ -155,7 +155,7 @@ Mega Collection of PowerShell Scripts
 * [check-ipv4-address.ps1](Scripts/check-ipv4-address.ps1) - checks the given IPv4 address for validity
 * [check-ipv6-address.ps1](Scripts/check-ipv6-address.ps1) - checks the given IPv6 address for validity
 * [check-mac-address.ps1](Scripts/check-mac-address.ps1) - checks the given MAC address for validity
-* [convert-csv2txt.ps1](Scripts/convert-csv2txt.ps1) - converts the given CSV file into a text list
+* [convert-csv2txt.ps1](Scripts/convert-csv2txt.ps1) - converts the given CSV file to a text list
 * [convert-mysql2csv.ps1](Scripts/convert-mysql2csv.ps1) - converts the MySQL database table to a CSV file
 * [convert-sql2csv.ps1](Scripts/convert-sql2csv.ps1) - converts the SQL database table to a CSV file
 * [display-time.ps1](Scripts/display-time.ps1) - displays the current time for 10 seconds by default
