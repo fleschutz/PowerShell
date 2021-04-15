@@ -9,7 +9,8 @@
 param($RepoDir = "$PWD")
 
 try {
-	$StartTime = get-date
+	$StopWatch = [system.diagnostics.stopwatch]::startNew()
+
 	if (test-path "$RepoDir/CMakeLists.txt") { 
 		"Building $RepoDir using CMakeLists.txt..."
 		if (-not(test-path "$RepoDir/CMakeBuild")) { 
@@ -71,8 +72,8 @@ try {
 		write-warning "Sorry, no clue how to build $RepoDir"
 		exit 0
 	}
-	$Elapsed = new-timeSpan -start $StartTime -end (get-date)
-	write-host -foregroundColor green "OK - built Git repository $RepoDir in $($Elapsed.seconds) second(s)"
+
+	write-host -foregroundColor green "OK - built Git repository $RepoDir in $($StopWatch.Elapsed.Seconds) second(s)"
 	exit 0
 } catch {
 	write-error "ERROR: line $($_.InvocationInfo.ScriptLineNumber): $($Error[0])"

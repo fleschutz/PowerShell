@@ -13,7 +13,7 @@ if ($Username -eq "") { $Username = read-host "Enter login username" }
 if ($Password -eq "") { $Password = read-host "Enter login password" }
 
 try {
-	$StartTime = get-date
+	$StopWatch = [system.diagnostics.stopwatch]::startNew()
 
 	# check local file first:
 	if (-not(test-path "$File" -pathType leaf)) { throw "Can't access file: $File" }
@@ -46,8 +46,7 @@ try {
 	$ftpStream.Dispose()
 	$fileStream.Dispose()
 
-	$Elapsed = New-Timespan -start $StartTime -end (get-date)
-	write-host -foregroundColor green "OK - uploaded $File to $URL in $($Elapsed.seconds) second(s)"
+	write-host -foregroundColor green "OK - uploaded $File to $URL in $($StopWatch.Elapsed.Seconds) second(s)"
 	exit 0
 } catch {
 	write-error "ERROR: line $($_.InvocationInfo.ScriptLineNumber): $($Error[0])"

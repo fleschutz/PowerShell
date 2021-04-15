@@ -10,7 +10,7 @@ param($ParentDir = "$PWD")
 
 try {
 	"Fetching updates for Git repositories under $($ParentDir)..."
-	$StartTime = get-date
+	$StopWatch = [system.diagnostics.stopwatch]::startNew()
 
 	if (-not(test-path "$ParentDir" -pathType container)) { throw "Can't access directory: $ParentDir" }
 	set-location $ParentDir
@@ -30,8 +30,7 @@ try {
 		$Count++
 	}
 
-	$Elapsed = new-timeSpan -start $StartTime -end (get-date)
-	write-host -foregroundColor green "OK - fetched updates for $Count Git repositories under $ParentDir in $($Elapsed.seconds) second(s)"
+	write-host -foregroundColor green "OK - fetched updates for $Count Git repositories under $ParentDir in $($StopWatch.Elapsed.Seconds) second(s)"
 	exit 0
 } catch {
 	write-error "ERROR: line $($_.InvocationInfo.ScriptLineNumber): $($Error[0])"
