@@ -9,16 +9,14 @@
 param($RepoDir = "$PWD", $Format = "compact")
 
 try {
-	write-output "Fetching updates for Git repository $RepoDir ..."
-
 	if (-not(test-path "$RepoDir" -pathType container)) { throw "Can't access directory: $RepoDir" }
 	set-location "$RepoDir"
 
 	& git --version
 	if ($lastExitCode -ne "0") { throw "Can't execute 'git' - make sure Git is installed and available" }
 
-	& git fetch --all --recurse-submodules --jobs=4
-	if ($lastExitCode -ne "0") { throw "'git fetch' failed" }
+	& "$PSScriptRoot/fetch-repo.ps1"
+	if ($lastExitCode -ne "0") { throw "Script 'fetch-repo.ps1' failed" }
 
 	write-output ""
 	write-output "List of Git Commits"

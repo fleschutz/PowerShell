@@ -17,8 +17,8 @@ try {
 	& git --version
 	if ($lastExitCode -ne "0") { throw "Can't execute 'git' - make sure Git is installed and available" }
 
-	& git fetch --all --recurse-submodules
-	if ($lastExitCode -ne "0") { throw "'git fetch --all --recurse-submodules' failed" }
+	& "$PSScriptRoot/fetch-repo.ps1"
+	if ($lastExitCode -ne "0") { throw "Script 'fetch-repo.ps1' failed" }
 
 	write-output ""
 	write-output "List of Git Tags"

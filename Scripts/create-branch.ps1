@@ -23,8 +23,8 @@ try {
 	if ($lastExitCode -ne "0") { throw "'git status' failed in $RepoDir" }
 	if ("$Result" -notmatch "nothing to commit, working tree clean") { throw "Repository is NOT clean: $Result" }
 
-	& git fetch --all --recurse-submodules --jobs=4
-	if ($lastExitCode -ne "0") { throw "'git fetch' failed" }
+	& "$PSScriptRoot/fetch-repo.ps1"
+	if ($lastExitCode -ne "0") { throw "Script 'fetch-repo.ps1' failed" }
 
 	& git checkout -b "$NewBranchName"
 	if ($lastExitCode -ne "0") { throw "'git checkout -b $NewBranchName' failed" }
