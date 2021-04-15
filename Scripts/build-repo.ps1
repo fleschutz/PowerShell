@@ -1,7 +1,7 @@
 #!/usr/bin/pwsh
 <#
 .SYNTAX       build-repo.ps1 [<repo-dir>]
-.DESCRIPTION  builds the current/given Git repository 
+.DESCRIPTION  builds a Git repository (supporting cmake,configure,autogen,Imakefile,Makefile)
 .LINK         https://github.com/fleschutz/PowerShell
 .NOTES        Author: Markus Fleschutz / License: CC0
 #>
@@ -43,6 +43,16 @@ try {
 		& make -j4
 		if ($lastExitCode -ne "0") { throw "Executing 'make -j4' has failed" }
 
+	} elseif (test-path "$RepoDir/Imakefile") {
+		"Building $RepoDir using Imakefile..."
+		set-location "$RepoDir/"
+
+		& xmkmf 
+		if ($lastExitCode -ne "0") { throw "Executing 'xmkmf' has failed" }
+
+		& make -j4
+		if ($lastExitCode -ne "0") { throw "Executing 'make -j4' has failed" }
+
 	} elseif (test-path "$RepoDir/Makefile") {
 		"Building $RepoDir using Makefile..."
 		set-location "$RepoDir/"
@@ -50,12 +60,12 @@ try {
 		& make -j4
 		if ($lastExitCode -ne "0") { throw "Executing 'make -j4' has failed" }
 
-	} elseif (test-path "$RepoDir/attower/src/build/DevBuild/build-all-release.bat") {
-		"Building $RepoDir using build-all-release.bat..."
+	} elseif (test-path "$RepoDir/attower/src/build/DevBuild/build.bat") {
+		"Building $RepoDir using build.bat..."
 		set-location "$RepoDir/attower/src/build/DevBuild/"
 
-		& ./build-all-release.bat
-		if ($lastExitCode -ne "0") { throw "Script 'build-all-release.bat' returned error(s)" }
+		& ./build.bat build-all-release
+		if ($lastExitCode -ne "0") { throw "Script 'build.bat' returned error(s)" }
 
 	} else {
 		write-warning "Sorry, no clue how to build $RepoDir"
