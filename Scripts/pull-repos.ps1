@@ -9,7 +9,6 @@
 param($ParentDir = "$PWD")
 
 try {
-	"Pulling updates for Git repositories under $ParentDir ..."
 	$StopWatch = [system.diagnostics.stopwatch]::startNew()
 
 	if (-not(test-path "$ParentDir" -pathType container)) { throw "Can't access directory: $ParentDir" }
@@ -20,12 +19,12 @@ try {
 
 	[int]$Count = 0
 	get-childItem $ParentDir -attributes Directory | foreach-object {
-		"Pulling Git repository $($_.FullName)..."
+		"Pulling updates for Git repository $($_.FullName)..."
 
 		set-location $_.FullName
 
-		& git pull --recurse-submodules
-		if ($lastExitCode -ne "0") { throw "'git pull --recurse-submodules' failed" }
+		& git pull --all --recurse-submodules --jobs=4
+		if ($lastExitCode -ne "0") { throw "'git pull' failed" }
 
 		set-location ..
 		$Count++

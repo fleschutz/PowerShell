@@ -9,7 +9,6 @@
 param($ParentDir = "$PWD")
 
 try {
-	"Fetching updates for Git repositories under $($ParentDir)..."
 	$StopWatch = [system.diagnostics.stopwatch]::startNew()
 
 	if (-not(test-path "$ParentDir" -pathType container)) { throw "Can't access directory: $ParentDir" }
@@ -20,9 +19,12 @@ try {
 
 	[int]$Count = 0
 	get-childItem $ParentDir -attributes Directory | foreach-object {
-		& "$PSScriptRoot/fetch-repo.ps1" "$($_.FullName)"
+		set-location "$($_.FullName)"
+
+		& "$PSScriptRoot/fetch-repo.ps1"
 		if ($lastExitCode -ne "0") { throw "Script 'fetch-repo.ps1' failed" }
 
+		set-location ..
 		$Count++
 	}
 
