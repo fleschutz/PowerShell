@@ -23,7 +23,7 @@ try {
 	if ($lastExitCode -ne "0") { throw "'git status' failed in $RepoDir" }
 	if ("$Result" -notmatch "nothing to commit, working tree clean") { throw "Repository is NOT clean: $Result" }
 
-	& git fetch --all --recurse-submodules
+	& git fetch --all --recurse-submodules --jobs=4
 	if ($lastExitCode -ne "0") { throw "'git fetch' failed" }
 
 	& git switch --recurse-submodules "$BranchName"

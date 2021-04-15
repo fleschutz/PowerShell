@@ -17,8 +17,8 @@ try {
 	& git --version
 	if ($lastExitCode -ne "0") { throw "Can't execute 'git' - make sure Git is installed and available" }
 
-	& git fetch --all --recurse-submodules
-	if ($lastExitCode -ne "0") { throw "'git fetch --all --recurse-submodules' failed" }
+	& git fetch --all --recurse-submodules --jobs=4
+	if ($lastExitCode -ne "0") { throw "'git fetch' failed" }
 
 	write-output ""
 	write-output "List of Git Commits"
