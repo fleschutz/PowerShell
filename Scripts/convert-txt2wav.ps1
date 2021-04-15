@@ -1,21 +1,19 @@
 #!/usr/bin/pwsh
 <#
-.SYNTAX       convert-txt2wav.ps1
-.DESCRIPTION  converts the given text into an audio .WAV file
+.SYNTAX       convert-txt2wav.ps1 [<text>] [<wav-file>]
+.DESCRIPTION  converts the given text to a .WAV audio file
 .LINK         https://github.com/fleschutz/PowerShell
 .NOTES        Author: Markus Fleschutz / License: CC0
 #>
 
-$Text = "Hello, my name ist Bond, James Bond"
-$Speed = -1 # -10 is slowest, 10 is fastest
-$TargetWavFile = "spoken.wav"
+param($Text = "", $WavFile = "")
+if ($Text -eq "") { $Text = read-host "Enter text to speak" }
+if ($WavFile -eq "") { $WavFile = read-host "Enter .WAV file to save to" }
 
 try {
 	Add-Type -AssemblyName System.Speech
 	$SpeechSynthesizer = New-Object System.Speech.Synthesis.SpeechSynthesizer
-	# $SpeechSynthesizer.SelectVoice("Microsoft Eva Mobile")
-	$SpeechSynthesizer.Rate = $Speed
-	$SpeechSynthesizer.SetOutputToWaveFile($TargetWavFile)
+	$SpeechSynthesizer.SetOutputToWaveFile($tWavFile)
 	$SpeechSynthesizer.Speak($Text)
 	$SpeechSynthesizer.Dispose()
 	exit 0
