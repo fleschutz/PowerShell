@@ -98,6 +98,7 @@ Mega Collection of PowerShell Scripts
 * [go-downloads.ps1](Scripts/go-downloads.ps1) - go to the user's downloads folder
 * [go-home.ps1](Scripts/go-home.ps1) - go to the user's home folder
 * [go-music.ps1](Scripts/go-music.ps1) - go to the user's music folder
+* [go-repos.ps1](Scripts/go-repos.ps1) - go to the user's Git repositories folder
 * [go-root.ps1](Scripts/go-root.ps1) - go to the root directory (C:\ on Windows)
 * [go-scripts.ps1](Scripts/go-scripts.ps1) - go to the PowerShell Scripts folder
 * [inspect-exe.ps1](Scripts/inspect-exe.ps1) - prints basic information of the given executable file

@@ -54,6 +54,7 @@ generate-qrcode.ps1, generates a QR code
 go-downloads.ps1, go to the user's downloads folder
 go-home.ps1, go to the user's home folder
 go-music.ps1, go to the user's music folder
+go-repos.ps1, go to the user's Git repositories folder
 go-root.ps1, go to the root directory (C: on Windows)
 go-scripts.ps1, go to the PowerShell Scripts folder
 hibernate.ps1, enables hibernate mode for the local computer (needs admin rights)
