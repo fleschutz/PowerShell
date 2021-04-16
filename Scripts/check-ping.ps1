@@ -1,4 +1,4 @@
-#!/usr/bin/pwsh
+﻿#!/usr/bin/pwsh
 <#
 .SYNTAX       check-ping.ps1 
 .DESCRIPTION  checks the ping latency to the internet
@@ -25,7 +25,7 @@ try {
 	}
 	$Avg = $Avg / $Pings.count
 
-	write-host -foregroundColor green "OK - $Avg ms average ping latency ($Min ms min, $Max ms max)"
+	write-host -foregroundColor green "✔️ $Avg ms average ping latency ($Min ms min, $Max ms max)"
 	exit 0
 } catch {
 	write-error "ERROR: line $($_.InvocationInfo.ScriptLineNumber): $($Error[0])"

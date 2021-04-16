@@ -1,4 +1,4 @@
-#!/usr/bin/pwsh
+﻿#!/usr/bin/pwsh
 <#
 .SYNTAX       check-health.ps1 
 .DESCRIPTION  checks the health of the local computer
@@ -31,7 +31,7 @@ if ($lastExitCode -ne "0") { $Healthy = 0 }
 if ($lastExitCode -ne "0") { $Healthy = 0 }
 
 if ($Healthy) {
-	write-host -foregroundColor green "OK - $Hostname is healthy"
+	write-host -foregroundColor green "✔️ $Hostname is healthy"
 	exit 0
 } else {
 	write-warning "$Hostname is NOT healthy"

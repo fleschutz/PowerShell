@@ -1,4 +1,4 @@
-#!/usr/bin/pwsh
+﻿#!/usr/bin/pwsh
 <#
 .SYNTAX       check-cpu-temp.ps1 
 .DESCRIPTION  checks the CPU temperature
@@ -26,7 +26,7 @@ try {
 	} elseif ($Temp -lt "0") {
 		write-warning "$Temp °C CPU temperature is quite low"
 	} else {
-		write-host -foregroundColor green "OK - $Temp °C CPU temperature"
+		write-host -foregroundColor green "✔️ $Temp °C CPU temperature"
 	}
 	exit 0
 } catch {

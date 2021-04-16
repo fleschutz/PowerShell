@@ -1,4 +1,4 @@
-#!/usr/bin/pwsh
+﻿#!/usr/bin/pwsh
 <#
 .SYNTAX       check-windows-system-files.ps1 
 .DESCRIPTION  checks the validity of the Windows system files (requires admin rights)
@@ -12,7 +12,7 @@ try {
 	sfc /verifyOnly
 	if ($lastExitCode -ne "0") { throw "'sfc /verifyOnly' failed" }
 
-	write-host -foregroundColor green "OK - Windows system files have been checked"
+	write-host -foregroundColor green "✔️ checked Windows system files"
 	exit 0
 } catch {
 	write-error "ERROR: line $($_.InvocationInfo.ScriptLineNumber): $($Error[0])"

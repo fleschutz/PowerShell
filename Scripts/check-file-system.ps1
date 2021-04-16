@@ -1,4 +1,4 @@
-#!/usr/bin/pwsh
+﻿#!/usr/bin/pwsh
 <#
 .SYNTAX       check-file-system.ps1 [<drive>] 
 .DESCRIPTION  checks the validity of the file system (needs admin rights)
@@ -18,7 +18,7 @@ try {
 	$Result = repair-volume -driveLetter $Drive -scan
 	if ($Result -ne "NoErrorsFound") { throw "'repair-volume' failed" }
 
-	write-host -foregroundColor green "OK - file system on drive $Drive is clean"
+	write-host -foregroundColor green "✔️ file system on drive $Drive is clean"
 	exit 0
 } catch {
 	write-error "ERROR: line $($_.InvocationInfo.ScriptLineNumber): $($Error[0])"

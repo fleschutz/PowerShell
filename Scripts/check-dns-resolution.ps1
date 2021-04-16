@@ -1,4 +1,4 @@
-#!/usr/bin/pwsh
+﻿#!/usr/bin/pwsh
 <#
 .SYNTAX       check-dns-resolution.ps1
 .DESCRIPTION  checks the DNS resolution with frequently used domain names
@@ -25,7 +25,7 @@ try {
 
 	$Elapsed = $StopWatch.Elapsed
 	$Average = [math]::round($Count / $Elapsed.Seconds, 1)
-	write-host -foregroundColor green "OK - $Average domains/s ($Count domains resolved in $($Elapsed.Seconds) seconds)"
+	write-host -foregroundColor green "✔️ $Average domains/s ($Count domains resolved in $($Elapsed.Seconds) seconds)"
 	exit 0
 } catch {
 	write-error "ERROR: line $($_.InvocationInfo.ScriptLineNumber): $($Error[0])"

@@ -1,4 +1,4 @@
-#  My PowerShell Profile
+﻿#  My PowerShell Profile
 #  =====================
 #  Welcome to 'my-profile.ps1' - this file defines the look & feel of PowerShell.
 #  Comment, uncomment or adapt the following lines to your needs, please.
@@ -6,7 +6,7 @@
 
 #  My Welcome Message
 #  ------------------
-write-host "+++ Welcome to PowerShell $($PSVersionTable.PSVersion) at $(hostname), it's $(Get-date) +++"
+write-host "❤️ Welcome to PowerShell $($PSVersionTable.PSVersion) at $(hostname), it's $(Get-date) ❤️"
 write-host ""
 
 

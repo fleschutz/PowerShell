@@ -1,4 +1,4 @@
-#!/usr/bin/pwsh
+﻿#!/usr/bin/pwsh
 <#
 .SYNTAX       check-drive-space.ps1 [<drive>] [<min-level>]
 .DESCRIPTION  checks the given drive for free space left
@@ -22,7 +22,7 @@ try {
         	write-warning "Drive $Drive has only $Free GB left to use! ($Used GB out of $Total GB in use, minimum is $MinLevel GB)"
 		exit 1
 	}
-	write-host -foregroundColor green "OK - $Free GB left on drive $Drive ($Used GB of $Total GB used)"
+	write-host -foregroundColor green "✔️ $Free GB left on drive $Drive ($Used GB of $Total GB used)"
 	exit 0
 } catch {
 	write-error "ERROR: line $($_.InvocationInfo.ScriptLineNumber): $($Error[0])"
