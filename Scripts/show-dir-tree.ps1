@@ -1,4 +1,4 @@
-#!/usr/bin/pwsh
+﻿#!/usr/bin/pwsh
 <#
 .SYNTAX       show-dir-tree.ps1 [<dir-tree>]
 .DESCRIPTION  visualizes the given/current directory tree
@@ -17,7 +17,7 @@ function VisualizeDirectory { param([string]$Directory, [int]$Depth)
 			for ($i = 0; $i -lt $Depth; $i++) {
 				write-host -nonewline "+--"
 			}
-			write-host -foregroundColor green "$Filename/"
+			write-host -foregroundColor green "📂$Filename"
 			VisualizeDirectory "$Directory\$Filename" $Depth
 			$global:NumDirs++
 		} else {
