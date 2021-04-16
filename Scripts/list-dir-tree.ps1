@@ -19,22 +19,24 @@ function ListDir { param([string]$Directory, [int]$Depth)
 			}
 			write-host -foregroundColor green "📂$Filename"
 			ListDir "$Directory\$Filename" $Depth
-			$global:NumDirs++
+			$global:Dirs++
 		} else {
 			for ($i = 1; $i -lt $Depth; $i++) {
 				write-host -nonewline "|  "
 			}
 			write-host "|-$Filename ($($Item.Length) bytes)"
-			$global:NumBytes += $Item.Length
+			$global:Files++
+			$global:Bytes += $Item.Length
 		}
 	}
 }
 
 try {
-	$global:NumDirs = 1
-	$global:NumBytes = 0
+	[int]$global:Dirs = 1
+	[int]$global:Files = 0
+	[int]$global:Bytes = 0
 	ListDir $DirTree 0
-	write-host "($($global:NumDirs) dirs, $($global:NumBytes) bytes total)"
+	write-host "($($global:Dirs) directories, $($global:Files) files, $($global:Bytes) bytes total)"
 	exit 0
 } catch {
 	write-error "ERROR: line $($_.InvocationInfo.ScriptLineNumber): $($Error[0])"
