@@ -1,4 +1,4 @@
-#!/usr/bin/pwsh
+﻿#!/usr/bin/pwsh
 <#
 .SYNTAX       switch-branch.ps1 [<branch-name>] [<repo-dir>]
 .DESCRIPTION  switches the branch in the current/given Git repository (including submodules)
@@ -7,10 +7,7 @@
 #>
 
 param($BranchName = "", $RepoDir = "$PWD")
-
-if ($BranchName -eq "") {
-	$BranchName = read-host "Enter name of branch to switch to"
-}
+if ($BranchName -eq "") { $BranchName = read-host "Enter name of branch to switch to" }
 
 try {
 	if (-not(test-path "$RepoDir" -pathType container)) { throw "Can't access directory: $RepoDir" }
