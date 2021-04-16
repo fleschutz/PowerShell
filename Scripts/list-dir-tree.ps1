@@ -18,7 +18,7 @@ function ListDir { param([string]$Directory, [int]$Depth)
 				write-host -nonewline "+--"
 			}
 			write-host -foregroundColor green "📂$Filename"
-			VisualizeDirectory "$Directory\$Filename" $Depth
+			ListDir "$Directory\$Filename" $Depth
 			$global:NumDirs++
 		} else {
 			for ($i = 1; $i -lt $Depth; $i++) {
