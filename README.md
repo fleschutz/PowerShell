@@ -102,6 +102,7 @@ Mega Collection of PowerShell Scripts
 * [go-root.ps1](Scripts/go-root.ps1) - go to the root directory (C:\ on Windows)
 * [go-scripts.ps1](Scripts/go-scripts.ps1) - go to the PowerShell Scripts folder
 * [inspect-exe.ps1](Scripts/inspect-exe.ps1) - prints basic information of the given executable file
+* [list-dir-tree.ps1](Scripts/list-dir-tree.ps1) - lists a directory tree
 * [list-empty-dirs.ps1](Scripts/list-empty-dirs.ps1) - lists empty subfolders within the given directory tree
 * [list-empty-files.ps1](Scripts/list-empty-files.ps1) - lists empty files within the given directory tree
 * [list-files.ps1](Scripts/list-files.ps1) - lists all files in the given folder and also in every subfolder
@@ -115,7 +116,6 @@ Mega Collection of PowerShell Scripts
 * [search-files.ps1](Scripts/search-files.ps1) - searches the given pattern in the given files
 * [SHA1.ps1](Scripts/SHA1.ps1) - prints the SHA1 checksum of the given file
 * [SHA256.ps1](Scripts/SHA256.ps1) - prints the SHA256 checksum of the given file
-* [show-dir-tree.ps1](Scripts/show-dir-tree.ps1) - visualizes the given/current directory tree
 * [upload-file.ps1](Scripts/zip-dir.ps1) - uploads the local file to the given FTP server
 * [zip-dir.ps1](Scripts/zip-dir.ps1) - creates a zip archive of the given directory
 

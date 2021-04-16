@@ -1,14 +1,14 @@
 ﻿#!/usr/bin/pwsh
 <#
-.SYNTAX       show-dir-tree.ps1 [<dir-tree>]
-.DESCRIPTION  visualizes the given/current directory tree
+.SYNTAX       list-dir-tree.ps1 [<dir-tree>]
+.DESCRIPTION  lists a directory tree
 .LINK         https://github.com/fleschutz/PowerShell
 .NOTES        Author: Markus Fleschutz / License: CC0
 #>
 
-param($DirTree = "")
+param($DirTree = "$PWD")
 
-function VisualizeDirectory { param([string]$Directory, [int]$Depth)
+function ListDir { param([string]$Directory, [int]$Depth)
 	$Depth++
 	$Items = get-childItem -path $Directory
 	foreach ($Item in $Items) {
@@ -31,12 +31,9 @@ function VisualizeDirectory { param([string]$Directory, [int]$Depth)
 }
 
 try {
-	if ($DirTree -eq "") {
-		$DirTree = "$PWD"
-	}
 	$global:NumDirs = 1
 	$global:NumBytes = 0
-	VisualizeDirectory $DirTree 0
+	ListDir $DirTree 0
 	write-host "($($global:NumDirs) dirs, $($global:NumBytes) bytes total)"
 	exit 0
 } catch {
