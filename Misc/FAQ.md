@@ -68,7 +68,7 @@ PowerShell scripts should follow the 11 golden rules:
 4. the first line reads `#!/usr/bin/pwsh` (for Linux support)
 5. provide a comment-based help with syntax, description, link, author, and license
 6. check the requirements (e.g. #Requires -RunAsAdministrator, or #Requires -Version 3)
-7. prefer command-line options, else ask the user
+7. prefer command-line options, else ask the user for help
 8. recommended is `Set-StrictMode -Version Latest` to enable additional error checking
 9. for readibility use UpperCamelCase for variables and functions, lowerCamelCase for everything else
 10. on error call write-error with keyword "ERROR:" (to support log parsers) and exit the error code (mostly 1)
