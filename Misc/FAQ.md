@@ -60,18 +60,19 @@ How to edit the PowerShell Scripts?
 
 How to write good PowerShell Scripts?
 -------------------------------------
-Each PowerShell script should follow the 10 golden rules:
+PowerShell scripts should follow the 11 golden rules:
 
-1. the filename should be named `<verb>-<object>.ps1`
-2. the first line reads `#!/usr/bin/pwsh` (to support Linux)
-3. the script has execute file permissions: chmod a+rx <file> (to support Linux)
-4. provide a comment-based help with syntax, description, link, author, and license
-5. check the requirements (e.g. #Requires -RunAsAdministrator, or #Requires -Version 3)
-6. prefer command-line options, else ask the user
-7. recommended is `Set-StrictMode -Version Latest` to enable additional error checking
-8. for readibility use UpperCamelCase for variables and functions, lowerCamelCase for everything else
-9. on error call write-error with keyword "ERROR:" (to support log parsers) and exit the error code (mostly 1)
-10. on success exit with error code 0 (exit 0)
+1. the filename is named using the `<verb>-<object>.ps1` scheme
+2. encoding is in UTF-8 BOM to support Unicode characters
+3. the script has execute file permissions: chmod a+rx <file> (for Linux support)
+4. the first line reads `#!/usr/bin/pwsh` (for Linux support)
+5. provide a comment-based help with syntax, description, link, author, and license
+6. check the requirements (e.g. #Requires -RunAsAdministrator, or #Requires -Version 3)
+7. prefer command-line options, else ask the user
+8. recommended is `Set-StrictMode -Version Latest` to enable additional error checking
+9. for readibility use UpperCamelCase for variables and functions, lowerCamelCase for everything else
+10. on error call write-error with keyword "ERROR:" (to support log parsers) and exit the error code (mostly 1)
+11. on success exit with error code 0 (exit 0)
 
 Your Question is not answered here?
 -----------------------------------
