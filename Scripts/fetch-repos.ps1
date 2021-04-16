@@ -1,4 +1,4 @@
-#!/usr/bin/pwsh
+﻿#!/usr/bin/pwsh
 <#
 .SYNTAX       fetch-repos.ps1 [<parent-dir>]
 .DESCRIPTION  fetches updates for all Git repositories under the current/given directory (including submodules)
@@ -28,7 +28,7 @@ try {
 		$Count++
 	}
 
-	write-host -foregroundColor green "OK - fetched updates for $Count Git repositories under $ParentDir in $($StopWatch.Elapsed.Seconds) second(s)"
+	write-host -foregroundColor green "✅ fetched updates for $Count Git repositories under $ParentDir in $($StopWatch.Elapsed.Seconds) second(s)"
 	exit 0
 } catch {
 	write-error "ERROR: line $($_.InvocationInfo.ScriptLineNumber): $($Error[0])"
