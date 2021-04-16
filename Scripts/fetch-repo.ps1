@@ -1,4 +1,4 @@
-#!/usr/bin/pwsh
+﻿#!/usr/bin/pwsh
 <#
 .SYNTAX       fetch-repo.ps1 [<repo-dir>]
 .DESCRIPTION  fetches updates for the current/given Git repository (including submodules)
@@ -9,7 +9,7 @@
 param($RepoDir = "$PWD")
 
 try {
-	"Fetching updates for Git repository $($RepoDir)..."
+	"📥 Fetching updates for Git repository $($RepoDir)..."
 
 	if (-not(test-path "$RepoDir" -pathType container)) { throw "Can't access directory: $RepoDir" }
 	set-location "$RepoDir"
