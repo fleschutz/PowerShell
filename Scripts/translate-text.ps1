@@ -1,4 +1,4 @@
-#!/usr/bin/pwsh
+﻿#!/usr/bin/pwsh
 <#
 .SYNTAX       translate-text.ps1 [<text>] [<source-lang>] [<target-lang>]
 .DESCRIPTION  translates the given text into other languages

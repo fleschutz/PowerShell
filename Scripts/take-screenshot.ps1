@@ -1,4 +1,4 @@
-#!/usr/bin/pwsh
+﻿#!/usr/bin/pwsh
 <#
 .SYNTAX       take-screenshot.ps1 [<directory>]
 .DESCRIPTION  takes a single screenshot and saves it into the current/given directory
@@ -6,7 +6,7 @@
 .NOTES        Author: Markus Fleschutz / License: CC0
 #>
 
-param($Directory = "")
+param($Directory = "$PWD")
 
 function TakeScreenshot { param([string]$FilePath)
 	Add-Type -Assembly System.Windows.Forms            
@@ -20,10 +20,6 @@ function TakeScreenshot { param([string]$FilePath)
 }
 
 try {
-	if ($Directory -eq "") {
-		$Directory = "$PWD"
-	}
-
 	$Time = (Get-Date)
 	$Filename = "$($Time.Year)-$($Time.Month)-$($Time.Day)-$($Time.Hour)-$($Time.Minute)-$($Time.Second).png"
 	$FilePath = (Join-Path $Directory $Filename)

@@ -1,4 +1,4 @@
-#!/usr/bin/pwsh
+﻿#!/usr/bin/pwsh
 <#
 .SYNTAX       create-symlink.ps1 [<symlink>] [<target>]
 .DESCRIPTION  creates a symbolic link
@@ -7,18 +7,13 @@
 #>
 
 param($Symlink = "", $Target = "")
-
-if ($Symlink -eq "" ) {
-	$Symlink = read-host "Enter filename of symlink"
-}
-if ($Target -eq "" ) {
-	$Target = read-host "Enter path to target"
-}
+if ($Symlink -eq "" ) { $Symlink = read-host "Enter filename of symlink" }
+if ($Target -eq "" ) { $Target = read-host "Enter path to target" }
 
 try {
 	new-item -path "$Symlink" -itemType SymbolicLink -Value "$Target"
 
-	write-host -foregroundColor green "Done."
+	write-host -foregroundColor green "✔️ symlink $Symlink created (pointing to $Target)"
 	exit 0
 } catch {
 	write-error "ERROR: line $($_.InvocationInfo.ScriptLineNumber): $($Error[0])"

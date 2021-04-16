@@ -1,4 +1,4 @@
-#!/usr/bin/pwsh
+﻿#!/usr/bin/pwsh
 <#
 .SYNTAX       create-tag.ps1 [<new-tag-name>] [<repo-dir>]
 .DESCRIPTION  creates a new tag in the current/given Git repository 
@@ -27,9 +27,9 @@ try {
 	if ($lastExitCode -ne "0") { throw "Script 'fetch-repo.ps1' failed" }
 
 	& git tag "$NewTagName"
-        if ($lastExitCode -ne "0") { throw "Error: 'git tag $NewTagName' failed!" }
+	if ($lastExitCode -ne "0") { throw "Error: 'git tag $NewTagName' failed!" }
 
-        & git push origin "$NewTagName"
+	& git push origin "$NewTagName"
 	if ($lastExitCode -ne "0") { throw "Error: 'git push origin $NewTagName' failed!" }
 
 	exit 0

@@ -1,4 +1,4 @@
-#!/usr/bin/pwsh
+﻿#!/usr/bin/pwsh
 <#
 .SYNTAX       close-program.ps1 [<full-program-name>] [<program-name>] [<program-alias-name>]
 .DESCRIPTION  closes the processes of the given program gracefully
@@ -36,7 +36,7 @@ try {
 		start-sleep -milliseconds 100
 		stop-process -name $ProgramName -force -errorAction 'silentlycontinue'
 	}
-	write-host -foregroundColor green "Done - $FullProgramName has been closed ($($Processes.Count) proc)."
+	write-host -foregroundColor green "✔️ closed $FullProgramName, found ($($Processes.Count) process(es)"
 	exit 0
 } catch {
 	write-error "ERROR: line $($_.InvocationInfo.ScriptLineNumber): $($Error[0])"

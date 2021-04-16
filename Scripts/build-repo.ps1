@@ -1,4 +1,4 @@
-#!/usr/bin/pwsh
+﻿#!/usr/bin/pwsh
 <#
 .SYNTAX       build-repo.ps1 [<repo-dir>]
 .DESCRIPTION  builds a Git repository (supporting cmake,configure,autogen,Imakefile,Makefile)
@@ -73,7 +73,7 @@ try {
 		exit 0
 	}
 
-	write-host -foregroundColor green "OK - built Git repository $RepoDir in $($StopWatch.Elapsed.Seconds) second(s)"
+	write-host -foregroundColor green "✔️ built Git repository $RepoDir in $($StopWatch.Elapsed.Seconds) second(s)"
 	exit 0
 } catch {
 	write-error "ERROR: line $($_.InvocationInfo.ScriptLineNumber): $($Error[0])"

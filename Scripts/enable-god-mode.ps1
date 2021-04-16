@@ -1,4 +1,4 @@
-#!/usr/bin/pwsh
+﻿#!/usr/bin/pwsh
 <#
 .SYNTAX       enable-god-mode.ps1 
 .DESCRIPTION  enables the god mode (adds a new icon to the desktop)
@@ -14,7 +14,7 @@ try {
 	}
 	$null = new-item @GodModeSplat
 
-	write-host -foregroundColor green "OK - see the new desktop icon"
+	write-host -foregroundColor green "✔️ new icon added to the desktop"
 	exit 0
 } catch {
 	write-error "ERROR: line $($_.InvocationInfo.ScriptLineNumber): $($Error[0])"

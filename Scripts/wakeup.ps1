@@ -1,4 +1,4 @@
-#!/usr/bin/pwsh
+﻿#!/usr/bin/pwsh
 <#
 .SYNTAX       wakeup.ps1 [<MAC-address>] [<IP-address>]
 .DESCRIPTION  sends a magic packet to the given computer to wake him up
@@ -6,8 +6,10 @@
 .NOTES        Author: Markus Fleschutz / License: CC0
 #>
 
-param($MACaddress = "", $IPaddress = "")
-
+param($MACaddress = "", $IPaddress = "", [int]$Port=9)
+if ($MACaddress -eq "" ) { $MACaddress = read-host "Enter the MAC address (e.g. 00:11:22:33:44:55)"	}
+if ($IPaddress -eq "" ) { $IPaddress = read-host "Enter the IP address or subnet address (e.g. 255.255.255.255)" }
+	
 function Send-WOL { param([string]$mac, [string]$ip="255.255.255.255", [int]$port=9) 
 	$broadcast = [Net.IPAddress]::Parse($ip) 
   
@@ -21,18 +23,11 @@ function Send-WOL { param([string]$mac, [string]$ip="255.255.255.255", [int]$por
 } 
 
 try {
-	if ($MACaddress -eq "" ) {
-		$MACaddress = read-host "Enter the MAC address (e.g. 00:11:22:33:44:55)"
-	}
-	if ($IPaddress -eq "" ) {
-		$IPaddress = read-host "Enter the IP address or subnet address (e.g. 255.255.255.255)"
-	}
-
-	Send-WOL $MACaddress $IPaddress
+	Send-WOL $MACaddress $IPaddress $Port
 	start-sleep -milliseconds 100
-	Send-WOL $MACaddress $IPaddress
+	Send-WOL $MACaddress $IPaddress $Port
 
-	write-host -foregroundColor green "Done - magic packet sent twice to IP $IPaddress (MAC $MACaddress)"
+	write-host -foregroundColor green "✔️ magic packet $MACaddress sent twice to IP $IPaddress port $Port"
 	exit 0
 } catch {
 	write-error "ERROR: line $($_.InvocationInfo.ScriptLineNumber): $($Error[0])"

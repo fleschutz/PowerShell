@@ -1,4 +1,4 @@
-#!/usr/bin/pwsh
+﻿#!/usr/bin/pwsh
 <#
 .SYNTAX       enable-crash-dumps.ps1 
 .DESCRIPTION  enables the writing of crash dumps
@@ -289,3 +289,4 @@ Else
     write-host "You did not enter a valid option.  Please re-run Get-Dump.ps1"
     start-sleep -s 5
 }
+exit 0

@@ -1,4 +1,4 @@
-#!/usr/bin/pwsh
+﻿#!/usr/bin/pwsh
 <#
 .SYNTAX       remove-empty-dirs.ps1 [<dir-tree>]
 .DESCRIPTION  removes all empty subfolders within the given directory tree

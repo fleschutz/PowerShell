@@ -1,4 +1,4 @@
-#!/usr/bin/pwsh
+﻿#!/usr/bin/pwsh
 <#
 .SYNTAX       build-repos.ps1 [<parent-dir>]
 .DESCRIPTION  builds all Git repositories under the current/given directory
@@ -9,7 +9,7 @@
 param($ParentDir = "$PWD")
 
 try {
-	"Building Git repositories under $($ParentDir)..."
+	"Building Git repositories at $($ParentDir)..."
 	$StopWatch = [system.diagnostics.stopwatch]::startNew()
 
 	if (-not(test-path "$ParentDir" -pathType container)) { throw "Can't access directory: $ParentDir" }
@@ -21,7 +21,7 @@ try {
 		$Count++
 	}
 
-	write-host -foregroundColor green "OK - built $Count Git repositories under $ParentDir in $($StopWatch.Elapsed.Seconds) second(s)"
+	write-host -foregroundColor green "✔️ built $Count Git repositories at $ParentDir in $($StopWatch.Elapsed.Seconds) second(s)"
 	exit 0
 } catch {
 	write-error "ERROR: line $($_.InvocationInfo.ScriptLineNumber): $($Error[0])"

@@ -1,4 +1,4 @@
-#!/usr/bin/pwsh
+﻿#!/usr/bin/pwsh
 <#
 .SYNTAX       create-shortcut.ps1 [<shortcut>] [<target>] [<description>]
 .DESCRIPTION  creates a new shortcut
@@ -7,16 +7,9 @@
 #>
 
 param($Shortcut = "", $Target = "", $Description)
-
-if ($Shortcut -eq "" ) {
-	$Shortcut = read-host "Enter filename of shortcut"
-}
-if ($Target -eq "" ) {
-	$Target = read-host "Enter path to target"
-}
-if ($Description -eq "" ) {
-	$Description = read-host "Enter description"
-}
+if ($Shortcut -eq "" ) { $Shortcut = read-host "Enter filename of shortcut" }
+if ($Target -eq "" ) { $Target = read-host "Enter path to target" }
+if ($Description -eq "" ) { $Description = read-host "Enter description" }
 
 try {
 	$sh = new-object -ComObject WScript.Shell
@@ -27,7 +20,7 @@ try {
 	$shortcut.Description = "$Description"
 	$shortcut.save()
 
-	write-host -foregroundColor green "Done."
+	write-host -foregroundColor green "✔️ shortcut $Shortcut created."
 	exit 0
 } catch {
 	write-error "ERROR: line $($_.InvocationInfo.ScriptLineNumber): $($Error[0])"

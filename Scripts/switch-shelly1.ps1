@@ -1,4 +1,4 @@
-#!/usr/bin/pwsh
+﻿#!/usr/bin/pwsh
 <#
 .SYNTAX       switch-shelly1.ps1 [<host>] [<turn-mode>] [<timer>]
 .DESCRIPTION  switches a Shelly1 device in the local network
@@ -14,7 +14,7 @@ if ($Timer -eq -999) { [int]$Timer = read-host "Enter timer in seconds (0=endles
 try {
 	$Result = Invoke-RestMethod "http://$($Host)/relay/0?turn=$($TurnMode)&timer=$($Timer)"
 	
-	write-host -foregroundColor green "Done - switched Shelly1 device at $Host to $TurnMode for $Timer second(s)"
+	write-host -foregroundColor green "✔️ Shelly1 device at $Host switched to $TurnMode for $Timer second(s)"
 	exit 0
 } catch {
 	write-error "ERROR: line $($_.InvocationInfo.ScriptLineNumber): $($Error[0])"

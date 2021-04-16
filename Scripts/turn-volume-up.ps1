@@ -1,4 +1,4 @@
-#!/usr/bin/pwsh
+﻿#!/usr/bin/pwsh
 <#
 .SYNTAX       turn-volume-up.ps1 [<percent>]
 .DESCRIPTION  turns the audio volume up (+10% by default)
@@ -13,7 +13,7 @@ try {
 	for ([int]$i = 0; $i -lt $Percent; $i += 2) {
 		$obj.SendKeys([char]175) # each tick is +2%
 	}
-	write-host -foregroundColor green "Done."
+	write-host -foregroundColor green "✔️ turned volume up by $Percent %"
 	exit 0
 } catch {
 	write-error "ERROR: line $($_.InvocationInfo.ScriptLineNumber): $($Error[0])"

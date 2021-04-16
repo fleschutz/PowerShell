@@ -1,4 +1,4 @@
-#!/usr/bin/pwsh
+﻿#!/usr/bin/pwsh
 <#
 .SYNTAX       upload-file.ps1 [<file>] [<URL>] [<username>] [<password>]
 .DESCRIPTION  uploads the local file to the given FTP server
@@ -46,7 +46,7 @@ try {
 	$ftpStream.Dispose()
 	$fileStream.Dispose()
 
-	write-host -foregroundColor green "OK - uploaded $File to $URL in $($StopWatch.Elapsed.Seconds) second(s)"
+	write-host -foregroundColor green "✔️ uploaded $File to $URL in $($StopWatch.Elapsed.Seconds) second(s)"
 	exit 0
 } catch {
 	write-error "ERROR: line $($_.InvocationInfo.ScriptLineNumber): $($Error[0])"
