@@ -1,4 +1,4 @@
-#!/usr/bin/pwsh
+﻿#!/usr/bin/pwsh
 <#
 .SYNTAX       list-formatted.ps1 [<directory>]
 .DESCRIPTION  lists the current working directory formatted in columns
@@ -13,9 +13,9 @@ function ListDir { param([string]$Path)
 	foreach ($Item in $Items) {
 		if ($Item.Name[0] -eq '.') { continue } # hidden file/dir
 		if ($Item.Mode -like "d*") {
-                    	New-Object PSObject -Property @{ Name = "$($Item.Name)/" }
+			new-object PSObject -Property @{ Name = "📂$($Item.Name)" }
 		} else {
-                    	New-Object PSObject -Property @{ Name = "$($Item.Name)" }
+			new-object PSObject -Property @{ Name = "📄$($Item.Name)" }
 		}
 	}
 }
