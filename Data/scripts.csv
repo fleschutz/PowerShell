@@ -67,7 +67,6 @@ list-automatic-variables.ps1, lists the automatic variables of PowerShell
 list-branches.ps1, lists all branches in the current/given Git repository 
 list-cheat-sheet.ps1, lists the PowerShell cheat sheet
 list-commits.ps1, lists all commits in the current/given Git repository 
-list-current-timezone.ps1, lists the current time zone details
 list-clipboard.ps1, lists the contents of the clipboard
 list-dir-tree.ps1, lists a directory tree
 list-drives.ps1, lists all drives
@@ -101,6 +100,7 @@ list-sql-tables.ps1, lists the SQL server tables
 list-system-info.ps1, lists system information on the local computer
 list-tags.ps1, lists all tags in the current/given Git repository 
 list-tasks.ps1, lists all Windows scheduler tasks
+list-timezone.ps1, lists the current time zone details
 list-timezones.ps1, lists all time zones available 
 list-user-groups.ps1, lists the user groups on the local computer
 locate-city.ps1, prints the geographic location of the given city

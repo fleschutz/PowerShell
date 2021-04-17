@@ -1,4 +1,4 @@
-#!/usr/bin/pwsh
+﻿#!/usr/bin/pwsh
 <#
 .SYNTAX       list-empty-dirs.ps1 [<dir-tree>]
 .DESCRIPTION  lists empty subfolders within the given directory tree
@@ -6,20 +6,17 @@
 .NOTES        Author: Markus Fleschutz / License: CC0
 #>
 
-param($DirTree = "")
-
-if ($DirTree -eq "" ) {
-	$DirTree = read-host "Enter the path to the directory tree"
-}
+param($DirTree = "$PWD")
 
 try {
+	$DirTree = resolve-path "$DirTree/"
 	write-progress "Listing empty directories in $DirTree..."
 	[int]$Count = 0
-	Get-ChildItem $DirTree -attributes Directory -recurse | Where {$_.GetFileSystemInfos().Count -eq 0} | ForEach-Object {
-		write-output $_.FullName
+	Get-ChildItem "$DirTree" -attributes Directory -recurse | Where {$_.GetFileSystemInfos().Count -eq 0} | ForEach-Object {
+		"📂 $($_.FullName)"
 		$Count++
 	}
-	write-host -foregroundColor green "OK - found $Count empty directories" 
+	"✔️ directory tree $DirTree has $Count empty directories" 
 	exit 0
 } catch {
 	write-error "ERROR: line $($_.InvocationInfo.ScriptLineNumber): $($Error[0])"

@@ -1,4 +1,4 @@
-#!/usr/bin/pwsh
+﻿#!/usr/bin/pwsh
 <#
 .SYNTAX       next-joke.ps1 
 .DESCRIPTION  gets the next random Juck Norris joke
@@ -7,15 +7,13 @@
 #>
 
 try {
-	$PathToRepo = "$PSScriptRoot/.."
-
-	$Table = import-csv "$PathToRepo/Data/jokes.csv"
+	$Table = import-csv "$PSScriptRoot/../Data/jokes.csv"
 
 	$Generator = New-Object System.Random
 	$Index = [int]$Generator.next(0,66)
 
 	$Joke = $Table[$Index].Joke
-	write-output "$Joke"
+	"📣 $Joke"
 	exit 0
 } catch {
 	write-error "ERROR: line $($_.InvocationInfo.ScriptLineNumber): $($Error[0])"

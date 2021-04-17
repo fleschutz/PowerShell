@@ -46,7 +46,6 @@ Mega Collection of PowerShell Scripts
 * [install-google-chrome.ps1](Scripts/install-google-chrome.ps1) - installs the Google Chrome browser
 * [list-drives.ps1](Scripts/list-drives.ps1) - lists all drives
 * [list-network-shares.ps1](Scripts/list-network-shares.ps1) - lists the network shares of the local computer
-* [list-current-timezone.ps1](Scripts/list-current-timezone.ps1) - lists the current time zone details
 * [list-installed-apps.ps1](Scripts/list-installed-apps.ps1) - lists the installed Windows Store apps
 * [list-installed-software.ps1](Scripts/list-installed-software.ps1) - lists the installed software (except Windows Store apps)
 * [list-printers.ps1](Scripts/list-printers.ps1) - lists all printer known to the computer
@@ -54,6 +53,7 @@ Mega Collection of PowerShell Scripts
 * [list-services.ps1](Scripts/list-services.ps1) - lists the services on the local computer
 * [list-system-info.ps1](Scripts/list-system-info.ps1) - lists system information on the local computer
 * [list-tasks.ps1](Scripts/list-tasks.ps1) - lists all Windows scheduler tasks
+* [list-timezone.ps1](Scripts/list-timezone.ps1) - lists the current time zone details
 * [list-timezones.ps1](Scripts/list-timezones.ps1) - lists all time zones available 
 * [list-user-groups.ps1](Scripts/list-user-groups.ps1) - lists the user groups on the local computer
 * [poweroff.ps1](Scripts/poweroff.ps1) - halts the local computer (needs admin rights)
