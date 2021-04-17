@@ -6,7 +6,10 @@
 
 #  My Welcome Message
 #  ------------------
-write-host "❤️ Welcome to PowerShell $($PSVersionTable.PSVersion) at $(hostname), it's $(Get-date) ❤️"
+if ($IsLinux) { $Username = $(whoami) } else { $Username = $env:USERNAME }
+$Hostname = $(hostname)
+$host.ui.RawUI.WindowTitle = "$Username @ $Hostname"
+write-host "🧑 $Username enters PowerShell $($PSVersionTable.PSVersion) at $Hostname in $(Get-Location)"
 write-host ""
 
 
@@ -17,12 +20,7 @@ write-host ""
 
 # function prompt { "$ " }	# result is: $
 
-function prompt {
-	if ($IsLinux) { $User = $(whoami) } else { $User = $env:USERNAME }
-	$host.ui.RawUI.WindowTitle = "$User @ $(hostname)"
-	write-host -foregroundColor blue -noNewLine "$(Get-Location)"
-	return "> "
-} # result is: C:\> 
+function prompt { return "💲 " } # result is: 💲 
 
 
 #  My Alias Names (sorted alphabetically)
