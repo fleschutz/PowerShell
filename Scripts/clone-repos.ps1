@@ -24,7 +24,7 @@ try {
 			write-output "Skipping existing $Directory ..."
 			continue
 		}
-		write-output "⏳ Cloning from $URL..."
+		write-output "⏳ Cloning $URL..."
 		& git clone --recurse-submodules $URL
 		if ($lastExitCode -ne "0") { throw "'git clone $URL' failed" }
 	}
