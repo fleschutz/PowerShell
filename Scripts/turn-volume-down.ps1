@@ -13,7 +13,7 @@ try {
 	for ([int]$i = 0; $i -lt $Percent; $i += 2) {
 		$obj.SendKeys([char]174) # each tick is -2%
 	}
-	write-host -foregroundColor green "✔️ turned volume down by $Percent %"
+	"🔉️ volume -$($Percent)%"
 	exit 0
 } catch {
 	write-error "ERROR: line $($_.InvocationInfo.ScriptLineNumber): $($Error[0])"

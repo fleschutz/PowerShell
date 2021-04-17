@@ -1,4 +1,4 @@
-#!/usr/bin/pwsh
+﻿#!/usr/bin/pwsh
 <#
 .SYNTAX       unmute-audio.ps1
 .DESCRIPTION  unmutes audio output
@@ -9,7 +9,7 @@
 try {
 	$obj = new-object -com wscript.shell
 	$obj.SendKeys([char]173)
-	write-host -foregroundColor green "Done"
+	"🔈 audio unmuted."
 	exit 0
 } catch {
 	write-error "ERROR: line $($_.InvocationInfo.ScriptLineNumber): $($Error[0])"

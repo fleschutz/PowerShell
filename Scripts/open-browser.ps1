@@ -1,4 +1,4 @@
-#!/usr/bin/pwsh
+﻿#!/usr/bin/pwsh
 <#
 .SYNTAX       open-browser.ps1 [<URL>]
 .DESCRIPTION  starts the default Web browser, optional with given URL
@@ -6,11 +6,7 @@
 .NOTES        Author: Markus Fleschutz / License: CC0
 #>
 
-param($URL = "")
-
-if ($URL -eq "" ) {
-	$URL = "http://www.fleschutz.de"
-}
+param($URL = "http://www.fleschutz.de")
 
 try {
 	Start-Process $URL

@@ -1,4 +1,4 @@
-#!/usr/bin/pwsh
+﻿#!/usr/bin/pwsh
 <#
 .SYNTAX       list-tags.ps1 [<repo-dir>] [<pattern>]
 .DESCRIPTION  lists all tags in the current/given Git repository 
@@ -9,8 +9,6 @@
 param($RepoDir = "$PWD", $Pattern="*")
 
 try {
-	write-output "Fetching updates for Git repository $RepoDir ..."
-
 	if (-not(test-path "$RepoDir" -pathType container)) { throw "Can't access directory: $RepoDir" }
 	set-location "$RepoDir"
 

@@ -1,4 +1,4 @@
-#!/usr/bin/pwsh
+﻿#!/usr/bin/pwsh
 <#
 .SYNTAX       mute-audio.ps1
 .DESCRIPTION  mutes the audio
@@ -9,8 +9,7 @@
 try {
 	$obj = new-object -com wscript.shell
 	$obj.SendKeys([char]173)
-
-	write-host -foregroundColor green "Done."
+	"🔇 audio muted."
 	exit 0
 } catch {
 	write-error "ERROR: line $($_.InvocationInfo.ScriptLineNumber): $($Error[0])"

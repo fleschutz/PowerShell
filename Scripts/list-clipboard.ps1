@@ -1,4 +1,4 @@
-#!/usr/bin/pwsh
+﻿#!/usr/bin/pwsh
 <#
 .SYNTAX       list-clipboard.ps1
 .DESCRIPTION  lists the contents of the clipboard
@@ -7,7 +7,7 @@
 #>
 
 try {
-	get-clipboard
+	"📋 $(get-clipboard)"
 	exit 0
 } catch {
 	write-error "ERROR: line $($_.InvocationInfo.ScriptLineNumber): $($Error[0])"

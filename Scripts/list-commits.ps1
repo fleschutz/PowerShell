@@ -1,4 +1,4 @@
-#!/usr/bin/pwsh
+﻿#!/usr/bin/pwsh
 <#
 .SYNTAX       list-commits.ps1 [<repo-dir>] [<format>]
 .DESCRIPTION  lists all commits in the current/given Git repository 
@@ -32,6 +32,6 @@ try {
 	write-output ""
 	exit 0
 } catch {
-	write-error "ERROR: line $($_.InvocationInfo.ScriptLineNumber): $($Error[0])"
+	write-error "⚠️ ERROR: $($Error[0]) (line $($_.InvocationInfo.ScriptLineNumber))"
 	exit 1
 }
