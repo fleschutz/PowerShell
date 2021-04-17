@@ -12,7 +12,7 @@ try {
 	$StopWatch = [system.diagnostics.stopwatch]::startNew()
 
 	if (test-path "$RepoDir/CMakeLists.txt") { 
-		"Building $RepoDir using CMakeLists.txt..."
+		"⏳ Building $RepoDir using CMakeLists.txt..."
 		if (-not(test-path "$RepoDir/CMakeBuild")) { 
 			& mkdir "$RepoDir/CMakeBuild/"
 		}
@@ -25,7 +25,7 @@ try {
 		if ($lastExitCode -ne "0") { throw "Executing 'make -j4' has failed" }
 
 	} elseif (test-path "$RepoDir/configure") { 
-		"Building $RepoDir using 'configure'..."
+		"⏳ Building $RepoDir using 'configure'..."
 		set-location "$RepoDir/"
 
 		& ./configure
@@ -35,7 +35,7 @@ try {
 		if ($lastExitCode -ne "0") { throw "Executing 'make -j4' has failed" }
 
 	} elseif (test-path "$RepoDir/autogen.sh") { 
-		"Building $RepoDir using 'autogen.sh'..."
+		"⏳ Building $RepoDir using 'autogen.sh'..."
 		set-location "$RepoDir/"
 
 		& ./autogen.sh
@@ -45,7 +45,7 @@ try {
 		if ($lastExitCode -ne "0") { throw "Executing 'make -j4' has failed" }
 
 	} elseif (test-path "$RepoDir/Imakefile") {
-		"Building $RepoDir using Imakefile..."
+		"⏳ Building $RepoDir using Imakefile..."
 		set-location "$RepoDir/"
 
 		& xmkmf 
@@ -55,25 +55,25 @@ try {
 		if ($lastExitCode -ne "0") { throw "Executing 'make -j4' has failed" }
 
 	} elseif (test-path "$RepoDir/Makefile") {
-		"Building $RepoDir using Makefile..."
+		"⏳ Building $RepoDir using Makefile..."
 		set-location "$RepoDir/"
 
 		& make -j4
 		if ($lastExitCode -ne "0") { throw "Executing 'make -j4' has failed" }
 
 	} elseif (test-path "$RepoDir/attower/src/build/DevBuild/build.bat") {
-		"Building $RepoDir using build.bat..."
+		"⏳ Building $RepoDir using build.bat..."
 		set-location "$RepoDir/attower/src/build/DevBuild/"
 
 		& ./build.bat build-all-release
 		if ($lastExitCode -ne "0") { throw "Script 'build.bat' returned error(s)" }
 
 	} else {
-		write-warning "Sorry, no clue how to build $RepoDir"
+		write-warning "Sorry, no rule found to build $RepoDir"
 		exit 0
 	}
 
-	write-host -foregroundColor green "✔️ built Git repository $RepoDir in $($StopWatch.Elapsed.Seconds) second(s)"
+	write-host -foregroundColor green "✔️ Git repository $RepoDir built in $($StopWatch.Elapsed.Seconds) second(s)"
 	exit 0
 } catch {
 	write-error "ERROR: line $($_.InvocationInfo.ScriptLineNumber): $($Error[0])"

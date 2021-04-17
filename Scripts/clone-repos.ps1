@@ -1,4 +1,4 @@
-#!/usr/bin/pwsh
+﻿#!/usr/bin/pwsh
 <#
 .SYNTAX       clone-repos.ps1 [<target-dir>]
 .DESCRIPTION  clones well-known Git repositories into the current/given directory.
@@ -28,7 +28,7 @@ try {
 			write-output "Skipping existing $Directory ..."
 			continue
 		}
-		write-output "Cloning from $URL..."
+		write-output "⏳ Cloning from $URL..."
 		& git clone --recurse-submodules $URL
 		if ($lastExitCode -ne "0") { throw "'git clone $URL' failed" }
 	}

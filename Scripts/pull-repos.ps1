@@ -1,4 +1,4 @@
-#!/usr/bin/pwsh
+﻿#!/usr/bin/pwsh
 <#
 .SYNTAX       pull-repos.ps1 [<parent-dir>]
 .DESCRIPTION  pulls updates for all Git repositories under the current/given directory (including submodules)
@@ -19,7 +19,7 @@ try {
 
 	[int]$Count = 0
 	get-childItem $ParentDir -attributes Directory | foreach-object {
-		"Pulling updates for Git repository $($_.FullName)..."
+		"⏳ Pulling updates for Git repository $($_.FullName)..."
 
 		set-location $_.FullName
 
@@ -30,7 +30,7 @@ try {
 		$Count++
 	}
 
-	write-host -foregroundColor green "✔️ pulled updates for $Count Git repositories under $ParentDir in $($StopWatch.Elapsed.Seconds) second(s)"
+	write-host -foregroundColor green "✔️ Updates pulled for $Count Git repositories under $ParentDir in $($StopWatch.Elapsed.Seconds) second(s)"
 	exit 0
 } catch {
 	write-error "ERROR: line $($_.InvocationInfo.ScriptLineNumber): $($Error[0])"

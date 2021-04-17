@@ -9,7 +9,7 @@
 param($RepoDir = "$PWD")
 
 try {
-	"→ Pulling updates for Git repository $RepoDir ..."
+	"⏳ Pulling updates for Git repository $($RepoDir)..."
 
 	if (-not(test-path "$RepoDir" -pathType container)) { throw "Can't access directory: $RepoDir" }
 	set-location "$RepoDir"
@@ -20,7 +20,7 @@ try {
 	& git status
 	if ($lastExitCode -ne "0") { throw "'git status' failed" }
 
-	write-host -foregroundColor green "✔️ updates pulled for Git repository $RepoDir"
+	write-host -foregroundColor green "✔️ Updates pulled for Git repository $RepoDir"
 	exit 0
 } catch {
 	write-error "ERROR: line $($_.InvocationInfo.ScriptLineNumber): $($Error[0])"

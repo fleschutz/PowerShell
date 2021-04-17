@@ -9,7 +9,7 @@
 param($ParentDir = "$PWD")
 
 try {
-	"Building Git repositories at $($ParentDir)..."
+	"⏳ Building Git repositories at $($ParentDir)..."
 	$StopWatch = [system.diagnostics.stopwatch]::startNew()
 
 	if (-not(test-path "$ParentDir" -pathType container)) { throw "Can't access directory: $ParentDir" }
@@ -21,7 +21,7 @@ try {
 		$Count++
 	}
 
-	write-host -foregroundColor green "✔️ built $Count Git repositories at $ParentDir in $($StopWatch.Elapsed.Seconds) second(s)"
+	write-host -foregroundColor green "✔️ $Count Git repositories built at $ParentDir in $($StopWatch.Elapsed.Seconds) second(s)"
 	exit 0
 } catch {
 	write-error "ERROR: line $($_.InvocationInfo.ScriptLineNumber): $($Error[0])"

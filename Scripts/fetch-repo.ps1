@@ -9,7 +9,7 @@
 param($RepoDir = "$PWD")
 
 try {
-	"📥 Fetching updates for Git repository $($RepoDir)..."
+	"⏳ Fetching updates for Git repository $($RepoDir)..."
 
 	if (-not(test-path "$RepoDir" -pathType container)) { throw "Can't access directory: $RepoDir" }
 	set-location "$RepoDir"
