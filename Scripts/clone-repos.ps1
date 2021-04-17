@@ -19,14 +19,14 @@ try {
 	foreach($Row in $Table) {
 		$URL = $Row.URL
 		$Directory = $Row.Directory
-		write-output ""
 		if (Test-Path $Directory) {
-			write-output "Skipping existing $Directory ..."
+			"Skipping existing $Directory..."
 			continue
 		}
-		write-output "⏳ Cloning $URL..."
+		"⏳ Cloning $URL..."
 		& git clone --recurse-submodules $URL
 		if ($lastExitCode -ne "0") { throw "'git clone $URL' failed" }
+		""
 	}
 	exit 0
 } catch {
