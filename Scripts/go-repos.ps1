@@ -1,4 +1,4 @@
-#!/usr/bin/pwsh
+﻿#!/usr/bin/pwsh
 <#
 .SYNTAX       go-repos.ps1 
 .DESCRIPTION  go to the user's Git repositories folder
@@ -7,7 +7,9 @@
 #>
 
 try {
-	set-location $HOME/Repos/
+	$TargetDir = resolve-path "$HOME/Repos/"
+	set-location "$TargetDir"
+	"📂 $TargetDir"
 	exit 0
 } catch {
 	write-error "ERROR: line $($_.InvocationInfo.ScriptLineNumber): $($Error[0])"

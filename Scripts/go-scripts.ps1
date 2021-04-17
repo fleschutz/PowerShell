@@ -1,4 +1,4 @@
-#!/usr/bin/pwsh
+﻿#!/usr/bin/pwsh
 <#
 .SYNTAX       go-scripts.ps1 
 .DESCRIPTION  go to the PowerShell Scripts folder
@@ -7,7 +7,9 @@
 #>
 
 try {
-	set-location $PSScriptRoot
+	$TargetDir = resolve-path "$PSScriptRoot/"
+	set-location "$TargetDir"
+	"📂 $TargetDir"
 	exit 0
 } catch {
 	write-error "ERROR: line $($_.InvocationInfo.ScriptLineNumber): $($Error[0])"

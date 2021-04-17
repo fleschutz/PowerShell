@@ -1,4 +1,4 @@
-#!/usr/bin/pwsh
+﻿#!/usr/bin/pwsh
 <#
 .SYNTAX       go-home.ps1 
 .DESCRIPTION  go to the user's home folder
@@ -7,7 +7,9 @@
 #>
 
 try {
-	set-location $HOME
+	$TargetDir = resolve-path "$HOME/"
+	set-location "$TargetDir"
+	"📂 $TargetDir"
 	exit 0
 } catch {
 	write-error "ERROR: line $($_.InvocationInfo.ScriptLineNumber): $($Error[0])"

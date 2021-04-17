@@ -1,4 +1,4 @@
-#!/usr/bin/pwsh
+﻿#!/usr/bin/pwsh
 <#
 .SYNTAX       go-root.ps1 
 .DESCRIPTION  go to the root directory (C: on Windows)
@@ -8,10 +8,12 @@
 
 try {
 	if ($IsLinux) {
-		set-location /
+		$TargetDir = resolve-path "/"
 	} else {
-		set-location C:
+		$TargetDir = resolve-path "C:/"
 	}
+	set-location "$TargetDir"
+	"📂 $TargetDir"
 	exit 0
 } catch {
 	write-error "ERROR: line $($_.InvocationInfo.ScriptLineNumber): $($Error[0])"

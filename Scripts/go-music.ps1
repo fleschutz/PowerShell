@@ -1,4 +1,4 @@
-#!/usr/bin/pwsh
+﻿#!/usr/bin/pwsh
 <#
 .SYNTAX       go-music.ps1 
 .DESCRIPTION  go to the user's music folder
@@ -7,7 +7,9 @@
 #>
 
 try {
-	set-location $HOME/Music/
+	$TargetDir = resolve-path "$HOME/Music/"
+	set-location "$TargetDir"
+	"📂 $TargetDir"
 	exit 0
 } catch {
 	write-error "ERROR: line $($_.InvocationInfo.ScriptLineNumber): $($Error[0])"
