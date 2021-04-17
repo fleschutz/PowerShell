@@ -7,10 +7,7 @@
 #>
 
 param($NewTagName = "", $RepoDir = "$PWD")
-
-if ($NewTagName -eq "") {
-	$NewTagName = read-host "Enter new branch name"
-}
+if ($NewTagName -eq "") { $NewTagName = read-host "Enter new tag name" }
 
 try {
 	if (-not(test-path "$RepoDir" -pathType container)) { throw "Can't access directory: $RepoDir" }
@@ -32,6 +29,7 @@ try {
 	& git push origin "$NewTagName"
 	if ($lastExitCode -ne "0") { throw "Error: 'git push origin $NewTagName' failed!" }
 
+	"🔖 tag $NewTagName has been created"
 	exit 0
 } catch {
 	write-error "ERROR: line $($_.InvocationInfo.ScriptLineNumber): $($Error[0])"

@@ -9,7 +9,8 @@
 param($RepoDir = "$PWD")
 
 try {
-	"⏳ Cleaning Git repository $RepoDir from untracked files..."
+	$RepoDir = resolve-path "$RepoDir/"
+	"⏳ Cleaning $RepoDir from untracked files..."
 
 	if (-not(test-path "$RepoDir" -pathType container)) { throw "Can't access directory: $RepoDir" }
 	set-location "$RepoDir"
@@ -23,7 +24,7 @@ try {
 	& git submodule foreach --recursive git clean -fdx 
 	if ($lastExitCode -ne "0") { throw "'git clean -fdx' in submodules failed" }
 
-	write-host -foregroundColor green "✔️ Git repository $RepoDir is clean"
+	"📂 $RepoDir is clean"
 	exit 0
 } catch {
 	write-error "ERROR: line $($_.InvocationInfo.ScriptLineNumber): $($Error[0])"

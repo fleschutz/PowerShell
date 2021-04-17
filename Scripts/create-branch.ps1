@@ -1,4 +1,4 @@
-#!/usr/bin/pwsh
+﻿#!/usr/bin/pwsh
 <#
 .SYNTAX       create-branch.ps1 [<new-branch-name>] [<repo-dir>]
 .DESCRIPTION  creates a new branch in the current/given Git repository 
@@ -7,10 +7,7 @@
 #>
 
 param($NewBranchName = "", $RepoDir = "$PWD")
-
-if ($NewBranchName -eq "") {
-	$NewBranchName = read-host "Enter new branch name"
-}
+if ($NewBranchName -eq "") { $NewBranchName = read-host "Enter new branch name" }
 
 try {
 	if (-not(test-path "$RepoDir" -pathType container)) { throw "Can't access directory: $RepoDir" }
@@ -35,6 +32,7 @@ try {
 	& git submodule update --init --recursive
 	if ($lastExitCode -ne "0") { throw "'git submodule update' failed" }
 
+	"🌵 branch $NewBranchName has been created"
 	exit 0
 } catch {
 	write-error "ERROR: line $($_.InvocationInfo.ScriptLineNumber): $($Error[0])"

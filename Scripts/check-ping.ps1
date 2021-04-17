@@ -25,7 +25,7 @@ try {
 	}
 	$Avg = $Avg / $Pings.count
 
-	write-host -foregroundColor green "✔️ $Avg ms average ping latency ($Min ms min, $Max ms max)"
+	"✔️ $Avg ms average ping latency ($Min ms min, $Max ms max)"
 	exit 0
 } catch {
 	write-error "ERROR: line $($_.InvocationInfo.ScriptLineNumber): $($Error[0])"

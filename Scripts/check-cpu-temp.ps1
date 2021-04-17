@@ -26,7 +26,7 @@ try {
 	} elseif ($Temp -lt "0") {
 		write-warning "$Temp °C CPU temperature is quite low"
 	} else {
-		write-host -foregroundColor green "✔️ $Temp °C CPU temperature"
+		"✔️ $Temp °C CPU temperature"
 	}
 	exit 0
 } catch {

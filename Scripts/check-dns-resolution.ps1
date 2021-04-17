@@ -25,7 +25,7 @@ try {
 
 	$Elapsed = $StopWatch.Elapsed
 	$Average = [math]::round($Count / $Elapsed.Seconds, 1)
-	write-host -foregroundColor green "✔️ $Average domains/s ($Count domains resolved in $($Elapsed.Seconds) seconds)"
+	"✔️ $Average domains/s ($Count domains resolved in $($Elapsed.Seconds) seconds)"
 	exit 0
 } catch {
 	write-error "ERROR: line $($_.InvocationInfo.ScriptLineNumber): $($Error[0])"

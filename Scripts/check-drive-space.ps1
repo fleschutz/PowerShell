@@ -8,9 +8,7 @@
 
 param($Drive = "", [int]$MinLevel = 50) # minimum level in GB
 
-if ($Drive -eq "" ) {
-	$Drive = read-host "Enter drive to check"
-}
+if ($Drive -eq "" ) { $Drive = read-host "Enter drive to check" }
 
 try {
 	$DriveDetails = (get-psdrive $Drive)
@@ -22,7 +20,7 @@ try {
         	write-warning "Drive $Drive has only $Free GB left to use! ($Used GB out of $Total GB in use, minimum is $MinLevel GB)"
 		exit 1
 	}
-	write-host -foregroundColor green "✔️ $Free GB left on drive $Drive ($Used GB of $Total GB used)"
+	"✔️ $Free GB left on drive $Drive ($Used GB of $Total GB used)"
 	exit 0
 } catch {
 	write-error "ERROR: line $($_.InvocationInfo.ScriptLineNumber): $($Error[0])"
