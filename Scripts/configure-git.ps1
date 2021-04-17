@@ -12,13 +12,9 @@ if ($EmailAddress -eq "") { $EmailAddress   = read-host "Enter your e-mail addre
 if ($FavoriteEditor -eq "") { $FavoriteEditor = read-host "Enter your favorite text editor (emacs,nano,vi,vim,...)" }
 
 try {
-	& git --version
-} catch {
-	write-error "Can't execute 'git' - make sure Git is installed and available"
-	exit 1
-}
+	$Null = (git --version)
+	if ($lastExitCode -ne "0") { throw "Can't execute 'git' - make sure Git is installed and available" }
 
-try {
 	& git config --global user.name $FullName
 	& git config --global user.email $EmailAddress
 	& git config --global core.editor $FavoriteEditor

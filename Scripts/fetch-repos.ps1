@@ -14,7 +14,7 @@ try {
 	if (-not(test-path "$ParentDir" -pathType container)) { throw "Can't access directory: $ParentDir" }
 	set-location $ParentDir
 
-	& git --version
+	$Null = (git --version)
 	if ($lastExitCode -ne "0") { throw "Can't execute 'git' - make sure Git is installed and available" }
 
 	[int]$Count = 0

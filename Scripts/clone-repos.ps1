@@ -9,13 +9,9 @@
 param($TargetDir = "$PWD")
 
 try {
-	& git --version
-} catch {
-	write-error "ERROR: can't execute 'git' - make sure Git is installed and available"
-	exit 1
-}
+	$Null = (git --version)
+	if ($lastExitCode -ne "0") { throw "Can't execute 'git' - make sure Git is installed and available" }
 
-try {
 	$PathToRepo = "$PSScriptRoot/.."
 	$Table = import-csv "$PathToRepo/Data/repos.csv"
 
