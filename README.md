@@ -164,6 +164,7 @@ Mega Collection of PowerShell Scripts
 * [display-time.ps1](Scripts/display-time.ps1) - displays the current time for 10 seconds by default
 * [generate-qrcode.ps1](Scripts/generate-qrcode.ps1) - generates a QR code
 * [list-anagrams.ps1](Scripts/list-anagrams.ps1) - lists all anagrams of the given word
+* [list-city-weather.ps1](Scripts/list-city-weather.ps1) - lists the current weather of cities worldwide (west to east)
 * [list-environment-variables.ps1](Scripts/list-environment-variables.ps1) - lists all environment variables
 * [list-fritzbox-calls.ps1](Scripts/list-fritzbox-calls.ps1) - lists the FRITZ!Box calls
 * [list-fritzbox-devices.ps1](Scripts/list-fritzbox-devices.ps1) - lists FRITZ!Box's known devices 
@@ -195,7 +196,6 @@ Mega Collection of PowerShell Scripts
 * [weather.ps1](Scripts/weather.ps1) - prints the current weather forecast
 * [weather-alert.ps1](Scripts/weather-alert.ps1) - checks the current weather for critical values
 * [weather-report.ps1](Scripts/weather-report.ps1) - prints the local weather report
-* [weather-worldwide.ps1](Scripts/weather-worldwide.ps1) - prints the current weather of cities worldwide
 * [write-animated.ps1](Scripts/write-animated.ps1) - writes animated text
 * [write-big.ps1](Scripts/write-big.ps1) - writes the given text in big letters
 * [write-blue.ps1](Scripts/write-blue.ps1) - writes the given text in a blue foreground color

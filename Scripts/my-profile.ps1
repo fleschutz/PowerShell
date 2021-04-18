@@ -9,8 +9,7 @@
 if ($IsLinux) { $Username = $(whoami) } else { $Username = $env:USERNAME }
 $Hostname = $(hostname)
 $host.ui.RawUI.WindowTitle = "$Username @ $Hostname"
-write-host "🧑 $Username enters PowerShell $($PSVersionTable.PSVersion) at $Hostname in $(Get-Location)"
-write-host ""
+"🧑 $Username enters 💻$Hostname at $(Get-Location)"
 
 
 #  My Command Prompt
@@ -27,7 +26,3 @@ function prompt { "`n💲 " }	# result is: 💲
 set-alias -name cwd -value list-workdir.ps1	# cwd = current working directory
 set-alias -name ll -value get-childitem		# ll = list long
 set-alias -name lsf -value list-formatted.ps1	# lsf = list directory formatted
-
-
-
-
