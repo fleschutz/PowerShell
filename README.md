@@ -1,7 +1,7 @@
 Mega Collection of PowerShell Scripts
 =====================================
 
-**This repository provides more than 180 useful and cross-platform PowerShell scripts in the subfolder [Scripts/](Scripts/) - to be used by command-line interface (CLI), for remote control (e.g. via SSH), by context menu, by voice control, by automation software like Jenkins, automatically as daily tasks, or simply to learn PowerShell. See the [PowerShell FAQ page](Misc/FAQ.md) if you need help or have any questions.**
+**This repository provides more than 190 useful and cross-platform PowerShell scripts in the subfolder [Scripts/](Scripts/) - to be used by command-line interface (CLI), for remote control (e.g. via SSH), by context menu, by voice control, by automation software like Jenkins, automatically as daily tasks, or simply to learn PowerShell. See the [PowerShell FAQ page](Misc/FAQ.md) if you need help or have any questions.**
 
 🔊 PowerShell Scripts for Audio & Voice 
 ----------------------------------------
@@ -95,7 +95,9 @@ Mega Collection of PowerShell Scripts
 * [download-file.ps1](Scripts/download-file.ps1) - downloads a file from the given URL
 * [edit.ps1](Scripts/edit.ps1) - edits the given file with the built-in text editor
 * [encrypt-file.ps1](Scripts/encrypt-file.ps1) - encrypts the given file
+* [go-desktop.ps1](Scripts/go-desktop.ps1) - go to the user's desktop folder
 * [go-downloads.ps1](Scripts/go-downloads.ps1) - go to the user's downloads folder
+* [go-dropbox.ps1](Scripts/go-dropbox.ps1) - go to the user's dropbox folder
 * [go-home.ps1](Scripts/go-home.ps1) - go to the user's home folder
 * [go-music.ps1](Scripts/go-music.ps1) - go to the user's music folder
 * [go-repos.ps1](Scripts/go-repos.ps1) - go to the user's Git repositories folder

@@ -1,13 +1,13 @@
 ﻿#!/usr/bin/pwsh
 <#
-.SYNTAX       go-music.ps1 
-.DESCRIPTION  go to the user's music folder
+.SYNTAX       go-desktop.ps1 
+.DESCRIPTION  go to the user's desktop folder
 .LINK         https://github.com/fleschutz/PowerShell
 .NOTES        Author: Markus Fleschutz / License: CC0
 #>
 
 try {
-	$TargetDir = resolve-path "$HOME/Music/"
+	$TargetDir = resolve-path "$HOME/Desktop/"
 	set-location "$TargetDir"
 	"📂$TargetDir"
 	exit 0
