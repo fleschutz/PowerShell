@@ -1,4 +1,4 @@
-#!/usr/bin/pwsh
+﻿#!/usr/bin/pwsh
 <#
 .SYNTAX       list-news.ps1 [<RSS-URL>]
 .DESCRIPTION  lists the latest news
@@ -10,13 +10,13 @@ param($RSS_URL = "https://yahoo.com/news/rss/world")
 
 try {
 	[xml]$Content = (invoke-webRequest -URI $RSS_URL).Content
+	"`n🌍 $($Content.rss.channel.title) 🌏"
 
-	write-output ""
-	write-output "+++ $($Content.rss.channel.title) +++"
-	write-output ""
-
+	[int]$Count = 0
 	foreach ($item in $Content.rss.channel.item) {
-		write-output "* $($item.title)"
+		"→ $($item.title)"
+		$Count++
+		if ($Count -eq 26) { break }
 	}
 	exit 0
 } catch {
