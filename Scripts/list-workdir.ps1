@@ -1,15 +1,14 @@
 ﻿#!/usr/bin/pwsh
 <#
-.SYNTAX       go-downloads.ps1 
-.DESCRIPTION  go to the user's downloads folder
+.SYNTAX       list-workdir.ps1 
+.DESCRIPTION  lists the current working directory
 .LINK         https://github.com/fleschutz/PowerShell
 .NOTES        Author: Markus Fleschutz / License: CC0
 #>
 
 try {
-	$TargetDir = resolve-path "$HOME/Downloads/"
-	set-location "$TargetDir"
-	"📂 $TargetDir"
+	$CWD = resolve-path "$PWD/"
+	"📂 $CWD"
 	""
 	exit 0
 } catch {

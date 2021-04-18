@@ -10,6 +10,7 @@ try {
 	$TargetDir = resolve-path "$PSScriptRoot/"
 	set-location "$TargetDir"
 	"📂 $TargetDir"
+	""
 	exit 0
 } catch {
 	write-error "ERROR: line $($_.InvocationInfo.ScriptLineNumber): $($Error[0])"

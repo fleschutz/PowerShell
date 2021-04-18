@@ -15,7 +15,6 @@ write-host ""
 
 #  My Command Prompt
 #  -----------------
-
 # function prompt {$null}	# result is: PS> 
 
 # function prompt { "$ " }	# result is: $
@@ -25,8 +24,10 @@ function prompt { return "💲 " } # result is: 💲
 
 #  My Alias Names (sorted alphabetically)
 #  --------------
+set-alias -name cwd -value list-workdir.ps1	# cwd = current working directory
 set-alias -name ll -value get-childitem		# ll = list long
-set-alias -name lsf -value list-formatted.ps1	# lsf = list directory formatted in columns
+set-alias -name lsf -value list-formatted.ps1	# lsf = list directory formatted
+
 
 
 

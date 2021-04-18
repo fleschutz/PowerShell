@@ -103,6 +103,7 @@ list-tasks.ps1, lists all Windows scheduler tasks
 list-timezone.ps1, lists the current time zone details
 list-timezones.ps1, lists all time zones available 
 list-user-groups.ps1, lists the user groups on the local computer
+list-workdir.ps1, lists the current working directory
 locate-city.ps1, prints the geographic location of the given city
 locate-ipaddress.ps1, prints the geographic location of the given IP address
 locate-zip-code.ps1, prints the geographic location of the given zip-code
