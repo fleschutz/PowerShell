@@ -19,7 +19,7 @@ write-host ""
 
 # function prompt { "$ " }	# result is: $
 
-function prompt { return "💲 " } # result is: 💲 
+function prompt { "`n💲 " }	# result is: 💲 
 
 
 #  My Alias Names (sorted alphabetically)

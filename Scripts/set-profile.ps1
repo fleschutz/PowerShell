@@ -12,7 +12,8 @@ try {
 
 	copy-item "$PathToRepo/Scripts/my-profile.ps1" "$PathToProfile" -force
 
-	write-host -foregroundColor green "✔️ PowerShell profile 'CurrentUserCurrentHost' updated - gets active on next login"
+	"✔️ PowerShell profile 'CurrentUserCurrentHost' updated by my-profile.ps1 - it gets active on next login"
+	""
 	exit 0
 } catch {
 	write-error "ERROR: line $($_.InvocationInfo.ScriptLineNumber): $($Error[0])"
