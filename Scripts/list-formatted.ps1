@@ -11,12 +11,14 @@ param($Directory = "$PWD")
 function ListDir { param([string]$Path)
 	$Items = get-childItem -path $Path
 	foreach ($Item in $Items) {
-		if ($Item.Name[0] -eq '.') { continue } # hidden file/dir
-		if ($Item.Mode -like "d*") {
-			new-object PSObject -Property @{ Name = "📂$($Item.Name)" }
-		} else {
-			new-object PSObject -Property @{ Name = "📄$($Item.Name)" }
-		}
+		$Name = $Item.Name
+		if ($Name[0] -eq '.') { continue } # hidden file/dir
+		if ($Item.Mode -like "d*") { $Icon = "📂" 
+		} elseif ($Name -like "*.iso") { $Icon = "📀"
+		} elseif ($Name -like "*.mp3") { $Icon = "🎵"
+		} elseif ($Name -like "*.epub") { $Icon = "📓"
+		} else { $Icon = "📄" }
+		new-object PSObject -Property @{ Name = "$Icon$Name" }
 	}
 }
 
