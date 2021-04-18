@@ -13,7 +13,7 @@ try {
 		$TargetDir = resolve-path "C:/"
 	}
 	set-location "$TargetDir"
-	"📂 $TargetDir"
+	"  📂$TargetDir"
 	exit 0
 } catch {
 	write-error "ERROR: line $($_.InvocationInfo.ScriptLineNumber): $($Error[0])"
