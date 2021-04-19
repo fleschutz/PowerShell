@@ -1,4 +1,4 @@
-#!/usr/bin/pwsh
+﻿#!/usr/bin/pwsh
 <#
 .SYNTAX       list-hourly-weather.ps1 [<location>]
 .DESCRIPTION  lists the hourly weather today
@@ -14,7 +14,7 @@ try {
 	$Area = $Weather.nearest_area.areaName.value
 	$Region = $Weather.nearest_area.region.value
 	$Country = $Weather.nearest_area.country.value
-	"Hourly weather today at $Area, $Region ($Country)"
+	"🕗 Hourly weather today at $Area ($Region, $Country)"
 
 	[int]$Hour = 0
 	foreach ($Hourly in $Weather.weather.hourly) {
