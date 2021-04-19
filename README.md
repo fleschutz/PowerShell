@@ -170,6 +170,7 @@ Mega Collection of PowerShell Scripts
 * [list-environment-variables.ps1](Scripts/list-environment-variables.ps1) - lists all environment variables
 * [list-fritzbox-calls.ps1](Scripts/list-fritzbox-calls.ps1) - lists the FRITZ!Box calls
 * [list-fritzbox-devices.ps1](Scripts/list-fritzbox-devices.ps1) - lists FRITZ!Box's known devices 
+* [list-hourly-weather.ps1](Scripts/list-hourly-weather.ps1) - lists the hourly weather today
 * [list-logbook.ps1](Scripts/list-logbook.ps1) - lists the content of the logbook 
 * [list-earthquakes.ps1](Scripts/list-earthquakes.ps1) - lists earthquakes with magnitude >= 6.0 for the last 30 days
 * [list-mysql-tables.ps1](Scripts/list-mysql-tables.ps1) - lists the MySQL server tables

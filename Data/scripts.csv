@@ -81,6 +81,7 @@ list-formatted.ps1, lists the current working directory formatted in columns
 list-fritzbox-calls.ps1, lists the FRITZ!Box calls
 list-fritzbox-devices.ps1, lists FRITZ!Box's known devices 
 list-hidden-files.ps1, lists hidden files within the given directory tree
+list-hourly-weather.ps1, lists the hourly weather today
 list-installed-apps.ps1, lists the installed Windows Store apps
 list-installed-software.ps1, lists the installed software (except Windows Store apps)
 list-logbook.ps1, lists the content of the logbook 
