@@ -28,7 +28,7 @@ try {
 		$Visib = $Hourly.visibility
 		$Clouds = $Hourly.cloudcover
 		$Desc = $Hourly.weatherDesc.value
-		"$($Hour):00: $($Temp)°C $($Precip)mm $($Humidity)% $($Pressure)hPa $WindDir $($WindSpeed)km/h UV$($UV) $($Visib)km $($Clouds)% ($Desc)"
+		"$($Hour)°°`t$($Temp)°C`t$($Precip)mm $($Humidity)%`t$($WindSpeed)km/h from $WindDir`t$($Pressure)hPa  UV$($UV)  $($Visib)km  $($Clouds)%  $Desc"
 		$Hour++
 	}
 
