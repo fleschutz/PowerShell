@@ -9,22 +9,22 @@
 param($TargetDir = "$PWD")
 
 try {
+	if (-not(test-path "$TargetDir" -pathType container)) { throw "Can't access directory: $TargetDir" }
+
 	$Null = (git --version)
 	if ($lastExitCode -ne "0") { throw "Can't execute 'git' - make sure Git is installed and available" }
 
-	$PathToRepo = "$PSScriptRoot/.."
-	$Table = import-csv "$PathToRepo/Data/repos.csv"
+	$Table = import-csv "$PSScriptRoot/../Data/git-repositories.csv"
 
-	set-location $TargetDir
 	foreach($Row in $Table) {
 		$URL = $Row.URL
 		$Directory = $Row.Directory
-		if (Test-Path $Directory) {
+		if (Test-Path "$TargetDir/$Directory") {
 			"Skipping existing $Directory..."
 			continue
 		}
 		"⏳ Cloning $URL..."
-		& git clone --recurse-submodules $URL
+		& git clone --recurse-submodules "$URL" "$TargetDir/$Directory"
 		if ($lastExitCode -ne "0") { throw "'git clone $URL' failed" }
 		""
 	}
