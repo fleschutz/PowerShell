@@ -160,6 +160,7 @@ Mega Collection of PowerShell Scripts
 * [check-ipv4-address.ps1](Scripts/check-ipv4-address.ps1) - checks the given IPv4 address for validity
 * [check-ipv6-address.ps1](Scripts/check-ipv6-address.ps1) - checks the given IPv6 address for validity
 * [check-mac-address.ps1](Scripts/check-mac-address.ps1) - checks the given MAC address for validity
+* [check-weather.ps1](Scripts/check-weather.ps1) - checks the current weather for critical values
 * [convert-csv2txt.ps1](Scripts/convert-csv2txt.ps1) - converts the given CSV file to a text list
 * [convert-mysql2csv.ps1](Scripts/convert-mysql2csv.ps1) - converts the MySQL database table to a CSV file
 * [convert-sql2csv.ps1](Scripts/convert-sql2csv.ps1) - converts the SQL database table to a CSV file
@@ -197,7 +198,6 @@ Mega Collection of PowerShell Scripts
 * [translate-files.ps1](Scripts/translate-files.ps1) - translates the given text files into any supported language
 * [translate-text.ps1](Scripts/translate-text.ps1) - translates the given text in English into other languages
 * [weather.ps1](Scripts/weather.ps1) - prints the current weather forecast
-* [weather-alert.ps1](Scripts/weather-alert.ps1) - checks the current weather for critical values
 * [weather-report.ps1](Scripts/weather-report.ps1) - prints the local weather report
 * [write-animated.ps1](Scripts/write-animated.ps1) - writes animated text
 * [write-big.ps1](Scripts/write-big.ps1) - writes the given text in big letters
