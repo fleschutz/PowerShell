@@ -9,7 +9,6 @@
 param($ParentDir = "$PWD")
 
 try {
-	"⏳ Building Git repositories at $($ParentDir)..."
 	$StopWatch = [system.diagnostics.stopwatch]::startNew()
 
 	if (-not(test-path "$ParentDir" -pathType container)) { throw "Can't access directory: $ParentDir" }
