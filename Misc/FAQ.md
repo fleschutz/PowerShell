@@ -63,10 +63,10 @@ How to edit the PowerShell Scripts?
 
 How to write good PowerShell Scripts?
 -------------------------------------
-Good PowerShell scripts are user-friendly and platform-independant. As a guideline follow the 11 golden rules, please:
+Good PowerShell scripts are user-friendly and platform-independant. As a guideline follow these rules, please:
 
 1. the filename is named using the `<verb>-<object>.ps1` scheme
-2. the encoding is UTF-8-BOM to support Unicode characters (including emojis where appropriate)
+2. the encoding is UTF-8-BOM to support and use Unicode characters (including emojis where appropriate)
 3. the script has execute file permissions: chmod a+rx <file> (for Linux support)
 4. the first line reads `#!/usr/bin/pwsh` (for Linux support)
 5. provide a comment-based help with syntax, description, link, author, and license
