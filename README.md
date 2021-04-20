@@ -106,11 +106,11 @@ Mega Collection of PowerShell Scripts
 * [go-root.ps1](Scripts/go-root.ps1) - go to the root directory (C:\ on Windows)
 * [go-scripts.ps1](Scripts/go-scripts.ps1) - go to the PowerShell Scripts folder
 * [inspect-exe.ps1](Scripts/inspect-exe.ps1) - prints basic information of the given executable file
-* [list-dir-tree.ps1](Scripts/list-dir-tree.ps1) - lists a directory tree
+* [list-dir.ps1](Scripts/list-dir.ps1) - lists the directory content (formatted in columns)
+* [list-dir-tree.ps1](Scripts/list-dir-tree.ps1) - lists the directory tree content
 * [list-empty-dirs.ps1](Scripts/list-empty-dirs.ps1) - lists empty subfolders within the given directory tree
 * [list-empty-files.ps1](Scripts/list-empty-files.ps1) - lists empty files within the given directory tree
 * [list-files.ps1](Scripts/list-files.ps1) - lists all files in the given folder and also in every subfolder
-* [list-formatted.ps1](Scripts/list-formatted.ps1) - lists the current working directory formatted in columns
 * [list-hidden-files.ps1](Scripts/list-hidden-files.ps1) - lists hidden files within the given directory tree
 * [list-unused-files.ps1](Scripts/list-unused-files.ps1) - lists unused files in a directory tree
 * [list-workdir.ps1](Scripts/list-workdir.ps1) - lists the current working directory

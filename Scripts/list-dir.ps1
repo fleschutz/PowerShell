@@ -1,7 +1,7 @@
 ﻿#!/usr/bin/pwsh
 <#
-.SYNTAX       list-formatted.ps1 [<directory>]
-.DESCRIPTION  lists the current working directory formatted in columns
+.SYNTAX       list-dir.ps1 [<directory>]
+.DESCRIPTION  lists the directory content formatted in columns
 .LINK         https://github.com/fleschutz/PowerShell
 .NOTES        Author: Markus Fleschutz / License: CC0
 #>
