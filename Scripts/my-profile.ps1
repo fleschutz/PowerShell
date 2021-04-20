@@ -23,6 +23,7 @@ function prompt { "`n💲 " }	# result is: 💲
 
 #  My Alias Names (sorted alphabetically)
 #  --------------
-set-alias -name cwd -value list-workdir.ps1	# cwd = current working directory
+del alias:pwd -force
+set-alias -name pwd -value list-workdir.ps1	# pwd = print working directory
 set-alias -name ll -value get-childitem		# ll = list long
 set-alias -name lsf -value list-formatted.ps1	# lsf = list directory formatted
