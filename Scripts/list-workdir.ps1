@@ -7,9 +7,8 @@
 #>
 
 try {
-	$CWD = resolve-path "$PWD/"
-	"📂 $CWD"
-	""
+	$CWD = resolve-path "$PWD"
+	"📂$CWD"
 	exit 0
 } catch {
 	write-error "ERROR: line $($_.InvocationInfo.ScriptLineNumber): $($Error[0])"
