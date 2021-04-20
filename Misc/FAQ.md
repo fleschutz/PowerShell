@@ -31,6 +31,9 @@ How to get the PowerShell Scripts?
 * Git users execute: `$ git clone https://github.com/fleschutz/PowerShell`
 * otherwise download it from: https://github.com/fleschutz/PowerShell/archive/master.zip
 
+How to fix gibberish characters when executing the Scripts?
+-----------------------------------------------------------
+The PowerShell scripts support and use Unicode characters! Use a modern console supporting UTF-8 such as Windows Terminal.
 
 How to set PowerShell as Default Shell?
 ---------------------------------------
