@@ -26,5 +26,4 @@ function prompt { "`n💲 " }	# result is: 💲
 del alias:pwd -force
 set-alias -name pwd -value list-workdir.ps1	# pwd = print working directory
 set-alias -name ll -value get-childitem		# ll = list long
-del alias:ls -force
 set-alias -name ls -value list-dir.ps1		# ls = list directory 
