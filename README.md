@@ -171,6 +171,7 @@ Mega Collection of PowerShell Scripts
 * [list-anagrams.ps1](Scripts/list-anagrams.ps1) - lists all anagrams of the given word
 * [list-city-weather.ps1](Scripts/list-city-weather.ps1) - lists the current weather of cities worldwide (west to east)
 * [list-environment-variables.ps1](Scripts/list-environment-variables.ps1) - lists all environment variables
+* [list-emojis.ps1](Scripts/list-emojis.ps1) - lists the emojis of Unicode 13.0
 * [list-fritzbox-calls.ps1](Scripts/list-fritzbox-calls.ps1) - lists the FRITZ!Box calls
 * [list-fritzbox-devices.ps1](Scripts/list-fritzbox-devices.ps1) - lists FRITZ!Box's known devices 
 * [list-hourly-weather.ps1](Scripts/list-hourly-weather.ps1) - lists the hourly weather today
