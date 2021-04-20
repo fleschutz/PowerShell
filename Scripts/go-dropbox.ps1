@@ -7,7 +7,7 @@
 #>
 
 try {
-	$TargetDir = resolve-path "$HOME/Dropbox/"
+	$TargetDir = resolve-path "$HOME/Dropbox"
 	set-location "$TargetDir"
 	"📂$TargetDir"
 	exit 0

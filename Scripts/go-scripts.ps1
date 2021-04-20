@@ -7,7 +7,7 @@
 #>
 
 try {
-	$TargetDir = resolve-path "$PSScriptRoot/"
+	$TargetDir = resolve-path "$PSScriptRoot"
 	set-location "$TargetDir"
 	"📂$TargetDir"
 	exit 0

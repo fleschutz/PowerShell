@@ -7,7 +7,7 @@
 #>
 
 try {
-	$TargetDir = resolve-path "$HOME/Downloads/"
+	$TargetDir = resolve-path "$HOME/Downloads"
 	set-location "$TargetDir"
 	"📂$TargetDir"
 	exit 0

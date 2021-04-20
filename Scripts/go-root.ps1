@@ -10,7 +10,7 @@ try {
 	if ($IsLinux) {
 		$TargetDir = resolve-path "/"
 	} else {
-		$TargetDir = resolve-path "C:/"
+		$TargetDir = resolve-path "C:"
 	}
 	set-location "$TargetDir"
 	"📂$TargetDir"

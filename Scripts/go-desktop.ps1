@@ -7,7 +7,7 @@
 #>
 
 try {
-	$TargetDir = resolve-path "$HOME/Desktop/"
+	$TargetDir = resolve-path "$HOME/Desktop"
 	set-location "$TargetDir"
 	"📂$TargetDir"
 	exit 0
