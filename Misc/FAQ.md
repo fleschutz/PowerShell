@@ -35,10 +35,10 @@ How to fix gibberish characters when executing the Scripts?
 -----------------------------------------------------------
 The PowerShell scripts support and use Unicode characters! Use a modern console supporting UTF-8 such as Windows Terminal.
 
-How to set PowerShell as Default Shell?
----------------------------------------
-* **On Linux:** make sure PowerShell is installed, then execute: `chsh -s /usr/bin/pwsh <username>`. In case you experience an "invalid shell" error, add "/usr/bin/pwsh" to /etc/shells.
-* **On Windows:** no need to, PowerShell is the default shell
+
+How to set PowerShell as Default Shell on Linux?
+------------------------------------------------
+Make sure PowerShell is installed, then execute: `chsh -s /usr/bin/pwsh <username>`. In case you experience an "invalid shell" error, add "/usr/bin/pwsh" to /etc/shells.
 
 
 How to add the Scripts to the Search Path?
