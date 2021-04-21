@@ -3,6 +3,7 @@ add-firewall-rules.ps1, adds firewall rules to the given executables (needs admi
 build-repo.ps1, builds the current/given Git repository 
 build-repos.ps1, builds all Git repositories under the current/given directory
 cd-desktop.ps1, go to the user's desktop folder
+cd-docs.ps1, go to the user's documents folder
 cd-downloads.ps1, go to the user's downloads folder
 cd-dropbox.ps1, go to the user's dropbox folder
 cd-home.ps1, go to the user's home folder

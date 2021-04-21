@@ -89,6 +89,7 @@ Mega Collection of PowerShell Scripts
 📁 PowerShell Scripts for Files & Folders 
 ------------------------------------------
 * [cd-desktop.ps1](Scripts/cd-desktop.ps1) - go to the user's desktop folder
+* [cd-docs.ps1](Scripts/cd-docs.ps1) - go to the user's documents folder
 * [cd-downloads.ps1](Scripts/cd-downloads.ps1) - go to the user's downloads folder
 * [cd-dropbox.ps1](Scripts/cd-dropbox.ps1) - go to the user's dropbox folder
 * [cd-home.ps1](Scripts/cd-home.ps1) - go to the user's home folder
