@@ -18,15 +18,17 @@ try {
 	for ([int]$i=0; $i -lt $Lines.Count; $i++) {
 		$Line = $Lines[$i]
 		if ($Line[0] -ne "#") {
-			"▶️ Playing 🎵$Line ..."
 			$FullPath = (get-childItem "$Line").fullname
 			do {
 				$MediaPlayer.open($FullPath)
-				$Duration = $MediaPlayer.NaturalDuration.TimeSpan.TotalMilliseconds
-			} until ($Duration)
+				$Milliseconds = $MediaPlayer.NaturalDuration.TimeSpan.TotalMilliseconds
+			} until ($Milliseconds)
+			[int]$Minutes = $Milliseconds / 60000
+			[int]$Seconds = ($Milliseconds / 1000) % 60
+			"▶️Playing 🎵$Line ($($Minutes):$Seconds) ..."
 			$MediaPlayer.Volume = 1
 			$MediaPlayer.play()
-			start-sleep -milliseconds $Duration
+			start-sleep -milliseconds $Milliseconds
 			$MediaPlayer.stop()
 			$MediaPlayer.close()
 		}
