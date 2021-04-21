@@ -99,7 +99,10 @@ Mega Collection of PowerShell Scripts
 * [cd-repos.ps1](Scripts/cd-repos.ps1) - go to the user's Git repositories folder
 * [cd-root.ps1](Scripts/cd-root.ps1) - go to the root directory (C:\ on Windows)
 * [cd-scripts.ps1](Scripts/cd-scripts.ps1) - go to the PowerShell Scripts folder
-* [cd-up.ps1](Scripts/cd-up.ps1) - go one or multiple directories up
+* [cd-up.ps1](Scripts/cd-up.ps1) - go one directory level up
+* [cd-up2.ps1](Scripts/cd-up2.ps1) - go two directory levels up
+* [cd-up3.ps1](Scripts/cd-up3.ps1) - go three directory levels up
+* [cd-up4.ps1](Scripts/cd-up4.ps1) - go four directory levels up
 * [cd-videos.ps1](Scripts/cd-videos.ps1) - go to the user's videos folder
 * [check-symlinks.ps1](Scripts/check-symlinks.ps1) - checks every symlink in the given directory tree
 * [check-xml-file.ps1](Scripts/check-xml-file.ps1) - checks the given XML file for validity
