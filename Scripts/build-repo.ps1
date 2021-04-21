@@ -11,21 +11,23 @@ param($RepoDir = "$PWD")
 try {
 	$StopWatch = [system.diagnostics.stopwatch]::startNew()
 
-	$RepoDir = resolve-path -path "$RepoDir" -relative
+	$RepoDir = resolve-path "$RepoDir" 
 	if (-not(test-path "$RepoDir" -pathType container)) { throw "Can't access directory: $RepoDir" }
 
 	if (test-path "$RepoDir/CMakeLists.txt") { 
 		"⏳ Building 📂$RepoDir using CMakeLists.txt ..."
-		if (-not(test-path "$RepoDir/CMakeBuild")) { 
-			& mkdir "$RepoDir/CMakeBuild/"
+		if (-not(test-path "$RepoDir/BuildFiles/" -pathType container)) { 
+			& mkdir "$RepoDir/BuildFiles/"
 		}
-		set-location "$RepoDir/CMakeBuild/"
 
+		set-location "$RepoDir/BuildFiles/"
 		& cmake ..
 		if ($lastExitCode -ne "0") { throw "Executing 'cmake ..' has failed" }
 
 		& make -j4
 		if ($lastExitCode -ne "0") { throw "Executing 'make -j4' has failed" }
+
+		set-location ".."
 
 	} elseif (test-path "$RepoDir/configure") { 
 		"⏳ Building 📂$RepoDir using 'configure' ..."
@@ -76,7 +78,7 @@ try {
 		exit 0
 	}
 
-	"✔️ built Git repository 📂$RepoDir in $($StopWatch.Elapsed.Seconds) second(s)"
+	"✔️ built Git repository 📂$RepoDir in $($StopWatch.Elapsed.Seconds) sec."
 	exit 0
 } catch {
 	write-error "ERROR: line $($_.InvocationInfo.ScriptLineNumber): $($Error[0])"
