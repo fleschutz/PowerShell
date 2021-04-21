@@ -6,11 +6,8 @@
 .NOTES        Author: Markus Fleschutz / License: CC0
 #>
 
-$PathToRepo = "$PSScriptRoot/.."
-
 try {
-	write-progress "Reading Data/matrix.csv..."
-	$Table = import-csv "$PathToRepo/Data/matrix.csv"
+	$Table = import-csv "$PSScriptRoot/../Data/matrix.csv"
 
 	clear-host
 	foreach($Row in $Table) {
