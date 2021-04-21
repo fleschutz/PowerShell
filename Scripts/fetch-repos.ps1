@@ -28,7 +28,7 @@ try {
 		$Count++
 	}
 
-	write-host -foregroundColor green "✔️ Updates fetched for $Count Git repositories under $ParentDir in $($StopWatch.Elapsed.Seconds) second(s)"
+	"✔️ updated $Count Git repositories at 📂$ParentDir in $($StopWatch.Elapsed.Seconds) sec."
 	exit 0
 } catch {
 	write-error "ERROR: line $($_.InvocationInfo.ScriptLineNumber): $($Error[0])"
