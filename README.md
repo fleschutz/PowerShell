@@ -99,6 +99,7 @@ Mega Collection of PowerShell Scripts
 * [cd-root.ps1](Scripts/cd-root.ps1) - go to the root directory (C:\ on Windows)
 * [cd-scripts.ps1](Scripts/cd-scripts.ps1) - go to the PowerShell Scripts folder
 * [cd-up.ps1](Scripts/cd-up.ps1) - go one or multiple directories up
+* [cd-videos.ps1](Scripts/cd-videos.ps1) - go to the user's videos folder
 * [check-symlinks.ps1](Scripts/check-symlinks.ps1) - checks every symlink in the given directory tree
 * [check-xml-file.ps1](Scripts/check-xml-file.ps1) - checks the given XML file for validity
 * [create-shortcut.ps1](Scripts/create-shortcut.ps1) - creates a shortcut

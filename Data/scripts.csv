@@ -13,6 +13,7 @@ cd-repos.ps1, go to the user's Git repositories folder
 cd-root.ps1, go to the root directory (C: on Windows)
 cd-scripts.ps1, go to the PowerShell Scripts folder
 cd-up.ps1, go one or multiple directories up
+cd-videos.ps1, go to the user's videos folder
 check-cpu-temp.ps1, checks the CPU temperature
 check-dns-resolution.ps1, checks the DNS resolution with frequently used domain names
 check-drive-space.ps1, checks the given drive for free space left
