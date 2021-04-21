@@ -29,7 +29,7 @@ try {
 	}
 
 	[int]$Elapsed = $StopWatch.Elapsed.TotalSeconds
-	"✔️ updated $Count Git repositories at 📂$ParentDir in $Elapsed sec."
+	"✔️ fetched $Count Git repositories at 📂$ParentDir in $Elapsed sec."
 	exit 0
 } catch {
 	write-error "ERROR: line $($_.InvocationInfo.ScriptLineNumber): $($Error[0])"
