@@ -31,7 +31,7 @@ try {
 		if ($lastExitCode -ne "0") { throw "'git clone $URL' failed" }
 		$Count++
 	}
-	[int]$Elapsed = $StopWatch.TotalSeconds
+	[int]$Elapsed = $StopWatch.Elapsed.TotalSeconds
 	"✔️ cloned $Count Git repositories at 📂$ParentDir in $Elapsed sec."
 	exit 0
 } catch {

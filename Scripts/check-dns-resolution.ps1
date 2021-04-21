@@ -23,7 +23,7 @@ try {
 	}
 	$Count = $Table.Length
 
-	[int]$Elapsed = $StopWatch.TotalSeconds
+	[int]$Elapsed = $StopWatch.Elapsed.TotalSeconds
 	$Average = [math]::round($Count / $Elapsed, 1)
 	"✔️ $Average domains/s ($Count domains resolved in $Elapsed sec.)"
 	exit 0

@@ -46,7 +46,7 @@ try {
 	$ftpStream.Dispose()
 	$fileStream.Dispose()
 
-	[int]$Elapsed = $StopWatch.TotalSeconds
+	[int]$Elapsed = $StopWatch.Elapsed.TotalSeconds
 	"✔️ uploaded $File to $URL in $Elapsed sec."
 	exit 0
 } catch {

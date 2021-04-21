@@ -78,7 +78,7 @@ try {
 		exit 0
 	}
 
-	[int]$Elapsed = $StopWatch.TotalSeconds
+	[int]$Elapsed = $StopWatch.Elapsed.TotalSeconds
 	"✔️ built Git repository 📂$RepoDir in $Elapsed sec."
 	exit 0
 } catch {

@@ -28,7 +28,7 @@ try {
 		$Count++
 	}
 
-	[int]$Elapsed = $StopWatch.TotalSeconds
+	[int]$Elapsed = $StopWatch.Elapsed.TotalSeconds
 	"✔️ updated $Count Git repositories at 📂$ParentDir in $Elapsed sec."
 	exit 0
 } catch {
