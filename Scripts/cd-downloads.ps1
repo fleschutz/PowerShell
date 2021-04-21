@@ -1,6 +1,6 @@
 ﻿#!/usr/bin/pwsh
 <#
-.SYNTAX       go-downloads.ps1 
+.SYNTAX       cd-downloads.ps1 
 .DESCRIPTION  go to the user's downloads folder
 .LINK         https://github.com/fleschutz/PowerShell
 .NOTES        Author: Markus Fleschutz / License: CC0

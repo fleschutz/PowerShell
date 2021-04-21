@@ -1,13 +1,17 @@
 ﻿#!/usr/bin/pwsh
 <#
-.SYNTAX       go-music.ps1 
-.DESCRIPTION  go to the user's music folder
+.SYNTAX       cd-root.ps1 
+.DESCRIPTION  go to the root directory (C: on Windows)
 .LINK         https://github.com/fleschutz/PowerShell
 .NOTES        Author: Markus Fleschutz / License: CC0
 #>
 
 try {
-	$TargetDir = resolve-path "$HOME/Music"
+	if ($IsLinux) {
+		$TargetDir = resolve-path "/"
+	} else {
+		$TargetDir = resolve-path "C:/"
+	}
 	set-location "$TargetDir"
 	"📂$TargetDir"
 	exit 0

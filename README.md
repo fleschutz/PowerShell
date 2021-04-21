@@ -88,6 +88,15 @@ Mega Collection of PowerShell Scripts
 
 📁 PowerShell Scripts for Files & Folders 
 ------------------------------------------
+* [cd-desktop.ps1](Scripts/cd-desktop.ps1) - go to the user's desktop folder
+* [cd-downloads.ps1](Scripts/cd-downloads.ps1) - go to the user's downloads folder
+* [cd-dropbox.ps1](Scripts/cd-dropbox.ps1) - go to the user's dropbox folder
+* [cd-home.ps1](Scripts/cd-home.ps1) - go to the user's home folder
+* [cd-music.ps1](Scripts/cd-music.ps1) - go to the user's music folder
+* [cd-repos.ps1](Scripts/cd-repos.ps1) - go to the user's Git repositories folder
+* [cd-root.ps1](Scripts/cd-root.ps1) - go to the root directory (C:\ on Windows)
+* [cd-scripts.ps1](Scripts/cd-scripts.ps1) - go to the PowerShell Scripts folder
+* [cd-up.ps1](Scripts/cd-up.ps1) - go one or multiple directories up
 * [check-symlinks.ps1](Scripts/check-symlinks.ps1) - checks every symlink in the given directory tree
 * [check-xml-file.ps1](Scripts/check-xml-file.ps1) - checks the given XML file for validity
 * [create-shortcut.ps1](Scripts/create-shortcut.ps1) - creates a shortcut
@@ -97,14 +106,6 @@ Mega Collection of PowerShell Scripts
 * [download-file.ps1](Scripts/download-file.ps1) - downloads a file from the given URL
 * [edit.ps1](Scripts/edit.ps1) - edits the given file with the built-in text editor
 * [encrypt-file.ps1](Scripts/encrypt-file.ps1) - encrypts the given file
-* [go-desktop.ps1](Scripts/go-desktop.ps1) - go to the user's desktop folder
-* [go-downloads.ps1](Scripts/go-downloads.ps1) - go to the user's downloads folder
-* [go-dropbox.ps1](Scripts/go-dropbox.ps1) - go to the user's dropbox folder
-* [go-home.ps1](Scripts/go-home.ps1) - go to the user's home folder
-* [go-music.ps1](Scripts/go-music.ps1) - go to the user's music folder
-* [go-repos.ps1](Scripts/go-repos.ps1) - go to the user's Git repositories folder
-* [go-root.ps1](Scripts/go-root.ps1) - go to the root directory (C:\ on Windows)
-* [go-scripts.ps1](Scripts/go-scripts.ps1) - go to the PowerShell Scripts folder
 * [inspect-exe.ps1](Scripts/inspect-exe.ps1) - prints basic information of the given executable file
 * [list-dir.ps1](Scripts/list-dir.ps1) - lists the directory content (formatted in columns)
 * [list-dir-tree.ps1](Scripts/list-dir-tree.ps1) - lists the directory tree content

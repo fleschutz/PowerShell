@@ -1,13 +1,13 @@
 ﻿#!/usr/bin/pwsh
 <#
-.SYNTAX       go-repos.ps1 
-.DESCRIPTION  go to the user's Git repositories folder
+.SYNTAX       cd-scripts.ps1 
+.DESCRIPTION  go to the PowerShell Scripts folder
 .LINK         https://github.com/fleschutz/PowerShell
 .NOTES        Author: Markus Fleschutz / License: CC0
 #>
 
 try {
-	$TargetDir = resolve-path "$HOME/Repos"
+	$TargetDir = resolve-path "$PSScriptRoot"
 	set-location "$TargetDir"
 	"📂$TargetDir"
 	exit 0

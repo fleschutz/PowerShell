@@ -1,13 +1,13 @@
 ﻿#!/usr/bin/pwsh
 <#
-.SYNTAX       go-desktop.ps1 
-.DESCRIPTION  go to the user's desktop folder
+.SYNTAX       cd-up.ps1 
+.DESCRIPTION  go one or multiple directories up
 .LINK         https://github.com/fleschutz/PowerShell
 .NOTES        Author: Markus Fleschutz / License: CC0
 #>
 
 try {
-	$TargetDir = resolve-path "$HOME/Desktop"
+	$TargetDir = resolve-path ".."
 	set-location "$TargetDir"
 	"📂$TargetDir"
 	exit 0
