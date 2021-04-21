@@ -91,9 +91,10 @@ Mega Collection of PowerShell Scripts
 * [cd-desktop.ps1](Scripts/cd-desktop.ps1) - go to the user's desktop folder
 * [cd-docs.ps1](Scripts/cd-docs.ps1) - go to the user's documents folder
 * [cd-downloads.ps1](Scripts/cd-downloads.ps1) - go to the user's downloads folder
-* [cd-dropbox.ps1](Scripts/cd-dropbox.ps1) - go to the user's dropbox folder
+* [cd-dropbox.ps1](Scripts/cd-dropbox.ps1) - go to the user's Dropbox folder
 * [cd-home.ps1](Scripts/cd-home.ps1) - go to the user's home folder
 * [cd-music.ps1](Scripts/cd-music.ps1) - go to the user's music folder
+* [cd-onedrive.ps1](Scripts/cd-onedrive.ps1) - go to the user's OneDrive folder
 * [cd-pics.ps1](Scripts/cd-pics.ps1) - go to the user's pictures folder
 * [cd-repos.ps1](Scripts/cd-repos.ps1) - go to the user's Git repositories folder
 * [cd-root.ps1](Scripts/cd-root.ps1) - go to the root directory (C:\ on Windows)
