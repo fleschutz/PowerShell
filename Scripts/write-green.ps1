@@ -9,10 +9,5 @@
 param($Text = "")
 if ($Text -eq "" ) { $Text = read-host "Enter the text to write" }
 
-try {
-	write-host -foregroundColor green $Text
-	exit 0
-} catch {
-	write-error "ERROR: line $($_.InvocationInfo.ScriptLineNumber): $($Error[0])"
-	exit 1
-}
+write-host -foregroundColor green "$Text"
+exit 0

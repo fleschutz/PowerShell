@@ -1,4 +1,3 @@
-#!/usr/bin/pwsh
 <#
 .SYNTAX       close-thunderbird.ps1 
 .DESCRIPTION  closes Mozilla Thunderbird gracefully

@@ -1,4 +1,3 @@
-#!/usr/bin/pwsh
 <#
 .SYNTAX       check-ipv4-address.ps1 [<address>]
 .DESCRIPTION  checks the given IPv4 address for validity

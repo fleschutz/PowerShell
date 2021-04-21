@@ -1,4 +1,3 @@
-#!/usr/bin/pwsh
 <#
 .SYNTAX       list-drives.ps1
 .DESCRIPTION  lists all drives connected to the computer

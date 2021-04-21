@@ -1,5 +1,4 @@
-﻿#!/usr/bin/pwsh
-<#
+﻿<#
 .SYNTAX       enable-god-mode.ps1 
 .DESCRIPTION  enables the god mode (adds a new icon to the desktop)
 .LINK         https://github.com/fleschutz/PowerShell
@@ -14,7 +13,7 @@ try {
 	}
 	$null = new-item @GodModeSplat
 
-	write-host -foregroundColor green "✔️ new icon added to the desktop"
+	"✔️ new icon added to the desktop"
 	exit 0
 } catch {
 	write-error "ERROR: line $($_.InvocationInfo.ScriptLineNumber): $($Error[0])"

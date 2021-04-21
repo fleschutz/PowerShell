@@ -1,5 +1,4 @@
-﻿#!/usr/bin/pwsh
-<#
+﻿<#
 .SYNTAX       install-google-chrome.ps1
 .DESCRIPTION  silently installs latest Google Chrome
 .LINK         https://github.com/fleschutz/PowerShell

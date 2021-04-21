@@ -1,4 +1,3 @@
-#!/usr/bin/pwsh
 <#
 .SYNTAX       send-email.ps1 
 .DESCRIPTION  sends an email

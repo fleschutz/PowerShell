@@ -1,4 +1,3 @@
-#!/usr/bin/pwsh
 <#
 .SYNTAX       play-the-imperial-march.ps1
 .DESCRIPTION  plays the Imperial March (Star Wars)

@@ -1,4 +1,3 @@
-#!/usr/bin/pwsh
 <#
 .SYNTAX       list-aliases.ps1
 .DESCRIPTION  lists all PowerShell aliases 

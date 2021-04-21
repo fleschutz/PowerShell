@@ -1,4 +1,3 @@
-#!/usr/bin/pwsh
 <#
 .SYNTAX       scan-ports.ps1
 .DESCRIPTION  scans the network for open/closed ports

@@ -1,4 +1,3 @@
-#!/usr/bin/pwsh
 <#
 .SYNTAX       generate-qrcode.ps1 [<text>] [<image-size>]
 .DESCRIPTION  generates a QR code

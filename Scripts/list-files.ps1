@@ -1,19 +1,15 @@
-#!/usr/bin/pwsh
 <#
-.SYNTAX       list-files.ps1 [<folder>]
-.DESCRIPTION  lists all files in the given folder and also in every subfolder
+.SYNTAX       list-files.ps1 [<dir-tree>]
+.DESCRIPTION  lists all files in the given directory tree
 .LINK         https://github.com/fleschutz/PowerShell
 .NOTES        Author: Markus Fleschutz / License: CC0
 #>
 
-param($Folder = "")
-
-if ($Folder -eq "" ) {
-	$Folder = read-host "Enter path to folder"
-}
+param($DirTree = "")
+if ($DirTree -eq "" ) { $DirTree = read-host "Enter path to directory tree" }
 
 try {
-	Get-ChildItem -path $Folder -recurse | select FullName
+	Get-ChildItem -path $DirTree -recurse | select FullName
 	exit 0
 } catch {
 	write-error "ERROR: line $($_.InvocationInfo.ScriptLineNumber): $($Error[0])"

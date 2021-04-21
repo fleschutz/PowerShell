@@ -1,4 +1,3 @@
-#!/usr/bin/pwsh
 <#
 .SYNTAX       list-cmdlets.ps1 
 .DESCRIPTION  lists all PowerShell cmdlets

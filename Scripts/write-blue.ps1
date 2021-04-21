@@ -1,4 +1,3 @@
-#!/usr/bin/pwsh
 <#
 .SYNTAX       write-blue.ps1 [<text>]
 .DESCRIPTION  writes the given text in a blue foreground color
@@ -7,12 +6,9 @@
 #>
 
 param($Text = "")
+
 if ($Text -eq "" ) { $Text = read-host "Enter the text to write" }
 
-try {
-	write-host -foregroundColor blue $Text
-	exit 0
-} catch {
-	write-error "ERROR: line $($_.InvocationInfo.ScriptLineNumber): $($Error[0])"
-	exit 1
-}
+write-host -foregroundColor blue "$Text"
+
+exit 0

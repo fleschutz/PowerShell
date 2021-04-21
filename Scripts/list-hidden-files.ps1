@@ -1,5 +1,4 @@
-﻿#!/usr/bin/pwsh
-<#
+﻿<#
 .SYNTAX       list-hidden-files.ps1 [<dir-tree>]
 .DESCRIPTION  lists hidden files within the given directory tree
 .LINK         https://github.com/fleschutz/PowerShell
@@ -9,9 +8,10 @@
 param($DirTree = "$PWD")
 
 try {
-	$DirTree = resolve-path "$DirTree/"
-	[int]$Count = 0
+	$DirTree = resolve-path "$DirTree"
 	write-progress "Listing hidden files in $DirTree ..."
+
+	[int]$Count = 0
 	get-childItem "$DirTree" -attributes Hidden -recurse | foreach-object {
 		"📄 $($_.FullName)"
 		$Count++

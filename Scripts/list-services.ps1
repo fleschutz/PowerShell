@@ -1,4 +1,3 @@
-#!/usr/bin/pwsh
 <#
 .SYNTAX       list-services.ps1 
 .DESCRIPTION  lists the services on the local computer 

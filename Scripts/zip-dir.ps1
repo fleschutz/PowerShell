@@ -1,5 +1,4 @@
-﻿#!/usr/bin/pwsh
-<#
+﻿<#
 .SYNTAX       zip-dir.ps1 [<directory>]
 .DESCRIPTION  creates a zip archive of the given directory
 .LINK         https://github.com/fleschutz/PowerShell

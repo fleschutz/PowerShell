@@ -1,4 +1,3 @@
-#!/usr/bin/pwsh
 <#
 .SYNTAX       close-calculator.ps1 
 .DESCRIPTION  closes the calculator program gracefully

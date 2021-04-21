@@ -1,4 +1,3 @@
-#!/usr/bin/pwsh
 <#
 .SYNTAX       list-empty-files.ps1 [<dir-tree>]
 .DESCRIPTION  lists empty files within the given directory tree

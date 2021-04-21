@@ -1,4 +1,3 @@
-#!/usr/bin/pwsh
 <#
 .SYNTAX       list-user-groups.ps1 
 .DESCRIPTION  lists the user groups on the local computer

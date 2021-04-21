@@ -1,4 +1,3 @@
-#!/usr/bin/pwsh
 <#
 .SYNTAX       close-cortana.ps1 
 .DESCRIPTION  closes Cortana gracefully

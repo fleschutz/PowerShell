@@ -1,5 +1,4 @@
-﻿#!/usr/bin/pwsh
-<#
+﻿<#
 .SYNTAX       open-browser.ps1 [<URL>]
 .DESCRIPTION  starts the default Web browser, optional with given URL
 .LINK         https://github.com/fleschutz/PowerShell

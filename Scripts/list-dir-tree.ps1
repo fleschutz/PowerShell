@@ -1,5 +1,4 @@
-﻿#!/usr/bin/pwsh
-<#
+﻿<#
 .SYNTAX       list-dir-tree.ps1 [<dir-tree>]
 .DESCRIPTION  lists a directory tree
 .LINK         https://github.com/fleschutz/PowerShell

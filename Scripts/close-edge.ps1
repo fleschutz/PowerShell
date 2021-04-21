@@ -1,4 +1,3 @@
-#!/usr/bin/pwsh
 <#
 .SYNTAX       close-edge.ps1 
 .DESCRIPTION  closes Microsoft Edge gracefully

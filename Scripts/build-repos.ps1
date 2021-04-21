@@ -1,5 +1,4 @@
-﻿#!/usr/bin/pwsh
-<#
+﻿<#
 .SYNTAX       build-repos.ps1 [<parent-dir>]
 .DESCRIPTION  builds all Git repositories under the current/given directory
 .LINK         https://github.com/fleschutz/PowerShell

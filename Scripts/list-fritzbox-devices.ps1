@@ -1,4 +1,3 @@
-#!/usr/bin/pwsh
 <#
 .SYNTAX       list-fritzbox-calls.ps1 [<username>] [<password>]
 .DESCRIPTION  lists FRITZ!Box's known devices
@@ -9,13 +8,8 @@
 #Requires -Version 3
 
 param($Username = "", $Password = "")
-
-if ($Username -eq "") {
-	$Username = read-host "Enter username for FRITZ!Box"
-}
-if ($Password -eq "") {
-	$Password = read-host "Enter password for FRITZ!Box"
-}
+if ($Username -eq "") { $Username = read-host "Enter username for FRITZ!Box" }
+if ($Password -eq "") { $Password = read-host "Enter password for FRITZ!Box" }
 
 write-progress "Contacting FRITZ!Box ..."
 [string]$HostURL = "https://fritz.box:49443"

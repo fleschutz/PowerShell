@@ -1,5 +1,4 @@
-﻿#!/usr/bin/pwsh
-<#
+﻿<#
 .SYNTAX       switch-shelly1.ps1 [<host>] [<turn-mode>] [<timer>]
 .DESCRIPTION  switches a Shelly1 device in the local network
 .LINK         https://github.com/fleschutz/PowerShell

@@ -1,5 +1,4 @@
-﻿#!/usr/bin/pwsh
-<#
+﻿<#
 .SYNTAX       take-screenshot.ps1 [<directory>] [<interval>]
 .DESCRIPTION  takes screenshots every 60 seconds and saves them into the current/given directory
 .LINK         https://github.com/fleschutz/PowerShell

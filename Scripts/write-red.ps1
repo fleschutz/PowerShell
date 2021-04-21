@@ -1,4 +1,3 @@
-#!/usr/bin/pwsh
 <#
 .SYNTAX       write-red.ps1 [<text>]
 .DESCRIPTION  writes the given text in a red foreground color
@@ -9,5 +8,5 @@
 param($Text = "")
 if ($Text -eq "" ) { $Text = read-host "Enter the text to write" }
 
-write-host -foregroundcolor red $Text
+write-host -foregroundcolor red "$Text"
 exit 0

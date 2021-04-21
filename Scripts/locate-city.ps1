@@ -1,4 +1,3 @@
-#!/usr/bin/pwsh
 <#
 .SYNTAX       locate-city.ps1 [<city>]
 .DESCRIPTION  prints the geographic location of the given city
@@ -7,16 +6,11 @@
 #>
 
 param($City = "")
+if ($City -eq "" ) { $City = read-host "Enter the city name" }
 
-if ($City -eq "" ) {
-	$City = read-host "Enter the city name"
-}
-
-$PathToRepo = "$PSScriptRoot/.."
- 
 try {
 	write-progress "Reading worldcities.csv..."
-	$Table = import-csv "$PathToRepo/Data/worldcities.csv"
+	$Table = import-csv "$PSScriptRoot/../Data/worldcities.csv"
 
 	$FoundOne = 0
 	foreach($Row in $Table) {

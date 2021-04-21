@@ -1,5 +1,4 @@
-﻿#!/usr/bin/pwsh
-<#
+﻿<#
 .SYNTAX       next-joke.ps1 
 .DESCRIPTION  gets the next random Juck Norris joke
 .LINK         https://github.com/fleschutz/PowerShell

@@ -1,4 +1,3 @@
-#!/usr/bin/pwsh
 <#
 .SYNTAX       speak-countdown.ps1 [start-number]
 .DESCRIPTION  starts a countdown by text-to-speech (TTS)

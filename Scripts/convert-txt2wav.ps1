@@ -1,4 +1,3 @@
-#!/usr/bin/pwsh
 <#
 .SYNTAX       convert-txt2wav.ps1 [<text>] [<wav-file>]
 .DESCRIPTION  converts the given text to a .WAV audio file

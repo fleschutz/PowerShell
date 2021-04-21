@@ -1,5 +1,4 @@
-﻿#!/usr/bin/pwsh
-<#
+﻿<#
 .SYNTAX       list-hourly-weather.ps1 [<location>]
 .DESCRIPTION  lists the hourly weather today
 .LINK         https://github.com/fleschutz/PowerShell

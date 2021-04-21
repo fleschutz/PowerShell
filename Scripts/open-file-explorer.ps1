@@ -1,4 +1,3 @@
-#!/usr/bin/pwsh
 <#
 .SYNTAX       open-file-explorer.ps1
 .DESCRIPTION  starts the File Explorerer

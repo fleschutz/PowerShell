@@ -1,5 +1,4 @@
-﻿#!/usr/bin/pwsh
-<#
+﻿<#
 .SYNTAX       clone-repos.ps1 [<parent-dir>]
 .DESCRIPTION  clones well-known Git repositories under the current/given directory.
 .LINK         https://github.com/fleschutz/PowerShell

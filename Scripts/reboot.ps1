@@ -1,4 +1,3 @@
-#!/usr/bin/pwsh
 <#
 .SYNTAX       reboot.ps1
 .DESCRIPTION  reboots the local computer (needs admin rights)

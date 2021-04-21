@@ -1,4 +1,3 @@
-#!/usr/bin/pwsh
 <#
 .SYNTAX       check-mac-address.ps1 [<MAC>]
 .DESCRIPTION  checks the given MAC address for validity

@@ -1,4 +1,3 @@
-#!/usr/bin/pwsh
 <#
 .SYNTAX       list-anagrams.ps1 [<word>] [<columns>]
 .DESCRIPTION  lists all anagrams of the given word

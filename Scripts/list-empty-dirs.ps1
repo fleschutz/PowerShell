@@ -1,5 +1,4 @@
-﻿#!/usr/bin/pwsh
-<#
+﻿<#
 .SYNTAX       list-empty-dirs.ps1 [<dir-tree>]
 .DESCRIPTION  lists empty subfolders within the given directory tree
 .LINK         https://github.com/fleschutz/PowerShell

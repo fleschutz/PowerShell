@@ -1,4 +1,3 @@
-#!/usr/bin/pwsh
 <#
 .SYNTAX       enable-ssh-client.ps1
 .DESCRIPTION  enables the SSH client (needs admin rights)

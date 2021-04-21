@@ -1,5 +1,4 @@
-﻿#!/usr/bin/pwsh
-<#
+﻿<#
 .SYNTAX       build-repo.ps1 [<repo-dir>]
 .DESCRIPTION  builds a Git repository (supporting cmake,configure,autogen,Imakefile,Makefile)
 .LINK         https://github.com/fleschutz/PowerShell

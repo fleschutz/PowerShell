@@ -1,5 +1,4 @@
-﻿#!/usr/bin/pwsh
-<#
+﻿<#
 .SYNTAX       list-city-weather.ps1
 .DESCRIPTION  list the current weather of cities world-wide (west to east)
 .LINK         https://github.com/fleschutz/PowerShell

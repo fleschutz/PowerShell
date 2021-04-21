@@ -1,4 +1,3 @@
-#!/usr/bin/pwsh
 <#
 .SYNTAX       play-super-mario.ps1
 .DESCRIPTION  plays the Super Mario Intro

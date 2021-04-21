@@ -1,4 +1,3 @@
-#!/bin/powershell
 <#
 .SYNTAX         ./translate-file.ps1 [<file>] [<source-lang>] [<target-lang>]
 .DESCRIPTION	translates the given text file into another language and prints the result.

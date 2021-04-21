@@ -1,4 +1,3 @@
-#!/usr/bin/pwsh
 <#
 .SYNTAX       list-modules.ps1 
 .DESCRIPTION  lists all PowerShell modules

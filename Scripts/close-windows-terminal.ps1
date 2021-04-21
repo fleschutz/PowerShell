@@ -1,4 +1,3 @@
-#!/usr/bin/pwsh
 <#
 .SYNTAX       close-windows-terminal.ps1 
 .DESCRIPTION  closes Windows Terminal gracefully

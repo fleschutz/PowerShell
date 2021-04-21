@@ -1,4 +1,3 @@
-#!/usr/bin/pwsh
 <#
 .SYNTAX       write-logbook.ps1 [<text>]
 .DESCRIPTION  writes the given text to the logbook (in ../Data/logbook.csv)

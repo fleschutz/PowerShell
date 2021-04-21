@@ -1,4 +1,3 @@
-#!/usr/bin/pwsh
 <#
 .SYNTAX       cherry-picker.ps1 [<commit-id>] [<commit-message>] [<branches>] [<repo-dir>]
 .DESCRIPTION  cherry-picks a Git commit into multiple branches
@@ -8,15 +7,9 @@
 
 param($CommitID = "", $CommitMessage = "", $Branches = "", $RepoDir = "$PWD")
 
-if ($CommitID -eq "" ) {
-	$CommitID = read-host "Enter the commit id to cherry-pick"
-}
-if ($CommitMessage -eq "" ) {
-	$CommitMessage = read-host "Enter the commit message to use"
-}
-if ($Branches -eq "" ) {
-	$Branches = read-host "Enter the target branches"
-}
+if ($CommitID -eq "" ) { $CommitID = read-host "Enter the commit id to cherry-pick" }
+if ($CommitMessage -eq "" ) { $CommitMessage = read-host "Enter the commit message to use" }
+if ($Branches -eq "" ) { $Branches = read-host "Enter the target branches" }
 
 try {
 	if (-not(test-path "$RepoDir" -pathType container)) { throw "Can't access directory: $RepoDir" }

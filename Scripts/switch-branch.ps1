@@ -1,5 +1,4 @@
-﻿#!/usr/bin/pwsh
-<#
+﻿<#
 .SYNTAX       switch-branch.ps1 [<branch-name>] [<repo-dir>]
 .DESCRIPTION  switches the branch in the current/given Git repository (including submodules)
 .LINK         https://github.com/fleschutz/PowerShell

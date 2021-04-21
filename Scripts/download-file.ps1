@@ -1,4 +1,3 @@
-#!/usr/bin/pwsh
 <#
 .SYNTAX       download-file.ps1 [<URL>]
 .DESCRIPTION  downloads a file from the given URL

@@ -1,4 +1,3 @@
-#!/usr/bin/pwsh
 <#
 .SYNTAX       list-os-releases.ps1
 .DESCRIPTION  lists OS releases and download URL

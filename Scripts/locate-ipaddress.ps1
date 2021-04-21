@@ -1,4 +1,3 @@
-#!/usr/bin/pwsh
 <#
 .SYNTAX       locate-ipaddress.ps1 [<IPaddress>]
 .DESCRIPTION  prints the geographic location of the given IP address
@@ -7,10 +6,7 @@
 #>
 
 param($IPaddr = "")
-
-if ($IPaddr -eq "" ) {
-	$IPaddr = read-host "Enter IP address to locate"
-}
+if ($IPaddr -eq "" ) { $IPaddr = read-host "Enter IP address to locate" }
 
 try {
 	$result = Invoke-RestMethod -Method Get -Uri "http://ip-api.com/json/$IPaddr"

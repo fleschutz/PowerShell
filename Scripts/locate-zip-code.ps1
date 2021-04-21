@@ -1,4 +1,3 @@
-#!/usr/bin/pwsh
 <#
 .SYNTAX       locate-zip-code.ps1 [<country-code>] [<zip-code>]
 .DESCRIPTION  prints the geographic location of the given zip-code
@@ -7,18 +6,12 @@
 #>
 
 param($CountryCode = "", $ZipCode = "")
-
-if ($CountryCode -eq "" ) {
-	$CountryCode = read-host "Enter the country code"
-}
-if ($ZipCode -eq "" ) {
-	$ZipCode = read-host "Enter the zip code"
-}
+if ($CountryCode -eq "" ) { $CountryCode = read-host "Enter the country code" }
+if ($ZipCode -eq "" ) { $ZipCode = read-host "Enter the zip code" }
 
 try {
 	write-progress "Reading zip-codes.csv..."
-	$PathToRepo = "$PSScriptRoot/.."
-	$Table = import-csv "$PathToRepo/Data/zip-codes.csv"
+	$Table = import-csv "$PSScriptRoot/../Data/zip-codes.csv"
 
 	$FoundOne = 0
 	foreach($Row in $Table) {

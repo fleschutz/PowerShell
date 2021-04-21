@@ -1,4 +1,3 @@
-#!/usr/bin/pwsh
 <#
 .SYNTAX       simulate-matrix.ps1 
 .DESCRIPTION  simulates the Matrix (fun)

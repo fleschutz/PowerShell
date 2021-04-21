@@ -1,4 +1,3 @@
-#!/usr/bin/pwsh
 <#
 .SYNTAX       speak-epub.ps1 [<filename>]
 .DESCRIPTION  speaks the content of the given Epub file by text-to-speech (TTS)

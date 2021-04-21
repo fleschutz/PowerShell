@@ -1,4 +1,3 @@
-#!/usr/bin/pwsh
 <#
 .SYNTAX       display-time.ps1 [<seconds>]
 .DESCRIPTION  displays the current time for 10 seconds by default

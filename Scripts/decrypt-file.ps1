@@ -1,4 +1,3 @@
-#!/usr/bin/pwsh
 <#
 .SYNTAX       decrypt-file.ps1 [<path>] [<password>]
 .DESCRIPTION  decrypts the given file

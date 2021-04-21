@@ -1,5 +1,4 @@
-﻿#!/usr/bin/pwsh
-<#
+﻿<#
 .SYNTAX       set-profile.ps1
 .DESCRIPTION  sets the PowerShell profile for the current user
 .LINK         https://github.com/fleschutz/PowerShell

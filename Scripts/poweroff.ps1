@@ -1,4 +1,3 @@
-#!/usr/bin/pwsh
 <#
 .SYNTAX       poweroff.ps1
 .DESCRIPTION  halts the local computer (needs admin rights)

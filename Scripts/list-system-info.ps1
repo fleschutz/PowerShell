@@ -1,4 +1,3 @@
-#!/usr/bin/pwsh
 <#
 .SYNTAX       list-system-info.ps1
 .DESCRIPTION  lists system information on the local computer

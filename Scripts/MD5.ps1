@@ -1,4 +1,3 @@
-#!/usr/bin/pwsh
 <#
 .SYNTAX       MD5.ps1 [<file>]
 .DESCRIPTION  prints the MD5 checksum of the given file
@@ -7,14 +6,11 @@
 #>
 
 param($File = "")
-
-if ($File -eq "" ) {
-	$File = read-host "Enter path to file"
-}
+if ($File -eq "" ) { $File = read-host "Enter path to file" }
 
 try {
 	$Result = get-filehash $File -algorithm MD5
-	write-output "MD5 hash is" $Result.Hash
+	"MD5 hash is" $Result.Hash
 	exit 0
 } catch {
 	write-error "ERROR: line $($_.InvocationInfo.ScriptLineNumber): $($Error[0])"

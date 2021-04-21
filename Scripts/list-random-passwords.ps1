@@ -1,4 +1,3 @@
-#!/usr/bin/pwsh
 <#
 .SYNTAX       list-random-passwords.ps1 [<password-length>] [<columns>] [<rows>]
 .DESCRIPTION  prints a list of random passwords

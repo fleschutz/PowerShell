@@ -1,4 +1,3 @@
-#!/usr/bin/pwsh
 <#
 .SYNTAX       check-ipv6-address.ps1 [<address>]
 .DESCRIPTION  checks the given IPv6 address for validity

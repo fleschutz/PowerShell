@@ -1,4 +1,3 @@
-#!/usr/bin/pwsh
 <#
 .SYNTAX       convert-csv2txt.ps1 [<csv-file>]
 .DESCRIPTION  converts the given CSV file into a text list

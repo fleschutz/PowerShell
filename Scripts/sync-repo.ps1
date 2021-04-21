@@ -1,5 +1,4 @@
-﻿#!/usr/bin/pwsh
-<#
+﻿<#
 .SYNTAX       sync-repo.ps1 [<repo-dir>]
 .DESCRIPTION  synchronizes a Git repository (pull&push, including submodules)
 .LINK         https://github.com/fleschutz/PowerShell

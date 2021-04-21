@@ -1,4 +1,3 @@
-#!/usr/bin/pwsh
 <#
 .SYNTAX       list-branches.ps1 [<repo-dir>] [<pattern>]
 .DESCRIPTION  lists all branches in the current/given Git repository 

@@ -1,5 +1,4 @@
-﻿#!/usr/bin/pwsh
-<#
+﻿<#
 .SYNTAX       clean-repo.ps1 [<repo-dir>]
 .DESCRIPTION  cleans a Git repository from untracked files (including submodules, e.g. for a fresh build)
 .LINK         https://github.com/fleschutz/PowerShell

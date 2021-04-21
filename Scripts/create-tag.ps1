@@ -1,5 +1,4 @@
-﻿#!/usr/bin/pwsh
-<#
+﻿<#
 .SYNTAX       create-tag.ps1 [<new-tag-name>] [<repo-dir>]
 .DESCRIPTION  creates a new tag in the current/given Git repository 
 .LINK         https://github.com/fleschutz/PowerShell

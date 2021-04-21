@@ -1,4 +1,3 @@
-#!/usr/bin/pwsh
 <#
 .SYNTAX       write-morse-code.ps1 [<text>] [<speed>]
 .DESCRIPTION  writes the given text in Morse code

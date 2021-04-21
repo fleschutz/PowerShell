@@ -1,5 +1,4 @@
-﻿#!/usr/bin/pwsh
-<#
+﻿<#
 .SYNTAX       check-weather.ps1 [<location>]
 .DESCRIPTION  checks the weather for critical values
 .LINK         https://github.com/fleschutz/PowerShell

@@ -1,4 +1,3 @@
-#!/usr/bin/pwsh
 <#
 .SYNTAX       simulate-presence.ps1 [<IP-address>]
 .DESCRIPTION  simulates the human presence against burglars

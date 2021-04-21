@@ -1,4 +1,3 @@
-#!/usr/bin/pwsh
 <#
 .SYNTAX       new-email.ps1 [<address>]
 .DESCRIPTION  starts the default email client to write a new email
@@ -6,11 +5,7 @@
 .NOTES        Author: Markus Fleschutz / License: CC0
 #>
 
-param($EmailAddress = "")
-
-if ($EmailAddress -eq "" ) {
-	$EmailAddress = "markus@fleschutz.de"
-}
+param($EmailAddress = "markus@fleschutz.de")
 
 try {
 	$URL="mailto:$EmailAddress"

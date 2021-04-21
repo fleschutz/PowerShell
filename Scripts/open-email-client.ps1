@@ -1,4 +1,3 @@
-#!/usr/bin/pwsh
 <#
 .SYNTAX       open-email-client.ps1
 .DESCRIPTION  starts the default email client 

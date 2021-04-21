@@ -1,4 +1,3 @@
-#!/usr/bin/pwsh
 <#
 .SYNTAX       write-uppercase.ps1 [<text>]
 .DESCRIPTION  writes the given text in uppercase letters

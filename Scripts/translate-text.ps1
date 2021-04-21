@@ -1,5 +1,4 @@
-﻿#!/usr/bin/pwsh
-<#
+﻿<#
 .SYNTAX       translate-text.ps1 [<text>] [<source-lang>] [<target-lang>]
 .DESCRIPTION  translates the given text into other languages
 .LINK         https://github.com/fleschutz/PowerShell

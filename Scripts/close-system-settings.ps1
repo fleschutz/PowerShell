@@ -1,4 +1,3 @@
-#!/usr/bin/pwsh
 <#
 .SYNTAX       close-system-settings.ps1 
 .DESCRIPTION  closes the System Settings gracefully

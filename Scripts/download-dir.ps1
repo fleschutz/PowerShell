@@ -1,4 +1,3 @@
-#!/usr/bin/pwsh
 <#
 .SYNTAX       download-dir.ps1 [<URL>]
 .DESCRIPTION  downloads a directory tree from the given URL

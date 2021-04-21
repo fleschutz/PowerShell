@@ -1,5 +1,4 @@
-﻿#!/usr/bin/pwsh
-<#
+﻿<#
 .SYNTAX       list-emojis.ps1 
 .DESCRIPTION  lists the Emojis of Unicode 13.0
 .LINK         https://github.com/fleschutz/PowerShell

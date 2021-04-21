@@ -1,4 +1,3 @@
-#!/bin/powershell
 <#
 .SYNTAX         ./translate-files.ps1 [<file-pattern>]
 .DESCRIPTION	translates the given text files into any supported language

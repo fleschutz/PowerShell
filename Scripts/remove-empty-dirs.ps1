@@ -1,5 +1,4 @@
-﻿#!/usr/bin/pwsh
-<#
+﻿<#
 .SYNTAX       remove-empty-dirs.ps1 [<dir-tree>]
 .DESCRIPTION  removes all empty subfolders within the given directory tree
 .LINK         https://github.com/fleschutz/PowerShell
@@ -7,9 +6,7 @@
 #>
 
 param($DirTree = "")
-if ($DirTree -eq "" ) {
-	$DirTree = read-host "Enter the path to the directory tree"
-}
+if ($DirTree -eq "" ) { $DirTree = read-host "Enter the path to the directory tree" }
 
 try {
 	$Folders = @()

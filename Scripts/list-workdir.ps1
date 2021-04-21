@@ -1,5 +1,4 @@
-﻿#!/usr/bin/pwsh
-<#
+﻿<#
 .SYNTAX       list-workdir.ps1 
 .DESCRIPTION  lists the current working directory
 .LINK         https://github.com/fleschutz/PowerShell

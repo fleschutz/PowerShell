@@ -1,4 +1,3 @@
-#!/usr/bin/pwsh
 <#
 .SYNTAX       speak-joke.ps1
 .DESCRIPTION  speaks the next joke by text-to-speech (TTS)

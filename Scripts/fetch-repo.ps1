@@ -1,5 +1,4 @@
-﻿#!/usr/bin/pwsh
-<#
+﻿<#
 .SYNTAX       fetch-repo.ps1 [<repo-dir>]
 .DESCRIPTION  fetches updates for a local Git repository (including submodules)
 .LINK         https://github.com/fleschutz/PowerShell

@@ -1,4 +1,3 @@
-#!/usr/bin/pwsh
 <#
 .SYNTAX       send-tcp.ps1 [<target-IP>] [<target-port>] [<message>]
 .DESCRIPTION  sends a TCP message to the given IP address and port

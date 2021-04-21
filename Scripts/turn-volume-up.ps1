@@ -1,5 +1,4 @@
-﻿#!/usr/bin/pwsh
-<#
+﻿<#
 .SYNTAX       turn-volume-up.ps1 [<percent>]
 .DESCRIPTION  turns the audio volume up (+10% by default)
 .LINK         https://github.com/fleschutz/PowerShell

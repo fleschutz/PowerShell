@@ -1,4 +1,3 @@
-#!/usr/bin/pwsh
 <#
 .SYNTAX       open-calculator.ps1
 .DESCRIPTION  starts the calculator program

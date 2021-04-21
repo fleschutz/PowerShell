@@ -1,5 +1,4 @@
-﻿#!/usr/bin/pwsh
-<#
+﻿<#
 .SYNTAX       list-dir.ps1 [<directory>]
 .DESCRIPTION  lists the directory content formatted in columns
 .LINK         https://github.com/fleschutz/PowerShell
