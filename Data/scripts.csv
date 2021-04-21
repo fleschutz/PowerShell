@@ -77,6 +77,7 @@ list-dir.ps1, lists the directory content (formatted in columns)
 list-dir-tree.ps1, lists the directory tree content 
 list-drives.ps1, lists all drives
 list-environment-variables.ps1, lists all environment variables
+list-emojis.ps1, lists the emojis of Unicode 13.0
 list-empty-dirs.ps1, lists empty subfolders within the given directory tree
 list-empty-files.ps1, lists empty files within the given directory tree
 list-files.ps1, lists all files in the given folder and also in every subfolder
