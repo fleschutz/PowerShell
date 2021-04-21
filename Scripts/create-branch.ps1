@@ -1,7 +1,7 @@
 ﻿#!/usr/bin/pwsh
 <#
 .SYNTAX       create-branch.ps1 [<new-branch-name>] [<repo-dir>]
-.DESCRIPTION  creates a new branch in the current/given Git repository 
+.DESCRIPTION  creates and switches to a new branch in a Git repository 
 .LINK         https://github.com/fleschutz/PowerShell
 .NOTES        Author: Markus Fleschutz / License: CC0
 #>
@@ -32,7 +32,7 @@ try {
 	& git submodule update --init --recursive
 	if ($lastExitCode -ne "0") { throw "'git submodule update' failed" }
 
-	"🌵 branch $NewBranchName has been created"
+	"✔️ created new branch 🌵$NewBranchName"
 	exit 0
 } catch {
 	write-error "ERROR: line $($_.InvocationInfo.ScriptLineNumber): $($Error[0])"
