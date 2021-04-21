@@ -46,7 +46,8 @@ try {
 	$ftpStream.Dispose()
 	$fileStream.Dispose()
 
-	write-host -foregroundColor green "✔️ uploaded $File to $URL in $($StopWatch.Elapsed.Seconds) second(s)"
+	[int]$Elapsed = $StopWatch.TotalSeconds
+	"✔️ uploaded $File to $URL in $Elapsed sec."
 	exit 0
 } catch {
 	write-error "ERROR: line $($_.InvocationInfo.ScriptLineNumber): $($Error[0])"

@@ -20,7 +20,8 @@ try {
 		$Count++
 	}
 
-	write-host -foregroundColor green "✔️ $Count Git repositories built at $ParentDir in $($StopWatch.Elapsed.Seconds) second(s)"
+	[int]$Elapsed = $StopWatch.TotalSeconds
+	write-host -foregroundColor green "✔️ built $Count Git repositories at $ParentDir in $Elapsed sec."
 	exit 0
 } catch {
 	write-error "ERROR: line $($_.InvocationInfo.ScriptLineNumber): $($Error[0])"

@@ -7,8 +7,8 @@
 #>
  
 try {
-	write-progress "Reading Data/domain-names.csv..."
 	$StopWatch = [system.diagnostics.stopwatch]::startNew()
+	write-progress "Reading Data/domain-names.csv..."
 
 	$PathToRepo = "$PSScriptRoot/.."
 	$Table = import-csv "$PathToRepo/Data/domain-names.csv"
@@ -23,9 +23,9 @@ try {
 	}
 	$Count = $Table.Length
 
-	$Elapsed = $StopWatch.Elapsed
-	$Average = [math]::round($Count / $Elapsed.Seconds, 1)
-	"✔️ $Average domains/s ($Count domains resolved in $($Elapsed.Seconds) seconds)"
+	[int]$Elapsed = $StopWatch.TotalSeconds
+	$Average = [math]::round($Count / $Elapsed, 1)
+	"✔️ $Average domains/s ($Count domains resolved in $Elapsed sec.)"
 	exit 0
 } catch {
 	write-error "ERROR: line $($_.InvocationInfo.ScriptLineNumber): $($Error[0])"

@@ -78,7 +78,8 @@ try {
 		exit 0
 	}
 
-	"✔️ built Git repository 📂$RepoDir in $($StopWatch.Elapsed.Seconds) sec."
+	[int]$Elapsed = $StopWatch.TotalSeconds
+	"✔️ built Git repository 📂$RepoDir in $Elapsed sec."
 	exit 0
 } catch {
 	write-error "ERROR: line $($_.InvocationInfo.ScriptLineNumber): $($Error[0])"

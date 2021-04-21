@@ -31,7 +31,8 @@ try {
 		if ($lastExitCode -ne "0") { throw "'git clone $URL' failed" }
 		$Count++
 	}
-	"✔️ cloned $Count Git repositories at 📂$ParentDir in $($StopWatch.Elapsed.Seconds) sec."
+	[int]$Elapsed = $StopWatch.TotalSeconds
+	"✔️ cloned $Count Git repositories at 📂$ParentDir in $Elapsed sec."
 	exit 0
 } catch {
 	write-error "ERROR: line $($_.InvocationInfo.ScriptLineNumber): $($Error[0])"
