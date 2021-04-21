@@ -15,32 +15,32 @@ try {
 	clear-host
 	foreach($Row in $Table) {
 		for ($i = 0; $i -lt 4; $i++) {
-			write-host -nonewline $($Row.A); start-sleep -milliseconds 5
-			write-host -nonewline $($Row.B); start-sleep -milliseconds 5
-			write-host -nonewline $($Row.C); start-sleep -milliseconds 5
-			write-host -nonewline $($Row.D); start-sleep -milliseconds 5
-			write-host -nonewline $($Row.E); start-sleep -milliseconds 5
-			write-host -nonewline $($Row.F); start-sleep -milliseconds 5
-			write-host -nonewline $($Row.G); start-sleep -milliseconds 5
-			write-host -nonewline $($Row.H); start-sleep -milliseconds 5
-			write-host -nonewline $($Row.I); start-sleep -milliseconds 5
-			write-host -nonewline $($Row.J); start-sleep -milliseconds 5
-			write-host -nonewline $($Row.K); start-sleep -milliseconds 5
-			write-host -nonewline $($Row.L); start-sleep -milliseconds 5
-			write-host -nonewline $($Row.M); start-sleep -milliseconds 5
-			write-host -nonewline $($Row.N); start-sleep -milliseconds 5
-			write-host -nonewline $($Row.O); start-sleep -milliseconds 5
-			write-host -nonewline $($Row.P); start-sleep -milliseconds 5
-			write-host -nonewline $($Row.Q); start-sleep -milliseconds 5
-			write-host -nonewline $($Row.R); start-sleep -milliseconds 5
-			write-host -nonewline $($Row.S); start-sleep -milliseconds 5
-			write-host -nonewline $($Row.T); start-sleep -milliseconds 5
-			write-host -nonewline $($Row.U); start-sleep -milliseconds 5
-			write-host -nonewline $($Row.V); start-sleep -milliseconds 5
-			write-host -nonewline $($Row.W); start-sleep -milliseconds 5
-			write-host -nonewline $($Row.X); start-sleep -milliseconds 5
-			write-host -nonewline $($Row.Y); start-sleep -milliseconds 5
-			write-host -nonewline $($Row.Z); start-sleep -milliseconds 5
+			write-host -foregroundColor green -noNewline $($Row.A); start-sleep -milliseconds 1
+			write-host -foregroundColor green -noNewline $($Row.B); start-sleep -milliseconds 1
+			write-host -foregroundColor green -noNewline $($Row.C); start-sleep -milliseconds 1
+			write-host -foregroundColor green -noNewline $($Row.D); start-sleep -milliseconds 1
+			write-host -foregroundColor green -noNewline $($Row.E); start-sleep -milliseconds 1
+			write-host -foregroundColor green -noNewline $($Row.F); start-sleep -milliseconds 1
+			write-host -foregroundColor green -noNewline $($Row.G); start-sleep -milliseconds 1
+			write-host -foregroundColor green -noNewline $($Row.H); start-sleep -milliseconds 1
+			write-host -foregroundColor green -noNewline $($Row.I); start-sleep -milliseconds 1
+			write-host -foregroundColor green -noNewline $($Row.J); start-sleep -milliseconds 1
+			write-host -foregroundColor green -noNewline $($Row.K); start-sleep -milliseconds 1
+			write-host -foregroundColor green -noNewline $($Row.L); start-sleep -milliseconds 1
+			write-host -foregroundColor green -noNewline $($Row.M); start-sleep -milliseconds 1
+			write-host -foregroundColor green -noNewline $($Row.N); start-sleep -milliseconds 1
+			write-host -foregroundColor green -noNewline $($Row.O); start-sleep -milliseconds 1
+			write-host -foregroundColor green -noNewline $($Row.P); start-sleep -milliseconds 1
+			write-host -foregroundColor green -noNewline $($Row.Q); start-sleep -milliseconds 1
+			write-host -foregroundColor green -noNewline $($Row.R); start-sleep -milliseconds 1
+			write-host -foregroundColor green -noNewline $($Row.S); start-sleep -milliseconds 1
+			write-host -foregroundColor green -noNewline $($Row.T); start-sleep -milliseconds 1
+			write-host -foregroundColor green -noNewline $($Row.U); start-sleep -milliseconds 1
+			write-host -foregroundColor green -noNewline $($Row.V); start-sleep -milliseconds 1
+			write-host -foregroundColor green -noNewline $($Row.W); start-sleep -milliseconds 1
+			write-host -foregroundColor green -noNewline $($Row.X); start-sleep -milliseconds 1
+			write-host -foregroundColor green -noNewline $($Row.Y); start-sleep -milliseconds 1
+			write-host -foregroundColor green -noNewline $($Row.Z); start-sleep -milliseconds 1
 		}
 		write-host ""
 	    	start-sleep -milliseconds 200
