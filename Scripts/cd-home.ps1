@@ -6,7 +6,7 @@
 #>
 
 $TargetDir = resolve-path "$HOME"
-if (-not(test-path "$TargetDir" -container leaf)) {
+if (-not(test-path "$TargetDir" -pathType leaf)) {
 	write-warning "Sorry, directory 📂$TargetDir is missing"
 	exit 1
 }
