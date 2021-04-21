@@ -1,13 +1,13 @@
 ﻿#!/usr/bin/pwsh
 <#
-.SYNTAX       cd-up.ps1
-.DESCRIPTION  go one directory up
+.SYNTAX       cd-up2.ps1
+.DESCRIPTION  go two directories up
 .LINK         https://github.com/fleschutz/PowerShell
 .NOTES        Author: Markus Fleschutz / License: CC0
 #>
 
 try {
-	$TargetDir = resolve-path ".."
+	$TargetDir = resolve-path "../.."
 	set-location "$TargetDir"
 	"📂$TargetDir"
 	exit 0

@@ -27,7 +27,7 @@ del alias:pwd -force
 set-alias -name pwd -value list-workdir.ps1	# pwd = print working directory
 set-alias -name ll -value get-childitem		# ll = list long
 set-alias -name lsf -value list-dir.ps1		# lsf = list directory formatted
-set-alias -name .. -value cd-up.ps1 1		# go 1 dir up
-set-alias -name ... -value cd-up.ps1 2		# go 2 dirs up
-set-alias -name .... -value cd-up.ps1 3		# go 3 dirs up
-set-alias -name ..... -value cd-up.ps1 4	# go 4 dirs up
+set-alias -name .. -value cd-up.ps1		# one dir up
+set-alias -name ... -value cd-up2.ps1		# two dirs up
+set-alias -name .... -value cd-up3.ps1		# three dirs up
+set-alias -name ..... -value cd-up4.ps1		# four dirs up
