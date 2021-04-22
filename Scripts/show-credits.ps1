@@ -19,6 +19,8 @@ try {
 	& "$PSScriptRoot/write-animated.ps1" "PowerShell: version 5.1 & 7.1.3"
 	& "$PSScriptRoot/write-animated.ps1" "PowerShell Scripts: version 1.0"
 	& "$PSScriptRoot/write-animated.ps1" "GitHub: github.com/fleschutz/PowerShell"
+	& "$PSScriptRoot/write-animated.ps1" "SSH: OpenSSH version 7.7p1"
+	& "$PSScriptRoot/write-animated.ps1" "Unicode: version 13.0"
 	& "$PSScriptRoot/write-animated.ps1" "Executive Producer: Markus Fleschutz"
 	& "$PSScriptRoot/write-animated.ps1" "Special Thanks: Andrea Fleschutz"
 	& "$PSScriptRoot/write-animated.ps1" "Copyright: (c) 2020. All Rights Reserved"
