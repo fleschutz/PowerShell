@@ -24,20 +24,19 @@ try {
 		$WindSpeed = $Hourly.windspeedKmph
 		$WindDir = $Hourly.winddir16Point
 		$UV = $Hourly.uvIndex
-		$Visib = $Hourly.visibility
 		$Clouds = $Hourly.cloudcover
 		$Desc = $Hourly.weatherDesc.value
 		if ($Hour -eq 0) {
 			if ($Day -eq 0) {
-				"🕗 Today at $Area ($Region, $Country)"
+				"🕗      🌡       ☂️           💨                 ☀️            ☁️   TODAY at $Area ($Region, $Country)"
 			} elseif ($Day -eq 1) {
-				"🕗 Tomorrow"
+				"                                                                  TOMORROW"
 			} else {
-				"🕗 Day After Tomorrow"
+				"                                                                  DAY AFTER TOMORROW"
 			}
 			$Day++
 		}
-		"$($Hour)°°`t$($Temp)°C`t$($Precip)mm $($Humidity)%`t$($WindSpeed)km/h from $WindDir`t$($Pressure)hPa  UV$($UV)  $($Visib)km  $($Clouds)%  $Desc"
+		"$($Hour)°°`t$($Temp)°C`t$($Precip)mm $($Humidity)%    $($WindSpeed)km/h from $WindDir`tUV$($UV)  $($Pressure)hPa  $($Clouds)%  $Desc"
 		$Hour++
 	}
 
