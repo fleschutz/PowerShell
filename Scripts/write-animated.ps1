@@ -7,6 +7,8 @@
 
 param($Line1 = "", $Line2 = "", $Line3 = "", $Line4 = "", $Line5 = "", $Line6 = "", $Line7 = "", $Line8 = "", $Line9 = "", [int]$Speed = 50) # 50 ms pause
 
+$TerminalWidth = 120 # characters
+
 function WriteAnimatedLine { param([string]$Line, [int]$Speed)
 	[int]$Start = 1
 	[int]$End = $Line.Length
@@ -15,7 +17,7 @@ function WriteAnimatedLine { param([string]$Line, [int]$Speed)
 
 	if ($Line -ne "") {
 		foreach ($Pos in $Start .. $End) {
-			$TextToDisplay = $Spaces.Substring(0, 40 - $pos / 2) + $Line.Substring(0, $Pos)
+			$TextToDisplay = $Spaces.Substring(0, $TerminalWidth / 2 - $pos / 2) + $Line.Substring(0, $Pos)
 			write-host -nonewline $TextToDisplay
 			start-sleep -milliseconds $Speed
 			$HOST.UI.RawUI.CursorPosition = $StartPosition

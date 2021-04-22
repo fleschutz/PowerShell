@@ -202,6 +202,7 @@ Mega Collection of PowerShell Scripts
 * [send-tcp.ps1](Scripts/send-udp.ps1) - sends a TCP message to the given IP address and port
 * [send-udp.ps1](Scripts/send-udp.ps1) - sends a UDP datagram message to the given IP address and port
 * [set-timer.ps1](Scripts/set-timer.ps1) - sets a timer for a countdown
+* [show-credits.ps1](Scripts/show-credits.ps1) - shows the credits
 * [simulate-matrix.ps1](Scripts/simulate-matrix.ps1) - simulates the Matrix (fun)
 * [simulate-presence.ps1](Scripts/simulate-presence.ps1) - simulates the human presence against burglars
 * [switch-shelly1.ps1](Scripts/switch-shelly1.ps1) - switches a Shelly1 device in the local network

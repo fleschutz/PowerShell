@@ -157,6 +157,7 @@ SHA1.ps1, prints the SHA1 checksum of the given file
 SHA256.ps1, prints the SHA256 checksum of the given file
 simulate-matrix.ps1, simulates the Matrix (fun)
 simulate-presence.ps1, simulates the human presence against burglars
+show-credits.ps1, shows the credits
 speak-countdown.ps1, starts a countdown by text-to-speech (TTS)
 speak-date.ps1, speaks the current date by text-to-speech (TTS)
 speak-english.ps1, speaks the given text with an English text-to-speech (TTS) voice
