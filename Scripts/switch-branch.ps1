@@ -17,7 +17,7 @@ try {
 
 	$Result = (git status)
 	if ($lastExitCode -ne "0") { throw "'git status' failed in $RepoDir" }
-	if ("$Result" -notmatch "nothing to commit, working tree clean") { throw "Repository is NOT clean: $Result" }
+	if ("$Result" -notmatch "nothing to commit, working tree clean") { throw "Git repository is NOT clean: $Result" }
 
 	& "$PSScriptRoot/fetch-repo.ps1"
 	if ($lastExitCode -ne "0") { throw "Script 'fetch-repo.ps1' failed" }
@@ -31,6 +31,7 @@ try {
 	& git pull --recurse-submodules 
 	if ($lastExitCode -ne "0") { throw "'git pull' failed" }
 
+	"✔️switched Git repository 📂$RepoDir to branch 🌵$BranchName"
 	exit 0
 } catch {
 	write-error "ERROR: line $($_.InvocationInfo.ScriptLineNumber): $($Error[0])"
