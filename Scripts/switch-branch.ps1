@@ -9,6 +9,7 @@ param($BranchName = "", $RepoDir = "$PWD")
 if ($BranchName -eq "") { $BranchName = read-host "Enter name of branch to switch to" }
 
 try {
+	$RepoDir = resolve-path "$RepoDir"
 	if (-not(test-path "$RepoDir" -pathType container)) { throw "Can't access directory: $RepoDir" }
 	set-location "$RepoDir"
 
@@ -31,7 +32,7 @@ try {
 	& git pull --recurse-submodules 
 	if ($lastExitCode -ne "0") { throw "'git pull' failed" }
 
-	"✔️switched Git repository 📂$RepoDir to branch 🌵$BranchName"
+	"✔️ switched Git repository 📂$RepoDir to branch 🌵$BranchName"
 	exit 0
 } catch {
 	write-error "ERROR: line $($_.InvocationInfo.ScriptLineNumber): $($Error[0])"
