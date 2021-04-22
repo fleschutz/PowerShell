@@ -9,7 +9,7 @@
 if ($IsLinux) { $Username = $(whoami) } else { $Username = $env:USERNAME }
 $Hostname = $(hostname)
 $host.ui.RawUI.WindowTitle = "$Username @ $Hostname"
-"🧑$Username entered 💻$Hostname at 📂$(Get-Location)"
+"Welcome 🧑$Username at 📂$(Get-Location) on 💻$Hostname "
 
 
 #  My Command Prompt
