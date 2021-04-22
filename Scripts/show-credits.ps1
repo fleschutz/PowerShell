@@ -23,7 +23,7 @@ try {
 	& "$PSScriptRoot/write-animated.ps1" "Unicode: version 13.0"
 	& "$PSScriptRoot/write-animated.ps1" "Executive Producer: Markus Fleschutz"
 	& "$PSScriptRoot/write-animated.ps1" "Special Thanks: Andrea Fleschutz"
-	& "$PSScriptRoot/write-animated.ps1" "Copyright: (c) 2020. All Rights Reserved"
+	& "$PSScriptRoot/write-animated.ps1" "Copyright: (c) 2021. All Rights Reserved"
 	& "$PSScriptRoot/write-animated.ps1" "No Animals Were Harmed in the Making of This Film"
 
 	& "$PSScriptRoot/write-big.ps1" " Thanx 4 watching"
