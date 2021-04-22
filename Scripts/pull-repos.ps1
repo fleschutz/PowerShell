@@ -18,7 +18,7 @@ try {
 
 	[int]$Count = 0
 	get-childItem $ParentDir -attributes Directory | foreach-object {
-		"⏳ Pulling updates for Git repository 📂$($_.FullName) ..."
+		"⏳ Pulling updates for Git repository 📂$($_.Name) ..."
 
 		set-location $_.FullName
 
@@ -30,7 +30,7 @@ try {
 	}
 
 	[int]$Elapsed = $StopWatch.Elapsed.TotalSeconds
-	"✔️ updated $Count Git repositories at 📂$ParentDir in $Elapsed sec."
+	"✔️  pulled updates for $Count Git repositories at 📂$ParentDir in $Elapsed sec."
 	exit 0
 } catch {
 	write-error "ERROR: line $($_.InvocationInfo.ScriptLineNumber): $($Error[0])"

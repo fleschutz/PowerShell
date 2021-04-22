@@ -8,7 +8,7 @@
 param($RepoDir = "$PWD")
 
 try {
-	$RepoDir = resolve-path "$RepoDir"
+	$RepoDir = resolve-path "$RepoDir" 
 	if (-not(test-path "$RepoDir" -pathType container)) { throw "Can't access directory: $RepoDir" }
 	set-location "$RepoDir"
 	
