@@ -18,10 +18,12 @@ try {
 
 	[int]$Count = 0
 	get-childItem $ParentDir -attributes Directory | foreach-object {
+		"⏳ Fetching updates for Git repository 📂$($_.Name) ..."
+
 		set-location "$($_.FullName)"
 
-		& "$PSScriptRoot/fetch-repo.ps1"
-		if ($lastExitCode -ne "0") { throw "Script 'fetch-repo.ps1' failed" }
+		& git fetch --all --recurse-submodules --jobs=4
+		if ($lastExitCode -ne "0") { throw "'git fetch' failed" }
 
 		set-location ..
 		$Count++
