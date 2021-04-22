@@ -182,7 +182,6 @@ Mega Collection of PowerShell Scripts
 * [list-emojis.ps1](Scripts/list-emojis.ps1) - lists the emojis of Unicode 13.0
 * [list-fritzbox-calls.ps1](Scripts/list-fritzbox-calls.ps1) - lists the FRITZ!Box calls
 * [list-fritzbox-devices.ps1](Scripts/list-fritzbox-devices.ps1) - lists FRITZ!Box's known devices 
-* [list-hourly-weather.ps1](Scripts/list-hourly-weather.ps1) - lists the hourly weather today
 * [list-logbook.ps1](Scripts/list-logbook.ps1) - lists the content of the logbook 
 * [list-earthquakes.ps1](Scripts/list-earthquakes.ps1) - lists earthquakes with magnitude >= 6.0 for the last 30 days
 * [list-mysql-tables.ps1](Scripts/list-mysql-tables.ps1) - lists the MySQL server tables
@@ -191,6 +190,7 @@ Mega Collection of PowerShell Scripts
 * [list-random-passwords.ps1](Scripts/list-random-passwords.ps1) - prints a list of random passwords
 * [list-random-pins.ps1](Scripts/list-random-pins.ps1) - prints a list of random PIN's
 * [list-sql-tables.ps1](Scripts/list-sql-tables.ps1) - lists the SQL server tables
+* [list-weather.ps1](Scripts/list-weather.ps1) - lists the hourly weather 
 * [locate-city.ps1](Scripts/locate-city.ps1) - prints the geographic location of the given city
 * [locate-ipaddress.ps1](Scripts/locate-ipaddress.ps1) - prints the geographic location of the given IP address
 * [locate-zip-code.ps1](Scripts/locate-zip-code.ps1) - prints the geographic location of the given zip-code

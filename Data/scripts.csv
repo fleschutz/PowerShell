@@ -91,7 +91,6 @@ list-files.ps1, lists all files in the given folder and also in every subfolder
 list-fritzbox-calls.ps1, lists the FRITZ!Box calls
 list-fritzbox-devices.ps1, lists FRITZ!Box's known devices 
 list-hidden-files.ps1, lists hidden files within the given directory tree
-list-hourly-weather.ps1, lists the hourly weather today
 list-installed-apps.ps1, lists the installed Windows Store apps
 list-installed-software.ps1, lists the installed software (except Windows Store apps)
 list-logbook.ps1, lists the content of the logbook 
@@ -117,6 +116,7 @@ list-tasks.ps1, lists all Windows scheduler tasks
 list-timezone.ps1, lists the current time zone details
 list-timezones.ps1, lists all time zones available 
 list-user-groups.ps1, lists the user groups on the local computer
+list-weather.ps1, lists the hourly weather 
 list-workdir.ps1, lists the current working directory
 locate-city.ps1, prints the geographic location of the given city
 locate-ipaddress.ps1, prints the geographic location of the given IP address

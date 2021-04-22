@@ -1,6 +1,6 @@
 ﻿<#
-.SYNTAX       list-hourly-weather.ps1 [<location>]
-.DESCRIPTION  lists the hourly weather today
+.SYNTAX       list-weather.ps1 [<location>]
+.DESCRIPTION  lists the hourly weather 
 .LINK         https://github.com/fleschutz/PowerShell
 .NOTES        Author: Markus Fleschutz / License: CC0
 #>
