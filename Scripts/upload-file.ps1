@@ -17,7 +17,7 @@ try {
 
 	# check local file first:
 	if (-not(test-path "$File" -pathType leaf)) { throw "Can't access file: $File" }
-	$FullPath = Resolve-Path $File
+	$FullPath = Resolve-Path "$File"
 	$Filename = (Get-Item $File).Name
 	$FileSize = (Get-Item $File).Length
 	"Local file: $FullPath ($FileSize bytes)"
@@ -28,16 +28,16 @@ try {
 	$request.EnableSSL = $false
 	$request.KeepAlive = $true
 	$request.UseBinary = $true
-	$request.UsePassive = $false
+	$request.UsePassive = $true
 
 	$fileStream = [System.IO.File]::OpenRead("$FullPath")
 	$ftpStream = $request.GetRequestStream()
 
 	"Uploading ..."
-	$buffer = New-Object Byte[] 64KB
-	while (($read = $fileStream.Read($buffer, 0, $buffer.Length)) -gt 0)
+	$Buf = New-Object Byte[] 64KB
+	while (($DataRead = $fileStream.Read($Buf, 0, $Buf.Length)) -gt 0)
 	{
-	    $ftpStream.Write($buffer, 0, $read)
+	    $ftpStream.Write($Buf, 0, $DataRead)
 	    $pct = ($fileStream.Position / $fileStream.Length)
 	    Write-Progress -Activity "Uploading" -Status ("{0:P0} complete:" -f $pct) -PercentComplete ($pct * 100)
 	}
@@ -47,7 +47,7 @@ try {
 	$fileStream.Dispose()
 
 	[int]$Elapsed = $StopWatch.Elapsed.TotalSeconds
-	"✔️ uploaded $File to $URL in $Elapsed sec."
+	"✔️ uploaded $Filename to $URL in $Elapsed sec."
 	exit 0
 } catch {
 	write-error "ERROR: line $($_.InvocationInfo.ScriptLineNumber): $($Error[0])"
