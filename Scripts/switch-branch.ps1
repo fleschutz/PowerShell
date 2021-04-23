@@ -23,14 +23,14 @@ try {
 	& "$PSScriptRoot/fetch-repo.ps1"
 	if ($lastExitCode -ne "0") { throw "Script 'fetch-repo.ps1' failed" }
 
-	& git switch --recurse-submodules "$BranchName"
+	& git switch "$BranchName"
 	if ($lastExitCode -ne "0") { throw "'git switch $BranchName' failed" }
+
+	& git pull  
+	if ($lastExitCode -ne "0") { throw "'git pull' failed" }
 
 	& git submodule update --init --recursive
 	if ($lastExitCode -ne "0") { throw "'git submodule update' failed" }
-
-	& git pull --recurse-submodules 
-	if ($lastExitCode -ne "0") { throw "'git pull' failed" }
 
 	"✔️ switched Git repository 📂$RepoDir to branch 🌵$BranchName"
 	exit 0
