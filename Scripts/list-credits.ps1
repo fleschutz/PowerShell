@@ -7,11 +7,14 @@
 
 try {
 	clear-host
-
 	""
-	& "$PSScriptRoot/write-big.ps1" "      CREDITS"
+	"			 ______     ______     ______     _____     __     ______   ______    "
+	"			/\  ___\   /\  == \   /\  ___\   /\  __-.  /\ \   /\__  _\ /\  ___\   "
+	"			\ \ \____  \ \  __<   \ \  __\   \ \ \/\ \ \ \ \  \/_/\ \/ \ \___  \  "
+	"			 \ \_____\  \ \_\ \_\  \ \_____\  \ \____-  \ \_\    \ \_\  \/\_____\ "
+	"			  \/_____/   \/_/ /_/   \/_____/   \/____/   \/_/     \/_/   \/_____/ "
 	""
-
+                                                                      
 	& "$PSScriptRoot/write-animated.ps1" "Typos: Markus Fleschutz"
 	& "$PSScriptRoot/write-animated.ps1" "Keyboard: Rapoo 12335 E9270P WL Ultra-Slim Touch"
 	& "$PSScriptRoot/write-animated.ps1" "Operating Systems: Windows 10 20H2 & Ubuntu Server 20.04 LTS"
