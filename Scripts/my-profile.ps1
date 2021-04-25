@@ -10,7 +10,7 @@ if ($IsLinux) { $Username = $(whoami) } else { $Username = $env:USERNAME }
 $Hostname = $(hostname)
 $host.ui.RawUI.WindowTitle = "$Username @ $Hostname"
 $Time = (get-date).ToString('t')
-"Hi 🧑$Username, welcome to 💻$Hostname at 📂$(Get-Location), it's $Time"
+"🧑$Username entered 📂$(Get-Location) at 💻$Hostname, it's $Time"
 
 
 #  My Command Prompt
