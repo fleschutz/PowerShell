@@ -22,7 +22,7 @@ try {
 
 		set-location $_.FullName
 
-		& git pull --all --recurse-submodules --jobs=4
+		& git pull --recurse-submodules --jobs=4
 		if ($lastExitCode -ne "0") { throw "'git pull' failed" }
 
 		set-location ..
