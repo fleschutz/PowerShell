@@ -8,7 +8,7 @@
 try {
 	$obj = new-object -com wscript.shell
 	$obj.SendKeys([char]173)
-	"🔇 audio muted."
+	"🔇 audio is muted"
 	exit 0
 } catch {
 	write-error "ERROR: line $($_.InvocationInfo.ScriptLineNumber): $($Error[0])"
