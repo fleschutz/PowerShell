@@ -28,15 +28,15 @@ try {
 		$Desc = $Hourly.weatherDesc.value
 		if ($Hour -eq 0) {
 			if ($Day -eq 0) {
-				"🕗      🌡       ☂️           💨                 ☀️            ☁️   TODAY at $Area ($Region, $Country)"
+				"🕗      🌡°C  ☂️           💨                 ☀️            ☁️   TODAY at $Area ($Region, $Country)"
 			} elseif ($Day -eq 1) {
-				"                                                                  TOMORROW"
+				"                                                               TOMORROW"
 			} else {
-				"                                                                  DAY AFTER TOMORROW"
+				"                                                               DAY AFTER TOMORROW"
 			}
 			$Day++
 		}
-		"$($Hour)°°`t$($Temp)°C`t$($Precip)mm $($Humidity)%    $($WindSpeed)km/h from $WindDir`tUV$($UV)  $($Pressure)hPa  $($Clouds)%  $Desc"
+		"$(($Hour.toString()).PadLeft(2))°°   $(($Temp.toString()).PadLeft(2))°   $($Precip)mm $($Humidity)%   $($WindSpeed)km/h from $WindDir`tUV$($UV)  $($Pressure)hPa  $($Clouds)%  $Desc"
 		$Hour++
 	}
 

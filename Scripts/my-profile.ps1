@@ -10,7 +10,7 @@ if ($IsLinux) { $Username = $(whoami) } else { $Username = $env:USERNAME }
 $Hostname = $(hostname)
 $host.ui.RawUI.WindowTitle = "$Username @ $Hostname"
 $Time = (get-date).ToString('t')
-"Welcome 🧑$Username at 📂$(Get-Location) on 💻$Hostname, it's $Time"
+"Hi 🧑$Username, welcome to 💻$Hostname at 📂$(Get-Location), it's $Time"
 
 
 #  My Command Prompt
@@ -28,7 +28,9 @@ del alias:pwd -force
 set-alias -name pwd -value list-workdir.ps1	# pwd = print working directory
 set-alias -name ll -value get-childitem		# ll = list long
 set-alias -name lsf -value list-dir.ps1		# lsf = list directory formatted
-set-alias -name .. -value cd-up.ps1		# one dir up
-set-alias -name ... -value cd-up2.ps1		# two dirs up
-set-alias -name .... -value cd-up3.ps1		# three dirs up
-set-alias -name ..... -value cd-up4.ps1		# four dirs up
+set-alias -name mute -value mute-audio.ps1
+set-alias -name unmute -value unmute-audio.ps1
+set-alias -name .. -value cd-up.ps1		# 1 dir level up
+set-alias -name ... -value cd-up2.ps1		# 2 dir levels up
+set-alias -name .... -value cd-up3.ps1		# 3 dir levels up
+set-alias -name ..... -value cd-up4.ps1		# 4 dir levels up
