@@ -1,5 +1,5 @@
 <#
-.SYNTAX       show-credits.ps1
+.SYNTAX       list-credits.ps1
 .DESCRIPTION  shows the credits
 .LINK         https://github.com/fleschutz/PowerShell
 .NOTES        Author: Markus Fleschutz / License: CC0

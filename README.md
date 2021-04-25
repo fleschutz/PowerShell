@@ -178,6 +178,7 @@ Mega Collection of PowerShell Scripts
 * [generate-qrcode.ps1](Scripts/generate-qrcode.ps1) - generates a QR code
 * [list-anagrams.ps1](Scripts/list-anagrams.ps1) - lists all anagrams of the given word
 * [list-city-weather.ps1](Scripts/list-city-weather.ps1) - lists the current weather of cities worldwide (west to east)
+* [list-credits.ps1](Scripts/list-credits.ps1) - shows the credits
 * [list-environment-variables.ps1](Scripts/list-environment-variables.ps1) - lists all environment variables
 * [list-emojis.ps1](Scripts/list-emojis.ps1) - lists the emojis of Unicode 13.0
 * [list-fritzbox-calls.ps1](Scripts/list-fritzbox-calls.ps1) - lists the FRITZ!Box calls
@@ -202,7 +203,6 @@ Mega Collection of PowerShell Scripts
 * [send-tcp.ps1](Scripts/send-udp.ps1) - sends a TCP message to the given IP address and port
 * [send-udp.ps1](Scripts/send-udp.ps1) - sends a UDP datagram message to the given IP address and port
 * [set-timer.ps1](Scripts/set-timer.ps1) - sets a timer for a countdown
-* [show-credits.ps1](Scripts/show-credits.ps1) - shows the credits
 * [simulate-matrix.ps1](Scripts/simulate-matrix.ps1) - simulates the Matrix (fun)
 * [simulate-presence.ps1](Scripts/simulate-presence.ps1) - simulates the human presence against burglars
 * [switch-shelly1.ps1](Scripts/switch-shelly1.ps1) - switches a Shelly1 device in the local network

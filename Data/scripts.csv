@@ -80,6 +80,7 @@ list-cheat-sheet.ps1, lists the PowerShell cheat sheet
 list-city-weather.ps1, lists the current weather of cities worldwide (east to west)
 list-commits.ps1, lists all commits in the current/given Git repository 
 list-clipboard.ps1, lists the contents of the clipboard
+list-credits.ps1, shows the credits
 list-dir.ps1, lists the directory content (formatted in columns)
 list-dir-tree.ps1, lists the directory tree content 
 list-drives.ps1, lists all drives
@@ -157,7 +158,6 @@ SHA1.ps1, prints the SHA1 checksum of the given file
 SHA256.ps1, prints the SHA256 checksum of the given file
 simulate-matrix.ps1, simulates the Matrix (fun)
 simulate-presence.ps1, simulates the human presence against burglars
-show-credits.ps1, shows the credits
 speak-countdown.ps1, starts a countdown by text-to-speech (TTS)
 speak-date.ps1, speaks the current date by text-to-speech (TTS)
 speak-english.ps1, speaks the given text with an English text-to-speech (TTS) voice
