@@ -102,7 +102,8 @@ list-modules.ps1, lists the PowerShell modules
 list-mysql-tables.ps1, lists the MySQL server tables
 list-network-shares.ps1, lists the network shares of the local computer
 list-news.ps1, lists the latest news
-list-os-releases.ps1, lists OS releases and download URL 
+list-os-releases.ps1, lists operating system releases and download URL 
+list-os-updates.ps1, lists operating system updates
 list-printers.ps1, lists all printer known to the computer
 list-processes.ps1, lists the local computer processes
 list-profiles.ps1, lists your PowerShell profiles

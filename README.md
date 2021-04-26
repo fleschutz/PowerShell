@@ -187,7 +187,8 @@ Mega Collection of PowerShell Scripts
 * [list-earthquakes.ps1](Scripts/list-earthquakes.ps1) - lists earthquakes with magnitude >= 6.0 for the last 30 days
 * [list-mysql-tables.ps1](Scripts/list-mysql-tables.ps1) - lists the MySQL server tables
 * [list-news.ps1](Scripts/list-news.ps1) - lists the latest news
-* [list-os-releases.ps1](Scripts/list-os-releases.ps1) - lists OS releases and download URL
+* [list-os-releases.ps1](Scripts/list-os-releases.ps1) - lists operating system releases and download URL
+* [list-os-updates.ps1](Scripts/list-os-updates.ps1) - lists operating system updates
 * [list-random-passwords.ps1](Scripts/list-random-passwords.ps1) - prints a list of random passwords
 * [list-random-pins.ps1](Scripts/list-random-pins.ps1) - prints a list of random PIN's
 * [list-sql-tables.ps1](Scripts/list-sql-tables.ps1) - lists the SQL server tables
