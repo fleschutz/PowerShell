@@ -31,7 +31,7 @@ try {
 	& git submodule update --init --recursive
 	if ($lastExitCode -ne "0") { throw "'git submodule update' failed" }
 
-	"✔️ created new branch 🌵$NewBranchName"
+	"✔️ created new branch 🌵$NewBranchName in Git repository $RepoDir"
 	exit 0
 } catch {
 	write-error "ERROR: line $($_.InvocationInfo.ScriptLineNumber): $($Error[0])"
