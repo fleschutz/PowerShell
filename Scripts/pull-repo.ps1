@@ -9,18 +9,19 @@ param($RepoDir = "$PWD")
 
 try {
 	$RepoDir = resolve-path "$RepoDir"
+	$RepoDirName = (get-item "$RepoDir").Name
 	if (-not(test-path "$RepoDir" -pathType container)) { throw "Can't access directory: $RepoDir" }
 	set-location "$RepoDir"
 	
-	"⏳ Updating Git repository 📂$RepoDir ..."
+	"⏳ Pulling updates for Git repository 📂$RepoDirName ..."
 
 	$Null = (git --version)
 	if ($lastExitCode -ne "0") { throw "Can't execute 'git' - make sure Git is installed and available" }
 
-	& git pull --all --recurse-submodules --jobs=4
+	& git pull --recurse-submodules --jobs=4
 	if ($lastExitCode -ne "0") { throw "'git pull' failed" }
 
-	"✔️ updated Git repository 📂$RepoDir"
+	"✔️ updated Git repository 📂$RepoDirName"
 	exit 0
 } catch {
 	write-error "ERROR: line $($_.InvocationInfo.ScriptLineNumber): $($Error[0])"
