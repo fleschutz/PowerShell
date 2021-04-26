@@ -9,32 +9,38 @@ param($File = "", $URL = "", $Username = "", $Password = "")
 
 if ($File -eq "") { $File = read-host "Enter local file to upload" }
 if ($URL -eq "") { $URL = read-host "Enter URL of FTP server" }
-if ($Username -eq "") { $Username = read-host "Enter login username" }
-if ($Password -eq "") { $Password = read-host "Enter login password" }
+if ($Username -eq "") { $Username = read-host "Enter username for login" }
+if ($Password -eq "") { $Password = read-host "Enter password for login" }
+[bool]$EnableSSL = $true
+[bool]$UseBinary = $true
+[bool]$UsePassive = $true
+[bool]$KeepAlive = $true
+[bool]$IgnoreCert = $true
 
 try {
 	$StopWatch = [system.diagnostics.stopwatch]::startNew()
 
-	# check local file first:
-	if (-not(test-path "$File" -pathType leaf)) { throw "Can't access file: $File" }
+	# check local file:
 	$FullPath = Resolve-Path "$File"
-	$Filename = (Get-Item $File).Name
-	$FileSize = (Get-Item $File).Length
-	"Local file: $FullPath ($FileSize bytes)"
+	if (-not(test-path "$FullPath" -pathType leaf)) { throw "Can't access file: $FullPath" }
+	$Filename = (Get-Item $FullPath).Name
+	$FileSize = (Get-Item $FullPath).Length
+	"⏳ Uploading 📄$Filename ($FileSize bytes) to $URL ..."
 
-	$request = [Net.WebRequest]::Create("$URL/$Filename")
-	$request.Credentials = New-Object System.Net.NetworkCredential("$Username", "$Password")
-	$request.Method = [System.Net.WebRequestMethods+Ftp]::UploadFile 
-	$request.EnableSSL = $false
-	$request.KeepAlive = $true
-	$request.UseBinary = $true
-	$request.UsePassive = $true
+	# prepare request:
+	$Request = [Net.WebRequest]::Create("$URL/$Filename")
+	$Request.Credentials = New-Object System.Net.NetworkCredential("$Username", "$Password")
+	$Request.Method = [System.Net.WebRequestMethods+Ftp]::UploadFile 
+	$Request.EnableSSL = $EnableSSL
+	$Request.UseBinary = $UseBinary
+	$Request.UsePassive = $UsePassive
+	$Request.KeepAlive = $KeepAlive
+	[System.Net.ServicePointManager]::ServerCertificateValidationCallback = {$IgnoreCert}
 
 	$fileStream = [System.IO.File]::OpenRead("$FullPath")
-	$ftpStream = $request.GetRequestStream()
+	$ftpStream = $Request.GetRequestStream()
 
-	"Uploading ..."
-	$Buf = New-Object Byte[] 64KB
+	$Buf = New-Object Byte[] 32KB
 	while (($DataRead = $fileStream.Read($Buf, 0, $Buf.Length)) -gt 0)
 	{
 	    $ftpStream.Write($Buf, 0, $DataRead)
@@ -47,9 +53,10 @@ try {
 	$fileStream.Dispose()
 
 	[int]$Elapsed = $StopWatch.Elapsed.TotalSeconds
-	"✔️ uploaded $Filename to $URL in $Elapsed sec."
+	"✔️ uploaded 📄$Filename to $URL in $Elapsed sec."
 	exit 0
 } catch {
-	write-error "ERROR: line $($_.InvocationInfo.ScriptLineNumber): $($Error[0])"
+	[int]$Elapsed = $StopWatch.Elapsed.TotalSeconds
+	write-error "⚠️ Error in line $($_.InvocationInfo.ScriptLineNumber): $($Error[0]) after $Elapsed sec."
 	exit 1
 }
