@@ -171,7 +171,7 @@ speak-text.ps1, speaks the given text by text-to-speech (TTS)
 speak-time.ps1, speaks the current time by text-to-speech (TTS)
 switch-branch.ps1, switches the branch in the current/given Git repository (including submodules)
 switch-shelly1.ps1, switches a Shelly1 device in the local network
-sync-repo.ps1, synchronizes a Git repository (pull&push, including submodules)
+sync-repo.ps1, synchronizes a Git repository by push & pull (including submodules)
 take-screenshot.ps1, takes a single screenshot
 take-screenshots.ps1, takes multiple screenshots
 translate-file.ps1, translates the given text file into another language

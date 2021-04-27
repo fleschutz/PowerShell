@@ -150,7 +150,7 @@ Mega Collection of PowerShell Scripts
 * [pull-repo.ps1](Scripts/pull-repo.ps1) - pulls updates for the current/given Git repository (including submodules)
 * [pull-repos.ps1](Scripts/pull-repos.ps1) - pulls updates for all Git repositories under the current/given directory (including submodules)
 * [switch-branch.ps1](Scripts/switch-branch.ps1) - switches the branch in the current/given Git repository (including submodules)
-* [sync-repo.ps1](Scripts/sync-repo.ps1) - synchronizes a Git repository (pull&push, including submodules)
+* [sync-repo.ps1](Scripts/sync-repo.ps1) - synchronizes a Git repository by push & pull (including submodules)
 
 🔎 Scripts for PowerShell 
 ------------------------
