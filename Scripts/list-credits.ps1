@@ -25,6 +25,8 @@ try {
 	& "$PSScriptRoot/write-animated.ps1" "Git: version 2.30"
 	& "$PSScriptRoot/write-animated.ps1" "SSH: OpenSSH version 7.7p1"
 	& "$PSScriptRoot/write-animated.ps1" "Unicode: version 13.0"
+	& "$PSScriptRoot/write-animated.ps1" "Song #1: Epic Song by BoxCat Games from Free Music Archive"
+	& "$PSScriptRoot/write-animated.ps1" "Song #2: Siesta by Jahzzar from Free Music Archive"
 	& "$PSScriptRoot/write-animated.ps1" "Executive Producer: Markus Fleschutz"
 	& "$PSScriptRoot/write-animated.ps1" "Special Thanks: Andrea Fleschutz"
 	& "$PSScriptRoot/write-animated.ps1" "Copyright: (c) 2021. All Rights Reserved"
