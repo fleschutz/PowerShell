@@ -212,6 +212,7 @@ Mega Collection of PowerShell Scripts
 * [translate-text.ps1](Scripts/translate-text.ps1) - translates the given text in English into other languages
 * [weather.ps1](Scripts/weather.ps1) - prints the current weather forecast
 * [weather-report.ps1](Scripts/weather-report.ps1) - prints the local weather report
+* [what-is.ps1](Scripts/what-is.ps1) - prints a description of the given abbreviation
 * [write-animated.ps1](Scripts/write-animated.ps1) - writes animated text
 * [write-big.ps1](Scripts/write-big.ps1) - writes the given text in big letters
 * [write-blue.ps1](Scripts/write-blue.ps1) - writes the given text in a blue foreground color

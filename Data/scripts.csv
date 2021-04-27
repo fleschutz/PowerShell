@@ -182,9 +182,10 @@ turn-volume-down.ps1, turns the audio volume down (-10% by default)
 unmute-audio.ps1, unmutes audio
 upload-file.ps1, uploads the local file to the given FTP server
 voice-control.ps1, executes the PowerShell scripts by voice
+wakeup.ps1, sends a magic packet to the given computer, waking him up
 weather.ps1, prints the current weather forecast
 weather-report.ps1, prints the local weather report
-wakeup.ps1, sends a magic packet to the given computer, waking him up
+what-is.ps1, prints a description of the given abbreviation
 write-animated.ps1, writes animated text
 write-big.ps1, writes the given text in big letters
 write-blue.ps1, writes the given text in a blue foreground color
