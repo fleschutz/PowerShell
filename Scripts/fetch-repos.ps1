@@ -29,10 +29,11 @@ try {
 		$Count++
 	}
 
+	$ParentDirName = (get-item "$ParentDir").Name
 	[int]$Elapsed = $StopWatch.Elapsed.TotalSeconds
-	"✔️ fetched updates for $Count Git repositories at 📂$ParentDir in $Elapsed sec."
+	"✔️ fetched updates for $Count Git repositories at 📂$ParentDirName in $Elapsed sec."
 	exit 0
 } catch {
-	write-error "ERROR: line $($_.InvocationInfo.ScriptLineNumber): $($Error[0])"
+	write-error "⚠️ Error in line $($_.InvocationInfo.ScriptLineNumber): $($Error[0])"
 	exit 1
 }
