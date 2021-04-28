@@ -8,6 +8,8 @@
 param($RepoDir = "$PWD")
 
 try {
+	$StopWatch = [system.diagnostics.stopwatch]::startNew()
+
 	if (-not(test-path "$RepoDir" -pathType container)) { throw "Can't access directory: $RepoDir" }
 	set-location "$RepoDir"
 	
@@ -20,7 +22,8 @@ try {
 	& git pull --recurse-submodules --jobs=4
 	if ($lastExitCode -ne "0") { throw "'git pull' failed" }
 
-	"✔️ updated Git repository 📂$RepoDirName"
+	[int]$Elapsed = $StopWatch.Elapsed.TotalSeconds
+	"✔️ pulled updates for Git repository 📂$RepoDirName in $Elapsed sec."
 	exit 0
 } catch {
 	write-error "⚠️ Error in line $($_.InvocationInfo.ScriptLineNumber): $($Error[0])"
