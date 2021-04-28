@@ -1,25 +1,21 @@
 ﻿#  My PowerShell Profile
 #  =====================
 #  Welcome to 'my-profile.ps1' - this file defines the look & feel of PowerShell.
-#  Comment, uncomment or adapt the following lines to your needs, please.
+#  Adapt the following lines to your needs, please.
 
 
 #  My Welcome Message
 #  ------------------
 if ($IsLinux) { $Username = $(whoami) } else { $Username = $env:USERNAME }
 $Hostname = $(hostname)
-$host.ui.RawUI.WindowTitle = "$Username @ $Hostname"
 $Time = (get-date).ToString('t')
+$host.ui.RawUI.WindowTitle = "$Username @ $Hostname"
 "🧑$Username entered 📂$(Get-Location) at 💻$Hostname, it's $Time"
 
 
 #  My Command Prompt
 #  -----------------
-# function prompt {$null}	# result is: PS> 
-
-# function prompt { "$ " }	# result is: $
-
-function prompt { "`n💲 " }	# result is: 💲 
+function prompt { write-host -noNewline -foregroundColor yellow "`n➤➤"; return " " }	# result is: ➤➤
 
 
 #  My Alias Names (sorted alphabetically)
