@@ -15,7 +15,7 @@ $host.ui.RawUI.WindowTitle = "$Username @ $Hostname"
 
 #  My Command Prompt
 #  -----------------
-function prompt { write-host -noNewline -foregroundColor yellow "`n➤➤"; return " " }	# result is: ➤➤
+function prompt { write-host -noNewline -foregroundColor yellow "`n➤"; return " " }	# result is: ➤
 
 
 #  My Alias Names (sorted alphabetically)
