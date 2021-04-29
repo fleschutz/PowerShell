@@ -9,13 +9,21 @@ param($Abbreviation = "")
 if ($Abbreviation -eq "" ) { $Abbreviation = read-host "Enter the abbreviation" }
 
 try {
-	write-progress "Reading what-is.csv..."
-	$Table = import-csv "$PSScriptRoot/../Data/what-is.csv"
-
+	write-progress "Searching ..."
 	$FoundOne = 0
+
+	$Table = import-csv "$PSScriptRoot/../Data/Abbr/Aviation.csv"
 	foreach($Row in $Table) {
 		if ($Row.Abbr -eq $Abbreviation) {
-			"$($Row.Context): $($Row.Description)"
+			"Aviation: $($Row.Description)"
+			$FoundOne = 1
+		}
+	}
+
+	$Table = import-csv "$PSScriptRoot/../Data/Abbr/Misc.csv"
+	foreach($Row in $Table) {
+		if ($Row.Abbr -eq $Abbreviation) {
+			"Misc: $($Row.Description)"
 			$FoundOne = 1
 		}
 	}
