@@ -9,19 +9,21 @@ param($Filename = "")
 if ($Filename -eq "" ) { $Filename = read-host "Enter the MP3 filename" }
 
 try {
-	$Filename = resolve-path -path "$Filename" -relative
+	if (-not(test-path "$Filename" -pathType leaf)) { throw "Can't access audio file: $Filename" }
+	$FullPath = (get-childItem $Filename).fullname
+	$Filename = (get-item "$FullPath").name
 
 	add-type -assemblyName PresentationCore
 	$MediaPlayer = new-object System.Windows.Media.MediaPlayer
 
-	$FullPath = (get-childItem $Filename).fullname
 	do {
 		$MediaPlayer.open($FullPath)
 		$Milliseconds = $MediaPlayer.NaturalDuration.TimeSpan.TotalMilliseconds
 	} until ($Milliseconds)
+
 	[int]$Minutes = $Milliseconds / 60000
 	[int]$Seconds = ($Milliseconds / 1000) % 60
-	"▶️Playing 🎵$Filename ($($Minutes):$Seconds) ..."
+	"▶️Playing 🎵$Filename ($($Minutes.ToString('00')):$($Seconds.ToString('00'))) ..."
 	$MediaPlayer.Volume = 1
 	$MediaPlayer.play()
 	start-sleep -milliseconds $Milliseconds
