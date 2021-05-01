@@ -11,7 +11,7 @@ try {
 	foreach ($File in (get-childItem -path "$Files" -attributes !Directory)) {
 		if ("$File" -like "*.mp3") {
 			& "$PSScriptRoot/play-mp3.ps1" "$File"
-		} else if ("$File" -like "*.wav") {
+		} elseif ("$File" -like "*.wav") {
 			& "$PSScriptRoot/play-mp3.ps1" "$File"
 		} else {
 			"Skipping $File ..."
