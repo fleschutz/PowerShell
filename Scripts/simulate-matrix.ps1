@@ -11,31 +11,31 @@ try {
 	clear-host
 	foreach($Row in $Table) {
 		for ($i = 0; $i -lt 4; $i++) {
-			write-host -foregroundColor green -noNewline $($Row.A); start-sleep -milliseconds 1
-			write-host -foregroundColor green -noNewline $($Row.B); start-sleep -milliseconds 1
-			write-host -foregroundColor green -noNewline $($Row.C); start-sleep -milliseconds 1
-			write-host -foregroundColor green -noNewline $($Row.D); start-sleep -milliseconds 1
-			write-host -foregroundColor green -noNewline $($Row.E); start-sleep -milliseconds 1
-			write-host -foregroundColor green -noNewline $($Row.F); start-sleep -milliseconds 1
-			write-host -foregroundColor green -noNewline $($Row.G); start-sleep -milliseconds 1
+			write-host -foregroundColor green -noNewline $($Row.A) 
+			write-host -foregroundColor green -noNewline $($Row.B)
+			write-host -foregroundColor green -noNewline $($Row.C)
+			write-host -foregroundColor green -noNewline $($Row.D)
+			write-host -foregroundColor green -noNewline $($Row.E)
+			write-host -foregroundColor green -noNewline $($Row.F)
+			write-host -foregroundColor green -noNewline $($Row.G)
 			write-host -foregroundColor green -noNewline $($Row.H); start-sleep -milliseconds 1
-			write-host -foregroundColor green -noNewline $($Row.I); start-sleep -milliseconds 1
-			write-host -foregroundColor green -noNewline $($Row.J); start-sleep -milliseconds 1
-			write-host -foregroundColor green -noNewline $($Row.K); start-sleep -milliseconds 1
-			write-host -foregroundColor green -noNewline $($Row.L); start-sleep -milliseconds 1
-			write-host -foregroundColor green -noNewline $($Row.M); start-sleep -milliseconds 1
-			write-host -foregroundColor green -noNewline $($Row.N); start-sleep -milliseconds 1
-			write-host -foregroundColor green -noNewline $($Row.O); start-sleep -milliseconds 1
+			write-host -foregroundColor green -noNewline $($Row.I)
+			write-host -foregroundColor green -noNewline $($Row.J)
+			write-host -foregroundColor green -noNewline $($Row.K)
+			write-host -foregroundColor green -noNewline $($Row.L)
+			write-host -foregroundColor green -noNewline $($Row.M)
+			write-host -foregroundColor green -noNewline $($Row.N)
+			write-host -foregroundColor green -noNewline $($Row.O)
 			write-host -foregroundColor green -noNewline $($Row.P); start-sleep -milliseconds 1
-			write-host -foregroundColor green -noNewline $($Row.Q); start-sleep -milliseconds 1
-			write-host -foregroundColor green -noNewline $($Row.R); start-sleep -milliseconds 1
-			write-host -foregroundColor green -noNewline $($Row.S); start-sleep -milliseconds 1
-			write-host -foregroundColor green -noNewline $($Row.T); start-sleep -milliseconds 1
-			write-host -foregroundColor green -noNewline $($Row.U); start-sleep -milliseconds 1
-			write-host -foregroundColor green -noNewline $($Row.V); start-sleep -milliseconds 1
-			write-host -foregroundColor green -noNewline $($Row.W); start-sleep -milliseconds 1
-			write-host -foregroundColor green -noNewline $($Row.X); start-sleep -milliseconds 1
-			write-host -foregroundColor green -noNewline $($Row.Y); start-sleep -milliseconds 1
+			write-host -foregroundColor green -noNewline $($Row.Q)
+			write-host -foregroundColor green -noNewline $($Row.R)
+			write-host -foregroundColor green -noNewline $($Row.S)
+			write-host -foregroundColor green -noNewline $($Row.T)
+			write-host -foregroundColor green -noNewline $($Row.U)
+			write-host -foregroundColor green -noNewline $($Row.V)
+			write-host -foregroundColor green -noNewline $($Row.W)
+			write-host -foregroundColor green -noNewline $($Row.X)
+			write-host -foregroundColor green -noNewline $($Row.Y)
 			write-host -foregroundColor green -noNewline $($Row.Z); start-sleep -milliseconds 1
 		}
 		write-host ""
