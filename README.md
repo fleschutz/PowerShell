@@ -10,6 +10,7 @@ Mega Collection of PowerShell Scripts
 * [convert-txt2wav.ps1](Scripts/convert-txt2wav.ps1) - converts text to a .WAV audio file
 * [mute-audio.ps1](Scripts/mute-audio.ps1) - mutes audio
 * [play-beep.ps1](Scripts/play-beep.ps1) - plays a beep sound
+* [play-files.ps1](Scripts/play-files.ps1) - plays the given audio files
 * [play-mission-impossible.ps1](Scripts/play-mission-impossible.ps1) - plays the Mission Impossible theme
 * [play-m3u.ps1](Scripts/play-m3u.ps1) - plays the given playlist (M3U file format)
 * [play-mp3.ps1](Scripts/play-mp3.ps1) - plays the given sound file (MP3 file format)
