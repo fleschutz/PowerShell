@@ -7,6 +7,7 @@
 
 try {
 	Clear-RecycleBin -Confirm:$false
+	"✔️ recycle bin have been emptied"
 	exit 0
 } catch {
 	write-error "ERROR: line $($_.InvocationInfo.ScriptLineNumber): $($Error[0])"
