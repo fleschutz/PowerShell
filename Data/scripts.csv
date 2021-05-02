@@ -10,6 +10,7 @@ cd-home.ps1, go to the user's home folder
 cd-music.ps1, go to the user's music folder
 cd-onedrive.ps1, go to the user's OneDrive folder
 cd-pics.ps1, go to the user's pictures folder
+cd-recycle-bin.ps1, go to the user's recycle bin folder
 cd-repos.ps1, go to the user's Git repositories folder
 cd-root.ps1, go to the root directory (C: on Windows)
 cd-scripts.ps1, go to the PowerShell Scripts folder

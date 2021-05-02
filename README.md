@@ -99,6 +99,7 @@ Mega Collection of PowerShell Scripts
 * [cd-music.ps1](Scripts/cd-music.ps1) - go to the user's music folder
 * [cd-onedrive.ps1](Scripts/cd-onedrive.ps1) - go to the user's OneDrive folder
 * [cd-pics.ps1](Scripts/cd-pics.ps1) - go to the user's pictures folder
+* [cd-recycle-bin.ps1](Scripts/cd-recycle-bin.ps1) - go to the user's recycle bin folder
 * [cd-repos.ps1](Scripts/cd-repos.ps1) - go to the user's Git repositories folder
 * [cd-root.ps1](Scripts/cd-root.ps1) - go to the root directory (C:\ on Windows)
 * [cd-scripts.ps1](Scripts/cd-scripts.ps1) - go to the PowerShell Scripts folder
