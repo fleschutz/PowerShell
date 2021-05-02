@@ -7,7 +7,7 @@
 
 $TargetDir = resolve-path "$HOME"
 if (-not(test-path "$TargetDir" -pathType container)) {
-	write-warning "Sorry, directory 📂$TargetDir is missing"
+	write-warning "Sorry, there is no folder 📂$TargetDir (yet)"
 	exit 1
 }
 set-location "$TargetDir"
