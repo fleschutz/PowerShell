@@ -38,6 +38,6 @@ try {
 	write-host -foregroundColor green "✔️ closed $FullProgramName, found ($($Processes.Count) process(es)"
 	exit 0
 } catch {
-	write-error "ERROR: line $($_.InvocationInfo.ScriptLineNumber): $($Error[0])"
+	write-error "⚠️ Error in line $($_.InvocationInfo.ScriptLineNumber): $($Error[0])"
 	exit 1
 }

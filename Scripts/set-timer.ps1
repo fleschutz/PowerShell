@@ -17,6 +17,6 @@ try {
 	write-host -foregroundColor green "Done - $Seconds seconds countdown finished"
 	exit 0
 } catch {
-	write-error "ERROR: line $($_.InvocationInfo.ScriptLineNumber): $($Error[0])"
+	write-error "⚠️ Error in line $($_.InvocationInfo.ScriptLineNumber): $($Error[0])"
 	exit 1
 }

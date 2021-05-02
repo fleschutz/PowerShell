@@ -10,6 +10,6 @@ try {
 	& "$PSScriptRoot/speak-english.ps1" "It's now $((Get-Date).ToShortTimeString())"
 	exit 0
 } catch {
-	write-error "ERROR: line $($_.InvocationInfo.ScriptLineNumber): $($Error[0])"
+	write-error "⚠️ Error in line $($_.InvocationInfo.ScriptLineNumber): $($Error[0])"
 	exit 1
 }

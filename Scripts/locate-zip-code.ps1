@@ -33,6 +33,6 @@ try {
 	write-error "Zip-code $ZipCode in country $CountryCode not found"
 	exit 1
 } catch {
-	write-error "ERROR: line $($_.InvocationInfo.ScriptLineNumber): $($Error[0])"
+	write-error "⚠️ Error in line $($_.InvocationInfo.ScriptLineNumber): $($Error[0])"
 	exit 1
 }

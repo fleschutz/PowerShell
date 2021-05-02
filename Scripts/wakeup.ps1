@@ -29,6 +29,6 @@ try {
 	write-host -foregroundColor green "✔️ magic packet $MACaddress sent twice to IP $IPaddress port $Port"
 	exit 0
 } catch {
-	write-error "ERROR: line $($_.InvocationInfo.ScriptLineNumber): $($Error[0])"
+	write-error "⚠️ Error in line $($_.InvocationInfo.ScriptLineNumber): $($Error[0])"
 	exit 1
 }

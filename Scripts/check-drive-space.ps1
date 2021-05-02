@@ -22,6 +22,6 @@ try {
 	"✔️ $Free GB left on drive $Drive ($Used GB of $Total GB used)"
 	exit 0
 } catch {
-	write-error "ERROR: line $($_.InvocationInfo.ScriptLineNumber): $($Error[0])"
+	write-error "⚠️ Error in line $($_.InvocationInfo.ScriptLineNumber): $($Error[0])"
 	exit 1
 }

@@ -30,6 +30,6 @@ try {
 	write-host -foregroundColor green "OK - found $SymlinksTotal symlinks total, $SymlinksBroken symlinks are broken"
 	exit $SymlinksBroken
 } catch {
-	write-error "ERROR: line $($_.InvocationInfo.ScriptLineNumber): $($Error[0])"
+	write-error "⚠️ Error in line $($_.InvocationInfo.ScriptLineNumber): $($Error[0])"
 	exit 1
 }

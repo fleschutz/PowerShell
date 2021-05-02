@@ -16,6 +16,6 @@ try {
 	write-host -foregroundColor green "✔️ Shelly1 device at $Host switched to $TurnMode for $Timer second(s)"
 	exit 0
 } catch {
-	write-error "ERROR: line $($_.InvocationInfo.ScriptLineNumber): $($Error[0])"
+	write-error "⚠️ Error in line $($_.InvocationInfo.ScriptLineNumber): $($Error[0])"
 	exit 1
 }

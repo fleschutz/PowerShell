@@ -31,6 +31,6 @@ try {
 	write-output ""
 	exit 0
 } catch {
-	write-error "⚠️ ERROR: $($Error[0]) (line $($_.InvocationInfo.ScriptLineNumber))"
+	write-error "⚠️ Error in line $($_.InvocationInfo.ScriptLineNumber): $($Error[0])"
 	exit 1
 }
