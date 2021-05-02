@@ -122,6 +122,7 @@ Mega Collection of PowerShell Scripts
 * [list-empty-files.ps1](Scripts/list-empty-files.ps1) - lists empty files within the given directory tree
 * [list-files.ps1](Scripts/list-files.ps1) - lists all files in the given folder and also in every subfolder
 * [list-hidden-files.ps1](Scripts/list-hidden-files.ps1) - lists hidden files within the given directory tree
+* [list-recycle-bin.ps1](Scripts/list-recycle-bin.ps1) - lists the content of the recycle bin folder
 * [list-unused-files.ps1](Scripts/list-unused-files.ps1) - lists unused files in a directory tree
 * [list-workdir.ps1](Scripts/list-workdir.ps1) - lists the current working directory
 * [make-install.ps1](Scripts/make-install.ps1) - installs built executables and libs to the installation directory

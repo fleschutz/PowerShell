@@ -110,6 +110,7 @@ list-processes.ps1, lists the local computer processes
 list-profiles.ps1, lists your PowerShell profiles
 list-random-passwords.ps1, prints a list of random passwords
 list-random-pins.ps1, prints a list of random PIN's
+list-recycle-bin.ps1, lists the content of the recycle bin folder
 list-scripts.ps1, lists all PowerShell scripts in this repository
 list-services.ps1, lists the services on the local computer
 list-sql-tables.ps1, lists the SQL server tables
