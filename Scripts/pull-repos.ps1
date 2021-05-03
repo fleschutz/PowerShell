@@ -18,7 +18,7 @@ try {
 
 	[int]$Count = 0
 	get-childItem $ParentDir -attributes Directory | foreach-object {
-		"⏳ Pulling updates for Git repository 📂$($_.Name) ..."
+		"🢃 Pulling updates for Git repository 📂$($_.Name) ..."
 
 		set-location $_.FullName
 
