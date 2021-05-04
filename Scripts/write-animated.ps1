@@ -5,44 +5,43 @@
 .NOTES        Author: Markus Fleschutz / License: CC0
 #>
 
-param($Line1 = "", $Line2 = "", $Line3 = "", $Line4 = "", $Line5 = "", $Line6 = "", $Line7 = "", $Line8 = "", $Line9 = "", [int]$Speed = 40) # 40 ms pause
+param($Line1 = "", $Line2 = "", $Line3 = "", $Line4 = "", $Line5 = "", $Line6 = "", $Line7 = "", $Line8 = "", $Line9 = "", [int]$Speed = 30) # 30 ms pause
 
 $TerminalWidth = 120 # characters
 
-function WriteAnimatedLine { param([string]$Line, [int]$Speed)
+function WriteLine { param([string]$Line, [int]$Speed)
 	[int]$Start = 1
 	[int]$End = $Line.Length
 	$StartPosition = $HOST.UI.RawUI.CursorPosition
 	$Spaces = "                                                                     "
 
-	if ($Line -ne "") {
-		foreach ($Pos in $Start .. $End) {
-			$TextToDisplay = $Spaces.Substring(0, $TerminalWidth / 2 - $pos / 2) + $Line.Substring(0, $Pos)
-			write-host -nonewline $TextToDisplay
-			start-sleep -milliseconds $Speed
-			$HOST.UI.RawUI.CursorPosition = $StartPosition
-		}
-		write-host ""
+	if ($Line -eq "") { return }
+	foreach ($Pos in $Start .. $End) {
+		$TextToDisplay = $Spaces.Substring(0, $TerminalWidth / 2 - $pos / 2) + $Line.Substring(0, $Pos)
+		write-host -nonewline $TextToDisplay
+		start-sleep -milliseconds $Speed
+		$HOST.UI.RawUI.CursorPosition = $StartPosition
 	}
+	write-host ""
 }
 
 if ($Line1 -eq "") {
 	$Line1 = "Welcome to PowerShell Scripts"
-	$Line2 = ""
+	$Line2 = " "
 	$Line3 = "This repository contains useful and cross-platform PowerShell scripts."
-	$Line4 = "Send your e-mail feedback to: markus@fleschutz.de"
+	$Line4 = " "
 	$Line5 = "Best regards,"
 	$Line6 = "Markus"
 }
 write-host ""
-WriteAnimatedLine $Line1 $Speed
-WriteAnimatedLine $Line2 $Speed
-WriteAnimatedLine $Line3 $Speed
-WriteAnimatedLine $Line4 $Speed
-WriteAnimatedLine $Line5 $Speed
-WriteAnimatedLine $Line6 $Speed
-WriteAnimatedLine $Line7 $Speed
-WriteAnimatedLine $Line8 $Speed
-WriteAnimatedLine $Line9 $Speed
+WriteLine $Line1 $Speed
+WriteLine $Line2 $Speed
+WriteLine $Line3 $Speed
+WriteLine $Line4 $Speed
+WriteLine $Line5 $Speed
+WriteLine $Line6 $Speed
+WriteLine $Line7 $Speed
+WriteLine $Line8 $Speed
+WriteLine $Line9 $Speed
 write-host ""
 exit 0
