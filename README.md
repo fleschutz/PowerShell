@@ -190,8 +190,8 @@ Mega Collection of PowerShell Scripts
 * [list-emojis.ps1](Scripts/list-emojis.ps1) - lists the emojis of Unicode 13.0
 * [list-fritzbox-calls.ps1](Scripts/list-fritzbox-calls.ps1) - lists the FRITZ!Box calls
 * [list-fritzbox-devices.ps1](Scripts/list-fritzbox-devices.ps1) - lists FRITZ!Box's known devices 
-* [list-logbook.ps1](Scripts/list-logbook.ps1) - lists the content of the logbook 
 * [list-earthquakes.ps1](Scripts/list-earthquakes.ps1) - lists earthquakes with magnitude >= 6.0 for the last 30 days
+* [list-memos.ps1](Scripts/list-memos.ps1) - lists the memos at $HOME/Memos.csv
 * [list-mysql-tables.ps1](Scripts/list-mysql-tables.ps1) - lists the MySQL server tables
 * [list-news.ps1](Scripts/list-news.ps1) - lists the latest news
 * [list-os-releases.ps1](Scripts/list-os-releases.ps1) - lists operating system releases and download URL

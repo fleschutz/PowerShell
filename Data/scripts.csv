@@ -98,7 +98,7 @@ list-hidden-files.ps1, lists hidden files within the given directory tree
 list-installed-apps.ps1, lists the installed Windows Store apps
 list-installed-software.ps1, lists the installed software (except Windows Store apps)
 list-latest-tag.ps1, lists the latest tag on the current branch in a Git repository
-list-logbook.ps1, lists the content of the logbook 
+list-memos.ps1, lists the memos at $HOME/Memos.csv
 list-unused-files.ps1, lists unused files in a directory tree
 list-cmdlets.ps1, lists the PowerShell cmdlets
 list-earthquakes.ps1, lists earthquakes with magnitude >= 6.0 for the last 30 days
