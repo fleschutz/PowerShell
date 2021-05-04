@@ -20,10 +20,11 @@ function prompt { write-host -noNewline -foregroundColor yellow "`n➤"; return 
 
 #  My Alias Names (sorted alphabetically)
 #  --------------
-del alias:pwd -force
+del alias:pwd -force -errorAction SilentlyContinue
 set-alias -name pwd -value list-workdir.ps1	# pwd = print working directory
 set-alias -name ll -value get-childitem		# ll = list long
-set-alias -name lsf -value list-dir.ps1		# lsf = list directory formatted
+del alias:ls -force -errorAction SilentlyContinue
+set-alias -name ls -value list-dir.ps1
 set-alias -name mute -value mute-audio.ps1
 set-alias -name unmute -value unmute-audio.ps1
 set-alias -name .. -value cd-up.ps1		# 1 dir level up
