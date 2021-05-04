@@ -21,7 +21,7 @@ try {
 	& "$PSScriptRoot/write-animated.ps1" "Console: Windows Terminal 1.7.1033.0"
 	& "$PSScriptRoot/write-animated.ps1" "Background Image: Asteroid Field by starwars.com"
 	& "$PSScriptRoot/write-animated.ps1" "Shell: PowerShell 5.1 & PowerShell 7.1.3"
-	& "$PSScriptRoot/write-animated.ps1" "Scripts: PowerShell Scripts 2.0"
+	& "$PSScriptRoot/write-animated.ps1" "Scripts: PowerShell Scripts 0.2"
 	& "$PSScriptRoot/write-animated.ps1" "GitHub: github.com/fleschutz/PowerShell"
 	& "$PSScriptRoot/write-animated.ps1" "Git: version 2.30"
 	& "$PSScriptRoot/write-animated.ps1" "SSH: OpenSSH version 7.7p1"
