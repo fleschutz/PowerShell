@@ -173,6 +173,7 @@ Mega Collection of PowerShell Scripts
 
 🛒 Various PowerShell Scripts 
 ------------------------------
+* [add-memo.ps1](Scripts/add-memo.ps1) - adds the given memo text to $HOME/Memos.csv
 * [check-ipv4-address.ps1](Scripts/check-ipv4-address.ps1) - checks the given IPv4 address for validity
 * [check-ipv6-address.ps1](Scripts/check-ipv6-address.ps1) - checks the given IPv6 address for validity
 * [check-mac-address.ps1](Scripts/check-mac-address.ps1) - checks the given MAC address for validity
@@ -224,7 +225,6 @@ Mega Collection of PowerShell Scripts
 * [write-blue.ps1](Scripts/write-blue.ps1) - writes the given text in a blue foreground color
 * [write-braille.ps1](Scripts/write-braille.ps1) - writes the given text in Braille
 * [write-green.ps1](Scripts/write-green.ps1) - writes the given text in a green foreground color
-* [write-logbook.ps1](Scripts/write-logbook.ps1) - writes the given text to the logbook
 * [write-lowercase.ps1](Scripts/write-lowercase.ps1) - writes the given text in lowercase letters
 * [write-marquee.ps1](Scripts/write-marquee.ps1) - writes the given text as marquee
 * [write-morse-code.ps1](Scripts/write-morse-code.ps1) - writes the given text in Morse code
