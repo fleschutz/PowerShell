@@ -16,6 +16,7 @@ try {
 
 	if (-not(test-path "$Path")) {
 		write-output "Time,User,Text" > "$Path"
+	}
 	write-output $Line >> "$Path"
 
 	"✔️ added to 📄$Path"
