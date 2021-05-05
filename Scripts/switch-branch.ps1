@@ -20,8 +20,11 @@ try {
 	if ($lastExitCode -ne "0") { throw "'git status' failed in $RepoDir" }
 	if ("$Result" -notmatch "nothing to commit, working tree clean") { throw "Git repository is NOT clean: $Result" }
 
-	& "$PSScriptRoot/fetch-repo.ps1"
-	if ($lastExitCode -ne "0") { throw "Script 'fetch-repo.ps1' failed" }
+	$RepoDirName = (get-item "$RepoDir").Name
+	"🢃 Fetching updates for Git repository 📂$RepoDirName ..."
+
+	& git fetch --all --recurse-submodules --jobs=4
+	if ($lastExitCode -ne "0") { throw "'git fetch -all --recurse-submodules' failed" }
 
 	& git switch "$BranchName"
 	if ($lastExitCode -ne "0") { throw "'git switch $BranchName' failed" }
@@ -32,7 +35,7 @@ try {
 	& git submodule update --init --recursive
 	if ($lastExitCode -ne "0") { throw "'git submodule update' failed" }
 
-	"✔️ switched Git repository 📂$RepoDir to branch 🌵$BranchName"
+	"✔️ switched to branch '$BranchName'"
 	exit 0
 } catch {
 	write-error "⚠️ Error in line $($_.InvocationInfo.ScriptLineNumber): $($Error[0])"
