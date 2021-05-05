@@ -23,7 +23,7 @@ try {
 
 	[int]$Minutes = $Milliseconds / 60000
 	[int]$Seconds = ($Milliseconds / 1000) % 60
-	"▶️Playing 🎵$Filename ($($Minutes.ToString('00')):$($Seconds.ToString('00'))) ..."
+	"▶️Playing for $($Minutes.ToString('00')):$($Seconds.ToString('00')) sec.: 🎵$Filename ..."
 	$MediaPlayer.Volume = 1
 	$MediaPlayer.play()
 	start-sleep -milliseconds $Milliseconds
