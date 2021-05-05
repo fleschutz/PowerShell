@@ -23,7 +23,7 @@ try {
 	& git submodule foreach --recursive git clean -fdx 
 	if ($lastExitCode -ne "0") { throw "'git clean -fdx' in submodules failed" }
 
-	"✔️ Git repository 📂$RepoDir is clean now"
+	"✔️ cleaned Git repository 📂$RepoDir"
 	exit 0
 } catch {
 	write-error "⚠️ Error in line $($_.InvocationInfo.ScriptLineNumber): $($Error[0])"
