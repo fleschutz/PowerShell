@@ -8,7 +8,7 @@
 param($RSS_URL = "https://yahoo.com/news/rss/world", [int]$MaxCount = 20)
 
 try {
-	[xml]$Content = (invoke-webRequest -URI $RSS_URL).Content
+	[xml]$Content = (invoke-webRequest -URI $RSS_URL -useBasicParsing).Content
 	"`n🌍 $($Content.rss.channel.title) 🌏"
 
 	[int]$Count = 0

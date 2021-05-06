@@ -8,7 +8,7 @@
 param($Location = "") # empty means determine automatically
 
 try {
-	$Weather = (Invoke-WebRequest http://wttr.in/${Location}?format=j1 -UserAgent "curl" ).Content | ConvertFrom-Json
+	$Weather = (Invoke-WebRequest http://wttr.in/${Location}?format=j1 -UserAgent "curl" -useBasicParsing).Content | ConvertFrom-Json
 
 	$Area = $Weather.nearest_area.areaName.value
 	$Region = $Weather.nearest_area.region.value
