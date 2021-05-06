@@ -24,11 +24,14 @@ try {
 	[int]$Minutes = $Milliseconds / 60000
 	[int]$Seconds = ($Milliseconds / 1000) % 60
 	"▶️Playing for $($Minutes.ToString('00')):$($Seconds.ToString('00')) sec.: 🎵$Filename ..."
+	$PreviousTitle = $host.ui.RawUI.WindowTitle 
+	$host.ui.RawUI.WindowTitle = "▶️$Filename"
 	$MediaPlayer.Volume = 1
 	$MediaPlayer.play()
 	start-sleep -milliseconds $Milliseconds
 	$MediaPlayer.stop()
 	$MediaPlayer.close()
+	$host.ui.RawUI.WindowTitle = $PreviousTitle
 
 	exit 0
 } catch {
