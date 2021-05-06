@@ -10,11 +10,11 @@ param($RepoDir = "$PWD")
 try {
 	$StopWatch = [system.diagnostics.stopwatch]::startNew()
 
-	$RepoDir = resolve-path "$RepoDir" 
 	if (-not(test-path "$RepoDir" -pathType container)) { throw "Can't access directory: $RepoDir" }
+	$RepoDirName = (get-item "$RepoDir").Name
 
 	if (test-path "$RepoDir/CMakeLists.txt") { 
-		"⏳ Building 📂$RepoDir using CMakeLists.txt ..."
+		"⏳ Building 📂$RepoDirName using CMakeLists.txt ..."
 		if (-not(test-path "$RepoDir/BuildFiles/" -pathType container)) { 
 			& mkdir "$RepoDir/BuildFiles/"
 		}
@@ -26,10 +26,10 @@ try {
 		& make -j4
 		if ($lastExitCode -ne "0") { throw "Executing 'make -j4' has failed" }
 
-		set-location ".."
+		set-location ..
 
-	} elseif (test-path "$RepoDir/configure") { 
-		"⏳ Building 📂$RepoDir using 'configure' ..."
+	} elseif (test-path "$RepoDirName/configure") { 
+		"⏳ Building 📂$RepoDirName using 'configure' ..."
 		set-location "$RepoDir/"
 
 		& ./configure
@@ -39,7 +39,7 @@ try {
 		if ($lastExitCode -ne "0") { throw "Executing 'make -j4' has failed" }
 
 	} elseif (test-path "$RepoDir/autogen.sh") { 
-		"⏳ Building 📂$RepoDir using 'autogen.sh' ..."
+		"⏳ Building 📂$RepoDirName using 'autogen.sh' ..."
 		set-location "$RepoDir/"
 
 		& ./autogen.sh
@@ -49,7 +49,7 @@ try {
 		if ($lastExitCode -ne "0") { throw "Executing 'make -j4' has failed" }
 
 	} elseif (test-path "$RepoDir/Imakefile") {
-		"⏳ Building 📂$RepoDir using Imakefile ..."
+		"⏳ Building 📂$RepoDirName using Imakefile ..."
 		set-location "$RepoDir/"
 
 		& xmkmf 
@@ -59,26 +59,26 @@ try {
 		if ($lastExitCode -ne "0") { throw "Executing 'make -j4' has failed" }
 
 	} elseif (test-path "$RepoDir/Makefile") {
-		"⏳ Building 📂$RepoDir using Makefile..."
+		"⏳ Building 📂$RepoDirName using Makefile..."
 		set-location "$RepoDir/"
 
 		& make -j4
 		if ($lastExitCode -ne "0") { throw "Executing 'make -j4' has failed" }
 
 	} elseif (test-path "$RepoDir/attower/src/build/DevBuild/build.bat") {
-		"⏳ Building 📂$RepoDir using build.bat ..."
+		"⏳ Building 📂$RepoDirName using build.bat ..."
 		set-location "$RepoDir/attower/src/build/DevBuild/"
 
 		& ./build.bat build-all-release
 		if ($lastExitCode -ne "0") { throw "Script 'build.bat' returned error(s)" }
 
 	} else {
-		write-warning "Sorry, no rule found to build 📂$RepoDir"
+		write-warning "Sorry, no rule found to build 📂$RepoDirName"
 		exit 0
 	}
 
 	[int]$Elapsed = $StopWatch.Elapsed.TotalSeconds
-	"✔️ built Git repository 📂$RepoDir in $Elapsed sec."
+	"✔️ built Git repository 📂$RepoDirName in $Elapsed sec."
 	exit 0
 } catch {
 	write-error "⚠️ Error in line $($_.InvocationInfo.ScriptLineNumber): $($Error[0])"
