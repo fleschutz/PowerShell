@@ -14,6 +14,9 @@ try {
 	$Null = (git --version)
 	if ($lastExitCode -ne "0") { throw "Can't execute 'git' - make sure Git is installed and available" }
 
+	& git fetch
+	if ($lastExitCode -ne "0") { throw "'git fetch' failed" }
+
 	& git submodule
 	if ($lastExitCode -ne "0") { throw "'git submodule' failed" }
 

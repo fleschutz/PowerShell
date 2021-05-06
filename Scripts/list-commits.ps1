@@ -14,8 +14,8 @@ try {
 	$Null = (git --version)
 	if ($lastExitCode -ne "0") { throw "Can't execute 'git' - make sure Git is installed and available" }
 
-	& "$PSScriptRoot/fetch-repo.ps1"
-	if ($lastExitCode -ne "0") { throw "Script 'fetch-repo.ps1' failed" }
+	& git fetch
+	if ($lastExitCode -ne "0") { throw "'git fetch' failed" }
 
 	write-output ""
 	write-output "List of Git Commits"
