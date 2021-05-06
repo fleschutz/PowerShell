@@ -143,6 +143,7 @@ Mega Collection of PowerShell Scripts
 * [build-repos.ps1](Scripts/build-repos.ps1) - builds all Git repositories under the current/given directory
 * [cherry-picker.ps1](Scripts/cherry-picker.ps1) - cherry-picks a Git commit into multiple branches
 * [clean-repo.ps1](Scripts/clean-repo.ps1) - cleans the current/given Git repository from untracked files (including submodules)
+* [clean-repos.ps1](Scripts/clean-repos.ps1) - cleans all Git repositories under the current/given directory from untracked files (including submodules)
 * [clone-repos.ps1](Scripts/clone-repos.ps1) - clones well-known Git repositories
 * [configure-git.ps1](Scripts/configure-git.ps1) - sets up the Git user configuration
 * [create-branch.ps1](Scripts/create-branch.ps1) - creates a new branch in the current/given Git repository 
