@@ -152,6 +152,7 @@ Mega Collection of PowerShell Scripts
 * [list-branches.ps1](Scripts/list-branches.ps1) - lists all branches in the current/given Git repository 
 * [list-commits.ps1](Scripts/list-commits.ps1) - lists all commits in the current/given Git repository 
 * [list-latest-tag.ps1](Scripts/list-latest-tag.ps1) - lists the latest tag on the current branch in a Git repository
+* [list-submodules.ps1](Scripts/list-submodules.ps1) - lists the submodules of the current/given Git repository 
 * [list-tags.ps1](Scripts/list-tags.ps1) - lists all tags in the current/given Git repository 
 * [pull-repo.ps1](Scripts/pull-repo.ps1) - pulls updates for the current/given Git repository (including submodules)
 * [pull-repos.ps1](Scripts/pull-repos.ps1) - pulls updates for all Git repositories under the current/given directory (including submodules)

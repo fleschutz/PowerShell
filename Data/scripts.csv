@@ -117,6 +117,7 @@ list-recycle-bin.ps1, lists the content of the recycle bin folder
 list-scripts.ps1, lists all PowerShell scripts in this repository
 list-services.ps1, lists the services on the local computer
 list-sql-tables.ps1, lists the SQL server tables
+list-submodules.ps1, lists the submodules of the current/given Git repository
 list-system-info.ps1, lists system information on the local computer
 list-tags.ps1, lists all tags in the current/given Git repository 
 list-tasks.ps1, lists all Windows scheduler tasks
