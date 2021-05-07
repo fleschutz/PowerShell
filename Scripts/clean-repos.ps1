@@ -16,7 +16,8 @@ try {
 	if ($lastExitCode -ne "0") { throw "Can't execute 'git' - make sure Git is installed and available" }
 
 	$Folders = (get-childItem "$ParentDir" -attributes Directory)
-	"Cleaning $($Folders.Count) Git repositories from untracked files ..."
+	$ParentDirName = (get-item "$ParentDir").Name
+	"Cleaning $($Folders.Count) Git repositories at 📂$ParentDirName from untracked files ..."
 
 	foreach ($Folder in $Folders) {
 		$FolderName = (get-item "$Folder").Name
@@ -30,7 +31,7 @@ try {
 	}
 
 	[int]$Elapsed = $StopWatch.Elapsed.TotalSeconds
-	"✔️ cleaned $($Folders.Count) Git repositories at $ParentDir in $Elapsed sec."
+	"✔️ cleaned $($Folders.Count) Git repositories at 📂$ParentDirName in $Elapsed sec."
 
 	exit 0
 } catch {
