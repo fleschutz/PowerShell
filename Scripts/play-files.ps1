@@ -1,14 +1,16 @@
 ﻿<#
-.SYNTAX       play-files.ps1 [<file(s)>]
+.SYNTAX       play-files.ps1 [<pattern>]
 .DESCRIPTION  plays the given audio files (supporting MP3 and WAV format)
 .LINK         https://github.com/fleschutz/PowerShell
 .NOTES        Author: Markus Fleschutz / License: CC0
 #>
 
-param($Files = "*")
+param($Pattern = "*")
 
 try {
-	foreach ($File in (get-childItem -path "$Files" -attributes !Directory)) {
+	$Files = (get-childItem -path "$Pattern" -attributes !Directory)
+	"Playing $($Files.Count) files ..."
+	foreach ($File in $Files) {
 		if ("$File" -like "*.mp3") {
 			& "$PSScriptRoot/play-mp3.ps1" "$File"
 		} elseif ("$File" -like "*.wav") {

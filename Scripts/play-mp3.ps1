@@ -23,9 +23,9 @@ try {
 
 	[int]$Minutes = $Milliseconds / 60000
 	[int]$Seconds = ($Milliseconds / 1000) % 60
-	"▶️Playing for $($Minutes.ToString('00')):$($Seconds.ToString('00')) sec.: 🎵$Filename ..."
+	"▶️ Playing 🎵$Filename ($($Minutes.ToString('00')):$($Seconds.ToString('00')) sec.) ..."
 	$PreviousTitle = $host.ui.RawUI.WindowTitle 
-	$host.ui.RawUI.WindowTitle = "▶️$Filename"
+	$host.ui.RawUI.WindowTitle = "▶️ $Filename"
 	$MediaPlayer.Volume = 1
 	$MediaPlayer.play()
 	start-sleep -milliseconds $Milliseconds
