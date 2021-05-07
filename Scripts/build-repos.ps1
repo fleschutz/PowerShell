@@ -11,16 +11,17 @@ try {
 	$StopWatch = [system.diagnostics.stopwatch]::startNew()
 
 	if (-not(test-path "$ParentDir" -pathType container)) { throw "Can't access directory: $ParentDir" }
-	set-location $ParentDir
 
-	[int]$Count = 0
-	get-childItem $ParentDir -attributes Directory | foreach-object {
-		& "$PSScriptRoot/build-repo.ps1" "$($_.FullName)"
-		$Count++
+	$Folders = (get-childItem "$ParentDir" -attributes Directory)
+	$ParentDirName = (get-item "$ParentDir").Name
+	"Building $($Folders.Count) Git repositories at 📂$ParentDirName..."
+
+	foreach ($Folder in $Folders) {
+		& "$PSScriptRoot/build-repo.ps1" "$Folder"
 	}
 
 	[int]$Elapsed = $StopWatch.Elapsed.TotalSeconds
-	write-host -foregroundColor green "✔️ built $Count Git repositories at $ParentDir in $Elapsed sec."
+	"✔️ built $($Folders.Count) Git repositories at 📂$ParentDirName in $Elapsed sec."
 	exit 0
 } catch {
 	write-error "⚠️ Error in line $($_.InvocationInfo.ScriptLineNumber): $($Error[0])"
