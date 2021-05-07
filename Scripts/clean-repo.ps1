@@ -8,22 +8,21 @@
 param($RepoDir = "$PWD")
 
 try {
-	$RepoDir = resolve-path "$RepoDir"
 	if (-not(test-path "$RepoDir" -pathType container)) { throw "Can't access directory: $RepoDir" }
-	set-location "$RepoDir"
-	
-	"⏳ Cleaning Git repository 📂$RepoDir from untracked files..."
+	$RepoDirName = (get-item "$RepoDir").Name
+
+	"🧹 Cleaning Git repository 📂$RepoDirName from untracked files..."
 
 	$Null = (git --version)
 	if ($lastExitCode -ne "0") { throw "Can't execute 'git' - make sure Git is installed and available" }
 	
-	& git clean -fdx # force + recurse into dirs + don't use the standard ignore rules
+	& git -C "$RepoDir" clean -fdx # force + recurse into dirs + don't use the standard ignore rules
 	if ($lastExitCode -ne "0") { throw "'git clean -fdx' failed" }
 
-	& git submodule foreach --recursive git clean -fdx 
+	& git -C "$RepoDir" submodule foreach --recursive git clean -fdx 
 	if ($lastExitCode -ne "0") { throw "'git clean -fdx' in submodules failed" }
 
-	"✔️ cleaned Git repository 📂$RepoDir"
+	"✔️ cleaned Git repository 📂$RepoDirName"
 	exit 0
 } catch {
 	write-error "⚠️ Error in line $($_.InvocationInfo.ScriptLineNumber): $($Error[0])"
