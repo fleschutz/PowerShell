@@ -11,27 +11,26 @@ try {
 	$StopWatch = [system.diagnostics.stopwatch]::startNew()
 
 	if (-not(test-path "$ParentDir" -pathType container)) { throw "Can't access directory: $ParentDir" }
-	set-location "$ParentDir"
 
 	$Null = (git --version)
 	if ($lastExitCode -ne "0") { throw "Can't execute 'git' - make sure Git is installed and available" }
 
-	[int]$Count = 0
-	get-childItem $ParentDir -attributes Directory | foreach-object {
-		"🢃 Pulling updates for Git repository 📂$($_.Name) ..."
+	$Folders = (get-childItem "$ParentDir" -attributes Directory)
+	$ParentDirName = (get-item "$ParentDir").Name
+	"Pulling updates for $($Folders.Count) Git repositories at 📂$ParentDirName ..."
 
-		set-location $_.FullName
+	foreach ($Folder in $Folders) {
+		$FolderName = (get-item "$Folder").Name
+		"🢃 Pulling 📂$FolderName ..."
 
-		& git pull --recurse-submodules --jobs=4
-		if ($lastExitCode -ne "0") { throw "'git pull' failed" }
-
-		set-location ..
-		$Count++
+		& git -C "$Folder" pull --recurse-submodules --jobs=4
+		if ($lastExitCode -ne "0") {
+			write-warning "'git pull' on 📂$FolderName failed"
+		}
 	}
 
-	$ParentDirName = (get-item "$ParentDir").Name
 	[int]$Elapsed = $StopWatch.Elapsed.TotalSeconds
-	"✔️ updated $Count Git repositories at 📂$ParentDirName in $Elapsed sec."
+	"✔️ updated $($Folders.Count) Git repositories at 📂$ParentDirName in $Elapsed sec."
 	exit 0
 } catch {
 	write-error "⚠️ Error in line $($_.InvocationInfo.ScriptLineNumber): $($Error[0])"
