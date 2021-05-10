@@ -14,15 +14,13 @@ function MakeDir { param($Path)
 		if (-not(test-path "$Path/BuildFiles/" -pathType container)) { 
 			& mkdir "$Path/BuildFiles/"
 		}
-
 		set-location "$Path/BuildFiles/"
+
 		& cmake ..
 		if ($lastExitCode -ne "0") { throw "Executing 'cmake ..' has failed" }
 
 		& make -j4
 		if ($lastExitCode -ne "0") { throw "Executing 'make -j4' has failed" }
-
-		set-location ..
 
 	} elseif (test-path "$Path/configure") { 
 		"⏳ Building 📂$DirName using 'configure' ..."
@@ -43,6 +41,16 @@ function MakeDir { param($Path)
 
 		& make -j4
 		if ($lastExitCode -ne "0") { throw "Executing 'make -j4' has failed" }
+
+	} elseif (test-path "$Path/build.gradle") {
+		"⏳ Building 📂$DirName using build.gradle ..."
+		set-location "$Path"
+
+		& gradle build
+		if ($lastExitCode -ne "0") { throw "'gradle build' has failed" }
+
+		& gradle test
+		if ($lastExitCode -ne "0") { throw "'gradle test' has failed" }
 
 	} elseif (test-path "$Path/Imakefile") {
 		"⏳ Building 📂$DirName using Imakefile ..."
@@ -72,7 +80,7 @@ function MakeDir { param($Path)
 		"⏳ No make rule found, but trying the subdirectory 📂$DirName ..."
 		MakeDir "$Path/$DirName"
 	} else {
-		write-warning "Sorry, no make rule found in 📂$DirName"
+		write-warning "Sorry, no make rule applies to: 📂$DirName"
 		exit 0
 	}
 }
@@ -83,7 +91,9 @@ try {
 	if (-not(test-path "$RepoDir" -pathType container)) { throw "Can't access directory: $RepoDir" }
 	$RepoDirName = (get-item "$RepoDir").Name
 
+	$PreviousPath = get-location
 	MakeDir "$RepoDir"
+	set-location "$PreviousPath"
 
 	[int]$Elapsed = $StopWatch.Elapsed.TotalSeconds
 	"✔️ built Git repository 📂$RepoDirName in $Elapsed sec."
