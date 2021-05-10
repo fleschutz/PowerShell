@@ -1,14 +1,14 @@
 ﻿<#
-.SYNTAX       list-dir.ps1 [<directory>]
+.SYNTAX       list-dir.ps1 [<pattern>]
 .DESCRIPTION  lists the directory content formatted in columns
 .LINK         https://github.com/fleschutz/PowerShell
 .NOTES        Author: Markus Fleschutz / License: CC0
 #>
 
-param($Directory = "$PWD")
+param($Pattern = "*")
 
-function ListDir { param([string]$Path)
-	$Items = get-childItem -path $Path
+function ListDir { param([string]$Pattern)
+	$Items = get-childItem -path "$Pattern"
 	foreach ($Item in $Items) {
 		$Name = $Item.Name
 		if ($Name[0] -eq '.') { continue } # hidden file/dir
@@ -22,7 +22,7 @@ function ListDir { param([string]$Path)
 }
 
 try {
-	ListDir $Directory | format-wide -autoSize
+	ListDir $Pattern | format-wide -autoSize
 	exit 0
 } catch {
 	write-error "⚠️ Error in line $($_.InvocationInfo.ScriptLineNumber): $($Error[0])"
