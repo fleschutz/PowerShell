@@ -9,27 +9,26 @@ param($RepoDir = "$PWD", $Pattern = "*")
 
 try {
 	if (-not(test-path "$RepoDir" -pathType container)) { throw "Can't access directory: $RepoDir" }
-	set-location "$RepoDir"
 
 	$Null = (git --version)
 	if ($lastExitCode -ne "0") { throw "Can't execute 'git' - make sure Git is installed and available" }
 
-	& "$PSScriptRoot/fetch-repo.ps1"
-	if ($lastExitCode -ne "0") { throw "Script 'fetch-repo.ps1' failed" }
+	& git -C "$RepoDir" fetch 
+	if ($lastExitCode -ne "0") { throw "'git fetch' failed" }
 
-	write-output ""
-	write-output "List of Git Branches"
-	write-output "--------------------"
-	$Branches = $(git branch --list --remotes --no-color --no-column)
+	$Branches = $(git -C "$RepoDir" branch --list --remotes --no-color --no-column)
 	if ($lastExitCode -ne "0") { throw "'git branch --list' failed" }
 
+	""
+	"List of Git Branches"
+	"--------------------"
 	foreach($Branch in $Branches) {
 		if ("$Branch" -match "origin/HEAD") { continue }
 		$BranchName = $Branch.substring(9)
 		if ("$BranchName" -notlike "$Pattern") { continue }
-		write-output "$BranchName"
+		"$BranchName"
 	}
-	write-output ""
+	""
 	exit 0
 } catch {
 	write-error "⚠️ Error in line $($_.InvocationInfo.ScriptLineNumber): $($Error[0])"
