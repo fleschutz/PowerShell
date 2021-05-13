@@ -23,7 +23,8 @@ try {
 			"$Time $User    $Text"
 		}
 	} else {
-		"Sorry, no $Path file found"
+		"Sorry, no memos saved yet"
+		exit 1
 	}
 	exit 0
 } catch {

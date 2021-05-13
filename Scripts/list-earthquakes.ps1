@@ -13,12 +13,12 @@ function ListEarthquakes {
 	write-progress "Loading data ..."
 	$Earthquakes = (Invoke-WebRequest -Uri "https://earthquake.usgs.gov/fdsnws/event/1/query?format=$Format&minmagnitude=$MinMagnitude&orderby=$OrderBy" -UserAgent "curl" ).Content | ConvertFrom-CSV
 	foreach ($Quake in $Earthquakes) {
-		new-object PSObject -Property @{ Magnitude=$Quake.mag; Depth=$Quake.depth; Place=$Quake.place; Time=$Quake.time }
+		new-object PSObject -Property @{ Mag=$Quake.mag; Depth=$Quake.depth; Location=$Quake.place; Time=$Quake.time }
 	}
 }
  
 try {
-	ListEarthquakes | format-table -autoSize -property Magnitude,Depth,Place,Time
+	ListEarthquakes | format-table -property Mag,Location,Depth,Time -autoSize
 	exit 0
 } catch {
 	write-error "⚠️ Error in line $($_.InvocationInfo.ScriptLineNumber): $($Error[0])"
