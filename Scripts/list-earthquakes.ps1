@@ -11,7 +11,7 @@ $OrderBy="magnitude" # time, time-asc, magnitude, magnitude-asc
 
 function ListEarthquakes { 
 	write-progress "Loading data ..."
-	$Earthquakes = (Invoke-WebRequest -Uri "https://earthquake.usgs.gov/fdsnws/event/1/query?format=$Format&minmagnitude=$MinMagnitude&orderby=$OrderBy" -UserAgent "curl" ).Content | ConvertFrom-CSV
+	$Earthquakes = (invoke-webRequest -uri "https://earthquake.usgs.gov/fdsnws/event/1/query?format=$Format&minmagnitude=$MinMagnitude&orderby=$OrderBy" -userAgent "curl" -useBasicParsing).Content | ConvertFrom-CSV
 	foreach ($Quake in $Earthquakes) {
 		new-object PSObject -Property @{ Mag=$Quake.mag; Depth=$Quake.depth; Location=$Quake.place; Time=$Quake.time }
 	}
