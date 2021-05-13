@@ -6,7 +6,7 @@
 #>
 
 function AddItem { param([string]$Variable, [string]$Content)
-	New-Object PSObject -Property @{ 'Variable' = "$Variable"; 'Content' = "$Content" }
+	new-object PSObject -property @{ 'Variable' = "$Variable"; 'Content' = "$Content" }
 }
 
 function ListAutomaticVariables {
@@ -62,10 +62,7 @@ function ListAutomaticVariables {
 }
 
 try {
-	$Vars = ListAutomaticVariables
-	$Vars | format-table -property Variable,Content
-	
-	write-host -foregroundColor green "OK - $($Vars.Count) PowerShell automatic variables total"
+	ListAutomaticVariables | format-table -property Variable,Content
 	exit 0
 } catch {
 	write-error "⚠️ Error in line $($_.InvocationInfo.ScriptLineNumber): $($Error[0])"
