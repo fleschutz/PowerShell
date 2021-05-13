@@ -3,6 +3,7 @@ URL,Directory
 "https://github.com/commonmark/cmark", "cmark"
 "https://github.com/elastic/elasticsearch", "elasticsearch"
 "https://github.com/fleschutz/CWTS", "CWTS"
+"https://github.com/fleschutz/OSMA", "OSMA"
 "https://github.com/fleschutz/PowerShell", "PowerShell"
 "https://github.com/fleschutz/LSS", "LSS"
 "https://github.com/fleschutz/base256unicode", "base256unicode"
