@@ -18,7 +18,7 @@ function ListEarthquakes {
 }
  
 try {
-	ListEarthquakes | format-table -property Mag,Location,Depth,Time -autoSize
+	ListEarthquakes | format-table -property @{e='Mag';width=5},@{e='Location';width=42},@{e='Depth';width=6},Time 
 	exit 0
 } catch {
 	write-error "⚠️ Error in line $($_.InvocationInfo.ScriptLineNumber): $($Error[0])"
