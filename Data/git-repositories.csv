@@ -9,6 +9,7 @@ URL,Directory
 "https://github.com/fleschutz/base256unicode", "base256unicode"
 "https://github.com/grafana/grafana", "grafana"
 "https://github.com/llvm/llvm-project", "llvm"
+"https://github.com/protocolbuffers/protobuf", "protobuf"
 "https://github.com/smartmontools/smartmontools", "smartmontools"
 "https://github.com/synesthesiam/voice2json", "voice2json"
 "https://github.com/tensorflow/tensorflow", "tensorflow"

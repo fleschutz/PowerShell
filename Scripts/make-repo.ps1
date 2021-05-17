@@ -10,7 +10,7 @@ param($RepoDir = "$PWD")
 function MakeDir { param($Path)
 	$DirName = (get-item "$Path").Name
 	if (test-path "$Path/CMakeLists.txt") {
-		"⏳ Building 📂$DirName using CMakeLists.txt ..."
+		"⏳ Building 📂$DirName using CMakeLists.txt..."
 		if (-not(test-path "$Path/BuildFiles/" -pathType container)) { 
 			& mkdir "$Path/BuildFiles/"
 		}
@@ -23,7 +23,7 @@ function MakeDir { param($Path)
 		if ($lastExitCode -ne "0") { throw "Executing 'make -j4' has failed" }
 
 	} elseif (test-path "$Path/configure") { 
-		"⏳ Building 📂$DirName using 'configure' ..."
+		"⏳ Building 📂$DirName using 'configure'..."
 		set-location "$Path/"
 
 		& ./configure
@@ -33,7 +33,7 @@ function MakeDir { param($Path)
 		if ($lastExitCode -ne "0") { throw "Executing 'make -j4' has failed" }
 
 	} elseif (test-path "$Path/autogen.sh") { 
-		"⏳ Building 📂$DirName using 'autogen.sh' ..."
+		"⏳ Building 📂$DirName using 'autogen.sh'..."
 		set-location "$Path/"
 
 		& ./autogen.sh
@@ -43,7 +43,7 @@ function MakeDir { param($Path)
 		if ($lastExitCode -ne "0") { throw "Executing 'make -j4' has failed" }
 
 	} elseif (test-path "$Path/build.gradle") {
-		"⏳ Building 📂$DirName using build.gradle ..."
+		"⏳ Building 📂$DirName using build.gradle..."
 		set-location "$Path"
 
 		& gradle build
@@ -53,7 +53,7 @@ function MakeDir { param($Path)
 		if ($lastExitCode -ne "0") { throw "'gradle test' has failed" }
 
 	} elseif (test-path "$Path/Imakefile") {
-		"⏳ Building 📂$DirName using Imakefile ..."
+		"⏳ Building 📂$DirName using Imakefile..."
 		set-location "$RepoDir/"
 
 		& xmkmf 
@@ -77,7 +77,7 @@ function MakeDir { param($Path)
 		if ($lastExitCode -ne "0") { throw "Script 'build.bat' returned error(s)" }
 
 	} elseif (test-path "$Path/$DirName" -pathType container) {
-		"⏳ No make rule found, but trying the subdirectory 📂$DirName ..."
+		"⏳ No make rule found, trying subfolder 📂$($DirName)..."
 		MakeDir "$Path/$DirName"
 	} else {
 		write-warning "Sorry, no make rule applies to: 📂$DirName"
