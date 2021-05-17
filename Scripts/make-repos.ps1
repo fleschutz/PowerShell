@@ -1,5 +1,5 @@
 ﻿<#
-.SYNTAX       build-repos.ps1 [<parent-dir>]
+.SYNTAX       make-repos.ps1 [<parent-dir>]
 .DESCRIPTION  builds all Git repositories under the current/given directory
 .LINK         https://github.com/fleschutz/PowerShell
 .NOTES        Author: Markus Fleschutz / License: CC0
@@ -17,7 +17,7 @@ try {
 	"Building $($Folders.Count) Git repositories at 📂$ParentDirName..."
 
 	foreach ($Folder in $Folders) {
-		& "$PSScriptRoot/build-repo.ps1" "$Folder"
+		& "$PSScriptRoot/make-repo.ps1" "$Folder"
 	}
 
 	[int]$Elapsed = $StopWatch.Elapsed.TotalSeconds

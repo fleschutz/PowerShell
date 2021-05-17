@@ -139,8 +139,6 @@ Mega Collection of PowerShell Scripts
 
 📝 PowerShell Scripts for Git
 ------------------------------
-* [build-repo.ps1](Scripts/build-repo.ps1) - builds the current/given Git repository 
-* [build-repos.ps1](Scripts/build-repos.ps1) - builds all Git repositories under the current/given directory
 * [cherry-picker.ps1](Scripts/cherry-picker.ps1) - cherry-picks a Git commit into multiple branches
 * [clean-repo.ps1](Scripts/clean-repo.ps1) - cleans the current/given Git repository from untracked files (including submodules)
 * [clean-repos.ps1](Scripts/clean-repos.ps1) - cleans all Git repositories under the current/given directory from untracked files (including submodules)
@@ -155,6 +153,8 @@ Mega Collection of PowerShell Scripts
 * [list-latest-tag.ps1](Scripts/list-latest-tag.ps1) - lists the latest tag on the current branch in a Git repository
 * [list-submodules.ps1](Scripts/list-submodules.ps1) - lists the submodules of the current/given Git repository 
 * [list-tags.ps1](Scripts/list-tags.ps1) - lists all tags in the current/given Git repository 
+* [make-repo.ps1](Scripts/make-repo.ps1) - builds the current/given Git repository 
+* [make-repos.ps1](Scripts/make-repos.ps1) - builds all Git repositories under the current/given directory
 * [pull-repo.ps1](Scripts/pull-repo.ps1) - pulls updates for the current/given Git repository (including submodules)
 * [pull-repos.ps1](Scripts/pull-repos.ps1) - pulls updates for all Git repositories under the current/given directory (including submodules)
 * [switch-branch.ps1](Scripts/switch-branch.ps1) - switches the branch in the current/given Git repository (including submodules)

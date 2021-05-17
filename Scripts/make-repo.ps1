@@ -1,6 +1,6 @@
 ﻿<#
-.SYNTAX       build-repo.ps1 [<repo-dir>]
-.DESCRIPTION  builds a Git repository (supporting cmake,configure,autogen,Imakefile,Makefile)
+.SYNTAX       make-repo.ps1 [<repo-dir>]
+.DESCRIPTION  builds a Git repository supporting cmake,configure,autogen,Imakefile,Makefile
 .LINK         https://github.com/fleschutz/PowerShell
 .NOTES        Author: Markus Fleschutz / License: CC0
 #>

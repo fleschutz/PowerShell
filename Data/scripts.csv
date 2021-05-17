@@ -1,8 +1,6 @@
 Script,Description
 add-firewall-rules.ps1, adds firewall rules to the given executables (needs admin rights)
 add-memo.ps1, adds the given memo text to $HOME/Memos.csv
-build-repo.ps1, builds the current/given Git repository 
-build-repos.ps1, builds all Git repositories under the current/given directory
 cd-desktop.ps1, go to the user's desktop folder
 cd-docs.ps1, go to the user's documents folder
 cd-downloads.ps1, go to the user's downloads folder
@@ -132,6 +130,8 @@ locate-ipaddress.ps1, prints the geographic location of the given IP address
 locate-zip-code.ps1, prints the geographic location of the given zip-code
 MD5.ps1, prints the MD5 checksum of the given file
 make-install.ps1, installs built executables and libs to the installation directory
+make-repo.ps1, builds the current/given Git repository 
+make-repos.ps1, builds all Git repositories under the current/given directory
 moon.ps1, prints the current moon phase
 mute-audio.ps1, mutes audio
 next-joke.ps1], gets the next random Juck Norris joke

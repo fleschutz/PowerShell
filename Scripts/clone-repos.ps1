@@ -22,10 +22,10 @@ try {
 		$URL = $Row.URL
 		$DirName = $Row.Directory
 		if (test-path "$ParentDir/$DirName" -pathType container) {
-			"Skipping 📂$DirName because it exists already ..."
+			"Skipping 📂$DirName (exists already)..."
 			continue
 		}
-		"⏳ Cloning $URL to 📂$DirName ..."
+		"⏳ Cloning $URL to 📂$($DirName)..."
 		& git clone --recurse-submodules "$URL" "$ParentDir/$DirName"
 		if ($lastExitCode -ne "0") { throw "'git clone $URL' failed" }
 		$Count++
