@@ -1,4 +1,4 @@
-<#
+﻿<#
 .SYNTAX       what-is.ps1 [<abbreviation>]
 .DESCRIPTION  prints a description of the given abbreviation
 .LINK         https://github.com/fleschutz/PowerShell
