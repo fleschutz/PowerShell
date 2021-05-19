@@ -15,7 +15,7 @@ try {
 	$Table = import-csv "$PSScriptRoot/../Data/Abbr/Aviation.csv"
 	foreach($Row in $Table) {
 		if ($Row.Abbr -eq $Abbreviation) {
-			"Aviation: $($Row.Description)"
+			"  → $($Row.Description) (in aviation)"
 			$FoundOne = 1
 		}
 	}
@@ -23,7 +23,7 @@ try {
 	$Table = import-csv "$PSScriptRoot/../Data/Abbr/Misc.csv"
 	foreach($Row in $Table) {
 		if ($Row.Abbr -eq $Abbreviation) {
-			"Misc: $($Row.Description)"
+			"  → $($Row.Description) (in misc)"
 			$FoundOne = 1
 		}
 	}
