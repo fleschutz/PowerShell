@@ -8,6 +8,8 @@
 param($RepoDir = "$PWD")
 
 try {
+	$StopWatch = [system.diagnostics.stopwatch]::startNew()
+
 	if (-not(test-path "$RepoDir" -pathType container)) { throw "Can't access directory: $RepoDir" }
 	$RepoDirName = (get-item "$RepoDir").Name
 
@@ -22,7 +24,8 @@ try {
 	& git -C "$RepoDir" submodule foreach --recursive git clean -fdx 
 	if ($lastExitCode -ne "0") { throw "'git clean -fdx' in submodules failed" }
 
-	"✔️ cleaned Git repository 📂$RepoDirName"
+	[int]$Elapsed = $StopWatch.Elapsed.TotalSeconds
+	"✔️ cleaned Git repository 📂$RepoDirName in $Elapsed sec."
 	exit 0
 } catch {
 	write-error "⚠️ Error in line $($_.InvocationInfo.ScriptLineNumber): $($Error[0])"
