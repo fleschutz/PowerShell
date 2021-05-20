@@ -10,8 +10,9 @@ try {
 		[int]$IntTemp = get-content "/sys/class/thermal/thermal_zone0/temp"
 		$Temp = [math]::round($IntTemp / 1000.0, 1)
 	} else {
-		write-warning "Sorry, no CPU temperature available"
-		exit 0
+		$data = Get-WMIObject -Query "SELECT * FROM Win32_PerfFormattedData_Counters_ThermalZoneInformation" -Namespace "root/CIMV2"
+		$Temp = @($data)[0].HighPrecisionTemperature
+		$Temp = [math]::round($Temp / 1000.0, 1)
 	}
 
 	if ($Temp -gt "80") {
