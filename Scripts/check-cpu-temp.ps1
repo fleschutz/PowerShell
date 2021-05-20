@@ -12,7 +12,7 @@ try {
 	} else {
 		$data = Get-WMIObject -Query "SELECT * FROM Win32_PerfFormattedData_Counters_ThermalZoneInformation" -Namespace "root/CIMV2"
 		$Temp = @($data)[0].HighPrecisionTemperature
-		$Temp = [math]::round($Temp / 1000.0, 1)
+		$Temp = [math]::round($Temp / 100.0, 1)
 	}
 
 	if ($Temp -gt "80") {
