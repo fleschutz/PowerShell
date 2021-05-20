@@ -10,27 +10,22 @@ if ($Abbreviation -eq "" ) { $Abbreviation = read-host "Enter the abbreviation" 
 
 try {
 	write-progress "Searching ..."
-	$FoundOne = 0
 
-	$Table = import-csv "$PSScriptRoot/../Data/Abbr/Aviation.csv"
-	foreach($Row in $Table) {
-		if ($Row.Abbr -eq $Abbreviation) {
-			"  → $($Row.Description) (in aviation)"
-			$FoundOne = 1
+	$FoundOne = $false
+	$Files = (get-childItem "$PSScriptRoot/../Data/Abbr/*" -attributes !Directory)
+
+	foreach ($File in $Files) {
+		$Table = import-csv "$File"
+		foreach($Row in $Table) {
+			if ($Row.Abbr -eq $Abbreviation) {
+				$Filename = (get-item "$File").Name
+				"  → $($Row.Abbr) = $($Row.Description) (in $Filename)"
+				$FoundOne = $true
+			}
 		}
 	}
 
-	$Table = import-csv "$PSScriptRoot/../Data/Abbr/Misc.csv"
-	foreach($Row in $Table) {
-		if ($Row.Abbr -eq $Abbreviation) {
-			"  → $($Row.Description) (in misc)"
-			$FoundOne = 1
-		}
-	}
-
-	if ($FoundOne -eq 0) {
-		"Sorry, no entry for $Abbreviation found"
-	}
+	if ($FoundOne -eq $false) { "Sorry, no entry for $Abbreviation found" }
 	exit 0
 } catch {
 	write-error "⚠️ Error in line $($_.InvocationInfo.ScriptLineNumber): $($Error[0])"
