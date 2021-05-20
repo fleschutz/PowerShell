@@ -5,7 +5,7 @@
 .NOTES        Author: Markus Fleschutz / License: CC0
 #>
 
-param($Drive = "", [int]$MinLevel = 50) # minimum level in GB
+param($Drive = "", [int]$MinLevel = 20) # minimum level in GB
 
 if ($Drive -eq "" ) { $Drive = read-host "Enter drive to check" }
 
