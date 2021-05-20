@@ -961,7 +961,7 @@ CPR, Cardiopulmonary resuscitation
 CPSM, Continuous Phase Shift Modulation
 CPSU, Communist Party of the Soviet Union
 CPT, Contingency Planning Team
-CPU, Central Processing Unit,Contract Postal Unit
+CPU,Contract Postal Unit
 CPV, Cape Verde (ISO 3166 trigram)
 CPX, Command Post eXercise
 CQ, Carrier Qualification,Central Queensland,Charge of Quarters,Congressional Quarterly,Constellation Airlines (IATA airline designator),Northern Mariana Islands (FIPS 10-4 territory code)
@@ -4560,7 +4560,8 @@ RAE, UK Royal Aircraft Establishment (-1991)
 RAF, Red Army Faction,Royal Air Force
 RAG, Raising and Giving,Rocket Antitank Grenade
 RAGBRAI, Register's Annual Great Bicycle Ride Across Iowa
-RAM, Random Access Memory,Rolling Airframe Missile,Royal Air Maroc
+RAM,Rolling Airframe Missile,
+RAM,Royal Air Maroc
 Ramark, RAdar MARKer
 RAOC, Rear Area Operation Centre
 RAP,(a/i) Radio Access Point,Radiological Assistance Program (U.S. Department of Energy),Rear Area Protection,Recognised [Operating/Operational] Air Picture,Recurring Advance Payment,Relational Associative Processor,Reliable Acoustic Path,Rocket-Assisted Projectile,Rule Against Perpetuities
