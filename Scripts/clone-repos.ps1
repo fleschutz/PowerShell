@@ -22,7 +22,7 @@ try {
 		$URL = $Row.URL
 		$DirName = $Row.Directory
 		if (test-path "$ParentDir/$DirName" -pathType container) {
-			"Skipping 📂$DirName (exists already)..."
+			"Skipping 📂$DirName - exists already..."
 			continue
 		}
 		"⏳ Cloning $URL to 📂$($DirName)..."
