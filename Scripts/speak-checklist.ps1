@@ -10,10 +10,15 @@ if ($Name -eq "") { $Name = read-host "Enter the name of the checklist" }
 
 try {
 	$Lines = Get-Content -path "$PSScriptRoot/../Data/Checklists/$Name.txt"
+	clear-host
+	$Step = 1
 	foreach($Line in $Lines) {
-		"> $Line"
+		if ($Line -like "HEAD*") { & "$PSScriptRoot/write-big.ps1" "$Line"; continue }
+			
+		"($Step) $Line"
 		& "$PSScriptRoot/speak-english.ps1" "$Line"
 		$Dummy = read-host "Press <Return> to continue ..."
+		$Step++
 	}
 	exit 0
 } catch {
