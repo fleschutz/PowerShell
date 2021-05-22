@@ -22,6 +22,9 @@ function MakeDir { param($Path)
 		& make -j4
 		if ($lastExitCode -ne "0") { throw "Executing 'make -j4' has failed" }
 
+		& make test
+		if ($lastExitCode -ne "0") { throw "Executing 'make test' has failed" }
+
 	} elseif (test-path "$Path/configure") { 
 		"⏳ Building 📂$DirName using 'configure'..."
 		set-location "$Path/"
