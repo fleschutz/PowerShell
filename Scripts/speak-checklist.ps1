@@ -13,11 +13,12 @@ try {
 	clear-host
 	$Step = 1
 	foreach($Line in $Lines) {
-		if ($Line -like "HEAD*") { & "$PSScriptRoot/write-big.ps1" "$Line"; continue }
-			
+		if ($Line -like "HEAD*") { & "$PSScriptRoot/write-big.ps1" "$($Line.substring(5))"; continue }
+
+		""			
 		"($Step) $Line"
 		& "$PSScriptRoot/speak-english.ps1" "$Line"
-		$Dummy = read-host "Press <Return> to continue ..."
+		$Dummy = read-host "    Say <Check> or press <Return> to continue"
 		$Step++
 	}
 	exit 0
