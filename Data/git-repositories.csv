@@ -8,6 +8,7 @@ URL,Directory
 "https://github.com/fleschutz/LSS", "LSS"
 "https://github.com/fleschutz/base256unicode", "base256unicode"
 "https://github.com/grafana/grafana", "grafana"
+"https://github.com/Kitware/CMake", "cmake"
 "https://github.com/llvm/llvm-project", "llvm"
 "git://github.com/ninja-build/ninja.git", "ninja"
 "https://github.com/protocolbuffers/protobuf", "protobuf"
