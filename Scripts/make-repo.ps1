@@ -30,7 +30,7 @@ function MakeDir { param($Path)
 		set-location "$Path/"
 
 		& ./configure
-		if ($lastExitCode -ne "0") { throw "Executing 'configure' has failed" }
+		if ($lastExitCode -ne "0") { throw "Script 'configure' exited with error code $lastExitCode" }
 
 		& make -j4
 		if ($lastExitCode -ne "0") { throw "Executing 'make -j4' has failed" }
@@ -40,7 +40,7 @@ function MakeDir { param($Path)
 		set-location "$Path/"
 
 		& ./autogen.sh
-		if ($lastExitCode -ne "0") { throw "Script 'autogen.sh' has failed" }
+		if ($lastExitCode -ne "0") { throw "Script 'autogen.sh' exited with error code $lastExitCode" }
 
 		& make -j4
 		if ($lastExitCode -ne "0") { throw "Executing 'make -j4' has failed" }
@@ -77,7 +77,7 @@ function MakeDir { param($Path)
 		set-location "$Path/"
 
 		& ./compile.sh
-		if ($lastExitCode -ne "0") { throw "Script 'compile.sh' has failed" }
+		if ($lastExitCode -ne "0") { throw "Script 'compile.sh' exited with error code $lastExitCode" }
 
 		& make -j4
 		if ($lastExitCode -ne "0") { throw "Executing 'make -j4' has failed" }
@@ -87,7 +87,7 @@ function MakeDir { param($Path)
 		set-location "$Path/attower/src/build/DevBuild/"
 
 		& ./build.bat build-all-release
-		if ($lastExitCode -ne "0") { throw "Script 'build.bat' returned error(s)" }
+		if ($lastExitCode -ne "0") { throw "Script 'build.bat' exited with error code $lastExitCode" }
 
 	} elseif (test-path "$Path/$DirName" -pathType container) {
 		"⏳ No make rule found, trying subfolder 📂$($DirName)..."
