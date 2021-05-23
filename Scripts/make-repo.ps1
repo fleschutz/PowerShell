@@ -72,6 +72,16 @@ function MakeDir { param($Path)
 		& make -j4
 		if ($lastExitCode -ne "0") { throw "Executing 'make -j4' has failed" }
 
+	} elseif (test-path "$Path/compile.sh") { 
+		"⏳ Building 📂$DirName using 'compile.sh'..."
+		set-location "$Path/"
+
+		& ./compile.sh
+		if ($lastExitCode -ne "0") { throw "Script 'compile.sh' has failed" }
+
+		& make -j4
+		if ($lastExitCode -ne "0") { throw "Executing 'make -j4' has failed" }
+
 	} elseif (test-path "$Path/attower/src/build/DevBuild/build.bat") {
 		"⏳ Building 📂$DirName using build.bat ..."
 		set-location "$Path/attower/src/build/DevBuild/"

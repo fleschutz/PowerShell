@@ -1,5 +1,6 @@
 Directory,URL
 "base256unicode",	"https://github.com/fleschutz/base256unicode"
+"bazel",		"https://github.com/bazelbuild/bazel"
 "cmake",		"https://github.com/Kitware/CMake"
 "cmatrix",		"https://github.com/abishekvashok/cmatrix"
 "cmark",		"https://github.com/commonmark/cmark"
