@@ -10,7 +10,7 @@ param($RepoDir = "$PWD")
 function MakeDir { param($Path)
 	$DirName = (get-item "$Path").Name
 	if (test-path "$Path/CMakeLists.txt") {
-		"⏳ Building 📂$DirName using CMakeLists.txt..."
+		"⏳ Building 📂$DirName using CMakeLists.txt to subfolder BuildFiles..."
 		if (-not(test-path "$Path/BuildFiles/" -pathType container)) { 
 			& mkdir "$Path/BuildFiles/"
 		}
