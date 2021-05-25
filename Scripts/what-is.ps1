@@ -17,9 +17,9 @@ try {
 	foreach ($File in $Files) {
 		$Table = import-csv "$File"
 		foreach($Row in $Table) {
-			if ($Row.Abbr -eq $Abbreviation) {
+			if ($Row.Abbreviation -eq $Abbreviation) {
 				$Filename = (get-item "$File").Name
-				"  → $($Row.Abbr) = $($Row.Description) (in $Filename)"
+				"  → $($Row.Abbreviation) = $($Row.Description) (in $Filename)"
 				$FoundOne = $true
 			}
 		}
