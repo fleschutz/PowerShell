@@ -18,8 +18,8 @@ try {
 		$Table = import-csv "$File"
 		foreach($Row in $Table) {
 			if ($Row.Abbreviation -eq $Abbreviation) {
-				$Filename = (get-item "$File").Name
-				"  → $($Row.Abbreviation) = $($Row.Definition) (in $Filename)"
+				$Basename = (get-item "$File").Basename
+				"  → $($Row.Abbreviation) = $($Row.Definition) in $Basename"
 				$FoundOne = $true
 			}
 		}

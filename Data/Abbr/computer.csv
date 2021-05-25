@@ -1,6 +1,32 @@
 Abbreviation,Definition
+ACID,"Atomicity, Consistency, Isolation, Durability"
+ACL,Access Control List
+ADC,Analog-to-Digital Converter
+ADF,Automatic Document Feeder
+ADSL,Asymmetric Digital Subscriber Line
+AFP,Apple Filing Protocol
+AGP,Accelerated Graphics Port
+AIFF,Audio Interchange File Format
+ALU,Arithmetic Logic Unit
+ANSI,American National Standards Institute
 API,Application Programming Interface
+APU,Accelerated Processing Unit
+ARP,Address Resolution Protocol
 ASCII,American Standard Code for Information Interchange
+ASP,Application Service Provider
+ATM,Asynchronous Transfer Mode
+AVR,Audio/Video Receiver
+Bash,Bourne-Again Shell
+BASIC,Beginner's All-purpose Symbolic Instruction Code
+BCC,Blind Carbon Copy
+BIOS,Basic Input/Output System
+BLE,Bluetooth Low Energy
+Blob,Binary Large Object
+BMP,Bitmap
+BSOD,Blue Screen of Death
+CAD,Computer-Aided Design
+CAN,Campus Area Network
+CD,Compact Disc
 CPU,Central Processing Unit
 CSV,Comma Separated Values (file format)
 DDL,Data Definition Language
