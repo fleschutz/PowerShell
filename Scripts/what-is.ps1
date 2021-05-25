@@ -19,7 +19,7 @@ try {
 		foreach($Row in $Table) {
 			if ($Row.Abbreviation -eq $Abbreviation) {
 				$Filename = (get-item "$File").Name
-				"  → $($Row.Abbreviation) = $($Row.Description) (in $Filename)"
+				"  → $($Row.Abbreviation) = $($Row.Definition) (in $Filename)"
 				$FoundOne = $true
 			}
 		}
