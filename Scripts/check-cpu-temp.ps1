@@ -16,17 +16,17 @@ try {
 	}
 
 	if ($Temp -gt "80") {
-		write-error "FAIL - $Temp °C CPU temperature is too high!"
+		write-error "⚠️ $Temp °C CPU temperature is too high!"
 		exit 1
 	} elseif ($Temp -lt "-20") {
-		write-error "FAIL - $Temp °C CPU temperature is too low!"
+		write-error "⚠️ $Temp °C CPU temperature is too low!"
 		exit 1
 	} elseif ($Temp -gt "50") {
-		write-warning "$Temp °C CPU temperature is quite high"
+		"✔️ $Temp °C CPU temperature - quite high"
 	} elseif ($Temp -lt "0") {
-		write-warning "$Temp °C CPU temperature is quite low"
+		"✔️ $Temp °C CPU temperature - quite low"
 	} else {
-		"✔️ $Temp °C CPU temperature"
+		"✔️ $Temp °C CPU temperature - good"
 	}
 	exit 0
 } catch {
