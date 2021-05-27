@@ -13,15 +13,14 @@ try {
 	$Null = (git --version)
 	if ($lastExitCode -ne "0") { throw "Can't execute 'git' - make sure Git is installed and available" }
 
-	$RepoDirName = (get-item "$RepoDir").Name
-	"🢃 Fetching updates for Git repository 📂$RepoDirName ..."
-
-	& git -C "$RepoDir" fetch --all 
+	"🢃 Fetching updates..."
+	& git -C "$RepoDir" fetch --all --quiet
 	if ($lastExitCode -ne "0") { throw "'git fetch --all' failed" }
 
-	write-output ""
-	write-output "Git Tags"
-	write-output "--------"
+	$RepoDirName = (get-item "$RepoDir").Name
+	[system.threading.thread]::currentthread.currentculture=[system.globalization.cultureinfo]"en-US"
+	""
+	"🔖 Tags in Git repository 📂$RepoDirName as of $((Get-Date).ToShortDateString()):"
 
 	& git -C "$RepoDir" tag --list "$Pattern" --column
 	if ($lastExitCode -ne "0") { throw "'git tag --list' failed" }
