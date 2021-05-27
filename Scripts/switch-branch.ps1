@@ -20,9 +20,7 @@ try {
 	if ($lastExitCode -ne "0") { throw "'git status' failed in $RepoDir" }
 	if ("$Result" -notmatch "nothing to commit, working tree clean") { throw "Git repository is NOT clean: $Result" }
 
-	$RepoDirName = (get-item "$RepoDir").Name
-	"🢃 Fetching updates for Git repository 📂$RepoDirName ..."
-
+	"🢃 Fetching updates..."
 	& git fetch --all --recurse-submodules --jobs=4
 	if ($lastExitCode -ne "0") { throw "'git fetch -all --recurse-submodules' failed" }
 
@@ -35,7 +33,8 @@ try {
 	& git submodule update --init --recursive
 	if ($lastExitCode -ne "0") { throw "'git submodule update' failed" }
 
-	"✔️ switched to branch '$BranchName'"
+	$RepoDirName = (get-item "$RepoDir").Name
+	"✔️ switched Git repository 📂$RepoDirName to branch '$BranchName'"
 	exit 0
 } catch {
 	write-error "⚠️ Error in line $($_.InvocationInfo.ScriptLineNumber): $($Error[0])"
