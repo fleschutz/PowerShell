@@ -9,22 +9,23 @@ param($RepoDir = "$PWD", $Pattern="*")
 
 try {
 	if (-not(test-path "$RepoDir" -pathType container)) { throw "Can't access directory: $RepoDir" }
-	set-location "$RepoDir"
 
 	$Null = (git --version)
 	if ($lastExitCode -ne "0") { throw "Can't execute 'git' - make sure Git is installed and available" }
 
-	& "$PSScriptRoot/fetch-repo.ps1"
-	if ($lastExitCode -ne "0") { throw "Script 'fetch-repo.ps1' failed" }
+	$RepoDirName = (get-item "$RepoDir").Name
+	"🢃 Fetching updates for Git repository 📂$RepoDirName ..."
+
+	& git -C "$RepoDir" fetch --all 
+	if ($lastExitCode -ne "0") { throw "'git fetch --all' failed" }
 
 	write-output ""
-	write-output "List of Git Tags"
-	write-output "----------------"
+	write-output "Git Tags"
+	write-output "--------"
 
-	& git tag --list "$Pattern"
+	& git -C "$RepoDir" tag --list "$Pattern" --column
 	if ($lastExitCode -ne "0") { throw "'git tag --list' failed" }
 
-	write-output ""
 	exit 0
 } catch {
 	write-error "⚠️ Error in line $($_.InvocationInfo.ScriptLineNumber): $($Error[0])"
