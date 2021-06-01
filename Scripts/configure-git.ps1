@@ -22,7 +22,7 @@ try {
 	& git config --global core.symlinks true
 	& git config --global core.longpaths true
 	& git config --global init.defaultBranch main
-	write-host -foregroundColor green "✔️ your Git configuration has been saved, it's now:"
+	write-host -foregroundColor green "✔️ saved your Git configuration, it's now:"
 	& git config --list
 	exit 0
 } catch {
