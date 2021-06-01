@@ -2,9 +2,8 @@
 
 
 
-function DrawBar { param([string]$Name, [float]$Value)
-	write-host -noNewLine "$($Name): "
-	$Num = $Value
+function WriteChartLine { param([string]$Text, [float]$Value, [float]$Max)
+	$Num = ($Value * 40.0) / $Max
 	while ($Num -ge 1.0) {
 		write-host -noNewLine "█"
 		$Num -= 1.0
@@ -24,10 +23,14 @@ function DrawBar { param([string]$Name, [float]$Value)
 	} elseif ($Num -ge 0.125) {
 		write-host -noNewLine "▏"
 	}
-	write-host " $($Value)%"
+	if ($Max -eq 100.0) {
+		write-host " $($Value)% $Text"
+	} else {
+		write-host " $Value / $Max $Text"
+	}
 }
 
 "2021 Wins"
-DrawBar "Markus" 6.5
-DrawBar "Andrea" 3.9
+WriteChartLine "Markus" 40.5 100.0
+WriteChartLine "Andrea" 30.9 100.0
 exit 0
