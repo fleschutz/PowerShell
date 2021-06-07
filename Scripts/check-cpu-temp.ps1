@@ -6,7 +6,7 @@
 #>
 
 try {
-	if (test-path "/sys/class/thermal/thermal_zone0/temp") {
+	if (test-path "/sys/class/thermal/thermal_zone0/temp" -pathType leaf) {
 		[int]$IntTemp = get-content "/sys/class/thermal/thermal_zone0/temp"
 		$Temp = [math]::round($IntTemp / 1000.0, 1)
 	} else {

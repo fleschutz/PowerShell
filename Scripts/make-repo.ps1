@@ -9,7 +9,7 @@ param($RepoDir = "$PWD")
 
 function MakeDir { param($Path)
 	$DirName = (get-item "$Path").Name
-	if (test-path "$Path/CMakeLists.txt") {
+	if (test-path "$Path/CMakeLists.txt" -pathType leaf) {
 		"⏳ Building 📂$DirName using CMakeLists.txt to subfolder BuildFiles..."
 		if (-not(test-path "$Path/BuildFiles/" -pathType container)) { 
 			& mkdir "$Path/BuildFiles/"
@@ -25,7 +25,7 @@ function MakeDir { param($Path)
 		& make test
 		if ($lastExitCode -ne "0") { throw "Executing 'make test' has failed" }
 
-	} elseif (test-path "$Path/configure") { 
+	} elseif (test-path "$Path/configure" -pathType leaf) { 
 		"⏳ Building 📂$DirName using 'configure'..."
 		set-location "$Path/"
 
@@ -35,7 +35,7 @@ function MakeDir { param($Path)
 		& make -j4
 		if ($lastExitCode -ne "0") { throw "Executing 'make -j4' has failed" }
 
-	} elseif (test-path "$Path/autogen.sh") { 
+	} elseif (test-path "$Path/autogen.sh" -pathType leaf) { 
 		"⏳ Building 📂$DirName using 'autogen.sh'..."
 		set-location "$Path/"
 
@@ -45,7 +45,7 @@ function MakeDir { param($Path)
 		& make -j4
 		if ($lastExitCode -ne "0") { throw "Executing 'make -j4' has failed" }
 
-	} elseif (test-path "$Path/build.gradle") {
+	} elseif (test-path "$Path/build.gradle" -pathType leaf) {
 		"⏳ Building 📂$DirName using build.gradle..."
 		set-location "$Path"
 
@@ -55,7 +55,7 @@ function MakeDir { param($Path)
 		& gradle test
 		if ($lastExitCode -ne "0") { throw "'gradle test' has failed" }
 
-	} elseif (test-path "$Path/Imakefile") {
+	} elseif (test-path "$Path/Imakefile" -pathType leaf) {
 		"⏳ Building 📂$DirName using Imakefile..."
 		set-location "$RepoDir/"
 
@@ -65,14 +65,14 @@ function MakeDir { param($Path)
 		& make -j4
 		if ($lastExitCode -ne "0") { throw "Executing 'make -j4' has failed" }
 
-	} elseif (test-path "$Path/Makefile") {
+	} elseif (test-path "$Path/Makefile" -pathType leaf) {
 		"⏳ Building 📂$DirName using Makefile..."
 		set-location "$Path"
 
 		& make -j4
 		if ($lastExitCode -ne "0") { throw "Executing 'make -j4' has failed" }
 
-	} elseif (test-path "$Path/compile.sh") { 
+	} elseif (test-path "$Path/compile.sh" -pathType leaf) { 
 		"⏳ Building 📂$DirName using 'compile.sh'..."
 		set-location "$Path/"
 
@@ -82,7 +82,7 @@ function MakeDir { param($Path)
 		& make -j4
 		if ($lastExitCode -ne "0") { throw "Executing 'make -j4' has failed" }
 
-	} elseif (test-path "$Path/attower/src/build/DevBuild/build.bat") {
+	} elseif (test-path "$Path/attower/src/build/DevBuild/build.bat" -pathType leaf) {
 		"⏳ Building 📂$DirName using build.bat ..."
 		set-location "$Path/attower/src/build/DevBuild/"
 

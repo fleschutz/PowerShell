@@ -8,7 +8,7 @@
 
 try {
 	$Path = "$HOME/Memos.csv"
-	if (test-path "$Path") {
+	if (test-path "$Path" -pathType leaf) {
 		write-progress "Reading $Path ..."
 		$Table = import-csv "$Path"
 		write-progress -completed "Reading $Path"

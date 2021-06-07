@@ -14,7 +14,7 @@ try {
 	$User = $(whoami)
 	$Line = "$Time,$User,$Text"
 
-	if (-not(test-path "$Path")) {
+	if (-not(test-path "$Path" -pathType leaf)) {
 		write-output "Time,User,Text" > "$Path"
 	}
 	write-output $Line >> "$Path"
