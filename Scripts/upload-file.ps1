@@ -53,7 +53,7 @@ try {
 	$fileStream.Dispose()
 
 	[int]$Elapsed = $StopWatch.Elapsed.TotalSeconds
-	"✔️ uploaded 📄$Filename to $URL in $Elapsed sec."
+	"✔️ uploaded 📄$Filename to $URL in $Elapsed sec"
 	exit 0
 } catch {
 	[int]$Elapsed = $StopWatch.Elapsed.TotalSeconds

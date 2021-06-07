@@ -24,7 +24,7 @@ try {
 
 	[int]$Elapsed = $StopWatch.Elapsed.TotalSeconds
 	$Average = [math]::round($Count / $Elapsed, 1)
-	"✔️ $Average domains/s ($Count domains resolved in $Elapsed sec.)"
+	"✔️ $Average domains/s ($Count domains resolved in $Elapsed sec)"
 	exit 0
 } catch {
 	write-error "⚠️ Error in line $($_.InvocationInfo.ScriptLineNumber): $($Error[0])"

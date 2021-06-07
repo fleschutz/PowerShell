@@ -21,7 +21,7 @@ try {
 	}
 
 	[int]$Elapsed = $StopWatch.Elapsed.TotalSeconds
-	"✔️ built $($Folders.Count) Git repositories at 📂$ParentDirName in $Elapsed sec."
+	"✔️ built $($Folders.Count) Git repositories at 📂$ParentDirName in $Elapsed sec"
 	exit 0
 } catch {
 	write-error "⚠️ Error in line $($_.InvocationInfo.ScriptLineNumber): $($Error[0])"

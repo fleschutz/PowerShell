@@ -32,7 +32,7 @@ try {
 		$Count++
 	}
 	[int]$Elapsed = $StopWatch.Elapsed.TotalSeconds
-	"✔️ cloned $Count Git repositories at 📂$ParentDir in $Elapsed sec."
+	"✔️ cloned $Count Git repositories at 📂$ParentDir in $Elapsed sec"
 	exit 0
 } catch {
 	write-error "⚠️ Error in line $($_.InvocationInfo.ScriptLineNumber): $($Error[0])"

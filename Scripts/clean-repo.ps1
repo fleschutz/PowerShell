@@ -25,7 +25,7 @@ try {
 	if ($lastExitCode -ne "0") { throw "'git clean -fdx' in submodules failed" }
 
 	[int]$Elapsed = $StopWatch.Elapsed.TotalSeconds
-	"✔️ cleaned Git repository 📂$RepoDirName in $Elapsed sec."
+	"✔️ cleaned Git repository 📂$RepoDirName in $Elapsed sec"
 	exit 0
 } catch {
 	write-error "⚠️ Error in line $($_.InvocationInfo.ScriptLineNumber): $($Error[0])"

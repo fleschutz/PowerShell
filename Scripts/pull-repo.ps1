@@ -22,7 +22,7 @@ try {
 
 	$RepoDirName = (get-item "$RepoDir").Name
 	[int]$Elapsed = $StopWatch.Elapsed.TotalSeconds
-	"✔️ pulled updates for Git repository 📂$RepoDirName in $Elapsed sec."
+	"✔️ pulled updates for Git repository 📂$RepoDirName in $Elapsed sec"
 	exit 0
 } catch {
 	write-error "⚠️ Error in line $($_.InvocationInfo.ScriptLineNumber): $($Error[0])"
