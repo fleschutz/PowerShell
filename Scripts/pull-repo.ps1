@@ -13,21 +13,20 @@ try {
 	if (-not(test-path "$RepoDir" -pathType container)) { throw "Can't access directory: $RepoDir" }
 	set-location "$RepoDir"
 	
-	$Null = (git --version)
-	if ($lastExitCode -ne "0") { throw "Can't execute 'git' - make sure Git is installed and available" }
-
 	$Result = (git status)
+	if ($lastExitCode -ne "0") { throw "Can't execute 'git' - make sure Git is installed and available" }
 	if ("$Result" -match "HEAD detached at ") {
 		write-warning "Not on a branch, so nothing to pull (in detached HEAD state)"
-	} else {
-		"🢃 Pulling updates..."
-		& git pull --recurse-submodules --jobs=4
-		if ($lastExitCode -ne "0") { throw "'git pull' failed" }
+		exit 0
+	} 
 
-		$RepoDirName = (get-item "$RepoDir").Name
-		[int]$Elapsed = $StopWatch.Elapsed.TotalSeconds
-		"✔️ pulled updates for Git repository 📂$RepoDirName in $Elapsed sec"
-	}
+	"🢃 Pulling updates..."
+	& git pull --recurse-submodules --jobs=4
+	if ($lastExitCode -ne "0") { throw "'git pull' failed" }
+
+	$RepoDirName = (get-item "$RepoDir").Name
+	[int]$Elapsed = $StopWatch.Elapsed.TotalSeconds
+	"✔️ pulled updates for Git repository 📂$RepoDirName in $Elapsed sec"
 	exit 0
 } catch {
 	write-error "⚠️ Error in line $($_.InvocationInfo.ScriptLineNumber): $($Error[0])"
