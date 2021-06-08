@@ -17,8 +17,14 @@ try {
 	if ($lastExitCode -ne "0") { throw "Can't execute 'git' - make sure Git is installed and available" }
 
 	"🢃 Pulling updates..."
-	& git pull --recurse-submodules --jobs=4
-	if ($lastExitCode -ne "0") { throw "'git pull' failed" }
+	$Result = (git pull --recurse-submodules --jobs=4)
+	if ($lastExitCode -ne "0") {
+		if ("$Result" -match "You are not currently on a branch.") {
+			"NOTE: not on a branch, nothing to pull"
+		} else {
+			throw "'git pull' failed" }
+		}
+	}
 
 	$RepoDirName = (get-item "$RepoDir").Name
 	[int]$Elapsed = $StopWatch.Elapsed.TotalSeconds
