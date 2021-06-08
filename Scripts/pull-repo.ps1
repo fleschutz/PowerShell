@@ -22,7 +22,7 @@ try {
 		if ("$Result" -match "You are not currently on a branch.") {
 			"NOTE: not on a branch, nothing to pull"
 		} else {
-			throw "'git pull' failed" }
+			throw "'git pull' failed"
 		}
 	}
 
