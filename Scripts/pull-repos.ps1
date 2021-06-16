@@ -18,7 +18,7 @@ try {
 	$Folders = (get-childItem "$ParentDir" -attributes Directory)
 	$FolderCount = $Folders.Count
 	$ParentDirName = (get-item "$ParentDir").Name
-	"Pulling updates for $FolderCount Git repositories at 📂$ParentDirName..."
+	"Found $FolderCount subfolders under 📂$ParentDirName..."
 
 	foreach ($Folder in $Folders) {
 		$FolderName = (get-item "$Folder").Name
