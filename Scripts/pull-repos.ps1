@@ -20,9 +20,11 @@ try {
 	$ParentDirName = (get-item "$ParentDir").Name
 	"Found $FolderCount subfolders under 📂$ParentDirName..."
 
+	[int]$Step = 0
 	foreach ($Folder in $Folders) {
 		$FolderName = (get-item "$Folder").Name
-		"🢃 Pulling 📂$FolderName..."
+		$Step++
+		"🢃 Pulling 📂$FolderName (step $Step/$FolderCount) ..."
 
 		& git -C "$Folder" pull --recurse-submodules --jobs=4
 		if ($lastExitCode -ne "0") { write-warning "'git pull' on 📂$FolderName failed" }
