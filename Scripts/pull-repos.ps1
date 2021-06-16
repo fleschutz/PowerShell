@@ -25,9 +25,10 @@ try {
 		"🢃 Pulling 📂$FolderName..."
 
 		& git -C "$Folder" pull --recurse-submodules --jobs=4
-		if ($lastExitCode -ne "0") {
-			write-warning "'git pull' on 📂$FolderName failed"
-		}
+		if ($lastExitCode -ne "0") { write-warning "'git pull' on 📂$FolderName failed" }
+
+		& git -C "$Folder" submodule update --init --recursive
+		if ($lastExitCode -ne "0") { throw "'git submodule update' failed" }
 	}
 
 	[int]$Elapsed = $StopWatch.Elapsed.TotalSeconds

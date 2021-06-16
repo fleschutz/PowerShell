@@ -8,6 +8,7 @@
 param($RepoDir = "$PWD")
 
 try {
+	"🢃 Pulling updates..."
 	$StopWatch = [system.diagnostics.stopwatch]::startNew()
 
 	if (-not(test-path "$RepoDir" -pathType container)) { throw "Can't access directory: $RepoDir" }
@@ -20,9 +21,11 @@ try {
 		exit 0
 	} 
 
-	"🢃 Pulling updates..."
 	& git pull --recurse-submodules --jobs=4
 	if ($lastExitCode -ne "0") { throw "'git pull' failed" }
+
+	& git submodule update --init --recursive
+	if ($lastExitCode -ne "0") { throw "'git submodule update' failed" }
 
 	$RepoDirName = (get-item "$RepoDir").Name
 	[int]$Elapsed = $StopWatch.Elapsed.TotalSeconds
