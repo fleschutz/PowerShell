@@ -21,8 +21,8 @@ try {
 	if ("$Result" -notmatch "nothing to commit, working tree clean") { throw "Git repository is NOT clean: $Result" }
 
 	"🢃 Fetching updates..."
-	& git fetch --all --recurse-submodules --jobs=4
-	if ($lastExitCode -ne "0") { throw "'git fetch -all --recurse-submodules' failed" }
+	& git fetch --all --recurse-submodules --prune --prune-tags
+	if ($lastExitCode -ne "0") { throw "'git fetch' failed" }
 
 	& git checkout --recurse-submodules "$BranchName"
 	if ($lastExitCode -ne "0") { throw "'git switch $BranchName' failed" }
