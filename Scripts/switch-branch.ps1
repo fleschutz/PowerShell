@@ -24,10 +24,10 @@ try {
 	& git fetch --all --recurse-submodules --jobs=4
 	if ($lastExitCode -ne "0") { throw "'git fetch -all --recurse-submodules' failed" }
 
-	& git switch "$BranchName"
+	& git checkout --recurse-submodules "$BranchName"
 	if ($lastExitCode -ne "0") { throw "'git switch $BranchName' failed" }
 
-	& git pull  
+	& git pull --recurse-submodules
 	if ($lastExitCode -ne "0") { throw "'git pull' failed" }
 
 	& git submodule update --init --recursive
