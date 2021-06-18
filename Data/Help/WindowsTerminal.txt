@@ -1,0 +1,20 @@
+Windows Terminal Cheat Sheet
+============================
+
+Application
+-----------
+Alt-F4			Close window
+Ctrl-Shift-f		Find
+Ctrl-Shift-Space	Open dropdown
+Ctrl-,			Open settings file
+Alt-Enter		Toggle full screen
+F11
+
+Tab Commands
+------------
+Ctrl-Shift-d		Duplicate tab
+Ctrl-Shift-t		New tab
+Ctrl-Shift-p		New tab from profile p=1..9
+Ctrl-Tab		Switch to next tab
+Ctrl-Shift-Tab		Switch to previous tab
+Ctrl-Alt-n		Switch to tab n=0..9
