@@ -3,10 +3,10 @@ Mega Collection of PowerShell Scripts
 
 **This repository provides more than 200 useful and cross-platform PowerShell scripts in the [Scripts](Scripts/) subfolder - to be used by command-line interface (CLI), for remote control (e.g. via SSH), by context menu, by voice control, by automation software like Jenkins, automatically as daily tasks, or simply to learn PowerShell. See the [PowerShell FAQ page](Misc/FAQ.md) if you need help or have any questions.**
 
-**HINT:** the scripts support Unicode I/O. Use a modern console supporting UTF-8 such as Windows Terminal, please.
+**HINT:** the PowerShell scripts support Unicode I/O. Use a modern console supporting UTF-8 such as Windows Terminal, please.
 
-🔊 PowerShell Scripts for Audio & Voice 
-----------------------------------------
+🔊 Scripts for Audio & Voice 
+-----------------------------
 * [convert-txt2wav.ps1](Scripts/convert-txt2wav.ps1) - converts text to a .WAV audio file
 * [mute-audio.ps1](Scripts/mute-audio.ps1) - mutes audio
 * [play-beep.ps1](Scripts/play-beep.ps1) - plays a beep sound
@@ -32,8 +32,8 @@ Mega Collection of PowerShell Scripts
 * [unmute-audio.ps1](Scripts/unmute-audio.ps1) - unmutes audio
 * [voice-control.ps1](Scripts/voice-control.ps1) - executes the PowerShell scripts by voice
 
-⚙️ PowerShell Scripts for Computer Management
-----------------------------------------------
+⚙️ Scripts for Computer Management
+-----------------------------------
 * [add-firewall-rules.ps1](Scripts/add-firewall-rules.ps1) - adds firewall rules for the given executables (needs admin rights)
 * [check-cpu-temp.ps1](Scripts/check-cpu-temp.ps1) - checks the CPU temperature
 * [check-dns-resolution.ps1](Scripts/check-dns-resolution.ps1) - checks the DNS resolution with frequently used domain names
@@ -65,8 +65,8 @@ Mega Collection of PowerShell Scripts
 * [reboot.ps1](Scripts/reboot.ps1) - reboots the local computer (needs admin rights)
 * [wakeup.ps1](Scripts/wakeup.ps1) - sends a magic packet to the given computer, waking him up
 
-💻 PowerShell Scripts for the Desktop
---------------------------------------
+💻 Scripts for the Desktop
+---------------------------
 * [close-calculator.ps1](Scripts/close-calculator.ps1) - closes the calculator program gracefully
 * [close-chrome.ps1](Scripts/close-chrome.ps1) - closes Google Chrome gracefully
 * [close-cortana.ps1](Scripts/close-cortana.ps1) - closes Cortana gracefully
@@ -89,8 +89,8 @@ Mega Collection of PowerShell Scripts
 * [take-screenshot.ps1](Scripts/take-screenshot.ps1) - takes a single screenshot
 * [take-screenshots.ps1](Scripts/take-screenshots.ps1) - takes multiple screenshots (every minute by default)
 
-📁 PowerShell Scripts for Files & Folders 
-------------------------------------------
+📁 Scripts for Files & Folders 
+-------------------------------
 * [clear-recycle-bin.ps1](Scripts/clear-recycle-bin.ps1) - removes the content of the recycle bin folder (can not be undo!)
 * [cd-desktop.ps1](Scripts/cd-desktop.ps1) - go to the user's desktop folder
 * [cd-docs.ps1](Scripts/cd-docs.ps1) - go to the user's documents folder
@@ -138,8 +138,8 @@ Mega Collection of PowerShell Scripts
 * [upload-file.ps1](Scripts/zip-dir.ps1) - uploads the local file to the given FTP server
 * [zip-dir.ps1](Scripts/zip-dir.ps1) - creates a zip archive of the given directory
 
-📝 PowerShell Scripts for Git
-------------------------------
+📝 Scripts for Git
+-------------------
 * [cherry-picker.ps1](Scripts/cherry-picker.ps1) - cherry-picks a Git commit into multiple branches
 * [clean-repo.ps1](Scripts/clean-repo.ps1) - cleans the current/given Git repository from untracked files (including submodules)
 * [clean-repos.ps1](Scripts/clean-repos.ps1) - cleans all Git repositories under the current/given directory from untracked files (including submodules)
