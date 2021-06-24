@@ -1,4 +1,4 @@
-<#
+﻿<#
 .SYNTAX       start-ipfs-server.ps1
 .DESCRIPTION  starts a local IPFS server
 .LINK         https://github.com/fleschutz/PowerShell
@@ -9,7 +9,7 @@ try {
 	"⚠️ Make sure your router does not block port 4001 (TCP/UDP) for IPv4/v6!"
 	""
 
-	"Step 1/5: searching for ipfs executable..."
+	"1️⃣ Step 1/5: searching for ipfs executable..."
 	$Result = (ipfs --version)
 	if ($lastExitCode -ne "0") { throw "Can't execute 'ipfs' - make sure IPFS is installed and available" }
 
