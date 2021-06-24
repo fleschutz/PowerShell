@@ -9,7 +9,7 @@ try {
 	"⚠️ Make sure your router does not block port 4001 (TCP/UDP) for IPv4/v6!"
 	""
 
-	"1️⃣ Step 1/5: searching for ipfs executable..."
+	"Step 1/5: searching for ipfs executable..."
 	$Result = (ipfs --version)
 	if ($lastExitCode -ne "0") { throw "Can't execute 'ipfs' - make sure IPFS is installed and available" }
 
@@ -35,11 +35,10 @@ try {
 
 	"Step 5/5: starting daemon..."
 
-	& ipfs daemon 
-	if ($lastExitCode -ne "0") { throw "'ipfs daemon' failed" }
+	Start-Process nohup 'ipfs daemon'
 
-	"IPFS server has stopped"
-	exit 1
+	"Done."
+	exit 0
 } catch {
 	write-error "⚠️ Error in line $($_.InvocationInfo.ScriptLineNumber): $($Error[0])"
 	exit 1
