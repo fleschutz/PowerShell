@@ -6,13 +6,17 @@
 #>
 
 try {
+	"⚠️ Make sure your router does not block port 4001 (TCP/UDP) for IPv4/v6!"
+	""
+
+	"Step 1/5: searching for ipfs executable..."
 	$Result = (ipfs --version)
 	if ($lastExitCode -ne "0") { throw "Can't execute 'ipfs' - make sure IPFS is installed and available" }
 
-	"Step 1/4: initializing IPFS..."
+	"Step 2/5: initializing..."
 	& ipfs init --profile server
 
-	"Step 2/4: configuring IPFS..."
+	"Step 3/5: configuring..."
 	& ipfs config Addresses.API /ip4/0.0.0.0/tcp/5001
 	if ($lastExitCode -ne "0") { throw "'ipfs config Addresses.API' failed" }
 
@@ -25,12 +29,11 @@ try {
 #	& ipfs config --json API.HTTPHeaders.Access-Control-Allow-Methods '["PUT", "GET", "POST"]'
 #	if ($lastExitCode -ne "0") { throw "'ipfs config Access-Control-Allow-Methods' failed" }
 
-	"Step 3/4: increasing UDP receive buffer size..."
+	"Step 4/5: increasing UDP receive buffer size..."
 	& sudo sysctl -w net.core.rmem_max=2500000
 	if ($lastExitCode -ne "0") { throw "'sysctl' failed" }
 
-	"Step 4/4: starting IPFS daemon..."
-	"NOTE: make sure your router does not block port 4001 (TCP/UDP) for IPv4/v6!"
+	"Step 5/5: starting daemon..."
 
 	& ipfs daemon 
 	if ($lastExitCode -ne "0") { throw "'ipfs daemon' failed" }
