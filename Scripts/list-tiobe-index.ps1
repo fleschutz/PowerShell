@@ -1,4 +1,4 @@
-<#
+﻿<#
 .SYNTAX       list-tiobe-index.ps1 
 .DESCRIPTION  lists the TIOBE index of top programming languages
 .LINK         https://github.com/fleschutz/PowerShell
