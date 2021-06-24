@@ -203,6 +203,7 @@ Mega Collection of PowerShell Scripts
 * [list-random-passwords.ps1](Scripts/list-random-passwords.ps1) - prints a list of random passwords
 * [list-random-pins.ps1](Scripts/list-random-pins.ps1) - prints a list of random PIN's
 * [list-sql-tables.ps1](Scripts/list-sql-tables.ps1) - lists the SQL server tables
+* [list-tiobe-index.ps1](Scripts/list-tiobe-index.ps1) - lists the TIOBE index of top programming languages
 * [list-weather.ps1](Scripts/list-weather.ps1) - lists the hourly weather 
 * [locate-city.ps1](Scripts/locate-city.ps1) - prints the geographic location of the given city
 * [locate-ipaddress.ps1](Scripts/locate-ipaddress.ps1) - prints the geographic location of the given IP address
