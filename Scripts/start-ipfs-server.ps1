@@ -23,11 +23,12 @@ try {
 	& ipfs config Addresses.Gateway /ip4/0.0.0.0/tcp/8765
 	if ($lastExitCode -ne "0") { throw "'ipfs config Addresses.Gateway' failed" }
 
-#	& ipfs config --json API.HTTPHeaders.Access-Control-Allow-Origin '["http://raspi:5001", "http://127.0.0.1:5001", "https://webui.ipfs.io"]'
-#	if ($lastExitCode -ne "0") { throw "'ipfs config Access-Control-Allow-Origin' failed" }
+	$Hostname = $(hostname)
+	& ipfs config --json API.HTTPHeaders.Access-Control-Allow-Origin '[\"http://hal:5001\", \"http://localhost:3000\", \"http://127.0.0.1:5001\", \"https://webui.ipfs.io\"]'
+	if ($lastExitCode -ne "0") { throw "'ipfs config Access-Control-Allow-Origin' failed" }
 
-#	& ipfs config --json API.HTTPHeaders.Access-Control-Allow-Methods '["PUT", "GET", "POST"]'
-#	if ($lastExitCode -ne "0") { throw "'ipfs config Access-Control-Allow-Methods' failed" }
+	& ipfs config --json API.HTTPHeaders.Access-Control-Allow-Methods '[\"PUT\", \"POST\"]'
+	if ($lastExitCode -ne "0") { throw "'ipfs config Access-Control-Allow-Methods' failed" }
 
 	"Step 4/5: increasing UDP receive buffer size..."
 	& sudo sysctl -w net.core.rmem_max=2500000
