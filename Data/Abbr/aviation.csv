@@ -2,6 +2,7 @@ Abbreviation,Definition
 AB,Air Base
 AC,Aircraft
 ACAS,Airborne Collision Avoidance System
+ACC,Area Control Centre
 AF,Air Field
 AFM,Aircraft Flight Manual
 AIP,Aeronautical Information Publication
@@ -14,7 +15,10 @@ AFM,Airplane Flight Manual
 AGL,Above Ground Level
 AIP,Aeronautical Information Publication
 ANSP,Air Navigation Service Provider
+ARTCC,Air Route Traffic Control Centre
+ASB,Airspace Block
 ATA,Actual Time of Arrival
+ATC,Air Traffic Control
 ATIS,Automatic Terminal Information Service
 ATO,Air Traffic Organization
 BAF,Belgian Air Force
@@ -22,10 +26,25 @@ CAAC,Civil Aviation Administration of China
 CAAS,Civil Aviation Authorization of Singapore
 CANSO,Civil Air Navigation Services Organization
 CAS,Calibrated Airspeed
-CAT,Category of aircraft
+CAT,Category of Aircraft
 CAVOK,Ceiling And Visibility OK
 COG,Center of Gravity
 CRDA,Converging Runway Display Aid
 CTA,Controlled Time of Arrival
+CTA,Controlled Area
 CTOT,Calculated Take-Off Time
+CTR,Control Zone or Controlled Traffic Region
+ECAC,European Civil Aviation Conference
+FIA,Flight Information Area
+FIR,Flight Information Region
+FL,Flight Level
 IAS,Indicated Air Speed
+LL,Lower Limit
+LTA,Lower Traffic Area
+MEA,Minimum En-route Altitude
+OCTA,Outside Control Areas
+TA,Terminal Airspace
+TAS,Terminal Airspace System
+TMA,Terminal Control Area
+UTA,Upper Traffic Area
+VTC,Visual Terminal Chart
