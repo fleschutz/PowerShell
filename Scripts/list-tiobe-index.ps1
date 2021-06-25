@@ -5,7 +5,7 @@
 .NOTES        Author: Markus Fleschutz / License: CC0
 #>
 
-function WriteBar { param([string]$Text, [float]$Value, [float]$Max, [string]$Hint)
+function WriteBar { param([string]$Text, [float]$Value, [float]$Max, [float]$Change)
 	$Num = ($Value * 70.0) / $Max
 	while ($Num -ge 1.0) {
 		write-host -noNewLine "█"
@@ -26,7 +26,12 @@ function WriteBar { param([string]$Text, [float]$Value, [float]$Max, [string]$Hi
 	} elseif ($Num -ge 0.125) {
 		write-host -noNewLine "▏"
 	}
-	"  $Text  $($Value)%  ($Hint)"
+	write-host -noNewLine "  $Text  $($Value)%"
+	if ($Change -ge 0.0) {
+		write-host -foregroundColor green " +$($Change)%"
+	} else {
+		write-host -foregroundColor red " $($Change)%"
+	}
 }
 
 try {
@@ -37,8 +42,8 @@ try {
 	foreach($Row in $Table) {
 		[string]$Name = $Row.Language
 		[float]$Value = $Row.Popularity
-		[string]$Hint = $Row.Change
-		WriteBar $Name $Value 14.0 $Hint
+		[float]$Change = $Row.Change
+		WriteBar $Name $Value 14.0 $Change
 	}
 	exit 0
 } catch {
