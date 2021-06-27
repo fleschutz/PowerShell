@@ -6,7 +6,7 @@
 #>
 
 function WriteBar { param([string]$Text, [float]$Value, [float]$Max, [float]$Change)
-	$Num = ($Value * 70.0) / $Max
+	$Num = ($Value * 100.0) / $Max
 	while ($Num -ge 1.0) {
 		write-host -noNewLine "█"
 		$Num -= 1.0
@@ -26,7 +26,7 @@ function WriteBar { param([string]$Text, [float]$Value, [float]$Max, [float]$Cha
 	} elseif ($Num -ge 0.125) {
 		write-host -noNewLine "▏"
 	}
-	write-host -noNewLine "  $Text  $($Value)%"
+	write-host -noNewLine " $Text $($Value)%"
 	if ($Change -ge 0.0) {
 		write-host -foregroundColor green " +$($Change)%"
 	} else {
@@ -36,6 +36,7 @@ function WriteBar { param([string]$Text, [float]$Value, [float]$Max, [float]$Cha
 
 try {
 	& write-big.ps1 "TIOBE INDEX 2021-06"
+	"                                           Source: https://www.tiobe.com"
 	""
 
 	$Table = import-csv "$PSScriptRoot/../Data/TIOBE-index.csv"
