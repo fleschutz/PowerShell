@@ -25,7 +25,7 @@ try {
 		$URL = $Row.URL
 
 		if (test-path "$ParentDir/$FolderName" -pathType container) {
-			"📂$FolderName for $AppName exists already, skipping..."
+			"📂$FolderName exists, skipping..."
 			continue
 		}
 		"🢃 Cloning $AppName into 📂$FolderName, $BranchName branch..."
