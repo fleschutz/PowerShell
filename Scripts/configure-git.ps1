@@ -22,6 +22,7 @@ try {
 	& git config --global core.symlinks true
 	& git config --global core.longpaths true
 	& git config --global init.defaultBranch main
+	& git config --global merge.renamelimit 99999
 	if ($lastExitCode -ne "0") { throw "'git config' for settings failed" }
 
 	# Basic shortcuts:
