@@ -24,19 +24,21 @@ try {
 	if ($lastExitCode -ne "0") { throw "'ipfs config Addresses.Gateway' failed" }
 
 	$Hostname = $(hostname)
-	& ipfs config --json API.HTTPHeaders.Access-Control-Allow-Origin '[\"http://hal:5001\", \"http://localhost:3000\", \"http://127.0.0.1:5001\", \"https://webui.ipfs.io\"]'
+	& ipfs config --json API.HTTPHeaders.Access-Control-Allow-Origin '[\"http://raspi:5001\", \"http://localhost:3000\", \"http://127.0.0.1:5001\", \"https://webui.ipfs.io\"]'
 	if ($lastExitCode -ne "0") { throw "'ipfs config Access-Control-Allow-Origin' failed" }
 
 	& ipfs config --json API.HTTPHeaders.Access-Control-Allow-Methods '[\"PUT\", \"POST\"]'
 	if ($lastExitCode -ne "0") { throw "'ipfs config Access-Control-Allow-Methods' failed" }
 
 	"Step 4/5: increasing UDP receive buffer size..."
+
 	& sudo sysctl -w net.core.rmem_max=2500000
 	if ($lastExitCode -ne "0") { throw "'sysctl' failed" }
 
 	"Step 5/5: starting daemon..."
 
-	Start-Process nohup 'ipfs daemon'
+#	Start-Process nohup 'ipfs daemon'
+	Start-Process nohup -ArgumentList 'ipfs','daemon' -RedirectStandardOutput "$HOME/console.out" -RedirectStandardError "$HOME/console.err"
 
 	"Done."
 	exit 0
