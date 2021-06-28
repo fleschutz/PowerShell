@@ -14,6 +14,7 @@ try {
 	$Null = (git --version)
 	if ($lastExitCode -ne "0") { throw "Can't execute 'git' - make sure Git is installed and available" }
 
+	# Basic settings:
 	& git config --global user.name $FullName
 	& git config --global user.email $EmailAddress
 	& git config --global core.editor $FavoriteEditor
@@ -23,7 +24,7 @@ try {
 	& git config --global core.longpaths true
 	& git config --global init.defaultBranch main
 	& git config --global merge.renamelimit 99999
-	if ($lastExitCode -ne "0") { throw "'git config' for settings failed" }
+	if ($lastExitCode -ne "0") { throw "'git config' failed (in basic settings)" }
 
 	# Basic shortcuts:
 	& git config --global alias.co "checkout"
@@ -36,9 +37,9 @@ try {
 	& git config --global alias.chp "cherry-pick --no-commit"
 	& git config --global alias.ls "log -n20 --pretty=format:'%Cred%h%Creset%C(yellow)%d%Creset %s %C(bold blue)by %an%Creset %C(green)%cr%Creset' --abbrev-commit"
 	& git config --global alias.smu "submodule update --init"
-	if ($lastExitCode -ne "0") { throw "'git config' for aliases failed" }
+	if ($lastExitCode -ne "0") { throw "'git config' failed (in basic shortcuts)" }
 
-	write-host -foregroundColor green "✔️ saved your Git configuration, it's now:"
+	"✔️ saved your Git configuration, it's now:"
 	& git config --list
 	if ($lastExitCode -ne "0") { throw "'git config --list' failed" }
 	exit 0
