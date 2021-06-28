@@ -19,15 +19,16 @@ try {
 
 	[int]$Count = 0
 	foreach($Row in $Table) {
-		$Directory = $Row.Directory
-		$Branch = $Row.Branch
+		$FolderName = $Row.FolderName
+		$BranchName = $Row.BranchName
 		$URL = $Row.URL
-		if (test-path "$ParentDir/$Directory" -pathType container) {
-			"📂$Directory exists already, skipping..."
+
+		if (test-path "$ParentDir/$FolderName" -pathType container) {
+			"📂$FolderName exists already, skipping..."
 			continue
 		}
-		"🢃 Cloning 📂$Directory from $URL, $Branch branch..."
-		& git clone --branch "$Branch" --recurse-submodules "$URL" "$ParentDir/$Directory"
+		"🢃 Cloning 📂$FolderName from $URL, $BranchName branch..."
+		& git clone --branch "$BranchName" --recurse-submodules "$URL" "$ParentDir/$FolderName"
 		if ($lastExitCode -ne "0") { throw "'git clone $URL' failed" }
 		$Count++
 	}
