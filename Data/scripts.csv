@@ -74,6 +74,7 @@ generate-qrcode.ps1, generates a QR code
 hibernate.ps1, enables hibernate mode for the local computer (needs admin rights)
 inspect-exe.ps1, prints basic information of the given executable file
 install-google-chrome.ps1, installs the Google Chrome browser
+install-signal-cli.ps1, installs signal-cli from github.com/AsamK/signal-cli
 introduce-powershell.ps1, introduces PowerShell to new users
 list-aliases.ps1, lists all PowerShell aliases 
 list-anagrams.ps1, lists all anagrams of the given word
