@@ -31,9 +31,10 @@ How to get the PowerShell Scripts?
 * Git users execute: `$ git clone https://github.com/fleschutz/PowerShell`
 * otherwise download it from: https://github.com/fleschutz/PowerShell/archive/master.zip
 
-Some Scripts show gibberish characters. How to fix that?
---------------------------------------------------------
-The PowerShell scripts support Unicode input & output! Use a modern console supporting UTF-8 such as Windows Terminal.
+
+Why do some Scripts show gibberish characters?
+----------------------------------------------
+Those PowerShell scripts are using Unicode input & output! Use a modern console supporting UTF-8 such as Windows Terminal, please.
 
 
 How to set PowerShell as Default Shell on Linux?
