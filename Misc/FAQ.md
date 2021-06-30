@@ -37,8 +37,8 @@ Why do some Scripts show gibberish characters?
 Those PowerShell scripts are using Unicode input & output! Use a modern console supporting UTF-8 such as Windows Terminal, please.
 
 
-How to set PowerShell as Default Shell on Linux?
-------------------------------------------------
+How to set PowerShell as My Default Shell on Linux?
+---------------------------------------------------
 Make sure PowerShell is installed, then execute: `chsh -s /usr/bin/pwsh <username>`. In case you experience an "invalid shell" error, add "/usr/bin/pwsh" to /etc/shells.
 
 
