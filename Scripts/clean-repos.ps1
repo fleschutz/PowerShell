@@ -17,11 +17,11 @@ try {
 
 	$Folders = (get-childItem "$ParentDir" -attributes Directory)
 	$ParentDirName = (get-item "$ParentDir").Name
-	"Cleaning $($Folders.Count) Git repositories at 📂$ParentDirName from untracked files ..."
+	"Found $($Folders.Count) Git repositories in 📂$ParentDirName ..."
 
 	foreach ($Folder in $Folders) {
 		$FolderName = (get-item "$Folder").Name
-		"🧹 Cleaning 📂$FolderName ..."
+		"🧹 Cleaning 📂$FolderName from untracked files..."
 
 		& git -C "$Folder" clean -xfd -f # force + recurse into dirs + don't use the standard ignore rules
 		if ($lastExitCode -ne "0") { throw "'git clean -xfd -f' failed" }
