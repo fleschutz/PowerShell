@@ -18,13 +18,13 @@ try {
 	$Folders = (get-childItem "$ParentDir" -attributes Directory)
 	$FolderCount = $Folders.Count
 	$ParentDirName = (get-item "$ParentDir").Name
-	"Found $FolderCount subfolders under 📂$ParentDirName..."
+	"Found $FolderCount subfolders in 📂$ParentDirName..."
 
 	[int]$Step = 0
 	foreach ($Folder in $Folders) {
 		$FolderName = (get-item "$Folder").Name
 		$Step++
-		"🢃 Pulling #$($Step): 📂$FolderName ..."
+		"🢃 Pulling 📂$FolderName (#$Step/$FolderCount)..."
 
 		& git -C "$Folder" pull --recurse-submodules --jobs=4
 		if ($lastExitCode -ne "0") { write-warning "'git pull' on 📂$FolderName failed" }
@@ -34,7 +34,7 @@ try {
 	}
 
 	[int]$Elapsed = $StopWatch.Elapsed.TotalSeconds
-	"✔️ pulled $FolderCount Git repositories under 📂$ParentDirName in $Elapsed sec"
+	"✔️ pulled $FolderCount Git repositories at 📂$ParentDirName in $Elapsed sec"
 	exit 0
 } catch {
 	write-error "⚠️ Error in line $($_.InvocationInfo.ScriptLineNumber): $($Error[0])"

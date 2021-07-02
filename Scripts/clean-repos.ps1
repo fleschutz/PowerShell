@@ -16,12 +16,13 @@ try {
 	if ($lastExitCode -ne "0") { throw "Can't execute 'git' - make sure Git is installed and available" }
 
 	$Folders = (get-childItem "$ParentDir" -attributes Directory)
+	$FolderCount = $Folders.Count
 	$ParentDirName = (get-item "$ParentDir").Name
-	"Found $($Folders.Count) Git repositories in 📂$ParentDirName ..."
+	"Found $FolderCount subfolders in 📂$ParentDirName..."
 
 	foreach ($Folder in $Folders) {
 		$FolderName = (get-item "$Folder").Name
-		"🧹 Cleaning 📂$FolderName from untracked files..."
+		"🧹 Cleaning 📂$FolderName from untracked files (#$Step/$FolderCount)..."
 
 		& git -C "$Folder" clean -xfd -f # force + recurse into dirs + don't use the standard ignore rules
 		if ($lastExitCode -ne "0") { throw "'git clean -xfd -f' failed" }
@@ -31,8 +32,7 @@ try {
 	}
 
 	[int]$Elapsed = $StopWatch.Elapsed.TotalSeconds
-	"✔️ cleaned $($Folders.Count) Git repositories at 📂$ParentDirName in $Elapsed sec"
-
+	"✔️ cleaned $FolderCount Git repositories at 📂$ParentDirName in $Elapsed sec"
 	exit 0
 } catch {
 	write-error "⚠️ Error in line $($_.InvocationInfo.ScriptLineNumber): $($Error[0])"
