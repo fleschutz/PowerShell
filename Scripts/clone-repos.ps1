@@ -19,7 +19,6 @@ try {
 
 	[int]$Count = 0
 	foreach($Row in $Table) {
-		[string]$AppName = $Row.AppName
 		[string]$FolderName = $Row.FolderName
 		[string]$Branch = $Row.Branch
 		[string]$Shallow = $Row.Shallow
@@ -30,10 +29,10 @@ try {
 			continue
 		}
 		if ($Shallow -eq "yes") {
-			"🢃 Cloning $AppName into 📂$FolderName, $Branch branch, shallow..."
+			"🢃 Cloning to 📂$FolderName, $Branch branch, shallow..."
 			& git clone --branch "$Branch" --depth 1 --shallow-submodules --recurse-submodules "$URL" "$ParentDir/$FolderName"
 		} else {
-			"🢃 Cloning $AppName into 📂$FolderName, $Branch branch, full history..."
+			"🢃 Cloning to 📂$FolderName, $Branch branch, full history..."
 			& git clone --branch "$Branch" --recurse-submodules "$URL" "$ParentDir/$FolderName"
 		}
 		if ($lastExitCode -ne "0") { throw "'git clone $URL' failed" }
