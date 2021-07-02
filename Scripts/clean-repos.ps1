@@ -20,6 +20,7 @@ try {
 	$ParentDirName = (get-item "$ParentDir").Name
 	"Found $FolderCount subfolders in 📂$ParentDirName..."
 
+	[int]$Step = 1
 	foreach ($Folder in $Folders) {
 		$FolderName = (get-item "$Folder").Name
 		"🧹 Cleaning 📂$FolderName from untracked files (#$Step/$FolderCount)..."
@@ -29,6 +30,8 @@ try {
 
 		& git -C "$Folder" submodule foreach --recursive git clean -xfd -f 
 		if ($lastExitCode -ne "0") { throw "'git clean -xfd -f' in submodules failed" }
+
+		$Step++
 	}
 
 	[int]$Elapsed = $StopWatch.Elapsed.TotalSeconds

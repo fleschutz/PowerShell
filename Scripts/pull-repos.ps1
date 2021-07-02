@@ -20,10 +20,9 @@ try {
 	$ParentDirName = (get-item "$ParentDir").Name
 	"Found $FolderCount subfolders in 📂$ParentDirName..."
 
-	[int]$Step = 0
+	[int]$Step = 1
 	foreach ($Folder in $Folders) {
 		$FolderName = (get-item "$Folder").Name
-		$Step++
 		"🢃 Pulling 📂$FolderName (#$Step/$FolderCount)..."
 
 		& git -C "$Folder" pull --recurse-submodules --jobs=4
@@ -31,6 +30,8 @@ try {
 
 		& git -C "$Folder" submodule update --init --recursive
 		if ($lastExitCode -ne "0") { throw "'git submodule update' failed" }
+
+		$Step++
 	}
 
 	[int]$Elapsed = $StopWatch.Elapsed.TotalSeconds
