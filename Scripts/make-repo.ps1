@@ -30,10 +30,13 @@ function MakeDir { param($Path)
 		set-location "$Path/"
 
 		& ./configure
-		if ($lastExitCode -ne "0") { throw "Script 'configure' exited with error code $lastExitCode" }
+		#if ($lastExitCode -ne "0") { throw "Script 'configure' exited with error code $lastExitCode" }
 
 		& make -j4
 		if ($lastExitCode -ne "0") { throw "Executing 'make -j4' has failed" }
+
+		& make test
+		if ($lastExitCode -ne "0") { throw "Executing 'make test' has failed" }
 
 	} elseif (test-path "$Path/autogen.sh" -pathType leaf) { 
 		"🔨 Building 📂$DirName using 'autogen.sh'..."
