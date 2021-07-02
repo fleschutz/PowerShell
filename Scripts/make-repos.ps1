@@ -13,15 +13,18 @@ try {
 	if (-not(test-path "$ParentDir" -pathType container)) { throw "Can't access directory: $ParentDir" }
 
 	$Folders = (get-childItem "$ParentDir" -attributes Directory)
+	$FolderCount = $Folders.Count
 	$ParentDirName = (get-item "$ParentDir").Name
-	"Building $($Folders.Count) Git repositories at 📂$ParentDirName..."
+	"Found $FolderCount subfolders in 📂$ParentDirName..."
 
+	[int]$Step = 1
 	foreach ($Folder in $Folders) {
 		& "$PSScriptRoot/make-repo.ps1" "$Folder"
+		$Step++
 	}
 
 	[int]$Elapsed = $StopWatch.Elapsed.TotalSeconds
-	"✔️ built $($Folders.Count) Git repositories at 📂$ParentDirName in $Elapsed sec"
+	"✔️ built $FolderCount Git repositories at 📂$ParentDirName in $Elapsed sec"
 	exit 0
 } catch {
 	write-error "⚠️ Error in line $($_.InvocationInfo.ScriptLineNumber): $($Error[0])"
