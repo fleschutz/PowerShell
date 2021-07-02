@@ -16,6 +16,8 @@ try {
 	if ($lastExitCode -ne "0") { throw "Can't execute 'git' - make sure Git is installed and available" }
 
 	$Table = import-csv "$PSScriptRoot/../Data/git-repos.csv"
+	$TableCount = $Table.count
+	"Found $TableCount entries in Data/git-repos.csv database..."
 
 	[int]$Count = 0
 	foreach($Row in $Table) {
