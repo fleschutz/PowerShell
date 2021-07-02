@@ -18,11 +18,11 @@ try {
 	$Null = (git --version)
 	if ($lastExitCode -ne "0") { throw "Can't execute 'git' - make sure Git is installed and available" }
 	
-	& git -C "$RepoDir" clean -fdx # force + recurse into dirs + don't use the standard ignore rules
-	if ($lastExitCode -ne "0") { throw "'git clean -fdx' failed" }
+	& git -C "$RepoDir" clean -xfd -f # force + recurse into dirs + don't use the standard ignore rules
+	if ($lastExitCode -ne "0") { throw "'git clean -xfd -f' failed" }
 
-	& git -C "$RepoDir" submodule foreach --recursive git clean -fdx 
-	if ($lastExitCode -ne "0") { throw "'git clean -fdx' in submodules failed" }
+	& git -C "$RepoDir" submodule foreach --recursive git clean -xfd -f
+	if ($lastExitCode -ne "0") { throw "'git clean -xfd -f' in submodules failed" }
 
 	[int]$Elapsed = $StopWatch.Elapsed.TotalSeconds
 	"✔️ cleaned Git repository 📂$RepoDirName in $Elapsed sec"

@@ -23,11 +23,11 @@ try {
 		$FolderName = (get-item "$Folder").Name
 		"🧹 Cleaning 📂$FolderName ..."
 
-		& git -C "$Folder" clean -fdx # force + recurse into dirs + don't use the standard ignore rules
-		if ($lastExitCode -ne "0") { throw "'git clean -fdx' failed" }
+		& git -C "$Folder" clean -xfd -f # force + recurse into dirs + don't use the standard ignore rules
+		if ($lastExitCode -ne "0") { throw "'git clean -xfd -f' failed" }
 
-		& git -C "$Folder" submodule foreach --recursive git clean -fdx 
-		if ($lastExitCode -ne "0") { throw "'git clean -fdx' in submodules failed" }
+		& git -C "$Folder" submodule foreach --recursive git clean -xfd -f 
+		if ($lastExitCode -ne "0") { throw "'git clean -xfd -f' in submodules failed" }
 	}
 
 	[int]$Elapsed = $StopWatch.Elapsed.TotalSeconds
