@@ -9,7 +9,7 @@
 if ($IsLinux) { $Username = $(whoami) } else { $Username = $env:USERNAME }
 $Time = (get-date).ToString('t')
 $host.ui.RawUI.WindowTitle = "$Username @ $(hostname)"
-"🧑$Username entered 📂$(get-location) at 💻$(hostname), it's $Time"
+"Welcome to 💻$(hostname) at 📂$(get-location), it's $Time"
 
 
 #  My Command Prompt
@@ -26,4 +26,3 @@ del alias:ls -force -errorAction SilentlyContinue
 set-alias -name ls -value list-dir.ps1
 set-alias -name .. -value cd-up.ps1		# 1 dir level up
 set-alias -name ... -value cd-up2.ps1		# 2 dir levels up
-set-alias -name .... -value cd-up3.ps1		# 3 dir levels up
