@@ -9,7 +9,7 @@
 if ($IsLinux) { $Username = $(whoami) } else { $Username = $env:USERNAME }
 $Time = (get-date).ToString('t')
 $host.ui.RawUI.WindowTitle = "$Username @ $(hostname)"
-"Welcome to 💻$(hostname) at 📂$(get-location), it's $Time"
+"Welcome to PowerShell at 📂$(get-location) on 💻$(hostname), it's $Time"
 
 
 #  My Command Prompt
