@@ -1,8 +1,14 @@
 <#
-.SYNTAX       convert-csv2txt.ps1 [<csv-file>]
-.DESCRIPTION  converts the given CSV file into a text list
-.LINK         https://github.com/fleschutz/PowerShell
-.NOTES        Author: Markus Fleschutz / License: CC0
+.SYNOPSIS
+	convert-csv2txt.ps1 [<csv-file>]
+.DESCRIPTION
+	Converts the given CSV file into a text list
+.EXAMPLE
+	PS> .\convert-csv2txt.ps1 salaries.csv
+.LINK
+	https://github.com/fleschutz/PowerShell
+.NOTES
+	Author: Markus Fleschutz / License: CC0
 #>
 
 param($Path = "")

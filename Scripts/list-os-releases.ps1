@@ -1,8 +1,14 @@
 <#
-.SYNTAX       list-os-releases.ps1
-.DESCRIPTION  lists OS releases and download URL
-.LINK         https://github.com/fleschutz/PowerShell
-.NOTES        Author: Markus Fleschutz / License: CC0
+.SYNOPSIS
+	list-os-releases.ps1
+.DESCRIPTION
+	Lists OS releases and download URL
+.EXAMPLE
+	PS> .\list-os-releases.ps1
+.LINK
+	https://github.com/fleschutz/PowerShell
+.NOTES
+	Author: Markus Fleschutz / License: CC0
 #>
 
 try {

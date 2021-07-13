@@ -1,8 +1,14 @@
 <#
-.SYNTAX       edit.ps1 <filename>
-.DESCRIPTION  starts the built-in text editor to edit the given file
-.LINK         https://github.com/fleschutz/PowerShell
-.NOTES        Author: Markus Fleschutz / License: CC0
+.SYNOPSIS
+	edit.ps1 <filename>
+.DESCRIPTION
+	Opens the built-in text editor to edit the given file
+.EXAMPLE
+	PS> .\edit.ps1 C:\MyFile.txt
+.LINK
+	https://github.com/fleschutz/PowerShell
+.NOTES
+	Author: Markus Fleschutz / License: CC0
 #>
 
 param($Filename = "")

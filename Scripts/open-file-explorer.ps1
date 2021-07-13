@@ -1,8 +1,14 @@
 <#
-.SYNTAX       open-file-explorer.ps1
-.DESCRIPTION  starts the File Explorerer
-.LINK         https://github.com/fleschutz/PowerShell
-.NOTES        Author: Markus Fleschutz / License: CC0
+.SYNOPSIS
+	open-file-explorer.ps1
+.DESCRIPTION
+	Starts the File Explorerer
+.EXAMPLE
+	PS> .\open-file-explorer.ps1
+.LINK
+	https://github.com/fleschutz/PowerShell
+.NOTES
+	Author: Markus Fleschutz / License: CC0
 #>
 
 try {

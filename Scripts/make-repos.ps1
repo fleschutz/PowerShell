@@ -1,8 +1,14 @@
 ﻿<#
-.SYNTAX       make-repos.ps1 [<parent-dir>]
-.DESCRIPTION  builds all Git repositories under the current/given directory
-.LINK         https://github.com/fleschutz/PowerShell
-.NOTES        Author: Markus Fleschutz / License: CC0
+.SYNOPSIS
+	make-repos.ps1 [<parent-dir>]
+.DESCRIPTION
+	Builds all Git repositories under the current/given directory
+.EXAMPLE
+	PS> .\make-repos.ps1 C:\MyRepos
+.LINK
+	https://github.com/fleschutz/PowerShell
+.NOTES
+	Author: Markus Fleschutz / License: CC0
 #>
 
 param($ParentDir = "$PWD")

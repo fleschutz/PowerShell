@@ -1,8 +1,14 @@
 <#
-.SYNTAX       reboot.ps1
-.DESCRIPTION  reboots the local computer (needs admin rights)
-.LINK         https://github.com/fleschutz/PowerShell
-.NOTES        Author: Markus Fleschutz / License: CC0
+.SYNOPSIS
+	reboot.ps1
+.DESCRIPTION
+	Reboots the local computer (needs admin rights)
+.EXAMPLE
+	PS> .\reboot.ps1
+.LINK
+	https://github.com/fleschutz/PowerShell
+.NOTES
+	Author: Markus Fleschutz / License: CC0
 #>
 
 #Requires -RunAsAdministrator

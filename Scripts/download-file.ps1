@@ -1,8 +1,14 @@
 <#
-.SYNTAX       download-file.ps1 [<URL>]
-.DESCRIPTION  downloads a file from the given URL
-.LINK         https://github.com/fleschutz/PowerShell
-.NOTES        Author: Markus Fleschutz / License: CC0
+.SYNOPSIS
+	download-file.ps1 [<URL>]
+.DESCRIPTION
+	Downloads a file from the given URL
+.EXAMPLE
+	PS> .\download-file.ps1 "https://www.cnn.com/index.html"
+.LINK
+	https://github.com/fleschutz/PowerShell
+.NOTES
+	Author: Markus Fleschutz / License: CC0
 #>
 
 param($URL = "")

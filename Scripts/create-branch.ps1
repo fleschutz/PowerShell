@@ -1,8 +1,14 @@
 ﻿<#
-.SYNTAX       create-branch.ps1 [<new-branch-name>] [<repo-dir>]
-.DESCRIPTION  creates and switches to a new branch in a Git repository 
-.LINK         https://github.com/fleschutz/PowerShell
-.NOTES        Author: Markus Fleschutz / License: CC0
+.SYNOPSIS
+	create-branch.ps1 [<new-branch-name>] [<repo-dir>]
+.DESCRIPTION
+	Creates and switches to a new branch in a Git repository 
+.EXAMPLE
+	PS> .\create-branch.ps1 moonshot
+.LINK
+	https://github.com/fleschutz/PowerShell
+.NOTES
+	Author: Markus Fleschutz / License: CC0
 #>
 
 param($NewBranchName = "", $RepoDir = "$PWD")

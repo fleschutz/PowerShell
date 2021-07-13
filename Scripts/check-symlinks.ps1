@@ -1,8 +1,14 @@
 <#
-.SYNTAX       check-symlinks.ps1 [<dir-tree>]
-.DESCRIPTION  checks every symlink in the given directory tree
-.LINK         https://github.com/fleschutz/PowerShell
-.NOTES        Author: Markus Fleschutz / License: CC0
+.SYNOPSIS
+	check-symlinks.ps1 [<dir-tree>]
+.DESCRIPTION
+	Checks every symlink in the given directory tree
+.EXAMPLE
+	PS> .\check-symlinks.ps1 C:\MyApp
+.LINK
+	https://github.com/fleschutz/PowerShell
+.NOTES
+	Author: Markus Fleschutz / License: CC0
 #>
 
 param($DirTree = "")

@@ -1,8 +1,14 @@
 ﻿<#
-.SYNTAX       check-ping.ps1 
-.DESCRIPTION  checks the ping latency to the internet
-.LINK         https://github.com/fleschutz/PowerShell
-.NOTES        Author: Markus Fleschutz / License: CC0
+.SYNOPSIS
+	check-ping.ps1 
+.DESCRIPTION
+	Checks the ping latency from the local computer to the internet
+.EXAMPLE
+	PS> .\check-ping.ps1
+.LINK
+	https://github.com/fleschutz/PowerShell
+.NOTES
+	Author: Markus Fleschutz / License: CC0
 #>
 
 try {

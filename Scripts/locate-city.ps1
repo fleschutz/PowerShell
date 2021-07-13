@@ -1,8 +1,14 @@
 <#
-.SYNTAX       locate-city.ps1 [<city>]
-.DESCRIPTION  prints the geographic location of the given city
-.LINK         https://github.com/fleschutz/PowerShell
-.NOTES        Author: Markus Fleschutz / License: CC0
+.SYNOPSIS
+	locate-city.ps1 [<city>]
+.DESCRIPTION
+	Prints the geographic location of the given city
+.EXAMPLE
+	PS> .\locate-city.ps1 Paris
+.LINK
+	https://github.com/fleschutz/PowerShell
+.NOTES
+	Author: Markus Fleschutz / License: CC0
 #>
 
 param($City = "")

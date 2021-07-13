@@ -1,8 +1,14 @@
 ﻿<#
-.SYNTAX       wakeup.ps1 [<MAC-address>] [<IP-address>]
-.DESCRIPTION  sends a magic packet to the given computer to wake him up
-.LINK         https://github.com/fleschutz/PowerShell
-.NOTES        Author: Markus Fleschutz / License: CC0
+.SYNOPSIS
+	wakeup.ps1 [<MAC-address>] [<IP-address>]
+.DESCRIPTION
+	Sends a magic packet to the given computer to wake him up
+.EXAMPLE
+	PS> .\wakeup.ps1 11:22:33:44:55:66 192.168.100.100
+.LINK
+	https://github.com/fleschutz/PowerShell
+.NOTES
+	Author: Markus Fleschutz / License: CC0
 #>
 
 param($MACaddress = "", $IPaddress = "", [int]$Port=9)

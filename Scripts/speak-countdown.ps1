@@ -1,8 +1,14 @@
 <#
-.SYNTAX       speak-countdown.ps1 [start-number]
-.DESCRIPTION  starts a countdown by text-to-speech (TTS)
-.LINK         https://github.com/fleschutz/PowerShell
-.NOTES        Author: Markus Fleschutz / License: CC0
+.SYNOPSIS
+	speak-countdown.ps1 [start-number]
+.DESCRIPTION
+	Speaks a countdown by text-to-speech (TTS)
+.EXAMPLE
+	PS> .\speak-countdown.ps1 60
+.LINK
+	https://github.com/fleschutz/PowerShell
+.NOTES
+	Author: Markus Fleschutz / License: CC0
 #>
 
 param([int]$StartNumber = 10)

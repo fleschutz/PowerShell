@@ -1,8 +1,14 @@
 ﻿<#
-.SYNTAX       turn-volume-down.ps1 [<percent>]
-.DESCRIPTION  turns the audio volume down (-10% by default)
-.LINK         https://github.com/fleschutz/PowerShell
-.NOTES        Author: Markus Fleschutz / License: CC0
+.SYNOPSIS
+	turn-volume-down.ps1 [<percent>]
+.DESCRIPTION
+	Turns the audio volume down (-10% by default)
+.EXAMPLE
+	PS> .\turn-volume-down.ps1
+.LINK
+	https://github.com/fleschutz/PowerShell
+.NOTES
+	Author: Markus Fleschutz / License: CC0
 #>
 
 param([int]$Percent = 10)

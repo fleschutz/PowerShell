@@ -1,8 +1,14 @@
 <#
-.SYNTAX       write-uppercase.ps1 [<text>]
-.DESCRIPTION  writes the given text in uppercase letters
-.LINK         https://github.com/fleschutz/PowerShell
-.NOTES        Author: Markus Fleschutz / License: CC0
+.SYNOPSIS
+	write-uppercase.ps1 [<text>]
+.DESCRIPTION
+	Writes the given text in uppercase letters
+.EXAMPLE
+	PS> .\write-uppercase.ps1 "Hello World"
+.LINK
+	https://github.com/fleschutz/PowerShell
+.NOTES
+	Author: Markus Fleschutz / License: CC0
 #>
 
 param($Text = "")

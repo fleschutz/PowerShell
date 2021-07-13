@@ -1,8 +1,14 @@
 <#
-.SYNTAX       list-cheat-sheet.ps1 
-.DESCRIPTION  lists the PowerShell cheat sheet 
-.LINK         https://github.com/fleschutz/PowerShell
-.NOTES        Author: Markus Fleschutz / License: CC0
+.SYNOPSIS
+	list-cheat-sheet.ps1 
+.DESCRIPTION
+	Lists the PowerShell cheat sheet 
+.EXAMPLE
+	PS> .\list-cheat-sheet.ps1
+.LINK
+	https://github.com/fleschutz/PowerShell
+.NOTES
+	Author: Markus Fleschutz / License: CC0
 #>
 
 "PowerShell Cheat Sheet"

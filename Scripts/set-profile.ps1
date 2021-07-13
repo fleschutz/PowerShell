@@ -1,8 +1,14 @@
 ﻿<#
-.SYNTAX       set-profile.ps1
-.DESCRIPTION  sets the PowerShell profile for the current user
-.LINK         https://github.com/fleschutz/PowerShell
-.NOTES        Author: Markus Fleschutz / License: CC0
+.SYNOPSIS
+	set-profile.ps1
+.DESCRIPTION
+	Sets the PowerShell profile for the current user
+.EXAMPLE
+	PS> .\set-profile.ps1
+.LINK
+	https://github.com/fleschutz/PowerShell
+.NOTES
+	Author: Markus Fleschutz / License: CC0
 #>
 
 try {

@@ -1,8 +1,14 @@
 ﻿<#
-.SYNTAX       list-timezone.ps1 
-.DESCRIPTION  lists the details of the current time zone 
-.LINK         https://github.com/fleschutz/PowerShell
-.NOTES        Author: Markus Fleschutz / License: CC0
+.SYNOPSIS
+	list-timezone.ps1 
+.DESCRIPTION
+	Lists the details of the current time zone 
+.EXAMPLE
+	PS> .\list-timezone.ps1
+.LINK
+	https://github.com/fleschutz/PowerShell
+.NOTES
+	Author: Markus Fleschutz / License: CC0
 #>
 
 try {

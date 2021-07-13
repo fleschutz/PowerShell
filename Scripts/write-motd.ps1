@@ -1,8 +1,14 @@
 <#
-.SYNTAX       write-motd.ps1 
-.DESCRIPTION  writes the message of the day (MOTD)
-.LINK         https://github.com/fleschutz/PowerShell
-.NOTES        Author: Markus Fleschutz / License: CC0
+.SYNOPSIS
+	write-motd.ps1 
+.DESCRIPTION
+	Writes the message of the day (MOTD)
+.EXAMPLE
+	PS> .\write-motd.ps1 
+.LINK
+	https://github.com/fleschutz/PowerShell
+.NOTES
+	Author: Markus Fleschutz / License: CC0
 #>
 
 # Retrieve information:

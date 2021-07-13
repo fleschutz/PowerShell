@@ -1,8 +1,14 @@
 <#
-.SYNTAX       introduce-powershell.ps1
-.DESCRIPTION  introduces PowerShell to new users
-.LINK         https://github.com/fleschutz/PowerShell
-.NOTES        Author: Markus Fleschutz / License: CC0
+.SYNOPSIS
+	introduce-powershell.ps1
+.DESCRIPTION
+	Introduces PowerShell to new users
+.EXAMPLE
+	PS> .\introduce-powershell.ps1
+.LINK
+	https://github.com/fleschutz/PowerShell
+.NOTES
+	Author: Markus Fleschutz / License: CC0
 #>
 
 try {

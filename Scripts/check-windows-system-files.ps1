@@ -1,8 +1,14 @@
 ﻿<#
-.SYNTAX       check-windows-system-files.ps1 
-.DESCRIPTION  checks the validity of the Windows system files (requires admin rights)
-.LINK         https://github.com/fleschutz/PowerShell
-.NOTES        Author: Markus Fleschutz / License: CC0
+.SYNOPSIS
+	check-windows-system-files.ps1 
+.DESCRIPTION
+	Checks the validity of the Windows system files (requires admin rights)
+.EXAMPLE
+	PS> .\check-windows-system-files.ps1
+.LINK
+	https://github.com/fleschutz/PowerShell
+.NOTES
+	Author: Markus Fleschutz / License: CC0
 #>
 
 #Requires -RunAsAdministrator

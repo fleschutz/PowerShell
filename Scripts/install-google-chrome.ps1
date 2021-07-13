@@ -1,8 +1,14 @@
 ﻿<#
-.SYNTAX       install-google-chrome.ps1
-.DESCRIPTION  silently installs latest Google Chrome
-.LINK         https://github.com/fleschutz/PowerShell
-.NOTES        Author: Markus Fleschutz / License: CC0
+.SYNOPSIS
+	install-google-chrome.ps1
+.DESCRIPTION
+	Silently installs latest Google Chrome
+.EXAMPLE
+	PS> .\install-google-chrome.ps1
+.LINK
+	https://github.com/fleschutz/PowerShell
+.NOTES
+	Author: Markus Fleschutz / License: CC0
 #>
 
 try {

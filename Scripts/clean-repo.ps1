@@ -1,8 +1,14 @@
 ﻿<#
-.SYNTAX       clean-repo.ps1 [<repo-dir>]
-.DESCRIPTION  cleans a Git repository from untracked files (including submodules, e.g. for a fresh build)
-.LINK         https://github.com/fleschutz/PowerShell
-.NOTES        Author: Markus Fleschutz / License: CC0
+.SYNOPSIS
+	clean-repo.ps1 [<repo-dir>]
+.DESCRIPTION
+	Cleans a Git repository from untracked files (including submodules, e.g. for a fresh build)
+.EXAMPLE
+	PS> .\clean-repo.ps1 C:\MyRepo
+.LINK
+	https://github.com/fleschutz/PowerShell
+.NOTES
+	Author: Markus Fleschutz / License: CC0
 #>
 
 param($RepoDir = "$PWD")

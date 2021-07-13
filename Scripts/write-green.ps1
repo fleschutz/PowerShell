@@ -1,9 +1,14 @@
-#!/usr/bin/pwsh
 <#
-.SYNTAX       write-green.ps1 [<text>]
-.DESCRIPTION  writes the given text in a green foreground color
-.LINK         https://github.com/fleschutz/PowerShell
-.NOTES        Author: Markus Fleschutz / License: CC0
+.SYNOPSIS
+	write-green.ps1 [<text>]
+.DESCRIPTION
+	Writes the given text in a green foreground color
+.EXAMPLE
+	PS> .\write-green.ps1 "Hello World"
+.LINK
+	https://github.com/fleschutz/PowerShell
+.NOTES
+	Author: Markus Fleschutz / License: CC0
 #>
 
 param($Text = "")

@@ -1,8 +1,14 @@
 <#
-.SYNTAX       new-email.ps1 [<address>]
-.DESCRIPTION  starts the default email client to write a new email
-.LINK         https://github.com/fleschutz/PowerShell
-.NOTES        Author: Markus Fleschutz / License: CC0
+.SYNOPSIS
+	new-email.ps1 [<address>]
+.DESCRIPTION
+	Opens the default email client to write a new email
+.EXAMPLE
+	PS> .\new-email.ps1
+.LINK
+	https://github.com/fleschutz/PowerShell
+.NOTES
+	Author: Markus Fleschutz / License: CC0
 #>
 
 param($EmailAddress = "markus@fleschutz.de")

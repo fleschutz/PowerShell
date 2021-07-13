@@ -1,8 +1,14 @@
 <#
-.SYNTAX       locate-zip-code.ps1 [<country-code>] [<zip-code>]
-.DESCRIPTION  prints the geographic location of the given zip-code
-.LINK         https://github.com/fleschutz/PowerShell
-.NOTES        Author: Markus Fleschutz / License: CC0
+.SYNOPSIS
+	locate-zip-code.ps1 [<country-code>] [<zip-code>]
+.DESCRIPTION
+	Prints the geographic location of the given zip-code
+.EXAMPLE
+	PS> .\locate-zip-code.ps1
+.LINK
+	https://github.com/fleschutz/PowerShell
+.NOTES
+	Author: Markus Fleschutz / License: CC0
 #>
 
 param($CountryCode = "", $ZipCode = "")

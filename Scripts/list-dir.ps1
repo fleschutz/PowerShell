@@ -1,8 +1,14 @@
 ﻿<#
-.SYNTAX       list-dir.ps1 [<pattern>]
-.DESCRIPTION  lists the directory content formatted in columns
-.LINK         https://github.com/fleschutz/PowerShell
-.NOTES        Author: Markus Fleschutz / License: CC0
+.SYNOPSIS
+	list-dir.ps1 [<pattern>]
+.DESCRIPTION
+	Lists the directory content formatted in columns
+.EXAMPLE
+	PS> .\list-dir.ps1 C:\
+.LINK
+	https://github.com/fleschutz/PowerShell
+.NOTES
+	Author: Markus Fleschutz / License: CC0
 #>
 
 param($Pattern = "*")

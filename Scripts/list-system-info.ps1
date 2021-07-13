@@ -1,8 +1,14 @@
 <#
-.SYNTAX       list-system-info.ps1
-.DESCRIPTION  lists system information on the local computer
-.LINK         https://github.com/fleschutz/PowerShell
-.NOTES        Author: Markus Fleschutz / License: CC0
+.SYNOPSIS
+	list-system-info.ps1
+.DESCRIPTION
+	Lists system information on the local computer
+.EXAMPLE
+	PS> .\list-system-info.ps1
+.LINK
+	https://github.com/fleschutz/PowerShell
+.NOTES
+	Author: Markus Fleschutz / License: CC0
 #>
 
 # RAM

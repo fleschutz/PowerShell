@@ -1,8 +1,14 @@
 ﻿<#
-.SYNTAX       translate-text.ps1 [<text>] [<source-lang>] [<target-lang>]
-.DESCRIPTION  translates the given text into other languages
-.LINK         https://github.com/fleschutz/PowerShell
-.NOTES        Author: Markus Fleschutz / License: CC0
+.SYNOPSIS
+	translate-text.ps1 [<text>] [<source-lang>] [<target-lang>]
+.DESCRIPTION
+	Translates the given text into other languages
+.EXAMPLE
+	PS> .\translate-text.ps1 "Hello World" de en
+.LINK
+	https://github.com/fleschutz/PowerShell
+.NOTES
+	Author: Markus Fleschutz / License: CC0
 #>
 
 param($Text = "", $SourceLang = "en", $TargetLang = "any")

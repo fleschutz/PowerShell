@@ -1,8 +1,14 @@
 ﻿<#
-.SYNTAX       create-shortcut.ps1 [<shortcut>] [<target>] [<description>]
-.DESCRIPTION  creates a new shortcut
-.LINK         https://github.com/fleschutz/PowerShell
-.NOTES        Author: Markus Fleschutz / License: CC0
+.SYNOPSIS
+	create-shortcut.ps1 [<shortcut>] [<target>] [<description>]
+.DESCRIPTION
+	Creates a new shortcut file
+.EXAMPLE
+	PS> .\create-shortcut.ps1 C:\Temp\HDD C:\
+.LINK
+	https://github.com/fleschutz/PowerShell
+.NOTES
+	Author: Markus Fleschutz / License: CC0
 #>
 
 param($Shortcut = "", $Target = "", $Description)

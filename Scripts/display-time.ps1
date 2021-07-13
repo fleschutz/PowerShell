@@ -1,8 +1,14 @@
 <#
-.SYNTAX       display-time.ps1 [<seconds>]
-.DESCRIPTION  displays the current time for 10 seconds by default
-.LINK         https://github.com/fleschutz/PowerShell
-.NOTES        Author: Markus Fleschutz / License: CC0
+.SYNOPSIS
+	display-time.ps1 [<seconds>]
+.DESCRIPTION
+	Displays the current time (for 10 seconds by default)
+.EXAMPLE
+	PS> .\display-time.ps1
+.LINK
+	https://github.com/fleschutz/PowerShell
+.NOTES
+	Author: Markus Fleschutz / License: CC0
 #>
 
 param([int]$Seconds = 10)

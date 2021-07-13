@@ -1,9 +1,14 @@
-#!/usr/bin/pwsh
 <#
-.SYNTAX       write-braille.ps1 [<text>]
-.DESCRIPTION  writes the given text in Braille
-.LINK         https://github.com/fleschutz/PowerShell
-.NOTES        Author: Markus Fleschutz / License: CC0
+.SYNOPSIS
+	write-braille.ps1 [<text>]
+.DESCRIPTION
+	Writes the given text in Braille
+.EXAMPLE
+	PS> .\write-braille.ps1 "Hello World"
+.LINK
+	https://github.com/fleschutz/PowerShell
+.NOTES
+	Author: Markus Fleschutz / License: CC0
 #>
 
 param($Text = "")

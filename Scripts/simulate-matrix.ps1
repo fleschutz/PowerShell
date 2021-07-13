@@ -1,8 +1,14 @@
 <#
-.SYNTAX       simulate-matrix.ps1 
-.DESCRIPTION  simulates the Matrix (fun)
-.LINK         https://github.com/fleschutz/PowerShell
-.NOTES        Author: Markus Fleschutz / License: CC0
+.SYNOPSIS
+	simulate-matrix.ps1 
+.DESCRIPTION
+	Simulates the Matrix (fun)
+.EXAMPLE
+	PS> .\simulate-matrix.ps1
+.LINK
+	https://github.com/fleschutz/PowerShell
+.NOTES
+	Author: Markus Fleschutz / License: CC0
 #>
 
 try {

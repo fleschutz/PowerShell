@@ -1,8 +1,14 @@
 ﻿<#
-.SYNTAX       mute-audio.ps1
-.DESCRIPTION  mutes the audio output
-.LINK         https://github.com/fleschutz/PowerShell
-.NOTES        Author: Markus Fleschutz / License: CC0
+.SYNOPSIS
+	mute-audio.ps1
+.DESCRIPTION
+	Mutes the audio output
+.EXAMPLE
+	PS> .\mute-audio.ps1
+.LINK
+	https://github.com/fleschutz/PowerShell
+.NOTES
+	Author: Markus Fleschutz / License: CC0
 #>
 
 try {

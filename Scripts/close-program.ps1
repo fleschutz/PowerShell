@@ -1,8 +1,14 @@
 ﻿<#
-.SYNTAX       close-program.ps1 [<full-program-name>] [<program-name>] [<program-alias-name>]
-.DESCRIPTION  closes the processes of the given program gracefully
-.LINK         https://github.com/fleschutz/PowerShell
-.NOTES        Author: Markus Fleschutz / License: CC0
+.SYNOPSIS
+	close-program.ps1 [<full-program-name>] [<program-name>] [<program-alias-name>]
+.DESCRIPTION
+	Closes the processes of the given program gracefully
+.EXAMPLE
+	PS> .\close-program.ps1 "Google Chrome" "chrome.exe"
+.LINK
+	https://github.com/fleschutz/PowerShell
+.NOTES
+	Author: Markus Fleschutz / License: CC0
 #>
 
 param($FullProgramName = "", $ProgramName = "", $ProgramAliasName = "")

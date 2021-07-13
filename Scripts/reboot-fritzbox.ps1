@@ -1,8 +1,14 @@
 <#
-.SYNTAX       reboot-fritzbox.ps1 [<username>] [<password>]
-.DESCRIPTION  reboots the FRITZ!Box device
-.LINK         https://github.com/fleschutz/PowerShell
-.NOTES        Author: Markus Fleschutz / License: CC0
+.SYNOPSIS
+	reboot-fritzbox.ps1 [<username>] [<password>]
+.DESCRIPTION
+	Reboots the FRITZ!Box device
+.EXAMPLE
+	PS> .\reboot-fritzbox.ps1 
+.LINK
+	https://github.com/fleschutz/PowerShell
+.NOTES
+	Author: Markus Fleschutz / License: CC0
 #>
 
 param($USERNAME = "", $PASSWORD = "")

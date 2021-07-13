@@ -1,8 +1,14 @@
 <#
-.SYNTAX       set-timer.ps1 [<seconds>]
-.DESCRIPTION  sets a timer for a countdown
-.LINK         https://github.com/fleschutz/PowerShell
-.NOTES        Author: Markus Fleschutz / License: CC0
+.SYNOPSIS
+	set-timer.ps1 [<seconds>]
+.DESCRIPTION
+	Sets a timer for a countdown
+.EXAMPLE
+	PS> .\set-timer.ps1 60
+.LINK
+	https://github.com/fleschutz/PowerShell
+.NOTES
+	Author: Markus Fleschutz / License: CC0
 #>
 
 param([int]$Seconds = 0)

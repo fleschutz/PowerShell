@@ -1,8 +1,14 @@
 ﻿<#
-.SYNTAX       fetch-repo.ps1 [<repo-dir>]
-.DESCRIPTION  fetches updates for a local Git repository (including submodules)
-.LINK         https://github.com/fleschutz/PowerShell
-.NOTES        Author: Markus Fleschutz / License: CC0
+.SYNOPSIS
+	fetch-repo.ps1 [<repo-dir>]
+.DESCRIPTION
+	Fetches updates for a local Git repository (including submodules)
+.EXAMPLE
+	PS> .\fetch-repo.ps1
+.LINK
+	https://github.com/fleschutz/PowerShell
+.NOTES
+	Author: Markus Fleschutz / License: CC0
 #>
 
 param($RepoDir = "$PWD")

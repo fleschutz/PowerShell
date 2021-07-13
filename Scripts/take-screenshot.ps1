@@ -1,8 +1,14 @@
 ﻿<#
-.SYNTAX       take-screenshot.ps1 [<directory>]
-.DESCRIPTION  takes a single screenshot and saves it into the current/given directory
-.LINK         https://github.com/fleschutz/PowerShell
-.NOTES        Author: Markus Fleschutz / License: CC0
+.SYNOPSIS
+	take-screenshot.ps1 [<directory>]
+.DESCRIPTION
+	Takes a single screenshot and saves it into the current/given directory
+.EXAMPLE
+	PS> .\take-screenshot.ps1 C:\Temp
+.LINK
+	https://github.com/fleschutz/PowerShell
+.NOTES
+	Author: Markus Fleschutz / License: CC0
 #>
 
 param($Directory = "$PWD")

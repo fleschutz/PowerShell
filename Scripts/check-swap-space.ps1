@@ -1,8 +1,14 @@
 ﻿<#
-.SYNTAX       check-swap-space.ps1 [<min-level>]
-.DESCRIPTION  checks the free swap space 
-.LINK         https://github.com/fleschutz/PowerShell
-.NOTES        Author: Markus Fleschutz / License: CC0
+.SYNOPSIS
+	check-swap-space.ps1 [<min-level>]
+.DESCRIPTION
+	Checks the free swap space 
+.EXAMPLE
+	PS> .\check-swap-space.ps1
+.LINK
+	https://github.com/fleschutz/PowerShell
+.NOTES
+	Author: Markus Fleschutz / License: CC0
 #>
 
 param([int]$MinLevel = 50) # minimum level in GB

@@ -1,8 +1,14 @@
 ﻿<#
-.SYNTAX       install-signal-cli.ps1 [<version>]
-.DESCRIPTION  installs signal-cli from github.com/AsamK/signal-cli
-.LINK         https://github.com/fleschutz/PowerShell
-.NOTES        Author: Markus Fleschutz / License: CC0
+.SYNOPSIS
+	install-signal-cli.ps1 [<version>]
+.DESCRIPTION
+	Installs signal-cli from github.com/AsamK/signal-cli. See the Web page for the correct version number.
+.EXAMPLE
+	PS> .\install-signal-cli.ps1 0.11.12
+.LINK
+	https://github.com/fleschutz/PowerShell
+.NOTES
+	Author: Markus Fleschutz / License: CC0
 #>
 
 param($Version = "")

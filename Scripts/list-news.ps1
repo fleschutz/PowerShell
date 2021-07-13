@@ -1,8 +1,14 @@
 ﻿<#
-.SYNTAX       list-news.ps1 [<RSS-URL>] [<max-count>]
-.DESCRIPTION  lists the latest news
-.LINK         https://github.com/fleschutz/PowerShell
-.NOTES        Author: Markus Fleschutz / License: CC0
+.SYNOPSIS
+	list-news.ps1 [<RSS-URL>] [<max-count>]
+.DESCRIPTION
+	Lists the latest news
+.EXAMPLE
+	PS> .\list-news.ps1
+.LINK
+	https://github.com/fleschutz/PowerShell
+.NOTES
+	Author: Markus Fleschutz / License: CC0
 #>
 
 param($RSS_URL = "https://yahoo.com/news/rss/world", [int]$MaxCount = 20)

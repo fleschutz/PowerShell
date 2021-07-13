@@ -1,8 +1,14 @@
 ﻿<#
-.SYNTAX       what-is.ps1 [<abbreviation>]
-.DESCRIPTION  prints a description of the given abbreviation
-.LINK         https://github.com/fleschutz/PowerShell
-.NOTES        Author: Markus Fleschutz / License: CC0
+.SYNOPSIS
+	what-is.ps1 [<abbreviation>]
+.DESCRIPTION
+	Prints a description of the given abbreviation
+.EXAMPLE
+	PS> .\what-is.ps1 CIA
+.LINK
+	https://github.com/fleschutz/PowerShell
+.NOTES
+	Author: Markus Fleschutz / License: CC0
 #>
 
 param($Abbreviation = "")

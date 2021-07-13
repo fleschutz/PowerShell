@@ -1,8 +1,14 @@
 <#
-.SYNTAX       poweroff.ps1
-.DESCRIPTION  halts the local computer (needs admin rights)
-.LINK         https://github.com/fleschutz/PowerShell
-.NOTES        Author: Markus Fleschutz / License: CC0
+.SYNOPSIS
+	poweroff.ps1
+.DESCRIPTION
+	Halts the local computer (needs admin rights)
+.EXAMPLE
+	PS> .\poweroff.ps1
+.LINK
+	https://github.com/fleschutz/PowerShell
+.NOTES
+	Author: Markus Fleschutz / License: CC0
 #>
 
 #Requires -RunAsAdministrator

@@ -1,8 +1,14 @@
 ﻿<#
-.SYNTAX       list-empty-dirs.ps1 [<dir-tree>]
-.DESCRIPTION  lists empty subfolders within the given directory tree
-.LINK         https://github.com/fleschutz/PowerShell
-.NOTES        Author: Markus Fleschutz / License: CC0
+.SYNOPSIS
+	list-empty-dirs.ps1 [<dir-tree>]
+.DESCRIPTION
+	Lists empty subfolders within the given directory tree
+.EXAMPLE
+	PS> .\list-empty-dirs.ps1 C:\
+.LINK
+	https://github.com/fleschutz/PowerShell
+.NOTES
+	Author: Markus Fleschutz / License: CC0
 #>
 
 param($DirTree = "$PWD")

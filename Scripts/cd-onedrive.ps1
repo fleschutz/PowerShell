@@ -1,8 +1,14 @@
 ﻿<#
-.SYNTAX       cd-onedrive.ps1 
-.DESCRIPTION  go to the user's OneDrive folder
-.LINK         https://github.com/fleschutz/PowerShell
-.NOTES        Author: Markus Fleschutz / License: CC0
+.SYNOPSIS
+	cd-onedrive.ps1 
+.DESCRIPTION
+	Go to the user's OneDrive folder
+.EXAMPLE
+	PS> .\cd-onedrive.ps1
+.LINK
+	https://github.com/fleschutz/PowerShell
+.NOTES
+	Author: Markus Fleschutz / License: CC0
 #>
 
 $TargetDir = resolve-path "$HOME/OneDrive"

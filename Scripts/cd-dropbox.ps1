@@ -1,8 +1,14 @@
 ﻿<#
-.SYNTAX       cd-dropbox.ps1 
-.DESCRIPTION  go to the user's Dropbox folder
-.LINK         https://github.com/fleschutz/PowerShell
-.NOTES        Author: Markus Fleschutz / License: CC0
+.SYNOPSIS
+	cd-dropbox.ps1 
+.DESCRIPTION
+	Go to the user's Dropbox folder
+.EXAMPLE
+	PS> .\cd-dropbox.ps1
+.LINK
+	https://github.com/fleschutz/PowerShell
+.NOTES
+	Author: Markus Fleschutz / License: CC0
 #>
 
 $TargetDir = resolve-path "$HOME/Dropbox"

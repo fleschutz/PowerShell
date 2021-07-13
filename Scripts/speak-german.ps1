@@ -1,8 +1,14 @@
 <#
-.SYNTAX       speak-german.ps1 [<text>]
-.DESCRIPTION  speaks the given text with a German text-to-speech (TTS) voice
-.LINK         https://github.com/fleschutz/PowerShell
-.NOTES        Author: Markus Fleschutz / License: CC0
+.SYNOPSIS
+	speak-german.ps1 [<text>]
+.DESCRIPTION
+	Speaks the given text with a German text-to-speech (TTS) voice
+.EXAMPLE
+	PS> .\speak-german.ps1 "Sauerkraut"
+.LINK
+	https://github.com/fleschutz/PowerShell
+.NOTES
+	Author: Markus Fleschutz / License: CC0
 #>
 
 param($Text = "")

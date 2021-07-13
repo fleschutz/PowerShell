@@ -1,8 +1,14 @@
 <#
-.SYNTAX       locate-ipaddress.ps1 [<IPaddress>]
-.DESCRIPTION  prints the geographic location of the given IP address
-.LINK         https://github.com/fleschutz/PowerShell
-.NOTES        Author: Markus Fleschutz / License: CC0
+.SYNOPSIS
+	locate-ipaddress.ps1 [<IPaddress>]
+.DESCRIPTION
+	Prints the geographic location of the given IP address
+.EXAMPLE
+	PS> .\locate-ipaddress.ps1 177.144.67.98
+.LINK
+	https://github.com/fleschutz/PowerShell
+.NOTES
+	Author: Markus Fleschutz / License: CC0
 #>
 
 param($IPaddr = "")

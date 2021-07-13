@@ -1,8 +1,14 @@
 <#
-.SYNTAX       list-credits.ps1
-.DESCRIPTION  shows the credits
-.LINK         https://github.com/fleschutz/PowerShell
-.NOTES        Author: Markus Fleschutz / License: CC0
+.SYNOPSIS
+	list-credits.ps1
+.DESCRIPTION
+	Shows the credits for the PowerShell Scripts
+.EXAMPLE
+	PS> .\list-credits.ps1
+.LINK
+	https://github.com/fleschutz/PowerShell
+.NOTES
+	Author: Markus Fleschutz / License: CC0
 #>
 
 try {

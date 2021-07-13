@@ -1,8 +1,14 @@
 ﻿<#
-.SYNTAX       list-city-weather.ps1
-.DESCRIPTION  list the current weather of cities world-wide (west to east)
-.LINK         https://github.com/fleschutz/PowerShell
-.NOTES        Author: Markus Fleschutz / License: CC0
+.SYNOPSIS
+	list-city-weather.ps1
+.DESCRIPTION
+	List the current weather of cities world-wide (west to east)
+.EXAMPLE
+	PS> .\list-city-weather.ps1
+.LINK
+	https://github.com/fleschutz/PowerShell
+.NOTES
+	Author: Markus Fleschutz / License: CC0
 #>
 
 $Cities="Hawaii","Los Angeles","Mexico City","Miami","New York","Rio de Janeiro","Paris","London","Berlin","Cape Town","Dubai","Mumbai","Singapore","Hong Kong","Peking","Tokyo","Sydney"

@@ -1,8 +1,14 @@
 ﻿<#
-.SYNTAX       cd-recycle-bin.ps1 
-.DESCRIPTION  go to the user's recycle bin folder 
-.LINK         https://github.com/fleschutz/PowerShell
-.NOTES        Author: Markus Fleschutz / License: CC0
+.SYNOPSIS
+	cd-recycle-bin.ps1 
+.DESCRIPTION
+	Go to the user's recycle bin folder 
+.EXAMPLE
+	PS> .\cd-recycle-bin.ps1 
+.LINK
+	https://github.com/fleschutz/PowerShell
+.NOTES
+	Author: Markus Fleschutz / License: CC0
 #>
 
 function Get-CurrentUserSID { [CmdletBinding()] param()

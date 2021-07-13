@@ -1,8 +1,14 @@
 ﻿<#
-.SYNTAX       cd-up.ps1
-.DESCRIPTION  go one directory level up
-.LINK         https://github.com/fleschutz/PowerShell
-.NOTES        Author: Markus Fleschutz / License: CC0
+.SYNOPSIS
+	cd-up.ps1
+.DESCRIPTION
+	Go one directory level up
+.EXAMPLE
+	PS> .\cd-up.ps1
+.LINK
+	https://github.com/fleschutz/PowerShell
+.NOTES
+	Author: Markus Fleschutz / License: CC0
 #>
 
 $TargetDir = resolve-path ".."

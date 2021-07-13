@@ -1,8 +1,14 @@
 ﻿<#
-.SYNTAX       turn-volume-up.ps1 [<percent>]
-.DESCRIPTION  turns the audio volume up (+10% by default)
-.LINK         https://github.com/fleschutz/PowerShell
-.NOTES        Author: Markus Fleschutz / License: CC0
+.SYNOPSIS
+	turn-volume-up.ps1 [<percent>]
+.DESCRIPTION
+	Turns the audio volume up (+10% by default)
+.EXAMPLE
+	PS> .\turn-volume-up.ps1
+.LINK
+	https://github.com/fleschutz/PowerShell
+.NOTES
+	Author: Markus Fleschutz / License: CC0
 #>
 
 param([int]$Percent = 10)

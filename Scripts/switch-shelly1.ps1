@@ -1,8 +1,14 @@
 ﻿<#
-.SYNTAX       switch-shelly1.ps1 [<host>] [<turn-mode>] [<timer>]
-.DESCRIPTION  switches a Shelly1 device in the local network
-.LINK         https://github.com/fleschutz/PowerShell
-.NOTES        Author: Markus Fleschutz / License: CC0
+.SYNOPSIS
+	switch-shelly1.ps1 [<host>] [<turn-mode>] [<timer>]
+.DESCRIPTION
+	Switches a Shelly1 device in the local network
+.EXAMPLE
+	PS> .\switch-shelly1.ps1 192.168.100.100 toggle 10
+.LINK
+	https://github.com/fleschutz/PowerShell
+.NOTES
+	Author: Markus Fleschutz / License: CC0
 #>
 
 param($Host = "", $TurnMode = "", [int]$Timer = -999)

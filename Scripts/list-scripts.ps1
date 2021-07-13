@@ -1,8 +1,14 @@
 <#
-.SYNTAX       list-scripts.ps1
-.DESCRIPTION  lists all PowerShell scripts in this repository (sorted alphabetically)
-.LINK         https://github.com/fleschutz/PowerShell
-.NOTES        Author: Markus Fleschutz / License: CC0
+.SYNOPSIS
+	list-scripts.ps1
+.DESCRIPTION
+	Lists all PowerShell scripts in this repository (sorted alphabetically)
+.EXAMPLE
+	PS> .\list-scripts.ps1
+.LINK
+	https://github.com/fleschutz/PowerShell
+.NOTES
+	Author: Markus Fleschutz / License: CC0
 #>
 
 function ListScripts { param([string]$FilePath)

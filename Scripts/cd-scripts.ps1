@@ -1,8 +1,14 @@
 ﻿<#
-.SYNTAX       cd-scripts.ps1 
-.DESCRIPTION  go to the PowerShell Scripts folder
-.LINK         https://github.com/fleschutz/PowerShell
-.NOTES        Author: Markus Fleschutz / License: CC0
+.SYNOPSIS
+	cd-scripts.ps1 
+.DESCRIPTION
+	Go to the PowerShell Scripts folder
+.EXAMPLE
+	PS> .\cd-scripts.ps1 
+.LINK
+	https://github.com/fleschutz/PowerShell
+.NOTES
+	Author: Markus Fleschutz / License: CC0
 #>
 
 $TargetDir = resolve-path "$PSScriptRoot"

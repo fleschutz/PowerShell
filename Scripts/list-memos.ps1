@@ -1,8 +1,14 @@
 <#
-.SYNTAX       list-memos.ps1 
-.DESCRIPTION  lists the memos at $HOME/Memos.csv
-.LINK         https://github.com/fleschutz/PowerShell
-.NOTES        Author: Markus Fleschutz / License: CC0
+.SYNOPSIS
+	list-memos.ps1 
+.DESCRIPTION
+	Lists all memos in $HOME/Memos.csv
+.EXAMPLE
+	PS> .\list-memos.ps1
+.LINK
+	https://github.com/fleschutz/PowerShell
+.NOTES
+	Author: Markus Fleschutz / License: CC0
 #>
 
 

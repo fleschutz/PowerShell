@@ -1,8 +1,14 @@
 <#
-.SYNTAX       list-random-passwords.ps1 [<password-length>] [<columns>] [<rows>]
-.DESCRIPTION  prints a list of random passwords
-.LINK         https://github.com/fleschutz/PowerShell
-.NOTES        Author: Markus Fleschutz / License: CC0
+.SYNOPSIS
+	list-random-passwords.ps1 [<password-length>] [<columns>] [<rows>]
+.DESCRIPTION
+	Prints a list of random passwords
+.EXAMPLE
+	PS> .\list-random-passwords.ps1
+.LINK
+	https://github.com/fleschutz/PowerShell
+.NOTES
+	Author: Markus Fleschutz / License: CC0
 #>
 
 param([int]$PasswordLength = 15, [int]$Columns = 6, [int]$Rows = 26)

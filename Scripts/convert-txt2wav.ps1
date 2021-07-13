@@ -1,8 +1,14 @@
 <#
-.SYNTAX       convert-txt2wav.ps1 [<text>] [<wav-file>]
-.DESCRIPTION  converts the given text to a .WAV audio file
-.LINK         https://github.com/fleschutz/PowerShell
-.NOTES        Author: Markus Fleschutz / License: CC0
+.SYNOPSIS
+	convert-txt2wav.ps1 [<text>] [<wav-file>]
+.DESCRIPTION
+	Converts the given text to a .WAV audio file
+.EXAMPLE
+	PS> .\convert-txt2wav.ps1 "Hello World" spoken.wav
+.LINK
+	https://github.com/fleschutz/PowerShell
+.NOTES
+	Author: Markus Fleschutz / License: CC0
 #>
 
 param($Text = "", $WavFile = "")

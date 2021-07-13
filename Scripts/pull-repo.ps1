@@ -1,8 +1,14 @@
 ﻿<#
-.SYNTAX       pull-repo.ps1 [<repo-dir>]
-.DESCRIPTION  pulls updates for a local Git repository (including submodules)
-.LINK         https://github.com/fleschutz/PowerShell
-.NOTES        Author: Markus Fleschutz / License: CC0
+.SYNOPSIS
+	pull-repo.ps1 [<repo-dir>]
+.DESCRIPTION
+	Pulls updates for a local Git repository (including submodules)
+.EXAMPLE
+	PS> .\pull-repo.ps1 C:\MyRepo
+.LINK
+	https://github.com/fleschutz/PowerShell
+.NOTES
+	Author: Markus Fleschutz / License: CC0
 #>
 
 param($RepoDir = "$PWD")

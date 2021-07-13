@@ -1,8 +1,14 @@
 <#
-.SYNTAX       list-random-pins.ps1 [<pin-length>] [<columns>] [<rows>]
-.DESCRIPTION  prints a list of random PIN's
-.LINK         https://github.com/fleschutz/PowerShell
-.NOTES        Author: Markus Fleschutz / License: CC0
+.SYNOPSIS
+	list-random-pins.ps1 [<pin-length>] [<columns>] [<rows>]
+.DESCRIPTION
+	Prints a list of random PIN's
+.EXAMPLE
+	PS> .\list-random-pins.ps1
+.LINK
+	https://github.com/fleschutz/PowerShell
+.NOTES
+	Author: Markus Fleschutz / License: CC0
 #>
 
 param([int]$PinLength = 5, [int]$Columns = 12, [int]$Rows = 26)

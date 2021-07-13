@@ -1,8 +1,14 @@
 ﻿<#
-.SYNTAX       check-cpu-temp.ps1 
-.DESCRIPTION  checks the CPU temperature
-.LINK         https://github.com/fleschutz/PowerShell
-.NOTES        Author: Markus Fleschutz / License: CC0
+.SYNOPSIS
+	check-cpu-temp.ps1 
+.DESCRIPTION
+	Checks the CPU temperature
+.EXAMPLE
+	PS> .\check-cpu-temp.ps1 
+.LINK
+	https://github.com/fleschutz/PowerShell
+.NOTES
+	Author: Markus Fleschutz / License: CC0
 #>
 
 try {

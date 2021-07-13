@@ -1,8 +1,14 @@
 <#
-.SYNTAX       convert-ps2bat.ps1 [<pattern>]
-.DESCRIPTION  converts PowerShell script(s) to .bat files
-.LINK         https://github.com/fleschutz/PowerShell
-.NOTES        Author: Markus Fleschutz / License: CC0
+.SYNOPSIS
+	convert-ps2bat.ps1 [<pattern>]
+.DESCRIPTION
+	Converts PowerShell script(s) to .bat files
+.EXAMPLE
+	PS> .\convert-ps2bat.ps1 *.ps1
+.LINK
+	https://github.com/fleschutz/PowerShell
+.NOTES
+	Author: Markus Fleschutz / License: CC0
 #>
 
 param($Pattern = "")

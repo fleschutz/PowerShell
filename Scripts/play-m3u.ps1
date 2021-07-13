@@ -1,8 +1,14 @@
 ﻿<#
-.SYNTAX       play-m3u.ps1 [<playlist-file>]
-.DESCRIPTION  plays the given playlist (in .M3U file format)
-.LINK         https://github.com/fleschutz/PowerShell
-.NOTES        Author: Markus Fleschutz / License: CC0
+.SYNOPSIS
+	play-m3u.ps1 [<playlist-file>]
+.DESCRIPTION
+	Plays the given playlist (in .M3U file format)
+.EXAMPLE
+	PS> .\play-m3u.ps1 C:\MyPlaylist.m3u
+.LINK
+	https://github.com/fleschutz/PowerShell
+.NOTES
+	Author: Markus Fleschutz / License: CC0
 #>
 
 param($Filename = "")

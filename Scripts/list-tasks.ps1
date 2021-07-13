@@ -1,8 +1,14 @@
 <#
-.SYNTAX       list-tasks.ps1 
-.DESCRIPTION  lists all Windows scheduler tasks
-.LINK         https://github.com/fleschutz/PowerShell
-.NOTES        Author: Markus Fleschutz / License: CC0
+.SYNOPSIS
+	list-tasks.ps1 
+.DESCRIPTION
+	Lists all Windows scheduler tasks
+.EXAMPLE
+	PS> .\list-tasks.ps1
+.LINK
+	https://github.com/fleschutz/PowerShell
+.NOTES
+	Author: Markus Fleschutz / License: CC0
 #>
 
 try {

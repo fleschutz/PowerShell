@@ -1,8 +1,14 @@
 <#
-.SYNTAX       cherry-picker.ps1 [<commit-id>] [<commit-message>] [<branches>] [<repo-dir>]
-.DESCRIPTION  cherry-picks a Git commit into multiple branches
-.LINK         https://github.com/fleschutz/PowerShell
-.NOTES        Author: Markus Fleschutz / License: CC0
+.SYNOPSIS
+	cherry-picker.ps1 [<commit-id>] [<commit-message>] [<branches>] [<repo-dir>]
+.DESCRIPTION
+	Cherry-picks a Git commit into multiple branches
+.EXAMPLE
+	PS> .\cherry-picker.ps1 93849f889 "Fix typo" v1 v2 v3
+.LINK
+	https://github.com/fleschutz/PowerShell
+.NOTES
+	Author: Markus Fleschutz / License: CC0
 #>
 
 param($CommitID = "", $CommitMessage = "", $Branches = "", $RepoDir = "$PWD")

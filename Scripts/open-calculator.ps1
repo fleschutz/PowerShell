@@ -1,8 +1,14 @@
 <#
-.SYNTAX       open-calculator.ps1
-.DESCRIPTION  starts the calculator program
-.LINK         https://github.com/fleschutz/PowerShell
-.NOTES        Author: Markus Fleschutz / License: CC0
+.SYNOPSIS
+	open-calculator.ps1
+.DESCRIPTION
+	Starts the calculator program
+.EXAMPLE
+	PS> .\open-calculator.ps1 
+.LINK
+	https://github.com/fleschutz/PowerShell
+.NOTES
+	Author: Markus Fleschutz / License: CC0
 #>
 
 try {

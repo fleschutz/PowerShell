@@ -1,8 +1,14 @@
 <#
-.SYNTAX       list-empty-files.ps1 [<dir-tree>]
-.DESCRIPTION  lists empty files within the given directory tree
-.LINK         https://github.com/fleschutz/PowerShell
-.NOTES        Author: Markus Fleschutz / License: CC0
+.SYNOPSIS
+	list-empty-files.ps1 [<dir-tree>]
+.DESCRIPTION
+	Lists empty files within the given directory tree
+.EXAMPLE
+	PS> .\list-empty-files.ps1 C:\
+.LINK
+	https://github.com/fleschutz/PowerShell
+.NOTES
+	Author: Markus Fleschutz / License: CC0
 #>
 
 param($DirTree = "")

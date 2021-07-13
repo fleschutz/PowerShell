@@ -1,8 +1,14 @@
 <#
-.SYNTAX       list-network-shares.ps1 
-.DESCRIPTION  lists the network shares of the local computer
-.LINK         https://github.com/fleschutz/PowerShell
-.NOTES        Author: Markus Fleschutz / License: CC0
+.SYNOPSIS
+	list-network-shares.ps1 
+.DESCRIPTION
+	Lists the network shares of the local computer
+.EXAMPLE
+	PS> .\list-network-shares.ps1
+.LINK
+	https://github.com/fleschutz/PowerShell
+.NOTES
+	Author: Markus Fleschutz / License: CC0
 #>
 
 try {

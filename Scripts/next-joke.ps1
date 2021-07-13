@@ -1,8 +1,14 @@
 ﻿<#
-.SYNTAX       next-joke.ps1 
-.DESCRIPTION  gets the next random Juck Norris joke
-.LINK         https://github.com/fleschutz/PowerShell
-.NOTES        Author: Markus Fleschutz / License: CC0
+.SYNOPSIS
+	next-joke.ps1 
+.DESCRIPTION
+	Prints the next random Juck Norris joke
+.EXAMPLE
+	PS> .\next-joke.ps1
+.LINK
+	https://github.com/fleschutz/PowerShell
+.NOTES
+	Author: Markus Fleschutz / License: CC0
 #>
 
 try {

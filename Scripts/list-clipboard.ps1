@@ -1,8 +1,14 @@
 ﻿<#
-.SYNTAX       list-clipboard.ps1
-.DESCRIPTION  lists the contents of the clipboard
-.LINK         https://github.com/fleschutz/PowerShell
-.NOTES        Author: Markus Fleschutz / License: CC0
+.SYNOPSIS
+	list-clipboard.ps1
+.DESCRIPTION
+	Lists the contents of the clipboard
+.EXAMPLE
+	PS> .\list-clipboard.ps1
+.LINK
+	https://github.com/fleschutz/PowerShell
+.NOTES
+	Author: Markus Fleschutz / License: CC0
 #>
 
 try {

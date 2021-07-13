@@ -1,8 +1,14 @@
 <#
-.SYNTAX       list-processes.ps1 
-.DESCRIPTION  lists the local computer processes
-.LINK         https://github.com/fleschutz/PowerShell
-.NOTES        Author: Markus Fleschutz / License: CC0
+.SYNOPSIS
+	list-processes.ps1 
+.DESCRIPTION
+	Lists all local computer processes
+.EXAMPLE
+	PS> .\list-processes.ps1
+.LINK
+	https://github.com/fleschutz/PowerShell
+.NOTES
+	Author: Markus Fleschutz / License: CC0
 #>
 
 try {

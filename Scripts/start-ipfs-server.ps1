@@ -1,8 +1,14 @@
 ﻿<#
-.SYNTAX       start-ipfs-server.ps1
-.DESCRIPTION  starts a local IPFS server
-.LINK         https://github.com/fleschutz/PowerShell
-.NOTES        Author: Markus Fleschutz / License: CC0
+.SYNOPSIS
+	start-ipfs-server.ps1
+.DESCRIPTION
+	Starts a local IPFS server as a daemon process
+.EXAMPLE
+	PS> .\start-ipfs-server.ps1
+.LINK
+	https://github.com/fleschutz/PowerShell
+.NOTES
+	Author: Markus Fleschutz / License: CC0
 #>
 
 try {

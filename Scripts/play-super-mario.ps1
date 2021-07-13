@@ -1,8 +1,14 @@
 <#
-.SYNTAX       play-super-mario.ps1
-.DESCRIPTION  plays the Super Mario Intro
-.LINK         https://github.com/fleschutz/PowerShell
-.NOTES        Author: Markus Fleschutz / License: CC0
+.SYNOPSIS
+	play-super-mario.ps1
+.DESCRIPTION
+	Plays the Super Mario Intro
+.EXAMPLE
+	PS> .\play-super-mario.ps1
+.LINK
+	https://github.com/fleschutz/PowerShell
+.NOTES
+	Author: Markus Fleschutz / License: CC0
 #>
 
 [console]::beep(659,250) ##E

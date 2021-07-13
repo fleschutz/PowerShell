@@ -1,8 +1,14 @@
 <#
-.SYNTAX       convert-mysql2csv.ps1 [<server>] [<database>] [<username>] [<password>] [<query>]
-.DESCRIPTION  convert the MySQL database table to a CSV file
-.LINK         https://github.com/fleschutz/PowerShell
-.NOTES        Author: Markus Fleschutz / License: CC0
+.SYNOPSIS
+	convert-mysql2csv.ps1 [<server>] [<database>] [<username>] [<password>] [<query>]
+.DESCRIPTION
+	Convert the MySQL database table to a CSV file
+.EXAMPLE
+	PS> .\convert-mysql2csv.ps1
+.LINK
+	https://github.com/fleschutz/PowerShell
+.NOTES
+	Author: Markus Fleschutz / License: CC0
 #>
 
 

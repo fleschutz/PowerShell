@@ -1,8 +1,14 @@
 ﻿<#
-.SYNTAX       sync-repo.ps1 [<repo-dir>]
-.DESCRIPTION  synchronizes a Git repository by push & pull (including submodules)
-.LINK         https://github.com/fleschutz/PowerShell
-.NOTES        Author: Markus Fleschutz / License: CC0
+.SYNOPSIS
+	sync-repo.ps1 [<repo-dir>]
+.DESCRIPTION
+	Synchronizes a Git repository by push & pull (including submodules)
+.EXAMPLE
+	PS> .\sync-repo.ps1 C:\MyRepo
+.LINK
+	https://github.com/fleschutz/PowerShell
+.NOTES
+	Author: Markus Fleschutz / License: CC0
 #>
 
 param($RepoDir = "$PWD")

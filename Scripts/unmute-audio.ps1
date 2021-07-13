@@ -1,8 +1,14 @@
 ﻿<#
-.SYNTAX       unmute-audio.ps1
-.DESCRIPTION  unmutes the audio output
-.LINK         https://github.com/fleschutz/PowerShell
-.NOTES        Author: Markus Fleschutz / License: CC0
+.SYNOPSIS
+	unmute-audio.ps1
+.DESCRIPTION
+	Unmutes the audio output
+.EXAMPLE
+	PS> .\unmute-audio.ps1
+.LINK
+	https://github.com/fleschutz/PowerShell
+.NOTES
+	Author: Markus Fleschutz / License: CC0
 #>
 
 try {

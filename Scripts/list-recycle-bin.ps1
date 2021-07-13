@@ -1,8 +1,14 @@
 ﻿<#
-.SYNTAX       list-recycle-bin.ps1 
-.DESCRIPTION  lists the content of the recycle bin folder
-.LINK         https://github.com/fleschutz/PowerShell
-.NOTES        Author: Markus Fleschutz / License: CC0
+.SYNOPSIS
+	list-recycle-bin.ps1 
+.DESCRIPTION
+	Lists the content of the recycle bin folder
+.EXAMPLE
+	PS> .\list-recycle-bin.ps1 
+.LINK
+	https://github.com/fleschutz/PowerShell
+.NOTES
+	Author: Markus Fleschutz / License: CC0
 #>
 
 try {

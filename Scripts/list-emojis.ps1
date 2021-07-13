@@ -1,8 +1,14 @@
 ﻿<#
-.SYNTAX       list-emojis.ps1 
-.DESCRIPTION  lists the Emojis of Unicode 13.0
-.LINK         https://github.com/fleschutz/PowerShell
-.NOTES        Author: Markus Fleschutz / License: CC0
+.SYNOPSIS
+	list-emojis.ps1 
+.DESCRIPTION
+	Lists the Emojis of Unicode 13.0
+.EXAMPLE
+	PS> .\list-emojis.ps1
+.LINK
+	https://github.com/fleschutz/PowerShell
+.NOTES
+	Author: Markus Fleschutz / License: CC0
 #>
 
 "Emojis of Unicode 13.0"

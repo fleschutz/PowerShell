@@ -1,8 +1,14 @@
 <#
-.SYNTAX       send-udp.ps1 [<target-IP>] [<target-port>] [<message>]
-.DESCRIPTION  sends a UDP datagram message to the given IP address and port
-.LINK         https://github.com/fleschutz/PowerShell
-.NOTES        Author: Markus Fleschutz / License: CC0
+.SYNOPSIS
+	send-udp.ps1 [<target-IP>] [<target-port>] [<message>]
+.DESCRIPTION
+	Sends a UDP datagram message to the given IP address and port
+.EXAMPLE
+	PS> .\send-udp.ps1 192.168.100.100 8080 "TEST"
+.LINK
+	https://github.com/fleschutz/PowerShell
+.NOTES
+	Author: Markus Fleschutz / License: CC0
 #>
 
 param($TargetIP = "", [int]$TargetPort = 0, $Message = "")

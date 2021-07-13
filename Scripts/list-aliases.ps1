@@ -1,8 +1,14 @@
 <#
-.SYNTAX       list-aliases.ps1
-.DESCRIPTION  lists all PowerShell aliases 
-.LINK         https://github.com/fleschutz/PowerShell
-.NOTES        Author: Markus Fleschutz / License: CC0
+.SYNOPSIS
+	list-aliases.ps1
+.DESCRIPTION
+	Lists all PowerShell aliases 
+.EXAMPLE
+	PS> .\list-aliases.ps1
+.LINK
+	https://github.com/fleschutz/PowerShell
+.NOTES
+	Author: Markus Fleschutz / License: CC0
 #>
 
 try {

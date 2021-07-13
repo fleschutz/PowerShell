@@ -1,8 +1,14 @@
 ﻿<#
-.SYNTAX       check-health.ps1 
-.DESCRIPTION  checks the health of the local computer
-.LINK         https://github.com/fleschutz/PowerShell
-.NOTES        Author: Markus Fleschutz / License: CC0
+.SYNOPSIS
+	check-health.ps1 
+.DESCRIPTION
+	Checks the health of the local computer
+.EXAMPLE
+	PS> .\check-health.ps1
+.LINK
+	https://github.com/fleschutz/PowerShell
+.NOTES
+	Author: Markus Fleschutz / License: CC0
 #>
 
 $Hostname = $(hostname)

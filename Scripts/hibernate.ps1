@@ -1,8 +1,14 @@
 <#
-.SYNTAX       hibernate.ps1
-.DESCRIPTION  enables hibernate mode for the local computer (needs admin rights)
-.LINK         https://github.com/fleschutz/PowerShell
-.NOTES        Author: Markus Fleschutz / License: CC0
+.SYNOPSIS
+	hibernate.ps1
+.DESCRIPTION
+	Enables hibernate mode for the local computer (needs admin rights)
+.EXAMPLE
+	PS> .\hibernate.ps1
+.LINK
+	https://github.com/fleschutz/PowerShell
+.NOTES
+	Author: Markus Fleschutz / License: CC0
 #>
 
 #Requires -RunAsAdministrator

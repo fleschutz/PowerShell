@@ -1,8 +1,14 @@
 <#
-.SYNTAX       speak-joke.ps1
-.DESCRIPTION  speaks the next joke by text-to-speech (TTS)
-.LINK         https://github.com/fleschutz/PowerShell
-.NOTES        Author: Markus Fleschutz / License: CC0
+.SYNOPSIS
+	speak-joke.ps1
+.DESCRIPTION
+	Speaks the next joke by text-to-speech (TTS)
+.EXAMPLE
+	PS> .\speak-joke.ps1
+.LINK
+	https://github.com/fleschutz/PowerShell
+.NOTES
+	Author: Markus Fleschutz / License: CC0
 #>
 
 try {

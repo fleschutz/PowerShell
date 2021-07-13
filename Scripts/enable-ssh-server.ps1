@@ -1,8 +1,14 @@
 <#
-.SYNTAX       enable-ssh-server.ps1
-.DESCRIPTION  enables the SSH server (needs admin rights)
-.LINK         https://github.com/fleschutz/PowerShell
-.NOTES        Author: Markus Fleschutz / License: CC0
+.SYNOPSIS
+	enable-ssh-server.ps1
+.DESCRIPTION
+	Enables the SSH server (needs admin rights)
+.EXAMPLE
+	PS> .\enable-ssh-server.ps1
+.LINK
+	https://github.com/fleschutz/PowerShell
+.NOTES
+	Author: Markus Fleschutz / License: CC0
 #>
 
 #Requires -RunAsAdministrator

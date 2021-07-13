@@ -1,8 +1,14 @@
 <#
-.SYNTAX       list-files.ps1 [<dir-tree>]
-.DESCRIPTION  lists all files in the given directory tree
-.LINK         https://github.com/fleschutz/PowerShell
-.NOTES        Author: Markus Fleschutz / License: CC0
+.SYNOPSIS
+	list-files.ps1 [<dir-tree>]
+.DESCRIPTION
+	Lists all files in the given directory tree
+.EXAMPLE
+	PS> .\list-files.ps1 C:\
+.LINK
+	https://github.com/fleschutz/PowerShell
+.NOTES
+	Author: Markus Fleschutz / License: CC0
 #>
 
 param($DirTree = "")

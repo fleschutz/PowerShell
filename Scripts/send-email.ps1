@@ -1,8 +1,14 @@
 <#
-.SYNTAX       send-email.ps1 
-.DESCRIPTION  sends an email
-.LINK         https://github.com/fleschutz/PowerShell
-.NOTES        Author: Markus Fleschutz / License: CC0
+.SYNOPSIS
+	send-email.ps1 
+.DESCRIPTION
+	Sends an email
+.EXAMPLE
+	PS> .\send-email.ps1
+.LINK
+	https://github.com/fleschutz/PowerShell
+.NOTES
+	Author: Markus Fleschutz / License: CC0
 #>
 
 $smtpServer = "smtp.example.com"

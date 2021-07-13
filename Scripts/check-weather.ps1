@@ -1,8 +1,14 @@
 ﻿<#
-.SYNTAX       check-weather.ps1 [<location>]
-.DESCRIPTION  checks the weather for critical values
-.LINK         https://github.com/fleschutz/PowerShell
-.NOTES        Author: Markus Fleschutz / License: CC0
+.SYNOPSIS
+	check-weather.ps1 [<location>]
+.DESCRIPTION
+	Checks the weather for critical values
+.EXAMPLE
+	PS> .\check-weather.ps1
+.LINK
+	https://github.com/fleschutz/PowerShell
+.NOTES
+	Author: Markus Fleschutz / License: CC0
 #>
 
 param($Location = "") # empty means determine automatically

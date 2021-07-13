@@ -1,8 +1,14 @@
 <#
-.SYNTAX       encrypt-file.ps1 [<path>] [<password>]
-.DESCRIPTION  encrypts the given file
-.LINK         https://github.com/fleschutz/PowerShell
-.NOTES        Author: Markus Fleschutz / License: CC0
+.SYNOPSIS
+	encrypt-file.ps1 [<path>] [<password>]
+.DESCRIPTION
+	Encrypts the given file
+.EXAMPLE
+	PS> .\encrypt-file.ps1 C:\MyFile.txt "123"
+.LINK
+	https://github.com/fleschutz/PowerShell
+.NOTES
+	Author: Markus Fleschutz / License: CC0
 #>
 
 param($Path = "", $Password = "")

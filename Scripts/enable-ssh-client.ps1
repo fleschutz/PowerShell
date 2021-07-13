@@ -1,8 +1,14 @@
 <#
-.SYNTAX       enable-ssh-client.ps1
-.DESCRIPTION  enables the SSH client (needs admin rights)
-.LINK         https://github.com/fleschutz/PowerShell
-.NOTES        Author: Markus Fleschutz / License: CC0
+.SYNOPSIS
+	enable-ssh-client.ps1
+.DESCRIPTION
+	Enables the SSH client (needs admin rights)
+.EXAMPLE
+	PS> .\enable-ssh-client.ps1
+.LINK
+	https://github.com/fleschutz/PowerShell
+.NOTES
+	Author: Markus Fleschutz / License: CC0
 #>
 
 #Requires -RunAsAdministrator

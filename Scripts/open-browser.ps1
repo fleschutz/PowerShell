@@ -1,8 +1,14 @@
 ﻿<#
-.SYNTAX       open-browser.ps1 [<URL>]
-.DESCRIPTION  starts the default Web browser, optional with given URL
-.LINK         https://github.com/fleschutz/PowerShell
-.NOTES        Author: Markus Fleschutz / License: CC0
+.SYNOPSIS
+	open-browser.ps1 [<URL>]
+.DESCRIPTION
+	Opens the default Web browser, optional with given URL
+.EXAMPLE
+	PS> .\open-browser.ps1
+.LINK
+	https://github.com/fleschutz/PowerShell
+.NOTES
+	Author: Markus Fleschutz / License: CC0
 #>
 
 param($URL = "http://www.fleschutz.de")

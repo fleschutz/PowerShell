@@ -1,8 +1,14 @@
 <#
-.SYNTAX       write-marquee.ps1 [<text>] [<speed>]
-.DESCRIPTION  writes the given text as marquee
-.LINK         https://github.com/fleschutz/PowerShell
-.NOTES        Author: Markus Fleschutz / License: CC0
+.SYNOPSIS
+	write-marquee.ps1 [<text>] [<speed>]
+.DESCRIPTION
+	Writes the given text as marquee
+.EXAMPLE
+	PS> .\write-marquee.ps1 "Hello World"
+.LINK
+	https://github.com/fleschutz/PowerShell
+.NOTES
+	Author: Markus Fleschutz / License: CC0
 #>
 
 param($Text = "PowerShell is powerful! PowerShell is cross-platform! PowerShell is open-source! PowerShell is easy to learn! Powershell is fully documented", [int]$Speed = 60) # 60 ms pause

@@ -1,8 +1,14 @@
 <#
-.SYNTAX         ./translate-file.ps1 [<file>] [<source-lang>] [<target-lang>]
-.DESCRIPTION	translates the given text file into another language and prints the result.
-.LINK		https://github.com/fleschutz/PowerShell
-.NOTES		Author:	Markus Fleschutz / License: CC0
+.SYNOPSIS
+	translate-file.ps1 [<file>] [<source-lang>] [<target-lang>]
+.DESCRIPTION
+	Translates the given text file into another language and prints the result
+.EXAMPLE
+	PS> .\translate-file.ps1 C:\Memo.txt en de
+.LINK
+	https://github.com/fleschutz/PowerShell
+.NOTES
+	Author: Markus Fleschutz / License: CC0
 #>
 
 param($File = "", $SourceLang = "", $TargetLang = "")

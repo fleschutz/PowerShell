@@ -1,8 +1,14 @@
 <#
-.SYNTAX       list-fritzbox-calls.ps1 [<username>] [<password>]
-.DESCRIPTION  lists FRITZ!Box's known devices
-.LINK         https://github.com/fleschutz/PowerShell
-.NOTES        Author: Markus Fleschutz / License: CC0
+.SYNOPSIS
+	list-fritzbox-devices.ps1 [<username>] [<password>]
+.DESCRIPTION
+	Lists FRITZ!Box's known devices
+.EXAMPLE
+	PS> .\list-fritzbox-devices.ps1
+.LINK
+	https://github.com/fleschutz/PowerShell
+.NOTES
+	Author: Markus Fleschutz / License: CC0
 #>
 
 #Requires -Version 3

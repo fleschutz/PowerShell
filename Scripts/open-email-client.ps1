@@ -1,8 +1,14 @@
 <#
-.SYNTAX       open-email-client.ps1
-.DESCRIPTION  starts the default email client 
-.LINK         https://github.com/fleschutz/PowerShell
-.NOTES        Author: Markus Fleschutz / License: CC0
+.SYNOPSIS
+	open-email-client.ps1
+.DESCRIPTION
+	Starts the default email client 
+.EXAMPLE
+	PS> .\open-email-client.ps1
+.LINK
+	https://github.com/fleschutz/PowerShell
+.NOTES
+	Author: Markus Fleschutz / License: CC0
 #>
 
 try {

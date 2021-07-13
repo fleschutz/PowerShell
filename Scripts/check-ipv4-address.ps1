@@ -1,8 +1,14 @@
 <#
-.SYNTAX       check-ipv4-address.ps1 [<address>]
-.DESCRIPTION  checks the given IPv4 address for validity
-.LINK         https://github.com/fleschutz/PowerShell
-.NOTES        Author: Markus Fleschutz / License: CC0
+.SYNOPSIS
+	check-ipv4-address.ps1 [<address>]
+.DESCRIPTION
+	Checks the given IPv4 address for validity
+.EXAMPLE
+	PS> .\check-ipv4-address.ps1 192.168.11.22
+.LINK
+	https://github.com/fleschutz/PowerShell
+.NOTES
+	Author: Markus Fleschutz / License: CC0
 #>
 
 param($Address = "")

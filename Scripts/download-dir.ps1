@@ -1,8 +1,14 @@
 <#
-.SYNTAX       download-dir.ps1 [<URL>]
-.DESCRIPTION  downloads a directory tree from the given URL
-.LINK         https://github.com/fleschutz/PowerShell
-.NOTES        Author: Markus Fleschutz / License: CC0
+.SYNOPSIS
+	download-dir.ps1 [<URL>]
+.DESCRIPTION
+	Downloads a directory tree from the given URL
+.EXAMPLE
+	PS> .\download-dir.ps1 "https://www.cnn.com"
+.LINK
+	https://github.com/fleschutz/PowerShell
+.NOTES
+	Author: Markus Fleschutz / License: CC0
 #>
 
 param($URL = "")

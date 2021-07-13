@@ -1,8 +1,14 @@
 <#
-.SYNTAX       speak-time.ps1
-.DESCRIPTION  speaks the current time by text-to-speech (TTS)
-.LINK         https://github.com/fleschutz/PowerShell
-.NOTES        Author: Markus Fleschutz / License: CC0
+.SYNOPSIS
+	speak-time.ps1
+.DESCRIPTION
+	Speaks the current time by text-to-speech (TTS)
+.EXAMPLE
+	PS> .\speak-time.ps1
+.LINK
+	https://github.com/fleschutz/PowerShell
+.NOTES
+	Author: Markus Fleschutz / License: CC0
 #>
 
 try {

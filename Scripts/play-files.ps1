@@ -1,8 +1,14 @@
 ﻿<#
-.SYNTAX       play-files.ps1 [<pattern>]
-.DESCRIPTION  plays the given audio files (supporting MP3 and WAV format)
-.LINK         https://github.com/fleschutz/PowerShell
-.NOTES        Author: Markus Fleschutz / License: CC0
+.SYNOPSIS
+	play-files.ps1 [<pattern>]
+.DESCRIPTION
+	Plays the given audio files (supporting MP3 and WAV format)
+.EXAMPLE
+	PS> .\play-files.ps1 *.mp3
+.LINK
+	https://github.com/fleschutz/PowerShell
+.NOTES
+	Author: Markus Fleschutz / License: CC0
 #>
 
 param($Pattern = "*")

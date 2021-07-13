@@ -1,8 +1,14 @@
 <#
-.SYNTAX       list-modules.ps1 
-.DESCRIPTION  lists all PowerShell modules
-.LINK         https://github.com/fleschutz/PowerShell
-.NOTES        Author: Markus Fleschutz / License: CC0
+.SYNOPSIS
+	list-modules.ps1 
+.DESCRIPTION
+	Lists all PowerShell modules
+.EXAMPLE
+	PS> .\list-modules.ps1
+.LINK
+	https://github.com/fleschutz/PowerShell
+.NOTES
+	Author: Markus Fleschutz / License: CC0
 #>
 
 try {

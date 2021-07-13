@@ -1,8 +1,14 @@
 ﻿<#
-.SYNTAX       clear-recycle-bin.ps1 
-.DESCRIPTION  removes the content of the recycle bin folder (can not be undo!)
-.LINK         https://github.com/fleschutz/PowerShell
-.NOTES        Author: Markus Fleschutz / License: CC0
+.SYNOPSIS
+	clear-recycle-bin.ps1 
+.DESCRIPTION
+	Removes the content of the recycle bin folder (can not be undo!)
+.EXAMPLE
+	PS> .\clear-recycle-bin.ps1 
+.LINK
+	https://github.com/fleschutz/PowerShell
+.NOTES
+	Author: Markus Fleschutz / License: CC0
 #>
 
 try {

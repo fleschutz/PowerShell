@@ -1,8 +1,14 @@
 <#
-.SYNTAX       search-files.ps1 [<pattern>] [<path>]
-.DESCRIPTION  searches the given pattern in the given files
-.LINK         https://github.com/fleschutz/PowerShell
-.NOTES        Author: Markus Fleschutz / License: CC0
+.SYNOPSIS
+	search-files.ps1 [<pattern>] [<path>]
+.DESCRIPTION
+	Searches for the given pattern in the given files
+.EXAMPLE
+	PS> .\search-files.ps1 UFO C:\Temp\*.txt
+.LINK
+	https://github.com/fleschutz/PowerShell
+.NOTES
+	Author: Markus Fleschutz / License: CC0
 #>
 
 param($Pattern = "", $Path = "")

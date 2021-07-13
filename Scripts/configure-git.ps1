@@ -1,8 +1,14 @@
 ﻿<#
-.SYNTAX       configure-git.ps1 [<full-name>] [<email-address>] [<favorite-editor>]
-.DESCRIPTION  sets up the Git user configuration
-.LINK         https://github.com/fleschutz/PowerShell
-.NOTES        Author: Markus Fleschutz / License: CC0
+.SYNOPSIS
+	configure-git.ps1 [<full-name>] [<email-address>] [<favorite-editor>]
+.DESCRIPTION
+	Sets up the Git user configuration
+.EXAMPLE
+	PS> .\configure-git.ps1
+.LINK
+	https://github.com/fleschutz/PowerShell
+.NOTES
+	Author: Markus Fleschutz / License: CC0
 #>
 
 param($FullName = "", $EmailAddress = "", $FavoriteEditor = "")

@@ -1,8 +1,14 @@
 ﻿<#
-.SYNTAX       upload-file.ps1 [<file>] [<URL>] [<username>] [<password>]
-.DESCRIPTION  uploads the local file to the given FTP server
-.LINK         https://github.com/fleschutz/PowerShell
-.NOTES        Author: Markus Fleschutz / License: CC0
+.SYNOPSIS
+	upload-file.ps1 [<file>] [<URL>] [<username>] [<password>]
+.DESCRIPTION
+	Uploads the local file to the given FTP server
+.EXAMPLE
+	PS> .\upload-file.ps1
+.LINK
+	https://github.com/fleschutz/PowerShell
+.NOTES
+	Author: Markus Fleschutz / License: CC0
 #>
 
 param($File = "", $URL = "", $Username = "", $Password = "")

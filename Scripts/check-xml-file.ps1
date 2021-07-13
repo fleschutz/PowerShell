@@ -1,8 +1,14 @@
 <#
-.SYNTAX       check-xml-file [<file>]
-.DESCRIPTION  checks the given XML file for validity
-.LINK         https://github.com/fleschutz/PowerShell
-.NOTES        Author: Markus Fleschutz / License: CC0
+.SYNOPSIS
+	check-xml-file [<file>]
+.DESCRIPTION
+	Checks the given XML file for validity
+.EXAMPLE
+	PS> .\check-xml-file.ps1 myfile.xml
+.LINK
+	https://github.com/fleschutz/PowerShell
+.NOTES
+	Author: Markus Fleschutz / License: CC0
 #>
 
 param($File = "")

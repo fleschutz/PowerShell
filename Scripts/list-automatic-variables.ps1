@@ -1,8 +1,14 @@
 <#
-.SYNTAX       list-automatic-variables.ps1
-.DESCRIPTION  lists the automatic variables of PowerShell 
-.LINK         https://github.com/fleschutz/PowerShell
-.NOTES        Author: Markus Fleschutz / License: CC0
+.SYNOPSIS
+	list-automatic-variables.ps1
+.DESCRIPTION
+	Lists all automatic variables of PowerShell 
+.EXAMPLE
+	PS> .\list-auutomatic-variables.ps1
+.LINK
+	https://github.com/fleschutz/PowerShell
+.NOTES
+	Author: Markus Fleschutz / License: CC0
 #>
 
 function AddItem { param([string]$Variable, [string]$Content)

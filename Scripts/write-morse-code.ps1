@@ -1,8 +1,14 @@
 <#
-.SYNTAX       write-morse-code.ps1 [<text>] [<speed>]
-.DESCRIPTION  writes the given text in Morse code
-.LINK         https://github.com/fleschutz/PowerShell
-.NOTES        Author: Markus Fleschutz / License: CC0
+.SYNOPSIS
+	write-morse-code.ps1 [<text>] [<speed>]
+.DESCRIPTION
+	Writes the given text in Morse code
+.EXAMPLE
+	PS> .\write-morse-code.ps1 "Hello World"
+.LINK
+	https://github.com/fleschutz/PowerShell
+.NOTES
+	Author: Markus Fleschutz / License: CC0
 #>
 
 param($Text = "", [int]$OneTimeUnit = 100) # in milliseconds

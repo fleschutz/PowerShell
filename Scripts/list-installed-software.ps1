@@ -1,8 +1,14 @@
 <#
-.SYNTAX       list-installed-software.ps1
-.DESCRIPTION  lists the installed software (except Windows Store apps)
-.LINK         https://github.com/fleschutz/PowerShell
-.NOTES        Author: Markus Fleschutz / License: CC0
+.SYNOPSIS
+	list-installed-software.ps1
+.DESCRIPTION
+	Lists the installed software (except Windows Store apps)
+.EXAMPLE
+	PS> .\list-installed-software.ps1
+.LINK
+	https://github.com/fleschutz/PowerShell
+.NOTES
+	Author: Markus Fleschutz / License: CC0
 #>
 
 try {

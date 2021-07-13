@@ -1,8 +1,14 @@
 ﻿<#
-.SYNTAX       list-latest-tag.ps1 [<repo-dir>] 
-.DESCRIPTION  lists the latest tag on the current branch in a Git repository
-.LINK         https://github.com/fleschutz/PowerShell
-.NOTES        Author: Markus Fleschutz / License: CC0
+.SYNOPSIS
+	list-latest-tag.ps1 [<repo-dir>] 
+.DESCRIPTION
+	Lists the latest tag on the current branch in a Git repository
+.EXAMPLE
+	PS> .\list-latest-tag.ps1 C:\MyRepo
+.LINK
+	https://github.com/fleschutz/PowerShell
+.NOTES
+	Author: Markus Fleschutz / License: CC0
 #>
 
 param($RepoDir = "$PWD")

@@ -1,8 +1,14 @@
 ﻿<#
-.SYNTAX       enable-god-mode.ps1 
-.DESCRIPTION  enables the god mode (adds a new icon to the desktop)
-.LINK         https://github.com/fleschutz/PowerShell
-.NOTES        Author: Markus Fleschutz / License: CC0
+.SYNOPSIS
+	enable-god-mode.ps1 
+.DESCRIPTION
+	Enables the god mode (adds a new icon to the desktop)
+.EXAMPLE
+	PS> .\enable-god-mode.ps1
+.LINK
+	https://github.com/fleschutz/PowerShell
+.NOTES
+	Author: Markus Fleschutz / License: CC0
 #>
 
 try {

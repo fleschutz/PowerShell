@@ -1,8 +1,14 @@
 <#
-.SYNTAX       SHA256.ps1 [<file>]
-.DESCRIPTION  prints the SHA256 checksum of the given file
-.LINK         https://github.com/fleschutz/PowerShell
-.NOTES        Author: Markus Fleschutz / License: CC0
+.SYNOPSIS
+	SHA256.ps1 [<file>]
+.DESCRIPTION
+	Prints the SHA256 checksum of the given file
+.EXAMPLE
+	PS> .\SHA256.ps1 C:\MyFile.txt
+.LINK
+	https://github.com/fleschutz/PowerShell
+.NOTES
+	Author: Markus Fleschutz / License: CC0
 #>
 
 param($File = "")

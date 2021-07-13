@@ -1,8 +1,14 @@
 ﻿<#
-.SYNTAX       list-os-updates.ps1 [<RSS-URL>] [<max-count>]
-.DESCRIPTION  lists the latest operating system updates
-.LINK         https://github.com/fleschutz/PowerShell
-.NOTES        Author: Markus Fleschutz / License: CC0
+.SYNOPSIS
+	list-os-updates.ps1 [<RSS-URL>] [<max-count>]
+.DESCRIPTION
+	Lists the latest operating system updates
+.EXAMPLE
+	PS> .\list-os-updates.ps1
+.LINK
+	https://github.com/fleschutz/PowerShell
+.NOTES
+	Author: Markus Fleschutz / License: CC0
 #>
 
 param($RSS_URL = "https://distrowatch.com/news/dwd.xml", [int]$MaxCount = 20)

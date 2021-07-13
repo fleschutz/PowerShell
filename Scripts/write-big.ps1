@@ -1,8 +1,14 @@
 <#
-.SYNTAX       write-big.ps1 [<text>]
-.DESCRIPTION  writes the given text in big letters
-.LINK         https://github.com/fleschutz/PowerShell
-.NOTES        Author: Markus Fleschutz / License: CC0
+.SYNOPSIS
+	write-big.ps1 [<text>]
+.DESCRIPTION
+	Writes the given text in big letters
+.EXAMPLE
+	PS> .\write-big.ps1 "Hello World"
+.LINK
+	https://github.com/fleschutz/PowerShell
+.NOTES
+	Author: Markus Fleschutz / License: CC0
 #>
 
 param($Text = "")

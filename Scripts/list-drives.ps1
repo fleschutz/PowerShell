@@ -1,8 +1,14 @@
 <#
-.SYNTAX       list-drives.ps1
-.DESCRIPTION  lists all drives connected to the computer
-.LINK         https://github.com/fleschutz/PowerShell
-.NOTES        Author: Markus Fleschutz / License: CC0
+.SYNOPSIS
+	list-drives.ps1
+.DESCRIPTION
+	Lists all drives connected to the computer
+.EXAMPLE
+	PS> .\list-drives.ps1
+.LINK
+	https://github.com/fleschutz/PowerShell
+.NOTES
+	Author: Markus Fleschutz / License: CC0
 #>
 
 try {

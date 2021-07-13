@@ -1,8 +1,14 @@
 ﻿<#
-.SYNTAX       list-weather.ps1 [<location>]
-.DESCRIPTION  lists the hourly weather 
-.LINK         https://github.com/fleschutz/PowerShell
-.NOTES        Author: Markus Fleschutz / License: CC0
+.SYNOPSIS
+	list-weather.ps1 [<location>]
+.DESCRIPTION
+	Lists the hourly weather 
+.EXAMPLE
+	PS> .\list-weather.ps1
+.LINK
+	https://github.com/fleschutz/PowerShell
+.NOTES
+	Author: Markus Fleschutz / License: CC0
 #>
 
 param($Location = "") # empty means determine automatically

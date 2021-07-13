@@ -1,8 +1,14 @@
 <#
-.SYNTAX       speak-checklist.ps1 [<name>]
-.DESCRIPTION  speaks the given checklist by text-to-speech (TTS)
-.LINK         https://github.com/fleschutz/PowerShell
-.NOTES        Author: Markus Fleschutz / License: CC0
+.SYNOPSIS
+	speak-checklist.ps1 [<name>]
+.DESCRIPTION
+	Speaks the given checklist by text-to-speech (TTS)
+.EXAMPLE
+	PS> .\speak-checklist.ps1 
+.LINK
+	https://github.com/fleschutz/PowerShell
+.NOTES
+	Author: Markus Fleschutz / License: CC0
 #>
 
 param($Name = "")

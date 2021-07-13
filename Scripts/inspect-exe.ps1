@@ -1,8 +1,14 @@
 <#
-.SYNTAX       inspect-exe.ps1 [<path-to-exe-file>]
-.DESCRIPTION  prints basic information of the given executable file
-.LINK         https://github.com/fleschutz/PowerShell
-.NOTES        Author: Markus Fleschutz / License: CC0
+.SYNOPSIS
+	inspect-exe.ps1 [<path-to-exe-file>]
+.DESCRIPTION
+	Prints basic information of the given executable file
+.EXAMPLE
+	PS> .\inspect-exe.ps1 C:\MyApp.exe
+.LINK
+	https://github.com/fleschutz/PowerShell
+.NOTES
+	Author: Markus Fleschutz / License: CC0
 #>
 
 param($PathToExe = "")

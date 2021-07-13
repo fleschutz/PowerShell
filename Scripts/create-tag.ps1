@@ -1,8 +1,14 @@
 ﻿<#
-.SYNTAX       create-tag.ps1 [<new-tag-name>] [<repo-dir>]
-.DESCRIPTION  creates a new tag in the current/given Git repository 
-.LINK         https://github.com/fleschutz/PowerShell
-.NOTES        Author: Markus Fleschutz / License: CC0
+.SYNOPSIS
+	create-tag.ps1 [<new-tag-name>] [<repo-dir>]
+.DESCRIPTION
+	Creates a new tag in the current/given Git repository 
+.EXAMPLE
+	PS> .\create-tag.ps1 v1.7
+.LINK
+	https://github.com/fleschutz/PowerShell
+.NOTES
+	Author: Markus Fleschutz / License: CC0
 #>
 
 param($NewTagName = "", $RepoDir = "$PWD")

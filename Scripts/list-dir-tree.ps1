@@ -1,8 +1,14 @@
 ﻿<#
-.SYNTAX       list-dir-tree.ps1 [<dir-tree>]
-.DESCRIPTION  lists a directory tree
-.LINK         https://github.com/fleschutz/PowerShell
-.NOTES        Author: Markus Fleschutz / License: CC0
+.SYNOPSIS
+	list-dir-tree.ps1 [<dir-tree>]
+.DESCRIPTION
+	Lists the full directory tree
+.EXAMPLE
+	PS> .\list-dir-tree.ps1 C:\
+.LINK
+	https://github.com/fleschutz/PowerShell
+.NOTES
+	Author: Markus Fleschutz / License: CC0
 #>
 
 param($DirTree = "$PWD")

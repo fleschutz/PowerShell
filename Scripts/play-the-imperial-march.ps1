@@ -1,8 +1,14 @@
 <#
-.SYNTAX       play-the-imperial-march.ps1
-.DESCRIPTION  plays the Imperial March (Star Wars)
-.LINK         https://github.com/fleschutz/PowerShell
-.NOTES        Author: Markus Fleschutz / License: CC0
+.SYNOPSIS
+	play-the-imperial-march.ps1
+.DESCRIPTION
+	Plays the Imperial March (Star Wars)
+.EXAMPLE
+	PS> .\play-the-imperial-march.ps1
+.LINK
+	https://github.com/fleschutz/PowerShell
+.NOTES
+	Author: Markus Fleschutz / License: CC0
 #>
 
 [console]::beep(440, 500)      

@@ -1,8 +1,14 @@
 <#
-.SYNTAX       generate-qrcode.ps1 [<text>] [<image-size>]
-.DESCRIPTION  generates a QR code
-.LINK         https://github.com/fleschutz/PowerShell
-.NOTES        Author: Markus Fleschutz / License: CC0
+.SYNOPSIS
+	generate-qrcode.ps1 [<text>] [<image-size>]
+.DESCRIPTION
+	Generates a QR code image file
+.EXAMPLE
+	PS> .\generate-qrcode.ps1
+.LINK
+	https://github.com/fleschutz/PowerShell
+.NOTES
+	Author: Markus Fleschutz / License: CC0
 #>
 
 param($Text = "", $ImageSize = "")

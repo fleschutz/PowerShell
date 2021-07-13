@@ -1,8 +1,14 @@
 <#
-.SYNTAX       list-branches.ps1 [<repo-dir>] [<pattern>]
-.DESCRIPTION  lists all branches in the current/given Git repository 
-.LINK         https://github.com/fleschutz/PowerShell
-.NOTES        Author: Markus Fleschutz / License: CC0
+.SYNOPSIS
+	list-branches.ps1 [<repo-dir>] [<pattern>]
+.DESCRIPTION
+	Lists all branches in the current/given Git repository 
+.EXAMPLE
+	PS> .\list-branches.ps1
+.LINK
+	https://github.com/fleschutz/PowerShell
+.NOTES
+	Author: Markus Fleschutz / License: CC0
 #>
 
 param($RepoDir = "$PWD", $Pattern = "*")

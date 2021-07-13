@@ -1,8 +1,14 @@
 ﻿<#
-.SYNTAX       list-submodules.ps1 [<repo-dir>] 
-.DESCRIPTION  lists the submodules of the current/given Git repository 
-.LINK         https://github.com/fleschutz/PowerShell
-.NOTES        Author: Markus Fleschutz / License: CC0
+.SYNOPSIS
+	list-submodules.ps1 [<repo-dir>] 
+.DESCRIPTION
+	Lists the submodules of the current/given Git repository 
+.EXAMPLE
+	PS> .\list-submodules.ps1 C:\MyRepo
+.LINK
+	https://github.com/fleschutz/PowerShell
+.NOTES
+	Author: Markus Fleschutz / License: CC0
 #>
 
 param($RepoDir = "$PWD")

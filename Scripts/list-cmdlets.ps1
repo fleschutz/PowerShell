@@ -1,8 +1,14 @@
 <#
-.SYNTAX       list-cmdlets.ps1 
-.DESCRIPTION  lists all PowerShell cmdlets
-.LINK         https://github.com/fleschutz/PowerShell
-.NOTES        Author: Markus Fleschutz / License: CC0
+.SYNOPSIS
+	list-cmdlets.ps1 
+.DESCRIPTION
+	Lists all PowerShell cmdlets
+.EXAMPLE
+	PS> .\list-cmdlets.ps1
+.LINK
+	https://github.com/fleschutz/PowerShell
+.NOTES
+	Author: Markus Fleschutz / License: CC0
 #>
 
 try {
