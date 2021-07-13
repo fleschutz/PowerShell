@@ -1,8 +1,14 @@
 <#
-.SYNTAX       add-memo.ps1 [<text>]
-.DESCRIPTION  adds the given memo text to $HOME/Memos.csv
-.LINK         https://github.com/fleschutz/PowerShell
-.NOTES        Author: Markus Fleschutz / License: CC0
+.SYNOPSIS
+	add-memo.ps1 [<text>]
+.DESCRIPTION
+	Adds the given memo text to $HOME/Memos.csv
+.EXAMPLE
+	PS> .\add-memo.ps1 "Buy apples"
+.LINK
+	https://github.com/fleschutz/PowerShell
+.NOTES
+	Author: Markus Fleschutz / License: CC0
 #>
 
 param($Text = "")

@@ -1,8 +1,14 @@
 ﻿<#
-.SYNTAX       cd-docs.ps1 
-.DESCRIPTION  go to the user's documents folder 
-.LINK         https://github.com/fleschutz/PowerShell
-.NOTES        Author: Markus Fleschutz / License: CC0
+.SYNOPSIS
+	cd-docs.ps1 
+.DESCRIPTION
+	Go to the user's documents folder 
+.EXAMPLE
+	PS> .\cd-docs.ps1 
+.LINK
+	https://github.com/fleschutz/PowerShell
+.NOTES
+	Author: Markus Fleschutz / License: CC0
 #>
 
 $TargetDir = resolve-path "$HOME/Documents"
