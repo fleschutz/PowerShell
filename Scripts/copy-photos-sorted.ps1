@@ -1,4 +1,4 @@
-<#
+﻿<#
 .SYNOPSIS
 	copy-photos-sorted.ps1 [<source-dir>] [<target-dir-tree>]
 .DESCRIPTION
@@ -13,7 +13,7 @@
 
 param([string]$SourceDir = "", [string]$TargetDirTree = "")
 
-function CopyFile { param([string]$SrcPath, [string]$Filename, [int]$Date, [string]$DstDir)
+function CopyFile { param([int]$Num, [string]$SrcPath, [string]$Filename, [int]$Date, [string]$DstDir)
 	[int]$Year = $Date / 10000
 	[int]$Month = ($Date / 100) % 100
 	$MonthDir = switch($Month) {
@@ -32,9 +32,9 @@ function CopyFile { param([string]$SrcPath, [string]$Filename, [int]$Date, [stri
 	}
 	$DstPath = "$DstDir/$Year/$MonthDir/$Filename"
 	if (test-path "$DstPath" -pathType leaf) {
-		"$DstPath exists, skipping..."
+		"#$($Num): $Filename exists already, skipping..."
 	} else {
-		"Copying to $DstPath ..."
+		"#$($Num): $Filename is copied..."
 		new-item -path "$DstDir" -name "$Year" -itemType "directory" -force | out-null
 		new-item -path "$DstDir/$Year" -name "$MonthDir" -itemType "directory" -force | out-null
 		copy-item "$SrcPath" "$DstPath" -force
@@ -47,32 +47,30 @@ try {
 
 	$StopWatch = [system.diagnostics.stopwatch]::startNew()
 	$Files = (get-childItem "$SourceDir\*.jpg" -attributes !Directory)
-	[int]$Count = 0
+	"Found $($Files.Count) photos in 📂$SourceDir..."
+	[int]$Num = 0
 	foreach ($File in $Files) {
+		$Num++
 		$Filename = (get-item "$File").Name
 		if ("$Filename" -like "IMG_*_*.jpg") {
 			$Array = $Filename.split("_")
-			CopyFile $File $Filename $Array[1] $TargetDirTree
-			$Count++
+			CopyFile $Num "$File" "$Filename" $Array[1] "$TargetDirTree"
 		} elseif ("$Filename" -like "IMG-*-*.jpg") {
 			$Array = $Filename.split("-")
-			CopyFile $File $Filename $Array[1] $TargetDirTree
-			$Count++
+			CopyFile $Num "$File" "$Filename" $Array[1] "$TargetDirTree"
 		} elseif ("$Filename" -like "PANO_*_*.jpg") {
 			$Array = $Filename.split("_")
-			CopyFile $Filen $Filename $Array[1] $TargetDirTree
-			$Count++
+			CopyFile $Num "$File" "$Filename" $Array[1] "$TargetDirTree"
 		} elseif ("$Filename" -like "PANO-*-*.jpg") {
 			$Array = $Filename.split("-")
-			CopyFile $Filen $Filename $Array[1] $TargetDirTree
-			$Count++
+			CopyFile $Num "$File" "$Filename" $Array[1] "$TargetDirTree"
 		} else {
-			"Can't extract year and month from: $Filename"
+			"#$($Num): $Filename with unknown filename format"
 		}
 	}
 
 	[int]$Elapsed = $StopWatch.Elapsed.TotalSeconds
-	"✔️ copied $Count photos sorted by year and month into 📂$TargetDirTree in $Elapsed sec"
+	"✔️ copied $Num photos sorted by year and month to 📂$TargetDirTree in $Elapsed sec"
 	exit 0
 } catch {
 	write-error "⚠️ Error in line $($_.InvocationInfo.ScriptLineNumber): $($Error[0])"
