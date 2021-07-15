@@ -13,7 +13,7 @@
 
 param([string]$SourceDir = "", [string]$TargetDirTree = "")
 
-function CopyFile { param([string]$File, [string]$Filename, [int]$Date, [string]$TargetDir)
+function CopyFile { param([string]$SrcPath, [string]$Filename, [int]$Date, [string]$DstDir)
 	[int]$Year = $Date / 10000
 	[int]$Month = ($Date / 100) % 100
 	$MonthDir = switch($Month) {
@@ -30,9 +30,15 @@ function CopyFile { param([string]$File, [string]$Filename, [int]$Date, [string]
 	11 {"11 NOV"}
 	12 {"12 DEC"}
 	}
-	$TargetFile = "$TargetDirTree/$Year/$MonthDir/$Filename"
-	"Copying to $TargetFile ..."
-	copy-item "$File" "$TargetFile" -force
+	$DstPath = "$DstDir/$Year/$MonthDir/$Filename"
+	if (test-path "$DstPath" -pathType leaf) {
+		"$DstPath exists, skipping..."
+	} else {
+		"Copying to $DstPath ..."
+		new-item -path "$DstDir" -name "$Year" -itemType "directory" -force | out-null
+		new-item -path "$DstDir/$Year" -name "$MonthDir" -itemType "directory" -force | out-null
+		copy-item "$SrcPath" "$DstPath" -force
+	}
 }
 
 try {
@@ -66,7 +72,7 @@ try {
 	}
 
 	[int]$Elapsed = $StopWatch.Elapsed.TotalSeconds
-	"✔️ copied $Count photos sorted into 📂$TargetDirTree in $Elapsed sec"
+	"✔️ copied $Count photos sorted by year and month into 📂$TargetDirTree in $Elapsed sec"
 	exit 0
 } catch {
 	write-error "⚠️ Error in line $($_.InvocationInfo.ScriptLineNumber): $($Error[0])"
