@@ -15,18 +15,17 @@ param($RepoDir = "$PWD")
 
 try {
 	if (-not(test-path "$RepoDir" -pathType container)) { throw "Can't access directory: $RepoDir" }
-	set-location "$RepoDir"
-
-	$RepoDirName = (get-item "$RepoDir").Name
-	"⏳ Fetching updates for Git repository 📂$RepoDirName ..."
 
 	$Null = (git --version)
 	if ($lastExitCode -ne "0") { throw "Can't execute 'git' - make sure Git is installed and available" }
 
-	& git fetch
+	$RepoDirName = (get-item "$RepoDir").Name
+	"🢃 Fetching updates for 📂$RepoDirName ..."
+
+	& git -C "$RepoDir" fetch
 	if ($lastExitCode -ne "0") { throw "'git fetch' failed" }
 
-	$Tag = (git describe --tags --abbrev=0)
+	$Tag = (git -C "$RepoDir" describe --tags --abbrev=0)
 	"🔖$Tag"
 	exit 0
 } catch {
