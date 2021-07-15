@@ -48,12 +48,20 @@ try {
 			$Array = $Filename.split("_")
 			CopyFile $File $Filename $Array[1] $TargetDirTree
 			$Count++
+		} elseif ("$Filename" -like "IMG-*-*.jpg") {
+			$Array = $Filename.split("-")
+			CopyFile $File $Filename $Array[1] $TargetDirTree
+			$Count++
 		} elseif ("$Filename" -like "PANO_*_*.jpg") {
 			$Array = $Filename.split("_")
 			CopyFile $Filen $Filename $Array[1] $TargetDirTree
 			$Count++
+		} elseif ("$Filename" -like "PANO-*-*.jpg") {
+			$Array = $Filename.split("-")
+			CopyFile $Filen $Filename $Array[1] $TargetDirTree
+			$Count++
 		} else {
-			"Unknown filename format: $Filename"
+			"Can't extract year and month from: $Filename"
 		}
 	}
 
