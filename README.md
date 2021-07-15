@@ -92,7 +92,6 @@ Mega Collection of PowerShell Scripts
 
 📁 Scripts for Files & Folders 
 -------------------------------
-* [clear-recycle-bin.ps1](Scripts/clear-recycle-bin.ps1) - removes the content of the recycle bin folder (can not be undo!)
 * [cd-desktop.ps1](Scripts/cd-desktop.ps1) - go to the user's desktop folder
 * [cd-docs.ps1](Scripts/cd-docs.ps1) - go to the user's documents folder
 * [cd-downloads.ps1](Scripts/cd-downloads.ps1) - go to the user's downloads folder
@@ -112,6 +111,8 @@ Mega Collection of PowerShell Scripts
 * [cd-videos.ps1](Scripts/cd-videos.ps1) - go to the user's videos folder
 * [check-symlinks.ps1](Scripts/check-symlinks.ps1) - checks every symlink in the given directory tree
 * [check-xml-file.ps1](Scripts/check-xml-file.ps1) - checks the given XML file for validity
+* [clear-recycle-bin.ps1](Scripts/clear-recycle-bin.ps1) - removes the content of the recycle bin folder (can not be undo!)
+* [copy-photos-sorted.ps1](Scripts/copy-photos-sorted.ps1) - Copies all photos sorted by year and month 
 * [create-shortcut.ps1](Scripts/create-shortcut.ps1) - creates a shortcut
 * [create-symlink.ps1](Scripts/create-symlink.ps1) - creates a symbolic link
 * [decrypt-file.ps1](Scripts/decrypt-file.ps1) - encrypts the given file
