@@ -11,10 +11,11 @@
 	Author: Markus Fleschutz / License: CC0
 #>
 
-param($Text = "")
-if ($Text -eq "") { $Text = read-host "Enter the text to speak" }
+param([string]$Text = "")
 
 try {
+	if ($Text -eq "") { $Text = read-host "Enter the text to speak" }
+
 	$Voice = new-object -ComObject SAPI.SPVoice
 	$Result = $Voice.Speak($Text)
 	exit 0

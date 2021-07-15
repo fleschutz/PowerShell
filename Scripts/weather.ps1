@@ -11,7 +11,7 @@
 	Author: Markus Fleschutz / License: CC0
 #>
 
-param($GeoLocation = "") # empty means determine automatically
+param([string]$GeoLocation = "") # empty means determine automatically
 
 try {
 	(invoke-webRequest http://wttr.in/$GeoLocation -UserAgent "curl" ).Content

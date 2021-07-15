@@ -11,10 +11,11 @@
 	Author: Markus Fleschutz / License: CC0
 #>
 
-param($File = "")
-if ($File -eq "") { $File = read-host "Enter path to text file" }
+param([string]$File = "")
 
 try {
+	if ($File -eq "") { $File = read-host "Enter path to text file" }
+
 	$Text = Get-Content $File
 
 	$Voice = new-object -ComObject SAPI.SPVoice

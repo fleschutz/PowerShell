@@ -11,17 +11,17 @@
 	Author: Markus Fleschutz / License: CC0
 #>
 
-param($FullProgramName = "", $ProgramName = "", $ProgramAliasName = "")
-
-if ($ProgramName -eq "") {
-	get-process | where-object {$_.mainWindowTitle} | format-table Id, Name, mainWindowtitle -AutoSize
-	$ProgramName = read-host "Enter program name"
-}
-if ($FullProgramName -eq "") {
-	$FullProgramName = $ProgramName
-}
+param([string]$FullProgramName = "", [string]$ProgramName = "", [string]$ProgramAliasName = "")
 
 try {
+	if ($ProgramName -eq "") {
+		get-process | where-object {$_.mainWindowTitle} | format-table Id, Name, mainWindowtitle -AutoSize
+		$ProgramName = read-host "Enter program name"
+	}
+	if ($FullProgramName -eq "") {
+		$FullProgramName = $ProgramName
+	}
+
 	$Processes = get-process -name $ProgramName -errorAction 'silentlycontinue'
 	if ($Processes.Count -ne 0) {
 		foreach ($Process in $Processes) {

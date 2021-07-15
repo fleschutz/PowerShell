@@ -11,7 +11,7 @@
 	Author: Markus Fleschutz / License: CC0
 #>
 
-param($RSS_URL = "https://distrowatch.com/news/dwd.xml", [int]$MaxCount = 20)
+param([string]$RSS_URL = "https://distrowatch.com/news/dwd.xml", [int]$MaxCount = 20)
 
 try {
 	& "$PSScriptRoot/write-big.ps1" "OS Updates"

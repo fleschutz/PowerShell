@@ -11,10 +11,11 @@
 	Author: Markus Fleschutz / License: CC0
 #>
 
-param($BranchName = "", $RepoDir = "$PWD")
-if ($BranchName -eq "") { $BranchName = read-host "Enter name of branch to switch to" }
+param([string]$BranchName = "", [string]$RepoDir = "$PWD")
 
 try {
+	if ($BranchName -eq "") { $BranchName = read-host "Enter name of branch to switch to" }
+
 	$RepoDir = resolve-path "$RepoDir"
 	if (-not(test-path "$RepoDir" -pathType container)) { throw "Can't access directory: $RepoDir" }
 	set-location "$RepoDir"

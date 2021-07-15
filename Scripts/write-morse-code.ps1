@@ -11,7 +11,7 @@
 	Author: Markus Fleschutz / License: CC0
 #>
 
-param($Text = "", [int]$OneTimeUnit = 100) # in milliseconds
+param([string]$Text = "", [int]$OneTimeUnit = 100) # in milliseconds
 
 function gap { param([int]$Length)
 	for ([int]$i = 1; $i -lt $Length; $i++) {

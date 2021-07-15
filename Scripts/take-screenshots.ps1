@@ -11,7 +11,7 @@
 	Author: Markus Fleschutz / License: CC0
 #>
 
-param($Directory = "$PWD", [int]$Interval = 60)
+param([string]$Directory = "$PWD", [int]$Interval = 60)
 
 function TakeScreenshot { param([string]$FilePath)
 	Add-Type -Assembly System.Windows.Forms            

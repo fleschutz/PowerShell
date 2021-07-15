@@ -11,7 +11,7 @@
 	Author: Markus Fleschutz / License: CC0
 #>
 
-param($EmailAddress = "markus@fleschutz.de")
+param([string]$EmailAddress = "markus@fleschutz.de")
 
 try {
 	$URL="mailto:$EmailAddress"

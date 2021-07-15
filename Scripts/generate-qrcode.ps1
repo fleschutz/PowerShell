@@ -11,11 +11,12 @@
 	Author: Markus Fleschutz / License: CC0
 #>
 
-param($Text = "", $ImageSize = "")
-if ($Text -eq "") { $Text = read-host "Enter text or URL" }
-if ($ImageSize -eq "") { $ImageSize = read-host "Enter image size (e.g. 500x500)" }
+param([string]$Text = "", [string]$ImageSize = "")
 
 try {
+	if ($Text -eq "") { $Text = read-host "Enter text or URL" }
+	if ($ImageSize -eq "") { $ImageSize = read-host "Enter image size (e.g. 500x500)" }
+
 	$ECC = "M" # can be L, M, Q, H
 	$QuietZone = 1
 	$ForegroundColor = "000000"

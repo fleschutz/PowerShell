@@ -11,10 +11,11 @@
 	Author: Markus Fleschutz / License: CC0
 #>
 
-param($DirTree = "")
-if ($DirTree -eq "" ) { $DirTree = read-host "Enter path to directory tree" }
+param([string]$DirTree = "")
 
 try {
+	if ($DirTree -eq "" ) { $DirTree = read-host "Enter path to directory tree" }
+
 	Get-ChildItem -path $DirTree -recurse | select FullName
 	exit 0
 } catch {

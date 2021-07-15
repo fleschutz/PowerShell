@@ -11,7 +11,7 @@
 	Author: Markus Fleschutz / License: CC0
 #>
 
-param($DirTree = "$PWD")
+param([string]$DirTree = "$PWD")
 
 try {
 	$DirTree = resolve-path "$DirTree"

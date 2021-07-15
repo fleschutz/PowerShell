@@ -12,7 +12,7 @@
 	Author: Markus Fleschutz / License: CC0
 #>
 
-param($MAC = "")
+param([string]$MAC = "")
 
 function IsMACAddressValid { param([string]$mac)
 	$RegEx = "^([0-9A-Fa-f]{2}[:-]){5}([0-9A-Fa-f]{2})|([0-9A-Fa-f]{2}){6}$"

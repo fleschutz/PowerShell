@@ -11,10 +11,11 @@
 	Author: Markus Fleschutz / License: CC0
 #>
 
-param($URL = "")
-if ($URL -eq "") { $URL = read-host "Enter file URL to download" }
+param([string]$URL = "")
 
 try {
+	if ($URL -eq "") { $URL = read-host "Enter file URL to download" }
+
 	& wget --version
 	if ($lastExitCode -ne "0") { throw "Can't execute 'wget' - make sure wget is installed and available" }
 

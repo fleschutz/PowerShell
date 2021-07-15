@@ -11,13 +11,13 @@
 	Author: Markus Fleschutz / License: CC0
 #>
 
-param($CommitID = "", $CommitMessage = "", $Branches = "", $RepoDir = "$PWD")
-
-if ($CommitID -eq "" ) { $CommitID = read-host "Enter the commit id to cherry-pick" }
-if ($CommitMessage -eq "" ) { $CommitMessage = read-host "Enter the commit message to use" }
-if ($Branches -eq "" ) { $Branches = read-host "Enter the target branches separated by spaces" }
+param([string]$CommitID = "", [string]$CommitMessage = "", [string]$Branches = "", [string]$RepoDir = "$PWD")
 
 try {
+	if ($CommitID -eq "") { $CommitID = read-host "Enter the commit id to cherry-pick" }
+	if ($CommitMessage -eq "") { $CommitMessage = read-host "Enter the commit message to use" }
+	if ($Branches -eq "") { $Branches = read-host "Enter the target branches separated by spaces" }
+
 	if (-not(test-path "$RepoDir" -pathType container)) { throw "Can't access directory: $RepoDir" }
 	set-location "$RepoDir"
 

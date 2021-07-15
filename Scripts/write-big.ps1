@@ -11,7 +11,7 @@
 	Author: Markus Fleschutz / License: CC0
 #>
 
-param($Text = "")
+param([string]$Text = "")
 
 Set-StrictMode -Version Latest
 

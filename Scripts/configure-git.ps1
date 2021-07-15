@@ -11,12 +11,13 @@
 	Author: Markus Fleschutz / License: CC0
 #>
 
-param($FullName = "", $EmailAddress = "", $FavoriteEditor = "")
-if ($FullName -eq "") { $FullName = read-host "Enter your full name" }
-if ($EmailAddress -eq "") { $EmailAddress = read-host "Enter your e-mail address"}
-if ($FavoriteEditor -eq "") { $FavoriteEditor = read-host "Enter your favorite text editor (emacs,nano,vi,vim,...)" }
+param([string]$FullName = "", [string]$EmailAddress = "", [string]$FavoriteEditor = "")
 
 try {
+	if ($FullName -eq "") { $FullName = read-host "Enter your full name" }
+	if ($EmailAddress -eq "") { $EmailAddress = read-host "Enter your e-mail address"}
+	if ($FavoriteEditor -eq "") { $FavoriteEditor = read-host "Enter your favorite text editor (emacs,nano,vi,vim,...)" }
+
 	$Null = (git --version)
 	if ($lastExitCode -ne "0") { throw "Can't execute 'git' - make sure Git is installed and available" }
 

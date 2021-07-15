@@ -11,7 +11,7 @@
 	Author: Markus Fleschutz / License: CC0
 #>
 
-param($Path = "", $Password = "")
+param([string]$Path = "", [string]$Password = "")
 
 function EncryptFile {
 <#

@@ -11,7 +11,7 @@
 	Author: Markus Fleschutz / License: CC0
 #>
 
-param($USERNAME = "", $PASSWORD = "")
+param([string]$USERNAME = "", [string]$PASSWORD = "")
 if ($USERNAME -eq "") {
 	$USERNAME = read-host "Enter username for FRITZ!Box"
 }

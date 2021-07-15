@@ -11,13 +11,11 @@
 	Author: Markus Fleschutz / License: CC0
 #>
 
-param($PathToExe = "")
-
-if ($PathToExe -eq "" ) {
-	$PathToExe = read-host "Enter path to executable file"
-}
+param([string]$PathToExe = "")
 
 try {
+	if ($PathToExe -eq "" ) { $PathToExe = read-host "Enter path to executable file" }
+
 	get-childitem $PathToExe | % {$_.VersionInfo} | Select *
 	exit 0
 } catch {

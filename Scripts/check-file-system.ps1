@@ -13,7 +13,7 @@
 
 #Requires -RunAsAdministrator
 
-param($Drive = "")
+param([string]$Drive = "")
 
 if ($Drive -eq "" ) {
 	$Drive = read-host "Enter drive (letter) to check"

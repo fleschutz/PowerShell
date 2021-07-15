@@ -11,10 +11,11 @@
 	Author: Markus Fleschutz / License: CC0
 #>
 
-param($NewTagName = "", $RepoDir = "$PWD")
-if ($NewTagName -eq "") { $NewTagName = read-host "Enter new tag name" }
+param([string]$NewTagName = "", [string]$RepoDir = "$PWD")
 
 try {
+	if ($NewTagName -eq "") { $NewTagName = read-host "Enter new tag name" }
+
 	if (-not(test-path "$RepoDir" -pathType container)) { throw "Can't access directory: $RepoDir" }
 	set-location "$RepoDir"
 

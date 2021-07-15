@@ -11,7 +11,8 @@
 	Author: Markus Fleschutz / License: CC0
 #>
 
-param($Text = "")
+param([string]$Text = "")
+
 if ($Text -eq "" ) { $Text = read-host "Enter the text to write" }
 
 write-output $Text.ToUpper()

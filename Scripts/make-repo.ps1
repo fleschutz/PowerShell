@@ -11,7 +11,7 @@
 	Author: Markus Fleschutz / License: CC0
 #>
 
-param($RepoDir = "$PWD")
+param([string]$RepoDir = "$PWD")
 
 function MakeDir { param($Path)
 	$DirName = (get-item "$Path").Name

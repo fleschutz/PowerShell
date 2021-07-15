@@ -11,19 +11,19 @@
 	Author: Markus Fleschutz / License: CC0
 #>
 
-param($File = "", $URL = "", $Username = "", $Password = "")
-
-if ($File -eq "") { $File = read-host "Enter local file to upload" }
-if ($URL -eq "") { $URL = read-host "Enter URL of FTP server" }
-if ($Username -eq "") { $Username = read-host "Enter username for login" }
-if ($Password -eq "") { $Password = read-host "Enter password for login" }
-[bool]$EnableSSL = $true
-[bool]$UseBinary = $true
-[bool]$UsePassive = $true
-[bool]$KeepAlive = $true
-[bool]$IgnoreCert = $true
+param([string]$File = "", [string]$URL = "", [string]$Username = "", [string]$Password = "")
 
 try {
+	if ($File -eq "") { $File = read-host "Enter local file to upload" }
+	if ($URL -eq "") { $URL = read-host "Enter URL of FTP server" }
+	if ($Username -eq "") { $Username = read-host "Enter username for login" }
+	if ($Password -eq "") { $Password = read-host "Enter password for login" }
+	[bool]$EnableSSL = $true
+	[bool]$UseBinary = $true
+	[bool]$UsePassive = $true
+	[bool]$KeepAlive = $true
+	[bool]$IgnoreCert = $true
+
 	$StopWatch = [system.diagnostics.stopwatch]::startNew()
 
 	# check local file:

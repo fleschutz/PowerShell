@@ -11,10 +11,11 @@
 	Author: Markus Fleschutz / License: CC0
 #>
 
-param($DirTree = "")
-if ($DirTree -eq "" ) { $DirTree = read-host "Enter the path to the directory tree" }
+param([string]$DirTree = "")
 
 try {
+	if ($DirTree -eq "" ) { $DirTree = read-host "Enter the path to the directory tree" }
+
 	$Folders = @()
 	foreach ($Folder in (Get-ChildItem -path  "$DirTree" -Recurse | Where { $_.PSisContainer })) {
 		$Folders += New-Object PSObject -Property @{

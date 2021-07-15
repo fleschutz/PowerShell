@@ -11,10 +11,11 @@
 	Author: Markus Fleschutz / License: CC0
 #>
 
-param($IPaddr = "")
-if ($IPaddr -eq "" ) { $IPaddr = read-host "Enter IP address to locate" }
+param([string]$IPaddr = "")
 
 try {
+	if ($IPaddr -eq "" ) { $IPaddr = read-host "Enter IP address to locate" }
+
 	$result = Invoke-RestMethod -Method Get -Uri "http://ip-api.com/json/$IPaddr"
 	write-output $result
 	exit 0

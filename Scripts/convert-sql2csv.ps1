@@ -11,14 +11,15 @@
 	Author: Markus Fleschutz / License: CC0
 #>
 
-param($server = "", $database = "", $username = "", $password = "", $query = "")
-if ($server -eq "") { $server = read-host "Enter the hostname/IP address of the SQL server" }
-if ($database -eq "") { $database = read-host "Enter the database name" }
-if ($username -eq "") { $username = read-host "Enter the database username" }
-if ($password -eq "") { $password = read-host "Enter the database user password" }
-if ($query -eq "") { $query = read-host "Enter the database query" }
+param([string]$server = "", [string]$database = "", [string]$username = "", [string]$password = "", [string]$query = "")
 
 try {
+	if ($server -eq "") { $server = read-host "Enter the hostname/IP address of the SQL server" }
+	if ($database -eq "") { $database = read-host "Enter the database name" }
+	if ($username -eq "") { $username = read-host "Enter the database username" }
+	if ($password -eq "") { $password = read-host "Enter the database user password" }
+	if ($query -eq "") { $query = read-host "Enter the database query" }
+
 	$secpasswd = ConvertTo-SecureString $password -AsPlainText -Force
 	$creds = New-Object System.Management.Automation.PSCredential ($username, $secpasswd)
 	$csvfilepath = "$PSScriptRoot\sqlserver_table.csv"

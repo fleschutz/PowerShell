@@ -11,7 +11,7 @@
 	Author: Markus Fleschutz / License: CC0
 #>
 
-param($URL = "http://www.fleschutz.de")
+param([string]$URL = "http://www.fleschutz.de")
 
 try {
 	Start-Process $URL

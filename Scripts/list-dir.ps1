@@ -11,7 +11,7 @@
 	Author: Markus Fleschutz / License: CC0
 #>
 
-param($Pattern = "*")
+param([string]$Pattern = "*")
 
 function ListDir { param([string]$Pattern)
 	$Items = get-childItem -path "$Pattern"

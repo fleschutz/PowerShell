@@ -11,7 +11,7 @@
 	Author: Markus Fleschutz / License: CC0
 #>
 
-param($ParentDir = "$PWD")
+param([string]$ParentDir = "$PWD")
 
 try {
 	$StopWatch = [system.diagnostics.stopwatch]::startNew()

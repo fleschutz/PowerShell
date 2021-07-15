@@ -11,9 +11,7 @@
 	Author: Markus Fleschutz / License: CC0
 #>
 
-param($MACaddress = "", $IPaddress = "", [int]$Port=9)
-if ($MACaddress -eq "" ) { $MACaddress = read-host "Enter the MAC address (e.g. 00:11:22:33:44:55)"	}
-if ($IPaddress -eq "" ) { $IPaddress = read-host "Enter the IP address or subnet address (e.g. 255.255.255.255)" }
+param([string]$MACaddress = "", [string]$IPaddress = "", [int]$Port=9)
 	
 function Send-WOL { param([string]$mac, [string]$ip="255.255.255.255", [int]$port=9) 
 	$broadcast = [Net.IPAddress]::Parse($ip) 
@@ -28,6 +26,9 @@ function Send-WOL { param([string]$mac, [string]$ip="255.255.255.255", [int]$por
 } 
 
 try {
+	if ($MACaddress -eq "" ) { $MACaddress = read-host "Enter the MAC address (e.g. 00:11:22:33:44:55)"	}
+	if ($IPaddress -eq "" ) { $IPaddress = read-host "Enter the IP address or subnet address (e.g. 255.255.255.255)" }
+
 	Send-WOL $MACaddress $IPaddress $Port
 	start-sleep -milliseconds 100
 	Send-WOL $MACaddress $IPaddress $Port

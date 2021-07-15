@@ -11,10 +11,11 @@
 	Author: Markus Fleschutz / License: CC0
 #>
 
-param($IPaddress = "")
-if ($IPaddress -eq "" ) { $IPaddress = read-host "Enter IP address of Shelly1 device" }
+param([string]$IPaddress = "")
 
 try {
+	if ($IPaddress -eq "" ) { $IPaddress = read-host "Enter IP address of Shelly1 device" }
+
 	for ([int]$i = 0; $i -lt 1000; $i++) {
 		& "$PSScriptRoot/switch-shelly1.ps1" $IPaddress on 0
 		start-sleep -s 10

@@ -11,7 +11,7 @@
 	Author: Markus Fleschutz / License: CC0
 #>
 
-param($Pattern = "*")
+param([string]$Pattern = "*")
 
 try {
 	$Files = (get-childItem -path "$Pattern" -attributes !Directory)

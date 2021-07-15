@@ -11,7 +11,7 @@
 	Author: Markus Fleschutz / License: CC0
 #>
 
-param($Location = "") # empty means determine automatically
+param([string]$Location = "") # empty means determine automatically
 
 function Check { param([int]$Value, [int]$NormalMin,  [int]$NormalMax, [string]$Unit)  
 	if ($Value -lt $NormalMin) {

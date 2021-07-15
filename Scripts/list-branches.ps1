@@ -11,7 +11,7 @@
 	Author: Markus Fleschutz / License: CC0
 #>
 
-param($RepoDir = "$PWD", $Pattern = "*")
+param([string]$RepoDir = "$PWD", [string]$Pattern = "*")
 
 try {
 	if (-not(test-path "$RepoDir" -pathType container)) { throw "Can't access directory: $RepoDir" }

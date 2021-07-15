@@ -11,7 +11,7 @@
 	Author: Markus Fleschutz / License: CC0
 #>
 
-param($Location = "") # empty means determine automatically
+param([string]$Location = "") # empty means determine automatically
 
 try {
 	$Weather = (invoke-webRequest -uri http://wttr.in/${Location}?format=j1 -userAgent "curl" -useBasicParsing).Content | ConvertFrom-Json

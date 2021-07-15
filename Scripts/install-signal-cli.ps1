@@ -11,10 +11,11 @@
 	Author: Markus Fleschutz / License: CC0
 #>
 
-param($Version = "")
-if ($Version -eq "") { $Version = read-host "Enter version to install (see https://github.com/AsamK/signal-cli)" }
+param([string]$Version = "")
 
 try {
+	if ($Version -eq "") { $Version = read-host "Enter version to install (see https://github.com/AsamK/signal-cli)" }
+
 	$StopWatch = [system.diagnostics.stopwatch]::startNew()
 
 	set-location /tmp

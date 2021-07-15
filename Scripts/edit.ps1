@@ -11,7 +11,7 @@
 	Author: Markus Fleschutz / License: CC0
 #>
 
-param($Filename = "")
+param([string]$Filename = "")
 
 try {
 	if ($IsLinux) {

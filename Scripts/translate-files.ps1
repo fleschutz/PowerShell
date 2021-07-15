@@ -11,8 +11,7 @@
 	Author: Markus Fleschutz / License: CC0
 #>
 
-param($FilePattern = "")
-if ($FilePattern -eq "" ) { $FilePattern = read-host "Enter the file pattern" }
+param([string]$FilePattern = "")
 
 function DetectSourceLang { param([string]$Filename)
 	if ("$Filename" -like "*Deutsch*") { return "de" }
@@ -30,6 +29,8 @@ function TranslateFilename { param([string]$Filename, [string]$SourceLang, [stri
 }
 
 try {
+	if ($FilePattern -eq "" ) { $FilePattern = read-host "Enter the file pattern" }
+
 	$TargetLanguages = "ar","zh","fr","de","hi","ga","it","ja","ko","pt","ru","es"
 	$SourceFiles = get-childItem -path "$FilePattern"
 	foreach($SourceFile in $SourceFiles) {

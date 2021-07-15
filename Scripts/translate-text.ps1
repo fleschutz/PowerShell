@@ -11,8 +11,7 @@
 	Author: Markus Fleschutz / License: CC0
 #>
 
-param($Text = "", $SourceLang = "en", $TargetLang = "any")
-if ($Text -eq "" ) { $Text = read-host "Enter text in English to translate" }
+param([string]$Text = "", [string]$SourceLang = "en", [string]$TargetLang = "any")
 
 function Language2Code { param([string]$Language)
 	$Code = switch($Language) {
@@ -50,6 +49,8 @@ function UseArgosTranslateCLI { param([string]$Text, [string]$SourceLang, [strin
 }
 
 try {
+	if ($Text -eq "" ) { $Text = read-host "Enter text in English to translate" }
+
 	if ($TargetLang -eq "any") {
 		$TargetLanguages = "Arabic","Chinese","French","German","Hindi","Irish","Italian","Japanese","Korean","Portuguese","Russian","Spanish"
 		foreach($TargetLang in $TargetLanguages) {

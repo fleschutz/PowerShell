@@ -11,11 +11,7 @@
 	Author: Markus Fleschutz / License: CC0
 #>
 
-param($File = "", $SourceLang = "", $TargetLang = "")
-
-if ($File -eq "" ) { $File = read-host "Enter path to file" }
-if ($SourceLang -eq "" ) { $SourceLang = read-host "Enter language used in this file" }
-if ($TargetLang -eq "" ) { $TargetLang = read-host "Enter language to translate to" }
+param([string]$File = "", [string]$SourceLang = "", [string]$TargetLang = "")
 
 function UseLibreTranslate { param([string]$Text, [string]$SourceLang, [string]$TargetLang)
 	$Parameters = @{"q"="$Text"; "source"="$SourceLang"; "target"="$TargetLang"; }
@@ -25,6 +21,10 @@ function UseLibreTranslate { param([string]$Text, [string]$SourceLang, [string]$
 }
 
 try {
+	if ($File -eq "" ) { $File = read-host "Enter path to file" }
+	if ($SourceLang -eq "" ) { $SourceLang = read-host "Enter language used in this file" }
+	if ($TargetLang -eq "" ) { $TargetLang = read-host "Enter language to translate to" }
+
 	$Lines = Get-Content -path $File
 	foreach($Line in $Lines) {
 		if ("$Line" -eq "") { write-output "$Line"; continue }

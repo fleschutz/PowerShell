@@ -11,12 +11,13 @@
 	Author: Markus Fleschutz / License: CC0
 #>
 
-param($Host = "", $TurnMode = "", [int]$Timer = -999)
-if ($Host -eq "") { $Host = read-host "Enter hostname or IP address of the Shelly1 device" }
-if ($TurnMode -eq "") { $TurnMode = read-host "Enter turn mode (on/off/toggle)" }
-if ($Timer -eq -999) { [int]$Timer = read-host "Enter timer in seconds (0=endless)" }
+param([string]$Host = "", [string]$TurnMode = "", [int]$Timer = -999)
 
 try {
+	if ($Host -eq "") { $Host = read-host "Enter hostname or IP address of the Shelly1 device" }
+	if ($TurnMode -eq "") { $TurnMode = read-host "Enter turn mode (on/off/toggle)" }
+	if ($Timer -eq -999) { [int]$Timer = read-host "Enter timer in seconds (0=endless)" }
+
 	$Result = Invoke-RestMethod "http://$($Host)/relay/0?turn=$($TurnMode)&timer=$($Timer)"
 	
 	write-host -foregroundColor green "✔️ Shelly1 device at $Host switched to $TurnMode for $Timer second(s)"

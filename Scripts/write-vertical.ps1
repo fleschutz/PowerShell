@@ -11,10 +11,11 @@
 	Author: Markus Fleschutz / License: CC0
 #>
 
-param($Text = "")
-if ($Text -eq "" ) { $Text = read-host "Enter the text to write" }
+param([string]$Text = "")
 
 try {
+	if ($Text -eq "" ) { $Text = read-host "Enter the text to write" }
+
 	[char[]]$TextArray = $Text
 	foreach($Char in $TextArray) {
 		write-output $Char

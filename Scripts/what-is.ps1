@@ -11,10 +11,11 @@
 	Author: Markus Fleschutz / License: CC0
 #>
 
-param($Abbreviation = "")
-if ($Abbreviation -eq "" ) { $Abbreviation = read-host "Enter the abbreviation" }
+param([string]$Abbreviation = "")
 
 try {
+	if ($Abbreviation -eq "" ) { $Abbreviation = read-host "Enter the abbreviation" }
+
 	write-progress "Searching ..."
 
 	$FoundOne = $false

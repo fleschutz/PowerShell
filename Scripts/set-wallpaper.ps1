@@ -12,7 +12,7 @@
 	Author: Markus Fleschutz / License: CC0
 #>
 
-param($ImageFile = "", $Style = "Fit")
+param([string]$ImageFile = "", [string]$Style = "Fit")
 
 function SetWallPaper {
 	param([string]$Image, [ValidateSet('Fill', 'Fit', 'Stretch', 'Tile', 'Center', 'Span')][string]$Style)

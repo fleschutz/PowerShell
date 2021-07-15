@@ -11,10 +11,11 @@
 	Author: Markus Fleschutz / License: CC0
 #>
 
-param($Filename = "")
-if ($Filename -eq "" ) { $Filename = read-host "Enter the MP3 filename" }
+param([string]$Filename = "")
 
 try {
+	if ($Filename -eq "" ) { $Filename = read-host "Enter the MP3 filename" }
+
 	if (-not(test-path "$Filename" -pathType leaf)) { throw "Can't access audio file: $Filename" }
 	$FullPath = (get-childItem $Filename).fullname
 	$Filename = (get-item "$FullPath").name

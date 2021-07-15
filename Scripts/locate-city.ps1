@@ -11,10 +11,11 @@
 	Author: Markus Fleschutz / License: CC0
 #>
 
-param($City = "")
-if ($City -eq "" ) { $City = read-host "Enter the city name" }
+param([string]$City = "")
 
 try {
+	if ($City -eq "" ) { $City = read-host "Enter the city name" }
+
 	write-progress "Reading worldcities.csv..."
 	$Table = import-csv "$PSScriptRoot/../Data/worldcities.csv"
 

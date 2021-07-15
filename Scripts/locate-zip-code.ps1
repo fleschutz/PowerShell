@@ -11,11 +11,12 @@
 	Author: Markus Fleschutz / License: CC0
 #>
 
-param($CountryCode = "", $ZipCode = "")
-if ($CountryCode -eq "" ) { $CountryCode = read-host "Enter the country code" }
-if ($ZipCode -eq "" ) { $ZipCode = read-host "Enter the zip code" }
+param([string]$CountryCode = "", [string]$ZipCode = "")
 
 try {
+	if ($CountryCode -eq "" ) { $CountryCode = read-host "Enter the country code" }
+	if ($ZipCode -eq "" ) { $ZipCode = read-host "Enter the zip code" }
+
 	write-progress "Reading zip-codes.csv..."
 	$Table = import-csv "$PSScriptRoot/../Data/zip-codes.csv"
 

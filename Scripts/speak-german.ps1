@@ -12,9 +12,10 @@
 #>
 
 param([string]$Text = "")
-if ($Text -eq "") { $Text = read-host "Enter the text to speak" }
 
 try {
+	if ($Text -eq "") { $Text = read-host "Enter the text to speak" }
+
 	$Voice = new-object -ComObject SAPI.SPVoice
 	$Voices = $Voice.GetVoices()
 	foreach ($OtherVoice in $Voices) {

@@ -11,14 +11,15 @@
 	Author: Markus Fleschutz / License: CC0
 #>
 
-param($Directory = "")
-if ($Directory -eq "" ) { $Directory = read-host "Enter the path to the directory to zip" }
+param([string]$Directory = "")
 
 try {
+	if ($Directory -eq "" ) { $Directory = read-host "Enter the path to the directory to zip" }
+
 	$Directory = resolve-path $Directory
 	compress-archive -path $Directory -destinationPath $Directory.zip
 
-	"✔️ zip archive created: $($Directory).zip"
+	"✔️ created zip archive: $($Directory).zip"
 	exit 0
 } catch {
 	write-error "⚠️ Error in line $($_.InvocationInfo.ScriptLineNumber): $($Error[0])"

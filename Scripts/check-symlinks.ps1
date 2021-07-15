@@ -11,7 +11,7 @@
 	Author: Markus Fleschutz / License: CC0
 #>
 
-param($DirTree = "")
+param([string]$DirTree = "")
 
 if ($DirTree -eq "" ) {
 	$DirTree = read-host "Enter the path to the directory tree"

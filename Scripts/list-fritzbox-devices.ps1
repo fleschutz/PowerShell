@@ -13,7 +13,8 @@
 
 #Requires -Version 3
 
-param($Username = "", $Password = "")
+param([string]$Username = "", [string]$Password = "")
+
 if ($Username -eq "") { $Username = read-host "Enter username for FRITZ!Box" }
 if ($Password -eq "") { $Password = read-host "Enter password for FRITZ!Box" }
 

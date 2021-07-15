@@ -11,7 +11,7 @@
 	Author: Markus Fleschutz / License: CC0
 #>
 
-param($DirTree = "", [int]$NumberOfDaysUnused = 99)
+param([string]$DirTree = "", [int]$NumberOfDaysUnused = 99)
 
 write-host "Listing files in $DirTree with last access time older than $NumberOfDaysUnused days"
 

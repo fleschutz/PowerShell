@@ -11,10 +11,11 @@
 	Author: Markus Fleschutz / License: CC0
 #>
 
-param($Path = "")
-if ($Path -eq "" ) { $Path = read-host "Enter path to CSV file" }
+param([string]$Path = "")
 
 try {
+	if ($Path -eq "" ) { $Path = read-host "Enter path to CSV file" }
+
 	$Table = Import-CSV -path "$Path" -header A,B,C,D,E,F,G,H
 
 	foreach($Row in $Table) {

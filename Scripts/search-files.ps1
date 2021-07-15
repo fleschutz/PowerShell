@@ -11,9 +11,7 @@
 	Author: Markus Fleschutz / License: CC0
 #>
 
-param($Pattern = "", $Path = "")
-if ($Pattern -eq "" ) { $Pattern = read-host "Enter search pattern" }
-if ($Path -eq "" ) { $Path = read-host "Enter path to files" }
+param([string]$Pattern = "", [string]$Path = "")
 
 function ListScripts { param([string]$Pattern, [string]$Path)
 	$List = Select-String -Path $Path -Pattern "$Pattern" 
@@ -28,6 +26,9 @@ function ListScripts { param([string]$Pattern, [string]$Path)
 }
 
 try {
+	if ($Pattern -eq "" ) { $Pattern = read-host "Enter search pattern" }
+	if ($Path -eq "" ) { $Path = read-host "Enter path to files" }
+
 	ListScripts $Pattern $Path | format-table -property Path,Line,Text
 	exit 0
 } catch {

@@ -11,10 +11,11 @@
 	Author: Markus Fleschutz / License: CC0
 #>
 
-param($Filename = "")
-if ($Filename -eq "" ) { $Filename = read-host "Enter the M3U playlist filename" }
+param([string]$Filename = "")
 
 try {
+	if ($Filename -eq "" ) { $Filename = read-host "Enter the M3U playlist filename" }
+
 	if (-not(test-path "$Filename" -pathType leaf)) { throw "Can't access playlist file: $Filename" }
 	$Lines = get-content $Filename
 

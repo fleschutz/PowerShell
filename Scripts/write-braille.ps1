@@ -11,7 +11,7 @@
 	Author: Markus Fleschutz / License: CC0
 #>
 
-param($Text = "")
+param([string]$Text = "")
 
 function BrailleA { param([int]$Row)
 	switch($Row) {

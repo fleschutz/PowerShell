@@ -11,8 +11,7 @@
 	Author: Markus Fleschutz / License: CC0
 #>
 
-param($Pattern = "")
-if ($Pattern -eq "") { $Pattern = read-host "Enter path to the PowerShell script(s)" }
+param([string]$Pattern = "")
 
 function Convert-PowerShellToBatch
 {
@@ -33,6 +32,8 @@ function Convert-PowerShellToBatch
 }
  
 try {
+	if ($Pattern -eq "") { $Pattern = read-host "Enter path to the PowerShell script(s)" }
+
 	$Files = get-childItem -path "$Pattern"
 	foreach ($File in $Files) {
 		Convert-PowerShellToBatch "$File"

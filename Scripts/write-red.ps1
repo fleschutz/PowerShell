@@ -12,6 +12,7 @@
 #>
 
 param([string]$Text = "")
+
 if ($Text -eq "" ) { $Text = read-host "Enter the text to write" }
 
 write-host -foregroundcolor red "$Text"

@@ -11,10 +11,11 @@
 	Author: Markus Fleschutz / License: CC0
 #>
 
-param($NewBranchName = "", $RepoDir = "$PWD")
-if ($NewBranchName -eq "") { $NewBranchName = read-host "Enter new branch name" }
+param([string]$NewBranchName = "", [string]$RepoDir = "$PWD")
 
 try {
+	if ($NewBranchName -eq "") { $NewBranchName = read-host "Enter new branch name" }
+
 	$StopWatch = [system.diagnostics.stopwatch]::startNew()
 
 	if (-not(test-path "$RepoDir" -pathType container)) { throw "Can't access directory: $RepoDir" }

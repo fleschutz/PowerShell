@@ -11,13 +11,11 @@
 	Author: Markus Fleschutz / License: CC0
 #>
 
-param($DirTree = "")
-
-if ($DirTree -eq "" ) {
-	$DirTree = read-host "Enter the path to the directory tree"
-}
+param([string]$DirTree = "")
 
 try {
+	if ($DirTree -eq "" ) { $DirTree = read-host "Enter the path to the directory tree" }
+
 	[int]$Count = 0
 	write-progress "Listing empty files in $DirTree ..."
 	get-childItem $DirTree -attributes !Directory -recurse | where {$_.Length -eq 0} | foreach-object {

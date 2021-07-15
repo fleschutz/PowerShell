@@ -11,13 +11,11 @@
 	Author: Markus Fleschutz / License: CC0
 #>
 
-param($File = "")
-
-if ($File -eq "" ) {
-	$File = read-host "Enter path to XML file"
-}
+param([string]$File = "")
 
 try {
+	if ($File -eq "" ) { $File = read-host "Enter path to XML file" }
+
 	$XmlFile = Get-Item $File
 	
 	$script:ErrorCount = 0

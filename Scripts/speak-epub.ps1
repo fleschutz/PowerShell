@@ -11,7 +11,7 @@
 	Author: Markus Fleschutz / License: CC0
 #>
 
-param($Filename = "")
+param([string]$Filename = "")
 
 function Speak { param([string]$Text)
 	write-output "$Text"

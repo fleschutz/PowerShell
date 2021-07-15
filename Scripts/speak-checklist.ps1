@@ -11,10 +11,11 @@
 	Author: Markus Fleschutz / License: CC0
 #>
 
-param($Name = "")
-if ($Name -eq "") { $Name = read-host "Enter the name of the checklist" }
+param([string]$Name = "")
 
 try {
+	if ($Name -eq "") { $Name = read-host "Enter the name of the checklist" }
+
 	$Lines = Get-Content -path "$PSScriptRoot/../Data/Checklists/$Name.txt"
 	clear-host
 	$Step = 1

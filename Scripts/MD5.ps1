@@ -11,10 +11,11 @@
 	Author: Markus Fleschutz / License: CC0
 #>
 
-param($File = "")
-if ($File -eq "" ) { $File = read-host "Enter path to file" }
+param([string]$File = "")
 
 try {
+	if ($File -eq "" ) { $File = read-host "Enter path to file" }
+
 	$Result = get-filehash $File -algorithm MD5
 	"MD5 hash is" $Result.Hash
 	exit 0

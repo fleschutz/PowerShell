@@ -11,10 +11,11 @@
 	Author: Markus Fleschutz / License: CC0
 #>
 
-param($File = "")
-if ($File -eq "" ) { $File = read-host "Enter the filename" }
+param([string]$File = "")
 
 try {
+	if ($File -eq "" ) { $File = read-host "Enter the filename" }
+
 	$Result = get-filehash $File -algorithm SHA256
 	write-output "SHA256 hash is:" $Result.Hash
 	exit 0
