@@ -221,6 +221,7 @@ Mega Collection of PowerShell Scripts
 * [set-timer.ps1](Scripts/set-timer.ps1) - sets a timer for a countdown
 * [simulate-matrix.ps1](Scripts/simulate-matrix.ps1) - simulates the Matrix (fun)
 * [simulate-presence.ps1](Scripts/simulate-presence.ps1) - simulates the human presence against burglars
+* [start-calibre-server.ps1](Scripts/start-calibre-server.ps1) - starts a local Calibre server 
 * [start-ipfs-server.ps1](Scripts/start-ipfs-server.ps1) - starts a local IPFS server
 * [switch-shelly1.ps1](Scripts/switch-shelly1.ps1) - switches a Shelly1 device in the local network
 * [translate-file.ps1](Scripts/translate-file.ps1) - translates the given text file into other languages
