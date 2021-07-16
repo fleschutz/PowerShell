@@ -127,6 +127,7 @@ list-timezone.ps1, lists the current time zone details
 list-timezones.ps1, lists all time zones available 
 list-tiobe-index.ps1, lists the TIOBE index of top programming languages
 list-user-groups.ps1, lists the user groups on the local computer
+list-voices.ps1, lists the installed text-to-speech (TTS) voices
 list-weather.ps1, lists the hourly weather 
 list-workdir.ps1, lists the current working directory
 locate-city.ps1, prints the geographic location of the given city
