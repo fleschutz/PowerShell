@@ -132,6 +132,7 @@ Mega Collection of PowerShell Scripts
 * [list-workdir.ps1](Scripts/list-workdir.ps1) - lists the current working directory
 * [make-install.ps1](Scripts/make-install.ps1) - installs built executables and libs to the installation directory
 * [MD5.ps1](Scripts/MD5.ps1) - prints the MD5 checksum of the given file
+* [publish-to-ipfs.ps1](Scripts/publish-to-ipfs.ps1) - publishes the given files or directory to IPFS
 * [remove-empty-dirs.ps1](Scripts/remove-empty-dirs.ps1) - removes empty subfolders within the given directory tree
 * [search-filename.ps1](Scripts/search-filename.ps1) - searches the directory tree for filenames by given pattern 
 * [search-files.ps1](Scripts/search-files.ps1) - searches the given pattern in the given files
