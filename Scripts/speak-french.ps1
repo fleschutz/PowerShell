@@ -1,10 +1,10 @@
 <#
 .SYNOPSIS
-	speak-german.ps1 [<text>]
+	speak-french.ps1 [<text>]
 .DESCRIPTION
-	Speaks the given text with a German text-to-speech (TTS) voice
+	Speaks the given text with a French text-to-speech (TTS) voice
 .EXAMPLE
-	PS> .\speak-german.ps1 Hallo
+	PS> .\speak-french.ps1 Salut
 .LINK
 	https://github.com/fleschutz/PowerShell
 .NOTES
@@ -20,12 +20,12 @@ try {
 	$Voices = $Voice.GetVoices()
 	foreach ($OtherVoice in $Voices) {
 		$Description = $OtherVoice.GetDescription()
-		if ($Description -notlike "*- German*") { continue }
+		if ($Description -notlike "*- French*") { continue }
 		$Voice.Voice = $OtherVoice
 		[void]$Voice.Speak($Text)
 		exit 0
 	}
-	write-error "No German text-to-speech (TTS) voice found"
+	write-error "Sorry, no French text-to-speech (TTS) voice found"
 	exit 1
 } catch {
 	write-error "⚠️ Error in line $($_.InvocationInfo.ScriptLineNumber): $($Error[0])"
