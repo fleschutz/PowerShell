@@ -11,13 +11,15 @@
 	Author: Markus Fleschutz / License: CC0
 #>
 
+#requires -Version 2.0
+
 try {
-	$Voice = new-object -ComObject SAPI.SPVoice
-	$Voices = $Voice.GetVoices()
-	foreach ($OtherVoice in $Voices) {
-		$Description = $OtherVoice.GetDescription()
-		"* $Description"
-	}
+	add-type -AssemblyName System.Speech
+	$speak = New-Object System.Speech.Synthesis.SpeechSynthesizer
+	$speak.GetInstalledVoices() | 
+	  Select-Object -ExpandProperty VoiceInfo | 
+	  Select-Object -Property Name, Culture, Gender, Age
+
 	exit 0
 } catch {
 	write-error "⚠️ Error in line $($_.InvocationInfo.ScriptLineNumber): $($Error[0])"
