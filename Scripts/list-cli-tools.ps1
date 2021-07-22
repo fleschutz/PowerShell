@@ -11,25 +11,57 @@
 	Author: Markus Fleschutz / License: CC0
 #>
 
-function CheckTool { param([string]$Name, [string]$Arg)
-	$Version = (git $Arg)
-	if ($lastExitCode -ne "0") { return }
-
-	$Location = (which $Name)
-	if ($lastExitCode -ne "0") { return }
-
-	new-object PSObject -Property @{ Name=$Name; Version=$Version; Location=$Location }
+function CheckFor { param([string]$Cmd)
+	try {
+		$Info = Get-Command $Cmd -ErrorAction Stop
+		$Location = $Info.Source
+		if (test-path "$Location" -pathType leaf) {
+			$FileSize = (Get-Item "$Location").Length
+		} else {
+			$FileSize = "0"
+		}
+		new-object PSObject -Property @{ Name=$Cmd; Version=$Info.Version; Location=$Location; FileSize=$FileSize }
+	} catch {
+		return
+	}
 }
 
 function ListTools { 
-	"Checking CLI tools ..."
-	CheckTool git "--version"
-	CheckTool ipfs "--version"
-	CheckTool wget "--version"
+	CheckFor at
+	CheckFor curl
+	CheckFor find
+	CheckFor git
+	CheckFor help
+	CheckFor ipfs
+	CheckFor ping
+	CheckFor ping6
+	CheckFor regedit
+	CheckFor replace
+	CheckFor robocopy
+	CheckFor rundll32
+	CheckFor ssh
+	CheckFor ssh-keygen
+	CheckFor sort
+	CheckFor tar
+	CheckFor tasklist
+	CheckFor tskill
+	CheckFor tzsync
+	CheckFor vulkaninfo
+	CheckFor waitfor
+	CheckFor wget
+	CheckFor where
+	CheckFor which
+	CheckFor whoami
+	CheckFor wput
+	CheckFor write
+	CheckFor xcopy
+	CheckFor zip
 }
  
 try {
-	ListTools | format-table 
+	"List of Command-line Tools Available"
+	"===================================="
+	ListTools | format-table -property Name,Version,Location,FileSize
 	exit 0
 } catch {
 	write-error "⚠️ Error in line $($_.InvocationInfo.ScriptLineNumber): $($Error[0])"
