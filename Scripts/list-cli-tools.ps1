@@ -59,9 +59,9 @@ function ListTools {
 }
  
 try {
-	"List of Command-line Tools Available"
-	"===================================="
-	ListTools | format-table -property Name,Version,Location,FileSize
+	"List of Available CLI Tools"
+	"==========================="
+	ListTools | format-table -property @{e='Name';width=12},@{e='Version';width=10},@{e='Location';width=30},@{e='FileSize';width=10}
 	exit 0
 } catch {
 	write-error "⚠️ Error in line $($_.InvocationInfo.ScriptLineNumber): $($Error[0])"
