@@ -51,6 +51,7 @@ Mega Collection of PowerShell Scripts
 * [hibernate.ps1](Scripts/hibernate.ps1) - enables hibernate mode for the local computer (needs admin rights)
 * [install-google-chrome.ps1](Scripts/install-google-chrome.ps1) - installs the Google Chrome browser
 * [install-signal-cli.ps1](Scripts/install-signal-cli.ps1) - installs signal-cli from github.com/AsamK/signal-cli
+* [list-cli-tools.ps1](Scripts/list-cli-tools.ps1) - lists available command-line interface (CLI) tools 
 * [list-drives.ps1](Scripts/list-drives.ps1) - lists all drives
 * [list-network-shares.ps1](Scripts/list-network-shares.ps1) - lists the network shares of the local computer
 * [list-installed-apps.ps1](Scripts/list-installed-apps.ps1) - lists the installed Windows Store apps
