@@ -38,6 +38,7 @@ function ListTools {
 	CheckFor at
 	CheckFor awk
 	CheckFor basename
+	CheckFor bash
 	CheckFor bc
 	CheckFor cc
 	CheckFor cksum
@@ -75,6 +76,7 @@ function ListTools {
 	CheckFor rsync
 	CheckFor rundll32
 	CheckFor scp
+	CheckFor sftp
 	CheckFor sha1sum
 	CheckFor sha256sum
 	CheckFor sha512sum
