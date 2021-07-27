@@ -36,7 +36,7 @@ function CheckFor { param([string]$Cmd, [string]$VersionArg)
 }
 
 function ListTools { 
-	CheckFor 7z "--version"
+	CheckFor 7z "-version"
 	CheckFor ant "--version"
 	CheckFor apt "--version"
 	CheckFor apt-get "--version"
@@ -52,6 +52,9 @@ function ListTools {
 	CheckFor cc "--version"
 	CheckFor cksum "--version"
 	CheckFor clang "--version"
+	CheckFor cmake "--version"
+	CheckFor cpack "--version"
+	CheckFor ctest "--version"
 	CheckFor curl "--version"
 	CheckFor cut "--version"
 	CheckFor diff "--version"
@@ -75,7 +78,7 @@ function ListTools {
 #	CheckFor nslookup "--version"
 	CheckFor openssl "--version"
 	CheckFor perl "--version"
-	CheckFor ping "--version"
+	CheckFor ping "-V"
 	CheckFor ping6 "--version"
 	CheckFor printf "--version"
 	CheckFor python "--version"
@@ -123,11 +126,11 @@ function ListTools {
 	CheckFor yes "--version"
 	CheckFor zip "--version"
 	CheckFor zipcloak "--version"
-	CheckFor zipdetails "--version"
+	CheckFor zipdetails "-v"
 	CheckFor zipgrep "--version"
-	CheckFor zipinfo "--version"
-	CheckFor zipnote "--version"
-	CheckFor zipsplit "--version"
+	CheckFor zipinfo "-v"
+	CheckFor zipnote "-v"
+	CheckFor zipsplit "-v"
 	CheckFor zsh "--version"
 }
  
