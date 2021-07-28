@@ -17,10 +17,13 @@ function CheckFor { param([string]$Cmd, [string]$VersionArg)
 		$Version = $Info.Version
 		$Location = $Info.Source
 		if ($Version -eq "0.0.0.0") {
-			$Result = invoke-expression "$Location $VersionArg"
-			if ($Result -match '\d+\.\d+') {
-				$Version = "$($Matches[0])"
-			} else {
+			if ("$VersionArg" -ne "") {
+				$Result = invoke-expression "$Location $VersionArg"
+				if ($Result -match '\d+\.\d+') {
+					$Version = "$($Matches[0])"
+				} else {
+					$Version = "?"
+			} else
 				$Version = "?"
 			}
 		}
@@ -85,7 +88,7 @@ function ListTools {
 	CheckFor regedit "--version"
 	CheckFor replace "--version"
 	CheckFor robocopy "--version"
-	CheckFor rsh "--version"
+	CheckFor rsh ""
 	CheckFor rsync "--version"
 	CheckFor rundll32 "--version"
 	CheckFor scp "--version"
