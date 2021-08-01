@@ -109,7 +109,7 @@ function ListTools {
 	CheckFor tasklist "--version"
 	CheckFor tee "--version"
 	CheckFor time "--version"
-	CheckFor top "--version"
+	CheckFor top "-v"
 	CheckFor tskill "--version"
 	CheckFor tzsync "--version"
 	CheckFor uniq "--version"
