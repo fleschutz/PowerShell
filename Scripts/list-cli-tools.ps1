@@ -14,18 +14,22 @@
 function CheckFor { param([string]$Cmd, [string]$VersionArg)
 	try {
 		$Info = Get-Command $Cmd -ErrorAction Stop
-		$Version = $Info.Version
 		$Location = $Info.Source
-		if ($Version -eq "0.0.0.0") {
+		if ("$($Info.Version)" -eq "0.0.0.0") {
 			if ("$VersionArg" -ne "") {
 				$Result = invoke-expression "$Location $VersionArg"
-				if ($Result -match '\d+\.\d+') {
+				if ("$Result" -match '\d+.\d+\.\d+') {
+					$Version = "$($Matches[0])"
+				} elseif ("$Result" -match '\d+\.\d+') {
 					$Version = "$($Matches[0])"
 				} else {
-					$Version = "?"
-			} else
-				$Version = "?"
+					$Version = ""
+				}
+			} else {
+				$Version = ""
 			}
+		} else {
+			$Version = $Info.Version
 		}
 		if (test-path "$Location" -pathType leaf) {
 			$FileSize = (Get-Item "$Location").Length
@@ -40,14 +44,14 @@ function CheckFor { param([string]$Cmd, [string]$VersionArg)
 
 function ListTools { 
 	CheckFor 7z "-version"
-	CheckFor ant "--version"
+	CheckFor ant "-v"
 	CheckFor apt "--version"
 	CheckFor apt-get "--version"
 	CheckFor amixer "--version"
 	CheckFor aplay "--version"
 	CheckFor ar "--version"
 	CheckFor arecord "--version"
-	CheckFor at "-V"
+	CheckFor at ""
 	CheckFor awk "--version"
 	CheckFor basename "--version"
 	CheckFor bash "--version"
@@ -71,18 +75,18 @@ function ListTools {
 	CheckFor htop "--version"
 	CheckFor ipfs "--version"
 	CheckFor java "--version"
-	CheckFor lsb_release "--version"
+	CheckFor lsb_release ""
 	CheckFor lzma "--version"
 	CheckFor make "--version"
 	CheckFor md5sum "--version"
 	CheckFor mkfifo "--version"
 	CheckFor nice "--version"
 	CheckFor nroff "--version"
-#	CheckFor nslookup "--version"
-	CheckFor openssl "--version"
+	CheckFor nslookup ""
+	CheckFor openssl ""
 	CheckFor perl "--version"
 	CheckFor ping "-V"
-	CheckFor ping6 "--version"
+	CheckFor ping6 "-V"
 	CheckFor printf "--version"
 	CheckFor python "--version"
 	CheckFor regedit "--version"
@@ -91,13 +95,13 @@ function ListTools {
 	CheckFor rsh ""
 	CheckFor rsync "--version"
 	CheckFor rundll32 "--version"
-	CheckFor scp "--version"
-	CheckFor sftp "--version"
+	CheckFor scp ""
+	CheckFor sftp ""
 	CheckFor sha1sum "--version"
 	CheckFor sha256sum "--version"
 	CheckFor sha512sum "--version"
-	CheckFor ssh "--version"
-	CheckFor ssh-keygen "--version"
+	CheckFor ssh ""
+	CheckFor ssh-keygen ""
 	CheckFor sort "--version"
 	CheckFor split "--version"
 	CheckFor strace "--version"
@@ -108,7 +112,7 @@ function ListTools {
 	CheckFor tar "--version"
 	CheckFor tasklist "--version"
 	CheckFor tee "--version"
-	CheckFor time "--version"
+	CheckFor time ""
 	CheckFor top "-v"
 	CheckFor tskill "--version"
 	CheckFor tzsync "--version"
@@ -117,28 +121,28 @@ function ListTools {
 	CheckFor vim "--version"
 	CheckFor vulkaninfo "--version"
 	CheckFor waitfor "--version"
-	CheckFor wakeonlan "--version"
+	CheckFor wakeonlan ""
 	CheckFor wget "--version"
 	CheckFor where "--version"
 	CheckFor whatis "--version"
-	CheckFor which "--version"
+	CheckFor which ""
 	CheckFor whoami "--version"
 	CheckFor wput "--version"
-	CheckFor write "--version"
+	CheckFor write ""
 	CheckFor xcopy "--version"
 	CheckFor yes "--version"
 	CheckFor zip "--version"
 	CheckFor zipcloak "--version"
-	CheckFor zipdetails "-v"
-	CheckFor zipgrep "--version"
-	CheckFor zipinfo "-v"
-	CheckFor zipnote "-v"
-	CheckFor zipsplit "-v"
+	CheckFor zipdetails ""
+	CheckFor zipgrep ""
+	CheckFor zipinfo ""
+	CheckFor zipnote ""
+	CheckFor zipsplit ""
 	CheckFor zsh "--version"
 }
  
 try {
-	ListTools | format-table -property @{e='Name';width=12},@{e='Version';width=13},@{e='Location';width=45},@{e='FileSize';width=10}
+	ListTools | format-table -property @{e='Name';width=12},@{e='Version';width=14},@{e='Location';width=45},@{e='FileSize';width=10}
 	exit 0
 } catch {
 	write-error "⚠️ Error in line $($_.InvocationInfo.ScriptLineNumber): $($Error[0])"
