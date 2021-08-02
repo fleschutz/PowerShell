@@ -73,6 +73,7 @@ function ListTools {
 	CheckFor cut "--version"
 	CheckFor date ""
 	CheckFor diff "--version"
+	CheckFor dism ""
 	CheckFor driverquery ""
 	CheckFor find "--version"
 	CheckFor ftp "--version"
