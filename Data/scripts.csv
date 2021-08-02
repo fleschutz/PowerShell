@@ -66,8 +66,6 @@ download-file.ps1, downloads a file from the given URL
 edit.ps1, edits the given file with the built-in text editor
 enable-crash-dumps.ps1, enables the writing of crash dumps
 enable-god-mode.ps1, enables the god mode (adds a new icon to the desktop)
-enable-ssh-client.ps1, enables the SSH client (needs admin rights)
-enable-ssh-server.ps1, enables the SSH server (needs admin rights)
 encrypt-file.ps1, encrypts the given file
 fetch-repo.ps1, fetches updates for the current/given Git repository (including submodules)
 fetch-repos.ps1, fetches updates for all Git repositories under the current/given directory (including submodules)
@@ -76,7 +74,9 @@ hibernate.ps1, enables hibernate mode for the local computer (needs admin rights
 inspect-exe.ps1, prints basic information of the given executable file
 install-google-chrome.ps1, installs the Google Chrome browser
 install-signal-cli.ps1, installs signal-cli from github.com/AsamK/signal-cli
-install-wsl.ps1, installs Windows Subsystem for Linux (WSL)
+install-ssh-client.ps1, installs the SSH client (needs admin rights)
+install-ssh-server.ps1, installs the SSH server (needs admin rights)
+install-wsl.ps1, installs Windows Subsystem for Linux (WSL), needs admin rights
 introduce-powershell.ps1, introduces PowerShell to new users
 list-aliases.ps1, lists all PowerShell aliases 
 list-anagrams.ps1, lists all anagrams of the given word

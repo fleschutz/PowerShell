@@ -1,10 +1,10 @@
 <#
 .SYNOPSIS
-	enable-ssh-server.ps1
+	install-ssh-server.ps1
 .DESCRIPTION
-	Enables the SSH server (needs admin rights)
+	Installs the SSH server (needs admin rights)
 .EXAMPLE
-	PS> .\enable-ssh-server.ps1
+	PS> .\install-ssh-server.ps1
 .LINK
 	https://github.com/fleschutz/PowerShell
 .NOTES

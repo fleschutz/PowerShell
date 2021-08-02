@@ -1,10 +1,10 @@
 <#
 .SYNOPSIS
-	enable-ssh-client.ps1
+	install-ssh-client.ps1
 .DESCRIPTION
-	Enables the SSH client (needs admin rights)
+	Installs the SSH client (needs admin rights)
 .EXAMPLE
-	PS> .\enable-ssh-client.ps1
+	PS> .\install-ssh-client.ps1
 .LINK
 	https://github.com/fleschutz/PowerShell
 .NOTES
@@ -19,7 +19,7 @@ try {
 	Add-WindowsCapability -Online -Name OpenSSH.Client*
 
 	[int]$Elapsed = $StopWatch.Elapsed.TotalSeconds
-	"✔️ enabled SSH client in $Elapsed sec"
+	"✔️ installed SSH client in $Elapsed sec"
 	exit 0
 } catch {
 	write-error "⚠️ Error in line $($_.InvocationInfo.ScriptLineNumber): $($Error[0])"
