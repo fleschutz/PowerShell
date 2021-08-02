@@ -11,7 +11,7 @@
 	Author: Markus Fleschutz / License: CC0
 #>
 
-param([string]$Files = "", [string]$HashList = "IPFS_hashes.txt", [string]$DF_Hashes = "checksum_list.txt")
+param([string]$Files = "", [string]$HashList = "IPFS_hashes.txt", [string]$DF_Hashes = "file_checksums.xml")
 
 try {
 	& ipfs --version
