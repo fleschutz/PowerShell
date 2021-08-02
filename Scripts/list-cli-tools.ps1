@@ -99,7 +99,7 @@ function ListTools {
 	CheckFor ping6 "-V"
 	CheckFor print ""
 	CheckFor printf "--version"
-	CheckFor python "--version"
+	CheckFor python ""
 	CheckFor regedit "--version"
 	CheckFor replace "--version"
 	CheckFor robocopy "--version"
