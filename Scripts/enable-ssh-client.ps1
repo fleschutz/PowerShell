@@ -14,9 +14,12 @@
 #Requires -RunAsAdministrator
 
 try {
+	$StopWatch = [system.diagnostics.stopwatch]::startNew()
+
 	Add-WindowsCapability -Online -Name OpenSSH.Client*
 
-	write-host -foregroundColor green "OK - SSH client enabled"
+	[int]$Elapsed = $StopWatch.Elapsed.TotalSeconds
+	"✔️ enabled SSH client in $Elapsed sec"
 	exit 0
 } catch {
 	write-error "⚠️ Error in line $($_.InvocationInfo.ScriptLineNumber): $($Error[0])"

@@ -14,11 +14,14 @@
 #Requires -RunAsAdministrator
 
 try {
+	$StopWatch = [system.diagnostics.stopwatch]::startNew()
+
 	Add-WindowsCapability -Online -Name OpenSSH.Server*
 	Start-Service sshd
 	Set-Service -Name sshd -StartupType 'Automatic'
 
-	write-host -foregroundColor green "OK - SSH server enabled"
+	[int]$Elapsed = $StopWatch.Elapsed.TotalSeconds
+	"✔️ installed SSH server in $Elapsed sec"
 	exit 0
 } catch {
 	write-error "⚠️ Error in line $($_.InvocationInfo.ScriptLineNumber): $($Error[0])"
