@@ -14,44 +14,19 @@
 
 param([string]$currency = "USD")
 
-function WriteBar { param([string]$Text, [float]$Value, [float]$Max)
-	$Num = $Value
-	if ($Num -gt $Max) { $Num = $Max }
-	$Num = ($Num * 70.0) / $Max
-	while ($Num -ge 1.0) {
-		write-host -noNewLine "█"
-		$Num -= 1.0
+function ListExchangeRates { param([string]$currency)
+	[xml]$ExchangeRates = (invoke-webRequest -uri "http://www.floatrates.com/daily/$($currency).xml" -userAgent "curl" -useBasicParsing).Content 
+	foreach($Row in $ExchangeRates.channel.item) {
+		new-object PSObject -property @{ 'Rate' = "$($Row.exchangeRate)"; 'Currency' = "$($Row.targetCurrency) - $($Row.targetName)"; 'Inverse' = "$($Row.inverseRate)"; 'Date' = "$($Row.pubDate)" }
 	}
-	if ($Num -ge 0.875) {
-		write-host -noNewLine "▉"
-	} elseif ($Num -ge 0.75) {
-		write-host -noNewLine "▊"
-	} elseif ($Num -ge 0.625) {
-		write-host -noNewLine "▋"
-	} elseif ($Num -ge 0.5) {
-		write-host -noNewLine "▌"
-	} elseif ($Num -ge 0.375) {
-		write-host -noNewLine "▍"
-	} elseif ($Num -ge 0.25) {
-		write-host -noNewLine "▎"
-	} elseif ($Num -ge 0.125) {
-		write-host -noNewLine "▏"
-	}
-	write-host " $Value $Text"
 }
 
 try {
-	"                                           Exchange Rates Today for 1 $currency"
-	"                                           =============================="
-	"                                          Source: http://www.floatrates.com"
 	""
+	"Exchange Rates Today for 1 $currency (source: http://www.floatrates.com)"
+	"=================================================================="
 
-	[xml]$ExchangeRates = (invoke-webRequest -uri "http://www.floatrates.com/daily/$($currency).xml" -userAgent "curl" -useBasicParsing).Content 
-	foreach($Row in $ExchangeRates.channel.item) {
-		[string]$Name = $Row.targetName
-		[float]$Value = $Row.exchangeRate
-		WriteBar $Name $Value 10.0 
-	}
+	ListExchangeRates $currency | format-table -property Rate,Currency,Inverse,Date
 	exit 0
 } catch {
 	write-error "⚠️ Error in line $($_.InvocationInfo.ScriptLineNumber): $($Error[0])"
