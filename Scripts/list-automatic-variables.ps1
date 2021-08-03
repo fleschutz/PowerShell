@@ -8,7 +8,8 @@
 .LINK
 	https://github.com/fleschutz/PowerShell
 .NOTES
-	Author: Markus Fleschutz / License: CC0
+	Author:  Markus Fleschutz
+	License: CC0
 #>
 
 function AddItem { param([string]$Variable, [string]$Content)

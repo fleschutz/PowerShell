@@ -8,7 +8,8 @@
 .LINK
 	https://github.com/fleschutz/PowerShell
 .NOTES
-	Author: Markus Fleschutz / License: CC0
+	Author:  Markus Fleschutz
+	License: CC0
 #>
 
 param([string]$Text = "PowerShell is powerful! PowerShell is cross-platform! PowerShell is open-source! PowerShell is easy to learn! Powershell is fully documented", [int]$Speed = 60) # 60 ms pause

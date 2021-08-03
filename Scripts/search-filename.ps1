@@ -1,5 +1,18 @@
-# This script serves as a quick Powershell replacement to the search functionality in Windows.
-# After you pass in a root folder and a search term, the script will list all files and folders matching that phrase.
+<#
+.SYNOPSIS
+	search-filename.ps1
+.DESCRIPTION
+	This script serves as a quick Powershell replacement to the search functionality in Windows.
+	After you pass in a root folder and a search term, the script will list all files and folders matching that phrase.
+.EXAMPLE
+	PS> .\search-filename.ps1
+.LINK
+	https://github.com/fleschutz/PowerShell
+.NOTES
+	Author:  Markus Fleschutz
+	License: CC0
+#>
+
 param(
 [Parameter(Mandatory=$true)]
 $path,

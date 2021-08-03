@@ -9,7 +9,8 @@
 .LINK
 	https://github.com/fleschutz/PowerShell
 .NOTES
-	Author: Markus Fleschutz / License: CC0
+	Author:  Markus Fleschutz
+	License: CC0
         requires smartctl (smartmontools) and admin rights
         for automation copy this script to /etc/cron.daily 
 #>

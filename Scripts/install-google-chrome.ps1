@@ -2,13 +2,14 @@
 .SYNOPSIS
 	install-google-chrome.ps1
 .DESCRIPTION
-	Silently installs latest Google Chrome
+	Installs the latest Google Chrome browser
 .EXAMPLE
 	PS> .\install-google-chrome.ps1
 .LINK
 	https://github.com/fleschutz/PowerShell
 .NOTES
-	Author: Markus Fleschutz / License: CC0
+	Author:  Markus Fleschutz
+	License: CC0
 #>
 
 try {
