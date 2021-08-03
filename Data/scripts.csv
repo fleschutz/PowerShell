@@ -106,6 +106,7 @@ list-memos.ps1, lists the memos at $HOME/Memos.csv
 list-unused-files.ps1, lists unused files in a directory tree
 list-cmdlets.ps1, lists the PowerShell cmdlets
 list-earthquakes.ps1, lists earthquakes with magnitude >= 6.0 for the last 30 days
+list-exchange-rates.ps1, lists the exchange rates for the given currency 
 list-modules.ps1, lists the PowerShell modules
 list-mysql-tables.ps1, lists the MySQL server tables
 list-network-shares.ps1, lists the network shares of the local computer

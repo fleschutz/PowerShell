@@ -202,6 +202,7 @@ Mega Collection of PowerShell Scripts
 * [list-fritzbox-calls.ps1](Scripts/list-fritzbox-calls.ps1) - lists the FRITZ!Box calls
 * [list-fritzbox-devices.ps1](Scripts/list-fritzbox-devices.ps1) - lists FRITZ!Box's known devices 
 * [list-earthquakes.ps1](Scripts/list-earthquakes.ps1) - lists earthquakes with magnitude >= 6.0 for the last 30 days
+* [list-exchange-rates.ps1](Scripts/list-exchange-rates.ps1) - lists the exchange rates for the given currency 
 * [list-memos.ps1](Scripts/list-memos.ps1) - lists the memos at $HOME/Memos.csv
 * [list-mysql-tables.ps1](Scripts/list-mysql-tables.ps1) - lists the MySQL server tables
 * [list-news.ps1](Scripts/list-news.ps1) - lists the latest news
