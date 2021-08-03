@@ -46,7 +46,7 @@ try {
 	"                                          Source: http://www.floatrates.com"
 	""
 
-	[xml]$ExchangeRates = (invoke-webRequest -uri "http://www.floatrates.com/daily/$($currency).xml").Content 
+	[xml]$ExchangeRates = (invoke-webRequest -uri "http://www.floatrates.com/daily/$($currency).xml" -userAgent "curl" -useBasicParsing).Content 
 	foreach($Row in $ExchangeRates.channel.item) {
 		[string]$Name = $Row.targetName
 		[float]$Value = $Row.exchangeRate
