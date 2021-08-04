@@ -23,8 +23,8 @@ function ListExchangeRates { param([string]$currency)
 
 try {
 	""
-	"Exchange Rates Today for 1 $currency (source: http://www.floatrates.com)"
-	"=================================================================="
+	"Exchange Rates for 1 $currency (source: http://www.floatrates.com)"
+	"============================================================"
 
 	ListExchangeRates $currency | format-table -property Rate,Currency,Inverse,Date
 	exit 0
