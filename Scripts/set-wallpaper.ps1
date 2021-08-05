@@ -2,8 +2,8 @@
 .SYNOPSIS
 	set-wallpaper.ps1 [<image-file>] [<style>]
 .DESCRIPTION
-	Sets the given image file as wallpaper
-        (style is either Fill, Fit, Stretch, Tile, Center, or Span)
+	Sets the given image file as desktop wallpaper (.JPG or .PNG supported)
+        (<style> is either Fill, Fit (default), Stretch, Tile, Center, or Span)
 .EXAMPLE
 	PS> .\set-wallpaper.ps1 C:\ocean.jpg
 .LINK
