@@ -2,7 +2,7 @@
 .SYNOPSIS
 	speak-joke.ps1
 .DESCRIPTION
-	Speaks the next joke by text-to-speech (TTS)
+	Speaks a random Chuck Norris joke by text-to-speech (TTS)
 .EXAMPLE
 	PS> .\speak-joke.ps1
 .LINK
@@ -13,9 +13,7 @@
 #>
 
 try {
-	$PathToRepo = "$PSScriptRoot/.."
-
-	$Table = import-csv "$PathToRepo/Data/jokes.csv"
+	$Table = import-csv "$PSScriptRoot/../Data/jokes.csv"
 
 	$Generator = New-Object System.Random
 	$Index = [int]$Generator.next(0,66)

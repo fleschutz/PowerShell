@@ -1,10 +1,10 @@
 ﻿<#
 .SYNOPSIS
-	next-joke.ps1 
+	write-joke.ps1 
 .DESCRIPTION
-	Prints the next random Juck Norris joke
+	Writes a random Juck Norris joke to the console.
 .EXAMPLE
-	PS> .\next-joke.ps1
+	PS> .\write-joke.ps1
 .LINK
 	https://github.com/fleschutz/PowerShell
 .NOTES

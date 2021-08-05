@@ -26,7 +26,7 @@ Mega Collection of PowerShell Scripts
 * [speak-french.ps1](Scripts/speak-french.ps1) - speaks the given text with a French text-to-speech (TTS) voice
 * [speak-german.ps1](Scripts/speak-german.ps1) - speaks the given text with a German text-to-speech (TTS) voice
 * [speak-italian.ps1](Scripts/speak-italian.ps1) - speaks the given text with an Italian text-to-speech (TTS) voice
-* [speak-joke.ps1](Scripts/speak-joke.ps1) - speaks the next joke by text-to-speech (TTS)
+* [speak-joke.ps1](Scripts/speak-joke.ps1) - speaks a random Chuck Norris joke by text-to-speech (TTS)
 * [speak-test.ps1](Scripts/speak-test.ps1) - performs a speak test by text-to-speech (TTS)
 * [speak-text.ps1](Scripts/speak-text.ps1) - speaks the given text by text-to-speech (TTS)
 * [speak-time.ps1](Scripts/speak-time.ps1) - speaks the current time by text-to-speech (TTS)
@@ -218,7 +218,6 @@ Mega Collection of PowerShell Scripts
 * [locate-ipaddress.ps1](Scripts/locate-ipaddress.ps1) - prints the geographic location of the given IP address
 * [locate-zip-code.ps1](Scripts/locate-zip-code.ps1) - prints the geographic location of the given zip-code
 * [moon.ps1](Scripts/moon.ps1) - prints the current moon phase
-* [next-joke.ps1](Scripts/next-joke.ps1) - gets the next random Juck Norris joke
 * [reboot-fritzbox.ps1](Scripts/reboot-fritzbox.ps1) - reboots the FRITZ!box device
 * [scan-ports.ps1](Scripts/scan-ports.ps1) - scans the network for open/closed ports
 * [send-email.ps1](Scripts/send-email.ps1) - sends an email message
@@ -242,6 +241,7 @@ Mega Collection of PowerShell Scripts
 * [write-braille.ps1](Scripts/write-braille.ps1) - writes the given text in Braille
 * [write-green.ps1](Scripts/write-green.ps1) - writes the given text in a green foreground color
 * [write-lowercase.ps1](Scripts/write-lowercase.ps1) - writes the given text in lowercase letters
+* [write-joke.ps1](Scripts/write-joke.ps1) - writes a random Juck Norris joke
 * [write-marquee.ps1](Scripts/write-marquee.ps1) - writes the given text as marquee
 * [write-morse-code.ps1](Scripts/write-morse-code.ps1) - writes the given text in Morse code
 * [write-motd.ps1](Scripts/write-motd.ps1) - writes the message of the day (MOTD)
