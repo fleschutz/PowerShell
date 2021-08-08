@@ -1,10 +1,10 @@
 <#
 .SYNOPSIS
-	speak-joke.ps1
+	speak-quote.ps1
 .DESCRIPTION
-	Speaks a random Chuck Norris joke by text-to-speech (TTS)
+	Speaks a random quote by text-to-speech (TTS)
 .EXAMPLE
-	PS> .\speak-joke.ps1
+	PS> .\speak-quote.ps1
 .LINK
 	https://github.com/fleschutz/PowerShell
 .NOTES
@@ -13,14 +13,15 @@
 #>
 
 try {
-	$Table = import-csv "$PSScriptRoot/../Data/jokes.csv"
+	$Table = import-csv "$PSScriptRoot/../Data/quotes.csv"
 	$NumRows = $Table.count
 
 	$Generator = New-Object System.Random
 	$Index = [int]$Generator.next(0,$NumRows - 1)
-	$Joke = $Table[$Index].Joke
+	$Quote = $Table[$Index].Quote
+	$Author = $Table[$Index].Author
 
-	& "$PSScriptRoot/speak-english.ps1" "$Joke"
+	& "$PSScriptRoot/speak-english.ps1" "$Quote (by $Author)"
 	exit 0
 } catch {
 	write-error "⚠️ Error in line $($_.InvocationInfo.ScriptLineNumber): $($Error[0])"

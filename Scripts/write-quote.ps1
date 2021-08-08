@@ -1,10 +1,10 @@
 ﻿<#
 .SYNOPSIS
-	write-saying.ps1 
+	write-quote.ps1 
 .DESCRIPTION
-	Writes a random saying to the console.
+	Writes a random quote to the console.
 .EXAMPLE
-	PS> .\write-saying.ps1
+	PS> .\write-quote.ps1
 .LINK
 	https://github.com/fleschutz/PowerShell
 .NOTES
@@ -13,13 +13,15 @@
 #>
 
 try {
-	$Table = import-csv "$PSScriptRoot/../Data/sayings.csv"
+	$Table = import-csv "$PSScriptRoot/../Data/quotes.csv"
+	$NumRows = $Table.count
 
 	$Generator = New-Object System.Random
-	$Index = [int]$Generator.next(0,66)
+	$Index = [int]$Generator.next(0,$NumRows - 1)
+	$Quote = $Table[$Index].Quote
+	$Author = $Table[$Index].Author
 
-	$Line = $Table[$Index].Saying
-	"📣 $Line"
+	"📣 $Quote <$Author>"
 	exit 0
 } catch {
 	write-error "⚠️ Error in line $($_.InvocationInfo.ScriptLineNumber): $($Error[0])"

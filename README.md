@@ -27,7 +27,7 @@ Mega Collection of PowerShell Scripts
 * [speak-german.ps1](Scripts/speak-german.ps1) - speaks the given text with a German text-to-speech (TTS) voice
 * [speak-italian.ps1](Scripts/speak-italian.ps1) - speaks the given text with an Italian text-to-speech (TTS) voice
 * [speak-joke.ps1](Scripts/speak-joke.ps1) - speaks a random Chuck Norris joke by text-to-speech (TTS)
-* [speak-saying.ps1](Scripts/speak-saying.ps1) - speaks a random saying by text-to-speech (TTS)
+* [speak-quote.ps1](Scripts/speak-quote.ps1) - speaks a random quote by text-to-speech (TTS)
 * [speak-test.ps1](Scripts/speak-test.ps1) - performs a speak test by text-to-speech (TTS)
 * [speak-text.ps1](Scripts/speak-text.ps1) - speaks the given text by text-to-speech (TTS)
 * [speak-time.ps1](Scripts/speak-time.ps1) - speaks the current time by text-to-speech (TTS)
@@ -246,9 +246,9 @@ Mega Collection of PowerShell Scripts
 * [write-marquee.ps1](Scripts/write-marquee.ps1) - writes the given text as marquee
 * [write-morse-code.ps1](Scripts/write-morse-code.ps1) - writes the given text in Morse code
 * [write-motd.ps1](Scripts/write-motd.ps1) - writes the message of the day (MOTD)
+* [write-quote.ps1](Scripts/write-quote.ps1) - writes a random quote
 * [write-red.ps1](Scripts/write-red.ps1) - writes the given text in a red foreground color
 * [write-rot13.ps1](Scripts/write-rot13.ps1) - encodes or decodes the given text with ROT13
-* [write-saying.ps1](Scripts/write-saying.ps1) - writes a random saying
 * [write-typewriter.ps1](Scripts/write-typewriter.ps1) - writes the given text with the typewriter effect
 * [write-uppercase.ps1](Scripts/write-uppercase.ps1) - writes the given text in uppercase letters
 * [write-vertical.ps1](Scripts/write-vertical.ps1) - writes the given text in vertical direction
