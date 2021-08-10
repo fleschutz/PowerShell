@@ -23,8 +23,8 @@ try {
 	$RepoDirName = (get-item "$RepoDir").Name
 	"🢃 Fetching updates for 📂$RepoDirName ..."
 
-	& git -C "$RepoDir" fetch
-	if ($lastExitCode -ne "0") { throw "'git fetch' failed" }
+	& git -C "$RepoDir" fetch --tags
+	if ($lastExitCode -ne "0") { throw "'git fetch --tags' failed" }
 
 	$Tag = (git -C "$RepoDir" describe --tags --abbrev=0)
 	"🔖$Tag"
