@@ -2,7 +2,7 @@
 .SYNOPSIS
 	publish-to-ipfs.ps1 [<file(s)/dir>] [<to-hash-list>]
 .DESCRIPTION
-	Publishes the given files and folders to IPFS
+	Publishes the given files & folders to IPFS
 .EXAMPLE
 	PS> .\publish-to-ipfs.ps1 C:\MyFile.txt
 .LINK
@@ -15,14 +15,15 @@
 param([string]$Files = "", [string]$HashList = "IPFS_hashes.txt", [string]$DF_Hashes = "file_checksums.xml")
 
 try {
-	& ipfs --version
-	if ($lastExitCode -ne "0") { throw "Can't execute 'ipfs' - make sure IPFS is installed and available" }
-
 	if ($Files -eq "") { $Files = read-host "Enter file(s) or directory tree to publish" }
 
 	$StopWatch = [system.diagnostics.stopwatch]::startNew()
+
+	& ipfs --version
+	if ($lastExitCode -ne "0") { throw "Can't execute 'ipfs' - make sure IPFS is installed and available" }
+
 	if (test-path "$Files" -pathType container) {
-		"Adding folder $Files to IPFS..."
+		"Publishing folder $Files/ to IPFS..."
 		[int]$Count = 1
 		& ipfs add -r "$Files" > $HashList
 
@@ -33,10 +34,10 @@ try {
 		[int]$Count = $FileList.Count
 		foreach ($File in $FileList) {
 			if (test-path "$Files" -pathType container) {
-				"Adding folder $File to IPFS..."
+				"Publishing folder $File/ to IPFS..."
 				& ipfs add -r "$File" >> $HashList
 			} else {
-				"Adding file $File to IPFS..."
+				"Publishing file $File to IPFS..."
 				& ipfs add "$File" >> $HashList
 			}
 		}
