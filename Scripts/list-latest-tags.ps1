@@ -28,10 +28,10 @@ try {
 	foreach ($Folder in $Folders) {
 		$FolderName = (get-item "$Folder").Name
 
-		& git -C "$Folder" fetch --tags
-		if ($lastExitCode -ne "0") { throw "'git fetch --tags' failed" }
+#		& git -C "$Folder" fetch --tags
+#		if ($lastExitCode -ne "0") { throw "'git fetch --tags' failed" }
 
-		$LatestTag = (git -C "$Folder" describe --tags --abbrev=0)
+		$LatestTag = (git -C "$Folder" describe --tags --abbrev=0 --always)
 		"* $FolderName $LatestTag"
 	}
 	exit 0

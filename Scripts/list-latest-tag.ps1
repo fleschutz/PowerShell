@@ -20,14 +20,14 @@ try {
 	$Null = (git --version)
 	if ($lastExitCode -ne "0") { throw "Can't execute 'git' - make sure Git is installed and available" }
 
-	$RepoDirName = (get-item "$RepoDir").Name
-	"🢃 Fetching updates for 📂$RepoDirName ..."
+#	$RepoDirName = (get-item "$RepoDir").Name
+#	"🢃 Fetching updates for 📂$RepoDirName ..."
+#	& git -C "$RepoDir" fetch --tags
+#	if ($lastExitCode -ne "0") { throw "'git fetch --tags' failed" }
 
-	& git -C "$RepoDir" fetch --tags
-	if ($lastExitCode -ne "0") { throw "'git fetch --tags' failed" }
+	$LatestTag = (git -C "$RepoDir" describe --tags --abbrev=0 --always)
+	"🔖$LatestTag"
 
-	$Tag = (git -C "$RepoDir" describe --tags --abbrev=0)
-	"🔖$Tag"
 	exit 0
 } catch {
 	write-error "⚠️ Error in line $($_.InvocationInfo.ScriptLineNumber): $($Error[0])"
