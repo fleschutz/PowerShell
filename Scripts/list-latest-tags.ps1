@@ -31,8 +31,9 @@ try {
 #		& git -C "$Folder" fetch --tags
 #		if ($lastExitCode -ne "0") { throw "'git fetch --tags' failed" }
 
-		$LatestTag = (git -C "$Folder" describe --tags --abbrev=0 --always)
-		"* $FolderName $LatestTag"
+		$LatestTagCommitID = (git -C "$Folder" rev-list --tags --max-count=1)
+		$LatestTag = (git -C "$Folder" describe --tags $LatestTagCommitID)
+		"* $FolderName $LatestTag ($LatestTagCommitID)"
 	}
 	exit 0
 } catch {

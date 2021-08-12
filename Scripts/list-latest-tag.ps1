@@ -25,8 +25,9 @@ try {
 #	& git -C "$RepoDir" fetch --tags
 #	if ($lastExitCode -ne "0") { throw "'git fetch --tags' failed" }
 
-	$LatestTag = (git -C "$RepoDir" describe --tags --abbrev=0 --always)
-	"🔖$LatestTag"
+	$LatestTagCommitID = (git -C "$RepoDir" rev-list --tags --max-count=1)
+	$LatestTag = (git -C "$RepoDir" describe --tags $LatestTagCommitID)
+	"🔖$LatestTag ($LatestTagCommitID)"
 
 	exit 0
 } catch {
