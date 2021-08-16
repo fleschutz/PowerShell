@@ -21,10 +21,11 @@ try {
 	$Quote = $Table[$Index].Quote
 	$Author = $Table[$Index].Author
 
+	""
 	write-host '“'$Quote' ”'
 	$Spaces = "                                                                                       "
 	$Spaces = $Spaces.Substring(0, $Quote.Length - $Author.Length)
-	write-host "$Spaces    $($Author.toUpper())"
+	"$Spaces    $($Author.toUpper())"
 	
 	exit 0
 } catch {
