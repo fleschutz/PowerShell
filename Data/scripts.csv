@@ -204,6 +204,7 @@ translate-text.ps1, translates the given text into other languages
 turn-volume-up.ps1, turns the audio volume up (+10% by default)
 turn-volume-down.ps1, turns the audio volume down (-10% by default)
 unmute-audio.ps1, unmutes audio
+upgrade-ubuntu.ps1, upgrades Ubuntu Linux to the latest (LTS) release 
 upload-file.ps1, uploads the local file to the given FTP server
 voice-control.ps1, executes the PowerShell scripts by voice
 wakeup.ps1, sends a magic packet to the given computer, waking him up
