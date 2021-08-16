@@ -150,6 +150,7 @@ open-file-explorer.ps1, starts the Microsoft File Explorer
 open-recycle-bin.ps1, starts the File Explorer with the recycle bin folder
 play-beep.ps1, plays a beep sound
 play-files.ps1, plays the given audio files
+play-happy-birthday.ps1, plays the Happy Birthday song
 play-mission-impossible.ps1, plays the Mission Impossible theme
 play-m3u.ps1, plays the given playlist (M3U file format)
 play-mp3.ps1, plays the given sound file (MP3 file format)

@@ -12,6 +12,7 @@ Mega Collection of PowerShell Scripts
 * [list-voices.ps1](Scripts/list-voices.ps1) - lists the installed text-to-speech (TTS) voices
 * [play-beep.ps1](Scripts/play-beep.ps1) - plays a beep sound
 * [play-files.ps1](Scripts/play-files.ps1) - plays the given audio files
+* [play-happy-birthday.ps1](Scripts/play-happy-birthday.ps1) - plays the Happy Birthday song
 * [play-mission-impossible.ps1](Scripts/play-mission-impossible.ps1) - plays the Mission Impossible theme
 * [play-m3u.ps1](Scripts/play-m3u.ps1) - plays the given playlist (M3U file format)
 * [play-mp3.ps1](Scripts/play-mp3.ps1) - plays the given sound file (MP3 file format)
