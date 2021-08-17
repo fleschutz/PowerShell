@@ -42,7 +42,7 @@ try {
 		start-sleep -milliseconds 100
 		stop-process -name $ProgramName -force -errorAction 'silentlycontinue'
 	}
-	write-host -foregroundColor green "✔️ closed $FullProgramName, found ($($Processes.Count) process(es)"
+	"✔️ closed $FullProgramName, stopped $($Processes.Count) process(es)"
 	exit 0
 } catch {
 	write-error "⚠️ Error in line $($_.InvocationInfo.ScriptLineNumber): $($Error[0])"
