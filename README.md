@@ -96,6 +96,7 @@ Mega Collection of PowerShell Scripts
 * [open-email-client.ps1](Scripts/open-browser.ps1) - starts the default email client
 * [open-file-explorer.ps1](Scripts/open-file-explorer.ps1) - starts the File Explorer
 * [open-netflix.ps1](Scripts/open-netflix.ps1) - starts the Netflix app
+* [open-onedrive.ps1](Scripts/open-onedrive.ps1) - opens the user's OneDrive folder 
 * [open-recycle-bin.ps1](Scripts/open-recycle-bin.ps1) - starts the File Explorer with the recycle bin folder
 * [set-wallpaper.ps1](Scripts/set-wallpaper.ps1) - sets the given image as wallpaper
 * [take-screenshot.ps1](Scripts/take-screenshot.ps1) - takes a single screenshot
