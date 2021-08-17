@@ -149,6 +149,7 @@ open-browser.ps1, starts the default Web browser
 open-calculator.ps1, starts the calculator program
 open-email-client.ps1, starts the default email client
 open-file-explorer.ps1, starts the Microsoft File Explorer
+open-netflix.ps1, starts the Netflix app
 open-recycle-bin.ps1, starts the File Explorer with the recycle bin folder
 play-beep.ps1, plays a beep sound
 play-files.ps1, plays the given audio files
