@@ -81,6 +81,7 @@ Mega Collection of PowerShell Scripts
 * [close-cortana.ps1](Scripts/close-cortana.ps1) - closes Cortana gracefully
 * [close-edge.ps1](Scripts/close-edge.ps1) - closes Microsoft Edge gracefully
 * [close-file-explorer.ps1](Scripts/close-file-explorer.ps1) - closes Microsoft File Explorer gracefully
+* [close-firefox.ps1](Scripts/close-firefox.ps1) - closes the Firefox Web browser gracefully
 * [close-program.ps1](Scripts/close-program.ps1) - closes the given program gracefully
 * [close-system-settings.ps1](Scripts/close-system-settings.ps1) - closes the System Settings gracefully
 * [close-thunderbird.ps1](Scripts/close-thunderbird.ps1) - closes Mozilla Thunderbird gracefully
