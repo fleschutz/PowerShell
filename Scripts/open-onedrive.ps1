@@ -12,5 +12,5 @@
 	License: CC0
 #>
 
-Start-Process "$UserProfile\AppData\Local\Microsoft\OneDrive\OneDrive.exe"
+Start-Process "$($env:USERPROFILE)\AppData\Local\Microsoft\OneDrive\OneDrive.exe"
 exit 0
