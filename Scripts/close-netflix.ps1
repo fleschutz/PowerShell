@@ -12,5 +12,5 @@
 	License: CC0
 #>
 
-& "$PSScriptRoot/close-program.ps1" "Netflix" "netflix" "netflix"
+& "$PSScriptRoot/close-program.ps1" "Netflix" "ApplicationFrameHost" "RuntimeBroker"
 exit 0
