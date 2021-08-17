@@ -84,6 +84,7 @@ Mega Collection of PowerShell Scripts
 * [close-firefox.ps1](Scripts/close-firefox.ps1) - closes the Firefox Web browser gracefully
 * [close-program.ps1](Scripts/close-program.ps1) - closes the given program gracefully
 * [close-netflix.ps1](Scripts/close-netflix.ps1) - closes Netflix gracefully
+* [close-onedrive.ps1](Scripts/close-onedrive.ps1) - closes Microsoft OneDrive gracefully
 * [close-system-settings.ps1](Scripts/close-system-settings.ps1) - closes the System Settings gracefully
 * [close-thunderbird.ps1](Scripts/close-thunderbird.ps1) - closes Mozilla Thunderbird gracefully
 * [close-vlc.ps1](Scripts/close-vlc.ps1) - closes the VLC media player gracefully
