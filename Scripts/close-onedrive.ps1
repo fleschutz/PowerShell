@@ -12,5 +12,5 @@
 	License: CC0
 #>
 
-& "$PSScriptRoot/close-program.ps1" "Microsoft OneDrive" "onedrive.exe" "onedrive.exe"
+& "$PSScriptRoot/close-program.ps1" "Microsoft OneDrive" "onedrive" "onedrive.exe"
 exit 0
