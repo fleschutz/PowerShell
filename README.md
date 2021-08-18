@@ -13,12 +13,12 @@ Mega Collection of PowerShell Scripts
 * [play-beep.ps1](Scripts/play-beep.ps1) - plays a beep sound
 * [play-files.ps1](Scripts/play-files.ps1) - plays the given audio files
 * [play-happy-birthday.ps1](Scripts/play-happy-birthday.ps1) - plays the Happy Birthday song
+* [play-imperial-march.ps1](Scripts/play-imperial-march.ps1) - plays the Imperial March (Star Wars)
 * [play-mission-impossible.ps1](Scripts/play-mission-impossible.ps1) - plays the Mission Impossible theme
 * [play-m3u.ps1](Scripts/play-m3u.ps1) - plays the given playlist (M3U file format)
 * [play-mp3.ps1](Scripts/play-mp3.ps1) - plays the given sound file (MP3 file format)
 * [play-super-mario.ps1](Scripts/play-super-mario.ps1) - plays the Super Mario Intro
 * [play-tetris-melody.ps1](Scripts/play-tetris-melody.ps1) - plays the Tetris melody
-* [play-the-imperial-march.ps1](Scripts/play-the-imperial-march.ps1) - plays the Imperial March (Star Wars)
 * [speak-checklist.ps1](Scripts/speak-checklist.ps1) - speaks the given checklist by text-to-speech (TTS)
 * [speak-countdown.ps1](Scripts/speak-countdown.ps1) - starts a countdown by text-to-speech (TTS)
 * [speak-date.ps1](Scripts/speak-date.ps1) - speaks the current date by text-to-speech (TTS)
