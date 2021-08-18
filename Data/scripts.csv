@@ -160,6 +160,7 @@ play-mission-impossible.ps1, plays the Mission Impossible theme
 play-m3u.ps1, plays the given playlist (M3U file format)
 play-mp3.ps1, plays the given sound file (MP3 file format)
 play-super-mario.ps1, plays the Super Mario Intro
+play-tetris-melody.ps1, plays the Tetris melody
 play-the-imperial-march.ps1, plays the Imperial March (Star Wars)
 poweroff.ps1, halts the local computer (needs admin rights)
 publish-to-ipfs.ps1, publishes the given files or directory to IPFS
