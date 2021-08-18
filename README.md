@@ -14,6 +14,7 @@ Mega Collection of PowerShell Scripts
 * [play-files.ps1](Scripts/play-files.ps1) - plays the given audio files
 * [play-happy-birthday.ps1](Scripts/play-happy-birthday.ps1) - plays the Happy Birthday song
 * [play-imperial-march.ps1](Scripts/play-imperial-march.ps1) - plays the Imperial March (Star Wars)
+* [play-jingle-bells.ps1](Scripts/play-jingle-bells.ps1) - plays Jingle Bells
 * [play-mission-impossible.ps1](Scripts/play-mission-impossible.ps1) - plays the Mission Impossible theme
 * [play-m3u.ps1](Scripts/play-m3u.ps1) - plays the given playlist (M3U file format)
 * [play-mp3.ps1](Scripts/play-mp3.ps1) - plays the given sound file (MP3 file format)
