@@ -27,14 +27,14 @@ function Send-WOL { param([string]$mac, [string]$ip="255.255.255.255", [int]$por
 } 
 
 try {
-	if ($MACaddress -eq "" ) { $MACaddress = read-host "Enter the MAC address (e.g. 00:11:22:33:44:55)"	}
-	if ($IPaddress -eq "" ) { $IPaddress = read-host "Enter the IP address or subnet address (e.g. 255.255.255.255)" }
+	if ($MACaddress -eq "" ) { $MACaddress = read-host "Enter the host's MAC address (e.g. 00:11:22:33:44:55)"	}
+	if ($IPaddress -eq "" ) { $IPaddress = read-host "Enter the host's IP address or subnet address (e.g. 255.255.255.255)" }
 
 	Send-WOL $MACaddress $IPaddress $Port
 	start-sleep -milliseconds 100
 	Send-WOL $MACaddress $IPaddress $Port
 
-	write-host -foregroundColor green "✔️ magic packet $MACaddress sent twice to IP $IPaddress port $Port"
+	"✔️ sent magic packet $MACaddress to IP $IPaddress port $Port (twice)"
 	exit 0
 } catch {
 	write-error "⚠️ Error in line $($_.InvocationInfo.ScriptLineNumber): $($Error[0])"
