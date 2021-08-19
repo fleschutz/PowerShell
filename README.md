@@ -31,6 +31,7 @@ Mega Collection of PowerShell Scripts
 * [speak-italian.ps1](Scripts/speak-italian.ps1) - speaks the given text with an Italian text-to-speech (TTS) voice
 * [speak-joke.ps1](Scripts/speak-joke.ps1) - speaks a random Chuck Norris joke by text-to-speech (TTS)
 * [speak-quote.ps1](Scripts/speak-quote.ps1) - speaks a random quote by text-to-speech (TTS)
+* [speak-spanish.ps1](Scripts/speak-spanish.ps1) - speaks the given text with a Spanish text-to-speech (TTS) voice
 * [speak-test.ps1](Scripts/speak-test.ps1) - performs a speak test by text-to-speech (TTS)
 * [speak-text.ps1](Scripts/speak-text.ps1) - speaks the given text by text-to-speech (TTS)
 * [speak-time.ps1](Scripts/speak-time.ps1) - speaks the current time by text-to-speech (TTS)

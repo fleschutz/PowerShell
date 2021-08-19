@@ -22,13 +22,11 @@ try {
 	foreach ($OtherVoice in $Voices) {
 		$Description = $OtherVoice.GetDescription()
 		if ($Description -notlike "*- English*") { continue }
-#		write-progress "$Text"
 		$Voice.Voice = $OtherVoice
 		[void]$Voice.Speak($Text)
-#		write-progress -complete "$Text"
 		exit 0
 	}
-	write-error "Sorry, no English text-to-speech (TTS) voice found"
+	write-error "No English text-to-speech voice found - please install one"
 	exit 1
 } catch {
 	write-error "⚠️ Error in line $($_.InvocationInfo.ScriptLineNumber): $($Error[0])"

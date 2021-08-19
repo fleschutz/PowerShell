@@ -26,7 +26,7 @@ try {
 		[void]$Voice.Speak($Text)
 		exit 0
 	}
-	write-error "No German text-to-speech (TTS) voice found"
+	write-error "No German text-to-speech voice found - please install one"
 	exit 1
 } catch {
 	write-error "⚠️ Error in line $($_.InvocationInfo.ScriptLineNumber): $($Error[0])"
