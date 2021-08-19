@@ -1,10 +1,10 @@
 <#
 .SYNOPSIS
-	list-random-passwords.ps1 [<password-length>] [<columns>] [<rows>]
+	list-passwords.ps1 [<password-length>] [<columns>] [<rows>]
 .DESCRIPTION
 	Prints a list of random passwords
 .EXAMPLE
-	PS> .\list-random-passwords.ps1
+	PS> .\list-passwords.ps1
 .LINK
 	https://github.com/fleschutz/PowerShell
 .NOTES
@@ -12,7 +12,7 @@
 	License: CC0
 #>
 
-param([int]$PasswordLength = 15, [int]$Columns = 6, [int]$Rows = 26)
+param([int]$PasswordLength = 15, [int]$Columns = 6, [int]$Rows = 30)
 
 $MinCharCode = 33
 $MaxCharCode = 126

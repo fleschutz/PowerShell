@@ -1,10 +1,10 @@
 <#
 .SYNOPSIS
-	list-random-pins.ps1 [<pin-length>] [<columns>] [<rows>]
+	list-pins.ps1 [<pin-length>] [<columns>] [<rows>]
 .DESCRIPTION
 	Prints a list of random PIN's
 .EXAMPLE
-	PS> .\list-random-pins.ps1
+	PS> .\list-pins.ps1
 .LINK
 	https://github.com/fleschutz/PowerShell
 .NOTES
@@ -12,7 +12,7 @@
 	License: CC0
 #>
 
-param([int]$PinLength = 5, [int]$Columns = 12, [int]$Rows = 26)
+param([int]$PinLength = 5, [int]$Columns = 12, [int]$Rows = 30)
 
 try {
 	write-output ""

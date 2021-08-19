@@ -221,8 +221,8 @@ Mega Collection of PowerShell Scripts
 * [list-news.ps1](Scripts/list-news.ps1) - lists the latest news
 * [list-os-releases.ps1](Scripts/list-os-releases.ps1) - lists operating system releases and download URL
 * [list-os-updates.ps1](Scripts/list-os-updates.ps1) - lists operating system updates
-* [list-random-passwords.ps1](Scripts/list-random-passwords.ps1) - prints a list of random passwords
-* [list-random-pins.ps1](Scripts/list-random-pins.ps1) - prints a list of random PIN's
+* [list-passwords.ps1](Scripts/list-passwords.ps1) - prints a list of random passwords
+* [list-pins.ps1](Scripts/list-pins.ps1) - prints a list of random PIN's
 * [list-sql-tables.ps1](Scripts/list-sql-tables.ps1) - lists the SQL server tables
 * [list-tiobe-index.ps1](Scripts/list-tiobe-index.ps1) - lists the TIOBE index of top programming languages
 * [list-weather.ps1](Scripts/list-weather.ps1) - lists the hourly weather 
