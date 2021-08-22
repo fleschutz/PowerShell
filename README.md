@@ -54,6 +54,7 @@ Mega Collection of PowerShell Scripts
 * [enable-crash-dumps.ps1](Scripts/enable-crash-dumps.ps1) - enables the writing of crash dumps
 * [hibernate.ps1](Scripts/hibernate.ps1) - enables hibernate mode for the local computer (needs admin rights)
 * [install-google-chrome.ps1](Scripts/install-google-chrome.ps1) - installs the Google Chrome browser
+* [install-knot-resolver.ps1](Scripts/install-knot-resolver.ps1) - installs the Knot Resolver (needs admin rights)
 * [install-ssh-client.ps1](Scripts/install-ssh-client.ps1) - installs the SSH client (needs admin rights)
 * [install-ssh-server.ps1](Scripts/install-ssh-server.ps1) - installs the SSH server (needs admin rights)
 * [install-signal-cli.ps1](Scripts/install-signal-cli.ps1) - installs signal-cli from github.com/AsamK/signal-cli
