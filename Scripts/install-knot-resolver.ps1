@@ -26,7 +26,7 @@ try {
 	"Step 3/4: Let User Configure..."
 	sudo vi /var/snap/knot-resolver-gael/current/kresd.conf
 
-	"Step 4/4: Starting Knot Resolver..."
+	"Step 4/4: Start Knot Resolver..."
 	sudo snap start knot-resolver-gael
 
 	[int]$Elapsed = $StopWatch.Elapsed.TotalSeconds
