@@ -12,22 +12,22 @@
 	License: CC0
 #>
 
-param([string]$Shortcut = "", [string]$Target = "", [string]$Description)
+param([string]$shortcut = "", [string]$target = "", [string]$description)
 
 try {
-	if ($Shortcut -eq "" ) { $Shortcut = read-host "Enter filename of shortcut" }
-	if ($Target -eq "" ) { $Target = read-host "Enter path to target" }
-	if ($Description -eq "" ) { $Description = read-host "Enter description" }
+	if ($shortcut -eq "" ) { $shortcut = read-host "Enter new shortcut filename" }
+	if ($target -eq "" ) { $target = read-host "Enter path to target" }
+	if ($description -eq "" ) { $description = read-host "Enter description" }
 
 	$sh = new-object -ComObject WScript.Shell
-	$shortcut = $sh.CreateShortcut("$Shortcut.lnk")
-	$shortcut.TargetPath = "$Target"
-	$shortcut.WindowStyle = "1"
-	$shortcut.IconLocation = "C:\Windows\System32\SHELL32.dll, 3"
-	$shortcut.Description = "$Description"
-	$shortcut.save()
+	$sc = $sh.CreateShortcut("$shortcut.lnk")
+	$sc.TargetPath = "$target"
+	$sc.WindowStyle = "1"
+	$sc.IconLocation = "C:\Windows\System32\SHELL32.dll, 3"
+	$sc.Description = "$description"
+	$sc.save()
 
-	write-host -foregroundColor green "✔️ shortcut $Shortcut created."
+	"✔️ created shortcut $shortcut ⭢ $target"
 	exit 0
 } catch {
 	write-error "⚠️ Error in line $($_.InvocationInfo.ScriptLineNumber): $($Error[0])"

@@ -2,7 +2,7 @@
 .SYNOPSIS
 	create-tag.ps1 [<new-tag-name>] [<repo-dir>]
 .DESCRIPTION
-	Creates a new tag in the current/given Git repository 
+	Creates a new tag in a Git repository 
 .EXAMPLE
 	PS> .\create-tag.ps1 v1.7
 .LINK
@@ -16,6 +16,8 @@ param([string]$NewTagName = "", [string]$RepoDir = "$PWD")
 
 try {
 	if ($NewTagName -eq "") { $NewTagName = read-host "Enter new tag name" }
+
+	$StopWatch = [system.diagnostics.stopwatch]::startNew()
 
 	if (-not(test-path "$RepoDir" -pathType container)) { throw "Can't access directory: $RepoDir" }
 	set-location "$RepoDir"
@@ -36,7 +38,8 @@ try {
 	& git push origin "$NewTagName"
 	if ($lastExitCode -ne "0") { throw "Error: 'git push origin $NewTagName' failed!" }
 
-	"🔖 tag $NewTagName has been created"
+	[int]$Elapsed = $StopWatch.Elapsed.TotalSeconds
+	"✔️ created new tag '$NewTagName' in $Elapsed sec"
 	exit 0
 } catch {
 	write-error "⚠️ Error in line $($_.InvocationInfo.ScriptLineNumber): $($Error[0])"

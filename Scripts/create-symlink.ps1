@@ -12,15 +12,15 @@
 	License: CC0
 #>
 
-param([string]$Symlink = "", $[string]Target = "")
+param([string]$symlink = "", $[string]target = "")
 
 try {
-	if ($Symlink -eq "" ) { $Symlink = read-host "Enter filename of symlink" }
-	if ($Target -eq "" ) { $Target = read-host "Enter path to target" }
+	if ($symlink -eq "" ) { $symlink = read-host "Enter new symlink filename" }
+	if ($target -eq "" ) { $target = read-host "Enter path to target" }
 
-	new-item -path "$Symlink" -itemType SymbolicLink -Value "$Target"
+	new-item -path "$symlink" -itemType SymbolicLink -Value "$target"
 
-	"✔️ created symlink $Symlink (pointing to $Target)"
+	"✔️ created symlink $symlink ⭢ $target"
 	exit 0
 } catch {
 	write-error "⚠️ Error in line $($_.InvocationInfo.ScriptLineNumber): $($Error[0])"
