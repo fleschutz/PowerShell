@@ -26,12 +26,13 @@ try {
 	& git config --global user.name $FullName
 	& git config --global user.email $EmailAddress
 	& git config --global core.editor $FavoriteEditor
-	& git config --global http.sslVerify false
 	& git config --global core.autocrlf false
 	& git config --global core.symlinks true
 	& git config --global core.longpaths true
+	& git config --global http.sslVerify false
 	& git config --global init.defaultBranch main
 	& git config --global merge.renamelimit 99999
+	& git config --global pull.rebase false
 	if ($lastExitCode -ne "0") { throw "'git config' failed (in basic settings)" }
 
 	# Basic shortcuts:
