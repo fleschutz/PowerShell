@@ -1,27 +1,23 @@
 function Get-MicrophoneAudio {
 <#
 .SYNOPSIS
-Records audio from the microphone and saves to a file on disk
-Author: Justin Warner (@sixdub)
-License: BSD 3-Clause
-Required Dependencies: None
-Optional Dependencies: None
-All credit for PowerSploit functions belongs to the original author and project contributors. Thanks for the awesomeness! See here for more info: 
-http://www.exploit-monday.com/2012/05/accessing-native-windows-api-in.html
-https://github.com/PowerShellMafia/PowerSploit
-Thanks to Ed Wilson (Scripting Guy) for the one liner to generate random chars. https://blogs.technet.microsoft.com/heyscriptingguy/2015/11/05/generate-random-letters-with-powershell/
+	Records audio from the microphone and saves to a file on disk
+	Author: Justin Warner (@sixdub)
+	License: BSD 3-Clause
+	Required Dependencies: None
+	Optional Dependencies: None
 .DESCRIPTION
-Get-MicrophoneAudio utilizes the Windows API from winmm.dll to record audio from the microphone and saves the wave file to disk.
+	Get-MicrophoneAudio utilizes the Windows API from winmm.dll to record audio from the microphone and saves the wave file to disk.
 .OUTPUTS
-Outputs the FileInfo object pointing to the recording which has been saved to disk.
+	Outputs the FileInfo object pointing to the recording which has been saved to disk.
 .PARAMETER Path
-The location to save the audio
+	The location to save the audio
 .PARAMETER Length
-The length of the audio to record in seconds. Default: 30
+	The length of the audio to record in seconds. Default: 30
 .PARAMETER Alias
-The alias to use for the WinMM recording. Default: Random 10 Chars
+	The alias to use for the WinMM recording. Default: Random 10 Chars
 .EXAMPLE
-Get-MicrophoneAudio -Path c:\windows\temp\secret.wav -Length 10 -Alias "SECRET"
+	Get-MicrophoneAudio -Path c:\windows\temp\secret.wav -Length 10 -Alias "SECRET"
 Description
 -----------
 Records 10 seconds of audio to the path C:\windows\temp\secret.wav using WinMM alias "secret"
@@ -39,7 +35,6 @@ Records 10 seconds of audio to the path C:\windows\temp\secret.wav using WinMM a
 
 	)
 
-	#Get-DelegateType from PowerSploit
 	function Local:Get-DelegateType
 	{
 		Param
@@ -68,7 +63,6 @@ Records 10 seconds of audio to the path C:\windows\temp\secret.wav using WinMM a
 		Write-Output $TypeBuilder.CreateType()
 	}
 
-	#Get-ProcAddress from PowerSploit
 	function local:Get-ProcAddress
 	{
 		Param
@@ -108,7 +102,7 @@ Records 10 seconds of audio to the path C:\windows\temp\secret.wav using WinMM a
 	$HND = $LoadLibrary.Invoke('winmm.dll')
 	if ($HND -eq $null)
 	{
-		Throw 'Failed to aquire handle to winmm.dll'
+		throw 'Failed to aquire handle to winmm.dll'
 	}
 
 	#Initialize the function call to count devices
@@ -117,7 +111,7 @@ Records 10 seconds of audio to the path C:\windows\temp\secret.wav using WinMM a
 	$waveInGetNumDevsDelegate = Get-DelegateType @() ([Uint32])
 	if ($waveInGetNumDevsAddr -eq $null)
 	{
-		Throw 'Failed to aquire address to WaveInGetNumDevs'
+		throw 'Failed to aquire address to WaveInGetNumDevs'
 	}
 	$waveInGetNumDevs = [System.Runtime.InteropServices.Marshal]::GetDelegateForFunctionPointer($waveInGetNumDevsAddr, $waveInGetNumDevsDelegate)
 
@@ -137,11 +131,10 @@ Records 10 seconds of audio to the path C:\windows\temp\secret.wav using WinMM a
 	$mciGetErrorStringDelegate = Get-DelegateType @([UInt32],[Text.StringBuilder],[UInt32]) ([bool])
 	if ($mciGetErrorStringAddr -eq $null)
 	{
-		Throw 'Failed to aquire address to mciGetErrorString'
+		throw 'Failed to aquire address to mciGetErrorString'
 	}
 	$mciGetErrorString = [System.Runtime.InteropServices.Marshal]::GetDelegateForFunctionPointer($mciGetErrorStringAddr,$mciGetErrorStringDelegate)
 
-	#Get device count
 	$DeviceCount = $waveInGetNumDevs.Invoke()
 
 	if ($DeviceCount -gt 0)
@@ -170,10 +163,9 @@ Records 10 seconds of audio to the path C:\windows\temp\secret.wav using WinMM a
 
 		$OutFile = Get-ChildItem -path $path 
 		Write-Output $OutFile
-
 	}
 	else
 	{
-		Throw 'Failed to enumerate any recording devices'
+		throw 'Failed to enumerate any recording devices'
 	}
 }
