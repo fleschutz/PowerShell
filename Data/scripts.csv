@@ -75,6 +75,7 @@ fetch-repos.ps1, fetches updates for all Git repositories under the current/give
 generate-qrcode.ps1, generates a QR code
 hibernate.ps1, enables hibernate mode for the local computer (needs admin rights)
 inspect-exe.ps1, prints basic information of the given executable file
+install-github-cli.ps1, installs GitHub CLI
 install-google-chrome.ps1, installs the Google Chrome browser
 install-knot-resolver.ps1, installs the Knot Resolver (needs admin rights)
 install-signal-cli.ps1, installs signal-cli from github.com/AsamK/signal-cli
