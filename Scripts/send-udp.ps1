@@ -26,7 +26,8 @@ try {
 	$EncodedText = [Text.Encoding]::ASCII.GetBytes($Message) 
 	$SendMessage = $Socket.Send($EncodedText, $EncodedText.Length, $EndPoints) 
 	$Socket.Close() 
-	write-host -foregroundColor green "Done."
+
+	"✔️  Done."
 	exit 0
 } catch {
 	write-error "⚠️ Error in line $($_.InvocationInfo.ScriptLineNumber): $($Error[0])"

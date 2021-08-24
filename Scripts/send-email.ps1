@@ -27,6 +27,7 @@ try {
 	$msg.subject = $Subject
 	$msg.body = $Body
 	$smtp.Send($msg)
+	"✔️  Message sent."
 	exit 0
 } catch {
 	write-error "⚠️ Error in line $($_.InvocationInfo.ScriptLineNumber): $($Error[0])"

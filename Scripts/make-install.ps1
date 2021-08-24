@@ -23,7 +23,8 @@ try {
 
 	echo ------------------------------------------------------------------------------
 	echo.
-	write-host -foregroundColor green "Done - synced to %DST_DIR%"
+
+	"✔️ synced to %DST_DIR%"
 	exit 0
 } catch {
 	write-error "⚠️ Error in line $($_.InvocationInfo.ScriptLineNumber): $($Error[0])"

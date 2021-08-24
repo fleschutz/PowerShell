@@ -18,7 +18,8 @@ try {
 	if ($File -eq "" ) { $File = read-host "Enter the filename" }
 
 	$Result = get-filehash $File -algorithm SHA256
-	write-output "SHA256 hash is:" $Result.Hash
+
+	"✔️ SHA256 hash is:" $Result.Hash
 	exit 0
 } catch {
 	write-error "⚠️ Error in line $($_.InvocationInfo.ScriptLineNumber): $($Error[0])"

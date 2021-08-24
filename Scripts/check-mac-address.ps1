@@ -29,7 +29,7 @@ try {
 		$MAC = read-host "Enter MAC address to validate"
 	}
 	if (IsMACAddressValid $MAC) {
-		write-host -foregroundColor green "OK - MAC address $MAC is valid"
+		"✔️ MAC address $MAC is valid"
 		exit 0
 	} else {
 		write-warning "Invalid MAC address: $MAC"

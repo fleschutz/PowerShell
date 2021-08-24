@@ -14,9 +14,9 @@
 
 param([string]$Drive = "", [int]$MinLevel = 20) # minimum level in GB
 
-if ($Drive -eq "" ) { $Drive = read-host "Enter drive to check" }
-
 try {
+	if ($Drive -eq "" ) { $Drive = read-host "Enter drive to check" }
+
 	$DriveDetails = (get-psdrive $Drive)
 	[int]$Free = (($DriveDetails.Free / 1024) / 1024) / 1024
 	[int]$Used = (($DriveDetails.Used / 1024) / 1024) / 1024

@@ -29,7 +29,7 @@ try {
 	$PathToRepo = "$PSScriptRoot/.."
 	ListScripts "$PathToRepo/Data/scripts.csv" | format-table -property "PowerShell Script",Description
 
-	write-host -foregroundColor green "OK - $($global:NumScripts) PowerShell scripts total"
+	"✔️ $($global:NumScripts) PowerShell scripts total"
 	exit 0
 } catch {
 	write-error "⚠️ Error in line $($_.InvocationInfo.ScriptLineNumber): $($Error[0])"

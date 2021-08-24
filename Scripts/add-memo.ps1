@@ -12,17 +12,18 @@
 	License: CC0
 #>
 
-param([string]$Text = "")
-if ($Text -eq "" ) { $Text = read-host "Enter the memo text to add" }
+param([string]$text = "")
 
 try {
+	if ($text -eq "" ) { $text = read-host "Enter the memo text to add" }
+
 	$Path = "$HOME/Memos.csv"
 	$Time = get-date -format "yyyy-MM-ddTHH:mm:ssZ" -asUTC
 	$User = $(whoami)
-	$Line = "$Time,$User,$Text"
+	$Line = "$Time,$User,$text"
 
 	if (-not(test-path "$Path" -pathType leaf)) {
-		write-output "Time,User,Text" > "$Path"
+		write-output "Time,User,text" > "$Path"
 	}
 	write-output $Line >> "$Path"
 

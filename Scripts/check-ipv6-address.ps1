@@ -41,7 +41,7 @@ try {
 		$Address = read-host "Enter IPv6 address to validate"
 	}
 	if (IsIPv6AddressValid $Address) {
-		write-host -foregroundColor green "OK - IPv6 address $Address is valid"
+		"✔️  IPv6 address $Address is valid"
 		exit 0
 	} else {
 		write-warning "Invalid IPv6 address: $Address"

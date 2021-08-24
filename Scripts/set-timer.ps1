@@ -22,7 +22,8 @@ try {
 		./write-big "T-$i seconds"
 		start-sleep -s 1
 	}
-	write-host -foregroundColor green "Done - $Seconds seconds countdown finished"
+
+	"✔️ $Seconds seconds countdown finished"
 	exit 0
 } catch {
 	write-error "⚠️ Error in line $($_.InvocationInfo.ScriptLineNumber): $($Error[0])"

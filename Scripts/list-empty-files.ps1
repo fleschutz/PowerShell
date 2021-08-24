@@ -23,7 +23,8 @@ try {
 		write-output $_.FullName
 		$Count++
 	}
-	write-host -foregroundColor green "OK - found $Count empty file(s)" 
+
+	"✔️ found $Count empty file(s)" 
 	exit 0
 } catch {
 	write-error "⚠️ Error in line $($_.InvocationInfo.ScriptLineNumber): $($Error[0])"

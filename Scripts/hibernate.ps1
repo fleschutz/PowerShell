@@ -17,6 +17,8 @@
 try {
 	[Void][System.Reflection.Assembly]::LoadWithPartialName("System.Windows.Forms") 
 	[System.Windows.Forms.Application]::SetSuspendState("Hibernate", $false, $false);
+
+	"✔️  Done."
 	exit 0
 } catch {
 	write-error "⚠️ Error in line $($_.InvocationInfo.ScriptLineNumber): $($Error[0])"

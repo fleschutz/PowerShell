@@ -48,7 +48,8 @@ try {
 		#sudo do-release-upgrade -d # to latest supported release
 		sudo reboot
 	}
-	"Done."
+
+	"✔️  Done."
 	exit 0
 } catch {
 	write-error "⚠️ Error in line $($_.InvocationInfo.ScriptLineNumber): $($Error[0])"

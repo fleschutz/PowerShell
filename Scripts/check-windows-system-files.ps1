@@ -18,7 +18,7 @@ try {
 	sfc /verifyOnly
 	if ($lastExitCode -ne "0") { throw "'sfc /verifyOnly' failed" }
 
-	write-host -foregroundColor green "✔️ checked Windows system files"
+	"✔️ checked Windows system files"
 	exit 0
 } catch {
 	write-error "⚠️ Error in line $($_.InvocationInfo.ScriptLineNumber): $($Error[0])"

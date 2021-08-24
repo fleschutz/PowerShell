@@ -20,7 +20,7 @@ try {
 	}
 	$null = new-item @GodModeSplat
 
-	"✔️ new icon added to the desktop"
+	"✔️ enabled god mode - see the new desktop icon"
 	exit 0
 } catch {
 	write-error "⚠️ Error in line $($_.InvocationInfo.ScriptLineNumber): $($Error[0])"

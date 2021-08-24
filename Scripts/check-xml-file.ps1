@@ -34,7 +34,8 @@ try {
 		write-warning "Invalid XML file"
 		exit 1
 	} 
-	write-host -foregroundColor green "OK - XML file is valid"
+
+	"✔️ XML file is valid"
 	exit 0
 } catch {
 	write-error "⚠️ Error in line $($_.InvocationInfo.ScriptLineNumber): $($Error[0])"

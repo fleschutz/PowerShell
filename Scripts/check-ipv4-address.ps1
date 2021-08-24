@@ -24,11 +24,10 @@ function IsIPv4AddressValid { param([string]$IP)
 }
 
 try {
-	if ($Address -eq "" ) {
-		$Address = read-host "Enter IPv4 address to validate"
-	}
+	if ($Address -eq "" ) { $Address = read-host "Enter IPv4 address to validate" }
+
 	if (IsIPv4AddressValid $Address) {
-		write-host -foregroundColor green "OK - IPv4 address $Address is valid"
+		"✔️ IPv4 address $Address is valid"
 		exit 0
 	} else {
 		write-warning "Invalid IPv4 address: $Address"

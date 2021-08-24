@@ -58,10 +58,11 @@ function SetWallPaper {
 }
  
 try {
-	if ($ImageFile -eq "" ) {
-		$ImageFile = read-host "Enter path to image file"
-	}
+	if ($ImageFile -eq "" ) { $ImageFile = read-host "Enter path to image file" }
+
 	SetWallPaper -Image $ImageFile -Style $Style
+
+	"✔️  Done."
 	exit 0
 } catch {
 	write-error "⚠️ Error in line $($_.InvocationInfo.ScriptLineNumber): $($Error[0])"

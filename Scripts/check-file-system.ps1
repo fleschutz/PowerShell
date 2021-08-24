@@ -16,15 +16,13 @@
 
 param([string]$Drive = "")
 
-if ($Drive -eq "" ) {
-	$Drive = read-host "Enter drive (letter) to check"
-}
-
 try {
+	if ($Drive -eq "" ) { $Drive = read-host "Enter drive (letter) to check" }
+
 	$Result = repair-volume -driveLetter $Drive -scan
 	if ($Result -ne "NoErrorsFound") { throw "'repair-volume' failed" }
 
-	write-host -foregroundColor green "✔️ file system on drive $Drive is clean"
+	"✔️ file system on drive $Drive is clean"
 	exit 0
 } catch {
 	write-error "⚠️ Error in line $($_.InvocationInfo.ScriptLineNumber): $($Error[0])"

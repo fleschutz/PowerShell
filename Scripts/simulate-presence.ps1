@@ -23,7 +23,8 @@ try {
 		& "$PSScriptRoot/switch-shelly1.ps1" $IPaddress off 0
 		start-sleep -s 60
 	}
-	write-host -foregroundColor green "Done."
+
+	"✔️  Done."
 	exit 0
 } catch {
 	write-error "⚠️ Error in line $($_.InvocationInfo.ScriptLineNumber): $($Error[0])"

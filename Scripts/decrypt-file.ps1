@@ -158,16 +158,13 @@ Param(
 
 
 try {
-	if ($Path -eq "" ) {
-		$Path = read-host "Enter path to file"
-	}
-	if ($Password -eq "" ) {
-		$Password = read-host "Enter password"
-	}
+	if ($Path -eq "" ) { $Path = read-host "Enter path to file" }
+	if ($Password -eq "" ) { $Password = read-host "Enter password" }
 
 	$PasswordBase64 = [System.Convert]::ToBase64String($Password)
 	DecryptFile "$Path" -algorithm AES -keyAsPlainText $PasswordBase64 -removeSource
-	write-host -foregroundColor green "Done."
+
+	"✔️  Done."
 	exit 0
 } catch {
 	write-error "⚠️ Error in line $($_.InvocationInfo.ScriptLineNumber): $($Error[0])"

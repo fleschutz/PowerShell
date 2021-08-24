@@ -32,7 +32,7 @@ try {
 		"&color=" + $ForegroundColor + "&bgcolor=" + $BackgroundColor.Text + `
 		"&format=" + $FileFormat), $NewFile)
 
-	write-host -foregroundColor green "Done - QR code has been written to $NewFile"
+	"✔️ wrote QR code to $NewFile"
 	exit 0
 } catch {
 	write-error "⚠️ Error in line $($_.InvocationInfo.ScriptLineNumber): $($Error[0])"

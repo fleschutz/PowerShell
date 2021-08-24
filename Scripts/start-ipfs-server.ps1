@@ -47,7 +47,7 @@ try {
 #	Start-Process nohup 'ipfs daemon'
 	Start-Process nohup -ArgumentList 'ipfs','daemon' -RedirectStandardOutput "$HOME/console.out" -RedirectStandardError "$HOME/console.err"
 
-	"Done."
+	"✔️  Done."
 	exit 0
 } catch {
 	write-error "⚠️ Error in line $($_.InvocationInfo.ScriptLineNumber): $($Error[0])"

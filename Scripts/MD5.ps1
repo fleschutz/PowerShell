@@ -18,7 +18,8 @@ try {
 	if ($File -eq "" ) { $File = read-host "Enter path to file" }
 
 	$Result = get-filehash $File -algorithm MD5
-	"MD5 hash is" $Result.Hash
+
+	"✔️ MD5 hash is" $Result.Hash
 	exit 0
 } catch {
 	write-error "⚠️ Error in line $($_.InvocationInfo.ScriptLineNumber): $($Error[0])"
