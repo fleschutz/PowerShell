@@ -1,4 +1,4 @@
-﻿#requires -version 2
+﻿#requires -version 4
 <#
 .SYNOPSIS
 	← enter overview of script here
@@ -18,9 +18,9 @@
 	License:       ← enter license here
 #>
 
-param() # ← enter file parameter(s) here
+param() # ← enter script parameters here
 
-#	← enter function(s) here 
+#	← enter functions here 
 
 try {
 #	← enter instructions here 
