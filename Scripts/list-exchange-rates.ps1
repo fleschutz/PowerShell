@@ -2,9 +2,9 @@
 .SYNOPSIS
 	list-exchange-rates.ps1 [<currency>]
 .DESCRIPTION
-	Lists the exchange rates for the given currency (USD per default)
+	Lists the current exchange rates for the given currency (USD per default)
 .EXAMPLE
-	PS> .\list-exchange-rates.ps1
+	PS> .\list-exchange-rates.ps1 EUR
 .LINK
 	https://github.com/fleschutz/PowerShell
 .NOTES
@@ -23,8 +23,8 @@ function ListExchangeRates { param([string]$currency)
 
 try {
 	""
-	"Exchange Rates for 1 $currency (source: http://www.floatrates.com)"
-	"============================================================"
+	"Current Exchange Rates for 1 $currency (source: http://www.floatrates.com)"
+	"================================"
 
 	ListExchangeRates $currency | format-table -property Rate,Currency,Inverse,Date
 	exit 0

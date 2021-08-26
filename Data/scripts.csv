@@ -93,6 +93,7 @@ list-commits.ps1, lists all commits in the current/given Git repository
 list-cli-tools.ps1, lists available command-line interface (CLI) tools 
 list-clipboard.ps1, lists the contents of the clipboard
 list-credits.ps1, shows the credits
+list-crypto-rates.ps1, lists the current crypto exchange rates 
 list-dir.ps1, lists the directory content (formatted in columns)
 list-dir-tree.ps1, lists the directory tree content 
 list-drives.ps1, lists all drives
