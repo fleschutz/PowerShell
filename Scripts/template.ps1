@@ -1,23 +1,29 @@
-﻿<#
+﻿#requires -version 2
+<#
 .SYNOPSIS
-	template.ps1 
+	← enter overview of script here
 .DESCRIPTION
-	Copy this template PowerShell script to write a new one
+	← enter brief description of script here
+.INPUTS
+	← enter inputs here (if any, otherwise state None)
+.OUTPUTS
+	← enter outputs here (if any, otherwise state None)
 .EXAMPLE
-	PS> .\template.ps1
+	PS> .\template.ps1 ← enter example here (repeat this attribute for more than one example)
 .LINK
-	https://github.com/fleschutz/PowerShell
+	← enter URL here
 .NOTES
-	Author:  Markus Fleschutz
-	License: CC0
+	Author:        ← enter full name here
+	Creation Date: ← enter date here
+	License:       ← enter license here
 #>
 
-param() # <- enter file parameter(s) here
+param() # ← enter file parameter(s) here
 
-#	<- enter function(s) here 
+#	← enter function(s) here 
 
 try {
-#	<- enter workload here 
+#	← enter instructions here 
 
 	"✔️ Done."
 	exit 0
