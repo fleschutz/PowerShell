@@ -1,4 +1,4 @@
-# make sure you adjust this path
+﻿# make sure you adjust this path
 # it must point to a network share where you have read and write permissions
 $ServerShare = "\\myserver\chathome"
 

@@ -1,4 +1,4 @@
-<#
+﻿<#
 .SYNOPSIS
 	upgrade-ubuntu.ps1 
 .DESCRIPTION

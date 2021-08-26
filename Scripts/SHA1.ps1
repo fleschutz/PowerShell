@@ -1,4 +1,4 @@
-<#
+﻿<#
 .SYNOPSIS
 	SHA1.ps1 [<file>]
 .DESCRIPTION

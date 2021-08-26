@@ -1,4 +1,4 @@
-<#
+﻿<#
 .SYNOPSIS
 	publish-to-ipfs.ps1 [<file(s)/dir>] [<to-hash-list>]
 .DESCRIPTION

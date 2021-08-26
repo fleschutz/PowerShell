@@ -1,4 +1,4 @@
-<#
+﻿<#
 .SYNOPSIS
 	convert-csv2txt.ps1 [<csv-file>]
 .DESCRIPTION

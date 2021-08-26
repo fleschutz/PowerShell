@@ -1,4 +1,4 @@
-<#
+﻿<#
 .SYNOPSIS
 	voice-control.ps1 
 .DESCRIPTION

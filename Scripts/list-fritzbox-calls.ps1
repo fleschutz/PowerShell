@@ -1,4 +1,4 @@
-<#
+﻿<#
 .SYNOPSIS
 	list-fritzbox-calls.ps1 [<username>] [<password>]
 .DESCRIPTION

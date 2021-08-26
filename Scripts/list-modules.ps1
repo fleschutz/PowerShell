@@ -1,4 +1,4 @@
-<#
+﻿<#
 .SYNOPSIS
 	list-modules.ps1 
 .DESCRIPTION

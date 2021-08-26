@@ -1,4 +1,4 @@
-<#
+﻿<#
 .SYNOPSIS
 	moon.ps1
 .DESCRIPTION

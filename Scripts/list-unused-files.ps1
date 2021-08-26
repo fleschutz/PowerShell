@@ -1,4 +1,4 @@
-<#
+﻿<#
 .SYNOPSIS
 	list-unused-files.ps1 <dir-tree> <days>
 .DESCRIPTION

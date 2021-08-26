@@ -1,4 +1,4 @@
-<#
+﻿<#
 .SYNOPSIS
 	speak-french.ps1 [<text>]
 .DESCRIPTION

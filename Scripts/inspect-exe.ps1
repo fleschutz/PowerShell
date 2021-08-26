@@ -1,4 +1,4 @@
-<#
+﻿<#
 .SYNOPSIS
 	inspect-exe.ps1 [<path-to-exe-file>]
 .DESCRIPTION

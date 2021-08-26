@@ -1,4 +1,4 @@
-<#
+﻿<#
 .SYNOPSIS
 	list-passwords.ps1 [<password-length>] [<columns>] [<rows>]
 .DESCRIPTION

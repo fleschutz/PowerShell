@@ -1,4 +1,4 @@
-<#
+﻿<#
 .SYNOPSIS
 	locate-zip-code.ps1 [<country-code>] [<zip-code>]
 .DESCRIPTION

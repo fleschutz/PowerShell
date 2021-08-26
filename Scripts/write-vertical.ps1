@@ -1,4 +1,4 @@
-<#
+﻿<#
 .SYNOPSIS
 	write-vertical.ps1 [<text>]
 .DESCRIPTION

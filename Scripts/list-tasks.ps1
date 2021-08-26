@@ -1,4 +1,4 @@
-<#
+﻿<#
 .SYNOPSIS
 	list-tasks.ps1 
 .DESCRIPTION

@@ -1,4 +1,4 @@
-<#
+﻿<#
 .SYNOPSIS
 	set-timer.ps1 [<seconds>]
 .DESCRIPTION

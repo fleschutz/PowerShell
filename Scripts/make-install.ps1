@@ -1,4 +1,4 @@
-<#
+﻿<#
 .SYNOPSIS
 	make-install.ps1 <build-dir>
 .DESCRIPTION

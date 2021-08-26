@@ -1,4 +1,4 @@
-<#
+﻿<#
 .SYNOPSIS
 	speak-countdown.ps1 [start-number]
 .DESCRIPTION

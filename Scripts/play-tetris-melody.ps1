@@ -1,4 +1,4 @@
-<#
+﻿<#
 .SYNOPSIS
         play-tetris-melody.ps1
 .DESCRIPTION

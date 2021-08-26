@@ -1,4 +1,4 @@
-<#
+﻿<#
 .SYNOPSIS
 	check-ipv4-address.ps1 [<address>]
 .DESCRIPTION

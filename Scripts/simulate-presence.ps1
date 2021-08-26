@@ -1,4 +1,4 @@
-<#
+﻿<#
 .SYNOPSIS
 	simulate-presence.ps1 [<IP-address>]
 .DESCRIPTION

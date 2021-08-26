@@ -1,4 +1,4 @@
-<#
+﻿<#
 .SYNOPSIS
 	list-empty-files.ps1 [<dir-tree>]
 .DESCRIPTION

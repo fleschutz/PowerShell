@@ -1,4 +1,4 @@
-<#
+﻿<#
 .SYNOPSIS
 	write-chart.ps1
 .DESCRIPTION

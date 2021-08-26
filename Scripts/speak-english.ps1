@@ -1,4 +1,4 @@
-<#
+﻿<#
 .SYNOPSIS
 	speak-english.ps1 [<text>]
 .DESCRIPTION

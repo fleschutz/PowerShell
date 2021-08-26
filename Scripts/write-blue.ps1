@@ -1,4 +1,4 @@
-<#
+﻿<#
 .SYNOPSIS
 	write-blue.ps1 [<text>]
 .DESCRIPTION

@@ -1,4 +1,4 @@
-<#
+﻿<#
 .SYNOPSIS
 	play-mission-impossible.ps1
 .DESCRIPTION

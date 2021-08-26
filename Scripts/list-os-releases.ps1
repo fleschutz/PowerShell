@@ -1,4 +1,4 @@
-<#
+﻿<#
 .SYNOPSIS
 	list-os-releases.ps1
 .DESCRIPTION

@@ -1,4 +1,4 @@
-<#
+﻿<#
 .SYNOPSIS
 	introduce-powershell.ps1
 .DESCRIPTION

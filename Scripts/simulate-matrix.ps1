@@ -1,4 +1,4 @@
-<#
+﻿<#
 .SYNOPSIS
 	simulate-matrix.ps1 
 .DESCRIPTION

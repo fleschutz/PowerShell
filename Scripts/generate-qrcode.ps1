@@ -1,4 +1,4 @@
-<#
+﻿<#
 .SYNOPSIS
 	generate-qrcode.ps1 [<text>] [<image-size>]
 .DESCRIPTION

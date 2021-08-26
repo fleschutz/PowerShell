@@ -1,4 +1,4 @@
-<#
+﻿<#
 .SYNOPSIS
 	close-cortana.ps1 
 .DESCRIPTION

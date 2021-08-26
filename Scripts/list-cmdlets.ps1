@@ -1,4 +1,4 @@
-<#
+﻿<#
 .SYNOPSIS
 	list-cmdlets.ps1 
 .DESCRIPTION

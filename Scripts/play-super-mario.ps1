@@ -1,4 +1,4 @@
-<#
+﻿<#
 .SYNOPSIS
 	play-super-mario.ps1
 .DESCRIPTION

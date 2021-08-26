@@ -1,4 +1,4 @@
-<#
+﻿<#
 .SYNOPSIS
 	convert-mysql2csv.ps1 [<server>] [<database>] [<username>] [<password>] [<query>]
 .DESCRIPTION

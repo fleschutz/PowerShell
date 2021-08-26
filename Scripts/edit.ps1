@@ -1,4 +1,4 @@
-<#
+﻿<#
 .SYNOPSIS
 	edit.ps1 <filename>
 .DESCRIPTION

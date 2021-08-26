@@ -1,4 +1,4 @@
-<#
+﻿<#
 .SYNOPSIS
 	list-scripts.ps1
 .DESCRIPTION

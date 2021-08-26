@@ -1,4 +1,4 @@
-<#
+﻿<#
 .SYNOPSIS
 	close-system-settings.ps1 
 .DESCRIPTION

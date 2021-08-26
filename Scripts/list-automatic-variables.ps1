@@ -1,4 +1,4 @@
-<#
+﻿<#
 .SYNOPSIS
 	list-automatic-variables.ps1
 .DESCRIPTION

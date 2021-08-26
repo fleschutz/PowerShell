@@ -1,4 +1,4 @@
-<#
+﻿<#
 .SYNOPSIS
         play-jingle-bells.ps1
 .DESCRIPTION

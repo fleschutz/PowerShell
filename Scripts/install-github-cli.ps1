@@ -1,4 +1,4 @@
-<#
+﻿<#
 .SYNOPSIS
 	install-github-cli.ps1 
 .DESCRIPTION

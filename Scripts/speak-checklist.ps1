@@ -1,4 +1,4 @@
-<#
+﻿<#
 .SYNOPSIS
 	speak-checklist.ps1 [<name>]
 .DESCRIPTION

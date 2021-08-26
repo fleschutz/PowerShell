@@ -1,4 +1,4 @@
-<#
+﻿<#
 .SYNOPSIS
 	list-fritzbox-devices.ps1 [<username>] [<password>]
 .DESCRIPTION

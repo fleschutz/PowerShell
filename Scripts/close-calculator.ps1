@@ -1,4 +1,4 @@
-<#
+﻿<#
 .SYNOPSIS
 	close-calculator.ps1 
 .DESCRIPTION

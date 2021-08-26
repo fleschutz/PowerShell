@@ -1,4 +1,4 @@
-<#
+﻿<#
 .SYNOPSIS
 	close-chrome.ps1 
 .DESCRIPTION

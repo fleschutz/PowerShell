@@ -1,4 +1,4 @@
-<#
+﻿<#
 .SYNOPSIS
 	close-onedrive.ps1 
 .DESCRIPTION

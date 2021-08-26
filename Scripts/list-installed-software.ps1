@@ -1,4 +1,4 @@
-<#
+﻿<#
 .SYNOPSIS
 	list-installed-software.ps1
 .DESCRIPTION

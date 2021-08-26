@@ -1,4 +1,4 @@
-<#
+﻿<#
 .SYNOPSIS
 	MD5.ps1 [<file>]
 .DESCRIPTION

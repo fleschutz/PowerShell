@@ -1,4 +1,4 @@
-<#
+﻿<#
 .SYNOPSIS
 	list-user-groups.ps1 
 .DESCRIPTION

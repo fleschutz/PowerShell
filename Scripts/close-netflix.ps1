@@ -1,4 +1,4 @@
-<#
+﻿<#
 .SYNOPSIS
 	close-netflix.ps1 
 .DESCRIPTION

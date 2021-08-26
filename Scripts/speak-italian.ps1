@@ -1,4 +1,4 @@
-<#
+﻿<#
 .SYNOPSIS
 	speak-italian.ps1 [<text>]
 .DESCRIPTION

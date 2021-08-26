@@ -1,4 +1,4 @@
-<#
+﻿<#
 .SYNOPSIS
 	locate-ipaddress.ps1 [<IPaddress>]
 .DESCRIPTION

@@ -1,4 +1,4 @@
-<#
+﻿<#
 .SYNOPSIS
 	set-wallpaper.ps1 [<image-file>] [<style>]
 .DESCRIPTION

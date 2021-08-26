@@ -1,4 +1,4 @@
-<#
+﻿<#
 .SYNOPSIS
 	list-drives.ps1
 .DESCRIPTION

@@ -1,4 +1,4 @@
-<#
+﻿<#
 .SYNOPSIS
 	list-system-info.ps1
 .DESCRIPTION

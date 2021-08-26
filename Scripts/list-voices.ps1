@@ -1,4 +1,4 @@
-<#
+﻿<#
 .SYNOPSIS
 	list-voices.ps1 
 .DESCRIPTION

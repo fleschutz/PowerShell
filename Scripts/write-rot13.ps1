@@ -1,4 +1,4 @@
-<#
+﻿<#
 .SYNOPSIS
 	write-rot13.ps1 [<text>]
 .DESCRIPTION

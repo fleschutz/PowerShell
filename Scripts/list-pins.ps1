@@ -1,4 +1,4 @@
-<#
+﻿<#
 .SYNOPSIS
 	list-pins.ps1 [<pin-length>] [<columns>] [<rows>]
 .DESCRIPTION

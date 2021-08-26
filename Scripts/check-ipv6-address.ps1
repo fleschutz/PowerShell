@@ -1,4 +1,4 @@
-<#
+﻿<#
 .SYNOPSIS
 	check-ipv6-address.ps1 [<address>]
 .DESCRIPTION

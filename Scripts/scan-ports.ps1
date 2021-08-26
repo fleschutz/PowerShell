@@ -1,4 +1,4 @@
-<#
+﻿<#
 .SYNOPSIS
 	scan-ports.ps1
 .DESCRIPTION

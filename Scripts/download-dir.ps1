@@ -1,4 +1,4 @@
-<#
+﻿<#
 .SYNOPSIS
 	download-dir.ps1 [<URL>]
 .DESCRIPTION

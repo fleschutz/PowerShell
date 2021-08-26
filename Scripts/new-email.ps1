@@ -1,4 +1,4 @@
-<#
+﻿<#
 .SYNOPSIS
 	new-email.ps1 [<address>]
 .DESCRIPTION

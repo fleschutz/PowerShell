@@ -1,4 +1,4 @@
-<#
+﻿<#
 .SYNOPSIS
 	download-file.ps1 [<URL>]
 .DESCRIPTION

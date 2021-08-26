@@ -1,4 +1,4 @@
-<#
+﻿<#
 .SYNOPSIS
 	search-filename.ps1
 .DESCRIPTION

@@ -1,4 +1,4 @@
-<#
+﻿<#
 .SYNOPSIS
 	list-credits.ps1
 .DESCRIPTION

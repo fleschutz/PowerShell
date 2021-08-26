@@ -1,4 +1,4 @@
-<#
+﻿<#
 .SYNOPSIS
 	list-printers.ps1
 .DESCRIPTION
