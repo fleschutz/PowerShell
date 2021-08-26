@@ -196,6 +196,7 @@ Mega Collection of PowerShell Scripts
 * [list-profiles.ps1](Scripts/list-profiles.ps1) - lists your PowerShell profiles
 * [list-scripts.ps1](Scripts/list-scripts.ps1) - lists all PowerShell scripts in this repository
 * [set-profile.ps1](Scripts/set-profile.ps1) - updates your PowerShell user profile
+* [template.ps1](Scripts/template.ps1) - copy this template PowerShell script to write a new one
 
 🛒 Various PowerShell Scripts 
 ------------------------------
