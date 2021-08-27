@@ -215,6 +215,7 @@ Mega Collection of PowerShell Scripts
 * [generate-qrcode.ps1](Scripts/generate-qrcode.ps1) - generates a QR code
 * [list-anagrams.ps1](Scripts/list-anagrams.ps1) - lists all anagrams of the given word
 * [list-city-weather.ps1](Scripts/list-city-weather.ps1) - lists the current weather of cities worldwide (west to east)
+* [list-countries.ps1](Scripts/list-countries.ps1) - lists details of all countries
 * [list-credits.ps1](Scripts/list-credits.ps1) - shows the credits
 * [list-crypto-rates.ps1](Scripts/list-crypto-rates.ps1) - lists the current crypto exchange rates 
 * [list-environment-variables.ps1](Scripts/list-environment-variables.ps1) - lists all environment variables
