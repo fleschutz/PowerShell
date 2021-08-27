@@ -2,7 +2,7 @@
 .SYNOPSIS
 	zip-dir.ps1 [<directory>]
 .DESCRIPTION
-	Creates a zip archive of the given directory
+	Creates a .zip archive of the given directory
 .EXAMPLE
 	PS> .\zip-dir.ps1 C:\Windows
 .LINK
@@ -12,15 +12,17 @@
 	License: CC0
 #>
 
-param([string]$Directory = "")
+param([string]$directory = "")
 
 try {
-	if ($Directory -eq "" ) { $Directory = read-host "Enter the path to the directory to zip" }
+	if ($directory -eq "" ) { $directory = read-host "Enter the path to the directory to zip" }
+	$StopWatch = [system.diagnostics.stopwatch]::startNew()
 
-	$Directory = resolve-path $Directory
-	compress-archive -path $Directory -destinationPath $Directory.zip
+	$directory = resolve-path $directory
+	compress-archive -path $directory -destinationPath $directory.zip
 
-	"✔️ created zip archive: $($Directory).zip"
+	[int]$Elapsed = $StopWatch.Elapsed.TotalSeconds
+	"✔️ created zip archive: $($directory).zip in $Elapsed sec"
 	exit 0
 } catch {
 	write-error "⚠️ Error in line $($_.InvocationInfo.ScriptLineNumber): $($Error[0])"
