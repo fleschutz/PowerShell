@@ -27,6 +27,7 @@ check-ipv4-address.ps1, checks the given IPv4 address for validity
 check-ipv6-address.ps1, checks the given IPv6 address for validity
 check-mac-address.ps1, checks the given MAC address for validity
 check-ping.ps1, checks the ping latency to the internet
+check-subnet-mask.ps1, checks the given subnet mask for validity
 check-swap-space.ps1, checks the swap space for free space left
 check-symlinks.ps1, checks every symlink in the given directory tree
 check-weather.ps1, checks the current weather for critical values

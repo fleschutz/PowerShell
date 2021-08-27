@@ -205,6 +205,7 @@ Mega Collection of PowerShell Scripts
 * [check-ipv4-address.ps1](Scripts/check-ipv4-address.ps1) - checks the given IPv4 address for validity
 * [check-ipv6-address.ps1](Scripts/check-ipv6-address.ps1) - checks the given IPv6 address for validity
 * [check-mac-address.ps1](Scripts/check-mac-address.ps1) - checks the given MAC address for validity
+* [check-subnet-mask.ps1](Scripts/check-subnet-mask.ps1) - checks the given subnet mask for validity
 * [check-weather.ps1](Scripts/check-weather.ps1) - checks the current weather for critical values
 * [convert-csv2txt.ps1](Scripts/convert-csv2txt.ps1) - converts the given CSV file to a text list
 * [convert-mysql2csv.ps1](Scripts/convert-mysql2csv.ps1) - converts the MySQL database table to a CSV file
