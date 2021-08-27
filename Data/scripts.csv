@@ -91,6 +91,7 @@ list-branches.ps1, lists all branches in the current/given Git repository
 list-cheat-sheet.ps1, lists the PowerShell cheat sheet
 list-city-weather.ps1, lists the current weather of cities worldwide (east to west)
 list-commits.ps1, lists all commits in the current/given Git repository 
+list-console-colors.ps1, lists all console colors
 list-cli-tools.ps1, lists available command-line interface (CLI) tools 
 list-clipboard.ps1, lists the contents of the clipboard
 list-credits.ps1, shows the credits

@@ -193,6 +193,7 @@ Mega Collection of PowerShell Scripts
 * [list-automatic-variables.ps1](Scripts/list-automatic-variables.ps1) - lists the automatic variables of PowerShell 
 * [list-cheat-sheet.ps1](Scripts/list-cheat-sheet.ps1) - lists the PowerShell cheat sheet
 * [list-cmdlets.ps1](Scripts/list-cmdlets.ps1) - lists the PowerShell cmdlets
+* [list-console-colors.ps1](Scripts/list-console-colors.ps1) - lists all console colors
 * [list-modules.ps1](Scripts/list-modules.ps1) - lists the PowerShell modules
 * [list-profiles.ps1](Scripts/list-profiles.ps1) - lists your PowerShell profiles
 * [list-scripts.ps1](Scripts/list-scripts.ps1) - lists all PowerShell scripts in this repository
