@@ -63,19 +63,28 @@ function GetRemark {
 }
 
 try {
-    $full = Get-Help $script -Full
+	$full = Get-Help $script -Full
 
+	"# $($full.Name)"
+	"$($full.Synopsis)"
+
+	$Description = ($full.description | Out-String).Trim()
+	if ($Description -ne "") {
+		""
+		"## Description"
+		"$Description"
+	}
+
+	$Syntax = (($full.syntax | Out-String) -replace "`r`n", "`r`n`r`n").Trim()
+	if ($Syntax -ne "") {
+		""
+		"## Syntax"
+		"``````powershell"
+		"$Syntax"
+		"``````"
+	}
 @"
-# $($full.Name)
-$($full.Synopsis)
 
-## Description
-$(($full.description | Out-String).Trim())
-
-## Syntax
-``````powershell
-$((($full.syntax | Out-String) -replace "`r`n", "`r`n`r`n").Trim())
-``````
 
 ## Parameters
 "@ + $(foreach ($parameter in $full.parameters.parameter) {
@@ -105,16 +114,23 @@ $(GetCode $example)
 ``````
 $(GetRemark $example)
 
-## Notes
-$(($full.alertSet.alert | Out-String).Trim())
-
-## Related Links
-$(($full.relatedlinks | Out-String).Trim())
-
 "@
 }) + @"
 
 "@
+	$Notes = ($full.alertSet.alert | Out-String).Trim()
+	if ($Notes -ne "") {
+		""
+		"## Notes"
+		"$Notes"
+	}
+
+	$Links = ($full.relatedlinks | Out-String).Trim()
+	if ($Links -ne "") {
+		""
+		"## Related Links"
+		"$Links"
+	}
 
 } finally {
 }
