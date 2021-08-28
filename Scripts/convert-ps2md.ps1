@@ -12,7 +12,7 @@
 	https://github.com/fleschutz/PowerShell
 #>
 
-param([string]$script)
+param([string]$script = "")
 
 function EncodePartOfHtml {
     param (
@@ -63,15 +63,14 @@ function GetRemark {
 }
 
 try {
+	if ($script -eq "") { $script = read-host "Enter path to PowerShell script" }
+
 	$full = Get-Help $script -Full
 
-	"# $($full.Name)"
-	"$($full.Synopsis)"
+	"# $($full.Synopsis)"
 
 	$Description = ($full.description | Out-String).Trim()
 	if ($Description -ne "") {
-		""
-		"## Description"
 		"$Description"
 	}
 
@@ -83,26 +82,28 @@ try {
 		"$Syntax"
 		"``````"
 	}
+
+	foreach($parameter in $full.parameters.parameter) {
+		""
+		"## Parameter -$($parameter.name) &lt;$($parameter.type.name)&gt;"
+		"$(($parameter.description | Out-String).Trim())"
+		"``````"
+		"$(((($parameter | Out-String).Trim() -split "`r`n")[-5..-1] | % { $_.Trim() }) -join "`r`n")"
+		"``````"
+	}
+
+	foreach($input in $full.inputTypes) {
+		""
+		"## Inputs"
+		"$($input.inputType.type.name)"
+	}
+
+	foreach($output in $full.outputTypes) {
+		""
+		"## Outputs"
+		"$($output.outputType.type.name)"
+	}
 @"
-
-
-## Parameters
-"@ + $(foreach ($parameter in $full.parameters.parameter) {
-@"
-
-### -$($parameter.name) &lt;$($parameter.type.name)&gt;
-$(($parameter.description | Out-String).Trim())
-``````
-$(((($parameter | Out-String).Trim() -split "`r`n")[-5..-1] | % { $_.Trim() }) -join "`r`n")
-``````
-
-"@
-}) + @"
-
-## Inputs
-$($full.inputTypes.inputType.type.name)
-
-## Outputs
 
 ## Examples
 "@ + $(foreach ($example in $full.examples.example) {
@@ -131,6 +132,7 @@ $(GetRemark $example)
 		"## Related Links"
 		"$Links"
 	}
-
-} finally {
+} catch {
+        write-error "⚠️ Error in line $($_.InvocationInfo.ScriptLineNumber): $($Error[0])"
+        exit 1
 }
