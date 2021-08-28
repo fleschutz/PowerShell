@@ -14,19 +14,11 @@
 
 param([string]$script = "")
 
-function EncodePartOfHtml {
-    param (
-        [string]
-        $Value
-    )
-
+function EncodePartOfHtml { param([string]$Value)
     ($Value -replace '<', '&lt;') -replace '>', '&gt;'
 }
 
-function GetCode {
-    param (
-        $Example
-    )
+function GetCode { param($Example)
     $codeAndRemarks = (($Example | Out-String) -replace ($Example.title), '').Trim() -split "`r`n"
 
     $code = New-Object "System.Collections.Generic.List[string]"
@@ -43,10 +35,7 @@ function GetCode {
     $code -join "`r`n"
 }
 
-function GetRemark {
-    param (
-        $Example
-    )
+function GetRemark { param($Example)
     $codeAndRemarks = (($Example | Out-String) -replace ($Example.title), '').Trim() -split "`r`n"
 
     $isSkipped = $false
@@ -65,12 +54,18 @@ function GetRemark {
 try {
 	if ($script -eq "") { $script = read-host "Enter path to PowerShell script" }
 
-	$full = Get-Help $script -Full
+	$full = Get-Help $script -Full -Path D:
 
-	"# $($full.Synopsis)"
+	"# PowerShell Script $script"
+
+	""
+	"## Synopsis"
+	"$($full.Synopsis)"
 
 	$Description = ($full.description | Out-String).Trim()
 	if ($Description -ne "") {
+		""
+		"## Description"
 		"$Description"
 	}
 
@@ -85,40 +80,36 @@ try {
 
 	foreach($parameter in $full.parameters.parameter) {
 		""
-		"## Parameter -$($parameter.name) &lt;$($parameter.type.name)&gt;"
+		"## -$($parameter.name) &lt;$($parameter.type.name)&gt; Parameter"
 		"$(($parameter.description | Out-String).Trim())"
 		"``````"
 		"$(((($parameter | Out-String).Trim() -split "`r`n")[-5..-1] | % { $_.Trim() }) -join "`r`n")"
 		"``````"
 	}
+	"## <CommonParameters>"
+	"This cmdlet supports the common parameters: Verbose, Debug, ErrorAction, ErrorVariable, WarningAction, WarningVariable, OutBuffer, PipelineVariable, and OutVariable. For more information, see about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216)."
 
-	foreach($input in $full.inputTypes) {
+	foreach($input in $full.inputTypes.inputType) {
 		""
 		"## Inputs"
-		"$($input.inputType.type.name)"
+		"$($input.type.name)"
 	}
 
-	foreach($output in $full.outputTypes) {
+	foreach($output in $full.outputTypes.outputType) {
 		""
 		"## Outputs"
-		"$($output.outputType.type.name)"
+		"$($output.type.name)"
 	}
-@"
 
-## Examples
-"@ + $(foreach ($example in $full.examples.example) {
-@"
+	foreach($example in $full.examples.example) {
+		""
+		"## Example"
+		"``````powershell"
+		"$(GetCode $example)"
+		"``````"
+		"$(GetRemark $example)"
+	}
 
-### $(($example.title -replace '-*', '').Trim())
-``````powershell
-$(GetCode $example)
-``````
-$(GetRemark $example)
-
-"@
-}) + @"
-
-"@
 	$Notes = ($full.alertSet.alert | Out-String).Trim()
 	if ($Notes -ne "") {
 		""
