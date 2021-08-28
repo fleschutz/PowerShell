@@ -187,6 +187,7 @@ Mega Collection of PowerShell Scripts
 🔎 Scripts for PowerShell 
 ------------------------
 * [convert-ps2bat.ps1](Scripts/convert-ps2bat.ps1) - converts PowerShell script(s) to .bat files
+* [convert-ps2md.ps1](Scripts/convert-ps2md.ps1) - converts the comment-based help of a PowerShell script to Markdown
 * [daily-tasks.sh](Scripts/daily-tasks.sh) - execute PowerShell scripts automatically as daily tasks (Linux only)
 * [introduce-powershell.ps1](Scripts/introduce-powershell.ps1) - introduces PowerShell to new users
 * [list-aliases.ps1](Scripts/list-aliases.ps1) - lists all PowerShell aliases 
