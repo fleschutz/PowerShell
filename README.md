@@ -159,7 +159,7 @@ Mega Collection of PowerShell Scripts
 * [upload-file.ps1](Scripts/zip-dir.ps1) - uploads the local file to the given FTP server
 * [zip-dir.ps1](Scripts/zip-dir.ps1) - creates a .zip archive of the given directory
 
-Scripts for File Conversion
+♻️ Scripts to Convert Files
 ---------------------------
 
 | Script                                                 | Description                                                        | Documentation                           |
