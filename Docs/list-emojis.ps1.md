@@ -16,7 +16,7 @@ Lists the Emojis of Unicode 13.0.
 ## Parameters
 
 ```
-## <CommonParameters>
+<CommonParameters>
     This cmdlet supports the common parameters: Verbose, Debug, ErrorAction, ErrorVariable, WarningAction, 
     WarningVariable, OutBuffer, PipelineVariable, and OutVariable.
     For more information, see about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).

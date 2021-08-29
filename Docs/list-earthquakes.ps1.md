@@ -16,7 +16,7 @@ Lists earthquakes with magnitude >= 6.0 for the last 30 days.
 ## Parameters
 
 ```
-## <CommonParameters>
+<CommonParameters>
     This cmdlet supports the common parameters: Verbose, Debug, ErrorAction, ErrorVariable, WarningAction, 
     WarningVariable, OutBuffer, PipelineVariable, and OutVariable.
     For more information, see about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
