@@ -12,7 +12,7 @@ Mega Collection of PowerShell Scripts
 | ---------------------------------------------------- | ------------------------------------------------------------------ | --------------------------------------- |
 | [mute-audio.ps1](Scripts/mute-audio.ps1)             | mutes the audio device                                             | [Manual](Docs/mute-audio.ps1.md)        |
 | [list-voices.ps1](Scripts/list-voices.ps1)           | lists the installed text-to-speech (TTS) voices                    | [Manual](Docs/list-voices.ps1.md)       |
-| [play-beep.ps1](Scripts/play-beep.ps1)               | plays a beep sound                                                 | [Manual](Docs/play-beept.ps1.md)        |
+| [play-beep.ps1](Scripts/play-beep.ps1)               | plays a beep sound                                                 | [Manual](Docs/play-beep.ps1.md)         |
 | [play-files.ps1](Scripts/play-files.ps1)             | plays the given audio files                                        | [Manual](Docs/play-files.ps1.md)        |
 | [play-happy-birthday.ps1](Scripts/play-happy-birthday.ps1) | plays the Happy Birthday song                                | [Manual](Docs/play-happy-birthday.ps1.md) |
 | [play-imperial-march.ps1](Scripts/play-imperial-march.ps1) | plays the Imperial March (Star Wars)                         | [Manual](Docs/play-imperial-march.ps1.md) |
@@ -179,27 +179,27 @@ Mega Collection of PowerShell Scripts
 
 | Script                                               | Description                                                        | Documentation                           |
 | ---------------------------------------------------- | ------------------------------------------------------------------ | --------------------------------------- |
-| [cherry-picker.ps1](Scripts/cherry-picker.ps1)       | cherry-picks a Git commit into multiple branches
-| [clean-repo.ps1](Scripts/clean-repo.ps1)             | cleans the current/given Git repository from untracked files (including submodules)
-| [clean-repos.ps1](Scripts/clean-repos.ps1)           | cleans all Git repositories under the current/given directory from untracked files (including submodules)
-| [clone-repos.ps1](Scripts/clone-repos.ps1)           | clones well-known Git repositories
-| [configure-git.ps1](Scripts/configure-git.ps1)       | sets up the Git user configuration
-| [create-branch.ps1](Scripts/create-branch.ps1)       | creates a new branch in the current/given Git repository 
-| [create-tag.ps1](Scripts/create-tag.ps1)             | creates a new tag in the current/given Git repository 
-| [fetch-repo.ps1](Scripts/fetch-repo.ps1)             | fetches updates for the current/given Git repository (including submodules)
-| [fetch-repos.ps1](Scripts/fetch-repos.ps1)           | fetches updates for all Git repositories under the current/given directory (including submodules)
-| [list-branches.ps1](Scripts/list-branches.ps1)       | lists all branches in the current/given Git repository 
-| [list-commits.ps1](Scripts/list-commits.ps1)         | lists all commits in the current/given Git repository 
-| [list-latest-tag.ps1](Scripts/list-latest-tag.ps1)   | lists the latest tag on the current branch in a Git repository
-| [list-latest-tags.ps1](Scripts/list-latest-tags.ps1) | lists the latests tags in all Git repositories under the current/given directory 
-| [list-submodules.ps1](Scripts/list-submodules.ps1)   | lists the submodules of the current/given Git repository 
-| [list-tags.ps1](Scripts/list-tags.ps1)               | lists all tags in the current/given Git repository 
-| [make-repo.ps1](Scripts/make-repo.ps1)               | builds the current/given Git repository 
-| [make-repos.ps1](Scripts/make-repos.ps1)             | builds all Git repositories under the current/given directory
-| [pull-repo.ps1](Scripts/pull-repo.ps1)               | pulls updates for the current/given Git repository (including submodules)
-| [pull-repos.ps1](Scripts/pull-repos.ps1)             | pulls updates for all Git repositories under the current/given directory (including submodules)
-| [switch-branch.ps1](Scripts/switch-branch.ps1)       | switches the branch in the current/given Git repository (including submodules)
-| [sync-repo.ps1](Scripts/sync-repo.ps1)               | synchronizes a Git repository by push & pull (including submodules)
+| [cherry-picker.ps1](Scripts/cherry-picker.ps1)       | cherry-picks a Git commit into multiple branches                   | [Manual](Docs/cherry-picker.ps1.md)     |
+| [clean-repo.ps1](Scripts/clean-repo.ps1)             | cleans the current/given Git repository from untracked files (including submodules) | [Manual](Docs/clean-repo.ps1.md) |
+| [clean-repos.ps1](Scripts/clean-repos.ps1)           | cleans all Git repositories under the current/given directory from untracked files (including submodules) | [Manual](Docs/clean-repos.ps1.md)   |
+| [clone-repos.ps1](Scripts/clone-repos.ps1)           | clones well-known Git repositories                                 | [Manual](Docs/clone-repos.ps1.md)       |
+| [configure-git.ps1](Scripts/configure-git.ps1)       | sets up the Git user configuration                                 | [Manual](Docs/configure-git.ps1.md)     |
+| [create-branch.ps1](Scripts/create-branch.ps1)       | creates a new branch in the current/given Git repository           | [Manual](Docs/create-branch.ps1.md)     |
+| [create-tag.ps1](Scripts/create-tag.ps1)             | creates a new tag in the current/given Git repository              | [Manual](Docs/create-tag.ps1.md)        |
+| [fetch-repo.ps1](Scripts/fetch-repo.ps1)             | fetches updates for the current/given Git repository (including submodules) | [Manual](Docs/fetch-repo.ps1.md) |
+| [fetch-repos.ps1](Scripts/fetch-repos.ps1)           | fetches updates for all Git repositories under the current/given directory (including submodules) | [Manual](Docs/fetch-repos.ps1.md)   |
+| [list-branches.ps1](Scripts/list-branches.ps1)       | lists all branches in the current/given Git repository             | [Manual](Docs/list-branches.ps1.md)     |
+| [list-commits.ps1](Scripts/list-commits.ps1)         | lists all commits in the current/given Git repository              | [Manual](Docs/list-commits.ps1.md)      |
+| [list-latest-tag.ps1](Scripts/list-latest-tag.ps1)   | lists the latest tag on the current branch in a Git repository     | [Manual](Docs/list-latest-tag.ps1.md)   |
+| [list-latest-tags.ps1](Scripts/list-latest-tags.ps1) | lists the latests tags in all Git repositories under the current/given directory | [Manual](Docs/list-latest-tags.ps1.md)   |
+| [list-submodules.ps1](Scripts/list-submodules.ps1)   | lists the submodules of the current/given Git repository           | [Manual](Docs/list-submodules.ps1.md)   |
+| [list-tags.ps1](Scripts/list-tags.ps1)               | lists all tags in the current/given Git repository                 | [Manual](Docs/list-tags.ps1.md)         |
+| [make-repo.ps1](Scripts/make-repo.ps1)               | builds the current/given Git repository                            | [Manual](Docs/make-repo.ps1.md)         |
+| [make-repos.ps1](Scripts/make-repos.ps1)             | builds all Git repositories under the current/given directory      | [Manual](Docs/make-repos.ps1.md)        |
+| [pull-repo.ps1](Scripts/pull-repo.ps1)               | pulls updates for the current/given Git repository (including submodules) | [Manual](Docs/pull-repo.ps1.md)  |
+| [pull-repos.ps1](Scripts/pull-repos.ps1)             | pulls updates for all Git repositories under the current/given directory (including submodules) | [Manual](Docs/pull-repos.ps1.md)   |
+| [switch-branch.ps1](Scripts/switch-branch.ps1)       | switches the branch in the current/given Git repository (including submodules) | [Manual](Docs/switch-branch.ps1.md) |
+| [sync-repo.ps1](Scripts/sync-repo.ps1)               | synchronizes a Git repository by push & pull (including submodules) | [Manual](Docs/sync-repo.ps1.md)        |
 
 🔎 Scripts for PowerShell 
 ------------------------
