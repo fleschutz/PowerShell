@@ -1,11 +1,10 @@
 # PowerShell Script list-memos.ps1
 
-## Synopsis
+## Synopsis & Description
 ```powershell
 list-memos.ps1
 ```
 
-## Description
 Lists all memos in $HOME/Memos.csv.
 
 ## Syntax & Parameters

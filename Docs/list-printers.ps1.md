@@ -1,11 +1,10 @@
 # PowerShell Script list-printers.ps1
 
-## Synopsis
+## Synopsis & Description
 ```powershell
 list-printers.ps1
 ```
 
-## Description
 Lists all printer known to the local computer.
 
 ## Syntax & Parameters

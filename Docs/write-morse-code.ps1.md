@@ -1,11 +1,10 @@
 # PowerShell Script write-morse-code.ps1
 
-## Synopsis
+## Synopsis & Description
 ```powershell
 write-morse-code.ps1 [<text>] [<speed>]
 ```
 
-## Description
 Writes the given text in Morse code.
 
 ## Syntax & Parameters

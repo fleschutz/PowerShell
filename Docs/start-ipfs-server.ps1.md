@@ -1,11 +1,10 @@
 # PowerShell Script start-ipfs-server.ps1
 
-## Synopsis
+## Synopsis & Description
 ```powershell
 start-ipfs-server.ps1
 ```
 
-## Description
 Starts a local IPFS server as a daemon process.
 
 ## Syntax & Parameters

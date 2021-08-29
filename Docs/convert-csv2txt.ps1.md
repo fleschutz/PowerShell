@@ -1,11 +1,10 @@
 # PowerShell Script convert-csv2txt.ps1
 
-## Synopsis
+## Synopsis & Description
 ```powershell
 convert-csv2txt.ps1 [<csv-file>]
 ```
 
-## Description
 Converts a .CSV file into a text file.
 
 ## Syntax & Parameters

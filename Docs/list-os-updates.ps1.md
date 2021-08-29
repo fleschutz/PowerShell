@@ -1,11 +1,10 @@
 # PowerShell Script list-os-updates.ps1
 
-## Synopsis
+## Synopsis & Description
 ```powershell
 list-os-updates.ps1 [<RSS-URL>] [<max-count>]
 ```
 
-## Description
 Lists the latest operating system updates.
 
 ## Syntax & Parameters

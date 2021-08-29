@@ -1,11 +1,10 @@
 # PowerShell Script list-mysql-tables.ps1
 
-## Synopsis
+## Synopsis & Description
 ```powershell
 list-mysql-tables.ps1
 ```
 
-## Description
 Lists the MySQL tables.
 
 ## Syntax & Parameters

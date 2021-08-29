@@ -1,11 +1,10 @@
 # PowerShell Script list-drives.ps1
 
-## Synopsis
+## Synopsis & Description
 ```powershell
 list-drives.ps1
 ```
 
-## Description
 Lists all drives connected to the computer.
 
 ## Syntax & Parameters

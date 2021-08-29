@@ -1,11 +1,10 @@
 # PowerShell Script play-mission-impossible.ps1
 
-## Synopsis
+## Synopsis & Description
 ```powershell
 play-mission-impossible.ps1
 ```
 
-## Description
 Plays the Mission Impossible theme.
 
 ## Syntax & Parameters

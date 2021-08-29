@@ -1,11 +1,10 @@
 # PowerShell Script introduce-powershell.ps1
 
-## Synopsis
+## Synopsis & Description
 ```powershell
 introduce-powershell.ps1
 ```
 
-## Description
 Introduces PowerShell to new users.
 
 ## Syntax & Parameters

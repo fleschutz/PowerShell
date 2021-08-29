@@ -1,11 +1,10 @@
 # PowerShell Script play-jingle-bells.ps1
 
-## Synopsis
+## Synopsis & Description
 ```powershell
 play-jingle-bells.ps1
 ```
 
-## Description
 Plays Jingle Bells.
 
 ## Syntax & Parameters

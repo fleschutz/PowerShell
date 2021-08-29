@@ -1,11 +1,10 @@
 # PowerShell Script clear-recycle-bin.ps1
 
-## Synopsis
+## Synopsis & Description
 ```powershell
 clear-recycle-bin.ps1
 ```
 
-## Description
 Removes the content of the recycle bin folder (can not be undo).
 
 ## Syntax & Parameters

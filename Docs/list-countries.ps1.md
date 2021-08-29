@@ -1,6 +1,6 @@
 # PowerShell Script list-countries.ps1
 
-## Synopsis
+## Synopsis & Description
 ```powershell
 list-countries.ps1 
 

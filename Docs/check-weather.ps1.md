@@ -1,11 +1,10 @@
 # PowerShell Script check-weather.ps1
 
-## Synopsis
+## Synopsis & Description
 ```powershell
 check-weather.ps1 [<location>]
 ```
 
-## Description
 Checks the weather for critical values.
 
 ## Syntax & Parameters

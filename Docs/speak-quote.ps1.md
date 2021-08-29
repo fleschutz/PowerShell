@@ -1,11 +1,10 @@
 # PowerShell Script speak-quote.ps1
 
-## Synopsis
+## Synopsis & Description
 ```powershell
 speak-quote.ps1
 ```
 
-## Description
 Speaks a random quote by text-to-speech (TTS).
 
 ## Syntax & Parameters

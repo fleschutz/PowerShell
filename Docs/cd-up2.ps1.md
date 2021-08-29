@@ -1,11 +1,10 @@
 # PowerShell Script cd-up2.ps1
 
-## Synopsis
+## Synopsis & Description
 ```powershell
 cd-up2.ps1
 ```
 
-## Description
 Go two directory levels up.
 
 ## Syntax & Parameters

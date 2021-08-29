@@ -1,11 +1,10 @@
 # PowerShell Script weather.ps1
 
-## Synopsis
+## Synopsis & Description
 ```powershell
 weather.ps1 [<geo-location>]
 ```
 
-## Description
 Prints the current weather forecast.
 
 ## Syntax & Parameters

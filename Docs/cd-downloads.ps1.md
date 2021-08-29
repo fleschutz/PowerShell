@@ -1,11 +1,10 @@
 # PowerShell Script cd-downloads.ps1
 
-## Synopsis
+## Synopsis & Description
 ```powershell
 cd-downloads.ps1
 ```
 
-## Description
 Go to the user's downloads folder.
 
 ## Syntax & Parameters

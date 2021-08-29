@@ -1,11 +1,10 @@
 # PowerShell Script check-swap-space.ps1
 
-## Synopsis
+## Synopsis & Description
 ```powershell
 check-swap-space.ps1 [<min-level>]
 ```
 
-## Description
 Checks the free swap space.
 
 ## Syntax & Parameters

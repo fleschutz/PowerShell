@@ -1,11 +1,10 @@
 # PowerShell Script create-shortcut.ps1
 
-## Synopsis
+## Synopsis & Description
 ```powershell
 create-shortcut.ps1 [<shortcut>] [<target>] [<description>]
 ```
 
-## Description
 Creates a new shortcut file.
 
 ## Syntax & Parameters

@@ -1,11 +1,10 @@
 # PowerShell Script list-processes.ps1
 
-## Synopsis
+## Synopsis & Description
 ```powershell
 list-processes.ps1
 ```
 
-## Description
 Lists all local computer processes.
 
 ## Syntax & Parameters

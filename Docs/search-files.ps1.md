@@ -1,11 +1,10 @@
 # PowerShell Script search-files.ps1
 
-## Synopsis
+## Synopsis & Description
 ```powershell
 search-files.ps1 [<pattern>] [<path>]
 ```
 
-## Description
 Searches for the given pattern in the given files.
 
 ## Syntax & Parameters

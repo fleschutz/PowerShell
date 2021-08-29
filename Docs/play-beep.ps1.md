@@ -1,11 +1,10 @@
 # PowerShell Script play-beep.ps1
 
-## Synopsis
+## Synopsis & Description
 ```powershell
 play-beep.ps1
 ```
 
-## Description
 Plays a short beep sound.
 
 ## Syntax & Parameters

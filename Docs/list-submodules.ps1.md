@@ -1,11 +1,10 @@
 # PowerShell Script list-submodules.ps1
 
-## Synopsis
+## Synopsis & Description
 ```powershell
 list-submodules.ps1 [<repo-dir>]
 ```
 
-## Description
 Lists the submodules of the current/given Git repository.
 
 ## Syntax & Parameters

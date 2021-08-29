@@ -1,11 +1,10 @@
 # PowerShell Script speak-english.ps1
 
-## Synopsis
+## Synopsis & Description
 ```powershell
 speak-english.ps1 [<text>]
 ```
 
-## Description
 Speaks the given text with an English text-to-speech (TTS) voice.
 
 ## Syntax & Parameters

@@ -1,11 +1,10 @@
 # PowerShell Script moon.ps1
 
-## Synopsis
+## Synopsis & Description
 ```powershell
 moon.ps1
 ```
 
-## Description
 Prints the current moon phase.
 
 ## Syntax & Parameters

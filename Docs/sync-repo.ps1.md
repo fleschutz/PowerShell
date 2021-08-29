@@ -1,11 +1,10 @@
 # PowerShell Script sync-repo.ps1
 
-## Synopsis
+## Synopsis & Description
 ```powershell
 sync-repo.ps1 [<repo-dir>]
 ```
 
-## Description
 Synchronizes a Git repository by push & pull (including submodules).
 
 ## Syntax & Parameters

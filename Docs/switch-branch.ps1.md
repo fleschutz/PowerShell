@@ -1,11 +1,10 @@
 # PowerShell Script switch-branch.ps1
 
-## Synopsis
+## Synopsis & Description
 ```powershell
 switch-branch.ps1 [<branch-name>] [<repo-dir>]
 ```
 
-## Description
 Switches the branch in the current/given Git repository (including submodules).
 
 ## Syntax & Parameters

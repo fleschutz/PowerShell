@@ -1,11 +1,10 @@
 # PowerShell Script edit.ps1
 
-## Synopsis
+## Synopsis & Description
 ```powershell
 edit.ps1 <filename>
 ```
 
-## Description
 Opens the built-in text editor to edit the given file.
 
 ## Syntax & Parameters

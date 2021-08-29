@@ -1,11 +1,10 @@
 # PowerShell Script translate-file.ps1
 
-## Synopsis
+## Synopsis & Description
 ```powershell
 translate-file.ps1 [<file>] [<source-lang>] [<target-lang>]
 ```
 
-## Description
 Translates the given text file into another language and prints the result.
 
 ## Syntax & Parameters

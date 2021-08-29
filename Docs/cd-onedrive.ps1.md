@@ -1,11 +1,10 @@
 # PowerShell Script cd-onedrive.ps1
 
-## Synopsis
+## Synopsis & Description
 ```powershell
 cd-onedrive.ps1
 ```
 
-## Description
 Go to the user's OneDrive folder.
 
 ## Syntax & Parameters

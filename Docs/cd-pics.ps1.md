@@ -1,11 +1,10 @@
 # PowerShell Script cd-pics.ps1
 
-## Synopsis
+## Synopsis & Description
 ```powershell
 cd-pics.ps1
 ```
 
-## Description
 Go to the user's pictures folder.
 
 ## Syntax & Parameters

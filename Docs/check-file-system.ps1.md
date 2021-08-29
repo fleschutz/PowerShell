@@ -1,6 +1,6 @@
 # PowerShell Script check-file-system.ps1
 
-## Synopsis
+## Synopsis & Description
 ```powershell
 check-file-system.ps1 [[-Drive] <string>]
 

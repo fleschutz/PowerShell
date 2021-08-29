@@ -1,11 +1,10 @@
 # PowerShell Script simulate-matrix.ps1
 
-## Synopsis
+## Synopsis & Description
 ```powershell
 simulate-matrix.ps1
 ```
 
-## Description
 Simulates the Matrix (fun).
 
 ## Syntax & Parameters

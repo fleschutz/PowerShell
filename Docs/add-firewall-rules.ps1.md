@@ -1,11 +1,10 @@
 # PowerShell Script add-firewall-rules.ps1
 
-## Synopsis
+## Synopsis & Description
 ```powershell
 add-firewall-rules.ps1 [<path-to-executables>]
 ```
 
-## Description
 Adds firewall rules for the given executables (needs administrator rights).
 
 ## Syntax & Parameters

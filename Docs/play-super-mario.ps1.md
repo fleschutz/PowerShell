@@ -1,11 +1,10 @@
 # PowerShell Script play-super-mario.ps1
 
-## Synopsis
+## Synopsis & Description
 ```powershell
 play-super-mario.ps1
 ```
 
-## Description
 Plays the Super Mario intro.
 
 ## Syntax & Parameters

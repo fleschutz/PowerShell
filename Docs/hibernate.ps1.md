@@ -1,6 +1,6 @@
 # PowerShell Script hibernate.ps1
 
-## Synopsis
+## Synopsis & Description
 ```powershell
 hibernate.ps1 
 

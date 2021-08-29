@@ -1,11 +1,10 @@
 # PowerShell Script list-empty-files.ps1
 
-## Synopsis
+## Synopsis & Description
 ```powershell
 list-empty-files.ps1 [<dir-tree>]
 ```
 
-## Description
 Lists empty files within the given directory tree.
 
 ## Syntax & Parameters

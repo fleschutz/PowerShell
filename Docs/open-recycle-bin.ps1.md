@@ -1,11 +1,10 @@
 # PowerShell Script open-recycle-bin.ps1
 
-## Synopsis
+## Synopsis & Description
 ```powershell
 open-recycle-bin.ps1
 ```
 
-## Description
 Starts the File Explorer with the recycle bin folder.
 
 ## Syntax & Parameters

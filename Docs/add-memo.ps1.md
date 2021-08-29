@@ -1,11 +1,10 @@
 # PowerShell Script add-memo.ps1
 
-## Synopsis
+## Synopsis & Description
 ```powershell
 add-memo.ps1 [<text>]
 ```
 
-## Description
 Adds the given memo text to $HOME/Memos.csv.
 
 ## Syntax & Parameters

@@ -1,11 +1,10 @@
 # PowerShell Script play-m3u.ps1
 
-## Synopsis
+## Synopsis & Description
 ```powershell
 play-m3u.ps1 [<playlist-file>]
 ```
 
-## Description
 Plays the given playlist (in .M3U file format).
 
 ## Syntax & Parameters

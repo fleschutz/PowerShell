@@ -1,11 +1,10 @@
 # PowerShell Script write-big.ps1
 
-## Synopsis
+## Synopsis & Description
 ```powershell
 write-big.ps1 [<text>]
 ```
 
-## Description
 Writes the given text in big letters.
 
 ## Syntax & Parameters

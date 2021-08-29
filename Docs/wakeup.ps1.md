@@ -1,11 +1,10 @@
 # PowerShell Script wakeup.ps1
 
-## Synopsis
+## Synopsis & Description
 ```powershell
 wakeup.ps1 [<MAC-address>] [<IP-address>]
 ```
 
-## Description
 Sends a magic packet to the given computer to wake him up.
 
 ## Syntax & Parameters

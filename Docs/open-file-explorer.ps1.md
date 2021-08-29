@@ -1,11 +1,10 @@
 # PowerShell Script open-file-explorer.ps1
 
-## Synopsis
+## Synopsis & Description
 ```powershell
 open-file-explorer.ps1
 ```
 
-## Description
 Starts the File Explorer.
 
 ## Syntax & Parameters

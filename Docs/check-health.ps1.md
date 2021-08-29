@@ -1,11 +1,10 @@
 # PowerShell Script check-health.ps1
 
-## Synopsis
+## Synopsis & Description
 ```powershell
 check-health.ps1
 ```
 
-## Description
 Checks the health of the local computer
 
 ## Syntax & Parameters

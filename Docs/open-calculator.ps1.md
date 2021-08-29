@@ -1,11 +1,10 @@
 # PowerShell Script open-calculator.ps1
 
-## Synopsis
+## Synopsis & Description
 ```powershell
 open-calculator.ps1
 ```
 
-## Description
 Starts the calculator program.
 
 ## Syntax & Parameters

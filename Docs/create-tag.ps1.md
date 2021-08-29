@@ -1,11 +1,10 @@
 # PowerShell Script create-tag.ps1
 
-## Synopsis
+## Synopsis & Description
 ```powershell
 create-tag.ps1 [<new-tag-name>] [<repo-dir>]
 ```
 
-## Description
 Creates a new tag in a Git repository.
 
 ## Syntax & Parameters

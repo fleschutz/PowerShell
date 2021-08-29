@@ -1,11 +1,10 @@
 # PowerShell Script locate-ipaddress.ps1
 
-## Synopsis
+## Synopsis & Description
 ```powershell
 locate-ipaddress.ps1 [<IPaddress>]
 ```
 
-## Description
 Prints the geographic location of the given IP address.
 
 ## Syntax & Parameters

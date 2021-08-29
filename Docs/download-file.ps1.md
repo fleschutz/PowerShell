@@ -1,11 +1,10 @@
 # PowerShell Script download-file.ps1
 
-## Synopsis
+## Synopsis & Description
 ```powershell
 download-file.ps1 [<URL>]
 ```
 
-## Description
 Downloads a file from the given URL.
 
 ## Syntax & Parameters

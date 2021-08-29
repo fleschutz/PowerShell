@@ -1,11 +1,10 @@
 # PowerShell Script write-red.ps1
 
-## Synopsis
+## Synopsis & Description
 ```powershell
 write-red.ps1 [<text>]
 ```
 
-## Description
 Writes the given text in a red foreground color.
 
 ## Syntax & Parameters

@@ -1,11 +1,10 @@
 # PowerShell Script list-branches.ps1
 
-## Synopsis
+## Synopsis & Description
 ```powershell
 list-branches.ps1 [<repo-dir>] [<pattern>]
 ```
 
-## Description
 Lists all branches in the current/given Git repository.
 
 ## Syntax & Parameters

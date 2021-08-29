@@ -1,11 +1,10 @@
 # PowerShell Script scan-ports.ps1
 
-## Synopsis
+## Synopsis & Description
 ```powershell
 scan-ports.ps1
 ```
 
-## Description
 Scans the network for open/closed ports.
 
 ## Syntax & Parameters

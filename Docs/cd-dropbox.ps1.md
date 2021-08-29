@@ -1,11 +1,10 @@
 # PowerShell Script cd-dropbox.ps1
 
-## Synopsis
+## Synopsis & Description
 ```powershell
 cd-dropbox.ps1
 ```
 
-## Description
 Go to the user's Dropbox folder.
 
 ## Syntax & Parameters

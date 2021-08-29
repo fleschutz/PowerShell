@@ -1,11 +1,10 @@
 # PowerShell Script list-exchange-rates.ps1
 
-## Synopsis
+## Synopsis & Description
 ```powershell
 list-exchange-rates.ps1 [<currency>]
 ```
 
-## Description
 Lists the current exchange rates for the given currency (USD per default).
 
 ## Syntax & Parameters

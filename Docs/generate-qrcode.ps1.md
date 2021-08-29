@@ -1,11 +1,10 @@
 # PowerShell Script generate-qrcode.ps1
 
-## Synopsis
+## Synopsis & Description
 ```powershell
 generate-qrcode.ps1 [<text>] [<image-size>]
 ```
 
-## Description
 Generates a QR code image file.
 
 ## Syntax & Parameters

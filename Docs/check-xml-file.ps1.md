@@ -1,11 +1,10 @@
 # PowerShell Script check-xml-file.ps1
 
-## Synopsis
+## Synopsis & Description
 ```powershell
 check-xml-file [<file>]
 ```
 
-## Description
 Checks the given XML file for validity.
 
 ## Syntax & Parameters

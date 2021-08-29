@@ -1,11 +1,10 @@
 # PowerShell Script list-environment-variables.ps1
 
-## Synopsis
+## Synopsis & Description
 ```powershell
 list-environment-variables.ps1
 ```
 
-## Description
 Lists all environment variables.
 
 ## Syntax & Parameters

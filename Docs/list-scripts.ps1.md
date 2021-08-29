@@ -1,6 +1,6 @@
 # PowerShell Script list-scripts.ps1
 
-## Synopsis
+## Synopsis & Description
 ```powershell
 list-scripts.ps1 
 

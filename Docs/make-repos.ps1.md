@@ -1,11 +1,10 @@
 # PowerShell Script make-repos.ps1
 
-## Synopsis
+## Synopsis & Description
 ```powershell
 make-repos.ps1 [<parent-dir>]
 ```
 
-## Description
 Builds all Git repositories under the current/given directory.
 
 ## Syntax & Parameters

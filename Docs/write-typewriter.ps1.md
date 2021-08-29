@@ -1,11 +1,10 @@
 # PowerShell Script write-typewriter.ps1
 
-## Synopsis
+## Synopsis & Description
 ```powershell
 write-typewriter.ps1 [<text>] [<speed>]
 ```
 
-## Description
 Writes the given text with the typewriter effect.
 
 ## Syntax & Parameters

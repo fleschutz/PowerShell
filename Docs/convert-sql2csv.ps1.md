@@ -1,11 +1,10 @@
 # PowerShell Script convert-sql2csv.ps1
 
-## Synopsis
+## Synopsis & Description
 ```powershell
 convert-sql2csv.ps1 [<server>] [<database>] [<username>] [<password>] [<query>]
 ```
 
-## Description
 Converts a SQL database table to a .CSV file.
 
 ## Syntax & Parameters

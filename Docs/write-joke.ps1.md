@@ -1,11 +1,10 @@
 # PowerShell Script write-joke.ps1
 
-## Synopsis
+## Synopsis & Description
 ```powershell
 write-joke.ps1
 ```
 
-## Description
 Writes a random Juck Norris joke to the console.
 
 ## Syntax & Parameters

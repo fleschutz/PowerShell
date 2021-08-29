@@ -1,11 +1,10 @@
 # PowerShell Script list-modules.ps1
 
-## Synopsis
+## Synopsis & Description
 ```powershell
 list-modules.ps1
 ```
 
-## Description
 Lists all PowerShell modules.
 
 ## Syntax & Parameters

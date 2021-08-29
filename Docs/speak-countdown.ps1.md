@@ -1,11 +1,10 @@
 # PowerShell Script speak-countdown.ps1
 
-## Synopsis
+## Synopsis & Description
 ```powershell
 speak-countdown.ps1 [start-number]
 ```
 
-## Description
 Speaks a countdown by text-to-speech (TTS).
 
 ## Syntax & Parameters

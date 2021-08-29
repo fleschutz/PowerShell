@@ -1,11 +1,10 @@
 # PowerShell Script cd-scripts.ps1
 
-## Synopsis
+## Synopsis & Description
 ```powershell
 cd-scripts.ps1
 ```
 
-## Description
 Go to the PowerShell Scripts folder.
 
 ## Syntax & Parameters

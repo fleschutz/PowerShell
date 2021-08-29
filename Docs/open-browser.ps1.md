@@ -1,11 +1,10 @@
 # PowerShell Script open-browser.ps1
 
-## Synopsis
+## Synopsis & Description
 ```powershell
 open-browser.ps1 [<URL>]
 ```
 
-## Description
 Opens the default Web browser, optional with given URL.
 
 ## Syntax & Parameters

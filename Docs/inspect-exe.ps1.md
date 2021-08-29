@@ -1,11 +1,10 @@
 # PowerShell Script inspect-exe.ps1
 
-## Synopsis
+## Synopsis & Description
 ```powershell
 inspect-exe.ps1 [<path-to-exe-file>]
 ```
 
-## Description
 Prints basic information of the given executable file.
 
 ## Syntax & Parameters

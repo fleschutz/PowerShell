@@ -1,11 +1,10 @@
 # PowerShell Script cd-desktop.ps1
 
-## Synopsis
+## Synopsis & Description
 ```powershell
 cd-desktop.ps1
 ```
 
-## Description
 Go to the user's desktop folder.
 
 ## Syntax & Parameters

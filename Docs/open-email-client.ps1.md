@@ -1,11 +1,10 @@
 # PowerShell Script open-email-client.ps1
 
-## Synopsis
+## Synopsis & Description
 ```powershell
 open-email-client.ps1
 ```
 
-## Description
 Starts the default email client.
 
 ## Syntax & Parameters

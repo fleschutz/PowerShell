@@ -1,6 +1,6 @@
 # PowerShell Script list-tiobe-index.ps1
 
-## Synopsis
+## Synopsis & Description
 ```powershell
 list-tiobe-index.ps1 
 

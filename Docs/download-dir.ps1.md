@@ -1,11 +1,10 @@
 # PowerShell Script download-dir.ps1
 
-## Synopsis
+## Synopsis & Description
 ```powershell
 download-dir.ps1 [<URL>]
 ```
 
-## Description
 Downloads a directory tree from the given URL.
 
 ## Syntax & Parameters

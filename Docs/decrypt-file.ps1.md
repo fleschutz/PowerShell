@@ -1,11 +1,10 @@
 # PowerShell Script decrypt-file.ps1
 
-## Synopsis
+## Synopsis & Description
 ```powershell
 decrypt-file.ps1 [<path>] [<password>]
 ```
 
-## Description
 Decrypts the given file.
 
 ## Syntax & Parameters

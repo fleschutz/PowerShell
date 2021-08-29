@@ -1,11 +1,10 @@
 # PowerShell Script speak-time.ps1
 
-## Synopsis
+## Synopsis & Description
 ```powershell
 speak-time.ps1
 ```
 
-## Description
 Speaks the current time by text-to-speech (TTS).
 
 ## Syntax & Parameters

@@ -1,11 +1,10 @@
 # PowerShell Script cherry-picker.ps1
 
-## Synopsis
+## Synopsis & Description
 ```powershell
 cherry-picker.ps1 [<commit-id>] [<commit-message>] [<branches>] [<repo-dir>]
 ```
 
-## Description
 Cherry-picks a Git commit into one or more branches (branch names need to be separated by spaces).
 NOTE: in case of merge conflicts the script stops immediately!
 

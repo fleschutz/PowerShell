@@ -1,6 +1,6 @@
 # PowerShell Script list-voices.ps1
 
-## Synopsis
+## Synopsis & Description
 ```powershell
 list-voices.ps1 
 

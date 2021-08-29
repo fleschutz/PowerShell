@@ -1,6 +1,6 @@
 # PowerShell Script create-symlink.ps1
 
-## Synopsis
+## Synopsis & Description
 ```powershell
 
 ```

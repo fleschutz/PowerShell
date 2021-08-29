@@ -1,11 +1,10 @@
 # PowerShell Script set-profile.ps1
 
-## Synopsis
+## Synopsis & Description
 ```powershell
 set-profile.ps1
 ```
 
-## Description
 Sets the PowerShell profile for the current user.
 
 ## Syntax & Parameters

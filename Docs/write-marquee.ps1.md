@@ -1,11 +1,10 @@
 # PowerShell Script write-marquee.ps1
 
-## Synopsis
+## Synopsis & Description
 ```powershell
 write-marquee.ps1 [<text>] [<speed>]
 ```
 
-## Description
 Writes the given text as marquee.
 
 ## Syntax & Parameters

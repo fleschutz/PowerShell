@@ -1,6 +1,6 @@
 # PowerShell Script write-chart.ps1
 
-## Synopsis
+## Synopsis & Description
 ```powershell
 write-chart.ps1 
 

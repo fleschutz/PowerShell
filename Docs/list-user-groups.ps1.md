@@ -1,11 +1,10 @@
 # PowerShell Script list-user-groups.ps1
 
-## Synopsis
+## Synopsis & Description
 ```powershell
 list-user-groups.ps1
 ```
 
-## Description
 Lists the user groups on the local computer.
 
 ## Syntax & Parameters

@@ -1,11 +1,10 @@
 # PowerShell Script check-symlinks.ps1
 
-## Synopsis
+## Synopsis & Description
 ```powershell
 check-symlinks.ps1 [<dir-tree>]
 ```
 
-## Description
 Checks every symlink in the given directory tree.
 
 ## Syntax & Parameters

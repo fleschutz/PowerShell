@@ -1,11 +1,10 @@
 # PowerShell Script play-files.ps1
 
-## Synopsis
+## Synopsis & Description
 ```powershell
 play-files.ps1 [<pattern>]
 ```
 
-## Description
 Plays the given audio files (supporting MP3 and WAV format).
 
 ## Syntax & Parameters

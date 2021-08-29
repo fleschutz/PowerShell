@@ -1,11 +1,10 @@
 # PowerShell Script list-passwords.ps1
 
-## Synopsis
+## Synopsis & Description
 ```powershell
 list-passwords.ps1 [<password-length>] [<columns>] [<rows>]
 ```
 
-## Description
 Prints a list of random passwords.
 
 ## Syntax & Parameters

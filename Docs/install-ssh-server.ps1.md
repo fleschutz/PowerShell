@@ -1,6 +1,6 @@
 # PowerShell Script install-ssh-server.ps1
 
-## Synopsis
+## Synopsis & Description
 ```powershell
 install-ssh-server.ps1 
 

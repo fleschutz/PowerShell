@@ -1,11 +1,10 @@
 # PowerShell Script write-animated.ps1
 
-## Synopsis
+## Synopsis & Description
 ```powershell
 write-animated.ps1 [<line1>] .. [line9>] [<speed>]
 ```
 
-## Description
 Writes animated text.
 
 ## Syntax & Parameters

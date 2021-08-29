@@ -1,11 +1,10 @@
 # PowerShell Script check-dns-resolution.ps1
 
-## Synopsis
+## Synopsis & Description
 ```powershell
 check-dns-resolution.ps1
 ```
 
-## Description
 Checks the DNS resolution with frequently used domain names.
 
 ## Syntax & Parameters

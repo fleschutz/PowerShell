@@ -1,11 +1,10 @@
 # PowerShell Script take-screenshot.ps1
 
-## Synopsis
+## Synopsis & Description
 ```powershell
 take-screenshot.ps1 [<directory>]
 ```
 
-## Description
 Takes a single screenshot and saves it into the current/given directory.
 
 ## Syntax & Parameters

@@ -1,11 +1,10 @@
 # PowerShell Script cd-root.ps1
 
-## Synopsis
+## Synopsis & Description
 ```powershell
 cd-root.ps1
 ```
 
-## Description
 Go to the root directory (C:\ on Windows).
 
 ## Syntax & Parameters

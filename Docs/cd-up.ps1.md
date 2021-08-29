@@ -1,11 +1,10 @@
 # PowerShell Script cd-up.ps1
 
-## Synopsis
+## Synopsis & Description
 ```powershell
 cd-up.ps1
 ```
 
-## Description
 Go one directory level up.
 
 ## Syntax & Parameters

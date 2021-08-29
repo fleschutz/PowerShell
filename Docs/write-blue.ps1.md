@@ -1,11 +1,10 @@
 # PowerShell Script write-blue.ps1
 
-## Synopsis
+## Synopsis & Description
 ```powershell
 write-blue.ps1 [<text>]
 ```
 
-## Description
 Writes the given text in a blue foreground color.
 
 ## Syntax & Parameters

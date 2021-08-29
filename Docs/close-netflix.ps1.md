@@ -1,11 +1,10 @@
 # PowerShell Script close-netflix.ps1
 
-## Synopsis
+## Synopsis & Description
 ```powershell
 close-netflix.ps1
 ```
 
-## Description
 Closes the Netflix program gracefully.
 
 ## Syntax & Parameters

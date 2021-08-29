@@ -1,11 +1,10 @@
 # PowerShell Script clone-repos.ps1
 
-## Synopsis
+## Synopsis & Description
 ```powershell
 clone-repos.ps1 [<parent-dir>]
 ```
 
-## Description
 Clones well-known Git repositories under the current/given directory.
 
 ## Syntax & Parameters

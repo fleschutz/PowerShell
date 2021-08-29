@@ -59,7 +59,7 @@ try {
 	"# PowerShell Script $scriptName"
 
 	""
-	"## Synopsis"
+	"## Synopsis & Description"
 	"``````powershell"
 	"$($full.Synopsis)"
 	"``````"
@@ -67,7 +67,6 @@ try {
 	$Description = ($full.description | Out-String).Trim()
 	if ($Description -ne "") {
 		""
-		"## Description"
 		"$Description"
 	}
 

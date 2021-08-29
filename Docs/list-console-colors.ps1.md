@@ -1,11 +1,10 @@
 # PowerShell Script list-console-colors.ps1
 
-## Synopsis
+## Synopsis & Description
 ```powershell
 list-console-colors.ps1
 ```
 
-## Description
 Lists all console colors.
 
 ## Syntax & Parameters

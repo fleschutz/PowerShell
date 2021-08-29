@@ -1,11 +1,10 @@
 # PowerShell Script check-ipv4-address.ps1
 
-## Synopsis
+## Synopsis & Description
 ```powershell
 check-ipv4-address.ps1 [<address>]
 ```
 
-## Description
 Checks the given IPv4 address for validity.
 
 ## Syntax & Parameters

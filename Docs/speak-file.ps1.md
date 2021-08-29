@@ -1,11 +1,10 @@
 # PowerShell Script speak-file.ps1
 
-## Synopsis
+## Synopsis & Description
 ```powershell
 speak-file.ps1 [<file>]
 ```
 
-## Description
 Speaks the content of the given text file by text-to-speech (TTS).
 
 ## Syntax & Parameters

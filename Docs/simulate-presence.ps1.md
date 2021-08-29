@@ -1,11 +1,10 @@
 # PowerShell Script simulate-presence.ps1
 
-## Synopsis
+## Synopsis & Description
 ```powershell
 simulate-presence.ps1 [<IP-address>]
 ```
 
-## Description
 Simulates the human presence against burglars.
 
 ## Syntax & Parameters

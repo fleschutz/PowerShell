@@ -1,11 +1,10 @@
 # PowerShell Script zip-dir.ps1
 
-## Synopsis
+## Synopsis & Description
 ```powershell
 zip-dir.ps1 [<directory>]
 ```
 
-## Description
 Creates a .zip archive of the given directory.
 
 ## Syntax & Parameters

@@ -1,11 +1,10 @@
 # PowerShell Script check-cpu-temp.ps1
 
-## Synopsis
+## Synopsis & Description
 ```powershell
 check-cpu-temp.ps1
 ```
 
-## Description
 Checks the CPU temperature.
 
 ## Syntax & Parameters

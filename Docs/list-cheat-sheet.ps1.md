@@ -1,11 +1,10 @@
 # PowerShell Script list-cheat-sheet.ps1
 
-## Synopsis
+## Synopsis & Description
 ```powershell
 list-cheat-sheet.ps1
 ```
 
-## Description
 Lists the PowerShell cheat sheet.
 
 ## Syntax & Parameters

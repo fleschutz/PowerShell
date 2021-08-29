@@ -1,11 +1,10 @@
 # PowerShell Script list-city-weather.ps1
 
-## Synopsis
+## Synopsis & Description
 ```powershell
 list-city-weather.ps1
 ```
 
-## Description
 List the current weather of cities world-wide (west to east).
 
 ## Syntax & Parameters

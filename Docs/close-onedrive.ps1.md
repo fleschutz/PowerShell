@@ -1,11 +1,10 @@
 # PowerShell Script close-onedrive.ps1
 
-## Synopsis
+## Synopsis & Description
 ```powershell
 close-onedrive.ps1
 ```
 
-## Description
 Closes Microsoft OneDrive gracefully.
 
 ## Syntax & Parameters

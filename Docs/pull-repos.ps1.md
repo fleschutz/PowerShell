@@ -1,11 +1,10 @@
 # PowerShell Script pull-repos.ps1
 
-## Synopsis
+## Synopsis & Description
 ```powershell
 pull-repos.ps1 [<parent-dir>]
 ```
 
-## Description
 Pulls updates for all Git repositories under the current/given directory (including submodules).
 
 ## Syntax & Parameters

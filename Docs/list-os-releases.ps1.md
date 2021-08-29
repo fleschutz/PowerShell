@@ -1,11 +1,10 @@
 # PowerShell Script list-os-releases.ps1
 
-## Synopsis
+## Synopsis & Description
 ```powershell
 list-os-releases.ps1
 ```
 
-## Description
 Lists OS releases and download URL.
 
 ## Syntax & Parameters

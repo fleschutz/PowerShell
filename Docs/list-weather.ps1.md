@@ -1,11 +1,10 @@
 # PowerShell Script list-weather.ps1
 
-## Synopsis
+## Synopsis & Description
 ```powershell
 list-weather.ps1 [<location>]
 ```
 
-## Description
 Lists the hourly weather.
 
 ## Syntax & Parameters

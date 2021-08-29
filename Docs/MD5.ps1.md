@@ -1,6 +1,6 @@
 # PowerShell Script MD5.ps1
 
-## Synopsis
+## Synopsis & Description
 ```powershell
 
 ```

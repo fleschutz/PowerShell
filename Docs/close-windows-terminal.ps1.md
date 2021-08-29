@@ -1,11 +1,10 @@
 # PowerShell Script close-windows-terminal.ps1
 
-## Synopsis
+## Synopsis & Description
 ```powershell
 close-windows-terminal.ps1
 ```
 
-## Description
 Closes Windows Terminal gracefully.
 
 ## Syntax & Parameters

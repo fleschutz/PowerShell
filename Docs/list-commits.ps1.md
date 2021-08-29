@@ -1,11 +1,10 @@
 # PowerShell Script list-commits.ps1
 
-## Synopsis
+## Synopsis & Description
 ```powershell
 list-commits.ps1 [<repo-dir>] [<format>]
 ```
 
-## Description
 Lists all commits in the current/given Git repository.
 
 ## Syntax & Parameters

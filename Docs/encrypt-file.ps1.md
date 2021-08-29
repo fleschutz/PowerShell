@@ -1,11 +1,10 @@
 # PowerShell Script encrypt-file.ps1
 
-## Synopsis
+## Synopsis & Description
 ```powershell
 encrypt-file.ps1 [<path>] [<password>]
 ```
 
-## Description
 Encrypts the given file.
 
 ## Syntax & Parameters

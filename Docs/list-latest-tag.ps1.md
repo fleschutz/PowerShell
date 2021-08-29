@@ -1,11 +1,10 @@
 # PowerShell Script list-latest-tag.ps1
 
-## Synopsis
+## Synopsis & Description
 ```powershell
 list-latest-tag.ps1 [<repo-dir>]
 ```
 
-## Description
 Lists the latest tag on the current branch in a Git repository.
 
 ## Syntax & Parameters

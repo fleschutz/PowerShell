@@ -1,11 +1,10 @@
 # PowerShell Script create-branch.ps1
 
-## Synopsis
+## Synopsis & Description
 ```powershell
 create-branch.ps1 [<new-branch-name>] [<repo-dir>]
 ```
 
-## Description
 Creates and switches to a new branch in a Git repository.
 
 ## Syntax & Parameters

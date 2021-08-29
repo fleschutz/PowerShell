@@ -1,11 +1,10 @@
 # PowerShell Script close-program.ps1
 
-## Synopsis
+## Synopsis & Description
 ```powershell
 close-program.ps1 [<full-program-name>] [<program-name>] [<program-alias-name>]
 ```
 
-## Description
 Closes the processes of the given program gracefully.
 
 ## Syntax & Parameters

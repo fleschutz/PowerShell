@@ -1,11 +1,10 @@
 # PowerShell Script clean-repo.ps1
 
-## Synopsis
+## Synopsis & Description
 ```powershell
 clean-repo.ps1 [<repo-dir>]
 ```
 
-## Description
 Cleans a Git repository from untracked files (including submodules, e.g. for a fresh build).
 
 ## Syntax & Parameters

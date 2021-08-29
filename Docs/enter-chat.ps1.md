@@ -1,11 +1,10 @@
 # PowerShell Script enter-chat.ps1
 
-## Synopsis
+## Synopsis & Description
 ```powershell
 enter-chat.ps1
 ```
 
-## Description
 Enters a chat using a common network shared file.
 
 ## Syntax & Parameters

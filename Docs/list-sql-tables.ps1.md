@@ -1,11 +1,10 @@
 # PowerShell Script list-sql-tables.ps1
 
-## Synopsis
+## Synopsis & Description
 ```powershell
 list-sql-tables.ps1
 ```
 
-## Description
 Lists all tables in a SQL server database and exports the list as CSV.
 Install-Module InvokeQuery
 Run the above command if you do not have this module.

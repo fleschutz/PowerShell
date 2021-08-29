@@ -1,11 +1,10 @@
 # PowerShell Script translate-text.ps1
 
-## Synopsis
+## Synopsis & Description
 ```powershell
 translate-text.ps1 [<text>] [<source-lang>] [<target-lang>]
 ```
 
-## Description
 Translates the given text into other languages.
 
 ## Syntax & Parameters

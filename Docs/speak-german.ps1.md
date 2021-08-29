@@ -1,11 +1,10 @@
 # PowerShell Script speak-german.ps1
 
-## Synopsis
+## Synopsis & Description
 ```powershell
 speak-german.ps1 [<text>]
 ```
 
-## Description
 Speaks the given text with a German text-to-speech (TTS) voice.
 
 ## Syntax & Parameters

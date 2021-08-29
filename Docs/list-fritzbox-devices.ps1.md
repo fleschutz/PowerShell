@@ -1,6 +1,6 @@
 # PowerShell Script list-fritzbox-devices.ps1
 
-## Synopsis
+## Synopsis & Description
 ```powershell
 list-fritzbox-devices.ps1 [[-Username] <string>] [[-Password] <string>]
 

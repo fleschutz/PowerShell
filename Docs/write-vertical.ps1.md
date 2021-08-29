@@ -1,11 +1,10 @@
 # PowerShell Script write-vertical.ps1
 
-## Synopsis
+## Synopsis & Description
 ```powershell
 write-vertical.ps1 [<text>]
 ```
 
-## Description
 Writes the given text in vertical direction.
 
 ## Syntax & Parameters

@@ -1,11 +1,10 @@
 # PowerShell Script list-recycle-bin.ps1
 
-## Synopsis
+## Synopsis & Description
 ```powershell
 list-recycle-bin.ps1
 ```
 
-## Description
 Lists the content of the recycle bin folder.
 
 ## Syntax & Parameters

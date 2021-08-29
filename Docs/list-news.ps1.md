@@ -1,11 +1,10 @@
 # PowerShell Script list-news.ps1
 
-## Synopsis
+## Synopsis & Description
 ```powershell
 list-news.ps1 [<RSS-URL>] [<max-count>]
 ```
 
-## Description
 Lists the latest news.
 
 ## Syntax & Parameters

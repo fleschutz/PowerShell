@@ -1,6 +1,6 @@
 # PowerShell Script query-smart-data.ps1
 
-## Synopsis
+## Synopsis & Description
 ```powershell
 query-smart-data.ps1 [[-Directory] <string>]
 

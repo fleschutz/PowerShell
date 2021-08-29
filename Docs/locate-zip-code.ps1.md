@@ -1,11 +1,10 @@
 # PowerShell Script locate-zip-code.ps1
 
-## Synopsis
+## Synopsis & Description
 ```powershell
 locate-zip-code.ps1 [<country-code>] [<zip-code>]
 ```
 
-## Description
 Prints the geographic location of the given zip-code.
 
 ## Syntax & Parameters

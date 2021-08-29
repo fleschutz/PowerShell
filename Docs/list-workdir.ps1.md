@@ -1,11 +1,10 @@
 # PowerShell Script list-workdir.ps1
 
-## Synopsis
+## Synopsis & Description
 ```powershell
 list-workdir.ps1
 ```
 
-## Description
 Lists the current working directory.
 
 ## Syntax & Parameters

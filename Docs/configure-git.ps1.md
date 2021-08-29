@@ -1,11 +1,10 @@
 # PowerShell Script configure-git.ps1
 
-## Synopsis
+## Synopsis & Description
 ```powershell
 configure-git.ps1 [<full-name>] [<email-address>] [<favorite-editor>]
 ```
 
-## Description
 Sets up the Git user configuration.
 
 ## Syntax & Parameters

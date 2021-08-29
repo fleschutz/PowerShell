@@ -1,6 +1,6 @@
 # PowerShell Script template.ps1
 
-## Synopsis
+## Synopsis & Description
 ```powershell
 template.ps1 
 

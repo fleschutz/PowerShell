@@ -1,11 +1,10 @@
 # PowerShell Script mute-audio.ps1
 
-## Synopsis
+## Synopsis & Description
 ```powershell
 mute-audio.ps1
 ```
 
-## Description
 Mutes the audio output.
 
 ## Syntax & Parameters

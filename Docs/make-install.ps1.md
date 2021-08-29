@@ -1,11 +1,10 @@
 # PowerShell Script make-install.ps1
 
-## Synopsis
+## Synopsis & Description
 ```powershell
 make-install.ps1 <build-dir>
 ```
 
-## Description
 Copies newer EXE's + DLL's from the build directory to the installation directory.
 
 ## Syntax & Parameters

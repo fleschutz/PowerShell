@@ -1,11 +1,10 @@
 # PowerShell Script unmute-audio.ps1
 
-## Synopsis
+## Synopsis & Description
 ```powershell
 unmute-audio.ps1
 ```
 
-## Description
 Unmutes the audio output.
 
 ## Syntax & Parameters

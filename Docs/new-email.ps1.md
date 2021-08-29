@@ -1,11 +1,10 @@
 # PowerShell Script new-email.ps1
 
-## Synopsis
+## Synopsis & Description
 ```powershell
 new-email.ps1 [<address>]
 ```
 
-## Description
 Opens the default email client to write a new email.
 
 ## Syntax & Parameters

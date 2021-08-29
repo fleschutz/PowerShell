@@ -1,11 +1,10 @@
 # PowerShell Script list-tags.ps1
 
-## Synopsis
+## Synopsis & Description
 ```powershell
 list-tags.ps1 [<repo-dir>] [<pattern>]
 ```
 
-## Description
 Lists all tags in the current/given Git repository.
 
 ## Syntax & Parameters

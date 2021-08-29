@@ -1,11 +1,10 @@
 # PowerShell Script list-credits.ps1
 
-## Synopsis
+## Synopsis & Description
 ```powershell
 list-credits.ps1
 ```
 
-## Description
 Shows the credits for the PowerShell Scripts.
 
 ## Syntax & Parameters

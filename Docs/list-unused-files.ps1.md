@@ -1,11 +1,10 @@
 # PowerShell Script list-unused-files.ps1
 
-## Synopsis
+## Synopsis & Description
 ```powershell
 list-unused-files.ps1 <dir-tree> <days>
 ```
 
-## Description
 Lists files in the <directory tree> with last access time older than <days>.
 
 ## Syntax & Parameters

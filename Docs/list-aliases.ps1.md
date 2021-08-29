@@ -1,11 +1,10 @@
 # PowerShell Script list-aliases.ps1
 
-## Synopsis
+## Synopsis & Description
 ```powershell
 list-aliases.ps1
 ```
 
-## Description
 Lists all PowerShell aliases.
 
 ## Syntax & Parameters

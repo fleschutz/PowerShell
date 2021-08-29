@@ -1,11 +1,10 @@
 # PowerShell Script list-emojis.ps1
 
-## Synopsis
+## Synopsis & Description
 ```powershell
 list-emojis.ps1
 ```
 
-## Description
 Lists the Emojis of Unicode 13.0.
 
 ## Syntax & Parameters

@@ -1,11 +1,10 @@
 # PowerShell Script weather-report.ps1
 
-## Synopsis
+## Synopsis & Description
 ```powershell
 weather-report.ps1 [<geo-location>]
 ```
 
-## Description
 Prints the local weather report.
 
 ## Syntax & Parameters

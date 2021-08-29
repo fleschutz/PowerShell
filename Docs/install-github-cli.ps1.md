@@ -1,11 +1,10 @@
 # PowerShell Script install-github-cli.ps1
 
-## Synopsis
+## Synopsis & Description
 ```powershell
 install-github-cli.ps1
 ```
 
-## Description
 Installs GitHub CLI.
 
 ## Syntax & Parameters

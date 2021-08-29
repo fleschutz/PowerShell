@@ -1,11 +1,10 @@
 # PowerShell Script list-network-shares.ps1
 
-## Synopsis
+## Synopsis & Description
 ```powershell
 list-network-shares.ps1
 ```
 
-## Description
 Lists the network shares of the local computer.
 
 ## Syntax & Parameters

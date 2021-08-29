@@ -1,11 +1,10 @@
 # PowerShell Script list-dir.ps1
 
-## Synopsis
+## Synopsis & Description
 ```powershell
 list-dir.ps1 [<pattern>]
 ```
 
-## Description
 Lists the directory content formatted in columns.
 
 ## Syntax & Parameters

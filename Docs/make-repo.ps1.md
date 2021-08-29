@@ -1,11 +1,10 @@
 # PowerShell Script make-repo.ps1
 
-## Synopsis
+## Synopsis & Description
 ```powershell
 make-repo.ps1 [<repo-dir>]
 ```
 
-## Description
 Builds a Git repository supporting cmake,configure,autogen,Imakefile,Makefile.
 
 ## Syntax & Parameters

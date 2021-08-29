@@ -1,11 +1,10 @@
 # PowerShell Script list-clipboard.ps1
 
-## Synopsis
+## Synopsis & Description
 ```powershell
 list-clipboard.ps1
 ```
 
-## Description
 Lists the contents of the clipboard.
 
 ## Syntax & Parameters

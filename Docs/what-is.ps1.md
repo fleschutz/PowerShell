@@ -1,11 +1,10 @@
 # PowerShell Script what-is.ps1
 
-## Synopsis
+## Synopsis & Description
 ```powershell
 what-is.ps1 [<abbreviation>]
 ```
 
-## Description
 Prints a description of the given abbreviation.
 
 ## Syntax & Parameters

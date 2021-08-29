@@ -1,11 +1,10 @@
 # PowerShell Script fetch-repo.ps1
 
-## Synopsis
+## Synopsis & Description
 ```powershell
 fetch-repo.ps1 [<repo-dir>]
 ```
 
-## Description
 Fetches updates for a local Git repository (including submodules).
 
 ## Syntax & Parameters

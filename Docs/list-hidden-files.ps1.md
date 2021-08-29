@@ -1,11 +1,10 @@
 # PowerShell Script list-hidden-files.ps1
 
-## Synopsis
+## Synopsis & Description
 ```powershell
 list-hidden-files.ps1 [<dir-tree>]
 ```
 
-## Description
 Lists hidden files within the given directory tree.
 
 ## Syntax & Parameters

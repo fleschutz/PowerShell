@@ -1,11 +1,10 @@
 # PowerShell Script speak-italian.ps1
 
-## Synopsis
+## Synopsis & Description
 ```powershell
 speak-italian.ps1 [<text>]
 ```
 
-## Description
 Speaks the given text with an Italian text-to-speech (TTS) voice.
 
 ## Syntax & Parameters

@@ -1,11 +1,10 @@
 # PowerShell Script start-calibre-server.ps1
 
-## Synopsis
+## Synopsis & Description
 ```powershell
 start-calibre-server.ps1
 ```
 
-## Description
 Starts a local Calibre server as a daemon process.
 
 ## Syntax & Parameters

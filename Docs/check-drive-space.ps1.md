@@ -1,11 +1,10 @@
 # PowerShell Script check-drive-space.ps1
 
-## Synopsis
+## Synopsis & Description
 ```powershell
 check-drive-space.ps1 [<drive>] [<min-level>]
 ```
 
-## Description
 Checks the given drive for free space left.
 
 ## Syntax & Parameters

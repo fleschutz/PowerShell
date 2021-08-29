@@ -1,6 +1,6 @@
 # PowerShell Script poweroff.ps1
 
-## Synopsis
+## Synopsis & Description
 ```powershell
 poweroff.ps1 
 

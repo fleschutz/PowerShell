@@ -1,11 +1,10 @@
 # PowerShell Script close-chrome.ps1
 
-## Synopsis
+## Synopsis & Description
 ```powershell
 close-chrome.ps1
 ```
 
-## Description
 Closes the Web browser Google Chrome gracefully.
 
 ## Syntax & Parameters

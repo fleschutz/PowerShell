@@ -1,11 +1,10 @@
 # PowerShell Script cd-music.ps1
 
-## Synopsis
+## Synopsis & Description
 ```powershell
 cd-music.ps1
 ```
 
-## Description
 Go to the user's music folder.
 
 ## Syntax & Parameters

@@ -1,11 +1,10 @@
 # PowerShell Script smart-data2csv.ps1
 
-## Synopsis
+## Synopsis & Description
 ```powershell
 smart-data2csv.ps1 [<directory>]
 ```
 
-## Description
 Converts the S.M.A.R.T. JSON files in the current/given directory to a CSV table for analysis
        (use query-smart-data.ps1 to generate those JSON files).
 

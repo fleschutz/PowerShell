@@ -1,11 +1,10 @@
 # PowerShell Script cd-up4.ps1
 
-## Synopsis
+## Synopsis & Description
 ```powershell
 cd-up4.ps1
 ```
 
-## Description
 Go four directory levels up.
 
 ## Syntax & Parameters

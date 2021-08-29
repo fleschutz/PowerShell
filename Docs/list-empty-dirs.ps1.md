@@ -1,11 +1,10 @@
 # PowerShell Script list-empty-dirs.ps1
 
-## Synopsis
+## Synopsis & Description
 ```powershell
 list-empty-dirs.ps1 [<dir-tree>]
 ```
 
-## Description
 Lists empty subfolders within the given directory tree.
 
 ## Syntax & Parameters

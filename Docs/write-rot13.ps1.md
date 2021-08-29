@@ -1,11 +1,10 @@
 # PowerShell Script write-rot13.ps1
 
-## Synopsis
+## Synopsis & Description
 ```powershell
 write-rot13.ps1 [<text>]
 ```
 
-## Description
 Prints the given text encoded or decoded with ROT13.
 
 ## Syntax & Parameters

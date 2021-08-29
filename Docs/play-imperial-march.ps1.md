@@ -1,11 +1,10 @@
 # PowerShell Script play-imperial-march.ps1
 
-## Synopsis
+## Synopsis & Description
 ```powershell
 play-imperial-march.ps1
 ```
 
-## Description
 Plays the Imperial March (Star Wars).
 
 ## Syntax & Parameters

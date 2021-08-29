@@ -1,11 +1,10 @@
 # PowerShell Script open-onedrive.ps1
 
-## Synopsis
+## Synopsis & Description
 ```powershell
 open-onedrive.ps1
 ```
 
-## Description
 Opens the user's OneDrive folder.
 
 ## Syntax & Parameters

@@ -1,11 +1,10 @@
 # PowerShell Script list-files.ps1
 
-## Synopsis
+## Synopsis & Description
 ```powershell
 list-files.ps1 [<dir-tree>]
 ```
 
-## Description
 Lists all files in the given directory tree.
 
 ## Syntax & Parameters

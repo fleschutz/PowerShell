@@ -1,6 +1,6 @@
 # PowerShell Script install-wsl.ps1
 
-## Synopsis
+## Synopsis & Description
 ```powershell
 install-wsl.ps1 
 

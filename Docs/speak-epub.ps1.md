@@ -1,11 +1,10 @@
 # PowerShell Script speak-epub.ps1
 
-## Synopsis
+## Synopsis & Description
 ```powershell
 speak-epub.ps1 [<filename>]
 ```
 
-## Description
 Speaks the content of the given Epub file by text-to-speech (TTS).
 
 ## Syntax & Parameters

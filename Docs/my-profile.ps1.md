@@ -1,6 +1,6 @@
 # PowerShell Script my-profile.ps1
 
-## Synopsis
+## Synopsis & Description
 ```powershell
 my-profile.ps1 
 

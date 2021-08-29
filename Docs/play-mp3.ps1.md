@@ -1,11 +1,10 @@
 # PowerShell Script play-mp3.ps1
 
-## Synopsis
+## Synopsis & Description
 ```powershell
 play-mp3.ps1 [<MP3-file>]
 ```
 
-## Description
 Plays the given sound file (MP3 file format).
 
 ## Syntax & Parameters

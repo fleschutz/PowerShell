@@ -1,11 +1,10 @@
 # PowerShell Script switch-shelly1.ps1
 
-## Synopsis
+## Synopsis & Description
 ```powershell
 switch-shelly1.ps1 [<host>] [<turn-mode>] [<timer>]
 ```
 
-## Description
 Switches a Shelly1 device in the local network.
 
 ## Syntax & Parameters

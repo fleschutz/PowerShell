@@ -1,11 +1,10 @@
 # PowerShell Script close-cortana.ps1
 
-## Synopsis
+## Synopsis & Description
 ```powershell
 close-cortana.ps1
 ```
 
-## Description
 Closes Cortana gracefully.
 
 ## Syntax & Parameters

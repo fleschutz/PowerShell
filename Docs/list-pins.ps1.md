@@ -1,11 +1,10 @@
 # PowerShell Script list-pins.ps1
 
-## Synopsis
+## Synopsis & Description
 ```powershell
 list-pins.ps1 [<pin-length>] [<columns>] [<rows>]
 ```
 
-## Description
 Prints a list of random PIN's.
 
 ## Syntax & Parameters

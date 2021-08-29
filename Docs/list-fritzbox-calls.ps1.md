@@ -1,6 +1,6 @@
 # PowerShell Script list-fritzbox-calls.ps1
 
-## Synopsis
+## Synopsis & Description
 ```powershell
 list-fritzbox-calls.ps1 [[-Username] <string>] [[-Password] <string>]
 

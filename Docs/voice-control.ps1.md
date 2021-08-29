@@ -1,11 +1,10 @@
 # PowerShell Script voice-control.ps1
 
-## Synopsis
+## Synopsis & Description
 ```powershell
 voice-control.ps1
 ```
 
-## Description
 Executes all the PowerShell scripts by voice.
 
 ## Syntax & Parameters

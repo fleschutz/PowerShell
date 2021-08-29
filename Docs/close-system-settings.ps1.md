@@ -1,11 +1,10 @@
 # PowerShell Script close-system-settings.ps1
 
-## Synopsis
+## Synopsis & Description
 ```powershell
 close-system-settings.ps1
 ```
 
-## Description
 Closes the System Settings gracefully.
 
 ## Syntax & Parameters

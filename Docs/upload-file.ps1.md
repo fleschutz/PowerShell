@@ -1,11 +1,10 @@
 # PowerShell Script upload-file.ps1
 
-## Synopsis
+## Synopsis & Description
 ```powershell
 upload-file.ps1 [<file>] [<URL>] [<username>] [<password>]
 ```
 
-## Description
 Uploads the local file to the given FTP server.
 
 ## Syntax & Parameters

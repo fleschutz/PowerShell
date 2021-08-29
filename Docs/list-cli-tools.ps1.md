@@ -1,6 +1,6 @@
 # PowerShell Script list-cli-tools.ps1
 
-## Synopsis
+## Synopsis & Description
 ```powershell
 list-cli-tools.ps1 
 

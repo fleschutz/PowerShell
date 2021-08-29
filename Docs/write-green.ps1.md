@@ -1,11 +1,10 @@
 # PowerShell Script write-green.ps1
 
-## Synopsis
+## Synopsis & Description
 ```powershell
 write-green.ps1 [<text>]
 ```
 
-## Description
 Writes the given text in a green foreground color.
 
 ## Syntax & Parameters

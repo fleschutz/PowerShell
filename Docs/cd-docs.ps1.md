@@ -1,11 +1,10 @@
 # PowerShell Script cd-docs.ps1
 
-## Synopsis
+## Synopsis & Description
 ```powershell
 cd-docs.ps1
 ```
 
-## Description
 Go to the user's documents folder.
 
 ## Syntax & Parameters

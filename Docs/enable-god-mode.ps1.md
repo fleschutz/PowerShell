@@ -1,11 +1,10 @@
 # PowerShell Script enable-god-mode.ps1
 
-## Synopsis
+## Synopsis & Description
 ```powershell
 enable-god-mode.ps1
 ```
 
-## Description
 Enables the god mode (adds a new icon to the desktop).
 
 ## Syntax & Parameters

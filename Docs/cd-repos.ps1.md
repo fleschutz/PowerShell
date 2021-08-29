@@ -1,11 +1,10 @@
 # PowerShell Script cd-repos.ps1
 
-## Synopsis
+## Synopsis & Description
 ```powershell
 cd-repos.ps1
 ```
 
-## Description
 Go to the user's Git repositories folder.
 
 ## Syntax & Parameters

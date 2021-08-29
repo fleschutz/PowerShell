@@ -1,11 +1,10 @@
 # PowerShell Script close-calculator.ps1
 
-## Synopsis
+## Synopsis & Description
 ```powershell
 close-calculator.ps1
 ```
 
-## Description
 Closes the calculator program gracefully.
 
 ## Syntax & Parameters

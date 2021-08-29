@@ -1,6 +1,6 @@
 # PowerShell Script check-windows-system-files.ps1
 
-## Synopsis
+## Synopsis & Description
 ```powershell
 check-windows-system-files.ps1 
 

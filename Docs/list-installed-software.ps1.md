@@ -1,11 +1,10 @@
 # PowerShell Script list-installed-software.ps1
 
-## Synopsis
+## Synopsis & Description
 ```powershell
 list-installed-software.ps1
 ```
 
-## Description
 Lists the installed software (except Windows Store apps).
 
 ## Syntax & Parameters

@@ -1,11 +1,10 @@
 # PowerShell Script copy-photos-sorted.ps1
 
-## Synopsis
+## Synopsis & Description
 ```powershell
 copy-photos-sorted.ps1 [<source-dir>] [<target-dir-tree>]
 ```
 
-## Description
 Copies all photos in source-dir sorted by year and month into the target-dir-tree.
 
 ## Syntax & Parameters

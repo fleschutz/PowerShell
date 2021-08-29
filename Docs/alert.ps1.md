@@ -1,11 +1,10 @@
 # PowerShell Script alert.ps1
 
-## Synopsis
+## Synopsis & Description
 ```powershell
 alert.ps1 [<message>]
 ```
 
-## Description
 Handle and escalate the given alert message.
 
 ## Syntax & Parameters

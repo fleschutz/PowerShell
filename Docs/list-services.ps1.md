@@ -1,11 +1,10 @@
 # PowerShell Script list-services.ps1
 
-## Synopsis
+## Synopsis & Description
 ```powershell
 list-services.ps1
 ```
 
-## Description
 Lists the local computer services.
 
 ## Syntax & Parameters

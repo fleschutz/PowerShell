@@ -1,6 +1,6 @@
 # PowerShell Script reboot.ps1
 
-## Synopsis
+## Synopsis & Description
 ```powershell
 reboot.ps1 
 

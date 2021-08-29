@@ -1,11 +1,10 @@
 # PowerShell Script write-motd.ps1
 
-## Synopsis
+## Synopsis & Description
 ```powershell
 write-motd.ps1
 ```
 
-## Description
 Writes the message of the day (MOTD).
 
 ## Syntax & Parameters

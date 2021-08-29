@@ -1,11 +1,10 @@
 # PowerShell Script speak-spanish.ps1
 
-## Synopsis
+## Synopsis & Description
 ```powershell
 speak-spanish.ps1 [<text>]
 ```
 
-## Description
 Speaks the given text with a Spanish text-to-speech (TTS) voice.
 
 ## Syntax & Parameters

@@ -1,11 +1,10 @@
 # PowerShell Script publish-to-ipfs.ps1
 
-## Synopsis
+## Synopsis & Description
 ```powershell
 publish-to-ipfs.ps1 [<file(s)/dir>] [<to-hash-list>]
 ```
 
-## Description
 Publishes the given files and folders to IPFS.
 
 ## Syntax & Parameters

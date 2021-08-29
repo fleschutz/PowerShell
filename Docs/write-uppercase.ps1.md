@@ -1,11 +1,10 @@
 # PowerShell Script write-uppercase.ps1
 
-## Synopsis
+## Synopsis & Description
 ```powershell
 write-uppercase.ps1 [<text>]
 ```
 
-## Description
 Writes the given text in uppercase letters.
 
 ## Syntax & Parameters

@@ -1,6 +1,6 @@
 # PowerShell Script set-wallpaper.ps1
 
-## Synopsis
+## Synopsis & Description
 ```powershell
 
 ```

@@ -1,11 +1,10 @@
 # PowerShell Script list-earthquakes.ps1
 
-## Synopsis
+## Synopsis & Description
 ```powershell
 list-earthquakes.ps1
 ```
 
-## Description
 Lists earthquakes with magnitude >= 6.0 for the last 30 days.
 
 ## Syntax & Parameters

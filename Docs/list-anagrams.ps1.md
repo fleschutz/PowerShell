@@ -1,11 +1,10 @@
 # PowerShell Script list-anagrams.ps1
 
-## Synopsis
+## Synopsis & Description
 ```powershell
 list-anagrams.ps1 [<word>] [<columns>]
 ```
 
-## Description
 Lists all anagrams of the given word.
 
 ## Syntax & Parameters

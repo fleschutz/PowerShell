@@ -1,11 +1,10 @@
 # PowerShell Script locate-city.ps1
 
-## Synopsis
+## Synopsis & Description
 ```powershell
 locate-city.ps1 [<city>]
 ```
 
-## Description
 Prints the geographic location of the given city.
 
 ## Syntax & Parameters

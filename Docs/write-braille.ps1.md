@@ -1,11 +1,10 @@
 # PowerShell Script write-braille.ps1
 
-## Synopsis
+## Synopsis & Description
 ```powershell
 write-braille.ps1 [<text>]
 ```
 
-## Description
 Writes the given text in Braille.
 
 ## Syntax & Parameters

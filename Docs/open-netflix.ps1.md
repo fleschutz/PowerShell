@@ -1,11 +1,10 @@
 # PowerShell Script open-netflix.ps1
 
-## Synopsis
+## Synopsis & Description
 ```powershell
 open-netflix.ps1
 ```
 
-## Description
 Starts the Netflix app (needs to be installed).
 
 ## Syntax & Parameters

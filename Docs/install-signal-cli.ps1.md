@@ -1,11 +1,10 @@
 # PowerShell Script install-signal-cli.ps1
 
-## Synopsis
+## Synopsis & Description
 ```powershell
 install-signal-cli.ps1 [<version>]
 ```
 
-## Description
 Installs signal-cli from github.com/AsamK/signal-cli. See the Web page for the correct version number.
 
 ## Syntax & Parameters

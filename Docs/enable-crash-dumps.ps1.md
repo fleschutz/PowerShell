@@ -1,11 +1,10 @@
 # PowerShell Script enable-crash-dumps.ps1
 
-## Synopsis
+## Synopsis & Description
 ```powershell
 enable-crash-dumps.ps1
 ```
 
-## Description
 Enables the writing of crash dumps.
 
 ## Syntax & Parameters

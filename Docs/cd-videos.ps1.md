@@ -1,11 +1,10 @@
 # PowerShell Script cd-videos.ps1
 
-## Synopsis
+## Synopsis & Description
 ```powershell
 cd-videos.ps1
 ```
 
-## Description
 Go to the user's videos folder.
 
 ## Syntax & Parameters

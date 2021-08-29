@@ -1,11 +1,10 @@
 # PowerShell Script list-installed-apps.ps1
 
-## Synopsis
+## Synopsis & Description
 ```powershell
 list-installed-apps.ps1
 ```
 
-## Description
 Lists the installed Windows Store apps.
 
 ## Syntax & Parameters

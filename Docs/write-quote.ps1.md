@@ -1,11 +1,10 @@
 # PowerShell Script write-quote.ps1
 
-## Synopsis
+## Synopsis & Description
 ```powershell
 write-quote.ps1
 ```
 
-## Description
 Writes a random quote to the console.
 
 ## Syntax & Parameters

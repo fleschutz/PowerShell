@@ -1,11 +1,10 @@
 # PowerShell Script list-dir-tree.ps1
 
-## Synopsis
+## Synopsis & Description
 ```powershell
 list-dir-tree.ps1 [<dir-tree>]
 ```
 
-## Description
 Lists the full directory tree.
 
 ## Syntax & Parameters

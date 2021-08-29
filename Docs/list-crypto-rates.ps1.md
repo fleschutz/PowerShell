@@ -1,6 +1,6 @@
 # PowerShell Script list-crypto-rates.ps1
 
-## Synopsis
+## Synopsis & Description
 ```powershell
 list-crypto-rates.ps1 
 

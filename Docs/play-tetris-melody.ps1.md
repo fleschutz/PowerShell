@@ -1,11 +1,10 @@
 # PowerShell Script play-tetris-melody.ps1
 
-## Synopsis
+## Synopsis & Description
 ```powershell
 play-tetris-melody.ps1
 ```
 
-## Description
 Plays the Tetris melody.
 
 ## Syntax & Parameters

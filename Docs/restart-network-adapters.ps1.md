@@ -1,6 +1,6 @@
 # PowerShell Script restart-network-adapters.ps1
 
-## Synopsis
+## Synopsis & Description
 ```powershell
 restart-network-adapters.ps1 
 

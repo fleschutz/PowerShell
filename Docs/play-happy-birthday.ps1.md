@@ -1,11 +1,10 @@
 # PowerShell Script play-happy-birthday.ps1
 
-## Synopsis
+## Synopsis & Description
 ```powershell
 play-happy-birthday.ps1
 ```
 
-## Description
 Plays the Happy Birthday song.
 
 ## Syntax & Parameters

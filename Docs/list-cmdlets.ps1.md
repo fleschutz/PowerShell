@@ -1,11 +1,10 @@
 # PowerShell Script list-cmdlets.ps1
 
-## Synopsis
+## Synopsis & Description
 ```powershell
 list-cmdlets.ps1
 ```
 
-## Description
 Lists all PowerShell cmdlets.
 
 ## Syntax & Parameters

@@ -1,11 +1,10 @@
 # PowerShell Script convert-ps2bat.ps1
 
-## Synopsis
+## Synopsis & Description
 ```powershell
 convert-ps2bat.ps1 [<pattern>]
 ```
 
-## Description
 Converts a PowerShell script to .bat files.
 
 ## Syntax & Parameters

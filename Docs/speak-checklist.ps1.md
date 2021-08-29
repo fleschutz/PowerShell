@@ -1,11 +1,10 @@
 # PowerShell Script speak-checklist.ps1
 
-## Synopsis
+## Synopsis & Description
 ```powershell
 speak-checklist.ps1 [<name>]
 ```
 
-## Description
 Speaks the given checklist by text-to-speech (TTS).
 
 ## Syntax & Parameters

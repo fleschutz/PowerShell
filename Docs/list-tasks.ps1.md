@@ -1,11 +1,10 @@
 # PowerShell Script list-tasks.ps1
 
-## Synopsis
+## Synopsis & Description
 ```powershell
 list-tasks.ps1
 ```
 
-## Description
 Lists all Windows scheduler tasks.
 
 ## Syntax & Parameters

@@ -1,6 +1,6 @@
 # PowerShell Script list-automatic-variables.ps1
 
-## Synopsis
+## Synopsis & Description
 ```powershell
 list-automatic-variables.ps1 
 

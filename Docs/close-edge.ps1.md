@@ -1,11 +1,10 @@
 # PowerShell Script close-edge.ps1
 
-## Synopsis
+## Synopsis & Description
 ```powershell
 close-edge.ps1
 ```
 
-## Description
 Closes the Web browser Microsoft Edge gracefully.
 
 ## Syntax & Parameters

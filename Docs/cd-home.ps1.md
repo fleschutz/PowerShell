@@ -1,11 +1,10 @@
 # PowerShell Script cd-home.ps1
 
-## Synopsis
+## Synopsis & Description
 ```powershell
 cd-home.ps1
 ```
 
-## Description
 Go to the user's home folder.
 
 ## Syntax & Parameters

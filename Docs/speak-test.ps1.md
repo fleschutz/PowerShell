@@ -1,6 +1,6 @@
 # PowerShell Script speak-test.ps1
 
-## Synopsis
+## Synopsis & Description
 ```powershell
 speak-test.ps1 
 

@@ -1,6 +1,6 @@
 # PowerShell Script translate-files.ps1
 
-## Synopsis
+## Synopsis & Description
 ```powershell
 
 ```

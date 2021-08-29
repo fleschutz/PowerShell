@@ -1,11 +1,10 @@
 # PowerShell Script check-ping.ps1
 
-## Synopsis
+## Synopsis & Description
 ```powershell
 check-ping.ps1
 ```
 
-## Description
 Checks the ping latency from the local computer to the internet.
 
 ## Syntax & Parameters

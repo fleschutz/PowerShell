@@ -1,11 +1,10 @@
 # PowerShell Script check-subnet-mask.ps1
 
-## Synopsis
+## Synopsis & Description
 ```powershell
 check-subnet-mask.ps1 [<address>]
 ```
 
-## Description
 Checks the given subnet mask for validity.
 
 ## Syntax & Parameters

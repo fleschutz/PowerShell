@@ -1,11 +1,10 @@
 # PowerShell Script speak-joke.ps1
 
-## Synopsis
+## Synopsis & Description
 ```powershell
 speak-joke.ps1
 ```
 
-## Description
 Speaks a random Chuck Norris joke by text-to-speech (TTS).
 
 ## Syntax & Parameters

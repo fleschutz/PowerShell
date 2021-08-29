@@ -1,11 +1,10 @@
 # PowerShell Script list-timezone.ps1
 
-## Synopsis
+## Synopsis & Description
 ```powershell
 list-timezone.ps1
 ```
 
-## Description
 Lists the details of the current time zone.
 
 ## Syntax & Parameters

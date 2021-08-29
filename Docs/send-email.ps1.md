@@ -1,11 +1,10 @@
 # PowerShell Script send-email.ps1
 
-## Synopsis
+## Synopsis & Description
 ```powershell
 send-email.ps1
 ```
 
-## Description
 Sends an email message.
 
 ## Syntax & Parameters

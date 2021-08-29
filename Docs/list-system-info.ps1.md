@@ -1,11 +1,10 @@
 # PowerShell Script list-system-info.ps1
 
-## Synopsis
+## Synopsis & Description
 ```powershell
 list-system-info.ps1
 ```
 
-## Description
 Lists system information on the local computer.
 
 ## Syntax & Parameters

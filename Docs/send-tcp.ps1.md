@@ -1,11 +1,10 @@
 # PowerShell Script send-tcp.ps1
 
-## Synopsis
+## Synopsis & Description
 ```powershell
 send-tcp.ps1 [<target-IP>] [<target-port>] [<message>]
 ```
 
-## Description
 Sends a TCP message to the given IP address and port.
 
 ## Syntax & Parameters

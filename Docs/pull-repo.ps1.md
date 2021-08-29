@@ -1,11 +1,10 @@
 # PowerShell Script pull-repo.ps1
 
-## Synopsis
+## Synopsis & Description
 ```powershell
 pull-repo.ps1 [<repo-dir>]
 ```
 
-## Description
 Pulls updates for a local Git repository (including submodules).
 
 ## Syntax & Parameters

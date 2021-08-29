@@ -1,6 +1,6 @@
 # PowerShell Script SHA1.ps1
 
-## Synopsis
+## Synopsis & Description
 ```powershell
 
 ```

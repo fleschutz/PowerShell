@@ -1,6 +1,6 @@
 # PowerShell Script cd-recycle-bin.ps1
 
-## Synopsis
+## Synopsis & Description
 ```powershell
 cd-recycle-bin.ps1 
 
