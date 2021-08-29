@@ -8,12 +8,10 @@ list-latest-tag.ps1 [<repo-dir>]
 ## Description
 Lists the latest tag on the current branch in a Git repository.
 
-## Syntax
+## Syntax & Parameters
 ```powershell
 /home/mf/PowerShell/Scripts/list-latest-tag.ps1 [[-RepoDir] <String>] [<CommonParameters>]
 ```
-
-## Parameters
 
 ```
 -RepoDir <String>
@@ -26,10 +24,9 @@ Lists the latest tag on the current branch in a Git repository.
 ```
 
 ```
-<CommonParameters>
+[<CommonParameters>]
     This cmdlet supports the common parameters: Verbose, Debug, ErrorAction, ErrorVariable, WarningAction, 
     WarningVariable, OutBuffer, PipelineVariable, and OutVariable.
-    For more information, see about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 ```
 
 ## Example

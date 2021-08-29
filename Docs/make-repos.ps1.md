@@ -8,12 +8,10 @@ make-repos.ps1 [<parent-dir>]
 ## Description
 Builds all Git repositories under the current/given directory.
 
-## Syntax
+## Syntax & Parameters
 ```powershell
 /home/mf/PowerShell/Scripts/make-repos.ps1 [[-ParentDir] <String>] [<CommonParameters>]
 ```
-
-## Parameters
 
 ```
 -ParentDir <String>
@@ -26,10 +24,9 @@ Builds all Git repositories under the current/given directory.
 ```
 
 ```
-<CommonParameters>
+[<CommonParameters>]
     This cmdlet supports the common parameters: Verbose, Debug, ErrorAction, ErrorVariable, WarningAction, 
     WarningVariable, OutBuffer, PipelineVariable, and OutVariable.
-    For more information, see about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 ```
 
 ## Example

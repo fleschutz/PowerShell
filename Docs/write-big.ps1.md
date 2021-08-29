@@ -8,12 +8,10 @@ write-big.ps1 [<text>]
 ## Description
 Writes the given text in big letters.
 
-## Syntax
+## Syntax & Parameters
 ```powershell
 /home/mf/PowerShell/Scripts/write-big.ps1 [[-Text] <String>] [<CommonParameters>]
 ```
-
-## Parameters
 
 ```
 -Text <String>
@@ -26,10 +24,9 @@ Writes the given text in big letters.
 ```
 
 ```
-<CommonParameters>
+[<CommonParameters>]
     This cmdlet supports the common parameters: Verbose, Debug, ErrorAction, ErrorVariable, WarningAction, 
     WarningVariable, OutBuffer, PipelineVariable, and OutVariable.
-    For more information, see about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 ```
 
 ## Example

@@ -8,12 +8,10 @@ close-program.ps1 [<full-program-name>] [<program-name>] [<program-alias-name>]
 ## Description
 Closes the processes of the given program gracefully.
 
-## Syntax
+## Syntax & Parameters
 ```powershell
 /home/mf/PowerShell/Scripts/close-program.ps1 [[-FullProgramName] <String>] [[-ProgramName] <String>] [[-ProgramAliasName] <String>] [<CommonParameters>]
 ```
-
-## Parameters
 
 ```
 -FullProgramName <String>
@@ -46,10 +44,9 @@ Closes the processes of the given program gracefully.
 ```
 
 ```
-<CommonParameters>
+[<CommonParameters>]
     This cmdlet supports the common parameters: Verbose, Debug, ErrorAction, ErrorVariable, WarningAction, 
     WarningVariable, OutBuffer, PipelineVariable, and OutVariable.
-    For more information, see about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 ```
 
 ## Example

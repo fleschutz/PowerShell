@@ -8,12 +8,10 @@ write-morse-code.ps1 [<text>] [<speed>]
 ## Description
 Writes the given text in Morse code.
 
-## Syntax
+## Syntax & Parameters
 ```powershell
 /home/mf/PowerShell/Scripts/write-morse-code.ps1 [[-Text] <String>] [[-OneTimeUnit] <Int32>] [<CommonParameters>]
 ```
-
-## Parameters
 
 ```
 -Text <String>
@@ -36,10 +34,9 @@ Writes the given text in Morse code.
 ```
 
 ```
-<CommonParameters>
+[<CommonParameters>]
     This cmdlet supports the common parameters: Verbose, Debug, ErrorAction, ErrorVariable, WarningAction, 
     WarningVariable, OutBuffer, PipelineVariable, and OutVariable.
-    For more information, see about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 ```
 
 ## Example

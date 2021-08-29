@@ -8,12 +8,10 @@ list-os-updates.ps1 [<RSS-URL>] [<max-count>]
 ## Description
 Lists the latest operating system updates.
 
-## Syntax
+## Syntax & Parameters
 ```powershell
 /home/mf/PowerShell/Scripts/list-os-updates.ps1 [[-RSS_URL] <String>] [[-MaxCount] <Int32>] [<CommonParameters>]
 ```
-
-## Parameters
 
 ```
 -RSS_URL <String>
@@ -36,10 +34,9 @@ Lists the latest operating system updates.
 ```
 
 ```
-<CommonParameters>
+[<CommonParameters>]
     This cmdlet supports the common parameters: Verbose, Debug, ErrorAction, ErrorVariable, WarningAction, 
     WarningVariable, OutBuffer, PipelineVariable, and OutVariable.
-    For more information, see about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 ```
 
 ## Example

@@ -10,12 +10,10 @@ Lists all tables in a SQL server database and exports the list as CSV.
 Install-Module InvokeQuery
 Run the above command if you do not have this module.
 
-## Syntax
+## Syntax & Parameters
 ```powershell
 /home/mf/PowerShell/Scripts/list-sql-tables.ps1 [-server] <Object> [-database] <Object> [-username] <Object> [-password] <Object> [<CommonParameters>]
 ```
-
-## Parameters
 
 ```
 -server <Object>
@@ -58,10 +56,9 @@ Run the above command if you do not have this module.
 ```
 
 ```
-<CommonParameters>
+[<CommonParameters>]
     This cmdlet supports the common parameters: Verbose, Debug, ErrorAction, ErrorVariable, WarningAction, 
     WarningVariable, OutBuffer, PipelineVariable, and OutVariable.
-    For more information, see about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 ```
 
 ## Example

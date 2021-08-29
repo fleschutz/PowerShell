@@ -8,12 +8,10 @@ turn-volume-down.ps1 [<percent>]
 ## Description
 Turns the audio volume down (-10% by default).
 
-## Syntax
+## Syntax & Parameters
 ```powershell
 /home/mf/PowerShell/Scripts/turn-volume-down.ps1 [[-percent] <Int32>] [<CommonParameters>]
 ```
-
-## Parameters
 
 ```
 -percent <Int32>
@@ -26,10 +24,9 @@ Turns the audio volume down (-10% by default).
 ```
 
 ```
-<CommonParameters>
+[<CommonParameters>]
     This cmdlet supports the common parameters: Verbose, Debug, ErrorAction, ErrorVariable, WarningAction, 
     WarningVariable, OutBuffer, PipelineVariable, and OutVariable.
-    For more information, see about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 ```
 
 ## Example

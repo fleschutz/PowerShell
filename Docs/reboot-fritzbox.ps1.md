@@ -8,12 +8,10 @@ reboot-fritzbox.ps1 [<username>] [<password>]
 ## Description
 Reboots the FRITZ!Box device.
 
-## Syntax
+## Syntax & Parameters
 ```powershell
 /home/mf/PowerShell/Scripts/reboot-fritzbox.ps1 [[-USERNAME] <String>] [[-PASSWORD] <String>] [<CommonParameters>]
 ```
-
-## Parameters
 
 ```
 -USERNAME <String>
@@ -36,10 +34,9 @@ Reboots the FRITZ!Box device.
 ```
 
 ```
-<CommonParameters>
+[<CommonParameters>]
     This cmdlet supports the common parameters: Verbose, Debug, ErrorAction, ErrorVariable, WarningAction, 
     WarningVariable, OutBuffer, PipelineVariable, and OutVariable.
-    For more information, see about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 ```
 
 ## Example

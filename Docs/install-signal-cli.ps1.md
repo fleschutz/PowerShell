@@ -8,12 +8,10 @@ install-signal-cli.ps1 [<version>]
 ## Description
 Installs signal-cli from github.com/AsamK/signal-cli. See the Web page for the correct version number.
 
-## Syntax
+## Syntax & Parameters
 ```powershell
 /home/mf/PowerShell/Scripts/install-signal-cli.ps1 [[-Version] <String>] [<CommonParameters>]
 ```
-
-## Parameters
 
 ```
 -Version <String>
@@ -26,10 +24,9 @@ Installs signal-cli from github.com/AsamK/signal-cli. See the Web page for the c
 ```
 
 ```
-<CommonParameters>
+[<CommonParameters>]
     This cmdlet supports the common parameters: Verbose, Debug, ErrorAction, ErrorVariable, WarningAction, 
     WarningVariable, OutBuffer, PipelineVariable, and OutVariable.
-    For more information, see about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 ```
 
 ## Example

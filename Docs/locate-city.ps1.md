@@ -8,12 +8,10 @@ locate-city.ps1 [<city>]
 ## Description
 Prints the geographic location of the given city.
 
-## Syntax
+## Syntax & Parameters
 ```powershell
 /home/mf/PowerShell/Scripts/locate-city.ps1 [[-City] <String>] [<CommonParameters>]
 ```
-
-## Parameters
 
 ```
 -City <String>
@@ -26,10 +24,9 @@ Prints the geographic location of the given city.
 ```
 
 ```
-<CommonParameters>
+[<CommonParameters>]
     This cmdlet supports the common parameters: Verbose, Debug, ErrorAction, ErrorVariable, WarningAction, 
     WarningVariable, OutBuffer, PipelineVariable, and OutVariable.
-    For more information, see about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 ```
 
 ## Example

@@ -8,12 +8,10 @@ publish-to-ipfs.ps1 [<file(s)/dir>] [<to-hash-list>]
 ## Description
 Publishes the given files and folders to IPFS.
 
-## Syntax
+## Syntax & Parameters
 ```powershell
 /home/mf/PowerShell/Scripts/publish-to-ipfs.ps1 [[-Files] <String>] [[-HashList] <String>] [[-DF_Hashes] <String>] [<CommonParameters>]
 ```
-
-## Parameters
 
 ```
 -Files <String>
@@ -46,10 +44,9 @@ Publishes the given files and folders to IPFS.
 ```
 
 ```
-<CommonParameters>
+[<CommonParameters>]
     This cmdlet supports the common parameters: Verbose, Debug, ErrorAction, ErrorVariable, WarningAction, 
     WarningVariable, OutBuffer, PipelineVariable, and OutVariable.
-    For more information, see about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 ```
 
 ## Example

@@ -8,18 +8,15 @@ clear-recycle-bin.ps1
 ## Description
 Removes the content of the recycle bin folder (can not be undo).
 
-## Syntax
+## Syntax & Parameters
 ```powershell
 /home/mf/PowerShell/Scripts/clear-recycle-bin.ps1 [<CommonParameters>]
 ```
 
-## Parameters
-
 ```
-<CommonParameters>
+[<CommonParameters>]
     This cmdlet supports the common parameters: Verbose, Debug, ErrorAction, ErrorVariable, WarningAction, 
     WarningVariable, OutBuffer, PipelineVariable, and OutVariable.
-    For more information, see about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 ```
 
 ## Example

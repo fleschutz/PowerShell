@@ -8,12 +8,10 @@ what-is.ps1 [<abbreviation>]
 ## Description
 Prints a description of the given abbreviation.
 
-## Syntax
+## Syntax & Parameters
 ```powershell
 /home/mf/PowerShell/Scripts/what-is.ps1 [[-abbreviation] <String>] [<CommonParameters>]
 ```
-
-## Parameters
 
 ```
 -abbreviation <String>
@@ -26,10 +24,9 @@ Prints a description of the given abbreviation.
 ```
 
 ```
-<CommonParameters>
+[<CommonParameters>]
     This cmdlet supports the common parameters: Verbose, Debug, ErrorAction, ErrorVariable, WarningAction, 
     WarningVariable, OutBuffer, PipelineVariable, and OutVariable.
-    For more information, see about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 ```
 
 ## Example

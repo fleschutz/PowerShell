@@ -8,12 +8,10 @@ list-unused-files.ps1 <dir-tree> <days>
 ## Description
 Lists files in the <directory tree> with last access time older than <days>.
 
-## Syntax
+## Syntax & Parameters
 ```powershell
 /home/mf/PowerShell/Scripts/list-unused-files.ps1 [[-DirTree] <String>] [[-NumberOfDaysUnused] <Int32>] [<CommonParameters>]
 ```
-
-## Parameters
 
 ```
 -DirTree <String>
@@ -36,10 +34,9 @@ Lists files in the <directory tree> with last access time older than <days>.
 ```
 
 ```
-<CommonParameters>
+[<CommonParameters>]
     This cmdlet supports the common parameters: Verbose, Debug, ErrorAction, ErrorVariable, WarningAction, 
     WarningVariable, OutBuffer, PipelineVariable, and OutVariable.
-    For more information, see about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 ```
 
 ## Example

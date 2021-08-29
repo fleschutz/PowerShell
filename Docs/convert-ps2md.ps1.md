@@ -8,12 +8,10 @@ convert-ps2md.ps1 [<script>]
 ## Description
 Converts the comment-based help of a PowerShell script to Markdown.
 
-## Syntax
+## Syntax & Parameters
 ```powershell
 /home/mf/PowerShell/Scripts/convert-ps2md.ps1 [[-script] <String>] [<CommonParameters>]
 ```
-
-## Parameters
 
 ```
 -script <String>
@@ -26,10 +24,9 @@ Converts the comment-based help of a PowerShell script to Markdown.
 ```
 
 ```
-<CommonParameters>
+[<CommonParameters>]
     This cmdlet supports the common parameters: Verbose, Debug, ErrorAction, ErrorVariable, WarningAction, 
     WarningVariable, OutBuffer, PipelineVariable, and OutVariable.
-    For more information, see about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 ```
 
 ## Example

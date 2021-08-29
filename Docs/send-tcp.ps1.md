@@ -8,12 +8,10 @@ send-tcp.ps1 [<target-IP>] [<target-port>] [<message>]
 ## Description
 Sends a TCP message to the given IP address and port.
 
-## Syntax
+## Syntax & Parameters
 ```powershell
 /home/mf/PowerShell/Scripts/send-tcp.ps1 [[-TargetIP] <String>] [[-TargetPort] <Int32>] [[-Message] <String>] [<CommonParameters>]
 ```
-
-## Parameters
 
 ```
 -TargetIP <String>
@@ -46,10 +44,9 @@ Sends a TCP message to the given IP address and port.
 ```
 
 ```
-<CommonParameters>
+[<CommonParameters>]
     This cmdlet supports the common parameters: Verbose, Debug, ErrorAction, ErrorVariable, WarningAction, 
     WarningVariable, OutBuffer, PipelineVariable, and OutVariable.
-    For more information, see about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 ```
 
 ## Example

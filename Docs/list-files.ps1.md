@@ -8,12 +8,10 @@ list-files.ps1 [<dir-tree>]
 ## Description
 Lists all files in the given directory tree.
 
-## Syntax
+## Syntax & Parameters
 ```powershell
 /home/mf/PowerShell/Scripts/list-files.ps1 [[-DirTree] <String>] [<CommonParameters>]
 ```
-
-## Parameters
 
 ```
 -DirTree <String>
@@ -26,10 +24,9 @@ Lists all files in the given directory tree.
 ```
 
 ```
-<CommonParameters>
+[<CommonParameters>]
     This cmdlet supports the common parameters: Verbose, Debug, ErrorAction, ErrorVariable, WarningAction, 
     WarningVariable, OutBuffer, PipelineVariable, and OutVariable.
-    For more information, see about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 ```
 
 ## Example

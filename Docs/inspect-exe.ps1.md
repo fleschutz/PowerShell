@@ -8,12 +8,10 @@ inspect-exe.ps1 [<path-to-exe-file>]
 ## Description
 Prints basic information of the given executable file.
 
-## Syntax
+## Syntax & Parameters
 ```powershell
 /home/mf/PowerShell/Scripts/inspect-exe.ps1 [[-PathToExe] <String>] [<CommonParameters>]
 ```
-
-## Parameters
 
 ```
 -PathToExe <String>
@@ -26,10 +24,9 @@ Prints basic information of the given executable file.
 ```
 
 ```
-<CommonParameters>
+[<CommonParameters>]
     This cmdlet supports the common parameters: Verbose, Debug, ErrorAction, ErrorVariable, WarningAction, 
     WarningVariable, OutBuffer, PipelineVariable, and OutVariable.
-    For more information, see about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 ```
 
 ## Example

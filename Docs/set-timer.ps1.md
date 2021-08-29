@@ -8,12 +8,10 @@ set-timer.ps1 [<seconds>]
 ## Description
 Sets a timer for a countdown.
 
-## Syntax
+## Syntax & Parameters
 ```powershell
 /home/mf/PowerShell/Scripts/set-timer.ps1 [[-Seconds] <Int32>] [<CommonParameters>]
 ```
-
-## Parameters
 
 ```
 -Seconds <Int32>
@@ -26,10 +24,9 @@ Sets a timer for a countdown.
 ```
 
 ```
-<CommonParameters>
+[<CommonParameters>]
     This cmdlet supports the common parameters: Verbose, Debug, ErrorAction, ErrorVariable, WarningAction, 
     WarningVariable, OutBuffer, PipelineVariable, and OutVariable.
-    For more information, see about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 ```
 
 ## Example

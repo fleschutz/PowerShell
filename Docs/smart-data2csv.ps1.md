@@ -9,12 +9,10 @@ smart-data2csv.ps1 [<directory>]
 Converts the S.M.A.R.T. JSON files in the current/given directory to a CSV table for analysis
        (use query-smart-data.ps1 to generate those JSON files).
 
-## Syntax
+## Syntax & Parameters
 ```powershell
 /home/mf/PowerShell/Scripts/smart-data2csv.ps1 [[-Directory] <String>] [<CommonParameters>]
 ```
-
-## Parameters
 
 ```
 -Directory <String>
@@ -27,10 +25,9 @@ Converts the S.M.A.R.T. JSON files in the current/given directory to a CSV table
 ```
 
 ```
-<CommonParameters>
+[<CommonParameters>]
     This cmdlet supports the common parameters: Verbose, Debug, ErrorAction, ErrorVariable, WarningAction, 
     WarningVariable, OutBuffer, PipelineVariable, and OutVariable.
-    For more information, see about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 ```
 
 ## Example

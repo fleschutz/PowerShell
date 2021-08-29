@@ -8,12 +8,10 @@ list-passwords.ps1 [<password-length>] [<columns>] [<rows>]
 ## Description
 Prints a list of random passwords.
 
-## Syntax
+## Syntax & Parameters
 ```powershell
 /home/mf/PowerShell/Scripts/list-passwords.ps1 [[-PasswordLength] <Int32>] [[-Columns] <Int32>] [[-Rows] <Int32>] [<CommonParameters>]
 ```
-
-## Parameters
 
 ```
 -PasswordLength <Int32>
@@ -46,10 +44,9 @@ Prints a list of random passwords.
 ```
 
 ```
-<CommonParameters>
+[<CommonParameters>]
     This cmdlet supports the common parameters: Verbose, Debug, ErrorAction, ErrorVariable, WarningAction, 
     WarningVariable, OutBuffer, PipelineVariable, and OutVariable.
-    For more information, see about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 ```
 
 ## Example

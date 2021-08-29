@@ -8,12 +8,10 @@ create-tag.ps1 [<new-tag-name>] [<repo-dir>]
 ## Description
 Creates a new tag in a Git repository.
 
-## Syntax
+## Syntax & Parameters
 ```powershell
 /home/mf/PowerShell/Scripts/create-tag.ps1 [[-NewTagName] <String>] [[-RepoDir] <String>] [<CommonParameters>]
 ```
-
-## Parameters
 
 ```
 -NewTagName <String>
@@ -36,10 +34,9 @@ Creates a new tag in a Git repository.
 ```
 
 ```
-<CommonParameters>
+[<CommonParameters>]
     This cmdlet supports the common parameters: Verbose, Debug, ErrorAction, ErrorVariable, WarningAction, 
     WarningVariable, OutBuffer, PipelineVariable, and OutVariable.
-    For more information, see about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 ```
 
 ## Example

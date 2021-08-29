@@ -8,12 +8,10 @@ convert-txt2wav.ps1 [<text>] [<wav-file>]
 ## Description
 Converts text to a .WAV audio file.
 
-## Syntax
+## Syntax & Parameters
 ```powershell
 /home/mf/PowerShell/Scripts/convert-txt2wav.ps1 [[-Text] <String>] [[-WavFile] <String>] [<CommonParameters>]
 ```
-
-## Parameters
 
 ```
 -Text <String>
@@ -36,10 +34,9 @@ Converts text to a .WAV audio file.
 ```
 
 ```
-<CommonParameters>
+[<CommonParameters>]
     This cmdlet supports the common parameters: Verbose, Debug, ErrorAction, ErrorVariable, WarningAction, 
     WarningVariable, OutBuffer, PipelineVariable, and OutVariable.
-    For more information, see about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 ```
 
 ## Example

@@ -8,12 +8,10 @@ write-rot13.ps1 [<text>]
 ## Description
 Prints the given text encoded or decoded with ROT13.
 
-## Syntax
+## Syntax & Parameters
 ```powershell
 /home/mf/PowerShell/Scripts/write-rot13.ps1 [[-text] <String>] [<CommonParameters>]
 ```
-
-## Parameters
 
 ```
 -text <String>
@@ -26,10 +24,9 @@ Prints the given text encoded or decoded with ROT13.
 ```
 
 ```
-<CommonParameters>
+[<CommonParameters>]
     This cmdlet supports the common parameters: Verbose, Debug, ErrorAction, ErrorVariable, WarningAction, 
     WarningVariable, OutBuffer, PipelineVariable, and OutVariable.
-    For more information, see about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 ```
 
 ## Example

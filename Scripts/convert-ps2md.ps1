@@ -74,14 +74,12 @@ try {
 	$Syntax = (($full.syntax | Out-String) -replace "`r`n", "`r`n`r`n").Trim()
 	if ($Syntax -ne "") {
 		""
-		"## Syntax"
+		"## Syntax & Parameters"
 		"``````powershell"
 		"$Syntax"
 		"``````"
 	}
 
-	""
-	"## Parameters"
 	foreach($parameter in $full.parameters.parameter) {
 		""
 		"``````"
@@ -90,10 +88,9 @@ try {
 	}
 	""
 	"``````"
-	"<CommonParameters>"
+	"[<CommonParameters>]"
 	"    This cmdlet supports the common parameters: Verbose, Debug, ErrorAction, ErrorVariable, WarningAction, "
 	"    WarningVariable, OutBuffer, PipelineVariable, and OutVariable."
-	"    For more information, see about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216)."
 	"``````"
 
 	foreach($input in $full.inputTypes.inputType) {

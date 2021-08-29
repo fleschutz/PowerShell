@@ -8,12 +8,10 @@ new-email.ps1 [<address>]
 ## Description
 Opens the default email client to write a new email.
 
-## Syntax
+## Syntax & Parameters
 ```powershell
 /home/mf/PowerShell/Scripts/new-email.ps1 [[-EmailAddress] <String>] [<CommonParameters>]
 ```
-
-## Parameters
 
 ```
 -EmailAddress <String>
@@ -26,10 +24,9 @@ Opens the default email client to write a new email.
 ```
 
 ```
-<CommonParameters>
+[<CommonParameters>]
     This cmdlet supports the common parameters: Verbose, Debug, ErrorAction, ErrorVariable, WarningAction, 
     WarningVariable, OutBuffer, PipelineVariable, and OutVariable.
-    For more information, see about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 ```
 
 ## Example

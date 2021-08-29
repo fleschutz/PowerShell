@@ -8,12 +8,10 @@ create-shortcut.ps1 [<shortcut>] [<target>] [<description>]
 ## Description
 Creates a new shortcut file.
 
-## Syntax
+## Syntax & Parameters
 ```powershell
 /home/mf/PowerShell/Scripts/create-shortcut.ps1 [[-shortcut] <String>] [[-target] <String>] [[-description] <String>] [<CommonParameters>]
 ```
-
-## Parameters
 
 ```
 -shortcut <String>
@@ -46,10 +44,9 @@ Creates a new shortcut file.
 ```
 
 ```
-<CommonParameters>
+[<CommonParameters>]
     This cmdlet supports the common parameters: Verbose, Debug, ErrorAction, ErrorVariable, WarningAction, 
     WarningVariable, OutBuffer, PipelineVariable, and OutVariable.
-    For more information, see about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 ```
 
 ## Example

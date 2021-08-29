@@ -9,12 +9,10 @@ cherry-picker.ps1 [<commit-id>] [<commit-message>] [<branches>] [<repo-dir>]
 Cherry-picks a Git commit into one or more branches (branch names need to be separated by spaces).
 NOTE: in case of merge conflicts the script stops immediately!
 
-## Syntax
+## Syntax & Parameters
 ```powershell
 /home/mf/PowerShell/Scripts/cherry-picker.ps1 [[-CommitID] <String>] [[-CommitMessage] <String>] [[-Branches] <String>] [[-RepoDir] <String>] [<CommonParameters>]
 ```
-
-## Parameters
 
 ```
 -CommitID <String>
@@ -57,10 +55,9 @@ NOTE: in case of merge conflicts the script stops immediately!
 ```
 
 ```
-<CommonParameters>
+[<CommonParameters>]
     This cmdlet supports the common parameters: Verbose, Debug, ErrorAction, ErrorVariable, WarningAction, 
     WarningVariable, OutBuffer, PipelineVariable, and OutVariable.
-    For more information, see about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 ```
 
 ## Example

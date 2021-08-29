@@ -8,12 +8,10 @@ check-mac-address.ps1 [<MAC>]
 ## Description
 Checks the given MAC address for validity (MAC address like 00:00:00:00:00:00 or 00-00-00-00-00-00 or 000000000000).
 
-## Syntax
+## Syntax & Parameters
 ```powershell
 /home/mf/PowerShell/Scripts/check-mac-address.ps1 [[-MAC] <String>] [<CommonParameters>]
 ```
-
-## Parameters
 
 ```
 -MAC <String>
@@ -26,10 +24,9 @@ Checks the given MAC address for validity (MAC address like 00:00:00:00:00:00 or
 ```
 
 ```
-<CommonParameters>
+[<CommonParameters>]
     This cmdlet supports the common parameters: Verbose, Debug, ErrorAction, ErrorVariable, WarningAction, 
     WarningVariable, OutBuffer, PipelineVariable, and OutVariable.
-    For more information, see about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 ```
 
 ## Example

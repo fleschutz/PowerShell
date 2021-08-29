@@ -8,12 +8,10 @@ speak-file.ps1 [<file>]
 ## Description
 Speaks the content of the given text file by text-to-speech (TTS).
 
-## Syntax
+## Syntax & Parameters
 ```powershell
 /home/mf/PowerShell/Scripts/speak-file.ps1 [[-File] <String>] [<CommonParameters>]
 ```
-
-## Parameters
 
 ```
 -File <String>
@@ -26,10 +24,9 @@ Speaks the content of the given text file by text-to-speech (TTS).
 ```
 
 ```
-<CommonParameters>
+[<CommonParameters>]
     This cmdlet supports the common parameters: Verbose, Debug, ErrorAction, ErrorVariable, WarningAction, 
     WarningVariable, OutBuffer, PipelineVariable, and OutVariable.
-    For more information, see about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 ```
 
 ## Example

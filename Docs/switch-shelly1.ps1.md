@@ -8,12 +8,10 @@ switch-shelly1.ps1 [<host>] [<turn-mode>] [<timer>]
 ## Description
 Switches a Shelly1 device in the local network.
 
-## Syntax
+## Syntax & Parameters
 ```powershell
 /home/mf/PowerShell/Scripts/switch-shelly1.ps1 [[-Host] <String>] [[-TurnMode] <String>] [[-Timer] <Int32>] [<CommonParameters>]
 ```
-
-## Parameters
 
 ```
 -Host <String>
@@ -46,10 +44,9 @@ Switches a Shelly1 device in the local network.
 ```
 
 ```
-<CommonParameters>
+[<CommonParameters>]
     This cmdlet supports the common parameters: Verbose, Debug, ErrorAction, ErrorVariable, WarningAction, 
     WarningVariable, OutBuffer, PipelineVariable, and OutVariable.
-    For more information, see about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 ```
 
 ## Example

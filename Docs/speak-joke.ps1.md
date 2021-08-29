@@ -8,18 +8,15 @@ speak-joke.ps1
 ## Description
 Speaks a random Chuck Norris joke by text-to-speech (TTS).
 
-## Syntax
+## Syntax & Parameters
 ```powershell
 /home/mf/PowerShell/Scripts/speak-joke.ps1 [<CommonParameters>]
 ```
 
-## Parameters
-
 ```
-<CommonParameters>
+[<CommonParameters>]
     This cmdlet supports the common parameters: Verbose, Debug, ErrorAction, ErrorVariable, WarningAction, 
     WarningVariable, OutBuffer, PipelineVariable, and OutVariable.
-    For more information, see about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 ```
 
 ## Example

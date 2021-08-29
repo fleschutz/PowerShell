@@ -8,12 +8,10 @@ list-exchange-rates.ps1 [<currency>]
 ## Description
 Lists the current exchange rates for the given currency (USD per default).
 
-## Syntax
+## Syntax & Parameters
 ```powershell
 /home/mf/PowerShell/Scripts/list-exchange-rates.ps1 [[-currency] <String>] [<CommonParameters>]
 ```
-
-## Parameters
 
 ```
 -currency <String>
@@ -26,10 +24,9 @@ Lists the current exchange rates for the given currency (USD per default).
 ```
 
 ```
-<CommonParameters>
+[<CommonParameters>]
     This cmdlet supports the common parameters: Verbose, Debug, ErrorAction, ErrorVariable, WarningAction, 
     WarningVariable, OutBuffer, PipelineVariable, and OutVariable.
-    For more information, see about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 ```
 
 ## Example

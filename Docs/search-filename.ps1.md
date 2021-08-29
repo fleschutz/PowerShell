@@ -9,12 +9,10 @@ search-filename.ps1
 This script serves as a quick Powershell replacement to the search functionality in Windows.
 After you pass in a root folder and a search term, the script will list all files and folders matching that phrase.
 
-## Syntax
+## Syntax & Parameters
 ```powershell
 /home/mf/PowerShell/Scripts/search-filename.ps1 [-path] <Object> [-term] <Object> [<CommonParameters>]
 ```
-
-## Parameters
 
 ```
 -path <Object>
@@ -37,10 +35,9 @@ After you pass in a root folder and a search term, the script will list all file
 ```
 
 ```
-<CommonParameters>
+[<CommonParameters>]
     This cmdlet supports the common parameters: Verbose, Debug, ErrorAction, ErrorVariable, WarningAction, 
     WarningVariable, OutBuffer, PipelineVariable, and OutVariable.
-    For more information, see about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 ```
 
 ## Example

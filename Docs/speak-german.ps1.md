@@ -8,12 +8,10 @@ speak-german.ps1 [<text>]
 ## Description
 Speaks the given text with a German text-to-speech (TTS) voice.
 
-## Syntax
+## Syntax & Parameters
 ```powershell
 /home/mf/PowerShell/Scripts/speak-german.ps1 [[-Text] <String>] [<CommonParameters>]
 ```
-
-## Parameters
 
 ```
 -Text <String>
@@ -26,10 +24,9 @@ Speaks the given text with a German text-to-speech (TTS) voice.
 ```
 
 ```
-<CommonParameters>
+[<CommonParameters>]
     This cmdlet supports the common parameters: Verbose, Debug, ErrorAction, ErrorVariable, WarningAction, 
     WarningVariable, OutBuffer, PipelineVariable, and OutVariable.
-    For more information, see about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 ```
 
 ## Example

@@ -8,12 +8,10 @@ take-screenshot.ps1 [<directory>]
 ## Description
 Takes a single screenshot and saves it into the current/given directory.
 
-## Syntax
+## Syntax & Parameters
 ```powershell
 /home/mf/PowerShell/Scripts/take-screenshot.ps1 [[-Directory] <String>] [<CommonParameters>]
 ```
-
-## Parameters
 
 ```
 -Directory <String>
@@ -26,10 +24,9 @@ Takes a single screenshot and saves it into the current/given directory.
 ```
 
 ```
-<CommonParameters>
+[<CommonParameters>]
     This cmdlet supports the common parameters: Verbose, Debug, ErrorAction, ErrorVariable, WarningAction, 
     WarningVariable, OutBuffer, PipelineVariable, and OutVariable.
-    For more information, see about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 ```
 
 ## Example

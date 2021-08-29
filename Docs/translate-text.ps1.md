@@ -8,12 +8,10 @@ translate-text.ps1 [<text>] [<source-lang>] [<target-lang>]
 ## Description
 Translates the given text into other languages.
 
-## Syntax
+## Syntax & Parameters
 ```powershell
 /home/mf/PowerShell/Scripts/translate-text.ps1 [[-Text] <String>] [[-SourceLang] <String>] [[-TargetLang] <String>] [<CommonParameters>]
 ```
-
-## Parameters
 
 ```
 -Text <String>
@@ -46,10 +44,9 @@ Translates the given text into other languages.
 ```
 
 ```
-<CommonParameters>
+[<CommonParameters>]
     This cmdlet supports the common parameters: Verbose, Debug, ErrorAction, ErrorVariable, WarningAction, 
     WarningVariable, OutBuffer, PipelineVariable, and OutVariable.
-    For more information, see about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 ```
 
 ## Example

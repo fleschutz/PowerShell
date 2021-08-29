@@ -8,12 +8,10 @@ fetch-repo.ps1 [<repo-dir>]
 ## Description
 Fetches updates for a local Git repository (including submodules).
 
-## Syntax
+## Syntax & Parameters
 ```powershell
 /home/mf/PowerShell/Scripts/fetch-repo.ps1 [[-RepoDir] <String>] [<CommonParameters>]
 ```
-
-## Parameters
 
 ```
 -RepoDir <String>
@@ -26,10 +24,9 @@ Fetches updates for a local Git repository (including submodules).
 ```
 
 ```
-<CommonParameters>
+[<CommonParameters>]
     This cmdlet supports the common parameters: Verbose, Debug, ErrorAction, ErrorVariable, WarningAction, 
     WarningVariable, OutBuffer, PipelineVariable, and OutVariable.
-    For more information, see about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 ```
 
 ## Example

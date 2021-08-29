@@ -8,12 +8,10 @@ check-drive-space.ps1 [<drive>] [<min-level>]
 ## Description
 Checks the given drive for free space left.
 
-## Syntax
+## Syntax & Parameters
 ```powershell
 /home/mf/PowerShell/Scripts/check-drive-space.ps1 [[-Drive] <String>] [[-MinLevel] <Int32>] [<CommonParameters>]
 ```
-
-## Parameters
 
 ```
 -Drive <String>
@@ -36,10 +34,9 @@ Checks the given drive for free space left.
 ```
 
 ```
-<CommonParameters>
+[<CommonParameters>]
     This cmdlet supports the common parameters: Verbose, Debug, ErrorAction, ErrorVariable, WarningAction, 
     WarningVariable, OutBuffer, PipelineVariable, and OutVariable.
-    For more information, see about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 ```
 
 ## Example

@@ -8,12 +8,10 @@ convert-mysql2csv.ps1 [<server>] [<database>] [<username>] [<password>] [<query>
 ## Description
 Convert a MySQL database table to a .CSV file.
 
-## Syntax
+## Syntax & Parameters
 ```powershell
 /home/mf/PowerShell/Scripts/convert-mysql2csv.ps1 [[-server] <String>] [[-database] <String>] [[-username] <String>] [[-password] <String>] [[-query] <String>] [<CommonParameters>]
 ```
-
-## Parameters
 
 ```
 -server <String>
@@ -66,10 +64,9 @@ Convert a MySQL database table to a .CSV file.
 ```
 
 ```
-<CommonParameters>
+[<CommonParameters>]
     This cmdlet supports the common parameters: Verbose, Debug, ErrorAction, ErrorVariable, WarningAction, 
     WarningVariable, OutBuffer, PipelineVariable, and OutVariable.
-    For more information, see about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 ```
 
 ## Example

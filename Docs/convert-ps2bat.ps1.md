@@ -8,12 +8,10 @@ convert-ps2bat.ps1 [<pattern>]
 ## Description
 Converts a PowerShell script to .bat files.
 
-## Syntax
+## Syntax & Parameters
 ```powershell
 /home/mf/PowerShell/Scripts/convert-ps2bat.ps1 [[-Pattern] <String>] [<CommonParameters>]
 ```
-
-## Parameters
 
 ```
 -Pattern <String>
@@ -26,10 +24,9 @@ Converts a PowerShell script to .bat files.
 ```
 
 ```
-<CommonParameters>
+[<CommonParameters>]
     This cmdlet supports the common parameters: Verbose, Debug, ErrorAction, ErrorVariable, WarningAction, 
     WarningVariable, OutBuffer, PipelineVariable, and OutVariable.
-    For more information, see about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 ```
 
 ## Example

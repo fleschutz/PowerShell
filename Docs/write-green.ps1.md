@@ -8,12 +8,10 @@ write-green.ps1 [<text>]
 ## Description
 Writes the given text in a green foreground color.
 
-## Syntax
+## Syntax & Parameters
 ```powershell
 /home/mf/PowerShell/Scripts/write-green.ps1 [[-text] <String>] [<CommonParameters>]
 ```
-
-## Parameters
 
 ```
 -text <String>
@@ -26,10 +24,9 @@ Writes the given text in a green foreground color.
 ```
 
 ```
-<CommonParameters>
+[<CommonParameters>]
     This cmdlet supports the common parameters: Verbose, Debug, ErrorAction, ErrorVariable, WarningAction, 
     WarningVariable, OutBuffer, PipelineVariable, and OutVariable.
-    For more information, see about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 ```
 
 ## Example

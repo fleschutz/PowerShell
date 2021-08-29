@@ -8,12 +8,10 @@ play-files.ps1 [<pattern>]
 ## Description
 Plays the given audio files (supporting MP3 and WAV format).
 
-## Syntax
+## Syntax & Parameters
 ```powershell
 /home/mf/PowerShell/Scripts/play-files.ps1 [[-Pattern] <String>] [<CommonParameters>]
 ```
-
-## Parameters
 
 ```
 -Pattern <String>
@@ -26,10 +24,9 @@ Plays the given audio files (supporting MP3 and WAV format).
 ```
 
 ```
-<CommonParameters>
+[<CommonParameters>]
     This cmdlet supports the common parameters: Verbose, Debug, ErrorAction, ErrorVariable, WarningAction, 
     WarningVariable, OutBuffer, PipelineVariable, and OutVariable.
-    For more information, see about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 ```
 
 ## Example

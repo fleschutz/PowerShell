@@ -8,12 +8,10 @@ switch-branch.ps1 [<branch-name>] [<repo-dir>]
 ## Description
 Switches the branch in the current/given Git repository (including submodules).
 
-## Syntax
+## Syntax & Parameters
 ```powershell
 /home/mf/PowerShell/Scripts/switch-branch.ps1 [[-BranchName] <String>] [[-RepoDir] <String>] [<CommonParameters>]
 ```
-
-## Parameters
 
 ```
 -BranchName <String>
@@ -36,10 +34,9 @@ Switches the branch in the current/given Git repository (including submodules).
 ```
 
 ```
-<CommonParameters>
+[<CommonParameters>]
     This cmdlet supports the common parameters: Verbose, Debug, ErrorAction, ErrorVariable, WarningAction, 
     WarningVariable, OutBuffer, PipelineVariable, and OutVariable.
-    For more information, see about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 ```
 
 ## Example

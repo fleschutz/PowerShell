@@ -8,12 +8,10 @@ wakeup.ps1 [<MAC-address>] [<IP-address>]
 ## Description
 Sends a magic packet to the given computer to wake him up.
 
-## Syntax
+## Syntax & Parameters
 ```powershell
 /home/mf/PowerShell/Scripts/wakeup.ps1 [[-MACaddress] <String>] [[-IPaddress] <String>] [[-Port] <Int32>] [<CommonParameters>]
 ```
-
-## Parameters
 
 ```
 -MACaddress <String>
@@ -46,10 +44,9 @@ Sends a magic packet to the given computer to wake him up.
 ```
 
 ```
-<CommonParameters>
+[<CommonParameters>]
     This cmdlet supports the common parameters: Verbose, Debug, ErrorAction, ErrorVariable, WarningAction, 
     WarningVariable, OutBuffer, PipelineVariable, and OutVariable.
-    For more information, see about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 ```
 
 ## Example

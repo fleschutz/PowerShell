@@ -8,12 +8,10 @@ search-files.ps1 [<pattern>] [<path>]
 ## Description
 Searches for the given pattern in the given files.
 
-## Syntax
+## Syntax & Parameters
 ```powershell
 /home/mf/PowerShell/Scripts/search-files.ps1 [[-Pattern] <String>] [[-Path] <String>] [<CommonParameters>]
 ```
-
-## Parameters
 
 ```
 -Pattern <String>
@@ -36,10 +34,9 @@ Searches for the given pattern in the given files.
 ```
 
 ```
-<CommonParameters>
+[<CommonParameters>]
     This cmdlet supports the common parameters: Verbose, Debug, ErrorAction, ErrorVariable, WarningAction, 
     WarningVariable, OutBuffer, PipelineVariable, and OutVariable.
-    For more information, see about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 ```
 
 ## Example

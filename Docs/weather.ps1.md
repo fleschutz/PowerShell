@@ -8,12 +8,10 @@ weather.ps1 [<geo-location>]
 ## Description
 Prints the current weather forecast.
 
-## Syntax
+## Syntax & Parameters
 ```powershell
 /home/mf/PowerShell/Scripts/weather.ps1 [[-GeoLocation] <String>] [<CommonParameters>]
 ```
-
-## Parameters
 
 ```
 -GeoLocation <String>
@@ -26,10 +24,9 @@ Prints the current weather forecast.
 ```
 
 ```
-<CommonParameters>
+[<CommonParameters>]
     This cmdlet supports the common parameters: Verbose, Debug, ErrorAction, ErrorVariable, WarningAction, 
     WarningVariable, OutBuffer, PipelineVariable, and OutVariable.
-    For more information, see about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 ```
 
 ## Example

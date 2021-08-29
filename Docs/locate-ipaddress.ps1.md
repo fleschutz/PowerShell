@@ -8,12 +8,10 @@ locate-ipaddress.ps1 [<IPaddress>]
 ## Description
 Prints the geographic location of the given IP address.
 
-## Syntax
+## Syntax & Parameters
 ```powershell
 /home/mf/PowerShell/Scripts/locate-ipaddress.ps1 [[-IPaddr] <String>] [<CommonParameters>]
 ```
-
-## Parameters
 
 ```
 -IPaddr <String>
@@ -26,10 +24,9 @@ Prints the geographic location of the given IP address.
 ```
 
 ```
-<CommonParameters>
+[<CommonParameters>]
     This cmdlet supports the common parameters: Verbose, Debug, ErrorAction, ErrorVariable, WarningAction, 
     WarningVariable, OutBuffer, PipelineVariable, and OutVariable.
-    For more information, see about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 ```
 
 ## Example

@@ -8,12 +8,10 @@ translate-file.ps1 [<file>] [<source-lang>] [<target-lang>]
 ## Description
 Translates the given text file into another language and prints the result.
 
-## Syntax
+## Syntax & Parameters
 ```powershell
 /home/mf/PowerShell/Scripts/translate-file.ps1 [[-File] <String>] [[-SourceLang] <String>] [[-TargetLang] <String>] [<CommonParameters>]
 ```
-
-## Parameters
 
 ```
 -File <String>
@@ -46,10 +44,9 @@ Translates the given text file into another language and prints the result.
 ```
 
 ```
-<CommonParameters>
+[<CommonParameters>]
     This cmdlet supports the common parameters: Verbose, Debug, ErrorAction, ErrorVariable, WarningAction, 
     WarningVariable, OutBuffer, PipelineVariable, and OutVariable.
-    For more information, see about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 ```
 
 ## Example

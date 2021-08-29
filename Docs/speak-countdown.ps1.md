@@ -8,12 +8,10 @@ speak-countdown.ps1 [start-number]
 ## Description
 Speaks a countdown by text-to-speech (TTS).
 
-## Syntax
+## Syntax & Parameters
 ```powershell
 /home/mf/PowerShell/Scripts/speak-countdown.ps1 [[-StartNumber] <Int32>] [<CommonParameters>]
 ```
-
-## Parameters
 
 ```
 -StartNumber <Int32>
@@ -26,10 +24,9 @@ Speaks a countdown by text-to-speech (TTS).
 ```
 
 ```
-<CommonParameters>
+[<CommonParameters>]
     This cmdlet supports the common parameters: Verbose, Debug, ErrorAction, ErrorVariable, WarningAction, 
     WarningVariable, OutBuffer, PipelineVariable, and OutVariable.
-    For more information, see about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 ```
 
 ## Example

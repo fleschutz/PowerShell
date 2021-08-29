@@ -8,12 +8,10 @@ check-subnet-mask.ps1 [<address>]
 ## Description
 Checks the given subnet mask for validity.
 
-## Syntax
+## Syntax & Parameters
 ```powershell
 /home/mf/PowerShell/Scripts/check-subnet-mask.ps1 [[-address] <String>] [<CommonParameters>]
 ```
-
-## Parameters
 
 ```
 -address <String>
@@ -26,10 +24,9 @@ Checks the given subnet mask for validity.
 ```
 
 ```
-<CommonParameters>
+[<CommonParameters>]
     This cmdlet supports the common parameters: Verbose, Debug, ErrorAction, ErrorVariable, WarningAction, 
     WarningVariable, OutBuffer, PipelineVariable, and OutVariable.
-    For more information, see about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 ```
 
 ## Example

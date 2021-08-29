@@ -8,12 +8,10 @@ configure-git.ps1 [<full-name>] [<email-address>] [<favorite-editor>]
 ## Description
 Sets up the Git user configuration.
 
-## Syntax
+## Syntax & Parameters
 ```powershell
 /home/mf/PowerShell/Scripts/configure-git.ps1 [[-FullName] <String>] [[-EmailAddress] <String>] [[-FavoriteEditor] <String>] [<CommonParameters>]
 ```
-
-## Parameters
 
 ```
 -FullName <String>
@@ -46,10 +44,9 @@ Sets up the Git user configuration.
 ```
 
 ```
-<CommonParameters>
+[<CommonParameters>]
     This cmdlet supports the common parameters: Verbose, Debug, ErrorAction, ErrorVariable, WarningAction, 
     WarningVariable, OutBuffer, PipelineVariable, and OutVariable.
-    For more information, see about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 ```
 
 ## Example

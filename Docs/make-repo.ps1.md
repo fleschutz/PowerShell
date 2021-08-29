@@ -8,12 +8,10 @@ make-repo.ps1 [<repo-dir>]
 ## Description
 Builds a Git repository supporting cmake,configure,autogen,Imakefile,Makefile.
 
-## Syntax
+## Syntax & Parameters
 ```powershell
 /home/mf/PowerShell/Scripts/make-repo.ps1 [[-RepoDir] <String>] [<CommonParameters>]
 ```
-
-## Parameters
 
 ```
 -RepoDir <String>
@@ -26,10 +24,9 @@ Builds a Git repository supporting cmake,configure,autogen,Imakefile,Makefile.
 ```
 
 ```
-<CommonParameters>
+[<CommonParameters>]
     This cmdlet supports the common parameters: Verbose, Debug, ErrorAction, ErrorVariable, WarningAction, 
     WarningVariable, OutBuffer, PipelineVariable, and OutVariable.
-    For more information, see about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 ```
 
 ## Example

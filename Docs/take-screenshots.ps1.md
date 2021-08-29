@@ -8,12 +8,10 @@ take-screenshots.ps1 [<directory>] [<interval>]
 ## Description
 Takes screenshots every 60 seconds and saves them into the current/given directory.
 
-## Syntax
+## Syntax & Parameters
 ```powershell
 /home/mf/PowerShell/Scripts/take-screenshots.ps1 [[-Directory] <String>] [[-Interval] <Int32>] [<CommonParameters>]
 ```
-
-## Parameters
 
 ```
 -Directory <String>
@@ -36,10 +34,9 @@ Takes screenshots every 60 seconds and saves them into the current/given directo
 ```
 
 ```
-<CommonParameters>
+[<CommonParameters>]
     This cmdlet supports the common parameters: Verbose, Debug, ErrorAction, ErrorVariable, WarningAction, 
     WarningVariable, OutBuffer, PipelineVariable, and OutVariable.
-    For more information, see about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 ```
 
 ## Example

@@ -8,12 +8,10 @@ decrypt-file.ps1 [<path>] [<password>]
 ## Description
 Decrypts the given file.
 
-## Syntax
+## Syntax & Parameters
 ```powershell
 /home/mf/PowerShell/Scripts/decrypt-file.ps1 [[-Path] <String>] [[-Password] <String>] [<CommonParameters>]
 ```
-
-## Parameters
 
 ```
 -Path <String>
@@ -36,10 +34,9 @@ Decrypts the given file.
 ```
 
 ```
-<CommonParameters>
+[<CommonParameters>]
     This cmdlet supports the common parameters: Verbose, Debug, ErrorAction, ErrorVariable, WarningAction, 
     WarningVariable, OutBuffer, PipelineVariable, and OutVariable.
-    For more information, see about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 ```
 
 ## Example

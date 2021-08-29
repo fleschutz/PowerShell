@@ -8,12 +8,10 @@ clean-repo.ps1 [<repo-dir>]
 ## Description
 Cleans a Git repository from untracked files (including submodules, e.g. for a fresh build).
 
-## Syntax
+## Syntax & Parameters
 ```powershell
 /home/mf/PowerShell/Scripts/clean-repo.ps1 [[-RepoDir] <String>] [<CommonParameters>]
 ```
-
-## Parameters
 
 ```
 -RepoDir <String>
@@ -26,10 +24,9 @@ Cleans a Git repository from untracked files (including submodules, e.g. for a f
 ```
 
 ```
-<CommonParameters>
+[<CommonParameters>]
     This cmdlet supports the common parameters: Verbose, Debug, ErrorAction, ErrorVariable, WarningAction, 
     WarningVariable, OutBuffer, PipelineVariable, and OutVariable.
-    For more information, see about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 ```
 
 ## Example

@@ -8,12 +8,10 @@ fetch-repos.ps1 [<parent-dir>]
 ## Description
 Fetches updates for all Git repositories under the current/given directory (including submodules).
 
-## Syntax
+## Syntax & Parameters
 ```powershell
 /home/mf/PowerShell/Scripts/fetch-repos.ps1 [[-ParentDir] <String>] [<CommonParameters>]
 ```
-
-## Parameters
 
 ```
 -ParentDir <String>
@@ -26,10 +24,9 @@ Fetches updates for all Git repositories under the current/given directory (incl
 ```
 
 ```
-<CommonParameters>
+[<CommonParameters>]
     This cmdlet supports the common parameters: Verbose, Debug, ErrorAction, ErrorVariable, WarningAction, 
     WarningVariable, OutBuffer, PipelineVariable, and OutVariable.
-    For more information, see about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 ```
 
 ## Example

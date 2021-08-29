@@ -8,12 +8,10 @@ edit.ps1 <filename>
 ## Description
 Opens the built-in text editor to edit the given file.
 
-## Syntax
+## Syntax & Parameters
 ```powershell
 /home/mf/PowerShell/Scripts/edit.ps1 [[-Filename] <String>] [<CommonParameters>]
 ```
-
-## Parameters
 
 ```
 -Filename <String>
@@ -26,10 +24,9 @@ Opens the built-in text editor to edit the given file.
 ```
 
 ```
-<CommonParameters>
+[<CommonParameters>]
     This cmdlet supports the common parameters: Verbose, Debug, ErrorAction, ErrorVariable, WarningAction, 
     WarningVariable, OutBuffer, PipelineVariable, and OutVariable.
-    For more information, see about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 ```
 
 ## Example

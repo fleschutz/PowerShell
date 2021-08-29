@@ -8,12 +8,10 @@ weather-report.ps1 [<geo-location>]
 ## Description
 Prints the local weather report.
 
-## Syntax
+## Syntax & Parameters
 ```powershell
 /home/mf/PowerShell/Scripts/weather-report.ps1 [[-GeoLocation] <String>] [<CommonParameters>]
 ```
-
-## Parameters
 
 ```
 -GeoLocation <String>
@@ -26,10 +24,9 @@ Prints the local weather report.
 ```
 
 ```
-<CommonParameters>
+[<CommonParameters>]
     This cmdlet supports the common parameters: Verbose, Debug, ErrorAction, ErrorVariable, WarningAction, 
     WarningVariable, OutBuffer, PipelineVariable, and OutVariable.
-    For more information, see about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 ```
 
 ## Example

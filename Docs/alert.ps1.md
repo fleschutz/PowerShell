@@ -8,12 +8,10 @@ alert.ps1 [<message>]
 ## Description
 Handle and escalate the given alert message.
 
-## Syntax
+## Syntax & Parameters
 ```powershell
 /home/mf/PowerShell/Scripts/alert.ps1 [[-Message] <String>] [<CommonParameters>]
 ```
-
-## Parameters
 
 ```
 -Message <String>
@@ -26,10 +24,9 @@ Handle and escalate the given alert message.
 ```
 
 ```
-<CommonParameters>
+[<CommonParameters>]
     This cmdlet supports the common parameters: Verbose, Debug, ErrorAction, ErrorVariable, WarningAction, 
     WarningVariable, OutBuffer, PipelineVariable, and OutVariable.
-    For more information, see about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 ```
 
 ## Example

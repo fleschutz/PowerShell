@@ -8,12 +8,10 @@ zip-dir.ps1 [<directory>]
 ## Description
 Creates a .zip archive of the given directory.
 
-## Syntax
+## Syntax & Parameters
 ```powershell
 /home/mf/PowerShell/Scripts/zip-dir.ps1 [[-directory] <String>] [<CommonParameters>]
 ```
-
-## Parameters
 
 ```
 -directory <String>
@@ -26,10 +24,9 @@ Creates a .zip archive of the given directory.
 ```
 
 ```
-<CommonParameters>
+[<CommonParameters>]
     This cmdlet supports the common parameters: Verbose, Debug, ErrorAction, ErrorVariable, WarningAction, 
     WarningVariable, OutBuffer, PipelineVariable, and OutVariable.
-    For more information, see about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 ```
 
 ## Example

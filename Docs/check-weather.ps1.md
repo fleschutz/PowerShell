@@ -8,12 +8,10 @@ check-weather.ps1 [<location>]
 ## Description
 Checks the weather for critical values.
 
-## Syntax
+## Syntax & Parameters
 ```powershell
 /home/mf/PowerShell/Scripts/check-weather.ps1 [[-Location] <String>] [<CommonParameters>]
 ```
-
-## Parameters
 
 ```
 -Location <String>
@@ -26,10 +24,9 @@ Checks the weather for critical values.
 ```
 
 ```
-<CommonParameters>
+[<CommonParameters>]
     This cmdlet supports the common parameters: Verbose, Debug, ErrorAction, ErrorVariable, WarningAction, 
     WarningVariable, OutBuffer, PipelineVariable, and OutVariable.
-    For more information, see about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 ```
 
 ## Example

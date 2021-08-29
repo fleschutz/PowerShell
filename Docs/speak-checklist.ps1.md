@@ -8,12 +8,10 @@ speak-checklist.ps1 [<name>]
 ## Description
 Speaks the given checklist by text-to-speech (TTS).
 
-## Syntax
+## Syntax & Parameters
 ```powershell
 /home/mf/PowerShell/Scripts/speak-checklist.ps1 [[-Name] <String>] [<CommonParameters>]
 ```
-
-## Parameters
 
 ```
 -Name <String>
@@ -26,10 +24,9 @@ Speaks the given checklist by text-to-speech (TTS).
 ```
 
 ```
-<CommonParameters>
+[<CommonParameters>]
     This cmdlet supports the common parameters: Verbose, Debug, ErrorAction, ErrorVariable, WarningAction, 
     WarningVariable, OutBuffer, PipelineVariable, and OutVariable.
-    For more information, see about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 ```
 
 ## Example

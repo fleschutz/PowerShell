@@ -8,12 +8,10 @@ copy-photos-sorted.ps1 [<source-dir>] [<target-dir-tree>]
 ## Description
 Copies all photos in source-dir sorted by year and month into the target-dir-tree.
 
-## Syntax
+## Syntax & Parameters
 ```powershell
 /home/mf/PowerShell/Scripts/copy-photos-sorted.ps1 [[-SourceDir] <String>] [[-TargetDirTree] <String>] [<CommonParameters>]
 ```
-
-## Parameters
 
 ```
 -SourceDir <String>
@@ -36,10 +34,9 @@ Copies all photos in source-dir sorted by year and month into the target-dir-tre
 ```
 
 ```
-<CommonParameters>
+[<CommonParameters>]
     This cmdlet supports the common parameters: Verbose, Debug, ErrorAction, ErrorVariable, WarningAction, 
     WarningVariable, OutBuffer, PipelineVariable, and OutVariable.
-    For more information, see about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 ```
 
 ## Example
