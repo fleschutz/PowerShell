@@ -197,18 +197,21 @@ Scripts for File Conversion
 
 🔎 Scripts for PowerShell 
 ------------------------
-* [daily-tasks.sh](Scripts/daily-tasks.sh) - execute PowerShell scripts automatically as daily tasks (Linux only)
-* [introduce-powershell.ps1](Scripts/introduce-powershell.ps1) - introduces PowerShell to new users
-* [list-aliases.ps1](Scripts/list-aliases.ps1) - lists all PowerShell aliases 
-* [list-automatic-variables.ps1](Scripts/list-automatic-variables.ps1) - lists the automatic variables of PowerShell 
-* [list-cheat-sheet.ps1](Scripts/list-cheat-sheet.ps1) - lists the PowerShell cheat sheet
-* [list-cmdlets.ps1](Scripts/list-cmdlets.ps1) - lists the PowerShell cmdlets
-* [list-console-colors.ps1](Scripts/list-console-colors.ps1) - lists all console colors
-* [list-modules.ps1](Scripts/list-modules.ps1) - lists the PowerShell modules
-* [list-profiles.ps1](Scripts/list-profiles.ps1) - lists your PowerShell profiles
-* [list-scripts.ps1](Scripts/list-scripts.ps1) - lists all PowerShell scripts in this repository
-* [set-profile.ps1](Scripts/set-profile.ps1) - updates your PowerShell user profile
-* [template.ps1](Scripts/template.ps1) - copy this template PowerShell script to write a new one
+
+| Script                                                 | Description                                                        | Documentation                           |
+| ------------------------------------------------------ | ------------------------------------------------------------------ | --------------------------------------- |
+| [daily-tasks.sh](Scripts/daily-tasks.sh)               | execute PowerShell scripts automatically as daily tasks (Linux only) | [Manual](Docs/daily-tasks.sh.md)      |
+| [introduce-powershell.ps1](Scripts/introduce-powershell.ps1) | introduces PowerShell to new users                           | [Manual](Docs/introduce-powershell.ps1.md) |
+| [list-aliases.ps1](Scripts/list-aliases.ps1)           | lists all PowerShell aliases                                       | [Manual](Docs/list-aliases.ps1.md)      |
+| [list-automatic-variables.ps1](Scripts/list-automatic-variables.ps1) | lists the automatic variables of PowerShell          | [Manual](Docs/list-automatic-variables.ps1.md) |
+| [list-cheat-sheet.ps1](Scripts/list-cheat-sheet.ps1)   | lists the PowerShell cheat sheet                                   | [Manual](Docs/list-cheat-sheet.ps1.md)  |
+| [list-cmdlets.ps1](Scripts/list-cmdlets.ps1)           | lists the PowerShell cmdlets                                       | [Manual](Docs/list-cmdlets.ps1.md)      |
+| [list-console-colors.ps1](Scripts/list-console-colors.ps1) | lists all console colors                                       | [Manual](Docs/list-console-colors.ps1.md) |
+| [list-modules.ps1](Scripts/list-modules.ps1)           | lists the PowerShell modules                                       | [Manual](Docs/list-modules.ps1.md)      |
+| [list-profiles.ps1](Scripts/list-profiles.ps1)         | lists your PowerShell profiles                                     | [Manual](Docs/list-profiles.ps1.md)     |
+| [list-scripts.ps1](Scripts/list-scripts.ps1)           | lists all PowerShell scripts in this repository                    | [Manual](Docs/list-scripts.ps1.md)      |
+| [set-profile.ps1](Scripts/set-profile.ps1)             | updates your PowerShell user profile                               | [Manual](Docs/set-profile.ps1.md        |
+| [template.ps1](Scripts/template.ps1)                   | copy this template PowerShell script to write a new one            | [Manual](Docs/template.ps1.md)          |
 
 🛒 Various PowerShell Scripts 
 ------------------------------
