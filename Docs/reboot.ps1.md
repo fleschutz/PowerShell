@@ -1,4 +1,4 @@
-# PowerShell Script reboot.ps1
+# PowerShell Script /home/mf/PowerShell/Scripts/reboot.ps1
 
 ## Synopsis
 reboot.ps1
@@ -25,3 +25,5 @@ License: CC0
 
 ## Related Links
 https://github.com/fleschutz/PowerShell
+
+*Created by convert-ps2md.ps1*
