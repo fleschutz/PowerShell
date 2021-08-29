@@ -164,12 +164,12 @@ Scripts for File Conversion
 
 | Script                                                 | Description                                                        | Documentation                           |
 | ------------------------------------------------------ | ------------------------------------------------------------------ | --------------------------------------- |
-| [convert-txt2wav.ps1](Scripts/convert-txt2wav.ps1)     | converts text to a .WAV audio file                                 | [Manual](Docs/convert-txt2wav.ps1.md)   |
-| [convert-ps2bat.ps1](Scripts/convert-ps2bat.ps1)       | converts PowerShell script(s) to .bat files                        | [Manual](Docs/convert-ps2bat.ps1.md)    |
+| [convert-csv2txt.ps1](Scripts/convert-csv2txt.ps1)     | converts a given .CSV file to a text file                          | [Manual](Docs/convert-csv2txt.ps1.md)   |
+| [convert-mysql2csv.ps1](Scripts/convert-mysql2csv.ps1) | converts a MySQL database table to a .CSV file                     | [Manual](Docs/convert-mysql2csv.ps1.md) |
+| [convert-ps2bat.ps1](Scripts/convert-ps2bat.ps1)       | converts a PowerShell script to a .BAT file                        | [Manual](Docs/convert-ps2bat.ps1.md)    |
 | [convert-ps2md.ps1](Scripts/convert-ps2md.ps1)         | converts the comment-based help of a PowerShell script to Markdown | [Manual](Docs/convert-ps2md.ps1.md)     |
-| [convert-csv2txt.ps1](Scripts/convert-csv2txt.ps1)     | converts a given CSV file to a text list                           | [Manual](Docs/convert-csv2txt.ps1.md)   |
-| [convert-mysql2csv.ps1](Scripts/convert-mysql2csv.ps1) | converts a MySQL database table to a CSV file                      | [Manual](Docs/convert-mysql2csv.ps1.md) |
-| [convert-sql2csv.ps1](Scripts/convert-sql2csv.ps1)     | converts a SQL database table to a CSV file                        | [Manual](Docs/convert-sql2csv.ps1.md)   |
+| [convert-sql2csv.ps1](Scripts/convert-sql2csv.ps1)     | converts a SQL database table to a .CSV file                       | [Manual](Docs/convert-sql2csv.ps1.md)   |
+| [convert-txt2wav.ps1](Scripts/convert-txt2wav.ps1)     | converts a text file to a .WAV audio file                          | [Manual](Docs/convert-txt2wav.ps1.md)   |
 
 📝 Scripts for Git
 -------------------
