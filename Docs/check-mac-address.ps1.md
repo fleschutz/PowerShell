@@ -24,8 +24,13 @@ Checks the given MAC address for validity (MAC address like 00:00:00:00:00:00 or
     Accept pipeline input?       false
     Accept wildcard characters?  false
 ```
+
+```
 ## <CommonParameters>
-This cmdlet supports the common parameters: Verbose, Debug, ErrorAction, ErrorVariable, WarningAction, WarningVariable, OutBuffer, PipelineVariable, and OutVariable. For more information, see about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
+    This cmdlet supports the common parameters: Verbose, Debug, ErrorAction, ErrorVariable, WarningAction, 
+    WarningVariable, OutBuffer, PipelineVariable, and OutVariable.
+    For more information, see about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
+```
 
 ## Example
 ```powershell
