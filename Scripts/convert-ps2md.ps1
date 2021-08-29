@@ -52,14 +52,17 @@ function GetRemark { param($Example)
 
 try {
 	if ($script -eq "") { $script = read-host "Enter path to PowerShell script" }
+	$ScriptName = (get-item "$script").Name
 
-	$full = Get-Help $script -Full -Path D:
+	$full = Get-Help $script -Full 
 
-	"# PowerShell Script $script"
+	"# PowerShell Script $scriptName"
 
 	""
 	"## Synopsis"
+	"``````powershell"
 	"$($full.Synopsis)"
+	"``````"
 
 	$Description = ($full.description | Out-String).Trim()
 	if ($Description -ne "") {
@@ -77,10 +80,10 @@ try {
 		"``````"
 	}
 
+	""
+	"## Parameters"
 	foreach($parameter in $full.parameters.parameter) {
 		""
-		"## -$($parameter.name) &lt;$($parameter.type.name)&gt; Parameter"
-		"$(($parameter.description | Out-String).Trim())"
 		"``````"
 		"$(((($parameter | Out-String).Trim() -split "`r`n")[-5..-1] | % { $_.Trim() }) -join "`r`n")"
 		"``````"
