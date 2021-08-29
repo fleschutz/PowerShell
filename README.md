@@ -7,37 +7,40 @@ Mega Collection of PowerShell Scripts
 
 🔊 Scripts for Audio & Voice 
 -----------------------------
-* [mute-audio.ps1](Scripts/mute-audio.ps1) - mutes audio
-* [list-voices.ps1](Scripts/list-voices.ps1) - lists the installed text-to-speech (TTS) voices
-* [play-beep.ps1](Scripts/play-beep.ps1) - plays a beep sound
-* [play-files.ps1](Scripts/play-files.ps1) - plays the given audio files
-* [play-happy-birthday.ps1](Scripts/play-happy-birthday.ps1) - plays the Happy Birthday song
-* [play-imperial-march.ps1](Scripts/play-imperial-march.ps1) - plays the Imperial March (Star Wars)
-* [play-jingle-bells.ps1](Scripts/play-jingle-bells.ps1) - plays Jingle Bells
-* [play-mission-impossible.ps1](Scripts/play-mission-impossible.ps1) - plays the Mission Impossible theme
-* [play-m3u.ps1](Scripts/play-m3u.ps1) - plays the given playlist (M3U file format)
-* [play-mp3.ps1](Scripts/play-mp3.ps1) - plays the given sound file (MP3 file format)
-* [play-super-mario.ps1](Scripts/play-super-mario.ps1) - plays the Super Mario Intro
-* [play-tetris-melody.ps1](Scripts/play-tetris-melody.ps1) - plays the Tetris melody
-* [speak-checklist.ps1](Scripts/speak-checklist.ps1) - speaks the given checklist by text-to-speech (TTS)
-* [speak-countdown.ps1](Scripts/speak-countdown.ps1) - starts a countdown by text-to-speech (TTS)
-* [speak-date.ps1](Scripts/speak-date.ps1) - speaks the current date by text-to-speech (TTS)
-* [speak-english.ps1](Scripts/speak-english.ps1) - speaks the given text with an English text-to-speech (TTS) voice
-* [speak-epub.ps1](Scripts/speak-epub.ps1) - speaks the content of the given Epub file by text-to-speech (TTS)
-* [speak-file.ps1](Scripts/speak-file.ps1) - speaks the content of the given text file by text-to-speech (TTS)
-* [speak-french.ps1](Scripts/speak-french.ps1) - speaks the given text with a French text-to-speech (TTS) voice
-* [speak-german.ps1](Scripts/speak-german.ps1) - speaks the given text with a German text-to-speech (TTS) voice
-* [speak-italian.ps1](Scripts/speak-italian.ps1) - speaks the given text with an Italian text-to-speech (TTS) voice
-* [speak-joke.ps1](Scripts/speak-joke.ps1) - speaks a random Chuck Norris joke by text-to-speech (TTS)
-* [speak-quote.ps1](Scripts/speak-quote.ps1) - speaks a random quote by text-to-speech (TTS)
-* [speak-spanish.ps1](Scripts/speak-spanish.ps1) - speaks the given text with a Spanish text-to-speech (TTS) voice
-* [speak-test.ps1](Scripts/speak-test.ps1) - performs a speak test by text-to-speech (TTS)
-* [speak-text.ps1](Scripts/speak-text.ps1) - speaks the given text by text-to-speech (TTS)
-* [speak-time.ps1](Scripts/speak-time.ps1) - speaks the current time by text-to-speech (TTS)
-* [turn-volume-up.ps1](Scripts/turn-volume-up.ps1) - turns the audio volume up (+10% by default)
-* [turn-volume-down.ps1](Scripts/turn-volume-down.ps1) - turns the audio volume down (-10% by default)
-* [unmute-audio.ps1](Scripts/unmute-audio.ps1) - unmutes audio
-* [voice-control.ps1](Scripts/voice-control.ps1) - executes the PowerShell scripts by voice
+
+| Script                                               | Description                                                        | Documentation                           |
+| ---------------------------------------------------- | ------------------------------------------------------------------ | --------------------------------------- |
+| [mute-audio.ps1](Scripts/mute-audio.ps1)             | mutes the audio device
+| [list-voices.ps1](Scripts/list-voices.ps1)           | lists the installed text-to-speech (TTS) voices
+| [play-beep.ps1](Scripts/play-beep.ps1)               | plays a beep sound
+| [play-files.ps1](Scripts/play-files.ps1)             | plays the given audio files
+| [play-happy-birthday.ps1](Scripts/play-happy-birthday.ps1) | plays the Happy Birthday song
+| [play-imperial-march.ps1](Scripts/play-imperial-march.ps1) | plays the Imperial March (Star Wars)
+| [play-jingle-bells.ps1](Scripts/play-jingle-bells.ps1) | plays Jingle Bells
+| [play-mission-impossible.ps1](Scripts/play-mission-impossible.ps1) | plays the Mission Impossible theme
+| [play-m3u.ps1](Scripts/play-m3u.ps1)                 | plays the given playlist (M3U file format)
+| [play-mp3.ps1](Scripts/play-mp3.ps1)                 | plays the given sound file (MP3 file format)
+| [play-super-mario.ps1](Scripts/play-super-mario.ps1) | plays the Super Mario Intro
+| [play-tetris-melody.ps1](Scripts/play-tetris-melody.ps1) | plays the Tetris melody
+| [speak-checklist.ps1](Scripts/speak-checklist.ps1)   | speaks the given checklist by text-to-speech (TTS)
+| [speak-countdown.ps1](Scripts/speak-countdown.ps1)   | starts a countdown by text-to-speech (TTS)
+| [speak-date.ps1](Scripts/speak-date.ps1)             | speaks the current date by text-to-speech (TTS)
+| [speak-english.ps1](Scripts/speak-english.ps1)       | speaks the given text with an English text-to-speech (TTS) voice
+| [speak-epub.ps1](Scripts/speak-epub.ps1)             | speaks the content of the given Epub file by text-to-speech (TTS)
+| [speak-file.ps1](Scripts/speak-file.ps1)             | speaks the content of the given text file by text-to-speech (TTS)
+| [speak-french.ps1](Scripts/speak-french.ps1)         | speaks the given text with a French text-to-speech (TTS) voice
+| [speak-german.ps1](Scripts/speak-german.ps1)         | speaks the given text with a German text-to-speech (TTS) voice
+| [speak-italian.ps1](Scripts/speak-italian.ps1)       | speaks the given text with an Italian text-to-speech (TTS) voice
+| [speak-joke.ps1](Scripts/speak-joke.ps1)             | speaks a random Chuck Norris joke by text-to-speech (TTS)
+| [speak-quote.ps1](Scripts/speak-quote.ps1)           | speaks a random quote by text-to-speech (TTS)
+| [speak-spanish.ps1](Scripts/speak-spanish.ps1)       | speaks the given text with a Spanish text-to-speech (TTS) voice
+| [speak-test.ps1](Scripts/speak-test.ps1)             | performs a speak test by text-to-speech (TTS)
+| [speak-text.ps1](Scripts/speak-text.ps1)             | speaks the given text by text-to-speech (TTS)
+| [speak-time.ps1](Scripts/speak-time.ps1)             | speaks the current time by text-to-speech (TTS)
+| [turn-volume-up.ps1](Scripts/turn-volume-up.ps1)     | turns the audio volume up (+10% by default)
+| [turn-volume-down.ps1](Scripts/turn-volume-down.ps1) | turns the audio volume down (-10% by default)
+| [unmute-audio.ps1](Scripts/unmute-audio.ps1)         | unmutes the audio device
+| [voice-control.ps1](Scripts/voice-control.ps1)       | executes the PowerShell scripts by voice
 
 ⚙️ Scripts for Computer Management
 -----------------------------------
