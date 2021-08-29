@@ -4,7 +4,7 @@
 .DESCRIPTION
 	Lists all automatic variables of PowerShell 
 .EXAMPLE
-	PS> .\list-auutomatic-variables.ps1
+	PS> .\list-automatic-variables.ps1
 .LINK
 	https://github.com/fleschutz/PowerShell
 .NOTES
