@@ -7,7 +7,6 @@ Mega Collection of PowerShell Scripts
 
 🔊 Scripts for Audio & Voice 
 -----------------------------
-* [convert-txt2wav.ps1](Scripts/convert-txt2wav.ps1) - converts text to a .WAV audio file
 * [mute-audio.ps1](Scripts/mute-audio.ps1) - mutes audio
 * [list-voices.ps1](Scripts/list-voices.ps1) - lists the installed text-to-speech (TTS) voices
 * [play-beep.ps1](Scripts/play-beep.ps1) - plays a beep sound
@@ -160,6 +159,18 @@ Mega Collection of PowerShell Scripts
 * [upload-file.ps1](Scripts/zip-dir.ps1) - uploads the local file to the given FTP server
 * [zip-dir.ps1](Scripts/zip-dir.ps1) - creates a .zip archive of the given directory
 
+Scripts for File Conversion
+---------------------------
+
+| Script                                                 | Description                                                        | Documentation                         |
+| ------------------------------------------------------ | ------------------------------------------------------------------ | ------------------------------------- |
+| [convert-txt2wav.ps1](Scripts/convert-txt2wav.ps1)     | converts text to a .WAV audio file                                 | [Manual](Docs/convert-txt2wav.ps1.md) |
+| [convert-ps2bat.ps1](Scripts/convert-ps2bat.ps1)       | converts PowerShell script(s) to .bat files                        | [Manual](Docs/convert-ps2bat.ps1.md)  |
+| [convert-ps2md.ps1](Scripts/convert-ps2md.ps1)         | converts the comment-based help of a PowerShell script to Markdown | [Manual](Docs/convert-ps2md.ps1.md)   |
+| [convert-csv2txt.ps1](Scripts/convert-csv2txt.ps1)     | converts the given CSV file to a text list                         | [Manual](Docs/convert-csv2txt.ps1.md) |
+| [convert-mysql2csv.ps1](Scripts/convert-mysql2csv.ps1) | converts the MySQL database table to a CSV file                    | [Manual](Docs/convert-sql2csv.ps1.md) |
+| [convert-sql2csv.ps1](Scripts/convert-sql2csv.ps1)     | converts the SQL database table to a CSV file1
+
 📝 Scripts for Git
 -------------------
 * [cherry-picker.ps1](Scripts/cherry-picker.ps1) - cherry-picks a Git commit into multiple branches
@@ -186,8 +197,6 @@ Mega Collection of PowerShell Scripts
 
 🔎 Scripts for PowerShell 
 ------------------------
-* [convert-ps2bat.ps1](Scripts/convert-ps2bat.ps1) - converts PowerShell script(s) to .bat files
-* [convert-ps2md.ps1](Scripts/convert-ps2md.ps1) - converts the comment-based help of a PowerShell script to Markdown
 * [daily-tasks.sh](Scripts/daily-tasks.sh) - execute PowerShell scripts automatically as daily tasks (Linux only)
 * [introduce-powershell.ps1](Scripts/introduce-powershell.ps1) - introduces PowerShell to new users
 * [list-aliases.ps1](Scripts/list-aliases.ps1) - lists all PowerShell aliases 
@@ -209,9 +218,6 @@ Mega Collection of PowerShell Scripts
 * [check-mac-address.ps1](Scripts/check-mac-address.ps1) - checks the given MAC address for validity
 * [check-subnet-mask.ps1](Scripts/check-subnet-mask.ps1) - checks the given subnet mask for validity
 * [check-weather.ps1](Scripts/check-weather.ps1) - checks the current weather for critical values
-* [convert-csv2txt.ps1](Scripts/convert-csv2txt.ps1) - converts the given CSV file to a text list
-* [convert-mysql2csv.ps1](Scripts/convert-mysql2csv.ps1) - converts the MySQL database table to a CSV file
-* [convert-sql2csv.ps1](Scripts/convert-sql2csv.ps1) - converts the SQL database table to a CSV file
 * [display-time.ps1](Scripts/display-time.ps1) - displays the current time for 10 seconds by default
 * [generate-qrcode.ps1](Scripts/generate-qrcode.ps1) - generates a QR code
 * [list-anagrams.ps1](Scripts/list-anagrams.ps1) - lists all anagrams of the given word
