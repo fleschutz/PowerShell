@@ -210,7 +210,7 @@ Scripts for File Conversion
 | [list-modules.ps1](Scripts/list-modules.ps1)           | lists the PowerShell modules                                       | [Manual](Docs/list-modules.ps1.md)      |
 | [list-profiles.ps1](Scripts/list-profiles.ps1)         | lists your PowerShell profiles                                     | [Manual](Docs/list-profiles.ps1.md)     |
 | [list-scripts.ps1](Scripts/list-scripts.ps1)           | lists all PowerShell scripts in this repository                    | [Manual](Docs/list-scripts.ps1.md)      |
-| [set-profile.ps1](Scripts/set-profile.ps1)             | updates your PowerShell user profile                               | [Manual](Docs/set-profile.ps1.md        |
+| [set-profile.ps1](Scripts/set-profile.ps1)             | updates your PowerShell user profile                               | [Manual](Docs/set-profile.ps1.md)       |
 | [template.ps1](Scripts/template.ps1)                   | copy this template PowerShell script to write a new one            | [Manual](Docs/template.ps1.md)          |
 
 🛒 Various PowerShell Scripts 
