@@ -6,8 +6,7 @@
 .EXAMPLE
 	PS> .\convert-ps2md.ps1 myscript.ps1
 .NOTES
-	Author:  Markus Fleschutz
-	License: CC0
+	Author: Markus Fleschutz | License: CC0
 .LINK
 	https://github.com/fleschutz/PowerShell
 #>
@@ -123,6 +122,9 @@ try {
 		"## Related Links"
 		"$Links"
 	}
+
+	""
+	"*Created by convert-ps2md.ps1*"
 } catch {
         write-error "⚠️ Error in line $($_.InvocationInfo.ScriptLineNumber): $($Error[0])"
         exit 1
