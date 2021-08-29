@@ -2,14 +2,13 @@
 .SYNOPSIS
 	clear-recycle-bin.ps1 
 .DESCRIPTION
-	Removes the content of the recycle bin folder (can not be undo!)
+	Removes the content of the recycle bin folder (can not be undo).
 .EXAMPLE
 	PS> .\clear-recycle-bin.ps1 
+.NOTES
+	Author: Markus Fleschutz · License: CC0
 .LINK
 	https://github.com/fleschutz/PowerShell
-.NOTES
-	Author:  Markus Fleschutz
-	License: CC0
 #>
 
 try {

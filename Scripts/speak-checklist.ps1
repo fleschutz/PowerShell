@@ -2,14 +2,13 @@
 .SYNOPSIS
 	speak-checklist.ps1 [<name>]
 .DESCRIPTION
-	Speaks the given checklist by text-to-speech (TTS)
+	Speaks the given checklist by text-to-speech (TTS).
 .EXAMPLE
 	PS> .\speak-checklist.ps1 
+.NOTES
+	Author: Markus Fleschutz · License: CC0
 .LINK
 	https://github.com/fleschutz/PowerShell
-.NOTES
-	Author:  Markus Fleschutz
-	License: CC0
 #>
 
 param([string]$Name = "")

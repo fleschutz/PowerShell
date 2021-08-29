@@ -2,14 +2,13 @@
 .SYNOPSIS
 	open-file-explorer.ps1
 .DESCRIPTION
-	Starts the File Explorerer
+	Starts the File Explorer.
 .EXAMPLE
 	PS> .\open-file-explorer.ps1
+.NOTES
+	Author: Markus Fleschutz · License: CC0
 .LINK
 	https://github.com/fleschutz/PowerShell
-.NOTES
-	Author:  Markus Fleschutz
-	License: CC0
 #>
 
 try {

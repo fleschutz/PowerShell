@@ -2,14 +2,13 @@
 .SYNOPSIS
 	unmute-audio.ps1
 .DESCRIPTION
-	Unmutes the audio output
+	Unmutes the audio output.
 .EXAMPLE
 	PS> .\unmute-audio.ps1
+.NOTES
+	Author: Markus Fleschutz · License: CC0
 .LINK
 	https://github.com/fleschutz/PowerShell
-.NOTES
-	Author:  Markus Fleschutz
-	License: CC0
 #>
 
 try {

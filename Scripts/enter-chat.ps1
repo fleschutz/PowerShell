@@ -1,4 +1,17 @@
-﻿# make sure you adjust this path
+﻿<#
+.SYNOPSIS
+	enter-chat.ps1 
+.DESCRIPTION
+	Enters a chat using a common network shared file.
+.EXAMPLE
+	PS> .\enter-chat.ps1
+.NOTES
+	Author: Markus Fleschutz · License: CC0
+.LINK
+	https://github.com/fleschutz/PowerShell
+#>
+
+# make sure you adjust this path
 # it must point to a network share where you have read and write permissions
 $ServerShare = "\\myserver\chathome"
 

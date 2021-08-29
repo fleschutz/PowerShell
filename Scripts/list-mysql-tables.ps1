@@ -1,4 +1,17 @@
-﻿# This script lists all of the tables in a MySQL database and exports the list as a CSV
+﻿<#
+.SYNOPSIS
+	list-mysql-tables.ps1 
+.DESCRIPTION
+	Lists the MySQL tables.
+.EXAMPLE
+	PS> .\list-mysql-tables.ps1
+.NOTES
+	Author: Markus Fleschutz · License: CC0
+.LINK
+	https://github.com/fleschutz/PowerShell
+#>
+
+# This script lists all of the tables in a MySQL database and exports the list as a CSV
 # Install-Module InvokeQuery
 # Run the above command if you do not have this module
 param(

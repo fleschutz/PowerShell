@@ -2,14 +2,13 @@
 .SYNOPSIS
 	fetch-repo.ps1 [<repo-dir>]
 .DESCRIPTION
-	Fetches updates for a local Git repository (including submodules)
+	Fetches updates for a local Git repository (including submodules).
 .EXAMPLE
 	PS> .\fetch-repo.ps1
+.NOTES
+	Author: Markus Fleschutz · License: CC0
 .LINK
 	https://github.com/fleschutz/PowerShell
-.NOTES
-	Author:  Markus Fleschutz
-	License: CC0
 #>
 
 param([string]$RepoDir = "$PWD")

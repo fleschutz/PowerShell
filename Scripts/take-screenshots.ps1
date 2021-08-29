@@ -2,14 +2,13 @@
 .SYNOPSIS
 	take-screenshots.ps1 [<directory>] [<interval>]
 .DESCRIPTION
-	Takes screenshots every 60 seconds and saves them into the current/given directory
+	Takes screenshots every 60 seconds and saves them into the current/given directory.
 .EXAMPLE
 	PS> .\take-screenshots.ps1 C:\Temp 60
+.NOTES
+	Author: Markus Fleschutz · License: CC0
 .LINK
 	https://github.com/fleschutz/PowerShell
-.NOTES
-	Author:  Markus Fleschutz
-	License: CC0
 #>
 
 param([string]$Directory = "$PWD", [int]$Interval = 60)

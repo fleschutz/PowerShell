@@ -2,14 +2,13 @@
 .SYNOPSIS
 	cd-up4.ps1
 .DESCRIPTION
-	Go four directory levels up
+	Go four directory levels up.
 .EXAMPLE
 	PS> .\cd-up4.ps1
 .LINK
 	https://github.com/fleschutz/PowerShell
 .NOTES
-	Author:  Markus Fleschutz
-	License: CC0
+	Author: Markus Fleschutz · License: CC0
 #>
 
 $TargetDir = resolve-path "../../../.."

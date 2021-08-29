@@ -2,14 +2,13 @@
 .SYNOPSIS
 	write-braille.ps1 [<text>]
 .DESCRIPTION
-	Writes the given text in Braille
+	Writes the given text in Braille.
 .EXAMPLE
 	PS> .\write-braille.ps1 "Hello World"
+.NOTES
+	Author: Markus Fleschutz · License: CC0
 .LINK
 	https://github.com/fleschutz/PowerShell
-.NOTES
-	Author:  Markus Fleschutz
-	License: CC0
 #>
 
 param([string]$Text = "")

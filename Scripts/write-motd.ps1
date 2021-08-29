@@ -2,14 +2,13 @@
 .SYNOPSIS
 	write-motd.ps1 
 .DESCRIPTION
-	Writes the message of the day (MOTD)
+	Writes the message of the day (MOTD).
 .EXAMPLE
 	PS> .\write-motd.ps1 
+.NOTES
+	Author: Markus Fleschutz · License: CC0
 .LINK
 	https://github.com/fleschutz/PowerShell
-.NOTES
-	Author:  Markus Fleschutz
-	License: CC0
 #>
 
 # Retrieve information:

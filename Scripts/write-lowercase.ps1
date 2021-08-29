@@ -2,19 +2,18 @@
 .SYNOPSIS
 	write-lowercase.ps1 [<text>]
 .DESCRIPTION
-	Writes the given text in lowercase letters
+	Writes the given text in lowercase letters.
 .EXAMPLE
 	PS> .\write-lowercase.ps1 "Hello World"
+.NOTES
+	Author: Markus Fleschutz · License: CC0
 .LINK
 	https://github.com/fleschutz/PowerShell
-.NOTES
-	Author:  Markus Fleschutz
-	License: CC0
 #>
 
-param([string]$Text = "")
+param([string]$text = "")
 
-if ($Text -eq "" ) { $Text = read-host "Enter the text to write" }
+if ($text -eq "" ) { $text = read-host "Enter the text to write" }
 
-write-output $Text.ToLower()
+write-output $text.ToLower()
 exit 0

@@ -2,14 +2,13 @@
 .SYNOPSIS
 	list-files.ps1 [<dir-tree>]
 .DESCRIPTION
-	Lists all files in the given directory tree
+	Lists all files in the given directory tree.
 .EXAMPLE
 	PS> .\list-files.ps1 C:\
+.NOTES
+	Author: Markus Fleschutz · License: CC0
 .LINK
 	https://github.com/fleschutz/PowerShell
-.NOTES
-	Author:  Markus Fleschutz
-	License: CC0
 #>
 
 param([string]$DirTree = "")

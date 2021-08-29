@@ -2,14 +2,13 @@
 .SYNOPSIS
 	send-email.ps1 
 .DESCRIPTION
-	Sends an email
+	Sends an email message.
 .EXAMPLE
 	PS> .\send-email.ps1
+.NOTES
+	Author: Markus Fleschutz · License: CC0
 .LINK
 	https://github.com/fleschutz/PowerShell
-.NOTES
-	Author:  Markus Fleschutz
-	License: CC0
 #>
 
 $smtpServer = "smtp.example.com"

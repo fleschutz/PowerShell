@@ -2,14 +2,13 @@
 .SYNOPSIS
 	list-tags.ps1 [<repo-dir>] [<pattern>]
 .DESCRIPTION
-	Lists all tags in the current/given Git repository 
+	Lists all tags in the current/given Git repository.
 .EXAMPLE
 	PS> .\list-tags.ps1 C:\MyRepo
+.NOTES
+	Author: Markus Fleschutz · License: CC0
 .LINK
 	https://github.com/fleschutz/PowerShell
-.NOTES
-	Author:  Markus Fleschutz
-	License: CC0
 #>
 
 param([string]$RepoDir = "$PWD", [string]$Pattern="*")

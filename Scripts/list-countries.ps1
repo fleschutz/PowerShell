@@ -2,14 +2,13 @@
 .SYNOPSIS
 	list-countries.ps1 
 .DESCRIPTION
-	Lists details of all countries
+	Lists details of all countries.
 .EXAMPLE
 	PS> .\list-countries.ps1
+.NOTES
+	Author: Markus Fleschutz · License: CC0
 .LINK
 	https://github.com/fleschutz/PowerShell
-.NOTES
-	Author:  Markus Fleschutz
-	License: CC0
 #>
 
 function ListCountries { 

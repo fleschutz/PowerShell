@@ -2,14 +2,13 @@
 .SYNOPSIS
         play-happy-birthday.ps1
 .DESCRIPTION
-        Plays the Happy Birthday song
+        Plays the Happy Birthday song.
 .EXAMPLE
         PS> .\play-happy-birthday.ps1
+.NOTES
+	Author: Markus Fleschutz · License: CC0
 .LINK
         https://github.com/fleschutz/PowerShell
-.NOTES
-        Author:  Markus Fleschutz
-        License: CC0
 #>
 
 [System.Console]::Beep(1059.274, 300)

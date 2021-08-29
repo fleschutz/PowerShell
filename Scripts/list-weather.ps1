@@ -2,14 +2,13 @@
 .SYNOPSIS
 	list-weather.ps1 [<location>]
 .DESCRIPTION
-	Lists the hourly weather 
+	Lists the hourly weather.
 .EXAMPLE
 	PS> .\list-weather.ps1
+.NOTES
+	Author: Markus Fleschutz · License: CC0
 .LINK
 	https://github.com/fleschutz/PowerShell
-.NOTES
-	Author:  Markus Fleschutz
-	License: CC0
 #>
 
 param([string]$Location = "") # empty means determine automatically

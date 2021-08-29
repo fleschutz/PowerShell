@@ -2,14 +2,13 @@
 .SYNOPSIS
 	convert-ps2bat.ps1 [<pattern>]
 .DESCRIPTION
-	Converts PowerShell script(s) to .bat files
+	Converts a PowerShell script to .bat files.
 .EXAMPLE
 	PS> .\convert-ps2bat.ps1 *.ps1
+.NOTES
+	Author: Markus Fleschutz · License: CC0
 .LINK
 	https://github.com/fleschutz/PowerShell
-.NOTES
-	Author:  Markus Fleschutz
-	License: CC0
 #>
 
 param([string]$Pattern = "")

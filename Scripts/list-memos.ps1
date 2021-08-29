@@ -2,14 +2,13 @@
 .SYNOPSIS
 	list-memos.ps1 
 .DESCRIPTION
-	Lists all memos in $HOME/Memos.csv
+	Lists all memos in $HOME/Memos.csv.
 .EXAMPLE
 	PS> .\list-memos.ps1
+.NOTES
+	Author: Markus Fleschutz · License: CC0
 .LINK
 	https://github.com/fleschutz/PowerShell
-.NOTES
-	Author:  Markus Fleschutz
-	License: CC0
 #>
 
 

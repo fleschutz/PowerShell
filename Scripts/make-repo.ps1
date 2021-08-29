@@ -2,14 +2,13 @@
 .SYNOPSIS
 	make-repo.ps1 [<repo-dir>]
 .DESCRIPTION
-	builds a Git repository supporting cmake,configure,autogen,Imakefile,Makefile
+	Builds a Git repository supporting cmake,configure,autogen,Imakefile,Makefile.
 .EXAMPLE
 	PS> .\make-repo.ps1 C:\MyRepo
+.NOTES
+	Author: Markus Fleschutz · License: CC0
 .LINK
 	https://github.com/fleschutz/PowerShell
-.NOTES
-	Author:  Markus Fleschutz
-	License: CC0
 #>
 
 param([string]$RepoDir = "$PWD")

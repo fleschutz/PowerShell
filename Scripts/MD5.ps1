@@ -2,14 +2,13 @@
 .SYNOPSIS
 	MD5.ps1 [<file>]
 .DESCRIPTION
-	Prints the MD5 checksum of the given file
+	Prints the MD5 checksum of the given file.
 .EXAMPLE
 	PS> .\MD5.ps1 C:\MyFile.txt
+.NOTES
+	Author: Markus Fleschutz · License: CC0
 .LINK
 	https://github.com/fleschutz/PowerShell
-.NOTES
-	Author:  Markus Fleschutz
-	License: CC0
 #>
 
 param([string]$File = "")

@@ -2,14 +2,13 @@
 .SYNOPSIS
 	copy-photos-sorted.ps1 [<source-dir>] [<target-dir-tree>]
 .DESCRIPTION
-	Copies all photos in source-dir sorted by year and month into the target-dir-tree
+	Copies all photos in source-dir sorted by year and month into the target-dir-tree.
 .EXAMPLE
 	PS> .\copy-photos-sorted.ps1 C:\MyPhotos C:\MyPhotoAlbum
+.NOTES
+	Author: Markus Fleschutz · License: CC0
 .LINK
 	https://github.com/fleschutz/PowerShell
-.NOTES
-	Author:  Markus Fleschutz
-	License: CC0
 #>
 
 param([string]$SourceDir = "", [string]$TargetDirTree = "")

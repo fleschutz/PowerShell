@@ -10,12 +10,11 @@
 	← enter outputs here (if any, otherwise state None)
 .EXAMPLE
 	PS> .\template.ps1 ← enter example here (repeat this attribute for more than one example)
-.LINK
-	← enter URL here
 .NOTES
 	Author:        ← enter full name here
-	Creation Date: ← enter date here
 	License:       ← enter license here
+.LINK
+	← enter URL here
 #>
 
 param() # ← enter script parameters here

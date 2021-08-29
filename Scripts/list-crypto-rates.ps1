@@ -2,14 +2,13 @@
 .SYNOPSIS
 	list-crypto-rates.ps1 
 .DESCRIPTION
-	Lists the current crypto exchange rates 
+	Lists the current crypto exchange rates.
 .EXAMPLE
 	PS> .\list-crypto-rates.ps1
+.NOTES
+	Author: Markus Fleschutz · License: CC0
 .LINK
 	https://github.com/fleschutz/PowerShell
-.NOTES
-	Author:  Markus Fleschutz
-	License: CC0
 #>
 
 function ListCryptoRate { param([string]$Symbol, [string]$Name)

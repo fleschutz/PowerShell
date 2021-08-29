@@ -2,14 +2,13 @@
 .SYNOPSIS
 	start-ipfs-server.ps1
 .DESCRIPTION
-	Starts a local IPFS server as a daemon process
+	Starts a local IPFS server as a daemon process.
 .EXAMPLE
 	PS> .\start-ipfs-server.ps1
+.NOTES
+	Author: Markus Fleschutz · License: CC0
 .LINK
 	https://github.com/fleschutz/PowerShell
-.NOTES
-	Author:  Markus Fleschutz
-	License: CC0
 #>
 
 try {

@@ -2,24 +2,23 @@
 .SYNOPSIS
 	turn-volume-down.ps1 [<percent>]
 .DESCRIPTION
-	Turns the audio volume down (-10% by default)
+	Turns the audio volume down (-10% by default).
 .EXAMPLE
 	PS> .\turn-volume-down.ps1
+.NOTES
+	Author: Markus Fleschutz · License: CC0
 .LINK
 	https://github.com/fleschutz/PowerShell
-.NOTES
-	Author:  Markus Fleschutz
-	License: CC0
 #>
 
-param([int]$Percent = 10)
+param([int]$percent = 10)
 
 try {
 	$obj = New-Object -com wscript.shell
-	for ([int]$i = 0; $i -lt $Percent; $i += 2) {
+	for ([int]$i = 0; $i -lt $percent; $i += 2) {
 		$obj.SendKeys([char]174) # each tick is -2%
 	}
-	"🔉️ volume -$($Percent)%"
+	"🔉️ volume -$($percent)%"
 	exit 0
 } catch {
 	write-error "⚠️ Error in line $($_.InvocationInfo.ScriptLineNumber): $($Error[0])"

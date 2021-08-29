@@ -2,14 +2,13 @@
 .SYNOPSIS
 	cd-downloads.ps1 
 .DESCRIPTION
-	go to the user's downloads folder
+	Go to the user's downloads folder.
 .EXAMPLE
 	PS> .\cd-downloads.ps1 
 .LINK
 	https://github.com/fleschutz/PowerShell
 .NOTES
-	Author:  Markus Fleschutz
-	License: CC0
+	Author: Markus Fleschutz · License: CC0
 #>
 
 $TargetDir = resolve-path "$HOME/Downloads"

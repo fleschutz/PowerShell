@@ -2,14 +2,13 @@
 .SYNOPSIS
 	list-tiobe-index.ps1 
 .DESCRIPTION
-	Lists the TIOBE index of top programming languages
+	Lists the TIOBE index of top programming languages.
 .EXAMPLE
 	PS> .\list-tiobe-index.ps1
+.NOTES
+	Author: Markus Fleschutz · License: CC0
 .LINK
 	https://github.com/fleschutz/PowerShell
-.NOTES
-	Author:  Markus Fleschutz
-	License: CC0
 #>
 
 function WriteBar { param([string]$Text, [float]$Value, [float]$Max, [float]$Change)

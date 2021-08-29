@@ -2,14 +2,13 @@
 .SYNOPSIS
 	list-processes.ps1 
 .DESCRIPTION
-	Lists all local computer processes
+	Lists all local computer processes.
 .EXAMPLE
 	PS> .\list-processes.ps1
+.NOTES
+	Author: Markus Fleschutz · License: CC0
 .LINK
 	https://github.com/fleschutz/PowerShell
-.NOTES
-	Author:  Markus Fleschutz
-	License: CC0
 #>
 
 try {

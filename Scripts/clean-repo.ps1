@@ -2,14 +2,13 @@
 .SYNOPSIS
 	clean-repo.ps1 [<repo-dir>]
 .DESCRIPTION
-	Cleans a Git repository from untracked files (including submodules, e.g. for a fresh build)
+	Cleans a Git repository from untracked files (including submodules, e.g. for a fresh build).
 .EXAMPLE
 	PS> .\clean-repo.ps1 C:\MyRepo
+.NOTES
+	Author: Markus Fleschutz · License: CC0
 .LINK
 	https://github.com/fleschutz/PowerShell
-.NOTES
-	Author:  Markus Fleschutz
-	License: CC0
 #>
 
 param([string]$RepoDir = "$PWD")

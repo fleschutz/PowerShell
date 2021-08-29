@@ -1,18 +1,16 @@
-﻿<#
+﻿#Requires -RunAsAdministrator
+<#
 .SYNOPSIS
 	check-file-system.ps1 [<drive>] 
 .DESCRIPTION
-	Checks the validity of the file system (needs admin rights)
+	Checks the validity of the file system (needs admin rights).
 .EXAMPLE
 	PS> .\check-file-system.ps1 C
 .LINK
 	https://github.com/fleschutz/PowerShell
 .NOTES
-	Author:  Markus Fleschutz
-	License: CC0
+	Author: Markus Fleschutz · License: CC0
 #>
-
-#Requires -RunAsAdministrator
 
 param([string]$Drive = "")
 

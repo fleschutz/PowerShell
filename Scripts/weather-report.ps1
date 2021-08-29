@@ -2,14 +2,13 @@
 .SYNOPSIS
 	weather-report.ps1 [<geo-location>]
 .DESCRIPTION
-	Prints the local weather report 
+	Prints the local weather report.
 .EXAMPLE
 	PS> .\weather-report.ps1 Paris
+.NOTES
+	Author: Markus Fleschutz · License: CC0
 .LINK
 	https://github.com/fleschutz/PowerShell
-.NOTES
-	Author:  Markus Fleschutz
-	License: CC0
 #>
 
 param([string]$GeoLocation = "") # empty means determine automatically

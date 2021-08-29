@@ -5,11 +5,10 @@
 	Copies newer EXE's + DLL's from the build directory to the installation directory.
 .EXAMPLE
 	PS> .\make-install.ps1
+.NOTES
+	Author: Markus Fleschutz · License: CC0
 .LINK
 	https://github.com/fleschutz/PowerShell
-.NOTES
-	Author:  Markus Fleschutz
-	License: CC0
 #>
 
 set SRC_DIR=%1

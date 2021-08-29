@@ -1,18 +1,16 @@
-﻿<#
+﻿#Requires -RunAsAdministrator
+<#
 .SYNOPSIS
 	poweroff.ps1
 .DESCRIPTION
-	Halts the local computer (needs admin rights)
+	Halts the local computer (needs admin rights).
 .EXAMPLE
 	PS> .\poweroff.ps1
+.NOTES
+	Author: Markus Fleschutz · License: CC0
 .LINK
 	https://github.com/fleschutz/PowerShell
-.NOTES
-	Author:  Markus Fleschutz
-	License: CC0
 #>
-
-#Requires -RunAsAdministrator
 
 try {
 	Stop-Computer

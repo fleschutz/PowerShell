@@ -2,14 +2,13 @@
 .SYNOPSIS
 	list-dir.ps1 [<pattern>]
 .DESCRIPTION
-	Lists the directory content formatted in columns
+	Lists the directory content formatted in columns.
 .EXAMPLE
 	PS> .\list-dir.ps1 C:\
+.NOTES
+	Author: Markus Fleschutz · License: CC0
 .LINK
 	https://github.com/fleschutz/PowerShell
-.NOTES
-	Author:  Markus Fleschutz
-	License: CC0
 #>
 
 param([string]$Pattern = "*")

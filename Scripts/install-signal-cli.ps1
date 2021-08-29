@@ -5,11 +5,10 @@
 	Installs signal-cli from github.com/AsamK/signal-cli. See the Web page for the correct version number.
 .EXAMPLE
 	PS> .\install-signal-cli.ps1 0.11.12
+.NOTES
+	Author: Markus Fleschutz · License: CC0
 .LINK
 	https://github.com/fleschutz/PowerShell
-.NOTES
-	Author:  Markus Fleschutz
-	License: CC0
 #>
 
 param([string]$Version = "")

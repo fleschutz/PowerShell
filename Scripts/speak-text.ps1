@@ -2,14 +2,13 @@
 .SYNOPSIS
 	speak-text.ps1 [<text>]
 .DESCRIPTION
-	Speaks the given text by text-to-speech (TTS)
+	Speaks the given text by text-to-speech (TTS).
 .EXAMPLE
 	PS> .\speak-text.ps1 "Hello World"
+.NOTES
+	Author: Markus Fleschutz · License: CC0
 .LINK
 	https://github.com/fleschutz/PowerShell
-.NOTES
-	Author:  Markus Fleschutz
-	License: CC0
 #>
 
 param([string]$Text = "")

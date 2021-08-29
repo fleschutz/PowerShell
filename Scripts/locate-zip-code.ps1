@@ -2,14 +2,13 @@
 .SYNOPSIS
 	locate-zip-code.ps1 [<country-code>] [<zip-code>]
 .DESCRIPTION
-	Prints the geographic location of the given zip-code
+	Prints the geographic location of the given zip-code.
 .EXAMPLE
 	PS> .\locate-zip-code.ps1
+.NOTES
+	Author: Markus Fleschutz · License: CC0
 .LINK
 	https://github.com/fleschutz/PowerShell
-.NOTES
-	Author:  Markus Fleschutz
-	License: CC0
 #>
 
 param([string]$CountryCode = "", [string]$ZipCode = "")

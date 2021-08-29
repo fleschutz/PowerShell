@@ -2,14 +2,13 @@
 .SYNOPSIS
 	speak-test.ps1
 .DESCRIPTION
-	Performs a test speak by text-to-speech (TTS)
+	Performs a text-to-speech (TTS) test.
 .EXAMPLE
 	PS> .\speak-test.ps1
+.NOTES
+	Author: Markus Fleschutz · License: CC0
 .LINK
 	https://github.com/fleschutz/PowerShell
-.NOTES
-	Author:  Markus Fleschutz
-	License: CC0
 #>
 
 function Speak { param([string]$Text)

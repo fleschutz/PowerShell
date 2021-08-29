@@ -2,20 +2,19 @@
 .SYNOPSIS
 	write-rot13.ps1 [<text>]
 .DESCRIPTION
-	Prints the given text encoded or decoded with ROT13
+	Prints the given text encoded or decoded with ROT13.
 .EXAMPLE
 	PS> .\write-rot13.ps1 "Hello World"
+.NOTES
+	Author: Markus Fleschutz · License: CC0
 .LINK
 	https://github.com/fleschutz/PowerShell
-.NOTES
-	Author:  Markus Fleschutz
-	License: CC0
 #>
 
-param([string]$Text = "")
+param([string]$text = "")
 
-function ROT13 { param([string]$Text)
-	$Text.ToCharArray() | ForEach-Object {
+function ROT13 { param([string]$text)
+	$text.ToCharArray() | ForEach-Object {
 		if ((([int] $_ -ge 97) -and ([int] $_ -le 109)) -or (([int] $_ -ge 65) -and ([int] $_ -le 77))) {
 			$Result += [char] ([int] $_ + 13);
 		} elseif ((([int] $_ -ge 110) -and ([int] $_ -le 122)) -or (([int] $_ -ge 78) -and ([int] $_ -le 90))) {
@@ -28,10 +27,9 @@ function ROT13 { param([string]$Text)
 }
 
 try {
-	if ($Text -eq "" ) {
-		[string]$Text = read-host "Enter text to write"
-	}
-	$Result = ROT13 $Text
+	if ($text -eq "" ) { $text = read-host "Enter text to write" }
+
+	$Result = ROT13 $text
 	write-output $Result
 	exit 0
 } catch {

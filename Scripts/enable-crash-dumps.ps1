@@ -2,14 +2,13 @@
 .SYNOPSIS
 	enable-crash-dumps.ps1 
 .DESCRIPTION
-	Enables the writing of crash dumps
+	Enables the writing of crash dumps.
 .EXAMPLE
 	PS> .\enable-crash-dumps.ps1
+.NOTES
+	Author: Markus Fleschutz · License: CC0
 .LINK
 	https://github.com/fleschutz/PowerShell
-.NOTES
-	Author:  Markus Fleschutz
-	License: CC0
 #>
 
 ##################################################################

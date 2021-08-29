@@ -2,15 +2,13 @@
 .SYNOPSIS
 	check-mac-address.ps1 [<MAC>]
 .DESCRIPTION
-	Checks the given MAC address for validity
-        MAC address like 00:00:00:00:00:00 or 00-00-00-00-00-00 or 000000000000
+	Checks the given MAC address for validity (MAC address like 00:00:00:00:00:00 or 00-00-00-00-00-00 or 000000000000).
 .EXAMPLE
 	PS> .\check-mac-address.ps1 11:22:33:44:55:66
 .LINK
 	https://github.com/fleschutz/PowerShell
 .NOTES
-	Author:  Markus Fleschutz
-	License: CC0
+	Author: Markus Fleschutz · License: CC0
 #>
 
 param([string]$MAC = "")

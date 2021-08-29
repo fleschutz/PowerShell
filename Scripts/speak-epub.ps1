@@ -2,14 +2,13 @@
 .SYNOPSIS
 	speak-epub.ps1 [<filename>]
 .DESCRIPTION
-	Speaks the content of the given Epub file by text-to-speech (TTS)
+	Speaks the content of the given Epub file by text-to-speech (TTS).
 .EXAMPLE
 	PS> .\speak-epub.ps1 C:\MyBook.epub
+.NOTES
+	Author: Markus Fleschutz · License: CC0
 .LINK
 	https://github.com/fleschutz/PowerShell
-.NOTES
-	Author:  Markus Fleschutz
-	License: CC0
 #>
 
 param([string]$Filename = "")

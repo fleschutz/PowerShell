@@ -2,14 +2,13 @@
 .SYNOPSIS
 	open-recycle-bin.ps1 
 .DESCRIPTION
-	Starts the File Explorer with the recycle bin folder
+	Starts the File Explorer with the recycle bin folder.
 .EXAMPLE
 	PS> .\open-recycle-bin.ps1
+.NOTES
+	Author: Markus Fleschutz · License: CC0
 .LINK
 	https://github.com/fleschutz/PowerShell
-.NOTES
-	Author:  Markus Fleschutz
-	License: CC0
 #>
 
 try {

@@ -2,14 +2,13 @@
 .SYNOPSIS
 	play-imperial-march.ps1
 .DESCRIPTION
-	Plays the Imperial March (Star Wars)
+	Plays the Imperial March (Star Wars).
 .EXAMPLE
 	PS> .\play-imperial-march.ps1
+.NOTES
+	Author: Markus Fleschutz · License: CC0
 .LINK
 	https://github.com/fleschutz/PowerShell
-.NOTES
-	Author:  Markus Fleschutz
-	License: CC0
 #>
 
 [System.Console]::beep(440, 500)      

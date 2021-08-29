@@ -2,14 +2,13 @@
 .SYNOPSIS
 	send-tcp.ps1 [<target-IP>] [<target-port>] [<message>]
 .DESCRIPTION
-	Sends a TCP message to the given IP address and port
+	Sends a TCP message to the given IP address and port.
 .EXAMPLE
 	PS> .\send-tcp.ps1 192.168.100.100 8080 "TEST"
+.NOTES
+	Author: Markus Fleschutz · License: CC0
 .LINK
 	https://github.com/fleschutz/PowerShell
-.NOTES
-	Author:  Markus Fleschutz
-	License: CC0
 #>
 
 param([string]$TargetIP = "", [int]$TargetPort = 0, [string]$Message = "")

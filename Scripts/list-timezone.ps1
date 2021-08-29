@@ -2,14 +2,13 @@
 .SYNOPSIS
 	list-timezone.ps1 
 .DESCRIPTION
-	Lists the details of the current time zone 
+	Lists the details of the current time zone.
 .EXAMPLE
 	PS> .\list-timezone.ps1
+.NOTES
+	Author: Markus Fleschutz · License: CC0
 .LINK
 	https://github.com/fleschutz/PowerShell
-.NOTES
-	Author:  Markus Fleschutz
-	License: CC0
 #>
 
 try {

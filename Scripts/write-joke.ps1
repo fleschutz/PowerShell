@@ -5,11 +5,10 @@
 	Writes a random Juck Norris joke to the console.
 .EXAMPLE
 	PS> .\write-joke.ps1
+.NOTES
+	Author: Markus Fleschutz · License: CC0
 .LINK
 	https://github.com/fleschutz/PowerShell
-.NOTES
-	Author:  Markus Fleschutz
-	License: CC0
 #>
 
 try {

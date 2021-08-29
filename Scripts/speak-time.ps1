@@ -2,14 +2,13 @@
 .SYNOPSIS
 	speak-time.ps1
 .DESCRIPTION
-	Speaks the current time by text-to-speech (TTS)
+	Speaks the current time by text-to-speech (TTS).
 .EXAMPLE
 	PS> .\speak-time.ps1
+.NOTES
+	Author: Markus Fleschutz · License: CC0
 .LINK
 	https://github.com/fleschutz/PowerShell
-.NOTES
-	Author:  Markus Fleschutz
-	License: CC0
 #>
 
 try {

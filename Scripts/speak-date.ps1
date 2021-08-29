@@ -2,14 +2,13 @@
 .SYNOPSIS
 	speak-date.ps1
 .DESCRIPTION
-	Speaks the current date by text-to-speech (TTS)
+	Speaks the current date by text-to-speech (TTS).
 .EXAMPLE
 	PS> .\speak-date.ps1
+.NOTES
+	Author: Markus Fleschutz · License: CC0
 .LINK
 	https://github.com/fleschutz/PowerShell
-.NOTES
-	Author:  Markus Fleschutz
-	License: CC0
 #>
 
 try {

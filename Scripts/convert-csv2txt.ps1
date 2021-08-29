@@ -2,14 +2,13 @@
 .SYNOPSIS
 	convert-csv2txt.ps1 [<csv-file>]
 .DESCRIPTION
-	Converts the given CSV file into a text list
+	Converts a .CSV file into a text file.
 .EXAMPLE
 	PS> .\convert-csv2txt.ps1 salaries.csv
+.NOTES
+	Author: Markus Fleschutz · License: CC0
 .LINK
 	https://github.com/fleschutz/PowerShell
-.NOTES
-	Author:  Markus Fleschutz
-	License: CC0
 #>
 
 param([string]$Path = "")

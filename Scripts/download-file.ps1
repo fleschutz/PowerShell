@@ -2,14 +2,13 @@
 .SYNOPSIS
 	download-file.ps1 [<URL>]
 .DESCRIPTION
-	Downloads a file from the given URL
+	Downloads a file from the given URL.
 .EXAMPLE
 	PS> .\download-file.ps1 "https://www.cnn.com/index.html"
+.NOTES
+	Author: Markus Fleschutz · License: CC0
 .LINK
 	https://github.com/fleschutz/PowerShell
-.NOTES
-	Author:  Markus Fleschutz
-	License: CC0
 #>
 
 param([string]$URL = "")

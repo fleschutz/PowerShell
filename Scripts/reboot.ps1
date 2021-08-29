@@ -1,18 +1,16 @@
-﻿<#
+﻿#Requires -RunAsAdministrator
+<#
 .SYNOPSIS
 	reboot.ps1
 .DESCRIPTION
-	Reboots the local computer (needs admin rights)
+	Reboots the local computer (needs admin rights).
 .EXAMPLE
 	PS> .\reboot.ps1
+.NOTES
+	Author: Markus Fleschutz · License: CC0
 .LINK
 	https://github.com/fleschutz/PowerShell
-.NOTES
-	Author:  Markus Fleschutz
-	License: CC0
 #>
-
-#Requires -RunAsAdministrator
 
 try {
 	Restart-Computer

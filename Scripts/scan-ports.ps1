@@ -2,14 +2,13 @@
 .SYNOPSIS
 	scan-ports.ps1
 .DESCRIPTION
-	Scans the network for open/closed ports
+	Scans the network for open/closed ports.
 .EXAMPLE
 	PS> .\scan-ports.ps1
+.NOTES
+	Author: Markus Fleschutz · License: CC0
 .LINK
 	https://github.com/fleschutz/PowerShell
-.NOTES
-	Author:  Markus Fleschutz
-	License: CC0
 #>
 
 $network = "192.168.178"

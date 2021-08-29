@@ -2,14 +2,13 @@
 .SYNOPSIS
 	play-mp3.ps1 [<MP3-file>]
 .DESCRIPTION
-	Plays the given sound file (MP3 file format)
+	Plays the given sound file (MP3 file format).
 .EXAMPLE
 	PS> .\play-mp3.ps1 C:\thunder.mp3
+.NOTES
+	Author: Markus Fleschutz · License: CC0
 .LINK
 	https://github.com/fleschutz/PowerShell
-.NOTES
-	Author:  Markus Fleschutz
-	License: CC0
 #>
 
 param([string]$Filename = "")

@@ -2,14 +2,13 @@
 .SYNOPSIS
 	add-memo.ps1 [<text>]
 .DESCRIPTION
-	Adds the given memo text to $HOME/Memos.csv
+	Adds the given memo text to $HOME/Memos.csv.
 .EXAMPLE
 	PS> .\add-memo.ps1 "Buy apples"
 .LINK
 	https://github.com/fleschutz/PowerShell
 .NOTES
-	Author:  Markus Fleschutz
-	License: CC0
+	Author: Markus Fleschutz · License: CC0
 #>
 
 param([string]$text = "")

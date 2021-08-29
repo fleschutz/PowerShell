@@ -2,14 +2,13 @@
 .SYNOPSIS
 	pull-repos.ps1 [<parent-dir>]
 .DESCRIPTION
-	Pulls updates for all Git repositories under the current/given directory (including submodules)
+	Pulls updates for all Git repositories under the current/given directory (including submodules).
 .EXAMPLE
 	PS> .\pull-repos.ps1 C:\MyRepos
+.NOTES
+	Author: Markus Fleschutz · License: CC0
 .LINK
 	https://github.com/fleschutz/PowerShell
-.NOTES
-	Author:  Markus Fleschutz
-	License: CC0
 #>
 
 param([string]$ParentDir = "$PWD")

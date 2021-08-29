@@ -2,14 +2,13 @@
 .SYNOPSIS
 	pull-repo.ps1 [<repo-dir>]
 .DESCRIPTION
-	Pulls updates for a local Git repository (including submodules)
+	Pulls updates for a local Git repository (including submodules).
 .EXAMPLE
 	PS> .\pull-repo.ps1 C:\MyRepo
+.NOTES
+	Author: Markus Fleschutz · License: CC0
 .LINK
 	https://github.com/fleschutz/PowerShell
-.NOTES
-	Author:  Markus Fleschutz
-	License: CC0
 #>
 
 param([string]$RepoDir = "$PWD")

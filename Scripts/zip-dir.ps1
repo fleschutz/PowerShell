@@ -2,14 +2,13 @@
 .SYNOPSIS
 	zip-dir.ps1 [<directory>]
 .DESCRIPTION
-	Creates a .zip archive of the given directory
+	Creates a .zip archive of the given directory.
 .EXAMPLE
 	PS> .\zip-dir.ps1 C:\Windows
+.NOTES
+	Author: Markus Fleschutz · License: CC0
 .LINK
 	https://github.com/fleschutz/PowerShell
-.NOTES
-	Author:  Markus Fleschutz
-	License: CC0
 #>
 
 param([string]$directory = "")

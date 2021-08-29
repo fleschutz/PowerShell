@@ -2,14 +2,13 @@
 .SYNOPSIS
 	close-calculator.ps1 
 .DESCRIPTION
-	Closes the calculator program gracefully
+	Closes the calculator program gracefully.
 .EXAMPLE
 	PS> .\close-calculator.ps1
+.NOTES
+	Author: Markus Fleschutz · License: CC0
 .LINK
 	https://github.com/fleschutz/PowerShell
-.NOTES
-	Author:  Markus Fleschutz
-	License: CC0
 #>
 
 & "$PSScriptRoot/close-program.ps1" "Calculator" "Calculator" "calc"

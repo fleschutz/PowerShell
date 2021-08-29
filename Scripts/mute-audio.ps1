@@ -2,14 +2,13 @@
 .SYNOPSIS
 	mute-audio.ps1
 .DESCRIPTION
-	Mutes the audio output
+	Mutes the audio output.
 .EXAMPLE
 	PS> .\mute-audio.ps1
+.NOTES
+	Author: Markus Fleschutz · License: CC0
 .LINK
 	https://github.com/fleschutz/PowerShell
-.NOTES
-	Author:  Markus Fleschutz
-	License: CC0
 #>
 
 try {

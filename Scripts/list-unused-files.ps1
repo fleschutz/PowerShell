@@ -2,14 +2,13 @@
 .SYNOPSIS
 	list-unused-files.ps1 <dir-tree> <days>
 .DESCRIPTION
-	Lists files in the <directory tree> with last access time older than <days>
+	Lists files in the <directory tree> with last access time older than <days>.
 .EXAMPLE
 	PS> .\list-unused-files.ps1 C:\ 90
+.NOTES
+	Author: Markus Fleschutz · License: CC0
 .LINK
 	https://github.com/fleschutz/PowerShell
-.NOTES
-	Author:  Markus Fleschutz
-	License: CC0
 #>
 
 param([string]$DirTree = "", [int]$NumberOfDaysUnused = 99)

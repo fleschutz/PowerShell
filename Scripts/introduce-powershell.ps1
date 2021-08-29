@@ -2,14 +2,13 @@
 .SYNOPSIS
 	introduce-powershell.ps1
 .DESCRIPTION
-	Introduces PowerShell to new users
+	Introduces PowerShell to new users.
 .EXAMPLE
 	PS> .\introduce-powershell.ps1
+.NOTES
+	Author: Markus Fleschutz · License: CC0
 .LINK
 	https://github.com/fleschutz/PowerShell
-.NOTES
-	Author:  Markus Fleschutz
-	License: CC0
 #>
 
 try {

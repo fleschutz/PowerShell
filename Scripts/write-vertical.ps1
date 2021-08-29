@@ -2,22 +2,21 @@
 .SYNOPSIS
 	write-vertical.ps1 [<text>]
 .DESCRIPTION
-	Writes the given text in vertical direction
+	Writes the given text in vertical direction.
 .EXAMPLE
 	PS> .\write-vertical.ps1 "Hello World"
+.NOTES
+	Author: Markus Fleschutz · License: CC0
 .LINK
 	https://github.com/fleschutz/PowerShell
-.NOTES
-	Author:  Markus Fleschutz
-	License: CC0
 #>
 
-param([string]$Text = "")
+param([string]$text = "")
 
 try {
-	if ($Text -eq "" ) { $Text = read-host "Enter the text to write" }
+	if ($text -eq "" ) { $text = read-host "Enter the text to write" }
 
-	[char[]]$TextArray = $Text
+	[char[]]$TextArray = $text
 	foreach($Char in $TextArray) {
 		write-output $Char
 	}

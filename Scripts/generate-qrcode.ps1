@@ -2,14 +2,13 @@
 .SYNOPSIS
 	generate-qrcode.ps1 [<text>] [<image-size>]
 .DESCRIPTION
-	Generates a QR code image file
+	Generates a QR code image file.
 .EXAMPLE
 	PS> .\generate-qrcode.ps1
+.NOTES
+	Author: Markus Fleschutz · License: CC0
 .LINK
 	https://github.com/fleschutz/PowerShell
-.NOTES
-	Author:  Markus Fleschutz
-	License: CC0
 #>
 
 param([string]$Text = "", [string]$ImageSize = "")

@@ -2,14 +2,13 @@
 .SYNOPSIS
 	upload-file.ps1 [<file>] [<URL>] [<username>] [<password>]
 .DESCRIPTION
-	Uploads the local file to the given FTP server
+	Uploads the local file to the given FTP server.
 .EXAMPLE
 	PS> .\upload-file.ps1
+.NOTES
+	Author: Markus Fleschutz · License: CC0
 .LINK
 	https://github.com/fleschutz/PowerShell
-.NOTES
-	Author:  Markus Fleschutz
-	License: CC0
 #>
 
 param([string]$File = "", [string]$URL = "", [string]$Username = "", [string]$Password = "")

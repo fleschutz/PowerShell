@@ -2,14 +2,13 @@
 .SYNOPSIS
 	search-files.ps1 [<pattern>] [<path>]
 .DESCRIPTION
-	Searches for the given pattern in the given files
+	Searches for the given pattern in the given files.
 .EXAMPLE
 	PS> .\search-files.ps1 UFO C:\Temp\*.txt
+.NOTES
+	Author: Markus Fleschutz · License: CC0
 .LINK
 	https://github.com/fleschutz/PowerShell
-.NOTES
-	Author:  Markus Fleschutz
-	License: CC0
 #>
 
 param([string]$Pattern = "", [string]$Path = "")

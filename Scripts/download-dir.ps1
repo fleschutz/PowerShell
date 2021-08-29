@@ -2,14 +2,13 @@
 .SYNOPSIS
 	download-dir.ps1 [<URL>]
 .DESCRIPTION
-	Downloads a directory tree from the given URL
+	Downloads a directory tree from the given URL.
 .EXAMPLE
 	PS> .\download-dir.ps1 "https://www.cnn.com"
+.NOTES
+	Author: Markus Fleschutz · License: CC0
 .LINK
 	https://github.com/fleschutz/PowerShell
-.NOTES
-	Author:  Markus Fleschutz
-	License: CC0
 #>
 
 param([string]$URL = "")

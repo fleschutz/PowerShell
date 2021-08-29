@@ -2,19 +2,18 @@
 .SYNOPSIS
 	write-red.ps1 [<text>]
 .DESCRIPTION
-	Writes the given text in a red foreground color
+	Writes the given text in a red foreground color.
 .EXAMPLE
 	PS> .\write-red.ps1 "Hello World"
+.NOTES
+	Author: Markus Fleschutz · License: CC0
 .LINK
 	https://github.com/fleschutz/PowerShell
-.NOTES
-	Author:  Markus Fleschutz
-	License: CC0
 #>
 
-param([string]$Text = "")
+param([string]$text = "")
 
-if ($Text -eq "" ) { $Text = read-host "Enter the text to write" }
+if ($text -eq "" ) { $text = read-host "Enter the text to write" }
 
-write-host -foregroundcolor red "$Text"
+write-host -foregroundcolor red "$text"
 exit 0

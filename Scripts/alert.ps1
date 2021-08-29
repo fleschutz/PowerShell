@@ -2,14 +2,13 @@
 .SYNOPSIS
 	alert.ps1 [<message>]
 .DESCRIPTION
-	Handle and escalate the given alert message
+	Handle and escalate the given alert message.
 .EXAMPLE
 	PS> .\alert.ps1 "Harddisk failure"
 .LINK
 	https://github.com/fleschutz/PowerShell
 .NOTES
-	Author:  Markus Fleschutz
-	License: CC0
+	Author: Markus Fleschutz · License: CC0
 #>
 
 param([string]$Message = "")

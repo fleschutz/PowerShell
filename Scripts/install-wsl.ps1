@@ -1,18 +1,16 @@
-﻿<#
+﻿#Requires -RunAsAdministrator
+<#
 .SYNOPSIS
 	install-wsl.ps1
 .DESCRIPTION
-	Installs Windows Subsystem for Linux (WSL), needs admin rights
+	Installs Windows Subsystem for Linux (WSL) - needs admin rights.
 .EXAMPLE
 	PS> .\install-wsl.ps1
+.NOTES
+	Author: Markus Fleschutz · License: CC0
 .LINK
 	https://github.com/fleschutz/PowerShell
-.NOTES
-	Author:  Markus Fleschutz
-	License: CC0
 #>
-
-#Requires -RunAsAdministrator
 
 try {
 	$StopWatch = [system.diagnostics.stopwatch]::startNew()

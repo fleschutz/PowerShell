@@ -2,15 +2,13 @@
 .SYNOPSIS
 	list-console-colors.ps1 
 .DESCRIPTION
-	Lists all console colors
+	Lists all console colors.
 .EXAMPLE
 	PS> .\list-console-colors.ps1
+.NOTES
+	Author: Markus Fleschutz · License: CC0
 .LINK
 	https://github.com/fleschutz/PowerShell
-.NOTES
-	Author:        Markus Fleschutz
-	Creation Date: 2021-08-27
-	License:       CC0
 #>
 
 try {

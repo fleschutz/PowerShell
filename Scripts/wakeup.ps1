@@ -2,14 +2,13 @@
 .SYNOPSIS
 	wakeup.ps1 [<MAC-address>] [<IP-address>]
 .DESCRIPTION
-	Sends a magic packet to the given computer to wake him up
+	Sends a magic packet to the given computer to wake him up.
 .EXAMPLE
 	PS> .\wakeup.ps1 11:22:33:44:55:66 192.168.100.100
+.NOTES
+	Author: Markus Fleschutz · License: CC0
 .LINK
 	https://github.com/fleschutz/PowerShell
-.NOTES
-	Author:  Markus Fleschutz
-	License: CC0
 #>
 
 param([string]$MACaddress = "", [string]$IPaddress = "", [int]$Port=9)

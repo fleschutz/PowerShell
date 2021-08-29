@@ -2,14 +2,13 @@
 .SYNOPSIS
 	list-modules.ps1 
 .DESCRIPTION
-	Lists all PowerShell modules
+	Lists all PowerShell modules.
 .EXAMPLE
 	PS> .\list-modules.ps1
+.NOTES
+	Author: Markus Fleschutz · License: CC0
 .LINK
 	https://github.com/fleschutz/PowerShell
-.NOTES
-	Author:  Markus Fleschutz
-	License: CC0
 #>
 
 try {

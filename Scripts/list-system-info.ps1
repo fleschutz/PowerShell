@@ -2,14 +2,13 @@
 .SYNOPSIS
 	list-system-info.ps1
 .DESCRIPTION
-	Lists system information on the local computer
+	Lists system information on the local computer.
 .EXAMPLE
 	PS> .\list-system-info.ps1
+.NOTES
+	Author: Markus Fleschutz · License: CC0
 .LINK
 	https://github.com/fleschutz/PowerShell
-.NOTES
-	Author:  Markus Fleschutz
-	License: CC0
 #>
 
 # RAM

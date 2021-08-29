@@ -2,19 +2,18 @@
 .SYNOPSIS
 	write-uppercase.ps1 [<text>]
 .DESCRIPTION
-	Writes the given text in uppercase letters
+	Writes the given text in uppercase letters.
 .EXAMPLE
 	PS> .\write-uppercase.ps1 "Hello World"
+.NOTES
+	Author: Markus Fleschutz · License: CC0
 .LINK
 	https://github.com/fleschutz/PowerShell
-.NOTES
-	Author:  Markus Fleschutz
-	License: CC0
 #>
 
-param([string]$Text = "")
+param([string]$text = "")
 
-if ($Text -eq "" ) { $Text = read-host "Enter the text to write" }
+if ($text -eq "" ) { $text = read-host "Enter the text to write" }
 
-write-output $Text.ToUpper()
+write-output $text.ToUpper()
 exit 0

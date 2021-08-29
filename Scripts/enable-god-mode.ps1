@@ -2,14 +2,13 @@
 .SYNOPSIS
 	enable-god-mode.ps1 
 .DESCRIPTION
-	Enables the god mode (adds a new icon to the desktop)
+	Enables the god mode (adds a new icon to the desktop).
 .EXAMPLE
 	PS> .\enable-god-mode.ps1
+.NOTES
+	Author: Markus Fleschutz · License: CC0
 .LINK
 	https://github.com/fleschutz/PowerShell
-.NOTES
-	Author:  Markus Fleschutz
-	License: CC0
 #>
 
 try {

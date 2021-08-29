@@ -2,14 +2,13 @@
 .SYNOPSIS
 	simulate-presence.ps1 [<IP-address>]
 .DESCRIPTION
-	Simulates the human presence against burglars
+	Simulates the human presence against burglars.
 .EXAMPLE
 	PS> .\simulate-presence.ps1 192.168.100.100
+.NOTES
+	Author: Markus Fleschutz · License: CC0
 .LINK
 	https://github.com/fleschutz/PowerShell
-.NOTES
-	Author:  Markus Fleschutz
-	License: CC0
 #>
 
 param([string]$IPaddress = "")

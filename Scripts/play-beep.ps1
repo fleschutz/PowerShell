@@ -5,11 +5,10 @@
 	Plays a short beep sound.
 .EXAMPLE
 	PS> .\play-beep.ps1
+.NOTES
+	Author: Markus Fleschutz · License: CC0
 .LINK
 	https://github.com/fleschutz/PowerShell
-.NOTES
-	Author:  Markus Fleschutz
-	License: CC0
 #>
 
 [console]::beep(500,300)

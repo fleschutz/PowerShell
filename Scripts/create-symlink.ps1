@@ -2,14 +2,13 @@
 .SYNOPSIS
 	create-symlink.ps1 [<symlink>] [<target>]
 .DESCRIPTION
-	Creates a symbolic link file
+	Creates a symbolic link file.
 .EXAMPLE
 	PS> .\create-symlink.ps1 C:\Temp\HDD C:\
+.NOTES
+	Author: Markus Fleschutz · License: CC0
 .LINK
 	https://github.com/fleschutz/PowerShell
-.NOTES
-	Author:  Markus Fleschutz
-	License: CC0
 #>
 
 param([string]$symlink = "", $[string]target = "")

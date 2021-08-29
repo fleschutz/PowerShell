@@ -2,14 +2,13 @@
 .SYNOPSIS
 	install-github-cli.ps1 
 .DESCRIPTION
-	Installs GitHub CLI
+	Installs GitHub CLI.
 .EXAMPLE
 	PS> .\install-github-cli.ps1 
+.NOTES
+	Author: Markus Fleschutz · License: CC0
 .LINK
 	https://github.com/fleschutz/PowerShell
-.NOTES
-	Author:  Markus Fleschutz
-	License: CC0
 #>
 
 try {

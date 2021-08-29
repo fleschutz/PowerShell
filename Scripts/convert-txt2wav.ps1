@@ -2,14 +2,13 @@
 .SYNOPSIS
 	convert-txt2wav.ps1 [<text>] [<wav-file>]
 .DESCRIPTION
-	Converts the given text to a .WAV audio file
+	Converts text to a .WAV audio file.
 .EXAMPLE
 	PS> .\convert-txt2wav.ps1 "Hello World" spoken.wav
+.NOTES
+	Author: Markus Fleschutz · License: CC0
 .LINK
 	https://github.com/fleschutz/PowerShell
-.NOTES
-	Author:  Markus Fleschutz
-	License: CC0
 #>
 
 param([string]$Text = "", [string]$WavFile = "")

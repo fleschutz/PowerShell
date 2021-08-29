@@ -2,14 +2,13 @@
 .SYNOPSIS
 	cd-recycle-bin.ps1 
 .DESCRIPTION
-	Go to the user's recycle bin folder 
+	Go to the user's recycle bin folder.
 .EXAMPLE
 	PS> .\cd-recycle-bin.ps1 
 .LINK
 	https://github.com/fleschutz/PowerShell
 .NOTES
-	Author:  Markus Fleschutz
-	License: CC0
+	Author: Markus Fleschutz · License: CC0
 #>
 
 function Get-CurrentUserSID { [CmdletBinding()] param()

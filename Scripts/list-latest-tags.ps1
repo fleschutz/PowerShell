@@ -2,14 +2,13 @@
 .SYNOPSIS
 	list-latest-tags.ps1 [<parent-dir>]
 .DESCRIPTION
-	Lists the latests tags in all Git repositories under the current/given directory 
+	Lists the latests tags in all Git repositories under the current/given directory.
 .EXAMPLE
 	PS> .\list-latest-tags.ps1 C:\MyRepos
+.NOTES
+	Author: Markus Fleschutz · License: CC0
 .LINK
 	https://github.com/fleschutz/PowerShell
-.NOTES
-	Author:  Markus Fleschutz
-	License: CC0
 #>
 
 param([string]$ParentDir = "$PWD")

@@ -2,14 +2,13 @@
 .SYNOPSIS
 	check-cpu-temp.ps1 
 .DESCRIPTION
-	Checks the CPU temperature
+	Checks the CPU temperature.
 .EXAMPLE
 	PS> .\check-cpu-temp.ps1 
 .LINK
 	https://github.com/fleschutz/PowerShell
 .NOTES
-	Author:  Markus Fleschutz
-	License: CC0
+	Author: Markus Fleschutz · License: CC0
 #>
 
 try {

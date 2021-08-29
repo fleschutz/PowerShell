@@ -5,11 +5,10 @@
 	Writes a random quote to the console.
 .EXAMPLE
 	PS> .\write-quote.ps1
+.NOTES
+	Author: Markus Fleschutz · License: CC0
 .LINK
 	https://github.com/fleschutz/PowerShell
-.NOTES
-	Author:  Markus Fleschutz
-	License: CC0
 #>
 
 try {

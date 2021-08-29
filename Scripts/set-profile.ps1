@@ -2,14 +2,13 @@
 .SYNOPSIS
 	set-profile.ps1
 .DESCRIPTION
-	Sets the PowerShell profile for the current user
+	Sets the PowerShell profile for the current user.
 .EXAMPLE
 	PS> .\set-profile.ps1
+.NOTES
+	Author: Markus Fleschutz · License: CC0
 .LINK
 	https://github.com/fleschutz/PowerShell
-.NOTES
-	Author:  Markus Fleschutz
-	License: CC0
 #>
 
 try {

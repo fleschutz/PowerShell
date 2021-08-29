@@ -6,11 +6,10 @@
 	NOTE: in case of merge conflicts the script stops immediately! 
 .EXAMPLE
 	PS> .\cherry-picker.ps1 93849f889 "Fix typo" "v1 v2 v3"
+.NOTES
+	Author: Markus Fleschutz · License: CC0
 .LINK
 	https://github.com/fleschutz/PowerShell
-.NOTES
-	Author:  Markus Fleschutz
-	License: CC0
 #>
 
 param([string]$CommitID = "", [string]$CommitMessage = "", [string]$Branches = "", [string]$RepoDir = "$PWD")

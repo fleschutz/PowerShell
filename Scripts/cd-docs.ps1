@@ -2,14 +2,13 @@
 .SYNOPSIS
 	cd-docs.ps1 
 .DESCRIPTION
-	Go to the user's documents folder 
+	Go to the user's documents folder.
 .EXAMPLE
 	PS> .\cd-docs.ps1 
 .LINK
 	https://github.com/fleschutz/PowerShell
 .NOTES
-	Author:  Markus Fleschutz
-	License: CC0
+	Author: Markus Fleschutz · License: CC0
 #>
 
 $TargetDir = resolve-path "$HOME/Documents"

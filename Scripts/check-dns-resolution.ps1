@@ -2,14 +2,13 @@
 .SYNOPSIS
 	check-dns-resolution.ps1
 .DESCRIPTION
-	Checks the DNS resolution with frequently used domain names
+	Checks the DNS resolution with frequently used domain names.
 .EXAMPLE
 	PS> .\check-dns-resolution.ps1
 .LINK
 	https://github.com/fleschutz/PowerShell
 .NOTES
-	Author:  Markus Fleschutz
-	License: CC0
+	Author: Markus Fleschutz · License: CC0
 #>
  
 try {

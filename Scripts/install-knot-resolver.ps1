@@ -5,11 +5,10 @@
         Installs the Knot Resolver (a DNS resolver daemon, needs admin rights).
 .EXAMPLE
         PS> .\install-knot-resolver.ps1
+.NOTES
+	Author: Markus Fleschutz · License: CC0
 .LINK
         https://github.com/fleschutz/PowerShell
-.NOTES
-        Author:  Markus Fleschutz
-        License: CC0
 #>
 
 #Requires -RunAsAdministrator

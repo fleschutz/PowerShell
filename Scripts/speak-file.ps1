@@ -2,14 +2,13 @@
 .SYNOPSIS
 	speak-file.ps1 [<file>]
 .DESCRIPTION
-	Speaks the content of the given text file by text-to-speech (TTS)
+	Speaks the content of the given text file by text-to-speech (TTS).
 .EXAMPLE
 	PS> .\speak-file.ps1 C:\MyFile.txt
+.NOTES
+	Author: Markus Fleschutz · License: CC0
 .LINK
 	https://github.com/fleschutz/PowerShell
-.NOTES
-	Author:  Markus Fleschutz
-	License: CC0
 #>
 
 param([string]$File = "")

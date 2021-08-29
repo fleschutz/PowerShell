@@ -2,14 +2,13 @@
 .SYNOPSIS
 	list-emojis.ps1 
 .DESCRIPTION
-	Lists the Emojis of Unicode 13.0
+	Lists the Emojis of Unicode 13.0.
 .EXAMPLE
 	PS> .\list-emojis.ps1
+.NOTES
+	Author: Markus Fleschutz · License: CC0
 .LINK
 	https://github.com/fleschutz/PowerShell
-.NOTES
-	Author:  Markus Fleschutz
-	License: CC0
 #>
 
 "Emojis of Unicode 13.0"

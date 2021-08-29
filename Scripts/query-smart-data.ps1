@@ -1,21 +1,19 @@
-﻿<#
+﻿#Requires -RunAsAdministrator
+<#
 .SYNOPSIS
 	query-smart-data.ps1 [<directory>]
 .DESCRIPTION
 	Queries the S.M.A.R.T. data of your HDD/SSD's and saves it to the current/given directory
-	(use smart-data2csv.ps1 to generate a CSV table for analysis)
+	(use smart-data2csv.ps1 to generate a CSV table for analysis).
+
+        Requires smartctl (smartmontools) and admin rights. For automation copy this script to /etc/cron.daily 
 .EXAMPLE
 	PS> .\query-smart-data.ps1 
+.NOTES
+	Author: Markus Fleschutz · License: CC0
 .LINK
 	https://github.com/fleschutz/PowerShell
-.NOTES
-	Author:  Markus Fleschutz
-	License: CC0
-        requires smartctl (smartmontools) and admin rights
-        for automation copy this script to /etc/cron.daily 
 #>
-
-#Requires -RunAsAdministrator
 
 param([string]$Directory = "")
 

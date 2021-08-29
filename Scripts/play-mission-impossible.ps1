@@ -2,14 +2,13 @@
 .SYNOPSIS
 	play-mission-impossible.ps1
 .DESCRIPTION
-	Plays the Mission Impossible theme
+	Plays the Mission Impossible theme.
 .EXAMPLE
 	PS> .\play-mission-impossible.ps1
+.NOTES
+	Author: Markus Fleschutz · License: CC0
 .LINK
 	https://github.com/fleschutz/PowerShell
-.NOTES
-	Author:  Markus Fleschutz
-	License: CC0
 #>
 
 [console]::beep(784,150)

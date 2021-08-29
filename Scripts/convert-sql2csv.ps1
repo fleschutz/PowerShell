@@ -2,14 +2,13 @@
 .SYNOPSIS
 	convert-sql2csv.ps1 [<server>] [<database>] [<username>] [<password>] [<query>]
 .DESCRIPTION
-	Convert the SQL database table to a CSV file
+	Converts a SQL database table to a .CSV file.
 .EXAMPLE
 	PS> .\convert-sql2csv.ps1
+.NOTES
+	Author: Markus Fleschutz · License: CC0
 .LINK
 	https://github.com/fleschutz/PowerShell
-.NOTES
-	Author:  Markus Fleschutz
-	License: CC0
 #>
 
 param([string]$server = "", [string]$database = "", [string]$username = "", [string]$password = "", [string]$query = "")

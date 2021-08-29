@@ -2,18 +2,14 @@
 .SYNOPSIS
 	write-chart.ps1
 .DESCRIPTION
-	Writes a chart
+	Writes a chart.
 .EXAMPLE
 	PS> .\write-chart.ps1
+.NOTES
+	Author: Markus Fleschutz · License: CC0
 .LINK
 	https://github.com/fleschutz/PowerShell
-.NOTES
-	Author:  Markus Fleschutz
-	License: CC0
 #>
-
-
-
 
 function WriteChartLine { param([string]$Text, [float]$Value, [float]$Max)
 	$Num = ($Value * 40.0) / $Max

@@ -6,11 +6,10 @@
         (<style> is either Fill, Fit (default), Stretch, Tile, Center, or Span)
 .EXAMPLE
 	PS> .\set-wallpaper.ps1 C:\ocean.jpg
+.NOTES
+	Author: Markus Fleschutz · License: CC0
 .LINK
 	https://github.com/fleschutz/PowerShell
-.NOTES
-	Author:  Markus Fleschutz
-	License: CC0
 #>
 
 param([string]$ImageFile = "", [string]$Style = "Fit")

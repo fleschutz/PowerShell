@@ -2,14 +2,13 @@
 .SYNOPSIS
 	moon.ps1
 .DESCRIPTION
-	Prints the current moon phase
+	Prints the current moon phase.
 .EXAMPLE
 	PS> .\moon.ps1.ps1
+.NOTES
+	Author: Markus Fleschutz · License: CC0
 .LINK
 	https://github.com/fleschutz/PowerShell
-.NOTES
-	Author:  Markus Fleschutz
-	License: CC0
 #>
 
 try {

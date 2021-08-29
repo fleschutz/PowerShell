@@ -2,14 +2,13 @@
 .SYNOPSIS
 	create-tag.ps1 [<new-tag-name>] [<repo-dir>]
 .DESCRIPTION
-	Creates a new tag in a Git repository 
+	Creates a new tag in a Git repository.
 .EXAMPLE
 	PS> .\create-tag.ps1 v1.7
 .LINK
 	https://github.com/fleschutz/PowerShell
 .NOTES
-	Author:  Markus Fleschutz
-	License: CC0
+	Author: Markus Fleschutz · License: CC0
 #>
 
 param([string]$NewTagName = "", [string]$RepoDir = "$PWD")

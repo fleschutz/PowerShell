@@ -1,18 +1,16 @@
-﻿<#
+﻿#Requires -RunAsAdministrator
+<#
 .SYNOPSIS
 	install-ssh-client.ps1
 .DESCRIPTION
-	Installs the SSH client (needs admin rights)
+	Installs the SSH client (needs admin rights).
 .EXAMPLE
 	PS> .\install-ssh-client.ps1
+.NOTES
+	Author: Markus Fleschutz · License: CC0
 .LINK
 	https://github.com/fleschutz/PowerShell
-.NOTES
-	Author:  Markus Fleschutz
-	License: CC0
 #>
-
-#Requires -RunAsAdministrator
 
 try {
 	$StopWatch = [system.diagnostics.stopwatch]::startNew()

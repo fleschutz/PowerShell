@@ -2,14 +2,13 @@
 .SYNOPSIS
 	speak-spanish.ps1 [<text>]
 .DESCRIPTION
-	Speaks the given text with a Spanish text-to-speech (TTS) voice
+	Speaks the given text with a Spanish text-to-speech (TTS) voice.
 .EXAMPLE
 	PS> .\speak-spanish.ps1 Hola
+.NOTES
+	Author: Markus Fleschutz · License: CC0
 .LINK
 	https://github.com/fleschutz/PowerShell
-.NOTES
-	Author:  Markus Fleschutz
-	License: CC0
 #>
 
 param([string]$Text = "")

@@ -2,14 +2,13 @@
 .SYNOPSIS
 	publish-to-ipfs.ps1 [<file(s)/dir>] [<to-hash-list>]
 .DESCRIPTION
-	Publishes the given files & folders to IPFS
+	Publishes the given files and folders to IPFS.
 .EXAMPLE
 	PS> .\publish-to-ipfs.ps1 C:\MyFile.txt
+.NOTES
+	Author: Markus Fleschutz · License: CC0
 .LINK
 	https://github.com/fleschutz/PowerShell
-.NOTES
-	Author:  Markus Fleschutz
-	License: CC0
 #>
 
 param([string]$Files = "", [string]$HashList = "IPFS_hashes.txt", [string]$DF_Hashes = "file_checksums.xml")

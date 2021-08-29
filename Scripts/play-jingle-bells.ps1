@@ -2,14 +2,13 @@
 .SYNOPSIS
         play-jingle-bells.ps1
 .DESCRIPTION
-        Plays Jingle Bells 
+        Plays Jingle Bells.
 .EXAMPLE
         PS> .\play-jingle-bells.ps1
+.NOTES
+	Author: Markus Fleschutz · License: CC0
 .LINK
         https://github.com/fleschutz/PowerShell
-.NOTES
-        Author:  Markus Fleschutz
-        License: CC0
 #>
 
 $Notes = New-Object -TypeName psobject -Property @{

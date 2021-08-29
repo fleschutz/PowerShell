@@ -3,14 +3,13 @@
 	smart-data2csv.ps1 [<directory>]
 .DESCRIPTION
 	Converts the S.M.A.R.T. JSON files in the current/given directory to a CSV table for analysis
-        (use query-smart-data.ps1 to generate those JSON files)
+        (use query-smart-data.ps1 to generate those JSON files).
 .EXAMPLE
 	PS> .\smart-data2csv.ps1.ps1
+.NOTES
+	Author: Markus Fleschutz · License: CC0
 .LINK
 	https://github.com/fleschutz/PowerShell
-.NOTES
-	Author:  Markus Fleschutz
-	License: CC0
 #>
 
 param([string]$Directory = "")

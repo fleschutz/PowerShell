@@ -2,14 +2,13 @@
 .SYNOPSIS
 	translate-text.ps1 [<text>] [<source-lang>] [<target-lang>]
 .DESCRIPTION
-	Translates the given text into other languages
+	Translates the given text into other languages.
 .EXAMPLE
 	PS> .\translate-text.ps1 "Hello World" de en
+.NOTES
+	Author: Markus Fleschutz · License: CC0
 .LINK
 	https://github.com/fleschutz/PowerShell
-.NOTES
-	Author:  Markus Fleschutz
-	License: CC0
 #>
 
 param([string]$Text = "", [string]$SourceLang = "en", [string]$TargetLang = "any")

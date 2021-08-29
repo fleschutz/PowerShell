@@ -2,14 +2,13 @@
 .SYNOPSIS
 	translate-file.ps1 [<file>] [<source-lang>] [<target-lang>]
 .DESCRIPTION
-	Translates the given text file into another language and prints the result
+	Translates the given text file into another language and prints the result.
 .EXAMPLE
 	PS> .\translate-file.ps1 C:\Memo.txt en de
+.NOTES
+	Author: Markus Fleschutz · License: CC0
 .LINK
 	https://github.com/fleschutz/PowerShell
-.NOTES
-	Author:  Markus Fleschutz
-	License: CC0
 #>
 
 param([string]$File = "", [string]$SourceLang = "", [string]$TargetLang = "")

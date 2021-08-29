@@ -2,14 +2,13 @@
 .SYNOPSIS
 	install-google-chrome.ps1
 .DESCRIPTION
-	Installs the latest Google Chrome browser
+	Installs the latest Google Chrome browser.
 .EXAMPLE
 	PS> .\install-google-chrome.ps1
+.NOTES
+	Author: Markus Fleschutz · License: CC0
 .LINK
 	https://github.com/fleschutz/PowerShell
-.NOTES
-	Author:  Markus Fleschutz
-	License: CC0
 #>
 
 try {

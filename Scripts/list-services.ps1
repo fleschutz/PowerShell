@@ -2,14 +2,13 @@
 .SYNOPSIS
 	list-services.ps1 
 .DESCRIPTION
-	Lists the services on the local computer 
+	Lists the local computer services.
 .EXAMPLE
 	PS> .\list-services.ps1
+.NOTES
+	Author: Markus Fleschutz · License: CC0
 .LINK
 	https://github.com/fleschutz/PowerShell
-.NOTES
-	Author:  Markus Fleschutz
-	License: CC0
 #>
 
 try {

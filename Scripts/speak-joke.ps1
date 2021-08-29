@@ -2,14 +2,13 @@
 .SYNOPSIS
 	speak-joke.ps1
 .DESCRIPTION
-	Speaks a random Chuck Norris joke by text-to-speech (TTS)
+	Speaks a random Chuck Norris joke by text-to-speech (TTS).
 .EXAMPLE
 	PS> .\speak-joke.ps1
+.NOTES
+	Author: Markus Fleschutz · License: CC0
 .LINK
 	https://github.com/fleschutz/PowerShell
-.NOTES
-	Author:  Markus Fleschutz
-	License: CC0
 #>
 
 try {

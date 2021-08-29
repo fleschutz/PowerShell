@@ -2,14 +2,13 @@
 .SYNOPSIS
 	translate-files.ps1 [<file-pattern>]
 .DESCRIPTION
-	Translates the given text files into any supported language
+	Translates the given text files into any supported language.
 .EXAMPLE
 	PS> .\translate-files.ps1 C:\Temp\*.txt
+.NOTES
+	Author: Markus Fleschutz · License: CC0
 .LINK
 	https://github.com/fleschutz/PowerShell
-.NOTES
-	Author:  Markus Fleschutz
-	License: CC0
 #>
 
 param([string]$FilePattern = "")

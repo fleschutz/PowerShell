@@ -2,14 +2,13 @@
 .SYNOPSIS
 	simulate-matrix.ps1 
 .DESCRIPTION
-	Simulates the Matrix (fun)
+	Simulates the Matrix (fun).
 .EXAMPLE
 	PS> .\simulate-matrix.ps1
+.NOTES
+	Author: Markus Fleschutz · License: CC0
 .LINK
 	https://github.com/fleschutz/PowerShell
-.NOTES
-	Author:  Markus Fleschutz
-	License: CC0
 #>
 
 try {

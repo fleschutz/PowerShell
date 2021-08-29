@@ -2,14 +2,13 @@
 .SYNOPSIS
 	check-xml-file [<file>]
 .DESCRIPTION
-	Checks the given XML file for validity
+	Checks the given XML file for validity.
 .EXAMPLE
 	PS> .\check-xml-file.ps1 myfile.xml
+.NOTES
+	Author: Markus Fleschutz · License: CC0
 .LINK
 	https://github.com/fleschutz/PowerShell
-.NOTES
-	Author:  Markus Fleschutz
-	License: CC0
 #>
 
 param([string]$File = "")

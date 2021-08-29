@@ -2,14 +2,13 @@
 .SYNOPSIS
 	open-email-client.ps1
 .DESCRIPTION
-	Starts the default email client 
+	Starts the default email client.
 .EXAMPLE
 	PS> .\open-email-client.ps1
+.NOTES
+	Author: Markus Fleschutz · License: CC0
 .LINK
 	https://github.com/fleschutz/PowerShell
-.NOTES
-	Author:  Markus Fleschutz
-	License: CC0
 #>
 
 try {

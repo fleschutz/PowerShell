@@ -2,14 +2,13 @@
 .SYNOPSIS
 	check-symlinks.ps1 [<dir-tree>]
 .DESCRIPTION
-	Checks every symlink in the given directory tree
+	Checks every symlink in the given directory tree.
 .EXAMPLE
 	PS> .\check-symlinks.ps1 C:\MyApp
 .LINK
 	https://github.com/fleschutz/PowerShell
 .NOTES
-	Author:  Markus Fleschutz
-	License: CC0
+	Author: Markus Fleschutz · License: CC0
 #>
 
 param([string]$DirTree = "")

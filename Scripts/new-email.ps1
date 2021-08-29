@@ -2,14 +2,13 @@
 .SYNOPSIS
 	new-email.ps1 [<address>]
 .DESCRIPTION
-	Opens the default email client to write a new email
+	Opens the default email client to write a new email.
 .EXAMPLE
 	PS> .\new-email.ps1
+.NOTES
+	Author: Markus Fleschutz · License: CC0
 .LINK
 	https://github.com/fleschutz/PowerShell
-.NOTES
-	Author:  Markus Fleschutz
-	License: CC0
 #>
 
 param([string]$EmailAddress = "markus@fleschutz.de")

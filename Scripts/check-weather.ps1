@@ -2,14 +2,13 @@
 .SYNOPSIS
 	check-weather.ps1 [<location>]
 .DESCRIPTION
-	Checks the weather for critical values
+	Checks the weather for critical values.
 .EXAMPLE
 	PS> .\check-weather.ps1
 .LINK
 	https://github.com/fleschutz/PowerShell
 .NOTES
-	Author:  Markus Fleschutz
-	License: CC0
+	Author: Markus Fleschutz · License: CC0
 #>
 
 param([string]$Location = "") # empty means determine automatically

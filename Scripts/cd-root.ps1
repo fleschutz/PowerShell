@@ -2,14 +2,13 @@
 .SYNOPSIS
 	cd-root.ps1 
 .DESCRIPTION
-	Go to the root directory (C:\ on Windows)
+	Go to the root directory (C:\ on Windows).
 .EXAMPLE
 	PS> .\cd-root.ps1 
 .LINK
 	https://github.com/fleschutz/PowerShell
 .NOTES
-	Author:  Markus Fleschutz
-	License: CC0
+	Author: Markus Fleschutz · License: CC0
 #>
 
 if ($IsLinux) {

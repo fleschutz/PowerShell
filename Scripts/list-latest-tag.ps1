@@ -2,14 +2,13 @@
 .SYNOPSIS
 	list-latest-tag.ps1 [<repo-dir>] 
 .DESCRIPTION
-	Lists the latest tag on the current branch in a Git repository
+	Lists the latest tag on the current branch in a Git repository.
 .EXAMPLE
 	PS> .\list-latest-tag.ps1 C:\MyRepo
+.NOTES
+	Author: Markus Fleschutz · License: CC0
 .LINK
 	https://github.com/fleschutz/PowerShell
-.NOTES
-	Author:  Markus Fleschutz
-	License: CC0
 #>
 
 param([string]$RepoDir = "$PWD")

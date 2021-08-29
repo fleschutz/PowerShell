@@ -2,14 +2,13 @@
 .SYNOPSIS
 	list-earthquakes.ps1
 .DESCRIPTION
-	Lists earthquakes with magnitude >= 6.0 for the last 30 days
+	Lists earthquakes with magnitude >= 6.0 for the last 30 days.
 .EXAMPLE
 	PS> .\list-earthquakes.ps1
+.NOTES
+	Author: Markus Fleschutz · License: CC0
 .LINK
 	https://github.com/fleschutz/PowerShell
-.NOTES
-	Author:  Markus Fleschutz
-	License: CC0
 #>
 
 $Format="csv" # csv, geojson, kml, text, xml

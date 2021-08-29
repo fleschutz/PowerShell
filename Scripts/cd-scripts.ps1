@@ -2,14 +2,13 @@
 .SYNOPSIS
 	cd-scripts.ps1 
 .DESCRIPTION
-	Go to the PowerShell Scripts folder
+	Go to the PowerShell Scripts folder.
 .EXAMPLE
 	PS> .\cd-scripts.ps1 
 .LINK
 	https://github.com/fleschutz/PowerShell
 .NOTES
-	Author:  Markus Fleschutz
-	License: CC0
+	Author: Markus Fleschutz · License: CC0
 #>
 
 $TargetDir = resolve-path "$PSScriptRoot"

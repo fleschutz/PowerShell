@@ -2,14 +2,13 @@
 .SYNOPSIS
 	add-firewall-rules.ps1 [<path-to-executables>]
 .DESCRIPTION
-	Adds firewall rules for the given executables (needs administrator rights)
+	Adds firewall rules for the given executables (needs administrator rights).
 .EXAMPLE
 	PS> .\add-firewall-rules.ps1 C:\MyApp\bin
 .LINK
 	https://github.com/fleschutz/PowerShell
 .NOTES
-	Author:  Markus Fleschutz
-	License: CC0
+	Author: Markus Fleschutz · License: CC0
 #>
 
 #Requires -RunAsAdministrator

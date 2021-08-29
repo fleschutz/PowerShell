@@ -2,14 +2,13 @@
 .SYNOPSIS
 	voice-control.ps1 
 .DESCRIPTION
-	Executes all the PowerShell scripts by voice
+	Executes all the PowerShell scripts by voice.
 .EXAMPLE
 	PS> .\voice-control.ps1
+.NOTES
+	Author: Markus Fleschutz · License: CC0
 .LINK
 	https://github.com/fleschutz/PowerShell
-.NOTES
-	Author:  Markus Fleschutz
-	License: CC0
 #>
 
 [double]$MinConfidence = 0.04

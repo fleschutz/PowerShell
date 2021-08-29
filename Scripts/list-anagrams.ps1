@@ -2,14 +2,13 @@
 .SYNOPSIS
 	list-anagrams.ps1 [<word>] [<columns>]
 .DESCRIPTION
-	Lists all anagrams of the given word
+	Lists all anagrams of the given word.
 .EXAMPLE
 	PS> .\list-anagrams.ps1 Markus
+.NOTES
+	Author: Markus Fleschutz · License: CC0
 .LINK
 	https://github.com/fleschutz/PowerShell
-.NOTES
-	Author:  Markus Fleschutz
-	License: CC0
 #>
 
 param([string]$Word = "", [int]$Columns = 8)

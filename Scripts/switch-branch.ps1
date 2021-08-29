@@ -2,14 +2,13 @@
 .SYNOPSIS
 	switch-branch.ps1 [<branch-name>] [<repo-dir>]
 .DESCRIPTION
-	Switches the branch in the current/given Git repository (including submodules)
+	Switches the branch in the current/given Git repository (including submodules).
 .EXAMPLE
 	PS> .\switch-branch.ps1 main C:\MyRepo
+.NOTES
+	Author: Markus Fleschutz · License: CC0
 .LINK
 	https://github.com/fleschutz/PowerShell
-.NOTES
-	Author:  Markus Fleschutz
-	License: CC0
 #>
 
 param([string]$BranchName = "", [string]$RepoDir = "$PWD")

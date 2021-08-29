@@ -6,11 +6,10 @@
 	After you pass in a root folder and a search term, the script will list all files and folders matching that phrase.
 .EXAMPLE
 	PS> .\search-filename.ps1
+.NOTES
+	Author: Markus Fleschutz · License: CC0
 .LINK
 	https://github.com/fleschutz/PowerShell
-.NOTES
-	Author:  Markus Fleschutz
-	License: CC0
 #>
 
 param(

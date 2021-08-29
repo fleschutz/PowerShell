@@ -1,18 +1,16 @@
-﻿<#
+﻿#Requires -Version 3
+<#
 .SYNOPSIS
 	list-fritzbox-devices.ps1 [<username>] [<password>]
 .DESCRIPTION
-	Lists FRITZ!Box's known devices
+	Lists FRITZ!Box's known devices.
 .EXAMPLE
 	PS> .\list-fritzbox-devices.ps1
+.NOTES
+	Author: Markus Fleschutz · License: CC0
 .LINK
 	https://github.com/fleschutz/PowerShell
-.NOTES
-	Author:  Markus Fleschutz
-	License: CC0
 #>
-
-#Requires -Version 3
 
 param([string]$Username = "", [string]$Password = "")
 

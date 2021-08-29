@@ -1,18 +1,16 @@
-﻿<#
+﻿#Requires -Version 3
+<#
 .SYNOPSIS
 	list-fritzbox-calls.ps1 [<username>] [<password>]
 .DESCRIPTION
-	Lists the phone calls of the FRITZ!Box device
+	Lists the phone calls of the FRITZ!Box device.
 .EXAMPLE
 	PS> .\list-fritzbox-calls.ps1
+.NOTES
+	Author: Markus Fleschutz · License: CC0
 .LINK
 	https://github.com/fleschutz/PowerShell
-.NOTES
-	Author:  Markus Fleschutz
-	License: CC0
 #>
-
-#Requires -Version 3
 
 param([string]$Username = "", [string]$Password = "")
 

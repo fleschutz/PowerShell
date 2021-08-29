@@ -2,14 +2,13 @@
 .SYNOPSIS
         play-tetris-melody.ps1
 .DESCRIPTION
-        Plays the Tetris melody
+        Plays the Tetris melody.
 .EXAMPLE
         PS> .\play-tetris-melody.ps1
+.NOTES
+	Author: Markus Fleschutz · License: CC0
 .LINK
         https://github.com/fleschutz/PowerShell
-.NOTES
-        Author:  Markus Fleschutz
-        License: CC0
 #>
 
 [System.Console]::Beep(1320,500)

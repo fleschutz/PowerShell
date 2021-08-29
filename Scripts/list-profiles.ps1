@@ -2,14 +2,13 @@
 .SYNOPSIS
 	list-profiles.ps1
 .DESCRIPTION
-	Lists your PowerShell profiles
+	Lists your PowerShell profiles.
 .EXAMPLE
 	PS> .\list-profiles.ps1
+.NOTES
+	Author: Markus Fleschutz · License: CC0
 .LINK
 	https://github.com/fleschutz/PowerShell
-.NOTES
-	Author:  Markus Fleschutz
-	License: CC0
 #>
 
 function ShowProfile { param([string]$Level, [string]$Name, [string]$Filename)

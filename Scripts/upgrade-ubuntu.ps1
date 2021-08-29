@@ -2,14 +2,13 @@
 .SYNOPSIS
 	upgrade-ubuntu.ps1 
 .DESCRIPTION
-	Upgrades Ubuntu Linux to the latest (LTS) release 
+	Upgrades Ubuntu Linux to the latest (LTS) release.
 .EXAMPLE
 	PS> .\upgrade-ubuntu.ps1 
+.NOTES
+	Author: Markus Fleschutz · License: CC0
 .LINK
 	https://github.com/fleschutz/PowerShell
-.NOTES
-	Author:  Markus Fleschutz
-	License: CC0
 #>
 
 try {

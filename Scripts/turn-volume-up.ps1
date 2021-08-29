@@ -5,10 +5,10 @@
 	Turns the audio volume up (+10% by default).
 .EXAMPLE
 	PS> .\turn-volume-up.ps1
-.LINK
-	https://github.com/fleschutz/PowerShell
 .NOTES
 	Author:  Markus Fleschutz · License: CC0
+.LINK
+	https://github.com/fleschutz/PowerShell
 #>
 
 param([int]$percent = 10)

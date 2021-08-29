@@ -2,14 +2,13 @@
 .SYNOPSIS
 	list-branches.ps1 [<repo-dir>] [<pattern>]
 .DESCRIPTION
-	Lists all branches in the current/given Git repository 
+	Lists all branches in the current/given Git repository.
 .EXAMPLE
 	PS> .\list-branches.ps1
+.NOTES
+	Author: Markus Fleschutz · License: CC0
 .LINK
 	https://github.com/fleschutz/PowerShell
-.NOTES
-	Author:  Markus Fleschutz
-	License: CC0
 #>
 
 param([string]$RepoDir = "$PWD", [string]$Pattern = "*")

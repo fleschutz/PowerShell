@@ -2,14 +2,13 @@
 .SYNOPSIS
 	create-shortcut.ps1 [<shortcut>] [<target>] [<description>]
 .DESCRIPTION
-	Creates a new shortcut file
+	Creates a new shortcut file.
 .EXAMPLE
 	PS> .\create-shortcut.ps1 C:\Temp\HDD C:\
+.NOTES
+	Author: Markus Fleschutz · License: CC0
 .LINK
 	https://github.com/fleschutz/PowerShell
-.NOTES
-	Author:  Markus Fleschutz
-	License: CC0
 #>
 
 param([string]$shortcut = "", [string]$target = "", [string]$description)

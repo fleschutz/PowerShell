@@ -2,14 +2,13 @@
 .SYNOPSIS
 	sync-repo.ps1 [<repo-dir>]
 .DESCRIPTION
-	Synchronizes a Git repository by push & pull (including submodules)
+	Synchronizes a Git repository by push & pull (including submodules).
 .EXAMPLE
 	PS> .\sync-repo.ps1 C:\MyRepo
+.NOTES
+	Author: Markus Fleschutz · License: CC0
 .LINK
 	https://github.com/fleschutz/PowerShell
-.NOTES
-	Author:  Markus Fleschutz
-	License: CC0
 #>
 
 param([string]$RepoDir = "$PWD")

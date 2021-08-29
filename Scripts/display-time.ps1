@@ -2,14 +2,13 @@
 .SYNOPSIS
 	display-time.ps1 [<seconds>]
 .DESCRIPTION
-	Displays the current time (for 10 seconds by default)
+	Displays the current time (for 10 seconds by default).
 .EXAMPLE
 	PS> .\display-time.ps1
+.NOTES
+	Author: Markus Fleschutz · License: CC0
 .LINK
 	https://github.com/fleschutz/PowerShell
-.NOTES
-	Author:  Markus Fleschutz
-	License: CC0
 #>
 
 param([int]$Seconds = 10)
