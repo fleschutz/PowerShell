@@ -8,7 +8,7 @@ Mega Collection of PowerShell Scripts
 🔊 Scripts for Audio & Voice 
 -----------------------------
 
-| Script                                               | Description                                                        | Documentation                           |
+| Script                                               | Description                                                        | Docs                                    |
 | ---------------------------------------------------- | ------------------------------------------------------------------ | --------------------------------------- |
 | [mute-audio.ps1](Scripts/mute-audio.ps1)             | mutes the audio device                                             | [Manual](Docs/mute-audio.ps1.md)        |
 | [list-voices.ps1](Scripts/list-voices.ps1)           | lists the installed text-to-speech (TTS) voices                    | [Manual](Docs/list-voices.ps1.md)       |
@@ -45,7 +45,7 @@ Mega Collection of PowerShell Scripts
 ⚙️ Scripts for Computer Management
 -----------------------------------
 
-| Script                                               | Description                                                        | Documentation                           |
+| Script                                               | Description                                                        | Docs                                    |
 | ---------------------------------------------------- | ------------------------------------------------------------------ | --------------------------------------- |
 | [add-firewall-rules.ps1](Scripts/add-firewall-rules.ps1) | adds firewall rules for the given executables (needs admin rights)
 | [check-cpu-temp.ps1](Scripts/check-cpu-temp.ps1)     | checks the CPU temperature
@@ -168,7 +168,7 @@ Mega Collection of PowerShell Scripts
 ♻️ Scripts to Convert Files
 ---------------------------
 
-| Script                                                 | Description                                                        | Documentation                           |
+| Script                                                 | Description                                                        | Docs                                    |
 | ------------------------------------------------------ | ------------------------------------------------------------------ | --------------------------------------- |
 | [convert-csv2txt.ps1](Scripts/convert-csv2txt.ps1)     | converts a given .CSV file to a text file                          | [Manual](Docs/convert-csv2txt.ps1.md)   |
 | [convert-mysql2csv.ps1](Scripts/convert-mysql2csv.ps1) | converts a MySQL database table to a .CSV file                     | [Manual](Docs/convert-mysql2csv.ps1.md) |
@@ -180,7 +180,7 @@ Mega Collection of PowerShell Scripts
 📝 Scripts for Git
 -------------------
 
-| Script                                               | Description                                                        | Documentation                           |
+| Script                                               | Description                                                        | Docs                                    |
 | ---------------------------------------------------- | ------------------------------------------------------------------ | --------------------------------------- |
 | [cherry-picker.ps1](Scripts/cherry-picker.ps1)       | cherry-picks a Git commit into multiple branches                   | [Manual](Docs/cherry-picker.ps1.md)     |
 | [clean-repo.ps1](Scripts/clean-repo.ps1)             | cleans a Git repository from untracked files (including submodules) | [Manual](Docs/clean-repo.ps1.md)       |
@@ -207,7 +207,7 @@ Mega Collection of PowerShell Scripts
 🔎 Scripts for PowerShell 
 ------------------------
 
-| Script                                                 | Description                                                        | Documentation                           |
+| Script                                                 | Description                                                        | Docs                                    |
 | ------------------------------------------------------ | ------------------------------------------------------------------ | --------------------------------------- |
 | [daily-tasks.sh](Scripts/daily-tasks.sh)               | execute PowerShell scripts automatically as daily tasks (Linux only) | [Manual](Docs/daily-tasks.sh.md)      |
 | [introduce-powershell.ps1](Scripts/introduce-powershell.ps1) | introduces PowerShell to new users                           | [Manual](Docs/introduce-powershell.ps1.md) |
