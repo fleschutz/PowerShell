@@ -15,7 +15,7 @@ Why use PowerShell?
 
 How to get PowerShell?
 ----------------------
-* **On Windows 7 and newer** PowerShell is provided by default. However, script execution is **not allowed by default** (execution policy is "restricted"). To enable this, enter as administrator:
+* **On Windows 7 and newer** PowerShell is provided by default. However, script execution is **disallowed by default** (execution policy is "restricted"). To enable this, enter as administrator:
    ```
    PS> Set-ExecutionPolicy RemoteSigned
    ```
@@ -34,7 +34,7 @@ How to get the collection of PowerShell scripts?
 
 Why do some scripts show gibberish characters?
 ----------------------------------------------
-Those PowerShell scripts are using Unicode input & output! Use a modern console supporting UTF-8 such as Windows Terminal, please.
+Those PowerShell scripts are using Unicode input & output. Use a modern console supporting UTF-8 such as Windows Terminal, please.
 
 
 How to set PowerShell as default shell on Linux?
@@ -50,8 +50,8 @@ Want to use the PowerShell scripts everywhere on the command-line? Then you need
 * **On Windows:** open the environment variables dialogue and add the full path to Scripts/ to the system environment variable "Path"
 
 
-How to use PowerShell in context menus?
----------------------------------------
+How to use PowerShell in Windows context menus?
+-----------------------------------------------
 * to enable "right-click > New > Windows PowerShell Script" execute `Add_ps1_to_New_context_menu.reg` in subfolder [Data/](../Data)
 * to disable this execute `Remove_ps1_from_New_context_menu.reg` in subfolder [Data/](../Data)
 
@@ -83,7 +83,7 @@ Found a bug or issue?
 ---------------------
 If you find something bad (like a bug, error, or any issue), please report it here by open an Issue.
 
-Or even better: Fork the Repository, fix it and submit a pull request, so others can participate too   
+Or even better: Fork the Repository, fix it and submit a pull request, so others can participate too.  
 
 
 Your question is not answered here?
