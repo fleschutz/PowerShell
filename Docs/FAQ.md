@@ -29,7 +29,7 @@ How to get PowerShell?
 How to get the PowerShell Scripts?
 ----------------------------------
 * Git users execute: `$ git clone https://github.com/fleschutz/PowerShell`
-* otherwise download it from: https://github.com/fleschutz/PowerShell/archive/master.zip
+* otherwise download & unzip: https://github.com/fleschutz/PowerShell/archive/master.zip
 
 
 Why do some Scripts show gibberish characters?
@@ -56,18 +56,19 @@ How to use PowerShell in Context Menus?
 * to disable this execute `Remove_ps1_from_New_context_menu.reg` in subfolder [Data/](../Data)
 
 
-How to edit the PowerShell Scripts?
------------------------------------
+Which editor for PowerShell Scripts is recommended?
+---------------------------------------------------
 * use *PowerShell ISE* (Integrated Scripting Environment) to write, test and debug scripts (available for free on Windows only).
 * use *Visual Studio Code* supporting syntax highlighting, on-the-fly problem checking and an integrated PowerShell Console (available for free on Linux, Mac OS and Windows).
 * or simply use your *favorite text editor*
+
 
 How to write good PowerShell Scripts?
 -------------------------------------
 Good PowerShell scripts are user-friendly and platform-independant. As a guideline follow these rules, please:
 
 1. the filename is named using the `<verb>-<object>.ps1` scheme
-2. the encoding is UTF-8-BOM to support and use Unicode characters (including emojis where appropriate)
+2. the encoding is UTF-8-BOM to support and use Unicode characters
 3. the script has execute file permissions: chmod a+rx <file> (for Linux support)
 4. provide a comment-based help with syntax, description, link, author, and license
 5. check the requirements (e.g. #Requires -RunAsAdministrator, or #Requires -Version 3)
@@ -76,6 +77,14 @@ Good PowerShell scripts are user-friendly and platform-independant. As a guideli
 8. for readibility use UpperCamelCase for variables and functions, lowerCamelCase for everything else
 9. on error call write-error with keyword "ERROR:" (to support log parsers) and exit the error code (mostly 1)
 10. on success exit with error code 0 (exit 0)
+
+
+Found a bug or Issue?
+---------------------
+If you find something bad (like a bug, error, or any issue), please report it here by open an Issue.
+
+Or even better: Fork the Repository, fix it and submit a pull request, so others can participate too   
+
 
 Your Question is not answered here?
 -----------------------------------
