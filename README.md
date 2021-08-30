@@ -64,8 +64,8 @@ Mega Collection of PowerShell Scripts
 | [install-ssh-client.ps1](Scripts/install-ssh-client.ps1) | Installs the SSH client (needs admin rights)
 | [install-ssh-server.ps1](Scripts/install-ssh-server.ps1) | Installs the SSH server (needs admin rights)
 | [install-signal-cli.ps1](Scripts/install-signal-cli.ps1) | Installs signal-cli from github.com/AsamK/signal-cli
-| [install-wsl.ps1](Scripts/install-wsl.ps1)           | Installs Windows Subsystem for Linux (WSL), needs admin rights
 | [install-vscode.ps1](Scripts/install-vscode.ps1)     | Installs Visual Studio Code 
+| [install-wsl.ps1](Scripts/install-wsl.ps1)           | Installs Windows Subsystem for Linux (WSL), needs admin rights
 | [list-cli-tools.ps1](Scripts/list-cli-tools.ps1)     | Lists available command-line interface (CLI) tools 
 | [list-drives.ps1](Scripts/list-drives.ps1)           | Lists all drives
 | [list-network-shares.ps1](Scripts/list-network-shares.ps1) | Lists the network shares of the local computer

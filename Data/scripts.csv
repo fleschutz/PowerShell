@@ -79,8 +79,8 @@ install-knot-resolver.ps1, installs the Knot Resolver (needs admin rights)
 install-signal-cli.ps1, installs signal-cli from github.com/AsamK/signal-cli
 install-ssh-client.ps1, installs the SSH client (needs admin rights)
 install-ssh-server.ps1, installs the SSH server (needs admin rights)
-install-wsl.ps1, installs Windows Subsystem for Linux (WSL), needs admin rights
 install-vscode.ps1, installs Visual Studio Code 
+install-wsl.ps1, installs Windows Subsystem for Linux (WSL), needs admin rights
 introduce-powershell.ps1, introduces PowerShell to new users
 list-aliases.ps1, lists all PowerShell aliases 
 list-anagrams.ps1, lists all anagrams of the given word
