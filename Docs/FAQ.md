@@ -56,10 +56,14 @@ How to use PowerShell in Windows context menus?
 * to disable this execute `Remove_ps1_from_New_context_menu.reg` in subfolder [Data/](../Data)
 
 
-Which editor for PowerShell scripts is recommended?
----------------------------------------------------
-* use *PowerShell ISE* (Integrated Scripting Environment) to write, test and debug scripts (available for free on Windows only).
-* use *Visual Studio Code* supporting syntax highlighting, on-the-fly problem checking and an integrated PowerShell Console (available for free on Linux, Mac OS and Windows).
+Which editor to use for PowerShell scripts?
+-------------------------------------------
+* *PowerShell ISE* (Integrated Scripting Environment) - Official PowerShell development environment included with Microsoft Windows.
+* *Visual Studio Code* - Supporting syntax highlighting, on-the-fly problem checking and an integrated PowerShell Console (available for free on Linux, Mac OS and Windows).
+* *PowerShell Studio* - Powerful PowerShell IDE with module, help, and user interface development tools, high DPI support and regular updates.
+* *PowerShell Plus* - All in one IDE.
+* *Atom package* - Add-on with PowerShell language support for Atom.
+* *SublimeText package* - Add-on with PowerShell language support for Sublime Text.
 * or simply use your *favorite text editor*
 
 
