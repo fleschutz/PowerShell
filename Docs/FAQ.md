@@ -17,7 +17,7 @@ How to get PowerShell?
 ----------------------
 * **On Windows 7 and newer** PowerShell is provided by default. However, script execution is **not allowed by default** (execution policy is "restricted"). To enable this, enter as administrator:
    ```
-   $ Set-ExecutionPolicy RemoteSigned
+   PS> Set-ExecutionPolicy RemoteSigned
    ```
 * **On CentOS, Debian, Docker, Fedora, macOS, openSUSE, Red Hat, Ubuntu** visit https://github.com/PowerShell/PowerShell for installation.
 * **Want to use Snaps?** Install the PowerShell snap by executing:
