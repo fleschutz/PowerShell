@@ -11,23 +11,26 @@
 	https://github.com/fleschutz/PowerShell
 #>
 
-function ShowProfile { param([string]$Level, [string]$Name, [string]$Filename)
-	"$Level Profile '$Name'"
-	if (test-path "$Filename") {
-		"  at $Filename"
-	} else {
-		"  at $Filename (file missing)"
+function ListProfile { param([int]$Level, [string]$Profile, [string]$Location)
+	if (test-path "$Location") { $Existent = "yes" } else { $Existent = "no" }
+	new-object PSObject -Property @{
+		'Level' = "$Level"
+		'Profile' = "$Profile"
+		'Location' = "$Location"
+		'Existent' = "$Existent"
 	}
 }
 
+function ListProfiles { 
+	ListProfile 1 "AllUsersAllHosts"       $PROFILE.AllUsersAllHosts
+	ListProfile 2 "AllUsersCurrentHost"    $PROFILE.AllUsersCurrentHost
+	ListProfile 3 "CurrentUserAllHosts"    $PROFILE.CurrentUserAllHosts
+	ListProfile 4 "CurrentUserCurrentHost" $PROFILE.CurrentUserCurrentHost
+}
+
+
 try {
-	ShowProfile "1" "AllUsersAllHosts"       $PROFILE.AllUsersAllHosts
-	""
-	ShowProfile "2" "AllUsersCurrentHost"    $PROFILE.AllUsersCurrentHost
-	""
-	ShowProfile "3" "CurrentUserAllHosts"    $PROFILE.CurrentUserAllHosts
-	""
-	ShowProfile "4" "CurrentUserCurrentHost" $PROFILE.CurrentUserCurrentHost
+	ListProfiles | format-table -property Level,Profile,Location,Existent
 	exit 0
 } catch {
 	write-error "⚠️ Error in line $($_.InvocationInfo.ScriptLineNumber): $($Error[0])"
