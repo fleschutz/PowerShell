@@ -1,8 +1,8 @@
 ﻿<#
 .SYNOPSIS
-	list-commits.ps1 [<repo-dir>] [<format>]
+	list-commits.ps1 [<RepoDir>] [<Format>]
 .DESCRIPTION
-	Lists all commits in the current/given Git repository.
+	Lists all commits in a Git repository (format is: compact|normal|JSON).
 .EXAMPLE
 	PS> .\list-commits.ps1
 .NOTES
@@ -15,26 +15,31 @@ param([string]$RepoDir = "$PWD", [string]$Format = "compact")
 
 try {
 	if (-not(test-path "$RepoDir" -pathType container)) { throw "Can't access directory: $RepoDir" }
-	set-location "$RepoDir"
 
 	$Null = (git --version)
 	if ($lastExitCode -ne "0") { throw "Can't execute 'git' - make sure Git is installed and available" }
 
-	& git fetch
+	"🢃 Fetching latest tags..."
+	& git -C "$RepoDir" fetch --all --quiet
 	if ($lastExitCode -ne "0") { throw "'git fetch' failed" }
 
-	write-output ""
-	write-output "List of Git Commits"
-	write-output "-------------------"
 	if ($Format -eq "compact") {
-		& git log --graph --pretty=format:'%Cred%h%Creset%C(yellow)%d%Creset %s %C(bold blue)by %an %cr%Creset' --abbrev-commit
+		""
+		"List of Git Commits"
+		"-------------------"
+		& git -C "$RepoDir" log --graph --pretty=format:'%Cred%h%Creset%C(yellow)%d%Creset %s %C(bold blue)by %an %cr%Creset' --abbrev-commit
 		if ($lastExitCode -ne "0") { throw "'git log' failed" }
+		""
+	} elseif ($Format -eq "JSON") {
+		& git -C "$RepoDir" log --pretty=format:'{%n  "commit": "%H",%n  "abbreviated_commit": "%h",%n  "tree": "%T",%n  "abbreviated_tree": "%t",%n  "parent": "%P",%n  "abbreviated_parent": "%p",%n  "refs": "%D",%n  "encoding": "%e",%n  "subject": "%s",%n  "sanitized_subject_line": "%f",%n  "body": "%b",%n  "commit_notes": "%N",%n  "verification_flag": "%G?",%n  "signer": "%GS",%n  "signer_key": "%GK",%n  "author": {%n    "name": "%aN",%n    "email": "%aE",%n    "date": "%aD"%n  },%n  "commiter": {%n    "name": "%cN",%n    "email": "%cE",%n    "date": "%cD"%n  }%n},'
 	} else {
-		& git log
+		""
+		"List of Git Commits"
+		"-------------------"
+		& git -C "$RepoDir" log
 		if ($lastExitCode -ne "0") { throw "'git log' failed" }
+		""
 	}
-	write-output ""
-	write-output ""
 	exit 0
 } catch {
 	write-error "⚠️ Error in line $($_.InvocationInfo.ScriptLineNumber): $($Error[0])"
