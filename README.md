@@ -44,43 +44,46 @@ Mega Collection of PowerShell Scripts
 
 ⚙️ Scripts for Computer Management
 -----------------------------------
-* [add-firewall-rules.ps1](Scripts/add-firewall-rules.ps1) - adds firewall rules for the given executables (needs admin rights)
-* [check-cpu-temp.ps1](Scripts/check-cpu-temp.ps1) - checks the CPU temperature
-* [check-dns-resolution.ps1](Scripts/check-dns-resolution.ps1) - checks the DNS resolution with frequently used domain names
-* [check-drive-space.ps1](Scripts/check-drive-space.ps1) - checks the given drive for free space left
-* [check-file-system.ps1](Scripts/check-file-system.ps1) - checks the validity of the file system (needs admin rights)
-* [check-health.ps1](Scripts/check-health.ps1) - checks the system health
-* [check-ping.ps1](Scripts/check-ping.ps1) - checks the ping latency to the internet
-* [check-swap-space.ps1](Scripts/check-swap-space.ps1) - checks the swap space for free space left
-* [check-windows-system-files.ps1](Scripts/check-windows-system-files.ps1) - checks the validity of the Windows system files (needs admin rights)
-* [enable-crash-dumps.ps1](Scripts/enable-crash-dumps.ps1) - enables the writing of crash dumps
-* [hibernate.ps1](Scripts/hibernate.ps1) - enables hibernate mode for the local computer (needs admin rights)
-* [install-github-cli.ps1](Scripts/install-github-cli.ps1) - installs GitHub CLI
-* [install-google-chrome.ps1](Scripts/install-google-chrome.ps1) - installs the Google Chrome browser
-* [install-knot-resolver.ps1](Scripts/install-knot-resolver.ps1) - installs the Knot Resolver (needs admin rights)
-* [install-ssh-client.ps1](Scripts/install-ssh-client.ps1) - installs the SSH client (needs admin rights)
-* [install-ssh-server.ps1](Scripts/install-ssh-server.ps1) - installs the SSH server (needs admin rights)
-* [install-signal-cli.ps1](Scripts/install-signal-cli.ps1) - installs signal-cli from github.com/AsamK/signal-cli
-* [install-wsl.ps1](Scripts/install-wsl.ps1) - installs Windows Subsystem for Linux (WSL), needs admin rights
-* [list-cli-tools.ps1](Scripts/list-cli-tools.ps1) - lists available command-line interface (CLI) tools 
-* [list-drives.ps1](Scripts/list-drives.ps1) - lists all drives
-* [list-network-shares.ps1](Scripts/list-network-shares.ps1) - lists the network shares of the local computer
-* [list-installed-apps.ps1](Scripts/list-installed-apps.ps1) - lists the installed Windows Store apps
-* [list-installed-software.ps1](Scripts/list-installed-software.ps1) - lists the installed software (except Windows Store apps)
-* [list-printers.ps1](Scripts/list-printers.ps1) - lists all printer known to the computer
-* [list-processes.ps1](Scripts/list-processes.ps1) - lists the local computer processes
-* [list-services.ps1](Scripts/list-services.ps1) - lists the services on the local computer
-* [list-system-info.ps1](Scripts/list-system-info.ps1) - lists system information on the local computer
-* [list-tasks.ps1](Scripts/list-tasks.ps1) - lists all Windows scheduler tasks
-* [list-timezone.ps1](Scripts/list-timezone.ps1) - lists the current time zone details
-* [list-timezones.ps1](Scripts/list-timezones.ps1) - lists all time zones available 
-* [list-user-groups.ps1](Scripts/list-user-groups.ps1) - lists the user groups on the local computer
-* [poweroff.ps1](Scripts/poweroff.ps1) - halts the local computer (needs admin rights)
-* [query-smart-data.ps1](Scripts/query-smart-data.ps1) - queries the S.M.A.R.T. data of your HDD/SSD's 
-* [reboot.ps1](Scripts/reboot.ps1) - reboots the local computer (needs admin rights)
-* [restart-network-adapters.ps1](Scripts/restart-network-adapters.ps1) - restarts all local network adapters
-* [upgrade-ubuntu.ps1](Scripts/upgrade-ubuntu.ps1) - upgrades Ubuntu Linux to the latest (LTS) release 
-* [wakeup.ps1](Scripts/wakeup.ps1) - sends a magic packet to the given computer, waking him up
+
+| Script                                               | Description                                                        | Documentation                           |
+| ---------------------------------------------------- | ------------------------------------------------------------------ | --------------------------------------- |
+| [add-firewall-rules.ps1](Scripts/add-firewall-rules.ps1) | adds firewall rules for the given executables (needs admin rights)
+| [check-cpu-temp.ps1](Scripts/check-cpu-temp.ps1)     | checks the CPU temperature
+| [check-dns-resolution.ps1](Scripts/check-dns-resolution.ps1) | checks the DNS resolution with frequently used domain names
+| [check-drive-space.ps1](Scripts/check-drive-space.ps1) | checks the given drive for free space left
+| [check-file-system.ps1](Scripts/check-file-system.ps1) | checks the validity of the file system (needs admin rights)
+| [check-health.ps1](Scripts/check-health.ps1)         | checks the system health
+| [check-ping.ps1](Scripts/check-ping.ps1)             | checks the ping latency to the internet
+| [check-swap-space.ps1](Scripts/check-swap-space.ps1) | checks the swap space for free space left
+| [check-windows-system-files.ps1](Scripts/check-windows-system-files.ps1) | checks the validity of the Windows system files (needs admin rights)
+| [enable-crash-dumps.ps1](Scripts/enable-crash-dumps.ps1) | enables the writing of crash dumps
+| [hibernate.ps1](Scripts/hibernate.ps1)               | enables hibernate mode for the local computer (needs admin rights)
+| [install-github-cli.ps1](Scripts/install-github-cli.ps1) | installs GitHub CLI
+| [install-google-chrome.ps1](Scripts/install-google-chrome.ps1) | installs the Google Chrome browser
+| [install-knot-resolver.ps1](Scripts/install-knot-resolver.ps1) | installs the Knot Resolver (needs admin rights)
+| [install-ssh-client.ps1](Scripts/install-ssh-client.ps1) | installs the SSH client (needs admin rights)
+| [install-ssh-server.ps1](Scripts/install-ssh-server.ps1) | installs the SSH server (needs admin rights)
+| [install-signal-cli.ps1](Scripts/install-signal-cli.ps1) | installs signal-cli from github.com/AsamK/signal-cli
+| [install-wsl.ps1](Scripts/install-wsl.ps1)           | installs Windows Subsystem for Linux (WSL), needs admin rights
+| [list-cli-tools.ps1](Scripts/list-cli-tools.ps1)     | lists available command-line interface (CLI) tools 
+| [list-drives.ps1](Scripts/list-drives.ps1)           | lists all drives
+| [list-network-shares.ps1](Scripts/list-network-shares.ps1) | lists the network shares of the local computer
+| [list-installed-apps.ps1](Scripts/list-installed-apps.ps1) | lists the installed Windows Store apps
+| [list-installed-software.ps1](Scripts/list-installed-software.ps1) | lists the installed software (except Windows Store apps)
+| [list-printers.ps1](Scripts/list-printers.ps1)       | lists all printer known to the computer
+| [list-processes.ps1](Scripts/list-processes.ps1)     | lists the local computer processes
+| [list-services.ps1](Scripts/list-services.ps1)       | lists the services on the local computer
+| [list-system-info.ps1](Scripts/list-system-info.ps1) | lists system information on the local computer
+| [list-tasks.ps1](Scripts/list-tasks.ps1)             | lists all Windows scheduler tasks
+| [list-timezone.ps1](Scripts/list-timezone.ps1)       | lists the current time zone details
+| [list-timezones.ps1](Scripts/list-timezones.ps1)     | lists all time zones available 
+| [list-user-groups.ps1](Scripts/list-user-groups.ps1) | lists the user groups on the local computer
+| [poweroff.ps1](Scripts/poweroff.ps1)                 | halts the local computer (needs admin rights)
+| [query-smart-data.ps1](Scripts/query-smart-data.ps1) | queries the S.M.A.R.T. data of your HDD/SSD's 
+| [reboot.ps1](Scripts/reboot.ps1)                     | reboots the local computer (needs admin rights)
+| [restart-network-adapters.ps1](Scripts/restart-network-adapters.ps1) | restarts all local network adapters
+| [upgrade-ubuntu.ps1](Scripts/upgrade-ubuntu.ps1)     | upgrades Ubuntu Linux to the latest (LTS) release 
+| [wakeup.ps1](Scripts/wakeup.ps1)                     | sends a magic packet a computer to wake him up
 
 💻 Scripts for the Desktop
 ---------------------------
@@ -180,25 +183,25 @@ Mega Collection of PowerShell Scripts
 | Script                                               | Description                                                        | Documentation                           |
 | ---------------------------------------------------- | ------------------------------------------------------------------ | --------------------------------------- |
 | [cherry-picker.ps1](Scripts/cherry-picker.ps1)       | cherry-picks a Git commit into multiple branches                   | [Manual](Docs/cherry-picker.ps1.md)     |
-| [clean-repo.ps1](Scripts/clean-repo.ps1)             | cleans the current/given Git repository from untracked files (including submodules) | [Manual](Docs/clean-repo.ps1.md) |
-| [clean-repos.ps1](Scripts/clean-repos.ps1)           | cleans all Git repositories under the current/given directory from untracked files (including submodules) | [Manual](Docs/clean-repos.ps1.md)   |
+| [clean-repo.ps1](Scripts/clean-repo.ps1)             | cleans a Git repository from untracked files (including submodules) | [Manual](Docs/clean-repo.ps1.md)       |
+| [clean-repos.ps1](Scripts/clean-repos.ps1)           | cleans all Git repositories under a directory from untracked files (including submodules) | [Manual](Docs/clean-repos.ps1.md)   |
 | [clone-repos.ps1](Scripts/clone-repos.ps1)           | clones well-known Git repositories                                 | [Manual](Docs/clone-repos.ps1.md)       |
 | [configure-git.ps1](Scripts/configure-git.ps1)       | sets up the Git user configuration                                 | [Manual](Docs/configure-git.ps1.md)     |
-| [create-branch.ps1](Scripts/create-branch.ps1)       | creates a new branch in the current/given Git repository           | [Manual](Docs/create-branch.ps1.md)     |
-| [create-tag.ps1](Scripts/create-tag.ps1)             | creates a new tag in the current/given Git repository              | [Manual](Docs/create-tag.ps1.md)        |
-| [fetch-repo.ps1](Scripts/fetch-repo.ps1)             | fetches updates for the current/given Git repository (including submodules) | [Manual](Docs/fetch-repo.ps1.md) |
-| [fetch-repos.ps1](Scripts/fetch-repos.ps1)           | fetches updates for all Git repositories under the current/given directory (including submodules) | [Manual](Docs/fetch-repos.ps1.md)   |
-| [list-branches.ps1](Scripts/list-branches.ps1)       | lists all branches in the current/given Git repository             | [Manual](Docs/list-branches.ps1.md)     |
-| [list-commits.ps1](Scripts/list-commits.ps1)         | lists all commits in the current/given Git repository              | [Manual](Docs/list-commits.ps1.md)      |
+| [create-branch.ps1](Scripts/create-branch.ps1)       | creates a new branch in a Git repository                           | [Manual](Docs/create-branch.ps1.md)     |
+| [create-tag.ps1](Scripts/create-tag.ps1)             | creates a new tag in a Git repository                              | [Manual](Docs/create-tag.ps1.md)        |
+| [fetch-repo.ps1](Scripts/fetch-repo.ps1)             | fetches updates for a Git repository (including submodules)        | [Manual](Docs/fetch-repo.ps1.md)        |
+| [fetch-repos.ps1](Scripts/fetch-repos.ps1)           | fetches updates for all Git repositories under a directory (including submodules) | [Manual](Docs/fetch-repos.ps1.md)   |
+| [list-branches.ps1](Scripts/list-branches.ps1)       | lists all branches in a Git repository                             | [Manual](Docs/list-branches.ps1.md)     |
+| [list-commits.ps1](Scripts/list-commits.ps1)         | lists all commits in a Git repository                              | [Manual](Docs/list-commits.ps1.md)      |
 | [list-latest-tag.ps1](Scripts/list-latest-tag.ps1)   | lists the latest tag on the current branch in a Git repository     | [Manual](Docs/list-latest-tag.ps1.md)   |
-| [list-latest-tags.ps1](Scripts/list-latest-tags.ps1) | lists the latests tags in all Git repositories under the current/given directory | [Manual](Docs/list-latest-tags.ps1.md)   |
-| [list-submodules.ps1](Scripts/list-submodules.ps1)   | lists the submodules of the current/given Git repository           | [Manual](Docs/list-submodules.ps1.md)   |
-| [list-tags.ps1](Scripts/list-tags.ps1)               | lists all tags in the current/given Git repository                 | [Manual](Docs/list-tags.ps1.md)         |
-| [make-repo.ps1](Scripts/make-repo.ps1)               | builds the current/given Git repository                            | [Manual](Docs/make-repo.ps1.md)         |
-| [make-repos.ps1](Scripts/make-repos.ps1)             | builds all Git repositories under the current/given directory      | [Manual](Docs/make-repos.ps1.md)        |
-| [pull-repo.ps1](Scripts/pull-repo.ps1)               | pulls updates for the current/given Git repository (including submodules) | [Manual](Docs/pull-repo.ps1.md)  |
-| [pull-repos.ps1](Scripts/pull-repos.ps1)             | pulls updates for all Git repositories under the current/given directory (including submodules) | [Manual](Docs/pull-repos.ps1.md)   |
-| [switch-branch.ps1](Scripts/switch-branch.ps1)       | switches the branch in the current/given Git repository (including submodules) | [Manual](Docs/switch-branch.ps1.md) |
+| [list-latest-tags.ps1](Scripts/list-latest-tags.ps1) | lists the latests tags in all Git repositories under a directory   | [Manual](Docs/list-latest-tags.ps1.md)  |
+| [list-submodules.ps1](Scripts/list-submodules.ps1)   | lists the submodules in a Git repository                           | [Manual](Docs/list-submodules.ps1.md)   |
+| [list-tags.ps1](Scripts/list-tags.ps1)               | lists all tags in a Git repository                                 | [Manual](Docs/list-tags.ps1.md)         |
+| [make-repo.ps1](Scripts/make-repo.ps1)               | builds a Git repository                                            | [Manual](Docs/make-repo.ps1.md)         |
+| [make-repos.ps1](Scripts/make-repos.ps1)             | builds all Git repositories under a directory                      | [Manual](Docs/make-repos.ps1.md)        |
+| [pull-repo.ps1](Scripts/pull-repo.ps1)               | pulls updates for a Git repository (including submodules)          | [Manual](Docs/pull-repo.ps1.md)         |
+| [pull-repos.ps1](Scripts/pull-repos.ps1)             | pulls updates for all Git repositories under a directory (including submodules) | [Manual](Docs/pull-repos.ps1.md) |
+| [switch-branch.ps1](Scripts/switch-branch.ps1)       | switches the branch in a Git repository (including submodules)     | [Manual](Docs/switch-branch.ps1.md)     |
 | [sync-repo.ps1](Scripts/sync-repo.ps1)               | synchronizes a Git repository by push & pull (including submodules) | [Manual](Docs/sync-repo.ps1.md)        |
 
 🔎 Scripts for PowerShell 
