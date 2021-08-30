@@ -177,6 +177,7 @@ pull-repo.ps1, pulls updates for the current/given Git repository (including sub
 pull-repos.ps1, pulls updates for all Git repositories under the current/given directory (including submodules)
 query-smart-data.ps1, queries the S.M.A.R.T. data of your HDD/SSD's and saves it to the current/given directory
 new-email.ps1, starts the default email client to write a new email
+new-script.ps1, creates a new PowerShell script
 reboot.ps1, reboots the local computer (needs admin rights)
 reboot-fritzbox.ps1, reboots the FRITZ!box device
 remove-empty-dirs.ps1, removes empty subfolders within the given directory tree
@@ -217,7 +218,6 @@ switch-shelly1.ps1, switches a Shelly1 device in the local network
 sync-repo.ps1, synchronizes a Git repository by push & pull (including submodules)
 take-screenshot.ps1, takes a single screenshot
 take-screenshots.ps1, takes multiple screenshots
-template.ps1, copy this template PowerShell script to write a new one
 translate-file.ps1, translates the given text file into another language
 translate-files.ps1, translates the given text files into any supported language
 translate-text.ps1, translates the given text into other languages

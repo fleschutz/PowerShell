@@ -227,8 +227,8 @@ Mega Collection of PowerShell Scripts
 | [list-modules.ps1](Scripts/list-modules.ps1)           | Lists the PowerShell modules                                       | [Manual](Docs/list-modules.ps1.md)      |
 | [list-profiles.ps1](Scripts/list-profiles.ps1)         | Lists your PowerShell profiles                                     | [Manual](Docs/list-profiles.ps1.md)     |
 | [list-scripts.ps1](Scripts/list-scripts.ps1)           | Lists all PowerShell scripts in this repository                    | [Manual](Docs/list-scripts.ps1.md)      |
+| [new-script.ps1](Scripts/new-script.ps1)               | Creates a new PowerShell script                              | [Manual](Docs/new-script.ps1.md)          |
 | [set-profile.ps1](Scripts/set-profile.ps1)             | Updates your PowerShell user profile                               | [Manual](Docs/set-profile.ps1.md)       |
-| [template.ps1](Scripts/template.ps1)                   | Copy this template PowerShell script to write a new one            | [Manual](Docs/template.ps1.md)          |
 
 🛒 Various PowerShell Scripts 
 ------------------------------
