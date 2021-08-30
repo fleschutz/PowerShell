@@ -195,8 +195,6 @@ Mega Collection of PowerShell Scripts
 | [clean-repos.ps1](Scripts/clean-repos.ps1)           | Cleans all Git repositories under a directory from untracked files (including submodules) | [Manual](Docs/clean-repos.ps1.md)   |
 | [clone-repos.ps1](Scripts/clone-repos.ps1)           | Clones well-known Git repositories                                 | [Manual](Docs/clone-repos.ps1.md)       |
 | [configure-git.ps1](Scripts/configure-git.ps1)       | Sets up the Git user configuration                                 | [Manual](Docs/configure-git.ps1.md)     |
-| [create-branch.ps1](Scripts/create-branch.ps1)       | Creates a new branch in a Git repository                           | [Manual](Docs/create-branch.ps1.md)     |
-| [create-tag.ps1](Scripts/create-tag.ps1)             | Creates a new tag in a Git repository                              | [Manual](Docs/create-tag.ps1.md)        |
 | [fetch-repo.ps1](Scripts/fetch-repo.ps1)             | Fetches updates for a Git repository (including submodules)        | [Manual](Docs/fetch-repo.ps1.md)        |
 | [fetch-repos.ps1](Scripts/fetch-repos.ps1)           | Fetches updates for all Git repositories under a directory (including submodules) | [Manual](Docs/fetch-repos.ps1.md)   |
 | [list-branches.ps1](Scripts/list-branches.ps1)       | Lists all branches in a Git repository                             | [Manual](Docs/list-branches.ps1.md)     |
@@ -207,6 +205,8 @@ Mega Collection of PowerShell Scripts
 | [list-tags.ps1](Scripts/list-tags.ps1)               | Lists all tags in a Git repository                                 | [Manual](Docs/list-tags.ps1.md)         |
 | [make-repo.ps1](Scripts/make-repo.ps1)               | Builds a Git repository                                            | [Manual](Docs/make-repo.ps1.md)         |
 | [make-repos.ps1](Scripts/make-repos.ps1)             | Builds all Git repositories under a directory                      | [Manual](Docs/make-repos.ps1.md)        |
+| [new-branch.ps1](Scripts/new-branch.ps1)             | Creates a new branch in a Git repository                           | [Manual](Docs/new-branch.ps1.md)     |
+| [new-tag.ps1](Scripts/new-tag.ps1)                   | Creates a new tag in a Git repository                              | [Manual](Docs/new-tag.ps1.md)        |
 | [pull-repo.ps1](Scripts/pull-repo.ps1)               | Pulls updates for a Git repository (including submodules)          | [Manual](Docs/pull-repo.ps1.md)         |
 | [pull-repos.ps1](Scripts/pull-repos.ps1)             | Pulls updates for all Git repositories under a directory (including submodules) | [Manual](Docs/pull-repos.ps1.md) |
 | [switch-branch.ps1](Scripts/switch-branch.ps1)       | Switches the branch in a Git repository (including submodules)     | [Manual](Docs/switch-branch.ps1.md)     |

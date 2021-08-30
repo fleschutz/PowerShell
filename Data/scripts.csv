@@ -59,8 +59,6 @@ convert-ps2bat.ps1, converts PowerShell script(s) to .bat files
 convert-ps2md.ps1, converts the comment-based help of a PowerShell script to Markdown
 convert-sql2csv.ps1, converts the SQL database table to a CSV file
 convert-txt2wav.ps1, converts text into a audio .WAV file
-create-branch.ps1, creates a new branch in the current/given Git repository 
-create-tag.ps1, creates a new tag in the current/given Git repository 
 daily-tasks.sh, execute PowerShell scripts automatically as daily tasks (Linux only)
 decrypt-file.ps1, decrypts the given file
 display-time.ps1, displays the current time for 10 seconds by default
@@ -174,10 +172,12 @@ publish-to-ipfs.ps1, publishes the given files or directory to IPFS
 pull-repo.ps1, pulls updates for the current/given Git repository (including submodules)
 pull-repos.ps1, pulls updates for all Git repositories under the current/given directory (including submodules)
 query-smart-data.ps1, queries the S.M.A.R.T. data of your HDD/SSD's and saves it to the current/given directory
+new-branch.ps1, creates a new branch in the current/given Git repository 
 new-email.ps1, starts the default email client to write a new email
 new-script.ps1, creates a new PowerShell script
 new-shortcut.ps1, creates a new shortcut
 new-symlink.ps1, creates a new symbolic link
+new-tag.ps1, creates a new tag in a Git repository 
 reboot.ps1, reboots the local computer (needs admin rights)
 reboot-fritzbox.ps1, reboots the FRITZ!box device
 remove-empty-dirs.ps1, removes empty subfolders within the given directory tree

@@ -1,6 +1,6 @@
 ﻿<#
 .SYNOPSIS
-	create-tag.ps1 [<new-tag-name>] [<repo-dir>]
+	new-tag.ps1 [<new-tag-name>] [<repo-dir>]
 .DESCRIPTION
 	Creates a new tag in a Git repository.
 .EXAMPLE

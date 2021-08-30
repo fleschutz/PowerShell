@@ -1,10 +1,10 @@
 ﻿<#
 .SYNOPSIS
-	create-branch.ps1 [<new-branch-name>] [<repo-dir>]
+	new-branch.ps1 [<new-branch-name>] [<repo-dir>]
 .DESCRIPTION
 	Creates and switches to a new branch in a Git repository.
 .EXAMPLE
-	PS> .\create-branch.ps1 moonshot
+	PS> .\new-branch.ps1 moonshot
 .NOTES
 	Author: Markus Fleschutz · License: CC0
 .LINK
