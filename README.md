@@ -81,6 +81,7 @@ Mega Collection of PowerShell Scripts
 | [poweroff.ps1](Scripts/poweroff.ps1)                 | halts the local computer (needs admin rights)
 | [query-smart-data.ps1](Scripts/query-smart-data.ps1) | queries the S.M.A.R.T. data of your HDD/SSD's 
 | [reboot.ps1](Scripts/reboot.ps1)                     | reboots the local computer (needs admin rights)
+| [remove-print-jobs.ps1](Scripts/remove-print-jobs.ps1) | removes all jobs from all printers
 | [restart-network-adapters.ps1](Scripts/restart-network-adapters.ps1) | restarts all local network adapters
 | [upgrade-ubuntu.ps1](Scripts/upgrade-ubuntu.ps1)     | upgrades Ubuntu Linux to the latest (LTS) release 
 | [wakeup.ps1](Scripts/wakeup.ps1)                     | sends a magic packet a computer to wake him up

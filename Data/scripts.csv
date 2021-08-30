@@ -179,6 +179,7 @@ new-email.ps1, starts the default email client to write a new email
 reboot.ps1, reboots the local computer (needs admin rights)
 reboot-fritzbox.ps1, reboots the FRITZ!box device
 remove-empty-dirs.ps1, removes empty subfolders within the given directory tree
+remove-print-jobs.ps1, removes all jobs from all printers
 restart-network-adapters.ps1, restarts all local network adapters
 search-filename.ps1, searches the directory tree for filenames by given pattern 
 search-files.ps1, searches the given pattern in the given files
