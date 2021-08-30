@@ -71,6 +71,7 @@ Mega Collection of PowerShell Scripts
 | [list-installed-apps.ps1](Scripts/list-installed-apps.ps1) | Lists the installed Windows Store apps
 | [list-installed-software.ps1](Scripts/list-installed-software.ps1) | Lists the installed software (except Windows Store apps)
 | [list-printers.ps1](Scripts/list-printers.ps1)       | Lists all printer known to the computer
+| [list-print-jobs.ps1](Scripts/list-print-jobs.ps1) | Lists all jobs of all printers
 | [list-processes.ps1](Scripts/list-processes.ps1)     | Lists the local computer processes
 | [list-services.ps1](Scripts/list-services.ps1)       | Lists the services on the local computer
 | [list-system-info.ps1](Scripts/list-system-info.ps1) | Lists system information on the local computer

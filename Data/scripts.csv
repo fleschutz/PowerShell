@@ -127,6 +127,7 @@ list-os-updates.ps1, lists operating system updates
 list-passwords.ps1, prints a list of random passwords
 list-pins.ps1, prints a list of random PIN's
 list-printers.ps1, lists all printer known to the computer
+list-print-jobs.ps1, lists all jobs of all printers
 list-processes.ps1, lists the local computer processes
 list-profiles.ps1, lists your PowerShell profiles
 list-recycle-bin.ps1, lists the content of the recycle bin folder
