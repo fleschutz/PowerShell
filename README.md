@@ -10,37 +10,37 @@ Mega Collection of PowerShell Scripts
 
 | Script                                               | Description                                                        | Help                                    |
 | ---------------------------------------------------- | ------------------------------------------------------------------ | --------------------------------------- |
-| [mute-audio.ps1](Scripts/mute-audio.ps1)             | Mutes the audio device                                             | [Manual](Docs/mute-audio.ps1.md)        |
-| [list-voices.ps1](Scripts/list-voices.ps1)           | Lists the installed text-to-speech (TTS) voices                    | [Manual](Docs/list-voices.ps1.md)       |
-| [play-beep.ps1](Scripts/play-beep.ps1)               | Plays a beep sound                                                 | [Manual](Docs/play-beep.ps1.md)         |
-| [play-files.ps1](Scripts/play-files.ps1)             | Plays the given audio files                                        | [Manual](Docs/play-files.ps1.md)        |
-| [play-happy-birthday.ps1](Scripts/play-happy-birthday.ps1) | Plays the Happy Birthday song                                | [Manual](Docs/play-happy-birthday.ps1.md) |
-| [play-imperial-march.ps1](Scripts/play-imperial-march.ps1) | Plays the Imperial March (Star Wars)                         | [Manual](Docs/play-imperial-march.ps1.md) |
-| [play-jingle-bells.ps1](Scripts/play-jingle-bells.ps1) | Plays Jingle Bells                                               | [Manual](Docs/play-jingle-bells.ps1.md) |
-| [play-mission-impossible.ps1](Scripts/play-mission-impossible.ps1) | Plays the Mission Impossible theme                   | [Manual](Docs/play-mission-impossible.ps1.md) |
-| [play-m3u.ps1](Scripts/play-m3u.ps1)                 | Plays the given playlist (M3U file format)                         | [Manual](Docs/play-m3u.ps1.md)          |
-| [play-mp3.ps1](Scripts/play-mp3.ps1)                 | Plays the given sound file (MP3 file format)                       | [Manual](Docs/play-mp3.ps1.md)          |
-| [play-super-mario.ps1](Scripts/play-super-mario.ps1) | Plays the Super Mario Intro                                        | [Manual](Docs/play-super-mario.ps1.md)  |
-| [play-tetris-melody.ps1](Scripts/play-tetris-melody.ps1) | Plays the Tetris melody                                        | [Manual](Docs/play-tetris-melody.ps1.md) |
-| [speak-checklist.ps1](Scripts/speak-checklist.ps1)   | Speaks the given checklist by text-to-speech (TTS)                 | [Manual](Docs/speak-checklist.ps1.md)   |
-| [speak-countdown.ps1](Scripts/speak-countdown.ps1)   | Starts a countdown by text-to-speech (TTS)                         | [Manual](Docs/speak-countdown.ps1.md)   |
-| [speak-date.ps1](Scripts/speak-date.ps1)             | Speaks the current date by text-to-speech (TTS)                    | [Manual](Docs/speak-date.ps1.md)        |
-| [speak-english.ps1](Scripts/speak-english.ps1)       | Speaks the given text with an English text-to-speech (TTS) voice   | [Manual](Docs/speak-english.ps1.md)     |
-| [speak-epub.ps1](Scripts/speak-epub.ps1)             | Speaks the content of the given Epub file by text-to-speech (TTS)  | [Manual](Docs/speak-epub.ps1.md)        |
-| [speak-file.ps1](Scripts/speak-file.ps1)             | Speaks the content of the given text file by text-to-speech (TTS)  | [Manual](Docs/speak-file.ps1.md)        |
-| [speak-french.ps1](Scripts/speak-french.ps1)         | Speaks the given text with a French text-to-speech (TTS) voice     | [Manual](Docs/speak-french.ps1.md)      |
-| [speak-german.ps1](Scripts/speak-german.ps1)         | Speaks the given text with a German text-to-speech (TTS) voice     | [Manual](Docs/speak-german.ps1.md)      |
-| [speak-italian.ps1](Scripts/speak-italian.ps1)       | Speaks the given text with an Italian text-to-speech (TTS) voice   | [Manual](Docs/speak-italian.ps1.md)     |
-| [speak-joke.ps1](Scripts/speak-joke.ps1)             | Speaks a random Chuck Norris joke by text-to-speech (TTS)          | [Manual](Docs/speak-joke.ps1.md)        |
-| [speak-quote.ps1](Scripts/speak-quote.ps1)           | Speaks a random quote by text-to-speech (TTS)                      | [Manual](Docs/speak-quote.ps1.md)       |
-| [speak-spanish.ps1](Scripts/speak-spanish.ps1)       | Speaks the given text with a Spanish text-to-speech (TTS) voice    | [Manual](Docs/speak-spanish.ps1.md)     |
-| [speak-test.ps1](Scripts/speak-test.ps1)             | Performs a speak test by text-to-speech (TTS)                      | [Manual](Docs/speak-test.ps1.md)        |
-| [speak-text.ps1](Scripts/speak-text.ps1)             | Speaks the given text by text-to-speech (TTS)                      | [Manual](Docs/speak-text.ps1.md)        |
-| [speak-time.ps1](Scripts/speak-time.ps1)             | Speaks the current time by text-to-speech (TTS)                    | [Manual](Docs/speak-time.ps1.md)        |
-| [turn-volume-up.ps1](Scripts/turn-volume-up.ps1)     | Turns the audio volume up (+10% by default)                        | [Manual](Docs/turn-volume-up.ps1.md)    |
-| [turn-volume-down.ps1](Scripts/turn-volume-down.ps1) | Turns the audio volume down (-10% by default)                      | [Manual](Docs/turn-volume-down.ps1.md)  |
-| [unmute-audio.ps1](Scripts/unmute-audio.ps1)         | Unmutes the audio device                                           | [Manual](Docs/unmute-audio.ps1.md)      |
-| [voice-control.ps1](Scripts/voice-control.ps1)       | Executes the PowerShell scripts by voice                           | [Manual](Docs/voice-control.ps1.md)     |
+| [mute-audio.ps1](Scripts/mute-audio.ps1)             | Mutes the audio device                                             | [Help](Docs/mute-audio.ps1.md)        |
+| [list-voices.ps1](Scripts/list-voices.ps1)           | Lists the installed text-to-speech (TTS) voices                    | [Help](Docs/list-voices.ps1.md)       |
+| [play-beep.ps1](Scripts/play-beep.ps1)               | Plays a beep sound                                                 | [Help](Docs/play-beep.ps1.md)         |
+| [play-files.ps1](Scripts/play-files.ps1)             | Plays the given audio files                                        | [Help](Docs/play-files.ps1.md)        |
+| [play-happy-birthday.ps1](Scripts/play-happy-birthday.ps1) | Plays the Happy Birthday song                                | [Help](Docs/play-happy-birthday.ps1.md) |
+| [play-imperial-march.ps1](Scripts/play-imperial-march.ps1) | Plays the Imperial March (Star Wars)                         | [Help](Docs/play-imperial-march.ps1.md) |
+| [play-jingle-bells.ps1](Scripts/play-jingle-bells.ps1) | Plays Jingle Bells                                               | [Help](Docs/play-jingle-bells.ps1.md) |
+| [play-mission-impossible.ps1](Scripts/play-mission-impossible.ps1) | Plays the Mission Impossible theme                   | [Help](Docs/play-mission-impossible.ps1.md) |
+| [play-m3u.ps1](Scripts/play-m3u.ps1)                 | Plays the given playlist (M3U file format)                         | [Help](Docs/play-m3u.ps1.md)          |
+| [play-mp3.ps1](Scripts/play-mp3.ps1)                 | Plays the given sound file (MP3 file format)                       | [Help](Docs/play-mp3.ps1.md)          |
+| [play-super-mario.ps1](Scripts/play-super-mario.ps1) | Plays the Super Mario Intro                                        | [Help](Docs/play-super-mario.ps1.md)  |
+| [play-tetris-melody.ps1](Scripts/play-tetris-melody.ps1) | Plays the Tetris melody                                        | [Help](Docs/play-tetris-melody.ps1.md) |
+| [speak-checklist.ps1](Scripts/speak-checklist.ps1)   | Speaks the given checklist by text-to-speech (TTS)                 | [Help](Docs/speak-checklist.ps1.md)   |
+| [speak-countdown.ps1](Scripts/speak-countdown.ps1)   | Starts a countdown by text-to-speech (TTS)                         | [Help](Docs/speak-countdown.ps1.md)   |
+| [speak-date.ps1](Scripts/speak-date.ps1)             | Speaks the current date by text-to-speech (TTS)                    | [Help](Docs/speak-date.ps1.md)        |
+| [speak-english.ps1](Scripts/speak-english.ps1)       | Speaks the given text with an English text-to-speech (TTS) voice   | [Help](Docs/speak-english.ps1.md)     |
+| [speak-epub.ps1](Scripts/speak-epub.ps1)             | Speaks the content of the given Epub file by text-to-speech (TTS)  | [Help](Docs/speak-epub.ps1.md)        |
+| [speak-file.ps1](Scripts/speak-file.ps1)             | Speaks the content of the given text file by text-to-speech (TTS)  | [Help](Docs/speak-file.ps1.md)        |
+| [speak-french.ps1](Scripts/speak-french.ps1)         | Speaks the given text with a French text-to-speech (TTS) voice     | [Help](Docs/speak-french.ps1.md)      |
+| [speak-german.ps1](Scripts/speak-german.ps1)         | Speaks the given text with a German text-to-speech (TTS) voice     | [Help](Docs/speak-german.ps1.md)      |
+| [speak-italian.ps1](Scripts/speak-italian.ps1)       | Speaks the given text with an Italian text-to-speech (TTS) voice   | [Help](Docs/speak-italian.ps1.md)     |
+| [speak-joke.ps1](Scripts/speak-joke.ps1)             | Speaks a random Chuck Norris joke by text-to-speech (TTS)          | [Help](Docs/speak-joke.ps1.md)        |
+| [speak-quote.ps1](Scripts/speak-quote.ps1)           | Speaks a random quote by text-to-speech (TTS)                      | [Help](Docs/speak-quote.ps1.md)       |
+| [speak-spanish.ps1](Scripts/speak-spanish.ps1)       | Speaks the given text with a Spanish text-to-speech (TTS) voice    | [Help](Docs/speak-spanish.ps1.md)     |
+| [speak-test.ps1](Scripts/speak-test.ps1)             | Performs a speak test by text-to-speech (TTS)                      | [Help](Docs/speak-test.ps1.md)        |
+| [speak-text.ps1](Scripts/speak-text.ps1)             | Speaks the given text by text-to-speech (TTS)                      | [Help](Docs/speak-text.ps1.md)        |
+| [speak-time.ps1](Scripts/speak-time.ps1)             | Speaks the current time by text-to-speech (TTS)                    | [Help](Docs/speak-time.ps1.md)        |
+| [turn-volume-up.ps1](Scripts/turn-volume-up.ps1)     | Turns the audio volume up (+10% by default)                        | [Help](Docs/turn-volume-up.ps1.md)    |
+| [turn-volume-down.ps1](Scripts/turn-volume-down.ps1) | Turns the audio volume down (-10% by default)                      | [Help](Docs/turn-volume-down.ps1.md)  |
+| [unmute-audio.ps1](Scripts/unmute-audio.ps1)         | Unmutes the audio device                                           | [Help](Docs/unmute-audio.ps1.md)      |
+| [voice-control.ps1](Scripts/voice-control.ps1)       | Executes the PowerShell scripts by voice                           | [Help](Docs/voice-control.ps1.md)     |
 
 ⚙️ Scripts to Manage Computers
 -------------------------------
@@ -178,57 +178,57 @@ Mega Collection of PowerShell Scripts
 
 | Script                                                 | Description                                                        | Help                                    |
 | ------------------------------------------------------ | ------------------------------------------------------------------ | --------------------------------------- |
-| [convert-csv2txt.ps1](Scripts/convert-csv2txt.ps1)     | Converts a given .CSV file to a text file                          | [Manual](Docs/convert-csv2txt.ps1.md)   |
-| [convert-mysql2csv.ps1](Scripts/convert-mysql2csv.ps1) | Converts a MySQL database table to a .CSV file                     | [Manual](Docs/convert-mysql2csv.ps1.md) |
-| [convert-ps2bat.ps1](Scripts/convert-ps2bat.ps1)       | Converts a PowerShell script to a .BAT file                        | [Manual](Docs/convert-ps2bat.ps1.md)    |
-| [convert-ps2md.ps1](Scripts/convert-ps2md.ps1)         | Converts the comment-based help of a PowerShell script to Markdown | [Manual](Docs/convert-ps2md.ps1.md)     |
-| [convert-sql2csv.ps1](Scripts/convert-sql2csv.ps1)     | Converts a SQL database table to a .CSV file                       | [Manual](Docs/convert-sql2csv.ps1.md)   |
-| [convert-txt2wav.ps1](Scripts/convert-txt2wav.ps1)     | Converts a text file to a .WAV audio file                          | [Manual](Docs/convert-txt2wav.ps1.md)   |
+| [convert-csv2txt.ps1](Scripts/convert-csv2txt.ps1)     | Converts a given .CSV file to a text file                          | [Help](Docs/convert-csv2txt.ps1.md)   |
+| [convert-mysql2csv.ps1](Scripts/convert-mysql2csv.ps1) | Converts a MySQL database table to a .CSV file                     | [Help](Docs/convert-mysql2csv.ps1.md) |
+| [convert-ps2bat.ps1](Scripts/convert-ps2bat.ps1)       | Converts a PowerShell script to a .BAT file                        | [Help](Docs/convert-ps2bat.ps1.md)    |
+| [convert-ps2md.ps1](Scripts/convert-ps2md.ps1)         | Converts the comment-based help of a PowerShell script to Markdown | [Help](Docs/convert-ps2md.ps1.md)     |
+| [convert-sql2csv.ps1](Scripts/convert-sql2csv.ps1)     | Converts a SQL database table to a .CSV file                       | [Help](Docs/convert-sql2csv.ps1.md)   |
+| [convert-txt2wav.ps1](Scripts/convert-txt2wav.ps1)     | Converts a text file to a .WAV audio file                          | [Help](Docs/convert-txt2wav.ps1.md)   |
 
 📝 Scripts for Git
 -------------------
 
 | Script                                               | Description                                                        | Help                                    |
 | ---------------------------------------------------- | ------------------------------------------------------------------ | --------------------------------------- |
-| [cherry-picker.ps1](Scripts/cherry-picker.ps1)       | Cherry-picks a Git commit into multiple branches                   | [Manual](Docs/cherry-picker.ps1.md)     |
-| [clean-repo.ps1](Scripts/clean-repo.ps1)             | Cleans a Git repository from untracked files (including submodules) | [Manual](Docs/clean-repo.ps1.md)       |
-| [clean-repos.ps1](Scripts/clean-repos.ps1)           | Cleans all Git repositories under a directory from untracked files (including submodules) | [Manual](Docs/clean-repos.ps1.md)   |
-| [clone-repos.ps1](Scripts/clone-repos.ps1)           | Clones well-known Git repositories                                 | [Manual](Docs/clone-repos.ps1.md)       |
-| [configure-git.ps1](Scripts/configure-git.ps1)       | Sets up the Git user configuration                                 | [Manual](Docs/configure-git.ps1.md)     |
-| [fetch-repo.ps1](Scripts/fetch-repo.ps1)             | Fetches updates for a Git repository (including submodules)        | [Manual](Docs/fetch-repo.ps1.md)        |
-| [fetch-repos.ps1](Scripts/fetch-repos.ps1)           | Fetches updates for all Git repositories under a directory (including submodules) | [Manual](Docs/fetch-repos.ps1.md)   |
-| [list-branches.ps1](Scripts/list-branches.ps1)       | Lists all branches in a Git repository                             | [Manual](Docs/list-branches.ps1.md)     |
-| [list-commits.ps1](Scripts/list-commits.ps1)         | Lists all commits in a Git repository                              | [Manual](Docs/list-commits.ps1.md)      |
-| [list-latest-tag.ps1](Scripts/list-latest-tag.ps1)   | Lists the latest tag on the current branch in a Git repository     | [Manual](Docs/list-latest-tag.ps1.md)   |
-| [list-latest-tags.ps1](Scripts/list-latest-tags.ps1) | Lists the latests tags in all Git repositories under a directory   | [Manual](Docs/list-latest-tags.ps1.md)  |
-| [list-submodules.ps1](Scripts/list-submodules.ps1)   | Lists the submodules in a Git repository                           | [Manual](Docs/list-submodules.ps1.md)   |
-| [list-tags.ps1](Scripts/list-tags.ps1)               | Lists all tags in a Git repository                                 | [Manual](Docs/list-tags.ps1.md)         |
-| [make-repo.ps1](Scripts/make-repo.ps1)               | Builds a Git repository                                            | [Manual](Docs/make-repo.ps1.md)         |
-| [make-repos.ps1](Scripts/make-repos.ps1)             | Builds all Git repositories under a directory                      | [Manual](Docs/make-repos.ps1.md)        |
-| [new-branch.ps1](Scripts/new-branch.ps1)             | Creates a new branch in a Git repository                           | [Manual](Docs/new-branch.ps1.md)     |
-| [new-tag.ps1](Scripts/new-tag.ps1)                   | Creates a new tag in a Git repository                              | [Manual](Docs/new-tag.ps1.md)        |
-| [pull-repo.ps1](Scripts/pull-repo.ps1)               | Pulls updates for a Git repository (including submodules)          | [Manual](Docs/pull-repo.ps1.md)         |
-| [pull-repos.ps1](Scripts/pull-repos.ps1)             | Pulls updates for all Git repositories under a directory (including submodules) | [Manual](Docs/pull-repos.ps1.md) |
-| [switch-branch.ps1](Scripts/switch-branch.ps1)       | Switches the branch in a Git repository (including submodules)     | [Manual](Docs/switch-branch.ps1.md)     |
-| [sync-repo.ps1](Scripts/sync-repo.ps1)               | Synchronizes a Git repository by push & pull (including submodules) | [Manual](Docs/sync-repo.ps1.md)        |
+| [cherry-picker.ps1](Scripts/cherry-picker.ps1)       | Cherry-picks a Git commit into multiple branches                   | [Help](Docs/cherry-picker.ps1.md)     |
+| [clean-repo.ps1](Scripts/clean-repo.ps1)             | Cleans a Git repository from untracked files (including submodules) | [Help](Docs/clean-repo.ps1.md)       |
+| [clean-repos.ps1](Scripts/clean-repos.ps1)           | Cleans all Git repositories under a directory from untracked files (including submodules) | [Help](Docs/clean-repos.ps1.md)   |
+| [clone-repos.ps1](Scripts/clone-repos.ps1)           | Clones well-known Git repositories                                 | [Help](Docs/clone-repos.ps1.md)       |
+| [configure-git.ps1](Scripts/configure-git.ps1)       | Sets up the Git user configuration                                 | [Help](Docs/configure-git.ps1.md)     |
+| [fetch-repo.ps1](Scripts/fetch-repo.ps1)             | Fetches updates for a Git repository (including submodules)        | [Help](Docs/fetch-repo.ps1.md)        |
+| [fetch-repos.ps1](Scripts/fetch-repos.ps1)           | Fetches updates for all Git repositories under a directory (including submodules) | [Help](Docs/fetch-repos.ps1.md)   |
+| [list-branches.ps1](Scripts/list-branches.ps1)       | Lists all branches in a Git repository                             | [Help](Docs/list-branches.ps1.md)     |
+| [list-commits.ps1](Scripts/list-commits.ps1)         | Lists all commits in a Git repository                              | [Help](Docs/list-commits.ps1.md)      |
+| [list-latest-tag.ps1](Scripts/list-latest-tag.ps1)   | Lists the latest tag on the current branch in a Git repository     | [Help](Docs/list-latest-tag.ps1.md)   |
+| [list-latest-tags.ps1](Scripts/list-latest-tags.ps1) | Lists the latests tags in all Git repositories under a directory   | [Help](Docs/list-latest-tags.ps1.md)  |
+| [list-submodules.ps1](Scripts/list-submodules.ps1)   | Lists the submodules in a Git repository                           | [Help](Docs/list-submodules.ps1.md)   |
+| [list-tags.ps1](Scripts/list-tags.ps1)               | Lists all tags in a Git repository                                 | [Help](Docs/list-tags.ps1.md)         |
+| [make-repo.ps1](Scripts/make-repo.ps1)               | Builds a Git repository                                            | [Help](Docs/make-repo.ps1.md)         |
+| [make-repos.ps1](Scripts/make-repos.ps1)             | Builds all Git repositories under a directory                      | [Help](Docs/make-repos.ps1.md)        |
+| [new-branch.ps1](Scripts/new-branch.ps1)             | Creates a new branch in a Git repository                           | [Help](Docs/new-branch.ps1.md)     |
+| [new-tag.ps1](Scripts/new-tag.ps1)                   | Creates a new tag in a Git repository                              | [Help](Docs/new-tag.ps1.md)        |
+| [pull-repo.ps1](Scripts/pull-repo.ps1)               | Pulls updates for a Git repository (including submodules)          | [Help](Docs/pull-repo.ps1.md)         |
+| [pull-repos.ps1](Scripts/pull-repos.ps1)             | Pulls updates for all Git repositories under a directory (including submodules) | [Help](Docs/pull-repos.ps1.md) |
+| [switch-branch.ps1](Scripts/switch-branch.ps1)       | Switches the branch in a Git repository (including submodules)     | [Help](Docs/switch-branch.ps1.md)     |
+| [sync-repo.ps1](Scripts/sync-repo.ps1)               | Synchronizes a Git repository by push & pull (including submodules) | [Help](Docs/sync-repo.ps1.md)        |
 
 🔎 Scripts for PowerShell 
 ------------------------
 
 | Script                                                 | Description                                                        | Help                                    |
 | ------------------------------------------------------ | ------------------------------------------------------------------ | --------------------------------------- |
-| [daily-tasks.sh](Scripts/daily-tasks.sh)               | Execute PowerShell scripts automatically as daily tasks (Linux only) | [Manual](Docs/daily-tasks.sh.md)      |
-| [introduce-powershell.ps1](Scripts/introduce-powershell.ps1) | Introduces PowerShell to new users                           | [Manual](Docs/introduce-powershell.ps1.md) |
-| [list-aliases.ps1](Scripts/list-aliases.ps1)           | Lists all PowerShell aliases                                       | [Manual](Docs/list-aliases.ps1.md)      |
-| [list-automatic-variables.ps1](Scripts/list-automatic-variables.ps1) | Lists the automatic variables of PowerShell          | [Manual](Docs/list-automatic-variables.ps1.md) |
-| [list-cheat-sheet.ps1](Scripts/list-cheat-sheet.ps1)   | Lists the PowerShell cheat sheet                                   | [Manual](Docs/list-cheat-sheet.ps1.md)  |
-| [list-cmdlets.ps1](Scripts/list-cmdlets.ps1)           | Lists the PowerShell cmdlets                                       | [Manual](Docs/list-cmdlets.ps1.md)      |
-| [list-console-colors.ps1](Scripts/list-console-colors.ps1) | Lists all console colors                                       | [Manual](Docs/list-console-colors.ps1.md) |
-| [list-modules.ps1](Scripts/list-modules.ps1)           | Lists the PowerShell modules                                       | [Manual](Docs/list-modules.ps1.md)      |
-| [list-profiles.ps1](Scripts/list-profiles.ps1)         | Lists your PowerShell profiles                                     | [Manual](Docs/list-profiles.ps1.md)     |
-| [list-scripts.ps1](Scripts/list-scripts.ps1)           | Lists all PowerShell scripts in this repository                    | [Manual](Docs/list-scripts.ps1.md)      |
-| [new-script.ps1](Scripts/new-script.ps1)               | Creates a new PowerShell script                              | [Manual](Docs/new-script.ps1.md)          |
-| [set-profile.ps1](Scripts/set-profile.ps1)             | Updates your PowerShell user profile                               | [Manual](Docs/set-profile.ps1.md)       |
+| [daily-tasks.sh](Scripts/daily-tasks.sh)               | Execute PowerShell scripts automatically as daily tasks (Linux only) | [Help](Docs/daily-tasks.sh.md)      |
+| [introduce-powershell.ps1](Scripts/introduce-powershell.ps1) | Introduces PowerShell to new users                           | [Help](Docs/introduce-powershell.ps1.md) |
+| [list-aliases.ps1](Scripts/list-aliases.ps1)           | Lists all PowerShell aliases                                       | [Help](Docs/list-aliases.ps1.md)      |
+| [list-automatic-variables.ps1](Scripts/list-automatic-variables.ps1) | Lists the automatic variables of PowerShell          | [Help](Docs/list-automatic-variables.ps1.md) |
+| [list-cheat-sheet.ps1](Scripts/list-cheat-sheet.ps1)   | Lists the PowerShell cheat sheet                                   | [Help](Docs/list-cheat-sheet.ps1.md)  |
+| [list-cmdlets.ps1](Scripts/list-cmdlets.ps1)           | Lists the PowerShell cmdlets                                       | [Help](Docs/list-cmdlets.ps1.md)      |
+| [list-console-colors.ps1](Scripts/list-console-colors.ps1) | Lists all console colors                                       | [Help](Docs/list-console-colors.ps1.md) |
+| [list-modules.ps1](Scripts/list-modules.ps1)           | Lists the PowerShell modules                                       | [Help](Docs/list-modules.ps1.md)      |
+| [list-profiles.ps1](Scripts/list-profiles.ps1)         | Lists your PowerShell profiles                                     | [Help](Docs/list-profiles.ps1.md)     |
+| [list-scripts.ps1](Scripts/list-scripts.ps1)           | Lists all PowerShell scripts in this repository                    | [Help](Docs/list-scripts.ps1.md)      |
+| [new-script.ps1](Scripts/new-script.ps1)               | Creates a new PowerShell script                              | [Help](Docs/new-script.ps1.md)          |
+| [set-profile.ps1](Scripts/set-profile.ps1)             | Updates your PowerShell user profile                               | [Help](Docs/set-profile.ps1.md)       |
 
 🛒 Various PowerShell Scripts 
 ------------------------------
