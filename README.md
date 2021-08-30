@@ -42,8 +42,8 @@ Mega Collection of PowerShell Scripts
 | [unmute-audio.ps1](Scripts/unmute-audio.ps1)         | unmutes the audio device                                           | [Manual](Docs/unmute-audio.ps1.md)      |
 | [voice-control.ps1](Scripts/voice-control.ps1)       | executes the PowerShell scripts by voice                           | [Manual](Docs/voice-control.ps1.md)     |
 
-⚙️ Scripts for Computer Management
------------------------------------
+⚙️ Scripts to Manage Computers
+-------------------------------
 
 | Script                                               | Description                                                        | Docs                                    |
 | ---------------------------------------------------- | ------------------------------------------------------------------ | --------------------------------------- |
@@ -87,32 +87,35 @@ Mega Collection of PowerShell Scripts
 
 💻 Scripts for the Desktop
 ---------------------------
-* [close-calculator.ps1](Scripts/close-calculator.ps1) - closes the calculator program gracefully
-* [close-chrome.ps1](Scripts/close-chrome.ps1) - closes Google Chrome gracefully
-* [close-cortana.ps1](Scripts/close-cortana.ps1) - closes Cortana gracefully
-* [close-edge.ps1](Scripts/close-edge.ps1) - closes Microsoft Edge gracefully
-* [close-file-explorer.ps1](Scripts/close-file-explorer.ps1) - closes Microsoft File Explorer gracefully
-* [close-firefox.ps1](Scripts/close-firefox.ps1) - closes the Firefox Web browser gracefully
-* [close-program.ps1](Scripts/close-program.ps1) - closes the given program gracefully
-* [close-netflix.ps1](Scripts/close-netflix.ps1) - closes Netflix gracefully
-* [close-onedrive.ps1](Scripts/close-onedrive.ps1) - closes Microsoft OneDrive gracefully
-* [close-system-settings.ps1](Scripts/close-system-settings.ps1) - closes the System Settings gracefully
-* [close-thunderbird.ps1](Scripts/close-thunderbird.ps1) - closes Mozilla Thunderbird gracefully
-* [close-vlc.ps1](Scripts/close-vlc.ps1) - closes the VLC media player gracefully
-* [close-windows-terminal.ps1](Scripts/close-windows-terminal.ps1) - closes Windows Terminal gracefully
-* [enable-god-mode.ps1](Scripts/enable-god-mode.ps1) - enables the god mode (adds a new icon to the desktop)
-* [list-clipboard.ps1](Scripts/list-clipboard.ps1) - lists the contents of the clipboard
-* [new-email.ps1](Scripts/new-email.ps1) - starts the default email client to write a new email
-* [open-browser.ps1](Scripts/open-browser.ps1) - starts the default Web browser
-* [open-calculator.ps1](Scripts/open-calculator.ps1) - starts the calculator program
-* [open-email-client.ps1](Scripts/open-browser.ps1) - starts the default email client
-* [open-file-explorer.ps1](Scripts/open-file-explorer.ps1) - starts the File Explorer
-* [open-netflix.ps1](Scripts/open-netflix.ps1) - starts the Netflix app
-* [open-onedrive.ps1](Scripts/open-onedrive.ps1) - opens the user's OneDrive folder 
-* [open-recycle-bin.ps1](Scripts/open-recycle-bin.ps1) - starts the File Explorer with the recycle bin folder
-* [set-wallpaper.ps1](Scripts/set-wallpaper.ps1) - sets the given image as wallpaper
-* [take-screenshot.ps1](Scripts/take-screenshot.ps1) - takes a single screenshot
-* [take-screenshots.ps1](Scripts/take-screenshots.ps1) - takes multiple screenshots (every minute by default)
+
+| Script                                               | Description                                                        | Docs                                    |
+| ---------------------------------------------------- | ------------------------------------------------------------------ | --------------------------------------- |
+| [close-calculator.ps1](Scripts/close-calculator.ps1) | closes the calculator program gracefully
+| [close-chrome.ps1](Scripts/close-chrome.ps1)         | closes Google Chrome gracefully
+| [close-cortana.ps1](Scripts/close-cortana.ps1)       | closes Cortana gracefully
+| [close-edge.ps1](Scripts/close-edge.ps1)             | closes Microsoft Edge gracefully
+| [close-file-explorer.ps1](Scripts/close-file-explorer.ps1) | closes Microsoft File Explorer gracefully
+| [close-firefox.ps1](Scripts/close-firefox.ps1)       | closes the Firefox Web browser gracefully
+| [close-program.ps1](Scripts/close-program.ps1)       | closes the given program gracefully
+| [close-netflix.ps1](Scripts/close-netflix.ps1)       | closes Netflix gracefully
+| [close-onedrive.ps1](Scripts/close-onedrive.ps1)     | closes Microsoft OneDrive gracefully
+| [close-system-settings.ps1](Scripts/close-system-settings.ps1) | closes the System Settings gracefully
+| [close-thunderbird.ps1](Scripts/close-thunderbird.ps1) | closes Mozilla Thunderbird gracefully
+| [close-vlc.ps1](Scripts/close-vlc.ps1)               | closes the VLC media player gracefully
+| [close-windows-terminal.ps1](Scripts/close-windows-terminal.ps1) | closes Windows Terminal gracefully
+| [enable-god-mode.ps1](Scripts/enable-god-mode.ps1)   | enables the god mode (adds a new icon to the desktop)
+| [list-clipboard.ps1](Scripts/list-clipboard.ps1)     | lists the contents of the clipboard
+| [new-email.ps1](Scripts/new-email.ps1)               | starts the default email client to write a new email
+| [open-browser.ps1](Scripts/open-browser.ps1)         | starts the default Web browser
+| [open-calculator.ps1](Scripts/open-calculator.ps1)   | starts the calculator program
+| [open-email-client.ps1](Scripts/open-browser.ps1)    | starts the default email client
+| [open-file-explorer.ps1](Scripts/open-file-explorer.ps1) | starts the File Explorer
+| [open-netflix.ps1](Scripts/open-netflix.ps1)         | starts the Netflix app
+| [open-onedrive.ps1](Scripts/open-onedrive.ps1)       | opens the user's OneDrive folder 
+| [open-recycle-bin.ps1](Scripts/open-recycle-bin.ps1) | starts the File Explorer with the recycle bin folder
+| [set-wallpaper.ps1](Scripts/set-wallpaper.ps1)       | sets the given image as wallpaper
+| [take-screenshot.ps1](Scripts/take-screenshot.ps1)   | takes a single screenshot
+| [take-screenshots.ps1](Scripts/take-screenshots.ps1) | takes multiple screenshots (every minute by default)
 
 📁 Scripts for Files & Folders 
 -------------------------------
