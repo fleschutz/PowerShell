@@ -1,4 +1,4 @@
-# PowerShell Script open-file-explorer.ps1
+# Help for open-file-explorer.ps1 PowerShell Script
 
 ## Synopsis & Description
 ```powershell

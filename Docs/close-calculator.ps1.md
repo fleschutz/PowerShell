@@ -1,4 +1,4 @@
-# PowerShell Script close-calculator.ps1
+# Help for close-calculator.ps1 PowerShell Script
 
 ## Synopsis & Description
 ```powershell

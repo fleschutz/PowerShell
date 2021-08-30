@@ -1,4 +1,4 @@
-# PowerShell Script list-network-shares.ps1
+# Help for list-network-shares.ps1 PowerShell Script
 
 ## Synopsis & Description
 ```powershell

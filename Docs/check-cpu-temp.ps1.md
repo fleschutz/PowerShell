@@ -1,4 +1,4 @@
-# PowerShell Script check-cpu-temp.ps1
+# Help for check-cpu-temp.ps1 PowerShell Script
 
 ## Synopsis & Description
 ```powershell

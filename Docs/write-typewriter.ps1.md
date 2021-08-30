@@ -1,4 +1,4 @@
-# PowerShell Script write-typewriter.ps1
+# Help for write-typewriter.ps1 PowerShell Script
 
 ## Synopsis & Description
 ```powershell

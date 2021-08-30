@@ -1,4 +1,4 @@
-# PowerShell Script clean-repo.ps1
+# Help for clean-repo.ps1 PowerShell Script
 
 ## Synopsis & Description
 ```powershell

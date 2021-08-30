@@ -1,4 +1,4 @@
-# PowerShell Script copy-photos-sorted.ps1
+# Help for copy-photos-sorted.ps1 PowerShell Script
 
 ## Synopsis & Description
 ```powershell

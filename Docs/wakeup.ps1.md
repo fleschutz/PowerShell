@@ -1,4 +1,4 @@
-# PowerShell Script wakeup.ps1
+# Help for wakeup.ps1 PowerShell Script
 
 ## Synopsis & Description
 ```powershell

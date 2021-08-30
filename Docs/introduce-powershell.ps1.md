@@ -1,4 +1,4 @@
-# PowerShell Script introduce-powershell.ps1
+# Help for introduce-powershell.ps1 PowerShell Script
 
 ## Synopsis & Description
 ```powershell

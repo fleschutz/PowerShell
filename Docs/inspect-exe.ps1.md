@@ -1,4 +1,4 @@
-# PowerShell Script inspect-exe.ps1
+# Help for inspect-exe.ps1 PowerShell Script
 
 ## Synopsis & Description
 ```powershell

@@ -1,4 +1,4 @@
-# PowerShell Script turn-volume-down.ps1
+# Help for turn-volume-down.ps1 PowerShell Script
 
 ## Synopsis & Description
 ```powershell

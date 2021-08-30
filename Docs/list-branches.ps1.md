@@ -1,4 +1,4 @@
-# PowerShell Script list-branches.ps1
+# Help for list-branches.ps1 PowerShell Script
 
 ## Synopsis & Description
 ```powershell

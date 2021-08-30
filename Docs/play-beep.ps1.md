@@ -1,4 +1,4 @@
-# PowerShell Script play-beep.ps1
+# Help for play-beep.ps1 PowerShell Script
 
 ## Synopsis & Description
 ```powershell

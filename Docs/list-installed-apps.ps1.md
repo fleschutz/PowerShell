@@ -1,4 +1,4 @@
-# PowerShell Script list-installed-apps.ps1
+# Help for list-installed-apps.ps1 PowerShell Script
 
 ## Synopsis & Description
 ```powershell

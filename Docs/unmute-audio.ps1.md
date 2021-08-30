@@ -1,4 +1,4 @@
-# PowerShell Script unmute-audio.ps1
+# Help for unmute-audio.ps1 PowerShell Script
 
 ## Synopsis & Description
 ```powershell

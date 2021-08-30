@@ -1,4 +1,4 @@
-# PowerShell Script open-email-client.ps1
+# Help for open-email-client.ps1 PowerShell Script
 
 ## Synopsis & Description
 ```powershell

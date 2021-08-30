@@ -1,4 +1,4 @@
-# PowerShell Script configure-git.ps1
+# Help for configure-git.ps1 PowerShell Script
 
 ## Synopsis & Description
 ```powershell

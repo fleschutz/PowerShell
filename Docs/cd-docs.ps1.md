@@ -1,4 +1,4 @@
-# PowerShell Script cd-docs.ps1
+# Help for cd-docs.ps1 PowerShell Script
 
 ## Synopsis & Description
 ```powershell

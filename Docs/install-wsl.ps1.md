@@ -1,4 +1,4 @@
-# PowerShell Script install-wsl.ps1
+# Help for install-wsl.ps1 PowerShell Script
 
 ## Synopsis & Description
 ```powershell

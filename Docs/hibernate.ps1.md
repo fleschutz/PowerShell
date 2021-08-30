@@ -1,4 +1,4 @@
-# PowerShell Script hibernate.ps1
+# Help for hibernate.ps1 PowerShell Script
 
 ## Synopsis & Description
 ```powershell

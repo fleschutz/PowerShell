@@ -1,4 +1,4 @@
-# PowerShell Script check-health.ps1
+# Help for check-health.ps1 PowerShell Script
 
 ## Synopsis & Description
 ```powershell

@@ -1,4 +1,4 @@
-# PowerShell Script locate-city.ps1
+# Help for locate-city.ps1 PowerShell Script
 
 ## Synopsis & Description
 ```powershell

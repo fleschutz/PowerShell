@@ -1,4 +1,4 @@
-# PowerShell Script edit.ps1
+# Help for edit.ps1 PowerShell Script
 
 ## Synopsis & Description
 ```powershell

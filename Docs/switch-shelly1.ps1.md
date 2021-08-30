@@ -1,4 +1,4 @@
-# PowerShell Script switch-shelly1.ps1
+# Help for switch-shelly1.ps1 PowerShell Script
 
 ## Synopsis & Description
 ```powershell

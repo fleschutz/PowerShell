@@ -1,4 +1,4 @@
-# PowerShell Script clear-recycle-bin.ps1
+# Help for clear-recycle-bin.ps1 PowerShell Script
 
 ## Synopsis & Description
 ```powershell

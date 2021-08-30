@@ -1,4 +1,4 @@
-# PowerShell Script check-subnet-mask.ps1
+# Help for check-subnet-mask.ps1 PowerShell Script
 
 ## Synopsis & Description
 ```powershell

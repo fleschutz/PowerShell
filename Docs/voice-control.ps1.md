@@ -1,4 +1,4 @@
-# PowerShell Script voice-control.ps1
+# Help for voice-control.ps1 PowerShell Script
 
 ## Synopsis & Description
 ```powershell

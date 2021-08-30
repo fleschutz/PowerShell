@@ -1,4 +1,4 @@
-# PowerShell Script install-signal-cli.ps1
+# Help for install-signal-cli.ps1 PowerShell Script
 
 ## Synopsis & Description
 ```powershell

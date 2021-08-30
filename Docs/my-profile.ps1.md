@@ -1,4 +1,4 @@
-# PowerShell Script my-profile.ps1
+# Help for my-profile.ps1 PowerShell Script
 
 ## Synopsis & Description
 ```powershell

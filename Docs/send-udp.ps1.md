@@ -1,4 +1,4 @@
-# PowerShell Script send-udp.ps1
+# Help for send-udp.ps1 PowerShell Script
 
 ## Synopsis & Description
 ```powershell

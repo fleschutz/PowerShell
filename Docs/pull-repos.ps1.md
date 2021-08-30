@@ -1,4 +1,4 @@
-# PowerShell Script pull-repos.ps1
+# Help for pull-repos.ps1 PowerShell Script
 
 ## Synopsis & Description
 ```powershell

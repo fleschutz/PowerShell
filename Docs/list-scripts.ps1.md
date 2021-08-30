@@ -1,4 +1,4 @@
-# PowerShell Script list-scripts.ps1
+# Help for list-scripts.ps1 PowerShell Script
 
 ## Synopsis & Description
 ```powershell

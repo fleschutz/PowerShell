@@ -1,4 +1,4 @@
-# PowerShell Script remove-print-jobs.ps1
+# Help for remove-print-jobs.ps1 PowerShell Script
 
 ## Synopsis & Description
 ```powershell

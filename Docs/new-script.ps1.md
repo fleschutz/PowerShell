@@ -1,4 +1,4 @@
-# PowerShell Script new-script.ps1
+# Help for new-script.ps1 PowerShell Script
 
 ## Synopsis & Description
 ```powershell

@@ -1,4 +1,4 @@
-# PowerShell Script play-imperial-march.ps1
+# Help for play-imperial-march.ps1 PowerShell Script
 
 ## Synopsis & Description
 ```powershell

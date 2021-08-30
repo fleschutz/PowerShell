@@ -1,4 +1,4 @@
-# PowerShell Script cd-downloads.ps1
+# Help for cd-downloads.ps1 PowerShell Script
 
 ## Synopsis & Description
 ```powershell

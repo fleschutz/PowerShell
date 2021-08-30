@@ -1,4 +1,4 @@
-# PowerShell Script enable-god-mode.ps1
+# Help for enable-god-mode.ps1 PowerShell Script
 
 ## Synopsis & Description
 ```powershell

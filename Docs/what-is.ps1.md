@@ -1,4 +1,4 @@
-# PowerShell Script what-is.ps1
+# Help for what-is.ps1 PowerShell Script
 
 ## Synopsis & Description
 ```powershell

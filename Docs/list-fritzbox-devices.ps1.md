@@ -1,4 +1,4 @@
-# PowerShell Script list-fritzbox-devices.ps1
+# Help for list-fritzbox-devices.ps1 PowerShell Script
 
 ## Synopsis & Description
 ```powershell

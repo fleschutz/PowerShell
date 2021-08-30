@@ -1,4 +1,4 @@
-# PowerShell Script decrypt-file.ps1
+# Help for decrypt-file.ps1 PowerShell Script
 
 ## Synopsis & Description
 ```powershell

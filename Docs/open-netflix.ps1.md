@@ -1,4 +1,4 @@
-# PowerShell Script open-netflix.ps1
+# Help for open-netflix.ps1 PowerShell Script
 
 ## Synopsis & Description
 ```powershell

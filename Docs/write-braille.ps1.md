@@ -1,4 +1,4 @@
-# PowerShell Script write-braille.ps1
+# Help for write-braille.ps1 PowerShell Script
 
 ## Synopsis & Description
 ```powershell

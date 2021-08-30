@@ -1,4 +1,4 @@
-# PowerShell Script list-mysql-tables.ps1
+# Help for list-mysql-tables.ps1 PowerShell Script
 
 ## Synopsis & Description
 ```powershell

@@ -1,4 +1,4 @@
-# PowerShell Script reboot.ps1
+# Help for reboot.ps1 PowerShell Script
 
 ## Synopsis & Description
 ```powershell

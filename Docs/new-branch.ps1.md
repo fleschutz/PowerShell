@@ -1,4 +1,4 @@
-# PowerShell Script new-branch.ps1
+# Help for new-branch.ps1 PowerShell Script
 
 ## Synopsis & Description
 ```powershell

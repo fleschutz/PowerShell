@@ -1,4 +1,4 @@
-# PowerShell Script list-system-info.ps1
+# Help for list-system-info.ps1 PowerShell Script
 
 ## Synopsis & Description
 ```powershell

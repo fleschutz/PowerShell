@@ -1,4 +1,4 @@
-# PowerShell Script check-ipv6-address.ps1
+# Help for check-ipv6-address.ps1 PowerShell Script
 
 ## Synopsis & Description
 ```powershell

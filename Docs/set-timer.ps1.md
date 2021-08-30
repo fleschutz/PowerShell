@@ -1,4 +1,4 @@
-# PowerShell Script set-timer.ps1
+# Help for set-timer.ps1 PowerShell Script
 
 ## Synopsis & Description
 ```powershell

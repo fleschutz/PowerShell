@@ -1,4 +1,4 @@
-# PowerShell Script cd-desktop.ps1
+# Help for cd-desktop.ps1 PowerShell Script
 
 ## Synopsis & Description
 ```powershell

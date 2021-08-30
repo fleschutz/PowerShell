@@ -1,4 +1,4 @@
-# PowerShell Script new-shortcut.ps1
+# Help for new-shortcut.ps1 PowerShell Script
 
 ## Synopsis & Description
 ```powershell

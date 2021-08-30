@@ -1,4 +1,4 @@
-# PowerShell Script write-green.ps1
+# Help for write-green.ps1 PowerShell Script
 
 ## Synopsis & Description
 ```powershell

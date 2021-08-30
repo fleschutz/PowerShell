@@ -1,4 +1,4 @@
-# PowerShell Script zip-dir.ps1
+# Help for zip-dir.ps1 PowerShell Script
 
 ## Synopsis & Description
 ```powershell

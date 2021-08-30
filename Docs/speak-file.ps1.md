@@ -1,4 +1,4 @@
-# PowerShell Script speak-file.ps1
+# Help for speak-file.ps1 PowerShell Script
 
 ## Synopsis & Description
 ```powershell

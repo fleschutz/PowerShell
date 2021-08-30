@@ -1,4 +1,4 @@
-# PowerShell Script list-installed-software.ps1
+# Help for list-installed-software.ps1 PowerShell Script
 
 ## Synopsis & Description
 ```powershell

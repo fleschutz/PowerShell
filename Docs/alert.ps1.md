@@ -1,4 +1,4 @@
-# PowerShell Script alert.ps1
+# Help for alert.ps1 PowerShell Script
 
 ## Synopsis & Description
 ```powershell

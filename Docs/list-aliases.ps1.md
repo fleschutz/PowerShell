@@ -1,4 +1,4 @@
-# PowerShell Script list-aliases.ps1
+# Help for list-aliases.ps1 PowerShell Script
 
 ## Synopsis & Description
 ```powershell

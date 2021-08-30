@@ -1,4 +1,4 @@
-# PowerShell Script send-tcp.ps1
+# Help for send-tcp.ps1 PowerShell Script
 
 ## Synopsis & Description
 ```powershell

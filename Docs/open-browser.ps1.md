@@ -1,4 +1,4 @@
-# PowerShell Script open-browser.ps1
+# Help for open-browser.ps1 PowerShell Script
 
 ## Synopsis & Description
 ```powershell

@@ -1,4 +1,4 @@
-# PowerShell Script write-marquee.ps1
+# Help for write-marquee.ps1 PowerShell Script
 
 ## Synopsis & Description
 ```powershell

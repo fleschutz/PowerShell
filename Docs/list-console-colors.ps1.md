@@ -1,4 +1,4 @@
-# PowerShell Script list-console-colors.ps1
+# Help for list-console-colors.ps1 PowerShell Script
 
 ## Synopsis & Description
 ```powershell

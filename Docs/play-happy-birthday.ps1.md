@@ -1,4 +1,4 @@
-# PowerShell Script play-happy-birthday.ps1
+# Help for play-happy-birthday.ps1 PowerShell Script
 
 ## Synopsis & Description
 ```powershell

@@ -1,4 +1,4 @@
-# PowerShell Script take-screenshot.ps1
+# Help for take-screenshot.ps1 PowerShell Script
 
 ## Synopsis & Description
 ```powershell

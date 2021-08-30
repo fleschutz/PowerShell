@@ -1,4 +1,4 @@
-# PowerShell Script list-cmdlets.ps1
+# Help for list-cmdlets.ps1 PowerShell Script
 
 ## Synopsis & Description
 ```powershell

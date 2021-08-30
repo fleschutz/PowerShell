@@ -1,4 +1,4 @@
-# PowerShell Script list-news.ps1
+# Help for list-news.ps1 PowerShell Script
 
 ## Synopsis & Description
 ```powershell

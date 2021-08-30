@@ -1,4 +1,4 @@
-# PowerShell Script close-firefox.ps1
+# Help for close-firefox.ps1 PowerShell Script
 
 ## Synopsis & Description
 ```powershell

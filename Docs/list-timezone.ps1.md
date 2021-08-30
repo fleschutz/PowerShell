@@ -1,4 +1,4 @@
-# PowerShell Script list-timezone.ps1
+# Help for list-timezone.ps1 PowerShell Script
 
 ## Synopsis & Description
 ```powershell

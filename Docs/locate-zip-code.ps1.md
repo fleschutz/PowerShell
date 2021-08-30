@@ -1,4 +1,4 @@
-# PowerShell Script locate-zip-code.ps1
+# Help for locate-zip-code.ps1 PowerShell Script
 
 ## Synopsis & Description
 ```powershell

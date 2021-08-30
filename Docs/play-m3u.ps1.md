@@ -1,4 +1,4 @@
-# PowerShell Script play-m3u.ps1
+# Help for play-m3u.ps1 PowerShell Script
 
 ## Synopsis & Description
 ```powershell

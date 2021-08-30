@@ -1,4 +1,4 @@
-# PowerShell Script list-recycle-bin.ps1
+# Help for list-recycle-bin.ps1 PowerShell Script
 
 ## Synopsis & Description
 ```powershell

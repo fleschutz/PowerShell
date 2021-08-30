@@ -1,4 +1,4 @@
-# PowerShell Script cd-up4.ps1
+# Help for cd-up4.ps1 PowerShell Script
 
 ## Synopsis & Description
 ```powershell

@@ -1,4 +1,4 @@
-# PowerShell Script new-tag.ps1
+# Help for new-tag.ps1 PowerShell Script
 
 ## Synopsis & Description
 ```powershell

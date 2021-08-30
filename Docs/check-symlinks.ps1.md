@@ -1,4 +1,4 @@
-# PowerShell Script check-symlinks.ps1
+# Help for check-symlinks.ps1 PowerShell Script
 
 ## Synopsis & Description
 ```powershell

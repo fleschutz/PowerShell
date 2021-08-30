@@ -1,4 +1,4 @@
-# PowerShell Script list-sql-tables.ps1
+# Help for list-sql-tables.ps1 PowerShell Script
 
 ## Synopsis & Description
 ```powershell

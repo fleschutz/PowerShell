@@ -1,4 +1,4 @@
-# PowerShell Script list-hidden-files.ps1
+# Help for list-hidden-files.ps1 PowerShell Script
 
 ## Synopsis & Description
 ```powershell

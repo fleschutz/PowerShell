@@ -1,4 +1,4 @@
-# PowerShell Script check-drive-space.ps1
+# Help for check-drive-space.ps1 PowerShell Script
 
 ## Synopsis & Description
 ```powershell

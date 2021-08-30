@@ -1,4 +1,4 @@
-# PowerShell Script remove-empty-dirs.ps1
+# Help for remove-empty-dirs.ps1 PowerShell Script
 
 ## Synopsis & Description
 ```powershell

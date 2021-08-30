@@ -1,4 +1,4 @@
-# PowerShell Script close-thunderbird.ps1
+# Help for close-thunderbird.ps1 PowerShell Script
 
 ## Synopsis & Description
 ```powershell

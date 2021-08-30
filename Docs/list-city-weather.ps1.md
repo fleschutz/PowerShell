@@ -1,4 +1,4 @@
-# PowerShell Script list-city-weather.ps1
+# Help for list-city-weather.ps1 PowerShell Script
 
 ## Synopsis & Description
 ```powershell

@@ -1,4 +1,4 @@
-# PowerShell Script generate-qrcode.ps1
+# Help for generate-qrcode.ps1 PowerShell Script
 
 ## Synopsis & Description
 ```powershell

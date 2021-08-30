@@ -1,4 +1,4 @@
-# PowerShell Script write-chart.ps1
+# Help for write-chart.ps1 PowerShell Script
 
 ## Synopsis & Description
 ```powershell

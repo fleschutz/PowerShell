@@ -1,4 +1,4 @@
-# PowerShell Script list-dir-tree.ps1
+# Help for list-dir-tree.ps1 PowerShell Script
 
 ## Synopsis & Description
 ```powershell

@@ -1,4 +1,4 @@
-# PowerShell Script list-unused-files.ps1
+# Help for list-unused-files.ps1 PowerShell Script
 
 ## Synopsis & Description
 ```powershell

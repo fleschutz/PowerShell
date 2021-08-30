@@ -1,4 +1,4 @@
-# PowerShell Script list-anagrams.ps1
+# Help for list-anagrams.ps1 PowerShell Script
 
 ## Synopsis & Description
 ```powershell

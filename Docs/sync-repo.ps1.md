@@ -1,4 +1,4 @@
-# PowerShell Script sync-repo.ps1
+# Help for sync-repo.ps1 PowerShell Script
 
 ## Synopsis & Description
 ```powershell

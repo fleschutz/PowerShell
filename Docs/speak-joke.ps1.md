@@ -1,4 +1,4 @@
-# PowerShell Script speak-joke.ps1
+# Help for speak-joke.ps1 PowerShell Script
 
 ## Synopsis & Description
 ```powershell

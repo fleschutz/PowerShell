@@ -1,4 +1,4 @@
-# PowerShell Script list-tags.ps1
+# Help for list-tags.ps1 PowerShell Script
 
 ## Synopsis & Description
 ```powershell

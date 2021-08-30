@@ -1,4 +1,4 @@
-# PowerShell Script list-os-releases.ps1
+# Help for list-os-releases.ps1 PowerShell Script
 
 ## Synopsis & Description
 ```powershell

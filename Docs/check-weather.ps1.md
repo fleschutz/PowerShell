@@ -1,4 +1,4 @@
-# PowerShell Script check-weather.ps1
+# Help for check-weather.ps1 PowerShell Script
 
 ## Synopsis & Description
 ```powershell

@@ -1,4 +1,4 @@
-# PowerShell Script cd-videos.ps1
+# Help for cd-videos.ps1 PowerShell Script
 
 ## Synopsis & Description
 ```powershell

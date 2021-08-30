@@ -1,4 +1,4 @@
-# PowerShell Script convert-mysql2csv.ps1
+# Help for convert-mysql2csv.ps1 PowerShell Script
 
 ## Synopsis & Description
 ```powershell

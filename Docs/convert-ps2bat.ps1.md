@@ -1,4 +1,4 @@
-# PowerShell Script convert-ps2bat.ps1
+# Help for convert-ps2bat.ps1 PowerShell Script
 
 ## Synopsis & Description
 ```powershell

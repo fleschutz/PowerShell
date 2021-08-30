@@ -1,4 +1,4 @@
-# PowerShell Script enter-chat.ps1
+# Help for enter-chat.ps1 PowerShell Script
 
 ## Synopsis & Description
 ```powershell

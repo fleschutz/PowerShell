@@ -1,4 +1,4 @@
-# PowerShell Script install-google-chrome.ps1
+# Help for install-google-chrome.ps1 PowerShell Script
 
 ## Synopsis & Description
 ```powershell

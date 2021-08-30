@@ -1,4 +1,4 @@
-# PowerShell Script cd-dropbox.ps1
+# Help for cd-dropbox.ps1 PowerShell Script
 
 ## Synopsis & Description
 ```powershell

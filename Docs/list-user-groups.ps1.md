@@ -1,4 +1,4 @@
-# PowerShell Script list-user-groups.ps1
+# Help for list-user-groups.ps1 PowerShell Script
 
 ## Synopsis & Description
 ```powershell

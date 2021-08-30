@@ -1,4 +1,4 @@
-# PowerShell Script install-knot-resolver.ps1
+# Help for install-knot-resolver.ps1 PowerShell Script
 
 ## Synopsis & Description
 ```powershell

@@ -1,4 +1,4 @@
-# PowerShell Script smart-data2csv.ps1
+# Help for smart-data2csv.ps1 PowerShell Script
 
 ## Synopsis & Description
 ```powershell

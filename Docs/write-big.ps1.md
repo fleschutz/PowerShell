@@ -1,4 +1,4 @@
-# PowerShell Script write-big.ps1
+# Help for write-big.ps1 PowerShell Script
 
 ## Synopsis & Description
 ```powershell

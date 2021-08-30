@@ -1,4 +1,4 @@
-# PowerShell Script list-environment-variables.ps1
+# Help for list-environment-variables.ps1 PowerShell Script
 
 ## Synopsis & Description
 ```powershell

@@ -1,4 +1,4 @@
-# PowerShell Script open-calculator.ps1
+# Help for open-calculator.ps1 PowerShell Script
 
 ## Synopsis & Description
 ```powershell

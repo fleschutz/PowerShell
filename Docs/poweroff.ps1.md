@@ -1,4 +1,4 @@
-# PowerShell Script poweroff.ps1
+# Help for poweroff.ps1 PowerShell Script
 
 ## Synopsis & Description
 ```powershell

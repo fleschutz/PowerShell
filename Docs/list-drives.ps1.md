@@ -1,4 +1,4 @@
-# PowerShell Script list-drives.ps1
+# Help for list-drives.ps1 PowerShell Script
 
 ## Synopsis & Description
 ```powershell

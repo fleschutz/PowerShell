@@ -1,4 +1,4 @@
-# PowerShell Script fetch-repos.ps1
+# Help for fetch-repos.ps1 PowerShell Script
 
 ## Synopsis & Description
 ```powershell

@@ -1,4 +1,4 @@
-# PowerShell Script MD5.ps1
+# Help for MD5.ps1 PowerShell Script
 
 ## Synopsis & Description
 ```powershell

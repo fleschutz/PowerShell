@@ -1,4 +1,4 @@
-# PowerShell Script close-netflix.ps1
+# Help for close-netflix.ps1 PowerShell Script
 
 ## Synopsis & Description
 ```powershell

@@ -1,4 +1,4 @@
-# PowerShell Script list-countries.ps1
+# Help for list-countries.ps1 PowerShell Script
 
 ## Synopsis & Description
 ```powershell

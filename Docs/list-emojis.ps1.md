@@ -1,4 +1,4 @@
-# PowerShell Script list-emojis.ps1
+# Help for list-emojis.ps1 PowerShell Script
 
 ## Synopsis & Description
 ```powershell

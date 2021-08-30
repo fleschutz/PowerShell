@@ -1,4 +1,4 @@
-# PowerShell Script publish-to-ipfs.ps1
+# Help for publish-to-ipfs.ps1 PowerShell Script
 
 ## Synopsis & Description
 ```powershell

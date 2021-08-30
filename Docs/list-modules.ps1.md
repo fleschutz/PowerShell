@@ -1,4 +1,4 @@
-# PowerShell Script list-modules.ps1
+# Help for list-modules.ps1 PowerShell Script
 
 ## Synopsis & Description
 ```powershell

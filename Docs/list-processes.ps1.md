@@ -1,4 +1,4 @@
-# PowerShell Script list-processes.ps1
+# Help for list-processes.ps1 PowerShell Script
 
 ## Synopsis & Description
 ```powershell

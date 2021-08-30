@@ -1,4 +1,4 @@
-# PowerShell Script check-ping.ps1
+# Help for check-ping.ps1 PowerShell Script
 
 ## Synopsis & Description
 ```powershell

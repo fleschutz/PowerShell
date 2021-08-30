@@ -1,4 +1,4 @@
-# PowerShell Script check-swap-space.ps1
+# Help for check-swap-space.ps1 PowerShell Script
 
 ## Synopsis & Description
 ```powershell

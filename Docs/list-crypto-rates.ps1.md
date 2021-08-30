@@ -1,4 +1,4 @@
-# PowerShell Script list-crypto-rates.ps1
+# Help for list-crypto-rates.ps1 PowerShell Script
 
 ## Synopsis & Description
 ```powershell

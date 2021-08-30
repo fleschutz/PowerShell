@@ -1,4 +1,4 @@
-# PowerShell Script write-motd.ps1
+# Help for write-motd.ps1 PowerShell Script
 
 ## Synopsis & Description
 ```powershell

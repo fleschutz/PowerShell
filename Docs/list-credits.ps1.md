@@ -1,4 +1,4 @@
-# PowerShell Script list-credits.ps1
+# Help for list-credits.ps1 PowerShell Script
 
 ## Synopsis & Description
 ```powershell

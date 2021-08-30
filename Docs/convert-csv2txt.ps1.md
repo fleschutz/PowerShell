@@ -1,4 +1,4 @@
-# PowerShell Script convert-csv2txt.ps1
+# Help for convert-csv2txt.ps1 PowerShell Script
 
 ## Synopsis & Description
 ```powershell

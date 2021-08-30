@@ -56,7 +56,7 @@ try {
 
 	$full = Get-Help $filename -Full 
 
-	"# PowerShell Script $ScriptName"
+	"# Help for $ScriptName PowerShell Script"
 
 	""
 	"## Synopsis & Description"

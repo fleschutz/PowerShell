@@ -1,4 +1,4 @@
-# PowerShell Script turn-volume-up.ps1
+# Help for turn-volume-up.ps1 PowerShell Script
 
 ## Synopsis & Description
 ```powershell

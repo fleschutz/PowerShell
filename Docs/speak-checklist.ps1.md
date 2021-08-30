@@ -1,4 +1,4 @@
-# PowerShell Script speak-checklist.ps1
+# Help for speak-checklist.ps1 PowerShell Script
 
 ## Synopsis & Description
 ```powershell

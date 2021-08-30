@@ -1,4 +1,4 @@
-# PowerShell Script list-passwords.ps1
+# Help for list-passwords.ps1 PowerShell Script
 
 ## Synopsis & Description
 ```powershell

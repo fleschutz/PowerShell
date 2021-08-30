@@ -1,4 +1,4 @@
-# PowerShell Script list-print-jobs.ps1
+# Help for list-print-jobs.ps1 PowerShell Script
 
 ## Synopsis & Description
 ```powershell

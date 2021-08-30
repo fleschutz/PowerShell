@@ -1,4 +1,4 @@
-# PowerShell Script speak-english.ps1
+# Help for speak-english.ps1 PowerShell Script
 
 ## Synopsis & Description
 ```powershell

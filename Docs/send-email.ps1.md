@@ -1,4 +1,4 @@
-# PowerShell Script send-email.ps1
+# Help for send-email.ps1 PowerShell Script
 
 ## Synopsis & Description
 ```powershell

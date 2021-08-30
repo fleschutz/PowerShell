@@ -1,4 +1,4 @@
-# PowerShell Script play-jingle-bells.ps1
+# Help for play-jingle-bells.ps1 PowerShell Script
 
 ## Synopsis & Description
 ```powershell

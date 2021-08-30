@@ -1,4 +1,4 @@
-# PowerShell Script write-morse-code.ps1
+# Help for write-morse-code.ps1 PowerShell Script
 
 ## Synopsis & Description
 ```powershell

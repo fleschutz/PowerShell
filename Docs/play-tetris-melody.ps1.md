@@ -1,4 +1,4 @@
-# PowerShell Script play-tetris-melody.ps1
+# Help for play-tetris-melody.ps1 PowerShell Script
 
 ## Synopsis & Description
 ```powershell

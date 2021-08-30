@@ -1,4 +1,4 @@
-# PowerShell Script cd-home.ps1
+# Help for cd-home.ps1 PowerShell Script
 
 ## Synopsis & Description
 ```powershell

@@ -1,4 +1,4 @@
-# PowerShell Script list-pins.ps1
+# Help for list-pins.ps1 PowerShell Script
 
 ## Synopsis & Description
 ```powershell

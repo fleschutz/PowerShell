@@ -1,4 +1,4 @@
-# PowerShell Script list-empty-files.ps1
+# Help for list-empty-files.ps1 PowerShell Script
 
 ## Synopsis & Description
 ```powershell

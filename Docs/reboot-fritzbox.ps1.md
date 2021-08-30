@@ -1,4 +1,4 @@
-# PowerShell Script reboot-fritzbox.ps1
+# Help for reboot-fritzbox.ps1 PowerShell Script
 
 ## Synopsis & Description
 ```powershell

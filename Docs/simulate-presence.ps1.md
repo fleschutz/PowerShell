@@ -1,4 +1,4 @@
-# PowerShell Script simulate-presence.ps1
+# Help for simulate-presence.ps1 PowerShell Script
 
 ## Synopsis & Description
 ```powershell

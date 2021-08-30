@@ -1,4 +1,4 @@
-# PowerShell Script close-onedrive.ps1
+# Help for close-onedrive.ps1 PowerShell Script
 
 ## Synopsis & Description
 ```powershell

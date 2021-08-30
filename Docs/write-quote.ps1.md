@@ -1,4 +1,4 @@
-# PowerShell Script write-quote.ps1
+# Help for write-quote.ps1 PowerShell Script
 
 ## Synopsis & Description
 ```powershell

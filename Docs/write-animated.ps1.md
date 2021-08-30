@@ -1,4 +1,4 @@
-# PowerShell Script write-animated.ps1
+# Help for write-animated.ps1 PowerShell Script
 
 ## Synopsis & Description
 ```powershell

@@ -1,4 +1,4 @@
-# PowerShell Script list-empty-dirs.ps1
+# Help for list-empty-dirs.ps1 PowerShell Script
 
 ## Synopsis & Description
 ```powershell

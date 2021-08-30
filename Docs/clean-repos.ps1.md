@@ -1,4 +1,4 @@
-# PowerShell Script clean-repos.ps1
+# Help for clean-repos.ps1 PowerShell Script
 
 ## Synopsis & Description
 ```powershell

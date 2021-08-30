@@ -1,4 +1,4 @@
-# PowerShell Script encrypt-file.ps1
+# Help for encrypt-file.ps1 PowerShell Script
 
 ## Synopsis & Description
 ```powershell

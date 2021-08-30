@@ -1,4 +1,4 @@
-# PowerShell Script play-super-mario.ps1
+# Help for play-super-mario.ps1 PowerShell Script
 
 ## Synopsis & Description
 ```powershell

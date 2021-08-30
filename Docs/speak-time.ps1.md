@@ -1,4 +1,4 @@
-# PowerShell Script speak-time.ps1
+# Help for speak-time.ps1 PowerShell Script
 
 ## Synopsis & Description
 ```powershell

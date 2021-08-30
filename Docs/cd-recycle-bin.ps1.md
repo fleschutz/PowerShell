@@ -1,4 +1,4 @@
-# PowerShell Script cd-recycle-bin.ps1
+# Help for cd-recycle-bin.ps1 PowerShell Script
 
 ## Synopsis & Description
 ```powershell

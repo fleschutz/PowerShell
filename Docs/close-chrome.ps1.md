@@ -1,4 +1,4 @@
-# PowerShell Script close-chrome.ps1
+# Help for close-chrome.ps1 PowerShell Script
 
 ## Synopsis & Description
 ```powershell

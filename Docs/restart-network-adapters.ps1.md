@@ -1,4 +1,4 @@
-# PowerShell Script restart-network-adapters.ps1
+# Help for restart-network-adapters.ps1 PowerShell Script
 
 ## Synopsis & Description
 ```powershell

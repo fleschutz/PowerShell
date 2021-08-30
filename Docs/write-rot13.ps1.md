@@ -1,4 +1,4 @@
-# PowerShell Script write-rot13.ps1
+# Help for write-rot13.ps1 PowerShell Script
 
 ## Synopsis & Description
 ```powershell

@@ -1,4 +1,4 @@
-# PowerShell Script list-workdir.ps1
+# Help for list-workdir.ps1 PowerShell Script
 
 ## Synopsis & Description
 ```powershell

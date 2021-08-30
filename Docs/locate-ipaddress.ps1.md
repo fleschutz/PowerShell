@@ -1,4 +1,4 @@
-# PowerShell Script locate-ipaddress.ps1
+# Help for locate-ipaddress.ps1 PowerShell Script
 
 ## Synopsis & Description
 ```powershell

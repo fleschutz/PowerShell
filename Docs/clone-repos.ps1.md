@@ -1,4 +1,4 @@
-# PowerShell Script clone-repos.ps1
+# Help for clone-repos.ps1 PowerShell Script
 
 ## Synopsis & Description
 ```powershell

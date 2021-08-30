@@ -1,4 +1,4 @@
-# PowerShell Script moon.ps1
+# Help for moon.ps1 PowerShell Script
 
 ## Synopsis & Description
 ```powershell

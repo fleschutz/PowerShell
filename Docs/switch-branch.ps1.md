@@ -1,4 +1,4 @@
-# PowerShell Script switch-branch.ps1
+# Help for switch-branch.ps1 PowerShell Script
 
 ## Synopsis & Description
 ```powershell

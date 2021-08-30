@@ -1,4 +1,4 @@
-# PowerShell Script make-repos.ps1
+# Help for make-repos.ps1 PowerShell Script
 
 ## Synopsis & Description
 ```powershell

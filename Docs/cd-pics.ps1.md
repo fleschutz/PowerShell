@@ -1,4 +1,4 @@
-# PowerShell Script cd-pics.ps1
+# Help for cd-pics.ps1 PowerShell Script
 
 ## Synopsis & Description
 ```powershell

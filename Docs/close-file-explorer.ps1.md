@@ -1,4 +1,4 @@
-# PowerShell Script close-file-explorer.ps1
+# Help for close-file-explorer.ps1 PowerShell Script
 
 ## Synopsis & Description
 ```powershell

@@ -1,4 +1,4 @@
-# PowerShell Script install-github-cli.ps1
+# Help for install-github-cli.ps1 PowerShell Script
 
 ## Synopsis & Description
 ```powershell

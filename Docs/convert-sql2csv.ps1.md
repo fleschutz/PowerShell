@@ -1,4 +1,4 @@
-# PowerShell Script convert-sql2csv.ps1
+# Help for convert-sql2csv.ps1 PowerShell Script
 
 ## Synopsis & Description
 ```powershell

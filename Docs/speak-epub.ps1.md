@@ -1,4 +1,4 @@
-# PowerShell Script speak-epub.ps1
+# Help for speak-epub.ps1 PowerShell Script
 
 ## Synopsis & Description
 ```powershell

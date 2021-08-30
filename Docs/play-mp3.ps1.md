@@ -1,4 +1,4 @@
-# PowerShell Script play-mp3.ps1
+# Help for play-mp3.ps1 PowerShell Script
 
 ## Synopsis & Description
 ```powershell

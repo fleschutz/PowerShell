@@ -1,4 +1,4 @@
-# PowerShell Script check-file-system.ps1
+# Help for check-file-system.ps1 PowerShell Script
 
 ## Synopsis & Description
 ```powershell

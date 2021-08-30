@@ -1,4 +1,4 @@
-# PowerShell Script weather-report.ps1
+# Help for weather-report.ps1 PowerShell Script
 
 ## Synopsis & Description
 ```powershell

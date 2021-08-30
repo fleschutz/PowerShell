@@ -1,4 +1,4 @@
-# PowerShell Script simulate-matrix.ps1
+# Help for simulate-matrix.ps1 PowerShell Script
 
 ## Synopsis & Description
 ```powershell

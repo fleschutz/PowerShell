@@ -1,4 +1,4 @@
-# PowerShell Script add-memo.ps1
+# Help for add-memo.ps1 PowerShell Script
 
 ## Synopsis & Description
 ```powershell

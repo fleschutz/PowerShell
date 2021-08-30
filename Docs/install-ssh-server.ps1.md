@@ -1,4 +1,4 @@
-# PowerShell Script install-ssh-server.ps1
+# Help for install-ssh-server.ps1 PowerShell Script
 
 ## Synopsis & Description
 ```powershell

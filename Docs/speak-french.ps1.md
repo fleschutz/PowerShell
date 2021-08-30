@@ -1,4 +1,4 @@
-# PowerShell Script speak-french.ps1
+# Help for speak-french.ps1 PowerShell Script
 
 ## Synopsis & Description
 ```powershell

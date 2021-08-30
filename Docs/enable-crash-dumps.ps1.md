@@ -1,4 +1,4 @@
-# PowerShell Script enable-crash-dumps.ps1
+# Help for enable-crash-dumps.ps1 PowerShell Script
 
 ## Synopsis & Description
 ```powershell

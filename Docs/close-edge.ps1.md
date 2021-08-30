@@ -1,4 +1,4 @@
-# PowerShell Script close-edge.ps1
+# Help for close-edge.ps1 PowerShell Script
 
 ## Synopsis & Description
 ```powershell

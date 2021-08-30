@@ -1,4 +1,4 @@
-# PowerShell Script start-ipfs-server.ps1
+# Help for start-ipfs-server.ps1 PowerShell Script
 
 ## Synopsis & Description
 ```powershell

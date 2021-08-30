@@ -1,4 +1,4 @@
-# PowerShell Script play-mission-impossible.ps1
+# Help for play-mission-impossible.ps1 PowerShell Script
 
 ## Synopsis & Description
 ```powershell

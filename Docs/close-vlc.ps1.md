@@ -1,4 +1,4 @@
-# PowerShell Script close-vlc.ps1
+# Help for close-vlc.ps1 PowerShell Script
 
 ## Synopsis & Description
 ```powershell

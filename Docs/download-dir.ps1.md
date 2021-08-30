@@ -1,4 +1,4 @@
-# PowerShell Script download-dir.ps1
+# Help for download-dir.ps1 PowerShell Script
 
 ## Synopsis & Description
 ```powershell

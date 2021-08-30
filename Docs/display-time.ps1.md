@@ -1,4 +1,4 @@
-# PowerShell Script display-time.ps1
+# Help for display-time.ps1 PowerShell Script
 
 ## Synopsis & Description
 ```powershell

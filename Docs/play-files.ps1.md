@@ -1,4 +1,4 @@
-# PowerShell Script play-files.ps1
+# Help for play-files.ps1 PowerShell Script
 
 ## Synopsis & Description
 ```powershell

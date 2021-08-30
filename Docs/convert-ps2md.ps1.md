@@ -1,4 +1,4 @@
-# PowerShell Script convert-ps2md.ps1
+# Help for convert-ps2md.ps1 PowerShell Script
 
 ## Synopsis & Description
 ```powershell

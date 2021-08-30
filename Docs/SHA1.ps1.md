@@ -1,4 +1,4 @@
-# PowerShell Script SHA1.ps1
+# Help for SHA1.ps1 PowerShell Script
 
 ## Synopsis & Description
 ```powershell

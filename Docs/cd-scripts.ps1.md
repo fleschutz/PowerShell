@@ -1,4 +1,4 @@
-# PowerShell Script cd-scripts.ps1
+# Help for cd-scripts.ps1 PowerShell Script
 
 ## Synopsis & Description
 ```powershell

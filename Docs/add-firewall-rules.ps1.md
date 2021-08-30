@@ -1,4 +1,4 @@
-# PowerShell Script add-firewall-rules.ps1
+# Help for add-firewall-rules.ps1 PowerShell Script
 
 ## Synopsis & Description
 ```powershell

@@ -1,4 +1,4 @@
-# PowerShell Script convert-txt2wav.ps1
+# Help for convert-txt2wav.ps1 PowerShell Script
 
 ## Synopsis & Description
 ```powershell

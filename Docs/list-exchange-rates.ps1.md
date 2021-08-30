@@ -1,4 +1,4 @@
-# PowerShell Script list-exchange-rates.ps1
+# Help for list-exchange-rates.ps1 PowerShell Script
 
 ## Synopsis & Description
 ```powershell

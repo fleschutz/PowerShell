@@ -1,4 +1,4 @@
-# PowerShell Script write-lowercase.ps1
+# Help for write-lowercase.ps1 PowerShell Script
 
 ## Synopsis & Description
 ```powershell

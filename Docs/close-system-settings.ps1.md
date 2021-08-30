@@ -1,4 +1,4 @@
-# PowerShell Script close-system-settings.ps1
+# Help for close-system-settings.ps1 PowerShell Script
 
 ## Synopsis & Description
 ```powershell

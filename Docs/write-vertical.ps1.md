@@ -1,4 +1,4 @@
-# PowerShell Script write-vertical.ps1
+# Help for write-vertical.ps1 PowerShell Script
 
 ## Synopsis & Description
 ```powershell

@@ -1,4 +1,4 @@
-# PowerShell Script open-onedrive.ps1
+# Help for open-onedrive.ps1 PowerShell Script
 
 ## Synopsis & Description
 ```powershell

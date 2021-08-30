@@ -1,4 +1,4 @@
-# PowerShell Script new-symlink.ps1
+# Help for new-symlink.ps1 PowerShell Script
 
 ## Synopsis & Description
 ```powershell

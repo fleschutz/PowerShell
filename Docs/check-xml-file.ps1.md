@@ -1,4 +1,4 @@
-# PowerShell Script check-xml-file.ps1
+# Help for check-xml-file.ps1 PowerShell Script
 
 ## Synopsis & Description
 ```powershell

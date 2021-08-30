@@ -1,4 +1,4 @@
-# PowerShell Script upload-file.ps1
+# Help for upload-file.ps1 PowerShell Script
 
 ## Synopsis & Description
 ```powershell

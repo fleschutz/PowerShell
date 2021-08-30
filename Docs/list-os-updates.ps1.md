@@ -1,4 +1,4 @@
-# PowerShell Script list-os-updates.ps1
+# Help for list-os-updates.ps1 PowerShell Script
 
 ## Synopsis & Description
 ```powershell

@@ -1,4 +1,4 @@
-# PowerShell Script list-earthquakes.ps1
+# Help for list-earthquakes.ps1 PowerShell Script
 
 ## Synopsis & Description
 ```powershell

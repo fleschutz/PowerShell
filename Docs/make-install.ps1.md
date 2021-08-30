@@ -1,4 +1,4 @@
-# PowerShell Script make-install.ps1
+# Help for make-install.ps1 PowerShell Script
 
 ## Synopsis & Description
 ```powershell

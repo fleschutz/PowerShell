@@ -1,4 +1,4 @@
-# PowerShell Script list-printers.ps1
+# Help for list-printers.ps1 PowerShell Script
 
 ## Synopsis & Description
 ```powershell

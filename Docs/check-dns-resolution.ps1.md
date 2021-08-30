@@ -1,4 +1,4 @@
-# PowerShell Script check-dns-resolution.ps1
+# Help for check-dns-resolution.ps1 PowerShell Script
 
 ## Synopsis & Description
 ```powershell

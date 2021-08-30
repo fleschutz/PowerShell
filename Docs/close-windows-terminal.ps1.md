@@ -1,4 +1,4 @@
-# PowerShell Script close-windows-terminal.ps1
+# Help for close-windows-terminal.ps1 PowerShell Script
 
 ## Synopsis & Description
 ```powershell

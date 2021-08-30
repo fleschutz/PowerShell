@@ -1,4 +1,4 @@
-# PowerShell Script write-blue.ps1
+# Help for write-blue.ps1 PowerShell Script
 
 ## Synopsis & Description
 ```powershell

@@ -1,4 +1,4 @@
-# PowerShell Script list-cli-tools.ps1
+# Help for list-cli-tools.ps1 PowerShell Script
 
 ## Synopsis & Description
 ```powershell

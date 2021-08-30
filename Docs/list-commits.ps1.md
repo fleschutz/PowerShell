@@ -1,4 +1,4 @@
-# PowerShell Script list-commits.ps1
+# Help for list-commits.ps1 PowerShell Script
 
 ## Synopsis & Description
 ```powershell

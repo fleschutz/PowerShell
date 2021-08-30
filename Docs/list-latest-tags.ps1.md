@@ -1,4 +1,4 @@
-# PowerShell Script list-latest-tags.ps1
+# Help for list-latest-tags.ps1 PowerShell Script
 
 ## Synopsis & Description
 ```powershell

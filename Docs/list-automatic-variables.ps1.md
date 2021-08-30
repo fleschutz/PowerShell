@@ -1,4 +1,4 @@
-# PowerShell Script list-automatic-variables.ps1
+# Help for list-automatic-variables.ps1 PowerShell Script
 
 ## Synopsis & Description
 ```powershell

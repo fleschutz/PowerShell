@@ -1,4 +1,4 @@
-# PowerShell Script list-submodules.ps1
+# Help for list-submodules.ps1 PowerShell Script
 
 ## Synopsis & Description
 ```powershell

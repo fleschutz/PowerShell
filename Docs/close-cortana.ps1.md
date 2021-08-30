@@ -1,4 +1,4 @@
-# PowerShell Script close-cortana.ps1
+# Help for close-cortana.ps1 PowerShell Script
 
 ## Synopsis & Description
 ```powershell

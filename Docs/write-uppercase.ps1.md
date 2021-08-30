@@ -1,4 +1,4 @@
-# PowerShell Script write-uppercase.ps1
+# Help for write-uppercase.ps1 PowerShell Script
 
 ## Synopsis & Description
 ```powershell

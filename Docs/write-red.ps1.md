@@ -1,4 +1,4 @@
-# PowerShell Script write-red.ps1
+# Help for write-red.ps1 PowerShell Script
 
 ## Synopsis & Description
 ```powershell

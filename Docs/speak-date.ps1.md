@@ -1,4 +1,4 @@
-# PowerShell Script speak-date.ps1
+# Help for speak-date.ps1 PowerShell Script
 
 ## Synopsis & Description
 ```powershell

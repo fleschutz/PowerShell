@@ -1,4 +1,4 @@
-# PowerShell Script list-clipboard.ps1
+# Help for list-clipboard.ps1 PowerShell Script
 
 ## Synopsis & Description
 ```powershell

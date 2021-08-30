@@ -1,4 +1,4 @@
-# PowerShell Script list-dir.ps1
+# Help for list-dir.ps1 PowerShell Script
 
 ## Synopsis & Description
 ```powershell

@@ -1,4 +1,4 @@
-# PowerShell Script search-files.ps1
+# Help for search-files.ps1 PowerShell Script
 
 ## Synopsis & Description
 ```powershell

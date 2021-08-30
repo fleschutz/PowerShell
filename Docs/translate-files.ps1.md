@@ -1,4 +1,4 @@
-# PowerShell Script translate-files.ps1
+# Help for translate-files.ps1 PowerShell Script
 
 ## Synopsis & Description
 ```powershell

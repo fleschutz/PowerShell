@@ -1,4 +1,4 @@
-# PowerShell Script mute-audio.ps1
+# Help for mute-audio.ps1 PowerShell Script
 
 ## Synopsis & Description
 ```powershell

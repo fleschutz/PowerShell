@@ -1,4 +1,4 @@
-# PowerShell Script query-smart-data.ps1
+# Help for query-smart-data.ps1 PowerShell Script
 
 ## Synopsis & Description
 ```powershell

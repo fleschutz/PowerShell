@@ -1,4 +1,4 @@
-# PowerShell Script cd-repos.ps1
+# Help for cd-repos.ps1 PowerShell Script
 
 ## Synopsis & Description
 ```powershell

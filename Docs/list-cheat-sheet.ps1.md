@@ -1,4 +1,4 @@
-# PowerShell Script list-cheat-sheet.ps1
+# Help for list-cheat-sheet.ps1 PowerShell Script
 
 ## Synopsis & Description
 ```powershell

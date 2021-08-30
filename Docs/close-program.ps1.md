@@ -1,4 +1,4 @@
-# PowerShell Script close-program.ps1
+# Help for close-program.ps1 PowerShell Script
 
 ## Synopsis & Description
 ```powershell

@@ -1,4 +1,4 @@
-# PowerShell Script cd-onedrive.ps1
+# Help for cd-onedrive.ps1 PowerShell Script
 
 ## Synopsis & Description
 ```powershell

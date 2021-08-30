@@ -1,4 +1,4 @@
-# PowerShell Script cd-root.ps1
+# Help for cd-root.ps1 PowerShell Script
 
 ## Synopsis & Description
 ```powershell

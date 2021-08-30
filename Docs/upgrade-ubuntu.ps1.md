@@ -1,4 +1,4 @@
-# PowerShell Script upgrade-ubuntu.ps1
+# Help for upgrade-ubuntu.ps1 PowerShell Script
 
 ## Synopsis & Description
 ```powershell

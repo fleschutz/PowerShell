@@ -1,4 +1,4 @@
-# PowerShell Script cd-music.ps1
+# Help for cd-music.ps1 PowerShell Script
 
 ## Synopsis & Description
 ```powershell

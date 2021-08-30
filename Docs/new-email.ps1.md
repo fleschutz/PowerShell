@@ -1,4 +1,4 @@
-# PowerShell Script new-email.ps1
+# Help for new-email.ps1 PowerShell Script
 
 ## Synopsis & Description
 ```powershell

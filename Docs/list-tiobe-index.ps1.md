@@ -1,4 +1,4 @@
-# PowerShell Script list-tiobe-index.ps1
+# Help for list-tiobe-index.ps1 PowerShell Script
 
 ## Synopsis & Description
 ```powershell

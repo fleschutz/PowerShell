@@ -1,4 +1,4 @@
-# PowerShell Script speak-countdown.ps1
+# Help for speak-countdown.ps1 PowerShell Script
 
 ## Synopsis & Description
 ```powershell

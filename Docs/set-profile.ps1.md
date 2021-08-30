@@ -1,4 +1,4 @@
-# PowerShell Script set-profile.ps1
+# Help for set-profile.ps1 PowerShell Script
 
 ## Synopsis & Description
 ```powershell

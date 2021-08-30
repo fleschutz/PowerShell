@@ -1,4 +1,4 @@
-# PowerShell Script scan-ports.ps1
+# Help for scan-ports.ps1 PowerShell Script
 
 ## Synopsis & Description
 ```powershell

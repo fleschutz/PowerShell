@@ -1,4 +1,4 @@
-# PowerShell Script cherry-picker.ps1
+# Help for cherry-picker.ps1 PowerShell Script
 
 ## Synopsis & Description
 ```powershell

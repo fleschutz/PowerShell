@@ -1,4 +1,4 @@
-# PowerShell Script check-ipv4-address.ps1
+# Help for check-ipv4-address.ps1 PowerShell Script
 
 ## Synopsis & Description
 ```powershell
