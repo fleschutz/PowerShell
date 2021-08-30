@@ -26,23 +26,23 @@ How to get PowerShell?
    $ ln -s /snap/bin/pwsh /usr/bin/pwsh
    ```
 
-How to get the PowerShell Scripts?
-----------------------------------
+How to get the collection of PowerShell scripts?
+------------------------------------------------
 * Git users execute: `$ git clone https://github.com/fleschutz/PowerShell`
 * otherwise download & unzip: https://github.com/fleschutz/PowerShell/archive/master.zip
 
 
-Why do some Scripts show gibberish characters?
+Why do some scripts show gibberish characters?
 ----------------------------------------------
 Those PowerShell scripts are using Unicode input & output! Use a modern console supporting UTF-8 such as Windows Terminal, please.
 
 
-How to set PowerShell as My Default Shell on Linux?
----------------------------------------------------
+How to set PowerShell as default shell on Linux?
+------------------------------------------------
 Make sure PowerShell is installed, then execute: `chsh -s /usr/bin/pwsh <username>`. In case you experience an "invalid shell" error, add "/usr/bin/pwsh" to /etc/shells.
 
 
-How to add the Scripts to the Search Path?
+How to add the scripts to the search path?
 ------------------------------------------
 Want to use the PowerShell scripts everywhere on the command-line? Then you need to add the Scripts/ subfolder to the search path:
 
@@ -50,20 +50,20 @@ Want to use the PowerShell scripts everywhere on the command-line? Then you need
 * **On Windows:** open the environment variables dialogue and add the full path to Scripts/ to the system environment variable "Path"
 
 
-How to use PowerShell in Context Menus?
+How to use PowerShell in context menus?
 ---------------------------------------
 * to enable "right-click > New > Windows PowerShell Script" execute `Add_ps1_to_New_context_menu.reg` in subfolder [Data/](../Data)
 * to disable this execute `Remove_ps1_from_New_context_menu.reg` in subfolder [Data/](../Data)
 
 
-Which editor for PowerShell Scripts is recommended?
+Which editor for PowerShell scripts is recommended?
 ---------------------------------------------------
 * use *PowerShell ISE* (Integrated Scripting Environment) to write, test and debug scripts (available for free on Windows only).
 * use *Visual Studio Code* supporting syntax highlighting, on-the-fly problem checking and an integrated PowerShell Console (available for free on Linux, Mac OS and Windows).
 * or simply use your *favorite text editor*
 
 
-How to write good PowerShell Scripts?
+How to write good PowerShell scripts?
 -------------------------------------
 Good PowerShell scripts are user-friendly and platform-independant. As a guideline follow these rules, please:
 
@@ -79,13 +79,13 @@ Good PowerShell scripts are user-friendly and platform-independant. As a guideli
 10. on success exit with error code 0 (exit 0)
 
 
-Found a bug or Issue?
+Found a bug or issue?
 ---------------------
 If you find something bad (like a bug, error, or any issue), please report it here by open an Issue.
 
 Or even better: Fork the Repository, fix it and submit a pull request, so others can participate too   
 
 
-Your Question is not answered here?
+Your question is not answered here?
 -----------------------------------
 Send your question to: markus [at] fleschutz [dot] de
