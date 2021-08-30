@@ -1,10 +1,10 @@
 ﻿<#
 .SYNOPSIS
-	create-shortcut.ps1 [<shortcut>] [<target>] [<description>]
+	new-shortcut.ps1 [<shortcut>] [<target>] [<description>]
 .DESCRIPTION
 	Creates a new shortcut file.
 .EXAMPLE
-	PS> .\create-shortcut.ps1 C:\Temp\HDD C:\
+	PS> .\new-shortcut.ps1 C:\Temp\HDD C:\
 .NOTES
 	Author: Markus Fleschutz · License: CC0
 .LINK
@@ -26,7 +26,7 @@ try {
 	$sc.Description = "$description"
 	$sc.save()
 
-	"✔️ created shortcut $shortcut ⭢ $target"
+	"✔️ created new shortcut $shortcut ⭢ $target"
 	exit 0
 } catch {
 	write-error "⚠️ Error in line $($_.InvocationInfo.ScriptLineNumber): $($Error[0])"

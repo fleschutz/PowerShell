@@ -145,8 +145,6 @@ Mega Collection of PowerShell Scripts
 | [check-xml-file.ps1](Scripts/check-xml-file.ps1)     | Checks the given XML file for validity
 | [clear-recycle-bin.ps1](Scripts/clear-recycle-bin.ps1) | Removes the content of the recycle bin folder (can not be undo!)
 | [copy-photos-sorted.ps1](Scripts/copy-photos-sorted.ps1) | Copies all photos sorted by year and month 
-| [create-shortcut.ps1](Scripts/create-shortcut.ps1)   | Creates a shortcut
-| [create-symlink.ps1](Scripts/create-symlink.ps1)     | Creates a symbolic link
 | [decrypt-file.ps1](Scripts/decrypt-file.ps1)         | Encrypts the given file
 | [download-dir.ps1](Scripts/download-dir.ps1)         | Downloads a directory tree from the given URL
 | [download-file.ps1](Scripts/download-file.ps1)       | Downloads a file from the given URL
@@ -164,6 +162,8 @@ Mega Collection of PowerShell Scripts
 | [list-workdir.ps1](Scripts/list-workdir.ps1)         | Lists the current working directory
 | [make-install.ps1](Scripts/make-install.ps1)         | Installs built executables and libs to the installation directory
 | [MD5.ps1](Scripts/MD5.ps1)                           | Prints the MD5 checksum of the given file
+| [new-shortcut.ps1](Scripts/new-shortcut.ps1)         | Creates a new shortcut
+| [new-symlink.ps1](Scripts/new-symlink.ps1)           | Creates a new symbolic link
 | [publish-to-ipfs.ps1](Scripts/publish-to-ipfs.ps1)   | Publishes the given files or directory to IPFS
 | [remove-empty-dirs.ps1](Scripts/remove-empty-dirs.ps1) | Removes empty subfolders within the given directory tree
 | [search-filename.ps1](Scripts/search-filename.ps1)   | Searches the directory tree for filenames by given pattern 

@@ -1,10 +1,10 @@
 ﻿<#
 .SYNOPSIS
-	create-symlink.ps1 [<symlink>] [<target>]
+	new-symlink.ps1 [<symlink>] [<target>]
 .DESCRIPTION
-	Creates a symbolic link file.
+	Creates a new symbolic link file.
 .EXAMPLE
-	PS> .\create-symlink.ps1 C:\Temp\HDD C:\
+	PS> .\new-symlink.ps1 C:\Temp\HDD C:\
 .NOTES
 	Author: Markus Fleschutz · License: CC0
 .LINK
@@ -19,7 +19,7 @@ try {
 
 	new-item -path "$symlink" -itemType SymbolicLink -Value "$target"
 
-	"✔️ created symlink $symlink ⭢ $target"
+	"✔️ created new symlink $symlink ⭢ $target"
 	exit 0
 } catch {
 	write-error "⚠️ Error in line $($_.InvocationInfo.ScriptLineNumber): $($Error[0])"
