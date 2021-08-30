@@ -20,7 +20,7 @@ try {
 			Remove-PrintJob -InputObject $printjob
 	}
 
-	"✔️ removed all jobs from all printers"
+	"✔️ all print jobs removed"
 	exit 0
 } catch {
 	write-error "⚠️ Error in line $($_.InvocationInfo.ScriptLineNumber): $($Error[0])"
