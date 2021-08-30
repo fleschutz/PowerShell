@@ -18,6 +18,7 @@ try {
 		$printjobs = Get-PrintJob -PrinterObject $printer
 		foreach ($printjob in $printjobs) {
 			Remove-PrintJob -InputObject $printjob
+		}
 	}
 
 	"✔️ all print jobs removed"
