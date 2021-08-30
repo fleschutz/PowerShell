@@ -15,11 +15,17 @@
 try {
 	$printers = Get-Printer
 	if ($printers.Count -eq 0) { throw "No printer found" }
-		
+
+	""
+	"Printer                Jobs"
+	"-------                ----"
 	foreach ($printer in $printers) {
 		$printjobs = Get-PrintJob -PrinterObject $printer
-		"$printer"
-		"$printjobs"
+		if ($printjobs.Count -eq 0) {
+			"$($printer.Name)     none"
+		} else {
+			"$($printer.Name)     $printjobs"
+		}
 	}
 	exit 0
 } catch {
