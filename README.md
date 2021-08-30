@@ -8,7 +8,7 @@ Mega Collection of PowerShell Scripts
 🔊 Scripts for Audio & Voice 
 -----------------------------
 
-| Script                                               | Description                                                        | Docs                                    |
+| Script                                               | Description                                                        | Manual                                  |
 | ---------------------------------------------------- | ------------------------------------------------------------------ | --------------------------------------- |
 | [mute-audio.ps1](Scripts/mute-audio.ps1)             | mutes the audio device                                             | [Manual](Docs/mute-audio.ps1.md)        |
 | [list-voices.ps1](Scripts/list-voices.ps1)           | lists the installed text-to-speech (TTS) voices                    | [Manual](Docs/list-voices.ps1.md)       |
@@ -45,7 +45,7 @@ Mega Collection of PowerShell Scripts
 ⚙️ Scripts to Manage Computers
 -------------------------------
 
-| Script                                               | Description                                                        | Docs                                    |
+| Script                                               | Description                                                        | Manual                                  |
 | ---------------------------------------------------- | ------------------------------------------------------------------ | --------------------------------------- |
 | [add-firewall-rules.ps1](Scripts/add-firewall-rules.ps1) | adds firewall rules for the given executables (needs admin rights)
 | [check-cpu-temp.ps1](Scripts/check-cpu-temp.ps1)     | checks the CPU temperature
@@ -88,7 +88,7 @@ Mega Collection of PowerShell Scripts
 💻 Scripts for the Desktop
 ---------------------------
 
-| Script                                               | Description                                                        | Docs                                    |
+| Script                                               | Description                                                        | Manual                                  |
 | ---------------------------------------------------- | ------------------------------------------------------------------ | --------------------------------------- |
 | [close-calculator.ps1](Scripts/close-calculator.ps1) | closes the calculator program gracefully
 | [close-chrome.ps1](Scripts/close-chrome.ps1)         | closes Google Chrome gracefully
@@ -119,59 +119,62 @@ Mega Collection of PowerShell Scripts
 
 📁 Scripts for Files & Folders 
 -------------------------------
-* [cd-desktop.ps1](Scripts/cd-desktop.ps1) - go to the user's desktop folder
-* [cd-docs.ps1](Scripts/cd-docs.ps1) - go to the user's documents folder
-* [cd-downloads.ps1](Scripts/cd-downloads.ps1) - go to the user's downloads folder
-* [cd-dropbox.ps1](Scripts/cd-dropbox.ps1) - go to the user's Dropbox folder
-* [cd-home.ps1](Scripts/cd-home.ps1) - go to the user's home folder
-* [cd-music.ps1](Scripts/cd-music.ps1) - go to the user's music folder
-* [cd-onedrive.ps1](Scripts/cd-onedrive.ps1) - go to the user's OneDrive folder
-* [cd-pics.ps1](Scripts/cd-pics.ps1) - go to the user's pictures folder
-* [cd-recycle-bin.ps1](Scripts/cd-recycle-bin.ps1) - go to the user's recycle bin folder
-* [cd-repos.ps1](Scripts/cd-repos.ps1) - go to the user's Git repositories folder
-* [cd-root.ps1](Scripts/cd-root.ps1) - go to the root directory (C:\ on Windows)
-* [cd-scripts.ps1](Scripts/cd-scripts.ps1) - go to the PowerShell Scripts folder
-* [cd-up.ps1](Scripts/cd-up.ps1) - go one directory level up
-* [cd-up2.ps1](Scripts/cd-up2.ps1) - go two directory levels up
-* [cd-up3.ps1](Scripts/cd-up3.ps1) - go three directory levels up
-* [cd-up4.ps1](Scripts/cd-up4.ps1) - go four directory levels up
-* [cd-videos.ps1](Scripts/cd-videos.ps1) - go to the user's videos folder
-* [check-symlinks.ps1](Scripts/check-symlinks.ps1) - checks every symlink in the given directory tree
-* [check-xml-file.ps1](Scripts/check-xml-file.ps1) - checks the given XML file for validity
-* [clear-recycle-bin.ps1](Scripts/clear-recycle-bin.ps1) - removes the content of the recycle bin folder (can not be undo!)
-* [copy-photos-sorted.ps1](Scripts/copy-photos-sorted.ps1) - Copies all photos sorted by year and month 
-* [create-shortcut.ps1](Scripts/create-shortcut.ps1) - creates a shortcut
-* [create-symlink.ps1](Scripts/create-symlink.ps1) - creates a symbolic link
-* [decrypt-file.ps1](Scripts/decrypt-file.ps1) - encrypts the given file
-* [download-dir.ps1](Scripts/download-dir.ps1) - downloads a directory tree from the given URL
-* [download-file.ps1](Scripts/download-file.ps1) - downloads a file from the given URL
-* [edit.ps1](Scripts/edit.ps1) - edits the given file with the built-in text editor
-* [encrypt-file.ps1](Scripts/encrypt-file.ps1) - encrypts the given file
-* [inspect-exe.ps1](Scripts/inspect-exe.ps1) - prints basic information of the given executable file
-* [list-dir.ps1](Scripts/list-dir.ps1) - lists the directory content (formatted in columns)
-* [list-dir-tree.ps1](Scripts/list-dir-tree.ps1) - lists the directory tree content
-* [list-empty-dirs.ps1](Scripts/list-empty-dirs.ps1) - lists empty subfolders within the given directory tree
-* [list-empty-files.ps1](Scripts/list-empty-files.ps1) - lists empty files within the given directory tree
-* [list-files.ps1](Scripts/list-files.ps1) - lists all files in the given folder and also in every subfolder
-* [list-hidden-files.ps1](Scripts/list-hidden-files.ps1) - lists hidden files within the given directory tree
-* [list-recycle-bin.ps1](Scripts/list-recycle-bin.ps1) - lists the content of the recycle bin folder
-* [list-unused-files.ps1](Scripts/list-unused-files.ps1) - lists unused files in a directory tree
-* [list-workdir.ps1](Scripts/list-workdir.ps1) - lists the current working directory
-* [make-install.ps1](Scripts/make-install.ps1) - installs built executables and libs to the installation directory
-* [MD5.ps1](Scripts/MD5.ps1) - prints the MD5 checksum of the given file
-* [publish-to-ipfs.ps1](Scripts/publish-to-ipfs.ps1) - publishes the given files or directory to IPFS
-* [remove-empty-dirs.ps1](Scripts/remove-empty-dirs.ps1) - removes empty subfolders within the given directory tree
-* [search-filename.ps1](Scripts/search-filename.ps1) - searches the directory tree for filenames by given pattern 
-* [search-files.ps1](Scripts/search-files.ps1) - searches the given pattern in the given files
-* [SHA1.ps1](Scripts/SHA1.ps1) - prints the SHA1 checksum of the given file
-* [SHA256.ps1](Scripts/SHA256.ps1) - prints the SHA256 checksum of the given file
-* [upload-file.ps1](Scripts/zip-dir.ps1) - uploads the local file to the given FTP server
-* [zip-dir.ps1](Scripts/zip-dir.ps1) - creates a .zip archive of the given directory
+
+| Script                                               | Description                                                        | Manual                                  |
+| ---------------------------------------------------- | ------------------------------------------------------------------ | --------------------------------------- |
+| [cd-desktop.ps1](Scripts/cd-desktop.ps1)             | go to the user's desktop folder
+| [cd-docs.ps1](Scripts/cd-docs.ps1)                   | go to the user's documents folder
+| [cd-downloads.ps1](Scripts/cd-downloads.ps1)         | go to the user's downloads folder
+| [cd-dropbox.ps1](Scripts/cd-dropbox.ps1)             | go to the user's Dropbox folder
+| [cd-home.ps1](Scripts/cd-home.ps1)                   | go to the user's home folder
+| [cd-music.ps1](Scripts/cd-music.ps1)                 | go to the user's music folder
+| [cd-onedrive.ps1](Scripts/cd-onedrive.ps1)           | go to the user's OneDrive folder
+| [cd-pics.ps1](Scripts/cd-pics.ps1)                   | go to the user's pictures folder
+| [cd-recycle-bin.ps1](Scripts/cd-recycle-bin.ps1)     | go to the user's recycle bin folder
+| [cd-repos.ps1](Scripts/cd-repos.ps1)                 | go to the user's Git repositories folder
+| [cd-root.ps1](Scripts/cd-root.ps1)                   | go to the root directory (C:\ on Windows)
+| [cd-scripts.ps1](Scripts/cd-scripts.ps1)             | go to the PowerShell Scripts folder
+| [cd-up.ps1](Scripts/cd-up.ps1)                       | go one directory level up
+| [cd-up2.ps1](Scripts/cd-up2.ps1)                     | go two directory levels up
+| [cd-up3.ps1](Scripts/cd-up3.ps1)                     | go three directory levels up
+| [cd-up4.ps1](Scripts/cd-up4.ps1)                     | go four directory levels up
+| [cd-videos.ps1](Scripts/cd-videos.ps1)               | go to the user's videos folder
+| [check-symlinks.ps1](Scripts/check-symlinks.ps1)     | checks every symlink in the given directory tree
+| [check-xml-file.ps1](Scripts/check-xml-file.ps1)     | checks the given XML file for validity
+| [clear-recycle-bin.ps1](Scripts/clear-recycle-bin.ps1) | removes the content of the recycle bin folder (can not be undo!)
+| [copy-photos-sorted.ps1](Scripts/copy-photos-sorted.ps1) | copies all photos sorted by year and month 
+| [create-shortcut.ps1](Scripts/create-shortcut.ps1)   | creates a shortcut
+| [create-symlink.ps1](Scripts/create-symlink.ps1)     | creates a symbolic link
+| [decrypt-file.ps1](Scripts/decrypt-file.ps1)         | encrypts the given file
+| [download-dir.ps1](Scripts/download-dir.ps1)         | downloads a directory tree from the given URL
+| [download-file.ps1](Scripts/download-file.ps1)       | downloads a file from the given URL
+| [edit.ps1](Scripts/edit.ps1)                         | edits the given file with the built-in text editor
+| [encrypt-file.ps1](Scripts/encrypt-file.ps1)         | encrypts the given file
+| [inspect-exe.ps1](Scripts/inspect-exe.ps1)           | prints basic information of the given executable file
+| [list-dir.ps1](Scripts/list-dir.ps1)                 | lists the directory content (formatted in columns)
+| [list-dir-tree.ps1](Scripts/list-dir-tree.ps1)       | lists the directory tree content
+| [list-empty-dirs.ps1](Scripts/list-empty-dirs.ps1)   | lists empty subfolders within the given directory tree
+| [list-empty-files.ps1](Scripts/list-empty-files.ps1) | lists empty files within the given directory tree
+| [list-files.ps1](Scripts/list-files.ps1)             | lists all files in the given folder and also in every subfolder
+| [list-hidden-files.ps1](Scripts/list-hidden-files.ps1) | lists hidden files within the given directory tree
+| [list-recycle-bin.ps1](Scripts/list-recycle-bin.ps1) | lists the content of the recycle bin folder
+| [list-unused-files.ps1](Scripts/list-unused-files.ps1) | lists unused files in a directory tree
+| [list-workdir.ps1](Scripts/list-workdir.ps1)         | lists the current working directory
+| [make-install.ps1](Scripts/make-install.ps1)         | installs built executables and libs to the installation directory
+| [MD5.ps1](Scripts/MD5.ps1)                           | prints the MD5 checksum of the given file
+| [publish-to-ipfs.ps1](Scripts/publish-to-ipfs.ps1)   | publishes the given files or directory to IPFS
+| [remove-empty-dirs.ps1](Scripts/remove-empty-dirs.ps1) | removes empty subfolders within the given directory tree
+| [search-filename.ps1](Scripts/search-filename.ps1)   | searches the directory tree for filenames by given pattern 
+| [search-files.ps1](Scripts/search-files.ps1)         | searches the given pattern in the given files
+| [SHA1.ps1](Scripts/SHA1.ps1)                         | prints the SHA1 checksum of the given file
+| [SHA256.ps1](Scripts/SHA256.ps1)                     | prints the SHA256 checksum of the given file
+| [upload-file.ps1](Scripts/zip-dir.ps1)               | uploads the local file to the given FTP server
+| [zip-dir.ps1](Scripts/zip-dir.ps1)                   | creates a .zip archive of the given directory
 
 ♻️ Scripts to Convert Files
 ---------------------------
 
-| Script                                                 | Description                                                        | Docs                                    |
+| Script                                                 | Description                                                        | Manual                                  |
 | ------------------------------------------------------ | ------------------------------------------------------------------ | --------------------------------------- |
 | [convert-csv2txt.ps1](Scripts/convert-csv2txt.ps1)     | converts a given .CSV file to a text file                          | [Manual](Docs/convert-csv2txt.ps1.md)   |
 | [convert-mysql2csv.ps1](Scripts/convert-mysql2csv.ps1) | converts a MySQL database table to a .CSV file                     | [Manual](Docs/convert-mysql2csv.ps1.md) |
@@ -183,7 +186,7 @@ Mega Collection of PowerShell Scripts
 📝 Scripts for Git
 -------------------
 
-| Script                                               | Description                                                        | Docs                                    |
+| Script                                               | Description                                                        | Manual                                  |
 | ---------------------------------------------------- | ------------------------------------------------------------------ | --------------------------------------- |
 | [cherry-picker.ps1](Scripts/cherry-picker.ps1)       | cherry-picks a Git commit into multiple branches                   | [Manual](Docs/cherry-picker.ps1.md)     |
 | [clean-repo.ps1](Scripts/clean-repo.ps1)             | cleans a Git repository from untracked files (including submodules) | [Manual](Docs/clean-repo.ps1.md)       |
@@ -210,7 +213,7 @@ Mega Collection of PowerShell Scripts
 🔎 Scripts for PowerShell 
 ------------------------
 
-| Script                                                 | Description                                                        | Docs                                    |
+| Script                                                 | Description                                                        | Manual                                  |
 | ------------------------------------------------------ | ------------------------------------------------------------------ | --------------------------------------- |
 | [daily-tasks.sh](Scripts/daily-tasks.sh)               | execute PowerShell scripts automatically as daily tasks (Linux only) | [Manual](Docs/daily-tasks.sh.md)      |
 | [introduce-powershell.ps1](Scripts/introduce-powershell.ps1) | introduces PowerShell to new users                           | [Manual](Docs/introduce-powershell.ps1.md) |
