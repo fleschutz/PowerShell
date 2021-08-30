@@ -2,18 +2,18 @@
 
 ## Synopsis & Description
 ```powershell
-new-branch.ps1 [<new-branch-name>] [<repo-dir>]
+new-branch.ps1 [<BranchName>] [<RepoDir>]
 ```
 
 Creates and switches to a new branch in a Git repository.
 
 ## Syntax & Parameters
 ```powershell
-/home/mf/PowerShell/Scripts/new-branch.ps1 [[-NewBranchName] <String>] [[-RepoDir] <String>] [<CommonParameters>]
+/home/mf/PowerShell/Scripts/new-branch.ps1 [[-BranchName] <String>] [[-RepoDir] <String>] [<CommonParameters>]
 ```
 
 ```
--NewBranchName <String>
+-BranchName <String>
     
     Required?                    false
     Position?                    1

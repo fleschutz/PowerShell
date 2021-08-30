@@ -1,6 +1,6 @@
 ﻿<#
 .SYNOPSIS
-	new-branch.ps1 [<new-branch-name>] [<repo-dir>]
+	new-branch.ps1 [<BranchName>] [<RepoDir>]
 .DESCRIPTION
 	Creates and switches to a new branch in a Git repository.
 .EXAMPLE
@@ -11,10 +11,10 @@
 	https://github.com/fleschutz/PowerShell
 #>
 
-param([string]$NewBranchName = "", [string]$RepoDir = "$PWD")
+param([string]$BranchName = "", [string]$RepoDir = "$PWD")
 
 try {
-	if ($NewBranchName -eq "") { $NewBranchName = read-host "Enter new branch name" }
+	if ($BranchName -eq "") { $BranchName = read-host "Enter new branch name" }
 
 	$StopWatch = [system.diagnostics.stopwatch]::startNew()
 
@@ -30,17 +30,17 @@ try {
 	& git fetch --all --recurse-submodules --jobs=4
 	if ($lastExitCode -ne "0") { throw "'git fetch' failed" }
 
-	& git checkout -b "$NewBranchName"
-	if ($lastExitCode -ne "0") { throw "'git checkout -b $NewBranchName' failed" }
+	& git checkout -b "$BranchName"
+	if ($lastExitCode -ne "0") { throw "'git checkout -b $BranchName' failed" }
 
-	& git push origin "$NewBranchName"
-	if ($lastExitCode -ne "0") { throw "'git push origin $NewBranchName' failed" }
+	& git push origin "$BranchName"
+	if ($lastExitCode -ne "0") { throw "'git push origin $BranchName' failed" }
 
 	& git submodule update --init --recursive
 	if ($lastExitCode -ne "0") { throw "'git submodule update' failed" }
 
 	[int]$Elapsed = $StopWatch.Elapsed.TotalSeconds
-	"✔️ created new branch '$NewBranchName' in Git repository 📂$RepoDirName in $Elapsed sec"
+	"✔️ created new branch '$BranchName' in Git repository 📂$RepoDirName in $Elapsed sec"
 	exit 0
 } catch {
 	write-error "⚠️ Error in line $($_.InvocationInfo.ScriptLineNumber): $($Error[0])"

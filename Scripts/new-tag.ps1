@@ -1,6 +1,6 @@
 ﻿<#
 .SYNOPSIS
-	new-tag.ps1 [<new-tag-name>] [<repo-dir>]
+	new-tag.ps1 [<TagName>] [<RepoDir>]
 .DESCRIPTION
 	Creates a new tag in a Git repository.
 .EXAMPLE
@@ -11,10 +11,10 @@
 	Author: Markus Fleschutz · License: CC0
 #>
 
-param([string]$NewTagName = "", [string]$RepoDir = "$PWD")
+param([string]$TagName = "", [string]$RepoDir = "$PWD")
 
 try {
-	if ($NewTagName -eq "") { $NewTagName = read-host "Enter new tag name" }
+	if ($TagName -eq "") { $TagName = read-host "Enter new tag name" }
 
 	$StopWatch = [system.diagnostics.stopwatch]::startNew()
 
@@ -31,14 +31,14 @@ try {
 	& "$PSScriptRoot/fetch-repo.ps1"
 	if ($lastExitCode -ne "0") { throw "Script 'fetch-repo.ps1' failed" }
 
-	& git tag "$NewTagName"
-	if ($lastExitCode -ne "0") { throw "Error: 'git tag $NewTagName' failed!" }
+	& git tag "$TagName"
+	if ($lastExitCode -ne "0") { throw "Error: 'git tag $TagName' failed!" }
 
-	& git push origin "$NewTagName"
-	if ($lastExitCode -ne "0") { throw "Error: 'git push origin $NewTagName' failed!" }
+	& git push origin "$TagName"
+	if ($lastExitCode -ne "0") { throw "Error: 'git push origin $TagName' failed!" }
 
 	[int]$Elapsed = $StopWatch.Elapsed.TotalSeconds
-	"✔️ created new tag '$NewTagName' in $Elapsed sec"
+	"✔️ created new tag '$TagName' in $Elapsed sec"
 	exit 0
 } catch {
 	write-error "⚠️ Error in line $($_.InvocationInfo.ScriptLineNumber): $($Error[0])"

@@ -2,18 +2,18 @@
 
 ## Synopsis & Description
 ```powershell
-new-tag.ps1 [<new-tag-name>] [<repo-dir>]
+new-tag.ps1 [<TagName>] [<RepoDir>]
 ```
 
 Creates a new tag in a Git repository.
 
 ## Syntax & Parameters
 ```powershell
-/home/mf/PowerShell/Scripts/new-tag.ps1 [[-NewTagName] <String>] [[-RepoDir] <String>] [<CommonParameters>]
+/home/mf/PowerShell/Scripts/new-tag.ps1 [[-TagName] <String>] [[-RepoDir] <String>] [<CommonParameters>]
 ```
 
 ```
--NewTagName <String>
+-TagName <String>
     
     Required?                    false
     Position?                    1
