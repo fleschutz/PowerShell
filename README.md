@@ -91,86 +91,86 @@ Mega Collection of PowerShell Scripts
 
 | Script                                               | Description                                                        | Help                                    |
 | ---------------------------------------------------- | ------------------------------------------------------------------ | --------------------------------------- |
-| [close-calculator.ps1](Scripts/close-calculator.ps1) | closes the calculator program gracefully
-| [close-chrome.ps1](Scripts/close-chrome.ps1)         | closes Google Chrome gracefully
-| [close-cortana.ps1](Scripts/close-cortana.ps1)       | closes Cortana gracefully
-| [close-edge.ps1](Scripts/close-edge.ps1)             | closes Microsoft Edge gracefully
-| [close-file-explorer.ps1](Scripts/close-file-explorer.ps1) | closes Microsoft File Explorer gracefully
-| [close-firefox.ps1](Scripts/close-firefox.ps1)       | closes the Firefox Web browser gracefully
-| [close-program.ps1](Scripts/close-program.ps1)       | closes the given program gracefully
-| [close-netflix.ps1](Scripts/close-netflix.ps1)       | closes Netflix gracefully
-| [close-onedrive.ps1](Scripts/close-onedrive.ps1)     | closes Microsoft OneDrive gracefully
-| [close-system-settings.ps1](Scripts/close-system-settings.ps1) | closes the System Settings gracefully
-| [close-thunderbird.ps1](Scripts/close-thunderbird.ps1) | closes Mozilla Thunderbird gracefully
-| [close-vlc.ps1](Scripts/close-vlc.ps1)               | closes the VLC media player gracefully
-| [close-windows-terminal.ps1](Scripts/close-windows-terminal.ps1) | closes Windows Terminal gracefully
-| [enable-god-mode.ps1](Scripts/enable-god-mode.ps1)   | enables the god mode (adds a new icon to the desktop)
-| [list-clipboard.ps1](Scripts/list-clipboard.ps1)     | lists the contents of the clipboard
-| [new-email.ps1](Scripts/new-email.ps1)               | starts the default email client to write a new email
-| [open-browser.ps1](Scripts/open-browser.ps1)         | starts the default Web browser
-| [open-calculator.ps1](Scripts/open-calculator.ps1)   | starts the calculator program
-| [open-email-client.ps1](Scripts/open-browser.ps1)    | starts the default email client
-| [open-file-explorer.ps1](Scripts/open-file-explorer.ps1) | starts the File Explorer
-| [open-netflix.ps1](Scripts/open-netflix.ps1)         | starts the Netflix app
-| [open-onedrive.ps1](Scripts/open-onedrive.ps1)       | opens the user's OneDrive folder 
-| [open-recycle-bin.ps1](Scripts/open-recycle-bin.ps1) | starts the File Explorer with the recycle bin folder
-| [set-wallpaper.ps1](Scripts/set-wallpaper.ps1)       | sets the given image as wallpaper
-| [take-screenshot.ps1](Scripts/take-screenshot.ps1)   | takes a single screenshot
-| [take-screenshots.ps1](Scripts/take-screenshots.ps1) | takes multiple screenshots (every minute by default)
+| [close-calculator.ps1](Scripts/close-calculator.ps1) | Closes the calculator program gracefully
+| [close-chrome.ps1](Scripts/close-chrome.ps1)         | Closes Google Chrome gracefully
+| [close-cortana.ps1](Scripts/close-cortana.ps1)       | Closes Cortana gracefully
+| [close-edge.ps1](Scripts/close-edge.ps1)             | Closes Microsoft Edge gracefully
+| [close-file-explorer.ps1](Scripts/close-file-explorer.ps1) | Closes Microsoft File Explorer gracefully
+| [close-firefox.ps1](Scripts/close-firefox.ps1)       | Closes the Firefox Web browser gracefully
+| [close-program.ps1](Scripts/close-program.ps1)       | Closes the given program gracefully
+| [close-netflix.ps1](Scripts/close-netflix.ps1)       | Closes Netflix gracefully
+| [close-onedrive.ps1](Scripts/close-onedrive.ps1)     | Closes Microsoft OneDrive gracefully
+| [close-system-settings.ps1](Scripts/close-system-settings.ps1) | Closes the System Settings gracefully
+| [close-thunderbird.ps1](Scripts/close-thunderbird.ps1) | Closes Mozilla Thunderbird gracefully
+| [close-vlc.ps1](Scripts/close-vlc.ps1)               | Closes the VLC media player gracefully
+| [close-windows-terminal.ps1](Scripts/close-windows-terminal.ps1) | Closes Windows Terminal gracefully
+| [enable-god-mode.ps1](Scripts/enable-god-mode.ps1)   | Enables the god mode (adds a new icon to the desktop)
+| [list-clipboard.ps1](Scripts/list-clipboard.ps1)     | Lists the contents of the clipboard
+| [new-email.ps1](Scripts/new-email.ps1)               | Starts the default email client to write a new email
+| [open-browser.ps1](Scripts/open-browser.ps1)         | Starts the default Web browser
+| [open-calculator.ps1](Scripts/open-calculator.ps1)   | Starts the calculator program
+| [open-email-client.ps1](Scripts/open-browser.ps1)    | Starts the default email client
+| [open-file-explorer.ps1](Scripts/open-file-explorer.ps1) | Starts the File Explorer
+| [open-netflix.ps1](Scripts/open-netflix.ps1)         | Starts the Netflix app
+| [open-onedrive.ps1](Scripts/open-onedrive.ps1)       | Opens the user's OneDrive folder 
+| [open-recycle-bin.ps1](Scripts/open-recycle-bin.ps1) | Starts the File Explorer with the recycle bin folder
+| [set-wallpaper.ps1](Scripts/set-wallpaper.ps1)       | Sets the given image as wallpaper
+| [take-screenshot.ps1](Scripts/take-screenshot.ps1)   | Takes a single screenshot
+| [take-screenshots.ps1](Scripts/take-screenshots.ps1) | Takes multiple screenshots (every minute by default)
 
 📁 Scripts for Files & Folders 
 -------------------------------
 
 | Script                                               | Description                                                        | Help                                    |
 | ---------------------------------------------------- | ------------------------------------------------------------------ | --------------------------------------- |
-| [cd-desktop.ps1](Scripts/cd-desktop.ps1)             | go to the user's desktop folder
-| [cd-docs.ps1](Scripts/cd-docs.ps1)                   | go to the user's documents folder
-| [cd-downloads.ps1](Scripts/cd-downloads.ps1)         | go to the user's downloads folder
-| [cd-dropbox.ps1](Scripts/cd-dropbox.ps1)             | go to the user's Dropbox folder
-| [cd-home.ps1](Scripts/cd-home.ps1)                   | go to the user's home folder
-| [cd-music.ps1](Scripts/cd-music.ps1)                 | go to the user's music folder
-| [cd-onedrive.ps1](Scripts/cd-onedrive.ps1)           | go to the user's OneDrive folder
-| [cd-pics.ps1](Scripts/cd-pics.ps1)                   | go to the user's pictures folder
-| [cd-recycle-bin.ps1](Scripts/cd-recycle-bin.ps1)     | go to the user's recycle bin folder
-| [cd-repos.ps1](Scripts/cd-repos.ps1)                 | go to the user's Git repositories folder
-| [cd-root.ps1](Scripts/cd-root.ps1)                   | go to the root directory (C:\ on Windows)
-| [cd-scripts.ps1](Scripts/cd-scripts.ps1)             | go to the PowerShell Scripts folder
-| [cd-up.ps1](Scripts/cd-up.ps1)                       | go one directory level up
-| [cd-up2.ps1](Scripts/cd-up2.ps1)                     | go two directory levels up
-| [cd-up3.ps1](Scripts/cd-up3.ps1)                     | go three directory levels up
-| [cd-up4.ps1](Scripts/cd-up4.ps1)                     | go four directory levels up
-| [cd-videos.ps1](Scripts/cd-videos.ps1)               | go to the user's videos folder
-| [check-symlinks.ps1](Scripts/check-symlinks.ps1)     | checks every symlink in the given directory tree
-| [check-xml-file.ps1](Scripts/check-xml-file.ps1)     | checks the given XML file for validity
-| [clear-recycle-bin.ps1](Scripts/clear-recycle-bin.ps1) | removes the content of the recycle bin folder (can not be undo!)
-| [copy-photos-sorted.ps1](Scripts/copy-photos-sorted.ps1) | copies all photos sorted by year and month 
-| [create-shortcut.ps1](Scripts/create-shortcut.ps1)   | creates a shortcut
-| [create-symlink.ps1](Scripts/create-symlink.ps1)     | creates a symbolic link
-| [decrypt-file.ps1](Scripts/decrypt-file.ps1)         | encrypts the given file
-| [download-dir.ps1](Scripts/download-dir.ps1)         | downloads a directory tree from the given URL
-| [download-file.ps1](Scripts/download-file.ps1)       | downloads a file from the given URL
-| [edit.ps1](Scripts/edit.ps1)                         | edits the given file with the built-in text editor
-| [encrypt-file.ps1](Scripts/encrypt-file.ps1)         | encrypts the given file
-| [inspect-exe.ps1](Scripts/inspect-exe.ps1)           | prints basic information of the given executable file
-| [list-dir.ps1](Scripts/list-dir.ps1)                 | lists the directory content (formatted in columns)
-| [list-dir-tree.ps1](Scripts/list-dir-tree.ps1)       | lists the directory tree content
-| [list-empty-dirs.ps1](Scripts/list-empty-dirs.ps1)   | lists empty subfolders within the given directory tree
-| [list-empty-files.ps1](Scripts/list-empty-files.ps1) | lists empty files within the given directory tree
-| [list-files.ps1](Scripts/list-files.ps1)             | lists all files in the given folder and also in every subfolder
-| [list-hidden-files.ps1](Scripts/list-hidden-files.ps1) | lists hidden files within the given directory tree
-| [list-recycle-bin.ps1](Scripts/list-recycle-bin.ps1) | lists the content of the recycle bin folder
-| [list-unused-files.ps1](Scripts/list-unused-files.ps1) | lists unused files in a directory tree
-| [list-workdir.ps1](Scripts/list-workdir.ps1)         | lists the current working directory
-| [make-install.ps1](Scripts/make-install.ps1)         | installs built executables and libs to the installation directory
-| [MD5.ps1](Scripts/MD5.ps1)                           | prints the MD5 checksum of the given file
-| [publish-to-ipfs.ps1](Scripts/publish-to-ipfs.ps1)   | publishes the given files or directory to IPFS
-| [remove-empty-dirs.ps1](Scripts/remove-empty-dirs.ps1) | removes empty subfolders within the given directory tree
-| [search-filename.ps1](Scripts/search-filename.ps1)   | searches the directory tree for filenames by given pattern 
-| [search-files.ps1](Scripts/search-files.ps1)         | searches the given pattern in the given files
-| [SHA1.ps1](Scripts/SHA1.ps1)                         | prints the SHA1 checksum of the given file
-| [SHA256.ps1](Scripts/SHA256.ps1)                     | prints the SHA256 checksum of the given file
-| [upload-file.ps1](Scripts/zip-dir.ps1)               | uploads the local file to the given FTP server
-| [zip-dir.ps1](Scripts/zip-dir.ps1)                   | creates a .zip archive of the given directory
+| [cd-desktop.ps1](Scripts/cd-desktop.ps1)             | Go to the user's desktop folder
+| [cd-docs.ps1](Scripts/cd-docs.ps1)                   | Go to the user's documents folder
+| [cd-downloads.ps1](Scripts/cd-downloads.ps1)         | Go to the user's downloads folder
+| [cd-dropbox.ps1](Scripts/cd-dropbox.ps1)             | Go to the user's Dropbox folder
+| [cd-home.ps1](Scripts/cd-home.ps1)                   | Go to the user's home folder
+| [cd-music.ps1](Scripts/cd-music.ps1)                 | Go to the user's music folder
+| [cd-onedrive.ps1](Scripts/cd-onedrive.ps1)           | Go to the user's OneDrive folder
+| [cd-pics.ps1](Scripts/cd-pics.ps1)                   | Go to the user's pictures folder
+| [cd-recycle-bin.ps1](Scripts/cd-recycle-bin.ps1)     | Go to the user's recycle bin folder
+| [cd-repos.ps1](Scripts/cd-repos.ps1)                 | Go to the user's Git repositories folder
+| [cd-root.ps1](Scripts/cd-root.ps1)                   | Go to the root directory (C:\ on Windows)
+| [cd-scripts.ps1](Scripts/cd-scripts.ps1)             | Go to the PowerShell Scripts folder
+| [cd-up.ps1](Scripts/cd-up.ps1)                       | Go one directory level up
+| [cd-up2.ps1](Scripts/cd-up2.ps1)                     | Go two directory levels up
+| [cd-up3.ps1](Scripts/cd-up3.ps1)                     | Go three directory levels up
+| [cd-up4.ps1](Scripts/cd-up4.ps1)                     | Go four directory levels up
+| [cd-videos.ps1](Scripts/cd-videos.ps1)               | Go to the user's videos folder
+| [check-symlinks.ps1](Scripts/check-symlinks.ps1)     | Checks every symlink in the given directory tree
+| [check-xml-file.ps1](Scripts/check-xml-file.ps1)     | Checks the given XML file for validity
+| [clear-recycle-bin.ps1](Scripts/clear-recycle-bin.ps1) | Removes the content of the recycle bin folder (can not be undo!)
+| [copy-photos-sorted.ps1](Scripts/copy-photos-sorted.ps1) | Copies all photos sorted by year and month 
+| [create-shortcut.ps1](Scripts/create-shortcut.ps1)   | Creates a shortcut
+| [create-symlink.ps1](Scripts/create-symlink.ps1)     | Creates a symbolic link
+| [decrypt-file.ps1](Scripts/decrypt-file.ps1)         | Encrypts the given file
+| [download-dir.ps1](Scripts/download-dir.ps1)         | Downloads a directory tree from the given URL
+| [download-file.ps1](Scripts/download-file.ps1)       | Downloads a file from the given URL
+| [edit.ps1](Scripts/edit.ps1)                         | Edits the given file with the built-in text editor
+| [encrypt-file.ps1](Scripts/encrypt-file.ps1)         | Encrypts the given file
+| [inspect-exe.ps1](Scripts/inspect-exe.ps1)           | Prints basic information of the given executable file
+| [list-dir.ps1](Scripts/list-dir.ps1)                 | Lists the directory content (formatted in columns)
+| [list-dir-tree.ps1](Scripts/list-dir-tree.ps1)       | Lists the directory tree content
+| [list-empty-dirs.ps1](Scripts/list-empty-dirs.ps1)   | Lists empty subfolders within the given directory tree
+| [list-empty-files.ps1](Scripts/list-empty-files.ps1) | Lists empty files within the given directory tree
+| [list-files.ps1](Scripts/list-files.ps1)             | Lists all files in the given folder and also in every subfolder
+| [list-hidden-files.ps1](Scripts/list-hidden-files.ps1) | Lists hidden files within the given directory tree
+| [list-recycle-bin.ps1](Scripts/list-recycle-bin.ps1) | Lists the content of the recycle bin folder
+| [list-unused-files.ps1](Scripts/list-unused-files.ps1) | Lists unused files in a directory tree
+| [list-workdir.ps1](Scripts/list-workdir.ps1)         | Lists the current working directory
+| [make-install.ps1](Scripts/make-install.ps1)         | Installs built executables and libs to the installation directory
+| [MD5.ps1](Scripts/MD5.ps1)                           | Prints the MD5 checksum of the given file
+| [publish-to-ipfs.ps1](Scripts/publish-to-ipfs.ps1)   | Publishes the given files or directory to IPFS
+| [remove-empty-dirs.ps1](Scripts/remove-empty-dirs.ps1) | Removes empty subfolders within the given directory tree
+| [search-filename.ps1](Scripts/search-filename.ps1)   | Searches the directory tree for filenames by given pattern 
+| [search-files.ps1](Scripts/search-files.ps1)         | Searches the given pattern in the given files
+| [SHA1.ps1](Scripts/SHA1.ps1)                         | Prints the SHA1 checksum of the given file
+| [SHA256.ps1](Scripts/SHA256.ps1)                     | Prints the SHA256 checksum of the given file
+| [upload-file.ps1](Scripts/zip-dir.ps1)               | Uploads the local file to the given FTP server
+| [zip-dir.ps1](Scripts/zip-dir.ps1)                   | Creates a .zip archive of the given directory
 
 ♻️ Scripts to Convert Files
 ---------------------------
