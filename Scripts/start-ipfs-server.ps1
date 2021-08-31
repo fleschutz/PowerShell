@@ -16,12 +16,12 @@ try {
 
 	""
 	"Step 1/5: Searching for IPFS executable..."
-	$Result = (ipfs --version)
+	& ipfs --version
 	if ($lastExitCode -ne "0") { throw "Can't execute 'ipfs' - make sure IPFS is installed and available" }
 	""
-	"Step 2/5: Initializing IPFS..."
+	"Step 2/5: Initializing IPFS with server profile..."
 	& ipfs init --profile server
-	""
+
 	"Step 3/5: Configuring IPFS..."
 	& ipfs config Addresses.API /ip4/0.0.0.0/tcp/5001
 	if ($lastExitCode -ne "0") { throw "'ipfs config Addresses.API' failed" }
