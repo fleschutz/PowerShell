@@ -47,46 +47,46 @@ Mega Collection of PowerShell Scripts
 
 | Script                                               | Description                                                        | Help                                    |
 | ---------------------------------------------------- | ------------------------------------------------------------------ | --------------------------------------- |
-| [add-firewall-rules.ps1](Scripts/add-firewall-rules.ps1) | Adds firewall rules for the given executables (needs admin rights)
-| [check-cpu-temp.ps1](Scripts/check-cpu-temp.ps1)     | Checks the CPU temperature
-| [check-dns-resolution.ps1](Scripts/check-dns-resolution.ps1) | Checks the DNS resolution with frequently used domain names
-| [check-drive-space.ps1](Scripts/check-drive-space.ps1) | Checks the given drive for free space left
-| [check-file-system.ps1](Scripts/check-file-system.ps1) | Checks the validity of the file system (needs admin rights)
-| [check-health.ps1](Scripts/check-health.ps1)         | Checks the system health
-| [check-ping.ps1](Scripts/check-ping.ps1)             | Checks the ping latency to the internet
-| [check-swap-space.ps1](Scripts/check-swap-space.ps1) | Checks the swap space for free space left
-| [check-windows-system-files.ps1](Scripts/check-windows-system-files.ps1) | Checks the validity of the Windows system files (needs admin rights)
-| [enable-crash-dumps.ps1](Scripts/enable-crash-dumps.ps1) | Enables the writing of crash dumps
-| [hibernate.ps1](Scripts/hibernate.ps1)               | Enables hibernate mode for the local computer (needs admin rights)
-| [install-github-cli.ps1](Scripts/install-github-cli.ps1) | Installs GitHub CLI
-| [install-google-chrome.ps1](Scripts/install-google-chrome.ps1) | Installs the Google Chrome browser
-| [install-knot-resolver.ps1](Scripts/install-knot-resolver.ps1) | Installs the Knot Resolver (needs admin rights)
-| [install-ssh-client.ps1](Scripts/install-ssh-client.ps1) | Installs the SSH client (needs admin rights)
-| [install-ssh-server.ps1](Scripts/install-ssh-server.ps1) | Installs the SSH server (needs admin rights)
-| [install-signal-cli.ps1](Scripts/install-signal-cli.ps1) | Installs signal-cli from github.com/AsamK/signal-cli
-| [install-vscode.ps1](Scripts/install-vscode.ps1)     | Installs Visual Studio Code 
-| [install-wsl.ps1](Scripts/install-wsl.ps1)           | Installs Windows Subsystem for Linux (WSL), needs admin rights
-| [list-cli-tools.ps1](Scripts/list-cli-tools.ps1)     | Lists available command-line interface (CLI) tools 
-| [list-drives.ps1](Scripts/list-drives.ps1)           | Lists all drives
-| [list-network-shares.ps1](Scripts/list-network-shares.ps1) | Lists the network shares of the local computer
-| [list-installed-apps.ps1](Scripts/list-installed-apps.ps1) | Lists the installed Windows Store apps
-| [list-installed-software.ps1](Scripts/list-installed-software.ps1) | Lists the installed software (except Windows Store apps)
-| [list-printers.ps1](Scripts/list-printers.ps1)       | Lists all printer known to the computer
-| [list-print-jobs.ps1](Scripts/list-print-jobs.ps1) | Lists all jobs of all printers
-| [list-processes.ps1](Scripts/list-processes.ps1)     | Lists the local computer processes
-| [list-services.ps1](Scripts/list-services.ps1)       | Lists the services on the local computer
-| [list-system-info.ps1](Scripts/list-system-info.ps1) | Lists system information on the local computer
-| [list-tasks.ps1](Scripts/list-tasks.ps1)             | Lists all Windows scheduler tasks
-| [list-timezone.ps1](Scripts/list-timezone.ps1)       | Lists the current time zone details
-| [list-timezones.ps1](Scripts/list-timezones.ps1)     | Lists all time zones available 
-| [list-user-groups.ps1](Scripts/list-user-groups.ps1) | Lists the user groups on the local computer
-| [poweroff.ps1](Scripts/poweroff.ps1)                 | Halts the local computer (needs admin rights)
-| [query-smart-data.ps1](Scripts/query-smart-data.ps1) | Queries the S.M.A.R.T. data of your HDD/SSD's 
-| [reboot.ps1](Scripts/reboot.ps1)                     | Reboots the local computer (needs admin rights)
-| [remove-print-jobs.ps1](Scripts/remove-print-jobs.ps1) | Removes all jobs from all printers
-| [restart-network-adapters.ps1](Scripts/restart-network-adapters.ps1) | Restarts all local network adapters
-| [upgrade-ubuntu.ps1](Scripts/upgrade-ubuntu.ps1)     | Upgrades Ubuntu Linux to the latest (LTS) release 
-| [wakeup.ps1](Scripts/wakeup.ps1)                     | Sends a magic packet a computer to wake him up
+| [add-firewall-rules.ps1](Scripts/add-firewall-rules.ps1) | Adds firewall rules for the given executables (needs admin rights) | [Help](Docs/add-firewall-rules.ps1.md) |
+| [check-cpu-temp.ps1](Scripts/check-cpu-temp.ps1)     | Checks the CPU temperature                                         | [Help](Docs/check-cpu-temp.ps1.md)      |
+| [check-dns-resolution.ps1](Scripts/check-dns-resolution.ps1) | Checks the DNS resolution with frequently used domain names| [Help](Docs/check-dns-resolution.ps1.md)|
+| [check-drive-space.ps1](Scripts/check-drive-space.ps1) | Checks the given drive for free space left                       | [Help](Docs/check-drive-space.ps1.md)   |
+| [check-file-system.ps1](Scripts/check-file-system.ps1) | Checks the validity of the file system (needs admin rights)      | [Help](Docs/check-file-system.ps1.md)   |
+| [check-health.ps1](Scripts/check-health.ps1)         | Checks the system health                                           | [Help](Docs/check-health.ps1.md)        |
+| [check-ping.ps1](Scripts/check-ping.ps1)             | Checks the ping latency to the internet                            | [Help](Docs/check-ping.ps1.md)          |
+| [check-swap-space.ps1](Scripts/check-swap-space.ps1) | Checks the swap space for free space left                          | [Help](Docs/check-swap-space.ps1.md)    |
+| [check-windows-system-files.ps1](Scripts/check-windows-system-files.ps1) | Checks the validity of the Windows system files (needs admin rights) | [Help](Docs/check-windows-system-files.ps1.md) |
+| [enable-crash-dumps.ps1](Scripts/enable-crash-dumps.ps1) | Enables the writing of crash dumps                             | [Help](Docs/enable-crash-dumps.ps1.md)  |
+| [hibernate.ps1](Scripts/hibernate.ps1)               | Enables hibernate mode for the local computer (needs admin rights) | [Help](Docs/hibernate.ps1.md)           |
+| [install-github-cli.ps1](Scripts/install-github-cli.ps1) | Installs GitHub CLI                                            | [Help](Docs/install-github-cli.ps1.md)  |
+| [install-google-chrome.ps1](Scripts/install-google-chrome.ps1) | Installs the Google Chrome browser                       | [Help](Docs/install-google-chrome.ps1.md)|
+| [install-knot-resolver.ps1](Scripts/install-knot-resolver.ps1) | Installs the Knot Resolver (needs admin rights)          | [Help](Docs/install-knot-resolver.ps1.md)|
+| [install-ssh-client.ps1](Scripts/install-ssh-client.ps1) | Installs the SSH client (needs admin rights)                   | [Help](Docs/install-ssh-client.ps1.md)  |
+| [install-ssh-server.ps1](Scripts/install-ssh-server.ps1) | Installs the SSH server (needs admin rights)                   | [Help](Docs/install-ssh-server.ps1.md)  |
+| [install-signal-cli.ps1](Scripts/install-signal-cli.ps1) | Installs signal-cli from github.com/AsamK/signal-cli           | [Help](Docs/install-signal-cli.ps1.md)  |
+| [install-vscode.ps1](Scripts/install-vscode.ps1)     | Installs Visual Studio Code                                        | [Help](Docs/install-vscode.ps1.md)      |
+| [install-wsl.ps1](Scripts/install-wsl.ps1)           | Installs Windows Subsystem for Linux (WSL), needs admin rights     | [Help](Docs/install-wsl.ps1.md)         |
+| [list-cli-tools.ps1](Scripts/list-cli-tools.ps1)     | Lists available command-line interface (CLI) tools                 | [Help](Docs/list-cli-tools.ps1.md)      |
+| [list-drives.ps1](Scripts/list-drives.ps1)           | Lists all drives                                                   | [Help](Docs/list-drives.ps1.md)         |
+| [list-network-shares.ps1](Scripts/list-network-shares.ps1) | Lists the network shares of the local computer               | [Help](Docs/list-network-shares.ps1.md) |
+| [list-installed-apps.ps1](Scripts/list-installed-apps.ps1) | Lists the installed Windows Store apps                       | [Help](Docs/list-installed-apps.ps1.md) |
+| [list-installed-software.ps1](Scripts/list-installed-software.ps1) | Lists the installed software (except Windows Store apps) | [Help](Docs/list-installed-software.ps1.md)|
+| [list-printers.ps1](Scripts/list-printers.ps1)       | Lists all printer known to the computer                            | [Help](Docs/list-printers.ps1.md)       |
+| [list-print-jobs.ps1](Scripts/list-print-jobs.ps1) | Lists all jobs of all printers                                       | [Help](Docs/list-print-jobs.ps1.md)     |
+| [list-processes.ps1](Scripts/list-processes.ps1)     | Lists the local computer processes                                 | [Help](Docs/list-processes.ps1.md)      |
+| [list-services.ps1](Scripts/list-services.ps1)       | Lists the services on the local computer                           | [Help](Docs/list-services.ps1.md)       |
+| [list-system-info.ps1](Scripts/list-system-info.ps1) | Lists system information on the local computer                     | [Help](Docs/list-system-info.ps1.md)    |
+| [list-tasks.ps1](Scripts/list-tasks.ps1)             | Lists all Windows scheduler tasks                                  | [Help](Docs/list-tasks.ps1.md)          |
+| [list-timezone.ps1](Scripts/list-timezone.ps1)       | Lists the current time zone details                                | [Help](Docs/list-timezone.ps1.md)       |
+| [list-timezones.ps1](Scripts/list-timezones.ps1)     | Lists all time zones available                                     | [Help](Docs/list-timezones.ps1.md)      |
+| [list-user-groups.ps1](Scripts/list-user-groups.ps1) | Lists the user groups on the local computer                        | [Help](Docs/list-user-groups.ps1.md)    |
+| [poweroff.ps1](Scripts/poweroff.ps1)                 | Halts the local computer (needs admin rights)                      | [Help](Docs/poweroff.ps1.md)            |
+| [query-smart-data.ps1](Scripts/query-smart-data.ps1) | Queries the S.M.A.R.T. data of your HDD/SSD's                      | [Help](Docs/query-smart-data.ps1.md)    |
+| [reboot.ps1](Scripts/reboot.ps1)                     | Reboots the local computer (needs admin rights)                    | [Help](Docs/reboot.ps1.md)              |
+| [remove-print-jobs.ps1](Scripts/remove-print-jobs.ps1) | Removes all jobs from all printers                               | [Help](Docs/remove-print-jobs.ps1.md)   |
+| [restart-network-adapters.ps1](Scripts/restart-network-adapters.ps1) | Restarts all local network adapters                | [Help](Docs/restart-network-adapters.ps1.md)|
+| [upgrade-ubuntu.ps1](Scripts/upgrade-ubuntu.ps1)     | Upgrades Ubuntu Linux to the latest (LTS) release                  | [Help](Docs/upgrade-ubuntu.ps1.md)      |
+| [wakeup.ps1](Scripts/wakeup.ps1)                     | Sends a magic packet a computer to wake him up                     | [Help](Docs/wakeup.ps1.md)              |
 
 💻 Scripts for the Desktop
 ---------------------------
