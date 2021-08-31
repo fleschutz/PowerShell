@@ -12,17 +12,17 @@
 #>
 
 try {
-	"⚠️ Make sure your router does not block port 4001 (TCP/UDP) for IPv4/v6!"
-	""
+	$StopWatch = [system.diagnostics.stopwatch]::startNew()
 
-	"Step 1/5: searching for ipfs executable..."
+	""
+	"Step 1/5: Searching for IPFS executable..."
 	$Result = (ipfs --version)
 	if ($lastExitCode -ne "0") { throw "Can't execute 'ipfs' - make sure IPFS is installed and available" }
-
-	"Step 2/5: initializing..."
+	""
+	"Step 2/5: Initializing IPFS..."
 	& ipfs init --profile server
-
-	"Step 3/5: configuring..."
+	""
+	"Step 3/5: Configuring IPFS..."
 	& ipfs config Addresses.API /ip4/0.0.0.0/tcp/5001
 	if ($lastExitCode -ne "0") { throw "'ipfs config Addresses.API' failed" }
 
@@ -30,23 +30,23 @@ try {
 	if ($lastExitCode -ne "0") { throw "'ipfs config Addresses.Gateway' failed" }
 
 	$Hostname = $(hostname)
-	& ipfs config --json API.HTTPHeaders.Access-Control-Allow-Origin '[\"http://raspi:5001\", \"http://localhost:3000\", \"http://127.0.0.1:5001\", \"https://webui.ipfs.io\"]'
+	& ipfs config --json API.HTTPHeaders.Access-Control-Allow-Origin '[\"http://pi:5001\", \"http://localhost:3000\", \"http://127.0.0.1:5001\", \"https://webui.ipfs.io\"]'
 	if ($lastExitCode -ne "0") { throw "'ipfs config Access-Control-Allow-Origin' failed" }
 
 	& ipfs config --json API.HTTPHeaders.Access-Control-Allow-Methods '[\"PUT\", \"POST\"]'
 	if ($lastExitCode -ne "0") { throw "'ipfs config Access-Control-Allow-Methods' failed" }
-
-	"Step 4/5: increasing UDP receive buffer size..."
-
+	""
+	"Step 4/5: Increasing UDP receive buffer size..."
 	& sudo sysctl -w net.core.rmem_max=2500000
 	if ($lastExitCode -ne "0") { throw "'sysctl' failed" }
-
-	"Step 5/5: starting daemon..."
-
+	""
+	"Step 5/5: Starting IPFS daemon..."
 #	Start-Process nohup 'ipfs daemon'
 	Start-Process nohup -ArgumentList 'ipfs','daemon' -RedirectStandardOutput "$HOME/console.out" -RedirectStandardError "$HOME/console.err"
 
-	"✔️  Done."
+	[int]$Elapsed = $StopWatch.Elapsed.TotalSeconds
+	"✔️  started IPFS server in $Elapsed sec"
+	"⚠️ Make sure your router does not block port 4001 (TCP & UDP for IPv4 & IPv6)!"
 	exit 0
 } catch {
 	write-error "⚠️ Error in line $($_.InvocationInfo.ScriptLineNumber): $($Error[0])"
