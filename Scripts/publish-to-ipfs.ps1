@@ -18,25 +18,29 @@ try {
 
 	$StopWatch = [system.diagnostics.stopwatch]::startNew()
 
+	""
+	"Step 1/3: Searching for IPFS executable..."
 	& ipfs --version
 	if ($lastExitCode -ne "0") { throw "Can't execute 'ipfs' - make sure IPFS is installed and available" }
 
 	if (test-path "$Files" -pathType container) {
-		"Publishing folder $Files/ to IPFS..."
+		""
+		"Step 2/3: Publishing folder $Files/ to IPFS..."
 		[int]$Count = 1
 		& ipfs add -r "$Files" > $HashList
 
-		echo "Calculating digital forensics hashes to $DF_HASHES ..."
+		""
+		echo "Step 3/3: Calculating digital forensics hashes to $DF_HASHES ..."
 		& nice hashdeep -c md5,sha1,sha256 -r -d -l -j 1 "$Files" > $DF_Hashes
 	} else {
 		$FileList = (get-childItem "$Files")
 		[int]$Count = $FileList.Count
 		foreach ($File in $FileList) {
 			if (test-path "$Files" -pathType container) {
-				"Publishing folder $File/ to IPFS..."
+				"Step 2/3: Publishing folder $File/ to IPFS..."
 				& ipfs add -r "$File" >> $HashList
 			} else {
-				"Publishing file $File to IPFS..."
+				"Step 2/3: Publishing file $File to IPFS..."
 				& ipfs add "$File" >> $HashList
 			}
 		}
