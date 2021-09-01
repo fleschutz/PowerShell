@@ -1,8 +1,9 @@
-﻿<#
+<#
 .SYNOPSIS
 	clear-recycle-bin.ps1 
 .DESCRIPTION
-	Removes the content of the recycle bin folder (can not be undo).
+	Removes the content of the recycle bin folder.
+	NOTE: can not be undo!
 .EXAMPLE
 	PS> .\clear-recycle-bin.ps1 
 .NOTES
@@ -13,7 +14,7 @@
 
 try {
 	Clear-RecycleBin -Confirm:$false
-	"✔️ recycle bin have been emptied"
+	"✔️ cleared recycle bin"
 	exit 0
 } catch {
 	write-error "⚠️ Error in line $($_.InvocationInfo.ScriptLineNumber): $($Error[0])"
