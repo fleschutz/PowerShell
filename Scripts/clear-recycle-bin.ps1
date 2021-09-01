@@ -1,4 +1,4 @@
-<#
+﻿<#
 .SYNOPSIS
 	clear-recycle-bin.ps1 
 .DESCRIPTION
@@ -14,6 +14,8 @@
 
 try {
 	Clear-RecycleBin -Confirm:$false
+	if ($lastExitCode -ne "0") { throw "'Clear-RecycleBin' failed" }
+
 	"✔️ cleared recycle bin"
 	exit 0
 } catch {
