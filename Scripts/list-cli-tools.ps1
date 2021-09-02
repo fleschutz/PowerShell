@@ -146,7 +146,7 @@ function ListTools {
 	CheckFor whoami "--version"
 	CheckFor wput	"--version"
 	CheckFor write	""
-	CheckFor wsl	""
+	CheckFor wsl	"--version"
 	CheckFor xcopy	"--version"
 	CheckFor yes	"--version"
 	CheckFor zip	"--version"
