@@ -184,7 +184,7 @@ Mega Collection of PowerShell Scripts
 | [convert-ps2bat.ps1](Scripts/convert-ps2bat.ps1)       | Converts a PowerShell script to a .BAT file                        | [Help](Docs/convert-ps2bat.ps1.md)    |
 | [convert-ps2md.ps1](Scripts/convert-ps2md.ps1)         | Converts the comment-based help of a PowerShell script to Markdown | [Help](Docs/convert-ps2md.ps1.md)     |
 | [convert-sql2csv.ps1](Scripts/convert-sql2csv.ps1)     | Converts a SQL database table to a .CSV file                       | [Help](Docs/convert-sql2csv.ps1.md)   |
-| [convert-txt2wav.ps1](Scripts/convert-txt2wav.ps1)     | Converts a text file to a .WAV audio file                          | [Help](Docs/convert-txt2wav.ps1.md)   |
+| [convert-txt2wav.ps1](Scripts/convert-txt2wav.ps1)     | Converts text to a .WAV audio file                                 | [Help](Docs/convert-txt2wav.ps1.md)   |
 
 📝 Scripts for Git
 -------------------
