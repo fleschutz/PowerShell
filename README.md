@@ -93,32 +93,32 @@ Mega Collection of PowerShell Scripts
 
 | Script                                               | Description                                                        | Help                                    |
 | ---------------------------------------------------- | ------------------------------------------------------------------ | --------------------------------------- |
-| [close-calculator.ps1](Scripts/close-calculator.ps1) | Closes the calculator program gracefully
-| [close-chrome.ps1](Scripts/close-chrome.ps1)         | Closes Google Chrome gracefully
-| [close-cortana.ps1](Scripts/close-cortana.ps1)       | Closes Cortana gracefully
-| [close-edge.ps1](Scripts/close-edge.ps1)             | Closes Microsoft Edge gracefully
-| [close-file-explorer.ps1](Scripts/close-file-explorer.ps1) | Closes Microsoft File Explorer gracefully
-| [close-firefox.ps1](Scripts/close-firefox.ps1)       | Closes the Firefox Web browser gracefully
-| [close-program.ps1](Scripts/close-program.ps1)       | Closes the given program gracefully
-| [close-netflix.ps1](Scripts/close-netflix.ps1)       | Closes Netflix gracefully
-| [close-onedrive.ps1](Scripts/close-onedrive.ps1)     | Closes Microsoft OneDrive gracefully
-| [close-system-settings.ps1](Scripts/close-system-settings.ps1) | Closes the System Settings gracefully
-| [close-thunderbird.ps1](Scripts/close-thunderbird.ps1) | Closes Mozilla Thunderbird gracefully
-| [close-vlc.ps1](Scripts/close-vlc.ps1)               | Closes the VLC media player gracefully
-| [close-windows-terminal.ps1](Scripts/close-windows-terminal.ps1) | Closes Windows Terminal gracefully
-| [enable-god-mode.ps1](Scripts/enable-god-mode.ps1)   | Enables the god mode (adds a new icon to the desktop)
-| [list-clipboard.ps1](Scripts/list-clipboard.ps1)     | Lists the contents of the clipboard
-| [new-email.ps1](Scripts/new-email.ps1)               | Starts the default email client to write a new email
-| [open-browser.ps1](Scripts/open-browser.ps1)         | Starts the default Web browser
-| [open-calculator.ps1](Scripts/open-calculator.ps1)   | Starts the calculator program
-| [open-email-client.ps1](Scripts/open-browser.ps1)    | Starts the default email client
-| [open-file-explorer.ps1](Scripts/open-file-explorer.ps1) | Starts the File Explorer
-| [open-netflix.ps1](Scripts/open-netflix.ps1)         | Starts the Netflix app
-| [open-onedrive.ps1](Scripts/open-onedrive.ps1)       | Opens the user's OneDrive folder 
-| [open-recycle-bin.ps1](Scripts/open-recycle-bin.ps1) | Starts the File Explorer with the recycle bin folder
-| [set-wallpaper.ps1](Scripts/set-wallpaper.ps1)       | Sets the given image as wallpaper
-| [take-screenshot.ps1](Scripts/take-screenshot.ps1)   | Takes a single screenshot
-| [take-screenshots.ps1](Scripts/take-screenshots.ps1) | Takes multiple screenshots (every minute by default)
+| [close-calculator.ps1](Scripts/close-calculator.ps1) | Closes the calculator program gracefully                           | [Help](Docs/close-calculator.ps1.md)    |
+| [close-chrome.ps1](Scripts/close-chrome.ps1)         | Closes Google Chrome gracefully                                    | [Help](Docs/close-chrome.ps1.md)        |
+| [close-cortana.ps1](Scripts/close-cortana.ps1)       | Closes Cortana gracefully                                          | [Help](Docs/close-cortana.ps1.md)       |
+| [close-edge.ps1](Scripts/close-edge.ps1)             | Closes Microsoft Edge gracefully                                   | [Help](Docs/close-edge.ps1.md)          |
+| [close-file-explorer.ps1](Scripts/close-file-explorer.ps1) | Closes Microsoft File Explorer gracefully                    | [Help](Docs/close-file-explorer.ps1.md) |
+| [close-firefox.ps1](Scripts/close-firefox.ps1)       | Closes the Firefox Web browser gracefully                          | [Help](Docs/close-firefox.ps1.md)       |
+| [close-program.ps1](Scripts/close-program.ps1)       | Closes the given program gracefully                                | [Help](Docs/close-program.ps1.md)       |
+| [close-netflix.ps1](Scripts/close-netflix.ps1)       | Closes Netflix gracefully                                          | [Help](Docs/close-netflix.ps1.md)       |
+| [close-onedrive.ps1](Scripts/close-onedrive.ps1)     | Closes Microsoft OneDrive gracefully                               | [Help](Docs/close-onedrive.ps1.md)      |
+| [close-system-settings.ps1](Scripts/close-system-settings.ps1) | Closes the System Settings gracefully                    | [Help](Docs/close-system-settings.ps1.md)|
+| [close-thunderbird.ps1](Scripts/close-thunderbird.ps1) | Closes Mozilla Thunderbird gracefully                            | [Help](Docs/close-thunderbird.ps1.md)   |
+| [close-vlc.ps1](Scripts/close-vlc.ps1)               | Closes the VLC media player gracefully                             | [Help](Docs/close-vlc.ps1.md)           |
+| [close-windows-terminal.ps1](Scripts/close-windows-terminal.ps1) | Closes Windows Terminal gracefully                     | [Help](Docs/close-windows-terminal.ps1.md)|
+| [enable-god-mode.ps1](Scripts/enable-god-mode.ps1)   | Enables the god mode (adds a new icon to the desktop)              | [Help](Docs/enable-god-mode.ps1.md)     |
+| [list-clipboard.ps1](Scripts/list-clipboard.ps1)     | Lists the contents of the clipboard                                | [Help](Docs/list-clipboard.ps1.md)      |
+| [new-email.ps1](Scripts/new-email.ps1)               | Starts the default email client to write a new email               | [Help](Docs/new-email.ps1.md)           |
+| [open-browser.ps1](Scripts/open-browser.ps1)         | Starts the default Web browser                                     | [Help](Docs/open-browser.ps1.md)        |
+| [open-calculator.ps1](Scripts/open-calculator.ps1)   | Starts the calculator program                                      | [Help](Docs/open-calculator.ps1.md)     |
+| [open-email-client.ps1](Scripts/open-browser.ps1)    | Starts the default email client                                    | [Help](Docs/open-email-client.ps1.md)   |
+| [open-file-explorer.ps1](Scripts/open-file-explorer.ps1) | Starts the File Explorer                                       | [Help](Docs/open-file-explorer.ps1.md)  |
+| [open-netflix.ps1](Scripts/open-netflix.ps1)         | Starts the Netflix app                                             | [Help](Docs/open-netflix.ps1.md)        |
+| [open-onedrive.ps1](Scripts/open-onedrive.ps1)       | Opens the user's OneDrive folder                                   | [Help](Docs/open-onedrive.ps1.md)       |
+| [open-recycle-bin.ps1](Scripts/open-recycle-bin.ps1) | Starts the File Explorer with the recycle bin folder               | [Help](Docs/open-recycle-bin.ps1.md)    |
+| [set-wallpaper.ps1](Scripts/set-wallpaper.ps1)       | Sets the given image as wallpaper                                  | [Help](Docs/set-wallpaper.ps1.md)       |
+| [take-screenshot.ps1](Scripts/take-screenshot.ps1)   | Takes a single screenshot                                          | [Help](Docs/take-screenshot.ps1.md)     |
+| [take-screenshots.ps1](Scripts/take-screenshots.ps1) | Takes multiple screenshots (every minute by default)               | [Help](Docs/take-screenshots.ps1.md)    |
 
 📁 Scripts for Files & Folders 
 -------------------------------
