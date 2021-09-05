@@ -236,72 +236,72 @@ Mega Collection of PowerShell Scripts
 
 | Script                                               | Description                                                        | Help                                    |
 | ---------------------------------------------------- | ------------------------------------------------------------------ | --------------------------------------- |
-| [add-memo.ps1](Scripts/add-memo.ps1)                 | adds the given memo text to $HOME/Memos.csv                        | [Help](Docs/wakeup.ps1.md)              |
-| [check-ipv4-address.ps1](Scripts/check-ipv4-address.ps1)| checks the given IPv4 address for validity                      | [Help](Docs/wakeup.ps1.md)              |
-| [check-ipv6-address.ps1](Scripts/check-ipv6-address.ps1)| checks the given IPv6 address for validity                      | [Help](Docs/wakeup.ps1.md)              |
-| [check-mac-address.ps1](Scripts/check-mac-address.ps1)| checks the given MAC address for validity                         | [Help](Docs/wakeup.ps1.md)              |
-| [check-subnet-mask.ps1](Scripts/check-subnet-mask.ps1)| checks the given subnet mask for validity                         | [Help](Docs/wakeup.ps1.md)              |
-| [check-weather.ps1](Scripts/check-weather.ps1)       | checks the current weather for critical values                     | [Help](Docs/wakeup.ps1.md)              |
-| [display-time.ps1](Scripts/display-time.ps1)         | displays the current time for 10 seconds by default                | [Help](Docs/wakeup.ps1.md)              |
-| [generate-qrcode.ps1](Scripts/generate-qrcode.ps1)   | generates a QR code                                                | [Help](Docs/wakeup.ps1.md)              |
-| [list-anagrams.ps1](Scripts/list-anagrams.ps1)       | lists all anagrams of the given word                               | [Help](Docs/wakeup.ps1.md)              |
-| [list-city-weather.ps1](Scripts/list-city-weather.ps1)| lists the current weather of cities worldwide (west to east)      | [Help](Docs/wakeup.ps1.md)              |
-| [list-countries.ps1](Scripts/list-countries.ps1)     | lists details of all countries                                     | [Help](Docs/wakeup.ps1.md)              |
-| [list-credits.ps1](Scripts/list-credits.ps1)         | shows the credits                                                  | [Help](Docs/wakeup.ps1.md)              |
-| [list-crypto-rates.ps1](Scripts/list-crypto-rates.ps1)| lists the current crypto exchange rates                           | [Help](Docs/wakeup.ps1.md)              |
-| [list-environment-variables.ps1](Scripts/list-environment-variables.ps1)| lists all environment variables                 | [Help](Docs/wakeup.ps1.md)              |
-| [list-emojis.ps1](Scripts/list-emojis.ps1)           | lists the emojis of Unicode 13.0                                   | [Help](Docs/wakeup.ps1.md)              |
-| [list-fritzbox-calls.ps1](Scripts/list-fritzbox-calls.ps1)| lists the FRITZ!Box calls                                     | [Help](Docs/wakeup.ps1.md)              |
-| [list-fritzbox-devices.ps1](Scripts/list-fritzbox-devices.ps1)| lists FRITZ!Box's known devices                           | [Help](Docs/wakeup.ps1.md)              |
-| [list-earthquakes.ps1](Scripts/list-earthquakes.ps1) | lists earthquakes with magnitude >= 6.0 for the last 30 days       | [Help](Docs/wakeup.ps1.md)              |
-| [list-exchange-rates.ps1](Scripts/list-exchange-rates.ps1)| lists the current exchange rates for the given currency       | [Help](Docs/wakeup.ps1.md)              |
-| [list-memos.ps1](Scripts/list-memos.ps1)             | lists the memos at $HOME/Memos.csv                                 | [Help](Docs/wakeup.ps1.md)              |
-| [list-mysql-tables.ps1](Scripts/list-mysql-tables.ps1)| lists the MySQL server tables                                     | [Help](Docs/wakeup.ps1.md)              |
-| [list-news.ps1](Scripts/list-news.ps1)               | lists the latest news                                              | [Help](Docs/wakeup.ps1.md)              |
-| [list-os-releases.ps1](Scripts/list-os-releases.ps1) | lists operating system releases and download URL                   | [Help](Docs/wakeup.ps1.md)              |
-| [list-os-updates.ps1](Scripts/list-os-updates.ps1)   | lists operating system updates                                     | [Help](Docs/wakeup.ps1.md)              |
-| [list-passwords.ps1](Scripts/list-passwords.ps1)     | prints a list of random passwords                                  | [Help](Docs/wakeup.ps1.md)              |
-| [list-pins.ps1](Scripts/list-pins.ps1)               | prints a list of random PIN's                                      | [Help](Docs/wakeup.ps1.md)              |
-| [list-sql-tables.ps1](Scripts/list-sql-tables.ps1)   | lists the SQL server tables                                        | [Help](Docs/wakeup.ps1.md)              |
-| [list-tiobe-index.ps1](Scripts/list-tiobe-index.ps1) | lists the TIOBE index of top programming languages                 | [Help](Docs/wakeup.ps1.md)              |
-| [list-weather.ps1](Scripts/list-weather.ps1)         | lists the hourly weather                                           | [Help](Docs/wakeup.ps1.md)              |
-| [locate-city.ps1](Scripts/locate-city.ps1)           | prints the geographic location of the given city                   | [Help](Docs/wakeup.ps1.md)              |
-| [locate-ipaddress.ps1](Scripts/locate-ipaddress.ps1) | prints the geographic location of the given IP address             | [Help](Docs/wakeup.ps1.md)              |
-| [locate-zip-code.ps1](Scripts/locate-zip-code.ps1)   | prints the geographic location of the given zip-code               | [Help](Docs/wakeup.ps1.md)              |
-| [moon.ps1](Scripts/moon.ps1)                         | prints the current moon phase                                      | [Help](Docs/wakeup.ps1.md)              |
-| [reboot-fritzbox.ps1](Scripts/reboot-fritzbox.ps1)   | reboots the FRITZ!box device                                       | [Help](Docs/wakeup.ps1.md)              |
-| [scan-ports.ps1](Scripts/scan-ports.ps1)             | scans the network for open/closed ports                            | [Help](Docs/wakeup.ps1.md)              |
-| [send-email.ps1](Scripts/send-email.ps1)             | sends an email message                                             | [Help](Docs/wakeup.ps1.md)              |
-| [send-tcp.ps1](Scripts/send-udp.ps1)                 | sends a TCP message to the given IP address and port               | [Help](Docs/wakeup.ps1.md)              |
-| [send-udp.ps1](Scripts/send-udp.ps1)                 | sends a UDP datagram message to the given IP address and port      | [Help](Docs/wakeup.ps1.md)              |
-| [set-timer.ps1](Scripts/set-timer.ps1)               | sets a timer for a countdown                                       | [Help](Docs/wakeup.ps1.md)              |
-| [simulate-matrix.ps1](Scripts/simulate-matrix.ps1)   | simulates the Matrix (fun)                                         | [Help](Docs/wakeup.ps1.md)              |
-| [simulate-presence.ps1](Scripts/simulate-presence.ps1)| simulates the human presence against burglars                     | [Help](Docs/wakeup.ps1.md)              |
-| [start-calibre-server.ps1](Scripts/start-calibre-server.ps1)| starts a local Calibre server                               | [Help](Docs/wakeup.ps1.md)              |
-| [start-ipfs-server.ps1](Scripts/start-ipfs-server.ps1)| starts a local IPFS server                                        | [Help](Docs/wakeup.ps1.md)              |
-| [switch-shelly1.ps1](Scripts/switch-shelly1.ps1)     | switches a Shelly1 device in the local network                     | [Help](Docs/wakeup.ps1.md)              |
-| [translate-file.ps1](Scripts/translate-file.ps1)     | translates the given text file into other languages                | [Help](Docs/wakeup.ps1.md)              |
-| [translate-files.ps1](Scripts/translate-files.ps1)   | translates the given text files into any supported language        | [Help](Docs/wakeup.ps1.md)              |
-| [translate-text.ps1](Scripts/translate-text.ps1)     | translates the given text in English into other languages          | [Help](Docs/wakeup.ps1.md)              |
-| [weather.ps1](Scripts/weather.ps1)                   | prints the current weather forecast                                | [Help](Docs/wakeup.ps1.md)              |
-| [weather-report.ps1](Scripts/weather-report.ps1)     | prints the local weather report                                    | [Help](Docs/wakeup.ps1.md)              |
-| [what-is.ps1](Scripts/what-is.ps1)                   | prints a description of the given abbreviation                     | [Help](Docs/wakeup.ps1.md)              |
-| [write-animated.ps1](Scripts/write-animated.ps1)     | writes animated text                                               | [Help](Docs/wakeup.ps1.md)              |
-| [write-big.ps1](Scripts/write-big.ps1)               | writes the given text in big letters                               | [Help](Docs/wakeup.ps1.md)              |
-| [write-blue.ps1](Scripts/write-blue.ps1)             | writes the given text in a blue foreground color                   | [Help](Docs/wakeup.ps1.md)              |
-| [write-braille.ps1](Scripts/write-braille.ps1)       | writes the given text in Braille                                   | [Help](Docs/wakeup.ps1.md)              |
-| [write-green.ps1](Scripts/write-green.ps1)           | writes the given text in a green foreground color                  | [Help](Docs/wakeup.ps1.md)              |
-| [write-joke.ps1](Scripts/write-joke.ps1)             | writes a random Juck Norris joke                                   | [Help](Docs/wakeup.ps1.md)              |
-| [write-lowercase.ps1](Scripts/write-lowercase.ps1)   | writes the given text in lowercase letters                         | [Help](Docs/wakeup.ps1.md)              |
-| [write-marquee.ps1](Scripts/write-marquee.ps1)       | writes the given text as marquee                                   | [Help](Docs/wakeup.ps1.md)              |
-| [write-morse-code.ps1](Scripts/write-morse-code.ps1) | writes the given text in Morse code                                | [Help](Docs/wakeup.ps1.md)              |
-| [write-motd.ps1](Scripts/write-motd.ps1)             | writes the message of the day (MOTD)                               | [Help](Docs/wakeup.ps1.md)              |
-| [write-quote.ps1](Scripts/write-quote.ps1)           | writes a random quote                                              | [Help](Docs/wakeup.ps1.md)              |
-| [write-red.ps1](Scripts/write-red.ps1)               | writes the given text in a red foreground color                    | [Help](Docs/wakeup.ps1.md)              |
-| [write-rot13.ps1](Scripts/write-rot13.ps1)           | encodes or decodes the given text with ROT13                       | [Help](Docs/wakeup.ps1.md)              |
-| [write-typewriter.ps1](Scripts/write-typewriter.ps1) | writes the given text with the typewriter effect                   | [Help](Docs/wakeup.ps1.md)              |
-| [write-uppercase.ps1](Scripts/write-uppercase.ps1)   | writes the given text in uppercase letters                         | [Help](Docs/wakeup.ps1.md)              |
-| [write-vertical.ps1](Scripts/write-vertical.ps1)     | writes the given text in vertical direction                        | [Help](Docs/wakeup.ps1.md)              |
+| [add-memo.ps1](Scripts/add-memo.ps1)                 | Adds the given memo text to $HOME/Memos.csv                        | [Help](Docs/wakeup.ps1.md)              |
+| [check-ipv4-address.ps1](Scripts/check-ipv4-address.ps1)| Checks the given IPv4 address for validity                      | [Help](Docs/wakeup.ps1.md)              |
+| [check-ipv6-address.ps1](Scripts/check-ipv6-address.ps1)| Checks the given IPv6 address for validity                      | [Help](Docs/wakeup.ps1.md)              |
+| [check-mac-address.ps1](Scripts/check-mac-address.ps1)| Checks the given MAC address for validity                         | [Help](Docs/wakeup.ps1.md)              |
+| [check-subnet-mask.ps1](Scripts/check-subnet-mask.ps1)| Checks the given subnet mask for validity                         | [Help](Docs/wakeup.ps1.md)              |
+| [check-weather.ps1](Scripts/check-weather.ps1)       | Checks the current weather for critical values                     | [Help](Docs/wakeup.ps1.md)              |
+| [display-time.ps1](Scripts/display-time.ps1)         | Displays the current time for 10 seconds by default                | [Help](Docs/wakeup.ps1.md)              |
+| [list-anagrams.ps1](Scripts/list-anagrams.ps1)       | Lists all anagrams of the given word                               | [Help](Docs/wakeup.ps1.md)              |
+| [list-city-weather.ps1](Scripts/list-city-weather.ps1)| Lists the current weather of cities worldwide (west to east)      | [Help](Docs/wakeup.ps1.md)              |
+| [list-countries.ps1](Scripts/list-countries.ps1)     | Lists details of all countries                                     | [Help](Docs/wakeup.ps1.md)              |
+| [list-credits.ps1](Scripts/list-credits.ps1)         | Shows the credits                                                  | [Help](Docs/wakeup.ps1.md)              |
+| [list-crypto-rates.ps1](Scripts/list-crypto-rates.ps1)| Lists the current crypto exchange rates                           | [Help](Docs/wakeup.ps1.md)              |
+| [list-environment-variables.ps1](Scripts/list-environment-variables.ps1)| Lists all environment variables                 | [Help](Docs/wakeup.ps1.md)              |
+| [list-emojis.ps1](Scripts/list-emojis.ps1)           | Lists the emojis of Unicode 13.0                                   | [Help](Docs/wakeup.ps1.md)              |
+| [list-fritzbox-calls.ps1](Scripts/list-fritzbox-calls.ps1)| Lists the FRITZ!Box calls                                     | [Help](Docs/wakeup.ps1.md)              |
+| [list-fritzbox-devices.ps1](Scripts/list-fritzbox-devices.ps1)| Lists FRITZ!Box's known devices                           | [Help](Docs/wakeup.ps1.md)              |
+| [list-earthquakes.ps1](Scripts/list-earthquakes.ps1) | Lists earthquakes with magnitude >= 6.0 for the last 30 days       | [Help](Docs/wakeup.ps1.md)              |
+| [list-exchange-rates.ps1](Scripts/list-exchange-rates.ps1)| Lists the current exchange rates for the given currency       | [Help](Docs/wakeup.ps1.md)              |
+| [list-memos.ps1](Scripts/list-memos.ps1)             | Lists the memos at $HOME/Memos.csv                                 | [Help](Docs/wakeup.ps1.md)              |
+| [list-mysql-tables.ps1](Scripts/list-mysql-tables.ps1)| Lists the MySQL server tables                                     | [Help](Docs/wakeup.ps1.md)              |
+| [list-news.ps1](Scripts/list-news.ps1)               | Lists the latest news                                              | [Help](Docs/wakeup.ps1.md)              |
+| [list-os-releases.ps1](Scripts/list-os-releases.ps1) | Lists operating system releases and download URL                   | [Help](Docs/wakeup.ps1.md)              |
+| [list-os-updates.ps1](Scripts/list-os-updates.ps1)   | Lists operating system updates                                     | [Help](Docs/wakeup.ps1.md)              |
+| [list-passwords.ps1](Scripts/list-passwords.ps1)     | Prints a list of random passwords                                  | [Help](Docs/wakeup.ps1.md)              |
+| [list-pins.ps1](Scripts/list-pins.ps1)               | Prints a list of random PIN's                                      | [Help](Docs/wakeup.ps1.md)              |
+| [list-sql-tables.ps1](Scripts/list-sql-tables.ps1)   | Lists the SQL server tables                                        | [Help](Docs/wakeup.ps1.md)              |
+| [list-tiobe-index.ps1](Scripts/list-tiobe-index.ps1) | Lists the TIOBE index of top programming languages                 | [Help](Docs/wakeup.ps1.md)              |
+| [list-weather.ps1](Scripts/list-weather.ps1)         | Lists the hourly weather                                           | [Help](Docs/wakeup.ps1.md)              |
+| [locate-city.ps1](Scripts/locate-city.ps1)           | Prints the geographic location of the given city                   | [Help](Docs/wakeup.ps1.md)              |
+| [locate-ipaddress.ps1](Scripts/locate-ipaddress.ps1) | Prints the geographic location of the given IP address             | [Help](Docs/wakeup.ps1.md)              |
+| [locate-zip-code.ps1](Scripts/locate-zip-code.ps1)   | Prints the geographic location of the given zip-code               | [Help](Docs/wakeup.ps1.md)              |
+| [moon.ps1](Scripts/moon.ps1)                         | Prints the current moon phase                                      | [Help](Docs/wakeup.ps1.md)              |
+| [new-qrcode.ps1](Scripts/new-qrcode.ps1)             | Generates a new QR code image file                                 | [Help](Docs/new-qrcode.ps1.md)              |
+| [reboot-fritzbox.ps1](Scripts/reboot-fritzbox.ps1)   | Reboots the FRITZ!box device                                       | [Help](Docs/wakeup.ps1.md)              |
+| [scan-ports.ps1](Scripts/scan-ports.ps1)             | Scans the network for open/closed ports                            | [Help](Docs/wakeup.ps1.md)              |
+| [send-email.ps1](Scripts/send-email.ps1)             | Sends an email message                                             | [Help](Docs/wakeup.ps1.md)              |
+| [send-tcp.ps1](Scripts/send-udp.ps1)                 | Sends a TCP message to the given IP address and port               | [Help](Docs/wakeup.ps1.md)              |
+| [send-udp.ps1](Scripts/send-udp.ps1)                 | Sends a UDP datagram message to the given IP address and port      | [Help](Docs/wakeup.ps1.md)              |
+| [set-timer.ps1](Scripts/set-timer.ps1)               | Sets a timer for a countdown                                       | [Help](Docs/wakeup.ps1.md)              |
+| [simulate-matrix.ps1](Scripts/simulate-matrix.ps1)   | Simulates the Matrix (fun)                                         | [Help](Docs/wakeup.ps1.md)              |
+| [simulate-presence.ps1](Scripts/simulate-presence.ps1)| Simulates the human presence against burglars                     | [Help](Docs/wakeup.ps1.md)              |
+| [start-calibre-server.ps1](Scripts/start-calibre-server.ps1)| Starts a local Calibre server                               | [Help](Docs/wakeup.ps1.md)              |
+| [start-ipfs-server.ps1](Scripts/start-ipfs-server.ps1)| Starts a local IPFS server                                        | [Help](Docs/wakeup.ps1.md)              |
+| [switch-shelly1.ps1](Scripts/switch-shelly1.ps1)     | Switches a Shelly1 device in the local network                     | [Help](Docs/wakeup.ps1.md)              |
+| [translate-file.ps1](Scripts/translate-file.ps1)     | Translates the given text file into other languages                | [Help](Docs/wakeup.ps1.md)              |
+| [translate-files.ps1](Scripts/translate-files.ps1)   | Translates the given text files into any supported language        | [Help](Docs/wakeup.ps1.md)              |
+| [translate-text.ps1](Scripts/translate-text.ps1)     | Translates the given text in English into other languages          | [Help](Docs/wakeup.ps1.md)              |
+| [weather.ps1](Scripts/weather.ps1)                   | Prints the current weather forecast                                | [Help](Docs/wakeup.ps1.md)              |
+| [weather-report.ps1](Scripts/weather-report.ps1)     | Prints the local weather report                                    | [Help](Docs/wakeup.ps1.md)              |
+| [what-is.ps1](Scripts/what-is.ps1)                   | Prints a description of the given abbreviation                     | [Help](Docs/wakeup.ps1.md)              |
+| [write-animated.ps1](Scripts/write-animated.ps1)     | Writes animated text                                               | [Help](Docs/wakeup.ps1.md)              |
+| [write-big.ps1](Scripts/write-big.ps1)               | Writes the given text in big letters                               | [Help](Docs/wakeup.ps1.md)              |
+| [write-blue.ps1](Scripts/write-blue.ps1)             | Writes the given text in a blue foreground color                   | [Help](Docs/wakeup.ps1.md)              |
+| [write-braille.ps1](Scripts/write-braille.ps1)       | Writes the given text in Braille                                   | [Help](Docs/wakeup.ps1.md)              |
+| [write-green.ps1](Scripts/write-green.ps1)           | Writes the given text in a green foreground color                  | [Help](Docs/wakeup.ps1.md)              |
+| [write-joke.ps1](Scripts/write-joke.ps1)             | Writes a random Juck Norris joke                                   | [Help](Docs/wakeup.ps1.md)              |
+| [write-lowercase.ps1](Scripts/write-lowercase.ps1)   | Writes the given text in lowercase letters                         | [Help](Docs/wakeup.ps1.md)              |
+| [write-marquee.ps1](Scripts/write-marquee.ps1)       | Writes the given text as marquee                                   | [Help](Docs/wakeup.ps1.md)              |
+| [write-morse-code.ps1](Scripts/write-morse-code.ps1) | Writes the given text in Morse code                                | [Help](Docs/wakeup.ps1.md)              |
+| [write-motd.ps1](Scripts/write-motd.ps1)             | Writes the message of the day (MOTD)                               | [Help](Docs/wakeup.ps1.md)              |
+| [write-quote.ps1](Scripts/write-quote.ps1)           | Writes a random quote                                              | [Help](Docs/wakeup.ps1.md)              |
+| [write-red.ps1](Scripts/write-red.ps1)               | Writes the given text in a red foreground color                    | [Help](Docs/wakeup.ps1.md)              |
+| [write-rot13.ps1](Scripts/write-rot13.ps1)           | Encodes or decodes the given text with ROT13                       | [Help](Docs/wakeup.ps1.md)              |
+| [write-typewriter.ps1](Scripts/write-typewriter.ps1) | Writes the given text with the typewriter effect                   | [Help](Docs/wakeup.ps1.md)              |
+| [write-uppercase.ps1](Scripts/write-uppercase.ps1)   | Writes the given text in uppercase letters                         | [Help](Docs/wakeup.ps1.md)              |
+| [write-vertical.ps1](Scripts/write-vertical.ps1)     | Writes the given text in vertical direction                        | [Help](Docs/wakeup.ps1.md)              |
 
 Feedback
 --------

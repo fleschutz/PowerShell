@@ -1,10 +1,10 @@
 ﻿<#
 .SYNOPSIS
-	generate-qrcode.ps1 [<text>] [<image-size>]
+	new-qrcode.ps1 [<text>] [<image-size>]
 .DESCRIPTION
-	Generates a QR code image file.
+	Generates a new QR code image file.
 .EXAMPLE
-	PS> .\generate-qrcode.ps1
+	PS> .\new-qrcode.ps1 "Fasten seatbelt" 500x500
 .NOTES
 	Author: Markus Fleschutz · License: CC0
 .LINK
@@ -31,7 +31,7 @@ try {
 		"&color=" + $ForegroundColor + "&bgcolor=" + $BackgroundColor.Text + `
 		"&format=" + $FileFormat), $NewFile)
 
-	"✔️ wrote QR code to $NewFile"
+	"✔️ new QR code image file written to: $NewFile"
 	exit 0
 } catch {
 	write-error "⚠️ Error in line $($_.InvocationInfo.ScriptLineNumber): $($Error[0])"
