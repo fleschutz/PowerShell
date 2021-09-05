@@ -165,14 +165,14 @@ Mega Collection of PowerShell Scripts
 | [MD5.ps1](Scripts/MD5.ps1)                           | Prints the MD5 checksum of the given file                          | [Help](Docs/wakeup.ps1.md)              |
 | [new-shortcut.ps1](Scripts/new-shortcut.ps1)         | Creates a new shortcut                                             | [Help](Docs/wakeup.ps1.md)              |
 | [new-symlink.ps1](Scripts/new-symlink.ps1)           | Creates a new symbolic link                                        | [Help](Docs/wakeup.ps1.md)              |
+| [new-zipfile.ps1](Scripts/new-zipfile.ps1)           | Creates a new .zip file from a directory                           | [Help](Docs/wakeup.ps1.md)              |
 | [publish-to-ipfs.ps1](Scripts/publish-to-ipfs.ps1)   | Publishes the given files or directory to IPFS                     | [Help](Docs/wakeup.ps1.md)              |
 | [remove-empty-dirs.ps1](Scripts/remove-empty-dirs.ps1) | Removes empty subfolders within the given directory tree         | [Help](Docs/wakeup.ps1.md)              |
 | [search-filename.ps1](Scripts/search-filename.ps1)   | Searches the directory tree for filenames by given pattern         | [Help](Docs/wakeup.ps1.md)              |
 | [search-files.ps1](Scripts/search-files.ps1)         | Searches the given pattern in the given files                      | [Help](Docs/wakeup.ps1.md)              |
 | [SHA1.ps1](Scripts/SHA1.ps1)                         | Prints the SHA1 checksum of the given file                         | [Help](Docs/wakeup.ps1.md)              |
 | [SHA256.ps1](Scripts/SHA256.ps1)                     | Prints the SHA256 checksum of the given file                       | [Help](Docs/wakeup.ps1.md)              |
-| [upload-file.ps1](Scripts/zip-dir.ps1)               | Uploads the local file to the given FTP server                     | [Help](Docs/wakeup.ps1.md)              |
-| [zip-dir.ps1](Scripts/zip-dir.ps1)                   | Creates a .zip archive of the given directory                      | [Help](Docs/wakeup.ps1.md)              |
+| [upload-file.ps1](Scripts/upload-file.ps1)           | Uploads the local file to the given FTP server                     | [Help](Docs/wakeup.ps1.md)              |
 
 ♻️ Scripts to Convert Files
 ---------------------------

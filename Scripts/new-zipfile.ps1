@@ -1,10 +1,10 @@
 ﻿<#
 .SYNOPSIS
-	zip-dir.ps1 [<directory>]
+	new-zipfile.ps1 [<directory>]
 .DESCRIPTION
-	Creates a .zip archive of the given directory.
+	Creates a new .zip file from a directory.
 .EXAMPLE
-	PS> .\zip-dir.ps1 C:\Windows
+	PS> .\new-zipfile.ps1 C:\Windows
 .NOTES
 	Author: Markus Fleschutz · License: CC0
 .LINK
@@ -21,7 +21,7 @@ try {
 	compress-archive -path $directory -destinationPath $directory.zip
 
 	[int]$Elapsed = $StopWatch.Elapsed.TotalSeconds
-	"✔️ created zip archive: $($directory).zip in $Elapsed sec"
+	"✔️ created zip file $($directory).zip in $Elapsed sec"
 	exit 0
 } catch {
 	write-error "⚠️ Error in line $($_.InvocationInfo.ScriptLineNumber): $($Error[0])"

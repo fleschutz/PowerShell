@@ -179,6 +179,7 @@ new-script.ps1, creates a new PowerShell script
 new-shortcut.ps1, creates a new shortcut
 new-symlink.ps1, creates a new symbolic link
 new-tag.ps1, creates a new tag in a Git repository 
+new-zipfile.ps1, creates a new .zip file from a directory
 reboot.ps1, reboots the local computer (needs admin rights)
 reboot-fritzbox.ps1, reboots the FRITZ!box device
 remove-empty-dirs.ps1, removes empty subfolders within the given directory tree
@@ -248,4 +249,3 @@ write-rot13.ps1, encodes or decodes the given text with ROT13
 write-typewriter.ps1, writes the given text with the typewriter effect
 write-uppercase.ps1, writes the given text in uppercase letters
 write-vertical.ps1, writes the given text in vertical direction
-zip-dir.ps1, creates a .zip archive of the given directory
