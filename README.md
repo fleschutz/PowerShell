@@ -125,60 +125,60 @@ Mega Collection of PowerShell Scripts
 
 | Script                                               | Description                                                        | Help                                    |
 | ---------------------------------------------------- | ------------------------------------------------------------------ | --------------------------------------- |
-| [cd-desktop.ps1](Scripts/cd-desktop.ps1)             | Go to the user's desktop folder
-| [cd-docs.ps1](Scripts/cd-docs.ps1)                   | Go to the user's documents folder
-| [cd-downloads.ps1](Scripts/cd-downloads.ps1)         | Go to the user's downloads folder
-| [cd-dropbox.ps1](Scripts/cd-dropbox.ps1)             | Go to the user's Dropbox folder
-| [cd-home.ps1](Scripts/cd-home.ps1)                   | Go to the user's home folder
-| [cd-music.ps1](Scripts/cd-music.ps1)                 | Go to the user's music folder
-| [cd-onedrive.ps1](Scripts/cd-onedrive.ps1)           | Go to the user's OneDrive folder
-| [cd-pics.ps1](Scripts/cd-pics.ps1)                   | Go to the user's pictures folder
-| [cd-recycle-bin.ps1](Scripts/cd-recycle-bin.ps1)     | Go to the user's recycle bin folder
-| [cd-repos.ps1](Scripts/cd-repos.ps1)                 | Go to the user's Git repositories folder
-| [cd-root.ps1](Scripts/cd-root.ps1)                   | Go to the root directory (C:\ on Windows)
-| [cd-scripts.ps1](Scripts/cd-scripts.ps1)             | Go to the PowerShell Scripts folder
-| [cd-up.ps1](Scripts/cd-up.ps1)                       | Go one directory level up
-| [cd-up2.ps1](Scripts/cd-up2.ps1)                     | Go two directory levels up
-| [cd-up3.ps1](Scripts/cd-up3.ps1)                     | Go three directory levels up
-| [cd-up4.ps1](Scripts/cd-up4.ps1)                     | Go four directory levels up
-| [cd-videos.ps1](Scripts/cd-videos.ps1)               | Go to the user's videos folder
-| [check-symlinks.ps1](Scripts/check-symlinks.ps1)     | Checks every symlink in the given directory tree
-| [check-xml-file.ps1](Scripts/check-xml-file.ps1)     | Checks the given XML file for validity
-| [clear-recycle-bin.ps1](Scripts/clear-recycle-bin.ps1) | Removes the content of the recycle bin folder (can not be undo!)
-| [copy-photos-sorted.ps1](Scripts/copy-photos-sorted.ps1) | Copies all photos sorted by year and month 
-| [decrypt-file.ps1](Scripts/decrypt-file.ps1)         | Encrypts the given file
-| [download-dir.ps1](Scripts/download-dir.ps1)         | Downloads a directory tree from the given URL
-| [download-file.ps1](Scripts/download-file.ps1)       | Downloads a file from the given URL
-| [edit.ps1](Scripts/edit.ps1)                         | Edits the given file with the built-in text editor
-| [encrypt-file.ps1](Scripts/encrypt-file.ps1)         | Encrypts the given file
-| [inspect-exe.ps1](Scripts/inspect-exe.ps1)           | Prints basic information of the given executable file
-| [list-dir.ps1](Scripts/list-dir.ps1)                 | Lists the directory content (formatted in columns)
-| [list-dir-tree.ps1](Scripts/list-dir-tree.ps1)       | Lists the directory tree content
-| [list-empty-dirs.ps1](Scripts/list-empty-dirs.ps1)   | Lists empty subfolders within the given directory tree
-| [list-empty-files.ps1](Scripts/list-empty-files.ps1) | Lists empty files within the given directory tree
-| [list-files.ps1](Scripts/list-files.ps1)             | Lists all files in the given folder and also in every subfolder
-| [list-hidden-files.ps1](Scripts/list-hidden-files.ps1) | Lists hidden files within the given directory tree
-| [list-recycle-bin.ps1](Scripts/list-recycle-bin.ps1) | Lists the content of the recycle bin folder
-| [list-unused-files.ps1](Scripts/list-unused-files.ps1) | Lists unused files in a directory tree
-| [list-workdir.ps1](Scripts/list-workdir.ps1)         | Lists the current working directory
-| [make-install.ps1](Scripts/make-install.ps1)         | Installs built executables and libs to the installation directory
-| [MD5.ps1](Scripts/MD5.ps1)                           | Prints the MD5 checksum of the given file
-| [new-shortcut.ps1](Scripts/new-shortcut.ps1)         | Creates a new shortcut
-| [new-symlink.ps1](Scripts/new-symlink.ps1)           | Creates a new symbolic link
-| [publish-to-ipfs.ps1](Scripts/publish-to-ipfs.ps1)   | Publishes the given files or directory to IPFS
-| [remove-empty-dirs.ps1](Scripts/remove-empty-dirs.ps1) | Removes empty subfolders within the given directory tree
-| [search-filename.ps1](Scripts/search-filename.ps1)   | Searches the directory tree for filenames by given pattern 
-| [search-files.ps1](Scripts/search-files.ps1)         | Searches the given pattern in the given files
-| [SHA1.ps1](Scripts/SHA1.ps1)                         | Prints the SHA1 checksum of the given file
-| [SHA256.ps1](Scripts/SHA256.ps1)                     | Prints the SHA256 checksum of the given file
-| [upload-file.ps1](Scripts/zip-dir.ps1)               | Uploads the local file to the given FTP server
-| [zip-dir.ps1](Scripts/zip-dir.ps1)                   | Creates a .zip archive of the given directory
+| [cd-desktop.ps1](Scripts/cd-desktop.ps1)             | Go to the user's desktop folder                                    | [Help](Docs/wakeup.ps1.md)              |
+| [cd-docs.ps1](Scripts/cd-docs.ps1)                   | Go to the user's documents folder                                  | [Help](Docs/wakeup.ps1.md)              |
+| [cd-downloads.ps1](Scripts/cd-downloads.ps1)         | Go to the user's downloads folder                                  | [Help](Docs/wakeup.ps1.md)              |
+| [cd-dropbox.ps1](Scripts/cd-dropbox.ps1)             | Go to the user's Dropbox folder                                    | [Help](Docs/wakeup.ps1.md)              |
+| [cd-home.ps1](Scripts/cd-home.ps1)                   | Go to the user's home folder                                       | [Help](Docs/wakeup.ps1.md)              |
+| [cd-music.ps1](Scripts/cd-music.ps1)                 | Go to the user's music folder                                      | [Help](Docs/wakeup.ps1.md)              |  
+| [cd-onedrive.ps1](Scripts/cd-onedrive.ps1)           | Go to the user's OneDrive folder                                   | [Help](Docs/wakeup.ps1.md)              |
+| [cd-pics.ps1](Scripts/cd-pics.ps1)                   | Go to the user's pictures folder                                   | [Help](Docs/wakeup.ps1.md)              |
+| [cd-recycle-bin.ps1](Scripts/cd-recycle-bin.ps1)     | Go to the user's recycle bin folder                                | [Help](Docs/wakeup.ps1.md)              |
+| [cd-repos.ps1](Scripts/cd-repos.ps1)                 | Go to the user's Git repositories folder                           | [Help](Docs/wakeup.ps1.md)              |
+| [cd-root.ps1](Scripts/cd-root.ps1)                   | Go to the root directory (C:\ on Windows)                          | [Help](Docs/wakeup.ps1.md)              |
+| [cd-scripts.ps1](Scripts/cd-scripts.ps1)             | Go to the PowerShell Scripts folder                                | [Help](Docs/wakeup.ps1.md)              |
+| [cd-up.ps1](Scripts/cd-up.ps1)                       | Go one directory level up                                          | [Help](Docs/wakeup.ps1.md)              | 
+| [cd-up2.ps1](Scripts/cd-up2.ps1)                     | Go two directory levels up                                         | [Help](Docs/wakeup.ps1.md)              |
+| [cd-up3.ps1](Scripts/cd-up3.ps1)                     | Go three directory levels up                                       | [Help](Docs/wakeup.ps1.md)              |
+| [cd-up4.ps1](Scripts/cd-up4.ps1)                     | Go four directory levels up                                        | [Help](Docs/wakeup.ps1.md)              |
+| [cd-videos.ps1](Scripts/cd-videos.ps1)               | Go to the user's videos folder                                     | [Help](Docs/wakeup.ps1.md)              |
+| [check-symlinks.ps1](Scripts/check-symlinks.ps1)     | Checks every symlink in the given directory tree                   | [Help](Docs/wakeup.ps1.md)              |
+| [check-xml-file.ps1](Scripts/check-xml-file.ps1)     | Checks the given XML file for validity                             | [Help](Docs/wakeup.ps1.md)              |
+| [clear-recycle-bin.ps1](Scripts/clear-recycle-bin.ps1) | Removes the content of the recycle bin folder (can not be undo!) | [Help](Docs/wakeup.ps1.md)              |
+| [copy-photos-sorted.ps1](Scripts/copy-photos-sorted.ps1) | Copies all photos sorted by year and month                     | [Help](Docs/wakeup.ps1.md)              |
+| [decrypt-file.ps1](Scripts/decrypt-file.ps1)         | Encrypts the given file                                            | [Help](Docs/wakeup.ps1.md)              |
+| [download-dir.ps1](Scripts/download-dir.ps1)         | Downloads a directory tree from the given URL                      | [Help](Docs/wakeup.ps1.md)              |
+| [download-file.ps1](Scripts/download-file.ps1)       | Downloads a file from the given URL                                | [Help](Docs/wakeup.ps1.md)              |
+| [edit.ps1](Scripts/edit.ps1)                         | Edits the given file with the built-in text editor                 | [Help](Docs/wakeup.ps1.md)              |
+| [encrypt-file.ps1](Scripts/encrypt-file.ps1)         | Encrypts the given file                                            | [Help](Docs/wakeup.ps1.md)              |
+| [inspect-exe.ps1](Scripts/inspect-exe.ps1)           | Prints basic information of the given executable file              | [Help](Docs/wakeup.ps1.md)              |
+| [list-dir.ps1](Scripts/list-dir.ps1)                 | Lists the directory content (formatted in columns)                 | [Help](Docs/wakeup.ps1.md)              |
+| [list-dir-tree.ps1](Scripts/list-dir-tree.ps1)       | Lists the directory tree content                                   | [Help](Docs/wakeup.ps1.md)              |
+| [list-empty-dirs.ps1](Scripts/list-empty-dirs.ps1)   | Lists empty subfolders within the given directory tree             | [Help](Docs/wakeup.ps1.md)              |
+| [list-empty-files.ps1](Scripts/list-empty-files.ps1) | Lists empty files within the given directory tree                  | [Help](Docs/wakeup.ps1.md)              |
+| [list-files.ps1](Scripts/list-files.ps1)             | Lists all files in the given folder and also in every subfolder    | [Help](Docs/wakeup.ps1.md)              |
+| [list-hidden-files.ps1](Scripts/list-hidden-files.ps1) | Lists hidden files within the given directory tree               | [Help](Docs/wakeup.ps1.md)              |
+| [list-recycle-bin.ps1](Scripts/list-recycle-bin.ps1) | Lists the content of the recycle bin folder                        | [Help](Docs/wakeup.ps1.md)              |
+| [list-unused-files.ps1](Scripts/list-unused-files.ps1) | Lists unused files in a directory tree                           | [Help](Docs/wakeup.ps1.md)              |
+| [list-workdir.ps1](Scripts/list-workdir.ps1)         | Lists the current working directory                                | [Help](Docs/wakeup.ps1.md)              |
+| [make-install.ps1](Scripts/make-install.ps1)         | Installs built executables and libs to the installation directory  | [Help](Docs/wakeup.ps1.md)              |
+| [MD5.ps1](Scripts/MD5.ps1)                           | Prints the MD5 checksum of the given file                          | [Help](Docs/wakeup.ps1.md)              |
+| [new-shortcut.ps1](Scripts/new-shortcut.ps1)         | Creates a new shortcut                                             | [Help](Docs/wakeup.ps1.md)              |
+| [new-symlink.ps1](Scripts/new-symlink.ps1)           | Creates a new symbolic link                                        | [Help](Docs/wakeup.ps1.md)              |
+| [publish-to-ipfs.ps1](Scripts/publish-to-ipfs.ps1)   | Publishes the given files or directory to IPFS                     | [Help](Docs/wakeup.ps1.md)              |
+| [remove-empty-dirs.ps1](Scripts/remove-empty-dirs.ps1) | Removes empty subfolders within the given directory tree         | [Help](Docs/wakeup.ps1.md)              |
+| [search-filename.ps1](Scripts/search-filename.ps1)   | Searches the directory tree for filenames by given pattern         | [Help](Docs/wakeup.ps1.md)              |
+| [search-files.ps1](Scripts/search-files.ps1)         | Searches the given pattern in the given files                      | [Help](Docs/wakeup.ps1.md)              |
+| [SHA1.ps1](Scripts/SHA1.ps1)                         | Prints the SHA1 checksum of the given file                         | [Help](Docs/wakeup.ps1.md)              |
+| [SHA256.ps1](Scripts/SHA256.ps1)                     | Prints the SHA256 checksum of the given file                       | [Help](Docs/wakeup.ps1.md)              |
+| [upload-file.ps1](Scripts/zip-dir.ps1)               | Uploads the local file to the given FTP server                     | [Help](Docs/wakeup.ps1.md)              |
+| [zip-dir.ps1](Scripts/zip-dir.ps1)                   | Creates a .zip archive of the given directory                      | [Help](Docs/wakeup.ps1.md)              |
 
 ♻️ Scripts to Convert Files
 ---------------------------
 
-| Script                                                 | Description                                                        | Help                                    |
-| ------------------------------------------------------ | ------------------------------------------------------------------ | --------------------------------------- |
+| Script                                                 | Description                                                        | Help                                  |
+| ------------------------------------------------------ | ------------------------------------------------------------------ | ------------------------------------- |
 | [convert-csv2txt.ps1](Scripts/convert-csv2txt.ps1)     | Converts a given .CSV file to a text file                          | [Help](Docs/convert-csv2txt.ps1.md)   |
 | [convert-mysql2csv.ps1](Scripts/convert-mysql2csv.ps1) | Converts a MySQL database table to a .CSV file                     | [Help](Docs/convert-mysql2csv.ps1.md) |
 | [convert-ps2bat.ps1](Scripts/convert-ps2bat.ps1)       | Converts a PowerShell script to a .BAT file                        | [Help](Docs/convert-ps2bat.ps1.md)    |
@@ -191,117 +191,117 @@ Mega Collection of PowerShell Scripts
 
 | Script                                               | Description                                                        | Help                                    |
 | ---------------------------------------------------- | ------------------------------------------------------------------ | --------------------------------------- |
-| [cherry-picker.ps1](Scripts/cherry-picker.ps1)       | Cherry-picks a Git commit into multiple branches                   | [Help](Docs/cherry-picker.ps1.md)     |
-| [clean-repo.ps1](Scripts/clean-repo.ps1)             | Cleans a Git repository from untracked files (including submodules) | [Help](Docs/clean-repo.ps1.md)       |
+| [cherry-picker.ps1](Scripts/cherry-picker.ps1)       | Cherry-picks a Git commit into multiple branches                   | [Help](Docs/cherry-picker.ps1.md)       |
+| [clean-repo.ps1](Scripts/clean-repo.ps1)             | Cleans a Git repository from untracked files (including submodules) | [Help](Docs/clean-repo.ps1.md)         |
 | [clean-repos.ps1](Scripts/clean-repos.ps1)           | Cleans all Git repositories under a directory from untracked files (including submodules) | [Help](Docs/clean-repos.ps1.md)   |
-| [clone-repos.ps1](Scripts/clone-repos.ps1)           | Clones well-known Git repositories                                 | [Help](Docs/clone-repos.ps1.md)       |
-| [configure-git.ps1](Scripts/configure-git.ps1)       | Sets up the Git user configuration                                 | [Help](Docs/configure-git.ps1.md)     |
-| [fetch-repo.ps1](Scripts/fetch-repo.ps1)             | Fetches updates for a Git repository (including submodules)        | [Help](Docs/fetch-repo.ps1.md)        |
-| [fetch-repos.ps1](Scripts/fetch-repos.ps1)           | Fetches updates for all Git repositories under a directory (including submodules) | [Help](Docs/fetch-repos.ps1.md)   |
-| [list-branches.ps1](Scripts/list-branches.ps1)       | Lists all branches in a Git repository                             | [Help](Docs/list-branches.ps1.md)     |
-| [list-commits.ps1](Scripts/list-commits.ps1)         | Lists all commits in a Git repository                              | [Help](Docs/list-commits.ps1.md)      |
-| [list-latest-tag.ps1](Scripts/list-latest-tag.ps1)   | Lists the latest tag on the current branch in a Git repository     | [Help](Docs/list-latest-tag.ps1.md)   |
-| [list-latest-tags.ps1](Scripts/list-latest-tags.ps1) | Lists the latests tags in all Git repositories under a directory   | [Help](Docs/list-latest-tags.ps1.md)  |
-| [list-submodules.ps1](Scripts/list-submodules.ps1)   | Lists the submodules in a Git repository                           | [Help](Docs/list-submodules.ps1.md)   |
-| [list-tags.ps1](Scripts/list-tags.ps1)               | Lists all tags in a Git repository                                 | [Help](Docs/list-tags.ps1.md)         |
-| [make-repo.ps1](Scripts/make-repo.ps1)               | Builds a Git repository                                            | [Help](Docs/make-repo.ps1.md)         |
-| [make-repos.ps1](Scripts/make-repos.ps1)             | Builds all Git repositories under a directory                      | [Help](Docs/make-repos.ps1.md)        |
-| [new-branch.ps1](Scripts/new-branch.ps1)             | Creates a new branch in a Git repository                           | [Help](Docs/new-branch.ps1.md)     |
-| [new-tag.ps1](Scripts/new-tag.ps1)                   | Creates a new tag in a Git repository                              | [Help](Docs/new-tag.ps1.md)        |
-| [pull-repo.ps1](Scripts/pull-repo.ps1)               | Pulls updates for a Git repository (including submodules)          | [Help](Docs/pull-repo.ps1.md)         |
-| [pull-repos.ps1](Scripts/pull-repos.ps1)             | Pulls updates for all Git repositories under a directory (including submodules) | [Help](Docs/pull-repos.ps1.md) |
-| [switch-branch.ps1](Scripts/switch-branch.ps1)       | Switches the branch in a Git repository (including submodules)     | [Help](Docs/switch-branch.ps1.md)     |
-| [sync-repo.ps1](Scripts/sync-repo.ps1)               | Synchronizes a Git repository by push & pull (including submodules) | [Help](Docs/sync-repo.ps1.md)        |
+| [clone-repos.ps1](Scripts/clone-repos.ps1)           | Clones well-known Git repositories                                 | [Help](Docs/clone-repos.ps1.md)         |
+| [configure-git.ps1](Scripts/configure-git.ps1)       | Sets up the Git user configuration                                 | [Help](Docs/configure-git.ps1.md)       |
+| [fetch-repo.ps1](Scripts/fetch-repo.ps1)             | Fetches updates for a Git repository (including submodules)        | [Help](Docs/fetch-repo.ps1.md)          |
+| [fetch-repos.ps1](Scripts/fetch-repos.ps1)           | Fetches updates for all Git repositories under a directory (including submodules) | [Help](Docs/fetch-repos.ps1.md)|
+| [list-branches.ps1](Scripts/list-branches.ps1)       | Lists all branches in a Git repository                             | [Help](Docs/list-branches.ps1.md)       |
+| [list-commits.ps1](Scripts/list-commits.ps1)         | Lists all commits in a Git repository                              | [Help](Docs/list-commits.ps1.md)        |
+| [list-latest-tag.ps1](Scripts/list-latest-tag.ps1)   | Lists the latest tag on the current branch in a Git repository     | [Help](Docs/list-latest-tag.ps1.md)     |
+| [list-latest-tags.ps1](Scripts/list-latest-tags.ps1) | Lists the latests tags in all Git repositories under a directory   | [Help](Docs/list-latest-tags.ps1.md)    |
+| [list-submodules.ps1](Scripts/list-submodules.ps1)   | Lists the submodules in a Git repository                           | [Help](Docs/list-submodules.ps1.md)     |
+| [list-tags.ps1](Scripts/list-tags.ps1)               | Lists all tags in a Git repository                                 | [Help](Docs/list-tags.ps1.md)           |
+| [make-repo.ps1](Scripts/make-repo.ps1)               | Builds a Git repository                                            | [Help](Docs/make-repo.ps1.md)           |
+| [make-repos.ps1](Scripts/make-repos.ps1)             | Builds all Git repositories under a directory                      | [Help](Docs/make-repos.ps1.md)          |
+| [new-branch.ps1](Scripts/new-branch.ps1)             | Creates a new branch in a Git repository                           | [Help](Docs/new-branch.ps1.md)          |
+| [new-tag.ps1](Scripts/new-tag.ps1)                   | Creates a new tag in a Git repository                              | [Help](Docs/new-tag.ps1.md)             |
+| [pull-repo.ps1](Scripts/pull-repo.ps1)               | Pulls updates for a Git repository (including submodules)          | [Help](Docs/pull-repo.ps1.md)           |
+| [pull-repos.ps1](Scripts/pull-repos.ps1)             | Pulls updates for all Git repositories under a directory (including submodules) | [Help](Docs/pull-repos.ps1.md)|
+| [switch-branch.ps1](Scripts/switch-branch.ps1)       | Switches the branch in a Git repository (including submodules)     | [Help](Docs/switch-branch.ps1.md)       |
+| [sync-repo.ps1](Scripts/sync-repo.ps1)               | Synchronizes a Git repository by push & pull (including submodules) | [Help](Docs/sync-repo.ps1.md)          |
 
 🔎 Scripts for PowerShell 
 ------------------------
 
 | Script                                                 | Description                                                        | Help                                    |
 | ------------------------------------------------------ | ------------------------------------------------------------------ | --------------------------------------- |
-| [daily-tasks.sh](Scripts/daily-tasks.sh)               | Execute PowerShell scripts automatically as daily tasks (Linux only) | [Help](Docs/daily-tasks.sh.md)      |
-| [introduce-powershell.ps1](Scripts/introduce-powershell.ps1) | Introduces PowerShell to new users                           | [Help](Docs/introduce-powershell.ps1.md) |
-| [list-aliases.ps1](Scripts/list-aliases.ps1)           | Lists all PowerShell aliases                                       | [Help](Docs/list-aliases.ps1.md)      |
-| [list-automatic-variables.ps1](Scripts/list-automatic-variables.ps1) | Lists the automatic variables of PowerShell          | [Help](Docs/list-automatic-variables.ps1.md) |
-| [list-cheat-sheet.ps1](Scripts/list-cheat-sheet.ps1)   | Lists the PowerShell cheat sheet                                   | [Help](Docs/list-cheat-sheet.ps1.md)  |
-| [list-cmdlets.ps1](Scripts/list-cmdlets.ps1)           | Lists the PowerShell cmdlets                                       | [Help](Docs/list-cmdlets.ps1.md)      |
+| [daily-tasks.sh](Scripts/daily-tasks.sh)               | Execute PowerShell scripts automatically as daily tasks (Linux only) | [Help](Docs/daily-tasks.sh.md)        |
+| [introduce-powershell.ps1](Scripts/introduce-powershell.ps1) | Introduces PowerShell to new users                           | [Help](Docs/introduce-powershell.ps1.md)|
+| [list-aliases.ps1](Scripts/list-aliases.ps1)           | Lists all PowerShell aliases                                       | [Help](Docs/list-aliases.ps1.md)        |
+| [list-automatic-variables.ps1](Scripts/list-automatic-variables.ps1) | Lists the automatic variables of PowerShell          | [Help](Docs/list-automatic-variables.ps1.md)|
+| [list-cheat-sheet.ps1](Scripts/list-cheat-sheet.ps1)   | Lists the PowerShell cheat sheet                                   | [Help](Docs/list-cheat-sheet.ps1.md)    |
+| [list-cmdlets.ps1](Scripts/list-cmdlets.ps1)           | Lists the PowerShell cmdlets                                       | [Help](Docs/list-cmdlets.ps1.md)        |
 | [list-console-colors.ps1](Scripts/list-console-colors.ps1) | Lists all console colors                                       | [Help](Docs/list-console-colors.ps1.md) |
-| [list-modules.ps1](Scripts/list-modules.ps1)           | Lists the PowerShell modules                                       | [Help](Docs/list-modules.ps1.md)      |
-| [list-profiles.ps1](Scripts/list-profiles.ps1)         | Lists your PowerShell profiles                                     | [Help](Docs/list-profiles.ps1.md)     |
-| [list-scripts.ps1](Scripts/list-scripts.ps1)           | Lists all PowerShell scripts in this repository                    | [Help](Docs/list-scripts.ps1.md)      |
-| [new-script.ps1](Scripts/new-script.ps1)               | Creates a new PowerShell script                              | [Help](Docs/new-script.ps1.md)          |
-| [set-profile.ps1](Scripts/set-profile.ps1)             | Updates your PowerShell user profile                               | [Help](Docs/set-profile.ps1.md)       |
+| [list-modules.ps1](Scripts/list-modules.ps1)           | Lists the PowerShell modules                                       | [Help](Docs/list-modules.ps1.md)        |
+| [list-profiles.ps1](Scripts/list-profiles.ps1)         | Lists your PowerShell profiles                                     | [Help](Docs/list-profiles.ps1.md)       |
+| [list-scripts.ps1](Scripts/list-scripts.ps1)           | Lists all PowerShell scripts in this repository                    | [Help](Docs/list-scripts.ps1.md)        |
+| [new-script.ps1](Scripts/new-script.ps1)               | Creates a new PowerShell script                                    | [Help](Docs/new-script.ps1.md)          |
+| [set-profile.ps1](Scripts/set-profile.ps1)             | Updates your PowerShell user profile                               | [Help](Docs/set-profile.ps1.md)         |
 
 🛒 Various PowerShell Scripts 
 ------------------------------
 
 | Script                                               | Description                                                        | Help                                    |
 | ---------------------------------------------------- | ------------------------------------------------------------------ | --------------------------------------- |
-| [add-memo.ps1](Scripts/add-memo.ps1)                 | adds the given memo text to $HOME/Memos.csv
-| [check-ipv4-address.ps1](Scripts/check-ipv4-address.ps1)| checks the given IPv4 address for validity
-| [check-ipv6-address.ps1](Scripts/check-ipv6-address.ps1)| checks the given IPv6 address for validity
-| [check-mac-address.ps1](Scripts/check-mac-address.ps1)| checks the given MAC address for validity
-| [check-subnet-mask.ps1](Scripts/check-subnet-mask.ps1)| checks the given subnet mask for validity
-| [check-weather.ps1](Scripts/check-weather.ps1)       | checks the current weather for critical values
-| [display-time.ps1](Scripts/display-time.ps1)         | displays the current time for 10 seconds by default
-| [generate-qrcode.ps1](Scripts/generate-qrcode.ps1)   | generates a QR code
-| [list-anagrams.ps1](Scripts/list-anagrams.ps1)       | lists all anagrams of the given word
-| [list-city-weather.ps1](Scripts/list-city-weather.ps1)| lists the current weather of cities worldwide (west to east)
-| [list-countries.ps1](Scripts/list-countries.ps1)     | lists details of all countries
-| [list-credits.ps1](Scripts/list-credits.ps1)         | shows the credits
-| [list-crypto-rates.ps1](Scripts/list-crypto-rates.ps1)| lists the current crypto exchange rates 
-| [list-environment-variables.ps1](Scripts/list-environment-variables.ps1)| lists all environment variables
-| [list-emojis.ps1](Scripts/list-emojis.ps1)           | lists the emojis of Unicode 13.0
-| [list-fritzbox-calls.ps1](Scripts/list-fritzbox-calls.ps1)| lists the FRITZ!Box calls
-| [list-fritzbox-devices.ps1](Scripts/list-fritzbox-devices.ps1)| lists FRITZ!Box's known devices 
-| [list-earthquakes.ps1](Scripts/list-earthquakes.ps1) | lists earthquakes with magnitude >= 6.0 for the last 30 days
-| [list-exchange-rates.ps1](Scripts/list-exchange-rates.ps1)| lists the current exchange rates for the given currency 
-| [list-memos.ps1](Scripts/list-memos.ps1)             | lists the memos at $HOME/Memos.csv
-| [list-mysql-tables.ps1](Scripts/list-mysql-tables.ps1)| lists the MySQL server tables
-| [list-news.ps1](Scripts/list-news.ps1)               | lists the latest news
-| [list-os-releases.ps1](Scripts/list-os-releases.ps1) | lists operating system releases and download URL
-| [list-os-updates.ps1](Scripts/list-os-updates.ps1)   | lists operating system updates
-| [list-passwords.ps1](Scripts/list-passwords.ps1)     | prints a list of random passwords
-| [list-pins.ps1](Scripts/list-pins.ps1)               | prints a list of random PIN's
-| [list-sql-tables.ps1](Scripts/list-sql-tables.ps1)   | lists the SQL server tables
-| [list-tiobe-index.ps1](Scripts/list-tiobe-index.ps1) | lists the TIOBE index of top programming languages
-| [list-weather.ps1](Scripts/list-weather.ps1)         | lists the hourly weather 
-| [locate-city.ps1](Scripts/locate-city.ps1)           | prints the geographic location of the given city
-| [locate-ipaddress.ps1](Scripts/locate-ipaddress.ps1) | prints the geographic location of the given IP address
-| [locate-zip-code.ps1](Scripts/locate-zip-code.ps1)   | prints the geographic location of the given zip-code
-| [moon.ps1](Scripts/moon.ps1)                         | prints the current moon phase
-| [reboot-fritzbox.ps1](Scripts/reboot-fritzbox.ps1)   | reboots the FRITZ!box device
-| [scan-ports.ps1](Scripts/scan-ports.ps1)             | scans the network for open/closed ports
-| [send-email.ps1](Scripts/send-email.ps1)             | sends an email message
-| [send-tcp.ps1](Scripts/send-udp.ps1)                 | sends a TCP message to the given IP address and port
-| [send-udp.ps1](Scripts/send-udp.ps1)                 | sends a UDP datagram message to the given IP address and port
-| [set-timer.ps1](Scripts/set-timer.ps1)               | sets a timer for a countdown
-| [simulate-matrix.ps1](Scripts/simulate-matrix.ps1)   | simulates the Matrix (fun)
-| [simulate-presence.ps1](Scripts/simulate-presence.ps1)| simulates the human presence against burglars
-| [start-calibre-server.ps1](Scripts/start-calibre-server.ps1)| starts a local Calibre server 
-| [start-ipfs-server.ps1](Scripts/start-ipfs-server.ps1)| starts a local IPFS server
-| [switch-shelly1.ps1](Scripts/switch-shelly1.ps1)     | switches a Shelly1 device in the local network
-| [translate-file.ps1](Scripts/translate-file.ps1)     | translates the given text file into other languages
-| [translate-files.ps1](Scripts/translate-files.ps1)   | translates the given text files into any supported language
-| [translate-text.ps1](Scripts/translate-text.ps1)     | translates the given text in English into other languages
-| [weather.ps1](Scripts/weather.ps1)                   | prints the current weather forecast
-| [weather-report.ps1](Scripts/weather-report.ps1)     | prints the local weather report
-| [what-is.ps1](Scripts/what-is.ps1)                   | prints a description of the given abbreviation
-| [write-animated.ps1](Scripts/write-animated.ps1)     | writes animated text
-| [write-big.ps1](Scripts/write-big.ps1)               | writes the given text in big letters
-| [write-blue.ps1](Scripts/write-blue.ps1)             | writes the given text in a blue foreground color
-| [write-braille.ps1](Scripts/write-braille.ps1)       | writes the given text in Braille
-| [write-green.ps1](Scripts/write-green.ps1)           | writes the given text in a green foreground color
-| [write-joke.ps1](Scripts/write-joke.ps1)             | writes a random Juck Norris joke
-| [write-lowercase.ps1](Scripts/write-lowercase.ps1)   | writes the given text in lowercase letters
-| [write-marquee.ps1](Scripts/write-marquee.ps1)       | writes the given text as marquee
-| [write-morse-code.ps1](Scripts/write-morse-code.ps1) | writes the given text in Morse code
-| [write-motd.ps1](Scripts/write-motd.ps1)             | writes the message of the day (MOTD)
-| [write-quote.ps1](Scripts/write-quote.ps1)           | writes a random quote
-| [write-red.ps1](Scripts/write-red.ps1)               | writes the given text in a red foreground color
-| [write-rot13.ps1](Scripts/write-rot13.ps1)           | encodes or decodes the given text with ROT13
-| [write-typewriter.ps1](Scripts/write-typewriter.ps1) | writes the given text with the typewriter effect
-| [write-uppercase.ps1](Scripts/write-uppercase.ps1)   | writes the given text in uppercase letters
-| [write-vertical.ps1](Scripts/write-vertical.ps1)     | writes the given text in vertical direction
+| [add-memo.ps1](Scripts/add-memo.ps1)                 | adds the given memo text to $HOME/Memos.csv                        | [Help](Docs/wakeup.ps1.md)              |
+| [check-ipv4-address.ps1](Scripts/check-ipv4-address.ps1)| checks the given IPv4 address for validity                      | [Help](Docs/wakeup.ps1.md)              |
+| [check-ipv6-address.ps1](Scripts/check-ipv6-address.ps1)| checks the given IPv6 address for validity                      | [Help](Docs/wakeup.ps1.md)              |
+| [check-mac-address.ps1](Scripts/check-mac-address.ps1)| checks the given MAC address for validity                         | [Help](Docs/wakeup.ps1.md)              |
+| [check-subnet-mask.ps1](Scripts/check-subnet-mask.ps1)| checks the given subnet mask for validity                         | [Help](Docs/wakeup.ps1.md)              |
+| [check-weather.ps1](Scripts/check-weather.ps1)       | checks the current weather for critical values                     | [Help](Docs/wakeup.ps1.md)              |
+| [display-time.ps1](Scripts/display-time.ps1)         | displays the current time for 10 seconds by default                | [Help](Docs/wakeup.ps1.md)              |
+| [generate-qrcode.ps1](Scripts/generate-qrcode.ps1)   | generates a QR code                                                | [Help](Docs/wakeup.ps1.md)              |
+| [list-anagrams.ps1](Scripts/list-anagrams.ps1)       | lists all anagrams of the given word                               | [Help](Docs/wakeup.ps1.md)              |
+| [list-city-weather.ps1](Scripts/list-city-weather.ps1)| lists the current weather of cities worldwide (west to east)      | [Help](Docs/wakeup.ps1.md)              |
+| [list-countries.ps1](Scripts/list-countries.ps1)     | lists details of all countries                                     | [Help](Docs/wakeup.ps1.md)              |
+| [list-credits.ps1](Scripts/list-credits.ps1)         | shows the credits                                                  | [Help](Docs/wakeup.ps1.md)              |
+| [list-crypto-rates.ps1](Scripts/list-crypto-rates.ps1)| lists the current crypto exchange rates                           | [Help](Docs/wakeup.ps1.md)              |
+| [list-environment-variables.ps1](Scripts/list-environment-variables.ps1)| lists all environment variables                 | [Help](Docs/wakeup.ps1.md)              |
+| [list-emojis.ps1](Scripts/list-emojis.ps1)           | lists the emojis of Unicode 13.0                                   | [Help](Docs/wakeup.ps1.md)              |
+| [list-fritzbox-calls.ps1](Scripts/list-fritzbox-calls.ps1)| lists the FRITZ!Box calls                                     | [Help](Docs/wakeup.ps1.md)              |
+| [list-fritzbox-devices.ps1](Scripts/list-fritzbox-devices.ps1)| lists FRITZ!Box's known devices                           | [Help](Docs/wakeup.ps1.md)              |
+| [list-earthquakes.ps1](Scripts/list-earthquakes.ps1) | lists earthquakes with magnitude >= 6.0 for the last 30 days       | [Help](Docs/wakeup.ps1.md)              |
+| [list-exchange-rates.ps1](Scripts/list-exchange-rates.ps1)| lists the current exchange rates for the given currency       | [Help](Docs/wakeup.ps1.md)              |
+| [list-memos.ps1](Scripts/list-memos.ps1)             | lists the memos at $HOME/Memos.csv                                 | [Help](Docs/wakeup.ps1.md)              |
+| [list-mysql-tables.ps1](Scripts/list-mysql-tables.ps1)| lists the MySQL server tables                                     | [Help](Docs/wakeup.ps1.md)              |
+| [list-news.ps1](Scripts/list-news.ps1)               | lists the latest news                                              | [Help](Docs/wakeup.ps1.md)              |
+| [list-os-releases.ps1](Scripts/list-os-releases.ps1) | lists operating system releases and download URL                   | [Help](Docs/wakeup.ps1.md)              |
+| [list-os-updates.ps1](Scripts/list-os-updates.ps1)   | lists operating system updates                                     | [Help](Docs/wakeup.ps1.md)              |
+| [list-passwords.ps1](Scripts/list-passwords.ps1)     | prints a list of random passwords                                  | [Help](Docs/wakeup.ps1.md)              |
+| [list-pins.ps1](Scripts/list-pins.ps1)               | prints a list of random PIN's                                      | [Help](Docs/wakeup.ps1.md)              |
+| [list-sql-tables.ps1](Scripts/list-sql-tables.ps1)   | lists the SQL server tables                                        | [Help](Docs/wakeup.ps1.md)              |
+| [list-tiobe-index.ps1](Scripts/list-tiobe-index.ps1) | lists the TIOBE index of top programming languages                 | [Help](Docs/wakeup.ps1.md)              |
+| [list-weather.ps1](Scripts/list-weather.ps1)         | lists the hourly weather                                           | [Help](Docs/wakeup.ps1.md)              |
+| [locate-city.ps1](Scripts/locate-city.ps1)           | prints the geographic location of the given city                   | [Help](Docs/wakeup.ps1.md)              |
+| [locate-ipaddress.ps1](Scripts/locate-ipaddress.ps1) | prints the geographic location of the given IP address             | [Help](Docs/wakeup.ps1.md)              |
+| [locate-zip-code.ps1](Scripts/locate-zip-code.ps1)   | prints the geographic location of the given zip-code               | [Help](Docs/wakeup.ps1.md)              |
+| [moon.ps1](Scripts/moon.ps1)                         | prints the current moon phase                                      | [Help](Docs/wakeup.ps1.md)              |
+| [reboot-fritzbox.ps1](Scripts/reboot-fritzbox.ps1)   | reboots the FRITZ!box device                                       | [Help](Docs/wakeup.ps1.md)              |
+| [scan-ports.ps1](Scripts/scan-ports.ps1)             | scans the network for open/closed ports                            | [Help](Docs/wakeup.ps1.md)              |
+| [send-email.ps1](Scripts/send-email.ps1)             | sends an email message                                             | [Help](Docs/wakeup.ps1.md)              |
+| [send-tcp.ps1](Scripts/send-udp.ps1)                 | sends a TCP message to the given IP address and port               | [Help](Docs/wakeup.ps1.md)              |
+| [send-udp.ps1](Scripts/send-udp.ps1)                 | sends a UDP datagram message to the given IP address and port      | [Help](Docs/wakeup.ps1.md)              |
+| [set-timer.ps1](Scripts/set-timer.ps1)               | sets a timer for a countdown                                       | [Help](Docs/wakeup.ps1.md)              |
+| [simulate-matrix.ps1](Scripts/simulate-matrix.ps1)   | simulates the Matrix (fun)                                         | [Help](Docs/wakeup.ps1.md)              |
+| [simulate-presence.ps1](Scripts/simulate-presence.ps1)| simulates the human presence against burglars                     | [Help](Docs/wakeup.ps1.md)              |
+| [start-calibre-server.ps1](Scripts/start-calibre-server.ps1)| starts a local Calibre server                               | [Help](Docs/wakeup.ps1.md)              |
+| [start-ipfs-server.ps1](Scripts/start-ipfs-server.ps1)| starts a local IPFS server                                        | [Help](Docs/wakeup.ps1.md)              |
+| [switch-shelly1.ps1](Scripts/switch-shelly1.ps1)     | switches a Shelly1 device in the local network                     | [Help](Docs/wakeup.ps1.md)              |
+| [translate-file.ps1](Scripts/translate-file.ps1)     | translates the given text file into other languages                | [Help](Docs/wakeup.ps1.md)              |
+| [translate-files.ps1](Scripts/translate-files.ps1)   | translates the given text files into any supported language        | [Help](Docs/wakeup.ps1.md)              |
+| [translate-text.ps1](Scripts/translate-text.ps1)     | translates the given text in English into other languages          | [Help](Docs/wakeup.ps1.md)              |
+| [weather.ps1](Scripts/weather.ps1)                   | prints the current weather forecast                                | [Help](Docs/wakeup.ps1.md)              |
+| [weather-report.ps1](Scripts/weather-report.ps1)     | prints the local weather report                                    | [Help](Docs/wakeup.ps1.md)              |
+| [what-is.ps1](Scripts/what-is.ps1)                   | prints a description of the given abbreviation                     | [Help](Docs/wakeup.ps1.md)              |
+| [write-animated.ps1](Scripts/write-animated.ps1)     | writes animated text                                               | [Help](Docs/wakeup.ps1.md)              |
+| [write-big.ps1](Scripts/write-big.ps1)               | writes the given text in big letters                               | [Help](Docs/wakeup.ps1.md)              |
+| [write-blue.ps1](Scripts/write-blue.ps1)             | writes the given text in a blue foreground color                   | [Help](Docs/wakeup.ps1.md)              |
+| [write-braille.ps1](Scripts/write-braille.ps1)       | writes the given text in Braille                                   | [Help](Docs/wakeup.ps1.md)              |
+| [write-green.ps1](Scripts/write-green.ps1)           | writes the given text in a green foreground color                  | [Help](Docs/wakeup.ps1.md)              |
+| [write-joke.ps1](Scripts/write-joke.ps1)             | writes a random Juck Norris joke                                   | [Help](Docs/wakeup.ps1.md)              |
+| [write-lowercase.ps1](Scripts/write-lowercase.ps1)   | writes the given text in lowercase letters                         | [Help](Docs/wakeup.ps1.md)              |
+| [write-marquee.ps1](Scripts/write-marquee.ps1)       | writes the given text as marquee                                   | [Help](Docs/wakeup.ps1.md)              |
+| [write-morse-code.ps1](Scripts/write-morse-code.ps1) | writes the given text in Morse code                                | [Help](Docs/wakeup.ps1.md)              |
+| [write-motd.ps1](Scripts/write-motd.ps1)             | writes the message of the day (MOTD)                               | [Help](Docs/wakeup.ps1.md)              |
+| [write-quote.ps1](Scripts/write-quote.ps1)           | writes a random quote                                              | [Help](Docs/wakeup.ps1.md)              |
+| [write-red.ps1](Scripts/write-red.ps1)               | writes the given text in a red foreground color                    | [Help](Docs/wakeup.ps1.md)              |
+| [write-rot13.ps1](Scripts/write-rot13.ps1)           | encodes or decodes the given text with ROT13                       | [Help](Docs/wakeup.ps1.md)              |
+| [write-typewriter.ps1](Scripts/write-typewriter.ps1) | writes the given text with the typewriter effect                   | [Help](Docs/wakeup.ps1.md)              |
+| [write-uppercase.ps1](Scripts/write-uppercase.ps1)   | writes the given text in uppercase letters                         | [Help](Docs/wakeup.ps1.md)              |
+| [write-vertical.ps1](Scripts/write-vertical.ps1)     | writes the given text in vertical direction                        | [Help](Docs/wakeup.ps1.md)              |
 
 Feedback
 --------
