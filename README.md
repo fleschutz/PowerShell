@@ -233,72 +233,75 @@ Mega Collection of PowerShell Scripts
 
 🛒 Various PowerShell Scripts 
 ------------------------------
-* [add-memo.ps1](Scripts/add-memo.ps1) - adds the given memo text to $HOME/Memos.csv
-* [check-ipv4-address.ps1](Scripts/check-ipv4-address.ps1) - checks the given IPv4 address for validity
-* [check-ipv6-address.ps1](Scripts/check-ipv6-address.ps1) - checks the given IPv6 address for validity
-* [check-mac-address.ps1](Scripts/check-mac-address.ps1) - checks the given MAC address for validity
-* [check-subnet-mask.ps1](Scripts/check-subnet-mask.ps1) - checks the given subnet mask for validity
-* [check-weather.ps1](Scripts/check-weather.ps1) - checks the current weather for critical values
-* [display-time.ps1](Scripts/display-time.ps1) - displays the current time for 10 seconds by default
-* [generate-qrcode.ps1](Scripts/generate-qrcode.ps1) - generates a QR code
-* [list-anagrams.ps1](Scripts/list-anagrams.ps1) - lists all anagrams of the given word
-* [list-city-weather.ps1](Scripts/list-city-weather.ps1) - lists the current weather of cities worldwide (west to east)
-* [list-countries.ps1](Scripts/list-countries.ps1) - lists details of all countries
-* [list-credits.ps1](Scripts/list-credits.ps1) - shows the credits
-* [list-crypto-rates.ps1](Scripts/list-crypto-rates.ps1) - lists the current crypto exchange rates 
-* [list-environment-variables.ps1](Scripts/list-environment-variables.ps1) - lists all environment variables
-* [list-emojis.ps1](Scripts/list-emojis.ps1) - lists the emojis of Unicode 13.0
-* [list-fritzbox-calls.ps1](Scripts/list-fritzbox-calls.ps1) - lists the FRITZ!Box calls
-* [list-fritzbox-devices.ps1](Scripts/list-fritzbox-devices.ps1) - lists FRITZ!Box's known devices 
-* [list-earthquakes.ps1](Scripts/list-earthquakes.ps1) - lists earthquakes with magnitude >= 6.0 for the last 30 days
-* [list-exchange-rates.ps1](Scripts/list-exchange-rates.ps1) - lists the current exchange rates for the given currency 
-* [list-memos.ps1](Scripts/list-memos.ps1) - lists the memos at $HOME/Memos.csv
-* [list-mysql-tables.ps1](Scripts/list-mysql-tables.ps1) - lists the MySQL server tables
-* [list-news.ps1](Scripts/list-news.ps1) - lists the latest news
-* [list-os-releases.ps1](Scripts/list-os-releases.ps1) - lists operating system releases and download URL
-* [list-os-updates.ps1](Scripts/list-os-updates.ps1) - lists operating system updates
-* [list-passwords.ps1](Scripts/list-passwords.ps1) - prints a list of random passwords
-* [list-pins.ps1](Scripts/list-pins.ps1) - prints a list of random PIN's
-* [list-sql-tables.ps1](Scripts/list-sql-tables.ps1) - lists the SQL server tables
-* [list-tiobe-index.ps1](Scripts/list-tiobe-index.ps1) - lists the TIOBE index of top programming languages
-* [list-weather.ps1](Scripts/list-weather.ps1) - lists the hourly weather 
-* [locate-city.ps1](Scripts/locate-city.ps1) - prints the geographic location of the given city
-* [locate-ipaddress.ps1](Scripts/locate-ipaddress.ps1) - prints the geographic location of the given IP address
-* [locate-zip-code.ps1](Scripts/locate-zip-code.ps1) - prints the geographic location of the given zip-code
-* [moon.ps1](Scripts/moon.ps1) - prints the current moon phase
-* [reboot-fritzbox.ps1](Scripts/reboot-fritzbox.ps1) - reboots the FRITZ!box device
-* [scan-ports.ps1](Scripts/scan-ports.ps1) - scans the network for open/closed ports
-* [send-email.ps1](Scripts/send-email.ps1) - sends an email message
-* [send-tcp.ps1](Scripts/send-udp.ps1) - sends a TCP message to the given IP address and port
-* [send-udp.ps1](Scripts/send-udp.ps1) - sends a UDP datagram message to the given IP address and port
-* [set-timer.ps1](Scripts/set-timer.ps1) - sets a timer for a countdown
-* [simulate-matrix.ps1](Scripts/simulate-matrix.ps1) - simulates the Matrix (fun)
-* [simulate-presence.ps1](Scripts/simulate-presence.ps1) - simulates the human presence against burglars
-* [start-calibre-server.ps1](Scripts/start-calibre-server.ps1) - starts a local Calibre server 
-* [start-ipfs-server.ps1](Scripts/start-ipfs-server.ps1) - starts a local IPFS server
-* [switch-shelly1.ps1](Scripts/switch-shelly1.ps1) - switches a Shelly1 device in the local network
-* [translate-file.ps1](Scripts/translate-file.ps1) - translates the given text file into other languages
-* [translate-files.ps1](Scripts/translate-files.ps1) - translates the given text files into any supported language
-* [translate-text.ps1](Scripts/translate-text.ps1) - translates the given text in English into other languages
-* [weather.ps1](Scripts/weather.ps1) - prints the current weather forecast
-* [weather-report.ps1](Scripts/weather-report.ps1) - prints the local weather report
-* [what-is.ps1](Scripts/what-is.ps1) - prints a description of the given abbreviation
-* [write-animated.ps1](Scripts/write-animated.ps1) - writes animated text
-* [write-big.ps1](Scripts/write-big.ps1) - writes the given text in big letters
-* [write-blue.ps1](Scripts/write-blue.ps1) - writes the given text in a blue foreground color
-* [write-braille.ps1](Scripts/write-braille.ps1) - writes the given text in Braille
-* [write-green.ps1](Scripts/write-green.ps1) - writes the given text in a green foreground color
-* [write-joke.ps1](Scripts/write-joke.ps1) - writes a random Juck Norris joke
-* [write-lowercase.ps1](Scripts/write-lowercase.ps1) - writes the given text in lowercase letters
-* [write-marquee.ps1](Scripts/write-marquee.ps1) - writes the given text as marquee
-* [write-morse-code.ps1](Scripts/write-morse-code.ps1) - writes the given text in Morse code
-* [write-motd.ps1](Scripts/write-motd.ps1) - writes the message of the day (MOTD)
-* [write-quote.ps1](Scripts/write-quote.ps1) - writes a random quote
-* [write-red.ps1](Scripts/write-red.ps1) - writes the given text in a red foreground color
-* [write-rot13.ps1](Scripts/write-rot13.ps1) - encodes or decodes the given text with ROT13
-* [write-typewriter.ps1](Scripts/write-typewriter.ps1) - writes the given text with the typewriter effect
-* [write-uppercase.ps1](Scripts/write-uppercase.ps1) - writes the given text in uppercase letters
-* [write-vertical.ps1](Scripts/write-vertical.ps1) - writes the given text in vertical direction
+
+| Script                                               | Description                                                        | Help                                    |
+| ---------------------------------------------------- | ------------------------------------------------------------------ | --------------------------------------- |
+| [add-memo.ps1](Scripts/add-memo.ps1)                 | adds the given memo text to $HOME/Memos.csv
+| [check-ipv4-address.ps1](Scripts/check-ipv4-address.ps1)| checks the given IPv4 address for validity
+| [check-ipv6-address.ps1](Scripts/check-ipv6-address.ps1)| checks the given IPv6 address for validity
+| [check-mac-address.ps1](Scripts/check-mac-address.ps1)| checks the given MAC address for validity
+| [check-subnet-mask.ps1](Scripts/check-subnet-mask.ps1)| checks the given subnet mask for validity
+| [check-weather.ps1](Scripts/check-weather.ps1)       | checks the current weather for critical values
+| [display-time.ps1](Scripts/display-time.ps1)         | displays the current time for 10 seconds by default
+| [generate-qrcode.ps1](Scripts/generate-qrcode.ps1)   | generates a QR code
+| [list-anagrams.ps1](Scripts/list-anagrams.ps1)       | lists all anagrams of the given word
+| [list-city-weather.ps1](Scripts/list-city-weather.ps1)| lists the current weather of cities worldwide (west to east)
+| [list-countries.ps1](Scripts/list-countries.ps1)     | lists details of all countries
+| [list-credits.ps1](Scripts/list-credits.ps1)         | shows the credits
+| [list-crypto-rates.ps1](Scripts/list-crypto-rates.ps1)| lists the current crypto exchange rates 
+| [list-environment-variables.ps1](Scripts/list-environment-variables.ps1)| lists all environment variables
+| [list-emojis.ps1](Scripts/list-emojis.ps1)           | lists the emojis of Unicode 13.0
+| [list-fritzbox-calls.ps1](Scripts/list-fritzbox-calls.ps1)| lists the FRITZ!Box calls
+| [list-fritzbox-devices.ps1](Scripts/list-fritzbox-devices.ps1)| lists FRITZ!Box's known devices 
+| [list-earthquakes.ps1](Scripts/list-earthquakes.ps1) | lists earthquakes with magnitude >= 6.0 for the last 30 days
+| [list-exchange-rates.ps1](Scripts/list-exchange-rates.ps1)| lists the current exchange rates for the given currency 
+| [list-memos.ps1](Scripts/list-memos.ps1)             | lists the memos at $HOME/Memos.csv
+| [list-mysql-tables.ps1](Scripts/list-mysql-tables.ps1)| lists the MySQL server tables
+| [list-news.ps1](Scripts/list-news.ps1)               | lists the latest news
+| [list-os-releases.ps1](Scripts/list-os-releases.ps1) | lists operating system releases and download URL
+| [list-os-updates.ps1](Scripts/list-os-updates.ps1)   | lists operating system updates
+| [list-passwords.ps1](Scripts/list-passwords.ps1)     | prints a list of random passwords
+| [list-pins.ps1](Scripts/list-pins.ps1)               | prints a list of random PIN's
+| [list-sql-tables.ps1](Scripts/list-sql-tables.ps1)   | lists the SQL server tables
+| [list-tiobe-index.ps1](Scripts/list-tiobe-index.ps1) | lists the TIOBE index of top programming languages
+| [list-weather.ps1](Scripts/list-weather.ps1)         | lists the hourly weather 
+| [locate-city.ps1](Scripts/locate-city.ps1)           | prints the geographic location of the given city
+| [locate-ipaddress.ps1](Scripts/locate-ipaddress.ps1) | prints the geographic location of the given IP address
+| [locate-zip-code.ps1](Scripts/locate-zip-code.ps1)   | prints the geographic location of the given zip-code
+| [moon.ps1](Scripts/moon.ps1)                         | prints the current moon phase
+| [reboot-fritzbox.ps1](Scripts/reboot-fritzbox.ps1)   | reboots the FRITZ!box device
+| [scan-ports.ps1](Scripts/scan-ports.ps1)             | scans the network for open/closed ports
+| [send-email.ps1](Scripts/send-email.ps1)             | sends an email message
+| [send-tcp.ps1](Scripts/send-udp.ps1)                 | sends a TCP message to the given IP address and port
+| [send-udp.ps1](Scripts/send-udp.ps1)                 | sends a UDP datagram message to the given IP address and port
+| [set-timer.ps1](Scripts/set-timer.ps1)               | sets a timer for a countdown
+| [simulate-matrix.ps1](Scripts/simulate-matrix.ps1)   | simulates the Matrix (fun)
+| [simulate-presence.ps1](Scripts/simulate-presence.ps1)| simulates the human presence against burglars
+| [start-calibre-server.ps1](Scripts/start-calibre-server.ps1)| starts a local Calibre server 
+| [start-ipfs-server.ps1](Scripts/start-ipfs-server.ps1)| starts a local IPFS server
+| [switch-shelly1.ps1](Scripts/switch-shelly1.ps1)     | switches a Shelly1 device in the local network
+| [translate-file.ps1](Scripts/translate-file.ps1)     | translates the given text file into other languages
+| [translate-files.ps1](Scripts/translate-files.ps1)   | translates the given text files into any supported language
+| [translate-text.ps1](Scripts/translate-text.ps1)     | translates the given text in English into other languages
+| [weather.ps1](Scripts/weather.ps1)                   | prints the current weather forecast
+| [weather-report.ps1](Scripts/weather-report.ps1)     | prints the local weather report
+| [what-is.ps1](Scripts/what-is.ps1)                   | prints a description of the given abbreviation
+| [write-animated.ps1](Scripts/write-animated.ps1)     | writes animated text
+| [write-big.ps1](Scripts/write-big.ps1)               | writes the given text in big letters
+| [write-blue.ps1](Scripts/write-blue.ps1)             | writes the given text in a blue foreground color
+| [write-braille.ps1](Scripts/write-braille.ps1)       | writes the given text in Braille
+| [write-green.ps1](Scripts/write-green.ps1)           | writes the given text in a green foreground color
+| [write-joke.ps1](Scripts/write-joke.ps1)             | writes a random Juck Norris joke
+| [write-lowercase.ps1](Scripts/write-lowercase.ps1)   | writes the given text in lowercase letters
+| [write-marquee.ps1](Scripts/write-marquee.ps1)       | writes the given text as marquee
+| [write-morse-code.ps1](Scripts/write-morse-code.ps1) | writes the given text in Morse code
+| [write-motd.ps1](Scripts/write-motd.ps1)             | writes the message of the day (MOTD)
+| [write-quote.ps1](Scripts/write-quote.ps1)           | writes a random quote
+| [write-red.ps1](Scripts/write-red.ps1)               | writes the given text in a red foreground color
+| [write-rot13.ps1](Scripts/write-rot13.ps1)           | encodes or decodes the given text with ROT13
+| [write-typewriter.ps1](Scripts/write-typewriter.ps1) | writes the given text with the typewriter effect
+| [write-uppercase.ps1](Scripts/write-uppercase.ps1)   | writes the given text in uppercase letters
+| [write-vertical.ps1](Scripts/write-vertical.ps1)     | writes the given text in vertical direction
 
 Feedback
 --------
