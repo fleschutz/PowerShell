@@ -86,7 +86,7 @@ Mega Collection of PowerShell Scripts
 | [remove-print-jobs.ps1](Scripts/remove-print-jobs.ps1) | Removes all jobs from all printers                               | [Help](Docs/remove-print-jobs.ps1.md)   |
 | [restart-network-adapters.ps1](Scripts/restart-network-adapters.ps1) | Restarts all local network adapters                | [Help](Docs/restart-network-adapters.ps1.md)|
 | [upgrade-ubuntu.ps1](Scripts/upgrade-ubuntu.ps1)     | Upgrades Ubuntu Linux to the latest (LTS) release                  | [Help](Docs/upgrade-ubuntu.ps1.md)      |
-| [wakeup.ps1](Scripts/wakeup.ps1)                     | Sends a magic packet a computer to wake him up                     | [Help](Docs/wakeup.ps1.md)              |
+| [wakeup.ps1](Scripts/wakeup.ps1)                     | Sends a magic packet to a computer to wake him up                  | [Help](Docs/wakeup.ps1.md)              |
 
 💻 Scripts for the Desktop
 ---------------------------
