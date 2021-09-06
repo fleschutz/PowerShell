@@ -210,6 +210,7 @@ Mega Collection of PowerShell Scripts
 | [new-tag.ps1](Scripts/new-tag.ps1)                   | Creates a new tag in a Git repository                              | [Help](Docs/new-tag.ps1.md)             |
 | [pull-repo.ps1](Scripts/pull-repo.ps1)               | Pulls updates for a Git repository (including submodules)          | [Help](Docs/pull-repo.ps1.md)           |
 | [pull-repos.ps1](Scripts/pull-repos.ps1)             | Pulls updates for all Git repositories under a directory (including submodules) | [Help](Docs/pull-repos.ps1.md)|
+| [remove-tag.ps1](Scripts/remove-tag.ps1)             | Removes a tag in a Git repository                                  | [Help](Docs/remove-tag.ps1.md)       |
 | [switch-branch.ps1](Scripts/switch-branch.ps1)       | Switches the branch in a Git repository (including submodules)     | [Help](Docs/switch-branch.ps1.md)       |
 | [sync-repo.ps1](Scripts/sync-repo.ps1)               | Synchronizes a Git repository by push & pull (including submodules) | [Help](Docs/sync-repo.ps1.md)          |
 
