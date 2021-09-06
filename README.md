@@ -125,54 +125,54 @@ Mega Collection of PowerShell Scripts
 
 | Script                                               | Description                                                        | Help                                    |
 | ---------------------------------------------------- | ------------------------------------------------------------------ | --------------------------------------- |
-| [cd-desktop.ps1](Scripts/cd-desktop.ps1)             | Go to the user's desktop folder                                    | [Help](Docs/wakeup.ps1.md)              |
-| [cd-docs.ps1](Scripts/cd-docs.ps1)                   | Go to the user's documents folder                                  | [Help](Docs/wakeup.ps1.md)              |
-| [cd-downloads.ps1](Scripts/cd-downloads.ps1)         | Go to the user's downloads folder                                  | [Help](Docs/wakeup.ps1.md)              |
-| [cd-dropbox.ps1](Scripts/cd-dropbox.ps1)             | Go to the user's Dropbox folder                                    | [Help](Docs/wakeup.ps1.md)              |
-| [cd-home.ps1](Scripts/cd-home.ps1)                   | Go to the user's home folder                                       | [Help](Docs/wakeup.ps1.md)              |
-| [cd-music.ps1](Scripts/cd-music.ps1)                 | Go to the user's music folder                                      | [Help](Docs/wakeup.ps1.md)              |  
-| [cd-onedrive.ps1](Scripts/cd-onedrive.ps1)           | Go to the user's OneDrive folder                                   | [Help](Docs/wakeup.ps1.md)              |
-| [cd-pics.ps1](Scripts/cd-pics.ps1)                   | Go to the user's pictures folder                                   | [Help](Docs/wakeup.ps1.md)              |
-| [cd-recycle-bin.ps1](Scripts/cd-recycle-bin.ps1)     | Go to the user's recycle bin folder                                | [Help](Docs/wakeup.ps1.md)              |
-| [cd-repos.ps1](Scripts/cd-repos.ps1)                 | Go to the user's Git repositories folder                           | [Help](Docs/wakeup.ps1.md)              |
-| [cd-root.ps1](Scripts/cd-root.ps1)                   | Go to the root directory (C:\ on Windows)                          | [Help](Docs/wakeup.ps1.md)              |
-| [cd-scripts.ps1](Scripts/cd-scripts.ps1)             | Go to the PowerShell Scripts folder                                | [Help](Docs/wakeup.ps1.md)              |
-| [cd-up.ps1](Scripts/cd-up.ps1)                       | Go one directory level up                                          | [Help](Docs/wakeup.ps1.md)              | 
-| [cd-up2.ps1](Scripts/cd-up2.ps1)                     | Go two directory levels up                                         | [Help](Docs/wakeup.ps1.md)              |
-| [cd-up3.ps1](Scripts/cd-up3.ps1)                     | Go three directory levels up                                       | [Help](Docs/wakeup.ps1.md)              |
-| [cd-up4.ps1](Scripts/cd-up4.ps1)                     | Go four directory levels up                                        | [Help](Docs/wakeup.ps1.md)              |
-| [cd-videos.ps1](Scripts/cd-videos.ps1)               | Go to the user's videos folder                                     | [Help](Docs/wakeup.ps1.md)              |
-| [check-symlinks.ps1](Scripts/check-symlinks.ps1)     | Checks every symlink in the given directory tree                   | [Help](Docs/wakeup.ps1.md)              |
-| [check-xml-file.ps1](Scripts/check-xml-file.ps1)     | Checks the given XML file for validity                             | [Help](Docs/wakeup.ps1.md)              |
-| [clear-recycle-bin.ps1](Scripts/clear-recycle-bin.ps1) | Removes the content of the recycle bin folder (can not be undo!) | [Help](Docs/wakeup.ps1.md)              |
-| [copy-photos-sorted.ps1](Scripts/copy-photos-sorted.ps1) | Copies all photos sorted by year and month                     | [Help](Docs/wakeup.ps1.md)              |
-| [decrypt-file.ps1](Scripts/decrypt-file.ps1)         | Encrypts the given file                                            | [Help](Docs/wakeup.ps1.md)              |
-| [download-dir.ps1](Scripts/download-dir.ps1)         | Downloads a directory tree from the given URL                      | [Help](Docs/wakeup.ps1.md)              |
-| [download-file.ps1](Scripts/download-file.ps1)       | Downloads a file from the given URL                                | [Help](Docs/wakeup.ps1.md)              |
-| [edit.ps1](Scripts/edit.ps1)                         | Edits the given file with the built-in text editor                 | [Help](Docs/wakeup.ps1.md)              |
-| [encrypt-file.ps1](Scripts/encrypt-file.ps1)         | Encrypts the given file                                            | [Help](Docs/wakeup.ps1.md)              |
-| [inspect-exe.ps1](Scripts/inspect-exe.ps1)           | Prints basic information of the given executable file              | [Help](Docs/wakeup.ps1.md)              |
-| [list-dir.ps1](Scripts/list-dir.ps1)                 | Lists the directory content (formatted in columns)                 | [Help](Docs/wakeup.ps1.md)              |
-| [list-dir-tree.ps1](Scripts/list-dir-tree.ps1)       | Lists the directory tree content                                   | [Help](Docs/wakeup.ps1.md)              |
-| [list-empty-dirs.ps1](Scripts/list-empty-dirs.ps1)   | Lists empty subfolders within the given directory tree             | [Help](Docs/wakeup.ps1.md)              |
-| [list-empty-files.ps1](Scripts/list-empty-files.ps1) | Lists empty files within the given directory tree                  | [Help](Docs/wakeup.ps1.md)              |
-| [list-files.ps1](Scripts/list-files.ps1)             | Lists all files in the given folder and also in every subfolder    | [Help](Docs/wakeup.ps1.md)              |
-| [list-hidden-files.ps1](Scripts/list-hidden-files.ps1) | Lists hidden files within the given directory tree               | [Help](Docs/wakeup.ps1.md)              |
-| [list-recycle-bin.ps1](Scripts/list-recycle-bin.ps1) | Lists the content of the recycle bin folder                        | [Help](Docs/wakeup.ps1.md)              |
-| [list-unused-files.ps1](Scripts/list-unused-files.ps1) | Lists unused files in a directory tree                           | [Help](Docs/wakeup.ps1.md)              |
-| [list-workdir.ps1](Scripts/list-workdir.ps1)         | Lists the current working directory                                | [Help](Docs/wakeup.ps1.md)              |
-| [make-install.ps1](Scripts/make-install.ps1)         | Installs built executables and libs to the installation directory  | [Help](Docs/wakeup.ps1.md)              |
-| [MD5.ps1](Scripts/MD5.ps1)                           | Prints the MD5 checksum of the given file                          | [Help](Docs/wakeup.ps1.md)              |
-| [new-shortcut.ps1](Scripts/new-shortcut.ps1)         | Creates a new shortcut                                             | [Help](Docs/wakeup.ps1.md)              |
-| [new-symlink.ps1](Scripts/new-symlink.ps1)           | Creates a new symbolic link                                        | [Help](Docs/wakeup.ps1.md)              |
-| [new-zipfile.ps1](Scripts/new-zipfile.ps1)           | Creates a new .zip file from a directory                           | [Help](Docs/wakeup.ps1.md)              |
-| [publish-to-ipfs.ps1](Scripts/publish-to-ipfs.ps1)   | Publishes the given files or directory to IPFS                     | [Help](Docs/wakeup.ps1.md)              |
-| [remove-empty-dirs.ps1](Scripts/remove-empty-dirs.ps1) | Removes empty subfolders within the given directory tree         | [Help](Docs/wakeup.ps1.md)              |
-| [search-filename.ps1](Scripts/search-filename.ps1)   | Searches the directory tree for filenames by given pattern         | [Help](Docs/wakeup.ps1.md)              |
-| [search-files.ps1](Scripts/search-files.ps1)         | Searches the given pattern in the given files                      | [Help](Docs/wakeup.ps1.md)              |
-| [SHA1.ps1](Scripts/SHA1.ps1)                         | Prints the SHA1 checksum of the given file                         | [Help](Docs/wakeup.ps1.md)              |
-| [SHA256.ps1](Scripts/SHA256.ps1)                     | Prints the SHA256 checksum of the given file                       | [Help](Docs/wakeup.ps1.md)              |
-| [upload-file.ps1](Scripts/upload-file.ps1)           | Uploads the local file to the given FTP server                     | [Help](Docs/wakeup.ps1.md)              |
+| [cd-desktop.ps1](Scripts/cd-desktop.ps1)             | Go to the user's desktop folder                                    | [Help](Docs/cd-desktop.ps1.md)          |
+| [cd-docs.ps1](Scripts/cd-docs.ps1)                   | Go to the user's documents folder                                  | [Help](Docs/cd-docs.ps1.md)             |
+| [cd-downloads.ps1](Scripts/cd-downloads.ps1)         | Go to the user's downloads folder                                  | [Help](Docs/cd-downloads.ps1.md)        |
+| [cd-dropbox.ps1](Scripts/cd-dropbox.ps1)             | Go to the user's Dropbox folder                                    | [Help](Docs/cd-dropbox.ps1.md)          |
+| [cd-home.ps1](Scripts/cd-home.ps1)                   | Go to the user's home folder                                       | [Help](Docs/cd-home.ps1.md)             |
+| [cd-music.ps1](Scripts/cd-music.ps1)                 | Go to the user's music folder                                      | [Help](Docs/cd-music.ps1.md)            |  
+| [cd-onedrive.ps1](Scripts/cd-onedrive.ps1)           | Go to the user's OneDrive folder                                   | [Help](Docs/cd-onedrive.ps1.md)         |
+| [cd-pics.ps1](Scripts/cd-pics.ps1)                   | Go to the user's pictures folder                                   | [Help](Docs/cd-pics.ps1.md)             |
+| [cd-recycle-bin.ps1](Scripts/cd-recycle-bin.ps1)     | Go to the user's recycle bin folder                                | [Help](Docs/cd-recycle-bin.ps1.md)      |
+| [cd-repos.ps1](Scripts/cd-repos.ps1)                 | Go to the user's Git repositories folder                           | [Help](Docs/cd-repos.ps1.md)            |
+| [cd-root.ps1](Scripts/cd-root.ps1)                   | Go to the root directory (C:\ on Windows)                          | [Help](Docs/cd-root.ps1.md)             |
+| [cd-scripts.ps1](Scripts/cd-scripts.ps1)             | Go to the PowerShell Scripts folder                                | [Help](Docs/cd-scripts.ps1.md)          |
+| [cd-up.ps1](Scripts/cd-up.ps1)                       | Go one directory level up                                          | [Help](Docs/cd-up.ps1.md)               | 
+| [cd-up2.ps1](Scripts/cd-up2.ps1)                     | Go two directory levels up                                         | [Help](Docs/cd-up2.ps1.md)              |
+| [cd-up3.ps1](Scripts/cd-up3.ps1)                     | Go three directory levels up                                       | [Help](Docs/cd-up3.ps1.md)              |
+| [cd-up4.ps1](Scripts/cd-up4.ps1)                     | Go four directory levels up                                        | [Help](Docs/cd-up4.ps1.md)              |
+| [cd-videos.ps1](Scripts/cd-videos.ps1)               | Go to the user's videos folder                                     | [Help](Docs/cd-videos.ps1.md)           |
+| [check-symlinks.ps1](Scripts/check-symlinks.ps1)     | Checks every symlink in the given directory tree                   | [Help](Docs/check-symlinks.ps1.md)      |
+| [check-xml-file.ps1](Scripts/check-xml-file.ps1)     | Checks the given XML file for validity                             | [Help](Docs/check-xml-file.ps1.md)      |
+| [clear-recycle-bin.ps1](Scripts/clear-recycle-bin.ps1) | Removes the content of the recycle bin folder (can not be undo!) | [Help](Docs/clear-recycle-bin.ps1.md)   |
+| [copy-photos-sorted.ps1](Scripts/copy-photos-sorted.ps1) | Copies all photos sorted by year and month                     | [Help](Docs/copy-photos-sorted.ps1.md)  |
+| [decrypt-file.ps1](Scripts/decrypt-file.ps1)         | Encrypts the given file                                            | [Help](Docs/decrypt-files.ps1.md)       |
+| [download-dir.ps1](Scripts/download-dir.ps1)         | Downloads a directory tree from the given URL                      | [Help](Docs/download-dir.ps1.md)        |
+| [download-file.ps1](Scripts/download-file.ps1)       | Downloads a file from the given URL                                | [Help](Docs/download-file.ps1.md)       |
+| [edit.ps1](Scripts/edit.ps1)                         | Edits the given file with the built-in text editor                 | [Help](Docs/edit.ps1.md)                |
+| [encrypt-file.ps1](Scripts/encrypt-file.ps1)         | Encrypts the given file                                            | [Help](Docs/encrypt-file.ps1.md)        |
+| [inspect-exe.ps1](Scripts/inspect-exe.ps1)           | Prints basic information of the given executable file              | [Help](Docs/inspect-exe.ps1.md)         |
+| [list-dir.ps1](Scripts/list-dir.ps1)                 | Lists the directory content (formatted in columns)                 | [Help](Docs/list-dir.ps1.md)            |
+| [list-dir-tree.ps1](Scripts/list-dir-tree.ps1)       | Lists the directory tree content                                   | [Help](Docs/list-dir-treep.ps1.md)      |
+| [list-empty-dirs.ps1](Scripts/list-empty-dirs.ps1)   | Lists empty subfolders within the given directory tree             | [Help](Docs/list-empty-dirs.ps1.md)     |
+| [list-empty-files.ps1](Scripts/list-empty-files.ps1) | Lists empty files within the given directory tree                  | [Help](Docs/list-empty-files.ps1.md)    |
+| [list-files.ps1](Scripts/list-files.ps1)             | Lists all files in the given folder and also in every subfolder    | [Help](Docs/list-files.ps1.md)          |
+| [list-hidden-files.ps1](Scripts/list-hidden-files.ps1) | Lists hidden files within the given directory tree               | [Help](Docs/list-hidden-files.ps1.md)   |
+| [list-recycle-bin.ps1](Scripts/list-recycle-bin.ps1) | Lists the content of the recycle bin folder                        | [Help](Docs/list-recycle-bin.ps1.md)    |
+| [list-unused-files.ps1](Scripts/list-unused-files.ps1) | Lists unused files in a directory tree                           | [Help](Docs/list-unused-files.ps1.md)   |
+| [list-workdir.ps1](Scripts/list-workdir.ps1)         | Lists the current working directory                                | [Help](Docs/list-workdir.ps1.md)        |
+| [make-install.ps1](Scripts/make-install.ps1)         | Installs built executables and libs to the installation directory  | [Help](Docs/make-install.ps1.md)        |
+| [MD5.ps1](Scripts/MD5.ps1)                           | Prints the MD5 checksum of the given file                          | [Help](Docs/MD5.ps1.md)                 |
+| [new-shortcut.ps1](Scripts/new-shortcut.ps1)         | Creates a new shortcut                                             | [Help](Docs/new-shortcut.ps1.md)        |
+| [new-symlink.ps1](Scripts/new-symlink.ps1)           | Creates a new symbolic link                                        | [Help](Docs/new-symlink.ps1.md)         |
+| [new-zipfile.ps1](Scripts/new-zipfile.ps1)           | Creates a new .zip file from a directory                           | [Help](Docs/new-zipfile.ps1.md)         |
+| [publish-to-ipfs.ps1](Scripts/publish-to-ipfs.ps1)   | Publishes the given files or directory to IPFS                     | [Help](Docs/publish-to-ipfs.ps1.md)     |
+| [remove-empty-dirs.ps1](Scripts/remove-empty-dirs.ps1) | Removes empty subfolders within the given directory tree         | [Help](Docs/remove-empty-dirs.ps1.md)   |
+| [search-filename.ps1](Scripts/search-filename.ps1)   | Searches the directory tree for filenames by given pattern         | [Help](Docs/search-filename.ps1.md)     |
+| [search-files.ps1](Scripts/search-files.ps1)         | Searches the given pattern in the given files                      | [Help](Docs/search-files.ps1.md)        |
+| [SHA1.ps1](Scripts/SHA1.ps1)                         | Prints the SHA1 checksum of the given file                         | [Help](Docs/SHA1.ps1.md)                |
+| [SHA256.ps1](Scripts/SHA256.ps1)                     | Prints the SHA256 checksum of the given file                       | [Help](Docs/SHA256.ps1.md)              |
+| [upload-file.ps1](Scripts/upload-file.ps1)           | Uploads the local file to the given FTP server                     | [Help](Docs/upload-file.ps1.md)         |
 
 ♻️ Scripts to Convert Files
 ---------------------------
