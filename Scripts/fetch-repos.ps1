@@ -26,11 +26,12 @@ try {
 	$ParentDirName = (get-item "$ParentDir").Name
 	"Fetching updates for $FolderCount Git repositories at 📂$ParentDirName..."
 
+	[int]$Step = 1
 	foreach ($Folder in $Folders) {
 		$FolderName = (get-item "$Folder").Name
-		"🢃 Fetching 📂$FolderName..."
+		"Step $Step/$FolderCount: 🢃 Fetching 📂$($FolderName)..."
 
-		& git -C "$Folder" fetch --all --recurse-submodules --jobs=4
+		& git -C "$Folder" fetch --all --recurse-submodules --prune --prune-tags --jobs=4
 		if ($lastExitCode -ne "0") { throw "'git fetch' failed" }
 	}
 
