@@ -33,6 +33,8 @@ try {
 
 		& git -C "$Folder" fetch --all --recurse-submodules --prune --prune-tags --jobs=4
 		if ($lastExitCode -ne "0") { throw "'git fetch' failed" }
+
+		$Step++
 	}
 
 	[int]$Elapsed = $StopWatch.Elapsed.TotalSeconds
