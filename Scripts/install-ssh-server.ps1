@@ -15,9 +15,13 @@
 try {
 	$StopWatch = [system.diagnostics.stopwatch]::startNew()
 
-	Add-WindowsCapability -Online -Name OpenSSH.Server*
-	Start-Service sshd
-	Set-Service -Name sshd -StartupType 'Automatic'
+	if ($IsLinux) {
+		apt install openssh-server
+	} else {
+		Add-WindowsCapability -Online -Name OpenSSH.Server*
+		Start-Service sshd
+		Set-Service -Name sshd -StartupType 'Automatic'
+	}
 
 	[int]$Elapsed = $StopWatch.Elapsed.TotalSeconds
 	"✔️ installed SSH server in $Elapsed sec"

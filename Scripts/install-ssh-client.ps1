@@ -15,7 +15,11 @@
 try {
 	$StopWatch = [system.diagnostics.stopwatch]::startNew()
 
-	Add-WindowsCapability -Online -Name OpenSSH.Client*
+	if ($IsLinux) {
+		apt install openssh-client
+	} else {
+		Add-WindowsCapability -Online -Name OpenSSH.Client*
+	}
 
 	[int]$Elapsed = $StopWatch.Elapsed.TotalSeconds
 	"✔️ installed SSH client in $Elapsed sec"
