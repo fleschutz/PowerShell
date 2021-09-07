@@ -1,22 +1,22 @@
 ﻿<#
 .SYNOPSIS
-	SHA1.ps1 [<file>]
+	get-sha1.ps1 [<file>]
 .DESCRIPTION
-	Prints the SHA1 checksum of the given file.
+	Prints the SHA1 checksum of the given file
 .EXAMPLE
-	PS> .\SHA1.ps1 C:\MyFile.txt
+	PS> .\get-sha1.ps1 C:\MyFile.txt
 .NOTES
 	Author: Markus Fleschutz · License: CC0
 .LINK
 	https://github.com/fleschutz/PowerShell
 #>
 
-param([string]$File = "")
+param([string]$file = "")
 
 try {
-	if ($File -eq "" ) { $File = read-host "Enter the filename" }
+	if ($file -eq "" ) { $file = read-host "Enter the filename" }
 
-	$Result = get-filehash $File -algorithm SHA1
+	$Result = get-filehash $file -algorithm SHA1
 
 	"✔️ SHA1 hash is" $Result.Hash
 	exit 0

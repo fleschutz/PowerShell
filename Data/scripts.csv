@@ -71,6 +71,8 @@ encrypt-file.ps1, encrypts the given file
 fetch-repo.ps1, fetches updates for the current/given Git repository (including submodules)
 fetch-repos.ps1, fetches updates for all Git repositories under the current/given directory (including submodules)
 get-md5.ps1, prints the MD5 checksum of the given file
+get-sha1.ps1, prints the SHA1 checksum of the given file
+get-sha256.ps1, prints the SHA256 checksum of the given file
 hibernate.ps1, enables hibernate mode for the local computer (needs admin rights)
 inspect-exe.ps1, prints basic information of the given executable file
 install-github-cli.ps1, installs GitHub CLI
@@ -195,8 +197,6 @@ send-udp.ps1, sends a UDP datagram message to the given IP address and port
 set-profile.ps1, updates your PowerShell user profile
 set-timer.ps1, sets a timer for a countdown
 set-wallpaper.ps1, sets the given image as wallpaper
-SHA1.ps1, prints the SHA1 checksum of the given file
-SHA256.ps1, prints the SHA256 checksum of the given file
 simulate-matrix.ps1, simulates the Matrix (fun)
 simulate-presence.ps1, simulates the human presence against burglars
 speak-checklist.ps1, speaks the given checklist by text-to-speech (TTS)

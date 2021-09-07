@@ -151,6 +151,9 @@ Mega Collection of PowerShell Scripts
 | [download-file.ps1](Scripts/download-file.ps1)       | Downloads a file from the given URL                                | [Help](Docs/download-file.ps1.md)       |
 | [edit.ps1](Scripts/edit.ps1)                         | Edits the given file with the built-in text editor                 | [Help](Docs/edit.ps1.md)                |
 | [encrypt-file.ps1](Scripts/encrypt-file.ps1)         | Encrypts the given file                                            | [Help](Docs/encrypt-file.ps1.md)        |
+| [get-md5.ps1](Scripts/get-md5.ps1)                   | Prints the MD5 checksum of the given file                          | [Help](Docs/get-md5.ps1.md)             |
+| [get-sha1.ps1](Scripts/get-sha1.ps1)                 | Prints the SHA1 checksum of the given file                         | [Help](Docs/get-sha1.ps1.md)            |
+| [get-sha256.ps1](Scripts/get-sha256.ps1)             | Prints the SHA256 checksum of the given file                       | [Help](Docs/get-sha256.ps1.md)          |
 | [inspect-exe.ps1](Scripts/inspect-exe.ps1)           | Prints basic information of the given executable file              | [Help](Docs/inspect-exe.ps1.md)         |
 | [list-dir.ps1](Scripts/list-dir.ps1)                 | Lists the directory content (formatted in columns)                 | [Help](Docs/list-dir.ps1.md)            |
 | [list-dir-tree.ps1](Scripts/list-dir-tree.ps1)       | Lists the directory tree content                                   | [Help](Docs/list-dir-treep.ps1.md)      |
@@ -162,7 +165,6 @@ Mega Collection of PowerShell Scripts
 | [list-unused-files.ps1](Scripts/list-unused-files.ps1) | Lists unused files in a directory tree                           | [Help](Docs/list-unused-files.ps1.md)   |
 | [list-workdir.ps1](Scripts/list-workdir.ps1)         | Lists the current working directory                                | [Help](Docs/list-workdir.ps1.md)        |
 | [make-install.ps1](Scripts/make-install.ps1)         | Installs built executables and libs to the installation directory  | [Help](Docs/make-install.ps1.md)        |
-| [get-md5.ps1](Scripts/get-md5.ps1)                   | Prints the MD5 checksum of the given file                          | [Help](Docs/get-md5.ps1.md)             |
 | [new-shortcut.ps1](Scripts/new-shortcut.ps1)         | Creates a new shortcut                                             | [Help](Docs/new-shortcut.ps1.md)        |
 | [new-symlink.ps1](Scripts/new-symlink.ps1)           | Creates a new symbolic link                                        | [Help](Docs/new-symlink.ps1.md)         |
 | [new-zipfile.ps1](Scripts/new-zipfile.ps1)           | Creates a new .zip file from a directory                           | [Help](Docs/new-zipfile.ps1.md)         |
@@ -170,8 +172,6 @@ Mega Collection of PowerShell Scripts
 | [remove-empty-dirs.ps1](Scripts/remove-empty-dirs.ps1) | Removes empty subfolders within the given directory tree         | [Help](Docs/remove-empty-dirs.ps1.md)   |
 | [search-filename.ps1](Scripts/search-filename.ps1)   | Searches the directory tree for filenames by given pattern         | [Help](Docs/search-filename.ps1.md)     |
 | [search-files.ps1](Scripts/search-files.ps1)         | Searches the given pattern in the given files                      | [Help](Docs/search-files.ps1.md)        |
-| [SHA1.ps1](Scripts/SHA1.ps1)                         | Prints the SHA1 checksum of the given file                         | [Help](Docs/SHA1.ps1.md)                |
-| [SHA256.ps1](Scripts/SHA256.ps1)                     | Prints the SHA256 checksum of the given file                       | [Help](Docs/SHA256.ps1.md)              |
 | [upload-file.ps1](Scripts/upload-file.ps1)           | Uploads the local file to the given FTP server                     | [Help](Docs/upload-file.ps1.md)         |
 
 ♻️ Scripts to Convert Files
