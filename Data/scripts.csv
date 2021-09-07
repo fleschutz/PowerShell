@@ -70,7 +70,7 @@ enable-god-mode.ps1, enables the god mode (adds a new icon to the desktop)
 encrypt-file.ps1, encrypts the given file
 fetch-repo.ps1, fetches updates for the current/given Git repository (including submodules)
 fetch-repos.ps1, fetches updates for all Git repositories under the current/given directory (including submodules)
-generate-qrcode.ps1, generates a QR code
+get-md5.ps1, prints the MD5 checksum of the given file
 hibernate.ps1, enables hibernate mode for the local computer (needs admin rights)
 inspect-exe.ps1, prints basic information of the given executable file
 install-github-cli.ps1, installs GitHub CLI
@@ -145,7 +145,6 @@ list-workdir.ps1, lists the current working directory
 locate-city.ps1, prints the geographic location of the given city
 locate-ipaddress.ps1, prints the geographic location of the given IP address
 locate-zip-code.ps1, prints the geographic location of the given zip-code
-MD5.ps1, prints the MD5 checksum of the given file
 make-install.ps1, installs built executables and libs to the installation directory
 make-repo.ps1, builds the current/given Git repository 
 make-repos.ps1, builds all Git repositories under the current/given directory
@@ -175,6 +174,7 @@ pull-repos.ps1, pulls updates for all Git repositories under the current/given d
 query-smart-data.ps1, queries the S.M.A.R.T. data of your HDD/SSD's and saves it to the current/given directory
 new-branch.ps1, creates a new branch in the current/given Git repository 
 new-email.ps1, starts the default email client to write a new email
+new-qrcode.ps1, generates a new QR code
 new-script.ps1, creates a new PowerShell script
 new-shortcut.ps1, creates a new shortcut
 new-symlink.ps1, creates a new symbolic link

@@ -162,7 +162,7 @@ Mega Collection of PowerShell Scripts
 | [list-unused-files.ps1](Scripts/list-unused-files.ps1) | Lists unused files in a directory tree                           | [Help](Docs/list-unused-files.ps1.md)   |
 | [list-workdir.ps1](Scripts/list-workdir.ps1)         | Lists the current working directory                                | [Help](Docs/list-workdir.ps1.md)        |
 | [make-install.ps1](Scripts/make-install.ps1)         | Installs built executables and libs to the installation directory  | [Help](Docs/make-install.ps1.md)        |
-| [MD5.ps1](Scripts/MD5.ps1)                           | Prints the MD5 checksum of the given file                          | [Help](Docs/MD5.ps1.md)                 |
+| [get-md5.ps1](Scripts/get-md5.ps1)                   | Prints the MD5 checksum of the given file                          | [Help](Docs/get-md5.ps1.md)             |
 | [new-shortcut.ps1](Scripts/new-shortcut.ps1)         | Creates a new shortcut                                             | [Help](Docs/new-shortcut.ps1.md)        |
 | [new-symlink.ps1](Scripts/new-symlink.ps1)           | Creates a new symbolic link                                        | [Help](Docs/new-symlink.ps1.md)         |
 | [new-zipfile.ps1](Scripts/new-zipfile.ps1)           | Creates a new .zip file from a directory                           | [Help](Docs/new-zipfile.ps1.md)         |
