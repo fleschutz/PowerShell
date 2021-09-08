@@ -2,7 +2,7 @@
 .SYNOPSIS
 	check-drive-space.ps1 [<drive>] [<min-level>]
 .DESCRIPTION
-	Checks the given drive for free space left.
+	Checks a drive for free space left (20 GB by default)
 .EXAMPLE
 	PS> .\check-drive-space.ps1 C
 .LINK

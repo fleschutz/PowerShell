@@ -50,8 +50,8 @@ Mega Collection of PowerShell Scripts
 | [add-firewall-rules.ps1](Scripts/add-firewall-rules.ps1) | Adds firewall rules for the given executables (needs admin rights) | [Help](Docs/add-firewall-rules.ps1.md) |
 | [check-cpu-temp.ps1](Scripts/check-cpu-temp.ps1)     | Checks the CPU temperature                                         | [Help](Docs/check-cpu-temp.ps1.md)      |
 | [check-dns-resolution.ps1](Scripts/check-dns-resolution.ps1) | Checks the DNS resolution with frequently used domain names| [Help](Docs/check-dns-resolution.ps1.md)|
-| [check-drive-space.ps1](Scripts/check-drive-space.ps1) | Checks the given drive for free space left                       | [Help](Docs/check-drive-space.ps1.md)   |
-| [check-file-system.ps1](Scripts/check-file-system.ps1) | Checks the validity of the file system (needs admin rights)      | [Help](Docs/check-file-system.ps1.md)   |
+| [check-drive-space.ps1](Scripts/check-drive-space.ps1) | Checks a drive for free space left                               | [Help](Docs/check-drive-space.ps1.md)   |
+| [check-file-system.ps1](Scripts/check-file-system.ps1) | Checks the file system of a drive (needs admin rights)           | [Help](Docs/check-file-system.ps1.md)   |
 | [check-health.ps1](Scripts/check-health.ps1)         | Checks the system health                                           | [Help](Docs/check-health.ps1.md)        |
 | [check-ping.ps1](Scripts/check-ping.ps1)             | Checks the ping latency to the internet                            | [Help](Docs/check-ping.ps1.md)          |
 | [check-swap-space.ps1](Scripts/check-swap-space.ps1) | Checks the swap space for free space left                          | [Help](Docs/check-swap-space.ps1.md)    |

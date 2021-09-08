@@ -3,7 +3,7 @@
 .SYNOPSIS
 	check-file-system.ps1 [<drive>] 
 .DESCRIPTION
-	Checks the validity of the file system (needs admin rights).
+	Checks the file system of a drive (needs admin rights)
 .EXAMPLE
 	PS> .\check-file-system.ps1 C
 .LINK
