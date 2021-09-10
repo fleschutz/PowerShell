@@ -18,10 +18,11 @@ try {
 	if ($EmailAddress -eq "") { $EmailAddress = read-host "Enter your e-mail address"}
 	if ($FavoriteEditor -eq "") { $FavoriteEditor = read-host "Enter your favorite text editor (emacs,nano,vi,vim,...)" }
 
-	$Null = (git --version)
+	"Step 1/3: Searching Git..."
+	& git --version
 	if ($lastExitCode -ne "0") { throw "Can't execute 'git' - make sure Git is installed and available" }
 
-	# Basic settings:
+	"Step 2/3: Configuring basic settings..."
 	& git config --global user.name $FullName
 	& git config --global user.email $EmailAddress
 	& git config --global core.editor $FavoriteEditor
@@ -32,9 +33,9 @@ try {
 	& git config --global init.defaultBranch main
 	& git config --global merge.renamelimit 99999
 	& git config --global pull.rebase false
-	if ($lastExitCode -ne "0") { throw "'git config' failed (in basic settings)" }
+	if ($lastExitCode -ne "0") { throw "'git config' failed" }
 
-	# Basic shortcuts:
+	"Step 3/3: Adding basic shortcuts..."
 	& git config --global alias.co "checkout"
 	& git config --global alias.br "branch"
 	& git config --global alias.ci "commit"
@@ -45,7 +46,7 @@ try {
 	& git config --global alias.chp "cherry-pick --no-commit"
 	& git config --global alias.ls "log -n20 --pretty=format:'%Cred%h%Creset%C(yellow)%d%Creset %s %C(bold blue)by %an%Creset %C(green)%cr%Creset' --abbrev-commit"
 	& git config --global alias.smu "submodule update --init"
-	if ($lastExitCode -ne "0") { throw "'git config' failed (in basic shortcuts)" }
+	if ($lastExitCode -ne "0") { throw "'git config' failed" }
 
 	"✔️ saved your Git configuration, it's now:"
 	& git config --list
