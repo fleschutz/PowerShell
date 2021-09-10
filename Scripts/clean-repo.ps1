@@ -17,8 +17,8 @@ try {
 	$StopWatch = [system.diagnostics.stopwatch]::startNew()
 
 	if (-not(test-path "$RepoDir" -pathType container)) { throw "Can't access directory: $RepoDir" }
+	
 	$RepoDirName = (get-item "$RepoDir").Name
-
 	"🧹 Cleaning Git repository 📂$RepoDirName from untracked files..."
 
 	$Null = (git --version)
