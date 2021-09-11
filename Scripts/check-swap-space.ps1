@@ -33,10 +33,10 @@ try {
 		exit 1
 	}
 	if ($Free -lt $MinLevel) {
-        	write-warning "Swap space has only $Free GB left to use! ($Used GB out of $Total GB in use, minimum is $MinLevel GB)"
+        	write-warning "Swap space has only $Free GB left to use! ($Used of $Total GB used, minimum is $MinLevel GB)"
 		exit 1
 	}
-	"✔️ $Free GB left on swap space ($Used GB of $Total GB used)"
+	"✔️ $Free GB left on swap space ($Used of $Total GB used)"
 	exit 0
 } catch {
 	write-error "⚠️ Error in line $($_.InvocationInfo.ScriptLineNumber): $($Error[0])"
