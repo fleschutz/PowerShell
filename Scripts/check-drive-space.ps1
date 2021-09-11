@@ -22,10 +22,10 @@ try {
 	[int]$Total = ($Used + $Free)
 
 	if ($Free -lt $MinLevel) {
-        	write-warning "Drive $Drive has only $Free GB left to use! ($Used GB out of $Total GB in use, minimum is $MinLevel GB)"
+        	write-warning "Drive $Drive has only $Free GB left to use! ($Used of $Total GB used, minimum is $MinLevel GB)"
 		exit 1
 	}
-	"✔️ $Free GB left on drive $Drive ($Used GB of $Total GB used)"
+	"✔️ $Free GB left on drive $Drive ($Used of $Total GB used)"
 	exit 0
 } catch {
 	write-error "⚠️ Error in line $($_.InvocationInfo.ScriptLineNumber): $($Error[0])"
