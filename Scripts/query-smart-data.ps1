@@ -1,5 +1,4 @@
-﻿#Requires -RunAsAdministrator
-<#
+﻿<#
 .SYNOPSIS
 	query-smart-data.ps1 [<directory>]
 .DESCRIPTION
@@ -14,6 +13,8 @@
 .LINK
 	https://github.com/fleschutz/PowerShell
 #>
+
+#Requires -RunAsAdministrator
 
 param([string]$Directory = "")
 

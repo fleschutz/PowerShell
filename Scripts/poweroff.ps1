@@ -1,5 +1,4 @@
-﻿#Requires -RunAsAdministrator
-<#
+﻿<#
 .SYNOPSIS
 	poweroff.ps1
 .DESCRIPTION
@@ -11,6 +10,8 @@
 .LINK
 	https://github.com/fleschutz/PowerShell
 #>
+
+#Requires -RunAsAdministrator
 
 try {
 	Stop-Computer

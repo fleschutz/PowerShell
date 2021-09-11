@@ -10,7 +10,7 @@
 .LINK
 	https://github.com/fleschutz/PowerShell
 #>
-#
+
 #Requires -Version 2.0
 
 try {

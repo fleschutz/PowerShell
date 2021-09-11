@@ -1,5 +1,4 @@
-﻿#Requires -Version 3
-<#
+﻿<#
 .SYNOPSIS
 	list-fritzbox-calls.ps1 [<username>] [<password>]
 .DESCRIPTION
@@ -11,6 +10,8 @@
 .LINK
 	https://github.com/fleschutz/PowerShell
 #>
+
+#Requires -Version 3
 
 param([string]$Username = "", [string]$Password = "")
 

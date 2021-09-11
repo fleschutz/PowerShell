@@ -1,5 +1,4 @@
-﻿#Requires -RunAsAdministrator
-<#
+﻿<#
 .SYNOPSIS
 	restart-network-adapters.ps1
 .DESCRIPTION
@@ -11,6 +10,8 @@
 .LINK
 	htts://github.com/fleschutz/PowerShell
 #>
+
+#Requires -RunAsAdministrator
 
 try {
 	$StopWatch = [system.diagnostics.stopwatch]::startNew()

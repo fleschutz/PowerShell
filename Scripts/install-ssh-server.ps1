@@ -1,5 +1,4 @@
-﻿#Requires -RunAsAdministrator
-<#
+﻿<#
 .SYNOPSIS
 	install-ssh-server.ps1
 .DESCRIPTION
@@ -11,6 +10,8 @@
 .LINK
 	https://github.com/fleschutz/PowerShell
 #>
+
+#Requires -RunAsAdministrator
 
 try {
 	$StopWatch = [system.diagnostics.stopwatch]::startNew()

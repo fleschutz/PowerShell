@@ -1,5 +1,4 @@
-﻿#Requires -RunAsAdministrator
-<#
+﻿<#
 .SYNOPSIS
 	check-windows-system-files.ps1 
 .DESCRIPTION
@@ -11,6 +10,8 @@
 .NOTES
 	Author: Markus Fleschutz · License: CC0
 #>
+
+#Requires -RunAsAdministrator
 
 try {
 	sfc /verifyOnly

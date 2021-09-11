@@ -1,5 +1,4 @@
-﻿#requires -version 4
-<#
+﻿<#
 .SYNOPSIS
 	remove-print-jobs.ps1
 .DESCRIPTION
@@ -11,6 +10,8 @@
 .LINK
 	https://github.com/fleschutz/PowerShell
 #>
+
+#Requires -Version 4
 
 try {
 	$printers = Get-Printer
