@@ -2,7 +2,7 @@
 .SYNOPSIS
 	configure-git.ps1 [<full-name>] [<email-address>] [<favorite-editor>]
 .DESCRIPTION
-	Sets up the Git user configuration.
+	Sets up the Git user configuration
 .EXAMPLE
 	PS> .\configure-git.ps1
 .NOTES
@@ -18,7 +18,7 @@ try {
 	if ($EmailAddress -eq "") { $EmailAddress = read-host "Enter your e-mail address"}
 	if ($FavoriteEditor -eq "") { $FavoriteEditor = read-host "Enter your favorite text editor (emacs,nano,vi,vim,...)" }
 
-	"Step 1/3: Searching Git..."
+	"Step 1/3: Searching for Git..."
 	& git --version
 	if ($lastExitCode -ne "0") { throw "Can't execute 'git' - make sure Git is installed and available" }
 
@@ -35,7 +35,7 @@ try {
 	& git config --global pull.rebase false
 	if ($lastExitCode -ne "0") { throw "'git config' failed" }
 
-	"Step 3/3: Adding basic shortcuts..."
+	"Step 3/3: Adding basic shortcuts (git st, git ls, etc.)..."
 	& git config --global alias.co "checkout"
 	& git config --global alias.br "branch"
 	& git config --global alias.ci "commit"
