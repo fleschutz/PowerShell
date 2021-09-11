@@ -51,7 +51,7 @@ close-system-settings.ps1, closes the System Settings gracefully
 close-thunderbird.ps1, closes Mozilla Thunderbird gracefully
 close-vlc.ps1, closes the VLC media player gracefully
 close-windows-terminal.ps1, closes Windows Terminal gracefully
-copy-photos-sorted.ps1, Copies all photos sorted by year and month 
+copy-photos-sorted.ps1, Copy image files sorted by year and month 
 configure-git.ps1, sets up the Git user configuration
 convert-csv2txt.ps1, converts the given CSV file into a text list
 convert-mysql2csv.ps1, converts the MySQL database table to a CSV file

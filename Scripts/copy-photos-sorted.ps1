@@ -2,7 +2,7 @@
 .SYNOPSIS
 	copy-photos-sorted.ps1 [<SourceDir>] [<TargetDir>]
 .DESCRIPTION
-	Copies all photos in SourceDir to TargetDir sorted by year and month.
+	Copy image files from SourceDir to TargetDir sorted by year and month.
 .EXAMPLE
 	PS> .\copy-photos-sorted.ps1 D:\Mobile\DCIM C:\MyPhotoAlbum
 .NOTES

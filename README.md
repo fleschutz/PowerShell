@@ -145,7 +145,7 @@ Mega Collection of PowerShell Scripts
 | [check-symlinks.ps1](Scripts/check-symlinks.ps1)     | Checks every symlink in the given directory tree                   | [Help](Docs/check-symlinks.ps1.md)      |
 | [check-xml-file.ps1](Scripts/check-xml-file.ps1)     | Checks the given XML file for validity                             | [Help](Docs/check-xml-file.ps1.md)      |
 | [clear-recycle-bin.ps1](Scripts/clear-recycle-bin.ps1) | Removes the content of the recycle bin folder (can not be undo!) | [Help](Docs/clear-recycle-bin.ps1.md)   |
-| [copy-photos-sorted.ps1](Scripts/copy-photos-sorted.ps1) | Copies all photos sorted by year and month                     | [Help](Docs/copy-photos-sorted.ps1.md)  |
+| [copy-photos-sorted.ps1](Scripts/copy-photos-sorted.ps1) | Copy image files sorted by year and month                     | [Help](Docs/copy-photos-sorted.ps1.md)  |
 | [decrypt-file.ps1](Scripts/decrypt-file.ps1)         | Encrypts the given file                                            | [Help](Docs/decrypt-files.ps1.md)       |
 | [download-dir.ps1](Scripts/download-dir.ps1)         | Downloads a directory tree from the given URL                      | [Help](Docs/download-dir.ps1.md)        |
 | [download-file.ps1](Scripts/download-file.ps1)       | Downloads a file from the given URL                                | [Help](Docs/download-file.ps1.md)       |
