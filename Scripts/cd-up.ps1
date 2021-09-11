@@ -2,7 +2,7 @@
 .SYNOPSIS
 	cd-up.ps1
 .DESCRIPTION
-	Go one directory level up.
+	Change the working directory to one level up
 .EXAMPLE
 	PS> .\cd-up.ps1
 .LINK

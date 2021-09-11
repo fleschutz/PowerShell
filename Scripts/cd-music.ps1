@@ -2,7 +2,7 @@
 .SYNOPSIS
 	cd-music.ps1 
 .DESCRIPTION
-	Go to the user's music folder.
+	Change the working directory to the user's music folder
 .EXAMPLE
 	PS> .\cd-music.ps1
 .LINK

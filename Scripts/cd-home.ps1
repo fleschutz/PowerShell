@@ -2,7 +2,7 @@
 .SYNOPSIS
 	cd-home.ps1 
 .DESCRIPTION
-	Go to the user's home folder.
+	Change the working directory to the user's home directory
 .EXAMPLE
 	PS> .\cd-home.ps1 
 .LINK
@@ -13,7 +13,7 @@
 
 $TargetDir = resolve-path "$HOME"
 if (-not(test-path "$TargetDir" -pathType container)) {
-	write-warning "Sorry, there is no folder 📂$TargetDir (yet)"
+	write-error "Home directory 📂$TargetDir does not exist"
 	exit 1
 }
 set-location "$TargetDir"

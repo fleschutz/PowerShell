@@ -2,7 +2,7 @@
 .SYNOPSIS
 	cd-scripts.ps1 
 .DESCRIPTION
-	Go to the PowerShell Scripts folder.
+	Change the working directory to the PowerShell Scripts folder.
 .EXAMPLE
 	PS> .\cd-scripts.ps1 
 .LINK

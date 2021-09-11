@@ -2,7 +2,7 @@
 .SYNOPSIS
 	cd-downloads.ps1 
 .DESCRIPTION
-	Go to the user's downloads folder.
+	Change the working directory to the user's downloads folder
 .EXAMPLE
 	PS> .\cd-downloads.ps1 
 .LINK

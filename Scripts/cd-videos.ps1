@@ -2,7 +2,7 @@
 .SYNOPSIS
 	cd-videos.ps1 
 .DESCRIPTION
-	Go to the user's videos folder.
+	Change the working directory to the user's videos folder
 .EXAMPLE
 	PS> .\cd-videos.ps1
 .LINK

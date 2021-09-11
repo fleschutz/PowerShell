@@ -2,7 +2,7 @@
 .SYNOPSIS
 	cd-recycle-bin.ps1 
 .DESCRIPTION
-	Go to the user's recycle bin folder.
+	Change the working directory to the user's recycle bin folder
 .EXAMPLE
 	PS> .\cd-recycle-bin.ps1 
 .LINK

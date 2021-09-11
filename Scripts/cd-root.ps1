@@ -2,7 +2,7 @@
 .SYNOPSIS
 	cd-root.ps1 
 .DESCRIPTION
-	Go to the root directory (C:\ on Windows).
+	Change the working directory to the root directory (C:\ on Windows).
 .EXAMPLE
 	PS> .\cd-root.ps1 
 .LINK

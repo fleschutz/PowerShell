@@ -2,7 +2,7 @@
 .SYNOPSIS
 	cd-onedrive.ps1 
 .DESCRIPTION
-	Go to the user's OneDrive folder.
+	Change the working directory to the user's OneDrive folder
 .EXAMPLE
 	PS> .\cd-onedrive.ps1
 .LINK

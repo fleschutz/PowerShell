@@ -2,7 +2,7 @@
 .SYNOPSIS
 	cd-up4.ps1
 .DESCRIPTION
-	Go four directory levels up.
+	Change the working directory to four directory levels up
 .EXAMPLE
 	PS> .\cd-up4.ps1
 .LINK

@@ -2,7 +2,7 @@
 .SYNOPSIS
 	cd-dropbox.ps1 
 .DESCRIPTION
-	Go to the user's Dropbox folder.
+	Change the working directory to the user's Dropbox folder
 .EXAMPLE
 	PS> .\cd-dropbox.ps1
 .LINK

@@ -2,7 +2,7 @@
 .SYNOPSIS
 	cd-docs.ps1 
 .DESCRIPTION
-	Go to the user's documents folder.
+	Change the working directory to the user's documents folder
 .EXAMPLE
 	PS> .\cd-docs.ps1 
 .LINK

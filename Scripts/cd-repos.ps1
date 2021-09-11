@@ -2,7 +2,7 @@
 .SYNOPSIS
 	cd-repos.ps1 
 .DESCRIPTION
-	Go to the user's Git repositories folder.
+	Change the working directory to the user's Git repositories folder
 .EXAMPLE
 	PS> .\cd-repos.ps1 
 .LINK

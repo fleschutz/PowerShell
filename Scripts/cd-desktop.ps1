@@ -2,7 +2,7 @@
 .SYNOPSIS
 	cd-desktop.ps1 
 .DESCRIPTION
-	Go to the user's desktop folder.
+	Change the working directory to the user's desktop folder
 .EXAMPLE
 	PS> .\cd-desktop.ps1 
 .LINK
