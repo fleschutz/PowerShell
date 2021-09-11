@@ -5,7 +5,7 @@
 cd-scripts.ps1
 ```
 
-Go to the PowerShell Scripts folder.
+Change the working directory to the PowerShell Scripts folder.
 
 ## Syntax & Parameters
 ```powershell

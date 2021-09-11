@@ -5,7 +5,7 @@
 cd-up4.ps1
 ```
 
-Go four directory levels up.
+Change the working directory to four directory levels up
 
 ## Syntax & Parameters
 ```powershell

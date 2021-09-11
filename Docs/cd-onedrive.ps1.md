@@ -5,7 +5,7 @@
 cd-onedrive.ps1
 ```
 
-Go to the user's OneDrive folder.
+Change the working directory to the user's OneDrive folder
 
 ## Syntax & Parameters
 ```powershell

@@ -5,7 +5,7 @@
 cd-root.ps1
 ```
 
-Go to the root directory (C:\ on Windows).
+Change the working directory to the root directory (C:\ on Windows).
 
 ## Syntax & Parameters
 ```powershell

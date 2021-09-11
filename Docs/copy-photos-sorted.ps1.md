@@ -5,7 +5,7 @@
 copy-photos-sorted.ps1 [<SourceDir>] [<TargetDir>]
 ```
 
-Copies all photos in SourceDir to TargetDir sorted by year and month.
+Copy image files from SourceDir to TargetDir sorted by year and month.
 
 ## Syntax & Parameters
 ```powershell

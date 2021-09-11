@@ -5,7 +5,7 @@
 cd-home.ps1
 ```
 
-Go to the user's home folder.
+Change the working directory to the user's home directory
 
 ## Syntax & Parameters
 ```powershell

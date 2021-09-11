@@ -5,7 +5,7 @@
 cd-up3.ps1
 ```
 
-Go three directory levels up.
+Change the working directory to three directory levels up
 
 ## Syntax & Parameters
 ```powershell

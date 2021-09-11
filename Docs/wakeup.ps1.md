@@ -5,7 +5,7 @@
 wakeup.ps1 [<MAC-address>] [<IP-address>]
 ```
 
-Sends a magic packet to the given computer to wake him up.
+Sends a magic packet to a computer to wake him up (requires Wake-On-LAN).
 
 ## Syntax & Parameters
 ```powershell

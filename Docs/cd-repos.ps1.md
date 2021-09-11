@@ -5,7 +5,7 @@
 cd-repos.ps1
 ```
 
-Go to the user's Git repositories folder.
+Change the working directory to the user's Git repositories folder
 
 ## Syntax & Parameters
 ```powershell

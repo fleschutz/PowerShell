@@ -5,7 +5,7 @@
 cd-docs.ps1
 ```
 
-Go to the user's documents folder.
+Change the working directory to the user's documents folder
 
 ## Syntax & Parameters
 ```powershell

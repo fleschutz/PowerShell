@@ -5,7 +5,7 @@
 cd-music.ps1
 ```
 
-Go to the user's music folder.
+Change the working directory to the user's music folder
 
 ## Syntax & Parameters
 ```powershell

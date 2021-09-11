@@ -5,7 +5,7 @@
 configure-git.ps1 [<full-name>] [<email-address>] [<favorite-editor>]
 ```
 
-Sets up the Git user configuration.
+Sets up the Git user configuration
 
 ## Syntax & Parameters
 ```powershell

@@ -5,7 +5,7 @@
 cd-up.ps1
 ```
 
-Go one directory level up.
+Change the working directory to one level up
 
 ## Syntax & Parameters
 ```powershell

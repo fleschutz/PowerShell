@@ -5,7 +5,7 @@
 cd-pics.ps1
 ```
 
-Go to the user's pictures folder.
+Change the working directory to the user's pictures folder
 
 ## Syntax & Parameters
 ```powershell

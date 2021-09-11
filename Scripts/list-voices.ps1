@@ -1,9 +1,8 @@
-﻿#Requires -Version 2.0
-<#
+﻿<#
 .SYNOPSIS
 	list-voices.ps1 
 .DESCRIPTION
-	Lists the installed text-to-speech (TTS) voices.
+	Lists the installed text-to-speech (TTS) voices
 .EXAMPLE
 	PS> .\list-voices.ps1
 .NOTES
@@ -11,6 +10,8 @@
 .LINK
 	https://github.com/fleschutz/PowerShell
 #>
+#
+#Requires -Version 2.0
 
 try {
 	Add-Type -AssemblyName System.Speech

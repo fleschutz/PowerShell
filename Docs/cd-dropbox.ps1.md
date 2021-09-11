@@ -5,7 +5,7 @@
 cd-dropbox.ps1
 ```
 
-Go to the user's Dropbox folder.
+Change the working directory to the user's Dropbox folder
 
 ## Syntax & Parameters
 ```powershell

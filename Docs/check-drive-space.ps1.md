@@ -5,7 +5,7 @@
 check-drive-space.ps1 [<drive>] [<min-level>]
 ```
 
-Checks the given drive for free space left.
+Checks a drive for free space left (20 GB by default)
 
 ## Syntax & Parameters
 ```powershell

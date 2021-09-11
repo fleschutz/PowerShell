@@ -5,7 +5,7 @@
 cd-videos.ps1
 ```
 
-Go to the user's videos folder.
+Change the working directory to the user's videos folder
 
 ## Syntax & Parameters
 ```powershell

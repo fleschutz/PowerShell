@@ -5,7 +5,7 @@
 cd-desktop.ps1
 ```
 
-Go to the user's desktop folder.
+Change the working directory to the user's desktop folder
 
 ## Syntax & Parameters
 ```powershell

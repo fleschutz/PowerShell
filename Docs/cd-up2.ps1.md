@@ -5,7 +5,7 @@
 cd-up2.ps1
 ```
 
-Go two directory levels up.
+Change the working directory to two directory levels up
 
 ## Syntax & Parameters
 ```powershell

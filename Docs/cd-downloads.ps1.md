@@ -5,7 +5,7 @@
 cd-downloads.ps1
 ```
 
-Go to the user's downloads folder.
+Change the working directory to the user's downloads folder
 
 ## Syntax & Parameters
 ```powershell
