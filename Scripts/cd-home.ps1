@@ -13,7 +13,7 @@
 
 $TargetDir = resolve-path "$HOME"
 if (-not(test-path "$TargetDir" -pathType container)) {
-	write-error "Home directory 📂$TargetDir does not exist"
+	write-warning "Sorry, the user's home directory at 📂$TargetDir does not exist (yet)"
 	exit 1
 }
 set-location "$TargetDir"

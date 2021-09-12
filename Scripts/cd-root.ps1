@@ -17,7 +17,7 @@ if ($IsLinux) {
 	$TargetDir = resolve-path "C:/"
 }
 if (-not(test-path "$TargetDir" -pathType container)) {
-	write-warning "Sorry, there is no folder 📂$TargetDir (yet)"
+	write-warning "Sorry, the root directory at 📂$TargetDir does not exist (yet)"
 	exit 1
 }
 set-location "$TargetDir"

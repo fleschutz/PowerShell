@@ -13,7 +13,7 @@
 
 $TargetDir = resolve-path "$HOME/Repos"
 if (-not(test-path "$TargetDir" -pathType container)) {
-	write-warning "Sorry, there is no folder 📂$TargetDir (yet)"
+	write-warning "Sorry, the user's Git repositories folder at 📂$TargetDir does not exist (yet)"
 	exit 1
 }
 set-location "$TargetDir"

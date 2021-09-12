@@ -2,7 +2,7 @@
 .SYNOPSIS
 	cd-scripts.ps1 
 .DESCRIPTION
-	Change the working directory to the PowerShell Scripts folder.
+	Change the working directory to the PowerShell scripts folder.
 .EXAMPLE
 	PS> .\cd-scripts.ps1 
 .LINK
@@ -13,7 +13,7 @@
 
 $TargetDir = resolve-path "$PSScriptRoot"
 if (-not(test-path "$TargetDir" -pathType container)) {
-	write-warning "Sorry, there is no folder 📂$TargetDir (yet)"
+	write-warning "Sorry, the PowerShell scripts folder at 📂$TargetDir does not exist (yet)"
 	exit 1
 }
 set-location "$TargetDir"

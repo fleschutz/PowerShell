@@ -19,7 +19,7 @@ function Get-CurrentUserSID { [CmdletBinding()] param()
 
 $TargetDir = 'C:\$Recycle.Bin\' + "$(Get-CurrentUserSID)"
 if (-not(test-path "$TargetDir" -pathType container)) {
-	write-warning "Sorry, there is no folder 📂$TargetDir (yet)"
+	write-warning "Sorry, the user's recycle bin folder at 📂$TargetDir does not exist (yet)"
 	exit 1
 }
 set-location "$TargetDir"
