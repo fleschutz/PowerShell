@@ -33,7 +33,7 @@ try {
 	}
 
 	"✔️ $NumBroken out of $NumTotal symlinks are broken in 📂$DirTree"
-	exit $SymlinksBroken
+	exit $NumBroken
 } catch {
 	write-error "⚠️ Error in line $($_.InvocationInfo.ScriptLineNumber): $($Error[0])"
 	exit 1
