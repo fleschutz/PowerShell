@@ -142,7 +142,7 @@ Mega Collection of PowerShell Scripts
 | [cd-up3.ps1](Scripts/cd-up3.ps1)                     | Change the working directory to three directory levels up          | [Help](Docs/cd-up3.ps1.md)              |
 | [cd-up4.ps1](Scripts/cd-up4.ps1)                     | Change the working directory to four directory levels up           | [Help](Docs/cd-up4.ps1.md)              |
 | [cd-videos.ps1](Scripts/cd-videos.ps1)               | Change the working directory to the user's videos folder           | [Help](Docs/cd-videos.ps1.md)           |
-| [check-symlinks.ps1](Scripts/check-symlinks.ps1)     | Checks every symlink in the given directory tree                   | [Help](Docs/check-symlinks.ps1.md)      |
+| [check-symlinks.ps1](Scripts/check-symlinks.ps1)     | Checks every symlink in a directory tree                           | [Help](Docs/check-symlinks.ps1.md)      |
 | [check-xml-file.ps1](Scripts/check-xml-file.ps1)     | Checks the given XML file for validity                             | [Help](Docs/check-xml-file.ps1.md)      |
 | [clear-recycle-bin.ps1](Scripts/clear-recycle-bin.ps1) | Removes the content of the recycle bin folder (can not be undo!) | [Help](Docs/clear-recycle-bin.ps1.md)   |
 | [copy-photos-sorted.ps1](Scripts/copy-photos-sorted.ps1) | Copy image files sorted by year and month                     | [Help](Docs/copy-photos-sorted.ps1.md)  |

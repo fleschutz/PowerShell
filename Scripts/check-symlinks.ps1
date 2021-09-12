@@ -1,8 +1,8 @@
 ﻿<#
 .SYNOPSIS
-	check-symlinks.ps1 [<dir-tree>]
+	check-symlinks.ps1 [<DirTree>]
 .DESCRIPTION
-	Checks every symlink in the given directory tree.
+	Checks every symlink in a directory tree
 .EXAMPLE
 	PS> .\check-symlinks.ps1 C:\MyApp
 .LINK
@@ -13,13 +13,11 @@
 
 param([string]$DirTree = "")
 
-if ($DirTree -eq "" ) {
-	$DirTree = read-host "Enter the path to the directory tree"
-}
-
 try {
+	if ($DirTree -eq "" ) { $DirTree = read-host "Enter the path to the directory tree" }
+
 	write-progress "Checking symlinks in $DirTree..."
-	[int]$SymlinksTotal = [int]$SymlinksBroken = 0
+	[int]$NumTotal = [int]$NumBroken = 0
 	Get-ChildItem $DirTree -recurse  | Where { $_.Attributes -match "ReparsePoint" } | ForEach-Object {
 		$Symlink = $_.FullName
 		$Target = ($_ | Select-Object -ExpandProperty Target -ErrorAction Ignore)
@@ -28,13 +26,13 @@ try {
 			$item = Get-Item $path -ErrorAction Ignore
 			if (!$item) {
 				write-warning "Broken symlink: $Symlink -> $Target"
-				$SymlinksBroken++
+				$NumBroken++
 			}
 		}
-		$SymlinksTotal++
+		$NumTotal++
 	}
 
-	"✔️  found $SymlinksTotal symlinks total, $SymlinksBroken symlinks are broken"
+	"✔️ $NumBroken out of $NumTotal symlinks are broken in 📂$DirTree"
 	exit $SymlinksBroken
 } catch {
 	write-error "⚠️ Error in line $($_.InvocationInfo.ScriptLineNumber): $($Error[0])"
