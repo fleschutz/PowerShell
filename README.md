@@ -137,6 +137,7 @@ Mega Collection of PowerShell Scripts
 | [cd-repos.ps1](Scripts/cd-repos.ps1)                 | Change the working directory to the user's Git repositories folder | [Help](Docs/cd-repos.ps1.md)            |
 | [cd-root.ps1](Scripts/cd-root.ps1)                   | Change the working directory to the root directory (C:\ on Windows)| [Help](Docs/cd-root.ps1.md)             |
 | [cd-scripts.ps1](Scripts/cd-scripts.ps1)             | Change the working directory to the PowerShell Scripts folder      | [Help](Docs/cd-scripts.ps1.md)          |
+| [cd-ssh.ps1](Scripts/cd-ssh.ps1)                     | Change the working directory to the user's SSH folder              | [Help](Docs/cd-ssh.ps1.md)              |
 | [cd-up.ps1](Scripts/cd-up.ps1)                       | Change the working directory to one directory level up             | [Help](Docs/cd-up.ps1.md)               | 
 | [cd-up2.ps1](Scripts/cd-up2.ps1)                     | Change the working directory to two directory levels up            | [Help](Docs/cd-up2.ps1.md)              |
 | [cd-up3.ps1](Scripts/cd-up3.ps1)                     | Change the working directory to three directory levels up          | [Help](Docs/cd-up3.ps1.md)              |

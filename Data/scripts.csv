@@ -13,6 +13,7 @@ cd-recycle-bin.ps1, change the working directory to the user's recycle bin folde
 cd-repos.ps1, change the working directory to the user's Git repositories folder
 cd-root.ps1, change the working directory to the root directory (C: on Windows)
 cd-scripts.ps1, change the working directory to the PowerShell Scripts folder
+cd-ssh.ps1, change the working directory to the user's SSH folder
 cd-up.ps1, change the working directory to one directory level up
 cd-up2.ps1, change the working directory to two directory levels up
 cd-up3.ps1, change the working directory to three directory levels up
