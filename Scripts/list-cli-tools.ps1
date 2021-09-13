@@ -92,6 +92,7 @@ function ListTools {
 	CheckFor make	"--version"
 	CheckFor md5sum "--version"
 	CheckFor mkfifo "--version"
+	CheckFor mount	"--version"
 	CheckFor nice	"--version"
 	CheckFor nroff	"--version"
 	CheckFor nslookup ""
