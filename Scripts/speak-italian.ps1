@@ -14,7 +14,7 @@
 param([string]$text = "")
 
 try {
-	if ($text -eq "") { $text = read-host "Enter the text to speak" }
+	if ($text -eq "") { $text = read-host "Enter the Italian text to speak" }
 
 	$Voice = New-Object -ComObject SAPI.SPVoice
 	$Voices = $Voice.GetVoices()
