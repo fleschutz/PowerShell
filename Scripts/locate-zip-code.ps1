@@ -37,9 +37,8 @@ try {
 	if ($FoundOne) {
 		exit 0
 	}
-	write-error "Zip-code $ZipCode in country $CountryCode not found"
-	exit 1
+	throw "Zip-code $ZipCode in country $CountryCode not found"
 } catch {
-	write-error "⚠️ Error in line $($_.InvocationInfo.ScriptLineNumber): $($Error[0])"
+	"⚠️ Error: $($Error[0]) ($($MyInvocation.MyCommand.Name):$($_.InvocationInfo.ScriptLineNumber))"
 	exit 1
 }

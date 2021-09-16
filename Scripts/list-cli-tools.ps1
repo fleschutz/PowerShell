@@ -164,6 +164,6 @@ try {
 	ListTools | format-table -property @{e='Name';width=12},@{e='Version';width=15},@{e='Location';width=45},@{e='FileSize';width=10}
 	exit 0
 } catch {
-	write-error "⚠️ Error in line $($_.InvocationInfo.ScriptLineNumber): $($Error[0])"
+	"⚠️ Error: $($Error[0]) ($($MyInvocation.MyCommand.Name):$($_.InvocationInfo.ScriptLineNumber))"
 	exit 1
 }

@@ -73,9 +73,8 @@ function Char2MorseCode { param([string]$Char)
 }
 
 try {
-	if ($Text -eq "" ) {
-		[string]$Text = read-host "Enter text to write"
-	}
+	if ($Text -eq "" ) { [string]$Text = read-host "Enter text to write" }
+
 	[char[]]$ArrayOfChars = $Text.ToUpper()
 	foreach($Char in $ArrayOfChars) {
 		Char2MorseCode $Char 
@@ -84,6 +83,6 @@ try {
 	write-host ""
 	exit 0
 } catch {
-	write-error "⚠️ Error in line $($_.InvocationInfo.ScriptLineNumber): $($Error[0])"
+	"⚠️ Error: $($Error[0]) ($($MyInvocation.MyCommand.Name):$($_.InvocationInfo.ScriptLineNumber))"
 	exit 1
 }

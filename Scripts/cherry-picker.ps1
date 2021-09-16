@@ -68,6 +68,6 @@ try {
 	"✔️ cherry picked $CommitID into $NumBranches branches in $Elapsed sec"
 	exit 0
 } catch {
-	write-error "⚠️ Error in line $($_.InvocationInfo.ScriptLineNumber): $($Error[0])"
+	"⚠️ Error: $($Error[0]) ($($MyInvocation.MyCommand.Name):$($_.InvocationInfo.ScriptLineNumber))"
 	exit 1
 }

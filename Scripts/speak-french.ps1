@@ -25,9 +25,8 @@ try {
 		[void]$Voice.Speak($text)
 		exit 0
 	}
-	write-error "Sorry, no French text-to-speech voice found - please install one"
-	exit 1
+	throw "No French text-to-speech voice found - please install one"
 } catch {
-	write-error "⚠️ Error in line $($_.InvocationInfo.ScriptLineNumber): $($Error[0])"
+	"⚠️ Error: $($Error[0]) ($($MyInvocation.MyCommand.Name):$($_.InvocationInfo.ScriptLineNumber))"
 	exit 1
 }
