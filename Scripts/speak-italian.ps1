@@ -11,21 +11,21 @@
 	https://github.com/fleschutz/PowerShell
 #>
 
-param([string]$Text = "")
+param([string]$text = "")
 
 try {
-	if ($Text -eq "") { $Text = read-host "Enter the text to speak" }
+	if ($text -eq "") { $text = read-host "Enter the text to speak" }
 
-	$Voice = new-object -ComObject SAPI.SPVoice
+	$Voice = New-Object -ComObject SAPI.SPVoice
 	$Voices = $Voice.GetVoices()
 	foreach ($OtherVoice in $Voices) {
 		$Description = $OtherVoice.GetDescription()
 		if ($Description -notlike "*- Italian*") { continue }
 		$Voice.Voice = $OtherVoice
-		[void]$Voice.Speak($Text)
+		[void]$Voice.Speak($text)
 		exit 0
 	}
-	write-error "No Italian text-to-speech voice found - please install one"
+	write-error "Sorry, no Italian text-to-speech voice found - please install one"
 	exit 1
 } catch {
 	write-error "⚠️ Error in line $($_.InvocationInfo.ScriptLineNumber): $($Error[0])"
