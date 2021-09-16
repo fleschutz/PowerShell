@@ -166,8 +166,8 @@ Mega Collection of PowerShell Scripts
 | [list-unused-files.ps1](Scripts/list-unused-files.ps1) | Lists unused files in a directory tree                           | [Help](Docs/list-unused-files.ps1.md)   |
 | [list-workdir.ps1](Scripts/list-workdir.ps1)         | Lists the current working directory                                | [Help](Docs/list-workdir.ps1.md)        |
 | [make-install.ps1](Scripts/make-install.ps1)         | Installs built executables and libs to the installation directory  | [Help](Docs/make-install.ps1.md)        |
-| [new-shortcut.ps1](Scripts/new-shortcut.ps1)         | Creates a new shortcut                                             | [Help](Docs/new-shortcut.ps1.md)        |
-| [new-symlink.ps1](Scripts/new-symlink.ps1)           | Creates a new symbolic link                                        | [Help](Docs/new-symlink.ps1.md)         |
+| [new-shortcut.ps1](Scripts/new-shortcut.ps1)         | Creates a new shortcut file                                        | [Help](Docs/new-shortcut.ps1.md)        |
+| [new-symlink.ps1](Scripts/new-symlink.ps1)           | Creates a new symbolic link file                                   | [Help](Docs/new-symlink.ps1.md)         |
 | [new-zipfile.ps1](Scripts/new-zipfile.ps1)           | Creates a new .zip file from a directory                           | [Help](Docs/new-zipfile.ps1.md)         |
 | [publish-to-ipfs.ps1](Scripts/publish-to-ipfs.ps1)   | Publishes the given files or directory to IPFS                     | [Help](Docs/publish-to-ipfs.ps1.md)     |
 | [remove-empty-dirs.ps1](Scripts/remove-empty-dirs.ps1) | Removes empty subfolders within the given directory tree         | [Help](Docs/remove-empty-dirs.ps1.md)   |

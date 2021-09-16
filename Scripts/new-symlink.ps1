@@ -2,7 +2,7 @@
 .SYNOPSIS
 	new-symlink.ps1 [<symlink>] [<target>]
 .DESCRIPTION
-	Creates a new symbolic link file.
+	Creates a new symbolic link file
 .EXAMPLE
 	PS> .\new-symlink.ps1 C:\Temp\HDD C:\
 .NOTES
