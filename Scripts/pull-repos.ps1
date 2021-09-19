@@ -29,7 +29,7 @@ try {
 	[int]$Step = 1
 	foreach ($Folder in $Folders) {
 		$FolderName = (get-item "$Folder").Name
-		"Step $Step/$($FolderCount): 🢃 Pulling 📂$FolderName..."
+		"👉 Step $Step/$($FolderCount): Pulling 📂$FolderName..."
 
 		& git -C "$Folder" pull --recurse-submodules --jobs=4
 		if ($lastExitCode -ne "0") { write-warning "'git pull' on 📂$FolderName failed" }
