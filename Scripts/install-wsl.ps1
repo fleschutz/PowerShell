@@ -21,13 +21,13 @@ try {
 		& wsl --install
 
 	} else {
-		"Step 1/3: Enable WSL..."
+		"👉 Step 1/3: Enable WSL..."
 		& dism.exe /online /enable-feature /featurename:Microsoft-Windows-Subsystem-Linux /all /norestart
 
-		"Step 2/3: Enable virtual machine platform..."
+		"👉 Step 2/3: Enable virtual machine platform..."
 		& dism.exe /online /enable-feature /featurename:VirtualMachinePlatform /all /norestart
 
-		"Step 3/3: Enable WSL2..."
+		"👉 Step 3/3: Enable WSL version 2..."
 		& wsl --set-default-version 2
 	}
 

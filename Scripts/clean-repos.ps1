@@ -29,7 +29,7 @@ try {
 	[int]$Step = 1
 	foreach ($Folder in $Folders) {
 		$FolderName = (get-item "$Folder").Name
-		"🧹 Cleaning 📂$FolderName ($Step/$FolderCount)..."
+		"👉 Step $Step/$FolderCount: Cleaning 📂$FolderName..."
 
 		& git -C "$Folder" clean -xfd -f # force + recurse into dirs + don't use the standard ignore rules
 		if ($lastExitCode -ne "0") { throw "'git clean -xfd -f' failed" }

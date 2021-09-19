@@ -17,16 +17,16 @@ try {
 	$StopWatch = [system.diagnostics.stopwatch]::startNew()
 
 	if ($IsLinux) {
-		"Step 1/4: Loading update infos..."
+		"👉 Step 1/4: Loading update infos..."
 		sudo apt update
 
-		"Step 2/4: Installing updates..."
+		"👉 Step 2/4: Installing updates..."
 		sudo apt upgrade
 
-		"Step 3/4: Removing obsolete packages..."
+		"👉 Step 3/4: Removing obsolete packages..."
 		sudo apt autoremove
 
-		"Step 4/4: Refreshing snap packages..."
+		"👉 Step 4/4: Refreshing snap packages..."
 		sudo snap refresh
 	} else {
 		"Sorry, not supported yet"

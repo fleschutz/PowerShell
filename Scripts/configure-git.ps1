@@ -18,11 +18,11 @@ try {
 	if ($EmailAddress -eq "") { $EmailAddress = read-host "Enter your e-mail address"}
 	if ($FavoriteEditor -eq "") { $FavoriteEditor = read-host "Enter your favorite text editor (emacs,nano,vi,vim,...)" }
 
-	"Step 1/3: Searching for Git..."
+	"👉 Step 1/3: Searching for Git executable..."
 	& git --version
 	if ($lastExitCode -ne "0") { throw "Can't execute 'git' - make sure Git is installed and available" }
 
-	"Step 2/3: Configuring basic settings..."
+	"👉 Step 2/3: Configuring basic settings..."
 	& git config --global user.name $FullName
 	& git config --global user.email $EmailAddress
 	& git config --global core.editor $FavoriteEditor
@@ -35,7 +35,7 @@ try {
 	& git config --global pull.rebase false
 	if ($lastExitCode -ne "0") { throw "'git config' failed" }
 
-	"Step 3/3: Adding basic shortcuts (git st, git ls, etc.)..."
+	"👉 Step 3/3: Adding basic shortcuts (git st, git ls, etc.)..."
 	& git config --global alias.co "checkout"
 	& git config --global alias.br "branch"
 	& git config --global alias.ci "commit"

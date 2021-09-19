@@ -13,14 +13,12 @@
 
 try {
 	""
-	"Step 1/4: Perform a Backup"
-	"--------------------------"
+	"👉 Step 1/4: Perform a backup"
 	"It's strongly recommended to perform a backup of your data BEFORE upgrading the OS!"
 	$Confirm = read-host "Press <Return> to continue..."
 
 	""
-	"Step 2/4: Install update-manager-core, Upgrade Packages & Reboot"
-	"----------------------------------------------------------------"
+	"👉 Step 2/4: Install update-manager-core, Upgrade Packages & Reboot"
 	$Confirm = read-host "Enter <yes> to perform this step (otherwise this step will be skipped)"
 	if ($Confirm -eq "yes") {
 		sudo apt install update-manager-core
@@ -31,16 +29,14 @@ try {
 	}
 
 	""
-	"Step 3/4: Remove obsolete Kernel Modules"
-	"----------------------------------------"
+	"👉 Step 3/4: Remove obsolete kernel modules"
 	$Confirm = read-host "Enter <yes> to perform this step (otherwise this step will be skipped)"
 	if ($Confirm -eq "yes") {
 		sudo apt --purge autoremove
 	}
 
 	""
-	"Step 4/4: Upgrade Ubuntu & Reboot"
-	"---------------------------------"
+	"👉 Step 4/4: Upgrade Ubuntu & reboot"
 	$Confirm = read-host "Enter <yes> to perform this step (otherwise this step will be skipped)"
 	if ($Confirm -eq "yes") {
 		sudo do-release-upgrade # to latest LTS version

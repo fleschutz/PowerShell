@@ -16,16 +16,16 @@
 try {
 	$StopWatch = [system.diagnostics.stopwatch]::startNew()
 
-	"Step 1/4: Install Knot Resolver..."
+	"👉 Step 1/4: Installing Knot Resolver..."
 	sudo snap install knot-resolver-gael
 
-	"Step 2/4: Copy default configuration..."
+	"👉 Step 2/4: Copying default configuration..."
 	sudo cp "$PSScriptRoot/../Data/default.kresd.conf" /var/snap/knot-resolver-gael/current/kresd.conf
 
-	"Step 3/4: Let User Configure..."
+	"👉 Step 3/4: Let user configure..."
 	sudo vi /var/snap/knot-resolver-gael/current/kresd.conf
 
-	"Step 4/4: Start Knot Resolver..."
+	"👉 Step 4/4: Starting Knot Resolver..."
 	sudo snap start knot-resolver-gael
 
 	[int]$Elapsed = $StopWatch.Elapsed.TotalSeconds
