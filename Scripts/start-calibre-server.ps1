@@ -16,15 +16,15 @@ param([int]$port = 8099)
 try {
 	$StopWatch = [system.diagnostics.stopwatch]::startNew()
 
-	"Step 1/2: Searching for Calibre Server executable..."
+	"Step 1/2: Searching for Calibre server executable..."
 	& calibre-server --version
-	if ($lastExitCode -ne "0") { throw "Can't execute 'calibre-server' - make sure Calibre is installed and available" }
+	if ($lastExitCode -ne "0") { throw "Can't execute 'calibre-server' - make sure Calibre server is installed and available" }
 
-	"Step 2/2: Starting Calibre Server as background process..."
+	"Step 2/2: Starting Calibre server as background process..."
 	& calibre-server --port $port --num-per-page 100 --userdb $HOME/CalibreUsers.sqlite --log $HOME/CalibreServer.log --daemonize $HOME/'Calibre Library'
 
 	[int]$Elapsed = $StopWatch.Elapsed.TotalSeconds
-	"✔️ started Calibre Server with port $port in $Elapsed sec"
+	"✔️ started Calibre server with port $port in $Elapsed sec"
 	exit 0
 } catch {
 	"⚠️ Error: $($Error[0]) ($($MyInvocation.MyCommand.Name):$($_.InvocationInfo.ScriptLineNumber))"
