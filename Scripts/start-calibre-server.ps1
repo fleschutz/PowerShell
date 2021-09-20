@@ -11,7 +11,7 @@
 	https://github.com/fleschutz/PowerShell
 #>
 
-param([int]port = 8099)
+param([int]$port = 8099)
 
 try {
 	$StopWatch = [system.diagnostics.stopwatch]::startNew()
