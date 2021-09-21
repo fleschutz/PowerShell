@@ -13,7 +13,7 @@ Why use PowerShell?
 
 ✔️ it's **open-source and free**: see the Github repository at https://github.com/PowerShell/PowerShell 
 
-✔️ it's **easy to learn**: see the tutorial at https://www.guru99.com/powershell-tutorial.html
+✔️ it's **easy to learn**: see the tutorial for beginners at https://www.guru99.com/powershell-tutorial.html
 
 ✔️ it's **fully documented**: see the PowerShell documentation at https://docs.microsoft.com/en-us/powershell/
 
