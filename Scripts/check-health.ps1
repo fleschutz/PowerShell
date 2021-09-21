@@ -14,7 +14,7 @@
 
 $Hostname = $(hostname)
 $Healthy = 1
-"Checking health of $Hostname ..."
+"Checking $Hostname's health..."
 
 & "$PSScriptRoot/check-swap-space.ps1"
 if ($lastExitCode -ne "0") { $Healthy = 0 }
