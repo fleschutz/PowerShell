@@ -1,8 +1,9 @@
 ﻿<#
 .SYNOPSIS
-	check-ping.ps1 
+	check-ping.ps1 [<hosts>]
 .DESCRIPTION
-	Checks the ping latency from the local computer to the internet.
+	Checks the ping latency from the local computer to Internet hosts.
+	(default is: 'amazon.com,bing.com,cnn.com dropbox.com,ebay.com,facebook.com,google.com,youtube.com)
 .EXAMPLE
 	PS> .\check-ping.ps1
 .LINK
@@ -11,9 +12,12 @@
 	Author: Markus Fleschutz · License: CC0
 #>
 
+param([string]$hosts = "amazon.com,bing.com,cnn.com,dropbox.com,ebay.com,facebook.com,google.com,youtube.com")
+
 try {
-	write-verbose "Sending pings to the internet ..."
-	$Pings = test-connection -count 1 -computerName heise.de,cnn.com,github.com,www.microsoft.com,dropbox.com,amazon.com,google.com,bing.com,youtube.com
+	write-progress "Sending pings to $hosts..."
+	$HostsArray = $hosts.Split(",")
+	$Pings = test-connection -count 1 -computerName $HostsArray
 
 	[int]$Min = 9999999
 	[int]$Max = 0
