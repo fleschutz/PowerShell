@@ -20,7 +20,7 @@ How to get PowerShell?
    PS> Set-ExecutionPolicy RemoteSigned
    ```
 * **On CentOS, Debian, Docker, Fedora, macOS, openSUSE, Red Hat, Ubuntu** visit https://github.com/PowerShell/PowerShell for installation.
-* **Want to use Snaps?** Install the PowerShell snap by executing:
+* **On Linux supporting Snaps** install PowerShell by executing:
    ```
    $ snap install PowerShell
    $ ln -s /snap/bin/pwsh /usr/bin/pwsh
