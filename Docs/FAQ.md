@@ -33,7 +33,7 @@ How to get PowerShell?
 How to get the collection of PowerShell scripts?
 ------------------------------------------------
 * Git users execute: `$ git clone https://github.com/fleschutz/PowerShell`
-* otherwise download & unzip: https://github.com/fleschutz/PowerShell/archive/master.zip
+* otherwise download & unzip it from: https://github.com/fleschutz/PowerShell/archive/master.zip
 
 
 Why do some scripts show gibberish characters?
