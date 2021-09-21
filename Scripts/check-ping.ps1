@@ -3,7 +3,7 @@
 	check-ping.ps1 [<hosts>]
 .DESCRIPTION
 	Checks the ping latency from the local computer to Internet hosts.
-	(default is: 'amazon.com,bing.com,cnn.com dropbox.com,ebay.com,facebook.com,google.com,youtube.com)
+	(default is: 'amazon.com,apple.com,bing.com,cnn.com,dropbox.com,facebook.com,google.com,live.com,twitter.com,youtube.com)
 .EXAMPLE
 	PS> .\check-ping.ps1
 .LINK
@@ -12,7 +12,7 @@
 	Author: Markus Fleschutz · License: CC0
 #>
 
-param([string]$hosts = "amazon.com,bing.com,cnn.com,dropbox.com,ebay.com,facebook.com,google.com,youtube.com")
+param([string]$hosts = "amazon.com,apple.com,bing.com,cnn.com,dropbox.com,facebook.com,google.com,live.com,twitter.com,youtube.com")
 
 try {
 	write-progress "Sending pings to $hosts..."
@@ -34,7 +34,7 @@ try {
 	}
 	$Avg = $Avg / $Pings.count
 
-	"✔️ $Avg ms average ping latency ($Min ms min, $Max ms max)"
+	"✔️ $Avg ms net latency average ($Min ms min, $Max ms max, $($Pings.count) hosts)"
 	exit 0
 } catch {
 	"⚠️ Error: $($Error[0]) ($($MyInvocation.MyCommand.Name):$($_.InvocationInfo.ScriptLineNumber))"
