@@ -8,9 +8,13 @@ PowerShell is a task automation and configuration management framework from Micr
 Why use PowerShell?
 -------------------
 ✔️ it's **powerful**: fully control your computer
+
 ✔️ it's **cross-platform**: available for Linux, Mac OS and Windows
+
 ✔️ it's **open-source and free**: see the Github repository at https://github.com/PowerShell/PowerShell 
+
 ✔️ it's **easy to learn**: see the tutorial at https://www.guru99.com/powershell-tutorial.html
+
 ✔️ it's **fully documented**: see the official docs at https://docs.microsoft.com/en-us/powershell/
 
 How to get PowerShell?
