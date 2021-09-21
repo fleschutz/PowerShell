@@ -7,11 +7,15 @@ PowerShell is a task automation and configuration management framework from Micr
 
 Why use PowerShell?
 -------------------
-* **it's powerful**: fully control your computer
-* **it's cross-platform**: available for Linux, Mac OS and Windows
-* **it's open-source and free**: see the Github repository at https://github.com/PowerShell/PowerShell 
-* **it's easy to learn**: see the tutorial at https://www.guru99.com/powershell-tutorial.html
-* **it's fully documented**: see the official docs at https://docs.microsoft.com/en-us/powershell/
+✔️ it's **powerful**: fully control your computer
+
+✔️ it's **cross-platform**: available for Linux, Mac OS and Windows
+
+✔️ it's **open-source and free**: see the Github repository at https://github.com/PowerShell/PowerShell 
+
+✔️ it's **easy to learn**: see the tutorial for beginners at https://www.guru99.com/powershell-tutorial.html
+
+✔️ it's **fully documented**: see the PowerShell documentation at https://docs.microsoft.com/en-us/powershell/
 
 How to get PowerShell?
 ----------------------
@@ -20,7 +24,7 @@ How to get PowerShell?
    PS> Set-ExecutionPolicy RemoteSigned
    ```
 * **On CentOS, Debian, Docker, Fedora, macOS, openSUSE, Red Hat, Ubuntu** visit https://github.com/PowerShell/PowerShell for installation.
-* **Want to use Snaps?** Install the PowerShell snap by executing:
+* **On Linux supporting Snaps** install PowerShell by executing:
    ```
    $ snap install PowerShell
    $ ln -s /snap/bin/pwsh /usr/bin/pwsh
@@ -29,7 +33,7 @@ How to get PowerShell?
 How to get the collection of PowerShell scripts?
 ------------------------------------------------
 * Git users execute: `$ git clone https://github.com/fleschutz/PowerShell`
-* otherwise download & unzip: https://github.com/fleschutz/PowerShell/archive/master.zip
+* otherwise download & unzip it from: https://github.com/fleschutz/PowerShell/archive/master.zip
 
 
 Why do some scripts show gibberish characters?
