@@ -240,6 +240,7 @@ write-animated.ps1, Writes animated text
 write-big.ps1, Writes the given text in big letters
 write-blue.ps1, Writes the given text in a blue foreground color
 write-braille.ps1, Writes the given text in Braille
+write-calendar.ps1, Writes the calendar (month or year)
 write-green.ps1, Writes the given text in a green foreground color
 write-joke.ps1], Writes a random Juck Norris joke
 write-lowercase.ps1, Writes the given text in lowercase letters

@@ -293,6 +293,7 @@ Mega Collection of PowerShell Scripts
 | [write-big.ps1](Scripts/write-big.ps1)               | Writes the given text in big letters                               | [Help](Docs/wakeup.ps1.md)              |
 | [write-blue.ps1](Scripts/write-blue.ps1)             | Writes the given text in a blue foreground color                   | [Help](Docs/wakeup.ps1.md)              |
 | [write-braille.ps1](Scripts/write-braille.ps1)       | Writes the given text in Braille                                   | [Help](Docs/wakeup.ps1.md)              |
+| [write-calendar.ps1](Scripts/write-calendar.ps1)     | Writes the calendar (month of year)                                | [Help](Docs/write-calendar.ps1.md)              |
 | [write-green.ps1](Scripts/write-green.ps1)           | Writes the given text in a green foreground color                  | [Help](Docs/wakeup.ps1.md)              |
 | [write-joke.ps1](Scripts/write-joke.ps1)             | Writes a random Juck Norris joke                                   | [Help](Docs/wakeup.ps1.md)              |
 | [write-lowercase.ps1](Scripts/write-lowercase.ps1)   | Writes the given text in lowercase letters                         | [Help](Docs/wakeup.ps1.md)              |
