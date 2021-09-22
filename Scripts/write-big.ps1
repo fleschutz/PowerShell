@@ -402,9 +402,8 @@ function BigChar { param([string]$Char, [int]$Row)
 }
 
 try {
-	if ($Text -eq "" ) {
-		[String]$Text = read-host "Enter text to write"
-	}
+	if ($Text -eq "" ) { [String]$Text = read-host "Enter text to write" }
+
 	[char[]]$ArrayOfChars = $Text.ToUpper()
 	write-output ""
 	for ($Row = 1; $Row -lt 5; $Row++) {
