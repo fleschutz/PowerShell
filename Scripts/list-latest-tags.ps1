@@ -2,9 +2,9 @@
 .SYNOPSIS
 	list-latest-tags.ps1 [<parent-dir>]
 .DESCRIPTION
-	Lists the latests tags in all Git repositories under the current/given directory.
+	Lists the latests tags in all Git repositories under the current/given directory
 .EXAMPLE
-	PS> .\list-latest-tags.ps1 C:\MyRepos
+	PS> ./list-latest-tags C:\MyRepos
 .NOTES
 	Author: Markus Fleschutz · License: CC0
 .LINK

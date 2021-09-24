@@ -2,9 +2,9 @@
 .SYNOPSIS
         play-happy-birthday.ps1
 .DESCRIPTION
-        Plays the Happy Birthday song.
+        Plays the Happy Birthday song
 .EXAMPLE
-        PS> .\play-happy-birthday.ps1
+        PS> ./play-happy-birthday
 .NOTES
 	Author: Markus Fleschutz · License: CC0
 .LINK

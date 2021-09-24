@@ -2,9 +2,9 @@
 .SYNOPSIS
 	new-qrcode.ps1 [<text>] [<image-size>]
 .DESCRIPTION
-	Generates a new QR code image file.
+	Generates a new QR code image file
 .EXAMPLE
-	PS> .\new-qrcode.ps1 "Fasten seatbelt" 500x500
+	PS> ./new-qrcode "Fasten seatbelt" 500x500
 .NOTES
 	Author: Markus Fleschutz · License: CC0
 .LINK

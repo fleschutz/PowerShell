@@ -2,9 +2,9 @@
 .SYNOPSIS
 	new-tag.ps1 [<TagName>] [<RepoDir>]
 .DESCRIPTION
-	Creates a new tag in a Git repository.
+	Creates a new tag in a Git repository
 .EXAMPLE
-	PS> .\create-tag.ps1 v1.7
+	PS> ./create-tag v1.7
 .LINK
 	https://github.com/fleschutz/PowerShell
 .NOTES

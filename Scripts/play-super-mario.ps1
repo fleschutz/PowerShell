@@ -2,9 +2,9 @@
 .SYNOPSIS
 	play-super-mario.ps1
 .DESCRIPTION
-	Plays the Super Mario intro.
+	Plays the Super Mario intro
 .EXAMPLE
-	PS> .\play-super-mario.ps1
+	PS> ./play-super-mario
 .NOTES
 	Author: Markus Fleschutz · License: CC0
 .LINK

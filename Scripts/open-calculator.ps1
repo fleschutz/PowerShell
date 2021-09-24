@@ -2,9 +2,9 @@
 .SYNOPSIS
 	open-calculator.ps1
 .DESCRIPTION
-	Starts the calculator program.
+	Starts the calculator program
 .EXAMPLE
-	PS> .\open-calculator.ps1 
+	PS> ./open-calculator
 .NOTES
 	Author: Markus Fleschutz · License: CC0
 .LINK

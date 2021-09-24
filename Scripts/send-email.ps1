@@ -2,9 +2,9 @@
 .SYNOPSIS
 	send-email.ps1 
 .DESCRIPTION
-	Sends an email message.
+	Sends an email message
 .EXAMPLE
-	PS> .\send-email.ps1
+	PS> ./send-email
 .NOTES
 	Author: Markus Fleschutz · License: CC0
 .LINK

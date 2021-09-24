@@ -2,9 +2,9 @@
 .SYNOPSIS
 	install-google-chrome.ps1
 .DESCRIPTION
-	Installs the latest Google Chrome browser.
+	Installs the latest Google Chrome browser
 .EXAMPLE
-	PS> .\install-google-chrome.ps1
+	PS> ./install-google-chrome
 .NOTES
 	Author: Markus Fleschutz · License: CC0
 .LINK

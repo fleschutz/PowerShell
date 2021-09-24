@@ -2,9 +2,9 @@
 .SYNOPSIS
 	play-m3u.ps1 [<playlist-file>]
 .DESCRIPTION
-	Plays the given playlist (in .M3U file format).
+	Plays the given playlist (in .M3U file format)
 .EXAMPLE
-	PS> .\play-m3u.ps1 C:\MyPlaylist.m3u
+	PS> ./play-m3u C:\MyPlaylist.m3u
 .NOTES
 	Author: Markus Fleschutz · License: CC0
 .LINK

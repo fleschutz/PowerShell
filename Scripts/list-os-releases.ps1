@@ -2,9 +2,9 @@
 .SYNOPSIS
 	list-os-releases.ps1
 .DESCRIPTION
-	Lists OS releases and download URL.
+	Lists OS releases and download URL
 .EXAMPLE
-	PS> .\list-os-releases.ps1
+	PS> ./list-os-releases
 .NOTES
 	Author: Markus Fleschutz · License: CC0
 .LINK

@@ -2,9 +2,9 @@
 .SYNOPSIS
 	list-pins.ps1 [<pin-length>] [<columns>] [<rows>]
 .DESCRIPTION
-	Prints a list of random PIN's.
+	Prints a list of random PIN's
 .EXAMPLE
-	PS> .\list-pins.ps1
+	PS> ./list-pins
 .NOTES
 	Author: Markus Fleschutz · License: CC0
 .LINK

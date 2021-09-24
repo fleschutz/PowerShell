@@ -4,7 +4,7 @@
 .DESCRIPTION
 	Publishes the given files & folders to IPFS
 .EXAMPLE
-	PS> .\publish-to-ipfs.ps1 C:\MyFile.txt
+	PS> ./publish-to-ipfs C:\MyFile.txt
 .NOTES
 	Author: Markus Fleschutz · License: CC0
 .LINK

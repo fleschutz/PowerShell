@@ -2,9 +2,9 @@
 .SYNOPSIS
 	new-branch.ps1 [<BranchName>] [<RepoDir>]
 .DESCRIPTION
-	Creates and switches to a new branch in a Git repository.
+	Creates and switches to a new branch in a Git repository
 .EXAMPLE
-	PS> .\new-branch.ps1 moonshot
+	PS> ./new-branch test123
 .NOTES
 	Author: Markus Fleschutz · License: CC0
 .LINK

@@ -7,7 +7,7 @@
 
         Requires smartctl (smartmontools) and admin rights. For automation copy this script to /etc/cron.daily 
 .EXAMPLE
-	PS> .\query-smart-data.ps1 
+	PS> ./query-smart-data
 .NOTES
 	Author: Markus Fleschutz · License: CC0
 .LINK

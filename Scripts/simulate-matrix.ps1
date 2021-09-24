@@ -2,9 +2,9 @@
 .SYNOPSIS
 	simulate-matrix.ps1 
 .DESCRIPTION
-	Simulates the Matrix (fun).
+	Simulates the Matrix (fun)
 .EXAMPLE
-	PS> .\simulate-matrix.ps1
+	PS> ./simulate-matrix
 .NOTES
 	Author: Markus Fleschutz · License: CC0
 .LINK

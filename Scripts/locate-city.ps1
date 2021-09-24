@@ -2,9 +2,9 @@
 .SYNOPSIS
 	locate-city.ps1 [<city>]
 .DESCRIPTION
-	Prints the geographic location of the given city.
+	Prints the geographic location of the given city
 .EXAMPLE
-	PS> .\locate-city.ps1 Paris
+	PS> ./locate-city Paris
 .NOTES
 	Author: Markus Fleschutz · License: CC0
 .LINK

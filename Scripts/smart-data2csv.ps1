@@ -5,7 +5,7 @@
 	Converts the S.M.A.R.T. JSON files in the current/given directory to a CSV table for analysis
         (use query-smart-data.ps1 to generate those JSON files).
 .EXAMPLE
-	PS> .\smart-data2csv.ps1.ps1
+	PS> ./smart-data2csv
 .NOTES
 	Author: Markus Fleschutz · License: CC0
 .LINK

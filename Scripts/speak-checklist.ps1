@@ -2,9 +2,9 @@
 .SYNOPSIS
 	speak-checklist.ps1 [<name>]
 .DESCRIPTION
-	Speaks the given checklist by text-to-speech (TTS).
+	Speaks the given checklist by text-to-speech (TTS)
 .EXAMPLE
-	PS> .\speak-checklist.ps1 
+	PS> ./speak-checklist
 .NOTES
 	Author: Markus Fleschutz · License: CC0
 .LINK

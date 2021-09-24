@@ -2,9 +2,9 @@
 .SYNOPSIS
 	list-weather.ps1 [<location>]
 .DESCRIPTION
-	Lists the hourly weather.
+	Lists the hourly weather
 .EXAMPLE
-	PS> .\list-weather.ps1
+	PS> ./list-weather
 .NOTES
 	Author: Markus Fleschutz · License: CC0
 .LINK

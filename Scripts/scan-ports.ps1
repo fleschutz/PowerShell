@@ -2,9 +2,9 @@
 .SYNOPSIS
 	scan-ports.ps1
 .DESCRIPTION
-	Scans the network for open/closed ports.
+	Scans the network for open/closed ports
 .EXAMPLE
-	PS> .\scan-ports.ps1
+	PS> ./scan-ports
 .NOTES
 	Author: Markus Fleschutz · License: CC0
 .LINK

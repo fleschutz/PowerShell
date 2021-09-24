@@ -2,9 +2,9 @@
 .SYNOPSIS
 	list-exchange-rates.ps1 [<currency>]
 .DESCRIPTION
-	Lists the current exchange rates for the given currency (USD per default).
+	Lists the current exchange rates for the given currency (USD per default)
 .EXAMPLE
-	PS> .\list-exchange-rates.ps1 EUR
+	PS> ./list-exchange-rates EUR
 .NOTES
 	Author: Markus Fleschutz · License: CC0
 .LINK

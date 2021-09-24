@@ -2,9 +2,9 @@
 .SYNOPSIS
 	list-passwords.ps1 [<password-length>] [<columns>] [<rows>]
 .DESCRIPTION
-	Prints a list of random passwords.
+	Prints a list of random passwords
 .EXAMPLE
-	PS> .\list-passwords.ps1
+	PS> ./list-passwords
 .NOTES
 	Author: Markus Fleschutz · License: CC0
 .LINK

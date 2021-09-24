@@ -4,7 +4,7 @@
 .DESCRIPTION
 	Sets up the Git user configuration
 .EXAMPLE
-	PS> .\configure-git.ps1
+	PS> ./configure-git
 .NOTES
 	Author: Markus Fleschutz · License: CC0
 .LINK

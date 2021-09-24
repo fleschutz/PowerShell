@@ -4,7 +4,7 @@
 .DESCRIPTION
 	Lists all jobs from all printers
 .EXAMPLE
-	PS> .\list-print-jobs.ps1 
+	PS> ./list-print-jobs
 .NOTES
 	Author: Markus Fleschutz · License: CC0
 .LINK

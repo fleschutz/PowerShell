@@ -1,10 +1,10 @@
 ﻿<#
 .SYNOPSIS
-	clean-repo.ps1 [<repo-dir>]
+	clean-repo.ps1 [<RepoDir>]
 .DESCRIPTION
-	Cleans a Git repository from untracked files (including submodules, e.g. for a fresh build).
+	Cleans a Git repository from untracked files (including submodules, e.g. for a fresh build)
 .EXAMPLE
-	PS> .\clean-repo.ps1 C:\MyRepo
+	PS> ./clean-repo C:\MyRepo
 .NOTES
 	Author: Markus Fleschutz · License: CC0
 .LINK

@@ -4,7 +4,7 @@
 .DESCRIPTION
 	Change the working directory to one level up
 .EXAMPLE
-	PS> .\cd-up.ps1
+	PS> .\cd-up
 .LINK
 	https://github.com/fleschutz/PowerShell
 .NOTES

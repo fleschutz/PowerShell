@@ -2,9 +2,9 @@
 .SYNOPSIS
 	list-crypto-rates.ps1 
 .DESCRIPTION
-	Lists the current crypto exchange rates.
+	Lists the current crypto exchange rates
 .EXAMPLE
-	PS> .\list-crypto-rates.ps1
+	PS> ./list-crypto-rates
 .NOTES
 	Author: Markus Fleschutz · License: CC0
 .LINK

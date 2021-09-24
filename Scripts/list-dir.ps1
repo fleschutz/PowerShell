@@ -2,9 +2,9 @@
 .SYNOPSIS
 	list-dir.ps1 [<pattern>]
 .DESCRIPTION
-	Lists the directory content formatted in columns.
+	Lists the directory content formatted in columns
 .EXAMPLE
-	PS> .\list-dir.ps1 C:\
+	PS> ./list-dir C:\
 .NOTES
 	Author: Markus Fleschutz · License: CC0
 .LINK

@@ -1,10 +1,10 @@
 ﻿<#
 .SYNOPSIS
-	close-cortana.ps1 
+	close-cortana.ps1
 .DESCRIPTION
-	Closes Cortana gracefully.
+	Closes Cortana gracefully
 .EXAMPLE
-	PS> .\close-cortana.ps1
+	PS> ./close-cortana
 .NOTES
 	Author: Markus Fleschutz · License: CC0
 .LINK

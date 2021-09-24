@@ -4,7 +4,7 @@
 .DESCRIPTION
 	Prints the SHA256 checksum of the given file
 .EXAMPLE
-	PS> .\get-sha256.ps1 C:\MyFile.txt
+	PS> ./get-sha256 C:\MyFile.txt
 .NOTES
 	Author: Markus Fleschutz · License: CC0
 .LINK

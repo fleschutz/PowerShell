@@ -2,9 +2,9 @@
 .SYNOPSIS
 	list-tiobe-index.ps1 
 .DESCRIPTION
-	Lists the TIOBE index of top programming languages.
+	Lists the TIOBE index of top programming languages
 .EXAMPLE
-	PS> .\list-tiobe-index.ps1
+	PS> ./list-tiobe-index
 .NOTES
 	Author: Markus Fleschutz · License: CC0
 .LINK

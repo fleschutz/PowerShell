@@ -2,9 +2,9 @@
 .SYNOPSIS
 	list-installed-software.ps1
 .DESCRIPTION
-	Lists the installed software (except Windows Store apps).
+	Lists the installed software (except Windows Store apps)
 .EXAMPLE
-	PS> .\list-installed-software.ps1
+	PS> ./list-installed-software
 .NOTES
 	Author: Markus Fleschutz · License: CC0
 .LINK

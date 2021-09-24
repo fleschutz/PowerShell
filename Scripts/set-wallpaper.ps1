@@ -5,7 +5,7 @@
 	Sets the given image file as desktop wallpaper (.JPG or .PNG supported)
         (<style> is either Fill, Fit (default), Stretch, Tile, Center, or Span)
 .EXAMPLE
-	PS> .\set-wallpaper.ps1 C:\ocean.jpg
+	PS> ./set-wallpaper C:\ocean.jpg
 .NOTES
 	Author: Markus Fleschutz · License: CC0
 .LINK

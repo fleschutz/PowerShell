@@ -2,9 +2,9 @@
 .SYNOPSIS
 	list-cli-tools.ps1
 .DESCRIPTION
-	Lists available command-line interface (CLI) tools.
+	Lists available command-line interface (CLI) tools
 .EXAMPLE
-	PS> .\list-cli-tools.ps1
+	PS> ./list-cli-tools
 .NOTES
 	Author: Markus Fleschutz · License: CC0
 .LINK

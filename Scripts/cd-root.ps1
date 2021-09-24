@@ -2,9 +2,9 @@
 .SYNOPSIS
 	cd-root.ps1 
 .DESCRIPTION
-	Change the working directory to the root directory (C:\ on Windows).
+	Change the working directory to the root directory (C:\ on Windows)
 .EXAMPLE
-	PS> .\cd-root.ps1 
+	PS> ./cd-root
 .LINK
 	https://github.com/fleschutz/PowerShell
 .NOTES

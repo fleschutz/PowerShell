@@ -2,9 +2,9 @@
 .SYNOPSIS
 	list-timezones.ps1 
 .DESCRIPTION
-	Lists all available time zones.
+	Lists all available time zones
 .EXAMPLE
-	PS> .\list-timezones.ps1
+	PS> ./list-timezones
 .NOTES
 	Author: Markus Fleschutz · License: CC0
 .LINK

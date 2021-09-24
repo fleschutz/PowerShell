@@ -4,7 +4,7 @@
 .DESCRIPTION
 	Change the working directory to the user's music folder
 .EXAMPLE
-	PS> .\cd-music.ps1
+	PS> ./cd-music
 .LINK
 	https://github.com/fleschutz/PowerShell
 .NOTES

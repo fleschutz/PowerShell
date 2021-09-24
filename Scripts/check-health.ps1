@@ -4,7 +4,7 @@
 .DESCRIPTION
 	Checks the health of the local computer
 .EXAMPLE
-	PS> .\check-health.ps1
+	PS> ./check-health
 .LINK
 	https://github.com/fleschutz/PowerShell
 .NOTES

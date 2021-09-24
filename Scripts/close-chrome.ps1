@@ -2,9 +2,9 @@
 .SYNOPSIS
 	close-chrome.ps1 
 .DESCRIPTION
-	Closes the Web browser Google Chrome gracefully.
+	Closes the Web browser Google Chrome gracefully
 .EXAMPLE
-	PS> .\close-chrome.ps1
+	PS> ./close-chrome
 .NOTES
 	Author: Markus Fleschutz · License: CC0
 .LINK

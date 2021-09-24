@@ -4,7 +4,7 @@
 .DESCRIPTION
 	Change the working directory to the user's Git repositories folder
 .EXAMPLE
-	PS> .\cd-repos.ps1 
+	PS> ./cd-repos
 .LINK
 	https://github.com/fleschutz/PowerShell
 .NOTES

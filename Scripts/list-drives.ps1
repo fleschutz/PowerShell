@@ -2,9 +2,9 @@
 .SYNOPSIS
 	list-drives.ps1
 .DESCRIPTION
-	Lists all drives connected to the computer.
+	Lists all drives connected to the computer
 .EXAMPLE
-	PS> .\list-drives.ps1
+	PS> ./list-drives
 .NOTES
 	Author: Markus Fleschutz · License: CC0
 .LINK

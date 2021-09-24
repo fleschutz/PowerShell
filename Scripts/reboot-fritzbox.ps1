@@ -2,9 +2,9 @@
 .SYNOPSIS
 	reboot-fritzbox.ps1 [<username>] [<password>]
 .DESCRIPTION
-	Reboots the FRITZ!Box device.
+	Reboots the FRITZ!Box device
 .EXAMPLE
-	PS> .\reboot-fritzbox.ps1 
+	PS> ./reboot-fritzbox
 .NOTES
 	Author: Markus Fleschutz · License: CC0
 .LINK

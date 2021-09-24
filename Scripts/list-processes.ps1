@@ -2,9 +2,9 @@
 .SYNOPSIS
 	list-processes.ps1 
 .DESCRIPTION
-	Lists all local computer processes.
+	Lists all local computer processes
 .EXAMPLE
-	PS> .\list-processes.ps1
+	PS> ./list-processes
 .NOTES
 	Author: Markus Fleschutz · License: CC0
 .LINK

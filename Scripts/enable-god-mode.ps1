@@ -2,9 +2,9 @@
 .SYNOPSIS
 	enable-god-mode.ps1 
 .DESCRIPTION
-	Enables the god mode (adds a new icon to the desktop).
+	Enables the god mode (adds a new icon to the desktop)
 .EXAMPLE
-	PS> .\enable-god-mode.ps1
+	PS> ./enable-god-mode
 .NOTES
 	Author: Markus Fleschutz · License: CC0
 .LINK

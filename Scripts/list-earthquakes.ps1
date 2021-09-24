@@ -2,9 +2,9 @@
 .SYNOPSIS
 	list-earthquakes.ps1
 .DESCRIPTION
-	Lists earthquakes with magnitude >= 6.0 for the last 30 days.
+	Lists earthquakes with magnitude >= 6.0 for the last 30 days
 .EXAMPLE
-	PS> .\list-earthquakes.ps1
+	PS> ./list-earthquakes
 .NOTES
 	Author: Markus Fleschutz · License: CC0
 .LINK

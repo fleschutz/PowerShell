@@ -2,9 +2,9 @@
 .SYNOPSIS
         play-tetris-melody.ps1
 .DESCRIPTION
-        Plays the Tetris melody.
+        Plays the Tetris melody
 .EXAMPLE
-        PS> .\play-tetris-melody.ps1
+        PS> ./play-tetris-melody
 .NOTES
 	Author: Markus Fleschutz · License: CC0
 .LINK

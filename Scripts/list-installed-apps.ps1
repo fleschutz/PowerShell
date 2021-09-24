@@ -2,9 +2,9 @@
 .SYNOPSIS
 	list-installed-apps.ps1
 .DESCRIPTION
-	Lists the installed Windows Store apps.
+	Lists the installed Windows Store apps
 .EXAMPLE
-	PS> .\list-installed-apps.ps1
+	PS> ./list-installed-apps
 .NOTES
 	Author: Markus Fleschutz · License: CC0
 .LINK

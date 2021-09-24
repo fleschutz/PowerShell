@@ -2,9 +2,9 @@
 .SYNOPSIS
 	inspect-exe.ps1 [<path-to-exe-file>]
 .DESCRIPTION
-	Prints basic information of the given executable file.
+	Prints basic information of the given executable file
 .EXAMPLE
-	PS> .\inspect-exe.ps1 C:\MyApp.exe
+	PS> ./inspect-exe C:\MyApp.exe
 .NOTES
 	Author: Markus Fleschutz · License: CC0
 .LINK

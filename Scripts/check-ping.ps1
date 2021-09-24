@@ -2,10 +2,10 @@
 .SYNOPSIS
 	check-ping.ps1 [<hosts>]
 .DESCRIPTION
-	Checks the ping latency from the local computer to Internet hosts.
+	Checks the ping latency from the local computer to selected Internet hosts
 	(default is: 'amazon.com,apple.com,bing.com,cnn.com,dropbox.com,facebook.com,google.com,live.com,twitter.com,youtube.com)
 .EXAMPLE
-	PS> .\check-ping.ps1
+	PS> ./check-ping
 .LINK
 	https://github.com/fleschutz/PowerShell
 .NOTES

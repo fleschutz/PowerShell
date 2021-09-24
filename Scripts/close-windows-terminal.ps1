@@ -2,9 +2,9 @@
 .SYNOPSIS
 	close-windows-terminal.ps1 
 .DESCRIPTION
-	Closes Windows Terminal gracefully.
+	Closes Windows Terminal gracefully
 .EXAMPLE
-	PS> .\close-windows-terminal.ps1
+	PS> ./close-windows-terminal
 .NOTES
 	Author: Markus Fleschutz · License: CC0
 .LINK

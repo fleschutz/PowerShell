@@ -4,7 +4,7 @@
 .DESCRIPTION
 	Checks a drive for free space left (20 GB by default)
 .EXAMPLE
-	PS> .\check-drive-space.ps1 C
+	PS> ./check-drive-space C
 .LINK
 	https://github.com/fleschutz/PowerShell
 .NOTES

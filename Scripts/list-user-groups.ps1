@@ -2,9 +2,9 @@
 .SYNOPSIS
 	list-user-groups.ps1 
 .DESCRIPTION
-	Lists the user groups on the local computer.
+	Lists the user groups on the local computer
 .EXAMPLE
-	PS> .\list-user-groups.ps1
+	PS> ./list-user-groups
 .NOTES
 	Author: Markus Fleschutz · License: CC0
 .LINK

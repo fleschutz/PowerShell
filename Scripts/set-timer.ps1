@@ -2,9 +2,9 @@
 .SYNOPSIS
 	set-timer.ps1 [<seconds>]
 .DESCRIPTION
-	Sets a timer for a countdown.
+	Sets a timer for a countdown
 .EXAMPLE
-	PS> .\set-timer.ps1 60
+	PS> ./set-timer 60
 .NOTES
 	Author: Markus Fleschutz · License: CC0
 .LINK

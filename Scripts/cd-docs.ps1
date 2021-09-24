@@ -4,7 +4,7 @@
 .DESCRIPTION
 	Change the working directory to the user's documents folder
 .EXAMPLE
-	PS> .\cd-docs.ps1 
+	PS> ./cd-docs
 .LINK
 	https://github.com/fleschutz/PowerShell
 .NOTES

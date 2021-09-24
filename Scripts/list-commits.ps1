@@ -2,9 +2,9 @@
 .SYNOPSIS
 	list-commits.ps1 [<RepoDir>] [<Format>]
 .DESCRIPTION
-	Lists all commits in a Git repository (format is: list|compact|normal|JSON).
+	Lists all commits in a Git repository (format is: list|compact|normal|JSON)
 .EXAMPLE
-	PS> .\list-commits.ps1
+	PS> ./list-commits
 .NOTES
 	Author: Markus Fleschutz · License: CC0
 .LINK

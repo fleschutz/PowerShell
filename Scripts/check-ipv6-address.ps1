@@ -2,9 +2,9 @@
 .SYNOPSIS
 	check-ipv6-address.ps1 [<address>]
 .DESCRIPTION
-	Checks the given IPv6 address for validity.
+	Checks the given IPv6 address for validity
 .EXAMPLE
-	PS> .\check-ipv6-address.ps1 fe80::200:5aee:feaa:20a2
+	PS> ./check-ipv6-address fe80::200:5aee:feaa:20a2
 .LINK
 	https://github.com/fleschutz/PowerShell
 .NOTES

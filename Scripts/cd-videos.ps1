@@ -4,7 +4,7 @@
 .DESCRIPTION
 	Change the working directory to the user's videos folder
 .EXAMPLE
-	PS> .\cd-videos.ps1
+	PS> ./cd-videos
 .LINK
 	https://github.com/fleschutz/PowerShell
 .NOTES

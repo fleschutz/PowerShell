@@ -2,9 +2,9 @@
 .SYNOPSIS
 	list-news.ps1 [<RSS-URL>] [<max-count>]
 .DESCRIPTION
-	Lists the latest news.
+	Lists the latest news
 .EXAMPLE
-	PS> .\list-news.ps1
+	PS> ./list-news
 .NOTES
 	Author: Markus Fleschutz · License: CC0
 .LINK

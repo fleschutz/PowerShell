@@ -2,9 +2,9 @@
 .SYNOPSIS
 	list-printers.ps1
 .DESCRIPTION
-	Lists all printer known to the local computer.
+	Lists all printer known to the local computer
 .EXAMPLE
-	PS> .\list-printers.ps1
+	PS> ./list-printers
 .NOTES
 	Author: Markus Fleschutz · License: CC0
 .LINK

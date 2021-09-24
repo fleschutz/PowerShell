@@ -2,9 +2,9 @@
 .SYNOPSIS
 	new-email.ps1 [<address>]
 .DESCRIPTION
-	Opens the default email client to write a new email.
+	Opens the default email client to write a new email
 .EXAMPLE
-	PS> .\new-email.ps1
+	PS> ./new-email
 .NOTES
 	Author: Markus Fleschutz · License: CC0
 .LINK

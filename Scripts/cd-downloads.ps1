@@ -4,7 +4,7 @@
 .DESCRIPTION
 	Change the working directory to the user's downloads folder
 .EXAMPLE
-	PS> .\cd-downloads.ps1 
+	PS> ./cd-downloads
 .LINK
 	https://github.com/fleschutz/PowerShell
 .NOTES

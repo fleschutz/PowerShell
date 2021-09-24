@@ -2,9 +2,9 @@
 .SYNOPSIS
 	list-empty-files.ps1 [<dir-tree>]
 .DESCRIPTION
-	Lists empty files within the given directory tree.
+	Lists empty files within the given directory tree
 .EXAMPLE
-	PS> .\list-empty-files.ps1 C:\
+	PS> ./list-empty-files C:\
 .NOTES
 	Author: Markus Fleschutz · License: CC0
 .LINK

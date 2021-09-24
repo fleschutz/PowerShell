@@ -2,11 +2,11 @@
 .SYNOPSIS
 	list-sql-tables.ps1
 .DESCRIPTION
-	Lists all tables in a SQL server database and exports the list as CSV.
+	Lists all tables in a SQL server database and exports the list as CSV
 	Install-Module InvokeQuery
 	Run the above command if you do not have this module.
 .EXAMPLE
-	PS> .\list-sql-tables.ps1
+	PS> ./list-sql-tables
 .NOTES
 	Author: Markus Fleschutz · License: CC0
 .LINK

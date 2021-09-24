@@ -2,21 +2,21 @@
 .SYNOPSIS
 	check-xml-file [<file>]
 .DESCRIPTION
-	Checks the given XML file for validity.
+	Checks the given XML file for validity
 .EXAMPLE
-	PS> .\check-xml-file.ps1 myfile.xml
+	PS> ./check-xml-file myfile.xml
 .NOTES
 	Author: Markus Fleschutz · License: CC0
 .LINK
 	https://github.com/fleschutz/PowerShell
 #>
 
-param([string]$File = "")
+param([string]$file = "")
 
 try {
-	if ($File -eq "" ) { $File = read-host "Enter path to XML file" }
+	if ($file -eq "" ) { $file = read-host "Enter path to XML file" }
 
-	$XmlFile = Get-Item $File
+	$XmlFile = Get-Item $file
 	
 	$script:ErrorCount = 0
 	

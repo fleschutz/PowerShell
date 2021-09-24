@@ -2,9 +2,9 @@
 .SYNOPSIS
 	convert-mysql2csv.ps1 [<server>] [<database>] [<username>] [<password>] [<query>]
 .DESCRIPTION
-	Convert a MySQL database table to a .CSV file.
+	Convert a MySQL database table to a .CSV file
 .EXAMPLE
-	PS> .\convert-mysql2csv.ps1
+	PS> ./convert-mysql2csv
 .NOTES
 	Author: Markus Fleschutz · License: CC0
 .LINK

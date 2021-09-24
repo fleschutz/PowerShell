@@ -2,9 +2,9 @@
 .SYNOPSIS
 	new-script.ps1 [<filename>] 
 .DESCRIPTION
-	Creates a new PowerShell script.
+	Creates a new PowerShell script
 .EXAMPLE
-	PS> .\new-script.ps1 myscript.ps1
+	PS> ./new-script myscript.ps1
 .NOTES
 	Author: Markus Fleschutz · License: CC0
 .LINK

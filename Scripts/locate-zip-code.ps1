@@ -2,9 +2,9 @@
 .SYNOPSIS
 	locate-zip-code.ps1 [<country-code>] [<zip-code>]
 .DESCRIPTION
-	Prints the geographic location of the given zip-code.
+	Prints the geographic location of the given zip-code
 .EXAMPLE
-	PS> .\locate-zip-code.ps1
+	PS> ./locate-zip-code
 .NOTES
 	Author: Markus Fleschutz · License: CC0
 .LINK

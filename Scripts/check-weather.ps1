@@ -2,16 +2,16 @@
 .SYNOPSIS
 	check-weather.ps1 [<location>]
 .DESCRIPTION
-	Checks the weather for critical values.
+	Checks the weather for critical values
 .EXAMPLE
-	PS> .\check-weather.ps1
+	PS> ./check-weather
 .LINK
 	https://github.com/fleschutz/PowerShell
 .NOTES
 	Author: Markus Fleschutz · License: CC0
 #>
 
-param([string]$Location = "") # empty means determine automatically
+param([string]$location = "") # empty means determine automatically
 
 function Check { param([int]$Value, [int]$NormalMin,  [int]$NormalMax, [string]$Unit)  
 	if ($Value -lt $NormalMin) {
@@ -24,7 +24,7 @@ function Check { param([int]$Value, [int]$NormalMin,  [int]$NormalMax, [string]$
 }
 
 try {
-	$Weather = (Invoke-WebRequest http://wttr.in/${Location}?format=j1 -UserAgent "curl" ).Content | ConvertFrom-Json
+	$Weather = (Invoke-WebRequest http://wttr.in/${location}?format=j1 -UserAgent "curl" ).Content | ConvertFrom-Json
 
 	$Temp = $Weather.current_condition.temp_C
 	$Precip = $Weather.current_condition.precipMM

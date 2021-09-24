@@ -2,9 +2,9 @@
 .SYNOPSIS
 	close-calculator.ps1 
 .DESCRIPTION
-	Closes the calculator program gracefully.
+	Closes the calculator program gracefully
 .EXAMPLE
-	PS> .\close-calculator.ps1
+	PS> ./close-calculator
 .NOTES
 	Author: Markus Fleschutz · License: CC0
 .LINK

@@ -2,9 +2,9 @@
 .SYNOPSIS
 	convert-txt2wav.ps1 [<text>] [<wav-file>]
 .DESCRIPTION
-	Converts text to a .WAV audio file.
+	Converts text to a .WAV audio file
 .EXAMPLE
-	PS> .\convert-txt2wav.ps1 "Hello World" spoken.wav
+	PS> ./convert-txt2wav "Hello World" spoken.wav
 .NOTES
 	Author: Markus Fleschutz · License: CC0
 .LINK

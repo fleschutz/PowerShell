@@ -4,7 +4,7 @@
 .DESCRIPTION
 	Lists the installed text-to-speech (TTS) voices
 .EXAMPLE
-	PS> .\list-voices.ps1
+	PS> ./list-voices
 .NOTES
 	Author: Markus Fleschutz · License: CC0
 .LINK

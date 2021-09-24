@@ -1,10 +1,10 @@
 ﻿<#
 .SYNOPSIS
-	fetch-repos.ps1 [<parent-dir>]
+	fetch-repos.ps1 [<ParentDir>]
 .DESCRIPTION
-	Fetches updates for all Git repositories under the current/given directory (including submodules).
+	Fetches updates for all Git repositories under the current/given directory (including submodules)
 .EXAMPLE
-	PS> .\fetch-repos.ps1 C:\MyRepos
+	PS> ./fetch-repos C:\MyRepos
 .NOTES
 	Author: Markus Fleschutz · License: CC0
 .LINK

@@ -2,9 +2,9 @@
 .SYNOPSIS
 	list-fritzbox-devices.ps1 [<username>] [<password>]
 .DESCRIPTION
-	Lists FRITZ!Box's known devices.
+	Lists FRITZ!Box's known devices
 .EXAMPLE
-	PS> .\list-fritzbox-devices.ps1
+	PS> ./list-fritzbox-devices
 .NOTES
 	Author: Markus Fleschutz · License: CC0
 .LINK

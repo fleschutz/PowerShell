@@ -2,9 +2,9 @@
 .SYNOPSIS
 	reboot.ps1
 .DESCRIPTION
-	Reboots the local computer (needs admin rights).
+	Reboots the local computer (needs admin rights)
 .EXAMPLE
-	PS> .\reboot.ps1
+	PS> ./reboot
 .NOTES
 	Author: Markus Fleschutz · License: CC0
 .LINK

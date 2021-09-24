@@ -4,7 +4,7 @@
 .DESCRIPTION
 	Checks every symlink in a directory tree
 .EXAMPLE
-	PS> .\check-symlinks.ps1 C:\MyApp
+	PS> ./check-symlinks C:\MyApp
 .LINK
 	https://github.com/fleschutz/PowerShell
 .NOTES

@@ -2,9 +2,9 @@
 .SYNOPSIS
 	hibernate.ps1
 .DESCRIPTION
-	Enables hibernate mode for the local computer (needs admin rights).
+	Enables hibernate mode for the local computer (needs admin rights)
 .EXAMPLE
-	PS> .\hibernate.ps1
+	PS> ./hibernate
 .NOTES
 	Author: Markus Fleschutz · License: CC0
 .LINK

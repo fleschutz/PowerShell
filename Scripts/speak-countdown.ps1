@@ -2,9 +2,9 @@
 .SYNOPSIS
 	speak-countdown.ps1 [start-number]
 .DESCRIPTION
-	Speaks a countdown by text-to-speech (TTS).
+	Speaks a countdown by text-to-speech (TTS)
 .EXAMPLE
-	PS> .\speak-countdown.ps1 60
+	PS> ./speak-countdown 60
 .NOTES
 	Author: Markus Fleschutz · License: CC0
 .LINK

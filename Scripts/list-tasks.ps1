@@ -2,9 +2,9 @@
 .SYNOPSIS
 	list-tasks.ps1 
 .DESCRIPTION
-	Lists all Windows scheduler tasks.
+	Lists all Windows scheduler tasks
 .EXAMPLE
-	PS> .\list-tasks.ps1
+	PS> ./list-tasks
 .NOTES
 	Author: Markus Fleschutz · License: CC0
 .LINK

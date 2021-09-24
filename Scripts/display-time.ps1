@@ -2,9 +2,9 @@
 .SYNOPSIS
 	display-time.ps1 [<seconds>]
 .DESCRIPTION
-	Displays the current time (for 10 seconds by default).
+	Displays the current time (for 10 seconds by default)
 .EXAMPLE
-	PS> .\display-time.ps1
+	PS> ./display-time
 .NOTES
 	Author: Markus Fleschutz · License: CC0
 .LINK

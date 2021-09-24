@@ -2,9 +2,9 @@
 .SYNOPSIS
 	close-netflix.ps1 
 .DESCRIPTION
-	Closes the Netflix program gracefully.
+	Closes the Netflix program gracefully
 .EXAMPLE
-	PS> .\close-netflix.ps1
+	PS> ./close-netflix
 .NOTES
 	Author: Markus Fleschutz · License: CC0
 .LINK

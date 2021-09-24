@@ -2,9 +2,9 @@
 .SYNOPSIS
 	pull-repo.ps1 [<repo-dir>]
 .DESCRIPTION
-	Pulls updates for a local Git repository (including submodules).
+	Pulls updates for a local Git repository (including submodules)
 .EXAMPLE
-	PS> .\pull-repo.ps1 C:\MyRepo
+	PS> ./pull-repo C:\MyRepo
 .NOTES
 	Author: Markus Fleschutz · License: CC0
 .LINK

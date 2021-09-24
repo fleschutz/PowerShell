@@ -2,9 +2,9 @@
 .SYNOPSIS
 	list-memos.ps1 
 .DESCRIPTION
-	Lists all memos in $HOME/Memos.csv.
+	Lists all memos in $HOME/Memos.csv
 .EXAMPLE
-	PS> .\list-memos.ps1
+	PS> ./list-memos
 .NOTES
 	Author: Markus Fleschutz · License: CC0
 .LINK

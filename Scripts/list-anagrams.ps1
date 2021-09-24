@@ -2,9 +2,9 @@
 .SYNOPSIS
 	list-anagrams.ps1 [<word>] [<columns>]
 .DESCRIPTION
-	Lists all anagrams of the given word.
+	Lists all anagrams of the given word
 .EXAMPLE
-	PS> .\list-anagrams.ps1 Markus
+	PS> ./list-anagrams Baby
 .NOTES
 	Author: Markus Fleschutz · License: CC0
 .LINK

@@ -2,9 +2,9 @@
 .SYNOPSIS
 	list-emojis.ps1 
 .DESCRIPTION
-	Lists the Emojis of Unicode 13.0.
+	Lists the Emojis of Unicode 13.0
 .EXAMPLE
-	PS> .\list-emojis.ps1
+	PS> ./list-emojis
 .NOTES
 	Author: Markus Fleschutz · License: CC0
 .LINK

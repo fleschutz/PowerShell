@@ -2,9 +2,9 @@
 .SYNOPSIS
 	list-mysql-tables.ps1 
 .DESCRIPTION
-	Lists the MySQL tables.
+	Lists the MySQL tables
 .EXAMPLE
-	PS> .\list-mysql-tables.ps1
+	PS> ./list-mysql-tables
 .NOTES
 	Author: Markus Fleschutz · License: CC0
 .LINK

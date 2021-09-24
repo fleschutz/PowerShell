@@ -2,9 +2,9 @@
 .SYNOPSIS
 	list-cmdlets.ps1 
 .DESCRIPTION
-	Lists all PowerShell cmdlets.
+	Lists all PowerShell cmdlets
 .EXAMPLE
-	PS> .\list-cmdlets.ps1
+	PS> ./list-cmdlets
 .NOTES
 	Author: Markus Fleschutz · License: CC0
 .LINK

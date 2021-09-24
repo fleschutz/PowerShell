@@ -2,9 +2,9 @@
 .SYNOPSIS
 	list-os-updates.ps1 [<RSS-URL>] [<max-count>]
 .DESCRIPTION
-	Lists the latest operating system updates.
+	Lists the latest operating system updates
 .EXAMPLE
-	PS> .\list-os-updates.ps1
+	PS> ./list-os-updates
 .NOTES
 	Author: Markus Fleschutz · License: CC0
 .LINK

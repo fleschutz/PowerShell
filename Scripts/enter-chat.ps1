@@ -2,9 +2,9 @@
 .SYNOPSIS
 	enter-chat.ps1 
 .DESCRIPTION
-	Enters a chat using a common network shared file.
+	Enters a chat using a common network shared file
 .EXAMPLE
-	PS> .\enter-chat.ps1
+	PS> ./enter-chat
 .NOTES
 	Author: Markus Fleschutz · License: CC0
 .LINK

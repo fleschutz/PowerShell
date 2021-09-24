@@ -2,9 +2,9 @@
 .SYNOPSIS
 	list-recycle-bin.ps1 
 .DESCRIPTION
-	Lists the content of the recycle bin folder.
+	Lists the content of the recycle bin folder
 .EXAMPLE
-	PS> .\list-recycle-bin.ps1 
+	PS> ./list-recycle-bin
 .NOTES
 	Author: Markus Fleschutz · License: CC0
 .LINK

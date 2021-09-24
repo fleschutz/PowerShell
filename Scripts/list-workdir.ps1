@@ -2,9 +2,9 @@
 .SYNOPSIS
 	list-workdir.ps1 
 .DESCRIPTION
-	Lists the current working directory.
+	Lists the current working directory
 .EXAMPLE
-	PS> .\list-workdir.ps1
+	PS> ./list-workdir
 .NOTES
 	Author: Markus Fleschutz · License: CC0
 .LINK

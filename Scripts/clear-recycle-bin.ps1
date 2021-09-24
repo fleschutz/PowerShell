@@ -2,10 +2,10 @@
 .SYNOPSIS
 	clear-recycle-bin.ps1 
 .DESCRIPTION
-	Removes the content of the recycle bin folder.
+	Removes the content of the recycle bin folder
 	NOTE: can not be undo!
 .EXAMPLE
-	PS> .\clear-recycle-bin.ps1 
+	PS> ./clear-recycle-bin
 .NOTES
 	Author: Markus Fleschutz · License: CC0
 .LINK

@@ -2,9 +2,9 @@
 .SYNOPSIS
 	new-zipfile.ps1 [<directory>]
 .DESCRIPTION
-	Creates a new .zip file from a directory.
+	Creates a new .zip file from a directory
 .EXAMPLE
-	PS> .\new-zipfile.ps1 C:\Windows
+	PS> ./new-zipfile C:\Windows
 .NOTES
 	Author: Markus Fleschutz · License: CC0
 .LINK

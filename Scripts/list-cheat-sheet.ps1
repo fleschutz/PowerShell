@@ -2,9 +2,9 @@
 .SYNOPSIS
 	list-cheat-sheet.ps1 
 .DESCRIPTION
-	Lists the PowerShell cheat sheet.
+	Lists the PowerShell cheat sheet
 .EXAMPLE
-	PS> .\list-cheat-sheet.ps1
+	PS> ./list-cheat-sheet
 .NOTES
 	Author: Markus Fleschutz · License: CC0
 .LINK

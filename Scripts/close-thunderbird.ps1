@@ -2,9 +2,9 @@
 .SYNOPSIS
 	close-thunderbird.ps1 
 .DESCRIPTION
-	Closes the mail client Mozilla Thunderbird gracefully.
+	Closes the mail client Mozilla Thunderbird gracefully
 .EXAMPLE
-	PS> .\close-thunderbird.ps1 
+	PS> ./close-thunderbird
 .NOTES
 	Author: Markus Fleschutz · License: CC0
 .LINK

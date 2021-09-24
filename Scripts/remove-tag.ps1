@@ -4,7 +4,7 @@
 .DESCRIPTION
 	Removes a Git tag (locally, remote, or both)
 .EXAMPLE
-	PS> .\remove-tag.ps1 v1.7 locally
+	PS> ./remove-tag v1.7 locally
 .LINK
 	https://github.com/fleschutz/PowerShell
 .NOTES

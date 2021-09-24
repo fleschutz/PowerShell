@@ -4,7 +4,7 @@
 .DESCRIPTION
 	Checks the file system of a drive (needs admin rights)
 .EXAMPLE
-	PS> .\check-file-system.ps1 C
+	PS> ./check-file-system C
 .LINK
 	https://github.com/fleschutz/PowerShell
 .NOTES

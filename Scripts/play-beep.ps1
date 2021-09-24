@@ -2,9 +2,9 @@
 .SYNOPSIS
 	play-beep.ps1
 .DESCRIPTION
-	Plays a short beep sound.
+	Plays a short beep sound
 .EXAMPLE
-	PS> .\play-beep.ps1
+	PS> ./play-beep
 .NOTES
 	Author: Markus Fleschutz · License: CC0
 .LINK

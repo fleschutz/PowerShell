@@ -2,9 +2,9 @@
 .SYNOPSIS
 	restart-network-adapters.ps1
 .DESCRIPTION
-	Restarts all local network adapters (needs admin rights).
+	Restarts all local network adapters (needs admin rights)
 .EXAMPLE
-	PS> .\restart-network-adapters.ps1
+	PS> ./restart-network-adapters
 .NOTES
 	Author: Markus Fleschutz · License: CC0
 .LINK

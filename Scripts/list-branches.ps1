@@ -2,9 +2,9 @@
 .SYNOPSIS
 	list-branches.ps1 [<repo-dir>] [<pattern>]
 .DESCRIPTION
-	Lists all branches in the current/given Git repository.
+	Lists all branches in the current/given Git repository
 .EXAMPLE
-	PS> .\list-branches.ps1
+	PS> ./list-branches
 .NOTES
 	Author: Markus Fleschutz · License: CC0
 .LINK

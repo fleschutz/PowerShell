@@ -4,7 +4,7 @@
 .DESCRIPTION
 	Creates a new shortcut file
 .EXAMPLE
-	PS> .\new-shortcut.ps1 C:\Temp\HDD C:\
+	PS> ./new-shortcut C:\Temp\HDD C:\
 .NOTES
 	Author: Markus Fleschutz · License: CC0
 .LINK

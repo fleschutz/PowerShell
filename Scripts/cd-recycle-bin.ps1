@@ -4,7 +4,7 @@
 .DESCRIPTION
 	Change the working directory to the user's recycle bin folder
 .EXAMPLE
-	PS> .\cd-recycle-bin.ps1 
+	PS> ./cd-recycle-bin
 .LINK
 	https://github.com/fleschutz/PowerShell
 .NOTES

@@ -2,9 +2,9 @@
 .SYNOPSIS
 	close-onedrive.ps1 
 .DESCRIPTION
-	Closes Microsoft OneDrive gracefully.
+	Closes Microsoft OneDrive gracefully
 .EXAMPLE
-	PS> .\close-onedrive.ps1
+	PS> ./close-onedrive
 .NOTES
 	Author: Markus Fleschutz · License: CC0
 .LINK

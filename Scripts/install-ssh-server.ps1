@@ -2,9 +2,9 @@
 .SYNOPSIS
 	install-ssh-server.ps1
 .DESCRIPTION
-	Installs the SSH server (needs admin rights).
+	Installs the SSH server (needs admin rights)
 .EXAMPLE
-	PS> .\install-ssh-server.ps1
+	PS> ./install-ssh-server
 .NOTES
 	Author: Markus Fleschutz · License: CC0
 .LINK

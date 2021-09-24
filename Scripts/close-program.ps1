@@ -1,10 +1,10 @@
 ﻿<#
 .SYNOPSIS
-	close-program.ps1 [<full-program-name>] [<program-name>] [<program-alias-name>]
+	close-program.ps1 [<FullProgramName>] [<ProgramName>] [<ProgramAliasName>]
 .DESCRIPTION
-	Closes the processes of the given program gracefully.
+	Closes the processes of the given program gracefully
 .EXAMPLE
-	PS> .\close-program.ps1 "Google Chrome" "chrome.exe"
+	PS> ./close-program "Google Chrome" "chrome.exe"
 .NOTES
 	Author: Markus Fleschutz · License: CC0
 .LINK

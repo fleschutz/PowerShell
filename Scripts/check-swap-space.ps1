@@ -2,9 +2,9 @@
 .SYNOPSIS
 	check-swap-space.ps1 [<min-level>]
 .DESCRIPTION
-	Checks the free swap space.
+	Checks the free swap space
 .EXAMPLE
-	PS> .\check-swap-space.ps1
+	PS> ./check-swap-space
 .LINK
 	https://github.com/fleschutz/PowerShell
 .NOTES

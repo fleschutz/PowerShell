@@ -2,9 +2,9 @@
 .SYNOPSIS
 	close-system-settings.ps1 
 .DESCRIPTION
-	Closes the System Settings gracefully.
+	Closes the System Settings gracefully
 .EXAMPLE
-	PS> .\close-system-settings.ps1
+	PS> ./close-system-settings
 .NOTES
 	Author: Markus Fleschutz · License: CC0
 .LINK

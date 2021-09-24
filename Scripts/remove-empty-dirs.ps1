@@ -2,9 +2,9 @@
 .SYNOPSIS
 	remove-empty-dirs.ps1 [<dir-tree>]
 .DESCRIPTION
-	Removes all empty subfolders within the given directory tree.
+	Removes all empty subfolders within the given directory tree
 .EXAMPLE
-	PS> .\remove-empty-dirs.ps1 C:\Temp
+	PS> ./remove-empty-dirs C:\Temp
 .NOTES
 	Author: Markus Fleschutz · License: CC0
 .LINK

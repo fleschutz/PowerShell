@@ -2,9 +2,9 @@
 .SYNOPSIS
 	list-city-weather.ps1
 .DESCRIPTION
-	List the current weather of cities world-wide (west to east).
+	List the current weather of cities world-wide (west to east)
 .EXAMPLE
-	PS> .\list-city-weather.ps1
+	PS> ./list-city-weather
 .NOTES
 	Author: Markus Fleschutz · License: CC0
 .LINK

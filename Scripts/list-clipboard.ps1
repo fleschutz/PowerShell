@@ -2,9 +2,9 @@
 .SYNOPSIS
 	list-clipboard.ps1
 .DESCRIPTION
-	Lists the contents of the clipboard.
+	Lists the contents of the clipboard
 .EXAMPLE
-	PS> .\list-clipboard.ps1
+	PS> ./list-clipboard
 .NOTES
 	Author: Markus Fleschutz · License: CC0
 .LINK

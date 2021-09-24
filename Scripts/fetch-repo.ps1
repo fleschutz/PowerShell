@@ -2,9 +2,9 @@
 .SYNOPSIS
 	fetch-repo.ps1 [<repo-dir>]
 .DESCRIPTION
-	Fetches updates for a local Git repository (including submodules).
+	Fetches updates for a local Git repository (including submodules)
 .EXAMPLE
-	PS> .\fetch-repo.ps1
+	PS> ./fetch-repo
 .NOTES
 	Author: Markus Fleschutz · License: CC0
 .LINK

@@ -2,9 +2,9 @@
 .SYNOPSIS
 	list-automatic-variables.ps1
 .DESCRIPTION
-	Lists all automatic variables of PowerShell.
+	Lists all automatic variables of PowerShell
 .EXAMPLE
-	PS> .\list-automatic-variables.ps1
+	PS> ./list-automatic-variables
 .NOTES
 	Author: Markus Fleschutz · License: CC0
 .LINK

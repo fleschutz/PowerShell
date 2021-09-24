@@ -2,9 +2,9 @@
 .SYNOPSIS
 	remove-print-jobs.ps1
 .DESCRIPTION
-	removes all jobs from all printers
+	Removes all jobs from all printers
 .EXAMPLE
-	PS> .\remove-print-jobs.ps1 
+	PS> ./remove-print-jobs
 .NOTES
 	Author: Markus Fleschutz · License: CC0
 .LINK

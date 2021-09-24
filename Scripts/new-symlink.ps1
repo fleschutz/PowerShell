@@ -4,7 +4,7 @@
 .DESCRIPTION
 	Creates a new symbolic link file
 .EXAMPLE
-	PS> .\new-symlink.ps1 C:\Temp\HDD C:\
+	PS> ./new-symlink C:\Temp\HDD C:\
 .NOTES
 	Author: Markus Fleschutz · License: CC0
 .LINK

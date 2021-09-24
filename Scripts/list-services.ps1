@@ -2,9 +2,9 @@
 .SYNOPSIS
 	list-services.ps1 
 .DESCRIPTION
-	Lists the local computer services.
+	Lists the local computer services
 .EXAMPLE
-	PS> .\list-services.ps1
+	PS> ./list-services
 .NOTES
 	Author: Markus Fleschutz · License: CC0
 .LINK

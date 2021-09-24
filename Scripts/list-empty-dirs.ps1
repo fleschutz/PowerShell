@@ -2,9 +2,9 @@
 .SYNOPSIS
 	list-empty-dirs.ps1 [<dir-tree>]
 .DESCRIPTION
-	Lists empty subfolders within the given directory tree.
+	Lists empty subfolders within the given directory tree
 .EXAMPLE
-	PS> .\list-empty-dirs.ps1 C:\
+	PS> ./list-empty-dirs C:\
 .NOTES
 	Author: Markus Fleschutz · License: CC0
 .LINK

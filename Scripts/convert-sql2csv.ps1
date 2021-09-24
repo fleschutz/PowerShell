@@ -2,9 +2,9 @@
 .SYNOPSIS
 	convert-sql2csv.ps1 [<server>] [<database>] [<username>] [<password>] [<query>]
 .DESCRIPTION
-	Converts a SQL database table to a .CSV file.
+	Converts a SQL database table to a .CSV file
 .EXAMPLE
-	PS> .\convert-sql2csv.ps1
+	PS> ./convert-sql2csv
 .NOTES
 	Author: Markus Fleschutz · License: CC0
 .LINK

@@ -2,9 +2,9 @@
 .SYNOPSIS
 	open-file-explorer.ps1
 .DESCRIPTION
-	Starts the File Explorer.
+	Starts the File Explorer
 .EXAMPLE
-	PS> .\open-file-explorer.ps1
+	PS> ./open-file-explorer
 .NOTES
 	Author: Markus Fleschutz · License: CC0
 .LINK

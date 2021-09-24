@@ -2,9 +2,9 @@
 .SYNOPSIS
 	mute-audio.ps1
 .DESCRIPTION
-	Mutes the audio output.
+	Mutes the audio output
 .EXAMPLE
-	PS> .\mute-audio.ps1
+	PS> ./mute-audio
 .NOTES
 	Author: Markus Fleschutz · License: CC0
 .LINK

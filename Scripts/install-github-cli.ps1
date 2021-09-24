@@ -2,9 +2,9 @@
 .SYNOPSIS
 	install-github-cli.ps1 
 .DESCRIPTION
-	Installs GitHub CLI.
+	Installs GitHub CLI
 .EXAMPLE
-	PS> .\install-github-cli.ps1 
+	PS> ./install-github-cli
 .NOTES
 	Author: Markus Fleschutz · License: CC0
 .LINK

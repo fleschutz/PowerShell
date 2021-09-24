@@ -2,9 +2,9 @@
 .SYNOPSIS
 	list-system-info.ps1
 .DESCRIPTION
-	Lists system information on the local computer.
+	Lists system information on the local computer
 .EXAMPLE
-	PS> .\list-system-info.ps1
+	PS> ./list-system-info
 .NOTES
 	Author: Markus Fleschutz · License: CC0
 .LINK

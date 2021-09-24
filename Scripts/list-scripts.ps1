@@ -2,9 +2,9 @@
 .SYNOPSIS
 	list-scripts.ps1
 .DESCRIPTION
-	Lists all PowerShell scripts in this repository (sorted alphabetically).
+	Lists all PowerShell scripts in this repository (sorted alphabetically)
 .EXAMPLE
-	PS> .\list-scripts.ps1
+	PS> ./list-scripts
 .NOTES
 	Author: Markus Fleschutz · License: CC0
 .LINK

@@ -2,9 +2,9 @@
 .SYNOPSIS
 	poweroff.ps1
 .DESCRIPTION
-	Halts the local computer (needs admin rights).
+	Halts the local computer (needs admin rights)
 .EXAMPLE
-	PS> .\poweroff.ps1
+	PS> ./poweroff
 .NOTES
 	Author: Markus Fleschutz · License: CC0
 .LINK

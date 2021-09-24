@@ -2,9 +2,9 @@
 .SYNOPSIS
 	open-netflix.ps1
 .DESCRIPTION
-	Starts the Netflix app (needs to be installed).
+	Starts the Netflix app (needs to be installed)
 .EXAMPLE
-	PS> .\open-netflix.ps1 
+	PS> ./open-netflix
 .NOTES
 	Author: Markus Fleschutz · License: CC0
 .LINK

@@ -2,9 +2,9 @@
 .SYNOPSIS
 	open-onedrive.ps1
 .DESCRIPTION
-	Opens the user's OneDrive folder.
+	Opens the user's OneDrive folder
 .EXAMPLE
-	PS> .\open-onedrive.ps1 
+	PS> ./open-onedrive
 .NOTES
 	Author: Markus Fleschutz · License: CC0
 .LINK

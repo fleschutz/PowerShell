@@ -2,9 +2,9 @@
 .SYNOPSIS
 	list-environment-variables.ps1
 .DESCRIPTION
-	Lists all environment variables.
+	Lists all environment variables
 .EXAMPLE
-	PS> .\list-environment-variables.ps1
+	PS> ./list-environment-variables
 .NOTES
 	Author: Markus Fleschutz · License: CC0
 .LINK

@@ -2,9 +2,9 @@
 .SYNOPSIS
 	list-console-colors.ps1 
 .DESCRIPTION
-	Lists all console colors.
+	Lists all console colors
 .EXAMPLE
-	PS> .\list-console-colors.ps1
+	PS> ./list-console-colors
 .NOTES
 	Author: Markus Fleschutz · License: CC0
 .LINK

@@ -2,9 +2,9 @@
 .SYNOPSIS
         play-jingle-bells.ps1
 .DESCRIPTION
-        Plays Jingle Bells.
+        Plays Jingle Bells
 .EXAMPLE
-        PS> .\play-jingle-bells.ps1
+        PS> ./play-jingle-bells
 .NOTES
 	Author: Markus Fleschutz · License: CC0
 .LINK

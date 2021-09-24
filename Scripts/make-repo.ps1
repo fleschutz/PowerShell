@@ -2,9 +2,9 @@
 .SYNOPSIS
 	make-repo.ps1 [<repo-dir>]
 .DESCRIPTION
-	Builds a Git repository supporting cmake,configure,autogen,Imakefile,Makefile.
+	Builds a Git repository supporting cmake,configure,autogen,Imakefile,Makefile
 .EXAMPLE
-	PS> .\make-repo.ps1 C:\MyRepo
+	PS> ./make-repo C:\MyRepo
 .NOTES
 	Author: Markus Fleschutz · License: CC0
 .LINK

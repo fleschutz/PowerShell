@@ -2,9 +2,9 @@
 .SYNOPSIS
 	list-profiles.ps1
 .DESCRIPTION
-	Lists your PowerShell profiles.
+	Lists your PowerShell profiles
 .EXAMPLE
-	PS> .\list-profiles.ps1
+	PS> ./list-profiles
 .NOTES
 	Author: Markus Fleschutz · License: CC0
 .LINK

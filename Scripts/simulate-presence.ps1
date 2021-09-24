@@ -2,9 +2,9 @@
 .SYNOPSIS
 	simulate-presence.ps1 [<IP-address>]
 .DESCRIPTION
-	Simulates the human presence against burglars.
+	Simulates the human presence against burglars
 .EXAMPLE
-	PS> .\simulate-presence.ps1 192.168.100.100
+	PS> ./simulate-presence 192.168.100.100
 .NOTES
 	Author: Markus Fleschutz · License: CC0
 .LINK

@@ -2,9 +2,9 @@
 .SYNOPSIS
 	list-dir-tree.ps1 [<dir-tree>]
 .DESCRIPTION
-	Lists the full directory tree.
+	Lists the full directory tree
 .EXAMPLE
-	PS> .\list-dir-tree.ps1 C:\
+	PS> ./list-dir-tree C:\
 .NOTES
 	Author: Markus Fleschutz · License: CC0
 .LINK

@@ -4,7 +4,7 @@
 .DESCRIPTION
 	Prints the MD5 checksum of the given file
 .EXAMPLE
-	PS> .\MD5.ps1 C:\MyFile.txt
+	PS> ./get-md5 C:\MyFile.txt
 .NOTES
 	Author: Markus Fleschutz · License: CC0
 .LINK

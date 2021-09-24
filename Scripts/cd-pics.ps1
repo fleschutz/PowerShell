@@ -4,7 +4,7 @@
 .DESCRIPTION
 	Change the working directory to the user's pictures folder
 .EXAMPLE
-	PS> .\cd-pics.ps1
+	PS> ./cd-pics
 .LINK
 	https://github.com/fleschutz/PowerShell
 .NOTES

@@ -2,9 +2,9 @@
 .SYNOPSIS
 	introduce-powershell.ps1
 .DESCRIPTION
-	Introduces PowerShell to new users.
+	Introduces PowerShell to new users
 .EXAMPLE
-	PS> .\introduce-powershell.ps1
+	PS> ./introduce-powershell
 .NOTES
 	Author: Markus Fleschutz · License: CC0
 .LINK

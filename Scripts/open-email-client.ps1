@@ -2,9 +2,9 @@
 .SYNOPSIS
 	open-email-client.ps1
 .DESCRIPTION
-	Starts the default email client.
+	Starts the default email client
 .EXAMPLE
-	PS> .\open-email-client.ps1
+	PS> ./open-email-client
 .NOTES
 	Author: Markus Fleschutz · License: CC0
 .LINK

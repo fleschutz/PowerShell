@@ -2,9 +2,9 @@
 .SYNOPSIS
 	decrypt-file.ps1 [<path>] [<password>]
 .DESCRIPTION
-	Decrypts the given file.
+	Decrypts the given file
 .EXAMPLE
-	PS> .\decrypt-file-rules.ps1 C:\MyFile.txt "123"
+	PS> ./decrypt-file-rules C:\MyFile.txt "123"
 .NOTES
 	Author: Markus Fleschutz · License: CC0
 .LINK

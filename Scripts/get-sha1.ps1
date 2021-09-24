@@ -4,7 +4,7 @@
 .DESCRIPTION
 	Prints the SHA1 checksum of the given file
 .EXAMPLE
-	PS> .\get-sha1.ps1 C:\MyFile.txt
+	PS> ./get-sha1 C:\MyFile.txt
 .NOTES
 	Author: Markus Fleschutz · License: CC0
 .LINK

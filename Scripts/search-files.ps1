@@ -2,9 +2,9 @@
 .SYNOPSIS
 	search-files.ps1 [<pattern>] [<path>]
 .DESCRIPTION
-	Searches for the given pattern in the given files.
+	Searches for the given pattern in the given files
 .EXAMPLE
-	PS> .\search-files.ps1 UFO C:\Temp\*.txt
+	PS> ./search-files UFO C:\Temp\*.txt
 .NOTES
 	Author: Markus Fleschutz · License: CC0
 .LINK

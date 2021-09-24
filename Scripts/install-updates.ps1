@@ -4,7 +4,7 @@
 .DESCRIPTION
 	Installs updates (needs admin rights)
 .EXAMPLE
-	PS> .\install-updates.ps1
+	PS> ./install-updates
 .NOTES
 	Author: Markus Fleschutz · License: CC0
 .LINK

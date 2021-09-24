@@ -2,9 +2,9 @@
 .SYNOPSIS
 	list-modules.ps1 
 .DESCRIPTION
-	Lists all PowerShell modules.
+	Lists all PowerShell modules
 .EXAMPLE
-	PS> .\list-modules.ps1
+	PS> ./list-modules
 .NOTES
 	Author: Markus Fleschutz · License: CC0
 .LINK

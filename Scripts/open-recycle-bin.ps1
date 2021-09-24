@@ -2,9 +2,9 @@
 .SYNOPSIS
 	open-recycle-bin.ps1 
 .DESCRIPTION
-	Starts the File Explorer with the recycle bin folder.
+	Starts the File Explorer with the recycle bin folder
 .EXAMPLE
-	PS> .\open-recycle-bin.ps1
+	PS> ./open-recycle-bin
 .NOTES
 	Author: Markus Fleschutz · License: CC0
 .LINK

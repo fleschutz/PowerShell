@@ -2,9 +2,9 @@
 .SYNOPSIS
 	list-submodules.ps1 [<repo-dir>] 
 .DESCRIPTION
-	Lists the submodules of the current/given Git repository.
+	Lists the submodules of the current/given Git repository
 .EXAMPLE
-	PS> .\list-submodules.ps1 C:\MyRepo
+	PS> ./list-submodules C:\MyRepo
 .NOTES
 	Author: Markus Fleschutz · License: CC0
 .LINK

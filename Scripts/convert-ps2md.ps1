@@ -2,9 +2,9 @@
 .SYNOPSIS
 	convert-ps2md.ps1 [<filename>]
 .DESCRIPTION
-	Converts the comment-based help of a PowerShell script to Markdown.
+	Converts the comment-based help of a PowerShell script to Markdown
 .EXAMPLE
-	PS> .\convert-ps2md.ps1 myscript.ps1
+	PS> ./convert-ps2md myscript.ps1
 .NOTES
 	Author: Markus Fleschutz · License: CC0
 .LINK

@@ -2,9 +2,9 @@
 .SYNOPSIS
 	list-hidden-files.ps1 [<dir-tree>]
 .DESCRIPTION
-	Lists hidden files within the given directory tree.
+	Lists hidden files within the given directory tree
 .EXAMPLE
-	PS> .\list-hidden-files.ps1 C:\
+	PS> ./list-hidden-files C:\
 .NOTES
 	Author: Markus Fleschutz · License: CC0
 .LINK
