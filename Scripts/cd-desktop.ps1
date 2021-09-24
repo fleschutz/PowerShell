@@ -4,7 +4,7 @@
 .DESCRIPTION
 	Change the working directory to the user's desktop folder
 .EXAMPLE
-	PS> .\cd-desktop.ps1 
+	PS> ./cd-desktop
 .LINK
 	https://github.com/fleschutz/PowerShell
 .NOTES

@@ -2,9 +2,9 @@
 .SYNOPSIS
 	turn-volume-up.ps1 [<percent>]
 .DESCRIPTION
-	Turns the audio volume up (+10% by default).
+	Turns the audio volume up (+10% by default)
 .EXAMPLE
-	PS> .\turn-volume-up.ps1
+	PS> ./turn-volume-up
 .NOTES
 	Author:  Markus Fleschutz · License: CC0
 .LINK

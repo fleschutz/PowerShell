@@ -2,9 +2,9 @@
 .SYNOPSIS
 	add-memo.ps1 [<text>]
 .DESCRIPTION
-	Adds the given memo text to $HOME/Memos.csv.
+	Adds the given memo text to $HOME/Memos.csv
 .EXAMPLE
-	PS> .\add-memo.ps1 "Buy apples"
+	PS> ./add-memo "Buy apples"
 .LINK
 	https://github.com/fleschutz/PowerShell
 .NOTES

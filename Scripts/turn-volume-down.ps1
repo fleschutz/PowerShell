@@ -4,7 +4,7 @@
 .DESCRIPTION
 	Turns the audio volume down (-10% by default).
 .EXAMPLE
-	PS> .\turn-volume-down.ps1
+	PS> ./turn-volume-down
 .NOTES
 	Author: Markus Fleschutz · License: CC0
 .LINK
