@@ -2,9 +2,9 @@
 .SYNOPSIS
 	write-quote.ps1 
 .DESCRIPTION
-	Writes a random quote to the console.
+	Writes a random quote to the console
 .EXAMPLE
-	PS> .\write-quote.ps1
+	PS> ./write-quote
 .NOTES
 	Author: Markus Fleschutz · License: CC0
 .LINK

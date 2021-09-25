@@ -2,16 +2,16 @@
 .SYNOPSIS
 	write-braille.ps1 [<text>]
 .DESCRIPTION
-	Writes the given text in Braille.
+	Writes the given text in Braille
 .EXAMPLE
-	PS> .\write-braille.ps1 "Hello World"
+	PS> ./write-braille "Hello World"
 .NOTES
 	Author: Markus Fleschutz · License: CC0
 .LINK
 	https://github.com/fleschutz/PowerShell
 #>
 
-param([string]$Text = "")
+param([string]$text = "")
 
 function BrailleA { param([int]$Row)
 	switch($Row) {
@@ -344,10 +344,9 @@ function BrailleChar { param([string]$Char, [int]$Row)
 }
 
 try {
-	if ($Text -eq "" ) {
-		[String]$Text = read-host "Enter text to write"
-	}
-	[char[]]$ArrayOfChars = $Text.ToUpper()
+	if ($text -eq "" ) { $text = read-host "Enter text to write" }
+
+	[char[]]$ArrayOfChars = $text.ToUpper()
 	write-output ""
 	for ($Row = 1; $Row -lt 4; $Row++) {
 		$Line = ""

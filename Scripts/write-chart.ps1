@@ -2,9 +2,9 @@
 .SYNOPSIS
 	write-chart.ps1
 .DESCRIPTION
-	Writes a chart.
+	Writes a chart
 .EXAMPLE
-	PS> .\write-chart.ps1
+	PS> ./write-chart
 .NOTES
 	Author: Markus Fleschutz · License: CC0
 .LINK

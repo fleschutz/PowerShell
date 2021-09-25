@@ -2,9 +2,9 @@
 .SYNOPSIS
 	take-screenshot.ps1 [<directory>]
 .DESCRIPTION
-	Takes a single screenshot and saves it into the current/given directory.
+	Takes a single screenshot and saves it into the current/given directory
 .EXAMPLE
-	PS> .\take-screenshot.ps1 C:\Temp
+	PS> ./take-screenshot C:\Temp
 .NOTES
 	Author: Markus Fleschutz · License: CC0
 .LINK

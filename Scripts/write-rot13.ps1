@@ -2,9 +2,9 @@
 .SYNOPSIS
 	write-rot13.ps1 [<text>]
 .DESCRIPTION
-	Prints the given text encoded or decoded with ROT13.
+	Writes the given text encoded or decoded with ROT13
 .EXAMPLE
-	PS> .\write-rot13.ps1 "Hello World"
+	PS> ./write-rot13 "Hello World"
 .NOTES
 	Author: Markus Fleschutz · License: CC0
 .LINK

@@ -2,9 +2,9 @@
 .SYNOPSIS
 	write-joke.ps1 
 .DESCRIPTION
-	Writes a random Juck Norris joke to the console.
+	Writes a random Juck Norris joke to the console
 .EXAMPLE
-	PS> .\write-joke.ps1
+	PS> ./write-joke
 .NOTES
 	Author: Markus Fleschutz · License: CC0
 .LINK

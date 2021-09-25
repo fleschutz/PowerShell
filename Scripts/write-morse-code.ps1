@@ -2,32 +2,32 @@
 .SYNOPSIS
 	write-morse-code.ps1 [<text>] [<speed>]
 .DESCRIPTION
-	Writes the given text in Morse code.
+	Writes the given text in Morse code
 .EXAMPLE
-	PS> .\write-morse-code.ps1 "Hello World"
+	PS> ./write-morse-code "Hello World"
 .NOTES
 	Author: Markus Fleschutz · License: CC0
 .LINK
 	https://github.com/fleschutz/PowerShell
 #>
 
-param([string]$Text = "", [int]$OneTimeUnit = 100) # in milliseconds
+param([string]$text = "", [int]$speed = 100) # one time unit in milliseconds
 
 function gap { param([int]$Length)
 	for ([int]$i = 1; $i -lt $Length; $i++) {
 		write-host " " -nonewline
 	}
-	start-sleep -milliseconds ($Length * $OneTimeUnit)
+	start-sleep -milliseconds ($Length * $speed)
 }
 
 function dot {
 	write-host "." -nonewline
-	start-sleep -milliseconds $OneTimeUnit # signal
+	start-sleep -milliseconds $speed # signal
 }
 
 function dash {
 	write-host "_" -nonewline
-	start-sleep -milliseconds (3 * $OneTimeUnit) # signal
+	start-sleep -milliseconds (3 * $speed) # signal
 }
 
 function Char2MorseCode { param([string]$Char)
@@ -73,9 +73,9 @@ function Char2MorseCode { param([string]$Char)
 }
 
 try {
-	if ($Text -eq "" ) { [string]$Text = read-host "Enter text to write" }
+	if ($text -eq "" ) { [string]$text = read-host "Enter text to write" }
 
-	[char[]]$ArrayOfChars = $Text.ToUpper()
+	[char[]]$ArrayOfChars = $text.ToUpper()
 	foreach($Char in $ArrayOfChars) {
 		Char2MorseCode $Char 
 	}

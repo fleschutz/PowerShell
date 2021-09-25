@@ -1,10 +1,10 @@
 ﻿<#
 .SYNOPSIS
-	weather.ps1 [<geo-location>]
+	weather.ps1 [<GeoLocation>]
 .DESCRIPTION
-	Prints the current weather forecast.
+	Prints the current weather forecast
 .EXAMPLE
-	PS> .\weather.ps1 Paris
+	PS> ./weather Paris
 .NOTES
 	Author: Markus Fleschutz · License: CC0
 .LINK

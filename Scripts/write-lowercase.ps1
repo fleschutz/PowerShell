@@ -2,9 +2,9 @@
 .SYNOPSIS
 	write-lowercase.ps1 [<text>]
 .DESCRIPTION
-	Writes the given text in lowercase letters.
+	Writes the given text in lowercase letters
 .EXAMPLE
-	PS> .\write-lowercase.ps1 "Hello World"
+	PS> ./write-lowercase "Hello World"
 .NOTES
 	Author: Markus Fleschutz · License: CC0
 .LINK

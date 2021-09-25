@@ -2,23 +2,23 @@
 .SYNOPSIS
 	write-typewriter.ps1 [<text>] [<speed>]
 .DESCRIPTION
-	Writes the given text with the typewriter effect.
+	Writes the given text with the typewriter effect
 .EXAMPLE
-	PS> .\write-typewriter.ps1 "Hello World"
+	PS> ./write-typewriter "Hello World"
 .NOTES
 	Author: Markus Fleschutz · License: CC0
 .LINK
 	https://github.com/fleschutz/PowerShell
 #>
 
-param([string]$Text = "`nHello World`n-----------`nPowerShell is cross-platform`nPowerShell is open-source`nPowerShell is easy to learn`nPowerShell is fully documented`n`nThanks for watching`n`n:-)`n`n", [int]$Speed = 250) # in milliseconds
+param([string]$text = "`nHello World`n-----------`nPowerShell is cross-platform`nPowerShell is open-source`nPowerShell is easy to learn`nPowerShell is fully documented`n`nThanks for watching`n`n:-)`n`n", [int]$speed = 250) # in milliseconds
 
 try {
 	$Random = New-Object System.Random
 
-	$Text -split '' | ForEach-Object {
+	$text -split '' | ForEach-Object {
 		write-host -nonewline $_
-		start-sleep -milliseconds $(1 + $Random.Next($Speed))
+		start-sleep -milliseconds $(1 + $Random.Next($speed))
 	}
 	exit 0
 } catch {

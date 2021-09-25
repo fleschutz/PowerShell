@@ -4,7 +4,7 @@
 .DESCRIPTION
 	Prints a description of the given abbreviation.
 .EXAMPLE
-	PS> .\what-is.ps1 CIA
+	PS> ./what-is CIA
 .NOTES
 	Author: Markus Fleschutz · License: CC0
 .LINK

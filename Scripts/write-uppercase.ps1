@@ -2,9 +2,9 @@
 .SYNOPSIS
 	write-uppercase.ps1 [<text>]
 .DESCRIPTION
-	Writes the given text in uppercase letters.
+	Writes the given text in uppercase letters
 .EXAMPLE
-	PS> .\write-uppercase.ps1 "Hello World"
+	PS> ./write-uppercase "Hello World"
 .NOTES
 	Author: Markus Fleschutz · License: CC0
 .LINK

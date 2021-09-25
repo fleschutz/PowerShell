@@ -2,16 +2,16 @@
 .SYNOPSIS
 	write-big.ps1 [<text>]
 .DESCRIPTION
-	Writes the given text in big letters.
+	Writes the given text in big letters
 .EXAMPLE
-	PS> .\write-big.ps1 "Hello World"
+	PS> ./write-big "Hello World"
 .NOTES
 	Author: Markus Fleschutz · License: CC0
 .LINK
 	https://github.com/fleschutz/PowerShell
 #>
 
-param([string]$Text = "")
+param([string]$text = "")
 
 Set-StrictMode -Version Latest
 
@@ -402,9 +402,9 @@ function BigChar { param([string]$Char, [int]$Row)
 }
 
 try {
-	if ($Text -eq "" ) { [String]$Text = read-host "Enter text to write" }
+	if ($text -eq "" ) { [String]$text = read-host "Enter text to write" }
 
-	[char[]]$ArrayOfChars = $Text.ToUpper()
+	[char[]]$ArrayOfChars = $text.ToUpper()
 	write-output ""
 	for ($Row = 1; $Row -lt 5; $Row++) {
 		$Line = ""

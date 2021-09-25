@@ -2,9 +2,9 @@
 .SYNOPSIS
 	write-motd.ps1 
 .DESCRIPTION
-	Writes the message of the day (MOTD).
+	Writes the message of the day (MOTD)
 .EXAMPLE
-	PS> .\write-motd.ps1 
+	PS> ./write-motd
 .NOTES
 	Author: Markus Fleschutz · License: CC0
 .LINK

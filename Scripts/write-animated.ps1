@@ -2,9 +2,9 @@
 .SYNOPSIS
 	write-animated.ps1 [<line1>] .. [line9>] [<speed>]
 .DESCRIPTION
-	Writes animated text.
+	Writes animated text
 .EXAMPLE
-	PS> .\write-animated.ps1 "Hello World"
+	PS> ./write-animated "Hello World"
 .NOTES
 	Author: Markus Fleschutz · License: CC0
 .LINK

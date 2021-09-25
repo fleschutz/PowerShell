@@ -2,9 +2,9 @@
 .SYNOPSIS
 	write-red.ps1 [<text>]
 .DESCRIPTION
-	Writes the given text in a red foreground color.
+	Writes the given text in a red foreground color
 .EXAMPLE
-	PS> .\write-red.ps1 "Hello World"
+	PS> ./write-red "Hello World"
 .NOTES
 	Author: Markus Fleschutz · License: CC0
 .LINK

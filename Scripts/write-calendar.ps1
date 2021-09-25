@@ -8,16 +8,16 @@
 .PARAMETER Year
 	If specified, will output an entire year.
 .EXAMPLE
-	PS> write-calendar
+	PS> ./write-calendar
 	Outputs the current month.
 .EXAMPLE
-	PS> write-calendar 2013
+	PS> ./write-calendar 2013
 	Outputs the calendar for 2013.
 .EXAMPLE
-	PS> write-calendar 04 2011
+	PS> ./write-calendar 04 2011
 	Outputs the calendar for April, 2011.
 .EXAMPLE
-	PS> write-calendar 7
+	PS> ./write-calendar 7
 	Outputs the calendar for July of this year.
 .NOTES
 	Author: Markus Fleschutz · License: CC0

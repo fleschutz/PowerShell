@@ -2,9 +2,9 @@
 .SYNOPSIS
 	write-blue.ps1 [<text>]
 .DESCRIPTION
-	Writes the given text in a blue foreground color.
+	Writes the given text in a blue foreground color
 .EXAMPLE
-	PS> .\write-blue.ps1 "Hello World"
+	PS> ./write-blue "Hello World"
 .NOTES
 	Author: Markus Fleschutz · License: CC0
 .LINK

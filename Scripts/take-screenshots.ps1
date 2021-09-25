@@ -1,17 +1,17 @@
 ﻿<#
 .SYNOPSIS
-	take-screenshots.ps1 [<directory>] [<interval>]
+	take-screenshots.ps1 [<TargetDir>] [<Interval>]
 .DESCRIPTION
-	Takes screenshots every 60 seconds and saves them into the current/given directory.
+	Takes screenshots and saves them into a target directory (per default every 60 seconds)
 .EXAMPLE
-	PS> .\take-screenshots.ps1 C:\Temp 60
+	PS> ./take-screenshots C:\Temp 60
 .NOTES
 	Author: Markus Fleschutz · License: CC0
 .LINK
 	https://github.com/fleschutz/PowerShell
 #>
 
-param([string]$Directory = "$PWD", [int]$Interval = 60)
+param([string]$TargetDir = "$PWD", [int]$Interval = 60) # in seconds
 
 function TakeScreenshot { param([string]$FilePath)
 	Add-Type -Assembly System.Windows.Forms            
@@ -28,7 +28,7 @@ try {
 	do {
 		$Time = (Get-Date)
 		$Filename = "$($Time.Year)-$($Time.Month)-$($Time.Day)-$($Time.Hour)-$($Time.Minute)-$($Time.Second).png"
-		$FilePath = (Join-Path $Directory $Filename)
+		$FilePath = (Join-Path $TargetDir $Filename)
 
 		write-output "Saving screenshot to $FilePath..."
 		TakeScreenshot $FilePath

@@ -1,10 +1,10 @@
 ﻿<#
 .SYNOPSIS
-	weather-report.ps1 [<geo-location>]
+	weather-report.ps1 [<GeoLocation>]
 .DESCRIPTION
-	Prints the local weather report.
+	Prints the local weather report
 .EXAMPLE
-	PS> .\weather-report.ps1 Paris
+	PS> ./weather-report Paris
 .NOTES
 	Author: Markus Fleschutz · License: CC0
 .LINK
