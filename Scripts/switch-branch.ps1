@@ -2,9 +2,9 @@
 .SYNOPSIS
 	switch-branch.ps1 [<BranchName>] [<RepoDir>]
 .DESCRIPTION
-	Switches to another branch in a Git repository (including submodules).
+	Switches to another branch in a Git repository (including submodules)
 .EXAMPLE
-	PS> .\switch-branch.ps1 main C:\MyRepo
+	PS> ./switch-branch main C:\MyRepo
 .NOTES
 	Author: Markus Fleschutz · License: CC0
 .LINK

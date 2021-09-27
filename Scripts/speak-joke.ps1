@@ -2,9 +2,9 @@
 .SYNOPSIS
 	speak-joke.ps1
 .DESCRIPTION
-	Speaks a random Chuck Norris joke by text-to-speech (TTS).
+	Speaks a random Chuck Norris joke by text-to-speech (TTS)
 .EXAMPLE
-	PS> .\speak-joke.ps1
+	PS> ./speak-joke
 .NOTES
 	Author: Markus Fleschutz · License: CC0
 .LINK

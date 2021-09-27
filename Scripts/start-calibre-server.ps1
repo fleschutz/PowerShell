@@ -2,9 +2,9 @@
 .SYNOPSIS
 	start-calibre-server.ps1 [<port>]
 .DESCRIPTION
-	Starts a local Calibre server as background process (Web port number is 8099 by default).
+	Starts a local Calibre server as background process (Web port number is 8099 by default)
 .EXAMPLE
-	PS> .\start-calibre-server.ps1
+	PS> ./start-calibre-server
 .NOTES
 	Author: Markus Fleschutz · License: CC0
 .LINK

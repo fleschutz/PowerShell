@@ -2,9 +2,9 @@
 .SYNOPSIS
 	speak-spanish.ps1 [<text>]
 .DESCRIPTION
-	Speaks the given text with a Spanish text-to-speech (TTS) voice.
+	Speaks the given text with a Spanish text-to-speech (TTS) voice
 .EXAMPLE
-	PS> .\speak-spanish.ps1 Hola
+	PS> ./speak-spanish Hola
 .NOTES
 	Author: Markus Fleschutz · License: CC0
 .LINK

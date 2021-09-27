@@ -2,9 +2,9 @@
 .SYNOPSIS
 	speak-date.ps1
 .DESCRIPTION
-	Speaks the current date by text-to-speech (TTS).
+	Speaks the current date by text-to-speech (TTS)
 .EXAMPLE
-	PS> .\speak-date.ps1
+	PS> ./speak-date
 .NOTES
 	Author: Markus Fleschutz · License: CC0
 .LINK

@@ -2,22 +2,22 @@
 .SYNOPSIS
 	speak-text.ps1 [<text>]
 .DESCRIPTION
-	Speaks the given text by text-to-speech (TTS).
+	Speaks the given text by the default text-to-speech (TTS) voice
 .EXAMPLE
-	PS> .\speak-text.ps1 "Hello World"
+	PS> ./speak-text "Hello World"
 .NOTES
 	Author: Markus Fleschutz · License: CC0
 .LINK
 	https://github.com/fleschutz/PowerShell
 #>
 
-param([string]$Text = "")
+param([string]$text = "")
 
 try {
-	if ($Text -eq "") { $Text = read-host "Enter the text to speak" }
+	if ($text -eq "") { $text = read-host "Enter the text to speak" }
 
 	$Voice = new-object -ComObject SAPI.SPVoice
-	$Result = $Voice.Speak($Text)
+	[void]$Voice.Speak($text)
 	exit 0
 } catch {
 	"⚠️ Error: $($Error[0]) ($($MyInvocation.MyCommand.Name):$($_.InvocationInfo.ScriptLineNumber))"

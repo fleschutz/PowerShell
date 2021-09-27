@@ -2,9 +2,9 @@
 .SYNOPSIS
 	speak-italian.ps1 [<text>]
 .DESCRIPTION
-	Speaks the given text with an Italian text-to-speech (TTS) voice.
+	Speaks the given text with an Italian text-to-speech (TTS) voice
 .EXAMPLE
-	PS> .\speak-italian.ps1 Ciao
+	PS> ./speak-italian Ciao
 .NOTES
 	Author: Markus Fleschutz · License: CC0
 .LINK

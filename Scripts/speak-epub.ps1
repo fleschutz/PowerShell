@@ -4,7 +4,7 @@
 .DESCRIPTION
 	Speaks the content of the given Epub file by text-to-speech (TTS).
 .EXAMPLE
-	PS> .\speak-epub.ps1 C:\MyBook.epub
+	PS> ./speak-epub C:\MyBook.epub
 .NOTES
 	Author: Markus Fleschutz · License: CC0
 .LINK

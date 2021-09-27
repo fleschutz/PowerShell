@@ -2,9 +2,9 @@
 .SYNOPSIS
 	speak-test.ps1
 .DESCRIPTION
-	Performs a text-to-speech (TTS) test.
+	Performs a text-to-speech (TTS) test
 .EXAMPLE
-	PS> .\speak-test.ps1
+	PS> ./speak-test
 .NOTES
 	Author: Markus Fleschutz · License: CC0
 .LINK

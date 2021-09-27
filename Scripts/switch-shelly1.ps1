@@ -1,10 +1,11 @@
 ﻿<#
 .SYNOPSIS
-	switch-shelly1.ps1 [<host>] [<turn-mode>] [<timer>]
+	switch-shelly1.ps1 [<Host>] [<TurnMode>] [<Timer>]
 .DESCRIPTION
-	Switches a Shelly1 device in the local network.
+	Switches a Shelly1 device in the local network
+	(Host is either a hostname or IP address, TurnMode is either 'on', 'off', or 'toggle')
 .EXAMPLE
-	PS> .\switch-shelly1.ps1 192.168.100.100 toggle 10
+	PS> ./switch-shelly1 192.168.100.100 toggle 10
 .NOTES
 	Author: Markus Fleschutz · License: CC0
 .LINK
@@ -20,7 +21,7 @@ try {
 
 	$Result = Invoke-RestMethod "http://$($Host)/relay/0?turn=$($TurnMode)&timer=$($Timer)"
 	
-	"✔️ Shelly1 device at $Host switched to $TurnMode for $Timer second(s)"
+	"✔️ switched Shelly1 device at $Host to $TurnMode for $Timer sec"
 	exit 0
 } catch {
 	"⚠️ Error: $($Error[0]) ($($MyInvocation.MyCommand.Name):$($_.InvocationInfo.ScriptLineNumber))"

@@ -2,9 +2,9 @@
 .SYNOPSIS
 	start-ipfs-server.ps1
 .DESCRIPTION
-	Starts a local IPFS server as a daemon process.
+	Starts a local IPFS server as a daemon process
 .EXAMPLE
-	PS> .\start-ipfs-server.ps1
+	PS> ./start-ipfs-server
 .NOTES
 	Author: Markus Fleschutz · License: CC0
 .LINK

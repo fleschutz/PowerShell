@@ -2,9 +2,9 @@
 .SYNOPSIS
 	speak-english.ps1 [<text>]
 .DESCRIPTION
-	Speaks the given text with an English text-to-speech (TTS) voice.
+	Speaks the given text with an English text-to-speech (TTS) voice
 .EXAMPLE
-	PS> .\speak-english.ps1 "Hello World"
+	PS> ./speak-english "Hello World"
 .NOTES
 	Author: Markus Fleschutz · License: CC0
 .LINK

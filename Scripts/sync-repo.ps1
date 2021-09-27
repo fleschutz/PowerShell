@@ -2,9 +2,9 @@
 .SYNOPSIS
 	sync-repo.ps1 [<repo-dir>]
 .DESCRIPTION
-	Synchronizes a Git repository by push & pull (including submodules).
+	Synchronizes a Git repository by push & pull (including submodules)
 .EXAMPLE
-	PS> .\sync-repo.ps1 C:\MyRepo
+	PS> ./sync-repo C:\MyRepo
 .NOTES
 	Author: Markus Fleschutz · License: CC0
 .LINK

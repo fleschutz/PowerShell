@@ -2,9 +2,9 @@
 .SYNOPSIS
 	speak-quote.ps1
 .DESCRIPTION
-	Speaks a random quote by text-to-speech (TTS).
+	Speaks a random quote by text-to-speech (TTS)
 .EXAMPLE
-	PS> .\speak-quote.ps1
+	PS> ./speak-quote
 .NOTES
 	Author: Markus Fleschutz · License: CC0
 .LINK

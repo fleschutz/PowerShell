@@ -4,7 +4,7 @@
 .DESCRIPTION
 	Speaks the given text with a German text-to-speech (TTS) voice.
 .EXAMPLE
-	PS> .\speak-german.ps1 Hallo
+	PS> ./speak-german Hallo
 .NOTES
 	Author: Markus Fleschutz · License: CC0
 .LINK

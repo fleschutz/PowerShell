@@ -2,9 +2,9 @@
 .SYNOPSIS
 	speak-french.ps1 [<text>]
 .DESCRIPTION
-	Speaks the given text with a French text-to-speech (TTS) voice.
+	Speaks the given text with a French text-to-speech (TTS) voice
 .EXAMPLE
-	PS> .\speak-french.ps1 Salut
+	PS> ./speak-french Salut
 .NOTES
 	Author: Markus Fleschutz · License: CC0
 .LINK
