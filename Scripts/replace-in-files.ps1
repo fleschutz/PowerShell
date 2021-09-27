@@ -25,9 +25,14 @@ try {
 	if ($replacement -eq "" ) { $replacement = read-host "Enter replacement" }
 	if ($files -eq "" ) { $files = read-host "Enter files" }
 
-	foreach($file in $files) {
+	$StopWatch = [system.diagnostics.stopwatch]::startNew()
+
+	$fileList = (get-childItem -path "$files" -attributes !Directory)
+	foreach($file in $fileList) {
 		ReplaceInFile $file $pattern $replacement
 	}
+	[int]$Elapsed = $StopWatch.Elapsed.TotalSeconds
+	"✔️ replaced '$pattern' by '$replacement' in $($Files.Count) files in $Elapsed sec"
 	exit 0
 } catch {
 	"⚠️ Error: $($Error[0]) ($($MyInvocation.MyCommand.Name):$($_.InvocationInfo.ScriptLineNumber))"
