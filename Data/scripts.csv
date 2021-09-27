@@ -189,6 +189,7 @@ reboot-fritzbox.ps1, Reboots the FRITZ!box device
 remove-empty-dirs.ps1, Removes empty subfolders within the given directory tree
 remove-print-jobs.ps1, Removes all jobs from all printers
 remove-tag.ps1, Removes a tag in a Git repository 
+replace-in-files.ps1, Search and replace a pattern in the given files by the replacement
 restart-network-adapters.ps1, Restarts all local network adapters
 search-filename.ps1, Searches the directory tree for filenames by given pattern 
 search-files.ps1, Searches the given pattern in the given files
