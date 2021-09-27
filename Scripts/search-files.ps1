@@ -1,8 +1,8 @@
 ﻿<#
 .SYNOPSIS
-	search-files.ps1 [<pattern>] [<path>]
+	search-files.ps1 [<pattern>] [<files>]
 .DESCRIPTION
-	Searches for the given pattern in the given files
+	Searches for a pattern in the given files
 .EXAMPLE
 	PS> ./search-files UFO C:\Temp\*.txt
 .NOTES
@@ -11,9 +11,9 @@
 	https://github.com/fleschutz/PowerShell
 #>
 
-param([string]$Pattern = "", [string]$Path = "")
+param([string]$pattern = "", [string]$files = "")
 
-function ListScripts { param([string]$Pattern, [string]$Path)
+function ListLocations { param([string]$Pattern, [string]$Path)
 	$List = Select-String -Path $Path -Pattern "$Pattern" 
 	foreach ($Item in $List) {
 		New-Object PSObject -Property @{
@@ -22,14 +22,14 @@ function ListScripts { param([string]$Pattern, [string]$Path)
 			'Text' = "$($Item.Line)"
 		}
 	}
-	write-output "(pattern found at $($List.Count) locations)"
+	write-output "(found $($List.Count) locations with pattern '$pattern')"
 }
 
 try {
-	if ($Pattern -eq "" ) { $Pattern = read-host "Enter search pattern" }
-	if ($Path -eq "" ) { $Path = read-host "Enter path to files" }
+	if ($pattern -eq "" ) { $pattern = read-host "Enter search pattern" }
+	if ($files -eq "" ) { $files = read-host "Enter path to files" }
 
-	ListScripts $Pattern $Path | format-table -property Path,Line,Text
+	ListLocations $pattern $files | format-table -property Path,Line,Text
 	exit 0
 } catch {
 	"⚠️ Error: $($Error[0]) ($($MyInvocation.MyCommand.Name):$($_.InvocationInfo.ScriptLineNumber))"
