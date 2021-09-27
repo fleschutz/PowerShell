@@ -1,4 +1,4 @@
-<#
+﻿<#
 .SYNOPSIS
 	play-beep.ps1
 .DESCRIPTION

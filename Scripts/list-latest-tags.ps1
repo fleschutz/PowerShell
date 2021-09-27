@@ -1,4 +1,4 @@
-<#
+﻿<#
 .SYNOPSIS
 	list-latest-tags.ps1 [<parent-dir>]
 .DESCRIPTION

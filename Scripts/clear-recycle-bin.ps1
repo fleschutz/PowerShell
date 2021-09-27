@@ -1,4 +1,4 @@
-<#
+﻿<#
 .SYNOPSIS
 	clear-recycle-bin.ps1 
 .DESCRIPTION

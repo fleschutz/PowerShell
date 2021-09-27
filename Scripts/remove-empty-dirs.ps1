@@ -1,4 +1,4 @@
-<#
+﻿<#
 .SYNOPSIS
 	remove-empty-dirs.ps1 [<dir-tree>]
 .DESCRIPTION

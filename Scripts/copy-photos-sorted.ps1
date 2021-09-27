@@ -1,4 +1,4 @@
-<#
+﻿<#
 .SYNOPSIS
 	copy-photos-sorted.ps1 [<SourceDir>] [<TargetDir>]
 .DESCRIPTION

@@ -1,4 +1,4 @@
-<#
+﻿<#
 .SYNOPSIS
 	remove-tag.ps1 [<TagName>] [<Mode>] [<RepoDir>]
 .DESCRIPTION

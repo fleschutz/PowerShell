@@ -1,4 +1,4 @@
-<#
+﻿<#
 .SYNOPSIS
 	write-uppercase.ps1 [<text>]
 .DESCRIPTION

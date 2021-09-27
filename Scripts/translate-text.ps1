@@ -1,4 +1,4 @@
-<#
+﻿<#
 .SYNOPSIS
 	translate-text.ps1 [<text>] [<source-lang>] [<target-lang>]
 .DESCRIPTION

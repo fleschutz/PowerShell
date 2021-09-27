@@ -1,4 +1,4 @@
-<#
+﻿<#
 .SYNOPSIS
 	add-memo.ps1 [<text>]
 .DESCRIPTION

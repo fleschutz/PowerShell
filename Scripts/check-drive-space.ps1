@@ -1,4 +1,4 @@
-<#
+﻿<#
 .SYNOPSIS
 	check-drive-space.ps1 [<drive>] [<min-level>]
 .DESCRIPTION

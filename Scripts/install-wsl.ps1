@@ -1,4 +1,4 @@
-<#
+﻿<#
 .SYNOPSIS
 	install-wsl.ps1
 .DESCRIPTION

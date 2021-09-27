@@ -1,4 +1,4 @@
-<#
+﻿<#
 .SYNOPSIS
 	check-windows-system-files.ps1 
 .DESCRIPTION

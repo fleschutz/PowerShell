@@ -1,4 +1,4 @@
-<#
+﻿<#
 .SYNOPSIS
         play-happy-birthday.ps1
 .DESCRIPTION

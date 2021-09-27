@@ -1,4 +1,4 @@
-<#
+﻿<#
 .SYNOPSIS
 	query-smart-data.ps1 [<directory>]
 .DESCRIPTION

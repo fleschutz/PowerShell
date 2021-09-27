@@ -1,4 +1,4 @@
-<#
+﻿<#
 .SYNOPSIS
 	translate-files.ps1 [<file-pattern>]
 .DESCRIPTION

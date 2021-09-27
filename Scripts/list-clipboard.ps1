@@ -1,4 +1,4 @@
-<#
+﻿<#
 .SYNOPSIS
 	list-clipboard.ps1
 .DESCRIPTION

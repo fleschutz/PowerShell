@@ -1,4 +1,4 @@
-<#
+﻿<#
 .SYNOPSIS
 	add-firewall-rules.ps1 [<path-to-executables>]
 .DESCRIPTION

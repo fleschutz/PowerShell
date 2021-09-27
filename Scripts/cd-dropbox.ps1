@@ -1,4 +1,4 @@
-<#
+﻿<#
 .SYNOPSIS
 	cd-dropbox.ps1 
 .DESCRIPTION

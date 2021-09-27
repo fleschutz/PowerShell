@@ -1,4 +1,4 @@
-<#
+﻿<#
 .SYNOPSIS
 	clean-repo.ps1 [<RepoDir>]
 .DESCRIPTION

@@ -1,4 +1,4 @@
-<#
+﻿<#
 .SYNOPSIS
 	new-branch.ps1 [<BranchName>] [<RepoDir>]
 .DESCRIPTION

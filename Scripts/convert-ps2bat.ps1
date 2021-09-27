@@ -1,4 +1,4 @@
-<#
+﻿<#
 .SYNOPSIS
 	convert-ps2bat.ps1 [<pattern>]
 .DESCRIPTION

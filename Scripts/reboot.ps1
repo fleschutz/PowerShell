@@ -1,4 +1,4 @@
-<#
+﻿<#
 .SYNOPSIS
 	reboot.ps1
 .DESCRIPTION

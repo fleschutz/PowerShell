@@ -1,4 +1,4 @@
-<#
+﻿<#
 .SYNOPSIS
 	list-branches.ps1 [<repo-dir>] [<pattern>]
 .DESCRIPTION

@@ -1,4 +1,4 @@
-<#
+﻿<#
 .SYNOPSIS
 	list-anagrams.ps1 [<word>] [<columns>]
 .DESCRIPTION

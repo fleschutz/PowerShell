@@ -1,4 +1,4 @@
-<#
+﻿<#
 .SYNOPSIS
 	list-earthquakes.ps1
 .DESCRIPTION

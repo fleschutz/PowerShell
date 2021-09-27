@@ -1,4 +1,4 @@
-<#
+﻿<#
 .SYNOPSIS
 	check-symlinks.ps1 [<DirTree>]
 .DESCRIPTION

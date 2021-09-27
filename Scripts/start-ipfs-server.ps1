@@ -1,4 +1,4 @@
-<#
+﻿<#
 .SYNOPSIS
 	start-ipfs-server.ps1
 .DESCRIPTION

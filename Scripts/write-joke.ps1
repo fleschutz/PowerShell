@@ -1,4 +1,4 @@
-<#
+﻿<#
 .SYNOPSIS
 	write-joke.ps1 
 .DESCRIPTION

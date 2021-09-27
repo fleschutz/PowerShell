@@ -1,4 +1,4 @@
-<#
+﻿<#
 .SYNOPSIS
 	get-md5.ps1 [<file>]
 .DESCRIPTION

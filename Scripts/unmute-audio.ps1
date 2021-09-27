@@ -1,4 +1,4 @@
-<#
+﻿<#
 .SYNOPSIS
 	unmute-audio.ps1
 .DESCRIPTION

@@ -1,4 +1,4 @@
-<#
+﻿<#
 .SYNOPSIS
 	weather.ps1 [<GeoLocation>]
 .DESCRIPTION

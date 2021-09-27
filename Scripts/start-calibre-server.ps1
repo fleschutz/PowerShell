@@ -1,4 +1,4 @@
-<#
+﻿<#
 .SYNOPSIS
 	start-calibre-server.ps1 [<port>]
 .DESCRIPTION

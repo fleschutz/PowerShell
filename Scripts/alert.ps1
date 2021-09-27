@@ -1,4 +1,4 @@
-<#
+﻿<#
 .SYNOPSIS
 	alert.ps1 [<message>]
 .DESCRIPTION

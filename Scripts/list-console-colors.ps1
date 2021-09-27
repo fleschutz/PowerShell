@@ -1,4 +1,4 @@
-<#
+﻿<#
 .SYNOPSIS
 	list-console-colors.ps1 
 .DESCRIPTION

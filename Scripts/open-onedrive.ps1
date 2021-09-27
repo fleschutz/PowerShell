@@ -1,4 +1,4 @@
-<#
+﻿<#
 .SYNOPSIS
 	open-onedrive.ps1
 .DESCRIPTION

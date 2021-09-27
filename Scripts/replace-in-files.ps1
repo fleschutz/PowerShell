@@ -1,4 +1,4 @@
-<#
+﻿<#
 .SYNOPSIS
 	replace-in-files.ps1 [<pattern>] [<replacement>] [<files>]
 .DESCRIPTION

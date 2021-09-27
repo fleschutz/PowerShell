@@ -1,4 +1,4 @@
-<#
+﻿<#
 .SYNOPSIS
 	speak-german.ps1 [<text>]
 .DESCRIPTION

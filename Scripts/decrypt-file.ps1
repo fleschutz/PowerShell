@@ -1,4 +1,4 @@
-<#
+﻿<#
 .SYNOPSIS
 	decrypt-file.ps1 [<path>] [<password>]
 .DESCRIPTION

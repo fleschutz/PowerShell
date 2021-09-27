@@ -1,4 +1,4 @@
-<#
+﻿<#
 .SYNOPSIS
 	cd-desktop.ps1 
 .DESCRIPTION

@@ -1,4 +1,4 @@
-<#
+﻿<#
 .SYNOPSIS
 	display-time.ps1 [<seconds>]
 .DESCRIPTION

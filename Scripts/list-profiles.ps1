@@ -1,4 +1,4 @@
-<#
+﻿<#
 .SYNOPSIS
 	list-profiles.ps1
 .DESCRIPTION

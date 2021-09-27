@@ -1,4 +1,4 @@
-<#
+﻿<#
 .SYNOPSIS
 	convert-txt2wav.ps1 [<text>] [<wav-file>]
 .DESCRIPTION

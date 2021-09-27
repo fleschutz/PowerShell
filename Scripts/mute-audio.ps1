@@ -1,4 +1,4 @@
-<#
+﻿<#
 .SYNOPSIS
 	mute-audio.ps1
 .DESCRIPTION

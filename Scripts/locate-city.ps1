@@ -1,4 +1,4 @@
-<#
+﻿<#
 .SYNOPSIS
 	locate-city.ps1 [<city>]
 .DESCRIPTION

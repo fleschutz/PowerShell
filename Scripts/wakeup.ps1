@@ -1,4 +1,4 @@
-<#
+﻿<#
 .SYNOPSIS
 	wakeup.ps1 [<MAC-address>] [<IP-address>]
 .DESCRIPTION

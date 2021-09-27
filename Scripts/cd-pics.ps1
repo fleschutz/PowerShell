@@ -1,4 +1,4 @@
-<#
+﻿<#
 .SYNOPSIS
 	cd-pics.ps1 
 .DESCRIPTION

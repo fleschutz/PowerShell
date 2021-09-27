@@ -1,4 +1,4 @@
-<#
+﻿<#
 .SYNOPSIS
 	list-tiobe-index.ps1 
 .DESCRIPTION

@@ -1,4 +1,4 @@
-<#
+﻿<#
 .SYNOPSIS
 	check-cpu-temp.ps1 
 .DESCRIPTION

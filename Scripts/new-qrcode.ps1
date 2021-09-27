@@ -1,4 +1,4 @@
-<#
+﻿<#
 .SYNOPSIS
 	new-qrcode.ps1 [<text>] [<image-size>]
 .DESCRIPTION

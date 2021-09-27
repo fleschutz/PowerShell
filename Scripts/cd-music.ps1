@@ -1,4 +1,4 @@
-<#
+﻿<#
 .SYNOPSIS
 	cd-music.ps1 
 .DESCRIPTION

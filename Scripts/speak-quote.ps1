@@ -1,4 +1,4 @@
-<#
+﻿<#
 .SYNOPSIS
 	speak-quote.ps1
 .DESCRIPTION

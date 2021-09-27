@@ -1,4 +1,4 @@
-<#
+﻿<#
 .SYNOPSIS
 	list-tags.ps1 [<repo-dir>] [<pattern>]
 .DESCRIPTION

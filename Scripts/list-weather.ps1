@@ -1,4 +1,4 @@
-<#
+﻿<#
 .SYNOPSIS
 	list-weather.ps1 [<location>]
 .DESCRIPTION

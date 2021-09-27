@@ -1,4 +1,4 @@
-<#
+﻿<#
 .SYNOPSIS
 	reboot-fritzbox.ps1 [<username>] [<password>]
 .DESCRIPTION

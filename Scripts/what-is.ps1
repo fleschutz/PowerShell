@@ -1,4 +1,4 @@
-<#
+﻿<#
 .SYNOPSIS
 	what-is.ps1 [<abbreviation>]
 .DESCRIPTION

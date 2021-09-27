@@ -1,4 +1,4 @@
-<#
+﻿<#
 .SYNOPSIS
 	new-tag.ps1 [<TagName>] [<RepoDir>]
 .DESCRIPTION

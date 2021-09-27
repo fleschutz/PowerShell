@@ -1,4 +1,4 @@
-<#
+﻿<#
 .SYNOPSIS
 	list-os-updates.ps1 [<RSS-URL>] [<max-count>]
 .DESCRIPTION

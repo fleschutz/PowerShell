@@ -1,4 +1,4 @@
-<#
+﻿<#
 .SYNOPSIS
 	enable-crash-dumps.ps1 
 .DESCRIPTION

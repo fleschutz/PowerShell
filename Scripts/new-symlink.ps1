@@ -1,4 +1,4 @@
-<#
+﻿<#
 .SYNOPSIS
 	new-symlink.ps1 [<symlink>] [<target>]
 .DESCRIPTION

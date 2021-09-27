@@ -1,4 +1,4 @@
-<#
+﻿<#
 .SYNOPSIS
 	install-ssh-client.ps1
 .DESCRIPTION

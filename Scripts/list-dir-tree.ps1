@@ -1,4 +1,4 @@
-<#
+﻿<#
 .SYNOPSIS
 	list-dir-tree.ps1 [<dir-tree>]
 .DESCRIPTION

@@ -1,4 +1,4 @@
-<#
+﻿<#
 .SYNOPSIS
 	list-commits.ps1 [<RepoDir>] [<Format>]
 .DESCRIPTION

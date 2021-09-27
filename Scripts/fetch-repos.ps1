@@ -1,4 +1,4 @@
-<#
+﻿<#
 .SYNOPSIS
 	fetch-repos.ps1 [<ParentDir>]
 .DESCRIPTION

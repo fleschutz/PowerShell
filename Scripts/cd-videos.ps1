@@ -1,4 +1,4 @@
-<#
+﻿<#
 .SYNOPSIS
 	cd-videos.ps1 
 .DESCRIPTION

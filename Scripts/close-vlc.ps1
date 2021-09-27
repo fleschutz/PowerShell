@@ -1,4 +1,4 @@
-<#
+﻿<#
 .SYNOPSIS
 	close-vlc.ps1 
 .DESCRIPTION

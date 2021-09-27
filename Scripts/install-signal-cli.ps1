@@ -1,4 +1,4 @@
-<#
+﻿<#
 .SYNOPSIS
 	install-signal-cli.ps1 [<version>]
 .DESCRIPTION

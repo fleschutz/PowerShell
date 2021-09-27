@@ -1,4 +1,4 @@
-<#
+﻿<#
 .SYNOPSIS
 	close-edge.ps1 
 .DESCRIPTION

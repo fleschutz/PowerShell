@@ -1,4 +1,4 @@
-<#
+﻿<#
 .SYNOPSIS
 	list-emojis.ps1 
 .DESCRIPTION

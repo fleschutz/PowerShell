@@ -1,4 +1,4 @@
-<#
+﻿<#
 .SYNOPSIS
 	take-screenshots.ps1 [<TargetDir>] [<Interval>]
 .DESCRIPTION

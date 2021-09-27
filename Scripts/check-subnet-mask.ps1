@@ -1,4 +1,4 @@
-<#
+﻿<#
 .SYNOPSIS
 	check-subnet-mask.ps1 [<address>]
 .DESCRIPTION

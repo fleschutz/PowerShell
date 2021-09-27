@@ -1,4 +1,4 @@
-<#
+﻿<#
 .SYNOPSIS
 	install-google-chrome.ps1
 .DESCRIPTION

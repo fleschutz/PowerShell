@@ -1,4 +1,4 @@
-<#
+﻿<#
 .SYNOPSIS
 	check-health.ps1 
 .DESCRIPTION

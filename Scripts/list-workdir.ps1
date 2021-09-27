@@ -1,4 +1,4 @@
-<#
+﻿<#
 .SYNOPSIS
 	list-workdir.ps1 
 .DESCRIPTION

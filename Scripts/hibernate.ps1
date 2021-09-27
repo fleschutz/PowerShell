@@ -1,4 +1,4 @@
-<#
+﻿<#
 .SYNOPSIS
 	hibernate.ps1
 .DESCRIPTION

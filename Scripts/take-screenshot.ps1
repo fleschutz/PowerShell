@@ -1,4 +1,4 @@
-<#
+﻿<#
 .SYNOPSIS
 	take-screenshot.ps1 [<directory>]
 .DESCRIPTION

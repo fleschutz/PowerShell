@@ -1,4 +1,4 @@
-<#
+﻿<#
 .SYNOPSIS
 	write-braille.ps1 [<text>]
 .DESCRIPTION

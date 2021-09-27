@@ -1,4 +1,4 @@
-<#
+﻿<#
 .SYNOPSIS
 	open-email-client.ps1
 .DESCRIPTION

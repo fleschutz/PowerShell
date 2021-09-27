@@ -1,4 +1,4 @@
-<#
+﻿<#
 .SYNOPSIS
 	list-cli-tools.ps1
 .DESCRIPTION

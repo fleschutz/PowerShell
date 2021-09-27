@@ -1,4 +1,4 @@
-<#
+﻿<#
 .SYNOPSIS
 	cd-docs.ps1 
 .DESCRIPTION

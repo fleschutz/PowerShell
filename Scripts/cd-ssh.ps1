@@ -1,4 +1,4 @@
-<#
+﻿<#
 .SYNOPSIS
 	cd-ssh.ps1 
 .DESCRIPTION

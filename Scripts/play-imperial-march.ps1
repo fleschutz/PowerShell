@@ -1,4 +1,4 @@
-<#
+﻿<#
 .SYNOPSIS
 	play-imperial-march.ps1
 .DESCRIPTION

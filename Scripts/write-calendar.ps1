@@ -1,4 +1,4 @@
-<#
+﻿<#
 .SYNOPSIS
 	write-calendar.ps1 [<Month>] [<Year>]
 .DESCRIPTION

@@ -1,4 +1,4 @@
-<#
+﻿<#
 .SYNOPSIS
 	list-network-shares.ps1 
 .DESCRIPTION

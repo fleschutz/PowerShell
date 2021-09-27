@@ -1,4 +1,4 @@
-<#
+﻿<#
 .SYNOPSIS
 	send-tcp.ps1 [<target-IP>] [<target-port>] [<message>]
 .DESCRIPTION

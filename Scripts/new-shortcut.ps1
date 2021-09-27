@@ -1,4 +1,4 @@
-<#
+﻿<#
 .SYNOPSIS
 	new-shortcut.ps1 [<shortcut>] [<target>] [<description>]
 .DESCRIPTION

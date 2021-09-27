@@ -1,4 +1,4 @@
-#!/bin/sh
+﻿#!/bin/sh
 #
 # Syntax:      ./daily-tasks.sh
 # Description: execute PowerShell scripts automatically as daily tasks (Linux only)

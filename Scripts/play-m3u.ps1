@@ -1,4 +1,4 @@
-<#
+﻿<#
 .SYNOPSIS
 	play-m3u.ps1 [<playlist-file>]
 .DESCRIPTION

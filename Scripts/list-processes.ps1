@@ -1,4 +1,4 @@
-<#
+﻿<#
 .SYNOPSIS
 	list-processes.ps1 
 .DESCRIPTION

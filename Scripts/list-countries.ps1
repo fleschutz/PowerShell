@@ -1,4 +1,4 @@
-<#
+﻿<#
 .SYNOPSIS
 	list-countries.ps1 
 .DESCRIPTION

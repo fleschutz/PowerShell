@@ -1,4 +1,4 @@
-<#
+﻿<#
 .SYNOPSIS
 	poweroff.ps1
 .DESCRIPTION

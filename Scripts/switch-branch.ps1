@@ -1,4 +1,4 @@
-<#
+﻿<#
 .SYNOPSIS
 	switch-branch.ps1 [<BranchName>] [<RepoDir>]
 .DESCRIPTION

@@ -1,4 +1,4 @@
-<#
+﻿<#
 .SYNOPSIS
 	write-motd.ps1 
 .DESCRIPTION

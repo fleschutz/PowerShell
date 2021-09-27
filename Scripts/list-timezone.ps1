@@ -1,4 +1,4 @@
-<#
+﻿<#
 .SYNOPSIS
 	list-timezone.ps1 
 .DESCRIPTION

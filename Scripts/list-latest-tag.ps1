@@ -1,4 +1,4 @@
-<#
+﻿<#
 .SYNOPSIS
 	list-latest-tag.ps1 [<repo-dir>] 
 .DESCRIPTION

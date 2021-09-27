@@ -1,4 +1,4 @@
-<#
+﻿<#
 .SYNOPSIS
 	speak-time.ps1
 .DESCRIPTION

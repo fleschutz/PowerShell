@@ -1,4 +1,4 @@
-<#
+﻿<#
 .SYNOPSIS
 	write-morse-code.ps1 [<text>] [<speed>]
 .DESCRIPTION

@@ -1,4 +1,4 @@
-<#
+﻿<#
 .SYNOPSIS
 	speak-joke.ps1
 .DESCRIPTION

@@ -1,4 +1,4 @@
-<#
+﻿<#
 .SYNOPSIS
 	upload-file.ps1 [<file>] [<URL>] [<username>] [<password>]
 .DESCRIPTION

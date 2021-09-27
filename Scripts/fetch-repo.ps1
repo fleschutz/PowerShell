@@ -1,4 +1,4 @@
-<#
+﻿<#
 .SYNOPSIS
 	fetch-repo.ps1 [<repo-dir>]
 .DESCRIPTION

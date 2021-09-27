@@ -1,4 +1,4 @@
-<#
+﻿<#
 .SYNOPSIS
 	write-quote.ps1 
 .DESCRIPTION

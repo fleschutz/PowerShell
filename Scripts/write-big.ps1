@@ -1,4 +1,4 @@
-<#
+﻿<#
 .SYNOPSIS
 	write-big.ps1 [<text>]
 .DESCRIPTION

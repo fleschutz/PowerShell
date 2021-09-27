@@ -1,4 +1,4 @@
-<#
+﻿<#
 .SYNOPSIS
 	install-updates.ps1
 .DESCRIPTION

@@ -1,4 +1,4 @@
-<#
+﻿<#
 .SYNOPSIS
 	list-city-weather.ps1
 .DESCRIPTION

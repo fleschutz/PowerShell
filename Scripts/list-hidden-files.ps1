@@ -1,4 +1,4 @@
-<#
+﻿<#
 .SYNOPSIS
 	list-hidden-files.ps1 [<dir-tree>]
 .DESCRIPTION

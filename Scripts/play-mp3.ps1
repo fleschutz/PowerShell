@@ -1,4 +1,4 @@
-<#
+﻿<#
 .SYNOPSIS
 	play-mp3.ps1 [<MP3-file>]
 .DESCRIPTION

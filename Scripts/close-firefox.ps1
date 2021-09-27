@@ -1,4 +1,4 @@
-<#
+﻿<#
 .SYNOPSIS
 	close-firefox.ps1 
 .DESCRIPTION

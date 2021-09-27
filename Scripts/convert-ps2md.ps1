@@ -1,4 +1,4 @@
-<#
+﻿<#
 .SYNOPSIS
 	convert-ps2md.ps1 [<filename>]
 .DESCRIPTION

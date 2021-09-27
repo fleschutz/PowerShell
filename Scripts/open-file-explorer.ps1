@@ -1,4 +1,4 @@
-<#
+﻿<#
 .SYNOPSIS
 	open-file-explorer.ps1
 .DESCRIPTION

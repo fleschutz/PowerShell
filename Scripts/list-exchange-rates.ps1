@@ -1,4 +1,4 @@
-<#
+﻿<#
 .SYNOPSIS
 	list-exchange-rates.ps1 [<currency>]
 .DESCRIPTION

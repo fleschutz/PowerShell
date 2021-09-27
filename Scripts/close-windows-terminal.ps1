@@ -1,4 +1,4 @@
-<#
+﻿<#
 .SYNOPSIS
 	close-windows-terminal.ps1 
 .DESCRIPTION

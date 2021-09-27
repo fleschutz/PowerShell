@@ -1,4 +1,4 @@
-<#
+﻿<#
 .SYNOPSIS
 	clone-repos.ps1 [<ParentDir>]
 .DESCRIPTION

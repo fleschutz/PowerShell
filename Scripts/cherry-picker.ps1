@@ -1,4 +1,4 @@
-<#
+﻿<#
 .SYNOPSIS
 	cherry-picker.ps1 [<CommitID>] [<CommitMessage>] [<Branches>] [<RepoDir>]
 .DESCRIPTION

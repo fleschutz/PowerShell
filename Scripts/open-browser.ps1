@@ -1,4 +1,4 @@
-<#
+﻿<#
 .SYNOPSIS
 	open-browser.ps1 [<URL>]
 .DESCRIPTION

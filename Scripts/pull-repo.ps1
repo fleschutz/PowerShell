@@ -1,4 +1,4 @@
-<#
+﻿<#
 .SYNOPSIS
 	pull-repo.ps1 [<repo-dir>]
 .DESCRIPTION

@@ -1,4 +1,4 @@
-<#
+﻿<#
 .SYNOPSIS
 	cd-recycle-bin.ps1 
 .DESCRIPTION

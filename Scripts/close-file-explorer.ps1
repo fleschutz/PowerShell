@@ -1,4 +1,4 @@
-<#
+﻿<#
 .SYNOPSIS
 	close-file-explorer.ps1 
 .DESCRIPTION

@@ -1,4 +1,4 @@
-<#
+﻿<#
 .SYNOPSIS
 	new-script.ps1 [<filename>] 
 .DESCRIPTION

@@ -1,4 +1,4 @@
-<#
+﻿<#
 .SYNOPSIS
 	list-cheat-sheet.ps1 
 .DESCRIPTION

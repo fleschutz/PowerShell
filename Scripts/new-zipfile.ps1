@@ -1,4 +1,4 @@
-<#
+﻿<#
 .SYNOPSIS
 	new-zipfile.ps1 [<directory>]
 .DESCRIPTION

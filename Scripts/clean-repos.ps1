@@ -1,4 +1,4 @@
-<#
+﻿<#
 .SYNOPSIS
 	clean-repos.ps1 [<ParentDir>]
 .DESCRIPTION

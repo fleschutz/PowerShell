@@ -1,4 +1,4 @@
-<#
+﻿<#
 .SYNOPSIS
 	search-files.ps1 [<pattern>] [<files>]
 .DESCRIPTION

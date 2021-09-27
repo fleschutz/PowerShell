@@ -1,4 +1,4 @@
-<#
+﻿<#
 .SYNOPSIS
 	check-ping.ps1 [<hosts>]
 .DESCRIPTION

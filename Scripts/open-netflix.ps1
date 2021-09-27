@@ -1,4 +1,4 @@
-<#
+﻿<#
 .SYNOPSIS
 	open-netflix.ps1
 .DESCRIPTION

@@ -1,4 +1,4 @@
-<#
+﻿<#
 .SYNOPSIS
 	get-sha256.ps1 [<file>]
 .DESCRIPTION

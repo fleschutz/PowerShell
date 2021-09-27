@@ -1,4 +1,4 @@
-<#
+﻿<#
 .SYNOPSIS
 	list-submodules.ps1 [<repo-dir>] 
 .DESCRIPTION

@@ -1,4 +1,4 @@
-<#
+﻿<#
 .SYNOPSIS
 	set-profile.ps1
 .DESCRIPTION

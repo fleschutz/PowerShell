@@ -1,4 +1,4 @@
-<#
+﻿<#
 .SYNOPSIS
 	play-files.ps1 [<pattern>]
 .DESCRIPTION

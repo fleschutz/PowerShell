@@ -1,4 +1,4 @@
-<#
+﻿<#
 .SYNOPSIS
 	list-memos.ps1 
 .DESCRIPTION

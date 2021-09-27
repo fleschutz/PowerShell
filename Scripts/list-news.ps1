@@ -1,4 +1,4 @@
-<#
+﻿<#
 .SYNOPSIS
 	list-news.ps1 [<RSS-URL>] [<max-count>]
 .DESCRIPTION

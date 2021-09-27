@@ -1,4 +1,4 @@
-<#
+﻿<#
 .SYNOPSIS
 	pull-repos.ps1 [<parent-dir>]
 .DESCRIPTION

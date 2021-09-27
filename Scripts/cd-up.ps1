@@ -1,4 +1,4 @@
-<#
+﻿<#
 .SYNOPSIS
 	cd-up.ps1
 .DESCRIPTION

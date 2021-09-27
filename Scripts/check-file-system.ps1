@@ -1,4 +1,4 @@
-<#
+﻿<#
 .SYNOPSIS
 	check-file-system.ps1 [<drive>] 
 .DESCRIPTION

@@ -1,4 +1,4 @@
-<#
+﻿<#
 .SYNOPSIS
 	write-typewriter.ps1 [<text>] [<speed>]
 .DESCRIPTION

@@ -1,4 +1,4 @@
-<#
+﻿<#
 .SYNOPSIS
 	list-recycle-bin.ps1 
 .DESCRIPTION

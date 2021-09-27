@@ -1,4 +1,4 @@
-<#
+﻿<#
 .SYNOPSIS
 	smart-data2csv.ps1 [<directory>]
 .DESCRIPTION

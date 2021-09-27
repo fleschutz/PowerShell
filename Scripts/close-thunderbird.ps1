@@ -1,4 +1,4 @@
-<#
+﻿<#
 .SYNOPSIS
 	close-thunderbird.ps1 
 .DESCRIPTION

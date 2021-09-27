@@ -1,4 +1,4 @@
-<#
+﻿<#
 .SYNOPSIS
 	check-swap-space.ps1 [<min-level>]
 .DESCRIPTION

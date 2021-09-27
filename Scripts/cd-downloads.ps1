@@ -1,4 +1,4 @@
-<#
+﻿<#
 .SYNOPSIS
 	cd-downloads.ps1 
 .DESCRIPTION

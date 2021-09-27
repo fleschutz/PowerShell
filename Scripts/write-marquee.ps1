@@ -1,4 +1,4 @@
-<#
+﻿<#
 .SYNOPSIS
 	write-marquee.ps1 [<text>] [<speed>]
 .DESCRIPTION

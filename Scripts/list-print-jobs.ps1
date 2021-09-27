@@ -1,4 +1,4 @@
-<#
+﻿<#
 .SYNOPSIS
 	list-print-jobs.ps1
 .DESCRIPTION

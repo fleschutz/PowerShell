@@ -1,4 +1,4 @@
-<#
+﻿<#
 .SYNOPSIS
 	check-dns-resolution.ps1
 .DESCRIPTION

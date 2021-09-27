@@ -1,4 +1,4 @@
-<#
+﻿<#
 .SYNOPSIS
 	cd-root.ps1 
 .DESCRIPTION

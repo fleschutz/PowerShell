@@ -1,4 +1,4 @@
-<#
+﻿<#
 .SYNOPSIS
         install-knot-resolver.ps1
 .DESCRIPTION

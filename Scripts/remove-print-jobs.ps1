@@ -1,4 +1,4 @@
-<#
+﻿<#
 .SYNOPSIS
 	remove-print-jobs.ps1
 .DESCRIPTION

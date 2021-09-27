@@ -1,4 +1,4 @@
-<#
+﻿<#
 .SYNOPSIS
 	turn-volume-up.ps1 [<percent>]
 .DESCRIPTION

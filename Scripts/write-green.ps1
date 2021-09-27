@@ -1,4 +1,4 @@
-<#
+﻿<#
 .SYNOPSIS
 	write-green.ps1 [<text>]
 .DESCRIPTION

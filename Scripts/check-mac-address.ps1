@@ -1,4 +1,4 @@
-<#
+﻿<#
 .SYNOPSIS
 	check-mac-address.ps1 [<MAC>]
 .DESCRIPTION

@@ -1,4 +1,4 @@
-<#
+﻿<#
 .SYNOPSIS
 	restart-network-adapters.ps1
 .DESCRIPTION

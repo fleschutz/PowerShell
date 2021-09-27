@@ -1,4 +1,4 @@
-<#
+﻿<#
 .SYNOPSIS
 	list-environment-variables.ps1
 .DESCRIPTION

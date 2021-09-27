@@ -1,4 +1,4 @@
-<#
+﻿<#
 .SYNOPSIS
 	enable-god-mode.ps1 
 .DESCRIPTION

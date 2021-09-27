@@ -1,4 +1,4 @@
-<#
+﻿<#
 .SYNOPSIS
 	cd-scripts.ps1 
 .DESCRIPTION

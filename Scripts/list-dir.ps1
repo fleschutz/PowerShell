@@ -1,4 +1,4 @@
-<#
+﻿<#
 .SYNOPSIS
 	list-dir.ps1 [<pattern>]
 .DESCRIPTION

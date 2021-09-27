@@ -1,4 +1,4 @@
-<#
+﻿<#
 .SYNOPSIS
 	make-repos.ps1 [<parent-dir>]
 .DESCRIPTION

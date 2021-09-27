@@ -1,4 +1,4 @@
-<#
+﻿<#
 .SYNOPSIS
 	list-crypto-rates.ps1 
 .DESCRIPTION

@@ -1,4 +1,4 @@
-<#
+﻿<#
 .SYNOPSIS
 	switch-shelly1.ps1 [<Host>] [<TurnMode>] [<Timer>]
 .DESCRIPTION

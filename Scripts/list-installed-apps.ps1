@@ -1,4 +1,4 @@
-<#
+﻿<#
 .SYNOPSIS
 	list-installed-apps.ps1
 .DESCRIPTION

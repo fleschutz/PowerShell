@@ -1,4 +1,4 @@
-<#
+﻿<#
 .SYNOPSIS
 	speak-test.ps1
 .DESCRIPTION

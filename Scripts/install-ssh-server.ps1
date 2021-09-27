@@ -1,4 +1,4 @@
-<#
+﻿<#
 .SYNOPSIS
 	install-ssh-server.ps1
 .DESCRIPTION

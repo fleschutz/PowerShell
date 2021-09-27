@@ -1,4 +1,4 @@
-<#
+﻿<#
 .SYNOPSIS
 	write-red.ps1 [<text>]
 .DESCRIPTION

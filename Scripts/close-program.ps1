@@ -1,4 +1,4 @@
-<#
+﻿<#
 .SYNOPSIS
 	close-program.ps1 [<FullProgramName>] [<ProgramName>] [<ProgramAliasName>]
 .DESCRIPTION

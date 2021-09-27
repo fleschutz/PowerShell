@@ -1,4 +1,4 @@
-#!/bin/sh
+﻿#!/bin/sh
 
 # Syntax:       ./swap2ram
 # Description:	swaps back to RAM

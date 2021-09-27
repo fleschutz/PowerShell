@@ -1,4 +1,4 @@
-<#
+﻿<#
 .SYNOPSIS
 	list-aliases.ps1
 .DESCRIPTION

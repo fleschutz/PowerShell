@@ -1,4 +1,4 @@
-<#
+﻿<#
 .SYNOPSIS
 	speak-file.ps1 [<file>]
 .DESCRIPTION
