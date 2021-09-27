@@ -2,7 +2,7 @@
 .SYNOPSIS
 	speak-german.ps1 [<text>]
 .DESCRIPTION
-	Speaks the given text with a German text-to-speech (TTS) voice.
+	Speaks the given text with a German text-to-speech (TTS) voice
 .EXAMPLE
 	PS> ./speak-german Hallo
 .NOTES
@@ -16,13 +16,12 @@ param([string]$text = "")
 try {
 	if ($text -eq "") { $text = read-host "Enter the German text to speak" }
 
-	$Voice = New-Object -ComObject SAPI.SPVoice
-	$Voices = $Voice.GetVoices()
-	foreach ($OtherVoice in $Voices) {
-		$Description = $OtherVoice.GetDescription()
-		if ($Description -notlike "*- German*") { continue }
-		$Voice.Voice = $OtherVoice
-		[void]$Voice.Speak($text)
+	$CurrentVoice = New-Object -ComObject SAPI.SPVoice
+	$Voices = $CurrentVoice.GetVoices()
+	foreach ($Voice in $Voices) {
+		if ($Voice.GetDescription() -notlike "*- German*") { continue }
+		$CurrentVoice.Voice = $Voice
+		[void]$CurrentVoice.Speak($text)
 		exit 0 # success
 	}
 	throw "No German text-to-speech voice found - please install one"

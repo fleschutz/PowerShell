@@ -16,13 +16,12 @@ param([string]$text = "")
 try {
 	if ("$text" -eq "") { $text = read-host "Enter the English text to speak" }
 
-	$Voice = New-Object -ComObject SAPI.SPVoice
-	$Voices = $Voice.GetVoices()
-	foreach ($OtherVoice in $Voices) {
-		$Description = $OtherVoice.GetDescription()
-		if ($Description -notlike "*- English*") { continue }
-		$Voice.Voice = $OtherVoice
-		[void]$Voice.Speak($text)
+	$CurrentVoice = New-Object -ComObject SAPI.SPVoice
+	$Voices = $CurrentVoice.GetVoices()
+	foreach ($Voice in $Voices) {
+		if ($Voice.GetDescription() -notlike "*- English*") { continue }
+		$CurrentVoice.Voice = $Voice
+		[void]$CurrentVoice.Speak($text)
 		exit 0 # success
 	}
 	throw "No English text-to-speech voice found - please install one"

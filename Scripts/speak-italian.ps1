@@ -16,13 +16,12 @@ param([string]$text = "")
 try {
 	if ($text -eq "") { $text = read-host "Enter the Italian text to speak" }
 
-	$Voice = New-Object -ComObject SAPI.SPVoice
-	$Voices = $Voice.GetVoices()
-	foreach ($OtherVoice in $Voices) {
-		$Description = $OtherVoice.GetDescription()
-		if ($Description -notlike "*- Italian*") { continue }
-		$Voice.Voice = $OtherVoice
-		[void]$Voice.Speak($text)
+	$CurrentVoice = New-Object -ComObject SAPI.SPVoice
+	$Voices = $CurrentVoice.GetVoices()
+	foreach ($Voice in $Voices) {
+		if ($Voice.GetDescription() -notlike "*- Italian*") { continue }
+		$CurrentVoice.Voice = $Voice
+		[void]$CurrentVoice.Speak($text)
 		exit 0 # success
 	}
 	throw "No Italian text-to-speech voice found - please install one"
