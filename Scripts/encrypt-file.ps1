@@ -1,4 +1,4 @@
-﻿<#
+<#
 .SYNOPSIS
 	encrypt-file.ps1 [<path>] [<password>]
 .DESCRIPTION
@@ -152,7 +152,7 @@ try {
 	EnryptFile "$Path" -Algorithm AES -KeyAsPlainText $PasswordBase64 -RemoveSource
 
 	"✔️  Done."
-	exit 0
+	exit 0 # success
 } catch {
 	"⚠️ Error: $($Error[0]) ($($MyInvocation.MyCommand.Name):$($_.InvocationInfo.ScriptLineNumber))"
 	exit 1

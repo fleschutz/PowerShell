@@ -1,4 +1,4 @@
-﻿<#
+<#
 .SYNOPSIS
 	voice-control.ps1 
 .DESCRIPTION
@@ -56,7 +56,7 @@ try {
 		}
 		if ($myWords -match "exit") { write-host -noNewline "$Name ($($recognized.confidence) %)"; break }
 	} 
-	exit 0
+	exit 0 # success
 } catch {
 	"⚠️ Error: $($Error[0]) ($($MyInvocation.MyCommand.Name):$($_.InvocationInfo.ScriptLineNumber))"
 	exit 1

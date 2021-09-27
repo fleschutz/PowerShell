@@ -1,4 +1,4 @@
-﻿<#
+<#
 .SYNOPSIS
 	speak-file.ps1 [<file>]
 .DESCRIPTION
@@ -20,7 +20,7 @@ try {
 
 	$Voice = new-object -ComObject SAPI.SPVoice
 	$Result = $Voice.Speak($Text)
-	exit 0
+	exit 0 # success
 } catch {
 	"⚠️ Error: $($Error[0]) ($($MyInvocation.MyCommand.Name):$($_.InvocationInfo.ScriptLineNumber))"
 	exit 1

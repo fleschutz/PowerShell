@@ -1,4 +1,4 @@
-﻿<#
+<#
 .SYNOPSIS
 	close-file-explorer.ps1 
 .DESCRIPTION
@@ -12,4 +12,4 @@
 #>
 
 & "$PSScriptRoot/close-program.ps1" "File Explorer" "explorer" "explorer"
-exit 0
+exit 0 # success

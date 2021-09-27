@@ -1,4 +1,4 @@
-﻿<#
+<#
 .SYNOPSIS
 	switch-branch.ps1 [<BranchName>] [<RepoDir>]
 .DESCRIPTION
@@ -44,7 +44,7 @@ try {
 	$RepoDirName = (get-item "$RepoDir").Name
 	[int]$Elapsed = $StopWatch.Elapsed.TotalSeconds
 	"✔️ switched Git repository 📂$RepoDirName to $BranchName branch in $Elapsed sec"
-	exit 0
+	exit 0 # success
 } catch {
 	"⚠️ Error: $($Error[0]) ($($MyInvocation.MyCommand.Name):$($_.InvocationInfo.ScriptLineNumber))"
 	exit 1

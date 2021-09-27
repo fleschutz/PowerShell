@@ -1,4 +1,4 @@
-﻿<#
+<#
 .SYNOPSIS
 	locate-city.ps1 [<city>]
 .DESCRIPTION
@@ -33,7 +33,7 @@ try {
 	}
 
 	if ($FoundOne) {
-		exit 0
+		exit 0 # success
 	}
 	write-error "City $City not found"
 	exit 1

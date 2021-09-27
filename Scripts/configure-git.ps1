@@ -1,4 +1,4 @@
-﻿<#
+<#
 .SYNOPSIS
 	configure-git.ps1 [<full-name>] [<email-address>] [<favorite-editor>]
 .DESCRIPTION
@@ -51,7 +51,7 @@ try {
 	"✔️ saved your Git configuration, it's now:"
 	& git config --list
 	if ($lastExitCode -ne "0") { throw "'git config --list' failed" }
-	exit 0
+	exit 0 # success
 } catch {
 	"⚠️ Error: $($Error[0]) ($($MyInvocation.MyCommand.Name):$($_.InvocationInfo.ScriptLineNumber))"
 	exit 1

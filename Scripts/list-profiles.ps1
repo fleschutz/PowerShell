@@ -1,4 +1,4 @@
-﻿<#
+<#
 .SYNOPSIS
 	list-profiles.ps1
 .DESCRIPTION
@@ -31,7 +31,7 @@ function ListProfiles {
 
 try {
 	ListProfiles | format-table -property Level,Profile,Location,Existent
-	exit 0
+	exit 0 # success
 } catch {
 	"⚠️ Error: $($Error[0]) ($($MyInvocation.MyCommand.Name):$($_.InvocationInfo.ScriptLineNumber))"
 	exit 1

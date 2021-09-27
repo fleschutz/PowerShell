@@ -1,4 +1,4 @@
-﻿<#
+<#
 .SYNOPSIS
 	write-chart.ps1
 .DESCRIPTION
@@ -42,4 +42,4 @@ function WriteChartLine { param([string]$Text, [float]$Value, [float]$Max)
 "2021 Wins"
 WriteChartLine "Markus" 40.5 100.0
 WriteChartLine "Andrea" 30.9 100.0
-exit 0
+exit 0 # success

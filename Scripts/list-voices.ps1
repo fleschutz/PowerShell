@@ -1,4 +1,4 @@
-﻿<#
+<#
 .SYNOPSIS
 	list-voices.ps1 
 .DESCRIPTION
@@ -20,7 +20,7 @@ try {
 	    Select-Object -ExpandProperty VoiceInfo | 
 	    Select-Object -Property Name, Culture, Gender, Age
 
-	exit 0
+	exit 0 # success
 } catch {
 	"⚠️ Error: $($Error[0]) ($($MyInvocation.MyCommand.Name):$($_.InvocationInfo.ScriptLineNumber))"
 	exit 1

@@ -1,4 +1,4 @@
-﻿<#
+<#
 .SYNOPSIS
 	list-system-info.ps1
 .DESCRIPTION
@@ -105,4 +105,4 @@ $info = $info | ConvertTo-JSON
 
 # Output 
 $info
-exit 0
+exit 0 # success

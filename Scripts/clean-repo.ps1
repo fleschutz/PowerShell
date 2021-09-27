@@ -1,4 +1,4 @@
-﻿<#
+<#
 .SYNOPSIS
 	clean-repo.ps1 [<RepoDir>]
 .DESCRIPTION
@@ -32,7 +32,7 @@ try {
 
 	[int]$Elapsed = $StopWatch.Elapsed.TotalSeconds
 	"✔️ cleaned Git repository 📂$RepoDirName in $Elapsed sec"
-	exit 0
+	exit 0 # success
 } catch {
 	"⚠️ Error: $($Error[0]) ($($MyInvocation.MyCommand.Name):$($_.InvocationInfo.ScriptLineNumber))"
 	exit 1

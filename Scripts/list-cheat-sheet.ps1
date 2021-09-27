@@ -1,4 +1,4 @@
-﻿<#
+<#
 .SYNOPSIS
 	list-cheat-sheet.ps1 
 .DESCRIPTION
@@ -39,4 +39,4 @@
 "               `$a,`$b = `$b,`$a : Flip variables"
 "                 `$var=[int]5 : Strongly typed variable"
 ""
-exit 0
+exit 0 # success

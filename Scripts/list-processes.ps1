@@ -1,4 +1,4 @@
-﻿<#
+<#
 .SYNOPSIS
 	list-processes.ps1 
 .DESCRIPTION
@@ -13,7 +13,7 @@
 
 try {
 	Get-Process | Format-Table -Property Id, @{Label="CPU(s)";Expression={$_.CPU.ToString("N")+"%"};Alignment="Right"}, ProcessName -AutoSize
-	exit 0
+	exit 0 # success
 } catch {
 	"⚠️ Error: $($Error[0]) ($($MyInvocation.MyCommand.Name):$($_.InvocationInfo.ScriptLineNumber))"
 	exit 1

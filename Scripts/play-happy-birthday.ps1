@@ -1,4 +1,4 @@
-﻿<#
+<#
 .SYNOPSIS
         play-happy-birthday.ps1
 .DESCRIPTION
@@ -38,4 +38,4 @@
 [System.Console]::Beep(1413.961, 500)
 [System.Console]::Beep(1587.117, 500)
 [System.Console]::Beep(1413.961, 900)
-exit 0
+exit 0 # success

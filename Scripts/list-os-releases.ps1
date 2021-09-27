@@ -1,4 +1,4 @@
-﻿<#
+<#
 .SYNOPSIS
 	list-os-releases.ps1
 .DESCRIPTION
@@ -26,7 +26,7 @@ try {
 	foreach ($Row in $Table) {
 		write-output "* $($Row.Path.substring(3)) -> ipfs://$($Row.IPFS)"
 	}
-	exit 0
+	exit 0 # success
 } catch {
 	"⚠️ Error: $($Error[0]) ($($MyInvocation.MyCommand.Name):$($_.InvocationInfo.ScriptLineNumber))"
 	exit 1

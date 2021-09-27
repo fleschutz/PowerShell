@@ -1,4 +1,4 @@
-﻿<#
+<#
 .SYNOPSIS
 	play-m3u.ps1 [<playlist-file>]
 .DESCRIPTION
@@ -41,7 +41,7 @@ try {
 		$MediaPlayer.stop()
 		$MediaPlayer.close()
 	}
-	exit 0
+	exit 0 # success
 } catch {
 	"⚠️ Error: $($Error[0]) ($($MyInvocation.MyCommand.Name):$($_.InvocationInfo.ScriptLineNumber))"
 	exit 1

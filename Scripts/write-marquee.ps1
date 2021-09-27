@@ -1,4 +1,4 @@
-﻿<#
+<#
 .SYNOPSIS
 	write-marquee.ps1 [<text>] [<speed>]
 .DESCRIPTION
@@ -38,4 +38,4 @@ function StartMarquee { param([string]$text)
 }
 
 StartMarquee "                                                                                    +++ $text +++ $text +++ $text +++ $text +++ $text +++ $text +++ $text +++ $text +++ $text +++ $text +++ $text +++ $text +++                                                                                         "
-exit 0
+exit 0 # success

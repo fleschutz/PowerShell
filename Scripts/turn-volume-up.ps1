@@ -1,4 +1,4 @@
-﻿<#
+<#
 .SYNOPSIS
 	turn-volume-up.ps1 [<percent>]
 .DESCRIPTION
@@ -19,7 +19,7 @@ try {
 		$obj.SendKeys([char]175) # each tick is +2%
 	}
 	"🔊️ volume +$($percent)%"
-	exit 0
+	exit 0 # success
 } catch {
 	"⚠️ Error: $($Error[0]) ($($MyInvocation.MyCommand.Name):$($_.InvocationInfo.ScriptLineNumber))"
 	exit 1

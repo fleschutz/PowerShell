@@ -1,4 +1,4 @@
-﻿<#
+<#
 .SYNOPSIS
 	list-fritzbox-devices.ps1 [<username>] [<password>]
 .DESCRIPTION
@@ -47,4 +47,4 @@ $HostTable = $HostList.List.Item.GetEnumerator()
 
 $HostTable | format-table -property Active,IPAddress,MACAddress,HostName,InterfaceType,X_AVM-DE_Speed
 
-exit 0
+exit 0 # success

@@ -1,4 +1,4 @@
-﻿<#
+<#
 .SYNOPSIS
 	send-udp.ps1 [<target-IP>] [<target-port>] [<message>]
 .DESCRIPTION
@@ -27,7 +27,7 @@ try {
 	$Socket.Close() 
 
 	"✔️  Done."
-	exit 0
+	exit 0 # success
 } catch {
 	"⚠️ Error: $($Error[0]) ($($MyInvocation.MyCommand.Name):$($_.InvocationInfo.ScriptLineNumber))"
 	exit 1

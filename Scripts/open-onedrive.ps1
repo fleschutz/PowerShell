@@ -1,4 +1,4 @@
-﻿<#
+<#
 .SYNOPSIS
 	open-onedrive.ps1
 .DESCRIPTION
@@ -12,4 +12,4 @@
 #>
 
 Start-Process "$($env:USERPROFILE)\AppData\Local\Microsoft\OneDrive\OneDrive.exe"
-exit 0
+exit 0 # success

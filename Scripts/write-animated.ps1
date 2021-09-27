@@ -1,4 +1,4 @@
-﻿<#
+<#
 .SYNOPSIS
 	write-animated.ps1 [<line1>] .. [line9>] [<speed>]
 .DESCRIPTION
@@ -50,4 +50,4 @@ WriteLine $Line7 $Speed
 WriteLine $Line8 $Speed
 WriteLine $Line9 $Speed
 write-host ""
-exit 0
+exit 0 # success

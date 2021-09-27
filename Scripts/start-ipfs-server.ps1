@@ -1,4 +1,4 @@
-﻿<#
+<#
 .SYNOPSIS
 	start-ipfs-server.ps1
 .DESCRIPTION
@@ -47,7 +47,7 @@ try {
 	[int]$Elapsed = $StopWatch.Elapsed.TotalSeconds
 	"✔️  started IPFS server in $Elapsed sec"
 	"⚠️ NOTE: make sure your router does not block port 4001 (TCP & UDP for IPv4 & IPv6)!"
-	exit 0
+	exit 0 # success
 } catch {
 	"⚠️ Error: $($Error[0]) ($($MyInvocation.MyCommand.Name):$($_.InvocationInfo.ScriptLineNumber))"
 	exit 1

@@ -1,4 +1,4 @@
-﻿<#
+<#
 .SYNOPSIS
 	write-motd.ps1 
 .DESCRIPTION
@@ -100,4 +100,4 @@ write-host "    System Volume: " -NoNewline -foregroundcolor Red
 write-host "$Disk_Size" -foregroundcolor Cyan
 write-host "                 'VEzjt:;;z>*`` " -foregroundcolor Yellow
 write-host ""
-exit 0
+exit 0 # success

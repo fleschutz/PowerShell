@@ -1,4 +1,4 @@
-﻿<#
+<#
 .SYNOPSIS
 	list-commits.ps1 [<RepoDir>] [<Format>]
 .DESCRIPTION
@@ -43,7 +43,7 @@ try {
 		& git -C "$RepoDir" log
 		if ($lastExitCode -ne "0") { throw "'git log' failed" }
 	}
-	exit 0
+	exit 0 # success
 } catch {
 	"⚠️ Error: $($Error[0]) ($($MyInvocation.MyCommand.Name):$($_.InvocationInfo.ScriptLineNumber))"
 	exit 1

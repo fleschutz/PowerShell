@@ -1,4 +1,4 @@
-﻿<#
+<#
 .SYNOPSIS
 	new-symlink.ps1 [<symlink>] [<target>]
 .DESCRIPTION
@@ -20,7 +20,7 @@ try {
 	new-item -path "$symlink" -itemType SymbolicLink -Value "$target"
 
 	"✔️ created new symlink $symlink ⭢ $target"
-	exit 0
+	exit 0 # success
 } catch {
 	"⚠️ Error: $($Error[0]) ($($MyInvocation.MyCommand.Name):$($_.InvocationInfo.ScriptLineNumber))"
 	exit 1

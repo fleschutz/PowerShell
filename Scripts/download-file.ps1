@@ -1,4 +1,4 @@
-﻿<#
+<#
 .SYNOPSIS
 	download-file.ps1 [<URL>]
 .DESCRIPTION
@@ -26,7 +26,7 @@ try {
 
 	[int]$Elapsed = $StopWatch.Elapsed.TotalSeconds
 	"✔️ downloaded file from $URL in $Elapsed sec"
-	exit 0
+	exit 0 # success
 } catch {
 	"⚠️ Error: $($Error[0]) ($($MyInvocation.MyCommand.Name):$($_.InvocationInfo.ScriptLineNumber))"
 	exit 1

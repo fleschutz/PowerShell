@@ -1,4 +1,4 @@
-﻿<#
+<#
 .SYNOPSIS
 	speak-epub.ps1 [<filename>]
 .DESCRIPTION

@@ -1,4 +1,4 @@
-﻿<#
+<#
 .SYNOPSIS
 	convert-txt2wav.ps1 [<text>] [<wav-file>]
 .DESCRIPTION
@@ -22,7 +22,7 @@ try {
 	$SpeechSynthesizer.SetOutputToWaveFile($tWavFile)
 	$SpeechSynthesizer.Speak($Text)
 	$SpeechSynthesizer.Dispose()
-	exit 0
+	exit 0 # success
 } catch {
 	"⚠️ Error: $($Error[0]) ($($MyInvocation.MyCommand.Name):$($_.InvocationInfo.ScriptLineNumber))"
 	exit 1

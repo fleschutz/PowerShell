@@ -1,4 +1,4 @@
-﻿<#
+<#
 .SYNOPSIS
 	edit.ps1 <filename>
 .DESCRIPTION
@@ -22,7 +22,7 @@ try {
 		if ($lastExitCode -ne "0") { throw "Can't execute 'notepad.exe' - make sure notepad.exe is installed and available" }
 	}
 
-	exit 0
+	exit 0 # success
 } catch {
 	"⚠️ Error: $($Error[0]) ($($MyInvocation.MyCommand.Name):$($_.InvocationInfo.ScriptLineNumber))"
 	exit 1

@@ -1,4 +1,4 @@
-﻿<#
+<#
 .SYNOPSIS
 	pull-repo.ps1 [<repo-dir>]
 .DESCRIPTION
@@ -24,7 +24,7 @@ try {
 	if ($lastExitCode -ne "0") { throw "Can't execute 'git' - make sure Git is installed and available" }
 	if ("$Result" -match "HEAD detached at ") {
 		write-warning "Not on a branch, so nothing to pull (in detached HEAD state)"
-		exit 0
+		exit 0 # success
 	} 
 
 	& git pull --recurse-submodules --jobs=4
@@ -36,7 +36,7 @@ try {
 	$RepoDirName = (get-item "$RepoDir").Name
 	[int]$Elapsed = $StopWatch.Elapsed.TotalSeconds
 	"✔️ pulled updates for Git repository 📂$RepoDirName in $Elapsed sec"
-	exit 0
+	exit 0 # success
 } catch {
 	"⚠️ Error: $($Error[0]) ($($MyInvocation.MyCommand.Name):$($_.InvocationInfo.ScriptLineNumber))"
 	exit 1

@@ -1,4 +1,4 @@
-﻿<#
+<#
 .SYNOPSIS
 	make-repos.ps1 [<parent-dir>]
 .DESCRIPTION
@@ -31,7 +31,7 @@ try {
 
 	[int]$Elapsed = $StopWatch.Elapsed.TotalSeconds
 	"✔️ built $FolderCount Git repositories at 📂$ParentDirName in $Elapsed sec"
-	exit 0
+	exit 0 # success
 } catch {
 	"⚠️ Error: $($Error[0]) ($($MyInvocation.MyCommand.Name):$($_.InvocationInfo.ScriptLineNumber))"
 	exit 1

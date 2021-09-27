@@ -1,4 +1,4 @@
-﻿<#
+<#
 .SYNOPSIS
 	check-subnet-mask.ps1 [<address>]
 .DESCRIPTION
@@ -27,7 +27,7 @@ try {
 
 	if (IsSubNetMaskValid $address) {
 		"✔️ subnet mask $Address is valid"
-		exit 0
+		exit 0 # success
 	} else {
 		write-warning "Invalid subnet mask: $address"
 		exit 1

@@ -1,4 +1,4 @@
-﻿<#
+<#
 .SYNOPSIS
 	translate-text.ps1 [<text>] [<source-lang>] [<target-lang>]
 .DESCRIPTION
@@ -63,7 +63,7 @@ try {
 		$Result = UseLibreTranslate $Text $SourceLang $TargetLangCode
 		write-output "$Result"
 	}
-	exit 0
+	exit 0 # success
 } catch {
 	"⚠️ Error: $($Error[0]) ($($MyInvocation.MyCommand.Name):$($_.InvocationInfo.ScriptLineNumber))"
 	exit 1

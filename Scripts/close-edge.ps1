@@ -1,4 +1,4 @@
-﻿<#
+<#
 .SYNOPSIS
 	close-edge.ps1 
 .DESCRIPTION
@@ -12,4 +12,4 @@
 #>
 
 & "$PSScriptRoot/close-program.ps1" "Microsoft Edge" "msedge" "msedge"
-exit 0
+exit 0 # success

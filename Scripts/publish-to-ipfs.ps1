@@ -1,4 +1,4 @@
-﻿<#
+<#
 .SYNOPSIS
 	publish-to-ipfs.ps1 [<FilePattern>] [<to-hash-list>]
 .DESCRIPTION
@@ -48,7 +48,7 @@ try {
 	[int]$Elapsed = $StopWatch.Elapsed.TotalSeconds
 	"✔️ published $Count file(s)/folder(s) to IPFS in $Elapsed sec"
 	"  NOTE: to publish it to IPNS execute: ipfs name publish <HASH>"
-	exit 0
+	exit 0 # success
 } catch {
 	"⚠️ Error: $($Error[0]) ($($MyInvocation.MyCommand.Name):$($_.InvocationInfo.ScriptLineNumber))"
 	exit 1

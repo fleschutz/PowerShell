@@ -1,4 +1,4 @@
-﻿<#
+<#
 .SYNOPSIS
 	scan-ports.ps1
 .DESCRIPTION
@@ -29,4 +29,4 @@ foreach($add in $range) {
 		}
 	}
 }
-exit 0
+exit 0 # success

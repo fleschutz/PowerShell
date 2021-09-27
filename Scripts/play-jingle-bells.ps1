@@ -1,4 +1,4 @@
-﻿<#
+<#
 .SYNOPSIS
         play-jingle-bells.ps1
 .DESCRIPTION
@@ -157,4 +157,4 @@ Start-Sleep -m $Duration.EIGHTH
 [System.Console]::Beep($Notes.BB, $Duration.QUARTER)
 [System.Console]::Beep($Notes.G, $Duration.QUARTER)
 [System.Console]::Beep($Notes.F, $Duration.HALF)
-exit 0
+exit 0 # success

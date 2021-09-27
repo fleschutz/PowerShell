@@ -1,4 +1,4 @@
-﻿<#
+<#
 .SYNOPSIS
 	speak-time.ps1
 .DESCRIPTION
@@ -14,7 +14,7 @@
 try {
 	[system.threading.thread]::currentthread.currentculture=[system.globalization.cultureinfo]"en-US"
 	& "$PSScriptRoot/speak-english.ps1" "It's now $((Get-Date).ToShortTimeString())"
-	exit 0
+	exit 0 # success
 } catch {
 	"⚠️ Error: $($Error[0]) ($($MyInvocation.MyCommand.Name):$($_.InvocationInfo.ScriptLineNumber))"
 	exit 1

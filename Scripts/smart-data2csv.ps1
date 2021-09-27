@@ -1,4 +1,4 @@
-﻿<#
+<#
 .SYNOPSIS
 	smart-data2csv.ps1 [<directory>]
 .DESCRIPTION
@@ -89,7 +89,7 @@ try {
 		WriteCsvDataRow $File
 		$Row++
 	}
-	exit 0
+	exit 0 # success
 } catch {
 	"⚠️ Error: $($Error[0]) ($($MyInvocation.MyCommand.Name):$($_.InvocationInfo.ScriptLineNumber))"
 	exit 1

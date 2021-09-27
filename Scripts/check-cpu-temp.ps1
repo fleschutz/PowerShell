@@ -1,4 +1,4 @@
-﻿<#
+<#
 .SYNOPSIS
 	check-cpu-temp.ps1 
 .DESCRIPTION
@@ -34,7 +34,7 @@ try {
 	} else {
 		"✔️ $Temp °C CPU temperature - good"
 	}
-	exit 0
+	exit 0 # success
 } catch {
 	"⚠️ Error: $($Error[0]) ($($MyInvocation.MyCommand.Name):$($_.InvocationInfo.ScriptLineNumber))"
 	exit 1

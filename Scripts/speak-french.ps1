@@ -1,4 +1,4 @@
-﻿<#
+<#
 .SYNOPSIS
 	speak-french.ps1 [<text>]
 .DESCRIPTION
@@ -23,7 +23,7 @@ try {
 		if ($Description -notlike "*- French*") { continue }
 		$Voice.Voice = $OtherVoice
 		[void]$Voice.Speak($text)
-		exit 0
+		exit 0 # success
 	}
 	throw "No French text-to-speech voice found - please install one"
 } catch {

@@ -1,4 +1,4 @@
-﻿<#
+<#
 .SYNOPSIS
 	check-ipv4-address.ps1 [<address>]
 .DESCRIPTION
@@ -27,7 +27,7 @@ try {
 
 	if (IsIPv4AddressValid $Address) {
 		"✔️ IPv4 address $Address is valid"
-		exit 0
+		exit 0 # success
 	} else {
 		write-warning "Invalid IPv4 address: $Address"
 		exit 1

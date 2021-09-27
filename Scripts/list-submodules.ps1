@@ -1,4 +1,4 @@
-﻿<#
+<#
 .SYNOPSIS
 	list-submodules.ps1 [<repo-dir>] 
 .DESCRIPTION
@@ -26,7 +26,7 @@ try {
 	& git submodule
 	if ($lastExitCode -ne "0") { throw "'git submodule' failed" }
 
-	exit 0
+	exit 0 # success
 } catch {
 	"⚠️ Error: $($Error[0]) ($($MyInvocation.MyCommand.Name):$($_.InvocationInfo.ScriptLineNumber))"
 	exit 1

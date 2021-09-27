@@ -1,4 +1,4 @@
-﻿<#
+<#
 .SYNOPSIS
 	list-cmdlets.ps1 
 .DESCRIPTION
@@ -13,7 +13,7 @@
 
 try {
 	Get-Command -Command-Type cmdlet
-	exit 0
+	exit 0 # success
 } catch {
 	"⚠️ Error: $($Error[0]) ($($MyInvocation.MyCommand.Name):$($_.InvocationInfo.ScriptLineNumber))"
 	exit 1

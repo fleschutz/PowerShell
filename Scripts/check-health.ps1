@@ -1,4 +1,4 @@
-﻿<#
+<#
 .SYNOPSIS
 	check-health.ps1 
 .DESCRIPTION
@@ -38,7 +38,7 @@ if ($lastExitCode -ne "0") { $Healthy = 0 }
 
 if ($Healthy) {
 	"✔️ $Hostname is healthy"
-	exit 0
+	exit 0 # success
 } else {
 	write-warning "$Hostname is NOT healthy"
 	exit 1

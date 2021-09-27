@@ -1,4 +1,4 @@
-﻿<#
+<#
 .SYNOPSIS
 	inspect-exe.ps1 [<path-to-exe-file>]
 .DESCRIPTION
@@ -17,7 +17,7 @@ try {
 	if ($PathToExe -eq "" ) { $PathToExe = read-host "Enter path to executable file" }
 
 	get-childitem $PathToExe | % {$_.VersionInfo} | Select *
-	exit 0
+	exit 0 # success
 } catch {
 	"⚠️ Error: $($Error[0]) ($($MyInvocation.MyCommand.Name):$($_.InvocationInfo.ScriptLineNumber))"
 	exit 1

@@ -1,4 +1,4 @@
-﻿<#
+<#
 .SYNOPSIS
 	list-city-weather.ps1
 .DESCRIPTION
@@ -18,7 +18,7 @@ try {
 		$Line = (Invoke-WebRequest http://wttr.in/${City}?format="%c %l+%t+%p+%h+%P+%w +%S →+%s" -UserAgent "curl").Content
 		"$Line"
 	}
-	exit 0
+	exit 0 # success
 } catch {
 	"⚠️ Error: $($Error[0]) ($($MyInvocation.MyCommand.Name):$($_.InvocationInfo.ScriptLineNumber))"
 	exit 1

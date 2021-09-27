@@ -1,4 +1,4 @@
-﻿<#
+<#
 .SYNOPSIS
 	close-cortana.ps1
 .DESCRIPTION
@@ -12,4 +12,4 @@
 #>
 
 & "$PSScriptRoot/close-program.ps1" "Cortana" "Cortana" "Cortana"
-exit 0
+exit 0 # success

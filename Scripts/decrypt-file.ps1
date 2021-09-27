@@ -1,4 +1,4 @@
-﻿<#
+<#
 .SYNOPSIS
 	decrypt-file.ps1 [<path>] [<password>]
 .DESCRIPTION
@@ -164,7 +164,7 @@ try {
 	DecryptFile "$Path" -algorithm AES -keyAsPlainText $PasswordBase64 -removeSource
 
 	"✔️  Done."
-	exit 0
+	exit 0 # success
 } catch {
 	"⚠️ Error: $($Error[0]) ($($MyInvocation.MyCommand.Name):$($_.InvocationInfo.ScriptLineNumber))"
 	exit 1

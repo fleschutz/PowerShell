@@ -1,4 +1,4 @@
-﻿<#
+<#
 .SYNOPSIS
 	list-dir.ps1 [<pattern>]
 .DESCRIPTION
@@ -29,7 +29,7 @@ function ListDir { param([string]$Pattern)
 
 try {
 	ListDir $Pattern | format-wide -autoSize
-	exit 0
+	exit 0 # success
 } catch {
 	"⚠️ Error: $($Error[0]) ($($MyInvocation.MyCommand.Name):$($_.InvocationInfo.ScriptLineNumber))"
 	exit 1

@@ -1,4 +1,4 @@
-﻿<#
+<#
 .SYNOPSIS
 	set-profile.ps1
 .DESCRIPTION
@@ -18,7 +18,7 @@ try {
 	copy-item "$PathToRepo/Scripts/my-profile.ps1" "$PathToProfile" -force
 
 	"✔️ updated PowerShell profile 'CurrentUserCurrentHost' by my-profile.ps1 - it gets active on next login"
-	exit 0
+	exit 0 # success
 } catch {
 	"⚠️ Error: $($Error[0]) ($($MyInvocation.MyCommand.Name):$($_.InvocationInfo.ScriptLineNumber))"
 	exit 1

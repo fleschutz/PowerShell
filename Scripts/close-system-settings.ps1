@@ -1,4 +1,4 @@
-﻿<#
+<#
 .SYNOPSIS
 	close-system-settings.ps1 
 .DESCRIPTION
@@ -12,4 +12,4 @@
 #>
 
 & "$PSScriptRoot/close-program.ps1" "System Settings" "SystemSettings" "SystemSettings"
-exit 0
+exit 0 # success

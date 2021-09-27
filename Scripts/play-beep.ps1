@@ -1,4 +1,4 @@
-﻿<#
+<#
 .SYNOPSIS
 	play-beep.ps1
 .DESCRIPTION
@@ -12,4 +12,4 @@
 #>
 
 [console]::beep(500,300)
-exit 0
+exit 0 # success

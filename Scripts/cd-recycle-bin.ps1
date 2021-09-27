@@ -1,4 +1,4 @@
-﻿<#
+<#
 .SYNOPSIS
 	cd-recycle-bin.ps1 
 .DESCRIPTION
@@ -24,4 +24,4 @@ if (-not(test-path "$TargetDir" -pathType container)) {
 }
 set-location "$TargetDir"
 "📂$TargetDir"
-exit 0
+exit 0 # success

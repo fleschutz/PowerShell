@@ -1,4 +1,4 @@
-﻿<#
+<#
 .SYNOPSIS
 	take-screenshots.ps1 [<TargetDir>] [<Interval>]
 .DESCRIPTION
@@ -34,7 +34,7 @@ try {
 		TakeScreenshot $FilePath
 		Start-Sleep -Seconds $Interval
 	} while (1)
-	exit 0
+	exit 0 # success
 } catch {
 	"⚠️ Error: $($Error[0]) ($($MyInvocation.MyCommand.Name):$($_.InvocationInfo.ScriptLineNumber))"
 	exit 1

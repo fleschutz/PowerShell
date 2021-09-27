@@ -1,4 +1,4 @@
-﻿<#
+<#
 .SYNOPSIS
 	clear-recycle-bin.ps1 
 .DESCRIPTION
@@ -17,7 +17,7 @@ try {
 	if ($lastExitCode -ne "0") { throw "'Clear-RecycleBin' failed" }
 
 	"✔️ cleared recycle bin"
-	exit 0
+	exit 0 # success
 } catch {
 	"⚠️ Error: $($Error[0]) ($($MyInvocation.MyCommand.Name):$($_.InvocationInfo.ScriptLineNumber))"
 	exit 1

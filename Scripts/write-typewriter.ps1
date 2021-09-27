@@ -1,4 +1,4 @@
-﻿<#
+<#
 .SYNOPSIS
 	write-typewriter.ps1 [<text>] [<speed>]
 .DESCRIPTION
@@ -20,7 +20,7 @@ try {
 		write-host -nonewline $_
 		start-sleep -milliseconds $(1 + $Random.Next($speed))
 	}
-	exit 0
+	exit 0 # success
 } catch {
 	"⚠️ Error: $($Error[0]) ($($MyInvocation.MyCommand.Name):$($_.InvocationInfo.ScriptLineNumber))"
 	exit 1

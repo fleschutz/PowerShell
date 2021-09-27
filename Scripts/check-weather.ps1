@@ -1,4 +1,4 @@
-﻿<#
+<#
 .SYNOPSIS
 	check-weather.ps1 [<location>]
 .DESCRIPTION
@@ -50,7 +50,7 @@ try {
 	} else {
 		"WEATHER ALERT: $Result"
 	}
-	exit 0
+	exit 0 # success
 } catch {
 	"⚠️ Error: $($Error[0]) ($($MyInvocation.MyCommand.Name):$($_.InvocationInfo.ScriptLineNumber))"
 	exit 1

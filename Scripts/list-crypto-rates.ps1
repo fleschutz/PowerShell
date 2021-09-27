@@ -1,4 +1,4 @@
-﻿<#
+<#
 .SYNOPSIS
 	list-crypto-rates.ps1 
 .DESCRIPTION
@@ -45,7 +45,7 @@ try {
 	"============================="
 
 	ListCryptoRates | format-table -property @{e='Cryptocurrency';width=28},USD,EUR,RUB,CNY
-	exit 0
+	exit 0 # success
 } catch {
 	"⚠️ Error: $($Error[0]) ($($MyInvocation.MyCommand.Name):$($_.InvocationInfo.ScriptLineNumber))"
 	exit 1

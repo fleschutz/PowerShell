@@ -1,4 +1,4 @@
-﻿<#
+<#
 .SYNOPSIS
 	check-ping.ps1 [<hosts>]
 .DESCRIPTION
@@ -35,7 +35,7 @@ try {
 	$Avg = $Avg / $Pings.count
 
 	"✔️ $Avg ms net latency average ($Min ms min, $Max ms max, $($Pings.count) hosts)"
-	exit 0
+	exit 0 # success
 } catch {
 	"⚠️ Error: $($Error[0]) ($($MyInvocation.MyCommand.Name):$($_.InvocationInfo.ScriptLineNumber))"
 	exit 1

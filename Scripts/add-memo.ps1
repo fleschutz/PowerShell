@@ -1,4 +1,4 @@
-﻿<#
+<#
 .SYNOPSIS
 	add-memo.ps1 [<text>]
 .DESCRIPTION
@@ -27,7 +27,7 @@ try {
 	write-output $Line >> "$Path"
 
 	"✔️ added to 📄$Path"
-	exit 0
+	exit 0 # success
 } catch {
 	"⚠️ Error: $($Error[0]) ($($MyInvocation.MyCommand.Name):$($_.InvocationInfo.ScriptLineNumber))"
 	exit 1

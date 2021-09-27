@@ -1,4 +1,4 @@
-﻿<#
+<#
 .SYNOPSIS
 	speak-countdown.ps1 [start-number]
 .DESCRIPTION
@@ -19,7 +19,7 @@ try {
 		start-sleep -milliseconds 200
 	}
 	& "$PSScriptRoot/speak-english.ps1" "zero"
-	exit 0
+	exit 0 # success
 } catch {
 	"⚠️ Error: $($Error[0]) ($($MyInvocation.MyCommand.Name):$($_.InvocationInfo.ScriptLineNumber))"
 	exit 1

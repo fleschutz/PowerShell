@@ -1,4 +1,4 @@
-﻿<#
+<#
 .SYNOPSIS
 	play-mission-impossible.ps1
 .DESCRIPTION
@@ -57,4 +57,4 @@ Start-Sleep -m 75
 Start-Sleep -m 150
 [console]::beep(466,150)
 [console]::beep(523,150)
-exit 0
+exit 0 # success

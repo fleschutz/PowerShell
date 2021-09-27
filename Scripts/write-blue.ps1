@@ -1,4 +1,4 @@
-﻿<#
+<#
 .SYNOPSIS
 	write-blue.ps1 [<text>]
 .DESCRIPTION
@@ -17,4 +17,4 @@ if ($text -eq "" ) { $text = read-host "Enter the text to write" }
 
 write-host -foregroundColor blue "$text"
 
-exit 0
+exit 0 # success

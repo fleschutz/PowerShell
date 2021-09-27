@@ -1,4 +1,4 @@
-﻿<#
+<#
 .SYNOPSIS
 	list-network-shares.ps1 
 .DESCRIPTION
@@ -13,7 +13,7 @@
 
 try {
 	get-wmiobject win32_share | where {$_.name -NotLike "*$"}
-	exit 0
+	exit 0 # success
 } catch {
 	"⚠️ Error: $($Error[0]) ($($MyInvocation.MyCommand.Name):$($_.InvocationInfo.ScriptLineNumber))"
 	exit 1

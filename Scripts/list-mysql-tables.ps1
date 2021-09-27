@@ -1,4 +1,4 @@
-﻿<#
+<#
 .SYNOPSIS
 	list-mysql-tables.ps1 
 .DESCRIPTION

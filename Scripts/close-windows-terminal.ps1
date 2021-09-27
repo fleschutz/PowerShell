@@ -1,4 +1,4 @@
-﻿<#
+<#
 .SYNOPSIS
 	close-windows-terminal.ps1 
 .DESCRIPTION
@@ -12,4 +12,4 @@
 #>
 
 & "$PSScriptRoot/close-program.ps1" "Windows Terminal" "WindowsTerminal" "WindowsTerminal"
-exit 0
+exit 0 # success

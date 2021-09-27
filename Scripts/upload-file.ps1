@@ -1,4 +1,4 @@
-﻿<#
+<#
 .SYNOPSIS
 	upload-file.ps1 [<file>] [<URL>] [<username>] [<password>]
 .DESCRIPTION
@@ -60,7 +60,7 @@ try {
 
 	[int]$Elapsed = $StopWatch.Elapsed.TotalSeconds
 	"✔️ uploaded 📄$Filename to $URL in $Elapsed sec"
-	exit 0
+	exit 0 # success
 } catch {
 	[int]$Elapsed = $StopWatch.Elapsed.TotalSeconds
 	write-error "⚠️ Error in line $($_.InvocationInfo.ScriptLineNumber): $($Error[0]) after $Elapsed sec."

@@ -1,4 +1,4 @@
-﻿<#
+<#
 .SYNOPSIS
 	new-zipfile.ps1 [<directory>]
 .DESCRIPTION
@@ -22,7 +22,7 @@ try {
 
 	[int]$Elapsed = $StopWatch.Elapsed.TotalSeconds
 	"✔️ created zip file $($directory).zip in $Elapsed sec"
-	exit 0
+	exit 0 # success
 } catch {
 	"⚠️ Error: $($Error[0]) ($($MyInvocation.MyCommand.Name):$($_.InvocationInfo.ScriptLineNumber))"
 	exit 1

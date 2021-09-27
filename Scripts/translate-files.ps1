@@ -1,4 +1,4 @@
-﻿<#
+<#
 .SYNOPSIS
 	translate-files.ps1 [<file-pattern>]
 .DESCRIPTION
@@ -41,7 +41,7 @@ try {
 			& "$PSScriptRoot/translate-file.ps1" $SourceFile $SourceLang $TargetLang > $TargetFile
 		}
 	}
-	exit 0
+	exit 0 # success
 } catch {
 	"⚠️ Error: $($Error[0]) ($($MyInvocation.MyCommand.Name):$($_.InvocationInfo.ScriptLineNumber))"
 	exit 1

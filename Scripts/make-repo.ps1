@@ -1,4 +1,4 @@
-﻿<#
+<#
 .SYNOPSIS
 	make-repo.ps1 [<repo-dir>]
 .DESCRIPTION
@@ -103,7 +103,7 @@ function MakeDir { param($Path)
 		MakeDir "$Path/$DirName"
 	} else {
 		write-warning "Sorry, no make rule applies to: 📂$DirName"
-		exit 0
+		exit 0 # success
 	}
 }
 
@@ -119,7 +119,7 @@ try {
 
 	[int]$Elapsed = $StopWatch.Elapsed.TotalSeconds
 	"✔️ built Git repository 📂$RepoDirName in $Elapsed sec"
-	exit 0
+	exit 0 # success
 } catch {
 	"⚠️ Error: $($Error[0]) ($($MyInvocation.MyCommand.Name):$($_.InvocationInfo.ScriptLineNumber))"
 	exit 1

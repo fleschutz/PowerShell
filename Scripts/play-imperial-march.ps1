@@ -1,4 +1,4 @@
-﻿<#
+<#
 .SYNOPSIS
 	play-imperial-march.ps1
 .DESCRIPTION
@@ -29,4 +29,4 @@
 [System.Console]::beep(349, 350)       
 [System.Console]::beep(523, 150)       
 [System.Console]::beep(440, 1000)
-exit 0
+exit 0 # success

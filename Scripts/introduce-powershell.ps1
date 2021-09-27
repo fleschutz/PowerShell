@@ -1,4 +1,4 @@
-﻿<#
+<#
 .SYNOPSIS
 	introduce-powershell.ps1
 .DESCRIPTION
@@ -28,7 +28,7 @@ try {
 	& "$PSScriptRoot/write-typewriter.ps1" "P.S. PowerShell is looking forward to execute your next command"
 	""
 
-	exit 0
+	exit 0 # success
 } catch {
 	"⚠️ Error: $($Error[0]) ($($MyInvocation.MyCommand.Name):$($_.InvocationInfo.ScriptLineNumber))"
 	exit 1

@@ -1,4 +1,4 @@
-﻿<#
+<#
 .SYNOPSIS
 	locate-zip-code.ps1 [<country-code>] [<zip-code>]
 .DESCRIPTION
@@ -35,7 +35,7 @@ try {
 	}
 
 	if ($FoundOne) {
-		exit 0
+		exit 0 # success
 	}
 	throw "Zip-code $ZipCode in country $CountryCode not found"
 } catch {

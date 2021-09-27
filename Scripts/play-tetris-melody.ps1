@@ -1,4 +1,4 @@
-﻿<#
+<#
 .SYNOPSIS
         play-tetris-melody.ps1
 .DESCRIPTION
@@ -125,4 +125,4 @@ start-sleep -milliseconds 500
 [System.Console]::Beep(660,500)
 [System.Console]::Beep(880,1000)
 [System.Console]::Beep(838,2000)
-exit 0
+exit 0 # success

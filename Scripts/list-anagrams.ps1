@@ -1,4 +1,4 @@
-﻿<#
+<#
 .SYNOPSIS
 	list-anagrams.ps1 [<word>] [<columns>]
 .DESCRIPTION
@@ -58,7 +58,7 @@ try {
 		$Columns = read-host "Enter number of columns"
 	}
 	GetPermutations -String $Word | Format-Wide -Column $Columns
-	exit 0
+	exit 0 # success
 } catch {
 	"⚠️ Error: $($Error[0]) ($($MyInvocation.MyCommand.Name):$($_.InvocationInfo.ScriptLineNumber))"
 	exit 1

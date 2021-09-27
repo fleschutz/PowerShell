@@ -1,4 +1,4 @@
-﻿<#
+<#
 .SYNOPSIS
 	convert-csv2txt.ps1 [<csv-file>]
 .DESCRIPTION
@@ -21,7 +21,7 @@ try {
 	foreach($Row in $Table) {
 		write-output "* $($Row.A) $($Row.B) $($Row.C) $($Row.D) $($Row.E) $($Row.F) $($Row.G) $($Row.H)"
 	}
-	exit 0
+	exit 0 # success
 } catch {
 	"⚠️ Error: $($Error[0]) ($($MyInvocation.MyCommand.Name):$($_.InvocationInfo.ScriptLineNumber))"
 	exit 1

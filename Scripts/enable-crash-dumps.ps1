@@ -1,4 +1,4 @@
-﻿<#
+<#
 .SYNOPSIS
 	enable-crash-dumps.ps1 
 .DESCRIPTION
@@ -294,4 +294,4 @@ Else
     write-host "You did not enter a valid option.  Please re-run Get-Dump.ps1"
     start-sleep -s 5
 }
-exit 0
+exit 0 # success

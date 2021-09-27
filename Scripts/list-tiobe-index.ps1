@@ -1,4 +1,4 @@
-﻿<#
+<#
 .SYNOPSIS
 	list-tiobe-index.ps1 
 .DESCRIPTION
@@ -52,7 +52,7 @@ try {
 		[float]$Change = $Row.Change
 		WriteBar $Name $Value 14.0 $Change
 	}
-	exit 0
+	exit 0 # success
 } catch {
 	"⚠️ Error: $($Error[0]) ($($MyInvocation.MyCommand.Name):$($_.InvocationInfo.ScriptLineNumber))"
 	exit 1

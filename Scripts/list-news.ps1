@@ -1,4 +1,4 @@
-﻿<#
+<#
 .SYNOPSIS
 	list-news.ps1 [<RSS-URL>] [<max-count>]
 .DESCRIPTION
@@ -23,7 +23,7 @@ try {
 		$Count++
 		if ($Count -eq $MaxCount) { break }
 	}
-	exit 0
+	exit 0 # success
 } catch {
 	"⚠️ Error: $($Error[0]) ($($MyInvocation.MyCommand.Name):$($_.InvocationInfo.ScriptLineNumber))"
 	exit 1

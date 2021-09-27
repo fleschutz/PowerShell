@@ -1,4 +1,4 @@
-﻿<#
+<#
 .SYNOPSIS
 	play-super-mario.ps1
 .DESCRIPTION
@@ -35,4 +35,4 @@
 [console]::beep(523,250) ## C
 [console]::beep(587,225) ## D
 [console]::beep(494,225) ## B
-exit 0
+exit 0 # success

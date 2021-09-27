@@ -1,4 +1,4 @@
-﻿<#
+<#
 .SYNOPSIS
 	check-mac-address.ps1 [<MAC>]
 .DESCRIPTION
@@ -28,7 +28,7 @@ try {
 	}
 	if (IsMACAddressValid $MAC) {
 		"✔️ MAC address $MAC is valid"
-		exit 0
+		exit 0 # success
 	} else {
 		write-warning "Invalid MAC address: $MAC"
 		exit 1

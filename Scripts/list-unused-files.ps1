@@ -1,4 +1,4 @@
-﻿<#
+<#
 .SYNOPSIS
 	list-unused-files.ps1 <dir-tree> <days>
 .DESCRIPTION
@@ -20,7 +20,7 @@ try {
 
 	Get-ChildItem -path $DirTree -recurse | Where-Object {$_.LastAccessTime -le $cutOffDate} | select fullname
 
-	exit 0
+	exit 0 # success
 } catch {
 	"⚠️ Error: $($Error[0]) ($($MyInvocation.MyCommand.Name):$($_.InvocationInfo.ScriptLineNumber))"
 	exit 1

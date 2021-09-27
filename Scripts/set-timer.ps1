@@ -1,4 +1,4 @@
-﻿<#
+<#
 .SYNOPSIS
 	set-timer.ps1 [<seconds>]
 .DESCRIPTION
@@ -23,7 +23,7 @@ try {
 	}
 
 	"✔️ $Seconds seconds countdown finished"
-	exit 0
+	exit 0 # success
 } catch {
 	"⚠️ Error: $($Error[0]) ($($MyInvocation.MyCommand.Name):$($_.InvocationInfo.ScriptLineNumber))"
 	exit 1

@@ -1,4 +1,4 @@
-﻿<#
+<#
 .SYNOPSIS
 	get-sha1.ps1 [<file>]
 .DESCRIPTION
@@ -19,7 +19,7 @@ try {
 	$Result = get-filehash $file -algorithm SHA1
 
 	"✔️ SHA1 hash is" $Result.Hash
-	exit 0
+	exit 0 # success
 } catch {
 	"⚠️ Error: $($Error[0]) ($($MyInvocation.MyCommand.Name):$($_.InvocationInfo.ScriptLineNumber))"
 	exit 1

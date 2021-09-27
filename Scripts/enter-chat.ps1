@@ -1,4 +1,4 @@
-﻿<#
+<#
 .SYNOPSIS
 	enter-chat.ps1 
 .DESCRIPTION

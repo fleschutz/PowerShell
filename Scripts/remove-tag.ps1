@@ -1,4 +1,4 @@
-﻿<#
+<#
 .SYNOPSIS
 	remove-tag.ps1 [<TagName>] [<Mode>] [<RepoDir>]
 .DESCRIPTION
@@ -38,7 +38,7 @@ try {
 
 	[int]$Elapsed = $StopWatch.Elapsed.TotalSeconds
 	"✔️ removed tag '$TagName' in $Elapsed sec"
-	exit 0
+	exit 0 # success
 } catch {
 	"⚠️ Error: $($Error[0]) ($($MyInvocation.MyCommand.Name):$($_.InvocationInfo.ScriptLineNumber))"
 	exit 1

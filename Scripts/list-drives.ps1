@@ -1,4 +1,4 @@
-﻿<#
+<#
 .SYNOPSIS
 	list-drives.ps1
 .DESCRIPTION
@@ -13,7 +13,7 @@
 
 try {
 	Get-PSDrive -PSProvider FileSystem | format-table -property Name,Root,@{n="Used (GB)";e={[math]::Round($_.Used/1GB,2)}},@{n="Free (GB)";e={[math]::Round($_.Free/1GB,2)}}
-	exit 0
+	exit 0 # success
 } catch {
 	"⚠️ Error: $($Error[0]) ($($MyInvocation.MyCommand.Name):$($_.InvocationInfo.ScriptLineNumber))"
 	exit 1

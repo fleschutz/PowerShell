@@ -1,4 +1,4 @@
-﻿<#
+<#
 .SYNOPSIS
 	close-netflix.ps1 
 .DESCRIPTION
@@ -12,4 +12,4 @@
 #>
 
 & "$PSScriptRoot/close-program.ps1" "Netflix" "ApplicationFrameHost" "RuntimeBroker"
-exit 0
+exit 0 # success

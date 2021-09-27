@@ -1,4 +1,4 @@
-﻿<#
+<#
 .SYNOPSIS
 	list-exchange-rates.ps1 [<currency>]
 .DESCRIPTION
@@ -26,7 +26,7 @@ try {
 	"================================"
 
 	ListExchangeRates $currency | format-table -property Rate,Currency,Inverse,Date
-	exit 0
+	exit 0 # success
 } catch {
 	"⚠️ Error: $($Error[0]) ($($MyInvocation.MyCommand.Name):$($_.InvocationInfo.ScriptLineNumber))"
 	exit 1

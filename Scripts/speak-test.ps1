@@ -1,4 +1,4 @@
-﻿<#
+<#
 .SYNOPSIS
 	speak-test.ps1
 .DESCRIPTION
@@ -54,7 +54,7 @@ try {
 		$Description = $OtherVoice.GetDescription()
 		Speak("Hi, I'm the voice called $Description")
 	}
-	exit 0
+	exit 0 # success
 } catch {
 	"⚠️ Error: $($Error[0]) ($($MyInvocation.MyCommand.Name):$($_.InvocationInfo.ScriptLineNumber))"
 	exit 1

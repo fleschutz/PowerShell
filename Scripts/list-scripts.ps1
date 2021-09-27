@@ -1,4 +1,4 @@
-﻿<#
+<#
 .SYNOPSIS
 	list-scripts.ps1
 .DESCRIPTION
@@ -29,7 +29,7 @@ try {
 	ListScripts "$PathToRepo/Data/scripts.csv" | format-table -property "PowerShell Script",Description
 
 	"✔️ $($global:NumScripts) PowerShell scripts total"
-	exit 0
+	exit 0 # success
 } catch {
 	"⚠️ Error: $($Error[0]) ($($MyInvocation.MyCommand.Name):$($_.InvocationInfo.ScriptLineNumber))"
 	exit 1

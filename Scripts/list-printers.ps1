@@ -1,4 +1,4 @@
-﻿<#
+<#
 .SYNOPSIS
 	list-printers.ps1
 .DESCRIPTION
@@ -14,7 +14,7 @@
 try {
 	$ComputerName = $(hostname)
 	get-WMIObject -Class Win32_Printer -ComputerName $ComputerName | format-table
-	exit 0
+	exit 0 # success
 } catch {
 	"⚠️ Error: $($Error[0]) ($($MyInvocation.MyCommand.Name):$($_.InvocationInfo.ScriptLineNumber))"
 	exit 1

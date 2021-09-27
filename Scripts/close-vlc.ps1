@@ -1,4 +1,4 @@
-﻿<#
+<#
 .SYNOPSIS
 	close-vlc.ps1 
 .DESCRIPTION
@@ -12,4 +12,4 @@
 #>
 
 & "$PSScriptRoot/close-program.ps1" "VLC media player" "vlc" "vlc"
-exit 0
+exit 0 # success

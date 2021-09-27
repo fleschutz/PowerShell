@@ -1,4 +1,4 @@
-﻿<#
+<#
 .SYNOPSIS
 	reboot-fritzbox.ps1 [<username>] [<password>]
 .DESCRIPTION
@@ -97,4 +97,4 @@ function Reboot-FritzBox {
 
 $Result = Reboot-FritzBox
 echo $Result
-exit 0
+exit 0 # success

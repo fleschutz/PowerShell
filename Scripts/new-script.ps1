@@ -1,4 +1,4 @@
-﻿<#
+<#
 .SYNOPSIS
 	new-script.ps1 [<filename>] 
 .DESCRIPTION
@@ -19,7 +19,7 @@ try {
 	copy-item "$PSScriptRoot/../data/template.ps1" "$filename"
 
 	"✔️ created new PowerShell script $filename"
-	exit 0
+	exit 0 # success
 } catch {
 	"⚠️ Error: $($Error[0]) ($($MyInvocation.MyCommand.Name):$($_.InvocationInfo.ScriptLineNumber))"
 	exit 1

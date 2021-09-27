@@ -1,4 +1,4 @@
-﻿<#
+<#
 .SYNOPSIS
 	write-quote.ps1 
 .DESCRIPTION
@@ -26,7 +26,7 @@ try {
 	$Spaces = $Spaces.Substring(0, $Quote.Length - $Author.Length)
 	"$Spaces    $($Author.toUpper())"
 	
-	exit 0
+	exit 0 # success
 } catch {
 	"⚠️ Error: $($Error[0]) ($($MyInvocation.MyCommand.Name):$($_.InvocationInfo.ScriptLineNumber))"
 	exit 1

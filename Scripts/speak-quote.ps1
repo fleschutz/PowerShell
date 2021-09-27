@@ -1,4 +1,4 @@
-﻿<#
+<#
 .SYNOPSIS
 	speak-quote.ps1
 .DESCRIPTION
@@ -21,7 +21,7 @@ try {
 	$Author = $Table[$Index].Author
 
 	& "$PSScriptRoot/speak-english.ps1" "$Quote (by $Author)"
-	exit 0
+	exit 0 # success
 } catch {
 	"⚠️ Error: $($Error[0]) ($($MyInvocation.MyCommand.Name):$($_.InvocationInfo.ScriptLineNumber))"
 	exit 1

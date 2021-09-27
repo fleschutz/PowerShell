@@ -1,4 +1,4 @@
-﻿<#
+<#
 .SYNOPSIS
 	write-morse-code.ps1 [<text>] [<speed>]
 .DESCRIPTION
@@ -81,7 +81,7 @@ try {
 	}
 	write-host ""
 	write-host ""
-	exit 0
+	exit 0 # success
 } catch {
 	"⚠️ Error: $($Error[0]) ($($MyInvocation.MyCommand.Name):$($_.InvocationInfo.ScriptLineNumber))"
 	exit 1

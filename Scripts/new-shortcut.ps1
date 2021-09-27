@@ -1,4 +1,4 @@
-﻿<#
+<#
 .SYNOPSIS
 	new-shortcut.ps1 [<shortcut>] [<target>] [<description>]
 .DESCRIPTION
@@ -27,7 +27,7 @@ try {
 	$sc.save()
 
 	"✔️ created new shortcut $shortcut ⭢ $target"
-	exit 0
+	exit 0 # success
 } catch {
 	"⚠️ Error: $($Error[0]) ($($MyInvocation.MyCommand.Name):$($_.InvocationInfo.ScriptLineNumber))"
 	exit 1

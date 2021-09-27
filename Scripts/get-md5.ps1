@@ -1,4 +1,4 @@
-﻿<#
+<#
 .SYNOPSIS
 	get-md5.ps1 [<file>]
 .DESCRIPTION
@@ -19,7 +19,7 @@ try {
 	$Result = get-filehash $file -algorithm MD5
 
 	"✔️ MD5 hash is" $Result.Hash
-	exit 0
+	exit 0 # success
 } catch {
 	"⚠️ Error: $($Error[0]) ($($MyInvocation.MyCommand.Name):$($_.InvocationInfo.ScriptLineNumber))"
 	exit 1

@@ -1,4 +1,4 @@
-﻿<#
+<#
 .SYNOPSIS
 	convert-sql2csv.ps1 [<server>] [<database>] [<username>] [<password>] [<query>]
 .DESCRIPTION
@@ -25,7 +25,7 @@ try {
 	$csvfilepath = "$PSScriptRoot\sqlserver_table.csv"
 	$result = Invoke-SqlServerQuery -Credential $creds -ConnectionTimeout 10000 -Database $database -Server $server -Sql $query -CommandTimeout 10000
 	$result | Export-Csv $csvfilepath -NoTypeInformation
-	exit 0
+	exit 0 # success
 } catch {
 	"⚠️ Error: $($Error[0]) ($($MyInvocation.MyCommand.Name):$($_.InvocationInfo.ScriptLineNumber))"
 	exit 1

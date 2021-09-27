@@ -1,4 +1,4 @@
-﻿<#
+<#
 .SYNOPSIS
 	sync-repo.ps1 [<repo-dir>]
 .DESCRIPTION
@@ -30,7 +30,7 @@ try {
 	if ($lastExitCode -ne "0") { throw "'git pull' failed" }
 
 	"✔️ synchronized Git repository 📂$RepoDirName"
-	exit 0
+	exit 0 # success
 } catch {
 	"⚠️ Error: $($Error[0]) ($($MyInvocation.MyCommand.Name):$($_.InvocationInfo.ScriptLineNumber))"
 	exit 1

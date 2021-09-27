@@ -1,4 +1,4 @@
-﻿<#
+<#
 .SYNOPSIS
 	search-files.ps1 [<pattern>] [<files>]
 .DESCRIPTION
@@ -30,7 +30,7 @@ try {
 	if ($files -eq "" ) { $files = read-host "Enter path to files" }
 
 	ListLocations $pattern $files | format-table -property Path,Line,Text
-	exit 0
+	exit 0 # success
 } catch {
 	"⚠️ Error: $($Error[0]) ($($MyInvocation.MyCommand.Name):$($_.InvocationInfo.ScriptLineNumber))"
 	exit 1

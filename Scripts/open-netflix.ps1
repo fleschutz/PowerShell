@@ -1,4 +1,4 @@
-﻿<#
+<#
 .SYNOPSIS
 	open-netflix.ps1
 .DESCRIPTION
@@ -12,4 +12,4 @@
 #>
 
 Start-Process netflix:
-exit 0
+exit 0 # success

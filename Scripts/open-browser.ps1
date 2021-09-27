@@ -1,4 +1,4 @@
-﻿<#
+<#
 .SYNOPSIS
 	open-browser.ps1 [<URL>]
 .DESCRIPTION
@@ -15,7 +15,7 @@ param([string]$URL = "http://www.fleschutz.de")
 
 try {
 	Start-Process $URL
-	exit 0
+	exit 0 # success
 } catch {
 	"⚠️ Error: $($Error[0]) ($($MyInvocation.MyCommand.Name):$($_.InvocationInfo.ScriptLineNumber))"
 	exit 1

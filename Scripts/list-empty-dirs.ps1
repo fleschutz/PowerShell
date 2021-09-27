@@ -1,4 +1,4 @@
-﻿<#
+<#
 .SYNOPSIS
 	list-empty-dirs.ps1 [<dir-tree>]
 .DESCRIPTION
@@ -22,7 +22,7 @@ try {
 		$Count++
 	}
 	"✔️ directory tree $DirTree has $Count empty directories" 
-	exit 0
+	exit 0 # success
 } catch {
 	"⚠️ Error: $($Error[0]) ($($MyInvocation.MyCommand.Name):$($_.InvocationInfo.ScriptLineNumber))"
 	exit 1

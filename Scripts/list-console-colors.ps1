@@ -1,4 +1,4 @@
-﻿<#
+<#
 .SYNOPSIS
 	list-console-colors.ps1 
 .DESCRIPTION
@@ -22,7 +22,7 @@ try {
 		write-host -noNewline -backgroundcolor $Color "$Color"
 		write-host ""
 	}
-	exit 0
+	exit 0 # success
 } catch {
 	"⚠️ Error: $($Error[0]) ($($MyInvocation.MyCommand.Name):$($_.InvocationInfo.ScriptLineNumber))"
 	exit 1

@@ -1,4 +1,4 @@
-﻿<#
+<#
 .SYNOPSIS
 	list-files.ps1 [<dir-tree>]
 .DESCRIPTION
@@ -17,7 +17,7 @@ try {
 	if ($DirTree -eq "" ) { $DirTree = read-host "Enter path to directory tree" }
 
 	Get-ChildItem -path $DirTree -recurse | select FullName
-	exit 0
+	exit 0 # success
 } catch {
 	"⚠️ Error: $($Error[0]) ($($MyInvocation.MyCommand.Name):$($_.InvocationInfo.ScriptLineNumber))"
 	exit 1

@@ -1,4 +1,4 @@
-﻿<#
+<#
 .SYNOPSIS
 	list-dir-tree.ps1 [<dir-tree>]
 .DESCRIPTION
@@ -42,7 +42,7 @@ try {
 	[int]$global:Bytes = 0
 	ListDir $DirTree 0
 	write-host "($($global:Dirs) directories, $($global:Files) files, $($global:Bytes) bytes total)"
-	exit 0
+	exit 0 # success
 } catch {
 	"⚠️ Error: $($Error[0]) ($($MyInvocation.MyCommand.Name):$($_.InvocationInfo.ScriptLineNumber))"
 	exit 1

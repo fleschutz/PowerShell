@@ -1,4 +1,4 @@
-﻿<#
+<#
 .SYNOPSIS
 	copy-photos-sorted.ps1 [<SourceDir>] [<TargetDir>]
 .DESCRIPTION
@@ -71,7 +71,7 @@ try {
 
 	[int]$Elapsed = $StopWatch.Elapsed.TotalSeconds
 	"✔️ copied $Num photos to 📂$TargetDir sorted by year and month in $Elapsed sec"
-	exit 0
+	exit 0 # success
 } catch {
 	"⚠️ Error: $($Error[0]) ($($MyInvocation.MyCommand.Name):$($_.InvocationInfo.ScriptLineNumber))"
 	exit 1

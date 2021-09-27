@@ -1,4 +1,4 @@
-﻿<#
+<#
 .SYNOPSIS
 	check-drive-space.ps1 [<drive>] [<min-level>]
 .DESCRIPTION
@@ -26,7 +26,7 @@ try {
 		exit 1
 	}
 	"✔️ $Free GB left on drive $Drive ($Used of $Total GB used)"
-	exit 0
+	exit 0 # success
 } catch {
 	"⚠️ Error: $($Error[0]) ($($MyInvocation.MyCommand.Name):$($_.InvocationInfo.ScriptLineNumber))"
 	exit 1

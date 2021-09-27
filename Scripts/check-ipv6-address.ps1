@@ -1,4 +1,4 @@
-﻿<#
+<#
 .SYNOPSIS
 	check-ipv6-address.ps1 [<address>]
 .DESCRIPTION
@@ -41,7 +41,7 @@ try {
 	}
 	if (IsIPv6AddressValid $Address) {
 		"✔️  IPv6 address $Address is valid"
-		exit 0
+		exit 0 # success
 	} else {
 		write-warning "Invalid IPv6 address: $Address"
 		exit 1

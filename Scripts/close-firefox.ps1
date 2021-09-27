@@ -1,4 +1,4 @@
-﻿<#
+<#
 .SYNOPSIS
 	close-firefox.ps1 
 .DESCRIPTION
@@ -12,4 +12,4 @@
 #>
 
 & "$PSScriptRoot/close-program.ps1" "Mozilla Firefox" "firefox" "firefox"
-exit 0
+exit 0 # success

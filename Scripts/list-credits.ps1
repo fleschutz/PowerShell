@@ -1,4 +1,4 @@
-﻿<#
+<#
 .SYNOPSIS
 	list-credits.ps1
 .DESCRIPTION
@@ -40,7 +40,7 @@ try {
 	& "$PSScriptRoot/write-animated.ps1" "No Animals Were Harmed in the Making of This Film"
 
 	& "$PSScriptRoot/write-big.ps1" " Thanx 4 watching"
-	exit 0
+	exit 0 # success
 } catch {
 	"⚠️ Error: $($Error[0]) ($($MyInvocation.MyCommand.Name):$($_.InvocationInfo.ScriptLineNumber))"
 	exit 1

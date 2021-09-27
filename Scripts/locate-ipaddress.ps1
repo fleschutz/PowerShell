@@ -1,4 +1,4 @@
-﻿<#
+<#
 .SYNOPSIS
 	locate-ipaddress.ps1 [<IPaddress>]
 .DESCRIPTION
@@ -18,7 +18,7 @@ try {
 
 	$result = Invoke-RestMethod -Method Get -Uri "http://ip-api.com/json/$IPaddr"
 	write-output $result
-	exit 0
+	exit 0 # success
 } catch {
 	"⚠️ Error: $($Error[0]) ($($MyInvocation.MyCommand.Name):$($_.InvocationInfo.ScriptLineNumber))"
 	exit 1

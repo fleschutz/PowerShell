@@ -1,4 +1,4 @@
-﻿<#
+<#
 .SYNOPSIS
 	close-thunderbird.ps1 
 .DESCRIPTION
@@ -12,4 +12,4 @@
 #>
 
 & "$PSScriptRoot/close-program.ps1" "Mozilla Thunderbird" "thunderbird" "thunderbird"
-exit 0
+exit 0 # success

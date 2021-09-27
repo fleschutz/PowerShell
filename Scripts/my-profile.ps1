@@ -1,4 +1,4 @@
-﻿# My PowerShell Profile
+# My PowerShell Profile
 # =====================
 # Welcome to 'my-profile.ps1' - this file defines the look & feel of PowerShell.
 # Adapt the following lines to your needs, please.

@@ -1,4 +1,4 @@
-﻿<#
+<#
 .SYNOPSIS
 	wakeup.ps1 [<MAC-address>] [<IP-address>]
 .DESCRIPTION
@@ -34,7 +34,7 @@ try {
 	Send-WOL $MACaddress $IPaddress $Port
 
 	"✔️ sent magic packet $MACaddress to IP $IPaddress port $Port (twice)"
-	exit 0
+	exit 0 # success
 } catch {
 	"⚠️ Error: $($Error[0]) ($($MyInvocation.MyCommand.Name):$($_.InvocationInfo.ScriptLineNumber))"
 	exit 1

@@ -1,4 +1,4 @@
-﻿<#
+<#
 .SYNOPSIS
 	close-program.ps1 [<FullProgramName>] [<ProgramName>] [<ProgramAliasName>]
 .DESCRIPTION
@@ -42,7 +42,7 @@ try {
 		stop-process -name $ProgramName -force -errorAction 'silentlycontinue'
 	}
 	"✔️ closed $FullProgramName, stopped $($Processes.Count) process(es)"
-	exit 0
+	exit 0 # success
 } catch {
 	"⚠️ Error: $($Error[0]) ($($MyInvocation.MyCommand.Name):$($_.InvocationInfo.ScriptLineNumber))"
 	exit 1

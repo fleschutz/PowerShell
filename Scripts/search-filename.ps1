@@ -1,4 +1,4 @@
-﻿<#
+<#
 .SYNOPSIS
 	search-filename.ps1
 .DESCRIPTION
@@ -37,4 +37,4 @@ function Search-Folder($FilePath, $SearchTerm) {
 }
 # Call the search function
 Search-Folder -FilePath $path -SearchTerm $term
-exit 0
+exit 0 # success

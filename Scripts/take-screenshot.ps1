@@ -1,4 +1,4 @@
-﻿<#
+<#
 .SYNOPSIS
 	take-screenshot.ps1 [<directory>]
 .DESCRIPTION
@@ -31,7 +31,7 @@ try {
 
 	write-output "Saving screenshot to $FilePath..."
 	TakeScreenshot $FilePath
-	exit 0
+	exit 0 # success
 } catch {
 	"⚠️ Error: $($Error[0]) ($($MyInvocation.MyCommand.Name):$($_.InvocationInfo.ScriptLineNumber))"
 	exit 1

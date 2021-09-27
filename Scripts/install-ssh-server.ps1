@@ -1,4 +1,4 @@
-﻿<#
+<#
 .SYNOPSIS
 	install-ssh-server.ps1
 .DESCRIPTION
@@ -38,7 +38,7 @@ try {
 
 	[int]$Elapsed = $StopWatch.Elapsed.TotalSeconds
 	"✔️ installed and started SSH server in $Elapsed sec"
-	exit 0
+	exit 0 # success
 } catch {
 	"⚠️ Error: $($Error[0]) ($($MyInvocation.MyCommand.Name):$($_.InvocationInfo.ScriptLineNumber))"
 	exit 1

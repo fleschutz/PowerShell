@@ -1,4 +1,4 @@
-﻿<#
+<#
 .SYNOPSIS
 	check-swap-space.ps1 [<min-level>]
 .DESCRIPTION
@@ -37,7 +37,7 @@ try {
 		exit 1
 	}
 	"✔️ $Free GB left on swap space ($Used of $Total GB used)"
-	exit 0
+	exit 0 # success
 } catch {
 	"⚠️ Error: $($Error[0]) ($($MyInvocation.MyCommand.Name):$($_.InvocationInfo.ScriptLineNumber))"
 	exit 1

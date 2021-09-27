@@ -1,4 +1,4 @@
-﻿<#
+<#
 .SYNOPSIS
 	list-sql-tables.ps1
 .DESCRIPTION

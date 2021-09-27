@@ -1,4 +1,4 @@
-﻿<#
+<#
 .SYNOPSIS
 	restart-network-adapters.ps1
 .DESCRIPTION
@@ -20,7 +20,7 @@ try {
 
 	[int]$Elapsed = $StopWatch.Elapsed.TotalSeconds
 	"✔️ restarted all local network adapters in $Elapsed sec"
-	exit 0
+	exit 0 # success
 } catch {
 	"⚠️ Error: $($Error[0]) ($($MyInvocation.MyCommand.Name):$($_.InvocationInfo.ScriptLineNumber))"
 	exit 1

@@ -1,4 +1,4 @@
-﻿<#
+<#
 .SYNOPSIS
 	list-countries.ps1 
 .DESCRIPTION
@@ -26,7 +26,7 @@ function ListCountries {
 
 try {
 	ListCountries | format-table -property Country,Capital,Population,TLD,Phone
-	exit 0
+	exit 0 # success
 } catch {
 	"⚠️ Error: $($Error[0]) ($($MyInvocation.MyCommand.Name):$($_.InvocationInfo.ScriptLineNumber))"
 	exit 1

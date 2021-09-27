@@ -1,4 +1,4 @@
-﻿<#
+<#
 .SYNOPSIS
 	convert-mysql2csv.ps1 [<server>] [<database>] [<username>] [<password>] [<query>]
 .DESCRIPTION
@@ -24,7 +24,7 @@ try {
 	$csvfilepath = "$PSScriptRoot\mysql_table.csv"
 	$result = Invoke-MySqlQuery  -ConnectionString "server=$server; database=$database; user=$username; password=$password; pooling = false; convert zero datetime=True" -Sql $query -CommandTimeout 10000
 	$result | Export-Csv $csvfilepath -NoTypeInformation
-	exit 0
+	exit 0 # success
 } catch {
 	"⚠️ Error: $($Error[0]) ($($MyInvocation.MyCommand.Name):$($_.InvocationInfo.ScriptLineNumber))"
 	exit 1
