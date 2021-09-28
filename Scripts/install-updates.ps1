@@ -2,7 +2,7 @@
 .SYNOPSIS
 	install-updates.ps1
 .DESCRIPTION
-	Installs updates (needs admin rights)
+	Installs updates for the local machhine (needs admin rights)
 .EXAMPLE
 	PS> ./install-updates
 .NOTES
@@ -17,16 +17,16 @@ try {
 	$StopWatch = [system.diagnostics.stopwatch]::startNew()
 
 	if ($IsLinux) {
-		"👉 Step 1/4: Loading update infos..."
+		"👉 Step 1/4: Downloading updates for installed Debian packages..."
 		sudo apt update
 
-		"👉 Step 2/4: Installing updates for 'deb' packages..."
+		"👉 Step 2/4: Upgrading installed Debian packages..."
 		sudo apt upgrade -y
 
-		"👉 Step 3/4: Removing obsolete 'deb' packages..."
+		"👉 Step 3/4: Removing obsolete Debian packages..."
 		sudo apt autoremove
 
-		"👉 Step 4/4: Installing updates for snap packages..."
+		"👉 Step 4/4: Upgrading installed Snap packages..."
 		sudo snap refresh
 	} else {
 		"Sorry, not supported yet"
