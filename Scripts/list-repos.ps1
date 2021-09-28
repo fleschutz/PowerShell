@@ -6,10 +6,10 @@
 .EXAMPLE
 	PS> ./list-repos C:\MyRepos
 	
-	Folder   Branch Status
-	------   ------ ------
-	cmake    main   clean
-	opencv   master clean
+	Repository  Branch Status
+	------      ------ ------
+	cmake       main   clean
+	opencv      master clean
 	...
 .NOTES
 	Author: Markus Fleschutz · License: CC0
@@ -22,12 +22,12 @@ param([string]$ParentDir = "$PWD")
 function ListRepos { param([string]$ParentDir)
 	$Folders = (get-childItem "$ParentDir" -attributes Directory)
 	foreach ($Folder in $Folders) {
-		$FolderName = (get-item "$Folder").Name
+		$Repository = (get-item "$Folder").Name
 		$Branch = (git -C "$Folder" branch --show-current)
 		$Status = (git -C "$Folder" status --short)
 		if ("$Status" -eq "") { $Status = "clean" }
 
-		New-Object PSObject -property @{ 'Folder'="$FolderName"; 'Branch'="$Branch"; 'Status'="$Status"; }
+		New-Object PSObject -property @{ 'Repository'="$Repository"; 'Branch'="$Branch"; 'Status'="$Status"; }
 	}
 }
 
@@ -37,7 +37,7 @@ try {
 	$Null = (git --version)
 	if ($lastExitCode -ne "0") { throw "Can't execute 'git' - make sure Git is installed and available" }
 
-	ListRepos | format-table -property Folder,Branch,Status
+	ListRepos | format-table -property Repository,Branch,Status
 	exit 0 # success
 } catch {
 	"⚠️ Error: $($Error[0]) ($($MyInvocation.MyCommand.Name):$($_.InvocationInfo.ScriptLineNumber))"
