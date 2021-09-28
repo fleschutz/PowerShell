@@ -5,6 +5,12 @@
 	Lists the details of all Git repositories under a directory
 .EXAMPLE
 	PS> ./list-repos C:\MyRepos
+	
+	Folder   Branch Status
+	------   ------ ------
+	cmake    main   clean
+	opencv   master clean
+	...
 .NOTES
 	Author: Markus Fleschutz · License: CC0
 .LINK
