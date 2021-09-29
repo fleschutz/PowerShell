@@ -1,4 +1,5 @@
-﻿
+﻿<#
+.SYNOPSIS
 	pull-repos.ps1 [<parent-dir>]
 .DESCRIPTION
 	Pulls updates for all Git repositories under the current/given directory (including submodules)
