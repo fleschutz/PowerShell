@@ -5,6 +5,12 @@
 	Lists all PowerShell aliases
 .EXAMPLE
 	PS> ./list-aliases
+
+	CommandType     Name                                               Version    Source
+	-----------     ----                                               -------    ------
+	Alias           CFS -> ConvertFrom-String                          3.1.0.0    Microsoft.PowerShell.Utility
+	Alias           fhx -> Format-Hex                                  3.1.0.0    Microsoft.PowerShell.Utility
+	...
 .NOTES
 	Author: Markus Fleschutz · License: CC0
 .LINK

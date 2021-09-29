@@ -5,6 +5,12 @@
 	Lists all environment variables
 .EXAMPLE
 	PS> ./list-environment-variables
+
+	Name                           Value
+	----                           -----
+	ALLUSERSPROFILE                C:\ProgramData
+	APPDATA                        C:\Users\Joe\AppData\Roaming
+	...
 .NOTES
 	Author: Markus Fleschutz · License: CC0
 .LINK

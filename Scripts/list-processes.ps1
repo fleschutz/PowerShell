@@ -5,6 +5,12 @@
 	Lists all local computer processes
 .EXAMPLE
 	PS> ./list-processes
+
+	   Id  CPU(s) ProcessName
+	   --  ------ -----------
+	 9712   0,39% 64DriverLoad
+	 2484         AppleMobileDeviceService
+	 ...
 .NOTES
 	Author: Markus Fleschutz · License: CC0
 .LINK
