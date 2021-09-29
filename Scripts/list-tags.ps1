@@ -5,6 +5,11 @@
 	Lists all tags in the current/given Git repository
 .EXAMPLE
 	PS> ./list-tags C:\MyRepo
+
+	Tag             Description
+	---             -----------
+	v0.1            Update README.md
+	v0.2            Fix typo
 .NOTES
 	Author: Markus Fleschutz · License: CC0
 .LINK

@@ -5,6 +5,12 @@
 	Lists available command-line interface (CLI) tools
 .EXAMPLE
 	PS> ./list-cli-tools
+
+	Name         Version         Location                                        FileSize
+	----         -------         --------                                        --------
+	at           10.0.19041.1    C:\WINDOWS\system32\at.exe                         31232
+	attrib       10.0.19041.1    C:\WINDOWS\system32\attrib.exe                     23040
+	...
 .NOTES
 	Author: Markus Fleschutz · License: CC0
 .LINK

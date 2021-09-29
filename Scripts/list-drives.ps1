@@ -5,6 +5,11 @@
 	Lists all drives connected to the computer
 .EXAMPLE
 	PS> ./list-drives
+
+	Name Root Used (GB) Free (GB)
+	---- ---- --------- ---------
+	C    C:\      76,14     35,05
+	D    D:\    6648,12    744,16
 .NOTES
 	Author: Markus Fleschutz · License: CC0
 .LINK
