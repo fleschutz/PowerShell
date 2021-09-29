@@ -5,6 +5,12 @@
 	Lists all automatic variables of PowerShell
 .EXAMPLE
 	PS> ./list-automatic-variables
+
+	Variable                        Content
+	--------                        -------
+	$false                          False
+	$HOME                           C:\Users\Markus
+	...
 .NOTES
 	Author: Markus Fleschutz · License: CC0
 .LINK

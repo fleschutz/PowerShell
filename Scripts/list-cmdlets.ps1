@@ -5,6 +5,12 @@
 	Lists all PowerShell cmdlets
 .EXAMPLE
 	PS> ./list-cmdlets
+
+	CommandType     Name                                  Version    Source
+	-----------     ----                                  -------    ------
+	Function        Add-BCDataCacheExtension              1.0.0.0    BranchCache
+	Function        Add-BitLockerKeyProtector             1.0.0.0    BitLocker
+	...
 .NOTES
 	Author: Markus Fleschutz · License: CC0
 .LINK

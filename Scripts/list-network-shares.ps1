@@ -5,6 +5,10 @@
 	Lists the network shares of the local computer
 .EXAMPLE
 	PS> ./list-network-shares
+
+	Name  Path     Description
+	----  ----     -----------
+	Users C:\Users
 .NOTES
 	Author: Markus Fleschutz · License: CC0
 .LINK

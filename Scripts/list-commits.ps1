@@ -5,6 +5,12 @@
 	Lists all commits in a Git repository (format is: list|compact|normal|JSON)
 .EXAMPLE
 	PS> ./list-commits
+
+	ID      Date                            Committer               Description
+	--      ----                            ---------               -----------
+	ccd0d3e Wed Sep 29 08:28:20 2021 +0200  Markus Fleschutz        Fix typo
+	291d785 Wed Sep 29 08:18:28 2021 +0200  Markus Fleschutz        Update README.md
+	...
 .NOTES
 	Author: Markus Fleschutz · License: CC0
 .LINK
@@ -19,7 +25,7 @@ try {
 	$Null = (git --version)
 	if ($lastExitCode -ne "0") { throw "Can't execute 'git' - make sure Git is installed and available" }
 
-	"🢃 Fetching latest tags..."
+	write-progress "🢃 Fetching latest tags..."
 	& git -C "$RepoDir" fetch --all --quiet
 	if ($lastExitCode -ne "0") { throw "'git fetch' failed" }
 
