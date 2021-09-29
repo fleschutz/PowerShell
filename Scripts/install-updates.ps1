@@ -21,10 +21,10 @@ try {
 		& sudo apt update
 
 		"⏳ Step 2/4: Upgrading installed Debian packages..."
-		& sudo apt upgrade -y
+		& sudo apt upgrade --yes
 
 		"⏳ Step 3/4: Removing obsolete Debian packages..."
-		& sudo apt autoremove
+		& sudo apt autoremove --yes
 
 		"⏳ Step 4/4: Upgrading installed Snap packages..."
 		& sudo snap refresh
