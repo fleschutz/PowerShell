@@ -17,6 +17,8 @@ try {
 	if ($BranchName -eq "") { $BranchName = read-host "Enter name of branch to switch to" }
 
 	$StopWatch = [system.diagnostics.stopwatch]::startNew()
+
+	"⏳ Step 1/3: Checking requirements..."
 	$RepoDir = resolve-path "$RepoDir"
 	if (-not(test-path "$RepoDir" -pathType container)) { throw "Can't access directory: $RepoDir" }
 	set-location "$RepoDir"
@@ -28,13 +30,14 @@ try {
 	if ($lastExitCode -ne "0") { throw "'git status' failed in $RepoDir" }
 	if ("$Result" -notmatch "nothing to commit, working tree clean") { throw "Git repository is NOT clean: $Result" }
 
-	"🢃 Fetching updates..."
+	"⏳ Step 2/3: Fetching latest updates and switching branch..."
 	& git fetch --all --recurse-submodules --prune --prune-tags
 	if ($lastExitCode -ne "0") { throw "'git fetch' failed" }
 
 	& git checkout --recurse-submodules "$BranchName"
-	if ($lastExitCode -ne "0") { throw "'git switch $BranchName' failed" }
+	if ($lastExitCode -ne "0") { throw "'git checkout $BranchName' failed" }
 
+	"⏳ Step 3/3: Pulling updates and updating submodules..."
 	& git pull --recurse-submodules
 	if ($lastExitCode -ne "0") { throw "'git pull' failed" }
 
