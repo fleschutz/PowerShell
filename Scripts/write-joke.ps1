@@ -2,9 +2,10 @@
 .SYNOPSIS
 	write-joke.ps1 
 .DESCRIPTION
-	Writes a random Juck Norris joke to the console
+	Writes a random Juck Norris joke to the console.
 .EXAMPLE
 	PS> ./write-joke
+	When Chuck Norris does division, there are no remainders. 😂
 .NOTES
 	Author: Markus Fleschutz · License: CC0
 .LINK
@@ -19,7 +20,7 @@ try {
 	$Index = [int]$Generator.next(0,$NumRows - 1)
 	$Joke = $Table[$Index].Joke
 
-	"📣 $Joke"
+	"$Joke 😂"
 	exit 0 # success
 } catch {
 	"⚠️ Error: $($Error[0]) ($($MyInvocation.MyCommand.Name):$($_.InvocationInfo.ScriptLineNumber))"
