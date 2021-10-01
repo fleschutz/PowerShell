@@ -76,9 +76,9 @@ How to write good PowerShell scripts?
 Good PowerShell scripts are user-friendly and platform-independant. As a guideline follow these rules, please:
 
 1. the filename is named using the `<verb>-<object>.ps1` scheme
-2. the encoding is UTF-8-BOM to support and use Unicode characters
+2. the encoding is UTF-8-BOM to provide Unicode character support
 3. the script has execute file permissions: chmod a+rx <file> (for Linux support)
-4. provide a comment-based help with syntax, description, link, author, and license
+4. the script provides a comment-based help with synopsis, description, parameters, link, author, and license
 5. check the requirements (e.g. #Requires -RunAsAdministrator, or #Requires -Version 3)
 6. prefer command-line options, else ask the user for help
 7. recommended is `Set-StrictMode -Version Latest` to enable additional error checking
@@ -87,11 +87,11 @@ Good PowerShell scripts are user-friendly and platform-independant. As a guideli
 10. on success exit with error code 0 (exit 0)
 
 
-Found a bug or issue?
----------------------
+Want to contribute or found a bug or issue?
+-------------------------------------------
 If you find something bad (like a bug, error, or any issue), please report it here by open an Issue.
 
-Or even better: Fork the Repository, fix it and submit a pull request, so others can participate too.  
+Or even better: Fork the repository, add or fix the script and submit a pull request, so others can participate too.  
 
 
 Your question is not answered here?
