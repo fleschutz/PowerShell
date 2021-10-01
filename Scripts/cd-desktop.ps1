@@ -5,6 +5,7 @@
 	Change the working directory to the user's desktop folder
 .EXAMPLE
 	PS> ./cd-desktop
+	📂/home/markus/Desktop
 .LINK
 	https://github.com/fleschutz/PowerShell
 .NOTES
