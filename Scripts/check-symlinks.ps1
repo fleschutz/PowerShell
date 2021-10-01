@@ -4,7 +4,8 @@
 .DESCRIPTION
 	Checks every symlink in a directory tree.
 .EXAMPLE
-	PS> ./check-symlinks C:\MyApp
+	PS> ./check-symlinks .
+	✔️ 0 out of 10 symlinks are broken in 📂/home/markus
 .LINK
 	https://github.com/fleschutz/PowerShell
 .NOTES
@@ -26,7 +27,7 @@ try {
 			$path = $_.FullName + "\..\" + ($_ | Select-Object -ExpandProperty Target)
 			$item = Get-Item $path -ErrorAction Ignore
 			if (!$item) {
-				write-warning "Broken symlink: $Symlink -> $Target"
+				write-warning "Broken symlink $Symlink -> $Target"
 				$NumBroken++
 			}
 		}
