@@ -36,6 +36,11 @@ if ($lastExitCode -ne "0") { $Healthy = 0 }
 & "$PSScriptRoot/check-ping.ps1"
 if ($lastExitCode -ne "0") { $Healthy = 0 }
 
+if ($IsLinux) {
+	& "$PSScriptRoot/check-smart-devices.ps1" 
+	if ($lastExitCode -ne "0") { $Healthy = 0 }
+}
+
 if ($Healthy) {
 	"✔️ $Hostname is healthy"
 	exit 0 # success

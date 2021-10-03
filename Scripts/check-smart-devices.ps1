@@ -1,11 +1,12 @@
 ﻿<#
 .SYNOPSIS
-	check-smart-devices.ps1 
+	check-smart-devices.ps1 [<type>]
 .DESCRIPTION
-	Performs a short selftest on your S.M.A.R.T. HDD/SSD devices.
+	Performs a selftest on your S.M.A.R.T. HDD/SSD devices. Type is either short(default) or long.
         Requires smartctl (smartmontools) and admin rights.
 .EXAMPLE
 	PS> ./check-smart-devices
+	✔️ short selftest started on S.M.A.R.T. device /dev/sda
 .NOTES
 	Author: Markus Fleschutz · License: CC0
 .LINK
@@ -14,22 +15,19 @@
 
 #Requires -RunAsAdministrator
 
+param([string]$type = "short")
+
 try {
-	"Step 1/4: Checking for 'smartctl'..."
 	$Result=(smartctl --version)
 	if ($lastExitCode -ne "0") { throw "Can't execute 'smartctl' - make sure smartmontools are installed" }
 
-	"Step 2/4: Scanning for S.M.A.R.T. devices..."
 	$Devices = $(sudo smartctl --scan-open)
-
 	foreach($Device in $Devices) {
 		$Array = $Device.split(" ")
 		$Device = $Array[0]
-		"Step 3/4: Starting short selftest on device $Device..."
-		& sudo smartctl --test=short $Device 
+		$Result = (sudo smartctl --test=$type $Device)
+		"✔️ $type selftest started on S.M.A.R.T. device $Device"
 	}
-
-	"✔️ Done."
 	exit 0 # success
 } catch {
 	"⚠️ Error: $($Error[0]) ($($MyInvocation.MyCommand.Name):$($_.InvocationInfo.ScriptLineNumber))"
