@@ -51,7 +51,7 @@ close-onedrive.ps1, Closes Microsoft OneDrive gracefully
 close-system-settings.ps1, Closes the System Settings gracefully
 close-thunderbird.ps1, Closes Mozilla Thunderbird gracefully
 close-vlc.ps1, Closes the VLC media player gracefully
-close-windows-terminal.ps1, Closes Windows Terminal gracefully
+close-windows-terminal.ps1, Closes the Windows Terminal application
 copy-photos-sorted.ps1, Copy image files sorted by year and month 
 configure-git.ps1, Sets up the Git user configuration
 convert-csv2txt.ps1, Converts the given CSV file into a text list
