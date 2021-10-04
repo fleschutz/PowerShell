@@ -2,7 +2,7 @@
 .SYNOPSIS
 	list-tags.ps1 [<repo-dir>] [<pattern>]
 .DESCRIPTION
-	Lists all tags in the current/given Git repository
+	Lists all tags in a Git repository.
 .EXAMPLE
 	PS> ./list-tags C:\MyRepo
 
@@ -24,10 +24,11 @@ try {
 	$Null = (git --version)
 	if ($lastExitCode -ne "0") { throw "Can't execute 'git' - make sure Git is installed and available" }
 
-	"🢃 Fetching latest tags..."
+	write-progress "🢃 Fetching latest tags..."
 	& git -C "$RepoDir" fetch --all --tags --quiet
 	if ($lastExitCode -ne "0") { throw "'git fetch --all --tags' failed" }
 
+	write-progress -completed "Fetched" 
 	""
 	"Tag             Description"
 	"---             -----------"
