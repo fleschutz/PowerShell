@@ -97,7 +97,7 @@ Mega Collection of PowerShell Scripts
 | [close-calculator.ps1](Scripts/close-calculator.ps1) | Closes the calculator program gracefully                           | [Help](Docs/close-calculator.md)    |
 | [close-chrome.ps1](Scripts/close-chrome.ps1)         | Closes the Google Chrome Web browser                               | [Help](Docs/close-chrome.md)        |
 | [close-cortana.ps1](Scripts/close-cortana.ps1)       | Closes Cortana gracefully                                          | [Help](Docs/close-cortana.md)       |
-| [close-edge.ps1](Scripts/close-edge.ps1)             | Closes Microsoft Edge gracefully                                   | [Help](Docs/close-edge.md)          |
+| [close-edge.ps1](Scripts/close-edge.ps1)             | Closes the Microsoft Edge Web browser                               | [Help](Docs/close-edge.md)          |
 | [close-file-explorer.ps1](Scripts/close-file-explorer.ps1) | Closes Microsoft File Explorer gracefully                    | [Help](Docs/close-file-explorer.md) |
 | [close-firefox.ps1](Scripts/close-firefox.ps1)       | Closes the Firefox Web browser gracefully                          | [Help](Docs/close-firefox.md)       |
 | [close-program.ps1](Scripts/close-program.ps1)       | Closes the given program gracefully                                | [Help](Docs/close-program.md)       |

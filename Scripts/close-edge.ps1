@@ -2,7 +2,7 @@
 .SYNOPSIS
 	close-edge.ps1 
 .DESCRIPTION
-	Closes the Web browser Microsoft Edge gracefully
+	Closes the Microsoft Edge Web browser
 .EXAMPLE
 	PS> ./close-edge
 .NOTES
