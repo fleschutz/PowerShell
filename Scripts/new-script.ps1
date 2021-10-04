@@ -2,9 +2,10 @@
 .SYNOPSIS
 	new-script.ps1 [<filename>] 
 .DESCRIPTION
-	Creates a new PowerShell script
+	Creates a new PowerShell script file (by using template file ../Data/template.ps1).
 .EXAMPLE
 	PS> ./new-script myscript.ps1
+	✔️ created new PowerShell script: myscript.ps1
 .NOTES
 	Author: Markus Fleschutz · License: CC0
 .LINK
@@ -16,9 +17,9 @@ param([string]$filename = "")
 try {
 	if ($filename -eq "" ) { $shortcut = read-host "Enter the new filename" }
 
-	copy-item "$PSScriptRoot/../data/template.ps1" "$filename"
+	copy-item "$PSScriptRoot/../Data/template.ps1" "$filename"
 
-	"✔️ created new PowerShell script $filename"
+	"✔️ created new PowerShell script: $filename"
 	exit 0 # success
 } catch {
 	"⚠️ Error: $($Error[0]) ($($MyInvocation.MyCommand.Name):$($_.InvocationInfo.ScriptLineNumber))"

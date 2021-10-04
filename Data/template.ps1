@@ -1,5 +1,4 @@
-﻿#requires -version 4
-<#
+﻿<#
 .SYNOPSIS
 	← enter overview of script here
 .DESCRIPTION
@@ -16,6 +15,8 @@
 .LINK
 	← enter URL here
 #>
+
+#requires -version 4
 
 param() # ← enter script parameters here
 
