@@ -5,6 +5,7 @@
 	Checks the validity of the Windows system files (requires admin rights)
 .EXAMPLE
 	PS> ./check-windows-system-files
+	✔️ checked Windows system files
 .LINK
 	https://github.com/fleschutz/PowerShell
 .NOTES

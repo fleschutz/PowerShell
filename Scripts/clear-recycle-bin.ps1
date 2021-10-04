@@ -6,6 +6,7 @@
 	NOTE: can not be undo!
 .EXAMPLE
 	PS> ./clear-recycle-bin
+	✔️ cleared recycle bin
 .NOTES
 	Author: Markus Fleschutz · License: CC0
 .LINK

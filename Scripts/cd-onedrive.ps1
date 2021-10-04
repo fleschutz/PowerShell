@@ -5,6 +5,7 @@
 	Change the working directory to the user's OneDrive folder
 .EXAMPLE
 	PS> ./cd-onedrive
+	📂/home/markus/OneDrive
 .LINK
 	https://github.com/fleschutz/PowerShell
 .NOTES

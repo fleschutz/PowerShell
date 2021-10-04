@@ -18,27 +18,26 @@ try {
 
 	$StopWatch = [system.diagnostics.stopwatch]::startNew()
 
-	""
-	"👉 Step 1/3: Searching IPFS executable..."
+	"⏳ Step 1/3: Searching for IPFS executable..."
 	& ipfs --version
 	if ($lastExitCode -ne "0") { throw "Can't execute 'ipfs' - make sure IPFS is installed and available" }
 
 	if (test-path "$FilePattern" -pathType container) {
 		""
-		"👉 Step 2/3: Publishing folder $FilePattern/..."
+		"⏳ Step 2/3: Publishing folder $FilePattern/..."
 		& ipfs add -r "$FilePattern" > $HashList
 		[int]$Count = 1
 		""
-		"👉 Step 3/3: Calculating digital forensics hashes to $DF_HASHES ..."
+		"⏳ Step 3/3: Calculating digital forensics hashes to $DF_HASHES ..."
 		& nice hashdeep -c md5,sha1,sha256 -r -d -l -j 1 "$FilePattern" > $DF_Hashes
 	} else {
 		$FileList = (get-childItem "$FilePattern")
 		foreach ($File in $FileList) {
 			if (test-path "$FilePattern" -pathType container) {
-				"👉 Step 2/3: Publishing folder $File/..."
+				"⏳ Step 2/3: Publishing folder $File/..."
 				& ipfs add -r "$File" >> $HashList
 			} else {
-				"👉 Step 2/3: Publishing file $File..."
+				"⏳ Step 3/3: Publishing file $File..."
 				& ipfs add "$File" >> $HashList
 			}
 		}

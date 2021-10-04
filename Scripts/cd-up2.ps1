@@ -5,6 +5,7 @@
 	Change the working directory to two directory levels up
 .EXAMPLE
 	PS> ./cd-up2
+	(two levels up)
 .LINK
 	https://github.com/fleschutz/PowerShell
 .NOTES

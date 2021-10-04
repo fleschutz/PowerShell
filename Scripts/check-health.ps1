@@ -5,6 +5,12 @@
 	Checks the health of the local computer
 .EXAMPLE
 	PS> ./check-health
+	✔️ 1213 GB left for swap space (67 of 1280 GB used)
+	✔️ 172 GB left on drive C (61 of 233 GB used)
+	✔️ 30.3 °C CPU temperature - good
+	✔️ 19.7 domains/s (177 domains resolved in 9 sec)
+	✔️ 29 ms ping average (13 ms min, 110 ms max, 10 hosts)
+	✔️ Windmill is healthy
 .LINK
 	https://github.com/fleschutz/PowerShell
 .NOTES
@@ -12,9 +18,7 @@
 	License: CC0
 #>
 
-$Hostname = $(hostname)
 $Healthy = 1
-"Checking $Hostname's health..."
 
 & "$PSScriptRoot/check-swap-space.ps1"
 if ($lastExitCode -ne "0") { $Healthy = 0 }
@@ -41,6 +45,7 @@ if ($IsLinux) {
 	if ($lastExitCode -ne "0") { $Healthy = 0 }
 }
 
+$Hostname = $(hostname)
 if ($Healthy) {
 	"✔️ $Hostname is healthy"
 	exit 0 # success

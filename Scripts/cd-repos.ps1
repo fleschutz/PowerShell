@@ -5,6 +5,7 @@
 	Change the working directory to the user's Git repositories folder
 .EXAMPLE
 	PS> ./cd-repos
+	📂/home/markus/Repos
 .LINK
 	https://github.com/fleschutz/PowerShell
 .NOTES

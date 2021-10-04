@@ -5,6 +5,7 @@
 	Checks the given XML file for validity
 .EXAMPLE
 	PS> ./check-xml-file myfile.xml
+	✔️ XML file is valid
 .NOTES
 	Author: Markus Fleschutz · License: CC0
 .LINK

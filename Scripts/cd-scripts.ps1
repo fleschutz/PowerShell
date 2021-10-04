@@ -5,6 +5,7 @@
 	Change the working directory to the PowerShell scripts folder
 .EXAMPLE
 	PS> ./cd-scripts
+	📂/home/markus/PowerShell/Scripts
 .LINK
 	https://github.com/fleschutz/PowerShell
 .NOTES

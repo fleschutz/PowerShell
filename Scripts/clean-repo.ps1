@@ -5,6 +5,8 @@
 	Cleans a Git repository from untracked files (including submodules, e.g. for a fresh build)
 .EXAMPLE
 	PS> ./clean-repo C:\MyRepo
+	🧹 Cleaning Git repository 📂C:\MyRepo from untracked files...
+	✔️ cleaned Git repository 📂C:\MyRepo in 0 sec
 .NOTES
 	Author: Markus Fleschutz · License: CC0
 .LINK

@@ -5,6 +5,7 @@
 	Change the working directory to the user's Dropbox folder
 .EXAMPLE
 	PS> ./cd-dropbox
+	📂/home/markus/Dropbox
 .LINK
 	https://github.com/fleschutz/PowerShell
 .NOTES

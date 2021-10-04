@@ -5,6 +5,7 @@
 	Change the working directory to four directory levels up
 .EXAMPLE
 	PS> ./cd-up4
+	(four levels up)
 .LINK
 	https://github.com/fleschutz/PowerShell
 .NOTES

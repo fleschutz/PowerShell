@@ -5,6 +5,7 @@
 	Change the working directory to the user's music folder
 .EXAMPLE
 	PS> ./cd-music
+	📂/home/markus/Music
 .LINK
 	https://github.com/fleschutz/PowerShell
 .NOTES

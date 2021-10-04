@@ -5,6 +5,7 @@
 	Change the working directory to one level up
 .EXAMPLE
 	PS> .\cd-up
+	(one level up)
 .LINK
 	https://github.com/fleschutz/PowerShell
 .NOTES

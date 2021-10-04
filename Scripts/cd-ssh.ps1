@@ -5,6 +5,7 @@
 	Change the working directory to the user's SSH folder
 .EXAMPLE
 	PS> ./cd-ssh
+	📂/home/markus/.ssh
 .LINK
 	https://github.com/fleschutz/PowerShell
 .NOTES

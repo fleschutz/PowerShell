@@ -5,6 +5,7 @@
 	Change the working directory to the user's documents folder
 .EXAMPLE
 	PS> ./cd-docs
+	📂/home/markus/Documents
 .LINK
 	https://github.com/fleschutz/PowerShell
 .NOTES

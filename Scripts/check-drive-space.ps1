@@ -5,6 +5,7 @@
 	Checks a drive for free space left (20 GB by default)
 .EXAMPLE
 	PS> ./check-drive-space C
+	✔️ 172 GB left on drive C (61 of 233 GB used)
 .LINK
 	https://github.com/fleschutz/PowerShell
 .NOTES

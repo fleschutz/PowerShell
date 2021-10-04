@@ -5,6 +5,7 @@
 	Checks the free swap space
 .EXAMPLE
 	PS> ./check-swap-space
+	✔️ 1213 GB left for swap space (67 of 1280 GB used)
 .LINK
 	https://github.com/fleschutz/PowerShell
 .NOTES
@@ -36,7 +37,7 @@ try {
         	write-warning "Swap space has only $Free GB left to use! ($Used of $Total GB used, minimum is $MinLevel GB)"
 		exit 1
 	}
-	"✔️ $Free GB left on swap space ($Used of $Total GB used)"
+	"✔️ $Free GB left for swap space ($Used of $Total GB used)"
 	exit 0 # success
 } catch {
 	"⚠️ Error: $($Error[0]) ($($MyInvocation.MyCommand.Name):$($_.InvocationInfo.ScriptLineNumber))"

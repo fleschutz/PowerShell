@@ -5,6 +5,7 @@
 	Change the working directory to the user's pictures folder
 .EXAMPLE
 	PS> ./cd-pics
+	📂/home/markus/Pictures
 .LINK
 	https://github.com/fleschutz/PowerShell
 .NOTES

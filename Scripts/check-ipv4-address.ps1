@@ -1,10 +1,11 @@
 ﻿<#
 .SYNOPSIS
-	check-ipv4-address.ps1 [<address>]
+	check-ipv4-address.ps1 [<Address>]
 .DESCRIPTION
 	Checks the given IPv4 address for validity
 .EXAMPLE
 	PS> ./check-ipv4-address 192.168.11.22
+	✔️ IPv4 192.168.11.22 is valid
 .LINK
 	https://github.com/fleschutz/PowerShell
 .NOTES
@@ -26,7 +27,7 @@ try {
 	if ($Address -eq "" ) { $Address = read-host "Enter IPv4 address to validate" }
 
 	if (IsIPv4AddressValid $Address) {
-		"✔️ IPv4 address $Address is valid"
+		"✔️ IPv4 $Address is valid"
 		exit 0 # success
 	} else {
 		write-warning "Invalid IPv4 address: $Address"

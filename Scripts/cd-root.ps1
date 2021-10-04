@@ -5,6 +5,7 @@
 	Change the working directory to the root directory (C:\ on Windows)
 .EXAMPLE
 	PS> ./cd-root
+	📂C:\
 .LINK
 	https://github.com/fleschutz/PowerShell
 .NOTES
@@ -14,7 +15,7 @@
 if ($IsLinux) {
 	$TargetDir = resolve-path "/"
 } else {
-	$TargetDir = resolve-path "C:/"
+	$TargetDir = resolve-path "C:\"
 }
 if (-not(test-path "$TargetDir" -pathType container)) {
 	write-warning "Sorry, the root directory at 📂$TargetDir does not exist (yet)"

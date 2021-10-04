@@ -1,10 +1,13 @@
 ﻿<#
 .SYNOPSIS
-	add-firewall-rules.ps1 [<path-to-executables>]
+	add-firewall-rules.ps1 [<PathToExecutables>]
 .DESCRIPTION
-	Adds firewall rules for the given executables (needs administrator rights)
+	Adds firewall rules for the given executables (needs admin rights)
 .EXAMPLE
 	PS> ./add-firewall-rules C:\MyApp\bin
+	Adding firewall rule for C:\MyApp\bin\app1.exe
+	Adding firewall rule for C:\MyApp\bin\app2.exe
+	...
 .LINK
 	https://github.com/fleschutz/PowerShell
 .NOTES

@@ -5,6 +5,7 @@
 	Checks the given subnet mask for validity
 .EXAMPLE
 	PS> ./check-subnet-mask 255.255.255.0
+	✔️ subnet mask 255.255.255.0 is valid
 .LINK
 	https://github.com/fleschutz/PowerShell
 .NOTES

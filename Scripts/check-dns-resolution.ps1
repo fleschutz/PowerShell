@@ -5,6 +5,7 @@
 	Checks the DNS resolution with frequently used domain names
 .EXAMPLE
 	PS> ./check-dns-resolution
+	✔️ 11.8 domains/sec (177 domains resolved in 15 sec)
 .LINK
 	https://github.com/fleschutz/PowerShell
 .NOTES
@@ -30,7 +31,7 @@ try {
 
 	[int]$Elapsed = $StopWatch.Elapsed.TotalSeconds
 	$Average = [math]::round($Count / $Elapsed, 1)
-	"✔️ $Average domains/s ($Count domains resolved in $Elapsed sec)"
+	"✔️ $Average domains/sec ($Count domains resolved in $Elapsed sec)"
 	exit 0 # success
 } catch {
 	"⚠️ Error: $($Error[0]) ($($MyInvocation.MyCommand.Name):$($_.InvocationInfo.ScriptLineNumber))"

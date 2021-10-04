@@ -5,6 +5,7 @@
 	Change the working directory to the user's downloads folder
 .EXAMPLE
 	PS> ./cd-downloads
+	📂/home/markus/Downloads
 .LINK
 	https://github.com/fleschutz/PowerShell
 .NOTES

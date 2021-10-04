@@ -5,6 +5,7 @@
 	Adds the given memo text to $HOME/Memos.csv
 .EXAMPLE
 	PS> ./add-memo "Buy apples"
+	✔️ added to 📄/home/markus/Memos.csv
 .LINK
 	https://github.com/fleschutz/PowerShell
 .NOTES
