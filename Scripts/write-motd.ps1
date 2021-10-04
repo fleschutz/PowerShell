@@ -1,8 +1,8 @@
 ﻿<#
 .SYNOPSIS
-	write-motd.ps1 
-.DESCRIPTION
 	Writes the message of the day (MOTD)
+.DESCRIPTION
+	write-motd.ps1 
 .EXAMPLE
 	PS> ./write-motd
 .NOTES

@@ -1,8 +1,9 @@
 ﻿<#
 .SYNOPSIS
-        install-knot-resolver.ps1
+        Installs Knot Resolver (needs admin rights)
 .DESCRIPTION
-        Installs the Knot Resolver (a DNS resolver daemon, needs admin rights)
+        Knot Resolver is a DNS resolver daemon.
+        install-knot-resolver.ps1
 .EXAMPLE
         PS> ./install-knot-resolver
 .NOTES

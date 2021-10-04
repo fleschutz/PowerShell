@@ -1,8 +1,8 @@
 ﻿<#
 .SYNOPSIS
-	convert-txt2wav.ps1 [<text>] [<wav-file>]
-.DESCRIPTION
 	Converts text to a .WAV audio file
+.DESCRIPTION
+	convert-txt2wav.ps1 [<text>] [<wav-file>]
 .EXAMPLE
 	PS> ./convert-txt2wav "Hello World" spoken.wav
 .NOTES

@@ -1,9 +1,10 @@
 ﻿<#
 .SYNOPSIS
-	check-smart-devices.ps1 [<type>]
+	Performs a selftest on your S.M.A.R.T. HDD/SSD devices.
 .DESCRIPTION
-	Performs a selftest on your S.M.A.R.T. HDD/SSD devices. Type is either short(default) or long.
-        Requires smartctl (smartmontools) and admin rights.
+	check-smart-devices.ps1 [<type>]
+	Type is either short(default) or long.
+        Requires smartctl (smartmontools package) and admin rights.
 .EXAMPLE
 	PS> ./check-smart-devices
 	✔️ short selftest started on S.M.A.R.T. device /dev/sda

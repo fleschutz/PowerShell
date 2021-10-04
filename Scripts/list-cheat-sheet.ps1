@@ -1,8 +1,8 @@
 ﻿<#
 .SYNOPSIS
-	list-cheat-sheet.ps1 
-.DESCRIPTION
 	Lists the PowerShell cheat sheet
+.DESCRIPTION
+	list-cheat-sheet.ps1 
 .EXAMPLE
 	PS> ./list-cheat-sheet
 .NOTES

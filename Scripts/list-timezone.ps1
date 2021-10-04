@@ -1,8 +1,8 @@
 ﻿<#
 .SYNOPSIS
-	list-timezone.ps1 
-.DESCRIPTION
 	Lists the details of the current time zone
+.DESCRIPTION
+	list-timezone.ps1 
 .EXAMPLE
 	PS> ./list-timezone
 

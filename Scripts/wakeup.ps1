@@ -1,8 +1,9 @@
 ﻿<#
 .SYNOPSIS
-	wakeup.ps1 [<MAC-address>] [<IP-address>]
+	Sends a magic packet to a computer to wake him up
 .DESCRIPTION
 	Sends a magic packet to a computer to wake him up (requires Wake-On-LAN)
+	wakeup.ps1 [<MAC-address>] [<IP-address>]
 .EXAMPLE
 	PS> ./wakeup 11:22:33:44:55:66 192.168.100.100
 .NOTES

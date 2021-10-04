@@ -1,8 +1,8 @@
 ﻿<#
 .SYNOPSIS
-	open-file-explorer.ps1
-.DESCRIPTION
 	Starts the File Explorer
+.DESCRIPTION
+	open-file-explorer.ps1
 .EXAMPLE
 	PS> ./open-file-explorer
 .NOTES

@@ -1,8 +1,8 @@
 ﻿<#
 .SYNOPSIS
-	cd-videos.ps1 
-.DESCRIPTION
 	Change the working directory to the user's videos folder
+.DESCRIPTION
+	cd-videos.ps1 
 .EXAMPLE
 	PS> ./cd-videos
 	📂/home/markus/Videos

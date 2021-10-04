@@ -1,8 +1,8 @@
 ﻿<#
 .SYNOPSIS
-	upload-file.ps1 [<file>] [<URL>] [<username>] [<password>]
+	Uploads a local file to a FTP server
 .DESCRIPTION
-	Uploads the local file to the given FTP server.
+	upload-file.ps1 [<File>] [<URL>] [<Username>] [<Password>]
 .EXAMPLE
 	PS> .\upload-file.ps1
 .NOTES

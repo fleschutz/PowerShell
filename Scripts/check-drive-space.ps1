@@ -1,8 +1,8 @@
 ﻿<#
 .SYNOPSIS
-	check-drive-space.ps1 [<drive>] [<min-level>]
-.DESCRIPTION
 	Checks a drive for free space left (20 GB by default)
+.DESCRIPTION
+	check-drive-space.ps1 [<drive>] [<min-level>]
 .EXAMPLE
 	PS> ./check-drive-space C
 	✔️ 172 GB left on drive C (61 of 233 GB used)

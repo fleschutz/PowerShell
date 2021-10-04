@@ -1,8 +1,8 @@
 ﻿<#
 .SYNOPSIS
-	cd-music.ps1 
-.DESCRIPTION
 	Change the working directory to the user's music folder
+.DESCRIPTION
+	cd-music.ps1 
 .EXAMPLE
 	PS> ./cd-music
 	📂/home/markus/Music

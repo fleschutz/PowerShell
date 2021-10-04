@@ -1,8 +1,8 @@
 ﻿<#
 .SYNOPSIS
-	translate-text.ps1 [<text>] [<source-lang>] [<target-lang>]
+	Translates text into other languages
 .DESCRIPTION
-	Translates the given text into other languages
+	translate-text.ps1 [<Text>] [<SourceLang>] [<TargetLang>]
 .EXAMPLE
 	PS> ./translate-text "Hello World" de en
 .NOTES

@@ -1,8 +1,8 @@
 ﻿<#
 .SYNOPSIS
-	edit.ps1 <filename>
-.DESCRIPTION
 	Opens the built-in text editor to edit the given file
+.DESCRIPTION
+	edit.ps1 <filename>
 .EXAMPLE
 	PS> ./edit C:\MyFile.txt
 .NOTES

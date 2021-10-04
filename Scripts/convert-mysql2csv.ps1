@@ -1,8 +1,8 @@
 ﻿<#
 .SYNOPSIS
-	convert-mysql2csv.ps1 [<server>] [<database>] [<username>] [<password>] [<query>]
-.DESCRIPTION
 	Convert a MySQL database table to a .CSV file
+.DESCRIPTION
+	convert-mysql2csv.ps1 [<server>] [<database>] [<username>] [<password>] [<query>]
 .EXAMPLE
 	PS> ./convert-mysql2csv
 .NOTES

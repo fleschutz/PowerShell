@@ -1,8 +1,8 @@
 ﻿<#
 .SYNOPSIS
-	check-xml-file [<file>]
-.DESCRIPTION
 	Checks the given XML file for validity
+.DESCRIPTION
+	check-xml-file [<file>]
 .EXAMPLE
 	PS> ./check-xml-file myfile.xml
 	✔️ XML file is valid

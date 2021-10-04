@@ -1,8 +1,8 @@
 ﻿<#
 .SYNOPSIS
-	speak-german.ps1 [<text>]
-.DESCRIPTION
 	Speaks the given text with a German text-to-speech (TTS) voice
+.DESCRIPTION
+	speak-german.ps1 [<text>]
 .EXAMPLE
 	PS> ./speak-german Hallo
 .NOTES

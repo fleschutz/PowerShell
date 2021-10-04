@@ -1,8 +1,8 @@
 ﻿<#
 .SYNOPSIS
-	open-onedrive.ps1
-.DESCRIPTION
 	Opens the user's OneDrive folder
+.DESCRIPTION
+	open-onedrive.ps1
 .EXAMPLE
 	PS> ./open-onedrive
 .NOTES

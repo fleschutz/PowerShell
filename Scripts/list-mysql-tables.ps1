@@ -1,8 +1,8 @@
 ﻿<#
 .SYNOPSIS
-	list-mysql-tables.ps1 
+	Lists all tables of a MySQL database 
 .DESCRIPTION
-	Lists the MySQL tables
+	list-mysql-tables.ps1 
 .EXAMPLE
 	PS> ./list-mysql-tables
 .NOTES

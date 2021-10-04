@@ -1,8 +1,8 @@
 <#
 .SYNOPSIS
-	convert-csv2txt.ps1 [<csv-file>]
-.DESCRIPTION
 	Converts a .CSV file into a text file
+.DESCRIPTION
+	convert-csv2txt.ps1 [<csv-file>]
 .EXAMPLE
 	PS> ./convert-csv2txt salaries.csv
 .NOTES

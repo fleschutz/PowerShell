@@ -1,8 +1,8 @@
 ﻿<#
 .SYNOPSIS
-	list-pins.ps1 [<pin-length>] [<columns>] [<rows>]
-.DESCRIPTION
 	Prints a list of random PIN's
+.DESCRIPTION
+	list-pins.ps1 [<PinLength>] [<Columns>] [<Rows>]
 .EXAMPLE
 	PS> ./list-pins
 .NOTES

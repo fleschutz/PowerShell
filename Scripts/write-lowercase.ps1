@@ -1,8 +1,8 @@
 ﻿<#
 .SYNOPSIS
-	write-lowercase.ps1 [<text>]
+	Writes text in lowercase letters
 .DESCRIPTION
-	Writes the given text in lowercase letters
+	write-lowercase.ps1 [<text>]
 .EXAMPLE
 	PS> ./write-lowercase "Hello World"
 .NOTES

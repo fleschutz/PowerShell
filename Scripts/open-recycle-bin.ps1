@@ -1,8 +1,8 @@
 ﻿<#
 .SYNOPSIS
-	open-recycle-bin.ps1 
-.DESCRIPTION
 	Starts the File Explorer with the recycle bin folder
+.DESCRIPTION
+	open-recycle-bin.ps1 
 .EXAMPLE
 	PS> ./open-recycle-bin
 .NOTES

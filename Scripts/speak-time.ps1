@@ -1,8 +1,8 @@
 ﻿<#
 .SYNOPSIS
-	speak-time.ps1
-.DESCRIPTION
 	Speaks the current time by text-to-speech (TTS)
+.DESCRIPTION
+	speak-time.ps1
 .EXAMPLE
 	PS> ./speak-time
 .NOTES

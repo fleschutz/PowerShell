@@ -1,8 +1,8 @@
 ﻿<#
 .SYNOPSIS
-	get-md5.ps1 [<file>]
-.DESCRIPTION
 	Prints the MD5 checksum of the given file
+.DESCRIPTION
+	get-md5.ps1 [<file>]
 .EXAMPLE
 	PS> ./get-md5 C:\MyFile.txt
 .NOTES

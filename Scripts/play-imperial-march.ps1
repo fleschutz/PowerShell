@@ -1,8 +1,8 @@
 ﻿<#
 .SYNOPSIS
-	play-imperial-march.ps1
-.DESCRIPTION
 	Plays the Imperial March (Star Wars)
+.DESCRIPTION
+	play-imperial-march.ps1
 .EXAMPLE
 	PS> ./play-imperial-march
 .NOTES

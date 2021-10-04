@@ -1,8 +1,8 @@
 ﻿<#
 .SYNOPSIS
-	speak-file.ps1 [<file>]
-.DESCRIPTION
 	Speaks the content of the given text file by text-to-speech (TTS)
+.DESCRIPTION
+	speak-file.ps1 [<file>]
 .EXAMPLE
 	PS> ./speak-file C:\MyFile.txt
 .NOTES

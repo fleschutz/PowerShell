@@ -1,8 +1,8 @@
 ﻿<#
 .SYNOPSIS
-	cd-docs.ps1 
-.DESCRIPTION
 	Change the working directory to the user's documents folder
+.DESCRIPTION
+	cd-docs.ps1 
 .EXAMPLE
 	PS> ./cd-docs
 	📂/home/markus/Documents

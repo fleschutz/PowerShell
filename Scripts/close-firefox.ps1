@@ -1,8 +1,8 @@
 ﻿<#
 .SYNOPSIS
-	close-firefox.ps1 
+	Closes Mozilla's Firefox Web browser 
 .DESCRIPTION
-	Closes the Firefox Web browser 
+	close-firefox.ps1 
 .EXAMPLE
 	PS> ./close-firefox
 .NOTES

@@ -1,8 +1,8 @@
 ﻿<#
 .SYNOPSIS
-	check-file-system.ps1 [<drive>] 
-.DESCRIPTION
 	Checks the file system of a drive (needs admin rights)
+.DESCRIPTION
+	check-file-system.ps1 [<drive>] 
 .EXAMPLE
 	PS> ./check-file-system C
 	✔️ file system on drive C is clean

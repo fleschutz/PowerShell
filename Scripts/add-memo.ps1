@@ -1,8 +1,8 @@
 ﻿<#
 .SYNOPSIS
-	add-memo.ps1 [<text>]
+	Adds a memo to Memos.csv in the home folder
 .DESCRIPTION
-	Adds the given memo text to $HOME/Memos.csv
+	add-memo.ps1 [<text>]
 .EXAMPLE
 	PS> ./add-memo "Buy apples"
 	✔️ added to 📄/home/markus/Memos.csv

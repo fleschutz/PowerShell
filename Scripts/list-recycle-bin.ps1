@@ -1,8 +1,8 @@
 ﻿<#
 .SYNOPSIS
-	list-recycle-bin.ps1 
-.DESCRIPTION
 	Lists the content of the recycle bin folder
+.DESCRIPTION
+	list-recycle-bin.ps1 
 .EXAMPLE
 	PS> ./list-recycle-bin
 .NOTES

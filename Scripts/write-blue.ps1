@@ -1,8 +1,8 @@
 ﻿<#
 .SYNOPSIS
-	write-blue.ps1 [<text>]
+	Writes text in a blue foreground color
 .DESCRIPTION
-	Writes the given text in a blue foreground color
+	write-blue.ps1 [<text>]
 .EXAMPLE
 	PS> ./write-blue "Hello World"
 .NOTES

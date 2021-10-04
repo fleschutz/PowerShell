@@ -1,8 +1,8 @@
 ﻿<#
 .SYNOPSIS
-	scan-ports.ps1
-.DESCRIPTION
 	Scans the network for open/closed ports
+.DESCRIPTION
+	scan-ports.ps1
 .EXAMPLE
 	PS> ./scan-ports
 .NOTES

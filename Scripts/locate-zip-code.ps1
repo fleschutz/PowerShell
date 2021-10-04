@@ -1,8 +1,8 @@
 ﻿<#
 .SYNOPSIS
-	locate-zip-code.ps1 [<country-code>] [<zip-code>]
-.DESCRIPTION
 	Prints the geographic location of the given zip-code
+.DESCRIPTION
+	locate-zip-code.ps1 [<CountryCode>] [<ZipCode>]
 .EXAMPLE
 	PS> ./locate-zip-code
 .NOTES

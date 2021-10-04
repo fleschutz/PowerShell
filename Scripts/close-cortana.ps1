@@ -1,8 +1,8 @@
 ﻿<#
 .SYNOPSIS
-	close-cortana.ps1
+	Closes Microsoft's Cortana application
 .DESCRIPTION
-	Closes Cortana gracefully
+	close-cortana.ps1
 .EXAMPLE
 	PS> ./close-cortana
 .NOTES

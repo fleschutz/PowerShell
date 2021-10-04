@@ -1,10 +1,10 @@
 ﻿<#
 .SYNOPSIS
-	replace-in-files.ps1 [<pattern>] [<replacement>] [<files>]
-.DESCRIPTION
 	Search and replace a pattern in the given files by the replacement
+.DESCRIPTION
+	replace-in-files.ps1 [<pattern>] [<replacement>] [<files>]
 .EXAMPLE
-	PS> ./replace-in-files IO "Input Output" C:\Temp\*.txt
+	PS> ./replace-in-files NSA "No Such Agency" C:\Temp\*.txt
 .NOTES
 	Author: Markus Fleschutz · License: CC0
 .LINK

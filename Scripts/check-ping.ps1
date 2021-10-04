@@ -1,9 +1,9 @@
 ﻿<#
 .SYNOPSIS
-	check-ping.ps1 [<hosts>]
-.DESCRIPTION
 	Checks the ping latency from the local computer to selected Internet hosts
-	(default is: 'amazon.com,apple.com,bing.com,cnn.com,dropbox.com,facebook.com,google.com,live.com,twitter.com,youtube.com)
+.DESCRIPTION
+	Hosts by default are: amazon.com,apple.com,bing.com,cnn.com,dropbox.com,facebook.com,google.com,live.com,twitter.com,youtube.com
+	check-ping.ps1 [<hosts>]
 .EXAMPLE
 	PS> ./check-ping
 	✔️ 36 ms ping average (13 ms min, 109 ms max, 10 hosts)

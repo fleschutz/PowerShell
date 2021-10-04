@@ -1,8 +1,8 @@
 ﻿<#
 .SYNOPSIS
-	list-passwords.ps1 [<password-length>] [<columns>] [<rows>]
-.DESCRIPTION
 	Prints a list of random passwords
+.DESCRIPTION
+	list-passwords.ps1 [<PasswordLength>] [<Columns>] [<Rows>]
 .EXAMPLE
 	PS> ./list-passwords
 .NOTES

@@ -1,8 +1,8 @@
 ﻿<#
 .SYNOPSIS
-	upgrade-ubuntu.ps1 
+	Upgrades Ubuntu Linux to the latest (LTS) release
 .DESCRIPTION
-	Upgrades Ubuntu Linux to the latest (LTS) release.
+	upgrade-ubuntu.ps1 
 .EXAMPLE
 	PS> .\upgrade-ubuntu.ps1 
 .NOTES

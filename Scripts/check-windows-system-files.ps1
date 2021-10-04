@@ -1,8 +1,8 @@
 ﻿<#
 .SYNOPSIS
-	check-windows-system-files.ps1 
-.DESCRIPTION
 	Checks the validity of the Windows system files (requires admin rights)
+.DESCRIPTION
+	check-windows-system-files.ps1 
 .EXAMPLE
 	PS> ./check-windows-system-files
 	✔️ checked Windows system files

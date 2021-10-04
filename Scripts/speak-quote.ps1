@@ -1,8 +1,8 @@
 ﻿<#
 .SYNOPSIS
-	speak-quote.ps1
-.DESCRIPTION
 	Speaks a random quote by text-to-speech (TTS)
+.DESCRIPTION
+	speak-quote.ps1
 .EXAMPLE
 	PS> ./speak-quote
 .NOTES

@@ -1,8 +1,8 @@
 ﻿<#
 .SYNOPSIS
-	speak-english.ps1 [<text>]
-.DESCRIPTION
 	Speaks the given text with an English text-to-speech (TTS) voice
+.DESCRIPTION
+	speak-english.ps1 [<text>]
 .EXAMPLE
 	PS> ./speak-english "Hello World"
 .NOTES

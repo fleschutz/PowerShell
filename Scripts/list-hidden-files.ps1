@@ -1,8 +1,9 @@
 ﻿<#
 .SYNOPSIS
-	list-hidden-files.ps1 [<dir-tree>]
+	Lists hidden files in a directory tree
 .DESCRIPTION
-	Lists hidden files within the given directory tree
+	list-hidden-files.ps1 [<DirTree>]
+	<DirTree> is the path to the directory tree
 .EXAMPLE
 	PS> ./list-hidden-files C:\
 .NOTES

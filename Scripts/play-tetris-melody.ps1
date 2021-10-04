@@ -1,8 +1,8 @@
 ﻿<#
 .SYNOPSIS
-        play-tetris-melody.ps1
-.DESCRIPTION
         Plays the Tetris melody
+.DESCRIPTION
+        play-tetris-melody.ps1
 .EXAMPLE
         PS> ./play-tetris-melody
 .NOTES

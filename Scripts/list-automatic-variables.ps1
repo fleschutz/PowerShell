@@ -1,8 +1,8 @@
 ﻿<#
 .SYNOPSIS
-	list-automatic-variables.ps1
-.DESCRIPTION
 	Lists all automatic variables of PowerShell
+.DESCRIPTION
+	list-automatic-variables.ps1
 .EXAMPLE
 	PS> ./list-automatic-variables
 

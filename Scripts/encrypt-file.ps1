@@ -1,8 +1,8 @@
 ﻿<#
 .SYNOPSIS
-	encrypt-file.ps1 [<path>] [<password>]
+	Encrypts a file
 .DESCRIPTION
-	Encrypts the given file
+	encrypt-file.ps1 [<Path>] [<Password>]
 .EXAMPLE
 	PS> ./encrypt-file C:\MyFile.txt "123"
 .NOTES

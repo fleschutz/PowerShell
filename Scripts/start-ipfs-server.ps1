@@ -1,8 +1,8 @@
 ﻿<#
 .SYNOPSIS
-	start-ipfs-server.ps1
-.DESCRIPTION
 	Starts a local IPFS server as a daemon process
+.DESCRIPTION
+	start-ipfs-server.ps1
 .EXAMPLE
 	PS> ./start-ipfs-server
 .NOTES

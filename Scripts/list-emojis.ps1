@@ -1,8 +1,8 @@
 ﻿<#
 .SYNOPSIS
-	list-emojis.ps1 
-.DESCRIPTION
 	Lists the Emojis of Unicode 13.0
+.DESCRIPTION
+	list-emojis.ps1 
 .EXAMPLE
 	PS> ./list-emojis
 .NOTES

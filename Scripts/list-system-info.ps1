@@ -1,8 +1,8 @@
 ﻿<#
 .SYNOPSIS
-	list-system-info.ps1
+	Lists system information of the local computer
 .DESCRIPTION
-	Lists system information on the local computer
+	list-system-info.ps1
 .EXAMPLE
 	PS> ./list-system-info
 .NOTES

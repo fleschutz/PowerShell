@@ -1,8 +1,10 @@
 ﻿<#
 .SYNOPSIS
-	list-commits.ps1 [<RepoDir>] [<Format>]
+	Lists all commits in a Git repository
 .DESCRIPTION
-	Lists all commits in a Git repository (format is: list|compact|normal|JSON)
+	list-commits.ps1 [<RepoDir>] [<Format>]
+	<RepoDir> is the path to the Git repository
+	<Format> is either: list|compact|normal|JSON
 .EXAMPLE
 	PS> ./list-commits
 

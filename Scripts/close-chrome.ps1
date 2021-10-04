@@ -1,8 +1,8 @@
 ﻿<#
 .SYNOPSIS
-	close-chrome.ps1 
-.DESCRIPTION
 	Closes the Google Chrome Web browser
+.DESCRIPTION
+	close-chrome.ps1 
 .EXAMPLE
 	PS> ./close-chrome
 .NOTES

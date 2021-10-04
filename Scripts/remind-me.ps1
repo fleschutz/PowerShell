@@ -1,8 +1,8 @@
 ﻿<#
 .SYNOPSIS
-	remind-me.ps1
+	Creates a scheduled task that will display a popup message
 .DESCRIPTION
-	Creates a scheduled task that will display a popup message.
+	remind-me.ps1
 .EXAMPLE
 	PS> ./remind-me "Dentist" "4/10/2021 12:00 PM"
 

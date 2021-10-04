@@ -1,8 +1,8 @@
 ﻿<#
 .SYNOPSIS
-	play-mp3.ps1 [<MP3-file>]
+	Plays a sound file (in MP3 file format)
 .DESCRIPTION
-	Plays the given sound file (MP3 file format)
+	play-mp3.ps1 [<MP3-file>]
 .EXAMPLE
 	PS> ./play-mp3 C:\thunder.mp3
 .NOTES

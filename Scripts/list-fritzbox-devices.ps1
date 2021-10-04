@@ -1,8 +1,8 @@
 ﻿<#
 .SYNOPSIS
-	list-fritzbox-devices.ps1 [<username>] [<password>]
-.DESCRIPTION
 	Lists FRITZ!Box's known devices
+.DESCRIPTION
+	list-fritzbox-devices.ps1 [<Username>] [<Password>]
 .EXAMPLE
 	PS> ./list-fritzbox-devices
 .NOTES

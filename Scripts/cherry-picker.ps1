@@ -1,7 +1,8 @@
 ﻿<#
 .SYNOPSIS
-	cherry-picker.ps1 [<CommitID>] [<CommitMessage>] [<Branches>] [<RepoDir>]
+	Cherry-picks a Git commit into one or more branches
 .DESCRIPTION
+	cherry-picker.ps1 [<CommitID>] [<CommitMessage>] [<Branches>] [<RepoDir>]
 	Cherry-picks a Git commit into one or more branches (branch names need to be separated by spaces)
 	NOTE: in case of merge conflicts the script stops immediately! 
 .EXAMPLE

@@ -1,8 +1,8 @@
 ﻿<#
 .SYNOPSIS
-	speak-joke.ps1
-.DESCRIPTION
 	Speaks a random Chuck Norris joke by text-to-speech (TTS)
+.DESCRIPTION
+	speak-joke.ps1
 .EXAMPLE
 	PS> ./speak-joke
 .NOTES

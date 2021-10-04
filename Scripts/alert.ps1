@@ -1,8 +1,8 @@
 ﻿<#
 .SYNOPSIS
-	alert.ps1 [<message>]
-.DESCRIPTION
 	Handle and escalate the given alert message
+.DESCRIPTION
+	alert.ps1 [<message>]
 .EXAMPLE
 	PS> ./alert "Harddisk failure"
 .LINK

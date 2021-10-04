@@ -1,8 +1,8 @@
 ﻿<#
 .SYNOPSIS
-	new-email.ps1 [<address>]
-.DESCRIPTION
 	Opens the default email client to write a new email
+.DESCRIPTION
+	new-email.ps1 [<address>]
 .EXAMPLE
 	PS> ./new-email
 .NOTES

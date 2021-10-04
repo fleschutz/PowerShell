@@ -1,8 +1,8 @@
 ﻿<#
 .SYNOPSIS
-	close-file-explorer.ps1 
+	Closes Microsoft's File Explorer 
 .DESCRIPTION
-	Closes Microsoft File Explorer gracefully
+	close-file-explorer.ps1 
 .EXAMPLE
 	PS> ./close-file-explorer
 .NOTES

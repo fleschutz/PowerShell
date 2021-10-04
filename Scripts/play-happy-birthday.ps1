@@ -1,8 +1,8 @@
 ﻿<#
 .SYNOPSIS
-        play-happy-birthday.ps1
-.DESCRIPTION
         Plays the Happy Birthday song
+.DESCRIPTION
+        play-happy-birthday.ps1
 .EXAMPLE
         PS> ./play-happy-birthday
 .NOTES

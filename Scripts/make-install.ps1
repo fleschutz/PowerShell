@@ -1,8 +1,8 @@
 ﻿<#
 .SYNOPSIS
-	make-install.ps1 <build-dir>
-.DESCRIPTION
 	Copies newer EXE's + DLL's from the build directory to the installation directory
+.DESCRIPTION
+	make-install.ps1 <BuildDir>
 .EXAMPLE
 	PS> ./make-install
 .NOTES

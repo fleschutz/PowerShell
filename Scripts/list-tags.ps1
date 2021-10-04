@@ -1,8 +1,10 @@
 ﻿<#
 .SYNOPSIS
-	list-tags.ps1 [<repo-dir>] [<pattern>]
+	Lists all tags in a Git repository
 .DESCRIPTION
-	Lists all tags in a Git repository.
+	list-tags.ps1 [<RepoDir>] [<SearchPattern>]
+	<RepoDir> is the path to the Git repository
+	<SearchPattern> is "*" (anything) by default
 .EXAMPLE
 	PS> ./list-tags C:\MyRepo
 
@@ -16,7 +18,7 @@
 	https://github.com/fleschutz/PowerShell
 #>
 
-param([string]$RepoDir = "$PWD", [string]$Pattern="*")
+param([string]$RepoDir = "$PWD", [string]$SearchPattern="*")
 
 try {
 	if (-not(test-path "$RepoDir" -pathType container)) { throw "Can't access directory: $RepoDir" }
@@ -32,7 +34,7 @@ try {
 	""
 	"Tag             Description"
 	"---             -----------"
-	& git -C "$RepoDir" tag --list "$Pattern" -n
+	& git -C "$RepoDir" tag --list "$SearchPattern" -n
 	if ($lastExitCode -ne "0") { throw "'git tag --list' failed" }
 
 	exit 0 # success

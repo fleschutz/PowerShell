@@ -1,8 +1,8 @@
 ﻿<#
 .SYNOPSIS
-	list-print-jobs.ps1
+	Lists all jobs of all printers
 .DESCRIPTION
-	Lists all jobs from all printers
+	list-print-jobs.ps1
 .EXAMPLE
 	PS> ./list-print-jobs
 .NOTES

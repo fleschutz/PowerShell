@@ -1,8 +1,8 @@
 ﻿<#
 .SYNOPSIS
-	list-modules.ps1 
-.DESCRIPTION
 	Lists all PowerShell modules
+.DESCRIPTION
+	list-modules.ps1 
 .EXAMPLE
 	PS> ./list-modules
 

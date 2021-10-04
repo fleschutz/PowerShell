@@ -1,8 +1,8 @@
 ﻿<#
 .SYNOPSIS
-	turn-volume-up.ps1 [<percent>]
-.DESCRIPTION
 	Turns the audio volume up (+10% by default)
+.DESCRIPTION
+	turn-volume-up.ps1 [<percent>]
 .EXAMPLE
 	PS> ./turn-volume-up
 .NOTES

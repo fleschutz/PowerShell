@@ -1,8 +1,8 @@
 ﻿<#
 .SYNOPSIS
-	new-tag.ps1 [<TagName>] [<RepoDir>]
-.DESCRIPTION
 	Creates a new tag in a Git repository
+.DESCRIPTION
+	new-tag.ps1 [<TagName>] [<RepoDir>]
 .EXAMPLE
 	PS> ./create-tag v1.7
 .LINK

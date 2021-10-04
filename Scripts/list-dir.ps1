@@ -1,8 +1,9 @@
 ﻿<#
 .SYNOPSIS
-	list-dir.ps1 [<pattern>]
-.DESCRIPTION
 	Lists the directory content formatted in columns
+.DESCRIPTION
+	list-dir.ps1 [<SearchPattern>]
+	<SearchPattern> is "*" (anything) by default
 .EXAMPLE
 	PS> ./list-dir C:\
 .NOTES
@@ -11,10 +12,10 @@
 	https://github.com/fleschutz/PowerShell
 #>
 
-param([string]$Pattern = "*")
+param([string]$SearchPattern = "*")
 
-function ListDir { param([string]$Pattern)
-	$Items = get-childItem -path "$Pattern"
+function ListDir { param([string]$SearchPattern)
+	$Items = get-childItem -path "$SearchPattern"
 	foreach ($Item in $Items) {
 		$Name = $Item.Name
 		if ($Name[0] -eq '.') { continue } # hidden file/dir
@@ -28,7 +29,7 @@ function ListDir { param([string]$Pattern)
 }
 
 try {
-	ListDir $Pattern | format-wide -autoSize
+	ListDir $SearchPattern | format-wide -autoSize
 	exit 0 # success
 } catch {
 	"⚠️ Error: $($Error[0]) ($($MyInvocation.MyCommand.Name):$($_.InvocationInfo.ScriptLineNumber))"

@@ -1,8 +1,9 @@
 ﻿<#
 .SYNOPSIS
-	list-installed-apps.ps1
+	Lists the installed apps
 .DESCRIPTION
-	Lists the installed apps (from Windows Store or snaps)
+	Lists the installed apps (from Windows Store or snaps).
+	list-installed-apps.ps1
 .EXAMPLE
 	PS> ./list-installed-apps
 .NOTES

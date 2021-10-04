@@ -1,8 +1,8 @@
 ﻿<#
 .SYNOPSIS
-	speak-text.ps1 [<text>]
-.DESCRIPTION
 	Speaks the given text by the default text-to-speech (TTS) voice
+.DESCRIPTION
+	speak-text.ps1 [<text>]
 .EXAMPLE
 	PS> ./speak-text "Hello World"
 .NOTES

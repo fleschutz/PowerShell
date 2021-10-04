@@ -1,8 +1,8 @@
 ﻿<#
 .SYNOPSIS
-	play-super-mario.ps1
-.DESCRIPTION
 	Plays the Super Mario intro
+.DESCRIPTION
+	play-super-mario.ps1
 .EXAMPLE
 	PS> ./play-super-mario
 .NOTES

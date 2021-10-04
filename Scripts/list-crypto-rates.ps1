@@ -1,8 +1,8 @@
 ﻿<#
 .SYNOPSIS
-	list-crypto-rates.ps1 
-.DESCRIPTION
 	Lists the current crypto exchange rates
+.DESCRIPTION
+	list-crypto-rates.ps1 
 .EXAMPLE
 	PS> ./list-crypto-rates
 .NOTES

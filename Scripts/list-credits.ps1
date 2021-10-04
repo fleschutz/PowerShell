@@ -1,8 +1,8 @@
 ﻿<#
 .SYNOPSIS
-	list-credits.ps1
-.DESCRIPTION
 	Shows the credits for the PowerShell Scripts
+.DESCRIPTION
+	list-credits.ps1
 .EXAMPLE
 	PS> ./list-credits
 .NOTES

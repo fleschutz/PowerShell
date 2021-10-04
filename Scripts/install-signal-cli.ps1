@@ -1,8 +1,9 @@
 ﻿<#
 .SYNOPSIS
-	install-signal-cli.ps1 [<version>]
+	Installs signal-cli 
 .DESCRIPTION
 	Installs signal-cli from github.com/AsamK/signal-cli. See the Web page for the correct version number
+	install-signal-cli.ps1 [<version>]
 .EXAMPLE
 	PS> ./install-signal-cli 0.11.12
 .NOTES

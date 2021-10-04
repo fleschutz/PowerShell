@@ -1,8 +1,8 @@
 ﻿<#
 .SYNOPSIS
-	close-edge.ps1 
+	Closes Microsoft's Edge Web browser
 .DESCRIPTION
-	Closes the Microsoft Edge Web browser
+	close-edge.ps1 
 .EXAMPLE
 	PS> ./close-edge
 .NOTES

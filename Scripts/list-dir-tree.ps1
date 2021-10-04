@@ -1,8 +1,9 @@
 ﻿<#
 .SYNOPSIS
-	list-dir-tree.ps1 [<dir-tree>]
-.DESCRIPTION
 	Lists the full directory tree
+.DESCRIPTION
+	list-dir-tree.ps1 [<DirTree>]
+	<DirTree> is the path to the directory tree
 .EXAMPLE
 	PS> ./list-dir-tree C:\
 .NOTES

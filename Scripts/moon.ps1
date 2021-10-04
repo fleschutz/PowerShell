@@ -1,8 +1,8 @@
 ﻿<#
 .SYNOPSIS
-	moon.ps1
-.DESCRIPTION
 	Prints the current moon phase
+.DESCRIPTION
+	moon.ps1
 .EXAMPLE
 	PS> ./moon
 .NOTES

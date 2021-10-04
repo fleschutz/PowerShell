@@ -1,8 +1,8 @@
 ﻿<#
 .SYNOPSIS
-	list-os-releases.ps1
-.DESCRIPTION
 	Lists OS releases and download URL
+.DESCRIPTION
+	list-os-releases.ps1
 .EXAMPLE
 	PS> ./list-os-releases
 .NOTES

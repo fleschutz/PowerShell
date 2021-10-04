@@ -1,10 +1,11 @@
 ﻿<#
 .SYNOPSIS
-	check-cpu-temp.ps1 
-.DESCRIPTION
 	Checks the CPU temperature
+.DESCRIPTION
+	check-cpu-temp.ps1 
 .EXAMPLE
 	PS> ./check-cpu-temp
+	✔️ 30.3 °C CPU temperature - good
 .LINK
 	https://github.com/fleschutz/PowerShell
 .NOTES

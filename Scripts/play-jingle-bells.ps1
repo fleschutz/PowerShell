@@ -1,8 +1,8 @@
 ﻿<#
 .SYNOPSIS
-        play-jingle-bells.ps1
-.DESCRIPTION
         Plays Jingle Bells
+.DESCRIPTION
+        play-jingle-bells.ps1
 .EXAMPLE
         PS> ./play-jingle-bells
 .NOTES

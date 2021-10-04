@@ -1,8 +1,8 @@
 ﻿<#
 .SYNOPSIS
-	new-shortcut.ps1 [<shortcut>] [<target>] [<description>]
-.DESCRIPTION
 	Creates a new shortcut file
+.DESCRIPTION
+	new-shortcut.ps1 [<shortcut>] [<target>] [<description>]
 .EXAMPLE
 	PS> ./new-shortcut C:\Temp\HDD C:\
 .NOTES

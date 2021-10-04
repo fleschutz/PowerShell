@@ -1,8 +1,8 @@
 ﻿<#
 .SYNOPSIS
-	speak-date.ps1
-.DESCRIPTION
 	Speaks the current date by text-to-speech (TTS)
+.DESCRIPTION
+	speak-date.ps1
 .EXAMPLE
 	PS> ./speak-date
 .NOTES

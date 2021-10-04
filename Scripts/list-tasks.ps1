@@ -1,8 +1,8 @@
 ﻿<#
 .SYNOPSIS
-	list-tasks.ps1 
-.DESCRIPTION
 	Lists all Windows scheduler tasks
+.DESCRIPTION
+	list-tasks.ps1 
 .EXAMPLE
 	PS> ./list-tasks
 

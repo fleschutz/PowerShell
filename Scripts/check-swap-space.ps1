@@ -1,8 +1,8 @@
 ﻿<#
 .SYNOPSIS
-	check-swap-space.ps1 [<min-level>]
-.DESCRIPTION
 	Checks the free swap space
+.DESCRIPTION
+	check-swap-space.ps1 [<min-level>]
 .EXAMPLE
 	PS> ./check-swap-space
 	✔️ 1213 GB left for swap space (67 of 1280 GB used)

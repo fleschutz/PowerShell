@@ -1,8 +1,8 @@
 ﻿<#
 .SYNOPSIS
-	set-timer.ps1 [<seconds>]
-.DESCRIPTION
 	Sets a timer for a countdown
+.DESCRIPTION
+	set-timer.ps1 [<seconds>]
 .EXAMPLE
 	PS> ./set-timer 60
 .NOTES

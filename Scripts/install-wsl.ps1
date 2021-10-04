@@ -1,8 +1,8 @@
 ﻿<#
 .SYNOPSIS
-	install-wsl.ps1
+	Installs Windows Subsystem for Linux (needs admin rights)
 .DESCRIPTION
-	Installs Windows Subsystem for Linux (WSL) - needs admin rights
+	install-wsl.ps1
 .EXAMPLE
 	PS> ./install-wsl
 .NOTES

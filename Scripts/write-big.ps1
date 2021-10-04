@@ -1,8 +1,8 @@
 ﻿<#
 .SYNOPSIS
-	write-big.ps1 [<text>]
-.DESCRIPTION
 	Writes the given text in big letters
+.DESCRIPTION
+	write-big.ps1 [<text>]
 .EXAMPLE
 	PS> ./write-big "Hello World"
 .NOTES

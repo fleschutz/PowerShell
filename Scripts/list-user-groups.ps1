@@ -1,8 +1,8 @@
 ﻿<#
 .SYNOPSIS
-	list-user-groups.ps1 
-.DESCRIPTION
 	Lists the user groups on the local computer
+.DESCRIPTION
+	list-user-groups.ps1 
 .EXAMPLE
 	PS> ./list-user-groups
 

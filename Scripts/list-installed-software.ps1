@@ -1,8 +1,9 @@
 ﻿<#
 .SYNOPSIS
-	list-installed-software.ps1
+	Lists the installed software
 .DESCRIPTION
 	Lists the installed software (except Windows Store apps)
+	list-installed-software.ps1
 .EXAMPLE
 	PS> ./list-installed-software
 .NOTES

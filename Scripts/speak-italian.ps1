@@ -1,8 +1,8 @@
 ﻿<#
 .SYNOPSIS
-	speak-italian.ps1 [<text>]
-.DESCRIPTION
 	Speaks the given text with an Italian text-to-speech (TTS) voice
+.DESCRIPTION
+	speak-italian.ps1 [<text>]
 .EXAMPLE
 	PS> ./speak-italian Ciao
 .NOTES

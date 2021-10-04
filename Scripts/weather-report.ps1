@@ -1,8 +1,8 @@
 ﻿<#
 .SYNOPSIS
-	weather-report.ps1 [<GeoLocation>]
+	Lists the local weather report
 .DESCRIPTION
-	Prints the local weather report
+	weather-report.ps1 [<GeoLocation>]
 .EXAMPLE
 	PS> ./weather-report Paris
 .NOTES

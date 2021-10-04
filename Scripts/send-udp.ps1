@@ -1,8 +1,8 @@
 ﻿<#
 .SYNOPSIS
-	send-udp.ps1 [<target-IP>] [<target-port>] [<message>]
+	Sends a UDP datagram message to an IP address and port
 .DESCRIPTION
-	Sends a UDP datagram message to the given IP address and port
+	send-udp.ps1 [<TargetIP>] [<TargetPort>] [<Message>]
 .EXAMPLE
 	PS> ./send-udp 192.168.100.100 8080 "TEST"
 .NOTES

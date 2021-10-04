@@ -1,8 +1,8 @@
 ﻿<#
 .SYNOPSIS
-	decrypt-file.ps1 [<path>] [<password>]
-.DESCRIPTION
 	Decrypts the given file
+.DESCRIPTION
+	decrypt-file.ps1 [<path>] [<password>]
 .EXAMPLE
 	PS> ./decrypt-file-rules C:\MyFile.txt "123"
 .NOTES

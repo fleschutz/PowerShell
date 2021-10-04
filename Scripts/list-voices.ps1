@@ -1,8 +1,8 @@
 ﻿<#
 .SYNOPSIS
-	list-voices.ps1 
-.DESCRIPTION
 	Lists the installed text-to-speech (TTS) voices
+.DESCRIPTION
+	list-voices.ps1 
 .EXAMPLE
 	PS> ./list-voices
 

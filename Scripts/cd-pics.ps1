@@ -1,8 +1,8 @@
 ﻿<#
 .SYNOPSIS
-	cd-pics.ps1 
-.DESCRIPTION
 	Change the working directory to the user's pictures folder
+.DESCRIPTION
+	cd-pics.ps1 
 .EXAMPLE
 	PS> ./cd-pics
 	📂/home/markus/Pictures

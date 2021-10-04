@@ -1,8 +1,9 @@
 ﻿<#
 .SYNOPSIS
-	check-symlinks.ps1 [<DirTree>]
+	Checks every symlink in a folder (including subfolders)
 .DESCRIPTION
-	Checks every symlink in a directory tree.
+	check-symlinks.ps1 [<folder>]
+	Returns the number of broken symlinks as exit value.
 .EXAMPLE
 	PS> ./check-symlinks .
 	✔️ 0 out of 10 symlinks are broken in 📂/home/markus
@@ -12,12 +13,12 @@
 	Author: Markus Fleschutz · License: CC0
 #>
 
-param([string]$DirTree = "")
+param([string]$folder = "")
 
 try {
-	if ($DirTree -eq "" ) { $DirTree = read-host "Enter the path to the directory tree" }
+	if ($folder -eq "" ) { $folder = read-host "Enter the path to the folder" }
 
-	$FullPath = Resolve-Path "$DirTree"
+	$FullPath = Resolve-Path "$folder"
 	write-progress "Checking every symlink in 📂$FullPath..."
 	[int]$NumTotal = [int]$NumBroken = 0
 	Get-ChildItem $FullPath -recurse  | Where { $_.Attributes -match "ReparsePoint" } | ForEach-Object {

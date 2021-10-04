@@ -1,8 +1,8 @@
 ﻿<#
 .SYNOPSIS
-	list-services.ps1 
-.DESCRIPTION
 	Lists the local computer services
+.DESCRIPTION
+	list-services.ps1 
 .EXAMPLE
 	PS> ./list-services
 

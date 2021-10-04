@@ -1,8 +1,8 @@
 ﻿<#
 .SYNOPSIS
-	convert-ps2bat.ps1 [<pattern>]
-.DESCRIPTION
 	Converts a PowerShell script to .bat files
+.DESCRIPTION
+	convert-ps2bat.ps1 [<pattern>]
 .EXAMPLE
 	PS> ./convert-ps2bat *.ps1
 .NOTES

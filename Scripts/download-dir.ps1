@@ -1,8 +1,8 @@
 ﻿<#
 .SYNOPSIS
-	download-dir.ps1 [<URL>]
+	Downloads a folder (including subfolders) from the given URL
 .DESCRIPTION
-	Downloads a directory tree from the given URL
+	download-dir.ps1 [<URL>]
 .EXAMPLE
 	PS> ./download-dir "https://www.cnn.com"
 .NOTES

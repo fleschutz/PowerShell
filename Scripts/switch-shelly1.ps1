@@ -1,9 +1,11 @@
 ﻿<#
 .SYNOPSIS
-	switch-shelly1.ps1 [<Host>] [<TurnMode>] [<Timer>]
-.DESCRIPTION
 	Switches a Shelly1 device in the local network
-	(Host is either a hostname or IP address, TurnMode is either 'on', 'off', or 'toggle')
+.DESCRIPTION
+	switch-shelly1.ps1 [<Host>] [<TurnMode>] [<Timer>]
+	<Host> is either a hostname or IP address
+	<TurnMode> is either 'on', 'off', or 'toggle')
+	<Timer> is the timer in seconds (0 = infinite)
 .EXAMPLE
 	PS> ./switch-shelly1 192.168.100.100 toggle 10
 .NOTES

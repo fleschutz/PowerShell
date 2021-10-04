@@ -1,8 +1,8 @@
 ﻿<#
 .SYNOPSIS
-	list-printers.ps1
+	Lists all printers known to the local computer
 .DESCRIPTION
-	Lists all printer known to the local computer
+	list-printers.ps1
 .EXAMPLE
 	PS> ./list-printers
 .NOTES

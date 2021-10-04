@@ -1,8 +1,8 @@
 ﻿<#
 .SYNOPSIS
-	publish-to-ipfs.ps1 [<FilePattern>] [<to-hash-list>]
-.DESCRIPTION
 	Publishes the given files & folders to IPFS
+.DESCRIPTION
+	publish-to-ipfs.ps1 [<FilePattern>] [<HashList>]
 .EXAMPLE
 	PS> ./publish-to-ipfs C:\MyFile.txt
 .NOTES

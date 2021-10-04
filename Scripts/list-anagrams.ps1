@@ -1,8 +1,8 @@
 ﻿<#
 .SYNOPSIS
-	list-anagrams.ps1 [<word>] [<columns>]
-.DESCRIPTION
 	Lists all anagrams of the given word
+.DESCRIPTION
+	list-anagrams.ps1 [<word>] [<columns>]
 .EXAMPLE
 	PS> ./list-anagrams Baby
 .NOTES

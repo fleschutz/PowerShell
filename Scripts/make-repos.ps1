@@ -1,8 +1,8 @@
 ﻿<#
 .SYNOPSIS
-	make-repos.ps1 [<parent-dir>]
+	Builds all Git repositories in a folder
 .DESCRIPTION
-	Builds all Git repositories under the current/given directory
+	make-repos.ps1 [<ParentDir>]
 .EXAMPLE
 	PS> ./make-repos C:\MyRepos
 .NOTES

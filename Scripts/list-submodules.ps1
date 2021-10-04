@@ -1,8 +1,9 @@
 ﻿<#
 .SYNOPSIS
-	list-submodules.ps1 [<repo-dir>] 
+	Lists the submodules of a Git repository
 .DESCRIPTION
-	Lists the submodules of the current/given Git repository
+	list-submodules.ps1 [<RepoDir>] 
+	<RepoDir> is the path to the repository (current working dir by default)
 .EXAMPLE
 	PS> ./list-submodules C:\MyRepo
 .NOTES

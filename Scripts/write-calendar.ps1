@@ -1,8 +1,8 @@
 ﻿<#
 .SYNOPSIS
-	write-calendar.ps1 [<Month>] [<Year>]
+	Writes out calendar elements, either a single month or an entire year
 .DESCRIPTION
-	Writes out calendar elements, either a single month or an entire year.
+	write-calendar.ps1 [<Month>] [<Year>]
 .PARAMETER Month
 	If specified, will limit output to a single month with this numeral value.
 .PARAMETER Year

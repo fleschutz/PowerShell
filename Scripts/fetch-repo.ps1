@@ -1,8 +1,8 @@
 ﻿<#
 .SYNOPSIS
-	fetch-repo.ps1 [<repo-dir>]
-.DESCRIPTION
 	Fetches updates for a local Git repository (including submodules)
+.DESCRIPTION
+	fetch-repo.ps1 [<repo-dir>]
 .EXAMPLE
 	PS> ./fetch-repo
 .NOTES

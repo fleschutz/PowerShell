@@ -1,8 +1,8 @@
 ﻿<#
 .SYNOPSIS
-	write-typewriter.ps1 [<text>] [<speed>]
+	Writes text with the typewriter effect
 .DESCRIPTION
-	Writes the given text with the typewriter effect
+	write-typewriter.ps1 [<text>] [<speed>]
 .EXAMPLE
 	PS> ./write-typewriter "Hello World"
 .NOTES

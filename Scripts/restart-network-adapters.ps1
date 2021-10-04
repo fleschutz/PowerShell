@@ -1,8 +1,8 @@
 ﻿<#
 .SYNOPSIS
-	restart-network-adapters.ps1
-.DESCRIPTION
 	Restarts all local network adapters (needs admin rights)
+.DESCRIPTION
+	restart-network-adapters.ps1
 .EXAMPLE
 	PS> ./restart-network-adapters
 .NOTES

@@ -1,8 +1,8 @@
 ﻿<#
 .SYNOPSIS
-	translate-files.ps1 [<file-pattern>]
+	Translates text files into any supported language
 .DESCRIPTION
-	Translates the given text files into any supported language
+	translate-files.ps1 [<FilePattern>]
 .EXAMPLE
 	PS> ./translate-files C:\Temp\*.txt
 .NOTES

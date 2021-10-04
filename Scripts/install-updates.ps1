@@ -1,8 +1,8 @@
 ﻿<#
 .SYNOPSIS
-	install-updates.ps1
+	Installs updates for the local machine (needs admin rights)
 .DESCRIPTION
-	Install updates on the local machhine (needs admin rights)
+	install-updates.ps1
 .EXAMPLE
 	PS> ./install-updates
 .NOTES

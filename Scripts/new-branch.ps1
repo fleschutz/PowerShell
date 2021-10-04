@@ -1,8 +1,8 @@
 ﻿<#
 .SYNOPSIS
-	new-branch.ps1 [<BranchName>] [<RepoDir>]
-.DESCRIPTION
 	Creates and switches to a new branch in a Git repository
+.DESCRIPTION
+	new-branch.ps1 [<BranchName>] [<RepoDir>]
 .EXAMPLE
 	PS> ./new-branch test123
 .NOTES

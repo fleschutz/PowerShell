@@ -1,8 +1,8 @@
 ﻿<#
 .SYNOPSIS
-	list-cli-tools.ps1
-.DESCRIPTION
 	Lists available command-line interface (CLI) tools
+.DESCRIPTION
+	list-cli-tools.ps1
 .EXAMPLE
 	PS> ./list-cli-tools
 

@@ -1,8 +1,8 @@
 ﻿<#
 .SYNOPSIS
-	list-tiobe-index.ps1 
-.DESCRIPTION
 	Lists the TIOBE index of top programming languages
+.DESCRIPTION
+	list-tiobe-index.ps1 
 .EXAMPLE
 	PS> ./list-tiobe-index
 .NOTES

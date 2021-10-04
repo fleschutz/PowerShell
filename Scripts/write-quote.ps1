@@ -1,8 +1,8 @@
 ﻿<#
 .SYNOPSIS
-	write-quote.ps1 
-.DESCRIPTION
 	Writes a random quote to the console
+.DESCRIPTION
+	write-quote.ps1 
 .EXAMPLE
 	PS> ./write-quote
 .NOTES

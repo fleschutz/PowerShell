@@ -1,8 +1,8 @@
 ﻿<#
 .SYNOPSIS
-	check-ipv4-address.ps1 [<Address>]
-.DESCRIPTION
 	Checks the given IPv4 address for validity
+.DESCRIPTION
+	check-ipv4-address.ps1 [<Address>]
 .EXAMPLE
 	PS> ./check-ipv4-address 192.168.11.22
 	✔️ IPv4 192.168.11.22 is valid

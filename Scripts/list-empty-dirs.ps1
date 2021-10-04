@@ -1,8 +1,9 @@
 ﻿<#
 .SYNOPSIS
-	list-empty-dirs.ps1 [<dir-tree>]
+	Lists empty subfolders within a directory tree
 .DESCRIPTION
-	Lists empty subfolders within the given directory tree
+	list-empty-dirs.ps1 [<DirTree>]
+	<DirTree> is the path to the directory tree
 .EXAMPLE
 	PS> ./list-empty-dirs C:\
 .NOTES

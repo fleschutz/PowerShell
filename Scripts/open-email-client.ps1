@@ -1,8 +1,8 @@
 ﻿<#
 .SYNOPSIS
-	open-email-client.ps1
-.DESCRIPTION
 	Starts the default email client
+.DESCRIPTION
+	open-email-client.ps1
 .EXAMPLE
 	PS> ./open-email-client
 .NOTES

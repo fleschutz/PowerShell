@@ -1,8 +1,8 @@
 ﻿<#
 .SYNOPSIS
-	simulate-matrix.ps1 
-.DESCRIPTION
 	Simulates the Matrix (fun)
+.DESCRIPTION
+	simulate-matrix.ps1 
 .EXAMPLE
 	PS> ./simulate-matrix
 .NOTES

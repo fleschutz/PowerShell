@@ -1,8 +1,8 @@
 ﻿<#
 .SYNOPSIS
-	clear-recycle-bin.ps1 
+	Removes the content of the recycle bin folder permanently
 .DESCRIPTION
-	Removes the content of the recycle bin folder
+	clear-recycle-bin.ps1 
 	NOTE: can not be undo!
 .EXAMPLE
 	PS> ./clear-recycle-bin

@@ -1,8 +1,8 @@
 ﻿<#
 .SYNOPSIS
-	list-profiles.ps1
+	Lists the user's PowerShell profiles
 .DESCRIPTION
-	Lists your PowerShell profiles.
+	list-profiles.ps1
 .EXAMPLE
 	PS> ./list-profiles
 	

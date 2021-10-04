@@ -1,8 +1,8 @@
 ﻿<#
 .SYNOPSIS
-	what-is.ps1 [<abbreviation>]
+	Prints a description of the given abbreviation
 .DESCRIPTION
-	Prints a description of the given abbreviation.
+	what-is.ps1 [<abbreviation>]
 .EXAMPLE
 	PS> ./what-is CIA
 .NOTES

@@ -1,8 +1,8 @@
 ﻿<#
 .SYNOPSIS
-	new-symlink.ps1 [<symlink>] [<target>]
-.DESCRIPTION
 	Creates a new symbolic link file
+.DESCRIPTION
+	new-symlink.ps1 [<symlink>] [<target>]
 .EXAMPLE
 	PS> ./new-symlink C:\Temp\HDD C:\
 .NOTES

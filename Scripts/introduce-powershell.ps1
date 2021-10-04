@@ -1,8 +1,8 @@
 ﻿<#
 .SYNOPSIS
-	introduce-powershell.ps1
-.DESCRIPTION
 	Introduces PowerShell to new users
+.DESCRIPTION
+	introduce-powershell.ps1
 .EXAMPLE
 	PS> ./introduce-powershell
 .NOTES

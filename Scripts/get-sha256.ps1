@@ -1,8 +1,8 @@
 ﻿<#
 .SYNOPSIS
-	get-sha256.ps1 [<file>]
+	Prints the SHA256 checksum of a file
 .DESCRIPTION
-	Prints the SHA256 checksum of the given file
+	get-sha256.ps1 [<file>]
 .EXAMPLE
 	PS> ./get-sha256 C:\MyFile.txt
 .NOTES

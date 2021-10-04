@@ -1,8 +1,8 @@
 ﻿<#
 .SYNOPSIS
-	speak-spanish.ps1 [<text>]
-.DESCRIPTION
 	Speaks the given text with a Spanish text-to-speech (TTS) voice
+.DESCRIPTION
+	speak-spanish.ps1 [<text>]
 .EXAMPLE
 	PS> ./speak-spanish Hola
 .NOTES

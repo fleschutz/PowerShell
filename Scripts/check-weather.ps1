@@ -1,8 +1,8 @@
 ﻿<#
 .SYNOPSIS
-	check-weather.ps1 [<location>]
-.DESCRIPTION
 	Checks the weather for critical values
+.DESCRIPTION
+	check-weather.ps1 [<location>]
 .EXAMPLE
 	PS> ./check-weather
 .LINK

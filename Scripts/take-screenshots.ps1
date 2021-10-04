@@ -1,8 +1,9 @@
 ﻿<#
 .SYNOPSIS
-	take-screenshots.ps1 [<TargetDir>] [<Interval>]
+	Takes screenshots and saves them into a folder
 .DESCRIPTION
-	Takes screenshots and saves them into a target directory (per default every 60 seconds)
+	take-screenshots.ps1 [<TargetDir>] [<Interval>]
+	Takes screenshots and saves them into a folder (per default every 60 seconds)
 .EXAMPLE
 	PS> ./take-screenshots C:\Temp 60
 .NOTES

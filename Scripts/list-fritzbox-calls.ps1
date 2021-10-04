@@ -1,8 +1,8 @@
 ﻿<#
 .SYNOPSIS
-	list-fritzbox-calls.ps1 [<username>] [<password>]
-.DESCRIPTION
 	Lists the phone calls of the FRITZ!Box device
+.DESCRIPTION
+	list-fritzbox-calls.ps1 [<Username>] [<Password>]
 .EXAMPLE
 	PS> ./list-fritzbox-calls
 .NOTES

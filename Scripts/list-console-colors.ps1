@@ -1,8 +1,8 @@
 ﻿<#
 .SYNOPSIS
-	list-console-colors.ps1 
-.DESCRIPTION
 	Lists all console colors
+.DESCRIPTION
+	list-console-colors.ps1 
 .EXAMPLE
 	PS> ./list-console-colors
 .NOTES

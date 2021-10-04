@@ -1,8 +1,8 @@
 ﻿<#
 .SYNOPSIS
-	cd-dropbox.ps1 
-.DESCRIPTION
 	Change the working directory to the user's Dropbox folder
+.DESCRIPTION
+	cd-dropbox.ps1 
 .EXAMPLE
 	PS> ./cd-dropbox
 	📂/home/markus/Dropbox

@@ -1,8 +1,8 @@
 ﻿<#
 .SYNOPSIS
-	speak-epub.ps1 [<filename>]
-.DESCRIPTION
 	Speaks the content of the given Epub file by text-to-speech (TTS).
+.DESCRIPTION
+	speak-epub.ps1 [<filename>]
 .EXAMPLE
 	PS> ./speak-epub C:\MyBook.epub
 .NOTES

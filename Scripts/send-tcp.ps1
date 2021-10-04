@@ -1,8 +1,8 @@
 ﻿<#
 .SYNOPSIS
-	send-tcp.ps1 [<target-IP>] [<target-port>] [<message>]
-.DESCRIPTION
 	Sends a TCP message to the given IP address and port
+.DESCRIPTION
+	send-tcp.ps1 [<TargetIP>] [<TargetPort>] [<Message>]
 .EXAMPLE
 	PS> ./send-tcp 192.168.100.100 8080 "TEST"
 .NOTES

@@ -1,8 +1,8 @@
 ﻿<#
 .SYNOPSIS
-	weather.ps1 [<GeoLocation>]
+	Lists the current weather forecast
 .DESCRIPTION
-	Prints the current weather forecast
+	weather.ps1 [<GeoLocation>]
 .EXAMPLE
 	PS> ./weather Paris
 .NOTES

@@ -1,8 +1,8 @@
 ﻿<#
 .SYNOPSIS
-	play-mission-impossible.ps1
-.DESCRIPTION
 	Plays the Mission Impossible theme
+.DESCRIPTION
+	play-mission-impossible.ps1
 .EXAMPLE
 	PS> ./play-mission-impossible
 .NOTES

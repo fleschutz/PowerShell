@@ -1,8 +1,8 @@
 ﻿<#
 .SYNOPSIS
-	remove-print-jobs.ps1
-.DESCRIPTION
 	Removes all jobs from all printers
+.DESCRIPTION
+	remove-print-jobs.ps1
 .EXAMPLE
 	PS> ./remove-print-jobs
 .NOTES

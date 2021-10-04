@@ -1,8 +1,9 @@
 ﻿<#
 .SYNOPSIS
-	list-latest-tag.ps1 [<repo-dir>] 
-.DESCRIPTION
 	Lists the latest tag on the current branch in a Git repository
+.DESCRIPTION
+	list-latest-tag.ps1 [<RepoDir>] 
+	<RepoDir> is the path to the repository
 .EXAMPLE
 	PS> ./list-latest-tag C:\MyRepo
 .NOTES

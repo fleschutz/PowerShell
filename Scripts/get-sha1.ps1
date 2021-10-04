@@ -1,8 +1,8 @@
 ﻿<#
 .SYNOPSIS
-	get-sha1.ps1 [<file>]
+	Prints the SHA1 checksum of a file
 .DESCRIPTION
-	Prints the SHA1 checksum of the given file
+	get-sha1.ps1 [<file>]
 .EXAMPLE
 	PS> ./get-sha1 C:\MyFile.txt
 .NOTES

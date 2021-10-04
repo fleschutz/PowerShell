@@ -1,8 +1,8 @@
 ﻿<#
 .SYNOPSIS
-	list-timezones.ps1 
-.DESCRIPTION
 	Lists all available time zones
+.DESCRIPTION
+	list-timezones.ps1 
 .EXAMPLE
 	PS> ./list-timezones
 

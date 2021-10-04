@@ -1,8 +1,8 @@
 ﻿<#
 .SYNOPSIS
-	list-weather.ps1 [<location>]
+	Lists the hourly weather report
 .DESCRIPTION
-	Lists the hourly weather
+	list-weather.ps1 [<Location>]
 .EXAMPLE
 	PS> ./list-weather
 .NOTES

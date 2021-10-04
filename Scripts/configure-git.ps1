@@ -1,8 +1,8 @@
 <#
 .SYNOPSIS
-	configure-git.ps1 [<full-name>] [<email-address>] [<favorite-editor>]
+	Configures the user settings for Git 
 .DESCRIPTION
-	Sets up the Git user configuration
+	configure-git.ps1 [<full-name>] [<email-address>] [<favorite-editor>]
 .EXAMPLE
 	PS> ./configure-git
 .NOTES

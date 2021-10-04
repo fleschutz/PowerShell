@@ -1,8 +1,8 @@
 ﻿<#
 .SYNOPSIS
-	write-morse-code.ps1 [<text>] [<speed>]
+	Writes text in Morse code
 .DESCRIPTION
-	Writes the given text in Morse code
+	write-morse-code.ps1 [<text>] [<speed>]
 .EXAMPLE
 	PS> ./write-morse-code "Hello World"
 .NOTES

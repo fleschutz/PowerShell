@@ -1,8 +1,8 @@
 ﻿<#
 .SYNOPSIS
-	check-ipv6-address.ps1 [<Address>]
-.DESCRIPTION
 	Checks the given IPv6 address for validity
+.DESCRIPTION
+	check-ipv6-address.ps1 [<Address>]
 .EXAMPLE
 	PS> ./check-ipv6-address fe80::200:5aee:feaa:20a2
 	✔️ IPv6 fe80::200:5aee:feaa:20a2 is valid

@@ -1,22 +1,22 @@
 ﻿<#
 .SYNOPSIS
-	clone-repos.ps1 [<ParentDir>]
+	Clones well-known Git repositories into a folder
 .DESCRIPTION
-	Clones well-known Git repositories under the current/given directory
+	clone-repos.ps1 [<folder>]
 .EXAMPLE
-	PS> ./clone-repos C:\MyRepos
+	PS> ./clone-repos C:\Users\Markus\Repos
 .NOTES
 	Author: Markus Fleschutz · License: CC0
 .LINK
 	https://github.com/fleschutz/PowerShell
 #>
 
-param([string]$ParentDir = "$PWD")
+param([string]$folder = "$PWD")
 
 try {
 	$StopWatch = [system.diagnostics.stopwatch]::startNew()
 
-	if (-not(test-path "$ParentDir" -pathType container)) { throw "Can't access directory: $ParentDir" }
+	if (-not(test-path "$folder" -pathType container)) { throw "Can't access directory: $folder" }
 
 	$Null = (git --version)
 	if ($lastExitCode -ne "0") { throw "Can't execute 'git' - make sure Git is installed and available" }
@@ -32,22 +32,22 @@ try {
 		[string]$Shallow = $Row.Shallow
 		[string]$URL = $Row.URL
 
-		if (test-path "$ParentDir/$FolderName" -pathType container) {
+		if (test-path "$folder/$FolderName" -pathType container) {
 			"📂$FolderName exists, skipping..."
 			continue
 		}
 		if ($Shallow -eq "yes") {
 			"🢃 Cloning to 📂$FolderName, $Branch branch, shallow..."
-			& git clone --branch "$Branch" --depth 1 --shallow-submodules --recurse-submodules "$URL" "$ParentDir/$FolderName"
+			& git clone --branch "$Branch" --depth 1 --shallow-submodules --recurse-submodules "$URL" "$folder/$FolderName"
 		} else {
 			"🢃 Cloning to 📂$FolderName, $Branch branch, full history..."
-			& git clone --branch "$Branch" --recurse-submodules "$URL" "$ParentDir/$FolderName"
+			& git clone --branch "$Branch" --recurse-submodules "$URL" "$folder/$FolderName"
 		}
 		if ($lastExitCode -ne "0") { throw "'git clone $URL' failed" }
 		$Count++
 	}
 	[int]$Elapsed = $StopWatch.Elapsed.TotalSeconds
-	"✔️ cloned $Count Git repositories at 📂$ParentDir in $Elapsed sec"
+	"✔️ cloned $Count Git repositories into 📂$folder in $Elapsed sec"
 	exit 0 # success
 } catch {
 	"⚠️ Error: $($Error[0]) ($($MyInvocation.MyCommand.Name):$($_.InvocationInfo.ScriptLineNumber))"

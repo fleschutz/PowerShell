@@ -1,8 +1,8 @@
 ﻿<#
 .SYNOPSIS
-	unmute-audio.ps1
+	Unmutes the audio output
 .DESCRIPTION
-	Unmutes the audio output.
+	unmute-audio.ps1
 .EXAMPLE
 	PS> .\unmute-audio.ps1
 .NOTES

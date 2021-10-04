@@ -1,8 +1,8 @@
 ﻿<#
 .SYNOPSIS
-	list-latest-tags.ps1 [<parent-dir>]
+	Lists the latests tags in all Git repositories in a folder
 .DESCRIPTION
-	Lists the latests tags in all Git repositories under the current/given directory
+	list-latest-tags.ps1 [<ParentDir>]
 .EXAMPLE
 	PS> ./list-latest-tags C:\MyRepos
 .NOTES

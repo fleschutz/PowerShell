@@ -1,8 +1,8 @@
 ﻿<#
 .SYNOPSIS
-	cd-home.ps1 
-.DESCRIPTION
 	Change the working directory to the user's home directory
+.DESCRIPTION
+	cd-home.ps1 
 .EXAMPLE
 	PS> ./cd-home
 	📂/home/markus

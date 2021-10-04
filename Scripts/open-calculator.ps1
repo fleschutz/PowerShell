@@ -1,8 +1,8 @@
 ﻿<#
 .SYNOPSIS
-	open-calculator.ps1
+	Starts the calculator application
 .DESCRIPTION
-	Starts the calculator program
+	open-calculator.ps1
 .EXAMPLE
 	PS> ./open-calculator
 .NOTES

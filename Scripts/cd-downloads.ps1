@@ -1,8 +1,8 @@
 ﻿<#
 .SYNOPSIS
-	cd-downloads.ps1 
-.DESCRIPTION
 	Change the working directory to the user's downloads folder
+.DESCRIPTION
+	cd-downloads.ps1 
 .EXAMPLE
 	PS> ./cd-downloads
 	📂/home/markus/Downloads

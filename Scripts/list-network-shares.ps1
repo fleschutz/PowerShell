@@ -1,8 +1,8 @@
 ﻿<#
 .SYNOPSIS
-	list-network-shares.ps1 
-.DESCRIPTION
 	Lists the network shares of the local computer
+.DESCRIPTION
+	list-network-shares.ps1 
 .EXAMPLE
 	PS> ./list-network-shares
 

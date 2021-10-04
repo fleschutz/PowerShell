@@ -1,8 +1,8 @@
 ﻿<#
 .SYNOPSIS
-	list-workdir.ps1 
-.DESCRIPTION
 	Lists the current working directory
+.DESCRIPTION
+	list-workdir.ps1 
 .EXAMPLE
 	PS> ./list-workdir
 .NOTES

@@ -1,8 +1,8 @@
 ﻿<#
 .SYNOPSIS
-	list-memos.ps1 
-.DESCRIPTION
 	Lists all memos in $HOME/Memos.csv
+.DESCRIPTION
+	list-memos.ps1 
 .EXAMPLE
 	PS> ./list-memos
 .NOTES

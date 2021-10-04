@@ -1,8 +1,8 @@
 ﻿<#
 .SYNOPSIS
-	translate-file.ps1 [<file>] [<source-lang>] [<target-lang>]
+	Translates a text file into another language 
 .DESCRIPTION
-	Translates the given text file into another language and prints the result
+	translate-file.ps1 [<file>] [<source-lang>] [<target-lang>]
 .EXAMPLE
 	PS> ./translate-file C:\Memo.txt en de
 .NOTES

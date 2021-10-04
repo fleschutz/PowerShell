@@ -1,8 +1,8 @@
 ﻿<#
 .SYNOPSIS
-	list-news.ps1 [<RSS-URL>] [<max-count>]
-.DESCRIPTION
 	Lists the latest news
+.DESCRIPTION
+	list-news.ps1 [<RSS-URL>] [<max-count>]
 .EXAMPLE
 	PS> ./list-news
 .NOTES

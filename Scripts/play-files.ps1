@@ -1,8 +1,8 @@
 ﻿<#
 .SYNOPSIS
-	play-files.ps1 [<pattern>]
-.DESCRIPTION
 	Plays the given audio files (supporting MP3 and WAV format)
+.DESCRIPTION
+	play-files.ps1 [<FilePattern>]
 .EXAMPLE
 	PS> ./play-files *.mp3
 .NOTES
@@ -11,10 +11,10 @@
 	https://github.com/fleschutz/PowerShell
 #>
 
-param([string]$Pattern = "*")
+param([string]$FilePattern = "*")
 
 try {
-	$Files = (get-childItem -path "$Pattern" -attributes !Directory)
+	$Files = (get-childItem -path "$FilePattern" -attributes !Directory)
 	"Playing $($Files.Count) files ..."
 	foreach ($File in $Files) {
 		if ("$File" -like "*.mp3") {

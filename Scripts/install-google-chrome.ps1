@@ -1,8 +1,8 @@
 ﻿<#
 .SYNOPSIS
-	install-google-chrome.ps1
-.DESCRIPTION
 	Installs the latest Google Chrome browser
+.DESCRIPTION
+	install-google-chrome.ps1
 .EXAMPLE
 	PS> ./install-google-chrome
 .NOTES

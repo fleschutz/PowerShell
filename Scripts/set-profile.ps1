@@ -1,8 +1,8 @@
 ﻿<#
 .SYNOPSIS
-	set-profile.ps1
-.DESCRIPTION
 	Sets the PowerShell profile for the current user
+.DESCRIPTION
+	set-profile.ps1
 .EXAMPLE
 	PS> ./set-profile
 .NOTES

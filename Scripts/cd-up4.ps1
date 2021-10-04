@@ -1,8 +1,8 @@
 ﻿<#
 .SYNOPSIS
-	cd-up4.ps1
-.DESCRIPTION
 	Change the working directory to four directory levels up
+.DESCRIPTION
+	cd-up4.ps1
 .EXAMPLE
 	PS> ./cd-up4
 	(four levels up)

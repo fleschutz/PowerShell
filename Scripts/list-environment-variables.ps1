@@ -1,8 +1,8 @@
 ﻿<#
 .SYNOPSIS
-	list-environment-variables.ps1
-.DESCRIPTION
 	Lists all environment variables
+.DESCRIPTION
+	list-environment-variables.ps1
 .EXAMPLE
 	PS> ./list-environment-variables
 

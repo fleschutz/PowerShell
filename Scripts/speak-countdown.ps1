@@ -1,8 +1,8 @@
 ﻿<#
 .SYNOPSIS
-	speak-countdown.ps1 [start-number]
-.DESCRIPTION
 	Speaks a countdown by text-to-speech (TTS)
+.DESCRIPTION
+	speak-countdown.ps1 [StartNumber]
 .EXAMPLE
 	PS> ./speak-countdown 60
 .NOTES

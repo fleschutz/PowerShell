@@ -1,8 +1,8 @@
 ﻿<#
 .SYNOPSIS
-	list-repos.ps1 [<ParentDir>]
+	Lists the details of all Git repositories in a folder
 .DESCRIPTION
-	Lists the details of all Git repositories under a directory
+	list-repos.ps1 [<ParentDir>]
 .EXAMPLE
 	PS> ./list-repos C:\MyRepos
 	

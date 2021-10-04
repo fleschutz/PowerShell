@@ -1,8 +1,8 @@
 ﻿<#
 .SYNOPSIS
-	enable-crash-dumps.ps1 
-.DESCRIPTION
 	Enables the writing of crash dumps
+.DESCRIPTION
+	enable-crash-dumps.ps1 
 .EXAMPLE
 	PS> ./enable-crash-dumps
 .NOTES

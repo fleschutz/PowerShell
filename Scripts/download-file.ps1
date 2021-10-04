@@ -1,8 +1,8 @@
 ﻿<#
 .SYNOPSIS
-	download-file.ps1 [<URL>]
-.DESCRIPTION
 	Downloads a file from the given URL
+.DESCRIPTION
+	download-file.ps1 [<URL>]
 .EXAMPLE
 	PS> ./download-file "https://www.cnn.com/index.html"
 .NOTES

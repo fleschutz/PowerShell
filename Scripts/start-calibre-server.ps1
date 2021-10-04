@@ -1,7 +1,8 @@
 ﻿<#
 .SYNOPSIS
-	start-calibre-server.ps1 [<port>]
+	Starts a local Calibre server
 .DESCRIPTION
+	start-calibre-server.ps1 [<port>]
 	Starts a local Calibre server as background process (Web port number is 8099 by default)
 .EXAMPLE
 	PS> ./start-calibre-server

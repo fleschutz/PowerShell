@@ -1,8 +1,8 @@
 ﻿<#
 .SYNOPSIS
-	new-zipfile.ps1 [<directory>]
+	Creates a new .ZIP file from a folder (including subfolders)
 .DESCRIPTION
-	Creates a new .zip file from a directory
+	new-zipfile.ps1 [<folder>]
 .EXAMPLE
 	PS> ./new-zipfile C:\Windows
 .NOTES
@@ -11,17 +11,17 @@
 	https://github.com/fleschutz/PowerShell
 #>
 
-param([string]$directory = "")
+param([string]$folder = "")
 
 try {
-	if ($directory -eq "" ) { $directory = read-host "Enter the path to the directory to zip" }
+	if ($folder -eq "" ) { $folder = read-host "Enter the path to the folder to zip" }
 	$StopWatch = [system.diagnostics.stopwatch]::startNew()
 
-	$directory = resolve-path $directory
-	compress-archive -path $directory -destinationPath $directory.zip
+	$folder = resolve-path $folder
+	compress-archive -path $folder -destinationPath $folder.zip
 
 	[int]$Elapsed = $StopWatch.Elapsed.TotalSeconds
-	"✔️ created zip file $($directory).zip in $Elapsed sec"
+	"✔️ created zip file $($folder).zip in $Elapsed sec"
 	exit 0 # success
 } catch {
 	"⚠️ Error: $($Error[0]) ($($MyInvocation.MyCommand.Name):$($_.InvocationInfo.ScriptLineNumber))"

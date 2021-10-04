@@ -1,8 +1,8 @@
 ﻿<#
 .SYNOPSIS
-	switch-branch.ps1 [<BranchName>] [<RepoDir>]
-.DESCRIPTION
 	Switches to another branch in a Git repository (including submodules)
+.DESCRIPTION
+	switch-branch.ps1 [<BranchName>] [<RepoDir>]
 .EXAMPLE
 	PS> ./switch-branch main C:\MyRepo
 .NOTES

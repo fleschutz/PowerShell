@@ -1,7 +1,8 @@
 ﻿<#
 .SYNOPSIS
-	set-wallpaper.ps1 [<image-file>] [<style>]
+	Sets the given image file as desktop wallpaper
 .DESCRIPTION
+	set-wallpaper.ps1 [<image-file>] [<style>]
 	Sets the given image file as desktop wallpaper (.JPG or .PNG supported)
         (<style> is either Fill, Fit (default), Stretch, Tile, Center, or Span)
 .EXAMPLE

@@ -1,8 +1,8 @@
 ﻿<#
 .SYNOPSIS
-	close-windows-terminal.ps1 
-.DESCRIPTION
 	Closes the Windows Terminal application
+.DESCRIPTION
+	close-windows-terminal.ps1 
 .EXAMPLE
 	PS> ./close-windows-terminal
 .NOTES

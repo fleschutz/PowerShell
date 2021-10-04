@@ -1,8 +1,8 @@
 ﻿<#
 .SYNOPSIS
-	clean-repos.ps1 [<ParentDir>]
+	Cleans all Git repositories in a folder from untracked files (including submodules)
 .DESCRIPTION
-	Cleans all Git repositories under the current/given directory from untracked files (including submodules)
+	clean-repos.ps1 [<ParentDir>]
 .EXAMPLE
 	PS> ./clean-repos C:\MyRepos
 .NOTES

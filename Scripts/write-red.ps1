@@ -1,8 +1,8 @@
 ﻿<#
 .SYNOPSIS
-	write-red.ps1 [<text>]
+	Writes text in a red foreground color
 .DESCRIPTION
-	Writes the given text in a red foreground color
+	write-red.ps1 [<text>]
 .EXAMPLE
 	PS> ./write-red "Hello World"
 .NOTES

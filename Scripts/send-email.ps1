@@ -1,8 +1,8 @@
 ﻿<#
 .SYNOPSIS
-	send-email.ps1 
-.DESCRIPTION
 	Sends an email message
+.DESCRIPTION
+	send-email.ps1 
 .EXAMPLE
 	PS> ./send-email
 .NOTES

@@ -1,8 +1,8 @@
 ﻿<#
 .SYNOPSIS
-	write-rot13.ps1 [<text>]
+	Writes text encoded or decoded with ROT13
 .DESCRIPTION
-	Writes the given text encoded or decoded with ROT13
+	write-rot13.ps1 [<text>]
 .EXAMPLE
 	PS> ./write-rot13 "Hello World"
 .NOTES

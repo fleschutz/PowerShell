@@ -1,8 +1,10 @@
 ﻿<#
 .SYNOPSIS
-	list-branches.ps1 [<repo-dir>] [<pattern>]
+	Lists all branches in a Git repository
 .DESCRIPTION
-	Lists all branches in the current/given Git repository
+	list-branches.ps1 [<RepoDir>] [<SearchPattern>]
+	<RepoDir> is the current working directory by default
+	<SearchPattern> is "*" (anything) by default
 .EXAMPLE
 	PS> ./list-branches
 .NOTES
@@ -11,7 +13,7 @@
 	https://github.com/fleschutz/PowerShell
 #>
 
-param([string]$RepoDir = "$PWD", [string]$Pattern = "*")
+param([string]$RepoDir = "$PWD", [string]$SearchPattern = "*")
 
 try {
 	if (-not(test-path "$RepoDir" -pathType container)) { throw "Can't access directory: $RepoDir" }
@@ -31,7 +33,7 @@ try {
 	foreach($Branch in $Branches) {
 		if ("$Branch" -match "origin/HEAD") { continue }
 		$BranchName = $Branch.substring(9)
-		if ("$BranchName" -notlike "$Pattern") { continue }
+		if ("$BranchName" -notlike "$SearchPattern") { continue }
 		"$BranchName"
 	}
 	""

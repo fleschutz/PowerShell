@@ -1,8 +1,9 @@
 ﻿<#
 .SYNOPSIS
-	enable-god-mode.ps1 
+	Enables the god mode
 .DESCRIPTION
 	Enables the god mode (adds a new icon to the desktop)
+	enable-god-mode.ps1 
 .EXAMPLE
 	PS> ./enable-god-mode
 .NOTES

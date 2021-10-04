@@ -1,8 +1,9 @@
 ﻿<#
 .SYNOPSIS
-	list-files.ps1 [<dir-tree>]
+	Lists all files in a directory tree
 .DESCRIPTION
-	Lists all files in the given directory tree
+	list-files.ps1 [<DirTree>]
+	<DirTree> is the path to the directory tree
 .EXAMPLE
 	PS> ./list-files C:\
 .NOTES

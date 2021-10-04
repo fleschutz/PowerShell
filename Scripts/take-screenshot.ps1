@@ -1,8 +1,8 @@
 ﻿<#
 .SYNOPSIS
-	take-screenshot.ps1 [<directory>]
+	Takes a single screenshot and saves it into a folder
 .DESCRIPTION
-	Takes a single screenshot and saves it into the current/given directory
+	take-screenshot.ps1 [<directory>]
 .EXAMPLE
 	PS> ./take-screenshot C:\Temp
 .NOTES

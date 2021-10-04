@@ -1,8 +1,8 @@
 ﻿<#
 .SYNOPSIS
-	list-processes.ps1 
-.DESCRIPTION
 	Lists all local computer processes
+.DESCRIPTION
+	list-processes.ps1 
 .EXAMPLE
 	PS> ./list-processes
 

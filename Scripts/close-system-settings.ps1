@@ -1,8 +1,8 @@
 ﻿<#
 .SYNOPSIS
-	close-system-settings.ps1 
+	Closes the System Settings window
 .DESCRIPTION
-	Closes the System Settings gracefully
+	close-system-settings.ps1 
 .EXAMPLE
 	PS> ./close-system-settings
 .NOTES

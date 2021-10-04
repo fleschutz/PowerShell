@@ -1,8 +1,8 @@
 ﻿<#
 .SYNOPSIS
-	convert-sql2csv.ps1 [<server>] [<database>] [<username>] [<password>] [<query>]
-.DESCRIPTION
 	Converts a SQL database table to a .CSV file
+.DESCRIPTION
+	convert-sql2csv.ps1 [<server>] [<database>] [<username>] [<password>] [<query>]
 .EXAMPLE
 	PS> ./convert-sql2csv
 .NOTES

@@ -1,8 +1,8 @@
 ﻿<#
 .SYNOPSIS
-	close-vlc.ps1 
-.DESCRIPTION
 	Closes the VLC media player application
+.DESCRIPTION
+	close-vlc.ps1 
 .EXAMPLE
 	PS> ./close-vlc
 .NOTES

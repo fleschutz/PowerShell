@@ -1,8 +1,8 @@
 ﻿<#
 .SYNOPSIS
-	poweroff.ps1
-.DESCRIPTION
 	Halts the local computer (needs admin rights)
+.DESCRIPTION
+	poweroff.ps1
 .EXAMPLE
 	PS> ./poweroff
 .NOTES

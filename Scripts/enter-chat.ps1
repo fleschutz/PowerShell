@@ -1,8 +1,8 @@
 ﻿<#
 .SYNOPSIS
-	enter-chat.ps1 
-.DESCRIPTION
 	Enters a chat using a common network shared file
+.DESCRIPTION
+	enter-chat.ps1 
 .EXAMPLE
 	PS> ./enter-chat
 .NOTES

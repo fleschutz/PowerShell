@@ -1,8 +1,8 @@
 ﻿<#
 .SYNOPSIS
-	cd-scripts.ps1 
-.DESCRIPTION
 	Change the working directory to the PowerShell scripts folder
+.DESCRIPTION
+	cd-scripts.ps1 
 .EXAMPLE
 	PS> ./cd-scripts
 	📂/home/markus/PowerShell/Scripts

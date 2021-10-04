@@ -1,8 +1,8 @@
 ﻿<#
 .SYNOPSIS
-	pull-repo.ps1 [<repo-dir>]
-.DESCRIPTION
 	Pulls updates for a local Git repository (including submodules)
+.DESCRIPTION
+	pull-repo.ps1 [<repo-dir>]
 .EXAMPLE
 	PS> ./pull-repo C:\MyRepo
 .NOTES

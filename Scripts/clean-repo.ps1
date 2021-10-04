@@ -1,8 +1,8 @@
 ﻿<#
 .SYNOPSIS
-	clean-repo.ps1 [<RepoDir>]
+	Cleans a Git repository from untracked files (including submodules)
 .DESCRIPTION
-	Cleans a Git repository from untracked files (including submodules, e.g. for a fresh build)
+	clean-repo.ps1 [<RepoDir>]
 .EXAMPLE
 	PS> ./clean-repo C:\MyRepo
 	🧹 Cleaning Git repository 📂C:\MyRepo from untracked files...

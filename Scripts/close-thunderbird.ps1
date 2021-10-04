@@ -1,8 +1,8 @@
 ﻿<#
 .SYNOPSIS
-	close-thunderbird.ps1 
+	Closes Mozilla's Thunderbird email client
 .DESCRIPTION
-	Closes the mail client Mozilla Thunderbird gracefully
+	close-thunderbird.ps1 
 .EXAMPLE
 	PS> ./close-thunderbird
 .NOTES

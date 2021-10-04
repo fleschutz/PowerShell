@@ -1,8 +1,8 @@
 ﻿<#
 .SYNOPSIS
-	new-qrcode.ps1 [<text>] [<image-size>]
-.DESCRIPTION
 	Generates a new QR code image file
+.DESCRIPTION
+	new-qrcode.ps1 [<Text>] [<ImageSize>]
 .EXAMPLE
 	PS> ./new-qrcode "Fasten seatbelt" 500x500
 .NOTES

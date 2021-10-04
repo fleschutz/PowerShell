@@ -1,8 +1,8 @@
 ﻿<#
 .SYNOPSIS
-	close-netflix.ps1 
+	Closes the Netflix application 
 .DESCRIPTION
-	Closes the Netflix application gracefully
+	close-netflix.ps1 
 .EXAMPLE
 	PS> ./close-netflix
 .NOTES

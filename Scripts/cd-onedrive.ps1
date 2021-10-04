@@ -1,8 +1,8 @@
 ﻿<#
 .SYNOPSIS
-	cd-onedrive.ps1 
-.DESCRIPTION
 	Change the working directory to the user's OneDrive folder
+.DESCRIPTION
+	cd-onedrive.ps1 
 .EXAMPLE
 	PS> ./cd-onedrive
 	📂/home/markus/OneDrive

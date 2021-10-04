@@ -1,8 +1,8 @@
 ﻿<#
 .SYNOPSIS
-	install-ssh-client.ps1
-.DESCRIPTION
 	Installs the SSH client (needs admin rights)
+.DESCRIPTION
+	install-ssh-client.ps1
 .EXAMPLE
 	PS> ./install-ssh-client
 .NOTES

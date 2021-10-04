@@ -1,8 +1,8 @@
 ﻿<#
 .SYNOPSIS
-	write-animated.ps1 [<line1>] .. [line9>] [<speed>]
-.DESCRIPTION
 	Writes animated text
+.DESCRIPTION
+	write-animated.ps1 [<line1>] .. [line9>] [<speed>]
 .EXAMPLE
 	PS> ./write-animated "Hello World"
 .NOTES

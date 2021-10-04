@@ -1,8 +1,8 @@
 ﻿<#
 .SYNOPSIS
-	cd-repos.ps1 
-.DESCRIPTION
 	Change the working directory to the user's Git repositories folder
+.DESCRIPTION
+	cd-repos.ps1 
 .EXAMPLE
 	PS> ./cd-repos
 	📂/home/markus/Repos

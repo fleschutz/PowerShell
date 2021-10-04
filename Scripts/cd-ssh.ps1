@@ -1,8 +1,8 @@
 ﻿<#
 .SYNOPSIS
-	cd-ssh.ps1 
-.DESCRIPTION
 	Change the working directory to the user's SSH folder
+.DESCRIPTION
+	cd-ssh.ps1 
 .EXAMPLE
 	PS> ./cd-ssh
 	📂/home/markus/.ssh

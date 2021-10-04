@@ -1,8 +1,8 @@
 ﻿<#
 .SYNOPSIS
-	mute-audio.ps1
-.DESCRIPTION
 	Mutes the audio output
+.DESCRIPTION
+	mute-audio.ps1
 .EXAMPLE
 	PS> ./mute-audio
 .NOTES

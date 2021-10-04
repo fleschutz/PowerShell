@@ -1,8 +1,8 @@
 ﻿<#
 .SYNOPSIS
-	install-github-cli.ps1 
-.DESCRIPTION
 	Installs GitHub CLI
+.DESCRIPTION
+	install-github-cli.ps1 
 .EXAMPLE
 	PS> ./install-github-cli
 .NOTES

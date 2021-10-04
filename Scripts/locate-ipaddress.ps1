@@ -1,8 +1,8 @@
 ﻿<#
 .SYNOPSIS
-	locate-ipaddress.ps1 [<IPaddress>]
-.DESCRIPTION
 	Prints the geographic location of the given IP address
+.DESCRIPTION
+	locate-ipaddress.ps1 [<IPaddress>]
 .EXAMPLE
 	PS> ./locate-ipaddress 177.144.67.98
 .NOTES
@@ -11,12 +11,12 @@
 	https://github.com/fleschutz/PowerShell
 #>
 
-param([string]$IPaddr = "")
+param([string]$IPaddress= "")
 
 try {
-	if ($IPaddr -eq "" ) { $IPaddr = read-host "Enter IP address to locate" }
+	if ($IPaddress -eq "" ) { $IPaddress = read-host "Enter IP address to locate" }
 
-	$result = Invoke-RestMethod -Method Get -Uri "http://ip-api.com/json/$IPaddr"
+	$result = Invoke-RestMethod -Method Get -Uri "http://ip-api.com/json/$IPaddress"
 	write-output $result
 	exit 0 # success
 } catch {

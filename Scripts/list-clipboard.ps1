@@ -1,8 +1,8 @@
 ﻿<#
 .SYNOPSIS
-	list-clipboard.ps1
-.DESCRIPTION
 	Lists the contents of the clipboard
+.DESCRIPTION
+	list-clipboard.ps1
 .EXAMPLE
 	PS> ./list-clipboard
 .NOTES

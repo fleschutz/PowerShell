@@ -1,8 +1,8 @@
 ﻿<#
 .SYNOPSIS
-	list-aliases.ps1
-.DESCRIPTION
 	Lists all PowerShell aliases
+.DESCRIPTION
+	list-aliases.ps1
 .EXAMPLE
 	PS> ./list-aliases
 

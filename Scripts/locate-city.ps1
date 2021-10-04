@@ -1,8 +1,8 @@
 ﻿<#
 .SYNOPSIS
-	locate-city.ps1 [<city>]
-.DESCRIPTION
 	Prints the geographic location of the given city
+.DESCRIPTION
+	locate-city.ps1 [<City>]
 .EXAMPLE
 	PS> ./locate-city Paris
 .NOTES

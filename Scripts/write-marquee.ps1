@@ -1,8 +1,8 @@
 ﻿<#
 .SYNOPSIS
-	write-marquee.ps1 [<text>] [<speed>]
+	Writes text as marquee
 .DESCRIPTION
-	Writes the given text as marquee
+	write-marquee.ps1 [<text>] [<speed>]
 .EXAMPLE
 	PS> ./write-marquee "Hello World"
 .NOTES

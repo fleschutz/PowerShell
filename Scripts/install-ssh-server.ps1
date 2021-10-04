@@ -1,8 +1,8 @@
 ﻿<#
 .SYNOPSIS
-	install-ssh-server.ps1
-.DESCRIPTION
 	Installs the SSH server (needs admin rights)
+.DESCRIPTION
+	install-ssh-server.ps1
 .EXAMPLE
 	PS> ./install-ssh-server
 .NOTES

@@ -1,8 +1,8 @@
 ﻿<#
 .SYNOPSIS
-	cd-root.ps1 
-.DESCRIPTION
 	Change the working directory to the root directory (C:\ on Windows)
+.DESCRIPTION
+	cd-root.ps1 
 .EXAMPLE
 	PS> ./cd-root
 	📂C:\

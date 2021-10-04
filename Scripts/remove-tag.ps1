@@ -1,8 +1,8 @@
 ﻿<#
 .SYNOPSIS
-	remove-tag.ps1 [<TagName>] [<Mode>] [<RepoDir>]
-.DESCRIPTION
 	Removes a Git tag (locally, remote, or both)
+.DESCRIPTION
+	remove-tag.ps1 [<TagName>] [<Mode>] [<RepoDir>]
 .EXAMPLE
 	PS> ./remove-tag v1.7 locally
 .LINK

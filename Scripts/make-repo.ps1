@@ -1,8 +1,9 @@
 ﻿<#
 .SYNOPSIS
-	make-repo.ps1 [<repo-dir>]
-.DESCRIPTION
 	Builds a Git repository supporting cmake,configure,autogen,Imakefile,Makefile
+.DESCRIPTION
+	make-repo.ps1 [<RepoDir>]
+	<RepoDir> is the path to the Git repository
 .EXAMPLE
 	PS> ./make-repo C:\MyRepo
 .NOTES

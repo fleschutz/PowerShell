@@ -1,8 +1,8 @@
 ﻿<#
 .SYNOPSIS
-	list-cmdlets.ps1 
-.DESCRIPTION
 	Lists all PowerShell cmdlets
+.DESCRIPTION
+	list-cmdlets.ps1 
 .EXAMPLE
 	PS> ./list-cmdlets
 

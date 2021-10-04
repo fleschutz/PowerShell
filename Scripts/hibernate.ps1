@@ -1,8 +1,8 @@
 ﻿<#
 .SYNOPSIS
-	hibernate.ps1
-.DESCRIPTION
 	Enables hibernate mode for the local computer (needs admin rights)
+.DESCRIPTION
+	hibernate.ps1
 .EXAMPLE
 	PS> ./hibernate
 .NOTES

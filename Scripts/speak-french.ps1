@@ -1,8 +1,8 @@
 ﻿<#
 .SYNOPSIS
-	speak-french.ps1 [<text>]
-.DESCRIPTION
 	Speaks the given text with a French text-to-speech (TTS) voice
+.DESCRIPTION
+	speak-french.ps1 [<text>]
 .EXAMPLE
 	PS> ./speak-french Salut
 .NOTES

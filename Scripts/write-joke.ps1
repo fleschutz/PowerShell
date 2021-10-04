@@ -1,8 +1,8 @@
 ﻿<#
 .SYNOPSIS
-	write-joke.ps1 
+	Writes a random Juck Norris joke to the console
 .DESCRIPTION
-	Writes a random Juck Norris joke to the console.
+	write-joke.ps1 
 .EXAMPLE
 	PS> ./write-joke
 	When Chuck Norris does division, there are no remainders. 😂

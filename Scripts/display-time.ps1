@@ -1,8 +1,9 @@
 ﻿<#
 .SYNOPSIS
-	display-time.ps1 [<seconds>]
+	Displays the current time
 .DESCRIPTION
 	Displays the current time (for 10 seconds by default)
+	display-time.ps1 [<seconds>]
 .EXAMPLE
 	PS> ./display-time
 .NOTES

@@ -1,8 +1,8 @@
 ﻿<#
 .SYNOPSIS
-	check-dns-resolution.ps1
-.DESCRIPTION
 	Checks the DNS resolution with frequently used domain names
+.DESCRIPTION
+	check-dns-resolution.ps1
 .EXAMPLE
 	PS> ./check-dns-resolution
 	✔️ 11.8 domains/sec (177 domains resolved in 15 sec)

@@ -1,8 +1,8 @@
 ﻿<#
 .SYNOPSIS
-	list-countries.ps1 
-.DESCRIPTION
 	Lists details of all countries
+.DESCRIPTION
+	list-countries.ps1 
 .EXAMPLE
 	PS> ./list-countries
 .NOTES

@@ -1,8 +1,8 @@
 ﻿<#
 .SYNOPSIS
-	write-vertical.ps1 [<text>]
+	Writes text in vertical direction
 .DESCRIPTION
-	Writes the given text in vertical direction
+	write-vertical.ps1 [<text>]
 .EXAMPLE
 	PS> ./write-vertical "Hello World"
 .NOTES

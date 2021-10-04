@@ -1,8 +1,9 @@
 ﻿<#
 .SYNOPSIS
-	list-exchange-rates.ps1 [<currency>]
+	Lists the exchange rates for a currency
 .DESCRIPTION
-	Lists the current exchange rates for the given currency (USD per default)
+	Lists the current exchange rates for the given currency (USD per default).
+	list-exchange-rates.ps1 [<currency>]
 .EXAMPLE
 	PS> ./list-exchange-rates EUR
 .NOTES

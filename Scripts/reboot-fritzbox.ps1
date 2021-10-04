@@ -1,8 +1,8 @@
 ﻿<#
 .SYNOPSIS
-	reboot-fritzbox.ps1 [<username>] [<password>]
-.DESCRIPTION
 	Reboots the FRITZ!Box device
+.DESCRIPTION
+	reboot-fritzbox.ps1 [<Username>] [<Password>]
 .EXAMPLE
 	PS> ./reboot-fritzbox
 .NOTES
@@ -11,13 +11,10 @@
 	https://github.com/fleschutz/PowerShell
 #>
 
-param([string]$USERNAME = "", [string]$PASSWORD = "")
-if ($USERNAME -eq "") {
-	$USERNAME = read-host "Enter username for FRITZ!Box"
-}
-if ($PASSWORD -eq "") {
-	$PASSWORD = read-host "Enter password for FRITZ!Box"
-}
+param([string]$Username = "", [string]$Password = "")
+
+if ($Username -eq "") { $Username = read-host "Enter username for FRITZ!Box" }
+if ($Password -eq "") { $Password = read-host "Enter password for FRITZ!Box" }
 $FB_FQDN = "fritz.box"
 
 if ($PSVersionTable.PSVersion.Major -lt 3) {
@@ -41,7 +38,7 @@ function Execute-SOAPRequest { param([Xml]$SOAPRequest, [string]$soapactionheade
         $wr.Accept      = 'text/xml'
         $wr.Method      = 'POST'
         $wr.PreAuthenticate = $true
-        $wr.Credentials = [System.Net.NetworkCredential]::new($USERNAME,$PASSWORD)
+        $wr.Credentials = [System.Net.NetworkCredential]::new($Username,$Password)
 
         $requestStream = $wr.GetRequestStream()
         $SOAPRequest.Save($requestStream)

@@ -1,8 +1,8 @@
 ﻿<#
 .SYNOPSIS
-	speak-checklist.ps1 [<name>]
-.DESCRIPTION
 	Speaks the given checklist by text-to-speech (TTS)
+.DESCRIPTION
+	speak-checklist.ps1 [<name>]
 .EXAMPLE
 	PS> ./speak-checklist
 .NOTES

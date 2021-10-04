@@ -1,8 +1,8 @@
 ﻿<#
 .SYNOPSIS
-	write-chart.ps1
-.DESCRIPTION
 	Writes a chart
+.DESCRIPTION
+	write-chart.ps1
 .EXAMPLE
 	PS> ./write-chart
 .NOTES

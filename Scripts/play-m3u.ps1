@@ -1,8 +1,8 @@
 ﻿<#
 .SYNOPSIS
-	play-m3u.ps1 [<playlist-file>]
-.DESCRIPTION
 	Plays the given playlist (in .M3U file format)
+.DESCRIPTION
+	play-m3u.ps1 [<filename>]
 .EXAMPLE
 	PS> ./play-m3u C:\MyPlaylist.m3u
 .NOTES
@@ -11,13 +11,13 @@
 	https://github.com/fleschutz/PowerShell
 #>
 
-param([string]$Filename = "")
+param([string]$filename = "")
 
 try {
-	if ($Filename -eq "" ) { $Filename = read-host "Enter the M3U playlist filename" }
+	if ($filename -eq "" ) { $filename = read-host "Enter the M3U playlist filename" }
 
-	if (-not(test-path "$Filename" -pathType leaf)) { throw "Can't access playlist file: $Filename" }
-	$Lines = get-content $Filename
+	if (-not(test-path "$filename" -pathType leaf)) { throw "Can't access playlist file: $filename" }
+	$Lines = get-content $filename
 
 	add-type -assemblyName presentationCore
 	$MediaPlayer = new-object system.windows.media.mediaplayer
@@ -27,14 +27,14 @@ try {
 		if ($Line[0] -eq "#") { continue }
 		if (-not(test-path "$Line" -pathType leaf)) { throw "Can't access audio file: $Line" }
 		$FullPath = (get-childItem "$Line").fullname
-		$Filename = (get-item "$FullPath").name
+		$filename = (get-item "$FullPath").name
 		do {
 			$MediaPlayer.open("$FullPath")
 			$Milliseconds = $MediaPlayer.NaturalDuration.TimeSpan.TotalMilliseconds
 		} until ($Milliseconds)
 		[int]$Minutes = $Milliseconds / 60000
 		[int]$Seconds = ($Milliseconds / 1000) % 60
-		"▶️Playing 🎵$Filename ($($Minutes.ToString('00')):$($Seconds.ToString('00'))) ..."
+		"▶️Playing 🎵$filename ($($Minutes.ToString('00')):$($Seconds.ToString('00'))) ..."
 		$MediaPlayer.Volume = 1
 		$MediaPlayer.play()
 		start-sleep -milliseconds $Milliseconds

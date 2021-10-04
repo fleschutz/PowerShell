@@ -1,8 +1,8 @@
 ﻿<#
 .SYNOPSIS
-	reboot.ps1
-.DESCRIPTION
 	Reboots the local computer (needs admin rights)
+.DESCRIPTION
+	reboot.ps1
 .EXAMPLE
 	PS> ./reboot
 .NOTES

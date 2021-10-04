@@ -1,8 +1,8 @@
 ﻿<#
 .SYNOPSIS
-	close-onedrive.ps1 
+	Closes Microsoft's OneDrive folder
 .DESCRIPTION
-	Closes Microsoft OneDrive gracefully
+	close-onedrive.ps1 
 .EXAMPLE
 	PS> ./close-onedrive
 .NOTES

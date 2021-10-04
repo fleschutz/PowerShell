@@ -1,8 +1,8 @@
 ﻿<#
 .SYNOPSIS
-	add-firewall-rules.ps1 [<PathToExecutables>]
-.DESCRIPTION
 	Adds firewall rules for the given executables (needs admin rights)
+.DESCRIPTION
+	add-firewall-rules.ps1 [<PathToExecutables>]
 .EXAMPLE
 	PS> ./add-firewall-rules C:\MyApp\bin
 	Adding firewall rule for C:\MyApp\bin\app1.exe

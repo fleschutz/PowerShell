@@ -1,8 +1,8 @@
 ﻿<#
 .SYNOPSIS
-	pull-repos.ps1 [<parent-dir>]
+	Pulls updates for all Git repositories in a folder (including submodules)
 .DESCRIPTION
-	Pulls updates for all Git repositories under the current/given directory (including submodules)
+	pull-repos.ps1 [<ParentDir>]
 .EXAMPLE
 	PS> ./pull-repos C:\MyRepos
 .NOTES

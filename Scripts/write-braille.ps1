@@ -1,8 +1,8 @@
 ﻿<#
 .SYNOPSIS
-	write-braille.ps1 [<text>]
+	Writes text in Braille
 .DESCRIPTION
-	Writes the given text in Braille
+	write-braille.ps1 [<text>]
 .EXAMPLE
 	PS> ./write-braille "Hello World"
 .NOTES

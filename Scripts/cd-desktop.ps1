@@ -1,8 +1,8 @@
 ﻿<#
 .SYNOPSIS
-	cd-desktop.ps1 
-.DESCRIPTION
 	Change the working directory to the user's desktop folder
+.DESCRIPTION
+	cd-desktop.ps1 
 .EXAMPLE
 	PS> ./cd-desktop
 	📂/home/markus/Desktop

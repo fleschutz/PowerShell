@@ -1,8 +1,9 @@
 ﻿<#
 .SYNOPSIS
-	simulate-presence.ps1 [<IP-address>]
-.DESCRIPTION
 	Simulates the human presence against burglars
+.DESCRIPTION
+	simulate-presence.ps1 [<IPaddress>]
+	<IPaddress> is the IP address of the Shelly1 device
 .EXAMPLE
 	PS> ./simulate-presence 192.168.100.100
 .NOTES

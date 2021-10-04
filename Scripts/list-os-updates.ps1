@@ -1,8 +1,8 @@
 ﻿<#
 .SYNOPSIS
-	list-os-updates.ps1 [<RSS-URL>] [<max-count>]
-.DESCRIPTION
 	Lists the latest operating system updates
+.DESCRIPTION
+	list-os-updates.ps1 [<RSS-URL>] [<max-count>]
 .EXAMPLE
 	PS> ./list-os-updates
 .NOTES

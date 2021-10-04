@@ -1,8 +1,8 @@
 ﻿<#
 .SYNOPSIS
-	write-uppercase.ps1 [<text>]
+	Writes text in uppercase letters
 .DESCRIPTION
-	Writes the given text in uppercase letters
+	write-uppercase.ps1 [<text>]
 .EXAMPLE
 	PS> ./write-uppercase "Hello World"
 .NOTES

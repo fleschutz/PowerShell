@@ -1,8 +1,8 @@
 ﻿<#
 .SYNOPSIS
-	search-files.ps1 [<pattern>] [<files>]
-.DESCRIPTION
 	Searches for a pattern in the given files
+.DESCRIPTION
+	search-files.ps1 [<pattern>] [<files>]
 .EXAMPLE
 	PS> ./search-files UFO C:\Temp\*.txt
 .NOTES
