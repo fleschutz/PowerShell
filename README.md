@@ -101,7 +101,7 @@ Mega Collection of PowerShell Scripts
 | [close-file-explorer.ps1](Scripts/close-file-explorer.ps1) | Closes Microsoft File Explorer gracefully                    | [Help](Docs/close-file-explorer.md) |
 | [close-firefox.ps1](Scripts/close-firefox.ps1)       | Closes the Firefox Web browser gracefully                          | [Help](Docs/close-firefox.md)       |
 | [close-program.ps1](Scripts/close-program.ps1)       | Closes the given program gracefully                                | [Help](Docs/close-program.md)       |
-| [close-netflix.ps1](Scripts/close-netflix.ps1)       | Closes Netflix gracefully                                          | [Help](Docs/close-netflix.md)       |
+| [close-netflix.ps1](Scripts/close-netflix.ps1)       | Closes the Netflix application gracefully                          | [Help](Docs/close-netflix.md)       |
 | [close-onedrive.ps1](Scripts/close-onedrive.ps1)     | Closes Microsoft OneDrive gracefully                               | [Help](Docs/close-onedrive.md)      |
 | [close-system-settings.ps1](Scripts/close-system-settings.ps1) | Closes the System Settings gracefully                    | [Help](Docs/close-system-settings.md)|
 | [close-thunderbird.ps1](Scripts/close-thunderbird.ps1) | Closes Mozilla Thunderbird gracefully                            | [Help](Docs/close-thunderbird.md)   |

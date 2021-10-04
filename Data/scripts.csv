@@ -46,7 +46,7 @@ close-edge.ps1, Closes Microsoft Edge gracefully
 close-file-explorer.ps1, Closes Microsoft File Explorer gracefully
 close-firefox.ps1, Closes the Firefox Web browser gracefully
 close-program.ps1, Closes the given program gracefully
-close-netflix.ps1, Closes Netflix gracefully
+close-netflix.ps1, Closes the Netflix application gracefully
 close-onedrive.ps1, Closes Microsoft OneDrive gracefully
 close-system-settings.ps1, Closes the System Settings gracefully
 close-thunderbird.ps1, Closes Mozilla Thunderbird gracefully
