@@ -105,7 +105,7 @@ Mega Collection of PowerShell Scripts
 | [close-onedrive.ps1](Scripts/close-onedrive.ps1)     | Closes Microsoft OneDrive gracefully                               | [Help](Docs/close-onedrive.md)      |
 | [close-system-settings.ps1](Scripts/close-system-settings.ps1) | Closes the System Settings gracefully                    | [Help](Docs/close-system-settings.md)|
 | [close-thunderbird.ps1](Scripts/close-thunderbird.ps1) | Closes Mozilla Thunderbird gracefully                            | [Help](Docs/close-thunderbird.md)   |
-| [close-vlc.ps1](Scripts/close-vlc.ps1)               | Closes the VLC media player gracefully                             | [Help](Docs/close-vlc.md)           |
+| [close-vlc.ps1](Scripts/close-vlc.ps1)               | Closes the VLC media player application                            | [Help](Docs/close-vlc.md)           |
 | [close-windows-terminal.ps1](Scripts/close-windows-terminal.ps1) | Closes the Windows Terminal application                | [Help](Docs/close-windows-terminal.md)|
 | [enable-god-mode.ps1](Scripts/enable-god-mode.ps1)   | Enables the god mode (adds a new icon to the desktop)              | [Help](Docs/enable-god-mode.md)     |
 | [list-clipboard.ps1](Scripts/list-clipboard.ps1)     | Lists the contents of the clipboard                                | [Help](Docs/list-clipboard.md)      |
