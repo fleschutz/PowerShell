@@ -44,7 +44,7 @@ close-chrome.ps1, Closes the Google Chrome Web browser
 close-cortana.ps1, Closes Cortana gracefully
 close-edge.ps1, Closes the Microsoft Edge Web browser
 close-file-explorer.ps1, Closes Microsoft File Explorer gracefully
-close-firefox.ps1, Closes the Firefox Web browser gracefully
+close-firefox.ps1, Closes the Firefox Web browser 
 close-program.ps1, Closes the given program gracefully
 close-netflix.ps1, Closes the Netflix application gracefully
 close-onedrive.ps1, Closes Microsoft OneDrive gracefully

@@ -2,7 +2,7 @@
 .SYNOPSIS
 	close-firefox.ps1 
 .DESCRIPTION
-	Closes the Firefox Web browser gracefully
+	Closes the Firefox Web browser 
 .EXAMPLE
 	PS> ./close-firefox
 .NOTES
