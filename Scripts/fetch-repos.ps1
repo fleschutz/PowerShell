@@ -31,8 +31,8 @@ try {
 		$FolderName = (get-item "$Folder").Name
 		"⏳ Step $Step/$($FolderCount): Fetching 📂$FolderName..."
 
-		& git -C "$Folder" fetch --all --recurse-submodules --prune --prune-tags --jobs=4
-		if ($lastExitCode -ne "0") { throw "'git fetch' failed" }
+		& git -C "$Folder" fetch --all --recurse-submodules --prune --prune-tags --force --jobs=4
+		if ($lastExitCode -ne "0") { throw "'git fetch' in $Folder failed" }
 
 		$Step++
 	}
