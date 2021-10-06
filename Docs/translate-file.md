@@ -6,7 +6,6 @@ translate-file.ps1 [<file>] [<source-lang>] [<target-lang>]
 ```powershell
 translate-file.ps1 [[-File] <String>] [[-SourceLang] <String>] [[-TargetLang] <String>] [<CommonParameters>]
 
-
 -File <String>
     
     Required?                    false

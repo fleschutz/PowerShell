@@ -6,7 +6,6 @@ locate-city.ps1 [<City>]
 ```powershell
 locate-city.ps1 [[-City] <String>] [<CommonParameters>]
 
-
 -City <String>
     
     Required?                    false

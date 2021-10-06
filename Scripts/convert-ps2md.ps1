@@ -69,17 +69,16 @@ try {
 	""
 	"## Parameters"
 	"``````powershell"
-	$Syntax = (($full.syntax | Out-String) -replace "`r`n", "`r`n`r`n").Trim()
+	$Syntax = (($full.syntax | Out-String) -replace "`r`n", "`r`n").Trim()
 	$Syntax = (($Syntax | Out-String) -replace "/home/markus/Repos/PowerShell/Scripts/", "")
 	if ($Syntax -ne "") {
 		"$Syntax"
 	}
 
 	foreach($parameter in $full.parameters.parameter) {
-		""
 		"$(((($parameter | Out-String).Trim() -split "`r`n")[-5..-1] | % { $_.Trim() }) -join "`r`n")"
+		""
 	}
-	""
 	"[<CommonParameters>]"
 	"    This cmdlet supports the common parameters: Verbose, Debug, ErrorAction, ErrorVariable, WarningAction, "
 	"    WarningVariable, OutBuffer, PipelineVariable, and OutVariable."

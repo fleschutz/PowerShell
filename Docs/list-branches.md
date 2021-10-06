@@ -8,7 +8,6 @@ list-branches.ps1 [<RepoDir>] [<SearchPattern>]
 ```powershell
 list-branches.ps1 [[-RepoDir] <String>] [[-SearchPattern] <String>] [<CommonParameters>]
 
-
 -RepoDir <String>
     
     Required?                    false

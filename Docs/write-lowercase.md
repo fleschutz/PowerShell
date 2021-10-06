@@ -6,7 +6,6 @@ write-lowercase.ps1 [<text>]
 ```powershell
 write-lowercase.ps1 [[-text] <String>] [<CommonParameters>]
 
-
 -text <String>
     
     Required?                    false

@@ -9,7 +9,6 @@ switch-shelly1.ps1 [<Host>] [<TurnMode>] [<Timer>]
 ```powershell
 switch-shelly1.ps1 [[-Host] <String>] [[-TurnMode] <String>] [[-Timer] <Int32>] [<CommonParameters>]
 
-
 -Host <String>
     
     Required?                    false

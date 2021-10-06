@@ -6,7 +6,6 @@ check-xml-file [<file>]
 ```powershell
 check-xml-file.ps1 [[-file] <String>] [<CommonParameters>]
 
-
 -file <String>
     
     Required?                    false

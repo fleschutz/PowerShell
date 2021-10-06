@@ -6,7 +6,6 @@ alert.ps1 [<message>]
 ```powershell
 alert.ps1 [[-Message] <String>] [<CommonParameters>]
 
-
 -Message <String>
     
     Required?                    false

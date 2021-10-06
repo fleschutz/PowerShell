@@ -6,7 +6,6 @@ write-typewriter.ps1 [<text>] [<speed>]
 ```powershell
 write-typewriter.ps1 [[-text] <String>] [[-speed] <Int32>] [<CommonParameters>]
 
-
 -text <String>
     
     Required?                    false

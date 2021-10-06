@@ -6,7 +6,6 @@ new-zipfile.ps1 [<folder>]
 ```powershell
 new-zipfile.ps1 [[-folder] <String>] [<CommonParameters>]
 
-
 -folder <String>
     
     Required?                    false

@@ -6,7 +6,6 @@ download-file.ps1 [<URL>]
 ```powershell
 download-file.ps1 [[-URL] <String>] [<CommonParameters>]
 
-
 -URL <String>
     
     Required?                    false

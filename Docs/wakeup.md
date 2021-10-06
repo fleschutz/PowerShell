@@ -7,7 +7,6 @@ wakeup.ps1 [<MAC-address>] [<IP-address>]
 ```powershell
 wakeup.ps1 [[-MACaddress] <String>] [[-IPaddress] <String>] [[-Port] <Int32>] [<CommonParameters>]
 
-
 -MACaddress <String>
     
     Required?                    false

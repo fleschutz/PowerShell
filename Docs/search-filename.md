@@ -8,7 +8,6 @@ After you pass in a root folder and a search term, the script will list all file
 ```powershell
 search-filename.ps1 [-path] <Object> [-term] <Object> [<CommonParameters>]
 
-
 -path <Object>
     
     Required?                    true

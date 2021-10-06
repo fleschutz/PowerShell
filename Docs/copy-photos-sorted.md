@@ -7,7 +7,6 @@ copy-photos-sorted.ps1 [<SourceDir>] [<TargetDir>]
 ```powershell
 copy-photos-sorted.ps1 [[-SourceDir] <String>] [[-TargetDir] <String>] [<CommonParameters>]
 
-
 -SourceDir <String>
     
     Required?                    false

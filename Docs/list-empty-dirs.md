@@ -7,7 +7,6 @@ list-empty-dirs.ps1 [<DirTree>]
 ```powershell
 list-empty-dirs.ps1 [[-DirTree] <String>] [<CommonParameters>]
 
-
 -DirTree <String>
     
     Required?                    false

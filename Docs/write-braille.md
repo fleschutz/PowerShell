@@ -6,7 +6,6 @@ write-braille.ps1 [<text>]
 ```powershell
 write-braille.ps1 [[-text] <String>] [<CommonParameters>]
 
-
 -text <String>
     
     Required?                    false

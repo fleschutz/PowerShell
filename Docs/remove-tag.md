@@ -6,7 +6,6 @@ remove-tag.ps1 [<TagName>] [<Mode>] [<RepoDir>]
 ```powershell
 remove-tag.ps1 [[-TagName] <String>] [[-Mode] <String>] [[-RepoDir] <String>] [<CommonParameters>]
 
-
 -TagName <String>
     
     Required?                    false

@@ -7,7 +7,6 @@ list-hidden-files.ps1 [<DirTree>]
 ```powershell
 list-hidden-files.ps1 [[-DirTree] <String>] [<CommonParameters>]
 
-
 -DirTree <String>
     
     Required?                    false

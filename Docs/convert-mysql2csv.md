@@ -6,7 +6,6 @@ convert-mysql2csv.ps1 [<server>] [<database>] [<username>] [<password>] [<query>
 ```powershell
 convert-mysql2csv.ps1 [[-server] <String>] [[-database] <String>] [[-username] <String>] [[-password] <String>] [[-query] <String>] [<CommonParameters>]
 
-
 -server <String>
     
     Required?                    false

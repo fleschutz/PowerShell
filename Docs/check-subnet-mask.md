@@ -6,7 +6,6 @@ check-subnet-mask.ps1 [<address>]
 ```powershell
 check-subnet-mask.ps1 [[-address] <String>] [<CommonParameters>]
 
-
 -address <String>
     
     Required?                    false

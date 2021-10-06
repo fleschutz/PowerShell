@@ -7,7 +7,6 @@ install-signal-cli.ps1 [<version>]
 ```powershell
 install-signal-cli.ps1 [[-Version] <String>] [<CommonParameters>]
 
-
 -Version <String>
     
     Required?                    false

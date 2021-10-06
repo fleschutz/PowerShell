@@ -7,7 +7,6 @@ list-submodules.ps1 [<RepoDir>]
 ```powershell
 list-submodules.ps1 [[-RepoDir] <String>] [<CommonParameters>]
 
-
 -RepoDir <String>
     
     Required?                    false

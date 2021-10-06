@@ -6,7 +6,6 @@ new-shortcut.ps1 [<shortcut>] [<target>] [<description>]
 ```powershell
 new-shortcut.ps1 [[-shortcut] <String>] [[-target] <String>] [[-description] <String>] [<CommonParameters>]
 
-
 -shortcut <String>
     
     Required?                    false

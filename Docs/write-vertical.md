@@ -6,7 +6,6 @@ write-vertical.ps1 [<text>]
 ```powershell
 write-vertical.ps1 [[-text] <String>] [<CommonParameters>]
 
-
 -text <String>
     
     Required?                    false

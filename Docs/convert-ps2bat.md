@@ -6,7 +6,6 @@ convert-ps2bat.ps1 [<pattern>]
 ```powershell
 convert-ps2bat.ps1 [[-Pattern] <String>] [<CommonParameters>]
 
-
 -Pattern <String>
     
     Required?                    false

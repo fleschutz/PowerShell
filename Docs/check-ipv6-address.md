@@ -6,7 +6,6 @@ check-ipv6-address.ps1 [<Address>]
 ```powershell
 check-ipv6-address.ps1 [[-Address] <String>] [<CommonParameters>]
 
-
 -Address <String>
     
     Required?                    false

@@ -9,7 +9,6 @@ Run the above command if you do not have this module.
 ```powershell
 list-sql-tables.ps1 [-server] <Object> [-database] <Object> [-username] <Object> [-password] <Object> [<CommonParameters>]
 
-
 -server <Object>
     
     Required?                    true

@@ -6,7 +6,6 @@ list-anagrams.ps1 [<word>] [<columns>]
 ```powershell
 list-anagrams.ps1 [[-Word] <String>] [[-Columns] <Int32>] [<CommonParameters>]
 
-
 -Word <String>
     
     Required?                    false

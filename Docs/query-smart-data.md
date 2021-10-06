@@ -10,7 +10,6 @@ Queries the S.M.A.R.T. data of your HDD/SSD's and saves it to the current/given 
 ```powershell
 query-smart-data.ps1 [[-Directory] <String>] [<CommonParameters>]
 
-
 -Directory <String>
     
     Required?                    false

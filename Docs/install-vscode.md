@@ -15,7 +15,6 @@ https://github.com/PowerShell/vscode-powershell/blob/master/scripts/Install-VSCo
 ```powershell
 install-vscode.ps1 [[-Architecture] <String>] [[-BuildEdition] <String>] [[-AdditionalExtensions] <String[]>] [-LaunchWhenDone] [-EnableContextMenus] [-WhatIf] [-Confirm] [<CommonParameters>]
 
-
 -Architecture <String>
     A validated string defining the bit version to download. Values can be either 64-bit or 32-bit.
     If 64-bit is chosen and the OS Architecture does not match, then the 32-bit build will be

@@ -6,7 +6,6 @@ locate-zip-code.ps1 [<CountryCode>] [<ZipCode>]
 ```powershell
 locate-zip-code.ps1 [[-CountryCode] <String>] [[-ZipCode] <String>] [<CommonParameters>]
 
-
 -CountryCode <String>
     
     Required?                    false

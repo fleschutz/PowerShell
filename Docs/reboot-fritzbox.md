@@ -6,7 +6,6 @@ reboot-fritzbox.ps1 [<Username>] [<Password>]
 ```powershell
 reboot-fritzbox.ps1 [[-Username] <String>] [[-Password] <String>] [<CommonParameters>]
 
-
 -Username <String>
     
     Required?                    false

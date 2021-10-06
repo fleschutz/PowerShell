@@ -7,7 +7,6 @@ simulate-presence.ps1 [<IPaddress>]
 ```powershell
 simulate-presence.ps1 [[-IPaddress] <String>] [<CommonParameters>]
 
-
 -IPaddress <String>
     
     Required?                    false

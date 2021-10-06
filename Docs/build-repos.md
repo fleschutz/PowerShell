@@ -6,7 +6,6 @@ build-repos.ps1 [<ParentDir>]
 ```powershell
 build-repos.ps1 [[-ParentDir] <String>] [<CommonParameters>]
 
-
 -ParentDir <String>
     Specifies the path to the folder containing the Git repositories
     

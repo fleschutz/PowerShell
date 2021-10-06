@@ -6,7 +6,6 @@ locate-ipaddress.ps1 [<IPaddress>]
 ```powershell
 locate-ipaddress.ps1 [[-IPaddress] <String>] [<CommonParameters>]
 
-
 -IPaddress <String>
     
     Required?                    false

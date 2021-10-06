@@ -8,7 +8,6 @@ list-tags.ps1 [<RepoDir>] [<SearchPattern>]
 ```powershell
 list-tags.ps1 [[-RepoDir] <String>] [[-SearchPattern] <String>] [<CommonParameters>]
 
-
 -RepoDir <String>
     
     Required?                    false

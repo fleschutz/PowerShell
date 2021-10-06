@@ -8,7 +8,6 @@ Converts the S.M.A.R.T. JSON files in the current/given directory to a CSV table
 ```powershell
 smart-data2csv.ps1 [[-Directory] <String>] [<CommonParameters>]
 
-
 -Directory <String>
     
     Required?                    false

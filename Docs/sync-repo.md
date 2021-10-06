@@ -7,7 +7,6 @@ sync-repo.ps1 [<RepoDir>]
 ```powershell
 sync-repo.ps1 [[-RepoDir] <String>] [<CommonParameters>]
 
-
 -RepoDir <String>
     
     Required?                    false

@@ -6,7 +6,6 @@ write-red.ps1 [<text>]
 ```powershell
 write-red.ps1 [[-text] <String>] [<CommonParameters>]
 
-
 -text <String>
     
     Required?                    false

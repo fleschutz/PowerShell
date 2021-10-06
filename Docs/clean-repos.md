@@ -6,7 +6,6 @@ clean-repos.ps1 [<ParentDir>]
 ```powershell
 clean-repos.ps1 [[-ParentDir] <String>] [<CommonParameters>]
 
-
 -ParentDir <String>
     
     Required?                    false

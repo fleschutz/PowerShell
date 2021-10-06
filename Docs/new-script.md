@@ -7,7 +7,6 @@ new-script.ps1 [<filename>]
 ```powershell
 new-script.ps1 [[-filename] <String>] [<CommonParameters>]
 
-
 -filename <String>
     
     Required?                    false

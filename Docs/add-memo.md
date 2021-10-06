@@ -6,7 +6,6 @@ add-memo.ps1 [<text>]
 ```powershell
 add-memo.ps1 [[-text] <String>] [<CommonParameters>]
 
-
 -text <String>
     
     Required?                    false

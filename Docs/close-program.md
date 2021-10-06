@@ -6,7 +6,6 @@ close-program.ps1 [<FullProgramName>] [<ProgramName>] [<ProgramAliasName>]
 ```powershell
 close-program.ps1 [[-FullProgramName] <String>] [[-ProgramName] <String>] [[-ProgramAliasName] <String>] [<CommonParameters>]
 
-
 -FullProgramName <String>
     
     Required?                    false

@@ -6,7 +6,6 @@ set-timer.ps1 [<seconds>]
 ```powershell
 set-timer.ps1 [[-Seconds] <Int32>] [<CommonParameters>]
 
-
 -Seconds <Int32>
     
     Required?                    false

@@ -6,7 +6,6 @@ write-rot13.ps1 [<text>]
 ```powershell
 write-rot13.ps1 [[-text] <String>] [<CommonParameters>]
 
-
 -text <String>
     
     Required?                    false

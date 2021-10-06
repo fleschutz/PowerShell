@@ -6,7 +6,6 @@ write-calendar.ps1 [<Month>] [<Year>]
 ```powershell
 write-calendar.ps1 [[-Month] <Int32>] [[-Year] <Int32>] [<CommonParameters>]
 
-
 -Month <Int32>
     If specified, will limit output to a single month with this numeral value.
     

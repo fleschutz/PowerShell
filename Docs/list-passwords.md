@@ -6,7 +6,6 @@ list-passwords.ps1 [<PasswordLength>] [<Columns>] [<Rows>]
 ```powershell
 list-passwords.ps1 [[-PasswordLength] <Int32>] [[-Columns] <Int32>] [[-Rows] <Int32>] [<CommonParameters>]
 
-
 -PasswordLength <Int32>
     
     Required?                    false

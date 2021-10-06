@@ -6,7 +6,6 @@ play-m3u.ps1 [<filename>]
 ```powershell
 play-m3u.ps1 [[-filename] <String>] [<CommonParameters>]
 
-
 -filename <String>
     
     Required?                    false

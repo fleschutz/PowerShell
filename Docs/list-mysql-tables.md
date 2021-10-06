@@ -6,7 +6,6 @@ list-mysql-tables.ps1
 ```powershell
 list-mysql-tables.ps1 [-server] <Object> [-database] <Object> [-dbuser] <Object> [-dbpass] <Object> [<CommonParameters>]
 
-
 -server <Object>
     
     Required?                    true

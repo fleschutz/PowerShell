@@ -6,7 +6,6 @@ speak-countdown.ps1 [StartNumber]
 ```powershell
 speak-countdown.ps1 [[-StartNumber] <Int32>] [<CommonParameters>]
 
-
 -StartNumber <Int32>
     
     Required?                    false

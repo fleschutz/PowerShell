@@ -6,7 +6,6 @@ inspect-exe.ps1 [<path-to-exe-file>]
 ```powershell
 inspect-exe.ps1 [[-PathToExe] <String>] [<CommonParameters>]
 
-
 -PathToExe <String>
     
     Required?                    false

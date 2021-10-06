@@ -6,7 +6,6 @@ encrypt-file.ps1 [<Path>] [<Password>]
 ```powershell
 encrypt-file.ps1 [[-Path] <String>] [[-Password] <String>] [<CommonParameters>]
 
-
 -Path <String>
     
     Required?                    false

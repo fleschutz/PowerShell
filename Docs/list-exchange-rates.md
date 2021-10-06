@@ -7,7 +7,6 @@ list-exchange-rates.ps1 [<currency>]
 ```powershell
 list-exchange-rates.ps1 [[-currency] <String>] [<CommonParameters>]
 
-
 -currency <String>
     
     Required?                    false

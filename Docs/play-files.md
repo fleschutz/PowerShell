@@ -6,7 +6,6 @@ play-files.ps1 [<FilePattern>]
 ```powershell
 play-files.ps1 [[-FilePattern] <String>] [<CommonParameters>]
 
-
 -FilePattern <String>
     
     Required?                    false

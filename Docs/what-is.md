@@ -6,7 +6,6 @@ what-is.ps1 [<abbreviation>]
 ```powershell
 what-is.ps1 [[-abbreviation] <String>] [<CommonParameters>]
 
-
 -abbreviation <String>
     
     Required?                    false

@@ -6,7 +6,6 @@ configure-git.ps1 [<full-name>] [<email-address>] [<favorite-editor>]
 ```powershell
 configure-git.ps1 [[-FullName] <String>] [[-EmailAddress] <String>] [[-FavoriteEditor] <String>] [<CommonParameters>]
 
-
 -FullName <String>
     
     Required?                    false

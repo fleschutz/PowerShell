@@ -9,7 +9,6 @@ list-unused-files.ps1 <DirTree> <Days>
 ```powershell
 list-unused-files.ps1 [[-DirTree] <String>] [[-Days] <Int32>] [<CommonParameters>]
 
-
 -DirTree <String>
     
     Required?                    false

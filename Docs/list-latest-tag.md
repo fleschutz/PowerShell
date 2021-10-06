@@ -7,7 +7,6 @@ list-latest-tag.ps1 [<RepoDir>]
 ```powershell
 list-latest-tag.ps1 [[-RepoDir] <String>] [<CommonParameters>]
 
-
 -RepoDir <String>
     
     Required?                    false

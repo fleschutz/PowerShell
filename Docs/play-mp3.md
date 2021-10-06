@@ -6,7 +6,6 @@ play-mp3.ps1 [<MP3-file>]
 ```powershell
 play-mp3.ps1 [[-Filename] <String>] [<CommonParameters>]
 
-
 -Filename <String>
     
     Required?                    false

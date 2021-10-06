@@ -6,7 +6,6 @@ switch-branch.ps1 [<BranchName>] [<RepoDir>]
 ```powershell
 switch-branch.ps1 [[-BranchName] <String>] [[-RepoDir] <String>] [<CommonParameters>]
 
-
 -BranchName <String>
     
     Required?                    false

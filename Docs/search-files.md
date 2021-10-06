@@ -6,7 +6,6 @@ search-files.ps1 [<pattern>] [<files>]
 ```powershell
 search-files.ps1 [[-pattern] <String>] [[-files] <String>] [<CommonParameters>]
 
-
 -pattern <String>
     
     Required?                    false

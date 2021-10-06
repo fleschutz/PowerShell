@@ -6,7 +6,6 @@ edit.ps1 <filename>
 ```powershell
 edit.ps1 [[-Filename] <String>] [<CommonParameters>]
 
-
 -Filename <String>
     
     Required?                    false

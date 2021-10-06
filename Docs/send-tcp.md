@@ -6,7 +6,6 @@ send-tcp.ps1 [<TargetIP>] [<TargetPort>] [<Message>]
 ```powershell
 send-tcp.ps1 [[-TargetIP] <String>] [[-TargetPort] <Int32>] [[-Message] <String>] [<CommonParameters>]
 
-
 -TargetIP <String>
     
     Required?                    false

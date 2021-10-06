@@ -6,7 +6,6 @@ publish-to-ipfs.ps1 [<FilePattern>] [<HashList>]
 ```powershell
 publish-to-ipfs.ps1 [[-FilePattern] <String>] [[-HashList] <String>] [[-DF_Hashes] <String>] [<CommonParameters>]
 
-
 -FilePattern <String>
     
     Required?                    false

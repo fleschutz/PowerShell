@@ -6,7 +6,6 @@ list-os-updates.ps1 [<RSS-URL>] [<max-count>]
 ```powershell
 list-os-updates.ps1 [[-RSS_URL] <String>] [[-MaxCount] <Int32>] [<CommonParameters>]
 
-
 -RSS_URL <String>
     
     Required?                    false

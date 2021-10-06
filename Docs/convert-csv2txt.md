@@ -6,7 +6,6 @@ convert-csv2txt.ps1 [<csv-file>]
 ```powershell
 convert-csv2txt.ps1 [[-Path] <String>] [<CommonParameters>]
 
-
 -Path <String>
     
     Required?                    false

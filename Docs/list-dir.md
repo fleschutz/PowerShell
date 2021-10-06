@@ -7,7 +7,6 @@ list-dir.ps1 [<SearchPattern>]
 ```powershell
 list-dir.ps1 [[-SearchPattern] <String>] [<CommonParameters>]
 
-
 -SearchPattern <String>
     
     Required?                    false

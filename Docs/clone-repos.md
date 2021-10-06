@@ -6,7 +6,6 @@ clone-repos.ps1 [<folder>]
 ```powershell
 clone-repos.ps1 [[-folder] <String>] [<CommonParameters>]
 
-
 -folder <String>
     
     Required?                    false

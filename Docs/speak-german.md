@@ -6,7 +6,6 @@ speak-german.ps1 [<text>]
 ```powershell
 speak-german.ps1 [[-text] <String>] [<CommonParameters>]
 
-
 -text <String>
     
     Required?                    false

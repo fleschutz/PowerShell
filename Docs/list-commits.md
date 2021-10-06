@@ -6,7 +6,6 @@ list-commits.ps1 [<RepoDir>] [<Format>]
 ```powershell
 list-commits.ps1 [[-RepoDir] <String>] [[-Format] <String>] [<CommonParameters>]
 
-
 -RepoDir <String>
     Specifies the path to the Git repository.
     

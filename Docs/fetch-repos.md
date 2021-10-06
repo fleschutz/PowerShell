@@ -6,7 +6,6 @@ fetch-repos.ps1 [<ParentDir>]
 ```powershell
 fetch-repos.ps1 [[-ParentDir] <String>] [<CommonParameters>]
 
-
 -ParentDir <String>
     
     Required?                    false

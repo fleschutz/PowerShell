@@ -7,7 +7,6 @@ Takes screenshots and saves them into a folder (per default every 60 seconds)
 ```powershell
 take-screenshots.ps1 [[-TargetDir] <String>] [[-Interval] <Int32>] [<CommonParameters>]
 
-
 -TargetDir <String>
     
     Required?                    false

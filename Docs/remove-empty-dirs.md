@@ -7,7 +7,6 @@ remove-empty-dirs.ps1 [<DirTree>]
 ```powershell
 remove-empty-dirs.ps1 [[-DirTree] <String>] [<CommonParameters>]
 
-
 -DirTree <String>
     
     Required?                    false

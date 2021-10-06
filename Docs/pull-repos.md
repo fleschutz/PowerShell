@@ -6,7 +6,6 @@ pull-repos.ps1 [<ParentDir>]
 ```powershell
 pull-repos.ps1 [[-ParentDir] <String>] [<CommonParameters>]
 
-
 -ParentDir <String>
     
     Required?                    false

@@ -6,7 +6,6 @@ speak-checklist.ps1 [<name>]
 ```powershell
 speak-checklist.ps1 [[-Name] <String>] [<CommonParameters>]
 
-
 -Name <String>
     
     Required?                    false

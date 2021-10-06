@@ -6,7 +6,6 @@ list-weather.ps1 [<Location>]
 ```powershell
 list-weather.ps1 [[-Location] <String>] [<CommonParameters>]
 
-
 -Location <String>
     
     Required?                    false

@@ -6,7 +6,6 @@ fetch-repo.ps1 [<RepoDir>]
 ```powershell
 fetch-repo.ps1 [[-RepoDir] <String>] [<CommonParameters>]
 
-
 -RepoDir <String>
     Specifies the path to the Git repository.
     

@@ -6,7 +6,6 @@ decrypt-file.ps1 [<path>] [<password>]
 ```powershell
 decrypt-file.ps1 [[-Path] <String>] [[-Password] <String>] [<CommonParameters>]
 
-
 -Path <String>
     
     Required?                    false

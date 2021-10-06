@@ -6,7 +6,6 @@ replace-in-files.ps1 [<pattern>] [<replacement>] [<files>]
 ```powershell
 replace-in-files.ps1 [[-pattern] <String>] [[-replacement] <String>] [[-files] <String>] [<CommonParameters>]
 
-
 -pattern <String>
     
     Required?                    false

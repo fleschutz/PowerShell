@@ -6,7 +6,6 @@ take-screenshot.ps1 [<directory>]
 ```powershell
 take-screenshot.ps1 [[-Directory] <String>] [<CommonParameters>]
 
-
 -Directory <String>
     
     Required?                    false

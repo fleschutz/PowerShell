@@ -7,7 +7,6 @@ Returns the number of broken symlinks as exit value.
 ```powershell
 check-symlinks.ps1 [[-folder] <String>] [<CommonParameters>]
 
-
 -folder <String>
     
     Required?                    false

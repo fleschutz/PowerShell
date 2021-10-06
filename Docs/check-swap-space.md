@@ -6,7 +6,6 @@ check-swap-space.ps1 [<min-level>]
 ```powershell
 check-swap-space.ps1 [[-MinLevel] <Int32>] [<CommonParameters>]
 
-
 -MinLevel <Int32>
     
     Required?                    false

@@ -7,7 +7,6 @@ display-time.ps1 [<seconds>]
 ```powershell
 display-time.ps1 [[-Seconds] <Int32>] [<CommonParameters>]
 
-
 -Seconds <Int32>
     
     Required?                    false

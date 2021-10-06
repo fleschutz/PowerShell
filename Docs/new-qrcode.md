@@ -6,7 +6,6 @@ new-qrcode.ps1 [<Text>] [<ImageSize>]
 ```powershell
 new-qrcode.ps1 [[-Text] <String>] [[-ImageSize] <String>] [<CommonParameters>]
 
-
 -Text <String>
     
     Required?                    false

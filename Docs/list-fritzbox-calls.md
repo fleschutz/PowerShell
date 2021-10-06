@@ -6,7 +6,6 @@ list-fritzbox-calls.ps1 [<Username>] [<Password>]
 ```powershell
 list-fritzbox-calls.ps1 [[-Username] <String>] [[-Password] <String>] [<CommonParameters>]
 
-
 -Username <String>
     
     Required?                    false

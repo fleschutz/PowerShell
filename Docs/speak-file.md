@@ -6,7 +6,6 @@ speak-file.ps1 [<file>]
 ```powershell
 speak-file.ps1 [[-File] <String>] [<CommonParameters>]
 
-
 -File <String>
     
     Required?                    false

@@ -6,7 +6,6 @@ new-email.ps1 [<address>]
 ```powershell
 new-email.ps1 [[-EmailAddress] <String>] [<CommonParameters>]
 
-
 -EmailAddress <String>
     
     Required?                    false

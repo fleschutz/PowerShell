@@ -6,7 +6,6 @@ convert-ps2md.ps1 [<filename>]
 ```powershell
 convert-ps2md.ps1 [[-filename] <String>] [<CommonParameters>]
 
-
 -filename <String>
     Specifies the path to the PowerShell script
     

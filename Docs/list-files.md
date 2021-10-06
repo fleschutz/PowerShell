@@ -7,7 +7,6 @@ list-files.ps1 [<DirTree>]
 ```powershell
 list-files.ps1 [[-DirTree] <String>] [<CommonParameters>]
 
-
 -DirTree <String>
     
     Required?                    false

@@ -7,7 +7,6 @@ list-dir-tree.ps1 [<DirTree>]
 ```powershell
 list-dir-tree.ps1 [[-DirTree] <String>] [<CommonParameters>]
 
-
 -DirTree <String>
     
     Required?                    false

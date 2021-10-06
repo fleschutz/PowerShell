@@ -6,7 +6,6 @@ translate-text.ps1 [<Text>] [<SourceLang>] [<TargetLang>]
 ```powershell
 translate-text.ps1 [[-Text] <String>] [[-SourceLang] <String>] [[-TargetLang] <String>] [<CommonParameters>]
 
-
 -Text <String>
     
     Required?                    false

@@ -6,7 +6,6 @@ write-uppercase.ps1 [<text>]
 ```powershell
 write-uppercase.ps1 [[-text] <String>] [<CommonParameters>]
 
-
 -text <String>
     
     Required?                    false

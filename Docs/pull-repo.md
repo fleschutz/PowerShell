@@ -6,7 +6,6 @@ pull-repo.ps1 [<repo-dir>]
 ```powershell
 pull-repo.ps1 [[-RepoDir] <String>] [<CommonParameters>]
 
-
 -RepoDir <String>
     
     Required?                    false

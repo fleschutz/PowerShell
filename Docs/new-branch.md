@@ -6,7 +6,6 @@ new-branch.ps1 [<BranchName>] [<RepoDir>]
 ```powershell
 new-branch.ps1 [[-BranchName] <String>] [[-RepoDir] <String>] [<CommonParameters>]
 
-
 -BranchName <String>
     
     Required?                    false

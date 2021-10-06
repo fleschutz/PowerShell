@@ -6,7 +6,6 @@ convert-txt2wav.ps1 [<text>] [<wav-file>]
 ```powershell
 convert-txt2wav.ps1 [[-Text] <String>] [[-WavFile] <String>] [<CommonParameters>]
 
-
 -Text <String>
     
     Required?                    false

@@ -7,7 +7,6 @@ open-browser.ps1 [<URL>]
 ```powershell
 open-browser.ps1 [[-URL] <String>] [<CommonParameters>]
 
-
 -URL <String>
     
     Required?                    false

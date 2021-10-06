@@ -6,7 +6,6 @@ write-green.ps1 [<text>]
 ```powershell
 write-green.ps1 [[-text] <String>] [<CommonParameters>]
 
-
 -text <String>
     
     Required?                    false

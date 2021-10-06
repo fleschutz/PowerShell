@@ -6,7 +6,6 @@ list-pins.ps1 [<PinLength>] [<Columns>] [<Rows>]
 ```powershell
 list-pins.ps1 [[-PinLength] <Int32>] [[-Columns] <Int32>] [[-Rows] <Int32>] [<CommonParameters>]
 
-
 -PinLength <Int32>
     
     Required?                    false

@@ -8,7 +8,6 @@ NOTE: in case of merge conflicts the script stops immediately!
 ```powershell
 pick-commit.ps1 [[-CommitID] <String>] [[-CommitMessage] <String>] [[-Branches] <String>] [[-RepoDir] <String>] [<CommonParameters>]
 
-
 -CommitID <String>
     
     Required?                    false

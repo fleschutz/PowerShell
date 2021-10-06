@@ -6,7 +6,6 @@ turn-volume-down.ps1 [<percent>]
 ```powershell
 turn-volume-down.ps1 [[-percent] <Int32>] [<CommonParameters>]
 
-
 -percent <Int32>
     
     Required?                    false

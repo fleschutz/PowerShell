@@ -8,7 +8,6 @@ Type is either short(default) or long.
 ```powershell
 check-smart-devices.ps1 [[-type] <String>] [<CommonParameters>]
 
-
 -type <String>
     
     Required?                    false

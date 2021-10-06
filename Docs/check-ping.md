@@ -7,7 +7,6 @@ check-ping.ps1 [<hosts>]
 ```powershell
 check-ping.ps1 [[-hosts] <String>] [<CommonParameters>]
 
-
 -hosts <String>
     
     Required?                    false

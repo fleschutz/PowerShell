@@ -6,7 +6,6 @@ new-tag.ps1 [<TagName>] [<RepoDir>]
 ```powershell
 new-tag.ps1 [[-TagName] <String>] [[-RepoDir] <String>] [<CommonParameters>]
 
-
 -TagName <String>
     
     Required?                    false

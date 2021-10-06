@@ -6,7 +6,6 @@ clean-repo.ps1 [<RepoDir>]
 ```powershell
 clean-repo.ps1 [[-RepoDir] <String>] [<CommonParameters>]
 
-
 -RepoDir <String>
     
     Required?                    false

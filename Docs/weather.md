@@ -6,7 +6,6 @@ weather.ps1 [<GeoLocation>]
 ```powershell
 weather.ps1 [[-GeoLocation] <String>] [<CommonParameters>]
 
-
 -GeoLocation <String>
     
     Required?                    false

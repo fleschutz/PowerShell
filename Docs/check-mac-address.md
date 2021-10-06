@@ -7,7 +7,6 @@ check-mac-address.ps1 [<MAC>]
 ```powershell
 check-mac-address.ps1 [[-MAC] <String>] [<CommonParameters>]
 
-
 -MAC <String>
     
     Required?                    false

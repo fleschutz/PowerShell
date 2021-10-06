@@ -6,7 +6,6 @@ upload-file.ps1 [<File>] [<URL>] [<Username>] [<Password>]
 ```powershell
 upload-file.ps1 [[-File] <String>] [[-URL] <String>] [[-Username] <String>] [[-Password] <String>] [<CommonParameters>]
 
-
 -File <String>
     
     Required?                    false

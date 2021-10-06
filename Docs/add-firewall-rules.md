@@ -6,7 +6,6 @@ add-firewall-rules.ps1 [<PathToExecutables>]
 ```powershell
 add-firewall-rules.ps1 [[-PathToExecutables] <String>] [<CommonParameters>]
 
-
 -PathToExecutables <String>
     
     Required?                    false
