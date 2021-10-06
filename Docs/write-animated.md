@@ -6,9 +6,7 @@ write-animated.ps1 [<line1>] .. [line9>] [<speed>]
 ```powershell
 write-animated.ps1 [[-Line1] <Object>] [[-Line2] <Object>] [[-Line3] <Object>] [[-Line4] <Object>] [[-Line5] <Object>] [[-Line6] <Object>] [[-Line7] <Object>] [[-Line8] <Object>] [[-Line9] <Object>] [[-Speed] <Int32>] [<CommonParameters>]
 
-```
 
-```
 -Line1 <Object>
     
     Required?                    false
@@ -16,9 +14,7 @@ write-animated.ps1 [[-Line1] <Object>] [[-Line2] <Object>] [[-Line3] <Object>] [
     Default value                
     Accept pipeline input?       false
     Accept wildcard characters?  false
-```
 
-```
 -Line2 <Object>
     
     Required?                    false
@@ -26,9 +22,7 @@ write-animated.ps1 [[-Line1] <Object>] [[-Line2] <Object>] [[-Line3] <Object>] [
     Default value                
     Accept pipeline input?       false
     Accept wildcard characters?  false
-```
 
-```
 -Line3 <Object>
     
     Required?                    false
@@ -36,9 +30,7 @@ write-animated.ps1 [[-Line1] <Object>] [[-Line2] <Object>] [[-Line3] <Object>] [
     Default value                
     Accept pipeline input?       false
     Accept wildcard characters?  false
-```
 
-```
 -Line4 <Object>
     
     Required?                    false
@@ -46,9 +38,7 @@ write-animated.ps1 [[-Line1] <Object>] [[-Line2] <Object>] [[-Line3] <Object>] [
     Default value                
     Accept pipeline input?       false
     Accept wildcard characters?  false
-```
 
-```
 -Line5 <Object>
     
     Required?                    false
@@ -56,9 +46,7 @@ write-animated.ps1 [[-Line1] <Object>] [[-Line2] <Object>] [[-Line3] <Object>] [
     Default value                
     Accept pipeline input?       false
     Accept wildcard characters?  false
-```
 
-```
 -Line6 <Object>
     
     Required?                    false
@@ -66,9 +54,7 @@ write-animated.ps1 [[-Line1] <Object>] [[-Line2] <Object>] [[-Line3] <Object>] [
     Default value                
     Accept pipeline input?       false
     Accept wildcard characters?  false
-```
 
-```
 -Line7 <Object>
     
     Required?                    false
@@ -76,9 +62,7 @@ write-animated.ps1 [[-Line1] <Object>] [[-Line2] <Object>] [[-Line3] <Object>] [
     Default value                
     Accept pipeline input?       false
     Accept wildcard characters?  false
-```
 
-```
 -Line8 <Object>
     
     Required?                    false
@@ -86,9 +70,7 @@ write-animated.ps1 [[-Line1] <Object>] [[-Line2] <Object>] [[-Line3] <Object>] [
     Default value                
     Accept pipeline input?       false
     Accept wildcard characters?  false
-```
 
-```
 -Line9 <Object>
     
     Required?                    false
@@ -96,9 +78,7 @@ write-animated.ps1 [[-Line1] <Object>] [[-Line2] <Object>] [[-Line3] <Object>] [
     Default value                
     Accept pipeline input?       false
     Accept wildcard characters?  false
-```
 
-```
 -Speed <Int32>
     
     Required?                    false
@@ -106,9 +86,7 @@ write-animated.ps1 [[-Line1] <Object>] [[-Line2] <Object>] [[-Line3] <Object>] [
     Default value                30
     Accept pipeline input?       false
     Accept wildcard characters?  false
-```
 
-```
 [<CommonParameters>]
     This cmdlet supports the common parameters: Verbose, Debug, ErrorAction, ErrorVariable, WarningAction, 
     WarningVariable, OutBuffer, PipelineVariable, and OutVariable.

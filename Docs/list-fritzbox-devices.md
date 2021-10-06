@@ -6,9 +6,7 @@ list-fritzbox-devices.ps1 [<Username>] [<Password>]
 ```powershell
 list-fritzbox-devices.ps1 [[-Username] <String>] [[-Password] <String>] [<CommonParameters>]
 
-```
 
-```
 -Username <String>
     
     Required?                    false
@@ -16,9 +14,7 @@ list-fritzbox-devices.ps1 [[-Username] <String>] [[-Password] <String>] [<Common
     Default value                
     Accept pipeline input?       false
     Accept wildcard characters?  false
-```
 
-```
 -Password <String>
     
     Required?                    false
@@ -26,9 +22,7 @@ list-fritzbox-devices.ps1 [[-Username] <String>] [[-Password] <String>] [<Common
     Default value                
     Accept pipeline input?       false
     Accept wildcard characters?  false
-```
 
-```
 [<CommonParameters>]
     This cmdlet supports the common parameters: Verbose, Debug, ErrorAction, ErrorVariable, WarningAction, 
     WarningVariable, OutBuffer, PipelineVariable, and OutVariable.

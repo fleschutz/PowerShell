@@ -6,9 +6,7 @@ translate-file.ps1 [<file>] [<source-lang>] [<target-lang>]
 ```powershell
 translate-file.ps1 [[-File] <String>] [[-SourceLang] <String>] [[-TargetLang] <String>] [<CommonParameters>]
 
-```
 
-```
 -File <String>
     
     Required?                    false
@@ -16,9 +14,7 @@ translate-file.ps1 [[-File] <String>] [[-SourceLang] <String>] [[-TargetLang] <S
     Default value                
     Accept pipeline input?       false
     Accept wildcard characters?  false
-```
 
-```
 -SourceLang <String>
     
     Required?                    false
@@ -26,9 +22,7 @@ translate-file.ps1 [[-File] <String>] [[-SourceLang] <String>] [[-TargetLang] <S
     Default value                
     Accept pipeline input?       false
     Accept wildcard characters?  false
-```
 
-```
 -TargetLang <String>
     
     Required?                    false
@@ -36,9 +30,7 @@ translate-file.ps1 [[-File] <String>] [[-SourceLang] <String>] [[-TargetLang] <S
     Default value                
     Accept pipeline input?       false
     Accept wildcard characters?  false
-```
 
-```
 [<CommonParameters>]
     This cmdlet supports the common parameters: Verbose, Debug, ErrorAction, ErrorVariable, WarningAction, 
     WarningVariable, OutBuffer, PipelineVariable, and OutVariable.

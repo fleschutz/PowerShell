@@ -6,9 +6,7 @@ locate-zip-code.ps1 [<CountryCode>] [<ZipCode>]
 ```powershell
 locate-zip-code.ps1 [[-CountryCode] <String>] [[-ZipCode] <String>] [<CommonParameters>]
 
-```
 
-```
 -CountryCode <String>
     
     Required?                    false
@@ -16,9 +14,7 @@ locate-zip-code.ps1 [[-CountryCode] <String>] [[-ZipCode] <String>] [<CommonPara
     Default value                
     Accept pipeline input?       false
     Accept wildcard characters?  false
-```
 
-```
 -ZipCode <String>
     
     Required?                    false
@@ -26,9 +22,7 @@ locate-zip-code.ps1 [[-CountryCode] <String>] [[-ZipCode] <String>] [<CommonPara
     Default value                
     Accept pipeline input?       false
     Accept wildcard characters?  false
-```
 
-```
 [<CommonParameters>]
     This cmdlet supports the common parameters: Verbose, Debug, ErrorAction, ErrorVariable, WarningAction, 
     WarningVariable, OutBuffer, PipelineVariable, and OutVariable.

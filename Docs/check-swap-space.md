@@ -6,9 +6,7 @@ check-swap-space.ps1 [<min-level>]
 ```powershell
 check-swap-space.ps1 [[-MinLevel] <Int32>] [<CommonParameters>]
 
-```
 
-```
 -MinLevel <Int32>
     
     Required?                    false
@@ -16,9 +14,7 @@ check-swap-space.ps1 [[-MinLevel] <Int32>] [<CommonParameters>]
     Default value                50
     Accept pipeline input?       false
     Accept wildcard characters?  false
-```
 
-```
 [<CommonParameters>]
     This cmdlet supports the common parameters: Verbose, Debug, ErrorAction, ErrorVariable, WarningAction, 
     WarningVariable, OutBuffer, PipelineVariable, and OutVariable.

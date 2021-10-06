@@ -6,9 +6,7 @@ check-subnet-mask.ps1 [<address>]
 ```powershell
 check-subnet-mask.ps1 [[-address] <String>] [<CommonParameters>]
 
-```
 
-```
 -address <String>
     
     Required?                    false
@@ -16,9 +14,7 @@ check-subnet-mask.ps1 [[-address] <String>] [<CommonParameters>]
     Default value                
     Accept pipeline input?       false
     Accept wildcard characters?  false
-```
 
-```
 [<CommonParameters>]
     This cmdlet supports the common parameters: Verbose, Debug, ErrorAction, ErrorVariable, WarningAction, 
     WarningVariable, OutBuffer, PipelineVariable, and OutVariable.

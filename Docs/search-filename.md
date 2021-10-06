@@ -8,9 +8,7 @@ After you pass in a root folder and a search term, the script will list all file
 ```powershell
 search-filename.ps1 [-path] <Object> [-term] <Object> [<CommonParameters>]
 
-```
 
-```
 -path <Object>
     
     Required?                    true
@@ -18,9 +16,7 @@ search-filename.ps1 [-path] <Object> [-term] <Object> [<CommonParameters>]
     Default value                
     Accept pipeline input?       false
     Accept wildcard characters?  false
-```
 
-```
 -term <Object>
     
     Required?                    true
@@ -28,9 +24,7 @@ search-filename.ps1 [-path] <Object> [-term] <Object> [<CommonParameters>]
     Default value                
     Accept pipeline input?       false
     Accept wildcard characters?  false
-```
 
-```
 [<CommonParameters>]
     This cmdlet supports the common parameters: Verbose, Debug, ErrorAction, ErrorVariable, WarningAction, 
     WarningVariable, OutBuffer, PipelineVariable, and OutVariable.

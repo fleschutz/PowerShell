@@ -6,9 +6,7 @@ close-program.ps1 [<FullProgramName>] [<ProgramName>] [<ProgramAliasName>]
 ```powershell
 close-program.ps1 [[-FullProgramName] <String>] [[-ProgramName] <String>] [[-ProgramAliasName] <String>] [<CommonParameters>]
 
-```
 
-```
 -FullProgramName <String>
     
     Required?                    false
@@ -16,9 +14,7 @@ close-program.ps1 [[-FullProgramName] <String>] [[-ProgramName] <String>] [[-Pro
     Default value                
     Accept pipeline input?       false
     Accept wildcard characters?  false
-```
 
-```
 -ProgramName <String>
     
     Required?                    false
@@ -26,9 +22,7 @@ close-program.ps1 [[-FullProgramName] <String>] [[-ProgramName] <String>] [[-Pro
     Default value                
     Accept pipeline input?       false
     Accept wildcard characters?  false
-```
 
-```
 -ProgramAliasName <String>
     
     Required?                    false
@@ -36,9 +30,7 @@ close-program.ps1 [[-FullProgramName] <String>] [[-ProgramName] <String>] [[-Pro
     Default value                
     Accept pipeline input?       false
     Accept wildcard characters?  false
-```
 
-```
 [<CommonParameters>]
     This cmdlet supports the common parameters: Verbose, Debug, ErrorAction, ErrorVariable, WarningAction, 
     WarningVariable, OutBuffer, PipelineVariable, and OutVariable.

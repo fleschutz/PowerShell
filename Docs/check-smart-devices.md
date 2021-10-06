@@ -8,9 +8,7 @@ Type is either short(default) or long.
 ```powershell
 check-smart-devices.ps1 [[-type] <String>] [<CommonParameters>]
 
-```
 
-```
 -type <String>
     
     Required?                    false
@@ -18,9 +16,7 @@ check-smart-devices.ps1 [[-type] <String>] [<CommonParameters>]
     Default value                short
     Accept pipeline input?       false
     Accept wildcard characters?  false
-```
 
-```
 [<CommonParameters>]
     This cmdlet supports the common parameters: Verbose, Debug, ErrorAction, ErrorVariable, WarningAction, 
     WarningVariable, OutBuffer, PipelineVariable, and OutVariable.

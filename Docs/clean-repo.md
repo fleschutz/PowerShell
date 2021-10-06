@@ -6,9 +6,7 @@ clean-repo.ps1 [<RepoDir>]
 ```powershell
 clean-repo.ps1 [[-RepoDir] <String>] [<CommonParameters>]
 
-```
 
-```
 -RepoDir <String>
     
     Required?                    false
@@ -16,9 +14,7 @@ clean-repo.ps1 [[-RepoDir] <String>] [<CommonParameters>]
     Default value                "$PWD"
     Accept pipeline input?       false
     Accept wildcard characters?  false
-```
 
-```
 [<CommonParameters>]
     This cmdlet supports the common parameters: Verbose, Debug, ErrorAction, ErrorVariable, WarningAction, 
     WarningVariable, OutBuffer, PipelineVariable, and OutVariable.

@@ -6,9 +6,7 @@ list-anagrams.ps1 [<word>] [<columns>]
 ```powershell
 list-anagrams.ps1 [[-Word] <String>] [[-Columns] <Int32>] [<CommonParameters>]
 
-```
 
-```
 -Word <String>
     
     Required?                    false
@@ -16,9 +14,7 @@ list-anagrams.ps1 [[-Word] <String>] [[-Columns] <Int32>] [<CommonParameters>]
     Default value                
     Accept pipeline input?       false
     Accept wildcard characters?  false
-```
 
-```
 -Columns <Int32>
     
     Required?                    false
@@ -26,9 +22,7 @@ list-anagrams.ps1 [[-Word] <String>] [[-Columns] <Int32>] [<CommonParameters>]
     Default value                8
     Accept pipeline input?       false
     Accept wildcard characters?  false
-```
 
-```
 [<CommonParameters>]
     This cmdlet supports the common parameters: Verbose, Debug, ErrorAction, ErrorVariable, WarningAction, 
     WarningVariable, OutBuffer, PipelineVariable, and OutVariable.

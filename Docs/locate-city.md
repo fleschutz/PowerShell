@@ -6,9 +6,7 @@ locate-city.ps1 [<City>]
 ```powershell
 locate-city.ps1 [[-City] <String>] [<CommonParameters>]
 
-```
 
-```
 -City <String>
     
     Required?                    false
@@ -16,9 +14,7 @@ locate-city.ps1 [[-City] <String>] [<CommonParameters>]
     Default value                
     Accept pipeline input?       false
     Accept wildcard characters?  false
-```
 
-```
 [<CommonParameters>]
     This cmdlet supports the common parameters: Verbose, Debug, ErrorAction, ErrorVariable, WarningAction, 
     WarningVariable, OutBuffer, PipelineVariable, and OutVariable.

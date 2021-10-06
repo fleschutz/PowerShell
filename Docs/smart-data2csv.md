@@ -8,9 +8,7 @@ Converts the S.M.A.R.T. JSON files in the current/given directory to a CSV table
 ```powershell
 smart-data2csv.ps1 [[-Directory] <String>] [<CommonParameters>]
 
-```
 
-```
 -Directory <String>
     
     Required?                    false
@@ -18,9 +16,7 @@ smart-data2csv.ps1 [[-Directory] <String>] [<CommonParameters>]
     Default value                
     Accept pipeline input?       false
     Accept wildcard characters?  false
-```
 
-```
 [<CommonParameters>]
     This cmdlet supports the common parameters: Verbose, Debug, ErrorAction, ErrorVariable, WarningAction, 
     WarningVariable, OutBuffer, PipelineVariable, and OutVariable.

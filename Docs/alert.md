@@ -6,9 +6,7 @@ alert.ps1 [<message>]
 ```powershell
 alert.ps1 [[-Message] <String>] [<CommonParameters>]
 
-```
 
-```
 -Message <String>
     
     Required?                    false
@@ -16,9 +14,7 @@ alert.ps1 [[-Message] <String>] [<CommonParameters>]
     Default value                
     Accept pipeline input?       false
     Accept wildcard characters?  false
-```
 
-```
 [<CommonParameters>]
     This cmdlet supports the common parameters: Verbose, Debug, ErrorAction, ErrorVariable, WarningAction, 
     WarningVariable, OutBuffer, PipelineVariable, and OutVariable.

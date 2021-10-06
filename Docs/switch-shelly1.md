@@ -9,9 +9,7 @@ switch-shelly1.ps1 [<Host>] [<TurnMode>] [<Timer>]
 ```powershell
 switch-shelly1.ps1 [[-Host] <String>] [[-TurnMode] <String>] [[-Timer] <Int32>] [<CommonParameters>]
 
-```
 
-```
 -Host <String>
     
     Required?                    false
@@ -19,9 +17,7 @@ switch-shelly1.ps1 [[-Host] <String>] [[-TurnMode] <String>] [[-Timer] <Int32>] 
     Default value                
     Accept pipeline input?       false
     Accept wildcard characters?  false
-```
 
-```
 -TurnMode <String>
     
     Required?                    false
@@ -29,9 +25,7 @@ switch-shelly1.ps1 [[-Host] <String>] [[-TurnMode] <String>] [[-Timer] <Int32>] 
     Default value                
     Accept pipeline input?       false
     Accept wildcard characters?  false
-```
 
-```
 -Timer <Int32>
     
     Required?                    false
@@ -39,9 +33,7 @@ switch-shelly1.ps1 [[-Host] <String>] [[-TurnMode] <String>] [[-Timer] <Int32>] 
     Default value                -999
     Accept pipeline input?       false
     Accept wildcard characters?  false
-```
 
-```
 [<CommonParameters>]
     This cmdlet supports the common parameters: Verbose, Debug, ErrorAction, ErrorVariable, WarningAction, 
     WarningVariable, OutBuffer, PipelineVariable, and OutVariable.

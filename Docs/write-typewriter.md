@@ -6,9 +6,7 @@ write-typewriter.ps1 [<text>] [<speed>]
 ```powershell
 write-typewriter.ps1 [[-text] <String>] [[-speed] <Int32>] [<CommonParameters>]
 
-```
 
-```
 -text <String>
     
     Required?                    false
@@ -25,9 +23,7 @@ write-typewriter.ps1 [[-text] <String>] [[-speed] <Int32>] [<CommonParameters>]
     :-)
     Accept pipeline input?       false
     Accept wildcard characters?  false
-```
 
-```
 -speed <Int32>
     
     Required?                    false
@@ -35,9 +31,7 @@ write-typewriter.ps1 [[-text] <String>] [[-speed] <Int32>] [<CommonParameters>]
     Default value                250
     Accept pipeline input?       false
     Accept wildcard characters?  false
-```
 
-```
 [<CommonParameters>]
     This cmdlet supports the common parameters: Verbose, Debug, ErrorAction, ErrorVariable, WarningAction, 
     WarningVariable, OutBuffer, PipelineVariable, and OutVariable.

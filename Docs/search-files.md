@@ -6,9 +6,7 @@ search-files.ps1 [<pattern>] [<files>]
 ```powershell
 search-files.ps1 [[-pattern] <String>] [[-files] <String>] [<CommonParameters>]
 
-```
 
-```
 -pattern <String>
     
     Required?                    false
@@ -16,9 +14,7 @@ search-files.ps1 [[-pattern] <String>] [[-files] <String>] [<CommonParameters>]
     Default value                
     Accept pipeline input?       false
     Accept wildcard characters?  false
-```
 
-```
 -files <String>
     
     Required?                    false
@@ -26,9 +22,7 @@ search-files.ps1 [[-pattern] <String>] [[-files] <String>] [<CommonParameters>]
     Default value                
     Accept pipeline input?       false
     Accept wildcard characters?  false
-```
 
-```
 [<CommonParameters>]
     This cmdlet supports the common parameters: Verbose, Debug, ErrorAction, ErrorVariable, WarningAction, 
     WarningVariable, OutBuffer, PipelineVariable, and OutVariable.

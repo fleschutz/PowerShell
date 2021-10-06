@@ -7,9 +7,7 @@ list-exchange-rates.ps1 [<currency>]
 ```powershell
 list-exchange-rates.ps1 [[-currency] <String>] [<CommonParameters>]
 
-```
 
-```
 -currency <String>
     
     Required?                    false
@@ -17,9 +15,7 @@ list-exchange-rates.ps1 [[-currency] <String>] [<CommonParameters>]
     Default value                USD
     Accept pipeline input?       false
     Accept wildcard characters?  false
-```
 
-```
 [<CommonParameters>]
     This cmdlet supports the common parameters: Verbose, Debug, ErrorAction, ErrorVariable, WarningAction, 
     WarningVariable, OutBuffer, PipelineVariable, and OutVariable.

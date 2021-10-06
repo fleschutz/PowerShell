@@ -9,9 +9,7 @@ Run the above command if you do not have this module.
 ```powershell
 list-sql-tables.ps1 [-server] <Object> [-database] <Object> [-username] <Object> [-password] <Object> [<CommonParameters>]
 
-```
 
-```
 -server <Object>
     
     Required?                    true
@@ -19,9 +17,7 @@ list-sql-tables.ps1 [-server] <Object> [-database] <Object> [-username] <Object>
     Default value                
     Accept pipeline input?       false
     Accept wildcard characters?  false
-```
 
-```
 -database <Object>
     
     Required?                    true
@@ -29,9 +25,7 @@ list-sql-tables.ps1 [-server] <Object> [-database] <Object> [-username] <Object>
     Default value                
     Accept pipeline input?       false
     Accept wildcard characters?  false
-```
 
-```
 -username <Object>
     
     Required?                    true
@@ -39,9 +33,7 @@ list-sql-tables.ps1 [-server] <Object> [-database] <Object> [-username] <Object>
     Default value                
     Accept pipeline input?       false
     Accept wildcard characters?  false
-```
 
-```
 -password <Object>
     
     Required?                    true
@@ -49,9 +41,7 @@ list-sql-tables.ps1 [-server] <Object> [-database] <Object> [-username] <Object>
     Default value                
     Accept pipeline input?       false
     Accept wildcard characters?  false
-```
 
-```
 [<CommonParameters>]
     This cmdlet supports the common parameters: Verbose, Debug, ErrorAction, ErrorVariable, WarningAction, 
     WarningVariable, OutBuffer, PipelineVariable, and OutVariable.

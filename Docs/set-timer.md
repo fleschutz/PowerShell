@@ -6,9 +6,7 @@ set-timer.ps1 [<seconds>]
 ```powershell
 set-timer.ps1 [[-Seconds] <Int32>] [<CommonParameters>]
 
-```
 
-```
 -Seconds <Int32>
     
     Required?                    false
@@ -16,9 +14,7 @@ set-timer.ps1 [[-Seconds] <Int32>] [<CommonParameters>]
     Default value                0
     Accept pipeline input?       false
     Accept wildcard characters?  false
-```
 
-```
 [<CommonParameters>]
     This cmdlet supports the common parameters: Verbose, Debug, ErrorAction, ErrorVariable, WarningAction, 
     WarningVariable, OutBuffer, PipelineVariable, and OutVariable.

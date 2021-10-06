@@ -6,9 +6,7 @@ encrypt-file.ps1 [<Path>] [<Password>]
 ```powershell
 encrypt-file.ps1 [[-Path] <String>] [[-Password] <String>] [<CommonParameters>]
 
-```
 
-```
 -Path <String>
     
     Required?                    false
@@ -16,9 +14,7 @@ encrypt-file.ps1 [[-Path] <String>] [[-Password] <String>] [<CommonParameters>]
     Default value                
     Accept pipeline input?       false
     Accept wildcard characters?  false
-```
 
-```
 -Password <String>
     
     Required?                    false
@@ -26,9 +22,7 @@ encrypt-file.ps1 [[-Path] <String>] [[-Password] <String>] [<CommonParameters>]
     Default value                
     Accept pipeline input?       false
     Accept wildcard characters?  false
-```
 
-```
 [<CommonParameters>]
     This cmdlet supports the common parameters: Verbose, Debug, ErrorAction, ErrorVariable, WarningAction, 
     WarningVariable, OutBuffer, PipelineVariable, and OutVariable.

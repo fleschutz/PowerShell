@@ -6,9 +6,7 @@ upload-file.ps1 [<File>] [<URL>] [<Username>] [<Password>]
 ```powershell
 upload-file.ps1 [[-File] <String>] [[-URL] <String>] [[-Username] <String>] [[-Password] <String>] [<CommonParameters>]
 
-```
 
-```
 -File <String>
     
     Required?                    false
@@ -16,9 +14,7 @@ upload-file.ps1 [[-File] <String>] [[-URL] <String>] [[-Username] <String>] [[-P
     Default value                
     Accept pipeline input?       false
     Accept wildcard characters?  false
-```
 
-```
 -URL <String>
     
     Required?                    false
@@ -26,9 +22,7 @@ upload-file.ps1 [[-File] <String>] [[-URL] <String>] [[-Username] <String>] [[-P
     Default value                
     Accept pipeline input?       false
     Accept wildcard characters?  false
-```
 
-```
 -Username <String>
     
     Required?                    false
@@ -36,9 +30,7 @@ upload-file.ps1 [[-File] <String>] [[-URL] <String>] [[-Username] <String>] [[-P
     Default value                
     Accept pipeline input?       false
     Accept wildcard characters?  false
-```
 
-```
 -Password <String>
     
     Required?                    false
@@ -46,9 +38,7 @@ upload-file.ps1 [[-File] <String>] [[-URL] <String>] [[-Username] <String>] [[-P
     Default value                
     Accept pipeline input?       false
     Accept wildcard characters?  false
-```
 
-```
 [<CommonParameters>]
     This cmdlet supports the common parameters: Verbose, Debug, ErrorAction, ErrorVariable, WarningAction, 
     WarningVariable, OutBuffer, PipelineVariable, and OutVariable.

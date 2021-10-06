@@ -6,9 +6,7 @@ list-os-updates.ps1 [<RSS-URL>] [<max-count>]
 ```powershell
 list-os-updates.ps1 [[-RSS_URL] <String>] [[-MaxCount] <Int32>] [<CommonParameters>]
 
-```
 
-```
 -RSS_URL <String>
     
     Required?                    false
@@ -16,9 +14,7 @@ list-os-updates.ps1 [[-RSS_URL] <String>] [[-MaxCount] <Int32>] [<CommonParamete
     Default value                https://distrowatch.com/news/dwd.xml
     Accept pipeline input?       false
     Accept wildcard characters?  false
-```
 
-```
 -MaxCount <Int32>
     
     Required?                    false
@@ -26,9 +22,7 @@ list-os-updates.ps1 [[-RSS_URL] <String>] [[-MaxCount] <Int32>] [<CommonParamete
     Default value                20
     Accept pipeline input?       false
     Accept wildcard characters?  false
-```
 
-```
 [<CommonParameters>]
     This cmdlet supports the common parameters: Verbose, Debug, ErrorAction, ErrorVariable, WarningAction, 
     WarningVariable, OutBuffer, PipelineVariable, and OutVariable.

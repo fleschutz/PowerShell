@@ -6,9 +6,7 @@ write-calendar.ps1 [<Month>] [<Year>]
 ```powershell
 write-calendar.ps1 [[-Month] <Int32>] [[-Year] <Int32>] [<CommonParameters>]
 
-```
 
-```
 -Month <Int32>
     If specified, will limit output to a single month with this numeral value.
     
@@ -17,9 +15,7 @@ write-calendar.ps1 [[-Month] <Int32>] [[-Year] <Int32>] [<CommonParameters>]
     Default value                (Get-Date).Month
     Accept pipeline input?       false
     Accept wildcard characters?  false
-```
 
-```
 -Year <Int32>
     If specified, will output an entire year.
     
@@ -28,9 +24,7 @@ write-calendar.ps1 [[-Month] <Int32>] [[-Year] <Int32>] [<CommonParameters>]
     Default value                (Get-Date).Year
     Accept pipeline input?       false
     Accept wildcard characters?  false
-```
 
-```
 [<CommonParameters>]
     This cmdlet supports the common parameters: Verbose, Debug, ErrorAction, ErrorVariable, WarningAction, 
     WarningVariable, OutBuffer, PipelineVariable, and OutVariable.

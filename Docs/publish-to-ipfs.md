@@ -6,9 +6,7 @@ publish-to-ipfs.ps1 [<FilePattern>] [<HashList>]
 ```powershell
 publish-to-ipfs.ps1 [[-FilePattern] <String>] [[-HashList] <String>] [[-DF_Hashes] <String>] [<CommonParameters>]
 
-```
 
-```
 -FilePattern <String>
     
     Required?                    false
@@ -16,9 +14,7 @@ publish-to-ipfs.ps1 [[-FilePattern] <String>] [[-HashList] <String>] [[-DF_Hashe
     Default value                
     Accept pipeline input?       false
     Accept wildcard characters?  false
-```
 
-```
 -HashList <String>
     
     Required?                    false
@@ -26,9 +22,7 @@ publish-to-ipfs.ps1 [[-FilePattern] <String>] [[-HashList] <String>] [[-DF_Hashe
     Default value                IPFS_hashes.txt
     Accept pipeline input?       false
     Accept wildcard characters?  false
-```
 
-```
 -DF_Hashes <String>
     
     Required?                    false
@@ -36,9 +30,7 @@ publish-to-ipfs.ps1 [[-FilePattern] <String>] [[-HashList] <String>] [[-DF_Hashe
     Default value                file_checksums.xml
     Accept pipeline input?       false
     Accept wildcard characters?  false
-```
 
-```
 [<CommonParameters>]
     This cmdlet supports the common parameters: Verbose, Debug, ErrorAction, ErrorVariable, WarningAction, 
     WarningVariable, OutBuffer, PipelineVariable, and OutVariable.

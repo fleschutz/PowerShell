@@ -7,9 +7,7 @@ check-ping.ps1 [<hosts>]
 ```powershell
 check-ping.ps1 [[-hosts] <String>] [<CommonParameters>]
 
-```
 
-```
 -hosts <String>
     
     Required?                    false
@@ -17,9 +15,7 @@ check-ping.ps1 [[-hosts] <String>] [<CommonParameters>]
     Default value                amazon.com,apple.com,bing.com,cnn.com,dropbox.com,facebook.com,google.com,live.com,twitter.com,youtube.com
     Accept pipeline input?       false
     Accept wildcard characters?  false
-```
 
-```
 [<CommonParameters>]
     This cmdlet supports the common parameters: Verbose, Debug, ErrorAction, ErrorVariable, WarningAction, 
     WarningVariable, OutBuffer, PipelineVariable, and OutVariable.

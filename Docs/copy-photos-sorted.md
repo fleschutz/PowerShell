@@ -7,9 +7,7 @@ copy-photos-sorted.ps1 [<SourceDir>] [<TargetDir>]
 ```powershell
 copy-photos-sorted.ps1 [[-SourceDir] <String>] [[-TargetDir] <String>] [<CommonParameters>]
 
-```
 
-```
 -SourceDir <String>
     
     Required?                    false
@@ -17,9 +15,7 @@ copy-photos-sorted.ps1 [[-SourceDir] <String>] [[-TargetDir] <String>] [<CommonP
     Default value                
     Accept pipeline input?       false
     Accept wildcard characters?  false
-```
 
-```
 -TargetDir <String>
     
     Required?                    false
@@ -27,9 +23,7 @@ copy-photos-sorted.ps1 [[-SourceDir] <String>] [[-TargetDir] <String>] [<CommonP
     Default value                
     Accept pipeline input?       false
     Accept wildcard characters?  false
-```
 
-```
 [<CommonParameters>]
     This cmdlet supports the common parameters: Verbose, Debug, ErrorAction, ErrorVariable, WarningAction, 
     WarningVariable, OutBuffer, PipelineVariable, and OutVariable.

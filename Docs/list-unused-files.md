@@ -9,9 +9,7 @@ list-unused-files.ps1 <DirTree> <Days>
 ```powershell
 list-unused-files.ps1 [[-DirTree] <String>] [[-Days] <Int32>] [<CommonParameters>]
 
-```
 
-```
 -DirTree <String>
     
     Required?                    false
@@ -19,9 +17,7 @@ list-unused-files.ps1 [[-DirTree] <String>] [[-Days] <Int32>] [<CommonParameters
     Default value                
     Accept pipeline input?       false
     Accept wildcard characters?  false
-```
 
-```
 -Days <Int32>
     
     Required?                    false
@@ -29,9 +25,7 @@ list-unused-files.ps1 [[-DirTree] <String>] [[-Days] <Int32>] [<CommonParameters
     Default value                100
     Accept pipeline input?       false
     Accept wildcard characters?  false
-```
 
-```
 [<CommonParameters>]
     This cmdlet supports the common parameters: Verbose, Debug, ErrorAction, ErrorVariable, WarningAction, 
     WarningVariable, OutBuffer, PipelineVariable, and OutVariable.

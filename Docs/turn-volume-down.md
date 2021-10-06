@@ -6,9 +6,7 @@ turn-volume-down.ps1 [<percent>]
 ```powershell
 turn-volume-down.ps1 [[-percent] <Int32>] [<CommonParameters>]
 
-```
 
-```
 -percent <Int32>
     
     Required?                    false
@@ -16,9 +14,7 @@ turn-volume-down.ps1 [[-percent] <Int32>] [<CommonParameters>]
     Default value                10
     Accept pipeline input?       false
     Accept wildcard characters?  false
-```
 
-```
 [<CommonParameters>]
     This cmdlet supports the common parameters: Verbose, Debug, ErrorAction, ErrorVariable, WarningAction, 
     WarningVariable, OutBuffer, PipelineVariable, and OutVariable.

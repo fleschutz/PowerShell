@@ -6,9 +6,7 @@ write-marquee.ps1 [<text>] [<speed>]
 ```powershell
 write-marquee.ps1 [[-text] <String>] [[-speed] <Int32>] [<CommonParameters>]
 
-```
 
-```
 -text <String>
     
     Required?                    false
@@ -16,9 +14,7 @@ write-marquee.ps1 [[-text] <String>] [[-speed] <Int32>] [<CommonParameters>]
     Default value                PowerShell is powerful! PowerShell is cross-platform! PowerShell is open-source! PowerShell is easy to learn! Powershell is fully documented
     Accept pipeline input?       false
     Accept wildcard characters?  false
-```
 
-```
 -speed <Int32>
     
     Required?                    false
@@ -26,9 +22,7 @@ write-marquee.ps1 [[-text] <String>] [[-speed] <Int32>] [<CommonParameters>]
     Default value                60
     Accept pipeline input?       false
     Accept wildcard characters?  false
-```
 
-```
 [<CommonParameters>]
     This cmdlet supports the common parameters: Verbose, Debug, ErrorAction, ErrorVariable, WarningAction, 
     WarningVariable, OutBuffer, PipelineVariable, and OutVariable.

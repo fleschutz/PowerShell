@@ -8,9 +8,7 @@ NOTE: in case of merge conflicts the script stops immediately!
 ```powershell
 pick-commit.ps1 [[-CommitID] <String>] [[-CommitMessage] <String>] [[-Branches] <String>] [[-RepoDir] <String>] [<CommonParameters>]
 
-```
 
-```
 -CommitID <String>
     
     Required?                    false
@@ -18,9 +16,7 @@ pick-commit.ps1 [[-CommitID] <String>] [[-CommitMessage] <String>] [[-Branches] 
     Default value                
     Accept pipeline input?       false
     Accept wildcard characters?  false
-```
 
-```
 -CommitMessage <String>
     
     Required?                    false
@@ -28,9 +24,7 @@ pick-commit.ps1 [[-CommitID] <String>] [[-CommitMessage] <String>] [[-Branches] 
     Default value                
     Accept pipeline input?       false
     Accept wildcard characters?  false
-```
 
-```
 -Branches <String>
     
     Required?                    false
@@ -38,9 +32,7 @@ pick-commit.ps1 [[-CommitID] <String>] [[-CommitMessage] <String>] [[-Branches] 
     Default value                
     Accept pipeline input?       false
     Accept wildcard characters?  false
-```
 
-```
 -RepoDir <String>
     
     Required?                    false
@@ -48,9 +40,7 @@ pick-commit.ps1 [[-CommitID] <String>] [[-CommitMessage] <String>] [[-Branches] 
     Default value                "$PWD"
     Accept pipeline input?       false
     Accept wildcard characters?  false
-```
 
-```
 [<CommonParameters>]
     This cmdlet supports the common parameters: Verbose, Debug, ErrorAction, ErrorVariable, WarningAction, 
     WarningVariable, OutBuffer, PipelineVariable, and OutVariable.

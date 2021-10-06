@@ -6,9 +6,7 @@ check-drive-space.ps1 [<drive>] [<min-level>]
 ```powershell
 check-drive-space.ps1 [[-Drive] <String>] [[-MinLevel] <Int32>] [<CommonParameters>]
 
-```
 
-```
 -Drive <String>
     
     Required?                    false
@@ -16,9 +14,7 @@ check-drive-space.ps1 [[-Drive] <String>] [[-MinLevel] <Int32>] [<CommonParamete
     Default value                
     Accept pipeline input?       false
     Accept wildcard characters?  false
-```
 
-```
 -MinLevel <Int32>
     
     Required?                    false
@@ -26,9 +22,7 @@ check-drive-space.ps1 [[-Drive] <String>] [[-MinLevel] <Int32>] [<CommonParamete
     Default value                20
     Accept pipeline input?       false
     Accept wildcard characters?  false
-```
 
-```
 [<CommonParameters>]
     This cmdlet supports the common parameters: Verbose, Debug, ErrorAction, ErrorVariable, WarningAction, 
     WarningVariable, OutBuffer, PipelineVariable, and OutVariable.

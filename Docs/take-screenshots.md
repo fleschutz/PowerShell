@@ -7,9 +7,7 @@ Takes screenshots and saves them into a folder (per default every 60 seconds)
 ```powershell
 take-screenshots.ps1 [[-TargetDir] <String>] [[-Interval] <Int32>] [<CommonParameters>]
 
-```
 
-```
 -TargetDir <String>
     
     Required?                    false
@@ -17,9 +15,7 @@ take-screenshots.ps1 [[-TargetDir] <String>] [[-Interval] <Int32>] [<CommonParam
     Default value                "$PWD"
     Accept pipeline input?       false
     Accept wildcard characters?  false
-```
 
-```
 -Interval <Int32>
     
     Required?                    false
@@ -27,9 +23,7 @@ take-screenshots.ps1 [[-TargetDir] <String>] [[-Interval] <Int32>] [<CommonParam
     Default value                60
     Accept pipeline input?       false
     Accept wildcard characters?  false
-```
 
-```
 [<CommonParameters>]
     This cmdlet supports the common parameters: Verbose, Debug, ErrorAction, ErrorVariable, WarningAction, 
     WarningVariable, OutBuffer, PipelineVariable, and OutVariable.

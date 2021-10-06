@@ -6,9 +6,7 @@ list-commits.ps1 [<RepoDir>] [<Format>]
 ```powershell
 list-commits.ps1 [[-RepoDir] <String>] [[-Format] <String>] [<CommonParameters>]
 
-```
 
-```
 -RepoDir <String>
     Specifies the path to the Git repository.
     
@@ -17,9 +15,7 @@ list-commits.ps1 [[-RepoDir] <String>] [[-Format] <String>] [<CommonParameters>]
     Default value                "$PWD"
     Accept pipeline input?       false
     Accept wildcard characters?  false
-```
 
-```
 -Format <String>
     Specifies the output format: list|compact|normal|JSON
     
@@ -28,9 +24,7 @@ list-commits.ps1 [[-RepoDir] <String>] [[-Format] <String>] [<CommonParameters>]
     Default value                list
     Accept pipeline input?       false
     Accept wildcard characters?  false
-```
 
-```
 [<CommonParameters>]
     This cmdlet supports the common parameters: Verbose, Debug, ErrorAction, ErrorVariable, WarningAction, 
     WarningVariable, OutBuffer, PipelineVariable, and OutVariable.

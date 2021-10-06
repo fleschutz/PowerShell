@@ -6,9 +6,7 @@ list-mysql-tables.ps1
 ```powershell
 list-mysql-tables.ps1 [-server] <Object> [-database] <Object> [-dbuser] <Object> [-dbpass] <Object> [<CommonParameters>]
 
-```
 
-```
 -server <Object>
     
     Required?                    true
@@ -16,9 +14,7 @@ list-mysql-tables.ps1 [-server] <Object> [-database] <Object> [-dbuser] <Object>
     Default value                
     Accept pipeline input?       false
     Accept wildcard characters?  false
-```
 
-```
 -database <Object>
     
     Required?                    true
@@ -26,9 +22,7 @@ list-mysql-tables.ps1 [-server] <Object> [-database] <Object> [-dbuser] <Object>
     Default value                
     Accept pipeline input?       false
     Accept wildcard characters?  false
-```
 
-```
 -dbuser <Object>
     
     Required?                    true
@@ -36,9 +30,7 @@ list-mysql-tables.ps1 [-server] <Object> [-database] <Object> [-dbuser] <Object>
     Default value                
     Accept pipeline input?       false
     Accept wildcard characters?  false
-```
 
-```
 -dbpass <Object>
     
     Required?                    true
@@ -46,9 +38,7 @@ list-mysql-tables.ps1 [-server] <Object> [-database] <Object> [-dbuser] <Object>
     Default value                
     Accept pipeline input?       false
     Accept wildcard characters?  false
-```
 
-```
 [<CommonParameters>]
     This cmdlet supports the common parameters: Verbose, Debug, ErrorAction, ErrorVariable, WarningAction, 
     WarningVariable, OutBuffer, PipelineVariable, and OutVariable.

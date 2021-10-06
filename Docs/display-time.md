@@ -7,9 +7,7 @@ display-time.ps1 [<seconds>]
 ```powershell
 display-time.ps1 [[-Seconds] <Int32>] [<CommonParameters>]
 
-```
 
-```
 -Seconds <Int32>
     
     Required?                    false
@@ -17,9 +15,7 @@ display-time.ps1 [[-Seconds] <Int32>] [<CommonParameters>]
     Default value                10
     Accept pipeline input?       false
     Accept wildcard characters?  false
-```
 
-```
 [<CommonParameters>]
     This cmdlet supports the common parameters: Verbose, Debug, ErrorAction, ErrorVariable, WarningAction, 
     WarningVariable, OutBuffer, PipelineVariable, and OutVariable.

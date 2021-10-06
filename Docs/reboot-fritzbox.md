@@ -6,9 +6,7 @@ reboot-fritzbox.ps1 [<Username>] [<Password>]
 ```powershell
 reboot-fritzbox.ps1 [[-Username] <String>] [[-Password] <String>] [<CommonParameters>]
 
-```
 
-```
 -Username <String>
     
     Required?                    false
@@ -16,9 +14,7 @@ reboot-fritzbox.ps1 [[-Username] <String>] [[-Password] <String>] [<CommonParame
     Default value                
     Accept pipeline input?       false
     Accept wildcard characters?  false
-```
 
-```
 -Password <String>
     
     Required?                    false
@@ -26,9 +22,7 @@ reboot-fritzbox.ps1 [[-Username] <String>] [[-Password] <String>] [<CommonParame
     Default value                
     Accept pipeline input?       false
     Accept wildcard characters?  false
-```
 
-```
 [<CommonParameters>]
     This cmdlet supports the common parameters: Verbose, Debug, ErrorAction, ErrorVariable, WarningAction, 
     WarningVariable, OutBuffer, PipelineVariable, and OutVariable.

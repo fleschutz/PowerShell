@@ -6,9 +6,7 @@ convert-ps2md.ps1 [<filename>]
 ```powershell
 convert-ps2md.ps1 [[-filename] <String>] [<CommonParameters>]
 
-```
 
-```
 -filename <String>
     Specifies the path to the PowerShell script
     
@@ -17,9 +15,7 @@ convert-ps2md.ps1 [[-filename] <String>] [<CommonParameters>]
     Default value                
     Accept pipeline input?       false
     Accept wildcard characters?  false
-```
 
-```
 [<CommonParameters>]
     This cmdlet supports the common parameters: Verbose, Debug, ErrorAction, ErrorVariable, WarningAction, 
     WarningVariable, OutBuffer, PipelineVariable, and OutVariable.

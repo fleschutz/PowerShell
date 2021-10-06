@@ -6,9 +6,7 @@ new-tag.ps1 [<TagName>] [<RepoDir>]
 ```powershell
 new-tag.ps1 [[-TagName] <String>] [[-RepoDir] <String>] [<CommonParameters>]
 
-```
 
-```
 -TagName <String>
     
     Required?                    false
@@ -16,9 +14,7 @@ new-tag.ps1 [[-TagName] <String>] [[-RepoDir] <String>] [<CommonParameters>]
     Default value                
     Accept pipeline input?       false
     Accept wildcard characters?  false
-```
 
-```
 -RepoDir <String>
     
     Required?                    false
@@ -26,9 +22,7 @@ new-tag.ps1 [[-TagName] <String>] [[-RepoDir] <String>] [<CommonParameters>]
     Default value                "$PWD"
     Accept pipeline input?       false
     Accept wildcard characters?  false
-```
 
-```
 [<CommonParameters>]
     This cmdlet supports the common parameters: Verbose, Debug, ErrorAction, ErrorVariable, WarningAction, 
     WarningVariable, OutBuffer, PipelineVariable, and OutVariable.

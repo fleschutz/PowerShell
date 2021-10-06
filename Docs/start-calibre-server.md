@@ -7,9 +7,7 @@ Starts a local Calibre server as background process (Web port number is 8099 by 
 ```powershell
 start-calibre-server.ps1 [[-port] <Int32>] [<CommonParameters>]
 
-```
 
-```
 -port <Int32>
     
     Required?                    false
@@ -17,9 +15,7 @@ start-calibre-server.ps1 [[-port] <Int32>] [<CommonParameters>]
     Default value                8099
     Accept pipeline input?       false
     Accept wildcard characters?  false
-```
 
-```
 [<CommonParameters>]
     This cmdlet supports the common parameters: Verbose, Debug, ErrorAction, ErrorVariable, WarningAction, 
     WarningVariable, OutBuffer, PipelineVariable, and OutVariable.

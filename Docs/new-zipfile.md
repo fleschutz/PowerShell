@@ -6,9 +6,7 @@ new-zipfile.ps1 [<folder>]
 ```powershell
 new-zipfile.ps1 [[-folder] <String>] [<CommonParameters>]
 
-```
 
-```
 -folder <String>
     
     Required?                    false
@@ -16,9 +14,7 @@ new-zipfile.ps1 [[-folder] <String>] [<CommonParameters>]
     Default value                
     Accept pipeline input?       false
     Accept wildcard characters?  false
-```
 
-```
 [<CommonParameters>]
     This cmdlet supports the common parameters: Verbose, Debug, ErrorAction, ErrorVariable, WarningAction, 
     WarningVariable, OutBuffer, PipelineVariable, and OutVariable.

@@ -6,9 +6,7 @@ convert-mysql2csv.ps1 [<server>] [<database>] [<username>] [<password>] [<query>
 ```powershell
 convert-mysql2csv.ps1 [[-server] <String>] [[-database] <String>] [[-username] <String>] [[-password] <String>] [[-query] <String>] [<CommonParameters>]
 
-```
 
-```
 -server <String>
     
     Required?                    false
@@ -16,9 +14,7 @@ convert-mysql2csv.ps1 [[-server] <String>] [[-database] <String>] [[-username] <
     Default value                
     Accept pipeline input?       false
     Accept wildcard characters?  false
-```
 
-```
 -database <String>
     
     Required?                    false
@@ -26,9 +22,7 @@ convert-mysql2csv.ps1 [[-server] <String>] [[-database] <String>] [[-username] <
     Default value                
     Accept pipeline input?       false
     Accept wildcard characters?  false
-```
 
-```
 -username <String>
     
     Required?                    false
@@ -36,9 +30,7 @@ convert-mysql2csv.ps1 [[-server] <String>] [[-database] <String>] [[-username] <
     Default value                
     Accept pipeline input?       false
     Accept wildcard characters?  false
-```
 
-```
 -password <String>
     
     Required?                    false
@@ -46,9 +38,7 @@ convert-mysql2csv.ps1 [[-server] <String>] [[-database] <String>] [[-username] <
     Default value                
     Accept pipeline input?       false
     Accept wildcard characters?  false
-```
 
-```
 -query <String>
     
     Required?                    false
@@ -56,9 +46,7 @@ convert-mysql2csv.ps1 [[-server] <String>] [[-database] <String>] [[-username] <
     Default value                
     Accept pipeline input?       false
     Accept wildcard characters?  false
-```
 
-```
 [<CommonParameters>]
     This cmdlet supports the common parameters: Verbose, Debug, ErrorAction, ErrorVariable, WarningAction, 
     WarningVariable, OutBuffer, PipelineVariable, and OutVariable.

@@ -15,9 +15,7 @@ https://github.com/PowerShell/vscode-powershell/blob/master/scripts/Install-VSCo
 ```powershell
 install-vscode.ps1 [[-Architecture] <String>] [[-BuildEdition] <String>] [[-AdditionalExtensions] <String[]>] [-LaunchWhenDone] [-EnableContextMenus] [-WhatIf] [-Confirm] [<CommonParameters>]
 
-```
 
-```
 -Architecture <String>
     A validated string defining the bit version to download. Values can be either 64-bit or 32-bit.
     If 64-bit is chosen and the OS Architecture does not match, then the 32-bit build will be
@@ -28,9 +26,7 @@ install-vscode.ps1 [[-Architecture] <String>] [[-BuildEdition] <String>] [[-Addi
     Default value                64-bit
     Accept pipeline input?       false
     Accept wildcard characters?  false
-```
 
-```
 -BuildEdition <String>
     A validated string defining which build edition or "stream" to download:
     Stable or Insiders Edition (system install or user profile install).
@@ -41,9 +37,7 @@ install-vscode.ps1 [[-Architecture] <String>] [[-BuildEdition] <String>] [[-Addi
     Default value                Stable-System
     Accept pipeline input?       false
     Accept wildcard characters?  false
-```
 
-```
 -AdditionalExtensions <String[]>
     An array of strings that are the fully-qualified names of extensions to be
     installed in addition to the PowerShell extension.  The fully qualified
@@ -56,9 +50,7 @@ install-vscode.ps1 [[-Architecture] <String>] [[-BuildEdition] <String>] [[-Addi
     Default value                @()
     Accept pipeline input?       false
     Accept wildcard characters?  false
-```
 
-```
 -LaunchWhenDone [<SwitchParameter>]
     When present, causes Visual Studio Code to be launched as soon as installation
     has finished.
@@ -68,9 +60,7 @@ install-vscode.ps1 [[-Architecture] <String>] [[-BuildEdition] <String>] [[-Addi
     Default value                False
     Accept pipeline input?       false
     Accept wildcard characters?  false
-```
 
-```
 -EnableContextMenus [<SwitchParameter>]
     When present, causes the installer to configure the Explorer context menus
     
@@ -79,9 +69,7 @@ install-vscode.ps1 [[-Architecture] <String>] [[-BuildEdition] <String>] [[-Addi
     Default value                False
     Accept pipeline input?       false
     Accept wildcard characters?  false
-```
 
-```
 -WhatIf [<SwitchParameter>]
     
     Required?                    false
@@ -89,9 +77,7 @@ install-vscode.ps1 [[-Architecture] <String>] [[-BuildEdition] <String>] [[-Addi
     Default value                
     Accept pipeline input?       false
     Accept wildcard characters?  false
-```
 
-```
 -Confirm [<SwitchParameter>]
     
     Required?                    false
@@ -99,9 +85,7 @@ install-vscode.ps1 [[-Architecture] <String>] [[-BuildEdition] <String>] [[-Addi
     Default value                
     Accept pipeline input?       false
     Accept wildcard characters?  false
-```
 
-```
 [<CommonParameters>]
     This cmdlet supports the common parameters: Verbose, Debug, ErrorAction, ErrorVariable, WarningAction, 
     WarningVariable, OutBuffer, PipelineVariable, and OutVariable.

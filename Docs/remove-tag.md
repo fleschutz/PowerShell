@@ -6,9 +6,7 @@ remove-tag.ps1 [<TagName>] [<Mode>] [<RepoDir>]
 ```powershell
 remove-tag.ps1 [[-TagName] <String>] [[-Mode] <String>] [[-RepoDir] <String>] [<CommonParameters>]
 
-```
 
-```
 -TagName <String>
     
     Required?                    false
@@ -16,9 +14,7 @@ remove-tag.ps1 [[-TagName] <String>] [[-Mode] <String>] [[-RepoDir] <String>] [<
     Default value                
     Accept pipeline input?       false
     Accept wildcard characters?  false
-```
 
-```
 -Mode <String>
     
     Required?                    false
@@ -26,9 +22,7 @@ remove-tag.ps1 [[-TagName] <String>] [[-Mode] <String>] [[-RepoDir] <String>] [<
     Default value                
     Accept pipeline input?       false
     Accept wildcard characters?  false
-```
 
-```
 -RepoDir <String>
     
     Required?                    false
@@ -36,9 +30,7 @@ remove-tag.ps1 [[-TagName] <String>] [[-Mode] <String>] [[-RepoDir] <String>] [<
     Default value                "$PWD"
     Accept pipeline input?       false
     Accept wildcard characters?  false
-```
 
-```
 [<CommonParameters>]
     This cmdlet supports the common parameters: Verbose, Debug, ErrorAction, ErrorVariable, WarningAction, 
     WarningVariable, OutBuffer, PipelineVariable, and OutVariable.

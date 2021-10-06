@@ -7,9 +7,7 @@ wakeup.ps1 [<MAC-address>] [<IP-address>]
 ```powershell
 wakeup.ps1 [[-MACaddress] <String>] [[-IPaddress] <String>] [[-Port] <Int32>] [<CommonParameters>]
 
-```
 
-```
 -MACaddress <String>
     
     Required?                    false
@@ -17,9 +15,7 @@ wakeup.ps1 [[-MACaddress] <String>] [[-IPaddress] <String>] [[-Port] <Int32>] [<
     Default value                
     Accept pipeline input?       false
     Accept wildcard characters?  false
-```
 
-```
 -IPaddress <String>
     
     Required?                    false
@@ -27,9 +23,7 @@ wakeup.ps1 [[-MACaddress] <String>] [[-IPaddress] <String>] [[-Port] <Int32>] [<
     Default value                
     Accept pipeline input?       false
     Accept wildcard characters?  false
-```
 
-```
 -Port <Int32>
     
     Required?                    false
@@ -37,9 +31,7 @@ wakeup.ps1 [[-MACaddress] <String>] [[-IPaddress] <String>] [[-Port] <Int32>] [<
     Default value                9
     Accept pipeline input?       false
     Accept wildcard characters?  false
-```
 
-```
 [<CommonParameters>]
     This cmdlet supports the common parameters: Verbose, Debug, ErrorAction, ErrorVariable, WarningAction, 
     WarningVariable, OutBuffer, PipelineVariable, and OutVariable.

@@ -7,9 +7,7 @@ open-browser.ps1 [<URL>]
 ```powershell
 open-browser.ps1 [[-URL] <String>] [<CommonParameters>]
 
-```
 
-```
 -URL <String>
     
     Required?                    false
@@ -17,9 +15,7 @@ open-browser.ps1 [[-URL] <String>] [<CommonParameters>]
     Default value                http://www.fleschutz.de
     Accept pipeline input?       false
     Accept wildcard characters?  false
-```
 
-```
 [<CommonParameters>]
     This cmdlet supports the common parameters: Verbose, Debug, ErrorAction, ErrorVariable, WarningAction, 
     WarningVariable, OutBuffer, PipelineVariable, and OutVariable.

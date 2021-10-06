@@ -7,9 +7,7 @@ list-files.ps1 [<DirTree>]
 ```powershell
 list-files.ps1 [[-DirTree] <String>] [<CommonParameters>]
 
-```
 
-```
 -DirTree <String>
     
     Required?                    false
@@ -17,9 +15,7 @@ list-files.ps1 [[-DirTree] <String>] [<CommonParameters>]
     Default value                
     Accept pipeline input?       false
     Accept wildcard characters?  false
-```
 
-```
 [<CommonParameters>]
     This cmdlet supports the common parameters: Verbose, Debug, ErrorAction, ErrorVariable, WarningAction, 
     WarningVariable, OutBuffer, PipelineVariable, and OutVariable.

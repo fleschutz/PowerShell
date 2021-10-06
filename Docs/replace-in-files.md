@@ -6,9 +6,7 @@ replace-in-files.ps1 [<pattern>] [<replacement>] [<files>]
 ```powershell
 replace-in-files.ps1 [[-pattern] <String>] [[-replacement] <String>] [[-files] <String>] [<CommonParameters>]
 
-```
 
-```
 -pattern <String>
     
     Required?                    false
@@ -16,9 +14,7 @@ replace-in-files.ps1 [[-pattern] <String>] [[-replacement] <String>] [[-files] <
     Default value                
     Accept pipeline input?       false
     Accept wildcard characters?  false
-```
 
-```
 -replacement <String>
     
     Required?                    false
@@ -26,9 +22,7 @@ replace-in-files.ps1 [[-pattern] <String>] [[-replacement] <String>] [[-files] <
     Default value                
     Accept pipeline input?       false
     Accept wildcard characters?  false
-```
 
-```
 -files <String>
     
     Required?                    false
@@ -36,9 +30,7 @@ replace-in-files.ps1 [[-pattern] <String>] [[-replacement] <String>] [[-files] <
     Default value                
     Accept pipeline input?       false
     Accept wildcard characters?  false
-```
 
-```
 [<CommonParameters>]
     This cmdlet supports the common parameters: Verbose, Debug, ErrorAction, ErrorVariable, WarningAction, 
     WarningVariable, OutBuffer, PipelineVariable, and OutVariable.

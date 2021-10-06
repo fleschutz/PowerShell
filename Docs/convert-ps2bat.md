@@ -6,9 +6,7 @@ convert-ps2bat.ps1 [<pattern>]
 ```powershell
 convert-ps2bat.ps1 [[-Pattern] <String>] [<CommonParameters>]
 
-```
 
-```
 -Pattern <String>
     
     Required?                    false
@@ -16,9 +14,7 @@ convert-ps2bat.ps1 [[-Pattern] <String>] [<CommonParameters>]
     Default value                
     Accept pipeline input?       false
     Accept wildcard characters?  false
-```
 
-```
 [<CommonParameters>]
     This cmdlet supports the common parameters: Verbose, Debug, ErrorAction, ErrorVariable, WarningAction, 
     WarningVariable, OutBuffer, PipelineVariable, and OutVariable.

@@ -6,9 +6,7 @@ new-email.ps1 [<address>]
 ```powershell
 new-email.ps1 [[-EmailAddress] <String>] [<CommonParameters>]
 
-```
 
-```
 -EmailAddress <String>
     
     Required?                    false
@@ -16,9 +14,7 @@ new-email.ps1 [[-EmailAddress] <String>] [<CommonParameters>]
     Default value                markus@fleschutz.de
     Accept pipeline input?       false
     Accept wildcard characters?  false
-```
 
-```
 [<CommonParameters>]
     This cmdlet supports the common parameters: Verbose, Debug, ErrorAction, ErrorVariable, WarningAction, 
     WarningVariable, OutBuffer, PipelineVariable, and OutVariable.

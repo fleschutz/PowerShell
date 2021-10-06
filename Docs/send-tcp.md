@@ -6,9 +6,7 @@ send-tcp.ps1 [<TargetIP>] [<TargetPort>] [<Message>]
 ```powershell
 send-tcp.ps1 [[-TargetIP] <String>] [[-TargetPort] <Int32>] [[-Message] <String>] [<CommonParameters>]
 
-```
 
-```
 -TargetIP <String>
     
     Required?                    false
@@ -16,9 +14,7 @@ send-tcp.ps1 [[-TargetIP] <String>] [[-TargetPort] <Int32>] [[-Message] <String>
     Default value                
     Accept pipeline input?       false
     Accept wildcard characters?  false
-```
 
-```
 -TargetPort <Int32>
     
     Required?                    false
@@ -26,9 +22,7 @@ send-tcp.ps1 [[-TargetIP] <String>] [[-TargetPort] <Int32>] [[-Message] <String>
     Default value                0
     Accept pipeline input?       false
     Accept wildcard characters?  false
-```
 
-```
 -Message <String>
     
     Required?                    false
@@ -36,9 +30,7 @@ send-tcp.ps1 [[-TargetIP] <String>] [[-TargetPort] <Int32>] [[-Message] <String>
     Default value                
     Accept pipeline input?       false
     Accept wildcard characters?  false
-```
 
-```
 [<CommonParameters>]
     This cmdlet supports the common parameters: Verbose, Debug, ErrorAction, ErrorVariable, WarningAction, 
     WarningVariable, OutBuffer, PipelineVariable, and OutVariable.

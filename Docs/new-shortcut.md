@@ -6,9 +6,7 @@ new-shortcut.ps1 [<shortcut>] [<target>] [<description>]
 ```powershell
 new-shortcut.ps1 [[-shortcut] <String>] [[-target] <String>] [[-description] <String>] [<CommonParameters>]
 
-```
 
-```
 -shortcut <String>
     
     Required?                    false
@@ -16,9 +14,7 @@ new-shortcut.ps1 [[-shortcut] <String>] [[-target] <String>] [[-description] <St
     Default value                
     Accept pipeline input?       false
     Accept wildcard characters?  false
-```
 
-```
 -target <String>
     
     Required?                    false
@@ -26,9 +22,7 @@ new-shortcut.ps1 [[-shortcut] <String>] [[-target] <String>] [[-description] <St
     Default value                
     Accept pipeline input?       false
     Accept wildcard characters?  false
-```
 
-```
 -description <String>
     
     Required?                    false
@@ -36,9 +30,7 @@ new-shortcut.ps1 [[-shortcut] <String>] [[-target] <String>] [[-description] <St
     Default value                
     Accept pipeline input?       false
     Accept wildcard characters?  false
-```
 
-```
 [<CommonParameters>]
     This cmdlet supports the common parameters: Verbose, Debug, ErrorAction, ErrorVariable, WarningAction, 
     WarningVariable, OutBuffer, PipelineVariable, and OutVariable.

@@ -7,9 +7,7 @@ list-dir.ps1 [<SearchPattern>]
 ```powershell
 list-dir.ps1 [[-SearchPattern] <String>] [<CommonParameters>]
 
-```
 
-```
 -SearchPattern <String>
     
     Required?                    false
@@ -17,9 +15,7 @@ list-dir.ps1 [[-SearchPattern] <String>] [<CommonParameters>]
     Default value                *
     Accept pipeline input?       false
     Accept wildcard characters?  false
-```
 
-```
 [<CommonParameters>]
     This cmdlet supports the common parameters: Verbose, Debug, ErrorAction, ErrorVariable, WarningAction, 
     WarningVariable, OutBuffer, PipelineVariable, and OutVariable.

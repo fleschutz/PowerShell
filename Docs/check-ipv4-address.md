@@ -6,9 +6,7 @@ check-ipv4-address.ps1 [<Address>]
 ```powershell
 check-ipv4-address.ps1 [[-Address] <String>] [<CommonParameters>]
 
-```
 
-```
 -Address <String>
     
     Required?                    false
@@ -16,9 +14,7 @@ check-ipv4-address.ps1 [[-Address] <String>] [<CommonParameters>]
     Default value                
     Accept pipeline input?       false
     Accept wildcard characters?  false
-```
 
-```
 [<CommonParameters>]
     This cmdlet supports the common parameters: Verbose, Debug, ErrorAction, ErrorVariable, WarningAction, 
     WarningVariable, OutBuffer, PipelineVariable, and OutVariable.

@@ -6,9 +6,7 @@ list-passwords.ps1 [<PasswordLength>] [<Columns>] [<Rows>]
 ```powershell
 list-passwords.ps1 [[-PasswordLength] <Int32>] [[-Columns] <Int32>] [[-Rows] <Int32>] [<CommonParameters>]
 
-```
 
-```
 -PasswordLength <Int32>
     
     Required?                    false
@@ -16,9 +14,7 @@ list-passwords.ps1 [[-PasswordLength] <Int32>] [[-Columns] <Int32>] [[-Rows] <In
     Default value                15
     Accept pipeline input?       false
     Accept wildcard characters?  false
-```
 
-```
 -Columns <Int32>
     
     Required?                    false
@@ -26,9 +22,7 @@ list-passwords.ps1 [[-PasswordLength] <Int32>] [[-Columns] <Int32>] [[-Rows] <In
     Default value                6
     Accept pipeline input?       false
     Accept wildcard characters?  false
-```
 
-```
 -Rows <Int32>
     
     Required?                    false
@@ -36,9 +30,7 @@ list-passwords.ps1 [[-PasswordLength] <Int32>] [[-Columns] <Int32>] [[-Rows] <In
     Default value                30
     Accept pipeline input?       false
     Accept wildcard characters?  false
-```
 
-```
 [<CommonParameters>]
     This cmdlet supports the common parameters: Verbose, Debug, ErrorAction, ErrorVariable, WarningAction, 
     WarningVariable, OutBuffer, PipelineVariable, and OutVariable.

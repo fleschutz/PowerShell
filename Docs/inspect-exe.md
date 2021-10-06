@@ -6,9 +6,7 @@ inspect-exe.ps1 [<path-to-exe-file>]
 ```powershell
 inspect-exe.ps1 [[-PathToExe] <String>] [<CommonParameters>]
 
-```
 
-```
 -PathToExe <String>
     
     Required?                    false
@@ -16,9 +14,7 @@ inspect-exe.ps1 [[-PathToExe] <String>] [<CommonParameters>]
     Default value                
     Accept pipeline input?       false
     Accept wildcard characters?  false
-```
 
-```
 [<CommonParameters>]
     This cmdlet supports the common parameters: Verbose, Debug, ErrorAction, ErrorVariable, WarningAction, 
     WarningVariable, OutBuffer, PipelineVariable, and OutVariable.

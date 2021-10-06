@@ -6,9 +6,7 @@ speak-file.ps1 [<file>]
 ```powershell
 speak-file.ps1 [[-File] <String>] [<CommonParameters>]
 
-```
 
-```
 -File <String>
     
     Required?                    false
@@ -16,9 +14,7 @@ speak-file.ps1 [[-File] <String>] [<CommonParameters>]
     Default value                
     Accept pipeline input?       false
     Accept wildcard characters?  false
-```
 
-```
 [<CommonParameters>]
     This cmdlet supports the common parameters: Verbose, Debug, ErrorAction, ErrorVariable, WarningAction, 
     WarningVariable, OutBuffer, PipelineVariable, and OutVariable.
