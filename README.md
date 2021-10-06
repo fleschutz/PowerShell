@@ -195,6 +195,8 @@ Mega Collection of PowerShell Scripts
 
 | Script                                               | Description                                                        | Help                                    |
 | ---------------------------------------------------- | ------------------------------------------------------------------ | --------------------------------------- |
+| [build-repo.ps1](Scripts/build-repo.ps1)             | Builds a Git repository                                            | [Help](Docs/build-repo.md)           |
+| [build-repos.ps1](Scripts/build-repos.ps1)           | Builds all Git repositories in a folder                            | [Help](Docs/build-repos.md)          |
 | [cherry-picker.ps1](Scripts/cherry-picker.ps1)       | Cherry-picks a Git commit into multiple branches                   | [Help](Docs/cherry-picker.md)       |
 | [clean-repo.ps1](Scripts/clean-repo.ps1)             | Cleans a Git repository from untracked files (including submodules) | [Help](Docs/clean-repo.md)         |
 | [clean-repos.ps1](Scripts/clean-repos.ps1)           | Cleans all Git repositories under a directory from untracked files (including submodules) | [Help](Docs/clean-repos.md)   |
@@ -208,8 +210,6 @@ Mega Collection of PowerShell Scripts
 | [list-latest-tags.ps1](Scripts/list-latest-tags.ps1) | Lists the latests tags in all Git repositories under a directory   | [Help](Docs/list-latest-tags.md)    |
 | [list-submodules.ps1](Scripts/list-submodules.ps1)   | Lists the submodules in a Git repository                           | [Help](Docs/list-submodules.md)     |
 | [list-tags.ps1](Scripts/list-tags.ps1)               | Lists all tags in a Git repository                                 | [Help](Docs/list-tags.md)           |
-| [make-repo.ps1](Scripts/make-repo.ps1)               | Builds a Git repository                                            | [Help](Docs/make-repo.md)           |
-| [make-repos.ps1](Scripts/make-repos.ps1)             | Builds all Git repositories under a directory                      | [Help](Docs/make-repos.md)          |
 | [new-branch.ps1](Scripts/new-branch.ps1)             | Creates a new branch in a Git repository                           | [Help](Docs/new-branch.md)          |
 | [new-tag.ps1](Scripts/new-tag.ps1)                   | Creates a new tag in a Git repository                              | [Help](Docs/new-tag.md)             |
 | [pull-repo.ps1](Scripts/pull-repo.ps1)               | Pulls updates for a Git repository (including submodules)          | [Help](Docs/pull-repo.md)           |

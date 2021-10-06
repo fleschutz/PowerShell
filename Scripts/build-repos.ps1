@@ -4,7 +4,7 @@
 .DESCRIPTION
 	make-repos.ps1 [<ParentDir>]
 .EXAMPLE
-	PS> ./make-repos C:\MyRepos
+	PS> ./build-repos C:\MyRepos
 .NOTES
 	Author: Markus Fleschutz · License: CC0
 .LINK
@@ -25,7 +25,7 @@ try {
 
 	[int]$Step = 1
 	foreach ($Folder in $Folders) {
-		& "$PSScriptRoot/make-repo.ps1" "$Folder"
+		& "$PSScriptRoot/build-repo.ps1" "$Folder"
 		$Step++
 	}
 
