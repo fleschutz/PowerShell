@@ -27,7 +27,7 @@ try {
 	$RepoDirName = (get-item "$RepoDir").Name
 	"🢃 Fetching updates for Git repository 📂$RepoDirName ..."
 
-	& git fetch --all --recurse-submodules --jobs=4
+	& git fetch --all --recurse-submodules --prune --prune-tags --force
 	if ($lastExitCode -ne "0") { throw "'git fetch' failed" }
 
 	& git checkout -b "$BranchName"

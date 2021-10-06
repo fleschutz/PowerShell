@@ -31,7 +31,7 @@ try {
 	if ("$Result" -notmatch "nothing to commit, working tree clean") { throw "Git repository is NOT clean: $Result" }
 
 	"⏳ Step 2/3: Fetching latest updates and switching branch..."
-	& git fetch --all --recurse-submodules --prune --prune-tags
+	& git fetch --all --recurse-submodules --prune --prune-tags --force
 	if ($lastExitCode -ne "0") { throw "'git fetch' failed" }
 
 	& git checkout --recurse-submodules "$BranchName"

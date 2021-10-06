@@ -26,7 +26,7 @@ try {
 	$Null = (git --version)
 	if ($lastExitCode -ne "0") { throw "Can't execute 'git' - make sure Git is installed and available" }
 	
-	& git -C "$RepoDir" fetch --all --recurse-submodules --prune --prune-tags --force --jobs=4
+	& git -C "$RepoDir" fetch --all --recurse-submodules --prune --prune-tags --force 
 	if ($lastExitCode -ne "0") { throw "'git fetch' in $RepoDir failed" }
 	
 	$RepoDirName = (get-item "$RepoDir").Name
