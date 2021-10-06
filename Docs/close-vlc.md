@@ -7,7 +7,7 @@ close-vlc.ps1
 close-vlc.ps1 [<CommonParameters>]
 
 [<CommonParameters>]
-    This cmdlet supports the common parameters: Verbose, Debug, ErrorAction, ErrorVariable, WarningAction, 
+    This script supports the common parameters: Verbose, Debug, ErrorAction, ErrorVariable, WarningAction, 
     WarningVariable, OutBuffer, PipelineVariable, and OutVariable.
 ```
 
@@ -15,7 +15,6 @@ close-vlc.ps1 [<CommonParameters>]
 ```powershell
 PS>./close-vlc
 ```
-
 
 ## Notes
 Author: Markus Fleschutz · License: CC0

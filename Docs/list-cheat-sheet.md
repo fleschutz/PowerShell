@@ -7,7 +7,7 @@ list-cheat-sheet.ps1
 list-cheat-sheet.ps1 [<CommonParameters>]
 
 [<CommonParameters>]
-    This cmdlet supports the common parameters: Verbose, Debug, ErrorAction, ErrorVariable, WarningAction, 
+    This script supports the common parameters: Verbose, Debug, ErrorAction, ErrorVariable, WarningAction, 
     WarningVariable, OutBuffer, PipelineVariable, and OutVariable.
 ```
 
@@ -15,7 +15,6 @@ list-cheat-sheet.ps1 [<CommonParameters>]
 ```powershell
 PS>./list-cheat-sheet
 ```
-
 
 ## Notes
 Author: Markus Fleschutz · License: CC0

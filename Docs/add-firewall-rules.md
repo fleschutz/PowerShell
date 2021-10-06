@@ -15,7 +15,7 @@ add-firewall-rules.ps1 [[-PathToExecutables] <String>] [<CommonParameters>]
     Accept wildcard characters?  false
 
 [<CommonParameters>]
-    This cmdlet supports the common parameters: Verbose, Debug, ErrorAction, ErrorVariable, WarningAction, 
+    This script supports the common parameters: Verbose, Debug, ErrorAction, ErrorVariable, WarningAction, 
     WarningVariable, OutBuffer, PipelineVariable, and OutVariable.
 ```
 
@@ -26,7 +26,6 @@ Adding firewall rule for C:\MyApp\bin\app1.exe
 Adding firewall rule for C:\MyApp\bin\app2.exe
 ...
 ```
-
 
 ## Notes
 Author: Markus Fleschutz · License: CC0

@@ -23,7 +23,7 @@ new-qrcode.ps1 [[-Text] <String>] [[-ImageSize] <String>] [<CommonParameters>]
     Accept wildcard characters?  false
 
 [<CommonParameters>]
-    This cmdlet supports the common parameters: Verbose, Debug, ErrorAction, ErrorVariable, WarningAction, 
+    This script supports the common parameters: Verbose, Debug, ErrorAction, ErrorVariable, WarningAction, 
     WarningVariable, OutBuffer, PipelineVariable, and OutVariable.
 ```
 
@@ -31,7 +31,6 @@ new-qrcode.ps1 [[-Text] <String>] [[-ImageSize] <String>] [<CommonParameters>]
 ```powershell
 PS>./new-qrcode "Fasten seatbelt" 500x500
 ```
-
 
 ## Notes
 Author: Markus Fleschutz · License: CC0

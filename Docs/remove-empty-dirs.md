@@ -16,7 +16,7 @@ remove-empty-dirs.ps1 [[-DirTree] <String>] [<CommonParameters>]
     Accept wildcard characters?  false
 
 [<CommonParameters>]
-    This cmdlet supports the common parameters: Verbose, Debug, ErrorAction, ErrorVariable, WarningAction, 
+    This script supports the common parameters: Verbose, Debug, ErrorAction, ErrorVariable, WarningAction, 
     WarningVariable, OutBuffer, PipelineVariable, and OutVariable.
 ```
 
@@ -24,7 +24,6 @@ remove-empty-dirs.ps1 [[-DirTree] <String>] [<CommonParameters>]
 ```powershell
 PS>./remove-empty-dirs C:\Temp
 ```
-
 
 ## Notes
 Author: Markus Fleschutz · License: CC0

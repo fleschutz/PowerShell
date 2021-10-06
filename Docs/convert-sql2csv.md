@@ -47,7 +47,7 @@ convert-sql2csv.ps1 [[-server] <String>] [[-database] <String>] [[-username] <St
     Accept wildcard characters?  false
 
 [<CommonParameters>]
-    This cmdlet supports the common parameters: Verbose, Debug, ErrorAction, ErrorVariable, WarningAction, 
+    This script supports the common parameters: Verbose, Debug, ErrorAction, ErrorVariable, WarningAction, 
     WarningVariable, OutBuffer, PipelineVariable, and OutVariable.
 ```
 
@@ -55,7 +55,6 @@ convert-sql2csv.ps1 [[-server] <String>] [[-database] <String>] [[-username] <St
 ```powershell
 PS>./convert-sql2csv
 ```
-
 
 ## Notes
 Author: Markus Fleschutz · License: CC0

@@ -17,7 +17,7 @@ check-smart-devices.ps1 [[-type] <String>] [<CommonParameters>]
     Accept wildcard characters?  false
 
 [<CommonParameters>]
-    This cmdlet supports the common parameters: Verbose, Debug, ErrorAction, ErrorVariable, WarningAction, 
+    This script supports the common parameters: Verbose, Debug, ErrorAction, ErrorVariable, WarningAction, 
     WarningVariable, OutBuffer, PipelineVariable, and OutVariable.
 ```
 
@@ -26,7 +26,6 @@ check-smart-devices.ps1 [[-type] <String>] [<CommonParameters>]
 PS>./check-smart-devices
 ✔️ short selftest started on S.M.A.R.T. device /dev/sda
 ```
-
 
 ## Notes
 Author: Markus Fleschutz · License: CC0

@@ -23,7 +23,7 @@ check-drive-space.ps1 [[-Drive] <String>] [[-MinLevel] <Int32>] [<CommonParamete
     Accept wildcard characters?  false
 
 [<CommonParameters>]
-    This cmdlet supports the common parameters: Verbose, Debug, ErrorAction, ErrorVariable, WarningAction, 
+    This script supports the common parameters: Verbose, Debug, ErrorAction, ErrorVariable, WarningAction, 
     WarningVariable, OutBuffer, PipelineVariable, and OutVariable.
 ```
 
@@ -32,7 +32,6 @@ check-drive-space.ps1 [[-Drive] <String>] [[-MinLevel] <Int32>] [<CommonParamete
 PS>./check-drive-space C
 ✔️ 172 GB left on drive C (61 of 233 GB used)
 ```
-
 
 ## Notes
 Author: Markus Fleschutz · License: CC0

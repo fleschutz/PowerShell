@@ -39,7 +39,7 @@ upload-file.ps1 [[-File] <String>] [[-URL] <String>] [[-Username] <String>] [[-P
     Accept wildcard characters?  false
 
 [<CommonParameters>]
-    This cmdlet supports the common parameters: Verbose, Debug, ErrorAction, ErrorVariable, WarningAction, 
+    This script supports the common parameters: Verbose, Debug, ErrorAction, ErrorVariable, WarningAction, 
     WarningVariable, OutBuffer, PipelineVariable, and OutVariable.
 ```
 
@@ -47,7 +47,6 @@ upload-file.ps1 [[-File] <String>] [[-URL] <String>] [[-Username] <String>] [[-P
 ```powershell
 PS>.\upload-file.ps1
 ```
-
 
 ## Notes
 Author: Markus Fleschutz · License: CC0

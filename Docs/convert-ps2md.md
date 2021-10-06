@@ -16,7 +16,7 @@ convert-ps2md.ps1 [[-filename] <String>] [<CommonParameters>]
     Accept wildcard characters?  false
 
 [<CommonParameters>]
-    This cmdlet supports the common parameters: Verbose, Debug, ErrorAction, ErrorVariable, WarningAction, 
+    This script supports the common parameters: Verbose, Debug, ErrorAction, ErrorVariable, WarningAction, 
     WarningVariable, OutBuffer, PipelineVariable, and OutVariable.
 ```
 
@@ -24,7 +24,6 @@ convert-ps2md.ps1 [[-filename] <String>] [<CommonParameters>]
 ```powershell
 PS>./convert-ps2md myscript.ps1
 ```
-
 
 ## Notes
 Author: Markus Fleschutz · License: CC0

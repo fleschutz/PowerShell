@@ -15,7 +15,7 @@ check-ipv4-address.ps1 [[-Address] <String>] [<CommonParameters>]
     Accept wildcard characters?  false
 
 [<CommonParameters>]
-    This cmdlet supports the common parameters: Verbose, Debug, ErrorAction, ErrorVariable, WarningAction, 
+    This script supports the common parameters: Verbose, Debug, ErrorAction, ErrorVariable, WarningAction, 
     WarningVariable, OutBuffer, PipelineVariable, and OutVariable.
 ```
 
@@ -24,7 +24,6 @@ check-ipv4-address.ps1 [[-Address] <String>] [<CommonParameters>]
 PS>./check-ipv4-address 192.168.11.22
 ✔️ IPv4 192.168.11.22 is valid
 ```
-
 
 ## Notes
 Author: Markus Fleschutz · License: CC0

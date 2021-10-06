@@ -7,7 +7,7 @@ list-aliases.ps1
 list-aliases.ps1 [<CommonParameters>]
 
 [<CommonParameters>]
-    This cmdlet supports the common parameters: Verbose, Debug, ErrorAction, ErrorVariable, WarningAction, 
+    This script supports the common parameters: Verbose, Debug, ErrorAction, ErrorVariable, WarningAction, 
     WarningVariable, OutBuffer, PipelineVariable, and OutVariable.
 ```
 
@@ -23,7 +23,6 @@ Alias           CFS -> ConvertFrom-String                          3.1.0.0    Mi
 Alias           fhx -> Format-Hex                                  3.1.0.0    Microsoft.PowerShell.Utility
 ...
 ```
-
 
 ## Notes
 Author: Markus Fleschutz · License: CC0

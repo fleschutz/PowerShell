@@ -41,7 +41,7 @@ pick-commit.ps1 [[-CommitID] <String>] [[-CommitMessage] <String>] [[-Branches] 
     Accept wildcard characters?  false
 
 [<CommonParameters>]
-    This cmdlet supports the common parameters: Verbose, Debug, ErrorAction, ErrorVariable, WarningAction, 
+    This script supports the common parameters: Verbose, Debug, ErrorAction, ErrorVariable, WarningAction, 
     WarningVariable, OutBuffer, PipelineVariable, and OutVariable.
 ```
 
@@ -49,7 +49,6 @@ pick-commit.ps1 [[-CommitID] <String>] [[-CommitMessage] <String>] [[-Branches] 
 ```powershell
 PS>./pick-commit 93849f889 "Fix typo" "v1 v2 v3"
 ```
-
 
 ## Notes
 Author: Markus Fleschutz · License: CC0

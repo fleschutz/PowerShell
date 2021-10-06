@@ -23,7 +23,7 @@ reboot-fritzbox.ps1 [[-Username] <String>] [[-Password] <String>] [<CommonParame
     Accept wildcard characters?  false
 
 [<CommonParameters>]
-    This cmdlet supports the common parameters: Verbose, Debug, ErrorAction, ErrorVariable, WarningAction, 
+    This script supports the common parameters: Verbose, Debug, ErrorAction, ErrorVariable, WarningAction, 
     WarningVariable, OutBuffer, PipelineVariable, and OutVariable.
 ```
 
@@ -31,7 +31,6 @@ reboot-fritzbox.ps1 [[-Username] <String>] [[-Password] <String>] [<CommonParame
 ```powershell
 PS>./reboot-fritzbox
 ```
-
 
 ## Notes
 Author: Markus Fleschutz · License: CC0

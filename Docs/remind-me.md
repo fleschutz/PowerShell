@@ -23,7 +23,7 @@ remind-me.ps1 [[-Message] <String>] [[-Time] <DateTime>] [<CommonParameters>]
     Accept wildcard characters?  false
 
 [<CommonParameters>]
-    This cmdlet supports the common parameters: Verbose, Debug, ErrorAction, ErrorVariable, WarningAction, 
+    This script supports the common parameters: Verbose, Debug, ErrorAction, ErrorVariable, WarningAction, 
     WarningVariable, OutBuffer, PipelineVariable, and OutVariable.
 ```
 
@@ -37,7 +37,6 @@ TaskPath                                       TaskName                         
 --------                                       --------                          -----
 \                                              Reminder_451733811                Ready
 ```
-
 
 ## Notes
 Author: Markus Fleschutz · License: CC0

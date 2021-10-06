@@ -16,7 +16,7 @@ check-ping.ps1 [[-hosts] <String>] [<CommonParameters>]
     Accept wildcard characters?  false
 
 [<CommonParameters>]
-    This cmdlet supports the common parameters: Verbose, Debug, ErrorAction, ErrorVariable, WarningAction, 
+    This script supports the common parameters: Verbose, Debug, ErrorAction, ErrorVariable, WarningAction, 
     WarningVariable, OutBuffer, PipelineVariable, and OutVariable.
 ```
 
@@ -25,7 +25,6 @@ check-ping.ps1 [[-hosts] <String>] [<CommonParameters>]
 PS>./check-ping
 ✔️ 36 ms ping average (13 ms min, 109 ms max, 10 hosts)
 ```
-
 
 ## Notes
 Author: Markus Fleschutz · License: CC0

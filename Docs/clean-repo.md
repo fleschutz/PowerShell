@@ -15,7 +15,7 @@ clean-repo.ps1 [[-RepoDir] <String>] [<CommonParameters>]
     Accept wildcard characters?  false
 
 [<CommonParameters>]
-    This cmdlet supports the common parameters: Verbose, Debug, ErrorAction, ErrorVariable, WarningAction, 
+    This script supports the common parameters: Verbose, Debug, ErrorAction, ErrorVariable, WarningAction, 
     WarningVariable, OutBuffer, PipelineVariable, and OutVariable.
 ```
 
@@ -25,7 +25,6 @@ PS>./clean-repo C:\MyRepo
 🧹 Cleaning Git repository 📂C:\MyRepo from untracked files...
 ✔️ cleaned Git repository 📂C:\MyRepo in 0 sec
 ```
-
 
 ## Notes
 Author: Markus Fleschutz · License: CC0

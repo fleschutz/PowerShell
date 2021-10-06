@@ -7,7 +7,7 @@ list-timezones.ps1
 list-timezones.ps1 [<CommonParameters>]
 
 [<CommonParameters>]
-    This cmdlet supports the common parameters: Verbose, Debug, ErrorAction, ErrorVariable, WarningAction, 
+    This script supports the common parameters: Verbose, Debug, ErrorAction, ErrorVariable, WarningAction, 
     WarningVariable, OutBuffer, PipelineVariable, and OutVariable.
 ```
 
@@ -24,7 +24,6 @@ Hawaiian Standard Time          (UTC-10:00) Hawaii                     False
 Alaskan Standard Time           (UTC-09:00) Alaska                     True
 ...
 ```
-
 
 ## Notes
 Author: Markus Fleschutz · License: CC0

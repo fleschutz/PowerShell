@@ -31,7 +31,7 @@ close-program.ps1 [[-FullProgramName] <String>] [[-ProgramName] <String>] [[-Pro
     Accept wildcard characters?  false
 
 [<CommonParameters>]
-    This cmdlet supports the common parameters: Verbose, Debug, ErrorAction, ErrorVariable, WarningAction, 
+    This script supports the common parameters: Verbose, Debug, ErrorAction, ErrorVariable, WarningAction, 
     WarningVariable, OutBuffer, PipelineVariable, and OutVariable.
 ```
 
@@ -39,7 +39,6 @@ close-program.ps1 [[-FullProgramName] <String>] [[-ProgramName] <String>] [[-Pro
 ```powershell
 PS>./close-program "Google Chrome" "chrome.exe"
 ```
-
 
 ## Notes
 Author: Markus Fleschutz · License: CC0

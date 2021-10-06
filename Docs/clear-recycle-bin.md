@@ -8,7 +8,7 @@ NOTE: can not be undo!
 clear-recycle-bin.ps1 [<CommonParameters>]
 
 [<CommonParameters>]
-    This cmdlet supports the common parameters: Verbose, Debug, ErrorAction, ErrorVariable, WarningAction, 
+    This script supports the common parameters: Verbose, Debug, ErrorAction, ErrorVariable, WarningAction, 
     WarningVariable, OutBuffer, PipelineVariable, and OutVariable.
 ```
 
@@ -17,7 +17,6 @@ clear-recycle-bin.ps1 [<CommonParameters>]
 PS>./clear-recycle-bin
 ✔️ cleared recycle bin
 ```
-
 
 ## Notes
 Author: Markus Fleschutz · License: CC0

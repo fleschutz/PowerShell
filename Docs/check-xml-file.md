@@ -15,7 +15,7 @@ check-xml-file.ps1 [[-file] <String>] [<CommonParameters>]
     Accept wildcard characters?  false
 
 [<CommonParameters>]
-    This cmdlet supports the common parameters: Verbose, Debug, ErrorAction, ErrorVariable, WarningAction, 
+    This script supports the common parameters: Verbose, Debug, ErrorAction, ErrorVariable, WarningAction, 
     WarningVariable, OutBuffer, PipelineVariable, and OutVariable.
 ```
 
@@ -24,7 +24,6 @@ check-xml-file.ps1 [[-file] <String>] [<CommonParameters>]
 PS>./check-xml-file myfile.xml
 ✔️ XML file is valid
 ```
-
 
 ## Notes
 Author: Markus Fleschutz · License: CC0

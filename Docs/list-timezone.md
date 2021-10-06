@@ -7,7 +7,7 @@ list-timezone.ps1
 list-timezone.ps1 [<CommonParameters>]
 
 [<CommonParameters>]
-    This cmdlet supports the common parameters: Verbose, Debug, ErrorAction, ErrorVariable, WarningAction, 
+    This script supports the common parameters: Verbose, Debug, ErrorAction, ErrorVariable, WarningAction, 
     WarningVariable, OutBuffer, PipelineVariable, and OutVariable.
 ```
 
@@ -24,7 +24,6 @@ DaylightName               : Central European Summer Time
 BaseUtcOffset              : 01:00:00
 SupportsDaylightSavingTime : True
 ```
-
 
 ## Notes
 Author: Markus Fleschutz · License: CC0

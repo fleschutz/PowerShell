@@ -15,7 +15,7 @@ check-swap-space.ps1 [[-MinLevel] <Int32>] [<CommonParameters>]
     Accept wildcard characters?  false
 
 [<CommonParameters>]
-    This cmdlet supports the common parameters: Verbose, Debug, ErrorAction, ErrorVariable, WarningAction, 
+    This script supports the common parameters: Verbose, Debug, ErrorAction, ErrorVariable, WarningAction, 
     WarningVariable, OutBuffer, PipelineVariable, and OutVariable.
 ```
 
@@ -24,7 +24,6 @@ check-swap-space.ps1 [[-MinLevel] <Int32>] [<CommonParameters>]
 PS>./check-swap-space
 ✔️ 1213 GB left for swap space (67 of 1280 GB used)
 ```
-
 
 ## Notes
 Author: Markus Fleschutz · License: CC0

@@ -23,7 +23,7 @@ locate-zip-code.ps1 [[-CountryCode] <String>] [[-ZipCode] <String>] [<CommonPara
     Accept wildcard characters?  false
 
 [<CommonParameters>]
-    This cmdlet supports the common parameters: Verbose, Debug, ErrorAction, ErrorVariable, WarningAction, 
+    This script supports the common parameters: Verbose, Debug, ErrorAction, ErrorVariable, WarningAction, 
     WarningVariable, OutBuffer, PipelineVariable, and OutVariable.
 ```
 
@@ -31,7 +31,6 @@ locate-zip-code.ps1 [[-CountryCode] <String>] [[-ZipCode] <String>] [<CommonPara
 ```powershell
 PS>./locate-zip-code
 ```
-
 
 ## Notes
 Author: Markus Fleschutz · License: CC0

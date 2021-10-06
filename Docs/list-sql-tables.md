@@ -42,7 +42,7 @@ list-sql-tables.ps1 [-server] <Object> [-database] <Object> [-username] <Object>
     Accept wildcard characters?  false
 
 [<CommonParameters>]
-    This cmdlet supports the common parameters: Verbose, Debug, ErrorAction, ErrorVariable, WarningAction, 
+    This script supports the common parameters: Verbose, Debug, ErrorAction, ErrorVariable, WarningAction, 
     WarningVariable, OutBuffer, PipelineVariable, and OutVariable.
 ```
 
@@ -50,7 +50,6 @@ list-sql-tables.ps1 [-server] <Object> [-database] <Object> [-username] <Object>
 ```powershell
 PS>./list-sql-tables
 ```
-
 
 ## Notes
 Author: Markus Fleschutz · License: CC0

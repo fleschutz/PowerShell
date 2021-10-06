@@ -7,7 +7,7 @@ list-drives.ps1
 list-drives.ps1 [<CommonParameters>]
 
 [<CommonParameters>]
-    This cmdlet supports the common parameters: Verbose, Debug, ErrorAction, ErrorVariable, WarningAction, 
+    This script supports the common parameters: Verbose, Debug, ErrorAction, ErrorVariable, WarningAction, 
     WarningVariable, OutBuffer, PipelineVariable, and OutVariable.
 ```
 
@@ -22,7 +22,6 @@ Name Root Used (GB) Free (GB)
 C    C:\       76,1      35,0
 D    D:\     6648,1     744,2
 ```
-
 
 ## Notes
 Author: Markus Fleschutz · License: CC0

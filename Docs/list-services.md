@@ -7,7 +7,7 @@ list-services.ps1
 list-services.ps1 [<CommonParameters>]
 
 [<CommonParameters>]
-    This cmdlet supports the common parameters: Verbose, Debug, ErrorAction, ErrorVariable, WarningAction, 
+    This script supports the common parameters: Verbose, Debug, ErrorAction, ErrorVariable, WarningAction, 
     WarningVariable, OutBuffer, PipelineVariable, and OutVariable.
 ```
 
@@ -23,7 +23,6 @@ Running  AarSvc_886c2       Agent Activation Runtime_886c2
 Running  Apple Mobile De... Apple Mobile Device Service
 ...
 ```
-
 
 ## Notes
 Author: Markus Fleschutz · License: CC0

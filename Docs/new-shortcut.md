@@ -31,7 +31,7 @@ new-shortcut.ps1 [[-shortcut] <String>] [[-target] <String>] [[-description] <St
     Accept wildcard characters?  false
 
 [<CommonParameters>]
-    This cmdlet supports the common parameters: Verbose, Debug, ErrorAction, ErrorVariable, WarningAction, 
+    This script supports the common parameters: Verbose, Debug, ErrorAction, ErrorVariable, WarningAction, 
     WarningVariable, OutBuffer, PipelineVariable, and OutVariable.
 ```
 
@@ -39,7 +39,6 @@ new-shortcut.ps1 [[-shortcut] <String>] [[-target] <String>] [[-description] <St
 ```powershell
 PS>./new-shortcut C:\Temp\HDD C:\
 ```
-
 
 ## Notes
 Author: Markus Fleschutz · License: CC0

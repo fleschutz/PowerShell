@@ -15,7 +15,7 @@ check-ipv6-address.ps1 [[-Address] <String>] [<CommonParameters>]
     Accept wildcard characters?  false
 
 [<CommonParameters>]
-    This cmdlet supports the common parameters: Verbose, Debug, ErrorAction, ErrorVariable, WarningAction, 
+    This script supports the common parameters: Verbose, Debug, ErrorAction, ErrorVariable, WarningAction, 
     WarningVariable, OutBuffer, PipelineVariable, and OutVariable.
 ```
 
@@ -24,7 +24,6 @@ check-ipv6-address.ps1 [[-Address] <String>] [<CommonParameters>]
 PS>./check-ipv6-address fe80::200:5aee:feaa:20a2
 ✔️ IPv6 fe80::200:5aee:feaa:20a2 is valid
 ```
-
 
 ## Notes
 Author: Markus Fleschutz · License: CC0

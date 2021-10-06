@@ -15,7 +15,7 @@ play-mp3.ps1 [[-Filename] <String>] [<CommonParameters>]
     Accept wildcard characters?  false
 
 [<CommonParameters>]
-    This cmdlet supports the common parameters: Verbose, Debug, ErrorAction, ErrorVariable, WarningAction, 
+    This script supports the common parameters: Verbose, Debug, ErrorAction, ErrorVariable, WarningAction, 
     WarningVariable, OutBuffer, PipelineVariable, and OutVariable.
 ```
 
@@ -23,7 +23,6 @@ play-mp3.ps1 [[-Filename] <String>] [<CommonParameters>]
 ```powershell
 PS>./play-mp3 C:\thunder.mp3
 ```
-
 
 ## Notes
 Author: Markus Fleschutz · License: CC0

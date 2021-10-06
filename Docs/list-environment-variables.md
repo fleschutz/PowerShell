@@ -7,7 +7,7 @@ list-environment-variables.ps1
 list-environment-variables.ps1 [<CommonParameters>]
 
 [<CommonParameters>]
-    This cmdlet supports the common parameters: Verbose, Debug, ErrorAction, ErrorVariable, WarningAction, 
+    This script supports the common parameters: Verbose, Debug, ErrorAction, ErrorVariable, WarningAction, 
     WarningVariable, OutBuffer, PipelineVariable, and OutVariable.
 ```
 
@@ -23,7 +23,6 @@ ALLUSERSPROFILE                C:\ProgramData
 APPDATA                        C:\Users\Joe\AppData\Roaming
 ...
 ```
-
 
 ## Notes
 Author: Markus Fleschutz · License: CC0

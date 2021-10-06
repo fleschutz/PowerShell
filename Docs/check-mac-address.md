@@ -16,7 +16,7 @@ check-mac-address.ps1 [[-MAC] <String>] [<CommonParameters>]
     Accept wildcard characters?  false
 
 [<CommonParameters>]
-    This cmdlet supports the common parameters: Verbose, Debug, ErrorAction, ErrorVariable, WarningAction, 
+    This script supports the common parameters: Verbose, Debug, ErrorAction, ErrorVariable, WarningAction, 
     WarningVariable, OutBuffer, PipelineVariable, and OutVariable.
 ```
 
@@ -25,7 +25,6 @@ check-mac-address.ps1 [[-MAC] <String>] [<CommonParameters>]
 PS>./check-mac-address 11:22:33:44:55:66
 ✔️ MAC address 11:22:33:44:55:66 is valid
 ```
-
 
 ## Notes
 Author: Markus Fleschutz · License: CC0

@@ -7,7 +7,7 @@ cd-downloads.ps1
 cd-downloads.ps1 [<CommonParameters>]
 
 [<CommonParameters>]
-    This cmdlet supports the common parameters: Verbose, Debug, ErrorAction, ErrorVariable, WarningAction, 
+    This script supports the common parameters: Verbose, Debug, ErrorAction, ErrorVariable, WarningAction, 
     WarningVariable, OutBuffer, PipelineVariable, and OutVariable.
 ```
 
@@ -16,7 +16,6 @@ cd-downloads.ps1 [<CommonParameters>]
 PS>./cd-downloads
 📂/home/markus/Downloads
 ```
-
 
 ## Notes
 Author: Markus Fleschutz · License: CC0

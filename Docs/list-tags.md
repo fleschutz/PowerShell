@@ -25,7 +25,7 @@ list-tags.ps1 [[-RepoDir] <String>] [[-SearchPattern] <String>] [<CommonParamete
     Accept wildcard characters?  false
 
 [<CommonParameters>]
-    This cmdlet supports the common parameters: Verbose, Debug, ErrorAction, ErrorVariable, WarningAction, 
+    This script supports the common parameters: Verbose, Debug, ErrorAction, ErrorVariable, WarningAction, 
     WarningVariable, OutBuffer, PipelineVariable, and OutVariable.
 ```
 
@@ -40,7 +40,6 @@ Tag             Description
 v0.1            Update README.md
 v0.2            Fix typo
 ```
-
 
 ## Notes
 Author: Markus Fleschutz · License: CC0

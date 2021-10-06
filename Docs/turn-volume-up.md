@@ -15,7 +15,7 @@ turn-volume-up.ps1 [[-percent] <Int32>] [<CommonParameters>]
     Accept wildcard characters?  false
 
 [<CommonParameters>]
-    This cmdlet supports the common parameters: Verbose, Debug, ErrorAction, ErrorVariable, WarningAction, 
+    This script supports the common parameters: Verbose, Debug, ErrorAction, ErrorVariable, WarningAction, 
     WarningVariable, OutBuffer, PipelineVariable, and OutVariable.
 ```
 
@@ -23,7 +23,6 @@ turn-volume-up.ps1 [[-percent] <Int32>] [<CommonParameters>]
 ```powershell
 PS>./turn-volume-up
 ```
-
 
 ## Notes
 Author:  Markus Fleschutz · License: CC0

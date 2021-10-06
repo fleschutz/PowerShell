@@ -7,7 +7,7 @@ check-health.ps1
 check-health.ps1 [<CommonParameters>]
 
 [<CommonParameters>]
-    This cmdlet supports the common parameters: Verbose, Debug, ErrorAction, ErrorVariable, WarningAction, 
+    This script supports the common parameters: Verbose, Debug, ErrorAction, ErrorVariable, WarningAction, 
     WarningVariable, OutBuffer, PipelineVariable, and OutVariable.
 ```
 
@@ -21,7 +21,6 @@ PS>./check-health
 ✔️ 29 ms ping average (13 ms min, 110 ms max, 10 hosts)
 ✔️ Windmill is healthy
 ```
-
 
 ## Notes
 Author:  Markus Fleschutz

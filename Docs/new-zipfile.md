@@ -15,7 +15,7 @@ new-zipfile.ps1 [[-folder] <String>] [<CommonParameters>]
     Accept wildcard characters?  false
 
 [<CommonParameters>]
-    This cmdlet supports the common parameters: Verbose, Debug, ErrorAction, ErrorVariable, WarningAction, 
+    This script supports the common parameters: Verbose, Debug, ErrorAction, ErrorVariable, WarningAction, 
     WarningVariable, OutBuffer, PipelineVariable, and OutVariable.
 ```
 
@@ -23,7 +23,6 @@ new-zipfile.ps1 [[-folder] <String>] [<CommonParameters>]
 ```powershell
 PS>./new-zipfile C:\Windows
 ```
-
 
 ## Notes
 Author: Markus Fleschutz · License: CC0

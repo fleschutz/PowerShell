@@ -86,7 +86,7 @@ install-vscode.ps1 [[-Architecture] <String>] [[-BuildEdition] <String>] [[-Addi
     Accept wildcard characters?  false
 
 [<CommonParameters>]
-    This cmdlet supports the common parameters: Verbose, Debug, ErrorAction, ErrorVariable, WarningAction, 
+    This script supports the common parameters: Verbose, Debug, ErrorAction, ErrorVariable, WarningAction, 
     WarningVariable, OutBuffer, PipelineVariable, and OutVariable.
 ```
 
@@ -99,7 +99,6 @@ PS > Install-VSCode.ps1 -Architecture 32-bit
 Installs Visual Studio Code (32-bit) and the powershell extension.
 ```
 
-
 ## Example
 ```powershell
 PS > Install-VSCode.ps1 -LaunchWhenDone
@@ -109,7 +108,6 @@ PS > Install-VSCode.ps1 -LaunchWhenDone
 Installs Visual Studio Code (64-bit) and the PowerShell extension and then launches
 the editor after installation completes.
 ```
-
 
 ## Example
 ```powershell
@@ -121,7 +119,6 @@ Installs Visual Studio Code (64-bit), the PowerShell extension, and additional
 extensions.
 ```
 
-
 ## Example
 ```powershell
 PS > Install-VSCode.ps1 -BuildEdition Insider-User -LaunchWhenDone
@@ -131,7 +128,6 @@ PS > Install-VSCode.ps1 -BuildEdition Insider-User -LaunchWhenDone
 Installs Visual Studio Code Insiders Edition (64-bit) to the user profile and then launches the editor
 after installation completes.
 ```
-
 
 ## Notes
 This script is licensed under the MIT License:

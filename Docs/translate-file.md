@@ -31,7 +31,7 @@ translate-file.ps1 [[-File] <String>] [[-SourceLang] <String>] [[-TargetLang] <S
     Accept wildcard characters?  false
 
 [<CommonParameters>]
-    This cmdlet supports the common parameters: Verbose, Debug, ErrorAction, ErrorVariable, WarningAction, 
+    This script supports the common parameters: Verbose, Debug, ErrorAction, ErrorVariable, WarningAction, 
     WarningVariable, OutBuffer, PipelineVariable, and OutVariable.
 ```
 
@@ -39,7 +39,6 @@ translate-file.ps1 [[-File] <String>] [[-SourceLang] <String>] [[-TargetLang] <S
 ```powershell
 PS>./translate-file C:\Memo.txt en de
 ```
-
 
 ## Notes
 Author: Markus Fleschutz · License: CC0

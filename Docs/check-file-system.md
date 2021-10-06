@@ -15,7 +15,7 @@ check-file-system.ps1 [[-Drive] <String>] [<CommonParameters>]
     Accept wildcard characters?  false
 
 [<CommonParameters>]
-    This cmdlet supports the common parameters: Verbose, Debug, ErrorAction, ErrorVariable, WarningAction, 
+    This script supports the common parameters: Verbose, Debug, ErrorAction, ErrorVariable, WarningAction, 
     WarningVariable, OutBuffer, PipelineVariable, and OutVariable.
 ```
 
@@ -24,7 +24,6 @@ check-file-system.ps1 [[-Drive] <String>] [<CommonParameters>]
 PS>./check-file-system C
 ✔️ file system on drive C is clean
 ```
-
 
 ## Notes
 Author: Markus Fleschutz · License: CC0

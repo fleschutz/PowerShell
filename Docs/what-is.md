@@ -15,7 +15,7 @@ what-is.ps1 [[-abbreviation] <String>] [<CommonParameters>]
     Accept wildcard characters?  false
 
 [<CommonParameters>]
-    This cmdlet supports the common parameters: Verbose, Debug, ErrorAction, ErrorVariable, WarningAction, 
+    This script supports the common parameters: Verbose, Debug, ErrorAction, ErrorVariable, WarningAction, 
     WarningVariable, OutBuffer, PipelineVariable, and OutVariable.
 ```
 
@@ -23,7 +23,6 @@ what-is.ps1 [[-abbreviation] <String>] [<CommonParameters>]
 ```powershell
 PS>./what-is CIA
 ```
-
 
 ## Notes
 Author: Markus Fleschutz · License: CC0

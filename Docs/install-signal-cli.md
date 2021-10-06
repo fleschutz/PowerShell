@@ -16,7 +16,7 @@ install-signal-cli.ps1 [[-Version] <String>] [<CommonParameters>]
     Accept wildcard characters?  false
 
 [<CommonParameters>]
-    This cmdlet supports the common parameters: Verbose, Debug, ErrorAction, ErrorVariable, WarningAction, 
+    This script supports the common parameters: Verbose, Debug, ErrorAction, ErrorVariable, WarningAction, 
     WarningVariable, OutBuffer, PipelineVariable, and OutVariable.
 ```
 
@@ -24,7 +24,6 @@ install-signal-cli.ps1 [[-Version] <String>] [<CommonParameters>]
 ```powershell
 PS>./install-signal-cli 0.11.12
 ```
-
 
 ## Notes
 Author: Markus Fleschutz · License: CC0

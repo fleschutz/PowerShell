@@ -15,7 +15,7 @@ set-timer.ps1 [[-Seconds] <Int32>] [<CommonParameters>]
     Accept wildcard characters?  false
 
 [<CommonParameters>]
-    This cmdlet supports the common parameters: Verbose, Debug, ErrorAction, ErrorVariable, WarningAction, 
+    This script supports the common parameters: Verbose, Debug, ErrorAction, ErrorVariable, WarningAction, 
     WarningVariable, OutBuffer, PipelineVariable, and OutVariable.
 ```
 
@@ -23,7 +23,6 @@ set-timer.ps1 [[-Seconds] <Int32>] [<CommonParameters>]
 ```powershell
 PS>./set-timer 60
 ```
-
 
 ## Notes
 Author: Markus Fleschutz · License: CC0

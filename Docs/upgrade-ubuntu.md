@@ -7,7 +7,7 @@ upgrade-ubuntu.ps1
 upgrade-ubuntu.ps1 [<CommonParameters>]
 
 [<CommonParameters>]
-    This cmdlet supports the common parameters: Verbose, Debug, ErrorAction, ErrorVariable, WarningAction, 
+    This script supports the common parameters: Verbose, Debug, ErrorAction, ErrorVariable, WarningAction, 
     WarningVariable, OutBuffer, PipelineVariable, and OutVariable.
 ```
 
@@ -15,7 +15,6 @@ upgrade-ubuntu.ps1 [<CommonParameters>]
 ```powershell
 PS>.\upgrade-ubuntu.ps1
 ```
-
 
 ## Notes
 Author: Markus Fleschutz · License: CC0

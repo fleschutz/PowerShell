@@ -39,7 +39,7 @@ list-mysql-tables.ps1 [-server] <Object> [-database] <Object> [-dbuser] <Object>
     Accept wildcard characters?  false
 
 [<CommonParameters>]
-    This cmdlet supports the common parameters: Verbose, Debug, ErrorAction, ErrorVariable, WarningAction, 
+    This script supports the common parameters: Verbose, Debug, ErrorAction, ErrorVariable, WarningAction, 
     WarningVariable, OutBuffer, PipelineVariable, and OutVariable.
 ```
 
@@ -47,7 +47,6 @@ list-mysql-tables.ps1 [-server] <Object> [-database] <Object> [-dbuser] <Object>
 ```powershell
 PS>./list-mysql-tables
 ```
-
 
 ## Notes
 Author: Markus Fleschutz · License: CC0

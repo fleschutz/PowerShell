@@ -7,7 +7,7 @@ list-voices.ps1
 list-voices.ps1 [<CommonParameters>]
 
 [<CommonParameters>]
-    This cmdlet supports the common parameters: Verbose, Debug, ErrorAction, ErrorVariable, WarningAction, 
+    This script supports the common parameters: Verbose, Debug, ErrorAction, ErrorVariable, WarningAction, 
     WarningVariable, OutBuffer, PipelineVariable, and OutVariable.
 ```
 
@@ -22,7 +22,6 @@ Name                    Culture Gender   Age
 Microsoft David Desktop en-US     Male Adult
 Microsoft Zira Desktop  en-US   Female Adult
 ```
-
 
 ## Notes
 Author: Markus Fleschutz · License: CC0

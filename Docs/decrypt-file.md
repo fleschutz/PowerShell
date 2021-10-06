@@ -23,7 +23,7 @@ decrypt-file.ps1 [[-Path] <String>] [[-Password] <String>] [<CommonParameters>]
     Accept wildcard characters?  false
 
 [<CommonParameters>]
-    This cmdlet supports the common parameters: Verbose, Debug, ErrorAction, ErrorVariable, WarningAction, 
+    This script supports the common parameters: Verbose, Debug, ErrorAction, ErrorVariable, WarningAction, 
     WarningVariable, OutBuffer, PipelineVariable, and OutVariable.
 ```
 
@@ -31,7 +31,6 @@ decrypt-file.ps1 [[-Path] <String>] [[-Password] <String>] [<CommonParameters>]
 ```powershell
 PS>./decrypt-file-rules C:\MyFile.txt "123"
 ```
-
 
 ## Notes
 Author: Markus Fleschutz · License: CC0

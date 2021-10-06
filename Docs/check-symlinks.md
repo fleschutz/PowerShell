@@ -16,7 +16,7 @@ check-symlinks.ps1 [[-folder] <String>] [<CommonParameters>]
     Accept wildcard characters?  false
 
 [<CommonParameters>]
-    This cmdlet supports the common parameters: Verbose, Debug, ErrorAction, ErrorVariable, WarningAction, 
+    This script supports the common parameters: Verbose, Debug, ErrorAction, ErrorVariable, WarningAction, 
     WarningVariable, OutBuffer, PipelineVariable, and OutVariable.
 ```
 
@@ -25,7 +25,6 @@ check-symlinks.ps1 [[-folder] <String>] [<CommonParameters>]
 PS>./check-symlinks .
 ✔️ 0 out of 10 symlinks are broken in 📂/home/markus
 ```
-
 
 ## Notes
 Author: Markus Fleschutz · License: CC0

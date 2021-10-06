@@ -7,7 +7,7 @@ list-cmdlets.ps1
 list-cmdlets.ps1 [<CommonParameters>]
 
 [<CommonParameters>]
-    This cmdlet supports the common parameters: Verbose, Debug, ErrorAction, ErrorVariable, WarningAction, 
+    This script supports the common parameters: Verbose, Debug, ErrorAction, ErrorVariable, WarningAction, 
     WarningVariable, OutBuffer, PipelineVariable, and OutVariable.
 ```
 
@@ -23,7 +23,6 @@ Function        Add-BCDataCacheExtension              1.0.0.0    BranchCache
 Function        Add-BitLockerKeyProtector             1.0.0.0    BitLocker
 ...
 ```
-
 
 ## Notes
 Author: Markus Fleschutz · License: CC0

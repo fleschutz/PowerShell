@@ -23,7 +23,7 @@ new-branch.ps1 [[-BranchName] <String>] [[-RepoDir] <String>] [<CommonParameters
     Accept wildcard characters?  false
 
 [<CommonParameters>]
-    This cmdlet supports the common parameters: Verbose, Debug, ErrorAction, ErrorVariable, WarningAction, 
+    This script supports the common parameters: Verbose, Debug, ErrorAction, ErrorVariable, WarningAction, 
     WarningVariable, OutBuffer, PipelineVariable, and OutVariable.
 ```
 
@@ -31,7 +31,6 @@ new-branch.ps1 [[-BranchName] <String>] [[-RepoDir] <String>] [<CommonParameters
 ```powershell
 PS>./new-branch test123
 ```
-
 
 ## Notes
 Author: Markus Fleschutz · License: CC0

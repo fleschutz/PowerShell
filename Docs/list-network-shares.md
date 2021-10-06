@@ -7,7 +7,7 @@ list-network-shares.ps1
 list-network-shares.ps1 [<CommonParameters>]
 
 [<CommonParameters>]
-    This cmdlet supports the common parameters: Verbose, Debug, ErrorAction, ErrorVariable, WarningAction, 
+    This script supports the common parameters: Verbose, Debug, ErrorAction, ErrorVariable, WarningAction, 
     WarningVariable, OutBuffer, PipelineVariable, and OutVariable.
 ```
 
@@ -21,7 +21,6 @@ Name  Path     Description
 ----  ----     -----------
 Users C:\Users
 ```
-
 
 ## Notes
 Author: Markus Fleschutz · License: CC0

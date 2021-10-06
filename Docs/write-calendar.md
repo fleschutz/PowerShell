@@ -25,7 +25,7 @@ write-calendar.ps1 [[-Month] <Int32>] [[-Year] <Int32>] [<CommonParameters>]
     Accept wildcard characters?  false
 
 [<CommonParameters>]
-    This cmdlet supports the common parameters: Verbose, Debug, ErrorAction, ErrorVariable, WarningAction, 
+    This script supports the common parameters: Verbose, Debug, ErrorAction, ErrorVariable, WarningAction, 
     WarningVariable, OutBuffer, PipelineVariable, and OutVariable.
 ```
 
@@ -35,13 +35,11 @@ PS>./write-calendar
 Outputs the current month.
 ```
 
-
 ## Example
 ```powershell
 PS>./write-calendar 2013
 Outputs the calendar for 2013.
 ```
-
 
 ## Example
 ```powershell
@@ -49,13 +47,11 @@ PS>./write-calendar 04 2011
 Outputs the calendar for April, 2011.
 ```
 
-
 ## Example
 ```powershell
 PS>./write-calendar 7
 Outputs the calendar for July of this year.
 ```
-
 
 ## Notes
 Author: Markus Fleschutz · License: CC0

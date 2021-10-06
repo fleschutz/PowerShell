@@ -7,7 +7,7 @@ list-tasks.ps1
 list-tasks.ps1 [<CommonParameters>]
 
 [<CommonParameters>]
-    This cmdlet supports the common parameters: Verbose, Debug, ErrorAction, ErrorVariable, WarningAction, 
+    This script supports the common parameters: Verbose, Debug, ErrorAction, ErrorVariable, WarningAction, 
     WarningVariable, OutBuffer, PipelineVariable, and OutVariable.
 ```
 
@@ -23,7 +23,6 @@ TaskPath                                       TaskName                         
 \Microsoft\Windows\.NET Framework\             .NET Framework NGEN v4.0.30319 64 Ready
 ...
 ```
-
 
 ## Notes
 Author: Markus Fleschutz · License: CC0

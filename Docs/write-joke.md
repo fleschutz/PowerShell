@@ -7,7 +7,7 @@ write-joke.ps1
 write-joke.ps1 [<CommonParameters>]
 
 [<CommonParameters>]
-    This cmdlet supports the common parameters: Verbose, Debug, ErrorAction, ErrorVariable, WarningAction, 
+    This script supports the common parameters: Verbose, Debug, ErrorAction, ErrorVariable, WarningAction, 
     WarningVariable, OutBuffer, PipelineVariable, and OutVariable.
 ```
 
@@ -16,7 +16,6 @@ write-joke.ps1 [<CommonParameters>]
 PS>./write-joke
 When Chuck Norris does division, there are no remainders. 😂
 ```
-
 
 ## Notes
 Author: Markus Fleschutz · License: CC0

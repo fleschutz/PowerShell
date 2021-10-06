@@ -7,7 +7,7 @@ play-super-mario.ps1
 play-super-mario.ps1 [<CommonParameters>]
 
 [<CommonParameters>]
-    This cmdlet supports the common parameters: Verbose, Debug, ErrorAction, ErrorVariable, WarningAction, 
+    This script supports the common parameters: Verbose, Debug, ErrorAction, ErrorVariable, WarningAction, 
     WarningVariable, OutBuffer, PipelineVariable, and OutVariable.
 ```
 
@@ -15,7 +15,6 @@ play-super-mario.ps1 [<CommonParameters>]
 ```powershell
 PS>./play-super-mario
 ```
-
 
 ## Notes
 Author: Markus Fleschutz · License: CC0

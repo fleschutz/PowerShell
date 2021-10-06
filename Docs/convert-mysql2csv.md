@@ -47,7 +47,7 @@ convert-mysql2csv.ps1 [[-server] <String>] [[-database] <String>] [[-username] <
     Accept wildcard characters?  false
 
 [<CommonParameters>]
-    This cmdlet supports the common parameters: Verbose, Debug, ErrorAction, ErrorVariable, WarningAction, 
+    This script supports the common parameters: Verbose, Debug, ErrorAction, ErrorVariable, WarningAction, 
     WarningVariable, OutBuffer, PipelineVariable, and OutVariable.
 ```
 
@@ -55,7 +55,6 @@ convert-mysql2csv.ps1 [[-server] <String>] [[-database] <String>] [[-username] <
 ```powershell
 PS>./convert-mysql2csv
 ```
-
 
 ## Notes
 Author: Markus Fleschutz · License: CC0

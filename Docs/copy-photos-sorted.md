@@ -24,7 +24,7 @@ copy-photos-sorted.ps1 [[-SourceDir] <String>] [[-TargetDir] <String>] [<CommonP
     Accept wildcard characters?  false
 
 [<CommonParameters>]
-    This cmdlet supports the common parameters: Verbose, Debug, ErrorAction, ErrorVariable, WarningAction, 
+    This script supports the common parameters: Verbose, Debug, ErrorAction, ErrorVariable, WarningAction, 
     WarningVariable, OutBuffer, PipelineVariable, and OutVariable.
 ```
 
@@ -32,7 +32,6 @@ copy-photos-sorted.ps1 [[-SourceDir] <String>] [[-TargetDir] <String>] [<CommonP
 ```powershell
 PS>./copy-photos-sorted D:\Mobile\DCIM C:\MyPhotoAlbum
 ```
-
 
 ## Notes
 Author: Markus Fleschutz · License: CC0

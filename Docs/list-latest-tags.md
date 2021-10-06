@@ -15,7 +15,7 @@ list-latest-tags.ps1 [[-ParentDir] <String>] [<CommonParameters>]
     Accept wildcard characters?  false
 
 [<CommonParameters>]
-    This cmdlet supports the common parameters: Verbose, Debug, ErrorAction, ErrorVariable, WarningAction, 
+    This script supports the common parameters: Verbose, Debug, ErrorAction, ErrorVariable, WarningAction, 
     WarningVariable, OutBuffer, PipelineVariable, and OutVariable.
 ```
 
@@ -23,7 +23,6 @@ list-latest-tags.ps1 [[-ParentDir] <String>] [<CommonParameters>]
 ```powershell
 PS>./list-latest-tags C:\MyRepos
 ```
-
 
 ## Notes
 Author: Markus Fleschutz · License: CC0

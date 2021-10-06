@@ -31,7 +31,7 @@ replace-in-files.ps1 [[-pattern] <String>] [[-replacement] <String>] [[-files] <
     Accept wildcard characters?  false
 
 [<CommonParameters>]
-    This cmdlet supports the common parameters: Verbose, Debug, ErrorAction, ErrorVariable, WarningAction, 
+    This script supports the common parameters: Verbose, Debug, ErrorAction, ErrorVariable, WarningAction, 
     WarningVariable, OutBuffer, PipelineVariable, and OutVariable.
 ```
 
@@ -39,7 +39,6 @@ replace-in-files.ps1 [[-pattern] <String>] [[-replacement] <String>] [[-files] <
 ```powershell
 PS>./replace-in-files NSA "No Such Agency" C:\Temp\*.txt
 ```
-
 
 ## Notes
 Author: Markus Fleschutz · License: CC0

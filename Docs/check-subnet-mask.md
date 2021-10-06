@@ -15,7 +15,7 @@ check-subnet-mask.ps1 [[-address] <String>] [<CommonParameters>]
     Accept wildcard characters?  false
 
 [<CommonParameters>]
-    This cmdlet supports the common parameters: Verbose, Debug, ErrorAction, ErrorVariable, WarningAction, 
+    This script supports the common parameters: Verbose, Debug, ErrorAction, ErrorVariable, WarningAction, 
     WarningVariable, OutBuffer, PipelineVariable, and OutVariable.
 ```
 
@@ -24,7 +24,6 @@ check-subnet-mask.ps1 [[-address] <String>] [<CommonParameters>]
 PS>./check-subnet-mask 255.255.255.0
 ✔️ subnet mask 255.255.255.0 is valid
 ```
-
 
 ## Notes
 Author: Markus Fleschutz · License: CC0

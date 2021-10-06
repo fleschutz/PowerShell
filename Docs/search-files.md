@@ -23,7 +23,7 @@ search-files.ps1 [[-pattern] <String>] [[-files] <String>] [<CommonParameters>]
     Accept wildcard characters?  false
 
 [<CommonParameters>]
-    This cmdlet supports the common parameters: Verbose, Debug, ErrorAction, ErrorVariable, WarningAction, 
+    This script supports the common parameters: Verbose, Debug, ErrorAction, ErrorVariable, WarningAction, 
     WarningVariable, OutBuffer, PipelineVariable, and OutVariable.
 ```
 
@@ -31,7 +31,6 @@ search-files.ps1 [[-pattern] <String>] [[-files] <String>] [<CommonParameters>]
 ```powershell
 PS>./search-files UFO C:\Temp\*.txt
 ```
-
 
 ## Notes
 Author: Markus Fleschutz · License: CC0

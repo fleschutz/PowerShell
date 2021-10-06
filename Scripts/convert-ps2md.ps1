@@ -80,7 +80,7 @@ try {
 		""
 	}
 	"[<CommonParameters>]"
-	"    This cmdlet supports the common parameters: Verbose, Debug, ErrorAction, ErrorVariable, WarningAction, "
+	"    This script supports the common parameters: Verbose, Debug, ErrorAction, ErrorVariable, WarningAction, "
 	"    WarningVariable, OutBuffer, PipelineVariable, and OutVariable."
 	"``````"
 
@@ -102,7 +102,6 @@ try {
 		"``````powershell"
 		"$(GetCode $example)"
 		"``````"
-		"$(GetRemark $example)"
 	}
 
 	$Notes = ($full.alertSet.alert | Out-String).Trim()

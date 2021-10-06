@@ -7,7 +7,7 @@ start-ipfs-server.ps1
 start-ipfs-server.ps1 [<CommonParameters>]
 
 [<CommonParameters>]
-    This cmdlet supports the common parameters: Verbose, Debug, ErrorAction, ErrorVariable, WarningAction, 
+    This script supports the common parameters: Verbose, Debug, ErrorAction, ErrorVariable, WarningAction, 
     WarningVariable, OutBuffer, PipelineVariable, and OutVariable.
 ```
 
@@ -15,7 +15,6 @@ start-ipfs-server.ps1 [<CommonParameters>]
 ```powershell
 PS>./start-ipfs-server
 ```
-
 
 ## Notes
 Author: Markus Fleschutz · License: CC0

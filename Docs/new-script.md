@@ -16,7 +16,7 @@ new-script.ps1 [[-filename] <String>] [<CommonParameters>]
     Accept wildcard characters?  false
 
 [<CommonParameters>]
-    This cmdlet supports the common parameters: Verbose, Debug, ErrorAction, ErrorVariable, WarningAction, 
+    This script supports the common parameters: Verbose, Debug, ErrorAction, ErrorVariable, WarningAction, 
     WarningVariable, OutBuffer, PipelineVariable, and OutVariable.
 ```
 
@@ -25,7 +25,6 @@ new-script.ps1 [[-filename] <String>] [<CommonParameters>]
 PS>./new-script myscript.ps1
 ✔️ created new PowerShell script: myscript.ps1
 ```
-
 
 ## Notes
 Author: Markus Fleschutz · License: CC0

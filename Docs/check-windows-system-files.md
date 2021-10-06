@@ -7,7 +7,7 @@ check-windows-system-files.ps1
 check-windows-system-files.ps1 [<CommonParameters>]
 
 [<CommonParameters>]
-    This cmdlet supports the common parameters: Verbose, Debug, ErrorAction, ErrorVariable, WarningAction, 
+    This script supports the common parameters: Verbose, Debug, ErrorAction, ErrorVariable, WarningAction, 
     WarningVariable, OutBuffer, PipelineVariable, and OutVariable.
 ```
 
@@ -16,7 +16,6 @@ check-windows-system-files.ps1 [<CommonParameters>]
 PS>./check-windows-system-files
 ✔️ checked Windows system files
 ```
-
 
 ## Notes
 Author: Markus Fleschutz · License: CC0

@@ -25,7 +25,7 @@ search-filename.ps1 [-path] <Object> [-term] <Object> [<CommonParameters>]
     Accept wildcard characters?  false
 
 [<CommonParameters>]
-    This cmdlet supports the common parameters: Verbose, Debug, ErrorAction, ErrorVariable, WarningAction, 
+    This script supports the common parameters: Verbose, Debug, ErrorAction, ErrorVariable, WarningAction, 
     WarningVariable, OutBuffer, PipelineVariable, and OutVariable.
 ```
 
@@ -33,7 +33,6 @@ search-filename.ps1 [-path] <Object> [-term] <Object> [<CommonParameters>]
 ```powershell
 PS>./search-filename
 ```
-
 
 ## Notes
 Author: Markus Fleschutz · License: CC0

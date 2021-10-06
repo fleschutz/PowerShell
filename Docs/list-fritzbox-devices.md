@@ -23,7 +23,7 @@ list-fritzbox-devices.ps1 [[-Username] <String>] [[-Password] <String>] [<Common
     Accept wildcard characters?  false
 
 [<CommonParameters>]
-    This cmdlet supports the common parameters: Verbose, Debug, ErrorAction, ErrorVariable, WarningAction, 
+    This script supports the common parameters: Verbose, Debug, ErrorAction, ErrorVariable, WarningAction, 
     WarningVariable, OutBuffer, PipelineVariable, and OutVariable.
 ```
 
@@ -31,7 +31,6 @@ list-fritzbox-devices.ps1 [[-Username] <String>] [[-Password] <String>] [<Common
 ```powershell
 PS>./list-fritzbox-devices
 ```
-
 
 ## Notes
 Author: Markus Fleschutz · License: CC0

@@ -7,7 +7,7 @@ check-cpu-temp.ps1
 check-cpu-temp.ps1 [<CommonParameters>]
 
 [<CommonParameters>]
-    This cmdlet supports the common parameters: Verbose, Debug, ErrorAction, ErrorVariable, WarningAction, 
+    This script supports the common parameters: Verbose, Debug, ErrorAction, ErrorVariable, WarningAction, 
     WarningVariable, OutBuffer, PipelineVariable, and OutVariable.
 ```
 
@@ -16,7 +16,6 @@ check-cpu-temp.ps1 [<CommonParameters>]
 PS>./check-cpu-temp
 ✔️ 30.3 °C CPU temperature - good
 ```
-
 
 ## Notes
 Author: Markus Fleschutz · License: CC0

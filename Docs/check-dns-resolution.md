@@ -7,7 +7,7 @@ check-dns-resolution.ps1
 check-dns-resolution.ps1 [<CommonParameters>]
 
 [<CommonParameters>]
-    This cmdlet supports the common parameters: Verbose, Debug, ErrorAction, ErrorVariable, WarningAction, 
+    This script supports the common parameters: Verbose, Debug, ErrorAction, ErrorVariable, WarningAction, 
     WarningVariable, OutBuffer, PipelineVariable, and OutVariable.
 ```
 
@@ -16,7 +16,6 @@ check-dns-resolution.ps1 [<CommonParameters>]
 PS>./check-dns-resolution
 ✔️ 11.8 domains/sec (177 domains resolved in 15 sec)
 ```
-
 
 ## Notes
 Author: Markus Fleschutz · License: CC0

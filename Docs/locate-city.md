@@ -15,7 +15,7 @@ locate-city.ps1 [[-City] <String>] [<CommonParameters>]
     Accept wildcard characters?  false
 
 [<CommonParameters>]
-    This cmdlet supports the common parameters: Verbose, Debug, ErrorAction, ErrorVariable, WarningAction, 
+    This script supports the common parameters: Verbose, Debug, ErrorAction, ErrorVariable, WarningAction, 
     WarningVariable, OutBuffer, PipelineVariable, and OutVariable.
 ```
 
@@ -23,7 +23,6 @@ locate-city.ps1 [[-City] <String>] [<CommonParameters>]
 ```powershell
 PS>./locate-city Paris
 ```
-
 
 ## Notes
 Author: Markus Fleschutz · License: CC0

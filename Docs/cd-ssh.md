@@ -7,7 +7,7 @@ cd-ssh.ps1
 cd-ssh.ps1 [<CommonParameters>]
 
 [<CommonParameters>]
-    This cmdlet supports the common parameters: Verbose, Debug, ErrorAction, ErrorVariable, WarningAction, 
+    This script supports the common parameters: Verbose, Debug, ErrorAction, ErrorVariable, WarningAction, 
     WarningVariable, OutBuffer, PipelineVariable, and OutVariable.
 ```
 
@@ -16,7 +16,6 @@ cd-ssh.ps1 [<CommonParameters>]
 PS>./cd-ssh
 📂/home/markus/.ssh
 ```
-
 
 ## Notes
 Author: Markus Fleschutz · License: CC0

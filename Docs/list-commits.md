@@ -25,7 +25,7 @@ list-commits.ps1 [[-RepoDir] <String>] [[-Format] <String>] [<CommonParameters>]
     Accept wildcard characters?  false
 
 [<CommonParameters>]
-    This cmdlet supports the common parameters: Verbose, Debug, ErrorAction, ErrorVariable, WarningAction, 
+    This script supports the common parameters: Verbose, Debug, ErrorAction, ErrorVariable, WarningAction, 
     WarningVariable, OutBuffer, PipelineVariable, and OutVariable.
 ```
 
@@ -41,7 +41,6 @@ ccd0d3e Wed Sep 29 08:28:20 2021 +0200  Markus Fleschutz        Fix typo
 291d785 Wed Sep 29 08:18:28 2021 +0200  Markus Fleschutz        Update README.md
 ...
 ```
-
 
 ## Notes
 Author: Markus Fleschutz · License: CC0
