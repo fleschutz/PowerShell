@@ -2,9 +2,10 @@
 
 check-dns-resolution.ps1
 
-## Syntax & Parameters
+## Parameters
 ```powershell
-/home/markus/Repos/PowerShell/Scripts/check-dns-resolution.ps1 [<CommonParameters>]
+check-dns-resolution.ps1 [<CommonParameters>]
+
 ```
 
 ```

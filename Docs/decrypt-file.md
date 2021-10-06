@@ -2,9 +2,10 @@
 
 decrypt-file.ps1 [<path>] [<password>]
 
-## Syntax & Parameters
+## Parameters
 ```powershell
-/home/markus/Repos/PowerShell/Scripts/decrypt-file.ps1 [[-Path] <String>] [[-Password] <String>] [<CommonParameters>]
+decrypt-file.ps1 [[-Path] <String>] [[-Password] <String>] [<CommonParameters>]
+
 ```
 
 ```

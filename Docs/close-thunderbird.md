@@ -2,9 +2,10 @@
 
 close-thunderbird.ps1
 
-## Syntax & Parameters
+## Parameters
 ```powershell
-/home/markus/Repos/PowerShell/Scripts/close-thunderbird.ps1 [<CommonParameters>]
+close-thunderbird.ps1 [<CommonParameters>]
+
 ```
 
 ```

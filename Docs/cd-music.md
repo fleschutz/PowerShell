@@ -2,9 +2,10 @@
 
 cd-music.ps1
 
-## Syntax & Parameters
+## Parameters
 ```powershell
-/home/markus/Repos/PowerShell/Scripts/cd-music.ps1 [<CommonParameters>]
+cd-music.ps1 [<CommonParameters>]
+
 ```
 
 ```

@@ -2,9 +2,10 @@
 
 check-cpu-temp.ps1
 
-## Syntax & Parameters
+## Parameters
 ```powershell
-/home/markus/Repos/PowerShell/Scripts/check-cpu-temp.ps1 [<CommonParameters>]
+check-cpu-temp.ps1 [<CommonParameters>]
+
 ```
 
 ```

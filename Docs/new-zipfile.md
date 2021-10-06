@@ -2,9 +2,10 @@
 
 new-zipfile.ps1 [<folder>]
 
-## Syntax & Parameters
+## Parameters
 ```powershell
-/home/markus/Repos/PowerShell/Scripts/new-zipfile.ps1 [[-folder] <String>] [<CommonParameters>]
+new-zipfile.ps1 [[-folder] <String>] [<CommonParameters>]
+
 ```
 
 ```

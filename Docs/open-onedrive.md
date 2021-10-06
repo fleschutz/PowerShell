@@ -2,9 +2,10 @@
 
 open-onedrive.ps1
 
-## Syntax & Parameters
+## Parameters
 ```powershell
-/home/markus/Repos/PowerShell/Scripts/open-onedrive.ps1 [<CommonParameters>]
+open-onedrive.ps1 [<CommonParameters>]
+
 ```
 
 ```

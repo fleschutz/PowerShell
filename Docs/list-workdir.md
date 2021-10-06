@@ -2,9 +2,10 @@
 
 list-workdir.ps1
 
-## Syntax & Parameters
+## Parameters
 ```powershell
-/home/markus/Repos/PowerShell/Scripts/list-workdir.ps1 [<CommonParameters>]
+list-workdir.ps1 [<CommonParameters>]
+
 ```
 
 ```

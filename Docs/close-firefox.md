@@ -2,9 +2,10 @@
 
 close-firefox.ps1
 
-## Syntax & Parameters
+## Parameters
 ```powershell
-/home/markus/Repos/PowerShell/Scripts/close-firefox.ps1 [<CommonParameters>]
+close-firefox.ps1 [<CommonParameters>]
+
 ```
 
 ```

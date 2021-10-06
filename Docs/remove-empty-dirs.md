@@ -3,9 +3,10 @@
 remove-empty-dirs.ps1 [<DirTree>]
 <DirTree> is the path to the directory tree
 
-## Syntax & Parameters
+## Parameters
 ```powershell
-/home/markus/Repos/PowerShell/Scripts/remove-empty-dirs.ps1 [[-DirTree] <String>] [<CommonParameters>]
+remove-empty-dirs.ps1 [[-DirTree] <String>] [<CommonParameters>]
+
 ```
 
 ```

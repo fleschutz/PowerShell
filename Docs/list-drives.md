@@ -2,9 +2,10 @@
 
 list-drives.ps1
 
-## Syntax & Parameters
+## Parameters
 ```powershell
-/home/markus/Repos/PowerShell/Scripts/list-drives.ps1 [<CommonParameters>]
+list-drives.ps1 [<CommonParameters>]
+
 ```
 
 ```

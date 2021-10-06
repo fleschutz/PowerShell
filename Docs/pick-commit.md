@@ -4,9 +4,10 @@ pick-commit.ps1 [<CommitID>] [<CommitMessage>] [<Branches>] [<RepoDir>]
 Cherry-picks a Git commit into one or more branches (branch names need to be separated by spaces)
 NOTE: in case of merge conflicts the script stops immediately!
 
-## Syntax & Parameters
+## Parameters
 ```powershell
-/home/markus/Repos/PowerShell/Scripts/pick-commit.ps1 [[-CommitID] <String>] [[-CommitMessage] <String>] [[-Branches] <String>] [[-RepoDir] <String>] [<CommonParameters>]
+pick-commit.ps1 [[-CommitID] <String>] [[-CommitMessage] <String>] [[-Branches] <String>] [[-RepoDir] <String>] [<CommonParameters>]
+
 ```
 
 ```

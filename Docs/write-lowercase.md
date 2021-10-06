@@ -2,9 +2,10 @@
 
 write-lowercase.ps1 [<text>]
 
-## Syntax & Parameters
+## Parameters
 ```powershell
-/home/markus/Repos/PowerShell/Scripts/write-lowercase.ps1 [[-text] <String>] [<CommonParameters>]
+write-lowercase.ps1 [[-text] <String>] [<CommonParameters>]
+
 ```
 
 ```

@@ -2,9 +2,10 @@
 
 list-system-info.ps1
 
-## Syntax & Parameters
+## Parameters
 ```powershell
-/home/markus/Repos/PowerShell/Scripts/list-system-info.ps1 [<CommonParameters>]
+list-system-info.ps1 [<CommonParameters>]
+
 ```
 
 ```

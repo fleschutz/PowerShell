@@ -2,9 +2,10 @@
 
 list-tasks.ps1
 
-## Syntax & Parameters
+## Parameters
 ```powershell
-/home/markus/Repos/PowerShell/Scripts/list-tasks.ps1 [<CommonParameters>]
+list-tasks.ps1 [<CommonParameters>]
+
 ```
 
 ```

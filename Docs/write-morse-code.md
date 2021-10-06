@@ -2,9 +2,10 @@
 
 write-morse-code.ps1 [<text>] [<speed>]
 
-## Syntax & Parameters
+## Parameters
 ```powershell
-/home/markus/Repos/PowerShell/Scripts/write-morse-code.ps1 [[-text] <String>] [[-speed] <Int32>] [<CommonParameters>]
+write-morse-code.ps1 [[-text] <String>] [[-speed] <Int32>] [<CommonParameters>]
+
 ```
 
 ```

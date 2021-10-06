@@ -5,9 +5,10 @@ Lists all tables in a SQL server database and exports the list as CSV
 Install-Module InvokeQuery
 Run the above command if you do not have this module.
 
-## Syntax & Parameters
+## Parameters
 ```powershell
-/home/markus/Repos/PowerShell/Scripts/list-sql-tables.ps1 [-server] <Object> [-database] <Object> [-username] <Object> [-password] <Object> [<CommonParameters>]
+list-sql-tables.ps1 [-server] <Object> [-database] <Object> [-username] <Object> [-password] <Object> [<CommonParameters>]
+
 ```
 
 ```

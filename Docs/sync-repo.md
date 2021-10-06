@@ -3,9 +3,10 @@
 sync-repo.ps1 [<RepoDir>]
 <RepoDir> is the path to the Git repository
 
-## Syntax & Parameters
+## Parameters
 ```powershell
-/home/markus/Repos/PowerShell/Scripts/sync-repo.ps1 [[-RepoDir] <String>] [<CommonParameters>]
+sync-repo.ps1 [[-RepoDir] <String>] [<CommonParameters>]
+
 ```
 
 ```

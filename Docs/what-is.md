@@ -2,9 +2,10 @@
 
 what-is.ps1 [<abbreviation>]
 
-## Syntax & Parameters
+## Parameters
 ```powershell
-/home/markus/Repos/PowerShell/Scripts/what-is.ps1 [[-abbreviation] <String>] [<CommonParameters>]
+what-is.ps1 [[-abbreviation] <String>] [<CommonParameters>]
+
 ```
 
 ```

@@ -2,9 +2,10 @@
 
 list-clipboard.ps1
 
-## Syntax & Parameters
+## Parameters
 ```powershell
-/home/markus/Repos/PowerShell/Scripts/list-clipboard.ps1 [<CommonParameters>]
+list-clipboard.ps1 [<CommonParameters>]
+
 ```
 
 ```

@@ -2,9 +2,10 @@
 
 cd-videos.ps1
 
-## Syntax & Parameters
+## Parameters
 ```powershell
-/home/markus/Repos/PowerShell/Scripts/cd-videos.ps1 [<CommonParameters>]
+cd-videos.ps1 [<CommonParameters>]
+
 ```
 
 ```

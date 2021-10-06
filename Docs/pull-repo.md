@@ -2,9 +2,10 @@
 
 pull-repo.ps1 [<repo-dir>]
 
-## Syntax & Parameters
+## Parameters
 ```powershell
-/home/markus/Repos/PowerShell/Scripts/pull-repo.ps1 [[-RepoDir] <String>] [<CommonParameters>]
+pull-repo.ps1 [[-RepoDir] <String>] [<CommonParameters>]
+
 ```
 
 ```

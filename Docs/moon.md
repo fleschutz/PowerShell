@@ -2,9 +2,10 @@
 
 moon.ps1
 
-## Syntax & Parameters
+## Parameters
 ```powershell
-/home/markus/Repos/PowerShell/Scripts/moon.ps1 [<CommonParameters>]
+moon.ps1 [<CommonParameters>]
+
 ```
 
 ```

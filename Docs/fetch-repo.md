@@ -2,9 +2,10 @@
 
 fetch-repo.ps1 [<RepoDir>]
 
-## Syntax & Parameters
+## Parameters
 ```powershell
-/home/markus/Repos/PowerShell/Scripts/fetch-repo.ps1 [[-RepoDir] <String>] [<CommonParameters>]
+fetch-repo.ps1 [[-RepoDir] <String>] [<CommonParameters>]
+
 ```
 
 ```

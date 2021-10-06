@@ -2,9 +2,10 @@
 
 check-health.ps1
 
-## Syntax & Parameters
+## Parameters
 ```powershell
-/home/markus/Repos/PowerShell/Scripts/check-health.ps1 [<CommonParameters>]
+check-health.ps1 [<CommonParameters>]
+
 ```
 
 ```

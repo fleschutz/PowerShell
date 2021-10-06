@@ -2,9 +2,10 @@
 
 list-modules.ps1
 
-## Syntax & Parameters
+## Parameters
 ```powershell
-/home/markus/Repos/PowerShell/Scripts/list-modules.ps1 [<CommonParameters>]
+list-modules.ps1 [<CommonParameters>]
+
 ```
 
 ```

@@ -2,9 +2,10 @@
 
 inspect-exe.ps1 [<path-to-exe-file>]
 
-## Syntax & Parameters
+## Parameters
 ```powershell
-/home/markus/Repos/PowerShell/Scripts/inspect-exe.ps1 [[-PathToExe] <String>] [<CommonParameters>]
+inspect-exe.ps1 [[-PathToExe] <String>] [<CommonParameters>]
+
 ```
 
 ```

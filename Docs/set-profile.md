@@ -2,9 +2,10 @@
 
 set-profile.ps1
 
-## Syntax & Parameters
+## Parameters
 ```powershell
-/home/markus/Repos/PowerShell/Scripts/set-profile.ps1 [<CommonParameters>]
+set-profile.ps1 [<CommonParameters>]
+
 ```
 
 ```

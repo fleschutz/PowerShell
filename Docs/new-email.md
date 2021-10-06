@@ -2,9 +2,10 @@
 
 new-email.ps1 [<address>]
 
-## Syntax & Parameters
+## Parameters
 ```powershell
-/home/markus/Repos/PowerShell/Scripts/new-email.ps1 [[-EmailAddress] <String>] [<CommonParameters>]
+new-email.ps1 [[-EmailAddress] <String>] [<CommonParameters>]
+
 ```
 
 ```

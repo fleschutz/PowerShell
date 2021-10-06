@@ -2,9 +2,10 @@
 
 check-subnet-mask.ps1 [<address>]
 
-## Syntax & Parameters
+## Parameters
 ```powershell
-/home/markus/Repos/PowerShell/Scripts/check-subnet-mask.ps1 [[-address] <String>] [<CommonParameters>]
+check-subnet-mask.ps1 [[-address] <String>] [<CommonParameters>]
+
 ```
 
 ```

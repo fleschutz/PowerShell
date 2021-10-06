@@ -3,9 +3,10 @@
 Creates a new PowerShell script file (by using template file ../Data/template.ps1).
 new-script.ps1 [<filename>]
 
-## Syntax & Parameters
+## Parameters
 ```powershell
-/home/markus/Repos/PowerShell/Scripts/new-script.ps1 [[-filename] <String>] [<CommonParameters>]
+new-script.ps1 [[-filename] <String>] [<CommonParameters>]
+
 ```
 
 ```

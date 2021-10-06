@@ -2,9 +2,10 @@
 
 simulate-matrix.ps1
 
-## Syntax & Parameters
+## Parameters
 ```powershell
-/home/markus/Repos/PowerShell/Scripts/simulate-matrix.ps1 [<CommonParameters>]
+simulate-matrix.ps1 [<CommonParameters>]
+
 ```
 
 ```

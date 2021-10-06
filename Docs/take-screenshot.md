@@ -2,9 +2,10 @@
 
 take-screenshot.ps1 [<directory>]
 
-## Syntax & Parameters
+## Parameters
 ```powershell
-/home/markus/Repos/PowerShell/Scripts/take-screenshot.ps1 [[-Directory] <String>] [<CommonParameters>]
+take-screenshot.ps1 [[-Directory] <String>] [<CommonParameters>]
+
 ```
 
 ```

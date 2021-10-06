@@ -2,9 +2,10 @@
 
 add-firewall-rules.ps1 [<PathToExecutables>]
 
-## Syntax & Parameters
+## Parameters
 ```powershell
-/home/markus/Repos/PowerShell/Scripts/add-firewall-rules.ps1 [[-PathToExecutables] <String>] [<CommonParameters>]
+add-firewall-rules.ps1 [[-PathToExecutables] <String>] [<CommonParameters>]
+
 ```
 
 ```

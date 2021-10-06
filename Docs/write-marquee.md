@@ -2,9 +2,10 @@
 
 write-marquee.ps1 [<text>] [<speed>]
 
-## Syntax & Parameters
+## Parameters
 ```powershell
-/home/markus/Repos/PowerShell/Scripts/write-marquee.ps1 [[-text] <String>] [[-speed] <Int32>] [<CommonParameters>]
+write-marquee.ps1 [[-text] <String>] [[-speed] <Int32>] [<CommonParameters>]
+
 ```
 
 ```

@@ -2,9 +2,10 @@
 
 Supports building with cmake, configure, autogen, Imakefile and Makefile.
 
-## Syntax & Parameters
+## Parameters
 ```powershell
-/home/markus/Repos/PowerShell/Scripts/build-repo.ps1 [[-RepoDir] <String>] [<CommonParameters>]
+build-repo.ps1 [[-RepoDir] <String>] [<CommonParameters>]
+
 ```
 
 ```

@@ -2,9 +2,10 @@
 
 introduce-powershell.ps1
 
-## Syntax & Parameters
+## Parameters
 ```powershell
-/home/markus/Repos/PowerShell/Scripts/introduce-powershell.ps1 [<CommonParameters>]
+introduce-powershell.ps1 [<CommonParameters>]
+
 ```
 
 ```

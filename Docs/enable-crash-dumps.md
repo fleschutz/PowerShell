@@ -2,9 +2,10 @@
 
 enable-crash-dumps.ps1
 
-## Syntax & Parameters
+## Parameters
 ```powershell
-/home/markus/Repos/PowerShell/Scripts/enable-crash-dumps.ps1 [<CommonParameters>]
+enable-crash-dumps.ps1 [<CommonParameters>]
+
 ```
 
 ```

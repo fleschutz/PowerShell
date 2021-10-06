@@ -2,9 +2,10 @@
 
 locate-city.ps1 [<City>]
 
-## Syntax & Parameters
+## Parameters
 ```powershell
-/home/markus/Repos/PowerShell/Scripts/locate-city.ps1 [[-City] <String>] [<CommonParameters>]
+locate-city.ps1 [[-City] <String>] [<CommonParameters>]
+
 ```
 
 ```

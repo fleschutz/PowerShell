@@ -2,9 +2,10 @@
 
 close-system-settings.ps1
 
-## Syntax & Parameters
+## Parameters
 ```powershell
-/home/markus/Repos/PowerShell/Scripts/close-system-settings.ps1 [<CommonParameters>]
+close-system-settings.ps1 [<CommonParameters>]
+
 ```
 
 ```

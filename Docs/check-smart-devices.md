@@ -4,9 +4,10 @@ check-smart-devices.ps1 [<type>]
 Type is either short(default) or long.
        Requires smartctl (smartmontools package) and admin rights.
 
-## Syntax & Parameters
+## Parameters
 ```powershell
-/home/markus/Repos/PowerShell/Scripts/check-smart-devices.ps1 [[-type] <String>] [<CommonParameters>]
+check-smart-devices.ps1 [[-type] <String>] [<CommonParameters>]
+
 ```
 
 ```

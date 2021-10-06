@@ -2,9 +2,10 @@
 
 list-credits.ps1
 
-## Syntax & Parameters
+## Parameters
 ```powershell
-/home/markus/Repos/PowerShell/Scripts/list-credits.ps1 [<CommonParameters>]
+list-credits.ps1 [<CommonParameters>]
+
 ```
 
 ```

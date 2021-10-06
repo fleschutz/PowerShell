@@ -3,9 +3,10 @@
 Copy image files from SourceDir to TargetDir sorted by year and month
 copy-photos-sorted.ps1 [<SourceDir>] [<TargetDir>]
 
-## Syntax & Parameters
+## Parameters
 ```powershell
-/home/markus/Repos/PowerShell/Scripts/copy-photos-sorted.ps1 [[-SourceDir] <String>] [[-TargetDir] <String>] [<CommonParameters>]
+copy-photos-sorted.ps1 [[-SourceDir] <String>] [[-TargetDir] <String>] [<CommonParameters>]
+
 ```
 
 ```

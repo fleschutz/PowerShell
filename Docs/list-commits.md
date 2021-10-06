@@ -2,9 +2,10 @@
 
 list-commits.ps1 [<RepoDir>] [<Format>]
 
-## Syntax & Parameters
+## Parameters
 ```powershell
-/home/markus/Repos/PowerShell/Scripts/list-commits.ps1 [[-RepoDir] <String>] [[-Format] <String>] [<CommonParameters>]
+list-commits.ps1 [[-RepoDir] <String>] [[-Format] <String>] [<CommonParameters>]
+
 ```
 
 ```

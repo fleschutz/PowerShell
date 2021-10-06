@@ -2,9 +2,10 @@
 
 reboot.ps1
 
-## Syntax & Parameters
+## Parameters
 ```powershell
-/home/markus/Repos/PowerShell/Scripts/reboot.ps1 [<CommonParameters>]
+reboot.ps1 [<CommonParameters>]
+
 ```
 
 ```

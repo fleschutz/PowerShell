@@ -2,9 +2,10 @@
 
 check-windows-system-files.ps1
 
-## Syntax & Parameters
+## Parameters
 ```powershell
-/home/markus/Repos/PowerShell/Scripts/check-windows-system-files.ps1 [<CommonParameters>]
+check-windows-system-files.ps1 [<CommonParameters>]
+
 ```
 
 ```

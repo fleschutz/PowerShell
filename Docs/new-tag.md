@@ -2,9 +2,10 @@
 
 new-tag.ps1 [<TagName>] [<RepoDir>]
 
-## Syntax & Parameters
+## Parameters
 ```powershell
-/home/markus/Repos/PowerShell/Scripts/new-tag.ps1 [[-TagName] <String>] [[-RepoDir] <String>] [<CommonParameters>]
+new-tag.ps1 [[-TagName] <String>] [[-RepoDir] <String>] [<CommonParameters>]
+
 ```
 
 ```

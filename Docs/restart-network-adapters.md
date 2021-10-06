@@ -2,9 +2,10 @@
 
 restart-network-adapters.ps1
 
-## Syntax & Parameters
+## Parameters
 ```powershell
-/home/markus/Repos/PowerShell/Scripts/restart-network-adapters.ps1 [<CommonParameters>]
+restart-network-adapters.ps1 [<CommonParameters>]
+
 ```
 
 ```

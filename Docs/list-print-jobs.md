@@ -2,9 +2,10 @@
 
 list-print-jobs.ps1
 
-## Syntax & Parameters
+## Parameters
 ```powershell
-/home/markus/Repos/PowerShell/Scripts/list-print-jobs.ps1 [<CommonParameters>]
+list-print-jobs.ps1 [<CommonParameters>]
+
 ```
 
 ```

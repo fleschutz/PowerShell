@@ -2,9 +2,10 @@
 
 list-processes.ps1
 
-## Syntax & Parameters
+## Parameters
 ```powershell
-/home/markus/Repos/PowerShell/Scripts/list-processes.ps1 [<CommonParameters>]
+list-processes.ps1 [<CommonParameters>]
+
 ```
 
 ```

@@ -2,9 +2,10 @@
 
 list-user-groups.ps1
 
-## Syntax & Parameters
+## Parameters
 ```powershell
-/home/markus/Repos/PowerShell/Scripts/list-user-groups.ps1 [<CommonParameters>]
+list-user-groups.ps1 [<CommonParameters>]
+
 ```
 
 ```

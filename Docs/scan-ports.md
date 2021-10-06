@@ -2,9 +2,10 @@
 
 scan-ports.ps1
 
-## Syntax & Parameters
+## Parameters
 ```powershell
-/home/markus/Repos/PowerShell/Scripts/scan-ports.ps1 [<CommonParameters>]
+scan-ports.ps1 [<CommonParameters>]
+
 ```
 
 ```

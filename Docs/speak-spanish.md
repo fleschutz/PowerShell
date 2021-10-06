@@ -2,9 +2,10 @@
 
 speak-spanish.ps1 [<text>]
 
-## Syntax & Parameters
+## Parameters
 ```powershell
-/home/markus/Repos/PowerShell/Scripts/speak-spanish.ps1 [[-text] <String>] [<CommonParameters>]
+speak-spanish.ps1 [[-text] <String>] [<CommonParameters>]
+
 ```
 
 ```

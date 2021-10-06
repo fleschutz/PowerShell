@@ -2,9 +2,10 @@
 
 play-files.ps1 [<FilePattern>]
 
-## Syntax & Parameters
+## Parameters
 ```powershell
-/home/markus/Repos/PowerShell/Scripts/play-files.ps1 [[-FilePattern] <String>] [<CommonParameters>]
+play-files.ps1 [[-FilePattern] <String>] [<CommonParameters>]
+
 ```
 
 ```

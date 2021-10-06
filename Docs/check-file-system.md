@@ -2,9 +2,10 @@
 
 check-file-system.ps1 [<drive>]
 
-## Syntax & Parameters
+## Parameters
 ```powershell
-/home/markus/Repos/PowerShell/Scripts/check-file-system.ps1 [[-Drive] <String>] [<CommonParameters>]
+check-file-system.ps1 [[-Drive] <String>] [<CommonParameters>]
+
 ```
 
 ```

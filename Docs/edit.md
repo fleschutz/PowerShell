@@ -2,9 +2,10 @@
 
 edit.ps1 <filename>
 
-## Syntax & Parameters
+## Parameters
 ```powershell
-/home/markus/Repos/PowerShell/Scripts/edit.ps1 [[-Filename] <String>] [<CommonParameters>]
+edit.ps1 [[-Filename] <String>] [<CommonParameters>]
+
 ```
 
 ```

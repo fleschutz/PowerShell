@@ -2,9 +2,10 @@
 
 start-ipfs-server.ps1
 
-## Syntax & Parameters
+## Parameters
 ```powershell
-/home/markus/Repos/PowerShell/Scripts/start-ipfs-server.ps1 [<CommonParameters>]
+start-ipfs-server.ps1 [<CommonParameters>]
+
 ```
 
 ```

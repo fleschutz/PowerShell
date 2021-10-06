@@ -3,9 +3,10 @@
 Sends a magic packet to a computer to wake him up (requires Wake-On-LAN)
 wakeup.ps1 [<MAC-address>] [<IP-address>]
 
-## Syntax & Parameters
+## Parameters
 ```powershell
-/home/markus/Repos/PowerShell/Scripts/wakeup.ps1 [[-MACaddress] <String>] [[-IPaddress] <String>] [[-Port] <Int32>] [<CommonParameters>]
+wakeup.ps1 [[-MACaddress] <String>] [[-IPaddress] <String>] [[-Port] <Int32>] [<CommonParameters>]
+
 ```
 
 ```

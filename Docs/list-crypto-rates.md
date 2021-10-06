@@ -1,6 +1,12 @@
 # list-crypto-rates.ps1 - list-crypto-rates.ps1 
 
 
+## Parameters
+```powershell
+
+
+```
+
 ```
 [<CommonParameters>]
     This cmdlet supports the common parameters: Verbose, Debug, ErrorAction, ErrorVariable, WarningAction, 

@@ -2,9 +2,10 @@
 
 open-recycle-bin.ps1
 
-## Syntax & Parameters
+## Parameters
 ```powershell
-/home/markus/Repos/PowerShell/Scripts/open-recycle-bin.ps1 [<CommonParameters>]
+open-recycle-bin.ps1 [<CommonParameters>]
+
 ```
 
 ```

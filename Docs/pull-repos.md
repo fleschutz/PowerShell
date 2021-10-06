@@ -2,9 +2,10 @@
 
 pull-repos.ps1 [<ParentDir>]
 
-## Syntax & Parameters
+## Parameters
 ```powershell
-/home/markus/Repos/PowerShell/Scripts/pull-repos.ps1 [[-ParentDir] <String>] [<CommonParameters>]
+pull-repos.ps1 [[-ParentDir] <String>] [<CommonParameters>]
+
 ```
 
 ```

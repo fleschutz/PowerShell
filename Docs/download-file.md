@@ -2,9 +2,10 @@
 
 download-file.ps1 [<URL>]
 
-## Syntax & Parameters
+## Parameters
 ```powershell
-/home/markus/Repos/PowerShell/Scripts/download-file.ps1 [[-URL] <String>] [<CommonParameters>]
+download-file.ps1 [[-URL] <String>] [<CommonParameters>]
+
 ```
 
 ```

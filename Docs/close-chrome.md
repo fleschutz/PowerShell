@@ -2,9 +2,10 @@
 
 close-chrome.ps1
 
-## Syntax & Parameters
+## Parameters
 ```powershell
-/home/markus/Repos/PowerShell/Scripts/close-chrome.ps1 [<CommonParameters>]
+close-chrome.ps1 [<CommonParameters>]
+
 ```
 
 ```

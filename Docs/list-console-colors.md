@@ -2,9 +2,10 @@
 
 list-console-colors.ps1
 
-## Syntax & Parameters
+## Parameters
 ```powershell
-/home/markus/Repos/PowerShell/Scripts/list-console-colors.ps1 [<CommonParameters>]
+list-console-colors.ps1 [<CommonParameters>]
+
 ```
 
 ```

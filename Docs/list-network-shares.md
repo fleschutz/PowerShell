@@ -2,9 +2,10 @@
 
 list-network-shares.ps1
 
-## Syntax & Parameters
+## Parameters
 ```powershell
-/home/markus/Repos/PowerShell/Scripts/list-network-shares.ps1 [<CommonParameters>]
+list-network-shares.ps1 [<CommonParameters>]
+
 ```
 
 ```

@@ -2,9 +2,10 @@
 
 play-happy-birthday.ps1
 
-## Syntax & Parameters
+## Parameters
 ```powershell
-/home/markus/Repos/PowerShell/Scripts/play-happy-birthday.ps1 [<CommonParameters>]
+play-happy-birthday.ps1 [<CommonParameters>]
+
 ```
 
 ```

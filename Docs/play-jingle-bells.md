@@ -2,9 +2,10 @@
 
 play-jingle-bells.ps1
 
-## Syntax & Parameters
+## Parameters
 ```powershell
-/home/markus/Repos/PowerShell/Scripts/play-jingle-bells.ps1 [<CommonParameters>]
+play-jingle-bells.ps1 [<CommonParameters>]
+
 ```
 
 ```

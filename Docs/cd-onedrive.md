@@ -2,9 +2,10 @@
 
 cd-onedrive.ps1
 
-## Syntax & Parameters
+## Parameters
 ```powershell
-/home/markus/Repos/PowerShell/Scripts/cd-onedrive.ps1 [<CommonParameters>]
+cd-onedrive.ps1 [<CommonParameters>]
+
 ```
 
 ```

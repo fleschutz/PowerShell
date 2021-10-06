@@ -2,9 +2,10 @@
 
 check-ipv6-address.ps1 [<Address>]
 
-## Syntax & Parameters
+## Parameters
 ```powershell
-/home/markus/Repos/PowerShell/Scripts/check-ipv6-address.ps1 [[-Address] <String>] [<CommonParameters>]
+check-ipv6-address.ps1 [[-Address] <String>] [<CommonParameters>]
+
 ```
 
 ```

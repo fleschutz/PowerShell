@@ -3,9 +3,10 @@
 list-hidden-files.ps1 [<DirTree>]
 <DirTree> is the path to the directory tree
 
-## Syntax & Parameters
+## Parameters
 ```powershell
-/home/markus/Repos/PowerShell/Scripts/list-hidden-files.ps1 [[-DirTree] <String>] [<CommonParameters>]
+list-hidden-files.ps1 [[-DirTree] <String>] [<CommonParameters>]
+
 ```
 
 ```

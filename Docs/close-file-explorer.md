@@ -2,9 +2,10 @@
 
 close-file-explorer.ps1
 
-## Syntax & Parameters
+## Parameters
 ```powershell
-/home/markus/Repos/PowerShell/Scripts/close-file-explorer.ps1 [<CommonParameters>]
+close-file-explorer.ps1 [<CommonParameters>]
+
 ```
 
 ```

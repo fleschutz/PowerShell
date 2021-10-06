@@ -3,9 +3,10 @@
 Lists the installed apps (from Windows Store or snaps).
 list-installed-apps.ps1
 
-## Syntax & Parameters
+## Parameters
 ```powershell
-/home/markus/Repos/PowerShell/Scripts/list-installed-apps.ps1 [<CommonParameters>]
+list-installed-apps.ps1 [<CommonParameters>]
+
 ```
 
 ```

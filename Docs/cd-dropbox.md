@@ -2,9 +2,10 @@
 
 cd-dropbox.ps1
 
-## Syntax & Parameters
+## Parameters
 ```powershell
-/home/markus/Repos/PowerShell/Scripts/cd-dropbox.ps1 [<CommonParameters>]
+cd-dropbox.ps1 [<CommonParameters>]
+
 ```
 
 ```

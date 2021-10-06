@@ -2,9 +2,10 @@
 
 install-google-chrome.ps1
 
-## Syntax & Parameters
+## Parameters
 ```powershell
-/home/markus/Repos/PowerShell/Scripts/install-google-chrome.ps1 [<CommonParameters>]
+install-google-chrome.ps1 [<CommonParameters>]
+
 ```
 
 ```

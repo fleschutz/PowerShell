@@ -2,9 +2,10 @@
 
 install-ssh-server.ps1
 
-## Syntax & Parameters
+## Parameters
 ```powershell
-/home/markus/Repos/PowerShell/Scripts/install-ssh-server.ps1 [<CommonParameters>]
+install-ssh-server.ps1 [<CommonParameters>]
+
 ```
 
 ```

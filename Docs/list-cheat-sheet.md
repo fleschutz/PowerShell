@@ -2,9 +2,10 @@
 
 list-cheat-sheet.ps1
 
-## Syntax & Parameters
+## Parameters
 ```powershell
-/home/markus/Repos/PowerShell/Scripts/list-cheat-sheet.ps1 [<CommonParameters>]
+list-cheat-sheet.ps1 [<CommonParameters>]
+
 ```
 
 ```

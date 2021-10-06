@@ -2,9 +2,10 @@
 
 convert-csv2txt.ps1 [<csv-file>]
 
-## Syntax & Parameters
+## Parameters
 ```powershell
-/home/markus/Repos/PowerShell/Scripts/convert-csv2txt.ps1 [[-Path] <String>] [<CommonParameters>]
+convert-csv2txt.ps1 [[-Path] <String>] [<CommonParameters>]
+
 ```
 
 ```

@@ -2,9 +2,10 @@
 
 play-m3u.ps1 [<filename>]
 
-## Syntax & Parameters
+## Parameters
 ```powershell
-/home/markus/Repos/PowerShell/Scripts/play-m3u.ps1 [[-filename] <String>] [<CommonParameters>]
+play-m3u.ps1 [[-filename] <String>] [<CommonParameters>]
+
 ```
 
 ```

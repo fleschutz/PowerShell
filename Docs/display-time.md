@@ -3,9 +3,10 @@
 Displays the current time (for 10 seconds by default)
 display-time.ps1 [<seconds>]
 
-## Syntax & Parameters
+## Parameters
 ```powershell
-/home/markus/Repos/PowerShell/Scripts/display-time.ps1 [[-Seconds] <Int32>] [<CommonParameters>]
+display-time.ps1 [[-Seconds] <Int32>] [<CommonParameters>]
+
 ```
 
 ```

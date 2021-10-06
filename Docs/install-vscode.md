@@ -11,9 +11,10 @@ Please contribute improvements to this script on GitHub!
 
 https://github.com/PowerShell/vscode-powershell/blob/master/scripts/Install-VSCode.ps1
 
-## Syntax & Parameters
+## Parameters
 ```powershell
-/home/markus/Repos/PowerShell/Scripts/install-vscode.ps1 [[-Architecture] <String>] [[-BuildEdition] <String>] [[-AdditionalExtensions] <String[]>] [-LaunchWhenDone] [-EnableContextMenus] [-WhatIf] [-Confirm] [<CommonParameters>]
+install-vscode.ps1 [[-Architecture] <String>] [[-BuildEdition] <String>] [[-AdditionalExtensions] <String[]>] [-LaunchWhenDone] [-EnableContextMenus] [-WhatIf] [-Confirm] [<CommonParameters>]
+
 ```
 
 ```

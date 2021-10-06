@@ -3,9 +3,10 @@
 list-submodules.ps1 [<RepoDir>] 
 <RepoDir> is the path to the repository (current working dir by default)
 
-## Syntax & Parameters
+## Parameters
 ```powershell
-/home/markus/Repos/PowerShell/Scripts/list-submodules.ps1 [[-RepoDir] <String>] [<CommonParameters>]
+list-submodules.ps1 [[-RepoDir] <String>] [<CommonParameters>]
+
 ```
 
 ```

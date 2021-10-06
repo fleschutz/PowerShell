@@ -2,9 +2,10 @@
 
 write-quote.ps1
 
-## Syntax & Parameters
+## Parameters
 ```powershell
-/home/markus/Repos/PowerShell/Scripts/write-quote.ps1 [<CommonParameters>]
+write-quote.ps1 [<CommonParameters>]
+
 ```
 
 ```

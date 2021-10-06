@@ -3,9 +3,10 @@
 Opens the default Web browser, optional with given URL
 open-browser.ps1 [<URL>]
 
-## Syntax & Parameters
+## Parameters
 ```powershell
-/home/markus/Repos/PowerShell/Scripts/open-browser.ps1 [[-URL] <String>] [<CommonParameters>]
+open-browser.ps1 [[-URL] <String>] [<CommonParameters>]
+
 ```
 
 ```

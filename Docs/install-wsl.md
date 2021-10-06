@@ -2,9 +2,10 @@
 
 install-wsl.ps1
 
-## Syntax & Parameters
+## Parameters
 ```powershell
-/home/markus/Repos/PowerShell/Scripts/install-wsl.ps1 [<CommonParameters>]
+install-wsl.ps1 [<CommonParameters>]
+
 ```
 
 ```

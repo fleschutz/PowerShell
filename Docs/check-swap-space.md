@@ -2,9 +2,10 @@
 
 check-swap-space.ps1 [<min-level>]
 
-## Syntax & Parameters
+## Parameters
 ```powershell
-/home/markus/Repos/PowerShell/Scripts/check-swap-space.ps1 [[-MinLevel] <Int32>] [<CommonParameters>]
+check-swap-space.ps1 [[-MinLevel] <Int32>] [<CommonParameters>]
+
 ```
 
 ```

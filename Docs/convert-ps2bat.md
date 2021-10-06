@@ -2,9 +2,10 @@
 
 convert-ps2bat.ps1 [<pattern>]
 
-## Syntax & Parameters
+## Parameters
 ```powershell
-/home/markus/Repos/PowerShell/Scripts/convert-ps2bat.ps1 [[-Pattern] <String>] [<CommonParameters>]
+convert-ps2bat.ps1 [[-Pattern] <String>] [<CommonParameters>]
+
 ```
 
 ```

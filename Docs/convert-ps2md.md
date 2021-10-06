@@ -2,9 +2,10 @@
 
 convert-ps2md.ps1 [<filename>]
 
-## Syntax & Parameters
+## Parameters
 ```powershell
-/home/markus/Repos/PowerShell/Scripts/convert-ps2md.ps1 [[-filename] <String>] [<CommonParameters>]
+convert-ps2md.ps1 [[-filename] <String>] [<CommonParameters>]
+
 ```
 
 ```

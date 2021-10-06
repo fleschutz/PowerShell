@@ -2,9 +2,10 @@
 
 add-memo.ps1 [<text>]
 
-## Syntax & Parameters
+## Parameters
 ```powershell
-/home/markus/Repos/PowerShell/Scripts/add-memo.ps1 [[-text] <String>] [<CommonParameters>]
+add-memo.ps1 [[-text] <String>] [<CommonParameters>]
+
 ```
 
 ```

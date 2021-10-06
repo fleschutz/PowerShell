@@ -4,9 +4,10 @@ list-tags.ps1 [<RepoDir>] [<SearchPattern>]
 <RepoDir> is the path to the Git repository
 <SearchPattern> is "*" (anything) by default
 
-## Syntax & Parameters
+## Parameters
 ```powershell
-/home/markus/Repos/PowerShell/Scripts/list-tags.ps1 [[-RepoDir] <String>] [[-SearchPattern] <String>] [<CommonParameters>]
+list-tags.ps1 [[-RepoDir] <String>] [[-SearchPattern] <String>] [<CommonParameters>]
+
 ```
 
 ```

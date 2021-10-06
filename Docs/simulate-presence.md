@@ -3,9 +3,10 @@
 simulate-presence.ps1 [<IPaddress>]
 <IPaddress> is the IP address of the Shelly1 device
 
-## Syntax & Parameters
+## Parameters
 ```powershell
-/home/markus/Repos/PowerShell/Scripts/simulate-presence.ps1 [[-IPaddress] <String>] [<CommonParameters>]
+simulate-presence.ps1 [[-IPaddress] <String>] [<CommonParameters>]
+
 ```
 
 ```

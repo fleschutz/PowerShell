@@ -2,9 +2,10 @@
 
 weather.ps1 [<GeoLocation>]
 
-## Syntax & Parameters
+## Parameters
 ```powershell
-/home/markus/Repos/PowerShell/Scripts/weather.ps1 [[-GeoLocation] <String>] [<CommonParameters>]
+weather.ps1 [[-GeoLocation] <String>] [<CommonParameters>]
+
 ```
 
 ```

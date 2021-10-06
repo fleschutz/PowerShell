@@ -3,9 +3,10 @@
 take-screenshots.ps1 [<TargetDir>] [<Interval>]
 Takes screenshots and saves them into a folder (per default every 60 seconds)
 
-## Syntax & Parameters
+## Parameters
 ```powershell
-/home/markus/Repos/PowerShell/Scripts/take-screenshots.ps1 [[-TargetDir] <String>] [[-Interval] <Int32>] [<CommonParameters>]
+take-screenshots.ps1 [[-TargetDir] <String>] [[-Interval] <Int32>] [<CommonParameters>]
+
 ```
 
 ```

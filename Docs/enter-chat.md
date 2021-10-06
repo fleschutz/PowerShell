@@ -2,9 +2,10 @@
 
 enter-chat.ps1
 
-## Syntax & Parameters
+## Parameters
 ```powershell
-/home/markus/Repos/PowerShell/Scripts/enter-chat.ps1 [<CommonParameters>]
+enter-chat.ps1 [<CommonParameters>]
+
 ```
 
 ```

@@ -2,9 +2,10 @@
 
 close-cortana.ps1
 
-## Syntax & Parameters
+## Parameters
 ```powershell
-/home/markus/Repos/PowerShell/Scripts/close-cortana.ps1 [<CommonParameters>]
+close-cortana.ps1 [<CommonParameters>]
+
 ```
 
 ```

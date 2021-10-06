@@ -2,9 +2,10 @@
 
 list-os-releases.ps1
 
-## Syntax & Parameters
+## Parameters
 ```powershell
-/home/markus/Repos/PowerShell/Scripts/list-os-releases.ps1 [<CommonParameters>]
+list-os-releases.ps1 [<CommonParameters>]
+
 ```
 
 ```

@@ -4,9 +4,10 @@ search-filename.ps1 [<path>] [<term>]
 This script serves as a quick Powershell replacement to the search functionality in Windows
 After you pass in a root folder and a search term, the script will list all files and folders matching that phrase.
 
-## Syntax & Parameters
+## Parameters
 ```powershell
-/home/markus/Repos/PowerShell/Scripts/search-filename.ps1 [-path] <Object> [-term] <Object> [<CommonParameters>]
+search-filename.ps1 [-path] <Object> [-term] <Object> [<CommonParameters>]
+
 ```
 
 ```

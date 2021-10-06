@@ -3,9 +3,10 @@
 clear-recycle-bin.ps1 
 NOTE: can not be undo!
 
-## Syntax & Parameters
+## Parameters
 ```powershell
-/home/markus/Repos/PowerShell/Scripts/clear-recycle-bin.ps1 [<CommonParameters>]
+clear-recycle-bin.ps1 [<CommonParameters>]
+
 ```
 
 ```

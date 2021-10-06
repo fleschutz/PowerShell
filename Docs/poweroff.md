@@ -2,9 +2,10 @@
 
 poweroff.ps1
 
-## Syntax & Parameters
+## Parameters
 ```powershell
-/home/markus/Repos/PowerShell/Scripts/poweroff.ps1 [<CommonParameters>]
+poweroff.ps1 [<CommonParameters>]
+
 ```
 
 ```

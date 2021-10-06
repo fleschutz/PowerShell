@@ -4,9 +4,10 @@ list-branches.ps1 [<RepoDir>] [<SearchPattern>]
 <RepoDir> is the current working directory by default
 <SearchPattern> is "*" (anything) by default
 
-## Syntax & Parameters
+## Parameters
 ```powershell
-/home/markus/Repos/PowerShell/Scripts/list-branches.ps1 [[-RepoDir] <String>] [[-SearchPattern] <String>] [<CommonParameters>]
+list-branches.ps1 [[-RepoDir] <String>] [[-SearchPattern] <String>] [<CommonParameters>]
+
 ```
 
 ```

@@ -2,9 +2,10 @@
 
 write-motd.ps1
 
-## Syntax & Parameters
+## Parameters
 ```powershell
-/home/markus/Repos/PowerShell/Scripts/write-motd.ps1 [<CommonParameters>]
+write-motd.ps1 [<CommonParameters>]
+
 ```
 
 ```

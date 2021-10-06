@@ -2,9 +2,10 @@
 
 cd-ssh.ps1
 
-## Syntax & Parameters
+## Parameters
 ```powershell
-/home/markus/Repos/PowerShell/Scripts/cd-ssh.ps1 [<CommonParameters>]
+cd-ssh.ps1 [<CommonParameters>]
+
 ```
 
 ```

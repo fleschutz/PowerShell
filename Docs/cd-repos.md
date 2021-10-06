@@ -2,9 +2,10 @@
 
 cd-repos.ps1
 
-## Syntax & Parameters
+## Parameters
 ```powershell
-/home/markus/Repos/PowerShell/Scripts/cd-repos.ps1 [<CommonParameters>]
+cd-repos.ps1 [<CommonParameters>]
+
 ```
 
 ```

@@ -3,9 +3,10 @@
 Enables the god mode (adds a new icon to the desktop)
 enable-god-mode.ps1
 
-## Syntax & Parameters
+## Parameters
 ```powershell
-/home/markus/Repos/PowerShell/Scripts/enable-god-mode.ps1 [<CommonParameters>]
+enable-god-mode.ps1 [<CommonParameters>]
+
 ```
 
 ```

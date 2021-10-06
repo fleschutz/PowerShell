@@ -3,9 +3,10 @@
 start-calibre-server.ps1 [<port>]
 Starts a local Calibre server as background process (Web port number is 8099 by default)
 
-## Syntax & Parameters
+## Parameters
 ```powershell
-/home/markus/Repos/PowerShell/Scripts/start-calibre-server.ps1 [[-port] <Int32>] [<CommonParameters>]
+start-calibre-server.ps1 [[-port] <Int32>] [<CommonParameters>]
+
 ```
 
 ```

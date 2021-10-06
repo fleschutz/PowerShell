@@ -2,9 +2,10 @@
 
 close-vlc.ps1
 
-## Syntax & Parameters
+## Parameters
 ```powershell
-/home/markus/Repos/PowerShell/Scripts/close-vlc.ps1 [<CommonParameters>]
+close-vlc.ps1 [<CommonParameters>]
+
 ```
 
 ```

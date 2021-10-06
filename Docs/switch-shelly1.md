@@ -5,9 +5,10 @@ switch-shelly1.ps1 [<Host>] [<TurnMode>] [<Timer>]
 <TurnMode> is either 'on', 'off', or 'toggle')
 <Timer> is the timer in seconds (0 = infinite)
 
-## Syntax & Parameters
+## Parameters
 ```powershell
-/home/markus/Repos/PowerShell/Scripts/switch-shelly1.ps1 [[-Host] <String>] [[-TurnMode] <String>] [[-Timer] <Int32>] [<CommonParameters>]
+switch-shelly1.ps1 [[-Host] <String>] [[-TurnMode] <String>] [[-Timer] <Int32>] [<CommonParameters>]
+
 ```
 
 ```

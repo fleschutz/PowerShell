@@ -3,9 +3,10 @@
 Lists earthquakes with magnitude >= 6.0 for the last 30 days
 list-earthquakes.ps1
 
-## Syntax & Parameters
+## Parameters
 ```powershell
-/home/markus/Repos/PowerShell/Scripts/list-earthquakes.ps1 [<CommonParameters>]
+list-earthquakes.ps1 [<CommonParameters>]
+
 ```
 
 ```

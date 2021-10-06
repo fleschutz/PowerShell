@@ -2,9 +2,10 @@
 
 cd-up2.ps1
 
-## Syntax & Parameters
+## Parameters
 ```powershell
-/home/markus/Repos/PowerShell/Scripts/cd-up2.ps1 [<CommonParameters>]
+cd-up2.ps1 [<CommonParameters>]
+
 ```
 
 ```

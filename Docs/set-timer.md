@@ -2,9 +2,10 @@
 
 set-timer.ps1 [<seconds>]
 
-## Syntax & Parameters
+## Parameters
 ```powershell
-/home/markus/Repos/PowerShell/Scripts/set-timer.ps1 [[-Seconds] <Int32>] [<CommonParameters>]
+set-timer.ps1 [[-Seconds] <Int32>] [<CommonParameters>]
+
 ```
 
 ```

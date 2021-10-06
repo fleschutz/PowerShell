@@ -2,9 +2,10 @@
 
 clean-repo.ps1 [<RepoDir>]
 
-## Syntax & Parameters
+## Parameters
 ```powershell
-/home/markus/Repos/PowerShell/Scripts/clean-repo.ps1 [[-RepoDir] <String>] [<CommonParameters>]
+clean-repo.ps1 [[-RepoDir] <String>] [<CommonParameters>]
+
 ```
 
 ```

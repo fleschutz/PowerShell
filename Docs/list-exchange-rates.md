@@ -3,9 +3,10 @@
 Lists the current exchange rates for the given currency (USD per default).
 list-exchange-rates.ps1 [<currency>]
 
-## Syntax & Parameters
+## Parameters
 ```powershell
-/home/markus/Repos/PowerShell/Scripts/list-exchange-rates.ps1 [[-currency] <String>] [<CommonParameters>]
+list-exchange-rates.ps1 [[-currency] <String>] [<CommonParameters>]
+
 ```
 
 ```

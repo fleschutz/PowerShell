@@ -3,9 +3,10 @@
 Lists the installed software (except Windows Store apps)
 list-installed-software.ps1
 
-## Syntax & Parameters
+## Parameters
 ```powershell
-/home/markus/Repos/PowerShell/Scripts/list-installed-software.ps1 [<CommonParameters>]
+list-installed-software.ps1 [<CommonParameters>]
+
 ```
 
 ```

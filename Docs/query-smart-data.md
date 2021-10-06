@@ -6,9 +6,10 @@ Queries the S.M.A.R.T. data of your HDD/SSD's and saves it to the current/given 
 
        Requires smartctl (smartmontools) and admin rights. For automation copy this script to /etc/cron.daily
 
-## Syntax & Parameters
+## Parameters
 ```powershell
-/home/markus/Repos/PowerShell/Scripts/query-smart-data.ps1 [[-Directory] <String>] [<CommonParameters>]
+query-smart-data.ps1 [[-Directory] <String>] [<CommonParameters>]
+
 ```
 
 ```

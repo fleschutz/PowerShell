@@ -2,9 +2,10 @@
 
 turn-volume-up.ps1 [<percent>]
 
-## Syntax & Parameters
+## Parameters
 ```powershell
-/home/markus/Repos/PowerShell/Scripts/turn-volume-up.ps1 [[-percent] <Int32>] [<CommonParameters>]
+turn-volume-up.ps1 [[-percent] <Int32>] [<CommonParameters>]
+
 ```
 
 ```

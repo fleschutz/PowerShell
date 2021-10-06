@@ -2,9 +2,10 @@
 
 write-calendar.ps1 [<Month>] [<Year>]
 
-## Syntax & Parameters
+## Parameters
 ```powershell
-/home/markus/Repos/PowerShell/Scripts/write-calendar.ps1 [[-Month] <Int32>] [[-Year] <Int32>] [<CommonParameters>]
+write-calendar.ps1 [[-Month] <Int32>] [[-Year] <Int32>] [<CommonParameters>]
+
 ```
 
 ```

@@ -2,9 +2,10 @@
 
 speak-time.ps1
 
-## Syntax & Parameters
+## Parameters
 ```powershell
-/home/markus/Repos/PowerShell/Scripts/speak-time.ps1 [<CommonParameters>]
+speak-time.ps1 [<CommonParameters>]
+
 ```
 
 ```

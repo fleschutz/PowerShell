@@ -2,9 +2,10 @@
 
 cd-desktop.ps1
 
-## Syntax & Parameters
+## Parameters
 ```powershell
-/home/markus/Repos/PowerShell/Scripts/cd-desktop.ps1 [<CommonParameters>]
+cd-desktop.ps1 [<CommonParameters>]
+
 ```
 
 ```

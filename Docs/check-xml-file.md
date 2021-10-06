@@ -2,9 +2,10 @@
 
 check-xml-file [<file>]
 
-## Syntax & Parameters
+## Parameters
 ```powershell
-/home/markus/Repos/PowerShell/Scripts/check-xml-file.ps1 [[-file] <String>] [<CommonParameters>]
+check-xml-file.ps1 [[-file] <String>] [<CommonParameters>]
+
 ```
 
 ```

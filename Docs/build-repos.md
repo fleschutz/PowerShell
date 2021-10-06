@@ -2,9 +2,10 @@
 
 build-repos.ps1 [<ParentDir>]
 
-## Syntax & Parameters
+## Parameters
 ```powershell
-/home/markus/Repos/PowerShell/Scripts/build-repos.ps1 [[-ParentDir] <String>] [<CommonParameters>]
+build-repos.ps1 [[-ParentDir] <String>] [<CommonParameters>]
+
 ```
 
 ```

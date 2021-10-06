@@ -2,9 +2,10 @@
 
 search-files.ps1 [<pattern>] [<files>]
 
-## Syntax & Parameters
+## Parameters
 ```powershell
-/home/markus/Repos/PowerShell/Scripts/search-files.ps1 [[-pattern] <String>] [[-files] <String>] [<CommonParameters>]
+search-files.ps1 [[-pattern] <String>] [[-files] <String>] [<CommonParameters>]
+
 ```
 
 ```

@@ -2,9 +2,10 @@
 
 cd-downloads.ps1
 
-## Syntax & Parameters
+## Parameters
 ```powershell
-/home/markus/Repos/PowerShell/Scripts/cd-downloads.ps1 [<CommonParameters>]
+cd-downloads.ps1 [<CommonParameters>]
+
 ```
 
 ```

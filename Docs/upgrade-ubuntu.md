@@ -2,9 +2,10 @@
 
 upgrade-ubuntu.ps1
 
-## Syntax & Parameters
+## Parameters
 ```powershell
-/home/markus/Repos/PowerShell/Scripts/upgrade-ubuntu.ps1 [<CommonParameters>]
+upgrade-ubuntu.ps1 [<CommonParameters>]
+
 ```
 
 ```

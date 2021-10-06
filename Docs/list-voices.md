@@ -2,9 +2,10 @@
 
 list-voices.ps1
 
-## Syntax & Parameters
+## Parameters
 ```powershell
-/home/markus/Repos/PowerShell/Scripts/list-voices.ps1 [<CommonParameters>]
+list-voices.ps1 [<CommonParameters>]
+
 ```
 
 ```

@@ -2,9 +2,10 @@
 
 list-emojis.ps1
 
-## Syntax & Parameters
+## Parameters
 ```powershell
-/home/markus/Repos/PowerShell/Scripts/list-emojis.ps1 [<CommonParameters>]
+list-emojis.ps1 [<CommonParameters>]
+
 ```
 
 ```

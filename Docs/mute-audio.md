@@ -2,9 +2,10 @@
 
 mute-audio.ps1
 
-## Syntax & Parameters
+## Parameters
 ```powershell
-/home/markus/Repos/PowerShell/Scripts/mute-audio.ps1 [<CommonParameters>]
+mute-audio.ps1 [<CommonParameters>]
+
 ```
 
 ```

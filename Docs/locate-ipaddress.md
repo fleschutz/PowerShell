@@ -2,9 +2,10 @@
 
 locate-ipaddress.ps1 [<IPaddress>]
 
-## Syntax & Parameters
+## Parameters
 ```powershell
-/home/markus/Repos/PowerShell/Scripts/locate-ipaddress.ps1 [[-IPaddress] <String>] [<CommonParameters>]
+locate-ipaddress.ps1 [[-IPaddress] <String>] [<CommonParameters>]
+
 ```
 
 ```

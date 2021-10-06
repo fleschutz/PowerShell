@@ -2,9 +2,10 @@
 
 speak-epub.ps1 [<filename>]
 
-## Syntax & Parameters
+## Parameters
 ```powershell
-/home/markus/Repos/PowerShell/Scripts/speak-epub.ps1 [[-Filename] <String>] [<CommonParameters>]
+speak-epub.ps1 [[-Filename] <String>] [<CommonParameters>]
+
 ```
 
 ```

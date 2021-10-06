@@ -2,9 +2,10 @@
 
 open-netflix.ps1
 
-## Syntax & Parameters
+## Parameters
 ```powershell
-/home/markus/Repos/PowerShell/Scripts/open-netflix.ps1 [<CommonParameters>]
+open-netflix.ps1 [<CommonParameters>]
+
 ```
 
 ```

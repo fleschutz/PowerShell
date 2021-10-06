@@ -2,9 +2,10 @@
 
 remove-print-jobs.ps1
 
-## Syntax & Parameters
+## Parameters
 ```powershell
-/home/markus/Repos/PowerShell/Scripts/remove-print-jobs.ps1 [<CommonParameters>]
+remove-print-jobs.ps1 [<CommonParameters>]
+
 ```
 
 ```

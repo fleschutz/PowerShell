@@ -2,9 +2,10 @@
 
 open-calculator.ps1
 
-## Syntax & Parameters
+## Parameters
 ```powershell
-/home/markus/Repos/PowerShell/Scripts/open-calculator.ps1 [<CommonParameters>]
+open-calculator.ps1 [<CommonParameters>]
+
 ```
 
 ```

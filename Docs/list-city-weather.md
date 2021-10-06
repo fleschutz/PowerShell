@@ -3,9 +3,10 @@
 List the current weather of cities world-wide (west to east)
 list-city-weather.ps1
 
-## Syntax & Parameters
+## Parameters
 ```powershell
-/home/markus/Repos/PowerShell/Scripts/list-city-weather.ps1 [<CommonParameters>]
+list-city-weather.ps1 [<CommonParameters>]
+
 ```
 
 ```

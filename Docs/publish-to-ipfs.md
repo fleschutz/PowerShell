@@ -2,9 +2,10 @@
 
 publish-to-ipfs.ps1 [<FilePattern>] [<HashList>]
 
-## Syntax & Parameters
+## Parameters
 ```powershell
-/home/markus/Repos/PowerShell/Scripts/publish-to-ipfs.ps1 [[-FilePattern] <String>] [[-HashList] <String>] [[-DF_Hashes] <String>] [<CommonParameters>]
+publish-to-ipfs.ps1 [[-FilePattern] <String>] [[-HashList] <String>] [[-DF_Hashes] <String>] [<CommonParameters>]
+
 ```
 
 ```

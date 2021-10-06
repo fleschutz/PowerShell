@@ -3,9 +3,10 @@
 Knot Resolver is a DNS resolver daemon.
 install-knot-resolver.ps1
 
-## Syntax & Parameters
+## Parameters
 ```powershell
-/home/markus/Repos/PowerShell/Scripts/install-knot-resolver.ps1 [<CommonParameters>]
+install-knot-resolver.ps1 [<CommonParameters>]
+
 ```
 
 ```

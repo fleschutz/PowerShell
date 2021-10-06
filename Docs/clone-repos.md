@@ -2,9 +2,10 @@
 
 clone-repos.ps1 [<folder>]
 
-## Syntax & Parameters
+## Parameters
 ```powershell
-/home/markus/Repos/PowerShell/Scripts/clone-repos.ps1 [[-folder] <String>] [<CommonParameters>]
+clone-repos.ps1 [[-folder] <String>] [<CommonParameters>]
+
 ```
 
 ```

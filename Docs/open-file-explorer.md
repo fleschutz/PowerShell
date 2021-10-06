@@ -2,9 +2,10 @@
 
 open-file-explorer.ps1
 
-## Syntax & Parameters
+## Parameters
 ```powershell
-/home/markus/Repos/PowerShell/Scripts/open-file-explorer.ps1 [<CommonParameters>]
+open-file-explorer.ps1 [<CommonParameters>]
+
 ```
 
 ```

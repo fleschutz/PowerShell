@@ -3,9 +3,10 @@
 Hosts by default are: amazon.com,apple.com,bing.com,cnn.com,dropbox.com,facebook.com,google.com,live.com,twitter.com,youtube.com
 check-ping.ps1 [<hosts>]
 
-## Syntax & Parameters
+## Parameters
 ```powershell
-/home/markus/Repos/PowerShell/Scripts/check-ping.ps1 [[-hosts] <String>] [<CommonParameters>]
+check-ping.ps1 [[-hosts] <String>] [<CommonParameters>]
+
 ```
 
 ```

@@ -2,9 +2,10 @@
 
 send-email.ps1
 
-## Syntax & Parameters
+## Parameters
 ```powershell
-/home/markus/Repos/PowerShell/Scripts/send-email.ps1 [<CommonParameters>]
+send-email.ps1 [<CommonParameters>]
+
 ```
 
 ```

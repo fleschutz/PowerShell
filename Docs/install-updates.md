@@ -2,9 +2,10 @@
 
 install-updates.ps1
 
-## Syntax & Parameters
+## Parameters
 ```powershell
-/home/markus/Repos/PowerShell/Scripts/install-updates.ps1 [<CommonParameters>]
+install-updates.ps1 [<CommonParameters>]
+
 ```
 
 ```

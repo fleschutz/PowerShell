@@ -2,9 +2,10 @@
 
 list-fritzbox-devices.ps1 [<Username>] [<Password>]
 
-## Syntax & Parameters
+## Parameters
 ```powershell
-/home/markus/Repos/PowerShell/Scripts/list-fritzbox-devices.ps1 [[-Username] <String>] [[-Password] <String>] [<CommonParameters>]
+list-fritzbox-devices.ps1 [[-Username] <String>] [[-Password] <String>] [<CommonParameters>]
+
 ```
 
 ```

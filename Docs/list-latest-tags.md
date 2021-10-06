@@ -2,9 +2,10 @@
 
 list-latest-tags.ps1 [<ParentDir>]
 
-## Syntax & Parameters
+## Parameters
 ```powershell
-/home/markus/Repos/PowerShell/Scripts/list-latest-tags.ps1 [[-ParentDir] <String>] [<CommonParameters>]
+list-latest-tags.ps1 [[-ParentDir] <String>] [<CommonParameters>]
+
 ```
 
 ```

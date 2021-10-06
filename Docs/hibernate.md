@@ -2,9 +2,10 @@
 
 hibernate.ps1
 
-## Syntax & Parameters
+## Parameters
 ```powershell
-/home/markus/Repos/PowerShell/Scripts/hibernate.ps1 [<CommonParameters>]
+hibernate.ps1 [<CommonParameters>]
+
 ```
 
 ```

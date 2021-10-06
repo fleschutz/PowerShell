@@ -2,9 +2,10 @@
 
 speak-checklist.ps1 [<name>]
 
-## Syntax & Parameters
+## Parameters
 ```powershell
-/home/markus/Repos/PowerShell/Scripts/speak-checklist.ps1 [[-Name] <String>] [<CommonParameters>]
+speak-checklist.ps1 [[-Name] <String>] [<CommonParameters>]
+
 ```
 
 ```

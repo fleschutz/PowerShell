@@ -2,9 +2,10 @@
 
 new-qrcode.ps1 [<Text>] [<ImageSize>]
 
-## Syntax & Parameters
+## Parameters
 ```powershell
-/home/markus/Repos/PowerShell/Scripts/new-qrcode.ps1 [[-Text] <String>] [[-ImageSize] <String>] [<CommonParameters>]
+new-qrcode.ps1 [[-Text] <String>] [[-ImageSize] <String>] [<CommonParameters>]
+
 ```
 
 ```

@@ -5,9 +5,10 @@ list-unused-files.ps1 <DirTree> <Days>
 <DirTree> is the path to the directory tree
 <Days> is the number of days
 
-## Syntax & Parameters
+## Parameters
 ```powershell
-/home/markus/Repos/PowerShell/Scripts/list-unused-files.ps1 [[-DirTree] <String>] [[-Days] <Int32>] [<CommonParameters>]
+list-unused-files.ps1 [[-DirTree] <String>] [[-Days] <Int32>] [<CommonParameters>]
+
 ```
 
 ```

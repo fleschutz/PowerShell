@@ -2,9 +2,10 @@
 
 play-mission-impossible.ps1
 
-## Syntax & Parameters
+## Parameters
 ```powershell
-/home/markus/Repos/PowerShell/Scripts/play-mission-impossible.ps1 [<CommonParameters>]
+play-mission-impossible.ps1 [<CommonParameters>]
+
 ```
 
 ```

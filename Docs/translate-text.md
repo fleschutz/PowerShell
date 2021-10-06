@@ -2,9 +2,10 @@
 
 translate-text.ps1 [<Text>] [<SourceLang>] [<TargetLang>]
 
-## Syntax & Parameters
+## Parameters
 ```powershell
-/home/markus/Repos/PowerShell/Scripts/translate-text.ps1 [[-Text] <String>] [[-SourceLang] <String>] [[-TargetLang] <String>] [<CommonParameters>]
+translate-text.ps1 [[-Text] <String>] [[-SourceLang] <String>] [[-TargetLang] <String>] [<CommonParameters>]
+
 ```
 
 ```

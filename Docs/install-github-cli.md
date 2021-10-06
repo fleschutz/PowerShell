@@ -2,9 +2,10 @@
 
 install-github-cli.ps1
 
-## Syntax & Parameters
+## Parameters
 ```powershell
-/home/markus/Repos/PowerShell/Scripts/install-github-cli.ps1 [<CommonParameters>]
+install-github-cli.ps1 [<CommonParameters>]
+
 ```
 
 ```

@@ -3,9 +3,10 @@
 Supported MAC address formats are: 00:00:00:00:00:00 or 00-00-00-00-00-00 or 000000000000.
 check-mac-address.ps1 [<MAC>]
 
-## Syntax & Parameters
+## Parameters
 ```powershell
-/home/markus/Repos/PowerShell/Scripts/check-mac-address.ps1 [[-MAC] <String>] [<CommonParameters>]
+check-mac-address.ps1 [[-MAC] <String>] [<CommonParameters>]
+
 ```
 
 ```

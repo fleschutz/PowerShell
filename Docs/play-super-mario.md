@@ -2,9 +2,10 @@
 
 play-super-mario.ps1
 
-## Syntax & Parameters
+## Parameters
 ```powershell
-/home/markus/Repos/PowerShell/Scripts/play-super-mario.ps1 [<CommonParameters>]
+play-super-mario.ps1 [<CommonParameters>]
+
 ```
 
 ```

@@ -2,9 +2,10 @@
 
 write-vertical.ps1 [<text>]
 
-## Syntax & Parameters
+## Parameters
 ```powershell
-/home/markus/Repos/PowerShell/Scripts/write-vertical.ps1 [[-text] <String>] [<CommonParameters>]
+write-vertical.ps1 [[-text] <String>] [<CommonParameters>]
+
 ```
 
 ```

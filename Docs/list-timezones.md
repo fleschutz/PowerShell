@@ -2,9 +2,10 @@
 
 list-timezones.ps1
 
-## Syntax & Parameters
+## Parameters
 ```powershell
-/home/markus/Repos/PowerShell/Scripts/list-timezones.ps1 [<CommonParameters>]
+list-timezones.ps1 [<CommonParameters>]
+
 ```
 
 ```

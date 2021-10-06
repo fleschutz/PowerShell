@@ -2,9 +2,10 @@
 
 open-email-client.ps1
 
-## Syntax & Parameters
+## Parameters
 ```powershell
-/home/markus/Repos/PowerShell/Scripts/open-email-client.ps1 [<CommonParameters>]
+open-email-client.ps1 [<CommonParameters>]
+
 ```
 
 ```

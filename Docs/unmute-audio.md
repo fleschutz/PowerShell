@@ -2,9 +2,10 @@
 
 unmute-audio.ps1
 
-## Syntax & Parameters
+## Parameters
 ```powershell
-/home/markus/Repos/PowerShell/Scripts/unmute-audio.ps1 [<CommonParameters>]
+unmute-audio.ps1 [<CommonParameters>]
+
 ```
 
 ```

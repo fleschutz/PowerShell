@@ -2,9 +2,10 @@
 
 list-aliases.ps1
 
-## Syntax & Parameters
+## Parameters
 ```powershell
-/home/markus/Repos/PowerShell/Scripts/list-aliases.ps1 [<CommonParameters>]
+list-aliases.ps1 [<CommonParameters>]
+
 ```
 
 ```

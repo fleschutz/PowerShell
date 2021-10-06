@@ -2,9 +2,10 @@
 
 play-tetris-melody.ps1
 
-## Syntax & Parameters
+## Parameters
 ```powershell
-/home/markus/Repos/PowerShell/Scripts/play-tetris-melody.ps1 [<CommonParameters>]
+play-tetris-melody.ps1 [<CommonParameters>]
+
 ```
 
 ```

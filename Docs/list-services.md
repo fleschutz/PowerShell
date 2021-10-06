@@ -2,9 +2,10 @@
 
 list-services.ps1
 
-## Syntax & Parameters
+## Parameters
 ```powershell
-/home/markus/Repos/PowerShell/Scripts/list-services.ps1 [<CommonParameters>]
+list-services.ps1 [<CommonParameters>]
+
 ```
 
 ```

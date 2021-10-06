@@ -2,9 +2,10 @@
 
 write-joke.ps1
 
-## Syntax & Parameters
+## Parameters
 ```powershell
-/home/markus/Repos/PowerShell/Scripts/write-joke.ps1 [<CommonParameters>]
+write-joke.ps1 [<CommonParameters>]
+
 ```
 
 ```

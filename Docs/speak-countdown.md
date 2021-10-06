@@ -2,9 +2,10 @@
 
 speak-countdown.ps1 [StartNumber]
 
-## Syntax & Parameters
+## Parameters
 ```powershell
-/home/markus/Repos/PowerShell/Scripts/speak-countdown.ps1 [[-StartNumber] <Int32>] [<CommonParameters>]
+speak-countdown.ps1 [[-StartNumber] <Int32>] [<CommonParameters>]
+
 ```
 
 ```

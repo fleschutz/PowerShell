@@ -2,9 +2,10 @@
 
 close-windows-terminal.ps1
 
-## Syntax & Parameters
+## Parameters
 ```powershell
-/home/markus/Repos/PowerShell/Scripts/close-windows-terminal.ps1 [<CommonParameters>]
+close-windows-terminal.ps1 [<CommonParameters>]
+
 ```
 
 ```

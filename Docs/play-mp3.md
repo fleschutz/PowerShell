@@ -2,9 +2,10 @@
 
 play-mp3.ps1 [<MP3-file>]
 
-## Syntax & Parameters
+## Parameters
 ```powershell
-/home/markus/Repos/PowerShell/Scripts/play-mp3.ps1 [[-Filename] <String>] [<CommonParameters>]
+play-mp3.ps1 [[-Filename] <String>] [<CommonParameters>]
+
 ```
 
 ```

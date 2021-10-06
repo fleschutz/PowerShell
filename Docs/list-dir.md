@@ -3,9 +3,10 @@
 list-dir.ps1 [<SearchPattern>]
 <SearchPattern> is "*" (anything) by default
 
-## Syntax & Parameters
+## Parameters
 ```powershell
-/home/markus/Repos/PowerShell/Scripts/list-dir.ps1 [[-SearchPattern] <String>] [<CommonParameters>]
+list-dir.ps1 [[-SearchPattern] <String>] [<CommonParameters>]
+
 ```
 
 ```

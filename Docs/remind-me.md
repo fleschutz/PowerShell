@@ -2,9 +2,10 @@
 
 remind-me.ps1
 
-## Syntax & Parameters
+## Parameters
 ```powershell
-/home/markus/Repos/PowerShell/Scripts/remind-me.ps1 [[-Message] <String>] [[-Time] <DateTime>] [<CommonParameters>]
+remind-me.ps1 [[-Message] <String>] [[-Time] <DateTime>] [<CommonParameters>]
+
 ```
 
 ```

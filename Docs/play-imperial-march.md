@@ -2,9 +2,10 @@
 
 play-imperial-march.ps1
 
-## Syntax & Parameters
+## Parameters
 ```powershell
-/home/markus/Repos/PowerShell/Scripts/play-imperial-march.ps1 [<CommonParameters>]
+play-imperial-march.ps1 [<CommonParameters>]
+
 ```
 
 ```

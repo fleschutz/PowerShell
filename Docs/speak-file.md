@@ -2,9 +2,10 @@
 
 speak-file.ps1 [<file>]
 
-## Syntax & Parameters
+## Parameters
 ```powershell
-/home/markus/Repos/PowerShell/Scripts/speak-file.ps1 [[-File] <String>] [<CommonParameters>]
+speak-file.ps1 [[-File] <String>] [<CommonParameters>]
+
 ```
 
 ```

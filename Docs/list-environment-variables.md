@@ -2,9 +2,10 @@
 
 list-environment-variables.ps1
 
-## Syntax & Parameters
+## Parameters
 ```powershell
-/home/markus/Repos/PowerShell/Scripts/list-environment-variables.ps1 [<CommonParameters>]
+list-environment-variables.ps1 [<CommonParameters>]
+
 ```
 
 ```

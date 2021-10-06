@@ -3,9 +3,10 @@
 list-latest-tag.ps1 [<RepoDir>] 
 <RepoDir> is the path to the repository
 
-## Syntax & Parameters
+## Parameters
 ```powershell
-/home/markus/Repos/PowerShell/Scripts/list-latest-tag.ps1 [[-RepoDir] <String>] [<CommonParameters>]
+list-latest-tag.ps1 [[-RepoDir] <String>] [<CommonParameters>]
+
 ```
 
 ```

@@ -2,9 +2,10 @@
 
 close-netflix.ps1
 
-## Syntax & Parameters
+## Parameters
 ```powershell
-/home/markus/Repos/PowerShell/Scripts/close-netflix.ps1 [<CommonParameters>]
+close-netflix.ps1 [<CommonParameters>]
+
 ```
 
 ```

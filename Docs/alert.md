@@ -2,9 +2,10 @@
 
 alert.ps1 [<message>]
 
-## Syntax & Parameters
+## Parameters
 ```powershell
-/home/markus/Repos/PowerShell/Scripts/alert.ps1 [[-Message] <String>] [<CommonParameters>]
+alert.ps1 [[-Message] <String>] [<CommonParameters>]
+
 ```
 
 ```

@@ -2,9 +2,10 @@
 
 write-rot13.ps1 [<text>]
 
-## Syntax & Parameters
+## Parameters
 ```powershell
-/home/markus/Repos/PowerShell/Scripts/write-rot13.ps1 [[-text] <String>] [<CommonParameters>]
+write-rot13.ps1 [[-text] <String>] [<CommonParameters>]
+
 ```
 
 ```

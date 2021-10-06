@@ -2,9 +2,10 @@
 
 make-install.ps1 <BuildDir>
 
-## Syntax & Parameters
+## Parameters
 ```powershell
-/home/markus/Repos/PowerShell/Scripts/make-install.ps1 [<CommonParameters>]
+make-install.ps1 [<CommonParameters>]
+
 ```
 
 ```

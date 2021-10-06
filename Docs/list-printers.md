@@ -2,9 +2,10 @@
 
 list-printers.ps1
 
-## Syntax & Parameters
+## Parameters
 ```powershell
-/home/markus/Repos/PowerShell/Scripts/list-printers.ps1 [<CommonParameters>]
+list-printers.ps1 [<CommonParameters>]
+
 ```
 
 ```

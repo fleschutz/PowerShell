@@ -2,9 +2,10 @@
 
 voice-control.ps1
 
-## Syntax & Parameters
+## Parameters
 ```powershell
-/home/markus/Repos/PowerShell/Scripts/voice-control.ps1 [<CommonParameters>]
+voice-control.ps1 [<CommonParameters>]
+
 ```
 
 ```

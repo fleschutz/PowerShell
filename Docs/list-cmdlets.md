@@ -2,9 +2,10 @@
 
 list-cmdlets.ps1
 
-## Syntax & Parameters
+## Parameters
 ```powershell
-/home/markus/Repos/PowerShell/Scripts/list-cmdlets.ps1 [<CommonParameters>]
+list-cmdlets.ps1 [<CommonParameters>]
+
 ```
 
 ```

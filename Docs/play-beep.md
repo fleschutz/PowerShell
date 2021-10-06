@@ -2,9 +2,10 @@
 
 play-beep.ps1
 
-## Syntax & Parameters
+## Parameters
 ```powershell
-/home/markus/Repos/PowerShell/Scripts/play-beep.ps1 [<CommonParameters>]
+play-beep.ps1 [<CommonParameters>]
+
 ```
 
 ```
