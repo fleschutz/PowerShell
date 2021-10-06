@@ -2,7 +2,9 @@
 .SYNOPSIS
 	Builds all Git repositories in a folder
 .DESCRIPTION
-	make-repos.ps1 [<ParentDir>]
+	build-repos.ps1 [<ParentDir>]
+.PARAMETER ParentDir
+	Specifies the path to the folder containing the Git repositories
 .EXAMPLE
 	PS> ./build-repos C:\MyRepos
 .NOTES

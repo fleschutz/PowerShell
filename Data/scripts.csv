@@ -36,7 +36,6 @@ check-symlinks.ps1, Checks every symlink in a directory tree
 check-weather.ps1, Checks the current weather for critical values
 check-windows-system-files.ps1, Checks the validity of the Windows system files 
 check-xml-file.ps1, Checks the given XML file for validity
-cherry-picker.ps1, Cherry-picks a Git commit into multiple branches
 clean-repo.ps1, Cleans the current/given Git repository from untracked files (including submodules)
 clean-repos.ps1, Cleans all Git repositories under the current/given directory from untracked files (including submodules)
 clear-recycle-bin.ps1, Removes the content of the recycle bin folder (can not be undo!)
@@ -161,6 +160,7 @@ open-file-explorer.ps1, Starts the Microsoft File Explorer
 open-netflix.ps1, Starts the Netflix app
 open-onedrive.ps1, Opens the user's OneDrive folder 
 open-recycle-bin.ps1, Starts the File Explorer with the recycle bin folder
+pick-commit.ps1, Cherry-picks a Git commit into multiple branches
 play-beep.ps1, Plays a beep sound
 play-files.ps1, Plays the given audio files
 play-happy-birthday.ps1, Plays the Happy Birthday song

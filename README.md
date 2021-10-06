@@ -197,13 +197,12 @@ Mega Collection of PowerShell Scripts
 | ---------------------------------------------------- | ------------------------------------------------------------------ | --------------------------------------- |
 | [build-repo.ps1](Scripts/build-repo.ps1)             | Builds a Git repository                                            | [Help](Docs/build-repo.md)           |
 | [build-repos.ps1](Scripts/build-repos.ps1)           | Builds all Git repositories in a folder                            | [Help](Docs/build-repos.md)          |
-| [cherry-picker.ps1](Scripts/cherry-picker.ps1)       | Cherry-picks a Git commit into multiple branches                   | [Help](Docs/cherry-picker.md)       |
 | [clean-repo.ps1](Scripts/clean-repo.ps1)             | Cleans a Git repository from untracked files (including submodules) | [Help](Docs/clean-repo.md)         |
-| [clean-repos.ps1](Scripts/clean-repos.ps1)           | Cleans all Git repositories under a directory from untracked files (including submodules) | [Help](Docs/clean-repos.md)   |
+| [clean-repos.ps1](Scripts/clean-repos.ps1)           | Cleans all Git repositories in a folder from untracked files (including submodules) | [Help](Docs/clean-repos.md)   |
 | [clone-repos.ps1](Scripts/clone-repos.ps1)           | Clones well-known Git repositories                                 | [Help](Docs/clone-repos.md)         |
 | [configure-git.ps1](Scripts/configure-git.ps1)       | Sets up the Git user configuration                                 | [Help](Docs/configure-git.md)       |
 | [fetch-repo.ps1](Scripts/fetch-repo.ps1)             | Fetches updates for a Git repository (including submodules)        | [Help](Docs/fetch-repo.md)          |
-| [fetch-repos.ps1](Scripts/fetch-repos.ps1)           | Fetches updates for all Git repositories under a directory (including submodules) | [Help](Docs/fetch-repos.md)|
+| [fetch-repos.ps1](Scripts/fetch-repos.ps1)           | Fetches updates for all Git repositories in a folder (including submodules) | [Help](Docs/fetch-repos.md)|
 | [list-branches.ps1](Scripts/list-branches.ps1)       | Lists all branches in a Git repository                             | [Help](Docs/list-branches.md)       |
 | [list-commits.ps1](Scripts/list-commits.ps1)         | Lists all commits in a Git repository                              | [Help](Docs/list-commits.md)        |
 | [list-latest-tag.ps1](Scripts/list-latest-tag.ps1)   | Lists the latest tag on the current branch in a Git repository     | [Help](Docs/list-latest-tag.md)     |
@@ -212,8 +211,9 @@ Mega Collection of PowerShell Scripts
 | [list-tags.ps1](Scripts/list-tags.ps1)               | Lists all tags in a Git repository                                 | [Help](Docs/list-tags.md)           |
 | [new-branch.ps1](Scripts/new-branch.ps1)             | Creates a new branch in a Git repository                           | [Help](Docs/new-branch.md)          |
 | [new-tag.ps1](Scripts/new-tag.ps1)                   | Creates a new tag in a Git repository                              | [Help](Docs/new-tag.md)             |
+| [pick-commit.ps1](Scripts/pick-commit.ps1)           | Cherry-picks a Git commit into multiple branches                   | [Help](Docs/pick-commit.md)       |
 | [pull-repo.ps1](Scripts/pull-repo.ps1)               | Pulls updates for a Git repository (including submodules)          | [Help](Docs/pull-repo.md)           |
-| [pull-repos.ps1](Scripts/pull-repos.ps1)             | Pulls updates for all Git repositories under a directory (including submodules) | [Help](Docs/pull-repos.md)|
+| [pull-repos.ps1](Scripts/pull-repos.ps1)             | Pulls updates for all Git repositories in a folder (including submodules) | [Help](Docs/pull-repos.md)|
 | [remove-tag.ps1](Scripts/remove-tag.ps1)             | Removes a tag in a Git repository                                  | [Help](Docs/remove-tag.md)       |
 | [switch-branch.ps1](Scripts/switch-branch.ps1)       | Switches the branch in a Git repository (including submodules)     | [Help](Docs/switch-branch.md)       |
 | [sync-repo.ps1](Scripts/sync-repo.ps1)               | Synchronizes a Git repository by push & pull (including submodules) | [Help](Docs/sync-repo.md)          |

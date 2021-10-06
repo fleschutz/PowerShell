@@ -2,11 +2,11 @@
 .SYNOPSIS
 	Cherry-picks a Git commit into one or more branches
 .DESCRIPTION
-	cherry-picker.ps1 [<CommitID>] [<CommitMessage>] [<Branches>] [<RepoDir>]
+	pick-commit.ps1 [<CommitID>] [<CommitMessage>] [<Branches>] [<RepoDir>]
 	Cherry-picks a Git commit into one or more branches (branch names need to be separated by spaces)
 	NOTE: in case of merge conflicts the script stops immediately! 
 .EXAMPLE
-	PS> ./cherry-picker 93849f889 "Fix typo" "v1 v2 v3"
+	PS> ./pick-commit 93849f889 "Fix typo" "v1 v2 v3"
 .NOTES
 	Author: Markus Fleschutz · License: CC0
 .LINK
