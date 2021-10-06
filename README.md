@@ -94,17 +94,17 @@ Mega Collection of PowerShell Scripts
 
 | Script                                               | Description                                                        | Help                                    |
 | ---------------------------------------------------- | ------------------------------------------------------------------ | --------------------------------------- |
-| [close-calculator.ps1](Scripts/close-calculator.ps1) | Closes the calculator program gracefully                           | [Help](Docs/close-calculator.md)    |
+| [close-calculator.ps1](Scripts/close-calculator.ps1) | Closes the calculator application                                  | [Help](Docs/close-calculator.md)    |
 | [close-chrome.ps1](Scripts/close-chrome.ps1)         | Closes the Google Chrome Web browser                               | [Help](Docs/close-chrome.md)        |
-| [close-cortana.ps1](Scripts/close-cortana.ps1)       | Closes Cortana gracefully                                          | [Help](Docs/close-cortana.md)       |
-| [close-edge.ps1](Scripts/close-edge.ps1)             | Closes the Microsoft Edge Web browser                               | [Help](Docs/close-edge.md)          |
-| [close-file-explorer.ps1](Scripts/close-file-explorer.ps1) | Closes Microsoft File Explorer gracefully                    | [Help](Docs/close-file-explorer.md) |
+| [close-cortana.ps1](Scripts/close-cortana.ps1)       | Closes Cortana                                                     | [Help](Docs/close-cortana.md)       |
+| [close-edge.ps1](Scripts/close-edge.ps1)             | Closes the Microsoft Edge Web browser                              | [Help](Docs/close-edge.md)          |
+| [close-file-explorer.ps1](Scripts/close-file-explorer.ps1) | Closes Microsoft File Explorer                               | [Help](Docs/close-file-explorer.md) |
 | [close-firefox.ps1](Scripts/close-firefox.ps1)       | Closes the Firefox Web browser                                     | [Help](Docs/close-firefox.md)       |
 | [close-program.ps1](Scripts/close-program.ps1)       | Closes the given program gracefully                                | [Help](Docs/close-program.md)       |
-| [close-netflix.ps1](Scripts/close-netflix.ps1)       | Closes the Netflix application gracefully                          | [Help](Docs/close-netflix.md)       |
-| [close-onedrive.ps1](Scripts/close-onedrive.ps1)     | Closes Microsoft OneDrive gracefully                               | [Help](Docs/close-onedrive.md)      |
-| [close-system-settings.ps1](Scripts/close-system-settings.ps1) | Closes the System Settings gracefully                    | [Help](Docs/close-system-settings.md)|
-| [close-thunderbird.ps1](Scripts/close-thunderbird.ps1) | Closes Mozilla Thunderbird gracefully                            | [Help](Docs/close-thunderbird.md)   |
+| [close-netflix.ps1](Scripts/close-netflix.ps1)       | Closes the Netflix application                                     | [Help](Docs/close-netflix.md)       |
+| [close-onedrive.ps1](Scripts/close-onedrive.ps1)     | Closes Microsoft OneDrive                                          | [Help](Docs/close-onedrive.md)      |
+| [close-system-settings.ps1](Scripts/close-system-settings.ps1) | Closes the System Settings window                        | [Help](Docs/close-system-settings.md)|
+| [close-thunderbird.ps1](Scripts/close-thunderbird.ps1) | Closes Mozilla Thunderbird                                       | [Help](Docs/close-thunderbird.md)   |
 | [close-vlc.ps1](Scripts/close-vlc.ps1)               | Closes the VLC media player application                            | [Help](Docs/close-vlc.md)           |
 | [close-windows-terminal.ps1](Scripts/close-windows-terminal.ps1) | Closes the Windows Terminal application                | [Help](Docs/close-windows-terminal.md)|
 | [enable-god-mode.ps1](Scripts/enable-god-mode.ps1)   | Enables the god mode (adds a new icon to the desktop)              | [Help](Docs/enable-god-mode.md)     |
