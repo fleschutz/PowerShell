@@ -3,8 +3,10 @@
 	Lists all commits in a Git repository
 .DESCRIPTION
 	list-commits.ps1 [<RepoDir>] [<Format>]
-	<RepoDir> is the path to the Git repository
-	<Format> is either: list|compact|normal|JSON
+.PARAMETER RepoDir
+	Specifies the path to the Git repository.
+.PARAMETER Format
+	Specifies the output format: list|compact|normal|JSON
 .EXAMPLE
 	PS> ./list-commits
 
