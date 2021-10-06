@@ -1,7 +1,4 @@
-# PowerShell Script: list-modules.ps1
-```powershell
-Lists all PowerShell modules
-```
+# list-modules.ps1 - Lists all PowerShell modules
 
 list-modules.ps1
 

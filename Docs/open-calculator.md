@@ -1,7 +1,4 @@
-# PowerShell Script: open-calculator.ps1
-```powershell
-Starts the calculator application
-```
+# open-calculator.ps1 - Starts the calculator application
 
 open-calculator.ps1
 

@@ -1,7 +1,4 @@
-# PowerShell Script: list-drives.ps1
-```powershell
-Lists all local drives.
-```
+# list-drives.ps1 - Lists all local drives.
 
 list-drives.ps1
 

@@ -1,8 +1,5 @@
-# PowerShell Script: cd-recycle-bin.ps1
-```powershell
-cd-recycle-bin.ps1 
+# cd-recycle-bin.ps1 - cd-recycle-bin.ps1 
 
-```
 
 ```
 [<CommonParameters>]

@@ -1,7 +1,4 @@
-# PowerShell Script: alert.ps1
-```powershell
-Handle and escalate the given alert message
-```
+# alert.ps1 - Handle and escalate the given alert message
 
 alert.ps1 [<message>]
 

@@ -1,7 +1,4 @@
-# PowerShell Script: play-mission-impossible.ps1
-```powershell
-Plays the Mission Impossible theme
-```
+# play-mission-impossible.ps1 - Plays the Mission Impossible theme
 
 play-mission-impossible.ps1
 

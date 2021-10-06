@@ -1,7 +1,4 @@
-# PowerShell Script: display-time.ps1
-```powershell
-Displays the current time
-```
+# display-time.ps1 - Displays the current time
 
 Displays the current time (for 10 seconds by default)
 display-time.ps1 [<seconds>]

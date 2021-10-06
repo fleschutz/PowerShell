@@ -1,8 +1,5 @@
-# PowerShell Script: my-profile.ps1
-```powershell
-my-profile.ps1 
+# my-profile.ps1 - my-profile.ps1 
 
-```
 
 ```
 [<CommonParameters>]

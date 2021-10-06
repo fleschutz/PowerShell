@@ -1,7 +1,4 @@
-# PowerShell Script: check-xml-file.ps1
-```powershell
-Checks the given XML file for validity
-```
+# check-xml-file.ps1 - Checks the given XML file for validity
 
 check-xml-file [<file>]
 

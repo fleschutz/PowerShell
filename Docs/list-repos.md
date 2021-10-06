@@ -1,7 +1,4 @@
-# PowerShell Script: list-repos.ps1
-```powershell
-Lists the details of all Git repositories in a folder
-```
+# list-repos.ps1 - Lists the details of all Git repositories in a folder
 
 list-repos.ps1 [<ParentDir>]
 

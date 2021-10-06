@@ -1,7 +1,4 @@
-# PowerShell Script: write-blue.ps1
-```powershell
-Writes text in a blue foreground color
-```
+# write-blue.ps1 - Writes text in a blue foreground color
 
 write-blue.ps1 [<text>]
 

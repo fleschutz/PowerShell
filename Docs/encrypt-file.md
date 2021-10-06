@@ -1,7 +1,4 @@
-# PowerShell Script: encrypt-file.ps1
-```powershell
-Encrypts a file
-```
+# encrypt-file.ps1 - Encrypts a file
 
 encrypt-file.ps1 [<Path>] [<Password>]
 

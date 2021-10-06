@@ -1,7 +1,4 @@
-# PowerShell Script: get-md5.ps1
-```powershell
-
-```
+# get-md5.ps1 - 
 
 ```
 [<CommonParameters>]

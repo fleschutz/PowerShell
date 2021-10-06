@@ -1,7 +1,4 @@
-# PowerShell Script: weather.ps1
-```powershell
-Lists the current weather forecast
-```
+# weather.ps1 - Lists the current weather forecast
 
 weather.ps1 [<GeoLocation>]
 

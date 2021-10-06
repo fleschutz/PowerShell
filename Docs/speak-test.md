@@ -1,8 +1,5 @@
-# PowerShell Script: speak-test.ps1
-```powershell
-speak-test.ps1 
+# speak-test.ps1 - speak-test.ps1 
 
-```
 
 ```
 [<CommonParameters>]

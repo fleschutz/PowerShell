@@ -1,7 +1,4 @@
-# PowerShell Script: speak-date.ps1
-```powershell
-Speaks the current date by text-to-speech (TTS)
-```
+# speak-date.ps1 - Speaks the current date by text-to-speech (TTS)
 
 speak-date.ps1
 

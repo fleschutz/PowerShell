@@ -1,7 +1,4 @@
-# PowerShell Script: decrypt-file.ps1
-```powershell
-Decrypts the given file
-```
+# decrypt-file.ps1 - Decrypts the given file
 
 decrypt-file.ps1 [<path>] [<password>]
 

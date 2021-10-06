@@ -1,7 +1,4 @@
-# PowerShell Script: list-services.ps1
-```powershell
-Lists the local computer services
-```
+# list-services.ps1 - Lists the local computer services
 
 list-services.ps1
 

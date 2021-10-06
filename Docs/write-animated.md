@@ -1,7 +1,4 @@
-# PowerShell Script: write-animated.ps1
-```powershell
-Writes animated text
-```
+# write-animated.ps1 - Writes animated text
 
 write-animated.ps1 [<line1>] .. [line9>] [<speed>]
 

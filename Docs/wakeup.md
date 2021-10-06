@@ -1,7 +1,4 @@
-# PowerShell Script: wakeup.ps1
-```powershell
-Sends a magic packet to a computer to wake him up
-```
+# wakeup.ps1 - Sends a magic packet to a computer to wake him up
 
 Sends a magic packet to a computer to wake him up (requires Wake-On-LAN)
 wakeup.ps1 [<MAC-address>] [<IP-address>]

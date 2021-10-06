@@ -1,7 +1,4 @@
-# PowerShell Script: translate-file.ps1
-```powershell
-Translates a text file into another language
-```
+# translate-file.ps1 - Translates a text file into another language
 
 translate-file.ps1 [<file>] [<source-lang>] [<target-lang>]
 

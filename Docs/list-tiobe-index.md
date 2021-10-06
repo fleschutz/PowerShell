@@ -1,8 +1,5 @@
-# PowerShell Script: list-tiobe-index.ps1
-```powershell
-list-tiobe-index.ps1 
+# list-tiobe-index.ps1 - list-tiobe-index.ps1 
 
-```
 
 ```
 [<CommonParameters>]

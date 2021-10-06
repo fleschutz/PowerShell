@@ -1,7 +1,4 @@
-# PowerShell Script: translate-files.ps1
-```powershell
-
-```
+# translate-files.ps1 - 
 
 ```
 [<CommonParameters>]

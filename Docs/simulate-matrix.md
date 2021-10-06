@@ -1,7 +1,4 @@
-# PowerShell Script: simulate-matrix.ps1
-```powershell
-Simulates the Matrix (fun)
-```
+# simulate-matrix.ps1 - Simulates the Matrix (fun)
 
 simulate-matrix.ps1
 

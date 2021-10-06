@@ -1,7 +1,4 @@
-# PowerShell Script: open-recycle-bin.ps1
-```powershell
-Starts the File Explorer with the recycle bin folder
-```
+# open-recycle-bin.ps1 - Starts the File Explorer with the recycle bin folder
 
 open-recycle-bin.ps1
 

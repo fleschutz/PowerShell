@@ -1,7 +1,4 @@
-# PowerShell Script: install-ssh-client.ps1
-```powershell
-Installs the SSH client (needs admin rights)
-```
+# install-ssh-client.ps1 - Installs the SSH client (needs admin rights)
 
 install-ssh-client.ps1
 

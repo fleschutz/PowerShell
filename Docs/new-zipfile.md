@@ -1,7 +1,4 @@
-# PowerShell Script: new-zipfile.ps1
-```powershell
-Creates a new .ZIP file from a folder (including subfolders)
-```
+# new-zipfile.ps1 - Creates a new .ZIP file from a folder (including subfolders)
 
 new-zipfile.ps1 [<folder>]
 

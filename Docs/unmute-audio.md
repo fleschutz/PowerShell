@@ -1,7 +1,4 @@
-# PowerShell Script: unmute-audio.ps1
-```powershell
-Unmutes the audio output
-```
+# unmute-audio.ps1 - Unmutes the audio output
 
 unmute-audio.ps1
 

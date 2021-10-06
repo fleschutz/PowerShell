@@ -1,7 +1,4 @@
-# PowerShell Script: weather-report.ps1
-```powershell
-Lists the local weather report
-```
+# weather-report.ps1 - Lists the local weather report
 
 weather-report.ps1 [<GeoLocation>]
 

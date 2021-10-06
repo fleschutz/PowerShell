@@ -1,8 +1,5 @@
-# PowerShell Script: list-scripts.ps1
-```powershell
-list-scripts.ps1 
+# list-scripts.ps1 - list-scripts.ps1 
 
-```
 
 ```
 [<CommonParameters>]

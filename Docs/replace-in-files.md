@@ -1,7 +1,4 @@
-# PowerShell Script: replace-in-files.ps1
-```powershell
-Search and replace a pattern in the given files by the replacement
-```
+# replace-in-files.ps1 - Search and replace a pattern in the given files by the replacement
 
 replace-in-files.ps1 [<pattern>] [<replacement>] [<files>]
 

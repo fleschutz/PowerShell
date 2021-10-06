@@ -1,7 +1,4 @@
-# PowerShell Script: list-branches.ps1
-```powershell
-Lists all branches in a Git repository
-```
+# list-branches.ps1 - Lists all branches in a Git repository
 
 list-branches.ps1 [<RepoDir>] [<SearchPattern>]
 <RepoDir> is the current working directory by default

@@ -1,7 +1,4 @@
-# PowerShell Script: get-sha1.ps1
-```powershell
-
-```
+# get-sha1.ps1 - 
 
 ```
 [<CommonParameters>]

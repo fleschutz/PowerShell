@@ -1,7 +1,4 @@
-# PowerShell Script: convert-ps2bat.ps1
-```powershell
-Converts a PowerShell script to .bat files
-```
+# convert-ps2bat.ps1 - Converts a PowerShell script to .bat files
 
 convert-ps2bat.ps1 [<pattern>]
 

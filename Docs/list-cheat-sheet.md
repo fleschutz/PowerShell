@@ -1,7 +1,4 @@
-# PowerShell Script: list-cheat-sheet.ps1
-```powershell
-Lists the PowerShell cheat sheet
-```
+# list-cheat-sheet.ps1 - Lists the PowerShell cheat sheet
 
 list-cheat-sheet.ps1
 

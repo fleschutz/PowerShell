@@ -1,7 +1,4 @@
-# PowerShell Script: list-tasks.ps1
-```powershell
-Lists all Windows scheduler tasks
-```
+# list-tasks.ps1 - Lists all Windows scheduler tasks
 
 list-tasks.ps1
 

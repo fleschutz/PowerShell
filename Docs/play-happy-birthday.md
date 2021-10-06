@@ -1,7 +1,4 @@
-# PowerShell Script: play-happy-birthday.ps1
-```powershell
-Plays the Happy Birthday song
-```
+# play-happy-birthday.ps1 - Plays the Happy Birthday song
 
 play-happy-birthday.ps1
 

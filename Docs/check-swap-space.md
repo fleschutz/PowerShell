@@ -1,7 +1,4 @@
-# PowerShell Script: check-swap-space.ps1
-```powershell
-Checks the free swap space
-```
+# check-swap-space.ps1 - Checks the free swap space
 
 check-swap-space.ps1 [<min-level>]
 

@@ -1,7 +1,4 @@
-# PowerShell Script: write-motd.ps1
-```powershell
-Writes the message of the day (MOTD)
-```
+# write-motd.ps1 - Writes the message of the day (MOTD)
 
 write-motd.ps1
 

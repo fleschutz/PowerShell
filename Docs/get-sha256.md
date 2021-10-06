@@ -1,7 +1,4 @@
-# PowerShell Script: get-sha256.ps1
-```powershell
-
-```
+# get-sha256.ps1 - 
 
 ```
 [<CommonParameters>]

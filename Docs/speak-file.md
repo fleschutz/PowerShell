@@ -1,7 +1,4 @@
-# PowerShell Script: speak-file.ps1
-```powershell
-Speaks the content of the given text file by text-to-speech (TTS)
-```
+# speak-file.ps1 - Speaks the content of the given text file by text-to-speech (TTS)
 
 speak-file.ps1 [<file>]
 

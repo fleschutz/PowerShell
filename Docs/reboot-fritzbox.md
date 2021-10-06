@@ -1,7 +1,4 @@
-# PowerShell Script: reboot-fritzbox.ps1
-```powershell
-Reboots the FRITZ!Box device
-```
+# reboot-fritzbox.ps1 - Reboots the FRITZ!Box device
 
 reboot-fritzbox.ps1 [<Username>] [<Password>]
 

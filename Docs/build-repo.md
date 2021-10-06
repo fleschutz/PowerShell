@@ -1,7 +1,4 @@
-# PowerShell Script: build-repo.ps1
-```powershell
-Builds a Git repository
-```
+# build-repo.ps1 - Builds a Git repository
 
 Supports building with cmake, configure, autogen, Imakefile and Makefile.
 

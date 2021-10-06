@@ -1,7 +1,4 @@
-# PowerShell Script: hibernate.ps1
-```powershell
-Enables hibernate mode for the local computer (needs admin rights)
-```
+# hibernate.ps1 - Enables hibernate mode for the local computer (needs admin rights)
 
 hibernate.ps1
 

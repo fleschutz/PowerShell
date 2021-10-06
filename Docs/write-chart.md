@@ -1,8 +1,5 @@
-# PowerShell Script: write-chart.ps1
-```powershell
-write-chart.ps1 
+# write-chart.ps1 - write-chart.ps1 
 
-```
 
 ```
 [<CommonParameters>]

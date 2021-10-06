@@ -1,7 +1,4 @@
-# PowerShell Script: new-symlink.ps1
-```powershell
-
-```
+# new-symlink.ps1 - 
 
 ```
 [<CommonParameters>]

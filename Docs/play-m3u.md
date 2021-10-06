@@ -1,7 +1,4 @@
-# PowerShell Script: play-m3u.ps1
-```powershell
-Plays the given playlist (in .M3U file format)
-```
+# play-m3u.ps1 - Plays the given playlist (in .M3U file format)
 
 play-m3u.ps1 [<filename>]
 

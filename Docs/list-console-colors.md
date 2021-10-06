@@ -1,7 +1,4 @@
-# PowerShell Script: list-console-colors.ps1
-```powershell
-Lists all console colors
-```
+# list-console-colors.ps1 - Lists all console colors
 
 list-console-colors.ps1
 

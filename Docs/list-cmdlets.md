@@ -1,7 +1,4 @@
-# PowerShell Script: list-cmdlets.ps1
-```powershell
-Lists all PowerShell cmdlets
-```
+# list-cmdlets.ps1 - Lists all PowerShell cmdlets
 
 list-cmdlets.ps1
 

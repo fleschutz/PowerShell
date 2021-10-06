@@ -1,7 +1,4 @@
-# PowerShell Script: remove-print-jobs.ps1
-```powershell
-Removes all jobs from all printers
-```
+# remove-print-jobs.ps1 - Removes all jobs from all printers
 
 remove-print-jobs.ps1
 

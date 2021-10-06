@@ -1,7 +1,4 @@
-# PowerShell Script: list-tags.ps1
-```powershell
-Lists all tags in a Git repository
-```
+# list-tags.ps1 - Lists all tags in a Git repository
 
 list-tags.ps1 [<RepoDir>] [<SearchPattern>]
 <RepoDir> is the path to the Git repository

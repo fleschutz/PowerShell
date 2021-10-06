@@ -1,7 +1,4 @@
-# PowerShell Script: take-screenshot.ps1
-```powershell
-Takes a single screenshot and saves it into a folder
-```
+# take-screenshot.ps1 - Takes a single screenshot and saves it into a folder
 
 take-screenshot.ps1 [<directory>]
 

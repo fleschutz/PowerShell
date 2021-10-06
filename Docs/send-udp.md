@@ -1,7 +1,4 @@
-# PowerShell Script: send-udp.ps1
-```powershell
-
-```
+# send-udp.ps1 - 
 
 ```
 [<CommonParameters>]

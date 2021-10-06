@@ -1,7 +1,4 @@
-# PowerShell Script: send-email.ps1
-```powershell
-Sends an email message
-```
+# send-email.ps1 - Sends an email message
 
 send-email.ps1
 

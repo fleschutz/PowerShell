@@ -1,7 +1,4 @@
-# PowerShell Script: check-subnet-mask.ps1
-```powershell
-Checks the given subnet mask for validity
-```
+# check-subnet-mask.ps1 - Checks the given subnet mask for validity
 
 check-subnet-mask.ps1 [<address>]
 

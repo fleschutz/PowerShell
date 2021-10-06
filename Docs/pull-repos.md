@@ -1,7 +1,4 @@
-# PowerShell Script: pull-repos.ps1
-```powershell
-Pulls updates for all Git repositories in a folder (including submodules)
-```
+# pull-repos.ps1 - Pulls updates for all Git repositories in a folder (including submodules)
 
 pull-repos.ps1 [<ParentDir>]
 

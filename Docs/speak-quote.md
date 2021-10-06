@@ -1,7 +1,4 @@
-# PowerShell Script: speak-quote.ps1
-```powershell
-Speaks a random quote by text-to-speech (TTS)
-```
+# speak-quote.ps1 - Speaks a random quote by text-to-speech (TTS)
 
 speak-quote.ps1
 

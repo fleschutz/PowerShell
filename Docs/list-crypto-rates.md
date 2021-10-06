@@ -1,8 +1,5 @@
-# PowerShell Script: list-crypto-rates.ps1
-```powershell
-list-crypto-rates.ps1 
+# list-crypto-rates.ps1 - list-crypto-rates.ps1 
 
-```
 
 ```
 [<CommonParameters>]

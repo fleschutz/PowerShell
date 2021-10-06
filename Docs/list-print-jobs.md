@@ -1,7 +1,4 @@
-# PowerShell Script: list-print-jobs.ps1
-```powershell
-Lists all jobs of all printers
-```
+# list-print-jobs.ps1 - Lists all jobs of all printers
 
 list-print-jobs.ps1
 

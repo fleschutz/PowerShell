@@ -1,7 +1,4 @@
-# PowerShell Script: close-system-settings.ps1
-```powershell
-Closes the System Settings window
-```
+# close-system-settings.ps1 - Closes the System Settings window
 
 close-system-settings.ps1
 

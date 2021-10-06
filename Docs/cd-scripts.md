@@ -1,7 +1,4 @@
-# PowerShell Script: cd-scripts.ps1
-```powershell
-Change the working directory to the PowerShell scripts folder
-```
+# cd-scripts.ps1 - Change the working directory to the PowerShell scripts folder
 
 cd-scripts.ps1
 

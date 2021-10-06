@@ -1,7 +1,4 @@
-# PowerShell Script: open-file-explorer.ps1
-```powershell
-Starts the File Explorer
-```
+# open-file-explorer.ps1 - Starts the File Explorer
 
 open-file-explorer.ps1
 

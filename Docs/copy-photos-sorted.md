@@ -1,7 +1,4 @@
-# PowerShell Script: copy-photos-sorted.ps1
-```powershell
-Copy image files sorted by year and month
-```
+# copy-photos-sorted.ps1 - Copy image files sorted by year and month
 
 Copy image files from SourceDir to TargetDir sorted by year and month
 copy-photos-sorted.ps1 [<SourceDir>] [<TargetDir>]

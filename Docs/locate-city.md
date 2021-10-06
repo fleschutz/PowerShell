@@ -1,7 +1,4 @@
-# PowerShell Script: locate-city.ps1
-```powershell
-Prints the geographic location of the given city
-```
+# locate-city.ps1 - Prints the geographic location of the given city
 
 locate-city.ps1 [<City>]
 

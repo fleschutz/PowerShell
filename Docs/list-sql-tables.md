@@ -1,7 +1,4 @@
-# PowerShell Script: list-sql-tables.ps1
-```powershell
-Lists all tables of a SQL server database
-```
+# list-sql-tables.ps1 - Lists all tables of a SQL server database
 
 Lists all tables in a SQL server database and exports the list as CSV
 

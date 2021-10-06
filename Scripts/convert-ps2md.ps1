@@ -3,6 +3,8 @@
 	Converts the comment-based help of a PowerShell script to Markdown
 .DESCRIPTION
 	convert-ps2md.ps1 [<filename>]
+.PARAMETER filename
+	Specifies the path to the PowerShell script
 .EXAMPLE
 	PS> ./convert-ps2md myscript.ps1
 .NOTES
@@ -56,11 +58,7 @@ try {
 
 	$full = Get-Help $filename -Full 
 
-	"# PowerShell Script: $ScriptName"
-
-	"``````powershell"
-	"$($full.Synopsis)"
-	"``````"
+	"# $ScriptName - $($full.Synopsis)"
 
 	$Description = ($full.description | Out-String).Trim()
 	if ($Description -ne "") {

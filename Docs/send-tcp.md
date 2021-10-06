@@ -1,7 +1,4 @@
-# PowerShell Script: send-tcp.ps1
-```powershell
-Sends a TCP message to the given IP address and port
-```
+# send-tcp.ps1 - Sends a TCP message to the given IP address and port
 
 send-tcp.ps1 [<TargetIP>] [<TargetPort>] [<Message>]
 

@@ -1,8 +1,5 @@
-# PowerShell Script: list-automatic-variables.ps1
-```powershell
-list-automatic-variables.ps1 
+# list-automatic-variables.ps1 - list-automatic-variables.ps1 
 
-```
 
 ```
 [<CommonParameters>]

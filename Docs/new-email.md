@@ -1,7 +1,4 @@
-# PowerShell Script: new-email.ps1
-```powershell
-Opens the default email client to write a new email
-```
+# new-email.ps1 - Opens the default email client to write a new email
 
 new-email.ps1 [<address>]
 

@@ -1,7 +1,4 @@
-# PowerShell Script: list-workdir.ps1
-```powershell
-Lists the current working directory
-```
+# list-workdir.ps1 - Lists the current working directory
 
 list-workdir.ps1
 

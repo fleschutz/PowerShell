@@ -1,7 +1,4 @@
-# PowerShell Script: cd-up2.ps1
-```powershell
-Change the working directory to two directory levels up
-```
+# cd-up2.ps1 - Change the working directory to two directory levels up
 
 cd-up2.ps1
 

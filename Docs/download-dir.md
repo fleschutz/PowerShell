@@ -1,7 +1,4 @@
-# PowerShell Script: download-dir.ps1
-```powershell
-Downloads a folder (including subfolders) from the given URL
-```
+# download-dir.ps1 - Downloads a folder (including subfolders) from the given URL
 
 download-dir.ps1 [<URL>]
 

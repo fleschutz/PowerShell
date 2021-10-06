@@ -1,7 +1,4 @@
-# PowerShell Script: set-wallpaper.ps1
-```powershell
-
-```
+# set-wallpaper.ps1 - 
 
 ```
 [<CommonParameters>]

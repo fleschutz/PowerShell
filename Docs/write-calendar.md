@@ -1,7 +1,4 @@
-# PowerShell Script: write-calendar.ps1
-```powershell
-Writes out calendar elements, either a single month or an entire year
-```
+# write-calendar.ps1 - Writes out calendar elements, either a single month or an entire year
 
 write-calendar.ps1 [<Month>] [<Year>]
 

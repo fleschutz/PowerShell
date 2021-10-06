@@ -1,7 +1,4 @@
-# PowerShell Script: cd-docs.ps1
-```powershell
-Change the working directory to the user's documents folder
-```
+# cd-docs.ps1 - Change the working directory to the user's documents folder
 
 cd-docs.ps1
 

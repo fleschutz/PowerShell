@@ -1,7 +1,4 @@
-# PowerShell Script: list-memos.ps1
-```powershell
-Lists all memos in $HOME/Memos.csv
-```
+# list-memos.ps1 - Lists all memos in $HOME/Memos.csv
 
 list-memos.ps1
 

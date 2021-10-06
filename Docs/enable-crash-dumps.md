@@ -1,7 +1,4 @@
-# PowerShell Script: enable-crash-dumps.ps1
-```powershell
-Enables the writing of crash dumps
-```
+# enable-crash-dumps.ps1 - Enables the writing of crash dumps
 
 enable-crash-dumps.ps1
 

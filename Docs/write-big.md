@@ -1,7 +1,4 @@
-# PowerShell Script: write-big.ps1
-```powershell
-Writes the given text in big letters
-```
+# write-big.ps1 - Writes the given text in big letters
 
 write-big.ps1 [<text>]
 

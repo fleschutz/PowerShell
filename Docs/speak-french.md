@@ -1,7 +1,4 @@
-# PowerShell Script: speak-french.ps1
-```powershell
-Speaks the given text with a French text-to-speech (TTS) voice
-```
+# speak-french.ps1 - Speaks the given text with a French text-to-speech (TTS) voice
 
 speak-french.ps1 [<text>]
 

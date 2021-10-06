@@ -1,8 +1,5 @@
-# PowerShell Script: list-countries.ps1
-```powershell
-list-countries.ps1 
+# list-countries.ps1 - list-countries.ps1 
 
-```
 
 ```
 [<CommonParameters>]

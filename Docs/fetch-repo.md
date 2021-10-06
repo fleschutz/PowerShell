@@ -1,7 +1,4 @@
-# PowerShell Script: fetch-repo.ps1
-```powershell
-Fetches updates for a local Git repository (including submodules)
-```
+# fetch-repo.ps1 - Fetches updates for a local Git repository (including submodules)
 
 fetch-repo.ps1 [<RepoDir>]
 

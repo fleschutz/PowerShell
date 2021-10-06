@@ -1,7 +1,4 @@
-# PowerShell Script: list-pins.ps1
-```powershell
-Prints a list of random PIN's
-```
+# list-pins.ps1 - Prints a list of random PIN's
 
 list-pins.ps1 [<PinLength>] [<Columns>] [<Rows>]
 

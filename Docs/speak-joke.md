@@ -1,7 +1,4 @@
-# PowerShell Script: speak-joke.ps1
-```powershell
-Speaks a random Chuck Norris joke by text-to-speech (TTS)
-```
+# speak-joke.ps1 - Speaks a random Chuck Norris joke by text-to-speech (TTS)
 
 speak-joke.ps1
 

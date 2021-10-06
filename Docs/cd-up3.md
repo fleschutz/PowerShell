@@ -1,7 +1,4 @@
-# PowerShell Script: cd-up3.ps1
-```powershell
-Change the working directory to three directory levels up
-```
+# cd-up3.ps1 - Change the working directory to three directory levels up
 
 cd-up3.ps1
 
