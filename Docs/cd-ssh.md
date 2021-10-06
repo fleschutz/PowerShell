@@ -1,4 +1,4 @@
-# cd-ssh.ps1 - Change the working directory to the user's SSH folder
+## cd-ssh.ps1 - Change the working directory to the user's SSH folder
 
 cd-ssh.ps1
 

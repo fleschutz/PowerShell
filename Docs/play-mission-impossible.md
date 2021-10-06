@@ -1,4 +1,4 @@
-# play-mission-impossible.ps1 - Plays the Mission Impossible theme
+## play-mission-impossible.ps1 - Plays the Mission Impossible theme
 
 play-mission-impossible.ps1
 

@@ -1,4 +1,4 @@
-# close-netflix.ps1 - Closes the Netflix application
+## close-netflix.ps1 - Closes the Netflix application
 
 close-netflix.ps1
 

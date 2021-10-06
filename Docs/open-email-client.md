@@ -1,4 +1,4 @@
-# open-email-client.ps1 - Starts the default email client
+## open-email-client.ps1 - Starts the default email client
 
 open-email-client.ps1
 

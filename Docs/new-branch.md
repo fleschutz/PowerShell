@@ -1,4 +1,4 @@
-# new-branch.ps1 - Creates and switches to a new branch in a Git repository
+## new-branch.ps1 - Creates and switches to a new branch in a Git repository
 
 new-branch.ps1 [<BranchName>] [<RepoDir>]
 

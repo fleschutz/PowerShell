@@ -1,4 +1,4 @@
-# list-emojis.ps1 - Lists the Emojis of Unicode 13.0
+## list-emojis.ps1 - Lists the Emojis of Unicode 13.0
 
 list-emojis.ps1
 

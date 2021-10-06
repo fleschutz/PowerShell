@@ -1,4 +1,4 @@
-# close-system-settings.ps1 - Closes the System Settings window
+## close-system-settings.ps1 - Closes the System Settings window
 
 close-system-settings.ps1
 

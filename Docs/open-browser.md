@@ -1,4 +1,4 @@
-# open-browser.ps1 - Opens the default Web browser
+## open-browser.ps1 - Opens the default Web browser
 
 Opens the default Web browser, optional with given URL
 open-browser.ps1 [<URL>]

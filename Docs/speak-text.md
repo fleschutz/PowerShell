@@ -1,4 +1,4 @@
-# speak-text.ps1 - Speaks the given text by the default text-to-speech (TTS) voice
+## speak-text.ps1 - Speaks the given text by the default text-to-speech (TTS) voice
 
 speak-text.ps1 [<text>]
 

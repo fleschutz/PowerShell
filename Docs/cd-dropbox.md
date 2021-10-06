@@ -1,4 +1,4 @@
-# cd-dropbox.ps1 - Change the working directory to the user's Dropbox folder
+## cd-dropbox.ps1 - Change the working directory to the user's Dropbox folder
 
 cd-dropbox.ps1
 

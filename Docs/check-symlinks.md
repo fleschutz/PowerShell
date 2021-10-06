@@ -1,4 +1,4 @@
-# check-symlinks.ps1 - Checks every symlink in a folder (including subfolders)
+## check-symlinks.ps1 - Checks every symlink in a folder (including subfolders)
 
 check-symlinks.ps1 [<folder>]
 Returns the number of broken symlinks as exit value.

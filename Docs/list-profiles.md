@@ -1,4 +1,4 @@
-# list-profiles.ps1 - list-profiles.ps1 
+## list-profiles.ps1 - list-profiles.ps1 
 
 
 ## Parameters

@@ -1,4 +1,4 @@
-# publish-to-ipfs.ps1 - Publishes the given files & folders to IPFS
+## publish-to-ipfs.ps1 - Publishes the given files & folders to IPFS
 
 publish-to-ipfs.ps1 [<FilePattern>] [<HashList>]
 

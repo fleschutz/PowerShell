@@ -1,4 +1,4 @@
-# list-automatic-variables.ps1 - list-automatic-variables.ps1 
+## list-automatic-variables.ps1 - list-automatic-variables.ps1 
 
 
 ## Parameters

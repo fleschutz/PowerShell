@@ -1,4 +1,4 @@
-# check-ipv4-address.ps1 - Checks the given IPv4 address for validity
+## check-ipv4-address.ps1 - Checks the given IPv4 address for validity
 
 check-ipv4-address.ps1 [<Address>]
 

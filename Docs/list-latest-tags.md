@@ -1,4 +1,4 @@
-# list-latest-tags.ps1 - Lists the latests tags in all Git repositories in a folder
+## list-latest-tags.ps1 - Lists the latests tags in all Git repositories in a folder
 
 list-latest-tags.ps1 [<ParentDir>]
 

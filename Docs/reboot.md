@@ -1,4 +1,4 @@
-# reboot.ps1 - Reboots the local computer (needs admin rights)
+## reboot.ps1 - Reboots the local computer (needs admin rights)
 
 reboot.ps1
 

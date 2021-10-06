@@ -1,4 +1,4 @@
-# hibernate.ps1 - Enables hibernate mode for the local computer (needs admin rights)
+## hibernate.ps1 - Enables hibernate mode for the local computer (needs admin rights)
 
 hibernate.ps1
 

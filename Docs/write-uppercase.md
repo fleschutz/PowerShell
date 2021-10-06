@@ -1,4 +1,4 @@
-# write-uppercase.ps1 - Writes text in uppercase letters
+## write-uppercase.ps1 - Writes text in uppercase letters
 
 write-uppercase.ps1 [<text>]
 

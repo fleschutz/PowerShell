@@ -1,4 +1,4 @@
-# cd-repos.ps1 - Change the working directory to the user's Git repositories folder
+## cd-repos.ps1 - Change the working directory to the user's Git repositories folder
 
 cd-repos.ps1
 

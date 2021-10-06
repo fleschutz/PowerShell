@@ -1,4 +1,4 @@
-# close-windows-terminal.ps1 - Closes the Windows Terminal application
+## close-windows-terminal.ps1 - Closes the Windows Terminal application
 
 close-windows-terminal.ps1
 

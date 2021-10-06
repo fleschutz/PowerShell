@@ -1,4 +1,4 @@
-# mute-audio.ps1 - Mutes the audio output
+## mute-audio.ps1 - Mutes the audio output
 
 mute-audio.ps1
 

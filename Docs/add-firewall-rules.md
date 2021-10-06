@@ -1,4 +1,4 @@
-# add-firewall-rules.ps1 - Adds firewall rules for the given executables (needs admin rights)
+## add-firewall-rules.ps1 - Adds firewall rules for the given executables (needs admin rights)
 
 add-firewall-rules.ps1 [<PathToExecutables>]
 

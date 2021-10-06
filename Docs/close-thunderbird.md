@@ -1,4 +1,4 @@
-# close-thunderbird.ps1 - Closes Mozilla's Thunderbird email client
+## close-thunderbird.ps1 - Closes Mozilla's Thunderbird email client
 
 close-thunderbird.ps1
 

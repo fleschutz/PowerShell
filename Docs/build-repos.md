@@ -1,4 +1,4 @@
-# build-repos.ps1 - Builds all Git repositories in a folder
+## build-repos.ps1 - Builds all Git repositories in a folder
 
 build-repos.ps1 [<ParentDir>]
 

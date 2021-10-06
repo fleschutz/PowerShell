@@ -1,4 +1,4 @@
-# upload-file.ps1 - Uploads a local file to a FTP server
+## upload-file.ps1 - Uploads a local file to a FTP server
 
 upload-file.ps1 [<File>] [<URL>] [<Username>] [<Password>]
 

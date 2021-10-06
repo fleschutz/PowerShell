@@ -1,4 +1,4 @@
-# write-green.ps1 - Writes text in a green foreground color
+## write-green.ps1 - Writes text in a green foreground color
 
 write-green.ps1 [<text>]
 

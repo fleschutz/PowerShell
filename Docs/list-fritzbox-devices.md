@@ -1,4 +1,4 @@
-# list-fritzbox-devices.ps1 - Lists FRITZ!Box's known devices
+## list-fritzbox-devices.ps1 - Lists FRITZ!Box's known devices
 
 list-fritzbox-devices.ps1 [<Username>] [<Password>]
 

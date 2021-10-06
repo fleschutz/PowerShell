@@ -1,4 +1,4 @@
-# open-onedrive.ps1 - Opens the user's OneDrive folder
+## open-onedrive.ps1 - Opens the user's OneDrive folder
 
 open-onedrive.ps1
 

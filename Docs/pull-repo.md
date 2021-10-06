@@ -1,4 +1,4 @@
-# pull-repo.ps1 - Pulls updates for a local Git repository (including submodules)
+## pull-repo.ps1 - Pulls updates for a local Git repository (including submodules)
 
 pull-repo.ps1 [<repo-dir>]
 

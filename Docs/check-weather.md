@@ -1,4 +1,4 @@
-# check-weather.ps1 - Checks the weather for critical values
+## check-weather.ps1 - Checks the weather for critical values
 
 check-weather.ps1 [<location>]
 

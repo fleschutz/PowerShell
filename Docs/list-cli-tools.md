@@ -1,4 +1,4 @@
-# list-cli-tools.ps1 - list-cli-tools.ps1 
+## list-cli-tools.ps1 - list-cli-tools.ps1 
 
 
 ## Parameters

@@ -1,4 +1,4 @@
-# locate-ipaddress.ps1 - Prints the geographic location of the given IP address
+## locate-ipaddress.ps1 - Prints the geographic location of the given IP address
 
 locate-ipaddress.ps1 [<IPaddress>]
 

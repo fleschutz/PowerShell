@@ -1,4 +1,4 @@
-# pick-commit.ps1 - Cherry-picks a Git commit into one or more branches
+## pick-commit.ps1 - Cherry-picks a Git commit into one or more branches
 
 pick-commit.ps1 [<CommitID>] [<CommitMessage>] [<Branches>] [<RepoDir>]
 Cherry-picks a Git commit into one or more branches (branch names need to be separated by spaces)

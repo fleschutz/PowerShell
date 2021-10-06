@@ -1,4 +1,4 @@
-# list-dir.ps1 - Lists the directory content formatted in columns
+## list-dir.ps1 - Lists the directory content formatted in columns
 
 list-dir.ps1 [<SearchPattern>]
 <SearchPattern> is "*" (anything) by default

@@ -1,4 +1,4 @@
-# close-firefox.ps1 - Closes Mozilla's Firefox Web browser
+## close-firefox.ps1 - Closes Mozilla's Firefox Web browser
 
 close-firefox.ps1
 

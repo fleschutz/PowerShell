@@ -1,4 +1,4 @@
-# upgrade-ubuntu.ps1 - Upgrades Ubuntu Linux to the latest (LTS) release
+## upgrade-ubuntu.ps1 - Upgrades Ubuntu Linux to the latest (LTS) release
 
 upgrade-ubuntu.ps1
 

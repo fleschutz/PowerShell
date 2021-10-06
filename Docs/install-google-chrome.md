@@ -1,4 +1,4 @@
-# install-google-chrome.ps1 - Installs the latest Google Chrome browser
+## install-google-chrome.ps1 - Installs the latest Google Chrome browser
 
 install-google-chrome.ps1
 

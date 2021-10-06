@@ -1,4 +1,4 @@
-# close-calculator.ps1 - Closes the calculator program gracefully
+## close-calculator.ps1 - Closes the calculator program gracefully
 
 close-calculator.ps1
 

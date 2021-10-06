@@ -1,4 +1,4 @@
-# check-smart-devices.ps1 - Performs a selftest on your S.M.A.R.T. HDD/SSD devices.
+## check-smart-devices.ps1 - Performs a selftest on your S.M.A.R.T. HDD/SSD devices.
 
 check-smart-devices.ps1 [<type>]
 Type is either short(default) or long.

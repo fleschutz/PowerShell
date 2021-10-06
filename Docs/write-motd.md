@@ -1,4 +1,4 @@
-# write-motd.ps1 - Writes the message of the day (MOTD)
+## write-motd.ps1 - Writes the message of the day (MOTD)
 
 write-motd.ps1
 

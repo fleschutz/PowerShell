@@ -1,4 +1,4 @@
-# check-file-system.ps1 - Checks the file system of a drive (needs admin rights)
+## check-file-system.ps1 - Checks the file system of a drive (needs admin rights)
 
 check-file-system.ps1 [<drive>]
 

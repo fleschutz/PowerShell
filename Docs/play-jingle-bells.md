@@ -1,4 +1,4 @@
-# play-jingle-bells.ps1 - Plays Jingle Bells
+## play-jingle-bells.ps1 - Plays Jingle Bells
 
 play-jingle-bells.ps1
 

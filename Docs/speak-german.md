@@ -1,4 +1,4 @@
-# speak-german.ps1 - Speaks the given text with a German text-to-speech (TTS) voice
+## speak-german.ps1 - Speaks the given text with a German text-to-speech (TTS) voice
 
 speak-german.ps1 [<text>]
 

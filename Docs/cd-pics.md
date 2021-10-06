@@ -1,4 +1,4 @@
-# cd-pics.ps1 - Change the working directory to the user's pictures folder
+## cd-pics.ps1 - Change the working directory to the user's pictures folder
 
 cd-pics.ps1
 

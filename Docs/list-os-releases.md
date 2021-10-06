@@ -1,4 +1,4 @@
-# list-os-releases.ps1 - Lists OS releases and download URL
+## list-os-releases.ps1 - Lists OS releases and download URL
 
 list-os-releases.ps1
 

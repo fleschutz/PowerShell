@@ -1,4 +1,4 @@
-# write-red.ps1 - Writes text in a red foreground color
+## write-red.ps1 - Writes text in a red foreground color
 
 write-red.ps1 [<text>]
 

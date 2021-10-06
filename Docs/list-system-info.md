@@ -1,4 +1,4 @@
-# list-system-info.ps1 - Lists system information of the local computer
+## list-system-info.ps1 - Lists system information of the local computer
 
 list-system-info.ps1
 

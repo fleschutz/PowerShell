@@ -1,4 +1,4 @@
-# play-imperial-march.ps1 - Plays the Imperial March (Star Wars)
+## play-imperial-march.ps1 - Plays the Imperial March (Star Wars)
 
 play-imperial-march.ps1
 

@@ -1,4 +1,4 @@
-# list-user-groups.ps1 - Lists the user groups on the local computer
+## list-user-groups.ps1 - Lists the user groups on the local computer
 
 list-user-groups.ps1
 

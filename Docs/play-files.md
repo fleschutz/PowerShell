@@ -1,4 +1,4 @@
-# play-files.ps1 - Plays the given audio files (supporting MP3 and WAV format)
+## play-files.ps1 - Plays the given audio files (supporting MP3 and WAV format)
 
 play-files.ps1 [<FilePattern>]
 

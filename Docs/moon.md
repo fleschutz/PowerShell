@@ -1,4 +1,4 @@
-# moon.ps1 - Prints the current moon phase
+## moon.ps1 - Prints the current moon phase
 
 moon.ps1
 

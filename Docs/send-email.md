@@ -1,4 +1,4 @@
-# send-email.ps1 - Sends an email message
+## send-email.ps1 - Sends an email message
 
 send-email.ps1
 

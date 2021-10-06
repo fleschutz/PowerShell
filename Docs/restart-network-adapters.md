@@ -1,4 +1,4 @@
-# restart-network-adapters.ps1 - Restarts all local network adapters (needs admin rights)
+## restart-network-adapters.ps1 - Restarts all local network adapters (needs admin rights)
 
 restart-network-adapters.ps1
 

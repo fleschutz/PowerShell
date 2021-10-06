@@ -1,4 +1,4 @@
-# download-file.ps1 - Downloads a file from the given URL
+## download-file.ps1 - Downloads a file from the given URL
 
 download-file.ps1 [<URL>]
 

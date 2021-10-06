@@ -1,4 +1,4 @@
-# list-workdir.ps1 - Lists the current working directory
+## list-workdir.ps1 - Lists the current working directory
 
 list-workdir.ps1
 

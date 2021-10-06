@@ -1,4 +1,4 @@
-# write-rot13.ps1 - Writes text encoded or decoded with ROT13
+## write-rot13.ps1 - Writes text encoded or decoded with ROT13
 
 write-rot13.ps1 [<text>]
 

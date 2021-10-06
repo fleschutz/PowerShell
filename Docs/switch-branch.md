@@ -1,4 +1,4 @@
-# switch-branch.ps1 - Switches to another branch in a Git repository (including submodules)
+## switch-branch.ps1 - Switches to another branch in a Git repository (including submodules)
 
 switch-branch.ps1 [<BranchName>] [<RepoDir>]
 

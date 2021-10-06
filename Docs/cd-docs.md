@@ -1,4 +1,4 @@
-# cd-docs.ps1 - Change the working directory to the user's documents folder
+## cd-docs.ps1 - Change the working directory to the user's documents folder
 
 cd-docs.ps1
 

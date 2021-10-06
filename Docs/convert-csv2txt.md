@@ -1,4 +1,4 @@
-# convert-csv2txt.ps1 - Converts a .CSV file into a text file
+## convert-csv2txt.ps1 - Converts a .CSV file into a text file
 
 convert-csv2txt.ps1 [<csv-file>]
 

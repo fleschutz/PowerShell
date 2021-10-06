@@ -1,4 +1,4 @@
-# cd-videos.ps1 - Change the working directory to the user's videos folder
+## cd-videos.ps1 - Change the working directory to the user's videos folder
 
 cd-videos.ps1
 

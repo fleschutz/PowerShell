@@ -1,4 +1,4 @@
-# install-knot-resolver.ps1 - Installs Knot Resolver (needs admin rights)
+## install-knot-resolver.ps1 - Installs Knot Resolver (needs admin rights)
 
 Knot Resolver is a DNS resolver daemon.
 install-knot-resolver.ps1

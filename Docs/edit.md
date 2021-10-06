@@ -1,4 +1,4 @@
-# edit.ps1 - Opens the built-in text editor to edit the given file
+## edit.ps1 - Opens the built-in text editor to edit the given file
 
 edit.ps1 <filename>
 

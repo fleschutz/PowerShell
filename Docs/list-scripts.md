@@ -1,4 +1,4 @@
-# list-scripts.ps1 - list-scripts.ps1 
+## list-scripts.ps1 - list-scripts.ps1 
 
 
 ## Parameters

@@ -1,4 +1,4 @@
-# check-health.ps1 - Checks the health of the local computer
+## check-health.ps1 - Checks the health of the local computer
 
 check-health.ps1
 

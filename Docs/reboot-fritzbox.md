@@ -1,4 +1,4 @@
-# reboot-fritzbox.ps1 - Reboots the FRITZ!Box device
+## reboot-fritzbox.ps1 - Reboots the FRITZ!Box device
 
 reboot-fritzbox.ps1 [<Username>] [<Password>]
 

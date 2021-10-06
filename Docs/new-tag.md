@@ -1,4 +1,4 @@
-# new-tag.ps1 - Creates a new tag in a Git repository
+## new-tag.ps1 - Creates a new tag in a Git repository
 
 new-tag.ps1 [<TagName>] [<RepoDir>]
 

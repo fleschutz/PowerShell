@@ -1,4 +1,4 @@
-# write-morse-code.ps1 - Writes text in Morse code
+## write-morse-code.ps1 - Writes text in Morse code
 
 write-morse-code.ps1 [<text>] [<speed>]
 

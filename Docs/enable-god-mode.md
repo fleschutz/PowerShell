@@ -1,4 +1,4 @@
-# enable-god-mode.ps1 - Enables the god mode
+## enable-god-mode.ps1 - Enables the god mode
 
 Enables the god mode (adds a new icon to the desktop)
 enable-god-mode.ps1

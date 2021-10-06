@@ -1,4 +1,4 @@
-# list-services.ps1 - Lists the local computer services
+## list-services.ps1 - Lists the local computer services
 
 list-services.ps1
 

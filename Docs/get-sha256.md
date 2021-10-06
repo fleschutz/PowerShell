@@ -1,4 +1,4 @@
-# get-sha256.ps1 - 
+## get-sha256.ps1 - 
 
 ## Parameters
 ```powershell

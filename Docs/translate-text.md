@@ -1,4 +1,4 @@
-# translate-text.ps1 - Translates text into other languages
+## translate-text.ps1 - Translates text into other languages
 
 translate-text.ps1 [<Text>] [<SourceLang>] [<TargetLang>]
 

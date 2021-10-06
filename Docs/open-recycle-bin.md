@@ -1,4 +1,4 @@
-# open-recycle-bin.ps1 - Starts the File Explorer with the recycle bin folder
+## open-recycle-bin.ps1 - Starts the File Explorer with the recycle bin folder
 
 open-recycle-bin.ps1
 

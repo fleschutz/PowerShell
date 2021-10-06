@@ -1,4 +1,4 @@
-# close-onedrive.ps1 - Closes Microsoft's OneDrive folder
+## close-onedrive.ps1 - Closes Microsoft's OneDrive folder
 
 close-onedrive.ps1
 

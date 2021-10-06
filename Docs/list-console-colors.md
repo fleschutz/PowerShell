@@ -1,4 +1,4 @@
-# list-console-colors.ps1 - Lists all console colors
+## list-console-colors.ps1 - Lists all console colors
 
 list-console-colors.ps1
 

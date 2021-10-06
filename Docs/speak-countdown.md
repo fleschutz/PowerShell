@@ -1,4 +1,4 @@
-# speak-countdown.ps1 - Speaks a countdown by text-to-speech (TTS)
+## speak-countdown.ps1 - Speaks a countdown by text-to-speech (TTS)
 
 speak-countdown.ps1 [StartNumber]
 

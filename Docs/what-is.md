@@ -1,4 +1,4 @@
-# what-is.ps1 - Prints a description of the given abbreviation
+## what-is.ps1 - Prints a description of the given abbreviation
 
 what-is.ps1 [<abbreviation>]
 

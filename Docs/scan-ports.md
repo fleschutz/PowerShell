@@ -1,4 +1,4 @@
-# scan-ports.ps1 - Scans the network for open/closed ports
+## scan-ports.ps1 - Scans the network for open/closed ports
 
 scan-ports.ps1
 

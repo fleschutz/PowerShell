@@ -1,4 +1,4 @@
-# list-commits.ps1 - Lists all commits in a Git repository
+## list-commits.ps1 - Lists all commits in a Git repository
 
 list-commits.ps1 [<RepoDir>] [<Format>]
 

@@ -1,4 +1,4 @@
-# speak-spanish.ps1 - Speaks the given text with a Spanish text-to-speech (TTS) voice
+## speak-spanish.ps1 - Speaks the given text with a Spanish text-to-speech (TTS) voice
 
 speak-spanish.ps1 [<text>]
 

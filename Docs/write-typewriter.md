@@ -1,4 +1,4 @@
-# write-typewriter.ps1 - Writes text with the typewriter effect
+## write-typewriter.ps1 - Writes text with the typewriter effect
 
 write-typewriter.ps1 [<text>] [<speed>]
 

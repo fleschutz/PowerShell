@@ -1,4 +1,4 @@
-# list-empty-files.ps1 - Lists empty files within a directory tree
+## list-empty-files.ps1 - Lists empty files within a directory tree
 
 list-empty-files.ps1 [<DirTree>]
 <DirTree> is the path to the directory tree

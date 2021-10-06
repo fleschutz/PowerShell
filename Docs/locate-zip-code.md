@@ -1,4 +1,4 @@
-# locate-zip-code.ps1 - Prints the geographic location of the given zip-code
+## locate-zip-code.ps1 - Prints the geographic location of the given zip-code
 
 locate-zip-code.ps1 [<CountryCode>] [<ZipCode>]
 

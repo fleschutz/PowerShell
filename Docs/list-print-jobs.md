@@ -1,4 +1,4 @@
-# list-print-jobs.ps1 - Lists all jobs of all printers
+## list-print-jobs.ps1 - Lists all jobs of all printers
 
 list-print-jobs.ps1
 

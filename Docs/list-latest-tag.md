@@ -1,4 +1,4 @@
-# list-latest-tag.ps1 - Lists the latest tag on the current branch in a Git repository
+## list-latest-tag.ps1 - Lists the latest tag on the current branch in a Git repository
 
 list-latest-tag.ps1 [<RepoDir>] 
 <RepoDir> is the path to the repository

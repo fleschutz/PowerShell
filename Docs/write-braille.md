@@ -1,4 +1,4 @@
-# write-braille.ps1 - Writes text in Braille
+## write-braille.ps1 - Writes text in Braille
 
 write-braille.ps1 [<text>]
 

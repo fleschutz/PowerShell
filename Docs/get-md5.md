@@ -1,4 +1,4 @@
-# get-md5.ps1 - 
+## get-md5.ps1 - 
 
 ## Parameters
 ```powershell

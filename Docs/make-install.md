@@ -1,4 +1,4 @@
-# make-install.ps1 - Copies newer EXE's + DLL's from the build directory to the installation directory
+## make-install.ps1 - Copies newer EXE's + DLL's from the build directory to the installation directory
 
 make-install.ps1 <BuildDir>
 

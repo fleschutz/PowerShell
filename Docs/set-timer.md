@@ -1,4 +1,4 @@
-# set-timer.ps1 - Sets a timer for a countdown
+## set-timer.ps1 - Sets a timer for a countdown
 
 set-timer.ps1 [<seconds>]
 

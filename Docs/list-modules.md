@@ -1,4 +1,4 @@
-# list-modules.ps1 - Lists all PowerShell modules
+## list-modules.ps1 - Lists all PowerShell modules
 
 list-modules.ps1
 

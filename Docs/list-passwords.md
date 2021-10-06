@@ -1,4 +1,4 @@
-# list-passwords.ps1 - Prints a list of random passwords
+## list-passwords.ps1 - Prints a list of random passwords
 
 list-passwords.ps1 [<PasswordLength>] [<Columns>] [<Rows>]
 

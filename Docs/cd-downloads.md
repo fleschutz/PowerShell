@@ -1,4 +1,4 @@
-# cd-downloads.ps1 - Change the working directory to the user's downloads folder
+## cd-downloads.ps1 - Change the working directory to the user's downloads folder
 
 cd-downloads.ps1
 

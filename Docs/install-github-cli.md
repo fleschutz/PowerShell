@@ -1,4 +1,4 @@
-# install-github-cli.ps1 - Installs GitHub CLI
+## install-github-cli.ps1 - Installs GitHub CLI
 
 install-github-cli.ps1
 

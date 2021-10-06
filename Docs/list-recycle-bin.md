@@ -1,4 +1,4 @@
-# list-recycle-bin.ps1 - Lists the content of the recycle bin folder
+## list-recycle-bin.ps1 - Lists the content of the recycle bin folder
 
 list-recycle-bin.ps1
 

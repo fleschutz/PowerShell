@@ -1,4 +1,4 @@
-# clone-repos.ps1 - Clones well-known Git repositories into a folder
+## clone-repos.ps1 - Clones well-known Git repositories into a folder
 
 clone-repos.ps1 [<folder>]
 

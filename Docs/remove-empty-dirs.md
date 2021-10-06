@@ -1,4 +1,4 @@
-# remove-empty-dirs.ps1 - Removes all empty subfolders within a directory tree
+## remove-empty-dirs.ps1 - Removes all empty subfolders within a directory tree
 
 remove-empty-dirs.ps1 [<DirTree>]
 <DirTree> is the path to the directory tree

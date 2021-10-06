@@ -1,4 +1,4 @@
-# fetch-repos.ps1 - Fetches updates for all Git repositories in a folder (including submodules)
+## fetch-repos.ps1 - Fetches updates for all Git repositories in a folder (including submodules)
 
 fetch-repos.ps1 [<ParentDir>]
 

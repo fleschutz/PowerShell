@@ -1,4 +1,4 @@
-# install-vscode.ps1 - Installs Visual Studio Code, the PowerShell extension, and optionally
+## install-vscode.ps1 - Installs Visual Studio Code, the PowerShell extension, and optionally
 a list of additional extensions.
 
 This script can be used to easily install Visual Studio Code and the

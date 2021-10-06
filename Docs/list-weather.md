@@ -1,4 +1,4 @@
-# list-weather.ps1 - Lists the hourly weather report
+## list-weather.ps1 - Lists the hourly weather report
 
 list-weather.ps1 [<Location>]
 

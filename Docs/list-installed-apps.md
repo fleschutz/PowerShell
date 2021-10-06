@@ -1,4 +1,4 @@
-# list-installed-apps.ps1 - Lists the installed apps
+## list-installed-apps.ps1 - Lists the installed apps
 
 Lists the installed apps (from Windows Store or snaps).
 list-installed-apps.ps1

@@ -1,4 +1,4 @@
-# list-unused-files.ps1 - Lists unused files in a folder (including subfolders)
+## list-unused-files.ps1 - Lists unused files in a folder (including subfolders)
 
 Lists files in a folder with last access time older than <Days>
 list-unused-files.ps1 <DirTree> <Days>

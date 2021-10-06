@@ -1,4 +1,4 @@
-# switch-shelly1.ps1 - Switches a Shelly1 device in the local network
+## switch-shelly1.ps1 - Switches a Shelly1 device in the local network
 
 switch-shelly1.ps1 [<Host>] [<TurnMode>] [<Timer>]
 <Host> is either a hostname or IP address

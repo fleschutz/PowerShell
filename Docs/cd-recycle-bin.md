@@ -1,4 +1,4 @@
-# cd-recycle-bin.ps1 - cd-recycle-bin.ps1 
+## cd-recycle-bin.ps1 - cd-recycle-bin.ps1 
 
 
 ## Parameters

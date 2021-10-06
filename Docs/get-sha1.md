@@ -1,4 +1,4 @@
-# get-sha1.ps1 - 
+## get-sha1.ps1 - 
 
 ## Parameters
 ```powershell

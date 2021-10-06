@@ -1,4 +1,4 @@
-# write-lowercase.ps1 - Writes text in lowercase letters
+## write-lowercase.ps1 - Writes text in lowercase letters
 
 write-lowercase.ps1 [<text>]
 

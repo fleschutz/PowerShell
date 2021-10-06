@@ -1,4 +1,4 @@
-# install-ssh-client.ps1 - Installs the SSH client (needs admin rights)
+## install-ssh-client.ps1 - Installs the SSH client (needs admin rights)
 
 install-ssh-client.ps1
 

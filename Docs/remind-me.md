@@ -1,4 +1,4 @@
-# remind-me.ps1 - Creates a scheduled task that will display a popup message
+## remind-me.ps1 - Creates a scheduled task that will display a popup message
 
 remind-me.ps1
 

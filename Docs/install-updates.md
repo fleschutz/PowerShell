@@ -1,4 +1,4 @@
-# install-updates.ps1 - Installs updates for the local machine (needs admin rights)
+## install-updates.ps1 - Installs updates for the local machine (needs admin rights)
 
 install-updates.ps1
 

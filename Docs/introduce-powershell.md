@@ -1,4 +1,4 @@
-# introduce-powershell.ps1 - Introduces PowerShell to new users
+## introduce-powershell.ps1 - Introduces PowerShell to new users
 
 introduce-powershell.ps1
 

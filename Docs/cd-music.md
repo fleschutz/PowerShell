@@ -1,4 +1,4 @@
-# cd-music.ps1 - Change the working directory to the user's music folder
+## cd-music.ps1 - Change the working directory to the user's music folder
 
 cd-music.ps1
 

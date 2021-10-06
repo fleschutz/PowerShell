@@ -1,4 +1,4 @@
-# enter-chat.ps1 - Enters a chat using a common network shared file
+## enter-chat.ps1 - Enters a chat using a common network shared file
 
 enter-chat.ps1
 

@@ -1,4 +1,4 @@
-# list-crypto-rates.ps1 - list-crypto-rates.ps1 
+## list-crypto-rates.ps1 - list-crypto-rates.ps1 
 
 
 ## Parameters

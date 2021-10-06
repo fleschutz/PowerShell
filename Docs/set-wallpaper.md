@@ -1,4 +1,4 @@
-# set-wallpaper.ps1 - 
+## set-wallpaper.ps1 - 
 
 ## Parameters
 ```powershell

@@ -1,4 +1,4 @@
-# poweroff.ps1 - Halts the local computer (needs admin rights)
+## poweroff.ps1 - Halts the local computer (needs admin rights)
 
 poweroff.ps1
 

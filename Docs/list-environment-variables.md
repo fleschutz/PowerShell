@@ -1,4 +1,4 @@
-# list-environment-variables.ps1 - Lists all environment variables
+## list-environment-variables.ps1 - Lists all environment variables
 
 list-environment-variables.ps1
 

@@ -1,4 +1,4 @@
-# open-calculator.ps1 - Starts the calculator application
+## open-calculator.ps1 - Starts the calculator application
 
 open-calculator.ps1
 

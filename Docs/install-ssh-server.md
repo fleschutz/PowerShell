@@ -1,4 +1,4 @@
-# install-ssh-server.ps1 - Installs the SSH server (needs admin rights)
+## install-ssh-server.ps1 - Installs the SSH server (needs admin rights)
 
 install-ssh-server.ps1
 

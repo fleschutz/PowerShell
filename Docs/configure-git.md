@@ -1,4 +1,4 @@
-# configure-git.ps1 - Configures the user settings for Git
+## configure-git.ps1 - Configures the user settings for Git
 
 configure-git.ps1 [<full-name>] [<email-address>] [<favorite-editor>]
 

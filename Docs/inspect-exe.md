@@ -1,4 +1,4 @@
-# inspect-exe.ps1 - Prints basic information of an executable file
+## inspect-exe.ps1 - Prints basic information of an executable file
 
 inspect-exe.ps1 [<path-to-exe-file>]
 

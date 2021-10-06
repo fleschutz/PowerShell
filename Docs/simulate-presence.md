@@ -1,4 +1,4 @@
-# simulate-presence.ps1 - Simulates the human presence against burglars
+## simulate-presence.ps1 - Simulates the human presence against burglars
 
 simulate-presence.ps1 [<IPaddress>]
 <IPaddress> is the IP address of the Shelly1 device

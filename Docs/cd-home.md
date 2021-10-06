@@ -1,4 +1,4 @@
-# cd-home.ps1 - Change the working directory to the user's home directory
+## cd-home.ps1 - Change the working directory to the user's home directory
 
 cd-home.ps1
 

@@ -1,4 +1,4 @@
-# weather.ps1 - Lists the current weather forecast
+## weather.ps1 - Lists the current weather forecast
 
 weather.ps1 [<GeoLocation>]
 

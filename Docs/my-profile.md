@@ -1,4 +1,4 @@
-# my-profile.ps1 - my-profile.ps1 
+## my-profile.ps1 - my-profile.ps1 
 
 
 ## Parameters

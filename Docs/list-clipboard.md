@@ -1,4 +1,4 @@
-# list-clipboard.ps1 - Lists the contents of the clipboard
+## list-clipboard.ps1 - Lists the contents of the clipboard
 
 list-clipboard.ps1
 

@@ -1,4 +1,4 @@
-# list-processes.ps1 - Lists all local computer processes
+## list-processes.ps1 - Lists all local computer processes
 
 list-processes.ps1
 

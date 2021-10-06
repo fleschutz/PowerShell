@@ -1,4 +1,4 @@
-# list-news.ps1 - Lists the latest news
+## list-news.ps1 - Lists the latest news
 
 list-news.ps1 [<RSS-URL>] [<max-count>]
 

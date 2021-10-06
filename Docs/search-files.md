@@ -1,4 +1,4 @@
-# search-files.ps1 - Searches for a pattern in the given files
+## search-files.ps1 - Searches for a pattern in the given files
 
 search-files.ps1 [<pattern>] [<files>]
 

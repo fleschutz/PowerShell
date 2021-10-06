@@ -1,4 +1,4 @@
-# cd-desktop.ps1 - Change the working directory to the user's desktop folder
+## cd-desktop.ps1 - Change the working directory to the user's desktop folder
 
 cd-desktop.ps1
 

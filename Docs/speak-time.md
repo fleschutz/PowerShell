@@ -1,4 +1,4 @@
-# speak-time.ps1 - Speaks the current time by text-to-speech (TTS)
+## speak-time.ps1 - Speaks the current time by text-to-speech (TTS)
 
 speak-time.ps1
 

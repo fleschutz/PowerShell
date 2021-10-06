@@ -1,4 +1,4 @@
-# write-quote.ps1 - Writes a random quote to the console
+## write-quote.ps1 - Writes a random quote to the console
 
 write-quote.ps1
 

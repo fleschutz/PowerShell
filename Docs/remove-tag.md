@@ -1,4 +1,4 @@
-# remove-tag.ps1 - Removes a Git tag (locally, remote, or both)
+## remove-tag.ps1 - Removes a Git tag (locally, remote, or both)
 
 remove-tag.ps1 [<TagName>] [<Mode>] [<RepoDir>]
 

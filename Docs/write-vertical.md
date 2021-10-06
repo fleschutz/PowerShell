@@ -1,4 +1,4 @@
-# write-vertical.ps1 - Writes text in vertical direction
+## write-vertical.ps1 - Writes text in vertical direction
 
 write-vertical.ps1 [<text>]
 

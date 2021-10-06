@@ -1,4 +1,4 @@
-# install-wsl.ps1 - Installs Windows Subsystem for Linux (needs admin rights)
+## install-wsl.ps1 - Installs Windows Subsystem for Linux (needs admin rights)
 
 install-wsl.ps1
 

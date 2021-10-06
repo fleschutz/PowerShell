@@ -1,4 +1,4 @@
-# take-screenshots.ps1 - Takes screenshots and saves them into a folder
+## take-screenshots.ps1 - Takes screenshots and saves them into a folder
 
 take-screenshots.ps1 [<TargetDir>] [<Interval>]
 Takes screenshots and saves them into a folder (per default every 60 seconds)

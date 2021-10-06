@@ -1,4 +1,4 @@
-# decrypt-file.ps1 - Decrypts the given file
+## decrypt-file.ps1 - Decrypts the given file
 
 decrypt-file.ps1 [<path>] [<password>]
 

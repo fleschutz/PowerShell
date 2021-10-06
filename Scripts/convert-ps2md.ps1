@@ -58,7 +58,7 @@ try {
 
 	$full = Get-Help $filename -Full 
 
-	"# $ScriptName - $($full.Synopsis)"
+	"## $ScriptName - $($full.Synopsis)"
 
 	$Description = ($full.description | Out-String).Trim()
 	if ($Description -ne "") {
