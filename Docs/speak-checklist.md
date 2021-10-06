@@ -1,9 +1,9 @@
 # PowerShell Script: speak-checklist.ps1
 ```powershell
-speak-checklist.ps1 [<name>]
+Speaks the given checklist by text-to-speech (TTS)
 ```
 
-Speaks the given checklist by text-to-speech (TTS)
+speak-checklist.ps1 [<name>]
 
 ## Syntax & Parameters
 ```powershell

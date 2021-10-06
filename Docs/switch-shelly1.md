@@ -1,10 +1,12 @@
 # PowerShell Script: switch-shelly1.ps1
 ```powershell
-switch-shelly1.ps1 [<Host>] [<TurnMode>] [<Timer>]
+Switches a Shelly1 device in the local network
 ```
 
-Switches a Shelly1 device in the local network
-(Host is either a hostname or IP address, TurnMode is either 'on', 'off', or 'toggle')
+switch-shelly1.ps1 [<Host>] [<TurnMode>] [<Timer>]
+<Host> is either a hostname or IP address
+<TurnMode> is either 'on', 'off', or 'toggle')
+<Timer> is the timer in seconds (0 = infinite)
 
 ## Syntax & Parameters
 ```powershell

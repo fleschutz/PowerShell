@@ -1,9 +1,9 @@
 # PowerShell Script: convert-mysql2csv.ps1
 ```powershell
-convert-mysql2csv.ps1 [<server>] [<database>] [<username>] [<password>] [<query>]
+Convert a MySQL database table to a .CSV file
 ```
 
-Convert a MySQL database table to a .CSV file
+convert-mysql2csv.ps1 [<server>] [<database>] [<username>] [<password>] [<query>]
 
 ## Syntax & Parameters
 ```powershell

@@ -1,9 +1,9 @@
 # PowerShell Script: send-email.ps1
 ```powershell
-send-email.ps1
+Sends an email message
 ```
 
-Sends an email message
+send-email.ps1
 
 ## Syntax & Parameters
 ```powershell

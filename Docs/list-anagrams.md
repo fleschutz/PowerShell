@@ -1,9 +1,9 @@
 # PowerShell Script: list-anagrams.ps1
 ```powershell
-list-anagrams.ps1 [<word>] [<columns>]
+Lists all anagrams of the given word
 ```
 
-Lists all anagrams of the given word
+list-anagrams.ps1 [<word>] [<columns>]
 
 ## Syntax & Parameters
 ```powershell

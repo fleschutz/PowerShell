@@ -1,9 +1,9 @@
 # PowerShell Script: list-fritzbox-devices.ps1
 ```powershell
-list-fritzbox-devices.ps1 [<username>] [<password>]
+Lists FRITZ!Box's known devices
 ```
 
-Lists FRITZ!Box's known devices
+list-fritzbox-devices.ps1 [<Username>] [<Password>]
 
 ## Syntax & Parameters
 ```powershell

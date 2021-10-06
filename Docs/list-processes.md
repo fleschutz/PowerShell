@@ -1,9 +1,9 @@
 # PowerShell Script: list-processes.ps1
 ```powershell
-list-processes.ps1
+Lists all local computer processes
 ```
 
-Lists all local computer processes
+list-processes.ps1
 
 ## Syntax & Parameters
 ```powershell
@@ -19,6 +19,14 @@ Lists all local computer processes
 ## Example
 ```powershell
 PS>./list-processes
+
+
+
+Id  CPU(s) ProcessName
+   --  ------ -----------
+ 9712   0,39% 64DriverLoad
+ 2484         AppleMobileDeviceService
+ ...
 ```
 
 

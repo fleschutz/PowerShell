@@ -1,9 +1,9 @@
 # PowerShell Script: new-branch.ps1
 ```powershell
-new-branch.ps1 [<BranchName>] [<RepoDir>]
+Creates and switches to a new branch in a Git repository
 ```
 
-Creates and switches to a new branch in a Git repository
+new-branch.ps1 [<BranchName>] [<RepoDir>]
 
 ## Syntax & Parameters
 ```powershell

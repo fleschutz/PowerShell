@@ -1,9 +1,10 @@
 # PowerShell Script: new-script.ps1
 ```powershell
-new-script.ps1 [<filename>]
+Creates a new PowerShell script file
 ```
 
-Creates a new PowerShell script
+Creates a new PowerShell script file (by using template file ../Data/template.ps1).
+new-script.ps1 [<filename>]
 
 ## Syntax & Parameters
 ```powershell
@@ -29,6 +30,7 @@ Creates a new PowerShell script
 ## Example
 ```powershell
 PS>./new-script myscript.ps1
+✔️ created new PowerShell script: myscript.ps1
 ```
 
 

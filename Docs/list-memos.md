@@ -1,9 +1,9 @@
 # PowerShell Script: list-memos.ps1
 ```powershell
-list-memos.ps1
+Lists all memos in $HOME/Memos.csv
 ```
 
-Lists all memos in $HOME/Memos.csv
+list-memos.ps1
 
 ## Syntax & Parameters
 ```powershell

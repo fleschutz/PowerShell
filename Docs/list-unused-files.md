@@ -1,13 +1,16 @@
 # PowerShell Script: list-unused-files.ps1
 ```powershell
-list-unused-files.ps1 <dir-tree> <days>
+Lists unused files in a folder (including subfolders)
 ```
 
-Lists files in the <directory tree> with last access time older than <days>
+Lists files in a folder with last access time older than <Days>
+list-unused-files.ps1 <DirTree> <Days>
+<DirTree> is the path to the directory tree
+<Days> is the number of days
 
 ## Syntax & Parameters
 ```powershell
-/home/markus/Repos/PowerShell/Scripts/list-unused-files.ps1 [[-DirTree] <String>] [[-NumberOfDaysUnused] <Int32>] [<CommonParameters>]
+/home/markus/Repos/PowerShell/Scripts/list-unused-files.ps1 [[-DirTree] <String>] [[-Days] <Int32>] [<CommonParameters>]
 ```
 
 ```
@@ -21,11 +24,11 @@ Lists files in the <directory tree> with last access time older than <days>
 ```
 
 ```
--NumberOfDaysUnused <Int32>
+-Days <Int32>
     
     Required?                    false
     Position?                    2
-    Default value                99
+    Default value                100
     Accept pipeline input?       false
     Accept wildcard characters?  false
 ```
@@ -38,7 +41,7 @@ Lists files in the <directory tree> with last access time older than <days>
 
 ## Example
 ```powershell
-PS>./list-unused-files C:\ 90
+PS>./list-unused-files C:\ 100
 ```
 
 

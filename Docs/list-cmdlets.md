@@ -1,9 +1,9 @@
 # PowerShell Script: list-cmdlets.ps1
 ```powershell
-list-cmdlets.ps1
+Lists all PowerShell cmdlets
 ```
 
-Lists all PowerShell cmdlets
+list-cmdlets.ps1
 
 ## Syntax & Parameters
 ```powershell
@@ -19,6 +19,14 @@ Lists all PowerShell cmdlets
 ## Example
 ```powershell
 PS>./list-cmdlets
+
+
+
+CommandType     Name                                  Version    Source
+-----------     ----                                  -------    ------
+Function        Add-BCDataCacheExtension              1.0.0.0    BranchCache
+Function        Add-BitLockerKeyProtector             1.0.0.0    BitLocker
+...
 ```
 
 

@@ -1,9 +1,9 @@
 # PowerShell Script: close-firefox.ps1
 ```powershell
-close-firefox.ps1
+Closes Mozilla's Firefox Web browser
 ```
 
-Closes the Firefox Web browser gracefully
+close-firefox.ps1
 
 ## Syntax & Parameters
 ```powershell

@@ -1,9 +1,9 @@
 # PowerShell Script: what-is.ps1
 ```powershell
-what-is.ps1 [<abbreviation>]
+Prints a description of the given abbreviation
 ```
 
-Prints a description of the given abbreviation.
+what-is.ps1 [<abbreviation>]
 
 ## Syntax & Parameters
 ```powershell

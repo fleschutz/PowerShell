@@ -1,9 +1,9 @@
 # PowerShell Script: fetch-repos.ps1
 ```powershell
-fetch-repos.ps1 [<ParentDir>]
+Fetches updates for all Git repositories in a folder (including submodules)
 ```
 
-Fetches updates for all Git repositories under the current/given directory (including submodules)
+fetch-repos.ps1 [<ParentDir>]
 
 ## Syntax & Parameters
 ```powershell

@@ -1,9 +1,10 @@
 # PowerShell Script: simulate-presence.ps1
 ```powershell
-simulate-presence.ps1 [<IP-address>]
+Simulates the human presence against burglars
 ```
 
-Simulates the human presence against burglars
+simulate-presence.ps1 [<IPaddress>]
+<IPaddress> is the IP address of the Shelly1 device
 
 ## Syntax & Parameters
 ```powershell

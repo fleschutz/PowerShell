@@ -1,9 +1,9 @@
 # PowerShell Script: speak-countdown.ps1
 ```powershell
-speak-countdown.ps1 [start-number]
+Speaks a countdown by text-to-speech (TTS)
 ```
 
-Speaks a countdown by text-to-speech (TTS)
+speak-countdown.ps1 [StartNumber]
 
 ## Syntax & Parameters
 ```powershell

@@ -1,9 +1,9 @@
 # PowerShell Script: pull-repo.ps1
 ```powershell
-pull-repo.ps1 [<repo-dir>]
+Pulls updates for a local Git repository (including submodules)
 ```
 
-Pulls updates for a local Git repository (including submodules)
+pull-repo.ps1 [<repo-dir>]
 
 ## Syntax & Parameters
 ```powershell

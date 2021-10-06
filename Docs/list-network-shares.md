@@ -1,9 +1,9 @@
 # PowerShell Script: list-network-shares.ps1
 ```powershell
-list-network-shares.ps1
+Lists the network shares of the local computer
 ```
 
-Lists the network shares of the local computer
+list-network-shares.ps1
 
 ## Syntax & Parameters
 ```powershell
@@ -19,6 +19,12 @@ Lists the network shares of the local computer
 ## Example
 ```powershell
 PS>./list-network-shares
+
+
+
+Name  Path     Description
+----  ----     -----------
+Users C:\Users
 ```
 
 

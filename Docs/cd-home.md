@@ -1,9 +1,9 @@
 # PowerShell Script: cd-home.ps1
 ```powershell
-cd-home.ps1
+Change the working directory to the user's home directory
 ```
 
-Change the working directory to the user's home directory
+cd-home.ps1
 
 ## Syntax & Parameters
 ```powershell
@@ -19,6 +19,7 @@ Change the working directory to the user's home directory
 ## Example
 ```powershell
 PS>./cd-home
+📂/home/markus
 ```
 
 

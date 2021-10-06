@@ -1,9 +1,9 @@
 # PowerShell Script: make-install.ps1
 ```powershell
-make-install.ps1 <build-dir>
+Copies newer EXE's + DLL's from the build directory to the installation directory
 ```
 
-Copies newer EXE's + DLL's from the build directory to the installation directory
+make-install.ps1 <BuildDir>
 
 ## Syntax & Parameters
 ```powershell

@@ -1,9 +1,9 @@
 # PowerShell Script: cd-pics.ps1
 ```powershell
-cd-pics.ps1
+Change the working directory to the user's pictures folder
 ```
 
-Change the working directory to the user's pictures folder
+cd-pics.ps1
 
 ## Syntax & Parameters
 ```powershell
@@ -19,6 +19,7 @@ Change the working directory to the user's pictures folder
 ## Example
 ```powershell
 PS>./cd-pics
+📂/home/markus/Pictures
 ```
 
 

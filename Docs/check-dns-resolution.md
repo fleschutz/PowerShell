@@ -1,9 +1,9 @@
 # PowerShell Script: check-dns-resolution.ps1
 ```powershell
-check-dns-resolution.ps1
+Checks the DNS resolution with frequently used domain names
 ```
 
-Checks the DNS resolution with frequently used domain names
+check-dns-resolution.ps1
 
 ## Syntax & Parameters
 ```powershell
@@ -19,6 +19,7 @@ Checks the DNS resolution with frequently used domain names
 ## Example
 ```powershell
 PS>./check-dns-resolution
+✔️ 11.8 domains/sec (177 domains resolved in 15 sec)
 ```
 
 

@@ -1,9 +1,9 @@
 # PowerShell Script: add-memo.ps1
 ```powershell
-add-memo.ps1 [<text>]
+Adds a memo to Memos.csv in the home folder
 ```
 
-Adds the given memo text to $HOME/Memos.csv
+add-memo.ps1 [<text>]
 
 ## Syntax & Parameters
 ```powershell
@@ -29,6 +29,7 @@ Adds the given memo text to $HOME/Memos.csv
 ## Example
 ```powershell
 PS>./add-memo "Buy apples"
+✔️ added to 📄/home/markus/Memos.csv
 ```
 
 

@@ -1,9 +1,9 @@
 # PowerShell Script: configure-git.ps1
 ```powershell
-configure-git.ps1 [<full-name>] [<email-address>] [<favorite-editor>]
+Configures the user settings for Git
 ```
 
-Sets up the Git user configuration
+configure-git.ps1 [<full-name>] [<email-address>] [<favorite-editor>]
 
 ## Syntax & Parameters
 ```powershell

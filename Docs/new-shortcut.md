@@ -1,9 +1,9 @@
 # PowerShell Script: new-shortcut.ps1
 ```powershell
-new-shortcut.ps1 [<shortcut>] [<target>] [<description>]
+Creates a new shortcut file
 ```
 
-Creates a new shortcut file
+new-shortcut.ps1 [<shortcut>] [<target>] [<description>]
 
 ## Syntax & Parameters
 ```powershell

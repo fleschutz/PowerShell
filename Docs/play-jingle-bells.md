@@ -1,9 +1,9 @@
 # PowerShell Script: play-jingle-bells.ps1
 ```powershell
-play-jingle-bells.ps1
+Plays Jingle Bells
 ```
 
-Plays Jingle Bells
+play-jingle-bells.ps1
 
 ## Syntax & Parameters
 ```powershell

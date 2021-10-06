@@ -1,9 +1,9 @@
 # PowerShell Script: write-marquee.ps1
 ```powershell
-write-marquee.ps1 [<text>] [<speed>]
+Writes text as marquee
 ```
 
-Writes the given text as marquee
+write-marquee.ps1 [<text>] [<speed>]
 
 ## Syntax & Parameters
 ```powershell

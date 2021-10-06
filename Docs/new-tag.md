@@ -1,9 +1,9 @@
 # PowerShell Script: new-tag.ps1
 ```powershell
-new-tag.ps1 [<TagName>] [<RepoDir>]
+Creates a new tag in a Git repository
 ```
 
-Creates a new tag in a Git repository
+new-tag.ps1 [<TagName>] [<RepoDir>]
 
 ## Syntax & Parameters
 ```powershell

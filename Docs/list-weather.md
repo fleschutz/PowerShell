@@ -1,9 +1,9 @@
 # PowerShell Script: list-weather.ps1
 ```powershell
-list-weather.ps1 [<location>]
+Lists the hourly weather report
 ```
 
-Lists the hourly weather
+list-weather.ps1 [<Location>]
 
 ## Syntax & Parameters
 ```powershell

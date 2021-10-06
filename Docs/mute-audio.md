@@ -1,9 +1,9 @@
 # PowerShell Script: mute-audio.ps1
 ```powershell
-mute-audio.ps1
+Mutes the audio output
 ```
 
-Mutes the audio output
+mute-audio.ps1
 
 ## Syntax & Parameters
 ```powershell

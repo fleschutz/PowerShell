@@ -1,9 +1,9 @@
 # PowerShell Script: list-workdir.ps1
 ```powershell
-list-workdir.ps1
+Lists the current working directory
 ```
 
-Lists the current working directory
+list-workdir.ps1
 
 ## Syntax & Parameters
 ```powershell

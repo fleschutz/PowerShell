@@ -1,9 +1,9 @@
 # PowerShell Script: cd-repos.ps1
 ```powershell
-cd-repos.ps1
+Change the working directory to the user's Git repositories folder
 ```
 
-Change the working directory to the user's Git repositories folder
+cd-repos.ps1
 
 ## Syntax & Parameters
 ```powershell
@@ -19,6 +19,7 @@ Change the working directory to the user's Git repositories folder
 ## Example
 ```powershell
 PS>./cd-repos
+📂/home/markus/Repos
 ```
 
 

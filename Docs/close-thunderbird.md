@@ -1,9 +1,9 @@
 # PowerShell Script: close-thunderbird.ps1
 ```powershell
-close-thunderbird.ps1
+Closes Mozilla's Thunderbird email client
 ```
 
-Closes the mail client Mozilla Thunderbird gracefully
+close-thunderbird.ps1
 
 ## Syntax & Parameters
 ```powershell

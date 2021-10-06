@@ -1,9 +1,9 @@
 # PowerShell Script: write-typewriter.ps1
 ```powershell
-write-typewriter.ps1 [<text>] [<speed>]
+Writes text with the typewriter effect
 ```
 
-Writes the given text with the typewriter effect
+write-typewriter.ps1 [<text>] [<speed>]
 
 ## Syntax & Parameters
 ```powershell

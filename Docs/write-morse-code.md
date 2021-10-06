@@ -1,9 +1,9 @@
 # PowerShell Script: write-morse-code.ps1
 ```powershell
-write-morse-code.ps1 [<text>] [<speed>]
+Writes text in Morse code
 ```
 
-Writes the given text in Morse code
+write-morse-code.ps1 [<text>] [<speed>]
 
 ## Syntax & Parameters
 ```powershell

@@ -1,9 +1,9 @@
 # PowerShell Script: play-beep.ps1
 ```powershell
-play-beep.ps1
+Plays a short beep sound
 ```
 
-Plays a short beep sound
+play-beep.ps1
 
 ## Syntax & Parameters
 ```powershell

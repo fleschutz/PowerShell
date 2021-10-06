@@ -1,9 +1,9 @@
 # PowerShell Script: moon.ps1
 ```powershell
-moon.ps1
+Prints the current moon phase
 ```
 
-Prints the current moon phase
+moon.ps1
 
 ## Syntax & Parameters
 ```powershell

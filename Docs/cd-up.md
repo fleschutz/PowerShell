@@ -1,9 +1,9 @@
 # PowerShell Script: cd-up.ps1
 ```powershell
-cd-up.ps1
+Change the working directory to one level up
 ```
 
-Change the working directory to one level up
+cd-up.ps1
 
 ## Syntax & Parameters
 ```powershell
@@ -19,6 +19,7 @@ Change the working directory to one level up
 ## Example
 ```powershell
 PS>.\cd-up
+(one level up)
 ```
 
 

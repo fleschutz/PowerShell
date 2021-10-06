@@ -1,9 +1,9 @@
 # PowerShell Script: install-updates.ps1
 ```powershell
-install-updates.ps1
+Installs updates for the local machine (needs admin rights)
 ```
 
-Installs updates (needs admin rights)
+install-updates.ps1
 
 ## Syntax & Parameters
 ```powershell

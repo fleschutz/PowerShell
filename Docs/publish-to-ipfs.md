@@ -1,9 +1,9 @@
 # PowerShell Script: publish-to-ipfs.ps1
 ```powershell
-publish-to-ipfs.ps1 [<FilePattern>] [<to-hash-list>]
+Publishes the given files & folders to IPFS
 ```
 
-Publishes the given files & folders to IPFS
+publish-to-ipfs.ps1 [<FilePattern>] [<HashList>]
 
 ## Syntax & Parameters
 ```powershell

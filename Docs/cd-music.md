@@ -1,9 +1,9 @@
 # PowerShell Script: cd-music.ps1
 ```powershell
-cd-music.ps1
+Change the working directory to the user's music folder
 ```
 
-Change the working directory to the user's music folder
+cd-music.ps1
 
 ## Syntax & Parameters
 ```powershell
@@ -19,6 +19,7 @@ Change the working directory to the user's music folder
 ## Example
 ```powershell
 PS>./cd-music
+📂/home/markus/Music
 ```
 
 

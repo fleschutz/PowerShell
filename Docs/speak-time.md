@@ -1,9 +1,9 @@
 # PowerShell Script: speak-time.ps1
 ```powershell
-speak-time.ps1
+Speaks the current time by text-to-speech (TTS)
 ```
 
-Speaks the current time by text-to-speech (TTS)
+speak-time.ps1
 
 ## Syntax & Parameters
 ```powershell

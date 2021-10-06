@@ -1,17 +1,17 @@
 # PowerShell Script: play-m3u.ps1
 ```powershell
-play-m3u.ps1 [<playlist-file>]
+Plays the given playlist (in .M3U file format)
 ```
 
-Plays the given playlist (in .M3U file format)
+play-m3u.ps1 [<filename>]
 
 ## Syntax & Parameters
 ```powershell
-/home/markus/Repos/PowerShell/Scripts/play-m3u.ps1 [[-Filename] <String>] [<CommonParameters>]
+/home/markus/Repos/PowerShell/Scripts/play-m3u.ps1 [[-filename] <String>] [<CommonParameters>]
 ```
 
 ```
--Filename <String>
+-filename <String>
     
     Required?                    false
     Position?                    1

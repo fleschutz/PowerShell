@@ -1,9 +1,9 @@
 # PowerShell Script: cd-root.ps1
 ```powershell
-cd-root.ps1
+Change the working directory to the root directory (C:\ on Windows)
 ```
 
-Change the working directory to the root directory (C:\ on Windows)
+cd-root.ps1
 
 ## Syntax & Parameters
 ```powershell
@@ -19,6 +19,7 @@ Change the working directory to the root directory (C:\ on Windows)
 ## Example
 ```powershell
 PS>./cd-root
+📂C:\
 ```
 
 

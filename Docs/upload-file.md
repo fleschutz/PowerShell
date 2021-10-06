@@ -1,9 +1,9 @@
 # PowerShell Script: upload-file.ps1
 ```powershell
-upload-file.ps1 [<file>] [<URL>] [<username>] [<password>]
+Uploads a local file to a FTP server
 ```
 
-Uploads the local file to the given FTP server.
+upload-file.ps1 [<File>] [<URL>] [<Username>] [<Password>]
 
 ## Syntax & Parameters
 ```powershell

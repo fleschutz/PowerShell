@@ -1,9 +1,9 @@
 # PowerShell Script: list-tasks.ps1
 ```powershell
-list-tasks.ps1
+Lists all Windows scheduler tasks
 ```
 
-Lists all Windows scheduler tasks
+list-tasks.ps1
 
 ## Syntax & Parameters
 ```powershell
@@ -19,6 +19,14 @@ Lists all Windows scheduler tasks
 ## Example
 ```powershell
 PS>./list-tasks
+
+
+
+TaskPath                                       TaskName                          State
+--------                                       --------                          -----
+\Microsoft\Windows\.NET Framework\             .NET Framework NGEN v4.0.30319    Ready
+\Microsoft\Windows\.NET Framework\             .NET Framework NGEN v4.0.30319 64 Ready
+...
 ```
 
 

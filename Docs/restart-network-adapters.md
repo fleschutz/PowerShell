@@ -1,9 +1,9 @@
 # PowerShell Script: restart-network-adapters.ps1
 ```powershell
-restart-network-adapters.ps1
+Restarts all local network adapters (needs admin rights)
 ```
 
-Restarts all local network adapters (needs admin rights)
+restart-network-adapters.ps1
 
 ## Syntax & Parameters
 ```powershell

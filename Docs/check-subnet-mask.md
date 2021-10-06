@@ -1,9 +1,9 @@
 # PowerShell Script: check-subnet-mask.ps1
 ```powershell
-check-subnet-mask.ps1 [<address>]
+Checks the given subnet mask for validity
 ```
 
-Checks the given subnet mask for validity
+check-subnet-mask.ps1 [<address>]
 
 ## Syntax & Parameters
 ```powershell
@@ -29,6 +29,7 @@ Checks the given subnet mask for validity
 ## Example
 ```powershell
 PS>./check-subnet-mask 255.255.255.0
+✔️ subnet mask 255.255.255.0 is valid
 ```
 
 

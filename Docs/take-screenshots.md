@@ -1,9 +1,10 @@
 # PowerShell Script: take-screenshots.ps1
 ```powershell
-take-screenshots.ps1 [<TargetDir>] [<Interval>]
+Takes screenshots and saves them into a folder
 ```
 
-Takes screenshots and saves them into a target directory (per default every 60 seconds)
+take-screenshots.ps1 [<TargetDir>] [<Interval>]
+Takes screenshots and saves them into a folder (per default every 60 seconds)
 
 ## Syntax & Parameters
 ```powershell

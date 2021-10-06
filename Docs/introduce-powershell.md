@@ -1,9 +1,9 @@
 # PowerShell Script: introduce-powershell.ps1
 ```powershell
-introduce-powershell.ps1
+Introduces PowerShell to new users
 ```
 
-Introduces PowerShell to new users
+introduce-powershell.ps1
 
 ## Syntax & Parameters
 ```powershell

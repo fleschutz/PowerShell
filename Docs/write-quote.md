@@ -1,9 +1,9 @@
 # PowerShell Script: write-quote.ps1
 ```powershell
-write-quote.ps1
+Writes a random quote to the console
 ```
 
-Writes a random quote to the console
+write-quote.ps1
 
 ## Syntax & Parameters
 ```powershell

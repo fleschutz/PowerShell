@@ -1,9 +1,10 @@
 # PowerShell Script: open-browser.ps1
 ```powershell
-open-browser.ps1 [<URL>]
+Opens the default Web browser
 ```
 
 Opens the default Web browser, optional with given URL
+open-browser.ps1 [<URL>]
 
 ## Syntax & Parameters
 ```powershell

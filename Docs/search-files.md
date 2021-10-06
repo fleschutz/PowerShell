@@ -1,9 +1,9 @@
 # PowerShell Script: search-files.ps1
 ```powershell
-search-files.ps1 [<pattern>] [<files>]
+Searches for a pattern in the given files
 ```
 
-Searches for a pattern in the given files
+search-files.ps1 [<pattern>] [<files>]
 
 ## Syntax & Parameters
 ```powershell

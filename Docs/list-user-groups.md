@@ -1,9 +1,9 @@
 # PowerShell Script: list-user-groups.ps1
 ```powershell
-list-user-groups.ps1
+Lists the user groups on the local computer
 ```
 
-Lists the user groups on the local computer
+list-user-groups.ps1
 
 ## Syntax & Parameters
 ```powershell
@@ -19,6 +19,14 @@ Lists the user groups on the local computer
 ## Example
 ```powershell
 PS>./list-user-groups
+
+
+
+Name            Description
+----            -----------
+HomeUsers       HomeUsers Security Group
+Ssh Users       Members of this group can remotely access this computer over SSH protocol.
+...
 ```
 
 

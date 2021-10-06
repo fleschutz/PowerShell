@@ -1,9 +1,9 @@
 # PowerShell Script: cd-onedrive.ps1
 ```powershell
-cd-onedrive.ps1
+Change the working directory to the user's OneDrive folder
 ```
 
-Change the working directory to the user's OneDrive folder
+cd-onedrive.ps1
 
 ## Syntax & Parameters
 ```powershell
@@ -19,6 +19,7 @@ Change the working directory to the user's OneDrive folder
 ## Example
 ```powershell
 PS>./cd-onedrive
+📂/home/markus/OneDrive
 ```
 
 

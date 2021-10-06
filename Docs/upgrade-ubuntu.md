@@ -1,9 +1,9 @@
 # PowerShell Script: upgrade-ubuntu.ps1
 ```powershell
-upgrade-ubuntu.ps1
+Upgrades Ubuntu Linux to the latest (LTS) release
 ```
 
-Upgrades Ubuntu Linux to the latest (LTS) release.
+upgrade-ubuntu.ps1
 
 ## Syntax & Parameters
 ```powershell

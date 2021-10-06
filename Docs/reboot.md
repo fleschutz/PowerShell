@@ -1,9 +1,9 @@
 # PowerShell Script: reboot.ps1
 ```powershell
-reboot.ps1
+Reboots the local computer (needs admin rights)
 ```
 
-Reboots the local computer (needs admin rights)
+reboot.ps1
 
 ## Syntax & Parameters
 ```powershell

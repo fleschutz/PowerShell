@@ -1,9 +1,9 @@
 # PowerShell Script: check-windows-system-files.ps1
 ```powershell
-check-windows-system-files.ps1
+Checks the validity of the Windows system files (requires admin rights)
 ```
 
-Checks the validity of the Windows system files (requires admin rights)
+check-windows-system-files.ps1
 
 ## Syntax & Parameters
 ```powershell
@@ -19,6 +19,7 @@ Checks the validity of the Windows system files (requires admin rights)
 ## Example
 ```powershell
 PS>./check-windows-system-files
+✔️ checked Windows system files
 ```
 
 

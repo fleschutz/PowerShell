@@ -1,9 +1,9 @@
 # PowerShell Script: poweroff.ps1
 ```powershell
-poweroff.ps1
+Halts the local computer (needs admin rights)
 ```
 
-Halts the local computer (needs admin rights)
+poweroff.ps1
 
 ## Syntax & Parameters
 ```powershell

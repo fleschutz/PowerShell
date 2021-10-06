@@ -1,9 +1,9 @@
 # PowerShell Script: write-lowercase.ps1
 ```powershell
-write-lowercase.ps1 [<text>]
+Writes text in lowercase letters
 ```
 
-Writes the given text in lowercase letters
+write-lowercase.ps1 [<text>]
 
 ## Syntax & Parameters
 ```powershell

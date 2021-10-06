@@ -1,9 +1,9 @@
 # PowerShell Script: locate-zip-code.ps1
 ```powershell
-locate-zip-code.ps1 [<country-code>] [<zip-code>]
+Prints the geographic location of the given zip-code
 ```
 
-Prints the geographic location of the given zip-code
+locate-zip-code.ps1 [<CountryCode>] [<ZipCode>]
 
 ## Syntax & Parameters
 ```powershell

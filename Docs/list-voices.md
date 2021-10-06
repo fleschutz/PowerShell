@@ -1,9 +1,9 @@
 # PowerShell Script: list-voices.ps1
 ```powershell
-list-voices.ps1
+Lists the installed text-to-speech (TTS) voices
 ```
 
-Lists the installed text-to-speech (TTS) voices
+list-voices.ps1
 
 ## Syntax & Parameters
 ```powershell
@@ -19,6 +19,13 @@ Lists the installed text-to-speech (TTS) voices
 ## Example
 ```powershell
 PS>./list-voices
+
+
+
+Name                    Culture Gender   Age
+----                    ------- ------   ---
+Microsoft David Desktop en-US     Male Adult
+Microsoft Zira Desktop  en-US   Female Adult
 ```
 
 

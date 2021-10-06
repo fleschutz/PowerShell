@@ -1,9 +1,9 @@
 # PowerShell Script: list-cheat-sheet.ps1
 ```powershell
-list-cheat-sheet.ps1
+Lists the PowerShell cheat sheet
 ```
 
-Lists the PowerShell cheat sheet
+list-cheat-sheet.ps1
 
 ## Syntax & Parameters
 ```powershell

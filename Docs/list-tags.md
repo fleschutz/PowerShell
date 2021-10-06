@@ -1,13 +1,15 @@
 # PowerShell Script: list-tags.ps1
 ```powershell
-list-tags.ps1 [<repo-dir>] [<pattern>]
+Lists all tags in a Git repository
 ```
 
-Lists all tags in the current/given Git repository
+list-tags.ps1 [<RepoDir>] [<SearchPattern>]
+<RepoDir> is the path to the Git repository
+<SearchPattern> is "*" (anything) by default
 
 ## Syntax & Parameters
 ```powershell
-/home/markus/Repos/PowerShell/Scripts/list-tags.ps1 [[-RepoDir] <String>] [[-Pattern] <String>] [<CommonParameters>]
+/home/markus/Repos/PowerShell/Scripts/list-tags.ps1 [[-RepoDir] <String>] [[-SearchPattern] <String>] [<CommonParameters>]
 ```
 
 ```
@@ -21,7 +23,7 @@ Lists all tags in the current/given Git repository
 ```
 
 ```
--Pattern <String>
+-SearchPattern <String>
     
     Required?                    false
     Position?                    2
@@ -39,6 +41,13 @@ Lists all tags in the current/given Git repository
 ## Example
 ```powershell
 PS>./list-tags C:\MyRepo
+
+
+
+Tag             Description
+---             -----------
+v0.1            Update README.md
+v0.2            Fix typo
 ```
 
 

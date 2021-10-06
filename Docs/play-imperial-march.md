@@ -1,9 +1,9 @@
 # PowerShell Script: play-imperial-march.ps1
 ```powershell
-play-imperial-march.ps1
+Plays the Imperial March (Star Wars)
 ```
 
-Plays the Imperial March (Star Wars)
+play-imperial-march.ps1
 
 ## Syntax & Parameters
 ```powershell

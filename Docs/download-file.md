@@ -1,9 +1,9 @@
 # PowerShell Script: download-file.ps1
 ```powershell
-download-file.ps1 [<URL>]
+Downloads a file from the given URL
 ```
 
-Downloads a file from the given URL
+download-file.ps1 [<URL>]
 
 ## Syntax & Parameters
 ```powershell

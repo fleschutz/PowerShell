@@ -1,9 +1,9 @@
 # PowerShell Script: write-rot13.ps1
 ```powershell
-write-rot13.ps1 [<text>]
+Writes text encoded or decoded with ROT13
 ```
 
-Writes the given text encoded or decoded with ROT13
+write-rot13.ps1 [<text>]
 
 ## Syntax & Parameters
 ```powershell

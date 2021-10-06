@@ -1,9 +1,9 @@
 # PowerShell Script: check-file-system.ps1
 ```powershell
-check-file-system.ps1 [<drive>]
+Checks the file system of a drive (needs admin rights)
 ```
 
-Checks the file system of a drive (needs admin rights)
+check-file-system.ps1 [<drive>]
 
 ## Syntax & Parameters
 ```powershell
@@ -29,6 +29,7 @@ Checks the file system of a drive (needs admin rights)
 ## Example
 ```powershell
 PS>./check-file-system C
+✔️ file system on drive C is clean
 ```
 
 

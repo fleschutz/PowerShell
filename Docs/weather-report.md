@@ -1,9 +1,9 @@
 # PowerShell Script: weather-report.ps1
 ```powershell
-weather-report.ps1 [<GeoLocation>]
+Lists the local weather report
 ```
 
-Prints the local weather report
+weather-report.ps1 [<GeoLocation>]
 
 ## Syntax & Parameters
 ```powershell

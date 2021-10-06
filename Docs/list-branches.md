@@ -1,13 +1,15 @@
 # PowerShell Script: list-branches.ps1
 ```powershell
-list-branches.ps1 [<repo-dir>] [<pattern>]
+Lists all branches in a Git repository
 ```
 
-Lists all branches in the current/given Git repository
+list-branches.ps1 [<RepoDir>] [<SearchPattern>]
+<RepoDir> is the current working directory by default
+<SearchPattern> is "*" (anything) by default
 
 ## Syntax & Parameters
 ```powershell
-/home/markus/Repos/PowerShell/Scripts/list-branches.ps1 [[-RepoDir] <String>] [[-Pattern] <String>] [<CommonParameters>]
+/home/markus/Repos/PowerShell/Scripts/list-branches.ps1 [[-RepoDir] <String>] [[-SearchPattern] <String>] [<CommonParameters>]
 ```
 
 ```
@@ -21,7 +23,7 @@ Lists all branches in the current/given Git repository
 ```
 
 ```
--Pattern <String>
+-SearchPattern <String>
     
     Required?                    false
     Position?                    2

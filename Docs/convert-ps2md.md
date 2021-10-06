@@ -1,9 +1,9 @@
 # PowerShell Script: convert-ps2md.ps1
 ```powershell
-convert-ps2md.ps1 [<filename>]
+Converts the comment-based help of a PowerShell script to Markdown
 ```
 
-Converts the comment-based help of a PowerShell script to Markdown
+convert-ps2md.ps1 [<filename>]
 
 ## Syntax & Parameters
 ```powershell

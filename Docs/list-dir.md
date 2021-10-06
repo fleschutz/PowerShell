@@ -1,17 +1,18 @@
 # PowerShell Script: list-dir.ps1
 ```powershell
-list-dir.ps1 [<pattern>]
+Lists the directory content formatted in columns
 ```
 
-Lists the directory content formatted in columns
+list-dir.ps1 [<SearchPattern>]
+<SearchPattern> is "*" (anything) by default
 
 ## Syntax & Parameters
 ```powershell
-/home/markus/Repos/PowerShell/Scripts/list-dir.ps1 [[-Pattern] <String>] [<CommonParameters>]
+/home/markus/Repos/PowerShell/Scripts/list-dir.ps1 [[-SearchPattern] <String>] [<CommonParameters>]
 ```
 
 ```
--Pattern <String>
+-SearchPattern <String>
     
     Required?                    false
     Position?                    1

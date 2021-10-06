@@ -1,9 +1,9 @@
 # PowerShell Script: cd-dropbox.ps1
 ```powershell
-cd-dropbox.ps1
+Change the working directory to the user's Dropbox folder
 ```
 
-Change the working directory to the user's Dropbox folder
+cd-dropbox.ps1
 
 ## Syntax & Parameters
 ```powershell
@@ -19,6 +19,7 @@ Change the working directory to the user's Dropbox folder
 ## Example
 ```powershell
 PS>./cd-dropbox
+📂/home/markus/Dropbox
 ```
 
 

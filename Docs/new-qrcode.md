@@ -1,9 +1,9 @@
 # PowerShell Script: new-qrcode.ps1
 ```powershell
-new-qrcode.ps1 [<text>] [<image-size>]
+Generates a new QR code image file
 ```
 
-Generates a new QR code image file
+new-qrcode.ps1 [<Text>] [<ImageSize>]
 
 ## Syntax & Parameters
 ```powershell

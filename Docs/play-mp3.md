@@ -1,9 +1,9 @@
 # PowerShell Script: play-mp3.ps1
 ```powershell
-play-mp3.ps1 [<MP3-file>]
+Plays a sound file (in MP3 file format)
 ```
 
-Plays the given sound file (MP3 file format)
+play-mp3.ps1 [<MP3-file>]
 
 ## Syntax & Parameters
 ```powershell

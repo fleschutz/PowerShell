@@ -1,17 +1,17 @@
 # PowerShell Script: play-files.ps1
 ```powershell
-play-files.ps1 [<pattern>]
+Plays the given audio files (supporting MP3 and WAV format)
 ```
 
-Plays the given audio files (supporting MP3 and WAV format)
+play-files.ps1 [<FilePattern>]
 
 ## Syntax & Parameters
 ```powershell
-/home/markus/Repos/PowerShell/Scripts/play-files.ps1 [[-Pattern] <String>] [<CommonParameters>]
+/home/markus/Repos/PowerShell/Scripts/play-files.ps1 [[-FilePattern] <String>] [<CommonParameters>]
 ```
 
 ```
--Pattern <String>
+-FilePattern <String>
     
     Required?                    false
     Position?                    1

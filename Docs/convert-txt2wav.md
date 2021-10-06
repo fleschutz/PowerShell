@@ -1,9 +1,9 @@
 # PowerShell Script: convert-txt2wav.ps1
 ```powershell
-convert-txt2wav.ps1 [<text>] [<wav-file>]
+Converts text to a .WAV audio file
 ```
 
-Converts text to a .WAV audio file
+convert-txt2wav.ps1 [<text>] [<wav-file>]
 
 ## Syntax & Parameters
 ```powershell

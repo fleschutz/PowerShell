@@ -1,9 +1,9 @@
 # PowerShell Script: add-firewall-rules.ps1
 ```powershell
-add-firewall-rules.ps1 [<path-to-executables>]
+Adds firewall rules for the given executables (needs admin rights)
 ```
 
-Adds firewall rules for the given executables (needs administrator rights)
+add-firewall-rules.ps1 [<PathToExecutables>]
 
 ## Syntax & Parameters
 ```powershell
@@ -29,6 +29,9 @@ Adds firewall rules for the given executables (needs administrator rights)
 ## Example
 ```powershell
 PS>./add-firewall-rules C:\MyApp\bin
+Adding firewall rule for C:\MyApp\bin\app1.exe
+Adding firewall rule for C:\MyApp\bin\app2.exe
+...
 ```
 
 

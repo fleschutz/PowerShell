@@ -1,17 +1,17 @@
 # PowerShell Script: locate-ipaddress.ps1
 ```powershell
-locate-ipaddress.ps1 [<IPaddress>]
+Prints the geographic location of the given IP address
 ```
 
-Prints the geographic location of the given IP address
+locate-ipaddress.ps1 [<IPaddress>]
 
 ## Syntax & Parameters
 ```powershell
-/home/markus/Repos/PowerShell/Scripts/locate-ipaddress.ps1 [[-IPaddr] <String>] [<CommonParameters>]
+/home/markus/Repos/PowerShell/Scripts/locate-ipaddress.ps1 [[-IPaddress] <String>] [<CommonParameters>]
 ```
 
 ```
--IPaddr <String>
+-IPaddress <String>
     
     Required?                    false
     Position?                    1

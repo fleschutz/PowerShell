@@ -1,9 +1,9 @@
 # PowerShell Script: turn-volume-down.ps1
 ```powershell
-turn-volume-down.ps1 [<percent>]
+Turns the audio volume down (-10% by default)
 ```
 
-Turns the audio volume down (-10% by default)
+turn-volume-down.ps1 [<percent>]
 
 ## Syntax & Parameters
 ```powershell

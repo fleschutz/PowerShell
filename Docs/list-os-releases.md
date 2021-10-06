@@ -1,9 +1,9 @@
 # PowerShell Script: list-os-releases.ps1
 ```powershell
-list-os-releases.ps1
+Lists OS releases and download URL
 ```
 
-Lists OS releases and download URL
+list-os-releases.ps1
 
 ## Syntax & Parameters
 ```powershell

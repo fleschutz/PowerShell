@@ -1,9 +1,10 @@
 # PowerShell Script: list-files.ps1
 ```powershell
-list-files.ps1 [<dir-tree>]
+Lists all files in a directory tree
 ```
 
-Lists all files in the given directory tree
+list-files.ps1 [<DirTree>]
+<DirTree> is the path to the directory tree
 
 ## Syntax & Parameters
 ```powershell

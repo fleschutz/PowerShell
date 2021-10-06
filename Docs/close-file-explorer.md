@@ -1,9 +1,9 @@
 # PowerShell Script: close-file-explorer.ps1
 ```powershell
-close-file-explorer.ps1
+Closes Microsoft's File Explorer
 ```
 
-Closes Microsoft File Explorer gracefully
+close-file-explorer.ps1
 
 ## Syntax & Parameters
 ```powershell

@@ -1,9 +1,9 @@
 # PowerShell Script: translate-file.ps1
 ```powershell
-translate-file.ps1 [<file>] [<source-lang>] [<target-lang>]
+Translates a text file into another language
 ```
 
-Translates the given text file into another language and prints the result
+translate-file.ps1 [<file>] [<source-lang>] [<target-lang>]
 
 ## Syntax & Parameters
 ```powershell

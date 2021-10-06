@@ -1,9 +1,9 @@
 # PowerShell Script: list-aliases.ps1
 ```powershell
-list-aliases.ps1
+Lists all PowerShell aliases
 ```
 
-Lists all PowerShell aliases
+list-aliases.ps1
 
 ## Syntax & Parameters
 ```powershell
@@ -19,6 +19,14 @@ Lists all PowerShell aliases
 ## Example
 ```powershell
 PS>./list-aliases
+
+
+
+CommandType     Name                                               Version    Source
+-----------     ----                                               -------    ------
+Alias           CFS -> ConvertFrom-String                          3.1.0.0    Microsoft.PowerShell.Utility
+Alias           fhx -> Format-Hex                                  3.1.0.0    Microsoft.PowerShell.Utility
+...
 ```
 
 

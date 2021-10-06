@@ -1,9 +1,9 @@
 # PowerShell Script: list-services.ps1
 ```powershell
-list-services.ps1
+Lists the local computer services
 ```
 
-Lists the local computer services
+list-services.ps1
 
 ## Syntax & Parameters
 ```powershell
@@ -19,6 +19,14 @@ Lists the local computer services
 ## Example
 ```powershell
 PS>./list-services
+
+
+
+Status   Name               DisplayName
+------   ----               -----------
+Running  AarSvc_886c2       Agent Activation Runtime_886c2
+Running  Apple Mobile De... Apple Mobile Device Service
+...
 ```
 
 

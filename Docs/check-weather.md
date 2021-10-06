@@ -1,9 +1,9 @@
 # PowerShell Script: check-weather.ps1
 ```powershell
-check-weather.ps1 [<location>]
+Checks the weather for critical values
 ```
 
-Checks the weather for critical values
+check-weather.ps1 [<location>]
 
 ## Syntax & Parameters
 ```powershell

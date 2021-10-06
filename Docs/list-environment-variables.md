@@ -1,9 +1,9 @@
 # PowerShell Script: list-environment-variables.ps1
 ```powershell
-list-environment-variables.ps1
+Lists all environment variables
 ```
 
-Lists all environment variables
+list-environment-variables.ps1
 
 ## Syntax & Parameters
 ```powershell
@@ -19,6 +19,14 @@ Lists all environment variables
 ## Example
 ```powershell
 PS>./list-environment-variables
+
+
+
+Name                           Value
+----                           -----
+ALLUSERSPROFILE                C:\ProgramData
+APPDATA                        C:\Users\Joe\AppData\Roaming
+...
 ```
 
 

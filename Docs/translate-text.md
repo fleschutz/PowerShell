@@ -1,9 +1,9 @@
 # PowerShell Script: translate-text.ps1
 ```powershell
-translate-text.ps1 [<text>] [<source-lang>] [<target-lang>]
+Translates text into other languages
 ```
 
-Translates the given text into other languages
+translate-text.ps1 [<Text>] [<SourceLang>] [<TargetLang>]
 
 ## Syntax & Parameters
 ```powershell

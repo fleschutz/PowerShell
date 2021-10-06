@@ -1,9 +1,9 @@
 # PowerShell Script: cd-ssh.ps1
 ```powershell
-cd-ssh.ps1
+Change the working directory to the user's SSH folder
 ```
 
-Change the working directory to the user's SSH folder
+cd-ssh.ps1
 
 ## Syntax & Parameters
 ```powershell
@@ -19,6 +19,7 @@ Change the working directory to the user's SSH folder
 ## Example
 ```powershell
 PS>./cd-ssh
+📂/home/markus/.ssh
 ```
 
 

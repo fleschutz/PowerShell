@@ -1,9 +1,9 @@
 # PowerShell Script: list-credits.ps1
 ```powershell
-list-credits.ps1
+Shows the credits for the PowerShell Scripts
 ```
 
-Shows the credits for the PowerShell Scripts
+list-credits.ps1
 
 ## Syntax & Parameters
 ```powershell

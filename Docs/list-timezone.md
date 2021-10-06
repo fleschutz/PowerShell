@@ -1,9 +1,9 @@
 # PowerShell Script: list-timezone.ps1
 ```powershell
-list-timezone.ps1
+Lists the details of the current time zone
 ```
 
-Lists the details of the current time zone
+list-timezone.ps1
 
 ## Syntax & Parameters
 ```powershell
@@ -19,6 +19,15 @@ Lists the details of the current time zone
 ## Example
 ```powershell
 PS>./list-timezone
+
+
+
+Id                         : Europe/Berlin
+DisplayName                : (UTC+01:00) Central European Standard Time
+StandardName               : Central European Standard Time
+DaylightName               : Central European Summer Time
+BaseUtcOffset              : 01:00:00
+SupportsDaylightSavingTime : True
 ```
 
 

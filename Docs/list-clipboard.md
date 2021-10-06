@@ -1,9 +1,9 @@
 # PowerShell Script: list-clipboard.ps1
 ```powershell
-list-clipboard.ps1
+Lists the contents of the clipboard
 ```
 
-Lists the contents of the clipboard
+list-clipboard.ps1
 
 ## Syntax & Parameters
 ```powershell

@@ -1,9 +1,9 @@
 # PowerShell Script: voice-control.ps1
 ```powershell
-voice-control.ps1
+Executes all the PowerShell scripts by voice
 ```
 
-Executes all the PowerShell scripts by voice.
+voice-control.ps1
 
 ## Syntax & Parameters
 ```powershell

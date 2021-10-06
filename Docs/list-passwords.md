@@ -1,9 +1,9 @@
 # PowerShell Script: list-passwords.ps1
 ```powershell
-list-passwords.ps1 [<password-length>] [<columns>] [<rows>]
+Prints a list of random passwords
 ```
 
-Prints a list of random passwords
+list-passwords.ps1 [<PasswordLength>] [<Columns>] [<Rows>]
 
 ## Syntax & Parameters
 ```powershell

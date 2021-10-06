@@ -1,9 +1,9 @@
 # PowerShell Script: check-ipv4-address.ps1
 ```powershell
-check-ipv4-address.ps1 [<address>]
+Checks the given IPv4 address for validity
 ```
 
-Checks the given IPv4 address for validity
+check-ipv4-address.ps1 [<Address>]
 
 ## Syntax & Parameters
 ```powershell
@@ -29,6 +29,7 @@ Checks the given IPv4 address for validity
 ## Example
 ```powershell
 PS>./check-ipv4-address 192.168.11.22
+✔️ IPv4 192.168.11.22 is valid
 ```
 
 

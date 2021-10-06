@@ -1,9 +1,9 @@
 # PowerShell Script: close-program.ps1
 ```powershell
-close-program.ps1 [<FullProgramName>] [<ProgramName>] [<ProgramAliasName>]
+Closes the processes of the given program gracefully
 ```
 
-Closes the processes of the given program gracefully
+close-program.ps1 [<FullProgramName>] [<ProgramName>] [<ProgramAliasName>]
 
 ## Syntax & Parameters
 ```powershell

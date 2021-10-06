@@ -1,9 +1,9 @@
 # PowerShell Script: replace-in-files.ps1
 ```powershell
-replace-in-files.ps1 [<pattern>] [<replacement>] [<files>]
+Search and replace a pattern in the given files by the replacement
 ```
 
-Search and replace a pattern in the given files by the replacement
+replace-in-files.ps1 [<pattern>] [<replacement>] [<files>]
 
 ## Syntax & Parameters
 ```powershell
@@ -48,7 +48,7 @@ Search and replace a pattern in the given files by the replacement
 
 ## Example
 ```powershell
-PS>./replace-in-files IO "Input Output" C:\Temp\*.txt
+PS>./replace-in-files NSA "No Such Agency" C:\Temp\*.txt
 ```
 
 

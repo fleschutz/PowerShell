@@ -1,9 +1,9 @@
 # PowerShell Script: enter-chat.ps1
 ```powershell
-enter-chat.ps1
+Enters a chat using a common network shared file
 ```
 
-Enters a chat using a common network shared file
+enter-chat.ps1
 
 ## Syntax & Parameters
 ```powershell

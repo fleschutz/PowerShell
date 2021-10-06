@@ -1,9 +1,9 @@
 # PowerShell Script: clean-repos.ps1
 ```powershell
-clean-repos.ps1 [<ParentDir>]
+Cleans all Git repositories in a folder from untracked files (including submodules)
 ```
 
-Cleans all Git repositories under the current/given directory from untracked files (including submodules)
+clean-repos.ps1 [<ParentDir>]
 
 ## Syntax & Parameters
 ```powershell

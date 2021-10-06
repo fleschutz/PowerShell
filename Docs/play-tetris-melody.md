@@ -1,9 +1,9 @@
 # PowerShell Script: play-tetris-melody.ps1
 ```powershell
-play-tetris-melody.ps1
+Plays the Tetris melody
 ```
 
-Plays the Tetris melody
+play-tetris-melody.ps1
 
 ## Syntax & Parameters
 ```powershell

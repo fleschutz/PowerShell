@@ -1,9 +1,9 @@
 # PowerShell Script: switch-branch.ps1
 ```powershell
-switch-branch.ps1 [<BranchName>] [<RepoDir>]
+Switches to another branch in a Git repository (including submodules)
 ```
 
-Switches to another branch in a Git repository (including submodules)
+switch-branch.ps1 [<BranchName>] [<RepoDir>]
 
 ## Syntax & Parameters
 ```powershell

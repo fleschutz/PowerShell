@@ -1,9 +1,10 @@
 # PowerShell Script: list-installed-apps.ps1
 ```powershell
-list-installed-apps.ps1
+Lists the installed apps
 ```
 
-Lists the installed apps (from Windows Store or snaps)
+Lists the installed apps (from Windows Store or snaps).
+list-installed-apps.ps1
 
 ## Syntax & Parameters
 ```powershell

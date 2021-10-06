@@ -1,9 +1,9 @@
 # PowerShell Script: speak-italian.ps1
 ```powershell
-speak-italian.ps1 [<text>]
+Speaks the given text with an Italian text-to-speech (TTS) voice
 ```
 
-Speaks the given text with an Italian text-to-speech (TTS) voice
+speak-italian.ps1 [<text>]
 
 ## Syntax & Parameters
 ```powershell

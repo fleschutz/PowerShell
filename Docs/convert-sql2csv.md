@@ -1,9 +1,9 @@
 # PowerShell Script: convert-sql2csv.ps1
 ```powershell
-convert-sql2csv.ps1 [<server>] [<database>] [<username>] [<password>] [<query>]
+Converts a SQL database table to a .CSV file
 ```
 
-Converts a SQL database table to a .CSV file
+convert-sql2csv.ps1 [<server>] [<database>] [<username>] [<password>] [<query>]
 
 ## Syntax & Parameters
 ```powershell

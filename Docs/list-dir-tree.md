@@ -1,9 +1,10 @@
 # PowerShell Script: list-dir-tree.ps1
 ```powershell
-list-dir-tree.ps1 [<dir-tree>]
+Lists the full directory tree
 ```
 
-Lists the full directory tree
+list-dir-tree.ps1 [<DirTree>]
+<DirTree> is the path to the directory tree
 
 ## Syntax & Parameters
 ```powershell

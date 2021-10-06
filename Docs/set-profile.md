@@ -1,9 +1,9 @@
 # PowerShell Script: set-profile.ps1
 ```powershell
-set-profile.ps1
+Sets the PowerShell profile for the current user
 ```
 
-Sets the PowerShell profile for the current user
+set-profile.ps1
 
 ## Syntax & Parameters
 ```powershell

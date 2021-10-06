@@ -1,9 +1,9 @@
 # PowerShell Script: list-modules.ps1
 ```powershell
-list-modules.ps1
+Lists all PowerShell modules
 ```
 
-Lists all PowerShell modules
+list-modules.ps1
 
 ## Syntax & Parameters
 ```powershell
@@ -19,6 +19,13 @@ Lists all PowerShell modules
 ## Example
 ```powershell
 PS>./list-modules
+
+
+
+ModuleType Version    Name                                ExportedCommands
+---------- -------    ----                                ----------------
+Manifest   3.1.0.0    Microsoft.PowerShell.Management     {Add-Computer, Add-Content, Checkpoint-Computer...}
+Manifest   3.1.0.0    Microsoft.PowerShell.Utility        {Add-Member, Add-Type, Clear-Variable...}
 ```
 
 

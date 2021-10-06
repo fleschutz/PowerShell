@@ -1,17 +1,17 @@
 # PowerShell Script: new-zipfile.ps1
 ```powershell
-new-zipfile.ps1 [<directory>]
+Creates a new .ZIP file from a folder (including subfolders)
 ```
 
-Creates a new .zip file from a directory
+new-zipfile.ps1 [<folder>]
 
 ## Syntax & Parameters
 ```powershell
-/home/markus/Repos/PowerShell/Scripts/new-zipfile.ps1 [[-directory] <String>] [<CommonParameters>]
+/home/markus/Repos/PowerShell/Scripts/new-zipfile.ps1 [[-folder] <String>] [<CommonParameters>]
 ```
 
 ```
--directory <String>
+-folder <String>
     
     Required?                    false
     Position?                    1

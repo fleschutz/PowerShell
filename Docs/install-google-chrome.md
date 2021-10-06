@@ -1,9 +1,9 @@
 # PowerShell Script: install-google-chrome.ps1
 ```powershell
-install-google-chrome.ps1
+Installs the latest Google Chrome browser
 ```
 
-Installs the latest Google Chrome browser
+install-google-chrome.ps1
 
 ## Syntax & Parameters
 ```powershell

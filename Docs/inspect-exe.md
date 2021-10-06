@@ -1,9 +1,9 @@
 # PowerShell Script: inspect-exe.ps1
 ```powershell
-inspect-exe.ps1 [<path-to-exe-file>]
+Prints basic information of an executable file
 ```
 
-Prints basic information of the given executable file
+inspect-exe.ps1 [<path-to-exe-file>]
 
 ## Syntax & Parameters
 ```powershell

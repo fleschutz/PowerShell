@@ -1,9 +1,9 @@
 # PowerShell Script: list-recycle-bin.ps1
 ```powershell
-list-recycle-bin.ps1
+Lists the content of the recycle bin folder
 ```
 
-Lists the content of the recycle bin folder
+list-recycle-bin.ps1
 
 ## Syntax & Parameters
 ```powershell

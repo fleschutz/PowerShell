@@ -1,9 +1,9 @@
 # PowerShell Script: write-red.ps1
 ```powershell
-write-red.ps1 [<text>]
+Writes text in a red foreground color
 ```
 
-Writes the given text in a red foreground color
+write-red.ps1 [<text>]
 
 ## Syntax & Parameters
 ```powershell

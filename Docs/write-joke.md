@@ -1,9 +1,9 @@
 # PowerShell Script: write-joke.ps1
 ```powershell
-write-joke.ps1
+Writes a random Juck Norris joke to the console
 ```
 
-Writes a random Juck Norris joke to the console
+write-joke.ps1
 
 ## Syntax & Parameters
 ```powershell
@@ -19,6 +19,7 @@ Writes a random Juck Norris joke to the console
 ## Example
 ```powershell
 PS>./write-joke
+When Chuck Norris does division, there are no remainders. 😂
 ```
 
 

@@ -1,9 +1,9 @@
 # PowerShell Script: open-email-client.ps1
 ```powershell
-open-email-client.ps1
+Starts the default email client
 ```
 
-Starts the default email client
+open-email-client.ps1
 
 ## Syntax & Parameters
 ```powershell

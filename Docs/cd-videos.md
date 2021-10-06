@@ -1,9 +1,9 @@
 # PowerShell Script: cd-videos.ps1
 ```powershell
-cd-videos.ps1
+Change the working directory to the user's videos folder
 ```
 
-Change the working directory to the user's videos folder
+cd-videos.ps1
 
 ## Syntax & Parameters
 ```powershell
@@ -19,6 +19,7 @@ Change the working directory to the user's videos folder
 ## Example
 ```powershell
 PS>./cd-videos
+📂/home/markus/Videos
 ```
 
 

@@ -1,9 +1,9 @@
 # PowerShell Script: set-timer.ps1
 ```powershell
-set-timer.ps1 [<seconds>]
+Sets a timer for a countdown
 ```
 
-Sets a timer for a countdown
+set-timer.ps1 [<seconds>]
 
 ## Syntax & Parameters
 ```powershell

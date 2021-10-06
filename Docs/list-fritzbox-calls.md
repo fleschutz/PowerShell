@@ -1,9 +1,9 @@
 # PowerShell Script: list-fritzbox-calls.ps1
 ```powershell
-list-fritzbox-calls.ps1 [<username>] [<password>]
+Lists the phone calls of the FRITZ!Box device
 ```
 
-Lists the phone calls of the FRITZ!Box device
+list-fritzbox-calls.ps1 [<Username>] [<Password>]
 
 ## Syntax & Parameters
 ```powershell

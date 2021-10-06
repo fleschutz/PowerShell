@@ -1,9 +1,9 @@
 # PowerShell Script: close-cortana.ps1
 ```powershell
-close-cortana.ps1
+Closes Microsoft's Cortana application
 ```
 
-Closes Cortana gracefully
+close-cortana.ps1
 
 ## Syntax & Parameters
 ```powershell

@@ -1,9 +1,10 @@
 # PowerShell Script: list-installed-software.ps1
 ```powershell
-list-installed-software.ps1
+Lists the installed software
 ```
 
 Lists the installed software (except Windows Store apps)
+list-installed-software.ps1
 
 ## Syntax & Parameters
 ```powershell

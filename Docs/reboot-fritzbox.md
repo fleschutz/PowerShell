@@ -1,17 +1,17 @@
 # PowerShell Script: reboot-fritzbox.ps1
 ```powershell
-reboot-fritzbox.ps1 [<username>] [<password>]
+Reboots the FRITZ!Box device
 ```
 
-Reboots the FRITZ!Box device
+reboot-fritzbox.ps1 [<Username>] [<Password>]
 
 ## Syntax & Parameters
 ```powershell
-/home/markus/Repos/PowerShell/Scripts/reboot-fritzbox.ps1 [[-USERNAME] <String>] [[-PASSWORD] <String>] [<CommonParameters>]
+/home/markus/Repos/PowerShell/Scripts/reboot-fritzbox.ps1 [[-Username] <String>] [[-Password] <String>] [<CommonParameters>]
 ```
 
 ```
--USERNAME <String>
+-Username <String>
     
     Required?                    false
     Position?                    1
@@ -21,7 +21,7 @@ Reboots the FRITZ!Box device
 ```
 
 ```
--PASSWORD <String>
+-Password <String>
     
     Required?                    false
     Position?                    2

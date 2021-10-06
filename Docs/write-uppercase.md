@@ -1,9 +1,9 @@
 # PowerShell Script: write-uppercase.ps1
 ```powershell
-write-uppercase.ps1 [<text>]
+Writes text in uppercase letters
 ```
 
-Writes the given text in uppercase letters
+write-uppercase.ps1 [<text>]
 
 ## Syntax & Parameters
 ```powershell

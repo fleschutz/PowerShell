@@ -1,9 +1,9 @@
 # PowerShell Script: list-os-updates.ps1
 ```powershell
-list-os-updates.ps1 [<RSS-URL>] [<max-count>]
+Lists the latest operating system updates
 ```
 
-Lists the latest operating system updates
+list-os-updates.ps1 [<RSS-URL>] [<max-count>]
 
 ## Syntax & Parameters
 ```powershell

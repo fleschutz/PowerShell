@@ -1,9 +1,9 @@
 # PowerShell Script: edit.ps1
 ```powershell
-edit.ps1 <filename>
+Opens the built-in text editor to edit the given file
 ```
 
-Opens the built-in text editor to edit the given file
+edit.ps1 <filename>
 
 ## Syntax & Parameters
 ```powershell

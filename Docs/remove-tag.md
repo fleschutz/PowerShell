@@ -1,9 +1,9 @@
 # PowerShell Script: remove-tag.ps1
 ```powershell
-remove-tag.ps1 [<TagName>] [<Mode>] [<RepoDir>]
+Removes a Git tag (locally, remote, or both)
 ```
 
-Removes a Git tag (locally, remote, or both)
+remove-tag.ps1 [<TagName>] [<Mode>] [<RepoDir>]
 
 ## Syntax & Parameters
 ```powershell

@@ -1,9 +1,9 @@
 # PowerShell Script: speak-text.ps1
 ```powershell
-speak-text.ps1 [<text>]
+Speaks the given text by the default text-to-speech (TTS) voice
 ```
 
-Speaks the given text by the default text-to-speech (TTS) voice
+speak-text.ps1 [<text>]
 
 ## Syntax & Parameters
 ```powershell

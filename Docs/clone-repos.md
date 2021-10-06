@@ -1,17 +1,17 @@
 # PowerShell Script: clone-repos.ps1
 ```powershell
-clone-repos.ps1 [<ParentDir>]
+Clones well-known Git repositories into a folder
 ```
 
-Clones well-known Git repositories under the current/given directory
+clone-repos.ps1 [<folder>]
 
 ## Syntax & Parameters
 ```powershell
-/home/markus/Repos/PowerShell/Scripts/clone-repos.ps1 [[-ParentDir] <String>] [<CommonParameters>]
+/home/markus/Repos/PowerShell/Scripts/clone-repos.ps1 [[-folder] <String>] [<CommonParameters>]
 ```
 
 ```
--ParentDir <String>
+-folder <String>
     
     Required?                    false
     Position?                    1
@@ -28,7 +28,7 @@ Clones well-known Git repositories under the current/given directory
 
 ## Example
 ```powershell
-PS>./clone-repos C:\MyRepos
+PS>./clone-repos C:\Users\Markus\Repos
 ```
 
 

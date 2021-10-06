@@ -1,9 +1,9 @@
 # PowerShell Script: cd-desktop.ps1
 ```powershell
-cd-desktop.ps1
+Change the working directory to the user's desktop folder
 ```
 
-Change the working directory to the user's desktop folder
+cd-desktop.ps1
 
 ## Syntax & Parameters
 ```powershell
@@ -19,6 +19,7 @@ Change the working directory to the user's desktop folder
 ## Example
 ```powershell
 PS>./cd-desktop
+📂/home/markus/Desktop
 ```
 
 

@@ -1,9 +1,9 @@
 # PowerShell Script: list-mysql-tables.ps1
 ```powershell
-list-mysql-tables.ps1
+Lists all tables of a MySQL database
 ```
 
-Lists the MySQL tables
+list-mysql-tables.ps1
 
 ## Syntax & Parameters
 ```powershell

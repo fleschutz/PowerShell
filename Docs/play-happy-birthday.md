@@ -1,9 +1,9 @@
 # PowerShell Script: play-happy-birthday.ps1
 ```powershell
-play-happy-birthday.ps1
+Plays the Happy Birthday song
 ```
 
-Plays the Happy Birthday song
+play-happy-birthday.ps1
 
 ## Syntax & Parameters
 ```powershell

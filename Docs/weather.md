@@ -1,9 +1,9 @@
 # PowerShell Script: weather.ps1
 ```powershell
-weather.ps1 [<GeoLocation>]
+Lists the current weather forecast
 ```
 
-Prints the current weather forecast
+weather.ps1 [<GeoLocation>]
 
 ## Syntax & Parameters
 ```powershell

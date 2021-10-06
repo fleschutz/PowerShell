@@ -1,9 +1,9 @@
 # PowerShell Script: list-system-info.ps1
 ```powershell
-list-system-info.ps1
+Lists system information of the local computer
 ```
 
-Lists system information on the local computer
+list-system-info.ps1
 
 ## Syntax & Parameters
 ```powershell

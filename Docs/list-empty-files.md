@@ -1,9 +1,10 @@
 # PowerShell Script: list-empty-files.ps1
 ```powershell
-list-empty-files.ps1 [<dir-tree>]
+Lists empty files within a directory tree
 ```
 
-Lists empty files within the given directory tree
+list-empty-files.ps1 [<DirTree>]
+<DirTree> is the path to the directory tree
 
 ## Syntax & Parameters
 ```powershell

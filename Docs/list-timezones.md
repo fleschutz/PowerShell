@@ -1,9 +1,9 @@
 # PowerShell Script: list-timezones.ps1
 ```powershell
-list-timezones.ps1
+Lists all available time zones
 ```
 
-Lists all available time zones
+list-timezones.ps1
 
 ## Syntax & Parameters
 ```powershell
@@ -19,6 +19,15 @@ Lists all available time zones
 ## Example
 ```powershell
 PS>./list-timezones
+
+
+
+Id                              DisplayName                            SupportsDaylight
+                                                                              SavingTime
+--                              -----------                            ----------------
+Hawaiian Standard Time          (UTC-10:00) Hawaii                     False
+Alaskan Standard Time           (UTC-09:00) Alaska                     True
+...
 ```
 
 

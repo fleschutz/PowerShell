@@ -1,9 +1,9 @@
 # PowerShell Script: cd-downloads.ps1
 ```powershell
-cd-downloads.ps1
+Change the working directory to the user's downloads folder
 ```
 
-Change the working directory to the user's downloads folder
+cd-downloads.ps1
 
 ## Syntax & Parameters
 ```powershell
@@ -19,6 +19,7 @@ Change the working directory to the user's downloads folder
 ## Example
 ```powershell
 PS>./cd-downloads
+📂/home/markus/Downloads
 ```
 
 

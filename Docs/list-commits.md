@@ -1,9 +1,9 @@
 # PowerShell Script: list-commits.ps1
 ```powershell
-list-commits.ps1 [<RepoDir>] [<Format>]
+Lists all commits in a Git repository
 ```
 
-Lists all commits in a Git repository (format is: list|compact|normal|JSON)
+list-commits.ps1 [<RepoDir>] [<Format>]
 
 ## Syntax & Parameters
 ```powershell
@@ -12,6 +12,7 @@ Lists all commits in a Git repository (format is: list|compact|normal|JSON)
 
 ```
 -RepoDir <String>
+    Specifies the path to the Git repository.
     
     Required?                    false
     Position?                    1
@@ -22,6 +23,7 @@ Lists all commits in a Git repository (format is: list|compact|normal|JSON)
 
 ```
 -Format <String>
+    Specifies the output format: list|compact|normal|JSON
     
     Required?                    false
     Position?                    2
@@ -39,6 +41,14 @@ Lists all commits in a Git repository (format is: list|compact|normal|JSON)
 ## Example
 ```powershell
 PS>./list-commits
+
+
+
+ID      Date                            Committer               Description
+--      ----                            ---------               -----------
+ccd0d3e Wed Sep 29 08:28:20 2021 +0200  Markus Fleschutz        Fix typo
+291d785 Wed Sep 29 08:18:28 2021 +0200  Markus Fleschutz        Update README.md
+...
 ```
 
 

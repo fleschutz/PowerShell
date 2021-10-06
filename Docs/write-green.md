@@ -1,9 +1,9 @@
 # PowerShell Script: write-green.ps1
 ```powershell
-write-green.ps1 [<text>]
+Writes text in a green foreground color
 ```
 
-Writes the given text in a green foreground color
+write-green.ps1 [<text>]
 
 ## Syntax & Parameters
 ```powershell

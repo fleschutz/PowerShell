@@ -1,9 +1,9 @@
 # PowerShell Script: check-cpu-temp.ps1
 ```powershell
-check-cpu-temp.ps1
+Checks the CPU temperature
 ```
 
-Checks the CPU temperature
+check-cpu-temp.ps1
 
 ## Syntax & Parameters
 ```powershell
@@ -19,6 +19,7 @@ Checks the CPU temperature
 ## Example
 ```powershell
 PS>./check-cpu-temp
+✔️ 30.3 °C CPU temperature - good
 ```
 
 

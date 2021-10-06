@@ -1,9 +1,9 @@
 # PowerShell Script: list-news.ps1
 ```powershell
-list-news.ps1 [<RSS-URL>] [<max-count>]
+Lists the latest news
 ```
 
-Lists the latest news
+list-news.ps1 [<RSS-URL>] [<max-count>]
 
 ## Syntax & Parameters
 ```powershell
