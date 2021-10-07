@@ -2,10 +2,16 @@
 .SYNOPSIS
 	Sends a magic packet to a computer to wake him up
 .DESCRIPTION
-	Sends a magic packet to a computer to wake him up (requires Wake-On-LAN)
-	wakeup.ps1 [<MAC-address>] [<IP-address>]
+	Sends a magic UDP packet twice to a computer to wake him up (requires Wake-On-LAN).
+.PARAMETER MACaddress
+	Specifies the host's MAC address (e.g. 11:22:33:44:55:66)
+.PARAMETER IPaddress
+	Specifies the host's IP address or subnet address (e.g. 255.255.255.255)
+.PARAMETER Port
+	Specifies the UDP port (9 by default)
 .EXAMPLE
 	PS> ./wakeup 11:22:33:44:55:66 192.168.100.100
+	(PC wakes up)
 .NOTES
 	Author: Markus Fleschutz · License: CC0
 .LINK
@@ -14,7 +20,7 @@
 
 param([string]$MACaddress = "", [string]$IPaddress = "", [int]$Port=9)
 	
-function Send-WOL { param([string]$mac, [string]$ip="255.255.255.255", [int]$port=9) 
+function Send-WOL { param([string]$mac, [string]$ip, [int]$port) 
 	$broadcast = [Net.IPAddress]::Parse($ip) 
   
 	$mac=(($mac.replace(":","")).replace("-","")).replace(".","") 
