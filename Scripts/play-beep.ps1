@@ -11,5 +11,6 @@
 	https://github.com/fleschutz/PowerShell
 #>
 
-[console]::beep(500,300)
+[System.Console]::Beep(500,300)
+start-sleep -m 300
 exit 0 # success
