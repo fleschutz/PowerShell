@@ -1,6 +1,6 @@
 ﻿<#
 .SYNOPSIS
-	Lists the network shares of the local computer
+	Lists all network shares of the local computer
 .DESCRIPTION
 	list-network-shares.ps1 
 .EXAMPLE
