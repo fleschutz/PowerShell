@@ -2,7 +2,7 @@
 .SYNOPSIS
 	Mutes the audio output
 .DESCRIPTION
-	mute-audio.ps1
+	This script mutes the default audio device immediately.
 .EXAMPLE
 	PS> ./mute-audio
 .NOTES
