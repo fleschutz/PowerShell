@@ -69,7 +69,7 @@ Mega Collection of PowerShell Scripts
 | [install-wsl.ps1](Scripts/install-wsl.ps1)           | Installs Windows Subsystem for Linux (WSL), needs admin rights     | [Help](Docs/install-wsl.md)         |
 | [list-cli-tools.ps1](Scripts/list-cli-tools.ps1)     | Lists available command-line interface (CLI) tools                 | [Help](Docs/list-cli-tools.md)      |
 | [list-drives.ps1](Scripts/list-drives.ps1)           | Lists all drives                                                   | [Help](Docs/list-drives.md)         |
-| [list-network-shares.ps1](Scripts/list-network-shares.ps1) | Lists the network shares of the local computer               | [Help](Docs/list-network-shares.md) |
+| [list-network-shares.ps1](Scripts/list-network-shares.ps1) | Lists all network shares of the local computer               | [Help](Docs/list-network-shares.md) |
 | [list-installed-apps.ps1](Scripts/list-installed-apps.ps1) | Lists the installed Windows Store apps                       | [Help](Docs/list-installed-apps.md) |
 | [list-installed-software.ps1](Scripts/list-installed-software.ps1) | Lists the installed software (except Windows Store apps) | [Help](Docs/list-installed-software.md)|
 | [list-printers.ps1](Scripts/list-printers.ps1)       | Lists all printer known to the computer                            | [Help](Docs/list-printers.md)       |
