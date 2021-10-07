@@ -1,8 +1,8 @@
 ﻿<#
 .SYNOPSIS
-	Plays a short beep sound
+	Plays a beep sound
 .DESCRIPTION
-	play-beep.ps1
+	This script plays a short beep sound.
 .EXAMPLE
 	PS> ./play-beep
 .NOTES
