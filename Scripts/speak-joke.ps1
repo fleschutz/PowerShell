@@ -1,10 +1,11 @@
 ﻿<#
 .SYNOPSIS
-	Speaks a random Chuck Norris joke by text-to-speech (TTS)
+	Speaks a random Chuck Norris joke by text-to-speech
 .DESCRIPTION
-	speak-joke.ps1
+	This script selects a random joke in Data/jokes.csv and uses text-to-speech (TTS) for output.
 .EXAMPLE
 	PS> ./speak-joke
+	(listen and have fun)
 .NOTES
 	Author: Markus Fleschutz · License: CC0
 .LINK
@@ -13,10 +14,9 @@
 
 try {
 	$Table = import-csv "$PSScriptRoot/../Data/jokes.csv"
-	$NumRows = $Table.count
 
 	$Generator = New-Object System.Random
-	$Index = [int]$Generator.next(0,$NumRows - 1)
+	$Index = [int]$Generator.next(0, $Table.Count - 1)
 	$Joke = $Table[$Index].Joke
 
 	& "$PSScriptRoot/speak-english.ps1" "$Joke"
