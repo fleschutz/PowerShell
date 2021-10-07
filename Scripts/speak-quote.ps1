@@ -1,10 +1,11 @@
 ﻿<#
 .SYNOPSIS
-	Speaks a random quote by text-to-speech (TTS)
+	Speaks a random quote by text-to-speech
 .DESCRIPTION
-	speak-quote.ps1
+	This script selects a random quote in Data/quotes.csv and uses text-to-speech (TTS) for output.
 .EXAMPLE
 	PS> ./speak-quote
+	(listen and learn)
 .NOTES
 	Author: Markus Fleschutz · License: CC0
 .LINK
@@ -13,10 +14,9 @@
 
 try {
 	$Table = import-csv "$PSScriptRoot/../Data/quotes.csv"
-	$NumRows = $Table.count
 
 	$Generator = New-Object System.Random
-	$Index = [int]$Generator.next(0,$NumRows - 1)
+	$Index = [int]$Generator.next(0, $Table.Count - 1)
 	$Quote = $Table[$Index].Quote
 	$Author = $Table[$Index].Author
 
