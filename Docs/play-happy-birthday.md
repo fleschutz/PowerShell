@@ -1,6 +1,6 @@
 ## play-happy-birthday.ps1 - Plays the Happy Birthday song
 
-play-happy-birthday.ps1
+This script plays the well-known Happy Birthday song.
 
 ## Parameters
 ```powershell
@@ -14,6 +14,7 @@ play-happy-birthday.ps1 [<CommonParameters>]
 ## Example
 ```powershell
 PS>./play-happy-birthday
+(listen and enjoy)
 ```
 
 ## Notes

@@ -1,13 +1,13 @@
 ## wakeup.ps1 - Sends a magic packet to a computer to wake him up
 
-Sends a magic packet to a computer to wake him up (requires Wake-On-LAN)
-wakeup.ps1 [<MAC-address>] [<IP-address>]
+Sends a magic UDP packet twice to a computer to wake him up (requires Wake-On-LAN).
 
 ## Parameters
 ```powershell
 wakeup.ps1 [[-MACaddress] <String>] [[-IPaddress] <String>] [[-Port] <Int32>] [<CommonParameters>]
 
 -MACaddress <String>
+    Specifies the host's MAC address (e.g. 11:22:33:44:55:66)
     
     Required?                    false
     Position?                    1
@@ -16,6 +16,7 @@ wakeup.ps1 [[-MACaddress] <String>] [[-IPaddress] <String>] [[-Port] <Int32>] [<
     Accept wildcard characters?  false
 
 -IPaddress <String>
+    Specifies the host's IP address or subnet address (e.g. 255.255.255.255)
     
     Required?                    false
     Position?                    2
@@ -24,6 +25,7 @@ wakeup.ps1 [[-MACaddress] <String>] [[-IPaddress] <String>] [[-Port] <Int32>] [<
     Accept wildcard characters?  false
 
 -Port <Int32>
+    Specifies the UDP port (9 by default)
     
     Required?                    false
     Position?                    3
@@ -39,6 +41,7 @@ wakeup.ps1 [[-MACaddress] <String>] [[-IPaddress] <String>] [[-Port] <Int32>] [<
 ## Example
 ```powershell
 PS>./wakeup 11:22:33:44:55:66 192.168.100.100
+(PC wakes up)
 ```
 
 ## Notes

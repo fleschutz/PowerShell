@@ -1,4 +1,4 @@
-## list-network-shares.ps1 - Lists the network shares of the local computer
+## list-network-shares.ps1 - Lists all network shares of the local computer
 
 list-network-shares.ps1
 

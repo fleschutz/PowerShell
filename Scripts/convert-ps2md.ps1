@@ -70,7 +70,7 @@ try {
 	"## Parameters"
 	"``````powershell"
 	$Syntax = (($full.syntax | Out-String) -replace "`r`n", "`r`n").Trim()
-	$Syntax = (($Syntax | Out-String) -replace "/home/markus/Repos/PowerShell/Scripts/", "")
+	$Syntax = (($Syntax | Out-String) -replace "/home/mf/PowerShell/Scripts/", "")
 	if ($Syntax -ne "") {
 		"$Syntax"
 	}

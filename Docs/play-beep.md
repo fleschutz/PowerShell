@@ -1,6 +1,6 @@
-## play-beep.ps1 - Plays a short beep sound
+## play-beep.ps1 - Plays a beep sound
 
-play-beep.ps1
+This script plays a short beep sound.
 
 ## Parameters
 ```powershell

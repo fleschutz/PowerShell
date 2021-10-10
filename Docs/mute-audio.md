@@ -1,6 +1,6 @@
 ## mute-audio.ps1 - Mutes the audio output
 
-mute-audio.ps1
+This script mutes the default audio device immediately.
 
 ## Parameters
 ```powershell

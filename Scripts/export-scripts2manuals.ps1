@@ -1,31 +1,32 @@
 ﻿<#
 .SYNOPSIS
-	← enter overview of script here
+	Generates manuals from the scripts 
 .DESCRIPTION
-	← enter brief description of script here
-.INPUTS
-	← enter inputs here (if any, otherwise state None)
-.OUTPUTS
-	← enter outputs here (if any, otherwise state None)
+	This script exports the comment based help of all scripts to the manuals.
 .EXAMPLE
-	PS> .\template.ps1 ← enter example here (repeat this attribute for more than one example)
+	PS> ./export-scripts2manuals.ps1
 .NOTES
-	Author:        ← enter full name here
-	License:       ← enter license here
+	Author: Markus Fleschutz · License: CC0
 .LINK
-	← enter URL here
+	https://github.com/fleschutz/PowerShell
 #>
 
-#requires -version 4
+#requires -version 2
 
-param() # ← enter script parameters here
-
-#	← enter functions here 
+param([string]$FilePattern = "$PSScriptRoot/*.ps1")
 
 try {
-#	← enter instructions here 
+	$StopWatch = [system.diagnostics.stopwatch]::startNew()
 
-	"✔️ Done."
+	$Scripts = Get-ChildItem "$FilePattern"
+	"Found $($Scripts.Count) scripts, starting export..."
+
+	foreach ($Script in $Scripts) {
+		& "$PSScriptRoot/convert-ps2md" "$Script" > "$PSScriptRoot/../Docs/$($Script.BaseName).md"
+	}
+
+	[int]$Elapsed = $StopWatch.Elapsed.TotalSeconds
+	"✔️ exported $($Scripts.Count) scripts to manuals in $Elapsed sec"
 	exit 0
 } catch {
 	write-error "⚠️ Error in line $($_.InvocationInfo.ScriptLineNumber): $($Error[0])"

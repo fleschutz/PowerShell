@@ -1,6 +1,6 @@
-## speak-quote.ps1 - Speaks a random quote by text-to-speech (TTS)
+## speak-quote.ps1 - Speaks a random quote by text-to-speech
 
-speak-quote.ps1
+This script selects a random quote in Data/quotes.csv and uses text-to-speech (TTS) for output.
 
 ## Parameters
 ```powershell
@@ -14,6 +14,7 @@ speak-quote.ps1 [<CommonParameters>]
 ## Example
 ```powershell
 PS>./speak-quote
+(listen and learn)
 ```
 
 ## Notes

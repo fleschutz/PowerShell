@@ -1,6 +1,6 @@
-## list-voices.ps1 - Lists the installed text-to-speech (TTS) voices
+## list-voices.ps1 - Lists the installed text-to-speech voices
 
-list-voices.ps1
+This script lists the installed text-to-speech voices. It requires PowerShell 2.0 or higher.
 
 ## Parameters
 ```powershell

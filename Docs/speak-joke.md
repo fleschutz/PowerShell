@@ -1,6 +1,6 @@
-## speak-joke.ps1 - Speaks a random Chuck Norris joke by text-to-speech (TTS)
+## speak-joke.ps1 - Speaks a random Chuck Norris joke by text-to-speech
 
-speak-joke.ps1
+This script selects a random joke in Data/jokes.csv and uses text-to-speech (TTS) for output.
 
 ## Parameters
 ```powershell
@@ -14,6 +14,7 @@ speak-joke.ps1 [<CommonParameters>]
 ## Example
 ```powershell
 PS>./speak-joke
+(listen and have fun)
 ```
 
 ## Notes
