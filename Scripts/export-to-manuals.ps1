@@ -4,7 +4,7 @@
 .DESCRIPTION
 	This script exports the comment based help of all PowerShell scripts as manuals.
 .EXAMPLE
-	PS> ./export-scripts2manuals.ps1
+	PS> ./export-to-manuals.ps1
 	Found 264 scripts, starting export to /home/markus/PowerShell/Docs...
 	✔️ exported 264 scripts as manuals in 28 sec
 .NOTES

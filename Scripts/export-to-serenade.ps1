@@ -4,7 +4,7 @@
 .DESCRIPTION
 	This script exports all PowerShell scripts to Serenade.ai for voice control.
 .EXAMPLE
-	PS> ./export-scripts2serenade.ps1
+	PS> ./export-to-serenade.ps1
 	Found 264 scripts, starting export to C:\Users\Markus/.serenade/scripts/PowerShell.js...
 	✔️ exported 264 PowerShell scripts for Serenade voice control in 22 sec
 .NOTES
