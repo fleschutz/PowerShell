@@ -23,6 +23,6 @@ del alias:pwd -force -errorAction SilentlyContinue
 set-alias -name pwd -value list-workdir.ps1	# pwd = print working directory
 set-alias -name ll -value get-childitem		# ll = list long
 del alias:ls -force -errorAction SilentlyContinue
-set-alias -name ls -value list-dir.ps1
+set-alias -name ls -value list-folder.ps1
 set-alias -name .. -value cd-up.ps1		# 1 dir level up
 set-alias -name ... -value cd-up2.ps1		# 2 dir levels up

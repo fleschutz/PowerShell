@@ -100,7 +100,6 @@ list-cli-tools.ps1, Lists available command-line interface (CLI) tools
 list-clipboard.ps1, Lists the contents of the clipboard
 list-credits.ps1, Shows the credits
 list-crypto-rates.ps1, Lists the current crypto exchange rates 
-list-dir.ps1, Lists the directory content (formatted in columns)
 list-dir-tree.ps1, Lists the directory tree content 
 list-drives.ps1, Lists all drives
 list-environment-variables.ps1, Lists all environment variables
@@ -108,6 +107,7 @@ list-emojis.ps1, Lists the emojis of Unicode 13.0
 list-empty-dirs.ps1, Lists empty subfolders within the given directory tree
 list-empty-files.ps1, Lists empty files within the given directory tree
 list-files.ps1, Lists all files in the given folder and also in every subfolder
+list-folder.ps1, Lists the folder content 
 list-fritzbox-calls.ps1, Lists the FRITZ!Box calls
 list-fritzbox-devices.ps1, Lists FRITZ!Box's known devices 
 list-hidden-files.ps1, Lists hidden files within the given directory tree

@@ -158,11 +158,11 @@ Mega Collection of PowerShell Scripts
 | [get-sha1.ps1](Scripts/get-sha1.ps1)                 | Prints the SHA1 checksum of the given file                         | [Help](Docs/get-sha1.md)            |
 | [get-sha256.ps1](Scripts/get-sha256.ps1)             | Prints the SHA256 checksum of the given file                       | [Help](Docs/get-sha256.md)          |
 | [inspect-exe.ps1](Scripts/inspect-exe.ps1)           | Prints basic information of the given executable file              | [Help](Docs/inspect-exe.md)         |
-| [list-dir.ps1](Scripts/list-dir.ps1)                 | Lists the directory content (formatted in columns)                 | [Help](Docs/list-dir.md)            |
 | [list-dir-tree.ps1](Scripts/list-dir-tree.ps1)       | Lists the directory tree content                                   | [Help](Docs/list-dir-treep.md)      |
 | [list-empty-dirs.ps1](Scripts/list-empty-dirs.ps1)   | Lists empty subfolders within the given directory tree             | [Help](Docs/list-empty-dirs.md)     |
 | [list-empty-files.ps1](Scripts/list-empty-files.ps1) | Lists empty files within the given directory tree                  | [Help](Docs/list-empty-files.md)    |
 | [list-files.ps1](Scripts/list-files.ps1)             | Lists all files in the given folder and also in every subfolder    | [Help](Docs/list-files.md)          |
+| [list-folder.ps1](Scripts/list-folder.ps1)           | Lists the folder content                                           | [Help](Docs/list-folder.md)            |
 | [list-hidden-files.ps1](Scripts/list-hidden-files.ps1) | Lists hidden files within the given directory tree               | [Help](Docs/list-hidden-files.md)   |
 | [list-recycle-bin.ps1](Scripts/list-recycle-bin.ps1) | Lists the content of the recycle bin folder                        | [Help](Docs/list-recycle-bin.md)    |
 | [list-unused-files.ps1](Scripts/list-unused-files.ps1) | Lists unused files in a directory tree                           | [Help](Docs/list-unused-files.md)   |

@@ -1,11 +1,12 @@
 ﻿<#
 .SYNOPSIS
-	Lists the directory content formatted in columns
+	Lists the folder content 
 .DESCRIPTION
-	list-dir.ps1 [<SearchPattern>]
-	<SearchPattern> is "*" (anything) by default
+	This script lists the directory content formatted in columns.
+.PARAMETER SearchPattern
+	Specifies the search pattern, "*" by default (means anything) 
 .EXAMPLE
-	PS> ./list-dir C:\
+	PS> ./list-folder C:\
 .NOTES
 	Author: Markus Fleschutz · License: CC0
 .LINK
@@ -14,7 +15,7 @@
 
 param([string]$SearchPattern = "*")
 
-function ListDir { param([string]$SearchPattern)
+function ListFolder { param([string]$SearchPattern)
 	$Items = get-childItem -path "$SearchPattern"
 	foreach ($Item in $Items) {
 		$Name = $Item.Name
@@ -29,7 +30,7 @@ function ListDir { param([string]$SearchPattern)
 }
 
 try {
-	ListDir $SearchPattern | format-wide -autoSize
+	ListFolder $SearchPattern | format-wide -autoSize
 	exit 0 # success
 } catch {
 	"⚠️ Error: $($Error[0]) ($($MyInvocation.MyCommand.Name):$($_.InvocationInfo.ScriptLineNumber))"
