@@ -5,6 +5,8 @@
 	This script exports all PowerShell scripts to Serenade.ai for voice control.
 .EXAMPLE
 	PS> ./export-scripts2serenade.ps1
+	Found 264 scripts, starting export to C:\Users\Markus/.serenade/scripts/PowerShell.js...
+	✔️ exported 264 PowerShell scripts for Serenade voice control in 22 sec
 .NOTES
 	Author: Markus Fleschutz · License: CC0
 .LINK
@@ -19,22 +21,22 @@ try {
 	$StopWatch = [system.diagnostics.stopwatch]::startNew()
 
 	$Scripts = Get-ChildItem "$FilePattern"
-	"Found $($Scripts.Count) scripts, starting export to $TargetFile..."
+	"Found $($Scripts.Count) scripts, exporting to $TargetFile..."
 
-	copy-file "$PSScriptRoot/Data/Templates/serenade.txt" "$TargetFile" -force
+	"/* Exported by export-scripts2serenade.ps1 */" | Set-Content "$TargetFile"
 	foreach ($Script in $Scripts) {
 		$ScriptName = $Script.basename
 		$Keyword = $ScriptName -replace "-"," "
-		"" >> $TargetFile
-		"serenade.global().command(`"$Keyword`", async (api) => {" >> $TargetFile
-		"await api.focusOrLaunchApplication(`"terminal`");" >> $TargetFile
-		"await api.typeText(`"$ScriptName.ps1`");" >> $TargetFile
-		"await api.pressKey(`"return`");" >> $TargetFile
-		"});" >> $TargetFile
+		""                                                         | Add-Content "$TargetFile"
+		"serenade.global().command(`"$Keyword`", async (api) => {" | Add-Content "$TargetFile"
+		"await api.focusOrLaunchApplication(`"terminal`");"        | Add-Content "$TargetFile"
+		"await api.typeText(`"$ScriptName.ps1`");"                 | Add-Content "$TargetFile"
+		"await api.pressKey(`"return`");"                          | Add-Content "$TargetFile"
+		"});"                                                      | Add-Content "$TargetFile"
 	}
 
 	[int]$Elapsed = $StopWatch.Elapsed.TotalSeconds
-	"✔️ exported $($Scripts.Count) scripts to Serenade in $Elapsed sec"
+	"✔️ exported $($Scripts.Count) PowerShell scripts for Serenade voice control in $Elapsed sec"
 	exit 0 # success
 } catch {
 	write-error "⚠️ Error in line $($_.InvocationInfo.ScriptLineNumber): $($Error[0])"
