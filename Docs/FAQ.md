@@ -60,6 +60,14 @@ How to use PowerShell in Windows context menus?
 * to disable this execute `Remove_ps1_from_New_context_menu.reg` in subfolder [Data/](../Data)
 
 
+How to use Serenade for voice control?
+--------------------------------------
+1. Download and install Serenade from https://serenade.ai/.
+2. Execute "./export-scripts2serenade.ps1" - this creates a custom JavaScript file in $HOME/.serenade/scripts/
+3. Start Serenade and click the Pause button.
+4. Say "list folder" - this starts list-folder.ps1 in the terminal
+
+
 Which editor to use for PowerShell scripts?
 -------------------------------------------
 * *PowerShell ISE* (Integrated Scripting Environment) - Official PowerShell development environment included with Microsoft Windows.
