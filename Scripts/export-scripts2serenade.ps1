@@ -21,7 +21,7 @@ try {
 	$Scripts = Get-ChildItem "$FilePattern"
 	"Found $($Scripts.Count) scripts, starting export to $TargetFile..."
 
-	"/* Exported by export-scripts2serenade.ps1 */" > $TargetFile
+	copy-file "$PSScriptRoot/Data/Templates/serenade.txt" "$TargetFile" -force
 	foreach ($Script in $Scripts) {
 		$ScriptName = $Script.basename
 		$Keyword = $ScriptName -replace "-"," "
