@@ -63,7 +63,7 @@ How to use PowerShell in Windows context menus?
 How to use Serenade for voice control?
 --------------------------------------
 1. Download and install Serenade from https://serenade.ai/.
-2. Execute "./export-scripts2serenade.ps1" - this creates a custom JavaScript file in $HOME/.serenade/scripts/
+2. Execute "./export-to-serenade.ps1" - this creates a custom JavaScript file in $HOME/.serenade/scripts/
 3. Start Serenade and click the Pause button.
 4. Say "list folder" - this starts list-folder.ps1 in the terminal
 
