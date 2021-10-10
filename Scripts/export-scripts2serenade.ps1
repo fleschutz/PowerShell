@@ -24,11 +24,12 @@ try {
 	"/* Exported by export-scripts2serenade.ps1 */" > $TargetFile
 	foreach ($Script in $Scripts) {
 		$ScriptName = $Script.basename
+		$Keyword = $ScriptName -replace "-"," "
 		"" >> $TargetFile
-		"serenade.global().command(\"$ScriptName\", async (api) => {" >> $TargetFile
-		"await api.focusOrLaunchApplication(\"terminal\");" >> $TargetFile
-		"await api.typeText(\"$Script\");" >> $TargetFile
-		"await api.pressKey(\"return\");" >> $TargetFile
+		"serenade.global().command(`"$Keyword`", async (api) => {" >> $TargetFile
+		"await api.focusOrLaunchApplication(`"terminal`");" >> $TargetFile
+		"await api.typeText(`"$ScriptName.ps1`");" >> $TargetFile
+		"await api.pressKey(`"return`");" >> $TargetFile
 		"});" >> $TargetFile
 	}
 
