@@ -70,6 +70,8 @@ edit.ps1, Edits the given file with the built-in text editor
 enable-crash-dumps.ps1, Enables the writing of crash dumps
 enable-god-mode.ps1, Enables the god mode (adds a new icon to the desktop)
 encrypt-file.ps1, Encrypts the given file
+export-to-manuals.ps1, Converts all scripts as manuals                                    
+export-to-serenade.ps1, Converts all scripts to Serenade for voice control
 fetch-repo.ps1, Fetches updates for the current/given Git repository (including submodules)
 fetch-repos.ps1, Fetches updates for all Git repositories under the current/given directory (including submodules)
 get-md5.ps1, Prints the MD5 checksum of the given file

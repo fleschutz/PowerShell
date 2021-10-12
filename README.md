@@ -189,6 +189,9 @@ Mega Collection of PowerShell Scripts
 | [convert-ps2md.ps1](Scripts/convert-ps2md.ps1)         | Converts the comment-based help of a PowerShell script to Markdown | [Help](Docs/convert-ps2md.md)     |
 | [convert-sql2csv.ps1](Scripts/convert-sql2csv.ps1)     | Converts a SQL database table to a .CSV file                       | [Help](Docs/convert-sql2csv.md)   |
 | [convert-txt2wav.ps1](Scripts/convert-txt2wav.ps1)     | Converts text to a .WAV audio file                                 | [Help](Docs/convert-txt2wav.md)   |
+| [export-to-manuals.ps1](Scripts/export-to-manuals.ps1) | Converts all scripts as manuals                                    | [Help](Docs/export-to-manuals.md) |
+| [export-to-serenade.ps1](Scripts/export-to-serenade.ps1)| Converts all scripts to Serenade for voice control                | [Help](Docs/export-to-serenade.md)|
+
 
 📝 Scripts for Git
 -------------------
