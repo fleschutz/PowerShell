@@ -1,8 +1,8 @@
 ﻿<#
 .SYNOPSIS
-	Change the working directory to the root directory (C:\ on Windows)
+	Sets the working directory to the root directory (C:\ on Windows)
 .DESCRIPTION
-	cd-root.ps1 
+	This script changes the working directory to the root directory (C:\ on Windows).
 .EXAMPLE
 	PS> ./cd-root
 	📂C:\

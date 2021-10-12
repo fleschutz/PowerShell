@@ -1,6 +1,6 @@
 ## check-cpu-temp.ps1 - Checks the CPU temperature
 
-check-cpu-temp.ps1
+This script checks the CPU temperature.
 
 ## Parameters
 ```powershell

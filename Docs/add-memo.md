@@ -1,12 +1,13 @@
-## add-memo.ps1 - Adds a memo to Memos.csv in the home folder
+## add-memo.ps1 - Adds a memo text to $HOME/Memos.csv
 
-add-memo.ps1 [<text>]
+This script adds the given memo text to $HOME/Memos.csv.
 
 ## Parameters
 ```powershell
 add-memo.ps1 [[-text] <String>] [<CommonParameters>]
 
 -text <String>
+    Specifies the text to memorize
     
     Required?                    false
     Position?                    1

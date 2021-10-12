@@ -1,12 +1,13 @@
-## add-firewall-rules.ps1 - Adds firewall rules for the given executables (needs admin rights)
+## add-firewall-rules.ps1 - Adds firewall rules for executables (needs admin rights)
 
-add-firewall-rules.ps1 [<PathToExecutables>]
+This script adds firewall rules for the given executable. Administrator rights are required.
 
 ## Parameters
 ```powershell
 add-firewall-rules.ps1 [[-PathToExecutables] <String>] [<CommonParameters>]
 
 -PathToExecutables <String>
+    Specifies the path to the executables
     
     Required?                    false
     Position?                    1

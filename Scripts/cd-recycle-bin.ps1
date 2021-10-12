@@ -1,8 +1,8 @@
 ﻿<#
 .SYNOPSIS
-	Change the working directory to the user's recycle bin folder
+	Sets the working directory to the user's recycle bin folder
 .DESCRIPTION
-	cd-recycle-bin.ps1 
+	This script changes the working directory to the user's recycle bin folder.
 .EXAMPLE
 	PS> ./cd-recycle-bin
 	📂C:\$Recycle.Bin\S-1-5-21-123404-23309-294260-1001

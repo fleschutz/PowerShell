@@ -1,8 +1,8 @@
 ﻿<#
 .SYNOPSIS
-	Change the working directory to the user's OneDrive folder
+	Sets the working directory to the user's OneDrive folder
 .DESCRIPTION
-	cd-onedrive.ps1 
+	This script changes the working directory to the user's OneDrive folder.
 .EXAMPLE
 	PS> ./cd-onedrive
 	📂/home/markus/OneDrive

@@ -1,8 +1,8 @@
 ﻿<#
 .SYNOPSIS
-	Change the working directory to three directory levels up
+	Sets the working directory to three directory levels up
 .DESCRIPTION
-	cd-up3.ps1
+	This script changes the working directory to three directory levels up.
 .EXAMPLE
 	PS> ./cd-up3
 	(three levels up)

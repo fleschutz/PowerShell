@@ -1,8 +1,8 @@
 ﻿<#
 .SYNOPSIS
-	Change the working directory to the user's videos folder
+	Sets the working directory to the user's videos folder
 .DESCRIPTION
-	cd-videos.ps1 
+	This script changes the working directory to the user's videos folder.
 .EXAMPLE
 	PS> ./cd-videos
 	📂/home/markus/Videos

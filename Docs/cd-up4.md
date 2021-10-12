@@ -1,6 +1,6 @@
-## cd-up4.ps1 - Change the working directory to four directory levels up
+## cd-up4.ps1 - Sets the working directory to four directory levels up
 
-cd-up4.ps1
+This script changes the working directory to four directory levels up.
 
 ## Parameters
 ```powershell

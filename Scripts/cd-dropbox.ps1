@@ -1,8 +1,8 @@
 ﻿<#
 .SYNOPSIS
-	Change the working directory to the user's Dropbox folder
+	Sets the working directory to the user's Dropbox folder
 .DESCRIPTION
-	cd-dropbox.ps1 
+	This script changes the working directory to the user's Dropbox folder.
 .EXAMPLE
 	PS> ./cd-dropbox
 	📂/home/markus/Dropbox

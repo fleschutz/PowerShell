@@ -1,13 +1,13 @@
 ## build-repo.ps1 - Builds a Git repository
 
-Supports building with cmake, configure, autogen, Imakefile and Makefile.
+This scripts supports building with cmake, configure, autogen, Imakefile and Makefile.
 
 ## Parameters
 ```powershell
 build-repo.ps1 [[-RepoDir] <String>] [<CommonParameters>]
 
 -RepoDir <String>
-    Specifies the path to the Git repository.
+    Specifies the path to the Git repository
     
     Required?                    false
     Position?                    1

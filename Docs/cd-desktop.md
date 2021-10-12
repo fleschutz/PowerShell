@@ -1,6 +1,6 @@
-## cd-desktop.ps1 - Change the working directory to the user's desktop folder
+## cd-desktop.ps1 - Sets the working directory to the user's desktop folder
 
-cd-desktop.ps1
+This script changes the working directory to the user's desktop folder.
 
 ## Parameters
 ```powershell

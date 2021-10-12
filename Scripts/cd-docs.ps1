@@ -1,8 +1,8 @@
 ﻿<#
 .SYNOPSIS
-	Change the working directory to the user's documents folder
+	Sets the working directory to the user's documents folder
 .DESCRIPTION
-	cd-docs.ps1 
+	This scripts changes the working directory to the user's documents folder.
 .EXAMPLE
 	PS> ./cd-docs
 	📂/home/markus/Documents

@@ -2,9 +2,9 @@
 .SYNOPSIS
 	Builds a Git repository 
 .DESCRIPTION
-	Supports building with cmake, configure, autogen, Imakefile and Makefile.
+	This scripts supports building with cmake, configure, autogen, Imakefile and Makefile.
 .PARAMETER RepoDir
-	Specifies the path to the Git repository.
+	Specifies the path to the Git repository
 .EXAMPLE
 	PS> ./build-repo C:\MyRepo
 .NOTES

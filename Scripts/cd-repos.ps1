@@ -1,8 +1,8 @@
 ﻿<#
 .SYNOPSIS
-	Change the working directory to the user's Git repositories folder
+	Sets the working directory to the user's Git repositories folder
 .DESCRIPTION
-	cd-repos.ps1 
+	This script changes the working directory to the user's Git repositories folder.
 .EXAMPLE
 	PS> ./cd-repos
 	📂/home/markus/Repos

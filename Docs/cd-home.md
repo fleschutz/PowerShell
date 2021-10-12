@@ -1,6 +1,6 @@
-## cd-home.ps1 - Change the working directory to the user's home directory
+## cd-home.ps1 - Sets the working directory to the user's home directory
 
-cd-home.ps1
+This script changes the working directory to the user's home directory.
 
 ## Parameters
 ```powershell

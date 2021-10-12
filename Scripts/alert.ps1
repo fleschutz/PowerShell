@@ -1,8 +1,10 @@
 ﻿<#
 .SYNOPSIS
-	Handle and escalate the given alert message
+	Handles and escalates an alert 
 .DESCRIPTION
-	alert.ps1 [<message>]
+	This script handles and escalates the given alert message.
+.PARAMETER message
+	Specifies the alert message
 .EXAMPLE
 	PS> ./alert "Harddisk failure"
 .LINK

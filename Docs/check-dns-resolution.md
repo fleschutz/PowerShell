@@ -1,6 +1,6 @@
 ## check-dns-resolution.ps1 - Checks the DNS resolution with frequently used domain names
 
-check-dns-resolution.ps1
+This script checks the DNS resolution with frequently used domain names.
 
 ## Parameters
 ```powershell

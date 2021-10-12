@@ -1,8 +1,8 @@
 ﻿<#
 .SYNOPSIS
-	Change the working directory to the user's downloads folder
+	Sets the working directory to the user's downloads folder
 .DESCRIPTION
-	cd-downloads.ps1 
+	This script changes the working directory to the user's downloads folder.
 .EXAMPLE
 	PS> ./cd-downloads
 	📂/home/markus/Downloads

@@ -2,7 +2,7 @@
 .SYNOPSIS
 	Checks the CPU temperature
 .DESCRIPTION
-	check-cpu-temp.ps1 
+	This script checks the CPU temperature.
 .EXAMPLE
 	PS> ./check-cpu-temp
 	✔️ 30.3 °C CPU temperature - good

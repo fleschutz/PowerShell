@@ -1,8 +1,8 @@
 ﻿<#
 .SYNOPSIS
-	Change the working directory to the PowerShell scripts folder
+	Sets the working directory to the PowerShell scripts folder
 .DESCRIPTION
-	cd-scripts.ps1 
+	This script changes the working directory to the PowerShell scripts folder.
 .EXAMPLE
 	PS> ./cd-scripts
 	📂/home/markus/PowerShell/Scripts

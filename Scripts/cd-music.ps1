@@ -1,8 +1,8 @@
 ﻿<#
 .SYNOPSIS
-	Change the working directory to the user's music folder
+	Sets the working directory to the user's music folder
 .DESCRIPTION
-	cd-music.ps1 
+	This script changes the working directory to the user's music folder.
 .EXAMPLE
 	PS> ./cd-music
 	📂/home/markus/Music

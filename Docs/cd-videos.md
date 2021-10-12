@@ -1,6 +1,6 @@
-## cd-videos.ps1 - Change the working directory to the user's videos folder
+## cd-videos.ps1 - Sets the working directory to the user's videos folder
 
-cd-videos.ps1
+This script changes the working directory to the user's videos folder.
 
 ## Parameters
 ```powershell

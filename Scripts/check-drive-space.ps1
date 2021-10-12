@@ -2,7 +2,11 @@
 .SYNOPSIS
 	Checks a drive for free space left (20 GB by default)
 .DESCRIPTION
-	check-drive-space.ps1 [<drive>] [<min-level>]
+	This script checks a drive for free space left (20 GB by default).
+.PARAMETER Drive
+	Specifies the drive to check
+.PARAMETER MinLevel
+	Specifies the minimum level in Gigabyte
 .EXAMPLE
 	PS> ./check-drive-space C
 	✔️ 172 GB left on drive C (61 of 233 GB used)

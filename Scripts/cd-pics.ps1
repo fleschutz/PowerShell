@@ -1,8 +1,8 @@
 ﻿<#
 .SYNOPSIS
-	Change the working directory to the user's pictures folder
+	Sets the working directory to the user's pictures folder
 .DESCRIPTION
-	cd-pics.ps1 
+	This script changes the working directory to the user's pictures folder.
 .EXAMPLE
 	PS> ./cd-pics
 	📂/home/markus/Pictures

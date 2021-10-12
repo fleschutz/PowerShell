@@ -1,8 +1,8 @@
 ﻿<#
 .SYNOPSIS
-	Change the working directory to one level up
+	Sets the working directory to one level up
 .DESCRIPTION
-	cd-up.ps1
+	This script changes the working directory to one directory level up.
 .EXAMPLE
 	PS> .\cd-up
 	(one level up)

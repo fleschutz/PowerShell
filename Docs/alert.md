@@ -1,12 +1,13 @@
-## alert.ps1 - Handle and escalate the given alert message
+## alert.ps1 - Handles and escalates an alert
 
-alert.ps1 [<message>]
+This script handles and escalates the given alert message.
 
 ## Parameters
 ```powershell
 alert.ps1 [[-Message] <String>] [<CommonParameters>]
 
 -Message <String>
+    Specifies the alert message
     
     Required?                    false
     Position?                    1

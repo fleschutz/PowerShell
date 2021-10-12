@@ -1,12 +1,13 @@
 ## check-drive-space.ps1 - Checks a drive for free space left (20 GB by default)
 
-check-drive-space.ps1 [<drive>] [<min-level>]
+This script checks a drive for free space left (20 GB by default).
 
 ## Parameters
 ```powershell
 check-drive-space.ps1 [[-Drive] <String>] [[-MinLevel] <Int32>] [<CommonParameters>]
 
 -Drive <String>
+    Specifies the drive to check
     
     Required?                    false
     Position?                    1
@@ -15,6 +16,7 @@ check-drive-space.ps1 [[-Drive] <String>] [[-MinLevel] <Int32>] [<CommonParamete
     Accept wildcard characters?  false
 
 -MinLevel <Int32>
+    Specifies the minimum level in Gigabyte
     
     Required?                    false
     Position?                    2

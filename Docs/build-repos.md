@@ -1,6 +1,6 @@
 ## build-repos.ps1 - Builds all Git repositories in a folder
 
-build-repos.ps1 [<ParentDir>]
+This script builds all Git repositories in a given folder.
 
 ## Parameters
 ```powershell

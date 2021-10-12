@@ -2,7 +2,7 @@
 .SYNOPSIS
 	Builds all Git repositories in a folder
 .DESCRIPTION
-	build-repos.ps1 [<ParentDir>]
+	This script builds all Git repositories in a given folder.
 .PARAMETER ParentDir
 	Specifies the path to the folder containing the Git repositories
 .EXAMPLE

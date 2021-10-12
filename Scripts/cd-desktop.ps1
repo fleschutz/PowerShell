@@ -1,8 +1,8 @@
 ﻿<#
 .SYNOPSIS
-	Change the working directory to the user's desktop folder
+	Sets the working directory to the user's desktop folder
 .DESCRIPTION
-	cd-desktop.ps1 
+	This script changes the working directory to the user's desktop folder.
 .EXAMPLE
 	PS> ./cd-desktop
 	📂/home/markus/Desktop

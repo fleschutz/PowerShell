@@ -1,8 +1,8 @@
 ﻿<#
 .SYNOPSIS
-	Change the working directory to the user's home directory
+	Sets the working directory to the user's home directory
 .DESCRIPTION
-	cd-home.ps1 
+	This script changes the working directory to the user's home directory.
 .EXAMPLE
 	PS> ./cd-home
 	📂/home/markus

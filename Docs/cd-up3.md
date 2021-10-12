@@ -1,6 +1,6 @@
-## cd-up3.ps1 - Change the working directory to three directory levels up
+## cd-up3.ps1 - Sets the working directory to three directory levels up
 
-cd-up3.ps1
+This script changes the working directory to three directory levels up.
 
 ## Parameters
 ```powershell

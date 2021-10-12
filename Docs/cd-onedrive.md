@@ -1,6 +1,6 @@
-## cd-onedrive.ps1 - Change the working directory to the user's OneDrive folder
+## cd-onedrive.ps1 - Sets the working directory to the user's OneDrive folder
 
-cd-onedrive.ps1
+This script changes the working directory to the user's OneDrive folder.
 
 ## Parameters
 ```powershell

@@ -1,8 +1,8 @@
 ﻿<#
 .SYNOPSIS
-	Change the working directory to the user's SSH folder
+	Sets the working directory to the user's SSH folder
 .DESCRIPTION
-	cd-ssh.ps1 
+	This script changes the working directory to the user's SSH folder.
 .EXAMPLE
 	PS> ./cd-ssh
 	📂/home/markus/.ssh
