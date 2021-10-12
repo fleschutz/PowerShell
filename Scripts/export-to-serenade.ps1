@@ -5,8 +5,8 @@
 	This script exports all PowerShell scripts to Serenade.ai for voice control.
 .EXAMPLE
 	PS> ./export-to-serenade.ps1
-	Found 264 scripts, starting export to C:\Users\Markus/.serenade/scripts/PowerShell.js...
-	✔️ exported 264 PowerShell scripts for Serenade voice control in 22 sec
+	Exporting 264 scripts to C:\Users\Markus/.serenade/scripts/PowerShell.js...
+	✔️ exported 264 PowerShell scripts to Serenade in 22 sec
 .NOTES
 	Author: Markus Fleschutz · License: CC0
 .LINK
@@ -21,7 +21,7 @@ try {
 	$StopWatch = [system.diagnostics.stopwatch]::startNew()
 
 	$Scripts = Get-ChildItem "$FilePattern"
-	"Found $($Scripts.Count) scripts, exporting to $TargetFile..."
+	"Exporting $($Scripts.Count) scripts to $TargetFile..."
 
 	"/* Exported by export-scripts2serenade.ps1 */" | Set-Content "$TargetFile"
 	foreach ($Script in $Scripts) {
@@ -36,7 +36,7 @@ try {
 	}
 
 	[int]$Elapsed = $StopWatch.Elapsed.TotalSeconds
-	"✔️ exported $($Scripts.Count) PowerShell scripts for Serenade voice control in $Elapsed sec"
+	"✔️ exported $($Scripts.Count) PowerShell scripts to Serenade in $Elapsed sec"
 	exit 0 # success
 } catch {
 	write-error "⚠️ Error in line $($_.InvocationInfo.ScriptLineNumber): $($Error[0])"
