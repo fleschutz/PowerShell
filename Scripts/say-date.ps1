@@ -1,10 +1,10 @@
 ﻿<#
 .SYNOPSIS
-	Speaks the current date by text-to-speech (TTS)
+	Say the current date by text-to-speech
 .DESCRIPTION
-	speak-date.ps1
+	This script speaks the current date by text-to-speech (TTS).
 .EXAMPLE
-	PS> ./speak-date
+	PS> ./say-date
 .NOTES
 	Author: Markus Fleschutz · License: CC0
 .LINK

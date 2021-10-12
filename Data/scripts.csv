@@ -194,6 +194,8 @@ remove-print-jobs.ps1, Removes all jobs from all printers
 remove-tag.ps1, Removes a tag in a Git repository 
 replace-in-files.ps1, Search and replace a pattern in the given files by the replacement
 restart-network-adapters.ps1, Restarts all local network adapters
+say-date.ps1, Say the current date by text-to-speech
+say-time.ps1, Say the current time by text-to-speech
 search-filename.ps1, Searches the directory tree for filenames by given pattern 
 search-files.ps1, Searches the given pattern in the given files
 scan-ports.ps1, Scans the network for open/closed ports
@@ -207,7 +209,6 @@ simulate-matrix.ps1, Simulates the Matrix (fun)
 simulate-presence.ps1, Simulates the human presence against burglars
 speak-checklist.ps1, Speaks the given checklist by text-to-speech (TTS)
 speak-countdown.ps1, Starts a countdown by text-to-speech (TTS)
-speak-date.ps1, Speaks the current date by text-to-speech (TTS)
 speak-english.ps1, Speaks the given text with an English text-to-speech (TTS) voice
 speak-epub.ps1, Speaks the content of the given Epub file by text-to-speech (TTS)
 speak-file.ps1, Speaks the content of the given text file by text-to-speech (TTS)
@@ -219,7 +220,6 @@ speak-quote.ps1, Speaks a random quote by text-to-speech (TTS)
 speak-spanish.ps1, Speaks the given text with a Spanish text-to-speech (TTS) voice
 speak-test.ps1, Performs a speak test by text-to-speech (TTS)
 speak-text.ps1, Speaks the given text by text-to-speech (TTS)
-speak-time.ps1, Speaks the current time by text-to-speech (TTS)
 start-calibre-server.ps1, Starts a local Calibre server 
 start-ipfs-server.ps1, Starts a local IPFS server
 switch-branch.ps1, Switches the branch in the current/given Git repository (including submodules)

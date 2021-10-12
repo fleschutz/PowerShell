@@ -1,10 +1,10 @@
 ﻿<#
 .SYNOPSIS
-	Speaks the current time by text-to-speech (TTS)
+	Say the current time by text-to-speech
 .DESCRIPTION
-	speak-time.ps1
+	This script speaks the current time by text-to-speech (TTS).
 .EXAMPLE
-	PS> ./speak-time
+	PS> ./say-time
 .NOTES
 	Author: Markus Fleschutz · License: CC0
 .LINK

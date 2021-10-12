@@ -22,9 +22,10 @@ Mega Collection of PowerShell Scripts
 | [play-mp3.ps1](Scripts/play-mp3.ps1)                 | Plays the given sound file (MP3 file format)                       | [Help](Docs/play-mp3.md)          |
 | [play-super-mario.ps1](Scripts/play-super-mario.ps1) | Plays the Super Mario Intro                                        | [Help](Docs/play-super-mario.md)  |
 | [play-tetris-melody.ps1](Scripts/play-tetris-melody.ps1) | Plays the Tetris melody                                        | [Help](Docs/play-tetris-melody.md) |
+| [say-date.ps1](Scripts/say-date.ps1)                 | Say the current date by text-to-speech                             | [Help](Docs/say-date.md)        |
+| [say-time.ps1](Scripts/say-time.ps1)                 | Say the current time by text-to-speech                             | [Help](Docs/say-time.md)        |
 | [speak-checklist.ps1](Scripts/speak-checklist.ps1)   | Speaks the given checklist by text-to-speech                       | [Help](Docs/speak-checklist.md)   |
 | [speak-countdown.ps1](Scripts/speak-countdown.ps1)   | Starts a countdown by text-to-speech                               | [Help](Docs/speak-countdown.md)   |
-| [speak-date.ps1](Scripts/speak-date.ps1)             | Speaks the current date by text-to-speech                          | [Help](Docs/speak-date.md)        |
 | [speak-english.ps1](Scripts/speak-english.ps1)       | Speaks the given text with an English text-to-speech voice         | [Help](Docs/speak-english.md)     |
 | [speak-epub.ps1](Scripts/speak-epub.ps1)             | Speaks the content of the given Epub file by text-to-speech        | [Help](Docs/speak-epub.md)        |
 | [speak-file.ps1](Scripts/speak-file.ps1)             | Speaks the content of the given text file by text-to-speech        | [Help](Docs/speak-file.md)        |
@@ -36,7 +37,6 @@ Mega Collection of PowerShell Scripts
 | [speak-spanish.ps1](Scripts/speak-spanish.ps1)       | Speaks the given text with a Spanish text-to-speech voice          | [Help](Docs/speak-spanish.md)     |
 | [speak-test.ps1](Scripts/speak-test.ps1)             | Performs a speak test by text-to-speech                            | [Help](Docs/speak-test.md)        |
 | [speak-text.ps1](Scripts/speak-text.ps1)             | Speaks the given text by text-to-speech                            | [Help](Docs/speak-text.md)        |
-| [speak-time.ps1](Scripts/speak-time.ps1)             | Speaks the current time by text-to-speech                          | [Help](Docs/speak-time.md)        |
 | [turn-volume-up.ps1](Scripts/turn-volume-up.ps1)     | Turns the audio volume up (+10% by default)                        | [Help](Docs/turn-volume-up.md)    |
 | [turn-volume-down.ps1](Scripts/turn-volume-down.ps1) | Turns the audio volume down (-10% by default)                      | [Help](Docs/turn-volume-down.md)  |
 | [unmute-audio.ps1](Scripts/unmute-audio.ps1)         | Unmutes the audio device                                           | [Help](Docs/unmute-audio.md)      |
