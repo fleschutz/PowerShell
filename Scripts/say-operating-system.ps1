@@ -16,7 +16,8 @@ try {
 	if ($IsLinux) {
 		$details = (uname -sr)
 	} else {
-		$OSname = Get-WmiObject -class Win32_OperatingSystem
+		$OS = Get-WmiObject -class Win32_OperatingSystem
+		$OSname = $OS.Caption
 		$OSarchitecture = $OS.OSArchitecture
 		$OSversion = $OS.Version
 		$details = "$OSname for $OSarchitecture version $OSversion"
