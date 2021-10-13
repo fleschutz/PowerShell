@@ -195,6 +195,8 @@ remove-tag.ps1, Removes a tag in a Git repository
 replace-in-files.ps1, Search and replace a pattern in the given files by the replacement
 restart-network-adapters.ps1, Restarts all local network adapters
 say-date.ps1, Say the current date by text-to-speech
+say-joke.ps1, Say a random Chuck Norris joke by text-to-speech
+say-quote.ps1, Say a random quote by text-to-speech
 say-time.ps1, Say the current time by text-to-speech
 search-filename.ps1, Searches the directory tree for filenames by given pattern 
 search-files.ps1, Searches the given pattern in the given files
@@ -207,19 +209,17 @@ set-timer.ps1, Sets a timer for a countdown
 set-wallpaper.ps1, Sets the given image as wallpaper
 simulate-matrix.ps1, Simulates the Matrix (fun)
 simulate-presence.ps1, Simulates the human presence against burglars
-speak-checklist.ps1, Speaks the given checklist by text-to-speech (TTS)
-speak-countdown.ps1, Starts a countdown by text-to-speech (TTS)
-speak-english.ps1, Speaks the given text with an English text-to-speech (TTS) voice
-speak-epub.ps1, Speaks the content of the given Epub file by text-to-speech (TTS)
-speak-file.ps1, Speaks the content of the given text file by text-to-speech (TTS)
-speak-french.ps1, Speaks the given text with a French text-to-speech (TTS) voice
-speak-german.ps1, Speaks the given text with a German text-to-speech (TTS) voice
-speak-italian.ps1, Speaks the given text with an Italian text-to-speech (TTS) voice
-speak-joke.ps1, Speaks a random Chuck Norris joke by text-to-speech (TTS)
-speak-quote.ps1, Speaks a random quote by text-to-speech (TTS)
-speak-spanish.ps1, Speaks the given text with a Spanish text-to-speech (TTS) voice
-speak-test.ps1, Performs a speak test by text-to-speech (TTS)
-speak-text.ps1, Speaks the given text by text-to-speech (TTS)
+speak-checklist.ps1, Speaks the given checklist by text-to-speech
+speak-countdown.ps1, Starts a countdown by text-to-speech
+speak-english.ps1, Speaks the given text with an English text-to-speech voice
+speak-epub.ps1, Speaks the content of the given Epub file by text-to-speech
+speak-file.ps1, Speaks the content of the given text file by text-to-speech
+speak-french.ps1, Speaks the given text with a French text-to-speech voice
+speak-german.ps1, Speaks the given text with a German text-to-speech voice
+speak-italian.ps1, Speaks the given text with an Italian text-to-speech voice
+speak-spanish.ps1, Speaks the given text with a Spanish text-to-speech voice
+speak-test.ps1, Performs a speak test by text-to-speech 
+speak-text.ps1, Speaks the given text by text-to-speech
 start-calibre-server.ps1, Starts a local Calibre server 
 start-ipfs-server.ps1, Starts a local IPFS server
 switch-branch.ps1, Switches the branch in the current/given Git repository (including submodules)

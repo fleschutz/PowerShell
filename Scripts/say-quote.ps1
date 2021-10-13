@@ -1,11 +1,11 @@
 ﻿<#
 .SYNOPSIS
-	Speaks a random Chuck Norris joke by text-to-speech
+	Say a random quote by text-to-speech
 .DESCRIPTION
-	This script selects a random joke in Data/jokes.csv and uses text-to-speech (TTS) for output.
+	This script selects a random quote in Data/quotes.csv and tells it by text-to-speech (TTS).
 .EXAMPLE
-	PS> ./speak-joke
-	(listen and have fun)
+	PS> ./say-quote
+	(listen and learn)
 .NOTES
 	Author: Markus Fleschutz · License: CC0
 .LINK
@@ -13,13 +13,14 @@
 #>
 
 try {
-	$Table = import-csv "$PSScriptRoot/../Data/jokes.csv"
+	$Table = import-csv "$PSScriptRoot/../Data/quotes.csv"
 
 	$Generator = New-Object System.Random
 	$Index = [int]$Generator.next(0, $Table.Count - 1)
-	$Joke = $Table[$Index].Joke
+	$Quote = $Table[$Index].Quote
+	$Author = $Table[$Index].Author
 
-	& "$PSScriptRoot/speak-english.ps1" "$Joke"
+	& "$PSScriptRoot/speak-english.ps1" "$Quote (by $Author)"
 	exit 0 # success
 } catch {
 	"⚠️ Error: $($Error[0]) ($($MyInvocation.MyCommand.Name):$($_.InvocationInfo.ScriptLineNumber))"

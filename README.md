@@ -23,6 +23,8 @@ Mega Collection of PowerShell Scripts
 | [play-super-mario.ps1](Scripts/play-super-mario.ps1) | Plays the Super Mario Intro                                        | [Help](Docs/play-super-mario.md)  |
 | [play-tetris-melody.ps1](Scripts/play-tetris-melody.ps1) | Plays the Tetris melody                                        | [Help](Docs/play-tetris-melody.md) |
 | [say-date.ps1](Scripts/say-date.ps1)                 | Say the current date by text-to-speech                             | [Help](Docs/say-date.md)        |
+| [say-joke.ps1](Scripts/say-joke.ps1)                 | Say a random Chuck Norris joke by text-to-speech                   | [Help](Docs/say-joke.md)        |
+| [say-quote.ps1](Scripts/say-quote.ps1)               | Say a random quote by text-to-speech                               | [Help](Docs/say-quote.md)       |
 | [say-time.ps1](Scripts/say-time.ps1)                 | Say the current time by text-to-speech                             | [Help](Docs/say-time.md)        |
 | [speak-checklist.ps1](Scripts/speak-checklist.ps1)   | Speaks the given checklist by text-to-speech                       | [Help](Docs/speak-checklist.md)   |
 | [speak-countdown.ps1](Scripts/speak-countdown.ps1)   | Starts a countdown by text-to-speech                               | [Help](Docs/speak-countdown.md)   |
@@ -32,8 +34,6 @@ Mega Collection of PowerShell Scripts
 | [speak-french.ps1](Scripts/speak-french.ps1)         | Speaks the given text with a French text-to-speech voice           | [Help](Docs/speak-french.md)      |
 | [speak-german.ps1](Scripts/speak-german.ps1)         | Speaks the given text with a German text-to-speech voice           | [Help](Docs/speak-german.md)      |
 | [speak-italian.ps1](Scripts/speak-italian.ps1)       | Speaks the given text with an Italian text-to-speech voice         | [Help](Docs/speak-italian.md)     |
-| [speak-joke.ps1](Scripts/speak-joke.ps1)             | Speaks a random Chuck Norris joke by text-to-speech                | [Help](Docs/speak-joke.md)        |
-| [speak-quote.ps1](Scripts/speak-quote.ps1)           | Speaks a random quote by text-to-speech                            | [Help](Docs/speak-quote.md)       |
 | [speak-spanish.ps1](Scripts/speak-spanish.ps1)       | Speaks the given text with a Spanish text-to-speech voice          | [Help](Docs/speak-spanish.md)     |
 | [speak-test.ps1](Scripts/speak-test.ps1)             | Performs a speak test by text-to-speech                            | [Help](Docs/speak-test.md)        |
 | [speak-text.ps1](Scripts/speak-text.ps1)             | Speaks the given text by text-to-speech                            | [Help](Docs/speak-text.md)        |
