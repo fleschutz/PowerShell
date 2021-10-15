@@ -1,8 +1,8 @@
 ﻿<#
 .SYNOPSIS
-	Lists all local drives.
+	Lists all local drives
 .DESCRIPTION
-	list-drives.ps1
+	This script lists the details of all local drives.
 .EXAMPLE
 	PS> ./list-drives
 

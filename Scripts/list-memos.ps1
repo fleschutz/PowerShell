@@ -2,7 +2,7 @@
 .SYNOPSIS
 	Lists all memos in $HOME/Memos.csv
 .DESCRIPTION
-	list-memos.ps1 
+	This script lists all memo entries in Memos.csv in the home folder.
 .EXAMPLE
 	PS> ./list-memos
 .NOTES

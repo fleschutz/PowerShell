@@ -2,7 +2,7 @@
 .SYNOPSIS
 	Lists all local computer processes
 .DESCRIPTION
-	list-processes.ps1 
+	This script lists all local computer processes.
 .EXAMPLE
 	PS> ./list-processes
 

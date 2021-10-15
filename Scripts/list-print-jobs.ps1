@@ -2,7 +2,7 @@
 .SYNOPSIS
 	Lists all jobs of all printers
 .DESCRIPTION
-	list-print-jobs.ps1
+	This script lists all print jobs of all printer devices.
 .EXAMPLE
 	PS> ./list-print-jobs
 .NOTES

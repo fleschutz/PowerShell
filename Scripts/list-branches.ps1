@@ -3,8 +3,10 @@
 	Lists all branches in a Git repository
 .DESCRIPTION
 	list-branches.ps1 [<RepoDir>] [<SearchPattern>]
-	<RepoDir> is the current working directory by default
-	<SearchPattern> is "*" (anything) by default
+.PARAMETER RepoDir
+	Specifies the path to the Git repository (current working directory by default)
+.PARAMETER SearchPattern
+	Specifies the search patter (anything by default)
 .EXAMPLE
 	PS> ./list-branches
 .NOTES

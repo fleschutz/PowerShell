@@ -3,7 +3,6 @@
 	Lists major earthquakes for the last 30 days
 .DESCRIPTION
 	Lists earthquakes with magnitude >= 6.0 for the last 30 days
-	list-earthquakes.ps1
 .EXAMPLE
 	PS> ./list-earthquakes
 .NOTES

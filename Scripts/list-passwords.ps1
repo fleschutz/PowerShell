@@ -1,8 +1,14 @@
 ﻿<#
 .SYNOPSIS
-	Prints a list of random passwords
+	Lists random passwords
 .DESCRIPTION
-	list-passwords.ps1 [<PasswordLength>] [<Columns>] [<Rows>]
+	This script lists random passwords.
+.PARAMETER PasswordLength
+	Specifies the length of the password
+.PARAMETER Columns
+	Specifies the number of columns
+.PARAMETER Rows
+	Specifies the number of rows
 .EXAMPLE
 	PS> ./list-passwords
 .NOTES

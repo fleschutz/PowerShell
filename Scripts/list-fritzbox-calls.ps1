@@ -2,7 +2,11 @@
 .SYNOPSIS
 	Lists the phone calls of the FRITZ!Box device
 .DESCRIPTION
-	list-fritzbox-calls.ps1 [<Username>] [<Password>]
+	This script lists the phone calls of the FRITZ!Box device.
+.PARAMETER Username
+	Specifies the user name for FRITZ!Box
+.PARAMETER Password
+	Specifies the password to FRITZ!Box
 .EXAMPLE
 	PS> ./list-fritzbox-calls
 .NOTES

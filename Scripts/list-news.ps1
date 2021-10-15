@@ -2,7 +2,11 @@
 .SYNOPSIS
 	Lists the latest news
 .DESCRIPTION
-	list-news.ps1 [<RSS-URL>] [<max-count>]
+	This script lists the latest RSS feed news.
+.PARAMETER RSS_URL
+	Specifies the URL to the RSS feed
+.PARAMETER MaxCount
+	Specifies the number of news to list
 .EXAMPLE
 	PS> ./list-news
 .NOTES

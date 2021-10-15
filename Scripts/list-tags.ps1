@@ -2,9 +2,11 @@
 .SYNOPSIS
 	Lists all tags in a Git repository
 .DESCRIPTION
-	list-tags.ps1 [<RepoDir>] [<SearchPattern>]
-	<RepoDir> is the path to the Git repository
-	<SearchPattern> is "*" (anything) by default
+	This script lists all tags in the given Git repository.
+.PARAMETER RepoDir
+	Specifies the path to the Git repository
+.PARAMETER SearchPattern
+	Specifies the search pattern (anything by default)
 .EXAMPLE
 	PS> ./list-tags C:\MyRepo
 

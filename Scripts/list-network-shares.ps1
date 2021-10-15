@@ -2,7 +2,7 @@
 .SYNOPSIS
 	Lists all network shares of the local computer
 .DESCRIPTION
-	list-network-shares.ps1 
+	This script lists all network shares of the local computer.
 .EXAMPLE
 	PS> ./list-network-shares
 

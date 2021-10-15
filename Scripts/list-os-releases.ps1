@@ -2,7 +2,7 @@
 .SYNOPSIS
 	Lists OS releases and download URL
 .DESCRIPTION
-	list-os-releases.ps1
+	This script lists OS releases and download URL.
 .EXAMPLE
 	PS> ./list-os-releases
 .NOTES

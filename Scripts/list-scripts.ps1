@@ -2,8 +2,7 @@
 .SYNOPSIS
 	Lists all PowerShell scripts in this repository
 .DESCRIPTION
-	Lists all PowerShell scripts in this repository (sorted alphabetically)
-	list-scripts.ps1
+	This script lists all PowerShell scripts in the repository (sorted alphabetically).
 .EXAMPLE
 	PS> ./list-scripts
 .NOTES

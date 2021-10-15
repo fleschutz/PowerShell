@@ -2,7 +2,7 @@
 .SYNOPSIS
 	Lists the user's PowerShell profiles
 .DESCRIPTION
-	list-profiles.ps1
+	This script lists the user's PowerShell profiles.
 .EXAMPLE
 	PS> ./list-profiles
 	

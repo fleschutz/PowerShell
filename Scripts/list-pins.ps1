@@ -1,8 +1,14 @@
 ﻿<#
 .SYNOPSIS
-	Prints a list of random PIN's
+	Lists random PIN's
 .DESCRIPTION
-	list-pins.ps1 [<PinLength>] [<Columns>] [<Rows>]
+	This script lists random PIN's.
+.PARAMETER PinLength
+	Specifies the PIN length
+.PARAMETER Columns
+	Specifies the number of columns
+.PARAMETER Rows
+	Specifies the number of rows
 .EXAMPLE
 	PS> ./list-pins
 .NOTES

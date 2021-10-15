@@ -17,16 +17,16 @@ try {
 	$StopWatch = [system.diagnostics.stopwatch]::startNew()
 
 	if ($IsLinux) {
-		"⏳ Step 1/4: Fetching update infos for installed Debian packages..."
+		"⏳ Fetching update infos for installed Debian packages (step 1/4)..."
 		& sudo apt update
 
-		"⏳ Step 2/4: Upgrading installed Debian packages..."
+		"⏳ Upgrading installed Debian packages (step 2/4)..."
 		& sudo apt upgrade --yes
 
-		"⏳ Step 3/4: Removing obsolete Debian packages..."
+		"⏳ Removing obsolete Debian packages (step 3/4)..."
 		& sudo apt autoremove --yes
 
-		"⏳ Step 4/4: Upgrading installed Snap packages..."
+		"⏳ Upgrading installed Snap packages (step 4/4)..."
 		& sudo snap refresh
 	} else {
 		"Sorry, not supported yet"

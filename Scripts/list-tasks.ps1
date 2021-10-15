@@ -2,7 +2,7 @@
 .SYNOPSIS
 	Lists all Windows scheduler tasks
 .DESCRIPTION
-	list-tasks.ps1 
+	This script lists all Windows scheduler tasks.
 .EXAMPLE
 	PS> ./list-tasks
 

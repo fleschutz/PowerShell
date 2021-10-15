@@ -2,7 +2,11 @@
 .SYNOPSIS
 	Lists the latest operating system updates
 .DESCRIPTION
-	list-os-updates.ps1 [<RSS-URL>] [<max-count>]
+	This script lists the latest operating system update news.
+.PARAMETER RSS_URL
+	Specifies the URL to the RSS feed
+.PARAMETER MaxCount
+	Specifies the number of news to list
 .EXAMPLE
 	PS> ./list-os-updates
 .NOTES

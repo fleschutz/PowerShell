@@ -2,8 +2,7 @@
 .SYNOPSIS
 	Lists the installed apps
 .DESCRIPTION
-	Lists the installed apps (from Windows Store or snaps).
-	list-installed-apps.ps1
+	This script lists the installed apps (from Windows Store or snaps).
 .EXAMPLE
 	PS> ./list-installed-apps
 .NOTES

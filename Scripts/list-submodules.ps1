@@ -2,8 +2,9 @@
 .SYNOPSIS
 	Lists the submodules of a Git repository
 .DESCRIPTION
-	list-submodules.ps1 [<RepoDir>] 
-	<RepoDir> is the path to the repository (current working dir by default)
+	This script lists the submodules of the given Git repository.
+.PARAMETER RepoDir
+	Specifies the path to the repository (current working dir by default)
 .EXAMPLE
 	PS> ./list-submodules C:\MyRepo
 .NOTES

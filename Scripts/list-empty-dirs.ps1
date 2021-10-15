@@ -2,8 +2,9 @@
 .SYNOPSIS
 	Lists empty subfolders within a directory tree
 .DESCRIPTION
-	list-empty-dirs.ps1 [<DirTree>]
-	<DirTree> is the path to the directory tree
+	This script scans and lists all empty subfolders within the given directory tree.
+.PARAMETER DirTree
+	Specifies the path to the directory tree
 .EXAMPLE
 	PS> ./list-empty-dirs C:\
 .NOTES

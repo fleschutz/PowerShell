@@ -2,7 +2,9 @@
 .SYNOPSIS
 	Lists the latests tags in all Git repositories in a folder
 .DESCRIPTION
-	list-latest-tags.ps1 [<ParentDir>]
+	This script lists the latest tags in all Git repositories in the specified folder.
+.PARAMETER ParentDir
+	Specifies the path to the parent folder
 .EXAMPLE
 	PS> ./list-latest-tags C:\MyRepos
 .NOTES

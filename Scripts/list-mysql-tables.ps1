@@ -2,7 +2,7 @@
 .SYNOPSIS
 	Lists all tables of a MySQL database 
 .DESCRIPTION
-	list-mysql-tables.ps1 
+	This script lists all tables of the given MySQL database.
 .EXAMPLE
 	PS> ./list-mysql-tables
 .NOTES

@@ -2,7 +2,7 @@
 .SYNOPSIS
 	Lists all printers known to the local computer
 .DESCRIPTION
-	list-printers.ps1
+	This script lists all printers known to the local computer.
 .EXAMPLE
 	PS> ./list-printers
 .NOTES

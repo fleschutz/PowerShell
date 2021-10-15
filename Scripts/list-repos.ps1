@@ -2,7 +2,9 @@
 .SYNOPSIS
 	Lists the details of all Git repositories in a folder
 .DESCRIPTION
-	list-repos.ps1 [<ParentDir>]
+	This script lists the details of all Git repositories in the given folder.
+.PARAMETER ParentDir
+	Specifies the path to the parent folder.
 .EXAMPLE
 	PS> ./list-repos C:\MyRepos
 	

@@ -2,7 +2,7 @@
 .SYNOPSIS
 	Lists all environment variables
 .DESCRIPTION
-	list-environment-variables.ps1
+	This script lists all environment variables.
 .EXAMPLE
 	PS> ./list-environment-variables
 

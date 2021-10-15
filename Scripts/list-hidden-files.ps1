@@ -2,8 +2,9 @@
 .SYNOPSIS
 	Lists hidden files in a directory tree
 .DESCRIPTION
-	list-hidden-files.ps1 [<DirTree>]
-	<DirTree> is the path to the directory tree
+	This script scans and lists all hidden files in a directory tree.
+.PARAMETER DirTree
+	Specifies the path to the directory tree
 .EXAMPLE
 	PS> ./list-hidden-files C:\
 .NOTES

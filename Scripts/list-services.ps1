@@ -2,7 +2,7 @@
 .SYNOPSIS
 	Lists the local computer services
 .DESCRIPTION
-	list-services.ps1 
+	This script lists all local computer services.
 .EXAMPLE
 	PS> ./list-services
 

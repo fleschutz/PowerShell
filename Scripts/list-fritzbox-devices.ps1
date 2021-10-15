@@ -2,7 +2,11 @@
 .SYNOPSIS
 	Lists FRITZ!Box's known devices
 .DESCRIPTION
-	list-fritzbox-devices.ps1 [<Username>] [<Password>]
+	This script lists FRITZ!Box's known devices.
+.PARAMETER Username
+	Specifies the user name to FRITZ!Box
+.PARAMETER Password
+	Specifies the password to FRITZ!Box
 .EXAMPLE
 	PS> ./list-fritzbox-devices
 .NOTES

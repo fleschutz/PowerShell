@@ -2,8 +2,9 @@
 .SYNOPSIS
 	Lists all files in a directory tree
 .DESCRIPTION
-	list-files.ps1 [<DirTree>]
-	<DirTree> is the path to the directory tree
+	This script lists all files within the given directory tree.
+.PARAMETER DirTree
+	Specifies the path to the directory tree
 .EXAMPLE
 	PS> ./list-files C:\
 .NOTES
