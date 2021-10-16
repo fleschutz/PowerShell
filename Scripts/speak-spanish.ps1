@@ -1,8 +1,10 @@
 ﻿<#
 .SYNOPSIS
-	Speaks the given text with a Spanish text-to-speech (TTS) voice
+	Speaks text with a Spanish text-to-speech voice
 .DESCRIPTION
-	speak-spanish.ps1 [<text>]
+	This script speaks the given text with a Spanish text-to-speech (TTS) voice.
+.PARAMETER text
+	Specifies the text to speak
 .EXAMPLE
 	PS> ./speak-spanish Hola
 .NOTES

@@ -1,8 +1,10 @@
 ﻿<#
 .SYNOPSIS
-	Speaks a countdown by text-to-speech (TTS)
+	Speaks a countdown by text-to-speech
 .DESCRIPTION
-	speak-countdown.ps1 [StartNumber]
+	This scripts speaks a countdown by text-to-speech (TTS).
+.PARAMETER StartNumber
+	Specifies the number to start from
 .EXAMPLE
 	PS> ./speak-countdown 60
 .NOTES

@@ -1,8 +1,10 @@
 ﻿<#
 .SYNOPSIS
-	Speaks the given text with an English text-to-speech (TTS) voice
+	Speaks text with an English text-to-speech voice
 .DESCRIPTION
-	speak-english.ps1 [<text>]
+	This scripts speaks the given text with an English text-to-speech (TTS) voice.
+.PARAMETER text
+	Specifies the text to speak
 .EXAMPLE
 	PS> ./speak-english "Hello World"
 .NOTES

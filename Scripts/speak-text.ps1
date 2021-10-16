@@ -3,6 +3,8 @@
 	Speaks the given text by the default text-to-speech (TTS) voice
 .DESCRIPTION
 	speak-text.ps1 [<text>]
+.PARAMETER text
+	Specifies the text to speak
 .EXAMPLE
 	PS> ./speak-text "Hello World"
 .NOTES
