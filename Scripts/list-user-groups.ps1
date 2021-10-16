@@ -2,7 +2,7 @@
 .SYNOPSIS
 	Lists the user groups on the local computer
 .DESCRIPTION
-	list-user-groups.ps1 
+	This script lists the user groups on the local computer.
 .EXAMPLE
 	PS> ./list-user-groups
 

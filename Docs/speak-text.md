@@ -7,6 +7,7 @@ speak-text.ps1 [<text>]
 speak-text.ps1 [[-text] <String>] [<CommonParameters>]
 
 -text <String>
+    Specifies the text to speak
     
     Required?                    false
     Position?                    1

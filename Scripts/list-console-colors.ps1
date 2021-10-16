@@ -2,9 +2,13 @@
 .SYNOPSIS
 	Lists all console colors
 .DESCRIPTION
-	list-console-colors.ps1 
+	This script lists all available console colors.
 .EXAMPLE
 	PS> ./list-console-colors
+
+	Name     Foreground     Background
+	----     ----------     ----------
+	...
 .NOTES
 	Author: Markus Fleschutz · License: CC0
 .LINK

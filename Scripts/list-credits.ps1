@@ -2,7 +2,7 @@
 .SYNOPSIS
 	Shows the credits for the PowerShell Scripts
 .DESCRIPTION
-	list-credits.ps1
+	This script shows the credits for the PowerShell Scripts.
 .EXAMPLE
 	PS> ./list-credits
 .NOTES

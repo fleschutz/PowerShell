@@ -1,12 +1,13 @@
-## speak-spanish.ps1 - Speaks the given text with a Spanish text-to-speech (TTS) voice
+## speak-spanish.ps1 - Speaks text with a Spanish text-to-speech voice
 
-speak-spanish.ps1 [<text>]
+This script speaks the given text with a Spanish text-to-speech (TTS) voice.
 
 ## Parameters
 ```powershell
 speak-spanish.ps1 [[-text] <String>] [<CommonParameters>]
 
 -text <String>
+    Specifies the text to speak
     
     Required?                    false
     Position?                    1

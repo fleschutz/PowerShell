@@ -2,7 +2,7 @@
 .SYNOPSIS
 	Lists the details of the current time zone
 .DESCRIPTION
-	list-timezone.ps1 
+	This script lists the details of the current time zone.
 .EXAMPLE
 	PS> ./list-timezone
 

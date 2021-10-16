@@ -2,8 +2,7 @@
 .SYNOPSIS
 	Lists the installed software
 .DESCRIPTION
-	Lists the installed software (except Windows Store apps)
-	list-installed-software.ps1
+	This script lists the installed software (except Windows Store apps).
 .EXAMPLE
 	PS> ./list-installed-software
 .NOTES

@@ -2,7 +2,11 @@
 .SYNOPSIS
 	Lists all anagrams of the given word
 .DESCRIPTION
-	list-anagrams.ps1 [<word>] [<columns>]
+	This script lists all anagrams of the given word.
+.PARAMETER Word
+	Specifies the word to use
+.PARAMETER Columns
+	Specifies the number of columns
 .EXAMPLE
 	PS> ./list-anagrams Baby
 .NOTES

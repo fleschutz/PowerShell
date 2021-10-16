@@ -2,8 +2,9 @@
 .SYNOPSIS
 	Lists the latest tag on the current branch in a Git repository
 .DESCRIPTION
-	list-latest-tag.ps1 [<RepoDir>] 
-	<RepoDir> is the path to the repository
+	This script lists the latest tag on the current branch in a Git repository.
+.PARAMETER RepoDir
+	Specifies the path to the repository
 .EXAMPLE
 	PS> ./list-latest-tag C:\MyRepo
 .NOTES

@@ -2,7 +2,9 @@
 .SYNOPSIS
 	Lists the hourly weather report
 .DESCRIPTION
-	list-weather.ps1 [<Location>]
+	This script lists the hourly weather report.
+.PARAMETER Location
+	Specifies the location to use (determined automatically per default)
 .EXAMPLE
 	PS> ./list-weather
 .NOTES

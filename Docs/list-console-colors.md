@@ -1,6 +1,6 @@
 ## list-console-colors.ps1 - Lists all console colors
 
-list-console-colors.ps1
+This script lists all available console colors.
 
 ## Parameters
 ```powershell
@@ -14,6 +14,12 @@ list-console-colors.ps1 [<CommonParameters>]
 ## Example
 ```powershell
 PS>./list-console-colors
+
+
+
+Name     Foreground     Background
+----     ----------     ----------
+...
 ```
 
 ## Notes

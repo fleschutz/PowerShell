@@ -1,8 +1,8 @@
 ﻿<#
 .SYNOPSIS
-	Lists major earthquakes for the last 30 days
+	Lists major earthquakes since 30 days
 .DESCRIPTION
-	Lists earthquakes with magnitude >= 6.0 for the last 30 days
+	This script lists earthquakes with magnitude >= 6.0 for the last 30 days.
 .EXAMPLE
 	PS> ./list-earthquakes
 .NOTES

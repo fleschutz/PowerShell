@@ -2,7 +2,7 @@
 .SYNOPSIS
 	Lists all commits in a Git repository
 .DESCRIPTION
-	list-commits.ps1 [<RepoDir>] [<Format>]
+	This script lists all commits in a Git repository. Supported output formats are: list, compact, normal or JSON.
 .PARAMETER RepoDir
 	Specifies the path to the Git repository.
 .PARAMETER Format

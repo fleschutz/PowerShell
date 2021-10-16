@@ -2,7 +2,7 @@
 .SYNOPSIS
 	Lists the content of the recycle bin folder
 .DESCRIPTION
-	list-recycle-bin.ps1 
+	This script lists the content of the recycle bin folder.
 .EXAMPLE
 	PS> ./list-recycle-bin
 .NOTES

@@ -2,7 +2,7 @@
 .SYNOPSIS
 	Lists all PowerShell cmdlets
 .DESCRIPTION
-	list-cmdlets.ps1 
+	This script lists all PowerShell cmdlets.
 .EXAMPLE
 	PS> ./list-cmdlets
 

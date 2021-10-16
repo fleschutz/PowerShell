@@ -1,6 +1,6 @@
 ## list-clipboard.ps1 - Lists the contents of the clipboard
 
-list-clipboard.ps1
+This script lists the contents of the clipboard.
 
 ## Parameters
 ```powershell

@@ -1,6 +1,6 @@
 ## list-cheat-sheet.ps1 - Lists the PowerShell cheat sheet
 
-list-cheat-sheet.ps1
+This script lists the PowerShell cheat sheet.
 
 ## Parameters
 ```powershell

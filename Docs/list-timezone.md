@@ -1,6 +1,6 @@
 ## list-timezone.ps1 - Lists the details of the current time zone
 
-list-timezone.ps1
+This script lists the details of the current time zone.
 
 ## Parameters
 ```powershell

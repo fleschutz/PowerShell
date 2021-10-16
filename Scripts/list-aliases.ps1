@@ -2,7 +2,7 @@
 .SYNOPSIS
 	Lists all PowerShell aliases
 .DESCRIPTION
-	list-aliases.ps1
+	This scripts lists all PowerShell aliases.
 .EXAMPLE
 	PS> ./list-aliases
 

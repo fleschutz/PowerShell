@@ -1,13 +1,13 @@
 ## list-dir-tree.ps1 - Lists the full directory tree
 
-list-dir-tree.ps1 [<DirTree>]
-<DirTree> is the path to the directory tree
+This script lists the full directory tree.
 
 ## Parameters
 ```powershell
 list-dir-tree.ps1 [[-DirTree] <String>] [<CommonParameters>]
 
 -DirTree <String>
+    Specifies the path to the directory tree
     
     Required?                    false
     Position?                    1

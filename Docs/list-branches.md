@@ -1,6 +1,6 @@
 ## list-branches.ps1 - Lists all branches in a Git repository
 
-list-branches.ps1 [<RepoDir>] [<SearchPattern>]
+This script lists all branches in a Git repository.
 
 ## Parameters
 ```powershell

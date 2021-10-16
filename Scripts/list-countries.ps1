@@ -2,7 +2,7 @@
 .SYNOPSIS
 	Lists details of all countries
 .DESCRIPTION
-	list-countries.ps1 
+	This script lists details of all countries.
 .EXAMPLE
 	PS> ./list-countries
 .NOTES

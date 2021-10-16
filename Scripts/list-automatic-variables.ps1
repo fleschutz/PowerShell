@@ -2,7 +2,7 @@
 .SYNOPSIS
 	Lists all automatic variables of PowerShell
 .DESCRIPTION
-	list-automatic-variables.ps1
+	This script lists all automatic variables of PowerShell.
 .EXAMPLE
 	PS> ./list-automatic-variables
 

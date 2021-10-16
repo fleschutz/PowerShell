@@ -1,15 +1,13 @@
 ## list-unused-files.ps1 - Lists unused files in a folder (including subfolders)
 
-Lists files in a folder with last access time older than <Days>
-list-unused-files.ps1 <DirTree> <Days>
-<DirTree> is the path to the directory tree
-<Days> is the number of days
+This script scans and lists files in a folder with last access time older than number of days.
 
 ## Parameters
 ```powershell
 list-unused-files.ps1 [[-DirTree] <String>] [[-Days] <Int32>] [<CommonParameters>]
 
 -DirTree <String>
+    Specifies the path to the directory tree
     
     Required?                    false
     Position?                    1
@@ -18,6 +16,7 @@ list-unused-files.ps1 [[-DirTree] <String>] [[-Days] <Int32>] [<CommonParameters
     Accept wildcard characters?  false
 
 -Days <Int32>
+    Specifies the number of days
     
     Required?                    false
     Position?                    2

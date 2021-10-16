@@ -2,7 +2,7 @@
 .SYNOPSIS
 	Lists system information of the local computer
 .DESCRIPTION
-	list-system-info.ps1
+	This script lists system information of the local computer.
 .EXAMPLE
 	PS> ./list-system-info
 .NOTES

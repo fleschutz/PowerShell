@@ -2,7 +2,7 @@
 .SYNOPSIS
 	Lists the current crypto exchange rates
 .DESCRIPTION
-	list-crypto-rates.ps1 
+	This script lists the current crypto exchange rates.
 .EXAMPLE
 	PS> ./list-crypto-rates
 .NOTES

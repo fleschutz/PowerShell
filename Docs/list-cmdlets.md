@@ -1,6 +1,6 @@
 ## list-cmdlets.ps1 - Lists all PowerShell cmdlets
 
-list-cmdlets.ps1
+This script lists all PowerShell cmdlets.
 
 ## Parameters
 ```powershell

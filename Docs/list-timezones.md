@@ -1,6 +1,6 @@
 ## list-timezones.ps1 - Lists all available time zones
 
-list-timezones.ps1
+This script lists all available time zones.
 
 ## Parameters
 ```powershell

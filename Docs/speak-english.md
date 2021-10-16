@@ -1,12 +1,13 @@
-## speak-english.ps1 - Speaks the given text with an English text-to-speech (TTS) voice
+## speak-english.ps1 - Speaks text with an English text-to-speech voice
 
-speak-english.ps1 [<text>]
+This scripts speaks the given text with an English text-to-speech (TTS) voice.
 
 ## Parameters
 ```powershell
 speak-english.ps1 [[-text] <String>] [<CommonParameters>]
 
 -text <String>
+    Specifies the text to speak
     
     Required?                    false
     Position?                    1

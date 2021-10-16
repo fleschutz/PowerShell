@@ -2,10 +2,11 @@
 .SYNOPSIS
 	Lists unused files in a folder (including subfolders)
 .DESCRIPTION
-	Lists files in a folder with last access time older than <Days>
-	list-unused-files.ps1 <DirTree> <Days>
-	<DirTree> is the path to the directory tree
-	<Days> is the number of days
+	This script scans and lists files in a folder with last access time older than number of days.
+.PARAMETER DirTree
+	Specifies the path to the directory tree
+.PARAMETER Days
+	Specifies the number of days
 .EXAMPLE
 	PS> ./list-unused-files C:\ 100
 .NOTES

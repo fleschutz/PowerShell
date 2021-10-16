@@ -1,12 +1,13 @@
-## speak-italian.ps1 - Speaks the given text with an Italian text-to-speech (TTS) voice
+## speak-italian.ps1 - Speaks text with an Italian text-to-speech voice
 
-speak-italian.ps1 [<text>]
+This script speaks the given text with an Italian text-to-speech (TTS) voice.
 
 ## Parameters
 ```powershell
 speak-italian.ps1 [[-text] <String>] [<CommonParameters>]
 
 -text <String>
+    Specifies the text to speak
     
     Required?                    false
     Position?                    1

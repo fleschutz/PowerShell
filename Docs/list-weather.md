@@ -1,12 +1,13 @@
 ## list-weather.ps1 - Lists the hourly weather report
 
-list-weather.ps1 [<Location>]
+This script lists the hourly weather report.
 
 ## Parameters
 ```powershell
 list-weather.ps1 [[-Location] <String>] [<CommonParameters>]
 
 -Location <String>
+    Specifies the location to use (determined automatically per default)
     
     Required?                    false
     Position?                    1

@@ -1,7 +1,6 @@
-## list-city-weather.ps1 - List the current weather of cities world-wide
+## list-city-weather.ps1 - Lists current weather of cities world-wide
 
-List the current weather of cities world-wide (west to east)
-list-city-weather.ps1
+This script lists the current weather of cities world-wide (west to east).
 
 ## Parameters
 ```powershell

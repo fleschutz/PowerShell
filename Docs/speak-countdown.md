@@ -1,12 +1,13 @@
-## speak-countdown.ps1 - Speaks a countdown by text-to-speech (TTS)
+## speak-countdown.ps1 - Speaks a countdown by text-to-speech
 
-speak-countdown.ps1 [StartNumber]
+This scripts speaks a countdown by text-to-speech (TTS).
 
 ## Parameters
 ```powershell
 speak-countdown.ps1 [[-StartNumber] <Int32>] [<CommonParameters>]
 
 -StartNumber <Int32>
+    Specifies the number to start from
     
     Required?                    false
     Position?                    1

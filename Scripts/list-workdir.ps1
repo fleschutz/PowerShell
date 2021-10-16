@@ -2,7 +2,7 @@
 .SYNOPSIS
 	Lists the current working directory
 .DESCRIPTION
-	list-workdir.ps1 
+	This script lists the current working directory (but not the content itself!)
 .EXAMPLE
 	PS> ./list-workdir
 .NOTES

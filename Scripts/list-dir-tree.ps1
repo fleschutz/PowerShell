@@ -2,8 +2,9 @@
 .SYNOPSIS
 	Lists the full directory tree
 .DESCRIPTION
-	list-dir-tree.ps1 [<DirTree>]
-	<DirTree> is the path to the directory tree
+	This script lists the full directory tree.
+.PARAMETER DirTree
+	Specifies the path to the directory tree
 .EXAMPLE
 	PS> ./list-dir-tree C:\
 .NOTES

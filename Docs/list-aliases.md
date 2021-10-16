@@ -1,6 +1,6 @@
 ## list-aliases.ps1 - Lists all PowerShell aliases
 
-list-aliases.ps1
+This scripts lists all PowerShell aliases.
 
 ## Parameters
 ```powershell

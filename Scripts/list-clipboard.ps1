@@ -2,7 +2,7 @@
 .SYNOPSIS
 	Lists the contents of the clipboard
 .DESCRIPTION
-	list-clipboard.ps1
+	This script lists the contents of the clipboard.
 .EXAMPLE
 	PS> ./list-clipboard
 .NOTES

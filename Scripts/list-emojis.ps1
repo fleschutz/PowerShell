@@ -2,7 +2,7 @@
 .SYNOPSIS
 	Lists the Emojis of Unicode 13.0
 .DESCRIPTION
-	list-emojis.ps1 
+	This script lists the emojis of Unicode 13.0 sorted by category.
 .EXAMPLE
 	PS> ./list-emojis
 .NOTES

@@ -1,12 +1,13 @@
-## speak-french.ps1 - Speaks the given text with a French text-to-speech (TTS) voice
+## speak-french.ps1 - Speaks text with a French text-to-speech voice
 
-speak-french.ps1 [<text>]
+This script speaks the given text with a French text-to-speech (TTS) voice
 
 ## Parameters
 ```powershell
 speak-french.ps1 [[-text] <String>] [<CommonParameters>]
 
 -text <String>
+    Specifies the text to speak
     
     Required?                    false
     Position?                    1

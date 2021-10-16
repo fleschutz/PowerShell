@@ -1,13 +1,13 @@
 ## list-latest-tag.ps1 - Lists the latest tag on the current branch in a Git repository
 
-list-latest-tag.ps1 [<RepoDir>] 
-<RepoDir> is the path to the repository
+This script lists the latest tag on the current branch in a Git repository.
 
 ## Parameters
 ```powershell
 list-latest-tag.ps1 [[-RepoDir] <String>] [<CommonParameters>]
 
 -RepoDir <String>
+    Specifies the path to the repository
     
     Required?                    false
     Position?                    1

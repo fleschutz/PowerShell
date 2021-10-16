@@ -2,7 +2,7 @@
 .SYNOPSIS
 	Lists all available time zones
 .DESCRIPTION
-	list-timezones.ps1 
+	This script lists all available time zones.
 .EXAMPLE
 	PS> ./list-timezones
 

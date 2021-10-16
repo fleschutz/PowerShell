@@ -1,12 +1,13 @@
 ## list-anagrams.ps1 - Lists all anagrams of the given word
 
-list-anagrams.ps1 [<word>] [<columns>]
+This script lists all anagrams of the given word.
 
 ## Parameters
 ```powershell
 list-anagrams.ps1 [[-Word] <String>] [[-Columns] <Int32>] [<CommonParameters>]
 
 -Word <String>
+    Specifies the word to use
     
     Required?                    false
     Position?                    1
@@ -15,6 +16,7 @@ list-anagrams.ps1 [[-Word] <String>] [[-Columns] <Int32>] [<CommonParameters>]
     Accept wildcard characters?  false
 
 -Columns <Int32>
+    Specifies the number of columns
     
     Required?                    false
     Position?                    2

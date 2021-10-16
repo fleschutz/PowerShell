@@ -1,6 +1,6 @@
 ## list-workdir.ps1 - Lists the current working directory
 
-list-workdir.ps1
+This script lists the current working directory (but not the content itself!)
 
 ## Parameters
 ```powershell

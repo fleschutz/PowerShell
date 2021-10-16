@@ -2,7 +2,7 @@
 .SYNOPSIS
 	Lists available command-line interface (CLI) tools
 .DESCRIPTION
-	list-cli-tools.ps1
+	This script lists available command-line interface (CLI) tools.
 .EXAMPLE
 	PS> ./list-cli-tools
 

@@ -2,7 +2,7 @@
 .SYNOPSIS
 	Lists the TIOBE index of top programming languages
 .DESCRIPTION
-	list-tiobe-index.ps1 
+	This script lists the TIOBE index of top programming languages.
 .EXAMPLE
 	PS> ./list-tiobe-index
 .NOTES

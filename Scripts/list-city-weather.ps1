@@ -1,9 +1,8 @@
 ﻿<#
 .SYNOPSIS
-	List the current weather of cities world-wide 
+	Lists current weather of cities world-wide 
 .DESCRIPTION
-	List the current weather of cities world-wide (west to east)
-	list-city-weather.ps1
+	This script lists the current weather of cities world-wide (west to east).
 .EXAMPLE
 	PS> ./list-city-weather
 .NOTES
