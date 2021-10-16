@@ -264,53 +264,53 @@ Mega Collection of PowerShell Scripts
 | [list-exchange-rates.ps1](Scripts/list-exchange-rates.ps1)| Lists the current exchange rates for the given currency       | [Help](Docs/list-exchange-rates.md)     |
 | [list-memos.ps1](Scripts/list-memos.ps1)             | Lists the memos at $HOME/Memos.csv                                 | [Help](Docs/list-memos.md)              |
 | [list-mysql-tables.ps1](Scripts/list-mysql-tables.ps1)| Lists the MySQL server tables                                     | [Help](Docs/list-mysql-tables.md)       |
-| [list-news.ps1](Scripts/list-news.ps1)               | Lists the latest news                                              | [Help](Docs/wakeup.md)              |
-| [list-os-releases.ps1](Scripts/list-os-releases.ps1) | Lists operating system releases and download URL                   | [Help](Docs/wakeup.md)              |
-| [list-os-updates.ps1](Scripts/list-os-updates.ps1)   | Lists operating system updates                                     | [Help](Docs/wakeup.md)              |
-| [list-passwords.ps1](Scripts/list-passwords.ps1)     | Prints a list of random passwords                                  | [Help](Docs/wakeup.md)              |
-| [list-pins.ps1](Scripts/list-pins.ps1)               | Prints a list of random PIN's                                      | [Help](Docs/wakeup.md)              |
-| [list-sql-tables.ps1](Scripts/list-sql-tables.ps1)   | Lists the SQL server tables                                        | [Help](Docs/wakeup.md)              |
-| [list-tiobe-index.ps1](Scripts/list-tiobe-index.ps1) | Lists the TIOBE index of top programming languages                 | [Help](Docs/wakeup.md)              |
-| [list-weather.ps1](Scripts/list-weather.ps1)         | Lists the hourly weather                                           | [Help](Docs/wakeup.md)              |
-| [locate-city.ps1](Scripts/locate-city.ps1)           | Prints the geographic location of the given city                   | [Help](Docs/wakeup.md)              |
-| [locate-ipaddress.ps1](Scripts/locate-ipaddress.ps1) | Prints the geographic location of the given IP address             | [Help](Docs/wakeup.md)              |
-| [locate-zip-code.ps1](Scripts/locate-zip-code.ps1)   | Prints the geographic location of the given zip-code               | [Help](Docs/wakeup.md)              |
-| [moon.ps1](Scripts/moon.ps1)                         | Prints the current moon phase                                      | [Help](Docs/wakeup.md)              |
+| [list-news.ps1](Scripts/list-news.ps1)               | Lists the latest news                                              | [Help](Docs/list-news.md)               |
+| [list-os-releases.ps1](Scripts/list-os-releases.ps1) | Lists operating system releases and download URL                   | [Help](Docs/list-os-releases.md)        |
+| [list-os-updates.ps1](Scripts/list-os-updates.ps1)   | Lists operating system updates                                     | [Help](Docs/list-os-updates.md)         |
+| [list-passwords.ps1](Scripts/list-passwords.ps1)     | Prints a list of random passwords                                  | [Help](Docs/list-passwords.md)          |
+| [list-pins.ps1](Scripts/list-pins.ps1)               | Prints a list of random PIN's                                      | [Help](Docs/list-pins.md)               |
+| [list-sql-tables.ps1](Scripts/list-sql-tables.ps1)   | Lists the SQL server tables                                        | [Help](Docs/list-sql-tables.md)         |
+| [list-tiobe-index.ps1](Scripts/list-tiobe-index.ps1) | Lists the TIOBE index of top programming languages                 | [Help](Docs/list-tiobe-index.md)        |
+| [list-weather.ps1](Scripts/list-weather.ps1)         | Lists the hourly weather                                           | [Help](Docs/list-weather.md)            |
+| [locate-city.ps1](Scripts/locate-city.ps1)           | Prints the geographic location of the given city                   | [Help](Docs/locate-city.md)             |
+| [locate-ipaddress.ps1](Scripts/locate-ipaddress.ps1) | Prints the geographic location of the given IP address             | [Help](Docs/locate-ipaddress.md)        |
+| [locate-zip-code.ps1](Scripts/locate-zip-code.ps1)   | Prints the geographic location of the given zip-code               | [Help](Docs/locate-zip-code.md)         |
+| [moon.ps1](Scripts/moon.ps1)                         | Prints the current moon phase                                      | [Help](Docs/moon.md)                    |
 | [new-qrcode.ps1](Scripts/new-qrcode.ps1)             | Generates a new QR code image file                                 | [Help](Docs/new-qrcode.md)              |
-| [reboot-fritzbox.ps1](Scripts/reboot-fritzbox.ps1)   | Reboots the FRITZ!box device                                       | [Help](Docs/wakeup.md)              |
-| [scan-ports.ps1](Scripts/scan-ports.ps1)             | Scans the network for open/closed ports                            | [Help](Docs/wakeup.md)              |
-| [send-email.ps1](Scripts/send-email.ps1)             | Sends an email message                                             | [Help](Docs/wakeup.md)              |
-| [send-tcp.ps1](Scripts/send-udp.ps1)                 | Sends a TCP message to the given IP address and port               | [Help](Docs/wakeup.md)              |
-| [send-udp.ps1](Scripts/send-udp.ps1)                 | Sends a UDP datagram message to the given IP address and port      | [Help](Docs/wakeup.md)              |
-| [set-timer.ps1](Scripts/set-timer.ps1)               | Sets a timer for a countdown                                       | [Help](Docs/wakeup.md)              |
-| [simulate-matrix.ps1](Scripts/simulate-matrix.ps1)   | Simulates the Matrix (fun)                                         | [Help](Docs/wakeup.md)              |
-| [simulate-presence.ps1](Scripts/simulate-presence.ps1)| Simulates the human presence against burglars                     | [Help](Docs/wakeup.md)              |
-| [start-calibre-server.ps1](Scripts/start-calibre-server.ps1)| Starts a local Calibre server                               | [Help](Docs/wakeup.md)              |
-| [start-ipfs-server.ps1](Scripts/start-ipfs-server.ps1)| Starts a local IPFS server                                        | [Help](Docs/wakeup.md)              |
-| [switch-shelly1.ps1](Scripts/switch-shelly1.ps1)     | Switches a Shelly1 device in the local network                     | [Help](Docs/wakeup.md)              |
-| [translate-file.ps1](Scripts/translate-file.ps1)     | Translates the given text file into other languages                | [Help](Docs/wakeup.md)              |
-| [translate-files.ps1](Scripts/translate-files.ps1)   | Translates the given text files into any supported language        | [Help](Docs/wakeup.md)              |
-| [translate-text.ps1](Scripts/translate-text.ps1)     | Translates the given text in English into other languages          | [Help](Docs/wakeup.md)              |
-| [weather.ps1](Scripts/weather.ps1)                   | Prints the current weather forecast                                | [Help](Docs/wakeup.md)              |
-| [weather-report.ps1](Scripts/weather-report.ps1)     | Prints the local weather report                                    | [Help](Docs/wakeup.md)              |
-| [what-is.ps1](Scripts/what-is.ps1)                   | Prints a description of the given abbreviation                     | [Help](Docs/wakeup.md)              |
-| [write-animated.ps1](Scripts/write-animated.ps1)     | Writes animated text                                               | [Help](Docs/wakeup.md)              |
-| [write-big.ps1](Scripts/write-big.ps1)               | Writes the given text in big letters                               | [Help](Docs/wakeup.md)              |
-| [write-blue.ps1](Scripts/write-blue.ps1)             | Writes the given text in a blue foreground color                   | [Help](Docs/wakeup.md)              |
-| [write-braille.ps1](Scripts/write-braille.ps1)       | Writes the given text in Braille                                   | [Help](Docs/wakeup.md)              |
-| [write-calendar.ps1](Scripts/write-calendar.ps1)     | Writes the calendar (month of year)                                | [Help](Docs/write-calendar.md)              |
-| [write-green.ps1](Scripts/write-green.ps1)           | Writes the given text in a green foreground color                  | [Help](Docs/wakeup.md)              |
-| [write-joke.ps1](Scripts/write-joke.ps1)             | Writes a random Juck Norris joke                                   | [Help](Docs/wakeup.md)              |
-| [write-lowercase.ps1](Scripts/write-lowercase.ps1)   | Writes the given text in lowercase letters                         | [Help](Docs/wakeup.md)              |
-| [write-marquee.ps1](Scripts/write-marquee.ps1)       | Writes the given text as marquee                                   | [Help](Docs/wakeup.md)              |
-| [write-morse-code.ps1](Scripts/write-morse-code.ps1) | Writes the given text in Morse code                                | [Help](Docs/wakeup.md)              |
-| [write-motd.ps1](Scripts/write-motd.ps1)             | Writes the message of the day (MOTD)                               | [Help](Docs/wakeup.md)              |
-| [write-quote.ps1](Scripts/write-quote.ps1)           | Writes a random quote                                              | [Help](Docs/wakeup.md)              |
-| [write-red.ps1](Scripts/write-red.ps1)               | Writes the given text in a red foreground color                    | [Help](Docs/wakeup.md)              |
-| [write-rot13.ps1](Scripts/write-rot13.ps1)           | Encodes or decodes the given text with ROT13                       | [Help](Docs/wakeup.md)              |
-| [write-typewriter.ps1](Scripts/write-typewriter.ps1) | Writes the given text with the typewriter effect                   | [Help](Docs/wakeup.md)              |
-| [write-uppercase.ps1](Scripts/write-uppercase.ps1)   | Writes the given text in uppercase letters                         | [Help](Docs/wakeup.md)              |
-| [write-vertical.ps1](Scripts/write-vertical.ps1)     | Writes the given text in vertical direction                        | [Help](Docs/wakeup.md)              |
+| [reboot-fritzbox.ps1](Scripts/reboot-fritzbox.ps1)   | Reboots the FRITZ!box device                                       | [Help](Docs/reboot-fritzbox.md)         |
+| [scan-ports.ps1](Scripts/scan-ports.ps1)             | Scans the network for open/closed ports                            | [Help](Docs/scan-ports.md)              |
+| [send-email.ps1](Scripts/send-email.ps1)             | Sends an email message                                             | [Help](Docs/send-email.md)              |
+| [send-tcp.ps1](Scripts/send-udp.ps1)                 | Sends a TCP message to the given IP address and port               | [Help](Docs/send-tcp.md)                |
+| [send-udp.ps1](Scripts/send-udp.ps1)                 | Sends a UDP datagram message to the given IP address and port      | [Help](Docs/send-udp.md)                |
+| [set-timer.ps1](Scripts/set-timer.ps1)               | Sets a timer for a countdown                                       | [Help](Docs/set-timer.md)               |
+| [simulate-matrix.ps1](Scripts/simulate-matrix.ps1)   | Simulates the Matrix (fun)                                         | [Help](Docs/simulate-matrix.md)         |
+| [simulate-presence.ps1](Scripts/simulate-presence.ps1)| Simulates the human presence against burglars                     | [Help](Docs/simulate-presence.md)       |
+| [start-calibre-server.ps1](Scripts/start-calibre-server.ps1)| Starts a local Calibre server                               | [Help](Docs/start-calibre-server.md)    |
+| [start-ipfs-server.ps1](Scripts/start-ipfs-server.ps1)| Starts a local IPFS server                                        | [Help](Docs/start-ipfs-server.md)       |
+| [switch-shelly1.ps1](Scripts/switch-shelly1.ps1)     | Switches a Shelly1 device in the local network                     | [Help](Docs/switch-shelly1.md)          |
+| [translate-file.ps1](Scripts/translate-file.ps1)     | Translates the given text file into other languages                | [Help](Docs/translate-file.md)          |
+| [translate-files.ps1](Scripts/translate-files.ps1)   | Translates the given text files into any supported language        | [Help](Docs/translate-files.md)         |
+| [translate-text.ps1](Scripts/translate-text.ps1)     | Translates the given text in English into other languages          | [Help](Docs/translate-text.md)          |
+| [weather.ps1](Scripts/weather.ps1)                   | Prints the current weather forecast                                | [Help](Docs/weather.md)                 |
+| [weather-report.ps1](Scripts/weather-report.ps1)     | Prints the local weather report                                    | [Help](Docs/weather-report.md)          |
+| [what-is.ps1](Scripts/what-is.ps1)                   | Prints a description of the given abbreviation                     | [Help](Docs/what-is.md)                 |
+| [write-animated.ps1](Scripts/write-animated.ps1)     | Writes animated text                                               | [Help](Docs/write-animated.md)          |
+| [write-big.ps1](Scripts/write-big.ps1)               | Writes the given text in big letters                               | [Help](Docs/write-big.md)               |
+| [write-blue.ps1](Scripts/write-blue.ps1)             | Writes the given text in a blue foreground color                   | [Help](Docs/write-blue.md)              |
+| [write-braille.ps1](Scripts/write-braille.ps1)       | Writes the given text in Braille                                   | [Help](Docs/write-braille.md)           |
+| [write-calendar.ps1](Scripts/write-calendar.ps1)     | Writes the calendar (month of year)                                | [Help](Docs/write-calendar.md)          |
+| [write-green.ps1](Scripts/write-green.ps1)           | Writes the given text in a green foreground color                  | [Help](Docs/write-green.md)             |
+| [write-joke.ps1](Scripts/write-joke.ps1)             | Writes a random Juck Norris joke                                   | [Help](Docs/write-joke.md)              |
+| [write-lowercase.ps1](Scripts/write-lowercase.ps1)   | Writes the given text in lowercase letters                         | [Help](Docs/write-lowercase.md)         |
+| [write-marquee.ps1](Scripts/write-marquee.ps1)       | Writes the given text as marquee                                   | [Help](Docs/write-marquee.md)           |
+| [write-morse-code.ps1](Scripts/write-morse-code.ps1) | Writes the given text in Morse code                                | [Help](Docs/write-morse-code.md)        |
+| [write-motd.ps1](Scripts/write-motd.ps1)             | Writes the message of the day (MOTD)                               | [Help](Docs/write-motd.md)              |
+| [write-quote.ps1](Scripts/write-quote.ps1)           | Writes a random quote                                              | [Help](Docs/write-quote.md)             |
+| [write-red.ps1](Scripts/write-red.ps1)               | Writes the given text in a red foreground color                    | [Help](Docs/write-red.md)               |
+| [write-rot13.ps1](Scripts/write-rot13.ps1)           | Encodes or decodes the given text with ROT13                       | [Help](Docs/write-rot13.md)             |
+| [write-typewriter.ps1](Scripts/write-typewriter.ps1) | Writes the given text with the typewriter effect                   | [Help](Docs/write-typewriter.md)        |
+| [write-uppercase.ps1](Scripts/write-uppercase.ps1)   | Writes the given text in uppercase letters                         | [Help](Docs/write-uppercase.md)         |
+| [write-vertical.ps1](Scripts/write-vertical.ps1)     | Writes the given text in vertical direction                        | [Help](Docs/write-vertical.md)          |
 
 Feedback
 --------
