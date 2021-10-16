@@ -1,6 +1,6 @@
 ## list-mysql-tables.ps1 - Lists all tables of a MySQL database
 
-list-mysql-tables.ps1
+This script lists all tables of the given MySQL database.
 
 ## Parameters
 ```powershell

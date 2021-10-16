@@ -1,6 +1,6 @@
 ## list-modules.ps1 - Lists all PowerShell modules
 
-list-modules.ps1
+This script lists all installed PowerShell modules.
 
 ## Parameters
 ```powershell

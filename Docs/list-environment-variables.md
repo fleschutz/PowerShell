@@ -1,6 +1,6 @@
 ## list-environment-variables.ps1 - Lists all environment variables
 
-list-environment-variables.ps1
+This script lists all environment variables.
 
 ## Parameters
 ```powershell

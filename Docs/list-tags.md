@@ -1,14 +1,13 @@
 ## list-tags.ps1 - Lists all tags in a Git repository
 
-list-tags.ps1 [<RepoDir>] [<SearchPattern>]
-<RepoDir> is the path to the Git repository
-<SearchPattern> is "*" (anything) by default
+This script lists all tags in the given Git repository.
 
 ## Parameters
 ```powershell
 list-tags.ps1 [[-RepoDir] <String>] [[-SearchPattern] <String>] [<CommonParameters>]
 
 -RepoDir <String>
+    Specifies the path to the Git repository
     
     Required?                    false
     Position?                    1
@@ -17,6 +16,7 @@ list-tags.ps1 [[-RepoDir] <String>] [[-SearchPattern] <String>] [<CommonParamete
     Accept wildcard characters?  false
 
 -SearchPattern <String>
+    Specifies the search pattern (anything by default)
     
     Required?                    false
     Position?                    2

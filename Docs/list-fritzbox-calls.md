@@ -1,12 +1,13 @@
 ## list-fritzbox-calls.ps1 - Lists the phone calls of the FRITZ!Box device
 
-list-fritzbox-calls.ps1 [<Username>] [<Password>]
+This script lists the phone calls of the FRITZ!Box device.
 
 ## Parameters
 ```powershell
 list-fritzbox-calls.ps1 [[-Username] <String>] [[-Password] <String>] [<CommonParameters>]
 
 -Username <String>
+    Specifies the user name for FRITZ!Box
     
     Required?                    false
     Position?                    1
@@ -15,6 +16,7 @@ list-fritzbox-calls.ps1 [[-Username] <String>] [[-Password] <String>] [<CommonPa
     Accept wildcard characters?  false
 
 -Password <String>
+    Specifies the password to FRITZ!Box
     
     Required?                    false
     Position?                    2

@@ -1,13 +1,13 @@
 ## list-hidden-files.ps1 - Lists hidden files in a directory tree
 
-list-hidden-files.ps1 [<DirTree>]
-<DirTree> is the path to the directory tree
+This script scans and lists all hidden files in a directory tree.
 
 ## Parameters
 ```powershell
 list-hidden-files.ps1 [[-DirTree] <String>] [<CommonParameters>]
 
 -DirTree <String>
+    Specifies the path to the directory tree
     
     Required?                    false
     Position?                    1

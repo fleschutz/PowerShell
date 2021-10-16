@@ -1,6 +1,6 @@
 ## list-services.ps1 - Lists the local computer services
 
-list-services.ps1
+This script lists all local computer services.
 
 ## Parameters
 ```powershell

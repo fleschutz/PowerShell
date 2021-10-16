@@ -1,12 +1,13 @@
 ## list-fritzbox-devices.ps1 - Lists FRITZ!Box's known devices
 
-list-fritzbox-devices.ps1 [<Username>] [<Password>]
+This script lists FRITZ!Box's known devices.
 
 ## Parameters
 ```powershell
 list-fritzbox-devices.ps1 [[-Username] <String>] [[-Password] <String>] [<CommonParameters>]
 
 -Username <String>
+    Specifies the user name to FRITZ!Box
     
     Required?                    false
     Position?                    1
@@ -15,6 +16,7 @@ list-fritzbox-devices.ps1 [[-Username] <String>] [[-Password] <String>] [<Common
     Accept wildcard characters?  false
 
 -Password <String>
+    Specifies the password to FRITZ!Box
     
     Required?                    false
     Position?                    2

@@ -1,6 +1,6 @@
 ## list-printers.ps1 - Lists all printers known to the local computer
 
-list-printers.ps1
+This script lists all printers known to the local computer.
 
 ## Parameters
 ```powershell

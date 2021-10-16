@@ -1,14 +1,13 @@
 ## list-branches.ps1 - Lists all branches in a Git repository
 
 list-branches.ps1 [<RepoDir>] [<SearchPattern>]
-<RepoDir> is the current working directory by default
-<SearchPattern> is "*" (anything) by default
 
 ## Parameters
 ```powershell
 list-branches.ps1 [[-RepoDir] <String>] [[-SearchPattern] <String>] [<CommonParameters>]
 
 -RepoDir <String>
+    Specifies the path to the Git repository (current working directory by default)
     
     Required?                    false
     Position?                    1
@@ -17,6 +16,7 @@ list-branches.ps1 [[-RepoDir] <String>] [[-SearchPattern] <String>] [<CommonPara
     Accept wildcard characters?  false
 
 -SearchPattern <String>
+    Specifies the search patter (anything by default)
     
     Required?                    false
     Position?                    2

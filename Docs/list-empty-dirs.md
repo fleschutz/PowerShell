@@ -1,13 +1,13 @@
 ## list-empty-dirs.ps1 - Lists empty subfolders within a directory tree
 
-list-empty-dirs.ps1 [<DirTree>]
-<DirTree> is the path to the directory tree
+This script scans and lists all empty subfolders within the given directory tree.
 
 ## Parameters
 ```powershell
 list-empty-dirs.ps1 [[-DirTree] <String>] [<CommonParameters>]
 
 -DirTree <String>
+    Specifies the path to the directory tree
     
     Required?                    false
     Position?                    1

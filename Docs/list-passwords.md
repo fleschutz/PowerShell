@@ -1,12 +1,13 @@
-## list-passwords.ps1 - Prints a list of random passwords
+## list-passwords.ps1 - Lists random passwords
 
-list-passwords.ps1 [<PasswordLength>] [<Columns>] [<Rows>]
+This script lists random passwords.
 
 ## Parameters
 ```powershell
 list-passwords.ps1 [[-PasswordLength] <Int32>] [[-Columns] <Int32>] [[-Rows] <Int32>] [<CommonParameters>]
 
 -PasswordLength <Int32>
+    Specifies the length of the password
     
     Required?                    false
     Position?                    1
@@ -15,6 +16,7 @@ list-passwords.ps1 [[-PasswordLength] <Int32>] [[-Columns] <Int32>] [[-Rows] <In
     Accept wildcard characters?  false
 
 -Columns <Int32>
+    Specifies the number of columns
     
     Required?                    false
     Position?                    2
@@ -23,6 +25,7 @@ list-passwords.ps1 [[-PasswordLength] <Int32>] [[-Columns] <Int32>] [[-Rows] <In
     Accept wildcard characters?  false
 
 -Rows <Int32>
+    Specifies the number of rows
     
     Required?                    false
     Position?                    3

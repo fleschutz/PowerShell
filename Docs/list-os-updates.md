@@ -1,12 +1,13 @@
 ## list-os-updates.ps1 - Lists the latest operating system updates
 
-list-os-updates.ps1 [<RSS-URL>] [<max-count>]
+This script lists the latest operating system update news.
 
 ## Parameters
 ```powershell
 list-os-updates.ps1 [[-RSS_URL] <String>] [[-MaxCount] <Int32>] [<CommonParameters>]
 
 -RSS_URL <String>
+    Specifies the URL to the RSS feed
     
     Required?                    false
     Position?                    1
@@ -15,6 +16,7 @@ list-os-updates.ps1 [[-RSS_URL] <String>] [[-MaxCount] <Int32>] [<CommonParamete
     Accept wildcard characters?  false
 
 -MaxCount <Int32>
+    Specifies the number of news to list
     
     Required?                    false
     Position?                    2

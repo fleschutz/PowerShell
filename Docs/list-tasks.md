@@ -1,6 +1,6 @@
 ## list-tasks.ps1 - Lists all Windows scheduler tasks
 
-list-tasks.ps1
+This script lists all Windows scheduler tasks.
 
 ## Parameters
 ```powershell

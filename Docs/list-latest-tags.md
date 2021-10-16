@@ -1,12 +1,13 @@
 ## list-latest-tags.ps1 - Lists the latests tags in all Git repositories in a folder
 
-list-latest-tags.ps1 [<ParentDir>]
+This script lists the latest tags in all Git repositories in the specified folder.
 
 ## Parameters
 ```powershell
 list-latest-tags.ps1 [[-ParentDir] <String>] [<CommonParameters>]
 
 -ParentDir <String>
+    Specifies the path to the parent folder
     
     Required?                    false
     Position?                    1

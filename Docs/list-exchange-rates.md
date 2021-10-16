@@ -1,13 +1,13 @@
 ## list-exchange-rates.ps1 - Lists the exchange rates for a currency
 
 Lists the current exchange rates for the given currency (USD per default).
-list-exchange-rates.ps1 [<currency>]
 
 ## Parameters
 ```powershell
 list-exchange-rates.ps1 [[-currency] <String>] [<CommonParameters>]
 
 -currency <String>
+    Specifies the base currency
     
     Required?                    false
     Position?                    1

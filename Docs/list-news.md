@@ -1,12 +1,13 @@
 ## list-news.ps1 - Lists the latest news
 
-list-news.ps1 [<RSS-URL>] [<max-count>]
+This script lists the latest RSS feed news.
 
 ## Parameters
 ```powershell
 list-news.ps1 [[-RSS_URL] <String>] [[-MaxCount] <Int32>] [<CommonParameters>]
 
 -RSS_URL <String>
+    Specifies the URL to the RSS feed
     
     Required?                    false
     Position?                    1
@@ -15,6 +16,7 @@ list-news.ps1 [[-RSS_URL] <String>] [[-MaxCount] <Int32>] [<CommonParameters>]
     Accept wildcard characters?  false
 
 -MaxCount <Int32>
+    Specifies the number of news to list
     
     Required?                    false
     Position?                    2

@@ -1,13 +1,13 @@
 ## list-submodules.ps1 - Lists the submodules of a Git repository
 
-list-submodules.ps1 [<RepoDir>] 
-<RepoDir> is the path to the repository (current working dir by default)
+This script lists the submodules of the given Git repository.
 
 ## Parameters
 ```powershell
 list-submodules.ps1 [[-RepoDir] <String>] [<CommonParameters>]
 
 -RepoDir <String>
+    Specifies the path to the repository (current working dir by default)
     
     Required?                    false
     Position?                    1

@@ -1,13 +1,13 @@
 ## list-files.ps1 - Lists all files in a directory tree
 
-list-files.ps1 [<DirTree>]
-<DirTree> is the path to the directory tree
+This script lists all files within the given directory tree.
 
 ## Parameters
 ```powershell
 list-files.ps1 [[-DirTree] <String>] [<CommonParameters>]
 
 -DirTree <String>
+    Specifies the path to the directory tree
     
     Required?                    false
     Position?                    1

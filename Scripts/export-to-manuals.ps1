@@ -21,7 +21,7 @@ try {
 	$StopWatch = [system.diagnostics.stopwatch]::startNew()
 
 	$Scripts = Get-ChildItem "$FilePattern"
-	"Found $($Scripts.Count) scripts, exporting to $TargetDir..."
+	"⏳ Exporting $($Scripts.Count) scripts to $TargetDir..."
 
 	foreach ($Script in $Scripts) {
 		& "$PSScriptRoot/convert-ps2md" "$Script" > "$TargetDir/$($Script.BaseName).md"

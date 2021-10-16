@@ -1,12 +1,13 @@
-## list-pins.ps1 - Prints a list of random PIN's
+## list-pins.ps1 - Lists random PIN's
 
-list-pins.ps1 [<PinLength>] [<Columns>] [<Rows>]
+This script lists random PIN's.
 
 ## Parameters
 ```powershell
 list-pins.ps1 [[-PinLength] <Int32>] [[-Columns] <Int32>] [[-Rows] <Int32>] [<CommonParameters>]
 
 -PinLength <Int32>
+    Specifies the PIN length
     
     Required?                    false
     Position?                    1
@@ -15,6 +16,7 @@ list-pins.ps1 [[-PinLength] <Int32>] [[-Columns] <Int32>] [[-Rows] <Int32>] [<Co
     Accept wildcard characters?  false
 
 -Columns <Int32>
+    Specifies the number of columns
     
     Required?                    false
     Position?                    2
@@ -23,6 +25,7 @@ list-pins.ps1 [[-PinLength] <Int32>] [[-Columns] <Int32>] [[-Rows] <Int32>] [<Co
     Accept wildcard characters?  false
 
 -Rows <Int32>
+    Specifies the number of rows
     
     Required?                    false
     Position?                    3

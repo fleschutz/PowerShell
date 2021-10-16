@@ -1,13 +1,13 @@
 ## list-empty-files.ps1 - Lists empty files within a directory tree
 
-list-empty-files.ps1 [<DirTree>]
-<DirTree> is the path to the directory tree
+This script scans and lists all empty files within the given directory tree.
 
 ## Parameters
 ```powershell
 list-empty-files.ps1 [[-DirTree] <String>] [<CommonParameters>]
 
 -DirTree <String>
+    Specifies the path to the directory tree
     
     Required?                    false
     Position?                    1
