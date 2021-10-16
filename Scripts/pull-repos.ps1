@@ -22,26 +22,26 @@ try {
 	if ($lastExitCode -ne "0") { throw "Can't execute 'git' - make sure Git is installed and available" }
 
 	$Folders = (get-childItem "$ParentDir" -attributes Directory)
-	$FolderCount = $Folders.Count
+	$NumFolders = $Folders.Count
 	$ParentDirName = (get-item "$ParentDir").Name
-	"Found $FolderCount subfolders in 📂$ParentDirName..."
+	"Found $NumFolders subfolders in 📂$ParentDirName..."
 
 	[int]$Step = 1
 	foreach ($Folder in $Folders) {
 		$FolderName = (get-item "$Folder").Name
-		"⏳ Step $Step/$($FolderCount): Pulling 📂$FolderName..."
+		"⏳ Pulling 📂$FolderName... [step $Step/$NumFolders]"
 
 		& git -C "$Folder" pull --recurse-submodules --jobs=4
-		if ($lastExitCode -ne "0") { write-warning "'git pull' on 📂$FolderName failed" }
+		if ($lastExitCode -ne "0") { write-warning "'git pull' in 📂$FolderName failed" }
 
 		& git -C "$Folder" submodule update --init --recursive
-		if ($lastExitCode -ne "0") { throw "'git submodule update' failed" }
+		if ($lastExitCode -ne "0") { throw "'git submodule update' in 📂$FolderName failed" }
 
 		$Step++
 	}
 
 	[int]$Elapsed = $StopWatch.Elapsed.TotalSeconds
-	"✔️ pulled $FolderCount Git repositories at 📂$ParentDirName in $Elapsed sec"
+	"✔️ pulled $NumFolders Git repositories at 📂$ParentDirName in $Elapsed sec"
 	exit 0 # success
 } catch {
 	"⚠️ Error: $($Error[0]) ($($MyInvocation.MyCommand.Name):$($_.InvocationInfo.ScriptLineNumber))"

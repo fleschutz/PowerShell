@@ -22,23 +22,23 @@ try {
 	if ($lastExitCode -ne "0") { throw "Can't execute 'git' - make sure Git is installed and available" }
 
 	$Folders = (get-childItem "$ParentDir" -attributes Directory)
-	$FolderCount = $Folders.Count
+	$NumFolders = $Folders.Count
 	$ParentDirName = (get-item "$ParentDir").Name
-	"Found $FolderCount subfolders in 📂$ParentDirName..."
+	"Found $NumFolders subfolders in 📂$ParentDirName..."
 
 	[int]$Step = 1
 	foreach ($Folder in $Folders) {
 		$FolderName = (get-item "$Folder").Name
-		"⏳ Step $Step/$($FolderCount): Fetching 📂$FolderName..."
+		"⏳ Fetching 📂$FolderName... [step $Step/$NumFolders]"
 
 		& git -C "$Folder" fetch --all --recurse-submodules --prune --prune-tags --force
-		if ($lastExitCode -ne "0") { throw "'git fetch' in $Folder failed" }
+		if ($lastExitCode -ne "0") { throw "'git fetch' in $FolderName failed" }
 
 		$Step++
 	}
 
 	[int]$Elapsed = $StopWatch.Elapsed.TotalSeconds
-	"✔️ fetched $FolderCount Git repositories at 📂$ParentDirName in $Elapsed sec"
+	"✔️ fetched $NumFolders Git repositories at 📂$ParentDirName in $Elapsed sec"
 	exit 0 # success
 } catch {
 	"⚠️ Error: $($Error[0]) ($($MyInvocation.MyCommand.Name):$($_.InvocationInfo.ScriptLineNumber))"
