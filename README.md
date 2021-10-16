@@ -214,12 +214,12 @@ Mega Collection of PowerShell Scripts
 | [list-tags.ps1](Scripts/list-tags.ps1)               | Lists all tags in a Git repository                                 | [Help](Docs/list-tags.md)           |
 | [new-branch.ps1](Scripts/new-branch.ps1)             | Creates a new branch in a Git repository                           | [Help](Docs/new-branch.md)          |
 | [new-tag.ps1](Scripts/new-tag.ps1)                   | Creates a new tag in a Git repository                              | [Help](Docs/new-tag.md)             |
-| [pick-commit.ps1](Scripts/pick-commit.ps1)           | Cherry-picks a Git commit into multiple branches                   | [Help](Docs/pick-commit.md)       |
+| [pick-commit.ps1](Scripts/pick-commit.ps1)           | Cherry-picks a Git commit into multiple branches                   | [Help](Docs/pick-commit.md)         |
 | [pull-repo.ps1](Scripts/pull-repo.ps1)               | Pulls updates for a Git repository (including submodules)          | [Help](Docs/pull-repo.md)           |
-| [pull-repos.ps1](Scripts/pull-repos.ps1)             | Pulls updates for all Git repositories in a folder (including submodules) | [Help](Docs/pull-repos.md)|
-| [remove-tag.ps1](Scripts/remove-tag.ps1)             | Removes a tag in a Git repository                                  | [Help](Docs/remove-tag.md)       |
+| [pull-repos.ps1](Scripts/pull-repos.ps1)             | Pulls updates for all Git repositories in a folder (including submodules) | [Help](Docs/pull-repos.md)   |
+| [remove-tag.ps1](Scripts/remove-tag.ps1)             | Removes a tag in a Git repository                                  | [Help](Docs/remove-tag.md)          |
 | [switch-branch.ps1](Scripts/switch-branch.ps1)       | Switches the branch in a Git repository (including submodules)     | [Help](Docs/switch-branch.md)       |
-| [sync-repo.ps1](Scripts/sync-repo.ps1)               | Synchronizes a Git repository by push & pull (including submodules) | [Help](Docs/sync-repo.md)          |
+| [sync-repo.ps1](Scripts/sync-repo.ps1)               | Synchronizes a Git repository by push & pull (including submodules)| [Help](Docs/sync-repo.md)           |
 
 🔎 Scripts for PowerShell 
 ------------------------
@@ -244,26 +244,26 @@ Mega Collection of PowerShell Scripts
 
 | Script                                               | Description                                                        | Help                                    |
 | ---------------------------------------------------- | ------------------------------------------------------------------ | --------------------------------------- |
-| [add-memo.ps1](Scripts/add-memo.ps1)                 | Adds the given memo text to $HOME/Memos.csv                        | [Help](Docs/wakeup.md)              |
-| [check-ipv4-address.ps1](Scripts/check-ipv4-address.ps1)| Checks the given IPv4 address for validity                      | [Help](Docs/wakeup.md)              |
-| [check-ipv6-address.ps1](Scripts/check-ipv6-address.ps1)| Checks the given IPv6 address for validity                      | [Help](Docs/wakeup.md)              |
-| [check-mac-address.ps1](Scripts/check-mac-address.ps1)| Checks the given MAC address for validity                         | [Help](Docs/wakeup.md)              |
-| [check-subnet-mask.ps1](Scripts/check-subnet-mask.ps1)| Checks the given subnet mask for validity                         | [Help](Docs/wakeup.md)              |
-| [check-weather.ps1](Scripts/check-weather.ps1)       | Checks the current weather for critical values                     | [Help](Docs/wakeup.md)              |
-| [display-time.ps1](Scripts/display-time.ps1)         | Displays the current time for 10 seconds by default                | [Help](Docs/wakeup.md)              |
-| [list-anagrams.ps1](Scripts/list-anagrams.ps1)       | Lists all anagrams of the given word                               | [Help](Docs/wakeup.md)              |
-| [list-city-weather.ps1](Scripts/list-city-weather.ps1)| Lists the current weather of cities worldwide (west to east)      | [Help](Docs/wakeup.md)              |
-| [list-countries.ps1](Scripts/list-countries.ps1)     | Lists details of all countries                                     | [Help](Docs/wakeup.md)              |
-| [list-credits.ps1](Scripts/list-credits.ps1)         | Shows the credits                                                  | [Help](Docs/wakeup.md)              |
-| [list-crypto-rates.ps1](Scripts/list-crypto-rates.ps1)| Lists the current crypto exchange rates                           | [Help](Docs/wakeup.md)              |
-| [list-environment-variables.ps1](Scripts/list-environment-variables.ps1)| Lists all environment variables                 | [Help](Docs/wakeup.md)              |
-| [list-emojis.ps1](Scripts/list-emojis.ps1)           | Lists the emojis of Unicode 13.0                                   | [Help](Docs/wakeup.md)              |
-| [list-fritzbox-calls.ps1](Scripts/list-fritzbox-calls.ps1)| Lists the FRITZ!Box calls                                     | [Help](Docs/wakeup.md)              |
-| [list-fritzbox-devices.ps1](Scripts/list-fritzbox-devices.ps1)| Lists FRITZ!Box's known devices                           | [Help](Docs/wakeup.md)              |
-| [list-earthquakes.ps1](Scripts/list-earthquakes.ps1) | Lists earthquakes with magnitude >= 6.0 for the last 30 days       | [Help](Docs/wakeup.md)              |
-| [list-exchange-rates.ps1](Scripts/list-exchange-rates.ps1)| Lists the current exchange rates for the given currency       | [Help](Docs/wakeup.md)              |
-| [list-memos.ps1](Scripts/list-memos.ps1)             | Lists the memos at $HOME/Memos.csv                                 | [Help](Docs/wakeup.md)              |
-| [list-mysql-tables.ps1](Scripts/list-mysql-tables.ps1)| Lists the MySQL server tables                                     | [Help](Docs/wakeup.md)              |
+| [add-memo.ps1](Scripts/add-memo.ps1)                 | Adds the given memo text to $HOME/Memos.csv                        | [Help](Docs/add-memo.md)                |
+| [check-ipv4-address.ps1](Scripts/check-ipv4-address.ps1)| Checks the given IPv4 address for validity                      | [Help](Docs/check-ipv4-address.md)      |
+| [check-ipv6-address.ps1](Scripts/check-ipv6-address.ps1)| Checks the given IPv6 address for validity                      | [Help](Docs/check-ipv6-address.md)      |
+| [check-mac-address.ps1](Scripts/check-mac-address.ps1)| Checks the given MAC address for validity                         | [Help](Docs/check-mac-address.md)       |
+| [check-subnet-mask.ps1](Scripts/check-subnet-mask.ps1)| Checks the given subnet mask for validity                         | [Help](Docs/check-subnet-mask.md)       |
+| [check-weather.ps1](Scripts/check-weather.ps1)       | Checks the current weather for critical values                     | [Help](Docs/check-weather.md)           |
+| [display-time.ps1](Scripts/display-time.ps1)         | Displays the current time for 10 seconds by default                | [Help](Docs/display-time.md)            |
+| [list-anagrams.ps1](Scripts/list-anagrams.ps1)       | Lists all anagrams of the given word                               | [Help](Docs/list-anagrams.md)           |
+| [list-city-weather.ps1](Scripts/list-city-weather.ps1)| Lists the current weather of cities worldwide (west to east)      | [Help](Docs/list-city-weather.md)       |
+| [list-countries.ps1](Scripts/list-countries.ps1)     | Lists details of all countries                                     | [Help](Docs/list-countries.md)          |
+| [list-credits.ps1](Scripts/list-credits.ps1)         | Shows the credits                                                  | [Help](Docs/list-credits.md)            |
+| [list-crypto-rates.ps1](Scripts/list-crypto-rates.ps1)| Lists the current crypto exchange rates                           | [Help](Docs/list-crypto-rates.md)       |
+| [list-environment-variables.ps1](Scripts/list-environment-variables.ps1)| Lists all environment variables                 | [Help](Docs/list-environment-variables.md)|
+| [list-emojis.ps1](Scripts/list-emojis.ps1)           | Lists the emojis of Unicode 13.0                                   | [Help](Docs/list-emojis.md)             |
+| [list-fritzbox-calls.ps1](Scripts/list-fritzbox-calls.ps1)| Lists the FRITZ!Box calls                                     | [Help](Docs/list-fritzbox-calls.md)     |
+| [list-fritzbox-devices.ps1](Scripts/list-fritzbox-devices.ps1)| Lists FRITZ!Box's known devices                           | [Help](Docs/list-fritzbox-devices.md)   |
+| [list-earthquakes.ps1](Scripts/list-earthquakes.ps1) | Lists earthquakes with magnitude >= 6.0 for the last 30 days       | [Help](Docs/list-earthquakes.md)        |
+| [list-exchange-rates.ps1](Scripts/list-exchange-rates.ps1)| Lists the current exchange rates for the given currency       | [Help](Docs/list-exchange-rates.md)     |
+| [list-memos.ps1](Scripts/list-memos.ps1)             | Lists the memos at $HOME/Memos.csv                                 | [Help](Docs/list-memos.md)              |
+| [list-mysql-tables.ps1](Scripts/list-mysql-tables.ps1)| Lists the MySQL server tables                                     | [Help](Docs/list-mysql-tables.md)       |
 | [list-news.ps1](Scripts/list-news.ps1)               | Lists the latest news                                              | [Help](Docs/wakeup.md)              |
 | [list-os-releases.ps1](Scripts/list-os-releases.ps1) | Lists operating system releases and download URL                   | [Help](Docs/wakeup.md)              |
 | [list-os-updates.ps1](Scripts/list-os-updates.ps1)   | Lists operating system updates                                     | [Help](Docs/wakeup.md)              |
