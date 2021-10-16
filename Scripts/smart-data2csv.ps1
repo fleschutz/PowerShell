@@ -2,9 +2,10 @@
 .SYNOPSIS
 	Converts the S.M.A.R.T. JSON files in a folder to a CSV table for analysis
 .DESCRIPTION
-	smart-data2csv.ps1 [<directory>]
 	Converts the S.M.A.R.T. JSON files in the current/given directory to a CSV table for analysis
         (use query-smart-data.ps1 to generate those JSON files).
+.PARAMETER Directory
+	Specifies the path to the directory
 .EXAMPLE
 	PS> ./smart-data2csv
 .NOTES

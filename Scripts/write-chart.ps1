@@ -2,7 +2,7 @@
 .SYNOPSIS
 	Writes a chart
 .DESCRIPTION
-	write-chart.ps1
+	This script writes a chart.
 .EXAMPLE
 	PS> ./write-chart
 .NOTES

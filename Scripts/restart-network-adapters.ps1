@@ -2,7 +2,7 @@
 .SYNOPSIS
 	Restarts all local network adapters (needs admin rights)
 .DESCRIPTION
-	restart-network-adapters.ps1
+	This script restarts all local network adapters (needs admin rights).
 .EXAMPLE
 	PS> ./restart-network-adapters
 .NOTES

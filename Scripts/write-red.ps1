@@ -2,7 +2,9 @@
 .SYNOPSIS
 	Writes text in a red foreground color
 .DESCRIPTION
-	write-red.ps1 [<text>]
+	This script writes text in a red foreground color.
+.PARAMETER text
+	Specifies the text to write
 .EXAMPLE
 	PS> ./write-red "Hello World"
 .NOTES

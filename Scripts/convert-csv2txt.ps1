@@ -2,7 +2,9 @@
 .SYNOPSIS
 	Converts a .CSV file into a text file
 .DESCRIPTION
-	convert-csv2txt.ps1 [<csv-file>]
+	This script converts a .CSV file into a text file.
+.PARAMETER Path
+	Specifies the path to the .CSV file
 .EXAMPLE
 	PS> ./convert-csv2txt salaries.csv
 .NOTES

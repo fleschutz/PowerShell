@@ -1,8 +1,12 @@
 ﻿<#
 .SYNOPSIS
-	Searches for a pattern in the given files
+	Searches for a pattern in files
 .DESCRIPTION
-	search-files.ps1 [<pattern>] [<files>]
+	This script searches for a pattern in the given files.
+.PARAMETER pattern
+	Specifies the search pattern
+.PARAMETER files
+	Specifies the files
 .EXAMPLE
 	PS> ./search-files UFO C:\Temp\*.txt
 .NOTES

@@ -2,7 +2,9 @@
 .SYNOPSIS
 	Turns the audio volume up (+10% by default)
 .DESCRIPTION
-	turn-volume-up.ps1 [<percent>]
+	This script turns the audio volume up (by +10% by default)
+.PARAMETER percent
+	Specifies the percent number
 .EXAMPLE
 	PS> ./turn-volume-up
 .NOTES

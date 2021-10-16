@@ -1,15 +1,13 @@
 ## switch-shelly1.ps1 - Switches a Shelly1 device in the local network
 
-switch-shelly1.ps1 [<Host>] [<TurnMode>] [<Timer>]
-<Host> is either a hostname or IP address
-<TurnMode> is either 'on', 'off', or 'toggle')
-<Timer> is the timer in seconds (0 = infinite)
+This script switches a Shelly1 device in the local network.
 
 ## Parameters
 ```powershell
 switch-shelly1.ps1 [[-Host] <String>] [[-TurnMode] <String>] [[-Timer] <Int32>] [<CommonParameters>]
 
 -Host <String>
+    Specifies either the hostname or IP address of the Shelly1 device
     
     Required?                    false
     Position?                    1
@@ -18,6 +16,7 @@ switch-shelly1.ps1 [[-Host] <String>] [[-TurnMode] <String>] [[-Timer] <Int32>] 
     Accept wildcard characters?  false
 
 -TurnMode <String>
+    Specifies either 'on', 'off', or 'toggle'
     
     Required?                    false
     Position?                    2
@@ -26,6 +25,7 @@ switch-shelly1.ps1 [[-Host] <String>] [[-TurnMode] <String>] [[-Timer] <Int32>] 
     Accept wildcard characters?  false
 
 -Timer <Int32>
+    Specifies the timer in seconds (0 = infinite)
     
     Required?                    false
     Position?                    3

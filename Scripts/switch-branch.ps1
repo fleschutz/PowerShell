@@ -1,8 +1,12 @@
 ﻿<#
 .SYNOPSIS
-	Switches to another branch in a Git repository (including submodules)
+	Switches the branch in a Git repository (including submodules)
 .DESCRIPTION
-	switch-branch.ps1 [<BranchName>] [<RepoDir>]
+	This script switches to another branch in a Git repository (including submodules).
+.PARAMETER BranchName
+	Specifies the branch name
+.PARAMETER RepoDir
+	Specifies the path to the Git repository
 .EXAMPLE
 	PS> ./switch-branch main C:\MyRepo
 .NOTES

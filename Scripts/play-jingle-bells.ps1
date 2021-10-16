@@ -2,7 +2,7 @@
 .SYNOPSIS
         Plays Jingle Bells
 .DESCRIPTION
-        play-jingle-bells.ps1
+        This script plays Jingle Bells.
 .EXAMPLE
         PS> ./play-jingle-bells
 .NOTES

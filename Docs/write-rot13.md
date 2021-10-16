@@ -1,12 +1,13 @@
 ## write-rot13.ps1 - Writes text encoded or decoded with ROT13
 
-write-rot13.ps1 [<text>]
+This script writes text encoded or decoded with ROT13.
 
 ## Parameters
 ```powershell
 write-rot13.ps1 [[-text] <String>] [<CommonParameters>]
 
 -text <String>
+    Specifies the text to write
     
     Required?                    false
     Position?                    1

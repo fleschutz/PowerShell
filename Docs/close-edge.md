@@ -1,6 +1,6 @@
 ## close-edge.ps1 - Closes Microsoft's Edge Web browser
 
-close-edge.ps1
+This script closes Microsoft's Edge Web browser gracefully.
 
 ## Parameters
 ```powershell

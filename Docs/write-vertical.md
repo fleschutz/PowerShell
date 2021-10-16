@@ -1,12 +1,13 @@
 ## write-vertical.ps1 - Writes text in vertical direction
 
-write-vertical.ps1 [<text>]
+This script writes text in vertical direction.
 
 ## Parameters
 ```powershell
 write-vertical.ps1 [[-text] <String>] [<CommonParameters>]
 
 -text <String>
+    Specifies the text to write
     
     Required?                    false
     Position?                    1

@@ -1,6 +1,6 @@
 ## play-super-mario.ps1 - Plays the Super Mario intro
 
-play-super-mario.ps1
+This script plays the Super Mario intro.
 
 ## Parameters
 ```powershell

@@ -1,12 +1,13 @@
 ## new-shortcut.ps1 - Creates a new shortcut file
 
-new-shortcut.ps1 [<shortcut>] [<target>] [<description>]
+This script creates a new shortcut file.
 
 ## Parameters
 ```powershell
 new-shortcut.ps1 [[-shortcut] <String>] [[-target] <String>] [[-description] <String>] [<CommonParameters>]
 
 -shortcut <String>
+    Specifies the shortcut filename
     
     Required?                    false
     Position?                    1
@@ -15,6 +16,7 @@ new-shortcut.ps1 [[-shortcut] <String>] [[-target] <String>] [[-description] <St
     Accept wildcard characters?  false
 
 -target <String>
+    Specifies the path to the target
     
     Required?                    false
     Position?                    2
@@ -23,6 +25,7 @@ new-shortcut.ps1 [[-shortcut] <String>] [[-target] <String>] [[-description] <St
     Accept wildcard characters?  false
 
 -description <String>
+    Specifies a description
     
     Required?                    false
     Position?                    3

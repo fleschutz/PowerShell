@@ -1,6 +1,6 @@
 ## open-email-client.ps1 - Starts the default email client
 
-open-email-client.ps1
+This script starts the default email client.
 
 ## Parameters
 ```powershell

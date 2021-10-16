@@ -1,12 +1,13 @@
-## speak-file.ps1 - Speaks the content of the given text file by text-to-speech (TTS)
+## speak-file.ps1 - Speaks file content by text-to-speech
 
-speak-file.ps1 [<file>]
+This script speaks the content of the given text file by text-to-speech (TTS).
 
 ## Parameters
 ```powershell
 speak-file.ps1 [[-File] <String>] [<CommonParameters>]
 
 -File <String>
+    Specifies the path to the text file
     
     Required?                    false
     Position?                    1

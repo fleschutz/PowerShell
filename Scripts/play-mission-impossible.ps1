@@ -2,7 +2,7 @@
 .SYNOPSIS
 	Plays the Mission Impossible theme
 .DESCRIPTION
-	play-mission-impossible.ps1
+	This script plays the Mission Impossible theme.
 .EXAMPLE
 	PS> ./play-mission-impossible
 .NOTES

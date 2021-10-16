@@ -1,6 +1,6 @@
-## voice-control.ps1 - Executes all the PowerShell scripts by voice
+## voice-control.ps1 - Executes PowerShell scripts by voice
 
-voice-control.ps1
+This script executes all the PowerShell scripts by voice.
 
 ## Parameters
 ```powershell

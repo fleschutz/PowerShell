@@ -1,8 +1,14 @@
 ﻿<#
 .SYNOPSIS
-	Publishes the given files & folders to IPFS
+	Publishes files & folders to IPFS
 .DESCRIPTION
-	publish-to-ipfs.ps1 [<FilePattern>] [<HashList>]
+	This script publishes the given files and folders to IPFS.
+.PARAMETER FilePattern
+	Specifies the file pattern
+.PARAMETER HashList
+	Specifies the path to the resulting hash list
+.PARAMETER DF_Hashes
+	Specifies the path to the resulting digital forensic hashes
 .EXAMPLE
 	PS> ./publish-to-ipfs C:\MyFile.txt
 .NOTES

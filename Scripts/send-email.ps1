@@ -2,7 +2,7 @@
 .SYNOPSIS
 	Sends an email message
 .DESCRIPTION
-	send-email.ps1 
+	This script sends an email message.
 .EXAMPLE
 	PS> ./send-email
 .NOTES

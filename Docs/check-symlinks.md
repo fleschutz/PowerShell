@@ -1,6 +1,6 @@
 ## check-symlinks.ps1 - Checks every symlink in a folder (including subfolders)
 
-check-symlinks.ps1 [<folder>]
+This script checks every symlink in a folder (including subfolders).
 Returns the number of broken symlinks as exit value.
 
 ## Parameters
@@ -8,6 +8,7 @@ Returns the number of broken symlinks as exit value.
 check-symlinks.ps1 [[-folder] <String>] [<CommonParameters>]
 
 -folder <String>
+    Specifies the path to the directory tree
     
     Required?                    false
     Position?                    1

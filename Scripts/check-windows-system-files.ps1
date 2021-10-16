@@ -2,7 +2,7 @@
 .SYNOPSIS
 	Checks the validity of the Windows system files (requires admin rights)
 .DESCRIPTION
-	check-windows-system-files.ps1 
+	This script checks the validity of the Windows system files. It requires admin rights.
 .EXAMPLE
 	PS> ./check-windows-system-files
 	✔️ checked Windows system files

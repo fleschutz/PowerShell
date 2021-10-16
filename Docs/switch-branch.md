@@ -1,12 +1,13 @@
-## switch-branch.ps1 - Switches to another branch in a Git repository (including submodules)
+## switch-branch.ps1 - Switches the branch in a Git repository (including submodules)
 
-switch-branch.ps1 [<BranchName>] [<RepoDir>]
+This script switches to another branch in a Git repository (including submodules).
 
 ## Parameters
 ```powershell
 switch-branch.ps1 [[-BranchName] <String>] [[-RepoDir] <String>] [<CommonParameters>]
 
 -BranchName <String>
+    Specifies the branch name
     
     Required?                    false
     Position?                    1
@@ -15,6 +16,7 @@ switch-branch.ps1 [[-BranchName] <String>] [[-RepoDir] <String>] [<CommonParamet
     Accept wildcard characters?  false
 
 -RepoDir <String>
+    Specifies the path to the Git repository
     
     Required?                    false
     Position?                    2

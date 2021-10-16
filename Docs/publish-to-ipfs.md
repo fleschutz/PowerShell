@@ -1,12 +1,13 @@
-## publish-to-ipfs.ps1 - Publishes the given files & folders to IPFS
+## publish-to-ipfs.ps1 - Publishes files & folders to IPFS
 
-publish-to-ipfs.ps1 [<FilePattern>] [<HashList>]
+This script publishes the given files and folders to IPFS.
 
 ## Parameters
 ```powershell
 publish-to-ipfs.ps1 [[-FilePattern] <String>] [[-HashList] <String>] [[-DF_Hashes] <String>] [<CommonParameters>]
 
 -FilePattern <String>
+    Specifies the file pattern
     
     Required?                    false
     Position?                    1
@@ -15,6 +16,7 @@ publish-to-ipfs.ps1 [[-FilePattern] <String>] [[-HashList] <String>] [[-DF_Hashe
     Accept wildcard characters?  false
 
 -HashList <String>
+    Specifies the path to the resulting hash list
     
     Required?                    false
     Position?                    2
@@ -23,6 +25,7 @@ publish-to-ipfs.ps1 [[-FilePattern] <String>] [[-HashList] <String>] [[-DF_Hashe
     Accept wildcard characters?  false
 
 -DF_Hashes <String>
+    Specifies the path to the resulting digital forensic hashes
     
     Required?                    false
     Position?                    3

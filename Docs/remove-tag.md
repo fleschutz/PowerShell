@@ -1,12 +1,13 @@
 ## remove-tag.ps1 - Removes a Git tag (locally, remote, or both)
 
-remove-tag.ps1 [<TagName>] [<Mode>] [<RepoDir>]
+This script removes a Git tag, either locally, remote, or both.
 
 ## Parameters
 ```powershell
 remove-tag.ps1 [[-TagName] <String>] [[-Mode] <String>] [[-RepoDir] <String>] [<CommonParameters>]
 
 -TagName <String>
+    Specifies the Git tag name
     
     Required?                    false
     Position?                    1
@@ -15,6 +16,7 @@ remove-tag.ps1 [[-TagName] <String>] [[-Mode] <String>] [[-RepoDir] <String>] [<
     Accept wildcard characters?  false
 
 -Mode <String>
+    Specifies either locally, remote, or both
     
     Required?                    false
     Position?                    2
@@ -23,6 +25,7 @@ remove-tag.ps1 [[-TagName] <String>] [[-Mode] <String>] [[-RepoDir] <String>] [<
     Accept wildcard characters?  false
 
 -RepoDir <String>
+    Specifies the path to the Git repository
     
     Required?                    false
     Position?                    3

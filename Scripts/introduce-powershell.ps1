@@ -2,7 +2,7 @@
 .SYNOPSIS
 	Introduces PowerShell to new users
 .DESCRIPTION
-	introduce-powershell.ps1
+	This script introduces PowerShell to new users.
 .EXAMPLE
 	PS> ./introduce-powershell
 .NOTES

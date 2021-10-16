@@ -2,7 +2,9 @@
 .SYNOPSIS
 	Turns the audio volume down (-10% by default)
 .DESCRIPTION
-	turn-volume-down.ps1 [<percent>]
+	This script turns the audio volume down (by -10% by default).
+.PARAMETER percent
+	Specifies the percent number
 .EXAMPLE
 	PS> ./turn-volume-down
 .NOTES

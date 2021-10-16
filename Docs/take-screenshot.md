@@ -1,12 +1,13 @@
 ## take-screenshot.ps1 - Takes a single screenshot and saves it into a folder
 
-take-screenshot.ps1 [<directory>]
+This script takes a single screenshot and saves it into a folder.
 
 ## Parameters
 ```powershell
 take-screenshot.ps1 [[-Directory] <String>] [<CommonParameters>]
 
 -Directory <String>
+    Specifies the target directory
     
     Required?                    false
     Position?                    1

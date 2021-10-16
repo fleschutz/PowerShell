@@ -2,7 +2,7 @@
 .SYNOPSIS
 	Starts a local IPFS server as a daemon process
 .DESCRIPTION
-	start-ipfs-server.ps1
+	This script starts a local IPFS server as a daemon process.
 .EXAMPLE
 	PS> ./start-ipfs-server
 .NOTES

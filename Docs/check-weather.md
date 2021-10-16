@@ -1,12 +1,13 @@
 ## check-weather.ps1 - Checks the weather for critical values
 
-check-weather.ps1 [<location>]
+Checks the current weather for critical values.
 
 ## Parameters
 ```powershell
 check-weather.ps1 [[-location] <String>] [<CommonParameters>]
 
 -location <String>
+    Specifies the location to use (determined automatically per default)
     
     Required?                    false
     Position?                    1

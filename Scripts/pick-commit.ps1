@@ -2,9 +2,16 @@
 .SYNOPSIS
 	Cherry-picks a Git commit into one or more branches
 .DESCRIPTION
-	pick-commit.ps1 [<CommitID>] [<CommitMessage>] [<Branches>] [<RepoDir>]
 	Cherry-picks a Git commit into one or more branches (branch names need to be separated by spaces)
 	NOTE: in case of merge conflicts the script stops immediately! 
+.PARAMETER CommitID
+	Specifies the commit ID
+.PARAMETER CommitMessage
+	Specifies the commit message to use
+.PARAMETER Branches
+	Specifies the list of branches, separated by spaces
+.PARAMETER RepoDir
+	Specifies the path to the Git repository
 .EXAMPLE
 	PS> ./pick-commit 93849f889 "Fix typo" "v1 v2 v3"
 .NOTES

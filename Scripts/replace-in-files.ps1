@@ -2,7 +2,13 @@
 .SYNOPSIS
 	Search and replace a pattern in the given files by the replacement
 .DESCRIPTION
-	replace-in-files.ps1 [<pattern>] [<replacement>] [<files>]
+	This script searches and replaces a pattern in the given files by the replacement.
+.PARAMETER pattern
+	Specifies the pattern to look for
+.PARAMETER replacement
+	Specifies the replacement
+.PARAMETER files
+	Specifies the file to scan
 .EXAMPLE
 	PS> ./replace-in-files NSA "No Such Agency" C:\Temp\*.txt
 .NOTES

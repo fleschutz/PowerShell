@@ -2,8 +2,9 @@
 .SYNOPSIS
 	Installs signal-cli 
 .DESCRIPTION
-	Installs signal-cli from github.com/AsamK/signal-cli. See the Web page for the correct version number
-	install-signal-cli.ps1 [<version>]
+	Installs signal-cli from github.com/AsamK/signal-cli. See the Web page for the correct version number.
+.PARAMETER Version
+	Specifies the version to install
 .EXAMPLE
 	PS> ./install-signal-cli 0.11.12
 .NOTES

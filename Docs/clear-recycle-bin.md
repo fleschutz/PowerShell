@@ -1,6 +1,6 @@
 ## clear-recycle-bin.ps1 - Removes the content of the recycle bin folder permanently
 
-clear-recycle-bin.ps1 
+This script removes the content of the recycle bin folder permanently.
 NOTE: can not be undo!
 
 ## Parameters

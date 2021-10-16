@@ -1,6 +1,6 @@
 ## simulate-matrix.ps1 - Simulates the Matrix (fun)
 
-simulate-matrix.ps1
+This script simulates the Matrix (for fun).
 
 ## Parameters
 ```powershell

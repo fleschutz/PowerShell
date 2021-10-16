@@ -1,12 +1,13 @@
-## send-tcp.ps1 - Sends a TCP message to the given IP address and port
+## send-tcp.ps1 - Sends a TCP message to an IP address and port
 
-send-tcp.ps1 [<TargetIP>] [<TargetPort>] [<Message>]
+This script sends a TCP message to the given IP address and port.
 
 ## Parameters
 ```powershell
 send-tcp.ps1 [[-TargetIP] <String>] [[-TargetPort] <Int32>] [[-Message] <String>] [<CommonParameters>]
 
 -TargetIP <String>
+    Specifies the target IP address
     
     Required?                    false
     Position?                    1
@@ -15,6 +16,7 @@ send-tcp.ps1 [[-TargetIP] <String>] [[-TargetPort] <Int32>] [[-Message] <String>
     Accept wildcard characters?  false
 
 -TargetPort <Int32>
+    Specifies the target port number
     
     Required?                    false
     Position?                    2
@@ -23,6 +25,7 @@ send-tcp.ps1 [[-TargetIP] <String>] [[-TargetPort] <Int32>] [[-Message] <String>
     Accept wildcard characters?  false
 
 -Message <String>
+    Specifies the message to send
     
     Required?                    false
     Position?                    3

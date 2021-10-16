@@ -1,8 +1,10 @@
 ﻿<#
 .SYNOPSIS
-	Converts a PowerShell script to .bat files
+	Converts PowerShell scripts to batch files
 .DESCRIPTION
-	convert-ps2bat.ps1 [<pattern>]
+	This script converts one or more PowerShell scripts to .bat batch files.
+.PARAMETER Filepattern
+	Specifies the file pattern
 .EXAMPLE
 	PS> ./convert-ps2bat *.ps1
 .NOTES
@@ -11,7 +13,7 @@
 	https://github.com/fleschutz/PowerShell
 #>
 
-param([string]$Pattern = "")
+param([string]$Filepattern = "")
 
 function Convert-PowerShellToBatch
 {
@@ -32,9 +34,9 @@ function Convert-PowerShellToBatch
 }
  
 try {
-	if ($Pattern -eq "") { $Pattern = read-host "Enter path to the PowerShell script(s)" }
+	if ($Filepattern -eq "") { $Filepattern = read-host "Enter path to the PowerShell script(s)" }
 
-	$Files = get-childItem -path "$Pattern"
+	$Files = get-childItem -path "$Filepattern"
 	foreach ($File in $Files) {
 		Convert-PowerShellToBatch "$File"
 	}

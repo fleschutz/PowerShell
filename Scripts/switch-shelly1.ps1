@@ -2,10 +2,13 @@
 .SYNOPSIS
 	Switches a Shelly1 device in the local network
 .DESCRIPTION
-	switch-shelly1.ps1 [<Host>] [<TurnMode>] [<Timer>]
-	<Host> is either a hostname or IP address
-	<TurnMode> is either 'on', 'off', or 'toggle')
-	<Timer> is the timer in seconds (0 = infinite)
+	This script switches a Shelly1 device in the local network.
+.PARAMETER Host
+	Specifies either the hostname or IP address of the Shelly1 device
+.PARAMETER TurnMode
+	Specifies either 'on', 'off', or 'toggle'
+.PARAMETER Timer
+	Specifies the timer in seconds (0 = infinite)
 .EXAMPLE
 	PS> ./switch-shelly1 192.168.100.100 toggle 10
 .NOTES

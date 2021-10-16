@@ -1,10 +1,10 @@
 ﻿<#
 .SYNOPSIS
-	Speaks the given text by the default text-to-speech (TTS) voice
+	Speaks text by the default text-to-speech voice
 .DESCRIPTION
-	speak-text.ps1 [<text>]
+	This script speaks the given text by the default text-to-speech (TTS) voice.
 .PARAMETER text
-	Specifies the text to speak
+	Specifies the text to read
 .EXAMPLE
 	PS> ./speak-text "Hello World"
 .NOTES

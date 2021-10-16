@@ -1,8 +1,10 @@
 ﻿<#
 .SYNOPSIS
-	Opens the built-in text editor to edit the given file
+	Opens an editor to edit a file
 .DESCRIPTION
-	edit.ps1 <filename>
+	Opens a  text editor to edit the given file.
+.PARAMETER Filename
+	Specifies the path to the filename
 .EXAMPLE
 	PS> ./edit C:\MyFile.txt
 .NOTES

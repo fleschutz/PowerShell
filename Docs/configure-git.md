@@ -1,12 +1,13 @@
 ## configure-git.ps1 - Configures the user settings for Git
 
-configure-git.ps1 [<full-name>] [<email-address>] [<favorite-editor>]
+This script configures the user settings for Git.
 
 ## Parameters
 ```powershell
 configure-git.ps1 [[-FullName] <String>] [[-EmailAddress] <String>] [[-FavoriteEditor] <String>] [<CommonParameters>]
 
 -FullName <String>
+    Specifies the user's full name
     
     Required?                    false
     Position?                    1
@@ -15,6 +16,7 @@ configure-git.ps1 [[-FullName] <String>] [[-EmailAddress] <String>] [[-FavoriteE
     Accept wildcard characters?  false
 
 -EmailAddress <String>
+    Specifies the user's email address
     
     Required?                    false
     Position?                    2
@@ -23,6 +25,7 @@ configure-git.ps1 [[-FullName] <String>] [[-EmailAddress] <String>] [[-FavoriteE
     Accept wildcard characters?  false
 
 -FavoriteEditor <String>
+    Specifies the user's favorite text editor
     
     Required?                    false
     Position?                    3

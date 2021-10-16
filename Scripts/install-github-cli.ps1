@@ -2,7 +2,7 @@
 .SYNOPSIS
 	Installs GitHub CLI
 .DESCRIPTION
-	install-github-cli.ps1 
+	This script installs GitHub command-line interface (CLI).
 .EXAMPLE
 	PS> ./install-github-cli
 .NOTES

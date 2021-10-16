@@ -1,6 +1,5 @@
 ## smart-data2csv.ps1 - Converts the S.M.A.R.T. JSON files in a folder to a CSV table for analysis
 
-smart-data2csv.ps1 [<directory>]
 Converts the S.M.A.R.T. JSON files in the current/given directory to a CSV table for analysis
        (use query-smart-data.ps1 to generate those JSON files).
 
@@ -9,6 +8,7 @@ Converts the S.M.A.R.T. JSON files in the current/given directory to a CSV table
 smart-data2csv.ps1 [[-Directory] <String>] [<CommonParameters>]
 
 -Directory <String>
+    Specifies the path to the directory
     
     Required?                    false
     Position?                    1

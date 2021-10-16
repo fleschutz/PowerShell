@@ -2,7 +2,7 @@
 .SYNOPSIS
 	Starts the default email client
 .DESCRIPTION
-	open-email-client.ps1
+	This script starts the default email client.
 .EXAMPLE
 	PS> ./open-email-client
 .NOTES

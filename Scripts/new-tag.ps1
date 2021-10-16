@@ -2,7 +2,11 @@
 .SYNOPSIS
 	Creates a new tag in a Git repository
 .DESCRIPTION
-	new-tag.ps1 [<TagName>] [<RepoDir>]
+	This script creates a new tag in a Git repository.
+.PARAMETER TagName
+	Specifies the new tag name
+.PARAMETER RepoDir
+	Specifies the path to the Git repository
 .EXAMPLE
 	PS> ./create-tag v1.7
 .LINK

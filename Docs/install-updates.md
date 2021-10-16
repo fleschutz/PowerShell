@@ -1,6 +1,6 @@
 ## install-updates.ps1 - Installs updates for the local machine (needs admin rights)
 
-install-updates.ps1
+This script installs updates for the local machine (needs admin rights).
 
 ## Parameters
 ```powershell

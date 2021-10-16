@@ -1,8 +1,10 @@
 ﻿<#
 .SYNOPSIS
-	Writes the given text in big letters
+	Writes text in big letters
 .DESCRIPTION
-	write-big.ps1 [<text>]
+	This script writes the given text in big letters.
+.PARAMETER text
+	Specifies the text to write
 .EXAMPLE
 	PS> ./write-big "Hello World"
 .NOTES

@@ -2,7 +2,7 @@
 .SYNOPSIS
 	Closes Microsoft's Cortana application
 .DESCRIPTION
-	close-cortana.ps1
+	This script closes Microsoft's Cortana application gracefully.
 .EXAMPLE
 	PS> ./close-cortana
 .NOTES

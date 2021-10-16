@@ -2,7 +2,7 @@
 .SYNOPSIS
 	Enters a chat using a common network shared file
 .DESCRIPTION
-	enter-chat.ps1 
+	This script enters a chat using a common network shared file.
 .EXAMPLE
 	PS> ./enter-chat
 .NOTES

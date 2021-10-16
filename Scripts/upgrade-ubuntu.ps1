@@ -2,7 +2,7 @@
 .SYNOPSIS
 	Upgrades Ubuntu Linux to the latest (LTS) release
 .DESCRIPTION
-	upgrade-ubuntu.ps1 
+	This script upgrades Ubuntu Linux to the latest (LTS) release.
 .EXAMPLE
 	PS> .\upgrade-ubuntu.ps1 
 .NOTES

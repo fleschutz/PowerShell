@@ -2,7 +2,13 @@
 .SYNOPSIS
 	Translates a text file into another language 
 .DESCRIPTION
-	translate-file.ps1 [<file>] [<source-lang>] [<target-lang>]
+	This script translates a text file into another language.
+.PARAMETER File
+	Specifies the file to translate
+.PARAMETER SourceLang
+	Specifies the source language
+.PARAMETER TargetLang
+	Specifies the target language
 .EXAMPLE
 	PS> ./translate-file C:\Memo.txt en de
 .NOTES

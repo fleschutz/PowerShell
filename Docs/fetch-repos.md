@@ -1,12 +1,13 @@
 ## fetch-repos.ps1 - Fetches updates for all Git repositories in a folder (including submodules)
 
-fetch-repos.ps1 [<ParentDir>]
+This script fetches updates for all Git repositories in a folder (including submodules).
 
 ## Parameters
 ```powershell
 fetch-repos.ps1 [[-ParentDir] <String>] [<CommonParameters>]
 
 -ParentDir <String>
+    Specifies the path to the parent folder
     
     Required?                    false
     Position?                    1

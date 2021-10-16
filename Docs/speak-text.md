@@ -1,13 +1,13 @@
-## speak-text.ps1 - Speaks the given text by the default text-to-speech (TTS) voice
+## speak-text.ps1 - Speaks text by the default text-to-speech voice
 
-speak-text.ps1 [<text>]
+This script speaks the given text by the default text-to-speech (TTS) voice.
 
 ## Parameters
 ```powershell
 speak-text.ps1 [[-text] <String>] [<CommonParameters>]
 
 -text <String>
-    Specifies the text to speak
+    Specifies the text to read
     
     Required?                    false
     Position?                    1

@@ -1,12 +1,13 @@
 ## write-braille.ps1 - Writes text in Braille
 
-write-braille.ps1 [<text>]
+This script writes text in Braille.
 
 ## Parameters
 ```powershell
 write-braille.ps1 [[-text] <String>] [<CommonParameters>]
 
 -text <String>
+    Specifies the text to write
     
     Required?                    false
     Position?                    1

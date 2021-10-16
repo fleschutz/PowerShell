@@ -2,7 +2,13 @@
 .SYNOPSIS
 	Translates text into other languages
 .DESCRIPTION
-	translate-text.ps1 [<Text>] [<SourceLang>] [<TargetLang>]
+	This script translates text into other languages.
+.PARAMETER Text
+	Specifies the text to translate
+.PARAMETER SourceLang
+	Specifies the source language
+.PARAMETER TargetLang
+	Specifies the target language
 .EXAMPLE
 	PS> ./translate-text "Hello World" de en
 .NOTES

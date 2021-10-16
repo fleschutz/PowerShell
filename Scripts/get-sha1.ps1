@@ -2,7 +2,9 @@
 .SYNOPSIS
 	Prints the SHA1 checksum of a file
 .DESCRIPTION
-	get-sha1.ps1 [<file>]
+	This script calculates and prints the SHA1 checksum of the given file.
+.PARAMETER file
+	Specifies the path to the file
 .EXAMPLE
 	PS> ./get-sha1 C:\MyFile.txt
 .NOTES

@@ -2,7 +2,11 @@
 .SYNOPSIS
 	Encrypts a file
 .DESCRIPTION
-	encrypt-file.ps1 [<Path>] [<Password>]
+	This script encrypts the given file.
+.PARAMETER Path
+	Specifies the path to the file to encrypt
+.PARAMETER Password
+	Specifies the password to use
 .EXAMPLE
 	PS> ./encrypt-file C:\MyFile.txt "123"
 .NOTES

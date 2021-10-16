@@ -1,8 +1,12 @@
 ﻿<#
 .SYNOPSIS
-	Prints the geographic location of the given zip-code
+	Prints the geo location of a zip-code
 .DESCRIPTION
-	locate-zip-code.ps1 [<CountryCode>] [<ZipCode>]
+	This script prints the geographic location of the given zip-code.
+.PARAMETER CountryCode
+	Specifies the country code
+.PARAMETER ZipCode
+	Specifies the zip code
 .EXAMPLE
 	PS> ./locate-zip-code
 .NOTES

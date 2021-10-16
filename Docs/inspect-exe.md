@@ -1,12 +1,13 @@
 ## inspect-exe.ps1 - Prints basic information of an executable file
 
-inspect-exe.ps1 [<path-to-exe-file>]
+This script prints basic information of an executable file.
 
 ## Parameters
 ```powershell
 inspect-exe.ps1 [[-PathToExe] <String>] [<CommonParameters>]
 
 -PathToExe <String>
+    Specifies the path to the executable file
     
     Required?                    false
     Position?                    1

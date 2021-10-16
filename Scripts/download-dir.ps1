@@ -1,10 +1,12 @@
 ﻿<#
 .SYNOPSIS
-	Downloads a folder (including subfolders) from the given URL
+	Downloads a folder (including subfolders) from an URL
 .DESCRIPTION
-	download-dir.ps1 [<URL>]
+	This script downloads a folder (including subfolders) from the given URL.
+.PARAMETER URL
+	Specifies the URL where to download from
 .EXAMPLE
-	PS> ./download-dir "https://www.cnn.com"
+	PS> ./download-dir https://www.cnn.com
 .NOTES
 	Author: Markus Fleschutz · License: CC0
 .LINK

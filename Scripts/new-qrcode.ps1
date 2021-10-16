@@ -2,7 +2,11 @@
 .SYNOPSIS
 	Generates a new QR code image file
 .DESCRIPTION
-	new-qrcode.ps1 [<Text>] [<ImageSize>]
+	This script generates a new QR code image file.
+.PARAMETER Text
+	Specifies the text to use
+.PARAMETER ImageSize
+	Specifies the image size (width x height)
 .EXAMPLE
 	PS> ./new-qrcode "Fasten seatbelt" 500x500
 .NOTES

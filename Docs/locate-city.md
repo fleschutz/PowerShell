@@ -1,12 +1,13 @@
-## locate-city.ps1 - Prints the geographic location of the given city
+## locate-city.ps1 - Prints the geographic location of a city
 
-locate-city.ps1 [<City>]
+This script prints the geographic location of the given city.
 
 ## Parameters
 ```powershell
 locate-city.ps1 [[-City] <String>] [<CommonParameters>]
 
 -City <String>
+    Specifies the city to look for
     
     Required?                    false
     Position?                    1

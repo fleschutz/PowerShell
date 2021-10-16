@@ -1,13 +1,13 @@
 ## simulate-presence.ps1 - Simulates the human presence against burglars
 
-simulate-presence.ps1 [<IPaddress>]
-<IPaddress> is the IP address of the Shelly1 device
+This script simulates the human presence against burglars.
 
 ## Parameters
 ```powershell
 simulate-presence.ps1 [[-IPaddress] <String>] [<CommonParameters>]
 
 -IPaddress <String>
+    Specifies the IP address of the Shelly1 device
     
     Required?                    false
     Position?                    1

@@ -2,8 +2,11 @@
 .SYNOPSIS
 	Copy image files sorted by year and month
 .DESCRIPTION
-	Copy image files from SourceDir to TargetDir sorted by year and month
-	copy-photos-sorted.ps1 [<SourceDir>] [<TargetDir>]
+	This script copies image files from SourceDir to TargetDir sorted by year and month.
+.PARAMETER SourceDir
+	Specifies the path to the image files
+.PARAMTER TargetDir
+	Specifies the path to the target folder
 .EXAMPLE
 	PS> ./copy-photos-sorted D:\Mobile\DCIM C:\MyPhotoAlbum
 .NOTES

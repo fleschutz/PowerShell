@@ -1,13 +1,13 @@
 ## install-signal-cli.ps1 - Installs signal-cli
 
-Installs signal-cli from github.com/AsamK/signal-cli. See the Web page for the correct version number
-install-signal-cli.ps1 [<version>]
+Installs signal-cli from github.com/AsamK/signal-cli. See the Web page for the correct version number.
 
 ## Parameters
 ```powershell
 install-signal-cli.ps1 [[-Version] <String>] [<CommonParameters>]
 
 -Version <String>
+    Specifies the version to install
     
     Required?                    false
     Position?                    1

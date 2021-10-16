@@ -1,8 +1,8 @@
 ﻿<#
 .SYNOPSIS
-	Executes all the PowerShell scripts by voice
+	Executes PowerShell scripts by voice
 .DESCRIPTION
-	voice-control.ps1 
+	This script executes all the PowerShell scripts by voice.
 .EXAMPLE
 	PS> .\voice-control.ps1
 .NOTES

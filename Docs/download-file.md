@@ -1,12 +1,13 @@
-## download-file.ps1 - Downloads a file from the given URL
+## download-file.ps1 - Downloads a file from an URL
 
-download-file.ps1 [<URL>]
+This script downloads a file from the given URL
 
 ## Parameters
 ```powershell
 download-file.ps1 [[-URL] <String>] [<CommonParameters>]
 
 -URL <String>
+    Specifies the URL where to download from
     
     Required?                    false
     Position?                    1
@@ -21,7 +22,7 @@ download-file.ps1 [[-URL] <String>] [<CommonParameters>]
 
 ## Example
 ```powershell
-PS>./download-file "https://www.cnn.com/index.html"
+PS>./download-file https://www.cnn.com/index.html
 ```
 
 ## Notes

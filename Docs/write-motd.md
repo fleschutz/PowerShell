@@ -1,6 +1,6 @@
 ## write-motd.ps1 - Writes the message of the day (MOTD)
 
-write-motd.ps1
+This script writes the message of the day (MOTD).
 
 ## Parameters
 ```powershell

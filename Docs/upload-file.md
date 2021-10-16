@@ -1,12 +1,13 @@
 ## upload-file.ps1 - Uploads a local file to a FTP server
 
-upload-file.ps1 [<File>] [<URL>] [<Username>] [<Password>]
+This script uploads a local file to a FTP server.
 
 ## Parameters
 ```powershell
 upload-file.ps1 [[-File] <String>] [[-URL] <String>] [[-Username] <String>] [[-Password] <String>] [<CommonParameters>]
 
 -File <String>
+    Specifies the path to the local file
     
     Required?                    false
     Position?                    1
@@ -15,6 +16,7 @@ upload-file.ps1 [[-File] <String>] [[-URL] <String>] [[-Username] <String>] [[-P
     Accept wildcard characters?  false
 
 -URL <String>
+    Specifies the FTP server URL
     
     Required?                    false
     Position?                    2
@@ -23,6 +25,7 @@ upload-file.ps1 [[-File] <String>] [[-URL] <String>] [[-Username] <String>] [[-P
     Accept wildcard characters?  false
 
 -Username <String>
+    Specifies the user name
     
     Required?                    false
     Position?                    3
@@ -31,6 +34,7 @@ upload-file.ps1 [[-File] <String>] [[-URL] <String>] [[-Username] <String>] [[-P
     Accept wildcard characters?  false
 
 -Password <String>
+    Specifies the password
     
     Required?                    false
     Position?                    4

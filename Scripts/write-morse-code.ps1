@@ -2,7 +2,11 @@
 .SYNOPSIS
 	Writes text in Morse code
 .DESCRIPTION
-	write-morse-code.ps1 [<text>] [<speed>]
+	This script writes text in Morse code.
+.PARAMETER text
+	Specifies the text to write
+.PARAMETER speed
+	Specifies the speed of one time unit (100 ms per default)
 .EXAMPLE
 	PS> ./write-morse-code "Hello World"
 .NOTES

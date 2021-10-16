@@ -1,12 +1,13 @@
 ## reboot-fritzbox.ps1 - Reboots the FRITZ!Box device
 
-reboot-fritzbox.ps1 [<Username>] [<Password>]
+This script reboots the FRITZ!Box device
 
 ## Parameters
 ```powershell
 reboot-fritzbox.ps1 [[-Username] <String>] [[-Password] <String>] [<CommonParameters>]
 
 -Username <String>
+    Specifies the user name
     
     Required?                    false
     Position?                    1
@@ -15,6 +16,7 @@ reboot-fritzbox.ps1 [[-Username] <String>] [[-Password] <String>] [<CommonParame
     Accept wildcard characters?  false
 
 -Password <String>
+    Specifies the password
     
     Required?                    false
     Position?                    2

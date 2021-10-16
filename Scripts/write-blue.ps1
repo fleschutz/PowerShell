@@ -2,7 +2,9 @@
 .SYNOPSIS
 	Writes text in a blue foreground color
 .DESCRIPTION
-	write-blue.ps1 [<text>]
+	This script writes text in a blue foreground color.
+.PARAMETER text
+	Specifies the text to write
 .EXAMPLE
 	PS> ./write-blue "Hello World"
 .NOTES

@@ -1,8 +1,10 @@
 ﻿<#
 .SYNOPSIS
-	Prints the geographic location of the given IP address
+	Prints the geo location of the given IP address
 .DESCRIPTION
-	locate-ipaddress.ps1 [<IPaddress>]
+	This script prints the geographic location of the given IP address.
+.PARAMTER IPaddress
+	Specifies the IP address
 .EXAMPLE
 	PS> ./locate-ipaddress 177.144.67.98
 .NOTES

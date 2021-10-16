@@ -1,13 +1,14 @@
 ## check-mac-address.ps1 - Checks the given MAC address for validity
 
+This script checks the given MAC address for validity
 Supported MAC address formats are: 00:00:00:00:00:00 or 00-00-00-00-00-00 or 000000000000.
-check-mac-address.ps1 [<MAC>]
 
 ## Parameters
 ```powershell
 check-mac-address.ps1 [[-MAC] <String>] [<CommonParameters>]
 
 -MAC <String>
+    Specifies the MAC address to check
     
     Required?                    false
     Position?                    1

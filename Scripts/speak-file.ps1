@@ -1,8 +1,10 @@
 ﻿<#
 .SYNOPSIS
-	Speaks the content of the given text file by text-to-speech (TTS)
+	Speaks file content by text-to-speech
 .DESCRIPTION
-	speak-file.ps1 [<file>]
+	This script speaks the content of the given text file by text-to-speech (TTS).
+.PARAMETER File
+	Specifies the path to the text file
 .EXAMPLE
 	PS> ./speak-file C:\MyFile.txt
 .NOTES

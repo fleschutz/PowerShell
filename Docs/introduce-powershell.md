@@ -1,6 +1,6 @@
 ## introduce-powershell.ps1 - Introduces PowerShell to new users
 
-introduce-powershell.ps1
+This script introduces PowerShell to new users.
 
 ## Parameters
 ```powershell

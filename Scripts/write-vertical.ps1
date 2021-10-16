@@ -2,7 +2,9 @@
 .SYNOPSIS
 	Writes text in vertical direction
 .DESCRIPTION
-	write-vertical.ps1 [<text>]
+	This script writes text in vertical direction.
+.PARAMETER text
+	Specifies the text to write
 .EXAMPLE
 	PS> ./write-vertical "Hello World"
 .NOTES

@@ -2,7 +2,9 @@
 .SYNOPSIS
 	Writes text in a green foreground color
 .DESCRIPTION
-	write-green.ps1 [<text>]
+	This script writes text in a green foreground color.
+.PARAMETER text
+	Specifies the text to write
 .EXAMPLE
 	PS> ./write-green "Hello World"
 .NOTES

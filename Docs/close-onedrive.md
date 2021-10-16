@@ -1,6 +1,6 @@
 ## close-onedrive.ps1 - Closes Microsoft's OneDrive folder
 
-close-onedrive.ps1
+This script closes Microsoft's OneDrive folder gracefully.
 
 ## Parameters
 ```powershell

@@ -2,7 +2,9 @@
 .SYNOPSIS
 	Takes a single screenshot and saves it into a folder
 .DESCRIPTION
-	take-screenshot.ps1 [<directory>]
+	This script takes a single screenshot and saves it into a folder.
+.PARAMETER Directory
+	Specifies the target directory
 .EXAMPLE
 	PS> ./take-screenshot C:\Temp
 .NOTES

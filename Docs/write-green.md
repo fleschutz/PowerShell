@@ -1,12 +1,13 @@
 ## write-green.ps1 - Writes text in a green foreground color
 
-write-green.ps1 [<text>]
+This script writes text in a green foreground color.
 
 ## Parameters
 ```powershell
 write-green.ps1 [[-text] <String>] [<CommonParameters>]
 
 -text <String>
+    Specifies the text to write
     
     Required?                    false
     Position?                    1

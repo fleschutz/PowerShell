@@ -2,7 +2,7 @@
 .SYNOPSIS
 	Closes Mozilla's Thunderbird email client
 .DESCRIPTION
-	close-thunderbird.ps1 
+	This script closes Mozilla's Thunderbird email client gracefully.
 .EXAMPLE
 	PS> ./close-thunderbird
 .NOTES

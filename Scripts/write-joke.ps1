@@ -2,7 +2,7 @@
 .SYNOPSIS
 	Writes a random Juck Norris joke to the console
 .DESCRIPTION
-	write-joke.ps1 
+	This script writes a random Juck Norris joke to the console.
 .EXAMPLE
 	PS> ./write-joke
 	When Chuck Norris does division, there are no remainders. 😂

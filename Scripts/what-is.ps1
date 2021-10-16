@@ -1,8 +1,10 @@
 ﻿<#
 .SYNOPSIS
-	Prints a description of the given abbreviation
+	Prints a description of an abbreviation
 .DESCRIPTION
-	what-is.ps1 [<abbreviation>]
+	This script prints a description of the given abbreviation.
+.PARAMETER abbreviation
+	Specifies the appreviation to look for
 .EXAMPLE
 	PS> ./what-is CIA
 .NOTES

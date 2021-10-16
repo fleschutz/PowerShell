@@ -1,6 +1,6 @@
 ## play-jingle-bells.ps1 - Plays Jingle Bells
 
-play-jingle-bells.ps1
+This script plays Jingle Bells.
 
 ## Parameters
 ```powershell

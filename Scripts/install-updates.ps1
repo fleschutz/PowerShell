@@ -2,7 +2,7 @@
 .SYNOPSIS
 	Installs updates for the local machine (needs admin rights)
 .DESCRIPTION
-	install-updates.ps1
+	This script installs updates for the local machine (needs admin rights).
 .EXAMPLE
 	PS> ./install-updates
 .NOTES

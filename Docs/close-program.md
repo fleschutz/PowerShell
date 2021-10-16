@@ -1,12 +1,13 @@
-## close-program.ps1 - Closes the processes of the given program gracefully
+## close-program.ps1 - Closes a program's processes
 
-close-program.ps1 [<FullProgramName>] [<ProgramName>] [<ProgramAliasName>]
+This script closes a program's processes gracefully.
 
 ## Parameters
 ```powershell
 close-program.ps1 [[-FullProgramName] <String>] [[-ProgramName] <String>] [[-ProgramAliasName] <String>] [<CommonParameters>]
 
 -FullProgramName <String>
+    Specifies the full program name
     
     Required?                    false
     Position?                    1
@@ -15,6 +16,7 @@ close-program.ps1 [[-FullProgramName] <String>] [[-ProgramName] <String>] [[-Pro
     Accept wildcard characters?  false
 
 -ProgramName <String>
+    Specifies the program name
     
     Required?                    false
     Position?                    2
@@ -23,6 +25,7 @@ close-program.ps1 [[-FullProgramName] <String>] [[-ProgramName] <String>] [[-Pro
     Accept wildcard characters?  false
 
 -ProgramAliasName <String>
+    Specifies the program alias name
     
     Required?                    false
     Position?                    3

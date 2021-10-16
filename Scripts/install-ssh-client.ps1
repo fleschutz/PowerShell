@@ -2,7 +2,7 @@
 .SYNOPSIS
 	Installs the SSH client (needs admin rights)
 .DESCRIPTION
-	install-ssh-client.ps1
+	This script installs the SSH client (needs admin rights).
 .EXAMPLE
 	PS> ./install-ssh-client
 .NOTES

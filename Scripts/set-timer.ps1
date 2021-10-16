@@ -2,7 +2,9 @@
 .SYNOPSIS
 	Sets a timer for a countdown
 .DESCRIPTION
-	set-timer.ps1 [<seconds>]
+	This script sets a timer for a countdown.
+.PARAMETER Seconds
+	Specifies the number of seconds
 .EXAMPLE
 	PS> ./set-timer 60
 .NOTES

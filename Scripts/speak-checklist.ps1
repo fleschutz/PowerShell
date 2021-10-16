@@ -1,8 +1,10 @@
 ﻿<#
 .SYNOPSIS
-	Speaks the given checklist by text-to-speech (TTS)
+	Speaks a checklist by text-to-speech
 .DESCRIPTION
-	speak-checklist.ps1 [<name>]
+	This script speaks the given checklist by text-to-speech (TTS).
+.PARAMETER Name
+	Specifies the name of the checklist
 .EXAMPLE
 	PS> ./speak-checklist
 .NOTES

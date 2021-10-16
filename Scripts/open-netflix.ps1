@@ -1,8 +1,8 @@
 ﻿<#
 .SYNOPSIS
-	Starts the Netflix app (needs to be installed)
+	Starts the Netflix app
 .DESCRIPTION
-	open-netflix.ps1
+	This script starts the Netflix application.
 .EXAMPLE
 	PS> ./open-netflix
 .NOTES

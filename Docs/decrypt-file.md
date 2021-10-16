@@ -1,12 +1,13 @@
 ## decrypt-file.ps1 - Decrypts the given file
 
-decrypt-file.ps1 [<path>] [<password>]
+This script decrypts the given file.
 
 ## Parameters
 ```powershell
 decrypt-file.ps1 [[-Path] <String>] [[-Password] <String>] [<CommonParameters>]
 
 -Path <String>
+    Specifies the path to the file to decrypt
     
     Required?                    false
     Position?                    1
@@ -15,6 +16,7 @@ decrypt-file.ps1 [[-Path] <String>] [[-Password] <String>] [<CommonParameters>]
     Accept wildcard characters?  false
 
 -Password <String>
+    Specifies the password
     
     Required?                    false
     Position?                    2

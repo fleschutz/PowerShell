@@ -2,7 +2,11 @@
 .SYNOPSIS
 	Decrypts the given file
 .DESCRIPTION
-	decrypt-file.ps1 [<path>] [<password>]
+	This script decrypts the given file.
+.PARAMETER Path
+	Specifies the path to the file to decrypt
+.PARAMETER Password
+	Specifies the password 
 .EXAMPLE
 	PS> ./decrypt-file-rules C:\MyFile.txt "123"
 .NOTES

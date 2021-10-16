@@ -1,13 +1,13 @@
 ## sync-repo.ps1 - Synchronizes a Git repository by push & pull (including submodules)
 
-sync-repo.ps1 [<RepoDir>]
-<RepoDir> is the path to the Git repository
+This script synchronizes a Git repository by push & pull (including submodules).
 
 ## Parameters
 ```powershell
 sync-repo.ps1 [[-RepoDir] <String>] [<CommonParameters>]
 
 -RepoDir <String>
+    Specifies the path to the Git repository
     
     Required?                    false
     Position?                    1

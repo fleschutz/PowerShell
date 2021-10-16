@@ -1,12 +1,13 @@
-## speak-checklist.ps1 - Speaks the given checklist by text-to-speech (TTS)
+## speak-checklist.ps1 - Speaks a checklist by text-to-speech
 
-speak-checklist.ps1 [<name>]
+This script speaks the given checklist by text-to-speech (TTS).
 
 ## Parameters
 ```powershell
 speak-checklist.ps1 [[-Name] <String>] [<CommonParameters>]
 
 -Name <String>
+    Specifies the name of the checklist
     
     Required?                    false
     Position?                    1

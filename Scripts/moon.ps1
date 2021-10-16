@@ -2,7 +2,7 @@
 .SYNOPSIS
 	Prints the current moon phase
 .DESCRIPTION
-	moon.ps1
+	This script prints the current moon phase.
 .EXAMPLE
 	PS> ./moon
 .NOTES

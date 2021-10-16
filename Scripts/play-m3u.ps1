@@ -1,8 +1,10 @@
 ﻿<#
 .SYNOPSIS
-	Plays the given playlist (in .M3U file format)
+	Plays a playlist (.M3U format)
 .DESCRIPTION
-	play-m3u.ps1 [<filename>]
+	This script plays the given playlist (in .M3U file format)
+.PARAMETER filename
+	Specifies the path to the playlist
 .EXAMPLE
 	PS> ./play-m3u C:\MyPlaylist.m3u
 .NOTES

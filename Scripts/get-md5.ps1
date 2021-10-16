@@ -1,8 +1,10 @@
 ﻿<#
 .SYNOPSIS
-	Prints the MD5 checksum of the given file
+	Prints the MD5 checksum of a file
 .DESCRIPTION
-	get-md5.ps1 [<file>]
+	This script calculates and prints the MD5 checksum of the given file.
+.PARAMETER file
+	Specifies the path to the file
 .EXAMPLE
 	PS> ./get-md5 C:\MyFile.txt
 .NOTES

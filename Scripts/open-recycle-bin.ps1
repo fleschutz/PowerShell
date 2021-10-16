@@ -2,7 +2,7 @@
 .SYNOPSIS
 	Starts the File Explorer with the recycle bin folder
 .DESCRIPTION
-	open-recycle-bin.ps1 
+	This script starts the File Explorer with the recycle bin folder.
 .EXAMPLE
 	PS> ./open-recycle-bin
 .NOTES

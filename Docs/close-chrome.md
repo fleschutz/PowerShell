@@ -1,6 +1,6 @@
 ## close-chrome.ps1 - Closes the Google Chrome Web browser
 
-close-chrome.ps1
+This script closes the Google Chrome Web browser gracefully.
 
 ## Parameters
 ```powershell

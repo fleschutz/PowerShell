@@ -1,6 +1,6 @@
 ## write-joke.ps1 - Writes a random Juck Norris joke to the console
 
-write-joke.ps1
+This script writes a random Juck Norris joke to the console.
 
 ## Parameters
 ```powershell

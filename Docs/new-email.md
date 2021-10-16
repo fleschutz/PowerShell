@@ -1,12 +1,13 @@
 ## new-email.ps1 - Opens the default email client to write a new email
 
-new-email.ps1 [<address>]
+This script opens the default email client to write a new email.
 
 ## Parameters
 ```powershell
 new-email.ps1 [[-EmailAddress] <String>] [<CommonParameters>]
 
 -EmailAddress <String>
+    Specifies the email address fill in
     
     Required?                    false
     Position?                    1

@@ -1,12 +1,13 @@
 ## new-qrcode.ps1 - Generates a new QR code image file
 
-new-qrcode.ps1 [<Text>] [<ImageSize>]
+This script generates a new QR code image file.
 
 ## Parameters
 ```powershell
 new-qrcode.ps1 [[-Text] <String>] [[-ImageSize] <String>] [<CommonParameters>]
 
 -Text <String>
+    Specifies the text to use
     
     Required?                    false
     Position?                    1
@@ -15,6 +16,7 @@ new-qrcode.ps1 [[-Text] <String>] [[-ImageSize] <String>] [<CommonParameters>]
     Accept wildcard characters?  false
 
 -ImageSize <String>
+    Specifies the image size (width x height)
     
     Required?                    false
     Position?                    2

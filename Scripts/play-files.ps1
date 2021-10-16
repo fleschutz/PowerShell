@@ -1,8 +1,10 @@
 ﻿<#
 .SYNOPSIS
-	Plays the given audio files (supporting MP3 and WAV format)
+	Plays audio files (MP3 and WAV)
 .DESCRIPTION
-	play-files.ps1 [<FilePattern>]
+	This script plays the given audio files (supporting MP3 and WAV format).
+.PARAMETER FilePattern
+	Specifies the file pattern
 .EXAMPLE
 	PS> ./play-files *.mp3
 .NOTES

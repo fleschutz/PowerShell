@@ -2,7 +2,17 @@
 .SYNOPSIS
 	Convert a MySQL database table to a .CSV file
 .DESCRIPTION
-	convert-mysql2csv.ps1 [<server>] [<database>] [<username>] [<password>] [<query>]
+	This script converts a MySQL database table to a .CSV file.
+.PARAMETER server
+	Specifies the server's hostname or IP address
+.PARAMETER database
+	Specifies the database name
+.PARAMETER username
+	Specifies the user name
+.PARAMETER password
+	Specifies the password
+.PARAMETER query
+	Specifies the SQL query
 .EXAMPLE
 	PS> ./convert-mysql2csv
 .NOTES

@@ -2,7 +2,7 @@
 .SYNOPSIS
 	Reboots the local computer (needs admin rights)
 .DESCRIPTION
-	reboot.ps1
+	This script reboots the local computer (needs admin rights).
 .EXAMPLE
 	PS> ./reboot
 .NOTES

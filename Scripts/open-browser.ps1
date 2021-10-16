@@ -2,8 +2,9 @@
 .SYNOPSIS
 	Opens the default Web browser
 .DESCRIPTION
-	Opens the default Web browser, optional with given URL
-	open-browser.ps1 [<URL>]
+	This script opens the default Web browser, optional with given URL.
+.PARAMETER URL
+	Specifies the URL
 .EXAMPLE
 	PS> ./open-browser
 .NOTES

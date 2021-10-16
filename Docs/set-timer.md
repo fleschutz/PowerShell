@@ -1,12 +1,13 @@
 ## set-timer.ps1 - Sets a timer for a countdown
 
-set-timer.ps1 [<seconds>]
+This script sets a timer for a countdown.
 
 ## Parameters
 ```powershell
 set-timer.ps1 [[-Seconds] <Int32>] [<CommonParameters>]
 
 -Seconds <Int32>
+    Specifies the number of seconds
     
     Required?                    false
     Position?                    1

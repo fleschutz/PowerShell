@@ -1,12 +1,13 @@
 ## check-swap-space.ps1 - Checks the free swap space
 
-check-swap-space.ps1 [<min-level>]
+This script checks the free swap space.
 
 ## Parameters
 ```powershell
 check-swap-space.ps1 [[-MinLevel] <Int32>] [<CommonParameters>]
 
 -MinLevel <Int32>
+    Specifies the minimum level (50 GB by default)
     
     Required?                    false
     Position?                    1

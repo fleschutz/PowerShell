@@ -2,7 +2,7 @@
 .SYNOPSIS
 	Closes Mozilla's Firefox Web browser 
 .DESCRIPTION
-	close-firefox.ps1 
+	This script closes Mozilla's Firefox Web browser gracefully.
 .EXAMPLE
 	PS> ./close-firefox
 .NOTES

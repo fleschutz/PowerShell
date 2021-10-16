@@ -1,12 +1,13 @@
 ## check-xml-file.ps1 - Checks the given XML file for validity
 
-check-xml-file [<file>]
+This script checks the given XML file for validity.
 
 ## Parameters
 ```powershell
 check-xml-file.ps1 [[-file] <String>] [<CommonParameters>]
 
 -file <String>
+    Specifies the path to the XML file to check
     
     Required?                    false
     Position?                    1

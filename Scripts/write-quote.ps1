@@ -2,7 +2,7 @@
 .SYNOPSIS
 	Writes a random quote to the console
 .DESCRIPTION
-	write-quote.ps1 
+	This script writes a random quote to the console.
 .EXAMPLE
 	PS> ./write-quote
 .NOTES

@@ -1,12 +1,13 @@
-## edit.ps1 - Opens the built-in text editor to edit the given file
+## edit.ps1 - Opens an editor to edit a file
 
-edit.ps1 <filename>
+Opens a  text editor to edit the given file.
 
 ## Parameters
 ```powershell
 edit.ps1 [[-Filename] <String>] [<CommonParameters>]
 
 -Filename <String>
+    Specifies the path to the filename
     
     Required?                    false
     Position?                    1

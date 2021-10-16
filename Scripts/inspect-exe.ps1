@@ -2,7 +2,9 @@
 .SYNOPSIS
 	Prints basic information of an executable file
 .DESCRIPTION
-	inspect-exe.ps1 [<path-to-exe-file>]
+	This script prints basic information of an executable file.
+.PARAMETER PathToExe
+	Specifies the path to the executable file
 .EXAMPLE
 	PS> ./inspect-exe C:\MyApp.exe
 .NOTES

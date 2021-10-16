@@ -1,12 +1,13 @@
-## download-dir.ps1 - Downloads a folder (including subfolders) from the given URL
+## download-dir.ps1 - Downloads a folder (including subfolders) from an URL
 
-download-dir.ps1 [<URL>]
+This script downloads a folder (including subfolders) from the given URL.
 
 ## Parameters
 ```powershell
 download-dir.ps1 [[-URL] <String>] [<CommonParameters>]
 
 -URL <String>
+    Specifies the URL where to download from
     
     Required?                    false
     Position?                    1
@@ -21,7 +22,7 @@ download-dir.ps1 [[-URL] <String>] [<CommonParameters>]
 
 ## Example
 ```powershell
-PS>./download-dir "https://www.cnn.com"
+PS>./download-dir https://www.cnn.com
 ```
 
 ## Notes

@@ -2,7 +2,7 @@
 .SYNOPSIS
 	Scans the network for open/closed ports
 .DESCRIPTION
-	scan-ports.ps1
+	This script scans the network for open or closed ports
 .EXAMPLE
 	PS> ./scan-ports
 .NOTES

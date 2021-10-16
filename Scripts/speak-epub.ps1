@@ -2,7 +2,9 @@
 .SYNOPSIS
 	Speaks the content of the given Epub file by text-to-speech (TTS).
 .DESCRIPTION
-	speak-epub.ps1 [<filename>]
+	This script speaks the content of the given Epub file by text-to-speech (TTS).
+.PARAMETER Filename
+	Specifies the path to the Epub file
 .EXAMPLE
 	PS> ./speak-epub C:\MyBook.epub
 .NOTES

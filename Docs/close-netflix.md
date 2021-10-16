@@ -1,6 +1,6 @@
 ## close-netflix.ps1 - Closes the Netflix application
 
-close-netflix.ps1
+This script closes the Netflix application gracefully.
 
 ## Parameters
 ```powershell

@@ -2,10 +2,12 @@
 .SYNOPSIS
 	Cleans a Git repository from untracked files (including submodules)
 .DESCRIPTION
-	clean-repo.ps1 [<RepoDir>]
+	This script cleans a Git repository from untracked files (including submodules).
+.PARAMETER RepoDir
+	Specifies the path to the Git repository
 .EXAMPLE
 	PS> ./clean-repo C:\MyRepo
-	🧹 Cleaning Git repository 📂C:\MyRepo from untracked files...
+	🧹 Cleaning from untracked files...
 	✔️ cleaned Git repository 📂C:\MyRepo in 0 sec
 .NOTES
 	Author: Markus Fleschutz · License: CC0
@@ -21,7 +23,7 @@ try {
 	if (-not(test-path "$RepoDir" -pathType container)) { throw "Can't access directory: $RepoDir" }
 	
 	$RepoDirName = (get-item "$RepoDir").Name
-	"🧹 Cleaning Git repository 📂$RepoDirName from untracked files..."
+	"🧹 Cleaning untracked files..."
 
 	$Null = (git --version)
 	if ($lastExitCode -ne "0") { throw "Can't execute 'git' - make sure Git is installed and available" }

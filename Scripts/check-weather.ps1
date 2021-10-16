@@ -2,7 +2,9 @@
 .SYNOPSIS
 	Checks the weather for critical values
 .DESCRIPTION
-	check-weather.ps1 [<location>]
+	Checks the current weather for critical values.
+.PARAMETER location
+	Specifies the location to use (determined automatically per default)
 .EXAMPLE
 	PS> ./check-weather
 .LINK

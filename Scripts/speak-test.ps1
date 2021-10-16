@@ -1,8 +1,8 @@
 ﻿<#
 .SYNOPSIS
-	Performs a text-to-speech (TTS) test
+	Performs a text-to-speech test
 .DESCRIPTION
-	speak-test.ps1
+	This script performs a text-to-speech (TTS) test.
 .EXAMPLE
 	PS> ./speak-test
 .NOTES

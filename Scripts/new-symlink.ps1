@@ -2,7 +2,11 @@
 .SYNOPSIS
 	Creates a new symbolic link file
 .DESCRIPTION
-	new-symlink.ps1 [<symlink>] [<target>]
+	This script creates a new symbolic link file.
+.PARAMETER symlink
+	Specifies the new symlink filename
+.PARAMETER target
+	Specifies the path to target
 .EXAMPLE
 	PS> ./new-symlink C:\Temp\HDD C:\
 .NOTES

@@ -1,12 +1,13 @@
 ## translate-file.ps1 - Translates a text file into another language
 
-translate-file.ps1 [<file>] [<source-lang>] [<target-lang>]
+This script translates a text file into another language.
 
 ## Parameters
 ```powershell
 translate-file.ps1 [[-File] <String>] [[-SourceLang] <String>] [[-TargetLang] <String>] [<CommonParameters>]
 
 -File <String>
+    Specifies the file to translate
     
     Required?                    false
     Position?                    1
@@ -15,6 +16,7 @@ translate-file.ps1 [[-File] <String>] [[-SourceLang] <String>] [[-TargetLang] <S
     Accept wildcard characters?  false
 
 -SourceLang <String>
+    Specifies the source language
     
     Required?                    false
     Position?                    2
@@ -23,6 +25,7 @@ translate-file.ps1 [[-File] <String>] [[-SourceLang] <String>] [[-TargetLang] <S
     Accept wildcard characters?  false
 
 -TargetLang <String>
+    Specifies the target language
     
     Required?                    false
     Position?                    3

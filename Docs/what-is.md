@@ -1,12 +1,13 @@
-## what-is.ps1 - Prints a description of the given abbreviation
+## what-is.ps1 - Prints a description of an abbreviation
 
-what-is.ps1 [<abbreviation>]
+This script prints a description of the given abbreviation.
 
 ## Parameters
 ```powershell
 what-is.ps1 [[-abbreviation] <String>] [<CommonParameters>]
 
 -abbreviation <String>
+    Specifies the appreviation to look for
     
     Required?                    false
     Position?                    1

@@ -2,7 +2,7 @@
 .SYNOPSIS
 	Sets the PowerShell profile for the current user
 .DESCRIPTION
-	set-profile.ps1
+	This script sets the PowerShell profile for the current user.
 .EXAMPLE
 	PS> ./set-profile
 .NOTES

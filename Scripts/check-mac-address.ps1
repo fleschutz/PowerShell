@@ -2,8 +2,10 @@
 .SYNOPSIS
 	Checks the given MAC address for validity
 .DESCRIPTION
+	This script checks the given MAC address for validity
 	Supported MAC address formats are: 00:00:00:00:00:00 or 00-00-00-00-00-00 or 000000000000.
-	check-mac-address.ps1 [<MAC>]
+.PARAMETER MAC
+	Specifies the MAC address to check
 .EXAMPLE
 	PS> ./check-mac-address 11:22:33:44:55:66
 	✔️ MAC address 11:22:33:44:55:66 is valid

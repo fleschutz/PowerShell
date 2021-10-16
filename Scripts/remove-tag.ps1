@@ -2,7 +2,13 @@
 .SYNOPSIS
 	Removes a Git tag (locally, remote, or both)
 .DESCRIPTION
-	remove-tag.ps1 [<TagName>] [<Mode>] [<RepoDir>]
+	This script removes a Git tag, either locally, remote, or both.
+.PARAMETER TagName
+	Specifies the Git tag name
+.PARAMETER Mode
+	Specifies either locally, remote, or both
+.PARAMETER RepoDir
+	Specifies the path to the Git repository
 .EXAMPLE
 	PS> ./remove-tag v1.7 locally
 .LINK

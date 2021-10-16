@@ -1,12 +1,13 @@
-## play-files.ps1 - Plays the given audio files (supporting MP3 and WAV format)
+## play-files.ps1 - Plays audio files (MP3 and WAV)
 
-play-files.ps1 [<FilePattern>]
+This script plays the given audio files (supporting MP3 and WAV format).
 
 ## Parameters
 ```powershell
 play-files.ps1 [[-FilePattern] <String>] [<CommonParameters>]
 
 -FilePattern <String>
+    Specifies the file pattern
     
     Required?                    false
     Position?                    1

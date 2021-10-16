@@ -2,7 +2,7 @@
 .SYNOPSIS
         Plays the Tetris melody
 .DESCRIPTION
-        play-tetris-melody.ps1
+        This script plays the Tetris melody.
 .EXAMPLE
         PS> ./play-tetris-melody
 .NOTES

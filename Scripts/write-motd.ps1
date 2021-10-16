@@ -2,7 +2,7 @@
 .SYNOPSIS
 	Writes the message of the day (MOTD)
 .DESCRIPTION
-	write-motd.ps1 
+	This script writes the message of the day (MOTD).
 .EXAMPLE
 	PS> ./write-motd
 .NOTES

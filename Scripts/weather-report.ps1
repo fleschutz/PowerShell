@@ -2,7 +2,9 @@
 .SYNOPSIS
 	Lists the local weather report
 .DESCRIPTION
-	weather-report.ps1 [<GeoLocation>]
+	This script lists the local weather report.
+.PARAMETER GeoLocation
+	Specifies the geographic location to use (determine automatically by default)
 .EXAMPLE
 	PS> ./weather-report Paris
 .NOTES

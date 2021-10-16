@@ -2,7 +2,7 @@
 .SYNOPSIS
 	Simulates the Matrix (fun)
 .DESCRIPTION
-	simulate-matrix.ps1 
+	This script simulates the Matrix (for fun).
 .EXAMPLE
 	PS> ./simulate-matrix
 .NOTES

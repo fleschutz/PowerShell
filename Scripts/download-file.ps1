@@ -1,10 +1,12 @@
 ﻿<#
 .SYNOPSIS
-	Downloads a file from the given URL
+	Downloads a file from an URL
 .DESCRIPTION
-	download-file.ps1 [<URL>]
+	This script downloads a file from the given URL
+.PARAMETER URL
+	Specifies the URL where to download from
 .EXAMPLE
-	PS> ./download-file "https://www.cnn.com/index.html"
+	PS> ./download-file https://www.cnn.com/index.html
 .NOTES
 	Author: Markus Fleschutz · License: CC0
 .LINK

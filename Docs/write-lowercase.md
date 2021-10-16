@@ -1,12 +1,13 @@
 ## write-lowercase.ps1 - Writes text in lowercase letters
 
-write-lowercase.ps1 [<text>]
+This script writes text in lowercase letters.
 
 ## Parameters
 ```powershell
 write-lowercase.ps1 [[-text] <String>] [<CommonParameters>]
 
 -text <String>
+    Specifies the text to write
     
     Required?                    false
     Position?                    1

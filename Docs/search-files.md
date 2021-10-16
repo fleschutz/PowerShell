@@ -1,12 +1,13 @@
-## search-files.ps1 - Searches for a pattern in the given files
+## search-files.ps1 - Searches for a pattern in files
 
-search-files.ps1 [<pattern>] [<files>]
+This script searches for a pattern in the given files.
 
 ## Parameters
 ```powershell
 search-files.ps1 [[-pattern] <String>] [[-files] <String>] [<CommonParameters>]
 
 -pattern <String>
+    Specifies the search pattern
     
     Required?                    false
     Position?                    1
@@ -15,6 +16,7 @@ search-files.ps1 [[-pattern] <String>] [[-files] <String>] [<CommonParameters>]
     Accept wildcard characters?  false
 
 -files <String>
+    Specifies the files
     
     Required?                    false
     Position?                    2

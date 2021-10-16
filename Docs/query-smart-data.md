@@ -1,9 +1,7 @@
 ## query-smart-data.ps1 - Queries and saves the S.M.A.R.T. data of your HDD's/SSD's
 
-query-smart-data.ps1 [<directory>]
-Queries the S.M.A.R.T. data of your HDD/SSD's and saves it to the current/given directory
+Queries the S.M.A.R.T. data of your HDD/SSD's and saves it to the current/given directory.
 (use smart-data2csv.ps1 to generate a CSV table for analysis).
-
        Requires smartctl (smartmontools) and admin rights. For automation copy this script to /etc/cron.daily
 
 ## Parameters
@@ -11,6 +9,7 @@ Queries the S.M.A.R.T. data of your HDD/SSD's and saves it to the current/given 
 query-smart-data.ps1 [[-Directory] <String>] [<CommonParameters>]
 
 -Directory <String>
+    Specifies the path to the target directory
     
     Required?                    false
     Position?                    1

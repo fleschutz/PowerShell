@@ -3,7 +3,8 @@
 	Displays the current time
 .DESCRIPTION
 	Displays the current time (for 10 seconds by default)
-	display-time.ps1 [<seconds>]
+.PARAMETER Seconds
+	Specifies the number of seconds to display the time
 .EXAMPLE
 	PS> ./display-time
 .NOTES

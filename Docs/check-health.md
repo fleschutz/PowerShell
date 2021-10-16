@@ -1,6 +1,6 @@
 ## check-health.ps1 - Checks the health of the local computer
 
-check-health.ps1
+This script checks the health of the local computer.
 
 ## Parameters
 ```powershell

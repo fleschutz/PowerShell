@@ -2,7 +2,11 @@
 .SYNOPSIS
 	Writes text with the typewriter effect
 .DESCRIPTION
-	write-typewriter.ps1 [<text>] [<speed>]
+	This script writes text with the typewriter effect.
+.PARAMETER text
+	Specifies the text to write
+.PARAMETER speed
+	Specifies the speed (250 ms by default)
 .EXAMPLE
 	PS> ./write-typewriter "Hello World"
 .NOTES

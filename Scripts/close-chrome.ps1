@@ -2,7 +2,7 @@
 .SYNOPSIS
 	Closes the Google Chrome Web browser
 .DESCRIPTION
-	close-chrome.ps1 
+	This script closes the Google Chrome Web browser gracefully.
 .EXAMPLE
 	PS> ./close-chrome
 .NOTES

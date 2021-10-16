@@ -2,7 +2,7 @@
 .SYNOPSIS
 	Closes Microsoft's OneDrive folder
 .DESCRIPTION
-	close-onedrive.ps1 
+	This script closes Microsoft's OneDrive folder gracefully.
 .EXAMPLE
 	PS> ./close-onedrive
 .NOTES

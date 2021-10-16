@@ -2,13 +2,13 @@
 .SYNOPSIS
 	Fetches updates for a local Git repository (including submodules)
 .DESCRIPTION
-	fetch-repo.ps1 [<RepoDir>]
+	This script fetches updates for a local Git repository (including submodules).
 .PARAMETER RepoDir
 	Specifies the path to the Git repository.
 .EXAMPLE
 	PS> ./fetch-repo
-	🢃 Fetching updates for Git repository 📂PowerShell ...
-	✔️ fetched updates for 📂PowerShell"
+	🢃 Fetching updates...
+	✔️ fetched updates for Git repository 📂PowerShell in 14 sec
 .NOTES
 	Author: Markus Fleschutz · License: CC0
 .LINK

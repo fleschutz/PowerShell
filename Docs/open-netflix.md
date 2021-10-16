@@ -1,6 +1,6 @@
-## open-netflix.ps1 - Starts the Netflix app (needs to be installed)
+## open-netflix.ps1 - Starts the Netflix app
 
-open-netflix.ps1
+This script starts the Netflix application.
 
 ## Parameters
 ```powershell

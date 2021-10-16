@@ -2,7 +2,13 @@
 .SYNOPSIS
 	Creates a new shortcut file
 .DESCRIPTION
-	new-shortcut.ps1 [<shortcut>] [<target>] [<description>]
+	This script creates a new shortcut file.
+.PARAMETER shortcut
+	Specifies the shortcut filename
+.PARAMETER target
+	Specifies the path to the target
+.PARAMETER description
+	Specifies a description
 .EXAMPLE
 	PS> ./new-shortcut C:\Temp\HDD C:\
 .NOTES

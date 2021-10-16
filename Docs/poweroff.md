@@ -1,6 +1,6 @@
 ## poweroff.ps1 - Halts the local computer (needs admin rights)
 
-poweroff.ps1
+This script halts the local computer. It needs admin rights.
 
 ## Parameters
 ```powershell

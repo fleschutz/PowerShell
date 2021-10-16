@@ -1,8 +1,14 @@
 ﻿<#
 .SYNOPSIS
-	Sends a TCP message to the given IP address and port
+	Sends a TCP message to an IP address and port
 .DESCRIPTION
-	send-tcp.ps1 [<TargetIP>] [<TargetPort>] [<Message>]
+	This script sends a TCP message to the given IP address and port.
+.PARAMETER TargetIP
+	Specifies the target IP address
+.PARAMETER TargetPort
+	Specifies the target port number
+.PARAMETER Message
+	Specifies the message to send
 .EXAMPLE
 	PS> ./send-tcp 192.168.100.100 8080 "TEST"
 .NOTES

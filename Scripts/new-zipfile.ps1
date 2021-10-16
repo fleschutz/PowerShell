@@ -2,7 +2,9 @@
 .SYNOPSIS
 	Creates a new .ZIP file from a folder (including subfolders)
 .DESCRIPTION
-	new-zipfile.ps1 [<folder>]
+	This script creates a new .ZIP file from a folder (including subfolders).
+.PARAMETER folder
+	Specifies the path to the folder
 .EXAMPLE
 	PS> ./new-zipfile C:\Windows
 .NOTES

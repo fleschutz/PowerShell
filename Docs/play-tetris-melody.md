@@ -1,6 +1,6 @@
 ## play-tetris-melody.ps1 - Plays the Tetris melody
 
-play-tetris-melody.ps1
+This script plays the Tetris melody.
 
 ## Parameters
 ```powershell

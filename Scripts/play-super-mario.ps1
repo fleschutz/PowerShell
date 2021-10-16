@@ -2,7 +2,7 @@
 .SYNOPSIS
 	Plays the Super Mario intro
 .DESCRIPTION
-	play-super-mario.ps1
+	This script plays the Super Mario intro.
 .EXAMPLE
 	PS> ./play-super-mario
 .NOTES

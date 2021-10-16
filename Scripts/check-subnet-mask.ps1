@@ -2,7 +2,9 @@
 .SYNOPSIS
 	Checks the given subnet mask for validity
 .DESCRIPTION
-	check-subnet-mask.ps1 [<address>]
+	This script checks the given subnet mask for validity.
+.PARAMETER address
+	Specifies the subnet mask to check
 .EXAMPLE
 	PS> ./check-subnet-mask 255.255.255.0
 	✔️ subnet mask 255.255.255.0 is valid

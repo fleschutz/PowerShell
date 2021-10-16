@@ -2,7 +2,7 @@
 .SYNOPSIS
 	Removes all jobs from all printers
 .DESCRIPTION
-	remove-print-jobs.ps1
+	This script removes all print jobs from all printer devices.
 .EXAMPLE
 	PS> ./remove-print-jobs
 .NOTES

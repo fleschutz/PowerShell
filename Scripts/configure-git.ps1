@@ -2,7 +2,13 @@
 .SYNOPSIS
 	Configures the user settings for Git 
 .DESCRIPTION
-	configure-git.ps1 [<full-name>] [<email-address>] [<favorite-editor>]
+	This script configures the user settings for Git.
+.PARAMETER FullName
+	Specifies the user's full name
+.PARAMETER EmailAddress
+	Specifies the user's email address
+.PARAMETER FavoriteEditor
+	Specifies the user's favorite text editor
 .EXAMPLE
 	PS> ./configure-git
 .NOTES
@@ -18,11 +24,11 @@ try {
 	if ($EmailAddress -eq "") { $EmailAddress = read-host "Enter your e-mail address"}
 	if ($FavoriteEditor -eq "") { $FavoriteEditor = read-host "Enter your favorite text editor (emacs,nano,vi,vim,...)" }
 
-	"👉 Step 1/3: Searching for Git executable..."
+	"👉 Searching for Git executable... [step 1/3]"
 	& git --version
 	if ($lastExitCode -ne "0") { throw "Can't execute 'git' - make sure Git is installed and available" }
 
-	"👉 Step 2/3: Configuring basic settings..."
+	"👉 Configuring basic settings... [step 2/3]"
 	& git config --global user.name $FullName
 	& git config --global user.email $EmailAddress
 	& git config --global core.editor $FavoriteEditor
@@ -35,7 +41,7 @@ try {
 	& git config --global pull.rebase false
 	if ($lastExitCode -ne "0") { throw "'git config' failed" }
 
-	"👉 Step 3/3: Adding basic shortcuts (git st, git ls, etc.)..."
+	"👉 Adding basic shortcuts (git st, git ls, etc.)... [step 3/3]"
 	& git config --global alias.co "checkout"
 	& git config --global alias.br "branch"
 	& git config --global alias.ci "commit"

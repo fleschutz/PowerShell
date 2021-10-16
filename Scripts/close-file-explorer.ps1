@@ -2,7 +2,7 @@
 .SYNOPSIS
 	Closes Microsoft's File Explorer 
 .DESCRIPTION
-	close-file-explorer.ps1 
+	This script closes Microsoft's File Explorer gracefully.
 .EXAMPLE
 	PS> ./close-file-explorer
 .NOTES

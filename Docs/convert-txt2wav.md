@@ -1,12 +1,13 @@
 ## convert-txt2wav.ps1 - Converts text to a .WAV audio file
 
-convert-txt2wav.ps1 [<text>] [<wav-file>]
+This script converts text to a .WAV audio file.
 
 ## Parameters
 ```powershell
 convert-txt2wav.ps1 [[-Text] <String>] [[-WavFile] <String>] [<CommonParameters>]
 
 -Text <String>
+    Specifies the text to use
     
     Required?                    false
     Position?                    1
@@ -15,6 +16,7 @@ convert-txt2wav.ps1 [[-Text] <String>] [[-WavFile] <String>] [<CommonParameters>
     Accept wildcard characters?  false
 
 -WavFile <String>
+    Specifies the path to the resulting WAV file
     
     Required?                    false
     Position?                    2

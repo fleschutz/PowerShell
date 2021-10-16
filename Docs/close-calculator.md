@@ -1,6 +1,6 @@
-## close-calculator.ps1 - Closes the calculator program gracefully
+## close-calculator.ps1 - Closes the calculator program
 
-close-calculator.ps1
+This script closes the calculator program gracefully.
 
 ## Parameters
 ```powershell

@@ -1,12 +1,13 @@
-## locate-zip-code.ps1 - Prints the geographic location of the given zip-code
+## locate-zip-code.ps1 - Prints the geo location of a zip-code
 
-locate-zip-code.ps1 [<CountryCode>] [<ZipCode>]
+This script prints the geographic location of the given zip-code.
 
 ## Parameters
 ```powershell
 locate-zip-code.ps1 [[-CountryCode] <String>] [[-ZipCode] <String>] [<CommonParameters>]
 
 -CountryCode <String>
+    Specifies the country code
     
     Required?                    false
     Position?                    1
@@ -15,6 +16,7 @@ locate-zip-code.ps1 [[-CountryCode] <String>] [[-ZipCode] <String>] [<CommonPara
     Accept wildcard characters?  false
 
 -ZipCode <String>
+    Specifies the zip code
     
     Required?                    false
     Position?                    2

@@ -1,12 +1,13 @@
 ## translate-text.ps1 - Translates text into other languages
 
-translate-text.ps1 [<Text>] [<SourceLang>] [<TargetLang>]
+This script translates text into other languages.
 
 ## Parameters
 ```powershell
 translate-text.ps1 [[-Text] <String>] [[-SourceLang] <String>] [[-TargetLang] <String>] [<CommonParameters>]
 
 -Text <String>
+    Specifies the text to translate
     
     Required?                    false
     Position?                    1
@@ -15,6 +16,7 @@ translate-text.ps1 [[-Text] <String>] [[-SourceLang] <String>] [[-TargetLang] <S
     Accept wildcard characters?  false
 
 -SourceLang <String>
+    Specifies the source language
     
     Required?                    false
     Position?                    2
@@ -23,6 +25,7 @@ translate-text.ps1 [[-Text] <String>] [[-SourceLang] <String>] [[-TargetLang] <S
     Accept wildcard characters?  false
 
 -TargetLang <String>
+    Specifies the target language
     
     Required?                    false
     Position?                    3

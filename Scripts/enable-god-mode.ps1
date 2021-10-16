@@ -2,8 +2,7 @@
 .SYNOPSIS
 	Enables the god mode
 .DESCRIPTION
-	Enables the god mode (adds a new icon to the desktop)
-	enable-god-mode.ps1 
+	This script enables the god mode. It adds a new icon to the desktop.
 .EXAMPLE
 	PS> ./enable-god-mode
 .NOTES

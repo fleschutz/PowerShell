@@ -1,6 +1,6 @@
 ## fetch-repo.ps1 - Fetches updates for a local Git repository (including submodules)
 
-fetch-repo.ps1 [<RepoDir>]
+This script fetches updates for a local Git repository (including submodules).
 
 ## Parameters
 ```powershell
@@ -23,8 +23,8 @@ fetch-repo.ps1 [[-RepoDir] <String>] [<CommonParameters>]
 ## Example
 ```powershell
 PS>./fetch-repo
-🢃 Fetching updates for Git repository 📂PowerShell ...
-✔️ fetched updates for 📂PowerShell"
+🢃 Fetching updates...
+✔️ fetched updates for Git repository 📂PowerShell in 14 sec
 ```
 
 ## Notes

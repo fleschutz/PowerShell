@@ -2,7 +2,7 @@
 .SYNOPSIS
 	Unmutes the audio output
 .DESCRIPTION
-	unmute-audio.ps1
+	This script unmutes the audio output.
 .EXAMPLE
 	PS> .\unmute-audio.ps1
 .NOTES

@@ -1,12 +1,13 @@
 ## write-typewriter.ps1 - Writes text with the typewriter effect
 
-write-typewriter.ps1 [<text>] [<speed>]
+This script writes text with the typewriter effect.
 
 ## Parameters
 ```powershell
 write-typewriter.ps1 [[-text] <String>] [[-speed] <Int32>] [<CommonParameters>]
 
 -text <String>
+    Specifies the text to write
     
     Required?                    false
     Position?                    1
@@ -24,6 +25,7 @@ write-typewriter.ps1 [[-text] <String>] [[-speed] <Int32>] [<CommonParameters>]
     Accept wildcard characters?  false
 
 -speed <Int32>
+    Specifies the speed (250 ms by default)
     
     Required?                    false
     Position?                    2

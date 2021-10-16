@@ -2,7 +2,9 @@
 .SYNOPSIS
 	Opens the default email client to write a new email
 .DESCRIPTION
-	new-email.ps1 [<address>]
+	This script opens the default email client to write a new email.
+.PARAMETER EmailAddress
+	Specifies the email address fill in
 .EXAMPLE
 	PS> ./new-email
 .NOTES

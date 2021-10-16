@@ -2,7 +2,7 @@
 .SYNOPSIS
 	Starts the File Explorer
 .DESCRIPTION
-	open-file-explorer.ps1
+	This script starts the File Explorer.
 .EXAMPLE
 	PS> ./open-file-explorer
 .NOTES

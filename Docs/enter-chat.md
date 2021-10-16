@@ -1,6 +1,6 @@
 ## enter-chat.ps1 - Enters a chat using a common network shared file
 
-enter-chat.ps1
+This script enters a chat using a common network shared file.
 
 ## Parameters
 ```powershell

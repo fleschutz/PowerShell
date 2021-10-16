@@ -2,7 +2,7 @@
 .SYNOPSIS
 	Copies newer EXE's + DLL's from the build directory to the installation directory
 .DESCRIPTION
-	make-install.ps1 <BuildDir>
+	This script copies newer EXE's + DLL's from the build directory to the installation directory.
 .EXAMPLE
 	PS> ./make-install
 .NOTES

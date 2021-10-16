@@ -2,7 +2,11 @@
 .SYNOPSIS
 	Writes text as marquee
 .DESCRIPTION
-	write-marquee.ps1 [<text>] [<speed>]
+	This script writes text as marquee.
+.PARAMETER text
+	Specifies the text to write
+.PARAMETER speed
+	Specifies the marquee speed (60 ms per default)
 .EXAMPLE
 	PS> ./write-marquee "Hello World"
 .NOTES

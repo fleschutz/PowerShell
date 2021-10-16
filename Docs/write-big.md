@@ -1,12 +1,13 @@
-## write-big.ps1 - Writes the given text in big letters
+## write-big.ps1 - Writes text in big letters
 
-write-big.ps1 [<text>]
+This script writes the given text in big letters.
 
 ## Parameters
 ```powershell
 write-big.ps1 [[-text] <String>] [<CommonParameters>]
 
 -text <String>
+    Specifies the text to write
     
     Required?                    false
     Position?                    1

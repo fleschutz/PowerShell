@@ -1,12 +1,13 @@
 ## check-subnet-mask.ps1 - Checks the given subnet mask for validity
 
-check-subnet-mask.ps1 [<address>]
+This script checks the given subnet mask for validity.
 
 ## Parameters
 ```powershell
 check-subnet-mask.ps1 [[-address] <String>] [<CommonParameters>]
 
 -address <String>
+    Specifies the subnet mask to check
     
     Required?                    false
     Position?                    1

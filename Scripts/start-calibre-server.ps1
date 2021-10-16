@@ -2,8 +2,9 @@
 .SYNOPSIS
 	Starts a local Calibre server
 .DESCRIPTION
-	start-calibre-server.ps1 [<port>]
-	Starts a local Calibre server as background process (Web port number is 8099 by default)
+	This script starts a local Calibre server as background process (Web port number is 8099 by default).
+.PARAMETER port
+	Specifies the Web port number (8099 by default)
 .EXAMPLE
 	PS> ./start-calibre-server
 .NOTES

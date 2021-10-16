@@ -2,8 +2,9 @@
 .SYNOPSIS
 	Synchronizes a Git repository by push & pull (including submodules)
 .DESCRIPTION
-	sync-repo.ps1 [<RepoDir>]
-	<RepoDir> is the path to the Git repository
+	This script synchronizes a Git repository by push & pull (including submodules).
+.PARAMETER RepoDir
+	Specifies the path to the Git repository
 .EXAMPLE
 	PS> ./sync-repo C:\MyRepo
 .NOTES

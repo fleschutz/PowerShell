@@ -2,7 +2,9 @@
 .SYNOPSIS
 	Writes text encoded or decoded with ROT13
 .DESCRIPTION
-	write-rot13.ps1 [<text>]
+	This script writes text encoded or decoded with ROT13.
+.PARAMETER text
+	Specifies the text to write
 .EXAMPLE
 	PS> ./write-rot13 "Hello World"
 .NOTES

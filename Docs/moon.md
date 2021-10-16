@@ -1,6 +1,6 @@
 ## moon.ps1 - Prints the current moon phase
 
-moon.ps1
+This script prints the current moon phase.
 
 ## Parameters
 ```powershell

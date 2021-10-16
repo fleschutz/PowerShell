@@ -1,12 +1,13 @@
 ## write-morse-code.ps1 - Writes text in Morse code
 
-write-morse-code.ps1 [<text>] [<speed>]
+This script writes text in Morse code.
 
 ## Parameters
 ```powershell
 write-morse-code.ps1 [[-text] <String>] [[-speed] <Int32>] [<CommonParameters>]
 
 -text <String>
+    Specifies the text to write
     
     Required?                    false
     Position?                    1
@@ -15,6 +16,7 @@ write-morse-code.ps1 [[-text] <String>] [[-speed] <Int32>] [<CommonParameters>]
     Accept wildcard characters?  false
 
 -speed <Int32>
+    Specifies the speed of one time unit (100 ms per default)
     
     Required?                    false
     Position?                    2

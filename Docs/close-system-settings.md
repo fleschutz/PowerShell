@@ -1,6 +1,6 @@
 ## close-system-settings.ps1 - Closes the System Settings window
 
-close-system-settings.ps1
+This script closes the System Settings window gracefully.
 
 ## Parameters
 ```powershell

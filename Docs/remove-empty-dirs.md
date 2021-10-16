@@ -1,13 +1,13 @@
 ## remove-empty-dirs.ps1 - Removes all empty subfolders within a directory tree
 
-remove-empty-dirs.ps1 [<DirTree>]
-<DirTree> is the path to the directory tree
+This script removes all empty subfolders within a directory tree.
 
 ## Parameters
 ```powershell
 remove-empty-dirs.ps1 [[-DirTree] <String>] [<CommonParameters>]
 
 -DirTree <String>
+    Specifies the path to the directory tree
     
     Required?                    false
     Position?                    1

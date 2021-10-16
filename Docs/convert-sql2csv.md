@@ -1,12 +1,13 @@
 ## convert-sql2csv.ps1 - Converts a SQL database table to a .CSV file
 
-convert-sql2csv.ps1 [<server>] [<database>] [<username>] [<password>] [<query>]
+This script converts a SQL database table to a .CSV file.
 
 ## Parameters
 ```powershell
 convert-sql2csv.ps1 [[-server] <String>] [[-database] <String>] [[-username] <String>] [[-password] <String>] [[-query] <String>] [<CommonParameters>]
 
 -server <String>
+    Specifies the server's hostname or IP address
     
     Required?                    false
     Position?                    1
@@ -15,6 +16,7 @@ convert-sql2csv.ps1 [[-server] <String>] [[-database] <String>] [[-username] <St
     Accept wildcard characters?  false
 
 -database <String>
+    Specifies the database name
     
     Required?                    false
     Position?                    2
@@ -23,6 +25,7 @@ convert-sql2csv.ps1 [[-server] <String>] [[-database] <String>] [[-username] <St
     Accept wildcard characters?  false
 
 -username <String>
+    Specifies the user name
     
     Required?                    false
     Position?                    3
@@ -31,6 +34,7 @@ convert-sql2csv.ps1 [[-server] <String>] [[-database] <String>] [[-username] <St
     Accept wildcard characters?  false
 
 -password <String>
+    Specifies the password
     
     Required?                    false
     Position?                    4
@@ -39,6 +43,7 @@ convert-sql2csv.ps1 [[-server] <String>] [[-database] <String>] [[-username] <St
     Accept wildcard characters?  false
 
 -query <String>
+    Specifies the SQL query
     
     Required?                    false
     Position?                    5

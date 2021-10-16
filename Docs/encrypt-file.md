@@ -1,12 +1,13 @@
 ## encrypt-file.ps1 - Encrypts a file
 
-encrypt-file.ps1 [<Path>] [<Password>]
+This script encrypts the given file.
 
 ## Parameters
 ```powershell
 encrypt-file.ps1 [[-Path] <String>] [[-Password] <String>] [<CommonParameters>]
 
 -Path <String>
+    Specifies the path to the file to encrypt
     
     Required?                    false
     Position?                    1
@@ -15,6 +16,7 @@ encrypt-file.ps1 [[-Path] <String>] [[-Password] <String>] [<CommonParameters>]
     Accept wildcard characters?  false
 
 -Password <String>
+    Specifies the password to use
     
     Required?                    false
     Position?                    2

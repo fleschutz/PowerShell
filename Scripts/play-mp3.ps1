@@ -1,8 +1,10 @@
 ﻿<#
 .SYNOPSIS
-	Plays a sound file (in MP3 file format)
+	Plays a sound file (MP3 format)
 .DESCRIPTION
-	play-mp3.ps1 [<MP3-file>]
+	This script plays a sound file (in .MP3 file format).
+.PARAMETER Filename
+	Specifies the path to the .MP3 file
 .EXAMPLE
 	PS> ./play-mp3 C:\thunder.mp3
 .NOTES

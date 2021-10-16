@@ -1,6 +1,6 @@
 ## install-google-chrome.ps1 - Installs the latest Google Chrome browser
 
-install-google-chrome.ps1
+This script installs the latest Google Chrome Web browser.
 
 ## Parameters
 ```powershell

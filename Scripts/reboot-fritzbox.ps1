@@ -2,7 +2,11 @@
 .SYNOPSIS
 	Reboots the FRITZ!Box device
 .DESCRIPTION
-	reboot-fritzbox.ps1 [<Username>] [<Password>]
+	This script reboots the FRITZ!Box device
+.PARAMETER Username
+	Specifies the user name
+.PARAMETER Password
+	Specifies the password
 .EXAMPLE
 	PS> ./reboot-fritzbox
 .NOTES

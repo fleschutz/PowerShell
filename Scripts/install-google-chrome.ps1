@@ -2,7 +2,7 @@
 .SYNOPSIS
 	Installs the latest Google Chrome browser
 .DESCRIPTION
-	install-google-chrome.ps1
+	This script installs the latest Google Chrome Web browser.
 .EXAMPLE
 	PS> ./install-google-chrome
 .NOTES

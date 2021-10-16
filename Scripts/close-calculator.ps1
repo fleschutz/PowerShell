@@ -1,8 +1,8 @@
 ﻿<#
 .SYNOPSIS
-	Closes the calculator program gracefully
+	Closes the calculator program 
 .DESCRIPTION
-	close-calculator.ps1 
+	This script closes the calculator program gracefully.
 .EXAMPLE
 	PS> ./close-calculator
 .NOTES

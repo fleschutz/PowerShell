@@ -2,7 +2,13 @@
 .SYNOPSIS
 	Sends a UDP datagram message to an IP address and port
 .DESCRIPTION
-	send-udp.ps1 [<TargetIP>] [<TargetPort>] [<Message>]
+	This script sends a UDP datagram message to an IP address and port.
+.PARAMETER TargetIP
+	Specifies the target IP address
+.PARAMETER TargetPort
+	Specifies the target port number
+.PARAMETER Message
+	Specifies the message text to send
 .EXAMPLE
 	PS> ./send-udp 192.168.100.100 8080 "TEST"
 .NOTES

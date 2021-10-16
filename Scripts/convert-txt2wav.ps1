@@ -2,7 +2,11 @@
 .SYNOPSIS
 	Converts text to a .WAV audio file
 .DESCRIPTION
-	convert-txt2wav.ps1 [<text>] [<wav-file>]
+	This script converts text to a .WAV audio file.
+.PARAMETER text
+	Specifies the text to use
+.PARAMETER WavFile
+	Specifies the path to the resulting WAV file
 .EXAMPLE
 	PS> ./convert-txt2wav "Hello World" spoken.wav
 .NOTES

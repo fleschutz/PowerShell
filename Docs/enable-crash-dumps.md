@@ -1,6 +1,6 @@
 ## enable-crash-dumps.ps1 - Enables the writing of crash dumps
 
-enable-crash-dumps.ps1
+Enables the writing of crash dumps.
 
 ## Parameters
 ```powershell

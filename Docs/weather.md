@@ -1,12 +1,13 @@
 ## weather.ps1 - Lists the current weather forecast
 
-weather.ps1 [<GeoLocation>]
+This script lists the current weather forecast.
 
 ## Parameters
 ```powershell
 weather.ps1 [[-GeoLocation] <String>] [<CommonParameters>]
 
 -GeoLocation <String>
+    Specifies the geographic location to use
     
     Required?                    false
     Position?                    1

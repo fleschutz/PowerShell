@@ -1,6 +1,6 @@
 ## close-thunderbird.ps1 - Closes Mozilla's Thunderbird email client
 
-close-thunderbird.ps1
+This script closes Mozilla's Thunderbird email client gracefully.
 
 ## Parameters
 ```powershell

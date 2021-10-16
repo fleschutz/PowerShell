@@ -1,12 +1,13 @@
-## convert-ps2bat.ps1 - Converts a PowerShell script to .bat files
+## convert-ps2bat.ps1 - Converts PowerShell scripts to batch files
 
-convert-ps2bat.ps1 [<pattern>]
+This script converts one or more PowerShell scripts to .bat batch files.
 
 ## Parameters
 ```powershell
-convert-ps2bat.ps1 [[-Pattern] <String>] [<CommonParameters>]
+convert-ps2bat.ps1 [[-Filepattern] <String>] [<CommonParameters>]
 
--Pattern <String>
+-Filepattern <String>
+    Specifies the file pattern
     
     Required?                    false
     Position?                    1

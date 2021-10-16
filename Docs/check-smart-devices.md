@@ -1,14 +1,14 @@
 ## check-smart-devices.ps1 - Performs a selftest on your S.M.A.R.T. HDD/SSD devices.
 
-check-smart-devices.ps1 [<type>]
-Type is either short(default) or long.
-       Requires smartctl (smartmontools package) and admin rights.
+This script performs a selftest on your S.M.A.R.T. HDD/SSD devices.
+       It requires smartctl (smartmontools package) and admin rights.
 
 ## Parameters
 ```powershell
 check-smart-devices.ps1 [[-type] <String>] [<CommonParameters>]
 
 -type <String>
+    Specifies the type of selftest: either short (default) or long
     
     Required?                    false
     Position?                    1

@@ -2,7 +2,7 @@
 .SYNOPSIS
 	Enables the writing of crash dumps
 .DESCRIPTION
-	enable-crash-dumps.ps1 
+	Enables the writing of crash dumps.
 .EXAMPLE
 	PS> ./enable-crash-dumps
 .NOTES

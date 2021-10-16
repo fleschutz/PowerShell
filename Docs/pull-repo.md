@@ -1,12 +1,13 @@
-## pull-repo.ps1 - Pulls updates for a local Git repository (including submodules)
+## pull-repo.ps1 - Pulls updates for a Git repository (including submodules)
 
-pull-repo.ps1 [<repo-dir>]
+This script pulls updates for a local Git repository (including submodules).
 
 ## Parameters
 ```powershell
 pull-repo.ps1 [[-RepoDir] <String>] [<CommonParameters>]
 
 -RepoDir <String>
+    Specifies the path to the Git repository
     
     Required?                    false
     Position?                    1

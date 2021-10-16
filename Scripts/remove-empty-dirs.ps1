@@ -2,8 +2,9 @@
 .SYNOPSIS
 	Removes all empty subfolders within a directory tree
 .DESCRIPTION
-	remove-empty-dirs.ps1 [<DirTree>]
-	<DirTree> is the path to the directory tree
+	This script removes all empty subfolders within a directory tree.
+.PARAMETER DirTree
+	Specifies the path to the directory tree
 .EXAMPLE
 	PS> ./remove-empty-dirs C:\Temp
 .NOTES

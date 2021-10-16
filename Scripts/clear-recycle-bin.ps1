@@ -2,7 +2,7 @@
 .SYNOPSIS
 	Removes the content of the recycle bin folder permanently
 .DESCRIPTION
-	clear-recycle-bin.ps1 
+	This script removes the content of the recycle bin folder permanently.
 	NOTE: can not be undo!
 .EXAMPLE
 	PS> ./clear-recycle-bin

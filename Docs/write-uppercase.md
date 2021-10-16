@@ -1,12 +1,13 @@
 ## write-uppercase.ps1 - Writes text in uppercase letters
 
-write-uppercase.ps1 [<text>]
+This script writes text in uppercase letters.
 
 ## Parameters
 ```powershell
 write-uppercase.ps1 [[-text] <String>] [<CommonParameters>]
 
 -text <String>
+    Specifies the text to write
     
     Required?                    false
     Position?                    1

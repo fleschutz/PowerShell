@@ -2,7 +2,7 @@
 .SYNOPSIS
 	Writes animated text
 .DESCRIPTION
-	write-animated.ps1 [<line1>] .. [line9>] [<speed>]
+	This script writes animated text.
 .EXAMPLE
 	PS> ./write-animated "Hello World"
 .NOTES

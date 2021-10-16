@@ -1,13 +1,13 @@
 ## open-browser.ps1 - Opens the default Web browser
 
-Opens the default Web browser, optional with given URL
-open-browser.ps1 [<URL>]
+This script opens the default Web browser, optional with given URL.
 
 ## Parameters
 ```powershell
 open-browser.ps1 [[-URL] <String>] [<CommonParameters>]
 
 -URL <String>
+    Specifies the URL
     
     Required?                    false
     Position?                    1

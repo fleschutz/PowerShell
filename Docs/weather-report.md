@@ -1,12 +1,13 @@
 ## weather-report.ps1 - Lists the local weather report
 
-weather-report.ps1 [<GeoLocation>]
+This script lists the local weather report.
 
 ## Parameters
 ```powershell
 weather-report.ps1 [[-GeoLocation] <String>] [<CommonParameters>]
 
 -GeoLocation <String>
+    Specifies the geographic location to use (determine automatically by default)
     
     Required?                    false
     Position?                    1

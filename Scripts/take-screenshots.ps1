@@ -2,8 +2,11 @@
 .SYNOPSIS
 	Takes screenshots and saves them into a folder
 .DESCRIPTION
-	take-screenshots.ps1 [<TargetDir>] [<Interval>]
-	Takes screenshots and saves them into a folder (per default every 60 seconds)
+	This script takes screenshots and saves them into a folder.
+.PARAMETER TargetDir
+	Specifies the path to the target folder
+.PARAMETER Interval
+	Specifies the time interval in seconds (60 seconds per default)
 .EXAMPLE
 	PS> ./take-screenshots C:\Temp 60
 .NOTES

@@ -1,8 +1,10 @@
 ﻿<#
 .SYNOPSIS
-	Checks the given IPv6 address for validity
+	Checks an IPv6 address for validity
 .DESCRIPTION
-	check-ipv6-address.ps1 [<Address>]
+	This script checks the given IPv6 address for validity
+.PARAMETER Address
+	Specifies the IPv6 address to check
 .EXAMPLE
 	PS> ./check-ipv6-address fe80::200:5aee:feaa:20a2
 	✔️ IPv6 fe80::200:5aee:feaa:20a2 is valid

@@ -1,12 +1,13 @@
 ## clone-repos.ps1 - Clones well-known Git repositories into a folder
 
-clone-repos.ps1 [<folder>]
+This script clones well-known Git repositories into a folder.
 
 ## Parameters
 ```powershell
 clone-repos.ps1 [[-folder] <String>] [<CommonParameters>]
 
 -folder <String>
+    Specifies the target folder
     
     Required?                    false
     Position?                    1

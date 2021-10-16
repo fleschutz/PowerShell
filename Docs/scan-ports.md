@@ -1,6 +1,6 @@
 ## scan-ports.ps1 - Scans the network for open/closed ports
 
-scan-ports.ps1
+This script scans the network for open or closed ports
 
 ## Parameters
 ```powershell

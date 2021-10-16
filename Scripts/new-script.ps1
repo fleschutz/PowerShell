@@ -3,7 +3,8 @@
 	Creates a new PowerShell script file
 .DESCRIPTION
 	Creates a new PowerShell script file (by using template file ../Data/template.ps1).
-	new-script.ps1 [<filename>] 
+.PARAMETER filename
+	Specifies the path to the resulting file
 .EXAMPLE
 	PS> ./new-script myscript.ps1
 	✔️ created new PowerShell script: myscript.ps1

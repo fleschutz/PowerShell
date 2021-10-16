@@ -2,7 +2,9 @@
 .SYNOPSIS
 	Writes text in lowercase letters
 .DESCRIPTION
-	write-lowercase.ps1 [<text>]
+	This script writes text in lowercase letters.
+.PARAMETER text
+	Specifies the text to write
 .EXAMPLE
 	PS> ./write-lowercase "Hello World"
 .NOTES

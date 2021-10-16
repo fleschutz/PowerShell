@@ -1,12 +1,13 @@
-## check-ipv6-address.ps1 - Checks the given IPv6 address for validity
+## check-ipv6-address.ps1 - Checks an IPv6 address for validity
 
-check-ipv6-address.ps1 [<Address>]
+This script checks the given IPv6 address for validity
 
 ## Parameters
 ```powershell
 check-ipv6-address.ps1 [[-Address] <String>] [<CommonParameters>]
 
 -Address <String>
+    Specifies the IPv6 address to check
     
     Required?                    false
     Position?                    1

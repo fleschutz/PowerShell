@@ -2,7 +2,9 @@
 .SYNOPSIS
 	Translates text files into any supported language
 .DESCRIPTION
-	translate-files.ps1 [<FilePattern>]
+	This script translates text files into any supported language.
+.PARAMETER FilePattern
+	Specifies the file pattern
 .EXAMPLE
 	PS> ./translate-files C:\Temp\*.txt
 .NOTES

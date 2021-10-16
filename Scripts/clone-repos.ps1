@@ -2,7 +2,9 @@
 .SYNOPSIS
 	Clones well-known Git repositories into a folder
 .DESCRIPTION
-	clone-repos.ps1 [<folder>]
+	This script clones well-known Git repositories into a folder.
+.PARAMETER folder
+	Specifies the target folder
 .EXAMPLE
 	PS> ./clone-repos C:\Users\Markus\Repos
 .NOTES

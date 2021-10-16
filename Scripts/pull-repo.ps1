@@ -1,8 +1,10 @@
 ﻿<#
 .SYNOPSIS
-	Pulls updates for a local Git repository (including submodules)
+	Pulls updates for a Git repository (including submodules)
 .DESCRIPTION
-	pull-repo.ps1 [<repo-dir>]
+	This script pulls updates for a local Git repository (including submodules).
+.PARAMETER RepoDir
+	Specifies the path to the Git repository
 .EXAMPLE
 	PS> ./pull-repo C:\MyRepo
 .NOTES

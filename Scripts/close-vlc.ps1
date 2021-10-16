@@ -2,7 +2,7 @@
 .SYNOPSIS
 	Closes the VLC media player application
 .DESCRIPTION
-	close-vlc.ps1 
+	This script closes the VLC media player application gracefully.
 .EXAMPLE
 	PS> ./close-vlc
 .NOTES

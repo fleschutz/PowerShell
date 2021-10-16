@@ -2,7 +2,7 @@
 .SYNOPSIS
 	Enables hibernate mode for the local computer (needs admin rights)
 .DESCRIPTION
-	hibernate.ps1
+	This script enables hibernate mode for the local computer. It needs admin rights.
 .EXAMPLE
 	PS> ./hibernate
 .NOTES

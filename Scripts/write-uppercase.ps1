@@ -2,7 +2,9 @@
 .SYNOPSIS
 	Writes text in uppercase letters
 .DESCRIPTION
-	write-uppercase.ps1 [<text>]
+	This script writes text in uppercase letters.
+.PARAMETER text
+	Specifies the text to write
 .EXAMPLE
 	PS> ./write-uppercase "Hello World"
 .NOTES

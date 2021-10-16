@@ -2,7 +2,7 @@
 .SYNOPSIS
 	Installs Windows Subsystem for Linux (needs admin rights)
 .DESCRIPTION
-	install-wsl.ps1
+	This script installs Windows Subsystem for Linux. It needs admin rights.
 .EXAMPLE
 	PS> ./install-wsl
 .NOTES

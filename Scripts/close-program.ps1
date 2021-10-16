@@ -1,8 +1,14 @@
 ﻿<#
 .SYNOPSIS
-	Closes the processes of the given program gracefully
+	Closes a program's processes 
 .DESCRIPTION
-	close-program.ps1 [<FullProgramName>] [<ProgramName>] [<ProgramAliasName>]
+	This script closes a program's processes gracefully.
+.PARAMETER FullProgramName
+	Specifies the full program name
+.PARAMETER ProgramName
+	Specifies the program name
+.PARAMETER ProgramAliasName
+	Specifies the program alias name
 .EXAMPLE
 	PS> ./close-program "Google Chrome" "chrome.exe"
 .NOTES

@@ -2,7 +2,9 @@
 .SYNOPSIS
 	Pulls updates for all Git repositories in a folder (including submodules)
 .DESCRIPTION
-	pull-repos.ps1 [<ParentDir>]
+	This script pulls updates for all Git repositories in a folder (including submodules).
+.PARAMETER ParentDir
+	Specifies the path to the parent folder
 .EXAMPLE
 	PS> ./pull-repos C:\MyRepos
 .NOTES

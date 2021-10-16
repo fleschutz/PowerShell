@@ -2,7 +2,7 @@
 .SYNOPSIS
 	Halts the local computer (needs admin rights)
 .DESCRIPTION
-	poweroff.ps1
+	This script halts the local computer. It needs admin rights.
 .EXAMPLE
 	PS> ./poweroff
 .NOTES

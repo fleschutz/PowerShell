@@ -1,12 +1,13 @@
 ## replace-in-files.ps1 - Search and replace a pattern in the given files by the replacement
 
-replace-in-files.ps1 [<pattern>] [<replacement>] [<files>]
+This script searches and replaces a pattern in the given files by the replacement.
 
 ## Parameters
 ```powershell
 replace-in-files.ps1 [[-pattern] <String>] [[-replacement] <String>] [[-files] <String>] [<CommonParameters>]
 
 -pattern <String>
+    Specifies the pattern to look for
     
     Required?                    false
     Position?                    1
@@ -15,6 +16,7 @@ replace-in-files.ps1 [[-pattern] <String>] [[-replacement] <String>] [[-files] <
     Accept wildcard characters?  false
 
 -replacement <String>
+    Specifies the replacement
     
     Required?                    false
     Position?                    2
@@ -23,6 +25,7 @@ replace-in-files.ps1 [[-pattern] <String>] [[-replacement] <String>] [[-files] <
     Accept wildcard characters?  false
 
 -files <String>
+    Specifies the file to scan
     
     Required?                    false
     Position?                    3

@@ -1,6 +1,6 @@
 ## write-animated.ps1 - Writes animated text
 
-write-animated.ps1 [<line1>] .. [line9>] [<speed>]
+This script writes animated text.
 
 ## Parameters
 ```powershell

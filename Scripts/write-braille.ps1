@@ -2,7 +2,9 @@
 .SYNOPSIS
 	Writes text in Braille
 .DESCRIPTION
-	write-braille.ps1 [<text>]
+	This script writes text in Braille.
+.PARAMETER text
+	Specifies the text to write
 .EXAMPLE
 	PS> ./write-braille "Hello World"
 .NOTES

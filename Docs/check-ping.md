@@ -1,13 +1,14 @@
 ## check-ping.ps1 - Checks the ping latency from the local computer to selected Internet hosts
 
-Hosts by default are: amazon.com,apple.com,bing.com,cnn.com,dropbox.com,facebook.com,google.com,live.com,twitter.com,youtube.com
-check-ping.ps1 [<hosts>]
+This script checks the ping latency from the local computer to selected Internet hosts.
+The hosts by default are: amazon.com,apple.com,bing.com,cnn.com,dropbox.com,facebook.com,google.com,live.com,twitter.com,youtube.com
 
 ## Parameters
 ```powershell
 check-ping.ps1 [[-hosts] <String>] [<CommonParameters>]
 
 -hosts <String>
+    Specifies the hosts to check (separated by comma)
     
     Required?                    false
     Position?                    1

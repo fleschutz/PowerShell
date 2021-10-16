@@ -1,13 +1,13 @@
 ## display-time.ps1 - Displays the current time
 
 Displays the current time (for 10 seconds by default)
-display-time.ps1 [<seconds>]
 
 ## Parameters
 ```powershell
 display-time.ps1 [[-Seconds] <Int32>] [<CommonParameters>]
 
 -Seconds <Int32>
+    Specifies the number of seconds to display the time
     
     Required?                    false
     Position?                    1

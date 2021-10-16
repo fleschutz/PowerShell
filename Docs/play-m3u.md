@@ -1,12 +1,13 @@
-## play-m3u.ps1 - Plays the given playlist (in .M3U file format)
+## play-m3u.ps1 - Plays a playlist (.M3U format)
 
-play-m3u.ps1 [<filename>]
+This script plays the given playlist (in .M3U file format)
 
 ## Parameters
 ```powershell
 play-m3u.ps1 [[-filename] <String>] [<CommonParameters>]
 
 -filename <String>
+    Specifies the path to the playlist
     
     Required?                    false
     Position?                    1

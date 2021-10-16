@@ -1,6 +1,6 @@
 ## check-windows-system-files.ps1 - Checks the validity of the Windows system files (requires admin rights)
 
-check-windows-system-files.ps1
+This script checks the validity of the Windows system files. It requires admin rights.
 
 ## Parameters
 ```powershell

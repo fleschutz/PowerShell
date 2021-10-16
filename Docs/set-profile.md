@@ -1,6 +1,6 @@
 ## set-profile.ps1 - Sets the PowerShell profile for the current user
 
-set-profile.ps1
+This script sets the PowerShell profile for the current user.
 
 ## Parameters
 ```powershell

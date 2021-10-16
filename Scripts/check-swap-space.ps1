@@ -2,7 +2,9 @@
 .SYNOPSIS
 	Checks the free swap space
 .DESCRIPTION
-	check-swap-space.ps1 [<min-level>]
+	This script checks the free swap space.
+.PARAMETER MinLevel
+	Specifies the minimum level (50 GB by default)
 .EXAMPLE
 	PS> ./check-swap-space
 	✔️ 1213 GB left for swap space (67 of 1280 GB used)

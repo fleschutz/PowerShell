@@ -2,7 +2,9 @@
 .SYNOPSIS
 	Lists the current weather forecast
 .DESCRIPTION
-	weather.ps1 [<GeoLocation>]
+	This script lists the current weather forecast.
+.PARAMETER GeoLocation
+	Specifies the geographic location to use
 .EXAMPLE
 	PS> ./weather Paris
 .NOTES

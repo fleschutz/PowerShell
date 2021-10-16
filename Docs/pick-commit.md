@@ -1,6 +1,5 @@
 ## pick-commit.ps1 - Cherry-picks a Git commit into one or more branches
 
-pick-commit.ps1 [<CommitID>] [<CommitMessage>] [<Branches>] [<RepoDir>]
 Cherry-picks a Git commit into one or more branches (branch names need to be separated by spaces)
 NOTE: in case of merge conflicts the script stops immediately!
 
@@ -9,6 +8,7 @@ NOTE: in case of merge conflicts the script stops immediately!
 pick-commit.ps1 [[-CommitID] <String>] [[-CommitMessage] <String>] [[-Branches] <String>] [[-RepoDir] <String>] [<CommonParameters>]
 
 -CommitID <String>
+    Specifies the commit ID
     
     Required?                    false
     Position?                    1
@@ -17,6 +17,7 @@ pick-commit.ps1 [[-CommitID] <String>] [[-CommitMessage] <String>] [[-Branches] 
     Accept wildcard characters?  false
 
 -CommitMessage <String>
+    Specifies the commit message to use
     
     Required?                    false
     Position?                    2
@@ -25,6 +26,7 @@ pick-commit.ps1 [[-CommitID] <String>] [[-CommitMessage] <String>] [[-Branches] 
     Accept wildcard characters?  false
 
 -Branches <String>
+    Specifies the list of branches, separated by spaces
     
     Required?                    false
     Position?                    3
@@ -33,6 +35,7 @@ pick-commit.ps1 [[-CommitID] <String>] [[-CommitMessage] <String>] [[-Branches] 
     Accept wildcard characters?  false
 
 -RepoDir <String>
+    Specifies the path to the Git repository
     
     Required?                    false
     Position?                    4

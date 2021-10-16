@@ -1,8 +1,10 @@
 ﻿<#
 .SYNOPSIS
-	Prints the geographic location of the given city
+	Prints the geographic location of a city
 .DESCRIPTION
-	locate-city.ps1 [<City>]
+	This script prints the geographic location of the given city.
+.PARAMETER City
+	Specifies the city to look for
 .EXAMPLE
 	PS> ./locate-city Paris
 .NOTES

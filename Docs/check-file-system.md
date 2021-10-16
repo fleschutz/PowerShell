@@ -1,12 +1,13 @@
 ## check-file-system.ps1 - Checks the file system of a drive (needs admin rights)
 
-check-file-system.ps1 [<drive>]
+This script checks the file system of a drive. It needs admin rights.
 
 ## Parameters
 ```powershell
 check-file-system.ps1 [[-Drive] <String>] [<CommonParameters>]
 
 -Drive <String>
+    Specifies the drive to check
     
     Required?                    false
     Position?                    1

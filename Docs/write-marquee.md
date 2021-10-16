@@ -1,12 +1,13 @@
 ## write-marquee.ps1 - Writes text as marquee
 
-write-marquee.ps1 [<text>] [<speed>]
+This script writes text as marquee.
 
 ## Parameters
 ```powershell
 write-marquee.ps1 [[-text] <String>] [[-speed] <Int32>] [<CommonParameters>]
 
 -text <String>
+    Specifies the text to write
     
     Required?                    false
     Position?                    1
@@ -15,6 +16,7 @@ write-marquee.ps1 [[-text] <String>] [[-speed] <Int32>] [<CommonParameters>]
     Accept wildcard characters?  false
 
 -speed <Int32>
+    Specifies the marquee speed (60 ms per default)
     
     Required?                    false
     Position?                    2

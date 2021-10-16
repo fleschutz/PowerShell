@@ -2,8 +2,10 @@
 .SYNOPSIS
 	Checks the ping latency from the local computer to selected Internet hosts
 .DESCRIPTION
-	Hosts by default are: amazon.com,apple.com,bing.com,cnn.com,dropbox.com,facebook.com,google.com,live.com,twitter.com,youtube.com
-	check-ping.ps1 [<hosts>]
+	This script checks the ping latency from the local computer to selected Internet hosts.
+	The hosts by default are: amazon.com,apple.com,bing.com,cnn.com,dropbox.com,facebook.com,google.com,live.com,twitter.com,youtube.com
+.PARAMETER hosts
+	Specifies the hosts to check (separated by comma)
 .EXAMPLE
 	PS> ./check-ping
 	✔️ 36 ms ping average (13 ms min, 109 ms max, 10 hosts)

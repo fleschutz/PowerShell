@@ -2,7 +2,9 @@
 .SYNOPSIS
 	Prints the SHA256 checksum of a file
 .DESCRIPTION
-	get-sha256.ps1 [<file>]
+	This script calculates and prints the SHA256 checksum of the given file.
+.PARAMETER file
+	Specifies the path to the file
 .EXAMPLE
 	PS> ./get-sha256 C:\MyFile.txt
 .NOTES

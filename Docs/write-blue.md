@@ -1,12 +1,13 @@
 ## write-blue.ps1 - Writes text in a blue foreground color
 
-write-blue.ps1 [<text>]
+This script writes text in a blue foreground color.
 
 ## Parameters
 ```powershell
 write-blue.ps1 [[-text] <String>] [<CommonParameters>]
 
 -text <String>
+    Specifies the text to write
     
     Required?                    false
     Position?                    1

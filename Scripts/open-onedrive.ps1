@@ -2,7 +2,7 @@
 .SYNOPSIS
 	Opens the user's OneDrive folder
 .DESCRIPTION
-	open-onedrive.ps1
+	This script opens the user's OneDrive folder.
 .EXAMPLE
 	PS> ./open-onedrive
 .NOTES

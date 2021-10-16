@@ -1,12 +1,13 @@
 ## new-tag.ps1 - Creates a new tag in a Git repository
 
-new-tag.ps1 [<TagName>] [<RepoDir>]
+This script creates a new tag in a Git repository.
 
 ## Parameters
 ```powershell
 new-tag.ps1 [[-TagName] <String>] [[-RepoDir] <String>] [<CommonParameters>]
 
 -TagName <String>
+    Specifies the new tag name
     
     Required?                    false
     Position?                    1
@@ -15,6 +16,7 @@ new-tag.ps1 [[-TagName] <String>] [[-RepoDir] <String>] [<CommonParameters>]
     Accept wildcard characters?  false
 
 -RepoDir <String>
+    Specifies the path to the Git repository
     
     Required?                    false
     Position?                    2

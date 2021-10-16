@@ -2,7 +2,7 @@
 .SYNOPSIS
 	Closes the System Settings window
 .DESCRIPTION
-	close-system-settings.ps1 
+	This script closes the System Settings window gracefully.
 .EXAMPLE
 	PS> ./close-system-settings
 .NOTES
