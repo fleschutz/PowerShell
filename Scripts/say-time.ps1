@@ -5,6 +5,7 @@
 	This script speaks the current time by text-to-speech (TTS).
 .EXAMPLE
 	PS> ./say-time
+	(It's 2:23 PM)
 .NOTES
 	Author: Markus Fleschutz · License: CC0
 .LINK
@@ -12,8 +13,9 @@
 #>
 
 try {
-	[system.threading.thread]::currentthread.currentculture=[system.globalization.cultureinfo]"en-US"
-	& "$PSScriptRoot/speak-english.ps1" "It's now $((Get-Date).ToShortTimeString())"
+	[system.threading.thread]::currentThread.currentCulture=[system.globalization.cultureInfo]"en-US"
+	$CurrentTime = $((Get-Date).ToShortTimeString())
+	& "$PSScriptRoot/speak-english.ps1" "It's $CurrentTime"
 	exit 0 # success
 } catch {
 	"⚠️ Error: $($Error[0]) ($($MyInvocation.MyCommand.Name):$($_.InvocationInfo.ScriptLineNumber))"
