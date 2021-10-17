@@ -13,7 +13,7 @@ list-processes.ps1 [<CommonParameters>]
 
 ## Example
 ```powershell
-PS>./list-processes
+PS> ./list-processes
 
 
 
@@ -22,6 +22,7 @@ Id  CPU(s) ProcessName
  9712   0,39% 64DriverLoad
  2484         AppleMobileDeviceService
  ...
+
 ```
 
 ## Notes

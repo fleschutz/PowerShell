@@ -22,9 +22,10 @@ fetch-repo.ps1 [[-RepoDir] <String>] [<CommonParameters>]
 
 ## Example
 ```powershell
-PS>./fetch-repo
+PS> ./fetch-repo
 🢃 Fetching updates...
 ✔️ fetched updates for Git repository 📂PowerShell in 14 sec
+
 ```
 
 ## Notes

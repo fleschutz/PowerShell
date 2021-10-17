@@ -31,7 +31,8 @@ new-qrcode.ps1 [[-Text] <String>] [[-ImageSize] <String>] [<CommonParameters>]
 
 ## Example
 ```powershell
-PS>./new-qrcode "Fasten seatbelt" 500x500
+PS> ./new-qrcode "Fasten seatbelt" 500x500
+
 ```
 
 ## Notes

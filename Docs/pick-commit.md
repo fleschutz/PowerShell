@@ -50,7 +50,8 @@ pick-commit.ps1 [[-CommitID] <String>] [[-CommitMessage] <String>] [[-Branches] 
 
 ## Example
 ```powershell
-PS>./pick-commit 93849f889 "Fix typo" "v1 v2 v3"
+PS> ./pick-commit 93849f889 "Fix typo" "v1 v2 v3"
+
 ```
 
 ## Notes

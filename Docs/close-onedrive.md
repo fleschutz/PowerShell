@@ -13,7 +13,8 @@ close-onedrive.ps1 [<CommonParameters>]
 
 ## Example
 ```powershell
-PS>./close-onedrive
+PS> ./close-onedrive
+
 ```
 
 ## Notes

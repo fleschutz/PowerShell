@@ -22,7 +22,8 @@ write-braille.ps1 [[-text] <String>] [<CommonParameters>]
 
 ## Example
 ```powershell
-PS>./write-braille "Hello World"
+PS> ./write-braille "Hello World"
+
 ```
 
 ## Notes

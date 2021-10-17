@@ -22,7 +22,8 @@ fetch-repos.ps1 [[-ParentDir] <String>] [<CommonParameters>]
 
 ## Example
 ```powershell
-PS>./fetch-repos C:\MyRepos
+PS> ./fetch-repos C:\MyRepos
+
 ```
 
 ## Notes

@@ -13,8 +13,9 @@ cd-root.ps1 [<CommonParameters>]
 
 ## Example
 ```powershell
-PS>./cd-root
+PS> ./cd-root
 📂C:\
+
 ```
 
 ## Notes

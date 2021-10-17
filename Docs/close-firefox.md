@@ -13,7 +13,8 @@ close-firefox.ps1 [<CommonParameters>]
 
 ## Example
 ```powershell
-PS>./close-firefox
+PS> ./close-firefox
+
 ```
 
 ## Notes

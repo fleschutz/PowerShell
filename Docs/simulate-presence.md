@@ -22,7 +22,8 @@ simulate-presence.ps1 [[-IPaddress] <String>] [<CommonParameters>]
 
 ## Example
 ```powershell
-PS>./simulate-presence 192.168.100.100
+PS> ./simulate-presence 192.168.100.100
+
 ```
 
 ## Notes

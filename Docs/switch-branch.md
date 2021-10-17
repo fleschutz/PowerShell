@@ -31,7 +31,8 @@ switch-branch.ps1 [[-BranchName] <String>] [[-RepoDir] <String>] [<CommonParamet
 
 ## Example
 ```powershell
-PS>./switch-branch main C:\MyRepo
+PS> ./switch-branch main C:\MyRepo
+
 ```
 
 ## Notes

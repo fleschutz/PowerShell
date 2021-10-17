@@ -31,7 +31,8 @@ list-unused-files.ps1 [[-DirTree] <String>] [[-Days] <Int32>] [<CommonParameters
 
 ## Example
 ```powershell
-PS>./list-unused-files C:\ 100
+PS> ./list-unused-files C:\ 100
+
 ```
 
 ## Notes

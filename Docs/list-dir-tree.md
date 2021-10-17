@@ -22,7 +22,8 @@ list-dir-tree.ps1 [[-DirTree] <String>] [<CommonParameters>]
 
 ## Example
 ```powershell
-PS>./list-dir-tree C:\
+PS> ./list-dir-tree C:\
+
 ```
 
 ## Notes

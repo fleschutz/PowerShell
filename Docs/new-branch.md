@@ -31,7 +31,8 @@ new-branch.ps1 [[-BranchName] <String>] [[-RepoDir] <String>] [<CommonParameters
 
 ## Example
 ```powershell
-PS>./new-branch test123
+PS> ./new-branch test123
+
 ```
 
 ## Notes

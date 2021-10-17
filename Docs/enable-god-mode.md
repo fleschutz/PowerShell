@@ -13,7 +13,8 @@ enable-god-mode.ps1 [<CommonParameters>]
 
 ## Example
 ```powershell
-PS>./enable-god-mode
+PS> ./enable-god-mode
+
 ```
 
 ## Notes

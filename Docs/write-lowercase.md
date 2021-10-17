@@ -22,7 +22,8 @@ write-lowercase.ps1 [[-text] <String>] [<CommonParameters>]
 
 ## Example
 ```powershell
-PS>./write-lowercase "Hello World"
+PS> ./write-lowercase "Hello World"
+
 ```
 
 ## Notes

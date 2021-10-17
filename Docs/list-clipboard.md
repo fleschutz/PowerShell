@@ -13,7 +13,8 @@ list-clipboard.ps1 [<CommonParameters>]
 
 ## Example
 ```powershell
-PS>./list-clipboard
+PS> ./list-clipboard
+
 ```
 
 ## Notes

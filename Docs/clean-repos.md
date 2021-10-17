@@ -22,7 +22,8 @@ clean-repos.ps1 [[-ParentDir] <String>] [<CommonParameters>]
 
 ## Example
 ```powershell
-PS>./clean-repos C:\MyRepos
+PS> ./clean-repos C:\MyRepos
+
 ```
 
 ## Notes

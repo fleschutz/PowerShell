@@ -31,7 +31,8 @@ list-anagrams.ps1 [[-Word] <String>] [[-Columns] <Int32>] [<CommonParameters>]
 
 ## Example
 ```powershell
-PS>./list-anagrams Baby
+PS> ./list-anagrams Baby
+
 ```
 
 ## Notes

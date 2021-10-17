@@ -13,8 +13,9 @@ close-windows-terminal.ps1 [<CommonParameters>]
 
 ## Example
 ```powershell
-PS>./close-windows-terminal
+PS> ./close-windows-terminal
 (Windows Terminal is closed)
+
 ```
 
 ## Notes

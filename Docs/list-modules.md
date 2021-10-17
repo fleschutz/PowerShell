@@ -13,7 +13,7 @@ list-modules.ps1 [<CommonParameters>]
 
 ## Example
 ```powershell
-PS>./list-modules
+PS> ./list-modules
 
 
 
@@ -21,6 +21,7 @@ ModuleType Version    Name                                ExportedCommands
 ---------- -------    ----                                ----------------
 Manifest   3.1.0.0    Microsoft.PowerShell.Management     {Add-Computer, Add-Content, Checkpoint-Computer...}
 Manifest   3.1.0.0    Microsoft.PowerShell.Utility        {Add-Member, Add-Type, Clear-Variable...}
+
 ```
 
 ## Notes

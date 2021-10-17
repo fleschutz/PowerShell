@@ -23,8 +23,9 @@ check-smart-devices.ps1 [[-type] <String>] [<CommonParameters>]
 
 ## Example
 ```powershell
-PS>./check-smart-devices
+PS> ./check-smart-devices
 ✔️ short selftest started on S.M.A.R.T. device /dev/sda
+
 ```
 
 ## Notes

@@ -13,7 +13,7 @@ list-drives.ps1 [<CommonParameters>]
 
 ## Example
 ```powershell
-PS>./list-drives
+PS> ./list-drives
 
 
 
@@ -21,6 +21,7 @@ Name Root Used (GB) Free (GB)
 ---- ---- --------- ---------
 C    C:\       76,1      35,0
 D    D:\     6648,1     744,2
+
 ```
 
 ## Notes

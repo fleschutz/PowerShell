@@ -13,7 +13,8 @@ install-github-cli.ps1 [<CommonParameters>]
 
 ## Example
 ```powershell
-PS>./install-github-cli
+PS> ./install-github-cli
+
 ```
 
 ## Notes

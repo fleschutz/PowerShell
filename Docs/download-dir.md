@@ -22,7 +22,8 @@ download-dir.ps1 [[-URL] <String>] [<CommonParameters>]
 
 ## Example
 ```powershell
-PS>./download-dir https://www.cnn.com
+PS> ./download-dir https://www.cnn.com
+
 ```
 
 ## Notes

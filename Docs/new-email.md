@@ -22,7 +22,8 @@ new-email.ps1 [[-EmailAddress] <String>] [<CommonParameters>]
 
 ## Example
 ```powershell
-PS>./new-email
+PS> ./new-email
+
 ```
 
 ## Notes

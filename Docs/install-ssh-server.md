@@ -13,7 +13,8 @@ install-ssh-server.ps1 [<CommonParameters>]
 
 ## Example
 ```powershell
-PS>./install-ssh-server
+PS> ./install-ssh-server
+
 ```
 
 ## Notes

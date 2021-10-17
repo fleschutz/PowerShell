@@ -49,7 +49,8 @@ upload-file.ps1 [[-File] <String>] [[-URL] <String>] [[-Username] <String>] [[-P
 
 ## Example
 ```powershell
-PS>.\upload-file.ps1
+PS> .\upload-file.ps1
+
 ```
 
 ## Notes

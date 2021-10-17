@@ -13,7 +13,8 @@ introduce-powershell.ps1 [<CommonParameters>]
 
 ## Example
 ```powershell
-PS>./introduce-powershell
+PS> ./introduce-powershell
+
 ```
 
 ## Notes

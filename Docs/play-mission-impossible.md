@@ -13,7 +13,8 @@ play-mission-impossible.ps1 [<CommonParameters>]
 
 ## Example
 ```powershell
-PS>./play-mission-impossible
+PS> ./play-mission-impossible
+
 ```
 
 ## Notes

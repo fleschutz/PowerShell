@@ -13,7 +13,8 @@ upgrade-ubuntu.ps1 [<CommonParameters>]
 
 ## Example
 ```powershell
-PS>.\upgrade-ubuntu.ps1
+PS> .\upgrade-ubuntu.ps1
+
 ```
 
 ## Notes

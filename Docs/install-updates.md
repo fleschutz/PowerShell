@@ -13,7 +13,8 @@ install-updates.ps1 [<CommonParameters>]
 
 ## Example
 ```powershell
-PS>./install-updates
+PS> ./install-updates
+
 ```
 
 ## Notes

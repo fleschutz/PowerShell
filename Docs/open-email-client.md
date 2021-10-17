@@ -13,7 +13,8 @@ open-email-client.ps1 [<CommonParameters>]
 
 ## Example
 ```powershell
-PS>./open-email-client
+PS> ./open-email-client
+
 ```
 
 ## Notes

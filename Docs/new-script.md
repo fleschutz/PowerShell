@@ -22,8 +22,9 @@ new-script.ps1 [[-filename] <String>] [<CommonParameters>]
 
 ## Example
 ```powershell
-PS>./new-script myscript.ps1
+PS> ./new-script myscript.ps1
 ✔️ created new PowerShell script: myscript.ps1
+
 ```
 
 ## Notes

@@ -22,7 +22,8 @@ build-repos.ps1 [[-ParentDir] <String>] [<CommonParameters>]
 
 ## Example
 ```powershell
-PS>./build-repos C:\MyRepos
+PS> ./build-repos C:\MyRepos
+
 ```
 
 ## Notes

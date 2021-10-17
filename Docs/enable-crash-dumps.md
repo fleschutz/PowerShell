@@ -13,7 +13,8 @@ enable-crash-dumps.ps1 [<CommonParameters>]
 
 ## Example
 ```powershell
-PS>./enable-crash-dumps
+PS> ./enable-crash-dumps
+
 ```
 
 ## Notes

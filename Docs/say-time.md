@@ -13,7 +13,8 @@ say-time.ps1 [<CommonParameters>]
 
 ## Example
 ```powershell
-PS>./say-time
+PS> ./say-time
+
 ```
 
 ## Notes

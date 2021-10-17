@@ -22,7 +22,8 @@ set-timer.ps1 [[-Seconds] <Int32>] [<CommonParameters>]
 
 ## Example
 ```powershell
-PS>./set-timer 60
+PS> ./set-timer 60
+
 ```
 
 ## Notes

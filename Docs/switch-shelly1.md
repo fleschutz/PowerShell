@@ -40,7 +40,8 @@ switch-shelly1.ps1 [[-Host] <String>] [[-TurnMode] <String>] [[-Timer] <Int32>] 
 
 ## Example
 ```powershell
-PS>./switch-shelly1 192.168.100.100 toggle 10
+PS> ./switch-shelly1 192.168.100.100 toggle 10
+
 ```
 
 ## Notes

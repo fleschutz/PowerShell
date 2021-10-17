@@ -22,7 +22,8 @@ play-m3u.ps1 [[-filename] <String>] [<CommonParameters>]
 
 ## Example
 ```powershell
-PS>./play-m3u C:\MyPlaylist.m3u
+PS> ./play-m3u C:\MyPlaylist.m3u
+
 ```
 
 ## Notes

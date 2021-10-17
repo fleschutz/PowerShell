@@ -13,7 +13,8 @@ list-emojis.ps1 [<CommonParameters>]
 
 ## Example
 ```powershell
-PS>./list-emojis
+PS> ./list-emojis
+
 ```
 
 ## Notes

@@ -13,7 +13,8 @@ remove-print-jobs.ps1 [<CommonParameters>]
 
 ## Example
 ```powershell
-PS>./remove-print-jobs
+PS> ./remove-print-jobs
+
 ```
 
 ## Notes

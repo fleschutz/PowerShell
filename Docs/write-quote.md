@@ -13,7 +13,8 @@ write-quote.ps1 [<CommonParameters>]
 
 ## Example
 ```powershell
-PS>./write-quote
+PS> ./write-quote
+
 ```
 
 ## Notes

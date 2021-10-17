@@ -22,7 +22,8 @@ display-time.ps1 [[-Seconds] <Int32>] [<CommonParameters>]
 
 ## Example
 ```powershell
-PS>./display-time
+PS> ./display-time
+
 ```
 
 ## Notes

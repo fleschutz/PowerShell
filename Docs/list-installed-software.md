@@ -13,7 +13,8 @@ list-installed-software.ps1 [<CommonParameters>]
 
 ## Example
 ```powershell
-PS>./list-installed-software
+PS> ./list-installed-software
+
 ```
 
 ## Notes

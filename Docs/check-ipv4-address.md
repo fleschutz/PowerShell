@@ -22,8 +22,9 @@ check-ipv4-address.ps1 [[-Address] <String>] [<CommonParameters>]
 
 ## Example
 ```powershell
-PS>./check-ipv4-address 192.168.11.22
+PS> ./check-ipv4-address 192.168.11.22
 ✔️ IPv4 192.168.11.22 is valid
+
 ```
 
 ## Notes

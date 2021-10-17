@@ -13,7 +13,8 @@ install-knot-resolver.ps1 [<CommonParameters>]
 
 ## Example
 ```powershell
-PS>./install-knot-resolver
+PS> ./install-knot-resolver
+
 ```
 
 ## Notes

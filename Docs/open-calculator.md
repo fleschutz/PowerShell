@@ -13,7 +13,8 @@ open-calculator.ps1 [<CommonParameters>]
 
 ## Example
 ```powershell
-PS>./open-calculator
+PS> ./open-calculator
+
 ```
 
 ## Notes

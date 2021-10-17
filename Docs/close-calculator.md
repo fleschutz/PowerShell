@@ -13,7 +13,8 @@ close-calculator.ps1 [<CommonParameters>]
 
 ## Example
 ```powershell
-PS>./close-calculator
+PS> ./close-calculator
+
 ```
 
 ## Notes

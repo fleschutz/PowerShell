@@ -13,7 +13,8 @@ play-beep.ps1 [<CommonParameters>]
 
 ## Example
 ```powershell
-PS>./play-beep
+PS> ./play-beep
+
 ```
 
 ## Notes

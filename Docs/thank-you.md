@@ -13,7 +13,8 @@ thank-you.ps1 [<CommonParameters>]
 
 ## Example
 ```powershell
-PS>./thank-you
+PS> ./thank-you
+
 ```
 
 ## Notes

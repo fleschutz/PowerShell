@@ -31,7 +31,8 @@ write-morse-code.ps1 [[-text] <String>] [[-speed] <Int32>] [<CommonParameters>]
 
 ## Example
 ```powershell
-PS>./write-morse-code "Hello World"
+PS> ./write-morse-code "Hello World"
+
 ```
 
 ## Notes

@@ -22,7 +22,8 @@ speak-file.ps1 [[-File] <String>] [<CommonParameters>]
 
 ## Example
 ```powershell
-PS>./speak-file C:\MyFile.txt
+PS> ./speak-file C:\MyFile.txt
+
 ```
 
 ## Notes

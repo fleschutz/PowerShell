@@ -13,7 +13,8 @@ open-onedrive.ps1 [<CommonParameters>]
 
 ## Example
 ```powershell
-PS>./open-onedrive
+PS> ./open-onedrive
+
 ```
 
 ## Notes

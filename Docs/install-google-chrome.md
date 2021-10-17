@@ -13,7 +13,8 @@ install-google-chrome.ps1 [<CommonParameters>]
 
 ## Example
 ```powershell
-PS>./install-google-chrome
+PS> ./install-google-chrome
+
 ```
 
 ## Notes

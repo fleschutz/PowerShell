@@ -40,7 +40,8 @@ list-pins.ps1 [[-PinLength] <Int32>] [[-Columns] <Int32>] [[-Rows] <Int32>] [<Co
 
 ## Example
 ```powershell
-PS>./list-pins
+PS> ./list-pins
+
 ```
 
 ## Notes

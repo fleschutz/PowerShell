@@ -22,7 +22,8 @@ remove-empty-dirs.ps1 [[-DirTree] <String>] [<CommonParameters>]
 
 ## Example
 ```powershell
-PS>./remove-empty-dirs C:\Temp
+PS> ./remove-empty-dirs C:\Temp
+
 ```
 
 ## Notes

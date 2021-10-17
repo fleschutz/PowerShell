@@ -13,7 +13,8 @@ write-motd.ps1 [<CommonParameters>]
 
 ## Example
 ```powershell
-PS>./write-motd
+PS> ./write-motd
+
 ```
 
 ## Notes

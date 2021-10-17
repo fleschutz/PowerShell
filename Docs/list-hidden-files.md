@@ -22,7 +22,8 @@ list-hidden-files.ps1 [[-DirTree] <String>] [<CommonParameters>]
 
 ## Example
 ```powershell
-PS>./list-hidden-files C:\
+PS> ./list-hidden-files C:\
+
 ```
 
 ## Notes

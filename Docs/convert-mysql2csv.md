@@ -58,7 +58,8 @@ convert-mysql2csv.ps1 [[-server] <String>] [[-database] <String>] [[-username] <
 
 ## Example
 ```powershell
-PS>./convert-mysql2csv
+PS> ./convert-mysql2csv
+
 ```
 
 ## Notes

@@ -22,8 +22,9 @@ add-memo.ps1 [[-text] <String>] [<CommonParameters>]
 
 ## Example
 ```powershell
-PS>./add-memo "Buy apples"
+PS> ./add-memo "Buy apples"
 ✔️ added to 📄/home/markus/Memos.csv
+
 ```
 
 ## Notes

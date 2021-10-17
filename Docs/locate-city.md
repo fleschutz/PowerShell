@@ -22,7 +22,8 @@ locate-city.ps1 [[-City] <String>] [<CommonParameters>]
 
 ## Example
 ```powershell
-PS>./locate-city Paris
+PS> ./locate-city Paris
+
 ```
 
 ## Notes

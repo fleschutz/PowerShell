@@ -13,8 +13,9 @@ write-joke.ps1 [<CommonParameters>]
 
 ## Example
 ```powershell
-PS>./write-joke
+PS> ./write-joke
 When Chuck Norris does division, there are no remainders. 😂
+
 ```
 
 ## Notes

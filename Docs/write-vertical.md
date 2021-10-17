@@ -22,7 +22,8 @@ write-vertical.ps1 [[-text] <String>] [<CommonParameters>]
 
 ## Example
 ```powershell
-PS>./write-vertical "Hello World"
+PS> ./write-vertical "Hello World"
+
 ```
 
 ## Notes

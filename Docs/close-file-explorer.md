@@ -13,7 +13,8 @@ close-file-explorer.ps1 [<CommonParameters>]
 
 ## Example
 ```powershell
-PS>./close-file-explorer
+PS> ./close-file-explorer
+
 ```
 
 ## Notes

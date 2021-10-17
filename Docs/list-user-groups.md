@@ -13,7 +13,7 @@ list-user-groups.ps1 [<CommonParameters>]
 
 ## Example
 ```powershell
-PS>./list-user-groups
+PS> ./list-user-groups
 
 
 
@@ -22,6 +22,7 @@ Name            Description
 HomeUsers       HomeUsers Security Group
 Ssh Users       Members of this group can remotely access this computer over SSH protocol.
 ...
+
 ```
 
 ## Notes

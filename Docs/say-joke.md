@@ -13,8 +13,9 @@ say-joke.ps1 [<CommonParameters>]
 
 ## Example
 ```powershell
-PS>./say-joke
+PS> ./say-joke
 (listen and have fun)
+
 ```
 
 ## Notes

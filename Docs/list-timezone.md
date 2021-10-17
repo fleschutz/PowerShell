@@ -13,7 +13,7 @@ list-timezone.ps1 [<CommonParameters>]
 
 ## Example
 ```powershell
-PS>./list-timezone
+PS> ./list-timezone
 
 
 
@@ -23,6 +23,7 @@ StandardName               : Central European Standard Time
 DaylightName               : Central European Summer Time
 BaseUtcOffset              : 01:00:00
 SupportsDaylightSavingTime : True
+
 ```
 
 ## Notes

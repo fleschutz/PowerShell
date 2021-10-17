@@ -13,7 +13,7 @@ list-timezones.ps1 [<CommonParameters>]
 
 ## Example
 ```powershell
-PS>./list-timezones
+PS> ./list-timezones
 
 
 
@@ -23,6 +23,7 @@ Id                              DisplayName                            SupportsD
 Hawaiian Standard Time          (UTC-10:00) Hawaii                     False
 Alaskan Standard Time           (UTC-09:00) Alaska                     True
 ...
+
 ```
 
 ## Notes

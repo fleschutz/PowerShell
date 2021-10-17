@@ -22,7 +22,8 @@ convert-ps2md.ps1 [[-filename] <String>] [<CommonParameters>]
 
 ## Example
 ```powershell
-PS>./convert-ps2md myscript.ps1
+PS> ./convert-ps2md myscript.ps1
+
 ```
 
 ## Notes

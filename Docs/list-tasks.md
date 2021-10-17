@@ -13,7 +13,7 @@ list-tasks.ps1 [<CommonParameters>]
 
 ## Example
 ```powershell
-PS>./list-tasks
+PS> ./list-tasks
 
 
 
@@ -22,6 +22,7 @@ TaskPath                                       TaskName                         
 \Microsoft\Windows\.NET Framework\             .NET Framework NGEN v4.0.30319    Ready
 \Microsoft\Windows\.NET Framework\             .NET Framework NGEN v4.0.30319 64 Ready
 ...
+
 ```
 
 ## Notes

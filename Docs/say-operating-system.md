@@ -13,8 +13,9 @@ say-operating-system.ps1 [<CommonParameters>]
 
 ## Example
 ```powershell
-PS>./say-operating-system
+PS> ./say-operating-system
 (listen)
+
 ```
 
 ## Notes

@@ -22,7 +22,8 @@ speak-italian.ps1 [[-text] <String>] [<CommonParameters>]
 
 ## Example
 ```powershell
-PS>./speak-italian Ciao
+PS> ./speak-italian Ciao
+
 ```
 
 ## Notes

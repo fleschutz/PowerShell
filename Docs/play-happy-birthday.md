@@ -13,8 +13,9 @@ play-happy-birthday.ps1 [<CommonParameters>]
 
 ## Example
 ```powershell
-PS>./play-happy-birthday
+PS> ./play-happy-birthday
 (listen and enjoy)
+
 ```
 
 ## Notes

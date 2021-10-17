@@ -22,8 +22,9 @@ check-xml-file.ps1 [[-file] <String>] [<CommonParameters>]
 
 ## Example
 ```powershell
-PS>./check-xml-file myfile.xml
+PS> ./check-xml-file myfile.xml
 ✔️ XML file is valid
+
 ```
 
 ## Notes

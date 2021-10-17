@@ -13,8 +13,9 @@ cd-scripts.ps1 [<CommonParameters>]
 
 ## Example
 ```powershell
-PS>./cd-scripts
+PS> ./cd-scripts
 📂/home/markus/PowerShell/Scripts
+
 ```
 
 ## Notes

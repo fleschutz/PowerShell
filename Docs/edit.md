@@ -22,7 +22,8 @@ edit.ps1 [[-Filename] <String>] [<CommonParameters>]
 
 ## Example
 ```powershell
-PS>./edit C:\MyFile.txt
+PS> ./edit C:\MyFile.txt
+
 ```
 
 ## Notes

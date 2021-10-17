@@ -23,7 +23,8 @@ smart-data2csv.ps1 [[-Directory] <String>] [<CommonParameters>]
 
 ## Example
 ```powershell
-PS>./smart-data2csv
+PS> ./smart-data2csv
+
 ```
 
 ## Notes

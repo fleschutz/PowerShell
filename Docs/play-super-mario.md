@@ -13,7 +13,8 @@ play-super-mario.ps1 [<CommonParameters>]
 
 ## Example
 ```powershell
-PS>./play-super-mario
+PS> ./play-super-mario
+
 ```
 
 ## Notes

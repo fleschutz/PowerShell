@@ -22,7 +22,8 @@ speak-checklist.ps1 [[-Name] <String>] [<CommonParameters>]
 
 ## Example
 ```powershell
-PS>./speak-checklist
+PS> ./speak-checklist
+
 ```
 
 ## Notes

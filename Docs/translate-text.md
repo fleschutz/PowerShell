@@ -40,7 +40,8 @@ translate-text.ps1 [[-Text] <String>] [[-SourceLang] <String>] [[-TargetLang] <S
 
 ## Example
 ```powershell
-PS>./translate-text "Hello World" de en
+PS> ./translate-text "Hello World" de en
+
 ```
 
 ## Notes

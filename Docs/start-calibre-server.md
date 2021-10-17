@@ -22,7 +22,8 @@ start-calibre-server.ps1 [[-port] <Int32>] [<CommonParameters>]
 
 ## Example
 ```powershell
-PS>./start-calibre-server
+PS> ./start-calibre-server
+
 ```
 
 ## Notes

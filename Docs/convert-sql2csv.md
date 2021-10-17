@@ -58,7 +58,8 @@ convert-sql2csv.ps1 [[-server] <String>] [[-database] <String>] [[-username] <St
 
 ## Example
 ```powershell
-PS>./convert-sql2csv
+PS> ./convert-sql2csv
+
 ```
 
 ## Notes

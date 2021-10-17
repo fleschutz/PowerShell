@@ -13,7 +13,8 @@ voice-control.ps1 [<CommonParameters>]
 
 ## Example
 ```powershell
-PS>.\voice-control.ps1
+PS> .\voice-control.ps1
+
 ```
 
 ## Notes

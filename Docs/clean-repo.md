@@ -22,9 +22,10 @@ clean-repo.ps1 [[-RepoDir] <String>] [<CommonParameters>]
 
 ## Example
 ```powershell
-PS>./clean-repo C:\MyRepo
+PS> ./clean-repo C:\MyRepo
 🧹 Cleaning from untracked files...
 ✔️ cleaned Git repository 📂C:\MyRepo in 0 sec
+
 ```
 
 ## Notes

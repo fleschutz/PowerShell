@@ -22,7 +22,8 @@ weather-report.ps1 [[-GeoLocation] <String>] [<CommonParameters>]
 
 ## Example
 ```powershell
-PS>./weather-report Paris
+PS> ./weather-report Paris
+
 ```
 
 ## Notes

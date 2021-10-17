@@ -31,7 +31,8 @@ locate-zip-code.ps1 [[-CountryCode] <String>] [[-ZipCode] <String>] [<CommonPara
 
 ## Example
 ```powershell
-PS>./locate-zip-code
+PS> ./locate-zip-code
+
 ```
 
 ## Notes

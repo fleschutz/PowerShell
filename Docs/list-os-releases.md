@@ -13,7 +13,8 @@ list-os-releases.ps1 [<CommonParameters>]
 
 ## Example
 ```powershell
-PS>./list-os-releases
+PS> ./list-os-releases
+
 ```
 
 ## Notes

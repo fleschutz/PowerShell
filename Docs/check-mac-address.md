@@ -23,8 +23,9 @@ check-mac-address.ps1 [[-MAC] <String>] [<CommonParameters>]
 
 ## Example
 ```powershell
-PS>./check-mac-address 11:22:33:44:55:66
+PS> ./check-mac-address 11:22:33:44:55:66
 ✔️ MAC address 11:22:33:44:55:66 is valid
+
 ```
 
 ## Notes

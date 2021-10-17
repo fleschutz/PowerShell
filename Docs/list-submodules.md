@@ -22,7 +22,8 @@ list-submodules.ps1 [[-RepoDir] <String>] [<CommonParameters>]
 
 ## Example
 ```powershell
-PS>./list-submodules C:\MyRepo
+PS> ./list-submodules C:\MyRepo
+
 ```
 
 ## Notes

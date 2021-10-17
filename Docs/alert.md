@@ -22,7 +22,8 @@ alert.ps1 [[-Message] <String>] [<CommonParameters>]
 
 ## Example
 ```powershell
-PS>./alert "Harddisk failure"
+PS> ./alert "Harddisk failure"
+
 ```
 
 ## Notes

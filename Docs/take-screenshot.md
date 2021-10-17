@@ -22,7 +22,8 @@ take-screenshot.ps1 [[-Directory] <String>] [<CommonParameters>]
 
 ## Example
 ```powershell
-PS>./take-screenshot C:\Temp
+PS> ./take-screenshot C:\Temp
+
 ```
 
 ## Notes

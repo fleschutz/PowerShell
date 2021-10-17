@@ -13,7 +13,8 @@ close-thunderbird.ps1 [<CommonParameters>]
 
 ## Example
 ```powershell
-PS>./close-thunderbird
+PS> ./close-thunderbird
+
 ```
 
 ## Notes

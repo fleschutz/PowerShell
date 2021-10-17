@@ -31,7 +31,8 @@ reboot-fritzbox.ps1 [[-Username] <String>] [[-Password] <String>] [<CommonParame
 
 ## Example
 ```powershell
-PS>./reboot-fritzbox
+PS> ./reboot-fritzbox
+
 ```
 
 ## Notes

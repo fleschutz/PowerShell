@@ -32,7 +32,8 @@ search-filename.ps1 [-path] <Object> [-term] <Object> [<CommonParameters>]
 
 ## Example
 ```powershell
-PS>./search-filename
+PS> ./search-filename
+
 ```
 
 ## Notes

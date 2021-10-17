@@ -31,7 +31,8 @@ take-screenshots.ps1 [[-TargetDir] <String>] [[-Interval] <Int32>] [<CommonParam
 
 ## Example
 ```powershell
-PS>./take-screenshots C:\Temp 60
+PS> ./take-screenshots C:\Temp 60
+
 ```
 
 ## Notes

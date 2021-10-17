@@ -22,7 +22,8 @@ check-weather.ps1 [[-location] <String>] [<CommonParameters>]
 
 ## Example
 ```powershell
-PS>./check-weather
+PS> ./check-weather
+
 ```
 
 ## Notes

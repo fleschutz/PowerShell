@@ -13,7 +13,8 @@ list-cheat-sheet.ps1 [<CommonParameters>]
 
 ## Example
 ```powershell
-PS>./list-cheat-sheet
+PS> ./list-cheat-sheet
+
 ```
 
 ## Notes

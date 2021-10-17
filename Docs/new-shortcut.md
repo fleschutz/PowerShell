@@ -40,7 +40,8 @@ new-shortcut.ps1 [[-shortcut] <String>] [[-target] <String>] [[-description] <St
 
 ## Example
 ```powershell
-PS>./new-shortcut C:\Temp\HDD C:\
+PS> ./new-shortcut C:\Temp\HDD C:\
+
 ```
 
 ## Notes

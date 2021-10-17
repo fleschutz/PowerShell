@@ -40,7 +40,8 @@ remove-tag.ps1 [[-TagName] <String>] [[-Mode] <String>] [[-RepoDir] <String>] [<
 
 ## Example
 ```powershell
-PS>./remove-tag v1.7 locally
+PS> ./remove-tag v1.7 locally
+
 ```
 
 ## Notes

@@ -22,8 +22,9 @@ check-subnet-mask.ps1 [[-address] <String>] [<CommonParameters>]
 
 ## Example
 ```powershell
-PS>./check-subnet-mask 255.255.255.0
+PS> ./check-subnet-mask 255.255.255.0
 ✔️ subnet mask 255.255.255.0 is valid
+
 ```
 
 ## Notes

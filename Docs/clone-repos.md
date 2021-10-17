@@ -22,7 +22,8 @@ clone-repos.ps1 [[-folder] <String>] [<CommonParameters>]
 
 ## Example
 ```powershell
-PS>./clone-repos C:\Users\Markus\Repos
+PS> ./clone-repos C:\Users\Markus\Repos
+
 ```
 
 ## Notes

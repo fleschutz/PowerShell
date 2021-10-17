@@ -22,7 +22,8 @@ convert-ps2bat.ps1 [[-Filepattern] <String>] [<CommonParameters>]
 
 ## Example
 ```powershell
-PS>./convert-ps2bat *.ps1
+PS> ./convert-ps2bat *.ps1
+
 ```
 
 ## Notes

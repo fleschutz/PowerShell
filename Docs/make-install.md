@@ -13,7 +13,8 @@ make-install.ps1 [<CommonParameters>]
 
 ## Example
 ```powershell
-PS>./make-install
+PS> ./make-install
+
 ```
 
 ## Notes

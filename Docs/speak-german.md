@@ -22,7 +22,8 @@ speak-german.ps1 [[-text] <String>] [<CommonParameters>]
 
 ## Example
 ```powershell
-PS>./speak-german Hallo
+PS> ./speak-german Hallo
+
 ```
 
 ## Notes

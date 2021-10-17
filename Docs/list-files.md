@@ -22,7 +22,8 @@ list-files.ps1 [[-DirTree] <String>] [<CommonParameters>]
 
 ## Example
 ```powershell
-PS>./list-files C:\
+PS> ./list-files C:\
+
 ```
 
 ## Notes

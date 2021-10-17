@@ -13,8 +13,9 @@ cd-videos.ps1 [<CommonParameters>]
 
 ## Example
 ```powershell
-PS>./cd-videos
+PS> ./cd-videos
 📂/home/markus/Videos
+
 ```
 
 ## Notes

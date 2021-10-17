@@ -22,7 +22,7 @@ list-repos.ps1 [[-ParentDir] <String>] [<CommonParameters>]
 
 ## Example
 ```powershell
-PS>./list-repos C:\MyRepos
+PS> ./list-repos C:\MyRepos
 
 
 
@@ -31,6 +31,7 @@ Repository  Branch Status
 cmake       main   clean
 opencv      master clean
 ...
+
 ```
 
 ## Notes

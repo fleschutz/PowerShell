@@ -22,7 +22,8 @@ write-big.ps1 [[-text] <String>] [<CommonParameters>]
 
 ## Example
 ```powershell
-PS>./write-big "Hello World"
+PS> ./write-big "Hello World"
+
 ```
 
 ## Notes

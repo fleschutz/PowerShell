@@ -13,7 +13,8 @@ mute-audio.ps1 [<CommonParameters>]
 
 ## Example
 ```powershell
-PS>./mute-audio
+PS> ./mute-audio
+
 ```
 
 ## Notes

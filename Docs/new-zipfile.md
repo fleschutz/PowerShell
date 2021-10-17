@@ -22,7 +22,8 @@ new-zipfile.ps1 [[-folder] <String>] [<CommonParameters>]
 
 ## Example
 ```powershell
-PS>./new-zipfile C:\Windows
+PS> ./new-zipfile C:\Windows
+
 ```
 
 ## Notes

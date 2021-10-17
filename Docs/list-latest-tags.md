@@ -22,7 +22,8 @@ list-latest-tags.ps1 [[-ParentDir] <String>] [<CommonParameters>]
 
 ## Example
 ```powershell
-PS>./list-latest-tags C:\MyRepos
+PS> ./list-latest-tags C:\MyRepos
+
 ```
 
 ## Notes

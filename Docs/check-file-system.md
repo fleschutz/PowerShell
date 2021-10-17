@@ -22,8 +22,9 @@ check-file-system.ps1 [[-Drive] <String>] [<CommonParameters>]
 
 ## Example
 ```powershell
-PS>./check-file-system C
+PS> ./check-file-system C
 ✔️ file system on drive C is clean
+
 ```
 
 ## Notes

@@ -13,7 +13,7 @@ list-voices.ps1 [<CommonParameters>]
 
 ## Example
 ```powershell
-PS>./list-voices
+PS> ./list-voices
 
 
 
@@ -21,6 +21,7 @@ Name                    Culture Gender   Age
 ----                    ------- ------   ---
 Microsoft David Desktop en-US     Male Adult
 Microsoft Zira Desktop  en-US   Female Adult
+
 ```
 
 ## Notes

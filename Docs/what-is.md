@@ -22,7 +22,8 @@ what-is.ps1 [[-abbreviation] <String>] [<CommonParameters>]
 
 ## Example
 ```powershell
-PS>./what-is CIA
+PS> ./what-is CIA
+
 ```
 
 ## Notes

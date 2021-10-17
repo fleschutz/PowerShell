@@ -22,7 +22,8 @@ write-rot13.ps1 [[-text] <String>] [<CommonParameters>]
 
 ## Example
 ```powershell
-PS>./write-rot13 "Hello World"
+PS> ./write-rot13 "Hello World"
+
 ```
 
 ## Notes

@@ -13,7 +13,7 @@ list-aliases.ps1 [<CommonParameters>]
 
 ## Example
 ```powershell
-PS>./list-aliases
+PS> ./list-aliases
 
 
 
@@ -22,6 +22,7 @@ CommandType     Name                                               Version    So
 Alias           CFS -> ConvertFrom-String                          3.1.0.0    Microsoft.PowerShell.Utility
 Alias           fhx -> Format-Hex                                  3.1.0.0    Microsoft.PowerShell.Utility
 ...
+
 ```
 
 ## Notes

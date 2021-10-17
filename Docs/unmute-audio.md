@@ -13,7 +13,8 @@ unmute-audio.ps1 [<CommonParameters>]
 
 ## Example
 ```powershell
-PS>.\unmute-audio.ps1
+PS> .\unmute-audio.ps1
+
 ```
 
 ## Notes

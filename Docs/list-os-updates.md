@@ -31,7 +31,8 @@ list-os-updates.ps1 [[-RSS_URL] <String>] [[-MaxCount] <Int32>] [<CommonParamete
 
 ## Example
 ```powershell
-PS>./list-os-updates
+PS> ./list-os-updates
+
 ```
 
 ## Notes

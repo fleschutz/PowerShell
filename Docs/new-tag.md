@@ -31,7 +31,8 @@ new-tag.ps1 [[-TagName] <String>] [[-RepoDir] <String>] [<CommonParameters>]
 
 ## Example
 ```powershell
-PS>./create-tag v1.7
+PS> ./create-tag v1.7
+
 ```
 
 ## Notes

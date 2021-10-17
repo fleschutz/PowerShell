@@ -22,7 +22,8 @@ play-files.ps1 [[-FilePattern] <String>] [<CommonParameters>]
 
 ## Example
 ```powershell
-PS>./play-files *.mp3
+PS> ./play-files *.mp3
+
 ```
 
 ## Notes

@@ -13,7 +13,8 @@ close-system-settings.ps1 [<CommonParameters>]
 
 ## Example
 ```powershell
-PS>./close-system-settings
+PS> ./close-system-settings
+
 ```
 
 ## Notes

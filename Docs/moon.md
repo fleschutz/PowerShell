@@ -13,7 +13,8 @@ moon.ps1 [<CommonParameters>]
 
 ## Example
 ```powershell
-PS>./moon
+PS> ./moon
+
 ```
 
 ## Notes

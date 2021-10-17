@@ -22,7 +22,8 @@ speak-french.ps1 [[-text] <String>] [<CommonParameters>]
 
 ## Example
 ```powershell
-PS>./speak-french Salut
+PS> ./speak-french Salut
+
 ```
 
 ## Notes

@@ -13,8 +13,9 @@ say-quote.ps1 [<CommonParameters>]
 
 ## Example
 ```powershell
-PS>./say-quote
+PS> ./say-quote
 (listen and learn)
+
 ```
 
 ## Notes

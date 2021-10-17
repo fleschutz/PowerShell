@@ -13,7 +13,8 @@ list-city-weather.ps1 [<CommonParameters>]
 
 ## Example
 ```powershell
-PS>./list-city-weather
+PS> ./list-city-weather
+
 ```
 
 ## Notes

@@ -40,7 +40,8 @@ configure-git.ps1 [[-FullName] <String>] [[-EmailAddress] <String>] [[-FavoriteE
 
 ## Example
 ```powershell
-PS>./configure-git
+PS> ./configure-git
+
 ```
 
 ## Notes

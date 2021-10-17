@@ -13,8 +13,9 @@ cd-repos.ps1 [<CommonParameters>]
 
 ## Example
 ```powershell
-PS>./cd-repos
+PS> ./cd-repos
 📂/home/markus/Repos
+
 ```
 
 ## Notes

@@ -13,8 +13,9 @@ cd-up2.ps1 [<CommonParameters>]
 
 ## Example
 ```powershell
-PS>./cd-up2
+PS> ./cd-up2
 (two levels up)
+
 ```
 
 ## Notes

@@ -13,7 +13,8 @@ list-credits.ps1 [<CommonParameters>]
 
 ## Example
 ```powershell
-PS>./list-credits
+PS> ./list-credits
+
 ```
 
 ## Notes

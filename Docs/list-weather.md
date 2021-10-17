@@ -22,7 +22,8 @@ list-weather.ps1 [[-Location] <String>] [<CommonParameters>]
 
 ## Example
 ```powershell
-PS>./list-weather
+PS> ./list-weather
+
 ```
 
 ## Notes

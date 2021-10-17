@@ -31,7 +31,8 @@ list-fritzbox-devices.ps1 [[-Username] <String>] [[-Password] <String>] [<Common
 
 ## Example
 ```powershell
-PS>./list-fritzbox-devices
+PS> ./list-fritzbox-devices
+
 ```
 
 ## Notes

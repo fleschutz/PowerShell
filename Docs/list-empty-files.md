@@ -22,7 +22,8 @@ list-empty-files.ps1 [[-DirTree] <String>] [<CommonParameters>]
 
 ## Example
 ```powershell
-PS>./list-empty-files C:\
+PS> ./list-empty-files C:\
+
 ```
 
 ## Notes

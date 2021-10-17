@@ -13,7 +13,8 @@ play-tetris-melody.ps1 [<CommonParameters>]
 
 ## Example
 ```powershell
-PS>./play-tetris-melody
+PS> ./play-tetris-melody
+
 ```
 
 ## Notes

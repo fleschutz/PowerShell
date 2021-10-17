@@ -13,7 +13,8 @@ close-chrome.ps1 [<CommonParameters>]
 
 ## Example
 ```powershell
-PS>./close-chrome
+PS> ./close-chrome
+
 ```
 
 ## Notes

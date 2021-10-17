@@ -40,7 +40,8 @@ publish-to-ipfs.ps1 [[-FilePattern] <String>] [[-HashList] <String>] [[-DF_Hashe
 
 ## Example
 ```powershell
-PS>./publish-to-ipfs C:\MyFile.txt
+PS> ./publish-to-ipfs C:\MyFile.txt
+
 ```
 
 ## Notes

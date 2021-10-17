@@ -5,8 +5,8 @@
 	This script exports the comment based help of all PowerShell scripts as manuals.
 .EXAMPLE
 	PS> ./export-to-manuals.ps1
-	Found 264 scripts, exporting to /home/markus/PowerShell/Docs...
-	✔️ exported 264 scripts as manuals in 28 sec
+	Exporting 264 PowerShell scripts to /home/markus/PowerShell/Docs...
+	✔️ exported 264 PowerShell scripts in 28 sec
 .NOTES
 	Author: Markus Fleschutz · License: CC0
 .LINK
@@ -21,14 +21,14 @@ try {
 	$StopWatch = [system.diagnostics.stopwatch]::startNew()
 
 	$Scripts = Get-ChildItem "$FilePattern"
-	"⏳ Exporting $($Scripts.Count) scripts to $TargetDir..."
+	"⏳ Exporting $($Scripts.Count) PowerShell scripts to $TargetDir..."
 
 	foreach ($Script in $Scripts) {
 		& "$PSScriptRoot/convert-ps2md" "$Script" > "$TargetDir/$($Script.BaseName).md"
 	}
 
 	[int]$Elapsed = $StopWatch.Elapsed.TotalSeconds
-	"✔️ exported $($Scripts.Count) scripts as manuals in $Elapsed sec"
+	"✔️ exported $($Scripts.Count) PowerShell scripts in $Elapsed sec"
 	exit 0 # success
 } catch {
 	write-error "⚠️ Error in line $($_.InvocationInfo.ScriptLineNumber): $($Error[0])"

@@ -13,7 +13,7 @@ list-services.ps1 [<CommonParameters>]
 
 ## Example
 ```powershell
-PS>./list-services
+PS> ./list-services
 
 
 
@@ -22,6 +22,7 @@ Status   Name               DisplayName
 Running  AarSvc_886c2       Agent Activation Runtime_886c2
 Running  Apple Mobile De... Apple Mobile Device Service
 ...
+
 ```
 
 ## Notes

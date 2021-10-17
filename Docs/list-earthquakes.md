@@ -13,7 +13,8 @@ list-earthquakes.ps1 [<CommonParameters>]
 
 ## Example
 ```powershell
-PS>./list-earthquakes
+PS> ./list-earthquakes
+
 ```
 
 ## Notes

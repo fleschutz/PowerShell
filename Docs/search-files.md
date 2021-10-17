@@ -31,7 +31,8 @@ search-files.ps1 [[-pattern] <String>] [[-files] <String>] [<CommonParameters>]
 
 ## Example
 ```powershell
-PS>./search-files UFO C:\Temp\*.txt
+PS> ./search-files UFO C:\Temp\*.txt
+
 ```
 
 ## Notes

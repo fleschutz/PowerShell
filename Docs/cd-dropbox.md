@@ -13,8 +13,9 @@ cd-dropbox.ps1 [<CommonParameters>]
 
 ## Example
 ```powershell
-PS>./cd-dropbox
+PS> ./cd-dropbox
 📂/home/markus/Dropbox
+
 ```
 
 ## Notes

@@ -22,7 +22,8 @@ open-browser.ps1 [[-URL] <String>] [<CommonParameters>]
 
 ## Example
 ```powershell
-PS>./open-browser
+PS> ./open-browser
+
 ```
 
 ## Notes

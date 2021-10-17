@@ -13,8 +13,9 @@ check-cpu-temp.ps1 [<CommonParameters>]
 
 ## Example
 ```powershell
-PS>./check-cpu-temp
+PS> ./check-cpu-temp
 ✔️ 30.3 °C CPU temperature - good
+
 ```
 
 ## Notes

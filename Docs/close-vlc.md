@@ -13,7 +13,8 @@ close-vlc.ps1 [<CommonParameters>]
 
 ## Example
 ```powershell
-PS>./close-vlc
+PS> ./close-vlc
+
 ```
 
 ## Notes

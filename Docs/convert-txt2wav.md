@@ -31,7 +31,8 @@ convert-txt2wav.ps1 [[-Text] <String>] [[-WavFile] <String>] [<CommonParameters>
 
 ## Example
 ```powershell
-PS>./convert-txt2wav "Hello World" spoken.wav
+PS> ./convert-txt2wav "Hello World" spoken.wav
+
 ```
 
 ## Notes

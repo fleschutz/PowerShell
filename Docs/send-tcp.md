@@ -40,7 +40,8 @@ send-tcp.ps1 [[-TargetIP] <String>] [[-TargetPort] <Int32>] [[-Message] <String>
 
 ## Example
 ```powershell
-PS>./send-tcp 192.168.100.100 8080 "TEST"
+PS> ./send-tcp 192.168.100.100 8080 "TEST"
+
 ```
 
 ## Notes

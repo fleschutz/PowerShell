@@ -22,7 +22,8 @@ list-exchange-rates.ps1 [[-currency] <String>] [<CommonParameters>]
 
 ## Example
 ```powershell
-PS>./list-exchange-rates EUR
+PS> ./list-exchange-rates EUR
+
 ```
 
 ## Notes

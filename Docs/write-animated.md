@@ -93,7 +93,8 @@ write-animated.ps1 [[-Line1] <Object>] [[-Line2] <Object>] [[-Line3] <Object>] [
 
 ## Example
 ```powershell
-PS>./write-animated "Hello World"
+PS> ./write-animated "Hello World"
+
 ```
 
 ## Notes

@@ -13,8 +13,9 @@ play-imperial-march.ps1 [<CommonParameters>]
 
 ## Example
 ```powershell
-PS>./play-imperial-march
+PS> ./play-imperial-march
 (listen and enjoy)
+
 ```
 
 ## Notes

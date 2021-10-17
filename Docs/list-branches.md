@@ -31,7 +31,8 @@ list-branches.ps1 [[-RepoDir] <String>] [[-SearchPattern] <String>] [<CommonPara
 
 ## Example
 ```powershell
-PS>./list-branches
+PS> ./list-branches
+
 ```
 
 ## Notes

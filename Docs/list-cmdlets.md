@@ -13,7 +13,7 @@ list-cmdlets.ps1 [<CommonParameters>]
 
 ## Example
 ```powershell
-PS>./list-cmdlets
+PS> ./list-cmdlets
 
 
 
@@ -22,6 +22,7 @@ CommandType     Name                                  Version    Source
 Function        Add-BCDataCacheExtension              1.0.0.0    BranchCache
 Function        Add-BitLockerKeyProtector             1.0.0.0    BitLocker
 ...
+
 ```
 
 ## Notes

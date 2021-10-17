@@ -45,7 +45,8 @@ list-mysql-tables.ps1 [-server] <Object> [-database] <Object> [-dbuser] <Object>
 
 ## Example
 ```powershell
-PS>./list-mysql-tables
+PS> ./list-mysql-tables
+
 ```
 
 ## Notes

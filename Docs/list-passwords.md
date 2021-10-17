@@ -40,7 +40,8 @@ list-passwords.ps1 [[-PasswordLength] <Int32>] [[-Columns] <Int32>] [[-Rows] <In
 
 ## Example
 ```powershell
-PS>./list-passwords
+PS> ./list-passwords
+
 ```
 
 ## Notes

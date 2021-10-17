@@ -11,6 +11,7 @@
 	Specifies the message text to send
 .EXAMPLE
 	PS> ./send-udp 192.168.100.100 8080 "TEST"
+	✔️  Done.
 .NOTES
 	Author: Markus Fleschutz · License: CC0
 .LINK

@@ -13,7 +13,8 @@ close-cortana.ps1 [<CommonParameters>]
 
 ## Example
 ```powershell
-PS>./close-cortana
+PS> ./close-cortana
+
 ```
 
 ## Notes

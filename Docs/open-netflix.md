@@ -13,7 +13,8 @@ open-netflix.ps1 [<CommonParameters>]
 
 ## Example
 ```powershell
-PS>./open-netflix
+PS> ./open-netflix
+
 ```
 
 ## Notes

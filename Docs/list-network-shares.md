@@ -13,13 +13,14 @@ list-network-shares.ps1 [<CommonParameters>]
 
 ## Example
 ```powershell
-PS>./list-network-shares
+PS> ./list-network-shares
 
 
 
 Name  Path     Description
 ----  ----     -----------
 Users C:\Users
+
 ```
 
 ## Notes

@@ -22,7 +22,8 @@ sync-repo.ps1 [[-RepoDir] <String>] [<CommonParameters>]
 
 ## Example
 ```powershell
-PS>./sync-repo C:\MyRepo
+PS> ./sync-repo C:\MyRepo
+
 ```
 
 ## Notes

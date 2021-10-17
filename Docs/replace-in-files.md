@@ -40,7 +40,8 @@ replace-in-files.ps1 [[-pattern] <String>] [[-replacement] <String>] [[-files] <
 
 ## Example
 ```powershell
-PS>./replace-in-files NSA "No Such Agency" C:\Temp\*.txt
+PS> ./replace-in-files NSA "No Such Agency" C:\Temp\*.txt
+
 ```
 
 ## Notes

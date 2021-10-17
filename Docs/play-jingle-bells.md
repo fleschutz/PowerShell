@@ -13,7 +13,8 @@ play-jingle-bells.ps1 [<CommonParameters>]
 
 ## Example
 ```powershell
-PS>./play-jingle-bells
+PS> ./play-jingle-bells
+
 ```
 
 ## Notes

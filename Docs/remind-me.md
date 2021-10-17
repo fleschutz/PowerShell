@@ -29,13 +29,14 @@ remind-me.ps1 [[-Message] <String>] [[-Time] <DateTime>] [<CommonParameters>]
 
 ## Example
 ```powershell
-PS>./remind-me "Dentist" "4/10/2021 12:00 PM"
+PS> ./remind-me "Dentist" "4/10/2021 12:00 PM"
 
 
 
 TaskPath                                       TaskName                          State
 --------                                       --------                          -----
 \                                              Reminder_451733811                Ready
+
 ```
 
 ## Notes

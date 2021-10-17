@@ -40,7 +40,8 @@ translate-file.ps1 [[-File] <String>] [[-SourceLang] <String>] [[-TargetLang] <S
 
 ## Example
 ```powershell
-PS>./translate-file C:\Memo.txt en de
+PS> ./translate-file C:\Memo.txt en de
+
 ```
 
 ## Notes

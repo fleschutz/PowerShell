@@ -13,7 +13,8 @@ list-printers.ps1 [<CommonParameters>]
 
 ## Example
 ```powershell
-PS>./list-printers
+PS> ./list-printers
+
 ```
 
 ## Notes

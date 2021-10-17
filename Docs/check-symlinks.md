@@ -23,8 +23,9 @@ check-symlinks.ps1 [[-folder] <String>] [<CommonParameters>]
 
 ## Example
 ```powershell
-PS>./check-symlinks .
+PS> ./check-symlinks .
 ✔️ 0 out of 10 symlinks are broken in 📂/home/markus
+
 ```
 
 ## Notes

@@ -13,7 +13,8 @@ list-recycle-bin.ps1 [<CommonParameters>]
 
 ## Example
 ```powershell
-PS>./list-recycle-bin
+PS> ./list-recycle-bin
+
 ```
 
 ## Notes

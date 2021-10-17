@@ -22,7 +22,8 @@ play-mp3.ps1 [[-Filename] <String>] [<CommonParameters>]
 
 ## Example
 ```powershell
-PS>./play-mp3 C:\thunder.mp3
+PS> ./play-mp3 C:\thunder.mp3
+
 ```
 
 ## Notes

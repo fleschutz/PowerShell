@@ -22,7 +22,8 @@ build-repo.ps1 [[-RepoDir] <String>] [<CommonParameters>]
 
 ## Example
 ```powershell
-PS>./build-repo C:\MyRepo
+PS> ./build-repo C:\MyRepo
+
 ```
 
 ## Notes

@@ -13,8 +13,9 @@ cd-docs.ps1 [<CommonParameters>]
 
 ## Example
 ```powershell
-PS>./cd-docs
+PS> ./cd-docs
 📂/home/markus/Documents
+
 ```
 
 ## Notes

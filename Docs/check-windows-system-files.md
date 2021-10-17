@@ -13,8 +13,9 @@ check-windows-system-files.ps1 [<CommonParameters>]
 
 ## Example
 ```powershell
-PS>./check-windows-system-files
+PS> ./check-windows-system-files
 ✔️ checked Windows system files
+
 ```
 
 ## Notes

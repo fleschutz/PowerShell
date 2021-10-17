@@ -13,7 +13,7 @@ list-environment-variables.ps1 [<CommonParameters>]
 
 ## Example
 ```powershell
-PS>./list-environment-variables
+PS> ./list-environment-variables
 
 
 
@@ -22,6 +22,7 @@ Name                           Value
 ALLUSERSPROFILE                C:\ProgramData
 APPDATA                        C:\Users\Joe\AppData\Roaming
 ...
+
 ```
 
 ## Notes

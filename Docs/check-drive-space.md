@@ -31,8 +31,9 @@ check-drive-space.ps1 [[-Drive] <String>] [[-MinLevel] <Int32>] [<CommonParamete
 
 ## Example
 ```powershell
-PS>./check-drive-space C
+PS> ./check-drive-space C
 ✔️ 172 GB left on drive C (61 of 233 GB used)
+
 ```
 
 ## Notes

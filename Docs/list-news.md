@@ -31,7 +31,8 @@ list-news.ps1 [[-RSS_URL] <String>] [[-MaxCount] <Int32>] [<CommonParameters>]
 
 ## Example
 ```powershell
-PS>./list-news
+PS> ./list-news
+
 ```
 
 ## Notes

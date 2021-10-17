@@ -22,7 +22,8 @@ convert-csv2txt.ps1 [[-Path] <String>] [<CommonParameters>]
 
 ## Example
 ```powershell
-PS>./convert-csv2txt salaries.csv
+PS> ./convert-csv2txt salaries.csv
+
 ```
 
 ## Notes

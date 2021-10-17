@@ -13,7 +13,8 @@ simulate-matrix.ps1 [<CommonParameters>]
 
 ## Example
 ```powershell
-PS>./simulate-matrix
+PS> ./simulate-matrix
+
 ```
 
 ## Notes

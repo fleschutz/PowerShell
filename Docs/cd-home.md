@@ -13,8 +13,9 @@ cd-home.ps1 [<CommonParameters>]
 
 ## Example
 ```powershell
-PS>./cd-home
+PS> ./cd-home
 📂/home/markus
+
 ```
 
 ## Notes

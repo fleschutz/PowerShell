@@ -22,7 +22,8 @@ turn-volume-down.ps1 [[-percent] <Int32>] [<CommonParameters>]
 
 ## Example
 ```powershell
-PS>./turn-volume-down
+PS> ./turn-volume-down
+
 ```
 
 ## Notes

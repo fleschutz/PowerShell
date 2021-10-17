@@ -13,7 +13,8 @@ list-workdir.ps1 [<CommonParameters>]
 
 ## Example
 ```powershell
-PS>./list-workdir
+PS> ./list-workdir
+
 ```
 
 ## Notes

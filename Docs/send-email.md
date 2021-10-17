@@ -13,7 +13,8 @@ send-email.ps1 [<CommonParameters>]
 
 ## Example
 ```powershell
-PS>./send-email
+PS> ./send-email
+
 ```
 
 ## Notes

@@ -13,7 +13,8 @@ install-wsl.ps1 [<CommonParameters>]
 
 ## Example
 ```powershell
-PS>./install-wsl
+PS> ./install-wsl
+
 ```
 
 ## Notes

@@ -13,7 +13,8 @@ poweroff.ps1 [<CommonParameters>]
 
 ## Example
 ```powershell
-PS>./poweroff
+PS> ./poweroff
+
 ```
 
 ## Notes

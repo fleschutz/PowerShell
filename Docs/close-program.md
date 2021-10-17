@@ -40,7 +40,8 @@ close-program.ps1 [[-FullProgramName] <String>] [[-ProgramName] <String>] [[-Pro
 
 ## Example
 ```powershell
-PS>./close-program "Google Chrome" "chrome.exe"
+PS> ./close-program "Google Chrome" "chrome.exe"
+
 ```
 
 ## Notes

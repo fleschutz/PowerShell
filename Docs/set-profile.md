@@ -13,7 +13,8 @@ set-profile.ps1 [<CommonParameters>]
 
 ## Example
 ```powershell
-PS>./set-profile
+PS> ./set-profile
+
 ```
 
 ## Notes

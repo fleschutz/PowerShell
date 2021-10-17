@@ -31,7 +31,8 @@ write-marquee.ps1 [[-text] <String>] [[-speed] <Int32>] [<CommonParameters>]
 
 ## Example
 ```powershell
-PS>./write-marquee "Hello World"
+PS> ./write-marquee "Hello World"
+
 ```
 
 ## Notes

@@ -22,7 +22,8 @@ inspect-exe.ps1 [[-PathToExe] <String>] [<CommonParameters>]
 
 ## Example
 ```powershell
-PS>./inspect-exe C:\MyApp.exe
+PS> ./inspect-exe C:\MyApp.exe
+
 ```
 
 ## Notes

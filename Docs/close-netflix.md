@@ -13,7 +13,8 @@ close-netflix.ps1 [<CommonParameters>]
 
 ## Example
 ```powershell
-PS>./close-netflix
+PS> ./close-netflix
+
 ```
 
 ## Notes

@@ -22,7 +22,8 @@ write-blue.ps1 [[-text] <String>] [<CommonParameters>]
 
 ## Example
 ```powershell
-PS>./write-blue "Hello World"
+PS> ./write-blue "Hello World"
+
 ```
 
 ## Notes

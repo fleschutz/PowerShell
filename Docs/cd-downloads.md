@@ -13,8 +13,9 @@ cd-downloads.ps1 [<CommonParameters>]
 
 ## Example
 ```powershell
-PS>./cd-downloads
+PS> ./cd-downloads
 📂/home/markus/Downloads
+
 ```
 
 ## Notes

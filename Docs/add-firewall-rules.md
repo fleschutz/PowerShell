@@ -22,10 +22,11 @@ add-firewall-rules.ps1 [[-PathToExecutables] <String>] [<CommonParameters>]
 
 ## Example
 ```powershell
-PS>./add-firewall-rules C:\MyApp\bin
+PS> ./add-firewall-rules C:\MyApp\bin
 Adding firewall rule for C:\MyApp\bin\app1.exe
 Adding firewall rule for C:\MyApp\bin\app2.exe
 ...
+
 ```
 
 ## Notes

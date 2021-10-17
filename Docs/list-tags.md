@@ -31,7 +31,7 @@ list-tags.ps1 [[-RepoDir] <String>] [[-SearchPattern] <String>] [<CommonParamete
 
 ## Example
 ```powershell
-PS>./list-tags C:\MyRepo
+PS> ./list-tags C:\MyRepo
 
 
 
@@ -39,6 +39,7 @@ Tag             Description
 ---             -----------
 v0.1            Update README.md
 v0.2            Fix typo
+
 ```
 
 ## Notes

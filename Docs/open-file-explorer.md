@@ -13,7 +13,8 @@ open-file-explorer.ps1 [<CommonParameters>]
 
 ## Example
 ```powershell
-PS>./open-file-explorer
+PS> ./open-file-explorer
+
 ```
 
 ## Notes

@@ -14,8 +14,9 @@ clear-recycle-bin.ps1 [<CommonParameters>]
 
 ## Example
 ```powershell
-PS>./clear-recycle-bin
+PS> ./clear-recycle-bin
 ✔️ cleared recycle bin
+
 ```
 
 ## Notes

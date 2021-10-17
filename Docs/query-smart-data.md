@@ -24,7 +24,8 @@ query-smart-data.ps1 [[-Directory] <String>] [<CommonParameters>]
 
 ## Example
 ```powershell
-PS>./query-smart-data
+PS> ./query-smart-data
+
 ```
 
 ## Notes

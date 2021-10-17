@@ -24,12 +24,10 @@ function GetCode { param($Example)
 
     $code = New-Object "System.Collections.Generic.List[string]"
     for ($i = 0; $i -lt $codeAndRemarks.Length; $i++) {
-        if ($codeAndRemarks[$i] -eq 'DESCRIPTION' -and $codeAndRemarks[$i + 1] -eq '-----------') {
-            break
-        }
-        if (1 -le $i -and $i -le 2) {
-            continue
-        }
+        if ($codeAndRemarks[$i] -eq 'DESCRIPTION' -and $codeAndRemarks[$i + 1] -eq '-----------') { break }
+        if ($codeAndRemarks[$i] -eq '' -and $codeAndRemarks[$i + 1] -eq '') { continue }
+        if (1 -le $i -and $i -le 2) { continue }
+    	$codeAndRemarks[$i] = ($codeAndRemarks[$i] | Out-String) -replace "PS>","PS> "
         $code.Add($codeAndRemarks[$i])
     }
 

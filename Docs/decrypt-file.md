@@ -31,7 +31,8 @@ decrypt-file.ps1 [[-Path] <String>] [[-Password] <String>] [<CommonParameters>]
 
 ## Example
 ```powershell
-PS>./decrypt-file-rules C:\MyFile.txt "123"
+PS> ./decrypt-file-rules C:\MyFile.txt "123"
+
 ```
 
 ## Notes

@@ -22,7 +22,8 @@ pull-repos.ps1 [[-ParentDir] <String>] [<CommonParameters>]
 
 ## Example
 ```powershell
-PS>./pull-repos C:\MyRepos
+PS> ./pull-repos C:\MyRepos
+
 ```
 
 ## Notes

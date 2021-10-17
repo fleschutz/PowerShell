@@ -13,7 +13,8 @@ reboot.ps1 [<CommonParameters>]
 
 ## Example
 ```powershell
-PS>./reboot
+PS> ./reboot
+
 ```
 
 ## Notes

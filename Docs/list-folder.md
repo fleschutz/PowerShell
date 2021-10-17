@@ -22,7 +22,8 @@ list-folder.ps1 [[-SearchPattern] <String>] [<CommonParameters>]
 
 ## Example
 ```powershell
-PS>./list-folder C:\
+PS> ./list-folder C:\
+
 ```
 
 ## Notes

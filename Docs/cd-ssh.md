@@ -13,8 +13,9 @@ cd-ssh.ps1 [<CommonParameters>]
 
 ## Example
 ```powershell
-PS>./cd-ssh
+PS> ./cd-ssh
 📂/home/markus/.ssh
+
 ```
 
 ## Notes

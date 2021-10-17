@@ -13,7 +13,8 @@ list-memos.ps1 [<CommonParameters>]
 
 ## Example
 ```powershell
-PS>./list-memos
+PS> ./list-memos
+
 ```
 
 ## Notes

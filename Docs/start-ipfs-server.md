@@ -13,7 +13,8 @@ start-ipfs-server.ps1 [<CommonParameters>]
 
 ## Example
 ```powershell
-PS>./start-ipfs-server
+PS> ./start-ipfs-server
+
 ```
 
 ## Notes

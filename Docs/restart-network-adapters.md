@@ -13,7 +13,8 @@ restart-network-adapters.ps1 [<CommonParameters>]
 
 ## Example
 ```powershell
-PS>./restart-network-adapters
+PS> ./restart-network-adapters
+
 ```
 
 ## Notes

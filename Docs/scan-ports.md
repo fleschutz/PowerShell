@@ -13,7 +13,8 @@ scan-ports.ps1 [<CommonParameters>]
 
 ## Example
 ```powershell
-PS>./scan-ports
+PS> ./scan-ports
+
 ```
 
 ## Notes

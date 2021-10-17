@@ -13,7 +13,8 @@ list-print-jobs.ps1 [<CommonParameters>]
 
 ## Example
 ```powershell
-PS>./list-print-jobs
+PS> ./list-print-jobs
+
 ```
 
 ## Notes

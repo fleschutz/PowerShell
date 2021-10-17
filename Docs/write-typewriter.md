@@ -40,7 +40,8 @@ write-typewriter.ps1 [[-text] <String>] [[-speed] <Int32>] [<CommonParameters>]
 
 ## Example
 ```powershell
-PS>./write-typewriter "Hello World"
+PS> ./write-typewriter "Hello World"
+
 ```
 
 ## Notes

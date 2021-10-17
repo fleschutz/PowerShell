@@ -13,8 +13,9 @@ cd-desktop.ps1 [<CommonParameters>]
 
 ## Example
 ```powershell
-PS>./cd-desktop
+PS> ./cd-desktop
 📂/home/markus/Desktop
+
 ```
 
 ## Notes

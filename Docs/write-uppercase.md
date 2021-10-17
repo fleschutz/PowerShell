@@ -22,7 +22,8 @@ write-uppercase.ps1 [[-text] <String>] [<CommonParameters>]
 
 ## Example
 ```powershell
-PS>./write-uppercase "Hello World"
+PS> ./write-uppercase "Hello World"
+
 ```
 
 ## Notes

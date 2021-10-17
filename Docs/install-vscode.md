@@ -97,6 +97,7 @@ PS > Install-VSCode.ps1 -Architecture 32-bit
 
 
 Installs Visual Studio Code (32-bit) and the powershell extension.
+
 ```
 
 ## Example
@@ -107,6 +108,7 @@ PS > Install-VSCode.ps1 -LaunchWhenDone
 
 Installs Visual Studio Code (64-bit) and the PowerShell extension and then launches
 the editor after installation completes.
+
 ```
 
 ## Example
@@ -117,6 +119,7 @@ PS > Install-VSCode.ps1 -AdditionalExtensions 'eamodio.gitlens', 'vscodevim.vim'
 
 Installs Visual Studio Code (64-bit), the PowerShell extension, and additional
 extensions.
+
 ```
 
 ## Example
@@ -127,6 +130,7 @@ PS > Install-VSCode.ps1 -BuildEdition Insider-User -LaunchWhenDone
 
 Installs Visual Studio Code Insiders Edition (64-bit) to the user profile and then launches the editor
 after installation completes.
+
 ```
 
 ## Notes

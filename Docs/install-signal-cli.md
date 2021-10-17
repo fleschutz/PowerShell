@@ -22,7 +22,8 @@ install-signal-cli.ps1 [[-Version] <String>] [<CommonParameters>]
 
 ## Example
 ```powershell
-PS>./install-signal-cli 0.11.12
+PS> ./install-signal-cli 0.11.12
+
 ```
 
 ## Notes

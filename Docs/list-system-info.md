@@ -13,7 +13,8 @@ list-system-info.ps1 [<CommonParameters>]
 
 ## Example
 ```powershell
-PS>./list-system-info
+PS> ./list-system-info
+
 ```
 
 ## Notes

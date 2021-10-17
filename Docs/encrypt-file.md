@@ -31,7 +31,8 @@ encrypt-file.ps1 [[-Path] <String>] [[-Password] <String>] [<CommonParameters>]
 
 ## Example
 ```powershell
-PS>./encrypt-file C:\MyFile.txt "123"
+PS> ./encrypt-file C:\MyFile.txt "123"
+
 ```
 
 ## Notes

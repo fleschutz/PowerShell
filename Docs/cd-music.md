@@ -13,8 +13,9 @@ cd-music.ps1 [<CommonParameters>]
 
 ## Example
 ```powershell
-PS>./cd-music
+PS> ./cd-music
 📂/home/markus/Music
+
 ```
 
 ## Notes

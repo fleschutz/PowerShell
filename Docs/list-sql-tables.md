@@ -47,7 +47,8 @@ list-sql-tables.ps1 [-server] <Object> [-database] <Object> [-username] <Object>
 
 ## Example
 ```powershell
-PS>./list-sql-tables
+PS> ./list-sql-tables
+
 ```
 
 ## Notes

@@ -13,7 +13,8 @@ close-edge.ps1 [<CommonParameters>]
 
 ## Example
 ```powershell
-PS>./close-edge
+PS> ./close-edge
+
 ```
 
 ## Notes

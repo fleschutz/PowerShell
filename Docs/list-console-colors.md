@@ -13,13 +13,14 @@ list-console-colors.ps1 [<CommonParameters>]
 
 ## Example
 ```powershell
-PS>./list-console-colors
+PS> ./list-console-colors
 
 
 
 Name     Foreground     Background
 ----     ----------     ----------
 ...
+
 ```
 
 ## Notes

@@ -13,7 +13,8 @@ enter-chat.ps1 [<CommonParameters>]
 
 ## Example
 ```powershell
-PS>./enter-chat
+PS> ./enter-chat
+
 ```
 
 ## Notes
