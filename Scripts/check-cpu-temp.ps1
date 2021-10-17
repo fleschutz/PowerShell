@@ -5,7 +5,7 @@
 	This script checks the CPU temperature.
 .EXAMPLE
 	PS> ./check-cpu-temp
-	✔️ 30.3 °C CPU temperature - good
+	✔️ CPU has 30.3 °C: good
 .LINK
 	https://github.com/fleschutz/PowerShell
 .NOTES
@@ -23,16 +23,16 @@ try {
 	}
 
 	if ($Temp -gt 80) {
-		"⚠️ $Temp °C CPU temperature: too high!"
+		"⚠️ CPU has $Temp °C: too high!"
 		exit 1
 	} elseif ($Temp -gt 50) {
-		"✔️ $Temp °C CPU temperature: quite high"
+		"✔️ CPU has $Temp °C: quite high"
 	} elseif ($Temp -gt 0) {
-		"✔️ $Temp °C CPU temperature: good"
+		"✔️ CPU has $Temp °C: good"
 	} elseif ($Temp -gt -20) {
-		"✔️ $Temp °C CPU temperature: quite low"
+		"✔️ CPU has $Temp °C: quite low"
 	} else {
-		"⚠️ $Temp °C CPU temperature: too low!"
+		"⚠️ CPU has $Temp °C: too low!"
 		exit 1
 	}
 	exit 0 # success
