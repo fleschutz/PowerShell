@@ -6,8 +6,8 @@
 .EXAMPLE
 	PS> ./list-console-colors
 
-	Name     Foreground     Background
-	----     ----------     ----------
+	Color     As Foreground     As Background
+	-----     -------------     -------------
 	...
 .NOTES
 	Author: Markus Fleschutz · License: CC0
@@ -18,11 +18,13 @@
 try {
 	$Colors = [Enum]::GetValues([ConsoleColor])
 	""
-	"Name     `tForeground     `tBackground"
-	"----     `t----------     `t----------"
+	"Color          As Foreground  As Background"
+	"-----          -------------  -------------"
 	foreach($Color in $Colors) {
-		write-host -noNewline "$Color     `t"
-		write-host -noNewline -foregroundcolor $Color "$Color     `t"
+		$Color = "$Color              "
+		$Color = $Color.substring(0, 15)
+		write-host -noNewline "$Color"
+		write-host -noNewline -foregroundcolor $Color "$Color"
 		write-host -noNewline -backgroundcolor $Color "$Color"
 		write-host ""
 	}
