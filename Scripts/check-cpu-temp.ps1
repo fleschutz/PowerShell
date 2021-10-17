@@ -22,18 +22,18 @@ try {
 		$Temp = [math]::round($Temp / 100.0, 1)
 	}
 
-	if ($Temp -gt "80") {
-		write-error "⚠️ $Temp °C CPU temperature is too high!"
+	if ($Temp -gt 80) {
+		"⚠️ $Temp °C CPU temperature: too high!"
 		exit 1
-	} elseif ($Temp -lt "-20") {
-		write-error "⚠️ $Temp °C CPU temperature is too low!"
-		exit 1
-	} elseif ($Temp -gt "50") {
-		"✔️ $Temp °C CPU temperature - quite high"
-	} elseif ($Temp -lt "0") {
-		"✔️ $Temp °C CPU temperature - quite low"
+	} elseif ($Temp -gt 50) {
+		"✔️ $Temp °C CPU temperature: quite high"
+	} elseif ($Temp -gt 0) {
+		"✔️ $Temp °C CPU temperature: good"
+	} elseif ($Temp -gt -20) {
+		"✔️ $Temp °C CPU temperature: quite low"
 	} else {
-		"✔️ $Temp °C CPU temperature - good"
+		"⚠️ $Temp °C CPU temperature: too low!"
+		exit 1
 	}
 	exit 0 # success
 } catch {
