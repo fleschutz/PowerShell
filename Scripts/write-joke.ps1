@@ -14,10 +14,9 @@
 
 try {
 	$Table = import-csv "$PSScriptRoot/../Data/jokes.csv"
-	$NumRows = $Table.count
 
 	$Generator = New-Object System.Random
-	$Index = [int]$Generator.next(0,$NumRows - 1)
+	$Index = [int]$Generator.next(0, $Table.Count - 1)
 	$Joke = $Table[$Index].Joke
 
 	"$Joke 😂"
