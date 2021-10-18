@@ -13,10 +13,9 @@
 
 try {
 	$Table = import-csv "$PSScriptRoot/../Data/quotes.csv"
-	$NumRows = $Table.count
 
 	$Generator = New-Object System.Random
-	$Index = [int]$Generator.next(0,$NumRows - 1)
+	$Index = [int]$Generator.next(0, $Table.Count - 1)
 	$Quote = $Table[$Index].Quote
 	$Author = $Table[$Index].Author
 
