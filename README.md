@@ -183,14 +183,14 @@ Mega Collection of PowerShell Scripts
 
 | Script                                                 | Description                                                        | Help                                  |
 | ------------------------------------------------------ | ------------------------------------------------------------------ | ------------------------------------- |
-| [convert-csv2txt.ps1](Scripts/convert-csv2txt.ps1)     | Converts a given .CSV file to a text file                          | [Help](Docs/convert-csv2txt.md)   |
-| [convert-mysql2csv.ps1](Scripts/convert-mysql2csv.ps1) | Converts a MySQL database table to a .CSV file                     | [Help](Docs/convert-mysql2csv.md) |
-| [convert-ps2bat.ps1](Scripts/convert-ps2bat.ps1)       | Converts a PowerShell script to a .BAT file                        | [Help](Docs/convert-ps2bat.md)    |
-| [convert-ps2md.ps1](Scripts/convert-ps2md.ps1)         | Converts the comment-based help of a PowerShell script to Markdown | [Help](Docs/convert-ps2md.md)     |
-| [convert-sql2csv.ps1](Scripts/convert-sql2csv.ps1)     | Converts a SQL database table to a .CSV file                       | [Help](Docs/convert-sql2csv.md)   |
-| [convert-txt2wav.ps1](Scripts/convert-txt2wav.ps1)     | Converts text to a .WAV audio file                                 | [Help](Docs/convert-txt2wav.md)   |
-| [export-to-manuals.ps1](Scripts/export-to-manuals.ps1) | Converts all scripts as manuals                                    | [Help](Docs/export-to-manuals.md) |
-| [export-to-serenade.ps1](Scripts/export-to-serenade.ps1)| Converts all scripts to Serenade for voice control                | [Help](Docs/export-to-serenade.md)|
+| [convert-csv2txt.ps1](Scripts/convert-csv2txt.ps1)     | Converts a given .CSV file to a text file                          | [Help](Docs/convert-csv2txt.md)       |
+| [convert-mysql2csv.ps1](Scripts/convert-mysql2csv.ps1) | Converts a MySQL database table to a .CSV file                     | [Help](Docs/convert-mysql2csv.md)     |
+| [convert-ps2bat.ps1](Scripts/convert-ps2bat.ps1)       | Converts a PowerShell script to a .BAT file                        | [Help](Docs/convert-ps2bat.md)        |
+| [convert-ps2md.ps1](Scripts/convert-ps2md.ps1)         | Converts the comment-based help of a PowerShell script to Markdown | [Help](Docs/convert-ps2md.md)         |
+| [convert-sql2csv.ps1](Scripts/convert-sql2csv.ps1)     | Converts a SQL database table to a .CSV file                       | [Help](Docs/convert-sql2csv.md)       |
+| [convert-txt2wav.ps1](Scripts/convert-txt2wav.ps1)     | Converts text to a .WAV audio file                                 | [Help](Docs/convert-txt2wav.md)       |
+| [export-to-manuals.ps1](Scripts/export-to-manuals.ps1) | Exports all scripts as manuals                                     | [Help](Docs/export-to-manuals.md)     |
+| [export-to-serenade.ps1](Scripts/export-to-serenade.ps1)| Exports all scripts to Serenade for voice control                 | [Help](Docs/export-to-serenade.md)    |
 
 
 📝 Scripts for Git
