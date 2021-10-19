@@ -12,15 +12,19 @@
 	Author: Markus Fleschutz · License: CC0
 #>
 
-if ($IsLinux) {
-	$TargetDir = resolve-path "/"
-} else {
-	$TargetDir = resolve-path "C:\"
-}
-if (-not(test-path "$TargetDir" -pathType container)) {
-	write-warning "Sorry, the root directory at 📂$TargetDir does not exist (yet)"
+try {
+	if ($IsLinux) {
+		$TargetDir = resolve-path "/"
+	} else {
+		$TargetDir = resolve-path "C:\"
+	}
+	if (-not(test-path "$TargetDir" -pathType container)) {
+		throw "Root directory at 📂$TargetDir doesn't exist (yet)"
+	}
+	set-location "$TargetDir"
+	"📂$TargetDir"
+	exit 0 # success
+} catch {
+	"⚠️ Error: $($Error[0]) ($($MyInvocation.MyCommand.Name):$($_.InvocationInfo.ScriptLineNumber))"
 	exit 1
 }
-set-location "$TargetDir"
-"📂$TargetDir"
-exit 0 # success
