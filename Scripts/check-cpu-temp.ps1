@@ -28,7 +28,7 @@ try {
 	} elseif ($Temp -gt 50) {
 		"✔️ CPU has $Temp °C: quite high"
 	} elseif ($Temp -gt 0) {
-		"✔️ CPU has $Temp °C: good"
+		"✔️ CPU has $Temp °C"
 	} elseif ($Temp -gt -20) {
 		"✔️ CPU has $Temp °C: quite low"
 	} else {

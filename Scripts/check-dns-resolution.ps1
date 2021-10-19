@@ -31,7 +31,7 @@ try {
 
 	[int]$Elapsed = $StopWatch.Elapsed.TotalSeconds
 	$Average = [math]::round($Count / $Elapsed, 1)
-	"✔️ DNS resolves $Average domains/sec ($Count domains in $Elapsed sec)"
+	"✔️ DNS resolves $Average domains/sec ($Count in $Elapsed sec)"
 	exit 0 # success
 } catch {
 	"⚠️ Error: $($Error[0]) ($($MyInvocation.MyCommand.Name):$($_.InvocationInfo.ScriptLineNumber))"

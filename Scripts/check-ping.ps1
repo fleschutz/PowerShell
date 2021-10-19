@@ -37,7 +37,7 @@ try {
 	}
 	$Avg = $Avg / $Pings.count
 
-	"✔️ Ping is $Avg ms average ($Min ms min, $Max ms max, using $($Pings.count) hosts)"
+	"✔️ Ping is $Avg ms average ($Min ms min, $Max ms max, $($Pings.count) hosts used)"
 	exit 0 # success
 } catch {
 	"⚠️ Error: $($Error[0]) ($($MyInvocation.MyCommand.Name):$($_.InvocationInfo.ScriptLineNumber))"

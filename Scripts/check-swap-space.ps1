@@ -39,7 +39,7 @@ try {
         	write-warning "Swap space has only $Free GB left to use! ($Used of $Total GB used, minimum is $MinLevel GB)"
 		exit 1
 	}
-	"✔️ Swap space has $Free GB left ($Used of $Total GB used)"
+	"✔️ Swap space has $Free GB left ($Total GB total)"
 	exit 0 # success
 } catch {
 	"⚠️ Error: $($Error[0]) ($($MyInvocation.MyCommand.Name):$($_.InvocationInfo.ScriptLineNumber))"

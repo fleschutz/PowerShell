@@ -47,7 +47,7 @@ if ($IsLinux) {
 
 $Hostname = $(hostname)
 if ($Healthy) {
-	"✔️ $Hostname is healthy"
+	"✔️ $Hostname seems healthy"
 	exit 0 # success
 } else {
 	write-warning "$Hostname is NOT healthy"
