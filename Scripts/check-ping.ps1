@@ -8,7 +8,7 @@
 	Specifies the hosts to check (separated by comma)
 .EXAMPLE
 	PS> ./check-ping
-	✔️ 36 ms ping average (13 ms min, 109 ms max, 10 hosts)
+	✔️ Ping is 36 ms average (13 ms min, 109 ms max, using 10 hosts)
 .LINK
 	https://github.com/fleschutz/PowerShell
 .NOTES
@@ -37,7 +37,7 @@ try {
 	}
 	$Avg = $Avg / $Pings.count
 
-	"✔️ $Avg ms ping average ($Min ms min, $Max ms max, $($Pings.count) hosts)"
+	"✔️ Ping is $Avg ms average ($Min ms min, $Max ms max, using $($Pings.count) hosts)"
 	exit 0 # success
 } catch {
 	"⚠️ Error: $($Error[0]) ($($MyInvocation.MyCommand.Name):$($_.InvocationInfo.ScriptLineNumber))"
