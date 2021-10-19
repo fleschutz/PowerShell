@@ -11,7 +11,7 @@
 	Specifies the target file ("$HOME/.serenade/scripts/PowerShell.js" by default)
 .EXAMPLE
 	PS> ./export-to-serenade.ps1 Computer
-	Exporting 264 scripts to C:\Users\Markus/.serenade/scripts/PowerShell.js...
+	⏳ Exporting 264 scripts to C:\Users\Markus/.serenade/scripts/PowerShell.js...
 	✔️ exported 264 PowerShell scripts to Serenade in 22 sec
 .NOTES
 	Author: Markus Fleschutz · License: CC0
@@ -27,7 +27,7 @@ try {
 	$StopWatch = [system.diagnostics.stopwatch]::startNew()
 
 	$Scripts = Get-ChildItem "$FilePattern"
-	"Exporting $($Scripts.Count) scripts to $TargetFile..."
+	"⏳ Exporting $($Scripts.Count) scripts to $TargetFile..."
 
 	"/* NOTE: This file has been generated automatically by export-to-serenade.ps1 */" | Set-Content "$TargetFile"
 	foreach ($Script in $Scripts) {
