@@ -20,7 +20,8 @@ try {
 	for ([int]$i = 0; $i -lt $percent; $i += 2) {
 		$obj.SendKeys([char]174) # each tick is -2%
 	}
-	"🔉️ volume -$($percent)%"
+	"🔉️ -$($percent)%"
+	& "$PSScriptRoot/speak-english.ps1" "OK, $percent percent less volume"
 	exit 0 # success
 } catch {
 	"⚠️ Error: $($Error[0]) ($($MyInvocation.MyCommand.Name):$($_.InvocationInfo.ScriptLineNumber))"
