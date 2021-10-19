@@ -30,7 +30,7 @@ try {
         	write-warning "Drive $Drive has only $Free GB left to use! ($Used of $Total GB used, minimum is $MinLevel GB)"
 		exit 1
 	}
-	"✔️ $Free GB left on drive $Drive ($Used of $Total GB used)"
+	"✔️ Drive $Drive has $Free GB left ($Used of $Total GB used)"
 	exit 0 # success
 } catch {
 	"⚠️ Error: $($Error[0]) ($($MyInvocation.MyCommand.Name):$($_.InvocationInfo.ScriptLineNumber))"
