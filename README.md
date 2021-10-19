@@ -127,24 +127,25 @@ Mega Collection of PowerShell Scripts
 
 | Script                                               | Description                                                        | Help                                    |
 | ---------------------------------------------------- | ------------------------------------------------------------------ | --------------------------------------- |
-| [cd-desktop.ps1](Scripts/cd-desktop.ps1)             | Change the working directory to the user's desktop folder          | [Help](Docs/cd-desktop.md)          |
-| [cd-docs.ps1](Scripts/cd-docs.ps1)                   | Change the working directory to the user's documents folder        | [Help](Docs/cd-docs.md)             |
-| [cd-downloads.ps1](Scripts/cd-downloads.ps1)         | Change the working directory to the user's downloads folder        | [Help](Docs/cd-downloads.md)        |
-| [cd-dropbox.ps1](Scripts/cd-dropbox.ps1)             | Change the working directory to the user's Dropbox folder          | [Help](Docs/cd-dropbox.md)          |
-| [cd-home.ps1](Scripts/cd-home.ps1)                   | Change the working directory to the user's home folder             | [Help](Docs/cd-home.md)             |
-| [cd-music.ps1](Scripts/cd-music.ps1)                 | Change the working directory to the user's music folder            | [Help](Docs/cd-music.md)            |  
-| [cd-onedrive.ps1](Scripts/cd-onedrive.ps1)           | Change the working directory to the user's OneDrive folder         | [Help](Docs/cd-onedrive.md)         |
-| [cd-pics.ps1](Scripts/cd-pics.ps1)                   | Change the working directory to the user's pictures folder         | [Help](Docs/cd-pics.md)             |
-| [cd-recycle-bin.ps1](Scripts/cd-recycle-bin.ps1)     | Change the working directory to the user's recycle bin folder      | [Help](Docs/cd-recycle-bin.md)      |
+| [cd-autostart.ps1](Scripts/cd-autostart.ps1)         | Set the working directory to the user's autostart folder           | [Help](Docs/cd-autostart.md)          |
+| [cd-desktop.ps1](Scripts/cd-desktop.ps1)             | Set the working directory to the user's desktop folder             | [Help](Docs/cd-desktop.md)          |
+| [cd-docs.ps1](Scripts/cd-docs.ps1)                   | Set the working directory to the user's documents folder           | [Help](Docs/cd-docs.md)             |
+| [cd-downloads.ps1](Scripts/cd-downloads.ps1)         | Set the working directory to the user's downloads folder           | [Help](Docs/cd-downloads.md)        |
+| [cd-dropbox.ps1](Scripts/cd-dropbox.ps1)             | Set the working directory to the user's Dropbox folder             | [Help](Docs/cd-dropbox.md)          |
+| [cd-home.ps1](Scripts/cd-home.ps1)                   | Set the working directory to the user's home folder                | [Help](Docs/cd-home.md)             |
+| [cd-music.ps1](Scripts/cd-music.ps1)                 | Set the working directory to the user's music folder               | [Help](Docs/cd-music.md)            |  
+| [cd-onedrive.ps1](Scripts/cd-onedrive.ps1)           | Set the working directory to the user's OneDrive folder            | [Help](Docs/cd-onedrive.md)         |
+| [cd-pics.ps1](Scripts/cd-pics.ps1)                   | Set the working directory to the user's pictures folder            | [Help](Docs/cd-pics.md)             |
+| [cd-recycle-bin.ps1](Scripts/cd-recycle-bin.ps1)     | Set the working directory to the user's recycle bin folder         | [Help](Docs/cd-recycle-bin.md)      |
 | [cd-repos.ps1](Scripts/cd-repos.ps1)                 | Change the working directory to the user's Git repositories folder | [Help](Docs/cd-repos.md)            |
-| [cd-root.ps1](Scripts/cd-root.ps1)                   | Change the working directory to the root directory (C:\ on Windows)| [Help](Docs/cd-root.md)             |
-| [cd-scripts.ps1](Scripts/cd-scripts.ps1)             | Change the working directory to the PowerShell Scripts folder      | [Help](Docs/cd-scripts.md)          |
-| [cd-ssh.ps1](Scripts/cd-ssh.ps1)                     | Change the working directory to the user's SSH folder              | [Help](Docs/cd-ssh.md)              |
-| [cd-up.ps1](Scripts/cd-up.ps1)                       | Change the working directory to one directory level up             | [Help](Docs/cd-up.md)               | 
-| [cd-up2.ps1](Scripts/cd-up2.ps1)                     | Change the working directory to two directory levels up            | [Help](Docs/cd-up2.md)              |
-| [cd-up3.ps1](Scripts/cd-up3.ps1)                     | Change the working directory to three directory levels up          | [Help](Docs/cd-up3.md)              |
-| [cd-up4.ps1](Scripts/cd-up4.ps1)                     | Change the working directory to four directory levels up           | [Help](Docs/cd-up4.md)              |
-| [cd-videos.ps1](Scripts/cd-videos.ps1)               | Change the working directory to the user's videos folder           | [Help](Docs/cd-videos.md)           |
+| [cd-root.ps1](Scripts/cd-root.ps1)                   | Set the working directory to the root directory (C:\ on Windows)   | [Help](Docs/cd-root.md)             |
+| [cd-scripts.ps1](Scripts/cd-scripts.ps1)             | Set the working directory to the PowerShell Scripts folder         | [Help](Docs/cd-scripts.md)          |
+| [cd-ssh.ps1](Scripts/cd-ssh.ps1)                     | Set the working directory to the user's SSH folder                 | [Help](Docs/cd-ssh.md)              |
+| [cd-up.ps1](Scripts/cd-up.ps1)                       | Set the working directory to one directory level up                | [Help](Docs/cd-up.md)               | 
+| [cd-up2.ps1](Scripts/cd-up2.ps1)                     | Set the working directory to two directory levels up               | [Help](Docs/cd-up2.md)              |
+| [cd-up3.ps1](Scripts/cd-up3.ps1)                     | Set the working directory to three directory levels up             | [Help](Docs/cd-up3.md)              |
+| [cd-up4.ps1](Scripts/cd-up4.ps1)                     | Set the working directory to four directory levels up              | [Help](Docs/cd-up4.md)              |
+| [cd-videos.ps1](Scripts/cd-videos.ps1)               | Set the working directory to the user's videos folder              | [Help](Docs/cd-videos.md)           |
 | [check-symlinks.ps1](Scripts/check-symlinks.ps1)     | Checks every symlink in a directory tree                           | [Help](Docs/check-symlinks.md)      |
 | [check-xml-file.ps1](Scripts/check-xml-file.ps1)     | Checks the given XML file for validity                             | [Help](Docs/check-xml-file.md)      |
 | [clear-recycle-bin.ps1](Scripts/clear-recycle-bin.ps1) | Removes the content of the recycle bin folder (can not be undo!) | [Help](Docs/clear-recycle-bin.md)   |

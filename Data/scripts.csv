@@ -3,24 +3,25 @@ add-firewall-rules.ps1, Adds firewall rules to the given executables (needs admi
 add-memo.ps1, Adds the given memo text to $HOME/Memos.csv
 build-repo.ps1, Builds a Git repository 
 build-repos.ps1, Builds all Git repositories in a folder
-cd-desktop.ps1, Change the working directory to the user's desktop folder
-cd-docs.ps1, Change the working directory to the user's documents folder
-cd-downloads.ps1, Change the working directory to the user's downloads folder
-cd-dropbox.ps1, Change the working directory to the user's Dropbox folder
-cd-home.ps1, Change the working directory to the user's home folder
-cd-music.ps1, Change the working directory to the user's music folder
-cd-onedrive.ps1, Change the working directory to the user's OneDrive folder
-cd-pics.ps1, Change the working directory to the user's pictures folder
-cd-recycle-bin.ps1, Change the working directory to the user's recycle bin folder
-cd-repos.ps1, Change the working directory to the user's Git repositories folder
-cd-root.ps1, Change the working directory to the root directory (C: on Windows)
-cd-scripts.ps1, Change the working directory to the PowerShell Scripts folder
-cd-ssh.ps1, Change the working directory to the user's SSH folder
-cd-up.ps1, Change the working directory to one directory level up
-cd-up2.ps1, Change the working directory to two directory levels up
-cd-up3.ps1, Change the working directory to three directory levels up
-cd-up4.ps1, Change the working directory to four directory levels up
-cd-videos.ps1, Change the working directory to the user's videos folder
+cd-autostart.ps1, Set the working directory to the user's autostart folder
+cd-desktop.ps1, Set the working directory to the user's desktop folder
+cd-docs.ps1, Set the working directory to the user's documents folder
+cd-downloads.ps1, Set the working directory to the user's downloads folder
+cd-dropbox.ps1, Set the working directory to the user's Dropbox folder
+cd-home.ps1, Set the working directory to the user's home folder
+cd-music.ps1, Set the working directory to the user's music folder
+cd-onedrive.ps1, Set the working directory to the user's OneDrive folder
+cd-pics.ps1, Set the working directory to the user's pictures folder
+cd-recycle-bin.ps1, Set the working directory to the user's recycle bin folder
+cd-repos.ps1, Set the working directory to the user's Git repositories folder
+cd-root.ps1, Set the working directory to the root directory (C: on Windows)
+cd-scripts.ps1, Set the working directory to the PowerShell Scripts folder
+cd-ssh.ps1, Set the working directory to the user's SSH folder
+cd-up.ps1, Set the working directory to one directory level up
+cd-up2.ps1, Set the working directory to two directory levels up
+cd-up3.ps1, Set the working directory to three directory levels up
+cd-up4.ps1, Set the working directory to four directory levels up
+cd-videos.ps1, Set the working directory to the user's videos folder
 check-cpu-temp.ps1, Checks the CPU temperature
 check-dns-resolution.ps1, Checks the DNS resolution with frequently used domain names
 check-drive-space.ps1, Checks a drive for free space left

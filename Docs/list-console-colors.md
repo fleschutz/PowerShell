@@ -17,8 +17,8 @@ PS> ./list-console-colors
 
 
 
-Name     Foreground     Background
-----     ----------     ----------
+Color     As Foreground     As Background
+-----     -------------     -------------
 ...
 
 ```
