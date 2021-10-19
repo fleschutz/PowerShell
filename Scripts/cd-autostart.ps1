@@ -12,7 +12,7 @@
 	Author: Markus Fleschutz · License: CC0
 #>
 
-$TargetDir = resolve-path "$HOME/AppData/Roaming/Microsoft/Windows/Start Menu/Programs/Autostart"
+$TargetDir = resolve-path "$HOME/AppData/Roaming/Microsoft/Windows/Start Menu/Programs/Startup"
 if (-not(test-path "$TargetDir" -pathType container)) {
 	write-warning "Sorry, the user's autostart folder at 📂$TargetDir does not exist (yet)"
 	exit 1
