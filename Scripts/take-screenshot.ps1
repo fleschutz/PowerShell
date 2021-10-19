@@ -13,7 +13,7 @@
 	https://github.com/fleschutz/PowerShell
 #>
 
-param([string]$Directory = "$PWD")
+param([string]$Directory = "$HOME/Pictures")
 
 function TakeScreenshot { param([string]$FilePath)
 	Add-Type -Assembly System.Windows.Forms            
@@ -27,12 +27,15 @@ function TakeScreenshot { param([string]$FilePath)
 }
 
 try {
+        if (-not(test-path "$Directory" -pathType container)) {
+                throw "Target folder at 📂$Directory doesn't exist"
+        }
 	$Time = (Get-Date)
-	$Filename = "$($Time.Year)-$($Time.Month)-$($Time.Day)-$($Time.Hour)-$($Time.Minute)-$($Time.Second).png"
+	$Filename = "$($Time.Year)-$($Time.Month)-$($Time.Day)T$($Time.Hour)-$($Time.Minute)-$($Time.Second).png"
 	$FilePath = (Join-Path $Directory $Filename)
-
-	write-output "Saving screenshot to $FilePath..."
 	TakeScreenshot $FilePath
+
+	"✔️ screenshot saved to $FilePath"
 	exit 0 # success
 } catch {
 	"⚠️ Error: $($Error[0]) ($($MyInvocation.MyCommand.Name):$($_.InvocationInfo.ScriptLineNumber))"
