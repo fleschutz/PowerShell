@@ -1,21 +1,19 @@
 ﻿<#
 .SYNOPSIS
-	Takes screenshots and saves them into a folder
+	Takes a single screenshot and saves it into a folder
 .DESCRIPTION
-	This script takes screenshots and saves them into a folder.
-.PARAMETER TargetDir
-	Specifies the path to the target folder
-.PARAMETER Interval
-	Specifies the time interval in seconds (60 seconds per default)
+	This script takes a single screenshot and saves it into a target folder (the user's pictures folder by default).
+.PARAMETER Directory
+	Specifies the target directory (the user's pictures folder by default)
 .EXAMPLE
-	PS> ./take-screenshots C:\Temp 60
+	PS> ./save-screenshot C:\Temp
 .NOTES
 	Author: Markus Fleschutz · License: CC0
 .LINK
 	https://github.com/fleschutz/PowerShell
 #>
 
-param([string]$TargetDir = "$PWD", [int]$Interval = 60) # in seconds
+param([string]$Directory = "$HOME/Pictures")
 
 function TakeScreenshot { param([string]$FilePath)
 	Add-Type -Assembly System.Windows.Forms            
@@ -29,15 +27,15 @@ function TakeScreenshot { param([string]$FilePath)
 }
 
 try {
-	do {
-		$Time = (Get-Date)
-		$Filename = "$($Time.Year)-$($Time.Month)-$($Time.Day)-$($Time.Hour)-$($Time.Minute)-$($Time.Second).png"
-		$FilePath = (Join-Path $TargetDir $Filename)
+        if (-not(test-path "$Directory" -pathType container)) {
+                throw "Target folder at 📂$Directory doesn't exist"
+        }
+	$Time = (Get-Date)
+	$Filename = "$($Time.Year)-$($Time.Month)-$($Time.Day)T$($Time.Hour)-$($Time.Minute)-$($Time.Second).png"
+	$FilePath = (Join-Path $Directory $Filename)
+	TakeScreenshot $FilePath
 
-		write-output "Saving screenshot to $FilePath..."
-		TakeScreenshot $FilePath
-		Start-Sleep -Seconds $Interval
-	} while (1)
+	"✔️ screenshot saved to $FilePath"
 	exit 0 # success
 } catch {
 	"⚠️ Error: $($Error[0]) ($($MyInvocation.MyCommand.Name):$($_.InvocationInfo.ScriptLineNumber))"

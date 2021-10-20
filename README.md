@@ -118,9 +118,8 @@ Mega Collection of PowerShell Scripts
 | [open-onedrive.ps1](Scripts/open-onedrive.ps1)       | Opens the user's OneDrive folder                                   | [Help](Docs/open-onedrive.md)       |
 | [open-recycle-bin.ps1](Scripts/open-recycle-bin.ps1) | Starts the File Explorer with the recycle bin folder               | [Help](Docs/open-recycle-bin.md)    |
 | [remind-me.ps1](Scripts/remind-me.ps1)               | Creates a scheduled task that will display a popup message         | [Help](Docs/remind-me.md)       |
+| [save-screenshot.ps1](Scripts/save-screenshot.ps1)   | Saves a single screenshot                                          | [Help](Docs/save-screenshot.md)     |
 | [set-wallpaper.ps1](Scripts/set-wallpaper.ps1)       | Sets the given image as wallpaper                                  | [Help](Docs/set-wallpaper.md)       |
-| [take-screenshot.ps1](Scripts/take-screenshot.ps1)   | Takes a single screenshot                                          | [Help](Docs/take-screenshot.md)     |
-| [take-screenshots.ps1](Scripts/take-screenshots.ps1) | Takes multiple screenshots (every minute by default)               | [Help](Docs/take-screenshots.md)    |
 
 📁 Scripts for Files & Folders 
 -------------------------------

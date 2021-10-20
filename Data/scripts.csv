@@ -195,6 +195,7 @@ remove-print-jobs.ps1, Removes all jobs from all printers
 remove-tag.ps1, Removes a tag in a Git repository 
 replace-in-files.ps1, Search and replace a pattern in the given files by the replacement
 restart-network-adapters.ps1, Restarts all local network adapters
+save-screenshot.ps1, Saves a single screenshot
 say-date.ps1, Say the current date by text-to-speech
 say-joke.ps1, Say a random Chuck Norris joke by text-to-speech
 say-quote.ps1, Say a random quote by text-to-speech
@@ -226,8 +227,6 @@ start-ipfs-server.ps1, Starts a local IPFS server
 switch-branch.ps1, Switches the branch in the current/given Git repository (including submodules)
 switch-shelly1.ps1, Switches a Shelly1 device in the local network
 sync-repo.ps1, Synchronizes a Git repository by push & pull (including submodules)
-take-screenshot.ps1, Takes a single screenshot
-take-screenshots.ps1, Takes multiple screenshots
 translate-file.ps1, Translates the given text file into another language
 translate-files.ps1, Translates the given text files into any supported language
 translate-text.ps1, Translates the given text into other languages
