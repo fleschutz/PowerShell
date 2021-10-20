@@ -24,7 +24,7 @@ check-ping.ps1 [[-hosts] <String>] [<CommonParameters>]
 ## Example
 ```powershell
 PS> ./check-ping
-✔️ 36 ms ping average (13 ms min, 109 ms max, 10 hosts)
+✔️ Ping is 36 ms average (13 ms min, 109 ms max, using 10 hosts)
 
 ```
 

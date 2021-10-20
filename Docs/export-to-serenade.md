@@ -41,7 +41,7 @@ export-to-serenade.ps1 [[-WakeWord] <String>] [[-FilePattern] <String>] [[-Targe
 ## Example
 ```powershell
 PS> ./export-to-serenade.ps1 Computer
-Exporting 264 scripts to C:\Users\Markus/.serenade/scripts/PowerShell.js...
+⏳ Exporting 264 scripts to C:\Users\Markus/.serenade/scripts/PowerShell.js...
 ✔️ exported 264 PowerShell scripts to Serenade in 22 sec
 
 ```

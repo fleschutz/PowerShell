@@ -2,11 +2,11 @@
 .SYNOPSIS
 	Takes a single screenshot and saves it into a folder
 .DESCRIPTION
-	This script takes a single screenshot and saves it into a folder.
+	This script takes a single screenshot and saves it into a target folder (the user's pictures folder by default).
 .PARAMETER Directory
-	Specifies the target directory
+	Specifies the target directory (the user's pictures folder by default)
 .EXAMPLE
-	PS> ./take-screenshot C:\Temp
+	PS> ./save-screenshot C:\Temp
 .NOTES
 	Author: Markus Fleschutz · License: CC0
 .LINK
