@@ -1,15 +1,15 @@
 ﻿<#
 .SYNOPSIS
-	Lists all Windows scheduler tasks
+	Lists all scheduled tasks
 .DESCRIPTION
-	This script lists all Windows scheduler tasks.
+	This script lists all scheduled tasks.
 .EXAMPLE
 	PS> ./list-tasks
 
-	TaskPath                                       TaskName                          State
-	--------                                       --------                          -----
-	\Microsoft\Windows\.NET Framework\             .NET Framework NGEN v4.0.30319    Ready
-	\Microsoft\Windows\.NET Framework\             .NET Framework NGEN v4.0.30319 64 Ready
+	TaskName                            State  TaskPath                                       
+	--------                            -----  --------
+	.NET Framework NGEN v4.0.30319      Ready  \Microsoft\Windows\.NET Framework\             
+	.NET Framework NGEN v4.0.30319 64   Ready  \Microsoft\Windows\.NET Framework\             
 	...
 .NOTES
 	Author: Markus Fleschutz · License: CC0
@@ -18,7 +18,7 @@
 #>
 
 try {
-	Get-ScheduledTask
+	Get-ScheduledTask | Format-Table -property TaskName,State,TaskPath
 	exit 0 # success
 } catch {
 	"⚠️ Error: $($Error[0]) ($($MyInvocation.MyCommand.Name):$($_.InvocationInfo.ScriptLineNumber))"
