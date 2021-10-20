@@ -88,6 +88,7 @@ function ListTools {
 	CheckFor gh	"--version"
 	CheckFor git	"--version"
 	CheckFor gpg	"--version"
+	CheckFor hcsdiag ""
 	CheckFor help	"--version"
 	CheckFor hostname ""
 	CheckFor htop	"--version"
