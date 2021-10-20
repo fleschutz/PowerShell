@@ -3,8 +3,8 @@
 	Saves a single screenshot
 .DESCRIPTION
 	This script takes a single screenshot and saves it into a target folder (the user's pictures folder by default).
-.PARAMETER Directory
-	Specifies the target directory (the user's pictures folder by default)
+.PARAMETER TargetFolder
+	Specifies the target folder (the user's pictures folder by default)
 .EXAMPLE
 	PS> ./save-screenshot
  	✔️ screenshot saved to C:\Users\Markus\Pictures\2021-10-10T14-33-22.png
@@ -14,7 +14,7 @@
 	https://github.com/fleschutz/PowerShell
 #>
 
-param([string]$Directory = "$HOME/Pictures")
+param([string]$TargetFolder = "$HOME/Pictures")
 
 function TakeScreenshot { param([string]$FilePath)
 	Add-Type -Assembly System.Windows.Forms            
@@ -28,12 +28,12 @@ function TakeScreenshot { param([string]$FilePath)
 }
 
 try {
-        if (-not(test-path "$Directory" -pathType container)) {
-                throw "Target folder at 📂$Directory doesn't exist"
+        if (-not(test-path "$TargetFolder" -pathType container)) {
+                throw "Target folder at 📂$TargetFolder doesn't exist"
         }
 	$Time = (Get-Date)
 	$Filename = "$($Time.Year)-$($Time.Month)-$($Time.Day)T$($Time.Hour)-$($Time.Minute)-$($Time.Second).png"
-	$FilePath = (Join-Path $Directory $Filename)
+	$FilePath = (Join-Path $TargetFolder $Filename)
 	TakeScreenshot $FilePath
 
 	"✔️ screenshot saved to $FilePath"
