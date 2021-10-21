@@ -113,6 +113,7 @@ Mega Collection of PowerShell Scripts
 | [new-email.ps1](Scripts/new-email.ps1)               | Starts the default email client to write a new email               | [Help](Docs/new-email.md)           |
 | [open-browser.ps1](Scripts/open-browser.ps1)         | Starts the default Web browser                                     | [Help](Docs/open-browser.md)        |
 | [open-calculator.ps1](Scripts/open-calculator.ps1)   | Starts the calculator program                                      | [Help](Docs/open-calculator.md)     |
+| [open-downloads.ps1](Scripts/open-downloads.ps1)     | Opens the downloads folder                                         | [Help](Docs/open-downloads.md)     |
 | [open-email-client.ps1](Scripts/open-browser.ps1)    | Starts the default email client                                    | [Help](Docs/open-email-client.md)   |
 | [open-file-explorer.ps1](Scripts/open-file-explorer.ps1) | Starts the File Explorer                                       | [Help](Docs/open-file-explorer.md)  |
 | [open-netflix.ps1](Scripts/open-netflix.ps1)         | Starts the Netflix app                                             | [Help](Docs/open-netflix.md)        |

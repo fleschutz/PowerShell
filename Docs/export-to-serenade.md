@@ -25,11 +25,11 @@ export-to-serenade.ps1 [[-WakeWord] <String>] [[-FilePattern] <String>] [[-Targe
     Accept wildcard characters?  false
 
 -TargetFile <String>
-    Specifies the target file ("$HOME/.serenade/scripts/PowerShell.js" by default)
+    Specifies the target file ("$HOME/.serenade/scripts/custom.js" by default)
     
     Required?                    false
     Position?                    3
-    Default value                "$HOME/.serenade/scripts/PowerShell.js"
+    Default value                "$HOME/.serenade/scripts/custom.js"
     Accept pipeline input?       false
     Accept wildcard characters?  false
 
@@ -41,7 +41,7 @@ export-to-serenade.ps1 [[-WakeWord] <String>] [[-FilePattern] <String>] [[-Targe
 ## Example
 ```powershell
 PS> ./export-to-serenade.ps1 Computer
-⏳ Exporting 264 scripts to C:\Users\Markus/.serenade/scripts/PowerShell.js...
+⏳ Exporting 264 scripts to C:\Users\Markus/.serenade/scripts/custom.js...
 ✔️ exported 264 PowerShell scripts to Serenade in 22 sec
 
 ```
