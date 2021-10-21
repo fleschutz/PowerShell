@@ -21,7 +21,7 @@ try {
 		$obj.SendKeys([char]174) # each tick is -2%
 	}
 	"🔉️ -$($percent)%"
-	& "$PSScriptRoot/speak-english.ps1" "OK, $percent percent less volume"
+	& "$PSScriptRoot/speak-english.ps1" "$percent percent less volume"
 	exit 0 # success
 } catch {
 	"⚠️ Error: $($Error[0]) ($($MyInvocation.MyCommand.Name):$($_.InvocationInfo.ScriptLineNumber))"
