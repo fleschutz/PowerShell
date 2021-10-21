@@ -48,9 +48,9 @@ try {
 		stop-process -name $ProgramName -force -errorAction 'silentlycontinue'
 	}
 	if ($($Processes.Count) -eq 1) {
-		"✔️ $FullProgramName closed (1 process stopped)"
+		"✔️ $FullProgramName closed, 1 process stopped"
 	} else {
-		"✔️ $FullProgramName closed ($($Processes.Count) processes stopped)"
+		"✔️ $FullProgramName closed, $($Processes.Count) processes stopped"
 	}
 	exit 0 # success
 } catch {
