@@ -47,7 +47,11 @@ try {
 		start-sleep -milliseconds 100
 		stop-process -name $ProgramName -force -errorAction 'silentlycontinue'
 	}
-	"✔️ closed $FullProgramName, stopped $($Processes.Count) process(es)"
+	if ($($Processes.Count) -eq 1) {
+		"✔️ $FullProgramName closed (1 process stopped)"
+	} else {
+		"✔️ $FullProgramName closed ($($Processes.Count) processes stopped)"
+	}
 	exit 0 # success
 } catch {
 	"⚠️ Error: $($Error[0]) ($($MyInvocation.MyCommand.Name):$($_.InvocationInfo.ScriptLineNumber))"
