@@ -11,7 +11,7 @@
 	Specifies the target file ("$HOME/.serenade/scripts/custom.js" by default)
 .EXAMPLE
 	PS> ./export-to-serenade.ps1 Computer
-	⏳ Exporting 264 scripts to C:\Users\Markus/.serenade/scripts/custom.js...
+	⏳ Exporting 264 scripts with wakeword 'Computer' to C:\Users\Markus/.serenade/scripts/custom.js...
 	✔️ exported 264 PowerShell scripts to Serenade in 22 sec
 .NOTES
 	Author: Markus Fleschutz · License: CC0
@@ -27,7 +27,7 @@ try {
 	$StopWatch = [system.diagnostics.stopwatch]::startNew()
 
 	$Scripts = Get-ChildItem "$FilePattern"
-	"⏳ Exporting $($Scripts.Count) scripts to $TargetFile..."
+	"⏳ Exporting $($Scripts.Count) scripts with wakeword `"$WakeWord`" to $TargetFile..."
 
 	"/* NOTE: This file has been generated automatically by export-to-serenade.ps1 */" | Set-Content "$TargetFile"
 	foreach ($Script in $Scripts) {
@@ -35,9 +35,7 @@ try {
 		$Keyword = $ScriptName -replace "-"," "
 		""                                                         | Add-Content "$TargetFile"
 		"serenade.global().command(`"$WakeWord $Keyword`", async (api) => {" | Add-Content "$TargetFile"
-		"await api.focusOrLaunchApplication(`"terminal`");"        | Add-Content "$TargetFile"
-		"await api.typeText(`"$ScriptName.ps1`");"                 | Add-Content "$TargetFile"
-		"await api.pressKey(`"return`");"                          | Add-Content "$TargetFile"
+		"await api.focusOrLaunchApplication(`"terminal`"); await api.typeText(`"$ScriptName.ps1`"); await api.pressKey(`"return`");"                          | Add-Content "$TargetFile"
 		"});"                                                      | Add-Content "$TargetFile"
 	}
 
