@@ -8,10 +8,10 @@
 .PARAMETER FilePattern
 	Specifies the file pattern for the scripts ("$PSScriptRoot/*.ps1" by default)
 .PARAMETER TargetFile
-	Specifies the target file ("$HOME/.serenade/scripts/PowerShell.js" by default)
+	Specifies the target file ("$HOME/.serenade/scripts/custom.js" by default)
 .EXAMPLE
 	PS> ./export-to-serenade.ps1 Computer
-	⏳ Exporting 264 scripts to C:\Users\Markus/.serenade/scripts/PowerShell.js...
+	⏳ Exporting 264 scripts to C:\Users\Markus/.serenade/scripts/custom.js...
 	✔️ exported 264 PowerShell scripts to Serenade in 22 sec
 .NOTES
 	Author: Markus Fleschutz · License: CC0
@@ -21,7 +21,7 @@
 
 #requires -version 2
 
-param([string]$WakeWord = "", [string]$FilePattern = "$PSScriptRoot/*.ps1", [string]$TargetFile = "$HOME/.serenade/scripts/PowerShell.js")
+param([string]$WakeWord = "", [string]$FilePattern = "$PSScriptRoot/*.ps1", [string]$TargetFile = "$HOME/.serenade/scripts/custom.js")
 
 try {
 	$StopWatch = [system.diagnostics.stopwatch]::startNew()
