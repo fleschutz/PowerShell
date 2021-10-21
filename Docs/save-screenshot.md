@@ -1,13 +1,13 @@
-## save-screenshot.ps1 - Takes a single screenshot and saves it into a folder
+## save-screenshot.ps1 - Saves a single screenshot
 
 This script takes a single screenshot and saves it into a target folder (the user's pictures folder by default).
 
 ## Parameters
 ```powershell
-save-screenshot.ps1 [[-Directory] <String>] [<CommonParameters>]
+save-screenshot.ps1 [[-TargetFolder] <String>] [<CommonParameters>]
 
--Directory <String>
-    Specifies the target directory (the user's pictures folder by default)
+-TargetFolder <String>
+    Specifies the target folder (the user's pictures folder by default)
     
     Required?                    false
     Position?                    1
@@ -22,7 +22,8 @@ save-screenshot.ps1 [[-Directory] <String>] [<CommonParameters>]
 
 ## Example
 ```powershell
-PS> ./save-screenshot C:\Temp
+PS> ./save-screenshot
+	✔️ screenshot saved to C:\Users\Markus\Pictures\2021-10-10T14-33-22.png
 
 ```
 
