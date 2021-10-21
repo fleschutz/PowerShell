@@ -104,6 +104,7 @@ Mega Collection of PowerShell Scripts
 | [close-netflix.ps1](Scripts/close-netflix.ps1)       | Closes the Netflix application                                     | [Help](Docs/close-netflix.md)       |
 | [close-onedrive.ps1](Scripts/close-onedrive.ps1)     | Closes Microsoft OneDrive                                          | [Help](Docs/close-onedrive.md)      |
 | [close-system-settings.ps1](Scripts/close-system-settings.ps1) | Closes the System Settings window                        | [Help](Docs/close-system-settings.md)|
+| [close-task-manager.ps1](Scripts/close-task-manager.ps1) | Closes the Task Manager                                        | [Help](Docs/close-task-manager.md)   |
 | [close-thunderbird.ps1](Scripts/close-thunderbird.ps1) | Closes Mozilla Thunderbird                                       | [Help](Docs/close-thunderbird.md)   |
 | [close-vlc.ps1](Scripts/close-vlc.ps1)               | Closes the VLC media player application                            | [Help](Docs/close-vlc.md)           |
 | [close-windows-terminal.ps1](Scripts/close-windows-terminal.ps1) | Closes the Windows Terminal application                | [Help](Docs/close-windows-terminal.md)|
