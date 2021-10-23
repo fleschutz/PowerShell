@@ -8,10 +8,10 @@
 .PARAMETER FilePattern
 	Specifies the file pattern for the scripts ("$PSScriptRoot/*.ps1" by default)
 .PARAMETER TargetFile
-	Specifies the target file ("$HOME/.serenade/scripts/custom.js" by default)
+	Specifies the target file ("$HOME/.serenade/scripts/PowerShell.js" by default)
 .EXAMPLE
 	PS> ./export-to-serenade.ps1 Computer
-	⏳ Exporting 264 PowerShell scripts to C:\Users\Markus/.serenade/scripts/custom.js...
+	⏳ Exporting 264 PowerShell scripts to C:\Users\Markus/.serenade/scripts/PowerShell.js...
 	✔️ exported 264 scripts with wakework "Computer" to Serenade in 22 sec
 .NOTES
 	Author: Markus Fleschutz · License: CC0
@@ -21,24 +21,23 @@
 
 #requires -version 2
 
-param([string]$WakeWord = "", [string]$FilePattern = "$PSScriptRoot/*.ps1", [string]$TargetFile = "$HOME/.serenade/scripts/custom.js")
+param([string]$WakeWord = "", [string]$FilePattern = "$PSScriptRoot/*.ps1", [string]$TargetFile = "$HOME/.serenade/scripts/PowerShell.js")
 
 try {
 	$StopWatch = [system.diagnostics.stopwatch]::startNew()
 
 	$Scripts = Get-ChildItem "$FilePattern"
-	"⏳ Exporting $($Scripts.Count) PowerShell scripts to $TargetFile..."
+	"⏳ Found $($Scripts.Count) scripts, exporting them to $TargetFile..."
 
 	"/* NOTE: This file has been generated automatically by export-to-serenade.ps1 */" | Set-Content "$TargetFile"
 	foreach ($Script in $Scripts) {
 		$ScriptName = $Script.basename
 		$Keyword = $ScriptName -replace "-"," "
-		""                                                         | Add-Content "$TargetFile"
 		"serenade.global().command(`"$WakeWord $Keyword`", async (api) => { await api.focusOrLaunchApplication(`"terminal`"); await api.typeText(`"$ScriptName.ps1`"); await api.pressKey(`"return`"); });" | Add-Content "$TargetFile"
 	}
 
 	[int]$Elapsed = $StopWatch.Elapsed.TotalSeconds
-	"✔️ exported $($Scripts.Count) scripts with wakeword `"$WakeWord`" to Serenade in $Elapsed sec"
+	"✔️ exported $($Scripts.Count) PowerShell scripts with wakeword `"$WakeWord`" to Serenade in $Elapsed sec"
 	exit 0 # success
 } catch {
 	write-error "⚠️ Error in line $($_.InvocationInfo.ScriptLineNumber): $($Error[0])"
