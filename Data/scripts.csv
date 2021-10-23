@@ -158,14 +158,15 @@ moon.ps1, Prints the current moon phase
 mute-audio.ps1, Mutes the audio device
 open-browser.ps1, Starts the default Web browser
 open-calculator.ps1, Starts the calculator program
-open-downloads-folder.ps1, Opens the downloads folder
+open-downloads-folder.ps1, Opens the File Explorer with the downloads folder
 open-email-client.ps1, Starts the default email client
-open-file-explorer.ps1, Starts the Microsoft File Explorer
-open-home-folder.ps1, Opens the home folder
+open-file-explorer.ps1, Opens the File Explorer
+open-home-folder.ps1, Opens the File Explorer with the home folder
+open-music-folder.ps1, Opens the File Explorer with the music folder
 open-netflix.ps1, Starts the Netflix app
 open-onedrive.ps1, Opens the user's OneDrive folder 
-open-recycle-bin.ps1, Starts the File Explorer with the recycle bin folder
-open-repos-folder.ps1, Opens the Git repositories folder
+open-recycle-bin.ps1, Opens the File Explorer with the recycle bin folder
+open-repos-folder.ps1, Opens the File Explorer with the Git repositories folder
 open-task-manager.ps1, Starts the Task Manager
 pick-commit.ps1, Cherry-picks a Git commit into multiple branches
 play-beep.ps1, Plays a beep sound
