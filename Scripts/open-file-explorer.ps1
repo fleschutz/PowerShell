@@ -16,7 +16,11 @@
 param([string]$Path = "")
 
 try {
-	start-process explorer.exe "$Path"
+	if ("$Path" -ne "") {
+		start-process explorer.exe "$Path"
+	} else {
+		start-process explorer.exe
+	}
 	exit 0 # success
 } catch {
 	"⚠️ Error: $($Error[0]) ($($MyInvocation.MyCommand.Name):$($_.InvocationInfo.ScriptLineNumber))"
