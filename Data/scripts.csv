@@ -158,6 +158,7 @@ moon.ps1, Prints the current moon phase
 mute-audio.ps1, Mutes the audio device
 open-browser.ps1, Starts the default Web browser
 open-calculator.ps1, Starts the calculator program
+open-c-drive.ps1, Opens the C: drive folder
 open-downloads-folder.ps1, Opens the user's downloads folder
 open-dropbox-folder.ps1, Opens the user's Dropbox folder
 open-email-client.ps1, Starts the default email client

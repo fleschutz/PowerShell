@@ -113,6 +113,7 @@ Mega Collection of PowerShell Scripts
 | [new-email.ps1](Scripts/new-email.ps1)               | Starts the default email client to write a new email               | [Help](Docs/new-email.md)           |
 | [open-browser.ps1](Scripts/open-browser.ps1)         | Starts the default Web browser                                     | [Help](Docs/open-browser.md)        |
 | [open-calculator.ps1](Scripts/open-calculator.ps1)   | Starts the calculator program                                      | [Help](Docs/open-calculator.md)     |
+| [open-c-drive.ps1](Scripts/open-c-drive.ps1)         | Opens the C: drive folder                                          | [Help](Docs/open-c-drive.md)        |
 | [open-downloads-folders.ps1](Scripts/open-downloads-folder.ps1) | Opens the user's downloads folder                       | [Help](Docs/open-downloads-folder.md)     |
 | [open-dropbox-folder.ps1](Scripts/open-dropbox-folder.ps1) | Opens the user's Dropbox folder                              | [Help](Docs/open-dropbox-folder.md)     |
 | [open-email-client.ps1](Scripts/open-browser.ps1)    | Starts the default email client                                    | [Help](Docs/open-email-client.md)   |
