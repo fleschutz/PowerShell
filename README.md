@@ -113,17 +113,18 @@ Mega Collection of PowerShell Scripts
 | [new-email.ps1](Scripts/new-email.ps1)               | Starts the default email client to write a new email               | [Help](Docs/new-email.md)           |
 | [open-browser.ps1](Scripts/open-browser.ps1)         | Starts the default Web browser                                     | [Help](Docs/open-browser.md)        |
 | [open-calculator.ps1](Scripts/open-calculator.ps1)   | Starts the calculator program                                      | [Help](Docs/open-calculator.md)     |
-| [open-downloads-folders.ps1](Scripts/open-downloads-folder.ps1) | Opens the downloads folder                              | [Help](Docs/open-downloads-folder.md)     |
+| [open-downloads-folders.ps1](Scripts/open-downloads-folder.ps1) | Opens the user's downloads folder                       | [Help](Docs/open-downloads-folder.md)     |
 | [open-email-client.ps1](Scripts/open-browser.ps1)    | Starts the default email client                                    | [Help](Docs/open-email-client.md)   |
 | [open-file-explorer.ps1](Scripts/open-file-explorer.ps1) | Opens the File Explorer                                        | [Help](Docs/open-file-explorer.md)  |
-| [open-home-folder.ps1](Scripts/open-home-folder.ps1) | Opens the File Explorer with the home folder                       | [Help](Docs/open-home-folder.md)     |
-| [open-music-folder.ps1](Scripts/open-music-folder.ps1)| Opens the File Explorer with the music folder                     | [Help](Docs/open-music-folder.md)     |
+| [open-home-folder.ps1](Scripts/open-home-folder.ps1) | Opens the user's home folder                                       | [Help](Docs/open-home-folder.md)     |
+| [open-music-folder.ps1](Scripts/open-music-folder.ps1)| Opens the user's music folder                                     | [Help](Docs/open-music-folder.md)     |
 | [open-netflix.ps1](Scripts/open-netflix.ps1)         | Starts the Netflix app                                             | [Help](Docs/open-netflix.md)        |
-| [open-onedrive.ps1](Scripts/open-onedrive.ps1)       | Opens the user's OneDrive folder                                   | [Help](Docs/open-onedrive.md)       |
-| [open-recycle-bin.ps1](Scripts/open-recycle-bin.ps1) | Starts the File Explorer with the recycle bin folder               | [Help](Docs/open-recycle-bin.md)    |
-| [open-repos-folder.ps1](Scripts/open-repos-folder.ps1) | Opens the Git repositories folder                               | [Help](Docs/open-repos-folder.md)     |
+| [open-onedrive-folder.ps1](Scripts/open-onedrive-folder.ps1)| Opens the user's OneDrive folder                            | [Help](Docs/open-onedrive-folder.md) |
+| [open-recycle-bin.ps1](Scripts/open-recycle-bin.ps1) | Opens the user's recycle bin folder                                | [Help](Docs/open-recycle-bin.md)    |
+| [open-repos-folder.ps1](Scripts/open-repos-folder.ps1) | Opens the user's Git repositories folder                         | [Help](Docs/open-repos-folder.md)     |
 | [open-task-manager.ps1](Scripts/open-task-manager.ps1)| Starts the Task Manager                                           | [Help](Docs/open-task-manager.md)    |
-| [remind-me.ps1](Scripts/remind-me.ps1)               | Creates a scheduled task that will display a popup message         | [Help](Docs/remind-me.md)       |
+| [open-videos-folder.ps1](Scripts/open-videos-folder.ps1)| Opens the user's videos folder                                  | [Help](Docs/open-videos-folder.md)  |
+| [remind-me.ps1](Scripts/remind-me.ps1)               | Creates a scheduled task that will display a popup message         | [Help](Docs/remind-me.md)            |
 | [save-screenshot.ps1](Scripts/save-screenshot.ps1)   | Saves a single screenshot                                          | [Help](Docs/save-screenshot.md)     |
 | [set-wallpaper.ps1](Scripts/set-wallpaper.ps1)       | Sets the given image as wallpaper                                  | [Help](Docs/set-wallpaper.md)       |
 
