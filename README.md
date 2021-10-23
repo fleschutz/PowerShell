@@ -116,6 +116,7 @@ Mega Collection of PowerShell Scripts
 | [open-downloads-folders.ps1](Scripts/open-downloads-folder.ps1) | Opens the downloads folder                              | [Help](Docs/open-downloads-folder.md)     |
 | [open-email-client.ps1](Scripts/open-browser.ps1)    | Starts the default email client                                    | [Help](Docs/open-email-client.md)   |
 | [open-file-explorer.ps1](Scripts/open-file-explorer.ps1) | Starts the File Explorer                                       | [Help](Docs/open-file-explorer.md)  |
+| [open-home-folders.ps1](Scripts/open-home-folder.ps1) | Opens the home folder                                             | [Help](Docs/open-home-folder.md)     |
 | [open-netflix.ps1](Scripts/open-netflix.ps1)         | Starts the Netflix app                                             | [Help](Docs/open-netflix.md)        |
 | [open-onedrive.ps1](Scripts/open-onedrive.ps1)       | Opens the user's OneDrive folder                                   | [Help](Docs/open-onedrive.md)       |
 | [open-recycle-bin.ps1](Scripts/open-recycle-bin.ps1) | Starts the File Explorer with the recycle bin folder               | [Help](Docs/open-recycle-bin.md)    |

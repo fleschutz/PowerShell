@@ -161,6 +161,7 @@ open-calculator.ps1, Starts the calculator program
 open-downloads-folder.ps1, Opens the downloads folder
 open-email-client.ps1, Starts the default email client
 open-file-explorer.ps1, Starts the Microsoft File Explorer
+open-home-folder.ps1, Opens the home folder
 open-netflix.ps1, Starts the Netflix app
 open-onedrive.ps1, Opens the user's OneDrive folder 
 open-recycle-bin.ps1, Starts the File Explorer with the recycle bin folder

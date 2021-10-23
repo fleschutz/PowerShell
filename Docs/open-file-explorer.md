@@ -4,7 +4,16 @@ This script starts the File Explorer.
 
 ## Parameters
 ```powershell
-open-file-explorer.ps1 [<CommonParameters>]
+open-file-explorer.ps1 [[-Path] <String>] [<CommonParameters>]
+
+-Path <String>
+    Specifies the path to the folder to display
+    
+    Required?                    false
+    Position?                    1
+    Default value                
+    Accept pipeline input?       false
+    Accept wildcard characters?  false
 
 [<CommonParameters>]
     This script supports the common parameters: Verbose, Debug, ErrorAction, ErrorVariable, WarningAction, 
