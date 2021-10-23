@@ -105,6 +105,7 @@ Mega Collection of PowerShell Scripts
 | [close-onedrive.ps1](Scripts/close-onedrive.ps1)     | Closes Microsoft OneDrive                                          | [Help](Docs/close-onedrive.md)      |
 | [close-serenade.ps1](Scripts/close-serenade.ps1)     | Closes the Serenade application                                    | [Help](Docs/close-serenade.md) |
 | [close-snipping-tool.ps1](Scripts/close-snipping-tool.ps1)| Closes the Snipping Tool application                          | [Help](Docs/close-snipping-tool.md) |
+| [close-spotify.ps1](Scripts/close-spotify.ps1)       | Closes Spotify                                                     | [Help](Docs/close-spotify.md)       |
 | [close-system-settings.ps1](Scripts/close-system-settings.ps1) | Closes the System Settings window                        | [Help](Docs/close-system-settings.md)|
 | [close-task-manager.ps1](Scripts/close-task-manager.ps1) | Closes the Task Manager                                        | [Help](Docs/close-task-manager.md)   |
 | [close-thunderbird.ps1](Scripts/close-thunderbird.ps1) | Closes Mozilla Thunderbird                                       | [Help](Docs/close-thunderbird.md)   |
@@ -129,6 +130,7 @@ Mega Collection of PowerShell Scripts
 | [open-recycle-bin.ps1](Scripts/open-recycle-bin.ps1) | Opens the user's recycle bin folder                                | [Help](Docs/open-recycle-bin.md)    |
 | [open-repos-folder.ps1](Scripts/open-repos-folder.ps1) | Opens the user's Git repositories folder                         | [Help](Docs/open-repos-folder.md)     |
 | [open-snipping-tool.ps1](Scripts/open-snipping-tool.ps1)| Starts the Snipping Tool                                        | [Help](Docs/open-snipping-tool.md)        |
+| [open-spotify.ps1](Scripts/open-spotify.ps1)         | Opens Spotify                                                      | [Help](Docs/open-spotify.md)        |
 | [open-task-manager.ps1](Scripts/open-task-manager.ps1)| Starts the Task Manager                                           | [Help](Docs/open-task-manager.md)    |
 | [open-videos-folder.ps1](Scripts/open-videos-folder.ps1)| Opens the user's videos folder                                  | [Help](Docs/open-videos-folder.md)  |
 | [remind-me.ps1](Scripts/remind-me.ps1)               | Creates a scheduled task that will display a popup message         | [Help](Docs/remind-me.md)            |
