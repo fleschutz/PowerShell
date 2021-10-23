@@ -50,6 +50,7 @@ close-firefox.ps1, Closes the Firefox Web browser
 close-program.ps1, Closes the given program gracefully
 close-netflix.ps1, Closes the Netflix application gracefully
 close-onedrive.ps1, Closes Microsoft OneDrive gracefully
+close-serenade.ps1, Closes the Serenade.ai application gracefully
 close-snipping-tool.ps1, Closes the Snipping Tool application gracefully
 close-system-settings.ps1, Closes the System Settings gracefully
 close-thunderbird.ps1, Closes Mozilla Thunderbird gracefully

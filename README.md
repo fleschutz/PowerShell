@@ -103,6 +103,7 @@ Mega Collection of PowerShell Scripts
 | [close-program.ps1](Scripts/close-program.ps1)       | Closes the given program gracefully                                | [Help](Docs/close-program.md)       |
 | [close-netflix.ps1](Scripts/close-netflix.ps1)       | Closes the Netflix application                                     | [Help](Docs/close-netflix.md)       |
 | [close-onedrive.ps1](Scripts/close-onedrive.ps1)     | Closes Microsoft OneDrive                                          | [Help](Docs/close-onedrive.md)      |
+| [close-serenade.ps1](Scripts/close-serenade.ps1)     | Closes the Serenade application                                    | [Help](Docs/close-serenade.md) |
 | [close-snipping-tool.ps1](Scripts/close-snipping-tool.ps1)| Closes the Snipping Tool application                          | [Help](Docs/close-snipping-tool.md) |
 | [close-system-settings.ps1](Scripts/close-system-settings.ps1) | Closes the System Settings window                        | [Help](Docs/close-system-settings.md)|
 | [close-task-manager.ps1](Scripts/close-task-manager.ps1) | Closes the Task Manager                                        | [Help](Docs/close-task-manager.md)   |
