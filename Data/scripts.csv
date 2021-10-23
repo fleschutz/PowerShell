@@ -165,6 +165,7 @@ open-home-folder.ps1, Opens the home folder
 open-netflix.ps1, Starts the Netflix app
 open-onedrive.ps1, Opens the user's OneDrive folder 
 open-recycle-bin.ps1, Starts the File Explorer with the recycle bin folder
+open-repos-folder.ps1, Opens the Git repositories folder
 open-task-manager.ps1, Starts the Task Manager
 pick-commit.ps1, Cherry-picks a Git commit into multiple branches
 play-beep.ps1, Plays a beep sound

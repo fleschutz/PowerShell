@@ -30,7 +30,7 @@ export-to-manuals.ps1 [[-FilePattern] <String>] [[-TargetDir] <String>] [<Common
 ## Example
 ```powershell
 PS> ./export-to-manuals.ps1
-Exporting 264 PowerShell scripts to /home/markus/PowerShell/Docs...
+Found 264 scripts, exporting them to /home/markus/PowerShell/Docs...
 ✔️ exported 264 PowerShell scripts in 28 sec
 
 ```

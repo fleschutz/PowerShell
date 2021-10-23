@@ -120,6 +120,7 @@ Mega Collection of PowerShell Scripts
 | [open-netflix.ps1](Scripts/open-netflix.ps1)         | Starts the Netflix app                                             | [Help](Docs/open-netflix.md)        |
 | [open-onedrive.ps1](Scripts/open-onedrive.ps1)       | Opens the user's OneDrive folder                                   | [Help](Docs/open-onedrive.md)       |
 | [open-recycle-bin.ps1](Scripts/open-recycle-bin.ps1) | Starts the File Explorer with the recycle bin folder               | [Help](Docs/open-recycle-bin.md)    |
+| [open-repos-folders.ps1](Scripts/open-repos-folder.ps1) | Opens the Git repositories folder                               | [Help](Docs/open-repos-folder.md)     |
 | [open-task-manager.ps1](Scripts/open-task-manager.ps1)| Starts the Task Manager                                           | [Help](Docs/open-task-manager.md)    |
 | [remind-me.ps1](Scripts/remind-me.ps1)               | Creates a scheduled task that will display a popup message         | [Help](Docs/remind-me.md)       |
 | [save-screenshot.ps1](Scripts/save-screenshot.ps1)   | Saves a single screenshot                                          | [Help](Docs/save-screenshot.md)     |
