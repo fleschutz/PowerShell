@@ -63,10 +63,10 @@ How to use PowerShell in Windows context menus?
 How to use Serenade to execute PowerShell scripts by voice?
 -----------------------------------------------------------
 1. Download and install Serenade from https://serenade.ai/.
-2. Execute "./export-to-serenade.ps1 Computer" - this creates a custom JavaScript file in $HOME/.serenade/scripts/ with wakeword 'Computer'.
-3. Start Serenade and click the Pause button.
-4. Open Windows Terminal and click into the window
-5. Say: "Computer, list folder" - this starts list-folder.ps1 in the terminal
+2. Execute "./export-to-serenade.ps1 Computer" - this creates the custom JavaScript file $HOME/.serenade/scripts/PowerShell.js with wakeword 'Computer'.
+3. Start Serenade and click the Pause button to enable Listening mode.
+4. Open Windows Terminal and click into the window.
+5. Say: "Computer, open C: drive" - this starts the File Explorer with the C: drive folder (using PowerShell script 'open-c-drive.ps1').
 
 
 Which editor to use for PowerShell scripts?
