@@ -120,6 +120,7 @@ Mega Collection of PowerShell Scripts
 | [open-home-folder.ps1](Scripts/open-home-folder.ps1) | Opens the user's home folder                                       | [Help](Docs/open-home-folder.md)     |
 | [open-music-folder.ps1](Scripts/open-music-folder.ps1)| Opens the user's music folder                                     | [Help](Docs/open-music-folder.md)     |
 | [open-netflix.ps1](Scripts/open-netflix.ps1)         | Starts the Netflix app                                             | [Help](Docs/open-netflix.md)        |
+| [open-notepad.ps1](Scripts/open-notepad.ps1)         | Starts the Notepad app                                             | [Help](Docs/open-notepad.md)        |
 | [open-onedrive-folder.ps1](Scripts/open-onedrive-folder.ps1)| Opens the user's OneDrive folder                            | [Help](Docs/open-onedrive-folder.md) |
 | [open-recycle-bin.ps1](Scripts/open-recycle-bin.ps1) | Opens the user's recycle bin folder                                | [Help](Docs/open-recycle-bin.md)    |
 | [open-repos-folder.ps1](Scripts/open-repos-folder.ps1) | Opens the user's Git repositories folder                         | [Help](Docs/open-repos-folder.md)     |

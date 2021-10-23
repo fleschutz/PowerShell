@@ -165,6 +165,7 @@ open-file-explorer.ps1, Opens the File Explorer
 open-home-folder.ps1, Opens the user's home folder
 open-music-folder.ps1, Opens the user's music folder
 open-netflix.ps1, Starts the Netflix app
+open-notepad.ps1, Starts the Notepad app
 open-onedrive-folder.ps1, Opens the user's OneDrive folder 
 open-recycle-bin.ps1, Opens the user's recycle bin folder
 open-repos-folder.ps1, Opens the user's Git repositories folder
