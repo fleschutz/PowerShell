@@ -1,6 +1,6 @@
 ## open-music-folder.ps1 - Opens the music folder
 
-This script starts the File Explorer to show the music folder.
+This script starts the File Explorer and shows the music folder.
 
 ## Parameters
 ```powershell

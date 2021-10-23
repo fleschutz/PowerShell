@@ -2,7 +2,7 @@
 .SYNOPSIS
 	Opens the home folder
 .DESCRIPTION
-	This script starts the File Explorer to show the home folder.
+	This script starts the File Explorer and shows the home folder.
 .EXAMPLE
 	PS> ./open-home-folder
 .NOTES

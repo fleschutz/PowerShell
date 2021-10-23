@@ -1,6 +1,6 @@
-## open-downloads-folder.ps1 - Opens the downloads folder
+## open-downloads-folder.ps1 - Opens the user's downloads folder
 
-This script starts the File Explorer to show the downloads folder.
+This script starts the File Explorer and shows the user's downloads folder.
 
 ## Parameters
 ```powershell

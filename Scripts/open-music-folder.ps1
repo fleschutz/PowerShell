@@ -2,7 +2,7 @@
 .SYNOPSIS
 	Opens the music folder
 .DESCRIPTION
-	This script starts the File Explorer to show the music folder.
+	This script starts the File Explorer and shows the music folder.
 .EXAMPLE
 	PS> ./open-music-folder
 .NOTES

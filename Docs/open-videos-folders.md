@@ -1,6 +1,6 @@
-## open-videos-folders.ps1 - Opens the File Explorer with the videos folder
+## open-videos-folders.ps1 - Opens the user's videos folder
 
-This script starts the File Explorer to show the home folder.
+This script starts the File Explorer and shows the user's videos folder.
 
 ## Parameters
 ```powershell

@@ -114,6 +114,7 @@ Mega Collection of PowerShell Scripts
 | [open-browser.ps1](Scripts/open-browser.ps1)         | Starts the default Web browser                                     | [Help](Docs/open-browser.md)        |
 | [open-calculator.ps1](Scripts/open-calculator.ps1)   | Starts the calculator program                                      | [Help](Docs/open-calculator.md)     |
 | [open-downloads-folders.ps1](Scripts/open-downloads-folder.ps1) | Opens the user's downloads folder                       | [Help](Docs/open-downloads-folder.md)     |
+| [open-dropbox-folder.ps1](Scripts/open-dropbox-folder.ps1) | Opens the user's Dropbox folder                              | [Help](Docs/open-dropbox-folder.md)     |
 | [open-email-client.ps1](Scripts/open-browser.ps1)    | Starts the default email client                                    | [Help](Docs/open-email-client.md)   |
 | [open-file-explorer.ps1](Scripts/open-file-explorer.ps1) | Opens the File Explorer                                        | [Help](Docs/open-file-explorer.md)  |
 | [open-home-folder.ps1](Scripts/open-home-folder.ps1) | Opens the user's home folder                                       | [Help](Docs/open-home-folder.md)     |

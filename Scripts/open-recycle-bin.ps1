@@ -1,8 +1,8 @@
 ﻿<#
 .SYNOPSIS
-	Starts the File Explorer with the recycle bin folder
+	Opens the user's recycle bin folder
 .DESCRIPTION
-	This script starts the File Explorer with the recycle bin folder.
+	This script starts the File Explorer and shows the user's recycle bin folder.
 .EXAMPLE
 	PS> ./open-recycle-bin
 .NOTES
