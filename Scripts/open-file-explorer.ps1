@@ -5,14 +5,18 @@
 	This script starts the File Explorer.
 .EXAMPLE
 	PS> ./open-file-explorer
+.PARAMETER Path
+	Specifies the path to the folder to display 
 .NOTES
 	Author: Markus Fleschutz · License: CC0
 .LINK
 	https://github.com/fleschutz/PowerShell
 #>
 
+param([string]$Path = "")
+
 try {
-	start-process explorer.exe
+	start-process explorer.exe "$Path"
 	exit 0 # success
 } catch {
 	"⚠️ Error: $($Error[0]) ($($MyInvocation.MyCommand.Name):$($_.InvocationInfo.ScriptLineNumber))"

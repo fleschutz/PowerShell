@@ -2,9 +2,9 @@
 .SYNOPSIS
 	Opens the downloads folder
 .DESCRIPTION
-	This script starts the File Explorer with the downloads folder.
+	This script starts the File Explorer to show the downloads folder.
 .EXAMPLE
-	PS> ./open-file-explorer
+	PS> ./open-downloads-folder
 .NOTES
 	Author: Markus Fleschutz · License: CC0
 .LINK
@@ -16,7 +16,7 @@ try {
 	if (-not(test-path "$TargetDir" -pathType container)) {
 		throw "Downloads folder at 📂$TargetDir doesn't exist (yet)"
 	}
-	start-process explorer.exe "$TargetDir"
+	"$PSScriptRoot/open-file-explorer.ps1" "$TargetDir"
 	exit 0 # success
 } catch {
 	"⚠️ Error: $($Error[0]) ($($MyInvocation.MyCommand.Name):$($_.InvocationInfo.ScriptLineNumber))"

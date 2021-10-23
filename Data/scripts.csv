@@ -158,7 +158,7 @@ moon.ps1, Prints the current moon phase
 mute-audio.ps1, Mutes the audio device
 open-browser.ps1, Starts the default Web browser
 open-calculator.ps1, Starts the calculator program
-open-downloads.ps1, Opens the downloads folder
+open-downloads-folder.ps1, Opens the downloads folder
 open-email-client.ps1, Starts the default email client
 open-file-explorer.ps1, Starts the Microsoft File Explorer
 open-netflix.ps1, Starts the Netflix app
