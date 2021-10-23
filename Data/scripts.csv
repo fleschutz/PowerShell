@@ -50,6 +50,7 @@ close-firefox.ps1, Closes the Firefox Web browser
 close-program.ps1, Closes the given program gracefully
 close-netflix.ps1, Closes the Netflix application gracefully
 close-onedrive.ps1, Closes Microsoft OneDrive gracefully
+close-snipping-tool.ps1, Closes the Snipping Tool application gracefully
 close-system-settings.ps1, Closes the System Settings gracefully
 close-thunderbird.ps1, Closes Mozilla Thunderbird gracefully
 close-vlc.ps1, Closes the VLC media player application
@@ -170,6 +171,7 @@ open-notepad.ps1, Starts the Notepad app
 open-onedrive-folder.ps1, Opens the user's OneDrive folder 
 open-recycle-bin.ps1, Opens the user's recycle bin folder
 open-repos-folder.ps1, Opens the user's Git repositories folder
+open-snipping-tools.ps1, Opens the Snipping Tool
 open-task-manager.ps1, Starts the Task Manager
 open-videos-folder.ps1, Opens the user's videos folder
 pick-commit.ps1, Cherry-picks a Git commit into multiple branches
