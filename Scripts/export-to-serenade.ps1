@@ -7,6 +7,8 @@
 	Specifies the wakeword (none by default)
 .PARAMETER FilePattern
 	Specifies the file pattern for the scripts ("$PSScriptRoot/*.ps1" by default)
+.PARAMETER Application
+	Specifies the application to be used
 .PARAMETER TargetFile
 	Specifies the target file ("$HOME/.serenade/scripts/PowerShell.js" by default)
 .EXAMPLE
@@ -21,7 +23,7 @@
 
 #requires -version 2
 
-param([string]$WakeWord = "", [string]$FilePattern = "$PSScriptRoot/*.ps1", [string]$TargetFile = "$HOME/.serenade/scripts/PowerShell.js")
+param([string]$WakeWord = "", [string]$FilePattern = "$PSScriptRoot/*.ps1", [string]$Application = "terminal", [string]$TargetFile = "$HOME/.serenade/scripts/PowerShell.js")
 
 try {
 	$StopWatch = [system.diagnostics.stopwatch]::startNew()
@@ -33,7 +35,7 @@ try {
 	foreach ($Script in $Scripts) {
 		$ScriptName = $Script.basename
 		$Keyword = $ScriptName -replace "-"," "
-		"serenade.global().command(`"$WakeWord $Keyword`", async (api) => { await api.focusOrLaunchApplication(`"terminal`"); await api.typeText(`"$ScriptName.ps1`"); await api.pressKey(`"return`"); });" | Add-Content "$TargetFile"
+		"serenade.global().command(`"$($WakeWord.toLower()) $Keyword`", async (api) => { await api.focusOrLaunchApplication(`"$Application`"); await api.typeText(`"$ScriptName.ps1`"); await api.pressKey(`"return`"); });" | Add-Content "$TargetFile"
 	}
 
 	[int]$Elapsed = $StopWatch.Elapsed.TotalSeconds
