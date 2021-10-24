@@ -121,6 +121,9 @@ Mega Collection of PowerShell Scripts
 | [open-dropbox-folder.ps1](Scripts/open-dropbox-folder.ps1) | Opens the user's Dropbox folder                              | [Help](Docs/open-dropbox-folder.md)     |
 | [open-email-client.ps1](Scripts/open-browser.ps1)    | Starts the default email client                                    | [Help](Docs/open-email-client.md)   |
 | [open-file-explorer.ps1](Scripts/open-file-explorer.ps1) | Opens the File Explorer                                        | [Help](Docs/open-file-explorer.md)  |
+| [open-google-earth.ps1](Scripts/open-google-earth.ps1) | Opens Google Earth                                               | [Help](Docs/open-google-earth.md)  |
+| [open-google-maps.ps1](Scripts/open-google-maps.ps1) | Opens Google Maps                                                  | [Help](Docs/open-google-maps.md)  |
+| [open-google-search.ps1](Scripts/open-google-search.ps1) | Opens Google Search                                            | [Help](Docs/open-google-search.md)  |
 | [open-home-folder.ps1](Scripts/open-home-folder.ps1) | Opens the user's home folder                                       | [Help](Docs/open-home-folder.md)     |
 | [open-music-folder.ps1](Scripts/open-music-folder.ps1)| Opens the user's music folder                                     | [Help](Docs/open-music-folder.md)     |
 | [open-netflix.ps1](Scripts/open-netflix.ps1)         | Starts the Netflix app                                             | [Help](Docs/open-netflix.md)        |

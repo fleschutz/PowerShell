@@ -166,6 +166,9 @@ open-downloads-folder.ps1, Opens the user's downloads folder
 open-dropbox-folder.ps1, Opens the user's Dropbox folder
 open-email-client.ps1, Starts the default email client
 open-file-explorer.ps1, Opens the File Explorer
+open-google-earth.ps1, Opens Google Earth
+open-google-maps.ps1, Opens Google Maps
+open-google-search.ps1, Opens Google Search
 open-home-folder.ps1, Opens the user's home folder
 open-music-folder.ps1, Opens the user's music folder
 open-netflix.ps1, Starts the Netflix app
