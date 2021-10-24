@@ -60,13 +60,15 @@ How to use PowerShell in Windows context menus?
 * to disable this execute `Remove_ps1_from_New_context_menu.reg` in subfolder [Data/](../Data)
 
 
-How to use Serenade to execute PowerShell scripts by voice?
------------------------------------------------------------
-1. Download and install Serenade from https://serenade.ai/.
-2. Execute "./export-to-serenade.ps1 Computer" - this creates the custom JavaScript file $HOME/.serenade/scripts/PowerShell.js with wakeword 'Computer'.
-3. Start Serenade and click the Pause button to enable Listening mode.
-4. Open Windows Terminal and click into the window.
-5. Say: "Computer, open C: drive" - this starts the File Explorer with the C: drive folder (using PowerShell script 'open-c-drive.ps1').
+How to use Serenade to execute the scripts by voice?
+----------------------------------------------------
+1. Download and install the PowerShell scripts and set the search path to it.
+2. Download and install Serenade from https://serenade.ai/.
+3. Execute "./export-to-serenade.ps1 Computer" - this creates the custom JavaScript file $HOME/.serenade/scripts/PowerShell.js with wakeword 'Computer'.
+4. Start Serenade and click the Pause button to enable Listening mode.
+5. Open Windows Terminal and click into the window.
+6. Say: "Computer, open calculator" - this starts the calculator application (using PowerShell script 'open-calculator.ps1').
+7. Say: "Computer, close calculator" - this stops the calculator application (using PowerShell script 'close-calculator.ps1').
 
 
 Which editor to use for PowerShell scripts?
