@@ -166,8 +166,10 @@ open-downloads-folder.ps1, Opens the user's downloads folder
 open-dropbox-folder.ps1, Opens the user's Dropbox folder
 open-email-client.ps1, Starts the default email client
 open-file-explorer.ps1, Opens the File Explorer
+open-google-contacts.ps1, Opens Google Contacts
 open-google-earth.ps1, Opens Google Earth
 open-google-maps.ps1, Opens Google Maps
+open-google-news.ps1, Opens Google News
 open-google-search.ps1, Opens Google Search
 open-google-translate.ps1, Opens Google Translate
 open-home-folder.ps1, Opens the user's home folder
