@@ -114,12 +114,14 @@ Mega Collection of PowerShell Scripts
 | [enable-god-mode.ps1](Scripts/enable-god-mode.ps1)   | Enables the god mode (adds a new icon to the desktop)              | [Help](Docs/enable-god-mode.md)     |
 | [list-clipboard.ps1](Scripts/list-clipboard.ps1)     | Lists the contents of the clipboard                                | [Help](Docs/list-clipboard.md)      |
 | [new-email.ps1](Scripts/new-email.ps1)               | Starts the default email client to write a new email               | [Help](Docs/new-email.md)           |
+| [open-amazon.ps1](Scripts/open-amazon.ps1)           | Opens Amazon's website                                             | [Help](Docs/open-amazon.md)  |
 | [open-browser.ps1](Scripts/open-browser.ps1)         | Starts the default Web browser                                     | [Help](Docs/open-browser.md)        |
 | [open-calculator.ps1](Scripts/open-calculator.ps1)   | Starts the calculator program                                      | [Help](Docs/open-calculator.md)     |
 | [open-c-drive.ps1](Scripts/open-c-drive.ps1)         | Opens the C: drive folder                                          | [Help](Docs/open-c-drive.md)        |
 | [open-downloads-folders.ps1](Scripts/open-downloads-folder.ps1) | Opens the user's downloads folder                       | [Help](Docs/open-downloads-folder.md)     |
 | [open-dropbox-folder.ps1](Scripts/open-dropbox-folder.ps1) | Opens the user's Dropbox folder                              | [Help](Docs/open-dropbox-folder.md)     |
 | [open-email-client.ps1](Scripts/open-browser.ps1)    | Starts the default email client                                    | [Help](Docs/open-email-client.md)   |
+| [open-facebook.ps1](Scripts/open-facebook.ps1)       | Opens Facebook's website                                           | [Help](Docs/open-facebook.md)  |
 | [open-file-explorer.ps1](Scripts/open-file-explorer.ps1) | Opens the File Explorer                                        | [Help](Docs/open-file-explorer.md)  |
 | [open-google-contacts.ps1](Scripts/open-google-contacts.ps1) | Opens Google Contacts                                      | [Help](Docs/open-google-contacts.md)  |
 | [open-google-earth.ps1](Scripts/open-google-earth.ps1) | Opens Google Earth                                               | [Help](Docs/open-google-earth.md)  |

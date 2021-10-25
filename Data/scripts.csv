@@ -159,12 +159,14 @@ locate-zip-code.ps1, Prints the geographic location of the given zip-code
 make-install.ps1, Installs built executables and libs to the installation directory
 moon.ps1, Prints the current moon phase
 mute-audio.ps1, Mutes the audio device
+open-amazon.ps1, Opens Amazon's website
 open-browser.ps1, Starts the default Web browser
 open-calculator.ps1, Starts the calculator program
 open-c-drive.ps1, Opens the C: drive folder
 open-downloads-folder.ps1, Opens the user's downloads folder
 open-dropbox-folder.ps1, Opens the user's Dropbox folder
 open-email-client.ps1, Starts the default email client
+open-facebook.ps1, Opens Facebook's website
 open-file-explorer.ps1, Opens the File Explorer
 open-google-contacts.ps1, Opens Google Contacts
 open-google-earth.ps1, Opens Google Earth
