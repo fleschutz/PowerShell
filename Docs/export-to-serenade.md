@@ -4,7 +4,7 @@ This script exports all PowerShell scripts to Serenade to execute them by voice.
 
 ## Parameters
 ```powershell
-export-to-serenade.ps1 [[-WakeWord] <String>] [[-FilePattern] <String>] [[-TargetFile] <String>] [<CommonParameters>]
+export-to-serenade.ps1 [[-WakeWord] <String>] [[-FilePattern] <String>] [[-Application] <String>] [[-TargetFile] <String>] [<CommonParameters>]
 
 -WakeWord <String>
     Specifies the wakeword (none by default)
@@ -24,11 +24,20 @@ export-to-serenade.ps1 [[-WakeWord] <String>] [[-FilePattern] <String>] [[-Targe
     Accept pipeline input?       false
     Accept wildcard characters?  false
 
+-Application <String>
+    Specifies the application to be used
+    
+    Required?                    false
+    Position?                    3
+    Default value                terminal
+    Accept pipeline input?       false
+    Accept wildcard characters?  false
+
 -TargetFile <String>
     Specifies the target file ("$HOME/.serenade/scripts/PowerShell.js" by default)
     
     Required?                    false
-    Position?                    3
+    Position?                    4
     Default value                "$HOME/.serenade/scripts/PowerShell.js"
     Accept pipeline input?       false
     Accept wildcard characters?  false
