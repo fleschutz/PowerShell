@@ -169,6 +169,7 @@ open-file-explorer.ps1, Opens the File Explorer
 open-google-earth.ps1, Opens Google Earth
 open-google-maps.ps1, Opens Google Maps
 open-google-search.ps1, Opens Google Search
+open-google-translate.ps1, Opens Google Translate
 open-home-folder.ps1, Opens the user's home folder
 open-music-folder.ps1, Opens the user's music folder
 open-netflix.ps1, Starts the Netflix app
@@ -181,6 +182,7 @@ open-spotify.ps1, Opens the Spotify app
 open-task-manager.ps1, Starts the Task Manager
 open-toggl-track.ps1, Opens Toggl Track
 open-videos-folder.ps1, Opens the user's videos folder
+open-youtube.ps1, Opens YouTube.com
 pick-commit.ps1, Cherry-picks a Git commit into multiple branches
 play-beep.ps1, Plays a beep sound
 play-files.ps1, Plays the given audio files

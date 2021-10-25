@@ -124,6 +124,7 @@ Mega Collection of PowerShell Scripts
 | [open-google-earth.ps1](Scripts/open-google-earth.ps1) | Opens Google Earth                                               | [Help](Docs/open-google-earth.md)  |
 | [open-google-maps.ps1](Scripts/open-google-maps.ps1) | Opens Google Maps                                                  | [Help](Docs/open-google-maps.md)  |
 | [open-google-search.ps1](Scripts/open-google-search.ps1) | Opens Google Search                                            | [Help](Docs/open-google-search.md)  |
+| [open-google-translate.ps1](Scripts/open-google-translate.ps1) | Opens Google Translate                                   | [Help](Docs/open-google-translate.md)  |
 | [open-home-folder.ps1](Scripts/open-home-folder.ps1) | Opens the user's home folder                                       | [Help](Docs/open-home-folder.md)     |
 | [open-music-folder.ps1](Scripts/open-music-folder.ps1)| Opens the user's music folder                                     | [Help](Docs/open-music-folder.md)     |
 | [open-netflix.ps1](Scripts/open-netflix.ps1)         | Starts the Netflix app                                             | [Help](Docs/open-netflix.md)        |
@@ -137,6 +138,7 @@ Mega Collection of PowerShell Scripts
 | [open-task-manager.ps1](Scripts/open-task-manager.ps1)| Starts the Task Manager                                           | [Help](Docs/open-task-manager.md)    |
 | [open-toggl-track.ps1](Scripts/open-toggl-track.ps1)| Opens Toggl Track                                                   | [Help](Docs/open-toggl-track.md)    |
 | [open-videos-folder.ps1](Scripts/open-videos-folder.ps1)| Opens the user's videos folder                                  | [Help](Docs/open-videos-folder.md)  |
+| [open-youtube.ps1](Scripts/open-youtube.ps1)         | Opens YouTube.com                                                          | [Help](Docs/open-youtube.md)  |
 | [remind-me.ps1](Scripts/remind-me.ps1)               | Creates a scheduled task that will display a popup message         | [Help](Docs/remind-me.md)            |
 | [save-screenshot.ps1](Scripts/save-screenshot.ps1)   | Saves a single screenshot                                          | [Help](Docs/save-screenshot.md)     |
 | [set-wallpaper.ps1](Scripts/set-wallpaper.ps1)       | Sets the given image as wallpaper                                  | [Help](Docs/set-wallpaper.md)       |
