@@ -1,8 +1,8 @@
 ﻿<#
 .SYNOPSIS
-	Closes Mozilla's Thunderbird email client
+	Closes the Mozilla Thunderbird email client
 .DESCRIPTION
-	This script closes Mozilla's Thunderbird email client gracefully.
+	This script closes the Mozilla Thunderbird email client gracefully.
 .EXAMPLE
 	PS> ./close-thunderbird
 .NOTES
