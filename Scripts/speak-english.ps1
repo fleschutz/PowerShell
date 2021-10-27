@@ -3,6 +3,7 @@
 	Speaks text with an English text-to-speech voice
 .DESCRIPTION
 	This scripts speaks the given text with an English text-to-speech (TTS) voice.
+	Requires that an English TTS voice is installed.
 .PARAMETER text
 	Specifies the text to speak
 .EXAMPLE
