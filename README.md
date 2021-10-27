@@ -120,6 +120,7 @@ Mega Collection of PowerShell Scripts
 | [open-c-drive.ps1](Scripts/open-c-drive.ps1)         | Opens the C: drive folder                                          | [Help](Docs/open-c-drive.md)        |
 | [open-downloads-folders.ps1](Scripts/open-downloads-folder.ps1) | Opens the user's downloads folder                       | [Help](Docs/open-downloads-folder.md)     |
 | [open-dropbox-folder.ps1](Scripts/open-dropbox-folder.ps1) | Opens the user's Dropbox folder                              | [Help](Docs/open-dropbox-folder.md)     |
+| [open-edge.ps1](Scripts/open-edge.ps1)               | Opens Microsoft Edge                                               | [Help](Docs/open-edge.md)  |
 | [open-email-client.ps1](Scripts/open-browser.ps1)    | Starts the default email client                                    | [Help](Docs/open-email-client.md)   |
 | [open-facebook.ps1](Scripts/open-facebook.ps1)       | Opens Facebook's website                                           | [Help](Docs/open-facebook.md)  |
 | [open-file-explorer.ps1](Scripts/open-file-explorer.ps1) | Opens the File Explorer                                        | [Help](Docs/open-file-explorer.md)  |

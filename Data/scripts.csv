@@ -165,6 +165,7 @@ open-calculator.ps1, Starts the calculator program
 open-c-drive.ps1, Opens the C: drive folder
 open-downloads-folder.ps1, Opens the user's downloads folder
 open-dropbox-folder.ps1, Opens the user's Dropbox folder
+open-edge.ps1, Opens Microsoft Edge
 open-email-client.ps1, Starts the default email client
 open-facebook.ps1, Opens Facebook's website
 open-file-explorer.ps1, Opens the File Explorer
