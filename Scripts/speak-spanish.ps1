@@ -3,6 +3,7 @@
 	Speaks text with a Spanish text-to-speech voice
 .DESCRIPTION
 	This script speaks the given text with a Spanish text-to-speech (TTS) voice.
+	Requires that a Spanish TTS voice is installed.
 .PARAMETER text
 	Specifies the text to speak
 .EXAMPLE
