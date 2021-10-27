@@ -48,6 +48,7 @@ close-edge.ps1, Closes the Microsoft Edge Web browser
 close-file-explorer.ps1, Closes Microsoft File Explorer gracefully
 close-firefox.ps1, Closes the Firefox Web browser 
 close-program.ps1, Closes the given program gracefully
+close-microsoft-store.ps1, Closes the Microsoft Store app
 close-netflix.ps1, Closes the Netflix application gracefully
 close-onedrive.ps1, Closes Microsoft OneDrive gracefully
 close-serenade.ps1, Closes the Serenade.ai application gracefully
@@ -179,6 +180,7 @@ open-google-search.ps1, Opens Google Search
 open-google-translate.ps1, Opens Google Translate
 open-home-folder.ps1, Opens the user's home folder
 open-music-folder.ps1, Opens the user's music folder
+open-microsoft-store.ps1, Starts the Microsoft Store app
 open-netflix.ps1, Starts the Netflix app
 open-notepad.ps1, Starts the Notepad app
 open-onedrive-folder.ps1, Opens the user's OneDrive folder 

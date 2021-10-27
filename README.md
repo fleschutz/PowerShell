@@ -101,7 +101,8 @@ Mega Collection of PowerShell Scripts
 | [close-file-explorer.ps1](Scripts/close-file-explorer.ps1) | Closes Microsoft File Explorer                               | [Help](Docs/close-file-explorer.md) |
 | [close-firefox.ps1](Scripts/close-firefox.ps1)       | Closes the Firefox Web browser                                     | [Help](Docs/close-firefox.md)       |
 | [close-program.ps1](Scripts/close-program.ps1)       | Closes the given program gracefully                                | [Help](Docs/close-program.md)       |
-| [close-netflix.ps1](Scripts/close-netflix.ps1)       | Closes the Netflix application                                     | [Help](Docs/close-netflix.md)       |
+| [close-microsoft-store.ps1](Scripts/close-microsoft-store.ps1)| Closes the Microsoft Store app                            | [Help](Docs/close-microsoft-store.md)       |
+| [close-netflix.ps1](Scripts/close-netflix.ps1)       | Closes the Netflix app                                             | [Help](Docs/close-netflix.md)       |
 | [close-onedrive.ps1](Scripts/close-onedrive.ps1)     | Closes Microsoft OneDrive                                          | [Help](Docs/close-onedrive.md)      |
 | [close-serenade.ps1](Scripts/close-serenade.ps1)     | Closes the Serenade application                                    | [Help](Docs/close-serenade.md) |
 | [close-snipping-tool.ps1](Scripts/close-snipping-tool.ps1)| Closes the Snipping Tool application                          | [Help](Docs/close-snipping-tool.md) |
@@ -135,6 +136,7 @@ Mega Collection of PowerShell Scripts
 | [open-home-folder.ps1](Scripts/open-home-folder.ps1) | Opens the user's home folder                                       | [Help](Docs/open-home-folder.md)     |
 | [open-music-folder.ps1](Scripts/open-music-folder.ps1)| Opens the user's music folder                                     | [Help](Docs/open-music-folder.md)     |
 | [open-netflix.ps1](Scripts/open-netflix.ps1)         | Starts the Netflix app                                             | [Help](Docs/open-netflix.md)        |
+| [open-microsoft-store.ps1](Scripts/open-microsoft-store.ps1)| Starts the Microsoft Store app                              | [Help](Docs/open-microsoft-store.md)        |
 | [open-notepad.ps1](Scripts/open-notepad.ps1)         | Starts the Notepad app                                             | [Help](Docs/open-notepad.md)        |
 | [open-onedrive-folder.ps1](Scripts/open-onedrive-folder.ps1)| Opens the user's OneDrive folder                            | [Help](Docs/open-onedrive-folder.md) |
 | [open-pictures-folder.ps1](Scripts/open-pictures-folder.ps1) | Opens the user's pictures folder                           | [Help](Docs/open-pictures-folder.md) |
