@@ -3,6 +3,7 @@
 	Speaks text with an Italian text-to-speech voice
 .DESCRIPTION
 	This script speaks the given text with an Italian text-to-speech (TTS) voice.
+	Requires that an Italian TTS voice is installed.
 .PARAMETER text
 	Specifies the text to speak
 .EXAMPLE
