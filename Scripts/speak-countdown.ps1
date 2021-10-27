@@ -2,7 +2,7 @@
 .SYNOPSIS
 	Speaks a countdown by text-to-speech
 .DESCRIPTION
-	This scripts speaks a countdown by text-to-speech (TTS).
+	This scripts speaks a countdown starting from a given number (10 by default) by text-to-speech (TTS).
 .PARAMETER StartNumber
 	Specifies the number to start from
 .EXAMPLE
