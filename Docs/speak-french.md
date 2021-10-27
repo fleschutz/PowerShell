@@ -1,6 +1,7 @@
 ## speak-french.ps1 - Speaks text with a French text-to-speech voice
 
-This script speaks the given text with a French text-to-speech (TTS) voice
+This script speaks the given text with a French text-to-speech (TTS) voice.
+Requires that a French TTS voice is installed.
 
 ## Parameters
 ```powershell

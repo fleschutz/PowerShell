@@ -1,6 +1,6 @@
 ## speak-countdown.ps1 - Speaks a countdown by text-to-speech
 
-This scripts speaks a countdown by text-to-speech (TTS).
+This scripts speaks a countdown starting from a given number (10 by default) by text-to-speech (TTS).
 
 ## Parameters
 ```powershell

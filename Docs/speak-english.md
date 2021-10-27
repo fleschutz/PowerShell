@@ -1,6 +1,7 @@
 ## speak-english.ps1 - Speaks text with an English text-to-speech voice
 
 This scripts speaks the given text with an English text-to-speech (TTS) voice.
+Requires that an English TTS voice is installed.
 
 ## Parameters
 ```powershell

@@ -1,6 +1,7 @@
 ## speak-spanish.ps1 - Speaks text with a Spanish text-to-speech voice
 
 This script speaks the given text with a Spanish text-to-speech (TTS) voice.
+Requires that a Spanish TTS voice is installed.
 
 ## Parameters
 ```powershell
