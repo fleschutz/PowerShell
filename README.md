@@ -123,6 +123,7 @@ Mega Collection of PowerShell Scripts
 | [open-email-client.ps1](Scripts/open-browser.ps1)    | Starts the default email client                                    | [Help](Docs/open-email-client.md)   |
 | [open-facebook.ps1](Scripts/open-facebook.ps1)       | Opens Facebook's website                                           | [Help](Docs/open-facebook.md)  |
 | [open-file-explorer.ps1](Scripts/open-file-explorer.ps1) | Opens the File Explorer                                        | [Help](Docs/open-file-explorer.md)  |
+| [open-github.ps1](Scripts/open-github.ps1)           | Opens GitHub's website                                             | [Help](Docs/open-github.md)         |
 | [open-google-contacts.ps1](Scripts/open-google-contacts.ps1) | Opens Google Contacts                                      | [Help](Docs/open-google-contacts.md)  |
 | [open-google-earth.ps1](Scripts/open-google-earth.ps1) | Opens Google Earth                                               | [Help](Docs/open-google-earth.md)  |
 | [open-google-maps.ps1](Scripts/open-google-maps.ps1) | Opens Google Maps                                                  | [Help](Docs/open-google-maps.md)  |
