@@ -2,7 +2,8 @@
 .SYNOPSIS
 	Speaks text with a French text-to-speech voice
 .DESCRIPTION
-	This script speaks the given text with a French text-to-speech (TTS) voice
+	This script speaks the given text with a French text-to-speech (TTS) voice.
+	Requires that a French TTS voice is installed.
 .PARAMETER text
 	Specifies the text to speak
 .EXAMPLE
