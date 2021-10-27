@@ -186,6 +186,7 @@ open-recycle-bin.ps1, Opens the user's recycle bin folder
 open-repos-folder.ps1, Opens the user's Git repositories folder
 open-snipping-tools.ps1, Opens the Snipping Tool
 open-spotify.ps1, Opens the Spotify app
+open-system-settings.ps1, Opens the system settings of Windows
 open-task-manager.ps1, Starts the Task Manager
 open-toggl-track.ps1, Opens Toggl Track
 open-videos-folder.ps1, Opens the user's videos folder

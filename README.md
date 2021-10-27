@@ -142,6 +142,7 @@ Mega Collection of PowerShell Scripts
 | [open-repos-folder.ps1](Scripts/open-repos-folder.ps1) | Opens the user's Git repositories folder                         | [Help](Docs/open-repos-folder.md)     |
 | [open-snipping-tool.ps1](Scripts/open-snipping-tool.ps1)| Starts the Snipping Tool                                        | [Help](Docs/open-snipping-tool.md)        |
 | [open-spotify.ps1](Scripts/open-spotify.ps1)         | Opens Spotify                                                      | [Help](Docs/open-spotify.md)        |
+| [open-system-settings.ps1](Scripts/open-system-settings.ps1)| Opens system settings of Windows                            | [Help](Docs/open-system-settings.md)        |
 | [open-task-manager.ps1](Scripts/open-task-manager.ps1)| Starts the Task Manager                                           | [Help](Docs/open-task-manager.md)    |
 | [open-toggl-track.ps1](Scripts/open-toggl-track.ps1)| Opens Toggl Track                                                   | [Help](Docs/open-toggl-track.md)    |
 | [open-videos-folder.ps1](Scripts/open-videos-folder.ps1)| Opens the user's videos folder                                  | [Help](Docs/open-videos-folder.md)  |
