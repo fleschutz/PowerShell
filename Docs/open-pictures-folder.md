@@ -1,6 +1,6 @@
 ## open-pictures-folder.ps1 - Opens the user's pictures folder
 
-This script starts the File Explorer and shows the user's pictures folder.
+This script launches the File Explorer with the user's pictures folder.
 
 ## Parameters
 ```powershell

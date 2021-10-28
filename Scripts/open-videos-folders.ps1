@@ -2,7 +2,7 @@
 .SYNOPSIS
 	Opens the user's videos folder
 .DESCRIPTION
-	This script starts the File Explorer and shows the user's videos folder.
+	This script launches the File Explorer with the user's videos folder.
 .EXAMPLE
 	PS> ./open-videos-folder
 .NOTES

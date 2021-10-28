@@ -2,7 +2,7 @@
 .SYNOPSIS
 	Opens Amazon's website
 .DESCRIPTION
-	This script starts the Web browser and opens the Amazon website.
+	This script launches the Web browser with the Amazon website.
 .EXAMPLE
 	PS> ./open-amazon
 .NOTES

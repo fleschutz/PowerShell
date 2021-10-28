@@ -1,6 +1,6 @@
 ## open-c-drive.ps1 - Opens the C: drive folder
 
-This script starts the File Explorer showing the C: drive folder.
+This script launches the File Explorer showing the C: drive folder.
 
 ## Parameters
 ```powershell

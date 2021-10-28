@@ -1,6 +1,6 @@
 ## open-youtube.ps1 - Opens YouTube
 
-This script starts the Web browser and opens YouTube.com.
+This script launches the Web browser with YouTube's website.
 
 ## Parameters
 ```powershell

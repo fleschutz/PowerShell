@@ -1,6 +1,6 @@
 ## open-recycle-bin.ps1 - Opens the user's recycle bin folder
 
-This script starts the File Explorer and shows the user's recycle bin folder.
+This script launches the File Explorer with the user's recycle bin folder.
 
 ## Parameters
 ```powershell

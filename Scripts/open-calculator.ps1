@@ -2,7 +2,7 @@
 .SYNOPSIS
 	Starts the calculator app
 .DESCRIPTION
-	This script starts the calculator application.
+	This script launches the calculator application.
 .EXAMPLE
 	PS> ./open-calculator
 .NOTES

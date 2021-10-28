@@ -1,6 +1,6 @@
 ## open-task-manager.ps1 - Starts the Task Manager
 
-This script starts the Task Manager application (Windows only).
+This script launches the Windows Task Manager application.
 
 ## Parameters
 ```powershell

@@ -2,7 +2,7 @@
 .SYNOPSIS
 	Opens Toggl Track
 .DESCRIPTION
-	This script starts the Web browser and opens Toggl Track
+	This script launches the Web browser with the Toggl Track website.
 .EXAMPLE
 	PS> ./open-toggl-track
 .NOTES

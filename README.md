@@ -146,9 +146,10 @@ Mega Collection of PowerShell Scripts
 | [open-spotify.ps1](Scripts/open-spotify.ps1)         | Opens Spotify                                                      | [Help](Docs/open-spotify.md)        |
 | [open-system-settings.ps1](Scripts/open-system-settings.ps1)| Opens system settings of Windows                            | [Help](Docs/open-system-settings.md)        |
 | [open-task-manager.ps1](Scripts/open-task-manager.ps1)| Starts the Task Manager                                           | [Help](Docs/open-task-manager.md)    |
-| [open-toggl-track.ps1](Scripts/open-toggl-track.ps1)| Opens Toggl Track                                                   | [Help](Docs/open-toggl-track.md)    |
+| [open-toggl-track.ps1](Scripts/open-toggl-track.ps1) | Opens Toggl Track                                                  | [Help](Docs/open-toggl-track.md)    |
 | [open-videos-folder.ps1](Scripts/open-videos-folder.ps1)| Opens the user's videos folder                                  | [Help](Docs/open-videos-folder.md)  |
-| [open-youtube.ps1](Scripts/open-youtube.ps1)         | Opens YouTube.com                                                          | [Help](Docs/open-youtube.md)  |
+| [open-wikipedia.ps1](Scripts/open-wikipedia.ps1)     | Opens Wikipedia's website                                          | [Help](Docs/open-wikipedia.md)  |
+| [open-youtube.ps1](Scripts/open-youtube.ps1)         | Opens YouTube.com                                                  | [Help](Docs/open-youtube.md)  |
 | [remind-me.ps1](Scripts/remind-me.ps1)               | Creates a scheduled task that will display a popup message         | [Help](Docs/remind-me.md)            |
 | [save-screenshot.ps1](Scripts/save-screenshot.ps1)   | Saves a single screenshot                                          | [Help](Docs/save-screenshot.md)     |
 | [set-wallpaper.ps1](Scripts/set-wallpaper.ps1)       | Sets the given image as wallpaper                                  | [Help](Docs/set-wallpaper.md)       |

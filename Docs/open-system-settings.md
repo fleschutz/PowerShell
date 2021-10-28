@@ -1,6 +1,6 @@
-## open-system-settings.ps1 - Opens system settings of Windows
+## open-system-settings.ps1 - Opens Windows system settings
 
-This script starts the system settings of Windows.
+This script launches the Windows system settings application.
 
 ## Parameters
 ```powershell

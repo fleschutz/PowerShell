@@ -1,6 +1,6 @@
 ## open-microsoft-store.ps1 - Starts the Microsoft Store app
 
-This script starts the Microsoft Store application.
+This script launches the Microsoft Store application.
 
 ## Parameters
 ```powershell

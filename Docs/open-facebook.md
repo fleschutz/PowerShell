@@ -1,6 +1,6 @@
 ## open-facebook.ps1 - Opens Facebook's website
 
-This script starts the Web browser with Facebook's website.
+This script launches the Web browser with Facebook's website.
 
 ## Parameters
 ```powershell

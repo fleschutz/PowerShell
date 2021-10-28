@@ -2,7 +2,7 @@
 .SYNOPSIS
 	Opens Google Translate
 .DESCRIPTION
-	This script starts the Web browser and opens Google Translate.
+	This script launches the Web browser with the Google Translate website.
 .EXAMPLE
 	PS> ./open-google-translate
 .NOTES

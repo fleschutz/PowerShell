@@ -1,6 +1,6 @@
 ## open-google-news.ps1 - Opens Google News
 
-This script starts the Web browser and opens Google News.
+This script launches the Web browser with the Google News website.
 
 ## Parameters
 ```powershell

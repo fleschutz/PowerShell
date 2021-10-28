@@ -2,7 +2,7 @@
 .SYNOPSIS
 	Opens the C: drive folder
 .DESCRIPTION
-	This script starts the File Explorer showing the C: drive folder.
+	This script launches the File Explorer showing the C: drive folder.
 .EXAMPLE
 	PS> ./open-c-drive
 .NOTES

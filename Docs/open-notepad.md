@@ -1,6 +1,6 @@
 ## open-notepad.ps1 - Starts Notepad
 
-This script starts Notepad.
+This script launches the Notepad application.
 
 ## Parameters
 ```powershell

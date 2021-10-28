@@ -1,8 +1,8 @@
 ﻿<#
 .SYNOPSIS
-	Opens system settings of Windows
+	Opens Windows system settings 
 .DESCRIPTION
-	This script starts the system settings of Windows.
+	This script launches the Windows system settings application.
 .EXAMPLE
 	PS> ./open-system-settings
 .NOTES

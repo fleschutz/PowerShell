@@ -2,7 +2,7 @@
 .SYNOPSIS
 	Opens Google Earth
 .DESCRIPTION
-	This script starts the Web browser and opens Google Earth
+	This script launches the Web browser with Google Earth's website.
 .EXAMPLE
 	PS> ./open-google-earth
 .NOTES

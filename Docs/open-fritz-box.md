@@ -1,6 +1,6 @@
 ## open-fritz-box.ps1 - Opens FRITZ!Box's Web interface
 
-This script starts the Web browser with FRITZ!Box's Web interface.
+This script launches the Web browser with FRITZ!Box's Web interface.
 
 ## Parameters
 ```powershell

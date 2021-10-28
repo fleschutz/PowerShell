@@ -2,7 +2,7 @@
 .SYNOPSIS
 	Starts the Task Manager
 .DESCRIPTION
-	This script starts the Task Manager application (Windows only).
+	This script launches the Windows Task Manager application.
 .EXAMPLE
 	PS> ./open-task-manager
 .NOTES

@@ -2,7 +2,7 @@
 .SYNOPSIS
 	Starts Spotify 
 .DESCRIPTION
-	This script starts the Spotify application.
+	This script launches the Spotify application.
 .EXAMPLE
 	PS> ./open-spotify
 .NOTES

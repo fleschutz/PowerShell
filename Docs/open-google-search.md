@@ -1,6 +1,6 @@
 ## open-google-search.ps1 - Opens Google Search
 
-This script starts the Web browser and opens Google Search
+This script launches the Web browser with the Google Search website.
 
 ## Parameters
 ```powershell

@@ -1,6 +1,6 @@
 ## open-calculator.ps1 - Starts the calculator app
 
-This script starts the calculator application.
+This script launches the calculator application.
 
 ## Parameters
 ```powershell

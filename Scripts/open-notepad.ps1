@@ -2,7 +2,7 @@
 .SYNOPSIS
 	Starts Notepad
 .DESCRIPTION
-	This script starts Notepad.
+	This script launches the Notepad application.
 .EXAMPLE
 	PS> ./open-notepad
 .NOTES

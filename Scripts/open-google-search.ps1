@@ -2,7 +2,7 @@
 .SYNOPSIS
 	Opens Google Search
 .DESCRIPTION
-	This script starts the Web browser and opens Google Search
+	This script launches the Web browser with the Google Search website.
 .EXAMPLE
 	PS> ./open-google-search
 .NOTES

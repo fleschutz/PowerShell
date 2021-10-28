@@ -2,7 +2,7 @@
 .SYNOPSIS
 	Opens GitHub's website
 .DESCRIPTION
-	This script starts the Web browser with GitHub's website.
+	This script launches the Web browser with the GitHub website.
 .EXAMPLE
 	PS> ./open-github
 .NOTES

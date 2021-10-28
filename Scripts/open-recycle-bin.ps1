@@ -2,7 +2,7 @@
 .SYNOPSIS
 	Opens the user's recycle bin folder
 .DESCRIPTION
-	This script starts the File Explorer and shows the user's recycle bin folder.
+	This script launches the File Explorer with the user's recycle bin folder.
 .EXAMPLE
 	PS> ./open-recycle-bin
 .NOTES

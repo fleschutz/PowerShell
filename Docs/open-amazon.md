@@ -1,6 +1,6 @@
 ## open-amazon.ps1 - Opens Amazon's website
 
-This script starts the Web browser and opens the Amazon website.
+This script launches the Web browser with the Amazon website.
 
 ## Parameters
 ```powershell

@@ -1,6 +1,6 @@
 ## open-github.ps1 - Opens GitHub's website
 
-This script starts the Web browser with GitHub's website.
+This script launches the Web browser with the GitHub website.
 
 ## Parameters
 ```powershell

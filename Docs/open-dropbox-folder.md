@@ -1,6 +1,6 @@
 ## open-dropbox-folder.ps1 - Opens the user's Dropbox folder
 
-This script starts the File Explorer and shows the user's Dropbox folder.
+This script launches the File and showing the user's Dropbox folder.
 
 ## Parameters
 ```powershell

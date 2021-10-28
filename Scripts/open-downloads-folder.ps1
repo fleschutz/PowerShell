@@ -2,7 +2,7 @@
 .SYNOPSIS
 	Opens the user's downloads folder
 .DESCRIPTION
-	This script starts the File Explorer and shows the user's downloads folder.
+	This script launches the File Explorer showing the user's downloads folder.
 .EXAMPLE
 	PS> ./open-downloads-folder
 .NOTES

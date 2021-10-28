@@ -2,7 +2,7 @@
 .SYNOPSIS
 	Opens Facebook's website
 .DESCRIPTION
-	This script starts the Web browser with Facebook's website.
+	This script launches the Web browser with Facebook's website.
 .EXAMPLE
 	PS> ./open-facebook
 .NOTES

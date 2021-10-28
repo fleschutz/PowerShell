@@ -2,7 +2,7 @@
 .SYNOPSIS
 	Opens Google News
 .DESCRIPTION
-	This script starts the Web browser and opens Google News.
+	This script launches the Web browser with the Google News website.
 .EXAMPLE
 	PS> ./open-google-news
 .NOTES

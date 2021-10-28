@@ -1,6 +1,6 @@
 ## open-home-folder.ps1 - Opens the home folder
 
-This script starts the File Explorer and shows the home folder.
+This script launches the File Explorer with the user's home folder.
 
 ## Parameters
 ```powershell

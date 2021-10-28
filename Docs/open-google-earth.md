@@ -1,6 +1,6 @@
 ## open-google-earth.ps1 - Opens Google Earth
 
-This script starts the Web browser and opens Google Earth
+This script launches the Web browser with Google Earth's website.
 
 ## Parameters
 ```powershell

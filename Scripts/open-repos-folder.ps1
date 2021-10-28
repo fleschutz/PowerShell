@@ -2,7 +2,7 @@
 .SYNOPSIS
 	Opens the Git repositories folder
 .DESCRIPTION
-	This script starts the File Explorer and shows the user's Git repositories folder.
+	This script launches the File Explorer with the user's Git repositories folder.
 .EXAMPLE
 	PS> ./open-repos-folder
 .NOTES

@@ -2,7 +2,7 @@
 .SYNOPSIS
 	Opens the user's Dropbox folder
 .DESCRIPTION
-	This script starts the File Explorer and shows the user's Dropbox folder.
+	This script launches the File and showing the user's Dropbox folder.
 .EXAMPLE
 	PS> ./open-dropbox-folder
 .NOTES

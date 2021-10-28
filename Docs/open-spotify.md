@@ -1,6 +1,6 @@
 ## open-spotify.ps1 - Starts Spotify
 
-This script starts the Spotify application.
+This script launches the Spotify application.
 
 ## Parameters
 ```powershell

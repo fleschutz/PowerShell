@@ -2,7 +2,7 @@
 .SYNOPSIS
 	Opens Google Contacts
 .DESCRIPTION
-	This script starts the Web browser and opens Google Contacts.
+	This script launches the Web browser with Google Contacts website.
 .EXAMPLE
 	PS> ./open-google-contacts
 .NOTES

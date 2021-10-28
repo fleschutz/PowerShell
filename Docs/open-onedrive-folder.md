@@ -1,6 +1,6 @@
 ## open-onedrive-folder.ps1 - Opens the user's OneDrive folder
 
-This script opens the user's OneDrive folder.
+This script launches Microsoft OneDrive with the user's OneDrive folder.
 
 ## Parameters
 ```powershell

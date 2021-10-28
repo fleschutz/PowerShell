@@ -2,7 +2,7 @@
 .SYNOPSIS
 	Starts the Microsoft Store app
 .DESCRIPTION
-	This script starts the Microsoft Store application.
+	This script launches the Microsoft Store application.
 .EXAMPLE
 	PS> ./open-microsoft-store
 .NOTES

@@ -2,7 +2,7 @@
 .SYNOPSIS
 	Starts the Snipping Tool
 .DESCRIPTION
-	This script starts the Snipping Tool application.
+	This script launches the Snipping Tool application.
 .EXAMPLE
 	PS> ./open-snipping-tool
 .NOTES

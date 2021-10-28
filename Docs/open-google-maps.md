@@ -1,6 +1,6 @@
 ## open-google-maps.ps1 - Opens Google Maps
 
-This script starts the Web browser and opens Google Maps.
+This script launches the Web browser with the Google Maps website.
 
 ## Parameters
 ```powershell

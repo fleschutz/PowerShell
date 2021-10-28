@@ -2,7 +2,7 @@
 .SYNOPSIS
 	Starts the Netflix app
 .DESCRIPTION
-	This script starts the Netflix application.
+	This script launches the Netflix application.
 .EXAMPLE
 	PS> ./open-netflix
 .NOTES
