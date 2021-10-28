@@ -64,7 +64,7 @@ How to execute PowerShell scripts by voice?
 -------------------------------------------
 1. Download and install Serenade from https://serenade.ai/.
 2. Download this PowerShell script collection and set the search path to it.
-3. Execute once `./export-to-serenade.ps1 Computer` (this creates the custom JavaScript file $HOME/.serenade/scripts/PowerShell.js with wakeword 'Computer').
+3. Execute once: `./export-to-serenade.ps1 Computer` (this creates the custom JavaScript file $HOME/.serenade/scripts/PowerShell.js with wakeword 'Computer').
 4. Start Serenade and click the Pause button to enable Listening mode.
 5. Open Windows Terminal and click into the window.
 6. Say: `Computer, open calculator` (this launches the calculator app using PowerShell script: open-calculator.ps1).
