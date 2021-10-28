@@ -30,8 +30,8 @@ How to get PowerShell?
    $ ln -s /snap/bin/pwsh /usr/bin/pwsh
    ```
 
-How to get the collection of PowerShell scripts?
-------------------------------------------------
+How to get the PowerShell script collection?
+--------------------------------------------
 * Git users execute: `$ git clone https://github.com/fleschutz/PowerShell`
 * otherwise download and unzip: https://github.com/fleschutz/PowerShell/archive/master.zip
 
@@ -60,15 +60,15 @@ How to use PowerShell in Windows context menus?
 * to disable this execute `Remove_ps1_from_New_context_menu.reg` in subfolder [Data/](../Data)
 
 
-How to use Serenade to execute the scripts by voice?
-----------------------------------------------------
-1. Download and install the PowerShell scripts and set the search path to it.
-2. Download and install Serenade from https://serenade.ai/.
-3. Execute "./export-to-serenade.ps1 Computer" - this creates the custom JavaScript file $HOME/.serenade/scripts/PowerShell.js with wakeword 'Computer'.
+How to execute PowerShell scripts by voice?
+-------------------------------------------
+1. Download and install Serenade from https://serenade.ai/.
+2. Download this PowerShell script collection and set the search path to it.
+3. Execute once: `./export-to-serenade.ps1 Computer` (this creates a custom JavaScript file in the home directory at .serenade/scripts/PowerShell.js using wakeword 'Computer').
 4. Start Serenade and click the Pause button to enable Listening mode.
 5. Open Windows Terminal and click into the window.
-6. Say: "Computer, open calculator" - this starts the calculator application (using PowerShell script 'open-calculator.ps1').
-7. Say: "Computer, close calculator" - this stops the calculator application (using PowerShell script 'close-calculator.ps1').
+6. Say: `Computer, open calculator` (this launches the calculator app using PowerShell script: open-calculator.ps1).
+7. Say: `Computer, close calculator` (this stops the calculator app using PowerShell script: close-calculator.ps1).
 
 
 Which editor to use for PowerShell scripts?
