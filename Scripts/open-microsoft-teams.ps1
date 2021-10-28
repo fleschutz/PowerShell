@@ -1,10 +1,10 @@
 ﻿<#
 .SYNOPSIS
-	Starts the calculator app
+	Launches the Microsoft Teams app
 .DESCRIPTION
-	This script launches the calculator application.
+	This script launches the Microsoft Teams application.
 .EXAMPLE
-	PS> ./open-calculator
+	PS> ./open-microsoft-teams
 .NOTES
 	Author: Markus Fleschutz · License: CC0
 .LINK
@@ -12,7 +12,7 @@
 #>
 
 try {
-	start-process ms-calculator:
+	start-process msteams:
 	exit 0 # success
 } catch {
 	"⚠️ Error: $($Error[0]) ($($MyInvocation.MyCommand.Name):$($_.InvocationInfo.ScriptLineNumber))"

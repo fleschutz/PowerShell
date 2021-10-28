@@ -1,10 +1,10 @@
 ﻿<#
 .SYNOPSIS
-	Starts the calculator app
+	Launches the Bing Maps app
 .DESCRIPTION
-	This script launches the calculator application.
+	This script launches the Bing Maps application.
 .EXAMPLE
-	PS> ./open-calculator
+	PS> ./open-bing-maps
 .NOTES
 	Author: Markus Fleschutz · License: CC0
 .LINK
@@ -12,7 +12,7 @@
 #>
 
 try {
-	start-process ms-calculator:
+	start-process bingmaps:
 	exit 0 # success
 } catch {
 	"⚠️ Error: $($Error[0]) ($($MyInvocation.MyCommand.Name):$($_.InvocationInfo.ScriptLineNumber))"

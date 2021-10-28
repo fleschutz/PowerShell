@@ -1,10 +1,10 @@
 ﻿<#
 .SYNOPSIS
-	Starts the calculator app
+	Launches the Clock app
 .DESCRIPTION
-	This script launches the calculator application.
+	This script launches the Clock application.
 .EXAMPLE
-	PS> ./open-calculator
+	PS> ./open-clock
 .NOTES
 	Author: Markus Fleschutz · License: CC0
 .LINK
@@ -12,7 +12,7 @@
 #>
 
 try {
-	start-process ms-calculator:
+	start-process ms-clock:
 	exit 0 # success
 } catch {
 	"⚠️ Error: $($Error[0]) ($($MyInvocation.MyCommand.Name):$($_.InvocationInfo.ScriptLineNumber))"
