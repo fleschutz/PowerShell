@@ -30,8 +30,8 @@ How to get PowerShell?
    $ ln -s /snap/bin/pwsh /usr/bin/pwsh
    ```
 
-How to get the collection of PowerShell scripts?
-------------------------------------------------
+How to get the PowerShell script collection?
+--------------------------------------------
 * Git users execute: `$ git clone https://github.com/fleschutz/PowerShell`
 * otherwise download and unzip: https://github.com/fleschutz/PowerShell/archive/master.zip
 
