@@ -175,7 +175,9 @@ open-github.ps1, Opens GitHub's website
 open-google-contacts.ps1, Opens Google Contacts
 open-google-earth.ps1, Opens Google Earth
 open-google-maps.ps1, Opens Google Maps
+open-google-mail.ps1, Opens Google Mail
 open-google-news.ps1, Opens Google News
+open-google-play.ps1, Opens Google Play
 open-google-search.ps1, Opens Google Search
 open-google-translate.ps1, Opens Google Translate
 open-home-folder.ps1, Opens the user's home folder

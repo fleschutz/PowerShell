@@ -129,8 +129,10 @@ Mega Collection of PowerShell Scripts
 | [open-github.ps1](Scripts/open-github.ps1)           | Opens GitHub's website                                             | [Help](Docs/open-github.md)         |
 | [open-google-contacts.ps1](Scripts/open-google-contacts.ps1) | Opens Google Contacts                                      | [Help](Docs/open-google-contacts.md)  |
 | [open-google-earth.ps1](Scripts/open-google-earth.ps1) | Opens Google Earth                                               | [Help](Docs/open-google-earth.md)  |
+| [open-google-mail.ps1](Scripts/open-google-mail.ps1) | Opens Google Mail                                                  | [Help](Docs/open-google-mail.md)  |
 | [open-google-maps.ps1](Scripts/open-google-maps.ps1) | Opens Google Maps                                                  | [Help](Docs/open-google-maps.md)  |
 | [open-google-news.ps1](Scripts/open-google-news.ps1) | Opens Google News                                                  | [Help](Docs/open-google-news.md)  |
+| [open-google-play.ps1](Scripts/open-google-play.ps1) | Opens Google Play                                                  | [Help](Docs/open-google-play.md)  |
 | [open-google-search.ps1](Scripts/open-google-search.ps1) | Opens Google Search                                            | [Help](Docs/open-google-search.md)  |
 | [open-google-translate.ps1](Scripts/open-google-translate.ps1) | Opens Google Translate                                   | [Help](Docs/open-google-translate.md)  |
 | [open-home-folder.ps1](Scripts/open-home-folder.ps1) | Opens the user's home folder                                       | [Help](Docs/open-home-folder.md)     |
