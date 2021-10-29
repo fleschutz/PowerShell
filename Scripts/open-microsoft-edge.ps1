@@ -1,10 +1,10 @@
 ﻿<#
 .SYNOPSIS
-	Starts Microsoft Edge
+	Launches Microsoft Edge
 .DESCRIPTION
 	This script launches the Microsoft Edge Web browser.
 .EXAMPLE
-	PS> ./open-edge
+	PS> ./open-microsoft-edge
 .NOTES
 	Author: Markus Fleschutz · License: CC0
 .LINK
