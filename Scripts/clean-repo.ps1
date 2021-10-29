@@ -23,7 +23,7 @@ try {
 	if (-not(test-path "$RepoDir" -pathType container)) { throw "Can't access directory: $RepoDir" }
 	
 	$RepoDirName = (get-item "$RepoDir").Name
-	"🧹 Cleaning untracked files..."
+	"🧹 Cleaning from untracked files..."
 
 	$Null = (git --version)
 	if ($lastExitCode -ne "0") { throw "Can't execute 'git' - make sure Git is installed and available" }
