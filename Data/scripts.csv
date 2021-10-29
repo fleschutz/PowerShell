@@ -42,10 +42,10 @@ clean-repos.ps1, Cleans all Git repositories under the current/given directory f
 clear-recycle-bin.ps1, Removes the content of the recycle bin folder (can not be undo!)
 clone-repos.ps1, Clones well-known Git repositories
 close-calculator.ps1, Closes the calculator program gracefully
-close-chrome.ps1, Closes the Google Chrome Web browser
 close-cortana.ps1, Closes Cortana gracefully
 close-file-explorer.ps1, Closes Microsoft File Explorer gracefully
 close-firefox.ps1, Closes the Firefox Web browser 
+close-google-chrome.ps1, Closes the Google Chrome Web browser
 close-program.ps1, Closes the given program gracefully
 close-microsoft-edge.ps1, Closes the Microsoft Edge Web browser
 close-microsoft-store.ps1, Closes the Microsoft Store app
