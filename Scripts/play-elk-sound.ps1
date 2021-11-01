@@ -1,15 +1,15 @@
 ﻿<#
 .SYNOPSIS
-	Plays a bee sound
+	Plays an elk sound
 .DESCRIPTION
-	This script plays a bee sound.
+	This script plays an elk sound.
 .EXAMPLE
-	PS> ./play-bee-sound
+	PS> ./play-elk-sound
 .NOTES
 	Author: Markus Fleschutz · License: CC0
 .LINK
 	https://github.com/fleschutz/PowerShell
 #>
 
-& "$PSScriptRoot/play-mp3.ps1" "$PSScriptRoot/../Data/Sounds/bee.mp3"
+& "$PSScriptRoot/play-mp3.ps1" "$PSScriptRoot/../Data/Sounds/elk.mp3"
 exit 0 # success
