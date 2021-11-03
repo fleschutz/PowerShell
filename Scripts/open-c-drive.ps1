@@ -2,7 +2,7 @@
 .SYNOPSIS
 	Opens the C: drive folder
 .DESCRIPTION
-	This script launches the File Explorer showing the C: drive folder.
+	This script launches the File Explorer with the C: drive folder.
 .EXAMPLE
 	PS> ./open-c-drive
 .NOTES
@@ -11,10 +11,5 @@
 	https://github.com/fleschutz/PowerShell
 #>
 
-try {
-	& "$PSScriptRoot/open-file-explorer.ps1" C:
-	exit 0 # success
-} catch {
-	"⚠️ Error: $($Error[0]) ($($MyInvocation.MyCommand.Name):$($_.InvocationInfo.ScriptLineNumber))"
-	exit 1
-}
+& "$PSScriptRoot/open-file-explorer.ps1" "C:"
+exit 0 # success
