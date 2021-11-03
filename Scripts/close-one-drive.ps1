@@ -1,10 +1,10 @@
 ﻿<#
 .SYNOPSIS
-	Closes Microsoft's OneDrive folder
+	Closes Microsoft's OneDrive 
 .DESCRIPTION
-	This script closes Microsoft's OneDrive folder gracefully.
+	This script closes Microsoft's OneDrive gracefully.
 .EXAMPLE
-	PS> ./close-onedrive
+	PS> ./close-one-drive
 .NOTES
 	Author: Markus Fleschutz · License: CC0
 .LINK

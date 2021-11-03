@@ -1,10 +1,10 @@
 ﻿<#
 .SYNOPSIS
-	Opens the user's OneDrive folder
+	Opens Microsoft's OneDrive 
 .DESCRIPTION
 	This script launches Microsoft OneDrive with the user's OneDrive folder.
 .EXAMPLE
-	PS> ./open-onedrive
+	PS> ./open-one-drive
 .NOTES
 	Author: Markus Fleschutz · License: CC0
 .LINK
