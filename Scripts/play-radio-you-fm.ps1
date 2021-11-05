@@ -1,10 +1,10 @@
 ﻿<#
 .SYNOPSIS
-	Opens radio station YOU FM
+	Plays radio station YOU FM
 .DESCRIPTION
-	This script launches the Web browser with the radio station YOU FM.
+	This script launches the Web browser and plays radio station YOU FM.
 .EXAMPLE
-	PS> ./open-radio-you-f-m
+	PS> ./play-radio-you-fm
 .NOTES
 	Author: Markus Fleschutz · License: CC0
 .LINK

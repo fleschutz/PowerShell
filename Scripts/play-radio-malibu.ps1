@@ -1,10 +1,10 @@
 ﻿<#
 .SYNOPSIS
-	Opens radio station Malibu
+	Plays radio station Malibu
 .DESCRIPTION
-	This script launches the Web browser with the radio station Malibu.
+	This script launches the Web browser and plays radio station Malibu.
 .EXAMPLE
-	PS> ./open-radio-malibu
+	PS> ./play-radio-malibu
 .NOTES
 	Author: Markus Fleschutz · License: CC0
 .LINK

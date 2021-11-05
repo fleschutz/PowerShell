@@ -1,10 +1,10 @@
 ﻿<#
 .SYNOPSIS
-	Opens the radio station Costa Del Mar
+	Plays the radio station Costa Del Mar
 .DESCRIPTION
-	This script launches the Web browser with the radio station Costa Del Mar
+	This script launches the Web browser and plays radio station Costa Del Mar.
 .EXAMPLE
-	PS> ./open-radio-costa-del-mar
+	PS> ./play-radio-costa-del-mar
 .NOTES
 	Author: Markus Fleschutz · License: CC0
 .LINK

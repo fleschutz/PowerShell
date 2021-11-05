@@ -1,10 +1,10 @@
 ﻿<#
 .SYNOPSIS
-	Opens radio station Kiss Kiss
+	Plays radio station Kiss Kiss
 .DESCRIPTION
-	This script launches the Web browser with the radio station Kiss Kiss.
+	This script launches the Web browser and plays radio station Kiss Kiss.
 .EXAMPLE
-	PS> ./open-radio-kiss-kiss
+	PS> ./play-radio-kiss-kiss
 .NOTES
 	Author: Markus Fleschutz · License: CC0
 .LINK

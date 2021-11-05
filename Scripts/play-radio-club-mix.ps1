@@ -1,10 +1,10 @@
 ﻿<#
 .SYNOPSIS
-	Opens radio station CLUBMIX
+	Plays radio station CLUBMIX
 .DESCRIPTION
-	This script launches the Web browser with the radio station CLUBMIX.
+	This script launches the Web browser and plays radio station CLUBMIX.
 .EXAMPLE
-	PS> ./open-radio-club-mix
+	PS> ./play-radio-club-mix
 .NOTES
 	Author: Markus Fleschutz · License: CC0
 .LINK

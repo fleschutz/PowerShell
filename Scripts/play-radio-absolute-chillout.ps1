@@ -1,10 +1,10 @@
 ﻿<#
 .SYNOPSIS
-	Opens radio station Absolute Chillout
+	Plays radio station Absolute Chillout
 .DESCRIPTION
-	This script launches the Web browser with the radio station Absolute Chillout.
+	This script launches the Web browser and plays radio station Absolute Chillout.
 .EXAMPLE
-	PS> ./open-radio-absolute-chillout
+	PS> ./play-radio-absolute-chillout
 .NOTES
 	Author: Markus Fleschutz · License: CC0
 .LINK

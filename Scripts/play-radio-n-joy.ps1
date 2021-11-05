@@ -1,10 +1,10 @@
 ﻿<#
 .SYNOPSIS
-	Opens radio station N-JOY
+	Plays radio station N-JOY
 .DESCRIPTION
-	This script launches the Web browser with the radio station N-JOY.
+	This script launches the Web browser and plays radio station N-JOY.
 .EXAMPLE
-	PS> ./open-radio-malibu
+	PS> ./play-radio-n-joy
 .NOTES
 	Author: Markus Fleschutz · License: CC0
 .LINK

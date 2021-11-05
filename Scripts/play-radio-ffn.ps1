@@ -1,10 +1,10 @@
 ﻿<#
 .SYNOPSIS
-	Opens radio station ffn
+	Plays radio station FFN
 .DESCRIPTION
-	This script launches the Web browser with the radio station ffn.
+	This script launches the Web browser and plays radio station FFN.
 .EXAMPLE
-	PS> ./open-radio-f-f-n
+	PS> ./play-radio-ffn
 .NOTES
 	Author: Markus Fleschutz · License: CC0
 .LINK
