@@ -11,5 +11,5 @@
 	https://github.com/fleschutz/PowerShell
 #>
 
-& "$PSScriptRoot/close-program.ps1" "Screen Magnifier" "magnify.exe" ""
+& "$PSScriptRoot/close-program.ps1" "Screen Magnifier" "magnify.exe" "Magnifier"
 exit 0 # success
