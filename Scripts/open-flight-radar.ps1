@@ -11,5 +11,5 @@
 	https://github.com/fleschutz/PowerShell
 #>
 
-& "$PSScriptRoot/open-browser.ps1" "https://www.flightradar.com"
+& "$PSScriptRoot/open-browser.ps1" "https://www.flightradar24.com"
 exit 0 # success
