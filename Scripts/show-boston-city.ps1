@@ -2,9 +2,9 @@
 .SYNOPSIS
 	Shows Boston in Google Maps 
 .DESCRIPTION
-	This script launches the Web browser and shows Boston (US) in Google Maps.
+	This script launches the Web browser and shows the city of Boston (US) in Google Maps.
 .EXAMPLE
-	PS> ./show-boston
+	PS> ./show-boston-city
 .NOTES
 	Author: Markus Fleschutz · License: CC0
 .LINK
