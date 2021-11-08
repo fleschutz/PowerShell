@@ -1,15 +1,15 @@
 ﻿<#
 .SYNOPSIS
-	Plays a wulf sound
+	Plays a wolf sound
 .DESCRIPTION
-	This script plays a wulf sound.
+	This script plays a wolf sound.
 .EXAMPLE
-	PS> ./play-wulf-sound
+	PS> ./play-wolf-sound
 .NOTES
 	Author: Markus Fleschutz · License: CC0
 .LINK
 	https://github.com/fleschutz/PowerShell
 #>
 
-& "$PSScriptRoot/play-mp3.ps1" "$PSScriptRoot/../Data/Sounds/wulf.mp3"
+& "$PSScriptRoot/play-mp3.ps1" "$PSScriptRoot/../Data/Sounds/wolf.mp3"
 exit 0 # success
