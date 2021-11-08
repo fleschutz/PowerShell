@@ -12,7 +12,7 @@ Mega Collection of PowerShell Scripts
 | ---------------------------------------------------- | ------------------------------------------------------------------ | --------------------------------------- |
 | [mute-audio.ps1](Scripts/mute-audio.ps1)             | Mutes the audio device                                             | [Help](Docs/mute-audio.md)        |
 | [list-voices.ps1](Scripts/list-voices.ps1)           | Lists the installed text-to-speech voices                          | [Help](Docs/list-voices.md)       |
-| [play-beep.ps1](Scripts/play-beep.ps1)               | Plays a beep sound                                                 | [Help](Docs/play-beep.md)         |
+| [play-beep-sound.ps1](Scripts/play-beep-sound.ps1)   | Plays a short beep sound                                           | [Help](Docs/play-beep-sound.md)   |
 | [play-files.ps1](Scripts/play-files.ps1)             | Plays the given audio files                                        | [Help](Docs/play-files.md)        |
 | [play-happy-birthday.ps1](Scripts/play-happy-birthday.ps1) | Plays the Happy Birthday song                                | [Help](Docs/play-happy-birthday.md) |
 | [play-imperial-march.ps1](Scripts/play-imperial-march.ps1) | Plays the Imperial March (Star Wars)                         | [Help](Docs/play-imperial-march.md) |

@@ -1,10 +1,10 @@
 ﻿<#
 .SYNOPSIS
-	Plays a beep sound
+	Plays a short beep sound
 .DESCRIPTION
 	This script plays a short beep sound.
 .EXAMPLE
-	PS> ./play-beep
+	PS> ./play-beep-sound
 .NOTES
 	Author: Markus Fleschutz · License: CC0
 .LINK

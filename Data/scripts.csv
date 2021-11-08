@@ -199,7 +199,7 @@ open-windows-terminal.ps1, Launches Windows Terminal
 open-wikipedia.ps1, Opens Wikipedia's website
 open-youtube.ps1, Opens YouTube.com
 pick-commit.ps1, Cherry-picks a Git commit into multiple branches
-play-beep.ps1, Plays a beep sound
+play-beep-sound.ps1, Plays a short beep sound
 play-files.ps1, Plays the given audio files
 play-happy-birthday.ps1, Plays the Happy Birthday song
 play-imperial-march.ps1, Plays the Imperial March (Star Wars)
