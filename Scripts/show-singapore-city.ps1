@@ -2,9 +2,9 @@
 .SYNOPSIS
 	Shows Singapore in Google Maps 
 .DESCRIPTION
-	This script launches the Web browser and shows Singapore in Google Maps.
+	This script launches the Web browser and shows Singapore city in Google Maps.
 .EXAMPLE
-	PS> ./show-singapore
+	PS> ./show-singapore-city
 .NOTES
 	Author: Markus Fleschutz · License: CC0
 .LINK

@@ -2,9 +2,9 @@
 .SYNOPSIS
 	Shows Munich in Google Maps 
 .DESCRIPTION
-	This script launches the Web browser and shows Munich (Germany) in Google Maps.
+	This script launches the Web browser and shows the city of Munich (Germany) in Google Maps.
 .EXAMPLE
-	PS> ./show-munich
+	PS> ./show-munich-city
 .NOTES
 	Author: Markus Fleschutz · License: CC0
 .LINK

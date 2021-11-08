@@ -2,9 +2,9 @@
 .SYNOPSIS
 	Shows Dubai in Google Maps 
 .DESCRIPTION
-	This script launches the Web browser and shows New York City (US) in Google Maps.
+	This script launches the Web browser and shows the city of Dubai (VUE) in Google Maps.
 .EXAMPLE
-	PS> ./show-dubai
+	PS> ./show-dubai-city
 .NOTES
 	Author: Markus Fleschutz · License: CC0
 .LINK

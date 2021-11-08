@@ -2,9 +2,9 @@
 .SYNOPSIS
 	Shows Rome in Google Maps 
 .DESCRIPTION
-	This script launches the Web browser and shows Rome (Italy) in Google Maps.
+	This script launches the Web browser and shows the city of Rome (Italy) in Google Maps.
 .EXAMPLE
-	PS> ./show-rome
+	PS> ./show-rome-city
 .NOTES
 	Author: Markus Fleschutz · License: CC0
 .LINK

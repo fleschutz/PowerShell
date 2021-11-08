@@ -2,9 +2,9 @@
 .SYNOPSIS
 	Shows Frankfurt in Google Maps 
 .DESCRIPTION
-	This script launches the Web browser and shows Frankfurt (Germany) in Google Maps.
+	This script launches the Web browser and shows the city of Frankfurt (Germany) in Google Maps.
 .EXAMPLE
-	PS> ./show-frankfurt
+	PS> ./show-frankfurt-city
 .NOTES
 	Author: Markus Fleschutz · License: CC0
 .LINK

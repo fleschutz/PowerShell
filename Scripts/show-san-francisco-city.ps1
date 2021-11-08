@@ -2,9 +2,9 @@
 .SYNOPSIS
 	Shows San Francisco in Google Maps 
 .DESCRIPTION
-	This script launches the Web browser and shows San Francisco (USA) in Google Maps.
+	This script launches the Web browser and shows the city of San Francisco (USA) in Google Maps.
 .EXAMPLE
-	PS> ./show-san-francisco
+	PS> ./show-san-francisco-city
 .NOTES
 	Author: Markus Fleschutz · License: CC0
 .LINK

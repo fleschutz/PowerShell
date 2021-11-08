@@ -2,9 +2,9 @@
 .SYNOPSIS
 	Shows Barcelona in Google Maps 
 .DESCRIPTION
-	This script launches the Web browser and shows Barcelona (Spain) in Google Maps.
+	This script launches the Web browser and shows Barcelona city (Spain) in Google Maps.
 .EXAMPLE
-	PS> ./show-barcelona
+	PS> ./show-barcelona-city
 .NOTES
 	Author: Markus Fleschutz · License: CC0
 .LINK

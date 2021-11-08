@@ -2,9 +2,9 @@
 .SYNOPSIS
 	Shows Madrid in Google Maps 
 .DESCRIPTION
-	This script launches the Web browser and shows Madrid (Spain) in Google Maps.
+	This script launches the Web browser and shows the city of Madrid (Spain) in Google Maps.
 .EXAMPLE
-	PS> ./show-madrid
+	PS> ./show-madrid-city
 .NOTES
 	Author: Markus Fleschutz · License: CC0
 .LINK

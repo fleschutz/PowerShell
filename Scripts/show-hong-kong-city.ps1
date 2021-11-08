@@ -2,9 +2,9 @@
 .SYNOPSIS
 	Shows Hong Kong in Google Maps 
 .DESCRIPTION
-	This script launches the Web browser and shows Hong Kong (China) in Google Maps.
+	This script launches the Web browser and shows the city of Hong Kong (China) in Google Maps.
 .EXAMPLE
-	PS> ./show-hong-kong
+	PS> ./show-hong-kong-city
 .NOTES
 	Author: Markus Fleschutz · License: CC0
 .LINK

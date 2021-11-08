@@ -2,9 +2,9 @@
 .SYNOPSIS
 	Shows Sydney in Google Maps 
 .DESCRIPTION
-	This script launches the Web browser and shows Sydney (Australia) in Google Maps.
+	This script launches the Web browser and shows the city of Sydney (Australia) in Google Maps.
 .EXAMPLE
-	PS> ./show-sydney
+	PS> ./show-sydney-city
 .NOTES
 	Author: Markus Fleschutz · License: CC0
 .LINK
