@@ -1,10 +1,10 @@
 ﻿<#
 .SYNOPSIS
-	Launches the Microsoft Paint app
+	Launches the Paint 3D app
 .DESCRIPTION
-	This script launches the Microsoft Paint application.
+	This script launches the Paint 3D application.
 .EXAMPLE
-	PS> ./open-microsoft-paint
+	PS> ./open-paint-3d
 .NOTES
 	Author: Markus Fleschutz · License: CC0
 .LINK
