@@ -11,5 +11,5 @@
 	https://github.com/fleschutz/PowerShell
 #>
 
-taskkill /im Paint3D
+taskkill /f /im PaintStudio.View.exe
 exit 0 # success
