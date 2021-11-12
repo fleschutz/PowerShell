@@ -1,15 +1,15 @@
 ﻿<#
 .SYNOPSIS
-	Starts Spotify 
+	Launches Windows Defender
 .DESCRIPTION
-	This script launches the Spotify application.
+	This script launches the Windows Defender application.
 .EXAMPLE
-	PS> ./open-spotify
+	PS> ./open-windows-defender
 .NOTES
 	Author: Markus Fleschutz · License: CC0
 .LINK
 	https://github.com/fleschutz/PowerShell
 #>
 
-Start-Process spotify:
+Start-Process windowsdefender:
 exit 0 # success

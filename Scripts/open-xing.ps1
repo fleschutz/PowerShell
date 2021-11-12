@@ -1,15 +1,15 @@
 ﻿<#
 .SYNOPSIS
-	Starts Spotify 
+	Launches the XING app
 .DESCRIPTION
-	This script launches the Spotify application.
+	This script launches the XING application.
 .EXAMPLE
-	PS> ./open-spotify
+	PS> ./open-xing
 .NOTES
 	Author: Markus Fleschutz · License: CC0
 .LINK
 	https://github.com/fleschutz/PowerShell
 #>
 
-Start-Process spotify:
+Start-Process xing:
 exit 0 # success
