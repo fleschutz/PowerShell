@@ -11,5 +11,5 @@
 	https://github.com/fleschutz/PowerShell
 #>
 
-& "$PSScriptRoot/close-program.ps1" "Microsoft Store" "WinStore.App" ""
+taskkill /im WinStore.App.exe /f /t
 exit 0 # success
