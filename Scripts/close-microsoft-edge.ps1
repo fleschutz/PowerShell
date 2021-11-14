@@ -1,6 +1,6 @@
 ﻿<#
 .SYNOPSIS
-	Closes the Microsoft Edge Web browser
+	Closes Microsoft Edge
 .DESCRIPTION
 	This script closes the Microsoft Edge Web browser gracefully.
 .EXAMPLE
@@ -11,5 +11,5 @@
 	https://github.com/fleschutz/PowerShell
 #>
 
-& "$PSScriptRoot/close-program.ps1" "Microsoft Edge" "msedge" "msedge"
+taskkill /im msedge.exe
 exit 0 # success
