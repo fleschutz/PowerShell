@@ -1,8 +1,8 @@
 ﻿<#
 .SYNOPSIS
-	Closes the calculator program 
+	Closes the calculator app
 .DESCRIPTION
-	This script closes the calculator program gracefully.
+	This script closes the calculator application gracefully.
 .EXAMPLE
 	PS> ./close-calculator
 .NOTES
@@ -11,5 +11,10 @@
 	https://github.com/fleschutz/PowerShell
 #>
 
-& "$PSScriptRoot/close-program.ps1" "Calculator" "Calculator" "calc"
-exit 0 # success
+try {
+	taskkill /im "Calculator.exe" /f /t
+	exit 0 # success
+} catch {
+	& "$PSScriptRoot/speak-english.ps1" "Sorry, calculator isn't running"
+	exit 1
+}
