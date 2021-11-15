@@ -11,8 +11,8 @@
 	https://github.com/fleschutz/PowerShell
 #>
 
-$result = TaskKill /f /im CalendarApp.Gui.Win10.exe
-if ($result -ne 0) {
+TaskKill /f /im CalendarApp.Gui.Win10.exe
+if ($lastExitCode -ne "0") {
 	& "$PSScriptRoot/speak-english.ps1" "Sorry, can't close OneCalendar"
 	exit 1
 }

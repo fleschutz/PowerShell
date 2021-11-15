@@ -11,8 +11,8 @@
 	https://github.com/fleschutz/PowerShell
 #>
 
-$result = TaskKill /im Calculator.exe /f /t
-if ($result -ne 0) {
+TaskKill /im Calculator.exe /f /t
+if ($lastExitCode -ne "0") {
 	& "$PSScriptRoot/speak-english.ps1" "Sorry, can't close calculator"
 	exit 1
 }

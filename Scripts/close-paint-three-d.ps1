@@ -11,8 +11,8 @@
 	https://github.com/fleschutz/PowerShell
 #>
 
-$result = TaskKill /im PaintStudio.View.exe /f
-if ($result -ne 0) {
+TaskKill /im PaintStudio.View.exe /f
+if ($lastExitCode -ne "0") {
 	& "$PSScriptRoot/speak-english.ps1" "Sorry, can't close Paint 3D"
 	exit 1
 }

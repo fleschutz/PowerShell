@@ -11,8 +11,8 @@
 	https://github.com/fleschutz/PowerShell
 #>
 
-$result = TaskKill /im GitExtensions.exe
-if ($result -ne 0) {
+TaskKill /im GitExtensions.exe
+if ($lastExitCode -ne "0") {
 	& "$PSScriptRoot/speak-english.ps1" "Sorry, can't close Git Extensions"
 	exit 1
 }

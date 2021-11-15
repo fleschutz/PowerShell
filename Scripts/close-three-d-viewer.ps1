@@ -11,8 +11,8 @@
 	https://github.com/fleschutz/PowerShell
 #>
 
-$result = TaskKill /im 3DViewer.exe /f
-if ($result -ne 0) {
+TaskKill /im 3DViewer.exe /f
+if ($lastExitCode -ne "0") {
 	& "$PSScriptRoot/speak-english.ps1" "Sorry, can't close 3D Viewer"
 	exit 1
 }
