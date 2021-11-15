@@ -24,7 +24,7 @@ try {
 	"⏳ Found $($Scripts.Count) scripts, exporting them to $TargetDir..."
 
 	foreach ($Script in $Scripts) {
-		& "$PSScriptRoot/convert-ps2md" "$Script" > "$TargetDir/$($Script.BaseName).md"
+		& "$PSScriptRoot/convert-ps2md.ps1" "$Script" > "$TargetDir/$($Script.BaseName).md"
 	}
 
 	[int]$Elapsed = $StopWatch.Elapsed.TotalSeconds

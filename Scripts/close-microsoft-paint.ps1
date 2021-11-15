@@ -11,5 +11,9 @@
 	https://github.com/fleschutz/PowerShell
 #>
 
-taskkill /im mspaint.exe
+$result = TaskKill /im mspaint.exe
+if ($result -ne 0) {
+	& "$PSScriptRoot/speak-english.ps1" "Sorry, can't close Microsoft Paint"
+	exit 1
+}
 exit 0 # success

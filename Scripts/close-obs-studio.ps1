@@ -11,5 +11,9 @@
 	https://github.com/fleschutz/PowerShell
 #>
 
-taskkill /im obs64.exe
+$result = TaskKill /im obs64.exe
+if ($result -ne 0) {
+	& "$PSScriptRoot/speak-english.ps1" "Sorry, can't close OBS Studio"
+	exit 1
+}
 exit 0 # success

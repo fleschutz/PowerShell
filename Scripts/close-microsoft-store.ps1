@@ -11,5 +11,9 @@
 	https://github.com/fleschutz/PowerShell
 #>
 
-taskkill /im WinStore.App.exe /f /t
+$result = TaskKill /im WinStore.App.exe /f /t
+if ($result -ne 0) {
+	& "$PSScriptRoot/speak-english.ps1" "Sorry, can't close Microsoft Store"
+	exit 1
+}
 exit 0 # success

@@ -11,5 +11,9 @@
 	https://github.com/fleschutz/PowerShell
 #>
 
-taskkill /im devenv.exe
+$result = TaskKill /im devenv.exe
+if ($result -ne 0) {
+	& "$PSScriptRoot/speak-english.ps1" "Sorry, can't close Visual Studio"
+	exit 1
+}
 exit 0 # success

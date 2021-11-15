@@ -11,5 +11,9 @@
 	https://github.com/fleschutz/PowerShell
 #>
 
-taskkill /im thunderbird.exe
+$result = TaskKill /im thunderbird.exe
+if ($result -ne 0) {
+	& "$PSScriptRoot/speak-english.ps1" "Sorry, can't close Mozilla Thunderbird"
+	exit 1
+}
 exit 0 # success

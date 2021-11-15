@@ -11,10 +11,9 @@
 	https://github.com/fleschutz/PowerShell
 #>
 
-try {
-	taskkill /im "Calculator.exe" /f /t
-	exit 0 # success
-} catch {
-	& "$PSScriptRoot/speak-english.ps1" "Sorry, calculator isn't running"
+$result = TaskKill /im Calculator.exe /f /t
+if ($result -ne 0) {
+	& "$PSScriptRoot/speak-english.ps1" "Sorry, can't close calculator"
 	exit 1
 }
+exit 0 # success

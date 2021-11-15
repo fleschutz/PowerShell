@@ -11,5 +11,9 @@
 	https://github.com/fleschutz/PowerShell
 #>
 
-taskkill /im outlook.exe
+$result = TaskKill /im outlook.exe
+if ($result -ne 0) {
+	& "$PSScriptRoot/speak-english.ps1" "Sorry, can't close Microsoft Outlook"
+	exit 1
+}
 exit 0 # success
