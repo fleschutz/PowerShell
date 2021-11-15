@@ -11,8 +11,8 @@
 	https://github.com/fleschutz/PowerShell
 #>
 
-$result = TaskKill /im msedge.exe
-if ($result -ne 0) {
+TaskKill /im msedge.exe /f /t
+if ($lastExitCode -ne "0") {
 	& "$PSScriptRoot/speak-english.ps1" "Sorry, can't close Microsoft Edge"
 	exit 1
 }
