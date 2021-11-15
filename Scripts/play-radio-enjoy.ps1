@@ -4,12 +4,12 @@
 .DESCRIPTION
 	This script launches the Web browser and plays radio station N-JOY.
 .EXAMPLE
-	PS> ./play-radio-n-joy
+	PS> ./play-radio-enjoy
 .NOTES
 	Author: Markus Fleschutz · License: CC0
 .LINK
 	https://github.com/fleschutz/PowerShell
 #>
 
-& "$PSScriptRoot/open-browser.ps1" "https://www.radio.de/s/n-joy"
+& "$PSScriptRoot/open-browser.ps1" "http://streema.com/radios/play/N_Joy"
 exit 0 # success
