@@ -4,7 +4,7 @@
 .DESCRIPTION
 	This script launches the Web browser with the Pixabay website.
 .EXAMPLE
-	PS> ./open-pixabay
+	PS> ./open-pixabay-website
 .NOTES
 	Author: Markus Fleschutz · License: CC0
 .LINK
