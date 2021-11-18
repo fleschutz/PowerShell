@@ -4,7 +4,7 @@
 .DESCRIPTION
 	This script launches the Web browser with the White House website.
 .EXAMPLE
-	PS> ./open-white-house
+	PS> ./open-white-house-website
 .NOTES
 	Author: Markus Fleschutz · License: CC0
 .LINK
