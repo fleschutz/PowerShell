@@ -24,20 +24,20 @@ List of Supported Voice Commands
 
 [wake word], open NAME website
 ------------------------------
-* this launches the browser with the given website.
-* replace NAME by "BBC", "CDC", "CIA", "CNN", "FBI", "NASA", "NBC", "Pixabay", "Slashdot", "Tesla", "Twitter", "UFA", "Unsplash", "White House", or "Wired".
+* this launches the default browser with the given website.
+* replace NAME by: "BBC", "CDC", "CIA", "CNN", "FBI", "NASA", "NBC", "Pixabay", "Slashdot", "Tesla", "Twitter", "UFA", "Unsplash", "White House", or "Wired".
 
 
 [wake word], show NAME city
 ---------------------------
-* this launches the browser with Google Maps showing the given city.
-* replace NAME by "Atlanta", "Barcelona", "Berlin", "Boston", "Cairo", "Cape Town", "Chicago", "Dallas", "Dubai", "Dublin", "Frankfurt", "Hamburg", "Hong Kong", "Jerusalem", "Las Vegas", "Lissabon", "London", "Los Angeles", "Madrid", "Miami", "Moscow", "Munich", "New York", "Paris", Rome", "San Francisco", "Seattle", "Singapore", "Sydney", "Tokyo", "Toronto", or "Washington".
+* this launches the default browser with Google Maps showing the given city.
+* replace NAME by: "Atlanta", "Barcelona", "Berlin", "Boston", "Cairo", "Cape Town", "Chicago", "Dallas", "Dubai", "Dublin", "Frankfurt", "Hamburg", "Hong Kong", "Jerusalem", "Las Vegas", "Lissabon", "London", "Los Angeles", "Madrid", "Miami", "Moscow", "Munich", "New York", "Paris", Rome", "San Francisco", "Seattle", "Singapore", "Sydney", "Tokyo", "Toronto", or "Washington".
 
 
 [wake word], play radio NAME
 ----------------------------
-* this launches the Browser and tunes into an internet radio station stream.
-* replace NAME by "Arabella", "Bob", "Galaxy", "7", "Gong", "Kiss Kiss", "N-JOY", ...
+* this launches the default browser and tunes into an internet radio station stream.
+* replace NAME: by "Arabella", "Bob", "Galaxy", "7", "Gong", "Kiss Kiss", "N-JOY", ...
 
 
 Conversation
