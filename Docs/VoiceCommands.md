@@ -25,7 +25,7 @@ List of Supported Voice Commands
 [wake word], open NAME website
 ------------------------------
 * this launches the default browser with the given website.
-* replace NAME by: "BBC", "CDC", "CIA", "CNN", "Facebook", "FBI", "NASA", "NBC", "Pixabay", "Slashdot", "Tesla", "Twitter", "UFA", "Unsplash", "White House", "Wired", or "Yahoo".
+* replace NAME by: "Baidu", "BBC", "CDC", "CIA", "CNN", "Facebook", "FBI", "Instagram", "NASA", "NBC", "Pixabay", "Slashdot", "Tesla", "Twitter", "UFA", "Unsplash", "White House", "Wired", or "Yahoo".
 
 
 [wake word], show NAME city
