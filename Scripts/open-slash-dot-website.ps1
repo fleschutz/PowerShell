@@ -1,10 +1,10 @@
 ﻿<#
 .SYNOPSIS
-	Opens the slashdot website
+	Opens the Slashdot website
 .DESCRIPTION
-	This script launches the Web browser with the slashdot.org website.
+	This script launches the Web browser with the Slashdot website.
 .EXAMPLE
-	PS> ./open-slash-dot
+	PS> ./open-slash-dot-website
 .NOTES
 	Author: Markus Fleschutz · License: CC0
 .LINK
