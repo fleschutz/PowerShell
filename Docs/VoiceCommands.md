@@ -17,7 +17,7 @@ List of Supported Voice Commands
 
 [wake word], open NAME folder
 -----------------------------
-* this launches the File Explorer with the given special folder.
+* this launches the File Explorer with the given folder.
 * replace NAME by: "downloads", "dropbox", "home", "music", "pictures", "repos", or "videos".
 * afterward, use *[wake word], close file explorer* to close the file explorer.
 
