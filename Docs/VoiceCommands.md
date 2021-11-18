@@ -9,7 +9,7 @@ Start & Stop Applications
 Replace NAME by "calculator", "Google Chrome", "Microsoft Edge", "Mozilla Firefox"
 
 
-Open a Websits in the Browser
+Open a Website in the Browser
 -----------------------------
 * [wake word], open NAME website.
 
