@@ -1,10 +1,10 @@
 ﻿<#
 .SYNOPSIS
-	Opens Wikipedia's website
+	Opens the Wikipedia website
 .DESCRIPTION
-	This script launches the Web browser with Wikipedia's website.
+	This script launches the Web browser with the Wikipedia website.
 .EXAMPLE
-	PS> ./open-wikipedia
+	PS> ./open-wikipedia-website
 .NOTES
 	Author: Markus Fleschutz · License: CC0
 .LINK
