@@ -1,10 +1,10 @@
 ﻿<#
 .SYNOPSIS
-	Opens Amazon's website
+	Opens the Amazon website
 .DESCRIPTION
 	This script launches the Web browser with the Amazon website.
 .EXAMPLE
-	PS> ./open-amazon
+	PS> ./open-amazon-website
 .NOTES
 	Author: Markus Fleschutz · License: CC0
 .LINK
