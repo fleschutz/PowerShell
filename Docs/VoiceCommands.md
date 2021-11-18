@@ -9,19 +9,18 @@ Start & Stop Applications
 Replace NAME by: "calculator", "Google Chrome", "Microsoft Edge", "Mozilla Firefox", "Netflix".
 
 
-Launch the File Explorer with a Drive
--------------------------------------
-* *[wake word], open NAME drive.*
+[wake word], open NAME drive
+----------------------------
+* this launches the File Explorer with the given drive.
+* replace NAME by: "C:", "D:", "E:", "F:", or "M:".
+* use *[wake word], close file explorer* to close the file explorer.
 
-Replace NAME by: "C:", "D:", "E:", "F:", or "M:".
 
-
-Launch the File Explorer with a Special Folder
-----------------------------------------------
-* *[wake word], open NAME folder.*
-
-Replace NAME by: "downloads", "dropbox", "home", "music", "pictures", "repos", or "videos".
-
+[wake word], open NAME folder
+-----------------------------
+* this launches the File Explorer with the given special folder.
+* replace NAME by: "downloads", "dropbox", "home", "music", "pictures", "repos", or "videos".
+* use *[wake word], close file explorer* to close the file explorer.
 
 Launch the Browser with a Website
 ---------------------------------
