@@ -4,7 +4,7 @@
 .DESCRIPTION
 	This script launches the Web browser with the eBay website.
 .EXAMPLE
-	PS> ./open-ebay
+	PS> ./open-ebay-website
 .NOTES
 	Author: Markus Fleschutz · License: CC0
 .LINK

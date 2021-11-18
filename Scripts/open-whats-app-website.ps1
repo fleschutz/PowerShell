@@ -4,7 +4,7 @@
 .DESCRIPTION
 	This script launches the Web browser with the WhatsApp website.
 .EXAMPLE
-	PS> ./open-whats-app
+	PS> ./open-whats-app-website
 .NOTES
 	Author: Markus Fleschutz · License: CC0
 .LINK
