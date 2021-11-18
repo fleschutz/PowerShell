@@ -4,7 +4,7 @@
 .DESCRIPTION
 	This script launches the Web browser with the Yahoo website.
 .EXAMPLE
-	PS> ./open-yahoo
+	PS> ./open-yahoo-website
 .NOTES
 	Author: Markus Fleschutz · License: CC0
 .LINK

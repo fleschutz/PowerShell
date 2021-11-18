@@ -1,10 +1,10 @@
 ﻿<#
 .SYNOPSIS
-	Opens Facebook's website
+	Opens the Facebook website
 .DESCRIPTION
-	This script launches the Web browser with Facebook's website.
+	This script launches the Web browser with the Facebook website.
 .EXAMPLE
-	PS> ./open-facebook
+	PS> ./open-facebook-website
 .NOTES
 	Author: Markus Fleschutz · License: CC0
 .LINK
