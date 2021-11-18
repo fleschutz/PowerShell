@@ -4,7 +4,7 @@
 .DESCRIPTION
 	This script launches the Web browser with the Instagram website.
 .EXAMPLE
-	PS> ./open-instagram
+	PS> ./open-instagram-website
 .NOTES
 	Author: Markus Fleschutz · License: CC0
 .LINK
