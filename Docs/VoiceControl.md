@@ -54,10 +54,24 @@ More supported voice commands are:
 * replace NAME: by "Arabella", "Bob", "Galaxy", "7", "Gong", "Kiss Kiss", "N-JOY", ...
 
 
+[wake word], play NAME sound
+----------------------------
+* this starts a playback of the given audio sound.
+* replace NAME: by "bee", "beep", "cat", "cow", "dog", "donkey", "elephant", "elk", "frog", "goat", "gorilla", "horse", "lion", "parrot", "pig", "rattlesnake", "vulture", or "wolf".
+
+
+Audio
+-----
+* *[wake word], mute audio.*
+* *[wake word], unmute audio.*
+* *[wake word], turn volume up.*
+* *[wake word], turn volume down.*
+
+
 Conversation
 ------------
-1. *[wake word], good morning.*
-2. *[wake word], good evening.*
-3. *[wake word], good night.*
-4. *[wake word], how are you?*
-5. *[wake word], thank you.*
+* *[wake word], good morning.*
+* *[wake word], good evening.*
+* *[wake word], good night.*
+* *[wake word], how are you?*
+* *[wake word], thank you.*
