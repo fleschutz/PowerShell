@@ -11,9 +11,9 @@ Usage
 -----
 1. Launch *Serenade* and click the Pause button to enable Listening mode.
 2. Launch *Windows Terminal* and click into the window.
-3. Say: `Computer, open calculator` - this launches the calculator application by executing the PowerShell script `open-calculator.ps1`.
+3. Say: `Computer, open calculator` - this executes the PowerShell script `open-calculator.ps1` to launch the calculator application.
 
-More voice commands are:
+More supported voice commands are:
 
 [wake word], open NAME
 ----------------------
