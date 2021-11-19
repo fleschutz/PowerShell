@@ -62,14 +62,7 @@ How to use PowerShell in Windows context menus?
 
 How to execute PowerShell scripts by voice?
 -------------------------------------------
-1. Download and install *Serenade* from https://serenade.ai/.
-2. Download and install the *PowerShell Scripts*, then set the search path to it.
-3. Execute once: `./export-to-serenade.ps1 computer` (this creates a custom JavaScript file at `$HOME/.serenade/scripts/PowerShell.js` using the wake word 'computer').
-4. Launch *Serenade* and click the Pause button to enable Listening mode.
-5. Launch *Windows Terminal* and click into the window.
-6. Say: `Computer, open calculator` (this launches the calculator application by executing the PowerShell script `open-calculator.ps1`).
-
-See the [list of supported voice commands](VoiceCommands.md) for more information.
+See the [voice control page](VoiceControl.md) for more information.
 
 
 Which editor to use for PowerShell scripts?
