@@ -1,10 +1,10 @@
 ﻿<#
 .SYNOPSIS
-	Opens GitHub's website
+	Opens the GitHub website
 .DESCRIPTION
 	This script launches the Web browser with the GitHub website.
 .EXAMPLE
-	PS> ./open-github
+	PS> ./open-github-website
 .NOTES
 	Author: Markus Fleschutz · License: CC0
 .LINK
