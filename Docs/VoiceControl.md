@@ -19,21 +19,21 @@ More supported voice commands are:
 ----------------------
 * this launches the given application.
 * replace NAME by: "calculator", "Google Chrome", "Microsoft Edge", "Mozilla Firefox", "Netflix".
-* afterward, use *[wake word], close NAME* to close the application.
+* to close the application, use: *[wake word], close NAME*
 
 
 [wake word], open NAME drive
 ----------------------------
 * this launches the File Explorer with the given drive.
 * replace NAME by: "C:", "D:", "E:", "F:", or "M:".
-* afterward, use *[wake word], close file explorer* to close the file explorer.
+* to close the File Explorer, use: *[wake word], close file explorer*
 
 
 [wake word], open NAME folder
 -----------------------------
 * this launches the File Explorer with the given folder.
 * replace NAME by: "downloads", "dropbox", "home", "music", "pictures", "repos", or "videos".
-* afterward, use *[wake word], close file explorer* to close the file explorer.
+* to close the File Explorer, use: *[wake word], close file explorer*
 
 
 [wake word], open NAME website
