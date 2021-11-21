@@ -1,10 +1,10 @@
 ﻿<#
 .SYNOPSIS
-	Closes Microsoft Edge
+	Closes the Edge browser
 .DESCRIPTION
 	This script closes the Microsoft Edge Web browser gracefully.
 .EXAMPLE
-	PS> ./close-microsoft-edge
+	PS> ./close-edge-browser
 .NOTES
 	Author: Markus Fleschutz · License: CC0
 .LINK

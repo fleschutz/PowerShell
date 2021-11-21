@@ -1,11 +1,13 @@
 Executing PowerShell Scripts by Voice
 =====================================
 
+
 Installation
 ------------
 1. Download and install *Serenade* from https://serenade.ai/.
 2. Download and install the *PowerShell Scripts*, then set the search path to it.
-3. Execute the PowerShell script: `./export-to-serenade.ps1 computer` - this creates a custom JavaScript file at `$HOME/.serenade/scripts/PowerShell.js` using the wake word 'computer'.
+3. Execute the PowerShell script: `./export-to-serenade.ps1 computer` - this creates a custom JavaScript file at `$HOME/.serenade/scripts/PowerShell.js` using the wake word 'computer'. Recommended wake words with a high detection rate are: "Alexa", "Computer", "Siri" and "Windows".
+
 
 Usage
 -----
@@ -15,10 +17,18 @@ Usage
 
 More supported voice commands are:
 
+
+[wake word], open NAME browser
+------------------------------
+* this launches the given Web browser.
+* replace NAME by: "Chrome", "Edge", or "Firefox".
+* use: *[wake word], close NAME browser* to stop the Web browser afterward.
+
+
 [wake word], open NAME
 ----------------------
 * this launches the given application.
-* replace NAME by: "calculator", "Google Chrome", "Microsoft Edge", "Mozilla Firefox", "Netflix".
+* replace NAME by: "calculator", "Netflix".
 * to close the application, use: *[wake word], close NAME*
 
 

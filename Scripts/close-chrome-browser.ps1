@@ -1,10 +1,10 @@
 ﻿<#
 .SYNOPSIS
-	Closes the Google Chrome Web browser
+	Closes the Chrome browser
 .DESCRIPTION
 	This script closes the Google Chrome Web browser gracefully.
 .EXAMPLE
-	PS> ./close-google-chrome
+	PS> ./close-chrome-browser
 .NOTES
 	Author: Markus Fleschutz · License: CC0
 .LINK

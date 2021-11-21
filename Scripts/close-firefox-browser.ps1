@@ -1,10 +1,10 @@
 ﻿<#
 .SYNOPSIS
-	Closes Mozilla's Firefox Web browser 
+	Closes the Firefox browser 
 .DESCRIPTION
-	This script closes Mozilla's Firefox Web browser gracefully.
+	This script closes the Mozilla Firefox Web browser gracefully.
 .EXAMPLE
-	PS> ./close-mozilla-firefox
+	PS> ./close-firefox-browser
 .NOTES
 	Author: Markus Fleschutz · License: CC0
 .LINK

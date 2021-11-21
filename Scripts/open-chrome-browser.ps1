@@ -1,10 +1,10 @@
 ﻿<#
 .SYNOPSIS
-	Launches the Mozilla Firefox Web browser
+	Launches the Chrome browser
 .DESCRIPTION
-	This script launches the Mozilla Firefox Web browser.
+	This script launches the Google Chrome Web browser.
 .EXAMPLE
-	PS> ./open-mozilla-firefox
+	PS> ./open-chrome-browser
 .PARAMETER URL
 	Specifies an optional URL
 .NOTES
@@ -17,9 +17,9 @@ param([string]$URL = "")
 
 try {
 	if ("$URL" -ne "") {
-		start-process firefox.exe "$URL"
+		start-process chrome.exe "$URL"
 	} else {
-		start-process firefox.exe
+		start-process chrome.exe
 	}
 	exit 0 # success
 } catch {

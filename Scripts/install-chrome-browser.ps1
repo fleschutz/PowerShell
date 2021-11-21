@@ -1,10 +1,10 @@
 ﻿<#
 .SYNOPSIS
-	Installs the latest Google Chrome browser
+	Installs the Chrome browser
 .DESCRIPTION
 	This script installs the latest Google Chrome Web browser.
 .EXAMPLE
-	PS> ./install-google-chrome
+	PS> ./install-chrome-browser
 .NOTES
 	Author: Markus Fleschutz · License: CC0
 .LINK
