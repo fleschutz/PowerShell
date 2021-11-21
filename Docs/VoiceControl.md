@@ -18,7 +18,7 @@ Usage
 More supported voice commands are:
 
 
-<wake word>, open <name> browser
+<<wake word>>, open <<name>> browser
 --------------------------------
 * this launches the given Web browser.
 * replace NAME by: "Chrome", "Edge", or "Firefox".
