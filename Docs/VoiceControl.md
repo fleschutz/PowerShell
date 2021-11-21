@@ -18,11 +18,11 @@ Usage
 More supported voice commands are:
 
 
-<<wake word>>, open <<name>> browser
+`wake word`, open `name` browser
 --------------------------------
 * this launches the given Web browser.
-* replace NAME by: "Chrome", "Edge", or "Firefox".
-* when finished use: *[wake word], close NAME browser* to stop the Web browser.
+* replace `name` by: "Chrome", "Edge", or "Firefox".
+* when finished use: *`wake word`, close `name` browser* to stop the Web browser.
 
 
 [wake word], open NAME app
