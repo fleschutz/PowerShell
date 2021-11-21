@@ -1,10 +1,10 @@
 ﻿<#
 .SYNOPSIS
-	Launches Visual Studio
+	Launches the Visual Studio app
 .DESCRIPTION
 	This script launches the Microsoft Visual Studio application.
 .EXAMPLE
-	PS> ./open-visual-studio
+	PS> ./open-visual-studio-app
 .NOTES
 	Author: Markus Fleschutz · License: CC0
 .LINK

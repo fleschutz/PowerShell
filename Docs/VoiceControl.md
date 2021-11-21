@@ -28,8 +28,8 @@ More supported voice commands are:
 [wake word], open NAME app
 --------------------------
 * this launches the given application.
-* replace NAME by: "calculator", or "Netflix".
-* when finished use: *[wake word], close NAME* to stop the application.
+* replace NAME by: "Calculator", "Netflix", or "Visual Studio".
+* when finished use: *[wake word], close NAME app* to stop the application.
 
 
 [wake word], open NAME drive
@@ -44,6 +44,13 @@ More supported voice commands are:
 * this launches the File Explorer with the given folder.
 * replace NAME by: "downloads", "dropbox", "home", "music", "pictures", "repos", or "videos".
 * when finished use: *[wake word], close file explorer* to stop the File Explorer.
+
+
+[wake word], open NAME settings
+-------------------------------
+* this launches the corresponding Windows settings.
+* replace NAME by: "activation", "apps", "background", "backup", "bluetooth", "color", "date", "default apps", "developer", "display", "ethernet", "lockscreen", "maps", "printer", "proxy", "recovery", "speech", "start", "system", "taskbar", "themes", "time", "update", "usb", "vpn", or "wifi". Use "system" as top level settings.
+* when finished use: *[wake word], close system settings* to stop the Windows settings.
 
 
 [wake word], open NAME website

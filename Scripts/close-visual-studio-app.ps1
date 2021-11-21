@@ -1,10 +1,10 @@
 ﻿<#
 .SYNOPSIS
-	Closes Visual Studio
+	Closes the Visual Studio app
 .DESCRIPTION
 	This script closes the Microsoft Visual Studio application gracefully.
 .EXAMPLE
-	PS> ./close-visual-studio
+	PS> ./close-visual-studio-app
 .NOTES
 	Author: Markus Fleschutz · License: CC0
 .LINK
