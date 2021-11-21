@@ -28,7 +28,7 @@ More supported voice commands are:
 [wake word], open NAME app
 --------------------------
 * this launches the given application.
-* replace NAME by: "Calculator", "Netflix", "Thunderbird", or "Visual Studio".
+* replace NAME by: "Calculator", "Netflix", "Spotify", "Thunderbird", or "Visual Studio".
 * when finished use: *[wake word], close NAME app* to stop the application.
 
 

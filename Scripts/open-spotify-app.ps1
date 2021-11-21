@@ -1,10 +1,10 @@
 ﻿<#
 .SYNOPSIS
-	Starts Spotify 
+	Launches the Spotify app
 .DESCRIPTION
 	This script launches the Spotify application.
 .EXAMPLE
-	PS> ./open-spotify
+	PS> ./open-spotify-app
 .NOTES
 	Author: Markus Fleschutz · License: CC0
 .LINK
