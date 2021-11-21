@@ -1,10 +1,10 @@
 ﻿<#
 .SYNOPSIS
-	Starts the Netflix app
+	Launches the Netflix app
 .DESCRIPTION
 	This script launches the Netflix application.
 .EXAMPLE
-	PS> ./open-netflix
+	PS> ./open-netflix-app
 .NOTES
 	Author: Markus Fleschutz · License: CC0
 .LINK

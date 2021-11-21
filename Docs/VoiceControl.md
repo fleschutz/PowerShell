@@ -13,7 +13,7 @@ Usage
 -----
 1. Launch *Serenade* and click the Pause button to enable Listening mode.
 2. Launch *Windows Terminal* and click into the window.
-3. Say: `Computer, open calculator` - this executes the PowerShell script `open-calculator.ps1` to launch the calculator application.
+3. Say: `Computer, open calculator app` - this executes the PowerShell script `open-calculator-app.ps1` to launch the calculator application.
 
 More supported voice commands are:
 
@@ -22,46 +22,49 @@ More supported voice commands are:
 ------------------------------
 * this launches the given Web browser.
 * replace NAME by: "Chrome", "Edge", or "Firefox".
-* use: *[wake word], close NAME browser* to stop the Web browser afterward.
+* when finished use: *[wake word], close NAME browser* to stop the Web browser.
 
 
-[wake word], open NAME
-----------------------
+[wake word], open NAME app
+--------------------------
 * this launches the given application.
-* replace NAME by: "calculator", "Netflix".
-* to close the application, use: *[wake word], close NAME*
+* replace NAME by: "calculator", or "Netflix".
+* when finished use: *[wake word], close NAME* to stop the application.
 
 
 [wake word], open NAME drive
 ----------------------------
 * this launches the File Explorer with the given drive.
 * replace NAME by: "C:", "D:", "E:", "F:", or "M:".
-* to close the File Explorer, use: *[wake word], close file explorer*
+* when finished use: *[wake word], close file explorer* to stop the File Explorer.
 
 
 [wake word], open NAME folder
 -----------------------------
 * this launches the File Explorer with the given folder.
 * replace NAME by: "downloads", "dropbox", "home", "music", "pictures", "repos", or "videos".
-* to close the File Explorer, use: *[wake word], close file explorer*
+* when finished use: *[wake word], close file explorer* to stop the File Explorer.
 
 
 [wake word], open NAME website
 ------------------------------
-* this launches the default browser with the given website.
+* this launches the default Web browser with the given website.
 * replace NAME by: "Amazon", "Baidu", "BBC", "CDC", "CIA", "CNN", "eBay", "Facebook", "FBI", "GitHub", "Instagram", "Microsoft", "NASA", "NBC", "Pinterest", "Pixabay", "Slashdot", "Tesla", "Twitter", "UFA", "Unsplash", "Walmart", "WhatsApp", "White House", "Wikipedia", "Wired", or "Yahoo".
+* when finished see "close NAME browser" to stop the Web browser.
 
 
 [wake word], show NAME city
 ---------------------------
-* this launches the default browser with Google Maps showing the given city.
+* this launches the default Web browser with Google Maps showing the given city.
 * replace NAME by: "Atlanta", "Barcelona", "Berlin", "Boston", "Cairo", "Cape Town", "Chicago", "Dallas", "Dubai", "Dublin", "Frankfurt", "Hamburg", "Hong Kong", "Jerusalem", "Las Vegas", "Lissabon", "London", "Los Angeles", "Madrid", "Miami", "Moscow", "Munich", "New York", "Paris", Rome", "San Francisco", "Seattle", "Singapore", "Sydney", "Tokyo", "Toronto", or "Washington".
+* when finished see "close NAME browser" to stop the Web browser.
 
 
 [wake word], play radio NAME
 ----------------------------
-* this launches the default browser and tunes into an internet radio station stream.
+* this launches the default Web browser and tunes into an internet radio station stream.
 * replace NAME: by "Arabella", "Bob", "Galaxy", "7", "Gong", "Kiss Kiss", "N-JOY", ...
+* when finished see "close NAME browser" to stop the Web browser.
 
 
 [wake word], play NAME sound

@@ -1,10 +1,10 @@
 ﻿<#
 .SYNOPSIS
-	Closes the Netflix application 
+	Closes the Netflix app
 .DESCRIPTION
 	This script closes the Netflix application gracefully.
 .EXAMPLE
-	PS> ./close-netflix
+	PS> ./close-netflix-app
 .NOTES
 	Author: Markus Fleschutz · License: CC0
 .LINK

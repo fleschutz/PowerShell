@@ -1,10 +1,10 @@
 ﻿<#
 .SYNOPSIS
-	Starts the calculator app
+	Launches the calculator app
 .DESCRIPTION
 	This script launches the calculator application.
 .EXAMPLE
-	PS> ./open-calculator
+	PS> ./open-calculator-app
 .NOTES
 	Author: Markus Fleschutz · License: CC0
 .LINK
