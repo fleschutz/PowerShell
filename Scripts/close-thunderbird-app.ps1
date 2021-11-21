@@ -1,10 +1,10 @@
 ﻿<#
 .SYNOPSIS
-	Closes Mozilla Thunderbird 
+	Closes the Thunderbird app
 .DESCRIPTION
-	This script closes the Mozilla Thunderbird email client gracefully.
+	This script closes the Mozilla Thunderbird email application gracefully.
 .EXAMPLE
-	PS> ./close-mozilla-thunderbird
+	PS> ./close-thunderbird-app
 .NOTES
 	Author: Markus Fleschutz · License: CC0
 .LINK

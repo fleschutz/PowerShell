@@ -1,10 +1,10 @@
 ﻿<#
 .SYNOPSIS
-	Launches Mozilla Thunderbird
+	Launches the Thunderbird app
 .DESCRIPTION
-	This script launches the Mozilla Thunderbird email client.
+	This script launches the Mozilla Thunderbird email application.
 .EXAMPLE
-	PS> ./open-mozilla-thunderbird
+	PS> ./open-thunderbird-app
 .NOTES
 	Author: Markus Fleschutz · License: CC0
 .LINK

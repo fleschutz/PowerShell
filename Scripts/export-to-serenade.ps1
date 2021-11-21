@@ -4,17 +4,17 @@
 .DESCRIPTION
 	This script exports all PowerShell scripts to Serenade to execute them by voice.
 .PARAMETER WakeWord
-	Specifies the wakeword (none by default)
+	Specifies the wake word (none by default)
 .PARAMETER FilePattern
 	Specifies the file pattern for the scripts ("$PSScriptRoot/*.ps1" by default)
 .PARAMETER Application
 	Specifies the application to be used
 .PARAMETER TargetFile
-	Specifies the target file ("$HOME/.serenade/scripts/PowerShell.js" by default)
+	Specifies the target file ("$HOME\.serenade\scripts\PowerShell.js" by default)
 .EXAMPLE
 	PS> ./export-to-serenade.ps1 Computer
-	⏳ Exporting 264 PowerShell scripts to C:\Users\Markus/.serenade/scripts/PowerShell.js...
-	✔️ exported 264 scripts with wakework "Computer" to Serenade in 22 sec
+	⏳ Exporting 496 PowerShell scripts to C:\Users\Markus\.serenade\scripts\PowerShell.js...
+	✔️ exported 496 scripts with wake word "Computer" to Serenade in 3 sec
 .NOTES
 	Author: Markus Fleschutz · License: CC0
 .LINK
@@ -23,7 +23,7 @@
 
 #requires -version 2
 
-param([string]$WakeWord = "", [string]$FilePattern = "$PSScriptRoot/*.ps1", [string]$Application = "terminal", [string]$TargetFile = "$HOME/.serenade/scripts/PowerShell.js")
+param([string]$WakeWord = "", [string]$FilePattern = "$PSScriptRoot/*.ps1", [string]$Application = "terminal", [string]$TargetFile = "$HOME\.serenade\scripts\PowerShell.js")
 
 try {
 	$StopWatch = [system.diagnostics.stopwatch]::startNew()
@@ -39,7 +39,7 @@ try {
 	}
 
 	[int]$Elapsed = $StopWatch.Elapsed.TotalSeconds
-	"✔️ exported $($Scripts.Count) PowerShell scripts with wakeword `"$WakeWord`" to Serenade in $Elapsed sec"
+	"✔️ exported $($Scripts.Count) PowerShell scripts with wake word `"$WakeWord`" to Serenade in $Elapsed sec"
 	exit 0 # success
 } catch {
 	write-error "⚠️ Error in line $($_.InvocationInfo.ScriptLineNumber): $($Error[0])"

@@ -6,7 +6,7 @@ Installation
 ------------
 1. Download and install *Serenade* from https://serenade.ai/.
 2. Download and install the *PowerShell Scripts*, then set the search path to it.
-3. Execute the PowerShell script: `./export-to-serenade.ps1 computer` - this creates a custom JavaScript file at `$HOME/.serenade/scripts/PowerShell.js` using the wake word 'computer'. Recommended wake words with a high detection rate are: "Alexa", "Computer", "Siri" and "Windows".
+3. Execute: `./export-to-serenade.ps1 computer` in the *PowerShell Scripts* - this creates a custom JavaScript file at `$HOME/.serenade/scripts/PowerShell.js` using the wake word 'computer'. Recommended wake words with a high detection rate are: "Alexa", "Computer", "Siri" and "Windows".
 
 
 Usage
@@ -28,7 +28,7 @@ More supported voice commands are:
 [wake word], open NAME app
 --------------------------
 * this launches the given application.
-* replace NAME by: "Calculator", "Netflix", or "Visual Studio".
+* replace NAME by: "Calculator", "Netflix", "Thunderbird", or "Visual Studio".
 * when finished use: *[wake word], close NAME app* to stop the application.
 
 
