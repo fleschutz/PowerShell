@@ -25,59 +25,59 @@ Computer, open `name` browser
 * when finished use: *Computer, close `name` browser* to stop the Web browser.
 
 
-Computer, open NAME app
+Computer, open `name` app
 --------------------------
 * this launches the given application.
-* replace NAME by: "Calculator", "Git Extensions", "Netflix", "Spotify", "Thunderbird", or "Visual Studio".
-* when finished use: *Computer, close NAME app* to stop the application.
+* replace `name` by: "Calculator", "Git Extensions", "Netflix", "Spotify", "Thunderbird", or "Visual Studio".
+* when finished use: *Computer, close `name` app* to stop the application.
 
 
-Computer, open NAME drive
+Computer, open `name` drive
 ----------------------------
 * this launches the File Explorer showing the content of the given drive.
-* replace NAME by: "C:", "D:", "E:", "F:", or "M:".
+* replace `name` by: "C:", "D:", "E:", "F:", or "M:".
 * when finished use: *Computer, close file explorer* to stop the File Explorer.
 
 
-Computer, open NAME folder
+Computer, open `name` folder
 --------------------------
 * this launches the File Explorer with the given folder.
-* replace NAME by: "downloads", "dropbox", "home", "music", "pictures", "repos", or "videos".
+* replace `name` by: "downloads", "dropbox", "home", "music", "pictures", "repos", or "videos".
 * when finished use: *Computer, close file explorer* to stop the File Explorer.
 
 
-Computer, open NAME settings
+Computer, open `name` settings
 -------------------------------
 * this launches the corresponding Windows settings.
-* replace NAME by: "activation", "apps", "background", "backup", "bluetooth", "color", "date", "default apps", "developer", "display", "ethernet", "lockscreen", "maps", "printer", "proxy", "recovery", "speech", "start", "system", "taskbar", "themes", "time", "update", "usb", "vpn", or "wifi". Use "system" as top level settings.
+* replace `name` by: "activation", "apps", "background", "backup", "bluetooth", "color", "date", "default apps", "developer", "display", "ethernet", "lockscreen", "maps", "printer", "proxy", "recovery", "speech", "start", "system", "taskbar", "themes", "time", "update", "usb", "vpn", or "wifi". Use "system" as top level settings.
 * when finished use: *Computer, close system settings* to stop the Windows settings.
 
 
-Computer, open NAME website
----------------------------
+Computer, open `name` website
+-----------------------------
 * this launches the default Web browser with the given website.
-* replace NAME by: "Amazon", "Baidu", "BBC", "CDC", "CIA", "CNN", "eBay", "Facebook", "FBI", "GitHub", "Instagram", "Microsoft", "NASA", "NBC", "Pinterest", "Pixabay", "Slashdot", "Tesla", "Twitter", "UFA", "Unsplash", "Walmart", "WhatsApp", "White House", "Wikipedia", "Wired", or "Yahoo".
-* when finished see "Computer, close NAME browser" to stop the Web browser.
+* replace `name` by: "Amazon", "Baidu", "BBC", "CDC", "CIA", "CNN", "eBay", "Facebook", "FBI", "GitHub", "Instagram", "Microsoft", "NASA", "NBC", "Pinterest", "Pixabay", "Slashdot", "Tesla", "Twitter", "UFA", "Unsplash", "Walmart", "WhatsApp", "White House", "Wikipedia", "Wired", or "Yahoo".
+* when finished see "Computer, close `name` browser" to stop the Web browser.
 
 
-Computer, show NAME city
-------------------------
+Computer, show `name` city
+--------------------------
 * this launches the default Web browser with Google Maps showing the given city.
-* replace NAME by: "Atlanta", "Barcelona", "Berlin", "Boston", "Cairo", "Cape Town", "Chicago", "Dallas", "Dubai", "Dublin", "Frankfurt", "Hamburg", "Hong Kong", "Jerusalem", "Las Vegas", "Lissabon", "London", "Los Angeles", "Madrid", "Miami", "Moscow", "Munich", "New York", "Paris", Rome", "San Francisco", "Seattle", "Singapore", "Sydney", "Tokyo", "Toronto", or "Washington".
-* when finished see "Computer, close NAME browser" to stop the Web browser.
+* replace `name` by: "Atlanta", "Barcelona", "Berlin", "Boston", "Cairo", "Cape Town", "Chicago", "Dallas", "Dubai", "Dublin", "Frankfurt", "Hamburg", "Hong Kong", "Jerusalem", "Las Vegas", "Lissabon", "London", "Los Angeles", "Madrid", "Miami", "Moscow", "Munich", "New York", "Paris", Rome", "San Francisco", "Seattle", "Singapore", "Sydney", "Tokyo", "Toronto", or "Washington".
+* when finished see "Computer, close `name` browser" to stop the Web browser.
 
 
-Computer, play radio NAME
--------------------------
+Computer, play radio `name`
+---------------------------
 * this launches the default Web browser and tunes into an internet radio station stream.
-* replace NAME: by "Arabella", "Bob", "Galaxy", "7", "Gong", "Kiss Kiss", "N-JOY", ...
-* when finished see "Computer, close NAME browser" to stop the Web browser.
+* replace `name`: by "Arabella", "Bob", "Galaxy", "7", "Gong", "Kiss Kiss", "N-JOY", ...
+* when finished see "Computer, close `name` browser" to stop the Web browser.
 
 
-Computer, play NAME sound
--------------------------
+Computer, play `name` sound
+---------------------------
 * this starts a playback of the given audio sound.
-* replace NAME: by "bee", "beep", "cat", "cow", "dog", "donkey", "elephant", "elk", "frog", "goat", "gorilla", "horse", "lion", "parrot", "pig", "rattlesnake", "vulture", or "wolf".
+* replace `name`: by "bee", "beep", "cat", "cow", "dog", "donkey", "elephant", "elk", "frog", "goat", "gorilla", "horse", "lion", "parrot", "pig", "rattlesnake", "vulture", or "wolf".
 
 
 Audio
