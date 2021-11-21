@@ -1,10 +1,10 @@
 ﻿<#
 .SYNOPSIS
-	Launches Git Extensions
+	Launches the Git Extensions app
 .DESCRIPTION
 	This script launches the Git Extensions application.
 .EXAMPLE
-	PS> ./open-git-extensions
+	PS> ./open-git-extensions-app
 .NOTES
 	Author: Markus Fleschutz · License: CC0
 .LINK

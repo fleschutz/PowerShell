@@ -28,13 +28,13 @@ More supported voice commands are:
 [wake word], open NAME app
 --------------------------
 * this launches the given application.
-* replace NAME by: "Calculator", "Netflix", "Spotify", "Thunderbird", or "Visual Studio".
+* replace NAME by: "Calculator", "Git Extensions", "Netflix", "Spotify", "Thunderbird", or "Visual Studio".
 * when finished use: *[wake word], close NAME app* to stop the application.
 
 
 [wake word], open NAME drive
 ----------------------------
-* this launches the File Explorer with the given drive.
+* this launches the File Explorer showing the content of the given drive.
 * replace NAME by: "C:", "D:", "E:", "F:", or "M:".
 * when finished use: *[wake word], close file explorer* to stop the File Explorer.
 

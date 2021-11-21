@@ -1,10 +1,10 @@
 ﻿<#
 .SYNOPSIS
-	Closes Git Extensions
+	Closes the Git Extensions app
 .DESCRIPTION
 	This script closes the Git Extensions application gracefully.
 .EXAMPLE
-	PS> ./close-git-extensions
+	PS> ./close-git-extensions-app
 .NOTES
 	Author: Markus Fleschutz · License: CC0
 .LINK
