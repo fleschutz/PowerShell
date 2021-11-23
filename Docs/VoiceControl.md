@@ -28,7 +28,7 @@ Computer, open `name` browser
 Computer, open `name` app
 --------------------------
 * this launches the given application.
-* replace `name` by: "Calculator", "Git Extensions", "Netflix", "Spotify", "Thunderbird", or "Visual Studio".
+* replace `name` by: "Calculator", "Git Extensions", "Netflix", "Notepad", "Spotify", "Thunderbird", or "Visual Studio".
 * when finished use: *Computer, close `name` app* to stop the application.
 
 

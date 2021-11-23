@@ -11,9 +11,5 @@
 	https://github.com/fleschutz/PowerShell
 #>
 
-TaskKill /im Notepad 
-if ($lastExitCode -ne "0") {
-	& "$PSScriptRoot/speak-english.ps1" "Sorry, Notepad is already closed."
-	exit 1
-}
+& "$PSScriptRoot/close-program.ps1" "Notepad" "notepad" "notepad"
 exit 0 # success

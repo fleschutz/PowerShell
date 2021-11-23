@@ -36,7 +36,6 @@ try {
 		start-sleep -milliseconds 100
 		stop-process -name $ProgramName -force -errorAction 'silentlycontinue'
 	} else {
-
 		$Processes = get-process -name $ProgramAliasName -errorAction 'silentlycontinue'
 		if ($Processes.Count -eq 0) {
 			throw "$FullProgramName is not started yet"
