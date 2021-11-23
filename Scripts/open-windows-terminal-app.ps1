@@ -1,10 +1,10 @@
 ﻿<#
 .SYNOPSIS
-	Starts Windows Terminal
+	Launches the Windows Terminal app
 .DESCRIPTION
 	This script launches the Windows Terminal application.
 .EXAMPLE
-	PS> ./open-windows-terminal
+	PS> ./open-windows-terminal-app
 .NOTES
 	Author: Markus Fleschutz · License: CC0
 .LINK

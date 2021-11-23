@@ -1,11 +1,10 @@
 ﻿<#
 .SYNOPSIS
-	Closes the Windows Terminal application
+	Closes the Windows Terminal app
 .DESCRIPTION
 	This script closes the Windows Terminal application gracefully.
 .EXAMPLE
-	PS> ./close-windows-terminal
-	(Windows Terminal is closed)
+	PS> ./close-windows-terminal-app
 .NOTES
 	Author: Markus Fleschutz · License: CC0
 .LINK
