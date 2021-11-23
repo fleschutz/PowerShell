@@ -4,7 +4,7 @@
 .DESCRIPTION
 	This script launches the Web browser with the HRworks website.
 .EXAMPLE
-	PS> ./open-hr-works
+	PS> ./open-hr-works-website
 .NOTES
 	Author: Markus Fleschutz · License: CC0
 .LINK
