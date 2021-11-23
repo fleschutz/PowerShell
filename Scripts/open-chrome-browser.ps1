@@ -13,14 +13,10 @@
 	https://github.com/fleschutz/PowerShell
 #>
 
-param([string]$URL = "")
+param([string]$URL = "http://www.fleschutz.de")
 
 try {
-	if ("$URL" -ne "") {
-		start-process chrome.exe "$URL"
-	} else {
-		start-process chrome.exe
-	}
+	start-process chrome.exe "$URL"
 	exit 0 # success
 } catch {
 	"⚠️ Error: $($Error[0]) ($($MyInvocation.MyCommand.Name):$($_.InvocationInfo.ScriptLineNumber))"

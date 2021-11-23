@@ -11,5 +11,5 @@
 	https://github.com/fleschutz/PowerShell
 #>
 
-& "$PSScriptRoot/open-browser.ps1" "https://www.radio.de/s/costadelmar"
+& "$PSScriptRoot/open-default-browser.ps1" "https://www.radio.de/s/costadelmar"
 exit 0 # success

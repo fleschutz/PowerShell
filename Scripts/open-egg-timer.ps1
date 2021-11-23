@@ -11,5 +11,5 @@
 	https://github.com/fleschutz/PowerShell
 #>
 
-& "$PSScriptRoot/open-browser.ps1" "https://e.ggtimer.com"
+& "$PSScriptRoot/open-default-browser.ps1" "https://e.ggtimer.com"
 exit 0 # success

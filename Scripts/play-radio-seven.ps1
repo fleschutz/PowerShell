@@ -11,5 +11,5 @@
 	https://github.com/fleschutz/PowerShell
 #>
 
-& "$PSScriptRoot/open-browser.ps1" "http://streema.com/radios/play/Radio_7"
+& "$PSScriptRoot/open-default-browser.ps1" "http://streema.com/radios/play/Radio_7"
 exit 0 # success

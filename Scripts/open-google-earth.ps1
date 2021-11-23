@@ -11,5 +11,5 @@
 	https://github.com/fleschutz/PowerShell
 #>
 
-& "$PSScriptRoot/open-browser.ps1" "https://earth.google.com/web/"
+& "$PSScriptRoot/open-default-browser.ps1" "https://earth.google.com/web/"
 exit 0 # success

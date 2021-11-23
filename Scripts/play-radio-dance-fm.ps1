@@ -11,5 +11,5 @@
 	https://github.com/fleschutz/PowerShell
 #>
 
-& "$PSScriptRoot/open-browser.ps1" "https://tunein.com/radio/Dance-FM-s303095/"
+& "$PSScriptRoot/open-default-browser.ps1" "https://tunein.com/radio/Dance-FM-s303095/"
 exit 0 # success

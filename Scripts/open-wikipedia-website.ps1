@@ -11,5 +11,5 @@
 	https://github.com/fleschutz/PowerShell
 #>
 
-& "$PSScriptRoot/open-browser.ps1" "https://www.wikipedia.org"
+& "$PSScriptRoot/open-default-browser.ps1" "https://www.wikipedia.org"
 exit 0 # success

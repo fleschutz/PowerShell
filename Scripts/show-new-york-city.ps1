@@ -11,5 +11,5 @@
 	https://github.com/fleschutz/PowerShell
 #>
 
-& "$PSScriptRoot/open-browser.ps1" "https://www.google.com/maps/place/New+York+City"
+& "$PSScriptRoot/open-default-browser.ps1" "https://www.google.com/maps/place/New+York+City"
 exit 0 # success

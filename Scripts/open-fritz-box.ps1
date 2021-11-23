@@ -11,5 +11,5 @@
 	https://github.com/fleschutz/PowerShell
 #>
 
-& "$PSScriptRoot/open-browser.ps1" "http://fritz.box"
+& "$PSScriptRoot/open-default-browser.ps1" "http://fritz.box"
 exit 0 # success

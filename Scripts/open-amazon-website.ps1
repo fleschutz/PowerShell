@@ -11,4 +11,5 @@
 	https://github.com/fleschutz/PowerShell
 #>
 
-& "$PSScriptRoot/open-browser.ps1" "https://www.amazon.com"
+& "$PSScriptRoot/open-default-browser.ps1" "https://www.amazon.com"
+exit 0 # success

@@ -11,5 +11,5 @@
 	https://github.com/fleschutz/PowerShell
 #>
 
-& "$PSScriptRoot/open-browser.ps1" "https://play.google.com/store"
+& "$PSScriptRoot/open-default-browser.ps1" "https://play.google.com/store"
 exit 0 # success

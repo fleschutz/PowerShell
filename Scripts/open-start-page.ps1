@@ -11,5 +11,5 @@
 	https://github.com/fleschutz/PowerShell
 #>
 
-& "$PSScriptRoot/open-browser.ps1" "https://www.startpage.com"
+& "$PSScriptRoot/open-default-browser.ps1" "https://www.startpage.com"
 exit 0 # success

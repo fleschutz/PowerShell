@@ -11,5 +11,5 @@
 	https://github.com/fleschutz/PowerShell
 #>
 
-& "$PSScriptRoot/open-browser.ps1" "https://www.baidu.com"
+& "$PSScriptRoot/open-default-browser.ps1" "https://www.baidu.com"
 exit 0 # success
