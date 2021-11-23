@@ -4,7 +4,7 @@
 .DESCRIPTION
 	This script launches the Web browser with the TikTok website.
 .EXAMPLE
-	PS> ./open-tiktop-website
+	PS> ./open-tik-tok-website
 .NOTES
 	Author: Markus Fleschutz · License: CC0
 .LINK
