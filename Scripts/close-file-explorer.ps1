@@ -1,8 +1,8 @@
 ﻿<#
 .SYNOPSIS
-	Closes Microsoft's File Explorer 
+	Closes the File Explorer 
 .DESCRIPTION
-	This script closes Microsoft's File Explorer gracefully.
+	This script closes the Microsoft File Explorer application gracefully.
 .EXAMPLE
 	PS> ./close-file-explorer
 .NOTES
@@ -11,5 +11,5 @@
 	https://github.com/fleschutz/PowerShell
 #>
 
-& "$PSScriptRoot/close-program.ps1" "File Explorer" "explorer" "explorer"
+(New-Object -ComObject Shell.Application).Windows() | %{$_.quit()}
 exit 0 # success
