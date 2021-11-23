@@ -14,8 +14,8 @@
 .EXAMPLE
 	PS> ./export-to-serenade.ps1 Computer
 	⏳ Found 499 PowerShell scripts...
-	⏳ Writing to C:\Users\Markus\.serenade\scripts\PowerShell.js using wake word "Computer"...
-	✔️ export to Serenade finished in 3 sec
+	⏳ Writing to custom JavaScript file C:\Users\Markus\.serenade\scripts\PowerShell.js...
+	✔️ export to Serenade with wake word "Computer" finished in 3 sec
 .NOTES
 	Author: Markus Fleschutz · License: CC0
 .LINK
@@ -31,7 +31,7 @@ try {
 
 	$Scripts = Get-ChildItem "$FilePattern"
 	"⏳ Found $($Scripts.Count) PowerShell scripts..."
-	"⏳ Writing $TargetFile using wake word `"$WakeWord`"..."
+	"⏳ Writing to custom JavaScript file $TargetFile..."
 
 	"/* NOTE: This file has been generated automatically by export-to-serenade.ps1 */" | Set-Content "$TargetFile"
 	foreach ($Script in $Scripts) {
@@ -41,7 +41,7 @@ try {
 	}
 
 	[int]$Elapsed = $StopWatch.Elapsed.TotalSeconds
-	"✔️ export to Serenade finished in $Elapsed sec"
+	"✔️ export to Serenade with wake word `"$WakeWord`" finished in $Elapsed sec"
 	exit 0 # success
 } catch {
 	write-error "⚠️ Error in line $($_.InvocationInfo.ScriptLineNumber): $($Error[0])"
