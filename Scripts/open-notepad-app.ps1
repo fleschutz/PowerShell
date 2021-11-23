@@ -1,10 +1,10 @@
 ﻿<#
 .SYNOPSIS
-	Starts Notepad
+	Launches the Notepad app
 .DESCRIPTION
 	This script launches the Notepad application.
 .EXAMPLE
-	PS> ./open-notepad
+	PS> ./open-notepad-app
 .NOTES
 	Author: Markus Fleschutz · License: CC0
 .LINK
