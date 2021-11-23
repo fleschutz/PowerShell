@@ -4,7 +4,7 @@
 .DESCRIPTION
 	This script launches the Web browser with the FourSquare website.
 .EXAMPLE
-	PS> ./open-four-square
+	PS> ./open-four-square-website
 .NOTES
 	Author: Markus Fleschutz · License: CC0
 .LINK

@@ -4,7 +4,7 @@
 .DESCRIPTION
 	This script launches the Web browser with the Bitbucket website.
 .EXAMPLE
-	PS> ./open-bit-bucket
+	PS> ./open-bit-bucket-website
 .NOTES
 	Author: Markus Fleschutz · License: CC0
 .LINK
