@@ -1,10 +1,10 @@
 ﻿<#
 .SYNOPSIS
-	Opens YouTube
+	Opens the YouTube website
 .DESCRIPTION
-	This script launches the Web browser with YouTube's website.
+	This script launches the Web browser with the YouTube website.
 .EXAMPLE
-	PS> ./open-youtube
+	PS> ./open-youtube-website
 .NOTES
 	Author: Markus Fleschutz · License: CC0
 .LINK

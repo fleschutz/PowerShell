@@ -1,10 +1,10 @@
 ﻿<#
 .SYNOPSIS
-	Opens windy.com
+	Opens the windy.com website
 .DESCRIPTION
 	This script launches the Web browser with the windy.com website.
 .EXAMPLE
-	PS> ./open-windy
+	PS> ./open-windy-website
 .NOTES
 	Author: Markus Fleschutz · License: CC0
 .LINK

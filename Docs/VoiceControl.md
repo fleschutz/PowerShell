@@ -56,7 +56,7 @@ Computer, open `name` settings
 Computer, open `name` website
 -----------------------------
 * this launches the default Web browser with the given website.
-* replace `name` by: "Amazon", "Baidu", "BBC", "CDC", "CIA", "CNN", "eBay", "Facebook", "FBI", "GitHub", "HRworks", "Instagram", "Microsoft", "NASA", "NBC", "Pinterest", "Pixabay", "Slashdot", "Tesla", "TikTok", "Twitter", "UFA", "Unsplash", "Walmart", "WhatsApp", "White House", "Wikipedia", "Wired", or "Yahoo".
+* replace `name` by: "Amazon", "Baidu", "BBC", "CDC", "CIA", "CNN", "eBay", "Facebook", "FBI", "GitHub", "HRworks", "Instagram", "Microsoft", "NASA", "NBC", "Pinterest", "Pixabay", "Slashdot", "Tesla", "TikTok", "Twitter", "UFA", "Unsplash", "Walmart", "WhatsApp", "White House", "Windy", "Wikipedia", "Wired", "Yahoo", or "YouTube".
 * when finished see "Computer, close `name` browser" to stop the Web browser.
 
 
