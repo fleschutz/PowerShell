@@ -20,7 +20,7 @@ try {
 		$Uptime = New-TimeSpan -Start $BootTime.TimeCreated.Date -End $TimeNow
 	} 
 
-	$Answer = "I'm up for $($Uptime.Days) days, $($Uptime.Hours) hours, $($Uptime.Minutes) minutes."
+	$Answer = "I'm up for $($Uptime.Days) days, $($Uptime.Hours) hours and $($Uptime.Minutes) minutes."
 
 	write-output "$Answer"
 	& "$PSScriptRoot/speak-english.ps1" "$Answer"
