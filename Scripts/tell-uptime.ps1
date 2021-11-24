@@ -1,8 +1,8 @@
-﻿
+﻿<#
 .SYNOPSIS
 	Tells the uptime by text-to-speech
 .DESCRIPTION
-G	This script speaks the uptime version by text-to-speech (TTS).
+	This script speaks the uptime version by text-to-speech (TTS).
 .EXAMPLE
 	PS> ./tell-uptime
 .NOTES
