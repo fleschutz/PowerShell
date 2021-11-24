@@ -1,11 +1,10 @@
 ﻿<#
 .SYNOPSIS
-	Say the operating system details by text-to-speech
+	Tells the OS version by text-to-speech
 .DESCRIPTION
-	This script speaks the operating system details by text-to-speech (TTS).
+	This script speaks the operating system version by text-to-speech (TTS).
 .EXAMPLE
-	PS> ./say-operating-system
-	(listen)
+	PS> ./tell-operating-system
 .NOTES
 	Author: Markus Fleschutz · License: CC0
 .LINK

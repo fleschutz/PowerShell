@@ -88,10 +88,13 @@ Audio
 * *Computer, turn volume down.*
 
 
-Conversation
-------------
+Nice Conversation
+-----------------
 * *Computer, good morning.*
 * *Computer, good evening.*
 * *Computer, good night.*
 * *Computer, how are you?*
 * *Computer, thank you.*
+* *Computer, tell joke.*
+* *Computer, tell quote.*
+* *Computer, tell operating system.*

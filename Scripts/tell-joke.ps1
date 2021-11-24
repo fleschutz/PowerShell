@@ -1,11 +1,10 @@
 ﻿<#
 .SYNOPSIS
-	Say a random Chuck Norris joke by text-to-speech
+	Tells a joke by text-to-speech
 .DESCRIPTION
-	This script selects a random joke in Data/jokes.csv and tells it by text-to-speech (TTS).
+	This script selects a random Chuck Norris joke in Data/jokes.csv and speaks it by text-to-speech (TTS).
 .EXAMPLE
-	PS> ./say-joke
-	(listen and have fun)
+	PS> ./tell-joke
 .NOTES
 	Author: Markus Fleschutz · License: CC0
 .LINK

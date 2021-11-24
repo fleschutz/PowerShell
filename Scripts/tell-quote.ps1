@@ -1,11 +1,10 @@
 ﻿<#
 .SYNOPSIS
-	Say a random quote by text-to-speech
+	Tells a quote by text-to-speech
 .DESCRIPTION
-	This script selects a random quote in Data/quotes.csv and tells it by text-to-speech (TTS).
+	This script selects a random quote in Data/quotes.csv and speaks it by text-to-speech (TTS).
 .EXAMPLE
-	PS> ./say-quote
-	(listen and learn)
+	PS> ./tell-quote
 .NOTES
 	Author: Markus Fleschutz · License: CC0
 .LINK
