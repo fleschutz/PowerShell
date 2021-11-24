@@ -20,7 +20,7 @@ More supported voice commands are:
 
 Computer, open `name` browser
 --------------------------------
-* this launches the given Web browser.
+* this launches the given Web browser or opens a new tab.
 * replace `name` by: "Chrome", "default", "Edge", or "Firefox".
 * when finished use: *Computer, close `name` browser* to stop the Web browser.
 
