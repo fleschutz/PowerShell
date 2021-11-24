@@ -1,8 +1,8 @@
 ﻿<#
 .SYNOPSIS
-	Say an answer to 'good night'
+	Answers to 'good night'
 .DESCRIPTION
-	This script answers "good night" by text-to-speech (TTS).
+	This script answers to "good night" by text-to-speech (TTS).
 .EXAMPLE
 	PS> ./good-night
 .NOTES
@@ -12,7 +12,14 @@
 #>
 
 try {
-	& "$PSScriptRoot/speak-english.ps1" "Good night to you, my friend."
+	$Generator = New-Object System.Random
+	$Answer = switch([int]$Generator.next(0, 3)) {
+	0 { "Good night to you, too." }
+	1 { "Good night to you, my friend." }
+	2 { "Have a good night. Sleep well." }
+	3 { "Good night and sweet dreams." }
+	}
+	& "$PSScriptRoot/speak-english.ps1" "$Answer"
 	exit 0 # success
 } catch {
 	"⚠️ Error: $($Error[0]) ($($MyInvocation.MyCommand.Name):$($_.InvocationInfo.ScriptLineNumber))"
