@@ -98,3 +98,4 @@ Nice Conversation
 * *Computer, tell joke.*
 * *Computer, tell quote.*
 * *Computer, tell operating system.*
+* *Computer, tell up-time.*
