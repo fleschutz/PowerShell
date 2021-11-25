@@ -79,12 +79,22 @@ Computer, open `name` settings
 * replace `name` by: "activation", "apps", "background", "backup", "bluetooth", "color", "date", "default apps", "developer", "display", "ethernet", "lockscreen", "maps", "printer", "proxy", "recovery", "speech", "start", "system", "taskbar", "themes", "time", "update", "usb", "vpn", or "wifi". Use "system" as top level settings.
 * when finished use: *Computer, close system settings* to stop the Windows settings.
 
+
 Audio
 -----
 * *Computer, mute audio.*
 * *Computer, unmute audio.*
 * *Computer, turn volume up.*
 * *Computer, turn volume down.*
+
+
+Misc
+-----
+* *Computer, locate my phone.*
+* *Computer, tell joke.*
+* *Computer, tell quote.*
+* *Computer, tell operating system.*
+* *Computer, tell up-time.*
 
 
 Nice Conversation
@@ -94,7 +104,3 @@ Nice Conversation
 * *Computer, good night.*
 * *Computer, how are you?*
 * *Computer, thank you.*
-* *Computer, tell joke.*
-* *Computer, tell quote.*
-* *Computer, tell operating system.*
-* *Computer, tell up-time.*

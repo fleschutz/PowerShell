@@ -4,7 +4,7 @@
 .DESCRIPTION
 	This script launches the Web browser with the Google Find My Device website.
 .EXAMPLE
-	PS> ./open-android-phone
+	PS> ./locate-my-phone
 .NOTES
 	Author: Markus Fleschutz · License: CC0
 .LINK
