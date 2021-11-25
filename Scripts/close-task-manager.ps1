@@ -11,7 +11,5 @@
 	https://github.com/fleschutz/PowerShell
 #>
 
-#Requires -RunAsAdministrator
-
-& "$PSScriptRoot/close-program.ps1" "Task Manager" "Taskmgr" "Taskmgr.exe"
+tskill taskmgr
 exit 0 # success
