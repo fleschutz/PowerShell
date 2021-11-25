@@ -140,6 +140,7 @@ function ListTools {
 	CheckFor timeout ""
 	CheckFor top	"-v"
 	CheckFor tskill ""
+	CheckFor typeperf ""
 	CheckFor tzsync "--version"
 	CheckFor uniq	"--version"
 	CheckFor vi	"--version"
