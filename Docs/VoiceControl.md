@@ -46,17 +46,10 @@ Computer, open `name` folder
 * when finished use: *Computer, close file explorer* to stop the File Explorer.
 
 
-Computer, open `name` settings
--------------------------------
-* launches Windows settings.
-* replace `name` by: "activation", "apps", "background", "backup", "bluetooth", "color", "date", "default apps", "developer", "display", "ethernet", "lockscreen", "maps", "printer", "proxy", "recovery", "speech", "start", "system", "taskbar", "themes", "time", "update", "usb", "vpn", or "wifi". Use "system" as top level settings.
-* when finished use: *Computer, close system settings* to stop the Windows settings.
-
-
 Computer, open `name` website
 -----------------------------
 * launches the default Web browser with the given website.
-* replace `name` by: "Amazon", "Baidu", "BBC", "BitBucket", "CDC", "CIA", "CNN", "eBay", "Facebook", "FBI", "FourSquare", "GitHub", "HRworks", "Instagram", "Microsoft", "NASA", "NBC", "Pinterest", "Pixabay", "Slashdot", "Tesla", "TikTok", "Twitter", "UFA", "Unsplash", "Walmart", "WhatsApp", "White House", "Windy", "Wikipedia", "Wired", "Yahoo", or "YouTube".
+* replace `name` by: "Amazon", "Baidu", "BBC", "BitBucket", "CDC", "CIA", "CNN", "eBay", "Facebook", "FBI", "FourSquare", "GitHub", "HRworks", "Instagram", "Microsoft", "NASA", "NBC", "Notepad", "Pinterest", "Pixabay", "Slashdot", "Tesla", "TikTok", "Twitter", "UFA", "Unsplash", "Walmart", "WhatsApp", "White House", "Windy", "Wikipedia", "Wired", "Yahoo", or "YouTube".
 * when finished see "Computer, close `name` browser" to stop the Web browser.
 
 
@@ -79,6 +72,12 @@ Computer, play `name` sound
 * starts playback of the given audio sound.
 * replace `name`: by "bee", "beep", "cat", "cow", "dog", "donkey", "elephant", "elk", "frog", "goat", "gorilla", "horse", "lion", "parrot", "pig", "rattlesnake", "vulture", or "wolf".
 
+
+Computer, open `name` settings
+-------------------------------
+* launches Windows settings.
+* replace `name` by: "activation", "apps", "background", "backup", "bluetooth", "color", "date", "default apps", "developer", "display", "ethernet", "lockscreen", "maps", "printer", "proxy", "recovery", "speech", "start", "system", "taskbar", "themes", "time", "update", "usb", "vpn", or "wifi". Use "system" as top level settings.
+* when finished use: *Computer, close system settings* to stop the Windows settings.
 
 Audio
 -----
