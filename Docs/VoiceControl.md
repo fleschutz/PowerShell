@@ -49,7 +49,7 @@ Computer, open `name` folder
 Computer, open `name` website
 -----------------------------
 * launches the default Web browser with the given website.
-* replace `name` by: "Amazon", "Baidu", "BBC", "BitBucket", "CDC", "CIA", "CNN", "eBay", "Facebook", "FBI", "FourSquare", "GitHub", "HRworks", "Instagram", "Microsoft", "NASA", "NBC", "Notepad", "Pinterest", "Pixabay", "Slashdot", "Tesla", "TikTok", "Twitter", "UFA", "Unsplash", "Walmart", "WhatsApp", "White House", "Windy", "Wikipedia", "Wired", "Yahoo", or "YouTube".
+* replace `name` by: "Amazon", "Baidu", "BBC", "BitBucket", "CDC", "CIA", "CNN", "eBay", "Facebook", "FBI", "Flipboard", "FourSquare", "GitHub", "HRworks", "Instagram", "Microsoft", "NASA", "NBC", "Notepad", "Pinterest", "Pixabay", "Slashdot", "Starbucks", "Tesla", "TikTok", "Twitter", "UFA", "Unsplash", "Walmart", "WhatsApp", "White House", "Windy", "Wikipedia", "Wired", "Yahoo", or "YouTube".
 * when finished see "Computer, close `name` browser" to stop the Web browser.
 
 
@@ -71,6 +71,12 @@ Computer, play `name` sound
 ---------------------------
 * starts playback of the given audio sound.
 * replace `name`: by "bee", "beep", "cat", "cow", "dog", "donkey", "elephant", "elk", "frog", "goat", "gorilla", "horse", "lion", "parrot", "pig", "rattlesnake", "vulture", or "wolf".
+
+
+Computer, play `name` game
+--------------------------
+* launches the default Web browser and plays the given game.
+* replace `name`: by "2048", or "Tetris".
 
 
 Computer, open `name` settings
