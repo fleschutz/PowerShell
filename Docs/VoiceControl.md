@@ -76,7 +76,7 @@ Computer, play `name` sound
 Computer, play `name` game
 --------------------------
 * launches the default Web browser and plays the given game.
-* replace `name`: by "2048", or "Tetris".
+* replace `name`: by "2048", "Cube", "Pacman", "Tetris", "TicTacToe", or "Tower".
 
 
 Computer, open `name` settings
