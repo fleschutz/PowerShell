@@ -1,9 +1,9 @@
 ﻿<#
 .SYNOPSIS
-	Plays a sound file (MP3 format)
+	Plays a MP3 sound file 
 .DESCRIPTION
-	This script plays a sound file (in .MP3 file format).
-.PARAMETER Filename
+	This script plays a sound file in .MP3 file format.
+.PARAMETER Path
 	Specifies the path to the .MP3 file
 .EXAMPLE
 	PS> ./play-mp3 C:\thunder.mp3
@@ -13,13 +13,13 @@
 	https://github.com/fleschutz/PowerShell
 #>
 
-param([string]$Filename = "")
+param([string]$Path = "")
 
 try {
-	if ($Filename -eq "" ) { $Filename = read-host "Enter the MP3 filename" }
+	if ($Path -eq "" ) { $Path = read-host "Enter the path to the MP3 sound file" }
 
-	if (-not(test-path "$Filename" -pathType leaf)) { throw "Can't access audio file: $Filename" }
-	$FullPath = (get-childItem $Filename).fullname
+	if (-not(test-path "$Path" -pathType leaf)) { throw "Can't access sound file: $Path" }
+	$FullPath = (get-childItem $Path).fullname
 	$Filename = (get-item "$FullPath").name
 
 	add-type -assemblyName PresentationCore
@@ -32,7 +32,7 @@ try {
 
 	[int]$Minutes = $Milliseconds / 60000
 	[int]$Seconds = ($Milliseconds / 1000) % 60
-	"▶️ Playing 🎵$Filename for $($Minutes.ToString('00')):$($Seconds.ToString('00')) sec..."
+	"▶️ Playing $Filename for $($Minutes.ToString('00')):$($Seconds.ToString('00')) sec..."
 	$PreviousTitle = $host.ui.RawUI.WindowTitle 
 	$host.ui.RawUI.WindowTitle = "▶️ $Filename"
 	$MediaPlayer.Volume = 1
