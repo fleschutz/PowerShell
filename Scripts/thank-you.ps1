@@ -11,10 +11,8 @@
 	https://github.com/fleschutz/PowerShell
 #>
 
-try {
-	& "$PSScriptRoot/speak-english.ps1" "It's a pleasure."
-	exit 0 # success
-} catch {
-	"⚠️ Error: $($Error[0]) ($($MyInvocation.MyCommand.Name):$($_.InvocationInfo.ScriptLineNumber))"
-	exit 1
-}
+$Answer = "It's a pleasure.", "Never mind." | Get-Random
+
+write-output "$Answer"
+& "$PSScriptRoot/speak-english.ps1" "$Answer"
+exit 0 # success

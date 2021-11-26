@@ -11,10 +11,8 @@
 	https://github.com/fleschutz/PowerShell
 #>
 
-try {
-	& "$PSScriptRoot/speak-english.ps1" "Well, good morning to you too"
-	exit 0 # success
-} catch {
-	"⚠️ Error: $($Error[0]) ($($MyInvocation.MyCommand.Name):$($_.InvocationInfo.ScriptLineNumber))"
-	exit 1
-}
+$Answer = "Well, good morning to you too."
+
+write-output "$Answer"
+& "$PSScriptRoot/speak-english.ps1" "$Answer"
+exit 0 # success

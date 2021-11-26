@@ -110,3 +110,4 @@ Nice Conversation
 * *Computer, good night.*
 * *Computer, how are you?*
 * *Computer, thank you.*
+* *Computer, good bye.*
