@@ -1,10 +1,10 @@
 ﻿<#
 .SYNOPSIS
-	Say an answer to 'good bye'
+	Say an answer to 'bye bye'
 .DESCRIPTION
-	This script answers to "good bye" by text-to-speech (TTS).
+	This script answers to "bye bye" by text-to-speech (TTS).
 .EXAMPLE
-	PS> ./good-bye
+	PS> ./bye-bye
 .NOTES
 	Author: Markus Fleschutz · License: CC0
 .LINK
