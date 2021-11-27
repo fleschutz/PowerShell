@@ -3,7 +3,6 @@
 	Speaks text with an Italian text-to-speech voice
 .DESCRIPTION
 	This script speaks the given text with an Italian text-to-speech (TTS) voice.
-	Requires that an Italian TTS voice is installed.
 .PARAMETER text
 	Specifies the text to speak
 .EXAMPLE
@@ -19,15 +18,15 @@ param([string]$text = "")
 try {
 	if ($text -eq "") { $text = read-host "Enter the Italian text to speak" }
 
-	$CurrentVoice = New-Object -ComObject SAPI.SPVoice
-	$Voices = $CurrentVoice.GetVoices()
-	foreach ($Voice in $Voices) {
-		if ($Voice.GetDescription() -notlike "*- Italian*") { continue }
-		$CurrentVoice.Voice = $Voice
-		[void]$CurrentVoice.Speak($text)
-		exit 0 # success
+	$TTSVoice = New-Object -ComObject SAPI.SPVoice
+	foreach ($Voice in $TTSVoice.GetVoices()) {
+		if ($Voice.GetDescription() -like "*- Italian*") {
+			$TTSVoice.Voice = $Voice
+			[void]$TTSVoice.Speak($text)
+			exit 0 # success
+		}
 	}
-	throw "No Italian text-to-speech voice found - please install one"
+	throw "No Italian text-to-speech voice found - please install one."
 } catch {
 	"⚠️ Error: $($Error[0]) ($($MyInvocation.MyCommand.Name):$($_.InvocationInfo.ScriptLineNumber))"
 	exit 1

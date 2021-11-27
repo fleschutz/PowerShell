@@ -20,12 +20,13 @@ try {
 
 	$TTSVoice = New-Object -ComObject SAPI.SPVoice
 	foreach ($Voice in $TTSVoice.GetVoices()) {
-		if ($Voice.GetDescription() -notlike "*- English*") { continue }
-		$TTSVoice.Voice = $Voice
-		[void]$TTSVoice.Speak($text)
-		exit 0 # success
+		if ($Voice.GetDescription() -like "*- English*") {
+			$TTSVoice.Voice = $Voice
+			[void]$TTSVoice.Speak($text)
+			exit 0 # success
+		}
 	}
-	throw "No English text-to-speech voice found - please install one"
+	throw "No English text-to-speech voice found - please install one."
 } catch {
 	"⚠️ Error: $($Error[0]) ($($MyInvocation.MyCommand.Name):$($_.InvocationInfo.ScriptLineNumber))"
 	exit 1
