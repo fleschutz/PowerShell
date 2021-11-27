@@ -18,9 +18,27 @@ try {
 		$BootTime = Get-WinEvent -ProviderName eventlog | Where-Object {$_.Id -eq 6005} | Select-Object TimeCreated -First 1 
 		$TimeNow = Get-Date 
 		$Uptime = New-TimeSpan -Start $BootTime.TimeCreated.Date -End $TimeNow
-	} 
+	}
+	
+	$Days = $Uptime.Days
+	$Hours = $Uptime.Hours
+	$Minutes = $Uptime.Minutes 
 
-	$Answer = "I'm up for $($Uptime.Days) days, $($Uptime.Hours) hours and $($Uptime.Minutes) minutes."
+	if ($Days -eq "1") {
+		$Answer = "I'm up for 1 day, "
+	} else {
+		$Answer = "I'm up for $Days days, "
+	}
+	if ($Hours -eq "1") {
+		$Answer += "1 hour "
+	} else {
+		$Answer += "$Hours hours "
+	}
+	if ($Minutes -eq "1") {
+		$Answer += "and 1 minute."
+	} else {
+		$Answer += "and $Minutes minutes."
+	}
 
 	& "$PSScriptRoot/speak-english.ps1" "$Answer"
 	write-output "$Answer"
