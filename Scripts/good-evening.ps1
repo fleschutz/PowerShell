@@ -13,6 +13,6 @@
 
 $Answer = "And a special good evening to you too."
 
-write-output "$Answer"
 & "$PSScriptRoot/speak-english.ps1" "$Answer"
+write-output "$Answer"
 exit 0 # success

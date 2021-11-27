@@ -11,5 +11,8 @@
 	https://github.com/fleschutz/PowerShell
 #>
 
-& "$PSScriptRoot/speak-english.ps1" "Hasta la vista, baby."
+$Answer = "Hasta la vista, baby."
+
+& "$PSScriptRoot/speak-english.ps1" "$Answer"
+write-output "$Answer"
 exit 0 # success

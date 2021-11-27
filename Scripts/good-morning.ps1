@@ -13,6 +13,6 @@
 
 $Answer = "Good morning.", "Good morning to you too.", "Well, good morning to you too.", "Good morning! How are you?", "Morning." | Get-Random
 
-write-output "$Answer"
 & "$PSScriptRoot/speak-english.ps1" "$Answer"
+write-output "$Answer"
 exit 0 # success

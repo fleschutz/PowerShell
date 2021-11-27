@@ -13,15 +13,16 @@
 
 try {
 	if ($IsLinux) {
-		$details = (uname -sr)
+		$Answer = (uname -sr)
 	} else {
 		$OS = Get-WmiObject -class Win32_OperatingSystem
 		$OSname = $OS.Caption
 		$OSarchitecture = $OS.OSArchitecture
 		$OSversion = $OS.Version
-		$details = "$OSname for $OSarchitecture version $OSversion"
+		$Answer = "$OSname for $OSarchitecture version $OSversion"
 	} 
-	& "$PSScriptRoot/speak-english.ps1" "$details"
+	& "$PSScriptRoot/speak-english.ps1" "$Answer"
+	write-output "$Answer"
 	exit 0 # success
 } catch {
 	"⚠️ Error: $($Error[0]) ($($MyInvocation.MyCommand.Name):$($_.InvocationInfo.ScriptLineNumber))"

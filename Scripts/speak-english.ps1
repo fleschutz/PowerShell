@@ -3,7 +3,6 @@
 	Speaks text with an English text-to-speech voice
 .DESCRIPTION
 	This scripts speaks the given text with an English text-to-speech (TTS) voice.
-	Requires that an English TTS voice is installed.
 .PARAMETER text
 	Specifies the text to speak
 .EXAMPLE
@@ -19,12 +18,11 @@ param([string]$text = "")
 try {
 	if ("$text" -eq "") { $text = read-host "Enter the English text to speak" }
 
-	$CurrentVoice = New-Object -ComObject SAPI.SPVoice
-	$Voices = $CurrentVoice.GetVoices()
-	foreach ($Voice in $Voices) {
+	$TTSVoice = New-Object -ComObject SAPI.SPVoice
+	foreach ($Voice in $TTSVoice.GetVoices()) {
 		if ($Voice.GetDescription() -notlike "*- English*") { continue }
-		$CurrentVoice.Voice = $Voice
-		[void]$CurrentVoice.Speak($text)
+		$TTSVoice.Voice = $Voice
+		[void]$TTSVoice.Speak($text)
 		exit 0 # success
 	}
 	throw "No English text-to-speech voice found - please install one"

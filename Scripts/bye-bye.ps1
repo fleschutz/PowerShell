@@ -13,6 +13,6 @@
 
 $Answer = "Good bye.", "See you.", "Bye bye." | Get-Random
 
-write-output "$Answer"
 & "$PSScriptRoot/speak-english.ps1" "$Answer"
+write-output "$Answer"
 exit 0 # success

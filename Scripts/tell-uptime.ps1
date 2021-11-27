@@ -22,8 +22,8 @@ try {
 
 	$Answer = "I'm up for $($Uptime.Days) days, $($Uptime.Hours) hours and $($Uptime.Minutes) minutes."
 
-	write-output "$Answer"
 	& "$PSScriptRoot/speak-english.ps1" "$Answer"
+	write-output "$Answer"
 	exit 0 # success
 } catch {
 	"⚠️ Error: $($Error[0]) ($($MyInvocation.MyCommand.Name):$($_.InvocationInfo.ScriptLineNumber))"
