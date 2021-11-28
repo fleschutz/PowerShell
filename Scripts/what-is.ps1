@@ -6,7 +6,7 @@
 .PARAMETER abbreviation
 	Specifies the appreviation to look for
 .EXAMPLE
-	PS> ./what-is CIA
+	PS> ./what-is IAS
 .NOTES
 	Author: Markus Fleschutz · License: CC0
 .LINK
@@ -15,26 +15,29 @@
 
 param([string]$abbreviation = "")
 
+function Reply { param([string]$Text)
+	"$Text"
+	& "$PSScriptRoot/speak-english.ps1" "$Text"
+}
+
 try {
 	if ($abbreviation -eq "" ) { $abbreviation = read-host "Enter the abbreviation" }
 
-	write-progress "Searching ..."
-
 	$FoundOne = $false
-	$Files = (get-childItem "$PSScriptRoot/../Data/Abbr/*" -attributes !Directory)
+	$Files = (get-childItem "$PSScriptRoot/../Data/Abbr/*.csv")
 
 	foreach ($File in $Files) {
 		$Table = import-csv "$File"
 		foreach($Row in $Table) {
 			if ($Row.Abbreviation -eq $abbreviation) {
 				$Basename = (get-item "$File").Basename
-				"  → $($Row.Abbreviation) = $($Row.Definition) in $Basename"
+				Reply "→ $($Row.Definition) ($($Row.Abbreviation)) in $Basename."
 				$FoundOne = $true
 			}
 		}
 	}
 
-	if ($FoundOne -eq $false) { "Sorry, no entry for $abbreviation found" }
+	if ($FoundOne -eq $false) { Reply "Sorry, no entry found" }
 	exit 0 # success
 } catch {
 	"⚠️ Error: $($Error[0]) ($($MyInvocation.MyCommand.Name):$($_.InvocationInfo.ScriptLineNumber))"
