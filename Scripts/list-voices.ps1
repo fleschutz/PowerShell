@@ -2,7 +2,7 @@
 .SYNOPSIS
 	Lists the installed text-to-speech voices
 .DESCRIPTION
-	This script lists the installed text-to-speech voices. It requires PowerShell 2.0 or higher.
+	This script lists the installed text-to-speech (TTS) voices.
 .EXAMPLE
 	PS> ./list-voices
 
