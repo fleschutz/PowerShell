@@ -63,20 +63,27 @@ Computer, show `name` city
 Computer, play radio `name`
 ---------------------------
 * launches the default Web browser and tunes into an internet radio station.
-* replace `name`: by "7", "Arabella", "Bob", "Club Mix", "Dance FM", "FFN", "Galaxy", "Gong", "Ibiza", "Jam FM", "Kiss Kiss", "Malibu", "N-JOY", "Paloma", "You FM".
+* replace `name` by: "7", "Arabella", "Bob", "Club Mix", "Dance FM", "FFN", "Galaxy", "Gong", "Ibiza", "Jam FM", "Kiss Kiss", "Malibu", "N-JOY", "Paloma", "You FM".
 * when finished use: *Close tab* or: "Computer, close `name` browser" to close the Web browser.
 
 
 Computer, play `name` sound
 ---------------------------
 * starts playback of the given audio sound.
-* replace `name`: by "bee", "beep", "cat", "cow", "dog", "donkey", "elephant", "elk", "frog", "goat", "gorilla", "horse", "lion", "parrot", "pig", "rattlesnake", "vulture", or "wolf".
+* replace `name` by: "bee", "beep", "cat", "cow", "dog", "donkey", "elephant", "elk", "frog", "goat", "gorilla", "horse", "lion", "parrot", "pig", "rattlesnake", "vulture", or "wolf".
 
 
 Computer, play `name` game
 --------------------------
 * launches the default Web browser and plays the given game.
-* replace `name`: by "2048", "Chess", "Cube", "Pacman", "Tetris", "TicTacToe", or "Tower".
+* replace `name` by: "2048", "Chess", "Cube", "Pacman", "Tetris", "TicTacToe", or "Tower".
+* when finished use: *Close tab* or: "Computer, close `name` browser" to close the Web browser.
+
+
+Computer, show `name` manual
+----------------------------
+* launches the default Web browser with the given manual.
+* replace `name` by: "Chrome", "PowerShell", or "Serenade".
 * when finished use: *Close tab* or: "Computer, close `name` browser" to close the Web browser.
 
 
