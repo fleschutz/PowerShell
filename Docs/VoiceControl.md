@@ -2,15 +2,15 @@ Executing PowerShell Scripts by Voice
 =====================================
 
 
-Installation
-------------
+🔧 Installation
+--------------
 1. Download and install *Serenade* from https://serenade.ai/ (Serenade is freely available for Linux, MacOS, and Windows).
 2. Download and install the *PowerShell Scripts*, then set the search path to it.
 3. Execute: `./export-to-serenade.ps1 Computer` in the *PowerShell Scripts*, this creates a custom JavaScript file at `$HOME/.serenade/scripts/PowerShell.js` using the wake word 'Computer'. Recommended wake words with a high recognition rate are: "Alexa", "Computer", "KITT", or "Windows". In the following the wake word "Computer" is used.
 
 
-Usage
------
+📣 Usage
+-------
 1. Launch *Serenade* and click the Pause button to enable Listening mode.
 2. Launch *Windows Terminal* and click into the window.
 3. Say: `Computer, open calculator app` - this executes the PowerShell script `open-calculator-app.ps1` to launch the calculator application.
