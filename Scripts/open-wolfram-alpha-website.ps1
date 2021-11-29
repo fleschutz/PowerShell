@@ -1,10 +1,10 @@
 ﻿<#
 .SYNOPSIS
-	Opens WolframAlpha
+	Opens the WolframAlpha website
 .DESCRIPTION
 	This script launches the Web browser with the WolframAlpha website.
 .EXAMPLE
-	PS> ./open-wolfram-alpha
+	PS> ./open-wolfram-alpha-website
 .NOTES
 	Author: Markus Fleschutz · License: CC0
 .LINK
