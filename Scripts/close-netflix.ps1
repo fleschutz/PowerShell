@@ -4,7 +4,7 @@
 .DESCRIPTION
 	This script closes the Netflix application gracefully.
 .EXAMPLE
-	PS> ./close-netflix-app
+	PS> ./close-netflix
 .NOTES
 	Author: Markus Fleschutz · License: CC0
 .LINK

@@ -4,7 +4,7 @@
 .DESCRIPTION
 	This script closes the Microsoft Visual Studio application gracefully.
 .EXAMPLE
-	PS> ./close-visual-studio-app
+	PS> ./close-visual-studio
 .NOTES
 	Author: Markus Fleschutz · License: CC0
 .LINK

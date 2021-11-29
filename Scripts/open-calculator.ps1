@@ -1,10 +1,10 @@
 ﻿<#
 .SYNOPSIS
-	Launches the Notepad app
+	Launches the calculator application
 .DESCRIPTION
-	This script launches the Notepad application.
+	This script launches the calculator application.
 .EXAMPLE
-	PS> ./open-notepad-app
+	PS> ./open-calculator
 .NOTES
 	Author: Markus Fleschutz · License: CC0
 .LINK
@@ -12,7 +12,7 @@
 #>
 
 try {
-	start-process notepad.exe
+	start-process ms-calculator:
 	exit 0 # success
 } catch {
 	"⚠️ Error: $($Error[0]) ($($MyInvocation.MyCommand.Name):$($_.InvocationInfo.ScriptLineNumber))"

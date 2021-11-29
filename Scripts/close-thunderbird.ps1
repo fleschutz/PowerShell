@@ -4,7 +4,7 @@
 .DESCRIPTION
 	This script closes the Mozilla Thunderbird email application gracefully.
 .EXAMPLE
-	PS> ./close-thunderbird-app
+	PS> ./close-thunderbird
 .NOTES
 	Author: Markus Fleschutz · License: CC0
 .LINK

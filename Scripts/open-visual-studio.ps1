@@ -4,7 +4,7 @@
 .DESCRIPTION
 	This script launches the Microsoft Visual Studio application.
 .EXAMPLE
-	PS> ./open-visual-studio-app
+	PS> ./open-visual-studio
 .NOTES
 	Author: Markus Fleschutz · License: CC0
 .LINK

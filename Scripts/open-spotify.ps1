@@ -1,15 +1,15 @@
 ﻿<#
 .SYNOPSIS
-	Launches the Windows Terminal app
+	Launches the Spotify app
 .DESCRIPTION
-	This script launches the Windows Terminal application.
+	This script launches the Spotify application.
 .EXAMPLE
-	PS> ./open-windows-terminal-app
+	PS> ./open-spotify
 .NOTES
 	Author: Markus Fleschutz · License: CC0
 .LINK
 	https://github.com/fleschutz/PowerShell
 #>
 
-Start-Process wt.exe
+Start-Process spotify:
 exit 0 # success

@@ -4,7 +4,7 @@
 .DESCRIPTION
 	This script launches the Git Extensions application.
 .EXAMPLE
-	PS> ./open-git-extensions-app
+	PS> ./open-git-extensions
 .NOTES
 	Author: Markus Fleschutz · License: CC0
 .LINK

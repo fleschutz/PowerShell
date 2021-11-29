@@ -4,7 +4,7 @@
 .DESCRIPTION
 	This script launches the Mozilla Thunderbird email application.
 .EXAMPLE
-	PS> ./open-thunderbird-app
+	PS> ./open-thunderbird
 .NOTES
 	Author: Markus Fleschutz · License: CC0
 .LINK

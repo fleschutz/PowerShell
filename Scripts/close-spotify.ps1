@@ -4,7 +4,7 @@
 .DESCRIPTION
 	This script closes the Spotify application gracefully.
 .EXAMPLE
-	PS> ./close-spotify-app
+	PS> ./close-spotify
 .NOTES
 	Author: Markus Fleschutz · License: CC0
 .LINK

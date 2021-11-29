@@ -1,15 +1,15 @@
 ﻿<#
 .SYNOPSIS
-	Launches the Spotify app
+	Launches the Netflix app
 .DESCRIPTION
-	This script launches the Spotify application.
+	This script launches the Netflix application.
 .EXAMPLE
-	PS> ./open-spotify-app
+	PS> ./open-netflix
 .NOTES
 	Author: Markus Fleschutz · License: CC0
 .LINK
 	https://github.com/fleschutz/PowerShell
 #>
 
-Start-Process spotify:
+Start-Process netflix:
 exit 0 # success

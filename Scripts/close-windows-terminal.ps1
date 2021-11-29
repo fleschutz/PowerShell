@@ -4,7 +4,7 @@
 .DESCRIPTION
 	This script closes the Windows Terminal application gracefully.
 .EXAMPLE
-	PS> ./close-windows-terminal-app
+	PS> ./close-windows-terminal
 .NOTES
 	Author: Markus Fleschutz · License: CC0
 .LINK

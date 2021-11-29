@@ -4,7 +4,7 @@
 .DESCRIPTION
 	This script closes the Git Extensions application gracefully.
 .EXAMPLE
-	PS> ./close-git-extensions-app
+	PS> ./close-git-extensions
 .NOTES
 	Author: Markus Fleschutz · License: CC0
 .LINK
