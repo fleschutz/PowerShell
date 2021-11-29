@@ -9,7 +9,7 @@ Executing PowerShell Scripts by Voice
 3. Execute: `./export-to-serenade.ps1 Computer` in the *PowerShell Scripts*, this creates a custom JavaScript file at `$HOME/.serenade/scripts/PowerShell.js` using the wake word 'Computer'. Recommended wake words with a high recognition rate are: "Alexa", "Computer", "KITT", or "Windows". In the following the wake word "Computer" is used.
 
 
-📣 Usage
+🗣 Usage
 -------
 1. Launch *Serenade* and click the Pause button to enable Listening mode.
 2. Launch *Windows Terminal* and click into the window.
@@ -87,16 +87,16 @@ Computer, open `name` settings
 * when finished use: *Computer, close system settings* to stop the Windows settings.
 
 
-Audio
------
+🔊 Audio
+-------
 * *Computer, mute audio.*
 * *Computer, unmute audio.*
 * *Computer, turn volume up.*
 * *Computer, turn volume down.*
 
 
-Misc
------
+💭 Misc
+-------
 * *Computer, locate my phone.*
 * *Computer, tell joke.*
 * *Computer, tell quote.*
@@ -104,8 +104,8 @@ Misc
 * *Computer, tell up-time.*
 
 
-Nice Conversation
------------------
+💬 Nice Conversation
+-------------------
 * *Computer, good morning.*
 * *Computer, good evening.*
 * *Computer, good night.*
