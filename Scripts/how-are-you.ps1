@@ -11,7 +11,7 @@
 	https://github.com/fleschutz/PowerShell
 #>
 
-$Answer = "I'm fine, thanks."
+$Answer = "I'm fine, thanks. How are you?", "I'm fine, maybe a little tired. I need some more coffee.", "Great, thank you. How are you?", "Good, thanks, and you?", "Fine, thanks. How are you?" | Get-Random
 
 & "$PSScriptRoot/speak-english.ps1" "$Answer"
 write-output "$Answer"
