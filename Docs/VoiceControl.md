@@ -21,7 +21,7 @@ More supported voice commands are:
 Computer, open `application`
 ----------------------------
 * launches the given application.
-* replace `application` by: "3D Viewer", "Calculator", "Git Extensions", "Microsoft Paint", "Netflix", "Notepad", "Outlook", "Paint 3D", "Spotify", "Thunderbird", "Visual Studio", or "Windows Terminal".
+* replace `application` by: "3D-Viewer", "Calculator", "Git Extensions", "Microsoft Paint", "Netflix", "Notepad", "Outlook", "Paint 3D", "Spotify", "Thunderbird", "Visual Studio", or "Windows Terminal".
 * when finished say: *Computer, close `application`* to close the application.
 
 

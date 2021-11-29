@@ -1,8 +1,8 @@
 ﻿<#
 .SYNOPSIS
-	Closes the 3D Viewer app 
+	Closes the 3D-Viewer app 
 .DESCRIPTION
-	This script closes the 3D Viewer application gracefully.
+	This script closes the 3D-Viewer application gracefully.
 .EXAMPLE
 	PS> ./close-three-d-viewer
 .NOTES
