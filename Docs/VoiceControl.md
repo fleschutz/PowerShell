@@ -13,9 +13,16 @@ Executing PowerShell Scripts by Voice
 -------
 1. Launch *Serenade* and click the Pause button to enable Listening mode.
 2. Launch *Windows Terminal* and click into the window.
-3. Speak into the microphone: `Computer, open calculator app` - this executes the PowerShell script `open-calculator-app.ps1` to launch the calculator application.
+3. Speak into the microphone: `Computer, open calculator` - this executes the PowerShell script `open-calculator.ps1` which launches the calculator application.
 
 More supported voice commands are:
+
+
+Computer, open `application`
+----------------------------
+* launches the given application.
+* replace `application` by: "Calculator", "Git Extensions", "Netflix", "Notepad", "Spotify", "Thunderbird", "Visual Studio", or "Windows Terminal".
+* when finished use: *Computer, close `application`* to close the application.
 
 
 Computer, open `name` browser
@@ -23,13 +30,6 @@ Computer, open `name` browser
 * launches the given Web browser or opens a new tab.
 * replace `name` by: "Chrome", "default", "Edge", or "Firefox".
 * when finished use: *Computer, close `name` browser* to close the Web browser.
-
-
-Computer, open `name` app
---------------------------
-* launches the given application.
-* replace `name` by: "Calculator", "Git Extensions", "Netflix", "Notepad", "Spotify", "Thunderbird", "Visual Studio", or "Windows Terminal".
-* when finished use: *Computer, close `name` app* to close the application.
 
 
 Computer, open `name` drive
