@@ -42,7 +42,7 @@ Computer, open `name` drive
 Computer, open `name` folder
 --------------------------
 * launches the File Explorer with the given folder.
-* replace `name` by: "downloads", "dropbox", "home", "music", "pictures", "repos", or "videos".
+* replace `name` by: "autostart", "desktop", "documents", "downloads", "dropbox", "home", "music", "pictures", "recycle bin", "repos", or "videos".
 * when finished use: *Computer, close file explorer* to close the File Explorer.
 
 
