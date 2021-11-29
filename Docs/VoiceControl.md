@@ -83,7 +83,7 @@ Computer, play `name` game
 Computer, open `name` settings
 -------------------------------
 * launches Windows settings.
-* replace `name` by: "activation", "apps", "background", "backup", "bluetooth", "color", "date", "default apps", "developer", "display", "ethernet", "lockscreen", "maps", "printer", "proxy", "recovery", "speech", "start", "system", "taskbar", "themes", "time", "update", "usb", "vpn", or "wifi". Use "system" as top level settings.
+* replace `name` by: "activation", "apps", "background", "backup", "bluetooth", "color", "date", "default apps", "developer", "display", "ethernet", "lockscreen", "maps", "printer", "proxy", "recovery", "speech", "start", "system", "taskbar", "themes", "time", "update", "USB", "VPN", or "Wifi". Use "system" as top level settings.
 * when finished use: *Computer, close system settings* to stop the Windows settings.
 
 
