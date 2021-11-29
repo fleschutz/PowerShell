@@ -56,7 +56,7 @@ Computer, open `name` website
 Computer, show `name` city
 --------------------------
 * launches the default Web browser with Google Maps at the given city.
-* replace `name` by: "Atlanta", "Barcelona", "Berlin", "Boston", "Cairo", "Cape Town", "Chicago", "Dallas", "Dubai", "Dublin", "Frankfurt", "Hamburg", "Hong Kong", "Jerusalem", "Kansas", "Las Vegas", "Lissabon", "London", "Los Angeles", "Madrid", "Miami", "Moscow", "Munich", "New York", "Paris", Rome", "San Francisco", "Seattle", "Singapore", "Sydney", "Tokyo", "Toronto", "Vienna", "Washington", "Zurich".
+* replace `name` by: "Atlanta", "Barcelona", "Berlin", "Boston", "Cairo", "Cape Town", "Chicago", "Dallas", "Denver", "Dubai", "Dublin", "Frankfurt", "Hamburg", "Hong Kong", "Jerusalem", "Kansas", "Las Vegas", "Lissabon", "London", "Los Angeles", "Madrid", "Miami", "Montreal", "Moscow", "Munich", "New York", "Paris", Rome", "San Francisco", "Seattle", "Singapore", "Sydney", "Tokyo", "Toronto", "Vienna", "Washington", "Zurich".
 * when finished see "Computer, close `name` browser" to close the Web browser.
 
 
