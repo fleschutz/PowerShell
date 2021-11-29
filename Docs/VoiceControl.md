@@ -22,49 +22,49 @@ Computer, open `name` browser
 --------------------------------
 * launches the given Web browser or opens a new tab.
 * replace `name` by: "Chrome", "default", "Edge", or "Firefox".
-* when finished use: *Computer, close `name` browser* to stop the Web browser.
+* when finished use: *Computer, close `name` browser* to close the Web browser.
 
 
 Computer, open `name` app
 --------------------------
 * launches the given application.
 * replace `name` by: "Calculator", "Git Extensions", "Netflix", "Notepad", "Spotify", "Thunderbird", "Visual Studio", or "Windows Terminal".
-* when finished use: *Computer, close `name` app* to stop the application.
+* when finished use: *Computer, close `name` app* to close the application.
 
 
 Computer, open `name` drive
 ----------------------------
 * launches the File Explorer with the given drive.
 * replace `name` by: "C:", "D:", "E:", "F:", or "M:".
-* when finished use: *Computer, close file explorer* to stop the File Explorer.
+* when finished use: *Computer, close file explorer* to close the File Explorer.
 
 
 Computer, open `name` folder
 --------------------------
 * launches the File Explorer with the given folder.
 * replace `name` by: "downloads", "dropbox", "home", "music", "pictures", "repos", or "videos".
-* when finished use: *Computer, close file explorer* to stop the File Explorer.
+* when finished use: *Computer, close file explorer* to close the File Explorer.
 
 
 Computer, open `name` website
 -----------------------------
 * launches the default Web browser with the given website.
 * replace `name` by: "Amazon", "Baidu", "BBC", "BitBucket", "CDC", "CIA", "CNN", "eBay", "Facebook", "FBI", "Flipboard", "FourSquare", "GitHub", "HRworks", "Instagram", "Microsoft", "NASA", "NBC", "Notepad", "PayPal", "Pinterest", "Pixabay", "Slashdot", "Starbucks", "Tesla", "TikTok", "Twitter", "UFA", "Unsplash", "Walmart", "WhatsApp", "White House", "Windy", "Wikipedia", "Wired", "Yahoo", or "YouTube".
-* when finished see "Computer, close `name` browser" to stop the Web browser.
+* when finished see "Computer, close `name` browser" to close the Web browser.
 
 
 Computer, show `name` city
 --------------------------
 * launches the default Web browser with Google Maps at the given city.
 * replace `name` by: "Atlanta", "Barcelona", "Berlin", "Boston", "Cairo", "Cape Town", "Chicago", "Dallas", "Dubai", "Dublin", "Frankfurt", "Hamburg", "Hong Kong", "Jerusalem", "Las Vegas", "Lissabon", "London", "Los Angeles", "Madrid", "Miami", "Moscow", "Munich", "New York", "Paris", Rome", "San Francisco", "Seattle", "Singapore", "Sydney", "Tokyo", "Toronto", or "Washington".
-* when finished see "Computer, close `name` browser" to stop the Web browser.
+* when finished see "Computer, close `name` browser" to close the Web browser.
 
 
 Computer, play radio `name`
 ---------------------------
 * launches the default Web browser and tunes into an internet radio station.
-* replace `name`: by "Arabella", "Bob", "Galaxy", "7", "Gong", "Kiss Kiss", "N-JOY", ...
-* when finished see "Computer, close `name` browser" to stop the Web browser.
+* replace `name`: by "Arabella", "Bob", "Galaxy", "7", "Gong", "Kiss Kiss", or "N-JOY".
+* when finished see "Computer, close `name` browser" to close the Web browser.
 
 
 Computer, play `name` sound
@@ -77,6 +77,7 @@ Computer, play `name` game
 --------------------------
 * launches the default Web browser and plays the given game.
 * replace `name`: by "2048", "Chess", "Cube", "Pacman", "Tetris", "TicTacToe", or "Tower".
+* when finished see "Computer, close `name` browser" to close the Web browser.
 
 
 Computer, open `name` settings
@@ -111,3 +112,4 @@ Nice Conversation
 * *Computer, how are you?*
 * *Computer, thank you.*
 * *Computer, good bye.*
+* *Computer, bye-bye.*
