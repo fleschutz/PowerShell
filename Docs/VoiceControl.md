@@ -63,7 +63,7 @@ Computer, show `name` city
 Computer, play radio `name`
 ---------------------------
 * launches the default Web browser and tunes into an internet radio station.
-* replace `name`: by "7", "Arabella", "Bob", "Club Mix", "Dance FM", "FFN", "Galaxy", "Gong", "Ibiza", "Jam FM", "Kiss Kiss", "Malibu", "N-JOY", or "Paloma".
+* replace `name`: by "7", "Arabella", "Bob", "Club Mix", "Dance FM", "FFN", "Galaxy", "Gong", "Ibiza", "Jam FM", "Kiss Kiss", "Malibu", "N-JOY", "Paloma", "You FM".
 * when finished see "Computer, close `name` browser" to close the Web browser.
 
 
