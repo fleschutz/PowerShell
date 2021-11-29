@@ -29,7 +29,7 @@ Computer, open `name` browser
 --------------------------------
 * launches the given Web browser or opens a new tab.
 * replace `name` by: "Chrome", "default", "Edge", or "Firefox".
-* when finished use: *Computer, close `name` browser* to close the Web browser.
+* when finished use: *Close tab* or: *Computer, close `name` browser* to close the Web browser.
 
 
 Computer, open `name` drive
@@ -50,7 +50,7 @@ Computer, open `name` website
 -----------------------------
 * launches the default Web browser with the given website.
 * replace `name` by: "Amazon", "Baidu", "BBC", "BitBucket", "CDC", "CIA", "CNN", "eBay", "Facebook", "FBI", "Flipboard", "FourSquare", "GitHub", "HRworks", "Instagram", "Microsoft", "NASA", "NBC", "Notepad", "PayPal", "Pinterest", "Pixabay", "Slashdot", "Starbucks", "Tesla", "TikTok", "Topo Map", "Twitter", "UFA", "Unsplash", "Walmart", "WhatsApp", "White House", "Windy", "Wikipedia", "Wired", "Wolfram Alpha", "Yahoo", or "YouTube".
-* when finished see "Computer, close `name` browser" to close the Web browser.
+* when finished use: *Close tab* or: "Computer, close `name` browser" to close the Web browser.
 
 
 Computer, show `name` city
@@ -64,7 +64,7 @@ Computer, play radio `name`
 ---------------------------
 * launches the default Web browser and tunes into an internet radio station.
 * replace `name`: by "7", "Arabella", "Bob", "Club Mix", "Dance FM", "FFN", "Galaxy", "Gong", "Ibiza", "Jam FM", "Kiss Kiss", "Malibu", "N-JOY", "Paloma", "You FM".
-* when finished see "Computer, close `name` browser" to close the Web browser.
+* when finished use: *Close tab* or: "Computer, close `name` browser" to close the Web browser.
 
 
 Computer, play `name` sound
@@ -77,7 +77,7 @@ Computer, play `name` game
 --------------------------
 * launches the default Web browser and plays the given game.
 * replace `name`: by "2048", "Chess", "Cube", "Pacman", "Tetris", "TicTacToe", or "Tower".
-* when finished see "Computer, close `name` browser" to close the Web browser.
+* when finished use: *Close tab* or: "Computer, close `name` browser" to close the Web browser.
 
 
 Computer, open `name` settings
