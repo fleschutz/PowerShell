@@ -1,6 +1,6 @@
 ﻿<#
 .SYNOPSIS
-	Shows Amsterdam in Google Maps 
+	Shows Amsterdam city in Google Maps 
 .DESCRIPTION
 	This script launches the Web browser with Google Maps at Amsterdam city (Netherlands).
 .EXAMPLE

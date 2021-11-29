@@ -1,6 +1,6 @@
 ﻿<#
 .SYNOPSIS
-	Shows Paris in Google Maps 
+	Shows Paris city in Google Maps 
 .DESCRIPTION
 	This script launches the Web browser with Google Maps at Paris city (France).
 .EXAMPLE

@@ -1,6 +1,6 @@
 ﻿<#
 .SYNOPSIS
-	Shows Miami in Google Maps 
+	Shows Miami city in Google Maps 
 .DESCRIPTION
 	This script launches the Web browser with Google Maps at Miami city (USA).
 .EXAMPLE

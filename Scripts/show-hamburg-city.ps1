@@ -1,6 +1,6 @@
 ﻿<#
 .SYNOPSIS
-	Shows Hamburg in Google Maps 
+	Shows Hamburg city in Google Maps 
 .DESCRIPTION
 	This script launches the Web browser with Google Maps at Hamburg city (Germany).
 .EXAMPLE

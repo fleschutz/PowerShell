@@ -1,6 +1,6 @@
 ﻿<#
 .SYNOPSIS
-	Shows Cairo in Google Maps 
+	Shows Cairo city in Google Maps 
 .DESCRIPTION
 	This script launches the Web browser with Google Maps at Cairo city (Egypt).
 .EXAMPLE

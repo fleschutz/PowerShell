@@ -1,6 +1,6 @@
 ﻿<#
 .SYNOPSIS
-	Shows Rome in Google Maps 
+	Shows Rome city in Google Maps 
 .DESCRIPTION
 	This script launches the Web browser with Google Maps at Rome city  (Italy).
 .EXAMPLE

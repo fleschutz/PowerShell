@@ -1,6 +1,6 @@
 ﻿<#
 .SYNOPSIS
-	Shows Jerusalem in Google Maps 
+	Shows Jerusalem city in Google Maps 
 .DESCRIPTION
 	This script launches the Web browser with Google Maps at Jerusalem city (Israel).
 .EXAMPLE

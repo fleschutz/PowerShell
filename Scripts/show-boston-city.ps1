@@ -1,6 +1,6 @@
 ﻿<#
 .SYNOPSIS
-	Shows Boston in Google Maps 
+	Shows Boston city in Google Maps 
 .DESCRIPTION
 	This script launches the Web browser with Google Maps at Boston city (USA).
 .EXAMPLE

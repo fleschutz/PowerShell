@@ -1,6 +1,6 @@
 ﻿<#
 .SYNOPSIS
-	Shows Madrid in Google Maps 
+	Shows Madrid city in Google Maps 
 .DESCRIPTION
 	This script launches the Web browser with Google Maps at Madrid city (Spain).
 .EXAMPLE

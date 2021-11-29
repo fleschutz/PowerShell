@@ -1,6 +1,6 @@
 ﻿<#
 .SYNOPSIS
-	Shows Tokyo in Google Maps 
+	Shows Tokyo city in Google Maps 
 .DESCRIPTION
 	This script launches the Web browser with Google Maps at Tokyo city (Japan).
 .EXAMPLE

@@ -1,6 +1,6 @@
 ﻿<#
 .SYNOPSIS
-	Shows Toronto in Google Maps 
+	Shows Toronto city in Google Maps 
 .DESCRIPTION
 	This script launches the Web browser with Google Maps at Toronto city (Canada).
 .EXAMPLE

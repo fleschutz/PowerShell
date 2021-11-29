@@ -1,6 +1,6 @@
 ﻿<#
 .SYNOPSIS
-	Shows Zurich in Google Maps 
+	Shows Zurich city in Google Maps 
 .DESCRIPTION
 	This script launches the Web browser with Google Maps at Frankfurt city (Germany).
 .EXAMPLE

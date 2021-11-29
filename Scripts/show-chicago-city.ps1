@@ -1,6 +1,6 @@
 ﻿<#
 .SYNOPSIS
-	Shows Chicago in Google Maps 
+	Shows Chicago city in Google Maps 
 .DESCRIPTION
 	This script launches the Web browser with Google Maps at Chicago city (USA).
 .EXAMPLE

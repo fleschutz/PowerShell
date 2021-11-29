@@ -1,6 +1,6 @@
 ﻿<#
 .SYNOPSIS
-	Shows Vienna in Google Maps 
+	Shows Vienna city in Google Maps 
 .DESCRIPTION
 	This script launches the Web browser with Google Maps at Vienna (Austria).
 .EXAMPLE

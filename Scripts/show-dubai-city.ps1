@@ -1,6 +1,6 @@
 ﻿<#
 .SYNOPSIS
-	Shows Dubai in Google Maps 
+	Shows Dubai city in Google Maps 
 .DESCRIPTION
 	This script launches the Web browser with Google Maps at Dubai city (VUE).
 .EXAMPLE

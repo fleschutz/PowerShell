@@ -1,6 +1,6 @@
 ﻿<#
 .SYNOPSIS
-	Shows Los Angeles in Google Maps 
+	Shows Los Angeles city in Google Maps 
 .DESCRIPTION
 	This script launches the Web browser with Google Maps at Los Angeles city (USA).
 .EXAMPLE

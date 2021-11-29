@@ -1,6 +1,6 @@
 ﻿<#
 .SYNOPSIS
-	Shows Munich in Google Maps 
+	Shows Munich city in Google Maps 
 .DESCRIPTION
 	This script launches the Web browser with Google Maps at Munich city (Germany).
 .EXAMPLE

@@ -1,6 +1,6 @@
 ﻿<#
 .SYNOPSIS
-	Shows Washington in Google Maps 
+	Shows Washington city in Google Maps 
 .DESCRIPTION
 	This script launches the Web browser with Google Maps at Washington city (USA).
 .EXAMPLE

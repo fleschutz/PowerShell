@@ -1,6 +1,6 @@
 ﻿<#
 .SYNOPSIS
-	Shows Berlin in Google Maps 
+	Shows Berlin city in Google Maps 
 .DESCRIPTION
 	This script launches the Web browser with Google Maps at Berlin city (Germany).
 .EXAMPLE

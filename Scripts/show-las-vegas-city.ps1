@@ -1,6 +1,6 @@
 ﻿<#
 .SYNOPSIS
-	Shows Las Vegas in Google Maps 
+	Shows Las Vegas city in Google Maps 
 .DESCRIPTION
 	This script launches the Web browser with Google Maps at Las Vegas city (USA).
 .EXAMPLE

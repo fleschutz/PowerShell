@@ -1,6 +1,6 @@
 ﻿<#
 .SYNOPSIS
-	Shows London in Google Maps 
+	Shows London city in Google Maps 
 .DESCRIPTION
 	This script launches the Web browser with Google Maps at London city (UK).
 .EXAMPLE

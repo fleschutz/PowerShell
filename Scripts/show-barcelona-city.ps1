@@ -1,6 +1,6 @@
 ﻿<#
 .SYNOPSIS
-	Shows Barcelona in Google Maps 
+	Shows Barcelona city in Google Maps 
 .DESCRIPTION
 	This script launches the Web browser with Google Maps at Barcelona city (Spain).
 .EXAMPLE

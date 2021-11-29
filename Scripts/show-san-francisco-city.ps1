@@ -1,6 +1,6 @@
 ﻿<#
 .SYNOPSIS
-	Shows San Francisco in Google Maps 
+	Shows San Francisco city in Google Maps 
 .DESCRIPTION
 	This script launches the Web browser with Google Maps at San Francisco city (USA).
 .EXAMPLE

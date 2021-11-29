@@ -1,6 +1,6 @@
 ﻿<#
 .SYNOPSIS
-	Shows Denver in Google Maps 
+	Shows Denver city in Google Maps 
 .DESCRIPTION
 	This script launches the Web browser with Google Maps at Denver city (USA).
 .EXAMPLE

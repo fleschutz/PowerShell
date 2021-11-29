@@ -1,6 +1,6 @@
 ﻿<#
 .SYNOPSIS
-	Shows Montreal in Google Maps 
+	Shows Montreal city in Google Maps 
 .DESCRIPTION
 	This script launches the Web browser with Google Maps at Montreal city (Canada).
 .EXAMPLE

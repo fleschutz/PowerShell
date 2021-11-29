@@ -1,6 +1,6 @@
 ﻿<#
 .SYNOPSIS
-	Shows Dublin in Google Maps 
+	Shows Dublin city in Google Maps 
 .DESCRIPTION
 	This script launches the Web browser with Google Maps at Dublin city (Ireland).
 .EXAMPLE

@@ -1,6 +1,6 @@
 ﻿<#
 .SYNOPSIS
-	Shows Singapore in Google Maps 
+	Shows Singapore city in Google Maps 
 .DESCRIPTION
 	This script launches the Web browser with Google Maps at Singapore city.
 .EXAMPLE

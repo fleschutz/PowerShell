@@ -1,6 +1,6 @@
 ﻿<#
 .SYNOPSIS
-	Shows Cape Town in Google Maps 
+	Shows Cape Town city in Google Maps 
 .DESCRIPTION
 	This script launches the Web browser with Google Maps at Cape Town city (South Africa).
 .EXAMPLE

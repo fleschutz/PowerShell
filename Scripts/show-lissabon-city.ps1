@@ -1,6 +1,6 @@
 ﻿<#
 .SYNOPSIS
-	Shows Lissabon in Google Maps 
+	Shows Lissabon city in Google Maps 
 .DESCRIPTION
 	This script launches the Web browser with Google Maps at Lissabon city (Portugal).
 .EXAMPLE

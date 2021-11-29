@@ -1,6 +1,6 @@
 ﻿<#
 .SYNOPSIS
-	Shows Hong Kong in Google Maps 
+	Shows Hong Kong city in Google Maps 
 .DESCRIPTION
 	This script launches the Web browser with Google Maps at Hong Kong city (China).
 .EXAMPLE
