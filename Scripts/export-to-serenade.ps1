@@ -33,7 +33,7 @@ try {
 	"⏳ Found $($Scripts.Count) PowerShell scripts..."
 	"⏳ Writing custom JavaScript file $TargetFile..."
 
-	"/* NOTE: This file has been generated automatically by export-to-serenade.ps1 */" | Set-Content "$TargetFile"
+	"/* DO NOT EDIT! This file has been generated automatically by export-to-serenade.ps1 */" | Set-Content "$TargetFile"
 	foreach ($Script in $Scripts) {
 		$ScriptName = $Script.basename
 		$Keyword = $ScriptName -replace "-"," "
