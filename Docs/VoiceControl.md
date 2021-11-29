@@ -118,5 +118,6 @@ Computer, open `name` settings
 * *Computer, good night.*
 * *Computer, how are you?*
 * *Computer, thank you.*
+* *Computer, I'll be back.*
 * *Computer, good bye.*
 * *Computer, bye-bye.*
