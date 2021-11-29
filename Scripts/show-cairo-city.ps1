@@ -2,7 +2,7 @@
 .SYNOPSIS
 	Shows Cairo in Google Maps 
 .DESCRIPTION
-	This script launches the Web browser and shows the city of Cairo (Egypt) in Google Maps.
+	This script launches the Web browser with Google Maps at Cairo city (Egypt).
 .EXAMPLE
 	PS> ./show-cairo-city
 .NOTES

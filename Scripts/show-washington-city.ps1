@@ -2,7 +2,7 @@
 .SYNOPSIS
 	Shows Washington in Google Maps 
 .DESCRIPTION
-	This script launches the Web browser and shows Washington city (USA) in Google Maps.
+	This script launches the Web browser with Google Maps at Washington city (USA).
 .EXAMPLE
 	PS> ./show-washington-city
 .NOTES

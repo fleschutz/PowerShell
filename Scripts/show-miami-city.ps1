@@ -2,7 +2,7 @@
 .SYNOPSIS
 	Shows Miami in Google Maps 
 .DESCRIPTION
-	This script launches the Web browser and shows the city of Miami (US) in Google Maps.
+	This script launches the Web browser with Google Maps at Miami city (USA).
 .EXAMPLE
 	PS> ./show-miami-city
 .NOTES

@@ -2,7 +2,7 @@
 .SYNOPSIS
 	Shows Lissabon in Google Maps 
 .DESCRIPTION
-	This script launches the Web browser and shows the city of Lissabon (Portugal) in Google Maps.
+	This script launches the Web browser with Google Maps at Lissabon city (Portugal).
 .EXAMPLE
 	PS> ./show-lissabon-city
 .NOTES

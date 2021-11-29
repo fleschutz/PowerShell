@@ -2,7 +2,7 @@
 .SYNOPSIS
 	Shows Tokyo in Google Maps 
 .DESCRIPTION
-	This script launches the Web browser and shows the city of Tokyo (Japan) in Google Maps.
+	This script launches the Web browser with Google Maps at Tokyo city (Japan).
 .EXAMPLE
 	PS> ./show-tokyo-city
 .NOTES

@@ -2,7 +2,7 @@
 .SYNOPSIS
 	Shows Toronto in Google Maps 
 .DESCRIPTION
-	This script launches the Web browser and shows the city of Toronto (Canada) in Google Maps.
+	This script launches the Web browser with Google Maps at Toronto city (Canada).
 .EXAMPLE
 	PS> ./show-toronto-city
 .NOTES

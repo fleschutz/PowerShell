@@ -2,7 +2,7 @@
 .SYNOPSIS
 	Shows Cape Town in Google Maps 
 .DESCRIPTION
-	This script launches the Web browser and shows Cape Town city (South Africa) in Google Maps.
+	This script launches the Web browser with Google Maps at Cape Town city (South Africa).
 .EXAMPLE
 	PS> ./show-cape-town-city
 .NOTES

@@ -2,7 +2,7 @@
 .SYNOPSIS
 	Shows Hamburg in Google Maps 
 .DESCRIPTION
-	This script launches the Web browser and shows the city of Hamburg (Germany) in Google Maps.
+	This script launches the Web browser with Google Maps at Hamburg city (Germany).
 .EXAMPLE
 	PS> ./show-hamburg-city
 .NOTES

@@ -2,7 +2,7 @@
 .SYNOPSIS
 	Shows Atlanta in Google Maps 
 .DESCRIPTION
-	This script launches the Web browser and shows Atlanta city (USA) in Google Maps.
+	This script launches the Web browser with Google Maps at Atlanta city (USA).
 .EXAMPLE
 	PS> ./show-atlanta-city
 .NOTES

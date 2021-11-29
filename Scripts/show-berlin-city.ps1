@@ -2,7 +2,7 @@
 .SYNOPSIS
 	Shows Berlin in Google Maps 
 .DESCRIPTION
-	This script launches the Web browser and shows the city of Berlin (Germany) in Google Maps.
+	This script launches the Web browser with Google Maps at Berlin city (Germany).
 .EXAMPLE
 	PS> ./show-berlin-city
 .NOTES

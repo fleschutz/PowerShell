@@ -2,7 +2,7 @@
 .SYNOPSIS
 	Shows Dublin in Google Maps 
 .DESCRIPTION
-	This script launches the Web browser and shows Dublin city (Ireland) in Google Maps.
+	This script launches the Web browser with Google Maps at Dublin city (Ireland).
 .EXAMPLE
 	PS> ./show-dublin-city
 .NOTES

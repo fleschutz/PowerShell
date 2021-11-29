@@ -2,7 +2,7 @@
 .SYNOPSIS
 	Shows Amsterdam in Google Maps 
 .DESCRIPTION
-	This script launches the Web browser and shows the city of Amsterdam (Netherlands) in Google Maps.
+	This script launches the Web browser with Google Maps at Amsterdam city (Netherlands).
 .EXAMPLE
 	PS> ./show-amsterdam-city
 .NOTES

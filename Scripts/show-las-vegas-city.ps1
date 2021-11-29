@@ -2,7 +2,7 @@
 .SYNOPSIS
 	Shows Las Vegas in Google Maps 
 .DESCRIPTION
-	This script launches the Web browser and shows Las Vegas city (USA) in Google Maps.
+	This script launches the Web browser with Google Maps at Las Vegas city (USA).
 .EXAMPLE
 	PS> ./show-las-vegas-city
 .NOTES
@@ -11,5 +11,5 @@
 	https://github.com/fleschutz/PowerShell
 #>
 
-& "$PSScriptRoot/open-default-browser.ps1" "https://www.google.com/maps/place/London"
+& "$PSScriptRoot/open-default-browser.ps1" "https://www.google.com/maps/place/Las+Vegas"
 exit 0 # success

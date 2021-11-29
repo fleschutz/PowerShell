@@ -2,7 +2,7 @@
 .SYNOPSIS
 	Shows Paris in Google Maps 
 .DESCRIPTION
-	This script launches the Web browser and shows the city of Paris (France) in Google Maps.
+	This script launches the Web browser with Google Maps at Paris city (France).
 .EXAMPLE
 	PS> ./show-paris-city
 .NOTES

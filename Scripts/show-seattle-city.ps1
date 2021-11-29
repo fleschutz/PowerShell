@@ -2,7 +2,7 @@
 .SYNOPSIS
 	Shows Seattle in Google Maps 
 .DESCRIPTION
-	This script launches the Web browser and shows the city of Seattle (USA) in Google Maps.
+	This script launches the Web browser with Google Maps at Seattle city (USA).
 .EXAMPLE
 	PS> ./show-seattle-city
 .NOTES

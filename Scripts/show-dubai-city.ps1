@@ -2,7 +2,7 @@
 .SYNOPSIS
 	Shows Dubai in Google Maps 
 .DESCRIPTION
-	This script launches the Web browser and shows the city of Dubai (VUE) in Google Maps.
+	This script launches the Web browser with Google Maps at Dubai city (VUE).
 .EXAMPLE
 	PS> ./show-dubai-city
 .NOTES

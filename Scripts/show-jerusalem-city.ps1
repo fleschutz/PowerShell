@@ -2,7 +2,7 @@
 .SYNOPSIS
 	Shows Jerusalem in Google Maps 
 .DESCRIPTION
-	This script launches the Web browser and shows Jerusalem city (Israel) in Google Maps.
+	This script launches the Web browser with Google Maps at Jerusalem city (Israel).
 .EXAMPLE
 	PS> ./show-jerusalem-city
 .NOTES

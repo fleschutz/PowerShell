@@ -2,7 +2,7 @@
 .SYNOPSIS
 	Shows Los Angeles in Google Maps 
 .DESCRIPTION
-	This script launches the Web browser and shows Los Angeles city (USA) in Google Maps.
+	This script launches the Web browser with Google Maps at Los Angeles city (USA).
 .EXAMPLE
 	PS> ./show-los-angeles-city
 .NOTES

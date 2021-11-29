@@ -2,7 +2,7 @@
 .SYNOPSIS
 	Shows Dallas in Google Maps 
 .DESCRIPTION
-	This script launches the Web browser and shows the city of Dallas (USA) in Google Maps.
+	This script launches the Web browser with Google Maps at Dallas city (USA).
 .EXAMPLE
 	PS> ./show-dallas-city
 .NOTES

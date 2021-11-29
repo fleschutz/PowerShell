@@ -2,7 +2,7 @@
 .SYNOPSIS
 	Shows Chicago in Google Maps 
 .DESCRIPTION
-	This script launches the Web browser and shows Chicago (USA) in Google Maps.
+	This script launches the Web browser with Google Maps at Chicago city (USA).
 .EXAMPLE
 	PS> ./show-chicago-city
 .NOTES

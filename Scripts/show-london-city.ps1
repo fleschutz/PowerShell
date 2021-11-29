@@ -2,7 +2,7 @@
 .SYNOPSIS
 	Shows London in Google Maps 
 .DESCRIPTION
-	This script launches the Web browser and shows London city (UK) in Google Maps.
+	This script launches the Web browser with Google Maps at London city (UK).
 .EXAMPLE
 	PS> ./show-london-city
 .NOTES

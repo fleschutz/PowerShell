@@ -2,7 +2,7 @@
 .SYNOPSIS
 	Shows Moscow in Google Maps 
 .DESCRIPTION
-	This script launches the Web browser and shows Moscow city (Russia) in Google Maps.
+	This script launches the Web browser with Google Maps at Moscow city (Russia).
 .EXAMPLE
 	PS> ./show-moscow-city
 .NOTES
