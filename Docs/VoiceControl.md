@@ -83,7 +83,7 @@ Computer, play `name` game
 Computer, show `name` manual
 ----------------------------
 * launches the default Web browser with the given manual.
-* replace `name` by: "Chrome", "PowerShell", or "Serenade".
+* replace `name` by: "Chrome", "Edge", "Firefox", "PowerShell", or "Serenade".
 * when finished use: *Close tab* or: "Computer, close `name` browser" to close the Web browser.
 
 
