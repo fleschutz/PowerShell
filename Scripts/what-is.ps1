@@ -31,7 +31,7 @@ try {
 		foreach($Row in $Table) {
 			if ($Row.Abbreviation -eq $abbreviation) {
 				$Basename = (get-item "$File").Basename
-				Reply "→ $($Row.Definition) ($($Row.Abbreviation)) in $Basename."
+				Reply "  - $($Row.Definition) ($($Row.Abbreviation)) in $Basename"
 				$FoundOne = $true
 			}
 		}

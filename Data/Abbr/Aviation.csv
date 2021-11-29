@@ -3,8 +3,12 @@ AB,Air Base
 AC,Aircraft
 ACAS,Airborne Collision Avoidance System
 ACC,Area Control Centre
+ADAC,Abu Dhabi Airports
+ADP,Aeroportes de Paris
+AENA,Aeropuertos Españoles y Navegación Aérea
 AF,Air Field
 AFM,Aircraft Flight Manual
+AGL,Above Ground Level
 AIP,Aeronautical Information Publication
 AMAN,Arrival Manager
 AOA,Angle of Attack
@@ -22,29 +26,115 @@ ATC,Air Traffic Control
 ATIS,Automatic Terminal Information Service
 ATO,Air Traffic Organization
 BAF,Belgian Air Force
+BWI,Baltimore/Washington International Thurgood Marshall Airport
 CAAC,Civil Aviation Administration of China
 CAAS,Civil Aviation Authorization of Singapore
 CANSO,Civil Air Navigation Services Organization
 CAS,Calibrated Airspeed
 CAT,Category of Aircraft
 CAVOK,Ceiling And Visibility OK
+CCBC,Community College Baltimore County
 COG,Center of Gravity
+COTS,Commercial-of-the-shelf
 CRDA,Converging Runway Display Aid
 CTA,Controlled Time of Arrival
 CTA,Controlled Area
 CTOT,Calculated Take-Off Time
 CTR,Control Zone or Controlled Traffic Region
+DAS,DFS Aviation Services (DFS subcompany for services outside Germany)
+DCIA,Dependent Converging Instrument Approach
+DFS,Deutsche Flugsicherung (ATC in Germany)
+DGAC,Direction générale de l'aviation civile
+DTI,Direction Technique Innovation
+DW,Downwind
+EAS,Equivalent Airspeed
+EAVA,Estonian Aviation Academy
 ECAC,European Civil Aviation Conference
+EFM,Gesellschaft für Enteisen und Flugzeugschleppen
+ETA,Estimated Time of Arrival
+ETOPS,Extended Range Twin-engine Aircraft Operations
+FAA,Federal Aviation Administration (USA)
+FAT,Factory Acceptance Test (see also SAT and RAT)
+FE,Field Elevation (highest point of an airport’s usable runways and is measured in height above mean sea level)
 FIA,Flight Information Area
 FIR,Flight Information Region
 FL,Flight Level
+FMG,Flughafen München GmbH
+FOD,Foreign Object Debris
+FOV,Field of View
+GP,Glide Path
+GPS,Global Positioning System
+GS,Ground Speed or Glideslope
+HKIA,Hong Kong International Airport
+IAA,Israeli Airport Authority
+IAF,Israeli Air Force
+IANS,Institute of Air Navigation Services, a division of Eurocontrol
 IAS,Indicated Air Speed
+IATA,International Air Transport Association, HQ in Montreal, Canada
+IG,Image Generator
+IGLR,Integrated Ground Lighting and Radar
+IMC,Instrument Meteorological Conditions
+KAT,Kaufbeuren ATM Training (DFS subcompany)
+LAA,Lappland Aviation Academy
 LL,Lower Limit
+LMUK,Lockheed Martin UK
+LOD,Level of Detail
 LTA,Lower Traffic Area
+LVNL,Luchtverkeersleiding Nederland (Air Traffic Control the Netherlands)
+LVP,Low Visibility Procedures
+MATS,Malta Air Traffic Services
 MEA,Minimum En-route Altitude
+METAR,Meteorological Aerodrome Report
+MSL,Median Sea Level
 OCTA,Outside Control Areas
+PAPI,Precision Approach Path Indicator
+PAR,Precision Approach Radar
+POH,Pilot's Operating Handbook
+PPL,Private Pilot License
+QFE,the altimeter setting that will cause the altimeter to read the height above a specific aerodrome or ground level, and therefore read zero on landing
+QNE,pressure altitude at the landing runway threshold
+QNH,atmospheric pressure adjusted to mean sea level
+RAT,Reliability Acceptance Test (see also FAT and SAT)
+RBAF,Royal Belgium Armed Forces
+RCAF,Royal Canadian Air Force
+RET,Rapid Exit Taxiways
+RJAF,Royal Jordanian Air Force
+RPI,Runway Point of Intercept
+RPM,Rotations per Minute
+RVR,Runway Visual Range
+RWY,Runway
+SAT,Site Acceptance Test (see also FAT and RAT)
+SLOC,Slovenia Control
+STARS,Standard Arrival Routes
+SID,Standard Instrument Departure
+SKYGUIDE,ATC Swiss
+SOW,Statement of Work
+SSR,Secondary Surveillance Radar
+SWT,Switch
 TA,Terminal Airspace
 TAS,Terminal Airspace System
+TAS,True Airspeed
+TCAS,Traffic Collision Avoidance System
+TCL,Taxi Center Lights
+TFDM,Terminal Flight Data Management
 TMA,Terminal Control Area
+TSTC,Texas State Technical College
+TWR,Control Tower,
+UAA,University of Alaska Anchorage
+UMASS,University of Massachusetts
+USAF,US Air Force
 UTA,Upper Traffic Area
+V1,Decision speed, the speed beyond which takeoff should no longer be aborted
+V2,Takeoff speed. The speed at which the aircraft may safely be climbed with one engine inoperative
+VASI,Visual Approach Slope Indicator
+VHF,Very High Frequency
+VMO,maximum operation speed is the air speed than should never be exceeded deliberately in normal operation, whatever the flight situation is
+VOR,VHF Omni-directional Range
+VREF,1.3 times the stalling speed of the aircraft in the stated landing configuration and at the prevailing aircraft weight
+VRR,Voice Recognition & Response
+VS,Stall speed, defined as the minimum steady flight speed at which the airplane is controllable
 VTC,Visual Terminal Chart
+VTOL,vertical take-off and landing
+VSTOL,vertical short take-off and landing
+VTOSL,vertical take-off and short landing
+WTC,Wake Turbulence Category
