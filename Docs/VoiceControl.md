@@ -13,7 +13,7 @@ Executing PowerShell Scripts by Voice
 -------
 1. Launch *Serenade* and click the Pause button to enable Listening mode.
 2. Launch *Windows Terminal* and click into the window.
-3. Say: `Computer, open calculator app` - this executes the PowerShell script `open-calculator-app.ps1` to launch the calculator application.
+3. Say into the microphone: `Computer, open calculator app` - this executes the PowerShell script `open-calculator-app.ps1` to launch the calculator application.
 
 More supported voice commands are:
 
