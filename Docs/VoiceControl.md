@@ -21,7 +21,7 @@ More supported voice commands are:
 Computer, open `application`
 ----------------------------
 * launches the given application.
-* replace `application` by: "Calculator", "Git Extensions", "Microsoft Paint", "Netflix", "Notepad", "Paint 3D", "Spotify", "Thunderbird", "Visual Studio", or "Windows Terminal".
+* replace `application` by: "Calculator", "Git Extensions", "Microsoft Paint", "Netflix", "Notepad", "Outlook", "Paint 3D", "Spotify", "Thunderbird", "Visual Studio", or "Windows Terminal".
 * when finished say: *Computer, close `application`* to close the application.
 
 
@@ -49,7 +49,7 @@ Computer, open `name` folder
 Computer, open `name` website
 -----------------------------
 * launches the default Web browser with the given website.
-* replace `name` by: "Amazon", "Baidu", "BBC", "BitBucket", "CDC", "CIA", "CNN", "eBay", "Facebook", "FBI", "Flipboard", "FourSquare", "GitHub", "HRworks", "Instagram", "Microsoft", "NASA", "NBC", "Notepad", "PayPal", "Pinterest", "Pixabay", "Slashdot", "Starbucks", "Tesla", "TikTok", "Topo Map", "Twitter", "UFA", "Unsplash", "Walmart", "WhatsApp", "White House", "Windy", "Wikipedia", "Wired", "Wolfram Alpha", "Yahoo", or "YouTube".
+* replace `name` by: "Amazon", "Baidu", "BBC", "BitBucket", "CDC", "CIA", "CNN", "eBay", "Facebook", "FBI", "Flipboard", "FourSquare", "GitHub", "HRworks", "Instagram", "Microsoft", "NASA", "NBC", "Notepad", "Outdoor Active", "PayPal", "Pinterest", "Pixabay", "Slashdot", "Starbucks", "Tesla", "TikTok", "Topo Map", "Twitter", "UFA", "Unsplash", "Walmart", "WhatsApp", "White House", "Windy", "Wikipedia", "Wired", "Wolfram Alpha", "Yahoo", or "YouTube".
 * when finished say: *Close tab* or: "Computer, close `name` browser" to close the Web browser.
 
 

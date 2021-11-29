@@ -4,7 +4,7 @@
 .DESCRIPTION
 	This script launches the Web browser with the Outdoor Active website.
 .EXAMPLE
-	PS> ./open-outdoor-active
+	PS> ./open-outdoor-active-website
 .NOTES
 	Author: Markus Fleschutz · License: CC0
 .LINK

@@ -1,10 +1,10 @@
 ﻿<#
 .SYNOPSIS
-	Closes Microsoft Outlook 
+	Closes the Microsoft Outlook app
 .DESCRIPTION
 	This script closes the Microsoft Outlook email application gracefully.
 .EXAMPLE
-	PS> ./close-microsoft-outlook
+	PS> ./close-outlook
 .NOTES
 	Author: Markus Fleschutz · License: CC0
 .LINK

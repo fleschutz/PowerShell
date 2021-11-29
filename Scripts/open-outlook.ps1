@@ -1,10 +1,10 @@
 ﻿<#
 .SYNOPSIS
-	Launches Microsoft Outlook
+	Launches the Microsoft Outlook app
 .DESCRIPTION
 	This script launches the Microsoft Outlook email application.
 .EXAMPLE
-	PS> ./open-microsoft-outlook
+	PS> ./open-outlook
 .NOTES
 	Author: Markus Fleschutz · License: CC0
 .LINK
