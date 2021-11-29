@@ -49,7 +49,7 @@ Computer, open `name` folder
 Computer, open `name` website
 -----------------------------
 * launches the default Web browser with the given website.
-* replace `name` by: "Amazon", "Baidu", "BBC", "BitBucket", "CDC", "CIA", "CNN", "eBay", "Facebook", "FBI", "Flipboard", "FourSquare", "GitHub", "HRworks", "Instagram", "Microsoft", "NASA", "NBC", "Notepad", "PayPal", "Pinterest", "Pixabay", "Slashdot", "Starbucks", "Tesla", "TikTok", "Twitter", "UFA", "Unsplash", "Walmart", "WhatsApp", "White House", "Windy", "Wikipedia", "Wired", "Yahoo", or "YouTube".
+* replace `name` by: "Amazon", "Baidu", "BBC", "BitBucket", "CDC", "CIA", "CNN", "eBay", "Facebook", "FBI", "Flipboard", "FourSquare", "GitHub", "HRworks", "Instagram", "Microsoft", "NASA", "NBC", "Notepad", "PayPal", "Pinterest", "Pixabay", "Slashdot", "Starbucks", "Tesla", "TikTok", "Topo Map", "Twitter", "UFA", "Unsplash", "Walmart", "WhatsApp", "White House", "Windy", "Wikipedia", "Wired", "Wolfram Alpha", "Yahoo", or "YouTube".
 * when finished see "Computer, close `name` browser" to close the Web browser.
 
 
