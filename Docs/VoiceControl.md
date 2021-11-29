@@ -22,35 +22,35 @@ Computer, open `application`
 ----------------------------
 * launches the given application.
 * replace `application` by: "Calculator", "Git Extensions", "Microsoft Paint", "Netflix", "Notepad", "Paint 3D", "Spotify", "Thunderbird", "Visual Studio", or "Windows Terminal".
-* when finished use: *Computer, close `application`* to close the application.
+* when finished say: *Computer, close `application`* to close the application.
 
 
 Computer, open `name` browser
 --------------------------------
 * launches the given Web browser or opens a new tab.
 * replace `name` by: "Chrome", "default", "Edge", or "Firefox".
-* when finished use: *Close tab* or: *Computer, close `name` browser* to close the Web browser.
+* when finished say: *Close tab* or: *Computer, close `name` browser* to close the Web browser.
 
 
 Computer, open `name` drive
 ----------------------------
 * launches the File Explorer with the given drive.
 * replace `name` by: "C:", "D:", "E:", "F:", or "M:".
-* when finished use: *Computer, close file explorer* to close the File Explorer.
+* when finished say: *Computer, close file explorer* to close the File Explorer.
 
 
 Computer, open `name` folder
 --------------------------
 * launches the File Explorer with the given folder.
 * replace `name` by: "autostart", "desktop", "documents", "downloads", "dropbox", "home", "music", "pictures", "recycle bin", "repos", or "videos".
-* when finished use: *Computer, close file explorer* to close the File Explorer.
+* when finished say: *Computer, close file explorer* to close the File Explorer.
 
 
 Computer, open `name` website
 -----------------------------
 * launches the default Web browser with the given website.
 * replace `name` by: "Amazon", "Baidu", "BBC", "BitBucket", "CDC", "CIA", "CNN", "eBay", "Facebook", "FBI", "Flipboard", "FourSquare", "GitHub", "HRworks", "Instagram", "Microsoft", "NASA", "NBC", "Notepad", "PayPal", "Pinterest", "Pixabay", "Slashdot", "Starbucks", "Tesla", "TikTok", "Topo Map", "Twitter", "UFA", "Unsplash", "Walmart", "WhatsApp", "White House", "Windy", "Wikipedia", "Wired", "Wolfram Alpha", "Yahoo", or "YouTube".
-* when finished use: *Close tab* or: "Computer, close `name` browser" to close the Web browser.
+* when finished say: *Close tab* or: "Computer, close `name` browser" to close the Web browser.
 
 
 Computer, show `name` city
@@ -64,7 +64,7 @@ Computer, play radio `name`
 ---------------------------
 * launches the default Web browser and tunes into an internet radio station.
 * replace `name` by: "7", "Arabella", "Bob", "Club Mix", "Dance FM", "FFN", "Galaxy", "Gong", "Ibiza", "Jam FM", "Kiss Kiss", "Malibu", "N-JOY", "Paloma", "You FM".
-* when finished use: *Close tab* or: "Computer, close `name` browser" to close the Web browser.
+* when finished say: *Close tab* or: "Computer, close `name` browser" to close the Web browser.
 
 
 Computer, play `name` sound
@@ -77,21 +77,21 @@ Computer, play `name` game
 --------------------------
 * launches the default Web browser and plays the given game.
 * replace `name` by: "2048", "Chess", "Cube", "Pacman", "Tetris", "TicTacToe", or "Tower".
-* when finished use: *Close tab* or: "Computer, close `name` browser" to close the Web browser.
+* when finished say: *Close tab* or: "Computer, close `name` browser" to close the Web browser.
 
 
 Computer, show `name` manual
 ----------------------------
 * launches the default Web browser with the given manual.
-* replace `name` by: "Azure", "Chrome", "Edge", "Firefox", "PowerShell", "Serenade", or "Windows".
-* when finished use: *Close tab* or: "Computer, close `name` browser" to close the Web browser.
+* replace `name` by: "Azure", "Bash", "Blender", "Chrome", "Edge", "Firefox", "Git", "PowerShell", "Serenade", "Vim", or "Windows".
+* when finished say: *Close tab* or: "Computer, close `name` browser" to close the Web browser.
 
 
 Computer, open `name` settings
 -------------------------------
 * launches Windows settings.
 * replace `name` by: "activation", "apps", "background", "backup", "bluetooth", "color", "date", "default apps", "developer", "display", "ethernet", "lockscreen", "maps", "printer", "proxy", "recovery", "speech", "start", "system", "taskbar", "themes", "time", "update", "USB", "VPN", or "Wifi". Use "system" as top level settings.
-* when finished use: *Computer, close system settings* to stop the Windows settings.
+* when finished say: *Computer, close system settings* to stop the Windows settings.
 
 
 🔊 Audio
