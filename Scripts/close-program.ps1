@@ -38,7 +38,7 @@ try {
 	} else {
 		$Processes = get-process -name $ProgramAliasName -errorAction 'silentlycontinue'
 		if ($Processes.Count -eq 0) {
-			throw "$FullProgramName is not started yet"
+			throw "$FullProgramName isn't running"
 		}
 		foreach ($Process in $Processes) {
 			$_.CloseMainWindow() | Out-Null

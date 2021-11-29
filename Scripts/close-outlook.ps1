@@ -13,7 +13,7 @@
 
 TaskKill /im outlook.exe
 if ($lastExitCode -ne "0") {
-	& "$PSScriptRoot/speak-english.ps1" "Sorry, can't close Microsoft Outlook"
+	& "$PSScriptRoot/speak-english.ps1" "Sorry, Microsoft Outlook isn't running."
 	exit 1
 }
 exit 0 # success

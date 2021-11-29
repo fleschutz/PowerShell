@@ -1,10 +1,10 @@
 ﻿<#
 .SYNOPSIS
-	Opens a Notepad website
+	Opens the Notepad website
 .DESCRIPTION
-	This script launches the Web browser with a Notepad website.
+	This script launches the Web browser with the Notepad website.
 .EXAMPLE
-	PS> ./open-notepad-website
+	PS> ./open-note-pad-website
 .NOTES
 	Author: Markus Fleschutz · License: CC0
 .LINK

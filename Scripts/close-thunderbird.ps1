@@ -13,7 +13,7 @@
 
 TaskKill /im thunderbird.exe
 if ($lastExitCode -ne "0") {
-	& "$PSScriptRoot/speak-english.ps1" "Sorry, can't close Mozilla Thunderbird"
+	& "$PSScriptRoot/speak-english.ps1" "Sorry, Mozilla Thunderbird isn't running."
 	exit 1
 }
 exit 0 # success

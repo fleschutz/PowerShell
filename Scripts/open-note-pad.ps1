@@ -4,7 +4,7 @@
 .DESCRIPTION
 	This script launches the Notepad application.
 .EXAMPLE
-	PS> ./open-notepad
+	PS> ./open-note-pad
 .NOTES
 	Author: Markus Fleschutz · License: CC0
 .LINK

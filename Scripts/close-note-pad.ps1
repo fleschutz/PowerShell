@@ -4,7 +4,7 @@
 .DESCRIPTION
 	This script closes the Notepad application gracefully.
 .EXAMPLE
-	PS> ./close-notepad
+	PS> ./close-note-pad
 .NOTES
 	Author: Markus Fleschutz · License: CC0
 .LINK
