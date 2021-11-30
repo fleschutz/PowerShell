@@ -107,6 +107,7 @@ function ListTools {
 	CheckFor perl	"--version"
 	CheckFor ping	"-V"
 	CheckFor ping6	"-V"
+	CheckFor powershell "--version"
 	CheckFor print	""
 	CheckFor printf "--version"
 	CheckFor python "--version"
@@ -169,7 +170,7 @@ function ListTools {
 }
  
 try {
-	ListTools | format-table -property @{e='Name';width=12},@{e='Version';width=15},@{e='Location';width=45},@{e='FileSize';width=10}
+	ListTools | format-table -property @{e='Name';width=12},@{e='Version';width=15},@{e='Location';width=50},@{e='FileSize';width=10}
 	exit 0 # success
 } catch {
 	"⚠️ Error: $($Error[0]) ($($MyInvocation.MyCommand.Name):$($_.InvocationInfo.ScriptLineNumber))"

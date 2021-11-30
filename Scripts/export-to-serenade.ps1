@@ -1,6 +1,6 @@
 ﻿<#
 .SYNOPSIS
-	Exports all scripts to Serenade 
+	Exports scripts to Serenade 
 .DESCRIPTION
 	This script exports all PowerShell scripts to Serenade to execute them by voice.
 .PARAMETER WakeWord
@@ -37,7 +37,7 @@ try {
 	foreach ($Script in $Scripts) {
 		$ScriptName = $Script.basename
 		$Keyword = $ScriptName -replace "-"," "
-		"serenade.global().command(`"$($WakeWord.toLower()) $Keyword`", async (api) => { await api.focusOrLaunchApplication(`"$Application`"); await api.typeText(`"$ScriptName.ps1`"); await api.pressKey(`"return`"); });" | Add-Content "$TargetFile"
+		"serenade.global().command(`"$($WakeWord.toLower()) $Keyword`",async(api)=>{await api.focusOrLaunchApplication(`"$Application`");await api.typeText(`"$ScriptName.ps1`");await api.pressKey(`"return`");});" | Add-Content "$TargetFile"
 	}
 
 	[int]$Elapsed = $StopWatch.Elapsed.TotalSeconds
