@@ -1,10 +1,10 @@
 ﻿<#
 .SYNOPSIS
-	Opens FRITZ!Box's Web interface
+	Opens the FRITZ!Box website
 .DESCRIPTION
-	This script launches the Web browser with FRITZ!Box's Web interface.
+	This script launches the Web browser with the FRITZ!Box website.
 .EXAMPLE
-	PS> ./open-fritz-box
+	PS> ./open-fritz-box-website
 .NOTES
 	Author: Markus Fleschutz · License: CC0
 .LINK
