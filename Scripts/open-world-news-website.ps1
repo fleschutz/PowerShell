@@ -4,7 +4,7 @@
 .DESCRIPTION
 	This script launches the Web browser with the Reuters World News website.
 .EXAMPLE
-	PS> ./open-world-news
+	PS> ./open-world-news-website
 .NOTES
 	Author: Markus Fleschutz · License: CC0
 .LINK
