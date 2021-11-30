@@ -4,7 +4,7 @@
 .DESCRIPTION
 	This script launches the Web browser with the HolidayCheck website.
 .EXAMPLE
-	PS> ./open-holiday-check
+	PS> ./open-holiday-check-website
 .NOTES
 	Author: Markus Fleschutz · License: CC0
 .LINK
