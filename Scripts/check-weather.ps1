@@ -2,7 +2,7 @@
 .SYNOPSIS
 	Checks the weather 
 .DESCRIPTION
-	Checks the current weather for critical values.
+	Checks the current weather report.
 .PARAMETER location
 	Specifies the location to use (determined automatically per default)
 .EXAMPLE
@@ -14,16 +14,6 @@
 #>
 
 param([string]$location = "") # empty means determine automatically
-
-function Check { param([int]$Value, [int]$NormalMin,  [int]$NormalMax, [string]$Unit)  
-	if ($Value -lt $NormalMin) {
-		return "$Value $Unit ! "
-	}
-	if ($Value -gt $NormalMax) {
-		return "$Value $Unit ! "
-	}
-	return ""
-}
 
 try {
 	$Weather = (Invoke-WebRequest http://wttr.in/${location}?format=j1 -UserAgent "curl" ).Content | ConvertFrom-Json
@@ -40,19 +30,8 @@ try {
 	$Desc = $Weather.current_condition.weatherDesc.value
 	$Area = $Weather.nearest_area.areaName.value
 	$Region = $Weather.nearest_area.region.value
-	"Now: $($Temp)°C  $($Precip)mm  $($Humidity)%  $($WindSpeed)km/h from $WindDir  $($Pressure)hPa  UV$($UV)  $($Visib)km  $($Clouds)%  $Desc  at $Area ($Region)"
 
-	$Result+=Check $Weather.current_condition.windspeedKmph 0 48 "km/h"
-	$Result+=Check $Weather.current_condition.visibility 1 1000 "km visibility"
-	$Result+=Check $Weather.current_condition.temp_C -20 40 "°C"
-	$Result+=Check $Weather.current_condition.uvIndex 0 6 "UV"
-
-	if ($Result -eq "") {
-		"Calm weather"
-	} else {
-		"WEATHER ALERT: $Result"
-	}
-	$Reply = "$($Temp)°C, $($Precip)mm rain, $($Humidity)% humidity, $($Clouds)% clouds with wind $($WindSpeed)km/h from $WindDir at $Area ($Region)"
+	$Reply = "$($Temp)°C, $($Precip)mm rain, $($Humidity)% humidity, $($WindSpeed)km/h wind from $WindDir with $($Clouds)% clouds and $($Visib)km visibility at $Area ($Region)"
 	"✔️ $Reply"
 	& "$PSScriptRoot/speak-english.ps1" "$Reply"
 	exit 0 # success
