@@ -4,7 +4,7 @@
 .DESCRIPTION
 	This script determines and returns the current time zone.
 .EXAMPLE
-	PS> ./check-timezone
+	PS> ./check-time-zone
 .NOTES
 	Author: Markus Fleschutz · License: CC0
 .LINK
