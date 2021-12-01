@@ -1,6 +1,6 @@
 ﻿<#
 .SYNOPSIS
-	Checks the free swap space
+	Checks the swap space
 .DESCRIPTION
 	This script checks the free swap space.
 .PARAMETER MinLevel
@@ -32,14 +32,14 @@ try {
 	}
 
 	if ($Total -eq "0") {
-        	write-warning "No swap space configured!"
-		exit 1
+        	$Reply = "No swap space configured!"
+	} elseif ($Free -lt $MinLevel) {
+        	$Reply = "Swap space has only $Free GB left to use! ($Used of $Total GB used, minimum is $MinLevel GB)"
+	} else {
+		$Reply = "Swap space has $Free GB left ($Total GB total)"
 	}
-	if ($Free -lt $MinLevel) {
-        	write-warning "Swap space has only $Free GB left to use! ($Used of $Total GB used, minimum is $MinLevel GB)"
-		exit 1
-	}
-	"✔️ Swap space has $Free GB left ($Total GB total)"
+	"✔️ $Reply"
+	& "$PSScriptRoot/speak-english.ps1" "$Reply"
 	exit 0 # success
 } catch {
 	"⚠️ Error: $($Error[0]) ($($MyInvocation.MyCommand.Name):$($_.InvocationInfo.ScriptLineNumber))"
