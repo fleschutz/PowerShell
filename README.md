@@ -22,8 +22,6 @@ Mega Collection of PowerShell Scripts
 | [play-mp3.ps1](Scripts/play-mp3.ps1)                 | Plays the given sound file (MP3 file format)                       | [Help](Docs/play-mp3.md)          |
 | [play-super-mario.ps1](Scripts/play-super-mario.ps1) | Plays the Super Mario Intro                                        | [Help](Docs/play-super-mario.md)  |
 | [play-tetris-melody.ps1](Scripts/play-tetris-melody.ps1) | Plays the Tetris melody                                        | [Help](Docs/play-tetris-melody.md) |
-| [say-date.ps1](Scripts/say-date.ps1)                 | Say the current date by text-to-speech                             | [Help](Docs/say-date.md)        |
-| [say-time.ps1](Scripts/say-time.ps1)                 | Say the current time by text-to-speech                             | [Help](Docs/say-time.md)        |
 | [speak-checklist.ps1](Scripts/speak-checklist.ps1)   | Speaks the given checklist by text-to-speech                       | [Help](Docs/speak-checklist.md)   |
 | [speak-countdown.ps1](Scripts/speak-countdown.ps1)   | Starts a countdown by text-to-speech                               | [Help](Docs/speak-countdown.md)   |
 | [speak-english.ps1](Scripts/speak-english.ps1)       | Speaks the given text with an English text-to-speech voice         | [Help](Docs/speak-english.md)     |
