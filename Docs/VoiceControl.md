@@ -97,7 +97,7 @@ Computer, open `name` settings
 Computer, check `name`
 ----------------------
 * let the computer check something.
-* replace `name` by: "CPU", "DNS", "ping", or "swap space"
+* replace `name` by: "CPU", "DNS", "operating system", "ping", "swap space", or "up-time".
 
 
 🔊 Audio
@@ -113,8 +113,6 @@ Computer, check `name`
 * *Computer, locate my phone.*
 * *Computer, tell joke.*
 * *Computer, tell quote.*
-* *Computer, tell operating system.*
-* *Computer, tell up-time.*
 
 
 💬 Nice Conversation

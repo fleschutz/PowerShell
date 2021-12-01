@@ -1,6 +1,6 @@
 ﻿<#
 .SYNOPSIS
-	Checks the health of the local computer
+	Checks the computer health 
 .DESCRIPTION
 	This script checks the health of the local computer.
 .EXAMPLE
@@ -10,7 +10,6 @@
 	✔️ 30.3 °C CPU temperature - good
 	✔️ DNS resolution is 19.7 domains per second
 	✔️ 29 ms ping average (13 ms min, 110 ms max, 10 hosts)
-	✔️ Windmill is healthy
 .LINK
 	https://github.com/fleschutz/PowerShell
 .NOTES
@@ -18,6 +17,8 @@
 	License: CC0
 #>
 
+& "$PSScriptRoot/check-uptime.ps1"
+& "$PSScriptRoot/check-operating-system.ps1"
 & "$PSScriptRoot/check-swap-space.ps1"
 if ($lastExitCode -ne "0") { $Healthy = 0 }
 

@@ -1,10 +1,10 @@
 ﻿<#
 .SYNOPSIS
-	Tells the uptime by text-to-speech
+	Determines the uptime 
 .DESCRIPTION
-	This script speaks the uptime version by text-to-speech (TTS).
+	This script determines and says the uptime by text-to-speech (TTS).
 .EXAMPLE
-	PS> ./tell-uptime
+	PS> ./check-uptime
 .NOTES
 	Author: Markus Fleschutz · License: CC0
 .LINK
@@ -25,23 +25,22 @@ try {
 	$Minutes = $Uptime.Minutes 
 
 	if ($Days -eq "1") {
-		$Answer = "I'm up for 1 day, "
+		$Reply = "Up for 1 day, "
 	} else {
-		$Answer = "I'm up for $Days days, "
+		$Reply = "Up for $Days days, "
 	}
 	if ($Hours -eq "1") {
-		$Answer += "1 hour "
+		$Reply += "1 hour "
 	} else {
-		$Answer += "$Hours hours "
+		$Reply += "$Hours hours "
 	}
 	if ($Minutes -eq "1") {
-		$Answer += "and 1 minute."
+		$Reply += "and 1 minute."
 	} else {
-		$Answer += "and $Minutes minutes."
+		$Reply += "and $Minutes minutes."
 	}
-
-	& "$PSScriptRoot/speak-english.ps1" "$Answer"
-	write-output "$Answer"
+	"✔️ $Reply"
+	& "$PSScriptRoot/speak-english.ps1" "$Reply"
 	exit 0 # success
 } catch {
 	"⚠️ Error: $($Error[0]) ($($MyInvocation.MyCommand.Name):$($_.InvocationInfo.ScriptLineNumber))"
