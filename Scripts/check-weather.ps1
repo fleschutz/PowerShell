@@ -1,6 +1,6 @@
 ﻿<#
 .SYNOPSIS
-	Checks the weather for critical values
+	Checks the weather 
 .DESCRIPTION
 	Checks the current weather for critical values.
 .PARAMETER location
@@ -52,6 +52,9 @@ try {
 	} else {
 		"WEATHER ALERT: $Result"
 	}
+	$Reply = "$($Temp)°C, $($Precip)mm rain, $($Humidity)% humidity, $($Clouds)% clouds with wind $($WindSpeed)km/h from $WindDir at $Area ($Region)"
+	"✔️ $Reply"
+	& "$PSScriptRoot/speak-english.ps1" "$Reply"
 	exit 0 # success
 } catch {
 	"⚠️ Error: $($Error[0]) ($($MyInvocation.MyCommand.Name):$($_.InvocationInfo.ScriptLineNumber))"
