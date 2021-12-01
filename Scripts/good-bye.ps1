@@ -1,8 +1,8 @@
 ﻿<#
 .SYNOPSIS
-	Say an answer to 'good bye'
+	Answers to 'good bye'
 .DESCRIPTION
-	This script answers to "good bye" by text-to-speech (TTS).
+	This script says a reply to "good bye" by text-to-speech (TTS).
 .EXAMPLE
 	PS> ./good-bye
 .NOTES
@@ -11,8 +11,8 @@
 	https://github.com/fleschutz/PowerShell
 #>
 
-$Answer = "Good bye.", "See you.", "Bye bye." | Get-Random
+$Reply = "Good bye.", "See you.", "Bye bye." | Get-Random
 
-& "$PSScriptRoot/speak-english.ps1" "$Answer"
-write-output "$Answer"
+"$Reply"
+& "$PSScriptRoot/speak-english.ps1" "$Reply"
 exit 0 # success

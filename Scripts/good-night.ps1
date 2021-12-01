@@ -1,8 +1,8 @@
 ﻿<#
 .SYNOPSIS
-	Say an answer to 'good night'
+	Answers to 'good night'
 .DESCRIPTION
-	This script answers to "good night" by text-to-speech (TTS).
+	This script says a reply to "good night" by text-to-speech (TTS).
 .EXAMPLE
 	PS> ./good-night
 .NOTES
@@ -11,8 +11,8 @@
 	https://github.com/fleschutz/PowerShell
 #>
 
-$Answer = "Good night to you, too.", "Good night to you, my friend.", "Have a good night. Sleep well.", "Good night and sweet dreams." | Get-Random
+$Reply = "Good night to you, too.", "Good night to you, my friend.", "Have a good night. Sleep well.", "Good night and sweet dreams." | Get-Random
 
-& "$PSScriptRoot/speak-english.ps1" "$Answer"
-write-output "$Answer"
+"$Reply"
+& "$PSScriptRoot/speak-english.ps1" "$Reply"
 exit 0 # success

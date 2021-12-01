@@ -49,7 +49,7 @@ Mega Collection of PowerShell Scripts
 | ---------------------------------------------------- | ------------------------------------------------------------------ | --------------------------------------- |
 | [add-firewall-rules.ps1](Scripts/add-firewall-rules.ps1) | Adds firewall rules for the given executables (needs admin rights) | [Help](Docs/add-firewall-rules.md) |
 | [check-cpu-temp.ps1](Scripts/check-cpu-temp.ps1)     | Checks the CPU temperature                                         | [Help](Docs/check-cpu-temp.md)      |
-| [check-dns-resolution.ps1](Scripts/check-dns-resolution.ps1) | Checks the DNS resolution with frequently used domain names| [Help](Docs/check-dns-resolution.md)|
+| [check-dns.ps1](Scripts/check-dns.ps1) | Checks the DNS resolution                                                        | [Help](Docs/check-dns.md)|
 | [check-drive-space.ps1](Scripts/check-drive-space.ps1) | Checks a drive for free space left                               | [Help](Docs/check-drive-space.md)   |
 | [check-file-system.ps1](Scripts/check-file-system.ps1) | Checks the file system of a drive (needs admin rights)           | [Help](Docs/check-file-system.md)   |
 | [check-health.ps1](Scripts/check-health.ps1)         | Checks the system health                                           | [Help](Docs/check-health.md)        |

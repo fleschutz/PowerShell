@@ -34,7 +34,7 @@ if ($IsLinux) {
 & "$PSScriptRoot/check-cpu-temp.ps1"
 if ($lastExitCode -ne "0") { $Healthy = 0 }
 
-& "$PSScriptRoot/check-dns-resolution.ps1"
+& "$PSScriptRoot/check-dns.ps1"
 if ($lastExitCode -ne "0") { $Healthy = 0 }
 
 & "$PSScriptRoot/check-ping.ps1"

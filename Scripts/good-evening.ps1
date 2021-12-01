@@ -1,8 +1,8 @@
 ﻿<#
 .SYNOPSIS
-	Say an answer to 'good evening'
+	Answers to 'good evening'
 .DESCRIPTION
-	This script answers "good evening" by text-to-speech (TTS).
+	This script says a reply to "good evening" by text-to-speech (TTS).
 .EXAMPLE
 	PS> ./good-evening
 .NOTES
@@ -11,8 +11,8 @@
 	https://github.com/fleschutz/PowerShell
 #>
 
-$Answer = "And a special good evening to you too."
+$Reply = "And a special good evening to you too."
 
-& "$PSScriptRoot/speak-english.ps1" "$Answer"
-write-output "$Answer"
+"$Reply"
+& "$PSScriptRoot/speak-english.ps1" "$Reply"
 exit 0 # success
