@@ -94,6 +94,12 @@ Computer, open `name` settings
 * when finished say: *Computer, close system settings* to stop the Windows settings.
 
 
+Computer, check `name`
+----------------------
+* let the computer check something.
+* replace `name` by: "CPU temperature", "DNS", "ping", or "swap space"
+
+
 🔊 Audio
 -------
 * *Computer, mute audio.*

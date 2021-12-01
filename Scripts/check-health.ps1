@@ -8,7 +8,7 @@
 	✔️ 1213 GB left for swap space (67 of 1280 GB used)
 	✔️ 172 GB left on drive C (61 of 233 GB used)
 	✔️ 30.3 °C CPU temperature - good
-	✔️ 19.7 domains/s (177 domains resolved in 9 sec)
+	✔️ DNS resolution is 19.7 domains per second
 	✔️ 29 ms ping average (13 ms min, 110 ms max, 10 hosts)
 	✔️ Windmill is healthy
 .LINK
@@ -17,8 +17,6 @@
 	Author:  Markus Fleschutz
 	License: CC0
 #>
-
-$Healthy = 1
 
 & "$PSScriptRoot/check-swap-space.ps1"
 if ($lastExitCode -ne "0") { $Healthy = 0 }
@@ -31,25 +29,11 @@ if ($IsLinux) {
 	if ($lastExitCode -ne "0") { $Healthy = 0 }
 }
 
-& "$PSScriptRoot/check-cpu-temp.ps1"
-if ($lastExitCode -ne "0") { $Healthy = 0 }
-
+& "$PSScriptRoot/check-cpu.ps1"
 & "$PSScriptRoot/check-dns.ps1"
-if ($lastExitCode -ne "0") { $Healthy = 0 }
-
 & "$PSScriptRoot/check-ping.ps1"
-if ($lastExitCode -ne "0") { $Healthy = 0 }
-
 if ($IsLinux) {
 	& "$PSScriptRoot/check-smart-devices.ps1" 
 	if ($lastExitCode -ne "0") { $Healthy = 0 }
 }
-
-$Hostname = $(hostname)
-if ($Healthy) {
-	"✔️ $Hostname seems healthy"
-	exit 0 # success
-} else {
-	write-warning "$Hostname is NOT healthy"
-	exit 1
-}
+exit 0 # success

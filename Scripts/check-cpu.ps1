@@ -1,11 +1,11 @@
 ﻿<#
 .SYNOPSIS
-	Checks the CPU temperature
+	Checks the CPU 
 .DESCRIPTION
 	This script checks the CPU temperature.
 .EXAMPLE
-	PS> ./check-cpu-temp
-	✔️ CPU has 30.3 °C: good
+	PS> ./check-cpu
+	✔️ CPU has 30.3 °C
 .LINK
 	https://github.com/fleschutz/PowerShell
 .NOTES
@@ -23,18 +23,18 @@ try {
 	}
 
 	if ($Temp -gt 80) {
-		"⚠️ CPU has $Temp °C: too high!"
-		exit 1
+		$Reply = "⚠️ CPU has $Temp °C: too high!"
 	} elseif ($Temp -gt 50) {
-		"✔️ CPU has $Temp °C: quite high"
+		$Reply = "✔️ CPU has $Temp °C: quite high"
 	} elseif ($Temp -gt 0) {
-		"✔️ CPU has $Temp °C"
+		$Reply = "✔️ CPU has $Temp °C"
 	} elseif ($Temp -gt -20) {
-		"✔️ CPU has $Temp °C: quite low"
+		$Reply = "✔️ CPU has $Temp °C: quite low"
 	} else {
-		"⚠️ CPU has $Temp °C: too low!"
-		exit 1
+		$Reply = "⚠️ CPU has $Temp °C: too low!"
 	}
+	"$Reply"
+	& "$PSScriptRoot/speak-english.ps1" "$Reply"
 	exit 0 # success
 } catch {
 	"⚠️ Error: $($Error[0]) ($($MyInvocation.MyCommand.Name):$($_.InvocationInfo.ScriptLineNumber))"
