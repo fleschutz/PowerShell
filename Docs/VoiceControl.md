@@ -125,3 +125,4 @@ Computer, check `name`
 * *Computer, I'll be back.*
 * *Computer, good bye.*
 * *Computer, bye-bye.*
+* *Computer, see you.*
