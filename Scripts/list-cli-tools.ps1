@@ -153,6 +153,7 @@ function ListTools {
 	CheckFor where	"--version"
 	CheckFor whatis "--version"
 	CheckFor which	""
+	CheckFor winget	"--version"
 	CheckFor whoami "--version"
 	CheckFor wput	"--version"
 	CheckFor write	""
@@ -170,7 +171,7 @@ function ListTools {
 }
  
 try {
-	ListTools | format-table -property @{e='Name';width=12},@{e='Version';width=15},@{e='Location';width=50},@{e='FileSize';width=10}
+	ListTools | format-table -property @{e='Name';width=12},@{e='Version';width=15},@{e='Location';width=55},@{e='FileSize';width=10}
 	exit 0 # success
 } catch {
 	"⚠️ Error: $($Error[0]) ($($MyInvocation.MyCommand.Name):$($_.InvocationInfo.ScriptLineNumber))"
