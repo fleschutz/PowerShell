@@ -97,7 +97,7 @@ Computer, open `name` settings
 Computer, check `name`
 ----------------------
 * let the computer check something.
-* replace `name` by: "CPU", "date", "DNS", "operating system", "ping", "swap space", "time", "time zone", "up-time", or "weather".
+* replace `name` by: "CPU", "date", "DNS", "Earth", "operating system", "ping", "swap space", "time", "time zone", "up-time", or "weather".
 
 
 🔊 Audio
