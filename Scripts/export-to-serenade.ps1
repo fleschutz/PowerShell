@@ -13,8 +13,8 @@
 	Specifies the target file ("$HOME\.serenade\scripts\PowerShell.js" by default)
 .EXAMPLE
 	PS> ./export-to-serenade.ps1 Computer
-	⏳ Found 499 PowerShell scripts...
-	⏳ Writing custom JavaScript file C:\Users\Markus\.serenade\scripts\PowerShell.js...
+	⏳ Found 534 PowerShell scripts...
+	⏳ Writing custom JavaScript file: C:\Users\Markus\.serenade\scripts\PowerShell.js...
 	✔️ Exported to Serenade with wake word "Computer" in 3 sec
 .NOTES
 	Author: Markus Fleschutz · License: CC0
@@ -31,7 +31,7 @@ try {
 
 	$Scripts = Get-ChildItem "$FilePattern"
 	"⏳ Found $($Scripts.Count) PowerShell scripts..."
-	"⏳ Writing custom JavaScript file $TargetFile..."
+	"⏳ Writing custom JavaScript file: $TargetFile..."
 
 	"/* DO NOT EDIT! This file has been generated automatically by export-to-serenade.ps1 */" | Set-Content "$TargetFile"
 	foreach ($Script in $Scripts) {
