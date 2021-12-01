@@ -12,7 +12,7 @@
 #>
 
 try {
-	$Reply = "Earth still spins with 1.040mph"
+	$Reply = "Earth still spins with 1040mph."
 	"✔️ $Reply"
 	& "$PSScriptRoot/speak-english.ps1" "$Reply"
 	exit 0 # success
