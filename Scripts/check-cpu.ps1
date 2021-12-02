@@ -23,15 +23,15 @@ try {
 	}
 
 	if ($Temp -gt 80) {
-		$Reply = "CPU has $Temp °C: too high!"
+		$Reply = "$($Temp)°C CPU temperature, that's too high!"
 	} elseif ($Temp -gt 50) {
-		$Reply = "CPU has $Temp °C: quite high"
+		$Reply = "$($Temp)°C CPU temperature, that's quite high"
 	} elseif ($Temp -gt 0) {
-		$Reply = "CPU has $Temp °C"
+		$Reply = "$(Temp)°C CPU temperature"
 	} elseif ($Temp -gt -20) {
-		$Reply = "CPU has $Temp °C: quite low"
+		$Reply = "$(Temp)°C CPU temperature, that's quite low"
 	} else {
-		$Reply = "CPU has $Temp °C: too low!"
+		$Reply = "$(Temp)°C CPU temperature, that's too low!"
 	}
 	"✔️ $Reply"
 	& "$PSScriptRoot/speak-english.ps1" "$Reply"

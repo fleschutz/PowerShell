@@ -37,7 +37,7 @@ try {
 	}
 	$Avg = $Avg / $Pings.count
 
-	$Reply = "Average ping is $($Avg)ms ($($Min)ms min, $($Max)ms max)"
+	$Reply = "$($Avg)ms average ping time ($($Min)ms min, $($Max)ms max)"
 	"✔️ $Reply"
 	& "$PSScriptRoot/speak-english.ps1" "$Reply"
 	exit 0 # success

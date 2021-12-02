@@ -31,7 +31,7 @@ try {
 
 	[int]$Elapsed = $StopWatch.Elapsed.TotalSeconds
 	$Average = [math]::round($Count / $Elapsed, 1)
-	$Reply = "DNS resolution is $Average domains per second"
+	$Reply = "$Average domains per second DNS resolution"
 	"✔️ $Reply"
 	& "$PSScriptRoot/speak-english.ps1" "$Reply"
 	exit 0 # success
