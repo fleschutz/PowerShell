@@ -16,7 +16,7 @@
 param([string]$GeoLocation = "") # empty means determine automatically
 
 try {
-	(invoke-webRequest http://v2d.wttr.in/$GeoLocation -UserAgent "curl" ).Content
+	(invoke-webRequest http://v2d.wttr.in/$GeoLocation -userAgent "curl" -useBasicParsing).Content
 	exit 0 # success
 } catch {
 	"⚠️ Error: $($Error[0]) ($($MyInvocation.MyCommand.Name):$($_.InvocationInfo.ScriptLineNumber))"

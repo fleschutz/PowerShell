@@ -15,7 +15,7 @@ $Cities="Hawaii","Los Angeles","Mexico City","Miami","New York","Rio de Janeiro"
 
 try {
 	foreach($City in $Cities) {
-		$Line = (Invoke-WebRequest http://wttr.in/${City}?format="%c %l+%t+%p+%h+%P+%w +%S →+%s" -UserAgent "curl").Content
+		$Line = (Invoke-WebRequest http://wttr.in/${City}?format="%c %l+%t+%p+%h+%P+%w +%S →+%s" -UserAgent "curl" -useBasicParsing).Content
 		"$Line"
 	}
 	exit 0 # success

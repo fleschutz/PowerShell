@@ -16,7 +16,7 @@
 param([string]$location = "") # empty means determine automatically
 
 try {
-	$Weather = (Invoke-WebRequest http://wttr.in/${location}?format=j1 -UserAgent "curl" ).Content | ConvertFrom-Json
+	$Weather = (Invoke-WebRequest http://wttr.in/${location}?format=j1 -userAgent "curl" -useBasicParsing).Content | ConvertFrom-Json
 
 	$Temp = $Weather.current_condition.temp_C
 	$Precip = $Weather.current_condition.precipMM
