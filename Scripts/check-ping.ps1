@@ -3,19 +3,19 @@
 	Checks the ping latency from the local computer to selected Internet hosts
 .DESCRIPTION
 	This script checks the ping latency from the local computer to selected Internet hosts.
-	The hosts by default are: amazon.com,apple.com,bing.com,cnn.com,dropbox.com,facebook.com,google.com,live.com,twitter.com,youtube.com
+	The hosts by default are: amazon.com,bing.com,cnn.com,dropbox.com,facebook.com,google.com,live.com,twitter.com,youtube.com
 .PARAMETER hosts
 	Specifies the hosts to check (separated by comma)
 .EXAMPLE
 	PS> ./check-ping
-	✔️ Ping is 36 ms average (13 ms min, 109 ms max, using 10 hosts)
+	✔️ Average ping is 36ms average (13ms min, 109ms max)
 .LINK
 	https://github.com/fleschutz/PowerShell
 .NOTES
 	Author: Markus Fleschutz · License: CC0
 #>
 
-param([string]$hosts = "amazon.com,apple.com,bing.com,cnn.com,dropbox.com,facebook.com,google.com,live.com,twitter.com,youtube.com")
+param([string]$hosts = "amazon.com,bing.com,cnn.com,dropbox.com,facebook.com,google.com,live.com,twitter.com,youtube.com")
 
 try {
 	write-progress "Sending pings to $hosts..."
@@ -37,7 +37,9 @@ try {
 	}
 	$Avg = $Avg / $Pings.count
 
-	"✔️ Ping is $Avg ms average ($Min ms min, $Max ms max, $($Pings.count) hosts used)"
+	$Reply = "Average ping is $($Avg)ms ($($Min)ms min, $($Max)ms max)"
+	"✔️ $Reply"
+	& "$PSScriptRoot/speak-english.ps1" "$Reply"
 	exit 0 # success
 } catch {
 	"⚠️ Error: $($Error[0]) ($($MyInvocation.MyCommand.Name):$($_.InvocationInfo.ScriptLineNumber))"
