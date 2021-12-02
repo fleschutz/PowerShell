@@ -33,6 +33,7 @@ if ($IsLinux) {
 & "$PSScriptRoot/check-cpu.ps1"
 & "$PSScriptRoot/check-dns.ps1"
 & "$PSScriptRoot/check-ping.ps1"
+& "$PSScriptRoot/check-vpn.ps1"
 if ($IsLinux) {
 	& "$PSScriptRoot/check-smart-devices.ps1" 
 	if ($lastExitCode -ne "0") { $Healthy = 0 }

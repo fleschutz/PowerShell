@@ -15,9 +15,9 @@ try {
 	$Connections = (Get-VPNConnection)
 	$Reply = ""
 	foreach($Connection in $Connections) {
-		$Reply += "connection $($Connection.Name) is $($Connection.ConnectionStatus), "
+		$Reply += "VPN connection $($Connection.Name) is $($Connection.ConnectionStatus), "
 	}
-	if ("$Reply" -eq "") { $Reply = "No VPN connection available"
+	if ("$Reply" -eq "") { $Reply = "No VPN connection available" }
 
 	"✔️ $Reply"
 	& "$PSScriptRoot/speak-english.ps1" "$Reply"

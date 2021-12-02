@@ -5,7 +5,7 @@
 	This script checks the DNS resolution with frequently used domain names.
 .EXAMPLE
 	PS> ./check-dns
-	✔️ DNS resolves 11.8 domains/sec (177 domains in 15 sec)
+	✔️ DNS resolution is 11.8 domains per second
 .LINK
 	https://github.com/fleschutz/PowerShell
 .NOTES
@@ -31,7 +31,7 @@ try {
 
 	[int]$Elapsed = $StopWatch.Elapsed.TotalSeconds
 	$Average = [math]::round($Count / $Elapsed, 1)
-	$Reply = "DNS resolves $Average domains/sec ($Count in $Elapsed sec)"
+	$Reply = "DNS resolution is $Average domains per second"
 	"✔️ $Reply"
 	& "$PSScriptRoot/speak-english.ps1" "$Reply"
 	exit 0 # success
