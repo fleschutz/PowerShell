@@ -6,7 +6,7 @@ Executing PowerShell Scripts by Voice
 --------------
 1. Download and install *Serenade* from https://serenade.ai/ (Serenade is freely available for Linux, MacOS, and Windows).
 2. Download and install the *PowerShell Scripts*, then set the search path to it.
-3. Execute: `./export-to-serenade.ps1 Computer` in the *PowerShell Scripts*, this creates a custom JavaScript file at `$HOME/.serenade/scripts/PowerShell.js` using the wake word 'Computer'. Recommended wake words with a high recognition rate are: "Alexa", "Computer", "Jarvis", "KITT", or "Windows". In the following the wake word "Computer" is used.
+3. Execute: `./export-to-serenade.ps1 Computer` in the *PowerShell Scripts*, this creates a custom JavaScript file at `$HOME/.serenade/scripts/PowerShell.js` using the wake word 'Computer'. Recommended wake words with a high recognition rate are: "Alexa", "Bixby", "Computer", "Jarvis", "KITT", or "Windows". In the following the wake word "Computer" is used.
 
 
 🗣 Usage
@@ -49,7 +49,7 @@ Computer, open `name` folder
 Computer, open `name` website
 -----------------------------
 * launches the default Web browser with the given website.
-* replace `name` by: "Amazon", "Baidu", "BBC", "BitBucket", "CDC", "CIA", "CNN", "DistroWatch", "Dropbox", "eBay", "Facebook", "FBI", "Flipboard", "FourSquare", "FRITZ!Box", "FRITZ!Repeater", "GitHub", "GliderTracker", "HolidayCheck", "HRworks", "Instagram", "IPFS", "Microsoft", "NASA", "NBC", "Netflix", "Notepad", "Outdoor Active", "PayPal", "Pinterest", "Pixabay", "Plex", "Slashdot", "Snap Store", "Starbucks", "Tesla", "TikTok", "Topo Map", "Twitter", "UFA", "Unsplash", "Walmart", "WhatsApp", "White House", "Windy", "Wikipedia", "Wired", "Wolfram Alpha", "World News", "Yahoo", or "YouTube".
+* replace `name` by: "Amazon", "Apple", "Baidu", "BBC", "BitBucket", "CDC", "CIA", "CNN", "DistroWatch", "Dropbox", "eBay", "Facebook", "FBI", "Flipboard", "FourSquare", "FRITZ!Box", "FRITZ!Repeater", "GitHub", "GliderTracker", "HolidayCheck", "HRworks", "Instagram", "IPFS", "Microsoft", "NASA", "NBC", "Netflix", "Notepad", "Outdoor Active", "PayPal", "Pinterest", "Pixabay", "Plex", "Slashdot", "Snap Store", "Starbucks", "Tesla", "TikTok", "Topo Map", "Twitter", "UFA", "Unsplash", "Walmart", "WhatsApp", "White House", "Windy", "Wikipedia", "Wired", "Wolfram Alpha", "World News", "Yahoo", or "YouTube".
 * when finished say: *Close tab* or: "Computer, close `name` browser" to close the Web browser.
 
 
