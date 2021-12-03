@@ -73,14 +73,14 @@ More supported voice commands are:
 
 `Computer, show` [name] `manual`
 --------------------------------
-* launches the default Web browser with the given manual - replace [name] by: `Azure`, `Bash`, `Blender`, `Chrome`, `Edge`, `Firefox`, `Git`, `PowerShell`, `Serenade`, `Vim`, **`Voice` (this page)**, or `Windows`.
+* launches the default Web browser with the given manual - replace [name] by: `Azure`, `Bash`, `Blender`, `Chrome`, `Edge`, `Firefox`, `Git`, `PowerShell`, `Serenade`, `Vim`, `Voice` **(this page!!)**, or `Windows`.
 * when finished say: "Close tab" or: "Computer, close [name] browser" to close the Web browser.
 
 
-Computer, open `name` settings
--------------------------------
-* launches the Windows settings - replace `name` by: "activation", "apps", "background", "backup", "bluetooth", "color", "date", "default apps", "developer", "display", "ethernet", "lockscreen", "maps", "printer", "proxy", "recovery", "speech", "start", "system", "taskbar", "themes", "time", "update", "USB", "VPN", or "Wifi". Use "system" as top level settings.
-* when finished say: *Computer, close system settings* to stop the Windows settings.
+`Computer, open` [name] `settings`
+----------------------------------
+* launches the Windows settings - replace [name] by: `activation`, `apps`, `background`, `backup`, `bluetooth`, `color`, `date`, `default apps`, `developer`, `display`, `ethernet`, `lockscreen`, `maps`, `printer`, `proxy`, `recovery`, `speech`, `start`, `system` **(top level settings!)**, `taskbar, `themes`, `time`, `update`, `USB`, `VPN`, or `Wifi`.
+* when finished say: "Computer, close system settings" to stop the Windows settings.
 
 
 Computer, check `name`
