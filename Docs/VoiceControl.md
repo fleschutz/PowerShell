@@ -18,12 +18,14 @@ Voice recognition and response (VRR) is so much fun and so comfortable. Just try
 
 More supported voice commands are:
 
-
 `Computer, open` [app]
 ----------------------
 * launches the given application - replace [app] by: `3D-Viewer`, `Calculator`, `Git Extensions`, `Microsoft Paint`, `Netflix`, `Notepad`, `Outlook`, `Paint 3D`, `Spotify`, `Thunderbird`, `Visual Studio`, or `Windows Terminal`.
 * when finished say: "Computer, close [app]" to close the application.
 
+`Computer, check` [name]
+------------------------
+* lets the computer check something - replace [name] by: `CPU`, `date`, `DNS`, `drives`, `Earth` (fun), `operating system`, `ping`, `swap space`, `time`, `time zone`, `up-time`, `VPN`, or `weather`.
 
 `Computer, open` [name] `browser`
 ---------------------------------
@@ -72,21 +74,16 @@ More supported voice commands are:
 * when finished say: "Close tab" or: "Computer, close [name] browser" to close the Web browser.
 
 
-`Computer, show` [name] `manual`
---------------------------------
-* launches the default Web browser with the given manual - replace [name] by: `Azure`, `Bash`, `Blender`, `Chrome`, `Edge`, `Firefox`, `Git`, `PowerShell`, `Serenade`, `Vim`, `Voice` *(this page!)*, or `Windows`.
-* when finished say: "Close tab" or: "Computer, close [name] browser" to close the Web browser.
-
-
 `Computer, open` [name] `settings`
 ----------------------------------
 * launches the Windows settings - replace [name] by: `activation`, `apps`, `background`, `backup`, `bluetooth`, `color`, `date`, `default apps`, `developer`, `display`, `ethernet`, `lockscreen`, `maps`, `printer`, `proxy`, `recovery`, `speech`, `start`, `system` *(top level settings!)*, `taskbar`, `themes`, `time`, `update`, `USB`, `VPN`, or `Wifi`.
 * when finished say: "Computer, close system settings" to close the Windows settings.
 
 
-`Computer, check` [name]
-----------------------
-* let the computer check something - replace [name] by: `CPU`, `date`, `DNS`, `drives`, `Earth` (fun), `operating system`, `ping`, `swap space`, `time`, `time zone`, `up-time`, `VPN`, or `weather`.
+`Computer, show` [name] `manual`
+--------------------------------
+* launches the default Web browser with the given manual - replace [name] by: `Azure`, `Bash`, `Blender`, `Chrome`, `Edge`, `Firefox`, `Git`, `PowerShell`, `Serenade`, `Vim`, `Voice` *(this page!)*, or `Windows`.
+* when finished say: "Close tab" or: "Computer, close [name] browser" to close the Web browser.
 
 
 🔊 Audio Voice Commands
