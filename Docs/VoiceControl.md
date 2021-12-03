@@ -20,82 +20,72 @@ More supported voice commands are:
 
 `Computer, open` [app]
 ----------------------
-* launches the given application, replace [app] by: `3D-Viewer`, `Calculator`, `Git Extensions`, `Microsoft Paint`, `Netflix`, `Notepad`, `Outlook`, `Paint 3D`, `Spotify`, `Thunderbird`, `Visual Studio`, or `Windows Terminal`.
+* launches the given application - replace [app] by: `3D-Viewer`, `Calculator`, `Git Extensions`, `Microsoft Paint`, `Netflix`, `Notepad`, `Outlook`, `Paint 3D`, `Spotify`, `Thunderbird`, `Visual Studio`, or `Windows Terminal`.
 * when finished say: `Computer, close` [app] to close the application.
 
 
 `Computer, open` [name] `browser`
 ---------------------------------
-* launches the given Web browser or opens a new tab. Replace [name] by: `Chrome`, `default`, `Edge`, or `Firefox`.
+* launches the given Web browser or opens a new tab - replace [name] by: `Chrome`, `default`, `Edge`, or `Firefox`.
 * when finished say: `Close tab` or: `Computer, close` [name] `browser` to close the Web browser.
 
 
 Computer, open `name` drive
 ----------------------------
-* launches the File Explorer with the given drive.
-* replace `name` by: "C:", "D:", "E:", "F:", or "M:".
+* launches the File Explorer with the given drive - replace `name` by: "C:", "D:", "E:", "F:", or "M:".
 * when finished say: *Computer, close file explorer* to close the File Explorer.
 
 
 Computer, open `name` folder
 --------------------------
-* launches the File Explorer with the given folder.
-* replace `name` by: "Autostart", "Desktop", "Documents", "Downloads", "Dropbox", "Home", "Music", "OneDrive", "Pictures", "Recycle bin", "Repos", or "Videos".
+* launches the File Explorer with the given folder - replace `name` by: "Autostart", "Desktop", "Documents", "Downloads", "Dropbox", "Home", "Music", "OneDrive", "Pictures", "Recycle bin", "Repos", or "Videos".
 * when finished say: *Computer, close file explorer* to close the File Explorer.
 
 
 Computer, open `name` website
 -----------------------------
-* launches the default Web browser with the given website.
-* replace `name` by: "Amazon", "Apple", "Baidu", "BBC", "BitBucket", "CDC", "CIA", "CNN", "DistroWatch", "Dropbox", "eBay", "Facebook", "FBI", "Flipboard", "FourSquare", "FRITZ!Box", "FRITZ!Repeater", "GitHub", "GliderTracker", "HolidayCheck", "HRworks", "Instagram", "IPFS", "Microsoft", "NASA", "NBC", "Netflix", "Notepad", "Outdoor Active", "PayPal", "Pinterest", "Pixabay", "Plex", "Slashdot", "Snap Store", "Starbucks", "Tesla", "TikTok", "Topo Map", "Twitter", "UFA", "Unsplash", "Walmart", "WhatsApp", "White House", "Windy", "Wikipedia", "Wired", "Wolfram Alpha", "World News", "Yahoo", or "YouTube".
+* launches the default Web browser with the given website - replace `name` by: "Amazon", "Apple", "Baidu", "BBC", "BitBucket", "CDC", "CIA", "CNN", "DistroWatch", "Dropbox", "eBay", "Facebook", "FBI", "Flipboard", "FourSquare", "FRITZ!Box", "FRITZ!Repeater", "GitHub", "GliderTracker", "HolidayCheck", "HRworks", "Instagram", "IPFS", "Microsoft", "NASA", "NBC", "Netflix", "Notepad", "Outdoor Active", "PayPal", "Pinterest", "Pixabay", "Plex", "Slashdot", "Snap Store", "Starbucks", "Tesla", "TikTok", "Topo Map", "Twitter", "UFA", "Unsplash", "Walmart", "WhatsApp", "White House", "Windy", "Wikipedia", "Wired", "Wolfram Alpha", "World News", "Yahoo", or "YouTube".
 * when finished say: *Close tab* or: "Computer, close `name` browser" to close the Web browser.
 
 
 Computer, show `name` city
 --------------------------
-* launches the default Web browser with Google Maps at the given city.
-* replace `name` by: "Atlanta", "Barcelona", "Berlin", "Boston", "Cairo", "Cape Town", "Chicago", "Dallas", "Denver", "Dubai", "Dublin", "Frankfurt", "Hamburg", "Hong Kong", "Jerusalem", "Kansas", "Las Vegas", "Lissabon", "London", "Los Angeles", "Madrid", "Mexico", "Miami", "Montreal", "Moscow", "Munich", "New York", "Panama", "Paris", Rome", "San Francisco", "Seattle", "Singapore", "Sydney", "Tokyo", "Toronto", "Tunis", "Vienna", "Washington", "Zurich".
+* launches the default Web browser with Google Maps at the given city - replace `name` by: "Atlanta", "Barcelona", "Berlin", "Boston", "Cairo", "Cape Town", "Chicago", "Dallas", "Denver", "Dubai", "Dublin", "Frankfurt", "Hamburg", "Hong Kong", "Jerusalem", "Kansas", "Las Vegas", "Lissabon", "London", "Los Angeles", "Madrid", "Mexico", "Miami", "Montreal", "Moscow", "Munich", "New York", "Panama", "Paris", Rome", "San Francisco", "Seattle", "Singapore", "Sydney", "Tokyo", "Toronto", "Tunis", "Vienna", "Washington", "Zurich".
 * when finished see "Computer, close `name` browser" to close the Web browser.
 
 
 Computer, play radio `name`
 ---------------------------
-* launches the default Web browser and tunes into an internet radio station.
-* replace `name` by: "7", "Arabella", "Bob", "Club Mix", "Dance FM", "FFN", "Galaxy", "Gong", "Ibiza", "Jam FM", "Kiss Kiss", "Malibu", "N-JOY", "Paloma", "You FM".
+* launches the default Web browser and tunes into an internet radio station - replace `name` by: "7", "Arabella", "Bob", "Club Mix", "Dance FM", "FFN", "Galaxy", "Gong", "Ibiza", "Jam FM", "Kiss Kiss", "Malibu", "N-JOY", "Paloma", "You FM".
 * when finished say: *Close tab* or: "Computer, close `name` browser" to close the Web browser.
 
 
 Computer, play `name` sound
 ---------------------------
-* starts playback of the given audio sound.
-* replace `name` by: "bee", "beep", "cat", "cow", "dog", "donkey", "elephant", "elk", "frog", "goat", "gorilla", "horse", "lion", "parrot", "pig", "rattlesnake", "vulture", or "wolf".
+* starts playback of the given audio sound - replace `name` by: "bee", "beep", "cat", "cow", "dog", "donkey", "elephant", "elk", "frog", "goat", "gorilla", "horse", "lion", "parrot", "pig", "rattlesnake", "vulture", or "wolf".
 
 
 Computer, play `name` game
 --------------------------
-* launches the default Web browser and plays the given game.
-* replace `name` by: "2048", "Chess", "Cube", "Pacman", "Tetris", "TicTacToe", or "Tower".
+* launches the default Web browser and plays the given game - replace `name` by: "2048", "Chess", "Cube", "Pacman", "Tetris", "TicTacToe", or "Tower".
 * when finished say: *Close tab* or: "Computer, close `name` browser" to close the Web browser.
 
 
 Computer, show `name` manual
 ----------------------------
-* launches the default Web browser with the given manual.
-* replace `name` by: "Azure", "Bash", "Blender", "Chrome", "Edge", "Firefox", "Git", "PowerShell", "Serenade", "Vim", **"Voice" (this page)**, or "Windows".
+* launches the default Web browser with the given manual - replace `name` by: "Azure", "Bash", "Blender", "Chrome", "Edge", "Firefox", "Git", "PowerShell", "Serenade", "Vim", **"Voice" (this page)**, or "Windows".
 * when finished say: *Close tab* or: "Computer, close `name` browser" to close the Web browser.
 
 
 Computer, open `name` settings
 -------------------------------
-* launches Windows settings.
-* replace `name` by: "activation", "apps", "background", "backup", "bluetooth", "color", "date", "default apps", "developer", "display", "ethernet", "lockscreen", "maps", "printer", "proxy", "recovery", "speech", "start", "system", "taskbar", "themes", "time", "update", "USB", "VPN", or "Wifi". Use "system" as top level settings.
+* launches the Windows settings - replace `name` by: "activation", "apps", "background", "backup", "bluetooth", "color", "date", "default apps", "developer", "display", "ethernet", "lockscreen", "maps", "printer", "proxy", "recovery", "speech", "start", "system", "taskbar", "themes", "time", "update", "USB", "VPN", or "Wifi". Use "system" as top level settings.
 * when finished say: *Computer, close system settings* to stop the Windows settings.
 
 
 Computer, check `name`
 ----------------------
-* let the computer check something.
-* replace `name` by: "CPU", "date", "DNS", "drives", "Earth", "operating system", "ping", "swap space", "time", "time zone", "up-time", "VPN", or "weather".
+* let the computer check something - replace `name` by: "CPU", "date", "DNS", "drives", "Earth", "operating system", "ping", "swap space", "time", "time zone", "up-time", "VPN", or "weather".
 
 
 🔊 Audio
