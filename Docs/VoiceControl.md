@@ -30,16 +30,16 @@ More supported voice commands are:
 * when finished say: `Close tab` or: `Computer, close` [name] `browser` to close the Web browser.
 
 
-Computer, open `name` drive
-----------------------------
-* launches the File Explorer with the given drive - replace `name` by: "C:", "D:", "E:", "F:", or "M:".
-* when finished say: *Computer, close file explorer* to close the File Explorer.
+`Computer, open` [name] `drive`
+-------------------------------
+* launches the File Explorer with the given drive - replace [name] by: `C:`, `D:`, `E:`, `F:`, or `M:`.
+* when finished say: `Compute, close file explorer` to close the File Explorer.
 
 
-Computer, open `name` folder
---------------------------
-* launches the File Explorer with the given folder - replace `name` by: "Autostart", "Desktop", "Documents", "Downloads", "Dropbox", "Home", "Music", "OneDrive", "Pictures", "Recycle bin", "Repos", or "Videos".
-* when finished say: *Computer, close file explorer* to close the File Explorer.
+`Computer, open` [name] `folder`
+--------------------------------
+* launches the File Explorer with the given folder - replace [name] by: `autostart`, `desktop`, `documents`, `downloads`, `Dropbox`, `home`, `music`, `OneDrive`, `pictures`, `recycle bin`, `repos`, or `videos`.
+* when finished say: `Computer, close file explorer` to close the File Explorer.
 
 
 Computer, open `name` website
