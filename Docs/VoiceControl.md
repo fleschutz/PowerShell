@@ -18,11 +18,11 @@ Executing PowerShell Scripts by Voice
 More supported voice commands are:
 
 
-Computer, open [app]
---------------------
+`Computer, open` [app]
+----------------------
 * launches the given application.
-* replace [app] by: `3D-Viewer`, `Calculator`, `Git Extensions`, "Microsoft Paint", "Netflix", "Notepad", "Outlook", "Paint 3D", "Spotify", "Thunderbird", "Visual Studio", or "Windows Terminal".
-* when finished say: *Computer, close [app]* to close the application.
+* replace [app] by: `3D-Viewer`, `Calculator`, `Git Extensions`, `Microsoft Paint`, `Netflix`, `Notepad`, `Outloo`", `Paint 3D`, `Spotify`, `Thunderbird`, `Visual Studio`, or `Windows Terminal`.
+* when finished say: `Computer, close` [app] to close the application.
 
 
 Computer, open `name` browser
