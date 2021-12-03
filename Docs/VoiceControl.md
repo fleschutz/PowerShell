@@ -21,31 +21,31 @@ More supported voice commands are:
 `Computer, open` [app]
 ----------------------
 * launches the given application - replace [app] by: `3D-Viewer`, `Calculator`, `Git Extensions`, `Microsoft Paint`, `Netflix`, `Notepad`, `Outlook`, `Paint 3D`, `Spotify`, `Thunderbird`, `Visual Studio`, or `Windows Terminal`.
-* when finished say: `Computer, close` [app] to close the application.
+* when finished say: "Computer, close [app]" to close the application.
 
 
 `Computer, open` [name] `browser`
 ---------------------------------
 * launches the given Web browser or opens a new tab - replace [name] by: `Chrome`, `default`, `Edge`, or `Firefox`.
-* when finished say: `Close tab` or: `Computer, close` [name] `browser` to close the Web browser.
+* when finished say: "Close tab" or: "Computer, close [name] browser" to close the Web browser.
 
 
 `Computer, open` [name] `drive`
 -------------------------------
 * launches the File Explorer with the given drive - replace [name] by: `C:`, `D:`, `E:`, `F:`, or `M:`.
-* when finished say: `Computer, close file explorer` to close the File Explorer.
+* when finished say: "Computer, close file explorer" to close the File Explorer.
 
 
 `Computer, open` [name] `folder`
 --------------------------------
 * launches the File Explorer with the given folder - replace [name] by: `autostart`, `desktop`, `documents`, `downloads`, `Dropbox`, `home`, `music`, `OneDrive`, `pictures`, `recycle bin`, `repos`, or `videos`.
-* when finished say: `Computer, close file explorer` to close the File Explorer.
+* when finished say: "Computer, close file explorer" to close the File Explorer.
 
 
 `Computer, open` [name] `website`
 ---------------------------------
 * launches the default Web browser with the given website - replace [name] by: `Amazon`, `Apple`, `Baidu`, `BBC`, `BitBucket`, `CDC`, `CIA`, `CNN`, `DistroWatch`, `Dropbox`, `eBay`, `Facebook`, `FBI`, `Flipboard`, `FourSquare`, `FRITZ!Box`, `FRITZ!Repeater`, `GitHub`, `GliderTracker`, `HolidayCheck`, `HRworks`, `Instagram`, `IPFS`, `Microsoft`, `NASA`, `NBC`, `Netflix`, `Notepad`, `Outdoor Active`, `PayPal`, `Pinterest`, `Pixabay`, `Plex`, `Slashdot`, `Snap Store`, `Starbucks`, `Tesla`, `TikTok`, `Topo Map`, `Twitter`,  `UFA`, `Unsplash`, `Walmart`, `WhatsApp`, `White House`, `Windy`, `Wikipedia`, `Wired`, `Wolfram Alpha`, `World News`, `Yahoo`, or `YouTube`.
-* when finished say: `Close tab` or: `Computer, close` [name] `browser` to close the Web browser.
+* when finished say: "Close tab" or: "Computer, close [name] browser" to close the Web browser.
 
 
 Computer, show `name` city
