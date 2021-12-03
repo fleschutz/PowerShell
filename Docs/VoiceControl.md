@@ -1,5 +1,6 @@
 Executing PowerShell Scripts by Voice
 =====================================
+Voice recognition and response (VRR) is so much fun and so comfortable. Just try it for yourself!
 
 
 🔧 Installation
@@ -79,7 +80,7 @@ More supported voice commands are:
 
 `Computer, open` [name] `settings`
 ----------------------------------
-* launches the Windows settings - replace [name] by: `activation`, `apps`, `background`, `backup`, `bluetooth`, `color`, `date`, `default apps`, `developer`, `display`, `ethernet`, `lockscreen`, `maps`, `printer`, `proxy`, `recovery`, `speech`, `start`, `system` *(top level settings!)*, `taskbar, `themes`, `time`, `update`, `USB`, `VPN`, or `Wifi`.
+* launches the Windows settings - replace [name] by: `activation`, `apps`, `background`, `backup`, `bluetooth`, `color`, `date`, `default apps`, `developer`, `display`, `ethernet`, `lockscreen`, `maps`, `printer`, `proxy`, `recovery`, `speech`, `start`, `system` *(top level settings!)*, `taskbar`, `themes`, `time`, `update`, `USB`, `VPN`, or `Wifi`.
 * when finished say: "Computer, close system settings" to close the Windows settings.
 
 
