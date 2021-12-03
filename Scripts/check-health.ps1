@@ -20,22 +20,12 @@
 & "$PSScriptRoot/check-uptime.ps1"
 & "$PSScriptRoot/check-operating-system.ps1"
 & "$PSScriptRoot/check-swap-space.ps1"
-if ($lastExitCode -ne "0") { $Healthy = 0 }
-
-if ($IsLinux) {
-	& "$PSScriptRoot/check-drive-space.ps1" /
-	if ($lastExitCode -ne "0") { $Healthy = 0 }
-} else {
-	& "$PSScriptRoot/check-drive-space.ps1" C
-	if ($lastExitCode -ne "0") { $Healthy = 0 }
-}
-
+& "$PSScriptRoot/check-drives.ps1"
 & "$PSScriptRoot/check-cpu.ps1"
 & "$PSScriptRoot/check-dns.ps1"
 & "$PSScriptRoot/check-ping.ps1"
 & "$PSScriptRoot/check-vpn.ps1"
 if ($IsLinux) {
 	& "$PSScriptRoot/check-smart-devices.ps1" 
-	if ($lastExitCode -ne "0") { $Healthy = 0 }
 }
 exit 0 # success
