@@ -20,7 +20,7 @@ More supported voice commands are:
 
 `Computer, open` [app]
 ----------------------
-* launches the given application - replace [app] by: `3D-Viewer`, `Calculator`, `Git Extensions`, `Microsoft Paint`, `Microsoft Store`, `Netflix`, `Notepad`, `Outlook`, `Paint 3D`, `Spotify`, `Thunderbird`, `Visual Studio`, or `Windows Terminal`.
+* launches the given application - replace [app] by: `3D-Viewer`, `Calculator`, `Git Extensions`, `Microsoft Paint`, `Microsoft Store`, `Netflix`, `Notepad`, `OBS Studio`, `Outlook`, `Paint 3D`, `Spotify`, `Thunderbird`, `Visual Studio`, or `Windows Terminal`.
 * when finished say: "Computer, close [app]" to close the application.
 
 `Computer, check` [name]
@@ -82,7 +82,7 @@ More supported voice commands are:
 
 `Computer, show` [name] `manual`
 --------------------------------
-* launches the default Web browser with the given manual - replace [name] by: `Azure`, `Bash`, `Blender`, `Chrome`, `Edge`, `Firefox`, `Git`, `PowerShell`, `Serenade`, `Vim`, `Voice` *(yes, this page!)*, or `Windows`.
+* launches the default Web browser with the given manual - replace [name] by: `Azure`, `Bash`, `Blender`, `Chrome`, `Edge`, `Firefox`, `Git`, `OBS Studio`, `PowerShell`, `Serenade`, `Vim`, `Voice` *(yes, this page!)*, or `Windows`.
 * when finished say: "Close tab" or: "Computer, close [name] browser" to close the Web browser.
 
 
