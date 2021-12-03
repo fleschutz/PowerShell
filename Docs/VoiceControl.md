@@ -33,7 +33,7 @@ More supported voice commands are:
 `Computer, open` [name] `drive`
 -------------------------------
 * launches the File Explorer with the given drive - replace [name] by: `C:`, `D:`, `E:`, `F:`, or `M:`.
-* when finished say: `Compute, close file explorer` to close the File Explorer.
+* when finished say: `Computer, close file explorer` to close the File Explorer.
 
 
 `Computer, open` [name] `folder`
@@ -42,10 +42,10 @@ More supported voice commands are:
 * when finished say: `Computer, close file explorer` to close the File Explorer.
 
 
-Computer, open `name` website
------------------------------
-* launches the default Web browser with the given website - replace `name` by: "Amazon", "Apple", "Baidu", "BBC", "BitBucket", "CDC", "CIA", "CNN", "DistroWatch", "Dropbox", "eBay", "Facebook", "FBI", "Flipboard", "FourSquare", "FRITZ!Box", "FRITZ!Repeater", "GitHub", "GliderTracker", "HolidayCheck", "HRworks", "Instagram", "IPFS", "Microsoft", "NASA", "NBC", "Netflix", "Notepad", "Outdoor Active", "PayPal", "Pinterest", "Pixabay", "Plex", "Slashdot", "Snap Store", "Starbucks", "Tesla", "TikTok", "Topo Map", "Twitter", "UFA", "Unsplash", "Walmart", "WhatsApp", "White House", "Windy", "Wikipedia", "Wired", "Wolfram Alpha", "World News", "Yahoo", or "YouTube".
-* when finished say: *Close tab* or: "Computer, close `name` browser" to close the Web browser.
+`Computer, open` [name] `website`
+---------------------------------
+* launches the default Web browser with the given website - replace [name] by: `Amazon`, `Apple`, `Baidu`, `BBC`, `BitBucket`, `CDC`, `CIA`, `CNN`, `DistroWatch`, `Dropbox`, `eBay`, `Facebook`, `FBI`, `Flipboard`, `FourSquare`, `FRITZ!Box`, `FRITZ!Repeater`, `GitHub`, `GliderTracker`, `HolidayCheck`, `HRworks`, `Instagram`, `IPFS`, `Microsoft`, `NASA`, `NBC`, `Netflix`, `Notepad`, `Outdoor Active`, `PayPal`, `Pinterest`, `Pixabay`, `Plex`, `Slashdot`, `Snap Store`, `Starbucks`, `Tesla`, `TikTok`, `Topo Map`, `Twitter`,  `UFA`, `Unsplash`, `Walmart`, `WhatsApp`, `White House`, `Windy`, `Wikipedia`, `Wired`, `Wolfram Alpha`, `World News`, `Yahoo`, or `YouTube`.
+* when finished say: `Close tab` or: `Computer, close` [name] `browser` to close the Web browser.
 
 
 Computer, show `name` city
