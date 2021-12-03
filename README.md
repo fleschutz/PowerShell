@@ -38,7 +38,7 @@ Mega Collection of PowerShell Scripts
 | [turn-volume-up.ps1](Scripts/turn-volume-up.ps1)     | Turns the audio volume up (+10% by default)                        | [Help](Docs/turn-volume-up.md)    |
 | [turn-volume-down.ps1](Scripts/turn-volume-down.ps1) | Turns the audio volume down (-10% by default)                      | [Help](Docs/turn-volume-down.md)  |
 | [unmute-audio.ps1](Scripts/unmute-audio.ps1)         | Unmutes the audio device                                           | [Help](Docs/unmute-audio.md)      |
-| [voice-control.ps1](Scripts/voice-control.ps1)       | Executes the PowerShell scripts by voice                           | [Help](Docs/voice-control.md)     |
+
 
 ⚙️ Scripts to Manage Computers
 -------------------------------
