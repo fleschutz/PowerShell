@@ -20,16 +20,14 @@ More supported voice commands are:
 
 `Computer, open` [app]
 ----------------------
-* launches the given application.
-* replace [app] by: `3D-Viewer`, `Calculator`, `Git Extensions`, `Microsoft Paint`, `Netflix`, `Notepad`, `Outloo`", `Paint 3D`, `Spotify`, `Thunderbird`, `Visual Studio`, or `Windows Terminal`.
+* launches the given application, replace [app] by: `3D-Viewer`, `Calculator`, `Git Extensions`, `Microsoft Paint`, `Netflix`, `Notepad`, `Outlook`, `Paint 3D`, `Spotify`, `Thunderbird`, `Visual Studio`, or `Windows Terminal`.
 * when finished say: `Computer, close` [app] to close the application.
 
 
-Computer, open `name` browser
---------------------------------
-* launches the given Web browser or opens a new tab.
-* replace `name` by: "Chrome", "default", "Edge", or "Firefox".
-* when finished say: *Close tab* or: *Computer, close `name` browser* to close the Web browser.
+`Computer, open` [name] `browser`
+---------------------------------
+* launches the given Web browser or opens a new tab. Replace [name] by: `Chrome`, `default`, `Edge`, or `Firefox`.
+* when finished say: `Close tab` or: `Computer, close` [name] `browser` to close the Web browser.
 
 
 Computer, open `name` drive
