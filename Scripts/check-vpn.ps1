@@ -1,8 +1,8 @@
 ﻿<#
 .SYNOPSIS
-	Checks the VPN connection(s)
+	Checks the VPN connections
 .DESCRIPTION
-	This script checks the VPN connection(s).
+	This script checks all available VPN connections.
 .EXAMPLE
 	PS> ./check-vpn
 .LINK
@@ -15,7 +15,8 @@ try {
 	$Connections = (Get-VPNConnection)
 	$Reply = ""
 	foreach($Connection in $Connections) {
-		$Reply += "VPN connection $($Connection.Name) is $($Connection.ConnectionStatus), "
+		if ("$Reply" -eq "") { $Reply += "VPN connection " } else { $Reply += ", " }
+		$Reply += "$($Connection.Name) is $($Connection.ConnectionStatus)"
 	}
 	if ("$Reply" -eq "") { $Reply = "No VPN connection available" }
 
