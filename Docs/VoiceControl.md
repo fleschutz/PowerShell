@@ -48,10 +48,10 @@ More supported voice commands are:
 * when finished say: "Close tab" or: "Computer, close [name] browser" to close the Web browser.
 
 
-Computer, show `name` city
---------------------------
-* launches the default Web browser with Google Maps at the given city - replace `name` by: "Atlanta", "Barcelona", "Berlin", "Boston", "Cairo", "Cape Town", "Chicago", "Dallas", "Denver", "Dubai", "Dublin", "Frankfurt", "Hamburg", "Hong Kong", "Jerusalem", "Kansas", "Las Vegas", "Lissabon", "London", "Los Angeles", "Madrid", "Mexico", "Miami", "Montreal", "Moscow", "Munich", "New York", "Panama", "Paris", Rome", "San Francisco", "Seattle", "Singapore", "Sydney", "Tokyo", "Toronto", "Tunis", "Vienna", "Washington", "Zurich".
-* when finished see "Computer, close `name` browser" to close the Web browser.
+`Computer, show` [name] `city`
+------------------------------
+* launches the default Web browser with Google Maps at the given city - replace [name] by: `Atlanta`, `Barcelona`, `Berlin`, `Boston`, `Cairo`, `Cape Town`, `Chicago`, `Dallas`, `Denver`, `Dubai`, `Dublin`, `Frankfurt`, `Hamburg`, `Hong Kong`, `Jerusalem`, `Kansas`, `Las Vegas`, `Lissabon`, `London`, `Los Angeles`, `Madrid`, `Mexico`, `Miami`, `Montreal`, `Moscow`, `Munich`, `New York`, `Panama`, `Paris`, `Rome`, `San Francisco`, `Seattle`, `Singapore`, `Sydney`, `Tokyo`, `Toronto`, `Tunis`, `Vienna`, `Washington`, `Zurich`.
+* when finished say: "Close tab" or: "Computer, close [name] browser" to close the Web browser.
 
 
 Computer, play radio `name`
