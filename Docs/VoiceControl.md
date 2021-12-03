@@ -50,31 +50,31 @@ More supported voice commands are:
 
 `Computer, show` [name] `city`
 ------------------------------
-* launches the default Web browser with Google Maps at the given city - replace [name] by: `Atlanta`, `Barcelona`, `Berlin`, `Boston`, `Cairo`, `Cape Town`, `Chicago`, `Dallas`, `Denver`, `Dubai`, `Dublin`, `Frankfurt`, `Hamburg`, `Hong Kong`, `Jerusalem`, `Kansas`, `Las Vegas`, `Lissabon`, `London`, `Los Angeles`, `Madrid`, `Mexico`, `Miami`, `Montreal`, `Moscow`, `Munich`, `New York`, `Panama`, `Paris`, `Rome`, `San Francisco`, `Seattle`, `Singapore`, `Sydney`, `Tokyo`, `Toronto`, `Tunis`, `Vienna`, `Washington`, `Zurich`.
+* launches the default Web browser with Google Maps at the given city - replace [name] by: `Atlanta`, `Barcelona`, `Berlin`, `Boston`, `Cairo`, `Cape Town`, `Chicago`, `Dallas`, `Denver`, `Dubai`, `Dublin`, `Frankfurt`, `Hamburg`, `Hong Kong`, `Jerusalem`, `Kansas`, `Las Vegas`, `Lissabon`, `London`, `Los Angeles`, `Madrid`, `Mexico`, `Miami`, `Montreal`, `Moscow`, `Munich`, `New York`, `Panama`, `Paris`, `Rome`, `San Francisco`, `Seattle`, `Singapore`, `Sydney`, `Tokyo`, `Toronto`, `Tunis`, `Vienna`, `Washington`, or `Zurich`.
 * when finished say: "Close tab" or: "Computer, close [name] browser" to close the Web browser.
 
 
 `Computer, play radio` [name]
 -----------------------------
-* launches the default Web browser and tunes into an internet radio station - replace [name] by: `7`, `Arabella`, `Bob`, `Club Mix`, `Dance FM`, `FFN`, `Galaxy`, `Gong`, `Ibiza`, `Jam FM`, `Kiss Kiss`, `Malibu`, `N-JOY`, `Paloma`, `You FM`.
+* launches the default Web browser and tunes into an internet radio station - replace [name] by: `7`, `Arabella`, `Bob`, `Club Mix`, `Dance FM`, `FFN`, `Galaxy`, `Gong`, `Ibiza`, `Jam FM`, `Kiss Kiss`, `Malibu`, `N-JOY`, `Paloma`, or `You FM`.
 * when finished say: "Close tab" or: "Computer, close [name] browser" to close the Web browser.
 
 
-Computer, play `name` sound
----------------------------
-* starts playback of the given audio sound - replace `name` by: "bee", "beep", "cat", "cow", "dog", "donkey", "elephant", "elk", "frog", "goat", "gorilla", "horse", "lion", "parrot", "pig", "rattlesnake", "vulture", or "wolf".
+`Computer, play` [name] `sound`
+-------------------------------
+* starts to play the given audio sound - replace [name] by: `bee`, `beep`, `cat`, `cow`, `dog`, `donkey`, `elephant`, `elk`, `frog`, `goat`, `gorilla`, `horse`, `lion`, `parrot`, `pig`, `rattlesnake`, `vulture`, or `wolf`.
 
 
-Computer, play `name` game
---------------------------
-* launches the default Web browser and plays the given game - replace `name` by: "2048", "Chess", "Cube", "Pacman", "Tetris", "TicTacToe", or "Tower".
-* when finished say: *Close tab* or: "Computer, close `name` browser" to close the Web browser.
+`Computer, play` [name] `game`
+------------------------------
+* launches the default Web browser and plays the given game - replace [name] by: `2048`, `Chess`, `Cube`, `Pacman`, `Tetris`, `TicTacToe`, or `Tower`.
+* when finished say: "Close tab" or: "Computer, close [name] browser" to close the Web browser.
 
 
-Computer, show `name` manual
-----------------------------
-* launches the default Web browser with the given manual - replace `name` by: "Azure", "Bash", "Blender", "Chrome", "Edge", "Firefox", "Git", "PowerShell", "Serenade", "Vim", **"Voice" (this page)**, or "Windows".
-* when finished say: *Close tab* or: "Computer, close `name` browser" to close the Web browser.
+`Computer, show` [name] `manual`
+--------------------------------
+* launches the default Web browser with the given manual - replace [name] by: `Azure`, `Bash`, `Blender`, `Chrome`, `Edge`, `Firefox`, `Git`, `PowerShell`, `Serenade`, `Vim`, **`Voice` (this page)**, or `Windows`.
+* when finished say: "Close tab" or: "Computer, close [name] browser" to close the Web browser.
 
 
 Computer, open `name` settings
