@@ -73,44 +73,44 @@ More supported voice commands are:
 
 `Computer, show` [name] `manual`
 --------------------------------
-* launches the default Web browser with the given manual - replace [name] by: `Azure`, `Bash`, `Blender`, `Chrome`, `Edge`, `Firefox`, `Git`, `PowerShell`, `Serenade`, `Vim`, `Voice` **(this page!!)**, or `Windows`.
+* launches the default Web browser with the given manual - replace [name] by: `Azure`, `Bash`, `Blender`, `Chrome`, `Edge`, `Firefox`, `Git`, `PowerShell`, `Serenade`, `Vim`, `Voice` *(this page!)*, or `Windows`.
 * when finished say: "Close tab" or: "Computer, close [name] browser" to close the Web browser.
 
 
 `Computer, open` [name] `settings`
 ----------------------------------
-* launches the Windows settings - replace [name] by: `activation`, `apps`, `background`, `backup`, `bluetooth`, `color`, `date`, `default apps`, `developer`, `display`, `ethernet`, `lockscreen`, `maps`, `printer`, `proxy`, `recovery`, `speech`, `start`, `system` **(top level settings!)**, `taskbar, `themes`, `time`, `update`, `USB`, `VPN`, or `Wifi`.
-* when finished say: "Computer, close system settings" to stop the Windows settings.
+* launches the Windows settings - replace [name] by: `activation`, `apps`, `background`, `backup`, `bluetooth`, `color`, `date`, `default apps`, `developer`, `display`, `ethernet`, `lockscreen`, `maps`, `printer`, `proxy`, `recovery`, `speech`, `start`, `system` *(top level settings!)*, `taskbar, `themes`, `time`, `update`, `USB`, `VPN`, or `Wifi`.
+* when finished say: "Computer, close system settings" to close the Windows settings.
 
 
-Computer, check `name`
+`Computer, check` [name]
 ----------------------
-* let the computer check something - replace `name` by: "CPU", "date", "DNS", "drives", "Earth", "operating system", "ping", "swap space", "time", "time zone", "up-time", "VPN", or "weather".
+* let the computer check something - replace [name] by: `CPU`, `date`, `DNS`, `drives`, `Earth` (fun), `operating system`, `ping`, `swap space`, `time`, `time zone`, `up-time`, `VPN`, or `weather`.
 
 
-🔊 Audio
--------
-* *Computer, mute audio.*
-* *Computer, unmute audio.*
-* *Computer, turn volume up.*
-* *Computer, turn volume down.*
+🔊 Audio Voice Commands
+------------------------
+* `Computer, mute audio`
+* `Computer, unmute audio`
+* `Computer, turn volume up`
+* `Computer, turn volume down`
 
 
-💭 Misc
--------
-* *Computer, locate my phone.*
-* *Computer, tell joke.*
-* *Computer, tell quote.*
+💭 Misc Voice Commands
+----------------------
+* `Computer, locate my phone`
+* `Computer, tell joke`
+* `Computer, tell quote`
 
 
-💬 Nice Conversation
--------------------
-* *Computer, good morning.*
-* *Computer, good evening.*
-* *Computer, good night.*
-* *Computer, how are you?*
-* *Computer, thank you.*
-* *Computer, I'll be back.*
-* *Computer, good bye.*
-* *Computer, bye-bye.*
-* *Computer, see you.*
+💬 Conversation Commands
+-------------------------
+* `Computer, good morning`
+* `Computer, good evening`
+* `Computer, good night`
+* `Computer, how are you?`
+* `Computer, thank you`
+* `Computer, I'll be back`
+* `Computer, good bye`
+* `Computer, bye-bye`
+* `Computer, see you`
