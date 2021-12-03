@@ -7,7 +7,7 @@
 	Specifies the minimum level in Gigabyte
 .EXAMPLE
 	PS> ./check-drives
-	✔️ Drive C has 172G left (233G total)
+	✔️ Drive C has 172GB left (233GB total)
 .LINK
 	https://github.com/fleschutz/PowerShell
 .NOTES
@@ -27,7 +27,7 @@ try {
 		if ($Free -lt $MinLevel) {
 			$Reply = "Drive $($Drive.Name) has only $Free GB left to use! ($Used of $Total GB used, minimum is $MinLevel GB)"
 		} else {
-			$Reply = "Drive $($Drive.Name) has $($Free)G left ($($Total)G total)"
+			$Reply = "Drive $($Drive.Name) has $($Free)GB left ($($Total)GB total)"
 		}
 		"✔️ $Reply"
 		& "$PSScriptRoot/speak-english.ps1" "$Reply"
