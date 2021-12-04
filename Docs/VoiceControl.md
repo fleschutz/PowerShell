@@ -20,12 +20,16 @@ More supported voice commands are:
 
 `Computer, open` [app]
 ----------------------
-* launches the given application - replace [app] by: `3D-Viewer`, `Calculator`, `Git Extensions`, `Microsoft Paint`, `Microsoft Store`, `Netflix`, `Notepad`, `OBS Studio`, `Outlook`, `Paint 3D`, `Spotify`, `Thunderbird`, `Visual Studio`, or `Windows Terminal`.
+* launches the given application, just replace [app] by: `3D-Viewer`, `Calculator`, `Git Extensions`, `Microsoft Paint`, `Microsoft Store`, `Netflix`, `Notepad`, `OBS Studio`, `Outlook`, `Paint 3D`, `Spotify`, `Thunderbird`, `Visual Studio`, or `Windows Terminal`.
 * when finished say: "Computer, close [app]" to close the application.
 
 `Computer, check` [name]
 ------------------------
+<<<<<<< HEAD
 * lets the computer check something - replace [name] by: `CPU`, `date`, `DNS`, `drives`, `Earth` (fun), `my balance` (fun), `operating system`, `ping`, `swap space`, `time`, `time zone`, `up-time`, `VPN`, or `weather`.
+=======
+Lets the computer check something, replace [name] by: `CPU`, `date`, `DNS`, `drives`, `Earth` (fun), `operating system`, `ping`, `swap space`, `time`, `time zone`, `up-time`, `VPN`, or `weather`.
+>>>>>>> 3b329766df75ba89d9c66c5a9a915bf7589e0193
 
 `Computer, open` [name] `browser`
 ---------------------------------
