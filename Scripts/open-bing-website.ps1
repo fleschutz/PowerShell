@@ -1,10 +1,10 @@
 ﻿<#
 .SYNOPSIS
-	Opens the Microsoft Bing website
+	Opens the Bing website
 .DESCRIPTION
 	This script launches the Web browser with the Microsoft Bing website.
 .EXAMPLE
-	PS> ./open-microsoft-bing
+	PS> ./open-bing-website
 .NOTES
 	Author: Markus Fleschutz · License: CC0
 .LINK
