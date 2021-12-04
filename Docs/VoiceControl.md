@@ -83,7 +83,7 @@ Lets the computer check something, replace [name] by: `CPU`, `date`, `DNS`, `dri
 
 `Computer, show` [name] `manual`
 --------------------------------
-* launches the default Web browser with the given manual - replace [name] by: `Azure`, `Bash`, `Blender`, `Chrome`, `Edge`, `Firefox`, `Git`, `OBS Studio`, `PowerShell`, `Serenade`, `Vim`, `Voice` *(yes, this page!)*, or `Windows`.
+* launches the default Web browser with the given online manual - replace [name] by: `Apple`, `Audacity`, `Azure`, `Bash`, `Blender`, `Chrome`, `Edge`, `Firefox`, `Git`, `OBS Studio`, `PowerShell`, `Serenade`, `SystemRescue`, `Toyota`, `Vim`, `Voice` *(yes, this page!)*, `Volkswagen`, or `Windows`.
 * when finished say: "Close tab" or: "Computer, close [name] browser" to close the Web browser.
 
 
