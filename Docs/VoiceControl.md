@@ -25,11 +25,8 @@ More supported voice commands are:
 
 `Computer, check` [name]
 ------------------------
-<<<<<<< HEAD
-* lets the computer check something - replace [name] by: `CPU`, `date`, `DNS`, `drives`, `Earth` (fun), `my balance` (fun), `operating system`, `ping`, `swap space`, `time`, `time zone`, `up-time`, `VPN`, or `weather`.
-=======
 Lets the computer check something, replace [name] by: `CPU`, `date`, `DNS`, `drives`, `Earth` (fun), `operating system`, `ping`, `swap space`, `time`, `time zone`, `up-time`, `VPN`, or `weather`.
->>>>>>> 3b329766df75ba89d9c66c5a9a915bf7589e0193
+
 
 `Computer, open` [name] `browser`
 ---------------------------------
