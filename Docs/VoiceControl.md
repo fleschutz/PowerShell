@@ -25,7 +25,7 @@ More supported voice commands are:
 
 `Computer, check` [name]
 ------------------------
-* lets the computer check something - replace [name] by: `CPU`, `date`, `DNS`, `drives`, `Earth` (fun), `operating system`, `ping`, `swap space`, `time`, `time zone`, `up-time`, `VPN`, or `weather`.
+* lets the computer check something - replace [name] by: `CPU`, `date`, `DNS`, `drives`, `Earth` (fun), `my balance` (fun), `operating system`, `ping`, `swap space`, `time`, `time zone`, `up-time`, `VPN`, or `weather`.
 
 `Computer, open` [name] `browser`
 ---------------------------------
@@ -103,6 +103,7 @@ More supported voice commands are:
 
 💬 Conversation Commands
 -------------------------
+* `Computer, Hi`
 * `Computer, good morning`
 * `Computer, good evening`
 * `Computer, good night`
