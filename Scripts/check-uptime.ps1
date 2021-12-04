@@ -24,21 +24,23 @@ try {
 	$Hours = $Uptime.Hours
 	$Minutes = $Uptime.Minutes 
 
+	$Reply = "I'm up for "
 	if ($Days -eq "1") {
-		$Reply = "Up for 1 day, "
-	} else {
-		$Reply = "Up for $Days days, "
+		$Reply += "1 day, "
+	} elseif ($Days -ne "0") {
+		$Reply += "$Days days, "
 	}
 	if ($Hours -eq "1") {
 		$Reply += "1 hour "
-	} else {
+	} elseif ($Hours -ne "0") {
 		$Reply += "$Hours hours "
 	}
 	if ($Minutes -eq "1") {
-		$Reply += "and 1 minute."
-	} else {
-		$Reply += "and $Minutes minutes."
+		$Reply += "and 1 minute"
+	} elseif ($Minutes -ne "0") {
+		$Reply += "and $Minutes minutes"
 	}
+	$Reply += "."
 	"✔️ $Reply"
 	& "$PSScriptRoot/speak-english.ps1" "$Reply"
 	exit 0 # success
