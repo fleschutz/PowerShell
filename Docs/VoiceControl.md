@@ -60,7 +60,7 @@ Lets the computer check something, replace [name] by: `CPU`, `date`, `DNS`, `dri
 
 `Computer, play radio` [name]
 -----------------------------
-* launches the default Web browser and tunes into an internet radio station - replace [name] by: `7`, `Arabella`, `Bob`, `Club Mix`, `Dance FM`, `FFN`, `Galaxy`, `Gong`, `Ibiza`, `Jam FM`, `Kiss Kiss`, `Malibu`, `N-JOY`, `Paloma`, or `You FM`.
+* launches the default Web browser and tunes into an internet radio station - replace [name] by: `7`, `AFN Stuttgart`, `Arabella`, `Bob`, `Club Mix`, `Dance FM`, `FFN`, `Galaxy`, `Gong`, `Ibiza`, `Jam FM`, `Kiss Kiss`, `Malibu`, `N-JOY`, `Paloma`, or `You FM`.
 * when finished say: "Close tab" or: "Computer, close [name] browser" to close the Web browser.
 
 

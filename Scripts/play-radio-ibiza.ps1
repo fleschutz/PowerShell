@@ -11,5 +11,5 @@
 	https://github.com/fleschutz/PowerShell
 #>
 
-& "$PSScriptRoot/open-default-browser.ps1" "https://tunein.com/radio/Ibiza-Live-Radio-s203278/"
+& "$PSScriptRoot/open-default-browser.ps1" "http://streema.com/radios/play/Ibiza_Global_Radio"
 exit 0 # success
