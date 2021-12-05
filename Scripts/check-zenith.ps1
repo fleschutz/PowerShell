@@ -1,10 +1,10 @@
 ﻿<#
 .SYNOPSIS
-	Checks the sun 
+	Checks the time of zenith 
 .DESCRIPTION
-	This script determines Sun details and answers by text-to-speech (TTS).
+	This script queries the time of zenith and answers by text-to-speech (TTS).
 .EXAMPLE
-	PS> ./check-sun
+	PS> ./check-zenith
 .NOTES
 	Author: Markus Fleschutz · License: CC0
 .LINK
@@ -12,7 +12,7 @@
 #>
 
 try {
-	$Reply = (Invoke-WebRequest http://wttr.in/?format="Dawn is at %D, sunrise at %S, zenith at %z, sunset at %s, dusk at %d" -UserAgent "curl" -useBasicParsing).Content
+	$Reply = (Invoke-WebRequest http://wttr.in/?format="Zenith is at %z." -UserAgent "curl" -useBasicParsing).Content
 	"✔️ $Reply"
 	& "$PSScriptRoot/speak-english.ps1" "$Reply"
 	exit 0 # success

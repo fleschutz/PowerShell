@@ -1,10 +1,10 @@
 ﻿<#
 .SYNOPSIS
-	Checks the moon
+	Checks the moon phase
 .DESCRIPTION
-	This script determines moon details and answers by text-to-speech (TTS).
+	This script determines the moon phase and answers by text-to-speech (TTS).
 .EXAMPLE
-	PS> ./check-moon
+	PS> ./check-moon-phase
 .NOTES
 	Author: Markus Fleschutz · License: CC0
 .LINK
