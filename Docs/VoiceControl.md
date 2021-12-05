@@ -23,9 +23,10 @@ More supported voice commands are:
 * launches the given application, just replace [app] by: `3D-Viewer`, `Calculator`, `Git Extensions`, `Microsoft Paint`, `Microsoft Store`, `Netflix`, `Notepad`, `OBS Studio`, `Outlook`, `Paint 3D`, `Spotify`, `Thunderbird`, `Visual Studio`, or `Windows Terminal`.
 * when finished say: "Computer, close [app]" to close the application.
 
+
 `Computer, check` [name]
 ------------------------
-Lets the computer check something, replace [name] by: `Bitcoin`, `Christmas`, `CPU`, `date`, `DNS`, `dawn`, `drives`, `dusk`, `Earth` (fun), `headlines`, `ISS`, `moon phase`, `New Year`, `operating system`, `ping`, `sunrise`, `sunset`, `swap space`, `time`, `time zone`, `up-time`, `VPN`, `weather`, or `zenith`.
+Lets the computer check something, replace [name] by: `Bitcoin`, `Christmas`, `CPU`, `date`, `dawn`, `DNS`, `Dogecoin`, `drives`, `dusk`, `Earth` (fun), `Ethereum`, `headlines`, `ISS`, `moon phase`, `New Year`, `operating system`, `ping`, `sunrise`, `sunset`, `swap space`, `time`, `time zone`, `up-time`, `VPN`, `weather`, or `zenith`.
 
 
 `Computer, open` [name] `browser`
