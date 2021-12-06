@@ -90,8 +90,8 @@ Lets the computer check something, replace [name] by: `Bitcoin`, `Christmas`, `C
 
 🔊 Audio Voice Commands
 ------------------------
-* `Computer, mute audio`
-* `Computer, unmute audio`
+* `Computer, turn volume off`
+* `Computer, turn volume on`
 * `Computer, turn volume up`
 * `Computer, turn volume down`
 

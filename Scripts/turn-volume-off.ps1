@@ -1,10 +1,10 @@
 ﻿<#
 .SYNOPSIS
-	Mutes the audio output
+	Turns the volume off
 .DESCRIPTION
 	This script mutes the default audio device immediately.
 .EXAMPLE
-	PS> ./mute-audio
+	PS> ./turn-volume-off
 .NOTES
 	Author: Markus Fleschutz · License: CC0
 .LINK
@@ -14,7 +14,7 @@
 try {
 	$obj = new-object -com wscript.shell
 	$obj.SendKeys([char]173)
-	"🔇 audio is muted"
+	& "$PSScriptRoot/give-reply.ps1" "Audio is off."
 	exit 0 # success
 } catch {
 	"⚠️ Error: $($Error[0]) ($($MyInvocation.MyCommand.Name):$($_.InvocationInfo.ScriptLineNumber))"
