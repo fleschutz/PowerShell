@@ -17,7 +17,7 @@ param([string]$text = "")
 
 try {
 	# print reply on the console:
-	"→ $text"
+	" ← $text"
 
 	# speak by text-to-speech (TTS):
 	$TTSVoice = New-Object -ComObject SAPI.SPVoice
