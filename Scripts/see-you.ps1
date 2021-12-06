@@ -13,6 +13,5 @@
 
 $Reply = "Good bye.", "See you.", "Bye bye." | Get-Random
 
-"$Reply"
-& "$PSScriptRoot/speak-english.ps1" "$Reply"
+& "$PSScriptRoot/give-reply.ps1" "$Reply"
 exit 0 # success

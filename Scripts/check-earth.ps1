@@ -11,10 +11,5 @@
 	https://github.com/fleschutz/PowerShell
 #>
 
-try {
-	& "$PSScriptRoot/speak-english.ps1" "Earth still spins with 1040mph."
-	exit 0 # success
-} catch {
-	"⚠️ Error: $($Error[0]) ($($MyInvocation.MyCommand.Name):$($_.InvocationInfo.ScriptLineNumber))"
-	exit 1
-}
+& "$PSScriptRoot/give-reply.ps1" "Earth still spins with 1040mph."
+exit 0 # success

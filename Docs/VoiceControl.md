@@ -101,6 +101,7 @@ Lets the computer check something, replace [name] by: `Bitcoin`, `Christmas`, `C
 * `Computer, locate my phone`
 * `Computer, tell joke`
 * `Computer, tell quote`
+* `Computer, repeat last reply`
 
 
 💬 Welcome & Farewell

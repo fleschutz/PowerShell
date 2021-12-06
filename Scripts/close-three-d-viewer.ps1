@@ -13,7 +13,7 @@
 
 TaskKill /im 3DViewer.exe /f
 if ($lastExitCode -ne "0") {
-	& "$PSScriptRoot/speak-english.ps1" "Sorry, 3D Viewer isn't running."
+	& "$PSScriptRoot/give-reply.ps1" "Sorry, 3D Viewer isn't running."
 	exit 1
 }
 exit 0 # success

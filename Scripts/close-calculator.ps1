@@ -13,7 +13,7 @@
 
 TaskKill /im Calculator.exe /f /t
 if ($lastExitCode -ne "0") {
-	& "$PSScriptRoot/speak-english.ps1" "Sorry, calculator isn't running."
+	& "$PSScriptRoot/give-reply.ps1" "Sorry, calculator isn't running."
 	exit 1
 }
 exit 0 # success

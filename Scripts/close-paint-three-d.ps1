@@ -13,7 +13,7 @@
 
 TaskKill /im PaintStudio.View.exe /f
 if ($lastExitCode -ne "0") {
-	& "$PSScriptRoot/speak-english.ps1" "Sorry, Paint 3D isn't running."
+	& "$PSScriptRoot/give-reply.ps1" "Sorry, Paint 3D isn't running."
 	exit 1
 }
 exit 0 # success

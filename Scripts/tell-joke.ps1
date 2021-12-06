@@ -16,10 +16,9 @@ try {
 
 	$Generator = New-Object System.Random
 	$Index = [int]$Generator.next(0, $Table.Count - 1)
-	$Answer = $Table[$Index].Joke
+	$Reply = $Table[$Index].Joke
 
-	& "$PSScriptRoot/speak-english.ps1" "$Answer"
-	write-output "$Answer"
+	& "$PSScriptRoot/give-reply.ps1" "$Reply"
 	exit 0 # success
 } catch {
 	"⚠️ Error: $($Error[0]) ($($MyInvocation.MyCommand.Name):$($_.InvocationInfo.ScriptLineNumber))"

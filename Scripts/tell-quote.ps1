@@ -18,10 +18,9 @@ try {
 	$Index = [int]$Generator.next(0, $Table.Count - 1)
 	$Quote = $Table[$Index].Quote
 	$Author = $Table[$Index].Author
-	$Answer = "$Quote (by $Author)"
+	$Reply = "$Quote (by $Author)"
 
-	& "$PSScriptRoot/speak-english.ps1" "$Answer"
-	write-output "$Answer"
+	& "$PSScriptRoot/give-reply.ps1" "$Reply"
 	exit 0 # success
 } catch {
 	"⚠️ Error: $($Error[0]) ($($MyInvocation.MyCommand.Name):$($_.InvocationInfo.ScriptLineNumber))"

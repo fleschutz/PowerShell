@@ -25,8 +25,7 @@ try {
 		if ($Line -like "HEAD*") { & "$PSScriptRoot/write-big.ps1" "$($Line.substring(5))"; continue }
 
 		""			
-		"($Step) $Line"
-		& "$PSScriptRoot/speak-english.ps1" "$Line"
+		& "$PSScriptRoot/give-reply.ps1" "$($Step). $Line"
 		$Dummy = read-host "    Say <Check> or press <Return> to continue"
 		$Step++
 	}

@@ -1,8 +1,8 @@
 ﻿<#
 .SYNOPSIS
-	Answers to 'bye bye'
+	Replies to 'bye bye'
 .DESCRIPTION
-	This script says a reply to "bye bye" by text-to-speech (TTS).
+	This script says a reply to 'bye bye' by text-to-speech (TTS).
 .EXAMPLE
 	PS> ./bye-bye
 .NOTES
@@ -13,6 +13,5 @@
 
 $Reply = "Good bye.", "See you.", "Bye bye." | Get-Random
 
-"$Reply"
-& "$PSScriptRoot/speak-english.ps1" "$Reply"
+& "$PSScriptRoot/give-reply.ps1" "$Reply"
 exit 0 # success
