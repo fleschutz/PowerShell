@@ -15,9 +15,7 @@ try {
 	$Now = [DateTime]::Now
 	$Diff = [Datetime]("12/31/" + $Now.Year) – $Now
 
-	$Reply = "New Year is in $($Diff.Days) days."
-	"✔️ $Reply"
-	& "$PSScriptRoot/speak-english.ps1" "$Reply"
+	& "$PSScriptRoot/give-reply.ps1" "New Year is in $($Diff.Days) days."
 	exit 0 # success
 } catch {
 	"⚠️ Error: $($Error[0]) ($($MyInvocation.MyCommand.Name):$($_.InvocationInfo.ScriptLineNumber))"

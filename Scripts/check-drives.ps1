@@ -29,8 +29,7 @@ try {
 		} else {
 			$Reply = "Drive $($Drive.Name) has $($Free)GB left ($($Total)GB total)"
 		}
-		"✔️ $Reply"
-		& "$PSScriptRoot/speak-english.ps1" "$Reply"
+		& "$PSScriptRoot/give-reply.ps1" "$Reply"
 	}
 	exit 0 # success
 } catch {

@@ -16,8 +16,7 @@
 param([string]$abbreviation = "")
 
 function Reply { param([string]$Text)
-	"$Text"
-	& "$PSScriptRoot/speak-english.ps1" "$Text"
+	& "$PSScriptRoot/give-reply.ps1" "$Text"
 }
 
 try {
@@ -31,7 +30,7 @@ try {
 		foreach($Row in $Table) {
 			if ($Row.Abbreviation -eq $abbreviation) {
 				$Basename = (get-item "$File").Basename
-				Reply "  - $($Row.Definition) ($($Row.Abbreviation)) in $Basename"
+				Reply "$($Row.Definition) ($($Row.Abbreviation)) in $Basename"
 				$FoundOne = $true
 			}
 		}

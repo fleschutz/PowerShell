@@ -1,8 +1,8 @@
 ﻿<#
 .SYNOPSIS
-	Answers to 'good evening'
+	Replies to 'good evening'
 .DESCRIPTION
-	This script says a reply to "good evening" by text-to-speech (TTS).
+	This script says a reply to 'good evening' by text-to-speech (TTS).
 .EXAMPLE
 	PS> ./good-evening
 .NOTES
@@ -13,6 +13,5 @@
 
 $Reply = "And a special good evening to you too."
 
-"$Reply"
-& "$PSScriptRoot/speak-english.ps1" "$Reply"
+& "$PSScriptRoot/give-reply.ps1" "$Reply"
 exit 0 # success

@@ -24,7 +24,7 @@ try {
 	$Result = repair-volume -driveLetter $Drive -scan
 	if ($Result -ne "NoErrorsFound") { throw "'repair-volume' failed" }
 
-	"✔️ file system on drive $Drive is clean"
+	& "$PSScriptRoot/give-reply.ps1" "File system on drive $Drive is clean."
 	exit 0 # success
 } catch {
 	"⚠️ Error: $($Error[0]) ($($MyInvocation.MyCommand.Name):$($_.InvocationInfo.ScriptLineNumber))"

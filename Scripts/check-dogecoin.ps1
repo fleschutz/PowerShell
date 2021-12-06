@@ -13,9 +13,8 @@
 
 try {
 	$Rates = (Invoke-WebRequest -uri "https://min-api.cryptocompare.com/data/price?fsym=DOGE&tsyms=USD,EUR" -userAgent "curl" -useBasicParsing).Content | ConvertFrom-Json
-	$Reply = "Dogecoin is currently at $($Rates.USD) US$ and $($Rates.EUR) Euro."
-	"✔️ $Reply"
-	& "$PSScriptRoot/speak-english.ps1" "$Reply"
+
+	& "$PSScriptRoot/give-reply.ps1" "Dogecoin is currently at $($Rates.USD) US$ and $($Rates.EUR) Euro."
 	exit 0 # success
 } catch {
 	"⚠️ Error: $($Error[0]) ($($MyInvocation.MyCommand.Name):$($_.InvocationInfo.ScriptLineNumber))"

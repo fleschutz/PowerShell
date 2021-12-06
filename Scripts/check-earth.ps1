@@ -12,9 +12,7 @@
 #>
 
 try {
-	$Reply = "Earth still spins with 1040mph."
-	"✔️ $Reply"
-	& "$PSScriptRoot/speak-english.ps1" "$Reply"
+	& "$PSScriptRoot/speak-english.ps1" "Earth still spins with 1040mph."
 	exit 0 # success
 } catch {
 	"⚠️ Error: $($Error[0]) ($($MyInvocation.MyCommand.Name):$($_.InvocationInfo.ScriptLineNumber))"

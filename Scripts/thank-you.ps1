@@ -1,8 +1,8 @@
 ﻿<#
 .SYNOPSIS
-	Say an answer to 'thank you'
+	Replies to 'thank you'
 .DESCRIPTION
-	This script answers to "thank you" by text-to-speech (TTS).
+	This script replies to 'thank you' by text-to-speech (TTS).
 .EXAMPLE
 	PS> ./thank-you
 .NOTES
@@ -11,8 +11,7 @@
 	https://github.com/fleschutz/PowerShell
 #>
 
-$Answer = "It's a pleasure.", "Never mind." | Get-Random
+$Reply = "It's a pleasure.", "Never mind.", "Pleasure is mine." | Get-Random
 
-& "$PSScriptRoot/speak-english.ps1" "$Answer"
-write-output "$Answer"
+& "$PSScriptRoot/give-reply.ps1" "$Reply"
 exit 0 # success

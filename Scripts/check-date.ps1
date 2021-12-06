@@ -16,9 +16,8 @@ try {
 	[system.threading.thread]::currentthread.currentculture=[system.globalization.cultureinfo]"en-US"
 	$Weekday = (Get-Date -format "dddd")
 	$CurrentDate = (Get-Date).ToShortDateString()
-	$Reply = "It's $Weekday, $CurrentDate"
-	"✔️ $Reply"
-	& "$PSScriptRoot/speak-english.ps1" "$Reply"
+
+	& "$PSScriptRoot/give-reply.ps1" "It's $Weekday, $CurrentDate"
 	exit 0 # success
 } catch {
 	"⚠️ Error: $($Error[0]) ($($MyInvocation.MyCommand.Name):$($_.InvocationInfo.ScriptLineNumber))"

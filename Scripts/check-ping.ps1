@@ -37,9 +37,7 @@ try {
 	}
 	$Avg = $Avg / $Pings.count
 
-	$Reply = "$($Avg)ms average ping time ($($Min)ms min, $($Max)ms max)"
-	"✔️ $Reply"
-	& "$PSScriptRoot/speak-english.ps1" "$Reply"
+	& "$PSScriptRoot/give-reply.ps1" "$($Avg)ms average ping time ($($Min)ms min, $($Max)ms max)"
 	exit 0 # success
 } catch {
 	"⚠️ Error: $($Error[0]) ($($MyInvocation.MyCommand.Name):$($_.InvocationInfo.ScriptLineNumber))"

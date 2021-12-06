@@ -31,9 +31,8 @@ try {
 
 	[int]$Elapsed = $StopWatch.Elapsed.TotalSeconds
 	$Average = [math]::round($Count / $Elapsed, 1)
-	$Reply = "$Average domains per second DNS resolution"
-	"✔️ $Reply"
-	& "$PSScriptRoot/speak-english.ps1" "$Reply"
+
+	& "$PSScriptRoot/give-reply.ps1" "$Average domains per second DNS resolution"
 	exit 0 # success
 } catch {
 	"⚠️ Error: $($Error[0]) ($($MyInvocation.MyCommand.Name):$($_.InvocationInfo.ScriptLineNumber))"

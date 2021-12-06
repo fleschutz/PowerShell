@@ -14,9 +14,7 @@
 try {
 	$ISS = (Invoke-WebRequest "http://api.open-notify.org/iss-now.json" -userAgent "curl" -useBasicParsing).Content | ConvertFrom-Json
 
-	$Reply = "ISS is at $($ISS.iss_position.longitude)° longitude, $($ISS.iss_position.latitude)° latitude."
-	"✔️ $Reply"
-	& "$PSScriptRoot/speak-english.ps1" "$Reply"
+	& "$PSScriptRoot/give-reply.ps1" "ISS is at $($ISS.iss_position.longitude)° longitude, $($ISS.iss_position.latitude)° latitude."
 	exit 0 # success
 } catch {
 	"⚠️ Error: $($Error[0]) ($($MyInvocation.MyCommand.Name):$($_.InvocationInfo.ScriptLineNumber))"

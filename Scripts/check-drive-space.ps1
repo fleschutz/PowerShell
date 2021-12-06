@@ -30,7 +30,8 @@ try {
         	write-warning "Drive $Drive has only $Free GB left to use! ($Used of $Total GB used, minimum is $MinLevel GB)"
 		exit 1
 	}
-	"✔️ Drive $Drive has $Free GB left ($Total GB total)"
+
+	& "$PSScriptRoot/give-reply.ps1" "Drive $Drive has $Free GB left ($Total GB total)"
 	exit 0 # success
 } catch {
 	"⚠️ Error: $($Error[0]) ($($MyInvocation.MyCommand.Name):$($_.InvocationInfo.ScriptLineNumber))"

@@ -11,12 +11,5 @@
 	https://github.com/fleschutz/PowerShell
 #>
 
-try {
-	$Reply = "OK, what's your account number?"
-	"✔️ $Reply"
-	& "$PSScriptRoot/speak-english.ps1" "$Reply"
-	exit 0 # success
-} catch {
-	"⚠️ Error: $($Error[0]) ($($MyInvocation.MyCommand.Name):$($_.InvocationInfo.ScriptLineNumber))"
-	exit 1
-}
+& "$PSScriptRoot/give-reply.ps1" "OK, what's your account number?"
+exit 0 # success
