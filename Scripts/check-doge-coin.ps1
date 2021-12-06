@@ -4,7 +4,7 @@
 .DESCRIPTION
 	This script queries the current Dogecoin exchange rates and answers by text-to-speech (TTS).
 .EXAMPLE
-	PS> ./check-dogecoin
+	PS> ./check-doge-coin
 .NOTES
 	Author: Markus Fleschutz · License: CC0
 .LINK
