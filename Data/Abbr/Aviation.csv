@@ -1,8 +1,22 @@
 Abbreviation,Definition
+A/A,Air to air TACAN function
+A/C,Aircraft
+A/D,Aerodrome
+A/F,Autofeather
+A/FD,Airport/Facility Directory
+A/P,Autopilot
+AAE,Above Aerodrome Elevation
+AAIB,Air Accidents Investigation Branch (UK)
+AAIM,Aircraft Autonomous Integrity Monitoring
+AAO,Assumed Adverse Obstacle
+AAS,Airport Advisory Service
 AB,Air Base
 AC,Aircraft
+AC,Air Conditioning
+ACAM,Aircraft Continuing Airworthiness Monitoring
+ACARS,ARINC Communications Addressing and Reporting System
 ACAS,Airborne Collision Avoidance System
-ACC,Area Control Centre
+ACC,Area Control Center
 ADAC,Abu Dhabi Airports
 ADP,Aeroportes de Paris
 AENA,Aeropuertos Españoles y Navegación Aérea
@@ -19,6 +33,11 @@ AFM,Airplane Flight Manual
 AGL,Above Ground Level
 AIP,Aeronautical Information Publication
 ANSP,Air Navigation Service Provider
+AR,Aerial Refueling
+AR,Aspect Ratio
+A/R,Altitude Rate
+ARFOR,Area Forecast
+ARINC,Aeronautical Radio Incorporated (USA)
 ARTCC,Air Route Traffic Control Centre
 ASB,Airspace Block
 ATA,Actual Time of Arrival

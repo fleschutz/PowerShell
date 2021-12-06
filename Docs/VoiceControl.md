@@ -103,9 +103,10 @@ Lets the computer check something, replace [name] by: `Bitcoin`, `Christmas`, `C
 * `Computer, tell quote`
 
 
-💬 Conversation Commands
--------------------------
+💬 Welcome & Farewell
+---------------------
 * `Computer, Hi`
+* `Computer, say hello`
 * `Computer, good morning`
 * `Computer, good evening`
 * `Computer, good night`
