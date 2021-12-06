@@ -26,7 +26,7 @@ More supported voice commands are:
 
 `Computer, check` [name]
 ------------------------
-Lets the computer check something, replace [name] by: `Bitcoin`, `Christmas`, `CPU`, `date`, `dawn`, `DNS`, `Dogecoin`, `drives`, `dusk`, `Earth` (fun), `Ethereum`, `headlines`, `ISS`, `moon phase`, `New Year`, `operating system`, `ping`, `sunrise`, `sunset`, `swap space`, `time`, `time zone`, `up-time`, `VPN`, `weather`, or `zenith`.
+Lets the computer check something, replace [name] by: `Bitcoin`, `Christmas`, `CPU`, `date`, `dawn`, `DNS`, `Dogecoin`, `drives`, `dusk`, `Earth` (fun), `Ethereum`, `headlines`, `ISS`, `moon phase`, `New Year`, `operating system`, `ping`, `Santa`, `sunrise`, `sunset`, `swap space`, `time`, `time zone`, `up-time`, `VPN`, `weather`, or `zenith`.
 
 
 `Computer, open` [name] `browser`
