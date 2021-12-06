@@ -15,7 +15,7 @@ try {
 	$Now = [DateTime]::Now
 	$Diff = [Datetime]("12/25/" + $Now.Year) – $Now
 
-	$Reply = "$($Diff.Days) days until Christmas."
+	$Reply = "Christmas is in $($Diff.Days) days."
 	"✔️ $Reply"
 	& "$PSScriptRoot/speak-english.ps1" "$Reply"
 	exit 0 # success
