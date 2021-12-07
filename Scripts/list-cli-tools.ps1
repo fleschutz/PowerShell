@@ -112,6 +112,7 @@ function ListTools {
 	CheckFor printf "--version"
 	CheckFor python "--version"
 	CheckFor python3 "--version"
+	CheckFor rasdial "--version"
 	CheckFor regedit "--version"
 	CheckFor replace "--version"
 	CheckFor robocopy "--version"
