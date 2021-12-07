@@ -1,10 +1,10 @@
 ﻿<#
 .SYNOPSIS
-	Checks the Ethereum rate
+	Checks the Ether rate
 .DESCRIPTION
 	This script queries the current Ethereum exchange rates and answers by text-to-speech (TTS).
 .EXAMPLE
-	PS> ./check-ethereum
+	PS> ./check-ether-rate
 .NOTES
 	Author: Markus Fleschutz · License: CC0
 .LINK

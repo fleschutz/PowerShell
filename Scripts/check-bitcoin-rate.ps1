@@ -4,7 +4,7 @@
 .DESCRIPTION
 	This script queries the current Bitcoin exchange rates and answers by text-to-speech (TTS).
 .EXAMPLE
-	PS> ./check-bitcoin
+	PS> ./check-bitcoin-rate
 .NOTES
 	Author: Markus Fleschutz · License: CC0
 .LINK

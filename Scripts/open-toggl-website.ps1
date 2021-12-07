@@ -4,7 +4,7 @@
 .DESCRIPTION
 	This script launches the Web browser with the Toggl Track website.
 .EXAMPLE
-	PS> ./open-toggl-track
+	PS> ./open-toggl-website
 .NOTES
 	Author: Markus Fleschutz · License: CC0
 .LINK
