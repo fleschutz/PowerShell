@@ -102,6 +102,7 @@ Lets the computer check something, replace [name] by: `Bitcoin rate`, `Christmas
 * `Computer, tell joke`
 * `Computer, tell quote`
 * `Computer, repeat last reply`
+* `Computer, connect VPN`
 
 
 💬 Welcome & Farewell
