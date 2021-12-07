@@ -98,6 +98,10 @@ Launches the default Web browser with the given online manual - replace [name] b
 When finished say: "Close tab" or: "Computer, close [name] browser" to close the Web browser.
 
 
+`Computer, show` [name] `rate`
+------------------------------
+Launches the default Web browser showing the given exchange rate - replace [name] by: `Bitcoin`, `Ether`, `Euro`, or `US dollar`.
+
 🔊 Audio Voice Commands
 ------------------------
 * `Computer, turn volume off`
