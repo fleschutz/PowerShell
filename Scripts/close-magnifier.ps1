@@ -1,10 +1,10 @@
 ﻿<#
 .SYNOPSIS
-	Closes the Screen Magnifier
+	Closes the Magnifier
 .DESCRIPTION
 	This script closes the Windows Screen Magnifier application gracefully.
 .EXAMPLE
-	PS> ./close-screen-magnifier
+	PS> ./close-magnifier
 .NOTES
 	Author: Markus Fleschutz · License: CC0
 .LINK

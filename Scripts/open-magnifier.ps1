@@ -1,10 +1,10 @@
 ﻿<#
 .SYNOPSIS
-	Launch the Screen Magnifier
+	Launch the Magnifier
 .DESCRIPTION
 	This script launches the Windows Screen Magnifier application.
 .EXAMPLE
-	PS> ./open-screen-magnifier
+	PS> ./open-magnifier
 .NOTES
 	Author: Markus Fleschutz · License: CC0
 .LINK
