@@ -39,7 +39,7 @@ When finished say: "Close tab" or: "Computer, close [name] browser" to close the
 
 `Computer, open` [name] `drive`
 -------------------------------
-Launches the File Explorer with the given drive - replace [name] by: `C:`, `D:`, `E:`, `F:`, or `M:`.
+Launches the File Explorer with the given drive - replace [name] by: `C:`, `D:`, `E:`, `F:`, `G:`, or `M:`.
 
 When finished say: "Computer, close file explorer" to close the File Explorer.
 
