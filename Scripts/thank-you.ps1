@@ -11,7 +11,7 @@
 	https://github.com/fleschutz/PowerShell
 #>
 
-$Reply = "It's a pleasure.", "Never mind.", "Pleasure is mine." | Get-Random
+$Reply = "You're welcome.", "You're very welcome.", "That's all right.", "No problem.", "No worries.", "Don't mention it.", "It's my pleasure.", "My pleasure.", "Pleasure is mine.", "Glad to help.", "Anytime." | Get-Random
 
 & "$PSScriptRoot/give-reply.ps1" "$Reply"
 exit 0 # success
