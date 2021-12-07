@@ -20,7 +20,7 @@ More supported voice commands are:
 
 `Computer, open` [app]
 ----------------------
-Launches the given application, just replace [app] by: `3D-Viewer`, `Calculator`, `Git Extensions`, `Microsoft Paint`, `Microsoft Store`, `Netflix`, `Notepad`, `OBS Studio`, `Outlook`, `Paint 3D`, `Spotify`, `Thunderbird`, `Visual Studio`, or `Windows Terminal`.
+Launches the given application, just replace [app] by: `3D-Viewer`, `Calculator`, `Git Extensions`, `Magnifier`, `Microsoft Paint`, `Microsoft Store`, `Netflix`, `Notepad`, `OBS Studio`, `Outlook`, `Paint 3D`, `Spotify`, `Thunderbird`, `Visual Studio`, or `Windows Terminal`.
 
 When finished say: "Computer, close [app]" to close the application.
 
