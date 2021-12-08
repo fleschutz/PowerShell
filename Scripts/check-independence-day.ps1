@@ -16,10 +16,10 @@ try {
 	$IndependenceDay = [Datetime]("07/04/" + $Now.Year)
 	if ($Now -lt $IndependenceDay) {
 		$Diff = $IndependenceDay – $Now
-		& "$PSScriptRoot/give-reply.ps1" "Independence Day is in $($Diff.Days) days."
+		& "$PSScriptRoot/give-reply.ps1" "Independence Day on July 4th is in $($Diff.Days) days."
 	} else {
 		$Diff = $Now - $IndependenceDay
-		& "$PSScriptRoot/give-reply.ps1" "Independence Day was $($Diff.Days) days ago."
+		& "$PSScriptRoot/give-reply.ps1" "Independence Day on July 4th was $($Diff.Days) days ago."
 	}
 	exit 0 # success
 } catch {
