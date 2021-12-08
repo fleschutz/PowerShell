@@ -1,10 +1,10 @@
 ﻿<#
 .SYNOPSIS
-	Checks the ISS 
+	Checks the ISS position
 .DESCRIPTION
-	This script checks the position of the International Space Station (ISS) and replies by text-to-speech (TTS).
+	This script queries the position of the International Space Station (ISS) and replies by text-to-speech (TTS).
 .EXAMPLE
-	PS> ./check-iss
+	PS> ./check-iss-position
 .LINK
 	https://github.com/fleschutz/PowerShell
 .NOTES

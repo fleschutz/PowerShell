@@ -1,12 +1,12 @@
 Executing PowerShell Scripts by Voice
 =====================================
-Voice recognition and response (VRR) is so much fun and so comfortable. Just try it for yourself!
+Voice recognition and response (VRR) is so much fun and so comfortable! Just give it a try.
 
 
 🔧 Installation
 --------------
 1. Download and install *Serenade* from https://serenade.ai/ (Serenade is freely available for Linux, MacOS, and Windows).
-2. Download and install the *PowerShell Scripts*, then set the search path to it.
+2. Download and install the *PowerShell Scripts*, allow the script execution and set the search path to it (see the FAQ page).
 3. Execute: `./export-to-serenade.ps1 Computer` in the *PowerShell Scripts*, this creates a custom JavaScript file at `$HOME/.serenade/scripts/PowerShell.js` using the wake word 'Computer'. Recommended wake words with a high recognition rate are: "Alexa", "Bixby", "Computer", "James", or "Jarvis". In the following the wake word "Computer" is used.
 
 
@@ -27,7 +27,7 @@ When finished say: "Computer, close [app]" to close the application.
 
 `Computer, check` [name]
 ------------------------
-Lets the computer check something, replace [name] by: `Bitcoin rate`, `Christmas`, `CPU`, `date`, `dawn`, `DNS`, `drives`, `dusk`, `Easter Sunday`, `Earth` (fun), `Ether rate`, `headlines`, `Independence Day`, `ISS`, `midnight`, `moon phase`, `New Year`, `noon`, `operating system`, `ping`, `Santa`, `sunrise`, `sunset`, `swap space`, `tea time`, `Tether rate`, `time`, `time zone`, `up-time`, `VPN`, `weather`, or `zenith`.
+Lets the computer check something, replace [name] by: `Bitcoin rate`, `Christmas`, `CPU`, `date`, `dawn`, `DNS`, `drives`, `dusk`, `Easter Sunday`, `Earth` (fun), `Ether rate`, `headlines`, `Independence Day`, `ISS position`, `midnight`, `moon phase`, `New Year`, `noon`, `operating system`, `ping`, `Santa`, `sunrise`, `sunset`, `swap space`, `tea time`, `Tether rate`, `time`, `time zone`, `up-time`, `VPN`, `weather`, or `zenith`.
 
 
 `Computer, open` [name] `browser`
