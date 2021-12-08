@@ -27,7 +27,7 @@ When finished say: "Computer, close [app]" to close the application.
 
 `Computer, check` [name]
 ------------------------
-Lets the computer check something, replace [name] by: `Bitcoin rate`, `Christmas`, `CPU`, `date`, `dawn`, `DNS`, `Dogecoin rate`, `drives`, `dusk`, `Earth` (fun), `Ether rate`, `headlines`, `ISS`, `midnight`, `moon phase`, `New Year`, `noon`, `operating system`, `ping`, `Santa`, `sunrise`, `sunset`, `swap space`, `tea time`, `time`, `time zone`, `up-time`, `VPN`, `weather`, or `zenith`.
+Lets the computer check something, replace [name] by: `Bitcoin rate`, `Christmas`, `CPU`, `date`, `dawn`, `DNS`, `drives`, `dusk`, `Earth` (fun), `Ether rate`, `headlines`, `ISS`, `midnight`, `moon phase`, `New Year`, `noon`, `operating system`, `ping`, `Santa`, `sunrise`, `sunset`, `swap space`, `tea time`, `Tether rate`, `time`, `time zone`, `up-time`, `VPN`, `weather`, or `zenith`.
 
 
 `Computer, open` [name] `browser`
@@ -100,7 +100,10 @@ When finished say: "Close tab" or: "Computer, close [name] browser" to close the
 
 `Computer, show` [name] `rate`
 ------------------------------
-Launches the default Web browser showing the given exchange rate - replace [name] by: `Bitcoin`, `Ether`, `Euro`, or `US dollar`.
+Launches the default Web browser showing the given exchange rate - replace [name] by: `Bitcoin`, `Ether`, `Euro`, `Tether`, or `US dollar`.
+
+When finished say: "Close tab" or: "Computer, close [name] browser" to close the Web browser.
+
 
 🔊 Audio Voice Commands
 ------------------------
