@@ -127,6 +127,7 @@ Launches the default Web browser showing the given exchange rate - replace [name
 * `Computer, good evening`
 * `Computer, good night`
 * `Computer, how are you?`
+* `Computer, come on`
 * `Computer, thank you`
 * `Computer, I'll be back`
 * `Computer, good bye`
