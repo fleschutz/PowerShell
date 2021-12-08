@@ -1,6 +1,6 @@
 ﻿<#
 .SYNOPSIS
-	Checks the time until Midnight
+	Checks for Midnight
 .DESCRIPTION
 	This script checks the time until Midnight and replies by text-to-speech (TTS).
 .EXAMPLE
@@ -11,16 +11,27 @@
 	https://github.com/fleschutz/PowerShell
 #>
 
+function TimeSpanToString { param([TimeSpan]$Delta)
+	$Result = ""
+	if ($Delta.Hours -eq 1) {       $Result += "1 hour, "
+	} elseif ($Delta.Hours -gt 1) { $Result += "$($Delta.Hours) hours, "
+	}
+	if ($Delta.Minutes -eq 1) { $Result += "1 minute"
+	} else {                    $Result += "$($Delta.Minutes) minutes"
+	}
+	return $Result
+}
+
 try {
 	$Now = [DateTime]::Now
 	if ($Now.Hour -lt 12) {
 		$Midnight = Get-Date -Hour 0 -Minute 0 -Second 0
-		$Delta = $Now - $Midnight
-		$Reply = "Midnight was $($Delta.Hours) hours, $($Delta.Minutes) minutes ago."
+		$TimeSpan = TimeSpanToString($Now - $Midnight)
+		$Reply = "Midnight was $TimeSpan ago."
 	} else {
 		$Midnight = Get-Date -Hour 23 -Minute 59 -Second 59
-		$Delta = $Midnight - $Now
-		$Reply = "Midnight is in $($Delta.Hours) hours, $($Delta.Minutes) minutes."
+		$TimeSpan = TimeSpanToString($Midnight - $Now)
+		$Reply = "Midnight is in $TimeSpan."
 	}
 	& "$PSScriptRoot/give-reply.ps1" "$Reply"
 	exit 0 # success

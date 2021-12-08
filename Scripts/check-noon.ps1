@@ -1,6 +1,6 @@
 ﻿<#
 .SYNOPSIS
-	Checks the time until Noon
+	Checks for Noon
 .DESCRIPTION
 	This script checks the time until Noon and replies by text-to-speech (TTS).
 .EXAMPLE
@@ -11,15 +11,26 @@
 	https://github.com/fleschutz/PowerShell
 #>
 
+function TimeSpanToString { param([TimeSpan]$Delta)
+	$Result = ""
+	if ($Delta.Hours -eq 1) {       $Result += "1 hour, "
+	} elseif ($Delta.Hours -gt 1) { $Result += "$($Delta.Hours) hours, "
+	}
+	if ($Delta.Minutes -eq 1) { $Result += "1 minute"
+	} else {                    $Result += "$($Delta.Minutes) minutes"
+	}
+	return $Result
+}
+
 try {
 	$Now = [DateTime]::Now
 	$Noon = Get-Date -Hour 12 -Minute 0 -Second 0
 	if ($Now -lt $Noon) {
-		$Delta = $Noon - $Now
-		$Reply = "Noon is in $($Delta.Hours) hours, $($Delta.Minutes) minutes."
+		$TimeSpan = TimeSpanToString($Noon - $Now)
+		$Reply = "Noon is in $TimeSpan."
 	} else {
-		$Delta = $Now - $Noon
-		$Reply = "Noon was $($Delta.Hours) hours, $($Delta.Minutes) minutes ago."
+		$TimeSpan = TimeSpanToString($Now - $Noon)
+		$Reply = "Noon was $TimeSpan ago."
 	}
 	& "$PSScriptRoot/give-reply.ps1" "$Reply"
 	exit 0 # success
