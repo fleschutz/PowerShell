@@ -6,10 +6,9 @@
 
 # My Welcome Message
 # ------------------
+"Welcome to PowerShell at $(hostname)'s 📂$(get-location)"
 if ($IsLinux) { $Username = $(whoami) } else { $Username = $env:USERNAME }
-$Time = (get-date).ToString('t')
 $host.ui.RawUI.WindowTitle = "$Username @ $(hostname)"
-"Welcome to PowerShell on 💻$(hostname) at 📂$(get-location)"
 
 
 #  My Command Prompt
