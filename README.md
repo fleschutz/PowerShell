@@ -10,7 +10,6 @@ Mega Collection of PowerShell Scripts
 
 | Script                                               | Description                                                        | Help                                    |
 | ---------------------------------------------------- | ------------------------------------------------------------------ | --------------------------------------- |
-| [mute-audio.ps1](Scripts/mute-audio.ps1)             | Mutes the audio device                                             | [Help](Docs/mute-audio.md)        |
 | [list-voices.ps1](Scripts/list-voices.ps1)           | Lists the installed text-to-speech voices                          | [Help](Docs/list-voices.md)       |
 | [play-beep-sound.ps1](Scripts/play-beep-sound.ps1)   | Plays a short beep sound                                           | [Help](Docs/play-beep-sound.md)   |
 | [play-files.ps1](Scripts/play-files.ps1)             | Plays the given audio files                                        | [Help](Docs/play-files.md)        |
@@ -35,9 +34,10 @@ Mega Collection of PowerShell Scripts
 | [speak-text.ps1](Scripts/speak-text.ps1)             | Speaks the given text by text-to-speech                            | [Help](Docs/speak-text.md)        |
 | [tell-joke.ps1](Scripts/tell-joke.ps1)               | Tell a joke by text-to-speech                                      | [Help](Docs/tell-joke.md)        |
 | [tell-quote.ps1](Scripts/tell-quote.ps1)             | Tell a quote by text-to-speech                                     | [Help](Docs/tell-quote.md)       |
-| [turn-volume-up.ps1](Scripts/turn-volume-up.ps1)     | Turns the audio volume up (+10% by default)                        | [Help](Docs/turn-volume-up.md)    |
-| [turn-volume-down.ps1](Scripts/turn-volume-down.ps1) | Turns the audio volume down (-10% by default)                      | [Help](Docs/turn-volume-down.md)  |
-| [unmute-audio.ps1](Scripts/unmute-audio.ps1)         | Unmutes the audio device                                           | [Help](Docs/unmute-audio.md)      |
+| [turn-volume-down.ps1](Scripts/turn-volume-down.ps1) | Turns audio volume down                                            | [Help](Docs/turn-volume-down.md)  |
+| [turn-volume-off.ps1](Scripts/turn-volume-off.ps1)   | Turn audio off                                                     | [Help](Docs/turn-volume-off-audio.md)      |
+| [turn-volume-on.ps1](Scripts/turn-volume-on.ps1)     | Turn audio on                                                      | [Help](Docs/turn-volume-on.md)      |
+| [turn-volume-up.ps1](Scripts/turn-volume-up.ps1)     | Turns audio volume up                                              | [Help](Docs/turn-volume-up.md)    |
 
 
 ⚙️ Scripts to Manage Computers
