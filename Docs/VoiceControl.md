@@ -27,7 +27,7 @@ When finished say: "Computer, close [app]" to close the application.
 
 `Computer, check` [name]
 ------------------------
-Lets the computer check something, replace [name] by: `Bitcoin rate`, `Christmas`, `CPU`, `date`, `dawn`, `DNS`, `drives`, `dusk`, `Earth` (fun), `Ether rate`, `headlines`, `ISS`, `midnight`, `moon phase`, `New Year`, `noon`, `operating system`, `ping`, `Santa`, `sunrise`, `sunset`, `swap space`, `tea time`, `Tether rate`, `time`, `time zone`, `up-time`, `VPN`, `weather`, or `zenith`.
+Lets the computer check something, replace [name] by: `Bitcoin rate`, `Christmas`, `CPU`, `date`, `dawn`, `DNS`, `drives`, `dusk`, `Earth` (fun), `Ether rate`, `headlines`, `Independence Day`, `ISS`, `midnight`, `moon phase`, `New Year`, `noon`, `operating system`, `ping`, `Santa`, `sunrise`, `sunset`, `swap space`, `tea time`, `Tether rate`, `time`, `time zone`, `up-time`, `VPN`, `weather`, or `zenith`.
 
 
 `Computer, open` [name] `browser`

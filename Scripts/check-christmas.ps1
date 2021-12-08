@@ -13,9 +13,14 @@
 
 try {
 	$Now = [DateTime]::Now
-	$Diff = [Datetime]("12/25/" + $Now.Year) – $Now
-
-	& "$PSScriptRoot/give-reply.ps1" "Christmas is in $($Diff.Days) days."
+	$Christmas = [Datetime]("12/25/" + $Now.Year)
+	if ($Now -lt $Christmas) {
+		$Diff = $Christmas – $Now
+		& "$PSScriptRoot/give-reply.ps1" "Christmas is in $($Diff.Days) days."
+	} else {
+		$Diff = $Now - $Christmas
+		& "$PSScriptRoot/give-reply.ps1" "Christmas was $($Diff.Days) days ago."
+	}
 	exit 0 # success
 } catch {
 	"⚠️ Error: $($Error[0]) ($($MyInvocation.MyCommand.Name):$($_.InvocationInfo.ScriptLineNumber))"

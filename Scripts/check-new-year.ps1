@@ -13,8 +13,8 @@
 
 try {
 	$Now = [DateTime]::Now
-	$Diff = [Datetime]("12/31/" + $Now.Year) – $Now
-
+	$NewYear = [Datetime]("12/31/" + $Now.Year)
+	$Diff = $NewYear – $Now
 	& "$PSScriptRoot/give-reply.ps1" "New Year is in $($Diff.Days) days."
 	exit 0 # success
 } catch {
