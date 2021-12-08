@@ -2,7 +2,7 @@
 .SYNOPSIS
 	Checks the ISS 
 .DESCRIPTION
-	This script checks the International Space Station (ISS) and report the position by text-to-speech (TTS).
+	This script checks the position of the International Space Station (ISS) and replies by text-to-speech (TTS).
 .EXAMPLE
 	PS> ./check-iss
 .LINK
@@ -14,7 +14,7 @@
 try {
 	$ISS = (Invoke-WebRequest "http://api.open-notify.org/iss-now.json" -userAgent "curl" -useBasicParsing).Content | ConvertFrom-Json
 
-	& "$PSScriptRoot/give-reply.ps1" "ISS is at $($ISS.iss_position.longitude)° longitude, $($ISS.iss_position.latitude)° latitude."
+	& "$PSScriptRoot/give-reply.ps1" "The International Space Station is currently at $($ISS.iss_position.longitude)° longitude and $($ISS.iss_position.latitude)° latitude."
 	exit 0 # success
 } catch {
 	"⚠️ Error: $($Error[0]) ($($MyInvocation.MyCommand.Name):$($_.InvocationInfo.ScriptLineNumber))"
