@@ -11,7 +11,7 @@
 	https://github.com/fleschutz/PowerShell
 #>
 
-$Reply = "Hello, how can I help?"
+$Reply = "Hey!", "Hello!", "Hi there!", "Hey there!", "Hey! How's it going?", "What's up?", "What's happening?", "How goes it?" | Get-Random
 
 & "$PSScriptRoot/give-reply.ps1" "$Reply"
 exit 0 # success
