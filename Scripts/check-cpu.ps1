@@ -23,15 +23,15 @@ try {
 	}
 
 	if ($Temp -gt 80) {
-		$Reply = "$($Temp)°C CPU temperature, that's too high!"
+		$Reply = "CPU is $($Temp)°C extremely hot!"
 	} elseif ($Temp -gt 50) {
-		$Reply = "$($Temp)°C CPU temperature, that's quite high"
+		$Reply = "CPU is $($Temp)°C hot."
 	} elseif ($Temp -gt 0) {
-		$Reply = "$($Temp)°C CPU temperature"
+		$Reply = "CPU is $($Temp)°C warm."
 	} elseif ($Temp -gt -20) {
-		$Reply = "$($Temp)°C CPU temperature, that's quite low"
+		$Reply = "CPU is $($Temp)°C cold."
 	} else {
-		$Reply = "$($Temp)°C CPU temperature, that's too low!"
+		$Reply = "CPU is $($Temp)°C extremely cold!"
 	}
 
 	& "$PSScriptRoot/give-reply.ps1" "$Reply"
