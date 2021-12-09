@@ -57,7 +57,7 @@ Mega Collection of PowerShell Scripts
 | [enable-crash-dumps.ps1](Scripts/enable-crash-dumps.ps1) | Enables the writing of crash dumps                             | [Help](Docs/enable-crash-dumps.md)  |
 | [hibernate.ps1](Scripts/hibernate.ps1)               | Enables hibernate mode for the local computer (needs admin rights) | [Help](Docs/hibernate.md)           |
 | [install-github-cli.ps1](Scripts/install-github-cli.ps1) | Installs GitHub CLI                                            | [Help](Docs/install-github-cli.md)  |
-| [install-google-chrome.ps1](Scripts/install-google-chrome.ps1) | Installs the Google Chrome browser                       | [Help](Docs/install-google-chrome.md)|
+| [install-chrome-browser.ps1](Scripts/install-chrome-browser.ps1) | Installs the Google Chrome browser                       | [Help](Docs/install-chrome-browser.md)|
 | [install-knot-resolver.ps1](Scripts/install-knot-resolver.ps1) | Installs the Knot Resolver (needs admin rights)          | [Help](Docs/install-knot-resolver.md)|
 | [install-ssh-client.ps1](Scripts/install-ssh-client.ps1) | Installs the SSH client (needs admin rights)                   | [Help](Docs/install-ssh-client.md)  |
 | [install-ssh-server.ps1](Scripts/install-ssh-server.ps1) | Installs the SSH server (needs admin rights)                   | [Help](Docs/install-ssh-server.md)  |
