@@ -4,7 +4,7 @@ This script enables hibernate mode for the local computer. It needs admin rights
 
 ## Parameters
 ```powershell
-/home/markus/Repos/PowerShell/Scripts/hibernate.ps1 [<CommonParameters>]
+hibernate.ps1 [<CommonParameters>]
 
 [<CommonParameters>]
     This script supports the common parameters: Verbose, Debug, ErrorAction, ErrorVariable, WarningAction, 

@@ -4,7 +4,7 @@ This script reboots the FRITZ!Box device
 
 ## Parameters
 ```powershell
-/home/markus/Repos/PowerShell/Scripts/reboot-fritzbox.ps1 [[-Username] <String>] [[-Password] <String>] [<CommonParameters>]
+reboot-fritzbox.ps1 [[-Username] <String>] [[-Password] <String>] [<CommonParameters>]
 
 -Username <String>
     Specifies the user name

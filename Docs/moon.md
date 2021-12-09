@@ -4,7 +4,7 @@ This script prints the current moon phase.
 
 ## Parameters
 ```powershell
-/home/markus/Repos/PowerShell/Scripts/moon.ps1 [<CommonParameters>]
+moon.ps1 [<CommonParameters>]
 
 [<CommonParameters>]
     This script supports the common parameters: Verbose, Debug, ErrorAction, ErrorVariable, WarningAction, 

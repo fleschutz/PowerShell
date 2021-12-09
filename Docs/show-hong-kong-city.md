@@ -1,10 +1,10 @@
-## show-hong-kong-city.ps1 - Shows Hong Kong in Google Maps
+## show-hong-kong-city.ps1 - Shows Hong Kong city in Google Maps
 
-This script launches the Web browser and shows the city of Hong Kong (China) in Google Maps.
+This script launches the Web browser with Google Maps at Hong Kong city (China).
 
 ## Parameters
 ```powershell
-/home/markus/Repos/PowerShell/Scripts/show-hong-kong-city.ps1 [<CommonParameters>]
+show-hong-kong-city.ps1 [<CommonParameters>]
 
 [<CommonParameters>]
     This script supports the common parameters: Verbose, Debug, ErrorAction, ErrorVariable, WarningAction, 

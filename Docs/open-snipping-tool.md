@@ -4,7 +4,7 @@ This script launches the Snipping Tool application.
 
 ## Parameters
 ```powershell
-/home/markus/Repos/PowerShell/Scripts/open-snipping-tool.ps1 [<CommonParameters>]
+open-snipping-tool.ps1 [<CommonParameters>]
 
 [<CommonParameters>]
     This script supports the common parameters: Verbose, Debug, ErrorAction, ErrorVariable, WarningAction, 

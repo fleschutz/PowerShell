@@ -4,7 +4,7 @@ This script writes text in a blue foreground color.
 
 ## Parameters
 ```powershell
-/home/markus/Repos/PowerShell/Scripts/write-blue.ps1 [[-text] <String>] [<CommonParameters>]
+write-blue.ps1 [[-text] <String>] [<CommonParameters>]
 
 -text <String>
     Specifies the text to write

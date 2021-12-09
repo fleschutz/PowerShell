@@ -4,7 +4,7 @@ This script changes the working directory to the user's SSH folder.
 
 ## Parameters
 ```powershell
-/home/markus/Repos/PowerShell/Scripts/cd-ssh.ps1 [<CommonParameters>]
+cd-ssh.ps1 [<CommonParameters>]
 
 [<CommonParameters>]
     This script supports the common parameters: Verbose, Debug, ErrorAction, ErrorVariable, WarningAction, 

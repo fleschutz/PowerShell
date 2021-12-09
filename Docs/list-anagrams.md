@@ -4,7 +4,7 @@ This script lists all anagrams of the given word.
 
 ## Parameters
 ```powershell
-/home/markus/Repos/PowerShell/Scripts/list-anagrams.ps1 [[-Word] <String>] [[-Columns] <Int32>] [<CommonParameters>]
+list-anagrams.ps1 [[-Word] <String>] [[-Columns] <Int32>] [<CommonParameters>]
 
 -Word <String>
     Specifies the word to use

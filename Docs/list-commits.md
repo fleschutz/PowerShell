@@ -4,7 +4,7 @@ This script lists all commits in a Git repository. Supported output formats are:
 
 ## Parameters
 ```powershell
-/home/markus/Repos/PowerShell/Scripts/list-commits.ps1 [[-RepoDir] <String>] [[-Format] <String>] [<CommonParameters>]
+list-commits.ps1 [[-RepoDir] <String>] [[-Format] <String>] [<CommonParameters>]
 
 -RepoDir <String>
     Specifies the path to the Git repository.

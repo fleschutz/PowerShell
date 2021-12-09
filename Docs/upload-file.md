@@ -4,7 +4,7 @@ This script uploads a local file to a FTP server.
 
 ## Parameters
 ```powershell
-/home/markus/Repos/PowerShell/Scripts/upload-file.ps1 [[-File] <String>] [[-URL] <String>] [[-Username] <String>] [[-Password] <String>] [<CommonParameters>]
+upload-file.ps1 [[-File] <String>] [[-URL] <String>] [[-Username] <String>] [[-Password] <String>] [<CommonParameters>]
 
 -File <String>
     Specifies the path to the local file

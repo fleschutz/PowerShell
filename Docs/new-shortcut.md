@@ -4,7 +4,7 @@ This script creates a new shortcut file.
 
 ## Parameters
 ```powershell
-/home/markus/Repos/PowerShell/Scripts/new-shortcut.ps1 [[-shortcut] <String>] [[-target] <String>] [[-description] <String>] [<CommonParameters>]
+new-shortcut.ps1 [[-shortcut] <String>] [[-target] <String>] [[-description] <String>] [<CommonParameters>]
 
 -shortcut <String>
     Specifies the shortcut filename

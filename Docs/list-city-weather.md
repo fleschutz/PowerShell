@@ -4,7 +4,7 @@ This script lists the current weather of cities world-wide (west to east).
 
 ## Parameters
 ```powershell
-/home/markus/Repos/PowerShell/Scripts/list-city-weather.ps1 [<CommonParameters>]
+list-city-weather.ps1 [<CommonParameters>]
 
 [<CommonParameters>]
     This script supports the common parameters: Verbose, Debug, ErrorAction, ErrorVariable, WarningAction, 

@@ -5,7 +5,7 @@ Converts the S.M.A.R.T. JSON files in the current/given directory to a CSV table
 
 ## Parameters
 ```powershell
-/home/markus/Repos/PowerShell/Scripts/smart-data2csv.ps1 [[-Directory] <String>] [<CommonParameters>]
+smart-data2csv.ps1 [[-Directory] <String>] [<CommonParameters>]
 
 -Directory <String>
     Specifies the path to the directory

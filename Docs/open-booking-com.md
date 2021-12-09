@@ -4,7 +4,7 @@ This script launches the Web browser with the Booking.com website.
 
 ## Parameters
 ```powershell
-/home/markus/Repos/PowerShell/Scripts/open-booking-com.ps1 [<CommonParameters>]
+open-booking-com.ps1 [<CommonParameters>]
 
 [<CommonParameters>]
     This script supports the common parameters: Verbose, Debug, ErrorAction, ErrorVariable, WarningAction, 

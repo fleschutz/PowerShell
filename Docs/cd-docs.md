@@ -4,7 +4,7 @@ This scripts changes the working directory to the user's documents folder.
 
 ## Parameters
 ```powershell
-/home/markus/Repos/PowerShell/Scripts/cd-docs.ps1 [<CommonParameters>]
+cd-docs.ps1 [<CommonParameters>]
 
 [<CommonParameters>]
     This script supports the common parameters: Verbose, Debug, ErrorAction, ErrorVariable, WarningAction, 

@@ -1,13 +1,13 @@
-## export-to-serenade.ps1 - Exports all scripts to Serenade for voice control
+## export-to-serenade.ps1 - Exports scripts to Serenade
 
 This script exports all PowerShell scripts to Serenade to execute them by voice.
 
 ## Parameters
 ```powershell
-/home/markus/Repos/PowerShell/Scripts/export-to-serenade.ps1 [[-WakeWord] <String>] [[-FilePattern] <String>] [[-Application] <String>] [[-TargetFile] <String>] [<CommonParameters>]
+export-to-serenade.ps1 [[-WakeWord] <String>] [[-FilePattern] <String>] [[-Application] <String>] [[-TargetFile] <String>] [<CommonParameters>]
 
 -WakeWord <String>
-    Specifies the wakeword (none by default)
+    Specifies the wake word (none by default)
     
     Required?                    false
     Position?                    1
@@ -34,11 +34,11 @@ This script exports all PowerShell scripts to Serenade to execute them by voice.
     Accept wildcard characters?  false
 
 -TargetFile <String>
-    Specifies the target file ("$HOME/.serenade/scripts/PowerShell.js" by default)
+    Specifies the target file ("$HOME\.serenade\scripts\PowerShell.js" by default)
     
     Required?                    false
     Position?                    4
-    Default value                "$HOME/.serenade/scripts/PowerShell.js"
+    Default value                "$HOME\.serenade\scripts\PowerShell.js"
     Accept pipeline input?       false
     Accept wildcard characters?  false
 
@@ -50,8 +50,9 @@ This script exports all PowerShell scripts to Serenade to execute them by voice.
 ## Example
 ```powershell
 PS> ./export-to-serenade.ps1 Computer
-⏳ Exporting 264 PowerShell scripts to C:\Users\Markus/.serenade/scripts/PowerShell.js...
-✔️ exported 264 scripts with wakework "Computer" to Serenade in 22 sec
+⏳ Found 534 PowerShell scripts...
+⏳ Writing custom JavaScript file: C:\Users\Markus\.serenade\scripts\PowerShell.js...
+✔️ Exported to Serenade with wake word "Computer" in 3 sec
 
 ```
 

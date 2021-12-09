@@ -1,10 +1,10 @@
 ## show-new-york-city.ps1 - Shows NYC in Google Maps
 
-This script launches the Web browser and shows New York City (US) in Google Maps.
+This script launches the Web browser with Google Maps at New York City (USA).
 
 ## Parameters
 ```powershell
-/home/markus/Repos/PowerShell/Scripts/show-new-york-city.ps1 [<CommonParameters>]
+show-new-york-city.ps1 [<CommonParameters>]
 
 [<CommonParameters>]
     This script supports the common parameters: Verbose, Debug, ErrorAction, ErrorVariable, WarningAction, 

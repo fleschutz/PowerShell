@@ -4,7 +4,7 @@ This script decrypts the given file.
 
 ## Parameters
 ```powershell
-/home/markus/Repos/PowerShell/Scripts/decrypt-file.ps1 [[-Path] <String>] [[-Password] <String>] [<CommonParameters>]
+decrypt-file.ps1 [[-Path] <String>] [[-Password] <String>] [<CommonParameters>]
 
 -Path <String>
     Specifies the path to the file to decrypt

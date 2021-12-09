@@ -4,7 +4,7 @@ This script takes a single screenshot and saves it into a target folder (the use
 
 ## Parameters
 ```powershell
-/home/markus/Repos/PowerShell/Scripts/save-screenshot.ps1 [[-TargetFolder] <String>] [<CommonParameters>]
+save-screenshot.ps1 [[-TargetFolder] <String>] [<CommonParameters>]
 
 -TargetFolder <String>
     Specifies the target folder (the user's pictures folder by default)

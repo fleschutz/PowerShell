@@ -4,7 +4,7 @@ This script plays the well-known Happy Birthday song.
 
 ## Parameters
 ```powershell
-/home/markus/Repos/PowerShell/Scripts/play-happy-birthday.ps1 [<CommonParameters>]
+play-happy-birthday.ps1 [<CommonParameters>]
 
 [<CommonParameters>]
     This script supports the common parameters: Verbose, Debug, ErrorAction, ErrorVariable, WarningAction, 

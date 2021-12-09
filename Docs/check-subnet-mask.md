@@ -4,7 +4,7 @@ This script checks the given subnet mask for validity.
 
 ## Parameters
 ```powershell
-/home/markus/Repos/PowerShell/Scripts/check-subnet-mask.ps1 [[-address] <String>] [<CommonParameters>]
+check-subnet-mask.ps1 [[-address] <String>] [<CommonParameters>]
 
 -address <String>
     Specifies the subnet mask to check

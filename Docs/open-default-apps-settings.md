@@ -4,7 +4,7 @@ This script launches the Windows default apps settings.
 
 ## Parameters
 ```powershell
-/home/markus/Repos/PowerShell/Scripts/open-default-apps-settings.ps1 [<CommonParameters>]
+open-default-apps-settings.ps1 [<CommonParameters>]
 
 [<CommonParameters>]
     This script supports the common parameters: Verbose, Debug, ErrorAction, ErrorVariable, WarningAction, 

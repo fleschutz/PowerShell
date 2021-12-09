@@ -4,7 +4,7 @@ This script removes all print jobs from all printer devices.
 
 ## Parameters
 ```powershell
-/home/markus/Repos/PowerShell/Scripts/remove-print-jobs.ps1 [<CommonParameters>]
+remove-print-jobs.ps1 [<CommonParameters>]
 
 [<CommonParameters>]
     This script supports the common parameters: Verbose, Debug, ErrorAction, ErrorVariable, WarningAction, 

@@ -4,7 +4,7 @@ This script sets the PowerShell profile for the current user.
 
 ## Parameters
 ```powershell
-/home/markus/Repos/PowerShell/Scripts/set-profile.ps1 [<CommonParameters>]
+set-profile.ps1 [<CommonParameters>]
 
 [<CommonParameters>]
     This script supports the common parameters: Verbose, Debug, ErrorAction, ErrorVariable, WarningAction, 

@@ -4,7 +4,7 @@ This script searches and replaces a pattern in the given files by the replacemen
 
 ## Parameters
 ```powershell
-/home/markus/Repos/PowerShell/Scripts/replace-in-files.ps1 [[-pattern] <String>] [[-replacement] <String>] [[-files] <String>] [<CommonParameters>]
+replace-in-files.ps1 [[-pattern] <String>] [[-replacement] <String>] [[-files] <String>] [<CommonParameters>]
 
 -pattern <String>
     Specifies the pattern to look for

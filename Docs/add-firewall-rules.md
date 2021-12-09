@@ -4,7 +4,7 @@ This script adds firewall rules for the given executable. Administrator rights a
 
 ## Parameters
 ```powershell
-/home/markus/Repos/PowerShell/Scripts/add-firewall-rules.ps1 [[-PathToExecutables] <String>] [<CommonParameters>]
+add-firewall-rules.ps1 [[-PathToExecutables] <String>] [<CommonParameters>]
 
 -PathToExecutables <String>
     Specifies the path to the executables

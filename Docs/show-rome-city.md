@@ -1,10 +1,10 @@
-## show-rome-city.ps1 - Shows Rome in Google Maps
+## show-rome-city.ps1 - Shows Rome city in Google Maps
 
-This script launches the Web browser and shows the city of Rome (Italy) in Google Maps.
+This script launches the Web browser with Google Maps at Rome city  (Italy).
 
 ## Parameters
 ```powershell
-/home/markus/Repos/PowerShell/Scripts/show-rome-city.ps1 [<CommonParameters>]
+show-rome-city.ps1 [<CommonParameters>]
 
 [<CommonParameters>]
     This script supports the common parameters: Verbose, Debug, ErrorAction, ErrorVariable, WarningAction, 

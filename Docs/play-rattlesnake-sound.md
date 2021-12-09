@@ -4,7 +4,7 @@ This script plays a rattlesnake sound.
 
 ## Parameters
 ```powershell
-/home/markus/Repos/PowerShell/Scripts/play-rattlesnake-sound.ps1 [<CommonParameters>]
+play-rattlesnake-sound.ps1 [<CommonParameters>]
 
 [<CommonParameters>]
     This script supports the common parameters: Verbose, Debug, ErrorAction, ErrorVariable, WarningAction, 

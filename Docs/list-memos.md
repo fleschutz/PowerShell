@@ -4,7 +4,7 @@ This script lists all memo entries in Memos.csv in the home folder.
 
 ## Parameters
 ```powershell
-/home/markus/Repos/PowerShell/Scripts/list-memos.ps1 [<CommonParameters>]
+list-memos.ps1 [<CommonParameters>]
 
 [<CommonParameters>]
     This script supports the common parameters: Verbose, Debug, ErrorAction, ErrorVariable, WarningAction, 

@@ -4,7 +4,7 @@ This script prints basic information of an executable file.
 
 ## Parameters
 ```powershell
-/home/markus/Repos/PowerShell/Scripts/inspect-exe.ps1 [[-PathToExe] <String>] [<CommonParameters>]
+inspect-exe.ps1 [[-PathToExe] <String>] [<CommonParameters>]
 
 -PathToExe <String>
     Specifies the path to the executable file

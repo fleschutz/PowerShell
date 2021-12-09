@@ -4,7 +4,7 @@ This script installs updates for the local machine (needs admin rights).
 
 ## Parameters
 ```powershell
-/home/markus/Repos/PowerShell/Scripts/install-updates.ps1 [<CommonParameters>]
+install-updates.ps1 [<CommonParameters>]
 
 [<CommonParameters>]
     This script supports the common parameters: Verbose, Debug, ErrorAction, ErrorVariable, WarningAction, 

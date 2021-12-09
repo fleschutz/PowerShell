@@ -4,7 +4,7 @@ This script writes the message of the day (MOTD).
 
 ## Parameters
 ```powershell
-/home/markus/Repos/PowerShell/Scripts/write-motd.ps1 [<CommonParameters>]
+write-motd.ps1 [<CommonParameters>]
 
 [<CommonParameters>]
     This script supports the common parameters: Verbose, Debug, ErrorAction, ErrorVariable, WarningAction, 

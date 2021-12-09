@@ -1,10 +1,10 @@
 ## list-voices.ps1 - Lists the installed text-to-speech voices
 
-This script lists the installed text-to-speech voices. It requires PowerShell 2.0 or higher.
+This script lists the installed text-to-speech (TTS) voices.
 
 ## Parameters
 ```powershell
-/home/markus/Repos/PowerShell/Scripts/list-voices.ps1 [<CommonParameters>]
+list-voices.ps1 [<CommonParameters>]
 
 [<CommonParameters>]
     This script supports the common parameters: Verbose, Debug, ErrorAction, ErrorVariable, WarningAction, 

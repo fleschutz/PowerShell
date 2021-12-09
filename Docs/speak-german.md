@@ -1,11 +1,10 @@
 ## speak-german.ps1 - Speaks text with a German text-to-speech voice
 
 This script speaks the given text with a German text-to-speech (TTS) voice.
-Requires that a German TTS voice is installed.
 
 ## Parameters
 ```powershell
-/home/markus/Repos/PowerShell/Scripts/speak-german.ps1 [[-text] <String>] [<CommonParameters>]
+speak-german.ps1 [[-text] <String>] [<CommonParameters>]
 
 -text <String>
     Specifies the text to speak

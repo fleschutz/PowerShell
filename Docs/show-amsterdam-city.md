@@ -1,10 +1,10 @@
-## show-amsterdam-city.ps1 - Shows Amsterdam in Google Maps
+## show-amsterdam-city.ps1 - Shows Amsterdam city in Google Maps
 
-This script launches the Web browser and shows the city of Amsterdam (Netherlands) in Google Maps.
+This script launches the Web browser with Google Maps at Amsterdam city (Netherlands).
 
 ## Parameters
 ```powershell
-/home/markus/Repos/PowerShell/Scripts/show-amsterdam-city.ps1 [<CommonParameters>]
+show-amsterdam-city.ps1 [<CommonParameters>]
 
 [<CommonParameters>]
     This script supports the common parameters: Verbose, Debug, ErrorAction, ErrorVariable, WarningAction, 

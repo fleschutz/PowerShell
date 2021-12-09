@@ -1,10 +1,10 @@
-## show-barcelona-city.ps1 - Shows Barcelona in Google Maps
+## show-barcelona-city.ps1 - Shows Barcelona city in Google Maps
 
-This script launches the Web browser and shows Barcelona city (Spain) in Google Maps.
+This script launches the Web browser with Google Maps at Barcelona city (Spain).
 
 ## Parameters
 ```powershell
-/home/markus/Repos/PowerShell/Scripts/show-barcelona-city.ps1 [<CommonParameters>]
+show-barcelona-city.ps1 [<CommonParameters>]
 
 [<CommonParameters>]
     This script supports the common parameters: Verbose, Debug, ErrorAction, ErrorVariable, WarningAction, 

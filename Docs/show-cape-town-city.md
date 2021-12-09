@@ -1,10 +1,10 @@
-## show-cape-town-city.ps1 - Shows Cape Town in Google Maps
+## show-cape-town-city.ps1 - Shows Cape Town city in Google Maps
 
-This script launches the Web browser and shows Cape Town city (South Africa) in Google Maps.
+This script launches the Web browser with Google Maps at Cape Town city (South Africa).
 
 ## Parameters
 ```powershell
-/home/markus/Repos/PowerShell/Scripts/show-cape-town-city.ps1 [<CommonParameters>]
+show-cape-town-city.ps1 [<CommonParameters>]
 
 [<CommonParameters>]
     This script supports the common parameters: Verbose, Debug, ErrorAction, ErrorVariable, WarningAction, 

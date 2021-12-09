@@ -4,7 +4,7 @@ This script adds the given memo text to $HOME/Memos.csv.
 
 ## Parameters
 ```powershell
-/home/markus/Repos/PowerShell/Scripts/add-memo.ps1 [[-text] <String>] [<CommonParameters>]
+add-memo.ps1 [[-text] <String>] [<CommonParameters>]
 
 -text <String>
     Specifies the text to memorize

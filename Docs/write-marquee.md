@@ -4,7 +4,7 @@ This script writes text as marquee.
 
 ## Parameters
 ```powershell
-/home/markus/Repos/PowerShell/Scripts/write-marquee.ps1 [[-text] <String>] [[-speed] <Int32>] [<CommonParameters>]
+write-marquee.ps1 [[-text] <String>] [[-speed] <Int32>] [<CommonParameters>]
 
 -text <String>
     Specifies the text to write

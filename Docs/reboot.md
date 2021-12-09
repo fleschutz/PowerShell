@@ -4,7 +4,7 @@ This script reboots the local computer (needs admin rights).
 
 ## Parameters
 ```powershell
-/home/markus/Repos/PowerShell/Scripts/reboot.ps1 [<CommonParameters>]
+reboot.ps1 [<CommonParameters>]
 
 [<CommonParameters>]
     This script supports the common parameters: Verbose, Debug, ErrorAction, ErrorVariable, WarningAction, 

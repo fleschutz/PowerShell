@@ -5,7 +5,7 @@ This script performs a selftest on your S.M.A.R.T. HDD/SSD devices.
 
 ## Parameters
 ```powershell
-/home/markus/Repos/PowerShell/Scripts/check-smart-devices.ps1 [[-type] <String>] [<CommonParameters>]
+check-smart-devices.ps1 [[-type] <String>] [<CommonParameters>]
 
 -type <String>
     Specifies the type of selftest: either short (default) or long

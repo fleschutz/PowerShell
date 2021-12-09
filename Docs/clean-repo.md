@@ -4,7 +4,7 @@ This script cleans a Git repository from untracked files (including submodules).
 
 ## Parameters
 ```powershell
-/home/markus/Repos/PowerShell/Scripts/clean-repo.ps1 [[-RepoDir] <String>] [<CommonParameters>]
+clean-repo.ps1 [[-RepoDir] <String>] [<CommonParameters>]
 
 -RepoDir <String>
     Specifies the path to the Git repository

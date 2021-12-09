@@ -4,7 +4,7 @@ This script plays a vulture sound.
 
 ## Parameters
 ```powershell
-/home/markus/Repos/PowerShell/Scripts/play-vulture-sound.ps1 [<CommonParameters>]
+play-vulture-sound.ps1 [<CommonParameters>]
 
 [<CommonParameters>]
     This script supports the common parameters: Verbose, Debug, ErrorAction, ErrorVariable, WarningAction, 

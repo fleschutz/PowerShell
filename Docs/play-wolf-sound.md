@@ -4,7 +4,7 @@ This script plays a wolf sound.
 
 ## Parameters
 ```powershell
-/home/markus/Repos/PowerShell/Scripts/play-wolf-sound.ps1 [<CommonParameters>]
+play-wolf-sound.ps1 [<CommonParameters>]
 
 [<CommonParameters>]
     This script supports the common parameters: Verbose, Debug, ErrorAction, ErrorVariable, WarningAction, 

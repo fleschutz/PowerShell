@@ -1,10 +1,10 @@
-## check-health.ps1 - Checks the health of the local computer
+## check-health.ps1 - Checks the computer health
 
 This script checks the health of the local computer.
 
 ## Parameters
 ```powershell
-/home/markus/Repos/PowerShell/Scripts/check-health.ps1 [<CommonParameters>]
+check-health.ps1 [<CommonParameters>]
 
 [<CommonParameters>]
     This script supports the common parameters: Verbose, Debug, ErrorAction, ErrorVariable, WarningAction, 
@@ -17,9 +17,8 @@ PS> ./check-health
 ✔️ 1213 GB left for swap space (67 of 1280 GB used)
 ✔️ 172 GB left on drive C (61 of 233 GB used)
 ✔️ 30.3 °C CPU temperature - good
-✔️ 19.7 domains/s (177 domains resolved in 9 sec)
+✔️ DNS resolution is 19.7 domains per second
 ✔️ 29 ms ping average (13 ms min, 110 ms max, 10 hosts)
-✔️ Windmill is healthy
 
 ```
 

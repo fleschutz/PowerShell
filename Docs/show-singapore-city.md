@@ -1,10 +1,10 @@
-## show-singapore-city.ps1 - Shows Singapore in Google Maps
+## show-singapore-city.ps1 - Shows Singapore city in Google Maps
 
-This script launches the Web browser and shows Singapore city in Google Maps.
+This script launches the Web browser with Google Maps at Singapore city.
 
 ## Parameters
 ```powershell
-/home/markus/Repos/PowerShell/Scripts/show-singapore-city.ps1 [<CommonParameters>]
+show-singapore-city.ps1 [<CommonParameters>]
 
 [<CommonParameters>]
     This script supports the common parameters: Verbose, Debug, ErrorAction, ErrorVariable, WarningAction, 

@@ -4,7 +4,7 @@ This script launches the Web browser and shows Lightnings in OpenStreetMap.
 
 ## Parameters
 ```powershell
-/home/markus/Repos/PowerShell/Scripts/show-lightnings.ps1 [<CommonParameters>]
+show-lightnings.ps1 [<CommonParameters>]
 
 [<CommonParameters>]
     This script supports the common parameters: Verbose, Debug, ErrorAction, ErrorVariable, WarningAction, 

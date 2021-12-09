@@ -4,7 +4,7 @@ This script launches the Web browser with the DuckDuckGo website.
 
 ## Parameters
 ```powershell
-/home/markus/Repos/PowerShell/Scripts/open-duck-duck-go.ps1 [<CommonParameters>]
+open-duck-duck-go.ps1 [<CommonParameters>]
 
 [<CommonParameters>]
     This script supports the common parameters: Verbose, Debug, ErrorAction, ErrorVariable, WarningAction, 

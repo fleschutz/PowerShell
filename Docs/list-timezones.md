@@ -4,7 +4,7 @@ This script lists all available time zones.
 
 ## Parameters
 ```powershell
-/home/markus/Repos/PowerShell/Scripts/list-timezones.ps1 [<CommonParameters>]
+list-timezones.ps1 [<CommonParameters>]
 
 [<CommonParameters>]
     This script supports the common parameters: Verbose, Debug, ErrorAction, ErrorVariable, WarningAction, 

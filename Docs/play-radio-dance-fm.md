@@ -4,7 +4,7 @@ This script launches the Web browser and plays radio station Dance FM.
 
 ## Parameters
 ```powershell
-/home/markus/Repos/PowerShell/Scripts/play-radio-dance-fm.ps1 [<CommonParameters>]
+play-radio-dance-fm.ps1 [<CommonParameters>]
 
 [<CommonParameters>]
     This script supports the common parameters: Verbose, Debug, ErrorAction, ErrorVariable, WarningAction, 

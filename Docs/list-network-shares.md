@@ -4,7 +4,7 @@ This script lists all network shares of the local computer.
 
 ## Parameters
 ```powershell
-/home/markus/Repos/PowerShell/Scripts/list-network-shares.ps1 [<CommonParameters>]
+list-network-shares.ps1 [<CommonParameters>]
 
 [<CommonParameters>]
     This script supports the common parameters: Verbose, Debug, ErrorAction, ErrorVariable, WarningAction, 

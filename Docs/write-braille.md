@@ -4,7 +4,7 @@ This script writes text in Braille.
 
 ## Parameters
 ```powershell
-/home/markus/Repos/PowerShell/Scripts/write-braille.ps1 [[-text] <String>] [<CommonParameters>]
+write-braille.ps1 [[-text] <String>] [<CommonParameters>]
 
 -text <String>
     Specifies the text to write

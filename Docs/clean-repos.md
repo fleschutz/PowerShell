@@ -4,7 +4,7 @@ This script cleans all Git repositories in a folder from untracked files (includ
 
 ## Parameters
 ```powershell
-/home/markus/Repos/PowerShell/Scripts/clean-repos.ps1 [[-ParentDir] <String>] [<CommonParameters>]
+clean-repos.ps1 [[-ParentDir] <String>] [<CommonParameters>]
 
 -ParentDir <String>
     Specifies the path to the parent folder

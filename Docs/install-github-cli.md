@@ -4,7 +4,7 @@ This script installs GitHub command-line interface (CLI).
 
 ## Parameters
 ```powershell
-/home/markus/Repos/PowerShell/Scripts/install-github-cli.ps1 [<CommonParameters>]
+install-github-cli.ps1 [<CommonParameters>]
 
 [<CommonParameters>]
     This script supports the common parameters: Verbose, Debug, ErrorAction, ErrorVariable, WarningAction, 

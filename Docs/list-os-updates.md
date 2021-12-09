@@ -4,7 +4,7 @@ This script lists the latest operating system update news.
 
 ## Parameters
 ```powershell
-/home/markus/Repos/PowerShell/Scripts/list-os-updates.ps1 [[-RSS_URL] <String>] [[-MaxCount] <Int32>] [<CommonParameters>]
+list-os-updates.ps1 [[-RSS_URL] <String>] [[-MaxCount] <Int32>] [<CommonParameters>]
 
 -RSS_URL <String>
     Specifies the URL to the RSS feed

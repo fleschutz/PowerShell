@@ -4,7 +4,7 @@ This script creates a scheduled task that will display a popup message.
 
 ## Parameters
 ```powershell
-/home/markus/Repos/PowerShell/Scripts/remind-me.ps1 [[-Message] <String>] [[-Time] <DateTime>] [<CommonParameters>]
+remind-me.ps1 [[-Message] <String>] [[-Time] <DateTime>] [<CommonParameters>]
 
 -Message <String>
     

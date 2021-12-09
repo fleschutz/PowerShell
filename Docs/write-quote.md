@@ -4,7 +4,7 @@ This script writes a random quote to the console.
 
 ## Parameters
 ```powershell
-/home/markus/Repos/PowerShell/Scripts/write-quote.ps1 [<CommonParameters>]
+write-quote.ps1 [<CommonParameters>]
 
 [<CommonParameters>]
     This script supports the common parameters: Verbose, Debug, ErrorAction, ErrorVariable, WarningAction, 

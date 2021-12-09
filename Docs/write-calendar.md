@@ -4,7 +4,7 @@ write-calendar.ps1 [<Month>] [<Year>]
 
 ## Parameters
 ```powershell
-/home/markus/Repos/PowerShell/Scripts/write-calendar.ps1 [[-Month] <Int32>] [[-Year] <Int32>] [<CommonParameters>]
+write-calendar.ps1 [[-Month] <Int32>] [[-Year] <Int32>] [<CommonParameters>]
 
 -Month <Int32>
     If specified, will limit output to a single month with this numeral value.

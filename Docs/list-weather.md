@@ -4,7 +4,7 @@ This script lists the hourly weather report.
 
 ## Parameters
 ```powershell
-/home/markus/Repos/PowerShell/Scripts/list-weather.ps1 [[-Location] <String>] [<CommonParameters>]
+list-weather.ps1 [[-Location] <String>] [<CommonParameters>]
 
 -Location <String>
     Specifies the location to use (determined automatically per default)

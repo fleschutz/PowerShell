@@ -4,7 +4,7 @@ This script lists the details of all local drives.
 
 ## Parameters
 ```powershell
-/home/markus/Repos/PowerShell/Scripts/list-drives.ps1 [<CommonParameters>]
+list-drives.ps1 [<CommonParameters>]
 
 [<CommonParameters>]
     This script supports the common parameters: Verbose, Debug, ErrorAction, ErrorVariable, WarningAction, 

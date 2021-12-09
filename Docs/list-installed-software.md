@@ -4,7 +4,7 @@ This script lists the installed software (except Windows Store apps).
 
 ## Parameters
 ```powershell
-/home/markus/Repos/PowerShell/Scripts/list-installed-software.ps1 [<CommonParameters>]
+list-installed-software.ps1 [<CommonParameters>]
 
 [<CommonParameters>]
     This script supports the common parameters: Verbose, Debug, ErrorAction, ErrorVariable, WarningAction, 

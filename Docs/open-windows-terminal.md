@@ -1,10 +1,10 @@
-## open-windows-terminal.ps1 - Starts Windows Terminal
+## open-windows-terminal.ps1 - Launches the Windows Terminal app
 
 This script launches the Windows Terminal application.
 
 ## Parameters
 ```powershell
-/home/markus/Repos/PowerShell/Scripts/open-windows-terminal.ps1 [<CommonParameters>]
+open-windows-terminal.ps1 [<CommonParameters>]
 
 [<CommonParameters>]
     This script supports the common parameters: Verbose, Debug, ErrorAction, ErrorVariable, WarningAction, 

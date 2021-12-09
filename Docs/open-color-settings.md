@@ -4,7 +4,7 @@ This script launches the Windows color settings.
 
 ## Parameters
 ```powershell
-/home/markus/Repos/PowerShell/Scripts/open-color-settings.ps1 [<CommonParameters>]
+open-color-settings.ps1 [<CommonParameters>]
 
 [<CommonParameters>]
     This script supports the common parameters: Verbose, Debug, ErrorAction, ErrorVariable, WarningAction, 

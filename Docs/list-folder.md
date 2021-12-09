@@ -4,7 +4,7 @@ This script lists the directory content formatted in columns.
 
 ## Parameters
 ```powershell
-/home/markus/Repos/PowerShell/Scripts/list-folder.ps1 [[-SearchPattern] <String>] [<CommonParameters>]
+list-folder.ps1 [[-SearchPattern] <String>] [<CommonParameters>]
 
 -SearchPattern <String>
     Specifies the search pattern, "*" by default (means anything)

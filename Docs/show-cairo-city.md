@@ -1,10 +1,10 @@
-## show-cairo-city.ps1 - Shows Cairo in Google Maps
+## show-cairo-city.ps1 - Shows Cairo city in Google Maps
 
-This script launches the Web browser and shows the city of Cairo (Egypt) in Google Maps.
+This script launches the Web browser with Google Maps at Cairo city (Egypt).
 
 ## Parameters
 ```powershell
-/home/markus/Repos/PowerShell/Scripts/show-cairo-city.ps1 [<CommonParameters>]
+show-cairo-city.ps1 [<CommonParameters>]
 
 [<CommonParameters>]
     This script supports the common parameters: Verbose, Debug, ErrorAction, ErrorVariable, WarningAction, 

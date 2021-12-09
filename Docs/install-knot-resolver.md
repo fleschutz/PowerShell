@@ -4,7 +4,7 @@ This script installs Knot Resolver. Knot Resolver is a DNS resolver daemon. It n
 
 ## Parameters
 ```powershell
-/home/markus/Repos/PowerShell/Scripts/install-knot-resolver.ps1 [<CommonParameters>]
+install-knot-resolver.ps1 [<CommonParameters>]
 
 [<CommonParameters>]
     This script supports the common parameters: Verbose, Debug, ErrorAction, ErrorVariable, WarningAction, 

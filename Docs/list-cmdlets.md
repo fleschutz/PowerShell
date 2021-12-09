@@ -4,7 +4,7 @@ This script lists all PowerShell cmdlets.
 
 ## Parameters
 ```powershell
-/home/markus/Repos/PowerShell/Scripts/list-cmdlets.ps1 [<CommonParameters>]
+list-cmdlets.ps1 [<CommonParameters>]
 
 [<CommonParameters>]
     This script supports the common parameters: Verbose, Debug, ErrorAction, ErrorVariable, WarningAction, 

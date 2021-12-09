@@ -4,7 +4,7 @@ This script writes the given text in big letters.
 
 ## Parameters
 ```powershell
-/home/markus/Repos/PowerShell/Scripts/write-big.ps1 [[-text] <String>] [<CommonParameters>]
+write-big.ps1 [[-text] <String>] [<CommonParameters>]
 
 -text <String>
     Specifies the text to write

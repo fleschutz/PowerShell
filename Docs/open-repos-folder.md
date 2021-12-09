@@ -4,7 +4,7 @@ This script launches the File Explorer with the user's Git repositories folder.
 
 ## Parameters
 ```powershell
-/home/markus/Repos/PowerShell/Scripts/open-repos-folder.ps1 [<CommonParameters>]
+open-repos-folder.ps1 [<CommonParameters>]
 
 [<CommonParameters>]
     This script supports the common parameters: Verbose, Debug, ErrorAction, ErrorVariable, WarningAction, 

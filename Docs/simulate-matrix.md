@@ -4,7 +4,7 @@ This script simulates the Matrix (for fun).
 
 ## Parameters
 ```powershell
-/home/markus/Repos/PowerShell/Scripts/simulate-matrix.ps1 [<CommonParameters>]
+simulate-matrix.ps1 [<CommonParameters>]
 
 [<CommonParameters>]
     This script supports the common parameters: Verbose, Debug, ErrorAction, ErrorVariable, WarningAction, 

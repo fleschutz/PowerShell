@@ -4,7 +4,7 @@ This script prints the geographic location of the given city.
 
 ## Parameters
 ```powershell
-/home/markus/Repos/PowerShell/Scripts/locate-city.ps1 [[-City] <String>] [<CommonParameters>]
+locate-city.ps1 [[-City] <String>] [<CommonParameters>]
 
 -City <String>
     Specifies the city to look for

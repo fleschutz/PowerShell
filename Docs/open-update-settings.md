@@ -4,7 +4,7 @@ This script launches the Windows Update settings.
 
 ## Parameters
 ```powershell
-/home/markus/Repos/PowerShell/Scripts/open-update-settings.ps1 [<CommonParameters>]
+open-update-settings.ps1 [<CommonParameters>]
 
 [<CommonParameters>]
     This script supports the common parameters: Verbose, Debug, ErrorAction, ErrorVariable, WarningAction, 

@@ -5,7 +5,7 @@ Returns the number of broken symlinks as exit value.
 
 ## Parameters
 ```powershell
-/home/markus/Repos/PowerShell/Scripts/check-symlinks.ps1 [[-folder] <String>] [<CommonParameters>]
+check-symlinks.ps1 [[-folder] <String>] [<CommonParameters>]
 
 -folder <String>
     Specifies the path to the directory tree
