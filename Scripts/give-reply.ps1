@@ -20,17 +20,16 @@ try {
 	" ← $text"
 
 	# speak by text-to-speech (TTS):
-	$TTSVoice = New-Object -ComObject SAPI.SPVoice
-	foreach ($Voice in $TTSVoice.GetVoices()) {
-		if ($Voice.GetDescription() -like "*- English*") {
-			$TTSVoice.Voice = $Voice
-			[void]$TTSVoice.Speak($text)
-			break
+	if (!$IsLinux) {
+		$TTSVoice = New-Object -ComObject SAPI.SPVoice
+		foreach ($Voice in $TTSVoice.GetVoices()) {
+			if ($Voice.GetDescription() -like "*- English*") { $TTSVoice.Voice = $Voice }
 		}
+		[void]$TTSVoice.Speak($text)
 	}
 
 	# remember last reply:
-	"$text" > "$HOME/.last_reply.txt"
+	"$text" > "$env:TEMP/last_reply.txt"
 	exit 0 # success
 } catch {
 	"⚠️ Error: $($Error[0]) ($($MyInvocation.MyCommand.Name):$($_.InvocationInfo.ScriptLineNumber))"

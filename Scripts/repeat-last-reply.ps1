@@ -11,9 +11,9 @@
 	https://github.com/fleschutz/PowerShell
 #>
 
-if (test-path "$HOME/.last_reply.txt" -pathType leaf) {
+if (test-path "$env:TEMP/last_reply.txt" -pathType leaf) {
 	$Reply = "It was: "
-	$Reply += Get-Content "$HOME/.last_reply.txt"
+	$Reply += Get-Content "$env:TEMP/.last_reply.txt"
 } else {
 	$Reply = "Sorry, I can't remember."
 }
