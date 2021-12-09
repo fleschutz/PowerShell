@@ -1,68 +1,483 @@
 Abbreviation,Definition
 21CSLC,21st Century Space Launch Complex
-AA,Associate Administrator
-AAAC,Astronomy and Astrophysics Advisory Committee
-ACCESS,Advanced Collaborative Connections for Earth System Science
-ACE,Advanced Composition Explorer
-ACRIMSat,Active Cavity Radiometer Irradiance Monitor Satellite
-ACS,Advanced Camera for Surveys (Hubble Space Telescope instrument)
-ACT,Advanced Component Technologies
-ADA,Americans with Disabilities Act
-ADAP,Astrophysics Data Analysis Program
-ADCAR,Astrophysics Data Curation and Archival Research
-ADS,Astrophysics Data System
-AES,Advanced Exploration Systems
-AFOSR,Air Force Office of Scientific Research
-AFRL,Air Force Research Laboratory
-AIM,Aeronomy of Ice in the Mesosphere
-AirMOSS,Airborne Microwave Observatory of Subcanopy and Subsurface
-AIRS,Advanced Infrared Sounder
-AITS,Agency Information Technology Services
-ALHAT,Autonomous Landing and Hazard Avoidance Technology
-ALI,Advanced Land Imager
-AMMOS,Advanced Multi-Mission Operations System
-AMMP,Aircraft Maintenance and Modification Program
-AMO,Agency Management and Operations
-AMS,Alpha Magnetic Spectrometer
-AMSR-E,Advanced Microwave Scanning Radiometer for the Earth Observing
-System
-AMSU,Advance Microwave Sounding Unit
-AO,Announcement of Opportunity
-APPEL,Academy of Program/Project and Engineering Leadership
-APRET,Astrophysics Research and Enabling Technology program (replaces
-APRA) 
-UHF,Ultra High Frequency
-ULA,United Launch Alliance
-URC,University Research Centers
-USA,United Space Alliance
-USAF,United States Air Force
-USAID,U.S. Agency for International Development
-USDA,United States Department of Agriculture
-USE,Upper Stage Engine
-USGCRP,U.S. Global Change Research Program
-USGS,United States Geological Survey
-USOS,U.S. On-orbit Segment (ISS)
-USPI,U.S. Participating Investigators (Explorer)
-USRA,Universities Space Research Association
-UV,Ultraviolet
-UVS,UV Spectrometer
-VAB,Vehicle Assembly Building
-VAFB,Vandenberg Air Force Base
-VAO,Virtual Astronomical Observatory
-VCL,Vegetation Canopy Lidar
-VGA,Venus Gravity Assist
-VIIRS,Visible-Infrared Imager Radiometer Suite (NPOESS Preparatory Project
-instrument)
-VLRS,Vehicle-Level Reasoning System
-V&V,Verification and Validation
-WFC,Wide Field Camera
-WFF,Wallops Flight Facility (NASA, managed by GSFC)
-WFIRST,Wide-Field Infrared Survey Telescope
-WISE,Wide-field Infrared Survey Explorer
-WMAP,Wilkinson Microwave Anisotropy Probe
-WSC,White Sands Complex
-WSTF,White Sands Test Facility, (NASA, managed by JSC)
-XCVR,Transceiver
-XMM,X-ray Multi-mirror Mission (Newton Observatory)
-WMS,Web Mapping Service
-XPI,X-ray Polarimeter Instrument
+4LGSF,Four-Laser Guide Star Facility
+4MOST,4-metre Multi-Object Spectroscopic Telescope (Proposed new spectroscopic instrument for VISTA)
+4T,Four Telescope (VLTI mode)
+A&A,Journal, Astronomy & Astrophysics
+A&ARv,Journal, Annual Review of Astronomy and Astrophysics
+ACD,Amplitude Calibration Device (ALMA)
+ACe,Astaldi Cimolai EIE (Consortium)
+ADA,ALMA Department of Administration
+ADO,ALMA Director’s Office
+ADS,International Italian optics company working on the DSM for the VLT
+AEM,ALMA construction consortium
+AFNOR,Association Française de Normalisation
+AFTA,Astrophysics Focused Telescope Assets
+AG,Aktiengesellschaft
+AGN,Active Galactic Nucleus
+AIDA,Astronomical Infrastructure for Data Access
+AIP,Leibniz Institute for Astrophysics Potsdam
+AIT,Assembly, Integration and Test
+AIV,Assembly, Integration and Verification
+AJ,The Astronomical Journal
+ALMA,Atacama Large Millimeter/submillimeter Array
+AMBER,Astronomical Multi-BEam combineR (VLTI Instrument)
+AN,Journal, Astronomische Nachrichten
+Antu,VLT Unit Telescope 1
+AO,Adaptive Optics
+AOF,Adaptive Optics Facility
+AOS,Array Operations Site (ALMA)
+APE,Active Phasing Experiment
+APEX,Atacama Pathfinder Experiment
+ApJ,Astrophysical Journal
+ApJS,Journal, Astrophysical Journal Supplement Series
+AQUARIUS,Mid-infrared detector array (VISIR)
+ARAL,Alignment facility for the VLTI
+ARC,ALMA Regional Centre
+ArTeMiS,Bolometric camera for APEX
+ASAC,ALMA Science Advisory Committee
+ASIAA,East Asia FEIC (ALMA)
+ASIC,Application Specific Integrated Circuit
+ASSIST,Adaptive Secondary Setup and Instrument Simulator (AOF test bench)
+AstraLux,Lucky Imaging camera for the Calar Alto 2.2-metre telescope
+AT,Auxiliary Telescope for the VLTI
+ATC,Astronomy Technology Centre (United Kingdom)
+ATILO,Administrative Tribunal of the International Labour Organisation
+AU,Astronomical Unit
+AUI,Associated Universities Inc.
+AVM,Astronomical Visualisation Metadata
+BAM,Construction company for the Headquarters extension
+BE,Back-End (ALMA)
+BELLA,Building Europe Link to Latin America
+BFL,Budget and Forward Look
+BlackGEM,(La Silla) Telescope array searching for optical counterparts of gravitational wave sources
+BLIP,Background photon noise limited
+C2PAP,Computational Center for Particle and Astrophysics, Universe Cluster, Garching
+CAD,Computer Aided Design
+CADC,Canadian Astronomy Data Centre
+CAPj,Communicating Astronomy with the Public Journal
+CARLA,Clusters Around Radio-Loud AGN (Spitzer)
+CASA,Common Astronomy Software Applications (ALMA)
+CCD,Charge Coupled Device
+CCTV,Closed Circuit TeleVision
+CDR,Critical Design Review
+CDS,Centre de Données astronomiques de Strasbourg (Strasbourg astronomical Data Center)
+CEA,Commissariat à L’Energie Atomique, France
+CELAC_EU,Summit of the Community of Latin American and Caribbean States–European Union
+CERN,European Organization for Nuclear Research
+CES,Coude Echelle Spectrometer
+CfP,Call for Proposal
+CfT,Call for tender
+CHAMP+,Dual channel heterodyne receiver array (APEX)
+CHF,Swiss francs
+CLIF,Convolution with Linearized Inverse Filter algorithm for wavefront sensing
+CLP,Chilean Peso
+CMB,Cosmic Microwave Background
+CMOS,Complementary metal–oxide–semiconductor
+CMS,Cisco Meeting Server
+CNAM,Conservatoire National des Arts et Métiers
+CNRS,Centre national de la recherche scientifique
+CO,Carbon monoxide
+CO,Carried Over budget
+COFUND,EU fellowship funding programme
+CONDOR,1.5 THz heterodyne receiver (APEX)
+CONICA,COudé Near-Infrared CAmera (VLT)
+CORALIE,Echelle Spectrograph on the 1.2-metre Leonard Euler Swiss telescope
+CoRoT,COnvection ROtation and planetary Transits (French Satellite)
+COSMOS,HST survey programme
+Cou-,Council Document
+CP,Calibration Programme
+CPI,Consumer Price Index
+CRIRES,Cryogenic InfraRed Echelle Spectrometer (VLT)
+CRIRES+,Planned upgrade to CRIRES
+CSV,Commissioning and Science Verification
+CTA,Cherenkov Telescope Array
+CTA-S,Cherenkov Telescope Array South
+CTAO,Cherenkov Telescope Array Observatory
+CUBES,Cassegrain U-band Brazilian ESO Spectrograph
+CuRe,Fast wavefront reconstruction algorithms for XAO with pyramid WFS
+CuReD,Fast wavefront reconstruction algorithms for XAO with pyramid WFS with pre-processing
+DC,Direct Current
+DDS,Data DistributIOn middleware for SPARTA
+DDT,Director’s Discretionary Time
+DFG,Deutsche Forschungsgemeinschaft
+DFS,(VLT) Data Flow System
+DG,Director General
+DIG,Deep Imaging Group (Vitacura)
+DL,Delay Line (VLTI)
+DMO,Data Management and Operations Division
+DMS,Dome and Main Structure
+DoA,Directorate of Administration
+DoE,Directorate of Engineering
+DoO,Directorate of Operations
+DoP,Directorate of Programmes
+DRS,DRS, formerly Boeing, detector manufacturer
+DSC,Directorate for Science
+DSM,Deformable Secondary Mirror
+DSO,Department of Science Operations (ALMA)
+eAPD,electron Avalanche Photodiode Detector
+EASC,European ALMA Support Centre
+EC,European Commission
+ECRI,European Conference on Research Infrastructures
+EFOSC2,ESO Faint Object Spectrograph and Camera (v.2)
+EIB,European Investment Bank
+EIROforum,Organisation consisting of the seven largest scientific European international organisations devoted to fostering mutual activities
+ELT,Extremely Large Telescope
+EM&P,Journal, Earth, Moon, and Planets
+EMAC,ELT Management Advisory Committee
+EMBL,European Molecular Biology Laboratory (Germany)
+EMMI,ESO Multi-Mode Instrument (NTT)
+ePOD,education and Public Outreach Department
+ERC,European Research Council
+ERIS,Enhanced Resolution Imager and Spectrograph
+ERP,Enterprise Resource Planning (Administration software)
+ESA,European Space Agency
+ESAC,European Space Astronomy Centre (ESA, Spain)
+ESAC,European Science Advisory Committee (for ALMA)
+ESC,ELT Subcommittee
+ESE,ELT Science and Engineering
+ESM,European School Munich
+ESO,European Organisation for Astronomical Research in the Southern Hemisphere
+ESOF,Euroscience Open Forum
+ESON,ESO Science Outreach Network
+ESPRESSO,Echelle SPectrograph for Rocky Exoplanet- and Stable Spectroscopic Observations
+ESRC,ELT Standing Review Committee
+ETF,ELT Technical Facility
+ETH,Swiss Federal Institute of Technology
+EU,European Union
+EUR,Euro
+EVALSO,Enabling Virtual Access to Latin-american Southern Observatories
+EWASS,European Week of Astronomy and Space Science
+ExA,Journal, Experimental Astronomy
+ExTrA,(La Silla) Exoplanets in Transit and their Atmospheres
+FC,Finance Committee
+FDR,Final Design Review
+FE,Front End
+FE IPT,Front-End Integrated Project Team (ALMA)
+FEA,Finite Element Analysis
+FEED,Front-End Engineering Design (ELT)
+FEIC,Front End Integration Centre (ALMA)
+FEROS,Fibre-fed, Extended Range, Échelle Spectrograph (MPG/ESO 2.2-metre)
+FIAT,Facility (for) Infrared Arrays Testing
+FITS,Flexible Image Transport System
+FLAMES,Fibre Large Array Multi Element Spectrograph (VLT)
+FORS1,FOcal Reducer/low dispersion Spectrograph (VLT)-1
+FORS2,FOcal Reducer/low dispersion Spectrograph (VLT)-2
+FOS,Faint Object Spectrograph (HST)
+FP,Fabry-Perot
+FP6,Sixth EC Framework Programme
+FP7,Seventh EC Framework Programme
+FPGA,Field Programmable Gate Array
+FTE,Full Time Equivalent
+FWHM,Full Width at Half Maximum
+GALACSI,Ground Atmospheric Layer Adaptive Optics for Spectroscopic Imaging (AOF)
+GB,Gigabyte
+GBP,British Pounds
+GÉANT,European multi-gigabit computer network for research and education purposes
+gGmbH,Gemeinnützige Gesellschaft mit beschränkter Haftung (non-profit German limited liability company)
+GHz,Gigahertz
+GIRAFFE,Fibre-fed multi-object spectrograph and part of the VLT FLAMES facility
+GLAO,Ground Layer Adaptive Optics
+gNLT,Garching Night Log Tool
+GRAAL,GRound-layer Adaptive optics Assisted by Lasers (AOF)
+GRAVITY,AO assisted, two-object, multiple-beam-combiner (VLTI)
+GROND,Gamma-Ray Burst Optical/Near-Infrared Detector (MPG/ESO 2.2-metre)
+GTC,Gran Telescopio Canarias
+GTO,Guaranteed Time for Observation
+GUI,Graphical User Interface
+GWh,Gigawatt hours
+H-LTAO,HARMONI Laser Tomography Adaptive Optics
+H2020,(EU) Horizon 2020 Programme
+HARMONI,Proposed first light integral field spectrograph for the ELT
+HARPS,High Accuracy Radial Velocity Planetary Searcher (3.6-metre)
+HAWK-I,High Acuity Wide field K-band Imager
+HCI,Human Computer Interface
+HIA,Herzberg Institute of Astrophysics (Canada)
+HIRES,(ELT) HIgh REsolution Spectrograph
+HODM,High Order Deformable Mirror
+HQ,Headquarters
+HR,Human Resources
+HST,Hubble Space Telescope
+HVAC,Heating, Ventilation and Air Conditioning
+IAG,Institute of Astronomy, Geophysics and Atmospheric Sciences (Brazil)
+IAS,International Accounting Standards
+IAU,International Astronomical Union
+Icar,Icarus, Planetary science journal, Planetary science journal
+IFS,Integral Field Spectrograph (SPHERE, ELT)
+IFU,Integral Field Unit
+INAF,Italian National Institute for Astrophysics
+INRIA,Institut National de Recherche en Informatique et en Automatique
+IPAG,Institut de Planetologie et d’Astrophysique de Grenoble
+IPC,(Chilean) Índice de Precios al Consumidor
+IPP,Max-Planck Institute for Plasma Physics (Germany)
+IPSAS,International Public Sector Accounting Standards
+IPT,Integrated Product Team (ALMA)
+IR,Infrared
+IRAM,Institut de Radioastronomie Millimétrique
+IRDIS,InfraRed Dual-beam Imager and Spectrograph (SPHERE, ELT)
+IRIS,VLTI Infrared Image Sensor
+IRLOS,InfraRed Low Order Sensor
+IRO,International Relations Office
+ISAAC,Infrared Spectrometer And Array Camera (VLT)
+ISERD,Israeli inter-ministerial agency for R&D cooperation with Europe
+ISM,International Staff Member
+IT,Information Technology
+ITAR,International Traffic in Arms Regulations
+ITER,International Thermonuclear Experimental Reactor
+IVOA,International Virtual Observatory Alliance
+IVSLA,Istituto Veneto di Scienze ed Arti
+IYA2009,International Year of Astronomy 2009
+JAO,Joint ALMA Observatory
+JENAM,Joint European and National Astronomy Meeting
+JPL,Jet Propulsion Laboratory
+JWST,James Webb Space Telescope
+k,kilo/1,000
+KIDS,(VST) Kilo-Degree Survey
+KMOS,K-band Multi-Object Spectrograph (VLT)
+KTS,Klaus Tschira Stiftung
+Kueyan,VLT Unit Telescope 2
+LABOCA,Large APEX Bolometer CAmera
+LAOG,Laboratoire d'Astrophysique de l'Observatoire de Grenoble
+LCS,Local Control System
+LFC,Laser Frequency Comb
+LGS,Laser Guide Star
+LGSF,Laser Guide Star Facility
+LMC,Large Magellanic Cloud
+LMU,Ludwig-Maximilians-Universität München
+LN2,Liquid nitrogen
+LOFAR,Low Frequency Array
+LOPS,Local Optical Phasing Sensor
+LP,Large Programme
+LPG,Liquefied Petroleum Gas
+LPO,La Silla ­Paranal Observatory
+LSM,Local Staff Members
+LSP,La Silla ­Paranal Subcommittee
+LTAO,Laser Tomography Adaptive Optics
+LVSM,Large Visible Sensor Module
+M,million/1,000,000
+M#,Mirror #
+MACAO,Multiple Application Curvature Adaptive Optic
+MACCON,Motion controller manufacturer
+MAD,Multi-conjugate Adaptive optics Demonstrator
+MAORY,(ELT) Multi-conjugate Adaptive Optics RelaY
+mas,milliarcseconds
+MASCOT,Mini All-Sky Cloud Observation Tool (Paranal)
+MATISSE,Multi AperTure mid-Infrared SpectroScopic Experiment (VLTI)
+MCAO,Multi-Conjugate Adaptive Optics
+Melipal,VLT Unit Telescope 3
+MELT,Minuscule ELT
+MENLO systems,Optical equipment manufacturer
+MERAC,Mobilising European Research in Astrophysics and Cosmology
+MERIL,Mapping the European Research Infrastructure Landscape
+METIS,Mid-infrared ELT Imager and Spectrograph
+MICADO,Adaptive optics imaging camera (ELT)
+MIDI,Mid-infrared Interferometric Instrument (VLTI)
+MIM,Museo Interactivo Mirador, Santiago
+MIT,Massachusetts Institute of Technology
+mmVLBI,Millimeter Very Long Baseline Interferometry
+Mn,Mirror #n
+MNRAS,Journal, Monthly Notices of the Royal Astronomical Society
+MOAO,Multiple-Object Adaptive Optics
+MOONS,Multi Object Optical and Near-infrared Spectrograph (VLT third generation)
+MOS,(ELT) Multi-Object Spectroscopy
+MOSAIC,(ELT) Multi-Object Spectrograph (Multi-Object Spectrograph for Astrophysics, Intergalactic medium studies and Cosmology)
+MOSFIRE,Near-infrared multi-object spectrograph (Keck)
+MPA,Max Planck Institute for Astrophysics
+MPE,Max Planck Institute for Extraterrestrial Physics
+MPG,Max-Planck-Gesellschaft
+MPIA,Max Planck Institute for Astronomy
+MPIfR,Max-Planck Institute for Radioastronomy (Germany)
+MS,Member State(s)
+MTM,MT Mechatronics (European company of high technology, engineering and maintenance services)
+MUSE,Multi Unit Spectroscopic Explorer (VLT)
+NACO,NAOS-CONICA (VLT)
+NAOJ,National Astronomical Observatory of Japan
+NAOMI,Adaptive optics system for the ATs (VLTI)
+NAOS,Nasmyth Adaptive Optics System (VLT)
+NASA,National Aeronautics and Space Administration
+NAV,Navision
+NDF,Non-Deliverable Forward Agreement
+NEAR,New Earths in the Alpha Cen Region experiment
+NEO,Near-Earth Object
+NewA,Journal, New Astronomy
+NewAR,Journal, New Astronomy Reviews
+NFM,Narrow Field Mode
+NGC,New General Catalogue
+NGC,New General detector Controller
+NGSD,Proposed large natural/laser guide star WFS detector (ELT)
+NGTS,Next Generation Transit Survey
+NINS,National Institutes of Natural Sciences
+NIRPS,(NNT) Near Infra Red Planet Searcher
+NOVA,The Netherlands Research School for Astronomy (Nederlandse Onderzoekschool voor Astronomie)
+NRAO,National Radio Astronomy Observatory
+NSF,National Science Foundation
+NTT,New Technology Telescope
+NUVA,Network for UltraViolet Astrophysics
+OAA,Arcetri Astrophysical Observatory
+OBAMA,Optical Bidule for Aberration Measurement on the ATs
+OCA-NICE,Cote d’Azur Observatory (Observatoire de la Cote d’Azur)
+ODG,Office of the Director General
+OECD,Organisation for Economic Co-operation and Development
+OmegaCAM,Optical Camera for the VST
+OPC,Observing Programmes Committee
+OPO,Observing Programmes Office
+OPTICON,Optical Infrared Coordination Network for Astronomy
+OSF,ALMA Operations Support Facilities
+OSO,Onsala Space Observatory
+OT,Observing Tool
+OTS,Operations Technical Support
+P&SS,Journal, Planetary and Space Science
+P2PP,Peer to Peer Protocol
+P86,Observing Period 86
+P87,Observing Period 87
+PA,Product Assurance
+PAC,Provisional Acceptance Chile
+PACMAN,Fringe tracker for PRIMA (VLTI)
+PAE,Provisional Acceptance Europe
+PARLA,PAranal Raman Laser, replacement for PARSEC (VLTI)
+PARSEC,Sodium line laser for VLT AO
+PASJ,Journal, Publications of the Astronomical Society of Japan
+PASP,Journal, Publications of the Astronomical Society of the Pacific
+PB,Petabyte
+PC,Personal Computer
+PDF,Portable Document Format
+PDM,Product Document Management
+PDR,Preliminary Design Review
+PESSTO,Public ESO Spectroscopic Survey of Transient Objects
+PFS,(ELT) Pre-Focal Station
+PFS-A,(ELT) Pre-Focal Station for Nasmyth A
+PhD,Doctor of Philosophy
+PI,Principal Investigator
+PIO,Public Information Officer
+PIONIER,VLTI visitor instrument
+PIP,Paranal Instrumentation Programme
+PLC,Programmable Logic Controllers (ELT)
+PMD,Project Management Department
+PMPD,Performance Management and Professional Development
+PRIMA,Phase-Referenced Imaging and Micro-arcsecond Astrometry facility (VLTI)
+PSF,Point Spread Function
+PTP,Precision Time Protocol
+Q,Quarter
+QA,Quality Assurance
+QSO,Quasi Stellar Object, quasar
+QUEST,QUasar Equatorial Survey Team
+R&D,Research and Development
+RAB,Reflector Assembly Building
+RAL,Rutherford Appleton Laboratory, Didcot (UK)
+RCL,Radioastronomy Chajnantor Limitada
+RedCLARA,Latin American Advanced Networks Cooperation (Academic data network in Latin America)
+REM,Rapid Eye Mount Telescope (La Silla)
+REUNA,Red Universitaria Nacional (Academic data network in Chile)
+RM,Rossiter-McClaughlin (effect)
+RMN,Reflective Memory Network (VLTI)
+rms,Root Mean Square
+RTC,Real Time Computing
+SABOCA,Shortwave Apex BOlometer Camera
+SAC,EURO-VO Science Advisory Committee
+SAF,Science Archive Facility
+SAFRAN-REOSC,High performance optics company
+SAPHIRA,Detector for the GRAVITY wavefront sensor
+SAXO,SPHERE’S AO system (VLT)
+SCAO,Single-conjugate adaptive optics
+SCO,Santiago Central Office (ALMA/ESO Vitacura)
+SDD,Software Development Division
+SDSS,Sloan Digital Sky Survey
+SE,System Engineering (ALMA)
+SEK,Swedish Crown
+SEO,Search Engine Operations
+SEPA,Single Euro Payments Area
+SEPIA,Swedish ESO PI receiver for APEX
+SHFI,Swedish Heterodyne Facility Instrument
+SiC,(ELT) SiliconCarbide-mirrorsubstrate
+SINFONI,Spectrograph for INtegral Field Observations in the Near Infrared (VLT)
+SKA,Square Kilometer Array
+SM,Service Mode (observing)
+SM4,Servicing Mission 4 (HST)
+SOFI,SOn oF Isaac (NTT)
+SOPHIE,Spectrographe pour l’Observation des Phénomènes des Intérieurs stellaires et des Exoplanètes
+SOXS,(NTT) Son Of X-Shooter
+SPARTA,Real-time computer for the AOF
+SPC,Scientific Personnel Committee
+SPECULOOS,(Paranal) Search for habitable Planets EClipsing ULtra-cOOl Stars
+SPHERE,Spectro-Polarimetric High-contrast Exoplanet Research instrument (VLT)
+SPIFFI,SPectrometer for Infrared Faint Field Imaging
+SPT,South Pole Telescope
+SSDF,Science Support Discretionary Fund
+SSED,Software System Engineering Department
+SSWG,Science Strategy Working Group
+ST-ECF,Space Telescope European Coordination Facility
+STC,Scientific Technical Committee
+STFC,Science and Technology Facilities Council (UK)
+STRAP,Tip-tilt sensors (VLTI)
+STScI,Space Telescope Science Institute (USA)
+sub-mm,submillimetre
+SUSI2,Superb Seeing Imager 2 (NTT)
+SW,Software
+TAROT,Télescope à Action Rapide pour les Objets Transitoires
+TAROT-S,Télescopes à Action Rapide pour les Objets Transitoires South
+TB,Terabyte
+TBT,Test-Bed Telescope
+TEC,Technology Division
+telbib,ESO library telescope bibliography database
+TFB,Tunable Filter Bank (ALMA)
+TIMMI,TIMMI far-infrared camera (ESO 3.6-metre telescope)
+ToO,Target of Opportunity
+TRAPPIST,TRAnsiting Planets and PlanetesImals Small Telescope
+TRR,Test Readiness Review
+TUM,Technische Universität München
+UC,Users Committee
+UK,United Kingdom
+UK ATC,UK Astronomy Technology Centre
+Ultracam,High-speed camera (VLT)
+UltraVISTA,Ultra-deep near-infrared survey in the COSMOS field
+UN,United Nations
+UNCOPUOS,United Nations Committee for the Peaceful Uses of Outer Space
+UNESCO,United Nations Educational Scientific and Cultural Organization
+US,United States (of America)
+USD,User Support Department
+USD,United States Dollar
+USM,University Observatory Munich
+UT,Unit Telescope of the VLT
+UT1–4,VLT Unit Telescopes 1–4: Antu, Kueyen, Melipal and Yepun
+UV,UltraViolet
+UVES,UV-Visual Echelle Spectrograph (VLT)
+VAT,Value Added Tax
+VERTEX,(APEX) VERTEX Antennentechnik GmbH, Duisburg (Germany)
+VHS,VISTA Hemisphere Survey
+VIDEO,VISTA Deep Extragalactic Observations Survey
+VIKING,VISTA Kilo-degree Infrared Galaxy survey
+VIMOS,VIsible MultiObject Spectrograph (VLT)
+VINCI,VLT INterferometer Commissioning Instrument (VLTI)
+VIP,Very Important Person
+VIPERS,VIMOS Public Extragalactic Redshift Survey
+VIRCAM,VISTA Infrared Camera
+VISA,VLTI Sub-Array
+VISIR,VLT Mid-Infrared Imager Spectrometer
+VISTA,Visible and Infrared Survey Telescope for Astronomy
+VLT,Very Large Telescope
+VLT/I,Very Large Telescope and its Interferometer
+VLTI,Very Large Telescope Interferometer
+VLTI-PR#,VLTI projects
+VM,Visitor Mode (observing)
+VMC,VISTA survey of the Magellanic Cloud system
+VO,Virtual Observatory
+VOP,Virtual Observatory Project Office
+VPHAS+,VST Photometric Hα Survey
+VSS,Variability Sky Survey
+VST,VLT Survey Telescope
+VVDS,VIMOS VLT Deep Survey
+VVV,ESO public survey VISTA Variables in the Vía Láctea
+WASP,Wide Angle Search for Planets survey
+WFCAM,Infrared wide field camera for the UK Infrared Telescope on Mauna Kea
+WFI,Wide Field Imager (MPG/ESO 2.2-metre)
+WiFi,Wireless Fidelity
+WVR,Water Vapour Radiometer (ALMA)
+X-shooter,Wideband ultraviolet-infrared single target spectrograph (VLT)
+XAO,Extreme adaptive optics
+XMM-Newton,X-ray Multi-Mirror satellite (ESA)
+Yepun,VLT Unit Telescope 4
+Z-Spec,Millimetre-wave spectrograph (APEX visitor instrument)
+zCOSMOS,Large Programme to measure 30 000 galaxies in the HST Cosmic Origins field
+ZIMPOL,Zurich Imaging Polarimeter (SPHERE, ELT)
+ΛCDM,Lambda Cold Dark Matter
+μm,Micrometre
