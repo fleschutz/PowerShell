@@ -11,8 +11,13 @@
 	https://github.com/fleschutz/PowerShell
 #>
 
+function GetTempDir {
+	if ($IsLinux) { return "/tmp" }
+	return "$env:TEMP"
+}
+
 try {
-	$TargetDir = resolve-path "$env:TEMP"
+	$TargetDir = resolve-path GetTempDir
 	if (-not(test-path "$TargetDir" -pathType container)) {
 		throw "Temporary folder at 📂$TargetDir doesn't exist (yet)"
 	}

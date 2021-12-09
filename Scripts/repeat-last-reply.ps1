@@ -11,9 +11,14 @@
 	https://github.com/fleschutz/PowerShell
 #>
 
-if (test-path "$env:TEMP/last_reply.txt" -pathType leaf) {
+function GetTempDir {
+	if ($IsLinux) { return "/tmp" }
+	return "$env:TEMP"
+}
+
+if (test-path "$(GetTempDir)/last_reply_given.txt" -pathType leaf) {
 	$Reply = "It was: "
-	$Reply += Get-Content "$env:TEMP/.last_reply.txt"
+	$Reply += Get-Content "$(GetTempDir)/last_reply_given.txt"
 } else {
 	$Reply = "Sorry, I can't remember."
 }

@@ -15,6 +15,11 @@
 
 param([string]$text = "")
 
+function GetTempDir {
+	if ($IsLinux) { return "/tmp" }
+	return "$env:TEMP"
+}
+
 try {
 	# print reply on the console:
 	" ← $text"
@@ -29,7 +34,7 @@ try {
 	}
 
 	# remember last reply:
-	"$text" > "$env:TEMP/last_reply.txt"
+	"$text" > "$(GetTempDir)/last_reply_given.txt"
 	exit 0 # success
 } catch {
 	"⚠️ Error: $($Error[0]) ($($MyInvocation.MyCommand.Name):$($_.InvocationInfo.ScriptLineNumber))"
