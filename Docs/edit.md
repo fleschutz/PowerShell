@@ -4,7 +4,7 @@ Opens a  text editor to edit the given file.
 
 ## Parameters
 ```powershell
-/home/markus/Repos/PowerShell/Scripts/edit.ps1 [[-Filename] <String>] [<CommonParameters>]
+edit.ps1 [[-Filename] <String>] [<CommonParameters>]
 
 -Filename <String>
     Specifies the path to the filename

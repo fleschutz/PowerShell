@@ -1,10 +1,10 @@
-## open-netflix.ps1 - Starts the Netflix app
+## open-netflix.ps1 - Launches the Netflix app
 
 This script launches the Netflix application.
 
 ## Parameters
 ```powershell
-/home/markus/Repos/PowerShell/Scripts/open-netflix.ps1 [<CommonParameters>]
+open-netflix.ps1 [<CommonParameters>]
 
 [<CommonParameters>]
     This script supports the common parameters: Verbose, Debug, ErrorAction, ErrorVariable, WarningAction, 

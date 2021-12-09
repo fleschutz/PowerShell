@@ -1,10 +1,10 @@
-## check-weather.ps1 - Checks the weather for critical values
+## check-weather.ps1 - Checks the weather
 
-Checks the current weather for critical values.
+Checks the current weather report.
 
 ## Parameters
 ```powershell
-/home/markus/Repos/PowerShell/Scripts/check-weather.ps1 [[-location] <String>] [<CommonParameters>]
+check-weather.ps1 [[-location] <String>] [<CommonParameters>]
 
 -location <String>
     Specifies the location to use (determined automatically per default)

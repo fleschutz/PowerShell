@@ -4,7 +4,7 @@ This script lists the installed apps (from Windows Store or snaps).
 
 ## Parameters
 ```powershell
-/home/markus/Repos/PowerShell/Scripts/list-installed-apps.ps1 [<CommonParameters>]
+list-installed-apps.ps1 [<CommonParameters>]
 
 [<CommonParameters>]
     This script supports the common parameters: Verbose, Debug, ErrorAction, ErrorVariable, WarningAction, 

@@ -4,7 +4,7 @@ This script closes the Snipping Tool application gracefully.
 
 ## Parameters
 ```powershell
-/home/markus/Repos/PowerShell/Scripts/close-snipping-tool.ps1 [<CommonParameters>]
+close-snipping-tool.ps1 [<CommonParameters>]
 
 [<CommonParameters>]
     This script supports the common parameters: Verbose, Debug, ErrorAction, ErrorVariable, WarningAction, 

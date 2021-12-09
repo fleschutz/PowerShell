@@ -4,7 +4,7 @@ This script speaks the content of the given text file by text-to-speech (TTS).
 
 ## Parameters
 ```powershell
-/home/markus/Repos/PowerShell/Scripts/speak-file.ps1 [[-File] <String>] [<CommonParameters>]
+speak-file.ps1 [[-File] <String>] [<CommonParameters>]
 
 -File <String>
     Specifies the path to the text file

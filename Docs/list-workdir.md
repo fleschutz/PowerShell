@@ -4,7 +4,7 @@ This script lists the current working directory (but not the content itself!)
 
 ## Parameters
 ```powershell
-/home/markus/Repos/PowerShell/Scripts/list-workdir.ps1 [<CommonParameters>]
+list-workdir.ps1 [<CommonParameters>]
 
 [<CommonParameters>]
     This script supports the common parameters: Verbose, Debug, ErrorAction, ErrorVariable, WarningAction, 

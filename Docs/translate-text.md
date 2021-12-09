@@ -4,7 +4,7 @@ This script translates text into other languages.
 
 ## Parameters
 ```powershell
-/home/markus/Repos/PowerShell/Scripts/translate-text.ps1 [[-Text] <String>] [[-SourceLang] <String>] [[-TargetLang] <String>] [<CommonParameters>]
+translate-text.ps1 [[-Text] <String>] [[-SourceLang] <String>] [[-TargetLang] <String>] [<CommonParameters>]
 
 -Text <String>
     Specifies the text to translate

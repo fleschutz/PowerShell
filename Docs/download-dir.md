@@ -4,7 +4,7 @@ This script downloads a folder (including subfolders) from the given URL.
 
 ## Parameters
 ```powershell
-/home/markus/Repos/PowerShell/Scripts/download-dir.ps1 [[-URL] <String>] [<CommonParameters>]
+download-dir.ps1 [[-URL] <String>] [<CommonParameters>]
 
 -URL <String>
     Specifies the URL where to download from

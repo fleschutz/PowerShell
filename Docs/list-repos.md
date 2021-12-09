@@ -4,7 +4,7 @@ This script lists the details of all Git repositories in the given folder.
 
 ## Parameters
 ```powershell
-/home/markus/Repos/PowerShell/Scripts/list-repos.ps1 [[-ParentDir] <String>] [<CommonParameters>]
+list-repos.ps1 [[-ParentDir] <String>] [<CommonParameters>]
 
 -ParentDir <String>
     Specifies the path to the parent folder.

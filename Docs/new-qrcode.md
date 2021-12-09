@@ -4,7 +4,7 @@ This script generates a new QR code image file.
 
 ## Parameters
 ```powershell
-/home/markus/Repos/PowerShell/Scripts/new-qrcode.ps1 [[-Text] <String>] [[-ImageSize] <String>] [<CommonParameters>]
+new-qrcode.ps1 [[-Text] <String>] [[-ImageSize] <String>] [<CommonParameters>]
 
 -Text <String>
     Specifies the text to use

@@ -4,7 +4,7 @@ This script closes the Task Manager application gracefully.
 
 ## Parameters
 ```powershell
-/home/markus/Repos/PowerShell/Scripts/close-task-manager.ps1 [<CommonParameters>]
+close-task-manager.ps1 [<CommonParameters>]
 
 [<CommonParameters>]
     This script supports the common parameters: Verbose, Debug, ErrorAction, ErrorVariable, WarningAction, 

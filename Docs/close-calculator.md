@@ -1,10 +1,10 @@
-## close-calculator.ps1 - Closes the calculator program
+## close-calculator.ps1 - Closes the calculator application
 
-This script closes the calculator program gracefully.
+This script closes the calculator application gracefully.
 
 ## Parameters
 ```powershell
-/home/markus/Repos/PowerShell/Scripts/close-calculator.ps1 [<CommonParameters>]
+close-calculator.ps1 [<CommonParameters>]
 
 [<CommonParameters>]
     This script supports the common parameters: Verbose, Debug, ErrorAction, ErrorVariable, WarningAction, 

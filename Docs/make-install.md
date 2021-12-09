@@ -4,7 +4,7 @@ This script copies newer EXE's + DLL's from the build directory to the installat
 
 ## Parameters
 ```powershell
-/home/markus/Repos/PowerShell/Scripts/make-install.ps1 [<CommonParameters>]
+make-install.ps1 [<CommonParameters>]
 
 [<CommonParameters>]
     This script supports the common parameters: Verbose, Debug, ErrorAction, ErrorVariable, WarningAction, 

@@ -4,7 +4,7 @@ This script halts the local computer. It needs admin rights.
 
 ## Parameters
 ```powershell
-/home/markus/Repos/PowerShell/Scripts/poweroff.ps1 [<CommonParameters>]
+poweroff.ps1 [<CommonParameters>]
 
 [<CommonParameters>]
     This script supports the common parameters: Verbose, Debug, ErrorAction, ErrorVariable, WarningAction, 

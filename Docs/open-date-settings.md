@@ -4,7 +4,7 @@ This script launches the Windows date & time settings.
 
 ## Parameters
 ```powershell
-/home/markus/Repos/PowerShell/Scripts/open-date-settings.ps1 [<CommonParameters>]
+open-date-settings.ps1 [<CommonParameters>]
 
 [<CommonParameters>]
     This script supports the common parameters: Verbose, Debug, ErrorAction, ErrorVariable, WarningAction, 

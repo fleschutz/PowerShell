@@ -4,7 +4,7 @@ This script lists earthquakes with magnitude >= 6.0 for the last 30 days.
 
 ## Parameters
 ```powershell
-/home/markus/Repos/PowerShell/Scripts/list-earthquakes.ps1 [<CommonParameters>]
+list-earthquakes.ps1 [<CommonParameters>]
 
 [<CommonParameters>]
     This script supports the common parameters: Verbose, Debug, ErrorAction, ErrorVariable, WarningAction, 

@@ -4,7 +4,7 @@ This script launches the Web browser with the FlightRadar24 website.
 
 ## Parameters
 ```powershell
-/home/markus/Repos/PowerShell/Scripts/open-flight-radar.ps1 [<CommonParameters>]
+open-flight-radar.ps1 [<CommonParameters>]
 
 [<CommonParameters>]
     This script supports the common parameters: Verbose, Debug, ErrorAction, ErrorVariable, WarningAction, 

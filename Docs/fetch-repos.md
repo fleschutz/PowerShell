@@ -4,7 +4,7 @@ This script fetches updates for all Git repositories in a folder (including subm
 
 ## Parameters
 ```powershell
-/home/markus/Repos/PowerShell/Scripts/fetch-repos.ps1 [[-ParentDir] <String>] [<CommonParameters>]
+fetch-repos.ps1 [[-ParentDir] <String>] [<CommonParameters>]
 
 -ParentDir <String>
     Specifies the path to the parent folder

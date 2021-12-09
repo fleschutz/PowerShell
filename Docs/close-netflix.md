@@ -1,10 +1,10 @@
-## close-netflix.ps1 - Closes the Netflix application
+## close-netflix.ps1 - Closes the Netflix app
 
 This script closes the Netflix application gracefully.
 
 ## Parameters
 ```powershell
-/home/markus/Repos/PowerShell/Scripts/close-netflix.ps1 [<CommonParameters>]
+close-netflix.ps1 [<CommonParameters>]
 
 [<CommonParameters>]
     This script supports the common parameters: Verbose, Debug, ErrorAction, ErrorVariable, WarningAction, 

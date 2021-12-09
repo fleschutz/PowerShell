@@ -4,7 +4,7 @@ This script changes the working directory to four directory levels up.
 
 ## Parameters
 ```powershell
-/home/markus/Repos/PowerShell/Scripts/cd-up4.ps1 [<CommonParameters>]
+cd-up4.ps1 [<CommonParameters>]
 
 [<CommonParameters>]
     This script supports the common parameters: Verbose, Debug, ErrorAction, ErrorVariable, WarningAction, 

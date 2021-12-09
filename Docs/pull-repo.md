@@ -4,7 +4,7 @@ This script pulls updates for a local Git repository (including submodules).
 
 ## Parameters
 ```powershell
-/home/markus/Repos/PowerShell/Scripts/pull-repo.ps1 [[-RepoDir] <String>] [<CommonParameters>]
+pull-repo.ps1 [[-RepoDir] <String>] [<CommonParameters>]
 
 -RepoDir <String>
     Specifies the path to the Git repository

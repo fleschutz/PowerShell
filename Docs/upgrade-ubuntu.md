@@ -4,7 +4,7 @@ This script upgrades Ubuntu Linux to the latest (LTS) release.
 
 ## Parameters
 ```powershell
-/home/markus/Repos/PowerShell/Scripts/upgrade-ubuntu.ps1 [<CommonParameters>]
+upgrade-ubuntu.ps1 [<CommonParameters>]
 
 [<CommonParameters>]
     This script supports the common parameters: Verbose, Debug, ErrorAction, ErrorVariable, WarningAction, 

@@ -4,7 +4,7 @@ This script lists the submodules of the given Git repository.
 
 ## Parameters
 ```powershell
-/home/markus/Repos/PowerShell/Scripts/list-submodules.ps1 [[-RepoDir] <String>] [<CommonParameters>]
+list-submodules.ps1 [[-RepoDir] <String>] [<CommonParameters>]
 
 -RepoDir <String>
     Specifies the path to the repository (current working dir by default)

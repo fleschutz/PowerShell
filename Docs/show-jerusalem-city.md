@@ -1,10 +1,10 @@
-## show-jerusalem-city.ps1 - Shows Jerusalem in Google Maps
+## show-jerusalem-city.ps1 - Shows Jerusalem city in Google Maps
 
-This script launches the Web browser and shows Jerusalem city (Israel) in Google Maps.
+This script launches the Web browser with Google Maps at Jerusalem city (Israel).
 
 ## Parameters
 ```powershell
-/home/markus/Repos/PowerShell/Scripts/show-jerusalem-city.ps1 [<CommonParameters>]
+show-jerusalem-city.ps1 [<CommonParameters>]
 
 [<CommonParameters>]
     This script supports the common parameters: Verbose, Debug, ErrorAction, ErrorVariable, WarningAction, 

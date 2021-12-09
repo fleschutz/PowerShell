@@ -4,7 +4,7 @@ This script changes the working directory to the user's Git repositories folder.
 
 ## Parameters
 ```powershell
-/home/markus/Repos/PowerShell/Scripts/cd-repos.ps1 [<CommonParameters>]
+cd-repos.ps1 [<CommonParameters>]
 
 [<CommonParameters>]
     This script supports the common parameters: Verbose, Debug, ErrorAction, ErrorVariable, WarningAction, 

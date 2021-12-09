@@ -1,11 +1,10 @@
 ## speak-italian.ps1 - Speaks text with an Italian text-to-speech voice
 
 This script speaks the given text with an Italian text-to-speech (TTS) voice.
-Requires that an Italian TTS voice is installed.
 
 ## Parameters
 ```powershell
-/home/markus/Repos/PowerShell/Scripts/speak-italian.ps1 [[-text] <String>] [<CommonParameters>]
+speak-italian.ps1 [[-text] <String>] [<CommonParameters>]
 
 -text <String>
     Specifies the text to speak

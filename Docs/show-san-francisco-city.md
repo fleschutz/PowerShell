@@ -1,10 +1,10 @@
-## show-san-francisco-city.ps1 - Shows San Francisco in Google Maps
+## show-san-francisco-city.ps1 - Shows San Francisco city in Google Maps
 
-This script launches the Web browser and shows the city of San Francisco (USA) in Google Maps.
+This script launches the Web browser with Google Maps at San Francisco city (USA).
 
 ## Parameters
 ```powershell
-/home/markus/Repos/PowerShell/Scripts/show-san-francisco-city.ps1 [<CommonParameters>]
+show-san-francisco-city.ps1 [<CommonParameters>]
 
 [<CommonParameters>]
     This script supports the common parameters: Verbose, Debug, ErrorAction, ErrorVariable, WarningAction, 

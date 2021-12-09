@@ -1,10 +1,10 @@
-## open-calculator.ps1 - Starts the calculator app
+## open-calculator.ps1 - Launches the calculator application
 
 This script launches the calculator application.
 
 ## Parameters
 ```powershell
-/home/markus/Repos/PowerShell/Scripts/open-calculator.ps1 [<CommonParameters>]
+open-calculator.ps1 [<CommonParameters>]
 
 [<CommonParameters>]
     This script supports the common parameters: Verbose, Debug, ErrorAction, ErrorVariable, WarningAction, 

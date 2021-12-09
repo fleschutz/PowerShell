@@ -1,10 +1,10 @@
-## open-dropbox-folder.ps1 - Opens the user's Dropbox folder
+## open-dropbox-folder.ps1 - Opens the Dropbox folder
 
-This script launches the File and showing the user's Dropbox folder.
+This script launches the File Explorer with the user's Dropbox folder.
 
 ## Parameters
 ```powershell
-/home/markus/Repos/PowerShell/Scripts/open-dropbox-folder.ps1 [<CommonParameters>]
+open-dropbox-folder.ps1 [<CommonParameters>]
 
 [<CommonParameters>]
     This script supports the common parameters: Verbose, Debug, ErrorAction, ErrorVariable, WarningAction, 

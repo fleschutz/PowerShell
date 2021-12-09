@@ -4,7 +4,7 @@ This script lists all installed PowerShell modules.
 
 ## Parameters
 ```powershell
-/home/markus/Repos/PowerShell/Scripts/list-modules.ps1 [<CommonParameters>]
+list-modules.ps1 [<CommonParameters>]
 
 [<CommonParameters>]
     This script supports the common parameters: Verbose, Debug, ErrorAction, ErrorVariable, WarningAction, 

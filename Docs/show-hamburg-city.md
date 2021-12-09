@@ -1,10 +1,10 @@
-## show-hamburg-city.ps1 - Shows Hamburg in Google Maps
+## show-hamburg-city.ps1 - Shows Hamburg city in Google Maps
 
-This script launches the Web browser and shows the city of Hamburg (Germany) in Google Maps.
+This script launches the Web browser with Google Maps at Hamburg city (Germany).
 
 ## Parameters
 ```powershell
-/home/markus/Repos/PowerShell/Scripts/show-hamburg-city.ps1 [<CommonParameters>]
+show-hamburg-city.ps1 [<CommonParameters>]
 
 [<CommonParameters>]
     This script supports the common parameters: Verbose, Debug, ErrorAction, ErrorVariable, WarningAction, 

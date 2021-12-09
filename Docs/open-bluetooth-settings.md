@@ -4,7 +4,7 @@ This script launches the Windows Bluetooth settings application.
 
 ## Parameters
 ```powershell
-/home/markus/Repos/PowerShell/Scripts/open-bluetooth-settings.ps1 [<CommonParameters>]
+open-bluetooth-settings.ps1 [<CommonParameters>]
 
 [<CommonParameters>]
     This script supports the common parameters: Verbose, Debug, ErrorAction, ErrorVariable, WarningAction, 

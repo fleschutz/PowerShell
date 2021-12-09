@@ -5,7 +5,7 @@ NOTE: can not be undo!
 
 ## Parameters
 ```powershell
-/home/markus/Repos/PowerShell/Scripts/clear-recycle-bin.ps1 [<CommonParameters>]
+clear-recycle-bin.ps1 [<CommonParameters>]
 
 [<CommonParameters>]
     This script supports the common parameters: Verbose, Debug, ErrorAction, ErrorVariable, WarningAction, 

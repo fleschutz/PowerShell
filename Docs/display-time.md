@@ -4,7 +4,7 @@ Displays the current time (for 10 seconds by default)
 
 ## Parameters
 ```powershell
-/home/markus/Repos/PowerShell/Scripts/display-time.ps1 [[-Seconds] <Int32>] [<CommonParameters>]
+display-time.ps1 [[-Seconds] <Int32>] [<CommonParameters>]
 
 -Seconds <Int32>
     Specifies the number of seconds to display the time

@@ -4,7 +4,7 @@ This script converts one or more PowerShell scripts to .bat batch files.
 
 ## Parameters
 ```powershell
-/home/markus/Repos/PowerShell/Scripts/convert-ps2bat.ps1 [[-Filepattern] <String>] [<CommonParameters>]
+convert-ps2bat.ps1 [[-Filepattern] <String>] [<CommonParameters>]
 
 -Filepattern <String>
     Specifies the file pattern

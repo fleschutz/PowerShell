@@ -1,10 +1,10 @@
-## show-toronto-city.ps1 - Shows Toronto in Google Maps
+## show-toronto-city.ps1 - Shows Toronto city in Google Maps
 
-This script launches the Web browser and shows the city of Toronto (Canada) in Google Maps.
+This script launches the Web browser with Google Maps at Toronto city (Canada).
 
 ## Parameters
 ```powershell
-/home/markus/Repos/PowerShell/Scripts/show-toronto-city.ps1 [<CommonParameters>]
+show-toronto-city.ps1 [<CommonParameters>]
 
 [<CommonParameters>]
     This script supports the common parameters: Verbose, Debug, ErrorAction, ErrorVariable, WarningAction, 

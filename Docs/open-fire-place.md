@@ -4,7 +4,7 @@ This script launches the Web browser with a fire place website.
 
 ## Parameters
 ```powershell
-/home/markus/Repos/PowerShell/Scripts/open-fire-place.ps1 [<CommonParameters>]
+open-fire-place.ps1 [<CommonParameters>]
 
 [<CommonParameters>]
     This script supports the common parameters: Verbose, Debug, ErrorAction, ErrorVariable, WarningAction, 
@@ -13,7 +13,7 @@ This script launches the Web browser with a fire place website.
 
 ## Example
 ```powershell
-PS> ./open-fire-play
+PS> ./open-fire-place
 
 ```
 

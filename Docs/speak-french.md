@@ -1,11 +1,10 @@
 ## speak-french.ps1 - Speaks text with a French text-to-speech voice
 
 This script speaks the given text with a French text-to-speech (TTS) voice.
-Requires that a French TTS voice is installed.
 
 ## Parameters
 ```powershell
-/home/markus/Repos/PowerShell/Scripts/speak-french.ps1 [[-text] <String>] [<CommonParameters>]
+speak-french.ps1 [[-text] <String>] [<CommonParameters>]
 
 -text <String>
     Specifies the text to speak

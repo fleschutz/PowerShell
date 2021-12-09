@@ -4,7 +4,7 @@ This scripts speaks a countdown starting from a given number (10 by default) by 
 
 ## Parameters
 ```powershell
-/home/markus/Repos/PowerShell/Scripts/speak-countdown.ps1 [[-StartNumber] <Int32>] [<CommonParameters>]
+speak-countdown.ps1 [[-StartNumber] <Int32>] [<CommonParameters>]
 
 -StartNumber <Int32>
     Specifies the number to start from

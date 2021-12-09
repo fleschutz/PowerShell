@@ -4,7 +4,7 @@ This scripts supports building with cmake, configure, autogen, Imakefile and Mak
 
 ## Parameters
 ```powershell
-/home/markus/Repos/PowerShell/Scripts/build-repo.ps1 [[-RepoDir] <String>] [<CommonParameters>]
+build-repo.ps1 [[-RepoDir] <String>] [<CommonParameters>]
 
 -RepoDir <String>
     Specifies the path to the Git repository

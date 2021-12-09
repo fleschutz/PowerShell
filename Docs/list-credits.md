@@ -4,7 +4,7 @@ This script shows the credits for the PowerShell Scripts.
 
 ## Parameters
 ```powershell
-/home/markus/Repos/PowerShell/Scripts/list-credits.ps1 [<CommonParameters>]
+list-credits.ps1 [<CommonParameters>]
 
 [<CommonParameters>]
     This script supports the common parameters: Verbose, Debug, ErrorAction, ErrorVariable, WarningAction, 

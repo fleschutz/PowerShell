@@ -1,10 +1,10 @@
-## show-washington-city.ps1 - Shows Washington in Google Maps
+## show-washington-city.ps1 - Shows Washington city in Google Maps
 
-This script launches the Web browser and shows Washington city (USA) in Google Maps.
+This script launches the Web browser with Google Maps at Washington city (USA).
 
 ## Parameters
 ```powershell
-/home/markus/Repos/PowerShell/Scripts/show-washington-city.ps1 [<CommonParameters>]
+show-washington-city.ps1 [<CommonParameters>]
 
 [<CommonParameters>]
     This script supports the common parameters: Verbose, Debug, ErrorAction, ErrorVariable, WarningAction, 

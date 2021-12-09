@@ -1,10 +1,10 @@
-## thank-you.ps1 - Say an answer to 'thank you'
+## thank-you.ps1 - Replies to 'thank you'
 
-This script answers to "thank you" by text-to-speech (TTS).
+This script replies to 'thank you' by text-to-speech (TTS).
 
 ## Parameters
 ```powershell
-/home/markus/Repos/PowerShell/Scripts/thank-you.ps1 [<CommonParameters>]
+thank-you.ps1 [<CommonParameters>]
 
 [<CommonParameters>]
     This script supports the common parameters: Verbose, Debug, ErrorAction, ErrorVariable, WarningAction, 

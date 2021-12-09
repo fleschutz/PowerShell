@@ -4,7 +4,7 @@ This script launches the Windows display settings application.
 
 ## Parameters
 ```powershell
-/home/markus/Repos/PowerShell/Scripts/open-display-settings.ps1 [<CommonParameters>]
+open-display-settings.ps1 [<CommonParameters>]
 
 [<CommonParameters>]
     This script supports the common parameters: Verbose, Debug, ErrorAction, ErrorVariable, WarningAction, 

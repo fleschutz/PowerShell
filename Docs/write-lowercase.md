@@ -4,7 +4,7 @@ This script writes text in lowercase letters.
 
 ## Parameters
 ```powershell
-/home/markus/Repos/PowerShell/Scripts/write-lowercase.ps1 [[-text] <String>] [<CommonParameters>]
+write-lowercase.ps1 [[-text] <String>] [<CommonParameters>]
 
 -text <String>
     Specifies the text to write

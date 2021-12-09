@@ -1,10 +1,10 @@
-## show-berlin-city.ps1 - Shows Berlin in Google Maps
+## show-berlin-city.ps1 - Shows Berlin city in Google Maps
 
-This script launches the Web browser and shows the city of Berlin (Germany) in Google Maps.
+This script launches the Web browser with Google Maps at Berlin city (Germany).
 
 ## Parameters
 ```powershell
-/home/markus/Repos/PowerShell/Scripts/show-berlin-city.ps1 [<CommonParameters>]
+show-berlin-city.ps1 [<CommonParameters>]
 
 [<CommonParameters>]
     This script supports the common parameters: Verbose, Debug, ErrorAction, ErrorVariable, WarningAction, 

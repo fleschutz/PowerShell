@@ -1,10 +1,10 @@
-## close-file-explorer.ps1 - Closes Microsoft's File Explorer
+## close-file-explorer.ps1 - Closes the File Explorer
 
-This script closes Microsoft's File Explorer gracefully.
+This script closes the Microsoft File Explorer application gracefully.
 
 ## Parameters
 ```powershell
-/home/markus/Repos/PowerShell/Scripts/close-file-explorer.ps1 [<CommonParameters>]
+close-file-explorer.ps1 [<CommonParameters>]
 
 [<CommonParameters>]
     This script supports the common parameters: Verbose, Debug, ErrorAction, ErrorVariable, WarningAction, 

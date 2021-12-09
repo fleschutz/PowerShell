@@ -4,7 +4,7 @@ This script installs the SSH client (needs admin rights).
 
 ## Parameters
 ```powershell
-/home/markus/Repos/PowerShell/Scripts/install-ssh-client.ps1 [<CommonParameters>]
+install-ssh-client.ps1 [<CommonParameters>]
 
 [<CommonParameters>]
     This script supports the common parameters: Verbose, Debug, ErrorAction, ErrorVariable, WarningAction, 

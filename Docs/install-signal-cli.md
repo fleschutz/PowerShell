@@ -4,7 +4,7 @@ Installs signal-cli from github.com/AsamK/signal-cli. See the Web page for the c
 
 ## Parameters
 ```powershell
-/home/markus/Repos/PowerShell/Scripts/install-signal-cli.ps1 [[-Version] <String>] [<CommonParameters>]
+install-signal-cli.ps1 [[-Version] <String>] [<CommonParameters>]
 
 -Version <String>
     Specifies the version to install

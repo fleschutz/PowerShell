@@ -1,10 +1,10 @@
-## show-los-angeles-city.ps1 - Shows Los Angeles in Google Maps
+## show-los-angeles-city.ps1 - Shows Los Angeles city in Google Maps
 
-This script launches the Web browser and shows Los Angeles city (USA) in Google Maps.
+This script launches the Web browser with Google Maps at Los Angeles city (USA).
 
 ## Parameters
 ```powershell
-/home/markus/Repos/PowerShell/Scripts/show-los-angeles-city.ps1 [<CommonParameters>]
+show-los-angeles-city.ps1 [<CommonParameters>]
 
 [<CommonParameters>]
     This script supports the common parameters: Verbose, Debug, ErrorAction, ErrorVariable, WarningAction, 

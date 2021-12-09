@@ -4,7 +4,7 @@ This script plays the Tetris melody.
 
 ## Parameters
 ```powershell
-/home/markus/Repos/PowerShell/Scripts/play-tetris-melody.ps1 [<CommonParameters>]
+play-tetris-melody.ps1 [<CommonParameters>]
 
 [<CommonParameters>]
     This script supports the common parameters: Verbose, Debug, ErrorAction, ErrorVariable, WarningAction, 

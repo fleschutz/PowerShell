@@ -4,7 +4,7 @@ This script lists all tags in the given Git repository.
 
 ## Parameters
 ```powershell
-/home/markus/Repos/PowerShell/Scripts/list-tags.ps1 [[-RepoDir] <String>] [[-SearchPattern] <String>] [<CommonParameters>]
+list-tags.ps1 [[-RepoDir] <String>] [[-SearchPattern] <String>] [<CommonParameters>]
 
 -RepoDir <String>
     Specifies the path to the Git repository

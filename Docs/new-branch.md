@@ -4,7 +4,7 @@ This script creates and switches to a new branch in a Git repository.
 
 ## Parameters
 ```powershell
-/home/markus/Repos/PowerShell/Scripts/new-branch.ps1 [[-BranchName] <String>] [[-RepoDir] <String>] [<CommonParameters>]
+new-branch.ps1 [[-BranchName] <String>] [[-RepoDir] <String>] [<CommonParameters>]
 
 -BranchName <String>
     Specifies the branch name

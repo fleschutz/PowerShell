@@ -4,7 +4,7 @@ This script switches a Shelly1 device in the local network.
 
 ## Parameters
 ```powershell
-/home/markus/Repos/PowerShell/Scripts/switch-shelly1.ps1 [[-Host] <String>] [[-TurnMode] <String>] [[-Timer] <Int32>] [<CommonParameters>]
+switch-shelly1.ps1 [[-Host] <String>] [[-TurnMode] <String>] [[-Timer] <Int32>] [<CommonParameters>]
 
 -Host <String>
     Specifies either the hostname or IP address of the Shelly1 device

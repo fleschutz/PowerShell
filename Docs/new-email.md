@@ -4,7 +4,7 @@ This script opens the default email client to write a new email.
 
 ## Parameters
 ```powershell
-/home/markus/Repos/PowerShell/Scripts/new-email.ps1 [[-EmailAddress] <String>] [<CommonParameters>]
+new-email.ps1 [[-EmailAddress] <String>] [<CommonParameters>]
 
 -EmailAddress <String>
     Specifies the email address fill in

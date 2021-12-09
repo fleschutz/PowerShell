@@ -4,7 +4,7 @@ This script plays Jingle Bells.
 
 ## Parameters
 ```powershell
-/home/markus/Repos/PowerShell/Scripts/play-jingle-bells.ps1 [<CommonParameters>]
+play-jingle-bells.ps1 [<CommonParameters>]
 
 [<CommonParameters>]
     This script supports the common parameters: Verbose, Debug, ErrorAction, ErrorVariable, WarningAction, 

@@ -1,10 +1,10 @@
-## show-frankfurt-city.ps1 - Shows Frankfurt in Google Maps
+## show-frankfurt-city.ps1 - Shows Frankfurt city in Google Maps
 
-This script launches the Web browser and shows the city of Frankfurt (Germany) in Google Maps.
+This script launches the Web browser with Google Maps at Frankfurt city (Germany).
 
 ## Parameters
 ```powershell
-/home/markus/Repos/PowerShell/Scripts/show-frankfurt-city.ps1 [<CommonParameters>]
+show-frankfurt-city.ps1 [<CommonParameters>]
 
 [<CommonParameters>]
     This script supports the common parameters: Verbose, Debug, ErrorAction, ErrorVariable, WarningAction, 

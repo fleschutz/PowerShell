@@ -1,10 +1,10 @@
-## show-sydney-city.ps1 - Shows Sydney in Google Maps
+## show-sydney-city.ps1 - Shows Sydney city in Google Maps
 
-This script launches the Web browser and shows the city of Sydney (Australia) in Google Maps.
+This script launches the Web browser with Google Maps at Sydney city (Australia).
 
 ## Parameters
 ```powershell
-/home/markus/Repos/PowerShell/Scripts/show-sydney-city.ps1 [<CommonParameters>]
+show-sydney-city.ps1 [<CommonParameters>]
 
 [<CommonParameters>]
     This script supports the common parameters: Verbose, Debug, ErrorAction, ErrorVariable, WarningAction, 

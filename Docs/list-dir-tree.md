@@ -4,7 +4,7 @@ This script lists the full directory tree.
 
 ## Parameters
 ```powershell
-/home/markus/Repos/PowerShell/Scripts/list-dir-tree.ps1 [[-DirTree] <String>] [<CommonParameters>]
+list-dir-tree.ps1 [[-DirTree] <String>] [<CommonParameters>]
 
 -DirTree <String>
     Specifies the path to the directory tree

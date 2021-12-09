@@ -4,7 +4,7 @@ This script pulls updates for all Git repositories in a folder (including submod
 
 ## Parameters
 ```powershell
-/home/markus/Repos/PowerShell/Scripts/pull-repos.ps1 [[-ParentDir] <String>] [<CommonParameters>]
+pull-repos.ps1 [[-ParentDir] <String>] [<CommonParameters>]
 
 -ParentDir <String>
     Specifies the path to the parent folder

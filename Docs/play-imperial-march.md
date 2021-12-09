@@ -4,7 +4,7 @@ This script plays the Imperial March used in the Star Wars film series.
 
 ## Parameters
 ```powershell
-/home/markus/Repos/PowerShell/Scripts/play-imperial-march.ps1 [<CommonParameters>]
+play-imperial-march.ps1 [<CommonParameters>]
 
 [<CommonParameters>]
     This script supports the common parameters: Verbose, Debug, ErrorAction, ErrorVariable, WarningAction, 

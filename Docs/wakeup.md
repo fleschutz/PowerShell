@@ -4,7 +4,7 @@ Sends a magic UDP packet twice to a computer to wake him up (requires Wake-On-LA
 
 ## Parameters
 ```powershell
-/home/markus/Repos/PowerShell/Scripts/wakeup.ps1 [[-MACaddress] <String>] [[-IPaddress] <String>] [[-Port] <Int32>] [<CommonParameters>]
+wakeup.ps1 [[-MACaddress] <String>] [[-IPaddress] <String>] [[-Port] <Int32>] [<CommonParameters>]
 
 -MACaddress <String>
     Specifies the host's MAC address (e.g. 11:22:33:44:55:66)

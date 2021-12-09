@@ -4,7 +4,7 @@ This script sends an email message.
 
 ## Parameters
 ```powershell
-/home/markus/Repos/PowerShell/Scripts/send-email.ps1 [<CommonParameters>]
+send-email.ps1 [<CommonParameters>]
 
 [<CommonParameters>]
     This script supports the common parameters: Verbose, Debug, ErrorAction, ErrorVariable, WarningAction, 

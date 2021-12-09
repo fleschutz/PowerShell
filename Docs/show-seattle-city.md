@@ -1,10 +1,10 @@
-## show-seattle-city.ps1 - Shows Seattle in Google Maps
+## show-seattle-city.ps1 - Shows Seattle city in Google Maps
 
-This script launches the Web browser and shows the city of Seattle (USA) in Google Maps.
+This script launches the Web browser with Google Maps at Seattle city (USA).
 
 ## Parameters
 ```powershell
-/home/markus/Repos/PowerShell/Scripts/show-seattle-city.ps1 [<CommonParameters>]
+show-seattle-city.ps1 [<CommonParameters>]
 
 [<CommonParameters>]
     This script supports the common parameters: Verbose, Debug, ErrorAction, ErrorVariable, WarningAction, 

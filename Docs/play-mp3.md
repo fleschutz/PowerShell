@@ -1,12 +1,12 @@
-## play-mp3.ps1 - Plays a sound file (MP3 format)
+## play-mp3.ps1 - Plays a MP3 sound file
 
-This script plays a sound file (in .MP3 file format).
+This script plays a sound file in .MP3 file format.
 
 ## Parameters
 ```powershell
-/home/markus/Repos/PowerShell/Scripts/play-mp3.ps1 [[-Filename] <String>] [<CommonParameters>]
+play-mp3.ps1 [[-Path] <String>] [<CommonParameters>]
 
--Filename <String>
+-Path <String>
     Specifies the path to the .MP3 file
     
     Required?                    false

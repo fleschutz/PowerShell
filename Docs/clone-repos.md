@@ -4,7 +4,7 @@ This script clones well-known Git repositories into a folder.
 
 ## Parameters
 ```powershell
-/home/markus/Repos/PowerShell/Scripts/clone-repos.ps1 [[-folder] <String>] [<CommonParameters>]
+clone-repos.ps1 [[-folder] <String>] [<CommonParameters>]
 
 -folder <String>
     Specifies the target folder

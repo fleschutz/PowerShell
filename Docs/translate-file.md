@@ -4,7 +4,7 @@ This script translates a text file into another language.
 
 ## Parameters
 ```powershell
-/home/markus/Repos/PowerShell/Scripts/translate-file.ps1 [[-File] <String>] [[-SourceLang] <String>] [[-TargetLang] <String>] [<CommonParameters>]
+translate-file.ps1 [[-File] <String>] [[-SourceLang] <String>] [[-TargetLang] <String>] [<CommonParameters>]
 
 -File <String>
     Specifies the file to translate

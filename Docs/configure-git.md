@@ -4,7 +4,7 @@ This script configures the user settings for Git.
 
 ## Parameters
 ```powershell
-/home/markus/Repos/PowerShell/Scripts/configure-git.ps1 [[-FullName] <String>] [[-EmailAddress] <String>] [[-FavoriteEditor] <String>] [<CommonParameters>]
+configure-git.ps1 [[-FullName] <String>] [[-EmailAddress] <String>] [[-FavoriteEditor] <String>] [<CommonParameters>]
 
 -FullName <String>
     Specifies the user's full name

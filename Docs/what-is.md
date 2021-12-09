@@ -4,7 +4,7 @@ This script prints a description of the given abbreviation.
 
 ## Parameters
 ```powershell
-/home/markus/Repos/PowerShell/Scripts/what-is.ps1 [[-abbreviation] <String>] [<CommonParameters>]
+what-is.ps1 [[-abbreviation] <String>] [<CommonParameters>]
 
 -abbreviation <String>
     Specifies the appreviation to look for
@@ -22,7 +22,7 @@ This script prints a description of the given abbreviation.
 
 ## Example
 ```powershell
-PS> ./what-is CIA
+PS> ./what-is IAS
 
 ```
 

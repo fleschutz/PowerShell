@@ -4,7 +4,7 @@ This script launches the Windows WLAN settings application.
 
 ## Parameters
 ```powershell
-/home/markus/Repos/PowerShell/Scripts/open-wifi-settings.ps1 [<CommonParameters>]
+open-wifi-settings.ps1 [<CommonParameters>]
 
 [<CommonParameters>]
     This script supports the common parameters: Verbose, Debug, ErrorAction, ErrorVariable, WarningAction, 
