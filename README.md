@@ -145,7 +145,6 @@ Mega Collection of PowerShell Scripts
 | [open-spotify.ps1](Scripts/open-spotify.ps1)         | Opens Spotify                                                      | [Help](Docs/open-spotify.md)            |
 | [open-system-settings.ps1](Scripts/open-system-settings.ps1)| Opens system settings of Windows                            | [Help](Docs/open-system-settings.md)    |
 | [open-task-manager.ps1](Scripts/open-task-manager.ps1)| Starts the Task Manager                                           | [Help](Docs/open-task-manager.md)       |
-| [open-toggl-track.ps1](Scripts/open-toggl-track.ps1) | Opens Toggl Track                                                  | [Help](Docs/open-toggl-track.md)        |
 | [open-videos-folder.ps1](Scripts/open-videos-folder.ps1)| Opens the user's videos folder                                  | [Help](Docs/open-videos-folder.md)      |
 | [open-windows-terminal.ps1](Scripts/open-windows-terminal.ps1)| Launches Windows Terminal                                 | [Help](Docs/open-windows-terminal.md)   |
 | [open-wikipedia-website.ps1](Scripts/open-wikipedia-website.ps1)| Opens Wikipedia's website                               | [Help](Docs/open-wikipedia-website.md)  |
