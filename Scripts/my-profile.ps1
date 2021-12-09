@@ -1,23 +1,26 @@
 ﻿# My PowerShell Profile
 # =====================
-# Welcome to 'my-profile.ps1' - this file defines the look & feel of PowerShell.
-# Adapt the following lines to your needs, please.
+# This file defines the look & feel of PowerShell - adapt the following lines to your needs, please.
 
 
-# My Welcome Message
-# ------------------
-"Welcome to PowerShell at $(hostname)'s 📂$(get-location)"
+# The Welcome Message
+# -------------------
+"Welcome to PowerShell at $(hostname) in 📂$(get-location)"
+
+
+# The Window Title
+# ----------------
 if ($IsLinux) { $Username = $(whoami) } else { $Username = $env:USERNAME }
 $host.ui.RawUI.WindowTitle = "$Username @ $(hostname)"
 
 
-#  My Command Prompt
-#  -----------------
+# The Command Prompt
+# ------------------
 function prompt { write-host -noNewline -foregroundColor yellow "`n➤"; return " " }
 
 
-#  My Alias Names (sorted alphabetically)
-#  --------------
+# Supported Alias Names
+# ---------------------
 del alias:pwd -force -errorAction SilentlyContinue
 set-alias -name pwd -value list-workdir.ps1	# pwd = print working directory
 set-alias -name ll -value get-childitem		# ll = list long
