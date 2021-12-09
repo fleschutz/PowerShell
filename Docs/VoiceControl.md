@@ -46,7 +46,7 @@ When finished say: "Computer, close file explorer" to close the File Explorer.
 
 `Computer, open` [name] `folder`
 --------------------------------
-Launches the File Explorer with the given folder - replace [name] by: `autostart`, `desktop`, `documents`, `downloads`, `Dropbox`, `home`, `music`, `OneDrive`, `pictures`, `recycle bin`, `repos`, or `videos`.
+Launches the File Explorer with the given folder - replace [name] by: `autostart`, `desktop`, `documents`, `downloads`, `Dropbox`, `home`, `music`, `OneDrive`, `pictures`, `recycle bin`, `repos`, `temporary`, or `videos`.
 
 When finished say: "Computer, close file explorer" to close the File Explorer.
 
