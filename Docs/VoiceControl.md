@@ -14,11 +14,11 @@ Voice recognition and response (VRR) is so much fun and so comfortable! Just giv
 -------
 1. Launch *Serenade* and click into the circle to enable Listening mode.
 2. Launch *Windows Terminal* and click into the window.
-3. Speak into the microphone: `Computer, open calculator` - this executes the PowerShell script `open-calculator.ps1` which launches the calculator application.
+3. Speak into the microphone: `"Computer, open calculator"` - this executes the PowerShell script `open-calculator.ps1` which launches the calculator application.
 
 More supported voice commands are:
 
-`Computer, open` [app]
+`"Computer, open` [app]"
 ----------------------
 Launches the given application, just replace [app] by: `3D-Viewer`, `Calculator`, `Git Extensions`, `Magnifier`, `Microsoft Paint`, `Microsoft Store`, `Netflix`, `Notepad`, `OBS Studio`, `Outlook`, `Paint 3D`, `Spotify`, `Thunderbird`, `Visual Studio`, or `Windows Terminal`.
 
