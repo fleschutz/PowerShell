@@ -119,14 +119,6 @@ When finished say: *"Close tab"* or: *"Computer, close [name] browser"* to close
 * *"Computer, turn volume down"* - decreases the audio volume by 10%
 
 
-💬 Farewell Commands
---------------------
-* *"Computer, I'll be back."*
-* *"Computer, good bye."*
-* *"Computer, bye-bye."*
-* *"Computer, see you."*
-
-
 💭 Various Voice Commands
 -------------------------
 * *"Computer, connect VPN"* - connects to VPN
@@ -138,3 +130,8 @@ When finished say: *"Close tab"* or: *"Computer, close [name] browser"* to close
 * *"Computer, tell joke."*
 * *"Computer, tell quote."*
 * *"Computer, thank you."*
+
+
+*"Computer, [farewell]."*
+-------------------------
+Say farewell to the computer, replace [farewell] by: `bye`, `bye-bye`, `good-bye`, `I'll be back`, `see you`.
