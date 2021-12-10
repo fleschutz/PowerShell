@@ -113,26 +113,30 @@ When finished say: "Close tab" or: "Computer, close [name] browser" to close the
 * `Computer, turn volume down`
 
 
-💭 Misc Voice Commands
-----------------------
-* `Computer, locate my phone`
-* `Computer, tell joke`
-* `Computer, tell quote`
-* `Computer, repeat last reply`
-* `Computer, connect VPN`
-
-
-💬 Welcome & Farewell
----------------------
+💬 Welcome Commands
+-------------------
 * `Computer, Hi`
 * `Computer, say hello`
 * `Computer, good morning`
 * `Computer, good evening`
 * `Computer, good night`
 * `Computer, how are you?`
-* `Computer, come on`
-* `Computer, thank you`
+
+
+💬 Farewell Commands
+--------------------
 * `Computer, I'll be back`
 * `Computer, good bye`
 * `Computer, bye-bye`
 * `Computer, see you`
+
+💭 Various Voice Commands
+-------------------------
+* `Computer, locate my phone`
+* `Computer, tell joke`
+* `Computer, tell quote`
+* `Computer, repeat last reply`
+* `Computer, connect VPN`
+* `Computer, come on`
+* `Computer, thank you`
+* `Computer, give me five`
