@@ -98,9 +98,9 @@ Launches the default Web browser with the given online manual - replace [name] b
 When finished say: "Close tab" or: "Computer, close [name] browser" to close the Web browser.
 
 
-*"Computer, show `[name]` rate"*
+*"Computer, show [NAME] rate"*
 --------------------------------
-Launches the default Web browser with the given exchange rate. Just replace `[name]` by: `Bitcoin`, `Ether`, `Euro`, `Tether`, or `US dollar`.
+Launches the default Web browser with the given exchange rate. Just replace [NAME] by: `Bitcoin`, `Ether`, `Euro`, `Tether`, or `US dollar`.
 
 When finished say: *"Close tab"* or: *"Computer, close [name] browser"* to close the Web browser.
 
