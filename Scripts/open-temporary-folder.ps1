@@ -12,16 +12,18 @@
 #>
 
 function GetTempDir {
+	if ("$env:TEMP" -ne "")	{ return "$env:TEMP" }
+	if ("$env:TMP" -ne "")	{ return "$env:TMP" }
 	if ($IsLinux) { return "/tmp" }
-	return "$env:TEMP"
+	return "C:\Temp"
 }
 
 try {
-	$TargetDir = resolve-path GetTempDir
-	if (-not(test-path "$TargetDir" -pathType container)) {
-		throw "Temporary folder at 📂$TargetDir doesn't exist (yet)"
+	$Path = GetTempDir
+	if (-not(test-path "$Path" -pathType container)) {
+		throw "Temporary folder at 📂$Path doesn't exist (yet)"
 	}
-	& "$PSScriptRoot/open-file-explorer.ps1" "$TargetDir"
+	& "$PSScriptRoot/open-file-explorer.ps1" "$Path"
 	exit 0 # success
 } catch {
 	"⚠️ Error: $($Error[0]) ($($MyInvocation.MyCommand.Name):$($_.InvocationInfo.ScriptLineNumber))"

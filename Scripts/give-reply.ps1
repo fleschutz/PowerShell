@@ -16,8 +16,10 @@
 param([string]$text = "")
 
 function GetTempDir {
+	if ("$env:TEMP" -ne "")	{ return "$env:TEMP" }
+	if ("$env:TMP" -ne "")	{ return "$env:TMP" }
 	if ($IsLinux) { return "/tmp" }
-	return "$env:TEMP"
+	return "C:\Temp"
 }
 
 try {

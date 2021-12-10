@@ -12,8 +12,10 @@
 #>
 
 function GetTempDir {
+	if ("$env:TEMP" -ne "")	{ return "$env:TEMP" }
+	if ("$env:TMP" -ne "")	{ return "$env:TMP" }
 	if ($IsLinux) { return "/tmp" }
-	return "$env:TEMP"
+	return "C:\Temp"
 }
 
 if (test-path "$(GetTempDir)/last_reply_given.txt" -pathType leaf) {
