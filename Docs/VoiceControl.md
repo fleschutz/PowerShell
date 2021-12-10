@@ -14,20 +14,20 @@ Voice recognition and response (VRR) is so much fun and so comfortable! Just giv
 -------
 1. Launch *Serenade* and click into the circle to enable Listening mode.
 2. Launch *Windows Terminal* and click into the window.
-3. Speak into the microphone: `"Computer, open calculator"` - this executes the PowerShell script `open-calculator.ps1` which launches the calculator application.
+3. Speak into the microphone: `*"Computer, open calculator"*` - this executes the PowerShell script `open-calculator.ps1` which launches the calculator application.
 
 More supported voice commands are:
 
-`"Computer, open` [app]"
-----------------------
-Launches the given application, just replace [app] by: `3D-Viewer`, `Calculator`, `Git Extensions`, `Magnifier`, `Microsoft Paint`, `Microsoft Store`, `Netflix`, `Notepad`, `OBS Studio`, `Outlook`, `Paint 3D`, `Spotify`, `Thunderbird`, `Visual Studio`, or `Windows Terminal`.
-
-When finished say: "Computer, close [app]" to close the application.
-
-
-`Computer, check` [name]
+*"Computer, open [APP]"*
 ------------------------
-Lets the computer check something, replace [name] by: `Bitcoin rate`, `Christmas`, `CPU`, `date`, `dawn`, `DNS`, `drives`, `dusk`, `Easter Sunday`, `Earth` (fun), `Ether rate`, `headlines`, `Independence Day`, `ISS position`, `midnight`, `moon phase`, `New Year`, `noon`, `operating system`, `ping`, `Santa`, `sunrise`, `sunset`, `swap space`, `tea time`, `Tether rate`, `time`, `time zone`, `up-time`, `VPN`, `weather`, or `zenith`.
+Launches the given application, just replace [APP] by: `3D-Viewer`, `Calculator`, `Git Extensions`, `Magnifier`, `Microsoft Paint`, `Microsoft Store`, `Netflix`, `Notepad`, `OBS Studio`, `Outlook`, `Paint 3D`, `Spotify`, `Thunderbird`, `Visual Studio`, or `Windows Terminal`.
+
+When finished say: *"Computer, close [APP]"* to close the application.
+
+
+*"Computer, check [NAME]"*
+--------------------------
+Lets the computer check something, replace [NAME] by: `Bitcoin rate`, `Christmas`, `CPU`, `date`, `dawn`, `DNS`, `drives`, `dusk`, `Easter Sunday`, `Earth` (fun), `Ether rate`, `headlines`, `Independence Day`, `ISS position`, `midnight`, `moon phase`, `New Year`, `noon`, `operating system`, `ping`, `Santa`, `sunrise`, `sunset`, `swap space`, `tea time`, `Tether rate`, `time`, `time zone`, `up-time`, `VPN`, `weather`, or `zenith`.
 
 
 `Computer, open` [name] `browser`
