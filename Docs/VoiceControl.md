@@ -7,7 +7,8 @@ Voice recognition and response (VRR) is so much fun and so comfortable! Just giv
 --------------
 1. Download and install *Serenade* from https://serenade.ai/ (Serenade is freely available for Linux, MacOS, and Windows).
 2. Download and install the *PowerShell Scripts*, allow the script execution and set the search path to it (see the FAQ page).
-3. Execute: `./export-to-serenade.ps1 Computer` in the *PowerShell Scripts*, this creates a custom JavaScript file at `$HOME/.serenade/scripts/PowerShell.js` using the wake word 'Computer'. Recommended wake words with a high recognition rate are: "Alexa", "Bixby", "Computer", "James", or "Jarvis". In the following the wake word "Computer" is used.
+3. Select your personal wake word. Recommended wake words with a high recognition rate are: "Alexa", "Bixby", "Computer", "James", or "Jarvis". In the following the wake word "Computer" is used.
+4. Execute: `./export-to-serenade.ps1 Computer` in the *PowerShell Scripts*, this creates a custom JavaScript file at `$HOME/.serenade/scripts/PowerShell.js` using the wake word 'Computer'. 
 
 
 🗣 Usage
