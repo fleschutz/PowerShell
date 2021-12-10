@@ -107,38 +107,38 @@ When finished say: "Close tab" or: "Computer, close [name] browser" to close the
 
 🔊 Audio Voice Commands
 ------------------------
-* `Computer, turn volume off`
-* `Computer, turn volume on`
-* `Computer, turn volume up`
-* `Computer, turn volume down`
+* "Computer, turn volume off" - mutes audio
+* "Computer, turn volume on" - unmutes audio
+* "Computer, turn volume up" - increases the audio volume by 10%
+* "Computer, turn volume down" - decreases the audio volume by 10%
 
 
 💬 Welcome Commands
 -------------------
-* `Computer, Hi`
-* `Computer, say hello`
-* `Computer, good morning`
-* `Computer, good evening`
-* `Computer, good night`
-* `Computer, how are you?`
+* "Computer, Hi!"
+* "Computer, say hello!"
+* "Computer, good morning."
+* "Computer, good evening."
+* "Computer, good night."
+* "Computer, how are you?"
 
 
 💬 Farewell Commands
 --------------------
-* `Computer, I'll be back`
-* `Computer, good bye`
-* `Computer, bye-bye`
-* `Computer, see you`
+* "Computer, I'll be back."
+* "Computer, good bye."
+* "Computer, bye-bye."
+* "Computer, see you."
 
 
 💭 Various Voice Commands
 -------------------------
-* `Computer, connect VPN`
-* `Computer, come on`
-* `Computer, give me five`
-* `Computer, locate my phone`
-* `Computer, repeat last reply`
-* `Computer, roll a dice`
-* `Computer, tell joke`
-* `Computer, tell quote`
-* `Computer, thank you`
+* "Computer, connect VPN" - connects to VPN
+* "Computer, come on"
+* "Computer, give me five"
+* "Computer, locate my phone"
+* "Computer, repeat last reply"
+* "Computer, roll a dice" - returns a dice number
+* "Computer, tell joke."
+* "Computer, tell quote."
+* "Computer, thank you."
