@@ -130,13 +130,15 @@ When finished say: "Close tab" or: "Computer, close [name] browser" to close the
 * `Computer, bye-bye`
 * `Computer, see you`
 
+
 💭 Various Voice Commands
 -------------------------
-* `Computer, locate my phone`
-* `Computer, tell joke`
-* `Computer, tell quote`
-* `Computer, repeat last reply`
 * `Computer, connect VPN`
 * `Computer, come on`
-* `Computer, thank you`
 * `Computer, give me five`
+* `Computer, locate my phone`
+* `Computer, repeat last reply`
+* `Computer, roll a dice`
+* `Computer, tell joke`
+* `Computer, tell quote`
+* `Computer, thank you`
