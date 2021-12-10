@@ -1,6 +1,6 @@
 Executing PowerShell Scripts by Voice
 =====================================
-Voice recognition and response (VRR) is so much fun and so comfortable! Just give it a try.
+Build your own voice assistant by voice recognition and response (VRR). It's so much fun and so comfortable, just give it a try 😊
 
 
 🔧 Installation
@@ -30,9 +30,9 @@ Launches the given application, replace [app] by: `3D-Viewer`, `Calculator`, `Gi
 When finished say: *"Computer, close [app]"* to close the application.
 
 
-*"Computer, check [name]."*
+*"Computer, check [item]."*
 --------------------------
-Lets the computer check something, replace [name] by: `Bitcoin rate`, `Christmas`, `CPU`, `date`, `dawn`, `DNS`, `drives`, `dusk`, `Easter Sunday`, `Earth` (fun), `Ether rate`, `headlines`, `Independence Day`, `ISS position`, `midnight`, `moon phase`, `New Year`, `noon`, `operating system`, `ping`, `Santa`, `sunrise`, `sunset`, `swap space`, `tea time`, `Tether rate`, `time`, `time zone`, `up-time`, `VPN`, `weather`, or `zenith`.
+Lets the computer check something, replace [item] by: `Bitcoin rate`, `Christmas`, `CPU`, `date`, `dawn`, `DNS`, `drives`, `dusk`, `Easter Sunday`, `Earth` (fun), `Ether rate`, `headlines`, `Independence Day`, `ISS position`, `midnight`, `moon phase`, `New Year`, `noon`, `operating system`, `ping`, `Santa`, `sunrise`, `sunset`, `swap space`, `tea time`, `Tether rate`, `time`, `time zone`, `up-time`, `VPN`, `weather`, or `zenith`.
 
 
 *"Computer, open [name] browser."*
@@ -42,9 +42,9 @@ Launches the given Web browser or opens a new tab - replace [name] by: `Chrome`,
 When finished say: *"Close tab"* or: *"Computer, close [name] browser"* to close the Web browser.
 
 
-*"Computer, open [name] drive."*
+*"Computer, open [letter] drive."*
 -------------------------------
-Launches the File Explorer with the given drive - replace [name] by: `C:`, `D:`, `E:`, `F:`, `G:`, or `M:`.
+Launches the File Explorer with the given drive - replace [letter] by: `C:`, `D:`, `E:`, `F:`, `G:`, or `M:`.
 
 When finished say: *"Computer, close file explorer"* to close the File Explorer.
 
@@ -70,16 +70,16 @@ Launches the default Web browser with Google Maps at the given city - replace [N
 When finished say: *"Close tab"* or: *"Computer, close [name] browser"* to close the Web browser.
 
 
-*"Computer, play radio [name]."*
+*"Computer, play radio [station]."*
 -------------------------------
-Launches the default Web browser and tunes into an internet radio station - replace [name] by: `7`, `AFN Stuttgart`, `Arabella`, `Bob`, `Club Mix`, `Dance FM`, `FFN`, `Galaxy`, `Gong`, `Ibiza`, `Jam FM`, `Kiss Kiss`, `Malibu`, `N-JOY`, `Paloma`, or `You FM`.
+Launches the default Web browser and tunes into an internet radio station - replace [station] by: `7`, `AFN Stuttgart`, `Arabella`, `Bob`, `Club Mix`, `Dance FM`, `FFN`, `Galaxy`, `Gong`, `Ibiza`, `Jam FM`, `Kiss Kiss`, `Malibu`, `N-JOY`, `Paloma`, or `You FM`.
 
 When finished say: *"Close tab"* or: *"Computer, close [name] browser"* to close the Web browser.
 
 
 *"Computer, play [name] sound."*
 -------------------------------
-* starts the playback of the given sound - replace [NAME] by: `bee`, `beep`, `cat`, `cow`, `dog`, `donkey`, `elephant`, `elk`, `frog`, `goat`, `gorilla`, `horse`, `lion`, `parrot`, `pig`, `rattlesnake`, `vulture`, or `wolf`.
+* starts the playback of the given sound - replace [name] by: `bee`, `beep`, `cat`, `cow`, `dog`, `donkey`, `elephant`, `elk`, `frog`, `goat`, `gorilla`, `horse`, `lion`, `parrot`, `pig`, `rattlesnake`, `vulture`, or `wolf`.
 
 
 *"Computer, play [name] game."*
