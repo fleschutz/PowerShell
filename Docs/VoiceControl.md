@@ -14,7 +14,7 @@ Voice recognition and response (VRR) is so much fun and so comfortable! Just giv
 -------
 1. Launch *Serenade* and click into the circle to enable Listening mode.
 2. Launch *Windows Terminal* and click into the window.
-3. Speak into the microphone: `*"Computer, open calculator"*` - this executes the PowerShell script `open-calculator.ps1` which launches the calculator application.
+3. Speak into the microphone: **"*Computer, open calculator*"** - this executes the PowerShell script `open-calculator.ps1` which launches the calculator application.
 
 More supported voice commands are:
 
@@ -30,72 +30,72 @@ When finished say: *"Computer, close [APP]"* to close the application.
 Lets the computer check something, replace [NAME] by: `Bitcoin rate`, `Christmas`, `CPU`, `date`, `dawn`, `DNS`, `drives`, `dusk`, `Easter Sunday`, `Earth` (fun), `Ether rate`, `headlines`, `Independence Day`, `ISS position`, `midnight`, `moon phase`, `New Year`, `noon`, `operating system`, `ping`, `Santa`, `sunrise`, `sunset`, `swap space`, `tea time`, `Tether rate`, `time`, `time zone`, `up-time`, `VPN`, `weather`, or `zenith`.
 
 
-`Computer, open` [name] `browser`
+*"Computer, open [NAME] browser"*
 ---------------------------------
-Launches the given Web browser or opens a new tab - replace [name] by: `Chrome`, `default`, `Edge`, or `Firefox`.
+Launches the given Web browser or opens a new tab - replace [NAME] by: `Chrome`, `default`, `Edge`, or `Firefox`.
 
-When finished say: "Close tab" or: "Computer, close [name] browser" to close the Web browser.
+When finished say: *"Close tab"* or: *"Computer, close [NAME] browser"* to close the Web browser.
 
 
-`Computer, open` [name] `drive`
+*"Computer, open [NAME] drive"*
 -------------------------------
-Launches the File Explorer with the given drive - replace [name] by: `C:`, `D:`, `E:`, `F:`, `G:`, or `M:`.
+Launches the File Explorer with the given drive - replace [NAME] by: `C:`, `D:`, `E:`, `F:`, `G:`, or `M:`.
 
-When finished say: "Computer, close file explorer" to close the File Explorer.
+When finished say: *"Computer, close file explorer"* to close the File Explorer.
 
 
-`Computer, open` [name] `folder`
+*"Computer, open [NAME] folder"*
 --------------------------------
-Launches the File Explorer with the given folder - replace [name] by: `apps`, `autostart`, `desktop`, `documents`, `downloads`, `Dropbox`, `home`, `music`, `OneDrive`, `pictures`, `recycle bin`, `repos`, `temporary`, or `videos`.
+Launches the File Explorer with the given folder - replace [NAME] by: `apps`, `autostart`, `desktop`, `documents`, `downloads`, `Dropbox`, `home`, `music`, `OneDrive`, `pictures`, `recycle bin`, `repos`, `temporary`, or `videos`.
 
-When finished say: "Computer, close file explorer" to close the File Explorer.
+When finished say: *"Computer, close file explorer"* to close the File Explorer.
 
 
-`Computer, open` [name] `website`
+*"Computer, open [NAME] website"*
 ---------------------------------
-Launches the default Web browser with the given website - replace [name] by: `Amazon`, `Apple`, `Baidu`, `BBC`, `Bing`, `BitBucket`, `CDC`, `CIA`, `CNN`, `DistroWatch`, `Dropbox`, `eBay`, `Facebook`, `FBI`, `Flipboard`, `FourSquare`, `FRITZ!Box`, `FRITZ!Repeater`, `GitHub`, `GliderTracker`, `HolidayCheck`, `HRworks`, `Instagram`, `IPFS`, `Microsoft`, `NASA`, `NBC`, `Netflix`, `Notepad`, `Outdoor Active`, `PayPal`, `Pinterest`, `Pixabay`, `Plex`, `Serenade`, `Slashdot`, `Snap Store`, `Starbucks`, `Tesla`, `TikTok`, `Toggl`, `Topo Map`, `Twitter`,  `UFA`, `Unsplash`, `Walmart`, `WhatsApp`, `White House`, `Windy`, `Wikipedia`, `Wired`, `Wolfram Alpha`, `World News`, `Yahoo`, or `YouTube`.
+Launches the default Web browser with the given website - replace [NAME] by: `Amazon`, `Apple`, `Baidu`, `BBC`, `Bing`, `BitBucket`, `CDC`, `CIA`, `CNN`, `DistroWatch`, `Dropbox`, `eBay`, `Facebook`, `FBI`, `Flipboard`, `FourSquare`, `FRITZ!Box`, `FRITZ!Repeater`, `GitHub`, `GliderTracker`, `HolidayCheck`, `HRworks`, `Instagram`, `IPFS`, `Microsoft`, `NASA`, `NBC`, `Netflix`, `Notepad`, `Outdoor Active`, `PayPal`, `Pinterest`, `Pixabay`, `Plex`, `Serenade`, `Slashdot`, `Snap Store`, `Starbucks`, `Tesla`, `TikTok`, `Toggl`, `Topo Map`, `Twitter`,  `UFA`, `Unsplash`, `Walmart`, `WhatsApp`, `White House`, `Windy`, `Wikipedia`, `Wired`, `Wolfram Alpha`, `World News`, `Yahoo`, or `YouTube`.
 
-When finished say: "Close tab" or: "Computer, close [name] browser" to close the Web browser.
+When finished say: *"Close tab"* or: *"Computer, close [NAME] browser"* to close the Web browser.
 
 
-`Computer, show` [name] `city`
+*"Computer, show [NAME] city"*
 ------------------------------
-Launches the default Web browser with Google Maps at the given city - replace [name] by: `Atlanta`, `Barcelona`, `Berlin`, `Boston`, `Cairo`, `Calgary`, `Cape Town`, `Chicago`, `Dallas`, `Denver`, `Dubai`, `Dublin`, `Frankfurt`, `Hamburg`, `Hong Kong`, `Honolulu`, `Jerusalem`, `Kansas`, `Las Vegas`, `Lisbon`, `London`, `Los Angeles`, `Madrid`, `Mexico`, `Miami`, `Montreal`, `Moscow`, `Munich`, `New York`, `Panama`, `Paris`, `Rome`, `San Francisco`, `Seattle`, `Singapore`, `Sydney`, `Tokyo`, `Toronto`, `Tunis`, `Vienna`, `Washington`, or `Zurich`.
+Launches the default Web browser with Google Maps at the given city - replace [NAME] by: `Atlanta`, `Barcelona`, `Berlin`, `Boston`, `Cairo`, `Calgary`, `Cape Town`, `Chicago`, `Dallas`, `Denver`, `Dubai`, `Dublin`, `Frankfurt`, `Hamburg`, `Hong Kong`, `Honolulu`, `Jerusalem`, `Kansas`, `Las Vegas`, `Lisbon`, `London`, `Los Angeles`, `Madrid`, `Mexico`, `Miami`, `Montreal`, `Moscow`, `Munich`, `New York`, `Panama`, `Paris`, `Rome`, `San Francisco`, `Seattle`, `Singapore`, `Sydney`, `Tokyo`, `Toronto`, `Tunis`, `Vienna`, `Washington`, or `Zurich`.
 
-When finished say: "Close tab" or: "Computer, close [name] browser" to close the Web browser.
-
-
-`Computer, play radio` [name]
------------------------------
-Launches the default Web browser and tunes into an internet radio station - replace [name] by: `7`, `AFN Stuttgart`, `Arabella`, `Bob`, `Club Mix`, `Dance FM`, `FFN`, `Galaxy`, `Gong`, `Ibiza`, `Jam FM`, `Kiss Kiss`, `Malibu`, `N-JOY`, `Paloma`, or `You FM`.
-
-When finished say: "Close tab" or: "Computer, close [name] browser" to close the Web browser.
+When finished say: *"Close tab"* or: *"Computer, close [NAME] browser"* to close the Web browser.
 
 
-`Computer, play` [name] `sound`
+*"Computer, play radio [NAME]"*
 -------------------------------
-* starts to play the given audio sound - replace [name] by: `bee`, `beep`, `cat`, `cow`, `dog`, `donkey`, `elephant`, `elk`, `frog`, `goat`, `gorilla`, `horse`, `lion`, `parrot`, `pig`, `rattlesnake`, `vulture`, or `wolf`.
+Launches the default Web browser and tunes into an internet radio station - replace [NAME] by: `7`, `AFN Stuttgart`, `Arabella`, `Bob`, `Club Mix`, `Dance FM`, `FFN`, `Galaxy`, `Gong`, `Ibiza`, `Jam FM`, `Kiss Kiss`, `Malibu`, `N-JOY`, `Paloma`, or `You FM`.
+
+When finished say: *"Close tab"* or: *"Computer, close [NAME] browser"* to close the Web browser.
 
 
-`Computer, play` [name] `game`
+*"Computer, play [NAME] sound"*
+-------------------------------
+* starts the playback of the given sound - replace [NAME] by: `bee`, `beep`, `cat`, `cow`, `dog`, `donkey`, `elephant`, `elk`, `frog`, `goat`, `gorilla`, `horse`, `lion`, `parrot`, `pig`, `rattlesnake`, `vulture`, or `wolf`.
+
+
+*"Computer, play [NAME] game"*
 ------------------------------
-Launches the default Web browser and plays the given game - replace [name] by: `2048`, `Chess`, `Cube`, `Pacman`, `Tetris`, `TicTacToe`, or `Tower`.
+Launches the default Web browser and plays the given game - replace [NAME] by: `2048`, `Chess`, `Cube`, `Pacman`, `Tetris`, `TicTacToe`, or `Tower`.
 
-When finished say: "Close tab" or: "Computer, close [name] browser" to close the Web browser.
+When finished say: *"Close tab"* or: *"Computer, close [NAME] browser"* to close the Web browser.
 
 
-`Computer, open` [name] `settings`
+*"Computer, open [NAME] settings"*
 ----------------------------------
-Launches the Windows settings - replace [name] by: `activation`, `apps`, `background`, `backup`, `bluetooth`, `color`, `date`, `default apps`, `developer`, `display`, `ethernet`, `lockscreen`, `maps`, `printer`, `proxy`, `recovery`, `speech`, `start`, `system` *(the top level settings!)*, `taskbar`, `themes`, `time`, `update`, `USB`, `VPN`, or `Wifi`.
+Launches the Windows settings - replace [NAME] by: `activation`, `apps`, `background`, `backup`, `bluetooth`, `color`, `date`, `default apps`, `developer`, `display`, `ethernet`, `lockscreen`, `maps`, `printer`, `proxy`, `recovery`, `speech`, `start`, `system` *(the top level settings!)*, `taskbar`, `themes`, `time`, `update`, `USB`, `VPN`, or `Wifi`.
 
-When finished say: "Computer, close system settings" to close the Windows settings.
+When finished say: *"Computer, close system settings"* to close the Windows settings.
 
 
-`Computer, show` [name] `manual`
+*"Computer, show [NAME] manual"*
 --------------------------------
-Launches the default Web browser with the given online manual - replace [name] by: `Ant`, `Apple`, `Audacity`, `Azure`, `Bash`, `Blender`, `Chrome`, `Edge`, `Firefox`, `GCC`, `Git`, `Jenkins`, `MSBuild`, `OBS Studio`, `PowerShell`, `Serenade`, `SystemRescue`, `Toyota`, `Vim`, `Voice` *(yes, this page!)*, `Volkswagen`, or `Windows`.
+Launches the default Web browser with the given online manual - replace [NAME] by: `Ant`, `Apple`, `Audacity`, `Azure`, `Bash`, `Blender`, `Chrome`, `Edge`, `Firefox`, `GCC`, `Git`, `Jenkins`, `MSBuild`, `OBS Studio`, `PowerShell`, `Serenade`, `SystemRescue`, `Toyota`, `Vim`, `Voice` *(yes, this page!)*, `Volkswagen`, or `Windows`.
 
-When finished say: "Close tab" or: "Computer, close [name] browser" to close the Web browser.
+When finished say: *"Close tab"* or: *"Computer, close [NAME] browser"* to close the Web browser.
 
 
 *"Computer, show [NAME] rate"*
