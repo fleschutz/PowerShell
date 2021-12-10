@@ -109,6 +109,7 @@ When finished say: *"Close tab"* or: *"Computer, close [name] browser"* to close
 🔊 Audio Voice Commands
 ------------------------
 * *"Computer, turn volume off"* - mutes audio
+* *"Computer, shut up"* - mutes the audio
 * *"Computer, turn volume on"* - unmutes audio
 * *"Computer, turn volume up"* - increases the audio volume by 10%
 * *"Computer, turn volume down"* - decreases the audio volume by 10%
