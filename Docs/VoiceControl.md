@@ -21,7 +21,7 @@ More supported voice commands are:
 
 *"Computer, [greeting]."*
 -------------------------
-Greets the computer, just replace [greeting] by: `good evening`, `good morning`, `good night`, `happy christmas`, `happy easter`, `happy father's day`, `happy halloween`, `happy hanukkah`, `happy holidays`, `happy kwanzaa`, `happy mother's day`, `happy new year`, `happy ramadan`, `happy St. Patrick's day`, `happy thanksgiving`, `happy valentine`s day', `hello`, `hi`, `how are you?`, `how do you do?`, `merry christmas`, or `say hello`.
+Greets the computer, just replace [greeting] by: `good evening`, `good morning`, `good night`, `happy christmas`, `happy easter`, `happy father's day`, `happy halloween`, `happy hanukkah`, `happy holidays`, `happy kwanzaa`, `happy mother's day`, `happy new year`, `happy ramadan`, `happy St. Patrick's day`, `happy thanksgiving`, `happy valentine's day`, `hello`, `hi`, `how are you?`, `how do you do?`, `merry christmas`, or `say hello`.
 
 *"Computer, open [app]."*
 ------------------------
