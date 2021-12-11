@@ -93,10 +93,11 @@ Mega Collection of PowerShell Scripts
 | ---------------------------------------------------- | ------------------------------------------------------------------ | --------------------------------------- |
 | [close-calculator.ps1](Scripts/close-calculator.ps1) | Closes the calculator application                                  | [Help](Docs/close-calculator.md)        |
 | [close-cortana.ps1](Scripts/close-cortana.ps1)       | Closes Cortana                                                     | [Help](Docs/close-cortana.md)           |
-| [close-file-explorer.ps1](Scripts/close-file-explorer.ps1) | Closes Microsoft File Explorer                               | [Help](Docs/close-file-explorer.md)     |
-| [close-chrome-browser.ps1](Scripts/close-chrome-browser.ps1)| Closes the Chrome browser                                   | [Help](Docs/close-chrome-browser.md)    |
+| [close-chrome.ps1](Scripts/close-chrome.ps1)         | Closes the Chrome browser                                          | [Help](Docs/close-chrome.md)            |
 | [close-program.ps1](Scripts/close-program.ps1)       | Closes the given program gracefully                                | [Help](Docs/close-program.md)           |
-| [close-edge-browser.ps1](Scripts/close-edge-browser.ps1)| Closes the Edge Web browser                                     | [Help](Docs/close-edge-browser.md)      |
+| [close-edge.ps1](Scripts/close-edge.ps1)             | Closes the Edge browser                                            | [Help](Docs/close-edge.md)              |
+| [close-file-explorer.ps1](Scripts/close-file-explorer.ps1)| Closes Microsoft File Explorer                                | [Help](Docs/close-file-explorer.md)     |
+| [close-firefox.ps1](Scripts/close-firefox.ps1)       | Closes the Firefox browser                                         | [Help](Docs/close-edge.md)              |
 | [close-microsoft-store.ps1](Scripts/close-microsoft-store.ps1)| Closes the Microsoft Store app                            | [Help](Docs/close-microsoft-store.md)   |
 | [close-netflix.ps1](Scripts/close-netflix.ps1)       | Closes the Netflix app                                             | [Help](Docs/close-netflix.md)           |
 | [close-onedrive.ps1](Scripts/close-onedrive.ps1)     | Closes Microsoft OneDrive                                          | [Help](Docs/close-onedrive.md)          |
@@ -112,14 +113,16 @@ Mega Collection of PowerShell Scripts
 | [list-clipboard.ps1](Scripts/list-clipboard.ps1)     | Lists the contents of the clipboard                                | [Help](Docs/list-clipboard.md)          |
 | [new-email.ps1](Scripts/new-email.ps1)               | Starts the default email client to write a new email               | [Help](Docs/new-email.md)               |
 | [open-amazon-website.ps1](Scripts/open-amazon-website.ps1)| Opens Amazon's website                                        | [Help](Docs/open-amazon-website.md)     |
-| [open-browser.ps1](Scripts/open-browser.ps1)         | Starts the default Web browser                                     | [Help](Docs/open-browser.md)            |
+| [open-default-browser.ps1](Scripts/open-default-browser.ps1)| Launches the default Web browser                            | [Help](Docs/open-default-browser.md)    |
 | [open-calculator.ps1](Scripts/open-calculator.ps1)   | Starts the calculator program                                      | [Help](Docs/open-calculator.md)         |
 | [open-c-drive.ps1](Scripts/open-c-drive.ps1)         | Opens the C: drive folder                                          | [Help](Docs/open-c-drive.md)            |
 | [open-downloads-folders.ps1](Scripts/open-downloads-folder.ps1) | Opens the user's downloads folder                       | [Help](Docs/open-downloads-folder.md)   |
 | [open-dropbox-folder.ps1](Scripts/open-dropbox-folder.ps1) | Opens the user's Dropbox folder                              | [Help](Docs/open-dropbox-folder.md)     |
+| [open-edge.ps1](Scripts/open-edge.ps1)               | Launches the Edge browser                                          | [Help](Docs/open-edge.md)               |
 | [open-email-client.ps1](Scripts/open-browser.ps1)    | Starts the default email client                                    | [Help](Docs/open-email-client.md)       |
 | [open-facebook-website.ps1](Scripts/open-facebook-website.ps1)| Opens Facebook's website                                  | [Help](Docs/open-facebook-website.md)   |
 | [open-file-explorer.ps1](Scripts/open-file-explorer.ps1) | Opens the File Explorer                                        | [Help](Docs/open-file-explorer.md)      |
+| [open-firefox.ps1](Scripts/open-firefox.ps1)         | Launches the Firefox browser                                       | [Help](Docs/open-firefox.md)            |
 | [open-fritz-box.ps1](Scripts/open-fritz-box.ps1)     | Opens FRITZ!Box's web interface                                    | [Help](Docs/open-fritz-box.md)          |
 | [open-github.ps1](Scripts/open-github.ps1)           | Opens GitHub's website                                             | [Help](Docs/open-github.md)             |
 | [open-google-contacts.ps1](Scripts/open-google-contacts.ps1) | Opens Google Contacts                                      | [Help](Docs/open-google-contacts.md)    |
@@ -133,7 +136,6 @@ Mega Collection of PowerShell Scripts
 | [open-home-folder.ps1](Scripts/open-home-folder.ps1) | Opens the user's home folder                                       | [Help](Docs/open-home-folder.md)        |
 | [open-music-folder.ps1](Scripts/open-music-folder.ps1)| Opens the user's music folder                                     | [Help](Docs/open-music-folder.md)       |
 | [open-netflix.ps1](Scripts/open-netflix.ps1)         | Starts the Netflix app                                             | [Help](Docs/open-netflix.md)            |
-| [open-edge-browser.ps1](Scripts/open-edge-browser.ps1)| Launches the Edge browser                                         | [Help](Docs/open-edge-browser.md)       |
 | [open-microsoft-store.ps1](Scripts/open-microsoft-store.ps1)| Launches the Microsoft Store app                            | [Help](Docs/open-microsoft-store.md)    |
 | [open-notepad.ps1](Scripts/open-notepad.ps1)         | Starts the Notepad app                                             | [Help](Docs/open-notepad.md)            |
 | [open-onedrive-folder.ps1](Scripts/open-onedrive-folder.ps1)| Opens the user's OneDrive folder                            | [Help](Docs/open-onedrive-folder.md)    |
