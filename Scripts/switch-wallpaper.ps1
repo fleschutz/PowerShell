@@ -1,24 +1,28 @@
 ﻿<#
 .SYNOPSIS
-	Sets the given image file as desktop wallpaper
+	Switches to a random wallpaper
 .DESCRIPTION
-	Sets the given image file as desktop wallpaper (.JPG or .PNG supported)
-.PARAMETER ImageFile
-	Specifies the path to the image file
+	This script download a random photo and sets it as desktop wallpaper.
 .PARAMETER Style
         Specifies either Fill, Fit (default), Stretch, Tile, Center, or Span
 .EXAMPLE
-	PS> ./set-wallpaper C:\ocean.jpg
+	PS> ./switch-wallpaper
 .NOTES
 	Author: Markus Fleschutz · License: CC0
 .LINK
 	https://github.com/fleschutz/PowerShell
 #>
 
-param([string]$ImageFile = "", [string]$Style = "Fit")
+param([string]$Style = "Span")
 
-function SetWallPaper {
-	param([string]$Image, [ValidateSet('Fill', 'Fit', 'Stretch', 'Tile', 'Center', 'Span')][string]$Style)
+function GetTempDir {
+        if ("$env:TEMP" -ne "") { return "$env:TEMP" }
+        if ("$env:TMP" -ne "")  { return "$env:TMP" }
+        if ($IsLinux) { return "/tmp" }
+        return "C:\Temp"
+}
+
+function SetWallPaper {	param([string]$Image, [ValidateSet('Fill', 'Fit', 'Stretch', 'Tile', 'Center', 'Span')][string]$Style)
  
 	$WallpaperStyle = switch($Style) {
 	"Fill"    {"10"}
@@ -53,16 +57,17 @@ function SetWallPaper {
 	$SPI_SETDESKWALLPAPER = 0x0014
 	$UpdateIniFile = 0x01
 	$SendChangeEvent = 0x02
-  
 	$fWinIni = $UpdateIniFile -bor $SendChangeEvent
-  
 	$ret = [Params]::SystemParametersInfo($SPI_SETDESKWALLPAPER, 0, $Image, $fWinIni)
 }
- 
-try {
-	if ($ImageFile -eq "" ) { $ImageFile = read-host "Enter path to image file" }
 
-	SetWallPaper -Image $ImageFile -Style $Style
+try {
+	"(1/2) Downloading random photo from Unsplash..."
+	$Path = "$(GetTempDir)/next_wallpaper.jpg"
+	& wget -O $Path "https://unsplash.it/3840/2160/?random"
+
+	"(2/2) Switching the wallpaper..."
+	SetWallPaper -Image $Path -Style $Style
 
 	"✔️  Done."
 	exit 0 # success

@@ -129,6 +129,7 @@ When finished say: *"Close tab"* or: *"Computer, close [name] browser"* to close
 * *"Computer, roll a dice"* - returns a dice number
 * *"Computer, tell joke."*
 * *"Computer, tell quote."*
+* *"Computer, switch wallpaper."*
 * *"Computer, thank you."*
 
 
