@@ -65,7 +65,7 @@ When finished say: *"Close tab"* or: *"Computer, close [name] browser"* to close
 
 *"Computer, play [genre] music."*
 -------------------------------
-Launches the default Web browser and plays the given music genre - replace [genre] by: `dance`, `pop`, or `rock`.
+Launches the default Web browser and plays the given music genre - replace [genre] by: `blues`, `classical`, `country`, `dance`, `folk`, `indie`, `jazz`, `metal`, `pop`,`RnB`, or `rock`.
 
 When finished say: *"Close tab"* or: *"Computer, close [name] browser"* to close the Web browser.
 
