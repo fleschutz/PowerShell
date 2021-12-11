@@ -62,11 +62,14 @@ function SetWallPaper {	param([string]$Image, [ValidateSet('Fill', 'Fit', 'Stret
 }
 
 try {
-	"(1/2) Downloading random photo from Unsplash..."
+	$Reply = "Give me a second", "Gimme a second", "Give me a moment", "Just a moment", "Just a second", "Wait a second", "Hold on" | Get-Random
+	& "$PSScriptRoot/give-reply.ps1" "$Reply"
+
+	"Downloading random photo from Unsplash..."
 	$Path = "$(GetTempDir)/next_wallpaper.jpg"
 	& wget -O $Path "https://unsplash.it/3840/2160/?random"
 
-	"(2/2) Switching the wallpaper..."
+	"Switching the wallpaper..."
 	SetWallPaper -Image $Path -Style $Style
 
 	"✔️  Done."
