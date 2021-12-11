@@ -11,7 +11,7 @@
 	https://github.com/fleschutz/PowerShell
 #>
 
-$Reply = "Happy Mother's day to you, too!" | Get-Random
+$Reply = "Happy Mother's day to you too!" | Get-Random
 
 & "$PSScriptRoot/give-reply.ps1" "$Reply"
 exit 0 # success

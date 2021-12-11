@@ -11,7 +11,7 @@
 	https://github.com/fleschutz/PowerShell
 #>
 
-$Reply = "Thank you. Happy New Year to you, too!" | Get-Random
+$Reply = "Thank you. Happy New Year to you too!" | Get-Random
 
 & "$PSScriptRoot/give-reply.ps1" "$Reply"
 exit 0 # success
