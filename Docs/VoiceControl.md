@@ -1,6 +1,6 @@
 Executing PowerShell Scripts by Voice
 =====================================
-Build your own voice assistant by voice recognition and response (VRR). It's so much fun and so comfortable, just give it a try 😊
+Build your own voice assistant by voice recognition and response (VRR). It's comfortable and so much fun, just give it a try 😊
 
 
 🔧 Installation
