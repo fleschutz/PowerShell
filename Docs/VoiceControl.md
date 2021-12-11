@@ -118,7 +118,7 @@ When finished say: *"Close tab"* or: *"Computer, close [name] browser"* to close
 * *"Computer, come on"*
 * *"Computer, give me five"*
 * *"Computer, locate my phone"*
-* *"Computer, repeat last reply"*
+* *"Computer, repeat last reply"* - repeats the last reply given
 * *"Computer, roll a dice"* - returns a dice number
 * *"Computer, tell joke."*
 * *"Computer, tell quote."*
