@@ -1,15 +1,17 @@
 ﻿<#
 .SYNOPSIS
-	Launches the Edge browser
+	Spells a word
 .DESCRIPTION
-	This script launches the Microsoft Edge Web browser.
+	This script spells the given word by text-to-speech (TTS).
 .EXAMPLE
-	PS> ./open-edge-browser
+	PS> ./spell-word
 .NOTES
 	Author: Markus Fleschutz · License: CC0
 .LINK
 	https://github.com/fleschutz/PowerShell
 #>
 
-Start-Process microsoft-edge://
+$Reply = "T E S T"
+
+& "$PSScriptRoot/give-reply.ps1" "$Reply"
 exit 0 # success

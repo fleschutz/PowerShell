@@ -4,7 +4,7 @@
 .DESCRIPTION
 	This script closes the Google Chrome Web browser gracefully.
 .EXAMPLE
-	PS> ./close-chrome-browser
+	PS> ./close-chrome
 .NOTES
 	Author: Markus Fleschutz · License: CC0
 .LINK

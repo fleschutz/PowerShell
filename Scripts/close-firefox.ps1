@@ -4,7 +4,7 @@
 .DESCRIPTION
 	This script closes the Mozilla Firefox Web browser gracefully.
 .EXAMPLE
-	PS> ./close-firefox-browser
+	PS> ./close-firefox
 .NOTES
 	Author: Markus Fleschutz · License: CC0
 .LINK

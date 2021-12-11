@@ -4,7 +4,7 @@
 .DESCRIPTION
 	This script launches the Google Chrome Web browser.
 .EXAMPLE
-	PS> ./open-chrome-browser
+	PS> ./open-chrome
 .PARAMETER URL
 	Specifies an optional URL
 .NOTES

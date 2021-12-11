@@ -4,7 +4,7 @@
 .DESCRIPTION
 	This script closes the Microsoft Edge Web browser gracefully.
 .EXAMPLE
-	PS> ./close-edge-browser
+	PS> ./close-edge
 .NOTES
 	Author: Markus Fleschutz · License: CC0
 .LINK

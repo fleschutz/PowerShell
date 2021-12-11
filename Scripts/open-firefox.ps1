@@ -4,7 +4,7 @@
 .DESCRIPTION
 	This script launches the Mozilla Firefox Web browser.
 .EXAMPLE
-	PS> ./open-firefox-browser
+	PS> ./open-firefox
 .PARAMETER URL
 	Specifies an URL
 .NOTES
