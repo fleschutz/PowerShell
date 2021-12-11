@@ -134,4 +134,4 @@ When finished say: *"Close tab"* or: *"Computer, close [name] browser"* to close
 
 *"Computer, [farewell]."*
 -------------------------
-Say farewell to the computer, replace [farewell] by: `bye`, `bye-bye`, `good-bye`, `I'll be back`, `see you`.
+Say farewell to the computer, replace [farewell] by: `bye`, `bye-bye`, `good-bye`, `I'll be back`, `see you`, or `see you later`.
