@@ -1,17 +1,17 @@
 ﻿<#
 .SYNOPSIS
-	Replies to "Hi"
+	Replies to "Happy New Year"
 .DESCRIPTION
-	This script replies to 'Hi' by text-to-speech (TTS).
+	This script replies to 'Happy New Year' by text-to-speech (TTS).
 .EXAMPLE
-	PS> ./hi
+	PS> ./happy-new-year
 .NOTES
 	Author: Markus Fleschutz · License: CC0
 .LINK
 	https://github.com/fleschutz/PowerShell
 #>
 
-$Reply = "Hey!", "Hello!", "Hi there!", "Hey there!", "Hey! How's it going?", "What's up?", "What's happening?", "How goes it?" | Get-Random
+$Reply = "Thank you. Happy New Year to you, too!" | Get-Random
 
 & "$PSScriptRoot/give-reply.ps1" "$Reply"
 exit 0 # success

@@ -1,17 +1,17 @@
 ﻿<#
 .SYNOPSIS
-	Replies to "Hi"
+	Replies to "Happy Ramadan"
 .DESCRIPTION
-	This script replies to 'Hi' by text-to-speech (TTS).
+	This script replies to 'Happy Ramadan' by text-to-speech (TTS).
 .EXAMPLE
-	PS> ./hi
+	PS> ./happy-ramadan
 .NOTES
 	Author: Markus Fleschutz · License: CC0
 .LINK
 	https://github.com/fleschutz/PowerShell
 #>
 
-$Reply = "Hey!", "Hello!", "Hi there!", "Hey there!", "Hey! How's it going?", "What's up?", "What's happening?", "How goes it?" | Get-Random
+$Reply = "Happy Ramadan to you, too!" | Get-Random
 
 & "$PSScriptRoot/give-reply.ps1" "$Reply"
 exit 0 # success
