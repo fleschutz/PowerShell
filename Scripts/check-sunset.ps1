@@ -11,8 +11,30 @@
 	https://github.com/fleschutz/PowerShell
 #>
 
+function TimeSpanToString { param([TimeSpan]$Delta)
+        $Result = ""
+        if ($Delta.Hours -eq 1) {       $Result += "1 hour and "
+        } elseif ($Delta.Hours -gt 1) { $Result += "$($Delta.Hours) hours and "
+        }
+        if ($Delta.Minutes -eq 1) { $Result += "1 minute"
+        } else {                    $Result += "$($Delta.Minutes) minutes"
+        }
+        return $Result
+}
+
 try {
-	$Reply = (Invoke-WebRequest http://wttr.in/?format="Sunset is at %s." -UserAgent "curl" -useBasicParsing).Content
+	[system.threading.thread]::currentThread.currentCulture=[system.globalization.cultureInfo]"en-US"
+	$String = (Invoke-WebRequest http://wttr.in/?format="%s" -UserAgent "curl" -useBasicParsing).Content
+	$Hour,$Minute,$Second = $String -split ':'
+	$Sunset = Get-Date -Hour $Hour -Minute $Minute -Second $Second
+	$Now = [DateTime]::Now
+	if ($Now -lt $Sunset) {
+                $TimeSpan = TimeSpanToString($Sunset - $Now)
+                $Reply = "Sunset is in $TimeSpan at $($Sunset.ToShortTimeString())."
+        } else {
+                $TimeSpan = TimeSpanToString($Now - $Sunset)
+                $Reply = "Sunset was $TimeSpan ago at $($Sunset.ToShortTimeString())."
+        }
 	& "$PSScriptRoot/give-reply.ps1" "$Reply"
 	exit 0 # success
 } catch {
