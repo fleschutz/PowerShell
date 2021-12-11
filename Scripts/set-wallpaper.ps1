@@ -6,7 +6,7 @@
 .PARAMETER ImageFile
 	Specifies the path to the image file
 .PARAMETER Style
-        Specifies either Fill, Fit (default), Stretch, Tile, Center, or Span
+        Specifies either Fill, Fit, Stretch, Tile, Center, or Span (default)
 .EXAMPLE
 	PS> ./set-wallpaper C:\ocean.jpg
 .NOTES
@@ -15,7 +15,7 @@
 	https://github.com/fleschutz/PowerShell
 #>
 
-param([string]$ImageFile = "", [string]$Style = "Fit")
+param([string]$ImageFile = "", [string]$Style = "Span")
 
 function SetWallPaper {
 	param([string]$Image, [ValidateSet('Fill', 'Fit', 'Stretch', 'Tile', 'Center', 'Span')][string]$Style)

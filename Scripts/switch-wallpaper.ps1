@@ -4,7 +4,7 @@
 .DESCRIPTION
 	This script download a random photo and sets it as desktop wallpaper.
 .PARAMETER Style
-        Specifies either Fill, Fit (default), Stretch, Tile, Center, or Span
+        Specifies either Fill, Fit, Stretch, Tile, Center, or Span (default)
 .EXAMPLE
 	PS> ./switch-wallpaper
 .NOTES
