@@ -5,7 +5,7 @@
 
 # The Welcome Message
 # -------------------
-"Welcome to PowerShell at $(hostname) in 📂$(get-location)"
+"Welcome to PowerShell at $(hostname)'s 📂$(get-location)"
 
 
 # The Window Title
