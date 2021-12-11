@@ -25,7 +25,7 @@ Greets the computer, just replace [greeting] by: `good evening`, `good morning`,
 
 *"Computer, open [app]."*
 ------------------------
-Launches the given application, replace [app] by: `3D-Viewer`, `Calculator`, `Git Extensions`, `Magnifier`, `Microsoft Paint`, `Microsoft Store`, `Netflix`, `Notepad`, `OBS Studio`, `Outlook`, `Paint 3D`, `Spotify`, `Thunderbird`, `Visual Studio`, or `Windows Terminal`.
+Launches the given application, replace [app] by: `3D-Viewer`, `Calculator`,  `Chrome`, `Edge`, `Firefox`, `Git Extensions`, `Magnifier`, `Microsoft Paint`, `Microsoft Store`, `Netflix`, `Notepad`, `OBS Studio`, `Outlook`, `Paint 3D`, `Spotify`, `Thunderbird`, `Visual Studio`, or `Windows Terminal`.
 
 When finished say: *"Computer, close [app]"* to close the application.
 
@@ -33,13 +33,6 @@ When finished say: *"Computer, close [app]"* to close the application.
 *"Computer, check [item]."*
 --------------------------
 Lets the computer check something, replace [item] by: `Bitcoin rate`, `Christmas`, `CPU`, `date`, `dawn`, `DNS`, `drives`, `dusk`, `Easter Sunday`, `Earth` (fun), `Ether rate`, `headlines`, `Independence Day`, `ISS position`, `midnight`, `moon phase`, `New Year`, `noon`, `operating system`, `ping`, `Santa`, `sunrise`, `sunset`, `swap space`, `tea time`, `Tether rate`, `time`, `time zone`, `up-time`, `VPN`, `weather`, or `zenith`.
-
-
-*"Computer, open [name] browser."*
----------------------------------
-Launches the given Web browser or opens a new tab - replace [name] by: `Chrome`, `default`, `Edge`, or `Firefox`.
-
-When finished say: *"Close tab"* or: *"Computer, close [name] browser"* to close the Web browser.
 
 
 *"Computer, open [letter] drive."*
