@@ -6,7 +6,7 @@
 .PARAMETER Category
 	Specifies the photo category (beach, city, ...)
 .EXAMPLE
-	PS> ./switch-wallpaper beach
+	PS> ./next-random-wallpaper 
 .NOTES
 	Author: Markus Fleschutz · License: CC0
 .LINK
