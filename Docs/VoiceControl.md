@@ -91,7 +91,7 @@ When finished say: *"Close tab"* or: *"Computer, close [name] browser"* to close
 
 *"Computer, next [category] wallpaper."*
 ----------------------------------------
-Sets a random photo from Unsplash as desktop background, just replace [category] by: `beach`, `car`, `city`, `plane`, or `random`.
+Sets a random photo from Unsplash as desktop background, just replace [category] by: `beach`, `car`, `city`, `nature`, `plane`,`random`, or `space`.
 
 
 *"Computer, open [name] settings."*
