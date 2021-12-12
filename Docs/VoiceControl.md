@@ -89,6 +89,11 @@ Launches the default Web browser and plays the given game - replace [name] by: `
 When finished say: *"Close tab"* or: *"Computer, close [name] browser"* to close the Web browser.
 
 
+*"Computer, next [category] wallpaper."*
+----------------------------------------
+Replaces the desktop background by a random photo from Unsplash, just replace [category] by: `beach`, `city`, or `random`.
+
+
 *"Computer, open [name] settings."*
 ----------------------------------
 Launches the Windows settings - replace [name] by: `activation`, `apps`, `background`, `backup`, `bluetooth`, `color`, `date`, `default apps`, `developer`, `display`, `ethernet`, `lockscreen`, `maps`, `printer`, `proxy`, `recovery`, `speech`, `start`, `system` *(the top level settings!)*, `taskbar`, `themes`, `time`, `update`, `USB`, `VPN`, or `Wifi`.

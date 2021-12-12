@@ -3,13 +3,17 @@
 	Switches to a random wallpaper
 .DESCRIPTION
 	This script downloads a random photo and sets it as desktop wallpaper.
+.PARAMETER Category
+	Specifies the photo category (beach, city, ...)
 .EXAMPLE
-	PS> ./switch-wallpaper
+	PS> ./switch-wallpaper beach
 .NOTES
 	Author: Markus Fleschutz · License: CC0
 .LINK
 	https://github.com/fleschutz/PowerShell
 #>
+
+param([string]$Category = "")
 
 function GetTempDir {
         if ("$env:TEMP" -ne "") { return "$env:TEMP" }
@@ -19,10 +23,10 @@ function GetTempDir {
 }
 
 try {
-	& "$PSScriptRoot/give-reply.ps1" "Loading one from Unsplash..."
+	& "$PSScriptRoot/give-reply.ps1" "Loading from Unsplash..."
 
 	$Path = "$(GetTempDir)/next_wallpaper.jpg"
-	& wget -O $Path "https://picsum.photos/3840/2160"
+	& wget -O $Path "https://source.unsplash.com/3840x2160?$Category"
 	if ($lastExitCode -ne "0") { throw "Download failed" }
 
 	& "$PSScriptRoot/set-wallpaper.ps1" -ImageFile "$Path"
