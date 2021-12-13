@@ -11,7 +11,8 @@
 	https://github.com/fleschutz/PowerShell
 #>
 
-$Reply = "One.", "Two.", "Three.", "Four.", "Five.", "Six." | Get-Random
+$Reply = "It's", "I get", "Now it's", "OK, I have" | Get-Random
+$Number = "1", "2", "3", "4", "5", "6" | Get-Random
 
-& "$PSScriptRoot/give-reply.ps1" "$Reply"
+& "$PSScriptRoot/give-reply.ps1" "$Reply $Number."
 exit 0 # success
