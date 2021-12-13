@@ -11,5 +11,6 @@
 	https://github.com/fleschutz/PowerShell
 #>
 
-& "$PSScriptRoot/give-reply.ps1" "I'm so sorry."
+$Reply = "I'm sorry.", "I'm so sorry.", "Mea culpa!" | Get-Random
+& "$PSScriptRoot/give-reply.ps1" "$Reply"
 exit 0 # success
