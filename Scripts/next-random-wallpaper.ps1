@@ -2,7 +2,7 @@
 .SYNOPSIS
 	Switches to a random wallpaper
 .DESCRIPTION
-	This script downloads a random photo and sets it as desktop wallpaper.
+	This script downloads a random photo from Unsplash and sets it as desktop wallpaper.
 .PARAMETER Category
 	Specifies the photo category (beach, city, ...)
 .EXAMPLE
@@ -23,7 +23,7 @@ function GetTempDir {
 }
 
 try {
-	& "$PSScriptRoot/give-reply.ps1" "Loading from Unsplash..."
+	& "$PSScriptRoot/give-reply.ps1" "Just a second..."
 
 	$Path = "$(GetTempDir)/next_wallpaper.jpg"
 	& wget -O $Path "https://source.unsplash.com/3840x2160?$Category"
