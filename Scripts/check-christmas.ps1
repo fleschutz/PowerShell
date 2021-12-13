@@ -14,12 +14,20 @@
 try {
 	$Now = [DateTime]::Now
 	$Christmas = [Datetime]("12/25/" + $Now.Year)
-	if ($Now -lt $Christmas) {
-		$Diff = $Christmas – $Now
-		& "$PSScriptRoot/give-reply.ps1" "Christmas on December 25 is in $($Diff.Days) days."
+	$Days = ($Christmas - $Now).Days
+	if ($Days -gt 1) {
+		& "$PSScriptRoot/give-reply.ps1" "Christmas is in $Days days."
+	} elseif ($Days -eq 1) {
+		& "$PSScriptRoot/give-reply.ps1" "Christmas is tomorrow."
+	} elseif ($Days -eq 0) {
+		& "$PSScriptRoot/give-reply.ps1" "Christmas is today."
+	} elseif ($Days -eq 1) {
+		& "$PSScriptRoot/give-reply.ps1" "Christmas is tomorrow."
+	} elseif ($Days -eq -1) {
+		& "$PSScriptRoot/give-reply.ps1" "Christmas was yesterday."
 	} else {
-		$Diff = $Now - $Christmas
-		& "$PSScriptRoot/give-reply.ps1" "Christmas on December 25 was $($Diff.Days) days ago."
+		$Days = -$Days
+		& "$PSScriptRoot/give-reply.ps1" "Christmas was $Days days ago."
 	}
 	exit 0 # success
 } catch {

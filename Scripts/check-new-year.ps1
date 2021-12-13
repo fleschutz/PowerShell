@@ -14,8 +14,12 @@
 try {
 	$Now = [DateTime]::Now
 	$NewYear = [Datetime]("12/31/" + $Now.Year)
-	$Diff = $NewYear – $Now
-	& "$PSScriptRoot/give-reply.ps1" "New Year is in $($Diff.Days) days."
+	$Days = ($NewYear – $Now).Days + 1
+	if ($Days -gt 1) {
+		& "$PSScriptRoot/give-reply.ps1" "New Year is in $Days days."
+	} elseif ($Days -eq 1) {
+		& "$PSScriptRoot/give-reply.ps1" "New Year is tomorrow."
+	}
 	exit 0 # success
 } catch {
 	"⚠️ Error: $($Error[0]) ($($MyInvocation.MyCommand.Name):$($_.InvocationInfo.ScriptLineNumber))"
