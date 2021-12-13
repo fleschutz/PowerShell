@@ -11,5 +11,16 @@
 	https://github.com/fleschutz/PowerShell
 #>
 
-Start-Process "C:\Program Files (x86)\Mozilla Thunderbird\thunderbird.exe"
-exit 0 # success
+function TryToExec { param($Folder, $Binary)
+        if (test-path "$Folder/$Binary" -pathType leaf) {
+                start-process "$Folder/$Binary" -WorkingDirectory "$Folder"
+                exit 0 # success
+        }
+}
+
+try {
+	TryToExec "C:\Program Files (x86)\Mozilla Thunderbird" "thunderbird.exe"
+	throw "It seems Thunderbird isn't installed yet."
+} catch {
+	& "$PSScriptRoot/give-reply.ps1" "Sorry: $($Error[0])"
+}
