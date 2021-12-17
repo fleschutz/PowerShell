@@ -22,7 +22,7 @@ try {
 
 	$StopWatch = [system.diagnostics.stopwatch]::startNew()
 
-	"⏳ Checking requirements [step 1/3]... "
+	"⏳ (1/5) Checking requirements... "
 	$RepoDir = resolve-path "$RepoDir"
 	if (-not(test-path "$RepoDir" -pathType container)) { throw "Can't access directory: $RepoDir" }
 	set-location "$RepoDir"
@@ -34,17 +34,19 @@ try {
 	if ($lastExitCode -ne "0") { throw "'git status' failed in $RepoDir" }
 	if ("$Result" -notmatch "nothing to commit, working tree clean") { throw "Git repository is NOT clean: $Result" }
 
-	"⏳ Fetching latest updates and switching branch [step 2/3]..."
+	"⏳ (2/5) Fetching latest updates..."
 	& git fetch --all --recurse-submodules --prune --prune-tags --force
 	if ($lastExitCode -ne "0") { throw "'git fetch' failed" }
 
+	"⏳ (3/5) Switching branch..."
 	& git checkout --recurse-submodules "$BranchName"
 	if ($lastExitCode -ne "0") { throw "'git checkout $BranchName' failed" }
 
-	"⏳ Pulling updates and updating submodules [step 3/3]..."
+	"⏳ (4/5) Pulling updates..."
 	& git pull --recurse-submodules
 	if ($lastExitCode -ne "0") { throw "'git pull' failed" }
 
+	"⏳ (5/5) Updating submodules..."	
 	& git submodule update --init --recursive
 	if ($lastExitCode -ne "0") { throw "'git submodule update' failed" }
 
