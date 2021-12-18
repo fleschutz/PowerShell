@@ -38,7 +38,7 @@ try {
 		ReplaceInFile $file $pattern $replacement
 	}
 	[int]$Elapsed = $StopWatch.Elapsed.TotalSeconds
-	"✔️ replaced '$pattern' by '$replacement' in $($fileList.Count) files in $Elapsed sec"
+	"OK, replaced '$pattern' by '$replacement' in $($fileList.Count) files in $Elapsed sec."
 	exit 0 # success
 } catch {
 	"⚠️ Error: $($Error[0]) ($($MyInvocation.MyCommand.Name):$($_.InvocationInfo.ScriptLineNumber))"
