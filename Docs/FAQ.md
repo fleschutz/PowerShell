@@ -5,6 +5,7 @@ What is PowerShell?
 -------------------
 PowerShell is a task automation and configuration management framework from Microsoft, consisting of a command-line shell and associated scripting language. 
 
+
 Why use PowerShell?
 -------------------
 ✔️ it's **powerful**: fully control your computer
@@ -16,6 +17,7 @@ Why use PowerShell?
 ✔️ it's **easy to learn**: see the tutorial for beginners at https://www.guru99.com/powershell-tutorial.html
 
 ✔️ it's **fully documented**: see the PowerShell documentation at https://docs.microsoft.com/en-us/powershell/
+
 
 How to get PowerShell?
 ----------------------
@@ -58,11 +60,6 @@ How to use PowerShell in Windows context menus?
 -----------------------------------------------
 * to enable "right-click > New > Windows PowerShell Script" execute `Add_ps1_to_New_context_menu.reg` in subfolder [Data/](../Data)
 * to disable this execute `Remove_ps1_from_New_context_menu.reg` in subfolder [Data/](../Data)
-
-
-How to execute PowerShell scripts by voice?
--------------------------------------------
-See the [voice control page](VoiceControl.md) for more information.
 
 
 Which editor to use for PowerShell scripts?
