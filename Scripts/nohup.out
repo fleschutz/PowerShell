@@ -1,0 +1,26 @@
+Initializing daemon...
+go-ipfs version: 0.11.0-67220edaa
+Repo version: 11
+System version: amd64/linux
+Golang version: go1.16.11
+Swarm listening on /ip4/127.0.0.1/tcp/4001
+Swarm listening on /ip4/127.0.0.1/udp/4001/quic
+Swarm listening on /ip4/192.168.178.36/tcp/4001
+Swarm listening on /ip4/192.168.178.36/udp/4001/quic
+Swarm listening on /ip6/2003:f2:6738:8600:6e62:6dff:fe3b:8765/tcp/4001
+Swarm listening on /ip6/2003:f2:6738:8600:6e62:6dff:fe3b:8765/udp/4001/quic
+Swarm listening on /ip6/::1/tcp/4001
+Swarm listening on /ip6/::1/udp/4001/quic
+Swarm listening on /p2p-circuit
+Swarm announcing /ip4/127.0.0.1/tcp/4001
+Swarm announcing /ip4/127.0.0.1/udp/4001/quic
+Swarm announcing /ip4/217.88.86.130/udp/4001/quic
+Swarm announcing /ip6/2003:f2:6738:8600:6e62:6dff:fe3b:8765/tcp/4001
+Swarm announcing /ip6/2003:f2:6738:8600:6e62:6dff:fe3b:8765/udp/4001/quic
+Swarm announcing /ip6/::1/tcp/4001
+Swarm announcing /ip6/::1/udp/4001/quic
+API server listening on /ip4/0.0.0.0/tcp/5001
+WebUI: http://0.0.0.0:5001/webui
+Gateway (readonly) server listening on /ip4/0.0.0.0/tcp/8765
+Daemon is ready
+2021-12-28T10:37:17.711+0100	ERROR	bitswap	providerquerymanager/providerquerymanager.go:338	Received provider (12D3KooWE7DQ3GckSHfdchK5XG3qvsABVFFWH4UokeaL7j23PfVA) for cid (Qme2uBkw6n2xxn3B7aSmTpnouKb9bQCSWDJxXNmicZDxsb) not requested
