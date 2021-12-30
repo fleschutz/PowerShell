@@ -1,8 +1,8 @@
 ﻿<#
 .SYNOPSIS
-	Upgrades Ubuntu Linux to the latest (LTS) release
+	Upgrades Ubuntu Linux 
 .DESCRIPTION
-	This script upgrades Ubuntu Linux to the latest (LTS) release.
+	This PowerShell script upgrades Ubuntu Linux to the latest (LTS) release.
 .EXAMPLE
 	PS> .\upgrade-ubuntu.ps1 
 .NOTES
@@ -14,12 +14,12 @@
 try {
 	""
 	"👉 Step 1/4: Perform a backup"
-	"It's strongly recommended to perform a backup of your data BEFORE upgrading the OS!"
+	"It's strongly recommended to backup your data BEFORE the upgrade!"
 	$Confirm = read-host "Press <Return> to continue..."
 
 	""
 	"👉 Step 2/4: Install update-manager-core, Upgrade Packages & Reboot"
-	$Confirm = read-host "Enter <yes> to perform this step (otherwise this step will be skipped)"
+	$Confirm = read-host "Enter <yes> to perform this step (otherwise it will be skipped)"
 	if ($Confirm -eq "yes") {
 		sudo apt install update-manager-core
 		sudo apt update
@@ -30,17 +30,19 @@ try {
 
 	""
 	"👉 Step 3/4: Remove obsolete kernel modules"
-	$Confirm = read-host "Enter <yes> to perform this step (otherwise this step will be skipped)"
+	$Confirm = read-host "Enter <yes> to perform this step (otherwise it will be skipped)"
 	if ($Confirm -eq "yes") {
 		sudo apt --purge autoremove
 	}
 
 	""
 	"👉 Step 4/4: Upgrade Ubuntu & reboot"
-	$Confirm = read-host "Enter <yes> to perform this step (otherwise this step will be skipped)"
-	if ($Confirm -eq "yes") {
-		sudo do-release-upgrade # to latest LTS version
-		#sudo do-release-upgrade -d # to latest supported release
+	$Confirm = read-host "Enter <LTS> to upgrade to latest LTS release, <latest> to upgrade to latest Ubuntu release (otherwise this step will be skipped)"
+	if ($Confirm -eq "LTS") {
+		sudo do-release-upgrade
+		sudo reboot
+	} elseif ($Confirm -eq "latest") {
+		sudo do-release-upgrade -d
 		sudo reboot
 	}
 
