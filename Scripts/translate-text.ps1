@@ -17,57 +17,26 @@
 	https://github.com/fleschutz/PowerShell
 #>
 
-param([string]$Text = "", [string]$SourceLang = "en", [string]$TargetLang = "any")
+param([string]$Text = "", [string]$SourceLangCode = "en", [string]$TargetLangCode = "any")
 
-function Language2Code { param([string]$Language)
-	$Code = switch($Language) {
-	"Arabic"  {"ar"}
-	"Chinese" {"zh"}
-	"French"  {"fr"}
-	"German"  {"de"}
-	"Hindi"   {"hi"}
-	"Irish"   {"ga"}
-	"Italian" {"it"}
-	"Japanese"{"ja"}
-	"Korean"  {"ko"}
-	"Portuguese"{"pt"}
-	"Russian" {"ru"}
-	"Spanish" {"es"}
-	Default   {$Language}
-	}
-	return $Code
-}
-
-function UseGoogleTranslate { param([string]$Text, [string]$SourceLang, [string]$TargetLang)
-	$Result = Invoke-RestMethod "https://translate.googleapis.com/translate_a/single?client=gtx&sl=$($SourceLang)&tl=$($TargetLang)&dt=t&q=$($Text)"
-	return $Result[0][0][0]
-}
-
-function UseLibreTranslate { param([string]$Text, [string]$SourceLang, [string]$TargetLang)
-	$Parameters = @{"q"="$Text"; "source"="$SourceLang"; "target"="$TargetLang"; }
-	$Result = (Invoke-WebRequest -Uri https://libretranslate.com/translate -Method POST -Body ($Parameters|ConvertTo-Json) -ContentType "application/json").content | ConvertFrom-Json
+function UseLibreTranslate { param([string]$Text, [string]$SourceLangCode, [string]$TargetLangCode)
+	$Parameters = @{"q"="$Text"; "source"="$SourceLangCode"; "target"="$TargetLangCode"; }
+	$Result = (Invoke-WebRequest -Uri https://translate.mentality.rip/translate -Method POST -Body ($Parameters|ConvertTo-Json) -ContentType "application/json" -useBasicParsing).content | ConvertFrom-Json
 	return $Result.translatedText
 }
 
-function UseArgosTranslateCLI { param([string]$Text, [string]$SourceLang, [string]$TargetLang)
-	$Result = (argos-translate.cli --from-lang $SourceLang --to-lang $TargetLang $Text)
-	return $Result
-}
-
 try {
-	if ($Text -eq "" ) { $Text = read-host "Enter text in English to translate" }
+	if ($Text -eq "" ) { $Text = read-host "Enter text to translate" }
 
-	if ($TargetLang -eq "any") {
-		$TargetLanguages = "Arabic","Chinese","French","German","Hindi","Irish","Italian","Japanese","Korean","Portuguese","Russian","Spanish"
-		foreach($TargetLang in $TargetLanguages) {
-			$TargetLangCode = Language2Code $TargetLang
-			$Result = UseLibreTranslate $Text $SourceLang $TargetLangCode
-			write-output "$TargetLang : $Result"
+	if ($TargetLangCode -eq "any") {
+		$TargetLangCodes = "ar","de","es","fr","ga","hi","it","ja","ko","pt","ru","zh"
+		foreach($TargetLangCode in $TargetLangCodes) {
+			$Translation = UseLibreTranslate $Text $SourceLangCode $TargetLangCode
+			write-output "$($TargetLangCode): $Translation"
 		}
 	} else {
-		$TargetLangCode = Language2Code $TargetLang
-		$Result = UseLibreTranslate $Text $SourceLang $TargetLangCode
-		write-output "$Result"
+		$Translation = UseLibreTranslate $Text $SourceLangCode $TargetLangCode
+		write-output "$Translation"
 	}
 	exit 0 # success
 } catch {
