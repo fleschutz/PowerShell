@@ -1,4 +1,4 @@
-Category,FolderName,Branch,Shallow,URL
+Category,FolderName,    Branch,  Shallow, URL
 Dev,	 base256unicode,master,  no,	"https://github.com/fleschutz/base256unicode"
 Dev,	 bazel,		master,	 yes,	"https://github.com/bazelbuild/bazel"
 Dev,	 cmake,		master,	 yes,	"https://github.com/Kitware/CMake"
@@ -13,7 +13,7 @@ Dev,	 llvm,		master,  yes,	"https://github.com/llvm/llvm-project"
 Math,	 LSS,		master,	 yes,	"https://github.com/fleschutz/LSS"
 Dev,	 ninja,		master,  yes,	"git://github.com/ninja-build/ninja.git"
 Libs,	 opencv,	master,  yes,	"https://github.com/opencv/opencv"
-Tool,	 OSMA,		master,  no,	"https://github.com/fleschutz/OSMA"
+Tool,	 operating-systems,master,  no,	"https://github.com/fleschutz/operating-systems"
 Shell,	 PowerShell,	master,  no,	"https://github.com/fleschutz/PowerShell"
 Shell,	 pwsh,		master,  yes,	"https://github.com/PowerShell/PowerShell"
 Dev,	 protobuf,	master,	 yes,	"https://github.com/protocolbuffers/protobuf"
