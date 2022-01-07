@@ -107,6 +107,7 @@ function ListTools {
 	CheckFor perl	"--version"
 	CheckFor ping	"-V"
 	CheckFor ping6	"-V"
+	CheckFor powercfg "/?"
 	CheckFor powershell "--version"
 	CheckFor print	""
 	CheckFor printf "--version"
