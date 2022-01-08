@@ -68,6 +68,9 @@ try {
 		} elseif ("$Filename" -like "PANO-*-*.jpg") {
 			$Array = $Filename.split("-")
 			CopyFile $Num "$File" "$Filename" $Array[1] "$TargetDir"
+		} elseif ("$Filename" -like "SAVE_*_*.jpg") {
+			$Array = $Filename.split("_")
+			CopyFile $Num "$File" "$Filename" $Array[1] "$TargetDir"
 		} else {
 			"#$($Num): $Filename with unknown filename format"
 		}
