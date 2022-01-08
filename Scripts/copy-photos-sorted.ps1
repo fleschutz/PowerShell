@@ -1,23 +1,23 @@
 ﻿<#
 .SYNOPSIS
-	Copy image files sorted by year and month
+	Copy photos sorted by year and month
 .DESCRIPTION
-	This script copies image files from SourceDir to TargetDir sorted by year and month.
+	This PowerShell script copies photos from SourceDir to TargetDir sorted by year and month.
 .PARAMETER SourceDir
-	Specifies the path to the image files
+	Specifies the path to the source directory where the photos reside
 .PARAMTER TargetDir
 	Specifies the path to the target folder
 .EXAMPLE
 	PS> ./copy-photos-sorted D:\Mobile\DCIM C:\MyPhotoAlbum
 .NOTES
-	Author: Markus Fleschutz · License: CC0
+	Author: Markus Fleschutz / License: CC0
 .LINK
 	https://github.com/fleschutz/PowerShell
 #>
 
 param([string]$SourceDir = "", [string]$TargetDir = "")
 
-function CopyFile { param([int]$Num, [string]$SrcPath, [string]$Filename, [int]$Date, [string]$DstDir)
+function CopyFile { param([string]$SourcePath, [string]$TargetDir, [int]$Date, [string]$Filename)
 	[int]$Year = $Date / 10000
 	[int]$Month = ($Date / 100) % 100
 	$MonthDir = switch($Month) {
@@ -34,14 +34,14 @@ function CopyFile { param([int]$Num, [string]$SrcPath, [string]$Filename, [int]$
 	11 {"11 NOV"}
 	12 {"12 DEC"}
 	}
-	$DstPath = "$DstDir/$Year/$MonthDir/$Filename"
-	if (test-path "$DstPath" -pathType leaf) {
-		"#$($Num): $Filename exists already, skipping..."
+	$TargetPath = "$TargetDir/$Year/$MonthDir/$Filename"
+	if (test-path "$TargetPath" -pathType leaf) {
+		"Skipping $Filename: already existing..."
 	} else {
-		"#$($Num): $Filename is copied..."
-		new-item -path "$DstDir" -name "$Year" -itemType "directory" -force | out-null
-		new-item -path "$DstDir/$Year" -name "$MonthDir" -itemType "directory" -force | out-null
-		copy-item "$SrcPath" "$DstPath" -force
+		"Copying $Filename to $Year/$MonthDir..."
+		new-item -path "$TargetDir" -name "$Year" -itemType "directory" -force | out-null
+		new-item -path "$TargetDir/$Year" -name "$MonthDir" -itemType "directory" -force | out-null
+		copy-item "$SourcePath" "$TargetPath" -force
 	}
 }
 
@@ -50,34 +50,32 @@ try {
 	if ($TargetDir -eq "") { $TargetDir = read-host "Enter path to target directory" }
 
 	$StopWatch = [system.diagnostics.stopwatch]::startNew()
-	$Files = (get-childItem "$SourceDir\*.jpg" -attributes !Directory)
+	$Files = (Get-ChildItem "$SourceDir\*.jpg" -attributes !Directory)
 	"Found $($Files.Count) photos in 📂$SourceDir..."
-	[int]$Num = 0
 	foreach ($File in $Files) {
-		$Num++
-		$Filename = (get-item "$File").Name
+		$Filename = (Get-Item "$File").Name
 		if ("$Filename" -like "IMG_*_*.jpg") {
 			$Array = $Filename.split("_")
-			CopyFile $Num "$File" "$Filename" $Array[1] "$TargetDir"
+			CopyFile "$File" "$TargetDir" $Array[1] "$Filename"
 		} elseif ("$Filename" -like "IMG-*-*.jpg") {
 			$Array = $Filename.split("-")
-			CopyFile $Num "$File" "$Filename" $Array[1] "$TargetDir"
+			CopyFile "$File" "$TargetDir" $Array[1] "$Filename"
 		} elseif ("$Filename" -like "PANO_*_*.jpg") {
 			$Array = $Filename.split("_")
-			CopyFile $Num "$File" "$Filename" $Array[1] "$TargetDir"
+			CopyFile "$File"  "$TargetDir" $Array[1] "$Filename"
 		} elseif ("$Filename" -like "PANO-*-*.jpg") {
 			$Array = $Filename.split("-")
-			CopyFile $Num "$File" "$Filename" $Array[1] "$TargetDir"
+			CopyFile "$File" "$TargetDir" $Array[1] "$Filename"
 		} elseif ("$Filename" -like "SAVE_*_*.jpg") {
 			$Array = $Filename.split("_")
-			CopyFile $Num "$File" "$Filename" $Array[1] "$TargetDir"
+			CopyFile "$File" "$TargetDir" $Array[1] "$Filename"
 		} else {
-			"#$($Num): $Filename with unknown filename format"
+			"Skipping $Filename: unknown filename format..."
 		}
 	}
 
 	[int]$Elapsed = $StopWatch.Elapsed.TotalSeconds
-	"✔️ copied $Num photos to 📂$TargetDir sorted by year and month in $Elapsed sec"
+	"✔️ $($Files.Count) photos copied from 📂$SourceDir to 📂$TargetDir in $Elapsed sec"
 	exit 0 # success
 } catch {
 	"⚠️ Error: $($Error[0]) ($($MyInvocation.MyCommand.Name):$($_.InvocationInfo.ScriptLineNumber))"
