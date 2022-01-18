@@ -1,6 +1,6 @@
 ﻿<#
 .SYNOPSIS
-	Fetches updates for all Git repositories in a folder (including submodules)
+	Fetches updates for all Git repositories in a folder
 .DESCRIPTION
 	This script fetches updates for all Git repositories in a folder (including submodules).
 .PARAMETER ParentDir
@@ -8,7 +8,7 @@
 .EXAMPLE
 	PS> ./fetch-repos C:\MyRepos
 .NOTES
-	Author: Markus Fleschutz · License: CC0
+	Author: Markus Fleschutz / License: CC0
 .LINK
 	https://github.com/fleschutz/PowerShell
 #>
@@ -31,7 +31,7 @@ try {
 	[int]$Step = 1
 	foreach ($Folder in $Folders) {
 		$FolderName = (get-item "$Folder").Name
-		"⏳ Fetching 📂$FolderName... [step $Step/$NumFolders]"
+		"⏳ Step $Step/$NumFolders: Fetching 📂$FolderName..."
 
 		& git -C "$Folder" fetch --all --recurse-submodules --prune --prune-tags --force
 		if ($lastExitCode -ne "0") { throw "'git fetch' in $FolderName failed" }

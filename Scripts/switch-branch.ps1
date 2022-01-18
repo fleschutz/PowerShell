@@ -1,6 +1,6 @@
 ﻿<#
 .SYNOPSIS
-	Switches the branch in a Git repository (including submodules)
+	Switches the branch in a Git repository 
 .DESCRIPTION
 	This script switches to another branch in a Git repository (including submodules).
 .PARAMETER BranchName
@@ -10,7 +10,7 @@
 .EXAMPLE
 	PS> ./switch-branch main C:\MyRepo
 .NOTES
-	Author: Markus Fleschutz · License: CC0
+	Author: Markus Fleschutz / License: CC0
 .LINK
 	https://github.com/fleschutz/PowerShell
 #>
@@ -22,7 +22,7 @@ try {
 
 	$StopWatch = [system.diagnostics.stopwatch]::startNew()
 
-	"⏳ (1/5) Checking requirements... "
+	"⏳ Step 1/5: Checking requirements... "
 	$RepoDir = resolve-path "$RepoDir"
 	if (-not(test-path "$RepoDir" -pathType container)) { throw "Can't access directory: $RepoDir" }
 	set-location "$RepoDir"
@@ -34,19 +34,19 @@ try {
 	if ($lastExitCode -ne "0") { throw "'git status' failed in $RepoDir" }
 	if ("$Result" -notmatch "nothing to commit, working tree clean") { throw "Git repository is NOT clean: $Result" }
 
-	"⏳ (2/5) Fetching latest updates..."
+	"⏳ Step 2/5: Fetching latest updates..."
 	& git fetch --all --recurse-submodules --prune --prune-tags --force
 	if ($lastExitCode -ne "0") { throw "'git fetch' failed" }
 
-	"⏳ (3/5) Switching branch..."
+	"⏳ Step 3/5: Switching branch..."
 	& git checkout --recurse-submodules "$BranchName"
 	if ($lastExitCode -ne "0") { throw "'git checkout $BranchName' failed" }
 
-	"⏳ (4/5) Pulling updates..."
+	"⏳ Step 4/5: Pulling updates..."
 	& git pull --recurse-submodules
 	if ($lastExitCode -ne "0") { throw "'git pull' failed" }
 
-	"⏳ (5/5) Updating submodules..."	
+	"⏳ Step 5/5: Updating submodules..."	
 	& git submodule update --init --recursive
 	if ($lastExitCode -ne "0") { throw "'git submodule update' failed" }
 

@@ -1,6 +1,6 @@
 ﻿<#
 .SYNOPSIS
-	Pulls updates for all Git repositories in a folder (including submodules)
+	Pulls updates for all Git repositories in a folder
 .DESCRIPTION
 	This PowerShell script pulls updates for all Git repositories in a folder (including submodules).
 .PARAMETER ParentDir
@@ -8,7 +8,7 @@
 .EXAMPLE
 	PS> ./pull-repos C:\MyRepos
 .NOTES
-	Author: Markus Fleschutz · License: CC0
+	Author: Markus Fleschutz / License: CC0
 .LINK
 	https://github.com/fleschutz/PowerShell
 #>
@@ -31,7 +31,7 @@ try {
 	[int]$Step = 1
 	foreach ($Folder in $Folders) {
 		$FolderName = (get-item "$Folder").Name
-		"⏳ ($Step/$NumFolders) Pulling 📂$FolderName... "
+		"⏳ Step $Step/$NumFolders: Pulling 📂$FolderName... "
 
 		& git -C "$Folder" pull --recurse-submodules --jobs=4
 		if ($lastExitCode -ne "0") { write-warning "'git pull' in 📂$FolderName failed" }

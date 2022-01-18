@@ -6,7 +6,7 @@
 .EXAMPLE
 	PS> ./start-ipfs-server
 .NOTES
-	Author: Markus Fleschutz · License: CC0
+	Author: Markus Fleschutz / License: CC0
 .LINK
 	https://github.com/fleschutz/PowerShell
 #>
@@ -14,16 +14,14 @@
 try {
 	$StopWatch = [system.diagnostics.stopwatch]::startNew()
 
-	""
-		" ($Step/$NumFolders) Pulling 📂$FolderName... "
-	"⏳ (1/5) Searching for IPFS executable..."
+	"⏳ Step 1/5: Searching for IPFS executable..."
 	& ipfs --version
 	if ($lastExitCode -ne "0") { throw "Can't execute 'ipfs' - make sure IPFS is installed and available" }
 	""
-	"⏳ (2/5) Initializing IPFS with server profile..."
+	"⏳ Step 2/5: Initializing IPFS with server profile..."
 	& ipfs init --profile server
 
-	"⏳ (3/5) Configuring IPFS..."
+	"⏳ Step 3/5: Configuring IPFS..."
 	& ipfs config Addresses.API /ip4/0.0.0.0/tcp/5001
 	if ($lastExitCode -ne "0") { throw "'ipfs config Addresses.API' failed" }
 
@@ -37,11 +35,11 @@ try {
 	& ipfs config --json API.HTTPHeaders.Access-Control-Allow-Methods '[\"PUT\", \"POST\"]'
 	if ($lastExitCode -ne "0") { throw "'ipfs config Access-Control-Allow-Methods' failed" }
 	""
-	"⏳ (4/5) Increasing UDP receive buffer size..."
+	"⏳ Step 4/5: Increasing UDP receive buffer size..."
 	& sudo sysctl -w net.core.rmem_max=2500000
 	if ($lastExitCode -ne "0") { throw "'sysctl' failed" }
 	""
-	"⏳ (5/5) Starting IPFS daemon..."
+	"⏳ Step 5/5: Starting IPFS daemon..."
 #	Start-Process nohup 'ipfs daemon'
 	Start-Process nohup -ArgumentList 'ipfs','daemon' -RedirectStandardOutput "$HOME/console.out" -RedirectStandardError "$HOME/console.err"
 

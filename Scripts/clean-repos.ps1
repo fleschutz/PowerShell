@@ -1,6 +1,6 @@
 ﻿<#
 .SYNOPSIS
-	Cleans all Git repositories in a folder from untracked files (including submodules)
+	Cleans all Git repositories in a folder from untracked files 
 .DESCRIPTION
 	This script cleans all Git repositories in a folder from untracked files (including submodules).
 .PARAMETER ParentDir
@@ -8,7 +8,7 @@
 .EXAMPLE
 	PS> ./clean-repos C:\MyRepos
 .NOTES
-	Author: Markus Fleschutz · License: CC0
+	Author: Markus Fleschutz / License: CC0
 .LINK
 	https://github.com/fleschutz/PowerShell
 #>
@@ -31,7 +31,7 @@ try {
 	[int]$Step = 1
 	foreach ($Folder in $Folders) {
 		$FolderName = (get-item "$Folder").Name
-		"⏳ Cleaning 📂$FolderName (step $Step/$($FolderCount))..."
+		"⏳ Step $Step/$FolderCount: Cleaning 📂$FolderName..."
 
 		& git -C "$Folder" clean -xfd -f # force + recurse into dirs + don't use the standard ignore rules
 		if ($lastExitCode -ne "0") { throw "'git clean -xfd -f' failed" }
@@ -41,7 +41,6 @@ try {
 
 		$Step++
 	}
-
 	[int]$Elapsed = $StopWatch.Elapsed.TotalSeconds
 	"✔️ cleaned $FolderCount Git repositories at 📂$ParentDirName in $Elapsed sec"
 	exit 0 # success
