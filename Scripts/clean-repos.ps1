@@ -26,12 +26,12 @@ try {
 	$Folders = (get-childItem "$ParentDir" -attributes Directory)
 	$FolderCount = $Folders.Count
 	$ParentDirName = (get-item "$ParentDir").Name
-	"Found $FolderCount subfolders in 📂$ParentDirName, cleaning from untracked files..."
+	"Found $FolderCount subfolders in 📂$ParentDirName, cleaning them from untracked files..."
 
 	[int]$Step = 1
 	foreach ($Folder in $Folders) {
 		$FolderName = (get-item "$Folder").Name
-		"⏳ Step $Step/$FolderCount: Cleaning 📂$FolderName..."
+		"⏳ Step $Step/$($FolderCount): Cleaning 📂$FolderName..."
 
 		& git -C "$Folder" clean -xfd -f # force + recurse into dirs + don't use the standard ignore rules
 		if ($lastExitCode -ne "0") { throw "'git clean -xfd -f' failed" }
