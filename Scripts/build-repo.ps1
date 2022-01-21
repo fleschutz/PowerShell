@@ -18,11 +18,11 @@ param([string]$RepoDir = "$PWD")
 function MakeDir { param($Path)
 	$DirName = (get-item "$Path").Name
 	if (test-path "$Path/CMakeLists.txt" -pathType leaf) {
-		"🔨 Building 📂$DirName using CMakeLists.txt to subfolder _MyBuild/..."
-		if (-not(test-path "$Path/_MyBuild/" -pathType container)) { 
-			& mkdir "$Path/_MyBuild/"
+		"🔨 Building 📂$DirName using CMakeLists.txt to subfolder _My_Build/..."
+		if (-not(test-path "$Path/_My_Build/" -pathType container)) { 
+			& mkdir "$Path/_My_Build/"
 		}
-		set-location "$Path/_MyBuild/"
+		set-location "$Path/_My_Build/"
 
 		& cmake ..
 		if ($lastExitCode -ne "0") { throw "Executing 'cmake ..' has failed" }
