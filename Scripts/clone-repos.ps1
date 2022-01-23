@@ -19,7 +19,7 @@ try {
 	$StopWatch = [system.diagnostics.stopwatch]::startNew()
 
 	if (-not(test-path "$FolderPath" -pathType container)) { throw "Can't access directory: $FolderPath" }
-	$ParentFolderName = (get-item "$FolderPath").Name
+	$ParentFolderName = (Get-Item "$FolderPath").Name
 
 	$Null = (git --version)
 	if ($lastExitCode -ne "0") { throw "Can't execute 'git' - make sure Git is installed and available" }
@@ -39,18 +39,19 @@ try {
 		$Step++
 
 		if (test-path "$FolderPath/$FolderName" -pathType container) {
-			"⏳ Step $Step/$($NumEntries): skipping already existing 📂$($FolderName)..."
+			"⏳ Step $Step/$($NumEntries): Skipping already existing 📂$($FolderName)..."
 			$Skipped++
 			continue
 		}
 		if ($Shallow -eq "yes") {
-			"⏳ Step $Step/$($NumEntries): cloning shallow $Branch branch to 📂$($FolderName)..."
+			"⏳ Step $Step/$($NumEntries): Cloning shallow $Branch branch to 📂$($FolderName)..."
 			& git clone --branch "$Branch" --depth 1 --shallow-submodules --recurse-submodules "$URL" "$FolderPath/$FolderName"
+			if ($lastExitCode -ne "0") { throw "'git clone $URL' failed" }
 		} else {
-			"⏳ Step $Step/$($NumEntries): cloning full $Branch branch to 📂$FolderName..."
+			"⏳ Step $Step/$($NumEntries): Cloning full $Branch branch to 📂$FolderName..."
 			& git clone --branch "$Branch" --recurse-submodules "$URL" "$FolderPath/$FolderName"
+			if ($lastExitCode -ne "0") { throw "'git clone $URL' failed" }
 		}
-		if ($lastExitCode -ne "0") { throw "'git clone $URL' failed" }
 		$Cloned++
 	}
 	[int]$Elapsed = $StopWatch.Elapsed.TotalSeconds
