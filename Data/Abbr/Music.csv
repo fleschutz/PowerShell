@@ -1,5 +1,7 @@
-Abbreviation,Definition
+Abbr,Term
 8va,Octave up
+ABBA,A swedish pop band consisting of Agnetha, Bjorn, Benny, and Anni-Frid
+ACDC,An australian rock band
 ad lib,Ad Libitum (“freely”)
 afl,Alto flute
 AS,Al Segno (“To the sign”)
@@ -24,7 +26,9 @@ D.C. al Fine,Da Capo al Fine (“from the beginning to the end”)
 D.S. al Fine,Dal Segno al Fine (“from the Segno mark to the end”)
 decresc,Descrescendo (also noted as >)
 dim,Diminuendo
+EAV,band "Erste Allgemeine Verunsicherung"
 eh,English horn
+ELO,Electric Light Orchestra
 euph,Euphonium
 f,Forte
 fda,Flute d’amore (tenor flute)
@@ -35,12 +39,16 @@ fl,Flute
 fp,Fortepiano
 gliss,Glissando (“gliding, sliding”)
 hn,Horn
+KISS,rock band "Knights in Satan's Service"
+KYGO,"Kyrre Gørvell-Dahll (born 11 September 1991), he's a Norwegian DJ, songwriter and record producer"
 m,Measure
 mm,Measures
 MM,Metronome tempo
 mf,Mezzo-Forte
 mp,Mezzo-Piano
+MSG,Michael Schenker Group (rock band)
 mvt,Movement
+NSYNC,Boy band consisting of JustiN, ChriS, JoeY, LanstoN, and J.C.
 ob,Oboe
 oda,Oboe d’amore
 orch,Orchestra
@@ -55,6 +63,7 @@ pp,Pages
 ppp,Pianississimo
 rall,Rallentando (“gradual slowing”)
 rec,Recorder
+REM,"An Athens, Georgia-based alt-rock group"
 rit,Ritardando (“slowing down”)
 Rf,Rinforzando (“with sudden force”)
 Rfz,Rinforzando (“with sudden force”)
@@ -79,3 +88,4 @@ tsx,Tenor saxophone
 vib,Vibrato (“pulsing, vibrating”)
 vol,Volume
 ww,Woodwinds
+XYZ,American hard rock band

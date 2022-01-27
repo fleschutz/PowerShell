@@ -8,7 +8,7 @@
 .EXAMPLE
 	PS> ./what-is IAS
 .NOTES
-	Author: Markus Fleschutz · License: CC0
+	Author: Markus Fleschutz / License: CC0
 .LINK
 	https://github.com/fleschutz/PowerShell
 #>
@@ -28,9 +28,9 @@ try {
 	foreach ($File in $Files) {
 		$Table = import-csv "$File"
 		foreach($Row in $Table) {
-			if ($Row.Abbreviation -eq $abbreviation) {
+			if ($Row.Abbr -eq $abbreviation) {
 				$Basename = (get-item "$File").Basename
-				Reply "$($Row.Definition) ($($Row.Abbreviation)) in $Basename"
+				Reply "In $Basename $($Row.Abbr) may refer to $($Row.Term)"
 				$FoundOne = $true
 			}
 		}

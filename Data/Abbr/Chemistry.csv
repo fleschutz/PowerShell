@@ -1,4 +1,4 @@
-Abbreviation,Definition
+Abbr,Term
 A,Atom
 a,atto prefix (10-18)
 AA,Acetic Acid
@@ -10,11 +10,10 @@ AADC,Aromatic L-Amino acid DeCarboxylase
 AAS,Atomic Absorption Spectroscopy
 AB,Acid Base
 AB,Acid Bath
-ABC,Atomic, Biological, Chemical
 ABCC,Advanced Biomedical Computing Center
 ABCC,American Board of Clinical Chemistry
-ABS,Acrylonitrile Butadiene Styrene
 ABS,Absorb
+ABS,Acrylonitrile Butadiene Styrene
 ABV,Alcohol By Volume
 ABW,Alcohol By Weight
 Ac,Actinium
@@ -23,9 +22,9 @@ ACC,American Chemical Council
 ACE,Acetate
 ACS,American Chemical Society
 ADP,Adenosine DiPhosphate
+AE,Acid Equivalent
 AE,Activation Energy
 AE,Atomic Emission
-AE,Acid Equivalent
 AFS,Atomic Fluorescence Spectroscopy
 Ag,Silver
 AH,Aryl Hydrocarbon
@@ -38,19 +37,19 @@ AMP,Adenosine MonoPhosphate
 AMU,Atomic Mass Unit
 AN,Ammonium Nitrate
 ANSI,American National Standards Institute
-AO,Aqueous Oxygen
 AO,Aldehyde Oxidase
+AO,Aqueous Oxygen
 API,Aromatic PolyImide
 AR,Analytical Reagent
 Ar,Argon
-As,Arsenic
 AS,Ammonium Sulfate
+As,Arsenic
 ASA,AcetylSalicylic Acid
 ASP,ASParate
+AT NO,Atomic Number
 AT,Adenine and Thymine
 AT,Alkaline Transition
 At,Astatine
-AT NO,Atomic Number
 ATP,Adenosine TriPhosphate
 ATP,Ambient Temperature Pressure
 Au,Gold
@@ -60,7 +59,6 @@ Ba,Barium
 BA,Benzyl Alcohol
 BA,Bonding Activity
 BA,Butyl Acetate
-B[a]P,Benzo[a]Pyrene
 BAP,Benzyl Amino Purine
 BC,Bond Centered
 BC,Boron Carbide
@@ -96,6 +94,7 @@ BTX,Benzene, Toluene, Xylene
 BWR,Boiling Water Reactor
 Bz,Benzoyl functional group
 BZP,BenZylPiperazine
+B[a]P,Benzo[a]Pyrene
 C,Carbon
 C,Celsius
 c,centi prefix (10-2)
@@ -110,9 +109,9 @@ CAS,Chemical Abstracts Service
 CAW,Catalyst Altered Water
 CB,Conduction Band
 CBA,Cytometric Bead Array
-CBR,Chemical, Biological, Radiological
-CBRE,Chemical, Biological, Radiological Element
-CBRN,Chemical, Biological, Radiological, or Nuclear
+CBR,"Chemical, Biological, Radiological"
+CBRE,"Chemical, Biological, Radiological Element"
+CBRN,"Chemical, Biological, Radiological, or Nuclear"
 CC,Cubic Centimeter
 CCBA,Chemical Coordinate Bonding and Adsorption
 CCL,Contaminant Candidate List
@@ -140,16 +139,16 @@ CHM,Chemistry
 CHO,Carbohydrate
 Ci,Curie
 CLC,Cross Linked Cellulose
-Cm,Curium
 cm,centimeter
+Cm,Curium
 CML,Chemical Markup Language
 CN,Coordination Number
 CN,Cyanide
 CNO,Carbon Nitrogen Oxygen
 CNP,Cyclic Nucleotide Phosphodiesterase
 CNT,Carbon NanoTube
-Co,Cobalt
 CO,Carbon monoxide
+Co,Cobalt
 CP,Chemically Pure
 CP,Creatine Phosphate
 CPA,CoPolymer Alloy
@@ -173,8 +172,8 @@ D,Deuterium
 D,Dilute
 D-,Dextrorotatory
 D2O,Deuterium Oxide or Heavy Water
-da,deca prefix (101)
 da,dalton
+da,deca prefix (101)
 DAB,Diaminobenzidine
 DAP,DiAmmonium Phosphate
 dB,decibel
@@ -216,7 +215,6 @@ DQS,Discrete Quantum State
 DRR,Double Replacement Reaction
 DU,Depleted Uranium
 Dy,Dysprosium
-e–,electron
 E,Energy
 E,Exa- prefix (1018)
 E1520,Propylene Glycol
@@ -272,6 +270,7 @@ Eu,Europium
 EV,Exceptional Vacuum
 EVA,Ethylene Vinyl Acetate
 EVOH,Ethylene Vinyl Alcohol
+e–,electron
 f,femto prefix (10-15)
 F,Fluorine
 FA,Fully Amorphous
@@ -346,8 +345,8 @@ GHB,Gamma-Hydroxy Butyrate
 GI,Galvanized Iron
 GI,Glycemic Index
 GLA,GaLactosidase Alpha
-GLA,Gamma-Linolenic Acid
 GLA,Gamma-caroxyglutamic Acid
+GLA,Gamma-Linolenic Acid
 GLC,Gas Liquid Chromatography
 Glc,Glucose
 Glk,Glucokinase
@@ -362,16 +361,16 @@ GT,Greater Than
 GTL,Gas To Liquid
 GTN,Glyceryl TriNitrate
 Gy,Gray (radiation unit)
+h,convection heat transfer coefficient
 H,Enthalpy
 h,hecto prefix (102)
 H,Hydrogen
 h,Planck’s constant
-h,convection heat transfer coefficient
 Ha,Hahnium (initial name for dubnium)
 HA,Hemagglutinin
 HAA,HaloAcetic Acid
-HAc,Acetic Acid
 HAc,Acetaldehyde
+HAc,Acetic Acid
 HACCP,Hazard Analysis and Critical Control Points
 HAP,Hazardous Air Pollutant
 HAS,Helium Atom Scattering
@@ -384,8 +383,8 @@ HBC,Hemoglobin C
 HBCD,HexaBromoCycloDodecane
 HBD,Hydrogen Bond Donor
 HC,HydroCarbon
-HCA,HydroxyCitric Acid
 HCA,HydroxyCarbonate Apatite
+HCA,HydroxyCitric Acid
 HCB,HexaChloroBenzene
 HCFC,HydroChloroFluoroCarbon
 HDA,High Density Amorphous ice
@@ -456,11 +455,12 @@ HZT,HydroChloroThiazide
 I,electrical current
 I,Iodine
 I,Isoleucine
+i.i.d.,independent and identically distributed
 IAEA,International Atomic Energy Agency
 IAQ,Indoor Air Quality
 IB,Ion Balance
 IC,Ice Crystals
-ICE,Initial, Change, Equilibrium
+ICE,"Initial, Change, Equilibrium"
 ICE,Internal Combustion Engine
 ICP,Inductively Coupled Plasma
 ICSC,International Chemical Safety Card
@@ -471,7 +471,6 @@ IE,Ionization Energy
 IEA,International Energy Agency
 IG,Inert Gas
 iHOP,information Hyperlinked Over Proteins
-i.i.d.,independent and identically distributed
 IK,Inverse Kinematics
 IMBR,Immersed Membrane BioReactor
 IMF,InterMolecular Force
@@ -488,8 +487,8 @@ IR,InfraRed
 IR,Ionizing Radiation
 Ir,Iridium
 IRM,Interference Reflection Microscopy
+ISI,"In-Situ Interfermometer ISM,Industrial, Scientific, or Medical"
 ISI,Initial State Interaction
-ISI,In-Situ Interfermometer ISM,Industrial, Scientific, or Medical
 IUPAC,International Union of Pure and Applied Chemistry
 J,Joule
 JAC,Journal of Analytical Chemistry
@@ -516,9 +515,9 @@ Kr,Krypton
 KTM,Kinetic Thermal Mixing
 kW,kilowatt
 L,azimuthal quantum number
+L,Inductance
 L,Length
 L,Leucine
-L,Inductance
 L,liter
 L,luminosity
 Li,Lithium
@@ -545,12 +544,13 @@ LPG,Liquid Petroleum Gas
 Lq,Liquid
 Lqd,Liquid
 Lr,Lawrencium
-LSE,Low Surface Energy
 LSD,Lysergic Acid Diethylamide
+LSE,Low Surface Energy
 LT,Less Than
 Lt,light
 LT,Low Temperature
-LTE,Local Thermodynamic Equilibrium LTG,Liquid To Gas
+LTE,Local Thermodynamic Equilibrium
+LTG,Liquid To Gas
 LTOEL,Long Term Occupational Exposure Limit
 Lu,Lutetium
 LUMO,Lowest Unoccupied Molecular Orbital
@@ -630,7 +630,7 @@ mol,mole
 MOL,molecule
 MP,Melting Point
 MP,Metal Particulate
-MPD,2-Methyl-2,4-PentaneDiol
+MPD,"2-Methyl-2,4-PentaneDiol"
 MPD,m-PhenyleneDiamine
 MPH,Miles Per Hour
 MPS,Meters Per Second
@@ -650,12 +650,12 @@ MWCO,Molecular Weight CutOff
 MWM,Molecular Weight Marker
 n,nano prefix (10-9)
 n,neutron
-n0,neutron
 n,neutron emission
 N,Newton
 N,Nitrogen
 N,Normal (concentration)
 n,number of moles
+n0,neutron
 NA,Avogadro constant
 NA,Not Active
 NA,Nucleic Acid
@@ -664,7 +664,7 @@ NAA,N-AcetylasPartate
 NAA,Naphtalic Acetic Acid
 NAC,Naphthenic Acid Corrosion
 NAD+,Nicotinamide Adenine Dinucleotide
-NADH,Nicotinamide Adenine Dinucleotide,Hydrogen (reduced)
+NADH,"Nicotinamide Adenine Dinucleotide,Hydrogen (reduced)"
 NADP,Nicotinamide Adenine Dinucleotide Phosphate
 NAS,National Academy of Science
 Nb,Niobium
@@ -683,15 +683,16 @@ NHE,Normalized Hydrogen Electrode
 Ni,Nickel
 NIH,National Institutes of Health
 NiMH,Nickel Metal Halide
-NIST,National Institute of Standards and Technology nm,nanometer
+NIST,National Institute of Standards and Technology
+nm,nanometer
 NM,Non Metal
 NMR,Nuclear Magnetic Resonance
 NNK,Nicotine-derived Nitrosamine Ketone
 No,Nobelium
 NOAA,National Oceanic and Atmospheric Administration
 NORM,Naturally Occurring Radioactive Material
-NOS,Nitrous Oxide
 NOS,Nitric Oxide Synthase
+NOS,Nitrous Oxide
 NOx,Nitrogen Oxides
 Np,Neptunium
 NR,Not Recorded
@@ -720,7 +721,7 @@ OH,alcohol
 OH,hydroxide
 OH,hydroxyl functional group
 OI,Oxygen Index
-OILRIG,Oxygen Is Losing,Reduction Is Gaining
+OILRIG,"Oxygen Is Losing, Reduction Is Gaining"
 OM,Organic Matter
 ON,Oxidation Number
 OP,Organophosphate
@@ -737,22 +738,21 @@ OV,Organic Vapor
 OVA,Organic Vapor Analyser
 OVA,OVAlbumin
 OWC,Oil-Water Contact
-OX,oxygen
 OX,Oxidation
+OX,oxygen
 OXA,OXanilic Acid
 OXT,OXyTocin
 OXY,Oxygen
+p+,Proton
 P,Peta prefix (1015)
 P,Phosphorus
 p,pico prefix (10-12)
 P,Pressure
 P,Proton
-p+,Proton
-PA,Phosphatidic Acid
 Pa,Pascal
+PA,Phosphatidic Acid
 Pa,Protactinium
 PA,Proton Affinity
-PA #,PolyAmide polymer number
 PAA,PolyAcrylic Acid
 PABA,ParaAminoBenzoic Acid
 PAC,Pharmaceutically Active Compound
@@ -816,14 +816,14 @@ PIB,PolyIsoButylene
 pK,measurement of the dissociation constant
 PLA,Polymerized Lactic Acid
 PLC,PhosphoLipase-C
-PM3,Parameterized Model number 3
-PM10,Particulates smaller than 10 μm.
 PM,Particulate Matter
 PM,Photo Multiplier
 pm,picometer
 PM,Plasma Membrane
 PM,Powder Metallurgy
 Pm,Promethium
+PM10,Particulates smaller than 10 μm.
+PM3,Parameterized Model number 3
 PMA,PhosphoMolybdic Acid
 PMA,PolyMethyl Acrylate
 PMID,PubMed IDentifier
@@ -837,7 +837,7 @@ pOH,measurement of OH- ions in aqueous solution
 POL,Petroleum, Oils, and Lubricants
 POP,Persistent Organic Pollutant
 PORC,Porcelain
-PPA -PhenylPropanolAmine
+PPA,PhenylPropanolAmine
 PPA,PolyPhthalAmide
 PPB,Parts Per Billion
 PPM,Parts Per Million
@@ -857,7 +857,7 @@ PU,PolyUrethane
 PV,Parity Violation
 PV,Pressure Volume
 PVC,PolyVinyl Chloride
-PVT,Pressure, Volume, Temperature
+PVT,"Pressure, Volume, Temperature"
 PXY,Para-XYlene
 Q,Heat energy
 QA,Quinolinic Acid
@@ -871,22 +871,20 @@ QS,Quantum Sufficit (Latin for “as much as needed”)
 qt,quart
 QW,Quit Whining
 QY,Quantum Yield
-°R,degrees Rankine
 R,Arginine amino acid
 R,Chiral center for R/S system
 R,functional group or side chain of atoms variable
-R,Resistance
 R,Ideal Gas Constant
 R,Reactive
 R,Redux
-R,Röntgen unit
+R,Resistance
 R,Rydberg Constant
-R-#,Refrigerant number
+R,Röntgen unit
 Ra,Radium
 RA,Retinoic Acid
 RACHEL,Remote Acess Chemical Hazards Electronic Library
+rad,"Radiation, Absorbed Dose"
 rad,radian
-rad,Radiation,Absorbed Dose
 Rad,Radioactive
 Rb,Rubidium
 RBA,Rutherford Backscattering Analysis
@@ -898,10 +896,10 @@ RDX,cyclotrimethylenetrinitramine
 RDX,Research Department Explosive
 RE,Rare Earth
 Re,Rhenium
-REACH,Registration, Evaluation, Authorization, and restriction of CHemical substances
+REACH,"Registration, Evaluation, Authorization, and restriction of CHemical substances"
 REE,Rare Earth Element
 Ref,Reference
-rem,Radiation Equivalent,Man
+rem,"Radiation Equivalent, Man"
 REM,Rare Earth Metal
 REQ,Required
 RER,Respiratory Exchange Ratio
@@ -934,18 +932,18 @@ ROWPU,Reverse Osmosis Water Purification Unit
 RPM,Revolutions Per Minute
 RPT,Repeat
 RSC,Royal Society of Chemistry
+RT,Energy (Rydberg Constant x Temperature)
 RT,Reverse Transcriptase
 RT,Room Temperature
-RT,Energy (Rydberg Constant x Temperature)
-RTP,Room Temperature and Pressure
 RTM,Read The Manual
+RTP,Room Temperature and Pressure
 RTSC,Room Temperature Super Conductor
 Ru,Ruthenium
 S,Entropy
 s,seconds
-S,Sulfur
 s,solid
 s,spin quantum number
+S,Sulfur
 SA,Salicylic Acid
 SA,Surface Area
 SAC,S-Allyl Cysteine
@@ -969,6 +967,7 @@ SC,Silicon Carbide
 SCBA,Specific Chemical and Biologic Agents
 SCC,Stress Corrosion Cracking
 Sci,Science
+SCN,Thiocyanate
 SCO,Super Charged Oxygen
 SCS,Single Crystal Silicon
 SCU,SCoville Units
@@ -981,7 +980,6 @@ SDW,Spin Density Wave
 SE,Sample Error
 Se,Selenium
 Sec,Seconds
-SCN,Thiocyanate
 SEP,Separate
 SEU,Slightly Enriched Uranium
 SF,Safety Factor
@@ -992,11 +990,11 @@ Sg,Seaborgium
 SG,Specific Gravity
 SG,Spheroidal Graphite
 SH,Thiol functional group
+SHC,Synthetic HydroCarbon
 SHE,Standard Hydrogen Electrode
 SHF,Super High Frequency
-SHC,Synthetic HydroCarbon
-Si,Silicon
 SI units,Système international d’unités (International System of Units)
+Si,Silicon
 SL,Sea Level
 SL,Short Lived
 SLI,Solid-Liquid Interface
@@ -1020,8 +1018,8 @@ SS,Solid Solution
 SS,Stainless Steel
 SSP,Steady State Plasma
 STEL,Short Term Exposure Limit
-STP,Standard Temperature and Pressure
 STM,Scanning Tunneling Microscope
+STP,Standard Temperature and Pressure
 SUS,SUSpension
 T,Period of a wave
 T,Tera prefix (1012)
@@ -1035,32 +1033,32 @@ TAC,Teiacetyl Cellulose
 TAG,TriAcylGlyceride
 tan,tangent
 TAN,Total Acid Number
-TAS,Total Analysis System
 TAS,Total Alkali versus Silica
+TAS,Total Analysis System
 TAT,TriAcetone TriPeroxide
 Tb,Terbium
-TBA,TertButylArsine
 TBA,2,4,6-TriBromoAnisole
-TBP,True Boiling Point
+TBA,TertButylArsine
 TBC,4-TertButylCatechol
-TBT,TriButylTin
 TBHQ,TertButylHydroQuinone
+TBP,True Boiling Point
+TBT,TriButylTin
+Tc,Critical Temperature
 Tc,Technitium
 TC,Temperature Compensated
 TC,Temperature Controlled
 TC,Theoretical Chemistry
-Tc,Critical Temperature
 TCA,TauroCholic Acid
 TCA,TCA cycle (citric acid cycle)
 TCA,TriChloroAcetic Acid
 TCE,TriChloroEthane
 TCF,ThiolCarbon Fiber
 TCM,TetraChloromethane
+TCP,1,2,3-TriChloropropane
 TCP,Thermal Conversion Process
 TCP,Tocopherol
 TCP,TriCalcium Phosphate
 TCP,TriChloroPhenol
-TCP,1,2,3-TriChloropropane
 TCS,Toxic Chemical System
 TCT,ToCoTrienol
 TCV,Temperature Control Valve
@@ -1074,8 +1072,8 @@ TDI,Tolerable Daily Intake
 TDI,Toluene DiIsonate
 TDO,Tryptophan 2,3-DiOxygenase
 TDP,Thermal DePolymerization
-TDP,Thymidine DiPhosphate
 TDP,Thiamine DiPhosphate
+TDP,Thymidine DiPhosphate
 Te,Tellurium
 TEA,Terminal Electron Acceptor
 TEC,Thermal Electric Cooler
@@ -1090,8 +1088,8 @@ TIC,Total Ion Current
 TIMS,Thermal Ionization Mass Spectroscopy
 TIP,TrisIsopropyl Phenyl
 Tl,Thallium
-TLC- Thin Layer Chromatography
-TLV- Toxic Level Value
+TLC,Thin Layer Chromatography
+TLV,Toxic Level Value
 Tm,Thulium
 TM,Transition Metal
 TMD,Theoretical Maximum Density
@@ -1100,15 +1098,15 @@ TMMA,TetraMethylMalonAmide
 TMP,TriMethylPhosphate
 TMS,TriMethylSilane
 TNB,TriNitroBenzene
-TNT,TriNitroToluene
 TNS,Test No Ether
+TNT,TriNitroToluene
 TOBSY,Total ThroughBond Correlation Spectroscopy
 TOC,Total Organic Carbon
 TOI,Table Of Isotopes
 TON,Table Of Nuclides
 TOX,Toxic
-TP,Triple Point
 TP,Transition Point
+TP,Triple Point
 TPE,ThermoPlastic Elastomer
 TPM,Total Particulate Matter
 TR,Table Row
@@ -1137,8 +1135,8 @@ U,Undetectable
 U,Uranium
 UAFM,Uranyl Acetate Fluorescence Method
 UCK,Universal Chemical Key
-UHF,Ultra High Frequency
 UG,Undisturbed Gas UHC,Unburned HydroCarbons
+UHF,Ultra High Frequency
 UHMW,Ultra High Molecular Weight
 UHP,Ultra High Pressure
 UHP,Ultra High Purity
@@ -1154,16 +1152,16 @@ UPW,Ultra Pure Water
 UQY,Ultimate Quality and Yield
 UUD,UnUnDuium (Element 112, now Cn)
 UUH,UnUnHexium (Element 116)
+UUO,UnUnOctium (Element 118)
 UUP,UnUnPentium (Element 115)
 UUQ,UnUnQuadium (Element 114)
 UUS,UnUnSeptium (Element 117)
-UUO,UnUnOctium (Element 118)
 UUU,UnUnUnium (Element 111, now Rg)
 UV,UltraViolet
-UVA,UltraViolet band A
 UV-A,UltravViolet band A
-UVB,UltraViolet band B
 UV-B,UltraViolet band B
+UVA,UltraViolet band A
+UVB,UltraViolet band B
 UVF,UtraViolet Filter
 UVL,UltraViolet Lamp
 UVR,UltraViolet Reactive
@@ -1175,18 +1173,18 @@ V,Vanadium
 v,velocity
 V,Volt
 V,Volume
-VA,Volume Analyzer
 VA,Nitrogen group
+VA,Volume Analyzer
 VAC,Vacuum
 VAC,Vacuum Assisted Closure
 VB,Vacuum Break
 VB,Valence Band
 VBJ,Vacuum Bell Jar
 VBT,Valence Bond Theory
-VC,Viscous Coupled
 VC,Vapor Cloud
-VCE,Vapor Cloud Explosion
 VC,Vinyl Chloride
+VC,Viscous Coupled
+VCE,Vapor Cloud Explosion
 VCM,Vinyl Chloride Monomer
 Vd,Volume distribution
 VDB,VanDyke Brown test
@@ -1225,8 +1223,8 @@ VU,Volume Units
 VV,Vacuum Vessel
 VV,Valence-Valence
 VW,Varies Widely
-W,Tungsten
 W,Tryptofan
+W,Tungsten
 W,Watt
 W,wavelength
 W,Weight
@@ -1253,11 +1251,11 @@ WPS,Water Phase Salt
 WR,Water Repellent
 WS,Wash Solution
 WS,Water Soluble
+WSNZ,Water Soluble Zinc
 WSPI,Water-Soluble Phosphorous, Inorganic
 WSPO,Water-Soluble Phosphorous, Organic
 WSS,Water Soluble Stabilizer
 WST,Weighted Settling Time
-WSNZ,Water Soluble Zinc
 WV,Water Vapor
 WVDA,Water Vapor Diffusion Analysis
 WVM,Water Vapor Monitor
@@ -1272,8 +1270,8 @@ WYU,What You Use
 X,Halogen
 X,unknown
 XAG,Silver Troy Ounce
-XAU,Gold Troy Ounce
 XAN,XANthine
+XAU,Gold Troy Ounce
 XDB,eXtra Dense Bonding
 Xe,Xenon
 XLS,Xenon Light Source
@@ -1287,10 +1285,10 @@ y,yocto prefix (10-24)
 Y,Yotta prefix (1024)
 Y,Yttrium
 YA,Yield Analysis
-Yb,Ytterbium
-YBCO,Yttrium Barium Copper Oxide
 YAG,Yttrium Aluminum Garnet
 YAP,Yield Analysis Pattern
+Yb,Ytterbium
+YBCO,Yttrium Barium Copper Oxide
 YBG,Your Best Guess
 YCC,American Chemical Society Younger Chemists Committee
 Yd,Yard
@@ -1304,7 +1302,6 @@ Z,proton number
 z,zepto prefix (10-21)
 Z,zero
 Z,Zetta prefix (1021)
-Zn,Zinc
 ZB,Zinc Blende
 ZC,Zero Calibration
 ZC,Zinc Composite
@@ -1317,6 +1314,7 @@ ZEKE,Zero Electron Kinetic Energy
 ZG,Zero Gravity
 ZINC,Zinc Is Not Copper
 ZK,Zero Kelvin
+Zn,Zinc
 ZO,Zinc Oxide
 ZP,Zero Pressure
 Zr,Zirconium

@@ -1,43 +1,109 @@
-Abbreviation,Definition
+Abbr,Term
 A/A,Air to air TACAN function
 A/C,Aircraft
 A/D,Aerodrome
 A/F,Autofeather
 A/FD,Airport/Facility Directory
 A/P,Autopilot
+A/R,Altitude Rate
+AAA,Airport Airspace Analysis
 AAE,Above Aerodrome Elevation
+AAF,Airway Facilities Service
+AAF,Army Air Field
+AAI,Arrival Aircraft Interval
 AAIB,Air Accidents Investigation Branch (UK)
 AAIM,Aircraft Autonomous Integrity Monitoring
+AAMS,Aircraft Arrival Management System
 AAO,Assumed Adverse Obstacle
 AAS,Airport Advisory Service
 AB,Air Base
-AC,Aircraft
 AC,Air Conditioning
+AC,Aircraft
 ACAM,Aircraft Continuing Airworthiness Monitoring
 ACARS,ARINC Communications Addressing and Reporting System
-ACAS,Airborne Collision Avoidance System
+ACAS,Aircraft Collision Avoidance System
 ACC,Area Control Center
 ADAC,Abu Dhabi Airports
+ADF,Automatic Direction Finding
+ADI,Automatic De-Ice and Inhibitor
+ADIZ,Air Defense Identification Zone
+ADL,Aeronautical Data Link
+ADLY,Arrival Delay
 ADP,Aeroportes de Paris
+ADP,Automated Data Processing
+ADS,Automated Distribution System
+ADS,Automatic Dependent Surveillance
+ADS-B,Automatic Dependent Surveillance-Broadcast
 AENA,Aeropuertos Españoles y Navegación Aérea
+AERA,Automated En-Route Air Traffic Control
 AF,Air Field
-AFM,Aircraft Flight Manual
-AGL,Above Ground Level
-AIP,Aeronautical Information Publication
-AMAN,Arrival Manager
-AOA,Angle of Attack
-AOM,Airplane Operating Manual
-AOR,Area of Responsibility
 AFIS,Aerodrome Flight Information Service
+AFM,Aircraft Flight Manual
 AFM,Airplane Flight Manual
 AGL,Above Ground Level
+AGL,Above Ground Level
+AICS,Aircraft Inventory and Charter System
+AID,Airport Information Desk
+AIDS,Aircraft Integrated Data System
+AIG,Airbus Industries Group
+AILS,Automatic Instrument Landing System
+AIM,Aeronautical Information Manual
 AIP,Aeronautical Information Publication
+AIP,Aeronautical Information Publication
+AIPA,Aeronautical Information Production Application
+AIRAC,Aeronautical Information Regulation And Control
+AIRMET,Airmen's Meteorological Information
+AIRNAV,Airports and Navigation Aids Database System
+AIRNET,Airport Network Simulation Model
+AIRPAC,Advisor for the Intelligent Resolution of Predicted Aircraft
+ALO,Aviation Logistics Organization
+ALP,Airport Layout Plan
+ALPA,Airlines Pilots Association
+ALS,Approach Lighting System
+ALSF,Approach Lighting System With Sequenced Flashing Lights
+ALSF1,ALS with Sequenced Flashers I
+ALSF2,ALS with Sequenced Flashers II
+ALSIP,Approach Lighting System Improvement Plan
+ALTRV,Altitude Reservation
+AMAN,Arrival Manager
+AMASS,Airport Movement Area Safety System
+AMCC,Air Route Traffic Control Center Maintenance Control Center
+AMIC,Area Manager in Charge
+AMIS,Aircraft Management Information System
+AMOC,Alternative Methods of Compliance
+AMOS,Automated Meteorological Observation Station
+AMP,ARINC Message Processor (OR) Airport Master Plan
+AMS,Acquisition Management System
+AMT,Aviation Maintenance Technician
+AMVER,Automated Mutual Assistance Vessel Rescue System
+ANC,Alternate Network Connectivity
+ANCA,Airport Noise and Capacity Act
+ANG,Air National Guard
+ANGB,Air National Guard Base
+ANMS,Automated Network Monitoring System
 ANSP,Air Navigation Service Provider
+AOA,Air Operations Area
+AOA,Angle of Attack
+AOC,Airline Operational Control Center
+AOCC,Atlantic Operations Control Center
+AODR,Authorizing Official Designated Representative
+AOM,Airplane Operating Manual
+AOPA,Aircraft Owners and Pilots Association
+AOR,Area of Responsibility
+AP,Acquisition Plan
+APB,Acquisition Program Baselines
+APM,Approach Path Monitor
+APP,Approach
+APS,Airport Planning Standard
+APTS,Automated Personnel Tracking System
+AQAFO,Aeronautical Quality Assurance Field Office
 AR,Aerial Refueling
 AR,Aspect Ratio
-A/R,Altitude Rate
+ARAC,Army Radar Approach Control (AAF)
 ARFOR,Area Forecast
-ARINC,Aeronautical Radio Incorporated (USA)
+ARINC,Aeronautical Radio, Inc. (USA)
+ARLNO,Airline Office
+ARP,Airport Reference Point
 ARTCC,Air Route Traffic Control Centre
 ASB,Airspace Block
 ATA,Actual Time of Arrival
@@ -56,8 +122,8 @@ CCBC,Community College Baltimore County
 COG,Center of Gravity
 COTS,Commercial-of-the-shelf
 CRDA,Converging Runway Display Aid
-CTA,Controlled Time of Arrival
 CTA,Controlled Area
+CTA,Controlled Time of Arrival
 CTOT,Calculated Take-Off Time
 CTR,Control Zone or Controlled Traffic Region
 DAS,DFS Aviation Services (DFS subcompany for services outside Germany)
@@ -71,8 +137,8 @@ EAVA,Estonian Aviation Academy
 ECAC,European Civil Aviation Conference
 EFM,Gesellschaft für Enteisen und Flugzeugschleppen
 ETA,Estimated Time of Arrival
-ETOPS,Extended Range Twin-engine Aircraft Operations
-FAA,Federal Aviation Administration (USA)
+ETOPS,Extended-range Twin-engine Operational Performance Standards
+ETVS,Enhanced Terminal Voice Switch system
 FAR,Fuel Air Ratio
 FAS,Final Approach Segment
 FAS,Final Approach Speed
@@ -84,8 +150,8 @@ FAWP,Final Approach Waypoint
 FAWS,Flight Advisory Weather Service
 FBW,Fly-by-Wire
 FCA,Final Cruise Altitude
-FCC,Flight Control Computer
 FCC,Federal Communications Commission (USA)
+FCC,Flight Control Computer
 FCI,Flight Command Indicator
 FCL,Flight Crew Licensing
 FCLP,Field Carrier Landing Practice
@@ -110,11 +176,14 @@ IAF,Israeli Air Force
 IANS,Institute of Air Navigation Services, a division of Eurocontrol
 IAS,Indicated Air Speed
 IATA,International Air Transport Association, HQ in Montreal, Canada
+IFR,Instrument Flight Rules
 IG,Image Generator
 IGLR,Integrated Ground Lighting and Radar
+ILS,Instrument Landing System
 IMC,Instrument Meteorological Conditions
 KAT,Kaufbeuren ATM Training (DFS subcompany)
 LAA,Lappland Aviation Academy
+LITAS,Low Intensity Two Colour Approach System 
 LL,Lower Limit
 LMUK,Lockheed Martin UK
 LOD,Level of Detail
@@ -126,10 +195,15 @@ MEA,Minimum En-route Altitude
 METAR,Meteorological Aerodrome Report
 MSL,Median Sea Level
 OCTA,Outside Control Areas
+OFZ,Obstacle Free Zone
+OJT,On the Job Training
 PAPI,Precision Approach Path Indicator
 PAR,Precision Approach Radar
+PIC,Pilot in Command
+PNF,Pilot Not Flying 
 POH,Pilot's Operating Handbook
-PPL,Private Pilot License
+PPL,Private Pilot's License
+PtF,Permit to Fly
 QFE,the altimeter setting that will cause the altimeter to read the height above a specific aerodrome or ground level, and therefore read zero on landing
 QNE,pressure altitude at the landing runway threshold
 QNH,atmospheric pressure adjusted to mean sea level
@@ -137,43 +211,56 @@ RAT,Reliability Acceptance Test (see also FAT and SAT)
 RBAF,Royal Belgium Armed Forces
 RCAF,Royal Canadian Air Force
 RET,Rapid Exit Taxiways
+RFFS,Rescue and Fire Fighting Services
 RJAF,Royal Jordanian Air Force
 RPI,Runway Point of Intercept
 RPM,Rotations per Minute
 RVR,Runway Visual Range
 RWY,Runway
 SAT,Site Acceptance Test (see also FAT and RAT)
-SLOC,Slovenia Control
-STARS,Standard Arrival Routes
+SATCO,Senior Air Traffic Control Officer
+SFO,Simulated Flameout Operation
 SID,Standard Instrument Departure
 SKYGUIDE,ATC Swiss
+SLOC,Slovenia Control
 SOW,Statement of Work
 SSR,Secondary Surveillance Radar
+STARS,Standard Arrival Routes
+STOL,Short Take Off and Landing
 SWT,Switch
 TA,Terminal Airspace
+TAF,Terminal Aerodrome Forecast
 TAS,Terminal Airspace System
 TAS,True Airspeed
 TCAS,Traffic Collision Avoidance System
+TCDS,Type Certificate Data Sheet
 TCL,Taxi Center Lights
 TFDM,Terminal Flight Data Management
 TMA,Terminal Control Area
 TSTC,Texas State Technical College
 TWR,Control Tower,
 UAA,University of Alaska Anchorage
+UKCAA,Civil Aviation Authority (UK)
 UMASS,University of Massachusetts
 USAF,US Air Force
 UTA,Upper Traffic Area
 V1,Decision speed, the speed beyond which takeoff should no longer be aborted
 V2,Takeoff speed. The speed at which the aircraft may safely be climbed with one engine inoperative
 VASI,Visual Approach Slope Indicator
+VASIS,Visual Approach Slope Indicator System 
+VFR,Visual Flight Rules
 VHF,Very High Frequency
-VMO,maximum operation speed is the air speed than should never be exceeded deliberately in normal operation, whatever the flight situation is
-VOR,VHF Omni-directional Range
+VMC,Visual Meteorological Conditions
+VMO,maximum operation speed is the air speed than should never be exceeded deliberately in normal operation, whatever the flight situation isVOR,VHF Omni-directional Range
 VREF,1.3 times the stalling speed of the aircraft in the stated landing configuration and at the prevailing aircraft weight
 VRR,Voice Recognition & Response
 VS,Stall speed, defined as the minimum steady flight speed at which the airplane is controllable
+VSP,Vertical Speed
+VSTOL,vertical short take-off and landing
 VTC,Visual Terminal Chart
 VTOL,vertical take-off and landing
-VSTOL,vertical short take-off and landing
 VTOSL,vertical take-off and short landing
+VTS,Vehicle Tracking System
+WDI,Wind Direction Indicator
 WTC,Wake Turbulence Category
+WX,Weather

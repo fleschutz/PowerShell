@@ -1,4 +1,4 @@
-Abbreviation,Definition
+Abbr,Term
 AA,Air-to-Air
 AA,Anti-Aircraft
 AAA,Anti-Aircraft Artillery
@@ -12,7 +12,7 @@ AAP,American Academy of Pediatrics
 AAV,Amphibious Assault Vehicle
 AAV,Amphibious Assault Vehicle
 AAV,Assault Amphibian Vehicle
-AAVC,Assault Amphibian Vehicle (Command)
+AAVC,Assault Amphibian Vehicle Command
 ABA,Applied Behavior Analysis
 ABM,Anti-Ballistic Missile
 AC,Active Component
@@ -39,6 +39,7 @@ AF,Air Force
 AFB,Air Force Base
 AFD,Automatic Feeding Device
 AFMC,Air Force Material Command
+AFN,American Forces Network
 AFV,Armored Fighting Vehicle
 AIFV,Armored Infantry Fighting Vehicle
 AIP,Assignment Incentive Pay
@@ -206,9 +207,6 @@ DLTP,Defence Logistics Transformation Program
 DMDC,Defense Manpower Data Center
 DMHS,Defense Message Handling System
 DMR,Designated Marksman Rifle
-DoD,Department of Defense
-DOD,Department of Defense
-DoD,Department of Defense (United States)
 DoDI,DoD Instruction
 DoDTR,Department of Defense Trauma Registry
 DOL,U.S. Department of Labor
@@ -304,7 +302,7 @@ GP,General Purpose
 GPMG,General Purpose Machine Gun
 GPMRC,Global Patient Movement Requirements Center
 GPS,Global Positioning System
-GPS,Global Positioning System
+GSSAP,Geosynchronous Space Situational Awareness Program
 HCBS,Home and Community-Based Services
 HCSDB,Health Care Survey of DoD Beneficiaries
 HD,Homeland Defense
@@ -341,19 +339,15 @@ HVM,High Velocity Missile
 HVT,High-Value Target
 IADS,Integrated Air Defense System
 IAMD,Integrated Air and Missile Defense
-IAS,Indicated Airspeed Shown
 IC3,Interagency Care Coordination Committee
 ICBM,InterContinental Ballistic Missile
-ICBM,Intercontinental Ballistic Missile
 IDA,Institute for Defense Analyses
 IED,Improvised Explosive Device
 iEHR,Integrated Electronic Health Record
 IFF,Identification Friend or Foe
-IFF,Identification, Friend or Foe
 IFV,Infantry Fighting Vehicle
 IGE,In Ground Effect
 IIR,Intelligence Information report
-ILS,Instrument Landing System
 INS,Inertial Navigation System
 INTELSAT,International Telecommunications Satellite Organization
 IOC,Initial Operating Capabilities
@@ -504,6 +498,7 @@ MRF,Military Retirement F
 MRR,Minimum-Risk Route
 MSC,Military Sealift Command
 MSF,Mobile Security Force
+MSG,Master Sergeant
 MSIP,Multi-Stage Improvement Program
 MSP,Maritime Security Program
 MSR,Main Supply Route
@@ -516,7 +511,6 @@ NAF,Nonappropriated Funds
 NAF,Nonappropriated Funds
 NAI,Named Area of Interest
 NAS,Naval Air Station
-NASA,National Aeronautics & Space Administration
 NATO,North Atlantic Treaty Organization
 NAVSOF,Navy Special Operations Forces
 NBC,Nuclear, Biological and Chemical
@@ -733,6 +727,7 @@ TAI,Target Area of Interest
 TAMP,Transition Assistance Management Program
 TANS,Tactical Air Navigation System
 TBO,Time Between Overhauls
+TBD,Torpedo Boat Destroyer
 TBT,Tank Bridge Transporter
 TCCC,Tactical Combat Casualty Care
 TCF,Tactical Combat Force
@@ -770,12 +765,12 @@ UCAV,Unmanned Combat Aerial Vehicle
 UCMJ,Uniform Code of Military Justice
 UCP,Unified Command Plan
 UCX,Unemployment Compensation for Ex-Servicemembers
+UDT,Underwater Demolition Team
 UETF,Unified Exchange Task Force
 UHF,Ultra-High Fequency (300MHz to 3 GHz)
 UIC,Unit Identification Code
 UJTL,Universal Joint Task List
 ULN,Unit Line Number
-UN,United Nations
 USAAC,United States Army Air Corps
 USAAF,United States Army Air Forces
 USAF,United States Air Force
@@ -804,9 +799,9 @@ VISA,Voluntary Intermodal Sealift Agreement
 VISN,Veterans Integrated Service Network
 VistA,Veterans Health Information Systems and Technology Architecture
 VSEL,Vickers Shipbuilding and Engineering LTD
-VSO,Veteran Service organization
 VSO,Veterans Service Organization
-VTAS,Voice, Throttle and Stick
+VSTOL,Vertical Short Take-Off and Landing
+VTAS,"Voice, Throttle and Stick"
 VTOL,Vertical Take-Off and Landing
 WARM,Wartime Reserve Modes
 WARNORD,Warning Order
