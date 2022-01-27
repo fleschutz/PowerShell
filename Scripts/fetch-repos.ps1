@@ -31,7 +31,7 @@ try {
 	[int]$Step = 1
 	foreach ($Folder in $Folders) {
 		$FolderName = (get-item "$Folder").Name
-		"⏳ Step $Step/$NumFolders: Fetching 📂$FolderName..."
+		"⏳ Step $Step/$($NumFolders): Fetching 📂$FolderName..."
 
 		& git -C "$Folder" fetch --all --recurse-submodules --prune --prune-tags --force
 		if ($lastExitCode -ne "0") { throw "'git fetch' in $FolderName failed" }
