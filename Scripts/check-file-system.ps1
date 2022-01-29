@@ -2,7 +2,7 @@
 .SYNOPSIS
 	Checks the file system of a drive (needs admin rights)
 .DESCRIPTION
-	This script checks the file system of a drive. It needs admin rights.
+	This PowerShell script checks the file system of a drive. It needs admin rights.
 .PARAMETER Drive
 	Specifies the drive to check
 .EXAMPLE
@@ -11,7 +11,7 @@
 .LINK
 	https://github.com/fleschutz/PowerShell
 .NOTES
-	Author: Markus Fleschutz · License: CC0
+	Author: Markus Fleschutz / License: CC0
 #>
 
 #Requires -RunAsAdministrator

@@ -2,7 +2,7 @@
 .SYNOPSIS
 	Exports scripts to Serenade 
 .DESCRIPTION
-	This script exports all PowerShell scripts to Serenade to execute them by voice.
+	This PowerShell script exports all scripts to Serenade to execute them by voice.
 .PARAMETER WakeWord
 	Specifies the wake word (none by default)
 .PARAMETER FilePattern
@@ -16,10 +16,10 @@
 	⏳ Found 534 PowerShell scripts...
 	⏳ Writing custom JavaScript file: C:\Users\Markus\.serenade\scripts\PowerShell.js...
 	✔️ Exported to Serenade with wake word "Computer" in 3 sec
-.NOTES
-	Author: Markus Fleschutz · License: CC0
 .LINK
 	https://github.com/fleschutz/PowerShell
+.NOTES
+	Author: Markus Fleschutz / License: CC0
 #>
 
 #requires -version 2

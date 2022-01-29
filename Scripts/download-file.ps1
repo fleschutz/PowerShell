@@ -2,15 +2,15 @@
 .SYNOPSIS
 	Downloads a file from an URL
 .DESCRIPTION
-	This script downloads a file from the given URL
+	This PowerShell script downloads a file from the given URL
 .PARAMETER URL
 	Specifies the URL where to download from
 .EXAMPLE
 	PS> ./download-file https://www.cnn.com/index.html
-.NOTES
-	Author: Markus Fleschutz · License: CC0
 .LINK
 	https://github.com/fleschutz/PowerShell
+.NOTES
+	Author: Markus Fleschutz / License: CC0
 #>
 
 param([string]$URL = "")

@@ -2,13 +2,13 @@
 .SYNOPSIS
 	Enables the writing of crash dumps
 .DESCRIPTION
-	Enables the writing of crash dumps.
+	This PowerShell script enables the writing of crash dumps.
 .EXAMPLE
 	PS> ./enable-crash-dumps
-.NOTES
-	Author: Markus Fleschutz · License: CC0
 .LINK
 	https://github.com/fleschutz/PowerShell
+.NOTES
+	Author: Markus Fleschutz / License: CC0
 #>
 
 ##################################################################

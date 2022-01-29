@@ -2,15 +2,15 @@
 .SYNOPSIS
 	Gives a reply 
 .DESCRIPTION
-	This script gives a reply in English on the console and by text-to-speech (TTS).
+	This PowerShell script gives a reply in English on the console and by text-to-speech (TTS).
 .PARAMETER text
 	Specifies the text to speak
 .EXAMPLE
 	PS> ./give-reply "Hello World"
-.NOTES
-	Author: Markus Fleschutz · License: CC0
 .LINK
 	https://github.com/fleschutz/PowerShell
+.NOTES
+	Author: Markus Fleschutz / License: CC0
 #>
 
 param([string]$text = "")

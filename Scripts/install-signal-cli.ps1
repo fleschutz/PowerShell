@@ -2,15 +2,16 @@
 .SYNOPSIS
 	Installs signal-cli 
 .DESCRIPTION
-	Installs signal-cli from github.com/AsamK/signal-cli. See the Web page for the correct version number.
+	This PowerShell script installs signal-cli from github.com/AsamK/signal-cli.
+	See the Web page for the correct version number.
 .PARAMETER Version
 	Specifies the version to install
 .EXAMPLE
 	PS> ./install-signal-cli 0.11.12
-.NOTES
-	Author: Markus Fleschutz · License: CC0
 .LINK
 	https://github.com/fleschutz/PowerShell
+.NOTES
+	Author: Markus Fleschutz / License: CC0
 #>
 
 param([string]$Version = "")

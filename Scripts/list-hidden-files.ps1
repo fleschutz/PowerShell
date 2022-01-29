@@ -2,15 +2,15 @@
 .SYNOPSIS
 	Lists hidden files in a directory tree
 .DESCRIPTION
-	This script scans and lists all hidden files in a directory tree.
+	This PowerShell script scans and lists all hidden files in a directory tree.
 .PARAMETER DirTree
 	Specifies the path to the directory tree
 .EXAMPLE
 	PS> ./list-hidden-files C:\
-.NOTES
-	Author: Markus Fleschutz · License: CC0
 .LINK
 	https://github.com/fleschutz/PowerShell
+.NOTES
+	Author: Markus Fleschutz / License: CC0
 #>
 
 param([string]$DirTree = "$PWD")

@@ -2,13 +2,13 @@
 .SYNOPSIS
 	Lists major earthquakes since 30 days
 .DESCRIPTION
-	This script lists earthquakes with magnitude >= 6.0 for the last 30 days.
+	This PowerShell script lists earthquakes with magnitude >= 6.0 for the last 30 days.
 .EXAMPLE
 	PS> ./list-earthquakes
-.NOTES
-	Author: Markus Fleschutz · License: CC0
 .LINK
 	https://github.com/fleschutz/PowerShell
+.NOTES
+	Author: Markus Fleschutz / License: CC0
 #>
 
 $Format="csv" # csv, geojson, kml, text, xml

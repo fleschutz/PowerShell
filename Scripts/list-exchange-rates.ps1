@@ -2,15 +2,15 @@
 .SYNOPSIS
 	Lists the exchange rates for a currency
 .DESCRIPTION
-	Lists the current exchange rates for the given currency (USD per default).
+	This PowerShell script lists the current exchange rates for the given currency (USD per default).
 .PARAMETER currency
 	Specifies the base currency
 .EXAMPLE
 	PS> ./list-exchange-rates EUR
-.NOTES
-	Author: Markus Fleschutz · License: CC0
 .LINK
 	https://github.com/fleschutz/PowerShell
+.NOTES
+	Author: Markus Fleschutz / License: CC0
 #>
 
 param([string]$currency = "USD")

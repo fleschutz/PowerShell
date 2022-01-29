@@ -8,11 +8,11 @@
 .PARAMETER MaxCount
 	Specifies the number of news to list
 .EXAMPLE
-	PS> ./list-news
-.NOTES
-	Author: Markus Fleschutz · License: CC0
+	PS> ./check-headlines
 .LINK
 	https://github.com/fleschutz/PowerShell
+.NOTES
+	Author: Markus Fleschutz / License: CC0
 #>
 
 param([string]$RSS_URL = "https://yahoo.com/news/rss/world", [int]$MaxCount = 8)

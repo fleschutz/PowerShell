@@ -2,13 +2,13 @@
 .SYNOPSIS
 	Lists the TIOBE index of top programming languages
 .DESCRIPTION
-	This script lists the TIOBE index of top programming languages.
+	This PowerShell script lists the TIOBE index of top programming languages.
 .EXAMPLE
 	PS> ./list-tiobe-index
-.NOTES
-	Author: Markus Fleschutz · License: CC0
 .LINK
 	https://github.com/fleschutz/PowerShell
+.NOTES
+	Author: Markus Fleschutz / License: CC0
 #>
 
 function WriteBar { param([string]$Text, [float]$Value, [float]$Max, [float]$Change)

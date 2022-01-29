@@ -2,15 +2,15 @@
 .SYNOPSIS
 	Clones well-known Git repositories into a folder
 .DESCRIPTION
-	This script clones well-known Git repositories into a folder.
+	This PowerShell script clones well-known Git repositories into a folder.
 .PARAMETER folder
 	Specifies the target folder
 .EXAMPLE
 	PS> ./clone-repos C:\Repos
-.NOTES
-	Author: Markus Fleschutz / License: CC0
 .LINK
 	https://github.com/fleschutz/PowerShell
+.NOTES
+	Author: Markus Fleschutz / License: CC0
 #>
 
 param([string]$FolderPath = "$PWD")

@@ -2,7 +2,7 @@
 .SYNOPSIS
 	Lists all automatic variables of PowerShell
 .DESCRIPTION
-	This script lists all automatic variables of PowerShell.
+	This PowerShell script lists all automatic variables of PowerShell.
 .EXAMPLE
 	PS> ./list-automatic-variables
 
@@ -11,10 +11,10 @@
 	$false                          False
 	$HOME                           C:\Users\Markus
 	...
-.NOTES
-	Author: Markus Fleschutz · License: CC0
 .LINK
 	https://github.com/fleschutz/PowerShell
+.NOTES
+	Author: Markus Fleschutz / License: CC0
 #>
 
 function AddItem { param([string]$Variable, [string]$Content)

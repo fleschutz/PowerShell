@@ -2,13 +2,13 @@
 .SYNOPSIS
 	Opens the documents folder
 .DESCRIPTION
-	This script launches the File Explorer with the user's documents folder.
+	This PowerShell script launches the File Explorer with the user's documents folder.
 .EXAMPLE
 	PS> ./open-documents-folder
-.NOTES
-	Author: Markus Fleschutz · License: CC0
 .LINK
 	https://github.com/fleschutz/PowerShell
+.NOTES
+	Author: Markus Fleschutz / License: CC0
 #>
 
 try {

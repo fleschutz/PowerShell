@@ -2,13 +2,13 @@
 .SYNOPSIS
 	Determines the uptime 
 .DESCRIPTION
-	This script determines and says the uptime by text-to-speech (TTS).
+	This PowerShell script determines and says the uptime by text-to-speech (TTS).
 .EXAMPLE
 	PS> ./check-uptime
-.NOTES
-	Author: Markus Fleschutz · License: CC0
 .LINK
 	https://github.com/fleschutz/PowerShell
+.NOTES
+	Author: Markus Fleschutz / License: CC0
 #>
 
 try {

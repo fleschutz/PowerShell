@@ -2,13 +2,13 @@
 .SYNOPSIS
 	Prints the current moon phase
 .DESCRIPTION
-	This script prints the current moon phase.
+	This PowerShell script prints the current moon phase.
 .EXAMPLE
 	PS> ./moon
-.NOTES
-	Author: Markus Fleschutz · License: CC0
 .LINK
 	https://github.com/fleschutz/PowerShell
+.NOTES
+	Author: Markus Fleschutz / License: CC0
 #>
 
 try {

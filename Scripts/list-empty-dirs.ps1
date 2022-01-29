@@ -2,15 +2,15 @@
 .SYNOPSIS
 	Lists empty subfolders within a directory tree
 .DESCRIPTION
-	This script scans and lists all empty subfolders within the given directory tree.
+	This PowerShell script scans and lists all empty subfolders within the given directory tree.
 .PARAMETER DirTree
 	Specifies the path to the directory tree
 .EXAMPLE
 	PS> ./list-empty-dirs C:\
-.NOTES
-	Author: Markus Fleschutz · License: CC0
 .LINK
 	https://github.com/fleschutz/PowerShell
+.NOTES
+	Author: Markus Fleschutz / License: CC0
 #>
 
 param([string]$DirTree = "$PWD")

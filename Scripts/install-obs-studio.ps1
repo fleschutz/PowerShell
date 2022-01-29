@@ -2,13 +2,13 @@
 .SYNOPSIS
 	Installs OBS Studio (needs admin rights)
 .DESCRIPTION
-	This script installs OBS Studio (admin rights are needed).
+	This PowerShell script installs OBS Studio (admin rights are needed).
 .EXAMPLE
 	PS> ./install-obs-studio
-.NOTES
-	Author: Markus Fleschutz · License: CC0
 .LINK
 	https://github.com/fleschutz/PowerShell
+.NOTES
+	Author: Markus Fleschutz / License: CC0
 #>
 
 #Requires -RunAsAdministrator

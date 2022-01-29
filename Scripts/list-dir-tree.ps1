@@ -2,15 +2,15 @@
 .SYNOPSIS
 	Lists the full directory tree
 .DESCRIPTION
-	This script lists the full directory tree.
+	This PowerShell script lists the full directory tree.
 .PARAMETER DirTree
 	Specifies the path to the directory tree
 .EXAMPLE
 	PS> ./list-dir-tree C:\
-.NOTES
-	Author: Markus Fleschutz · License: CC0
 .LINK
 	https://github.com/fleschutz/PowerShell
+.NOTES
+	Author: Markus Fleschutz / License: CC0
 #>
 
 param([string]$DirTree = "$PWD")

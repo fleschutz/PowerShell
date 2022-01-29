@@ -1,15 +1,15 @@
 ﻿<#
 .SYNOPSIS
-	Sets the working directory to the root directory (C:\ on Windows)
+	Sets the working directory to the root directory 
 .DESCRIPTION
-	This script changes the working directory to the root directory (C:\ on Windows).
+	This PowerShell script changes the working directory to the root directory (C:\ on Windows).
 .EXAMPLE
 	PS> ./cd-root
 	📂C:\
 .LINK
 	https://github.com/fleschutz/PowerShell
 .NOTES
-	Author: Markus Fleschutz · License: CC0
+	Author: Markus Fleschutz / License: CC0
 #>
 
 try {

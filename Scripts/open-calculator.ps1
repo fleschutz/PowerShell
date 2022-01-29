@@ -2,13 +2,13 @@
 .SYNOPSIS
 	Launches the calculator application
 .DESCRIPTION
-	This script launches the calculator application.
+	This PowerShell script launches the calculator application.
 .EXAMPLE
 	PS> ./open-calculator
-.NOTES
-	Author: Markus Fleschutz · License: CC0
 .LINK
 	https://github.com/fleschutz/PowerShell
+.NOTES
+	Author: Markus Fleschutz / License: CC0
 #>
 
 try {

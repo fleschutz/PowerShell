@@ -2,7 +2,7 @@
 .SYNOPSIS
 	Checks the weather 
 .DESCRIPTION
-	Checks the current weather report.
+	This PowerShell script checks the current weather report.
 .PARAMETER location
 	Specifies the location to use (determined automatically per default)
 .EXAMPLE
@@ -10,7 +10,7 @@
 .LINK
 	https://github.com/fleschutz/PowerShell
 .NOTES
-	Author: Markus Fleschutz · License: CC0
+	Author: Markus Fleschutz / License: CC0
 #>
 
 param([string]$location = "") # empty means determine automatically

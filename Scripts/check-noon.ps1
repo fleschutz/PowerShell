@@ -2,13 +2,13 @@
 .SYNOPSIS
 	Checks for Noon
 .DESCRIPTION
-	This script checks the time until Noon and replies by text-to-speech (TTS).
+	This PowerShell script checks the time until Noon and replies by text-to-speech (TTS).
 .EXAMPLE
 	PS> ./check-noon
-.NOTES
-	Author: Markus Fleschutz · License: CC0
 .LINK
 	https://github.com/fleschutz/PowerShell
+.NOTES
+	Author: Markus Fleschutz / License: CC0
 #>
 
 function TimeSpanToString { param([TimeSpan]$Delta)

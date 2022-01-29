@@ -2,13 +2,13 @@
 .SYNOPSIS
 	Installs Windows Subsystem for Linux (needs admin rights)
 .DESCRIPTION
-	This script installs Windows Subsystem for Linux. It needs admin rights.
+	This PowerShell script installs Windows Subsystem for Linux. It needs admin rights.
 .EXAMPLE
 	PS> ./install-wsl
-.NOTES
-	Author: Markus Fleschutz · License: CC0
 .LINK
 	https://github.com/fleschutz/PowerShell
+.NOTES
+	Author: Markus Fleschutz / License: CC0
 #>
 
 #Requires -RunAsAdministrator

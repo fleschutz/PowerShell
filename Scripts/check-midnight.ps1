@@ -2,13 +2,13 @@
 .SYNOPSIS
 	Checks for Midnight
 .DESCRIPTION
-	This script checks the time until Midnight and replies by text-to-speech (TTS).
+	This PowerShell script checks the time until Midnight and replies by text-to-speech (TTS).
 .EXAMPLE
 	PS> ./check-midnight
-.NOTES
-	Author: Markus Fleschutz · License: CC0
 .LINK
 	https://github.com/fleschutz/PowerShell
+.NOTES
+	Author: Markus Fleschutz / License: CC0
 #>
 
 function TimeSpanToString { param([TimeSpan]$Delta)

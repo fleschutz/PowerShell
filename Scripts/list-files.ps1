@@ -2,15 +2,15 @@
 .SYNOPSIS
 	Lists all files in a directory tree
 .DESCRIPTION
-	This script lists all files within the given directory tree.
+	This PowerShell script lists all files within the given directory tree.
 .PARAMETER DirTree
 	Specifies the path to the directory tree
 .EXAMPLE
 	PS> ./list-files C:\
-.NOTES
-	Author: Markus Fleschutz · License: CC0
 .LINK
 	https://github.com/fleschutz/PowerShell
+.NOTES
+	Author: Markus Fleschutz / License: CC0
 #>
 
 param([string]$DirTree = "")

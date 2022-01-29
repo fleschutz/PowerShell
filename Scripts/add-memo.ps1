@@ -1,8 +1,8 @@
 ﻿<#
 .SYNOPSIS
-	Adds a memo text to $HOME/Memos.csv 
+	Adds a memo text 
 .DESCRIPTION
-	This script adds the given memo text to $HOME/Memos.csv.
+	This PowerShell script adds the given memo text to $HOME/Memos.csv.
 .PARAMETER text
 	Specifies the text to memorize
 .EXAMPLE
@@ -11,7 +11,7 @@
 .LINK
 	https://github.com/fleschutz/PowerShell
 .NOTES
-	Author: Markus Fleschutz · License: CC0
+	Author: Markus Fleschutz / License: CC0
 #>
 
 param([string]$text = "")

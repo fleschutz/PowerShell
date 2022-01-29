@@ -2,17 +2,17 @@
 .SYNOPSIS
 	Creates a new symbolic link file
 .DESCRIPTION
-	This script creates a new symbolic link file.
+	This PowerShell script creates a new symbolic link file.
 .PARAMETER symlink
 	Specifies the new symlink filename
 .PARAMETER target
 	Specifies the path to target
 .EXAMPLE
 	PS> ./new-symlink C:\Temp\HDD C:\
-.NOTES
-	Author: Markus Fleschutz · License: CC0
 .LINK
 	https://github.com/fleschutz/PowerShell
+.NOTES
+	Author: Markus Fleschutz / License: CC0
 #>
 
 param([string]$symlink = "", $[string]target = "")

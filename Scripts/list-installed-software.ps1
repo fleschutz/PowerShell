@@ -2,13 +2,13 @@
 .SYNOPSIS
 	Lists the installed software
 .DESCRIPTION
-	This script lists the installed software (except Windows Store apps).
+	This PowerShell script lists the installed software (except Windows Store apps).
 .EXAMPLE
 	PS> ./list-installed-software
-.NOTES
-	Author: Markus Fleschutz · License: CC0
 .LINK
 	https://github.com/fleschutz/PowerShell
+.NOTES
+	Author: Markus Fleschutz / License: CC0
 #>
 
 try {

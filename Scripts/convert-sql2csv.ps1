@@ -2,7 +2,7 @@
 .SYNOPSIS
 	Converts a SQL database table to a .CSV file
 .DESCRIPTION
-	This script converts a SQL database table to a .CSV file.
+	This PowerShell script converts a SQL database table to a .CSV file.
 .PARAMETER server
 	Specifies the server's hostname or IP address
 .PARAMETER database
@@ -15,10 +15,10 @@
 	Specifies the SQL query
 .EXAMPLE
 	PS> ./convert-sql2csv
-.NOTES
-	Author: Markus Fleschutz · License: CC0
 .LINK
 	https://github.com/fleschutz/PowerShell
+.NOTES
+	Author: Markus Fleschutz / License: CC0
 #>
 
 param([string]$server = "", [string]$database = "", [string]$username = "", [string]$password = "", [string]$query = "")

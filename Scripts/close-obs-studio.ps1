@@ -2,13 +2,13 @@
 .SYNOPSIS
 	Closes OBS Studio
 .DESCRIPTION
-	This script closes the OBS Studio application gracefully.
+	This PowerShell script closes the OBS Studio application gracefully.
 .EXAMPLE
 	PS> ./close-obs-studio
-.NOTES
-	Author: Markus Fleschutz · License: CC0
 .LINK
 	https://github.com/fleschutz/PowerShell
+.NOTES
+	Author: Markus Fleschutz / License: CC0
 #>
 
 TaskKill /im obs64.exe

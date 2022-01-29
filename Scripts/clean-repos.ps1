@@ -2,15 +2,15 @@
 .SYNOPSIS
 	Cleans all Git repositories in a folder from untracked files 
 .DESCRIPTION
-	This script cleans all Git repositories in a folder from untracked files (including submodules).
+	This PowerShell script cleans all Git repositories in a folder from untracked files (including submodules).
 .PARAMETER ParentDir
 	Specifies the path to the parent folder
 .EXAMPLE
 	PS> ./clean-repos C:\MyRepos
-.NOTES
-	Author: Markus Fleschutz / License: CC0
 .LINK
 	https://github.com/fleschutz/PowerShell
+.NOTES
+	Author: Markus Fleschutz / License: CC0
 #>
 
 param([string]$ParentDir = "$PWD")

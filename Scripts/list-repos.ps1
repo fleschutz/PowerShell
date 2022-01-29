@@ -2,7 +2,7 @@
 .SYNOPSIS
 	Lists the details of all Git repositories in a folder
 .DESCRIPTION
-	This script lists the details of all Git repositories in the given folder.
+	This PowerShell script lists the details of all Git repositories in the given folder.
 .PARAMETER ParentDir
 	Specifies the path to the parent folder.
 .EXAMPLE
@@ -13,10 +13,10 @@
 	cmake       main   clean
 	opencv      master clean
 	...
-.NOTES
-	Author: Markus Fleschutz · License: CC0
 .LINK
 	https://github.com/fleschutz/PowerShell
+.NOTES
+	Author: Markus Fleschutz / License: CC0
 #>
 
 param([string]$ParentDir = "$PWD")

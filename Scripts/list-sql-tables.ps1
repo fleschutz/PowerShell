@@ -2,15 +2,15 @@
 .SYNOPSIS
 	Lists all tables of a SQL server database 
 .DESCRIPTION
-	Lists all tables in a SQL server database and exports the list as CSV.
+	This PowerShell script lists all tables in a SQL server database and exports the list as CSV.
 	Install-Module InvokeQuery
 	Run the above command if you do not have this module.
 .EXAMPLE
 	PS> ./list-sql-tables
-.NOTES
-	Author: Markus Fleschutz · License: CC0
 .LINK
 	https://github.com/fleschutz/PowerShell
+.NOTES
+	Author: Markus Fleschutz / License: CC0
 #>
 
 param(

@@ -2,7 +2,7 @@
 .SYNOPSIS
 	Adds firewall rules for executables (needs admin rights)
 .DESCRIPTION
-	This script adds firewall rules for the given executable. Administrator rights are required.
+	This PowerShell script adds firewall rules for the given executable. Administrator rights are required.
 .PARAMETER PathToExecutables
 	Specifies the path to the executables
 .EXAMPLE
@@ -13,7 +13,7 @@
 .LINK
 	https://github.com/fleschutz/PowerShell
 .NOTES
-	Author: Markus Fleschutz · License: CC0
+	Author: Markus Fleschutz / License: CC0
 #>
 
 #Requires -RunAsAdministrator

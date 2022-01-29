@@ -2,17 +2,17 @@
 .SYNOPSIS
 	Decrypts the given file
 .DESCRIPTION
-	This script decrypts the given file.
+	This PowerShell script decrypts the given file.
 .PARAMETER Path
 	Specifies the path to the file to decrypt
 .PARAMETER Password
 	Specifies the password 
 .EXAMPLE
 	PS> ./decrypt-file-rules C:\MyFile.txt "123"
-.NOTES
-	Author: Markus Fleschutz · License: CC0
 .LINK
 	https://github.com/fleschutz/PowerShell
+.NOTES
+	Author: Markus Fleschutz / License: CC0
 #>
 
 param([string]$Path = "", [string]$Password = "")

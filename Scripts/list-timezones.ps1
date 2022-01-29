@@ -2,7 +2,7 @@
 .SYNOPSIS
 	Lists all available time zones
 .DESCRIPTION
-	This script lists all available time zones.
+	This PowerShell script lists all available time zones.
 .EXAMPLE
 	PS> ./list-timezones
 
@@ -12,10 +12,10 @@
 	Hawaiian Standard Time          (UTC-10:00) Hawaii                     False
 	Alaskan Standard Time           (UTC-09:00) Alaska                     True
 	...
-.NOTES
-	Author: Markus Fleschutz · License: CC0
 .LINK
 	https://github.com/fleschutz/PowerShell
+.NOTES
+	Author: Markus Fleschutz / License: CC0
 #>
 
 try {

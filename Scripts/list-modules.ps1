@@ -2,7 +2,7 @@
 .SYNOPSIS
 	Lists all PowerShell modules
 .DESCRIPTION
-	This script lists all installed PowerShell modules.
+	This PowerShell script lists all installed PowerShell modules.
 .EXAMPLE
 	PS> ./list-modules
 
@@ -10,10 +10,10 @@
 	---------- -------    ----                                ----------------
 	Manifest   3.1.0.0    Microsoft.PowerShell.Management     {Add-Computer, Add-Content, Checkpoint-Computer...}
 	Manifest   3.1.0.0    Microsoft.PowerShell.Utility        {Add-Member, Add-Type, Clear-Variable...}
-.NOTES
-	Author: Markus Fleschutz · License: CC0
 .LINK
 	https://github.com/fleschutz/PowerShell
+.NOTES
+	Author: Markus Fleschutz / License: CC0
 #>
 
 try {

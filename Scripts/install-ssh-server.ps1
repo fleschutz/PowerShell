@@ -2,13 +2,13 @@
 .SYNOPSIS
 	Installs the SSH server (needs admin rights)
 .DESCRIPTION
-	This script installs the SSH server (needs admin rights).
+	This PowerShell script installs the SSH server (needs admin rights).
 .EXAMPLE
 	PS> ./install-ssh-server
-.NOTES
-	Author: Markus Fleschutz · License: CC0
 .LINK
 	https://github.com/fleschutz/PowerShell
+.NOTES
+	Author: Markus Fleschutz / License: CC0
 #>
 
 #Requires -RunAsAdministrator

@@ -2,14 +2,14 @@
 .SYNOPSIS
 	Sets the working directory to the user's pictures folder
 .DESCRIPTION
-	This script changes the working directory to the user's pictures folder.
+	This PowerShell script changes the working directory to the user's pictures folder.
 .EXAMPLE
 	PS> ./cd-pics
 	📂/home/markus/Pictures
 .LINK
 	https://github.com/fleschutz/PowerShell
 .NOTES
-	Author: Markus Fleschutz · License: CC0
+	Author: Markus Fleschutz / License: CC0
 #>
 
 try {

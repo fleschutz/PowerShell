@@ -2,13 +2,13 @@
 .SYNOPSIS
 	Closes the Firefox browser 
 .DESCRIPTION
-	This script closes the Mozilla Firefox Web browser gracefully.
+	This PowerShell script closes the Mozilla Firefox Web browser gracefully.
 .EXAMPLE
 	PS> ./close-firefox
-.NOTES
-	Author: Markus Fleschutz · License: CC0
 .LINK
 	https://github.com/fleschutz/PowerShell
+.NOTES
+	Author: Markus Fleschutz / License: CC0
 #>
 
 & "$PSScriptRoot/close-program.ps1" "Mozilla Firefox" "firefox" "firefox"

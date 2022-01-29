@@ -2,13 +2,13 @@
 .SYNOPSIS
 	Checks the Moon phase
 .DESCRIPTION
-	This script determines the Moon phase and answers by text-to-speech (TTS).
+	This PowerShell script determines the Moon phase and answers by text-to-speech (TTS).
 .EXAMPLE
 	PS> ./check-moon-phase
-.NOTES
-	Author: Markus Fleschutz · License: CC0
 .LINK
 	https://github.com/fleschutz/PowerShell
+.NOTES
+	Author: Markus Fleschutz / License: CC0
 #>
 
 try {

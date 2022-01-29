@@ -2,15 +2,15 @@
 .SYNOPSIS
 	Lists the folder content 
 .DESCRIPTION
-	This script lists the directory content formatted in columns.
+	This PowerShell script lists the directory content formatted in columns.
 .PARAMETER SearchPattern
 	Specifies the search pattern, "*" by default (means anything) 
 .EXAMPLE
 	PS> ./list-folder C:\
-.NOTES
-	Author: Markus Fleschutz · License: CC0
 .LINK
 	https://github.com/fleschutz/PowerShell
+.NOTES
+	Author: Markus Fleschutz / License: CC0
 #>
 
 param([string]$SearchPattern = "*")

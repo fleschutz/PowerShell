@@ -2,13 +2,13 @@
 .SYNOPSIS
 	Opens Google Calendar
 .DESCRIPTION
-	This script launches the Web browser with the Google Calendar website.
+	This PowerShell script launches the Web browser with the Google Calendar website.
 .EXAMPLE
 	PS> ./open-google-calendar
-.NOTES
-	Author: Markus Fleschutz · License: CC0
 .LINK
 	https://github.com/fleschutz/PowerShell
+.NOTES
+	Author: Markus Fleschutz / License: CC0
 #>
 
 & "$PSScriptRoot/open-default-browser.ps1" "https://calendar.google.com"

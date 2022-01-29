@@ -2,13 +2,13 @@
 .SYNOPSIS
 	Lists the current working directory
 .DESCRIPTION
-	This script lists the current working directory (but not the content itself!)
+	This PowerShell script lists the current working directory (but not the content itself!)
 .EXAMPLE
 	PS> ./list-workdir
-.NOTES
-	Author: Markus Fleschutz · License: CC0
 .LINK
 	https://github.com/fleschutz/PowerShell
+.NOTES
+	Author: Markus Fleschutz / License: CC0
 #>
 
 try {

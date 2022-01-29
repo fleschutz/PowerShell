@@ -2,7 +2,7 @@
 .SYNOPSIS
 	Lists the details of the current time zone
 .DESCRIPTION
-	This script lists the details of the current time zone.
+	This PowerShell script lists the details of the current time zone.
 .EXAMPLE
 	PS> ./list-timezone
 
@@ -12,10 +12,10 @@
 	DaylightName               : Central European Summer Time
 	BaseUtcOffset              : 01:00:00
 	SupportsDaylightSavingTime : True
-.NOTES
-	Author: Markus Fleschutz · License: CC0
 .LINK
 	https://github.com/fleschutz/PowerShell
+.NOTES
+	Author: Markus Fleschutz / License: CC0
 #>
 
 try {

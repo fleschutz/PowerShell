@@ -2,13 +2,13 @@
 .SYNOPSIS
 	Enters a chat using a common network shared file
 .DESCRIPTION
-	This script enters a chat using a common network shared file.
+	This PowerShell script enters a chat using a common network shared file.
 .EXAMPLE
 	PS> ./enter-chat
-.NOTES
-	Author: Markus Fleschutz · License: CC0
 .LINK
 	https://github.com/fleschutz/PowerShell
+.NOTES
+	Author: Markus Fleschutz · License: CC0
 #>
 
 # make sure you adjust this path

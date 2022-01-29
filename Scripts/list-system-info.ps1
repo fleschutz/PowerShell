@@ -2,13 +2,13 @@
 .SYNOPSIS
 	Lists system information of the local computer
 .DESCRIPTION
-	This script lists system information of the local computer.
+	This PowerShell script lists system information of the local computer.
 .EXAMPLE
 	PS> ./list-system-info
-.NOTES
-	Author: Markus Fleschutz · License: CC0
 .LINK
 	https://github.com/fleschutz/PowerShell
+.NOTES
+	Author: Markus Fleschutz / License: CC0
 #>
 
 # RAM

@@ -2,13 +2,13 @@
 .SYNOPSIS
 	Shows the credits for the PowerShell Scripts
 .DESCRIPTION
-	This script shows the credits for the PowerShell Scripts.
+	This PowerShell script shows the credits for the PowerShell Scripts.
 .EXAMPLE
 	PS> ./list-credits
-.NOTES
-	Author: Markus Fleschutz · License: CC0
 .LINK
 	https://github.com/fleschutz/PowerShell
+.NOTES
+	Author: Markus Fleschutz / License: CC0
 #>
 
 try {

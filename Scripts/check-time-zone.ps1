@@ -2,13 +2,13 @@
 .SYNOPSIS
 	Determines the time zone
 .DESCRIPTION
-	This script determines and returns the current time zone.
+	This PowerShell script determines and returns the current time zone.
 .EXAMPLE
 	PS> ./check-time-zone
-.NOTES
-	Author: Markus Fleschutz · License: CC0
 .LINK
 	https://github.com/fleschutz/PowerShell
+.NOTES
+	Author: Markus Fleschutz / License: CC0
 #>
 
 try {

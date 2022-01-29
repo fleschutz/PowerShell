@@ -2,7 +2,7 @@
 .SYNOPSIS
 	Lists random PIN's
 .DESCRIPTION
-	This script lists random PIN's.
+	This PowerShell script lists random PIN's.
 .PARAMETER PinLength
 	Specifies the PIN length
 .PARAMETER Columns
@@ -11,10 +11,10 @@
 	Specifies the number of rows
 .EXAMPLE
 	PS> ./list-pins
-.NOTES
-	Author: Markus Fleschutz · License: CC0
 .LINK
 	https://github.com/fleschutz/PowerShell
+.NOTES
+	Author: Markus Fleschutz / License: CC0
 #>
 
 param([int]$PinLength = 5, [int]$Columns = 12, [int]$Rows = 30)

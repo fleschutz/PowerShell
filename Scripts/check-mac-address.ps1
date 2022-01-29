@@ -2,7 +2,7 @@
 .SYNOPSIS
 	Checks the given MAC address for validity
 .DESCRIPTION
-	This script checks the given MAC address for validity
+	This PowerShell script checks the given MAC address for validity
 	Supported MAC address formats are: 00:00:00:00:00:00 or 00-00-00-00-00-00 or 000000000000.
 .PARAMETER MAC
 	Specifies the MAC address to check
@@ -12,7 +12,7 @@
 .LINK
 	https://github.com/fleschutz/PowerShell
 .NOTES
-	Author: Markus Fleschutz · License: CC0
+	Author: Markus Fleschutz / License: CC0
 #>
 
 param([string]$MAC = "")

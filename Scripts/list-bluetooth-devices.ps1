@@ -2,13 +2,13 @@
 .SYNOPSIS
 	Lists all Bluetooth devices
 .DESCRIPTION
-	This script lists all Bluetooth devices.
+	This PowerShell script lists all Bluetooth devices.
 .EXAMPLE
 	PS> ./list-bluetooth-devices
-.NOTES
-	Author: Markus Fleschutz · License: CC0
 .LINK
 	https://github.com/fleschutz/PowerShell
+.NOTES
+	Author: Markus Fleschutz / License: CC0
 #>
 
 try {

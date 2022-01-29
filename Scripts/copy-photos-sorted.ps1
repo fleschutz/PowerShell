@@ -9,10 +9,10 @@
 	Specifies the path to the target folder
 .EXAMPLE
 	PS> ./copy-photos-sorted D:\Mobile\DCIM C:\MyPhotoAlbum
-.NOTES
-	Author: Markus Fleschutz / License: CC0
 .LINK
 	https://github.com/fleschutz/PowerShell
+.NOTES
+	Author: Markus Fleschutz / License: CC0
 #>
 
 param([string]$SourceDir = "", [string]$TargetDir = "")

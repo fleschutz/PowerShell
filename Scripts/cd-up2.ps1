@@ -2,14 +2,13 @@
 .SYNOPSIS
 	Sets the working directory to two directory levels up
 .DESCRIPTION
-	This script changes the working directory to two directory level up.
+	This PowerShell script changes the working directory to two directory level up.
 .EXAMPLE
 	PS> ./cd-up2
-	(two levels up)
 .LINK
 	https://github.com/fleschutz/PowerShell
 .NOTES
-	Author: Markus Fleschutz · License: CC0
+	Author: Markus Fleschutz / License: CC0
 #>
 
 try {

@@ -2,15 +2,15 @@
 .SYNOPSIS
 	Lists empty files within a directory tree
 .DESCRIPTION
-	This script scans and lists all empty files within the given directory tree.
+	This PowerShell script scans and lists all empty files within the given directory tree.
 .PARAMETER DirTree
 	Specifies the path to the directory tree
 .EXAMPLE
 	PS> ./list-empty-files C:\
-.NOTES
-	Author: Markus Fleschutz · License: CC0
 .LINK
 	https://github.com/fleschutz/PowerShell
+.NOTES
+	Author: Markus Fleschutz / License: CC0
 #>
 
 param([string]$DirTree = "")

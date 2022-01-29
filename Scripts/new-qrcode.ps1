@@ -2,17 +2,17 @@
 .SYNOPSIS
 	Generates a new QR code image file
 .DESCRIPTION
-	This script generates a new QR code image file.
+	This PowerShell script generates a new QR code image file.
 .PARAMETER Text
 	Specifies the text to use
 .PARAMETER ImageSize
 	Specifies the image size (width x height)
 .EXAMPLE
 	PS> ./new-qrcode "Fasten seatbelt" 500x500
-.NOTES
-	Author: Markus Fleschutz · License: CC0
 .LINK
 	https://github.com/fleschutz/PowerShell
+.NOTES
+	Author: Markus Fleschutz / License: CC0
 #>
 
 param([string]$Text = "", [string]$ImageSize = "")

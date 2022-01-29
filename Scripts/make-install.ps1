@@ -2,13 +2,13 @@
 .SYNOPSIS
 	Copies newer EXE's + DLL's from the build directory to the installation directory
 .DESCRIPTION
-	This script copies newer EXE's + DLL's from the build directory to the installation directory.
+	This PowerShell script copies newer EXE's + DLL's from the build directory to the installation directory.
 .EXAMPLE
 	PS> ./make-install
-.NOTES
-	Author: Markus Fleschutz · License: CC0
 .LINK
 	https://github.com/fleschutz/PowerShell
+.NOTES
+	Author: Markus Fleschutz / License: CC0
 #>
 
 set SRC_DIR=%1

@@ -2,17 +2,17 @@
 .SYNOPSIS
 	Lists the latest operating system updates
 .DESCRIPTION
-	This script lists the latest operating system update news.
+	This PowerShell script lists the latest operating system update news.
 .PARAMETER RSS_URL
 	Specifies the URL to the RSS feed
 .PARAMETER MaxCount
 	Specifies the number of news to list
 .EXAMPLE
 	PS> ./list-os-updates
-.NOTES
-	Author: Markus Fleschutz · License: CC0
 .LINK
 	https://github.com/fleschutz/PowerShell
+.NOTES
+	Author: Markus Fleschutz / License: CC0
 #>
 
 param([string]$RSS_URL = "https://distrowatch.com/news/dwd.xml", [int]$MaxCount = 20)

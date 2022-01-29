@@ -2,7 +2,7 @@
 .SYNOPSIS
 	Lists all PowerShell cmdlets
 .DESCRIPTION
-	This script lists all PowerShell cmdlets.
+	This PowerShell script lists all PowerShell cmdlets.
 .EXAMPLE
 	PS> ./list-cmdlets
 
@@ -11,10 +11,10 @@
 	Function        Add-BCDataCacheExtension              1.0.0.0    BranchCache
 	Function        Add-BitLockerKeyProtector             1.0.0.0    BitLocker
 	...
-.NOTES
-	Author: Markus Fleschutz · License: CC0
 .LINK
 	https://github.com/fleschutz/PowerShell
+.NOTES
+	Author: Markus Fleschutz / License: CC0
 #>
 
 try {

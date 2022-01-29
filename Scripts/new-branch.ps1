@@ -2,17 +2,17 @@
 .SYNOPSIS
 	Creates and switches to a new branch in a Git repository
 .DESCRIPTION
-	This script creates and switches to a new branch in a Git repository.
+	This PowerShell script creates and switches to a new branch in a Git repository.
 .PARAMETER BranchName
 	Specifies the branch name
 .PARAMETER RepoDir
 	Specifies the path to the Git repository
 .EXAMPLE
 	PS> ./new-branch test123
-.NOTES
-	Author: Markus Fleschutz · License: CC0
 .LINK
 	https://github.com/fleschutz/PowerShell
+.NOTES
+	Author: Markus Fleschutz / License: CC0
 #>
 
 param([string]$BranchName = "", [string]$RepoDir = "$PWD")

@@ -2,17 +2,17 @@
 .SYNOPSIS
 	Lists the phone calls of the FRITZ!Box device
 .DESCRIPTION
-	This script lists the phone calls of the FRITZ!Box device.
+	This PowerShell script lists the phone calls of the FRITZ!Box device.
 .PARAMETER Username
 	Specifies the user name for FRITZ!Box
 .PARAMETER Password
 	Specifies the password to FRITZ!Box
 .EXAMPLE
 	PS> ./list-fritzbox-calls
-.NOTES
-	Author: Markus Fleschutz · License: CC0
 .LINK
 	https://github.com/fleschutz/PowerShell
+.NOTES
+	Author: Markus Fleschutz / License: CC0
 #>
 
 #Requires -Version 3

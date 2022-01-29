@@ -2,17 +2,17 @@
 .SYNOPSIS
 	Lists FRITZ!Box's known devices
 .DESCRIPTION
-	This script lists FRITZ!Box's known devices.
+	This PowerShell script lists FRITZ!Box's known devices.
 .PARAMETER Username
 	Specifies the user name to FRITZ!Box
 .PARAMETER Password
 	Specifies the password to FRITZ!Box
 .EXAMPLE
 	PS> ./list-fritzbox-devices
-.NOTES
-	Author: Markus Fleschutz · License: CC0
 .LINK
 	https://github.com/fleschutz/PowerShell
+.NOTES
+	Author: Markus Fleschutz / License: CC0
 #>
 
 #Requires -Version 3

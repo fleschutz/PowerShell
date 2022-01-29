@@ -2,13 +2,13 @@
 .SYNOPSIS
 	Checks the time of dusk 
 .DESCRIPTION
-	This script queries the time of dusk and answers by text-to-speech (TTS).
+	This PowerShell script queries the time of dusk and answers by text-to-speech (TTS).
 .EXAMPLE
 	PS> ./check-dusk
-.NOTES
-	Author: Markus Fleschutz · License: CC0
 .LINK
 	https://github.com/fleschutz/PowerShell
+.NOTES
+	Author: Markus Fleschutz / License: CC0
 #>
 
 function TimeSpanToString { param([TimeSpan]$Delta)

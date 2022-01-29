@@ -2,15 +2,15 @@
 .SYNOPSIS
 	Prints basic information of an executable file
 .DESCRIPTION
-	This script prints basic information of an executable file.
+	This PowerShell script prints basic information of an executable file.
 .PARAMETER PathToExe
 	Specifies the path to the executable file
 .EXAMPLE
 	PS> ./inspect-exe C:\MyApp.exe
-.NOTES
-	Author: Markus Fleschutz · License: CC0
 .LINK
 	https://github.com/fleschutz/PowerShell
+.NOTES
+	Author: Markus Fleschutz / License: CC0
 #>
 
 param([string]$PathToExe = "")

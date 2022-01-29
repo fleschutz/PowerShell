@@ -2,15 +2,15 @@
 .SYNOPSIS
 	Starts the File Explorer
 .DESCRIPTION
-	This script launches the File Explorer.
+	This PowerShell script launches the File Explorer.
 .EXAMPLE
 	PS> ./open-file-explorer
 .PARAMETER Path
 	Specifies the path to the folder to display 
-.NOTES
-	Author: Markus Fleschutz · License: CC0
 .LINK
 	https://github.com/fleschutz/PowerShell
+.NOTES
+	Author: Markus Fleschutz / License: CC0
 #>
 
 param([string]$Path = "")

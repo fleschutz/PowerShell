@@ -2,13 +2,13 @@
 .SYNOPSIS
 	Connects to the VPN
 .DESCRIPTION
-	This script tries to connect to the VPN.
+	This PowerShell script tries to connect to the VPN.
 .EXAMPLE
 	PS> ./connect-vpn
 .LINK
 	https://github.com/fleschutz/PowerShell
 .NOTES
-	Author: Markus Fleschutz · License: CC0
+	Author: Markus Fleschutz / License: CC0
 #>
 
 try {

@@ -2,7 +2,7 @@
 .SYNOPSIS
 	Checks the swap space
 .DESCRIPTION
-	This script checks the free swap space.
+	This PowerShell script checks the free swap space.
 .PARAMETER MinLevel
 	Specifies the minimum level (50 GB by default)
 .EXAMPLE
@@ -11,7 +11,7 @@
 .LINK
 	https://github.com/fleschutz/PowerShell
 .NOTES
-	Author: Markus Fleschutz · License: CC0
+	Author: Markus Fleschutz / License: CC0
 #>
 
 param([int]$MinLevel = 50) # minimum level in GB

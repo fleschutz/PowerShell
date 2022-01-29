@@ -2,7 +2,7 @@
 .SYNOPSIS
 	Handles and escalates an alert 
 .DESCRIPTION
-	This script handles and escalates the given alert message.
+	This PowerShell script handles and escalates the given alert message.
 .PARAMETER message
 	Specifies the alert message
 .EXAMPLE
@@ -10,7 +10,7 @@
 .LINK
 	https://github.com/fleschutz/PowerShell
 .NOTES
-	Author: Markus Fleschutz · License: CC0
+	Author: Markus Fleschutz / License: CC0
 #>
 
 param([string]$Message = "")

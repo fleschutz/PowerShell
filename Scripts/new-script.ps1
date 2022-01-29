@@ -2,16 +2,16 @@
 .SYNOPSIS
 	Creates a new PowerShell script file
 .DESCRIPTION
-	Creates a new PowerShell script file (by using template file ../Data/template.ps1).
+	This PowerShell script creates a new PowerShell script file (by using template file ../Data/template.ps1).
 .PARAMETER filename
 	Specifies the path to the resulting file
 .EXAMPLE
 	PS> ./new-script myscript.ps1
 	✔️ created new PowerShell script: myscript.ps1
-.NOTES
-	Author: Markus Fleschutz · License: CC0
 .LINK
 	https://github.com/fleschutz/PowerShell
+.NOTES
+	Author: Markus Fleschutz / License: CC0
 #>
 
 param([string]$filename = "")

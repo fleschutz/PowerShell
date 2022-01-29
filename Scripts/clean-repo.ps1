@@ -2,17 +2,17 @@
 .SYNOPSIS
 	Cleans a Git repository from untracked files (including submodules)
 .DESCRIPTION
-	This script cleans a Git repository from untracked files (including submodules).
+	This PowerShell script cleans a Git repository from untracked files (including submodules).
 .PARAMETER RepoDir
 	Specifies the path to the Git repository
 .EXAMPLE
 	PS> ./clean-repo C:\MyRepo
 	🧹 Cleaning from untracked files...
 	✔️ cleaned Git repository 📂C:\MyRepo in 0 sec
-.NOTES
-	Author: Markus Fleschutz · License: CC0
 .LINK
 	https://github.com/fleschutz/PowerShell
+.NOTES
+	Author: Markus Fleschutz / License: CC0
 #>
 
 param([string]$RepoDir = "$PWD")

@@ -2,15 +2,15 @@
 .SYNOPSIS
 	Creates a new .ZIP file from a folder (including subfolders)
 .DESCRIPTION
-	This script creates a new .ZIP file from a folder (including subfolders).
+	This PowerShell script creates a new .ZIP file from a folder (including subfolders).
 .PARAMETER folder
 	Specifies the path to the folder
 .EXAMPLE
 	PS> ./new-zipfile C:\Windows
-.NOTES
-	Author: Markus Fleschutz · License: CC0
 .LINK
 	https://github.com/fleschutz/PowerShell
+.NOTES
+	Author: Markus Fleschutz / License: CC0
 #>
 
 param([string]$folder = "")

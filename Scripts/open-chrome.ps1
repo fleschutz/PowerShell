@@ -2,15 +2,15 @@
 .SYNOPSIS
 	Launches the Chrome browser
 .DESCRIPTION
-	This script launches the Google Chrome Web browser.
+	This PowerShell script launches the Google Chrome Web browser.
 .EXAMPLE
 	PS> ./open-chrome
 .PARAMETER URL
 	Specifies an optional URL
-.NOTES
-	Author: Markus Fleschutz · License: CC0
 .LINK
 	https://github.com/fleschutz/PowerShell
+.NOTES
+	Author: Markus Fleschutz / License: CC0
 #>
 
 param([string]$URL = "http://www.fleschutz.de")

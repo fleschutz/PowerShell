@@ -1,18 +1,18 @@
 ﻿<#
 .SYNOPSIS
-	Fetches updates for a local Git repository (including submodules)
+	Fetches updates for a Git repository 
 .DESCRIPTION
-	This script fetches updates for a local Git repository (including submodules).
+	This PowerShell script fetches updates for a local Git repository (including submodules).
 .PARAMETER RepoDir
 	Specifies the path to the Git repository.
 .EXAMPLE
 	PS> ./fetch-repo
 	🢃 Fetching updates...
 	✔️ fetched updates for Git repository 📂PowerShell in 14 sec
-.NOTES
-	Author: Markus Fleschutz · License: CC0
 .LINK
 	https://github.com/fleschutz/PowerShell
+.NOTES
+	Author: Markus Fleschutz / License: CC0
 #>
 
 param([string]$RepoDir = "$PWD")

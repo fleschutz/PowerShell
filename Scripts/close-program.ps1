@@ -2,7 +2,7 @@
 .SYNOPSIS
 	Closes a program's processes 
 .DESCRIPTION
-	This script closes a program's processes gracefully.
+	This PowerShell script closes a program's processes gracefully.
 .PARAMETER FullProgramName
 	Specifies the full program name
 .PARAMETER ProgramName
@@ -11,10 +11,10 @@
 	Specifies the program alias name
 .EXAMPLE
 	PS> ./close-program "Google Chrome" "chrome.exe"
-.NOTES
-	Author: Markus Fleschutz · License: CC0
 .LINK
 	https://github.com/fleschutz/PowerShell
+.NOTES
+	Author: Markus Fleschutz / License: CC0
 #>
 
 param([string]$FullProgramName = "", [string]$ProgramName = "", [string]$ProgramAliasName = "")

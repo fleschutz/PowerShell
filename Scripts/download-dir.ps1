@@ -2,15 +2,15 @@
 .SYNOPSIS
 	Downloads a folder (including subfolders) from an URL
 .DESCRIPTION
-	This script downloads a folder (including subfolders) from the given URL.
+	This PowerShell script downloads a folder (including subfolders) from the given URL.
 .PARAMETER URL
 	Specifies the URL where to download from
 .EXAMPLE
 	PS> ./download-dir https://www.cnn.com
-.NOTES
-	Author: Markus Fleschutz · License: CC0
 .LINK
 	https://github.com/fleschutz/PowerShell
+.NOTES
+	Author: Markus Fleschutz / License: CC0
 #>
 
 param([string]$URL = "")

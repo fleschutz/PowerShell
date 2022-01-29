@@ -2,13 +2,13 @@
 .SYNOPSIS
 	Launches the Edge browser
 .DESCRIPTION
-	This script launches the Microsoft Edge Web browser.
+	This PowerShell script launches the Microsoft Edge Web browser.
 .EXAMPLE
 	PS> ./open-edge
-.NOTES
-	Author: Markus Fleschutz · License: CC0
 .LINK
 	https://github.com/fleschutz/PowerShell
+.NOTES
+	Author: Markus Fleschutz / License: CC0
 #>
 
 Start-Process microsoft-edge://

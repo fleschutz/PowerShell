@@ -2,12 +2,12 @@
 .SYNOPSIS
 	Determines the week number 
 .DESCRIPTION
-	This script determines and speaks the current week number by text-to-speech (TTS).
+	This PowerShell script determines and speaks the current week number by text-to-speech (TTS).
 .EXAMPLE
 	PS> ./check-week
 	✔️ It's week #4.
 .NOTES
-	Author: Markus Fleschutz · License: CC0
+	Author: Markus Fleschutz / License: CC0
 .LINK
 	https://github.com/fleschutz/PowerShell
 #>

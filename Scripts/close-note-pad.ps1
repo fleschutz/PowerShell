@@ -2,13 +2,13 @@
 .SYNOPSIS
 	Closes the Notepad app
 .DESCRIPTION
-	This script closes the Notepad application gracefully.
+	This PowerShell script closes the Notepad application gracefully.
 .EXAMPLE
 	PS> ./close-note-pad
-.NOTES
-	Author: Markus Fleschutz · License: CC0
 .LINK
 	https://github.com/fleschutz/PowerShell
+.NOTES
+	Author: Markus Fleschutz / License: CC0
 #>
 
 & "$PSScriptRoot/close-program.ps1" "Notepad" "notepad" "notepad"

@@ -2,7 +2,7 @@
 .SYNOPSIS
 	Lists all tags in a Git repository
 .DESCRIPTION
-	This script lists all tags in the given Git repository.
+	This PowerShell script lists all tags in the given Git repository.
 .PARAMETER RepoDir
 	Specifies the path to the Git repository
 .PARAMETER SearchPattern
@@ -14,10 +14,10 @@
 	---             -----------
 	v0.1            Update README.md
 	v0.2            Fix typo
-.NOTES
-	Author: Markus Fleschutz · License: CC0
 .LINK
 	https://github.com/fleschutz/PowerShell
+.NOTES
+	Author: Markus Fleschutz / License: CC0
 #>
 
 param([string]$RepoDir = "$PWD", [string]$SearchPattern="*")

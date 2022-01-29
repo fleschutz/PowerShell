@@ -2,17 +2,17 @@
 .SYNOPSIS
 	Lists all anagrams of the given word
 .DESCRIPTION
-	This script lists all anagrams of the given word.
+	This PowerShell script lists all anagrams of the given word.
 .PARAMETER Word
 	Specifies the word to use
 .PARAMETER Columns
 	Specifies the number of columns
 .EXAMPLE
 	PS> ./list-anagrams Baby
-.NOTES
-	Author: Markus Fleschutz · License: CC0
 .LINK
 	https://github.com/fleschutz/PowerShell
+.NOTES
+	Author: Markus Fleschutz / License: CC0
 #>
 
 param([string]$Word = "", [int]$Columns = 8)

@@ -2,13 +2,13 @@
 .SYNOPSIS
 	Checks the time until Independence Day
 .DESCRIPTION
-	This script checks the time until Indepence Day and replies by text-to-speech (TTS).
+	This PowerShell script checks the time until Indepence Day and replies by text-to-speech (TTS).
 .EXAMPLE
 	PS> ./check-independence-day
-.NOTES
-	Author: Markus Fleschutz · License: CC0
 .LINK
 	https://github.com/fleschutz/PowerShell
+.NOTES
+	Author: Markus Fleschutz / License: CC0
 #>
 
 try {

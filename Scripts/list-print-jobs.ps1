@@ -2,13 +2,13 @@
 .SYNOPSIS
 	Lists all jobs of all printers
 .DESCRIPTION
-	This script lists all print jobs of all printer devices.
+	This PowerShell script lists all print jobs of all printer devices.
 .EXAMPLE
 	PS> ./list-print-jobs
-.NOTES
-	Author: Markus Fleschutz · License: CC0
 .LINK
 	https://github.com/fleschutz/PowerShell
+.NOTES
+	Author: Markus Fleschutz / License: CC0
 #>
 
 #Requires -Version 4

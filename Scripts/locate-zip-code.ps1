@@ -2,17 +2,17 @@
 .SYNOPSIS
 	Prints the geo location of a zip-code
 .DESCRIPTION
-	This script prints the geographic location of the given zip-code.
+	This PowerShell script prints the geographic location of the given zip-code.
 .PARAMETER CountryCode
 	Specifies the country code
 .PARAMETER ZipCode
 	Specifies the zip code
 .EXAMPLE
 	PS> ./locate-zip-code
-.NOTES
-	Author: Markus Fleschutz · License: CC0
 .LINK
 	https://github.com/fleschutz/PowerShell
+.NOTES
+	Author: Markus Fleschutz / License: CC0
 #>
 
 param([string]$CountryCode = "", [string]$ZipCode = "")

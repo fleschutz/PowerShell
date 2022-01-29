@@ -2,13 +2,13 @@
 .SYNOPSIS
 	Installs GitHub CLI
 .DESCRIPTION
-	This script installs GitHub command-line interface (CLI).
+	This PowerShell script installs GitHub command-line interface (CLI).
 .EXAMPLE
 	PS> ./install-github-cli
-.NOTES
-	Author: Markus Fleschutz · License: CC0
 .LINK
 	https://github.com/fleschutz/PowerShell
+.NOTES
+	Author: Markus Fleschutz / License: CC0
 #>
 
 try {

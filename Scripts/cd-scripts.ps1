@@ -2,14 +2,14 @@
 .SYNOPSIS
 	Sets the working directory to the PowerShell scripts folder
 .DESCRIPTION
-	This script changes the working directory to the PowerShell scripts folder.
+	This PowerShell script changes the working directory to the PowerShell scripts folder.
 .EXAMPLE
 	PS> ./cd-scripts
 	📂/home/markus/PowerShell/Scripts
 .LINK
 	https://github.com/fleschutz/PowerShell
 .NOTES
-	Author: Markus Fleschutz · License: CC0
+	Author: Markus Fleschutz / License: CC0
 #>
 
 try {

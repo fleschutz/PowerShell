@@ -2,14 +2,14 @@
 .SYNOPSIS
 	Sets the working directory to the user's music folder
 .DESCRIPTION
-	This script changes the working directory to the user's music folder.
+	This PowerShell script changes the working directory to the user's music folder.
 .EXAMPLE
 	PS> ./cd-music
 	📂/home/markus/Music
 .LINK
 	https://github.com/fleschutz/PowerShell
 .NOTES
-	Author: Markus Fleschutz · License: CC0
+	Author: Markus Fleschutz / License: CC0
 #>
 
 try {

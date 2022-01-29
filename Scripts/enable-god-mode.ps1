@@ -2,13 +2,13 @@
 .SYNOPSIS
 	Enables the god mode
 .DESCRIPTION
-	This script enables the god mode. It adds a new icon to the desktop.
+	This PowerShell script enables the god mode. It adds a new icon to the desktop.
 .EXAMPLE
 	PS> ./enable-god-mode
-.NOTES
-	Author: Markus Fleschutz · License: CC0
 .LINK
 	https://github.com/fleschutz/PowerShell
+.NOTES
+	Author: Markus Fleschutz / License: CC0
 #>
 
 try {

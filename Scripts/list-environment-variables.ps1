@@ -2,7 +2,7 @@
 .SYNOPSIS
 	Lists all environment variables
 .DESCRIPTION
-	This script lists all environment variables.
+	This PowerShell script lists all environment variables.
 .EXAMPLE
 	PS> ./list-environment-variables
 
@@ -11,10 +11,10 @@
 	ALLUSERSPROFILE                C:\ProgramData
 	APPDATA                        C:\Users\Joe\AppData\Roaming
 	...
-.NOTES
-	Author: Markus Fleschutz · License: CC0
 .LINK
 	https://github.com/fleschutz/PowerShell
+.NOTES
+	Author: Markus Fleschutz / License: CC0
 #>
 
 try {

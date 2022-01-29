@@ -2,13 +2,13 @@
 .SYNOPSIS
 	Closes the Paint 3D app 
 .DESCRIPTION
-	This script closes the Paint 3D application gracefully.
+	This PowerShell script closes the Paint 3D application gracefully.
 .EXAMPLE
 	PS> ./close-paint-3d
-.NOTES
-	Author: Markus Fleschutz · License: CC0
 .LINK
 	https://github.com/fleschutz/PowerShell
+.NOTES
+	Author: Markus Fleschutz / License: CC0
 #>
 
 TaskKill /im PaintStudio.View.exe /f

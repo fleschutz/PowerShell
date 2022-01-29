@@ -2,13 +2,13 @@
 .SYNOPSIS
 	Opens the user's downloads folder
 .DESCRIPTION
-	This script launches the File Explorer showing the user's downloads folder.
+	This PowerShell script launches the File Explorer showing the user's downloads folder.
 .EXAMPLE
 	PS> ./open-downloads-folder
-.NOTES
-	Author: Markus Fleschutz · License: CC0
 .LINK
 	https://github.com/fleschutz/PowerShell
+.NOTES
+	Author: Markus Fleschutz / License: CC0
 #>
 
 try {

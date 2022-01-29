@@ -2,14 +2,13 @@
 .SYNOPSIS
 	Sets the working directory to four directory levels up
 .DESCRIPTION
-	This script changes the working directory to four directory levels up.
+	This PowerShell script changes the working directory to four directory levels up.
 .EXAMPLE
 	PS> ./cd-up4
-	(four levels up)
 .LINK
 	https://github.com/fleschutz/PowerShell
 .NOTES
-	Author: Markus Fleschutz · License: CC0
+	Author: Markus Fleschutz / License: CC0
 #>
 
 try {

@@ -2,7 +2,7 @@
 .SYNOPSIS
 	Checks the computer health 
 .DESCRIPTION
-	This script checks the health of the local computer.
+	This PowerShell script checks the health of the local computer.
 .EXAMPLE
 	PS> ./check-health
 	✔️ 1213 GB left for swap space (67 of 1280 GB used)

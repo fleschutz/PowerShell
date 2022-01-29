@@ -2,17 +2,17 @@
 .SYNOPSIS
 	Encrypts a file
 .DESCRIPTION
-	This script encrypts the given file.
+	This PowerShell script encrypts the given file.
 .PARAMETER Path
 	Specifies the path to the file to encrypt
 .PARAMETER Password
 	Specifies the password to use
 .EXAMPLE
 	PS> ./encrypt-file C:\MyFile.txt "123"
-.NOTES
-	Author: Markus Fleschutz · License: CC0
 .LINK
 	https://github.com/fleschutz/PowerShell
+.NOTES
+	Author: Markus Fleschutz / License: CC0
 #>
 
 param([string]$Path = "", [string]$Password = "")

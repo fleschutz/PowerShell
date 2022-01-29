@@ -2,15 +2,15 @@
 .SYNOPSIS
 	Lists the hourly weather report
 .DESCRIPTION
-	This script lists the hourly weather report.
+	This PowerShell script lists the hourly weather report.
 .PARAMETER Location
 	Specifies the location to use (determined automatically per default)
 .EXAMPLE
 	PS> ./list-weather
-.NOTES
-	Author: Markus Fleschutz · License: CC0
 .LINK
 	https://github.com/fleschutz/PowerShell
+.NOTES
+	Author: Markus Fleschutz / License: CC0
 #>
 
 param([string]$Location = "") # empty means determine automatically

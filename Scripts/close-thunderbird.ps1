@@ -2,13 +2,13 @@
 .SYNOPSIS
 	Closes the Thunderbird app
 .DESCRIPTION
-	This script closes the Mozilla Thunderbird email application gracefully.
+	This PowerShell script closes the Mozilla Thunderbird email application gracefully.
 .EXAMPLE
 	PS> ./close-thunderbird
-.NOTES
-	Author: Markus Fleschutz · License: CC0
 .LINK
 	https://github.com/fleschutz/PowerShell
+.NOTES
+	Author: Markus Fleschutz / License: CC0
 #>
 
 TaskKill /im thunderbird.exe

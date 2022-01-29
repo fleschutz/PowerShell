@@ -2,14 +2,14 @@
 .SYNOPSIS
 	Sets the working directory to the user's desktop folder
 .DESCRIPTION
-	This script changes the working directory to the user's desktop folder.
+	This PowerShell script changes the working directory to the user's desktop folder.
 .EXAMPLE
 	PS> ./cd-desktop
 	📂/home/markus/Desktop
 .LINK
 	https://github.com/fleschutz/PowerShell
 .NOTES
-	Author: Markus Fleschutz · License: CC0
+	Author: Markus Fleschutz / License: CC0
 #>
 
 try {

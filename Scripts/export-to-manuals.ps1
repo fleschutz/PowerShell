@@ -2,15 +2,15 @@
 .SYNOPSIS
 	Exports all scripts as manuals
 .DESCRIPTION
-	This script exports the comment based help of all PowerShell scripts as manuals.
+	This PowerShell script exports the comment based help of all PowerShell scripts as manuals.
 .EXAMPLE
 	PS> ./export-to-manuals.ps1
 	Found 264 scripts, exporting them to /home/markus/PowerShell/Docs...
 	✔️ exported 264 PowerShell scripts in 28 sec
-.NOTES
-	Author: Markus Fleschutz · License: CC0
 .LINK
 	https://github.com/fleschutz/PowerShell
+.NOTES
+	Author: Markus Fleschutz / License: CC0
 #>
 
 #requires -version 2

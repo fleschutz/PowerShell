@@ -2,17 +2,17 @@
 .SYNOPSIS
 	Lists all console colors
 .DESCRIPTION
-	This script lists all available console colors.
+	This PowerShell script lists all available console colors.
 .EXAMPLE
 	PS> ./list-console-colors
 
 	Color     As Foreground     As Background
 	-----     -------------     -------------
 	...
-.NOTES
-	Author: Markus Fleschutz · License: CC0
 .LINK
 	https://github.com/fleschutz/PowerShell
+.NOTES
+	Author: Markus Fleschutz / License: CC0
 #>
 
 try {

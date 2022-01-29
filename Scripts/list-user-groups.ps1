@@ -2,7 +2,7 @@
 .SYNOPSIS
 	Lists the user groups on the local computer
 .DESCRIPTION
-	This script lists the user groups on the local computer.
+	This PowerShell script lists the user groups on the local computer.
 .EXAMPLE
 	PS> ./list-user-groups
 
@@ -11,10 +11,10 @@
 	HomeUsers       HomeUsers Security Group
 	Ssh Users       Members of this group can remotely access this computer over SSH protocol.
 	...
-.NOTES
-	Author: Markus Fleschutz · License: CC0
 .LINK
 	https://github.com/fleschutz/PowerShell
+.NOTES
+	Author: Markus Fleschutz / License: CC0
 #>
 
 try {

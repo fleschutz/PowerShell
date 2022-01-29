@@ -2,13 +2,13 @@
 .SYNOPSIS
 	Enables hibernate mode for the local computer (needs admin rights)
 .DESCRIPTION
-	This script enables hibernate mode for the local computer. It needs admin rights.
+	This PowerShell script enables hibernate mode for the local computer. It needs admin rights.
 .EXAMPLE
 	PS> ./hibernate
-.NOTES
-	Author: Markus Fleschutz · License: CC0
 .LINK
 	https://github.com/fleschutz/PowerShell
+.NOTES
+	Author: Markus Fleschutz / License: CC0
 #>
 
 #Requires -RunAsAdministrator

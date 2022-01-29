@@ -2,14 +2,14 @@
 .SYNOPSIS
 	Sets the working directory to the Windows directory
 .DESCRIPTION
-	This script changes the working directory to the Windows directory.
+	This PowerShell script changes the working directory to the Windows directory.
 .EXAMPLE
 	PS> ./cd-windows
 	📂C:\Windows
 .LINK
 	https://github.com/fleschutz/PowerShell
 .NOTES
-	Author: Markus Fleschutz · License: CC0
+	Author: Markus Fleschutz / License: CC0
 #>
 
 try {

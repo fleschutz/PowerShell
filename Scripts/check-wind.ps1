@@ -2,7 +2,7 @@
 .SYNOPSIS
 	Checks the wind conditions
 .DESCRIPTION
-	Determines the current wind conditions and replies by text-to-speech (TTS).
+	This PowerShell script determines the current wind conditions and replies by text-to-speech (TTS).
 .PARAMETER location
 	Specifies the location to use (determined automatically per default)
 .EXAMPLE
@@ -10,7 +10,7 @@
 .LINK
 	https://github.com/fleschutz/PowerShell
 .NOTES
-	Author: Markus Fleschutz · License: CC0
+	Author: Markus Fleschutz / License: CC0
 #>
 
 param([string]$location = "") # empty means determine automatically

@@ -2,15 +2,15 @@
 .SYNOPSIS
 	Launches the Firefox browser
 .DESCRIPTION
-	This script launches the Mozilla Firefox Web browser.
+	This PowerShell script launches the Mozilla Firefox Web browser.
 .EXAMPLE
 	PS> ./open-firefox
 .PARAMETER URL
 	Specifies an URL
-.NOTES
-	Author: Markus Fleschutz · License: CC0
 .LINK
 	https://github.com/fleschutz/PowerShell
+.NOTES
+	Author: Markus Fleschutz / License: CC0
 #>
 
 param([string]$URL = "http://www.fleschutz.de")

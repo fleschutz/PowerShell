@@ -2,7 +2,7 @@
 .SYNOPSIS
 	Checks the ping latency from the local computer to selected Internet hosts
 .DESCRIPTION
-	This script checks the ping latency from the local computer to selected Internet hosts.
+	This PowerShell script checks the ping latency from the local computer to selected Internet hosts.
 	The hosts by default are: amazon.com,bing.com,cnn.com,dropbox.com,facebook.com,google.com,live.com,twitter.com,youtube.com
 .PARAMETER hosts
 	Specifies the hosts to check (separated by comma)
@@ -12,7 +12,7 @@
 .LINK
 	https://github.com/fleschutz/PowerShell
 .NOTES
-	Author: Markus Fleschutz · License: CC0
+	Author: Markus Fleschutz / License: CC0
 #>
 
 param([string]$hosts = "amazon.com,bing.com,cnn.com,dropbox.com,facebook.com,google.com,live.com,twitter.com,youtube.com")

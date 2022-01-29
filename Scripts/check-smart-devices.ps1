@@ -2,17 +2,17 @@
 .SYNOPSIS
 	Performs a selftest on your S.M.A.R.T. HDD/SSD devices.
 .DESCRIPTION
-	This script performs a selftest on your S.M.A.R.T. HDD/SSD devices.
+	This PowerShell script performs a selftest on your S.M.A.R.T. HDD/SSD devices.
         It requires smartctl (smartmontools package) and admin rights.
 .PARAMETER type
 	Specifies the type of selftest: either short (default) or long
 .EXAMPLE
 	PS> ./check-smart-devices
 	✔️ short selftest started on S.M.A.R.T. device /dev/sda
-.NOTES
-	Author: Markus Fleschutz · License: CC0
 .LINK
 	https://github.com/fleschutz/PowerShell
+.NOTES
+	Author: Markus Fleschutz / License: CC0
 #>
 
 #Requires -RunAsAdministrator

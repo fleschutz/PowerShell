@@ -2,14 +2,14 @@
 .SYNOPSIS
 	Sets the working directory to the user's videos folder
 .DESCRIPTION
-	This script changes the working directory to the user's videos folder.
+	This PowerShell script changes the working directory to the user's videos folder.
 .EXAMPLE
 	PS> ./cd-videos
 	📂/home/markus/Videos
 .LINK
 	https://github.com/fleschutz/PowerShell
 .NOTES
-	Author: Markus Fleschutz · License: CC0
+	Author: Markus Fleschutz / License: CC0
 #>
 
 try {

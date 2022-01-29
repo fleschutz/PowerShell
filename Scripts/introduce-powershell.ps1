@@ -2,13 +2,13 @@
 .SYNOPSIS
 	Introduces PowerShell to new users
 .DESCRIPTION
-	This script introduces PowerShell to new users.
+	This PowerShell script introduces PowerShell to new users.
 .EXAMPLE
 	PS> ./introduce-powershell
-.NOTES
-	Author: Markus Fleschutz · License: CC0
 .LINK
 	https://github.com/fleschutz/PowerShell
+.NOTES
+	Author: Markus Fleschutz / License: CC0
 #>
 
 try {

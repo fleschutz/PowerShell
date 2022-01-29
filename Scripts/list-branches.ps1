@@ -2,17 +2,17 @@
 .SYNOPSIS
 	Lists all branches in a Git repository
 .DESCRIPTION
-	This script lists all branches in a Git repository.
+	This PowerShell script lists all branches in a Git repository.
 .PARAMETER RepoDir
 	Specifies the path to the Git repository (current working directory by default)
 .PARAMETER SearchPattern
 	Specifies the search patter (anything by default)
 .EXAMPLE
 	PS> ./list-branches
-.NOTES
-	Author: Markus Fleschutz · License: CC0
 .LINK
 	https://github.com/fleschutz/PowerShell
+.NOTES
+	Author: Markus Fleschutz / License: CC0
 #>
 
 param([string]$RepoDir = "$PWD", [string]$SearchPattern = "*")

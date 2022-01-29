@@ -2,13 +2,13 @@
 .SYNOPSIS
 	Lists OS releases and download URL
 .DESCRIPTION
-	This script lists OS releases and download URL.
+	This PowerShell script lists OS releases and download URL.
 .EXAMPLE
 	PS> ./list-os-releases
-.NOTES
-	Author: Markus Fleschutz · License: CC0
 .LINK
 	https://github.com/fleschutz/PowerShell
+.NOTES
+	Author: Markus Fleschutz / License: CC0
 #>
 
 try {

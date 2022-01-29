@@ -2,7 +2,7 @@
 .SYNOPSIS
 	Checks the given subnet mask for validity
 .DESCRIPTION
-	This script checks the given subnet mask for validity.
+	This PowerShell script checks the given subnet mask for validity.
 .PARAMETER address
 	Specifies the subnet mask to check
 .EXAMPLE
@@ -11,7 +11,7 @@
 .LINK
 	https://github.com/fleschutz/PowerShell
 .NOTES
-	Author: Markus Fleschutz · License: CC0
+	Author: Markus Fleschutz / License: CC0
 #>
 
 param([string]$address = "")

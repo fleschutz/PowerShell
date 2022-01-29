@@ -2,13 +2,13 @@
 .SYNOPSIS
 	Changes the wallpaper
 .DESCRIPTION
-	This script downloads a random photo from Unsplash and sets it as desktop background.
+	This PowerShell script downloads a random photo from Unsplash and sets it as desktop background.
 .PARAMETER Category
 	Specifies the photo category (beach, city, ...)
 .EXAMPLE
 	PS> ./change-wallpaper 
 .NOTES
-	Author: Markus Fleschutz · License: CC0
+	Author: Markus Fleschutz / License: CC0
 .LINK
 	https://github.com/fleschutz/PowerShell
 #>

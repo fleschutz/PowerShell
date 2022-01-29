@@ -2,13 +2,13 @@
 .SYNOPSIS
 	Closes the Visual Studio app
 .DESCRIPTION
-	This script closes the Microsoft Visual Studio application gracefully.
+	This PowerShell script closes the Microsoft Visual Studio application gracefully.
 .EXAMPLE
 	PS> ./close-visual-studio
-.NOTES
-	Author: Markus Fleschutz · License: CC0
 .LINK
 	https://github.com/fleschutz/PowerShell
+.NOTES
+	Author: Markus Fleschutz / License: CC0
 #>
 
 TaskKill /im devenv.exe

@@ -2,13 +2,13 @@
 .SYNOPSIS
 	Opens the Apps folder
 .DESCRIPTION
-	This script launches the File Explorer showing the UWP apps folder.
+	This PowerShell script launches the File Explorer showing the UWP apps folder.
 .EXAMPLE
 	PS> ./open-apps-folder
-.NOTES
-	Author: Markus Fleschutz · License: CC0
 .LINK
 	https://github.com/fleschutz/PowerShell
+.NOTES
+	Author: Markus Fleschutz / License: CC0
 #>
 
 & "$PSScriptRoot/open-file-explorer.ps1" "shell:AppsFolder"

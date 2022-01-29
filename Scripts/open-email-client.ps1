@@ -2,13 +2,13 @@
 .SYNOPSIS
 	Starts the default email client
 .DESCRIPTION
-	This script launches the default email client.
+	This PowerShell script launches the default email client.
 .EXAMPLE
 	PS> ./open-email-client
-.NOTES
-	Author: Markus Fleschutz · License: CC0
 .LINK
 	https://github.com/fleschutz/PowerShell
+.NOTES
+	Author: Markus Fleschutz / License: CC0
 #>
 
 try {

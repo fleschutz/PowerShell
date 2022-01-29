@@ -2,13 +2,13 @@
 .SYNOPSIS
 	Lists all PowerShell scripts in this repository
 .DESCRIPTION
-	This script lists all PowerShell scripts in the repository (sorted alphabetically).
+	This PowerShell script lists all PowerShell scripts in the repository (sorted alphabetically).
 .EXAMPLE
 	PS> ./list-scripts
-.NOTES
-	Author: Markus Fleschutz · License: CC0
 .LINK
 	https://github.com/fleschutz/PowerShell
+.NOTES
+	Author: Markus Fleschutz / License: CC0
 #>
 
 function ListScripts { param([string]$FilePath)

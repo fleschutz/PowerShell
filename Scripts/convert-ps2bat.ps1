@@ -2,15 +2,15 @@
 .SYNOPSIS
 	Converts PowerShell scripts to batch files
 .DESCRIPTION
-	This script converts one or more PowerShell scripts to .bat batch files.
+	This PowerShell script converts one or more PowerShell scripts to .bat batch files.
 .PARAMETER Filepattern
 	Specifies the file pattern
 .EXAMPLE
 	PS> ./convert-ps2bat *.ps1
-.NOTES
-	Author: Markus Fleschutz · License: CC0
 .LINK
 	https://github.com/fleschutz/PowerShell
+.NOTES
+	Author: Markus Fleschutz / License: CC0
 #>
 
 param([string]$Filepattern = "")

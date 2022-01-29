@@ -2,15 +2,15 @@
 .SYNOPSIS
 	Displays the current time
 .DESCRIPTION
-	Displays the current time (for 10 seconds by default)
+	This PowerShell script displays the current time (for 10 seconds by default)
 .PARAMETER Seconds
 	Specifies the number of seconds to display the time
 .EXAMPLE
 	PS> ./display-time
-.NOTES
-	Author: Markus Fleschutz · License: CC0
 .LINK
 	https://github.com/fleschutz/PowerShell
+.NOTES
+	Author: Markus Fleschutz / License: CC0
 #>
 
 param([int]$Seconds = 10)

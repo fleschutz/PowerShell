@@ -5,10 +5,10 @@
 	This PowerShell script lists the emojis of Unicode 13.0 sorted by category.
 .EXAMPLE
 	PS> ./list-emojis
-.NOTES
-	Author: Markus Fleschutz / License: CC0
 .LINK
 	https://github.com/fleschutz/PowerShell
+.NOTES
+	Author: Markus Fleschutz / License: CC0
 #>
 
 "Emojis by Category (Unicode 13.0)"

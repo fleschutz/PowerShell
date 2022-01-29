@@ -2,13 +2,13 @@
 .SYNOPSIS
 	Closes the Chrome browser
 .DESCRIPTION
-	This script closes the Google Chrome Web browser gracefully.
+	This PowerShell script closes the Google Chrome Web browser gracefully.
 .EXAMPLE
 	PS> ./close-chrome
-.NOTES
-	Author: Markus Fleschutz · License: CC0
 .LINK
 	https://github.com/fleschutz/PowerShell
+.NOTES
+	Author: Markus Fleschutz / License: CC0
 #>
 
 & "$PSScriptRoot/close-program.ps1" "Google Chrome" "chrome" "chrome"

@@ -2,13 +2,13 @@
 .SYNOPSIS
 	Installs updates for the local machine (needs admin rights)
 .DESCRIPTION
-	This script installs updates for the local machine (needs admin rights).
+	This PowerShell script installs updates for the local machine (needs admin rights).
 .EXAMPLE
 	PS> ./install-updates
-.NOTES
-	Author: Markus Fleschutz · License: CC0
 .LINK
 	https://github.com/fleschutz/PowerShell
+.NOTES
+	Author: Markus Fleschutz / License: CC0
 #>
 
 #Requires -RunAsAdministrator

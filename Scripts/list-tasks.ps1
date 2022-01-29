@@ -2,7 +2,7 @@
 .SYNOPSIS
 	Lists all scheduled tasks
 .DESCRIPTION
-	This script lists all scheduled tasks.
+	This PowerShell script lists all scheduled tasks.
 .EXAMPLE
 	PS> ./list-tasks
 
@@ -11,10 +11,10 @@
 	.NET Framework NGEN v4.0.30319      Ready  \Microsoft\Windows\.NET Framework\             
 	.NET Framework NGEN v4.0.30319 64   Ready  \Microsoft\Windows\.NET Framework\             
 	...
-.NOTES
-	Author: Markus Fleschutz · License: CC0
 .LINK
 	https://github.com/fleschutz/PowerShell
+.NOTES
+	Author: Markus Fleschutz / License: CC0
 #>
 
 try {

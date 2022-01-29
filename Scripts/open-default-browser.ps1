@@ -2,15 +2,15 @@
 .SYNOPSIS
 	Opens the default browser
 .DESCRIPTION
-	This script launches the default Web browser, optional with a given URL.
+	This PowerShell script launches the default Web browser, optional with a given URL.
 .PARAMETER URL
 	Specifies the URL
 .EXAMPLE
 	PS> ./open-default-browser
-.NOTES
-	Author: Markus Fleschutz · License: CC0
 .LINK
 	https://github.com/fleschutz/PowerShell
+.NOTES
+	Author: Markus Fleschutz / License: CC0
 #>
 
 param([string]$URL = "http://www.fleschutz.de")

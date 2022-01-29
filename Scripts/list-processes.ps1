@@ -2,7 +2,7 @@
 .SYNOPSIS
 	Lists all local computer processes
 .DESCRIPTION
-	This script lists all local computer processes.
+	This PowerShell script lists all local computer processes.
 .EXAMPLE
 	PS> ./list-processes
 
@@ -11,10 +11,10 @@
 	 9712   0,39% 64DriverLoad
 	 2484         AppleMobileDeviceService
 	 ...
-.NOTES
-	Author: Markus Fleschutz · License: CC0
 .LINK
 	https://github.com/fleschutz/PowerShell
+.NOTES
+	Author: Markus Fleschutz / License: CC0
 #>
 
 try {

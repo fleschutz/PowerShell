@@ -2,13 +2,13 @@
 .SYNOPSIS
 	Checks the ISS position
 .DESCRIPTION
-	This script queries the position of the International Space Station (ISS) and replies by text-to-speech (TTS).
+	This PowerShell script queries the position of the International Space Station (ISS) and replies by text-to-speech (TTS).
 .EXAMPLE
 	PS> ./check-iss-position
 .LINK
 	https://github.com/fleschutz/PowerShell
 .NOTES
-	Author: Markus Fleschutz · License: CC0
+	Author: Markus Fleschutz / License: CC0
 #>
 
 try {

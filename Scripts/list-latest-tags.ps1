@@ -2,15 +2,15 @@
 .SYNOPSIS
 	Lists the latests tags in all Git repositories in a folder
 .DESCRIPTION
-	This script lists the latest tags in all Git repositories in the specified folder.
+	This PowerShell script lists the latest tags in all Git repositories in the specified folder.
 .PARAMETER ParentDir
 	Specifies the path to the parent folder
 .EXAMPLE
 	PS> ./list-latest-tags C:\MyRepos
-.NOTES
-	Author: Markus Fleschutz · License: CC0
 .LINK
 	https://github.com/fleschutz/PowerShell
+.NOTES
+	Author: Markus Fleschutz / License: CC0
 #>
 
 param([string]$ParentDir = "$PWD")

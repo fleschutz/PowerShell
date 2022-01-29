@@ -2,15 +2,15 @@
 .SYNOPSIS
 	Lists the latest tag on the current branch in a Git repository
 .DESCRIPTION
-	This script lists the latest tag on the current branch in a Git repository.
+	This PowerShell script lists the latest tag on the current branch in a Git repository.
 .PARAMETER RepoDir
 	Specifies the path to the repository
 .EXAMPLE
 	PS> ./list-latest-tag C:\MyRepo
-.NOTES
-	Author: Markus Fleschutz · License: CC0
 .LINK
 	https://github.com/fleschutz/PowerShell
+.NOTES
+	Author: Markus Fleschutz / License: CC0
 #>
 
 param([string]$RepoDir = "$PWD")

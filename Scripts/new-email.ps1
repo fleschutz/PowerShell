@@ -2,15 +2,15 @@
 .SYNOPSIS
 	Opens the default email client to write a new email
 .DESCRIPTION
-	This script opens the default email client to write a new email.
+	This PowerShell script opens the default email client to write a new email.
 .PARAMETER EmailAddress
 	Specifies the email address fill in
 .EXAMPLE
 	PS> ./new-email
-.NOTES
-	Author: Markus Fleschutz · License: CC0
 .LINK
 	https://github.com/fleschutz/PowerShell
+.NOTES
+	Author: Markus Fleschutz / License: CC0
 #>
 
 param([string]$EmailAddress = "markus@fleschutz.de")

@@ -2,13 +2,13 @@
 .SYNOPSIS
 	Lists the content of the recycle bin folder
 .DESCRIPTION
-	This script lists the content of the recycle bin folder.
+	This PowerShell script lists the content of the recycle bin folder.
 .EXAMPLE
 	PS> ./list-recycle-bin
-.NOTES
-	Author: Markus Fleschutz · License: CC0
 .LINK
 	https://github.com/fleschutz/PowerShell
+.NOTES
+	Author: Markus Fleschutz / License: CC0
 #>
 
 try {

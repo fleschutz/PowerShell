@@ -2,15 +2,15 @@
 .SYNOPSIS
 	Fetches updates for all Git repositories in a folder
 .DESCRIPTION
-	This script fetches updates for all Git repositories in a folder (including submodules).
+	This PowerShell script fetches updates for all Git repositories in a folder (including submodules).
 .PARAMETER ParentDir
 	Specifies the path to the parent folder
 .EXAMPLE
 	PS> ./fetch-repos C:\MyRepos
-.NOTES
-	Author: Markus Fleschutz / License: CC0
 .LINK
 	https://github.com/fleschutz/PowerShell
+.NOTES
+	Author: Markus Fleschutz / License: CC0
 #>
 
 param([string]$ParentDir = "$PWD")

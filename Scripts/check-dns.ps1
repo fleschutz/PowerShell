@@ -2,14 +2,14 @@
 .SYNOPSIS
 	Checks the DNS resolution 
 .DESCRIPTION
-	This script checks the DNS resolution with frequently used domain names.
+	This PowerShell script checks the DNS resolution with frequently used domain names.
 .EXAMPLE
 	PS> ./check-dns
 	✔️ DNS resolution is 11.8 domains per second
 .LINK
 	https://github.com/fleschutz/PowerShell
 .NOTES
-	Author: Markus Fleschutz · License: CC0
+	Author: Markus Fleschutz / License: CC0
 #>
  
 try {

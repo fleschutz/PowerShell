@@ -2,13 +2,13 @@
 .SYNOPSIS
 	Lists details of all countries
 .DESCRIPTION
-	This script lists details of all countries.
+	This PowerShell script lists details of all countries.
 .EXAMPLE
 	PS> ./list-countries
-.NOTES
-	Author: Markus Fleschutz · License: CC0
 .LINK
 	https://github.com/fleschutz/PowerShell
+.NOTES
+	Author: Markus Fleschutz / License: CC0
 #>
 
 function ListCountries { 

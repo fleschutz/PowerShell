@@ -2,13 +2,13 @@
 .SYNOPSIS
 	Lists the current crypto exchange rates
 .DESCRIPTION
-	This script lists the current crypto exchange rates.
+	This PowerShell script lists the current crypto exchange rates.
 .EXAMPLE
 	PS> ./list-crypto-rates
-.NOTES
-	Author: Markus Fleschutz · License: CC0
 .LINK
 	https://github.com/fleschutz/PowerShell
+.NOTES
+	Author: Markus Fleschutz / License: CC0
 #>
 
 function ListCryptoRate { param([string]$Symbol, [string]$Name)

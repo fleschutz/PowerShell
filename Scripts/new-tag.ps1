@@ -2,7 +2,7 @@
 .SYNOPSIS
 	Creates a new tag in a Git repository
 .DESCRIPTION
-	This script creates a new tag in a Git repository.
+	This PowerShell script creates a new tag in a Git repository.
 .PARAMETER TagName
 	Specifies the new tag name
 .PARAMETER RepoDir
@@ -12,7 +12,7 @@
 .LINK
 	https://github.com/fleschutz/PowerShell
 .NOTES
-	Author: Markus Fleschutz · License: CC0
+	Author: Markus Fleschutz / License: CC0
 #>
 
 param([string]$TagName = "", [string]$RepoDir = "$PWD")

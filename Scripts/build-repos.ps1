@@ -2,15 +2,15 @@
 .SYNOPSIS
 	Builds all Git repositories in a folder
 .DESCRIPTION
-	This script builds all Git repositories in a given folder.
+	This PowerShell script builds all Git repositories in a given folder.
 .PARAMETER ParentDir
 	Specifies the path to the folder containing the Git repositories
 .EXAMPLE
 	PS> ./build-repos C:\MyRepos
-.NOTES
-	Author: Markus Fleschutz · License: CC0
 .LINK
 	https://github.com/fleschutz/PowerShell
+.NOTES
+	Author: Markus Fleschutz / License: CC0
 #>
 
 param([string]$ParentDir = "$PWD")

@@ -2,14 +2,14 @@
 .SYNOPSIS
 	Sets the working directory to the temporary folder
 .DESCRIPTION
-	This script changes the working directory to the temporary folder.
+	This PowerShell script changes the working directory to the temporary folder.
 .EXAMPLE
 	PS> ./cd-temp
 	📂C:\Users\markus\AppData\Local\Temp
 .LINK
 	https://github.com/fleschutz/PowerShell
 .NOTES
-	Author: Markus Fleschutz · License: CC0
+	Author: Markus Fleschutz / License: CC0
 #>
 
 function GetTempDir {

@@ -2,13 +2,13 @@
 .SYNOPSIS
 	Lists all memos in $HOME/Memos.csv
 .DESCRIPTION
-	This script lists all memo entries in Memos.csv in the home folder.
+	This PowerShell script lists all memo entries in Memos.csv in the home folder.
 .EXAMPLE
 	PS> ./list-memos
-.NOTES
-	Author: Markus Fleschutz · License: CC0
 .LINK
 	https://github.com/fleschutz/PowerShell
+.NOTES
+	Author: Markus Fleschutz / License: CC0
 #>
 
 

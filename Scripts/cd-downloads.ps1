@@ -2,14 +2,14 @@
 .SYNOPSIS
 	Sets the working directory to the user's downloads folder
 .DESCRIPTION
-	This script changes the working directory to the user's downloads folder.
+	This PowerShell script changes the working directory to the user's downloads folder.
 .EXAMPLE
 	PS> ./cd-downloads
 	📂/home/markus/Downloads
 .LINK
 	https://github.com/fleschutz/PowerShell
 .NOTES
-	Author: Markus Fleschutz · License: CC0
+	Author: Markus Fleschutz / License: CC0
 #>
 
 try {

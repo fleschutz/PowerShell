@@ -1,8 +1,8 @@
 ﻿<#
 .SYNOPSIS
-	Checks all drives for free space left (20 GB by default)
+	Checks all drives for free space left 
 .DESCRIPTION
-	This script checks all drives for free space left (20 GB by default).
+	This PowerShell script checks all drives for free space left (20 GB by default).
 .PARAMETER MinLevel
 	Specifies the minimum level in Gigabyte
 .EXAMPLE
@@ -11,7 +11,7 @@
 .LINK
 	https://github.com/fleschutz/PowerShell
 .NOTES
-	Author: Markus Fleschutz · License: CC0
+	Author: Markus Fleschutz / License: CC0
 #>
 
 param([int]$MinLevel = 20) # minimum level in GB

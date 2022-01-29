@@ -2,7 +2,7 @@
 .SYNOPSIS
 	Configures the user settings for Git 
 .DESCRIPTION
-	This script configures the user settings for Git.
+	This PowerShell script configures the user settings for Git.
 .PARAMETER FullName
 	Specifies the user's full name
 .PARAMETER EmailAddress
@@ -11,10 +11,10 @@
 	Specifies the user's favorite text editor
 .EXAMPLE
 	PS> ./configure-git
-.NOTES
-	Author: Markus Fleschutz · License: CC0
 .LINK
 	https://github.com/fleschutz/PowerShell
+.NOTES
+	Author: Markus Fleschutz / License: CC0
 #>
 
 param([string]$FullName = "", [string]$EmailAddress = "", [string]$FavoriteEditor = "")

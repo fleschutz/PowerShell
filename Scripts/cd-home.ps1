@@ -2,14 +2,14 @@
 .SYNOPSIS
 	Sets the working directory to the user's home directory
 .DESCRIPTION
-	This script changes the working directory to the user's home directory.
+	This PowerShell script changes the working directory to the user's home directory.
 .EXAMPLE
 	PS> ./cd-home
 	📂/home/markus
 .LINK
 	https://github.com/fleschutz/PowerShell
 .NOTES
-	Author: Markus Fleschutz · License: CC0
+	Author: Markus Fleschutz / License: CC0
 #>
 
 try {

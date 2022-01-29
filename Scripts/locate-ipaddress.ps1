@@ -2,15 +2,15 @@
 .SYNOPSIS
 	Prints the geo location of the given IP address
 .DESCRIPTION
-	This script prints the geographic location of the given IP address.
+	This PowerShell script prints the geographic location of the given IP address.
 .PARAMTER IPaddress
 	Specifies the IP address
 .EXAMPLE
 	PS> ./locate-ipaddress 177.144.67.98
-.NOTES
-	Author: Markus Fleschutz · License: CC0
 .LINK
 	https://github.com/fleschutz/PowerShell
+.NOTES
+	Author: Markus Fleschutz / License: CC0
 #>
 
 param([string]$IPaddress= "")

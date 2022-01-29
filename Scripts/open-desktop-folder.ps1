@@ -2,13 +2,13 @@
 .SYNOPSIS
 	Opens the desktop folder
 .DESCRIPTION
-	This script launches the File Explorer with the user's desktop folder.
+	This PowerShell script launches the File Explorer with the user's desktop folder.
 .EXAMPLE
 	PS> ./open-desktop-folder
-.NOTES
-	Author: Markus Fleschutz · License: CC0
 .LINK
 	https://github.com/fleschutz/PowerShell
+.NOTES
+	Author: Markus Fleschutz / License: CC0
 #>
 
 try {

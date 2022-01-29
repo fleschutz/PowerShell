@@ -2,17 +2,17 @@
 .SYNOPSIS
 	Lists all network shares of the local computer
 .DESCRIPTION
-	This script lists all network shares of the local computer.
+	This PowerShell script lists all network shares of the local computer.
 .EXAMPLE
 	PS> ./list-network-shares
 
 	Name  Path     Description
 	----  ----     -----------
 	Users C:\Users
-.NOTES
-	Author: Markus Fleschutz · License: CC0
 .LINK
 	https://github.com/fleschutz/PowerShell
+.NOTES
+	Author: Markus Fleschutz / License: CC0
 #>
 
 try {

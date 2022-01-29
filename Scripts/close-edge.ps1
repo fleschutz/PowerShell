@@ -2,13 +2,13 @@
 .SYNOPSIS
 	Closes the Edge browser
 .DESCRIPTION
-	This script closes the Microsoft Edge Web browser gracefully.
+	This PowerShell script closes the Microsoft Edge Web browser gracefully.
 .EXAMPLE
 	PS> ./close-edge
-.NOTES
-	Author: Markus Fleschutz · License: CC0
 .LINK
 	https://github.com/fleschutz/PowerShell
+.NOTES
+	Author: Markus Fleschutz / License: CC0
 #>
 
 TaskKill /im msedge.exe /f /t

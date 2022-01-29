@@ -2,16 +2,16 @@
 .SYNOPSIS
 	Checks the given XML file for validity
 .DESCRIPTION
-	This script checks the given XML file for validity.
+	This PowerShell script checks the given XML file for validity.
 .PARAMETER file
 	Specifies the path to the XML file to check
 .EXAMPLE
 	PS> ./check-xml-file myfile.xml
 	✔️ XML file is valid
-.NOTES
-	Author: Markus Fleschutz · License: CC0
 .LINK
 	https://github.com/fleschutz/PowerShell
+.NOTES
+	Author: Markus Fleschutz / License: CC0
 #>
 
 param([string]$file = "")

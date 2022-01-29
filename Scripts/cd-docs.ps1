@@ -2,14 +2,14 @@
 .SYNOPSIS
 	Sets the working directory to the user's documents folder
 .DESCRIPTION
-	This scripts changes the working directory to the user's documents folder.
+	This PowerShell script changes the working directory to the user's documents folder.
 .EXAMPLE
 	PS> ./cd-docs
 	📂/home/markus/Documents
 .LINK
 	https://github.com/fleschutz/PowerShell
 .NOTES
-	Author: Markus Fleschutz · License: CC0
+	Author: Markus Fleschutz / License: CC0
 #>
 
 try {

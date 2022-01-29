@@ -2,7 +2,7 @@
 .SYNOPSIS
 	Checks an IPv4 address for validity
 .DESCRIPTION
-	This script checks the given IPv4 address for validity.
+	This PowerShell script checks the given IPv4 address for validity.
 .PARAMETER Address
 	Specifies the IPv4 address to check
 .EXAMPLE
@@ -11,7 +11,7 @@
 .LINK
 	https://github.com/fleschutz/PowerShell
 .NOTES
-	Author: Markus Fleschutz · License: CC0
+	Author: Markus Fleschutz / License: CC0
 #>
 
 param([string]$Address = "")

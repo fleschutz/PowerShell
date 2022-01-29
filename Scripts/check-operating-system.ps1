@@ -2,13 +2,13 @@
 .SYNOPSIS
 	Determines the exact OS version 
 .DESCRIPTION
-	This script determines and says the exact operating system version by text-to-speech (TTS).
+	This PowerShell script determines and says the exact operating system version by text-to-speech (TTS).
 .EXAMPLE
 	PS> ./check-operating-system
-.NOTES
-	Author: Markus Fleschutz · License: CC0
 .LINK
 	https://github.com/fleschutz/PowerShell
+.NOTES
+	Author: Markus Fleschutz / License: CC0
 #>
 
 try {

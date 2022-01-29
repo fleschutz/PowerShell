@@ -2,13 +2,13 @@
 .SYNOPSIS
 	Launches Git Extensions 
 .DESCRIPTION
-	This script launches the Git Extensions application.
+	This PowerShell script launches the Git Extensions application.
 .EXAMPLE
 	PS> ./open-git-extensions
-.NOTES
-	Author: Markus Fleschutz · License: CC0
 .LINK
 	https://github.com/fleschutz/PowerShell
+.NOTES
+	Author: Markus Fleschutz / License: CC0
 #>
 
 function TryToExec { param($Folder, $Binary)

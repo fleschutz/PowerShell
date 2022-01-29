@@ -2,7 +2,7 @@
 .SYNOPSIS
 	Lists all commits in a Git repository
 .DESCRIPTION
-	This script lists all commits in a Git repository. Supported output formats are: list, compact, normal or JSON.
+	This PowerShell script lists all commits in a Git repository. Supported output formats are: list, compact, normal or JSON.
 .PARAMETER RepoDir
 	Specifies the path to the Git repository.
 .PARAMETER Format
@@ -15,10 +15,10 @@
 	ccd0d3e Wed Sep 29 08:28:20 2021 +0200  Markus Fleschutz        Fix typo
 	291d785 Wed Sep 29 08:18:28 2021 +0200  Markus Fleschutz        Update README.md
 	...
-.NOTES
-	Author: Markus Fleschutz · License: CC0
 .LINK
 	https://github.com/fleschutz/PowerShell
+.NOTES
+	Author: Markus Fleschutz / License: CC0
 #>
 
 param([string]$RepoDir = "$PWD", [string]$Format = "list")

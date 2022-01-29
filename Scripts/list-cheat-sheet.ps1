@@ -2,13 +2,13 @@
 .SYNOPSIS
 	Lists the PowerShell cheat sheet
 .DESCRIPTION
-	This script lists the PowerShell cheat sheet.
+	This PowerShell script lists the PowerShell cheat sheet.
 .EXAMPLE
 	PS> ./list-cheat-sheet
-.NOTES
-	Author: Markus Fleschutz · License: CC0
 .LINK
 	https://github.com/fleschutz/PowerShell
+.NOTES
+	Author: Markus Fleschutz / License: CC0
 #>
 
 "PowerShell Cheat Sheet"

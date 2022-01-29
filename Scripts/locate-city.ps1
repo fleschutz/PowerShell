@@ -2,15 +2,15 @@
 .SYNOPSIS
 	Prints the geographic location of a city
 .DESCRIPTION
-	This script prints the geographic location of the given city.
+	This PowerShell script prints the geographic location of the given city.
 .PARAMETER City
 	Specifies the city to look for
 .EXAMPLE
 	PS> ./locate-city Paris
-.NOTES
-	Author: Markus Fleschutz · License: CC0
 .LINK
 	https://github.com/fleschutz/PowerShell
+.NOTES
+	Author: Markus Fleschutz / License: CC0
 #>
 
 param([string]$City = "")

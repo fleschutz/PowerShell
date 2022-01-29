@@ -2,14 +2,14 @@
 .SYNOPSIS
 	Sets the working directory to the user's autostart folder
 .DESCRIPTION
-	This script changes the working directory to the user's autostart folder.
+	This PowerShell script changes the working directory to the user's autostart folder.
 .EXAMPLE
 	PS> ./cd-autostart
 	📂C:\Users\Markus\AppData\Roaming\Microsoft\Windows\Start Menu\Programs\Startup
 .LINK
 	https://github.com/fleschutz/PowerShell
 .NOTES
-	Author: Markus Fleschutz · License: CC0
+	Author: Markus Fleschutz / License: CC0
 #>
 
 try {

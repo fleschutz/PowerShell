@@ -2,7 +2,7 @@
 .SYNOPSIS
 	Lists random passwords
 .DESCRIPTION
-	This script lists random passwords.
+	This PowerShell script lists random passwords.
 .PARAMETER PasswordLength
 	Specifies the length of the password
 .PARAMETER Columns
@@ -11,10 +11,10 @@
 	Specifies the number of rows
 .EXAMPLE
 	PS> ./list-passwords
-.NOTES
-	Author: Markus Fleschutz · License: CC0
 .LINK
 	https://github.com/fleschutz/PowerShell
+.NOTES
+	Author: Markus Fleschutz / License: CC0
 #>
 
 param([int]$PasswordLength = 15, [int]$Columns = 6, [int]$Rows = 30)

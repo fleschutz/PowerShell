@@ -2,14 +2,14 @@
 .SYNOPSIS
 	Sets the working directory to the user's Git repositories folder
 .DESCRIPTION
-	This script changes the working directory to the user's Git repositories folder.
+	This PowerShell script changes the working directory to the user's Git repositories folder.
 .EXAMPLE
 	PS> ./cd-repos
 	📂/home/markus/Repos
 .LINK
 	https://github.com/fleschutz/PowerShell
 .NOTES
-	Author: Markus Fleschutz · License: CC0
+	Author: Markus Fleschutz / License: CC0
 #>
 
 try {

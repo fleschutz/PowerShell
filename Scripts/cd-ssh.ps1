@@ -2,14 +2,14 @@
 .SYNOPSIS
 	Sets the working directory to the user's SSH folder
 .DESCRIPTION
-	This script changes the working directory to the user's SSH folder.
+	This PowerShell script changes the working directory to the user's SSH folder.
 .EXAMPLE
 	PS> ./cd-ssh
 	📂/home/markus/.ssh
 .LINK
 	https://github.com/fleschutz/PowerShell
 .NOTES
-	Author: Markus Fleschutz · License: CC0
+	Author: Markus Fleschutz / License: CC0
 #>
 
 try {

@@ -2,7 +2,7 @@
 .SYNOPSIS
 	Lists the user's PowerShell profiles
 .DESCRIPTION
-	This script lists the user's PowerShell profiles.
+	This PowerShell script lists the user's PowerShell profiles.
 .EXAMPLE
 	PS> ./list-profiles
 	
@@ -12,10 +12,10 @@
 	2     AllUsersCurrentHost    /opt/PowerShell/Microsoft.PowerShell_profile.ps1                 no
 	3     CurrentUserAllHosts    /home/markus/.config/powershell/profile.ps1                      no
 	4     CurrentUserCurrentHost /home/markus/.config/powershell/Microsoft.PowerShell_profile.ps1 yes
-.NOTES
-	Author: Markus Fleschutz · License: CC0
 .LINK
 	https://github.com/fleschutz/PowerShell
+.NOTES
+	Author: Markus Fleschutz / License: CC0
 #>
 
 function ListProfile { param([int]$Level, [string]$Profile, [string]$Location)

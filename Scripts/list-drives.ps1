@@ -2,7 +2,7 @@
 .SYNOPSIS
 	Lists all local drives
 .DESCRIPTION
-	This script lists the details of all local drives.
+	This PowerShell script lists the details of all local drives.
 .EXAMPLE
 	PS> ./list-drives
 
@@ -10,10 +10,10 @@
 	---- ---- --------- ---------
 	C    C:\       76,1      35,0
 	D    D:\     6648,1     744,2
-.NOTES
-	Author: Markus Fleschutz · License: CC0
 .LINK
 	https://github.com/fleschutz/PowerShell
+.NOTES
+	Author: Markus Fleschutz / License: CC0
 #>
 
 try {

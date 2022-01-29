@@ -2,13 +2,13 @@
 .SYNOPSIS
 	Lists all tables of a MySQL database 
 .DESCRIPTION
-	This script lists all tables of the given MySQL database.
+	This PowerShell script lists all tables of the given MySQL database.
 .EXAMPLE
 	PS> ./list-mysql-tables
-.NOTES
-	Author: Markus Fleschutz · License: CC0
 .LINK
 	https://github.com/fleschutz/PowerShell
+.NOTES
+	Author: Markus Fleschutz / License: CC0
 #>
 
 # This script lists all of the tables in a MySQL database and exports the list as a CSV

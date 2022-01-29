@@ -2,15 +2,15 @@
 .SYNOPSIS
 	Lists the submodules of a Git repository
 .DESCRIPTION
-	This script lists the submodules of the given Git repository.
+	This PowerShell script lists the submodules of the given Git repository.
 .PARAMETER RepoDir
 	Specifies the path to the repository (current working dir by default)
 .EXAMPLE
 	PS> ./list-submodules C:\MyRepo
-.NOTES
-	Author: Markus Fleschutz · License: CC0
 .LINK
 	https://github.com/fleschutz/PowerShell
+.NOTES
+	Author: Markus Fleschutz / License: CC0
 #>
 
 param([string]$RepoDir = "$PWD")

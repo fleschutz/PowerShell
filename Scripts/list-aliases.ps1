@@ -2,7 +2,7 @@
 .SYNOPSIS
 	Lists all PowerShell aliases
 .DESCRIPTION
-	This scripts lists all PowerShell aliases.
+	This PowerShell scripts lists all PowerShell aliases.
 .EXAMPLE
 	PS> ./list-aliases
 
@@ -11,10 +11,10 @@
 	Alias           CFS -> ConvertFrom-String                          3.1.0.0    Microsoft.PowerShell.Utility
 	Alias           fhx -> Format-Hex                                  3.1.0.0    Microsoft.PowerShell.Utility
 	...
-.NOTES
-	Author: Markus Fleschutz · License: CC0
 .LINK
 	https://github.com/fleschutz/PowerShell
+.NOTES
+	Author: Markus Fleschutz / License: CC0
 #>
 
 try {

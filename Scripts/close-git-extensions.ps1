@@ -2,13 +2,13 @@
 .SYNOPSIS
 	Closes the Git Extensions app
 .DESCRIPTION
-	This script closes the Git Extensions application gracefully.
+	This PowerShell script closes the Git Extensions application gracefully.
 .EXAMPLE
 	PS> ./close-git-extensions
-.NOTES
-	Author: Markus Fleschutz · License: CC0
 .LINK
 	https://github.com/fleschutz/PowerShell
+.NOTES
+	Author: Markus Fleschutz / License: CC0
 #>
 
 TaskKill /im GitExtensions.exe

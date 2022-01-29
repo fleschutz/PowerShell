@@ -2,7 +2,7 @@
 .SYNOPSIS
 	Creates a new shortcut file
 .DESCRIPTION
-	This script creates a new shortcut file.
+	This PowerShell script creates a new shortcut file.
 .PARAMETER shortcut
 	Specifies the shortcut filename
 .PARAMETER target
@@ -11,10 +11,10 @@
 	Specifies a description
 .EXAMPLE
 	PS> ./new-shortcut C:\Temp\HDD C:\
-.NOTES
-	Author: Markus Fleschutz · License: CC0
 .LINK
 	https://github.com/fleschutz/PowerShell
+.NOTES
+	Author: Markus Fleschutz / License: CC0
 #>
 
 param([string]$shortcut = "", [string]$target = "", [string]$description)

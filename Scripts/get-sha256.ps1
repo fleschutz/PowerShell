@@ -2,15 +2,15 @@
 .SYNOPSIS
 	Prints the SHA256 checksum of a file
 .DESCRIPTION
-	This script calculates and prints the SHA256 checksum of the given file.
+	This PowerShell script calculates and prints the SHA256 checksum of the given file.
 .PARAMETER file
 	Specifies the path to the file
 .EXAMPLE
 	PS> ./get-sha256 C:\MyFile.txt
-.NOTES
-	Author: Markus Fleschutz · License: CC0
 .LINK
 	https://github.com/fleschutz/PowerShell
+.NOTES
+	Author: Markus Fleschutz / License: CC0
 #>
 
 param([string]$file = "")

@@ -2,15 +2,15 @@
 .SYNOPSIS
 	Builds a Git repository 
 .DESCRIPTION
-	This scripts supports building with cmake, configure, autogen, Imakefile and Makefile.
+	This PowerShell script supports building with cmake, configure, autogen, Imakefile and Makefile.
 .PARAMETER RepoDir
 	Specifies the path to the Git repository
 .EXAMPLE
 	PS> ./build-repo C:\MyRepo
-.NOTES
-	Author: Markus Fleschutz · License: CC0
 .LINK
 	https://github.com/fleschutz/PowerShell
+.NOTES
+	Author: Markus Fleschutz / License: CC0
 #>
 
 param([string]$RepoDir = "$PWD")
