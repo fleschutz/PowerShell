@@ -1,8 +1,8 @@
 ﻿<#
 .SYNOPSIS
-	Switches a Shelly1 device in the local network
+	Switches a Shelly1 device 
 .DESCRIPTION
-	This script switches a Shelly1 device in the local network.
+	This PowerShell script switches a Shelly1 device in the local network.
 .PARAMETER Host
 	Specifies either the hostname or IP address of the Shelly1 device
 .PARAMETER TurnMode
@@ -11,10 +11,10 @@
 	Specifies the timer in seconds (0 = infinite)
 .EXAMPLE
 	PS> ./switch-shelly1 192.168.100.100 toggle 10
-.NOTES
-	Author: Markus Fleschutz · License: CC0
 .LINK
 	https://github.com/fleschutz/PowerShell
+.NOTES
+	Author: Markus Fleschutz / License: CC0
 #>
 
 param([string]$Host = "", [string]$TurnMode = "", [int]$Timer = -999)

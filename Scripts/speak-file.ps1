@@ -2,15 +2,15 @@
 .SYNOPSIS
 	Speaks file content by text-to-speech
 .DESCRIPTION
-	This script speaks the content of the given text file by text-to-speech (TTS).
+	This PowerShell script speaks the content of the given text file by text-to-speech (TTS).
 .PARAMETER File
 	Specifies the path to the text file
 .EXAMPLE
 	PS> ./speak-file C:\MyFile.txt
-.NOTES
-	Author: Markus Fleschutz · License: CC0
 .LINK
 	https://github.com/fleschutz/PowerShell
+.NOTES
+	Author: Markus Fleschutz / License: CC0
 #>
 
 param([string]$File = "")

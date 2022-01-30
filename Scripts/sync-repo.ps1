@@ -1,16 +1,16 @@
 ﻿<#
 .SYNOPSIS
-	Synchronizes a Git repository by push & pull (including submodules)
+	Synchronizes a Git repository 
 .DESCRIPTION
-	This script synchronizes a Git repository by push & pull (including submodules).
+	This PowerShell script synchronizes a Git repository by push & pull (including submodules).
 .PARAMETER RepoDir
 	Specifies the path to the Git repository
 .EXAMPLE
 	PS> ./sync-repo C:\MyRepo
-.NOTES
-	Author: Markus Fleschutz · License: CC0
 .LINK
 	https://github.com/fleschutz/PowerShell
+.NOTES
+	Author: Markus Fleschutz / License: CC0
 #>
 
 param([string]$RepoDir = "$PWD")

@@ -2,7 +2,7 @@
 .SYNOPSIS
 	Sends a TCP message to an IP address and port
 .DESCRIPTION
-	This script sends a TCP message to the given IP address and port.
+	This PowerShell script sends a TCP message to the given IP address and port.
 .PARAMETER TargetIP
 	Specifies the target IP address
 .PARAMETER TargetPort
@@ -11,10 +11,10 @@
 	Specifies the message to send
 .EXAMPLE
 	PS> ./send-tcp 192.168.100.100 8080 "TEST"
-.NOTES
-	Author: Markus Fleschutz · License: CC0
 .LINK
 	https://github.com/fleschutz/PowerShell
+.NOTES
+	Author: Markus Fleschutz / License: CC0
 #>
 
 param([string]$TargetIP = "", [int]$TargetPort = 0, [string]$Message = "")

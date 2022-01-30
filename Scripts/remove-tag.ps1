@@ -2,7 +2,7 @@
 .SYNOPSIS
 	Removes a Git tag (locally, remote, or both)
 .DESCRIPTION
-	This script removes a Git tag, either locally, remote, or both.
+	This PowerShell script removes a Git tag, either locally, remote, or both.
 .PARAMETER TagName
 	Specifies the Git tag name
 .PARAMETER Mode
@@ -14,7 +14,7 @@
 .LINK
 	https://github.com/fleschutz/PowerShell
 .NOTES
-	Author: Markus Fleschutz · License: CC0
+	Author: Markus Fleschutz / License: CC0
 #>
 
 param([string]$TagName = "", [string]$Mode = "", [string]$RepoDir = "$PWD")

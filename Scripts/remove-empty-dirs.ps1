@@ -2,15 +2,15 @@
 .SYNOPSIS
 	Removes all empty subfolders within a directory tree
 .DESCRIPTION
-	This script removes all empty subfolders within a directory tree.
+	This PowerShell script removes all empty subfolders within a directory tree.
 .PARAMETER DirTree
 	Specifies the path to the directory tree
 .EXAMPLE
 	PS> ./remove-empty-dirs C:\Temp
-.NOTES
-	Author: Markus Fleschutz · License: CC0
 .LINK
 	https://github.com/fleschutz/PowerShell
+.NOTES
+	Author: Markus Fleschutz / License: CC0
 #>
 
 param([string]$DirTree = "")

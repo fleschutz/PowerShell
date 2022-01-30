@@ -2,13 +2,13 @@
 .SYNOPSIS
 	Writes text in vertical direction
 .DESCRIPTION
-	This script writes text in vertical direction.
+	This PowerShell script writes text in vertical direction.
 .PARAMETER text
 	Specifies the text to write
 .EXAMPLE
 	PS> ./write-vertical "Hello World"
 .NOTES
-	Author: Markus Fleschutz · License: CC0
+	Author: Markus Fleschutz / License: CC0
 .LINK
 	https://github.com/fleschutz/PowerShell
 #>

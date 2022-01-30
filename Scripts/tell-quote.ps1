@@ -2,13 +2,13 @@
 .SYNOPSIS
 	Tells a quote by text-to-speech
 .DESCRIPTION
-	This script selects a random quote in Data/quotes.csv and speaks it by text-to-speech (TTS).
+	This PowerShell script selects a random quote in Data/quotes.csv and speaks it by text-to-speech (TTS).
 .EXAMPLE
 	PS> ./tell-quote
-.NOTES
-	Author: Markus Fleschutz · License: CC0
 .LINK
 	https://github.com/fleschutz/PowerShell
+.NOTES
+	Author: Markus Fleschutz / License: CC0
 #>
 
 try {

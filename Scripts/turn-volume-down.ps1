@@ -2,15 +2,15 @@
 .SYNOPSIS
 	Turns the audio volume down (-10% by default)
 .DESCRIPTION
-	This script turns the audio volume down (by -10% by default).
+	This PowerShell script turns the audio volume down (by -10% by default).
 .PARAMETER percent
 	Specifies the percent number
 .EXAMPLE
 	PS> ./turn-volume-down
-.NOTES
-	Author: Markus Fleschutz · License: CC0
 .LINK
 	https://github.com/fleschutz/PowerShell
+.NOTES
+	Author: Markus Fleschutz / License: CC0
 #>
 
 param([int]$percent = 10)

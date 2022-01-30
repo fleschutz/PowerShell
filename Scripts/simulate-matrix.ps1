@@ -2,13 +2,13 @@
 .SYNOPSIS
 	Simulates the Matrix (fun)
 .DESCRIPTION
-	This script simulates the Matrix (for fun).
+	This PowerShell script simulates the Matrix (for fun).
 .EXAMPLE
 	PS> ./simulate-matrix
-.NOTES
-	Author: Markus Fleschutz · License: CC0
 .LINK
 	https://github.com/fleschutz/PowerShell
+.NOTES
+	Author: Markus Fleschutz / License: CC0
 #>
 
 try {

@@ -2,7 +2,7 @@
 .SYNOPSIS
 	Uploads a local file to a FTP server
 .DESCRIPTION
-	This script uploads a local file to a FTP server.
+	This PowerShell script uploads a local file to a FTP server.
 .PARAMETER File
 	Specifies the path to the local file
 .PARAMETER URL
@@ -13,10 +13,10 @@
 	Specifies the password
 .EXAMPLE
 	PS> .\upload-file.ps1
-.NOTES
-	Author: Markus Fleschutz · License: CC0
 .LINK
 	https://github.com/fleschutz/PowerShell
+.NOTES
+	Author: Markus Fleschutz / License: CC0
 #>
 
 param([string]$File = "", [string]$URL = "", [string]$Username = "", [string]$Password = "")

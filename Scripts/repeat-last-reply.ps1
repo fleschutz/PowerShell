@@ -2,13 +2,13 @@
 .SYNOPSIS
 	Repeats the last reply
 .DESCRIPTION
-	This repeats the last reply by text-to-speech (TTS).
+	This PowerShell script repeats the last reply by text-to-speech (TTS).
 .EXAMPLE
 	PS> ./repeat-last-reply
-.NOTES
-	Author: Markus Fleschutz · License: CC0
 .LINK
 	https://github.com/fleschutz/PowerShell
+.NOTES
+	Author: Markus Fleschutz / License: CC0
 #>
 
 function GetTempDir {

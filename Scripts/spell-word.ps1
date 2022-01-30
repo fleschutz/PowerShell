@@ -2,15 +2,15 @@
 .SYNOPSIS
 	Spells a word
 .DESCRIPTION
-	This script spells the given word by text-to-speech (TTS).
+	This PowerShell script spells the given word by text-to-speech (TTS).
 .PARAMETER word
         Specifies the word to spell
 .EXAMPLE
 	PS> ./spell-word
-.NOTES
-	Author: Markus Fleschutz · License: CC0
 .LINK
 	https://github.com/fleschutz/PowerShell
+.NOTES
+	Author: Markus Fleschutz / License: CC0
 #>
 
 param([string]$word = "")

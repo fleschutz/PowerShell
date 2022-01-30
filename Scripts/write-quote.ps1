@@ -2,11 +2,11 @@
 .SYNOPSIS
 	Writes a random quote to the console
 .DESCRIPTION
-	This script writes a random quote to the console.
+	This PowerShell script writes a random quote to the console.
 .EXAMPLE
 	PS> ./write-quote
 .NOTES
-	Author: Markus Fleschutz · License: CC0
+	Author: Markus Fleschutz / License: CC0
 .LINK
 	https://github.com/fleschutz/PowerShell
 #>

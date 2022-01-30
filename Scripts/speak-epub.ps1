@@ -2,15 +2,15 @@
 .SYNOPSIS
 	Speaks the content of the given Epub file by text-to-speech (TTS).
 .DESCRIPTION
-	This script speaks the content of the given Epub file by text-to-speech (TTS).
+	This PowerShell script speaks the content of the given Epub file by text-to-speech (TTS).
 .PARAMETER Filename
 	Specifies the path to the Epub file
 .EXAMPLE
 	PS> ./speak-epub C:\MyBook.epub
-.NOTES
-	Author: Markus Fleschutz · License: CC0
 .LINK
 	https://github.com/fleschutz/PowerShell
+.NOTES
+	Author: Markus Fleschutz / License: CC0
 #>
 
 param([string]$Filename = "")

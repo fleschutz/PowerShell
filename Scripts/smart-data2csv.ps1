@@ -2,16 +2,16 @@
 .SYNOPSIS
 	Converts the S.M.A.R.T. JSON files in a folder to a CSV table for analysis
 .DESCRIPTION
-	Converts the S.M.A.R.T. JSON files in the current/given directory to a CSV table for analysis
-        (use query-smart-data.ps1 to generate those JSON files).
+	This PowerShell script converts the S.M.A.R.T. JSON files in the current/given directory
+	to a CSV table for analysis (use query-smart-data.ps1 to generate those JSON files).
 .PARAMETER Directory
 	Specifies the path to the directory
 .EXAMPLE
 	PS> ./smart-data2csv
-.NOTES
-	Author: Markus Fleschutz · License: CC0
 .LINK
 	https://github.com/fleschutz/PowerShell
+.NOTES
+	Author: Markus Fleschutz / License: CC0
 #>
 
 param([string]$Directory = "")

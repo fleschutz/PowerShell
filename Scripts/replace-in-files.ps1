@@ -2,7 +2,7 @@
 .SYNOPSIS
 	Search and replace a pattern in the given files by the replacement
 .DESCRIPTION
-	This script searches and replaces a pattern in the given files by the replacement.
+	This PowerShell script searches and replaces a pattern in the given files by the replacement.
 .PARAMETER pattern
 	Specifies the pattern to look for
 .PARAMETER replacement
@@ -11,10 +11,10 @@
 	Specifies the file to scan
 .EXAMPLE
 	PS> ./replace-in-files NSA "No Such Agency" C:\Temp\*.txt
-.NOTES
-	Author: Markus Fleschutz · License: CC0
 .LINK
 	https://github.com/fleschutz/PowerShell
+.NOTES
+	Author: Markus Fleschutz / License: CC0
 #>
 
 param([string]$pattern = "", [string]$replacement = "", [string]$files = "")

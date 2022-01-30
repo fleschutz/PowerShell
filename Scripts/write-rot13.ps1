@@ -2,13 +2,13 @@
 .SYNOPSIS
 	Writes text encoded or decoded with ROT13
 .DESCRIPTION
-	This script writes text encoded or decoded with ROT13.
+	This PowerShell script writes text encoded or decoded with ROT13.
 .PARAMETER text
 	Specifies the text to write
 .EXAMPLE
 	PS> ./write-rot13 "Hello World"
 .NOTES
-	Author: Markus Fleschutz · License: CC0
+	Author: Markus Fleschutz / License: CC0
 .LINK
 	https://github.com/fleschutz/PowerShell
 #>

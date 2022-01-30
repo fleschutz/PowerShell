@@ -2,15 +2,15 @@
 .SYNOPSIS
 	Prints a description of an abbreviation
 .DESCRIPTION
-	This script prints a description of the given abbreviation.
+	This PowerShell script prints a description of the given abbreviation.
 .PARAMETER abbreviation
 	Specifies the appreviation to look for
 .EXAMPLE
 	PS> ./what-is IAS
-.NOTES
-	Author: Markus Fleschutz / License: CC0
 .LINK
 	https://github.com/fleschutz/PowerShell
+.NOTES
+	Author: Markus Fleschutz / License: CC0
 #>
 
 param([string]$abbreviation = "")

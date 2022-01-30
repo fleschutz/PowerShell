@@ -5,10 +5,10 @@
 	This PowerShell script restarts all local network adapters (needs admin rights).
 .EXAMPLE
 	PS> ./restart-network-adapters
-.NOTES
-	Author: Markus Fleschutz / License: CC0
 .LINK
 	htts://github.com/fleschutz/PowerShell
+.NOTES
+	Author: Markus Fleschutz / License: CC0
 #>
 
 #Requires -RunAsAdministrator

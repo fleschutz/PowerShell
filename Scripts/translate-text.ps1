@@ -2,7 +2,7 @@
 .SYNOPSIS
 	Translates text into other languages
 .DESCRIPTION
-	This script translates text into other languages.
+	This PowerShell script translates text into other languages.
 .PARAMETER Text
 	Specifies the text to translate
 .PARAMETER SourceLang
@@ -11,10 +11,10 @@
 	Specifies the target language
 .EXAMPLE
 	PS> ./translate-text "Hello World" de en
-.NOTES
-	Author: Markus Fleschutz · License: CC0
 .LINK
 	https://github.com/fleschutz/PowerShell
+.NOTES
+	Author: Markus Fleschutz / License: CC0
 #>
 
 param([string]$Text = "", [string]$SourceLangCode = "en", [string]$TargetLangCode = "any")

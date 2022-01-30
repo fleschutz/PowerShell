@@ -2,15 +2,15 @@
 .SYNOPSIS
 	Translates text files into any supported language
 .DESCRIPTION
-	This script translates text files into any supported language.
+	This PowerShell script translates text files into any supported language.
 .PARAMETER FilePattern
 	Specifies the file pattern
 .EXAMPLE
 	PS> ./translate-files C:\Temp\*.txt
-.NOTES
-	Author: Markus Fleschutz · License: CC0
 .LINK
 	https://github.com/fleschutz/PowerShell
+.NOTES
+	Author: Markus Fleschutz / License: CC0
 #>
 
 param([string]$FilePattern = "")

@@ -2,16 +2,16 @@
 .SYNOPSIS
 	Saves a single screenshot
 .DESCRIPTION
-	This script takes a single screenshot and saves it into a target folder (the user's pictures folder by default).
+	This PowerShell script takes a single screenshot and saves it into a target folder (the user's pictures folder by default).
 .PARAMETER TargetFolder
 	Specifies the target folder (the user's pictures folder by default)
 .EXAMPLE
 	PS> ./save-screenshot
  	✔️ screenshot saved to C:\Users\Markus\Pictures\2021-10-10T14-33-22.png
-.NOTES
-	Author: Markus Fleschutz · License: CC0
 .LINK
 	https://github.com/fleschutz/PowerShell
+.NOTES
+	Author: Markus Fleschutz / License: CC0
 #>
 
 param([string]$TargetFolder = "$HOME/Pictures")

@@ -2,13 +2,13 @@
 .SYNOPSIS
 	Sends an email message
 .DESCRIPTION
-	This script sends an email message.
+	This PowerShell script sends an email message.
 .EXAMPLE
 	PS> ./send-email
-.NOTES
-	Author: Markus Fleschutz · License: CC0
 .LINK
 	https://github.com/fleschutz/PowerShell
+.NOTES
+	Author: Markus Fleschutz / License: CC0
 #>
 
 $smtpServer = "smtp.example.com"

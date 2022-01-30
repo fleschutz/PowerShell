@@ -2,11 +2,11 @@
 .SYNOPSIS
 	Writes a chart
 .DESCRIPTION
-	This script writes a chart.
+	This PowerShell script writes a chart.
 .EXAMPLE
 	PS> ./write-chart
 .NOTES
-	Author: Markus Fleschutz · License: CC0
+	Author: Markus Fleschutz / License: CC0
 .LINK
 	https://github.com/fleschutz/PowerShell
 #>

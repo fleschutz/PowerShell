@@ -2,7 +2,7 @@
 .SYNOPSIS
 	Sends a UDP datagram message to an IP address and port
 .DESCRIPTION
-	This script sends a UDP datagram message to an IP address and port.
+	This PowerShell script sends a UDP datagram message to an IP address and port.
 .PARAMETER TargetIP
 	Specifies the target IP address
 .PARAMETER TargetPort
@@ -12,10 +12,10 @@
 .EXAMPLE
 	PS> ./send-udp 192.168.100.100 8080 "TEST"
 	✔️  Done.
-.NOTES
-	Author: Markus Fleschutz · License: CC0
 .LINK
 	https://github.com/fleschutz/PowerShell
+.NOTES
+	Author: Markus Fleschutz / License: CC0
 #>
 
 param([string]$TargetIP = "", [int]$TargetPort = 0, $[string]Message = "")

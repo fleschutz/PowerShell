@@ -2,17 +2,17 @@
 .SYNOPSIS
 	Switches the branch in a Git repository 
 .DESCRIPTION
-	This script switches to another branch in a Git repository (including submodules).
+	This PowerShell script switches to another branch in a Git repository (including submodules).
 .PARAMETER BranchName
 	Specifies the branch name
 .PARAMETER RepoDir
 	Specifies the path to the Git repository
 .EXAMPLE
 	PS> ./switch-branch main C:\MyRepo
-.NOTES
-	Author: Markus Fleschutz / License: CC0
 .LINK
 	https://github.com/fleschutz/PowerShell
+.NOTES
+	Author: Markus Fleschutz / License: CC0
 #>
 
 param([string]$BranchName = "", [string]$RepoDir = "$PWD")

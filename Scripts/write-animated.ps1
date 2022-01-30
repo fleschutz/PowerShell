@@ -2,13 +2,13 @@
 .SYNOPSIS
 	Writes animated text
 .DESCRIPTION
-	This script writes animated text.
+	This PowerShell script writes animated text.
 .EXAMPLE
 	PS> ./write-animated "Hello World"
-.NOTES
-	Author: Markus Fleschutz · License: CC0
 .LINK
 	https://github.com/fleschutz/PowerShell
+.NOTES
+	Author: Markus Fleschutz / License: CC0
 #>
 
 param($Line1 = "", $Line2 = "", $Line3 = "", $Line4 = "", $Line5 = "", $Line6 = "", $Line7 = "", $Line8 = "", $Line9 = "", [int]$Speed = 30) # 30 ms pause

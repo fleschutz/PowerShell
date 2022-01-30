@@ -2,17 +2,17 @@
 .SYNOPSIS
 	Sets the given image file as desktop wallpaper
 .DESCRIPTION
-	Sets the given image file as desktop wallpaper (.JPG or .PNG supported)
+	This PowerShell script sets the given image file as desktop wallpaper (.JPG or .PNG supported)
 .PARAMETER ImageFile
 	Specifies the path to the image file
 .PARAMETER Style
         Specifies either Fill, Fit, Stretch, Tile, Center, or Span (default)
 .EXAMPLE
 	PS> ./set-wallpaper C:\ocean.jpg
-.NOTES
-	Author: Markus Fleschutz · License: CC0
 .LINK
 	https://github.com/fleschutz/PowerShell
+.NOTES
+	Author: Markus Fleschutz / License: CC0
 #>
 
 param([string]$ImageFile = "", [string]$Style = "Span")

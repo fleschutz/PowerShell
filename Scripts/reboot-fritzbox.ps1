@@ -2,17 +2,17 @@
 .SYNOPSIS
 	Reboots the FRITZ!Box device
 .DESCRIPTION
-	This script reboots the FRITZ!Box device
+	This PowerShell script reboots the FRITZ!Box device
 .PARAMETER Username
 	Specifies the user name
 .PARAMETER Password
 	Specifies the password
 .EXAMPLE
 	PS> ./reboot-fritzbox
-.NOTES
-	Author: Markus Fleschutz · License: CC0
 .LINK
 	https://github.com/fleschutz/PowerShell
+.NOTES
+	Author: Markus Fleschutz / License: CC0
 #>
 
 param([string]$Username = "", [string]$Password = "")

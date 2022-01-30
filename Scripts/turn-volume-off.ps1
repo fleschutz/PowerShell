@@ -2,13 +2,13 @@
 .SYNOPSIS
 	Turns the volume off
 .DESCRIPTION
-	This script mutes the default audio device immediately.
+	This PowerShell script mutes the default audio device immediately.
 .EXAMPLE
 	PS> ./turn-volume-off
-.NOTES
-	Author: Markus Fleschutz · License: CC0
 .LINK
 	https://github.com/fleschutz/PowerShell
+.NOTES
+	Author: Markus Fleschutz / License: CC0
 #>
 
 try {

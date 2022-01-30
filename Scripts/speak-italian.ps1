@@ -2,15 +2,15 @@
 .SYNOPSIS
 	Speaks text with an Italian text-to-speech voice
 .DESCRIPTION
-	This script speaks the given text with an Italian text-to-speech (TTS) voice.
+	This PowerShell script speaks the given text with an Italian text-to-speech (TTS) voice.
 .PARAMETER text
 	Specifies the text to speak
 .EXAMPLE
 	PS> ./speak-italian Ciao
-.NOTES
-	Author: Markus Fleschutz · License: CC0
 .LINK
 	https://github.com/fleschutz/PowerShell
+.NOTES
+	Author: Markus Fleschutz / License: CC0
 #>
 
 param([string]$text = "")

@@ -2,7 +2,7 @@
 .SYNOPSIS
 	Sends a magic packet to a computer to wake him up
 .DESCRIPTION
-	Sends a magic UDP packet twice to a computer to wake him up (requires Wake-On-LAN).
+	This PowerShell script sends a magic UDP packet twice to a computer to wake him up (requires Wake-On-LAN).
 .PARAMETER MACaddress
 	Specifies the host's MAC address (e.g. 11:22:33:44:55:66)
 .PARAMETER IPaddress
@@ -12,10 +12,10 @@
 .EXAMPLE
 	PS> ./wakeup 11:22:33:44:55:66 192.168.100.100
 	(PC wakes up)
-.NOTES
-	Author: Markus Fleschutz · License: CC0
 .LINK
 	https://github.com/fleschutz/PowerShell
+.NOTES
+	Author: Markus Fleschutz / License: CC0
 #>
 
 param([string]$MACaddress = "", [string]$IPaddress = "", [int]$Port=9)

@@ -2,7 +2,7 @@
 .SYNOPSIS
 	Translates a text file into another language 
 .DESCRIPTION
-	This script translates a text file into another language.
+	This PowerShell script translates a text file into another language.
 .PARAMETER File
 	Specifies the file to translate
 .PARAMETER SourceLang
@@ -11,10 +11,10 @@
 	Specifies the target language
 .EXAMPLE
 	PS> ./translate-file C:\Memo.txt en de
-.NOTES
-	Author: Markus Fleschutz · License: CC0
 .LINK
 	https://github.com/fleschutz/PowerShell
+.NOTES
+	Author: Markus Fleschutz / License: CC0
 #>
 
 param([string]$File = "", [string]$SourceLang = "", [string]$TargetLang = "")

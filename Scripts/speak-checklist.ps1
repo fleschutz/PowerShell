@@ -2,15 +2,15 @@
 .SYNOPSIS
 	Speaks a checklist by text-to-speech
 .DESCRIPTION
-	This script speaks the given checklist by text-to-speech (TTS).
+	This PowerShell script speaks the given checklist by text-to-speech (TTS).
 .PARAMETER Name
 	Specifies the name of the checklist
 .EXAMPLE
 	PS> ./speak-checklist
-.NOTES
-	Author: Markus Fleschutz · License: CC0
 .LINK
 	https://github.com/fleschutz/PowerShell
+.NOTES
+	Author: Markus Fleschutz / License: CC0
 #>
 
 param([string]$Name = "")

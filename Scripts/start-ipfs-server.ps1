@@ -5,10 +5,10 @@
 	This PowerShell script starts a local IPFS server as a daemon process.
 .EXAMPLE
 	PS> ./start-ipfs-server
-.NOTES
-	Author: Markus Fleschutz / License: CC0
 .LINK
 	https://github.com/fleschutz/PowerShell
+.NOTES
+	Author: Markus Fleschutz / License: CC0
 #>
 
 try {

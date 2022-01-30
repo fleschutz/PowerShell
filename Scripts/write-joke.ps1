@@ -2,12 +2,12 @@
 .SYNOPSIS
 	Writes a random Juck Norris joke to the console
 .DESCRIPTION
-	This script writes a random Juck Norris joke to the console.
+	This PowerShell script writes a random Juck Norris joke to the console.
 .EXAMPLE
 	PS> ./write-joke
 	When Chuck Norris does division, there are no remainders. 😂
 .NOTES
-	Author: Markus Fleschutz · License: CC0
+	Author: Markus Fleschutz / License: CC0
 .LINK
 	https://github.com/fleschutz/PowerShell
 #>

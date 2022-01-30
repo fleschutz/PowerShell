@@ -1,8 +1,8 @@
 ﻿<#
 .SYNOPSIS
-	Writes out calendar elements, either a single month or an entire year
+	Writes out a calendar 
 .DESCRIPTION
-	write-calendar.ps1 [<Month>] [<Year>]
+	Writes out calendar elements, either a single month or an entire year.
 .PARAMETER Month
 	If specified, will limit output to a single month with this numeral value.
 .PARAMETER Year
@@ -20,7 +20,7 @@
 	PS> ./write-calendar 7
 	Outputs the calendar for July of this year.
 .NOTES
-	Author: Markus Fleschutz · License: CC0
+	Author: Markus Fleschutz / License: CC0
 .LINK
 	https://github.com/fleschutz/PowerShell
 #>

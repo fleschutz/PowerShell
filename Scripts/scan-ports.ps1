@@ -2,13 +2,13 @@
 .SYNOPSIS
 	Scans the network for open/closed ports
 .DESCRIPTION
-	This script scans the network for open or closed ports
+	This PowerShell script scans the network for open or closed ports.
 .EXAMPLE
 	PS> ./scan-ports
-.NOTES
-	Author: Markus Fleschutz · License: CC0
 .LINK
 	https://github.com/fleschutz/PowerShell
+.NOTES
+	Author: Markus Fleschutz / License: CC0
 #>
 
 $network = "192.168.178"

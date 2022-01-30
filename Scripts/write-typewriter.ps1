@@ -2,7 +2,7 @@
 .SYNOPSIS
 	Writes text with the typewriter effect
 .DESCRIPTION
-	This script writes text with the typewriter effect.
+	This PowerShell script writes text with the typewriter effect.
 .PARAMETER text
 	Specifies the text to write
 .PARAMETER speed
@@ -10,7 +10,7 @@
 .EXAMPLE
 	PS> ./write-typewriter "Hello World"
 .NOTES
-	Author: Markus Fleschutz · License: CC0
+	Author: Markus Fleschutz / License: CC0
 .LINK
 	https://github.com/fleschutz/PowerShell
 #>

@@ -2,7 +2,7 @@
 .SYNOPSIS
 	Writes text as marquee
 .DESCRIPTION
-	This script writes text as marquee.
+	This PowerShell script writes text as marquee.
 .PARAMETER text
 	Specifies the text to write
 .PARAMETER speed
@@ -10,7 +10,7 @@
 .EXAMPLE
 	PS> ./write-marquee "Hello World"
 .NOTES
-	Author: Markus Fleschutz · License: CC0
+	Author: Markus Fleschutz / License: CC0
 .LINK
 	https://github.com/fleschutz/PowerShell
 #>

@@ -2,15 +2,15 @@
 .SYNOPSIS
 	Writes text in big letters
 .DESCRIPTION
-	This script writes the given text in big letters.
+	This PowerShell script writes the given text in big letters.
 .PARAMETER text
 	Specifies the text to write
 .EXAMPLE
 	PS> ./write-big "Hello World"
-.NOTES
-	Author: Markus Fleschutz · License: CC0
 .LINK
 	https://github.com/fleschutz/PowerShell
+.NOTES
+	Author: Markus Fleschutz / License: CC0
 #>
 
 param([string]$text = "")

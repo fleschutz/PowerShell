@@ -2,13 +2,13 @@
 .SYNOPSIS
 	Performs a text-to-speech test
 .DESCRIPTION
-	This script performs a text-to-speech (TTS) test.
+	This PowerShell script performs a text-to-speech (TTS) test.
 .EXAMPLE
 	PS> ./speak-test
-.NOTES
-	Author: Markus Fleschutz · License: CC0
 .LINK
 	https://github.com/fleschutz/PowerShell
+.NOTES
+	Author: Markus Fleschutz / License: CC0
 #>
 
 function Speak { param([string]$Text)

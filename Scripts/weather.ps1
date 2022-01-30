@@ -2,15 +2,15 @@
 .SYNOPSIS
 	Lists the current weather forecast
 .DESCRIPTION
-	This script lists the current weather forecast.
+	This PowerShell script lists the current weather forecast.
 .PARAMETER GeoLocation
 	Specifies the geographic location to use
 .EXAMPLE
 	PS> ./weather Paris
-.NOTES
-	Author: Markus Fleschutz · License: CC0
 .LINK
 	https://github.com/fleschutz/PowerShell
+.NOTES
+	Author: Markus Fleschutz / License: CC0
 #>
 
 param([string]$GeoLocation = "") # empty means determine automatically

@@ -2,13 +2,13 @@
 .SYNOPSIS
 	Reboots the local computer (needs admin rights)
 .DESCRIPTION
-	This script reboots the local computer (needs admin rights).
+	This PowerShell script reboots the local computer (needs admin rights).
 .EXAMPLE
 	PS> ./reboot
-.NOTES
-	Author: Markus Fleschutz · License: CC0
 .LINK
 	https://github.com/fleschutz/PowerShell
+.NOTES
+	Author: Markus Fleschutz / License: CC0
 #>
 
 #Requires -RunAsAdministrator
