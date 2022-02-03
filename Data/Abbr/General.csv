@@ -23,7 +23,7 @@ Abbr,Term
 A,Ampere
 A10,Atlantic 10 Conference
 A1C,Airman First Class
-A4,many,including a European standard office paper size; see entry
+A4,European standard office paper size
 AA,achieved availability,Alcoholics Anonymous,Armed Forces Americas (postal symbol),Aruba (FIPS 10-4 territory code),assembly area,Automobile Association,avenue of approach
 aa,Afar language (ISO 639-1 code)
 aA,Attoampere
@@ -258,7 +258,7 @@ AICD,Australian Institute of Company Directors
 AICMFP,And I Claim My Five Pounds
 AID,U.S. Agency for International Development
 AIDS,Acquired Immune Deficiency Syndrome
-AIM,many,including AOL Instant Messenger,Australian Institute of Management; see entry
+AIM,Australian Institute of Management
 AIMP,Aurora Incremental Modernization Project
 AIPAC,American Israel Public Affairs Committee
 AIR,Aircraft Inventory Record
@@ -357,8 +357,7 @@ AOR,Area of Responsibility
 AOSTH,Adventures of Sonic the Hedgehog
 AOTS,Attack of the Show!
 AOU,American Ornithologists' Union
-AP,Advanced Placement,Air Publication,Andhra Pradesh (Indian state code),Armed Forces Pacific (postal symbol),Associated Press,Auto Pilot
-APA -
+AP,"Advanced Placement,Air Publication,Andhra Pradesh (Indian state code),Armed Forces Pacific (postal symbol),Associated Press,Auto Pilot"
 APB,All Points Bulletin (police jargon)
 APC,Armoured Personnel Carrier,Armour Piercing Capped (ammunition)
 APCNR,Armour-Piercing,Composite Non-Rigid (ammunition)
@@ -371,9 +370,7 @@ APFSDS,Armour-Piercing,Fin-Stabilised,Discarding Sabot (ammunition)
 APHA,American Public Health Association
 APHE,Armour-Piercing,High Explosive (ammunition)
 APHIS,Animal and Plant Health Inspection Service
-API,Application Programming Interface
-APL,A Programming Language,Acute Promyeloid Leukaemia,Anti-Personnel Landmine,Applied Physics Laboratory (Johns Hopkins University)
-APM,Advanced Power Management
+APL,"Acute Promyeloid Leukaemia,Anti-Personnel Landmine,Applied Physics Laboratory (Johns Hopkins University)"
 APOD,Aerial Port (Airport) Of Debarkation
 APOE,Aerial Port (Airport) Of Embarkation
 APOLLO,Apache Point Observatory Lunar Laser-ranging Operation
@@ -459,7 +456,7 @@ ASVEL,Association Sportive Villeurbanne Éveil Lyonnais (Association Sportive is
 ASW,AntiSubmarine Warfare
 ASWORG,(U.S.) AntiSubmarine Warfare Operations Research Group
 ASX,Advanced Stream Redirector,Australian Securities Exchange
-AT,Anti-Tank,Ashmore and Cartier Islands (FIPS 10-4 territory code),Austria (ISO 3166 digram),Advanced Technology (IBM Personal Computer/AT)
+AT,"Anti-Tank,Ashmore and Cartier Islands (FIPS 10-4 territory code),Austria (ISO 3166 digram),Advanced Technology (IBM Personal Computer/AT)"
 At,Astatine
 aT,Attotesla
 ATA,Advanced Technology Attachment (IBM Personal Computer),Afghan Transitional Authority,Allen Telescope Array,Antarctica (ISO 3166 trigram)
@@ -469,7 +466,7 @@ ATAPI,Advanced Technology Attachment Packet Interface
 ATAS,Air-To-Air Stinger (missile)
 ATAT,Aiken Tactical Airsoft Team / Star Wars vehicle
 ATB,Active Time Battle,British Antarctic Territory (ISO 3166 trigram; merged with AQ in 1979)
-ATC,Air Traffic Control,Air Training Corps,U.S. Air Transport Command (1942-1948),Athletic Trainer,Certified (www.nata.org)
+ATC,"Air Traffic Control,Air Training Corps,U.S. Air Transport Command (1942-1948),Athletic Trainer,Certified (www.nata.org)"
 ATCCIS,Army Tactical Command and Control Information System
 ATESS,Aerospace and Telecommunications Engineering Support Squadron
 ATF,French Southern Territories (ISO 3166 trigram),(U.S.) Bureau of Alcohol,Tobacco,Firearms and Explosives (from its previous name,which did not include "Explosives")
@@ -479,26 +476,26 @@ ATGW,Anti-Tank Guided Weapon
 ATI,Allied Telesyn International,Inc.,Array Technologies Incorporated. (ATI Technologies)
 Atisbo,a Local Government Area in Nigeria named for constituent communities (Ago-Are,Tede,Irawo,Sabe,Baasi,Ofiki and Owo)
 ATK,Attack
-ATL,Atlanta,Georgia,the largest city and capital of Georgia
+ATL,"Atlanta,Georgia,the largest city and capital of Georgia"
 ATLAS,All-Terrain Lifter Army System,Assessment Tool for LAnd Systems
 ATM,Automated Teller Machine,Asynchronous Transfer Mode,At The Moment
 ATN,Dronning Maud Land (ISO 3166 trigram; merged with AQ in 1983)
-ATO,Air Tasking Order,Australian Taxation Office
-ATP,Adenosine TriPhosphate,Allied Tactical Publication,Ammunition Transfer Point
+ATO,"Air Tasking Order,Australian Taxation Office"
+ATP,"Adenosine TriPhosphate,Allied Tactical Publication,Ammunition Transfer Point"
 ATSD,(U.S.) Assistant Secretary of Defense
 ATSDR,Agency for Toxic Substances and Disease Registry
 ATV,All-Terrain Vehicle
-ATWA,Air,Trees,Water,Animals
-AU,African Union (was OAU before 2000),American University,Astronomical Unit,Australia (ISO 3166 digram),Austria (FIPS 10-4 country code)
+ATWA,"Air,Trees,Water,Animals"
+AU,"African Union (was OAU before 2000),American University,Astronomical Unit,Australia (ISO 3166 digram),Austria (FIPS 10-4 country code)"
 Au,Gold (Latin Aurum)
-AUC,Ab Urbe Condita / Anno Urbis Conditae (Latin "from the founding of the city" / "in the year since the founding of the city") (of Rome),Area Under the Curve (concentration time curve; medicine)
+AUC,"Ab Urbe Condita / Anno Urbis Conditae (Latin "from the founding of the city" / "in the year since the founding of the city") (of Rome),Area Under the Curve (concentration time curve; medicine)"
 AUD,Australian dollar (ISO 4217 currency code)
 AUS,Australia (ISO 3166 trigram)
-AUSCANNZUKUS,Australia,Canada,New Zealand,United Kingdom,United States (security designation)
+AUSCANNZUKUS,"Australia,Canada,New Zealand,United Kingdom,United States (security designation)"
 Auslan,Australian Sign Language
 AUT,Austria (ISO 3166 trigram)
 AUTL,Army Universal Task List
-AV,Anguilla (FIPS 10-4 territory code),Audio-Visual,Aviation
+AV,"Anguilla (FIPS 10-4 territory code),Audio-Visual,Aviation"
 Av,Aperture value (photographic mode)
 aV,Attovolt
 av,Avar language (ISO 639-1 code)
@@ -516,15 +513,14 @@ AVO,Apprehended Violence Order
 AVP,Arubaanse Volkspartij
 AVP,Association of Volleyball Professionals
 AVRE,Armoured Vehicle Royal Engineers
-AVTB,Armoured Vehicle Test Bed,Aviation Test Bed
+AVTB,"Armoured Vehicle Test Bed,Aviation Test Bed"
 AVUM,Aviation Unit Maintenance
 AVVO,Acute Vaginal Venereal Outbreak
 AW,Aruba (ISO 3166 digram)
 aW,Attowatt
 AWA,American Wrestling Association
-AWACS,Airborne Warning And Control System
 AWC,Air Warfare Centre
-AWD,many,including All Wheel Drive; see entry
+AWD,All Wheel Drive
 AWE,Advanced Warfighting Experiment
 AWG,Aruban guilder (ISO 4217 currency code)
 AWP,Awaiting Parts (SM&R code)
@@ -645,7 +641,8 @@ CBE,Commander of the Order of the British Empire,Cab Beside Engine (see truck)
 CBF,Confederação Brasileira de Futebol (Portuguese,"Brazilian Football Confederation")
 CBGB,Country,Blue Grass,and Blues (former New York City nightclub)
 CBLA,Comparative bullet lead analysis
-CBM,many,including Canadian Baptist Ministries and Commodore Business Machines; see entry
+CBM,Canadian Baptist Ministries
+CBM,Commodore Business Machines
 CBML,Coalition Battle Management Language
 CBN,CardsApp Brand Number
 CBOL,Consortium for the Barcode of Life
@@ -655,7 +652,7 @@ CBRN,Chemical,Biological,Radiological,or Nuclear (weapon or event)
 CBRNE,Chemical,Biological,Radiological,Nuclear or [high-yield] Explosive (weapon or event)
 CBS,Columbia Broadcasting System,Corps Battle Simulation
 CBUS,Columbus,Ohio
-CC,many,including carbon copy; see entry
+CC,carbon copy
 CCA,Counter Command Activity
 CCC,Canterbury Clothing Company,Civilian Conservation Corps (U.S.,1930s and 1940s),Corpus Christi College,Oxford
 CCCP,Central Committee of the Communist Party,Cyrillic for SSSR (Soyuz Sovetskikh Sotsialisticheskikh Respublik,Russian Союз Советских Социалистических Республик,Union of Soviet Socialist Republics)
@@ -688,7 +685,7 @@ CCSK,Cyclic Code Shift Keying
 CCT,Current Commitments Team
 Cd,Cadmium
 cd,Candela
-CD,many,including Compact Disc; see entry
+CD,Compact Disc
 CD1,Cluster of Differentiation 1 (a small gene family)
 CDA,UK Centre for Defence Analysis
 CDC,Control Data Corporation,Cult of the Dead Cow
@@ -707,7 +704,7 @@ CDT,Central Daylight Time (UTC−5 hours)
 Cdt,Commandant
 Ce,Cerium
 ce,Chechen language (ISO 639-1 code)
-CE,many,including Christian/Common Era (cf. AD); see entry
+CE,Christian/Common Era
 CEA,Campaign Effectiveness Analysis
 CECOM,U.S. Army Communications and Electronics Command
 CEDEX,Courrier d'entreprise à distribution exceptionnelle (French,"Company Mail with Exceptional Distribution"; "exceptional" refers to the volume of mail)
@@ -979,7 +976,7 @@ CUREA,Consortium for Undergraduate Research and Education in Astronomy
 CuW,Copper-tungsten pseudo-alloy (from the chemical symbols of the two component elements)
 CUW,Curaçao (ISO 3166 trigram)
 cv,Chuvash language (ISO 639-1 code)
-CV,many,including curriculum vitae (résumé); see entry
+CV,curriculum vitae (résumé)
 CVE,Cape Verde escudo (ISO 4217 currency code)
 CVLL,Crypto Variable Logic Label
 CVSD,Continuous Variable Slope Delta (modulation)
@@ -1046,7 +1043,7 @@ DCOM,Disney Channel Original Movie
 DCSOPS,Deputy Chief of Staff for Operations and plans
 DCW,Digital Chart of the World
 DCYSC,Discovery Channel Young Scientist Challenge
-DD,many,including due diligence and dear daughter (increasingly prevalent on social mailing lists,blogs,and bulletin boards); see entry
+DD,"due diligence and dear daughter (increasingly prevalent on social mailing lists,blogs,and bulletin boards)"
 DDA,Deputy District Attorney
 DDN,U.S. Defense Data Network
 DDP,Danish Design Prize,Deutsche Demokratische Partei (German,"German Democratic Party",former political party in Weimar Germany),Diamond Dallas Page (American professional wrestler)
@@ -1786,7 +1783,7 @@ G15,Group of 15 (subset of G77,formed 1989: Algeria,Argentina,Brazil,Chile,Egypt
 G2,Assistant Chief-of-Staff,Intelligence
 G20,Group of 20 (G8 + Argentina,Australia,Brazil,China,India,Indonesia,Mexico,Saudi Arabia,South Africa,South Korea,Turkey + current European Union presiding country) (1999)
 G24,Group of 24 (subset of G77,formed 1971: Algeria,Argentina,Brazil,Colombia,Côte d'Ivoire,Democratic Republic of the Congo,Egypt,Ethiopia,Gabon,Ghana,Guatemala,India,Iran,Lebanon,Mexico,Nigeria,Pakistan,Peru,Philippines,South Africa,Syria,Sri Lanka,Trinidad and Tobago and Venezuela)
-G3,many,including Heckler & Koch G3; see entry,Assistant Chief-of-Staff,Operations and Plans
+G3,Heckler & Koch G3
 G4,Generation Four PowerPC microprocessor,Assistant Chief-of-Staff,Logistics
 G5,Generation Five PowerPC microprocessor,Assistant Chief-of-Staff,Public Affairs
 G6,Assistant Chief-of-Staff,Information Technology,Group of 6 (France,Germany,United States,Japan,United Kingdom,Italy) (1975)
@@ -1886,9 +1883,9 @@ GLP,Guadeloupe (ISO 3166 trigram)
 GLV,Gained Life Value
 glv,Manx language (ISO 639-2 code)
 Gm,Gigametre
-GM,The Gambia (ISO 3166 digram),GameMaster (role-playing),General Motors,Genetically Modified,Germany (FIPS 10-4 country code),Guru Meditation (computing)
-GMAC,General Motors Acceptance Corporation,the original name of the company now known as Ally Financial,Graduate Management Admission Council,G-MAC,Great Midwest Athletic Conference
-GMB,The Gambia (ISO 3166 trigram),General,Municipal,Boilermakers (and Allied Trade Union)
+GM,"The Gambia (ISO 3166 digram),GameMaster (role-playing),General Motors,Genetically Modified,Germany (FIPS 10-4 country code),Guru Meditation (computing)"
+GMAC,"General Motors Acceptance Corporation,the original name of the company now known as Ally Financial,Graduate Management Admission Council,G-MAC,Great Midwest Athletic Conference"
+GMB,"The Gambia (ISO 3166 trigram),General,Municipal,Boilermakers (and Allied Trade Union)"
 GmbH,Gesellschaft mit beschränkter Haftung (German,"Company with limited liability")
 GMC,U.K. General Medical Council,Gospel Music Channel
 GMD,Gambian dalasi (ISO 4217 currency code)
@@ -1907,41 +1904,42 @@ GNP,Gross National Product
 GNQ,Equatorial Guinea (ISO 3166 trigram)
 GnRH,Gonadotropin-Releasing Hormone
 GO,Glorioso Islands (FIPS 10-4 territory code)
-GOA,General of the Army (United States only),Gun Owners of America
-GOAT,Greatest of all time (LL Cool J album title)
+GOA,General of the Army (United States only)
+GOA,Gun Owners of America"
+GOAT,Greatest Of All Time
 GOC,General Officer Commanding
 GOES,Geostationary Operational Environmental Satellite
 GOP,Grand Old Party
-gorp,granola,oats,raisins,peanuts (another name for trail mix),probably a backronym
-GOSC,(a/i) General Officer Steering Committee
+gorp,"granola,oats,raisins,peanuts (another name for trail mix),probably a backronym"
+GOSC,General Officer Steering Committee
 GOSH,Great Ormond Street Hospital
 GOSP,Gas/Oil Separation Plant
 GOTS,Government off-the-shelf
-GOYADIN,Get Off Your Arse,Do It Now (anti-procrastination mantra)
-GP,General Practitioner,General Purpose,Grand Prix,Guadeloupe (ISO 3166 digram; FIPS 10-4 territory code)
+GOYADIN,"Get Off Your Arse,Do It Now (anti-procrastination mantra)"
+GP,"General Practitioner,General Purpose,Grand Prix,Guadeloupe (ISO 3166 digram; FIPS 10-4 territory code)"
 GPA,Grade Point Average
 GPC,Global Path Cache
 GPIB,General-Purpose Instrumentation/Interface Bus
 GPO,General Post Office
 GPPC,Genetics and Public Policy Center
 GPR,Ground-Penetrating Radar
-GPS,General Problem Solver,Global Positioning System
-GPT,GEC-Plessey Telecommunications,General Purpose Technology,Get Paid To website
+GPS,"General Problem Solver,Global Positioning System"
+GPT,"GEC-Plessey Telecommunications,General Purpose Technology,Get Paid To website"
 GPU,Gosudarstvennoye Politicheskoye Upravlenie (Russian Государственное Политическое Управление,"State Political Administration") (1922-1934)
-GQ,Equatorial Guinea (ISO 3166 digram),Gentlemen's Quarterly (the original name of the magazine now known simply as GQ),Guam (FIPS 10-4 territory code),GR[edit]
-GR,Greece (FIPS 10-4 country code; ISO 3166 digram),Hail (METAR Code)
+GQ,"Equatorial Guinea (ISO 3166 digram),Gentlemen's Quarterly (the original name of the magazine now known simply as GQ),Guam (FIPS 10-4 territory code),GR[edit]"
+GR,"Greece (FIPS 10-4 country code; ISO 3166 digram),Hail (METAR Code)"
 GRAIL,Gravity Recovery and Interior Laboratory
 GRAS,Generally recognized as safe (FDA list)
 GRB,Gamma-Ray Burst
 GRC,Greece (ISO 3166 trigram)
 GRD,Grenada (ISO 3166 trigram)
-GRE,Graduate Record Examination,Greece (IOC and FIFA trigram,but not ISO 3166)
-grep,[search] Globally for Regular Expression,Print [lines]
+GRE,"Graduate Record Examination,Greece (IOC and FIFA trigram,but not ISO 3166)"
+grep,"[search] Globally for Regular Expression,Print [lines]"
 GRID,Gay-Related Immune Deficiency (original name of AIDS)
-GRid,Global Release Identifier,a music industry identifier from the RIAA and IFPI
+GRid,"Global Release Identifier,a music industry identifier from the RIAA and IFPI"
 GriT,Girl raised in Texas (Woman presenting firm southern traits/beliefs)
 GRL,Greenland (ISO 3166 trigram)
-GRN,Grenada (IOC and FIFA trigram,but not ISO 3166),Goods Received Note
+GRN,"Grenada (IOC and FIFA trigram,but not ISO 3166),Goods Received Note"
 grn,Guaraní language (ISO 639-2 code)
 GRP,Graphite-reinforced plastic,see Carbon-fiber-reinforced polymer
 GRU,Glavnoje Razvedyvatel'noje Upravlenije/Главное Разведывательное Управление (Russian,"Main Intelligence Directorate" [of the former Soviet and now Russian armed forces])
@@ -3539,7 +3537,6 @@ NFG,No Fucking Good
 NFHS,National Federation of State High School Associations
 NFI,Not F****** Interested
 NFK,Norfolk Island (ISO 3166 trigram)
-NFL,National Football League,No-Fire Line
 Nfld,Newfoundland
 NFPA,National Fluid Power Association (United States)
 NFT,No Further Text
@@ -4929,7 +4926,7 @@ tsn,Tswana language (ISO 639-2 code)
 TSO,The Stationery Office (was HMSO until 1996),(U.S.) TRICARE Support Office,Trans-Siberian Orchestra (band)
 tso,Tsonga language (ISO 639-2 code)
 TSOP,Tactical Standing Operation Procedure,The Sound of Philadelphia (classic 1970s R&B instrumental)
-TSR,many,including Terminate and Stay Resident; see entry
+TSR,Terminate and Stay Resident
 TSSIA,The Subject Says It All
 tt,Tatar language (ISO 639-1 code)
 TT,Teratesla,Terrestrial Time,Tourist Trophy (Motorcycle sport),Trinidad and Tobago (ISO 3166 digram)

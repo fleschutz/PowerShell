@@ -11,44 +11,56 @@ AAE,Above Aerodrome Elevation
 AAF,Airway Facilities Service
 AAF,Army Air Field
 AAI,Arrival Aircraft Interval
+AAI,Airports Authority of India
 AAIB,Air Accidents Investigation Branch (UK)
 AAIM,Aircraft Autonomous Integrity Monitoring
 AAMS,Aircraft Arrival Management System
+AARTS,Army Aviation Radar Training System
 AAO,Assumed Adverse Obstacle
 AAS,Airport Advisory Service
 AB,Air Base
+ABI,Advanced Boundary Information
 AC,Air Conditioning
 AC,Aircraft
+ACAC,Arab Civil Aviation Conference
 ACAM,Aircraft Continuing Airworthiness Monitoring
-ACARS,ARINC Communications Addressing and Reporting System
-ACAS,Aircraft Collision Avoidance System
+ACARS,Aircraft Communications Addressing and Reporting System
+ACAS,Airborne Collision Avoidance System
 ACC,Area Control Center
+ACE,Airport airside Capacity Enhancement
+ACI,Airports Council International
+ACP,Accept
+AD,Air Defence
 ADAC,Abu Dhabi Airports
+ADEP,Aerodrome of Departure
+ADES,Aerodrome of Destination
 ADF,Automatic Direction Finding
 ADI,Automatic De-Ice and Inhibitor
 ADIZ,Air Defense Identification Zone
 ADL,Aeronautical Data Link
 ADLY,Arrival Delay
-ADP,Aeroportes de Paris
+ADP,Aerodrome dé Paris (Charles de Gaulle)
 ADP,Automated Data Processing
 ADS,Automated Distribution System
 ADS,Automatic Dependent Surveillance
 ADS-B,Automatic Dependent Surveillance-Broadcast
 AENA,Aeropuertos Españoles y Navegación Aérea
 AERA,Automated En-Route Air Traffic Control
+AEW,Airborne Early Warning
 AF,Air Field
+AFCS,Automatic Flight Control System
 AFIS,Aerodrome Flight Information Service
+AFTN,Aeronautical Fixed Telecommunication Network
 AFM,Aircraft Flight Manual
-AFM,Airplane Flight Manual
+AGAS,Action Group for ATM Safety (EUROCONTROL)
 AGL,Above Ground Level
-AGL,Above Ground Level
+ahdg,alter heading
 AICS,Aircraft Inventory and Charter System
 AID,Airport Information Desk
 AIDS,Aircraft Integrated Data System
 AIG,Airbus Industries Group
 AILS,Automatic Instrument Landing System
 AIM,Aeronautical Information Manual
-AIP,Aeronautical Information Publication
 AIP,Aeronautical Information Publication
 AIPA,Aeronautical Information Production Application
 AIRAC,Aeronautical Information Regulation And Control
@@ -110,22 +122,67 @@ ATA,Actual Time of Arrival
 ATC,Air Traffic Control
 ATIS,Automatic Terminal Information Service
 ATO,Air Traffic Organization
+AWACS,Airborne Warning And Control System
+BC,Back Course
 BAF,Belgian Air Force
+BIRTAM,NOTAM on Bird Activity
+BIT,Build-In Test
+BITE,Build-In Test Equipment
+BRNAV,Basic Area Navigation
 BWI,Baltimore/Washington International Thurgood Marshall Airport
+C2,Command and Control
+C3,"Communication, Command and Control"
+C4I,"Communication, Command, Control, Computers and Intelligence"
 CAAC,Civil Aviation Administration of China
 CAAS,Civil Aviation Authorization of Singapore
+CAL,Computer Assisted Learning
+CAMACA,Common Agreed Methodology for Airport airside Capacity Assessment
+CANAC,Computer Assisted National Air Traffic Control Centre (Belgium)
 CANSO,Civil Air Navigation Services Organization
+CARMA,CATC Radar Simulator Allahabad
 CAS,Calibrated Airspeed
+CASE,Controlled Airspace Synthetic Environment (Simulator of Alenia Marconi)
 CAT,Category of Aircraft
-CAVOK,Ceiling And Visibility OK
+CATC,Civil Air Traffic Control
+CAVOK,Clouds And Visibility OK
+CBT,Computer-based Training
 CCBC,Community College Baltimore County
+CCIS,Closed Circuit Information System
+CDA,Continuous Descent Approach
+CDI,Course Deviation Indicator
+CDM,Collaborative Decision Making
+CDTI,Cockpit Display of Traffic Information
+CDU,Cockpit Display Unit
+CEATS,Central European Air Traffic Services
+CESC,Chief Executive Standing Conference
+CFIT,Controlled Flight Into Terrain
+CFMU,Central Flow Management Unit
 COG,Center of Gravity
-COTS,Commercial-of-the-shelf
+CGD,Combined Graphic Display
+CISM,Critical Incident Stress Management
+CLC,Course Line Computer
 CRDA,Converging Runway Display Aid
+CMIC,Civil/Military Interface Standing Committee
+CNS,"Communication, Navigation, Surveillance"
+CODA,Central Office for Delay Analysis
+ConOps,Concept of Operations
+COPS,Changeover Point(s)
+CORA, Conflict Resolution Advisory
+COTS,Commercial Of-The-Shelf
+CPA,Closest Point of Approach
+CPDLC,Controller Pilot Data Link Communication
+CRC,Control and Reporting Centre
+CREDOS,Crosswind Reduced Separations for Departure Operations
 CTA,Controlled Area
 CTA,Controlled Time of Arrival
 CTOT,Calculated Take-Off Time
 CTR,Control Zone or Controlled Traffic Region
+CVFR,Controlled Visual Flight Rule (flight)
+CVSM,Conventional Vertical Separation Minimum
+CW,Continous Wave
+CW,Cold Weather
+CWS,Collision Warning System
+CWP,Controller Working Position
 DAS,DFS Aviation Services (DFS subcompany for services outside Germany)
 DCIA,Dependent Converging Instrument Approach
 DFS,Deutsche Flugsicherung (ATC in Germany)
@@ -194,6 +251,8 @@ MATS,Malta Air Traffic Services
 MEA,Minimum En-route Altitude
 METAR,Meteorological Aerodrome Report
 MSL,Median Sea Level
+MSTA,Minimum Safe Turning Altitude
+MTOW,Maximum Take-Off Weight
 OCTA,Outside Control Areas
 OFZ,Obstacle Free Zone
 OJT,On the Job Training
@@ -207,60 +266,187 @@ PtF,Permit to Fly
 QFE,the altimeter setting that will cause the altimeter to read the height above a specific aerodrome or ground level, and therefore read zero on landing
 QNE,pressure altitude at the landing runway threshold
 QNH,atmospheric pressure adjusted to mean sea level
+RADAR,Radio Detection And Ranging
+RADNET,Radar Network
+RAIM,Receiver Autonomous Integrity Monitoring (GPS)
 RAT,Reliability Acceptance Test (see also FAT and SAT)
+RAM,Radar Absorbent Material
+RAP,Recognised Air Picture
+RASP,Recognised Air and Surveillance Picture
+RB,Relative Bearing
+RBI,Relative Bearing Indicator
 RBAF,Royal Belgium Armed Forces
 RCAF,Royal Canadian Air Force
+RCC,Rescue Co-ordination Centre
+RCL,Runway Centre Line Lighting
+RCS,Radar Cross Section
 RET,Rapid Exit Taxiways
+RF,Radio Frequency
 RFFS,Rescue and Fire Fighting Services
+RIMCAS,Runway Incursion Monitoring and Conflict Alert System
 RJAF,Royal Jordanian Air Force
+RJC,Reject
 RPI,Runway Point of Intercept
 RPM,Rotations per Minute
+RMI,Radio Magnetic Indicator
+RNAV,Area Navigation
+RNP,Required Navigation Performance
+ROC,Rate Of Climb
+ROC,Required Obstacle Clearance
+RPM,Revolutions Per Minute
+RPS,Radar Position Symbol
+RTCA,Radio Technical Commission for Aeronautics
 RVR,Runway Visual Range
+RVSM,Reduced Vertical Separation Minimum
+RWR,Radar Warning Receiver
 RWY,Runway
+SADL,Situational Awareness Data Link
+SAR,Search and Rescue
+SAR,Synthetic Aperture Radar
+SARPS,Standards and Recommended Practices (ICAO)
 SAT,Site Acceptance Test (see also FAT and RAT)
 SATCO,Senior Air Traffic Control Officer
+SATCOM,Satellite Communication
+SATNAV,Satellite Navigation
+SATSE,State Air Traffic Services Enterprise
+SDD,Situation Data Display
+SELCAL,Selective Calling System
+SES,Single European Sky
+SESAME,Single European Sky ATM Master Plan
+SFL,Sequencing Flashing Light
 SFO,Simulated Flameout Operation
+SI,Selective Interrogation
+SIAP,Standard Instrument Approach Procedure
 SID,Standard Instrument Departure
-SKYGUIDE,ATC Swiss
+SIF,Selective Identification Friend or Foe
+SIGMET,Significant Meteorological (Information) Report
+SILs,Sector Inbound Lists
+SIM,Simulator
+SKYGUIDE,Swiss Air Traffic Control
+SLB,Side lobe Blanking
+SLC,Side lobe Cancellation
 SLOC,Slovenia Control
+SM,Statute Mile
 SOW,Statement of Work
+SRC,Safety Regulation Commission (EUROCONTROL)
+SRU,Safety Regulation Unit (EUROCONTROL)
 SSR,Secondary Surveillance Radar
-STARS,Standard Arrival Routes
+STAR,Standard Arrival Route or Standard Terminal Arrival Route
+STARS,Standard Terminal Automation Replacement System
+STB,Stop Bar
+STCA,Short Term Conflict Alert
+STD,Synthetic Training Device
+STDMA,Self-organising Time Division Multiple Access (known as VHF digital link - Mode 4)
+STNA,Service Technique de la Navigation Aerienne
 STOL,Short Take Off and Landing
+STRATFOR,Eurocontrol Statistics and Forecasts Service
+SUA,Special Use Airspace
+SV,Supervisor
+SVFR,Special Visual Flight Rules
 SWT,Switch
+SYSCO,System Coordination – Data Exchange and Coordination
 TA,Terminal Airspace
-TAF,Terminal Aerodrome Forecast
+TAA,Terminal Arrival Area
+TAAM,Total Airspace and Airport Modeller
+TACAN,Tactical Air Navigation (System)
+TACS,Theater Air Control System
+TACTICOS,Tactical Information and Command System
+TAF,Terminal Aerodrome/Area Forecast
+TAIS,Tactical Airspace Integration System (US Army)
+TAIS,Tactical Air Intelligence System
+TAP,Target Acquisition Protocol
+TARMAC,Taxi and Ramp Management and Control
 TAS,Terminal Airspace System
 TAS,True Airspeed
-TCAS,Traffic Collision Avoidance System
+TAWS,Terrain Awareness and Warning System
+TCAS,Traffic alert and Collision Avoidance System
 TCDS,Type Certificate Data Sheet
+TCH,Threshold Crossing Height
 TCL,Taxi Center Lights
+TDW,Tower Display Workstation
+TDZ,Runway Touchdown Zone Lighting
+TDZE,Touch Down Zone Elevation
+TERPS,US Standard for Terminal Instrument Procedures
 TFDM,Terminal Flight Data Management
+TFDPS,Tower Flight Data Processing System
+TFM,Traffic Flow Management
+TFR,Temporary Flight Restriction
+TH,True Heading
+TID,Touch Input Device
+TIGPRO,TOWSIM Image Generator Protocol
+TIS,Traffic Information System
+TM,Traffic Management
 TMA,Terminal Control Area
+TOC,Top Of Climb
+TOD,Top Of Descent
+TOR,Terms Of Reference
+TOR,Tornado aircraft
+TOWSIM,Tower Simulator
+TRACON,Terminal Radar Approach Control
+TSO,Technical Standard Order
 TSTC,Texas State Technical College
-TWR,Control Tower,
+TT,True Track
+TVOR,Terminal VOR
+TWEB,Transcribed Weather Broadcast (USA for ATIS)
+TWR,Control Tower
+TWY,Taxiway
+TXC,Taxiway Centreline Lights
+TXE,Taxiway Edge Lights
 UAA,University of Alaska Anchorage
-UKCAA,Civil Aviation Authority (UK)
+UAC,Upper Area Control Centre
+UAT,Universal Access Transceiver
+UAV,Unmanned Aerial Vehicle
+UDF,Ultra High Frequency Direction Finding
+UEI,"Units, Equipment, Installations"
+UHF,Ultra High Frequency
+UIR,Upper Flight Information Region
+UKCAA,United Kingdom Civil Aviation Authority
 UMASS,University of Massachusetts
+URET,User Request Evaluation Tool
 USAF,US Air Force
 UTA,Upper Traffic Area
 V1,Decision speed, the speed beyond which takeoff should no longer be aborted
 V2,Takeoff speed. The speed at which the aircraft may safely be climbed with one engine inoperative
+VAR,Variation
 VASI,Visual Approach Slope Indicator
 VASIS,Visual Approach Slope Indicator System 
+VCS,Voice Communication System
+VCCS,Voice Communication Control System
+VDF,Very High Frequency Direction Finding
+VDGS,Visual Database Generation System
+VDL-4,VHF digital link Mode 4 (see also STDMA)
+VDU,Visual Display Unit
+VFOW,Vertical Field of View
 VFR,Visual Flight Rules
 VHF,Very High Frequency
+VLF,Very Low Frequency
 VMC,Visual Meteorological Conditions
 VMO,maximum operation speed is the air speed than should never be exceeded deliberately in normal operation, whatever the flight situation isVOR,VHF Omni-directional Range
+VOLMET,Meteorological Information for Aircraft in Flight
+VOR,VHF Omni-directional Radio Range
+VORTAC,VOR -TACAN combination
 VREF,1.3 times the stalling speed of the aircraft in the stated landing configuration and at the prevailing aircraft weight
-VRR,Voice Recognition & Response
-VS,Stall speed, defined as the minimum steady flight speed at which the airplane is controllable
+VRR,Voice Recognition and Response
+VRS,Voice Recognition System
+VS,"Stall speed, defined as the minimum steady flight speed at which the airplane is controllable"
+VSBY,Visibility
 VSP,Vertical Speed
-VSTOL,vertical short take-off and landing
+VSTOL,Vertical Short Take-Off and Landing
 VTC,Visual Terminal Chart
-VTOL,vertical take-off and landing
-VTOSL,vertical take-off and short landing
+VTC,Virtual Training Centre
+VTOL,Vertical Take-Off and Landing
+VTOSL,Vertical Take-Off and Short Landing
 VTS,Vehicle Tracking System
+WA,Wind Angle
+WAAS,Wide Area Augmentation System
+WAM,Wide Area Multilateration
+WBS,Work Break-down Structure
+WCA,Wind Correction Angle
 WDI,Wind Direction Indicator
+WGS,World Geodetic System
+WIAS,Wetter Informations- und Anzeigesystem (German)
+WP,Waypoint
+WS,Work Station
 WTC,Wake Turbulence Category
+WTWS,Wake Turbulence Warning System
 WX,Weather

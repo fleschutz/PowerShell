@@ -114,9 +114,9 @@ gd,Gudermannian function.
 GF,Galois field.
 GF,generating function.
 GL,general linear group.
-G.M.,geometric mean.
+GM,geometric mean.
 glb,greatest lower bound. (Also written as inf.)
-G.P.,geometric progression.
+GP,geometric progression.
 grad,gradient of a function.
 hacover,hacoversine function. (Also written as hacovers, hcv.)
 hacovercos,hacovercosine function. (Also written as hcc.)
@@ -182,6 +182,7 @@ ord,ordinal number of a well-ordered set.[4]
 pdf,probability density function.
 pf,proof.
 PGL,projective general linear group.
+PI,the constant 3.14159265359
 Pin,pin group.
 pmf,probability mass function.
 Pn,previous number.
@@ -237,6 +238,7 @@ swish,swish function, an activation function in data analysis.
 Sym,symmetric group (Sym(n) is also written as Sn) or symmetric algebra.
 tan,tangent function. (Also written as tgn, tg.)
 tanh,hyperbolic tangent function.
+TAU,the constant 6.283185307179586476925286766559
 TFAE,the following are equivalent.
 tg,tangent function. (Also written as tan, tgn.)
 tgn,tangent function. (Also written as tan, tg.)

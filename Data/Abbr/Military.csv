@@ -94,7 +94,6 @@ ATR,Anti-Tank Rifle
 AUW,All-Up Weight
 AVL,Anti-Vehicle Land Mine
 AVLB,Armored Vehicle-Launched Bridge
-AWACS,Airborne WArning and Control System
 B,Bomber designation (as in B-52 Stratofortress)
 BAG,Budget Activity Group
 BAH,Basic Allowance for Housing
@@ -504,10 +503,8 @@ MSP,Maritime Security Program
 MSR,Main Supply Route
 MSRRA,Military Spouse Residency Relief Act
 MTF,Medical Treatment Facility
-MTOW,Maximum Take-Off Weight
 MWR,Morale, Welfare & Recreation
 MyCAA,Military Spouse Career Advancement Accounts
-NAF,Nonappropriated Funds
 NAF,Nonappropriated Funds
 NAI,Named Area of Interest
 NAS,Naval Air Station
@@ -527,6 +524,7 @@ NEX,Navy Exchange
 NEXCOM,Navy Exchange Command
 NEXMART,Navy Exchange Market
 NFA,No-Fire Area
+NFL,No-Fire Line
 NFLS,Naval Forward Logistic Site
 NGFS,Naval Gunfire Support
 NGO,Nongovernmental Organization

@@ -46,7 +46,7 @@ AS,Ammonium Sulfate
 As,Arsenic
 ASA,AcetylSalicylic Acid
 ASP,ASParate
-AT NO,Atomic Number
+ATNO,Atomic Number
 AT,Adenine and Thymine
 AT,Alkaline Transition
 At,Astatine
@@ -84,12 +84,12 @@ BOD,Biological Organic Deposit
 BOV,Blow Off Valve
 BP,Benzoyl Peroxide
 BP,Boiling Point
-BPDE,Benzo[A]Pyrene-Diol-Epoxide BPE,Boiling Point Elevation
+BPDE,"Benzo[A]Pyrene-Diol-Epoxide BPE,Boiling Point Elevation"
 BPO,Benzoyl PerOxide
 Br,Bromine
 BTA,BuTylated hydroxyAnisole
 BTEX,Benzene, Toluene, Ethylbenzene, and Xylene
-BTTN,1,2,4-ButaneTriol TriNitrate
+BTTN,"1,2,4-ButaneTriol TriNitrate"
 BTX,Benzene, Toluene, Xylene
 BWR,Boiling Water Reactor
 Bz,Benzoyl functional group
@@ -232,7 +232,7 @@ ECD,Electron Capture Detector
 ECH,Enoyl-CoA Hydratase
 EDI,Electrical De-Ionization
 EDP,Ethylene Diamine Pyrocatehol
-EDT,1,2-Ethane DiThiol
+EDT,"1,2-Ethane DiThiol"
 EDTA,Ethylene-Diamine-Tetra-Acetic acid
 EE,Ether Extract
 EEC,Equilibrium Equivalent Concentration
@@ -556,7 +556,8 @@ Lu,Lutetium
 LUMO,Lowest Unoccupied Molecular Orbital
 LV,Low Volatility
 LVS,Large Volume Sampler
-Lw,Lawrencium (Changed to Lr) LWC,Light Water Content
+Lw,Lawrencium (Changed to Lr)
+LWC,Light Water Content
 LWG,Liquid Water in Grams
 M,concentration (Molarity)
 m,mass
@@ -1037,7 +1038,7 @@ TAS,Total Alkali versus Silica
 TAS,Total Analysis System
 TAT,TriAcetone TriPeroxide
 Tb,Terbium
-TBA,2,4,6-TriBromoAnisole
+TBA,"2,4,6-TriBromoAnisole"
 TBA,TertButylArsine
 TBC,4-TertButylCatechol
 TBHQ,TertButylHydroQuinone
@@ -1054,7 +1055,7 @@ TCA,TriChloroAcetic Acid
 TCE,TriChloroEthane
 TCF,ThiolCarbon Fiber
 TCM,TetraChloromethane
-TCP,1,2,3-TriChloropropane
+TCP,"1,2,3-TriChloropropane"
 TCP,Thermal Conversion Process
 TCP,Tocopherol
 TCP,TriCalcium Phosphate
@@ -1062,7 +1063,7 @@ TCP,TriChloroPhenol
 TCS,Toxic Chemical System
 TCT,ToCoTrienol
 TCV,Temperature Control Valve
-TCVF -Two Chamber Vacuum Furnace
+TCVF,Two Chamber Vacuum Furnace
 TD,Temperature Displacement
 TD,Thermal Deposition
 TDA,Thermal Dilatometric Analysis
@@ -1156,7 +1157,7 @@ UUO,UnUnOctium (Element 118)
 UUP,UnUnPentium (Element 115)
 UUQ,UnUnQuadium (Element 114)
 UUS,UnUnSeptium (Element 117)
-UUU,UnUnUnium (Element 111, now Rg)
+UUU,"UnUnUnium (Element 111, now Rg)"
 UV,UltraViolet
 UV-A,UltravViolet band A
 UV-B,UltraViolet band B
