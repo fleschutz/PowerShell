@@ -1,6 +1,6 @@
 ## open-fire-place.ps1 - Opens a fire place website
 
-This script launches the Web browser with a fire place website.
+This PowerShell script launches the Web browser with a fire place website.
 
 ## Parameters
 ```powershell
@@ -18,7 +18,7 @@ PS> ./open-fire-place
 ```
 
 ## Notes
-Author: Markus Fleschutz · License: CC0
+Author: Markus Fleschutz / License: CC0
 
 ## Related Links
 https://github.com/fleschutz/PowerShell

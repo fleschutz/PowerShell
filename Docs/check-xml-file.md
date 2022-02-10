@@ -1,6 +1,6 @@
 ## check-xml-file.ps1 - Checks the given XML file for validity
 
-This script checks the given XML file for validity.
+This PowerShell script checks the given XML file for validity.
 
 ## Parameters
 ```powershell
@@ -28,7 +28,7 @@ PS> ./check-xml-file myfile.xml
 ```
 
 ## Notes
-Author: Markus Fleschutz · License: CC0
+Author: Markus Fleschutz / License: CC0
 
 ## Related Links
 https://github.com/fleschutz/PowerShell

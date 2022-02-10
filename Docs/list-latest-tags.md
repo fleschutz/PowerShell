@@ -1,6 +1,6 @@
 ## list-latest-tags.ps1 - Lists the latests tags in all Git repositories in a folder
 
-This script lists the latest tags in all Git repositories in the specified folder.
+This PowerShell script lists the latest tags in all Git repositories in the specified folder.
 
 ## Parameters
 ```powershell
@@ -27,7 +27,7 @@ PS> ./list-latest-tags C:\MyRepos
 ```
 
 ## Notes
-Author: Markus Fleschutz · License: CC0
+Author: Markus Fleschutz / License: CC0
 
 ## Related Links
 https://github.com/fleschutz/PowerShell

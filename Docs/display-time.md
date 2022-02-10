@@ -1,6 +1,6 @@
 ## display-time.ps1 - Displays the current time
 
-Displays the current time (for 10 seconds by default)
+This PowerShell script displays the current time (for 10 seconds by default)
 
 ## Parameters
 ```powershell
@@ -27,7 +27,7 @@ PS> ./display-time
 ```
 
 ## Notes
-Author: Markus Fleschutz · License: CC0
+Author: Markus Fleschutz / License: CC0
 
 ## Related Links
 https://github.com/fleschutz/PowerShell

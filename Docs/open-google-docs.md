@@ -1,6 +1,6 @@
 ## open-google-docs.ps1 - Opens Google Docs
 
-This script launches the Web browser with the Google Docs website.
+This PowerShell script launches the Web browser with the Google Docs website.
 
 ## Parameters
 ```powershell
@@ -18,7 +18,7 @@ PS> ./open-google-docs
 ```
 
 ## Notes
-Author: Markus Fleschutz · License: CC0
+Author: Markus Fleschutz / License: CC0
 
 ## Related Links
 https://github.com/fleschutz/PowerShell

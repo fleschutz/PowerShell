@@ -1,6 +1,6 @@
 ## play-bee-sound.ps1 - Plays a bee sound
 
-This script plays a bee sound.
+This PowerShell script plays a bee sound.
 
 ## Parameters
 ```powershell
@@ -14,11 +14,12 @@ play-bee-sound.ps1 [<CommonParameters>]
 ## Example
 ```powershell
 PS> ./play-bee-sound
+(listen and enjoy)
 
 ```
 
 ## Notes
-Author: Markus Fleschutz · License: CC0
+Author: Markus Fleschutz / License: CC0
 
 ## Related Links
 https://github.com/fleschutz/PowerShell

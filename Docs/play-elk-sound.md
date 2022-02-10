@@ -1,6 +1,6 @@
 ## play-elk-sound.ps1 - Plays an elk sound
 
-This script plays an elk sound.
+This PowerShell script plays an elk sound.
 
 ## Parameters
 ```powershell
@@ -14,11 +14,12 @@ play-elk-sound.ps1 [<CommonParameters>]
 ## Example
 ```powershell
 PS> ./play-elk-sound
+(listen and enjoy)
 
 ```
 
 ## Notes
-Author: Markus Fleschutz · License: CC0
+Author: Markus Fleschutz / License: CC0
 
 ## Related Links
 https://github.com/fleschutz/PowerShell

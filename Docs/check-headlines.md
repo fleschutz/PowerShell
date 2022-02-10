@@ -31,12 +31,12 @@ check-headlines.ps1 [[-RSS_URL] <String>] [[-MaxCount] <Int32>] [<CommonParamete
 
 ## Example
 ```powershell
-PS> ./list-news
+PS> ./check-headlines
 
 ```
 
 ## Notes
-Author: Markus Fleschutz · License: CC0
+Author: Markus Fleschutz / License: CC0
 
 ## Related Links
 https://github.com/fleschutz/PowerShell

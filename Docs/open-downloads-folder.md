@@ -1,6 +1,6 @@
 ## open-downloads-folder.ps1 - Opens the user's downloads folder
 
-This script launches the File Explorer showing the user's downloads folder.
+This PowerShell script launches the File Explorer showing the user's downloads folder.
 
 ## Parameters
 ```powershell
@@ -18,7 +18,7 @@ PS> ./open-downloads-folder
 ```
 
 ## Notes
-Author: Markus Fleschutz · License: CC0
+Author: Markus Fleschutz / License: CC0
 
 ## Related Links
 https://github.com/fleschutz/PowerShell

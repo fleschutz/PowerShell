@@ -1,6 +1,6 @@
 ## write-braille.ps1 - Writes text in Braille
 
-This script writes text in Braille.
+This PowerShell script writes text in Braille.
 
 ## Parameters
 ```powershell
@@ -27,7 +27,7 @@ PS> ./write-braille "Hello World"
 ```
 
 ## Notes
-Author: Markus Fleschutz · License: CC0
+Author: Markus Fleschutz / License: CC0
 
 ## Related Links
 https://github.com/fleschutz/PowerShell

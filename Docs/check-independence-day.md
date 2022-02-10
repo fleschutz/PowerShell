@@ -1,6 +1,6 @@
 ## check-independence-day.ps1 - Checks the time until Independence Day
 
-This script checks the time until Indepence Day and replies by text-to-speech (TTS).
+This PowerShell script checks the time until Indepence Day and replies by text-to-speech (TTS).
 
 ## Parameters
 ```powershell
@@ -18,7 +18,7 @@ PS> ./check-independence-day
 ```
 
 ## Notes
-Author: Markus Fleschutz · License: CC0
+Author: Markus Fleschutz / License: CC0
 
 ## Related Links
 https://github.com/fleschutz/PowerShell

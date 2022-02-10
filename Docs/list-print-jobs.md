@@ -1,6 +1,6 @@
 ## list-print-jobs.ps1 - Lists all jobs of all printers
 
-This script lists all print jobs of all printer devices.
+This PowerShell script lists all print jobs of all printer devices.
 
 ## Parameters
 ```powershell
@@ -18,7 +18,7 @@ PS> ./list-print-jobs
 ```
 
 ## Notes
-Author: Markus Fleschutz · License: CC0
+Author: Markus Fleschutz / License: CC0
 
 ## Related Links
 https://github.com/fleschutz/PowerShell

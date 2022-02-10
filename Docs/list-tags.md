@@ -1,6 +1,6 @@
 ## list-tags.ps1 - Lists all tags in a Git repository
 
-This script lists all tags in the given Git repository.
+This PowerShell script lists all tags in the given Git repository.
 
 ## Parameters
 ```powershell
@@ -43,7 +43,7 @@ v0.2            Fix typo
 ```
 
 ## Notes
-Author: Markus Fleschutz · License: CC0
+Author: Markus Fleschutz / License: CC0
 
 ## Related Links
 https://github.com/fleschutz/PowerShell

@@ -1,6 +1,6 @@
 ## open-desktop-folder.ps1 - Opens the desktop folder
 
-This script launches the File Explorer with the user's desktop folder.
+This PowerShell script launches the File Explorer with the user's desktop folder.
 
 ## Parameters
 ```powershell
@@ -18,7 +18,7 @@ PS> ./open-desktop-folder
 ```
 
 ## Notes
-Author: Markus Fleschutz · License: CC0
+Author: Markus Fleschutz / License: CC0
 
 ## Related Links
 https://github.com/fleschutz/PowerShell

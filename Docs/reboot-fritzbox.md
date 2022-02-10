@@ -1,6 +1,6 @@
 ## reboot-fritzbox.ps1 - Reboots the FRITZ!Box device
 
-This script reboots the FRITZ!Box device
+This PowerShell script reboots the FRITZ!Box device
 
 ## Parameters
 ```powershell
@@ -36,7 +36,7 @@ PS> ./reboot-fritzbox
 ```
 
 ## Notes
-Author: Markus Fleschutz · License: CC0
+Author: Markus Fleschutz / License: CC0
 
 ## Related Links
 https://github.com/fleschutz/PowerShell

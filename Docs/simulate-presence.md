@@ -1,6 +1,6 @@
 ## simulate-presence.ps1 - Simulates the human presence against burglars
 
-This script simulates the human presence against burglars.
+This PowerShell script simulates the human presence against burglars.
 
 ## Parameters
 ```powershell
@@ -27,7 +27,7 @@ PS> ./simulate-presence 192.168.100.100
 ```
 
 ## Notes
-Author: Markus Fleschutz · License: CC0
+Author: Markus Fleschutz / License: CC0
 
 ## Related Links
 https://github.com/fleschutz/PowerShell

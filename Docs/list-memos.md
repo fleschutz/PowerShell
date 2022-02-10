@@ -1,6 +1,6 @@
 ## list-memos.ps1 - Lists all memos in $HOME/Memos.csv
 
-This script lists all memo entries in Memos.csv in the home folder.
+This PowerShell script lists all memo entries in Memos.csv in the home folder.
 
 ## Parameters
 ```powershell
@@ -18,7 +18,7 @@ PS> ./list-memos
 ```
 
 ## Notes
-Author: Markus Fleschutz · License: CC0
+Author: Markus Fleschutz / License: CC0
 
 ## Related Links
 https://github.com/fleschutz/PowerShell

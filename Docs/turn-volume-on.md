@@ -1,6 +1,6 @@
 ## turn-volume-on.ps1 - Turns the volume on
 
-This script unmutes the audio output.
+This PowerShell script unmutes the audio output.
 
 ## Parameters
 ```powershell
@@ -13,12 +13,12 @@ turn-volume-on.ps1 [<CommonParameters>]
 
 ## Example
 ```powershell
-PS> .\turn-volume-on.ps1
+PS> .\turn-volume-on
 
 ```
 
 ## Notes
-Author: Markus Fleschutz · License: CC0
+Author: Markus Fleschutz / License: CC0
 
 ## Related Links
 https://github.com/fleschutz/PowerShell

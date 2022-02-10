@@ -1,6 +1,6 @@
 ## build-repo.ps1 - Builds a Git repository
 
-This scripts supports building with cmake, configure, autogen, Imakefile and Makefile.
+This PowerShell script supports building with cmake, configure, autogen, Imakefile and Makefile.
 
 ## Parameters
 ```powershell
@@ -27,7 +27,7 @@ PS> ./build-repo C:\MyRepo
 ```
 
 ## Notes
-Author: Markus Fleschutz · License: CC0
+Author: Markus Fleschutz / License: CC0
 
 ## Related Links
 https://github.com/fleschutz/PowerShell

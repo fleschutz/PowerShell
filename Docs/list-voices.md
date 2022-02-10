@@ -1,6 +1,6 @@
 ## list-voices.ps1 - Lists the installed text-to-speech voices
 
-This script lists the installed text-to-speech (TTS) voices.
+This PowerShell script lists the installed text-to-speech (TTS) voices.
 
 ## Parameters
 ```powershell
@@ -25,7 +25,7 @@ Microsoft Zira Desktop  en-US   Female Adult
 ```
 
 ## Notes
-Author: Markus Fleschutz · License: CC0
+Author: Markus Fleschutz / License: CC0
 
 ## Related Links
 https://github.com/fleschutz/PowerShell

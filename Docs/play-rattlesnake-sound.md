@@ -1,6 +1,6 @@
 ## play-rattlesnake-sound.ps1 - Plays a rattlesnake sound
 
-This script plays a rattlesnake sound.
+This PowerShell script plays a rattlesnake sound.
 
 ## Parameters
 ```powershell
@@ -14,11 +14,12 @@ play-rattlesnake-sound.ps1 [<CommonParameters>]
 ## Example
 ```powershell
 PS> ./play-rattlesnake-sound
+(listen and enjoy)
 
 ```
 
 ## Notes
-Author: Markus Fleschutz · License: CC0
+Author: Markus Fleschutz / License: CC0
 
 ## Related Links
 https://github.com/fleschutz/PowerShell

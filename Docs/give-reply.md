@@ -1,6 +1,6 @@
 ## give-reply.ps1 - Gives a reply
 
-This script gives a reply in English on the console and by text-to-speech (TTS).
+This PowerShell script gives a reply in English on the console and by text-to-speech (TTS).
 
 ## Parameters
 ```powershell
@@ -27,7 +27,7 @@ PS> ./give-reply "Hello World"
 ```
 
 ## Notes
-Author: Markus Fleschutz · License: CC0
+Author: Markus Fleschutz / License: CC0
 
 ## Related Links
 https://github.com/fleschutz/PowerShell

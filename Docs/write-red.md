@@ -1,6 +1,6 @@
 ## write-red.ps1 - Writes text in a red foreground color
 
-This script writes text in a red foreground color.
+This PowerShell script writes text in a red foreground color.
 
 ## Parameters
 ```powershell
@@ -27,7 +27,7 @@ PS> ./write-red "Hello World"
 ```
 
 ## Notes
-Author: Markus Fleschutz · License: CC0
+Author: Markus Fleschutz / License: CC0
 
 ## Related Links
 https://github.com/fleschutz/PowerShell

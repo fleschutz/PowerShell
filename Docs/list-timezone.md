@@ -1,6 +1,6 @@
 ## list-timezone.ps1 - Lists the details of the current time zone
 
-This script lists the details of the current time zone.
+This PowerShell script lists the details of the current time zone.
 
 ## Parameters
 ```powershell
@@ -27,7 +27,7 @@ SupportsDaylightSavingTime : True
 ```
 
 ## Notes
-Author: Markus Fleschutz · License: CC0
+Author: Markus Fleschutz / License: CC0
 
 ## Related Links
 https://github.com/fleschutz/PowerShell

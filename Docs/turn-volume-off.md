@@ -1,6 +1,6 @@
 ## turn-volume-off.ps1 - Turns the volume off
 
-This script mutes the default audio device immediately.
+This PowerShell script mutes the default audio device immediately.
 
 ## Parameters
 ```powershell
@@ -18,7 +18,7 @@ PS> ./turn-volume-off
 ```
 
 ## Notes
-Author: Markus Fleschutz · License: CC0
+Author: Markus Fleschutz / License: CC0
 
 ## Related Links
 https://github.com/fleschutz/PowerShell

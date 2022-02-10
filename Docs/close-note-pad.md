@@ -1,6 +1,6 @@
 ## close-note-pad.ps1 - Closes the Notepad app
 
-This script closes the Notepad application gracefully.
+This PowerShell script closes the Notepad application gracefully.
 
 ## Parameters
 ```powershell
@@ -18,7 +18,7 @@ PS> ./close-note-pad
 ```
 
 ## Notes
-Author: Markus Fleschutz · License: CC0
+Author: Markus Fleschutz / License: CC0
 
 ## Related Links
 https://github.com/fleschutz/PowerShell

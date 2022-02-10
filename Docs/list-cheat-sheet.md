@@ -1,6 +1,6 @@
 ## list-cheat-sheet.ps1 - Lists the PowerShell cheat sheet
 
-This script lists the PowerShell cheat sheet.
+This PowerShell script lists the PowerShell cheat sheet.
 
 ## Parameters
 ```powershell
@@ -18,7 +18,7 @@ PS> ./list-cheat-sheet
 ```
 
 ## Notes
-Author: Markus Fleschutz · License: CC0
+Author: Markus Fleschutz / License: CC0
 
 ## Related Links
 https://github.com/fleschutz/PowerShell

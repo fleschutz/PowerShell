@@ -1,6 +1,6 @@
 ## speak-text.ps1 - Speaks text by the default text-to-speech voice
 
-This script speaks the given text by the default text-to-speech (TTS) voice.
+This PowerShell script speaks the given text by the default text-to-speech (TTS) voice.
 
 ## Parameters
 ```powershell
@@ -27,7 +27,7 @@ PS> ./speak-text "Hello World"
 ```
 
 ## Notes
-Author: Markus Fleschutz · License: CC0
+Author: Markus Fleschutz / License: CC0
 
 ## Related Links
 https://github.com/fleschutz/PowerShell

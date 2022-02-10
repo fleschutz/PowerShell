@@ -1,6 +1,6 @@
 ## locate-city.ps1 - Prints the geographic location of a city
 
-This script prints the geographic location of the given city.
+This PowerShell script prints the geographic location of the given city.
 
 ## Parameters
 ```powershell
@@ -27,7 +27,7 @@ PS> ./locate-city Paris
 ```
 
 ## Notes
-Author: Markus Fleschutz · License: CC0
+Author: Markus Fleschutz / License: CC0
 
 ## Related Links
 https://github.com/fleschutz/PowerShell

@@ -1,6 +1,6 @@
-## fetch-repo.ps1 - Fetches updates for a local Git repository (including submodules)
+## fetch-repo.ps1 - Fetches updates for a Git repository
 
-This script fetches updates for a local Git repository (including submodules).
+This PowerShell script fetches updates for a local Git repository (including submodules).
 
 ## Parameters
 ```powershell
@@ -29,7 +29,7 @@ PS> ./fetch-repo
 ```
 
 ## Notes
-Author: Markus Fleschutz · License: CC0
+Author: Markus Fleschutz / License: CC0
 
 ## Related Links
 https://github.com/fleschutz/PowerShell

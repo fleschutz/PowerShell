@@ -1,6 +1,6 @@
 ## cd-home.ps1 - Sets the working directory to the user's home directory
 
-This script changes the working directory to the user's home directory.
+This PowerShell script changes the working directory to the user's home directory.
 
 ## Parameters
 ```powershell
@@ -19,7 +19,7 @@ PS> ./cd-home
 ```
 
 ## Notes
-Author: Markus Fleschutz · License: CC0
+Author: Markus Fleschutz / License: CC0
 
 ## Related Links
 https://github.com/fleschutz/PowerShell

@@ -1,6 +1,6 @@
 ## install-wsl.ps1 - Installs Windows Subsystem for Linux (needs admin rights)
 
-This script installs Windows Subsystem for Linux. It needs admin rights.
+This PowerShell script installs Windows Subsystem for Linux. It needs admin rights.
 
 ## Parameters
 ```powershell
@@ -18,7 +18,7 @@ PS> ./install-wsl
 ```
 
 ## Notes
-Author: Markus Fleschutz · License: CC0
+Author: Markus Fleschutz / License: CC0
 
 ## Related Links
 https://github.com/fleschutz/PowerShell

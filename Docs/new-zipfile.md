@@ -1,6 +1,6 @@
 ## new-zipfile.ps1 - Creates a new .ZIP file from a folder (including subfolders)
 
-This script creates a new .ZIP file from a folder (including subfolders).
+This PowerShell script creates a new .ZIP file from a folder (including subfolders).
 
 ## Parameters
 ```powershell
@@ -27,7 +27,7 @@ PS> ./new-zipfile C:\Windows
 ```
 
 ## Notes
-Author: Markus Fleschutz · License: CC0
+Author: Markus Fleschutz / License: CC0
 
 ## Related Links
 https://github.com/fleschutz/PowerShell

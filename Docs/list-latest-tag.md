@@ -1,6 +1,6 @@
 ## list-latest-tag.ps1 - Lists the latest tag on the current branch in a Git repository
 
-This script lists the latest tag on the current branch in a Git repository.
+This PowerShell script lists the latest tag on the current branch in a Git repository.
 
 ## Parameters
 ```powershell
@@ -27,7 +27,7 @@ PS> ./list-latest-tag C:\MyRepo
 ```
 
 ## Notes
-Author: Markus Fleschutz · License: CC0
+Author: Markus Fleschutz / License: CC0
 
 ## Related Links
 https://github.com/fleschutz/PowerShell

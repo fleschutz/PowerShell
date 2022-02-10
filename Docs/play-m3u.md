@@ -1,6 +1,6 @@
 ## play-m3u.ps1 - Plays a playlist (.M3U format)
 
-This script plays the given playlist (in .M3U file format)
+This PowerShell script plays the given playlist (in .M3U file format)
 
 ## Parameters
 ```powershell
@@ -23,11 +23,12 @@ play-m3u.ps1 [[-filename] <String>] [<CommonParameters>]
 ## Example
 ```powershell
 PS> ./play-m3u C:\MyPlaylist.m3u
+(listen and enjoy)
 
 ```
 
 ## Notes
-Author: Markus Fleschutz · License: CC0
+Author: Markus Fleschutz / License: CC0
 
 ## Related Links
 https://github.com/fleschutz/PowerShell

@@ -1,6 +1,6 @@
 ## list-city-weather.ps1 - Lists current weather of cities world-wide
 
-This script lists the current weather of cities world-wide (west to east).
+This PowerShell script lists the current weather of cities world-wide (west to east).
 
 ## Parameters
 ```powershell
@@ -18,7 +18,7 @@ PS> ./list-city-weather
 ```
 
 ## Notes
-Author: Markus Fleschutz · License: CC0
+Author: Markus Fleschutz / License: CC0
 
 ## Related Links
 https://github.com/fleschutz/PowerShell

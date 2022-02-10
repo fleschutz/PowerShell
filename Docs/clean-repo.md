@@ -1,6 +1,6 @@
 ## clean-repo.ps1 - Cleans a Git repository from untracked files (including submodules)
 
-This script cleans a Git repository from untracked files (including submodules).
+This PowerShell script cleans a Git repository from untracked files (including submodules).
 
 ## Parameters
 ```powershell
@@ -29,7 +29,7 @@ PS> ./clean-repo C:\MyRepo
 ```
 
 ## Notes
-Author: Markus Fleschutz · License: CC0
+Author: Markus Fleschutz / License: CC0
 
 ## Related Links
 https://github.com/fleschutz/PowerShell

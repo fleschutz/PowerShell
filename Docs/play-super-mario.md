@@ -1,6 +1,6 @@
 ## play-super-mario.ps1 - Plays the Super Mario intro
 
-This script plays the Super Mario intro.
+This PowerShell script plays the Super Mario intro.
 
 ## Parameters
 ```powershell
@@ -14,11 +14,12 @@ play-super-mario.ps1 [<CommonParameters>]
 ## Example
 ```powershell
 PS> ./play-super-mario
+(listen and enjoy)
 
 ```
 
 ## Notes
-Author: Markus Fleschutz · License: CC0
+Author: Markus Fleschutz / License: CC0
 
 ## Related Links
 https://github.com/fleschutz/PowerShell

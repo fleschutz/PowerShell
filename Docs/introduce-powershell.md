@@ -1,6 +1,6 @@
 ## introduce-powershell.ps1 - Introduces PowerShell to new users
 
-This script introduces PowerShell to new users.
+This PowerShell script introduces PowerShell to new users.
 
 ## Parameters
 ```powershell
@@ -18,7 +18,7 @@ PS> ./introduce-powershell
 ```
 
 ## Notes
-Author: Markus Fleschutz · License: CC0
+Author: Markus Fleschutz / License: CC0
 
 ## Related Links
 https://github.com/fleschutz/PowerShell

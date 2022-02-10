@@ -1,6 +1,6 @@
 ## remove-empty-dirs.ps1 - Removes all empty subfolders within a directory tree
 
-This script removes all empty subfolders within a directory tree.
+This PowerShell script removes all empty subfolders within a directory tree.
 
 ## Parameters
 ```powershell
@@ -27,7 +27,7 @@ PS> ./remove-empty-dirs C:\Temp
 ```
 
 ## Notes
-Author: Markus Fleschutz · License: CC0
+Author: Markus Fleschutz / License: CC0
 
 ## Related Links
 https://github.com/fleschutz/PowerShell

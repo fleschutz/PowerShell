@@ -1,6 +1,6 @@
 ## open-google-calendar.ps1 - Opens Google Calendar
 
-This script launches the Web browser with the Google Calendar website.
+This PowerShell script launches the Web browser with the Google Calendar website.
 
 ## Parameters
 ```powershell
@@ -18,7 +18,7 @@ PS> ./open-google-calendar
 ```
 
 ## Notes
-Author: Markus Fleschutz · License: CC0
+Author: Markus Fleschutz / License: CC0
 
 ## Related Links
 https://github.com/fleschutz/PowerShell

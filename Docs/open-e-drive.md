@@ -1,6 +1,6 @@
 ## open-e-drive.ps1 - Opens the E: drive folder
 
-This script launches the File Explorer with the E: drive folder.
+This PowerShell script launches the File Explorer with the E: drive folder.
 
 ## Parameters
 ```powershell
@@ -18,7 +18,7 @@ PS> ./open-e-drive
 ```
 
 ## Notes
-Author: Markus Fleschutz · License: CC0
+Author: Markus Fleschutz / License: CC0
 
 ## Related Links
 https://github.com/fleschutz/PowerShell

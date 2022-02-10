@@ -1,6 +1,6 @@
 ## reboot.ps1 - Reboots the local computer (needs admin rights)
 
-This script reboots the local computer (needs admin rights).
+This PowerShell script reboots the local computer (needs admin rights).
 
 ## Parameters
 ```powershell
@@ -18,7 +18,7 @@ PS> ./reboot
 ```
 
 ## Notes
-Author: Markus Fleschutz · License: CC0
+Author: Markus Fleschutz / License: CC0
 
 ## Related Links
 https://github.com/fleschutz/PowerShell

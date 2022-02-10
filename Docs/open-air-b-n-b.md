@@ -1,6 +1,6 @@
 ## open-air-b-n-b.ps1 - Opens the AirBNB website
 
-This script launches the Web browser with the AirBNB website.
+This PowerShell script launches the Web browser with the AirBNB website.
 
 ## Parameters
 ```powershell
@@ -18,7 +18,7 @@ PS> ./open-air-b-n-b
 ```
 
 ## Notes
-Author: Markus Fleschutz · License: CC0
+Author: Markus Fleschutz / License: CC0
 
 ## Related Links
 https://github.com/fleschutz/PowerShell

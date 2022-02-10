@@ -1,6 +1,6 @@
 ## play-cat-sound.ps1 - Plays a cat sound
 
-This script plays a cat sound.
+This PowerShell script plays a cat sound.
 
 ## Parameters
 ```powershell
@@ -18,7 +18,7 @@ PS> ./play-cat-sound
 ```
 
 ## Notes
-Author: Markus Fleschutz · License: CC0
+Author: Markus Fleschutz / License: CC0
 
 ## Related Links
 https://github.com/fleschutz/PowerShell

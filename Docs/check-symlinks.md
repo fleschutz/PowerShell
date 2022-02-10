@@ -1,6 +1,6 @@
-## check-symlinks.ps1 - Checks every symlink in a folder (including subfolders)
+## check-symlinks.ps1 - Checks every symlink in a folder
 
-This script checks every symlink in a folder (including subfolders).
+This PowerShell script checks every symlink in a folder (including subfolders).
 Returns the number of broken symlinks as exit value.
 
 ## Parameters
@@ -29,7 +29,7 @@ PS> ./check-symlinks .
 ```
 
 ## Notes
-Author: Markus Fleschutz · License: CC0
+Author: Markus Fleschutz / License: CC0
 
 ## Related Links
 https://github.com/fleschutz/PowerShell

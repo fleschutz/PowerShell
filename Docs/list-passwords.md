@@ -1,6 +1,6 @@
 ## list-passwords.ps1 - Lists random passwords
 
-This script lists random passwords.
+This PowerShell script lists random passwords.
 
 ## Parameters
 ```powershell
@@ -45,7 +45,7 @@ PS> ./list-passwords
 ```
 
 ## Notes
-Author: Markus Fleschutz · License: CC0
+Author: Markus Fleschutz / License: CC0
 
 ## Related Links
 https://github.com/fleschutz/PowerShell

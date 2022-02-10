@@ -1,6 +1,6 @@
 ## speak-epub.ps1 - Speaks the content of the given Epub file by text-to-speech (TTS).
 
-This script speaks the content of the given Epub file by text-to-speech (TTS).
+This PowerShell script speaks the content of the given Epub file by text-to-speech (TTS).
 
 ## Parameters
 ```powershell
@@ -27,7 +27,7 @@ PS> ./speak-epub C:\MyBook.epub
 ```
 
 ## Notes
-Author: Markus Fleschutz · License: CC0
+Author: Markus Fleschutz / License: CC0
 
 ## Related Links
 https://github.com/fleschutz/PowerShell

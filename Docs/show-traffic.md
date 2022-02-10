@@ -1,6 +1,6 @@
 ## show-traffic.ps1 - Shows the current traffic
 
-This script launches the Web browser with MSN showing the current traffic.
+This PowerShell script launches the Web browser with MSN showing the current traffic.
 
 ## Parameters
 ```powershell
@@ -18,7 +18,7 @@ PS> ./show-traffic
 ```
 
 ## Notes
-Author: Markus Fleschutz · License: CC0
+Author: Markus Fleschutz / License: CC0
 
 ## Related Links
 https://github.com/fleschutz/PowerShell

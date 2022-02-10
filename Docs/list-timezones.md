@@ -1,6 +1,6 @@
 ## list-timezones.ps1 - Lists all available time zones
 
-This script lists all available time zones.
+This PowerShell script lists all available time zones.
 
 ## Parameters
 ```powershell
@@ -27,7 +27,7 @@ Alaskan Standard Time           (UTC-09:00) Alaska                     True
 ```
 
 ## Notes
-Author: Markus Fleschutz · License: CC0
+Author: Markus Fleschutz / License: CC0
 
 ## Related Links
 https://github.com/fleschutz/PowerShell

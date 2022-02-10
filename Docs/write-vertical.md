@@ -1,6 +1,6 @@
 ## write-vertical.ps1 - Writes text in vertical direction
 
-This script writes text in vertical direction.
+This PowerShell script writes text in vertical direction.
 
 ## Parameters
 ```powershell
@@ -27,7 +27,7 @@ PS> ./write-vertical "Hello World"
 ```
 
 ## Notes
-Author: Markus Fleschutz · License: CC0
+Author: Markus Fleschutz / License: CC0
 
 ## Related Links
 https://github.com/fleschutz/PowerShell

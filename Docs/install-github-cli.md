@@ -1,6 +1,6 @@
 ## install-github-cli.ps1 - Installs GitHub CLI
 
-This script installs GitHub command-line interface (CLI).
+This PowerShell script installs GitHub command-line interface (CLI).
 
 ## Parameters
 ```powershell
@@ -18,7 +18,7 @@ PS> ./install-github-cli
 ```
 
 ## Notes
-Author: Markus Fleschutz · License: CC0
+Author: Markus Fleschutz / License: CC0
 
 ## Related Links
 https://github.com/fleschutz/PowerShell

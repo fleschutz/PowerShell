@@ -1,6 +1,6 @@
 ## translate-file.ps1 - Translates a text file into another language
 
-This script translates a text file into another language.
+This PowerShell script translates a text file into another language.
 
 ## Parameters
 ```powershell
@@ -45,7 +45,7 @@ PS> ./translate-file C:\Memo.txt en de
 ```
 
 ## Notes
-Author: Markus Fleschutz · License: CC0
+Author: Markus Fleschutz / License: CC0
 
 ## Related Links
 https://github.com/fleschutz/PowerShell

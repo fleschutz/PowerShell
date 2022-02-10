@@ -1,6 +1,6 @@
 ## play-wolf-sound.ps1 - Plays a wolf sound
 
-This script plays a wolf sound.
+This PowerShell script plays a wolf sound.
 
 ## Parameters
 ```powershell
@@ -14,11 +14,12 @@ play-wolf-sound.ps1 [<CommonParameters>]
 ## Example
 ```powershell
 PS> ./play-wolf-sound
+(listen and enjoy)
 
 ```
 
 ## Notes
-Author: Markus Fleschutz · License: CC0
+Author: Markus Fleschutz / License: CC0
 
 ## Related Links
 https://github.com/fleschutz/PowerShell

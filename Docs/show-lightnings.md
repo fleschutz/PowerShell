@@ -1,6 +1,6 @@
 ## show-lightnings.ps1 - Shows Lightnings in OpenStreetMap
 
-This script launches the Web browser and shows Lightnings in OpenStreetMap.
+This PowerShell script launches the Web browser and shows lightnings in OpenStreetMap.
 
 ## Parameters
 ```powershell
@@ -18,7 +18,7 @@ PS> ./show-lightnings
 ```
 
 ## Notes
-Author: Markus Fleschutz · License: CC0
+Author: Markus Fleschutz / License: CC0
 
 ## Related Links
 https://github.com/fleschutz/PowerShell

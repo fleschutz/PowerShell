@@ -1,6 +1,6 @@
 ## play-mission-impossible.ps1 - Plays the Mission Impossible theme
 
-This script plays the Mission Impossible theme.
+This PowerShell script plays the Mission Impossible theme.
 
 ## Parameters
 ```powershell
@@ -14,11 +14,12 @@ play-mission-impossible.ps1 [<CommonParameters>]
 ## Example
 ```powershell
 PS> ./play-mission-impossible
+(listen and enjoy)
 
 ```
 
 ## Notes
-Author: Markus Fleschutz · License: CC0
+Author: Markus Fleschutz / License: CC0
 
 ## Related Links
 https://github.com/fleschutz/PowerShell

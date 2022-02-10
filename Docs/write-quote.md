@@ -1,6 +1,6 @@
 ## write-quote.ps1 - Writes a random quote to the console
 
-This script writes a random quote to the console.
+This PowerShell script writes a random quote to the console.
 
 ## Parameters
 ```powershell
@@ -18,7 +18,7 @@ PS> ./write-quote
 ```
 
 ## Notes
-Author: Markus Fleschutz · License: CC0
+Author: Markus Fleschutz / License: CC0
 
 ## Related Links
 https://github.com/fleschutz/PowerShell

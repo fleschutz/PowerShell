@@ -1,6 +1,6 @@
 ## close-serenade.ps1 - Closes the Serenade.ai application
 
-This script closes the Serenade.ai application gracefully.
+This PowerShell script closes the Serenade.ai application gracefully.
 
 ## Parameters
 ```powershell
@@ -18,7 +18,7 @@ PS> ./close-serenade
 ```
 
 ## Notes
-Author: Markus Fleschutz · License: CC0
+Author: Markus Fleschutz / License: CC0
 
 ## Related Links
 https://github.com/fleschutz/PowerShell

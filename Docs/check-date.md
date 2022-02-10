@@ -1,6 +1,6 @@
 ## check-date.ps1 - Determines the current date
 
-This script determines and speaks the current date by text-to-speech (TTS).
+This PowerShell script determines and speaks the current date by text-to-speech (TTS).
 
 ## Parameters
 ```powershell
@@ -19,7 +19,7 @@ PS> ./check-date
 ```
 
 ## Notes
-Author: Markus Fleschutz · License: CC0
+Author: Markus Fleschutz / License: CC0
 
 ## Related Links
 https://github.com/fleschutz/PowerShell

@@ -1,6 +1,6 @@
 ## close-calculator.ps1 - Closes the calculator application
 
-This script closes the calculator application gracefully.
+This PowerShell script closes the calculator application gracefully.
 
 ## Parameters
 ```powershell
@@ -18,7 +18,7 @@ PS> ./close-calculator
 ```
 
 ## Notes
-Author: Markus Fleschutz · License: CC0
+Author: Markus Fleschutz / License: CC0
 
 ## Related Links
 https://github.com/fleschutz/PowerShell

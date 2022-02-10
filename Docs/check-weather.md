@@ -1,6 +1,6 @@
 ## check-weather.ps1 - Checks the weather
 
-Checks the current weather report.
+This PowerShell script checks the current weather report.
 
 ## Parameters
 ```powershell
@@ -27,7 +27,7 @@ PS> ./check-weather
 ```
 
 ## Notes
-Author: Markus Fleschutz · License: CC0
+Author: Markus Fleschutz / License: CC0
 
 ## Related Links
 https://github.com/fleschutz/PowerShell

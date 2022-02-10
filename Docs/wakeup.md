@@ -1,6 +1,6 @@
 ## wakeup.ps1 - Sends a magic packet to a computer to wake him up
 
-Sends a magic UDP packet twice to a computer to wake him up (requires Wake-On-LAN).
+This PowerShell script sends a magic UDP packet twice to a computer to wake him up (requires Wake-On-LAN).
 
 ## Parameters
 ```powershell
@@ -46,7 +46,7 @@ PS> ./wakeup 11:22:33:44:55:66 192.168.100.100
 ```
 
 ## Notes
-Author: Markus Fleschutz · License: CC0
+Author: Markus Fleschutz / License: CC0
 
 ## Related Links
 https://github.com/fleschutz/PowerShell

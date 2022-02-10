@@ -1,6 +1,6 @@
 ## remind-me.ps1 - Creates a scheduled task that will display a popup message
 
-This script creates a scheduled task that will display a popup message.
+This PowerShell script creates a scheduled task that will display a popup message.
 
 ## Parameters
 ```powershell
@@ -40,7 +40,7 @@ TaskPath                                       TaskName                         
 ```
 
 ## Notes
-Author: Markus Fleschutz · License: CC0
+Author: Markus Fleschutz / License: CC0
 
 ## Related Links
 https://github.com/fleschutz/PowerShell

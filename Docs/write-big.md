@@ -1,6 +1,6 @@
 ## write-big.ps1 - Writes text in big letters
 
-This script writes the given text in big letters.
+This PowerShell script writes the given text in big letters.
 
 ## Parameters
 ```powershell
@@ -27,7 +27,7 @@ PS> ./write-big "Hello World"
 ```
 
 ## Notes
-Author: Markus Fleschutz · License: CC0
+Author: Markus Fleschutz / License: CC0
 
 ## Related Links
 https://github.com/fleschutz/PowerShell

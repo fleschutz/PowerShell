@@ -1,6 +1,6 @@
 ## list-news.ps1 - Lists the latest news
 
-This script lists the latest RSS feed news.
+This PowerShell script lists the latest RSS feed news.
 
 ## Parameters
 ```powershell
@@ -36,7 +36,7 @@ PS> ./list-news
 ```
 
 ## Notes
-Author: Markus Fleschutz · License: CC0
+Author: Markus Fleschutz / License: CC0
 
 ## Related Links
 https://github.com/fleschutz/PowerShell

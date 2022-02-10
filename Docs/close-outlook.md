@@ -1,6 +1,6 @@
 ## close-outlook.ps1 - Closes the Microsoft Outlook app
 
-This script closes the Microsoft Outlook email application gracefully.
+This PowerShell script closes the Microsoft Outlook email application gracefully.
 
 ## Parameters
 ```powershell
@@ -18,7 +18,7 @@ PS> ./close-outlook
 ```
 
 ## Notes
-Author: Markus Fleschutz · License: CC0
+Author: Markus Fleschutz / License: CC0
 
 ## Related Links
 https://github.com/fleschutz/PowerShell

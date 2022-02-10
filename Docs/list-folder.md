@@ -1,6 +1,6 @@
 ## list-folder.ps1 - Lists the folder content
 
-This script lists the directory content formatted in columns.
+This PowerShell script lists the directory content formatted in columns.
 
 ## Parameters
 ```powershell
@@ -27,7 +27,7 @@ PS> ./list-folder C:\
 ```
 
 ## Notes
-Author: Markus Fleschutz · License: CC0
+Author: Markus Fleschutz / License: CC0
 
 ## Related Links
 https://github.com/fleschutz/PowerShell

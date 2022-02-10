@@ -1,6 +1,6 @@
 ## list-pins.ps1 - Lists random PIN's
 
-This script lists random PIN's.
+This PowerShell script lists random PIN's.
 
 ## Parameters
 ```powershell
@@ -45,7 +45,7 @@ PS> ./list-pins
 ```
 
 ## Notes
-Author: Markus Fleschutz · License: CC0
+Author: Markus Fleschutz / License: CC0
 
 ## Related Links
 https://github.com/fleschutz/PowerShell

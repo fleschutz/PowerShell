@@ -1,6 +1,6 @@
 ## write-marquee.ps1 - Writes text as marquee
 
-This script writes text as marquee.
+This PowerShell script writes text as marquee.
 
 ## Parameters
 ```powershell
@@ -36,7 +36,7 @@ PS> ./write-marquee "Hello World"
 ```
 
 ## Notes
-Author: Markus Fleschutz · License: CC0
+Author: Markus Fleschutz / License: CC0
 
 ## Related Links
 https://github.com/fleschutz/PowerShell

@@ -1,6 +1,6 @@
 ## convert-mysql2csv.ps1 - Convert a MySQL database table to a .CSV file
 
-This script converts a MySQL database table to a .CSV file.
+This PowerShell script converts a MySQL database table to a .CSV file.
 
 ## Parameters
 ```powershell
@@ -63,7 +63,7 @@ PS> ./convert-mysql2csv
 ```
 
 ## Notes
-Author: Markus Fleschutz · License: CC0
+Author: Markus Fleschutz / License: CC0
 
 ## Related Links
 https://github.com/fleschutz/PowerShell

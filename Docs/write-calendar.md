@@ -1,6 +1,6 @@
-## write-calendar.ps1 - Writes out calendar elements, either a single month or an entire year
+## write-calendar.ps1 - Writes out a calendar
 
-write-calendar.ps1 [<Month>] [<Year>]
+Writes out calendar elements, either a single month or an entire year.
 
 ## Parameters
 ```powershell
@@ -58,7 +58,7 @@ Outputs the calendar for July of this year.
 ```
 
 ## Notes
-Author: Markus Fleschutz · License: CC0
+Author: Markus Fleschutz / License: CC0
 
 ## Related Links
 https://github.com/fleschutz/PowerShell

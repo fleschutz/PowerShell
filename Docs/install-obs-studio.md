@@ -1,6 +1,6 @@
 ## install-obs-studio.ps1 - Installs OBS Studio (needs admin rights)
 
-This script installs OBS Studio (admin rights are needed).
+This PowerShell script installs OBS Studio (admin rights are needed).
 
 ## Parameters
 ```powershell
@@ -18,7 +18,7 @@ PS> ./install-obs-studio
 ```
 
 ## Notes
-Author: Markus Fleschutz · License: CC0
+Author: Markus Fleschutz / License: CC0
 
 ## Related Links
 https://github.com/fleschutz/PowerShell

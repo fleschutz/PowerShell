@@ -1,7 +1,7 @@
 ## smart-data2csv.ps1 - Converts the S.M.A.R.T. JSON files in a folder to a CSV table for analysis
 
-Converts the S.M.A.R.T. JSON files in the current/given directory to a CSV table for analysis
-       (use query-smart-data.ps1 to generate those JSON files).
+This PowerShell script converts the S.M.A.R.T. JSON files in the current/given directory
+to a CSV table for analysis (use query-smart-data.ps1 to generate those JSON files).
 
 ## Parameters
 ```powershell
@@ -28,7 +28,7 @@ PS> ./smart-data2csv
 ```
 
 ## Notes
-Author: Markus Fleschutz · License: CC0
+Author: Markus Fleschutz / License: CC0
 
 ## Related Links
 https://github.com/fleschutz/PowerShell

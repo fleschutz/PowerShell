@@ -1,6 +1,6 @@
-## switch-shelly1.ps1 - Switches a Shelly1 device in the local network
+## switch-shelly1.ps1 - Switches a Shelly1 device
 
-This script switches a Shelly1 device in the local network.
+This PowerShell script switches a Shelly1 device in the local network.
 
 ## Parameters
 ```powershell
@@ -45,7 +45,7 @@ PS> ./switch-shelly1 192.168.100.100 toggle 10
 ```
 
 ## Notes
-Author: Markus Fleschutz · License: CC0
+Author: Markus Fleschutz / License: CC0
 
 ## Related Links
 https://github.com/fleschutz/PowerShell

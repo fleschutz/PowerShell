@@ -1,6 +1,6 @@
 ## tell-quote.ps1 - Tells a quote by text-to-speech
 
-This script selects a random quote in Data/quotes.csv and speaks it by text-to-speech (TTS).
+This PowerShell script selects a random quote in Data/quotes.csv and speaks it by text-to-speech (TTS).
 
 ## Parameters
 ```powershell
@@ -18,7 +18,7 @@ PS> ./tell-quote
 ```
 
 ## Notes
-Author: Markus Fleschutz · License: CC0
+Author: Markus Fleschutz / License: CC0
 
 ## Related Links
 https://github.com/fleschutz/PowerShell

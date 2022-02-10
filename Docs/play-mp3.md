@@ -1,6 +1,6 @@
 ## play-mp3.ps1 - Plays a MP3 sound file
 
-This script plays a sound file in .MP3 file format.
+This PowerShell script plays a sound file in .MP3 file format.
 
 ## Parameters
 ```powershell
@@ -23,11 +23,12 @@ play-mp3.ps1 [[-Path] <String>] [<CommonParameters>]
 ## Example
 ```powershell
 PS> ./play-mp3 C:\thunder.mp3
+(listen and enjoy)
 
 ```
 
 ## Notes
-Author: Markus Fleschutz · License: CC0
+Author: Markus Fleschutz / License: CC0
 
 ## Related Links
 https://github.com/fleschutz/PowerShell

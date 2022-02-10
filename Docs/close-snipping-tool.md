@@ -1,6 +1,6 @@
 ## close-snipping-tool.ps1 - Closes the Snipping Tool
 
-This script closes the Snipping Tool application gracefully.
+This PowerShell script closes the Snipping Tool application gracefully.
 
 ## Parameters
 ```powershell
@@ -18,7 +18,7 @@ PS> ./close-snipping-tool
 ```
 
 ## Notes
-Author: Markus Fleschutz · License: CC0
+Author: Markus Fleschutz / License: CC0
 
 ## Related Links
 https://github.com/fleschutz/PowerShell

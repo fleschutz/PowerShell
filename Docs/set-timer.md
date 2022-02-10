@@ -1,6 +1,6 @@
 ## set-timer.ps1 - Sets a timer for a countdown
 
-This script sets a timer for a countdown.
+This PowerShell script sets a timer for a countdown.
 
 ## Parameters
 ```powershell
@@ -27,7 +27,7 @@ PS> ./set-timer 60
 ```
 
 ## Notes
-Author: Markus Fleschutz · License: CC0
+Author: Markus Fleschutz / License: CC0
 
 ## Related Links
 https://github.com/fleschutz/PowerShell

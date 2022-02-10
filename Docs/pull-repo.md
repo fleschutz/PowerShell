@@ -1,4 +1,4 @@
-## pull-repo.ps1 - Pulls updates for a Git repository (including submodules)
+## pull-repo.ps1 - Pulls updates for a Git repository
 
 This script pulls updates for a local Git repository (including submodules).
 
@@ -27,7 +27,7 @@ PS> ./pull-repo C:\MyRepo
 ```
 
 ## Notes
-Author: Markus Fleschutz · License: CC0
+Author: Markus Fleschutz / License: CC0
 
 ## Related Links
 https://github.com/fleschutz/PowerShell

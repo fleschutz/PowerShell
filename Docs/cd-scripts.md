@@ -1,6 +1,6 @@
 ## cd-scripts.ps1 - Sets the working directory to the PowerShell scripts folder
 
-This script changes the working directory to the PowerShell scripts folder.
+This PowerShell script changes the working directory to the PowerShell scripts folder.
 
 ## Parameters
 ```powershell
@@ -19,7 +19,7 @@ PS> ./cd-scripts
 ```
 
 ## Notes
-Author: Markus Fleschutz · License: CC0
+Author: Markus Fleschutz / License: CC0
 
 ## Related Links
 https://github.com/fleschutz/PowerShell

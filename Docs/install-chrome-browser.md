@@ -1,6 +1,6 @@
 ## install-chrome-browser.ps1 - Installs the Chrome browser
 
-This script installs the latest Google Chrome Web browser.
+This PowerShell script installs the latest Google Chrome Web browser.
 
 ## Parameters
 ```powershell
@@ -18,7 +18,7 @@ PS> ./install-chrome-browser
 ```
 
 ## Notes
-Author: Markus Fleschutz · License: CC0
+Author: Markus Fleschutz / License: CC0
 
 ## Related Links
 https://github.com/fleschutz/PowerShell

@@ -1,6 +1,6 @@
 ## check-easter-sunday.ps1 - Checks the time until Easter Sunday
 
-This script checks the time until Easter Sunday and replies by text-to-speech (TTS).
+This PowerShell script checks the time until Easter Sunday and replies by text-to-speech (TTS).
 
 ## Parameters
 ```powershell
@@ -18,7 +18,7 @@ PS> ./check-easter-sunday
 ```
 
 ## Notes
-Author: Markus Fleschutz · License: CC0
+Author: Markus Fleschutz / License: CC0
 
 ## Related Links
 https://github.com/fleschutz/PowerShell

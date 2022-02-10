@@ -1,6 +1,6 @@
 ## weather-report.ps1 - Lists the local weather report
 
-This script lists the local weather report.
+This PowerShell script lists the local weather report.
 
 ## Parameters
 ```powershell
@@ -27,7 +27,7 @@ PS> ./weather-report Paris
 ```
 
 ## Notes
-Author: Markus Fleschutz · License: CC0
+Author: Markus Fleschutz / License: CC0
 
 ## Related Links
 https://github.com/fleschutz/PowerShell

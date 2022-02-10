@@ -1,6 +1,6 @@
 ## list-system-info.ps1 - Lists system information of the local computer
 
-This script lists system information of the local computer.
+This PowerShell script lists system information of the local computer.
 
 ## Parameters
 ```powershell
@@ -18,7 +18,7 @@ PS> ./list-system-info
 ```
 
 ## Notes
-Author: Markus Fleschutz · License: CC0
+Author: Markus Fleschutz / License: CC0
 
 ## Related Links
 https://github.com/fleschutz/PowerShell

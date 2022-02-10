@@ -1,6 +1,6 @@
 ## build-repos.ps1 - Builds all Git repositories in a folder
 
-This script builds all Git repositories in a given folder.
+This PowerShell script builds all Git repositories in a given folder.
 
 ## Parameters
 ```powershell
@@ -27,7 +27,7 @@ PS> ./build-repos C:\MyRepos
 ```
 
 ## Notes
-Author: Markus Fleschutz · License: CC0
+Author: Markus Fleschutz / License: CC0
 
 ## Related Links
 https://github.com/fleschutz/PowerShell

@@ -1,6 +1,6 @@
 ## check-subnet-mask.ps1 - Checks the given subnet mask for validity
 
-This script checks the given subnet mask for validity.
+This PowerShell script checks the given subnet mask for validity.
 
 ## Parameters
 ```powershell
@@ -28,7 +28,7 @@ PS> ./check-subnet-mask 255.255.255.0
 ```
 
 ## Notes
-Author: Markus Fleschutz · License: CC0
+Author: Markus Fleschutz / License: CC0
 
 ## Related Links
 https://github.com/fleschutz/PowerShell

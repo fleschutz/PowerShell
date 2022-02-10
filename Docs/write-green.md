@@ -1,6 +1,6 @@
 ## write-green.ps1 - Writes text in a green foreground color
 
-This script writes text in a green foreground color.
+This PowerShell script writes text in a green foreground color.
 
 ## Parameters
 ```powershell
@@ -27,7 +27,7 @@ PS> ./write-green "Hello World"
 ```
 
 ## Notes
-Author: Markus Fleschutz · License: CC0
+Author: Markus Fleschutz / License: CC0
 
 ## Related Links
 https://github.com/fleschutz/PowerShell

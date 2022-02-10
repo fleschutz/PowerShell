@@ -1,6 +1,6 @@
-## check-drives.ps1 - Checks all drives for free space left (20 GB by default)
+## check-drives.ps1 - Checks all drives for free space left
 
-This script checks all drives for free space left (20 GB by default).
+This PowerShell script checks all drives for free space left (20 GB by default).
 
 ## Parameters
 ```powershell
@@ -28,7 +28,7 @@ PS> ./check-drives
 ```
 
 ## Notes
-Author: Markus Fleschutz · License: CC0
+Author: Markus Fleschutz / License: CC0
 
 ## Related Links
 https://github.com/fleschutz/PowerShell

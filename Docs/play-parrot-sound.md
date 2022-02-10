@@ -1,6 +1,6 @@
 ## play-parrot-sound.ps1 - Plays a parrot sound
 
-This script plays a parrot sound.
+This PowerShell script plays a parrot sound.
 
 ## Parameters
 ```powershell
@@ -14,11 +14,12 @@ play-parrot-sound.ps1 [<CommonParameters>]
 ## Example
 ```powershell
 PS> ./play-parrot-sound
+(listen and enjoy)
 
 ```
 
 ## Notes
-Author: Markus Fleschutz · License: CC0
+Author: Markus Fleschutz / License: CC0
 
 ## Related Links
 https://github.com/fleschutz/PowerShell

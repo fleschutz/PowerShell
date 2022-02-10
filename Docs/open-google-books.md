@@ -1,6 +1,6 @@
 ## open-google-books.ps1 - Opens Google Books
 
-This script launches the Web browser with the Google Books website.
+This PowerShell script launches the Web browser with the Google Books website.
 
 ## Parameters
 ```powershell
@@ -18,7 +18,7 @@ PS> ./open-google-books
 ```
 
 ## Notes
-Author: Markus Fleschutz · License: CC0
+Author: Markus Fleschutz / License: CC0
 
 ## Related Links
 https://github.com/fleschutz/PowerShell

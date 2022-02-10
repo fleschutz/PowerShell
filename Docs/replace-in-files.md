@@ -1,6 +1,6 @@
 ## replace-in-files.ps1 - Search and replace a pattern in the given files by the replacement
 
-This script searches and replaces a pattern in the given files by the replacement.
+This PowerShell script searches and replaces a pattern in the given files by the replacement.
 
 ## Parameters
 ```powershell
@@ -45,7 +45,7 @@ PS> ./replace-in-files NSA "No Such Agency" C:\Temp\*.txt
 ```
 
 ## Notes
-Author: Markus Fleschutz · License: CC0
+Author: Markus Fleschutz / License: CC0
 
 ## Related Links
 https://github.com/fleschutz/PowerShell

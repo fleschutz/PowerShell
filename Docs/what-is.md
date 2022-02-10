@@ -1,6 +1,6 @@
 ## what-is.ps1 - Prints a description of an abbreviation
 
-This script prints a description of the given abbreviation.
+This PowerShell script prints a description of the given abbreviation.
 
 ## Parameters
 ```powershell
@@ -27,7 +27,7 @@ PS> ./what-is IAS
 ```
 
 ## Notes
-Author: Markus Fleschutz · License: CC0
+Author: Markus Fleschutz / License: CC0
 
 ## Related Links
 https://github.com/fleschutz/PowerShell

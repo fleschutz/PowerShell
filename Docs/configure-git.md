@@ -1,6 +1,6 @@
 ## configure-git.ps1 - Configures the user settings for Git
 
-This script configures the user settings for Git.
+This PowerShell script configures the user settings for Git.
 
 ## Parameters
 ```powershell
@@ -45,7 +45,7 @@ PS> ./configure-git
 ```
 
 ## Notes
-Author: Markus Fleschutz · License: CC0
+Author: Markus Fleschutz / License: CC0
 
 ## Related Links
 https://github.com/fleschutz/PowerShell

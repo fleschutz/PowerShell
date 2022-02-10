@@ -1,6 +1,6 @@
 ## new-email.ps1 - Opens the default email client to write a new email
 
-This script opens the default email client to write a new email.
+This PowerShell script opens the default email client to write a new email.
 
 ## Parameters
 ```powershell
@@ -27,7 +27,7 @@ PS> ./new-email
 ```
 
 ## Notes
-Author: Markus Fleschutz · License: CC0
+Author: Markus Fleschutz / License: CC0
 
 ## Related Links
 https://github.com/fleschutz/PowerShell

@@ -1,6 +1,6 @@
 ## play-donkey-sound.ps1 - Plays a donkey sound
 
-This script plays a donkey sound.
+This PowerShell script plays a donkey sound.
 
 ## Parameters
 ```powershell
@@ -18,7 +18,7 @@ PS> ./play-donkey-sound
 ```
 
 ## Notes
-Author: Markus Fleschutz · License: CC0
+Author: Markus Fleschutz / License: CC0
 
 ## Related Links
 https://github.com/fleschutz/PowerShell

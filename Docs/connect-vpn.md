@@ -1,6 +1,6 @@
 ## connect-vpn.ps1 - Connects to the VPN
 
-This script tries to connect to the VPN.
+This PowerShell script tries to connect to the VPN.
 
 ## Parameters
 ```powershell
@@ -18,7 +18,7 @@ PS> ./connect-vpn
 ```
 
 ## Notes
-Author: Markus Fleschutz · License: CC0
+Author: Markus Fleschutz / License: CC0
 
 ## Related Links
 https://github.com/fleschutz/PowerShell

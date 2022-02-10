@@ -1,6 +1,6 @@
 ## check-iss-position.ps1 - Checks the ISS position
 
-This script queries the position of the International Space Station (ISS) and replies by text-to-speech (TTS).
+This PowerShell script queries the position of the International Space Station (ISS) and replies by text-to-speech (TTS).
 
 ## Parameters
 ```powershell
@@ -18,7 +18,7 @@ PS> ./check-iss-position
 ```
 
 ## Notes
-Author: Markus Fleschutz · License: CC0
+Author: Markus Fleschutz / License: CC0
 
 ## Related Links
 https://github.com/fleschutz/PowerShell

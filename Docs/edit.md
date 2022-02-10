@@ -1,6 +1,6 @@
 ## edit.ps1 - Opens an editor to edit a file
 
-Opens a  text editor to edit the given file.
+This PowerShell script opens a text editor to edit the given file.
 
 ## Parameters
 ```powershell
@@ -27,7 +27,7 @@ PS> ./edit C:\MyFile.txt
 ```
 
 ## Notes
-Author: Markus Fleschutz · License: CC0
+Author: Markus Fleschutz / License: CC0
 
 ## Related Links
 https://github.com/fleschutz/PowerShell

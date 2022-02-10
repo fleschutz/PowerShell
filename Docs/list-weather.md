@@ -1,6 +1,6 @@
 ## list-weather.ps1 - Lists the hourly weather report
 
-This script lists the hourly weather report.
+This PowerShell script lists the hourly weather report.
 
 ## Parameters
 ```powershell
@@ -27,7 +27,7 @@ PS> ./list-weather
 ```
 
 ## Notes
-Author: Markus Fleschutz · License: CC0
+Author: Markus Fleschutz / License: CC0
 
 ## Related Links
 https://github.com/fleschutz/PowerShell

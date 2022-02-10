@@ -1,6 +1,6 @@
 ## export-to-manuals.ps1 - Exports all scripts as manuals
 
-This script exports the comment based help of all PowerShell scripts as manuals.
+This PowerShell script exports the comment based help of all PowerShell scripts as manuals.
 
 ## Parameters
 ```powershell
@@ -36,7 +36,7 @@ Found 264 scripts, exporting them to /home/markus/PowerShell/Docs...
 ```
 
 ## Notes
-Author: Markus Fleschutz · License: CC0
+Author: Markus Fleschutz / License: CC0
 
 ## Related Links
 https://github.com/fleschutz/PowerShell

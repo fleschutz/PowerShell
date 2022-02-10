@@ -1,6 +1,6 @@
 ## play-jingle-bells.ps1 - Plays Jingle Bells
 
-This script plays Jingle Bells.
+This PowerShell script plays the Jingle Bells song.
 
 ## Parameters
 ```powershell
@@ -14,11 +14,12 @@ play-jingle-bells.ps1 [<CommonParameters>]
 ## Example
 ```powershell
 PS> ./play-jingle-bells
+(listen and enjoy)
 
 ```
 
 ## Notes
-Author: Markus Fleschutz · License: CC0
+Author: Markus Fleschutz / License: CC0
 
 ## Related Links
 https://github.com/fleschutz/PowerShell

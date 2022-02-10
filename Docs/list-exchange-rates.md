@@ -1,6 +1,6 @@
 ## list-exchange-rates.ps1 - Lists the exchange rates for a currency
 
-Lists the current exchange rates for the given currency (USD per default).
+This PowerShell script lists the current exchange rates for the given currency (USD per default).
 
 ## Parameters
 ```powershell
@@ -27,7 +27,7 @@ PS> ./list-exchange-rates EUR
 ```
 
 ## Notes
-Author: Markus Fleschutz · License: CC0
+Author: Markus Fleschutz / License: CC0
 
 ## Related Links
 https://github.com/fleschutz/PowerShell

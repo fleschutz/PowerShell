@@ -1,6 +1,6 @@
 ## open-egg-timer.ps1 - Opens an egg timer
 
-This script launches the Web browser with the eggtimer website.
+This PowerShell script launches the Web browser with the eggtimer website.
 
 ## Parameters
 ```powershell
@@ -18,7 +18,7 @@ PS> ./open-egg-timer
 ```
 
 ## Notes
-Author: Markus Fleschutz · License: CC0
+Author: Markus Fleschutz / License: CC0
 
 ## Related Links
 https://github.com/fleschutz/PowerShell

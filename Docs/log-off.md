@@ -1,6 +1,6 @@
 ## log-off.ps1 - Log off the current user
 
-This script logs off the current Windows user.
+This PowerShell script logs off the current Windows user.
 
 ## Parameters
 ```powershell
@@ -18,7 +18,7 @@ PS> ./log-off
 ```
 
 ## Notes
-Author: Markus Fleschutz · License: CC0
+Author: Markus Fleschutz / License: CC0
 
 ## Related Links
 https://github.com/fleschutz/PowerShell

@@ -1,6 +1,6 @@
 ## convert-ps2bat.ps1 - Converts PowerShell scripts to batch files
 
-This script converts one or more PowerShell scripts to .bat batch files.
+This PowerShell script converts one or more PowerShell scripts to .bat batch files.
 
 ## Parameters
 ```powershell
@@ -27,7 +27,7 @@ PS> ./convert-ps2bat *.ps1
 ```
 
 ## Notes
-Author: Markus Fleschutz · License: CC0
+Author: Markus Fleschutz / License: CC0
 
 ## Related Links
 https://github.com/fleschutz/PowerShell

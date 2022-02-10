@@ -1,6 +1,6 @@
 ## list-recycle-bin.ps1 - Lists the content of the recycle bin folder
 
-This script lists the content of the recycle bin folder.
+This PowerShell script lists the content of the recycle bin folder.
 
 ## Parameters
 ```powershell
@@ -18,7 +18,7 @@ PS> ./list-recycle-bin
 ```
 
 ## Notes
-Author: Markus Fleschutz · License: CC0
+Author: Markus Fleschutz / License: CC0
 
 ## Related Links
 https://github.com/fleschutz/PowerShell

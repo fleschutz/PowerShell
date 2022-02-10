@@ -1,6 +1,6 @@
 ## new-script.ps1 - Creates a new PowerShell script file
 
-Creates a new PowerShell script file (by using template file ../Data/template.ps1).
+This PowerShell script creates a new PowerShell script file (by using template file ../Data/template.ps1).
 
 ## Parameters
 ```powershell
@@ -28,7 +28,7 @@ PS> ./new-script myscript.ps1
 ```
 
 ## Notes
-Author: Markus Fleschutz · License: CC0
+Author: Markus Fleschutz / License: CC0
 
 ## Related Links
 https://github.com/fleschutz/PowerShell

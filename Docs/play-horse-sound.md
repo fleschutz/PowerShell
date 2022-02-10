@@ -1,6 +1,6 @@
 ## play-horse-sound.ps1 - Plays a horse sound
 
-This script plays a horse sound.
+This PowerShell script plays a horse sound.
 
 ## Parameters
 ```powershell
@@ -14,11 +14,12 @@ play-horse-sound.ps1 [<CommonParameters>]
 ## Example
 ```powershell
 PS> ./play-horse-sound
+(listen and enjoy)
 
 ```
 
 ## Notes
-Author: Markus Fleschutz · License: CC0
+Author: Markus Fleschutz / License: CC0
 
 ## Related Links
 https://github.com/fleschutz/PowerShell

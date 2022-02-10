@@ -1,6 +1,6 @@
 ## new-shortcut.ps1 - Creates a new shortcut file
 
-This script creates a new shortcut file.
+This PowerShell script creates a new shortcut file.
 
 ## Parameters
 ```powershell
@@ -45,7 +45,7 @@ PS> ./new-shortcut C:\Temp\HDD C:\
 ```
 
 ## Notes
-Author: Markus Fleschutz · License: CC0
+Author: Markus Fleschutz / License: CC0
 
 ## Related Links
 https://github.com/fleschutz/PowerShell

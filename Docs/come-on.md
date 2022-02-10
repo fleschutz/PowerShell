@@ -1,6 +1,6 @@
 ## come-on.ps1 - Replies to "Come on"
 
-This script replies to 'Come on' by text-to-speech (TTS).
+This PowerShell script replies to 'Come on' by text-to-speech (TTS).
 
 ## Parameters
 ```powershell
@@ -18,7 +18,7 @@ PS> ./come-on
 ```
 
 ## Notes
-Author: Markus Fleschutz · License: CC0
+Author: Markus Fleschutz / License: CC0
 
 ## Related Links
 https://github.com/fleschutz/PowerShell

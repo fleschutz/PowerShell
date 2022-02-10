@@ -1,6 +1,6 @@
 ## list-os-updates.ps1 - Lists the latest operating system updates
 
-This script lists the latest operating system update news.
+This PowerShell script lists the latest operating system update news.
 
 ## Parameters
 ```powershell
@@ -36,7 +36,7 @@ PS> ./list-os-updates
 ```
 
 ## Notes
-Author: Markus Fleschutz · License: CC0
+Author: Markus Fleschutz / License: CC0
 
 ## Related Links
 https://github.com/fleschutz/PowerShell

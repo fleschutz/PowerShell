@@ -1,6 +1,6 @@
 ## open-google-play.ps1 - Opens Google Play
 
-This script launches the Web browser with the Google Play website.
+This PowerShell script launches the Web browser with the Google Play website.
 
 ## Parameters
 ```powershell
@@ -18,7 +18,7 @@ PS> ./open-google-play
 ```
 
 ## Notes
-Author: Markus Fleschutz · License: CC0
+Author: Markus Fleschutz / License: CC0
 
 ## Related Links
 https://github.com/fleschutz/PowerShell

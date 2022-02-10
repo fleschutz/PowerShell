@@ -1,6 +1,6 @@
 ## add-firewall-rules.ps1 - Adds firewall rules for executables (needs admin rights)
 
-This script adds firewall rules for the given executable. Administrator rights are required.
+This PowerShell script adds firewall rules for the given executable. Administrator rights are required.
 
 ## Parameters
 ```powershell
@@ -30,7 +30,7 @@ Adding firewall rule for C:\MyApp\bin\app2.exe
 ```
 
 ## Notes
-Author: Markus Fleschutz · License: CC0
+Author: Markus Fleschutz / License: CC0
 
 ## Related Links
 https://github.com/fleschutz/PowerShell

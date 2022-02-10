@@ -1,6 +1,6 @@
 ## check-moon-phase.ps1 - Checks the Moon phase
 
-This script determines the Moon phase and answers by text-to-speech (TTS).
+This PowerShell script determines the Moon phase and answers by text-to-speech (TTS).
 
 ## Parameters
 ```powershell
@@ -18,7 +18,7 @@ PS> ./check-moon-phase
 ```
 
 ## Notes
-Author: Markus Fleschutz · License: CC0
+Author: Markus Fleschutz / License: CC0
 
 ## Related Links
 https://github.com/fleschutz/PowerShell

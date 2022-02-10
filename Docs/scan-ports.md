@@ -1,6 +1,6 @@
 ## scan-ports.ps1 - Scans the network for open/closed ports
 
-This script scans the network for open or closed ports
+This PowerShell script scans the network for open or closed ports.
 
 ## Parameters
 ```powershell
@@ -18,7 +18,7 @@ PS> ./scan-ports
 ```
 
 ## Notes
-Author: Markus Fleschutz · License: CC0
+Author: Markus Fleschutz / License: CC0
 
 ## Related Links
 https://github.com/fleschutz/PowerShell

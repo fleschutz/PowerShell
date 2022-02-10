@@ -1,6 +1,6 @@
 ## weather.ps1 - Lists the current weather forecast
 
-This script lists the current weather forecast.
+This PowerShell script lists the current weather forecast.
 
 ## Parameters
 ```powershell
@@ -27,7 +27,7 @@ PS> ./weather Paris
 ```
 
 ## Notes
-Author: Markus Fleschutz · License: CC0
+Author: Markus Fleschutz / License: CC0
 
 ## Related Links
 https://github.com/fleschutz/PowerShell

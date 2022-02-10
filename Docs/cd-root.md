@@ -1,6 +1,6 @@
-## cd-root.ps1 - Sets the working directory to the root directory (C:\ on Windows)
+## cd-root.ps1 - Sets the working directory to the root directory
 
-This script changes the working directory to the root directory (C:\ on Windows).
+This PowerShell script changes the working directory to the root directory (C:\ on Windows).
 
 ## Parameters
 ```powershell
@@ -19,7 +19,7 @@ PS> ./cd-root
 ```
 
 ## Notes
-Author: Markus Fleschutz · License: CC0
+Author: Markus Fleschutz / License: CC0
 
 ## Related Links
 https://github.com/fleschutz/PowerShell

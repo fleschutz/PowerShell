@@ -1,6 +1,6 @@
 ## locate-zip-code.ps1 - Prints the geo location of a zip-code
 
-This script prints the geographic location of the given zip-code.
+This PowerShell script prints the geographic location of the given zip-code.
 
 ## Parameters
 ```powershell
@@ -36,7 +36,7 @@ PS> ./locate-zip-code
 ```
 
 ## Notes
-Author: Markus Fleschutz · License: CC0
+Author: Markus Fleschutz / License: CC0
 
 ## Related Links
 https://github.com/fleschutz/PowerShell

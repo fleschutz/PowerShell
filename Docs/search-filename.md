@@ -1,6 +1,6 @@
 ## search-filename.ps1 - Lists all files and folder names matching a search pattern
 
-This script serves as a quick Powershell replacement to the search functionality in Windows
+This PowerShell script serves as a quick Powershell replacement to the search functionality in Windows
 After you pass in a root folder and a search term, the script will list all files and folders matching that phrase.
 
 ## Parameters
@@ -37,7 +37,7 @@ PS> ./search-filename
 ```
 
 ## Notes
-Author: Markus Fleschutz · License: CC0
+Author: Markus Fleschutz / License: CC0
 
 ## Related Links
 https://github.com/fleschutz/PowerShell

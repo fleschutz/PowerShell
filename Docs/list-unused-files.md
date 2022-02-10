@@ -1,6 +1,6 @@
-## list-unused-files.ps1 - Lists unused files in a folder (including subfolders)
+## list-unused-files.ps1 - Lists unused files in a directory tree
 
-This script scans and lists files in a folder with last access time older than number of days.
+This PowerShell script scans and lists files in a folder with last access time older than number of days.
 
 ## Parameters
 ```powershell
@@ -36,7 +36,7 @@ PS> ./list-unused-files C:\ 100
 ```
 
 ## Notes
-Author: Markus Fleschutz · License: CC0
+Author: Markus Fleschutz / License: CC0
 
 ## Related Links
 https://github.com/fleschutz/PowerShell

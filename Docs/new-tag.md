@@ -1,6 +1,6 @@
 ## new-tag.ps1 - Creates a new tag in a Git repository
 
-This script creates a new tag in a Git repository.
+This PowerShell script creates a new tag in a Git repository.
 
 ## Parameters
 ```powershell
@@ -36,7 +36,7 @@ PS> ./create-tag v1.7
 ```
 
 ## Notes
-Author: Markus Fleschutz · License: CC0
+Author: Markus Fleschutz / License: CC0
 
 ## Related Links
 https://github.com/fleschutz/PowerShell

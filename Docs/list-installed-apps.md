@@ -1,6 +1,6 @@
 ## list-installed-apps.ps1 - Lists the installed apps
 
-This script lists the installed apps (from Windows Store or snaps).
+This PowerShell script lists the installed apps (from Windows Store or snaps).
 
 ## Parameters
 ```powershell
@@ -18,7 +18,7 @@ PS> ./list-installed-apps
 ```
 
 ## Notes
-Author: Markus Fleschutz · License: CC0
+Author: Markus Fleschutz / License: CC0
 
 ## Related Links
 https://github.com/fleschutz/PowerShell

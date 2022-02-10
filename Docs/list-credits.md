@@ -1,6 +1,6 @@
 ## list-credits.ps1 - Shows the credits for the PowerShell Scripts
 
-This script shows the credits for the PowerShell Scripts.
+This PowerShell script shows the credits for the PowerShell Scripts.
 
 ## Parameters
 ```powershell
@@ -18,7 +18,7 @@ PS> ./list-credits
 ```
 
 ## Notes
-Author: Markus Fleschutz · License: CC0
+Author: Markus Fleschutz / License: CC0
 
 ## Related Links
 https://github.com/fleschutz/PowerShell

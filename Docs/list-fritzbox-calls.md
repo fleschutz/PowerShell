@@ -1,6 +1,6 @@
 ## list-fritzbox-calls.ps1 - Lists the phone calls of the FRITZ!Box device
 
-This script lists the phone calls of the FRITZ!Box device.
+This PowerShell script lists the phone calls of the FRITZ!Box device.
 
 ## Parameters
 ```powershell
@@ -36,7 +36,7 @@ PS> ./list-fritzbox-calls
 ```
 
 ## Notes
-Author: Markus Fleschutz · License: CC0
+Author: Markus Fleschutz / License: CC0
 
 ## Related Links
 https://github.com/fleschutz/PowerShell

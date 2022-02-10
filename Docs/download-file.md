@@ -1,6 +1,6 @@
 ## download-file.ps1 - Downloads a file from an URL
 
-This script downloads a file from the given URL
+This PowerShell script downloads a file from the given URL
 
 ## Parameters
 ```powershell
@@ -27,7 +27,7 @@ PS> ./download-file https://www.cnn.com/index.html
 ```
 
 ## Notes
-Author: Markus Fleschutz · License: CC0
+Author: Markus Fleschutz / License: CC0
 
 ## Related Links
 https://github.com/fleschutz/PowerShell

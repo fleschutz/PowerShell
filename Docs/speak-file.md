@@ -1,6 +1,6 @@
 ## speak-file.ps1 - Speaks file content by text-to-speech
 
-This script speaks the content of the given text file by text-to-speech (TTS).
+This PowerShell script speaks the content of the given text file by text-to-speech (TTS).
 
 ## Parameters
 ```powershell
@@ -27,7 +27,7 @@ PS> ./speak-file C:\MyFile.txt
 ```
 
 ## Notes
-Author: Markus Fleschutz · License: CC0
+Author: Markus Fleschutz / License: CC0
 
 ## Related Links
 https://github.com/fleschutz/PowerShell

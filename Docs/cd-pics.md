@@ -1,6 +1,6 @@
 ## cd-pics.ps1 - Sets the working directory to the user's pictures folder
 
-This script changes the working directory to the user's pictures folder.
+This PowerShell script changes the working directory to the user's pictures folder.
 
 ## Parameters
 ```powershell
@@ -19,7 +19,7 @@ PS> ./cd-pics
 ```
 
 ## Notes
-Author: Markus Fleschutz · License: CC0
+Author: Markus Fleschutz / License: CC0
 
 ## Related Links
 https://github.com/fleschutz/PowerShell

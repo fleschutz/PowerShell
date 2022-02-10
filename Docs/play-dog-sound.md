@@ -1,6 +1,6 @@
 ## play-dog-sound.ps1 - Plays a dog sound
 
-This script plays a dog sound.
+This PowerShell script plays a dog sound.
 
 ## Parameters
 ```powershell
@@ -18,7 +18,7 @@ PS> ./play-dog-sound
 ```
 
 ## Notes
-Author: Markus Fleschutz · License: CC0
+Author: Markus Fleschutz / License: CC0
 
 ## Related Links
 https://github.com/fleschutz/PowerShell

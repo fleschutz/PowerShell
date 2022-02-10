@@ -1,6 +1,6 @@
 ## close-obs-studio.ps1 - Closes OBS Studio
 
-This script closes the OBS Studio application gracefully.
+This PowerShell script closes the OBS Studio application gracefully.
 
 ## Parameters
 ```powershell
@@ -18,7 +18,7 @@ PS> ./close-obs-studio
 ```
 
 ## Notes
-Author: Markus Fleschutz · License: CC0
+Author: Markus Fleschutz / License: CC0
 
 ## Related Links
 https://github.com/fleschutz/PowerShell

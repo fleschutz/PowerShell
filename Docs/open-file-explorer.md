@@ -1,6 +1,6 @@
 ## open-file-explorer.ps1 - Starts the File Explorer
 
-This script launches the File Explorer.
+This PowerShell script launches the File Explorer.
 
 ## Parameters
 ```powershell
@@ -27,7 +27,7 @@ PS> ./open-file-explorer
 ```
 
 ## Notes
-Author: Markus Fleschutz · License: CC0
+Author: Markus Fleschutz / License: CC0
 
 ## Related Links
 https://github.com/fleschutz/PowerShell

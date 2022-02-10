@@ -1,6 +1,6 @@
 ## check-ipv4-address.ps1 - Checks an IPv4 address for validity
 
-This script checks the given IPv4 address for validity.
+This PowerShell script checks the given IPv4 address for validity.
 
 ## Parameters
 ```powershell
@@ -28,7 +28,7 @@ PS> ./check-ipv4-address 192.168.11.22
 ```
 
 ## Notes
-Author: Markus Fleschutz · License: CC0
+Author: Markus Fleschutz / License: CC0
 
 ## Related Links
 https://github.com/fleschutz/PowerShell

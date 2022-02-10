@@ -1,6 +1,6 @@
 ## open-bing-maps.ps1 - Launches the Bing Maps app
 
-This script launches the Bing Maps application.
+This PowerShell script launches the Bing Maps application.
 
 ## Parameters
 ```powershell
@@ -18,7 +18,7 @@ PS> ./open-bing-maps
 ```
 
 ## Notes
-Author: Markus Fleschutz · License: CC0
+Author: Markus Fleschutz / License: CC0
 
 ## Related Links
 https://github.com/fleschutz/PowerShell

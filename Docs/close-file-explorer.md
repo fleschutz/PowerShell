@@ -1,6 +1,6 @@
 ## close-file-explorer.ps1 - Closes the File Explorer
 
-This script closes the Microsoft File Explorer application gracefully.
+This PowerShell script closes the Microsoft File Explorer application gracefully.
 
 ## Parameters
 ```powershell
@@ -18,7 +18,7 @@ PS> ./close-file-explorer
 ```
 
 ## Notes
-Author: Markus Fleschutz · License: CC0
+Author: Markus Fleschutz / License: CC0
 
 ## Related Links
 https://github.com/fleschutz/PowerShell

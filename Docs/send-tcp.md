@@ -1,6 +1,6 @@
 ## send-tcp.ps1 - Sends a TCP message to an IP address and port
 
-This script sends a TCP message to the given IP address and port.
+This PowerShell script sends a TCP message to the given IP address and port.
 
 ## Parameters
 ```powershell
@@ -45,7 +45,7 @@ PS> ./send-tcp 192.168.100.100 8080 "TEST"
 ```
 
 ## Notes
-Author: Markus Fleschutz · License: CC0
+Author: Markus Fleschutz / License: CC0
 
 ## Related Links
 https://github.com/fleschutz/PowerShell

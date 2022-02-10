@@ -1,6 +1,6 @@
 ## list-hidden-files.ps1 - Lists hidden files in a directory tree
 
-This script scans and lists all hidden files in a directory tree.
+This PowerShell script scans and lists all hidden files in a directory tree.
 
 ## Parameters
 ```powershell
@@ -27,7 +27,7 @@ PS> ./list-hidden-files C:\
 ```
 
 ## Notes
-Author: Markus Fleschutz · License: CC0
+Author: Markus Fleschutz / License: CC0
 
 ## Related Links
 https://github.com/fleschutz/PowerShell

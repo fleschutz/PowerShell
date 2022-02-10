@@ -1,6 +1,6 @@
 ## open-google-photos.ps1 - Opens Google Photos
 
-This script launches the Web browser with the Google Photos website.
+This PowerShell script launches the Web browser with the Google Photos website.
 
 ## Parameters
 ```powershell
@@ -18,7 +18,7 @@ PS> ./open-google-photos
 ```
 
 ## Notes
-Author: Markus Fleschutz · License: CC0
+Author: Markus Fleschutz / License: CC0
 
 ## Related Links
 https://github.com/fleschutz/PowerShell

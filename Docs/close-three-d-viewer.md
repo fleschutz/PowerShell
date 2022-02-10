@@ -1,6 +1,6 @@
 ## close-three-d-viewer.ps1 - Closes the 3D-Viewer app
 
-This script closes the 3D-Viewer application gracefully.
+This PowerShell script closes the 3D-Viewer application gracefully.
 
 ## Parameters
 ```powershell
@@ -18,7 +18,7 @@ PS> ./close-three-d-viewer
 ```
 
 ## Notes
-Author: Markus Fleschutz · License: CC0
+Author: Markus Fleschutz / License: CC0
 
 ## Related Links
 https://github.com/fleschutz/PowerShell

@@ -1,6 +1,6 @@
 ## open-documents-folder.ps1 - Opens the documents folder
 
-This script launches the File Explorer with the user's documents folder.
+This PowerShell script launches the File Explorer with the user's documents folder.
 
 ## Parameters
 ```powershell
@@ -18,7 +18,7 @@ PS> ./open-documents-folder
 ```
 
 ## Notes
-Author: Markus Fleschutz · License: CC0
+Author: Markus Fleschutz / License: CC0
 
 ## Related Links
 https://github.com/fleschutz/PowerShell

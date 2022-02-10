@@ -1,6 +1,6 @@
 ## write-lowercase.ps1 - Writes text in lowercase letters
 
-This script writes text in lowercase letters.
+This PowerShell script writes text in lowercase letters.
 
 ## Parameters
 ```powershell
@@ -27,7 +27,7 @@ PS> ./write-lowercase "Hello World"
 ```
 
 ## Notes
-Author: Markus Fleschutz · License: CC0
+Author: Markus Fleschutz / License: CC0
 
 ## Related Links
 https://github.com/fleschutz/PowerShell

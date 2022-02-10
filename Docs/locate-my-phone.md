@@ -1,6 +1,6 @@
 ## locate-my-phone.ps1 - Opens Google Find My Device
 
-This script launches the Web browser with the Google Find My Device website.
+This PowerShell script launches the Web browser with the Google Find My Device website.
 
 ## Parameters
 ```powershell
@@ -18,7 +18,7 @@ PS> ./locate-my-phone
 ```
 
 ## Notes
-Author: Markus Fleschutz · License: CC0
+Author: Markus Fleschutz / License: CC0
 
 ## Related Links
 https://github.com/fleschutz/PowerShell

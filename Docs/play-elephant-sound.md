@@ -1,6 +1,6 @@
-## play-elephant-sound.ps1 - Plays a elephant sound
+## play-elephant-sound.ps1 - Plays an elephant sound
 
-This script plays a elephant sound.
+This PowerShell script plays an elephant sound.
 
 ## Parameters
 ```powershell
@@ -14,11 +14,12 @@ play-elephant-sound.ps1 [<CommonParameters>]
 ## Example
 ```powershell
 PS> ./play-elephant-sound
+(listen and enjoy)
 
 ```
 
 ## Notes
-Author: Markus Fleschutz · License: CC0
+Author: Markus Fleschutz / License: CC0
 
 ## Related Links
 https://github.com/fleschutz/PowerShell

@@ -1,6 +1,6 @@
 ## list-drives.ps1 - Lists all local drives
 
-This script lists the details of all local drives.
+This PowerShell script lists the details of all local drives.
 
 ## Parameters
 ```powershell
@@ -25,7 +25,7 @@ D    D:\     6648,1     744,2
 ```
 
 ## Notes
-Author: Markus Fleschutz · License: CC0
+Author: Markus Fleschutz / License: CC0
 
 ## Related Links
 https://github.com/fleschutz/PowerShell

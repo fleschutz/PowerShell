@@ -1,6 +1,6 @@
 ## download-dir.ps1 - Downloads a folder (including subfolders) from an URL
 
-This script downloads a folder (including subfolders) from the given URL.
+This PowerShell script downloads a folder (including subfolders) from the given URL.
 
 ## Parameters
 ```powershell
@@ -27,7 +27,7 @@ PS> ./download-dir https://www.cnn.com
 ```
 
 ## Notes
-Author: Markus Fleschutz · License: CC0
+Author: Markus Fleschutz / License: CC0
 
 ## Related Links
 https://github.com/fleschutz/PowerShell

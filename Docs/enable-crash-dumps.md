@@ -1,6 +1,6 @@
 ## enable-crash-dumps.ps1 - Enables the writing of crash dumps
 
-Enables the writing of crash dumps.
+This PowerShell script enables the writing of crash dumps.
 
 ## Parameters
 ```powershell
@@ -18,7 +18,7 @@ PS> ./enable-crash-dumps
 ```
 
 ## Notes
-Author: Markus Fleschutz · License: CC0
+Author: Markus Fleschutz / License: CC0
 
 ## Related Links
 https://github.com/fleschutz/PowerShell

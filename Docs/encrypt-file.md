@@ -1,6 +1,6 @@
 ## encrypt-file.ps1 - Encrypts a file
 
-This script encrypts the given file.
+This PowerShell script encrypts the given file.
 
 ## Parameters
 ```powershell
@@ -36,7 +36,7 @@ PS> ./encrypt-file C:\MyFile.txt "123"
 ```
 
 ## Notes
-Author: Markus Fleschutz · License: CC0
+Author: Markus Fleschutz / License: CC0
 
 ## Related Links
 https://github.com/fleschutz/PowerShell

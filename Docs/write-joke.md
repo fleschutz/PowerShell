@@ -1,6 +1,6 @@
 ## write-joke.ps1 - Writes a random Juck Norris joke to the console
 
-This script writes a random Juck Norris joke to the console.
+This PowerShell script writes a random Juck Norris joke to the console.
 
 ## Parameters
 ```powershell
@@ -19,7 +19,7 @@ When Chuck Norris does division, there are no remainders. 😂
 ```
 
 ## Notes
-Author: Markus Fleschutz · License: CC0
+Author: Markus Fleschutz / License: CC0
 
 ## Related Links
 https://github.com/fleschutz/PowerShell

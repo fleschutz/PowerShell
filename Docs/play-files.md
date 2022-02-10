@@ -1,6 +1,6 @@
 ## play-files.ps1 - Plays audio files (MP3 and WAV)
 
-This script plays the given audio files (supporting MP3 and WAV format).
+This PowerShell script plays the given audio files (supporting MP3 and WAV format).
 
 ## Parameters
 ```powershell
@@ -27,7 +27,7 @@ PS> ./play-files *.mp3
 ```
 
 ## Notes
-Author: Markus Fleschutz · License: CC0
+Author: Markus Fleschutz / License: CC0
 
 ## Related Links
 https://github.com/fleschutz/PowerShell

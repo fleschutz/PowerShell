@@ -1,6 +1,6 @@
-## sync-repo.ps1 - Synchronizes a Git repository by push & pull (including submodules)
+## sync-repo.ps1 - Synchronizes a Git repository
 
-This script synchronizes a Git repository by push & pull (including submodules).
+This PowerShell script synchronizes a Git repository by push & pull (including submodules).
 
 ## Parameters
 ```powershell
@@ -27,7 +27,7 @@ PS> ./sync-repo C:\MyRepo
 ```
 
 ## Notes
-Author: Markus Fleschutz · License: CC0
+Author: Markus Fleschutz / License: CC0
 
 ## Related Links
 https://github.com/fleschutz/PowerShell

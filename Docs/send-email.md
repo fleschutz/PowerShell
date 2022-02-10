@@ -1,6 +1,6 @@
 ## send-email.ps1 - Sends an email message
 
-This script sends an email message.
+This PowerShell script sends an email message.
 
 ## Parameters
 ```powershell
@@ -18,7 +18,7 @@ PS> ./send-email
 ```
 
 ## Notes
-Author: Markus Fleschutz · License: CC0
+Author: Markus Fleschutz / License: CC0
 
 ## Related Links
 https://github.com/fleschutz/PowerShell

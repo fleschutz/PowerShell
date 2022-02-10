@@ -1,6 +1,6 @@
 ## search-files.ps1 - Searches for a pattern in files
 
-This script searches for a pattern in the given files.
+This PowerShell script searches for a pattern in the given files.
 
 ## Parameters
 ```powershell
@@ -36,7 +36,7 @@ PS> ./search-files UFO C:\Temp\*.txt
 ```
 
 ## Notes
-Author: Markus Fleschutz · License: CC0
+Author: Markus Fleschutz / License: CC0
 
 ## Related Links
 https://github.com/fleschutz/PowerShell

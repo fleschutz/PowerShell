@@ -1,6 +1,6 @@
-## add-memo.ps1 - Adds a memo text to $HOME/Memos.csv
+## add-memo.ps1 - Adds a memo text
 
-This script adds the given memo text to $HOME/Memos.csv.
+This PowerShell script adds the given memo text to $HOME/Memos.csv.
 
 ## Parameters
 ```powershell
@@ -28,7 +28,7 @@ PS> ./add-memo "Buy apples"
 ```
 
 ## Notes
-Author: Markus Fleschutz · License: CC0
+Author: Markus Fleschutz / License: CC0
 
 ## Related Links
 https://github.com/fleschutz/PowerShell

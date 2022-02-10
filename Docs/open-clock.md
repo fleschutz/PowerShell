@@ -1,6 +1,6 @@
 ## open-clock.ps1 - Launches the Clock app
 
-This script launches the Clock application.
+This PowerShell script launches the Clock application.
 
 ## Parameters
 ```powershell
@@ -18,7 +18,7 @@ PS> ./open-clock
 ```
 
 ## Notes
-Author: Markus Fleschutz · License: CC0
+Author: Markus Fleschutz / License: CC0
 
 ## Related Links
 https://github.com/fleschutz/PowerShell

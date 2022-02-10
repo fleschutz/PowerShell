@@ -1,6 +1,6 @@
 ## open-accu-weather.ps1 - Opens the AccuWeather website
 
-This script launches the Web browser with the AccuWeather website.
+This PowerShell script launches the Web browser with the AccuWeather website.
 
 ## Parameters
 ```powershell
@@ -18,7 +18,7 @@ PS> ./open-accu-weather
 ```
 
 ## Notes
-Author: Markus Fleschutz · License: CC0
+Author: Markus Fleschutz / License: CC0
 
 ## Related Links
 https://github.com/fleschutz/PowerShell

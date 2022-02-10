@@ -1,6 +1,6 @@
 ## open-google-stadia.ps1 - Opens Google Stadia
 
-This script launches the Web browser with the Google Stadia website.
+This PowerShell script launches the Web browser with the Google Stadia website.
 
 ## Parameters
 ```powershell
@@ -18,7 +18,7 @@ PS> ./open-google-stadia
 ```
 
 ## Notes
-Author: Markus Fleschutz · License: CC0
+Author: Markus Fleschutz / License: CC0
 
 ## Related Links
 https://github.com/fleschutz/PowerShell

@@ -1,6 +1,6 @@
 ## open-google-news.ps1 - Opens Google News
 
-This script launches the Web browser with the Google News website.
+This PowerShell script launches the Web browser with the Google News website.
 
 ## Parameters
 ```powershell
@@ -18,7 +18,7 @@ PS> ./open-google-news
 ```
 
 ## Notes
-Author: Markus Fleschutz · License: CC0
+Author: Markus Fleschutz / License: CC0
 
 ## Related Links
 https://github.com/fleschutz/PowerShell

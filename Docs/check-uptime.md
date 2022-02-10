@@ -1,6 +1,6 @@
 ## check-uptime.ps1 - Determines the uptime
 
-This script determines and says the uptime by text-to-speech (TTS).
+This PowerShell script determines and says the uptime by text-to-speech (TTS).
 
 ## Parameters
 ```powershell
@@ -18,7 +18,7 @@ PS> ./check-uptime
 ```
 
 ## Notes
-Author: Markus Fleschutz · License: CC0
+Author: Markus Fleschutz / License: CC0
 
 ## Related Links
 https://github.com/fleschutz/PowerShell

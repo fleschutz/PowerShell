@@ -1,6 +1,6 @@
 ## speak-checklist.ps1 - Speaks a checklist by text-to-speech
 
-This script speaks the given checklist by text-to-speech (TTS).
+This PowerShell script speaks the given checklist by text-to-speech (TTS).
 
 ## Parameters
 ```powershell
@@ -27,7 +27,7 @@ PS> ./speak-checklist
 ```
 
 ## Notes
-Author: Markus Fleschutz · License: CC0
+Author: Markus Fleschutz / License: CC0
 
 ## Related Links
 https://github.com/fleschutz/PowerShell

@@ -1,6 +1,6 @@
 ## close-one-calendar.ps1 - Closes the OneCalendar app
 
-This script closes the OneCalendar application gracefully.
+This PowerShell script closes the OneCalendar application gracefully.
 
 ## Parameters
 ```powershell
@@ -18,7 +18,7 @@ PS> ./close-one-calendar
 ```
 
 ## Notes
-Author: Markus Fleschutz · License: CC0
+Author: Markus Fleschutz / License: CC0
 
 ## Related Links
 https://github.com/fleschutz/PowerShell

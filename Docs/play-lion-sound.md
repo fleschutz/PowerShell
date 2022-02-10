@@ -1,6 +1,6 @@
 ## play-lion-sound.ps1 - Plays a lion sound
 
-This script plays a lion sound.
+This PowerShell script plays a lion sound.
 
 ## Parameters
 ```powershell
@@ -14,11 +14,12 @@ play-lion-sound.ps1 [<CommonParameters>]
 ## Example
 ```powershell
 PS> ./play-lion-sound
+(listen and enjoy)
 
 ```
 
 ## Notes
-Author: Markus Fleschutz · License: CC0
+Author: Markus Fleschutz / License: CC0
 
 ## Related Links
 https://github.com/fleschutz/PowerShell

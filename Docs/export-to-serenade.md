@@ -1,6 +1,6 @@
 ## export-to-serenade.ps1 - Exports scripts to Serenade
 
-This script exports all PowerShell scripts to Serenade to execute them by voice.
+This PowerShell script exports all scripts to Serenade to execute them by voice.
 
 ## Parameters
 ```powershell
@@ -57,7 +57,7 @@ PS> ./export-to-serenade.ps1 Computer
 ```
 
 ## Notes
-Author: Markus Fleschutz · License: CC0
+Author: Markus Fleschutz / License: CC0
 
 ## Related Links
 https://github.com/fleschutz/PowerShell

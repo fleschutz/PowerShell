@@ -1,6 +1,6 @@
 ## list-processes.ps1 - Lists all local computer processes
 
-This script lists all local computer processes.
+This PowerShell script lists all local computer processes.
 
 ## Parameters
 ```powershell
@@ -26,7 +26,7 @@ Id  CPU(s) ProcessName
 ```
 
 ## Notes
-Author: Markus Fleschutz · License: CC0
+Author: Markus Fleschutz / License: CC0
 
 ## Related Links
 https://github.com/fleschutz/PowerShell

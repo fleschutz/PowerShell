@@ -1,6 +1,6 @@
 ## list-fritzbox-devices.ps1 - Lists FRITZ!Box's known devices
 
-This script lists FRITZ!Box's known devices.
+This PowerShell script lists FRITZ!Box's known devices.
 
 ## Parameters
 ```powershell
@@ -36,7 +36,7 @@ PS> ./list-fritzbox-devices
 ```
 
 ## Notes
-Author: Markus Fleschutz · License: CC0
+Author: Markus Fleschutz / License: CC0
 
 ## Related Links
 https://github.com/fleschutz/PowerShell

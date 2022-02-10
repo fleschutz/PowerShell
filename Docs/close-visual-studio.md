@@ -1,6 +1,6 @@
 ## close-visual-studio.ps1 - Closes the Visual Studio app
 
-This script closes the Microsoft Visual Studio application gracefully.
+This PowerShell script closes the Microsoft Visual Studio application gracefully.
 
 ## Parameters
 ```powershell
@@ -18,7 +18,7 @@ PS> ./close-visual-studio
 ```
 
 ## Notes
-Author: Markus Fleschutz · License: CC0
+Author: Markus Fleschutz / License: CC0
 
 ## Related Links
 https://github.com/fleschutz/PowerShell

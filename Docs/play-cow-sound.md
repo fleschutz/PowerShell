@@ -1,6 +1,6 @@
 ## play-cow-sound.ps1 - Plays a cow sound
 
-This script plays a cow sound.
+This PowerShell script plays a cow sound.
 
 ## Parameters
 ```powershell
@@ -18,7 +18,7 @@ PS> ./play-cow-sound
 ```
 
 ## Notes
-Author: Markus Fleschutz · License: CC0
+Author: Markus Fleschutz / License: CC0
 
 ## Related Links
 https://github.com/fleschutz/PowerShell

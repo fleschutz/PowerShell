@@ -1,6 +1,6 @@
 ## check-smart-devices.ps1 - Performs a selftest on your S.M.A.R.T. HDD/SSD devices.
 
-This script performs a selftest on your S.M.A.R.T. HDD/SSD devices.
+This PowerShell script performs a selftest on your S.M.A.R.T. HDD/SSD devices.
        It requires smartctl (smartmontools package) and admin rights.
 
 ## Parameters
@@ -29,7 +29,7 @@ PS> ./check-smart-devices
 ```
 
 ## Notes
-Author: Markus Fleschutz · License: CC0
+Author: Markus Fleschutz / License: CC0
 
 ## Related Links
 https://github.com/fleschutz/PowerShell

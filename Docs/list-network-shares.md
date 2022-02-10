@@ -1,6 +1,6 @@
 ## list-network-shares.ps1 - Lists all network shares of the local computer
 
-This script lists all network shares of the local computer.
+This PowerShell script lists all network shares of the local computer.
 
 ## Parameters
 ```powershell
@@ -24,7 +24,7 @@ Users C:\Users
 ```
 
 ## Notes
-Author: Markus Fleschutz · License: CC0
+Author: Markus Fleschutz / License: CC0
 
 ## Related Links
 https://github.com/fleschutz/PowerShell

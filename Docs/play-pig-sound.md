@@ -1,6 +1,6 @@
 ## play-pig-sound.ps1 - Plays a pig sound
 
-This script plays a pig sound.
+This PowerShell script plays a pig sound.
 
 ## Parameters
 ```powershell
@@ -14,11 +14,12 @@ play-pig-sound.ps1 [<CommonParameters>]
 ## Example
 ```powershell
 PS> ./play-pig-sound
+(listen and enjoy)
 
 ```
 
 ## Notes
-Author: Markus Fleschutz · License: CC0
+Author: Markus Fleschutz / License: CC0
 
 ## Related Links
 https://github.com/fleschutz/PowerShell

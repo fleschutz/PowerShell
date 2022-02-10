@@ -1,6 +1,6 @@
 ## list-os-releases.ps1 - Lists OS releases and download URL
 
-This script lists OS releases and download URL.
+This PowerShell script lists OS releases and download URL.
 
 ## Parameters
 ```powershell
@@ -18,7 +18,7 @@ PS> ./list-os-releases
 ```
 
 ## Notes
-Author: Markus Fleschutz · License: CC0
+Author: Markus Fleschutz / License: CC0
 
 ## Related Links
 https://github.com/fleschutz/PowerShell

@@ -1,6 +1,6 @@
 ## open-auto-start-folder.ps1 - Opens the autostart folder
 
-This script launches the File Explorer with the user's autostart folder.
+This PowerShell script launches the File Explorer with the user's autostart folder.
 
 ## Parameters
 ```powershell
@@ -18,7 +18,7 @@ PS> ./open-auto-start-folder
 ```
 
 ## Notes
-Author: Markus Fleschutz · License: CC0
+Author: Markus Fleschutz / License: CC0
 
 ## Related Links
 https://github.com/fleschutz/PowerShell

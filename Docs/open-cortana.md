@@ -1,6 +1,6 @@
 ## open-cortana.ps1 - Launches the Cortana app
 
-This script launches the Cortana application.
+This PowerShell script launches the Cortana application.
 
 ## Parameters
 ```powershell
@@ -18,7 +18,7 @@ PS> ./open-cortana
 ```
 
 ## Notes
-Author: Markus Fleschutz · License: CC0
+Author: Markus Fleschutz / License: CC0
 
 ## Related Links
 https://github.com/fleschutz/PowerShell

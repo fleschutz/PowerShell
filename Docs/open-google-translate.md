@@ -1,6 +1,6 @@
 ## open-google-translate.ps1 - Opens Google Translate
 
-This script launches the Web browser with the Google Translate website.
+This PowerShell script launches the Web browser with the Google Translate website.
 
 ## Parameters
 ```powershell
@@ -18,7 +18,7 @@ PS> ./open-google-translate
 ```
 
 ## Notes
-Author: Markus Fleschutz · License: CC0
+Author: Markus Fleschutz / License: CC0
 
 ## Related Links
 https://github.com/fleschutz/PowerShell

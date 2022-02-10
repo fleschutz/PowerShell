@@ -1,6 +1,6 @@
 ## save-screenshot.ps1 - Saves a single screenshot
 
-This script takes a single screenshot and saves it into a target folder (the user's pictures folder by default).
+This PowerShell script takes a single screenshot and saves it into a target folder (the user's pictures folder by default).
 
 ## Parameters
 ```powershell
@@ -28,7 +28,7 @@ PS> ./save-screenshot
 ```
 
 ## Notes
-Author: Markus Fleschutz · License: CC0
+Author: Markus Fleschutz / License: CC0
 
 ## Related Links
 https://github.com/fleschutz/PowerShell

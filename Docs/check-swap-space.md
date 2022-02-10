@@ -1,6 +1,6 @@
 ## check-swap-space.ps1 - Checks the swap space
 
-This script checks the free swap space.
+This PowerShell script checks the free swap space.
 
 ## Parameters
 ```powershell
@@ -28,7 +28,7 @@ PS> ./check-swap-space
 ```
 
 ## Notes
-Author: Markus Fleschutz · License: CC0
+Author: Markus Fleschutz / License: CC0
 
 ## Related Links
 https://github.com/fleschutz/PowerShell

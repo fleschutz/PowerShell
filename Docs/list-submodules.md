@@ -1,6 +1,6 @@
 ## list-submodules.ps1 - Lists the submodules of a Git repository
 
-This script lists the submodules of the given Git repository.
+This PowerShell script lists the submodules of the given Git repository.
 
 ## Parameters
 ```powershell
@@ -27,7 +27,7 @@ PS> ./list-submodules C:\MyRepo
 ```
 
 ## Notes
-Author: Markus Fleschutz · License: CC0
+Author: Markus Fleschutz / License: CC0
 
 ## Related Links
 https://github.com/fleschutz/PowerShell

@@ -1,6 +1,6 @@
 ## install-ssh-server.ps1 - Installs the SSH server (needs admin rights)
 
-This script installs the SSH server (needs admin rights).
+This PowerShell script installs the SSH server (needs admin rights).
 
 ## Parameters
 ```powershell
@@ -18,7 +18,7 @@ PS> ./install-ssh-server
 ```
 
 ## Notes
-Author: Markus Fleschutz · License: CC0
+Author: Markus Fleschutz / License: CC0
 
 ## Related Links
 https://github.com/fleschutz/PowerShell

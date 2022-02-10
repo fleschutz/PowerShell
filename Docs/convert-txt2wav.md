@@ -1,6 +1,6 @@
 ## convert-txt2wav.ps1 - Converts text to a .WAV audio file
 
-This script converts text to a .WAV audio file.
+This PowerShell script converts text to a .WAV audio file.
 
 ## Parameters
 ```powershell
@@ -36,7 +36,7 @@ PS> ./convert-txt2wav "Hello World" spoken.wav
 ```
 
 ## Notes
-Author: Markus Fleschutz · License: CC0
+Author: Markus Fleschutz / License: CC0
 
 ## Related Links
 https://github.com/fleschutz/PowerShell

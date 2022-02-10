@@ -1,6 +1,6 @@
 ## make-install.ps1 - Copies newer EXE's + DLL's from the build directory to the installation directory
 
-This script copies newer EXE's + DLL's from the build directory to the installation directory.
+This PowerShell script copies newer EXE's + DLL's from the build directory to the installation directory.
 
 ## Parameters
 ```powershell
@@ -18,7 +18,7 @@ PS> ./make-install
 ```
 
 ## Notes
-Author: Markus Fleschutz · License: CC0
+Author: Markus Fleschutz / License: CC0
 
 ## Related Links
 https://github.com/fleschutz/PowerShell

@@ -1,6 +1,6 @@
 ## write-uppercase.ps1 - Writes text in uppercase letters
 
-This script writes text in uppercase letters.
+This PowerShell script writes text in uppercase letters.
 
 ## Parameters
 ```powershell
@@ -27,7 +27,7 @@ PS> ./write-uppercase "Hello World"
 ```
 
 ## Notes
-Author: Markus Fleschutz · License: CC0
+Author: Markus Fleschutz / License: CC0
 
 ## Related Links
 https://github.com/fleschutz/PowerShell

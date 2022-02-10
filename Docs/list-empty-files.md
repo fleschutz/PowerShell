@@ -1,6 +1,6 @@
 ## list-empty-files.ps1 - Lists empty files within a directory tree
 
-This script scans and lists all empty files within the given directory tree.
+This PowerShell script scans and lists all empty files within the given directory tree.
 
 ## Parameters
 ```powershell
@@ -27,7 +27,7 @@ PS> ./list-empty-files C:\
 ```
 
 ## Notes
-Author: Markus Fleschutz · License: CC0
+Author: Markus Fleschutz / License: CC0
 
 ## Related Links
 https://github.com/fleschutz/PowerShell

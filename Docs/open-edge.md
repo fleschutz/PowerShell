@@ -1,6 +1,6 @@
-## open-edge.ps1 - Starts Microsoft Edge
+## open-edge.ps1 - Launches the Edge browser
 
-This script launches the Microsoft Edge Web browser.
+This PowerShell script launches the Microsoft Edge Web browser.
 
 ## Parameters
 ```powershell
@@ -18,7 +18,7 @@ PS> ./open-edge
 ```
 
 ## Notes
-Author: Markus Fleschutz · License: CC0
+Author: Markus Fleschutz / License: CC0
 
 ## Related Links
 https://github.com/fleschutz/PowerShell

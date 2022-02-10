@@ -1,6 +1,7 @@
 ## install-signal-cli.ps1 - Installs signal-cli
 
-Installs signal-cli from github.com/AsamK/signal-cli. See the Web page for the correct version number.
+This PowerShell script installs signal-cli from github.com/AsamK/signal-cli.
+See the Web page for the correct version number.
 
 ## Parameters
 ```powershell
@@ -27,7 +28,7 @@ PS> ./install-signal-cli 0.11.12
 ```
 
 ## Notes
-Author: Markus Fleschutz · License: CC0
+Author: Markus Fleschutz / License: CC0
 
 ## Related Links
 https://github.com/fleschutz/PowerShell

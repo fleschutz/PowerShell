@@ -1,6 +1,6 @@
 ## write-animated.ps1 - Writes animated text
 
-This script writes animated text.
+This PowerShell script writes animated text.
 
 ## Parameters
 ```powershell
@@ -98,7 +98,7 @@ PS> ./write-animated "Hello World"
 ```
 
 ## Notes
-Author: Markus Fleschutz · License: CC0
+Author: Markus Fleschutz / License: CC0
 
 ## Related Links
 https://github.com/fleschutz/PowerShell

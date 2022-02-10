@@ -1,6 +1,6 @@
 ## open-d-drive.ps1 - Opens the D: drive folder
 
-This script launches the File Explorer with the D: drive folder.
+This PowerShell script launches the File Explorer with the D: drive folder.
 
 ## Parameters
 ```powershell
@@ -18,7 +18,7 @@ PS> ./open-d-drive
 ```
 
 ## Notes
-Author: Markus Fleschutz · License: CC0
+Author: Markus Fleschutz / License: CC0
 
 ## Related Links
 https://github.com/fleschutz/PowerShell

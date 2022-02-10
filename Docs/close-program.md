@@ -1,6 +1,6 @@
 ## close-program.ps1 - Closes a program's processes
 
-This script closes a program's processes gracefully.
+This PowerShell script closes a program's processes gracefully.
 
 ## Parameters
 ```powershell
@@ -45,7 +45,7 @@ PS> ./close-program "Google Chrome" "chrome.exe"
 ```
 
 ## Notes
-Author: Markus Fleschutz · License: CC0
+Author: Markus Fleschutz / License: CC0
 
 ## Related Links
 https://github.com/fleschutz/PowerShell

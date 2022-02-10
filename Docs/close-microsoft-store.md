@@ -1,6 +1,6 @@
 ## close-microsoft-store.ps1 - Closes the Microsoft Store app
 
-This script closes the Microsoft Store application gracefully.
+This PowerShell script closes the Microsoft Store application gracefully.
 
 ## Parameters
 ```powershell
@@ -18,7 +18,7 @@ PS> ./close-microsoft-store
 ```
 
 ## Notes
-Author: Markus Fleschutz · License: CC0
+Author: Markus Fleschutz / License: CC0
 
 ## Related Links
 https://github.com/fleschutz/PowerShell

@@ -1,6 +1,6 @@
 ## decrypt-file.ps1 - Decrypts the given file
 
-This script decrypts the given file.
+This PowerShell script decrypts the given file.
 
 ## Parameters
 ```powershell
@@ -36,7 +36,7 @@ PS> ./decrypt-file-rules C:\MyFile.txt "123"
 ```
 
 ## Notes
-Author: Markus Fleschutz · License: CC0
+Author: Markus Fleschutz / License: CC0
 
 ## Related Links
 https://github.com/fleschutz/PowerShell

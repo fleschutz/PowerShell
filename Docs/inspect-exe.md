@@ -1,6 +1,6 @@
 ## inspect-exe.ps1 - Prints basic information of an executable file
 
-This script prints basic information of an executable file.
+This PowerShell script prints basic information of an executable file.
 
 ## Parameters
 ```powershell
@@ -27,7 +27,7 @@ PS> ./inspect-exe C:\MyApp.exe
 ```
 
 ## Notes
-Author: Markus Fleschutz · License: CC0
+Author: Markus Fleschutz / License: CC0
 
 ## Related Links
 https://github.com/fleschutz/PowerShell

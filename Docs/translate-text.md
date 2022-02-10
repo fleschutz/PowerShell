@@ -1,10 +1,10 @@
 ## translate-text.ps1 - Translates text into other languages
 
-This script translates text into other languages.
+This PowerShell script translates text into other languages.
 
 ## Parameters
 ```powershell
-translate-text.ps1 [[-Text] <String>] [[-SourceLang] <String>] [[-TargetLang] <String>] [<CommonParameters>]
+translate-text.ps1 [[-Text] <String>] [[-SourceLangCode] <String>] [[-TargetLangCode] <String>] [<CommonParameters>]
 
 -Text <String>
     Specifies the text to translate
@@ -15,8 +15,7 @@ translate-text.ps1 [[-Text] <String>] [[-SourceLang] <String>] [[-TargetLang] <S
     Accept pipeline input?       false
     Accept wildcard characters?  false
 
--SourceLang <String>
-    Specifies the source language
+-SourceLangCode <String>
     
     Required?                    false
     Position?                    2
@@ -24,8 +23,7 @@ translate-text.ps1 [[-Text] <String>] [[-SourceLang] <String>] [[-TargetLang] <S
     Accept pipeline input?       false
     Accept wildcard characters?  false
 
--TargetLang <String>
-    Specifies the target language
+-TargetLangCode <String>
     
     Required?                    false
     Position?                    3
@@ -45,7 +43,7 @@ PS> ./translate-text "Hello World" de en
 ```
 
 ## Notes
-Author: Markus Fleschutz · License: CC0
+Author: Markus Fleschutz / License: CC0
 
 ## Related Links
 https://github.com/fleschutz/PowerShell

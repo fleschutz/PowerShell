@@ -1,6 +1,6 @@
 ## play-beep-sound.ps1 - Plays a short beep sound
 
-This script plays a short beep sound.
+This PowerShell script plays a short beep sound.
 
 ## Parameters
 ```powershell
@@ -14,11 +14,12 @@ play-beep-sound.ps1 [<CommonParameters>]
 ## Example
 ```powershell
 PS> ./play-beep-sound
+(listen and enjoy)
 
 ```
 
 ## Notes
-Author: Markus Fleschutz · License: CC0
+Author: Markus Fleschutz / License: CC0
 
 ## Related Links
 https://github.com/fleschutz/PowerShell

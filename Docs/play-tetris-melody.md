@@ -1,6 +1,6 @@
 ## play-tetris-melody.ps1 - Plays the Tetris melody
 
-This script plays the Tetris melody.
+This PowerShell script plays the Tetris melody.
 
 ## Parameters
 ```powershell
@@ -14,11 +14,12 @@ play-tetris-melody.ps1 [<CommonParameters>]
 ## Example
 ```powershell
 PS> ./play-tetris-melody
+(listen and enjoy)
 
 ```
 
 ## Notes
-Author: Markus Fleschutz · License: CC0
+Author: Markus Fleschutz / License: CC0
 
 ## Related Links
 https://github.com/fleschutz/PowerShell

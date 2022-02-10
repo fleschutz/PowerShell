@@ -1,6 +1,6 @@
 ## play-gorilla-sound.ps1 - Plays a gorilla sound
 
-This script plays a gorilla sound.
+This PowerShell script plays a gorilla sound.
 
 ## Parameters
 ```powershell
@@ -14,11 +14,12 @@ play-gorilla-sound.ps1 [<CommonParameters>]
 ## Example
 ```powershell
 PS> ./play-gorilla-sound
+(listen and enjoy)
 
 ```
 
 ## Notes
-Author: Markus Fleschutz · License: CC0
+Author: Markus Fleschutz / License: CC0
 
 ## Related Links
 https://github.com/fleschutz/PowerShell

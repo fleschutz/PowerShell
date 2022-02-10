@@ -1,6 +1,6 @@
 ## write-typewriter.ps1 - Writes text with the typewriter effect
 
-This script writes text with the typewriter effect.
+This PowerShell script writes text with the typewriter effect.
 
 ## Parameters
 ```powershell
@@ -45,7 +45,7 @@ PS> ./write-typewriter "Hello World"
 ```
 
 ## Notes
-Author: Markus Fleschutz · License: CC0
+Author: Markus Fleschutz / License: CC0
 
 ## Related Links
 https://github.com/fleschutz/PowerShell

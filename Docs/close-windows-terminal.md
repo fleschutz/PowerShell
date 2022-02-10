@@ -1,6 +1,6 @@
 ## close-windows-terminal.ps1 - Closes the Windows Terminal app
 
-This script closes the Windows Terminal application gracefully.
+This PowerShell script closes the Windows Terminal application gracefully.
 
 ## Parameters
 ```powershell
@@ -18,7 +18,7 @@ PS> ./close-windows-terminal
 ```
 
 ## Notes
-Author: Markus Fleschutz · License: CC0
+Author: Markus Fleschutz / License: CC0
 
 ## Related Links
 https://github.com/fleschutz/PowerShell

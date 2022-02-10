@@ -1,6 +1,6 @@
 ## cd-downloads.ps1 - Sets the working directory to the user's downloads folder
 
-This script changes the working directory to the user's downloads folder.
+This PowerShell script changes the working directory to the user's downloads folder.
 
 ## Parameters
 ```powershell
@@ -19,7 +19,7 @@ PS> ./cd-downloads
 ```
 
 ## Notes
-Author: Markus Fleschutz · License: CC0
+Author: Markus Fleschutz / License: CC0
 
 ## Related Links
 https://github.com/fleschutz/PowerShell

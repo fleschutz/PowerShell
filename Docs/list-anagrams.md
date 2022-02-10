@@ -1,6 +1,6 @@
 ## list-anagrams.ps1 - Lists all anagrams of the given word
 
-This script lists all anagrams of the given word.
+This PowerShell script lists all anagrams of the given word.
 
 ## Parameters
 ```powershell
@@ -36,7 +36,7 @@ PS> ./list-anagrams Baby
 ```
 
 ## Notes
-Author: Markus Fleschutz · License: CC0
+Author: Markus Fleschutz / License: CC0
 
 ## Related Links
 https://github.com/fleschutz/PowerShell

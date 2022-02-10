@@ -1,6 +1,6 @@
 ## tell-joke.ps1 - Tells a joke by text-to-speech
 
-This script selects a random Chuck Norris joke in Data/jokes.csv and speaks it by text-to-speech (TTS).
+This PowerShell script selects a random Chuck Norris joke in Data/jokes.csv and speaks it by text-to-speech (TTS).
 
 ## Parameters
 ```powershell
@@ -18,7 +18,7 @@ PS> ./tell-joke
 ```
 
 ## Notes
-Author: Markus Fleschutz · License: CC0
+Author: Markus Fleschutz / License: CC0
 
 ## Related Links
 https://github.com/fleschutz/PowerShell

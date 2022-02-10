@@ -1,6 +1,6 @@
 ## play-imperial-march.ps1 - Plays the Imperial March (Star Wars)
 
-This script plays the Imperial March used in the Star Wars film series.
+This PowerShell script plays the Imperial March used in the Star Wars film series.
 
 ## Parameters
 ```powershell
@@ -19,7 +19,7 @@ PS> ./play-imperial-march
 ```
 
 ## Notes
-Author: Markus Fleschutz · License: CC0
+Author: Markus Fleschutz / License: CC0
 
 ## Related Links
 https://github.com/fleschutz/PowerShell

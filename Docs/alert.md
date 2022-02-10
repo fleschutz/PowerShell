@@ -1,6 +1,6 @@
 ## alert.ps1 - Handles and escalates an alert
 
-This script handles and escalates the given alert message.
+This PowerShell script handles and escalates the given alert message.
 
 ## Parameters
 ```powershell
@@ -27,7 +27,7 @@ PS> ./alert "Harddisk failure"
 ```
 
 ## Notes
-Author: Markus Fleschutz · License: CC0
+Author: Markus Fleschutz / License: CC0
 
 ## Related Links
 https://github.com/fleschutz/PowerShell

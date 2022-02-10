@@ -1,6 +1,6 @@
 ## open-calculator.ps1 - Launches the calculator application
 
-This script launches the calculator application.
+This PowerShell script launches the calculator application.
 
 ## Parameters
 ```powershell
@@ -18,7 +18,7 @@ PS> ./open-calculator
 ```
 
 ## Notes
-Author: Markus Fleschutz · License: CC0
+Author: Markus Fleschutz / License: CC0
 
 ## Related Links
 https://github.com/fleschutz/PowerShell

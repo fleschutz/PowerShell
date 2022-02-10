@@ -1,6 +1,6 @@
 ## play-frog-sound.ps1 - Plays a frog sound
 
-This script plays a frog sound.
+This PowerShell script plays a frog sound.
 
 ## Parameters
 ```powershell
@@ -14,11 +14,12 @@ play-frog-sound.ps1 [<CommonParameters>]
 ## Example
 ```powershell
 PS> ./play-frog-sound
+(listen and enjoy)
 
 ```
 
 ## Notes
-Author: Markus Fleschutz · License: CC0
+Author: Markus Fleschutz / License: CC0
 
 ## Related Links
 https://github.com/fleschutz/PowerShell

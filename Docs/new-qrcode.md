@@ -1,6 +1,6 @@
 ## new-qrcode.ps1 - Generates a new QR code image file
 
-This script generates a new QR code image file.
+This PowerShell script generates a new QR code image file.
 
 ## Parameters
 ```powershell
@@ -36,7 +36,7 @@ PS> ./new-qrcode "Fasten seatbelt" 500x500
 ```
 
 ## Notes
-Author: Markus Fleschutz · License: CC0
+Author: Markus Fleschutz / License: CC0
 
 ## Related Links
 https://github.com/fleschutz/PowerShell

@@ -1,6 +1,6 @@
 ## list-installed-software.ps1 - Lists the installed software
 
-This script lists the installed software (except Windows Store apps).
+This PowerShell script lists the installed software (except Windows Store apps).
 
 ## Parameters
 ```powershell
@@ -18,7 +18,7 @@ PS> ./list-installed-software
 ```
 
 ## Notes
-Author: Markus Fleschutz · License: CC0
+Author: Markus Fleschutz / License: CC0
 
 ## Related Links
 https://github.com/fleschutz/PowerShell

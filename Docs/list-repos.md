@@ -1,6 +1,6 @@
 ## list-repos.ps1 - Lists the details of all Git repositories in a folder
 
-This script lists the details of all Git repositories in the given folder.
+This PowerShell script lists the details of all Git repositories in the given folder.
 
 ## Parameters
 ```powershell
@@ -35,7 +35,7 @@ opencv      master clean
 ```
 
 ## Notes
-Author: Markus Fleschutz · License: CC0
+Author: Markus Fleschutz / License: CC0
 
 ## Related Links
 https://github.com/fleschutz/PowerShell

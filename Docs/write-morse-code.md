@@ -1,6 +1,6 @@
 ## write-morse-code.ps1 - Writes text in Morse code
 
-This script writes text in Morse code.
+This PowerShell script writes text in Morse code.
 
 ## Parameters
 ```powershell
@@ -36,7 +36,7 @@ PS> ./write-morse-code "Hello World"
 ```
 
 ## Notes
-Author: Markus Fleschutz · License: CC0
+Author: Markus Fleschutz / License: CC0
 
 ## Related Links
 https://github.com/fleschutz/PowerShell

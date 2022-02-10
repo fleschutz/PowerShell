@@ -1,6 +1,6 @@
 ## cd-desktop.ps1 - Sets the working directory to the user's desktop folder
 
-This script changes the working directory to the user's desktop folder.
+This PowerShell script changes the working directory to the user's desktop folder.
 
 ## Parameters
 ```powershell
@@ -19,7 +19,7 @@ PS> ./cd-desktop
 ```
 
 ## Notes
-Author: Markus Fleschutz · License: CC0
+Author: Markus Fleschutz / License: CC0
 
 ## Related Links
 https://github.com/fleschutz/PowerShell

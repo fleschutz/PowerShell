@@ -1,6 +1,6 @@
 ## simulate-matrix.ps1 - Simulates the Matrix (fun)
 
-This script simulates the Matrix (for fun).
+This PowerShell script simulates the Matrix (for fun).
 
 ## Parameters
 ```powershell
@@ -18,7 +18,7 @@ PS> ./simulate-matrix
 ```
 
 ## Notes
-Author: Markus Fleschutz · License: CC0
+Author: Markus Fleschutz / License: CC0
 
 ## Related Links
 https://github.com/fleschutz/PowerShell

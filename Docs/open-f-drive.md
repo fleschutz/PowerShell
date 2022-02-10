@@ -1,6 +1,6 @@
 ## open-f-drive.ps1 - Opens the F: drive folder
 
-This script launches the File Explorer with the F: drive folder.
+This PowerShell script launches the File Explorer with the F: drive folder.
 
 ## Parameters
 ```powershell
@@ -18,7 +18,7 @@ PS> ./open-f-drive
 ```
 
 ## Notes
-Author: Markus Fleschutz · License: CC0
+Author: Markus Fleschutz / License: CC0
 
 ## Related Links
 https://github.com/fleschutz/PowerShell

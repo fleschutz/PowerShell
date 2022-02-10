@@ -1,6 +1,6 @@
 ## upload-file.ps1 - Uploads a local file to a FTP server
 
-This script uploads a local file to a FTP server.
+This PowerShell script uploads a local file to a FTP server.
 
 ## Parameters
 ```powershell
@@ -54,7 +54,7 @@ PS> .\upload-file.ps1
 ```
 
 ## Notes
-Author: Markus Fleschutz · License: CC0
+Author: Markus Fleschutz / License: CC0
 
 ## Related Links
 https://github.com/fleschutz/PowerShell

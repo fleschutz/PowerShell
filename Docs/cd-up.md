@@ -1,6 +1,6 @@
 ## cd-up.ps1 - Sets the working directory to one level up
 
-This script changes the working directory to one directory level up.
+This PowerShell script changes the working directory to one directory level up.
 
 ## Parameters
 ```powershell
@@ -14,12 +14,11 @@ cd-up.ps1 [<CommonParameters>]
 ## Example
 ```powershell
 PS> .\cd-up
-(one level up)
 
 ```
 
 ## Notes
-Author: Markus Fleschutz · License: CC0
+Author: Markus Fleschutz / License: CC0
 
 ## Related Links
 https://github.com/fleschutz/PowerShell

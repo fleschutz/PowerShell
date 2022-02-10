@@ -1,6 +1,6 @@
 ## list-modules.ps1 - Lists all PowerShell modules
 
-This script lists all installed PowerShell modules.
+This PowerShell script lists all installed PowerShell modules.
 
 ## Parameters
 ```powershell
@@ -25,7 +25,7 @@ Manifest   3.1.0.0    Microsoft.PowerShell.Utility        {Add-Member, Add-Type,
 ```
 
 ## Notes
-Author: Markus Fleschutz · License: CC0
+Author: Markus Fleschutz / License: CC0
 
 ## Related Links
 https://github.com/fleschutz/PowerShell

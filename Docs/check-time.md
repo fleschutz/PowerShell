@@ -1,6 +1,6 @@
 ## check-time.ps1 - Determines the current time
 
-This script determines and speaks the current time by text-to-speech (TTS).
+This PowerShell script determines and speaks the current time by text-to-speech (TTS).
 
 ## Parameters
 ```powershell
@@ -18,7 +18,7 @@ PS> ./check-time
 ```
 
 ## Notes
-Author: Markus Fleschutz · License: CC0
+Author: Markus Fleschutz / License: CC0
 
 ## Related Links
 https://github.com/fleschutz/PowerShell

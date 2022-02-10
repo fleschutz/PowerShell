@@ -1,6 +1,6 @@
 ## open-apps-folder.ps1 - Opens the Apps folder
 
-This script launches the File Explorer showing the UWP apps folder.
+This PowerShell script launches the File Explorer showing the UWP apps folder.
 
 ## Parameters
 ```powershell
@@ -18,7 +18,7 @@ PS> ./open-apps-folder
 ```
 
 ## Notes
-Author: Markus Fleschutz · License: CC0
+Author: Markus Fleschutz / License: CC0
 
 ## Related Links
 https://github.com/fleschutz/PowerShell

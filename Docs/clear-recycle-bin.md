@@ -1,7 +1,7 @@
-## clear-recycle-bin.ps1 - Removes the content of the recycle bin folder permanently
+## clear-recycle-bin.ps1 - Clears the recycle bin folder
 
-This script removes the content of the recycle bin folder permanently.
-NOTE: can not be undo!
+This PowerShell script removes the content of the recycle bin folder permanently.
+IMPORTANT NOTE: this cannot be undo!
 
 ## Parameters
 ```powershell
@@ -15,12 +15,11 @@ clear-recycle-bin.ps1 [<CommonParameters>]
 ## Example
 ```powershell
 PS> ./clear-recycle-bin
-✔️ cleared recycle bin
 
 ```
 
 ## Notes
-Author: Markus Fleschutz · License: CC0
+Author: Markus Fleschutz / License: CC0
 
 ## Related Links
 https://github.com/fleschutz/PowerShell

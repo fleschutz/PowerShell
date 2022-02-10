@@ -1,6 +1,6 @@
 ## open-google-contacts.ps1 - Opens Google Contacts
 
-This script launches the Web browser with the Google Contacts website.
+This PowerShell script launches the Web browser with the Google Contacts website.
 
 ## Parameters
 ```powershell
@@ -18,7 +18,7 @@ PS> ./open-google-contacts
 ```
 
 ## Notes
-Author: Markus Fleschutz · License: CC0
+Author: Markus Fleschutz / License: CC0
 
 ## Related Links
 https://github.com/fleschutz/PowerShell

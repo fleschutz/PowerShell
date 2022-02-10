@@ -1,6 +1,6 @@
 ## convert-csv2txt.ps1 - Converts a .CSV file into a text file
 
-This script converts a .CSV file into a text file.
+This PowerShell script converts a .CSV file into a text file.
 
 ## Parameters
 ```powershell
@@ -27,7 +27,7 @@ PS> ./convert-csv2txt salaries.csv
 ```
 
 ## Notes
-Author: Markus Fleschutz · License: CC0
+Author: Markus Fleschutz / License: CC0
 
 ## Related Links
 https://github.com/fleschutz/PowerShell

@@ -1,6 +1,6 @@
 ## close-task-manager.ps1 - Closes the Task Manager
 
-This script closes the Task Manager application gracefully.
+This PowerShell script closes the Task Manager application gracefully.
 
 ## Parameters
 ```powershell
@@ -18,7 +18,7 @@ PS> ./close-task-manager
 ```
 
 ## Notes
-Author: Markus Fleschutz · License: CC0
+Author: Markus Fleschutz / License: CC0
 
 ## Related Links
 https://github.com/fleschutz/PowerShell

@@ -1,6 +1,6 @@
 ## list-branches.ps1 - Lists all branches in a Git repository
 
-This script lists all branches in a Git repository.
+This PowerShell script lists all branches in a Git repository.
 
 ## Parameters
 ```powershell
@@ -36,7 +36,7 @@ PS> ./list-branches
 ```
 
 ## Notes
-Author: Markus Fleschutz · License: CC0
+Author: Markus Fleschutz / License: CC0
 
 ## Related Links
 https://github.com/fleschutz/PowerShell

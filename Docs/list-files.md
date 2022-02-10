@@ -1,6 +1,6 @@
 ## list-files.ps1 - Lists all files in a directory tree
 
-This script lists all files within the given directory tree.
+This PowerShell script lists all files within the given directory tree.
 
 ## Parameters
 ```powershell
@@ -27,7 +27,7 @@ PS> ./list-files C:\
 ```
 
 ## Notes
-Author: Markus Fleschutz · License: CC0
+Author: Markus Fleschutz / License: CC0
 
 ## Related Links
 https://github.com/fleschutz/PowerShell
