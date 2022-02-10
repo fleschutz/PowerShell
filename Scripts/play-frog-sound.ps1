@@ -2,11 +2,12 @@
 .SYNOPSIS
 	Plays a frog sound
 .DESCRIPTION
-	This script plays a frog sound.
+	This PowerShell script plays a frog sound.
 .EXAMPLE
 	PS> ./play-frog-sound
+	(listen and enjoy)
 .NOTES
-	Author: Markus Fleschutz · License: CC0
+	Author: Markus Fleschutz / License: CC0
 .LINK
 	https://github.com/fleschutz/PowerShell
 #>

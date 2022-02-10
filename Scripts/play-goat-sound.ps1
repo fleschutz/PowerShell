@@ -2,11 +2,12 @@
 .SYNOPSIS
 	Plays a goat sound
 .DESCRIPTION
-	This script plays a goat sound.
+	This PowerShell script plays a goat sound.
 .EXAMPLE
 	PS> ./play-goat-sound
+	(listen and enjoy)
 .NOTES
-	Author: Markus Fleschutz · License: CC0
+	Author: Markus Fleschutz / License: CC0
 .LINK
 	https://github.com/fleschutz/PowerShell
 #>

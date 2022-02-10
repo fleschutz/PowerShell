@@ -2,13 +2,13 @@
 .SYNOPSIS
 	Plays audio files (MP3 and WAV)
 .DESCRIPTION
-	This script plays the given audio files (supporting MP3 and WAV format).
+	This PowerShell script plays the given audio files (supporting MP3 and WAV format).
 .PARAMETER FilePattern
 	Specifies the file pattern
 .EXAMPLE
 	PS> ./play-files *.mp3
 .NOTES
-	Author: Markus Fleschutz · License: CC0
+	Author: Markus Fleschutz / License: CC0
 .LINK
 	https://github.com/fleschutz/PowerShell
 #>

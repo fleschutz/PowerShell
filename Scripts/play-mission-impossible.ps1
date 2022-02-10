@@ -2,11 +2,12 @@
 .SYNOPSIS
 	Plays the Mission Impossible theme
 .DESCRIPTION
-	This script plays the Mission Impossible theme.
+	This PowerShell script plays the Mission Impossible theme.
 .EXAMPLE
 	PS> ./play-mission-impossible
+	(listen and enjoy)
 .NOTES
-	Author: Markus Fleschutz · License: CC0
+	Author: Markus Fleschutz / License: CC0
 .LINK
 	https://github.com/fleschutz/PowerShell
 #>

@@ -2,11 +2,12 @@
 .SYNOPSIS
 	Plays a bee sound
 .DESCRIPTION
-	This script plays a bee sound.
+	This PowerShell script plays a bee sound.
 .EXAMPLE
 	PS> ./play-bee-sound
+	(listen and enjoy)
 .NOTES
-	Author: Markus Fleschutz · License: CC0
+	Author: Markus Fleschutz / License: CC0
 .LINK
 	https://github.com/fleschutz/PowerShell
 #>

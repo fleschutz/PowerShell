@@ -2,11 +2,12 @@
 .SYNOPSIS
 	Plays a vulture sound
 .DESCRIPTION
-	This script plays a vulture sound.
+	This PowerShell script plays a vulture sound.
 .EXAMPLE
 	PS> ./play-vulture-sound
+	(listen and enjoy)
 .NOTES
-	Author: Markus Fleschutz · License: CC0
+	Author: Markus Fleschutz / License: CC0
 .LINK
 	https://github.com/fleschutz/PowerShell
 #>

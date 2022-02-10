@@ -2,11 +2,12 @@
 .SYNOPSIS
 	Plays a pig sound
 .DESCRIPTION
-	This script plays a pig sound.
+	This PowerShell script plays a pig sound.
 .EXAMPLE
 	PS> ./play-pig-sound
+	(listen and enjoy)
 .NOTES
-	Author: Markus Fleschutz · License: CC0
+	Author: Markus Fleschutz / License: CC0
 .LINK
 	https://github.com/fleschutz/PowerShell
 #>

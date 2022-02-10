@@ -2,11 +2,12 @@
 .SYNOPSIS
 	Plays the Super Mario intro
 .DESCRIPTION
-	This script plays the Super Mario intro.
+	This PowerShell script plays the Super Mario intro.
 .EXAMPLE
 	PS> ./play-super-mario
+	(listen and enjoy)
 .NOTES
-	Author: Markus Fleschutz · License: CC0
+	Author: Markus Fleschutz / License: CC0
 .LINK
 	https://github.com/fleschutz/PowerShell
 #>

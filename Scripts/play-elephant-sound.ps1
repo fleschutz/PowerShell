@@ -1,12 +1,13 @@
 ﻿<#
 .SYNOPSIS
-	Plays a elephant sound
+	Plays an elephant sound
 .DESCRIPTION
-	This script plays a elephant sound.
+	This PowerShell script plays an elephant sound.
 .EXAMPLE
 	PS> ./play-elephant-sound
+	(listen and enjoy)
 .NOTES
-	Author: Markus Fleschutz · License: CC0
+	Author: Markus Fleschutz / License: CC0
 .LINK
 	https://github.com/fleschutz/PowerShell
 #>

@@ -2,11 +2,12 @@
 .SYNOPSIS
 	Plays an elk sound
 .DESCRIPTION
-	This script plays an elk sound.
+	This PowerShell script plays an elk sound.
 .EXAMPLE
 	PS> ./play-elk-sound
+	(listen and enjoy)
 .NOTES
-	Author: Markus Fleschutz · License: CC0
+	Author: Markus Fleschutz / License: CC0
 .LINK
 	https://github.com/fleschutz/PowerShell
 #>

@@ -2,13 +2,14 @@
 .SYNOPSIS
 	Plays a playlist (.M3U format)
 .DESCRIPTION
-	This script plays the given playlist (in .M3U file format)
+	This PowerShell script plays the given playlist (in .M3U file format)
 .PARAMETER filename
 	Specifies the path to the playlist
 .EXAMPLE
 	PS> ./play-m3u C:\MyPlaylist.m3u
+	(listen and enjoy)
 .NOTES
-	Author: Markus Fleschutz · License: CC0
+	Author: Markus Fleschutz / License: CC0
 .LINK
 	https://github.com/fleschutz/PowerShell
 #>

@@ -2,11 +2,11 @@
 .SYNOPSIS
 	Plays a cat sound
 .DESCRIPTION
-	This script plays a cat sound.
+	This PowerShell script plays a cat sound.
 .EXAMPLE
 	PS> ./play-cat-sound
 .NOTES
-	Author: Markus Fleschutz · License: CC0
+	Author: Markus Fleschutz / License: CC0
 .LINK
 	https://github.com/fleschutz/PowerShell
 #>

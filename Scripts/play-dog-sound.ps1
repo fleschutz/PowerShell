@@ -2,11 +2,11 @@
 .SYNOPSIS
 	Plays a dog sound
 .DESCRIPTION
-	This script plays a dog sound.
+	This PowerShell script plays a dog sound.
 .EXAMPLE
 	PS> ./play-dog-sound
 .NOTES
-	Author: Markus Fleschutz · License: CC0
+	Author: Markus Fleschutz / License: CC0
 .LINK
 	https://github.com/fleschutz/PowerShell
 #>

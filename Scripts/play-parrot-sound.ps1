@@ -2,11 +2,12 @@
 .SYNOPSIS
 	Plays a parrot sound
 .DESCRIPTION
-	This script plays a parrot sound.
+	This PowerShell script plays a parrot sound.
 .EXAMPLE
 	PS> ./play-parrot-sound
+	(listen and enjoy)
 .NOTES
-	Author: Markus Fleschutz · License: CC0
+	Author: Markus Fleschutz / License: CC0
 .LINK
 	https://github.com/fleschutz/PowerShell
 #>

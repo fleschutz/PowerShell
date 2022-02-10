@@ -2,13 +2,14 @@
 .SYNOPSIS
 	Plays a MP3 sound file 
 .DESCRIPTION
-	This script plays a sound file in .MP3 file format.
+	This PowerShell script plays a sound file in .MP3 file format.
 .PARAMETER Path
 	Specifies the path to the .MP3 file
 .EXAMPLE
 	PS> ./play-mp3 C:\thunder.mp3
+	(listen and enjoy)
 .NOTES
-	Author: Markus Fleschutz · License: CC0
+	Author: Markus Fleschutz / License: CC0
 .LINK
 	https://github.com/fleschutz/PowerShell
 #>

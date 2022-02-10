@@ -2,11 +2,11 @@
 .SYNOPSIS
 	Plays a cow sound
 .DESCRIPTION
-	This script plays a cow sound.
+	This PowerShell script plays a cow sound.
 .EXAMPLE
 	PS> ./play-cow-sound
 .NOTES
-	Author: Markus Fleschutz · License: CC0
+	Author: Markus Fleschutz / License: CC0
 .LINK
 	https://github.com/fleschutz/PowerShell
 #>

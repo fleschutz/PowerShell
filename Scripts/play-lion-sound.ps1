@@ -2,11 +2,12 @@
 .SYNOPSIS
 	Plays a lion sound
 .DESCRIPTION
-	This script plays a lion sound.
+	This PowerShell script plays a lion sound.
 .EXAMPLE
 	PS> ./play-lion-sound
+	(listen and enjoy)
 .NOTES
-	Author: Markus Fleschutz · License: CC0
+	Author: Markus Fleschutz / License: CC0
 .LINK
 	https://github.com/fleschutz/PowerShell
 #>
