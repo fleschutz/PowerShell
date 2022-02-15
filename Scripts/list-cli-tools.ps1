@@ -100,6 +100,7 @@ function ListTools {
 	CheckFor md5sum "--version"
 	CheckFor mkfifo "--version"
 	CheckFor mount	"--version"
+	CheckFor MpCmdRun "-h"
 	CheckFor nice	"--version"
 	CheckFor nroff	"--version"
 	CheckFor nslookup ""
