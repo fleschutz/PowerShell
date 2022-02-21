@@ -1,12 +1,12 @@
 ﻿<#
 .SYNOPSIS
-	Creates and switches to a new branch in a Git repository
+	Create a New Git Branch 
 .DESCRIPTION
 	This PowerShell script creates and switches to a new branch in a Git repository.
 .PARAMETER BranchName
-	Specifies the branch name
+	Specifies the branch name (or needs to be entered)
 .PARAMETER RepoDir
-	Specifies the path to the Git repository
+	Specifies the path to the Git repository (or working directory per default)
 .EXAMPLE
 	PS> ./new-branch test123
 .LINK
@@ -22,6 +22,7 @@ try {
 
 	$StopWatch = [system.diagnostics.stopwatch]::startNew()
 
+	"⏳ Step 1/4: Checking requirements... "
 	if (-not(test-path "$RepoDir" -pathType container)) { throw "Can't access directory: $RepoDir" }
 	set-location "$RepoDir"
 
@@ -29,17 +30,18 @@ try {
 	if ($lastExitCode -ne "0") { throw "Can't execute 'git' - make sure Git is installed and available" }
 
 	$RepoDirName = (get-item "$RepoDir").Name
-	"🢃 Fetching updates for Git repository 📂$RepoDirName ..."
-
+	"⏳ Step 2/4: Fetching updates..."
 	& git fetch --all --recurse-submodules --prune --prune-tags --force
 	if ($lastExitCode -ne "0") { throw "'git fetch' failed" }
 
+	"⏳ Step 3/4: Checkout and push new branch..."
 	& git checkout -b "$BranchName"
 	if ($lastExitCode -ne "0") { throw "'git checkout -b $BranchName' failed" }
 
 	& git push origin "$BranchName"
 	if ($lastExitCode -ne "0") { throw "'git push origin $BranchName' failed" }
 
+	"⏳ Step 4/4: Updating submodules..."
 	& git submodule update --init --recursive
 	if ($lastExitCode -ne "0") { throw "'git submodule update' failed" }
 
