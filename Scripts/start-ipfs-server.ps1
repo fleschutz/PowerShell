@@ -29,7 +29,7 @@ try {
 	if ($lastExitCode -ne "0") { throw "'ipfs config Addresses.Gateway' failed" }
 
 	$Hostname = $(hostname)
-	& ipfs config --json API.HTTPHeaders.Access-Control-Allow-Origin '[\"http://pi:5001\", \"http://localhost:3000\", \"http://127.0.0.1:5001\", \"https://webui.ipfs.io\"]'
+	& ipfs config --json API.HTTPHeaders.Access-Control-Allow-Origin '[\"http://miami:5001\", \"http://localhost:3000\", \"http://127.0.0.1:5001\", \"https://webui.ipfs.io\"]'
 	if ($lastExitCode -ne "0") { throw "'ipfs config Access-Control-Allow-Origin' failed" }
 
 	& ipfs config --json API.HTTPHeaders.Access-Control-Allow-Methods '[\"PUT\", \"POST\"]'
