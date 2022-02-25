@@ -19,12 +19,12 @@ function Get-CurrentUserSID { [CmdletBinding()] param()
 
 
 try {
-	$TargetDir = 'C:\$Recycle.Bin\' + "$(Get-CurrentUserSID)"
-	if (-not(test-path "$TargetDir" -pathType container)) {
-		throw "Recycle bin folder at 📂$TargetDir doesn't exist (yet)"
+	$Path = 'C:\$Recycle.Bin\' + "$(Get-CurrentUserSID)"
+	if (-not(test-path "$Path" -pathType container)) {
+		throw "Recycle bin folder at 📂$Path doesn't exist (yet)"
 	}
-	set-location "$TargetDir"
-	"📂$TargetDir"
+	set-location "$Path"
+	"📂$Path"
 	exit 0 # success
 } catch {
 	"⚠️ Error: $($Error[0]) ($($MyInvocation.MyCommand.Name):$($_.InvocationInfo.ScriptLineNumber))"

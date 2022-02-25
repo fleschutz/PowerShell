@@ -14,15 +14,15 @@
 
 try {
 	if ($IsLinux) {
-		$DocsFolder = Resolve-Path "$HOME/Documents"
+		$Path = Resolve-Path "$HOME/Documents"
 	} else {
-		$DocsFolder = [Environment]::GetFolderPath('MyDocuments')
+		$Path = [Environment]::GetFolderPath('MyDocuments')
 	}
-	if (-not(Test-Path "$DocsFolder" -pathType container)) {
-		throw "Documents folder at 📂$DocsFolder doesn't exist (yet)"
+	if (-not(Test-Path "$Path" -pathType container)) {
+		throw "Documents folder at 📂$Path doesn't exist (yet)"
 	}
-	set-location "$DocsFolder"
-	"📂$DocsFolder"
+	set-location "$Path"
+	"📂$Path"
 	exit 0 # success
 } catch {
 	"⚠️ Error: $($Error[0]) ($($MyInvocation.MyCommand.Name):$($_.InvocationInfo.ScriptLineNumber))"

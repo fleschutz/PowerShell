@@ -5,7 +5,7 @@
 	This PowerShell script changes the working directory to the user's music folder.
 .EXAMPLE
 	PS> ./cd-music
-	📂/home/markus/Music
+	📂/home/Joe/Music
 .LINK
 	https://github.com/fleschutz/PowerShell
 .NOTES
@@ -13,12 +13,16 @@
 #>
 
 try {
-	$TargetDir = resolve-path "$HOME/Music"
-	if (-not(test-path "$TargetDir" -pathType container)) {
-		throw "Music folder at 📂$TargetDir doesn't exist (yet)"
+	if ($IsLinux) {
+		$Path = Resolve-Path "$HOME/Music"
+	} else {
+		$Path = [Environment]::GetFolderPath('MyMusic')
 	}
-	set-location "$TargetDir"
-	"📂$TargetDir"
+	if (-not(Test-Path "$Path" -pathType container)) {
+		throw "Music folder at 📂$Path doesn't exist (yet)"
+	}
+	set-location "$Path"
+	"📂$Path"
 	exit 0 # success
 } catch {
 	"⚠️ Error: $($Error[0]) ($($MyInvocation.MyCommand.Name):$($_.InvocationInfo.ScriptLineNumber))"

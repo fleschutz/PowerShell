@@ -5,7 +5,7 @@
 	This PowerShell script changes the working directory to the user's videos folder.
 .EXAMPLE
 	PS> ./cd-videos
-	📂/home/markus/Videos
+	📂/home/Joe/Videos
 .LINK
 	https://github.com/fleschutz/PowerShell
 .NOTES
@@ -13,12 +13,16 @@
 #>
 
 try {
-	$TargetDir = resolve-path "$HOME/Videos"
-	if (-not(test-path "$TargetDir" -pathType container)) {
-		throw "Videos folder at 📂$TargetDir doesn't exist (yet)"
+	if ($IsLinux) {
+		$Path = Resolve-Path "$HOME/Videos"
+	} else {
+		$Path = [Environment]::GetFolderPath('MyVideos')
 	}
-	set-location "$TargetDir"
-	"📂$TargetDir"
+	if (-not(Test-Path "$Path" -pathType container)) {
+		throw "Videos folder at 📂$Path doesn't exist (yet)"
+	}
+	set-location "$Path"
+	"📂$Path"
 	exit 0 # success
 } catch {
 	"⚠️ Error: $($Error[0]) ($($MyInvocation.MyCommand.Name):$($_.InvocationInfo.ScriptLineNumber))"

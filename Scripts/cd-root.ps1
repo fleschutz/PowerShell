@@ -14,15 +14,15 @@
 
 try {
 	if ($IsLinux) {
-		$TargetDir = resolve-path "/"
+		$Path = resolve-path "/"
 	} else {
-		$TargetDir = resolve-path "C:\"
+		$Path = resolve-path "C:\"
 	}
-	if (-not(test-path "$TargetDir" -pathType container)) {
-		throw "Root directory at 📂$TargetDir doesn't exist (yet)"
+	if (-not(test-path "$Path" -pathType container)) {
+		throw "Root directory at 📂$Path doesn't exist (yet)"
 	}
-	set-location "$TargetDir"
-	"📂$TargetDir"
+	set-location "$Path"
+	"📂$Path"
 	exit 0 # success
 } catch {
 	"⚠️ Error: $($Error[0]) ($($MyInvocation.MyCommand.Name):$($_.InvocationInfo.ScriptLineNumber))"

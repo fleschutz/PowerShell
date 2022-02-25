@@ -12,12 +12,12 @@
 #>
 
 try {
-	$TargetDir = resolve-path "../../.."
-	if (-not(test-path "$TargetDir" -pathType container)) {
-		throw "Folder at 📂$TargetDir doesn't exist (yet)"
+	$Path = resolve-path "../../.."
+	if (-not(test-path "$Path" -pathType container)) {
+		throw "Folder at 📂$Path doesn't exist (yet)"
 	}
-	set-location "$TargetDir"
-	"📂$TargetDir"
+	set-location "$Path"
+	"📂$Path"
 	exit 0 # success
 } catch {
 	"⚠️ Error: $($Error[0]) ($($MyInvocation.MyCommand.Name):$($_.InvocationInfo.ScriptLineNumber))"

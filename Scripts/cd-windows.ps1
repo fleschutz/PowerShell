@@ -13,12 +13,12 @@
 #>
 
 try {
-	$TargetDir = resolve-path "$env:WINDIR"
-	if (-not(test-path "$TargetDir" -pathType container)) {
-		throw "Windows directory at 📂$TargetDir doesn't exist"
+	$Path = resolve-path "$env:WINDIR"
+	if (-not(test-path "$Path" -pathType container)) {
+		throw "Windows directory at 📂$Path doesn't exist"
 	}
-	set-location "$TargetDir"
-	"📂$TargetDir"
+	set-location "$Path"
+	"📂$Path"
 	exit 0 # success
 } catch {
 	"⚠️ Error: $($Error[0]) ($($MyInvocation.MyCommand.Name):$($_.InvocationInfo.ScriptLineNumber))"
