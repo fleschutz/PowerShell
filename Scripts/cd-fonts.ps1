@@ -5,6 +5,7 @@
 	This PowerShell script changes the working directory to the fonts folder.
 .EXAMPLE
 	PS> ./cd-fonts
+	📂C:\Windows\Fonts
 .LINK
 	https://github.com/fleschutz/PowerShell
 .NOTES
