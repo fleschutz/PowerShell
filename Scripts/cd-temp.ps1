@@ -13,16 +13,18 @@
 #>
 
 function GetTempDir {
-	if ($IsLinux) { return "/tmp" }
-	return "$env:TEMP"
+        if ("$env:TEMP" -ne "") { return "$env:TEMP" }
+        if ("$env:TMP" -ne "")  { return "$env:TMP" }
+        if ($IsLinux) { return "/tmp" }
+        return "C:\Temp"
 }
 
 try {
-	$Path = resolve-path GetTempDir
-	if (-not(test-path "$Path" -pathType container)) {
+	$Path = GetTempDir
+	if (-not(Test-Path "$Path" -pathType container)) {
 		throw "Temporary folder at 📂$Path doesn't exist (yet)"
 	}
-	set-location "$Path"
+	Set-Location "$Path"
 	"📂$Path"
 	exit 0 # success
 } catch {
