@@ -13,11 +13,11 @@
 #>
 
 try {
-	$Path = resolve-path "$HOME/Dropbox"
-	if (-not(test-path "$Path" -pathType container)) {
+	$Path = Resolve-Path "$HOME/Dropbox"
+	if (-not(Test-Path "$Path" -pathType container)) {
 		throw "Dropbox folder at 📂$Path doesn't exist (yet)"
 	}
-	set-location "$Path"
+	Set-Location "$Path"
 	"📂$Path"
 	exit 0 # success
 } catch {
