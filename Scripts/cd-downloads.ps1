@@ -5,7 +5,7 @@
 	This PowerShell script changes the working directory to the user's downloads folder.
 .EXAMPLE
 	PS> ./cd-downloads
-	📂/home/Joe/Downloads
+	📂C:\Users\Joe\Downloads
 .LINK
 	https://github.com/fleschutz/PowerShell
 .NOTES
@@ -13,11 +13,15 @@
 #>
 
 try {
-	$Path = resolve-path "$HOME/Downloads"
-	if (-not(test-path "$Path" -pathType container)) {
+	if ($IsLinux) {
+		$Path = Resolve-Path "$HOME/Downloads"
+	} else {
+		$Path = (New-Object -ComObject Shell.Application).NameSpace('shell:Downloads').Self.Path
+	}
+	if (-not(Test-Path "$Path" -pathType container)) {
 		throw "Downloads folder at 📂$Path doesn't exist (yet)"
 	}
-	set-location "$Path"
+	Set-Location "$Path"
 	"📂$Path"
 	exit 0 # success
 } catch {
