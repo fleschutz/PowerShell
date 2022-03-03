@@ -33,13 +33,13 @@ try {
 	if (($Mode -eq "locally") -or ($Mode -eq "both")) {
 		"Removing local tag..."
 		& git -C "$RepoDir" tag --delete $TagName
-		if ($lastExitCode -ne "0") { throw "'git tag --delete' failed" }
+		if ($lastExitCode -ne "0") { throw "'git tag --delete' failed with exit code $lastExitCode" }
 	}
 
 	if (($Mode -eq "remote") -or ($Mode -eq "both")) {
 		"Removing remote tag..."
 		& git -C "$RepoDir" push origin :refs/tags/$TagName
-		if ($lastExitCode -ne "0") { throw "'git push origin' failed" }
+		if ($lastExitCode -ne "0") { throw "'git push origin' failed with exit code $lastExitCode" }
 	}
 
 	[int]$Elapsed = $StopWatch.Elapsed.TotalSeconds

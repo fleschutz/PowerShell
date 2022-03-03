@@ -34,10 +34,10 @@ try {
 		"⏳ Step $Step/$($FolderCount): Cleaning 📂$FolderName..."
 
 		& git -C "$Folder" clean -xfd -f # force + recurse into dirs + don't use the standard ignore rules
-		if ($lastExitCode -ne "0") { throw "'git clean -xfd -f' failed" }
+		if ($lastExitCode -ne "0") { throw "'git clean -xfd -f' failed with exit code $lastExitCode" }
 
 		& git -C "$Folder" submodule foreach --recursive git clean -xfd -f 
-		if ($lastExitCode -ne "0") { throw "'git clean -xfd -f' in submodules failed" }
+		if ($lastExitCode -ne "0") { throw "'git clean -xfd -f' in submodules failed with exit code $lastExitCode" }
 
 		$Step++
 	}

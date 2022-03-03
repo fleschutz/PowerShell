@@ -27,11 +27,11 @@ try {
 
 	"⏳ Step 2/3: Cleaning repository..."
 	& git -C "$RepoDir" clean -xfd -f # force + recurse into dirs + don't use the standard ignore rules
-	if ($lastExitCode -ne "0") { throw "'git clean -xfd -f' failed (exited with $lastExitCode)" }
+	if ($lastExitCode -ne "0") { throw "'git clean -xfd -f' failed with exit code $lastExitCode)" }
 
 	"⏳ Step 3/3: Cleaning submodules..."
 	& git -C "$RepoDir" submodule foreach --recursive git clean -xfd -f
-	if ($lastExitCode -ne "0") { throw "'git clean -xfd -f' in submodules failed (exited with $lastExitCode)" }
+	if ($lastExitCode -ne "0") { throw "'git clean -xfd -f' in submodules failed with exit code $lastExitCode)" }
 
 	$RepoDirName = (get-item "$RepoDir").Name
 	[int]$Elapsed = $StopWatch.Elapsed.TotalSeconds

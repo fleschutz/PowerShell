@@ -23,21 +23,21 @@ try {
 
 	"⏳ Step 3/5: Configuring IPFS..."
 	& ipfs config Addresses.API /ip4/0.0.0.0/tcp/5001
-	if ($lastExitCode -ne "0") { throw "'ipfs config Addresses.API' failed" }
+	if ($lastExitCode -ne "0") { throw "'ipfs config Addresses.API' failed (exit code $lastExitCode)" }
 
 	& ipfs config Addresses.Gateway /ip4/0.0.0.0/tcp/8765
-	if ($lastExitCode -ne "0") { throw "'ipfs config Addresses.Gateway' failed" }
+	if ($lastExitCode -ne "0") { throw "'ipfs config Addresses.Gateway' failed (exit code $lastExitCode)" }
 
 	$Hostname = $(hostname)
 	& ipfs config --json API.HTTPHeaders.Access-Control-Allow-Origin '[\"http://paris:5001\", \"http://localhost:3000\", \"http://127.0.0.1:5001\", \"https://webui.ipfs.io\"]'
-	if ($lastExitCode -ne "0") { throw "'ipfs config Access-Control-Allow-Origin' failed" }
+	if ($lastExitCode -ne "0") { throw "'ipfs config Access-Control-Allow-Origin' failed (exit code $lastExitCode)" }
 
 	& ipfs config --json API.HTTPHeaders.Access-Control-Allow-Methods '[\"PUT\", \"POST\"]'
-	if ($lastExitCode -ne "0") { throw "'ipfs config Access-Control-Allow-Methods' failed" }
+	if ($lastExitCode -ne "0") { throw "'ipfs config Access-Control-Allow-Methods' failed (exit code $lastExitCode)" }
 	""
 	"⏳ Step 4/5: Increasing UDP receive buffer size..."
 	& sudo sysctl -w net.core.rmem_max=2500000
-	if ($lastExitCode -ne "0") { throw "'sysctl' failed" }
+	if ($lastExitCode -ne "0") { throw "'sysctl' failed (exit code $lastExitCode)" }
 	""
 	"⏳ Step 5/5: Starting IPFS daemon..."
 #	Start-Process nohup 'ipfs daemon'
