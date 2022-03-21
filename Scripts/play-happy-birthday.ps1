@@ -5,7 +5,6 @@
         This PowerShell script plays the well-known Happy Birthday song.
 .EXAMPLE
         PS> ./play-happy-birthday
-	(listen and enjoy)
 .NOTES
 	Author: Markus Fleschutz / License: CC0
 .LINK
