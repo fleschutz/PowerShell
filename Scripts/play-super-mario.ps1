@@ -5,7 +5,6 @@
 	This PowerShell script plays the Super Mario intro.
 .EXAMPLE
 	PS> ./play-super-mario
-	(listen and enjoy)
 .NOTES
 	Author: Markus Fleschutz / License: CC0
 .LINK
