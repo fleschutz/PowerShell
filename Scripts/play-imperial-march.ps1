@@ -5,7 +5,6 @@
 	This PowerShell script plays the Imperial March used in the Star Wars film series.
 .EXAMPLE
 	PS> ./play-imperial-march
-	(listen and enjoy)
 .NOTES
 	Author: Markus Fleschutz / License: CC0
 .LINK
