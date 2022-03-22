@@ -118,6 +118,8 @@ ARLNO,Airline Office
 ARP,Airport Reference Point
 ARTCC,Air Route Traffic Control Centre
 ASB,Airspace Block
+ASDE,Airport Surface Detection Equipment
+ASDE-X,"Airport Surface Detection Equipment, model X"
 ATA,Actual Time of Arrival
 ATC,Air Traffic Control
 ATIS,Automatic Terminal Information Service
@@ -158,16 +160,18 @@ CESC,Chief Executive Standing Conference
 CFIT,Controlled Flight Into Terrain
 CFMU,Central Flow Management Unit
 COG,Center of Gravity
+CON,Control
 CGD,Combined Graphic Display
 CISM,Critical Incident Stress Management
 CLC,Course Line Computer
+CLNC,Clearance
 CRDA,Converging Runway Display Aid
 CMIC,Civil/Military Interface Standing Committee
 CNS,"Communication, Navigation, Surveillance"
 CODA,Central Office for Delay Analysis
 ConOps,Concept of Operations
 COPS,Changeover Point(s)
-CORA, Conflict Resolution Advisory
+CORA,Conflict Resolution Advisory
 COTS,Commercial Of-The-Shelf
 CPA,Closest Point of Approach
 CPDLC,Controller Pilot Data Link Communication
@@ -185,6 +189,7 @@ CWS,Collision Warning System
 CWP,Controller Working Position
 DAS,DFS Aviation Services (DFS subcompany for services outside Germany)
 DCIA,Dependent Converging Instrument Approach
+DEL,Delivery
 DFS,Deutsche Flugsicherung (ATC in Germany)
 DGAC,Direction générale de l'aviation civile
 DTI,Direction Technique Innovation
@@ -192,10 +197,12 @@ DW,Downwind
 EAS,Equivalent Airspeed
 EAVA,Estonian Aviation Academy
 ECAC,European Civil Aviation Conference
+ELEV,Field Elevation
 EFM,Gesellschaft für Enteisen und Flugzeugschleppen
 ETA,Estimated Time of Arrival
 ETOPS,Extended-range Twin-engine Operational Performance Standards
-ETVS,Enhanced Terminal Voice Switch system
+ETVS,Electronic Terminal Voice Switch
+FAA,U.S. Federal Aviation Administration
 FAR,Fuel Air Ratio
 FAS,Final Approach Segment
 FAS,Final Approach Speed
@@ -224,6 +231,7 @@ FL,Flight Level
 FMG,Flughafen München GmbH
 FOD,Foreign Object Debris
 FOV,Field of View
+GND,Ground
 GP,Glide Path
 GPS,Global Positioning System
 GS,Ground Speed or Glideslope
@@ -250,6 +258,7 @@ LVP,Low Visibility Procedures
 MATS,Malta Air Traffic Services
 MEA,Minimum En-route Altitude
 METAR,Meteorological Aerodrome Report
+MLW,Maximum Landing Weight
 MSL,Median Sea Level
 MSTA,Minimum Safe Turning Altitude
 MTOW,Maximum Take-Off Weight
@@ -262,8 +271,9 @@ PIC,Pilot in Command
 PNF,Pilot Not Flying 
 POH,Pilot's Operating Handbook
 PPL,Private Pilot's License
+PTAC,"Position, Turn, Altitude, Clearance (also known as Approach Clearance)"
 PtF,Permit to Fly
-QFE,the altimeter setting that will cause the altimeter to read the height above a specific aerodrome or ground level, and therefore read zero on landing
+QFE,"the altimeter setting that will cause the altimeter to read the height above a specific aerodrome or ground level, and therefore read zero on landing"
 QNE,pressure altitude at the landing runway threshold
 QNH,atmospheric pressure adjusted to mean sea level
 RADAR,Radio Detection And Ranging
@@ -327,6 +337,7 @@ SLB,Side lobe Blanking
 SLC,Side lobe Cancellation
 SLOC,Slovenia Control
 SM,Statute Mile
+SMR,Surface Movement Radar
 SOW,Statement of Work
 SRC,Safety Regulation Commission (EUROCONTROL)
 SRU,Safety Regulation Unit (EUROCONTROL)
@@ -407,7 +418,7 @@ USAF,US Air Force
 UTA,Upper Traffic Area
 V1,Decision speed, the speed beyond which takeoff should no longer be aborted
 V2,Takeoff speed. The speed at which the aircraft may safely be climbed with one engine inoperative
-VAR,Variation
+VAR,Magnetic Variation
 VASI,Visual Approach Slope Indicator
 VASIS,Visual Approach Slope Indicator System 
 VCS,Voice Communication System

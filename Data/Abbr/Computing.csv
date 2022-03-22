@@ -1,15 +1,30 @@
 Abbr,Term
-.cc,Common filename suffix for C++ source code files
+.7z,Common filename suffix for archive files in 7z format
+.bat,Common filename suffix for Batch script files
+.bz2,Common filename suffix for archive files in bzip2 format
+.c,Common filename suffix for C source code files
+.cpp,Common filename suffix for C++ source code files
 .csv,Common filename suffix for comma-separated value files
 .cfg,Common filename suffix for configuration files
+.dll,Common filename suffix for Windows library files
+.exe,Common filename suffix for Windows executables
+.gif,Common filename suffix for GIF image files
+.gz,Common filename suffix for archive files in gzip format
 .h,Common filename suffix for C/C++ header files
+.hpp,Common filename suffix for C++ header files
 .jpeg,Common filename suffix for JPEG image files
 .jpg,Common filename suffix for JPEG image files
 .m3u,Common filename suffix for audio playlists
 .md,Common filename suffix for Markdown files
 .mp3,Common filename suffix for MPEG layer 3 audio files
 .ps1,Common filename suffix for PowerShell script files
+.sln,Common filename suffix for MSBuild solution files
+.tar,Common filename suffix for archive files in tar format
 .txt,Common filename suffix for text files
+.vcxproj,Common filename suffix for Visual Studio project files
+.xml,Common filename suffix for XML files
+.xz,Common filename suffix for archive files in XZ format
+.zip,Common filename suffix for archive files in Zip format
 1NF,First Normal Form
 2.5D,Two-And-A-Half-Dimensional
 286,Intel 80286 processor
@@ -810,6 +825,7 @@ DMVPN,dynamic multipoint VPN
 DMZ,demilitarized zone
 DNC,Direct Numerical Control
 DNC,distributive numerical control
+DND,Dungeons & Dragons (a computer game)
 DNG,Digital Negative
 DNIS,Dialed Number Identification Service
 DNN,DotNetNuke
@@ -1250,6 +1266,7 @@ GLONASS,Globalnaya Navigatsionnay Sputnikovaya Sistema
 GlusterFS,Gluster File System
 GLUT,OpenGL Utility Toolkit
 GLV,grating light valve
+GMAIL,Google Mail
 GML,Generalized Markup Language
 GMP,Good Manufacturing Practices
 GMPLS,Generalized Multiprotocol Label Switching or Multiprotocol Lambda Switching
@@ -1259,7 +1276,7 @@ GNOME,GNU Network Object Model Environment
 GNSS,Global Navigation Satellite System
 GNU,GNU's Not Unix
 gOS,good operating system
-GP,Editor Group Policy Editor
+GP,Group Policy
 GPF,General Protection Fault
 GPG,GNU Privacy Guard
 GPL,GNU General Public License
@@ -1274,7 +1291,7 @@ GRE,Generic Routing Encapsulation
 GRUB,GRand Unified Bootloader
 GSM,Global System for Mobile communication
 GSM,Microsoft System Center Global Service Monitor
-GTA,Grand Theft Auto (computer game)
+GTA,Grand Theft Auto (a computer game)
 GTAG,Global Tag
 gTLD,generic top-level domain name
 GTM,strategy go-to-market strategy
@@ -1446,6 +1463,7 @@ IP,Internet Protocol
 IPAM,IP address management
 IPC,Institute for Interconnecting and Packaging Electronic Circuits
 IPC,interprocess communication
+IPFS,InterPlanetary File System
 IPI,Intelligent Peripheral Interface
 IPL,initial program load
 IPLC,international private leased circuit
@@ -1618,6 +1636,7 @@ LPAR,logical partition
 LPT,line print terminal
 LQSR,Link Quality Source Routing
 LRN,Location Routing Number
+LSA,Local Security Authority
 LSB,Linux Standard Base
 LSI,Large Scale Integration
 LTC,longitudinal time code
@@ -1625,6 +1644,7 @@ LTE,Long Term Evolution
 LTFS,Linear Tape File System
 LTL,Less Than Truckload
 LTO,Linear Tape-Open
+LTS,Long Term Support
 LU,logical unit
 LUN,logical unit number
 LVS,Layout Verification Systems
@@ -1805,6 +1825,7 @@ NetBIOS,Network Basic Input/Output System
 NetPC,Network PC
 NeXT,near-end crosstalk
 NFC,Near Field Communication
+NFT,Non-fungible token
 NFR,not for resale
 NFS,Network File System
 NFTS,national file tracking system
@@ -2327,7 +2348,7 @@ SDDC,software-defined data center
 SDDL,Security Descriptor Definition Language
 SDH,Synchronous Digital Hierarchy
 SDI,Serial Digital Interface
-SDK,software developer's kit
+SDK,Software Development Kit
 SDL,Specification and Description Language
 SDLC,Synchronous Data Link Control
 SDLC,systems development life cycle
@@ -2407,6 +2428,7 @@ SMPTE,Society of Motion Picture and Television Engineers
 SMR,Specialized Mobile Radio
 SMS,Short Message Service 
 SMSC,short message service center
+SMT,Simultaneous Multithreading
 SMTP,Simple Mail Transfer Protocol
 SMWT,Self Managed Work Teams
 SNA,Systems Network Architecture
