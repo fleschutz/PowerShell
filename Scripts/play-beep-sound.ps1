@@ -5,7 +5,6 @@
 	This PowerShell script plays a short beep sound.
 .EXAMPLE
 	PS> ./play-beep-sound
-	(listen and enjoy)
 .NOTES
 	Author: Markus Fleschutz / License: CC0
 .LINK
