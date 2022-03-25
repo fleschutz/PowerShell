@@ -1,8 +1,8 @@
 ﻿<#
 .SYNOPSIS
-	Turns the audio volume down
+	Turns the volume down
 .DESCRIPTION
-	This PowerShell script turns the audio volume down (by -10% by default).
+	This PowerShell script turns the audio volume down (-10% by default).
 .PARAMETER percent
 	Specifies the percent number
 .EXAMPLE
@@ -20,7 +20,7 @@ try {
 	for ([int]$i = 0; $i -lt $percent; $i += 2) {
 		$obj.SendKeys([char]174) # each tick is -2%
 	}
-	& "$PSScriptRoot/give-reply.ps1" "$($percent)% less volume"
+	& "$PSScriptRoot/give-reply.ps1" "$($percent)% softer."
 	exit 0 # success
 } catch {
 	"⚠️ Error: $($Error[0]) ($($MyInvocation.MyCommand.Name):$($_.InvocationInfo.ScriptLineNumber))"
