@@ -11,7 +11,7 @@
 .LINK
 	https://github.com/fleschutz/PowerShell
 .NOTES
-	Author: Markus Fleschutz / License: CC0
+	Author: Markus Fleschutz | License: CC0
 #>
 
 param([string]$RepoDir = "$PWD")
@@ -22,7 +22,7 @@ try {
 	"⏳ Step 1/3: Checking requirements..."
 	if (-not(test-path "$RepoDir" -pathType container)) { throw "Can't access repository folder at: $RepoDir - maybe a typo or missing folder permissions?" }
 
-	$Null = (git --version)
+	& git --version
 	if ($lastExitCode -ne "0") { throw "Can't execute 'git' - make sure Git is installed and available" }
 
 	"⏳ Step 2/3: Cleaning repository..."
@@ -33,9 +33,10 @@ try {
 	& git -C "$RepoDir" submodule foreach --recursive git clean -xfd -f
 	if ($lastExitCode -ne "0") { throw "'git clean -xfd -f' in submodules failed with exit code $lastExitCode)" }
 
-	$RepoDirName = (get-item "$RepoDir").Name
+	$RepoDirName = (Get-Item "$RepoDir").Name
 	[int]$Elapsed = $StopWatch.Elapsed.TotalSeconds
 	"✔️ cleaned Git repository 📂$RepoDirName in $Elapsed sec"
+
 	exit 0 # success
 } catch {
 	"⚠️ Error: $($Error[0]) ($($MyInvocation.MyCommand.Name):$($_.InvocationInfo.ScriptLineNumber))"
