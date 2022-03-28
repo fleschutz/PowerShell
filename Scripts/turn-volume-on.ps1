@@ -1,14 +1,14 @@
 ﻿<#
 .SYNOPSIS
-	Turns the volume on
+	Turn audio on
 .DESCRIPTION
-	This PowerShell script unmutes the audio output.
+	This PowerShell script immediately unmutes the audio output.
 .EXAMPLE
 	PS> .\turn-volume-on
 .LINK
 	https://github.com/fleschutz/PowerShell
 .NOTES
-	Author: Markus Fleschutz / License: CC0
+	Author: Markus Fleschutz | License: CC0
 #>
 
 try {
