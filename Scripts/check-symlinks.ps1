@@ -20,8 +20,10 @@ param([string]$folder = "")
 try {
 	if ($folder -eq "" ) { $folder = read-host "Enter the path to the folder" }
 
+	$StopWatch = [system.diagnostics.stopwatch]::startNew()
 	$FullPath = Resolve-Path "$folder"
-	write-progress "Checking every symlink in 📂$FullPath..."
+	"⏳ Checking every symlink in 📂$FullPath ..."
+
 	[int]$NumTotal = [int]$NumBroken = 0
 	Get-ChildItem $FullPath -recurse  | Where { $_.Attributes -match "ReparsePoint" } | ForEach-Object {
 		$Symlink = $_.FullName
@@ -30,14 +32,15 @@ try {
 			$path = $_.FullName + "\..\" + ($_ | Select-Object -ExpandProperty Target)
 			$item = Get-Item $path -ErrorAction Ignore
 			if (!$item) {
-				write-warning "Broken symlink $Symlink -> $Target"
+				"Bad $Symlink 🠆 $Target"
 				$NumBroken++
 			}
 		}
 		$NumTotal++
 	}
 
-	"✔️ $NumBroken out of $NumTotal symlinks are broken in 📂$FullPath"
+	[int]$Elapsed = $StopWatch.Elapsed.TotalSeconds
+	"✔️ checked $NumTotal symlinks in 📂$FullPath ($NumBroken are broken) in $Elapsed sec"
 	exit $NumBroken
 } catch {
 	"⚠️ Error: $($Error[0]) ($($MyInvocation.MyCommand.Name):$($_.InvocationInfo.ScriptLineNumber))"
