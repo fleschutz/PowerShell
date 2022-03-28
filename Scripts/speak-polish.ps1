@@ -1,6 +1,6 @@
 ﻿<#
 .SYNOPSIS
-	Speaks text with a Polish text-to-speech voice
+	Speaks text in Polish
 .DESCRIPTION
 	This PowerShell script speaks the given text with a Polish text-to-speech (TTS) voice.
 .PARAMETER text

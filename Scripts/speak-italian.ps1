@@ -1,6 +1,6 @@
 ﻿<#
 .SYNOPSIS
-	Speaks text with an Italian text-to-speech voice
+	Speaks text in Italian 
 .DESCRIPTION
 	This PowerShell script speaks the given text with an Italian text-to-speech (TTS) voice.
 .PARAMETER text

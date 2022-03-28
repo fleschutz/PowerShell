@@ -1,6 +1,6 @@
 ﻿<#
 .SYNOPSIS
-	Speaks text with a Danish text-to-speech voice
+	Speaks text in Danish
 .DESCRIPTION
 	This PowerShell script speaks the given text with a Danish text-to-speech (TTS) voice.
 .PARAMETER text

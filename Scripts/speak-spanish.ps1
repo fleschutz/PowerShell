@@ -1,6 +1,6 @@
 ﻿<#
 .SYNOPSIS
-	Speaks text with a Spanish text-to-speech voice
+	Speaks text in Spanish 
 .DESCRIPTION
 	This PowerShell script speaks the given text with a Spanish text-to-speech (TTS) voice.
 .PARAMETER text

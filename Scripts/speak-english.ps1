@@ -1,12 +1,12 @@
 ﻿<#
 .SYNOPSIS
-	Speaks text with an English text-to-speech voice
+	Speaks text in English
 .DESCRIPTION
 	This PowerShell scripts speaks the given text with an English text-to-speech (TTS) voice.
 .PARAMETER text
 	Specifies the text to speak
 .EXAMPLE
-	PS> ./speak-english "Hello World"
+	PS> ./speak-english Hello
 .LINK
 	https://github.com/fleschutz/PowerShell
 .NOTES

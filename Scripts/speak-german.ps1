@@ -1,6 +1,6 @@
 ﻿<#
 .SYNOPSIS
-	Speaks text with a German text-to-speech voice
+	Speaks text in German 
 .DESCRIPTION
 	This PowerShell script speaks the given text with a German text-to-speech (TTS) voice.
 .PARAMETER text
