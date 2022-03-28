@@ -1,6 +1,6 @@
 ﻿<#
 .SYNOPSIS
-	List Git repositories
+	Lists Git repositories
 .DESCRIPTION
 	This PowerShell script lists the details of all Git repositories in a folder.
 .PARAMETER ParentDir
