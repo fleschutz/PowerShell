@@ -2,17 +2,17 @@
 .SYNOPSIS
 	Copy photos sorted by year and month
 .DESCRIPTION
-	This PowerShell script copies photos from SourceDir to TargetDir sorted by year and month.
+	This PowerShell script copies image files from SourceDir to TargetDir sorted by year and month.
 .PARAMETER SourceDir
-	Specifies the path to the source directory where the photos reside
+	Specifies the path to the source folder
 .PARAMTER TargetDir
 	Specifies the path to the target folder
 .EXAMPLE
-	PS> ./copy-photos-sorted D:\Mobile\DCIM C:\MyPhotoAlbum
+	PS> ./copy-photos-sorted D:\SmartPhone\DCIM C:\MyPhotoAlbum
 .LINK
 	https://github.com/fleschutz/PowerShell
 .NOTES
-	Author: Markus Fleschutz / License: CC0
+	Author: Markus Fleschutz | License: CC0
 #>
 
 param([string]$SourceDir = "", [string]$TargetDir = "")
