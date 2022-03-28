@@ -1,10 +1,10 @@
 ﻿<#
 .SYNOPSIS
-	Lists the submodules of a Git repository
+	Lists the submodules in a Git repository
 .DESCRIPTION
-	This PowerShell script lists the submodules of the given Git repository.
+	This PowerShell script lists the submodules in the given Git repository.
 .PARAMETER RepoDir
-	Specifies the path to the repository (current working dir by default)
+	Specifies the path to the repository (current working directory by default)
 .EXAMPLE
 	PS> ./list-submodules C:\MyRepo
 .LINK
@@ -16,16 +16,18 @@
 param([string]$RepoDir = "$PWD")
 
 try {
+	"⏳ Step 1/3: Checking requirements... "
 	if (-not(test-path "$RepoDir" -pathType container)) { throw "Can't access directory: $RepoDir" }
-	set-location "$RepoDir"
 
-	$Null = (git --version)
+	& git --version
 	if ($lastExitCode -ne "0") { throw "Can't execute 'git' - make sure Git is installed and available" }
 
-	& git fetch
+	"⏳ Step 2/3: Fetching latest updates... "
+	& git -C "$RepoDir" fetch
 	if ($lastExitCode -ne "0") { throw "'git fetch' failed" }
 
-	& git submodule
+	"⏳ Step 3/3: Listing submodules... "
+	& git -C "$RepoDir" submodule
 	if ($lastExitCode -ne "0") { throw "'git submodule' failed" }
 
 	exit 0 # success
