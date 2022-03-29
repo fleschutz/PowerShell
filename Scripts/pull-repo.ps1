@@ -19,14 +19,13 @@ try {
 	$StopWatch = [system.diagnostics.stopwatch]::startNew()
 
 	"⏳ Step 1/3: Checking requirements... "
-	if (-not(test-path "$RepoDir" -pathType container)) { throw "Can't access directory: $RepoDir" }
-	
-	$Result = (git -C "$RepoDir" status)
+	& git --version
 	if ($lastExitCode -ne "0") { throw "Can't execute 'git' - make sure Git is installed and available" }
-	if ("$Result" -match "HEAD detached at ") {
-		write-warning "Not on a branch, so nothing to pull (in detached HEAD state)"
-		exit 0 # success
-	} 
+
+	if (-not(Test-Path "$RepoDir" -pathType container)) { throw "Can't access folder: $RepoDir" }
+
+	$Result = (git -C "$RepoDir" status)
+	if ("$Result" -match "HEAD detached at ") { throw "Not on a branch, so nothing to pull (in detached HEAD state)" }
 
 	"⏳ Step 2/3: Pulling updates... "
 	& git -C "$RepoDir" pull --recurse-submodules --jobs=4
@@ -39,8 +38,9 @@ try {
 	$RepoDirName = (Get-Item "$RepoDir").Name
 	[int]$Elapsed = $StopWatch.Elapsed.TotalSeconds
 	"✔️ pulled updates for Git repository 📂$RepoDirName in $Elapsed sec"
+
 	exit 0 # success
 } catch {
-	"⚠️ Error: $($Error[0]) ($($MyInvocation.MyCommand.Name):$($_.InvocationInfo.ScriptLineNumber))"
+	"⚠️ Error $($_.InvocationInfo.ScriptLineNumber): $($Error[0])"
 	exit 1
 }
