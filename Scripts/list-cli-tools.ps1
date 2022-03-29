@@ -1,6 +1,6 @@
 ﻿<#
 .SYNOPSIS
-	Lists available command-line interface (CLI) tools
+	Lists available CLI tools
 .DESCRIPTION
 	This PowerShell script lists available command-line interface (CLI) tools.
 .EXAMPLE
@@ -14,7 +14,7 @@
 .LINK
 	https://github.com/fleschutz/PowerShell
 .NOTES
-	Author: Markus Fleschutz / License: CC0
+	Author: Markus Fleschutz | License: CC0
 #>
 
 function CheckFor { param([string]$Cmd, [string]$VersionArg)
@@ -157,6 +157,7 @@ function ListTools {
 	CheckFor whatis "--version"
 	CheckFor which	""
 	CheckFor winget	"--version"
+	CheckFor winsat ""
 	CheckFor whoami "--version"
 	CheckFor wput	"--version"
 	CheckFor write	""
@@ -174,7 +175,7 @@ function ListTools {
 }
  
 try {
-	ListTools | format-table -property @{e='Name';width=12},@{e='Version';width=15},@{e='Location';width=55},@{e='FileSize';width=10}
+	ListTools | Format-Table -property @{e='Name';width=12},@{e='Version';width=15},@{e='Location';width=55},@{e='FileSize';width=10}
 	exit 0 # success
 } catch {
 	"⚠️ Error: $($Error[0]) ($($MyInvocation.MyCommand.Name):$($_.InvocationInfo.ScriptLineNumber))"
