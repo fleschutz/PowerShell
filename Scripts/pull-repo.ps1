@@ -1,12 +1,12 @@
 ﻿<#
 .SYNOPSIS
-	Pulls repository updates 
+	Pulls Git repository updates 
 .DESCRIPTION
-	This PowerShell script pulls updates for the given local Git repository (including submodules).
+	This PowerShell script pulls updates for a local Git repository (including submodules).
 .PARAMETER RepoDir
 	Specifies the path to the Git repository
 .EXAMPLE
-	PS> ./pull-repo C:\MyRepo
+	PS> ./pull-repo 
 .LINK
 	https://github.com/fleschutz/PowerShell
 .NOTES
@@ -29,11 +29,11 @@ try {
 
 	"⏳ Step 2/3: Pulling updates... "
 	& git -C "$RepoDir" pull --recurse-submodules --jobs=4
-	if ($lastExitCode -ne "0") { throw "'git pull' failed" }
+	if ($lastExitCode -ne "0") { throw "'git pull' failed with exit code $lastExitCode" }
 
 	"⏳ Step 3/3: Updating submodules... "
 	& git -C "$RepoDir" submodule update --init --recursive
-	if ($lastExitCode -ne "0") { throw "'git submodule update' failed" }
+	if ($lastExitCode -ne "0") { throw "'git submodule update' failed with exit code $lastExitCode" }
 
 	$RepoDirName = (Get-Item "$RepoDir").Name
 	[int]$Elapsed = $StopWatch.Elapsed.TotalSeconds
