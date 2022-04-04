@@ -26,12 +26,12 @@ try {
 	if ($lastExitCode -ne "0") { throw "Can't execute 'git' - make sure Git is installed and available" }
 
 	"⏳ Step 2/3: Cleaning repository..."
-	& git -C "$RepoDir" clean -xfd -f # force + recurse into dirs + don't use the standard ignore rules
-	if ($lastExitCode -ne "0") { throw "'git clean -xfd -f' failed with exit code $lastExitCode)" }
+	& git -C "$RepoDir" clean -xfd -f # to delete all untracked files in the main repo
+	if ($lastExitCode -ne "0") { throw "'git clean' failed with exit code $lastExitCode" }
 
 	"⏳ Step 3/3: Cleaning submodules..."
-	& git -C "$RepoDir" submodule foreach --recursive git clean -xfd -f
-	if ($lastExitCode -ne "0") { throw "'git clean -xfd -f' in submodules failed with exit code $lastExitCode)" }
+	& git -C "$RepoDir" submodule foreach --recursive git clean -xfd -f # to delete all untracked files in the submodules
+	if ($lastExitCode -ne "0") { throw "'git clean' in the submodules failed with exit code $lastExitCode" }
 
 	$RepoDirName = (Get-Item "$RepoDir").Name
 	[int]$Elapsed = $StopWatch.Elapsed.TotalSeconds
