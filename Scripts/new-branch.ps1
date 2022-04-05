@@ -3,7 +3,7 @@
 	Create a new Git branch 
 .DESCRIPTION
 	This PowerShell script creates and switches to a new branch in a Git repository.
-.PARAMETER BranchName
+.PARAMETER NewBranchName
 	Specifies the new branch name
 .PARAMETER RepoDir
 	Specifies the path to the Git repository (current working directory per default)
@@ -15,10 +15,10 @@
 	Author: Markus Fleschutz | License: CC0
 #>
 
-param([string]$BranchName = "", [string]$RepoDir = "$PWD")
+param([string]$NewBranchName = "", [string]$RepoDir = "$PWD")
 
 try {
-	if ($BranchName -eq "") { $BranchName = read-host "Enter new branch name" }
+	if ($NewBranchName -eq "") { $NewBranchName = read-host "Enter new branch name" }
 
 	$StopWatch = [system.diagnostics.stopwatch]::startNew()
 
@@ -30,23 +30,26 @@ try {
 
 	"⏳ Step 2/5: Fetching updates..."
 	& git -C "$RepoDir" fetch --all --recurse-submodules --prune --prune-tags --force
-	if ($lastExitCode -ne "0") { throw "'git fetch' failed" }
+	if ($lastExitCode -ne "0") { throw "'git fetch' failed with exit code $lastExitCode" }
 
-	"⏳ Step 3/5: Creating new branch '$BranchName'..."
-	& git -C "$RepoDir" checkout -b "$BranchName"
-	if ($lastExitCode -ne "0") { throw "'git checkout -b $BranchName' failed" }
+	$CurrentBranchName = (git -C "$RepoDir" rev-parse --abbrev-ref HEAD)
+	if ($lastExitCode -ne "0") { throw "'git rev-parse' failed with exit code $lastExitCode" }
+
+	"⏳ Step 3/5: Creating new branch '$NewBranchName'..."
+	& git -C "$RepoDir" checkout -b "$NewBranchName"
+	if ($lastExitCode -ne "0") { throw "'git checkout -b $NewBranchName' failed with exit code $lastExitCode" }
 
 	"⏳ Step 4/5: Pushing updates..."
-	& git -C "$RepoDir" push origin "$BranchName"
-	if ($lastExitCode -ne "0") { throw "'git push origin $BranchName' failed" }
+	& git -C "$RepoDir" push origin "$NewBranchName"
+	if ($lastExitCode -ne "0") { throw "'git push origin $NewBranchName' failed with exit code $lastExitCode" }
 
 	"⏳ Step 5/5: Updating submodules..."
 	& git -C "$RepoDir" submodule update --init --recursive
-	if ($lastExitCode -ne "0") { throw "'git submodule update' failed" }
+	if ($lastExitCode -ne "0") { throw "'git submodule update' failed with exit code $lastExitCode" }
 
 	$RepoDirName = (get-item "$RepoDir").Name
 	[int]$Elapsed = $StopWatch.Elapsed.TotalSeconds
-	"✔️ created new branch '$BranchName' in Git repository 📂$RepoDirName in $Elapsed sec"
+	"✔️ created new branch '$NewBranchName' based on '$CurrentBranchName' in Git repo 📂$RepoDirName in $Elapsed sec"
 	exit 0 # success
 } catch {
 	"⚠️ Error: $($Error[0]) ($($MyInvocation.MyCommand.Name):$($_.InvocationInfo.ScriptLineNumber))"
