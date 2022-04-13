@@ -1,6 +1,6 @@
 ﻿<#
 .SYNOPSIS
-	Fetches Git repository updates
+	Fetches updates for a Git repository
 .DESCRIPTION
 	This PowerShell script fetches updates for a local Git repository (including submodules).
 .PARAMETER RepoDir
@@ -24,15 +24,15 @@ try {
 
 	if (-not(Test-Path "$RepoDir" -pathType container)) { throw "Can't access folder: $RepoDir" }
 
-	"⏳ Step 2/2: Fetching updates... "
+	"⏳ Step 2/2: Fetching updates (including submodules)... "
 	& git -C "$RepoDir" fetch --all --recurse-submodules --prune --prune-tags --force 
 	if ($lastExitCode -ne "0") { throw "'git fetch' failed with exit code $lastExitCode" }
 	
 	$RepoDirName = (get-item "$RepoDir").Name
 	[int]$Elapsed = $StopWatch.Elapsed.TotalSeconds
-	"✔️ fetched updates for Git repository 📂$RepoDirName in $Elapsed sec"
+	"✔️ fetched updates for repo 📂$RepoDirName in $Elapsed sec"
 	exit 0 # success
 } catch {
-	"⚠️ Error $($_.InvocationInfo.ScriptLineNumber): $($Error[0])"
+	"⚠️ Error in line $($_.InvocationInfo.ScriptLineNumber): $($Error[0])"
 	exit 1
 }
