@@ -1,9 +1,9 @@
 ﻿<#
 .SYNOPSIS
-	Cleans a Git repository from untracked files
+	Clean a Git repository
 .DESCRIPTION
 	This PowerShell script deletes all untracked files and folders in a Git repository (including submodules).
-	IMPORTANT NOTE: To be used with care! This cannot be undone!
+	NOTE: To be used with care! This cannot be undone!
 .PARAMETER RepoDir
 	Specifies the path to the Git repository
 .EXAMPLE
@@ -25,7 +25,7 @@ try {
 	& git --version
 	if ($lastExitCode -ne "0") { throw "Can't execute 'git' - make sure Git is installed and available" }
 
-	"⏳ Step 2/3: Cleaning repository..."
+	"⏳ Step 2/3: Cleaning Git repository..."
 	& git -C "$RepoDir" clean -xfd -f # to delete all untracked files in the main repo
 	if ($lastExitCode -ne "0") { throw "'git clean' failed with exit code $lastExitCode" }
 
@@ -35,8 +35,7 @@ try {
 
 	$RepoDirName = (Get-Item "$RepoDir").Name
 	[int]$Elapsed = $StopWatch.Elapsed.TotalSeconds
-	"✔️ cleaned Git repository 📂$RepoDirName in $Elapsed sec"
-
+	"✔️ cleaned repo 📂$RepoDirName in $Elapsed sec"
 	exit 0 # success
 } catch {
 	"⚠️ Error: $($Error[0]) ($($MyInvocation.MyCommand.Name):$($_.InvocationInfo.ScriptLineNumber))"
