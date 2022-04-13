@@ -27,6 +27,6 @@ try {
 	"✔️ created new user '$Username' with encrypted home directory in $Elapsed sec"
 	exit 0 # success
 } catch {
-	"⚠️ Sorry: $($Error[0])"
+	"⚠️ Error in line $($_.InvocationInfo.ScriptLineNumber): $($Error[0])"
 	exit 1
 }

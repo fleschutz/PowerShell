@@ -31,6 +31,6 @@ try {
 	"✔️ exported $($Scripts.Count) PowerShell scripts in $Elapsed sec"
 	exit 0 # success
 } catch {
-	write-error "⚠️ Error in line $($_.InvocationInfo.ScriptLineNumber): $($Error[0])"
+	"⚠️ Error in line $($_.InvocationInfo.ScriptLineNumber): $($Error[0])"
 	exit 1
 }

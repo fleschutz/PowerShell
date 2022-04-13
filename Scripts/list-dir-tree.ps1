@@ -46,6 +46,6 @@ try {
 	write-host "($($global:Dirs) directories, $($global:Files) files, $($global:Bytes) bytes total)"
 	exit 0 # success
 } catch {
-	"⚠️ Error: $($Error[0]) ($($MyInvocation.MyCommand.Name):$($_.InvocationInfo.ScriptLineNumber))"
+	"⚠️ Error in line $($_.InvocationInfo.ScriptLineNumber): $($Error[0])"
 	exit 1
 }

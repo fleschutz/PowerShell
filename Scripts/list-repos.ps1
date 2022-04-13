@@ -47,6 +47,6 @@ try {
 	ListRepos | Format-Table -property @{e='No';width=3},@{e='Repository';width=25},@{e='Branch';width=20},LatestTag,Status
 	exit 0 # success
 } catch {
-	"⚠️ Error: $($Error[0]) ($($MyInvocation.MyCommand.Name):$($_.InvocationInfo.ScriptLineNumber))"
+	"⚠️ Error in line $($_.InvocationInfo.ScriptLineNumber): $($Error[0])"
 	exit 1
 }

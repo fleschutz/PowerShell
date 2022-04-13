@@ -29,7 +29,7 @@ try {
 	if ($lastExitCode -ne "0") { throw "'ipfs config Addresses.Gateway' failed (exit code $lastExitCode)" }
 
 	$Hostname = $(hostname)
-	& ipfs config --json API.HTTPHeaders.Access-Control-Allow-Origin '[\"http://paris:5001\", \"http://localhost:3000\", \"http://127.0.0.1:5001\", \"https://webui.ipfs.io\"]'
+	& ipfs config --json API.HTTPHeaders.Access-Control-Allow-Origin '[\"http://miami:5001\", \"http://localhost:3000\", \"http://127.0.0.1:5001\", \"https://webui.ipfs.io\"]'
 	if ($lastExitCode -ne "0") { throw "'ipfs config Access-Control-Allow-Origin' failed (exit code $lastExitCode)" }
 
 	& ipfs config --json API.HTTPHeaders.Access-Control-Allow-Methods '[\"PUT\", \"POST\"]'
@@ -48,6 +48,6 @@ try {
 	"⚠️ NOTE: make sure your router does not block TCP/UDP port 4001 for IPv4 & IPv6:wq!"
 	exit 0 # success
 } catch {
-	"⚠️ Error: $($Error[0]) ($($MyInvocation.MyCommand.Name):$($_.InvocationInfo.ScriptLineNumber))"
+	"⚠️ Error in line $($_.InvocationInfo.ScriptLineNumber): $($Error[0])"
 	exit 1
 }

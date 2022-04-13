@@ -27,6 +27,6 @@ try {
 	ListEarthquakes | format-table -property @{e='Mag';width=5},@{e='Location';width=42},@{e='Depth';width=6},Time 
 	exit 0 # success
 } catch {
-	"⚠️ Error: $($Error[0]) ($($MyInvocation.MyCommand.Name):$($_.InvocationInfo.ScriptLineNumber))"
+	"⚠️ Error in line $($_.InvocationInfo.ScriptLineNumber): $($Error[0])"
 	exit 1
 }

@@ -22,6 +22,6 @@ try {
 	get-timezone -listavailable | format-table -property Id,DisplayName,SupportsDaylightSavingTime
 	exit 0 # success
 } catch {
-	"⚠️ Error: $($Error[0]) ($($MyInvocation.MyCommand.Name):$($_.InvocationInfo.ScriptLineNumber))"
+	"⚠️ Error in line $($_.InvocationInfo.ScriptLineNumber): $($Error[0])"
 	exit 1
 }

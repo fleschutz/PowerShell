@@ -24,6 +24,6 @@ try {
 	& "$PSScriptRoot/give-reply.ps1" "Sorry, can't find Git Extensions."
 	exit 1
 } catch {
-	"⚠️ Error: $($Error[0]) ($($MyInvocation.MyCommand.Name):$($_.InvocationInfo.ScriptLineNumber))"
+	"⚠️ Error in line $($_.InvocationInfo.ScriptLineNumber): $($Error[0])"
 	exit 1
 }

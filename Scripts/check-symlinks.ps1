@@ -43,6 +43,6 @@ try {
 	"✔️ checked $NumTotal symlinks in 📂$FullPath ($NumBroken are broken) in $Elapsed sec"
 	exit $NumBroken
 } catch {
-	"⚠️ Error: $($Error[0]) ($($MyInvocation.MyCommand.Name):$($_.InvocationInfo.ScriptLineNumber))"
+	"⚠️ Error in line $($_.InvocationInfo.ScriptLineNumber): $($Error[0])"
 	exit 1
 }

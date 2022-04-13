@@ -19,7 +19,7 @@ try {
 		$FoundOne = $true
 	}
 	if (!$FoundOne) { throw "No VPN connection available" }
-	exit 0
+	exit 0 # success
 } catch {
 	& "$PSScriptRoot/give-reply.ps1" "Sorry: $($Error[0])."
 	exit 1

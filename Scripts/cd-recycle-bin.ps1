@@ -12,14 +12,14 @@
 	Author: Markus Fleschutz / License: CC0
 #>
 
-function Get-CurrentUserSID { [CmdletBinding()] param()
+function GetCurrentUserSID { [CmdletBinding()] param()
 	Add-Type -AssemblyName System.DirectoryServices.AccountManagement
 	return ([System.DirectoryServices.AccountManagement.UserPrincipal]::Current).SID.Value
 }
 
 
 try {
-	$Path = 'C:\$Recycle.Bin\' + "$(Get-CurrentUserSID)"
+	$Path = 'C:\$Recycle.Bin\' + "$(GetCurrentUserSID)"
 	if (-not(test-path "$Path" -pathType container)) {
 		throw "Recycle bin folder at 📂$Path doesn't exist (yet)"
 	}
@@ -27,6 +27,6 @@ try {
 	"📂$Path"
 	exit 0 # success
 } catch {
-	"⚠️ Error: $($Error[0]) ($($MyInvocation.MyCommand.Name):$($_.InvocationInfo.ScriptLineNumber))"
+	"⚠️ Error in line $($_.InvocationInfo.ScriptLineNumber): $($Error[0])"
 	exit 1
 }
