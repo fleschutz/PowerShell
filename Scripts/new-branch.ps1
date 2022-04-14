@@ -35,7 +35,7 @@ try {
 	$CurrentBranchName = (git -C "$RepoDir" rev-parse --abbrev-ref HEAD)
 	if ($lastExitCode -ne "0") { throw "'git rev-parse' failed with exit code $lastExitCode" }
 
-	"⏳ Step 3/5: Creating new branch '$NewBranchName'..."
+	"⏳ Step 3/5: Creating branch '$NewBranchName'..."
 	& git -C "$RepoDir" checkout -b "$NewBranchName"
 	if ($lastExitCode -ne "0") { throw "'git checkout -b $NewBranchName' failed with exit code $lastExitCode" }
 
@@ -49,7 +49,7 @@ try {
 
 	$RepoDirName = (get-item "$RepoDir").Name
 	[int]$Elapsed = $StopWatch.Elapsed.TotalSeconds
-	"✔️ created new branch '$NewBranchName' based on '$CurrentBranchName' in Git repo 📂$RepoDirName in $Elapsed sec"
+	"✔️ created new '$NewBranchName' branch in repo 📂$RepoDirName based on '$CurrentBranchName' branch in $Elapsed sec"
 	exit 0 # success
 } catch {
 	"⚠️ Error in line $($_.InvocationInfo.ScriptLineNumber): $($Error[0])"
