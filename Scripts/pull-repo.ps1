@@ -1,6 +1,6 @@
 ﻿<#
 .SYNOPSIS
-	Pulls Git repository updates 
+	Pulls updates for a Git repo
 .DESCRIPTION
 	This PowerShell script pulls updates for a local Git repository (including submodules).
 .PARAMETER RepoDir
@@ -37,7 +37,7 @@ try {
 
 	$RepoDirName = (Get-Item "$RepoDir").Name
 	[int]$Elapsed = $StopWatch.Elapsed.TotalSeconds
-	"✔️ pulled updates for Git repository 📂$RepoDirName in $Elapsed sec"
+	"✔️ pulled updates for repo 📂$RepoDirName in $Elapsed sec"
 
 	exit 0 # success
 } catch {
