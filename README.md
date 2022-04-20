@@ -1,7 +1,7 @@
 Mega Collection of PowerShell Scripts
 =====================================
 
-**This repository provides more than 250 useful and cross-platform PowerShell scripts in the [📂Scripts](Scripts/) subfolder - to be used by command-line interface (CLI), for remote control (e.g. via SSH), by context menu, by voice control (see repo [talk2windows](https://github.com/fleschutz/talk2windows) for details), by automation software like [Jenkins](https://www.jenkins.io/), automatically as daily tasks, or simply to learn PowerShell. See the [FAQ page](Docs/FAQ.md) if you need help or have any questions.**
+**This repository provides more than 250 useful and cross-platform PowerShell scripts in the [📂Scripts](Scripts/) subfolder - to be used by command-line interface (CLI), for remote control (e.g. via SSH), by context menu, by voice control (see also repo [talk2windows](https://github.com/fleschutz/talk2windows)), by automation software like [Jenkins](https://www.jenkins.io/), automatically as daily tasks, or simply to learn PowerShell. See the [FAQ page](Docs/FAQ.md) if you need help or have any questions.**
 
 **Note:** the scripts fully support Unicode characters. It's recommended to use a modern console supporting UTF-8 (e.g. Windows Terminal).
 
