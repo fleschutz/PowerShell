@@ -6,6 +6,13 @@ A/F,Autofeather
 A/FD,Airport/Facility Directory
 A/P,Autopilot
 A/R,Altitude Rate
+A300,Airbus A300 twinjet
+A310,Airbus A310 twinjet
+A320,Airbus A320 family of twinjets
+A330,Airbus A330 twinjet
+A340,Airbus A340 quadjet
+A350,Airbus A350 twinjet
+A380,Airbus A380 quadjet
 AAA,Airport Airspace Analysis
 AAE,Above Aerodrome Elevation
 AAF,Airway Facilities Service
@@ -262,6 +269,7 @@ MLW,Maximum Landing Weight
 MSL,Median Sea Level
 MSTA,Minimum Safe Turning Altitude
 MTOW,Maximum Take-Off Weight
+NLFS,Night Low Flying System
 OCTA,Outside Control Areas
 OFZ,Obstacle Free Zone
 OJT,On the Job Training
@@ -311,6 +319,7 @@ RVSM,Reduced Vertical Separation Minimum
 RWR,Radar Warning Receiver
 RWY,Runway
 SADL,Situational Awareness Data Link
+SAF,Sustainable Aviation Fuel
 SAR,Search and Rescue
 SAR,Synthetic Aperture Radar
 SARPS,Standards and Recommended Practices (ICAO)
@@ -323,6 +332,7 @@ SDD,Situation Data Display
 SELCAL,Selective Calling System
 SES,Single European Sky
 SESAME,Single European Sky ATM Master Plan
+SESAR,Single European Sky ATM Research
 SFL,Sequencing Flashing Light
 SFO,Simulated Flameout Operation
 SI,Selective Interrogation
