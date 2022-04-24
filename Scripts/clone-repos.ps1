@@ -45,11 +45,11 @@ try {
 			continue
 		}
 		if ($Shallow -eq "yes") {
-			"⏳ Step $Step/$($NumEntries): Cloning 📂$($FolderName) (shallow $Branch branch)..."
+			"⏳ Step $Step/$($NumEntries): Cloning 📂$($FolderName) (shallow '$Branch' branch)..."
 			& git clone --branch "$Branch" --depth 1 --shallow-submodules --recurse-submodules "$URL" "$FolderPath/$FolderName"
 			if ($lastExitCode -ne "0") { throw "'git clone $URL' failed" }
 		} else {
-			"⏳ Step $Step/$($NumEntries): Cloning 📂$FolderName (full $Branch branch)..."
+			"⏳ Step $Step/$($NumEntries): Cloning 📂$FolderName (full '$Branch' branch)..."
 			& git clone --branch "$Branch" --recurse-submodules "$URL" "$FolderPath/$FolderName"
 			if ($lastExitCode -ne "0") { throw "'git clone $URL' failed" }
 		}
