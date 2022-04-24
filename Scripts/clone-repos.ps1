@@ -1,6 +1,6 @@
 ﻿<#
 .SYNOPSIS
-	Clones well-known Git repositories into a folder
+	Clones Repositories
 .DESCRIPTION
 	This PowerShell script clones well-known Git repositories into a folder.
 .PARAMETER folder
@@ -10,7 +10,7 @@
 .LINK
 	https://github.com/fleschutz/PowerShell
 .NOTES
-	Author: Markus Fleschutz / License: CC0
+	Author: Markus Fleschutz | License: CC0
 #>
 
 param([string]$FolderPath = "$PWD")
@@ -18,15 +18,16 @@ param([string]$FolderPath = "$PWD")
 try {
 	$StopWatch = [system.diagnostics.stopwatch]::startNew()
 
+	"⏳ Checking requirements..."
 	if (-not(test-path "$FolderPath" -pathType container)) { throw "Can't access directory: $FolderPath" }
 	$ParentFolderName = (Get-Item "$FolderPath").Name
 
-	$Null = (git --version)
+	& git --version
 	if ($lastExitCode -ne "0") { throw "Can't execute 'git' - make sure Git is installed and available" }
 
 	$Table = import-csv "$PSScriptRoot/../Data/git-repos.csv"
 	$NumEntries = $Table.count
-	"Found $NumEntries entries in database Data/git-repos.csv..."
+	"Found $NumEntries entries in database table Data/git-repos.csv."
 
 	[int]$Step = 0
 	[int]$Cloned = 0
@@ -39,7 +40,7 @@ try {
 		$Step++
 
 		if (test-path "$FolderPath/$FolderName" -pathType container) {
-			"⏳ Step $Step/$($NumEntries): Skipping already existing 📂$($FolderName)..."
+			"⏳ Step $Step/$($NumEntries): Skipping 📂$($FolderName) (exists already)..."
 			$Skipped++
 			continue
 		}
@@ -55,7 +56,11 @@ try {
 		$Cloned++
 	}
 	[int]$Elapsed = $StopWatch.Elapsed.TotalSeconds
-	"✔️ $Cloned Git repositories cloned, $Skipped skipped in 📂$ParentFolderName in $Elapsed sec"
+	if ($Cloned -eq 1) {
+		"✔️ $Cloned repo cloned into 📂$ParentFolderName ($Skipped skipped) in $Elapsed sec"
+	} else {
+		"✔️ $Cloned repos cloned into 📂$ParentFolderName ($Skipped skipped) in $Elapsed sec"
+	}
 	exit 0 # success
 } catch {
 	"⚠️ Error in line $($_.InvocationInfo.ScriptLineNumber): $($Error[0])"
