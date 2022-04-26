@@ -22,7 +22,7 @@ try {
 	"⏳ Step 1/3: Checking requirements..."
 	if (-not(test-path "$RepoDir" -pathType container)) { throw "Can't access repository folder at: $RepoDir - maybe a typo or missing folder permissions?" }
 
-	& git --version
+	$null = (git --version)
 	if ($lastExitCode -ne "0") { throw "Can't execute 'git' - make sure Git is installed and available" }
 
 	"⏳ Step 2/3: Cleaning repository..."
