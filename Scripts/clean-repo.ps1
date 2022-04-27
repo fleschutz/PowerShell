@@ -20,14 +20,18 @@ try {
 	$StopWatch = [system.diagnostics.stopwatch]::startNew()
 
 	"⏳ Step 1/3: Checking requirements..."
-	if (-not(test-path "$RepoDir" -pathType container)) { throw "Can't access repository folder at: $RepoDir - maybe a typo or missing folder permissions?" }
+	if (-not(test-path "$RepoDir" -pathType container)) { throw "Can't access folder '$RepoDir' - maybe a typo or missing folder permissions?" }
 
 	$null = (git --version)
 	if ($lastExitCode -ne "0") { throw "Can't execute 'git' - make sure Git is installed and available" }
 
 	"⏳ Step 2/3: Cleaning repository..."
 	& git -C "$RepoDir" clean -xfd -f # to delete all untracked files in the main repo
-	if ($lastExitCode -ne "0") { throw "'git clean' failed with exit code $lastExitCode" }
+	if ($lastExitCode -ne "0") {
+		"'git clean' failed with exit code $lastExitCode, retrying once..."
+		& git -C "$RepoDir" clean -xfd -f 
+		if ($lastExitCode -ne "0") { throw "'git clean' failed with exit code $lastExitCode" }
+	}
 
 	"⏳ Step 3/3: Cleaning submodules..."
 	& git -C "$RepoDir" submodule foreach --recursive git clean -xfd -f # to delete all untracked files in the submodules
