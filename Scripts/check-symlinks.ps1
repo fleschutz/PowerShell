@@ -3,16 +3,16 @@
 	Checks every symlink in a folder 
 .DESCRIPTION
 	This PowerShell script checks every symlink in a folder (including subfolders).
-	Returns the number of broken symlinks as exit value.
+	It returns the number of broken symlinks as exit value.
 .PARAMETER folder
-	Specifies the path to the directory tree
+	Specifies the path to the folder
 .EXAMPLE
 	PS> ./check-symlinks .
-	✔️ 0 out of 10 symlinks are broken in 📂/home/markus
+	✔️ found 2 broken symlinks at 📂/home/markus (10 total) in 17 sec
 .LINK
 	https://github.com/fleschutz/PowerShell
 .NOTES
-	Author: Markus Fleschutz / License: CC0
+	Author: Markus Fleschutz | License: CC0
 #>
 
 param([string]$folder = "")
@@ -40,7 +40,13 @@ try {
 	}
 
 	[int]$Elapsed = $StopWatch.Elapsed.TotalSeconds
-	"✔️ checked $NumTotal symlinks in 📂$FullPath ($NumBroken are broken) in $Elapsed sec"
+	if ($NumTotal -eq 0) {
+		"✔️ found no symlink at 📂$FullPath in $Elapsed sec" 
+	} elseif ($NumBroken -eq 0) {
+		"✔️ found $NumTotal valid symlinks at 📂$FullPath in $Elapsed sec"
+	} else {
+		"✔️ found $NumBroken broken symlinks at 📂$FullPath ($NumTotal total) in $Elapsed sec"
+	}
 	exit $NumBroken
 } catch {
 	"⚠️ Error in line $($_.InvocationInfo.ScriptLineNumber): $($Error[0])"
