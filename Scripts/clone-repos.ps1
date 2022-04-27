@@ -35,7 +35,7 @@ try {
 	foreach($Row in $Table) {
 		[string]$FolderName = $Row.FolderName
 		[string]$Branch = $Row.Branch
-		[string]$Shallow = $Row.Shallow
+		[string]$Full = $Row.Full
 		[string]$URL = $Row.URL
 		$Step++
 
@@ -44,14 +44,14 @@ try {
 			$Skipped++
 			continue
 		}
-		if ($Shallow -eq "yes") {
-			"⏳ Step $Step/$($NumEntries): Cloning 📂$($FolderName) (shallow '$Branch' branch)..."
-			& git clone --branch "$Branch" --depth 1 --shallow-submodules --recurse-submodules "$URL" "$FolderPath/$FolderName"
-			if ($lastExitCode -ne "0") { throw "'git clone $URL' failed" }
-		} else {
-			"⏳ Step $Step/$($NumEntries): Cloning 📂$FolderName (full '$Branch' branch)..."
+		if ($Full -eq "yes") {
+			"⏳ Step $Step/$($NumEntries): Cloning 📂$($FolderName) ($Branch branch with full history)..."
 			& git clone --branch "$Branch" --recurse-submodules "$URL" "$FolderPath/$FolderName"
-			if ($lastExitCode -ne "0") { throw "'git clone $URL' failed" }
+			if ($lastExitCode -ne "0") { throw "'git clone --branch $Branch $URL' failed with exit code $lastExitCode" }
+		} else {
+			"⏳ Step $Step/$($NumEntries): Cloning 📂$FolderName ($Branch branch only)..."
+			& git clone --branch "$Branch" --single-branch --recurse-submodules "$URL" "$FolderPath/$FolderName"
+			if ($lastExitCode -ne "0") { throw "'git clone --branch $Branch $URL' failed with exit code $lastExitCode" }
 		}
 		$Cloned++
 	}
