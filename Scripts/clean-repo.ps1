@@ -39,7 +39,7 @@ try {
 
 	$RepoDirName = (Get-Item "$RepoDir").Name
 	[int]$Elapsed = $StopWatch.Elapsed.TotalSeconds
-	"✔️ cleaned repo 📂$RepoDirName in $Elapsed sec"
+	"✔️ cleaned 📂$RepoDirName repo in $Elapsed sec"
 	exit 0 # success
 } catch {
 	"⚠️ Error in line $($_.InvocationInfo.ScriptLineNumber): $($Error[0])"
