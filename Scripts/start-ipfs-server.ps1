@@ -45,7 +45,7 @@ try {
 
 	[int]$Elapsed = $StopWatch.Elapsed.TotalSeconds
 	"✔️  started IPFS server in $Elapsed sec"
-	"⚠️ NOTE: make sure your router does not block TCP/UDP port 4001 for IPv4 & IPv6:wq!"
+	"⚠️ NOTE: make sure your router does not block TCP/UDP port 4001 for IPv4 & IPv6"
 	exit 0 # success
 } catch {
 	"⚠️ Error in line $($_.InvocationInfo.ScriptLineNumber): $($Error[0])"
