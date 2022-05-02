@@ -19,7 +19,7 @@ try {
 	$StopWatch = [system.diagnostics.stopwatch]::startNew()
 
 	"⏳ Step 1/3: Checking requirements... "
-	& git --version
+	$null = (git --version)
 	if ($lastExitCode -ne "0") { throw "Can't execute 'git' - make sure Git is installed and available" }
 
 	if (-not(Test-Path "$RepoDir" -pathType container)) { throw "Can't access folder: $RepoDir" }
@@ -37,7 +37,7 @@ try {
 
 	$RepoDirName = (Get-Item "$RepoDir").Name
 	[int]$Elapsed = $StopWatch.Elapsed.TotalSeconds
-	"✔️ pulled updates for repo 📂$RepoDirName in $Elapsed sec"
+	"✔️ pulled updates for 📂$RepoDirName repo in $Elapsed sec"
 
 	exit 0 # success
 } catch {
