@@ -5,11 +5,11 @@
 	This PowerShell script changes the working directory to the user's downloads folder.
 .EXAMPLE
 	PS> ./cd-downloads
-	📂C:\Users\Joe\Downloads
+	📂C:\Users\Markus\Downloads
 .LINK
 	https://github.com/fleschutz/PowerShell
 .NOTES
-	Author: Markus Fleschutz / License: CC0
+	Author: Markus Fleschutz | License: CC0
 #>
 
 try {

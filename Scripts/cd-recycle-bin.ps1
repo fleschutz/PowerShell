@@ -9,7 +9,7 @@
 .LINK
 	https://github.com/fleschutz/PowerShell
 .NOTES
-	Author: Markus Fleschutz / License: CC0
+	Author: Markus Fleschutz | License: CC0
 #>
 
 function GetCurrentUserSID { [CmdletBinding()] param()
@@ -20,10 +20,10 @@ function GetCurrentUserSID { [CmdletBinding()] param()
 
 try {
 	$Path = 'C:\$Recycle.Bin\' + "$(GetCurrentUserSID)"
-	if (-not(test-path "$Path" -pathType container)) {
+	if (-not(Test-Path "$Path" -pathType container)) {
 		throw "Recycle bin folder at 📂$Path doesn't exist (yet)"
 	}
-	set-location "$Path"
+	Set-Location "$Path"
 	"📂$Path"
 	exit 0 # success
 } catch {

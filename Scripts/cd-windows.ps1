@@ -9,15 +9,15 @@
 .LINK
 	https://github.com/fleschutz/PowerShell
 .NOTES
-	Author: Markus Fleschutz / License: CC0
+	Author: Markus Fleschutz | License: CC0
 #>
 
 try {
-	$Path = resolve-path "$env:WINDIR"
-	if (-not(test-path "$Path" -pathType container)) {
+	$Path = Resolve-Path "$env:WINDIR"
+	if (-not(Test-Path "$Path" -pathType container)) {
 		throw "Windows directory at 📂$Path doesn't exist"
 	}
-	set-location "$Path"
+	Set-Location "$Path"
 	"📂$Path"
 	exit 0 # success
 } catch {

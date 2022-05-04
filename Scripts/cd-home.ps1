@@ -5,19 +5,19 @@
 	This PowerShell script changes the working directory to the user's home directory.
 .EXAMPLE
 	PS> ./cd-home
-	📂/home/Joe
+	📂/home/Markus
 .LINK
 	https://github.com/fleschutz/PowerShell
 .NOTES
-	Author: Markus Fleschutz / License: CC0
+	Author: Markus Fleschutz | License: CC0
 #>
 
 try {
-	$Path = resolve-path "$HOME"
-	if (-not(test-path "$Path" -pathType container)) {
+	$Path = Resolve-Path "$HOME"
+	if (-not(Test-Path "$Path" -pathType container)) {
 		throw "Home directory at 📂$Path doesn't exist (yet)"
 	}
-	set-location "$Path"
+	Set-Location "$Path"
 	"📂$Path"
 	exit 0 # success
 } catch {

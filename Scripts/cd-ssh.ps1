@@ -5,19 +5,19 @@
 	This PowerShell script changes the working directory to the user's SSH folder.
 .EXAMPLE
 	PS> ./cd-ssh
-	📂/home/Joe/.ssh
+	📂/home/Markus/.ssh
 .LINK
 	https://github.com/fleschutz/PowerShell
 .NOTES
-	Author: Markus Fleschutz / License: CC0
+	Author: Markus Fleschutz | License: CC0
 #>
 
 try {
-	$Path = resolve-path "$HOME/.ssh"
-	if (-not(test-path "$Path" -pathType container)) {
+	$Path = Resolve-Path "$HOME/.ssh"
+	if (-not(Test-Path "$Path" -pathType container)) {
 		throw "SSH folder at 📂$Path doesn't exist (yet)"
 	}
-	set-location "$Path"
+	Set-Location "$Path"
 	"📂$Path"
 	exit 0 # success
 } catch {

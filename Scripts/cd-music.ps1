@@ -5,11 +5,11 @@
 	This PowerShell script changes the working directory to the user's music folder.
 .EXAMPLE
 	PS> ./cd-music
-	📂/home/Joe/Music
+	📂/home/Markus/Music
 .LINK
 	https://github.com/fleschutz/PowerShell
 .NOTES
-	Author: Markus Fleschutz / License: CC0
+	Author: Markus Fleschutz | License: CC0
 #>
 
 try {
@@ -21,7 +21,7 @@ try {
 	if (-not(Test-Path "$Path" -pathType container)) {
 		throw "Music folder at 📂$Path doesn't exist (yet)"
 	}
-	set-location "$Path"
+	Set-Location "$Path"
 	"📂$Path"
 	exit 0 # success
 } catch {

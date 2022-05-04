@@ -5,11 +5,11 @@
 	This PowerShell script changes the working directory to the user's videos folder.
 .EXAMPLE
 	PS> ./cd-videos
-	📂/home/Joe/Videos
+	📂C:\Users\Markus\Videos
 .LINK
 	https://github.com/fleschutz/PowerShell
 .NOTES
-	Author: Markus Fleschutz / License: CC0
+	Author: Markus Fleschutz | License: CC0
 #>
 
 try {
@@ -21,7 +21,7 @@ try {
 	if (-not(Test-Path "$Path" -pathType container)) {
 		throw "Videos folder at 📂$Path doesn't exist (yet)"
 	}
-	set-location "$Path"
+	Set-Location "$Path"
 	"📂$Path"
 	exit 0 # success
 } catch {

@@ -5,19 +5,19 @@
 	This PowerShell script changes the working directory to the user's autostart folder.
 .EXAMPLE
 	PS> ./cd-autostart
-	📂C:\Users\Joe\AppData\Roaming\Microsoft\Windows\Start Menu\Programs\Startup
+	📂C:\Users\Markus\AppData\Roaming\Microsoft\Windows\Start Menu\Programs\Startup
 .LINK
 	https://github.com/fleschutz/PowerShell
 .NOTES
-	Author: Markus Fleschutz / License: CC0
+	Author: Markus Fleschutz | License: CC0
 #>
 
 try {
-	$Path = resolve-path "$HOME/AppData/Roaming/Microsoft/Windows/Start Menu/Programs/Startup"
-	if (-not(test-path "$Path" -pathType container)) {
+	$Path = Resolve-Path "$HOME/AppData/Roaming/Microsoft/Windows/Start Menu/Programs/Startup"
+	if (-not(Test-Path "$Path" -pathType container)) {
 		throw "Autostart folder at 📂$Path doesn't exist (yet)"
 	}
-	set-location "$Path"
+	Set-Location "$Path"
 	"📂$Path"
 	exit 0 # success
 } catch {

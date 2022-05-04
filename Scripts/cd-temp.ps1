@@ -5,11 +5,11 @@
 	This PowerShell script changes the working directory to the temporary folder.
 .EXAMPLE
 	PS> ./cd-temp
-	📂C:\Users\Joe\AppData\Local\Temp
+	📂C:\Users\Markus\AppData\Local\Temp
 .LINK
 	https://github.com/fleschutz/PowerShell
 .NOTES
-	Author: Markus Fleschutz / License: CC0
+	Author: Markus Fleschutz | License: CC0
 #>
 
 function GetTempDir {

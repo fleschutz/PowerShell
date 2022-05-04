@@ -5,18 +5,19 @@
 	This PowerShell script changes the working directory to four directory levels up.
 .EXAMPLE
 	PS> ./cd-up4
+	📂C:\
 .LINK
 	https://github.com/fleschutz/PowerShell
 .NOTES
-	Author: Markus Fleschutz / License: CC0
+	Author: Markus Fleschutz | License: CC0
 #>
 
 try {
-	$Path = resolve-path "../../../.."
-	if (-not(test-path "$Path" -pathType container)) {
+	$Path = Resolve-Path "../../../.."
+	if (-not(Test-Path "$Path" -pathType container)) {
 		throw "Folder at 📂$Path doesn't exist (yet)"
 	}
-	set-location "$Path"
+	Set-Location "$Path"
 	"📂$Path"
 	exit 0 # success
 } catch {
