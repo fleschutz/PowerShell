@@ -64,13 +64,13 @@ How to use PowerShell in Windows context menus?
 
 Which editor to use for PowerShell scripts?
 -------------------------------------------
-* *PowerShell ISE* (Integrated Scripting Environment) - Official PowerShell development environment included with Microsoft Windows.
-* *Visual Studio Code* - Supporting syntax highlighting, on-the-fly problem checking and an integrated PowerShell Console (available for free on Linux, Mac OS and Windows).
-* *PowerShell Studio* - Powerful PowerShell IDE with module, help, and user interface development tools, high DPI support and regular updates.
-* *PowerShell Plus* - All in one IDE.
-* *Atom package* - Add-on with PowerShell language support for Atom.
-* *SublimeText package* - Add-on with PowerShell language support for Sublime Text.
-* or simply use your *favorite text editor*
+* **Visual Studio Code** - Supporting syntax highlighting, on-the-fly problem checking and an integrated PowerShell Console (available for free on Linux, Mac OS and Windows, now recommended by Microsoft).
+* **PowerShell ISE** (Integrated Scripting Environment) - Former official PowerShell development environment included with Microsoft Windows.
+* **PowerShell Studio** - Powerful PowerShell IDE with module, help, and user interface development tools, high DPI support and regular updates.
+* **PowerShell Plus** - All in one IDE.
+* **Atom package** - Add-on with PowerShell language support for Atom.
+* **SublimeText package** - Add-on with PowerShell language support for Sublime Text.
+* or your **favorite text editor** as an alternative.
 
 
 How to write good PowerShell scripts?
