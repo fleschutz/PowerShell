@@ -79,9 +79,9 @@ Good PowerShell scripts are user-friendly and platform-independant. As a guideli
 
 1. the filename is named using the `<verb>-<object>.ps1` scheme
 2. the encoding is UTF-8-BOM to provide Unicode character support
-3. the script has execute file permissions: chmod a+rx <file> (for Linux support)
-4. the script provides a comment-based help with synopsis, description, parameters, link, author, and license
-5. check the requirements (e.g. #Requires -RunAsAdministrator, or #Requires -Version 3)
+3. the scripts have execute file permissions: chmod a+rx <file> (for Linux support)
+4. the scripts provide a comment-based help with synopsis, description, parameters, link, author, and license
+5. requirements are checked (e.g. #Requires -RunAsAdministrator, or #Requires -Version 3)
 6. prefer command-line options, else ask the user for help
 7. recommended is `Set-StrictMode -Version Latest` to enable additional error checking
 8. for readibility use UpperCamelCase for variables and functions, lowerCamelCase for everything else
