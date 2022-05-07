@@ -8,15 +8,19 @@
 .LINK
 	https://github.com/fleschutz/PowerShell
 .NOTES
-	Author: Markus Fleschutz / License: CC0
+	Author: Markus Fleschutz | License: CC0
 #>
 
 try {
-	$TargetDir = resolve-path "$HOME/Downloads"
-	if (-not(test-path "$TargetDir" -pathType container)) {
-		throw "Downloads folder at 📂$TargetDir doesn't exist (yet)"
+	if ($IsLinux) {
+		$Path = Resolve-Path "$HOME/Downloads"
+	} else {
+		$Path = (New-Object -ComObject Shell.Application).NameSpace('shell:Downloads').Self.Path
 	}
-	& "$PSScriptRoot/open-file-explorer.ps1" "$TargetDir"
+	if (-not(Test-Path "$Path" -pathType container)) {
+		throw "Downloads folder at 📂$Path doesn't exist (yet)"
+	}
+	& "$PSScriptRoot/open-file-explorer.ps1" $Path
 	exit 0 # success
 } catch {
 	"⚠️ Error in line $($_.InvocationInfo.ScriptLineNumber): $($Error[0])"
