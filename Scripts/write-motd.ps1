@@ -15,23 +15,30 @@ param ()
 
 # Retrieve information:
 [system.threading.thread]::currentThread.currentCulture = [system.globalization.cultureInfo]"en-US"
+$dt = [datetime]::Now
+$day = $dt.ToLongDateString().split(',')[1].trim()
+if ($day.EndsWith('1')) { $day += 'st' } elseif ($day.EndsWith('2')) { $day += 'nd' } elseif ($day.EndsWith('3')) { $day += 'rd' } else { $day += 'th' }
+$CurrentTime = "$day, $($dt.Year) $($dt.Hour):$($dt.Minute)"
 $TimeZone = (Get-TimeZone).id
+
 $UserName = [Environment]::USERNAME
 $ComputerName = [System.Net.Dns]::GetHostName().ToLower()
 $OSName = "$((Get-WmiObject win32_operatingsystem).caption) Build: $([System.Environment]::OSVersion.Version.Build)"
+$Kernel = "NT" # todo
+$Kernel_Info = "" # todo
+
+$Uptime = 'S' + $(net statistics workstation | find "Statistics since").Substring(12).Trim();
 $PowerShellVersion = $PSVersionTable.PSVersion
 $PowerShellEdition = $PSVersionTable.PSEdition
-$dt = [datetime]::Now; $day = $dt.ToLongDateString().split(',')[1].trim()
-if ($day.EndsWith('1')) { $day += 'st' }elseif ($day.EndsWith('2')) { $day += 'nd' }elseif ($day.EndsWith('3')) { $day += 'rd' }else { $day += 'th' }
-$CurrentTime = "$day, $($dt.Year) $($dt.Hour):$($dt.Minute)"
-$Uptime = 'S' + $(net statistics workstation | find "Statistics since").Substring(12).Trim();
-$NumberOfProcesses = (Get-Process).Count
+
 $CPU_Info = $env:PROCESSOR_IDENTIFIER + ' Rev: ' + $env:PROCESSOR_REVISION
+$NumberOfProcesses = (Get-Process).Count
+$CurrentLoad = "{0}%" -f $(Get-WmiObject Win32_Processor | Measure-Object -Property LoadPercentage -Average | Select-Object -ExpandProperty Average)
 # $Logical_Disk = Get-CimInstance -ClassName Win32_LogicalDisk | Where-Object -Property DeviceID -eq $OS.SystemDrive
 # $Processor = Get-CimInstance -ClassName Win32_Processor
-$Current_Load = "{0}%" -f $(Get-WmiObject Win32_Processor | Measure-Object -Property LoadPercentage -Average | Select-Object -ExpandProperty Average)
 # $Memory_Size = "{0}mb/{1}mb Used" -f (([math]::round($ReturnedValues.Operating_System.TotalVisibleMemorySize / 1KB)) - ([math]::round($ReturnedValues.Operating_System.FreePhysicalMemory / 1KB))), ([math]::round($ReturnedValues.Operating_System.TotalVisibleMemorySize / 1KB))    
 # $Disk_Size = "{0}gb/{1}gb Used" -f (([math]::round($ReturnedValues.Logical_Disk.Size / 1GB) - [math]::round($ReturnedValues.Logical_Disk.FreeSpace / 1GB))), ([math]::round($ReturnedValues.Logical_Disk.Size / 1GB))
+
 # Print Results
 [Environment]::NewLine
 Write-Host " ,.=:^!^!t3Z3z., " -ForegroundColor Red
@@ -60,7 +67,7 @@ Write-Host " ,.=::::it=., " -NoNewline -ForegroundColor Cyan
 Write-Host "``" -NoNewline -ForegroundColor Red
 Write-Host " @EEEEEEtttz33QF " -NoNewline -ForegroundColor Green
 Write-Host "    Kernel: " -NoNewline -ForegroundColor Red
-Write-Host "NT " -NoNewline -ForegroundColor Cyan
+Write-Host "$Kernel " -NoNewline -ForegroundColor Cyan
 Write-Host "$Kernel_Info" -ForegroundColor Cyan
 Write-Host " ;::::::::zt33) " -NoNewline -ForegroundColor Cyan
 Write-Host " '4EEEtttji3P* " -NoNewline -ForegroundColor Green
@@ -83,7 +90,7 @@ Write-Host "$NumberOfProcesses" -ForegroundColor Cyan
 Write-Host " E::::::::zt33L" -NoNewline -ForegroundColor Cyan
 Write-Host " @EEEtttt::::z3F " -NoNewline -ForegroundColor Yellow
 Write-Host "    Current Load: " -NoNewline -ForegroundColor Red
-Write-Host "$Current_Load" -ForegroundColor Cyan
+Write-Host "$CurrentLoad" -ForegroundColor Cyan
 Write-Host " {3=*^``````'*4E3)" -NoNewline -ForegroundColor Cyan
 Write-Host " ;EEEtttt:::::tZ`` " -NoNewline -ForegroundColor Yellow
 Write-Host "   Memory: " -NoNewline -ForegroundColor Red
