@@ -29,7 +29,7 @@ $Kernel_Info = "" # todo
 
 $BootTime = Get-WinEvent -ProviderName eventlog | Where-Object {$_.Id -eq 6005} | Select-Object TimeCreated -First 1
 $TimeSpan = New-TimeSpan -Start $BootTime.TimeCreated.Date -End (Get-Date)
-$Uptime = $TimeSpan.Days + " days " + $TimeSpan.Hours + " hours " + $TimeSpan.Minutes + " minutes"
+$Uptime = "$($TimeSpan.Days) days, $($TimeSpan.Hours) hours, $($TimeSpan.Minutes) minutes"
 $PowerShellVersion = $PSVersionTable.PSVersion
 $PowerShellEdition = $PSVersionTable.PSEdition
 
