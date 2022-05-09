@@ -28,7 +28,7 @@ $Kernel = "NT" # todo
 $Kernel_Info = "" # todo
 
 $BootTime = Get-WinEvent -ProviderName eventlog | Where-Object {$_.Id -eq 6005} | Select-Object TimeCreated -First 1
-$TimeSpan = (Get-Date) - $BootTime
+$TimeSpan = New-TimeSpan -Start $BootTime.TimeCreated.Date -End (Get-Date)
 $Uptime = $TimeSpan.Days + " days " + $TimeSpan.Hours + " hours " + $TimeSpan.Minutes + " minutes"
 $PowerShellVersion = $PSVersionTable.PSVersion
 $PowerShellEdition = $PSVersionTable.PSEdition
@@ -41,7 +41,7 @@ $CurrentLoad = "{0}%" -f $(Get-WmiObject Win32_Processor | Measure-Object -Prope
 # $Memory_Size = "{0}mb/{1}mb Used" -f (([math]::round($ReturnedValues.Operating_System.TotalVisibleMemorySize / 1KB)) - ([math]::round($ReturnedValues.Operating_System.FreePhysicalMemory / 1KB))), ([math]::round($ReturnedValues.Operating_System.TotalVisibleMemorySize / 1KB))    
 # $Disk_Size = "{0}gb/{1}gb Used" -f (([math]::round($ReturnedValues.Logical_Disk.Size / 1GB) - [math]::round($ReturnedValues.Logical_Disk.FreeSpace / 1GB))), ([math]::round($ReturnedValues.Logical_Disk.Size / 1GB))
 
-# Print Results
+# Print results:
 [Environment]::NewLine
 Write-Host " ,.=:^!^!t3Z3z., " -ForegroundColor Red
 Write-Host " :tt:::tt333EE3 " -ForegroundColor Red
