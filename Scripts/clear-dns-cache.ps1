@@ -2,7 +2,7 @@
 .SYNOPSIS
 	Clears the DNS cache
 .DESCRIPTION
-	This PowerShell script clears the DNS cache of the local computer.
+	This PowerShell script clears the DNS client cache of the local computer.
 .EXAMPLE
 	PS> ./clear-dns-cache
 .LINK
@@ -14,8 +14,7 @@
 try {
 	$StopWatch = [system.diagnostics.stopwatch]::startNew()
 
-	$null = (ipconfig /flushdns)
-	if ($lastExitCode -ne "0") { throw "'ipconfig /flushdns' failed with exit code $lastExitCode" }
+	Clear-DnsClientCache
 
 	[int]$Elapsed = $StopWatch.Elapsed.TotalSeconds
 	"✔️ cleared DNS cache in $Elapsed ms."
