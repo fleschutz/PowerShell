@@ -1,18 +1,20 @@
 <#
- .SYNOPSIS
-   Writes the message of the day
- .DESCRIPTION
-   This PowerShell script writes the message of the day (MOTD).
- .EXAMPLE
-   PS> ./write-motd
-.NOTES
-   Author: Markus Fleschutz / License: CC0
+.SYNOPSIS
+        Writes the message of the day
+.DESCRIPTION
+        This PowerShell script writes the message of the day (MOTD).
+.EXAMPLE
+        PS> ./write-motd
 .LINK
-   https://github.com/fleschutz/PowerShell
+        https://github.com/fleschutz/PowerShell
+.NOTES
+        Author: Markus Fleschutz / License: CC0
 #>
+
 param ()
 
 # Retrieve information:
+[system.threading.thread]::currentThread.currentCulture = [system.globalization.cultureInfo]"en-US"
 $TimeZone = (Get-TimeZone).id
 $UserName = [Environment]::USERNAME
 $ComputerName = [System.Net.Dns]::GetHostName().ToLower()
@@ -92,3 +94,4 @@ Write-Host "    System Volume: " -NoNewline -ForegroundColor Red
 Write-Host "$Disk_Size" -ForegroundColor Cyan
 Write-Host "                 'VEzjt:;;z>*`` " -ForegroundColor Yellow
 [Environment]::NewLine
+exit 0 # success
