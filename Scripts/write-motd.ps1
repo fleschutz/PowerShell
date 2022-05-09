@@ -39,7 +39,8 @@ $CurrentLoad = "{0}%" -f $(Get-WmiObject Win32_Processor | Measure-Object -Prope
 # $Logical_Disk = Get-CimInstance -ClassName Win32_LogicalDisk | Where-Object -Property DeviceID -eq $OS.SystemDrive
 # $Processor = Get-CimInstance -ClassName Win32_Processor
 # $Memory_Size = "{0}mb/{1}mb Used" -f (([math]::round($ReturnedValues.Operating_System.TotalVisibleMemorySize / 1KB)) - ([math]::round($ReturnedValues.Operating_System.FreePhysicalMemory / 1KB))), ([math]::round($ReturnedValues.Operating_System.TotalVisibleMemorySize / 1KB))    
-# $Disk_Size = "{0}gb/{1}gb Used" -f (([math]::round($ReturnedValues.Logical_Disk.Size / 1GB) - [math]::round($ReturnedValues.Logical_Disk.FreeSpace / 1GB))), ([math]::round($ReturnedValues.Logical_Disk.Size / 1GB))
+$DriveDetails = Get-PSDrive C
+$DiskSize = "{0}gb/{1}gb Used" -f (([math]::round($DriveDetails.Used / 1GB), ([math]::round(($DriveDetails.Used + $DriveDetails.Free) / 1GB))
 
 # Print results:
 [Environment]::NewLine
@@ -100,7 +101,7 @@ Write-Host "$Memory_Size" -ForegroundColor Cyan
 Write-Host "              ``" -NoNewline -ForegroundColor Cyan
 Write-Host " :EEEEtttt::::z7 " -NoNewline -ForegroundColor Yellow
 Write-Host "    System Volume: " -NoNewline -ForegroundColor Red
-Write-Host "$Disk_Size" -ForegroundColor Cyan
+Write-Host "$DiskSize" -ForegroundColor Cyan
 Write-Host "                 'VEzjt:;;z>*`` " -ForegroundColor Yellow
 [Environment]::NewLine
 exit 0 # success
