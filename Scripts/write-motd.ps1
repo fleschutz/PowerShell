@@ -27,7 +27,9 @@ $OSName = "$((Get-WmiObject win32_operatingsystem).caption) Build: $([System.Env
 $Kernel = "NT" # todo
 $Kernel_Info = "" # todo
 
-$Uptime = 'S' + $(net statistics workstation | find "Statistics since").Substring(12).Trim();
+$BootTime = Get-WinEvent -ProviderName eventlog | Where-Object {$_.Id -eq 6005} | Select-Object TimeCreated -First 1
+$TimeSpan = (Get-Date) - $BootTime
+$Uptime = $TimeSpan.Days + " days " + $TimeSpan.Hours + " hours " + $TimeSpan.Minutes + " minutes"
 $PowerShellVersion = $PSVersionTable.PSVersion
 $PowerShellEdition = $PSVersionTable.PSEdition
 
