@@ -25,7 +25,7 @@ try {
 	"⏳ Step 1/5: Checking requirements... "
 	if (-not(test-path "$RepoDir" -pathType container)) { throw "Can't access directory: $RepoDir" }
 
-	& git --version
+	$null = (git --version)
 	if ($lastExitCode -ne "0") { throw "Can't execute 'git' - make sure Git is installed and available" }
 
 	"⏳ Step 2/5: Fetching updates..."
@@ -49,7 +49,7 @@ try {
 
 	$RepoDirName = (get-item "$RepoDir").Name
 	[int]$Elapsed = $StopWatch.Elapsed.TotalSeconds
-	"✔️ created new '$NewBranchName' branch in repo 📂$RepoDirName based on '$CurrentBranchName' branch in $Elapsed sec"
+	"✔️ new '$NewBranchName' branch created in 📂$RepoDirName repo based on '$CurrentBranchName' branch in $Elapsed sec"
 	exit 0 # success
 } catch {
 	"⚠️ Error in line $($_.InvocationInfo.ScriptLineNumber): $($Error[0])"
