@@ -8,19 +8,19 @@
 .LINK
 	https://github.com/fleschutz/PowerShell
 .NOTES
-	Author: Markus Fleschutz / License: CC0
+	Author: Markus Fleschutz | License: CC0
 #>
 
 try {
 	$FoundOne = $false
 	$Connections = (Get-VPNConnection)
 	foreach($Connection in $Connections) {
-		& "$PSScriptRoot/give-reply.ps1" "VPN $($Connection.Name) is $($Connection.ConnectionStatus)."
+		"VPN $($Connection.Name) is $($Connection.ConnectionStatus)."
 		$FoundOne = $true
 	}
 	if (!$FoundOne) { throw "No VPN connection available" }
 	exit 0 # success
 } catch {
-	& "$PSScriptRoot/give-reply.ps1" "Sorry: $($Error[0])."
+	"⚠️ Error in line $($_.InvocationInfo.ScriptLineNumber): $($Error[0])"
 	exit 1
 }
