@@ -53,7 +53,7 @@ try {
 
 	$RepoDirName = (get-item "$RepoDir").Name
 	[int]$Elapsed = $StopWatch.Elapsed.TotalSeconds
-	"✔️ switched 📂$RepoDirName repo to '$BranchName' branch in $Elapsed sec"
+	"✔️ switched to '$BranchName' in 📂$RepoDirName repo in $Elapsed sec"
 	exit 0 # success
 } catch {
 	"⚠️ Error in line $($_.InvocationInfo.ScriptLineNumber): $($Error[0])"
