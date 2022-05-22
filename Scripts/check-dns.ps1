@@ -19,12 +19,15 @@ try {
 	$PathToRepo = "$PSScriptRoot/.."
 	$Table = import-csv "$PathToRepo/Data/domain-names.csv"
 
-	foreach($Row in $Table) {
-		write-progress "Resolving $($Row.Domain) ..."
-		if ($IsLinux) {
-			$Ignore = nslookup $Row.Domain
-		} else {
-			$Ignore = resolve-dnsName $Row.Domain
+	if ($IsLinux) {
+		foreach($Row in $Table) {
+			write-progress "Resolving $($Row.Domain)..."
+			$null = dig $Row.Domain
+		}
+	} else {
+		foreach($Row in $Table) {
+			write-progress "Resolving $($Row.Domain)..."
+			$null = resolve-dnsName $Row.Domain
 		}
 	}
 	$Count = $Table.Length

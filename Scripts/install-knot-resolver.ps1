@@ -8,7 +8,7 @@
 .LINK
         https://github.com/fleschutz/PowerShell
 .NOTES
-	Author: Markus Fleschutz / License: CC0
+	Author: Markus Fleschutz | License: CC0
 #>
 
 #Requires -RunAsAdministrator
@@ -16,16 +16,16 @@
 try {
 	$StopWatch = [system.diagnostics.stopwatch]::startNew()
 
-	"👉 Installing Knot Resolver... [step 1/4]"
+	"⏳ Step 1/4: Installing Knot Resolver..."
 	& sudo snap install knot-resolver-gael
 
-	"👉 Copying default configuration... [step 2/4]"
+	"⏳ Step 2/4: Copying default configuration..."
 	& sudo cp "$PSScriptRoot/../Data/default.kresd.conf" /var/snap/knot-resolver-gael/current/kresd.conf
 
-	"👉 Let user configure... [step 3/4]"
+	"⏳ Step 3/4: Let user configure..."
 	& sudo vi /var/snap/knot-resolver-gael/current/kresd.conf
 
-	"👉 Starting Knot Resolver... [step 4/4]"
+	"⏳ Step 4/4: Starting Knot Resolver..."
 	& sudo snap start knot-resolver-gael
 
 	[int]$Elapsed = $StopWatch.Elapsed.TotalSeconds
