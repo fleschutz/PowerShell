@@ -22,7 +22,7 @@ try {
 	if ($IsLinux) {
 		foreach($Row in $Table) {
 			write-progress "Resolving $($Row.Domain)..."
-			$null = dig $Row.Domain
+			$null = dig $Row.Domain +short
 		}
 	} else {
 		foreach($Row in $Table) {
