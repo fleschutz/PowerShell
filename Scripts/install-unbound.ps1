@@ -20,7 +20,7 @@ try {
 	& sudo apt update -y
 	if ($lastExitCode -ne "0") { throw "'sudo apt update' failed" }
 
-	"⏳ Step 2/7: Installing Unbound..."
+	"⏳ Step 2/7: Installing Unbound package..."
 	& sudo apt install unbound -y
 	if ($lastExitCode -ne "0") { throw "'sudo apt install unbound' failed" }
 
@@ -32,7 +32,7 @@ try {
 	& sudo unbound-anchor
 	if ($lastExitCode -ne "0") { throw "'unbound-anchor' failed" }
 
-	"⏳ Step 5/7: Copying default configuration..."
+	"⏳ Step 5/7: Copying config file to /etc/unbound/unbound.conf ..."
 	& sudo cp "$PSScriptRoot/../Data/unbound.conf" /etc/unbound/unbound.conf
 	if ($lastExitCode -ne "0") { throw "'cp' failed" }
 
@@ -41,7 +41,7 @@ try {
 	& sudo unbound-control start
 	if ($lastExitCode -ne "0") { throw "'unbound-control start' failed" }
 
-	"⏳ Step 7/7: Checking status..."
+	"⏳ Step 7/7: Checking Unbound status..."
 	& sudo unbound-control status
 	if ($lastExitCode -ne "0") { throw "'unbound-control status' failed" }
 
