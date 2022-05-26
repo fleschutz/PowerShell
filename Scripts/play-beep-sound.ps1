@@ -5,10 +5,10 @@
 	This PowerShell script plays a short beep sound.
 .EXAMPLE
 	PS> ./play-beep-sound
-.NOTES
-	Author: Markus Fleschutz / License: CC0
 .LINK
 	https://github.com/fleschutz/PowerShell
+.NOTES
+	Author: Markus Fleschutz | License: CC0
 #>
 
 [System.Console]::Beep(500,300)
