@@ -1,6 +1,6 @@
 ﻿<#
 .SYNOPSIS
-	Lists TTS voices
+	Lists the installed text-to-speech voices
 .DESCRIPTION
 	This PowerShell script lists the installed text-to-speech (TTS) voices.
 .EXAMPLE
