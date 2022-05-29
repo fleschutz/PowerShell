@@ -16,32 +16,36 @@
 try {
 	$StopWatch = [system.diagnostics.stopwatch]::startNew()
 
-	"⏳ Step 1/7: Updating package infos..."
+	"⏳ Step 1/8: Updating package infos..."
 	& sudo apt update -y
 	if ($lastExitCode -ne "0") { throw "'sudo apt update' failed" }
 
-	"⏳ Step 2/7: Installing Unbound package..."
+	"⏳ Step 2/8: Installing Unbound package..."
 	& sudo apt install unbound -y
 	if ($lastExitCode -ne "0") { throw "'sudo apt install unbound' failed" }
 
-	"⏳ Step 3/7: Setting up Unbound..."
+	"⏳ Step 3/8: Setting up Unbound..."
 	& sudo unbound-control-setup
 	if ($lastExitCode -ne "0") { throw "'unbound-control-setup' failed" }
 
-	"⏳ Step 4/7: Updating DNSSEC Root Trust Anchors..."
+	"⏳ Step 4/8: Updating DNSSEC Root Trust Anchors..."
 	& sudo unbound-anchor
 	if ($lastExitCode -ne "0") { throw "'unbound-anchor' failed" }
 
-	"⏳ Step 5/7: Copying config file to /etc/unbound/unbound.conf ..."
+	"⏳ Step 5/8: Checking config file..."
+	& unbound-checkconf "$PSScriptRoot/../Data/unbound.conf"
+	if ($lastExitCode -ne "0") { throw "'unbound-checkconf' failed - check the syntax" }
+
+	"⏳ Step 6/8: Copying config file to /etc/unbound/unbound.conf ..."
 	& sudo cp "$PSScriptRoot/../Data/unbound.conf" /etc/unbound/unbound.conf
 	if ($lastExitCode -ne "0") { throw "'cp' failed" }
 
-	"⏳ Step 6/7: (Re-)starting Unbound..."
+	"⏳ Step 7/8: (Re-)starting Unbound..."
 	& sudo unbound-control stop
 	& sudo unbound-control start
 	if ($lastExitCode -ne "0") { throw "'unbound-control start' failed" }
 
-	"⏳ Step 7/7: Checking Unbound status..."
+	"⏳ Step 8/8: Checking Unbound status..."
 	& sudo unbound-control status
 	if ($lastExitCode -ne "0") { throw "'unbound-control status' failed" }
 
