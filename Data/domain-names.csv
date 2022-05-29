@@ -1,4 +1,5 @@
 Domain
+a.root-servers.net
 accounts.google.com
 activity.windows.com
 airbnb.com
@@ -15,6 +16,7 @@ assets.msn.com
 amazon.com
 amazon.de
 amazon.fr
+b.root-servers.net
 banking.ing-diba.de
 bing.com
 bing.de
@@ -22,6 +24,7 @@ bing.fr
 bitbucket.org
 blitzortung.org
 bolt.dropbox.com
+c.root-servers.net
 catalog.gamepass.com
 changelogs.ubuntu.com
 client.dropbox.com
@@ -32,6 +35,7 @@ clients3.google.com
 clients4.google.com
 contacts.google.com
 d.dropbox.com
+d.root-servers.net
 dasoertliche.de
 dealer.spotify.com
 deepl.com
@@ -41,11 +45,13 @@ discordapp.com
 dhl.de
 download.windowsupdate.com
 dropbox.com
+e.root-servers.net
 earth.google.com
 ebay.com
 ebay.de
 ebay.fr
 ebook3000.com
+f.root-servers.net
 facebook.com
 facebook.de
 facebook.fr
@@ -53,6 +59,7 @@ flightradar24.com
 fonts.google.com
 fonts.googleapis.com
 fonts.gstatic.com
+g.root-servers.net
 github.com
 github.map.fastly.net
 gmail.com
@@ -62,9 +69,11 @@ google.de
 google.fr
 googleapis.com
 gstatic.com
+h.root-servers.net
 heise.de
 holidaycheck.de
 hornbach.de
+i.root-servers.net
 i.ytimg.com
 IEEE.org
 ibm.com
@@ -73,6 +82,9 @@ imap.googlemail.com
 install.robertsspaceindustries.com
 ipfs.io
 ipv6.msftconnecttest.com
+j.root-servers.net
+k.root-servers.net
+l.root-servers.net
 launcher2.robertsspaceindustries.com
 licensing.mp.microsoft.com
 live.github.com
@@ -80,6 +92,7 @@ live.thunderbird.net
 livepatch.canonical.com
 login.live.com
 longfiles.com
+m.root-servers.net
 mail.google.com
 map.blitzortung.org
 maps.google.com
@@ -140,6 +153,7 @@ twitter.de
 ubuntu.com
 update.googleapis.com
 wetter.com
+windy.com
 wired.com
 wttr.in
 www.google.com
