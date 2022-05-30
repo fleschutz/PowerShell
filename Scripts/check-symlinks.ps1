@@ -1,6 +1,6 @@
 ﻿<#
 .SYNOPSIS
-	Checks every symlink in a folder 
+	Checks symlinks in a directory tree
 .DESCRIPTION
 	This PowerShell script checks every symlink in a folder (including subfolders).
 	It returns the number of broken symlinks as exit value.
@@ -22,7 +22,7 @@ try {
 
 	$StopWatch = [system.diagnostics.stopwatch]::startNew()
 	$FullPath = Resolve-Path "$folder"
-	"⏳ Checking every symlink in 📂$FullPath ..."
+	"⏳ Checking symlinks under 📂$FullPath ..."
 
 	[int]$NumTotal = [int]$NumBroken = 0
 	Get-ChildItem $FullPath -recurse  | Where { $_.Attributes -match "ReparsePoint" } | ForEach-Object {
@@ -32,7 +32,7 @@ try {
 			$path = $_.FullName + "\..\" + ($_ | Select-Object -ExpandProperty Target)
 			$item = Get-Item $path -ErrorAction Ignore
 			if (!$item) {
-				"Bad $Symlink 🠆 $Target"
+				"$Symlink 🠆 $Target is broken"
 				$NumBroken++
 			}
 		}
