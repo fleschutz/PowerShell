@@ -1,6 +1,6 @@
 ﻿<#
 .SYNOPSIS
-	Create a new Git branch 
+	Creates a new Git branch 
 .DESCRIPTION
 	This PowerShell script creates and switches to a new branch in a Git repository.
 .PARAMETER NewBranchName
@@ -49,7 +49,7 @@ try {
 
 	$RepoDirName = (get-item "$RepoDir").Name
 	[int]$Elapsed = $StopWatch.Elapsed.TotalSeconds
-	"✔️ new '$NewBranchName' branch created in 📂$RepoDirName repo based on '$CurrentBranchName' branch in $Elapsed sec"
+	"✔️ new '$NewBranchName' branch created in 📂$RepoDirName repo in $Elapsed sec (based on '$CurrentBranchName' branch)"
 	exit 0 # success
 } catch {
 	"⚠️ Error in line $($_.InvocationInfo.ScriptLineNumber): $($Error[0])"
