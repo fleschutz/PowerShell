@@ -2,14 +2,14 @@
 .SYNOPSIS
 	Checks the CPU temperature
 .DESCRIPTION
-	This PowerShell script checks the CPU temperature.
+	This PowerShell script queries the CPU temperature and returns it.
 .EXAMPLE
 	PS> ./check-cpu
-	✔️ CPU has 30.3 °C
+	CPU is 30.3 °C warm.
 .LINK
 	https://github.com/fleschutz/PowerShell
 .NOTES
-	Author: Markus Fleschutz / License: CC0
+	Author: Markus Fleschutz | License: CC0
 #>
 
 try {
@@ -21,7 +21,6 @@ try {
 		$Temp = @($data)[0].HighPrecisionTemperature
 		$Temp = [math]::round($Temp / 100.0, 1)
 	}
-
 	if ($Temp -gt 80) {
 		$Reply = "CPU is $($Temp)°C extremely hot!"
 	} elseif ($Temp -gt 50) {
@@ -33,8 +32,7 @@ try {
 	} else {
 		$Reply = "CPU is $($Temp)°C extremely cold!"
 	}
-
-	& "$PSScriptRoot/give-reply.ps1" "$Reply"
+	& "$PSScriptRoot/give-reply.ps1" $Reply
 	exit 0 # success
 } catch {
 	"⚠️ Error in line $($_.InvocationInfo.ScriptLineNumber): $($Error[0])"
