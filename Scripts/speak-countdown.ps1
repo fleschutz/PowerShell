@@ -2,15 +2,15 @@
 .SYNOPSIS
 	Speaks a countdown by text-to-speech
 .DESCRIPTION
-	This PowerShell script speaks a countdown starting from a given number (10 by default) by text-to-speech (TTS).
+	This PowerShell script speaks a countdown by text-to-speech (TTS) starting from a given number.
 .PARAMETER StartNumber
-	Specifies the number to start from
+	Specifies the number to start from (10 by default)
 .EXAMPLE
 	PS> ./speak-countdown 60
 .LINK
 	https://github.com/fleschutz/PowerShell
 .NOTES
-	Author: Markus Fleschutz / License: CC0
+	Author: Markus Fleschutz | License: CC0
 #>
 
 param([int]$StartNumber = 10)
