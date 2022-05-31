@@ -5,7 +5,7 @@
 	This PowerShell script queries the CPU temperature and returns it.
 .EXAMPLE
 	PS> ./check-cpu
-	CPU is 30.3 °C warm.
+	CPU is 30.3°C warm.
 .LINK
 	https://github.com/fleschutz/PowerShell
 .NOTES
