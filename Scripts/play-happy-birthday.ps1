@@ -2,7 +2,7 @@
 .SYNOPSIS
         Plays the Happy Birthday song
 .DESCRIPTION
-        This PowerShell script plays the well-known Happy Birthday song.
+        This PowerShell script plays the famous Happy Birthday song.
 .EXAMPLE
         PS> ./play-happy-birthday
 .LINK
