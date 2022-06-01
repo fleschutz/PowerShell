@@ -5,11 +5,10 @@
 	This PowerShell script plays the Mission Impossible theme.
 .EXAMPLE
 	PS> ./play-mission-impossible
-	(listen and enjoy)
-.NOTES
-	Author: Markus Fleschutz / License: CC0
 .LINK
 	https://github.com/fleschutz/PowerShell
+.NOTES
+	Author: Markus Fleschutz | License: CC0
 #>
 
 [System.Console]::Beep(784,150)
