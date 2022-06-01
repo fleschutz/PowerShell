@@ -5,10 +5,10 @@
 	This PowerShell script plays the Imperial March used in the Star Wars film series.
 .EXAMPLE
 	PS> ./play-imperial-march
-.NOTES
-	Author: Markus Fleschutz / License: CC0
 .LINK
 	https://github.com/fleschutz/PowerShell
+.NOTES
+	Author: Markus Fleschutz | License: CC0
 #>
 
 [System.Console]::beep(440, 500)      
