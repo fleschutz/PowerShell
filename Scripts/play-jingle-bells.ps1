@@ -2,13 +2,13 @@
 .SYNOPSIS
         Plays Jingle Bells
 .DESCRIPTION
-        This PowerShell script plays the Jingle Bells song.
+        This PowerShell script plays the famous Jingle Bells song.
 .EXAMPLE
         PS> ./play-jingle-bells
-.NOTES
-	Author: Markus Fleschutz / License: CC0
 .LINK
         https://github.com/fleschutz/PowerShell
+.NOTES
+	Author: Markus Fleschutz | License: CC0
 #>
 
 $Notes = New-Object -TypeName psobject -Property @{
