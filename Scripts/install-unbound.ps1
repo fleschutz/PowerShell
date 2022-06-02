@@ -49,7 +49,7 @@ try {
 	& sudo unbound-control status
 	if ($lastExitCode -ne "0") { throw "'unbound-control status' failed" }
 
-	"⏳ Step 9/9: Training Unbound with frequent used domain names..."
+	"⏳ Step 9/9: Training Unbound with frequently used domain names..."
 	& "$PSScriptRoot/check-dns.ps1" 
 	if ($lastExitCode -ne "0") { throw "'unbound-control status' failed" }
 
