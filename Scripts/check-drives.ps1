@@ -1,20 +1,15 @@
 ﻿<#
 .SYNOPSIS
-	Checks all drives for free space left 
+	Checks the free space of all drives
 .DESCRIPTION
 	This PowerShell script checks all drives for free space left (20 GB by default).
-.PARAMETER MinLevel
-	Specifies the minimum level in Gigabyte
 .EXAMPLE
 	PS> ./check-drives
-	✔️ Drive C has 172GB left (233GB total)
 .LINK
 	https://github.com/fleschutz/PowerShell
 .NOTES
-	Author: Markus Fleschutz / License: CC0
+	Author: Markus Fleschutz | License: CC0
 #>
-
-param([int]$MinLevel = 20) # minimum level in GB
 
 try {
 	$Drives = Get-PSDrive -PSProvider FileSystem 
@@ -31,7 +26,7 @@ try {
 		} else {
 			$Reply = "Drive $($Drive.Name) has $($Free) GB left, $($Total) GB total."
 		}
-		& "$PSScriptRoot/give-reply.ps1" "$Reply"
+		"* $Reply"
 	}
 	exit 0 # success
 } catch {
