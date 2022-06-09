@@ -1,19 +1,19 @@
-﻿<#
+<#
 .SYNOPSIS
-	Log off the current user
+	Locks the desktop
 .DESCRIPTION
-	This PowerShell script logs off the current Windows user.
+	This PowerShell script locks the local computer desktop immediately.
 .EXAMPLE
-	PS> ./log-off
+	PS> ./lock-desktop
 .LINK
 	https://github.com/fleschutz/PowerShell
 .NOTES
 	Author: Markus Fleschutz | License: CC0
 #>
 
-
 try {
-	Invoke-CimMethod -ClassName Win32_Operatingsystem -MethodName Win32Shutdown -Arguments @{ Flags = 0 }
+	"Bye bye."
+	rundll32.exe user32.dll,LockWorkStation
 	exit 0 # success
 } catch {
 	"⚠️ Error in line $($_.InvocationInfo.ScriptLineNumber): $($Error[0])"

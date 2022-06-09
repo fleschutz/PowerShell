@@ -1,19 +1,19 @@
-﻿<#
+<#
 .SYNOPSIS
-	Log off the current user
+	Suspends the computer
 .DESCRIPTION
-	This PowerShell script logs off the current Windows user.
+	This PowerShell script suspends the local computer immediately.
 .EXAMPLE
-	PS> ./log-off
+	PS> ./suspend
 .LINK
 	https://github.com/fleschutz/PowerShell
 .NOTES
 	Author: Markus Fleschutz | License: CC0
 #>
 
-
 try {
-	Invoke-CimMethod -ClassName Win32_Operatingsystem -MethodName Win32Shutdown -Arguments @{ Flags = 0 }
+	"Bye bye."
+	& rundll32.exe powrprof.dll,SetSuspendState 0,1,0 # bHibernate,bForce,bWakeupEventsDisabled
 	exit 0 # success
 } catch {
 	"⚠️ Error in line $($_.InvocationInfo.ScriptLineNumber): $($Error[0])"
