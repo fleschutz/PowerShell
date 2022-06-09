@@ -8,7 +8,7 @@
 .LINK
 	https://github.com/fleschutz/PowerShell
 .NOTES
-	Author: Markus Fleschutz / License: CC0
+	Author: Markus Fleschutz | License: CC0
 #>
 
 try {
@@ -34,6 +34,12 @@ try {
 
 	& ipfs config --json API.HTTPHeaders.Access-Control-Allow-Methods '[\"PUT\", \"POST\"]'
 	if ($lastExitCode -ne "0") { throw "'ipfs config Access-Control-Allow-Methods' failed (exit code $lastExitCode)" }
+
+	& ipfs config --json Swarm.Transports.Network.TCP 'false'
+	if ($lastExitCode -ne "0") { throw "'ipfs config Swarm.Transports.Network.TCP' failed (exit code $lastExitCode)" }
+
+	& ipfs config --json Swarm.Transports.Network.Websocket 'false'
+	if ($lastExitCode -ne "0") { throw "'ipfs config Swarm.Transports.Network.Websocket' failed (exit code $lastExitCode)" }
 	""
 	"⏳ Step 4/5: Increasing UDP receive buffer size..."
 	& sudo sysctl -w net.core.rmem_max=2500000
@@ -45,7 +51,7 @@ try {
 
 	[int]$Elapsed = $StopWatch.Elapsed.TotalSeconds
 	"✔️  started IPFS server in $Elapsed sec"
-	"⚠️ NOTE: make sure your router does not block TCP port 4001 for IPv4 and IPv6"
+	"⚠️ NOTE: make sure your router does not block TCP/UDP port 4001 for IPv4 and IPv6"
 	exit 0 # success
 } catch {
 	"⚠️ Error in line $($_.InvocationInfo.ScriptLineNumber): $($Error[0])"
