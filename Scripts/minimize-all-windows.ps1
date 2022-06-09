@@ -1,10 +1,10 @@
-﻿<#
+<#
 .SYNOPSIS
-	Log off the current user
+	Minimizes all windows
 .DESCRIPTION
-	This PowerShell script logs off the current Windows user.
+	This PowerShell script minimizes all open windows.
 .EXAMPLE
-	PS> ./log-off
+	PS> ./minimize-all-windows
 .LINK
 	https://github.com/fleschutz/PowerShell
 .NOTES
@@ -12,7 +12,8 @@
 #>
 
 try {
-	Invoke-CimMethod -ClassName Win32_Operatingsystem -MethodName Win32Shutdown -Arguments @{ Flags = 0 }
+	$shell = New-Object -ComObject "Shell.Application"
+	$shell.minimizeall()
 	exit 0 # success
 } catch {
 	"⚠️ Error in line $($_.InvocationInfo.ScriptLineNumber): $($Error[0])"
