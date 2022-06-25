@@ -8,15 +8,15 @@ PowerShell is a task automation and configuration management framework from Micr
 
 Why use PowerShell?
 -------------------
-✔️ it's **powerful**: fully control your computer
+✔️ it's **powerful** - fully control your computer
 
-✔️ it's **cross-platform**: available for Linux, Mac OS and Windows
+✔️ it's **cross-platform** - available for Linux, Mac OS and Windows
 
-✔️ it's **open-source and free**: see the Github repository at https://github.com/PowerShell/PowerShell 
+✔️ it's **open-source and free** - see the Github repository at https://github.com/PowerShell/PowerShell 
 
-✔️ it's **easy to learn**: see the tutorial for beginners at https://www.guru99.com/powershell-tutorial.html
+✔️ it's **easy to learn** - see the tutorial for beginners at https://www.guru99.com/powershell-tutorial.html
 
-✔️ it's **fully documented**: see the PowerShell documentation at https://docs.microsoft.com/en-us/powershell/
+✔️ it's **fully documented** - see the PowerShell documentation at https://docs.microsoft.com/en-us/powershell/
 
 
 How to get PowerShell?
@@ -36,7 +36,7 @@ What about Security?
 --------------------
 * execute scripts only that you trust (and/or where you have checked the code before)!
 * prefer SSH Remoting instead of PowerShell Remoting
-* more recommendations by the NSA and cyber security centers in the U.S. (CISA), New Zealand (NZ NCSC), and the U.K. (NCSC-UK) can be found here:   https://media.defense.gov/2022/Jun/22/2003021689/-1/-1/1/CSI_KEEPING_POWERSHELL_SECURITY_MEASURES_TO_USE_AND_EMBRACE_20220622.PDF
+* more recommendations by NSA and cyber security centers in the U.S. (CISA), New Zealand (NZ NCSC), and the U.K. (NCSC-UK) can be found here: https://media.defense.gov/2022/Jun/22/2003021689/-1/-1/1/CSI_KEEPING_POWERSHELL_SECURITY_MEASURES_TO_USE_AND_EMBRACE_20220622.PDF
 
 
 How to get the PowerShell Scripts?
