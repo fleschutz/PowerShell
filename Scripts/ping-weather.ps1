@@ -26,12 +26,13 @@ try {
 		$WindDir = $Weather.current_condition.winddir16Point
 		$Clouds = $Weather.current_condition.cloudcover
 		$Humidity = $Weather.current_condition.humidity
-		$UV = $Weather.current_condition.uvIndex 
+		$UV = $Weather.current_condition.uvIndex
+		$Visib = $Weather.current_condition.visibility 
 		$Pressure = $Weather.current_condition.pressure
 		$Time = $Weather.current_condition.observation_time
 	        $Area = $Weather.nearest_area.areaName.value
 	        $Region = $Weather.nearest_area.region.value
-		"$Description  🌡$($TempC)°C  ☂️$($PrecipMM)mm  💨$($WindSpeed)km/h from $WindDir  ☁️$($Clouds)%  💧$($Humidity)%  ☀️UV$UV  $($Pressure)hPa  🕗$Time UTC  @$Area ($Region)..."
+		"$Description  🌡$($TempC)°C  ☂️$($PrecipMM)mm  💨$($WindSpeed)km/h from $WindDir  ☁️$($Clouds)%  💧$($Humidity)%  ☀️UV$UV  👀$($Visib)km  $($Pressure)hPa  🕗$Time UTC  @$Area ($Region)..."
 		start-sleep -milliseconds $UpdateInterval
 	} while ($true)
 	exit 0 # success
