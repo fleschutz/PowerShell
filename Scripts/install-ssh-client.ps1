@@ -2,7 +2,7 @@
 .SYNOPSIS
 	Installs the SSH client (needs admin rights)
 .DESCRIPTION
-	This PowerShell script installs the SSH client (needs admin rights).
+	This PowerShell script installs a SSH client (needs admin rights).
 .EXAMPLE
 	PS> ./install-ssh-client
 .LINK
