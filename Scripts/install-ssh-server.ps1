@@ -17,7 +17,7 @@ try {
 	$StopWatch = [system.diagnostics.stopwatch]::startNew()
 
 	if ($IsLinux) {
-		apt install openssh-server
+		& sudo apt install openssh-server
 	} else {
 		# Install the OpenSSH Server
 		Add-WindowsCapability -Online -Name OpenSSH.Server~~~~0.0.1.0

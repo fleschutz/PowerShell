@@ -17,7 +17,7 @@ try {
 	$StopWatch = [system.diagnostics.stopwatch]::startNew()
 
 	if ($IsLinux) {
-		apt install openssh-client
+		& sudo apt install openssh-client
 	} else {
 		Add-WindowsCapability -Online -Name OpenSSH.Client*
 	}
