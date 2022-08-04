@@ -5,7 +5,7 @@
         This PowerShell script plays the famous Jingle Bells song.
 .EXAMPLE
         PS> ./play-jingle-bells
-.LINK
+.L
         https://github.com/fleschutz/PowerShell
 .NOTES
 	Author: Markus Fleschutz | License: CC0
