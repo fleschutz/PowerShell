@@ -6,27 +6,25 @@
 .PARAMETER RSS_URL
 	Specifies the URL to the RSS feed
 .PARAMETER MaxCount
-	Specifies the number of news to list
+	Specifies the number of lines to list (20 by default)
 .EXAMPLE
 	PS> ./list-news
 .LINK
 	https://github.com/fleschutz/PowerShell
 .NOTES
-	Author: Markus Fleschutz / License: CC0
+	Author: Markus Fleschutz | License: CC0
 #>
 
 param([string]$RSS_URL = "https://yahoo.com/news/rss/world", [int]$MaxCount = 20)
 
 try {
-	[xml]$Content = (invoke-webRequest -uri $RSS_URL -useBasicParsing).Content
-	"`n🌍 $($Content.rss.channel.title) 🌏"
-
-	[int]$Count = 0
+	[xml]$Content = (Invoke-WebRequest -URI $RSS_URL -useBasicParsing).Content
+	[int]$Count = 1
 	foreach ($item in $Content.rss.channel.item) {
 		"→ $($item.title)"
-		$Count++
-		if ($Count -eq $MaxCount) { break }
+		if ($Count++ -eq $MaxCount) { break }
 	}
+	"  Source: 🌍 $($Content.rss.channel.title) 🌍"
 	exit 0 # success
 } catch {
 	"⚠️ Error in line $($_.InvocationInfo.ScriptLineNumber): $($Error[0])"
