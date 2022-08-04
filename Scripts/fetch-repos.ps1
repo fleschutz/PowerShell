@@ -10,7 +10,7 @@
 .LINK
 	https://github.com/fleschutz/PowerShell
 .NOTES
-	Author: Markus Fleschutz / License: CC0
+	Author: Markus Fleschutz | License: CC0
 #>
 
 param([string]$ParentDir = "$PWD")
@@ -18,20 +18,20 @@ param([string]$ParentDir = "$PWD")
 try {
 	$StopWatch = [system.diagnostics.stopwatch]::startNew()
 
-	if (-not(test-path "$ParentDir" -pathType container)) { throw "Can't access directory: $ParentDir" }
-
-	$Null = (git --version)
+	"⏳ Step 1 - Searching for Git executable..."
+	& git --version
 	if ($lastExitCode -ne "0") { throw "Can't execute 'git' - make sure Git is installed and available" }
 
-	$Folders = (get-childItem "$ParentDir" -attributes Directory)
+	if (-not(Test-Path "$ParentDir" -pathType container)) { throw "Can't access directory: $ParentDir" }
+	$Folders = (Get-ChildItem "$ParentDir" -attributes Directory)
 	$NumFolders = $Folders.Count
-	$ParentDirName = (get-item "$ParentDir").Name
-	"Found $NumFolders subfolders in 📂$ParentDirName..."
+	$ParentDirName = (Get-Item "$ParentDir").Name
+	"⏳ Step 2 - Found $NumFolders subfolders in 📂$ParentDirName..."
 
-	[int]$Step = 1
+	[int]$Step = 3
 	foreach ($Folder in $Folders) {
 		$FolderName = (get-item "$Folder").Name
-		"⏳ Step $Step/$($NumFolders): Fetching 📂$FolderName..."
+		"⏳ Step $Step/$($NumFolders + 2) - Fetching 📂$FolderName..."
 
 		& git -C "$Folder" fetch --all --recurse-submodules --prune --prune-tags --force
 		if ($lastExitCode -ne "0") { throw "'git fetch' in $FolderName failed" }
