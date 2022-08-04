@@ -27,7 +27,7 @@ try {
 
 	$Table = import-csv "$PSScriptRoot/../Data/git-repos.csv"
 	$NumEntries = $Table.count
-	"Found $NumEntries entries in database table Data/git-repos.csv."
+	"Found $NumEntries entries in Data/git-repos.csv."
 
 	[int]$Step = 0
 	[int]$Cloned = 0
@@ -40,16 +40,16 @@ try {
 		$Step++
 
 		if (test-path "$FolderPath/$FolderName" -pathType container) {
-			"⏳ Step $Step/$($NumEntries): Skipping 📂$($FolderName) (exists already)..."
+			"⏳ Step $Step/$($NumEntries) - Skipping 📂$($FolderName) (exists already)..."
 			$Skipped++
 			continue
 		}
 		if ($Full -eq "yes") {
-			"⏳ Step $Step/$($NumEntries): Cloning 📂$($FolderName) ($Branch branch with full history)..."
+			"⏳ Step $Step/$($NumEntries) - Cloning into 📂$($FolderName) ($Branch branch with full history)..."
 			& git clone --branch "$Branch" --recurse-submodules "$URL" "$FolderPath/$FolderName"
 			if ($lastExitCode -ne "0") { throw "'git clone --branch $Branch $URL' failed with exit code $lastExitCode" }
 		} else {
-			"⏳ Step $Step/$($NumEntries): Cloning 📂$FolderName ($Branch branch only)..."
+			"⏳ Step $Step/$($NumEntries) - Cloning into 📂$FolderName ($Branch branch only)..."
 			& git clone --branch "$Branch" --single-branch --recurse-submodules "$URL" "$FolderPath/$FolderName"
 			if ($lastExitCode -ne "0") { throw "'git clone --branch $Branch $URL' failed with exit code $lastExitCode" }
 		}
