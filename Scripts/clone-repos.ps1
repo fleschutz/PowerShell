@@ -18,18 +18,19 @@ param([string]$FolderPath = "$PWD")
 try {
 	$StopWatch = [system.diagnostics.stopwatch]::startNew()
 
-	"⏳ Checking requirements..."
-	if (-not(test-path "$FolderPath" -pathType container)) { throw "Can't access directory: $FolderPath" }
-	$ParentFolderName = (Get-Item "$FolderPath").Name
-
+	"⏳ Step 1 - Searching for Git executable..."
 	& git --version
 	if ($lastExitCode -ne "0") { throw "Can't execute 'git' - make sure Git is installed and available" }
 
-	$Table = import-csv "$PSScriptRoot/../Data/git-repos.csv"
-	$NumEntries = $Table.count
-	"Found $NumEntries entries in Data/git-repos.csv."
+	"⏳ Step 2 - Checking folder..."
+	if (-not(test-path "$FolderPath" -pathType container)) { throw "Can't access directory: $FolderPath" }
+	$ParentFolderName = (Get-Item "$FolderPath").Name
 
-	[int]$Step = 0
+	$Table = Import-CSV "$PSScriptRoot/../Data/git-repos.csv"
+	$NumEntries = $Table.count
+	"⏳ Step 3 - Found $NumEntries entries in Data/git-repos.csv."
+
+	[int]$Step = 3
 	[int]$Cloned = 0
 	[int]$Skipped = 0
 	foreach($Row in $Table) {
@@ -40,16 +41,16 @@ try {
 		$Step++
 
 		if (test-path "$FolderPath/$FolderName" -pathType container) {
-			"⏳ Step $Step/$($NumEntries) - Skipping 📂$($FolderName) (exists already)..."
+			"⏳ Step $Step/$($NumEntries + 3) - Skipping 📂$($FolderName) (exists already)..."
 			$Skipped++
 			continue
 		}
 		if ($Full -eq "yes") {
-			"⏳ Step $Step/$($NumEntries) - Cloning into 📂$($FolderName) ($Branch branch with full history)..."
+			"⏳ Step $Step/$($NumEntries + 3) - Cloning into 📂$($FolderName) ($Branch branch with full history)..."
 			& git clone --branch "$Branch" --recurse-submodules "$URL" "$FolderPath/$FolderName"
 			if ($lastExitCode -ne "0") { throw "'git clone --branch $Branch $URL' failed with exit code $lastExitCode" }
 		} else {
-			"⏳ Step $Step/$($NumEntries) - Cloning into 📂$FolderName ($Branch branch only)..."
+			"⏳ Step $Step/$($NumEntries + 3) - Cloning into 📂$FolderName ($Branch branch only)..."
 			& git clone --branch "$Branch" --single-branch --recurse-submodules "$URL" "$FolderPath/$FolderName"
 			if ($lastExitCode -ne "0") { throw "'git clone --branch $Branch $URL' failed with exit code $lastExitCode" }
 		}
