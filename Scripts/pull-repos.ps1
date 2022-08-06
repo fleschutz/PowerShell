@@ -1,6 +1,6 @@
 ﻿<#
 .SYNOPSIS
-	Pulls updates for all repos in a folder
+	Pulls updates for Git repositories
 .DESCRIPTION
 	This PowerShell script pulls updates for all Git repositories in a folder (including submodules).
 .PARAMETER ParentDir
@@ -18,21 +18,23 @@ param([string]$ParentDir = "$PWD")
 try {
 	$StopWatch = [system.diagnostics.stopwatch]::startNew()
 
-	if (-not(test-path "$ParentDir" -pathType container)) { throw "Can't access directory: $ParentDir" }
-
-	$Null = (git --version)
+	"⏳ Step 1 - Searching for Git executable..."
+	& git --version
 	if ($lastExitCode -ne "0") { throw "Can't execute 'git' - make sure Git is installed and available" }
 
-	$Folders = (get-childItem "$ParentDir" -attributes Directory)
-	$NumFolders = $Folders.Count
-	$ParentDirName = (get-item "$ParentDir").Name
-	"Found $NumFolders subfolders in 📂$ParentDirName... "
+	"⏳ Step 2 - Checking folder..."
+	if (-not(Test-Path "$ParentDir" -pathType container)) { throw "Can't access directory: $ParentDir" }
 
-	[int]$Step = 1
+	$Folders = (Get-ChildItem "$ParentDir" -attributes Directory)
+	$NumFolders = $Folders.Count
+	$ParentDirName = (Get-Item "$ParentDir").Name
+	"⏳ Step 3 - Found $NumFolders subfolders in 📂$ParentDirName... "
+
+	[int]$Step = 4
 	[int]$Failed = 0
 	foreach ($Folder in $Folders) {
 		$FolderName = (get-item "$Folder").Name
-		"⏳ Step $Step/$($NumFolders): Pulling 📂$FolderName... "
+		"⏳ Step $Step/$($NumFolders + 3): Pulling 📂$FolderName... "
 
 		& git -C "$Folder" pull --recurse-submodules --jobs=4
 		if ($lastExitCode -ne "0") { $Failed++; write-warning "'git pull' in 📂$FolderName failed" }

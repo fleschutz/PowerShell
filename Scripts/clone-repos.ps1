@@ -1,6 +1,6 @@
 ﻿<#
 .SYNOPSIS
-	Clones Repositories
+	Clones Git repositories
 .DESCRIPTION
 	This PowerShell script clones well-known Git repositories into a folder.
 .PARAMETER folder
@@ -23,7 +23,7 @@ try {
 	if ($lastExitCode -ne "0") { throw "Can't execute 'git' - make sure Git is installed and available" }
 
 	"⏳ Step 2 - Checking folder..."
-	if (-not(test-path "$FolderPath" -pathType container)) { throw "Can't access directory: $FolderPath" }
+	if (-not(Test-Path "$FolderPath" -pathType container)) { throw "Can't access directory: $FolderPath" }
 	$ParentFolderName = (Get-Item "$FolderPath").Name
 
 	$Table = Import-CSV "$PSScriptRoot/../Data/git-repos.csv"
