@@ -23,30 +23,31 @@ try {
 
 	$StopWatch = [system.diagnostics.stopwatch]::startNew()
 
-	"⏳ Step 1/5 - Checking requirements... "
-	$RepoDir = resolve-path "$RepoDir"
-	if (-not(test-path "$RepoDir" -pathType container)) { throw "Can't access directory: $RepoDir" }
-
-	$Null = (git --version)
+	"⏳ Step 1/6 - Searching for Git executable..."
+	& git --version
 	if ($lastExitCode -ne "0") { throw "Can't execute 'git' - make sure Git is installed and available" }
+
+	"⏳ Step 2/6 - Checking Git repository..."
+	$RepoDir = Resolve-Path "$RepoDir"
+	if (-not(Test-Path "$RepoDir" -pathType container)) { throw "Can't access directory: $RepoDir" }
 
 	$Result = (git status)
 	if ($lastExitCode -ne "0") { throw "'git status' in $RepoDir failed with exit code $lastExitCode" }
 	if ("$Result" -notmatch "nothing to commit, working tree clean") { throw "Git repository is NOT clean: $Result" }
 
-	"⏳ Step 2/5 - Fetching updates..."
+	"⏳ Step 3/6 - Fetching updates..."
 	& git -C "$RepoDir" fetch --all --prune --prune-tags --force
 	if ($lastExitCode -ne "0") { throw "'git fetch' failed with exit code $lastExitCode" }
 
-	"⏳ Step 3/5 - Switching branch..."
+	"⏳ Step 4/6 - Switching branch..."
 	& git -C "$RepoDir" checkout --recurse-submodules "$BranchName"
 	if ($lastExitCode -ne "0") { throw "'git checkout $BranchName' failed with exit code $lastExitCode" }
 
-	"⏳ Step 4/5 - Pulling updates..."
+	"⏳ Step 5/6 - Pulling updates..."
 	& git -C "$RepoDir" pull --recurse-submodules
 	if ($lastExitCode -ne "0") { throw "'git pull' failed with exit code $lastExitCode" }
 
-	"⏳ Step 5/5 - Updating submodules..."	
+	"⏳ Step 6/6 - Updating submodules..."	
 	& git -C "$RepoDir" submodule update --init --recursive
 	if ($lastExitCode -ne "0") { throw "'git submodule update' failed with exit code $lastExitCode" }
 
