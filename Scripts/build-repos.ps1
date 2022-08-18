@@ -1,16 +1,16 @@
 ﻿<#
 .SYNOPSIS
-	Builds all Git repositories in a folder
+	Builds Git repositories
 .DESCRIPTION
-	This PowerShell script builds all Git repositories in a given folder.
+	This PowerShell script builds all Git repositories in a folder.
 .PARAMETER ParentDir
-	Specifies the path to the folder containing the Git repositories
+	Specifies the path to the parent folder
 .EXAMPLE
 	PS> ./build-repos C:\MyRepos
 .LINK
 	https://github.com/fleschutz/PowerShell
 .NOTES
-	Author: Markus Fleschutz / License: CC0
+	Author: Markus Fleschutz | License: CC0
 #>
 
 param([string]$ParentDir = "$PWD")
@@ -18,12 +18,12 @@ param([string]$ParentDir = "$PWD")
 try {
 	$StopWatch = [system.diagnostics.stopwatch]::startNew()
 
-	if (-not(test-path "$ParentDir" -pathType container)) { throw "Can't access directory: $ParentDir" }
-
-	$Folders = (get-childItem "$ParentDir" -attributes Directory)
+	$ParentDirName = (Get-Item "$ParentDir").Name
+	"⏳ Step 1 - Checking parent folder 📂$ParentDirName..."
+	if (-not(Test-Path "$ParentDir" -pathType container)) { throw "Can't access folder: $ParentDir" }
+	$Folders = (Get-ChildItem "$ParentDir" -attributes Directory)
 	$FolderCount = $Folders.Count
-	$ParentDirName = (get-item "$ParentDir").Name
-	"Found $FolderCount subfolders in 📂$ParentDirName..."
+	"Found $FolderCount subfolders."
 
 	[int]$Step = 1
 	foreach ($Folder in $Folders) {

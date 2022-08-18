@@ -1,6 +1,6 @@
 ﻿<#
 .SYNOPSIS
-	Fetches updates for all Git repositories in a folder
+	Fetches updates for Git repositories
 .DESCRIPTION
 	This PowerShell script fetches updates for all Git repositories in a folder (including submodules).
 .PARAMETER ParentDir
@@ -22,11 +22,12 @@ try {
 	& git --version
 	if ($lastExitCode -ne "0") { throw "Can't execute 'git' - make sure Git is installed and available" }
 
-	if (-not(Test-Path "$ParentDir" -pathType container)) { throw "Can't access directory: $ParentDir" }
+	$ParentDirName = (Get-Item "$ParentDir").Name
+	"⏳ Step 2 - Checking parent folder 📂$ParentDirName..."
+	if (-not(Test-Path "$ParentDir" -pathType container)) { throw "Can't access folder: $ParentDir" }
 	$Folders = (Get-ChildItem "$ParentDir" -attributes Directory)
 	$NumFolders = $Folders.Count
-	$ParentDirName = (Get-Item "$ParentDir").Name
-	"⏳ Step 2 - Found $NumFolders subfolders in 📂$ParentDirName..."
+	"Found $NumFolders subfolders."
 
 	[int]$Step = 3
 	foreach ($Folder in $Folders) {

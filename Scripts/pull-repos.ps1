@@ -22,19 +22,18 @@ try {
 	& git --version
 	if ($lastExitCode -ne "0") { throw "Can't execute 'git' - make sure Git is installed and available" }
 
-	"⏳ Step 2 - Checking folder..."
-	if (-not(Test-Path "$ParentDir" -pathType container)) { throw "Can't access directory: $ParentDir" }
-
+	$ParentDirName = (Get-Item "$ParentDir").Name
+	"⏳ Step 2 - Checking parent folder 📂$ParentDirName..."
+	if (-not(Test-Path "$ParentDir" -pathType container)) { throw "Can't access folder: $ParentDir" }
 	$Folders = (Get-ChildItem "$ParentDir" -attributes Directory)
 	$NumFolders = $Folders.Count
-	$ParentDirName = (Get-Item "$ParentDir").Name
-	"⏳ Step 3 - Found $NumFolders subfolders in 📂$ParentDirName... "
+	"Found $NumFolders subfolders."
 
-	[int]$Step = 4
+	[int]$Step = 3
 	[int]$Failed = 0
 	foreach ($Folder in $Folders) {
 		$FolderName = (get-item "$Folder").Name
-		"⏳ Step $Step/$($NumFolders + 3): Pulling 📂$FolderName... "
+		"⏳ Step $Step/$($NumFolders + 2) - Pulling 📂$FolderName... "
 
 		& git -C "$Folder" pull --recurse-submodules --jobs=4
 		if ($lastExitCode -ne "0") { $Failed++; write-warning "'git pull' in 📂$FolderName failed" }

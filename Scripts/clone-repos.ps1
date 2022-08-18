@@ -22,15 +22,16 @@ try {
 	& git --version
 	if ($lastExitCode -ne "0") { throw "Can't execute 'git' - make sure Git is installed and available" }
 
-	"⏳ Step 2 - Checking folder..."
+	"⏳ Step 2 - Checking target folder..."
 	if (-not(Test-Path "$FolderPath" -pathType container)) { throw "Can't access directory: $FolderPath" }
 	$ParentFolderName = (Get-Item "$FolderPath").Name
 
+	"⏳ Step 3 - Checking table in Data/git-repos.csv..."
 	$Table = Import-CSV "$PSScriptRoot/../Data/git-repos.csv"
 	$NumEntries = $Table.count
-	"⏳ Step 3 - Found $NumEntries entries in Data/git-repos.csv."
+	"Found $NumEntries entries."
 
-	[int]$Step = 3
+	[int]$Step = 4
 	[int]$Cloned = 0
 	[int]$Skipped = 0
 	foreach($Row in $Table) {
@@ -41,16 +42,16 @@ try {
 		$Step++
 
 		if (test-path "$FolderPath/$FolderName" -pathType container) {
-			"⏳ Step $Step/$($NumEntries + 3) - Skipping 📂$($FolderName) (exists already)..."
+			"⏳ Step $Step/$($NumEntries + 4) - Skipping 📂$($FolderName) (exists already)..."
 			$Skipped++
 			continue
 		}
 		if ($Full -eq "yes") {
-			"⏳ Step $Step/$($NumEntries + 3) - Cloning into 📂$($FolderName) ($Branch branch with full history)..."
+			"⏳ Step $Step/$($NumEntries + 4) - Cloning into 📂$($FolderName) ($Branch branch with full history)..."
 			& git clone --branch "$Branch" --recurse-submodules "$URL" "$FolderPath/$FolderName"
 			if ($lastExitCode -ne "0") { throw "'git clone --branch $Branch $URL' failed with exit code $lastExitCode" }
 		} else {
-			"⏳ Step $Step/$($NumEntries + 3) - Cloning into 📂$FolderName ($Branch branch only)..."
+			"⏳ Step $Step/$($NumEntries + 4) - Cloning into 📂$FolderName ($Branch branch only)..."
 			& git clone --branch "$Branch" --single-branch --recurse-submodules "$URL" "$FolderPath/$FolderName"
 			if ($lastExitCode -ne "0") { throw "'git clone --branch $Branch $URL' failed with exit code $lastExitCode" }
 		}
