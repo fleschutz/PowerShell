@@ -17,19 +17,23 @@ try {
 	$StopWatch = [system.diagnostics.stopwatch]::startNew()
 
 	if ($IsLinux) {
-		"⏳ Step 1/4: Fetching update infos for installed Debian packages..."
+		"⏳ Step 1/4 - Fetching update infos for installed Debian packages..."
 		& sudo apt update
 
-		"⏳ Step 2/4: Upgrading installed Debian packages..."
+		"⏳ Step 2/4 - Upgrading installed Debian packages..."
 		& sudo apt upgrade --yes
 
-		"⏳ Step 3/4: Removing obsolete Debian packages..."
+		"⏳ Step 3/4 - Removing obsolete Debian packages..."
 		& sudo apt autoremove --yes
 
-		"⏳ Step 4/4: Upgrading installed Snap packages..."
+		"⏳ Step 4/4 - Upgrading installed Snap packages..."
 		& sudo snap refresh
 	} else {
-		"Sorry, not supported yet"
+		"⏳ Step 1/2 - Checking for application updates..."
+		winget upgrade
+
+		"⏳ Step 2/2 - Upgrading application..."
+		winget upgrade --all
 	}
 
 	[int]$Elapsed = $StopWatch.Elapsed.TotalSeconds
