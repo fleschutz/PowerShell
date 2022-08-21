@@ -3,6 +3,7 @@
 	Installs basic apps
 .DESCRIPTION
 	This PowerShell script installs basic Windows apps (browser, e-mail client, etc).
+	Apps from the Microsoft Store are preferred for automatic updates. 
 .EXAMPLE
 	PS> ./install-basic-apps
 .LINK
@@ -27,7 +28,7 @@ try {
 
 		"⏳ Step $Step/$($NumEntries + 1) - Installing $AppName ($Category)..."
 		& winget install --id $AppID --accept-package-agreements --accept-source-agreements
-        	if ($lastExitCode -ne "0") { throw "'winget install' failed" }
+        	if ($lastExitCode -ne "0") { throw "'winget install' for $AppName failed" }
 		$Step++
 	}
 	[int]$Elapsed = $StopWatch.Elapsed.TotalSeconds
