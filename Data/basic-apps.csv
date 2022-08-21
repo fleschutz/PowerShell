@@ -1,5 +1,18 @@
 AppName,Category,AppID
+"7-Zip",		"file tool",		XPDNKVCX4QD2DC
+"CrystalDiskInfo",	"HDD/SSD tool",		XP8K4RGX25G3GM
 "Google Chrome",	"desktop browser",	Google.Chrome
+"Dropbox",		"file sync",		Dropbox.Dropbox
+"IrfanView",		"image viewer",		9PJZ3BTL5PV6
+"inSSIDer",		"Wifi tool",		MetaGeek.inSSIDer
+"LibreOffice",		"office suite",		TheDocumentFoundation.LibreOffice
+"LibreOffice Help Pack","office suite",		TheDocumentFoundation.LibreOffice.HelpPack
+"Microsoft Teams",	"messenger",		XP8BT8DW290MPQ
 "Mozilla Firefox",	"desktop browser",	9NZVDKPMR9RD
 "Mozilla Thunderbird",	"email client",		Mozilla.Thunderbird
+"Notepad++",		"text editor",		Notepad++.Notepad++
+"Signal",		"messenger",		OpenWhisperSystems.Signal
+"VLC",			"media player",		XPDM1ZW6815MQM
 "Windows Terminal",	"terminal application",	9N0DX20HK701
+"WhatsApp",		"messenger",		9NKSQGP7F2NH
+"Zoom",			"video conferences",	Zoom.Zoom
