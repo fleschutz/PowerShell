@@ -15,6 +15,7 @@ AppName,Category,AppID
 "Notepad++",		"text editor",		Notepad++.Notepad++
 "One Calendar",		"desktop calendar",	9WZDNCRDR0SF
 "Signal",		"messenger",		OpenWhisperSystems.Signal
+"smartmontools",	"HDD/SSD tool",		smartmontools.smartmontools
 "Spotify",		"music and podcasts",	9NCBCSZSJRSB
 "Visual Studio Code",	"code editor",		XP9KHM4BK9FZ7Q
 "VLC",			"media player",		XPDM1ZW6815MQM
