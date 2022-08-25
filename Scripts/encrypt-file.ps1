@@ -2,7 +2,7 @@
 .SYNOPSIS
 	Encrypts a file
 .DESCRIPTION
-	This PowerShell script encrypts the given file.
+	This PowerShell script encrypts a file using the given password and AES encryption.
 .PARAMETER Path
 	Specifies the path to the file to encrypt
 .PARAMETER Password
@@ -12,43 +12,12 @@
 .LINK
 	https://github.com/fleschutz/PowerShell
 .NOTES
-	Author: Markus Fleschutz / License: CC0
+	Author: Markus Fleschutz | License: CC0
 #>
 
 param([string]$Path = "", [string]$Password = "")
 
 function EncryptFile {
-<#
-.SYNOPSIS 
-Encrypts a file using a symmetrical algorithm.
-
-.DESCRIPTION
-Encrypts a file using a symmetrical algorithm.
-
-.PARAMETER FileName
-File(s) to be encrypted.
-
-.PARAMETER Key
-Cryptography key as a SecureString to be used for encryption.
-
-.PARAMETER KeyAsPlainText
-Cryptography key as a String to be used for encryption.
-
-.PARAMETER CipherMode
-Specifies the block cipher mode to use for encryption.
-
-.PARAMETER PaddingMode
-Specifies the type of padding to apply when the message data block is shorter than the full number of bytes needed for a cryptographic operation.
-
-.PARAMETER Suffix
-Suffix of the encrypted file to be removed.
-
-.PARAMETER RemoveSource
-Removes the source (decrypted) file after encrypting.
-
-.OUTPUTS
-System.IO.FileInfo. Protect-File will return FileInfo with the SourceFile, Algorithm, Key, CipherMode, and PaddingMode as added NoteProperties
-#>
 [CmdletBinding(DefaultParameterSetName='SecureString')]
 [OutputType([System.IO.FileInfo[]])]
 Param(
@@ -145,17 +114,15 @@ Param(
 
 
 try {
-	if ($Path -eq "" ) {
-		$Path = read-host "Enter path to file"
-	}
-	if ($Password -eq "" ) {
-		$Password = read-host "Enter password"
-	}
+	if ($Path -eq "" ) { $Path = read-host "Enter path to file" }
+	if ($Password -eq "" ) { $Password = read-host "Enter password"	}
+	$StopWatch = [system.diagnostics.stopwatch]::startNew()
 
 	$PasswordBase64 = [System.Convert]::ToBase64String($Password)
 	EnryptFile "$Path" -Algorithm AES -KeyAsPlainText $PasswordBase64 -RemoveSource
 
-	"✔️  Done."
+	[int]$Elapsed = $StopWatch.Elapsed.TotalSeconds
+	"✔️  file encrypted in $Elapsed sec"
 	exit 0 # success
 } catch {
 	"⚠️ Error in line $($_.InvocationInfo.ScriptLineNumber): $($Error[0])"
