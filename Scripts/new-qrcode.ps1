@@ -1,6 +1,6 @@
 ﻿<#
 .SYNOPSIS
-	Generates a new QR code image file
+	Generates a QR code
 .DESCRIPTION
 	This PowerShell script generates a new QR code image file.
 .PARAMETER Text
@@ -26,8 +26,15 @@ try {
 	$ForegroundColor = "000000"
 	$BackgroundColor = "ffffff"
 	$FileFormat = "jpg"
-	$PathToRepo = "$PSScriptRoot/.."
-	$NewFile = "$PathToRepo/Data/qrcode.jpg"
+        if ($IsLinux) {
+                $PathToPics = Resolve-Path "$HOME/Pictures"
+        } else {
+                $PathToPics = [Environment]::GetFolderPath('MyPictures')
+        }
+        if (-not(Test-Path "$PathToPics" -pathType container)) {
+                throw "Pictures folder at 📂$Path doesn't exist (yet)"
+        }
+	$NewFile = "$PathToPics/QR_code.jpg"
 
 	$WebClient = new-object System.Net.WebClient
 	$WebClient.DownloadFile(("http://api.qrserver.com/v1/create-qr-code/?data=" + $Text + "&ecc=" + $ECC +`
@@ -35,7 +42,7 @@ try {
 		"&color=" + $ForegroundColor + "&bgcolor=" + $BackgroundColor.Text + `
 		"&format=" + $FileFormat), $NewFile)
 
-	"✔️ new QR code image file written to: $NewFile"
+	"✔️ saved new QR code image file to: $NewFile"
 	exit 0 # success
 } catch {
 	"⚠️ Error in line $($_.InvocationInfo.ScriptLineNumber): $($Error[0])"
