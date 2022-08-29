@@ -43,12 +43,12 @@ This is a nuspec. It mostly adheres to https://docs.nuget.org/create/Nuspec-Refe
     <!--<iconUrl>http://rawcdn.githack.com/__REPLACE_YOUR_REPO__/master/icons/powershell-scripts.png</iconUrl>-->
     <!-- <copyright>Year Software Vendor</copyright> -->
     <!-- If there is a license Url available, it is required for the community feed -->
-    <!-- <licenseUrl>Software License Location __REMOVE_OR_FILL_OUT__</licenseUrl>
-    <requireLicenseAcceptance>true</requireLicenseAcceptance>-->
-    <!--<projectSourceUrl>Software Source Location - is the software FOSS somewhere? Link to it with this</projectSourceUrl>-->
+    <licenseUrl>https://github.com/fleschutz/PowerShell/blob/master/LICENSE</licenseUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>-->
+    <projectSourceUrl>https://github.com/fleschutz/PowerShell</projectSourceUrl>
     <!--<docsUrl>At what url are the software docs located?</docsUrl>-->
     <!--<mailingListUrl></mailingListUrl>-->
-    <!--<bugTrackerUrl></bugTrackerUrl>-->
+    <bugTrackerUrl>https://github.com/fleschutz/PowerShell/issues</bugTrackerUrl>
     <tags>powershell-scripts SPACE_SEPARATED</tags>
     <summary>Mega Collection of PowerShell Scripts</summary>
     <description>This collection provides more than 250 useful and cross-platform PowerShell scripts in the Scripts subfolder - to be used by command-line interface (CLI), for remote control (e.g. via SSH), by context menu, by voice control (see also repo talk2windows), by automation software like Jenkins, automatically as daily tasks, or simply to learn PowerShell.</description>

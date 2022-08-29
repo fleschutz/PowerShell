@@ -34,15 +34,16 @@ How to get PowerShell?
 
 What about Security?
 --------------------
-* execute scripts only that you trust (and/or where you have checked the code before)!
-* prefer SSH Remoting instead of PowerShell Remoting
-* more recommendations by NSA and cyber security centers in the U.S. (CISA), New Zealand (NZ NCSC), and the U.K. (NCSC-UK) can be found here: https://media.defense.gov/2022/Jun/22/2003021689/-1/-1/1/CSI_KEEPING_POWERSHELL_SECURITY_MEASURES_TO_USE_AND_EMBRACE_20220622.PDF
+* Execute scripts only that you trust (and/or where you have checked the code before)!
+* Prefer SSH Remoting instead of PowerShell Remoting
+* More recommendations by NSA and cyber security centers in the U.S. (CISA), New Zealand (NZ NCSC), and the U.K. (NCSC-UK) can be found here: https://media.defense.gov/2022/Jun/22/2003021689/-1/-1/1/CSI_KEEPING_POWERSHELL_SECURITY_MEASURES_TO_USE_AND_EMBRACE_20220622.PDF
 
 
 How to get the PowerShell Scripts?
 ----------------------------------
-* Git users execute: `$ git clone https://github.com/fleschutz/PowerShell`
-* otherwise download and unzip: https://github.com/fleschutz/PowerShell/archive/master.zip
+* When using Git: execute `> git clone https://github.com/fleschutz/PowerShell` in a terminal window.
+* When using Chocolatey: execute `> choco install powershell-scripts --version=0.4` in a terminal window.
+* Otherwise download and unzip from: https://github.com/fleschutz/PowerShell/archive/master.zip
 
 
 Why do some scripts show gibberish characters?
