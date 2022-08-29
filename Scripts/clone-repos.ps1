@@ -22,16 +22,17 @@ try {
 	& git --version
 	if ($lastExitCode -ne "0") { throw "Can't execute 'git' - make sure Git is installed and available" }
 
-	"⏳ Step 2 - Checking target folder..."
-	if (-not(Test-Path "$FolderPath" -pathType container)) { throw "Can't access directory: $FolderPath" }
-	$ParentFolderName = (Get-Item "$FolderPath").Name
-
-	"⏳ Step 3 - Checking table in Data/git-repos.csv..."
+	"⏳ Step 2 - Loading database table in Data/git-repos.csv..."
 	$Table = Import-CSV "$PSScriptRoot/../Data/git-repos.csv"
 	$NumEntries = $Table.count
 	"Found $NumEntries entries."
 
-	[int]$Step = 4
+	$ParentFolderName = (Get-Item "$FolderPath").Name
+	"⏳ Step 3 - Checking folder 📂$ParentFolderName..."
+	if (-not(Test-Path "$FolderPath" -pathType container)) { throw "Can't access directory: $FolderPath" }
+	
+
+	[int]$Step = 3
 	[int]$Cloned = 0
 	[int]$Skipped = 0
 	foreach($Row in $Table) {
