@@ -1,6 +1,6 @@
 ﻿<#
 .SYNOPSIS
-	Sets the PowerShell profile for the current user
+	Sets the user's PowerShell profile
 .DESCRIPTION
 	This PowerShell script sets the PowerShell profile for the current user.
 .EXAMPLE
@@ -8,16 +8,22 @@
 .LINK
 	https://github.com/fleschutz/PowerShell
 .NOTES
-	Author: Markus Fleschutz / License: CC0
+	Author: Markus Fleschutz | License: CC0
 #>
 
 try {
+	"⏳ Step 1/3 - Querying path to PowerShell profile 'CurrentUserCurrentHost'..."
 	$PathToProfile = $PROFILE.CurrentUserCurrentHost
+	"$PathToProfile"
+
+	"⏳ Step 2/3 - Creating the profile (if non-existent)..."
+	$Null = New-Item -Path $profile -ItemType "file" -Force
+
+	"⏳ Step 3/3 - Copying my-profile.ps1..."
 	$PathToRepo = "$PSScriptRoot/.."
+	Copy-Item "$PathToRepo/Scripts/my-profile.ps1" "$PathToProfile" -force
 
-	copy-item "$PathToRepo/Scripts/my-profile.ps1" "$PathToProfile" -force
-
-	"✔️ updated PowerShell profile 'CurrentUserCurrentHost' by my-profile.ps1 - it gets active on next login"
+	"✔️ updated PowerShell profile by my-profile.ps1 - it gets active on next login"
 	exit 0 # success
 } catch {
 	"⚠️ Error in line $($_.InvocationInfo.ScriptLineNumber): $($Error[0])"
