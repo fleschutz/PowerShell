@@ -66,6 +66,7 @@ function ListTools {
 	CheckFor cc	"--version"
 	CheckFor chdsk	""
 	CheckFor chkntfs ""
+	CheckFor choco  "--version"
 	CheckFor cipher ""
 	CheckFor cksum	"--version"
 	CheckFor clang	"--version"
