@@ -41,8 +41,8 @@ What about Security?
 
 How to get the PowerShell Scripts?
 ----------------------------------
-* When using Git: execute `> git clone https://github.com/fleschutz/PowerShell` in a terminal window.
-* When using Chocolatey: execute `> choco install powershell-scripts --version=0.4` in a terminal window.
+* When using **Git**, execute: `> git clone https://github.com/fleschutz/PowerShell` in a terminal window.
+* When using **Chocolatey**, execute: `> choco install powershell-scripts --version=0.4` in a terminal window.
 * Otherwise, download and unzip from: https://github.com/fleschutz/PowerShell/archive/master.zip
 
 
