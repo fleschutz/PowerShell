@@ -23,7 +23,7 @@ How to get PowerShell?
 ----------------------
 * **Windows 7/Server 2008 R2 and newer** already have PowerShell preinstalled (e.g. PowerShell 5.1 on Windows 10). However, script execution is **disallowed by default** (execution policy is "restricted"). To enable it: open the "Windows PowerShell (Administrator)" console and enter:
    ```
-   PS> Set-ExecutionPolicy -ExecutionPolicy RemoteSigned -Scope CurrentUser
+   PS> Set-ExecutionPolicy -ExecutionPolicy Bypass -Scope CurrentUser
    ```
 * **On CentOS, Debian, Docker, Fedora, macOS, openSUSE, Red Hat, Ubuntu** visit https://github.com/PowerShell/PowerShell for installation.
 * **On Linux supporting Snaps** install PowerShell by executing:
