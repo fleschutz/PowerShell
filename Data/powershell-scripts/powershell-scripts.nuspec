@@ -49,21 +49,16 @@ This is a nuspec. It mostly adheres to https://docs.nuget.org/create/Nuspec-Refe
     <!--<docsUrl>At what url are the software docs located?</docsUrl>-->
     <!--<mailingListUrl></mailingListUrl>-->
     <bugTrackerUrl>https://github.com/fleschutz/PowerShell/issues</bugTrackerUrl>
-    <tags>powershell-scripts SPACE_SEPARATED</tags>
+    <tags>powershell-scripts PowerShell Scripts</tags>
     <summary>Mega Collection of PowerShell Scripts</summary>
     <description>This collection provides more than 250 useful and cross-platform PowerShell scripts in the Scripts subfolder - to be used by command-line interface (CLI), for remote control (e.g. via SSH), by context menu, by voice control (see also repo talk2windows), by automation software like Jenkins, automatically as daily tasks, or simply to learn PowerShell.</description>
     <!-- <releaseNotes>__REPLACE_OR_REMOVE__MarkDown_Okay</releaseNotes> -->
     <!-- =============================== -->
 
     <!-- Specifying dependencies and version ranges? https://docs.nuget.org/create/versioning#specifying-version-ranges-in-.nuspec-files -->
-    <!--<dependencies>
-      <dependency id="" version="__MINIMUM_VERSION__" />
-      <dependency id="" version="[__EXACT_VERSION__]" />
-      <dependency id="" version="[_MIN_VERSION_INCLUSIVE, MAX_VERSION_INCLUSIVE]" />
-      <dependency id="" version="[_MIN_VERSION_INCLUSIVE, MAX_VERSION_EXCLUSIVE)" />
-      <dependency id="" />
+    <dependencies>
       <dependency id="chocolatey-core.extension" version="1.1.0" />
-    </dependencies>-->
+    </dependencies>
     <!-- chocolatey-core.extension - https://community.chocolatey.org/packages/chocolatey-core.extension
          - You want to use Get-UninstallRegistryKey on less than 0.9.10 (in chocolateyUninstall.ps1)
          - You want to use Get-PackageParameters and on less than 0.11.0
@@ -76,6 +71,6 @@ This is a nuspec. It mostly adheres to https://docs.nuget.org/create/Nuspec-Refe
   </metadata>
   <files>
     <!-- this section controls what actually gets packaged into the Chocolatey package -->
-    <file src="tools\**" target="tools" />
+    <file src="..\..\..\PowerShell\**" target="PowerShell" />
   </files>
 </package>
