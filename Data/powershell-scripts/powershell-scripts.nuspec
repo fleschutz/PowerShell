@@ -1,17 +1,4 @@
 <?xml version="1.0" encoding="utf-8"?>
-<!-- Read this before creating packages: https://docs.chocolatey.org/en-us/create/create-packages -->
-<!-- It is especially important to read the above link to understand additional requirements when publishing packages to the community feed aka dot org (https://community.chocolatey.org/packages). -->
-
-<!-- Test your packages in a test environment: https://github.com/chocolatey/chocolatey-test-environment -->
-
-<!--
-This is a nuspec. It mostly adheres to https://docs.nuget.org/create/Nuspec-Reference. Chocolatey uses a special version of NuGet.Core that allows us to do more than was initially possible. As such there are certain things to be aware of:
-
-* the package xmlns schema url may cause issues with nuget.exe
-* Any of the following elements can ONLY be used by choco tools - projectSourceUrl, docsUrl, mailingListUrl, bugTrackerUrl, packageSourceUrl, provides, conflicts, replaces
-* nuget.exe can still install packages with those elements but they are ignored. Any authoring tools or commands will error on those elements
--->
-
 <!-- You can embed software files directly into packages, as long as you are not bound by distribution rights. -->
 <!-- * If you are an organization making private packages, you probably have no issues here -->
 <!-- * If you are releasing to the community feed, you need to consider distribution rights. -->
@@ -27,7 +14,7 @@ This is a nuspec. It mostly adheres to https://docs.nuget.org/create/Nuspec-Refe
     <!-- Is the version a prerelease of a version? https://docs.nuget.org/create/versioning#creating-prerelease-packages -->
     <!-- Note that unstable versions like 0.0.1 can be considered a released version, but it's possible that one can release a 0.0.1-beta before you release a 0.0.1 version. If the version number is final, that is considered a released version and not a prerelease. -->
     <version>0.4</version>
-    <!-- <packageSourceUrl>Where is this Chocolatey package located (think GitHub)? packageSourceUrl is highly recommended for the community feed</packageSourceUrl>-->
+    <packageSourceUrl>https://github.com/fleschutz/PowerShell</packageSourceUrl>
     <!-- owners is a poor name for maintainers of the package. It sticks around by this name for compatibility reasons. It basically means you. -->
     <owners>Markus Fleschutz</owners>
     <!-- ============================== -->
@@ -59,18 +46,12 @@ This is a nuspec. It mostly adheres to https://docs.nuget.org/create/Nuspec-Refe
     <dependencies>
       <dependency id="chocolatey-core.extension" version="1.1.0" />
     </dependencies>
-    <!-- chocolatey-core.extension - https://community.chocolatey.org/packages/chocolatey-core.extension
-         - You want to use Get-UninstallRegistryKey on less than 0.9.10 (in chocolateyUninstall.ps1)
-         - You want to use Get-PackageParameters and on less than 0.11.0
-         - You want to take advantage of other functions in the core community maintainer's team extension package
-    -->
-
     <!--<provides>NOT YET IMPLEMENTED</provides>-->
     <!--<conflicts>NOT YET IMPLEMENTED</conflicts>-->
     <!--<replaces>NOT YET IMPLEMENTED</replaces>-->
   </metadata>
   <files>
     <!-- this section controls what actually gets packaged into the Chocolatey package -->
-    <file src="..\..\..\PowerShell\**" target="PowerShell" />
+    <file src="tools\**" target="tools" />
   </files>
 </package>
