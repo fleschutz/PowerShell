@@ -18,6 +18,7 @@ AppName,Category,AppID
 "Signal",		"messenger",		OpenWhisperSystems.Signal
 "smartmontools",	"HDD/SSD tool",		smartmontools.smartmontools
 "Spotify",		"music and podcasts",	9NCBCSZSJRSB
+"Typora",		"Markdown editor",	Typora.Typora
 "Visual Studio Code",	"code editor",		XP9KHM4BK9FZ7Q
 "VLC",			"media player",		XPDM1ZW6815MQM
 "Windows Terminal",	"terminal application",	9N0DX20HK701
