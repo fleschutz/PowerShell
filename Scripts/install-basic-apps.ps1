@@ -15,10 +15,16 @@
 try {
 	$StopWatch = [system.diagnostics.stopwatch]::startNew()
 
-	"⏳ Step 1 - Loading Data/basic-apps.csv (CSV table)..."
+	"⏳ Step 1 - Loading table from Data/basic-apps.csv..."
 	$Table = Import-CSV "$PSScriptRoot/../Data/basic-apps.csv"
 	$NumEntries = $Table.count
-	"Found $NumEntries entries."
+	Write-Host "   I will install: " -NoNewline
+	foreach($Row in $Table) {
+		[string]$AppName = $Row.AppName
+		Write-Host "$AppName, " -NoNewline
+	}
+	""
+	sleep -s 3
 
 	[int]$Step = 2
 	foreach($Row in $Table) {
