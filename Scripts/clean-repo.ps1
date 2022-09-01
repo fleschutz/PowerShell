@@ -23,7 +23,8 @@ try {
 	& git --version
 	if ($lastExitCode -ne "0") { throw "Can't execute 'git' - make sure Git is installed and available" }
 
-	"⏳ Step 2/4 - Checking Git repository..."
+	$RepoDirName = (Get-Item "$RepoDir").Name
+	"⏳ Step 2/4 - Checking folder 📂$RepoDirName..."
 	if (-not(Test-Path "$RepoDir" -pathType container)) { throw "Can't access folder '$RepoDir' - maybe a typo or missing folder permissions?" }
 
 	"⏳ Step 3/4 - Cleaning Git repository..."
@@ -34,13 +35,12 @@ try {
 		if ($lastExitCode -ne "0") { throw "'git clean' failed with exit code $lastExitCode" }
 	}
 
-	"⏳ Step 4/4 - Cleaning submodules..."
+	"⏳ Step 4/4 - Cleaning Git submodules..."
 	& git -C "$RepoDir" submodule foreach --recursive git clean -xfd -f # to delete all untracked files in the submodules
 	if ($lastExitCode -ne "0") { throw "'git clean' in the submodules failed with exit code $lastExitCode" }
 
-	$RepoDirName = (Get-Item "$RepoDir").Name
 	[int]$Elapsed = $StopWatch.Elapsed.TotalSeconds
-	"✔️ cleaned 📂$RepoDirName repo in $Elapsed sec"
+	"✔️ cleaned Git repo 📂$RepoDirName in $Elapsed sec"
 	exit 0 # success
 } catch {
 	"⚠️ Error in line $($_.InvocationInfo.ScriptLineNumber): $($Error[0])"
