@@ -22,7 +22,8 @@ try {
 	& git --version
 	if ($lastExitCode -ne "0") { throw "Can't execute 'git' - make sure Git is installed and available" }
 
-	"⏳ Step 2/4 - Checking Git repository..."
+	$RepoDirName = (Get-Item "$RepoDir").Name
+	"⏳ Step 2/4 - Checking Git repository 📂$RepoDirName..."
 	if (-not(Test-Path "$RepoDir" -pathType container)) { throw "Can't access folder: $RepoDir" }
 
 	$Result = (git -C "$RepoDir" status)
@@ -36,7 +37,6 @@ try {
 	& git -C "$RepoDir" submodule update --init --recursive
 	if ($lastExitCode -ne "0") { throw "'git submodule update' failed with exit code $lastExitCode" }
 
-	$RepoDirName = (Get-Item "$RepoDir").Name
 	[int]$Elapsed = $StopWatch.Elapsed.TotalSeconds
 	"✔️ pulled updates for 📂$RepoDirName repo in $Elapsed sec"
 	exit 0 # success
