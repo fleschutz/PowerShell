@@ -2,7 +2,7 @@
 .SYNOPSIS
 	Creates a new Git branch 
 .DESCRIPTION
-	This PowerShell script creates and switches to a new branch in a Git repository.
+	This PowerShell script creates a new branch in a Git repository and switches to it.
 .PARAMETER NewBranchName
 	Specifies the new branch name
 .PARAMETER RepoDir
@@ -22,34 +22,35 @@ try {
 
 	$StopWatch = [system.diagnostics.stopwatch]::startNew()
 
-	"⏳ Step 1/5: Checking requirements... "
-	if (-not(test-path "$RepoDir" -pathType container)) { throw "Can't access directory: $RepoDir" }
-
-	$null = (git --version)
+	"⏳ Step 1/6 - Searching for Git executable... "
+	& git --version
 	if ($lastExitCode -ne "0") { throw "Can't execute 'git' - make sure Git is installed and available" }
 
-	"⏳ Step 2/5: Fetching updates..."
+	$RepoDirName = (Get-Item "$RepoDir").Name
+	"⏳ Step 2/6 - Checking folder 📂$RepoDirName... "
+	if (-not(Test-Path "$RepoDir" -pathType container)) { throw "Can't access directory: $RepoDir" }
+
+	"⏳ Step 3/6 - Fetching updates..."
 	& git -C "$RepoDir" fetch --all --recurse-submodules --prune --prune-tags --force
 	if ($lastExitCode -ne "0") { throw "'git fetch' failed with exit code $lastExitCode" }
 
 	$CurrentBranchName = (git -C "$RepoDir" rev-parse --abbrev-ref HEAD)
 	if ($lastExitCode -ne "0") { throw "'git rev-parse' failed with exit code $lastExitCode" }
 
-	"⏳ Step 3/5: Creating branch '$NewBranchName'..."
+	"⏳ Step 4/6 - Creating branch '$NewBranchName'..."
 	& git -C "$RepoDir" checkout -b "$NewBranchName"
 	if ($lastExitCode -ne "0") { throw "'git checkout -b $NewBranchName' failed with exit code $lastExitCode" }
 
-	"⏳ Step 4/5: Pushing updates..."
+	"⏳ Step 5/6 - Pushing updates..."
 	& git -C "$RepoDir" push origin "$NewBranchName"
 	if ($lastExitCode -ne "0") { throw "'git push origin $NewBranchName' failed with exit code $lastExitCode" }
 
-	"⏳ Step 5/5: Updating submodules..."
+	"⏳ Step 6/6 - Updating submodules..."
 	& git -C "$RepoDir" submodule update --init --recursive
 	if ($lastExitCode -ne "0") { throw "'git submodule update' failed with exit code $lastExitCode" }
 
-	$RepoDirName = (get-item "$RepoDir").Name
 	[int]$Elapsed = $StopWatch.Elapsed.TotalSeconds
-	"✔️ new '$NewBranchName' branch created in 📂$RepoDirName repo in $Elapsed sec (based on '$CurrentBranchName' branch)"
+	"✔️ created new '$NewBranchName' branch in 📂$RepoDirName repo in $Elapsed sec (based on '$CurrentBranchName' branch)"
 	exit 0 # success
 } catch {
 	"⚠️ Error in line $($_.InvocationInfo.ScriptLineNumber): $($Error[0])"
