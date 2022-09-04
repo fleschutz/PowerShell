@@ -23,13 +23,13 @@ Mega Collection of PowerShell Scripts
 | [play-tetris-melody.ps1](Scripts/play-tetris-melody.ps1) | Plays the Tetris melody                                        | [Help](Docs/play-tetris-melody.md)  |
 | [speak-checklist.ps1](Scripts/speak-checklist.ps1)   | Speaks the given checklist by text-to-speech                       | [Help](Docs/speak-checklist.md)     |
 | [speak-countdown.ps1](Scripts/speak-countdown.ps1)   | Starts a countdown by text-to-speech                               | [Help](Docs/speak-countdown.md)     |
-| [speak-english.ps1](Scripts/speak-english.ps1)       | Speaks the given text with an English text-to-speech voice         | [Help](Docs/speak-english.md)       |
+| [speak-english.ps1](Scripts/speak-english.ps1)       | Speaks text with an English text-to-speech voice                   | [Help](Docs/speak-english.md)       |
 | [speak-epub.ps1](Scripts/speak-epub.ps1)             | Speaks the content of the given Epub file by text-to-speech        | [Help](Docs/speak-epub.md)          |
 | [speak-file.ps1](Scripts/speak-file.ps1)             | Speaks the content of the given text file by text-to-speech        | [Help](Docs/speak-file.md)          |
-| [speak-french.ps1](Scripts/speak-french.ps1)         | Speaks the given text with a French text-to-speech voice           | [Help](Docs/speak-french.md)        |
-| [speak-german.ps1](Scripts/speak-german.ps1)         | Speaks the given text with a German text-to-speech voice           | [Help](Docs/speak-german.md)        |
-| [speak-italian.ps1](Scripts/speak-italian.ps1)       | Speaks the given text with an Italian text-to-speech voice         | [Help](Docs/speak-italian.md)       |
-| [speak-spanish.ps1](Scripts/speak-spanish.ps1)       | Speaks the given text with a Spanish text-to-speech voice          | [Help](Docs/speak-spanish.md)       |
+| [speak-french.ps1](Scripts/speak-french.ps1)         | Speaks text with a French text-to-speech voice                     | [Help](Docs/speak-french.md)        |
+| [speak-german.ps1](Scripts/speak-german.ps1)         | Speaks text with a German text-to-speech voice                     | [Help](Docs/speak-german.md)        |
+| [speak-italian.ps1](Scripts/speak-italian.ps1)       | Speaks text with an Italian text-to-speech voice                   | [Help](Docs/speak-italian.md)       |
+| [speak-spanish.ps1](Scripts/speak-spanish.ps1)       | Speaks text with a Spanish text-to-speech voice                    | [Help](Docs/speak-spanish.md)       |
 | [speak-test.ps1](Scripts/speak-test.ps1)             | Performs a speak test by text-to-speech                            | [Help](Docs/speak-test.md)          |
 | [speak-text.ps1](Scripts/speak-text.ps1)             | Speaks the given text by text-to-speech                            | [Help](Docs/speak-text.md)          |
 | [tell-joke.ps1](Scripts/tell-joke.ps1)               | Tell a joke by text-to-speech                                      | [Help](Docs/tell-joke.md)           |
