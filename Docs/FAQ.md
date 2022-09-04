@@ -21,7 +21,7 @@ Why use PowerShell?
 
 How to get PowerShell?
 ----------------------
-* **On Windows** PowerShell is preinstalled. **However,** the default execution policy is "restricted", meaning script execution is disallowed! To change this, open the "Windows PowerShell (Administrator)" console and enter:
+* **On Windows** PowerShell is preinstalled. **However,** the default execution policy is "restricted", meaning script execution is disallowed! To change this, open the *Windows PowerShell (Administrator)* console and enter:
    ```
    PS> Set-ExecutionPolicy -ExecutionPolicy Bypass -Scope CurrentUser
    ```
