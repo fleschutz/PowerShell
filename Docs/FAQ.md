@@ -85,16 +85,15 @@ How to write good PowerShell scripts?
 -------------------------------------
 Good PowerShell scripts are user-friendly and platform-independent. As a guideline follow these rules, please:
 
-1. the filename is named using the `<verb>-<object>.ps1` scheme
-2. the encoding is UTF-8-BOM to provide Unicode character support
-3. the scripts have execute file permissions: chmod a+rx <file> (for Linux support)
-4. the scripts provide a comment-based help with synopsis, description, parameters, link, author, and license
-5. requirements are checked (e.g. #Requires -RunAsAdministrator, or #Requires -Version 3)
-6. prefer command-line options, else ask the user for help
-7. recommended is `Set-StrictMode -Version Latest` to enable additional error checking
-8. for readibility use UpperCamelCase for variables and functions, lowerCamelCase for everything else
-9. on error call write-error with keyword "ERROR:" (to support log parsers) and exit the error code (mostly 1)
-10. on success exit with error code 0 (exit 0)
+1. Use the `<verb>-<object>.ps1` scheme to name the script.
+2. Use UTF-8 BOM encoding to support Unicode characters in the script.
+3. Set *execute* file permissions for Linux: chmod a+rx <file>
+4. Add a comment-based help at the beginning with synopsis, description, parameters, link, author, and license.
+5. Check the requirements for the script, e.g. `#Requires -RunAsAdministrator`, or `#Requires -Version 3`
+6. Prefer command-line options, else ask the user for help
+7. Recommended is `Set-StrictMode -Version Latest` to enable additional error checking.
+8. For readibility use UpperCamelCase for variables and functions, lowerCamelCase for everything else.
+9. On success exit with error code 0 (`exit 0`), otherwise print the error with keyword "ERROR:" (to support log parsers) and exit the error code (mostly 1)
 
 
 Want to contribute or found a bug or issue?
