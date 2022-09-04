@@ -34,11 +34,11 @@ Mega Collection of PowerShell Scripts
 | [speak-text.ps1](Scripts/speak-text.ps1)             | Speaks the given text by text-to-speech                            | [Help](Docs/speak-text.md)          |
 | [tell-joke.ps1](Scripts/tell-joke.ps1)               | Tell a joke by text-to-speech                                      | [Help](Docs/tell-joke.md)           |
 | [tell-quote.ps1](Scripts/tell-quote.ps1)             | Tell a quote by text-to-speech                                     | [Help](Docs/tell-quote.md)          |
-| [turn-volume-down.ps1](Scripts/turn-volume-down.ps1) | Turns audio volume down                                            | [Help](Docs/turn-volume-down.md)    |
-| [turn-volume-fully-up.ps1](Scripts/turn-volume-fully-up.ps1) | Turns audio volume fully up                                | [Help](Docs/turn-volume-fully-up.md)|
+| [turn-volume-down.ps1](Scripts/turn-volume-down.ps1) | Turns the audio volume down                                        | [Help](Docs/turn-volume-down.md)    |
+| [turn-volume-fully-up.ps1](Scripts/turn-volume-fully-up.ps1) | Turns the audio volume fully up                            | [Help](Docs/turn-volume-fully-up.md)|
 | [turn-volume-off.ps1](Scripts/turn-volume-off.ps1)   | Turns audio off                                                    | [Help](Docs/turn-volume-off-audio.md)|
 | [turn-volume-on.ps1](Scripts/turn-volume-on.ps1)     | Turns audio on                                                     | [Help](Docs/turn-volume-on.md)      |
-| [turn-volume-up.ps1](Scripts/turn-volume-up.ps1)     | Turns audio volume up                                              | [Help](Docs/turn-volume-up.md)      |
+| [turn-volume-up.ps1](Scripts/turn-volume-up.ps1)     | Turns the audio volume up                                          | [Help](Docs/turn-volume-up.md)      |
 
 
 ⚙️ Scripts to Manage Computers
