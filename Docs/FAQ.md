@@ -87,12 +87,12 @@ Good PowerShell scripts are user-friendly and platform-independent. As a guideli
 
 1. Use the `<verb>-<object>.ps1` scheme to name the script.
 2. Use *UTF-8 BOM* encoding to support Unicode characters in the script.
-3. Set *execute* file permissions for Linux: `chmod a+rx <filename>`
-4. Add a comment-based help at the beginning with synopsis, description, parameters, link, author, and license.
-5. Check the requirements for the script, e.g. `#Requires -RunAsAdministrator`, or `#Requires -Version 3`
-6. Prefer command-line options, else ask the user for help
-7. Recommended is `Set-StrictMode -Version Latest` to enable additional error checking.
-8. For readibility use UpperCamelCase for variables and functions, lowerCamelCase for everything else.
+3. Add a comment-based help at the beginning with synopsis, description, parameters, link, author, and license.
+4. Check the requirements for the script, e.g. `#Requires -RunAsAdministrator`, or `#Requires -Version 3`
+5. Prefer command-line options, else ask the user for help
+6. Recommended is `Set-StrictMode -Version Latest` to enable additional error checking.
+7. For readibility use UpperCamelCase for variables and functions, lowerCamelCase for everything else.
+8. Set *execute* file permissions for Linux: `chmod a+rx <filename>`
 9. On success exit with error code 0 (`exit 0`), otherwise print the error with keyword "ERROR:" (to support log parsers) and exit the error code (mostly 1)
 
 
