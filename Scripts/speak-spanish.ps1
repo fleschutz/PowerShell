@@ -10,7 +10,7 @@
 .LINK
 	https://github.com/fleschutz/PowerShell
 .NOTES
-	Author: Markus Fleschutz / License: CC0
+	Author: Markus Fleschutz | License: CC0
 #>
 
 param([string]$text = "")
@@ -21,10 +21,9 @@ try {
 	$TTSVoice = New-Object -ComObject SAPI.SPVoice
 	foreach ($Voice in $TTSVoice.GetVoices()) {
 		if ($Voice.GetDescription() -like "*- Spanish*") { continue }
-			$TTSVoice.Voice = $Voice
-			[void]$TTSVoice.Speak($text)
-			exit 0 # success
-		}
+		$TTSVoice.Voice = $Voice
+		[void]$TTSVoice.Speak($text)
+		exit 0 # success
 	}
 	throw "No Spanish text-to-speech voice found - please install one."
 } catch {
