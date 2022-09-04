@@ -20,10 +20,11 @@ try {
 
 	$TTSVoice = New-Object -ComObject SAPI.SPVoice
 	foreach ($Voice in $TTSVoice.GetVoices()) {
-		if ($Voice.GetDescription() -like "*- Spanish*") { continue }
-		$TTSVoice.Voice = $Voice
-		[void]$TTSVoice.Speak($text)
-		exit 0 # success
+		if ($Voice.GetDescription() -like "*- Spanish*") { 
+			$TTSVoice.Voice = $Voice
+			[void]$TTSVoice.Speak($text)
+			exit 0 # success
+		}
 	}
 	throw "No Spanish text-to-speech voice found - please install one."
 } catch {
