@@ -26,7 +26,7 @@ try {
 			exit 0 # success
 		}
 	}
-	throw "No Latin text-to-speech voice found - please install one"
+	throw "No Latin voice for text-to-speech (TTS) found - please install one"
 } catch {
 	"⚠️ Error in line $($_.InvocationInfo.ScriptLineNumber): $($Error[0])"
 	exit 1
