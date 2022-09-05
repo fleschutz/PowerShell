@@ -1,8 +1,8 @@
 ﻿<#
 .SYNOPSIS
-	Lists available CLI tools
+	Lists installed CLI tools
 .DESCRIPTION
-	This PowerShell script lists available command-line interface (CLI) tools.
+	This PowerShell script lists installed command-line interface (CLI) tools.
 .EXAMPLE
 	PS> ./list-cli-tools
 
@@ -37,12 +37,12 @@ function CheckFor { param([string]$Cmd, [string]$VersionArg)
 		} else {
 			$Version = $Info.Version
 		}
-		if (test-path "$Location" -pathType leaf) {
+		if (Test-Path "$Location" -pathType leaf) {
 			$FileSize = (Get-Item "$Location").Length
 		} else {
 			$FileSize = "0"
 		}
-		new-object PSObject -Property @{ Name=$Cmd; Version=$Version; Location=$Location; FileSize=$FileSize }
+		New-Object PSObject -Property @{ Name=$Cmd; Version=$Version; Location=$Location; FileSize=$FileSize }
 	} catch {
 		return
 	}
@@ -82,7 +82,9 @@ function ListTools {
 	CheckFor diff	"--version"
 	CheckFor dism	""
 	CheckFor driverquery ""
+	CheckFor egrep	"--version"
 	CheckFor find	"--version"
+	CheckFor fgrep	"--version"
 	CheckFor ftp	"--version"
 	CheckFor gcc	"--version"
 	CheckFor gdb	"--version"
