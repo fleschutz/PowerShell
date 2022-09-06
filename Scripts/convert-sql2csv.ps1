@@ -18,7 +18,7 @@
 .LINK
 	https://github.com/fleschutz/PowerShell
 .NOTES
-	Author: Markus Fleschutz / License: CC0
+	Author: Markus Fleschutz | License: CC0
 #>
 
 param([string]$server = "", [string]$database = "", [string]$username = "", [string]$password = "", [string]$query = "")

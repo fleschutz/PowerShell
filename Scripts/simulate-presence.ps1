@@ -7,10 +7,10 @@
 	Specifies the IP address of the Shelly1 device
 .EXAMPLE
 	PS> ./simulate-presence 192.168.100.100
-.NOTES
-	Author: Markus Fleschutz / License: CC0
 .LINK
 	https://github.com/fleschutz/PowerShell
+.NOTES
+	Author: Markus Fleschutz | License: CC0
 #>
 
 param([string]$IPaddress = "")

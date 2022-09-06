@@ -5,10 +5,10 @@
 	This script launches the Paint 3D application.
 .EXAMPLE
 	PS> ./open-paint-3d
-.NOTES
-	Author: Markus Fleschutz · License: CC0
 .LINK
 	https://github.com/fleschutz/PowerShell
+.NOTES
+	Author: Markus Fleschutz | License: CC0
 #>
 
 try {

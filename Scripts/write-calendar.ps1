@@ -19,10 +19,10 @@
 .EXAMPLE
 	PS> ./write-calendar 7
 	Outputs the calendar for July of this year.
-.NOTES
-	Author: Markus Fleschutz / License: CC0
 .LINK
 	https://github.com/fleschutz/PowerShell
+.NOTES
+	Author: Markus Fleschutz | License: CC0
 #>
 
 param([int]$Month = (Get-Date).Month, [int]$Year = (Get-Date).Year)

@@ -14,10 +14,10 @@
 	Specifies the path to the Git repository
 .EXAMPLE
 	PS> ./pick-commit 93849f889 "Fix typo" "v1 v2 v3"
-.NOTES
-	Author: Markus Fleschutz · License: CC0
 .LINK
 	https://github.com/fleschutz/PowerShell
+.NOTES
+	Author: Markus Fleschutz | License: CC0
 #>
 
 param([string]$CommitID = "", [string]$CommitMessage = "", [string]$Branches = "", [string]$RepoDir = "$PWD")

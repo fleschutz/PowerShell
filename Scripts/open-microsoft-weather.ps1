@@ -5,14 +5,14 @@
 	This script launches the Microsoft Weather application.
 .EXAMPLE
 	PS> ./open-microsoft-weather
-.NOTES
-	Author: Markus Fleschutz · License: CC0
 .LINK
 	https://github.com/fleschutz/PowerShell
+.NOTES
+	Author: Markus Fleschutz | License: CC0
 #>
 
 try {
-	start-process msnweather:
+	Start-Process msnweather:
 	exit 0 # success
 } catch {
 	"⚠️ Error in line $($_.InvocationInfo.ScriptLineNumber): $($Error[0])"

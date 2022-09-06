@@ -5,11 +5,10 @@
 	This PowerShell script plays a rattlesnake sound.
 .EXAMPLE
 	PS> ./play-rattlesnake-sound
-	(listen and enjoy)
-.NOTES
-	Author: Markus Fleschutz / License: CC0
 .LINK
 	https://github.com/fleschutz/PowerShell
+.NOTES
+	Author: Markus Fleschutz | License: CC0
 #>
 
 & "$PSScriptRoot/play-mp3.ps1" "$PSScriptRoot/../Data/Sounds/rattlesnake.mp3"

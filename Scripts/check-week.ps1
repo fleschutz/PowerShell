@@ -6,10 +6,10 @@
 .EXAMPLE
 	PS> ./check-week
 	✔️ It's week #4.
-.NOTES
-	Author: Markus Fleschutz / License: CC0
 .LINK
 	https://github.com/fleschutz/PowerShell
+.NOTES
+	Author: Markus Fleschutz | License: CC0
 #>
 
 try {

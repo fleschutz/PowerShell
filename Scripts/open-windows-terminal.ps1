@@ -5,10 +5,10 @@
 	This script launches the Windows Terminal application.
 .EXAMPLE
 	PS> ./open-windows-terminal
-.NOTES
-	Author: Markus Fleschutz · License: CC0
 .LINK
 	https://github.com/fleschutz/PowerShell
+.NOTES
+	Author: Markus Fleschutz | License: CC0
 #>
 
 Start-Process wt.exe

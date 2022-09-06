@@ -5,10 +5,10 @@
 	This script launches the File Explorer with the user's pictures folder.
 .EXAMPLE
 	PS> ./open-pictures-folder
-.NOTES
-	Author: Markus Fleschutz · License: CC0
 .LINK
 	https://github.com/fleschutz/PowerShell
+.NOTES
+	Author: Markus Fleschutz | License: CC0
 #>
 
 try {

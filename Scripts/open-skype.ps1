@@ -5,14 +5,14 @@
 	This script launches the Skype application.
 .EXAMPLE
 	PS> ./open-skype
-.NOTES
-	Author: Markus Fleschutz · License: CC0
 .LINK
 	https://github.com/fleschutz/PowerShell
+.NOTES
+	Author: Markus Fleschutz | License: CC0
 #>
 
 try {
-	start-process skype:
+	Start-Process skype:
 	exit 0 # success
 } catch {
 	"⚠️ Error in line $($_.InvocationInfo.ScriptLineNumber): $($Error[0])"

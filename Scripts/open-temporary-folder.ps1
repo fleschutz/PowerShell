@@ -5,10 +5,10 @@
 	This script launches the File Explorer showing the temporary folder.
 .EXAMPLE
 	PS> ./open-temporary-folder
-.NOTES
-	Author: Markus Fleschutz · License: CC0
 .LINK
 	https://github.com/fleschutz/PowerShell
+.NOTES
+	Author: Markus Fleschutz | License: CC0
 #>
 
 function GetTempDir {

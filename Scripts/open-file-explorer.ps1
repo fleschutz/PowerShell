@@ -1,6 +1,6 @@
 ﻿<#
 .SYNOPSIS
-	Starts the File Explorer
+	Launches the File Explorer
 .DESCRIPTION
 	This PowerShell script launches the File Explorer.
 .EXAMPLE
@@ -10,7 +10,7 @@
 .LINK
 	https://github.com/fleschutz/PowerShell
 .NOTES
-	Author: Markus Fleschutz / License: CC0
+	Author: Markus Fleschutz | License: CC0
 #>
 
 param([string]$Path = "")

@@ -7,10 +7,10 @@
 	Specifies the file pattern
 .EXAMPLE
 	PS> ./play-files *.mp3
-.NOTES
-	Author: Markus Fleschutz / License: CC0
 .LINK
 	https://github.com/fleschutz/PowerShell
+.NOTES
+	Author: Markus Fleschutz | License: CC0
 #>
 
 param([string]$FilePattern = "*")

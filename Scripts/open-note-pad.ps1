@@ -5,14 +5,14 @@
 	This script launches the Notepad application.
 .EXAMPLE
 	PS> ./open-note-pad
-.NOTES
-	Author: Markus Fleschutz · License: CC0
 .LINK
 	https://github.com/fleschutz/PowerShell
+.NOTES
+	Author: Markus Fleschutz | License: CC0
 #>
 
 try {
-	start-process notepad.exe
+	Start-Process notepad.exe
 	exit 0 # success
 } catch {
 	"⚠️ Error in line $($_.InvocationInfo.ScriptLineNumber): $($Error[0])"

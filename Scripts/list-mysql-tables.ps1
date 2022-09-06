@@ -8,7 +8,7 @@
 .LINK
 	https://github.com/fleschutz/PowerShell
 .NOTES
-	Author: Markus Fleschutz / License: CC0
+	Author: Markus Fleschutz | License: CC0
 #>
 
 # This script lists all of the tables in a MySQL database and exports the list as a CSV

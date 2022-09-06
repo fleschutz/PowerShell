@@ -5,10 +5,10 @@
 	This script launches the Web browser with the Microsoft Office 365 website.
 .EXAMPLE
 	PS> ./open-office-365
-.NOTES
-	Author: Markus Fleschutz · License: CC0
 .LINK
 	https://github.com/fleschutz/PowerShell
+.NOTES
+	Author: Markus Fleschutz | License: CC0
 #>
 
 & "$PSScriptRoot/open-default-browser.ps1" "https://portal.office.com"

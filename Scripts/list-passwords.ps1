@@ -14,7 +14,7 @@
 .LINK
 	https://github.com/fleschutz/PowerShell
 .NOTES
-	Author: Markus Fleschutz / License: CC0
+	Author: Markus Fleschutz | License: CC0
 #>
 
 param([int]$PasswordLength = 15, [int]$Columns = 6, [int]$Rows = 30)

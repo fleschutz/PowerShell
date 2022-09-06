@@ -5,10 +5,10 @@
 	This script launches the Microsoft Visual Studio application.
 .EXAMPLE
 	PS> ./open-visual-studio
-.NOTES
-	Author: Markus Fleschutz · License: CC0
 .LINK
 	https://github.com/fleschutz/PowerShell
+.NOTES
+	Author: Markus Fleschutz | License: CC0
 #>
 
 function TryLaunching { param($Path)

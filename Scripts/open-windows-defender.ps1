@@ -5,10 +5,10 @@
 	This script launches the Windows Defender application.
 .EXAMPLE
 	PS> ./open-windows-defender
-.NOTES
-	Author: Markus Fleschutz · License: CC0
 .LINK
 	https://github.com/fleschutz/PowerShell
+.NOTES
+	Author: Markus Fleschutz | License: CC0
 #>
 
 Start-Process windowsdefender:

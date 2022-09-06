@@ -1,6 +1,6 @@
 <#
 .SYNOPSIS
-        Show Notification
+        Shows a notification
 .DESCRIPTION
         This PowerShell script shows a toast-message notification for the Windows 10 Notification Center.
 .EXAMPLE

@@ -6,10 +6,10 @@
 .EXAMPLE
 	PS> ./check-date
 	✔️ It's Sunday, October 17, 2021
-.NOTES
-	Author: Markus Fleschutz / License: CC0
 .LINK
 	https://github.com/fleschutz/PowerShell
+.NOTES
+	Author: Markus Fleschutz | License: CC0
 #>
 
 try {

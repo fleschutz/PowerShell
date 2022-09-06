@@ -5,10 +5,10 @@
 	This script launches the Microsoft Paint application.
 .EXAMPLE
 	PS> ./open-microsoft-paint
-.NOTES
-	Author: Markus Fleschutz · License: CC0
 .LINK
 	https://github.com/fleschutz/PowerShell
+.NOTES
+	Author: Markus Fleschutz | License: CC0
 #>
 
 try {

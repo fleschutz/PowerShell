@@ -5,10 +5,10 @@
 	This PowerShell script plays a cat sound.
 .EXAMPLE
 	PS> ./play-cat-sound
-.NOTES
-	Author: Markus Fleschutz / License: CC0
 .LINK
 	https://github.com/fleschutz/PowerShell
+.NOTES
+	Author: Markus Fleschutz | License: CC0
 #>
 
 & "$PSScriptRoot/play-mp3.ps1" "$PSScriptRoot/../Data/Sounds/cat.mp3"

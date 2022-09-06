@@ -5,10 +5,10 @@
 	This script launches the Netflix application.
 .EXAMPLE
 	PS> ./open-netflix
-.NOTES
-	Author: Markus Fleschutz · License: CC0
 .LINK
 	https://github.com/fleschutz/PowerShell
+.NOTES
+	Author: Markus Fleschutz | License: CC0
 #>
 
 Start-Process netflix:

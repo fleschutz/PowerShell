@@ -15,7 +15,7 @@
 
 try {
 	if ($IsLinux) {
-		sudo reboot
+		& sudo reboot
 	} else {
 		Restart-Computer
 	}

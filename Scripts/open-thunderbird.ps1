@@ -5,10 +5,10 @@
 	This script launches the Mozilla Thunderbird email application.
 .EXAMPLE
 	PS> ./open-thunderbird
-.NOTES
-	Author: Markus Fleschutz · License: CC0
 .LINK
 	https://github.com/fleschutz/PowerShell
+.NOTES
+	Author: Markus Fleschutz | License: CC0
 #>
 
 function TryToExec { param($Folder, $Binary)

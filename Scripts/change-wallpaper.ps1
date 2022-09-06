@@ -7,10 +7,10 @@
 	Specifies the photo category (beach, city, ...)
 .EXAMPLE
 	PS> ./change-wallpaper 
-.NOTES
-	Author: Markus Fleschutz / License: CC0
 .LINK
 	https://github.com/fleschutz/PowerShell
+.NOTES
+	Author: Markus Fleschutz | License: CC0
 #>
 
 param([string]$Category = "")

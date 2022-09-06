@@ -5,15 +5,15 @@
 	This script launches the File Explorer with the user's videos folder.
 .EXAMPLE
 	PS> ./open-videos-folder
-.NOTES
-	Author: Markus Fleschutz · License: CC0
 .LINK
 	https://github.com/fleschutz/PowerShell
+.NOTES
+	Author: Markus Fleschutz | License: CC0
 #>
 
 try {
-	$TargetDir = resolve-path "$HOME/Videos"
-	if (-not(test-path "$TargetDir" -pathType container)) {
+	$TargetDir = Resolve-Path "$HOME/Videos"
+	if (-not(Test-Path "$TargetDir" -pathType container)) {
 		throw "Videos folder at 📂$TargetDir doesn't exist (yet)"
 	}
 	& "$PSScriptRoot/open-file-explorer.ps1" "$TargetDir"

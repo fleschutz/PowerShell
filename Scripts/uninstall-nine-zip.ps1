@@ -5,10 +5,10 @@
 	This PowerShell script uninstalls 9 ZIP from the local computer.
 .EXAMPLE
 	PS> ./uninstall-nine-zip
-.NOTES
-	Author: Markus Fleschutz / License: CC0
 .LINK
 	https://github.com/fleschutz/talk2windows
+.NOTES
+	Author: Markus Fleschutz | License: CC0
 #>
 
 try {

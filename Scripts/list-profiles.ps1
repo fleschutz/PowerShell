@@ -15,7 +15,7 @@
 .LINK
 	https://github.com/fleschutz/PowerShell
 .NOTES
-	Author: Markus Fleschutz / License: CC0
+	Author: Markus Fleschutz | License: CC0
 #>
 
 function ListProfile { param([int]$Level, [string]$Profile, [string]$Location)

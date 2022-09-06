@@ -5,14 +5,14 @@
 	This script launches the Screen Clip application.
 .EXAMPLE
 	PS> ./open-screen-clip
-.NOTES
-	Author: Markus Fleschutz · License: CC0
 .LINK
 	https://github.com/fleschutz/PowerShell
+.NOTES
+	Author: Markus Fleschutz | License: CC0
 #>
 
 try {
-	start-process ms-screenclip:
+	Start-Process ms-screenclip:
 	exit 0 # success
 } catch {
 	"⚠️ Error in line $($_.InvocationInfo.ScriptLineNumber): $($Error[0])"

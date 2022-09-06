@@ -11,11 +11,10 @@
 	Specifies the UDP port (9 by default)
 .EXAMPLE
 	PS> ./wakeup 11:22:33:44:55:66 192.168.100.100
-	(PC wakes up)
 .LINK
 	https://github.com/fleschutz/PowerShell
 .NOTES
-	Author: Markus Fleschutz / License: CC0
+	Author: Markus Fleschutz | License: CC0
 #>
 
 param([string]$MACaddress = "", [string]$IPaddress = "", [int]$Port=9)

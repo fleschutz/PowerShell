@@ -12,11 +12,11 @@
 .LINK
 	https://github.com/fleschutz/PowerShell
 .NOTES
-	Author: Markus Fleschutz / License: CC0
+	Author: Markus Fleschutz | License: CC0
 #>
 
 try {
-	get-wmiobject win32_share | where {$_.name -NotLike "*$"}
+	Get-WmiObject win32_share | where {$_.name -NotLike "*$"}
 	exit 0 # success
 } catch {
 	"⚠️ Error in line $($_.InvocationInfo.ScriptLineNumber): $($Error[0])"

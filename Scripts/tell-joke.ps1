@@ -8,11 +8,11 @@
 .LINK
 	https://github.com/fleschutz/PowerShell
 .NOTES
-	Author: Markus Fleschutz / License: CC0
+	Author: Markus Fleschutz | License: CC0
 #>
 
 try {
-	$Table = import-csv "$PSScriptRoot/../Data/jokes.csv"
+	$Table = Import-CSV "$PSScriptRoot/../Data/jokes.csv"
 
 	$Generator = New-Object System.Random
 	$Index = [int]$Generator.next(0, $Table.Count - 1)

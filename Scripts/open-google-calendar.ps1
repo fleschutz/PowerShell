@@ -8,7 +8,7 @@
 .LINK
 	https://github.com/fleschutz/PowerShell
 .NOTES
-	Author: Markus Fleschutz / License: CC0
+	Author: Markus Fleschutz | License: CC0
 #>
 
 & "$PSScriptRoot/open-default-browser.ps1" "https://calendar.google.com"

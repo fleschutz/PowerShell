@@ -9,10 +9,10 @@
 	Specifies the path to the target directory
 .EXAMPLE
 	PS> ./query-smart-data
-.NOTES
-	Author: Markus Fleschutz · License: CC0
 .LINK
 	https://github.com/fleschutz/PowerShell
+.NOTES
+	Author: Markus Fleschutz | License: CC0
 #>
 
 #Requires -RunAsAdministrator

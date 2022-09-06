@@ -7,11 +7,10 @@
 	Specifies the path to the .MP3 file
 .EXAMPLE
 	PS> ./play-mp3 C:\thunder.mp3
-	(listen and enjoy)
-.NOTES
-	Author: Markus Fleschutz / License: CC0
 .LINK
 	https://github.com/fleschutz/PowerShell
+.NOTES
+	Author: Markus Fleschutz | License: CC0
 #>
 
 param([string]$Path = "")

@@ -8,14 +8,14 @@
 .LINK
 	https://github.com/fleschutz/PowerShell
 .NOTES
-	Author: Markus Fleschutz / License: CC0
+	Author: Markus Fleschutz | License: CC0
 #>
 
 try {
 	if ($IsLinux) {
 		& snap list
 	} else {
-		get-appxPackage | select-object Name,Version | format-table -autoSize
+		Get-AppxPackage | Select-Object Name,Version | Format-Table -autoSize
 	}
 	exit 0 # success
 } catch {

@@ -15,11 +15,11 @@
 .LINK
 	https://github.com/fleschutz/PowerShell
 .NOTES
-	Author: Markus Fleschutz / License: CC0
+	Author: Markus Fleschutz | License: CC0
 #>
 
 try {
-	get-timezone -listavailable | format-table -property Id,DisplayName,SupportsDaylightSavingTime
+	Get-Timezone -listavailable | Format-Table -property Id,DisplayName,SupportsDaylightSavingTime
 	exit 0 # success
 } catch {
 	"⚠️ Error in line $($_.InvocationInfo.ScriptLineNumber): $($Error[0])"

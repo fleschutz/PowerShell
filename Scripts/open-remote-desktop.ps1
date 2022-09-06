@@ -5,10 +5,10 @@
 	This script launches the Remote Desktop application.
 .EXAMPLE
 	PS> ./open-remote-desktop
-.NOTES
-	Author: Markus Fleschutz · License: CC0
 .LINK
 	https://github.com/fleschutz/PowerShell
+.NOTES
+	Author: Markus Fleschutz | License: CC0
 #>
 
 try {

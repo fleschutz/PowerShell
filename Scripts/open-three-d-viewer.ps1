@@ -5,10 +5,10 @@
 	This script launches the 3D-Viewer application.
 .EXAMPLE
 	PS> ./open-three-d-viewer
-.NOTES
-	Author: Markus Fleschutz · License: CC0
 .LINK
 	https://github.com/fleschutz/PowerShell
+.NOTES
+	Author: Markus Fleschutz | License: CC0
 #>
 
 Start-Process com.microsoft.3dviewer:

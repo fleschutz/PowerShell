@@ -5,15 +5,15 @@
 	This script launches the File Explorer with the user's Git repositories folder.
 .EXAMPLE
 	PS> ./open-repos-folder
-.NOTES
-	Author: Markus Fleschutz · License: CC0
 .LINK
 	https://github.com/fleschutz/PowerShell
+.NOTES
+	Author: Markus Fleschutz | License: CC0
 #>
 
 try {
-	$TargetDir = resolve-path "$HOME/Repos"
-	if (-not(test-path "$TargetDir" -pathType container)) {
+	$TargetDir = Resolve-Path "$HOME/Repos"
+	if (-not(Test-Path "$TargetDir" -pathType container)) {
 		throw "Repos folder at 📂$TargetDir doesn't exist (yet)"
 	}
 	& "$PSScriptRoot/open-file-explorer.ps1" "$TargetDir"

@@ -8,7 +8,7 @@
 .LINK
 	https://github.com/fleschutz/PowerShell
 .NOTES
-	Author: Markus Fleschutz / License: CC0
+	Author: Markus Fleschutz | License: CC0
 #>
 
 $Reply = "Merry Christmas to you too!", "Happy Christmas to you too!" | Get-Random

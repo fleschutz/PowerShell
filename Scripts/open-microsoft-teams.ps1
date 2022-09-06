@@ -5,14 +5,14 @@
 	This script launches the Microsoft Teams application.
 .EXAMPLE
 	PS> ./open-microsoft-teams
-.NOTES
-	Author: Markus Fleschutz · License: CC0
 .LINK
 	https://github.com/fleschutz/PowerShell
+.NOTES
+	Author: Markus Fleschutz | License: CC0
 #>
 
 try {
-	start-process msteams:
+	Start-Process msteams:
 	exit 0 # success
 } catch {
 	"⚠️ Error in line $($_.InvocationInfo.ScriptLineNumber): $($Error[0])"

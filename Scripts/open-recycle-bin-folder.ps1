@@ -5,10 +5,10 @@
 	This script launches the File Explorer with the user's recycle bin folder.
 .EXAMPLE
 	PS> ./open-recycle-bin-folder
-.NOTES
-	Author: Markus Fleschutz · License: CC0
 .LINK
 	https://github.com/fleschutz/PowerShell
+.NOTES
+	Author: Markus Fleschutz | License: CC0
 #>
 
 try {

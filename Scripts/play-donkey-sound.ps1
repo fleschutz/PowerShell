@@ -5,10 +5,10 @@
 	This PowerShell script plays a donkey sound.
 .EXAMPLE
 	PS> ./play-donkey-sound
-.NOTES
-	Author: Markus Fleschutz / License: CC0
 .LINK
 	https://github.com/fleschutz/PowerShell
+.NOTES
+	Author: Markus Fleschutz | License: CC0
 #>
 
 & "$PSScriptRoot/play-mp3.ps1" "$PSScriptRoot/../Data/Sounds/donkey.mp3"

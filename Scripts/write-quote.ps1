@@ -5,10 +5,10 @@
 	This PowerShell script writes a random quote to the console.
 .EXAMPLE
 	PS> ./write-quote
-.NOTES
-	Author: Markus Fleschutz / License: CC0
 .LINK
 	https://github.com/fleschutz/PowerShell
+.NOTES
+	Author: Markus Fleschutz | License: CC0
 #>
 
 try {

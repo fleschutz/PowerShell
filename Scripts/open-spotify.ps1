@@ -5,10 +5,10 @@
 	This script launches the Spotify application.
 .EXAMPLE
 	PS> ./open-spotify
-.NOTES
-	Author: Markus Fleschutz · License: CC0
 .LINK
 	https://github.com/fleschutz/PowerShell
+.NOTES
+	Author: Markus Fleschutz | License: CC0
 #>
 
 Start-Process spotify:

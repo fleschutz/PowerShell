@@ -5,14 +5,14 @@
 	This script launches the Windows Task Manager application.
 .EXAMPLE
 	PS> ./open-task-manager
-.NOTES
-	Author: Markus Fleschutz · License: CC0
 .LINK
 	https://github.com/fleschutz/PowerShell
+.NOTES
+	Author: Markus Fleschutz | License: CC0
 #>
 
 try {
-	start-process taskmgr.exe
+	Start-Process taskmgr.exe
 	exit 0 # success
 } catch {
 	"⚠️ Error in line $($_.InvocationInfo.ScriptLineNumber): $($Error[0])"

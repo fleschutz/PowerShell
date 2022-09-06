@@ -7,10 +7,10 @@
 	Specifies the text to write
 .EXAMPLE
 	PS> ./write-uppercase "Hello World"
-.NOTES
-	Author: Markus Fleschutz / License: CC0
 .LINK
 	https://github.com/fleschutz/PowerShell
+.NOTES
+	Author: Markus Fleschutz | License: CC0
 #>
 
 param([string]$text = "")

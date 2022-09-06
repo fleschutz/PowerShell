@@ -5,10 +5,10 @@
 	This script launches the Snipping Tool application.
 .EXAMPLE
 	PS> ./open-snipping-tool
-.NOTES
-	Author: Markus Fleschutz · License: CC0
 .LINK
 	https://github.com/fleschutz/PowerShell
+.NOTES
+	Author: Markus Fleschutz | License: CC0
 #>
 
 Start-Process SnippingTool.exe

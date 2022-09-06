@@ -11,10 +11,10 @@
 	Specifies the path to the resulting digital forensic hashes
 .EXAMPLE
 	PS> ./publish-to-ipfs C:\MyFile.txt
-.NOTES
-	Author: Markus Fleschutz · License: CC0
 .LINK
 	https://github.com/fleschutz/PowerShell
+.NOTES
+	Author: Markus Fleschutz | License: CC0
 #>
 
 param([string]$FilePattern = "", [string]$HashList = "IPFS_hashes.txt", [string]$DF_Hashes = "file_checksums.xml")

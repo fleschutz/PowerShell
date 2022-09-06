@@ -5,11 +5,10 @@
 	This PowerShell script plays a gorilla sound.
 .EXAMPLE
 	PS> ./play-gorilla-sound
-	(listen and enjoy)
-.NOTES
-	Author: Markus Fleschutz / License: CC0
 .LINK
 	https://github.com/fleschutz/PowerShell
+.NOTES
+	Author: Markus Fleschutz | License: CC0
 #>
 
 & "$PSScriptRoot/play-mp3.ps1" "$PSScriptRoot/../Data/Sounds/gorilla.mp3"

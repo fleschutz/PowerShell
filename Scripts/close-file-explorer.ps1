@@ -8,7 +8,7 @@
 .LINK
 	https://github.com/fleschutz/PowerShell
 .NOTES
-	Author: Markus Fleschutz / License: CC0
+	Author: Markus Fleschutz | License: CC0
 #>
 
 (New-Object -ComObject Shell.Application).Windows() | %{$_.quit()}

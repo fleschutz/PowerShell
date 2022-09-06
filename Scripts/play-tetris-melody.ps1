@@ -5,11 +5,10 @@
         This PowerShell script plays the Tetris melody.
 .EXAMPLE
         PS> ./play-tetris-melody
-	(listen and enjoy)
-.NOTES
-	Author: Markus Fleschutz / License: CC0
 .LINK
         https://github.com/fleschutz/PowerShell
+.NOTES
+	Author: Markus Fleschutz | License: CC0
 #>
 
 [System.Console]::Beep(1320,500)

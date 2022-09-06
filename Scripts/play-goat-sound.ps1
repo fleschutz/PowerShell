@@ -5,11 +5,10 @@
 	This PowerShell script plays a goat sound.
 .EXAMPLE
 	PS> ./play-goat-sound
-	(listen and enjoy)
-.NOTES
-	Author: Markus Fleschutz / License: CC0
 .LINK
 	https://github.com/fleschutz/PowerShell
+.NOTES
+	Author: Markus Fleschutz | License: CC0
 #>
 
 & "$PSScriptRoot/play-mp3.ps1" "$PSScriptRoot/../Data/Sounds/goat.mp3"

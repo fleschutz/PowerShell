@@ -9,10 +9,10 @@
 	Specifies the marquee speed (60 ms per default)
 .EXAMPLE
 	PS> ./write-marquee "Hello World"
-.NOTES
-	Author: Markus Fleschutz / License: CC0
 .LINK
 	https://github.com/fleschutz/PowerShell
+.NOTES
+	Author: Markus Fleschutz | License: CC0
 #>
 
 param([string]$text = "PowerShell is powerful! PowerShell is cross-platform! PowerShell is open-source! PowerShell is easy to learn! Powershell is fully documented", [int]$speed = 60) # 60 ms pause

@@ -7,11 +7,10 @@
 	Specifies the path to the playlist
 .EXAMPLE
 	PS> ./play-m3u C:\MyPlaylist.m3u
-	(listen and enjoy)
-.NOTES
-	Author: Markus Fleschutz / License: CC0
 .LINK
 	https://github.com/fleschutz/PowerShell
+.NOTES
+	Author: Markus Fleschutz | License: CC0
 #>
 
 param([string]$filename = "")

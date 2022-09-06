@@ -5,10 +5,10 @@
 	This PowerShell script writes a chart.
 .EXAMPLE
 	PS> ./write-chart
-.NOTES
-	Author: Markus Fleschutz / License: CC0
 .LINK
 	https://github.com/fleschutz/PowerShell
+.NOTES
+	Author: Markus Fleschutz | License: CC0
 #>
 
 function WriteChartLine { param([string]$Text, [float]$Value, [float]$Max)

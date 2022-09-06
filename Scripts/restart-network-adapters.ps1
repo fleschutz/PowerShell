@@ -8,7 +8,7 @@
 .LINK
 	htts://github.com/fleschutz/PowerShell
 .NOTES
-	Author: Markus Fleschutz / License: CC0
+	Author: Markus Fleschutz | License: CC0
 #>
 
 #Requires -RunAsAdministrator

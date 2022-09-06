@@ -5,10 +5,10 @@
 	This script launches the OBS Studio application.
 .EXAMPLE
 	PS> ./open-obs-studio
-.NOTES
-	Author: Markus Fleschutz · License: CC0
 .LINK
 	https://github.com/fleschutz/PowerShell
+.NOTES
+	Author: Markus Fleschutz | License: CC0
 #>
 
 function TryLaunching { param([string]$Path, [string]$Dir)

@@ -6,10 +6,10 @@
 .EXAMPLE
 	PS> ./write-joke
 	When Chuck Norris does division, there are no remainders. 😂
-.NOTES
-	Author: Markus Fleschutz / License: CC0
 .LINK
 	https://github.com/fleschutz/PowerShell
+.NOTES
+	Author: Markus Fleschutz | License: CC0
 #>
 
 try {
