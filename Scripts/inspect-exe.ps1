@@ -18,7 +18,7 @@ param([string]$PathToExe = "")
 try {
 	if ($PathToExe -eq "" ) { $PathToExe = read-host "Enter path to executable file" }
 
-	get-childitem $PathToExe | % {$_.VersionInfo} | Select *
+	Get-ChildItem $PathToExe | % {$_.VersionInfo} | Select *
 	exit 0 # success
 } catch {
 	"⚠️ Error in line $($_.InvocationInfo.ScriptLineNumber): $($Error[0])"
