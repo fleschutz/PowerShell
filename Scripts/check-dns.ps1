@@ -12,11 +12,11 @@
 #>
  
 try {
-	"⏳ Step 1/2 - Reading table from Data/domain-names.csv..."
-	$Table = Import-CSV "$PSScriptRoot/../Data/domain-names.csv"
+	"⏳ Step 1/2 - Reading table from Data/domains.csv..."
+	$Table = Import-CSV "$PSScriptRoot/../Data/domains.csv"
 	$NumRows = $Table.Length
 
-	"⏳ Step 2/2 - Resolving $NumRows domain names..."
+	"⏳ Step 2/2 - Resolving $NumRows domains..."
 	$StopWatch = [system.diagnostics.stopwatch]::startNew()
 	if ($IsLinux) {
 		foreach($Row in $Table) { $null = dig $Row.Domain +short }
@@ -26,7 +26,7 @@ try {
 
 	[float]$Elapsed = $StopWatch.Elapsed.TotalSeconds
 	$Average = [math]::round($NumRows / $Elapsed, 1)
-	"✔️ DNS resolves $Average domains per second"
+	"✔️ DNS resolution is $Average domains per second"
 	exit 0 # success
 } catch {
 	"⚠️ Error in line $($_.InvocationInfo.ScriptLineNumber): $($Error[0])"
