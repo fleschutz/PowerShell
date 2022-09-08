@@ -18,17 +18,18 @@ param([string]$RepoDir = "$PWD")
 try {
 	$StopWatch = [system.diagnostics.stopwatch]::startNew()
 
-	"⏳ Step 1/2: Checking requirements... "
-	$null = (git --version)
+	"⏳ Step 1/3 - Searching for Git executable... "
+	& git --version
 	if ($lastExitCode -ne "0") { throw "Can't execute 'git' - make sure Git is installed and available" }
 
-	if (-not(Test-Path "$RepoDir" -pathType container)) { throw "Can't access folder: $RepoDir" }
+	$RepoDirName = (Get-Item "$RepoDir").Name
+	"⏳ Step 2/3 - Checking folder 📂$RepoDirName... "
+	if (!(Test-Path "$RepoDir" -pathType container)) { throw "Can't access folder: $RepoDir" }
 
-	"⏳ Step 2/2: Fetching updates... "
+	"⏳ Step 3/3 - Fetching updates... "
 	& git -C "$RepoDir" fetch --all --recurse-submodules --prune --prune-tags --force 
 	if ($lastExitCode -ne "0") { throw "'git fetch' failed with exit code $lastExitCode" }
 	
-	$RepoDirName = (get-item "$RepoDir").Name
 	[int]$Elapsed = $StopWatch.Elapsed.TotalSeconds
 	"✔️ fetched updates for 📂$RepoDirName repo in $Elapsed sec"
 	exit 0 # success
