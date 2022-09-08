@@ -24,7 +24,7 @@ try {
 	} else {
 		foreach($Row in $Table) { $null = Resolve-DNSName $Row.Domain }
 	}
-	[int]$Elapsed = $StopWatch.Elapsed.TotalSeconds
+	[float]$Elapsed = $StopWatch.Elapsed.TotalSeconds
 
 	$Average = [math]::round($Count / $Elapsed, 1)
 	"$Average domains per second DNS resolution"
