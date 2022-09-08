@@ -5,7 +5,6 @@
 	This PowerShell script checks the DNS resolution using frequently used domain names.
 .EXAMPLE
 	PS> ./check-dns
-	56.7 domains per second DNS resolution
 .LINK
 	https://github.com/fleschutz/PowerShell
 .NOTES
@@ -13,21 +12,21 @@
 #>
  
 try {
-	write-progress "Reading table from Data/domain-names.csv..."
+	"⏳ Step 1/2 - Reading table from Data/domain-names.csv..."
 	$Table = Import-CSV "$PSScriptRoot/../Data/domain-names.csv"
-	$Count = $Table.Length
+	$NumRows = $Table.Length
 
-	write-progress "Resolving $Count domain names..."
+	"⏳ Step 2/2 - Resolving $NumRows domain names..."
 	$StopWatch = [system.diagnostics.stopwatch]::startNew()
 	if ($IsLinux) {
 		foreach($Row in $Table) { $null = dig $Row.Domain +short }
 	} else {
 		foreach($Row in $Table) { $null = Resolve-DNSName $Row.Domain }
 	}
-	[float]$Elapsed = $StopWatch.Elapsed.TotalSeconds
 
-	$Average = [math]::round($Count / $Elapsed, 1)
-	"$Average domains per second DNS resolution"
+	[float]$Elapsed = $StopWatch.Elapsed.TotalSeconds
+	$Average = [math]::round($NumRows / $Elapsed, 1)
+	"✔️ DNS resolves $Average domains per second"
 	exit 0 # success
 } catch {
 	"⚠️ Error in line $($_.InvocationInfo.ScriptLineNumber): $($Error[0])"
