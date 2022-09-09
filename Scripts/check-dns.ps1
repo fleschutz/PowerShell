@@ -26,7 +26,12 @@ try {
 
 	[float]$Elapsed = $StopWatch.Elapsed.TotalSeconds
 	$Average = [math]::round($NumRows / $Elapsed, 1)
-	"✔️ DNS resolution is $Average domains per second"
+	if ($Average -gt 200.0) { $Rating = "excellent" 
+	} elseif ($Average -gt 100.0) { $Rating = "quite good"
+	} elseif ($Average -gt 10.0) { $Rating = "good"
+	} else { $Rating = "poor"
+	}
+	"✔️ $Average DNS domain lookups per second - $Rating"
 	exit 0 # success
 } catch {
 	"⚠️ Error in line $($_.InvocationInfo.ScriptLineNumber): $($Error[0])"
