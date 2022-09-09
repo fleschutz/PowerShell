@@ -29,7 +29,7 @@ try {
 
 	$RepoDir = Resolve-Path "$RepoDir"
 	$RepoDirName = (Get-Item "$RepoDir").Name
-	"⏳ Step 2/6 - Checking Git repository 📂$RepoDirName..."
+	"⏳ Step 2/6 - Checking folder 📂$RepoDirName..."
 	if (-not(Test-Path "$RepoDir" -pathType container)) { throw "Can't access directory: $RepoDir" }
 
 	$Result = (git status)
