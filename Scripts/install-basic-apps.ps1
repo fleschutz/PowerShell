@@ -39,7 +39,7 @@ try {
 		$Step++
 	}
 	[int]$Elapsed = $StopWatch.Elapsed.TotalSeconds
-	"✔️ installed $NumEntries basic apps in $Elapsed sec"
+	"✔️ installed $NumEntries apps in $Elapsed sec"
 	exit 0 # success
 } catch {
 	"⚠️ Error in line $($_.InvocationInfo.ScriptLineNumber): $($Error[0])"
