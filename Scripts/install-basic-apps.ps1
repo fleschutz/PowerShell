@@ -18,12 +18,13 @@ try {
 	"⏳ Step 1 - Loading table from Data/basic-apps.csv..."
 	$Table = Import-CSV "$PSScriptRoot/../Data/basic-apps.csv"
 	$NumEntries = $Table.count
-	Write-Host "   I will install: " -NoNewline
+	Write-Host "   About to install $NumEntries apps: " -NoNewline
 	foreach($Row in $Table) {
 		[string]$AppName = $Row.AppName
 		Write-Host "$AppName, " -NoNewline
 	}
 	""
+	"Press <Control> <C> to abort, otherwise the installation will start..."
 	sleep -s 3
 
 	[int]$Step = 2

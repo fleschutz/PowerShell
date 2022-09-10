@@ -5,7 +5,7 @@ AppName,Category,AppID
 "Google Chrome",	"desktop browser",	Google.Chrome
 "Dopamine",		"audio player",		Digimezzo.Dopamine.2
 "Dropbox",		"file sync",		Dropbox.Dropbox
-"Git",			"code management",	Git.Git
+"Git for Windows",	"code management",	Git.Git
 "IrfanView",		"image viewer",		9PJZ3BTL5PV6
 "inSSIDer",		"Wifi tool",		MetaGeek.inSSIDer
 "LibreOffice",		"office suite",		TheDocumentFoundation.LibreOffice
