@@ -1,4 +1,4 @@
-<#
+﻿<#
 .SYNOPSIS
         Shows a notification
 .DESCRIPTION
@@ -25,6 +25,6 @@ try {
 	$balloon.ShowBalloonTip($Duration)
 	exit 0 # success
 } catch {
-        "⚠️ Error in line $($_.InvocationInfo.ScriptLineNumber): $($Error[0])"
-        exit 1
+	"⚠️ Error in line $($_.InvocationInfo.ScriptLineNumber): $($Error[0])"
+	exit 1
 }
