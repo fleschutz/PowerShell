@@ -1,4 +1,4 @@
-<#
+﻿<#
 .SYNOPSIS
 	Uninstalls 9 ZIP
 .DESCRIPTION
@@ -12,14 +12,14 @@
 #>
 
 try {
-	& "$PSScriptRoot/_reply.ps1" "Uninstalling 9 ZIP, please wait..."
+	"Uninstalling 9 ZIP, please wait..."
 
 	& winget uninstall "9 ZIP - open rar, zip, 7zip, gzip"
 	if ($lastExitCode -ne "0") { throw "Can't uninstall 9 ZIP, is it installed?" }
 
-	& "$PSScriptRoot/_reply.ps1" "9 ZIP is uninstalled now."
+	"9 ZIP is uninstalled now."
 	exit 0 # success
 } catch {
-	& "$PSScriptRoot/_reply.ps1" "Sorry: $($Error[0])"
+	"⚠️ Error in line $($_.InvocationInfo.ScriptLineNumber): $($Error[0])"
 	exit 1
 }

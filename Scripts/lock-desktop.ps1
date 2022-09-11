@@ -1,4 +1,4 @@
-<#
+﻿<#
 .SYNOPSIS
 	Locks the desktop
 .DESCRIPTION

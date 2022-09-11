@@ -1,4 +1,4 @@
-<#
+﻿<#
 .SYNOPSIS
 	Uninstalls Netflix
 .DESCRIPTION
@@ -20,6 +20,6 @@ try {
 	"Netflix is uninstalled now."
 	exit 0 # success
 } catch {
-	"Sorry: $($Error[0])"
+	"⚠️ Error in line $($_.InvocationInfo.ScriptLineNumber): $($Error[0])"
 	exit 1
 }

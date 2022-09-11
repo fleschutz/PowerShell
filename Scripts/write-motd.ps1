@@ -1,12 +1,12 @@
-<#
+﻿<#
 .SYNOPSIS
-        Writes the message of the day
+	Writes the message of the day
 .DESCRIPTION
-        This PowerShell script writes the message of the day (MOTD).
+	This PowerShell script writes the message of the day (MOTD).
 .EXAMPLE
-        PS> ./write-motd
+	PS> ./write-motd
 .LINK
-        https://github.com/fleschutz/PowerShell
+	https://github.com/fleschutz/PowerShell
 .NOTES
 	Author: Markus Fleschutz | License: CC0
 #>

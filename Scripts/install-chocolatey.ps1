@@ -1,4 +1,4 @@
-<#
+﻿<#
 .SYNOPSIS
         Installs Chocolatey (needs admin rights)
 .DESCRIPTION
@@ -18,6 +18,6 @@ try {
 	iwr https://community.chocolatey.org/install.ps1 -UseBasicParsing | iex
 	exit 0 # success
 } catch {
-        "⚠️ Error in line $($_.InvocationInfo.ScriptLineNumber): $($Error[0])"
-        exit 1
+	"⚠️ Error in line $($_.InvocationInfo.ScriptLineNumber): $($Error[0])"
+	exit 1
 }

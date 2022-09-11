@@ -20,6 +20,6 @@ try {
 	"Git for Windows installed successfully."
 	exit 0 # success
 } catch {
-	"Sorry: $($Error[0])"
+	"⚠️ Error in line $($_.InvocationInfo.ScriptLineNumber): $($Error[0])"
 	exit 1
 }

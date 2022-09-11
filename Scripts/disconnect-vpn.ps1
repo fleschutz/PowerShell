@@ -1,6 +1,6 @@
-<#
+﻿<#
 .SYNOPSIS
-	Disconnect VPN
+	Disconnects the VPN
 .DESCRIPTION
 	This PowerShell script disconnects the active VPN connection.
 .EXAMPLE
