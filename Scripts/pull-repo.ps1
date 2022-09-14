@@ -23,7 +23,7 @@ try {
 	if ($lastExitCode -ne "0") { throw "Can't execute 'git' - make sure Git is installed and available" }
 
 	$RepoDirName = (Get-Item "$RepoDir").Name
-	"⏳ Step 2/4 - Checking Git repository 📂$RepoDirName..."
+	"⏳ Step 2/4 - Checking folder 📂$RepoDirName..."
 	if (-not(Test-Path "$RepoDir" -pathType container)) { throw "Can't access folder: $RepoDir" }
 
 	$Result = (git -C "$RepoDir" status)
