@@ -21,7 +21,7 @@ Why use PowerShell?
 
 How to get PowerShell?
 ----------------------
-* **On Windows** PowerShell is preinstalled. **However,** the default execution policy is "restricted", meaning script execution is disallowed! To change this, open the *Windows PowerShell (Administrator)* console and enter:
+* **On Windows** PowerShell is preinstalled. **However,** the default execution policy is "restricted" which disallows the execution of scripts! To change this, open the *Windows PowerShell (Administrator)* console and enter:
    ```
    PS> Set-ExecutionPolicy -ExecutionPolicy Bypass -Scope CurrentUser
    ```
@@ -37,6 +37,16 @@ How to get the PowerShell Scripts?
 * When using **Git**, execute in a terminal window: `> git clone https://github.com/fleschutz/PowerShell`
 * When using **Chocolatey**, execute in *Windows PowerShell (Administrator)*: `> choco install powershell-scripts --version=0.4`
 * **Otherwise,** download and unzip it from: https://github.com/fleschutz/PowerShell/archive/master.zip
+
+
+How can I execute the PowerShell Scripts?
+-----------------------------------------
+1. In the Windows desktop by double-clicking the script.
+2. In a command-line interface (CLI, e.g. *Windows Terminal*, either local or remote via SSH) by typing: `./NAME_OF_SCRIPT`.
+3. By connecting a context menu item with a script.
+4. By voice control, e.g. see repo [talk2windows](https://github.com/fleschutz/talk2windows) for more information.
+5. By using automation software, e.g. [Jenkins](https://www.jenkins.io).
+6. Automatically on login/logoff/daily/etc.
 
 
 What about Security?
