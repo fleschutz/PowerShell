@@ -58,7 +58,7 @@ What about Security?
 
 Why do some scripts show gibberish characters?
 ----------------------------------------------
-Those PowerShell scripts are using Unicode characters. Use a modern console supporting UTF-8 such as Windows Terminal, please.
+Those PowerShell scripts are using Unicode characters. Use a modern console supporting UTF-8 such as *Windows Terminal*, please.
 
 
 How to set PowerShell as default shell on Linux?
