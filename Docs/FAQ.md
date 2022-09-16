@@ -39,8 +39,8 @@ How to get the PowerShell Scripts?
 * **Otherwise,** download and unzip it from: https://github.com/fleschutz/PowerShell/archive/master.zip
 
 
-How can I execute the PowerShell Scripts?
------------------------------------------
+How to execute PowerShell Scripts?
+----------------------------------
 1. In the Windows desktop by double-clicking the script.
 2. In a command-line interface (CLI, e.g. *Windows Terminal*, either local or remote via SSH) by typing: `./NAME_OF_SCRIPT`.
 3. By connecting a context menu item with a script.
