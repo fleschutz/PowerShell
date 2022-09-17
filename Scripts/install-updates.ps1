@@ -11,7 +11,6 @@
 	Author: Markus Fleschutz | License: CC0
 #>
 
-#Requires -RunAsAdministrator
 
 try {
 	$StopWatch = [system.diagnostics.stopwatch]::startNew()
@@ -29,10 +28,10 @@ try {
 		"⏳ Step 4/4 - Upgrading installed Snap packages..."
 		& sudo snap refresh
 	} else {
-		"⏳ Step 1/2 - Checking for application updates..."
+		"⏳ Step 1/2 - Fetching update infos..."
 		winget upgrade
 
-		"⏳ Step 2/2 - Upgrading application..."
+		"⏳ Step 2/2 - Upgrading applications..."
 		winget upgrade --all
 	}
 
