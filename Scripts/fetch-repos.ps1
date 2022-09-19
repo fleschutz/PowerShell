@@ -27,7 +27,7 @@ try {
 	if (-not(Test-Path "$ParentDir" -pathType container)) { throw "Can't access folder: $ParentDir" }
 	$Folders = (Get-ChildItem "$ParentDir" -attributes Directory)
 	$NumFolders = $Folders.Count
-	"Found $NumFolders subfolders."
+	"Found $NumFolders subfolders, fetching one by one..."
 
 	[int]$Step = 3
 	foreach ($Folder in $Folders) {
@@ -41,7 +41,7 @@ try {
 	}
 
 	[int]$Elapsed = $StopWatch.Elapsed.TotalSeconds
-	"✔️ fetched $NumFolders Git repos at 📂$ParentDirName in $Elapsed sec"
+	"✔️ fetched $NumFolders Git repos in 📂$ParentDirName, it took $Elapsed sec"
 	exit 0 # success
 } catch {
 	"⚠️ Error in line $($_.InvocationInfo.ScriptLineNumber): $($Error[0])"
