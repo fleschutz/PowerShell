@@ -18,17 +18,22 @@
 param([string]$RepoDir = "$PWD")
 
 try {
-	"⏳ Step 1/3: Checking requirements..."
-	if (-not(test-path "$RepoDir" -pathType container)) { throw "Can't access directory: $RepoDir" }
-
-	$Null = (git --version)
+	"⏳ Step 1/4 - Searching for Git executable..."
+	$null = (git --version)
 	if ($lastExitCode -ne "0") { throw "Can't execute 'git' - make sure Git is installed and available" }
 
-	"⏳ Step 2/3: Fetching updates..."
+	$RepoDirName = (Get-Item "$RepoDir").Name
+	"⏳ Step 2/4 - Checking folder 📂$RepoDirName..."
+	if (-not(test-path "$RepoDir" -pathType container)) { throw "Can't access directory: $RepoDir" }
+
+	"⏳ Step 3/4 - Fetching updates..."
 	& git -C "$RepoDir" fetch --all --quiet
 	if ($lastExitCode -ne "0") { throw "'git fetch' failed with exit code $lastExitCode" }
 
-	"⏳ Step 3/3: Listing commits without merges..."
+	"⏳ Step 4/4 - Querying commits by author (without merges)..."
+	" "
+	"Commits Author"
+	"------- ------"
 	git -C "$RepoDir" shortlog --summary --numbered --email --no-merges
 	if ($lastExitCode -ne "0") { throw "'git shortlog' failed with exit code $lastExitCode" }
 	exit 0 # success
