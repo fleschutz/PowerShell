@@ -46,7 +46,7 @@ How to execute PowerShell Scripts?
 3. By connecting a context menu item with a script.
 4. By voice control, e.g. see repo [talk2windows](https://github.com/fleschutz/talk2windows) for more information.
 5. By using automation software, e.g. [Jenkins](https://www.jenkins.io).
-6. Automatically on login/logoff/daily/etc.
+6. Automatically on login (see AutoStart folder)/logoff/daily/etc.
 
 
 What about Security?
