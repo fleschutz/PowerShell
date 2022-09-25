@@ -1,24 +1,24 @@
 ﻿<#
 .SYNOPSIS
-	Writes out a calendar 
+	Lists the calendar 
 .DESCRIPTION
-	Writes out calendar elements, either a single month or an entire year.
+	Lists calendar elements, either a single month or an entire year.
 .PARAMETER Month
 	If specified, will limit output to a single month with this numeral value.
 .PARAMETER Year
 	If specified, will output an entire year.
 .EXAMPLE
-	PS> ./write-calendar
-	Outputs the current month.
+	PS> ./list-calendar
+	Lists the calendar for current month.
 .EXAMPLE
-	PS> ./write-calendar 2013
-	Outputs the calendar for 2013.
+	PS> ./list-calendar 2013
+	Lists the calendar for 2013.
 .EXAMPLE
-	PS> ./write-calendar 04 2011
-	Outputs the calendar for April, 2011.
+	PS> ./list-calendar 04 2011
+	Lists the calendar for April, 2011.
 .EXAMPLE
-	PS> ./write-calendar 7
-	Outputs the calendar for July of this year.
+	PS> ./list-calendar 7
+	Lists the calendar for July of this year.
 .LINK
 	https://github.com/fleschutz/PowerShell
 .NOTES
@@ -139,10 +139,8 @@ function Find-LastWeekDay ($year, $month, $dayOfWeek) {
         if ($dayCounter.DayOfWeek -eq $dayOfWeek) {
             $result = $dayCounter
         }
-
         $dayCounter = $dayCounter.AddDays(1)
     }
-
     return $result
 }
 
