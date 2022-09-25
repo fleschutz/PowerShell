@@ -2,9 +2,9 @@
 .SYNOPSIS
 	Lists the installed apps
 .DESCRIPTION
-	This PowerShell script lists the installed apps (from Windows Store or snaps).
+	This PowerShell script lists the installed applications (from Windows Store, or Snap Store).
 .EXAMPLE
-	PS> ./list-installed-apps
+	PS> ./list-apps
 .LINK
 	https://github.com/fleschutz/PowerShell
 .NOTES
