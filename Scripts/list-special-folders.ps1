@@ -2,13 +2,13 @@
 .SYNOPSIS
 	Lists special folders
 .DESCRIPTION
-	This PowerShell script lists all special folders (sorted alphabetically).
+	This PowerShell script lists the special folders (sorted alphabetically).
 .EXAMPLE
 	PS> ./list-special-folders
 
 	Folder Name     Folder Path
 	-----------     -----------
-	📂Autostart     C:\Users\Markus\AppData\Roaming\Microsoft\Windows\Start Menu\Programs\Startup
+	AdminTools      📂C:\Users\Markus\AppData\Roaming\Microsoft\Windows\Start Menu\Programs\Administrative Tools
 	...
 .LINK
 	https://github.com/fleschutz/PowerShell
@@ -24,43 +24,37 @@ function GetTempDir {
 }
 
 function AddLine { param([string]$FolderName, [string]$FolderPath)
-	New-Object PSObject -property @{ 'Folder Name' = "$FolderName"; 'Folder Path' = "$FolderPath" }
+	New-Object PSObject -property @{ 'Folder Name' = "$FolderName"; 'Folder Path' = "📂$FolderPath" }
 }
 
 function ListSpecialFolders {
 	if ($IsLinux) {
-		AddLine "📂Desktop"          "$HOME/Desktop"
-		AddLine "📂Downloads"        "$HOME/Downloads"
-		AddLine "📂Home Folder"      "$HOME"
-		AddLine "📂My Documents"     "$HOME/Documents"
-		AddLine "📂My Music"         "$HOME/Music"
-		AddLine "📂My Pictures"      "$HOME/Pictures"
-		AddLine "📂My Screenshots"   "$HOME/Pictures/Screenshots"
-		AddLine "📂My Videos"        "$HOME/Videos"
-		AddLine "📂Temporary Folder" "$(GetTempDir)"
+		AddLine "Desktop"          "$HOME/Desktop"
+		AddLine "Downloads"        "$HOME/Downloads"
+		AddLine "Home Folder"      "$HOME"
+		AddLine "MyDocuments"      "$HOME/Documents"
+		AddLine "MyMusic"          "$HOME/Music"
+		AddLine "MyPictures"       "$HOME/Pictures"
+		AddLine "MyScreenshots"    "$HOME/Pictures/Screenshots"
+		AddLine "MyVideos"         "$HOME/Videos"
+		AddLine "Temporary Folder" "$(GetTempDir)"
 		$Path = Resolve-Path "$HOME/.."
-		AddLine "📂Users"            "$Path"
+		AddLine "Users"            "$Path"
 	} else {
-		$Path = Resolve-Path "$HOME/AppData/Roaming/Microsoft/Windows/Start Menu/Programs/Startup"
-		AddLine "📂Autostart"        "$Path"
-		AddLine "📂Desktop"          "$([Environment]::GetFolderPath('DesktopDirectory'))"
-		AddLine "📂Downloads"        "$((New-Object -ComObject Shell.Application).NameSpace('shell:Downloads').Self.Path)"
-		AddLine "📂Fonts"            "$([Environment]::GetFolderPath('Fonts'))"
-		AddLine "📂Home Folder"      "$HOME"
-		AddLine "📂My Documents"     "$([Environment]::GetFolderPath('MyDocuments'))"
-		AddLine "📂My Music"         "$([Environment]::GetFolderPath('MyMusic'))"
-		AddLine "📂My Pictures"      "$([Environment]::GetFolderPath('MyPictures'))"
-		AddLine "📂My Screenshots"   "$([Environment]::GetFolderPath('MyPictures'))\Screenshots"
-		AddLine "📂My Videos"        "$([Environment]::GetFolderPath('MyVideos'))"
-		AddLine "📂Temporary Folder" "$(GetTempDir)"
+		$FolderNames = [System.Enum]::GetNames('System.Environment+SpecialFolder')
+		$FolderNames | Sort-Object | ForEach-Object {
+			if ($Path = [System.Environment]::GetFolderPath($_)) {
+				AddLine "$_" "$Path"
+			}
+		}
+		AddLine "TemporaryFolder"  "$(GetTempDir)"
 		$Path = Resolve-Path "$HOME/.."
-		AddLine "📂Users"            "$Path"
-		AddLine "📂Windows"          "$([Environment]::GetFolderPath('Windows'))"
+		AddLine "Users"            "$Path"
 	}
 }
 
 try {
-	ListSpecialFolders | Format-Table -property @{e='Folder Name';width=20},'Folder Path'
+	ListSpecialFolders | Format-Table -property @{e='Folder Name';width=22},'Folder Path'
 	exit 0 # success
 } catch {
 	"⚠️ Error in line $($_.InvocationInfo.ScriptLineNumber): $($Error[0])"
