@@ -6,9 +6,9 @@
 .EXAMPLE
 	PS> ./list-special-folders
 
-	Folder Name        Folder Path
-	-----------        -----------
-	Home Folder        C:\Users\Markus
+	Folder Name     Folder Path
+	-----------     -----------
+	📂Autostart     C:\Users\Markus\AppData\Roaming\Microsoft\Windows\Start Menu\Programs\Startup
 	...
 .LINK
 	https://github.com/fleschutz/PowerShell
@@ -16,15 +16,15 @@
 	Author: Markus Fleschutz | License: CC0
 #>
 
-function AddLine { param([string]$FolderName, [string]$FolderPath)
-	New-Object PSObject -property @{ 'Folder Name' = "$FolderName"; 'Folder Path' = "$FolderPath" }
-}
-
 function GetTempDir {
         if ("$env:TEMP" -ne "") { return "$env:TEMP" }
         if ("$env:TMP" -ne "")  { return "$env:TMP" }
         if ($IsLinux) { return "/tmp" }
         return "C:\Temp"
+}
+
+function AddLine { param([string]$FolderName, [string]$FolderPath)
+	New-Object PSObject -property @{ 'Folder Name' = "$FolderName"; 'Folder Path' = "$FolderPath" }
 }
 
 function ListSpecialFolders {
@@ -38,6 +38,8 @@ function ListSpecialFolders {
 		AddLine "📂My Screenshots"   "$HOME/Pictures/Screenshots"
 		AddLine "📂My Videos"        "$HOME/Videos"
 		AddLine "📂Temporary Folder" "$(GetTempDir)"
+		$Path = Resolve-Path "$HOME/.."
+		AddLine "📂Users"            "$Path"
 	} else {
 		$Path = Resolve-Path "$HOME/AppData/Roaming/Microsoft/Windows/Start Menu/Programs/Startup"
 		AddLine "📂Autostart"        "$Path"
@@ -51,6 +53,9 @@ function ListSpecialFolders {
 		AddLine "📂My Screenshots"   "$([Environment]::GetFolderPath('MyPictures'))\Screenshots"
 		AddLine "📂My Videos"        "$([Environment]::GetFolderPath('MyVideos'))"
 		AddLine "📂Temporary Folder" "$(GetTempDir)"
+		$Path = Resolve-Path "$HOME/.."
+		AddLine "📂Users"            "$Path"
+		AddLine "📂Windows"          "$([Environment]::GetFolderPath('Windows'))"
 	}
 }
 
