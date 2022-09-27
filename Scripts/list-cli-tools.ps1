@@ -6,10 +6,9 @@
 .EXAMPLE
 	PS> ./list-cli-tools
 
-	Name         Version         Location                                        FileSize
-	----         -------         --------                                        --------
-	at           10.0.19041.1    C:\WINDOWS\system32\at.exe                         31232
-	attrib       10.0.19041.1    C:\WINDOWS\system32\attrib.exe                     23040
+	Name         Version         Path                                          FileSize
+	----         -------         ----                                          --------
+	at           10.0.19041.1    C:\WINDOWS\system32\at.exe                    31232
 	...
 .LINK
 	https://github.com/fleschutz/PowerShell
@@ -20,10 +19,10 @@
 function CheckFor { param([string]$Cmd, [string]$VersionArg)
 	try {
 		$Info = Get-Command $Cmd -ErrorAction Stop
-		$Location = $Info.Source
+		$Path = $Info.Source
 		if ("$($Info.Version)" -eq "0.0.0.0") {
 			if ("$VersionArg" -ne "") {
-				$Result = invoke-expression "$Location $VersionArg"
+				$Result = invoke-expression "$Path $VersionArg"
 				if ("$Result" -match '\d+.\d+\.\d+') {
 					$Version = "$($Matches[0])"
 				} elseif ("$Result" -match '\d+\.\d+') {
@@ -37,12 +36,12 @@ function CheckFor { param([string]$Cmd, [string]$VersionArg)
 		} else {
 			$Version = $Info.Version
 		}
-		if (Test-Path "$Location" -pathType leaf) {
-			$FileSize = (Get-Item "$Location").Length
+		if (Test-Path "$Path" -pathType leaf) {
+			$FileSize = (Get-Item "$Path").Length
 		} else {
 			$FileSize = "0"
 		}
-		New-Object PSObject -Property @{ Name=$Cmd; Version=$Version; Location=$Location; FileSize=$FileSize }
+		New-Object PSObject -Property @{ Name=$Cmd; Version=$Version; Path=$Path; FileSize=$FileSize }
 	} catch {
 		return
 	}
@@ -117,6 +116,7 @@ function ListTools {
 	CheckFor printf "--version"
 	CheckFor python "--version"
 	CheckFor python3 "--version"
+	CheckFor python3.8 "--version"
 	CheckFor rasdial "--version"
 	CheckFor regedit "--version"
 	CheckFor replace "--version"
@@ -178,7 +178,7 @@ function ListTools {
 }
  
 try {
-	ListTools | Format-Table -property @{e='Name';width=12},@{e='Version';width=15},@{e='Location';width=55},@{e='FileSize';width=10}
+	ListTools | Format-Table -property @{e='Name';width=12},@{e='Version';width=15},@{e='Path';width=70},@{e='FileSize';width=10}
 	exit 0 # success
 } catch {
 	"⚠️ Error in line $($_.InvocationInfo.ScriptLineNumber): $($Error[0])"
