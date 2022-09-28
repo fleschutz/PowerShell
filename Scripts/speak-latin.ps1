@@ -1,6 +1,6 @@
 ﻿<#
 .SYNOPSIS
-	Speaks text with a Latin text-to-speech voice
+	Speaks text in Latin
 .DESCRIPTION
 	This PowerShell script speaks the given text with a Latin text-to-speech (TTS) voice.
 .PARAMETER text
@@ -18,11 +18,11 @@ param([string]$text = "")
 try {
 	if ($text -eq "") { $text = read-host "Enter the Latin text to speak" }
 
-	$TTSVoice = New-Object -ComObject SAPI.SPVoice
-	foreach ($Voice in $TTSVoice.GetVoices()) {
+	$TTS = New-Object -ComObject SAPI.SPVoice
+	foreach ($Voice in $TTS.GetVoices()) {
 		if ($Voice.GetDescription() -like "*- Latin*") { 
-			$TTSVoice.Voice = $Voice
-			[void]$TTSVoice.Speak($text)
+			$TTS.Voice = $Voice
+			[void]$TTS.Speak($text)
 			exit 0 # success
 		}
 	}
