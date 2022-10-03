@@ -29,10 +29,10 @@ try {
 		& sudo snap refresh
 	} else {
 		"⏳ Step 1/2 - Fetching update infos..."
-		winget upgrade
+		& winget upgrade
 
-		"⏳ Step 2/2 - Upgrading applications..."
-		winget upgrade --all
+		"⏳ Step 2/2 - Upgrading apps..."
+		& winget upgrade --all
 	}
 
 	[int]$Elapsed = $StopWatch.Elapsed.TotalSeconds
