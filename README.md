@@ -234,6 +234,7 @@ Mega Collection of PowerShell Scripts
 | ---------------------------------------------------- | ------------------------------------------------------------------ | --------------------------------------- |
 | [build-repo.ps1](Scripts/build-repo.ps1)             | Builds a Git repository                                            | [Help](Docs/build-repo.md)              |
 | [build-repos.ps1](Scripts/build-repos.ps1)           | Builds all Git repositories in a folder                            | [Help](Docs/build-repos.md)             |
+| [check-repo.ps1](Scripts/check-repo.ps1)             | Checks a Git repository                                            | [Help](Docs/check-repo.md)              |
 | [clean-repo.ps1](Scripts/clean-repo.ps1)             | Cleans a Git repository from untracked files                       | [Help](Docs/clean-repo.md)              |
 | [clean-repos.ps1](Scripts/clean-repos.ps1)           | Cleans all Git repositories in a folder from untracked files       | [Help](Docs/clean-repos.md)             |
 | [clone-repos.ps1](Scripts/clone-repos.ps1)           | Clones well-known Git repositories                                 | [Help](Docs/clone-repos.md)             |
@@ -244,7 +245,7 @@ Mega Collection of PowerShell Scripts
 | [list-commits.ps1](Scripts/list-commits.ps1)         | Lists all commits in a Git repository                              | [Help](Docs/list-commits.md)            |
 | [list-latest-tag.ps1](Scripts/list-latest-tag.ps1)   | Lists the latest tag on the current branch in a Git repository     | [Help](Docs/list-latest-tag.md)         |
 | [list-latest-tags.ps1](Scripts/list-latest-tags.ps1) | Lists the latests tags in all Git repositories under a directory   | [Help](Docs/list-latest-tags.md)        |
-| [list-repos.ps1](Scripts/list-repos.ps1)             | Lists Git repositories                                             | [Help](Docs/list-repos.md)              |
+| [list-repos.ps1](Scripts/list-repos.ps1)             | Lists the Git repositories in a folder                             | [Help](Docs/list-repos.md)              |
 | [list-submodules.ps1](Scripts/list-submodules.ps1)   | Lists the submodules in a Git repository                           | [Help](Docs/list-submodules.md)         |
 | [list-tags.ps1](Scripts/list-tags.ps1)               | Lists all tags in a Git repository                                 | [Help](Docs/list-tags.md)               |
 | [new-branch.ps1](Scripts/new-branch.ps1)             | Creates a new branch in a Git repository                           | [Help](Docs/new-branch.md)              |
