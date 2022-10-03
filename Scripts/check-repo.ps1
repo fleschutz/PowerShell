@@ -22,27 +22,29 @@ try {
 	& git --version
 	if ($lastExitCode -ne "0") { throw "Can't execute 'git' - make sure Git is installed and available" }
 
-	$RepoDirName = (Get-Item "$RepoDir").Name
-	Write-Host "⏳ (2/6) Checking folder 📂$RepoDirName... " -noNewline
-	if (!(Test-Path "$RepoDir" -pathType container)) { throw "Can't access folder: $RepoDir" }
-	"OK"
+	$FullPath = Resolve-Path "$RepoDir"
+	Write-Host "⏳ (2/6) Checking path...                " -noNewline
+	if (!(Test-Path "$FullPath" -pathType Container)) { throw "Can't access folder: $FullPath" }
+	"$FullPath"
 
 	Write-Host "⏳ (3/6) Searching for .git subfolder... " -noNewline
-	if (!(Test-Path "$RepoDir/.git" -pathType container)) { throw "Can't access folder: $RepoDir" }
+	if (!(Test-Path "$FullPath/.git" -pathType container)) { throw "Can't access folder: $FullPath/.git" }
 	"OK"
 
 	Write-Host "⏳ (4/6) Querying remote URL...          " -noNewline
-	& git -C "$RepoDir" remote get-url origin
+	& git -C "$FullPath" remote get-url origin
 	if ($lastExitCode -ne "0") { throw "'git status' failed with exit code $lastExitCode" }
 
 	Write-Host "⏳ (5/6) Verifying data integrity...     "
-	& git -C "$RepoDir" fsck 
+	& git -C "$FullPath" fsck 
 	if ($lastExitCode -ne "0") { throw "'git fsck' failed with exit code $lastExitCode" }
 
 	Write-Host "⏳ (6/6) Checking status...              " -noNewline
-	& git -C "$RepoDir" status --short 
+	& git -C "$FullPath" status --short 
 	if ($lastExitCode -ne "0") { throw "'git status' failed with exit code $lastExitCode" }
-	
+	" "
+
+	$RepoDirName = (Get-Item "$FullPath").Name
 	[int]$Elapsed = $StopWatch.Elapsed.TotalSeconds
 	"✔️ checked 📂$RepoDirName repo in $Elapsed sec"
 	exit 0 # success
