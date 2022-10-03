@@ -1,8 +1,8 @@
 ﻿<#
 .SYNOPSIS
-	Writes text with the typewriter effect
+	Writes text á la typewriter
 .DESCRIPTION
-	This PowerShell script writes text with the typewriter effect.
+	This PowerShell script writes the given text with the typewriter effect.
 .PARAMETER text
 	Specifies the text to write
 .PARAMETER speed
@@ -15,14 +15,14 @@
 	Author: Markus Fleschutz | License: CC0
 #>
 
-param([string]$text = "`nHello World`n-----------`nPowerShell is cross-platform`nPowerShell is open-source`nPowerShell is easy to learn`nPowerShell is fully documented`n`nThanks for watching`n`n:-)`n`n", [int]$speed = 250) # in milliseconds
+param([string]$text = "`nHello World`n-----------`n* PowerShell is powerful - fully control your computer`n* PowerShell is cross-platform - available for Linux, Mac OS and Windows`n* PowerShell is open-source and free`n* PowerShell is easy to learn`n* PowerShell is fully documented`n`nThanks for watching`nMarkus`n", [int]$speed = 200) # in milliseconds
 
 try {
 	$Random = New-Object System.Random
 
 	$text -split '' | ForEach-Object {
-		write-host -nonewline $_
-		start-sleep -milliseconds $(1 + $Random.Next($speed))
+		Write-Host -noNewline $_
+		Start-Sleep -milliseconds $(1 + $Random.Next($speed))
 	}
 	exit 0 # success
 } catch {
