@@ -23,19 +23,19 @@ function Test-RegistryValue { param([parameter(Mandatory=$true)][ValidateNotNull
 [bool]$PendingReboot = $false
 
 if (Test-Path -Path "HKLM:\SOFTWARE\Microsoft\Windows\CurrentVersion\WindowsUpdate\Auto Update\RebootRequired") {
-	"Yes, registry key 'HKLM:\SOFTWARE\Microsoft\Windows\CurrentVersion\WindowsUpdate\Auto Update\RebootRequired' is set."
+	"Yes, found registry key 'HKLM:\SOFTWARE\Microsoft\Windows\CurrentVersion\WindowsUpdate\Auto Update\RebootRequired'."
 	$PendingReboot = $true
 }
 if (Test-Path -Path "HKLM:\SOFTWARE\Microsoft\Windows\CurrentVersion\WindowsUpdate\Auto Update\PostRebootReporting") {
-	"Yes, registry key 'HKLM:\SOFTWARE\Microsoft\Windows\CurrentVersion\WindowsUpdate\Auto Update\PostRebootReporting' is set."
+	"Yes, found registry key 'HKLM:\SOFTWARE\Microsoft\Windows\CurrentVersion\WindowsUpdate\Auto Update\PostRebootReporting'."
 	$PendingReboot = $true
 }
 if (Test-Path -Path "HKLM:\SOFTWARE\Microsoft\Windows\CurrentVersion\Component Based Servicing\RebootPending") {
-	"Yes, registry key 'HKLM:\SOFTWARE\Microsoft\Windows\CurrentVersion\Component Based Servicing\RebootPending' is set."
+	"Yes, found registry key 'HKLM:\SOFTWARE\Microsoft\Windows\CurrentVersion\Component Based Servicing\RebootPending'."
 	$PendingReboot = $true
 }
 if (Test-Path -Path "HKLM:\SOFTWARE\Microsoft\ServerManager\CurrentRebootAttempts") {
-	"Yes, registry key 'HKLM:\SOFTWARE\Microsoft\ServerManager\CurrentRebootAttempts' is set."
+	"Yes, found registry key 'HKLM:\SOFTWARE\Microsoft\ServerManager\CurrentRebootAttempts'."
 	$PendingReboot = $true
 }
 if (Test-RegistryValue -Path "HKLM:\Software\Microsoft\Windows\CurrentVersion\Component Based Servicing" -Value "RebootInProgress") {
