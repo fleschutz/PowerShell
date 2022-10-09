@@ -19,12 +19,11 @@ try {
 		$TimeNow = Get-Date 
 		$Uptime = New-TimeSpan -Start $BootTime.TimeCreated.Date -End $TimeNow
 	}
-	
 	$Days = $Uptime.Days
 	$Hours = $Uptime.Hours
 	$Minutes = $Uptime.Minutes 
 
-	$Reply = "I'm up for "
+	$Reply = "Up for "
 	if ($Days -eq "1") {
 		$Reply += "1 day, "
 	} elseif ($Days -ne "0") {
@@ -40,8 +39,7 @@ try {
 	} elseif ($Minutes -ne "0") {
 		$Reply += "and $Minutes minutes"
 	}
-	$Reply += "."
-	& "$PSScriptRoot/give-reply.ps1" "$Reply"
+	"✅ $Reply."
 	exit 0 # success
 } catch {
 	"⚠️ Error in line $($_.InvocationInfo.ScriptLineNumber): $($Error[0])"

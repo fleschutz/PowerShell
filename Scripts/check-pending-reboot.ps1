@@ -20,52 +20,44 @@ function Test-RegistryValue { param([parameter(Mandatory=$true)][ValidateNotNull
     }
 }
 
-[bool]$PendingReboot = $false
+$Reason = ""
 
 if (Test-Path -Path "HKLM:\SOFTWARE\Microsoft\Windows\CurrentVersion\WindowsUpdate\Auto Update\RebootRequired") {
-	"Yes, found registry key 'HKLM:\SOFTWARE\Microsoft\Windows\CurrentVersion\WindowsUpdate\Auto Update\RebootRequired'."
-	$PendingReboot = $true
+	$Reason +="found registry key 'HKLM:\SOFTWARE\Microsoft\Windows\CurrentVersion\WindowsUpdate\Auto Update\RebootRequired'."
 }
 if (Test-Path -Path "HKLM:\SOFTWARE\Microsoft\Windows\CurrentVersion\WindowsUpdate\Auto Update\PostRebootReporting") {
-	"Yes, found registry key 'HKLM:\SOFTWARE\Microsoft\Windows\CurrentVersion\WindowsUpdate\Auto Update\PostRebootReporting'."
-	$PendingReboot = $true
+	$Reason += "found registry key 'HKLM:\SOFTWARE\Microsoft\Windows\CurrentVersion\WindowsUpdate\Auto Update\PostRebootReporting'."
 }
 if (Test-Path -Path "HKLM:\SOFTWARE\Microsoft\Windows\CurrentVersion\Component Based Servicing\RebootPending") {
-	"Yes, found registry key 'HKLM:\SOFTWARE\Microsoft\Windows\CurrentVersion\Component Based Servicing\RebootPending'."
-	$PendingReboot = $true
+	$Reason += "found registry key 'HKLM:\SOFTWARE\Microsoft\Windows\CurrentVersion\Component Based Servicing\RebootPending'."
 }
 if (Test-Path -Path "HKLM:\SOFTWARE\Microsoft\ServerManager\CurrentRebootAttempts") {
-	"Yes, found registry key 'HKLM:\SOFTWARE\Microsoft\ServerManager\CurrentRebootAttempts'."
-	$PendingReboot = $true
+	$Reason += "found registry key 'HKLM:\SOFTWARE\Microsoft\ServerManager\CurrentRebootAttempts'."
 }
 if (Test-RegistryValue -Path "HKLM:\Software\Microsoft\Windows\CurrentVersion\Component Based Servicing" -Value "RebootInProgress") {
-	"Yes, registry key 'HKLM:\Software\Microsoft\Windows\CurrentVersion\Component Based Servicing' contains 'RebootInProgress'."
-	$PendingReboot = $true
+	$Reason += "registry key 'HKLM:\Software\Microsoft\Windows\CurrentVersion\Component Based Servicing' contains 'RebootInProgress'."
 }
 if (Test-RegistryValue -Path "HKLM:\Software\Microsoft\Windows\CurrentVersion\Component Based Servicing" -Value "PackagesPending") {
-	"Yes, registry key 'HKLM:\Software\Microsoft\Windows\CurrentVersion\Component Based Servicing' contains 'PackagesPending'."
-	$PendingReboot = $true
+	$Reason += "registry key 'HKLM:\Software\Microsoft\Windows\CurrentVersion\Component Based Servicing' contains 'PackagesPending'."
 }
 if (Test-RegistryValue -Path "HKLM:\SYSTEM\CurrentControlSet\Control\Session Manager" -Value "PendingFileRenameOperations") {
-	"Yes, registry key 'HKLM:\SYSTEM\CurrentControlSet\Control\Session Manager' contains 'PendingFileRenameOperations'."
-	$PendingReboot = $true
+	$Reason += "registry key 'HKLM:\SYSTEM\CurrentControlSet\Control\Session Manager' contains 'PendingFileRenameOperations'."
 }
 if (Test-RegistryValue -Path "HKLM:\SYSTEM\CurrentControlSet\Control\Session Manager" -Value "PendingFileRenameOperations2") {
-	"Yes, registry key 'HKLM:\SYSTEM\CurrentControlSet\Control\Session Manager' contains 'PendingFileRenameOperations2'."
-	$PendingReboot = $true
+	$Reason += "registry key 'HKLM:\SYSTEM\CurrentControlSet\Control\Session Manager' contains 'PendingFileRenameOperations2'."
 }
 if (Test-RegistryValue -Path "HKLM:\SOFTWARE\Microsoft\Windows\CurrentVersion\RunOnce" -Value "DVDRebootSignal") {
-	"Yes, registry key 'HKLM:\SOFTWARE\Microsoft\Windows\CurrentVersion\RunOnce' contains 'DVDRebootSignal'."
-	$PendingReboot = $true
+	$Reason += "registry key 'HKLM:\SOFTWARE\Microsoft\Windows\CurrentVersion\RunOnce' contains 'DVDRebootSignal'."
 }
 if (Test-RegistryValue -Path "HKLM:\SYSTEM\CurrentControlSet\Services\Netlogon" -Value "JoinDomain") {
-	"Yes, registry key 'HKLM:\SYSTEM\CurrentControlSet\Services\Netlogon' contains 'JoinDomain'."
-	$PendingReboot = $true
+	$Reason += "registry key 'HKLM:\SYSTEM\CurrentControlSet\Services\Netlogon' contains 'JoinDomain'."
 }
 if (Test-RegistryValue -Path "HKLM:\SYSTEM\CurrentControlSet\Services\Netlogon" -Value "AvoidSpnSet") {
-	"Yes, registry key 'HKLM:\SYSTEM\CurrentControlSet\Services\Netlogon' contains 'AvoidSpnSet'."
-	$PendingReboot = $true
+	$Reason += "registry key 'HKLM:\SYSTEM\CurrentControlSet\Services\Netlogon' contains 'AvoidSpnSet'."
 }
-
-if ($PendingReboot -eq $false) { "No pending reboot" }
+if ($Reason -eq "") {
+	"✅ No pending reboot."
+} else {
+	"⚠️pending reboot ($Reason)."
+}
 exit 0 # success

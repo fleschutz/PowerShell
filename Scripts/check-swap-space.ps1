@@ -7,7 +7,7 @@
 	Specifies the minimum level (50 GB by default)
 .EXAMPLE
 	PS> ./check-swap-space
-	✔️ 1213 GB left for swap space (67 of 1280 GB used)
+	Swap space has 1826 GB left (1856 GB total)
 .LINK
 	https://github.com/fleschutz/PowerShell
 .NOTES
@@ -36,9 +36,9 @@ try {
 	} elseif ($Free -lt $MinLevel) {
         	$Reply = "Swap space has only $Free GB left to use! ($Used of $Total GB used, minimum is $MinLevel GB)"
 	} else {
-		$Reply = "Swap space has $Free GB left ($Total GB total)"
+		$Reply = "✅ Swap space has $Free GB left, $Total GB total."
 	}
-	& "$PSScriptRoot/give-reply.ps1" "$Reply"
+	"$Reply"
 	exit 0 # success
 } catch {
 	"⚠️ Error in line $($_.InvocationInfo.ScriptLineNumber): $($Error[0])"

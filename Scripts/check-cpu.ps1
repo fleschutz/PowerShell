@@ -22,17 +22,17 @@ try {
 		$Temp = [math]::round($Temp / 100.0, 1)
 	}
 	if ($Temp -gt 80) {
-		$Reply = "CPU is $($Temp)°C extremely hot!"
+		$Reply = "⚠️ CPU has $($Temp)°C - too hot!"
 	} elseif ($Temp -gt 50) {
-		$Reply = "CPU is $($Temp)°C hot."
+		$Reply = "✅ CPU has $($Temp)°C - hot."
 	} elseif ($Temp -gt 0) {
-		$Reply = "CPU is $($Temp)°C warm."
+		$Reply = "✅ CPU has $($Temp)°C - warm."
 	} elseif ($Temp -gt -20) {
-		$Reply = "CPU is $($Temp)°C cold."
+		$Reply = "✅ CPU has $($Temp)°C - cold."
 	} else {
-		$Reply = "CPU is $($Temp)°C extremely cold!"
+		$Reply = "⚠️ CPU has $($Temp)°C - too cold!"
 	}
-	& "$PSScriptRoot/give-reply.ps1" $Reply
+	"$Reply"
 	exit 0 # success
 } catch {
 	"⚠️ Error in line $($_.InvocationInfo.ScriptLineNumber): $($Error[0])"

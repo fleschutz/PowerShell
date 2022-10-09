@@ -21,7 +21,7 @@ try {
 		$OSversion = $OS.Version
 		$Reply = "$OSname for $OSarchitecture version $OSversion"
 	} 
-	& "$PSScriptRoot/give-reply.ps1" "$Reply"
+	"✅ $Reply"
 	exit 0 # success
 } catch {
 	"⚠️ Error in line $($_.InvocationInfo.ScriptLineNumber): $($Error[0])"

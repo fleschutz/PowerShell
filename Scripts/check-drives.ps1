@@ -11,6 +11,8 @@
 	Author: Markus Fleschutz | License: CC0
 #>
 
+param([int]$MinLevel = 50) # 50 GB minimum
+
 try {
 	$Drives = Get-PSDrive -PSProvider FileSystem 
 	foreach($Drive in $Drives) {
@@ -20,13 +22,13 @@ try {
 		[int]$Total = ($Used + $Free)
 
 		if ($Total -eq "0") {
-			$Reply = "Drive $($Drive.Name) is empty."
+			$Reply = "✅ Drive $($Drive.Name) is empty."
 		} elseif ($Free -lt $MinLevel) {
-			$Reply = "Drive $($Drive.Name) has only $Free GB left to use! $Used of $Total GB is in use."
+			$Reply = "⚠️ Drive $($Drive.Name) has only $Free GB left to use! $Used of $Total GB is in use."
 		} else {
-			$Reply = "Drive $($Drive.Name) has $($Free) GB left, $($Total) GB total."
+			$Reply = "✅ Drive $($Drive.Name) has $($Free) GB left, $($Total) GB total."
 		}
-		"* $Reply"
+		"$Reply"
 	}
 	exit 0 # success
 } catch {
