@@ -4,17 +4,17 @@
 .DESCRIPTION
 	This PowerShell script checks the free swap space.
 .PARAMETER MinLevel
-	Specifies the minimum level (50 GB by default)
+	Specifies the minimum level (10 GB by default)
 .EXAMPLE
 	PS> ./check-swap-space
-	Swap space has 1826 GB left (1856 GB total)
+	✅ Swap space has 1826 GB left, 1856 GB total.
 .LINK
 	https://github.com/fleschutz/PowerShell
 .NOTES
 	Author: Markus Fleschutz | License: CC0
 #>
 
-param([int]$MinLevel = 50) # minimum level in GB
+param([int]$MinLevel = 10) # minimum level in GB
 
 try {
 	if ($IsLinux) {
@@ -32,13 +32,12 @@ try {
 	}
 
 	if ($Total -eq "0") {
-        	$Reply = "No swap space configured!"
+        	"⚠️ No swap space configured."
 	} elseif ($Free -lt $MinLevel) {
-        	$Reply = "Swap space has only $Free GB left to use! ($Used of $Total GB used, minimum is $MinLevel GB)"
+        	"⚠️ Swap space has only $Free GB left, $Total GB total!"
 	} else {
-		$Reply = "✅ Swap space has $Free GB left, $Total GB total."
+		"✅ Swap space has $Free GB left, $Total GB total."
 	}
-	"$Reply"
 	exit 0 # success
 } catch {
 	"⚠️ Error in line $($_.InvocationInfo.ScriptLineNumber): $($Error[0])"
