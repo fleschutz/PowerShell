@@ -21,7 +21,7 @@ try {
 		$Result = $(free --mega | grep Swap:)
 		[int]$Total = $Result.subString(5,14)
 		[int]$Used = $Result.substring(20,13)
-		[int]$Free = $Result.substring(31,12)
+		[int]$Free = $Result.substring(32,11)
 	} else {
 		$Items = get-wmiobject -class "Win32_PageFileUsage" -namespace "root\CIMV2" -computername localhost 
 		foreach ($Item in $Items) { 
