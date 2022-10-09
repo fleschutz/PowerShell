@@ -2,7 +2,7 @@
 .SYNOPSIS
 	Checks the DNS resolution 
 .DESCRIPTION
-	This PowerShell script measures the DNS resolution speed by using 200 frequently used domain names.
+	This PowerShell script measures and prints the DNS resolution speed by using 200 frequently used domain names.
 .EXAMPLE
 	PS> ./check-dns
 .LINK
@@ -28,13 +28,13 @@ try {
 	$Average = [math]::round($NumRows / $Elapsed, 1)
 
 	if ($Average -gt 200.0) {
-		"✅ $Average DNS domain lookups per second - excellent"
+		"✅ DNS resolves $Average domains per second - excellent"
 	} elseif ($Average -gt 100.0) {
-		"✅ $Average DNS domain lookups per second - quite good"
+		"✅ DNS resolves $Average domains per second - quite good"
 	} elseif ($Average -gt 10.0) {
-		"✅ $Average DNS domain lookups per second - good"
+		"✅ DNS resolves $Average domains per second - good"
 	} else {  
-		"⚠️ $Average DNS domain lookups per second - poor"
+		"⚠️ DNS resolves $Average domains per second - poor"
 	}
 	exit 0 # success
 } catch {

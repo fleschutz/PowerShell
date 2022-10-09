@@ -8,7 +8,7 @@
 	Specifies the type of selftest: either short (default) or long
 .EXAMPLE
 	PS> ./check-smart-devices
-	✔️ short selftest started on S.M.A.R.T. device /dev/sda
+	✅ Started short selftest on S.M.A.R.T. device /dev/sda
 .LINK
 	https://github.com/fleschutz/PowerShell
 .NOTES
@@ -28,7 +28,7 @@ try {
 		$Array = $Device.split(" ")
 		$Device = $Array[0]
 		$Result = (sudo smartctl --test=$type $Device)
-		"✔️ $type selftest started on S.M.A.R.T. device $Device"
+		"✅ Started $type selftest on S.M.A.R.T. device $Device"
 	}
 	exit 0 # success
 } catch {
