@@ -22,15 +22,15 @@ try {
 		$Temp = [math]::round($Temp / 100.0, 1)
 	}
 	if ($Temp -gt 80) {
-		$Reply = "⚠️ CPU has $($Temp)°C - too hot!"
+		$Reply = "⚠️ CPU is too hot at $($Temp)°C!"
 	} elseif ($Temp -gt 50) {
-		$Reply = "✅ CPU has $($Temp)°C - hot."
+		$Reply = "✅ CPU is $($Temp)°C hot."
 	} elseif ($Temp -gt 0) {
-		$Reply = "✅ CPU has $($Temp)°C - warm."
+		$Reply = "✅ CPU is $($Temp)°C warm."
 	} elseif ($Temp -gt -20) {
-		$Reply = "✅ CPU has $($Temp)°C - cold."
+		$Reply = "✅ CPU is $($Temp)°C cold."
 	} else {
-		$Reply = "⚠️ CPU has $($Temp)°C - too cold!"
+		$Reply = "⚠️ CPU is too cold at $($Temp)°C!"
 	}
 	"$Reply"
 	exit 0 # success
