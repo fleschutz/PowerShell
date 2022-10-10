@@ -15,10 +15,10 @@ try {
 	$FoundOne = $false
 	$Connections = (Get-VPNConnection)
 	foreach($Connection in $Connections) {
-		"VPN $($Connection.Name) is $($Connection.ConnectionStatus)."
+		"✅ VPN $($Connection.Name) is $($Connection.ConnectionStatus)."
 		$FoundOne = $true
 	}
-	if (!$FoundOne) { throw "No VPN connection available" }
+	if (!$FoundOne) { "⚠️ No VPN connection configured" }
 	exit 0 # success
 } catch {
 	"⚠️ Error in line $($_.InvocationInfo.ScriptLineNumber): $($Error[0])"
