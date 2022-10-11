@@ -51,7 +51,7 @@ try {
 		$Cmd = "smartctl --all --json " + $Device 
 
 		Invoke-Expression $Cmd > $Filename
-		$DevInfo++
+		$DevNo++
 	}
 
 	"✔️  Done."
