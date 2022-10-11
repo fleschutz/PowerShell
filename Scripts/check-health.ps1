@@ -13,6 +13,7 @@
 
 & "$PSScriptRoot/check-uptime.ps1"
 & "$PSScriptRoot/check-operating-system.ps1"
+& "$PSScriptRoot/check-time-zone.ps1"
 & "$PSScriptRoot/check-swap-space.ps1"
 & "$PSScriptRoot/check-drives.ps1"
 & "$PSScriptRoot/check-cpu.ps1"

@@ -1,8 +1,8 @@
 ﻿<#
 .SYNOPSIS
-	Determines the time zone
+	Checks the time zone setting
 .DESCRIPTION
-	This PowerShell script determines and returns the current time zone.
+	This PowerShell script determines and prints the current time zone.
 .EXAMPLE
 	PS> ./check-time-zone
 .LINK
@@ -14,7 +14,7 @@
 try {
 	$TimeZone = (Get-Timezone)
 
-	& "$PSScriptRoot/give-reply.ps1" "It's $($TimeZone.DisplayName)"
+	"✅ Time zone is $($TimeZone.DisplayName)."
 	exit 0 # success
 } catch {
 	"⚠️ Error in line $($_.InvocationInfo.ScriptLineNumber): $($Error[0])"
