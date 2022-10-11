@@ -1,8 +1,8 @@
 ﻿<#
 .SYNOPSIS
-	Checks the VPN connections
+	Checks the VPN connection(s)
 .DESCRIPTION
-	This PowerShell script checks the status of all available VPN connections.
+	This PowerShell script queries and prints the status of any VPN connection.
 .EXAMPLE
 	PS> ./check-vpn
 .LINK
@@ -13,12 +13,16 @@
 
 try {
 	$FoundOne = $false
-	$Connections = (Get-VPNConnection)
-	foreach($Connection in $Connections) {
-		"✅ VPN $($Connection.Name) is $($Connection.ConnectionStatus)."
-		$FoundOne = $true
+	if ($IsLinux) {
+		# TODO
+	} else {
+		$Connections = (Get-VPNConnection)
+		foreach($Connection in $Connections) {
+			"✅ VPN $($Connection.Name) is $($Connection.ConnectionStatus)."
+			$FoundOne = $true
+		}
 	}
-	if (!$FoundOne) { "⚠️ No VPN connection configured" }
+	if (!$FoundOne) { "⚠️ No VPN connection." }
 	exit 0 # success
 } catch {
 	"⚠️ Error in line $($_.InvocationInfo.ScriptLineNumber): $($Error[0])"
