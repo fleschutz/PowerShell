@@ -23,41 +23,41 @@ function Test-RegistryValue { param([parameter(Mandatory=$true)][ValidateNotNull
 $Reason = ""
 
 if (Test-Path -Path "HKLM:\SOFTWARE\Microsoft\Windows\CurrentVersion\WindowsUpdate\Auto Update\RebootRequired") {
-	$Reason += "found registry key 'HKLM:\SOFTWARE\Microsoft\Windows\CurrentVersion\WindowsUpdate\Auto Update\RebootRequired' "
+	$Reason += ", found registry key: HKLM:\SOFTWARE\Microsoft\Windows\CurrentVersion\WindowsUpdate\Auto Update\RebootRequired"
 }
 if (Test-Path -Path "HKLM:\SOFTWARE\Microsoft\Windows\CurrentVersion\WindowsUpdate\Auto Update\PostRebootReporting") {
-	$Reason += "found registry key 'HKLM:\SOFTWARE\Microsoft\Windows\CurrentVersion\WindowsUpdate\Auto Update\PostRebootReporting' "
+	$Reason += ", found registry key: HKLM:\SOFTWARE\Microsoft\Windows\CurrentVersion\WindowsUpdate\Auto Update\PostRebootReporting"
 }
 if (Test-Path -Path "HKLM:\SOFTWARE\Microsoft\Windows\CurrentVersion\Component Based Servicing\RebootPending") {
-	$Reason += "found registry key 'HKLM:\SOFTWARE\Microsoft\Windows\CurrentVersion\Component Based Servicing\RebootPending' "
+	$Reason += ", found registry key: HKLM:\SOFTWARE\Microsoft\Windows\CurrentVersion\Component Based Servicing\RebootPending"
 }
 if (Test-Path -Path "HKLM:\SOFTWARE\Microsoft\ServerManager\CurrentRebootAttempts") {
-	$Reason += "found registry key 'HKLM:\SOFTWARE\Microsoft\ServerManager\CurrentRebootAttempts' "
+	$Reason += ", found registry key: HKLM:\SOFTWARE\Microsoft\ServerManager\CurrentRebootAttempts"
 }
 if (Test-RegistryValue -Path "HKLM:\Software\Microsoft\Windows\CurrentVersion\Component Based Servicing" -Value "RebootInProgress") {
-	$Reason += "registry 'HKLM:\Software\Microsoft\Windows\CurrentVersion\Component Based Servicing' = 'RebootInProgress' "
+	$Reason += ", registry key 'HKLM:\Software\Microsoft\Windows\CurrentVersion\Component Based Servicing' contains: RebootInProgress"
 }
 if (Test-RegistryValue -Path "HKLM:\Software\Microsoft\Windows\CurrentVersion\Component Based Servicing" -Value "PackagesPending") {
-	$Reason += "registry 'HKLM:\Software\Microsoft\Windows\CurrentVersion\Component Based Servicing' = 'PackagesPending' "
+	$Reason += ", registry key 'HKLM:\Software\Microsoft\Windows\CurrentVersion\Component Based Servicing' contains: PackagesPending"
 }
 if (Test-RegistryValue -Path "HKLM:\SYSTEM\CurrentControlSet\Control\Session Manager" -Value "PendingFileRenameOperations") {
-	$Reason += "registry 'HKLM:\SYSTEM\CurrentControlSet\Control\Session Manager' = 'PendingFileRenameOperations' "
+	$Reason += ", registry key 'HKLM:\SYSTEM\CurrentControlSet\Control\Session Manager' contains: PendingFileRenameOperations"
 }
 if (Test-RegistryValue -Path "HKLM:\SYSTEM\CurrentControlSet\Control\Session Manager" -Value "PendingFileRenameOperations2") {
-	$Reason += "registry 'HKLM:\SYSTEM\CurrentControlSet\Control\Session Manager' = 'PendingFileRenameOperations2' "
+	$Reason += ", registry key 'HKLM:\SYSTEM\CurrentControlSet\Control\Session Manager' contains: PendingFileRenameOperations2"
 }
 if (Test-RegistryValue -Path "HKLM:\SOFTWARE\Microsoft\Windows\CurrentVersion\RunOnce" -Value "DVDRebootSignal") {
-	$Reason += "registry 'HKLM:\SOFTWARE\Microsoft\Windows\CurrentVersion\RunOnce' = 'DVDRebootSignal' "
+	$Reason += ", registry key 'HKLM:\SOFTWARE\Microsoft\Windows\CurrentVersion\RunOnce' contains: DVDRebootSignal"
 }
 if (Test-RegistryValue -Path "HKLM:\SYSTEM\CurrentControlSet\Services\Netlogon" -Value "JoinDomain") {
-	$Reason += "registry 'HKLM:\SYSTEM\CurrentControlSet\Services\Netlogon' = 'JoinDomain' "
+	$Reason += ", registry key 'HKLM:\SYSTEM\CurrentControlSet\Services\Netlogon' contains: JoinDomain"
 }
 if (Test-RegistryValue -Path "HKLM:\SYSTEM\CurrentControlSet\Services\Netlogon" -Value "AvoidSpnSet") {
-	$Reason += "registry 'HKLM:\SYSTEM\CurrentControlSet\Services\Netlogon' = 'AvoidSpnSet' "
+	$Reason += ", registry key 'HKLM:\SYSTEM\CurrentControlSet\Services\Netlogon' contains: AvoidSpnSet"
 }
 if ($Reason -eq "") {
 	"✅ No pending reboot."
 } else {
-	"⚠️ Pending reboot ($Reason)."
+	"⚠️ Pending reboot$Reason."
 }
 exit 0 # success
