@@ -20,7 +20,7 @@ param([string]$hosts = "amazon.com,bing.com,cnn.com,dropbox.com,facebook.com,goo
 try {
 	write-progress "Sending pings to $hosts..."
 	$HostsArray = $hosts.Split(",")
-	$Pings = test-connection -count 1 -computerName $HostsArray
+	$Pings = Test-Connection -count 1 -computerName $HostsArray
 
 	[int]$Min = 9999999
 	[int]$Max = 0
@@ -35,8 +35,8 @@ try {
 		if ($Latency -gt $Max) { $Max = $Latency }
 		$Avg += $Latency
 	}
-	$Avg = $Avg / $Pings.count
-	"✅ Ping is $($Avg)ms average, $($Min)ms minimum, $($Max)ms maximum."
+	$Avg /= $Pings.count
+	"✅ Ping is $($Avg)ms average, $($Min)ms min, $($Max)ms max."
 	exit 0 # success
 } catch {
 	"⚠️ Error in line $($_.InvocationInfo.ScriptLineNumber): $($Error[0])"
