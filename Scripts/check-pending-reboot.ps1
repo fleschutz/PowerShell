@@ -40,9 +40,9 @@ if (Test-RegistryValue -Path "HKLM:\Software\Microsoft\Windows\CurrentVersion\Co
 if (Test-RegistryValue -Path "HKLM:\Software\Microsoft\Windows\CurrentVersion\Component Based Servicing" -Value "PackagesPending") {
 	$Reason += ", found 'HKLM:\Software\Microsoft\Windows\CurrentVersion\Component Based Servicing' with 'PackagesPending' in registry"
 }
-if (Test-RegistryValue -Path "HKLM:\SYSTEM\CurrentControlSet\Control\Session Manager" -Value "PendingFileRenameOperations") {
-	$Reason += ", found 'HKLM:\SYSTEM\CurrentControlSet\Control\Session Manager' with 'PendingFileRenameOperations' in registry"
-}
+#if (Test-RegistryValue -Path "HKLM:\SYSTEM\CurrentControlSet\Control\Session Manager" -Value "PendingFileRenameOperations") {
+#	$Reason += ", found 'HKLM:\SYSTEM\CurrentControlSet\Control\Session Manager' with 'PendingFileRenameOperations' in registry"
+#}
 if (Test-RegistryValue -Path "HKLM:\SYSTEM\CurrentControlSet\Control\Session Manager" -Value "PendingFileRenameOperations2") {
 	$Reason += ", found 'HKLM:\SYSTEM\CurrentControlSet\Control\Session Manager' with 'PendingFileRenameOperations2' in registry"
 }
