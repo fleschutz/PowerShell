@@ -1,8 +1,8 @@
 ﻿<#
 .SYNOPSIS
-	Checks Outlook's Inbox 
+	Checks Outlook's inbox 
 .DESCRIPTION
-	This PowerShell script checks the inbox of Outlook for new mails.
+	This PowerShell script checks the inbox of Outlook for new/unread mails.
 .EXAMPLE
 	PS> ./check-outlook
 .LINK
@@ -17,21 +17,12 @@ try {
 	$Namespace = $Outlook.GetNameSpace("MAPI")
 	$Inbox = $Namespace.GetDefaultFolder(6) # 6 = olFolderInbox
 	[int]$Unread = 0
-	$Sender = ""
-	[switch]$SameSender = $true
 	foreach($Mail in $Inbox.Items) {
 		if ($Mail.Unread -eq $false) { continue }
+		"⚠️ New mail '$($Mail.Subject)' from $($Mail.SenderName)."
 		$Unread++
-		if ("$Sender" -eq "") { $Sender = $Mail.SenderName
-		} elseif ("$Sender" -ne "$($Mail.SenderName)") { $SameSender = $false }
-		$Subject = $Mail.Subject
 	}
-	if ($Unread -eq 0) {		$Reply = "No new mails."
-	} elseif ($Unread -eq 1) {	$Reply = "One new mail from $Sender regarding $Subject."
-	} elseif ($SameSender) {	$Reply = "$Unread new mails from $Sender."
-	} else {			$Reply = "$Unread new mails."
-	}
-	"$Reply"
+	if ($Unread -eq 0) { "✅ No new mails." }
 	exit 0 # success
 } catch {
 	"Sorry: $($Error[0])"
