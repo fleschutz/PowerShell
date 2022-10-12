@@ -31,7 +31,11 @@ function GetRAMType { param([int]$Type)
 	20 { return "DDR RAM" }
 	21 { return "DDR2 RAM" }
 	22 { return "DDR2 FB-DIMM" }
+	24 { return "DDR3 RAM" }
 	26 { return "DDR4 RAM" }
+	27 { return "DDR5 RAM" }
+	28 { return "DDR6 RAM" }
+	29 { return "DDR7 RAM" }
 	default { return "RAM" }
 	}
 }
