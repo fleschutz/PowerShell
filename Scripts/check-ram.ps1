@@ -41,19 +41,23 @@ function GetRAMType { param([int]$Type)
 }
 
 try {
-	$Banks = Get-WmiObject -Class Win32_PhysicalMemory
-	foreach ($Bank in $Banks) {
-		$Capacity = $Bank.Capacity / (1024 * 1024 * 1024)
-		$Type = GetRAMType $Bank.SMBIOSMemoryType
-		$Speed = $Bank.Speed
-		[float]$Voltage = $Bank.ConfiguredVoltage / 1000.0
-		$Vendor = $Bank.Manufacturer
-		if ("$($Bank.BankLabel)" -ne "") {
-			$BankName = $Bank.BankLabel
-		} else {
-			$BankName = $Bank.DeviceLocator
+	if ($IsLinux) {
+		# TODO
+	} else {
+		$Banks = Get-WmiObject -Class Win32_PhysicalMemory
+		foreach ($Bank in $Banks) {
+			$Capacity = $Bank.Capacity / (1024 * 1024 * 1024)
+			$Type = GetRAMType $Bank.SMBIOSMemoryType
+			$Speed = $Bank.Speed
+			[float]$Voltage = $Bank.ConfiguredVoltage / 1000.0
+			$Vendor = $Bank.Manufacturer
+			if ("$($Bank.BankLabel)" -ne "") {
+				$Location = $Bank.BankLabel
+			} else {
+				$Location = $Bank.DeviceLocator
+			}
+			"✅ $($Capacity)GB $Type ($($Speed)MHz, $($Voltage)V, $Vendor) in $Location bank."
 		}
-		"✅ $($Capacity)GB $Type ($($Speed)MHz, $($Voltage)V, $Vendor) in $BankName bank."
 	}
 	exit 0 # success
 } catch {
