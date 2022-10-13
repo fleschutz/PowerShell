@@ -48,8 +48,12 @@ try {
 		$Speed = $Bank.Speed
 		[float]$Voltage = $Bank.ConfiguredVoltage / 1000.0
 		$Vendor = $Bank.Manufacturer
-		$BankName = $Bank.DeviceLocator
-		"✅ $($Capacity)GB $Type ($($Speed)MHz, $($Voltage)V, $Vendor) in bank $BankName."
+		if ("$($Bank.BankLabel)" -ne "") {
+			$BankName = $Bank.BankLabel
+		} else {
+			$BankName = $Bank.DeviceLocator
+		}
+		"✅ $($Capacity)GB $Type ($($Speed)MHz, $($Voltage)V, $Vendor) in $BankName bank."
 	}
 	exit 0 # success
 } catch {
