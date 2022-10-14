@@ -56,7 +56,7 @@ try {
 			} else {
 				$Location = $Bank.DeviceLocator
 			}
-			"✅ $($Capacity)GB $Type ($($Speed)MHz, $($Voltage)V, $Vendor) at $Location."
+			"✅ $($Capacity)GB $Type ($($Speed)MHz, $($Voltage)V) by $Vendor at $Location."
 		}
 	}
 	exit 0 # success
