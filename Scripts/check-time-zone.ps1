@@ -12,9 +12,11 @@
 #>
 
 try {
-	$TimeZone = (Get-Timezone)
-
-	"✅ Time zone is $($TimeZone.DisplayName)."
+	[system.threading.thread]::currentThread.currentCulture = [system.globalization.cultureInfo]"en-US"
+	$Time = $((Get-Date).ToShortTimeString())
+	$TZ = (Get-Timezone)
+	if ($TZ.SupportsDaylightSavingTime) { $DST="+01DST" } else { $DST="" }
+	"✅ $Time $($TZ.Id) (UTC+$($TZ.BaseUtcOffset) $DST)."
 	exit 0 # success
 } catch {
 	"⚠️ Error in line $($_.InvocationInfo.ScriptLineNumber): $($Error[0])"
