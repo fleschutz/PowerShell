@@ -31,12 +31,12 @@ try {
 		} 
 	}
 
-	if ($Total -eq "0") {
-        	"⚠️ No swap space."
-	} elseif ($Free -lt $MinLevel) {
-        	"⚠️ Swap space has only $Free GB of $Total GB left to use!"
-	} else {
+	if ($Free -ge $MinLevel) {
 		"✅ Swap space has $Free GB of $Total GB left."
+	} elseif ($Total -gt 0) {
+		"⚠️ Swap space has only $Free GB of $Total GB left to use!"
+	} else {
+        	"⚠️ No swap space!"	
 	}
 	exit 0 # success
 } catch {
