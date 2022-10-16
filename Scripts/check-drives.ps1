@@ -2,7 +2,7 @@
 .SYNOPSIS
 	Checks the free space of all drives
 .DESCRIPTION
-	This PowerShell script checks all drives for free space left (20 GB by default).
+	This PowerShell script checks all drives for free space left (10 GB by default).
 .PARAMETER MinLevel
 	Specifies the minimum warning level (10 GB by default)
 .EXAMPLE
@@ -18,17 +18,18 @@ param([int]$MinLevel = 10) # 10 GB minimum
 try {
 	$Drives = Get-PSDrive -PSProvider FileSystem 
 	foreach($Drive in $Drives) {
-		$DriveDetails = (Get-PSDrive $Drive.Name)
-		[int]$Free = (($DriveDetails.Free / 1024) / 1024) / 1024
-		[int]$Used = (($DriveDetails.Used / 1024) / 1024) / 1024
+		$ID = $Drive.Name
+		$Details = (Get-PSDrive $ID)
+		[int]$Free = $Details.Free / 1GB
+ 		[int]$Used = $Details.Used / 1GB
 		[int]$Total = ($Used + $Free)
 
 		if ($Total -eq "0") {
-			"✅ Drive $($Drive.Name) is empty."
+			"✅ Drive $ID is empty."
 		} elseif ($Free -lt $MinLevel) {
-			"⚠️ Drive $($Drive.Name) has only $Free GB left to use! $Used of $Total GB is in use."
+			"⚠️ Drive $ID has only $Free GB of $Total GB left to use!"
 		} else {
-			"✅ Drive $($Drive.Name) has $($Free) GB left, $($Total) GB total."
+			"✅ Drive $ID has $Free GB of $Total GB left."
 		}
 	}
 	exit 0 # success

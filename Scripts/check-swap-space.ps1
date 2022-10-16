@@ -7,7 +7,7 @@
 	Specifies the minimum level (10 GB by default)
 .EXAMPLE
 	PS> ./check-swap-space
-	✅ Swap space has 1826 GB left, 1856 GB total.
+	✅ Swap space has 1826 GB of 1856 GB left.
 .LINK
 	https://github.com/fleschutz/PowerShell
 .NOTES
@@ -23,7 +23,7 @@ try {
 		[int]$Used = $Result.substring(20,13)
 		[int]$Free = $Result.substring(32,11)
 	} else {
-		$Items = get-wmiobject -class "Win32_PageFileUsage" -namespace "root\CIMV2" -computername localhost 
+		$Items = Get-WmiObject -class "Win32_PageFileUsage" -namespace "root\CIMV2" -computername localhost 
 		foreach ($Item in $Items) { 
 			[int]$Total = $Item.AllocatedBaseSize
 			[int]$Used = $Item.CurrentUsage
@@ -34,9 +34,9 @@ try {
 	if ($Total -eq "0") {
         	"⚠️ No swap space."
 	} elseif ($Free -lt $MinLevel) {
-        	"⚠️ Swap space has only $Free GB left, $Total GB total!"
+        	"⚠️ Swap space has only $Free GB of $Total GB left to use!"
 	} else {
-		"✅ Swap space has $Free GB left, $Total GB total."
+		"✅ Swap space has $Free GB of $Total GB left."
 	}
 	exit 0 # success
 } catch {
