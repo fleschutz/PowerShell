@@ -17,12 +17,10 @@
 & "$PSScriptRoot/check-ram.ps1"
 & "$PSScriptRoot/check-swap-space.ps1"
 & "$PSScriptRoot/check-time-zone.ps1"
+& "$PSScriptRoot/check-smart-devices.ps1" 
 & "$PSScriptRoot/check-drives.ps1"
 & "$PSScriptRoot/check-dns.ps1"
 & "$PSScriptRoot/check-ping.ps1"
 & "$PSScriptRoot/check-vpn.ps1"
-if ($IsLinux) {
-	& "$PSScriptRoot/check-smart-devices.ps1" 
-}
 & "$PSScriptRoot/check-pending-reboot.ps1"
 exit 0 # success
