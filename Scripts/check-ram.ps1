@@ -50,13 +50,13 @@ try {
 			$Type = GetRAMType $Bank.SMBIOSMemoryType
 			$Speed = $Bank.Speed
 			[float]$Voltage = $Bank.ConfiguredVoltage / 1000.0
-			$Vendor = $Bank.Manufacturer
+			$Manufacturer = $Bank.Manufacturer
 			if ("$($Bank.BankLabel)" -ne "") {
 				$Location = $Bank.BankLabel
 			} else {
 				$Location = $Bank.DeviceLocator
 			}
-			"✅ $($Capacity)GB $Type ($($Speed)MHz, $($Voltage)V) by $Vendor at $Location."
+			"✅ $($Capacity)GB $Type ($($Speed)MHz, $($Voltage)V) at $Location by $Manufacturer."
 		}
 	}
 	exit 0 # success
