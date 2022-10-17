@@ -16,7 +16,7 @@ try {
 	$Time = $((Get-Date).ToShortTimeString())
 	$TZ = (Get-Timezone)
 	if ($TZ.SupportsDaylightSavingTime) { $DST=" & +01:00:00 DST" } else { $DST="" }
-	"✅ $Time in $($TZ.Id) (UTC+$($TZ.BaseUtcOffset)$DST)"
+	"✅ $Time in $($TZ.Id) (UTC+$($TZ.BaseUtcOffset)$DST)."
 	exit 0 # success
 } catch {
 	"⚠️ Error in line $($_.InvocationInfo.ScriptLineNumber): $($Error[0])"
