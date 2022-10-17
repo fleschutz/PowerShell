@@ -27,7 +27,9 @@ try {
 		Write-Progress "⏳ Step 3/3 - Querying S.M.A.R.T devices..."
 		$Array = $Device.split(" ")
 		$Device = $Array[0]
-		if ($IsLinux) {
+		if ("$Device" -eq "#") {
+			continue
+		} elseif ($IsLinux) {
 			$Details = (sudo smartctl --all --json $Device) | ConvertFrom-Json
 		} else {
 			$Details = (smartctl --all --json $Device) | ConvertFrom-Json
@@ -39,7 +41,7 @@ try {
 		$PowerOn = $Details.power_cycle_count
 		$Hours = $Details.power_on_time.hours
 		if ($Details.smart_status.passed) { $Status = "passed" } else { $Status = "NOT PASSED" }
-		"✅ Device $ModelName (SMART $Type), $($Capacity)GB, $($PowerOn)x on, $($Hours)h, $($Temp)°C, $Status"
+		"✅ SMART device $ModelName ($Type), $($Capacity)GB, $($PowerOn)x on, $($Hours) hours, $($Temp)°C, $Status"
 	}
 	exit 0 # success
 } catch {
