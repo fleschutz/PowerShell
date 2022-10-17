@@ -30,20 +30,19 @@ function GetCPUTemperatureInCelsius {
 }
 
 try {
-	$Temp = GetCPUTemperatureInCelsius
-	if ($Temp -eq 99999.9) {
-		"⚠️ CPU temperature query is unsupported."
-	} elseif ($Temp -gt 80) {
-		"⚠️ CPU is too hot at $($Temp)°C!"
-	} elseif ($Temp -gt 50) {
-		"✅ CPU is $($Temp)°C hot."
-	} elseif ($Temp -gt 0) {
-		"✅ CPU is $($Temp)°C warm."
-	} elseif ($Temp -gt -20) {
-		"✅ CPU is $($Temp)°C cold."
+	$Details = Get-WmiObject -Class Win32_Processor
+	$DeviceName = $Details.Name.trim()
+	$Celsius = GetCPUTemperatureInCelsius
+	if ($Celsius -eq 99999.9) {
+		$Temp = "no temperature"
+	} elseif ($Celsius -gt 50) {
+		$Temp = "$($Celsius)°C hot"
+	} elseif ($Celsius -gt 0) {
+		$Temp = "$($Celsius)°C warm"
 	} else {
-		"⚠️ CPU is too cold at $($Temp)°C!"
-	}
+		$Temp = "$($Celsius)°C cold"
+	} 
+	"✅ $DeviceName ($($Details.DeviceID), $($Details.MaxClockSpeed)MHz, $Temp)"
 	exit 0 # success
 } catch {
 	"⚠️ Error in line $($_.InvocationInfo.ScriptLineNumber): $($Error[0])"
