@@ -19,11 +19,11 @@ param([string]$text = "`nHello World`n-----------`n* PowerShell is powerful - fu
 
 try {
 	$Random = New-Object System.Random
-
 	$text -split '' | ForEach-Object {
 		Write-Host -noNewline $_
 		Start-Sleep -milliseconds $(1 + $Random.Next($speed))
 	}
+	Write-Host ""
 	exit 0 # success
 } catch {
 	"⚠️ Error in line $($_.InvocationInfo.ScriptLineNumber): $($Error[0])"

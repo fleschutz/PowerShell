@@ -21,12 +21,13 @@ try {
 	[xml]$Content = (Invoke-WebRequest -URI $RSS_URL -useBasicParsing).Content
 	[int]$Count = 1
 	foreach ($Item in $Content.rss.channel.item) {
-		"→ $($Item.title)"
+#		"→ $($Item.title)"
+		& "$PSScriptRoot/write-typewriter.ps1" "→ $($Item.title)" 30 # ms speed
 		if ($Count++ -eq $MaxCount) { break }
 	}
 	$Source = $Content.rss.channel.title
 	$Date = $Content.rss.channel.pubDate
-	"  Source: $Source (as of $Date)"
+	"  Updated: $Date by: $Source"
 	exit 0 # success
 } catch {
 	"⚠️ Error in line $($_.InvocationInfo.ScriptLineNumber): $($Error[0])"
