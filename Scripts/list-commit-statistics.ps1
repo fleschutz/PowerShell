@@ -18,19 +18,19 @@
 param([string]$RepoDir = "$PWD")
 
 try {
-	"⏳ Step 1/4 - Searching for Git executable..."
+	Write-Progress "⏳ Step 1/4 - Searching for Git executable..."
 	$null = (git --version)
 	if ($lastExitCode -ne "0") { throw "Can't execute 'git' - make sure Git is installed and available" }
 
 	$RepoDirName = (Get-Item "$RepoDir").Name
-	"⏳ Step 2/4 - Checking folder 📂$RepoDirName..."
+	Write-Progress "⏳ Step 2/4 - Checking folder 📂$RepoDirName..."
 	if (-not(test-path "$RepoDir" -pathType container)) { throw "Can't access directory: $RepoDir" }
 
-	"⏳ Step 3/4 - Fetching updates..."
+	Write-Progress "⏳ Step 3/4 - Fetching updates..."
 	& git -C "$RepoDir" fetch --all --quiet
 	if ($lastExitCode -ne "0") { throw "'git fetch' failed with exit code $lastExitCode" }
 
-	"⏳ Step 4/4 - Querying commits by author (without merges)..."
+	Write-Progress "⏳ Step 4/4 - Querying commits..."
 	" "
 	"Commits Author"
 	"------- ------"
