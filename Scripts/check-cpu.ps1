@@ -42,7 +42,7 @@ try {
 	} else {
 		$Temp = "$($Celsius)°C cold"
 	} 
-	"✅ $DeviceName ($($Details.DeviceID), $($Details.MaxClockSpeed)MHz, $Temp)"
+	"✅ $DeviceName ($($Details.DeviceID), $($Details.MaxClockSpeed)MHz, $Temp)."
 	exit 0 # success
 } catch {
 	"⚠️ Error in line $($_.InvocationInfo.ScriptLineNumber): $($Error[0])"
