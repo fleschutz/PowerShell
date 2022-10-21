@@ -35,13 +35,19 @@ try {
 			$Details = (smartctl --all --json $Device) | ConvertFrom-Json
 		}
 		$ModelName = $Details.model_name
-		$Type = $Details.device.type
-		[int]$Capacity = $Details.user_capacity.bytes / (1024 * 1024 * 1024)
+		$Protocol = $Details.device.protocol
+		[int]$GBytes = $Details.user_capacity.bytes / 1GB
+		if ($GBytes -eq 0) {
+			$Capacity = ""
+		} else {
+			$Capacity = " $GBytes GB,"
+		}
 		$Temp = $Details.temperature.current
+		$Firmware = $Details.firmware_version
 		$PowerOn = $Details.power_cycle_count
 		$Hours = $Details.power_on_time.hours
 		if ($Details.smart_status.passed) { $Status = "passed" } else { $Status = "NOT PASSED" }
-		"✅ SMART device $ModelName ($Type), $($Capacity)GB, $($PowerOn)x on, $($Hours) hours, $($Temp)°C, $Status."
+		"✅ SMART device $ModelName ($Protocol),$Capacity v$($Firmware), $($PowerOn)x on, $($Hours) hours, $($Temp)°C, $Status."
 	}
 	exit 0 # success
 } catch {
