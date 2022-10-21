@@ -1,8 +1,8 @@
 ﻿<#
 .SYNOPSIS
-	Determines the uptime 
+	Check uptime 
 .DESCRIPTION
-	This PowerShell script determines and says the uptime by text-to-speech (TTS).
+	This PowerShell script queries and prints the uptime.
 .EXAMPLE
 	PS> ./check-uptime
 .LINK
@@ -16,8 +16,7 @@ try {
 		$Uptime = (get-uptime)
 	} else {
 		$BootTime = Get-WinEvent -ProviderName eventlog | Where-Object {$_.Id -eq 6005} | Select-Object TimeCreated -First 1 
-		$TimeNow = Get-Date 
-		$Uptime = New-TimeSpan -Start $BootTime.TimeCreated.Date -End $TimeNow
+		$Uptime = New-TimeSpan -Start $BootTime.TimeCreated.Date -End (Get-Date)
 	}
 	$Days = $Uptime.Days
 	$Hours = $Uptime.Hours
@@ -30,14 +29,14 @@ try {
 		$Reply += "$Days days, "
 	}
 	if ($Hours -eq "1") {
-		$Reply += "1 hour "
+		$Reply += "1 hour, "
 	} elseif ($Hours -ne "0") {
-		$Reply += "$Hours hours "
+		$Reply += "$Hours hours, "
 	}
 	if ($Minutes -eq "1") {
-		$Reply += "and 1 minute"
-	} elseif ($Minutes -ne "0") {
-		$Reply += "and $Minutes minutes"
+		$Reply += "1 minute"
+	} else {
+		$Reply += "$Minutes minutes"
 	}
 	"✅ $Reply."
 	exit 0 # success
