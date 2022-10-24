@@ -55,9 +55,9 @@ if (Test-RegistryValue -Path "HKLM:\SYSTEM\CurrentControlSet\Services\Netlogon" 
 if (Test-RegistryValue -Path "HKLM:\SYSTEM\CurrentControlSet\Services\Netlogon" -Value "AvoidSpnSet") {
 	$Reason += ", found 'HKLM:\SYSTEM\CurrentControlSet\Services\Netlogon' with 'AvoidSpnSet' in registry"
 }
-if ($Reason -eq "") {
-	"✅ No pending reboot."
+if ($Reason -ne "") {
+	"⚠️ Pending reboot ($($Reason.substring(2)))."	
 } else {
-	"⚠️ Pending reboot$Reason."
+	"✅ No pending reboot."
 }
 exit 0 # success
