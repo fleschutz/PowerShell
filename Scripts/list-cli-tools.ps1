@@ -189,6 +189,7 @@ function ListTools {
 	CheckFor mktemp	"--version"
 	CheckFor mount	"--version"
 	CheckFor MpCmdRun "-h"
+	CheckFor netsh  ""
 	CheckFor nice	"--version"
 	CheckFor nohup	"--version"
 	CheckFor nroff	"--version"

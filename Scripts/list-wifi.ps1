@@ -1,10 +1,10 @@
 ﻿<#
 .SYNOPSIS
-	Lists Bluetooth devices
+	Lists WIFI
 .DESCRIPTION
-	This PowerShell script lists all Bluetooth devices connected to the computer.
+	This PowerShell script lists the WIFI networks.
 .EXAMPLE
-	PS> ./list-bluetooth-devices
+	PS> ./list-wifi
 .LINK
 	https://github.com/fleschutz/PowerShell
 .NOTES
@@ -12,7 +12,7 @@
 #>
 
 try {
-	Get-PnpDevice | Where-Object {$_.Class -eq "Bluetooth"}
+	& netsh wlan show profile
 	exit 0 # success
 } catch {
 	"⚠️ Error in line $($_.InvocationInfo.ScriptLineNumber): $($Error[0])"
