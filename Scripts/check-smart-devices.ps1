@@ -5,7 +5,7 @@
 	This PowerShell script queries and prints your S.M.A.R.T. HDD/SSD devices.
 .EXAMPLE
 	PS> ./check-smart-devices
-	✅ Device HFM256GD3JX016N via NVMe, 238GB, 126x on, 71h, 29°C, passed.
+	✅ Device HFM256GD3JX016N (238GB) via NVMe, 29°C, 71 hours, 126x on, selftest passed.
 .LINK
 	https://github.com/fleschutz/PowerShell
 .NOTES
@@ -46,8 +46,8 @@ try {
 		$Firmware = $Details.firmware_version
 		$PowerOn = $Details.power_cycle_count
 		$Hours = $Details.power_on_time.hours
-		if ($Details.smart_status.passed) { $Status = "passed" } else { $Status = "NOT PASSED" }
-		"✅ Device $ModelName $($Capacity)via $Protocol, v$($Firmware), $($PowerOn)x on, $($Hours) hours, $($Temp)°C, $Status."
+		if ($Details.smart_status.passed) { $Status = "passed" } else { $Status = "FAILED" }
+		"✅ Device $ModelName $($Capacity)via $Protocol, $($Temp)°C, $($Hours) hours, $($PowerOn)x on, v$($Firmware), selftest $Status."
 	}
 	exit 0 # success
 } catch {
