@@ -13,15 +13,19 @@
 
 try {
 	if ($IsLinux) {
-		$Details = (uname -sr)
+		$Summary = (uname -sr)
 	} else {
+		[system.threading.thread]::currentthread.currentculture = [system.globalization.cultureinfo]"en-US"
 		$OS = Get-WmiObject -class Win32_OperatingSystem
-		$OSname = $OS.Caption
-		$OSarchitecture = $OS.OSArchitecture
-		$OSversion = $OS.Version
-		$Details = "$OSname for $OSarchitecture version $OSversion"
+		$Name = $OS.Caption
+		$Architecture = $OS.OSArchitecture
+		$Version = $OS.Version
+
+	      $OSDetails = Get-CimInstance Win32_OperatingSystem
+	      $InstallDate = $OSDetails.InstallDate
+		$Summary = "$Name for $Architecture v$Version, installed on $($InstallDate.ToShortDateString())"
 	} 
-	"✅ Running $Details."
+	"✅ Running $Summary."
 	exit 0 # success
 } catch {
 	"⚠️ Error in line $($_.InvocationInfo.ScriptLineNumber): $($Error[0])"
