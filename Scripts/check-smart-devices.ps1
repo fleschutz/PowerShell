@@ -5,7 +5,7 @@
 	This PowerShell script queries and prints your S.M.A.R.T. HDD/SSD devices.
 .EXAMPLE
 	PS> ./check-smart-devices
-	✅ Device HFM256GD3JX016N (238GB) via NVMe, 29°C, 71 hours, 126x on, selftest passed.
+	✅ Device HFM256GD3JX016N (256GB) via NVMe, 29°C, 71 hours, 126x on, selftest passed.
 .LINK
 	https://github.com/fleschutz/PowerShell
 .NOTES
@@ -36,11 +36,11 @@ try {
 		}
 		$ModelName = $Details.model_name
 		$Protocol = $Details.device.protocol
-		[int]$GBytes = $Details.user_capacity.bytes / 1GB
+		[int]$GBytes = $Details.user_capacity.bytes / (1000 * 1000 * 1000)
 		if ($GBytes -eq 0) {
 			$Capacity = ""
 		} else {
-			$Capacity = "($GBytes GB) "
+			$Capacity = "($($GBytes)GB) "
 		}
 		$Temp = $Details.temperature.current
 		$Firmware = $Details.firmware_version
