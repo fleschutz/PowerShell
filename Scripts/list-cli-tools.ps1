@@ -190,6 +190,7 @@ function ListTools {
 	CheckFor mount	"--version"
 	CheckFor MpCmdRun "-h"
 	CheckFor netsh  ""
+	CheckFor netstat ""
 	CheckFor nice	"--version"
 	CheckFor nohup	"--version"
 	CheckFor nroff	"--version"
