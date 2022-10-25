@@ -216,6 +216,7 @@ function ListTools {
 	CheckFor regedit "--version"
 	CheckFor replace "--version"
 	CheckFor robocopy "--version"
+	CheckFor route  ""
 	CheckFor rsh	""
 	CheckFor rsync	"--version"
 	CheckFor rundll32 "--version"

@@ -1,10 +1,10 @@
 ﻿<#
 .SYNOPSIS
-	Lists user accounts
+	Lists network routes
 .DESCRIPTION
-	This PowerShell script lists the user accounts on the local computer.
+	This PowerShell script lists the network routes on the local computer.
 .EXAMPLE
-	PS> ./list-user-accounts
+	PS> ./list-network-routes
 .LINK
 	https://github.com/fleschutz/PowerShell
 .NOTES
@@ -12,7 +12,7 @@
 #>
 
 try {
-	& net user
+	& route print
 	exit 0 # success
 } catch {
 	"⚠️ Error in line $($_.InvocationInfo.ScriptLineNumber): $($Error[0])"
