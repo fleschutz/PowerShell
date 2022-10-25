@@ -1,8 +1,8 @@
 ﻿<#
 .SYNOPSIS
-	Checks the free space of all drives
+	Checks the drive space
 .DESCRIPTION
-	This PowerShell script checks all drives for free space left (10 GB by default).
+	This PowerShell script checks all drives for free space left.
 .PARAMETER MinLevel
 	Specifies the minimum warning level (10 GB by default)
 .EXAMPLE
@@ -24,10 +24,12 @@ try {
  		[int]$Used = $Details.Used / 1GB
 		[int]$Total = ($Used + $Free)
 
-		if ($Total -eq "0") {
+		if ($Total -eq 0) {
 			"✅ Drive $ID is empty."
 		} elseif ($Free -lt $MinLevel) {
 			"⚠️ Drive $ID has only $Free GB of $Total GB left to use!"
+		} elseif ($Used -lt $Free) {
+			"✅ Drive $ID uses $Used GB of $Total GB."
 		} else {
 			"✅ Drive $ID has $Free GB of $Total GB left."
 		}
