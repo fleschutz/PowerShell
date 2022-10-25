@@ -1,11 +1,11 @@
 ﻿<#
 .SYNOPSIS
-	Checks S.M.A.R.T. devices
+	Checks SMART devices
 .DESCRIPTION
 	This PowerShell script queries and prints your S.M.A.R.T. HDD/SSD devices.
 .EXAMPLE
 	PS> ./check-smart-devices
-	✅ Device HFM256GD3JX016N (SMART nvme), 238GB, 126x on, 71h, 29°C, passed.
+	✅ Device HFM256GD3JX016N via NVMe, 238GB, 126x on, 71h, 29°C, passed.
 .LINK
 	https://github.com/fleschutz/PowerShell
 .NOTES
@@ -13,7 +13,7 @@
 #>
 
 try {
-	Write-Progress "⏳ Step 1/3 - Searching for 'smartctl'..."
+	Write-Progress "⏳ Step 1/3 - Searching for smartctl executable..."
 	$Result = (smartctl --version)
 	if ($lastExitCode -ne "0") { throw "Can't execute 'smartctl' - make sure smartmontools are installed" }
 
@@ -47,7 +47,7 @@ try {
 		$PowerOn = $Details.power_cycle_count
 		$Hours = $Details.power_on_time.hours
 		if ($Details.smart_status.passed) { $Status = "passed" } else { $Status = "NOT PASSED" }
-		"✅ SMART device $ModelName ($Protocol),$Capacity v$($Firmware), $($PowerOn)x on, $($Hours) hours, $($Temp)°C, $Status."
+		"✅ Device $ModelName via $Protocol,$Capacity v$($Firmware), $($PowerOn)x on, $($Hours) hours, $($Temp)°C, $Status."
 	}
 	exit 0 # success
 } catch {
