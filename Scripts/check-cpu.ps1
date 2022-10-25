@@ -30,11 +30,9 @@ function GetCPUTemperatureInCelsius {
 }
 
 try {
-	$Details = Get-WmiObject -Class Win32_Processor
-	$DeviceName = $Details.Name.trim()
 	$Celsius = GetCPUTemperatureInCelsius
 	if ($Celsius -eq 99999.9) {
-		$Temp = "no temperature"
+		$Temp = "no temp"
 	} elseif ($Celsius -gt 50) {
 		$Temp = "$($Celsius)°C hot"
 	} elseif ($Celsius -gt 0) {
@@ -42,7 +40,14 @@ try {
 	} else {
 		$Temp = "$($Celsius)°C cold"
 	} 
-	"✅ $DeviceName ($($Details.DeviceID), $($Details.MaxClockSpeed)MHz, $Temp)."
+
+	if ($IsLinux) {
+		"✅ CPU is $Temp."
+	} else {
+		$Details = Get-WmiObject -Class Win32_Processor
+		$DeviceName = $Details.Name.trim()
+		"✅ $DeviceName ($($Details.DeviceID), $($Details.MaxClockSpeed)MHz, $Temp)."
+	}
 	exit 0 # success
 } catch {
 	"⚠️ Error in line $($_.InvocationInfo.ScriptLineNumber): $($Error[0])"
