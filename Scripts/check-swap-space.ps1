@@ -7,7 +7,7 @@
 	Specifies the minimum level (10 GB by default)
 .EXAMPLE
 	PS> ./check-swap-space
-	✅ Swap space has 1826 GB of 1856 GB left.
+	✅ Swap space uses 63 GB of 1856 GB.
 .LINK
 	https://github.com/fleschutz/PowerShell
 .NOTES
@@ -17,6 +17,7 @@
 param([int]$MinLevel = 10) # minimum level in GB
 
 try {
+	[int]$Total = [int]$Used = [int]$Free = 0
 	if ($IsLinux) {
 		$Result = $(free --mega | grep Swap:)
 		[int]$Total = $Result.subString(5,14)
@@ -25,18 +26,20 @@ try {
 	} else {
 		$Items = Get-WmiObject -class "Win32_PageFileUsage" -namespace "root\CIMV2" -computername localhost 
 		foreach ($Item in $Items) { 
-			[int]$Total = $Item.AllocatedBaseSize
-			[int]$Used = $Item.CurrentUsage
-			[int]$Free = ($Total - $Used)
+			$Total = $Item.AllocatedBaseSize
+			$Used = $Item.CurrentUsage
+			$Free = ($Total - $Used)
 		} 
 	}
 
-	if ($Free -ge $MinLevel) {
-		"✅ Swap space has $Free GB of $Total GB left."
-	} elseif ($Total -gt 0) {
+	if ($Total -eq 0) {
+        	"⚠️ No swap space!"
+	} elseif ($Free -lt $MinLevel) {
 		"⚠️ Swap space has only $Free GB of $Total GB left to use!"
+	} elseif ($Used -lt $Free) {
+		"✅ Swap space uses $Used GB of $Total GB."
 	} else {
-        	"⚠️ No swap space!"	
+		"✅ Swap space has $Free GB of $Total GB left."
 	}
 	exit 0 # success
 } catch {
