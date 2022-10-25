@@ -19,7 +19,7 @@ param([string]$RepoDir = "$PWD")
 try {
 	$StopWatch = [system.diagnostics.stopwatch]::startNew()
 
-	"⏳ Step 1/4 - Searching for Git executable..."
+	Write-Host "⏳ Step 1/4 - Searching for Git executable...  " -noNewline
 	& git --version
 	if ($lastExitCode -ne "0") { throw "Can't execute 'git' - make sure Git is installed and available" }
 
@@ -27,7 +27,7 @@ try {
 	"⏳ Step 2/4 - Checking folder 📂$RepoDirName..."
 	if (-not(Test-Path "$RepoDir" -pathType container)) { throw "Can't access folder '$RepoDir' - maybe a typo or missing folder permissions?" }
 
-	"⏳ Step 3/4 - Cleaning Git repository from untracked files..."
+	"⏳ Step 3/4 - Cleaning repository from untracked files..."
 	& git -C "$RepoDir" clean -xfd -f # to delete all untracked files in the main repo
 	if ($lastExitCode -ne "0") {
 		"'git clean' failed with exit code $lastExitCode, retrying once..."
@@ -35,7 +35,7 @@ try {
 		if ($lastExitCode -ne "0") { throw "'git clean' failed with exit code $lastExitCode" }
 	}
 
-	"⏳ Step 4/4 - Cleaning Git submodules from untracked files..."
+	"⏳ Step 4/4 - Cleaning submodules from untracked files..."
 	& git -C "$RepoDir" submodule foreach --recursive git clean -xfd -f # to delete all untracked files in the submodules
 	if ($lastExitCode -ne "0") { throw "'git clean' in the submodules failed with exit code $lastExitCode" }
 
