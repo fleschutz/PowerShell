@@ -40,14 +40,14 @@ try {
 		if ($GBytes -eq 0) {
 			$Capacity = ""
 		} else {
-			$Capacity = " $GBytes GB,"
+			$Capacity = "($GBytes GB) "
 		}
 		$Temp = $Details.temperature.current
 		$Firmware = $Details.firmware_version
 		$PowerOn = $Details.power_cycle_count
 		$Hours = $Details.power_on_time.hours
 		if ($Details.smart_status.passed) { $Status = "passed" } else { $Status = "NOT PASSED" }
-		"✅ Device $ModelName via $Protocol,$Capacity v$($Firmware), $($PowerOn)x on, $($Hours) hours, $($Temp)°C, $Status."
+		"✅ Device $ModelName $($Capacity)via $Protocol, v$($Firmware), $($PowerOn)x on, $($Hours) hours, $($Temp)°C, $Status."
 	}
 	exit 0 # success
 } catch {
