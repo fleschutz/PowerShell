@@ -57,6 +57,7 @@ function ListTools {
 	CheckFor ar	"--version"
 	CheckFor arch	"--version"
 	CheckFor arecord "--version"
+	CheckFor arp    ""
 	CheckFor at	""
 	CheckFor attrib	""
 	CheckFor awk	"--version"
