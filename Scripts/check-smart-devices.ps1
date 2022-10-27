@@ -12,6 +12,22 @@
 	Author: Markus Fleschutz | License: CC0
 #>
 
+function Bytes2String { param([int64]$Bytes)
+	if ($Bytes -lt 1000) { return "$Bytes bytes" }
+	$Bytes /= 1000
+	if ($Bytes -lt 1000) { return "$($Bytes)KB" }
+	$Bytes /= 1000
+	if ($Bytes -lt 1000) { return "$($Bytes)MB" }
+	$Bytes /= 1000
+	if ($Bytes -lt 1000) { return "$($Bytes)GB" }
+	$Bytes /= 1000
+	if ($Bytes -lt 1000) { return "$($Bytes)TB" }
+	$Bytes /= 1000
+	if ($Bytes -lt 1000) { return "$($Bytes)PB" }
+	$Bytes /= 1000
+	if ($Bytes -lt 1000) { return "$($Bytes)EB" }
+}
+
 try {
 	Write-Progress "⏳ Step 1/3 - Searching for smartctl executable..."
 	$Result = (smartctl --version)
@@ -36,18 +52,18 @@ try {
 		}
 		$ModelName = $Details.model_name
 		$Protocol = $Details.device.protocol
-		[int]$GBytes = $Details.user_capacity.bytes / (1000 * 1000 * 1000)
-		if ($GBytes -eq 0) {
-			$Capacity = ""
+		[int64]$GBytes = $Details.user_capacity.bytes
+		if ($GBytes -gt 0) {
+			$Capacity = "$(Bytes2String $GBytes) "
 		} else {
-			$Capacity = "($($GBytes)GB) "
+			$Capacity = ""
 		}
 		$Temp = $Details.temperature.current
 		$Firmware = $Details.firmware_version
 		$PowerOn = $Details.power_cycle_count
 		$Hours = $Details.power_on_time.hours
 		if ($Details.smart_status.passed) { $Status = "passed" } else { $Status = "FAILED" }
-		"✅ Device $ModelName $($Capacity)via $Protocol, $($Temp)°C, $($Hours) hours, $($PowerOn)x on, v$($Firmware), selftest $Status."
+		"✅ $($Capacity)$ModelName via $Protocol, $($Temp)°C, $($Hours) hours, $($PowerOn)x on, v$($Firmware), selftest $Status."
 	}
 	exit 0 # success
 } catch {
