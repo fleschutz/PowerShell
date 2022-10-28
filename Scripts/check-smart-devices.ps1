@@ -2,10 +2,10 @@
 .SYNOPSIS
 	Checks SMART devices
 .DESCRIPTION
-	This PowerShell script queries and prints your S.M.A.R.T. HDD/SSD devices.
+	This PowerShell script queries S.M.A.R.T. HDD/SSD device details and prints it.
 .EXAMPLE
 	PS> ./check-smart-devices
-	✅ Device HFM256GD3JX016N (256GB) via NVMe, 29°C, 71 hours, 126x on, selftest passed.
+	✅ 1TB Samsung SSD 970 EVO via NVMe, 37°C, 2388 hours, 289x on, v2B2QEXE7, selftest passed.
 .LINK
 	https://github.com/fleschutz/PowerShell
 .NOTES
@@ -47,8 +47,14 @@ try {
 			continue
 		} elseif ($IsLinux) {
 			$Details = (sudo smartctl --all --json $Device) | ConvertFrom-Json
+			if ($lastExitCode -ne "0") { throw "'sudo smartctl --all --json $Device' exited with error code $lastExitCode" }
+			$null = (sudo smartctl --test=short $Device)
+			if ($lastExitCode -ne "0") { throw "'sudo smartctl --test=short $Device' exited with error code $lastExitCode" }
 		} else {
 			$Details = (smartctl --all --json $Device) | ConvertFrom-Json
+			if ($lastExitCode -ne "0") { throw "'smartctl --all --json $Device' exited with error code $lastExitCode" }
+			$null = (smartctl --test=short $Device)
+			if ($lastExitCode -ne "0") { throw "'smartctl --test=short $Device' exited with error code $lastExitCode" }
 		}
 		$ModelName = $Details.model_name
 		$Protocol = $Details.device.protocol
