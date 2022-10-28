@@ -12,16 +12,16 @@ Why use PowerShell?
 
 ✔️ it's **cross-platform** - available for Linux, Mac OS and Windows
 
-✔️ it's **open-source and free** - see the Github repository at https://github.com/PowerShell/PowerShell 
+✔️ it's **open-source and free** - see the Github repository at: https://github.com/PowerShell/PowerShell 
 
-✔️ it's **easy to learn** - see the tutorial for beginners at https://www.guru99.com/powershell-tutorial.html
+✔️ it's **easy to learn** - see the tutorial for beginners at: https://www.guru99.com/powershell-tutorial.html
 
-✔️ it's **fully documented** - see the official PowerShell documentation at https://docs.microsoft.com/en-us/powershell/
+✔️ it's **fully documented** - see the official PowerShell documentation at: https://docs.microsoft.com/en-us/powershell/
 
 
 How to get PowerShell?
 ----------------------
-* **On Windows** PowerShell is preinstalled. **However,** the default execution policy is "restricted" which disallows the execution of scripts! To change this, open the *Windows PowerShell (Administrator)* console and enter:
+* **On Windows** PowerShell is preinstalled. **However,** the execution policy is 'restricted' by default! To allow script execution: open the *Windows PowerShell (Administrator)* console and enter:
    ```
    PS> Set-ExecutionPolicy -ExecutionPolicy Bypass -Scope CurrentUser
    ```
