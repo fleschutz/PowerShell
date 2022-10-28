@@ -16,7 +16,7 @@ Why use PowerShell?
 
 ✔️ it's **easy to learn** - see the tutorial for beginners at: https://www.guru99.com/powershell-tutorial.html
 
-✔️ it's **fully documented** - see the official PowerShell documentation at: https://docs.microsoft.com/en-us/powershell/
+✔️ it's **fully documented** - see the PowerShell documentation at: https://docs.microsoft.com/en-us/powershell/
 
 
 How to get PowerShell?
