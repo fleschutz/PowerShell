@@ -48,7 +48,7 @@ try {
 	& git -C "$RepoDir" pull --recurse-submodules
 	if ($lastExitCode -ne "0") { throw "'git pull' failed with exit code $lastExitCode" }
 
-	"⏳ (6/6) - Updating submodules..."	
+	"⏳ (6/6) Updating submodules..."	
 	& git -C "$RepoDir" submodule update --init --recursive
 	if ($lastExitCode -ne "0") { throw "'git submodule update' failed with exit code $lastExitCode" }
 
