@@ -42,7 +42,7 @@ How to get the PowerShell Scripts?
 How to execute PowerShell Scripts?
 ----------------------------------
 1. In the Windows desktop: right-click the script and select: *Execute with PowerShell*
-2. In a command-line interface (CLI, e.g. *Windows Terminal*, either local or remote via SSH) by typing: `./NAME_OF_SCRIPT`.
+2. In a command-line interface (CLI, e.g. *Windows Terminal*, either local or remote via SSH) by typing: `./<FILENAME_OF_SCRIPT>`.
 3. By connecting a context menu item with a script.
 4. By voice control, e.g. see repo [talk2windows](https://github.com/fleschutz/talk2windows) for more information.
 5. By using automation software, e.g. [Jenkins](https://www.jenkins.io).
