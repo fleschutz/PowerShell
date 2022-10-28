@@ -1,6 +1,6 @@
 ﻿<#
 .SYNOPSIS
-	Checks the computer health 
+	Checks the system health 
 .DESCRIPTION
 	This PowerShell script checks some health parameter of the local computer.
 .EXAMPLE
@@ -16,6 +16,7 @@
 & "$PSScriptRoot/check-time-zone.ps1"
 & "$PSScriptRoot/check-cpu.ps1"
 & "$PSScriptRoot/check-ram.ps1"
+& "$PSScriptRoot/check-gpu.ps1"
 & "$PSScriptRoot/check-smart-devices.ps1"
 & "$PSScriptRoot/check-swap-space.ps1"
 & "$PSScriptRoot/check-drives.ps1"
