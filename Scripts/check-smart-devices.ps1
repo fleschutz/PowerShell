@@ -52,9 +52,7 @@ try {
 			if ($lastExitCode -ne "0") { throw "'sudo smartctl --test=short $Device' exited with error code $lastExitCode" }
 		} else {
 			$Details = (smartctl --all --json $Device) | ConvertFrom-Json
-			if ($lastExitCode -ne "0") { throw "'smartctl --all --json $Device' exited with error code $lastExitCode" }
 			$null = (smartctl --test=short $Device)
-			if ($lastExitCode -ne "0") { throw "'smartctl --test=short $Device' exited with error code $lastExitCode" }
 		}
 		$ModelName = $Details.model_name
 		$Protocol = $Details.device.protocol
