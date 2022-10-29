@@ -5,7 +5,6 @@
         This PowerShell script queries GPU details and prints it.
 .EXAMPLE
         PS> ./check-gpu
-        CPU is 30.3°C warm.
 .LINK
         https://github.com/fleschutz/PowerShell
 .NOTES
@@ -25,16 +24,20 @@ function Bytes2String { param([int64]$Bytes)
 }
 
 try {
-	$Details = Get-WmiObject Win32_VideoController
-	$Model = $Details.Caption
-	$RAMSize = $Details.AdapterRAM
-	$ResWidth = $Details.CurrentHorizontalResolution
-	$ResHeight = $Details.CurrentVerticalResolution
-	$BitsPerPixel = $Details.CurrentBitsPerPixel
-	$RefreshRate = $Details.CurrentRefreshRate
-	$DriverVersion = $Details.DriverVersion
-	$Status = $Details.Status
-	 "✅ $Model ($(Bytes2String $RAMSize), $ResWidth x $ResHeight pixels, $BitsPerPixel bit, $RefreshRate Hz, driver $DriverVersion, status $Status)."
+	if ($IsLinux) {
+		# TODO
+	} else {
+		$Details = Get-WmiObject Win32_VideoController
+		$Model = $Details.Caption
+		$RAMSize = $Details.AdapterRAM
+		$ResWidth = $Details.CurrentHorizontalResolution
+		$ResHeight = $Details.CurrentVerticalResolution
+		$BitsPerPixel = $Details.CurrentBitsPerPixel
+		$RefreshRate = $Details.CurrentRefreshRate
+		$DriverVersion = $Details.DriverVersion
+		$Status = $Details.Status
+		 "✅ $Model ($(Bytes2String $RAMSize), $ResWidth x $ResHeight pixels, $BitsPerPixel bit, $RefreshRate Hz, driver $DriverVersion, status $Status)."
+	}
 } catch {
         "⚠️ Error in line $($_.InvocationInfo.ScriptLineNumber): $($Error[0])"
         exit 1
