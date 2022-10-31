@@ -119,7 +119,7 @@ try {
 	$StopWatch = [system.diagnostics.stopwatch]::startNew()
 
 	$PasswordBase64 = [System.Convert]::ToBase64String($Password)
-	EnryptFile "$Path" -Algorithm AES -KeyAsPlainText $PasswordBase64 -RemoveSource
+	EncryptFile "$Path" -Algorithm AES -KeyAsPlainText $PasswordBase64 -RemoveSource
 
 	[int]$Elapsed = $StopWatch.Elapsed.TotalSeconds
 	"✔️  file encrypted in $Elapsed sec"
