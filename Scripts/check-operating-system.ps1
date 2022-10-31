@@ -1,8 +1,8 @@
 ﻿<#
 .SYNOPSIS
-	Determines the exact OS version 
+	Query OS details
 .DESCRIPTION
-	This PowerShell script determines and lists the exact operating system version.
+	This PowerShell script queries and lists operating system details.
 .EXAMPLE
 	PS> ./check-operating-system
 .LINK
@@ -13,19 +13,18 @@
 
 try {
 	if ($IsLinux) {
-		$Summary = (uname -sr)
+		"✅ $(uname -sr)."
 	} else {
-		[system.threading.thread]::currentthread.currentculture = [system.globalization.cultureinfo]"en-US"
 		$OS = Get-WmiObject -class Win32_OperatingSystem
 		$Name = $OS.Caption
 		$Architecture = $OS.OSArchitecture
 		$Version = $OS.Version
 
-	      $OSDetails = Get-CimInstance Win32_OperatingSystem
-	      $InstallDate = $OSDetails.InstallDate
-		$Summary = "$Name for $Architecture v$Version, installed on $($InstallDate.ToShortDateString())"
+		[system.threading.thread]::currentthread.currentculture = [system.globalization.cultureinfo]"en-US"
+		$OSDetails = Get-CimInstance Win32_OperatingSystem
+		$InstallDate = $OSDetails.InstallDate
+		"✅ $Name ($Architecture) v$Version, installed $($InstallDate.ToShortDateString())"
 	} 
-	"✅ Running $Summary."
 	exit 0 # success
 } catch {
 	"⚠️ Error in line $($_.InvocationInfo.ScriptLineNumber): $($Error[0])"
