@@ -17,13 +17,15 @@ try {
 	} else {
 		$OS = Get-WmiObject -class Win32_OperatingSystem
 		$Name = $OS.Caption
-		$Architecture = $OS.OSArchitecture
+		$Arch = $OS.OSArchitecture
 		$Version = $OS.Version
 
 		[system.threading.thread]::currentthread.currentculture = [system.globalization.cultureinfo]"en-US"
 		$OSDetails = Get-CimInstance Win32_OperatingSystem
+		$BuildNo = $OSDetails.BuildNumber
+		$Serial = $OSDetails.SerialNumber
 		$InstallDate = $OSDetails.InstallDate
-		"✅ $Name ($Architecture) v$Version, installed $($InstallDate.ToShortDateString())"
+		"✅ $Name ($Arch, v$Version, serial $Serial), installed $($InstallDate.ToShortDateString())."
 	} 
 	exit 0 # success
 } catch {
