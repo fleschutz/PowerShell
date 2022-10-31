@@ -22,29 +22,33 @@ param([string]$FullName = "", [string]$EmailAddress = "", [string]$FavoriteEdito
 try {
 	$StopWatch = [system.diagnostics.stopwatch]::startNew()
 		
-	"⏳ Step 1/4 - Searching for Git executable..."
+	Write-Host "⏳ (1/5) Searching for Git executable...  " -noNewline
 	& git --version
 	if ($lastExitCode -ne "0") { throw "Can't execute 'git' - make sure Git is installed and available" }
 
-	"⏳ Step 2/4 - Input details..."
+	"⏳ (2/5) Asking for user details..."
 	if ($FullName -eq "") { $FullName = read-host "Enter your full name" }
 	if ($EmailAddress -eq "") { $EmailAddress = read-host "Enter your e-mail address"}
-	if ($FavoriteEditor -eq "") { $FavoriteEditor = read-host "Enter your favorite text editor (emacs,nano,vi,vim,...)" }
+	if ($FavoriteEditor -eq "") { $FavoriteEditor = read-host "Enter your favorite text editor (atom,emacs,nano,subl,vi,vim,...)" }
 
-	"⏳ Step 3/4 - Saving basic settings (name,email,editor,symlinks,etc.)..."
+	"⏳ (3/5) Saving personal settings (name,email,editor)..."
 	& git config --global user.name $FullName
 	& git config --global user.email $EmailAddress
 	& git config --global core.editor $FavoriteEditor
-	& git config --global core.autocrlf false
-	& git config --global core.symlinks true
-	& git config --global core.longpaths true
-	& git config --global http.sslVerify false
-	& git config --global init.defaultBranch main
-	& git config --global merge.renamelimit 99999
-	& git config --global pull.rebase false
 	if ($lastExitCode -ne "0") { throw "'git config' failed with exit code $lastExitCode" }
 
-	"⏳ Step 4/4 - Saving basic shortcuts (co,br,ci,st,pl,ps,mrg,chp,ls,smu)..."
+	"⏳ (4/5) Saving basic settings (autocrlf,symlinks,longpaths,etc.)..."
+	& git config --global core.autocrlf false          # don't change newlines
+	& git config --global core.symlinks true           # enable support for symbolic link files
+	& git config --system core.longpaths true          # enable support for long file paths
+	& git config --global http.sslVerify false
+	& git config --global init.defaultBranch main      # set the default branch name to 'main'
+	& git config --global merge.renamelimit 99999
+	& git config --global pull.rebase false
+	& git config --global fetch.parallel 0             # enable parallel fetching to improve the speed
+	if ($lastExitCode -ne "0") { throw "'git config' failed with exit code $lastExitCode" }
+
+	"⏳ (5/5) Saving shortcut settings (co,br,ci,st,pl,ps,mrg,chp,ls,smu)..."
 	& git config --global alias.co "checkout"
 	& git config --global alias.br "branch"
 	& git config --global alias.ci "commit"
