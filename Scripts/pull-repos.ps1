@@ -18,22 +18,22 @@ param([string]$ParentDir = "$PWD")
 try {
 	$StopWatch = [system.diagnostics.stopwatch]::startNew()
 
-	"⏳ Step 1 - Searching for Git executable..."
+	Write-Host "⏳ (1) Searching for Git executable...  " -NoNewline
 	& git --version
 	if ($lastExitCode -ne "0") { throw "Can't execute 'git' - make sure Git is installed and available" }
 
 	$ParentDirName = (Get-Item "$ParentDir").Name
-	"⏳ Step 2 - Checking folder 📂$ParentDirName..."
+	Write-Host "⏳ (29 Checking folder 📂$ParentDirName...  " -NoNewline
 	if (-not(Test-Path "$ParentDir" -pathType container)) { throw "Can't access folder: $ParentDir" }
 	$Folders = (Get-ChildItem "$ParentDir" -attributes Directory)
 	$NumFolders = $Folders.Count
-	"Found $NumFolders subfolders, pulling one by one..."
+	"found $NumFolders subfolders"
 
 	[int]$Step = 3
 	[int]$Failed = 0
 	foreach ($Folder in $Folders) {
 		$FolderName = (Get-Item "$Folder").Name
-		"⏳ Step $Step/$($NumFolders + 2) - Pulling into 📂$FolderName... "
+		"⏳ ($Step/$($NumFolders + 2)) Pulling into 📂$FolderName... "
 
 		& git -C "$Folder" pull --recurse-submodules --jobs=4
 		if ($lastExitCode -ne "0") { $Failed++; write-warning "'git pull' in 📂$FolderName failed" }
