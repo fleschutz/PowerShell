@@ -47,9 +47,7 @@ try {
 			continue
 		} elseif ($IsLinux) {
 			$Details = (sudo smartctl --all --json $Device) | ConvertFrom-Json
-			if ($lastExitCode -ne "0") { throw "'sudo smartctl --all --json $Device' exited with error code $lastExitCode" }
 			$null = (sudo smartctl --test=short $Device)
-			if ($lastExitCode -ne "0") { throw "'sudo smartctl --test=short $Device' exited with error code $lastExitCode" }
 		} else {
 			$Details = (smartctl --all --json $Device) | ConvertFrom-Json
 			$null = (smartctl --test=short $Device)
