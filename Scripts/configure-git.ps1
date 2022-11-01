@@ -22,22 +22,22 @@ param([string]$FullName = "", [string]$EmailAddress = "", [string]$FavoriteEdito
 try {
 	$StopWatch = [system.diagnostics.stopwatch]::startNew()
 		
-	Write-Host "⏳ (1/5) Searching for Git executable...  " -noNewline
+	Write-Host "⏳ (1/6) Searching for Git executable...  " -noNewline
 	& git --version
 	if ($lastExitCode -ne "0") { throw "Can't execute 'git' - make sure Git is installed and available" }
 
-	"⏳ (2/5) Asking for details..."
+	"⏳ (2/6) Asking for details..."
 	if ($FullName -eq "") { $FullName = read-host "Enter your full name" }
 	if ($EmailAddress -eq "") { $EmailAddress = read-host "Enter your e-mail address"}
 	if ($FavoriteEditor -eq "") { $FavoriteEditor = read-host "Enter your favorite text editor (atom,emacs,nano,subl,vi,vim,...)" }
 
-	"⏳ (3/5) Saving personal settings (name,email,editor)..."
+	"⏳ (3/6) Saving personal settings (name,email,editor)..."
 	& git config --global user.name $FullName
 	& git config --global user.email $EmailAddress
 	& git config --global core.editor $FavoriteEditor
 	if ($lastExitCode -ne "0") { throw "'git config' failed with exit code $lastExitCode" }
 
-	"⏳ (4/5) Saving basic settings (autocrlf,symlinks,longpaths,etc.)..."
+	"⏳ (4/6) Saving basic settings (autocrlf,symlinks,longpaths,etc.)..."
 	& git config --global core.autocrlf false          # don't change newlines
 	& git config --global core.symlinks true           # enable support for symbolic link files
 	& git config --global core.longpaths true          # enable support for long file paths
@@ -48,7 +48,7 @@ try {
 	& git config --global fetch.parallel 0             # enable parallel fetching to improve the speed
 	if ($lastExitCode -ne "0") { throw "'git config' failed with exit code $lastExitCode" }
 
-	"⏳ (5/5) Saving shortcut settings (co,br,ci,st,pl,ps,mrg,chp,ls,smu)..."
+	"⏳ (5/6) Saving shortcuts (git co, git br, etc.)..."
 	& git config --global alias.co "checkout"
 	& git config --global alias.br "branch"
 	& git config --global alias.ci "commit"
@@ -61,11 +61,12 @@ try {
 	& git config --global alias.smu "submodule update --init"
 	if ($lastExitCode -ne "0") { throw "'git config' failed" }
 
-	[int]$Elapsed = $StopWatch.Elapsed.TotalSeconds
-	"✔️ saved your Git configuration in $Elapsed sec, it's now:"
-
+	"⏳ (6/6) Listing your Git settings..."
 	& git config --list
 	if ($lastExitCode -ne "0") { throw "'git config --list' failed with exit code $lastExitCode" }
+
+	[int]$Elapsed = $StopWatch.Elapsed.TotalSeconds
+	"✔️ configured Git in $Elapsed sec."
 	exit 0 # success
 } catch {
 	"⚠️ Error in line $($_.InvocationInfo.ScriptLineNumber)): $($Error[0])"
