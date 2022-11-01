@@ -26,7 +26,7 @@ try {
 	& git --version
 	if ($lastExitCode -ne "0") { throw "Can't execute 'git' - make sure Git is installed and available" }
 
-	"⏳ (2/5) Asking for user details..."
+	"⏳ (2/5) Asking for details..."
 	if ($FullName -eq "") { $FullName = read-host "Enter your full name" }
 	if ($EmailAddress -eq "") { $EmailAddress = read-host "Enter your e-mail address"}
 	if ($FavoriteEditor -eq "") { $FavoriteEditor = read-host "Enter your favorite text editor (atom,emacs,nano,subl,vi,vim,...)" }
@@ -40,7 +40,7 @@ try {
 	"⏳ (4/5) Saving basic settings (autocrlf,symlinks,longpaths,etc.)..."
 	& git config --global core.autocrlf false          # don't change newlines
 	& git config --global core.symlinks true           # enable support for symbolic link files
-	& git config --system core.longpaths true          # enable support for long file paths
+	& git config --global core.longpaths true          # enable support for long file paths
 	& git config --global http.sslVerify false
 	& git config --global init.defaultBranch main      # set the default branch name to 'main'
 	& git config --global merge.renamelimit 99999
