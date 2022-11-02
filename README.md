@@ -230,32 +230,32 @@ Mega Collection of PowerShell Scripts
 📝 Scripts for Git
 -------------------
 
-| Script                                               | Description                                                        | Help                                    |
-| ---------------------------------------------------- | ------------------------------------------------------------------ | --------------------------------------- |
-| [build-repo.ps1](Scripts/build-repo.ps1)             | Builds a Git repository                                            | [Help](Docs/build-repo.md)              |
-| [build-repos.ps1](Scripts/build-repos.ps1)           | Builds all Git repositories in a folder                            | [Help](Docs/build-repos.md)             |
-| [check-repo.ps1](Scripts/check-repo.ps1)             | Checks a Git repository                                            | [Help](Docs/check-repo.md)              |
-| [clean-repo.ps1](Scripts/clean-repo.ps1)             | Cleans a Git repository from untracked files                       | [Help](Docs/clean-repo.md)              |
-| [clean-repos.ps1](Scripts/clean-repos.ps1)           | Cleans all Git repositories in a folder from untracked files       | [Help](Docs/clean-repos.md)             |
-| [clone-repos.ps1](Scripts/clone-repos.ps1)           | Clones well-known Git repositories                                 | [Help](Docs/clone-repos.md)             |
-| [configure-git.ps1](Scripts/configure-git.ps1)       | Sets up the Git user configuration                                 | [Help](Docs/configure-git.md)           |
-| [fetch-repo.ps1](Scripts/fetch-repo.ps1)             | Fetches updates for a Git repository                               | [Help](Docs/fetch-repo.md)              |
-| [fetch-repos.ps1](Scripts/fetch-repos.ps1)           | Fetches updates for all Git repositories in a folder               | [Help](Docs/fetch-repos.md)             |
-| [list-branches.ps1](Scripts/list-branches.ps1)       | Lists all branches in a Git repository                             | [Help](Docs/list-branches.md)           |
-| [list-commits.ps1](Scripts/list-commits.ps1)         | Lists all commits in a Git repository                              | [Help](Docs/list-commits.md)            |
-| [list-latest-tag.ps1](Scripts/list-latest-tag.ps1)   | Lists the latest tag on the current branch in a Git repository     | [Help](Docs/list-latest-tag.md)         |
-| [list-latest-tags.ps1](Scripts/list-latest-tags.ps1) | Lists the latests tags in all Git repositories under a directory   | [Help](Docs/list-latest-tags.md)        |
-| [list-repos.ps1](Scripts/list-repos.ps1)             | Lists the Git repositories in a folder                             | [Help](Docs/list-repos.md)              |
-| [list-submodules.ps1](Scripts/list-submodules.ps1)   | Lists the submodules in a Git repository                           | [Help](Docs/list-submodules.md)         |
-| [list-tags.ps1](Scripts/list-tags.ps1)               | Lists all tags in a Git repository                                 | [Help](Docs/list-tags.md)               |
-| [new-branch.ps1](Scripts/new-branch.ps1)             | Creates a new branch in a Git repository                           | [Help](Docs/new-branch.md)              |
-| [new-tag.ps1](Scripts/new-tag.ps1)                   | Creates a new tag in a Git repository                              | [Help](Docs/new-tag.md)                 |
-| [pick-commit.ps1](Scripts/pick-commit.ps1)           | Cherry-picks a Git commit into multiple branches                   | [Help](Docs/pick-commit.md)             |
-| [pull-repo.ps1](Scripts/pull-repo.ps1)               | Pulls updates for a Git repository                                 | [Help](Docs/pull-repo.md)               |
-| [pull-repos.ps1](Scripts/pull-repos.ps1)             | Pulls updates for all Git repositories in a folder                 | [Help](Docs/pull-repos.md)              |
-| [remove-tag.ps1](Scripts/remove-tag.ps1)             | Removes a tag in a Git repository                                  | [Help](Docs/remove-tag.md)              |
-| [switch-branch.ps1](Scripts/switch-branch.ps1)       | Switches the branch in a Git repository                            | [Help](Docs/switch-branch.md)           |
-| [sync-repo.ps1](Scripts/sync-repo.ps1)               | Synchronizes a Git repository by push & pull                       | [Help](Docs/sync-repo.md)               |
+| Script                                               | Description                                                                                       |
+| ---------------------------------------------------- | ------------------------------------------------------------------------------------------------- |
+| [build-repo.ps1](Scripts/build-repo.ps1)             | Builds a Git repository. [Read more...](Docs/build-repo.md)                                       |
+| [build-repos.ps1](Scripts/build-repos.ps1)           | Builds all Git repositories in a folder. [Read more...](Docs/build-repos.md)                      |
+| [check-repo.ps1](Scripts/check-repo.ps1)             | Checks a Git repository. [Read more...](Docs/check-repo.md)                                       |
+| [clean-repo.ps1](Scripts/clean-repo.ps1)             | Cleans a Git repository from untracked files. [Read more...](Docs/clean-repo.md)                  |
+| [clean-repos.ps1](Scripts/clean-repos.ps1)           | Cleans all Git repositories in a folder from untracked files. [Read more...](Docs/clean-repos.md) |
+| [clone-repos.ps1](Scripts/clone-repos.ps1)           | Clones well-known Git repositories. [Read more...](Docs/clone-repos.md)                           |
+| [configure-git.ps1](Scripts/configure-git.ps1)       | Sets up the Git user configuration. [Read more...](Docs/configure-git.md)                         |
+| [fetch-repo.ps1](Scripts/fetch-repo.ps1)             | Fetches updates for a Git repository. [Read more...](Docs/fetch-repo.md)                          |
+| [fetch-repos.ps1](Scripts/fetch-repos.ps1)           | Fetches updates for all Git repositories in a folder. [Read more...](Docs/fetch-repos.md)         |
+| [list-branches.ps1](Scripts/list-branches.ps1)       | Lists all branches in a Git repository. [Read more...](Docs/list-branches.md)                     |
+| [list-commits.ps1](Scripts/list-commits.ps1)         | Lists all commits in a Git repository. [Read more...](Docs/list-commits.md)                       |
+| [list-latest-tag.ps1](Scripts/list-latest-tag.ps1)   | Lists the latest tag on the current branch in a Git repository. [Read more...](Docs/list-latest-tag.md) |
+| [list-latest-tags.ps1](Scripts/list-latest-tags.ps1) | Lists the latests tags in all Git repositories under a directory. [Read more...](Docs/list-latest-tags.md) |
+| [list-repos.ps1](Scripts/list-repos.ps1)             | Lists the Git repositories in a folder. [Read more...](Docs/list-repos.md)                        |
+| [list-submodules.ps1](Scripts/list-submodules.ps1)   | Lists the submodules in a Git repository. [Read more...](Docs/list-submodules.md)                 |
+| [list-tags.ps1](Scripts/list-tags.ps1)               | Lists all tags in a Git repository. [Read more...](Docs/list-tags.md)                             |
+| [new-branch.ps1](Scripts/new-branch.ps1)             | Creates a new branch in a Git repository. [Read more...](Docs/new-branch.md)                      |
+| [new-tag.ps1](Scripts/new-tag.ps1)                   | Creates a new tag in a Git repository. [Read more...](Docs/new-tag.md)                            |
+| [pick-commit.ps1](Scripts/pick-commit.ps1)           | Cherry-picks a Git commit into multiple branches. [Read more...](Docs/pick-commit.md)             |
+| [pull-repo.ps1](Scripts/pull-repo.ps1)               | Pulls updates for a Git repository. [Read more...](Docs/pull-repo.md)                             |
+| [pull-repos.ps1](Scripts/pull-repos.ps1)             | Pulls updates for all Git repositories in a folder. [Read more...](Docs/pull-repos.md)            |
+| [remove-tag.ps1](Scripts/remove-tag.ps1)             | Removes a tag in a Git repository. [Read more...](Docs/remove-tag.md)                             |
+| [switch-branch.ps1](Scripts/switch-branch.ps1)       | Switches the branch in a Git repository. [Read more...](Docs/switch-branch.md)                    |
+| [sync-repo.ps1](Scripts/sync-repo.ps1)               | Synchronizes a Git repository by push & pull. [Read more...](Docs/sync-repo.md)                   |
 
 🔎 Scripts for PowerShell 
 ------------------------
