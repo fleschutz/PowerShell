@@ -216,15 +216,15 @@ Mega Collection of PowerShell Scripts
 ♻️ Scripts to Convert Files
 ---------------------------
 
-| Script                                                 | Description                                                        | Help                                  |
-| ------------------------------------------------------ | ------------------------------------------------------------------ | ------------------------------------- |
-| [convert-csv2txt.ps1](Scripts/convert-csv2txt.ps1)     | Converts a .CSV file to a text file                                | [Help](Docs/convert-csv2txt.md)       |
-| [convert-mysql2csv.ps1](Scripts/convert-mysql2csv.ps1) | Converts a MySQL database table to a .CSV file                     | [Help](Docs/convert-mysql2csv.md)     |
-| [convert-ps2bat.ps1](Scripts/convert-ps2bat.ps1)       | Converts a PowerShell script to a Batch script                     | [Help](Docs/convert-ps2bat.md)        |
-| [convert-ps2md.ps1](Scripts/convert-ps2md.ps1)         | Converts the comment-based help of a PowerShell script to Markdown | [Help](Docs/convert-ps2md.md)         |
-| [convert-sql2csv.ps1](Scripts/convert-sql2csv.ps1)     | Converts a SQL database table to a .CSV file                       | [Help](Docs/convert-sql2csv.md)       |
-| [convert-txt2wav.ps1](Scripts/convert-txt2wav.ps1)     | Converts text to a .WAV audio file                                 | [Help](Docs/convert-txt2wav.md)       |
-| [export-to-manuals.ps1](Scripts/export-to-manuals.ps1) | Exports all scripts as manuals                                     | [Help](Docs/export-to-manuals.md)     |
+| Script                                                 | Description                                                                                         |
+| ------------------------------------------------------ | --------------------------------------------------------------------------------------------------- |
+| [convert-csv2txt.ps1](Scripts/convert-csv2txt.ps1)     | Converts a .CSV file to a text file. [More >](Docs/convert-csv2txt.md)                              |
+| [convert-mysql2csv.ps1](Scripts/convert-mysql2csv.ps1) | Converts a MySQL database table to a .CSV file. [More >](Docs/convert-mysql2csv.md)                 |
+| [convert-ps2bat.ps1](Scripts/convert-ps2bat.ps1)       | Converts a PowerShell script to a Batch script. [More >](Docs/convert-ps2bat.md)                    |
+| [convert-ps2md.ps1](Scripts/convert-ps2md.ps1)         | Converts the comment-based help of a PowerShell script to Markdown. [More >](Docs/convert-ps2md.md) |
+| [convert-sql2csv.ps1](Scripts/convert-sql2csv.ps1)     | Converts a SQL database table to a .CSV file. [More >](Docs/convert-sql2csv.md)                     |
+| [convert-txt2wav.ps1](Scripts/convert-txt2wav.ps1)     | Converts text to a .WAV audio file. [More >](Docs/convert-txt2wav.md)                               |
+| [export-to-manuals.ps1](Scripts/export-to-manuals.ps1) | Exports all scripts as manuals. [More >](Docs/export-to-manuals.md)                                 |
 
 
 📝 Scripts for Git
