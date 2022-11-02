@@ -260,20 +260,20 @@ Mega Collection of PowerShell Scripts
 🔎 Scripts for PowerShell 
 ------------------------
 
-| Script                                                 | Description                                                        | Help                                  |
-| ------------------------------------------------------ | ------------------------------------------------------------------ | ------------------------------------- |
-| [daily-tasks.sh](Scripts/daily-tasks.sh)               | Execute PowerShell scripts automatically as daily tasks (Linux only) | [Help](Docs/daily-tasks.sh.md)      |
-| [introduce-powershell.ps1](Scripts/introduce-powershell.ps1) | Introduces PowerShell to new users                           | [Help](Docs/introduce-powershell.md)  |
-| [list-aliases.ps1](Scripts/list-aliases.ps1)           | Lists all PowerShell aliases                                       | [Help](Docs/list-aliases.md)          |
-| [list-automatic-variables.ps1](Scripts/list-automatic-variables.ps1) | Lists the automatic variables of PowerShell          | [Help](Docs/list-automatic-variables.md)|
-| [list-cheat-sheet.ps1](Scripts/list-cheat-sheet.ps1)   | Lists the PowerShell cheat sheet                                   | [Help](Docs/list-cheat-sheet.md)      |
-| [list-cmdlets.ps1](Scripts/list-cmdlets.ps1)           | Lists the PowerShell cmdlets                                       | [Help](Docs/list-cmdlets.md)          |
-| [list-console-colors.ps1](Scripts/list-console-colors.ps1) | Lists all console colors                                       | [Help](Docs/list-console-colors.md)   |
-| [list-modules.ps1](Scripts/list-modules.ps1)           | Lists the PowerShell modules                                       | [Help](Docs/list-modules.md)          |
-| [list-profiles.ps1](Scripts/list-profiles.ps1)         | Lists your PowerShell profiles                                     | [Help](Docs/list-profiles.md)         |
-| [list-scripts.ps1](Scripts/list-scripts.ps1)           | Lists all PowerShell scripts in this repository                    | [Help](Docs/list-scripts.md)          |
-| [new-script.ps1](Scripts/new-script.ps1)               | Creates a new PowerShell script                                    | [Help](Docs/new-script.md)            |
-| [set-profile.ps1](Scripts/set-profile.ps1)             | Updates your PowerShell user profile                               | [Help](Docs/set-profile.md)           |
+| Script                                                 | Description                                                                                            |
+| ------------------------------------------------------ | ------------------------------------------------------------------------------------------------------ |
+| [daily-tasks.sh](Scripts/daily-tasks.sh)               | Execute PowerShell scripts automatically as daily tasks (Linux only). [Read more...](Docs/daily-tasks.sh.md) |
+| [introduce-powershell.ps1](Scripts/introduce-powershell.ps1) | Introduces PowerShell to new users. [Read more...](Docs/introduce-powershell.md)                 |
+| [list-aliases.ps1](Scripts/list-aliases.ps1)           | Lists all PowerShell aliases. [Read more...](Docs/list-aliases.md)                                     |
+| [list-automatic-variables.ps1](Scripts/list-automatic-variables.ps1) | Lists the automatic variables of PowerShell. [Read more...](Docs/list-automatic-variables.md)|
+| [list-cheat-sheet.ps1](Scripts/list-cheat-sheet.ps1)   | Lists the PowerShell cheat sheet. [Read more...](Docs/list-cheat-sheet.md)                             |
+| [list-cmdlets.ps1](Scripts/list-cmdlets.ps1)           | Lists the PowerShell cmdlets. [Read more...](Docs/list-cmdlets.md)                                     |
+| [list-console-colors.ps1](Scripts/list-console-colors.ps1) | Lists all console colors. [Read more...](Docs/list-console-colors.md)                              |
+| [list-modules.ps1](Scripts/list-modules.ps1)           | Lists the PowerShell modules. [Read more...](Docs/list-modules.md)                                     |
+| [list-profiles.ps1](Scripts/list-profiles.ps1)         | Lists your PowerShell profiles. [Read more...](Docs/list-profiles.md)                                  |
+| [list-scripts.ps1](Scripts/list-scripts.ps1)           | Lists all PowerShell scripts in this repository. [Read more...](Docs/list-scripts.md)                  |
+| [new-script.ps1](Scripts/new-script.ps1)               | Creates a new PowerShell script. [Read more...](Docs/new-script.md)                                    |
+| [set-profile.ps1](Scripts/set-profile.ps1)             | Updates your PowerShell user profile. [Read more...](Docs/set-profile.md)                              |
 
 🛒 Various PowerShell Scripts 
 ------------------------------
