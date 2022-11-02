@@ -36,6 +36,8 @@ try {
         	"⚠️ No swap space!"
 	} elseif ($Free -lt $MinLevel) {
 		"⚠️ Swap space has only $Free GB of $Total GB left to use!"
+	} elseif ($Used -eq 0) {
+		"✅ Swap space of $Total GB is unused."
 	} elseif ($Used -lt $Free) {
 		"✅ Swap space uses $Used GB of $Total GB."
 	} else {
