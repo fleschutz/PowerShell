@@ -1,6 +1,6 @@
 ﻿<#
 .SYNOPSIS
-	Installs updates for the local machine (needs admin rights)
+	Installs software updates
 .DESCRIPTION
 	This PowerShell script installs updates for the local machine (needs admin rights).
 .EXAMPLE
@@ -11,30 +11,28 @@
 	Author: Markus Fleschutz | License: CC0
 #>
 
-
 try {
 	$StopWatch = [system.diagnostics.stopwatch]::startNew()
 
 	if ($IsLinux) {
-		"⏳ Step 1/4 - Fetching update infos for installed Debian packages..."
+		"⏳ (1/4) Fetching update infos for installed Debian packages..."
 		& sudo apt update
 
-		"⏳ Step 2/4 - Upgrading installed Debian packages..."
+		"⏳ (2/4) Upgrading installed Debian packages..."
 		& sudo apt upgrade --yes
 
-		"⏳ Step 3/4 - Removing obsolete Debian packages..."
+		"⏳ (3/4) Removing obsolete Debian packages..."
 		& sudo apt autoremove --yes
 
-		"⏳ Step 4/4 - Upgrading installed Snap packages..."
+		"⏳ (4/4) Upgrading installed Snap packages..."
 		& sudo snap refresh
 	} else {
-		"⏳ Step 1/2 - Fetching update infos..."
+		"⏳ (1/2) Fetching update infos..."
 		& winget upgrade
 
-		"⏳ Step 2/2 - Upgrading apps..."
+		"⏳ (2/2) Upgrading apps..."
 		& winget upgrade --all
 	}
-
 	[int]$Elapsed = $StopWatch.Elapsed.TotalSeconds
 	"✔️ installed updates in $Elapsed sec"
 	exit 0 # success
