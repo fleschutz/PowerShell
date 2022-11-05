@@ -19,9 +19,9 @@ Why use PowerShell?
 ✔️ it's **fully documented** - see the PowerShell documentation at: https://docs.microsoft.com/en-us/powershell/
 
 
-How to get PowerShell?
-----------------------
-* **On Windows** PowerShell is preinstalled. **However,** the execution policy is 'restricted' by default! To allow script execution: open the *Windows PowerShell (Administrator)* console and enter:
+How to install PowerShell?
+--------------------------
+* **On Windows** it's preinstalled. **However,** the execution policy is 'restricted' by default! To allow script execution: open the *Windows PowerShell (Administrator)* console and enter:
    ```
    PS> Set-ExecutionPolicy -ExecutionPolicy Bypass -Scope CurrentUser
    ```
