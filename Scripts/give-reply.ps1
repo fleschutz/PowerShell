@@ -23,20 +23,15 @@ function GetTempDir {
 }
 
 try {
-	# print reply on the console:
-	" ← $text"
-
-	# speak by text-to-speech (TTS):
-	if (!$IsLinux) {
-		$TTSVoice = New-Object -ComObject SAPI.SPVoice
-		foreach ($Voice in $TTSVoice.GetVoices()) {
-			if ($Voice.GetDescription() -like "*- English*") { $TTSVoice.Voice = $Voice }
+	Write-Host '“'$text' ”' # to write the reply on the console
+	if (!$IsLinux) { 
+		$TTS = New-Object -ComObject SAPI.SPVoice
+		foreach($Voice in $TTS.GetVoices()) {
+			if ($Voice.GetDescription() -like "*- English*") { $TTS.Voice = $Voice }
 		}
-		[void]$TTSVoice.Speak($text)
+		[void]$TTS.Speak($text)
 	}
-
-	# remember last reply:
-	"$text" > "$(GetTempDir)/last_reply_given.txt"
+	"$text" > "$(GetTempDir)/last_reply_given.txt" # to remember last reply
 	exit 0 # success
 } catch {
 	"⚠️ Error in line $($_.InvocationInfo.ScriptLineNumber): $($Error[0])"
