@@ -27,7 +27,7 @@ function CalculateFractal([float]$left, [float]$top, [float]$xside, [float]$ysid
 				$zy = $zoom * $zx * $zy + $cy
 				$zx = $tempx
 			} 
-			$global:buffer[$y * $maxx + $x] = $([char](65 + $count))
+			$global:buf[$y * $maxx + $x] = $([char](65 + $count))
 		} 
 	}
 }
@@ -41,20 +41,20 @@ $rui = $ui.rawui
 [float]$yside = 0.45 
 $buffer0 = ""
 1..($rui.MaxWindowSize.Width * $rui.MaxWindowSize.Height) | ForEach-Object { $buffer0 += " " }
-$global:buffer = $buffer0.ToCharArray()
+$global:buf = $buffer0.ToCharArray()
 
 while ($true) {
 	for ([float]$zoom = 4.0; $zoom -gt 1.1; $zoom -= 0.02) {
 		CalculateFractal $left $top $xside $yside $zoom
 		[console]::SetCursorPosition(0,0)
-		[string]$drawscreen = New-Object system.string($global:buffer, 0, $global:buffer.Length)
-		Write-Host -foreground green $drawscreen -noNewline
+		[string]$Screen = New-Object system.string($global:buf, 0, $global:buf.Length)
+		Write-Host -foreground green $Screen -noNewline
 	}
 	for ([float]$zoom = 1.1; $zoom -lt 4.0; $zoom += 0.02) {
 		CalculateFractal $left $top $xside $yside $zoom
 		[console]::SetCursorPosition(0,0)
-		[string]$drawscreen = New-Object system.string($global:buffer, 0, $global:buffer.Length)
-		Write-Host -foreground green $drawscreen -noNewline
+		[string]$Screen = New-Object system.string($global:buf, 0, $global:buf.Length)
+		Write-Host -foreground green $Screen -noNewline
 	}
 }
 exit 0 # success
