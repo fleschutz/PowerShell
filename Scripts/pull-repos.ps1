@@ -23,7 +23,7 @@ try {
 	if ($lastExitCode -ne "0") { throw "Can't execute 'git' - make sure Git is installed and available" }
 
 	$ParentDirName = (Get-Item "$ParentDir").Name
-	Write-Host "⏳ (29 Checking folder 📂$ParentDirName...  " -NoNewline
+	Write-Host "⏳ (2) Checking folder 📂$ParentDirName...  " -NoNewline
 	if (-not(Test-Path "$ParentDir" -pathType container)) { throw "Can't access folder: $ParentDir" }
 	$Folders = (Get-ChildItem "$ParentDir" -attributes Directory)
 	$NumFolders = $Folders.Count
