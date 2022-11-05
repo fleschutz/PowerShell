@@ -17,8 +17,8 @@ try {
 	Write-Host "⏳ (1/5) Searching for IPFS executable...  " -noNewline
 	& ipfs --version
 	if ($lastExitCode -ne "0") { throw "Can't execute 'ipfs' - make sure IPFS is installed and available" }
-	"⏳ (2/5) Init IPFS with server profile..."
-	& ipfs init --profile server
+	"⏳ (2/5) Init IPFS with profile 'lowpower'..."
+	& ipfs init --profile lowpower
 
 	"⏳ (3/5) Configuring IPFS..."
 	& ipfs config Addresses.API /ip4/0.0.0.0/tcp/5001
