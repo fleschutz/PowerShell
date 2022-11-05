@@ -15,14 +15,26 @@
 
 param([string]$Location = "") # empty means determine automatically
 
+function Describe { param([string]$Desc)
+	switch($Desc) {
+	"Clear"			{ return "☀️clear       " }
+	"Cloudy"		{ return "☁️cloudy      " }
+	"Light drizzle"		{ return "💧light drizzle" }
+	"Light rain shower"	{ return "💧light rain   " }
+	"Mist"			{ return "🌫 misty      " }
+	"Partly cloudy"		{ return "☁️bit cloudy  " }
+	"Sunny"			{ return "☀️sunny       " }
+	default			{ return "$Desc" }
+	}
+}
+
 try {
 	$Weather = (Invoke-WebRequest -URI http://wttr.in/${Location}?format=j1 -userAgent "curl" -useBasicParsing).Content | ConvertFrom-Json
 	$Area = $Weather.nearest_area.areaName.value
 	$Region = $Weather.nearest_area.region.value
 	$Country = $Weather.nearest_area.country.value	
-
 	[int]$Day = 0
-	foreach ($Hourly in $Weather.weather.hourly) {
+	foreach($Hourly in $Weather.weather.hourly) {
 		$Hour = $Hourly.time / 100
 		$Temp = $Hourly.tempC
 		$Precip = $Hourly.precipMM
@@ -35,18 +47,17 @@ try {
 		$Desc = $Hourly.weatherDesc.value
 		if ($Hour -eq 0) {
 			if ($Day -eq 0) {
-				write-host -foregroundColor green "TODAY   🌡°C   ☂️    💧     💨 from     ☀️UV ☁️    at $Area ($Region, $Country)"
+				Write-Host -foregroundColor green "Today  🌡°C   ☂️mm   💧   💨km/h from  ☀️UV   ☁️    at $Area ($Region, $Country)"
 			} elseif ($Day -eq 1) {
-				write-host -foregroundColor green "TOMORROW"
+				Write-Host -foregroundColor green "Tomorrow"
 			} else {
-				write-host -foregroundColor green "DAY AFTER TOMORROW"
+				Write-Host -foregroundColor green "Day after tomorrow"
 			}
 			$Day++
 		}
-		"$(($Hour.toString()).PadLeft(2))°°   $(($Temp.toString()).PadLeft(2))°   $($Precip)mm $(($Humidity.toString()).PadLeft(3))%   $(($WindSpeed.toString()).PadLeft(2))km/h $WindDir`t$($UV)  $(($Clouds.toString()).PadLeft(3))%   $Desc"
+		"$(($Hour.toString()).PadLeft(2))°°   $(($Temp.toString()).PadLeft(2))°   $($Precip)   $(($Humidity.toString()).PadLeft(3))%      $(($WindSpeed.toString()).PadLeft(2)) $WindDir`t$($UV)   $(($Clouds.toString()).PadLeft(3))%   $(Describe $Desc)"
 		$Hour++
 	}
-
 	exit 0 # success
 } catch {
 	"⚠️ Error in line $($_.InvocationInfo.ScriptLineNumber): $($Error[0])"
