@@ -16,8 +16,7 @@
 param([string]$Location = "") # empty means determine automatically
 
 try {
-	$Weather = (invoke-webRequest -uri http://wttr.in/${Location}?format=j1 -userAgent "curl" -useBasicParsing).Content | ConvertFrom-Json
-
+	$Weather = (Invoke-WebRequest -URI http://wttr.in/${Location}?format=j1 -userAgent "curl" -useBasicParsing).Content | ConvertFrom-Json
 	$Area = $Weather.nearest_area.areaName.value
 	$Region = $Weather.nearest_area.region.value
 	$Country = $Weather.nearest_area.country.value	
@@ -36,11 +35,11 @@ try {
 		$Desc = $Hourly.weatherDesc.value
 		if ($Hour -eq 0) {
 			if ($Day -eq 0) {
-				write-host -foregroundColor green "🕗      🌡°C   ☂️    💧     💨 from     ☀️UV ☁️    TODAY at $Area ($Region, $Country)"
+				write-host -foregroundColor green "TODAY   🌡°C   ☂️    💧     💨 from     ☀️UV ☁️    at $Area ($Region, $Country)"
 			} elseif ($Day -eq 1) {
-				write-host -foregroundColor green "                                                  TOMORROW"
+				write-host -foregroundColor green "TOMORROW"
 			} else {
-				write-host -foregroundColor green "                                                  DAY AFTER TOMORROW"
+				write-host -foregroundColor green "DAY AFTER TOMORROW"
 			}
 			$Day++
 		}
