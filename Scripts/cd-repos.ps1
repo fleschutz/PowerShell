@@ -13,7 +13,11 @@
 #>
 
 try {
-	$Path = Resolve-Path "$HOME/source/repos"
+	if ($IsLinux) {
+		$Path = Resolve-Path "$HOME/Repos"
+	} else {
+		$Path = Resolve-Path "$HOME/source/repos"
+	}
 	if (-not(Test-Path "$Path" -pathType container)) {
 		throw "Folder for Git repositories at 📂$Path doesn't exist (yet)"
 	}
