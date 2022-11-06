@@ -16,6 +16,16 @@
 
 param([int]$MinLevel = 10) # minimum level in GB
 
+function GB2String { param([int64]$Bytes)
+        if ($Bytes -lt 1000) { return "$($Bytes)GB" }
+        $Bytes /= 1000
+        if ($Bytes -lt 1000) { return "$($Bytes)TB" }
+        $Bytes /= 1000
+        if ($Bytes -lt 1000) { return "$($Bytes)PB" }
+        $Bytes /= 1000
+        if ($Bytes -lt 1000) { return "$($Bytes)EB" }
+}
+
 try {
 	[int]$Total = [int]$Used = [int]$Free = 0
 	if ($IsLinux) {
@@ -31,17 +41,16 @@ try {
 			$Free = ($Total - $Used)
 		} 
 	}
-
 	if ($Total -eq 0) {
         	"⚠️ No swap space!"
 	} elseif ($Free -lt $MinLevel) {
-		"⚠️ Swap space has only $Free GB of $Total GB left to use!"
+		"⚠️ Swap space has only $(GB2String $Free) of $(GB2String $Total) left to use!"
 	} elseif ($Used -eq 0) {
-		"✅ Swap space of $Total GB is unused."
+		"✅ Swap space of $(GB2String $Total) is unused."
 	} elseif ($Used -lt $Free) {
-		"✅ Swap space uses $Used GB of $Total GB."
+		"✅ Swap space uses $(GB2String $Used) of $(GB2String $Total)."
 	} else {
-		"✅ Swap space has $Free GB of $Total GB left."
+		"✅ Swap space has $(GB2String $Free) of $(GB2String $Total) left."
 	}
 	exit 0 # success
 } catch {
