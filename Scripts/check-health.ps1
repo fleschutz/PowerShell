@@ -11,8 +11,8 @@
 	Author: Markus Fleschutz | License: CC0
 #>
 
-& "$PSScriptRoot/check-uptime.ps1"
 & "$PSScriptRoot/check-operating-system.ps1"
+& "$PSScriptRoot/check-uptime.ps1"
 & "$PSScriptRoot/check-time-zone.ps1"
 & "$PSScriptRoot/check-cpu.ps1"
 & "$PSScriptRoot/check-ram.ps1"
