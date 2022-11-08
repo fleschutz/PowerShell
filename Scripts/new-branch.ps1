@@ -22,30 +22,30 @@ try {
 
 	$StopWatch = [system.diagnostics.stopwatch]::startNew()
 
-	"⏳ Step 1/6 - Searching for Git executable... "
+	Write-Host "⏳ (1/6) Searching for Git executable... " -noNewline
 	& git --version
 	if ($lastExitCode -ne "0") { throw "Can't execute 'git' - make sure Git is installed and available" }
 
 	$RepoDirName = (Get-Item "$RepoDir").Name
-	"⏳ Step 2/6 - Checking folder 📂$RepoDirName... "
+	"⏳ (2/6) Checking folder 📂$RepoDirName... "
 	if (-not(Test-Path "$RepoDir" -pathType container)) { throw "Can't access directory: $RepoDir" }
 
-	"⏳ Step 3/6 - Fetching updates..."
+	"⏳ (3/6) Fetching updates..."
 	& git -C "$RepoDir" fetch --all --recurse-submodules --prune --prune-tags --force
 	if ($lastExitCode -ne "0") { throw "'git fetch' failed with exit code $lastExitCode" }
 
 	$CurrentBranchName = (git -C "$RepoDir" rev-parse --abbrev-ref HEAD)
 	if ($lastExitCode -ne "0") { throw "'git rev-parse' failed with exit code $lastExitCode" }
 
-	"⏳ Step 4/6 - Creating branch '$NewBranchName'..."
+	"⏳ (4/6) Creating branch '$NewBranchName'..."
 	& git -C "$RepoDir" checkout -b "$NewBranchName"
 	if ($lastExitCode -ne "0") { throw "'git checkout -b $NewBranchName' failed with exit code $lastExitCode" }
 
-	"⏳ Step 5/6 - Pushing updates..."
+	"⏳ (5/6) Pushing updates..."
 	& git -C "$RepoDir" push origin "$NewBranchName"
 	if ($lastExitCode -ne "0") { throw "'git push origin $NewBranchName' failed with exit code $lastExitCode" }
 
-	"⏳ Step 6/6 - Updating submodules..."
+	"⏳ (6/6) Updating submodules..."
 	& git -C "$RepoDir" submodule update --init --recursive
 	if ($lastExitCode -ne "0") { throw "'git submodule update' failed with exit code $lastExitCode" }
 
