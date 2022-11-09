@@ -5,7 +5,7 @@
 	This PowerShell script changes the working directory to the user's Git repositories folder.
 .EXAMPLE
 	PS> ./cd-repos
-	📂C:\Users\Markus\source\repos
+	📂C:\Users\Markus\Repos
 .LINK
 	https://github.com/fleschutz/PowerShell
 .NOTES
@@ -13,12 +13,14 @@
 #>
 
 try {
-	if ($IsLinux) {
+	if (Test-Path "$HOME/Repos" -pathType Container) {
 		$Path = Resolve-Path "$HOME/Repos"
-	} else {
+	} elseif (Test-Path "$HOME/Repositories" -pathType Container) {
+		$Path = Resolve-Path "$HOME/Repositories"
+	} elseif (Test-Path "$HOME/source/repos" -pathType Container) {
 		$Path = Resolve-Path "$HOME/source/repos"
-	}
-	if (-not(Test-Path "$Path" -pathType container)) {
+	} else {
+		$Path = "$HOME/Repos"
 		throw "Folder for Git repositories at 📂$Path doesn't exist (yet)"
 	}
 	Set-Location "$Path"
