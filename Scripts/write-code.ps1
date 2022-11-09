@@ -3,8 +3,10 @@
 	Writes code
 .DESCRIPTION
 	This PowerShell script generates and writes PowerShell code on the console (for fun).
+.PARAMETER color
+	Specifies the color to use ("green" by default)
 .PARAMETER speed
-	Specifies the speed in milliseconds per code line
+	Specifies the speed in milliseconds per code line (500 by default)
 .EXAMPLE
 	PS> ./write-code
 .LINK
@@ -13,7 +15,7 @@
 	Author: Markus Fleschutz | License: CC0
 #>
 
-param([int]$Speed = 500) # milliseconds
+param([string]$color = "green", [int]$speed = 500) # milliseconds
 
 function GetRandomCodeLine { 
 	$Generator = New-Object System.Random
@@ -47,10 +49,10 @@ function GetRandomCodeLine {
 }
 
 try {
-	Write-Host -foreground green "try {"
+	Write-Host -foreground $color "try {"
 	while ($true) {
-		Write-Host -foreground green "$(GetRandomCodeLine)"
-		Start-Sleep -milliseconds $Speed
+		Write-Host -foreground $color "$(GetRandomCodeLine)"
+		Start-Sleep -milliseconds $speed
 	}
 	exit 0 # success
 } catch {
