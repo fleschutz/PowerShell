@@ -14,11 +14,11 @@
 
 try {
 	if (Test-Path "$HOME/Repos" -pathType Container) {
-		$Path = Resolve-Path "$HOME/Repos"
+		$Path = Resolve-Path "$HOME/Repos"			# short form
 	} elseif (Test-Path "$HOME/Repositories" -pathType Container) {
-		$Path = Resolve-Path "$HOME/Repositories"
+		$Path = Resolve-Path "$HOME/Repositories"		# long form
 	} elseif (Test-Path "$HOME/source/repos" -pathType Container) {
-		$Path = Resolve-Path "$HOME/source/repos"
+		$Path = Resolve-Path "$HOME/source/repos"		# default by Visual Studio
 	} else {
 		$Path = "$HOME/Repos"
 		throw "Folder for Git repositories at 📂$Path doesn't exist (yet)"
