@@ -1,6 +1,6 @@
 ﻿<#
 .SYNOPSIS
-	Lists the hourly weather report
+	Lists the weather report
 .DESCRIPTION
 	This PowerShell script lists the hourly weather report.
 .PARAMETER Location
@@ -22,7 +22,8 @@ function Describe { param([string]$Desc)
 	"Light drizzle"		{ return "💧light drizzle" }
 	"Light rain shower"	{ return "💧light rain   " }
 	"Mist"			{ return "🌫 misty      " }
-	"Partly cloudy"		{ return "☁️bit cloudy  " }
+	"Overcast"		{ return "☁️overcast    " }
+	"Partly cloudy"		{ return "☁️partly cloudy" }
 	"Sunny"			{ return "☀️sunny       " }
 	default			{ return "$Desc" }
 	}
