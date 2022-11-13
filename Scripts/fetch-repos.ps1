@@ -1,6 +1,6 @@
 ﻿<#
 .SYNOPSIS
-	Fetches updates for Git repositories
+	Fetches updates for Git repos
 .DESCRIPTION
 	This PowerShell script fetches updates for all Git repositories in a folder (including submodules).
 .PARAMETER ParentDir
@@ -18,30 +18,29 @@ param([string]$ParentDir = "$PWD")
 try {
 	$StopWatch = [system.diagnostics.stopwatch]::startNew()
 
-	"⏳ Step 1 - Searching for Git executable..."
+	Write-Host "⏳ (1) Searching for Git executable...  " -noNewline
 	& git --version
 	if ($lastExitCode -ne "0") { throw "Can't execute 'git' - make sure Git is installed and available" }
 
 	$ParentDirName = (Get-Item "$ParentDir").Name
-	"⏳ Step 2 - Checking folder 📂$ParentDirName..."
+	Write-Host "⏳ (2) Checking folder 📂$ParentDirName...  " -noNewline
 	if (-not(Test-Path "$ParentDir" -pathType container)) { throw "Can't access folder: $ParentDir" }
 	$Folders = (Get-ChildItem "$ParentDir" -attributes Directory)
 	$NumFolders = $Folders.Count
-	"Found $NumFolders subfolders, fetching one by one..."
+	Write-Host "found $NumFolders subfolders."
 
 	[int]$Step = 3
 	foreach ($Folder in $Folders) {
 		$FolderName = (Get-Item "$Folder").Name
-		"⏳ Step $Step/$($NumFolders + 2) - Fetching into 📂$FolderName..."
+		"⏳ ($Step/$($NumFolders + 2)) Fetching into 📂$FolderName..."
 
 		& git -C "$Folder" fetch --all --recurse-submodules --prune --prune-tags --force
 		if ($lastExitCode -ne "0") { throw "'git fetch' in $FolderName failed" }
 
 		$Step++
 	}
-
 	[int]$Elapsed = $StopWatch.Elapsed.TotalSeconds
-	"✔️ fetched $NumFolders Git repos in 📂$ParentDirName, it took $Elapsed sec"
+	"✔️ fetched $NumFolders Git repos under 📂$ParentDirName in $Elapsed sec."
 	exit 0 # success
 } catch {
 	"⚠️ Error in line $($_.InvocationInfo.ScriptLineNumber): $($Error[0])"
