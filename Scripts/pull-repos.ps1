@@ -1,6 +1,6 @@
 ﻿<#
 .SYNOPSIS
-	Pulls updates for Git repositories
+	Pulls updates for Git repos
 .DESCRIPTION
 	This PowerShell script pulls updates for all Git repositories in a folder (including submodules).
 .PARAMETER ParentDir
@@ -23,11 +23,11 @@ try {
 	if ($lastExitCode -ne "0") { throw "Can't execute 'git' - make sure Git is installed and available" }
 
 	$ParentDirName = (Get-Item "$ParentDir").Name
-	Write-Host "⏳ (2) Checking folder 📂$ParentDirName...  " -NoNewline
+	Write-Host "⏳ (2) Checking parent folder 📂$ParentDirName...  " -NoNewline
 	if (-not(Test-Path "$ParentDir" -pathType container)) { throw "Can't access folder: $ParentDir" }
 	$Folders = (Get-ChildItem "$ParentDir" -attributes Directory)
 	$NumFolders = $Folders.Count
-	"found $NumFolders subfolders"
+	"$NumFolders subfolders"
 
 	[int]$Step = 3
 	[int]$Failed = 0
@@ -39,13 +39,13 @@ try {
 		if ($lastExitCode -ne "0") { $Failed++; write-warning "'git pull' in 📂$FolderName failed" }
 
 		& git -C "$Folder" submodule update --init --recursive
-		if ($lastExitCode -ne "0") { throw "'git submodule update' in 📂$FolderName failed" }
+		if ($lastExitCode -ne "0") { throw "'git submodule update' in 📂$Folder failed with exit code $lastExitCode" }
 
 		$Step++
 	}
 
 	[int]$Elapsed = $StopWatch.Elapsed.TotalSeconds
-	"✔️ pulled $NumFolders Git repos in 📂$ParentDirName ($Failed failed, it took $Elapsed sec)"
+	"✔️ pulled $NumFolders Git repositories in $Elapsed sec ($Failed failed)."
 	exit 0 # success
 } catch {
 	"⚠️ Error in line $($_.InvocationInfo.ScriptLineNumber): $($Error[0])"
