@@ -15,7 +15,7 @@ try {
 	$StopWatch = [system.diagnostics.stopwatch]::startNew()
 
 	if ($IsLinux) {
-		"⏳ (1/4) Fetching update infos for installed Debian packages..."
+		"⏳ (1/4) Querying updates for installed Debian packages..."
 		& sudo apt update
 
 		"⏳ (2/4) Upgrading installed Debian packages..."
@@ -27,7 +27,7 @@ try {
 		"⏳ (4/4) Upgrading installed Snap packages..."
 		& sudo snap refresh
 	} else {
-		"⏳ (1/2) Fetching update infos..."
+		"⏳ (1/2) Querying updates..."
 		& winget upgrade
 
 		"⏳ (2/2) Upgrading apps..."
