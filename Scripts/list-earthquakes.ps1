@@ -1,8 +1,8 @@
 ﻿<#
 .SYNOPSIS
-	Lists major earthquakes since 30 days
+	Lists major earthquakes
 .DESCRIPTION
-	This PowerShell script lists earthquakes with magnitude >= 6.0 for the last 30 days.
+	This PowerShell script lists major earthquakes with magnitude >= 6.0 for the last 30 days.
 .EXAMPLE
 	PS> ./list-earthquakes
 .LINK
@@ -11,15 +11,16 @@
 	Author: Markus Fleschutz | License: CC0
 #>
 
-$Format="csv" # csv, geojson, kml, text, xml
+$Format="csv" # cap, csv, geojson, kml, kmlraw, quakeml, text, xml
 $MinMagnitude=5.8
 $OrderBy="magnitude" # time, time-asc, magnitude, magnitude-asc
 
 function ListEarthquakes { 
-	write-progress "Loading data ..."
-	$Earthquakes = (Invoke-WebRequest -URI "https://earthquake.usgs.gov/fdsnws/event/1/query?format=$Format&minmagnitude=$MinMagnitude&orderby=$OrderBy" -userAgent "curl" -useBasicParsing).Content | ConvertFrom-CSV
-	foreach ($Quake in $Earthquakes) {
-		New-Object PSObject -Property @{ Mag=$Quake.mag; Depth="$($Quake.depth) km"; Location=$Quake.place; Time=$Quake.time }
+	Write-Progress "Loading data from earthquake.usgs.gov..."
+	$Quakes = (Invoke-WebRequest -URI "https://earthquake.usgs.gov/fdsnws/event/1/query?format=$Format&minmagnitude=$MinMagnitude&orderby=$OrderBy" -userAgent "curl" -useBasicParsing).Content | ConvertFrom-CSV
+	foreach ($Quake in $Quakes) {
+		[int]$Depth = $Quake.depth
+		New-Object PSObject -Property @{ Mag=$Quake.mag; Depth="$Depth km"; Location=$Quake.place; Time=$Quake.time }
 	}
 }
  
@@ -30,4 +31,3 @@ try {
 	"⚠️ Error in line $($_.InvocationInfo.ScriptLineNumber): $($Error[0])"
 	exit 1
 }
-f
