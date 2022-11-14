@@ -36,7 +36,7 @@ function CopyFile { param([string]$SourcePath, [string]$TargetDir, [int]$Date, [
 	}
 	$TargetPath = "$TargetDir/$Year/$MonthDir/$Filename"
 	if (test-path "$TargetPath" -pathType leaf) {
-		"Skipping $Filename: already existing..."
+		"Skipping $($Filename): already existing..."
 	} else {
 		"Copying $Filename to $Year/$MonthDir..."
 		new-item -path "$TargetDir" -name "$Year" -itemType "directory" -force | out-null
@@ -70,7 +70,7 @@ try {
 			$Array = $Filename.split("_")
 			CopyFile "$File" "$TargetDir" $Array[1] "$Filename"
 		} else {
-			"Skipping $Filename: unknown filename format..."
+			"Skipping $($Filename): unknown filename format..."
 		}
 	}
 
