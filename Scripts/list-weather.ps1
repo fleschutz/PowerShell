@@ -17,14 +17,15 @@ param([string]$Location = "") # empty means determine automatically
 
 function Describe { param([string]$Desc)
 	switch($Desc) {
-	"Clear"			{ return "☀️clear       " }
-	"Cloudy"		{ return "☁️cloudy      " }
-	"Light drizzle"		{ return "💧light drizzle" }
-	"Light rain shower"	{ return "💧light rain   " }
+	"Clear"			{ return "🌙 clear       " }
+	"Cloudy"			{ return "☁️ cloudy      " }
+	"Light drizzle"		{ return "💧 light drizzle" }
+	"Light rain shower"	{ return "💧 light rain   " }
 	"Mist"			{ return "🌫 misty      " }
-	"Overcast"		{ return "☁️overcast    " }
-	"Partly cloudy"		{ return "☁️partly cloudy" }
-	"Sunny"			{ return "☀️sunny       " }
+	"Overcast"			{ return "☁️ overcast    " }
+	"Partly cloudy"		{ return "☁️ partly cloudy" }
+	"Patchy rain possible"  { return "💧 patchy rain possible" }
+	"Sunny"			{ return "☀️ sunny       " }
 	default			{ return "$Desc" }
 	}
 }
