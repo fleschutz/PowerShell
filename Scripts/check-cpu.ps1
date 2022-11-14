@@ -46,7 +46,7 @@ try {
 	} else {
 		$Details = Get-WmiObject -Class Win32_Processor
 		$DeviceName = $Details.Name.trim()
-		"✅ $DeviceName ($($Details.DeviceID), $($Details.MaxClockSpeed)MHz, $Temp)."
+		"✅ $($DeviceName): $($Details.DeviceID), $($Details.MaxClockSpeed)MHz, $Temp"
 	}
 	exit 0 # success
 } catch {

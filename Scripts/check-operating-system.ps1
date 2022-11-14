@@ -25,7 +25,7 @@ try {
 		$BuildNo = $OSDetails.BuildNumber
 		$Serial = $OSDetails.SerialNumber
 		$InstallDate = $OSDetails.InstallDate
-		"✅ $Name ($Arch, v$Version, S/N $Serial, installed $($InstallDate.ToShortDateString()))."
+		"✅ $($Name): $Arch, v$Version, S/N $Serial, installed $($InstallDate.ToShortDateString())"
 	} 
 	exit 0 # success
 } catch {

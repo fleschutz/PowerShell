@@ -52,7 +52,7 @@ try {
 			[float]$Voltage = $Bank.ConfiguredVoltage / 1000.0
 			$Manufacturer = $Bank.Manufacturer
 			$Location = "$($Bank.BankLabel)/$($Bank.DeviceLocator)"
-			"✅ $($Capacity)GB $Type ($($Speed)MHz, $($Voltage)V) at $Location by $Manufacturer."
+			"✅ $($Capacity)GB $($Type) by $($Manufacturer): $($Speed)MHz, $($Voltage)V at $Location"
 		}
 	}
 	exit 0 # success
