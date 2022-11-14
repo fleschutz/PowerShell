@@ -8,7 +8,7 @@
 .PARAMTER TargetDir
 	Specifies the path to the target folder
 .EXAMPLE
-	PS> ./copy-photos-sorted D:\SmartPhone\DCIM C:\MyPhotoAlbum
+	PS> ./copy-photos-sorted D:\MyPhone\DCIM C:\MyPhotos
 .LINK
 	https://github.com/fleschutz/PowerShell
 .NOTES
@@ -36,9 +36,9 @@ function CopyFile { param([string]$SourcePath, [string]$TargetDir, [int]$Date, [
 	}
 	$TargetPath = "$TargetDir/$Year/$MonthDir/$Filename"
 	if (test-path "$TargetPath" -pathType leaf) {
-		"Skipping $($Filename): already existing..."
+		"⏳ Skipping $($Filename): already existing..."
 	} else {
-		"Copying $Filename to $Year/$MonthDir..."
+		"⏳ Copying $Filename to $Year/$MonthDir..."
 		new-item -path "$TargetDir" -name "$Year" -itemType "directory" -force | out-null
 		new-item -path "$TargetDir/$Year" -name "$MonthDir" -itemType "directory" -force | out-null
 		copy-item "$SourcePath" "$TargetPath" -force
@@ -70,10 +70,9 @@ try {
 			$Array = $Filename.split("_")
 			CopyFile "$File" "$TargetDir" $Array[1] "$Filename"
 		} else {
-			"Skipping $($Filename): unknown filename format..."
+			"⏳ Skipping $($Filename): unknown filename format..."
 		}
 	}
-
 	[int]$Elapsed = $StopWatch.Elapsed.TotalSeconds
 	"✔️ $($Files.Count) photos copied from 📂$SourceDir to 📂$TargetDir in $Elapsed sec"
 	exit 0 # success
