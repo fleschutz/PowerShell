@@ -8,37 +8,37 @@ Mega Collection of PowerShell Scripts
 🔊 Scripts for Audio & Voice 
 -----------------------------
 
-| Script                                               | Description                                                        | Help                                |
-| ---------------------------------------------------- | ------------------------------------------------------------------ | ----------------------------------- |
-| [list-voices.ps1](Scripts/list-voices.ps1)           | Lists the installed text-to-speech voices                          | [Help](Docs/list-voices.md)         |
-| [play-beep-sound.ps1](Scripts/play-beep-sound.ps1)   | Plays a short beep sound                                           | [Help](Docs/play-beep-sound.md)     |
-| [play-files.ps1](Scripts/play-files.ps1)             | Plays the given audio files                                        | [Help](Docs/play-files.md)          |
-| [play-happy-birthday.ps1](Scripts/play-happy-birthday.ps1) | Plays the Happy Birthday song                                | [Help](Docs/play-happy-birthday.md) |
-| [play-imperial-march.ps1](Scripts/play-imperial-march.ps1) | Plays the Imperial March (Star Wars)                         | [Help](Docs/play-imperial-march.md) |
-| [play-jingle-bells.ps1](Scripts/play-jingle-bells.ps1) | Plays Jingle Bells                                               | [Help](Docs/play-jingle-bells.md)   |
-| [play-mission-impossible.ps1](Scripts/play-mission-impossible.ps1) | Plays the Mission Impossible theme                   | [Help](Docs/play-mission-impossible.md)|
-| [play-m3u.ps1](Scripts/play-m3u.ps1)                 | Plays the given playlist (M3U file format)                         | [Help](Docs/play-m3u.md)            |
-| [play-mp3.ps1](Scripts/play-mp3.ps1)                 | Plays the given sound file (MP3 file format)                       | [Help](Docs/play-mp3.md)            |
-| [play-super-mario.ps1](Scripts/play-super-mario.ps1) | Plays the Super Mario intro                                        | [Help](Docs/play-super-mario.md)    |
-| [play-tetris-melody.ps1](Scripts/play-tetris-melody.ps1) | Plays the Tetris melody                                        | [Help](Docs/play-tetris-melody.md)  |
-| [speak-checklist.ps1](Scripts/speak-checklist.ps1)   | Speaks the given checklist by text-to-speech                       | [Help](Docs/speak-checklist.md)     |
-| [speak-countdown.ps1](Scripts/speak-countdown.ps1)   | Starts a countdown by text-to-speech                               | [Help](Docs/speak-countdown.md)     |
-| [speak-english.ps1](Scripts/speak-english.ps1)       | Speaks text with an English text-to-speech voice                   | [Help](Docs/speak-english.md)       |
-| [speak-epub.ps1](Scripts/speak-epub.ps1)             | Speaks the content of the given Epub file by text-to-speech        | [Help](Docs/speak-epub.md)          |
-| [speak-file.ps1](Scripts/speak-file.ps1)             | Speaks the content of the given text file by text-to-speech        | [Help](Docs/speak-file.md)          |
-| [speak-french.ps1](Scripts/speak-french.ps1)         | Speaks text with a French text-to-speech voice                     | [Help](Docs/speak-french.md)        |
-| [speak-german.ps1](Scripts/speak-german.ps1)         | Speaks text with a German text-to-speech voice                     | [Help](Docs/speak-german.md)        |
-| [speak-italian.ps1](Scripts/speak-italian.ps1)       | Speaks text with an Italian text-to-speech voice                   | [Help](Docs/speak-italian.md)       |
-| [speak-spanish.ps1](Scripts/speak-spanish.ps1)       | Speaks text with a Spanish text-to-speech voice                    | [Help](Docs/speak-spanish.md)       |
-| [speak-test.ps1](Scripts/speak-test.ps1)             | Performs a speak test by text-to-speech                            | [Help](Docs/speak-test.md)          |
-| [speak-text.ps1](Scripts/speak-text.ps1)             | Speaks the given text by text-to-speech                            | [Help](Docs/speak-text.md)          |
-| [tell-joke.ps1](Scripts/tell-joke.ps1)               | Tells a joke by text-to-speech                                     | [Help](Docs/tell-joke.md)           |
-| [tell-quote.ps1](Scripts/tell-quote.ps1)             | Tells a quote by text-to-speech                                    | [Help](Docs/tell-quote.md)          |
-| [turn-volume-down.ps1](Scripts/turn-volume-down.ps1) | Turns the audio volume down                                        | [Help](Docs/turn-volume-down.md)    |
-| [turn-volume-fully-up.ps1](Scripts/turn-volume-fully-up.ps1) | Turns the audio volume fully up                            | [Help](Docs/turn-volume-fully-up.md)|
-| [turn-volume-off.ps1](Scripts/turn-volume-off.ps1)   | Turns audio off                                                    | [Help](Docs/turn-volume-off-audio.md)|
-| [turn-volume-on.ps1](Scripts/turn-volume-on.ps1)     | Turns audio on                                                     | [Help](Docs/turn-volume-on.md)      |
-| [turn-volume-up.ps1](Scripts/turn-volume-up.ps1)     | Turns the audio volume up                                          | [Help](Docs/turn-volume-up.md)      |
+| Script                                               | Description                                                                                     |
+| ---------------------------------------------------- | ----------------------------------------------------------------------------------------------- |
+| [list-voices.ps1](Scripts/list-voices.ps1)           | Lists the installed text-to-speech voices. [Read more...](Docs/list-voices.md)                  |
+| [play-beep-sound.ps1](Scripts/play-beep-sound.ps1)   | Plays a short beep sound. [Read more...](Docs/play-beep-sound.md)                               |
+| [play-files.ps1](Scripts/play-files.ps1)             | Plays the given audio files. [Read more...](Docs/play-files.md)                                 |
+| [play-happy-birthday.ps1](Scripts/play-happy-birthday.ps1) | Plays the Happy Birthday song. [Read more...](Docs/play-happy-birthday.md)                |
+| [play-imperial-march.ps1](Scripts/play-imperial-march.ps1) | Plays the Imperial March (Star Wars). [Read more...](Docs/play-imperial-march.md)         |
+| [play-jingle-bells.ps1](Scripts/play-jingle-bells.ps1) | Plays Jingle Bells. [Read more...](Docs/play-jingle-bells.md)                                 |
+| [play-mission-impossible.ps1](Scripts/play-mission-impossible.ps1) | Plays the Mission Impossible theme. [Read more...](Docs/play-mission-impossible.md)|
+| [play-m3u.ps1](Scripts/play-m3u.ps1)                 | Plays the given playlist (M3U file format). [Read more...](Docs/play-m3u.md)                    |
+| [play-mp3.ps1](Scripts/play-mp3.ps1)                 | Plays the given sound file (MP3 file format). [Read more...](Docs/play-mp3.md)                  |
+| [play-super-mario.ps1](Scripts/play-super-mario.ps1) | Plays the Super Mario intro. [Read more...](Docs/play-super-mario.md)                           |
+| [play-tetris-melody.ps1](Scripts/play-tetris-melody.ps1) | Plays the Tetris melody. [Read more...](Docs/play-tetris-melody.md)                         |
+| [speak-checklist.ps1](Scripts/speak-checklist.ps1)   | Speaks the given checklist by text-to-speech. [Read more...](Docs/speak-checklist.md)           |
+| [speak-countdown.ps1](Scripts/speak-countdown.ps1)   | Starts a countdown by text-to-speech. [Read more...](Docs/speak-countdown.md)                   |
+| [speak-english.ps1](Scripts/speak-english.ps1)       | Speaks text with an English text-to-speech voice. [Read more...](Docs/speak-english.md)         |
+| [speak-epub.ps1](Scripts/speak-epub.ps1)             | Speaks the content of the given Epub file by text-to-speech. [Read more...](Docs/speak-epub.md) |
+| [speak-file.ps1](Scripts/speak-file.ps1)             | Speaks the content of the given text file by text-to-speech. [Read more...](Docs/speak-file.md) |
+| [speak-french.ps1](Scripts/speak-french.ps1)         | Speaks text with a French text-to-speech voice. [Read more...](Docs/speak-french.md)            |
+| [speak-german.ps1](Scripts/speak-german.ps1)         | Speaks text with a German text-to-speech voice. [Read more...](Docs/speak-german.md)            |
+| [speak-italian.ps1](Scripts/speak-italian.ps1)       | Speaks text with an Italian text-to-speech voice. [Read more...](Docs/speak-italian.md)         |
+| [speak-spanish.ps1](Scripts/speak-spanish.ps1)       | Speaks text with a Spanish text-to-speech voice. [Read more...](Docs/speak-spanish.md)          |
+| [speak-test.ps1](Scripts/speak-test.ps1)             | Performs a speak test by text-to-speech. [Read more...](Docs/speak-test.md)                     |
+| [speak-text.ps1](Scripts/speak-text.ps1)             | Speaks the given text by text-to-speech. [Read more...](Docs/speak-text.md)                     |
+| [tell-joke.ps1](Scripts/tell-joke.ps1)               | Tells a joke by text-to-speech. [Read more...](Docs/tell-joke.md)                               |
+| [tell-quote.ps1](Scripts/tell-quote.ps1)             | Tells a quote by text-to-speech. [Read more...](Docs/tell-quote.md)                             |
+| [turn-volume-down.ps1](Scripts/turn-volume-down.ps1) | Turns the audio volume down. [Read more...](Docs/turn-volume-down.md)                           |
+| [turn-volume-fully-up.ps1](Scripts/turn-volume-fully-up.ps1) | Turns the audio volume fully up. [Read more...](Docs/turn-volume-fully-up.md)           |
+| [turn-volume-off.ps1](Scripts/turn-volume-off.ps1)   | Turns audio off. [Read more...](Docs/turn-volume-off-audio.md)                                  |
+| [turn-volume-on.ps1](Scripts/turn-volume-on.ps1)     | Turns audio on. [Read more...](Docs/turn-volume-on.md)                                          |
+| [turn-volume-up.ps1](Scripts/turn-volume-up.ps1)     | Turns the audio volume up. [Read more...](Docs/turn-volume-up.md)                               |
 
 
 ⚙️ Scripts to Manage Computers
