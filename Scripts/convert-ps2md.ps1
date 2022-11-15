@@ -1,6 +1,6 @@
 ﻿<#
 .SYNOPSIS
-	Converts the comment-based help of a PowerShell script to Markdown
+	Converts PowerShell script metadata to Markdown
 .DESCRIPTION
 	This PowerShell script converts the comment-based help of a PowerShell script to Markdown.
 .PARAMETER filename
