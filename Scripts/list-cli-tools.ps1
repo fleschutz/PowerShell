@@ -250,6 +250,7 @@ function ListTools {
 	CheckFor vi	"--version"
 	CheckFor vim	"--version"
 	CheckFor vulkaninfo "--version"
+	CheckFor w32tm  "/?"
 	CheckFor waitfor "--version"
 	CheckFor wakeonlan ""
 	CheckFor wget	"--version"
