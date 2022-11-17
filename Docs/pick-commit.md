@@ -55,7 +55,7 @@ PS> ./pick-commit 93849f889 "Fix typo" "v1 v2 v3"
 ```
 
 ## Notes
-Author: Markus Fleschutz · License: CC0
+Author: Markus Fleschutz | License: CC0
 
 ## Related Links
 https://github.com/fleschutz/PowerShell

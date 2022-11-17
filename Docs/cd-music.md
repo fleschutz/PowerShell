@@ -14,12 +14,12 @@ cd-music.ps1 [<CommonParameters>]
 ## Example
 ```powershell
 PS> ./cd-music
-📂/home/markus/Music
+📂/home/Markus/Music
 
 ```
 
 ## Notes
-Author: Markus Fleschutz / License: CC0
+Author: Markus Fleschutz | License: CC0
 
 ## Related Links
 https://github.com/fleschutz/PowerShell

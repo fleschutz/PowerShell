@@ -27,7 +27,7 @@ Alaskan Standard Time           (UTC-09:00) Alaska                     True
 ```
 
 ## Notes
-Author: Markus Fleschutz / License: CC0
+Author: Markus Fleschutz | License: CC0
 
 ## Related Links
 https://github.com/fleschutz/PowerShell

@@ -63,7 +63,7 @@ PS> ./convert-sql2csv
 ```
 
 ## Notes
-Author: Markus Fleschutz / License: CC0
+Author: Markus Fleschutz | License: CC0
 
 ## Related Links
 https://github.com/fleschutz/PowerShell

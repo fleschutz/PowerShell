@@ -1,6 +1,6 @@
-## list-dir-tree.ps1 - Lists the full directory tree
+## list-dir-tree.ps1 - Lists the directory tree content
 
-This PowerShell script lists the full directory tree.
+This PowerShell script lists all files and folders in a directory tree.
 
 ## Parameters
 ```powershell
@@ -27,7 +27,7 @@ PS> ./list-dir-tree C:\
 ```
 
 ## Notes
-Author: Markus Fleschutz / License: CC0
+Author: Markus Fleschutz | License: CC0
 
 ## Related Links
 https://github.com/fleschutz/PowerShell

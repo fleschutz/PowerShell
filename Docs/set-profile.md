@@ -1,4 +1,4 @@
-## set-profile.ps1 - Sets the PowerShell profile for the current user
+## set-profile.ps1 - Sets the user's PowerShell profile
 
 This PowerShell script sets the PowerShell profile for the current user.
 
@@ -18,7 +18,7 @@ PS> ./set-profile
 ```
 
 ## Notes
-Author: Markus Fleschutz / License: CC0
+Author: Markus Fleschutz | License: CC0
 
 ## Related Links
 https://github.com/fleschutz/PowerShell

@@ -14,12 +14,12 @@ cd-ssh.ps1 [<CommonParameters>]
 ## Example
 ```powershell
 PS> ./cd-ssh
-📂/home/markus/.ssh
+📂/home/Markus/.ssh
 
 ```
 
 ## Notes
-Author: Markus Fleschutz / License: CC0
+Author: Markus Fleschutz | License: CC0
 
 ## Related Links
 https://github.com/fleschutz/PowerShell

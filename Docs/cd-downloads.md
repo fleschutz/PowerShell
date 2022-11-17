@@ -14,12 +14,12 @@ cd-downloads.ps1 [<CommonParameters>]
 ## Example
 ```powershell
 PS> ./cd-downloads
-📂/home/markus/Downloads
+📂C:\Users\Markus\Downloads
 
 ```
 
 ## Notes
-Author: Markus Fleschutz / License: CC0
+Author: Markus Fleschutz | License: CC0
 
 ## Related Links
 https://github.com/fleschutz/PowerShell

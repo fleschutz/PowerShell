@@ -14,12 +14,12 @@ cd-onedrive.ps1 [<CommonParameters>]
 ## Example
 ```powershell
 PS> ./cd-onedrive
-📂/home/markus/OneDrive
+📂/home/Markus/OneDrive
 
 ```
 
 ## Notes
-Author: Markus Fleschutz / License: CC0
+Author: Markus Fleschutz | License: CC0
 
 ## Related Links
 https://github.com/fleschutz/PowerShell

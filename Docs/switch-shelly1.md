@@ -45,7 +45,7 @@ PS> ./switch-shelly1 192.168.100.100 toggle 10
 ```
 
 ## Notes
-Author: Markus Fleschutz / License: CC0
+Author: Markus Fleschutz | License: CC0
 
 ## Related Links
 https://github.com/fleschutz/PowerShell

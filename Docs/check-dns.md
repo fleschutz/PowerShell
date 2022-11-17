@@ -1,6 +1,6 @@
 ## check-dns.ps1 - Checks the DNS resolution
 
-This PowerShell script checks the DNS resolution with frequently used domain names.
+This PowerShell script measures and prints the DNS resolution speed by using 200 frequently used domain names.
 
 ## Parameters
 ```powershell
@@ -14,12 +14,11 @@ check-dns.ps1 [<CommonParameters>]
 ## Example
 ```powershell
 PS> ./check-dns
-✔️ DNS resolution is 11.8 domains per second
 
 ```
 
 ## Notes
-Author: Markus Fleschutz / License: CC0
+Author: Markus Fleschutz | License: CC0
 
 ## Related Links
 https://github.com/fleschutz/PowerShell

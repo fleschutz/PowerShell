@@ -30,7 +30,7 @@ Adding firewall rule for C:\MyApp\bin\app2.exe
 ```
 
 ## Notes
-Author: Markus Fleschutz / License: CC0
+Author: Markus Fleschutz | License: CC0
 
 ## Related Links
 https://github.com/fleschutz/PowerShell

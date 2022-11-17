@@ -14,12 +14,12 @@ cd-videos.ps1 [<CommonParameters>]
 ## Example
 ```powershell
 PS> ./cd-videos
-📂/home/markus/Videos
+📂C:\Users\Markus\Videos
 
 ```
 
 ## Notes
-Author: Markus Fleschutz / License: CC0
+Author: Markus Fleschutz | License: CC0
 
 ## Related Links
 https://github.com/fleschutz/PowerShell

@@ -1,6 +1,6 @@
-## hibernate.ps1 - Enables hibernate mode for the local computer (needs admin rights)
+## hibernate.ps1 - Hibernates the computer
 
-This PowerShell script enables hibernate mode for the local computer. It needs admin rights.
+This PowerShell script enables hibernate mode for the local computer immediately.
 
 ## Parameters
 ```powershell
@@ -18,7 +18,7 @@ PS> ./hibernate
 ```
 
 ## Notes
-Author: Markus Fleschutz / License: CC0
+Author: Markus Fleschutz | License: CC0
 
 ## Related Links
 https://github.com/fleschutz/PowerShell

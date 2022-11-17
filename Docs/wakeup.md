@@ -41,12 +41,11 @@ wakeup.ps1 [[-MACaddress] <String>] [[-IPaddress] <String>] [[-Port] <Int32>] [<
 ## Example
 ```powershell
 PS> ./wakeup 11:22:33:44:55:66 192.168.100.100
-(PC wakes up)
 
 ```
 
 ## Notes
-Author: Markus Fleschutz / License: CC0
+Author: Markus Fleschutz | License: CC0
 
 ## Related Links
 https://github.com/fleschutz/PowerShell

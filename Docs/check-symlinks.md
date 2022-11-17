@@ -1,14 +1,14 @@
-## check-symlinks.ps1 - Checks every symlink in a folder
+## check-symlinks.ps1 - Checks symlinks in a folder
 
-This PowerShell script checks every symlink in a folder (including subfolders).
-Returns the number of broken symlinks as exit value.
+This PowerShell script checks every symbolic link in a folder (including subfolders).
+It returns the number of broken symlinks as exit value.
 
 ## Parameters
 ```powershell
-check-symlinks.ps1 [[-folder] <String>] [<CommonParameters>]
+check-symlinks.ps1 [[-Folder] <String>] [<CommonParameters>]
 
--folder <String>
-    Specifies the path to the directory tree
+-Folder <String>
+    Specifies the path to the folder
     
     Required?                    false
     Position?                    1
@@ -23,13 +23,12 @@ check-symlinks.ps1 [[-folder] <String>] [<CommonParameters>]
 
 ## Example
 ```powershell
-PS> ./check-symlinks .
-✔️ 0 out of 10 symlinks are broken in 📂/home/markus
+PS> ./check-symlinks C:\Users
 
 ```
 
 ## Notes
-Author: Markus Fleschutz / License: CC0
+Author: Markus Fleschutz | License: CC0
 
 ## Related Links
 https://github.com/fleschutz/PowerShell

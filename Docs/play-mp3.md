@@ -23,12 +23,11 @@ play-mp3.ps1 [[-Path] <String>] [<CommonParameters>]
 ## Example
 ```powershell
 PS> ./play-mp3 C:\thunder.mp3
-(listen and enjoy)
 
 ```
 
 ## Notes
-Author: Markus Fleschutz / License: CC0
+Author: Markus Fleschutz | License: CC0
 
 ## Related Links
 https://github.com/fleschutz/PowerShell

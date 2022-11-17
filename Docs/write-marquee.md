@@ -1,21 +1,21 @@
 ## write-marquee.ps1 - Writes text as marquee
 
-This PowerShell script writes text as marquee.
+This PowerShell script writes the given text as marquee.
 
 ## Parameters
 ```powershell
-write-marquee.ps1 [[-text] <String>] [[-speed] <Int32>] [<CommonParameters>]
+write-marquee.ps1 [[-Text] <String>] [[-Speed] <Int32>] [<CommonParameters>]
 
--text <String>
+-Text <String>
     Specifies the text to write
     
     Required?                    false
     Position?                    1
-    Default value                PowerShell is powerful! PowerShell is cross-platform! PowerShell is open-source! PowerShell is easy to learn! Powershell is fully documented
+    Default value                PowerShell is powerful - fully control your computer! PowerShell is cross-platform - available for Linux, Mac OS and Windows! PowerShell is open-source and free - see the GitHub repository at github.com/PowerShell/PowerShell! PowerShell is easy to learn - see the tutorial for beginners at guru99.com/powershell-tutorial.html! Powershell is fully documented - see the official PowerShell documentation at docs.microsoft.com/en-us/powershell
     Accept pipeline input?       false
     Accept wildcard characters?  false
 
--speed <Int32>
+-Speed <Int32>
     Specifies the marquee speed (60 ms per default)
     
     Required?                    false
@@ -36,7 +36,7 @@ PS> ./write-marquee "Hello World"
 ```
 
 ## Notes
-Author: Markus Fleschutz / License: CC0
+Author: Markus Fleschutz | License: CC0
 
 ## Related Links
 https://github.com/fleschutz/PowerShell

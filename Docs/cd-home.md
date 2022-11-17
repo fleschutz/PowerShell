@@ -14,12 +14,12 @@ cd-home.ps1 [<CommonParameters>]
 ## Example
 ```powershell
 PS> ./cd-home
-📂/home/markus
+📂/home/Markus
 
 ```
 
 ## Notes
-Author: Markus Fleschutz / License: CC0
+Author: Markus Fleschutz | License: CC0
 
 ## Related Links
 https://github.com/fleschutz/PowerShell

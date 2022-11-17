@@ -14,11 +14,12 @@ cd-up4.ps1 [<CommonParameters>]
 ## Example
 ```powershell
 PS> ./cd-up4
+📂C:\
 
 ```
 
 ## Notes
-Author: Markus Fleschutz / License: CC0
+Author: Markus Fleschutz | License: CC0
 
 ## Related Links
 https://github.com/fleschutz/PowerShell

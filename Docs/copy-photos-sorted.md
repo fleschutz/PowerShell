@@ -1,4 +1,5 @@
-## copy-photos-sorted.ps1 - 
+## copy-photos-sorted.ps1 - copy-photos-sorted.ps1 [[-SourceDir] <string>] [[-TargetDir] <string>]
+
 
 ## Parameters
 ```powershell

@@ -7,11 +7,11 @@ This PowerShell script checks the free swap space.
 check-swap-space.ps1 [[-MinLevel] <Int32>] [<CommonParameters>]
 
 -MinLevel <Int32>
-    Specifies the minimum level (50 GB by default)
+    Specifies the minimum level (10 GB by default)
     
     Required?                    false
     Position?                    1
-    Default value                50
+    Default value                10
     Accept pipeline input?       false
     Accept wildcard characters?  false
 
@@ -23,12 +23,12 @@ check-swap-space.ps1 [[-MinLevel] <Int32>] [<CommonParameters>]
 ## Example
 ```powershell
 PS> ./check-swap-space
-✔️ 1213 GB left for swap space (67 of 1280 GB used)
+✅ Swap space uses 63 GB of 1856 GB.
 
 ```
 
 ## Notes
-Author: Markus Fleschutz / License: CC0
+Author: Markus Fleschutz | License: CC0
 
 ## Related Links
 https://github.com/fleschutz/PowerShell

@@ -1,4 +1,4 @@
-## speak-english.ps1 - Speaks text with an English text-to-speech voice
+## speak-english.ps1 - Speaks text in English
 
 This PowerShell scripts speaks the given text with an English text-to-speech (TTS) voice.
 
@@ -22,12 +22,12 @@ speak-english.ps1 [[-text] <String>] [<CommonParameters>]
 
 ## Example
 ```powershell
-PS> ./speak-english "Hello World"
+PS> ./speak-english Hello
 
 ```
 
 ## Notes
-Author: Markus Fleschutz / License: CC0
+Author: Markus Fleschutz | License: CC0
 
 ## Related Links
 https://github.com/fleschutz/PowerShell

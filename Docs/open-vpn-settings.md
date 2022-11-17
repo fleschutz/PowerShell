@@ -1,6 +1,6 @@
-## open-vpn-settings.ps1 - Opens Windows VPN settings
+## open-vpn-settings.ps1 - Opens the VPN settings
 
-This script launches the Windows VPN (virtual private network) settings.
+This PowerShell script launches the VPN settings of Windows.
 
 ## Parameters
 ```powershell
@@ -18,7 +18,7 @@ PS> ./open-vpn-settings
 ```
 
 ## Notes
-Author: Markus Fleschutz · License: CC0
+Author: Markus Fleschutz | License: CC0
 
 ## Related Links
 https://github.com/fleschutz/PowerShell

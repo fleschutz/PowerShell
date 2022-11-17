@@ -1,6 +1,6 @@
-## poweroff.ps1 - Halts the local computer (needs admin rights)
+## poweroff.ps1 - Halts the computer (needs admin rights)
 
-This script halts the local computer. It needs admin rights.
+This script halts the local computer immediately (needs admin rights).
 
 ## Parameters
 ```powershell
@@ -18,7 +18,7 @@ PS> ./poweroff
 ```
 
 ## Notes
-Author: Markus Fleschutz · License: CC0
+Author: Markus Fleschutz | License: CC0
 
 ## Related Links
 https://github.com/fleschutz/PowerShell

@@ -1,13 +1,13 @@
-## list-news.ps1 - Lists the latest news
+## list-news.ps1 - Lists the news
 
-This PowerShell script lists the latest RSS feed news.
+This PowerShell script lists the latest news by using RSS (Really Simple Syndication) feeds.
 
 ## Parameters
 ```powershell
 list-news.ps1 [[-RSS_URL] <String>] [[-MaxCount] <Int32>] [<CommonParameters>]
 
 -RSS_URL <String>
-    Specifies the URL to the RSS feed
+    Specifies the URL to the RSS feed (Yahoo News by default)
     
     Required?                    false
     Position?                    1
@@ -16,7 +16,7 @@ list-news.ps1 [[-RSS_URL] <String>] [[-MaxCount] <Int32>] [<CommonParameters>]
     Accept wildcard characters?  false
 
 -MaxCount <Int32>
-    Specifies the number of news to list
+    Specifies the number of lines to list (20 by default)
     
     Required?                    false
     Position?                    2
@@ -36,7 +36,7 @@ PS> ./list-news
 ```
 
 ## Notes
-Author: Markus Fleschutz / License: CC0
+Author: Markus Fleschutz | License: CC0
 
 ## Related Links
 https://github.com/fleschutz/PowerShell

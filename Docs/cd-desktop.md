@@ -14,12 +14,12 @@ cd-desktop.ps1 [<CommonParameters>]
 ## Example
 ```powershell
 PS> ./cd-desktop
-📂/home/markus/Desktop
+📂/home/Markus/Desktop
 
 ```
 
 ## Notes
-Author: Markus Fleschutz / License: CC0
+Author: Markus Fleschutz | License: CC0
 
 ## Related Links
 https://github.com/fleschutz/PowerShell

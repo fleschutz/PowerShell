@@ -1,6 +1,6 @@
-## check-operating-system.ps1 - Determines the exact OS version
+## check-operating-system.ps1 - Query OS details
 
-This PowerShell script determines and says the exact operating system version by text-to-speech (TTS).
+This PowerShell script queries and lists operating system details.
 
 ## Parameters
 ```powershell
@@ -18,7 +18,7 @@ PS> ./check-operating-system
 ```
 
 ## Notes
-Author: Markus Fleschutz / License: CC0
+Author: Markus Fleschutz | License: CC0
 
 ## Related Links
 https://github.com/fleschutz/PowerShell

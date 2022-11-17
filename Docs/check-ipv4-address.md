@@ -28,7 +28,7 @@ PS> ./check-ipv4-address 192.168.11.22
 ```
 
 ## Notes
-Author: Markus Fleschutz / License: CC0
+Author: Markus Fleschutz | License: CC0
 
 ## Related Links
 https://github.com/fleschutz/PowerShell

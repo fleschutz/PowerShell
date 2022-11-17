@@ -26,7 +26,7 @@ Function        Add-BitLockerKeyProtector             1.0.0.0    BitLocker
 ```
 
 ## Notes
-Author: Markus Fleschutz / License: CC0
+Author: Markus Fleschutz | License: CC0
 
 ## Related Links
 https://github.com/fleschutz/PowerShell

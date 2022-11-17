@@ -1,4 +1,4 @@
-## switch-branch.ps1 - Switches the branch in a Git repository
+## switch-branch.ps1 - Switches the Git branch
 
 This PowerShell script switches to another branch in a Git repository (including submodules).
 
@@ -36,7 +36,7 @@ PS> ./switch-branch main C:\MyRepo
 ```
 
 ## Notes
-Author: Markus Fleschutz / License: CC0
+Author: Markus Fleschutz | License: CC0
 
 ## Related Links
 https://github.com/fleschutz/PowerShell

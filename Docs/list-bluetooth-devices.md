@@ -1,6 +1,6 @@
-## list-bluetooth-devices.ps1 - Lists all Bluetooth devices
+## list-bluetooth-devices.ps1 - Lists Bluetooth devices
 
-This PowerShell script lists all Bluetooth devices.
+This PowerShell script lists all Bluetooth devices connected to the computer.
 
 ## Parameters
 ```powershell
@@ -18,7 +18,7 @@ PS> ./list-bluetooth-devices
 ```
 
 ## Notes
-Author: Markus Fleschutz / License: CC0
+Author: Markus Fleschutz | License: CC0
 
 ## Related Links
 https://github.com/fleschutz/PowerShell

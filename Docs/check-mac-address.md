@@ -29,7 +29,7 @@ PS> ./check-mac-address 11:22:33:44:55:66
 ```
 
 ## Notes
-Author: Markus Fleschutz / License: CC0
+Author: Markus Fleschutz | License: CC0
 
 ## Related Links
 https://github.com/fleschutz/PowerShell

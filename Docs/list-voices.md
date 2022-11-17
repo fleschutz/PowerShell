@@ -17,15 +17,15 @@ PS> ./list-voices
 
 
 
-Name                    Culture Gender   Age
-----                    ------- ------   ---
-Microsoft David Desktop en-US     Male Adult
-Microsoft Zira Desktop  en-US   Female Adult
+Name                     Culture  Gender     Age
+----                     -------  ------     ---
+Microsoft David Desktop  en-US      Male   Adult
+...
 
 ```
 
 ## Notes
-Author: Markus Fleschutz / License: CC0
+Author: Markus Fleschutz | License: CC0
 
 ## Related Links
 https://github.com/fleschutz/PowerShell

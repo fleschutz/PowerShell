@@ -1,13 +1,13 @@
-## list-submodules.ps1 - Lists the submodules of a Git repository
+## list-submodules.ps1 - Lists the submodules in a Git repository
 
-This PowerShell script lists the submodules of the given Git repository.
+This PowerShell script lists the submodules in the given Git repository.
 
 ## Parameters
 ```powershell
 list-submodules.ps1 [[-RepoDir] <String>] [<CommonParameters>]
 
 -RepoDir <String>
-    Specifies the path to the repository (current working dir by default)
+    Specifies the path to the repository (current working directory by default)
     
     Required?                    false
     Position?                    1
@@ -27,7 +27,7 @@ PS> ./list-submodules C:\MyRepo
 ```
 
 ## Notes
-Author: Markus Fleschutz / License: CC0
+Author: Markus Fleschutz | License: CC0
 
 ## Related Links
 https://github.com/fleschutz/PowerShell

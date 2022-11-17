@@ -14,12 +14,11 @@ play-mission-impossible.ps1 [<CommonParameters>]
 ## Example
 ```powershell
 PS> ./play-mission-impossible
-(listen and enjoy)
 
 ```
 
 ## Notes
-Author: Markus Fleschutz / License: CC0
+Author: Markus Fleschutz | License: CC0
 
 ## Related Links
 https://github.com/fleschutz/PowerShell

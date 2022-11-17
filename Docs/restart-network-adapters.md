@@ -18,7 +18,7 @@ PS> ./restart-network-adapters
 ```
 
 ## Notes
-Author: Markus Fleschutz / License: CC0
+Author: Markus Fleschutz | License: CC0
 
 ## Related Links
 htts://github.com/fleschutz/PowerShell

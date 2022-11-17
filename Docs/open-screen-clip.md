@@ -18,7 +18,7 @@ PS> ./open-screen-clip
 ```
 
 ## Notes
-Author: Markus Fleschutz · License: CC0
+Author: Markus Fleschutz | License: CC0
 
 ## Related Links
 https://github.com/fleschutz/PowerShell

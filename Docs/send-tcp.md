@@ -45,7 +45,7 @@ PS> ./send-tcp 192.168.100.100 8080 "TEST"
 ```
 
 ## Notes
-Author: Markus Fleschutz / License: CC0
+Author: Markus Fleschutz | License: CC0
 
 ## Related Links
 https://github.com/fleschutz/PowerShell

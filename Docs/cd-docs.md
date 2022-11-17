@@ -1,6 +1,6 @@
-## cd-docs.ps1 - Sets the working directory to the user's documents folder
+## cd-docs.ps1 - Sets the working directory to the documents folder
 
-This PowerShell script changes the working directory to the user's documents folder.
+This PowerShell script changes the working directory to the documents folder.
 
 ## Parameters
 ```powershell
@@ -14,12 +14,12 @@ cd-docs.ps1 [<CommonParameters>]
 ## Example
 ```powershell
 PS> ./cd-docs
-📂/home/markus/Documents
+📂C:\Users\Markus\Documents
 
 ```
 
 ## Notes
-Author: Markus Fleschutz / License: CC0
+Author: Markus Fleschutz | License: CC0
 
 ## Related Links
 https://github.com/fleschutz/PowerShell

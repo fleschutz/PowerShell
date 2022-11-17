@@ -1,4 +1,4 @@
-## cd-repos.ps1 - Sets the working directory to the user's Git repositories folder
+## cd-repos.ps1 - Sets the working directory to the user's repos folder
 
 This PowerShell script changes the working directory to the user's Git repositories folder.
 
@@ -14,12 +14,12 @@ cd-repos.ps1 [<CommonParameters>]
 ## Example
 ```powershell
 PS> ./cd-repos
-📂/home/markus/Repos
+📂C:\Users\Markus\Repos
 
 ```
 
 ## Notes
-Author: Markus Fleschutz / License: CC0
+Author: Markus Fleschutz | License: CC0
 
 ## Related Links
 https://github.com/fleschutz/PowerShell

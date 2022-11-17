@@ -14,12 +14,12 @@ cd-dropbox.ps1 [<CommonParameters>]
 ## Example
 ```powershell
 PS> ./cd-dropbox
-📂/home/markus/Dropbox
+📂/home/Markus/Dropbox
 
 ```
 
 ## Notes
-Author: Markus Fleschutz / License: CC0
+Author: Markus Fleschutz | License: CC0
 
 ## Related Links
 https://github.com/fleschutz/PowerShell

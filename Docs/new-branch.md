@@ -1,13 +1,13 @@
-## new-branch.ps1 - Creates and switches to a new branch in a Git repository
+## new-branch.ps1 - Creates a new Git branch
 
-This PowerShell script creates and switches to a new branch in a Git repository.
+This PowerShell script creates a new branch in a Git repository and switches to it.
 
 ## Parameters
 ```powershell
-new-branch.ps1 [[-BranchName] <String>] [[-RepoDir] <String>] [<CommonParameters>]
+new-branch.ps1 [[-NewBranchName] <String>] [[-RepoDir] <String>] [<CommonParameters>]
 
--BranchName <String>
-    Specifies the branch name
+-NewBranchName <String>
+    Specifies the new branch name
     
     Required?                    false
     Position?                    1
@@ -16,7 +16,7 @@ new-branch.ps1 [[-BranchName] <String>] [[-RepoDir] <String>] [<CommonParameters
     Accept wildcard characters?  false
 
 -RepoDir <String>
-    Specifies the path to the Git repository
+    Specifies the path to the Git repository (current working directory per default)
     
     Required?                    false
     Position?                    2
@@ -36,7 +36,7 @@ PS> ./new-branch test123
 ```
 
 ## Notes
-Author: Markus Fleschutz / License: CC0
+Author: Markus Fleschutz | License: CC0
 
 ## Related Links
 https://github.com/fleschutz/PowerShell

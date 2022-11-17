@@ -28,7 +28,7 @@ PS> ./check-ipv6-address fe80::200:5aee:feaa:20a2
 ```
 
 ## Notes
-Author: Markus Fleschutz / License: CC0
+Author: Markus Fleschutz | License: CC0
 
 ## Related Links
 https://github.com/fleschutz/PowerShell

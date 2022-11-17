@@ -25,7 +25,7 @@ Manifest   3.1.0.0    Microsoft.PowerShell.Utility        {Add-Member, Add-Type,
 ```
 
 ## Notes
-Author: Markus Fleschutz / License: CC0
+Author: Markus Fleschutz | License: CC0
 
 ## Related Links
 https://github.com/fleschutz/PowerShell

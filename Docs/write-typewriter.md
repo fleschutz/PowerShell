@@ -1,6 +1,6 @@
-## write-typewriter.ps1 - Writes text with the typewriter effect
+## write-typewriter.ps1 - Writes text á la typewriter
 
-This PowerShell script writes text with the typewriter effect.
+This PowerShell script writes the given text with the typewriter effect.
 
 ## Parameters
 ```powershell
@@ -13,14 +13,14 @@ write-typewriter.ps1 [[-text] <String>] [[-speed] <Int32>] [<CommonParameters>]
     Position?                    1
     Default value                Hello World
     -----------
-    PowerShell is cross-platform
-    PowerShell is open-source
-    PowerShell is easy to learn
-    PowerShell is fully documented
+    * PowerShell is powerful - fully control your computer
+    * PowerShell is cross-platform - available for Linux, Mac OS and Windows
+    * PowerShell is open-source and free
+    * PowerShell is easy to learn
+    * PowerShell is fully documented
     
     Thanks for watching
-    
-    :-)
+    Markus
     Accept pipeline input?       false
     Accept wildcard characters?  false
 
@@ -29,7 +29,7 @@ write-typewriter.ps1 [[-text] <String>] [[-speed] <Int32>] [<CommonParameters>]
     
     Required?                    false
     Position?                    2
-    Default value                250
+    Default value                200
     Accept pipeline input?       false
     Accept wildcard characters?  false
 
@@ -45,7 +45,7 @@ PS> ./write-typewriter "Hello World"
 ```
 
 ## Notes
-Author: Markus Fleschutz / License: CC0
+Author: Markus Fleschutz | License: CC0
 
 ## Related Links
 https://github.com/fleschutz/PowerShell

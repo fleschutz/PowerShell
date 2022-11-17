@@ -1,6 +1,6 @@
-## check-vpn.ps1 - Checks the VPN connections
+## check-vpn.ps1 - Checks the VPN connection
 
-This PowerShell script checks the status of all available VPN connections.
+This PowerShell script queries and prints the status of any VPN connection.
 
 ## Parameters
 ```powershell
@@ -18,7 +18,7 @@ PS> ./check-vpn
 ```
 
 ## Notes
-Author: Markus Fleschutz / License: CC0
+Author: Markus Fleschutz | License: CC0
 
 ## Related Links
 https://github.com/fleschutz/PowerShell
