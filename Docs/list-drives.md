@@ -1,4 +1,4 @@
-## The PowerShell Script **list-drives.ps1**
+## The PowerShell Script *list-drives.ps1*
 
 This PowerShell script lists all local drives as a table.
 

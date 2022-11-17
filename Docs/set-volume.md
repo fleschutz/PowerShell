@@ -1,4 +1,4 @@
-## The PowerShell Script **set-volume.ps1**
+## The PowerShell Script *set-volume.ps1*
 
 This PowerShell script sets the audio volume in percent.
 

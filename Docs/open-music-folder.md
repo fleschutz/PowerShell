@@ -1,4 +1,4 @@
-## The PowerShell Script **open-music-folder.ps1**
+## The PowerShell Script *open-music-folder.ps1*
 
 This script launches the File Explorer with the user's music folder.
 

@@ -1,4 +1,4 @@
-## The PowerShell Script **check-weather.ps1**
+## The PowerShell Script *check-weather.ps1*
 
 This PowerShell script checks the current weather report.
 

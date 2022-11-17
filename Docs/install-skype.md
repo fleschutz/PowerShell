@@ -1,4 +1,4 @@
-## The PowerShell Script **install-skype.ps1**
+## The PowerShell Script *install-skype.ps1*
 
 This PowerShell script installs Skype from the Microsoft Store.
 

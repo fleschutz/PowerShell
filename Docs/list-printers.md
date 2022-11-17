@@ -1,4 +1,4 @@
-## The PowerShell Script **list-printers.ps1**
+## The PowerShell Script *list-printers.ps1*
 
 This PowerShell script lists all printers known to the local computer.
 

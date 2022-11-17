@@ -1,4 +1,4 @@
-## The PowerShell Script **speak-japanese.ps1**
+## The PowerShell Script *speak-japanese.ps1*
 
 This PowerShell script speaks the given text with a Japanese text-to-speech (TTS) voice.
 

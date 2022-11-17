@@ -1,4 +1,4 @@
-## The PowerShell Script **uninstall-one-calendar.ps1**
+## The PowerShell Script *uninstall-one-calendar.ps1*
 
 uninstall-one-calendar.ps1 
 

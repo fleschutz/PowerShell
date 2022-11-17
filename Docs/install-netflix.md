@@ -1,4 +1,4 @@
-## The PowerShell Script **install-netflix.ps1**
+## The PowerShell Script *install-netflix.ps1*
 
 This PowerShell script installs Netflix from the Microsoft Store.
 

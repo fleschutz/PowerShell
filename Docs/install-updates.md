@@ -1,4 +1,4 @@
-## The PowerShell Script **install-updates.ps1**
+## The PowerShell Script *install-updates.ps1*
 
 This PowerShell script installs updates for the local machine (needs admin rights).
 

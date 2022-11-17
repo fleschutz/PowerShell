@@ -1,4 +1,4 @@
-## The PowerShell Script **list-latest-tag.ps1**
+## The PowerShell Script *list-latest-tag.ps1*
 
 This PowerShell script lists the latest tag on the current branch in a Git repository.
 

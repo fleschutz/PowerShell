@@ -1,4 +1,4 @@
-## The PowerShell Script **uninstall-visual-studio-code.ps1**
+## The PowerShell Script *uninstall-visual-studio-code.ps1*
 
 This PowerShell script uninstalls Visual Studio Code from the local computer.
 

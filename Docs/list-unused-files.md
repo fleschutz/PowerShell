@@ -1,4 +1,4 @@
-## The PowerShell Script **list-unused-files.ps1**
+## The PowerShell Script *list-unused-files.ps1*
 
 This PowerShell script scans and lists files in a folder with last access time older than number of days.
 

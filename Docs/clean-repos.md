@@ -1,4 +1,4 @@
-## The PowerShell Script **clean-repos.ps1**
+## The PowerShell Script *clean-repos.ps1*
 
 This PowerShell script cleans all Git repositories in a folder from untracked files (including submodules).
 

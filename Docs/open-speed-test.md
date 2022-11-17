@@ -1,4 +1,4 @@
-## The PowerShell Script **open-speed-test.ps1**
+## The PowerShell Script *open-speed-test.ps1*
 
 This script launches the Web browser with Cloudflare's speed test website.
 

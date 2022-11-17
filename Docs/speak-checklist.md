@@ -1,4 +1,4 @@
-## The PowerShell Script **speak-checklist.ps1**
+## The PowerShell Script *speak-checklist.ps1*
 
 This PowerShell script speaks the given checklist by text-to-speech (TTS).
 

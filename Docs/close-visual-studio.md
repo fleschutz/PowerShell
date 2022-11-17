@@ -1,4 +1,4 @@
-## The PowerShell Script **close-visual-studio.ps1**
+## The PowerShell Script *close-visual-studio.ps1*
 
 This PowerShell script closes the Microsoft Visual Studio application gracefully.
 

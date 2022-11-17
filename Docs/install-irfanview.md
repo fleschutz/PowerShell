@@ -1,4 +1,4 @@
-## The PowerShell Script **install-irfanview.ps1**
+## The PowerShell Script *install-irfanview.ps1*
 
 This PowerShell script installs IrfanView from the Microsoft Store.
 

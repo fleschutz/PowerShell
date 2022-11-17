@@ -1,4 +1,4 @@
-## The PowerShell Script **list-commits.ps1**
+## The PowerShell Script *list-commits.ps1*
 
 This PowerShell script lists all commits in a Git repository. Supported output formats are: list, compact, normal or JSON.
 

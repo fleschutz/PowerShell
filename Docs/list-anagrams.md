@@ -1,4 +1,4 @@
-## The PowerShell Script **list-anagrams.ps1**
+## The PowerShell Script *list-anagrams.ps1*
 
 This PowerShell script lists all anagrams of the given word.
 

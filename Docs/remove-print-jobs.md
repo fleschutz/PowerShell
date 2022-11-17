@@ -1,4 +1,4 @@
-## The PowerShell Script **remove-print-jobs.ps1**
+## The PowerShell Script *remove-print-jobs.ps1*
 
 This PowerShell script removes all print jobs from all printer devices.
 

@@ -1,4 +1,4 @@
-## The PowerShell Script **install-signal-cli.ps1**
+## The PowerShell Script *install-signal-cli.ps1*
 
 This PowerShell script installs signal-cli from github.com/AsamK/signal-cli.
 See the Web page for the correct version number.

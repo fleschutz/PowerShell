@@ -1,4 +1,4 @@
-## The PowerShell Script **list-submodules.ps1**
+## The PowerShell Script *list-submodules.ps1*
 
 This PowerShell script lists the submodules in the given Git repository.
 

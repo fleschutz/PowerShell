@@ -1,4 +1,4 @@
-## The PowerShell Script **check-file-system.ps1**
+## The PowerShell Script *check-file-system.ps1*
 
 This PowerShell script checks the file system of a drive. It needs admin rights.
 

@@ -1,4 +1,4 @@
-## The PowerShell Script **install-visual-studio-code.ps1**
+## The PowerShell Script *install-visual-studio-code.ps1*
 
 This PowerShell script installs Visual Studio Code.
 

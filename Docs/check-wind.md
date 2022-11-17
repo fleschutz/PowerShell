@@ -1,4 +1,4 @@
-## The PowerShell Script **check-wind.ps1**
+## The PowerShell Script *check-wind.ps1*
 
 This PowerShell script determines the current wind conditions and replies by text-to-speech (TTS).
 

@@ -1,4 +1,4 @@
-## The PowerShell Script **check-uptime.ps1**
+## The PowerShell Script *check-uptime.ps1*
 
 This PowerShell script queries and prints the uptime.
 

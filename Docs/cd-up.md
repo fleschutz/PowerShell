@@ -1,4 +1,4 @@
-## The PowerShell Script **cd-up.ps1**
+## The PowerShell Script *cd-up.ps1*
 
 This PowerShell script changes the working directory to one directory level up.
 

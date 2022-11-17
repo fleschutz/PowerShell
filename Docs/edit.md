@@ -1,4 +1,4 @@
-## The PowerShell Script **edit.ps1**
+## The PowerShell Script *edit.ps1*
 
 This PowerShell script opens a text editor to edit the given file.
 

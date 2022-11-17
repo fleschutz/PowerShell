@@ -1,4 +1,4 @@
-## The PowerShell Script **list-outlook-sent.ps1**
+## The PowerShell Script *list-outlook-sent.ps1*
 
 This PowerShell script lists the mails in the Sent Mail folder of Outlook.
 

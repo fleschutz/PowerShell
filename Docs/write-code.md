@@ -1,4 +1,4 @@
-## The PowerShell Script **write-code.ps1**
+## The PowerShell Script *write-code.ps1*
 
 This PowerShell script generates and writes PowerShell code on the console (for fun).
 

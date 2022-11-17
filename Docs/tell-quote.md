@@ -1,4 +1,4 @@
-## The PowerShell Script **tell-quote.ps1**
+## The PowerShell Script *tell-quote.ps1*
 
 This PowerShell script selects a random quote in Data/quotes.csv and speaks it by text-to-speech (TTS).
 

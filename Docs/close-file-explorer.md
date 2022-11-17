@@ -1,4 +1,4 @@
-## The PowerShell Script **close-file-explorer.ps1**
+## The PowerShell Script *close-file-explorer.ps1*
 
 This PowerShell script closes the Microsoft File Explorer application gracefully.
 

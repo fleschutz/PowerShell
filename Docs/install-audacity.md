@@ -1,4 +1,4 @@
-## The PowerShell Script **install-audacity.ps1**
+## The PowerShell Script *install-audacity.ps1*
 
 This PowerShell script installs Audacity.
 

@@ -1,4 +1,4 @@
-## The PowerShell Script **play-mp3.ps1**
+## The PowerShell Script *play-mp3.ps1*
 
 This PowerShell script plays a sound file in .MP3 file format.
 

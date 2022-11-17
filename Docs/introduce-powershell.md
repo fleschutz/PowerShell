@@ -1,4 +1,4 @@
-## The PowerShell Script **introduce-powershell.ps1**
+## The PowerShell Script *introduce-powershell.ps1*
 
 This PowerShell script introduces PowerShell to new users.
 

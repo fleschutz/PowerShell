@@ -1,4 +1,4 @@
-## The PowerShell Script **hibernate.ps1**
+## The PowerShell Script *hibernate.ps1*
 
 This PowerShell script enables hibernate mode for the local computer immediately.
 

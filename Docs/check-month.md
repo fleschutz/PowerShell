@@ -1,4 +1,4 @@
-## The PowerShell Script **check-month.ps1**
+## The PowerShell Script *check-month.ps1*
 
 This PowerShell script determines and speaks the current month name by text-to-speech (TTS).
 

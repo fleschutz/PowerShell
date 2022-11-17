@@ -1,4 +1,4 @@
-## The PowerShell Script **turn-volume-on.ps1**
+## The PowerShell Script *turn-volume-on.ps1*
 
 This PowerShell script immediately unmutes the audio output.
 

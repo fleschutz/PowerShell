@@ -1,4 +1,4 @@
-## The PowerShell Script **list-print-jobs.ps1**
+## The PowerShell Script *list-print-jobs.ps1*
 
 This PowerShell script lists all print jobs of all printer devices.
 

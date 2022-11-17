@@ -1,4 +1,4 @@
-## The PowerShell Script **open-microsoft-store.ps1**
+## The PowerShell Script *open-microsoft-store.ps1*
 
 This script launches the Microsoft Store application.
 

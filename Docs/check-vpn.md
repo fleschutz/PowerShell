@@ -1,4 +1,4 @@
-## The PowerShell Script **check-vpn.ps1**
+## The PowerShell Script *check-vpn.ps1*
 
 This PowerShell script queries and prints the status of any VPN connection.
 

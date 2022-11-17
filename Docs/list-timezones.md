@@ -1,4 +1,4 @@
-## The PowerShell Script **list-timezones.ps1**
+## The PowerShell Script *list-timezones.ps1*
 
 This PowerShell script lists all available time zones.
 

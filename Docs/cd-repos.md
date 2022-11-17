@@ -1,4 +1,4 @@
-## The PowerShell Script **cd-repos.ps1**
+## The PowerShell Script *cd-repos.ps1*
 
 This PowerShell script changes the working directory to the user's Git repositories folder.
 

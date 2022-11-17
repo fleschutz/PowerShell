@@ -1,4 +1,4 @@
-## The PowerShell Script **export-to-manuals.ps1**
+## The PowerShell Script *export-to-manuals.ps1*
 
 This PowerShell script exports the comment based help of all PowerShell scripts as manuals.
 

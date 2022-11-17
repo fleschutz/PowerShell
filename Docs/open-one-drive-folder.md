@@ -1,4 +1,4 @@
-## The PowerShell Script **open-one-drive-folder.ps1**
+## The PowerShell Script *open-one-drive-folder.ps1*
 
 This script launches the File Explorer with the user's OneDrive folder.
 

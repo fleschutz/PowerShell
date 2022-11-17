@@ -1,4 +1,4 @@
-## The PowerShell Script **check-time-zone.ps1**
+## The PowerShell Script *check-time-zone.ps1*
 
 This PowerShell script determines and prints the current time zone.
 

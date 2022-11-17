@@ -1,4 +1,4 @@
-## The PowerShell Script **write-vertical.ps1**
+## The PowerShell Script *write-vertical.ps1*
 
 This PowerShell script writes text in vertical direction.
 

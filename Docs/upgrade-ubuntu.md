@@ -1,4 +1,4 @@
-## The PowerShell Script **upgrade-ubuntu.ps1**
+## The PowerShell Script *upgrade-ubuntu.ps1*
 
 This PowerShell script upgrades Ubuntu Linux to the latest (LTS) release.
 

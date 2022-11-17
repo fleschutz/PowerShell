@@ -1,4 +1,4 @@
-## The PowerShell Script **write-animated.ps1**
+## The PowerShell Script *write-animated.ps1*
 
 This PowerShell script writes animated text.
 

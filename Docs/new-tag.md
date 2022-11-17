@@ -1,4 +1,4 @@
-## The PowerShell Script **new-tag.ps1**
+## The PowerShell Script *new-tag.ps1*
 
 This PowerShell script creates a new tag in a Git repository.
 

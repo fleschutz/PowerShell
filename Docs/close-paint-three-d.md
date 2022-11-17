@@ -1,4 +1,4 @@
-## The PowerShell Script **close-paint-three-d.ps1**
+## The PowerShell Script *close-paint-three-d.ps1*
 
 This PowerShell script closes the Paint 3D application gracefully.
 

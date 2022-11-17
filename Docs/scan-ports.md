@@ -1,4 +1,4 @@
-## The PowerShell Script **scan-ports.ps1**
+## The PowerShell Script *scan-ports.ps1*
 
 This PowerShell script scans the network for open or closed ports.
 

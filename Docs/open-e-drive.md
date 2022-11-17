@@ -1,4 +1,4 @@
-## The PowerShell Script **open-e-drive.ps1**
+## The PowerShell Script *open-e-drive.ps1*
 
 This PowerShell script launches the File Explorer with the E: drive folder.
 

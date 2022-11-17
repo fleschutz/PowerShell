@@ -1,4 +1,4 @@
-## The PowerShell Script **make-install.ps1**
+## The PowerShell Script *make-install.ps1*
 
 This PowerShell script copies newer EXE's + DLL's from the build directory to the installation directory.
 

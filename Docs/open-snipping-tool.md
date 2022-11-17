@@ -1,4 +1,4 @@
-## The PowerShell Script **open-snipping-tool.ps1**
+## The PowerShell Script *open-snipping-tool.ps1*
 
 This script launches the Snipping Tool application.
 

@@ -1,4 +1,4 @@
-## The PowerShell Script **check-drives.ps1**
+## The PowerShell Script *check-drives.ps1*
 
 This PowerShell script checks all drives for free space left.
 

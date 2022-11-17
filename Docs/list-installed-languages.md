@@ -1,4 +1,4 @@
-## The PowerShell Script **list-installed-languages.ps1**
+## The PowerShell Script *list-installed-languages.ps1*
 
 list-installed-languages.ps1 
 

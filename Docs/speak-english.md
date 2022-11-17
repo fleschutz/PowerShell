@@ -1,4 +1,4 @@
-## The PowerShell Script **speak-english.ps1**
+## The PowerShell Script *speak-english.ps1*
 
 This PowerShell scripts speaks the given text with an English text-to-speech (TTS) voice.
 

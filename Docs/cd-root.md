@@ -1,4 +1,4 @@
-## The PowerShell Script **cd-root.ps1**
+## The PowerShell Script *cd-root.ps1*
 
 This PowerShell script changes the current working directory to the root directory (C:\ on Windows).
 

@@ -1,4 +1,4 @@
-## The PowerShell Script **speak-polish.ps1**
+## The PowerShell Script *speak-polish.ps1*
 
 This PowerShell script speaks the given text with a Polish text-to-speech (TTS) voice.
 

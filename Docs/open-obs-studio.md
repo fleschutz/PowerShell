@@ -1,4 +1,4 @@
-## The PowerShell Script **open-obs-studio.ps1**
+## The PowerShell Script *open-obs-studio.ps1*
 
 open-obs-studio.ps1 
 

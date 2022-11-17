@@ -1,4 +1,4 @@
-## The PowerShell Script **write-rot13.ps1**
+## The PowerShell Script *write-rot13.ps1*
 
 This PowerShell script writes text encoded or decoded with ROT13.
 

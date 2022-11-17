@@ -1,4 +1,4 @@
-## The PowerShell Script **play-goat-sound.ps1**
+## The PowerShell Script *play-goat-sound.ps1*
 
 This PowerShell script plays a goat sound.
 

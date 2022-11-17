@@ -1,4 +1,4 @@
-## The PowerShell Script **check-symlinks.ps1**
+## The PowerShell Script *check-symlinks.ps1*
 
 This PowerShell script checks every symbolic link in a folder (including subfolders).
 It returns the number of broken symlinks as exit value.

@@ -1,4 +1,4 @@
-## The PowerShell Script **check-midnight.ps1**
+## The PowerShell Script *check-midnight.ps1*
 
 check-midnight.ps1 
 

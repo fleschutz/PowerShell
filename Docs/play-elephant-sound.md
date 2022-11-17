@@ -1,4 +1,4 @@
-## The PowerShell Script **play-elephant-sound.ps1**
+## The PowerShell Script *play-elephant-sound.ps1*
 
 This PowerShell script plays an elephant sound.
 

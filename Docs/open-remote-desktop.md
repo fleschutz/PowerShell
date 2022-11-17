@@ -1,4 +1,4 @@
-## The PowerShell Script **open-remote-desktop.ps1**
+## The PowerShell Script *open-remote-desktop.ps1*
 
 This script launches the Remote Desktop application.
 

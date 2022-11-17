@@ -1,4 +1,4 @@
-## The PowerShell Script **open-dropbox-folder.ps1**
+## The PowerShell Script *open-dropbox-folder.ps1*
 
 This PowerShell script launches the File Explorer with the user's Dropbox folder.
 

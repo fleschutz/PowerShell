@@ -1,4 +1,4 @@
-## The PowerShell Script **check-week.ps1**
+## The PowerShell Script *check-week.ps1*
 
 This PowerShell script determines and speaks the current week number by text-to-speech (TTS).
 

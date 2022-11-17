@@ -1,4 +1,4 @@
-## The PowerShell Script **list-os-updates.ps1**
+## The PowerShell Script *list-os-updates.ps1*
 
 This PowerShell script lists the latest operating system update news.
 

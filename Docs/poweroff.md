@@ -1,4 +1,4 @@
-## The PowerShell Script **poweroff.ps1**
+## The PowerShell Script *poweroff.ps1*
 
 This script halts the local computer immediately (needs admin rights).
 

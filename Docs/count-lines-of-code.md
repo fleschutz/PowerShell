@@ -1,4 +1,4 @@
-## The PowerShell Script **count-lines-of-code.ps1**
+## The PowerShell Script *count-lines-of-code.ps1*
 
 This PowerShell script counts the number of code lines in a folder (including subfolders).
 

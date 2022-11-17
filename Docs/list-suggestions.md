@@ -1,4 +1,4 @@
-## The PowerShell Script **list-suggestions.ps1**
+## The PowerShell Script *list-suggestions.ps1*
 
 This PowerShell script lists "Did you mean?" suggestions from Google.
 

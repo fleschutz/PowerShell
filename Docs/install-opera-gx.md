@@ -1,4 +1,4 @@
-## The PowerShell Script **install-opera-gx.ps1**
+## The PowerShell Script *install-opera-gx.ps1*
 
 This PowerShell script installs Opera GX from Microsoft Store.
 

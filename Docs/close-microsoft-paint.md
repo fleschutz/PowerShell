@@ -1,4 +1,4 @@
-## The PowerShell Script **close-microsoft-paint.ps1**
+## The PowerShell Script *close-microsoft-paint.ps1*
 
 This PowerShell script closes the Microsoft Paint application gracefully.
 
