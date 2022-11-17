@@ -1,4 +1,4 @@
-## The PowerShell Script: open-google-calendar.ps1
+## The PowerShell Script **open-google-calendar.ps1**
 
 This PowerShell script launches the Web browser with the Google Calendar website.
 

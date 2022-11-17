@@ -1,4 +1,4 @@
-## The PowerShell Script: wakeup.ps1
+## The PowerShell Script **wakeup.ps1**
 
 This PowerShell script sends a magic UDP packet twice to a computer to wake him up (requires Wake-On-LAN).
 

@@ -1,4 +1,4 @@
-## The PowerShell Script: list-news.ps1
+## The PowerShell Script **list-news.ps1**
 
 This PowerShell script lists the latest news by using RSS (Really Simple Syndication) feeds.
 

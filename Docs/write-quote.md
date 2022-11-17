@@ -1,4 +1,4 @@
-## The PowerShell Script: write-quote.ps1
+## The PowerShell Script **write-quote.ps1**
 
 This PowerShell script writes a random quote to the console.
 

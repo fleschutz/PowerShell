@@ -1,4 +1,4 @@
-## The PowerShell Script: close-git-extensions.ps1
+## The PowerShell Script **close-git-extensions.ps1**
 
 This PowerShell script closes the Git Extensions application gracefully.
 

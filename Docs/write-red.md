@@ -1,4 +1,4 @@
-## The PowerShell Script: write-red.ps1
+## The PowerShell Script **write-red.ps1**
 
 This PowerShell script writes text in a red foreground color.
 

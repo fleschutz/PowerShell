@@ -1,4 +1,4 @@
-## The PowerShell Script: speak-portuguese.ps1
+## The PowerShell Script **speak-portuguese.ps1**
 
 This PowerShell script speaks the given text with a Portuguese text-to-speech (TTS) voice.
 

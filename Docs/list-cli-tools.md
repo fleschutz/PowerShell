@@ -1,4 +1,4 @@
-## The PowerShell Script: list-cli-tools.ps1
+## The PowerShell Script **list-cli-tools.ps1**
 
 list-cli-tools.ps1 
 

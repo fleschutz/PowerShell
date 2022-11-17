@@ -1,4 +1,4 @@
-## The PowerShell Script: check-health.ps1
+## The PowerShell Script **check-health.ps1**
 
 This PowerShell script checks some health parameter of the local computer.
 

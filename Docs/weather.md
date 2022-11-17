@@ -1,4 +1,4 @@
-## The PowerShell Script: weather.ps1
+## The PowerShell Script **weather.ps1**
 
 This PowerShell script lists the current weather forecast.
 

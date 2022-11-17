@@ -1,4 +1,4 @@
-## The PowerShell Script: open-microsoft-solitaire.ps1
+## The PowerShell Script **open-microsoft-solitaire.ps1**
 
 This script launches the Microsoft Solitaire application.
 

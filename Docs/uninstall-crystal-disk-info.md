@@ -1,4 +1,4 @@
-## The PowerShell Script: uninstall-crystal-disk-info.ps1
+## The PowerShell Script **uninstall-crystal-disk-info.ps1**
 
 This PowerShell script uninstalls CrystalDiskInfo from the local computer.
 

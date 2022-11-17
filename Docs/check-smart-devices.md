@@ -1,4 +1,4 @@
-## The PowerShell Script: check-smart-devices.ps1
+## The PowerShell Script **check-smart-devices.ps1**
 
 check-smart-devices.ps1 
 

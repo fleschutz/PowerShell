@@ -1,4 +1,4 @@
-## The PowerShell Script: play-bee-sound.ps1
+## The PowerShell Script **play-bee-sound.ps1**
 
 This PowerShell script plays a bee sound.
 

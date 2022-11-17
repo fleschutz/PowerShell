@@ -1,4 +1,4 @@
-## The PowerShell Script: install-paint-3d.ps1
+## The PowerShell Script **install-paint-3d.ps1**
 
 This PowerShell script installs Paint 3D from the Microsoft Store.
 

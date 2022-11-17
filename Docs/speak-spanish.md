@@ -1,4 +1,4 @@
-## The PowerShell Script: speak-spanish.ps1
+## The PowerShell Script **speak-spanish.ps1**
 
 This PowerShell script speaks the given text with a Spanish text-to-speech (TTS) voice.
 

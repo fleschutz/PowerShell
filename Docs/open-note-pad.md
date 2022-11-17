@@ -1,4 +1,4 @@
-## The PowerShell Script: open-note-pad.ps1
+## The PowerShell Script **open-note-pad.ps1**
 
 This script launches the Notepad application.
 

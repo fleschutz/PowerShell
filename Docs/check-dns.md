@@ -1,4 +1,4 @@
-## The PowerShell Script: check-dns.ps1
+## The PowerShell Script **check-dns.ps1**
 
 This PowerShell script measures and prints the DNS resolution speed by using 200 frequently used domain names.
 

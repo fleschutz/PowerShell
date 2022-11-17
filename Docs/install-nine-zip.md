@@ -1,4 +1,4 @@
-## The PowerShell Script: install-nine-zip.ps1
+## The PowerShell Script **install-nine-zip.ps1**
 
 This PowerShell script installs 9 ZIP from the Microsoft Store.
 

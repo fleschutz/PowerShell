@@ -1,4 +1,4 @@
-## The PowerShell Script: speak-countdown.ps1
+## The PowerShell Script **speak-countdown.ps1**
 
 This PowerShell script speaks a countdown by text-to-speech (TTS) starting from a given number.
 

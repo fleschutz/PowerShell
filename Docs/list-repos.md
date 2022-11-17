@@ -1,4 +1,4 @@
-## The PowerShell Script: list-repos.ps1
+## The PowerShell Script **list-repos.ps1**
 
 This PowerShell script lists the details of all Git repositories in a folder.
 

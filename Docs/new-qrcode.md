@@ -1,4 +1,4 @@
-## The PowerShell Script: new-qrcode.ps1
+## The PowerShell Script **new-qrcode.ps1**
 
 This PowerShell script generates a new QR code image file.
 

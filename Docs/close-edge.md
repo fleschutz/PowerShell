@@ -1,4 +1,4 @@
-## The PowerShell Script: close-edge.ps1
+## The PowerShell Script **close-edge.ps1**
 
 This PowerShell script closes the Microsoft Edge Web browser gracefully.
 

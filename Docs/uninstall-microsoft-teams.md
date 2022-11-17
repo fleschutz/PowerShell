@@ -1,4 +1,4 @@
-## The PowerShell Script: uninstall-microsoft-teams.ps1
+## The PowerShell Script **uninstall-microsoft-teams.ps1**
 
 This PowerShell script uninstalls Microsoft Teams from the local computer.
 

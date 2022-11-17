@@ -1,4 +1,4 @@
-## The PowerShell Script: set-profile.ps1
+## The PowerShell Script **set-profile.ps1**
 
 This PowerShell script sets the PowerShell profile for the current user.
 

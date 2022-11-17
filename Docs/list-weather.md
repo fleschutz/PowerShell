@@ -1,4 +1,4 @@
-## The PowerShell Script: list-weather.ps1
+## The PowerShell Script **list-weather.ps1**
 
 This PowerShell script lists the hourly weather report.
 

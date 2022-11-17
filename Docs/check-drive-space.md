@@ -1,4 +1,4 @@
-## The PowerShell Script: check-drive-space.ps1
+## The PowerShell Script **check-drive-space.ps1**
 
 This PowerShell script checks a drive for free space left (20 GB by default).
 

@@ -1,4 +1,4 @@
-## The PowerShell Script: list-earthquakes.ps1
+## The PowerShell Script **list-earthquakes.ps1**
 
 This PowerShell script lists major earthquakes with magnitude >= 6.0 for the last 30 days.
 

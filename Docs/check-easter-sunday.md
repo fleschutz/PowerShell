@@ -1,4 +1,4 @@
-## The PowerShell Script: check-easter-sunday.ps1
+## The PowerShell Script **check-easter-sunday.ps1**
 
 This PowerShell script checks the time until Easter Sunday and replies by text-to-speech (TTS).
 

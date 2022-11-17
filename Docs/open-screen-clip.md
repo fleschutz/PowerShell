@@ -1,4 +1,4 @@
-## The PowerShell Script: open-screen-clip.ps1
+## The PowerShell Script **open-screen-clip.ps1**
 
 This script launches the Screen Clip application.
 

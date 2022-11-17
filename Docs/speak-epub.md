@@ -1,4 +1,4 @@
-## The PowerShell Script: speak-epub.ps1
+## The PowerShell Script **speak-epub.ps1**
 
 This PowerShell script speaks the content of the given Epub file by text-to-speech (TTS).
 

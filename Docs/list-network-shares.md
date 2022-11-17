@@ -1,4 +1,4 @@
-## The PowerShell Script: list-network-shares.ps1
+## The PowerShell Script **list-network-shares.ps1**
 
 This PowerShell script lists all network shares of the local computer.
 

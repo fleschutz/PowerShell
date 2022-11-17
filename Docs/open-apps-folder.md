@@ -1,4 +1,4 @@
-## The PowerShell Script: open-apps-folder.ps1
+## The PowerShell Script **open-apps-folder.ps1**
 
 This PowerShell script launches the File Explorer showing the UWP apps folder.
 

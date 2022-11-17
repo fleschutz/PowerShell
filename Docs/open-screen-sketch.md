@@ -1,4 +1,4 @@
-## The PowerShell Script: open-screen-sketch.ps1
+## The PowerShell Script **open-screen-sketch.ps1**
 
 This script launches the Screen Sketch application.
 

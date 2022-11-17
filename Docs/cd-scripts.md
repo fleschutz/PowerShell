@@ -1,4 +1,4 @@
-## The PowerShell Script: cd-scripts.ps1
+## The PowerShell Script **cd-scripts.ps1**
 
 This PowerShell script changes the working directory to the PowerShell scripts folder.
 

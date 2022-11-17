@@ -1,4 +1,4 @@
-## The PowerShell Script: print-image.ps1
+## The PowerShell Script **print-image.ps1**
 
 This PowerShell script shows the printer dialogue to print the given image file.
 

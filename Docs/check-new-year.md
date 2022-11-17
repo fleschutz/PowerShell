@@ -1,4 +1,4 @@
-## The PowerShell Script: check-new-year.ps1
+## The PowerShell Script **check-new-year.ps1**
 
 This PowerShell script checks the time until New Year and replies by text-to-speech (TTS).
 

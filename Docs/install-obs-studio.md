@@ -1,4 +1,4 @@
-## The PowerShell Script: install-obs-studio.ps1
+## The PowerShell Script **install-obs-studio.ps1**
 
 This PowerShell script installs OBS Studio (admin rights are needed).
 

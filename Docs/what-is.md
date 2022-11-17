@@ -1,4 +1,4 @@
-## The PowerShell Script: what-is.ps1
+## The PowerShell Script **what-is.ps1**
 
 This PowerShell script prints a description of the given abbreviation.
 

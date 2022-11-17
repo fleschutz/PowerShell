@@ -1,4 +1,4 @@
-## The PowerShell Script: list-user-accounts.ps1
+## The PowerShell Script **list-user-accounts.ps1**
 
 This PowerShell script lists the user accounts on the local computer.
 

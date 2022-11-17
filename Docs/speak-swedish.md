@@ -1,4 +1,4 @@
-## The PowerShell Script: speak-swedish.ps1
+## The PowerShell Script **speak-swedish.ps1**
 
 This PowerShell script speaks the given text with a Swedish text-to-speech (TTS) voice.
 

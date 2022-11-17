@@ -1,4 +1,4 @@
-## The PowerShell Script: check-cpu.ps1
+## The PowerShell Script **check-cpu.ps1**
 
 check-cpu.ps1 
 

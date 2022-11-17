@@ -1,4 +1,4 @@
-## The PowerShell Script: list-bios.ps1
+## The PowerShell Script **list-bios.ps1**
 
 This PowerShell script lists the BIOS details.
 

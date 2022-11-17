@@ -1,4 +1,4 @@
-## The PowerShell Script: cd-desktop.ps1
+## The PowerShell Script **cd-desktop.ps1**
 
 This PowerShell script changes the working directory to the user's desktop folder.
 

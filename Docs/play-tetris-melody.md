@@ -1,4 +1,4 @@
-## The PowerShell Script: play-tetris-melody.ps1
+## The PowerShell Script **play-tetris-melody.ps1**
 
 This PowerShell script plays the Tetris melody.
 

@@ -1,4 +1,4 @@
-## The PowerShell Script: show-notification.ps1
+## The PowerShell Script **show-notification.ps1**
 
 This PowerShell script shows a toast-message notification for the Windows 10 Notification Center.
 

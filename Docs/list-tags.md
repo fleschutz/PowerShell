@@ -1,4 +1,4 @@
-## The PowerShell Script: list-tags.ps1
+## The PowerShell Script **list-tags.ps1**
 
 This PowerShell script lists all tags in a Git repository.
 

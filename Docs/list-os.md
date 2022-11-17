@@ -1,4 +1,4 @@
-## The PowerShell Script: list-os.ps1
+## The PowerShell Script **list-os.ps1**
 
 This PowerShell script lists the exact operating system version.
 

@@ -1,4 +1,4 @@
-## The PowerShell Script: check-ping.ps1
+## The PowerShell Script **check-ping.ps1**
 
 This PowerShell script checks the ping latency from the local computer to some Internet hosts.
 

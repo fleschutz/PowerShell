@@ -1,4 +1,4 @@
-## The PowerShell Script: open-internet-archive.ps1
+## The PowerShell Script **open-internet-archive.ps1**
 
 This script launches the Web browser with the Internet Archive website.
 

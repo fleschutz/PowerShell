@@ -1,4 +1,4 @@
-## The PowerShell Script: speak-dutch.ps1
+## The PowerShell Script **speak-dutch.ps1**
 
 This PowerShell script speaks the given text with a Dutch text-to-speech (TTS) voice.
 

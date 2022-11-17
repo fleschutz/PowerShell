@@ -1,4 +1,4 @@
-## The PowerShell Script: install-one-calendar.ps1
+## The PowerShell Script **install-one-calendar.ps1**
 
 This PowerShell script installs One Calendar from the Microsoft Store.
 

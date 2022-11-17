@@ -1,4 +1,4 @@
-## The PowerShell Script: play-horse-sound.ps1
+## The PowerShell Script **play-horse-sound.ps1**
 
 This PowerShell script plays a horse sound.
 

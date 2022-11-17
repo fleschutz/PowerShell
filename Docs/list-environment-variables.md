@@ -1,4 +1,4 @@
-## The PowerShell Script: list-environment-variables.ps1
+## The PowerShell Script **list-environment-variables.ps1**
 
 This PowerShell script lists all environment variables.
 

@@ -1,4 +1,4 @@
-## The PowerShell Script: publish-to-ipfs.ps1
+## The PowerShell Script **publish-to-ipfs.ps1**
 
 This script publishes the given files and folders to IPFS.
 

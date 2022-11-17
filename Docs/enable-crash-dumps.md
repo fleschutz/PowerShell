@@ -1,4 +1,4 @@
-## The PowerShell Script: enable-crash-dumps.ps1
+## The PowerShell Script **enable-crash-dumps.ps1**
 
 This PowerShell script enables the writing of crash dumps.
 

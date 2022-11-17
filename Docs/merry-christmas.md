@@ -1,4 +1,4 @@
-## The PowerShell Script: merry-christmas.ps1
+## The PowerShell Script **merry-christmas.ps1**
 
 This PowerShell script replies to 'Merry Christmas' by text-to-speech (TTS).
 

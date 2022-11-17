@@ -1,4 +1,4 @@
-## The PowerShell Script: list-nic.ps1
+## The PowerShell Script **list-nic.ps1**
 
 This PowerShell script lists the details of the installed network interfaces.
 

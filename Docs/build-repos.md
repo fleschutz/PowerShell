@@ -1,4 +1,4 @@
-## The PowerShell Script: build-repos.ps1
+## The PowerShell Script **build-repos.ps1**
 
 This PowerShell script builds all Git repositories in a folder.
 

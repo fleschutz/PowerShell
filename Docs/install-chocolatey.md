@@ -1,4 +1,4 @@
-## The PowerShell Script: install-chocolatey.ps1
+## The PowerShell Script **install-chocolatey.ps1**
 
 This PowerShell script installs Chocolatey onto the local computer (needs admin rights).
 
