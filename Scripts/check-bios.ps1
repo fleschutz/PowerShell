@@ -20,7 +20,7 @@ try {
 		$Model = $BIOS.Name
 		$SerialNumber = $BIOS.SerialNumber
 		$Version = $BIOS.Version
-		"✅ $Manufacturer BIOS $($Model): S/N $SerialNumber, version $Version"
+		"✅ BIOS $Manufacturer $($Model): S/N $SerialNumber, version $Version"
 	}
 	exit 0 # success
 } catch {
