@@ -27,17 +27,16 @@ try {
 	if (-not(Test-Path "$ParentDir" -pathType container)) { throw "Can't access folder: $ParentDir" }
 	$Folders = (Get-ChildItem "$ParentDir" -attributes Directory)
 	$NumFolders = $Folders.Count
-	Write-Host "$NumFolders subfolders"
+	Write-Host "$NumFolders subfolders found"
 
-	[int]$Step = 3
+	[int]$Step = 2
 	foreach ($Folder in $Folders) {
 		$FolderName = (Get-Item "$Folder").Name
-		Write-Host "⏳ ($Step/$($NumFolders + 2)) Fetching into 📂$FolderName..." -noNewline
+		$Step++
+		Write-Host "⏳ ($Step/$($NumFolders + 2)) Fetching into 📂$FolderName...  " -noNewline
 
 		& git -C "$Folder" fetch --all --recurse-submodules --prune --prune-tags --force
 		if ($lastExitCode -ne "0") { throw "'git fetch' in $Folder failed with exit code $lastExitCode" }
-
-		$Step++
 	}
 	[int]$Elapsed = $StopWatch.Elapsed.TotalSeconds
 	"✔️ fetched $NumFolders Git repositories in $Elapsed sec."
