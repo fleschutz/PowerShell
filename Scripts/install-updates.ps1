@@ -29,7 +29,7 @@ try {
 	} else {
 		"⏳ (1/2) Querying application updates..."
 		& winget upgrade
-
+		" "
 		"⏳ (2/2) Upgrading applications..."
 		& winget upgrade --all
 	}
