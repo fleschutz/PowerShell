@@ -22,7 +22,7 @@ try {
 	$Area = $Weather.nearest_area.areaName.value
 	$Region = $Weather.nearest_area.region.value
 
-	& "$PSScriptRoot/give-reply.ps1" "$($WindSpeed)km/h wind from $WindDir at $Area ($Region)."
+	& "$PSScriptRoot/speak-english.ps1" "$($WindSpeed)km/h wind from $WindDir at $Area ($Region)."
 	exit 0 # success
 } catch {
 	"⚠️ Error in line $($_.InvocationInfo.ScriptLineNumber): $($Error[0])"

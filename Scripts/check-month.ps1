@@ -15,7 +15,7 @@
 try {
 	[system.threading.thread]::currentthread.currentculture=[system.globalization.cultureinfo]"en-US"
 	$MonthName = (Get-Date -UFormat %B)
-	& "$PSScriptRoot/give-reply.ps1" "It's $MonthName."
+	& "$PSScriptRoot/speak-english.ps1" "It's $MonthName."
 	exit 0 # success
 } catch {
 	"⚠️ Error in line $($_.InvocationInfo.ScriptLineNumber): $($Error[0])"

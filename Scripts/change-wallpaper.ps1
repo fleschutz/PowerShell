@@ -23,7 +23,7 @@ function GetTempDir {
 }
 
 try {
-	& "$PSScriptRoot/give-reply.ps1" "Just a second..."
+	& "$PSScriptRoot/speak-english.ps1" "Just a second..."
 
 	$Path = "$(GetTempDir)/next_wallpaper.jpg"
 	& wget -O $Path "https://source.unsplash.com/3840x2160?$Category"

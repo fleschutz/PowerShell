@@ -13,5 +13,5 @@
 
 $Reply = "Merry Christmas to you too!", "Happy Christmas to you too!" | Get-Random
 
-& "$PSScriptRoot/give-reply.ps1" "$Reply"
+& "$PSScriptRoot/speak-english.ps1" "$Reply"
 exit 0 # success

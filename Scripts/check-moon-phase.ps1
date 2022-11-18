@@ -35,7 +35,7 @@ try {
 	} else {                      $Reply += ", last new moon was $MoonAge days ago"
 	}
 
-	& "$PSScriptRoot/give-reply.ps1" "$Reply"
+	& "$PSScriptRoot/speak-english.ps1" "$Reply"
 	exit 0 # success
 } catch {
 	"⚠️ Error in line $($_.InvocationInfo.ScriptLineNumber): $($Error[0])"
