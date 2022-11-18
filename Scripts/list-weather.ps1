@@ -22,6 +22,8 @@ function Describe { param([string]$Desc)
 	"Light drizzle"			{ return "💧 light drizzle" }
 	"Light rain"			{ return "💧 light rain   " }
 	"Light rain shower"		{ return "💧 light rain shower" }
+	"Light snow"			{ return "❄️ light snow" }
+	"Moderate snow"			{ return "❄️ moderate snow" }
 	"Mist"				{ return "🌫  misty      " }
 	"Overcast"			{ return "☁️ overcast    " }
 	"Partly cloudy"			{ return "⛅️partly cloudy" }
