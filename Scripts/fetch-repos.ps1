@@ -32,7 +32,7 @@ try {
 	[int]$Step = 3
 	foreach ($Folder in $Folders) {
 		$FolderName = (Get-Item "$Folder").Name
-		"⏳ ($Step/$($NumFolders + 2)) Fetching into 📂$FolderName..."
+		Write-Host "⏳ ($Step/$($NumFolders + 2)) Fetching into 📂$FolderName..." -noNewline
 
 		& git -C "$Folder" fetch --all --recurse-submodules --prune --prune-tags --force
 		if ($lastExitCode -ne "0") { throw "'git fetch' in $Folder failed with exit code $lastExitCode" }
