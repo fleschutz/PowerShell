@@ -1,4 +1,4 @@
-## The PowerShell Script *list-workdir.ps1*
+## The *list-workdir.ps1* PowerShell Script
 
 This PowerShell script lists the current working directory (but not the content itself!)
 

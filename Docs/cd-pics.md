@@ -1,4 +1,4 @@
-## The PowerShell Script *cd-pics.ps1*
+## The *cd-pics.ps1* PowerShell Script
 
 This PowerShell script changes the working directory to the user's pictures folder.
 

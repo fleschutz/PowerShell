@@ -1,4 +1,4 @@
-## The PowerShell Script *check-weather.ps1*
+## The *check-weather.ps1* PowerShell Script
 
 This PowerShell script checks the current weather report.
 
@@ -67,7 +67,7 @@ try {
 	$Area = $Weather.nearest_area.areaName.value
 	$Region = $Weather.nearest_area.region.value
 
-	& "$PSScriptRoot/give-reply.ps1" "$($Temp)°C, $($Precip)mm rain, $($Humidity)% humidity, $($WindSpeed)km/h wind from $WindDir with $($Clouds)% clouds and $($Visib)km visibility at $Area ($Region)."
+	& "$PSScriptRoot/speak-english.ps1" "$($Temp)°C, $($Precip)mm rain, $($Humidity)% humidity, $($WindSpeed)km/h wind from $WindDir with $($Clouds)% clouds and $($Visib)km visibility at $Area ($Region)."
 	exit 0 # success
 } catch {
 	"⚠️ Error in line $($_.InvocationInfo.ScriptLineNumber): $($Error[0])"

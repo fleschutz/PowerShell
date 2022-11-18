@@ -1,4 +1,4 @@
-## The PowerShell Script *list-outlook-inbox.ps1*
+## The *list-outlook-inbox.ps1* PowerShell Script
 
 This PowerShell script lists the emails in the inbox of Outlook.
 

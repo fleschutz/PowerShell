@@ -1,4 +1,4 @@
-## The PowerShell Script *open-recycle-bin-folder.ps1*
+## The *open-recycle-bin-folder.ps1* PowerShell Script
 
 This script launches the File Explorer with the user's recycle bin folder.
 

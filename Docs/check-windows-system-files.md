@@ -1,4 +1,4 @@
-## The PowerShell Script *check-windows-system-files.ps1*
+## The *check-windows-system-files.ps1* PowerShell Script
 
 This PowerShell script checks the validity of the Windows system files. It requires admin rights.
 

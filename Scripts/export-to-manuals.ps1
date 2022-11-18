@@ -20,9 +20,11 @@ param([string]$FilePattern = "$PSScriptRoot/*.ps1", [string]$TargetDir = "$PSScr
 try {
 	$StopWatch = [system.diagnostics.stopwatch]::startNew()
 
+	Write-Host "⏳ (1/2) Reading scripts from: $FilePattern...  " -noNewline
 	$Scripts = Get-ChildItem "$FilePattern"
-	"⏳ Found $($Scripts.Count) scripts, exporting them to $TargetDir..."
+	Write-Host "found $($Scripts.Count) scripts"
 
+	Write-Host "⏳ (2/2) Exporting manuals to: $TargetDir..."
 	foreach ($Script in $Scripts) {
 		& "$PSScriptRoot/convert-ps2md.ps1" "$Script" > "$TargetDir/$($Script.BaseName).md"
 	}

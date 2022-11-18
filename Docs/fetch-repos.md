@@ -1,4 +1,4 @@
-## The PowerShell Script *fetch-repos.ps1*
+## The *fetch-repos.ps1* PowerShell Script
 
 This PowerShell script fetches updates for all Git repositories in a folder (including submodules).
 

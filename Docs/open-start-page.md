@@ -1,4 +1,4 @@
-## The PowerShell Script *open-start-page.ps1*
+## The *open-start-page.ps1* PowerShell Script
 
 This script launches the Web browser with the Startpage website.
 

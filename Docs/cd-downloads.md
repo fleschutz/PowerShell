@@ -1,4 +1,4 @@
-## The PowerShell Script *cd-downloads.ps1*
+## The *cd-downloads.ps1* PowerShell Script
 
 This PowerShell script changes the working directory to the user's downloads folder.
 

@@ -1,4 +1,4 @@
-## The PowerShell Script *open-xing.ps1*
+## The *open-xing.ps1* PowerShell Script
 
 This script launches the XING application.
 

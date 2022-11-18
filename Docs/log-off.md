@@ -1,4 +1,4 @@
-## The PowerShell Script *log-off.ps1*
+## The *log-off.ps1* PowerShell Script
 
 This PowerShell script logs off the current Windows user.
 

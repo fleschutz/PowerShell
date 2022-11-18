@@ -1,4 +1,4 @@
-## The PowerShell Script *list-cheat-sheet.ps1*
+## The *list-cheat-sheet.ps1* PowerShell Script
 
 This PowerShell script lists the PowerShell cheat sheet.
 

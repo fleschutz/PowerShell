@@ -1,4 +1,4 @@
-## The PowerShell Script *speak-arabic.ps1*
+## The *speak-arabic.ps1* PowerShell Script
 
 This PowerShell script speaks the given text with an Arabic text-to-speech (TTS) voice.
 

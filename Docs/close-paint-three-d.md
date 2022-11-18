@@ -1,4 +1,4 @@
-## The PowerShell Script *close-paint-three-d.ps1*
+## The *close-paint-three-d.ps1* PowerShell Script
 
 This PowerShell script closes the Paint 3D application gracefully.
 
@@ -40,7 +40,7 @@ https://github.com/fleschutz/PowerShell
 
 TaskKill /im PaintStudio.View.exe /f
 if ($lastExitCode -ne "0") {
-	& "$PSScriptRoot/give-reply.ps1" "Sorry, Paint 3D isn't running."
+	& "$PSScriptRoot/speak-english.ps1" "Sorry, Paint 3D isn't running."
 	exit 1
 }
 exit 0 # success

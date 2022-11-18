@@ -1,4 +1,4 @@
-## The PowerShell Script *check-midnight.ps1*
+## The *check-midnight.ps1* PowerShell Script
 
 check-midnight.ps1 
 
@@ -49,7 +49,7 @@ try {
 		$TimeSpan = TimeSpanToString($Midnight - $Now)
 		$Reply = "Midnight is in $TimeSpan."
 	}
-	& "$PSScriptRoot/give-reply.ps1" "$Reply"
+	& "$PSScriptRoot/speak-english.ps1" "$Reply"
 	exit 0 # success
 } catch {
 	"⚠️ Error in line $($_.InvocationInfo.ScriptLineNumber): $($Error[0])"

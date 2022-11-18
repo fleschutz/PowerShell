@@ -1,4 +1,4 @@
-## The PowerShell Script *open-vpn-settings.ps1*
+## The *open-vpn-settings.ps1* PowerShell Script
 
 This PowerShell script launches the VPN settings of Windows.
 

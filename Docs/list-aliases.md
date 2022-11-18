@@ -1,4 +1,4 @@
-## The PowerShell Script *list-aliases.ps1*
+## The *list-aliases.ps1* PowerShell Script
 
 This PowerShell scripts lists all PowerShell aliases.
 

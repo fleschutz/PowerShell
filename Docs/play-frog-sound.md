@@ -1,4 +1,4 @@
-## The PowerShell Script *play-frog-sound.ps1*
+## The *play-frog-sound.ps1* PowerShell Script
 
 This PowerShell script plays a frog sound.
 

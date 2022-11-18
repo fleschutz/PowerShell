@@ -1,4 +1,4 @@
-## The PowerShell Script *list-services.ps1*
+## The *list-services.ps1* PowerShell Script
 
 This PowerShell script lists all local computer services.
 

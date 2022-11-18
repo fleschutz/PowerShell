@@ -1,4 +1,4 @@
-## The PowerShell Script *cd-music.ps1*
+## The *cd-music.ps1* PowerShell Script
 
 This PowerShell script changes the working directory to the user's music folder.
 

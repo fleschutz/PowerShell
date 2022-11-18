@@ -1,4 +1,4 @@
-## The PowerShell Script *uninstall-twitter.ps1*
+## The *uninstall-twitter.ps1* PowerShell Script
 
 This PowerShell script uninstalls Twitter from the local computer.
 

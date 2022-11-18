@@ -1,4 +1,4 @@
-## The PowerShell Script *install-thunderbird.ps1*
+## The *install-thunderbird.ps1* PowerShell Script
 
 This PowerShell script installs Mozilla Thunderbird.
 

@@ -1,4 +1,4 @@
-## The PowerShell Script *open-space-weather.ps1*
+## The *open-space-weather.ps1* PowerShell Script
 
 This script launches the Web browser with the Space Weather website.
 

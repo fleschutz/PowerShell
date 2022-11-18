@@ -1,4 +1,4 @@
-## The PowerShell Script *play-cat-sound.ps1*
+## The *play-cat-sound.ps1* PowerShell Script
 
 This PowerShell script plays a cat sound.
 

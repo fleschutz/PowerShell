@@ -1,4 +1,4 @@
-## The PowerShell Script *speak-italian.ps1*
+## The *speak-italian.ps1* PowerShell Script
 
 This PowerShell script speaks the given text with an Italian text-to-speech (TTS) voice.
 

@@ -1,4 +1,4 @@
-## The PowerShell Script *check-ipv4-address.ps1*
+## The *check-ipv4-address.ps1* PowerShell Script
 
 This PowerShell script checks the given IPv4 address for validity.
 

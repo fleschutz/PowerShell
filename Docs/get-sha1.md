@@ -1,4 +1,4 @@
-## The PowerShell Script *get-sha1.ps1*
+## The *get-sha1.ps1* PowerShell Script
 
 
 

@@ -1,4 +1,4 @@
-## The PowerShell Script *list-motherboard.ps1*
+## The *list-motherboard.ps1* PowerShell Script
 
 This PowerShell script lists the motherboard details.
 

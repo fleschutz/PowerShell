@@ -1,4 +1,4 @@
-## The PowerShell Script *speak-mandarin.ps1*
+## The *speak-mandarin.ps1* PowerShell Script
 
 This PowerShell script speaks the given text with a Mandarin text-to-speech (TTS) voice.
 

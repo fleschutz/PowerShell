@@ -1,4 +1,4 @@
-## The PowerShell Script *check-operating-system.ps1*
+## The *check-operating-system.ps1* PowerShell Script
 
 This PowerShell script queries and lists operating system details.
 

@@ -1,4 +1,4 @@
-## The PowerShell Script *list-wifi.ps1*
+## The *list-wifi.ps1* PowerShell Script
 
 This PowerShell script lists the WIFI networks.
 

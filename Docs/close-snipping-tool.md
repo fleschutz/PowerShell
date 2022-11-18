@@ -1,4 +1,4 @@
-## The PowerShell Script *close-snipping-tool.ps1*
+## The *close-snipping-tool.ps1* PowerShell Script
 
 This PowerShell script closes the Snipping Tool application gracefully.
 

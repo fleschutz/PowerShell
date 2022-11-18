@@ -1,4 +1,4 @@
-## The PowerShell Script *open-street-map.ps1*
+## The *open-street-map.ps1* PowerShell Script
 
 This script launches the Web browser with the OpenStreetMap website.
 

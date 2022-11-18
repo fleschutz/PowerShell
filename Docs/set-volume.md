@@ -1,4 +1,4 @@
-## The PowerShell Script *set-volume.ps1*
+## The *set-volume.ps1* PowerShell Script
 
 This PowerShell script sets the audio volume in percent.
 
@@ -65,7 +65,7 @@ try {
 	for( $i = 0; $i -lt $keyPresses; $i++ ) {
 		$obj.SendKeys( [char] 175 )
 	}
-	& "$PSScriptRoot/give-reply.ps1" "$($Volume)% volume."
+	& "$PSScriptRoot/speak-english.ps1" "$($Volume)% volume."
 	exit 0 # success
 } catch {
 	"⚠️ Error in line $($_.InvocationInfo.ScriptLineNumber): $($Error[0])"

@@ -1,4 +1,4 @@
-## The PowerShell Script *new-script.ps1*
+## The *new-script.ps1* PowerShell Script
 
 This PowerShell script creates a new PowerShell script file (by using template file ../Data/template.ps1).
 

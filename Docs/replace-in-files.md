@@ -1,4 +1,4 @@
-## The PowerShell Script *replace-in-files.ps1*
+## The *replace-in-files.ps1* PowerShell Script
 
 This PowerShell script searches and replaces a pattern in the given files by the replacement.
 

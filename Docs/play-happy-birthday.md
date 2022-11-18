@@ -1,4 +1,4 @@
-## The PowerShell Script *play-happy-birthday.ps1*
+## The *play-happy-birthday.ps1* PowerShell Script
 
 This PowerShell script plays the famous Happy Birthday song.
 

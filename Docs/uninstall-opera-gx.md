@@ -1,4 +1,4 @@
-## The PowerShell Script *uninstall-opera-gx.ps1*
+## The *uninstall-opera-gx.ps1* PowerShell Script
 
 This PowerShell script uninstalls Opera GX from the local computer.
 

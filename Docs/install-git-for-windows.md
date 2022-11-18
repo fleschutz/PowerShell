@@ -1,4 +1,4 @@
-## The PowerShell Script *install-git-for-windows.ps1*
+## The *install-git-for-windows.ps1* PowerShell Script
 
 This PowerShell script installs Git for Windows.
 

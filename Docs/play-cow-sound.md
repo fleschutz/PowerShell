@@ -1,4 +1,4 @@
-## The PowerShell Script *play-cow-sound.ps1*
+## The *play-cow-sound.ps1* PowerShell Script
 
 This PowerShell script plays a cow sound.
 

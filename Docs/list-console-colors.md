@@ -1,4 +1,4 @@
-## The PowerShell Script *list-console-colors.ps1*
+## The *list-console-colors.ps1* PowerShell Script
 
 This PowerShell script lists all available console colors.
 

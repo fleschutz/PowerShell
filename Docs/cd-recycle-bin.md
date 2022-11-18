@@ -1,4 +1,4 @@
-## The PowerShell Script *cd-recycle-bin.ps1*
+## The *cd-recycle-bin.ps1* PowerShell Script
 
 cd-recycle-bin.ps1 
 

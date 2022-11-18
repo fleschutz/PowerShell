@@ -1,4 +1,4 @@
-## The PowerShell Script *install-git-extensions.ps1*
+## The *install-git-extensions.ps1* PowerShell Script
 
 This PowerShell script installs Git Extensions.
 

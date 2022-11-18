@@ -1,4 +1,4 @@
-## The PowerShell Script *open-accu-weather.ps1*
+## The *open-accu-weather.ps1* PowerShell Script
 
 This PowerShell script launches the Web browser with the AccuWeather website.
 

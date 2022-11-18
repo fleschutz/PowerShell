@@ -1,4 +1,4 @@
-## The PowerShell Script *play-wolf-sound.ps1*
+## The *play-wolf-sound.ps1* PowerShell Script
 
 This PowerShell script plays a wolf sound.
 

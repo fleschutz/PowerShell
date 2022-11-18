@@ -1,4 +1,4 @@
-## The PowerShell Script *open-google-earth.ps1*
+## The *open-google-earth.ps1* PowerShell Script
 
 This PowerShell script launches the Web browser with the Google Earth website.
 

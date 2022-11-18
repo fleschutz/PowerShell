@@ -1,4 +1,4 @@
-## The PowerShell Script *check-noon.ps1*
+## The *check-noon.ps1* PowerShell Script
 
 check-noon.ps1 
 
@@ -48,7 +48,7 @@ try {
 		$TimeSpan = TimeSpanToString($Now - $Noon)
 		$Reply = "Noon was $TimeSpan ago."
 	}
-	& "$PSScriptRoot/give-reply.ps1" "$Reply"
+	& "$PSScriptRoot/speak-english.ps1" "$Reply"
 	exit 0 # success
 } catch {
 	"⚠️ Error in line $($_.InvocationInfo.ScriptLineNumber): $($Error[0])"

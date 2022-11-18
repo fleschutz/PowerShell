@@ -1,4 +1,4 @@
-## The PowerShell Script *open-task-manager.ps1*
+## The *open-task-manager.ps1* PowerShell Script
 
 This script launches the Windows Task Manager application.
 

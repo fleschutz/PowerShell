@@ -1,4 +1,4 @@
-## The PowerShell Script *list-cpu.ps1*
+## The *list-cpu.ps1* PowerShell Script
 
 This PowerShell script lists the CPU details.
 

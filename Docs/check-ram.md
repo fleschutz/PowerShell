@@ -1,4 +1,4 @@
-## The PowerShell Script *check-ram.ps1*
+## The *check-ram.ps1* PowerShell Script
 
 check-ram.ps1 
 

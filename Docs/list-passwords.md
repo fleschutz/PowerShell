@@ -1,4 +1,4 @@
-## The PowerShell Script *list-passwords.ps1*
+## The *list-passwords.ps1* PowerShell Script
 
 This PowerShell script lists random passwords.
 

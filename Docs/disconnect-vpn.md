@@ -1,4 +1,4 @@
-## The PowerShell Script *disconnect-vpn.ps1*
+## The *disconnect-vpn.ps1* PowerShell Script
 
 This PowerShell script disconnects the active VPN connection.
 

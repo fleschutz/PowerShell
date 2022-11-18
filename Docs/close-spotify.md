@@ -1,4 +1,4 @@
-## The PowerShell Script *close-spotify.ps1*
+## The *close-spotify.ps1* PowerShell Script
 
 This PowerShell script closes the Spotify application gracefully.
 

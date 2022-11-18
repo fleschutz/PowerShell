@@ -1,4 +1,4 @@
-## The PowerShell Script *show-traffic.ps1*
+## The *show-traffic.ps1* PowerShell Script
 
 This PowerShell script launches the Web browser with MSN showing the current traffic.
 

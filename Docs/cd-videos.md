@@ -1,4 +1,4 @@
-## The PowerShell Script *cd-videos.ps1*
+## The *cd-videos.ps1* PowerShell Script
 
 This PowerShell script changes the working directory to the user's videos folder.
 

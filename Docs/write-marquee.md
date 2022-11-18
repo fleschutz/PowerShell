@@ -1,4 +1,4 @@
-## The PowerShell Script *write-marquee.ps1*
+## The *write-marquee.ps1* PowerShell Script
 
 This PowerShell script writes the given text as marquee.
 

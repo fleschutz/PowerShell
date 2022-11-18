@@ -1,4 +1,4 @@
-## The PowerShell Script *repeat-last-reply.ps1*
+## The *repeat-last-reply.ps1* PowerShell Script
 
 repeat-last-reply.ps1 
 

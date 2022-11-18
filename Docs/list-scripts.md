@@ -1,4 +1,4 @@
-## The PowerShell Script *list-scripts.ps1*
+## The *list-scripts.ps1* PowerShell Script
 
 list-scripts.ps1 
 

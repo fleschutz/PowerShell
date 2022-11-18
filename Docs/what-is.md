@@ -1,4 +1,4 @@
-## The PowerShell Script *what-is.ps1*
+## The *what-is.ps1* PowerShell Script
 
 This PowerShell script prints a description of the given abbreviation.
 
@@ -52,7 +52,7 @@ https://github.com/fleschutz/PowerShell
 param([string]$abbreviation = "")
 
 function Reply { param([string]$Text)
-	& "$PSScriptRoot/give-reply.ps1" "$Text"
+	& "$PSScriptRoot/speak-english.ps1" "$Text"
 }
 
 try {

@@ -1,4 +1,4 @@
-## The PowerShell Script *close-obs-studio.ps1*
+## The *close-obs-studio.ps1* PowerShell Script
 
 This PowerShell script closes the OBS Studio application gracefully.
 
@@ -40,7 +40,7 @@ https://github.com/fleschutz/PowerShell
 
 TaskKill /im obs64.exe
 if ($lastExitCode -ne "0") {
-	& "$PSScriptRoot/give-reply.ps1" "Sorry, OBS Studio isn't running"
+	& "$PSScriptRoot/speak-english.ps1" "Sorry, OBS Studio isn't running"
 	exit 1
 }
 exit 0 # success

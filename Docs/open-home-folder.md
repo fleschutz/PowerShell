@@ -1,4 +1,4 @@
-## The PowerShell Script *open-home-folder.ps1*
+## The *open-home-folder.ps1* PowerShell Script
 
 This script launches the File Explorer with the user's home folder.
 

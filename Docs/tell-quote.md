@@ -1,4 +1,4 @@
-## The PowerShell Script *tell-quote.ps1*
+## The *tell-quote.ps1* PowerShell Script
 
 This PowerShell script selects a random quote in Data/quotes.csv and speaks it by text-to-speech (TTS).
 
@@ -47,7 +47,7 @@ try {
 	$Author = $Table[$Index].Author
 	$Reply = "$Quote (by $Author)"
 
-	& "$PSScriptRoot/give-reply.ps1" "$Reply"
+	& "$PSScriptRoot/speak-english.ps1" "$Reply"
 	exit 0 # success
 } catch {
 	"⚠️ Error in line $($_.InvocationInfo.ScriptLineNumber): $($Error[0])"

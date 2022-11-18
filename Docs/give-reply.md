@@ -1,4 +1,4 @@
-## The PowerShell Script *give-reply.ps1*
+## The *give-reply.ps1* PowerShell Script
 
 This PowerShell script gives a reply in English on the console and by text-to-speech (TTS).
 

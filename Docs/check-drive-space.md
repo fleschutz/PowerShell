@@ -1,4 +1,4 @@
-## The PowerShell Script *check-drive-space.ps1*
+## The *check-drive-space.ps1* PowerShell Script
 
 This PowerShell script checks a drive for free space left (20 GB by default).
 
@@ -77,7 +77,7 @@ try {
 		exit 1
 	}
 
-	& "$PSScriptRoot/give-reply.ps1" "Drive $Drive has $Free GB left ($Total GB total)"
+	& "$PSScriptRoot/speak-english.ps1" "Drive $Drive has $Free GB left ($Total GB total)"
 	exit 0 # success
 } catch {
 	"⚠️ Error in line $($_.InvocationInfo.ScriptLineNumber): $($Error[0])"

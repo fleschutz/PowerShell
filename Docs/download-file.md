@@ -1,4 +1,4 @@
-## The PowerShell Script *download-file.ps1*
+## The *download-file.ps1* PowerShell Script
 
 This PowerShell script downloads a file from the given URL
 

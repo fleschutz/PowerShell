@@ -1,4 +1,4 @@
-## The PowerShell Script *new-branch.ps1*
+## The *new-branch.ps1* PowerShell Script
 
 This PowerShell script creates a new branch in a Git repository and switches to it.
 

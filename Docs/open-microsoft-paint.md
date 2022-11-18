@@ -1,4 +1,4 @@
-## The PowerShell Script *open-microsoft-paint.ps1*
+## The *open-microsoft-paint.ps1* PowerShell Script
 
 This script launches the Microsoft Paint application.
 

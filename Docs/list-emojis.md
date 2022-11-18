@@ -1,4 +1,4 @@
-## The PowerShell Script *list-emojis.ps1*
+## The *list-emojis.ps1* PowerShell Script
 
 This PowerShell script lists the emojis of Unicode 13.0 sorted by category.
 

@@ -1,4 +1,4 @@
-## The PowerShell Script *locate-zip-code.ps1*
+## The *locate-zip-code.ps1* PowerShell Script
 
 This PowerShell script prints the geographic location of the given zip-code.
 

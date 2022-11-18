@@ -1,4 +1,4 @@
-## The PowerShell Script *uninstall-git-extensions.ps1*
+## The *uninstall-git-extensions.ps1* PowerShell Script
 
 This PowerShell script uninstalls Git Extensions from the local computer.
 

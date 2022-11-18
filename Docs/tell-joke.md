@@ -1,4 +1,4 @@
-## The PowerShell Script *tell-joke.ps1*
+## The *tell-joke.ps1* PowerShell Script
 
 This PowerShell script selects a random Chuck Norris joke in Data/jokes.csv and speaks it by text-to-speech (TTS).
 
@@ -45,7 +45,7 @@ try {
 	$Index = [int]$Generator.next(0, $Table.Count - 1)
 	$Reply = $Table[$Index].Joke
 
-	& "$PSScriptRoot/give-reply.ps1" "$Reply"
+	& "$PSScriptRoot/speak-english.ps1" "$Reply"
 	exit 0 # success
 } catch {
 	"⚠️ Error in line $($_.InvocationInfo.ScriptLineNumber): $($Error[0])"

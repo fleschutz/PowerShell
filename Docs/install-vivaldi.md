@@ -1,4 +1,4 @@
-## The PowerShell Script *install-vivaldi.ps1*
+## The *install-vivaldi.ps1* PowerShell Script
 
 This PowerShell script installs the Vivaldi browser.
 

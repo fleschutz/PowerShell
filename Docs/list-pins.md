@@ -1,4 +1,4 @@
-## The PowerShell Script *list-pins.ps1*
+## The *list-pins.ps1* PowerShell Script
 
 This PowerShell script lists random PIN's.
 

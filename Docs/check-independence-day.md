@@ -1,4 +1,4 @@
-## The PowerShell Script *check-independence-day.ps1*
+## The *check-independence-day.ps1* PowerShell Script
 
 This PowerShell script checks the time until Indepence Day and replies by text-to-speech (TTS).
 
@@ -43,10 +43,10 @@ try {
 	$IndependenceDay = [Datetime]("07/04/" + $Now.Year)
 	if ($Now -lt $IndependenceDay) {
 		$Diff = $IndependenceDay – $Now
-		& "$PSScriptRoot/give-reply.ps1" "Independence Day on July 4th is in $($Diff.Days) days."
+		& "$PSScriptRoot/speak-english.ps1" "Independence Day on July 4th is in $($Diff.Days) days."
 	} else {
 		$Diff = $Now - $IndependenceDay
-		& "$PSScriptRoot/give-reply.ps1" "Independence Day on July 4th was $($Diff.Days) days ago."
+		& "$PSScriptRoot/speak-english.ps1" "Independence Day on July 4th was $($Diff.Days) days ago."
 	}
 	exit 0 # success
 } catch {

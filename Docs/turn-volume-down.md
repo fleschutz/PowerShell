@@ -1,4 +1,4 @@
-## The PowerShell Script *turn-volume-down.ps1*
+## The *turn-volume-down.ps1* PowerShell Script
 
 This PowerShell script turns the audio volume down (-10% by default).
 
@@ -56,7 +56,7 @@ try {
 	for ([int]$i = 0; $i -lt $percent; $i += 2) {
 		$obj.SendKeys([char]174) # each tick is -2%
 	}
-	& "$PSScriptRoot/give-reply.ps1" "$($percent)% softer."
+	& "$PSScriptRoot/speak-english.ps1" "$($percent)% softer."
 	exit 0 # success
 } catch {
 	"⚠️ Error in line $($_.InvocationInfo.ScriptLineNumber): $($Error[0])"

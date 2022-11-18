@@ -1,4 +1,4 @@
-## The PowerShell Script *list-clipboard.ps1*
+## The *list-clipboard.ps1* PowerShell Script
 
 This PowerShell script lists the contents of the clipboard.
 

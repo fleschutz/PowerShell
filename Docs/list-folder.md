@@ -1,4 +1,4 @@
-## The PowerShell Script *list-folder.ps1*
+## The *list-folder.ps1* PowerShell Script
 
 This PowerShell script lists the directory content formatted in columns.
 

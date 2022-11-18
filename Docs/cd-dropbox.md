@@ -1,4 +1,4 @@
-## The PowerShell Script *cd-dropbox.ps1*
+## The *cd-dropbox.ps1* PowerShell Script
 
 This PowerShell script changes the working directory to the user's Dropbox folder.
 

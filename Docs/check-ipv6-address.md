@@ -1,4 +1,4 @@
-## The PowerShell Script *check-ipv6-address.ps1*
+## The *check-ipv6-address.ps1* PowerShell Script
 
 This PowerShell script checks the given IPv6 address for validity
 

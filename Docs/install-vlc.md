@@ -1,4 +1,4 @@
-## The PowerShell Script *install-vlc.ps1*
+## The *install-vlc.ps1* PowerShell Script
 
 This PowerShell script installs the VLC media player.
 

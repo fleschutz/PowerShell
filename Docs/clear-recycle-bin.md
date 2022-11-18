@@ -1,4 +1,4 @@
-## The PowerShell Script *clear-recycle-bin.ps1*
+## The *clear-recycle-bin.ps1* PowerShell Script
 
 This PowerShell script removes the content of the recycle bin folder permanently.
 IMPORTANT NOTE: this cannot be undo!
@@ -44,7 +44,7 @@ try {
 	Clear-RecycleBin -Confirm:$false
 	if ($lastExitCode -ne "0") { throw "'Clear-RecycleBin' failed" }
 
-	& "$PSScriptRoot/give-reply.ps1" "It's clean now."
+	& "$PSScriptRoot/speak-english.ps1" "It's clean now."
 	exit 0 # success
 } catch {
 	"⚠️ Error in line $($_.InvocationInfo.ScriptLineNumber): $($Error[0])"

@@ -1,4 +1,4 @@
-## The PowerShell Script *install-twitter.ps1*
+## The *install-twitter.ps1* PowerShell Script
 
 This PowerShell script installs Twitter from the Microsoft Store.
 

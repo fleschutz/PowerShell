@@ -1,4 +1,4 @@
-## The PowerShell Script *convert-ps2bat.ps1*
+## The *convert-ps2bat.ps1* PowerShell Script
 
 This PowerShell script converts one or more PowerShell scripts to .bat batch files.
 

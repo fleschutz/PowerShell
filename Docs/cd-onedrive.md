@@ -1,4 +1,4 @@
-## The PowerShell Script *cd-onedrive.ps1*
+## The *cd-onedrive.ps1* PowerShell Script
 
 This PowerShell script changes the working directory to the user's OneDrive folder.
 

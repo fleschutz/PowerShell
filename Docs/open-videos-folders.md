@@ -1,4 +1,4 @@
-## The PowerShell Script *open-videos-folders.ps1*
+## The *open-videos-folders.ps1* PowerShell Script
 
 This script launches the File Explorer with the user's videos folder.
 

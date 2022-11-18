@@ -1,4 +1,4 @@
-## The PowerShell Script *check-week.ps1*
+## The *check-week.ps1* PowerShell Script
 
 This PowerShell script determines and speaks the current week number by text-to-speech (TTS).
 
@@ -14,7 +14,6 @@ check-week.ps1 [<CommonParameters>]
 ## Example
 ```powershell
 PS> ./check-week
-✔️ It's week #4.
 
 ```
 
@@ -33,7 +32,6 @@ https://github.com/fleschutz/PowerShell
 	This PowerShell script determines and speaks the current week number by text-to-speech (TTS).
 .EXAMPLE
 	PS> ./check-week
-	✔️ It's week #4.
 .LINK
 	https://github.com/fleschutz/PowerShell
 .NOTES
@@ -41,8 +39,8 @@ https://github.com/fleschutz/PowerShell
 #>
 
 try {
-	$WeekNo = (get-date -UFormat %V)
-	& "$PSScriptRoot/give-reply.ps1" "It's week #$WeekNo."
+	$WeekNo = (Get-Date -UFormat %V)
+	& "$PSScriptRoot/speak-english.ps1" "It's week #$WeekNo."
 	exit 0 # success
 } catch {
 	"⚠️ Error in line $($_.InvocationInfo.ScriptLineNumber): $($Error[0])"

@@ -1,4 +1,4 @@
-## The PowerShell Script *switch-branch.ps1*
+## The *switch-branch.ps1* PowerShell Script
 
 This PowerShell script switches to another branch in a Git repository (including submodules).
 

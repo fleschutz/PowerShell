@@ -1,4 +1,4 @@
-## The PowerShell Script *open-stack-overflow.ps1*
+## The *open-stack-overflow.ps1* PowerShell Script
 
 This script launches the Web browser with the Stack Overflow website.
 

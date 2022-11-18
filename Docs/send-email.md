@@ -1,4 +1,4 @@
-## The PowerShell Script *send-email.ps1*
+## The *send-email.ps1* PowerShell Script
 
 This PowerShell script sends an email message.
 

@@ -1,4 +1,4 @@
-## The PowerShell Script *pull-repo.ps1*
+## The *pull-repo.ps1* PowerShell Script
 
 This PowerShell script pulls updates for a local Git repository (including submodules).
 

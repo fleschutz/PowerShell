@@ -1,4 +1,4 @@
-## The PowerShell Script *speak-text.ps1*
+## The *speak-text.ps1* PowerShell Script
 
 This PowerShell script speaks the given text by the default text-to-speech (TTS) voice.
 

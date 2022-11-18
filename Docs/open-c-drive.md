@@ -1,4 +1,4 @@
-## The PowerShell Script *open-c-drive.ps1*
+## The *open-c-drive.ps1* PowerShell Script
 
 This PowerShell script launches the File Explorer with the C: drive folder.
 

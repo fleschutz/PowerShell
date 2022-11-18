@@ -1,4 +1,4 @@
-## The PowerShell Script *clear-dns-cache.ps1*
+## The *clear-dns-cache.ps1* PowerShell Script
 
 This PowerShell script clears the DNS client cache of the local computer.
 

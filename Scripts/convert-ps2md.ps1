@@ -56,7 +56,7 @@ try {
 
 	$full = Get-Help $filename -Full 
 
-	"## The PowerShell Script *$($ScriptName)*"
+	"## The *$($ScriptName)* PowerShell Script"
 
 	$Description = ($full.description | Out-String).Trim()
 	if ($Description -ne "") {

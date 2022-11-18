@@ -1,4 +1,4 @@
-## The PowerShell Script *check-bios.ps1*
+## The *check-bios.ps1* PowerShell Script
 
 This PowerShell script queries BIOS details and prints it.
 

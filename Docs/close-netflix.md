@@ -1,4 +1,4 @@
-## The PowerShell Script *close-netflix.ps1*
+## The *close-netflix.ps1* PowerShell Script
 
 This PowerShell script closes the Netflix application gracefully.
 

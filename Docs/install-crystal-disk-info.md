@@ -1,4 +1,4 @@
-## The PowerShell Script *install-crystal-disk-info.ps1*
+## The *install-crystal-disk-info.ps1* PowerShell Script
 
 This PowerShell script installs CrystalDiskInfo from the Microsoft Store.
 

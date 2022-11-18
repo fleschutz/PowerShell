@@ -1,4 +1,4 @@
-## The PowerShell Script *play-jingle-bells.ps1*
+## The *play-jingle-bells.ps1* PowerShell Script
 
 This PowerShell script plays the famous Jingle Bells song.
 

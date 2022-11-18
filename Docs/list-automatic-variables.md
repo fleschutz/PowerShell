@@ -1,4 +1,4 @@
-## The PowerShell Script *list-automatic-variables.ps1*
+## The *list-automatic-variables.ps1* PowerShell Script
 
 list-automatic-variables.ps1 
 

@@ -1,4 +1,4 @@
-## The PowerShell Script *list-ram.ps1*
+## The *list-ram.ps1* PowerShell Script
 
 This PowerShell script lists the details of the installed RAM.
 

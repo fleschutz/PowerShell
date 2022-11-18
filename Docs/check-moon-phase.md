@@ -1,4 +1,4 @@
-## The PowerShell Script *check-moon-phase.ps1*
+## The *check-moon-phase.ps1* PowerShell Script
 
 This PowerShell script determines the Moon phase and answers by text-to-speech (TTS).
 
@@ -62,7 +62,7 @@ try {
 	} else {                      $Reply += ", last new moon was $MoonAge days ago"
 	}
 
-	& "$PSScriptRoot/give-reply.ps1" "$Reply"
+	& "$PSScriptRoot/speak-english.ps1" "$Reply"
 	exit 0 # success
 } catch {
 	"⚠️ Error in line $($_.InvocationInfo.ScriptLineNumber): $($Error[0])"

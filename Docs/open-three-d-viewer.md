@@ -1,4 +1,4 @@
-## The PowerShell Script *open-three-d-viewer.ps1*
+## The *open-three-d-viewer.ps1* PowerShell Script
 
 This script launches the 3D-Viewer application.
 

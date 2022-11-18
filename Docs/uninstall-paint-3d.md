@@ -1,4 +1,4 @@
-## The PowerShell Script *uninstall-paint-3d.ps1*
+## The *uninstall-paint-3d.ps1* PowerShell Script
 
 This PowerShell script uninstalls Paint 3D from the local computer.
 

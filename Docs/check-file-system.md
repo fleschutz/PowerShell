@@ -1,4 +1,4 @@
-## The PowerShell Script *check-file-system.ps1*
+## The *check-file-system.ps1* PowerShell Script
 
 This PowerShell script checks the file system of a drive. It needs admin rights.
 
@@ -61,7 +61,7 @@ try {
 	$Result = repair-volume -driveLetter $Drive -scan
 	if ($Result -ne "NoErrorsFound") { throw "'repair-volume' failed" }
 
-	& "$PSScriptRoot/give-reply.ps1" "File system on drive $Drive is clean."
+	& "$PSScriptRoot/speak-english.ps1" "File system on drive $Drive is clean."
 	exit 0 # success
 } catch {
 	"⚠️ Error in line $($_.InvocationInfo.ScriptLineNumber): $($Error[0])"

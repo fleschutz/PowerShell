@@ -1,4 +1,4 @@
-## The PowerShell Script *open-thunderbird.ps1*
+## The *open-thunderbird.ps1* PowerShell Script
 
 open-thunderbird.ps1 
 
@@ -38,7 +38,7 @@ try {
 	TryToExec "C:\Program Files (x86)\Mozilla Thunderbird" "thunderbird.exe"
 	throw "It seems Thunderbird isn't installed yet."
 } catch {
-	& "$PSScriptRoot/give-reply.ps1" "Sorry: $($Error[0])"
+	& "$PSScriptRoot/speak-english.ps1" "Sorry: $($Error[0])"
 }
 ```
 

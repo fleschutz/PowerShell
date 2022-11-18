@@ -1,4 +1,4 @@
-## The PowerShell Script *check-mac-address.ps1*
+## The *check-mac-address.ps1* PowerShell Script
 
 This PowerShell script checks the given MAC address for validity
 Supported MAC address formats are: 00:00:00:00:00:00 or 00-00-00-00-00-00 or 000000000000.

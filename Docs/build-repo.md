@@ -1,4 +1,4 @@
-## The PowerShell Script *build-repo.ps1*
+## The *build-repo.ps1* PowerShell Script
 
 This PowerShell script supports building with cmake, configure, autogen, Imakefile and Makefile.
 

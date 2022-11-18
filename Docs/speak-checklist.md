@@ -1,4 +1,4 @@
-## The PowerShell Script *speak-checklist.ps1*
+## The *speak-checklist.ps1* PowerShell Script
 
 This PowerShell script speaks the given checklist by text-to-speech (TTS).
 
@@ -61,8 +61,8 @@ try {
 		if ($Line -like "HEAD*") { & "$PSScriptRoot/write-big.ps1" "$($Line.substring(5))"; continue }
 
 		""			
-		& "$PSScriptRoot/give-reply.ps1" "$($Step). $Line"
-		$Dummy = read-host "    Say <Check> or press <Return> to continue"
+		& "$PSScriptRoot/speak-english.ps1" "$($Step). $Line"
+		$Dummy = Read-Host "    Say <Check> or press <Return> to continue"
 		$Step++
 	}
 	exit 0 # success

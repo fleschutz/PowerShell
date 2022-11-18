@@ -1,4 +1,4 @@
-## The PowerShell Script *enable-god-mode.ps1*
+## The *enable-god-mode.ps1* PowerShell Script
 
 This PowerShell script enables the god mode. It adds a new icon to the desktop.
 

@@ -1,4 +1,4 @@
-## The PowerShell Script *open-office-365.ps1*
+## The *open-office-365.ps1* PowerShell Script
 
 This script launches the Web browser with the Microsoft Office 365 website.
 

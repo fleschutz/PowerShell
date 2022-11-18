@@ -1,4 +1,4 @@
-## The PowerShell Script *install-firefox.ps1*
+## The *install-firefox.ps1* PowerShell Script
 
 This PowerShell script installs Mozilla Firefox from the Microsoft Store.
 

@@ -1,4 +1,4 @@
-## The PowerShell Script *check-easter-sunday.ps1*
+## The *check-easter-sunday.ps1* PowerShell Script
 
 This PowerShell script checks the time until Easter Sunday and replies by text-to-speech (TTS).
 
@@ -43,10 +43,10 @@ try {
 	$Easter = [Datetime]("04/17/2022")
 	if ($Now -lt $Easter) {
 		$Diff = $Easter – $Now
-		& "$PSScriptRoot/give-reply.ps1" "Easter Sunday on April 17 is in $($Diff.Days) days."
+		& "$PSScriptRoot/speak-english.ps1" "Easter Sunday on April 17 is in $($Diff.Days) days."
 	} else {
 		$Diff = $Now - $Easter
-		& "$PSScriptRoot/give-reply.ps1" "Easter Sunday on April 17 was $($Diff.Days) days ago."
+		& "$PSScriptRoot/speak-english.ps1" "Easter Sunday on April 17 was $($Diff.Days) days ago."
 	}
 	exit 0 # success
 } catch {

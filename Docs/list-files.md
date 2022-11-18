@@ -1,4 +1,4 @@
-## The PowerShell Script *list-files.ps1*
+## The *list-files.ps1* PowerShell Script
 
 This PowerShell script lists all files within the given directory tree.
 

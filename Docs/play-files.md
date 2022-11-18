@@ -1,4 +1,4 @@
-## The PowerShell Script *play-files.ps1*
+## The *play-files.ps1* PowerShell Script
 
 This PowerShell script plays the given audio files (supporting MP3 and WAV format).
 

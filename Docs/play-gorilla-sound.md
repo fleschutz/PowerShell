@@ -1,4 +1,4 @@
-## The PowerShell Script *play-gorilla-sound.ps1*
+## The *play-gorilla-sound.ps1* PowerShell Script
 
 This PowerShell script plays a gorilla sound.
 

@@ -1,4 +1,4 @@
-## The PowerShell Script *write-morse-code.ps1*
+## The *write-morse-code.ps1* PowerShell Script
 
 This PowerShell script writes text in Morse code.
 

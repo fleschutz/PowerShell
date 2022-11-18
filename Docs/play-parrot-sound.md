@@ -1,4 +1,4 @@
-## The PowerShell Script *play-parrot-sound.ps1*
+## The *play-parrot-sound.ps1* PowerShell Script
 
 This PowerShell script plays a parrot sound.
 

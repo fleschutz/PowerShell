@@ -1,4 +1,4 @@
-## The PowerShell Script *close-task-manager.ps1*
+## The *close-task-manager.ps1* PowerShell Script
 
 This PowerShell script closes the Task Manager application gracefully.
 

@@ -1,4 +1,4 @@
-## The PowerShell Script *open-egg-timer.ps1*
+## The *open-egg-timer.ps1* PowerShell Script
 
 This PowerShell script launches the Web browser with the eggtimer website.
 

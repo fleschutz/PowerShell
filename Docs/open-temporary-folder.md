@@ -1,4 +1,4 @@
-## The PowerShell Script *open-temporary-folder.ps1*
+## The *open-temporary-folder.ps1* PowerShell Script
 
 open-temporary-folder.ps1 
 

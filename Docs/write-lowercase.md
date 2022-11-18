@@ -1,4 +1,4 @@
-## The PowerShell Script *write-lowercase.ps1*
+## The *write-lowercase.ps1* PowerShell Script
 
 This PowerShell script writes text in lowercase letters.
 

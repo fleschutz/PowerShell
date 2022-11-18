@@ -1,4 +1,4 @@
-## The PowerShell Script *list-os-releases.ps1*
+## The *list-os-releases.ps1* PowerShell Script
 
 This PowerShell script lists OS releases and download URL.
 

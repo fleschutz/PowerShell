@@ -1,4 +1,4 @@
-## The PowerShell Script *list-city-weather.ps1*
+## The *list-city-weather.ps1* PowerShell Script
 
 This PowerShell script lists the current weather of cities world-wide (west to east).
 

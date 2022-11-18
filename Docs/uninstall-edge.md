@@ -1,4 +1,4 @@
-## The PowerShell Script *uninstall-edge.ps1*
+## The *uninstall-edge.ps1* PowerShell Script
 
 This PowerShell script uninstalls Microsoft Edge from the local computer.
 

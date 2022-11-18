@@ -1,4 +1,4 @@
-## The PowerShell Script *close-program.ps1*
+## The *close-program.ps1* PowerShell Script
 
 This PowerShell script closes a program's processes gracefully.
 

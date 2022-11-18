@@ -1,4 +1,4 @@
-## The PowerShell Script *open-chrome.ps1*
+## The *open-chrome.ps1* PowerShell Script
 
 This PowerShell script launches the Google Chrome Web browser.
 

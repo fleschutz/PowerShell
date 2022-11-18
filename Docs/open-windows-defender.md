@@ -1,4 +1,4 @@
-## The PowerShell Script *open-windows-defender.ps1*
+## The *open-windows-defender.ps1* PowerShell Script
 
 This script launches the Windows Defender application.
 

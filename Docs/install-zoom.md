@@ -1,4 +1,4 @@
-## The PowerShell Script *install-zoom.ps1*
+## The *install-zoom.ps1* PowerShell Script
 
 This PowerShell script installs Zoom.
 

@@ -1,4 +1,4 @@
-## The PowerShell Script *simulate-presence.ps1*
+## The *simulate-presence.ps1* PowerShell Script
 
 This PowerShell script simulates the human presence against burglars.
 

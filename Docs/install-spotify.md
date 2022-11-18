@@ -1,4 +1,4 @@
-## The PowerShell Script *install-spotify.ps1*
+## The *install-spotify.ps1* PowerShell Script
 
 This PowerShell script installs Spotify from the Microsoft Store.
 

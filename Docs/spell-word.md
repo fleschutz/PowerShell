@@ -1,4 +1,4 @@
-## The PowerShell Script *spell-word.ps1*
+## The *spell-word.ps1* PowerShell Script
 
 This PowerShell script spells the given word by text-to-speech (TTS).
 
@@ -60,7 +60,7 @@ try {
 		$Reply += $Char
 		$Reply += " "
 	}
-	& "$PSScriptRoot/give-reply.ps1" "$Reply"
+	& "$PSScriptRoot/speak-english.ps1" "$Reply"
 	exit 0 # success
 } catch {
 	"⚠️ Error in line $($_.InvocationInfo.ScriptLineNumber): $($Error[0])"

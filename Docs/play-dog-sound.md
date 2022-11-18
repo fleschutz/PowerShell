@@ -1,4 +1,4 @@
-## The PowerShell Script *play-dog-sound.ps1*
+## The *play-dog-sound.ps1* PowerShell Script
 
 This PowerShell script plays a dog sound.
 

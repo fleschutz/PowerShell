@@ -1,4 +1,4 @@
-## The PowerShell Script *uninstall-firefox.ps1*
+## The *uninstall-firefox.ps1* PowerShell Script
 
 This PowerShell script uninstalls Mozilla Firefox from the local computer.
 

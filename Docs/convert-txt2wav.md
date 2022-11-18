@@ -1,4 +1,4 @@
-## The PowerShell Script *convert-txt2wav.ps1*
+## The *convert-txt2wav.ps1* PowerShell Script
 
 This PowerShell script converts text to a .WAV audio file.
 

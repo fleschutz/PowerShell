@@ -1,4 +1,4 @@
-## The PowerShell Script *uninstall-crystal-disk-mark.ps1*
+## The *uninstall-crystal-disk-mark.ps1* PowerShell Script
 
 This PowerShell script uninstalls CrystalDiskMark from the local computer.
 

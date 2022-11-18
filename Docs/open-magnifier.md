@@ -1,4 +1,4 @@
-## The PowerShell Script *open-magnifier.ps1*
+## The *open-magnifier.ps1* PowerShell Script
 
 This script launches the Windows Screen Magnifier application.
 

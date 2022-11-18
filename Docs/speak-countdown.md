@@ -1,4 +1,4 @@
-## The PowerShell Script *speak-countdown.ps1*
+## The *speak-countdown.ps1* PowerShell Script
 
 This PowerShell script speaks a countdown by text-to-speech (TTS) starting from a given number.
 
@@ -53,10 +53,10 @@ param([int]$StartNumber = 10)
 
 try {
 	for ([int]$i = $StartNumber; $i -gt 0; $i--) {
-		& "$PSScriptRoot/give-reply.ps1" $i
+		& "$PSScriptRoot/speak-english.ps1" $i
 		start-sleep -milliseconds 200
 	}
-	& "$PSScriptRoot/give-reply.ps1" "zero"
+	& "$PSScriptRoot/speak-english.ps1" "zero"
 	exit 0 # success
 } catch {
 	"⚠️ Error in line $($_.InvocationInfo.ScriptLineNumber): $($Error[0])"

@@ -1,4 +1,4 @@
-## The PowerShell Script *weather-report.ps1*
+## The *weather-report.ps1* PowerShell Script
 
 This PowerShell script lists the local weather report.
 

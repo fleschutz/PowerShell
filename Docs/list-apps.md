@@ -1,4 +1,4 @@
-## The PowerShell Script *list-apps.ps1*
+## The *list-apps.ps1* PowerShell Script
 
 This PowerShell script lists the installed applications (from Windows Store, or Snap Store).
 

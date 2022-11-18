@@ -1,4 +1,4 @@
-## The PowerShell Script *merry-christmas.ps1*
+## The *merry-christmas.ps1* PowerShell Script
 
 This PowerShell script replies to 'Merry Christmas' by text-to-speech (TTS).
 
@@ -40,7 +40,7 @@ https://github.com/fleschutz/PowerShell
 
 $Reply = "Merry Christmas to you too!", "Happy Christmas to you too!" | Get-Random
 
-& "$PSScriptRoot/give-reply.ps1" "$Reply"
+& "$PSScriptRoot/speak-english.ps1" "$Reply"
 exit 0 # success
 ```
 

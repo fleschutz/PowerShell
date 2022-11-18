@@ -1,4 +1,4 @@
-## The PowerShell Script *list-fibonacci.ps1*
+## The *list-fibonacci.ps1* PowerShell Script
 
 list-fibonacci.ps1 
 

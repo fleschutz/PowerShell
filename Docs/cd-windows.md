@@ -1,4 +1,4 @@
-## The PowerShell Script *cd-windows.ps1*
+## The *cd-windows.ps1* PowerShell Script
 
 This PowerShell script changes the working directory to the Windows directory.
 

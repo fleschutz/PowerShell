@@ -1,4 +1,4 @@
-## The PowerShell Script *check-new-year.ps1*
+## The *check-new-year.ps1* PowerShell Script
 
 This PowerShell script checks the time until New Year and replies by text-to-speech (TTS).
 
@@ -43,9 +43,9 @@ try {
 	$NewYear = [Datetime]("12/31/" + $Now.Year)
 	$Days = ($NewYear – $Now).Days + 1
 	if ($Days -gt 1) {
-		& "$PSScriptRoot/give-reply.ps1" "New Year is in $Days days."
+		& "$PSScriptRoot/speak-english.ps1" "New Year is in $Days days."
 	} elseif ($Days -eq 1) {
-		& "$PSScriptRoot/give-reply.ps1" "New Year is tomorrow."
+		& "$PSScriptRoot/speak-english.ps1" "New Year is tomorrow."
 	}
 	exit 0 # success
 } catch {

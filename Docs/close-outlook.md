@@ -1,4 +1,4 @@
-## The PowerShell Script *close-outlook.ps1*
+## The *close-outlook.ps1* PowerShell Script
 
 This PowerShell script closes the Microsoft Outlook email application gracefully.
 
@@ -40,7 +40,7 @@ https://github.com/fleschutz/PowerShell
 
 TaskKill /im outlook.exe
 if ($lastExitCode -ne "0") {
-	& "$PSScriptRoot/give-reply.ps1" "Sorry, Microsoft Outlook isn't running."
+	& "$PSScriptRoot/speak-english.ps1" "Sorry, Microsoft Outlook isn't running."
 	exit 1
 }
 exit 0 # success

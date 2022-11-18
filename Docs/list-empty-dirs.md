@@ -1,4 +1,4 @@
-## The PowerShell Script *list-empty-dirs.ps1*
+## The *list-empty-dirs.ps1* PowerShell Script
 
 This PowerShell script scans and lists all empty subfolders within the given directory tree.
 

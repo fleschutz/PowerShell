@@ -1,4 +1,4 @@
-## The PowerShell Script *install-rufus.ps1*
+## The *install-rufus.ps1* PowerShell Script
 
 This PowerShell script installs Rufus from the Microsoft Store.
 

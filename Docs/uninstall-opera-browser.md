@@ -1,4 +1,4 @@
-## The PowerShell Script *uninstall-opera-browser.ps1*
+## The *uninstall-opera-browser.ps1* PowerShell Script
 
 This PowerShell script uninstalls Opera Browser from the local computer.
 

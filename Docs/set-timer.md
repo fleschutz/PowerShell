@@ -1,4 +1,4 @@
-## The PowerShell Script *set-timer.ps1*
+## The *set-timer.ps1* PowerShell Script
 
 This PowerShell script sets a timer for a countdown.
 

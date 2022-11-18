@@ -1,4 +1,4 @@
-## The PowerShell Script *check-pending-reboot.ps1*
+## The *check-pending-reboot.ps1* PowerShell Script
 
 check-pending-reboot.ps1 
 

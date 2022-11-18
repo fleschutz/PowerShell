@@ -1,4 +1,4 @@
-## The PowerShell Script *play-donkey-sound.ps1*
+## The *play-donkey-sound.ps1* PowerShell Script
 
 This PowerShell script plays a donkey sound.
 

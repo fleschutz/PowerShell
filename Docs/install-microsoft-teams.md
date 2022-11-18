@@ -1,4 +1,4 @@
-## The PowerShell Script *install-microsoft-teams.ps1*
+## The *install-microsoft-teams.ps1* PowerShell Script
 
 This PowerShell script installs Microsoft Teams from the Microsoft Store.
 

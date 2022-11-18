@@ -1,4 +1,4 @@
-## The PowerShell Script *check-gpu.ps1*
+## The *check-gpu.ps1* PowerShell Script
 
 check-gpu.ps1 
 

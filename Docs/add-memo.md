@@ -1,4 +1,4 @@
-## The PowerShell Script *add-memo.ps1*
+## The *add-memo.ps1* PowerShell Script
 
 This PowerShell script adds the given memo text to $HOME/Memos.csv.
 

@@ -1,4 +1,4 @@
-## The PowerShell Script *open-documents-folder.ps1*
+## The *open-documents-folder.ps1* PowerShell Script
 
 This PowerShell script launches the File Explorer with the user's documents folder.
 

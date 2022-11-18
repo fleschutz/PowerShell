@@ -1,4 +1,4 @@
-## The PowerShell Script *close-one-calendar.ps1*
+## The *close-one-calendar.ps1* PowerShell Script
 
 This PowerShell script closes the OneCalendar application gracefully.
 
@@ -40,7 +40,7 @@ https://github.com/fleschutz/PowerShell
 
 TaskKill /f /im CalendarApp.Gui.Win10.exe
 if ($lastExitCode -ne "0") {
-	& "$PSScriptRoot/give-reply.ps1" "Sorry, OneCalendar isn't running."
+	& "$PSScriptRoot/speak-english.ps1" "Sorry, OneCalendar isn't running."
 	exit 1
 }
 exit 0 # success

@@ -1,4 +1,4 @@
-## The PowerShell Script *check-dns-server.ps1*
+## The *check-dns-server.ps1* PowerShell Script
 
 check-dns-server.ps1 
 

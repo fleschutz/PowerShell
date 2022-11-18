@@ -1,4 +1,4 @@
-## The PowerShell Script *start-calibre-server.ps1*
+## The *start-calibre-server.ps1* PowerShell Script
 
 This PowerShell script starts a local Calibre server as background process (using Web port 8099 by default).
 

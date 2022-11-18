@@ -1,4 +1,4 @@
-## The PowerShell Script *install-unbound.ps1*
+## The *install-unbound.ps1* PowerShell Script
 
 This PowerShell script installs Unbound, a validating, recursive, caching DNS resolver. It needs admin rights.
 

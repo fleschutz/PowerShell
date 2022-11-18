@@ -1,4 +1,4 @@
-## The PowerShell Script *list-tiobe-index.ps1*
+## The *list-tiobe-index.ps1* PowerShell Script
 
 list-tiobe-index.ps1 
 

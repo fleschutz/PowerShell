@@ -1,4 +1,4 @@
-## The PowerShell Script *check-swap-space.ps1*
+## The *check-swap-space.ps1* PowerShell Script
 
 This PowerShell script checks the free swap space.
 

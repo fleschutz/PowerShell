@@ -1,4 +1,4 @@
-## The PowerShell Script *clone-repos.ps1*
+## The *clone-repos.ps1* PowerShell Script
 
 This PowerShell script clones well-known Git repositories into a folder.
 

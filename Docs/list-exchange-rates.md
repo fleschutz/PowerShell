@@ -1,4 +1,4 @@
-## The PowerShell Script *list-exchange-rates.ps1*
+## The *list-exchange-rates.ps1* PowerShell Script
 
 This PowerShell script lists the current exchange rates for the given currency (USD per default).
 

@@ -1,4 +1,4 @@
-## The PowerShell Script *play-lion-sound.ps1*
+## The *play-lion-sound.ps1* PowerShell Script
 
 This PowerShell script plays a lion sound.
 

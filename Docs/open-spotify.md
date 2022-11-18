@@ -1,4 +1,4 @@
-## The PowerShell Script *open-spotify.ps1*
+## The *open-spotify.ps1* PowerShell Script
 
 This script launches the Spotify application.
 

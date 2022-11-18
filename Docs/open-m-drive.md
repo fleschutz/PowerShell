@@ -1,4 +1,4 @@
-## The PowerShell Script *open-m-drive.ps1*
+## The *open-m-drive.ps1* PowerShell Script
 
 This script launches the File Explorer with the M: drive folder.
 

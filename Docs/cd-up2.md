@@ -1,4 +1,4 @@
-## The PowerShell Script *cd-up2.ps1*
+## The *cd-up2.ps1* PowerShell Script
 
 This PowerShell script changes the working directory to two directory level up.
 

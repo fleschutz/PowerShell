@@ -1,4 +1,4 @@
-## The PowerShell Script *check-repo.ps1*
+## The *check-repo.ps1* PowerShell Script
 
 This PowerShell script verifies the integrity of a local Git repository.
 

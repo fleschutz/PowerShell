@@ -1,4 +1,4 @@
-## The PowerShell Script *locate-ipaddress.ps1*
+## The *locate-ipaddress.ps1* PowerShell Script
 
 locate-ipaddress.ps1 [[-IPaddress] <string>]
 

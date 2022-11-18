@@ -1,4 +1,4 @@
-## The PowerShell Script *speak-test.ps1*
+## The *speak-test.ps1* PowerShell Script
 
 speak-test.ps1 
 

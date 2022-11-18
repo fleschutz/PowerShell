@@ -1,4 +1,4 @@
-## The PowerShell Script *install-discord.ps1*
+## The *install-discord.ps1* PowerShell Script
 
 This PowerShell script installs Discord from the Microsoft Store.
 

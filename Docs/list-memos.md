@@ -1,4 +1,4 @@
-## The PowerShell Script *list-memos.ps1*
+## The *list-memos.ps1* PowerShell Script
 
 This PowerShell script lists all memo entries in Memos.csv in the home folder.
 

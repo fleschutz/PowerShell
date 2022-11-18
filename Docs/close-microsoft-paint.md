@@ -1,4 +1,4 @@
-## The PowerShell Script *close-microsoft-paint.ps1*
+## The *close-microsoft-paint.ps1* PowerShell Script
 
 This PowerShell script closes the Microsoft Paint application gracefully.
 
@@ -40,7 +40,7 @@ https://github.com/fleschutz/PowerShell
 
 TaskKill /im mspaint.exe
 if ($lastExitCode -ne "0") {
-	& "$PSScriptRoot/give-reply.ps1" "Sorry, Microsoft Paint isn't running."
+	& "$PSScriptRoot/speak-english.ps1" "Sorry, Microsoft Paint isn't running."
 	exit 1
 }
 exit 0 # success

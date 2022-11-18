@@ -1,4 +1,4 @@
-## The PowerShell Script *close-thunderbird.ps1*
+## The *close-thunderbird.ps1* PowerShell Script
 
 This PowerShell script closes the Mozilla Thunderbird email application gracefully.
 
@@ -40,7 +40,7 @@ https://github.com/fleschutz/PowerShell
 
 TaskKill /im thunderbird.exe
 if ($lastExitCode -ne "0") {
-	& "$PSScriptRoot/give-reply.ps1" "Sorry, Mozilla Thunderbird isn't running."
+	& "$PSScriptRoot/speak-english.ps1" "Sorry, Mozilla Thunderbird isn't running."
 	exit 1
 }
 exit 0 # success
