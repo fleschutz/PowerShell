@@ -29,7 +29,7 @@ try {
 	for( $i = 0; $i -lt $keyPresses; $i++ ) {
 		$obj.SendKeys( [char] 175 )
 	}
-	& "$PSScriptRoot/give-reply.ps1" "$($Volume)% volume."
+	& "$PSScriptRoot/speak-english.ps1" "$($Volume)% volume."
 	exit 0 # success
 } catch {
 	"⚠️ Error in line $($_.InvocationInfo.ScriptLineNumber): $($Error[0])"

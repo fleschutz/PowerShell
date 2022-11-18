@@ -16,7 +16,7 @@ try {
 	for ([int]$i = 0; $i -lt 100; $i += 2) {
 		$obj.SendKeys([char]175) # each tick is +2%
 	}
-	& "$PSScriptRoot/give-reply.ps1" "Hundred percent now."
+	& "$PSScriptRoot/speak-english.ps1" "Hundred percent now."
 	exit 0 # success
 } catch {
 	"⚠️ Error in line $($_.InvocationInfo.ScriptLineNumber): $($Error[0])"

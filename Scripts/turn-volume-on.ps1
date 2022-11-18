@@ -14,7 +14,7 @@
 try {
 	$obj = new-object -com wscript.shell
 	$obj.SendKeys([char]173)
-	& "$PSScriptRoot/give-reply.ps1" "Audio is on."
+	& "$PSScriptRoot/speak-english.ps1" "Audio is on."
 	exit 0 # success
 } catch {
 	"⚠️ Error in line $($_.InvocationInfo.ScriptLineNumber): $($Error[0])"
