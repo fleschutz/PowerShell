@@ -27,7 +27,7 @@ try {
 		"⏳ (4/4) Upgrading installed Snap packages..."
 		& sudo snap refresh
 	} else {
-		"⏳ (1/2) Querying updates for applications..."
+		"⏳ (1/2) Querying application updates..."
 		& winget upgrade
 
 		"⏳ (2/2) Upgrading applications..."
