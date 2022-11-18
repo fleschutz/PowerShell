@@ -34,7 +34,7 @@ try {
 		& winget upgrade --all
 	}
 	[int]$Elapsed = $StopWatch.Elapsed.TotalSeconds
-	"✔️ installed updates in $Elapsed sec"
+	"✅ updates installed in $Elapsed sec."
 	exit 0 # success
 } catch {
 	"⚠️ Error in line $($_.InvocationInfo.ScriptLineNumber): $($Error[0])"
