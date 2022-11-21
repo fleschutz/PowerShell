@@ -17,11 +17,14 @@ param([string]$Location = "") # empty means determine automatically
 
 function Describe { param([string]$Desc)
 	switch($Desc) {
+	"Blizzard"			{ return "❄️ blizzard" }
 	"Clear"				{ return "🌙 clear       " }
 	"Cloudy"			{ return "☁️ cloudy      " }
+	"Heavy snow"			{ return "❄️ heavy snow" }
 	"Light drizzle"			{ return "💧 light drizzle" }
 	"Light rain"			{ return "💧 light rain   " }
 	"Light rain shower"		{ return "💧 light rain shower" }
+	"Light sleet"			{ return "❄️ light sleet" }
 	"Light snow"			{ return "❄️ light snow" }
 	"Moderate snow"			{ return "❄️ moderate snow" }
 	"Mist"				{ return "🌫  misty      " }
