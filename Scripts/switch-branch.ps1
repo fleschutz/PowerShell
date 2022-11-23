@@ -6,7 +6,7 @@
 .PARAMETER BranchName
 	Specifies the branch name
 .PARAMETER RepoDir
-	Specifies the path to the Git repository
+	Specifies the path to the local Git repository
 .EXAMPLE
 	PS> ./switch-branch main C:\MyRepo
 .LINK
@@ -19,7 +19,7 @@ param([string]$BranchName = "", [string]$RepoDir = "$PWD")
 
 try {
 	if ($BranchName -eq "") { $BranchName = read-host "Enter name of branch to switch to" }
-	if ($RepoDir -eq "") { $RepoDir = read-host "Enter path to the Git repository" }
+	if ($RepoDir -eq "") { $RepoDir = read-host "Enter path to the local Git repository" }
 
 	$StopWatch = [system.diagnostics.stopwatch]::startNew()
 
@@ -29,7 +29,7 @@ try {
 
 	$RepoDir = Resolve-Path "$RepoDir"
 	$RepoDirName = (Get-Item "$RepoDir").Name
-	"⏳ (2/6) Checking folder 📂$RepoDirName..."
+	"⏳ (2/6) Checking Git repository 📂$RepoDirName..."
 	if (-not(Test-Path "$RepoDir" -pathType container)) { throw "Can't access directory: $RepoDir" }
 
 	$Result = (git status)
