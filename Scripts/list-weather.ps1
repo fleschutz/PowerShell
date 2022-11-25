@@ -40,16 +40,22 @@ function GetDescription { param([string]$Text)
 
 function GetWindDir { param([string]$Text)
 	switch($Text) {
+	"NNW"	{ return "↓" }
 	"N"	{ return "↓" }
+	"NNE"	{ return "↓" }
+	"NE"	{ return "↙" }
+	"ENE"	{ return "←" }
 	"E"	{ return "←" }
 	"ESE"	{ return "↖" }
 	"SE"	{ return "↖" }
+	"SSE"	{ return "↑" }
 	"S"	{ return "↑" }
-	"SSW"	{ return "↗" }
+	"SSW"	{ return "↑" }
 	"SW"	{ return "↗" }
-	"WSW"	{ return "↗" }
+	"WSW"	{ return "→" }
 	"W"	{ return "→" }
-	default	{ return "$Text" }
+	"WNW"	{ return "→" }
+	default { return "$Text" }
 	}
 }
 
@@ -75,7 +81,7 @@ try {
 			if ($Day -eq 0) {
 				Write-Host -foregroundColor green "TODAY  🌡°C   ☂️mm   💧  💨km/h  ☀️UV  ☁️   at $Area ($Region, $Country)"
 			} elseif ($Day -eq 1) {
-				Write-Host -foregroundColor green "Tomorrow"
+				Write-Host -foregroundColor green "TOMORROW"
 			} else {
 				Write-Host -foregroundColor green "Day after tomorrow"
 			}
