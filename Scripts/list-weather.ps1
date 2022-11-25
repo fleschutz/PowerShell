@@ -2,7 +2,7 @@
 .SYNOPSIS
 	Lists the weather report
 .DESCRIPTION
-	This PowerShell script lists the hourly weather report.
+	This PowerShell script lists the hourly weather report in a nice table.
 .PARAMETER Location
 	Specifies the location to use (determined automatically per default)
 .EXAMPLE
@@ -15,8 +15,8 @@
 
 param([string]$Location = "") # empty means determine automatically
 
-function Describe { param([string]$Desc)
-	switch($Desc) {
+function GetDescription { param([string]$Text)
+	switch($Text) {
 	"Blizzard"			{ return "❄️ blizzard" }
 	"Clear"				{ return "🌙 clear       " }
 	"Cloudy"			{ return "☁️ cloudy      " }
@@ -34,7 +34,22 @@ function Describe { param([string]$Desc)
 	"Patchy rain possible"  	{ return "💧 patchy rain possible" }
 	"Sunny"				{ return "☀️ sunny       " }
 	"Thundery outbreaks possible"	{ return "⚡️thundery outbreaks possible" }
-	default				{ return "$Desc" }
+	default				{ return "$Text" }
+	}
+}
+
+function GetWindDir { param([string]$Text)
+	switch($Text) {
+	"N"	{ return "↓" }
+	"E"	{ return "←" }
+	"ESE"	{ return "↖" }
+	"SE"	{ return "↖" }
+	"S"	{ return "↑" }
+	"SSW"	{ return "↗" }
+	"SW"	{ return "↗" }
+	"WSW"	{ return "↗" }
+	"W"	{ return "→" }
+	default	{ return "$Text" }
 	}
 }
 
@@ -51,13 +66,14 @@ try {
 		$Humidity = $Hourly.humidity
 		$Pressure = $Hourly.pressure
 		$WindSpeed = $Hourly.windspeedKmph
-		$WindDir = $Hourly.winddir16Point
+		$WindDir = GetWindDir $Hourly.winddir16Point
 		$UV = $Hourly.uvIndex
 		$Clouds = $Hourly.cloudcover
-		$Desc = $Hourly.weatherDesc.value
+		$Visib = $Hourly.visibility
+		$Desc = GetDescription $Hourly.weatherDesc.value
 		if ($Hour -eq 0) {
 			if ($Day -eq 0) {
-				Write-Host -foregroundColor green "Today  🌡°C   ☂️mm   💧   💨km/h from  ☀️UV   ☁️    at $Area ($Region, $Country)"
+				Write-Host -foregroundColor green "TODAY  🌡°C   ☂️mm   💧  💨km/h  ☀️UV  ☁️   at $Area ($Region, $Country)"
 			} elseif ($Day -eq 1) {
 				Write-Host -foregroundColor green "Tomorrow"
 			} else {
@@ -65,7 +81,7 @@ try {
 			}
 			$Day++
 		}
-		"$(($Hour.toString()).PadLeft(2))°°   $(($Temp.toString()).PadLeft(2))°   $($Precip)   $(($Humidity.toString()).PadLeft(3))%      $(($WindSpeed.toString()).PadLeft(2)) $WindDir`t$($UV)   $(($Clouds.toString()).PadLeft(3))%   $(Describe $Desc)"
+		"$(($Hour.toString()).PadLeft(2))°°   $(($Temp.toString()).PadLeft(2))°   $($Precip)   $(($Humidity.toString()).PadLeft(3))%  $(($WindSpeed.toString()).PadLeft(2)) $WindDir`t$($UV)   $(($Clouds.toString()).PadLeft(3))%   $Desc"
 		$Hour++
 	}
 	exit 0 # success
