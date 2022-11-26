@@ -71,17 +71,17 @@ try {
 		$Hour = $Hourly.time / 100
 		$Temp = $(($Hourly.tempC.toString()).PadLeft(2))
 		$Precip = $Hourly.precipMM
-		$Humidity = $Hourly.humidity
+		$Humidity = $(($Hourly.humidity.toString()).PadLeft(3))
 		$Pressure = $Hourly.pressure
 		$WindSpeed = $(($Hourly.windspeedKmph.toString()).PadLeft(2))
 		$WindDir = GetWindDir $Hourly.winddir16Point
 		$UV = $Hourly.uvIndex
-		$Clouds = $Hourly.cloudcover
+		$Clouds = $(($Hourly.cloudcover.toString()).PadLeft(3))
 		$Visib = $(($Hourly.visibility.toString()).PadLeft(2))
 		$Desc = GetDescription $Hourly.weatherDesc.value
 		if ($Hour -eq 0) {
 			if ($Day -eq 0) {
-				Write-Host -foregroundColor green "TODAY  🌡°C  ☂️mm   💧  💨km/h ☀️UV  ☁️  👁km  at $Area ($Region, $Country)"
+				Write-Host -foregroundColor green "TODAY  🌡°C  ☂️mm  💧  💨km/h ☀️UV  ☁️  👁km  at $Area ($Region, $Country)"
 			} elseif ($Day -eq 1) {
 				Write-Host -foregroundColor green "TOMORROW"
 			} else {
@@ -89,8 +89,7 @@ try {
 			}
 			$Day++
 		}
-		"$(($Hour.toString()).PadLeft(2))°°  $($Temp)°   $($Precip)   $(($Humidity.toString()).PadLeft(3))%  $(($WindSpeed.toString()).PadLeft(2)) $WindDir   $UV   $(($Clouds.toString()).PadLeft(3))%  $Visib  $Desc"
-		$Hour++
+		"$(($Hour.toString()).PadLeft(2))°°  $Temp°   $Precip  $Humidity%  $WindSpeed $WindDir   $UV   $Clouds%  $Visib  $Desc"
 	}
 	exit 0 # success
 } catch {
