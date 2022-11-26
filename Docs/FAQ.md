@@ -93,11 +93,11 @@ Which editor to use for PowerShell scripts?
 
 How to write good PowerShell scripts?
 -------------------------------------
-Good PowerShell scripts are user-friendly and platform-independent. As a guideline follow these rules, please:
+Good PowerShell scripts are user-friendly and platform-independent. The following rules should be a good starting point:
 
 1. Use the `<verb>-<object>.ps1` scheme to name the script.
-2. Use *UTF-8 BOM* encoding to support Unicode characters in the script.
-3. Add a comment-based help at the beginning with synopsis, description, parameters, link, author, and license.
+2. Use `UTF-8 BOM` encoding to support Unicode characters in the script.
+3. Add a comment-based help at the beginning with: `.SYNOPSIS`, `.DESCRIPTION`, `.PARAMETER`, `.EXAMPLE`, `.LINK`, and `.NOTES`.
 4. Check the requirements for the script, e.g. `#Requires -RunAsAdministrator`, or `#Requires -Version 3`
 5. Prefer command-line options, else ask the user for help
 6. Recommended is `Set-StrictMode -Version Latest` to enable additional error checking.
