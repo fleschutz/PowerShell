@@ -28,7 +28,7 @@ try {
 	$Average = [math]::round($NumRows / $Elapsed, 1)
 
 	if ($Average -gt 10.0) {
-		"✅ DNS resolves $Average domains per second."
+		"✅ DNS resolves $Average domains per second"
 	} else {  
 		"⚠️ DNS resolves only $Average domains per second!"
 	}

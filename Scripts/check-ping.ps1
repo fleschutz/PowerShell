@@ -30,7 +30,7 @@ try {
 		$Avg += $Latency
 	}
 	$Avg /= $Pings.count
-	"✅ Ping is $($Avg)ms average, $($Min)ms min, $($Max)ms max."
+	"✅ Ping is $($Avg)ms average, $($Min)ms min, $($Max)ms max"
 	exit 0 # success
 } catch {
 	"⚠️ Error in line $($_.InvocationInfo.ScriptLineNumber): $($Error[0])"

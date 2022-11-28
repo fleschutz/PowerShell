@@ -48,11 +48,11 @@ try {
 	} elseif ($Free -lt $MinLevel) {
 		"⚠️ Only $(MB2String $Free) of $(MB2String $Total) swap space left to use!"
 	} elseif ($Used -eq 0) {
-		"✅ $(MB2String $Total) swap space ready to use."
+		"✅ $(MB2String $Total) swap space ready to use"
 	} elseif ($Used -lt $Free) {
-		"✅ $(MB2String $Used) of $(MB2String $Total) swap space in use."
+		"✅ Swap space uses $(MB2String $Used) of $(MB2String $Total)"
 	} else {
-		"✅ $(MB2String $Free) of $(MB2String $Total) swap space left."
+		"✅ Swap space has $(MB2String $Free) of $(MB2String $Total) left to use"
 	}
 	exit 0 # success
 } catch {
