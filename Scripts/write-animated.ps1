@@ -39,7 +39,7 @@ if ($Line1 -eq "") {
 	$Line5 = "Best regards,"
 	$Line6 = "Markus"
 }
-write-host ""
+
 WriteLine $Line1 $Speed
 WriteLine $Line2 $Speed
 WriteLine $Line3 $Speed
@@ -49,5 +49,4 @@ WriteLine $Line6 $Speed
 WriteLine $Line7 $Speed
 WriteLine $Line8 $Speed
 WriteLine $Line9 $Speed
-write-host ""
 exit 0 # success

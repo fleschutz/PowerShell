@@ -12,15 +12,16 @@
 #>
 
 " "
-"  ⭐️HARDWARE⭐️"
+& "$PSScriptRoot/write-green.ps1" "   H A R D W A R E"
 & "$PSScriptRoot/check-cpu.ps1"
 & "$PSScriptRoot/check-ram.ps1"
 & "$PSScriptRoot/check-gpu.ps1"
 & "$PSScriptRoot/check-bios.ps1"
 & "$PSScriptRoot/check-smart-devices.ps1"
 & "$PSScriptRoot/check-drives.ps1"
+& "$PSScriptRoot/check-battery.ps1"
 " "
-"  ⭐️SOFTWARE⭐️"
+& "$PSScriptRoot/write-green.ps1" "   S O F T W A R E"
 & "$PSScriptRoot/check-operating-system.ps1"
 & "$PSScriptRoot/check-uptime.ps1"
 & "$PSScriptRoot/check-time-zone.ps1"
