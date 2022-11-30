@@ -27,7 +27,7 @@ try {
 	if ($lastExitCode -ne "0") { throw "Can't execute 'git' - make sure Git is installed and available" }
 
 	$RepoDirName = (Get-Item "$RepoDir").Name
-	"⏳ (2/6) Checking Git repositoryr 📂$RepoDirName... "
+	"⏳ (2/6) Checking Git repository 📂$RepoDirName... "
 	if (-not(Test-Path "$RepoDir" -pathType container)) { throw "Can't access directory: $RepoDir" }
 
 	"⏳ (3/6) Fetching updates..."
@@ -50,7 +50,7 @@ try {
 	if ($lastExitCode -ne "0") { throw "'git submodule update' failed with exit code $lastExitCode" }
 
 	[int]$Elapsed = $StopWatch.Elapsed.TotalSeconds
-	"✔️ created new '$NewBranchName' branch in 📂$RepoDirName repo in $Elapsed sec (based on '$CurrentBranchName' branch)"
+	"✔️ created new branch '$NewBranchName' (based on '$CurrentBranchName') in 📂$RepoDirName repo in $Elapsed sec."
 	exit 0 # success
 } catch {
 	"⚠️ Error in line $($_.InvocationInfo.ScriptLineNumber): $($Error[0])"
