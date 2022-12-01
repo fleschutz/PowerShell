@@ -21,6 +21,7 @@ function GetDescription { param([string]$Text)
 	"Clear"				{ return "🌙 clear" }
 	"Cloudy"			{ return "☁️ cloudy" }
 	"Fog"				{ return "🌫  fog" }
+	"Freezing fog"			{ return "🌫  freezing fog" }
 	"Heavy snow"			{ return "❄️ heavy snow ⚠️" }
 	"Light drizzle"			{ return "💧 light drizzle" }
 	"Light rain"			{ return "💧 light rain" }
