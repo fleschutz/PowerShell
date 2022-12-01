@@ -47,7 +47,7 @@ try {
 		} elseif ($Used -lt $Free) {
 			"✅ Drive $ID uses $(Bytes2String $Used) of $(Bytes2String $Total)"
 		} else {
-			"✅ Drive $ID has $(Bytes2String $Free) of $(Bytes2String $Total) left to use"
+			"✅ Drive $ID has $(Bytes2String $Free) free of $(Bytes2String $Total)"
 		}
 	}
 	exit 0 # success

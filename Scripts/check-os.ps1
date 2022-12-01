@@ -4,7 +4,7 @@
 .DESCRIPTION
 	This PowerShell script queries and lists operating system details.
 .EXAMPLE
-	PS> ./check-operating-system
+	PS> ./check-os
 .LINK
 	https://github.com/fleschutz/PowerShell
 .NOTES
@@ -25,7 +25,7 @@ try {
 		$BuildNo = $OSDetails.BuildNumber
 		$Serial = $OSDetails.SerialNumber
 		$InstallDate = $OSDetails.InstallDate
-		"✅ $($Name): $Arch, v$Version, S/N $Serial, installed $($InstallDate.ToShortDateString())"
+		"✅ $($Name) ($Arch, v$Version, S/N $Serial, installed $($InstallDate.ToShortDateString()))"
 	} 
 	exit 0 # success
 } catch {
