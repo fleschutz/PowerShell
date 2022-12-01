@@ -42,7 +42,7 @@ try {
 	} 
 
 	if ($IsLinux) {
-		"✅ CPU is $Temp."
+		"✅ CPU is $Temp"
 	} else {
 		$Details = Get-WmiObject -Class Win32_Processor
 		$DeviceName = $Details.Name.trim()

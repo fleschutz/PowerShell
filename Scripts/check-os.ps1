@@ -13,7 +13,7 @@
 
 try {
 	if ($IsLinux) {
-		"✅ $(uname -sr)."
+		"✅ $(uname -sr)"
 	} else {
 		$OS = Get-WmiObject -class Win32_OperatingSystem
 		$Name = $OS.Caption
