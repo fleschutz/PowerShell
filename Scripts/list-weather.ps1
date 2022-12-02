@@ -71,7 +71,7 @@ try {
 	[int]$Day = 0
 	foreach($Hourly in $Weather.weather.hourly) {
 		$Hour = $Hourly.time / 100
-		$Temp = $(($Hourly.tempC.toString()).PadLeft(2))
+		$Temp = $(($Hourly.tempC.toString()).PadLeft(3))
 		$Precip = $Hourly.precipMM
 		$Humidity = $(($Hourly.humidity.toString()).PadLeft(3))
 		$Pressure = $Hourly.pressure
@@ -83,7 +83,7 @@ try {
 		$Desc = GetDescription $Hourly.weatherDesc.value
 		if ($Hour -eq 0) {
 			if ($Day -eq 0) {
-				Write-Host -foregroundColor green "TODAY  🌡°C  ☂️mm  💧  💨km/h ☀️UV  ☁️  👁km  at $Area ($Region, $Country)"
+				Write-Host -foregroundColor green "TODAY   🌡°C  ☂️mm  💧  💨km/h ☀️UV  ☁️  👁km  at $Area ($Region, $Country)"
 			} elseif ($Day -eq 1) {
 				Write-Host -foregroundColor green "TOMORROW"
 			} else {
@@ -91,7 +91,7 @@ try {
 			}
 			$Day++
 		}
-		"$(($Hour.toString()).PadLeft(2))°°  $Temp°   $Precip  $Humidity%  $WindSpeed $WindDir   $UV   $Clouds%  $Visib  $Desc"
+		"$(($Hour.toString()).PadLeft(2))°°  $Temp°   $Precip  $Humidity%   $($WindDir)$WindSpeed   $UV   $Clouds%  $Visib  $Desc"
 	}
 	exit 0 # success
 } catch {
