@@ -12,7 +12,7 @@
 #>
 
 try {
-	$Table = import-csv "$PSScriptRoot/../Data/quotes.csv"
+	$Table = Import-CSV "$PSScriptRoot/../Data/quotes.csv"
 
 	$Generator = New-Object System.Random
 	$Index = [int]$Generator.next(0, $Table.Count - 1)
