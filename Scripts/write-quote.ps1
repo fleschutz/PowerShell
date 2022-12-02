@@ -1,6 +1,6 @@
 ﻿<#
 .SYNOPSIS
-	Writes a random quote to the console
+	Writes a quote to the console
 .DESCRIPTION
 	This PowerShell script writes a random quote to the console.
 .EXAMPLE
@@ -12,19 +12,18 @@
 #>
 
 try {
-	$Table = import-csv "$PSScriptRoot/../Data/quotes.csv"
+	$Table = Import-CSV "$PSScriptRoot/../Data/quotes.csv"
 
 	$Generator = New-Object System.Random
 	$Index = [int]$Generator.next(0, $Table.Count - 1)
-	$Quote = $Table[$Index].Quote
-	$Author = $Table[$Index].Author
+	$Quote = $Table[$Index].QUOTE
+	$Author = $Table[$Index].AUTHOR
 
 	""
-	write-host '“'$Quote' ”'
+	Write-Host '“'$Quote' ”'
 	$Spaces = "                                                                                       "
 	$Spaces = $Spaces.Substring(0, $Quote.Length - $Author.Length)
-	"$Spaces    $($Author.toUpper())"
-	
+	"$Spaces    $($Author.toUpper())"	
 	exit 0 # success
 } catch {
 	"⚠️ Error in line $($_.InvocationInfo.ScriptLineNumber): $($Error[0])"

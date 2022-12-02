@@ -16,8 +16,8 @@ try {
 
 	$Generator = New-Object System.Random
 	$Index = [int]$Generator.next(0, $Table.Count - 1)
-	$Quote = $Table[$Index].Quote
-	$Author = $Table[$Index].Author
+	$Quote = $Table[$Index].QUOTE
+	$Author = $Table[$Index].AUTHOR
 
 	& "$PSScriptRoot/speak-english.ps1" "$Quote (by $Author)"
 	exit 0 # success
