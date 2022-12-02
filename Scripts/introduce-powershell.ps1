@@ -12,20 +12,28 @@
 #>
 
 try {
-	& "$PSScriptRoot/write-big.ps1" "PowerShell"
+	Clear
+	& "$PSScriptRoot/write-big.ps1" "     WELCOME"
+	""
+	$Version = $PSVersionTable.PSVersion
+	$Edition = $PSVersionTable.PSEdition
+	$NumModules = (Get-Module).Count
+	$NumCmdlets = (Get-Command -Command-Type cmdlet).Count
+	$NumAliases = (Get-Alias).Count
+	$Details = "to POWERSHELL $Version ($Edition edition) with $NumModules modules, $NumCmdlets cmdlets and $NumAliases aliases"
+	& "$PSScriptRoot/write-animated.ps1" "$Details"
+	""
+	""
+	& "$PSScriptRoot/write-typewriter.ps1" "* Want to learn PowerShell? See the tutorials at: https://www.guru99.com/powershell-tutorial.html" 25
+	""
+	& "$PSScriptRoot/write-typewriter.ps1" "* Need docs? See the official documentation at: https://docs.microsoft.com/en-us/powershell" 25
+	""
+	& "$PSScriptRoot/write-typewriter.ps1" "* Want to look inside? See the PowerShell Github repository at: https://github.com/PowerShell/PowerShell" 25
+	""
+	& "$PSScriptRoot/write-typewriter.ps1" "* Want examples? See the huge collection of PowerShell scripts at: https://github.com/fleschutz/PowerShell" 25
+	""
 
-	& "$PSScriptRoot/write-animated.ps1" "Welcome to PowerShell"
-	& "$PSScriptRoot/write-animated.ps1" "Feel the power of the console and scripting"
-
-	""
-	"* Want to learn PowerShell? See the tutorials at: https://www.guru99.com/powershell-tutorial.html"
-	""
-	"* Need documentation? See the PowerShell docs at: https://docs.microsoft.com/en-us/powershell/"
-	""
-	"* Want sample scripts? See PowerShell Scripts at: https://github.com/fleschutz/PowerShell/"
-	""
-
-	& "$PSScriptRoot/write-typewriter.ps1" "P.S. PowerShell is looking forward to execute your next command"
+	& "$PSScriptRoot/write-typewriter.ps1" "NOTE: use <Ctrl> + <Click> to follow the links above and HAVE FUN!" 20
 	""
 
 	exit 0 # success
