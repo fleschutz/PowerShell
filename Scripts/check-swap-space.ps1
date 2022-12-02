@@ -44,11 +44,11 @@ try {
 		} 
 	}
 	if ($Total -eq 0) {
-        	"⚠️ No swap space!"
+        	"⚠️ No swap space configured!"
 	} elseif ($Free -lt $MinLevel) {
 		"⚠️ Only $(MB2String $Free) of $(MB2String $Total) swap space left to use!"
 	} elseif ($Used -eq 0) {
-		"✅ $(MB2String $Total) swap space ready to use"
+		"✅ Swap space with $(MB2String $Total) reserved"
 	} elseif ($Used -lt $Free) {
 		"✅ Swap space uses $(MB2String $Used) of $(MB2String $Total)"
 	} else {
