@@ -18,7 +18,7 @@
 #>
 
 try {
-	get-alias
+	Get-Alias
 	exit 0 # success
 } catch {
 	"⚠️ Error in line $($_.InvocationInfo.ScriptLineNumber): $($Error[0])"
