@@ -18,9 +18,8 @@ try {
 	$Index = [int]$Generator.next(0, $Table.Count - 1)
 	$Quote = $Table[$Index].Quote
 	$Author = $Table[$Index].Author
-	$Reply = "$Quote (by $Author)"
 
-	& "$PSScriptRoot/speak-english.ps1" "$Reply"
+	& "$PSScriptRoot/speak-english.ps1" "$Quote (by $Author)"
 	exit 0 # success
 } catch {
 	"⚠️ Error in line $($_.InvocationInfo.ScriptLineNumber): $($Error[0])"
