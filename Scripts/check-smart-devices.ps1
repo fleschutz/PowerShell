@@ -5,7 +5,7 @@
 	This PowerShell script queries S.M.A.R.T. HDD/SSD device details and prints it.
 .EXAMPLE
 	PS> ./check-smart-devices
-	✅ 1TB Samsung SSD 970 EVO via NVMe: 37°C, 2388 hours, 289x on, v2B2QEXE7, selftest passed
+	✅ 1TB Samsung SSD 970 EVO via NVMe (2388 hours, 289x on, v2B2QEXE7, 37°C, selftest passed)
 .LINK
 	https://github.com/fleschutz/PowerShell
 .NOTES
@@ -65,7 +65,7 @@ try {
 		$PowerOn = $Details.power_cycle_count
 		$Hours = $Details.power_on_time.hours
 		if ($Details.smart_status.passed) { $Status = "passed" } else { $Status = "FAILED" }
-		"✅ $($Capacity)$ModelName via $($Protocol): $($Temp)°C, $($Hours) hours, $($PowerOn)x on, v$($Firmware), selftest $Status"
+		"✅ $($Capacity)$ModelName via $($Protocol) ($($Hours) hours, $($PowerOn)x on, v$($Firmware), $($Temp)°C, selftest $Status)"
 	}
 	exit 0 # success
 } catch {
