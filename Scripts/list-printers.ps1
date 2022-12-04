@@ -1,6 +1,6 @@
 ﻿<#
 .SYNOPSIS
-	Lists all printers known to the local computer
+	Lists the printers 
 .DESCRIPTION
 	This PowerShell script lists all printers known to the local computer.
 .EXAMPLE
@@ -12,8 +12,12 @@
 #>
 
 try {
-	$ComputerName = $(hostname)
-	get-WMIObject -Class Win32_Printer -ComputerName $ComputerName | format-table
+	if ($IsLinux) {
+		# TODO
+	} else {
+		$ComputerName = $(hostname)
+		Get-WMIObject -Class Win32_Printer -ComputerName $ComputerName | Format-Table
+	}
 	exit 0 # success
 } catch {
 	"⚠️ Error in line $($_.InvocationInfo.ScriptLineNumber): $($Error[0])"
