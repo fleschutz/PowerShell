@@ -2,7 +2,7 @@
 .SYNOPSIS
 	Query application details
 .DESCRIPTION
-	This PowerShell script queries and lists application details.
+	This PowerShell script queries application details and list it.
 .EXAMPLE
 	PS> ./check-apps
 .LINK
@@ -12,9 +12,14 @@
 #>
 
 try {
-	$NumAppsInstalled = (Get-AppxPackage).Count
-	$NumUpdates = (winget upgrade).Count - 5
-	"✅ $NumAppsInstalled apps installed, $NumUpdates updates available"
+	if ($IsLinux) {
+		# TODO
+	} else {
+		Write-Progress "Querying installed apps and available updates..."
+		$NumAppsInstalled = (Get-AppxPackage).Count
+		$NumUpdates = (winget upgrade).Count - 5
+		"✅ $NumAppsInstalled apps installed, $NumUpdates updates available"
+	}
 	exit 0 # success
 } catch {
 	"⚠️ Error in line $($_.InvocationInfo.ScriptLineNumber): $($Error[0])"
