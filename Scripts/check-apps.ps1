@@ -15,8 +15,10 @@ try {
 	if ($IsLinux) {
 		# TODO
 	} else {
-		Write-Progress "Querying installed apps and available updates..."
+		Write-Progress "⏳ (1/2) Querying installed applications..."
 		$NumAppsInstalled = (Get-AppxPackage).Count
+
+		Write-Progress "⏳ (2/2) Querying available updates..."
 		$NumUpdates = (winget upgrade).Count - 5
 		"✅ $NumAppsInstalled apps installed, $NumUpdates updates available"
 	}
