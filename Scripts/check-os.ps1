@@ -16,7 +16,7 @@ try {
 		"✅ $(uname -sr)"
 	} else {
 		$OS = Get-WmiObject -class Win32_OperatingSystem
-		$Name = $OS.Caption
+		$Name = $OS.Caption -Replace "Microsoft Windows","Windows"
 		$Arch = $OS.OSArchitecture
 		$Version = $OS.Version
 
