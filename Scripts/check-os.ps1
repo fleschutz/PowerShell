@@ -25,7 +25,9 @@ try {
 		$BuildNo = $OSDetails.BuildNumber
 		$Serial = $OSDetails.SerialNumber
 		$InstallDate = $OSDetails.InstallDate
-		"✅ $($Name) ($Arch, v$Version, S/N $Serial) installed on $($InstallDate.ToShortDateString())"
+
+		$ProductKey = (Get-ItemProperty -Path "HKLM:\SOFTWARE\Microsoft\Windows NT\CurrentVersion\SoftwareProtectionPlatform" -Name BackupProductKeyDefault).BackupProductKeyDefault
+		"✅ $Name ($Arch, v$Version, S/N $Serial, key $ProductKey) since $($InstallDate.ToShortDateString())"
 	} 
 	exit 0 # success
 } catch {
