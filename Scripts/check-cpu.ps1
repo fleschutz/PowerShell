@@ -1,11 +1,11 @@
 ﻿<#
 .SYNOPSIS
-	Checks the CPU temperature
+	Queries and prints CPU details
 .DESCRIPTION
-	This PowerShell script queries the CPU temperature and returns it.
+	This PowerShell script queries CPU details (name, type, speed, temperature, etc.) and prints it.
 .EXAMPLE
 	PS> ./check-cpu
-	CPU is 30.3°C warm.
+	✅ CPU AMD Ryzen 5 5500U with Radeon Graphics (CPU0, 2100MHz, 31.3°C)
 .LINK
 	https://github.com/fleschutz/PowerShell
 .NOTES
@@ -30,23 +30,27 @@ function GetCPUTemperatureInCelsius {
 }
 
 try {
+	Write-Progress "Querying CPU details ..."
 	$Celsius = GetCPUTemperatureInCelsius
 	if ($Celsius -eq 99999.9) {
 		$Temp = "no temp"
 	} elseif ($Celsius -gt 50) {
-		$Temp = "$($Celsius)°C hot"
-	} elseif ($Celsius -gt 0) {
-		$Temp = "$($Celsius)°C warm"
+		$Temp = "⚠️$($Celsius)°C"
+	} elseif ($Celsius -lt 0) {
+		$Temp = "⚠️$($Celsius)°C"
 	} else {
-		$Temp = "$($Celsius)°C cold"
+		$Temp = "$($Celsius)°C"
 	} 
 
 	if ($IsLinux) {
 		"✅ CPU is $Temp"
 	} else {
 		$Details = Get-WmiObject -Class Win32_Processor
-		$DeviceName = $Details.Name.trim()
-		"✅ CPU $($DeviceName) ($($Details.DeviceID), $($Details.MaxClockSpeed)MHz, $Temp)"
+		$CPUName = $Details.Name.trim()
+		$DeviceID = $Details.DeviceID
+		$Speed = "$($Details.MaxClockSpeed)MHz"
+		$Socket = $Details.SocketDesignation
+		"✅ CPU $CPUName ($DeviceID, $Speed, socket $Socket, $Temp)"
 	}
 	exit 0 # success
 } catch {
