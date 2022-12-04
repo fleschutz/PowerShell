@@ -17,10 +17,12 @@ try {
 	} else {
 		Add-Type -Assembly System.Windows.Forms
 		$Details = [System.Windows.Forms.SystemInformation]::PowerStatus
-		switch ($Details.BatteryChargeStatus) {
-		"NoSystemBattery" { $BatteryStatus = "No battery" }
-		"0"			{ [int]$Life = 100*$Details.BatteryLifePercent; [int]$Remaining = $Details.BatteryLifeRemaining / 60; $BatteryStatus = "Battery $Life%, $Remaining min left" }
-		default           { $BatteryStatus = $Details.BatteryChargeStatus }
+		if ($Details.BatteryChargeStatus -eq "NoSystemBattery") {
+			$BatteryStatus = "No battery"
+		} else {
+			[int]$Percent = 100*$Details.BatteryLifePercent
+			[int]$Remaining = $Details.BatteryLifeRemaining / 60
+			$BatteryStatus = "Battery $Percent%, $Remaining min left"
 		}
 		switch ($Details.PowerLineStatus) {
 		"Online"  { $PowerStatus = "plugged in to AC power" }
