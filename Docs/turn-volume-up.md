@@ -1,4 +1,4 @@
-## The *turn-volume-up.ps1* PowerShell Script
+## The *turn-volume-up.ps1* Script
 
 This PowerShell script turns the audio volume up (+10% by default).
 

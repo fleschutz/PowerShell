@@ -1,4 +1,4 @@
-## The *check-day.ps1* PowerShell Script
+## The *check-day.ps1* Script
 
 This PowerShell script determines and speaks the current day by text-to-speech (TTS).
 

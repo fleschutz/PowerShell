@@ -1,4 +1,4 @@
-## The *list-special-folders.ps1* PowerShell Script
+## The *list-special-folders.ps1* Script
 
 list-special-folders.ps1 
 

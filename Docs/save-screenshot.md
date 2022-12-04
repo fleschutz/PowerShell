@@ -1,4 +1,4 @@
-## The *save-screenshot.ps1* PowerShell Script
+## The *save-screenshot.ps1* Script
 
 This PowerShell script takes a single screenshot and saves it into a target folder (the user's pictures folder by default).
 

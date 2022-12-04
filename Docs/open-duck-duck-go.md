@@ -1,4 +1,4 @@
-## The *open-duck-duck-go.ps1* PowerShell Script
+## The *open-duck-duck-go.ps1* Script
 
 This PowerShell script launches the Web browser with the DuckDuckGo website.
 

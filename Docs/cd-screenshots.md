@@ -1,4 +1,4 @@
-## The *cd-screenshots.ps1* PowerShell Script
+## The *cd-screenshots.ps1* Script
 
 This PowerShell script changes the working directory to the user's screenshots folder.
 

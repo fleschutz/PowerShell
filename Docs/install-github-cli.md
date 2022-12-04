@@ -1,4 +1,4 @@
-## The *install-github-cli.ps1* PowerShell Script
+## The *install-github-cli.ps1* Script
 
 This PowerShell script installs GitHub command-line interface (CLI).
 

@@ -1,4 +1,4 @@
-## The *list-headlines.ps1* PowerShell Script
+## The *list-headlines.ps1* Script
 
 This PowerShell script lists the latest RSS feed news.
 

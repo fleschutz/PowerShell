@@ -1,4 +1,4 @@
-## The *write-uppercase.ps1* PowerShell Script
+## The *write-uppercase.ps1* Script
 
 This PowerShell script writes text in uppercase letters.
 

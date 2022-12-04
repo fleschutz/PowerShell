@@ -1,4 +1,4 @@
-## The *close-outlook.ps1* PowerShell Script
+## The *close-outlook.ps1* Script
 
 This PowerShell script closes the Microsoft Outlook email application gracefully.
 

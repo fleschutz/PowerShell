@@ -1,4 +1,4 @@
-## The *uninstall-netflix.ps1* PowerShell Script
+## The *uninstall-netflix.ps1* Script
 
 This PowerShell script uninstalls Netflix from the local computer.
 

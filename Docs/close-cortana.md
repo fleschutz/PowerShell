@@ -1,4 +1,4 @@
-## The *close-cortana.ps1* PowerShell Script
+## The *close-cortana.ps1* Script
 
 This PowerShell script closes Microsoft's Cortana application gracefully.
 

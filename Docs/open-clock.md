@@ -1,4 +1,4 @@
-## The *open-clock.ps1* PowerShell Script
+## The *open-clock.ps1* Script
 
 This PowerShell script launches the Clock application.
 

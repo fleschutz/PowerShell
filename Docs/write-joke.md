@@ -1,4 +1,4 @@
-## The *write-joke.ps1* PowerShell Script
+## The *write-joke.ps1* Script
 
 This PowerShell script writes a random Juck Norris joke to the console.
 

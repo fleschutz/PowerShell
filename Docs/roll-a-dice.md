@@ -1,4 +1,4 @@
-## The *roll-a-dice.ps1* PowerShell Script
+## The *roll-a-dice.ps1* Script
 
 This PowerShell script rolls a dice and returns the number by text-to-speech (TTS).
 

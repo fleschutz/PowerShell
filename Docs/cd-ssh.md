@@ -1,4 +1,4 @@
-## The *cd-ssh.ps1* PowerShell Script
+## The *cd-ssh.ps1* Script
 
 This PowerShell script changes the working directory to the user's SSH folder.
 

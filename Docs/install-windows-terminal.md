@@ -1,4 +1,4 @@
-## The *install-windows-terminal.ps1* PowerShell Script
+## The *install-windows-terminal.ps1* Script
 
 This PowerShell script installs Windows Terminal from the Microsoft Store.
 

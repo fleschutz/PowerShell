@@ -1,4 +1,4 @@
-## The *suspend.ps1* PowerShell Script
+## The *suspend.ps1* Script
 
 This PowerShell script suspends the local computer immediately.
 

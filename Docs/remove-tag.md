@@ -1,4 +1,4 @@
-## The *remove-tag.ps1* PowerShell Script
+## The *remove-tag.ps1* Script
 
 This PowerShell script removes a Git tag, either locally, remote, or both.
 

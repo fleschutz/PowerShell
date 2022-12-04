@@ -1,4 +1,4 @@
-## The *speak-file.ps1* PowerShell Script
+## The *speak-file.ps1* Script
 
 This PowerShell script speaks the content of the given text file by text-to-speech (TTS).
 

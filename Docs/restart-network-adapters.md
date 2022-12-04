@@ -1,4 +1,4 @@
-## The *restart-network-adapters.ps1* PowerShell Script
+## The *restart-network-adapters.ps1* Script
 
 This PowerShell script restarts all local network adapters (needs admin rights).
 

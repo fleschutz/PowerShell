@@ -1,4 +1,4 @@
-## The *open-visual-studio.ps1* PowerShell Script
+## The *open-visual-studio.ps1* Script
 
 open-visual-studio.ps1 
 

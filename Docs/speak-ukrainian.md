@@ -1,4 +1,4 @@
-## The *speak-ukrainian.ps1* PowerShell Script
+## The *speak-ukrainian.ps1* Script
 
 This PowerShell script speaks the given text with a Ukrainian text-to-speech (TTS) voice.
 

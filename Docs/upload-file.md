@@ -1,4 +1,4 @@
-## The *upload-file.ps1* PowerShell Script
+## The *upload-file.ps1* Script
 
 This PowerShell script uploads a local file to a FTP server.
 

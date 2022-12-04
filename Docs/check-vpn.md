@@ -1,4 +1,4 @@
-## The *check-vpn.ps1* PowerShell Script
+## The *check-vpn.ps1* Script
 
 This PowerShell script queries and prints the status of any VPN connection.
 
@@ -45,11 +45,11 @@ try {
 	} else {
 		$Connections = (Get-VPNConnection)
 		foreach($Connection in $Connections) {
-			"✅ VPN '$($Connection.Name)' is $($Connection.ConnectionStatus)."
+			"✅ VPN '$($Connection.Name)' is $($Connection.ConnectionStatus)"
 			$NoVPN = $false
 		}
 	}
-	if ($NoVPN) { "⚠️ No VPN connection." }
+	if ($NoVPN) { "⚠️ No VPN connection" }
 	exit 0 # success
 } catch {
 	"⚠️ Error in line $($_.InvocationInfo.ScriptLineNumber): $($Error[0])"

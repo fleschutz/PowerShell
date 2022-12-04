@@ -1,4 +1,4 @@
-## The *check-xml-file.ps1* PowerShell Script
+## The *check-xml-file.ps1* Script
 
 This PowerShell script checks the given XML file for validity.
 

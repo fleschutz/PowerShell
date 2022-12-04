@@ -1,4 +1,4 @@
-## The *write-chart.ps1* PowerShell Script
+## The *write-chart.ps1* Script
 
 write-chart.ps1 
 

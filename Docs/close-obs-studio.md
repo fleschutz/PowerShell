@@ -1,4 +1,4 @@
-## The *close-obs-studio.ps1* PowerShell Script
+## The *close-obs-studio.ps1* Script
 
 This PowerShell script closes the OBS Studio application gracefully.
 

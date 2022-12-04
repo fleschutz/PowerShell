@@ -1,4 +1,4 @@
-## The *close-windows-terminal.ps1* PowerShell Script
+## The *close-windows-terminal.ps1* Script
 
 This PowerShell script closes the Windows Terminal application gracefully.
 

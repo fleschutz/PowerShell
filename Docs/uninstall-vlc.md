@@ -1,4 +1,4 @@
-## The *uninstall-vlc.ps1* PowerShell Script
+## The *uninstall-vlc.ps1* Script
 
 This PowerShell script uninstalls the VLC media player from the local computer.
 

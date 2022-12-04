@@ -1,4 +1,4 @@
-## The *list-aliases.ps1* PowerShell Script
+## The *list-aliases.ps1* Script
 
 This PowerShell scripts lists all PowerShell aliases.
 
@@ -53,7 +53,7 @@ https://github.com/fleschutz/PowerShell
 #>
 
 try {
-	get-alias
+	Get-Alias
 	exit 0 # success
 } catch {
 	"⚠️ Error in line $($_.InvocationInfo.ScriptLineNumber): $($Error[0])"

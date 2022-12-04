@@ -1,4 +1,4 @@
-## The *list-commit-statistics.ps1* PowerShell Script
+## The *list-commit-statistics.ps1* Script
 
 This PowerShell script lists the commit statistics of a Git repository.
 

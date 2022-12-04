@@ -1,4 +1,4 @@
-## The *install-updates.ps1* PowerShell Script
+## The *install-updates.ps1* Script
 
 This PowerShell script installs updates for the local machine (needs admin rights).
 
@@ -54,14 +54,14 @@ try {
 		"⏳ (4/4) Upgrading installed Snap packages..."
 		& sudo snap refresh
 	} else {
-		"⏳ (1/2) Querying updates..."
+		"⏳ (1/2) Querying application updates..."
 		& winget upgrade
-
-		"⏳ (2/2) Upgrading apps..."
+		" "
+		"⏳ (2/2) Upgrading applications..."
 		& winget upgrade --all
 	}
 	[int]$Elapsed = $StopWatch.Elapsed.TotalSeconds
-	"✔️ installed updates in $Elapsed sec"
+	"✅ updates installed in $Elapsed sec."
 	exit 0 # success
 } catch {
 	"⚠️ Error in line $($_.InvocationInfo.ScriptLineNumber): $($Error[0])"

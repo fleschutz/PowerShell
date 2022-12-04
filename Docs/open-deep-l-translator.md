@@ -1,4 +1,4 @@
-## The *open-deep-l-translator.ps1* PowerShell Script
+## The *open-deep-l-translator.ps1* Script
 
 This PowerShell script launches the Web browser with the DeepL Translator website.
 

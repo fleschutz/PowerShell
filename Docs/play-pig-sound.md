@@ -1,4 +1,4 @@
-## The *play-pig-sound.ps1* PowerShell Script
+## The *play-pig-sound.ps1* Script
 
 This PowerShell script plays a pig sound.
 

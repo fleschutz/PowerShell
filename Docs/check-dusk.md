@@ -1,4 +1,4 @@
-## The *check-dusk.ps1* PowerShell Script
+## The *check-dusk.ps1* Script
 
 check-dusk.ps1 
 

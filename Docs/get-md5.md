@@ -1,4 +1,4 @@
-## The *get-md5.ps1* PowerShell Script
+## The *get-md5.ps1* Script
 
 
 

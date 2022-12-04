@@ -1,4 +1,4 @@
-## The *toggle-caps-lock.ps1* PowerShell Script
+## The *toggle-caps-lock.ps1* Script
 
 This PowerShell script toggles the Caps Lock key state.
 

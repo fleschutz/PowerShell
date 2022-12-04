@@ -1,4 +1,4 @@
-## The *list-installed-software.ps1* PowerShell Script
+## The *list-installed-software.ps1* Script
 
 This PowerShell script lists the installed software (except Windows Store apps).
 

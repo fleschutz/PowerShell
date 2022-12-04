@@ -1,4 +1,4 @@
-## The *open-email-client.ps1* PowerShell Script
+## The *open-email-client.ps1* Script
 
 This PowerShell script launches the default email client.
 

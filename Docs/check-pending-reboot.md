@@ -1,4 +1,4 @@
-## The *check-pending-reboot.ps1* PowerShell Script
+## The *check-pending-reboot.ps1* Script
 
 check-pending-reboot.ps1 
 
@@ -72,9 +72,9 @@ if (Test-RegistryValue -Path "HKLM:\SYSTEM\CurrentControlSet\Services\Netlogon" 
 	$Reason += ", found registry entry '...\CurrentControlSet\Services\Netlogon' with 'AvoidSpnSet'"
 }
 if ($Reason -ne "") {
-	"⚠️ Pending reboot ($($Reason.substring(2)))."	
+	"⚠️ Pending reboot ($($Reason.substring(2)))"
 } else {
-	"✅ No pending reboot."
+	"✅ No pending reboot"
 }
 exit 0 # success
 ```

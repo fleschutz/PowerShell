@@ -1,4 +1,4 @@
-## The *convert-sql2csv.ps1* PowerShell Script
+## The *convert-sql2csv.ps1* Script
 
 This PowerShell script converts a SQL database table to a .CSV file.
 

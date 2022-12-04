@@ -1,4 +1,4 @@
-## The *get-sha256.ps1* PowerShell Script
+## The *get-sha256.ps1* Script
 
 
 

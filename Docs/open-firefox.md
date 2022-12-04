@@ -1,4 +1,4 @@
-## The *open-firefox.ps1* PowerShell Script
+## The *open-firefox.ps1* Script
 
 This PowerShell script launches the Mozilla Firefox Web browser.
 

@@ -1,4 +1,4 @@
-## The *speak-hindi.ps1* PowerShell Script
+## The *speak-hindi.ps1* Script
 
 This PowerShell script speaks the given text with a Hindi text-to-speech (TTS) voice.
 

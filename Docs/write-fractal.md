@@ -1,4 +1,4 @@
-## The *write-fractal.ps1* PowerShell Script
+## The *write-fractal.ps1* Script
 
 write-fractal.ps1 
 

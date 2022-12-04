@@ -1,4 +1,4 @@
-## The *open-microsoft-teams.ps1* PowerShell Script
+## The *open-microsoft-teams.ps1* Script
 
 This script launches the Microsoft Teams application.
 

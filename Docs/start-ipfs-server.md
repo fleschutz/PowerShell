@@ -1,4 +1,4 @@
-## The *start-ipfs-server.ps1* PowerShell Script
+## The *start-ipfs-server.ps1* Script
 
 This PowerShell script starts a local IPFS server as a daemon process.
 

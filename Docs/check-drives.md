@@ -1,4 +1,4 @@
-## The *check-drives.ps1* PowerShell Script
+## The *check-drives.ps1* Script
 
 This PowerShell script checks all drives for free space left.
 
@@ -77,13 +77,13 @@ try {
 		[int64]$Total = ($Used + $Free)
 
 		if ($Total -eq 0) {
-			"✅ Drive $ID is empty."
+			"✅ Drive $ID is empty"
 		} elseif ($Free -lt $MinLevel) {
 			"⚠️ Drive $ID has only $(Bytes2String $Free) of $(Bytes2String $Total) left to use!"
 		} elseif ($Used -lt $Free) {
-			"✅ Drive $ID uses $(Bytes2String $Used) of $(Bytes2String $Total)."
+			"✅ Drive $ID uses $(Bytes2String $Used) of $(Bytes2String $Total)"
 		} else {
-			"✅ Drive $ID has $(Bytes2String $Free) of $(Bytes2String $Total) left."
+			"✅ Drive $ID has $(Bytes2String $Free) free of $(Bytes2String $Total)"
 		}
 	}
 	exit 0 # success

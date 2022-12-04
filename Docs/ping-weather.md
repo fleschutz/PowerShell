@@ -1,4 +1,4 @@
-## The *ping-weather.ps1* PowerShell Script
+## The *ping-weather.ps1* Script
 
 This PowerShell script continuously shows the current weather conditions (similar to htop, 10 min update interval by default).
 

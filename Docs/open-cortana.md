@@ -1,4 +1,4 @@
-## The *open-cortana.ps1* PowerShell Script
+## The *open-cortana.ps1* Script
 
 This PowerShell script launches the Cortana application.
 

@@ -1,10 +1,10 @@
-## The *list-news.ps1* PowerShell Script
+## The *list-news.ps1* Script
 
 This PowerShell script lists the latest news by using RSS (Really Simple Syndication) feeds.
 
 ## Parameters
 ```powershell
-list-news.ps1 [[-RSS_URL] <String>] [[-MaxCount] <Int32>] [<CommonParameters>]
+list-news.ps1 [[-RSS_URL] <String>] [[-MaxLines] <Int32>] [[-Speed] <Int32>] [<CommonParameters>]
 
 -RSS_URL <String>
     Specifies the URL to the RSS feed (Yahoo News by default)
@@ -15,12 +15,21 @@ list-news.ps1 [[-RSS_URL] <String>] [[-MaxCount] <Int32>] [<CommonParameters>]
     Accept pipeline input?       false
     Accept wildcard characters?  false
 
--MaxCount <Int32>
-    Specifies the number of lines to list (20 by default)
+-MaxLines <Int32>
+    Specifies the maximum number of lines to list (24 by default)
     
     Required?                    false
     Position?                    2
-    Default value                20
+    Default value                24
+    Accept pipeline input?       false
+    Accept wildcard characters?  false
+
+-Speed <Int32>
+    Specifies the speed to write the text (10 ms by default)
+    
+    Required?                    false
+    Position?                    3
+    Default value                10
     Accept pipeline input?       false
     Accept wildcard characters?  false
 
@@ -50,8 +59,10 @@ https://github.com/fleschutz/PowerShell
 	This PowerShell script lists the latest news by using RSS (Really Simple Syndication) feeds.
 .PARAMETER RSS_URL
 	Specifies the URL to the RSS feed (Yahoo News by default)
-.PARAMETER MaxCount
-	Specifies the number of lines to list (20 by default)
+.PARAMETER MaxLines
+	Specifies the maximum number of lines to list (24 by default)
+.PARAMETER Speed
+        Specifies the speed to write the text (10 ms by default)
 .EXAMPLE
 	PS> ./list-news
 .LINK
@@ -60,18 +71,18 @@ https://github.com/fleschutz/PowerShell
 	Author: Markus Fleschutz | License: CC0
 #>
 
-param([string]$RSS_URL = "https://yahoo.com/news/rss/world", [int]$MaxCount = 20)
+param([string]$RSS_URL = "https://yahoo.com/news/rss/world", [int]$MaxLines = 24, [int]$Speed = 10)
 
 try {
 	[xml]$Content = (Invoke-WebRequest -URI $RSS_URL -useBasicParsing).Content
 	[int]$Count = 1
 	foreach ($Item in $Content.rss.channel.item) {
-		& "$PSScriptRoot/write-typewriter.ps1" "→ $($Item.title)" 20 # ms speed
-		if ($Count++ -eq $MaxCount) { break }
+		& "$PSScriptRoot/write-typewriter.ps1" "→ $($Item.title)" $Speed
+		if ($Count++ -eq $MaxLines) { break }
 	}
 	$Source = $Content.rss.channel.title
 	$Date = $Content.rss.channel.pubDate
-	"  By *$($Source)* as of $Date"
+	"     (by *$($Source)* as of $Date)"
 	exit 0 # success
 } catch {
 	"⚠️ Error in line $($_.InvocationInfo.ScriptLineNumber): $($Error[0])"

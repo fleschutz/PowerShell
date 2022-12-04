@@ -1,4 +1,4 @@
-## The *check-dns.ps1* PowerShell Script
+## The *check-dns.ps1* Script
 
 This PowerShell script measures and prints the DNS resolution speed by using 200 frequently used domain names.
 
@@ -55,7 +55,7 @@ try {
 	$Average = [math]::round($NumRows / $Elapsed, 1)
 
 	if ($Average -gt 10.0) {
-		"✅ DNS resolves $Average domains per second."
+		"✅ DNS resolves $Average domains per second"
 	} else {  
 		"⚠️ DNS resolves only $Average domains per second!"
 	}

@@ -1,4 +1,4 @@
-## The *change-wallpaper.ps1* PowerShell Script
+## The *change-wallpaper.ps1* Script
 
 This PowerShell script downloads a random photo from Unsplash and sets it as desktop background.
 

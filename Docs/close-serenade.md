@@ -1,4 +1,4 @@
-## The *close-serenade.ps1* PowerShell Script
+## The *close-serenade.ps1* Script
 
 This PowerShell script closes the Serenade.ai application gracefully.
 

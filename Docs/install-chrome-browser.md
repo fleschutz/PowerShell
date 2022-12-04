@@ -1,4 +1,4 @@
-## The *install-chrome-browser.ps1* PowerShell Script
+## The *install-chrome-browser.ps1* Script
 
 This PowerShell script installs the latest Google Chrome Web browser.
 

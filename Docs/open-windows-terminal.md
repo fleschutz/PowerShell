@@ -1,4 +1,4 @@
-## The *open-windows-terminal.ps1* PowerShell Script
+## The *open-windows-terminal.ps1* Script
 
 This script launches the Windows Terminal application.
 

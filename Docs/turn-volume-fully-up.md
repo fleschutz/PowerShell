@@ -1,4 +1,4 @@
-## The *turn-volume-fully-up.ps1* PowerShell Script
+## The *turn-volume-fully-up.ps1* Script
 
 This PowerShell script turns the audio volume fully up to 100%.
 

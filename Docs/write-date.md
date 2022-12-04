@@ -1,4 +1,4 @@
-## The *write-date.ps1* PowerShell Script
+## The *write-date.ps1* Script
 
 This PowerShell script determines and writes the current date.
 

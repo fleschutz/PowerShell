@@ -1,4 +1,4 @@
-## The *uninstall-spotify.ps1* PowerShell Script
+## The *uninstall-spotify.ps1* Script
 
 This PowerShell script uninstalls Spotify from the local computer.
 

@@ -1,4 +1,4 @@
-## The *list-cmdlets.ps1* PowerShell Script
+## The *list-cmdlets.ps1* Script
 
 This PowerShell script lists all PowerShell cmdlets.
 

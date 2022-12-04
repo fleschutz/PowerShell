@@ -1,4 +1,4 @@
-## The *uninstall-windows-terminal.ps1* PowerShell Script
+## The *uninstall-windows-terminal.ps1* Script
 
 This PowerShell script uninstalls Windows Terminal from the local computer.
 

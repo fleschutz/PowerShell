@@ -1,4 +1,4 @@
-## The *open-repos-folder.ps1* PowerShell Script
+## The *open-repos-folder.ps1* Script
 
 This script launches the File Explorer with the user's Git repositories folder.
 

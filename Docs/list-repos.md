@@ -1,4 +1,4 @@
-## The *list-repos.ps1* PowerShell Script
+## The *list-repos.ps1* Script
 
 This PowerShell script lists the details of all Git repositories in a folder.
 
@@ -7,7 +7,7 @@ This PowerShell script lists the details of all Git repositories in a folder.
 list-repos.ps1 [[-ParentDir] <String>] [<CommonParameters>]
 
 -ParentDir <String>
-    Specifies the path to the parent folder.
+    Specifies the path to the parent directory.
     
     Required?                    false
     Position?                    1
@@ -26,10 +26,10 @@ PS> ./list-repos C:\MyRepos
 
 
 
-No  Repository   Branch   LatestTag   Status
---  ----------   ------   ---------   ------
-1   cmake        main     v3.23.0     clean
-2   opencv       main     4.5.5       modified
+No   Repository    Branch    LatestTag    Status
+--   ----------    ------    ---------    ------
+1    cmake         main      v3.23.0      clean
+2    opencv        main      4.5.5        modified
 ...
 
 ```
@@ -48,14 +48,14 @@ https://github.com/fleschutz/PowerShell
 .DESCRIPTION
 	This PowerShell script lists the details of all Git repositories in a folder.
 .PARAMETER ParentDir
-	Specifies the path to the parent folder.
+	Specifies the path to the parent directory.
 .EXAMPLE
 	PS> ./list-repos C:\MyRepos
 	
-	No  Repository   Branch   LatestTag   Status
-	--  ----------   ------   ---------   ------
-	1   cmake        main     v3.23.0     clean
-	2   opencv       main     4.5.5       modified
+	No   Repository    Branch    LatestTag    Status
+	--   ----------    ------    ---------    ------
+	1    cmake         main      v3.23.0      clean
+	2    opencv        main      4.5.5        modified
 	...
 .LINK
 	https://github.com/fleschutz/PowerShell
@@ -66,11 +66,10 @@ https://github.com/fleschutz/PowerShell
 param([string]$ParentDir = "$PWD")
 
 function ListRepos { 
-	[int]$No = 0
+	[int]$No = 1
 	$Folders = (Get-ChildItem "$ParentDir" -attributes Directory)
 	foreach ($Folder in $Folders) {
-		$No++
-		$Repository = (get-item "$Folder").Name
+		$FolderName = (Get-Item "$Folder").Name
 		$Branch = (git -C "$Folder" branch --show-current)
 		$LatestTagCommitID = (git -C "$Folder" rev-list --tags --max-count=1)
 	        $LatestTag = (git -C "$Folder" describe --tags $LatestTagCommitID)
@@ -78,12 +77,13 @@ function ListRepos {
 		if ("$Status" -eq "") { $Status = "clean" }
 		if ("$Status" -like " M *") { $Status = "modified" }
 
-		New-Object PSObject -property @{ 'No'="$No"; 'Repository'="$Repository"; 'Branch'="$Branch"; 'LatestTag'="$LatestTag"; 'Status'="$Status"; }
+		New-Object PSObject -property @{ 'No'="$No"; 'Repository'="$FolderName"; 'Branch'="$Branch"; 'LatestTag'="$LatestTag"; 'Status'="$Status"; }
+		$No++
 	}
 }
 
 try {
-	if (-not(test-path "$ParentDir" -pathType container)) { throw "Can't access directory: $ParentDir" }
+	if (-not(Test-Path "$ParentDir" -pathType container)) { throw "Can't access directory: $ParentDir" }
 
 	$Null = (git --version)
 	if ($lastExitCode -ne "0") { throw "Can't execute 'git' - make sure Git is installed and available" }

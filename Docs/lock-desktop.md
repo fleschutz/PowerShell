@@ -1,4 +1,4 @@
-## The *lock-desktop.ps1* PowerShell Script
+## The *lock-desktop.ps1* Script
 
 This PowerShell script locks the local computer desktop immediately.
 

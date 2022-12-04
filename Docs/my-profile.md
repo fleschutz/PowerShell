@@ -1,4 +1,4 @@
-## The *my-profile.ps1* PowerShell Script
+## The *my-profile.ps1* Script
 
 my-profile.ps1 
 

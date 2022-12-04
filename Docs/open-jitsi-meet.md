@@ -1,4 +1,4 @@
-## The *open-jitsi-meet.ps1* PowerShell Script
+## The *open-jitsi-meet.ps1* Script
 
 This script launches the Web browser with the Jitsi Meet website.
 

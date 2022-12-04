@@ -1,4 +1,4 @@
-## The *check-independence-day.ps1* PowerShell Script
+## The *check-independence-day.ps1* Script
 
 This PowerShell script checks the time until Indepence Day and replies by text-to-speech (TTS).
 

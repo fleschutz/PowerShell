@@ -1,4 +1,4 @@
-## The *set-wallpaper.ps1* PowerShell Script
+## The *set-wallpaper.ps1* Script
 
 This PowerShell script sets the given image file as desktop wallpaper (.JPG or .PNG supported)
 

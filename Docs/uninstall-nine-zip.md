@@ -1,4 +1,4 @@
-## The *uninstall-nine-zip.ps1* PowerShell Script
+## The *uninstall-nine-zip.ps1* Script
 
 This PowerShell script uninstalls 9 ZIP from the local computer.
 

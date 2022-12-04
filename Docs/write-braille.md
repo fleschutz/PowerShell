@@ -1,4 +1,4 @@
-## The *write-braille.ps1* PowerShell Script
+## The *write-braille.ps1* Script
 
 This PowerShell script writes text in Braille.
 

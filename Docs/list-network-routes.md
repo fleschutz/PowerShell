@@ -1,4 +1,4 @@
-## The *list-network-routes.ps1* PowerShell Script
+## The *list-network-routes.ps1* Script
 
 This PowerShell script lists the network routes on the local computer.
 

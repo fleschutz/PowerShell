@@ -1,4 +1,4 @@
-## The *speak-german.ps1* PowerShell Script
+## The *speak-german.ps1* Script
 
 This PowerShell script speaks the given text with a German text-to-speech (TTS) voice.
 

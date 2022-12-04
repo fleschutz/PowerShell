@@ -1,4 +1,4 @@
-## The *alert.ps1* PowerShell Script
+## The *alert.ps1* Script
 
 This PowerShell script handles and escalates the given alert message.
 

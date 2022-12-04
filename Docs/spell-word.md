@@ -1,4 +1,4 @@
-## The *spell-word.ps1* PowerShell Script
+## The *spell-word.ps1* Script
 
 This PowerShell script spells the given word by text-to-speech (TTS).
 

@@ -1,4 +1,4 @@
-## The *translate-files.ps1* PowerShell Script
+## The *translate-files.ps1* Script
 
 
 

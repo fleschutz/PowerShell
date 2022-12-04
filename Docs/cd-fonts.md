@@ -1,4 +1,4 @@
-## The *cd-fonts.ps1* PowerShell Script
+## The *cd-fonts.ps1* Script
 
 This PowerShell script changes the working directory to the fonts folder.
 

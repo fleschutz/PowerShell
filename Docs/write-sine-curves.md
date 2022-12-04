@@ -1,4 +1,4 @@
-## The *write-sine-curves.ps1* PowerShell Script
+## The *write-sine-curves.ps1* Script
 
 This PowerShell script writes sine curves.
 

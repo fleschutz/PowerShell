@@ -1,4 +1,4 @@
-## The *upload-to-dropbox.ps1* PowerShell Script
+## The *upload-to-dropbox.ps1* Script
 
 This PowerShell script uploads a local file to Dropbox.
 

@@ -1,4 +1,4 @@
-## The *write-matrix.ps1* PowerShell Script
+## The *write-matrix.ps1* Script
 
 write-matrix.ps1 
 

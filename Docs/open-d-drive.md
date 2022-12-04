@@ -1,4 +1,4 @@
-## The *open-d-drive.ps1* PowerShell Script
+## The *open-d-drive.ps1* Script
 
 This PowerShell script launches the File Explorer with the D: drive folder.
 

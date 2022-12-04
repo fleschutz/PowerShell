@@ -1,4 +1,4 @@
-## The *connect-vpn.ps1* PowerShell Script
+## The *connect-vpn.ps1* Script
 
 This PowerShell script tries to connect to the VPN.
 

@@ -1,4 +1,4 @@
-## The *check-gpu.ps1* PowerShell Script
+## The *check-gpu.ps1* Script
 
 check-gpu.ps1 
 
@@ -52,7 +52,7 @@ try {
 		$RefreshRate = $Details.CurrentRefreshRate
 		$DriverVersion = $Details.DriverVersion
 		$Status = $Details.Status
-		 "✅ $($Model): $(Bytes2String $RAMSize) RAM, $($ResWidth)x$($ResHeight) pixels, $BitsPerPixel bit, $RefreshRate Hz, driver $DriverVersion, status $Status"
+		 "✅ GPU $($Model) ($(Bytes2String $RAMSize) RAM, $($ResWidth)x$($ResHeight) pixels, $BitsPerPixel bit, $RefreshRate Hz, driver $DriverVersion, status $Status)"
 	}
 } catch {
         "⚠️ Error in line $($_.InvocationInfo.ScriptLineNumber): $($Error[0])"

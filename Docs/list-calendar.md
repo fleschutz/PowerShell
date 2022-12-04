@@ -1,4 +1,4 @@
-## The *list-calendar.ps1* PowerShell Script
+## The *list-calendar.ps1* Script
 
 Lists calendar elements, either a single month or an entire year.
 

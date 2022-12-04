@@ -1,4 +1,4 @@
-## The *close-three-d-viewer.ps1* PowerShell Script
+## The *close-three-d-viewer.ps1* Script
 
 This PowerShell script closes the 3D-Viewer application gracefully.
 

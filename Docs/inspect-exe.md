@@ -1,4 +1,4 @@
-## The *inspect-exe.ps1* PowerShell Script
+## The *inspect-exe.ps1* Script
 
 This PowerShell script prints basic information of an executable file.
 

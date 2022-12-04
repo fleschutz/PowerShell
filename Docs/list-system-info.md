@@ -1,4 +1,4 @@
-## The *list-system-info.ps1* PowerShell Script
+## The *list-system-info.ps1* Script
 
 This PowerShell script lists system information of the local computer.
 

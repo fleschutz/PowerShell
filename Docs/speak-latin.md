@@ -1,4 +1,4 @@
-## The *speak-latin.ps1* PowerShell Script
+## The *speak-latin.ps1* Script
 
 This PowerShell script speaks the given text with a Latin text-to-speech (TTS) voice.
 

@@ -1,4 +1,4 @@
-## The *open-google-mail.ps1* PowerShell Script
+## The *open-google-mail.ps1* Script
 
 This PowerShell script launches the Web browser with the Google Mail website.
 

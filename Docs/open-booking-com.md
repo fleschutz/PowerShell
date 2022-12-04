@@ -1,4 +1,4 @@
-## The *open-booking-com.ps1* PowerShell Script
+## The *open-booking-com.ps1* Script
 
 This PowerShell script launches the Web browser with the Booking.com website.
 

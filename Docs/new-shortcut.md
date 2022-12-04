@@ -1,4 +1,4 @@
-## The *new-shortcut.ps1* PowerShell Script
+## The *new-shortcut.ps1* Script
 
 This PowerShell script creates a new shortcut file.
 

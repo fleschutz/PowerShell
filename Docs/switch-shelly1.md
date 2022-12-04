@@ -1,4 +1,4 @@
-## The *switch-shelly1.ps1* PowerShell Script
+## The *switch-shelly1.ps1* Script
 
 This PowerShell script switches a Shelly1 device in the local network.
 

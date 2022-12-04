@@ -1,4 +1,4 @@
-## The *list-branches.ps1* PowerShell Script
+## The *list-branches.ps1* Script
 
 This PowerShell script lists all branches in a Git repository.
 

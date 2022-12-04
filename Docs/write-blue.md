@@ -1,4 +1,4 @@
-## The *write-blue.ps1* PowerShell Script
+## The *write-blue.ps1* Script
 
 This PowerShell script writes text in a blue foreground color.
 

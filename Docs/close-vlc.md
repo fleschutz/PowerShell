@@ -1,4 +1,4 @@
-## The *close-vlc.ps1* PowerShell Script
+## The *close-vlc.ps1* Script
 
 This PowerShell script closes the VLC media player application gracefully.
 

@@ -1,4 +1,4 @@
-## The *install-opera-browser.ps1* PowerShell Script
+## The *install-opera-browser.ps1* Script
 
 This PowerShell script installs Opera Browser from Microsoft Store.
 

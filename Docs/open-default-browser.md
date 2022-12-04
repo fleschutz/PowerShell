@@ -1,4 +1,4 @@
-## The *open-default-browser.ps1* PowerShell Script
+## The *open-default-browser.ps1* Script
 
 This PowerShell script launches the default Web browser, optional with a given URL.
 

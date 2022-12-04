@@ -1,4 +1,4 @@
-## The *turn-volume-off.ps1* PowerShell Script
+## The *turn-volume-off.ps1* Script
 
 This PowerShell script mutes the default audio device immediately.
 

@@ -1,4 +1,4 @@
-## The *list-user-groups.ps1* PowerShell Script
+## The *list-user-groups.ps1* Script
 
 This PowerShell script lists the user groups on the local computer.
 

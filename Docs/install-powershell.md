@@ -1,4 +1,4 @@
-## The *install-powershell.ps1* PowerShell Script
+## The *install-powershell.ps1* Script
 
 install-powershell.ps1 [-Destination <string>] [-Daily] [-DoNotOverwrite] [-AddToPath] [-Preview] [<CommonParameters>]
 install-powershell.ps1 [-UseMSI] [-Quiet] [-AddExplorerContextMenu] [-EnablePSRemoting] [-Preview] [<CommonParameters>]

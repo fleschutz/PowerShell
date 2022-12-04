@@ -1,4 +1,4 @@
-## The *convert-image2ascii.ps1* PowerShell Script
+## The *convert-image2ascii.ps1* Script
 
 convert-image2ascii.ps1 
 

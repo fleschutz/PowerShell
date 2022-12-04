@@ -1,4 +1,4 @@
-## The *play-super-mario.ps1* PowerShell Script
+## The *play-super-mario.ps1* Script
 
 This PowerShell script plays the Super Mario intro.
 

@@ -1,4 +1,4 @@
-## The *list-processes.ps1* PowerShell Script
+## The *list-processes.ps1* Script
 
 This PowerShell script lists all local computer processes.
 

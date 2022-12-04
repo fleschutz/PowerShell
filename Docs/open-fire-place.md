@@ -1,4 +1,4 @@
-## The *open-fire-place.ps1* PowerShell Script
+## The *open-fire-place.ps1* Script
 
 This PowerShell script launches the Web browser with a fire place website.
 

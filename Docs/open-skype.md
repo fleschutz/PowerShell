@@ -1,4 +1,4 @@
-## The *open-skype.ps1* PowerShell Script
+## The *open-skype.ps1* Script
 
 This script launches the Skype application.
 

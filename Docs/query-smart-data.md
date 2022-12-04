@@ -1,4 +1,4 @@
-## The *query-smart-data.ps1* PowerShell Script
+## The *query-smart-data.ps1* Script
 
 Queries the S.M.A.R.T. data of your HDD/SSD's and saves it to the current/given directory.
 (use smart-data2csv.ps1 to generate a CSV table for analysis).

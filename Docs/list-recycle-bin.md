@@ -1,4 +1,4 @@
-## The *list-recycle-bin.ps1* PowerShell Script
+## The *list-recycle-bin.ps1* Script
 
 This PowerShell script lists the content of the recycle bin folder.
 

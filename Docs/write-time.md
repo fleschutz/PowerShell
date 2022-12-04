@@ -1,4 +1,4 @@
-## The *write-time.ps1* PowerShell Script
+## The *write-time.ps1* Script
 
 This PowerShell script determines and writes the current time.
 

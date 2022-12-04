@@ -1,4 +1,4 @@
-## The *list-fritzbox-calls.ps1* PowerShell Script
+## The *list-fritzbox-calls.ps1* Script
 
 This PowerShell script lists the phone calls of the FRITZ!Box device.
 

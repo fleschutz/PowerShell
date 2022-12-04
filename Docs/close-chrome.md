@@ -1,4 +1,4 @@
-## The *close-chrome.ps1* PowerShell Script
+## The *close-chrome.ps1* Script
 
 This PowerShell script closes the Google Chrome Web browser gracefully.
 

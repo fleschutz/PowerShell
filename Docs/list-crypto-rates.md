@@ -1,4 +1,4 @@
-## The *list-crypto-rates.ps1* PowerShell Script
+## The *list-crypto-rates.ps1* Script
 
 list-crypto-rates.ps1 
 

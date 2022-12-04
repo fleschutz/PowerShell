@@ -1,4 +1,4 @@
-## The *install-edge.ps1* PowerShell Script
+## The *install-edge.ps1* Script
 
 This PowerShell script installs the Microsoft Edge Browser from the Microsoft Store.
 

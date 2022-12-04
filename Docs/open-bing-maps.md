@@ -1,4 +1,4 @@
-## The *open-bing-maps.ps1* PowerShell Script
+## The *open-bing-maps.ps1* Script
 
 This PowerShell script launches the Bing Maps application.
 

@@ -1,4 +1,4 @@
-## The *show-lightnings.ps1* PowerShell Script
+## The *show-lightnings.ps1* Script
 
 This PowerShell script launches the Web browser and shows lightnings in OpenStreetMap.
 

@@ -1,4 +1,4 @@
-## The *write-typewriter.ps1* PowerShell Script
+## The *write-typewriter.ps1* Script
 
 This PowerShell script writes the given text with the typewriter effect.
 

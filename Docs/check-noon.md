@@ -1,4 +1,4 @@
-## The *check-noon.ps1* PowerShell Script
+## The *check-noon.ps1* Script
 
 check-noon.ps1 
 

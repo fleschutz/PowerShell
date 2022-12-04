@@ -1,4 +1,4 @@
-## The *add-firewall-rules.ps1* PowerShell Script
+## The *add-firewall-rules.ps1* Script
 
 This PowerShell script adds firewall rules for the given executable. Administrator rights are required.
 

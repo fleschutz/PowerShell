@@ -1,4 +1,4 @@
-## The *pick-commit.ps1* PowerShell Script
+## The *pick-commit.ps1* Script
 
 Cherry-picks a Git commit into one or more branches (branch names need to be separated by spaces)
 NOTE: in case of merge conflicts the script stops immediately!

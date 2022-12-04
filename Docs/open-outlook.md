@@ -1,4 +1,4 @@
-## The *open-outlook.ps1* PowerShell Script
+## The *open-outlook.ps1* Script
 
 open-outlook.ps1 
 

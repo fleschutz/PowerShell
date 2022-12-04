@@ -1,4 +1,4 @@
-## The *play-elk-sound.ps1* PowerShell Script
+## The *play-elk-sound.ps1* Script
 
 This PowerShell script plays an elk sound.
 

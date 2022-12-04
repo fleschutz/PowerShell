@@ -1,4 +1,4 @@
-## The *open-downloads-folder.ps1* PowerShell Script
+## The *open-downloads-folder.ps1* Script
 
 This PowerShell script launches the File Explorer showing the user's downloads folder.
 

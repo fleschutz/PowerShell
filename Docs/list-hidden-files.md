@@ -1,4 +1,4 @@
-## The *list-hidden-files.ps1* PowerShell Script
+## The *list-hidden-files.ps1* Script
 
 This PowerShell script scans and lists all hidden files in a directory tree.
 

@@ -1,4 +1,4 @@
-## The *search-files.ps1* PowerShell Script
+## The *search-files.ps1* Script
 
 This PowerShell script searches for a pattern in the given files.
 

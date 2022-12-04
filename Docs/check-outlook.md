@@ -1,4 +1,4 @@
-## The *check-outlook.ps1* PowerShell Script
+## The *check-outlook.ps1* Script
 
 This PowerShell script checks the inbox of Outlook for new/unread mails.
 

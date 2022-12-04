@@ -1,4 +1,4 @@
-## The *open-flight-radar.ps1* PowerShell Script
+## The *open-flight-radar.ps1* Script
 
 This PowerShell script launches the Web browser with the FlightRadar24 website.
 

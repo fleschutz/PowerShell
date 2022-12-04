@@ -1,4 +1,4 @@
-## The *check-santa.ps1* PowerShell Script
+## The *check-santa.ps1* Script
 
 This PowerShell script checks the time until Saint Nicholas Day and replies by text-to-speech (TTS).
 

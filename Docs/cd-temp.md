@@ -1,4 +1,4 @@
-## The *cd-temp.ps1* PowerShell Script
+## The *cd-temp.ps1* Script
 
 cd-temp.ps1 
 

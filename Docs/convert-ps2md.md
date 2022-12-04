@@ -1,4 +1,4 @@
-## The *convert-ps2md.ps1* PowerShell Script
+## The *convert-ps2md.ps1* Script
 
 This PowerShell script converts the comment-based help of a PowerShell script to Markdown.
 
@@ -36,7 +36,7 @@ https://github.com/fleschutz/PowerShell
 ```powershell
 <#
 .SYNOPSIS
-	Converts PowerShell script metadata to Markdown
+	Converts a PowerShell script to Markdown
 .DESCRIPTION
 	This PowerShell script converts the comment-based help of a PowerShell script to Markdown.
 .PARAMETER filename
@@ -92,7 +92,7 @@ try {
 
 	$full = Get-Help $filename -Full 
 
-	"## The *$($ScriptName)* PowerShell Script"
+	"## The *$($ScriptName)* Script"
 
 	$Description = ($full.description | Out-String).Trim()
 	if ($Description -ne "") {

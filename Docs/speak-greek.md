@@ -1,4 +1,4 @@
-## The *speak-greek.ps1* PowerShell Script
+## The *speak-greek.ps1* Script
 
 This PowerShell script speaks the given text with a Greek text-to-speech (TTS) voice.
 

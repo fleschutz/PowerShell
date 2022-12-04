@@ -1,4 +1,4 @@
-## The *cd-home.ps1* PowerShell Script
+## The *cd-home.ps1* Script
 
 This PowerShell script changes the working directory to the user's home directory.
 

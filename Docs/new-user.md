@@ -1,4 +1,4 @@
-## The *new-user.ps1* PowerShell Script
+## The *new-user.ps1* Script
 
 This PowerShell script creates a new user account.
 

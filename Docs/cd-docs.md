@@ -1,4 +1,4 @@
-## The *cd-docs.ps1* PowerShell Script
+## The *cd-docs.ps1* Script
 
 This PowerShell script changes the working directory to the documents folder.
 

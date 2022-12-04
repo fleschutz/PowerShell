@@ -1,4 +1,4 @@
-## The *send-tcp.ps1* PowerShell Script
+## The *send-tcp.ps1* Script
 
 This PowerShell script sends a TCP message to the given IP address and port.
 

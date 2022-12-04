@@ -1,4 +1,4 @@
-## The *play-mission-impossible.ps1* PowerShell Script
+## The *play-mission-impossible.ps1* Script
 
 This PowerShell script plays the Mission Impossible theme.
 

@@ -1,4 +1,4 @@
-## The *fetch-repos.ps1* PowerShell Script
+## The *fetch-repos.ps1* Script
 
 This PowerShell script fetches updates for all Git repositories in a folder (including submodules).
 
@@ -63,17 +63,16 @@ try {
 	if (-not(Test-Path "$ParentDir" -pathType container)) { throw "Can't access folder: $ParentDir" }
 	$Folders = (Get-ChildItem "$ParentDir" -attributes Directory)
 	$NumFolders = $Folders.Count
-	Write-Host "$NumFolders subfolders"
+	Write-Host "$NumFolders subfolders found"
 
-	[int]$Step = 3
+	[int]$Step = 2
 	foreach ($Folder in $Folders) {
 		$FolderName = (Get-Item "$Folder").Name
-		"⏳ ($Step/$($NumFolders + 2)) Fetching into 📂$FolderName..."
+		$Step++
+		Write-Host "⏳ ($Step/$($NumFolders + 2)) Fetching into 📂$FolderName...  "
 
 		& git -C "$Folder" fetch --all --recurse-submodules --prune --prune-tags --force
 		if ($lastExitCode -ne "0") { throw "'git fetch' in $Folder failed with exit code $lastExitCode" }
-
-		$Step++
 	}
 	[int]$Elapsed = $StopWatch.Elapsed.TotalSeconds
 	"✔️ fetched $NumFolders Git repositories in $Elapsed sec."

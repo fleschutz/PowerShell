@@ -1,4 +1,4 @@
-## The *list-empty-files.ps1* PowerShell Script
+## The *list-empty-files.ps1* Script
 
 This PowerShell script scans and lists all empty files within the given directory tree.
 

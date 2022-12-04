@@ -1,4 +1,4 @@
-## The *close-one-calendar.ps1* PowerShell Script
+## The *close-one-calendar.ps1* Script
 
 This PowerShell script closes the OneCalendar application gracefully.
 

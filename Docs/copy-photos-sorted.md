@@ -1,4 +1,4 @@
-## The *copy-photos-sorted.ps1* PowerShell Script
+## The *copy-photos-sorted.ps1* Script
 
 copy-photos-sorted.ps1 [[-SourceDir] <string>] [[-TargetDir] <string>]
 

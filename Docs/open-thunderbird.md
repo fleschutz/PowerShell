@@ -1,4 +1,4 @@
-## The *open-thunderbird.ps1* PowerShell Script
+## The *open-thunderbird.ps1* Script
 
 open-thunderbird.ps1 
 

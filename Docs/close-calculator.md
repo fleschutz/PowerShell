@@ -1,4 +1,4 @@
-## The *close-calculator.ps1* PowerShell Script
+## The *close-calculator.ps1* Script
 
 This PowerShell script closes the calculator application gracefully.
 

@@ -1,4 +1,4 @@
-## The *close-microsoft-store.ps1* PowerShell Script
+## The *close-microsoft-store.ps1* Script
 
 This PowerShell script closes the Microsoft Store application gracefully.
 

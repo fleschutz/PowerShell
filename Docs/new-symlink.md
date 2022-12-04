@@ -1,4 +1,4 @@
-## The *new-symlink.ps1* PowerShell Script
+## The *new-symlink.ps1* Script
 
 
 

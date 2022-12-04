@@ -1,4 +1,4 @@
-## The *cd-autostart.ps1* PowerShell Script
+## The *cd-autostart.ps1* Script
 
 This PowerShell script changes the working directory to the user's autostart folder.
 

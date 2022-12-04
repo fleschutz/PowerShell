@@ -1,4 +1,4 @@
-## The *check-moon-phase.ps1* PowerShell Script
+## The *check-moon-phase.ps1* Script
 
 This PowerShell script determines the Moon phase and answers by text-to-speech (TTS).
 

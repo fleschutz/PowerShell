@@ -1,4 +1,4 @@
-## The *install-crystal-disk-mark.ps1* PowerShell Script
+## The *install-crystal-disk-mark.ps1* Script
 
 This PowerShell script installs CrystalDiskMark from the Microsoft Store.
 

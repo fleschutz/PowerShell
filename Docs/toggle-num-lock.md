@@ -1,4 +1,4 @@
-## The *toggle-num-lock.ps1* PowerShell Script
+## The *toggle-num-lock.ps1* Script
 
 This PowerShell script toggles the Num Lock key state.
 

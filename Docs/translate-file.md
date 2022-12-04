@@ -1,4 +1,4 @@
-## The *translate-file.ps1* PowerShell Script
+## The *translate-file.ps1* Script
 
 This PowerShell script translates a text file into another language.
 

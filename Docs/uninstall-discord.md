@@ -1,4 +1,4 @@
-## The *uninstall-discord.ps1* PowerShell Script
+## The *uninstall-discord.ps1* Script
 
 This PowerShell script uninstalls Discord from the local computer.
 

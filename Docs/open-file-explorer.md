@@ -1,4 +1,4 @@
-## The *open-file-explorer.ps1* PowerShell Script
+## The *open-file-explorer.ps1* Script
 
 This PowerShell script launches the File Explorer.
 

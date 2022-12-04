@@ -1,4 +1,4 @@
-## The *list-profiles.ps1* PowerShell Script
+## The *list-profiles.ps1* Script
 
 list-profiles.ps1 
 

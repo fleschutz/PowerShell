@@ -1,4 +1,4 @@
-## The *install-basic-apps.ps1* PowerShell Script
+## The *install-basic-apps.ps1* Script
 
 This PowerShell script installs basic Windows apps (browser, e-mail client, etc).
 Apps from the Microsoft Store are preferred for automatic updates.

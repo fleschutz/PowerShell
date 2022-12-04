@@ -1,4 +1,4 @@
-## The *open-g-drive.ps1* PowerShell Script
+## The *open-g-drive.ps1* Script
 
 This PowerShell script launches the File Explorer with the G: drive folder.
 

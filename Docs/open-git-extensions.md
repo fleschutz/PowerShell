@@ -1,4 +1,4 @@
-## The *open-git-extensions.ps1* PowerShell Script
+## The *open-git-extensions.ps1* Script
 
 open-git-extensions.ps1 
 

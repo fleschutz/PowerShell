@@ -1,4 +1,4 @@
-## The *list-dir-tree.ps1* PowerShell Script
+## The *list-dir-tree.ps1* Script
 
 This PowerShell script lists all files and folders in a directory tree.
 

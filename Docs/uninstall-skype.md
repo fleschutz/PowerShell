@@ -1,4 +1,4 @@
-## The *uninstall-skype.ps1* PowerShell Script
+## The *uninstall-skype.ps1* Script
 
 This PowerShell script uninstalls Skype from the local computer.
 

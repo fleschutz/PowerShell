@@ -1,4 +1,4 @@
-## The *list-tasks.ps1* PowerShell Script
+## The *list-tasks.ps1* Script
 
 list-tasks.ps1 
 

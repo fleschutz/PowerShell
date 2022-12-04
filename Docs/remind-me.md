@@ -1,4 +1,4 @@
-## The *remind-me.ps1* PowerShell Script
+## The *remind-me.ps1* Script
 
 This PowerShell script creates a scheduled task that will display a popup message.
 

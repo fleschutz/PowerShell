@@ -1,4 +1,4 @@
-## The *close-magnifier.ps1* PowerShell Script
+## The *close-magnifier.ps1* Script
 
 This PowerShell script closes the Windows Screen Magnifier application gracefully.
 

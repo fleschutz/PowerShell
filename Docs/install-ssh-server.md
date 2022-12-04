@@ -1,4 +1,4 @@
-## The *install-ssh-server.ps1* PowerShell Script
+## The *install-ssh-server.ps1* Script
 
 This PowerShell script installs a SSH server (needs admin rights).
 

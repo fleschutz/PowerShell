@@ -1,4 +1,4 @@
-## The *open-netflix.ps1* PowerShell Script
+## The *open-netflix.ps1* Script
 
 This script launches the Netflix application.
 

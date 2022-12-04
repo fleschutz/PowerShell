@@ -1,4 +1,4 @@
-## The *cd-users.ps1* PowerShell Script
+## The *cd-users.ps1* Script
 
 This PowerShell script changes the working directory to the users directory.
 

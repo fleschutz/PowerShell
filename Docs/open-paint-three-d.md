@@ -1,4 +1,4 @@
-## The *open-paint-three-d.ps1* PowerShell Script
+## The *open-paint-three-d.ps1* Script
 
 This script launches the Paint 3D application.
 

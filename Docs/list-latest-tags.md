@@ -1,4 +1,4 @@
-## The *list-latest-tags.ps1* PowerShell Script
+## The *list-latest-tags.ps1* Script
 
 This PowerShell script lists the latest tags in all Git repositories in the specified folder.
 

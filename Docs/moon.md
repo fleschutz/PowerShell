@@ -1,4 +1,4 @@
-## The *moon.ps1* PowerShell Script
+## The *moon.ps1* Script
 
 This PowerShell script prints the current moon phase.
 

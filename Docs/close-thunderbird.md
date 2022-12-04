@@ -1,4 +1,4 @@
-## The *close-thunderbird.ps1* PowerShell Script
+## The *close-thunderbird.ps1* Script
 
 This PowerShell script closes the Mozilla Thunderbird email application gracefully.
 

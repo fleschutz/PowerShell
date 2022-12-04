@@ -1,4 +1,4 @@
-## The *play-beep-sound.ps1* PowerShell Script
+## The *play-beep-sound.ps1* Script
 
 This PowerShell script plays a short beep sound.
 

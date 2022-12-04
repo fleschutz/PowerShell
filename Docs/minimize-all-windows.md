@@ -1,4 +1,4 @@
-## The *minimize-all-windows.ps1* PowerShell Script
+## The *minimize-all-windows.ps1* Script
 
 This PowerShell script minimizes all open windows.
 

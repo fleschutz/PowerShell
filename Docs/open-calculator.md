@@ -1,4 +1,4 @@
-## The *open-calculator.ps1* PowerShell Script
+## The *open-calculator.ps1* Script
 
 This PowerShell script launches the calculator application.
 

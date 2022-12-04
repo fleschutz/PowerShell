@@ -1,4 +1,4 @@
-## The *speak-danish.ps1* PowerShell Script
+## The *speak-danish.ps1* Script
 
 This PowerShell script speaks the given text with a Danish text-to-speech (TTS) voice.
 

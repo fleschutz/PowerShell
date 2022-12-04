@@ -1,4 +1,4 @@
-## The *check-swap-space.ps1* PowerShell Script
+## The *check-swap-space.ps1* Script
 
 This PowerShell script checks the free swap space.
 
@@ -81,15 +81,15 @@ try {
 		} 
 	}
 	if ($Total -eq 0) {
-        	"⚠️ No swap space!"
+        	"⚠️ No swap space configured!"
 	} elseif ($Free -lt $MinLevel) {
-		"⚠️ Swap space has only $(MB2String $Free) of $(MB2String $Total) left to use!"
+		"⚠️ Only $(MB2String $Free) of $(MB2String $Total) swap space left to use!"
 	} elseif ($Used -eq 0) {
-		"✅ Swap space of $(MB2String $Total) is unused."
+		"✅ Swap space with $(MB2String $Total) reserved"
 	} elseif ($Used -lt $Free) {
-		"✅ Swap space uses $(MB2String $Used) of $(MB2String $Total)."
+		"✅ Swap space uses $(MB2String $Used) of $(MB2String $Total)"
 	} else {
-		"✅ Swap space has $(MB2String $Free) of $(MB2String $Total) left."
+		"✅ Swap space has $(MB2String $Free) of $(MB2String $Total) left to use"
 	}
 	exit 0 # success
 } catch {

@@ -1,4 +1,4 @@
-## The *list-fritzbox-devices.ps1* PowerShell Script
+## The *list-fritzbox-devices.ps1* Script
 
 This PowerShell script lists FRITZ!Box's known devices.
 

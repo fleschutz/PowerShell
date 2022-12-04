@@ -1,4 +1,4 @@
-## The *uninstall-irfanview.ps1* PowerShell Script
+## The *uninstall-irfanview.ps1* Script
 
 This PowerShell script uninstalls IrfanView from the local computer.
 

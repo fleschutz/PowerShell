@@ -1,4 +1,4 @@
-## The *open-air-b-n-b.ps1* PowerShell Script
+## The *open-air-b-n-b.ps1* Script
 
 This PowerShell script launches the Web browser with the AirBNB website.
 

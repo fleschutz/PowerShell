@@ -1,4 +1,4 @@
-## The *toggle-scroll-lock.ps1* PowerShell Script
+## The *toggle-scroll-lock.ps1* Script
 
 This PowerShell script toggles the Scroll Lock key state.
 

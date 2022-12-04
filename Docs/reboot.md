@@ -1,4 +1,4 @@
-## The *reboot.ps1* PowerShell Script
+## The *reboot.ps1* Script
 
 This PowerShell script reboots the local computer immediately (needs admin rights).
 

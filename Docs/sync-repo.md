@@ -1,4 +1,4 @@
-## The *sync-repo.ps1* PowerShell Script
+## The *sync-repo.ps1* Script
 
 This PowerShell script synchronizes a Git repository by push & pull (including submodules).
 

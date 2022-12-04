@@ -1,4 +1,4 @@
-## The *send-udp.ps1* PowerShell Script
+## The *send-udp.ps1* Script
 
 
 

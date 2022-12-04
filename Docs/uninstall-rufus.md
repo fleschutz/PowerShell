@@ -1,4 +1,4 @@
-## The *uninstall-rufus.ps1* PowerShell Script
+## The *uninstall-rufus.ps1* Script
 
 This PowerShell script uninstalls Rufus from the local computer.
 

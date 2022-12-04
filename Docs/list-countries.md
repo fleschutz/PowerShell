@@ -1,4 +1,4 @@
-## The *list-countries.ps1* PowerShell Script
+## The *list-countries.ps1* Script
 
 list-countries.ps1 
 

@@ -1,4 +1,4 @@
-## The *enter-chat.ps1* PowerShell Script
+## The *enter-chat.ps1* Script
 
 This PowerShell script enters a chat using a common network shared file.
 

@@ -1,4 +1,4 @@
-## The *check-ram.ps1* PowerShell Script
+## The *check-ram.ps1* Script
 
 check-ram.ps1 
 
@@ -68,7 +68,7 @@ try {
 			[float]$Voltage = $Bank.ConfiguredVoltage / 1000.0
 			$Manufacturer = $Bank.Manufacturer
 			$Location = "$($Bank.BankLabel)/$($Bank.DeviceLocator)"
-			"✅ $($Capacity)GB $($Type) by $($Manufacturer): $($Speed)MHz, $($Voltage)V at $Location"
+			"✅ $($Capacity)GB $($Type) at $($Location) ($($Speed)MHz, $($Voltage)V by $Manufacturer)"
 		}
 	}
 	exit 0 # success

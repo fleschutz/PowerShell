@@ -1,4 +1,4 @@
-## The *write-green.ps1* PowerShell Script
+## The *write-green.ps1* Script
 
 This PowerShell script writes text in a green foreground color.
 

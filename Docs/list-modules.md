@@ -1,4 +1,4 @@
-## The *list-modules.ps1* PowerShell Script
+## The *list-modules.ps1* Script
 
 This PowerShell script lists all installed PowerShell modules.
 

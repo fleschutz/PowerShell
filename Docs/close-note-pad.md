@@ -1,4 +1,4 @@
-## The *close-note-pad.ps1* PowerShell Script
+## The *close-note-pad.ps1* Script
 
 This PowerShell script closes the Notepad application gracefully.
 

@@ -1,4 +1,4 @@
-## The *encrypt-file.ps1* PowerShell Script
+## The *encrypt-file.ps1* Script
 
 This PowerShell script encrypts a file using the given password and AES encryption.
 

@@ -1,4 +1,4 @@
-## The *install-power-toys.ps1* PowerShell Script
+## The *install-power-toys.ps1* Script
 
 This PowerShell script installs the Microsoft Powertoys.
 

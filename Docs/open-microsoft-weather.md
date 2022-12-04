@@ -1,4 +1,4 @@
-## The *open-microsoft-weather.ps1* PowerShell Script
+## The *open-microsoft-weather.ps1* Script
 
 This script launches the Microsoft Weather application.
 

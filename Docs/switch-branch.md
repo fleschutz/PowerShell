@@ -1,4 +1,4 @@
-## The *switch-branch.ps1* PowerShell Script
+## The *switch-branch.ps1* Script
 
 This PowerShell script switches to another branch in a Git repository (including submodules).
 
@@ -16,7 +16,7 @@ switch-branch.ps1 [[-BranchName] <String>] [[-RepoDir] <String>] [<CommonParamet
     Accept wildcard characters?  false
 
 -RepoDir <String>
-    Specifies the path to the Git repository
+    Specifies the path to the local Git repository
     
     Required?                    false
     Position?                    2
@@ -51,7 +51,7 @@ https://github.com/fleschutz/PowerShell
 .PARAMETER BranchName
 	Specifies the branch name
 .PARAMETER RepoDir
-	Specifies the path to the Git repository
+	Specifies the path to the local Git repository
 .EXAMPLE
 	PS> ./switch-branch main C:\MyRepo
 .LINK
@@ -64,7 +64,7 @@ param([string]$BranchName = "", [string]$RepoDir = "$PWD")
 
 try {
 	if ($BranchName -eq "") { $BranchName = read-host "Enter name of branch to switch to" }
-	if ($RepoDir -eq "") { $RepoDir = read-host "Enter path to the Git repository" }
+	if ($RepoDir -eq "") { $RepoDir = read-host "Enter path to the local Git repository" }
 
 	$StopWatch = [system.diagnostics.stopwatch]::startNew()
 
@@ -74,7 +74,7 @@ try {
 
 	$RepoDir = Resolve-Path "$RepoDir"
 	$RepoDirName = (Get-Item "$RepoDir").Name
-	"⏳ (2/6) Checking folder 📂$RepoDirName..."
+	"⏳ (2/6) Checking Git repository 📂$RepoDirName..."
 	if (-not(Test-Path "$RepoDir" -pathType container)) { throw "Can't access directory: $RepoDir" }
 
 	$Result = (git status)
@@ -85,7 +85,7 @@ try {
 	& git -C "$RepoDir" fetch --all --prune --prune-tags --force
 	if ($lastExitCode -ne "0") { throw "'git fetch' failed with exit code $lastExitCode" }
 
-	"⏳ (4/6) Switching to branch '$BranchName'..."
+	"⏳ (4/6) Switching to '$BranchName' branch..."
 	& git -C "$RepoDir" checkout --recurse-submodules "$BranchName"
 	if ($lastExitCode -ne "0") { throw "'git checkout $BranchName' failed with exit code $lastExitCode" }
 
@@ -98,7 +98,7 @@ try {
 	if ($lastExitCode -ne "0") { throw "'git submodule update' failed with exit code $lastExitCode" }
 
 	[int]$Elapsed = $StopWatch.Elapsed.TotalSeconds
-	"✔️ switched 📂$RepoDirName repo to $BranchName branch in $Elapsed sec"
+	"✔️ switched Git repository 📂$RepoDirName to $BranchName branch in $Elapsed sec."
 	exit 0 # success
 } catch {
 	"⚠️ Error in line $($_.InvocationInfo.ScriptLineNumber): $($Error[0])"
