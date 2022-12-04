@@ -2,19 +2,19 @@
 .SYNOPSIS
 	Lists PI
 .DESCRIPTION
-        This PowerShell script calculates and lists the digits of the mathematical constant PI.
+	This PowerShell script calculates and lists the digits of the mathematical constant PI.
 .PARAMETER digits
-	Specifies the number of digits to list (10000 by default)
+	Specifies the number of digits to list (1000 by default)
 .EXAMPLE
-        PS> ./list-pi
+	PS> ./list-pi
 	3.141592653589793238462643383279502884197169399375105820974944592307816406286208998628034825342...
 .LINK
-        https://github.com/fleschutz/PowerShell
+	https://github.com/fleschutz/PowerShell
 .NOTES
-        Author: Markus Fleschutz | License: CC0
+	Author: Markus Fleschutz | License: CC0
 #>
 
-param([int]$Digits = 10000)
+param([int]$Digits = 1000)
 
 function List-Pi ( $Digits ) {
 	$Big = [bigint[]](0..10)
@@ -61,7 +61,8 @@ function List-Pi ( $Digits ) {
 			$n = $nn
 			$r = $nr
 		}
-        }
+      }
+	Write-Host "...  ($Digits digits)"
 }
 
 try {
