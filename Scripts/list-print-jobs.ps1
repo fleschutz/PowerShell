@@ -13,24 +13,27 @@
 
 #Requires -Version 4
 
+function ListPrintJobs {
+	$printers = Get-Printer
+	if ($printers.Count -eq 0) { throw "No printer found" }
+
+	foreach ($printer in $printers) {
+		$PrinterName = $printer.Name
+		$printjobs = Get-PrintJob -PrinterObject $printer
+		if ($printjobs.Count -eq 0) {
+			$PrintJobs = "none"
+		} else {
+			$PrintJobs = "$printjobs"
+		}
+		New-Object PSObject -Property @{ Printer=$PrinterName; Jobs=$PrintJobs }
+	}
+}
+
 try {
 	if ($IsLinux) {
 		# TODO
 	} else {
-		$printers = Get-Printer
-		if ($printers.Count -eq 0) { throw "No printer found" }
-
-		""
-		"Printer                Jobs"
-		"-------                ----"
-		foreach ($printer in $printers) {
-			$printjobs = Get-PrintJob -PrinterObject $printer
-			if ($printjobs.Count -eq 0) {
-				"$($printer.Name)     none"
-			} else {
-				"$($printer.Name)     $printjobs"
-			}
-		}
+		ListPrintJobs | Format-Table -property Printer,Jobs
 	}
 	exit 0 # success
 } catch {
