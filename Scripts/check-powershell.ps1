@@ -15,9 +15,13 @@ try {
 	$Version = $PSVersionTable.PSVersion
 	$Edition = $PSVersionTable.PSEdition
 	$NumModules = (Get-Module).Count
-	$NumCmdlets = (Get-Command -Command-Type cmdlet).Count
 	$NumAliases = (Get-Alias).Count
-	"✅ PowerShell $Version ($Edition edition) with $NumModules modules, $NumCmdlets cmdlets and $NumAliases aliases"
+	if ($IsLinux) {
+		"✅ PowerShell $Version ($Edition edition) with $NumModules modules and $NumAliases aliases"
+	} else {
+		$NumCmdlets = (Get-Command -Command-Type cmdlet).Count
+		"✅ PowerShell $Version ($Edition edition) with $NumModules modules, $NumCmdlets cmdlets and $NumAliases aliases"
+	}
 	exit 0 # success
 } catch {
 	"⚠️ Error in line $($_.InvocationInfo.ScriptLineNumber): $($Error[0])"
