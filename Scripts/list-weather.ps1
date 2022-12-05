@@ -7,6 +7,9 @@
 	Specifies the location to use (determined automatically per default)
 .EXAMPLE
 	PS> ./list-weather
+	TODAY   🌡°C  ☂️mm  💧  💨km/h ☀️UV  ☁️  👁km  at Munich (Bayern, Germany)
+	 0°°   -2°   0.0   93%   ↗ 6   1    21%  10  🌙 clear
+	...
 .LINK
 	https://github.com/fleschutz/PowerShell
 .NOTES
@@ -29,6 +32,7 @@ function GetDescription { param([string]$Text)
 	"Light sleet"			{ return "❄️ light sleet" }
 	"Light snow"			{ return "❄️ light snow" }
 	"Light snow showers"		{ return "❄️ light snow showers" }
+	"Moderate or heavy snow showers"{ return "❄️ moderate or heavy snow showers ⚠️" }
 	"Moderate snow"			{ return "❄️ moderate snow" }
 	"Mist"				{ return "🌫  misty" }
 	"Overcast"			{ return "☁️ overcast" }
