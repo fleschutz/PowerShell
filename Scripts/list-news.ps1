@@ -23,7 +23,7 @@ try {
 	[xml]$Content = (Invoke-WebRequest -URI $RSS_URL -useBasicParsing).Content
 	[int]$Count = 1
 	foreach ($Item in $Content.rss.channel.item) {
-		& "$PSScriptRoot/write-typewriter.ps1" "→ $($Item.title)" $Speed
+		& "$PSScriptRoot/write-typewriter.ps1" "❇️ $($Item.title)" $Speed
 		if ($Count++ -eq $MaxLines) { break }
 	}
 	$Source = $Content.rss.channel.title
