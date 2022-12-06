@@ -28,7 +28,15 @@ try {
 	}
 	$Source = $Content.rss.channel.title
 	$Date = $Content.rss.channel.pubDate
-	"     (by *$($Source)* as of $Date)"
+	$Date = $Date -Replace "Mon, ",""
+	$Date = $Date -Replace "Tue, ",""
+	$Date = $Date -Replace "Wed, ",""
+	$Date = $Date -Replace "Thu, ",""
+	$Date = $Date -Replace "Fri, ",""
+	$Date = $Date -Replace "Sat, ",""
+	$Date = $Date -Replace "Sun, ",""
+	$Copyright = $Content.rss.channel.copyright
+	"<$Source|$Date|$Copyright>"
 	exit 0 # success
 } catch {
 	"⚠️ Error in line $($_.InvocationInfo.ScriptLineNumber): $($Error[0])"
