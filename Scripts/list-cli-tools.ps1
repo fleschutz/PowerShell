@@ -161,6 +161,7 @@ function ListCmdTools {
 	TryCmd hostid	"--version"
 	TryCmd hostname ""
 	TryCmd htop	"--version"
+	TryCmd icacls   "--version"
 	TryCmd iconv	"--version"
 	TryCmd id	"--version"
 	TryCmd ipfs	"--version"
