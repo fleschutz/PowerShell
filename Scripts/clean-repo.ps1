@@ -19,12 +19,12 @@ param([string]$RepoDir = "$PWD")
 try {
 	$StopWatch = [system.diagnostics.stopwatch]::startNew()
 
-	Write-Host "⏳ (1/4) Searching for Git executable...  " -noNewline
+	Write-Host "⏳ (1/4) Searching for Git executable...           " -noNewline
 	& git --version
 	if ($lastExitCode -ne "0") { throw "Can't execute 'git' - make sure Git is installed and available" }
 
 	$RepoDirName = (Get-Item "$RepoDir").Name
-	"⏳ (2/4) Checking Git repository 📂$RepoDirName..."
+	"⏳ (2/4) Checking Git repository...                📂$RepoDirName"
 	if (-not(Test-Path "$RepoDir" -pathType container)) { throw "Can't access folder '$RepoDir' - maybe a typo or missing folder permissions?" }
 
 	"⏳ (3/4) Removing untracked files in repository..."
@@ -40,7 +40,7 @@ try {
 	if ($lastExitCode -ne "0") { throw "'git clean' in the submodules failed with exit code $lastExitCode" }
 
 	[int]$Elapsed = $StopWatch.Elapsed.TotalSeconds
-	"✔️ cleaned Git repository 📂$RepoDirName in $Elapsed sec"
+	"✔️ cleaned 📂$RepoDirName repository in $Elapsed sec."
 	exit 0 # success
 } catch {
 	"⚠️ Error in line $($_.InvocationInfo.ScriptLineNumber): $($Error[0])"
