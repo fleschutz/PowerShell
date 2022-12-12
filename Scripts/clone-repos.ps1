@@ -18,17 +18,17 @@ param([string]$FolderPath = "$PWD")
 try {
 	$StopWatch = [system.diagnostics.stopwatch]::startNew()
 
-	Write-Host "⏳ (1) Searching for Git executable...  " -noNewline
+	Write-Host "⏳ (1) Searching for Git executable...          " -noNewline
 	& git --version
 	if ($lastExitCode -ne "0") { throw "Can't execute 'git' - make sure Git is installed and available" }
 
-	Write-Host "⏳ (2) Loading database table from Data/git-repos.csv...  " -noNewline
+	Write-Host "⏳ (2) Loading data from Data/git-repos.csv...  " -noNewline
 	$Table = Import-CSV "$PSScriptRoot/../Data/git-repos.csv"
 	$NumEntries = $Table.count
-	Write-Host "$NumEntries entries found"
+	Write-Host "$NumEntries Git repositories"
 
 	$ParentFolderName = (Get-Item "$FolderPath").Name
-	"⏳ (3) Checking target folder 📂$ParentFolderName..."
+	Write-Host "⏳ (3) Checking target folder...                📂$ParentFolderName"
 	if (-not(Test-Path "$FolderPath" -pathType container)) { throw "Can't access directory: $FolderPath" }
 	
 
@@ -44,7 +44,7 @@ try {
 		$Step++
 
 		if (Test-Path "$FolderPath/$FolderName" -pathType container) {
-			"⏳ ($Step/$($NumEntries + 4)) Skipping 📂$($FolderName), it exists already..."
+			"⏳ ($Step/$($NumEntries + 4)) Skipping 📂$FolderName - exists already..."
 			$Skipped++
 			continue
 		}
@@ -61,9 +61,9 @@ try {
 	}
 	[int]$Elapsed = $StopWatch.Elapsed.TotalSeconds
 	if ($Cloned -eq 1) {
-		"✔️ 1 Git repository cloned into 📂$ParentFolderName in $Elapsed sec ($Skipped skipped)."
+		"✔️ 1 repository cloned into 📂$ParentFolderName in $Elapsed sec ($Skipped skipped)."
 	} else {
-		"✔️ $Cloned Git repos cloned into 📂$ParentFolderName in $Elapsed sec ($Skipped skipped)."
+		"✔️ $Cloned repositories cloned into 📂$ParentFolderName in $Elapsed sec ($Skipped skipped)."
 	}
 	exit 0 # success
 } catch {
