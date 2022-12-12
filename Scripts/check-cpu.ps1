@@ -53,7 +53,7 @@ try {
 		$DeviceID = $Details.DeviceID
 		$Speed = "$($Details.MaxClockSpeed)MHz"
 		$Socket = $Details.SocketDesignation
-		"Status CPU $CPUName ($DeviceID, $Speed, socket $Socket, $Temp)"
+		"$Status CPU $CPUName ($DeviceID, $Speed, socket $Socket, $Temp)"
 	}
 	exit 0 # success
 } catch {
