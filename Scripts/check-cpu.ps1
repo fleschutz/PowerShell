@@ -31,26 +31,29 @@ function GetCPUTemperatureInCelsius {
 
 try {
 	Write-Progress "Querying CPU details ..."
+	$Status = "✅"
 	$Celsius = GetCPUTemperatureInCelsius
 	if ($Celsius -eq 99999.9) {
 		$Temp = "no temp"
 	} elseif ($Celsius -gt 50) {
-		$Temp = "⚠️$($Celsius)°C"
+		$Temp = "$($Celsius)°C"
+		$Status = "⚠"
 	} elseif ($Celsius -lt 0) {
-		$Temp = "⚠️$($Celsius)°C"
+		$Temp = "$($Celsius)°C"
+		$Status = "⚠"
 	} else {
 		$Temp = "$($Celsius)°C"
 	} 
 
 	if ($IsLinux) {
-		"✅ CPU has $Temp"
+		"$Status CPU has $Temp"
 	} else {
 		$Details = Get-WmiObject -Class Win32_Processor
 		$CPUName = $Details.Name.trim()
 		$DeviceID = $Details.DeviceID
 		$Speed = "$($Details.MaxClockSpeed)MHz"
 		$Socket = $Details.SocketDesignation
-		"✅ CPU $CPUName ($DeviceID, $Speed, socket $Socket, $Temp)"
+		"Status CPU $CPUName ($DeviceID, $Speed, socket $Socket, $Temp)"
 	}
 	exit 0 # success
 } catch {
