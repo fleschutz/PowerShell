@@ -41,19 +41,19 @@ function GetRAMType { param([int]$Type)
 }
 
 function Bytes2String { param([int64]$Bytes)
-        if ($Bytes -lt 1000) { return "$Bytes bytes" }
-        $Bytes /= 1000
-        if ($Bytes -lt 1000) { return "$($Bytes)KB" }
-        $Bytes /= 1000
-        if ($Bytes -lt 1000) { return "$($Bytes)MB" }
-        $Bytes /= 1000
-        if ($Bytes -lt 1000) { return "$($Bytes)GB" }
-        $Bytes /= 1000
-        if ($Bytes -lt 1000) { return "$($Bytes)TB" }
-        $Bytes /= 1000
-        if ($Bytes -lt 1000) { return "$($Bytes)PB" }
-        $Bytes /= 1000
-        if ($Bytes -lt 1000) { return "$($Bytes)EB" }
+        if ($Bytes -lt 1024) { return "$Bytes bytes" }
+        $Bytes /= 1024
+        if ($Bytes -lt 1024) { return "$($Bytes)KB" }
+        $Bytes /= 1024
+        if ($Bytes -lt 1024) { return "$($Bytes)MB" }
+        $Bytes /= 1024
+        if ($Bytes -lt 1024) { return "$($Bytes)GB" }
+        $Bytes /= 1024
+        if ($Bytes -lt 1024) { return "$($Bytes)TB" }
+        $Bytes /= 1024
+        if ($Bytes -lt 1024) { return "$($Bytes)PB" }
+        $Bytes /= 1024
+        if ($Bytes -lt 1024) { return "$($Bytes)EB" }
 }
 
 try {
@@ -68,7 +68,7 @@ try {
 			[float]$Voltage = $Bank.ConfiguredVoltage / 1000.0
 			$Manufacturer = $Bank.Manufacturer
 			$Location = "$($Bank.BankLabel)/$($Bank.DeviceLocator)"
-			"✅ RAM $Capacity at $Location ($Type, $($Speed)MHz, $($Voltage)V, $Manufacturer)"
+			"✅ $Capacity RAM at $Location ($Type, $($Speed)MHz, $($Voltage)V, $Manufacturer)"
 		}
 	}
 	exit 0 # success

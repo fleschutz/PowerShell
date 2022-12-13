@@ -5,7 +5,7 @@
 	This PowerShell script queries CPU details (name, type, speed, temperature, etc.) and prints it.
 .EXAMPLE
 	PS> ./check-cpu
-	✅ CPU AMD Ryzen 5 5500U with Radeon Graphics (CPU0, 2100MHz, 31.3°C)
+	✅ AMD Ryzen 5 5500U with Radeon Graphics (CPU0, 2100MHz, 31.3°C)
 .LINK
 	https://github.com/fleschutz/PowerShell
 .NOTES
@@ -53,7 +53,7 @@ try {
 		$DeviceID = $Details.DeviceID
 		$Speed = "$($Details.MaxClockSpeed)MHz"
 		$Socket = $Details.SocketDesignation
-		"$Status CPU $CPUName ($DeviceID, $Speed, socket $Socket, $Temp)"
+		"$Status $CPUName ($DeviceID, $Speed, socket $Socket, $Temp)"
 	}
 	exit 0 # success
 } catch {
