@@ -11,9 +11,5 @@
 	Author: Markus Fleschutz | License: CC0
 #>
 
-TaskKill /im Calculator.exe /f /t
-if ($lastExitCode -ne "0") {
-	& "$PSScriptRoot/speak-english.ps1" "Sorry, calculator isn't running."
-	exit 1
-}
+Stop-Process -name "CalculatorApp"
 exit 0 # success
