@@ -27,7 +27,7 @@ try {
 	if ($lastExitCode -ne "0") { throw "Can't execute 'git' - make sure Git is installed and available" }
 
 	$RepoDirName = (Get-Item "$RepoDir").Name
-	Write-Host "⏳ (2/6) Checking Git repository...       📂$RepoDirName... "
+	Write-Host "⏳ (2/6) Checking Git repository...       📂$RepoDirName"
 	if (-not(Test-Path "$RepoDir" -pathType container)) { throw "Can't access directory: $RepoDir" }
 
 	"⏳ (3/6) Fetching updates..."
