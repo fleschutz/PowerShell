@@ -27,6 +27,7 @@ function GetDescription { param([string]$Text)
 	"Freezing fog"			{ return "🌫  freezing fog" }
 	"Heavy snow"			{ return "❄️ heavy snow ⚠️" }
 	"Light drizzle"			{ return "💧 light drizzle" }
+	"Light freezing rain"		{ return "💧 light freezing rain ⚠️" }
 	"Light rain"			{ return "💧 light rain" }
 	"Light rain shower"		{ return "💧 light rain shower" }
 	"Light sleet"			{ return "❄️ light sleet" }
@@ -34,10 +35,12 @@ function GetDescription { param([string]$Text)
 	"Light snow showers"		{ return "❄️ light snow showers" }
 	"Moderate or heavy snow showers"{ return "❄️ moderate or heavy snow showers ⚠️" }
 	"Moderate or heavy freezing rain"{ return "💧 moderate or heavy freezing rain ⚠️" }
+	"Moderate rain"			{ return "💧 moderate rain" }
 	"Moderate snow"			{ return "❄️ moderate snow" }
 	"Mist"				{ return "🌫  misty" }
 	"Overcast"			{ return "☁️ overcast" }
 	"Partly cloudy"			{ return "⛅️partly cloudy" }
+	"Patchy heavy snow"		{ return "❄️ patchy heavy snow ⚠️" }
 	"Patchy light drizzle"     	{ return "💧 patchy light drizzle" }
 	"Patchy light rain"     	{ return "💧 patchy light rain" }
 	"Patchy light snow"		{ return "❄️ patchy light snow" }
