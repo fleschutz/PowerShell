@@ -28,9 +28,9 @@ try {
 	""
 	& "$PSScriptRoot/write-typewriter.ps1" "* Need docs? See the official documentation at: https://docs.microsoft.com/en-us/powershell" 25
 	""
-	& "$PSScriptRoot/write-typewriter.ps1" "* Want to look inside? See the PowerShell Github repository at: https://github.com/PowerShell/PowerShell" 25
+	& "$PSScriptRoot/write-typewriter.ps1" "* Take a look under the hood and visit the PowerShell Github repository at: https://github.com/PowerShell/PowerShell" 25
 	""
-	& "$PSScriptRoot/write-typewriter.ps1" "* Want examples? See the huge collection of PowerShell scripts at: https://github.com/fleschutz/PowerShell" 25
+	& "$PSScriptRoot/write-typewriter.ps1" "* Want examples? See the mega collection of PowerShell scripts at: https://github.com/fleschutz/PowerShell" 25
 	""
 
 	& "$PSScriptRoot/write-typewriter.ps1" "NOTE: use <Ctrl> + <Click> to follow the links above and HAVE FUN!" 20
