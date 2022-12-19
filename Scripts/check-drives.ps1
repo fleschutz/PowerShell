@@ -42,12 +42,14 @@ try {
 
 		if ($Total -eq 0) {
 			"✅ Drive $ID is empty"
+		} elseif ($Free -eq 0) {
+			"⚠️ Drive $ID with $(Bytes2String $Total) is full!"
 		} elseif ($Free -lt $MinLevel) {
-			"⚠️ Drive $ID has only $(Bytes2String $Free) of $(Bytes2String $Total) left to use!"
+			"⚠️ Drive $ID with $(Bytes2String $Total) is nearly full ($(Bytes2String $Free) free)!"
 		} elseif ($Used -lt $Free) {
 			"✅ Drive $ID uses $(Bytes2String $Used) of $(Bytes2String $Total)"
 		} else {
-			"✅ Drive $ID has $(Bytes2String $Free) free of $(Bytes2String $Total)"
+			"✅ Drive $ID has $(Bytes2String $Free) of $(Bytes2String $Total) free"
 		}
 	}
 	exit 0 # success

@@ -17,18 +17,20 @@ try {
 	} else {
 		Add-Type -Assembly System.Windows.Forms
 		$Details = [System.Windows.Forms.SystemInformation]::PowerStatus
-		if ($Details.BatteryChargeStatus -eq "NoSystemBattery") {
-			$BatteryStatus = "No battery"
-		} else {
-			[int]$Percent = 100*$Details.BatteryLifePercent
-			[int]$Remaining = $Details.BatteryLifeRemaining / 60
-			$BatteryStatus = "Battery $Percent%, $Remaining min left"
-		}
+		$Status = "✅"
 		switch ($Details.PowerLineStatus) {
-		"Online"  { $PowerStatus = "plugged in to AC power" }
-		"Offline" { $PowerStatus = "AC power unplugged" }
+		"Online"  { $Power = "AC powered" }
+		"Offline" { $Power = "No AC power" }
 		}
-		"✅ $BatteryStatus, $PowerStatus"
+		if ($Details.BatteryChargeStatus -eq "NoSystemBattery") {
+			$Battery = "no system battery"
+		} else {
+			[int]$Percent = 100 * $Details.BatteryLifePercent
+			[int]$Remaining = $Details.BatteryLifeRemaining / 60
+			if ($Remaining -lt 30) { $Status = "⚠️" }
+			$Battery = "$Percent% battery life, $Remaining min. left"
+		}
+		"$Status $Power, $Battery"
 	}
 	exit 0 # success
 } catch {
