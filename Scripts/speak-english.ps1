@@ -16,12 +16,12 @@
 param([string]$text = "")
 
 try {
-	if ("$text" -eq "") { $text = read-host "Enter the English text to speak" }
+	if ("$text" -eq "") { $text = Read-Host "Enter the English text to speak" }
 
 	$TTS = New-Object -ComObject SAPI.SPVoice
-	foreach ($Voice in $TTS.GetVoices()) {
-		if ($Voice.GetDescription() -like "*- English*") {
-			$TTS.Voice = $Voice
+	foreach ($voice in $TTS.GetVoices()) {
+		if ($voice.GetDescription() -like "*- English*") {
+			$TTS.Voice = $voice
 			[void]$TTS.Speak($text)
 			exit 0 # success
 		}
