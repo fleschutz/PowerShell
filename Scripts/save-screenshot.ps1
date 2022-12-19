@@ -2,19 +2,32 @@
 .SYNOPSIS
 	Saves a single screenshot
 .DESCRIPTION
-	This PowerShell script takes a single screenshot and saves it into a target folder (the user's pictures folder by default).
+	This PowerShell script takes a single screenshot and saves it into a target folder (default is the user's screenshots folder).
 .PARAMETER TargetFolder
-	Specifies the target folder (the user's pictures folder by default)
+	Specifies the target folder (the user's screenshots folder by default)
 .EXAMPLE
 	PS> ./save-screenshot
- 	✔️ screenshot saved to C:\Users\Markus\Pictures\2021-10-10T14-33-22.png
+ 	✔️ screenshot saved to C:\Users\Markus\Pictures\Screenshots\2021-10-10T14-33-22.png
 .LINK
 	https://github.com/fleschutz/PowerShell
 .NOTES
 	Author: Markus Fleschutz | License: CC0
 #>
 
-param([string]$TargetFolder = "$HOME/Pictures")
+param([string]$TargetFolder = "")
+
+function GetScreenshotsFolder {
+        if ($IsLinux) {
+                $Path = "$HOME/Pictures"
+                if (-not(Test-Path "$Path" -pathType container)) { throw "Pictures folder at $Path doesn't exist (yet)"}
+                if (Test-Path "$Path/Screenshots" -pathType container) { $Path = "$Path/Screenshots" }
+        } else {
+                $Path = [Environment]::GetFolderPath('MyPictures')
+                if (-not(Test-Path "$Path" -pathType container)) { throw "Pictures folder at $Path doesn't exist (yet)" }
+                if (Test-Path "$Path\Screenshots" -pathType container) { $Path = "$Path\Screenshots" }
+        }
+        return $Path
+}
 
 function TakeScreenshot { param([string]$FilePath)
 	Add-Type -Assembly System.Windows.Forms            
@@ -28,9 +41,7 @@ function TakeScreenshot { param([string]$FilePath)
 }
 
 try {
-        if (-not(test-path "$TargetFolder" -pathType container)) {
-                throw "Target folder at 📂$TargetFolder doesn't exist"
-        }
+	if ("$TargetFolder" -eq "") { $TargetFolder = GetScreenshotsFolder }
 	$Time = (Get-Date)
 	$Filename = "$($Time.Year)-$($Time.Month)-$($Time.Day)T$($Time.Hour)-$($Time.Minute)-$($Time.Second).png"
 	$FilePath = (Join-Path $TargetFolder $Filename)

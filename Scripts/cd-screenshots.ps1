@@ -12,16 +12,21 @@
 	Author: Markus Fleschutz | License: CC0
 #>
 
+function GetScreenshotsFolder {
+        if ($IsLinux) {
+                $Path = "$HOME/Pictures"
+		if (-not(Test-Path "$Path" -pathType container)) { throw "Pictures folder at $Path doesn't exist (yet)"	}
+		if (Test-Path "$Path/Screenshots" -pathType container) { $Path = "$Path/Screenshots" }
+        } else {
+                $Path = [Environment]::GetFolderPath('MyPictures')
+		if (-not(Test-Path "$Path" -pathType container)) { throw "Pictures folder at $Path doesn't exist (yet)" }
+		if (Test-Path "$Path\Screenshots" -pathType container) { $Path = "$Path\Screenshots" }
+        }
+	return $Path
+}
+
 try {
-	if ($IsLinux) {
-		$Path = Resolve-Path "$HOME/Pictures/Screenshots"
-	} else {
-		$Path = [Environment]::GetFolderPath('MyPictures')
-		$Path = "$Path\Screenshots"
-	}
-	if (-not(Test-Path "$Path" -pathType container)) {
-		throw "Screenshots folder at 📂$Path doesn't exist (yet)"
-	}
+	$Path = GetScreenshotsFolder
 	Set-Location "$Path"
 	"📂$Path"
 	exit 0 # success
