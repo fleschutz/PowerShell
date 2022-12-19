@@ -5,7 +5,7 @@
 	This PowerShell script queries BIOS details and prints it.
 .EXAMPLE
 	PS> ./check-bios
-	✅ V1.10 BIOS (by INSYDE Corp., S/N NXA82EV0EBB07600, version ACRSYS - 2)
+	✅ V1.10 BIOS (S/N NXA82EV0EBB0760, version ACRSYS - 2) by INSYDE Corp.
 .LINK
 	https://github.com/fleschutz/PowerShell
 .NOTES
@@ -22,7 +22,7 @@ try {
 		$Model = $BIOS.Name.Trim()
 		$Serial = $BIOS.SerialNumber.Trim()
 		$Version = $BIOS.Version.Trim()
-		"✅ $Model BIOS (by $Manufacturer, S/N $Serial, version $Version)"
+		"✅ $Model BIOS (S/N $Serial, version $Version) by $Manufacturer"
 	}
 	exit 0 # success
 } catch {

@@ -5,6 +5,7 @@
 	This PowerShell script queries and prints details of the installed RAM.
 .EXAMPLE
 	PS> ./check-ram
+	✅ 8GB DDR4 RAM (3200MHz, 1.2V) at P0 CHANNEL A/DIMM 0 by Samsung
 .LINK
 	https://github.com/fleschutz/PowerShell
 .NOTES
@@ -14,7 +15,7 @@
 function GetRAMType { param([int]$Type)
 	switch($Type) {
 	2 { return "DRAM" }
-	5 { return "EDO" }
+	5 { return "EDO RAM" }
 	6 { return "EDRAM" }
 	7 { return "VRAM" }
 	8 { return "SRAM" }
@@ -28,14 +29,14 @@ function GetRAMType { param([int]$Type)
 	17 { return "SDRAM" }
 	18 { return "SGRAM" }
 	19 { return "RDRAM" }
-	20 { return "DDR" }
-	21 { return "DDR2" }
+	20 { return "DDR RAM" }
+	21 { return "DDR2 RAM" }
 	22 { return "DDR2 FB-DIMM" }
-	24 { return "DDR3" }
-	26 { return "DDR4" }
-	27 { return "DDR5" }
-	28 { return "DDR6" }
-	29 { return "DDR7" }
+	24 { return "DDR3 RAM" }
+	26 { return "DDR4 RAM" }
+	27 { return "DDR5 RAM" }
+	28 { return "DDR6 RAM" }
+	29 { return "DDR7 RAM" }
 	default { return "RAM" }
 	}
 }
@@ -68,7 +69,7 @@ try {
 			[float]$Voltage = $Bank.ConfiguredVoltage / 1000.0
 			$Manufacturer = $Bank.Manufacturer
 			$Location = "$($Bank.BankLabel)/$($Bank.DeviceLocator)"
-			"✅ $Capacity RAM at $Location ($Type, $($Speed)MHz, $($Voltage)V, $Manufacturer)"
+			"✅ $Capacity $Type ($($Speed)MHz, $($Voltage)V) at $Location by $Manufacturer"
 		}
 	}
 	exit 0 # success
