@@ -26,7 +26,7 @@ try {
 		}
 		switch ($Details.PowerLineStatus) {
 		"Online"  { $PowerStatus = "plugged in to AC power" }
-		"Offline" { $PowerStatus = "disconnected from AC power" }
+		"Offline" { $PowerStatus = "AC power unplugged" }
 		}
 		"✅ $BatteryStatus, $PowerStatus"
 	}
