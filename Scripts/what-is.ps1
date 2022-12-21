@@ -2,9 +2,9 @@
 .SYNOPSIS
 	Prints a description of an abbreviation
 .DESCRIPTION
-	This PowerShell script prints a description of the given abbreviation.
-.PARAMETER abbreviation
-	Specifies the appreviation to look for
+	This PowerShell script queries and prints a description of the given abbreviation.
+.PARAMETER abbr
+	Specifies the abbreviation to look for
 .EXAMPLE
 	PS> ./what-is IAS
 .LINK
@@ -13,30 +13,24 @@
 	Author: Markus Fleschutz | License: CC0
 #>
 
-param([string]$abbreviation = "")
-
-function Reply { param([string]$Text)
-	& "$PSScriptRoot/speak-english.ps1" "$Text"
-}
+param([string]$abbr = "")
 
 try {
-	if ($abbreviation -eq "" ) { $abbreviation = read-host "Enter the abbreviation" }
+	if ($abbr -eq "" ) { $abbr = Read-Host "Enter the abbreviation" }
 
-	$FoundOne = $false
-	$Files = (get-childItem "$PSScriptRoot/../Data/Abbr/*.csv")
-
+	$Missing = $true
+	$Files = (Get-ChildItem "$PSScriptRoot/../Data/Abbr/*.csv")
 	foreach ($File in $Files) {
-		$Table = import-csv "$File"
+		$Table = Import-CSV "$File"
 		foreach($Row in $Table) {
-			if ($Row.Abbr -eq $abbreviation) {
-				$Basename = (get-item "$File").Basename
-				Reply "In $Basename $($Row.Abbr) may refer to $($Row.Term)"
-				$FoundOne = $true
+			if ($Row.Abbr -eq $abbr) {
+				$Basename = (Get-Item "$File").Basename
+				"🔎 In $Basename $($Row.Abbr) may refer to $($Row.Term)"
+				$Missing = $false
 			}
 		}
 	}
-
-	if ($FoundOne -eq $false) { Reply "Sorry, no database entry found." }
+	if ($Missing) { "Sorry, '$abbr' is missing in the database." }
 	exit 0 # success
 } catch {
 	"⚠️ Error in line $($_.InvocationInfo.ScriptLineNumber): $($Error[0])"
