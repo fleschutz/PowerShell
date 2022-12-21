@@ -1,4 +1,6 @@
 Abbr,Term
+3P,"Perceive, Process, Perform"
+5P,"Plan, Plane, Pilot, Passengers, Programming"
 A/A,Air to air TACAN function
 A/C,Aircraft
 A/D,Aerodrome
@@ -52,6 +54,7 @@ ADS,Automated Distribution System
 ADS,Automatic Dependent Surveillance
 ADS-B,Automatic Dependent Surveillance-Broadcast
 AENA,Aeropuertos Españoles y Navegación Aérea
+AEO,All Engines Operative
 AERA,Automated En-Route Air Traffic Control
 AEW,Airborne Early Warning
 AF,Air Field
@@ -194,8 +197,10 @@ CW,Continous Wave
 CW,Cold Weather
 CWS,Collision Warning System
 CWP,Controller Working Position
+DA,Density Altitude
 DAS,DFS Aviation Services (DFS subcompany for services outside Germany)
 DCIA,Dependent Converging Instrument Approach
+DECIDE,"Detect, Estimate, Choose, Identify, Do, and Evaluate"
 DEL,Delivery
 DFS,Deutsche Flugsicherung (ATC in Germany)
 DGAC,Direction générale de l'aviation civile
@@ -244,6 +249,7 @@ GP,Glide Path
 GPS,Global Positioning System
 GS,Ground Speed or Glideslope
 HKIA,Hong Kong International Airport
+HOTS,Higher-Order Thinking Skills
 IAA,Israeli Airport Authority
 IAF,Israeli Air Force
 IANS,Institute of Air Navigation Services, a division of Eurocontrol
@@ -251,8 +257,10 @@ IAS,Indicated Air Speed
 IATA,International Air Transport Association, HQ in Montreal, Canada
 IFR,Instrument Flight Rules
 IG,Image Generator
+IGE,In Ground Effect
 IGLR,Integrated Ground Lighting and Radar
 ILS,Instrument Landing System
+ISA,International Standard Atmosphere
 IMC,Instrument Meteorological Conditions
 KAT,Kaufbeuren ATM Training (DFS subcompany)
 LAA,Lappland Aviation Academy
@@ -266,14 +274,19 @@ LVP,Low Visibility Procedures
 MATS,Malta Air Traffic Services
 MEA,Minimum En-route Altitude
 METAR,Meteorological Aerodrome Report
+MCP,Maximum Continuous Power
 MLW,Maximum Landing Weight
 MSL,Median Sea Level
 MSTA,Minimum Safe Turning Altitude
 MTOW,Maximum Take-Off Weight
 NLFS,Night Low Flying System
 OCTA,Outside Control Areas
+OEI,One Engine Inoperative
+OGE,Out of Ground Effect
 OFZ,Obstacle Free Zone
 OJT,On the Job Training
+OODA,"Observation, Orientation, Decision, and Action"
+PA,Pressure Altitude
 PAPI,Precision Approach Path Indicator
 PAR,Precision Approach Radar
 PIC,Pilot in Command
@@ -302,6 +315,7 @@ RCS,Radar Cross Section
 RET,Rapid Exit Taxiways
 RF,Radio Frequency
 RFFS,Rescue and Fire Fighting Services
+RFM,Rotorcraft Flight Manual
 RIMCAS,Runway Incursion Monitoring and Conflict Alert System
 RJAF,Royal Jordanian Air Force
 RJC,Reject
@@ -344,7 +358,8 @@ SIF,Selective Identification Friend or Foe
 SIGMET,Significant Meteorological (Information) Report
 SILs,Sector Inbound Lists
 SIM,Simulator
-SKYGUIDE,Swiss Air Traffic Control
+SKYGUIDE,Air Traffic Control of Switzerland
+SL,Sea Level
 SLB,Side lobe Blanking
 SLC,Side lobe Cancellation
 SLOC,Slovenia Control
@@ -380,7 +395,7 @@ TAIS,Tactical Air Intelligence System
 TAP,Target Acquisition Protocol
 TARMAC,Taxi and Ramp Management and Control
 TAS,Terminal Airspace System
-TAS,True Airspeed
+TAS,True Air Speed
 TAWS,Terrain Awareness and Warning System
 TCAS,Traffic alert and Collision Avoidance System
 TCDS,Type Certificate Data Sheet
@@ -402,6 +417,7 @@ TM,Traffic Management
 TMA,Terminal Control Area
 TOC,Top Of Climb
 TOD,Top Of Descent
+TOP,Take-Off Power
 TOR,Terms Of Reference
 TOR,Tornado aircraft
 TOWSIM,Tower Simulator
@@ -447,7 +463,7 @@ VLF,Very Low Frequency
 VMC,Visual Meteorological Conditions
 VMO,maximum operation speed is the air speed than should never be exceeded deliberately in normal operation, whatever the flight situation isVOR,VHF Omni-directional Range
 VOLMET,Meteorological Information for Aircraft in Flight
-VOR,VHF Omni-directional Radio Range
+VOR,VHF Omni-directional Receiver
 VORTAC,VOR -TACAN combination
 VREF,1.3 times the stalling speed of the aircraft in the stated landing configuration and at the prevailing aircraft weight
 VRR,Voice Recognition and Response
@@ -461,6 +477,9 @@ VTC,Virtual Training Centre
 VTOL,Vertical Take-Off and Landing
 VTOSL,Vertical Take-Off and Short Landing
 VTS,Vehicle Tracking System
+Vtoss,Take-off safety speed
+Vy,Optimimum climbing speed
+Vz,Rate-of-climb
 WA,Wind Angle
 WAAS,Wide Area Augmentation System
 WAM,Wide Area Multilateration
