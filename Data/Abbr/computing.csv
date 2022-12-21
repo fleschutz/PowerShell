@@ -1071,7 +1071,7 @@ ESMR,Enhanced Specialized Mobile Radio
 ESMTP,Extended Simple Mail Transfer Protocol
 ESP,event stream processing
 ESS,employee self-service
-ETL,extract, transform, load
+ETL,"extract, transform, load"
 ETM,Enterprise Transportation Management
 ETO,Engineer To Order
 ETP,Enterprise Transportation Planning
@@ -1092,7 +1092,6 @@ ExRCA,Exchange Remote Connectivity Analyzer
 EZ/EC,Empowerment Zone/Enterprise Community
 FA,Flexible Automation
 FACTA,Fair and Accurate Credit Transactions Act
-FAQ,frequently-asked questions
 FAR,Federal Acquisition Regulation
 FAS,Final Assembly Schedule
 FASAB,Federal Accounting Standards Advisory Board
@@ -1195,7 +1194,7 @@ FPS,First-Person Shooter
 fps,Frames Per Second
 FPT,Fine Pitch Technology
 FPU,Floating-Point Unit
-FQA,frequently questioned answers
+FQA,Frequently Questioned Answers
 FQDN,Fully Qualified Domain Name
 FR,Frame Relay
 FRA,Federal Railroad Administration
