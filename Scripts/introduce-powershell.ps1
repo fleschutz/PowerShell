@@ -27,15 +27,15 @@ try {
 	$NumModules = (Get-Module).Count
 	$NumAliases = (Get-Alias).Count
 	$Details = "PowerShell $Version ($Edition edition) with $NumModules modules and $NumAliases aliases"
-	& "$PSScriptRoot/write-typewriter.ps1" ">>> This is $Details"
+	& "$PSScriptRoot/write-typewriter.ps1" "🔶 This is $Details"
 	""
-	& "$PSScriptRoot/write-typewriter.ps1" ">>> Want to learn PowerShell? See the tutorials at: https://www.guru99.com/powershell-tutorial.html" 25
+	& "$PSScriptRoot/write-typewriter.ps1" "🔶 Want to learn PowerShell? See the tutorials at: https://www.guru99.com/powershell-tutorial.html" 25
 	""
-	& "$PSScriptRoot/write-typewriter.ps1" ">>> Need docs? See the official documentation at: https://docs.microsoft.com/en-us/powershell" 25
+	& "$PSScriptRoot/write-typewriter.ps1" "🔶 Need docs? See the official documentation at: https://docs.microsoft.com/en-us/powershell" 25
 	""
-	& "$PSScriptRoot/write-typewriter.ps1" ">>> Take a look under the hood and visit the PowerShell Github repository at: https://github.com/PowerShell/PowerShell" 25
+	& "$PSScriptRoot/write-typewriter.ps1" "🔶 Take a look under the hood and visit the PowerShell Github repository at: https://github.com/PowerShell/PowerShell" 25
 	""
-	& "$PSScriptRoot/write-typewriter.ps1" ">>> Want examples? See the mega collection of PowerShell scripts at: https://github.com/fleschutz/PowerShell" 25
+	& "$PSScriptRoot/write-typewriter.ps1" "🔶 Want examples? See the mega collection of PowerShell scripts at: https://github.com/fleschutz/PowerShell" 25
 	""
 
 	& "$PSScriptRoot/write-typewriter.ps1" "NOTE: use <Ctrl> + <Click> to follow the links above and HAVE FUN!" 20
