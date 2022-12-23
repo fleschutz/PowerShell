@@ -12,21 +12,20 @@
 #>
  
 try {
-	Write-Progress "⏳ Step 1/2 - Reading from Data/frequent-domains.csv..."
+	Write-Progress "⏳ (1/2) Loading Data/frequent-domains.csv..."
 	$Table = Import-CSV "$PSScriptRoot/../Data/frequent-domains.csv"
 	$NumRows = $Table.Length
 
-	Write-Progress "⏳ Step 2/2 - Resolving $NumRows domains..."
+	Write-Progress "⏳ (2/2) Resolving $NumRows domains..."
 	$StopWatch = [system.diagnostics.stopwatch]::startNew()
 	if ($IsLinux) {
 		foreach($Row in $Table){$nop=dig $Row.Domain +short}
 	} else {
 		foreach($Row in $Table){$nop=Resolve-DNSName $Row.Domain}
 	}
-
 	[float]$Elapsed = $StopWatch.Elapsed.TotalSeconds
-	$Average = [math]::round($NumRows / $Elapsed, 1)
 
+	$Average = [math]::round($NumRows / $Elapsed, 1)
 	if ($Average -gt 10.0) {
 		"✅ DNS resolves $Average domains per second"
 	} else {  
