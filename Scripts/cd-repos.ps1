@@ -24,7 +24,7 @@ try {
 	} elseif (Test-Path "$HOME/source/repos" -pathType Container) { # try Visual Studio default
 		$Path = "$HOME/source/repos/$Subpath"
 	} else {
-		throw "The folder for Git repositories at 📂$HOME/Reposh doesn't exist (yet)."
+		throw "The folder for Git repositories in your home directory doesn't exist (yet)."
 	}
 	if (-not(Test-Path "$Path" -pathType Container)) {
 		throw "The path to 📂$Path doesn't exist (yet)."
