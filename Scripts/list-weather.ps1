@@ -95,9 +95,13 @@ try {
 			if ($Day -eq 0) {
 				Write-Host -foregroundColor green "TODAY   🌡°C  ☂️mm  💧  💨km/h  ☀️UV  ☁️   👁km   at $Area ($Region, $Country)"
 			} elseif ($Day -eq 1) {
-				Write-Host -foregroundColor green "TOMORROW"
+				$Date = (Get-Date).AddDays(1)
+				[string]$Weekday = $Date.DayOfWeek
+				Write-Host -foregroundColor green "$($Weekday.toUpper())"
 			} else {
-				Write-Host -foregroundColor green "Day after tomorrow"
+				$Date = (Get-Date).AddDays(2)
+				[string]$Weekday = $Date.DayOfWeek
+				Write-Host -foregroundColor green "$($Weekday.toUpper())"
 			}
 			$Day++
 		}

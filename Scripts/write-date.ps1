@@ -5,7 +5,7 @@
 	This PowerShell script determines and writes the current date.
 .EXAMPLE
 	PS> ./write-date
-	Sunday, October 17, 2021
+	📅12/25/2022
 .LINK
 	https://github.com/fleschutz/PowerShell
 .NOTES
