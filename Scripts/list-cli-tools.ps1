@@ -198,6 +198,7 @@ function ListCmdTools {
 	Test mktemp		"--version"
 	Test mount		"--version"
 	Test MpCmdRun	"-h"
+	Test nano		"--version"
 	Test netsh		""
 	Test netstat	""
 	Test nice		"--version"
