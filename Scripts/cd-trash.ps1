@@ -1,10 +1,10 @@
 ﻿<#
 .SYNOPSIS
-	Sets the working directory to the user's recycle bin folder
+	Sets the working directory to the user's trash folder
 .DESCRIPTION
-	This PowerShell script changes the working directory to the user's recycle bin folder.
+	This PowerShell script changes the working directory to the user's trash folder.
 .EXAMPLE
-	PS> ./cd-recycle-bin
+	PS> ./cd-trash
 	📂C:\$Recycle.Bin\S-1-5-21-123404-23309-294260-1001
 .LINK
 	https://github.com/fleschutz/PowerShell
@@ -25,7 +25,7 @@ try {
 		$Path = "C:\$Recycle.Bin\" + "$(GetCurrentUserSID)"
 	}
 	if (-not(Test-Path "$Path" -pathType container)) {
-		throw "Recycle bin folder at 📂$Path doesn't exist (yet)"
+		throw "Trash folder at 📂$Path doesn't exist (yet)"
 	}
 	Set-Location "$Path"
 	"📂$Path"
