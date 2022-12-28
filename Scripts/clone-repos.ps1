@@ -2,7 +2,7 @@
 .SYNOPSIS
 	Clones Git repositories
 .DESCRIPTION
-	This PowerShell script clones well-known Git repositories into a target directory.
+	This PowerShell script clones popular Git repositories into a target directory.
 .PARAMETER targetDir
 	Specifies the target directory (current working directory by default)
 .EXAMPLE
@@ -22,8 +22,8 @@ try {
 	& git --version
 	if ($lastExitCode -ne "0") { throw "Can't execute 'git' - make sure Git is installed and available" }
 
-	Write-Host "⏳ (2) Loading Data/known-git-repos.csv...      " -noNewline
-	$Table = Import-CSV "$PSScriptRoot/../Data/known-git-repos.csv"
+	Write-Host "⏳ (2) Loading Data/popular-git-repos.csv...      " -noNewline
+	$Table = Import-CSV "$PSScriptRoot/../Data/popular-git-repos.csv"
 	$NumEntries = $Table.count
 	Write-Host "$NumEntries Git repositories"
 
