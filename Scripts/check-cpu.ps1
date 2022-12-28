@@ -55,17 +55,19 @@ try {
 			$Arch = ""
 		}
 		if ([System.Environment]::Is64BitOperatingSystem) { $Bits = "64-bit" } else { $Bits = "32-bit" }
-		$Cores = [System.Environment]::ProcessorCount
-		"$Status $Arch CPU $Bits ($Cores cores, $Temp)"
+		$CPUName = "$Arch CPU $Bits"
+		$DeviceID = ""
+		$Speed = ""
+		$Socket = ""
 	} else {
 		$Details = Get-WmiObject -Class Win32_Processor
 		$CPUName = $Details.Name.trim()
-		$Cores = [System.Environment]::ProcessorCount
-		$DeviceID = $Details.DeviceID
-		$Speed = "$($Details.MaxClockSpeed)MHz"
-		$Socket = $Details.SocketDesignation
-		"$Status $CPUName ($Cores cores, $DeviceID, $Speed, $Socket socket, $Temp)"
+		$DeviceID = "$($Details.DeviceID), "
+		$Speed = "$($Details.MaxClockSpeed)MHz, "
+		$Socket = "$($Details.SocketDesignation) socket, "
 	}
+	$Cores = [System.Environment]::ProcessorCount
+	Write-Host "$Status $CPUName ($Cores cores, $($DeviceID)$($Speed)$($Socket)$Temp)"
 	exit 0 # success
 } catch {
 	"⚠️ Error in line $($_.InvocationInfo.ScriptLineNumber): $($Error[0])"

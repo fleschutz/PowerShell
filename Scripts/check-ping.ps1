@@ -7,7 +7,7 @@
 	Specifies the hosts to check, seperated by comma (default is: amazon.com,bing.com,cnn.com,dropbox.com,facebook.com,google.com,live.com,twitter.com,youtube.com)
 .EXAMPLE
 	PS> ./check-ping
-	✅ Ping is 25ms average, 13ms min, 109ms max.
+	✅ Ping is 25ms average, 13ms min, 109ms max
 .LINK
 	https://github.com/fleschutz/PowerShell
 .NOTES
@@ -17,10 +17,11 @@
 param([string]$hosts = "amazon.com,bing.com,cnn.com,dropbox.com,facebook.com,google.com,live.com,twitter.com,youtube.com")
 
 try {
-	Write-Progress "⏳ Pinging $hosts..."
+	Write-Progress "⏳ (1/2) Pinging $hosts..."
 	$HostsArray = $hosts.Split(",")
 	$Pings = Test-Connection -count 1 -computerName $HostsArray
 
+	Write-Progress "⏳ (2/2) Calculating results..."
 	[int]$Min = 9999999
 	[int]$Max = [int]$Avg = 0
 	foreach($Ping in $Pings) {
@@ -30,6 +31,8 @@ try {
 		$Avg += $Latency
 	}
 	$Avg /= $Pings.count
+
+	Write-Progress -Completed " "
 	"✅ Ping is $($Avg)ms average, $($Min)ms min, $($Max)ms max"
 	exit 0 # success
 } catch {

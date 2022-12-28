@@ -31,8 +31,10 @@
 & "$PSScriptRoot/check-uptime.ps1"
 & "$PSScriptRoot/check-time-zone.ps1"
 & "$PSScriptRoot/check-swap-space.ps1"
-& "$PSScriptRoot/check-dns.ps1"
-& "$PSScriptRoot/check-ping.ps1"
-& "$PSScriptRoot/check-vpn.ps1"
 & "$PSScriptRoot/check-pending-reboot.ps1"
+" "
+& "$PSScriptRoot/write-green.ps1" "   N E T W O R K"
+& "$PSScriptRoot/check-ping.ps1"
+& "$PSScriptRoot/check-dns.ps1"
+& "$PSScriptRoot/check-vpn.ps1"
 exit 0 # success

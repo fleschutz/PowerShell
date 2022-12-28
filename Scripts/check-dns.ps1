@@ -25,8 +25,11 @@ try {
 	}
 	[float]$Elapsed = $StopWatch.Elapsed.TotalSeconds
 
+	Write-Progress -Completed " "
 	$Average = [math]::round($NumRows / $Elapsed, 1)
-	if ($Average -gt 10.0) {
+	if ($Average -gt 100.0) {
+		"✅ DNS resolves excellent $Average domains per second"
+	} elseif ($Average -gt 10.0) {
 		"✅ DNS resolves $Average domains per second"
 	} else {  
 		"⚠️ DNS resolves only $Average domains per second!"
