@@ -38,6 +38,8 @@ function ListSpecialFolders {
 		AddLine "Home"             "$HOME/"
 		AddLine "Music"            "$HOME/Music/"
 		AddLine "Pictures"         "$HOME/Pictures/"
+		AddLine "Repositories"     "$HOME/Repos/"
+		AddLine "Repositories"     "$HOME/Repositories/"
 		AddLine "Screenshots"      "$HOME/Pictures/Screenshots/"
 		AddLine "Snap"             "$HOME/snap/"
 		AddLine "SSH"              "$HOME/.ssh/"
