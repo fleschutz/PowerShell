@@ -19,7 +19,7 @@ try {
 		$Manufacturer = (sudo dmidecode -s system-manufacturer)
 		$Version = (sudo dmidecode -s bios-version)
 		$RelDate = (sudo dmidecode -s bios-release-date)
-		"✅ $Model BIOS by $Manufacturer (version $Version as of $RelDate)"
+		"✅ $Model BIOS by $Manufacturer ($Version release of $RelDate)"
 	} else {
 		$BIOS = Get-CimInstance -ClassName Win32_BIOS
 		$Model = $BIOS.Name.Trim()
