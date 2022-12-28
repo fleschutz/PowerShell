@@ -113,7 +113,7 @@ function Expand-ArchiveInternal {
     }
 }
 
-Function Remove-Destination([string] $Destination) {
+function Remove-Destination([string] $Destination) {
     if (Test-Path -Path $Destination) {
         if ($DoNotOverwrite) {
             throw "Destination folder '$Destination' already exist. Use a different path or omit '-DoNotOverwrite' to overwrite."
@@ -196,7 +196,8 @@ function Test-PathNotInSettings($Path) {
     Must be either User or Machine
     Defaults to User
 #>
-Function Add-PathTToSettings {
+
+function Add-PathTToSettings {
     [CmdletBinding()]
     param(
         [Parameter(Mandatory, ValueFromPipeline, ValueFromPipelineByPropertyName)]
@@ -246,7 +247,22 @@ Function Add-PathTToSettings {
     $Key.SetValue("PATH", $NewPathValue, $PathValueKind)
 }
 
-if (-not $IsWinEnv) {
+if ($IsLinux) {
+    $Name = $PSVersionTable.OS
+    if ($Name -like "*-generic *") {
+        if ([System.Environment]::Is64BitOperatingSystem) {
+            $architecture = "x64"
+	} else {
+            $architecture = "x86"
+	}
+    } elseif ($Name -like "*-raspi *") {
+        if ([System.Environment]::Is64BitOperatingSystem) {
+            $architecture = "arm64"
+	} else {
+            $architecture = "arm32"
+	}
+    }
+} elseif (-not $IsWinEnv) {
     $architecture = "x64"
 } elseif ($(Get-ComputerInfo -Property OsArchitecture).OsArchitecture -eq "ARM 64-bit Processor") {
     $architecture = "arm64"

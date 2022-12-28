@@ -13,7 +13,9 @@
 
 try {
 	if ($IsLinux) {
-		"✅ $(uname -sr)"
+		$Name = $PSVersionTable.OS
+		if ([System.Environment]::Is64BitOperatingSystem) { $Bits = "64-bit" } else { $Bits = "32-bit" }
+		"✅ $Name ($Bits)"
 	} else {
 		$OS = Get-WmiObject -class Win32_OperatingSystem
 		$Name = $OS.Caption -Replace "Microsoft Windows","Windows"

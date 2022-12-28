@@ -46,7 +46,17 @@ try {
 	} 
 
 	if ($IsLinux) {
-		"$Status CPU has $Temp"
+		$Name = $PSVersionTable.OS
+		if ($Name -like "*-generic *") {
+			$Arch = "x86"
+		} elseif ($Name -like "*-raspi *") {
+			$Arch = "ARM"
+		} else {
+			$Arch = ""
+		}
+		if ([System.Environment]::Is64BitOperatingSystem) { $Bits = "64-bit" } else { $Bits = "32-bit" }
+		$Cores = [System.Environment]::ProcessorCount
+		"$Status $Arch CPU $Bits ($Cores cores, $Temp)"
 	} else {
 		$Details = Get-WmiObject -Class Win32_Processor
 		$CPUName = $Details.Name.trim()
