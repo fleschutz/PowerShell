@@ -56,7 +56,9 @@ function ListSpecialFolders {
 				AddLine "$_" "$Path"
 			}
 		}
-		AddLine "Tempory"          "$(GetTempDir)"
+		AddLine "Repositories"     "$HOME\source\repos"
+		AddLine "SSH"              "$HOME\.ssh"
+		AddLine "Temporary"        "$(GetTempDir)"
 		$Path = Resolve-Path "$HOME/.."
 		AddLine "Users"            "$Path"
 	}
