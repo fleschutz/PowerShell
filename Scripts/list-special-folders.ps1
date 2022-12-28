@@ -40,6 +40,7 @@ function ListSpecialFolders {
 		AddLine "Pictures"         "$HOME/Pictures/"
 		AddLine "Screenshots"      "$HOME/Pictures/Screenshots/"
 		AddLine "Snap"             "$HOME/snap/"
+		AddLine "SSH"              "$HOME/.ssh/"
 		AddLine "Trash"            "$HOME/.local/share/Trash/"
 		AddLine "Templates"        "$Home/Templates/"
 		AddLine "Temporary"        "$(GetTempDir)"
@@ -53,7 +54,7 @@ function ListSpecialFolders {
 				AddLine "$_" "$Path"
 			}
 		}
-		AddLine "TemporaryFolder"  "$(GetTempDir)"
+		AddLine "Tempory"          "$(GetTempDir)"
 		$Path = Resolve-Path "$HOME/.."
 		AddLine "Users"            "$Path"
 	}
