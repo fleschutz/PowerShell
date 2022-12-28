@@ -60,10 +60,11 @@ try {
 	} else {
 		$Details = Get-WmiObject -Class Win32_Processor
 		$CPUName = $Details.Name.trim()
+		$Cores = [System.Environment]::ProcessorCount
 		$DeviceID = $Details.DeviceID
 		$Speed = "$($Details.MaxClockSpeed)MHz"
 		$Socket = $Details.SocketDesignation
-		"$Status $CPUName ($DeviceID, $Speed, socket $Socket, $Temp)"
+		"$Status $CPUName ($Cores cores, $DeviceID, $Speed, $Socket socket, $Temp)"
 	}
 	exit 0 # success
 } catch {
