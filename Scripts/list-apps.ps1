@@ -15,7 +15,7 @@ try {
 	if ($IsLinux) {
 		& snap list
 	} else {
-		Get-AppxPackage | Select-Object Name,Version | Format-Table -autoSize
+		Get-AppxPackage | Format-Table -property Name,Version,InstallLocation,Status -autoSize
 	}
 	exit 0 # success
 } catch {
