@@ -2,7 +2,7 @@
 .SYNOPSIS
 	Checks the DNS resolution 
 .DESCRIPTION
-	This PowerShell script measures and prints the DNS resolution speed by using 200 frequently used domain names.
+	This PowerShell script measures and prints the DNS resolution speed by using 200 popular domains.
 .EXAMPLE
 	PS> ./check-dns
 .LINK
@@ -12,8 +12,8 @@
 #>
  
 try {
-	Write-Progress "⏳ (1/2) Loading Data/frequent-domains.csv..."
-	$Table = Import-CSV "$PSScriptRoot/../Data/frequent-domains.csv"
+	Write-Progress "⏳ (1/2) Loading Data/popular-domains.csv..."
+	$Table = Import-CSV "$PSScriptRoot/../Data/popular-domains.csv"
 	$NumRows = $Table.Length
 
 	Write-Progress "⏳ (2/2) Resolving $NumRows domains..."
