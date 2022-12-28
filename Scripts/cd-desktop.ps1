@@ -14,16 +14,16 @@
 
 try {
 	if ($IsLinux) {
-		$Path = Resolve-Path "$HOME/Desktop"
+		$Path = Resolve-Path "~/Desktop"
 	} else {
 		$Path = [Environment]::GetFolderPath('DesktopDirectory')
 	}
-	if (-not(Test-Path "$Path" -pathType container)) {
-		throw "Desktop folder at 📂$Path doesn't exist (yet)"
+	if (Test-Path "$Path" -pathType container) {
+		Set-Location "$Path"
+		"📂$Path"
+		exit 0 # success
 	}
-	Set-Location "$Path"
-	"📂$Path"
-	exit 0 # success
+	throw "User's desktop folder at 📂$Path doesn't exist (yet)"
 } catch {
 	"⚠️ Error in line $($_.InvocationInfo.ScriptLineNumber): $($Error[0])"
 	exit 1

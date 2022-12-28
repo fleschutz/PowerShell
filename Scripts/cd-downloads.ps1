@@ -14,16 +14,16 @@
 
 try {
 	if ($IsLinux) {
-		$Path = Resolve-Path "$HOME/Downloads"
+		$Path = Resolve-Path "~/Downloads"
 	} else {
 		$Path = (New-Object -ComObject Shell.Application).NameSpace('shell:Downloads').Self.Path
 	}
-	if (-not(Test-Path "$Path" -pathType container)) {
-		throw "Downloads folder at 📂$Path doesn't exist (yet)"
+	if (Test-Path "$Path" -pathType container) {
+		Set-Location "$Path"
+		"📂$Path"
+		exit 0 # success
 	}
-	Set-Location "$Path"
-	"📂$Path"
-	exit 0 # success
+	throw "User's downloads folder at 📂$Path doesn't exist (yet)"
 } catch {
 	"⚠️ Error in line $($_.InvocationInfo.ScriptLineNumber): $($Error[0])"
 	exit 1
