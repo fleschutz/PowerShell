@@ -1,6 +1,6 @@
 ﻿<#
 .SYNOPSIS
-	Sets the working directory to the user's home directory
+	Sets the working directory to the user's home folder
 .DESCRIPTION
 	This PowerShell script changes the working directory to the user's home directory.
 .EXAMPLE
@@ -13,13 +13,13 @@
 #>
 
 try {
-	$Path = Resolve-Path "$HOME"
-	if (-not(Test-Path "$Path" -pathType container)) {
-		throw "Home directory at 📂$Path doesn't exist (yet)"
+	$Path = Resolve-Path -Path "~"
+	if (Test-Path "$Path" -pathType container) {
+		Set-Location "$Path"
+		"📂$Path"
+		exit 0 # success
 	}
-	Set-Location "$Path"
-	"📂$Path"
-	exit 0 # success
+	throw "User's home folder at 📂$Path doesn't exist (yet)"
 } catch {
 	"⚠️ Error in line $($_.InvocationInfo.ScriptLineNumber): $($Error[0])"
 	exit 1

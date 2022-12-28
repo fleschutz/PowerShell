@@ -13,7 +13,7 @@
 #>
 
 try {
-	$Path = Resolve-Path "$PWD"
+	$Path = Resolve-Path -Path "$PWD"
 	"📂$Path"
 	exit 0 # success
 } catch {
