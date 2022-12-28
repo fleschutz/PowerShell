@@ -119,6 +119,7 @@ function ListCmdTools {
 	Test dircolors	"--version"
 	Test dirname	"--version"
 	Test dism		""
+	Test dmidecode	"--version"
 	Test dos2unix	"--version"
 	Test driverquery	""
 	Test du		"--version"
