@@ -15,11 +15,15 @@
 try {
 	Write-Progress "Querying BIOS details..."
 	if ($IsLinux) {
-		# TODO
+		$Model = (sudo dmidecode -s system-product-name)
+		$Manufacturer = (sudo dmidecode -s system-manufacturer)
+		$Version = (sudo dmidecode -s bios-version)
+		$RelDate = (sudo dmidecode -s bios-release-date)
+		"✅ $Model BIOS by $Manufacturer (version $Version as of $RelDate)"
 	} else {
 		$BIOS = Get-CimInstance -ClassName Win32_BIOS
-		$Manufacturer = $BIOS.Manufacturer.Trim()
 		$Model = $BIOS.Name.Trim()
+		$Manufacturer = $BIOS.Manufacturer.Trim()
 		$Serial = $BIOS.SerialNumber.Trim()
 		$Version = $BIOS.Version.Trim()
 		"✅ $Model BIOS by $Manufacturer (S/N $Serial, version $Version)"
