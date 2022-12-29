@@ -96,7 +96,7 @@ Which editor to use for PowerShell scripts?
 
 How to write good PowerShell scripts?
 -------------------------------------
-Good PowerShell scripts are user-friendly and platform-independent. The following rules should be a good starting point:
+Good PowerShell scripts are both user-friendly and platform-independent. I recommend the following rules as a starting point:
 
 1. Use the `<verb>-<object>.ps1` scheme to name the script.
 2. Use `UTF-8 BOM` encoding to support Unicode characters in the script.
