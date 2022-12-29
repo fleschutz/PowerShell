@@ -10,7 +10,7 @@ Why use PowerShell?
 -------------------
 ✔️ It's **powerful** - fully control your computer
 
-✔️ It's **easy to learn** - see the tutorial for beginners at: https://www.guru99.com/powershell-tutorial.html
+✔️ It's **easy to learn** - see the tutorial at: https://www.guru99.com/powershell-tutorial.html
 
 ✔️ It's **cross-platform** - available for Linux, Mac OS and Windows
 
