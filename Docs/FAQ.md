@@ -29,7 +29,7 @@ NOTE: the group policy object (GPO) settings of your organization might disallow
    
 ▶️ **On CentOS, Debian, Docker, Fedora, macOS, openSUSE, Red Hat, Ubuntu** visit https://github.com/PowerShell/PowerShell for installation.
 
-▶️ **On Linux supporting Snaps** install PowerShell by executing:
+▶️ **On Linux supporting Snaps** execute:
 ```
  $ snap install PowerShell
  $ ln -s /snap/bin/pwsh /usr/bin/pwsh
