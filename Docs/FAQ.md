@@ -21,7 +21,7 @@ Why use PowerShell?
 
 How to install PowerShell?
 --------------------------
-**On Windows** it's preinstalled, **but** the execution policy is *restricted* by default! Change the execution policy as follows: open the *Windows PowerShell (Administrator)* console and enter:
+**On Windows** it's preinstalled, **but** the execution policy is *restricted* by default! To change this: open the *Windows PowerShell (Administrator)* console and enter:
 ```
  PS> Set-ExecutionPolicy -ExecutionPolicy Bypass -Scope CurrentUser
 ```
