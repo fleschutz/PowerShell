@@ -21,15 +21,15 @@ Why use PowerShell?
 
 How to install PowerShell?
 --------------------------
-**On Windows** it's preinstalled, **but** the execution policy is *restricted* by default! To change this: open the *Windows PowerShell (Administrator)* console and enter:
+▶️ **On Windows** it's preinstalled, **but** the script execution policy is by default *restricted* (forbidden)! To change this: open the *Windows PowerShell (Administrator)* console and enter:
 ```
  PS> Set-ExecutionPolicy -ExecutionPolicy Bypass -Scope CurrentUser
 ```
-NOTE: in case this fails then the group policy object (GPO) settings of your organization disallows any changes. Contact your system administrator for help.
+NOTE: the group policy object (GPO) settings of your organization might disallow changes. In that case contact your system administrator for help.
    
-**On CentOS, Debian, Docker, Fedora, macOS, openSUSE, Red Hat, Ubuntu** visit https://github.com/PowerShell/PowerShell for installation.
+▶️ **On CentOS, Debian, Docker, Fedora, macOS, openSUSE, Red Hat, Ubuntu** visit https://github.com/PowerShell/PowerShell for installation.
 
-**On Linux supporting Snaps** install PowerShell by executing:
+▶️ **On Linux supporting Snaps** install PowerShell by executing:
 ```
  $ snap install PowerShell
  $ ln -s /snap/bin/pwsh /usr/bin/pwsh
