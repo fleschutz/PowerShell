@@ -8,29 +8,32 @@ PowerShell is a task automation and configuration management framework from Micr
 
 Why use PowerShell?
 -------------------
-✔️ it's **powerful** - fully control your computer
+✔️ It's **powerful** - fully control your computer
 
-✔️ it's **cross-platform** - available for Linux, Mac OS and Windows
+✔️ It's **easy to learn** - see the tutorial for beginners at: https://www.guru99.com/powershell-tutorial.html
 
-✔️ it's **open-source and free** - see the Github repository at: https://github.com/PowerShell/PowerShell 
+✔️ It's **cross-platform** - available for Linux, Mac OS and Windows
 
-✔️ it's **easy to learn** - see the tutorial for beginners at: https://www.guru99.com/powershell-tutorial.html
+✔️ It's **open-source and free** - see the Github repository at: https://github.com/PowerShell/PowerShell
 
-✔️ it's **fully documented** - see the PowerShell documentation at: https://docs.microsoft.com/en-us/powershell/
+✔️ It's **fully documented** - see the PowerShell documentation at: https://docs.microsoft.com/en-us/powershell/
 
 
 How to install PowerShell?
 --------------------------
-* **On Windows** it's preinstalled. **However,** the execution policy is 'restricted' by default! To allow script execution: open the *Windows PowerShell (Administrator)* console and enter:
-   ```
-   PS> Set-ExecutionPolicy -ExecutionPolicy Bypass -Scope CurrentUser
-   ```
-* **On CentOS, Debian, Docker, Fedora, macOS, openSUSE, Red Hat, Ubuntu** visit https://github.com/PowerShell/PowerShell for installation.
-* **On Linux supporting Snaps** install PowerShell by executing:
-   ```
-   $ snap install PowerShell
-   $ ln -s /snap/bin/pwsh /usr/bin/pwsh
-   ```
+**On Windows** it's preinstalled. **However,** the execution policy is 'restricted' by default! To allow script execution: open the *Windows PowerShell (Administrator)* console and enter:
+```
+ PS> Set-ExecutionPolicy -ExecutionPolicy Bypass -Scope CurrentUser
+```
+NOTE: in case this fails then the group policy object (GPO) settings of your organization disallows any changes. Contact your system administrator for help.
+   
+**On CentOS, Debian, Docker, Fedora, macOS, openSUSE, Red Hat, Ubuntu** visit https://github.com/PowerShell/PowerShell for installation.
+
+**On Linux supporting Snaps** install PowerShell by executing:
+```
+ $ snap install PowerShell
+ $ ln -s /snap/bin/pwsh /usr/bin/pwsh
+```
 
 How to get the PowerShell Scripts?
 ----------------------------------
