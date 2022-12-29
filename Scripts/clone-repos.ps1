@@ -44,7 +44,7 @@ try {
 		$Step++
 
 		if (Test-Path "$TargetDir/$FolderName" -pathType container) {
-			"⏳ ($Step/$($NumEntries + 4)) Skipping 📂$FolderName - exists already..."
+			"⏳ ($Step/$($NumEntries + 4)) Skipping existing 📂$($FolderName)..."
 			$Skipped++
 			continue
 		}
