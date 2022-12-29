@@ -1,6 +1,4 @@
-# Copyright (c) Microsoft Corporation.
-# Licensed under the MIT License.
-<#
+﻿<#
 .Synopsis
     Install PowerShell on Windows, Linux or macOS.
 .DESCRIPTION
@@ -520,4 +518,5 @@ try {
     [Net.ServicePointManager]::SecurityProtocol = $originalValue
 
     Remove-Item -Path $tempDir -Recurse -Force -ErrorAction SilentlyContinue
+	exit 0 # success
 }

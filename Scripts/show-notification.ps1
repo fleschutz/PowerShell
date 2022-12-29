@@ -1,14 +1,14 @@
 ﻿<#
 .SYNOPSIS
-        Shows a notification
+	Shows a notification
 .DESCRIPTION
-        This PowerShell script shows a toast-message notification for the Windows 10 Notification Center.
+	This PowerShell script shows a toast-message notification for the Windows 10 Notification Center.
 .EXAMPLE
-        PS> ./show-notification "Hello World"
+	PS> ./show-notification "Hello World"
 .LINK
-        https://github.com/fleschutz/PowerShell
+	https://github.com/fleschutz/PowerShell
 .NOTES
-        Author: Markus Fleschutz | License: CC0
+	Author: Markus Fleschutz | License: CC0
 #>
 
 param([string]$Text = "Hello World", [string]$Title = "NOTE", [int]$Duration = 5000)

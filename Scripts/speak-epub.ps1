@@ -1,6 +1,6 @@
 ﻿<#
 .SYNOPSIS
-	Speaks the content of the given Epub file by text-to-speech (TTS).
+	Speaks an Epub file by text-to-speech (TTS).
 .DESCRIPTION
 	This PowerShell script speaks the content of the given Epub file by text-to-speech (TTS).
 .PARAMETER Filename
@@ -55,7 +55,7 @@ function UnzipFile() { param([string]$file, [string]$dest)
 }
  
 if ($Filename -eq "") {
-	$Filename = read-host "Enter path to .epub file"
+	$Filename = Read-Host "Enter path to .epub file"
 }
 write-output "Reading $Filename ..."
 $file = get-item $Filename
@@ -94,3 +94,4 @@ foreach($item in $content.package.manifest.Item) {
 		}
 	}
 }
+exit 0 # success

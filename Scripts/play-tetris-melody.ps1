@@ -1,12 +1,12 @@
 ﻿<#
 .SYNOPSIS
-        Plays the Tetris melody
+	Plays the Tetris melody
 .DESCRIPTION
-        This PowerShell script plays the Tetris melody.
+	This PowerShell script plays the Tetris melody.
 .EXAMPLE
-        PS> ./play-tetris-melody
+	PS> ./play-tetris-melody
 .LINK
-        https://github.com/fleschutz/PowerShell
+	https://github.com/fleschutz/PowerShell
 .NOTES
 	Author: Markus Fleschutz | License: CC0
 #>

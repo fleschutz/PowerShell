@@ -1,12 +1,12 @@
 ﻿<#
 .SYNOPSIS
-        Plays the Happy Birthday song
+	Plays the Happy Birthday song
 .DESCRIPTION
-        This PowerShell script plays the famous Happy Birthday song.
+	This PowerShell script plays the famous Happy Birthday song.
 .EXAMPLE
-        PS> ./play-happy-birthday
+	PS> ./play-happy-birthday
 .LINK
-        https://github.com/fleschutz/PowerShell
+	https://github.com/fleschutz/PowerShell
 .NOTES
 	Author: Markus Fleschutz | License: CC0
 #>

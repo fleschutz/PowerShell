@@ -23,8 +23,8 @@
 param([string]$CommitID = "", [string]$CommitMessage = "", [string]$Branches = "", [string]$RepoDir = "$PWD")
 
 try {
-	if (-not(test-path "$RepoDir" -pathType container)) { throw "Can't access directory: $RepoDir" }
-	set-location "$RepoDir"
+	if (-not(Test-Path "$RepoDir" -pathType container)) { throw "Can't access directory: $RepoDir" }
+	Set-Location "$RepoDir"
 
 	if ($CommitID -eq "") { $CommitID = read-host "Enter the Git commit id to cherry-pick" }
 	if ($CommitMessage -eq "") { $CommitMessage = read-host "Enter the commit message to use" }

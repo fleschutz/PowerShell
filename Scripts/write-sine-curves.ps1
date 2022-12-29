@@ -1,4 +1,4 @@
-<#
+﻿<#
 .SYNOPSIS
         Write sine curves
 .DESCRIPTION

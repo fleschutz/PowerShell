@@ -1,4 +1,4 @@
-<#
+﻿<#
 .SYNOPSIS
 	Turns audio volume fully up
 .DESCRIPTION
