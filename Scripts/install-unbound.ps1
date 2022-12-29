@@ -1,12 +1,12 @@
-<#
+﻿<#
 .SYNOPSIS
-        Installs Unbound (needs admin rights)
+	Installs Unbound (needs admin rights)
 .DESCRIPTION
-        This PowerShell script installs Unbound, a validating, recursive, caching DNS resolver. It needs admin rights.
+	This PowerShell script installs Unbound, a validating, recursive, caching DNS resolver. It needs admin rights.
 .EXAMPLE
-        PS> ./install-unbound
+	PS> ./install-unbound
 .LINK
-        https://github.com/fleschutz/PowerShell
+	https://github.com/fleschutz/PowerShell
 .NOTES
 	Author: Markus Fleschutz | License: CC0
 #>
