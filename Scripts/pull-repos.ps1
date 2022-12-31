@@ -27,7 +27,7 @@ try {
 	if (-not(Test-Path "$ParentDir" -pathType container)) { throw "Can't access folder: $ParentDir" }
 	$Folders = (Get-ChildItem "$ParentDir" -attributes Directory)
 	$NumFolders = $Folders.Count
-	Write-Host "found $NumFolders subfolders"
+	Write-Host "$NumFolders subfolders"
 
 	[int]$Step = 3
 	[int]$Failed = 0

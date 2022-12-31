@@ -22,12 +22,12 @@ try {
 	& git --version
 	if ($lastExitCode -ne "0") { throw "Can't execute 'git' - make sure Git is installed and available" }
 
-	$ParentDirName = (Get-Item "$ParentDir").Name
-	Write-Host "⏳ (2) Checking parent folder 📂$ParentDirName...  " -noNewline
+	Write-Host "⏳ (2) Checking parent folder...        " -noNewline
 	if (-not(Test-Path "$ParentDir" -pathType container)) { throw "Can't access folder: $ParentDir" }
+	$ParentDirName = (Get-Item "$ParentDir").Name
 	$Folders = (Get-ChildItem "$ParentDir" -attributes Directory)
 	$NumFolders = $Folders.Count
-	Write-Host "$NumFolders subfolders found"
+	Write-Host "$NumFolders subfolders"
 
 	[int]$Step = 2
 	foreach ($Folder in $Folders) {
@@ -39,7 +39,7 @@ try {
 		if ($lastExitCode -ne "0") { throw "'git fetch' in $Folder failed with exit code $lastExitCode" }
 	}
 	[int]$Elapsed = $StopWatch.Elapsed.TotalSeconds
-	"✔️ fetched $NumFolders Git repositories in $Elapsed sec."
+	"✔️ fetched $NumFolders Git repositories in 📂$ParentDirName in $Elapsed sec."
 	exit 0 # success
 } catch {
 	"⚠️ Error in line $($_.InvocationInfo.ScriptLineNumber): $($Error[0])"
