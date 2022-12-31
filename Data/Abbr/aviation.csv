@@ -376,7 +376,9 @@ STCA,Short Term Conflict Alert
 STD,Synthetic Training Device
 STDMA,Self-organising Time Division Multiple Access (known as VHF digital link - Mode 4)
 STNA,Service Technique de la Navigation Aerienne
-STOL,Short Take Off and Landing
+STO,Short Take-Off
+STOVL,Short Take-Off and Vertical Landing
+STOL,Short Take-Off and Landing
 STRATFOR,Eurocontrol Statistics and Forecasts Service
 SUA,Special Use Airspace
 SV,Supervisor
