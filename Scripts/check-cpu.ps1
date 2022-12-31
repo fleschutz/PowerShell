@@ -55,7 +55,7 @@ try {
 			$Arch = ""
 		}
 		if ([System.Environment]::Is64BitOperatingSystem) { $Bits = "64-bit" } else { $Bits = "32-bit" }
-		$CPUName = "$Arch CPU $Bits"
+		$CPUName = "$Arch $Bits CPU"
 		$DeviceID = ""
 		$Speed = ""
 		$Socket = ""
