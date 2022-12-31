@@ -16,10 +16,12 @@ try {
 	Write-Progress "Querying BIOS details..."
 	if ($IsLinux) {
 		$Model = (sudo dmidecode -s system-product-name)
-		$Manufacturer = (sudo dmidecode -s system-manufacturer)
-		$Version = (sudo dmidecode -s bios-version)
-		$RelDate = (sudo dmidecode -s bios-release-date)
-		"✅ $Model BIOS by $Manufacturer ($Version release of $RelDate)"
+		if ("$Model" -ne "") {
+			$Manufacturer = (sudo dmidecode -s system-manufacturer)
+			$Version = (sudo dmidecode -s bios-version)
+			$RelDate = (sudo dmidecode -s bios-release-date)
+			"✅ $Model BIOS by $Manufacturer ($Version release of $RelDate)"
+		}
 	} else {
 		$BIOS = Get-CimInstance -ClassName Win32_BIOS
 		$Model = $BIOS.Name.Trim()
@@ -28,6 +30,7 @@ try {
 		$Version = $BIOS.Version.Trim()
 		"✅ $Model BIOS by $Manufacturer (S/N $Serial, version $Version)"
 	}
+	Write-Progress -Completed " "
 	exit 0 # success
 } catch {
 	"⚠️ Error in line $($_.InvocationInfo.ScriptLineNumber): $($Error[0])"
