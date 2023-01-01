@@ -1,6 +1,6 @@
 ﻿<#
 .SYNOPSIS
-	Prints a description of an abbreviation
+	Describes an abbreviation
 .DESCRIPTION
 	This PowerShell script queries and prints a description of the given abbreviation.
 .PARAMETER abbr
@@ -25,7 +25,7 @@ try {
 		foreach($Row in $Table) {
 			if ($Row.Abbr -eq $abbr) {
 				$Basename = (Get-Item "$File").Basename
-				"🔎 In $Basename $($Row.Abbr) may refer to $($Row.Term)"
+				"🔎 In $Basename '$($Row.Abbr)' may refer to: $($Row.Term)"
 				$Missing = $false
 			}
 		}
