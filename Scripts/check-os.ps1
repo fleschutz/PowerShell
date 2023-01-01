@@ -15,7 +15,7 @@ try {
 	if ($IsLinux) {
 		$Name = $PSVersionTable.OS
 		if ([System.Environment]::Is64BitOperatingSystem) { $Bits = "64-bit" } else { $Bits = "32-bit" }
-		"✅ $Name ($Bits)"
+		Write-Host "✅ $Name ($Bits)"
 	} else {
 		$OS = Get-WmiObject -class Win32_OperatingSystem
 		$Name = $OS.Caption -Replace "Microsoft Windows","Windows"
@@ -29,7 +29,7 @@ try {
 		$InstallDate = $OSDetails.InstallDate
 
 		$ProductKey = (Get-ItemProperty -Path "HKLM:\SOFTWARE\Microsoft\Windows NT\CurrentVersion\SoftwareProtectionPlatform" -Name BackupProductKeyDefault).BackupProductKeyDefault
-		"✅ $Name ($Arch, v$Version, S/N $Serial, P/K $ProductKey) since $($InstallDate.ToShortDateString())"
+		Write-Host "✅ $Name ($Arch, v$Version, S/N $Serial, P/K $ProductKey) since $($InstallDate.ToShortDateString())"
 	} 
 	exit 0 # success
 } catch {

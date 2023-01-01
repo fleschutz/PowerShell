@@ -30,7 +30,7 @@ try {
 			if ($Remaining -lt 30) { $Status = "⚠️" }
 			$Battery = "$Percent% battery life, $Remaining min. left"
 		}
-		"$Status $Power, $Battery"
+		Write-Host "$Status $Power, $Battery"
 	}
 	exit 0 # success
 } catch {

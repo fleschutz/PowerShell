@@ -5,7 +5,7 @@
 	This PowerShell script queries S.M.A.R.T. HDD/SSD device details and prints it.
 .EXAMPLE
 	PS> ./check-smart-devices
-	✅ 1TB Samsung SSD 970 EVO (via NVMe, 2388 hours, 289x on, v2B2QEXE7, 37°C, selftest passed)
+	✅ 1TB Samsung SSD 970 EVO via NVMe (2388 hours, 289x on, v2B2QEXE7, 37°C, selftest passed)
 .LINK
 	https://github.com/fleschutz/PowerShell
 .NOTES
@@ -29,18 +29,18 @@ function Bytes2String { param([int64]$Bytes)
 }
 
 try {
-	Write-Progress "⏳ Step 1/3 - Searching for smartctl executable..."
+	Write-Progress "⏳ Searching for smartctl executable..."
 	$Result = (smartctl --version)
 	if ($lastExitCode -ne "0") { throw "Can't execute 'smartctl' - make sure smartmontools are installed" }
 
-	Write-Progress "⏳ Step 2/3 - Scanning S.M.A.R.T devices..."
+	Write-Progress "⏳ Scanning S.M.A.R.T devices..."
 	if ($IsLinux) {
 		$Devices = $(sudo smartctl --scan-open)
 	} else {
 		$Devices = $(smartctl --scan-open)
 	}
 	foreach($Device in $Devices) {
-		Write-Progress "⏳ Step 3/3 - Querying S.M.A.R.T devices..."
+		Write-Progress "⏳ Querying S.M.A.R.T devices..."
 		$Array = $Device.split(" ")
 		$Device = $Array[0]
 		if ("$Device" -eq "#") {
@@ -65,8 +65,9 @@ try {
 		$PowerOn = $Details.power_cycle_count
 		$Hours = $Details.power_on_time.hours
 		if ($Details.smart_status.passed) { $Status = "passed" } else { $Status = "FAILED" }
-		"✅ $($Capacity)$ModelName (via $Protocol, $Hours hours, $($PowerOn)x on, v$($Firmware), $($Temp)°C, selftest $Status)"
+		Write-Host "✅ $($Capacity)$ModelName via $Protocol ($Hours hours, $($PowerOn)x on, v$($Firmware), $($Temp)°C, selftest $Status)"
 	}
+	Write-Progress -Completed " "
 	exit 0 # success
 } catch {
 	"⚠️ Error in line $($_.InvocationInfo.ScriptLineNumber): $($Error[0])"

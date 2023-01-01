@@ -12,11 +12,11 @@
 #>
  
 try {
-	Write-Progress "⏳ (1/2) Loading Data/popular-domains.csv..."
+	Write-Progress "⏳ Loading Data/popular-domains.csv..."
 	$Table = Import-CSV "$PSScriptRoot/../Data/popular-domains.csv"
 	$NumRows = $Table.Length
 
-	Write-Progress "⏳ (2/2) Resolving $NumRows domains..."
+	Write-Progress "⏳ Resolving $NumRows domains..."
 	$StopWatch = [system.diagnostics.stopwatch]::startNew()
 	if ($IsLinux) {
 		foreach($Row in $Table){$nop=dig $Row.Domain +short}
@@ -25,15 +25,15 @@ try {
 	}
 	[float]$Elapsed = $StopWatch.Elapsed.TotalSeconds
 
-	Write-Progress -Completed " "
 	$Average = [math]::round($NumRows / $Elapsed, 1)
 	if ($Average -gt 100.0) {
-		"✅ DNS resolves excellent $Average domains per second"
+		Write-Host "✅ DNS resolves excellent $Average domains per second"
 	} elseif ($Average -gt 10.0) {
-		"✅ DNS resolves $Average domains per second"
+		Write-Host "✅ DNS resolves $Average domains per second"
 	} else {  
-		"⚠️ DNS resolves only $Average domains per second!"
+		Write-Host "⚠️ DNS resolves only $Average domains per second!"
 	}
+	Write-Progress -Completed " "
 	exit 0 # success
 } catch {
 	"⚠️ Error in line $($_.InvocationInfo.ScriptLineNumber): $($Error[0])"

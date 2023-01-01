@@ -44,17 +44,17 @@ try {
 		} 
 	}
 	if ($Total -eq 0) {
-        	"⚠️ No swap space configured!"
+        	Write-Host "⚠️ No swap space configured!"
 	} elseif ($Free -eq 0) {
-		"⚠️ Swap space of $(MB2String $Total) is full!"
+		Write-Host "⚠️ Swap space of $(MB2String $Total) is full!"
 	} elseif ($Free -lt $MinLevel) {
-		"⚠️ Swap space of $(MB2String $Total) is nearly full ($(MB2String $Free) free)!"
+		Write-Host "⚠️ Swap space of $(MB2String $Total) is nearly full ($(MB2String $Free) free)!"
 	} elseif ($Used -eq 0) {
-		"✅ Swap space with $(MB2String $Total) reserved"
+		Write-Host "✅ Swap space with $(MB2String $Total) reserved"
 	} elseif ($Used -lt $Free) {
-		"✅ Swap space uses $(MB2String $Used) of $(MB2String $Total)"
+		Write-Host "✅ Swap space uses $(MB2String $Used) of $(MB2String $Total)"
 	} else {
-		"✅ Swap space has $(MB2String $Free) of $(MB2String $Total) free"
+		Write-Host "✅ Swap space has $(MB2String $Free) of $(MB2String $Total) free"
 	}
 	exit 0 # success
 } catch {

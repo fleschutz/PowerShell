@@ -16,9 +16,9 @@ try {
 	if ($IsLinux) {
 		# TODO
 	} else {
-		$Connections = (Get-VPNConnection)
+		$Connections = Get-VPNConnection
 		foreach($Connection in $Connections) {
-			"✅ VPN '$($Connection.Name)' is $($Connection.ConnectionStatus)"
+			Write-Host "✅ VPN '$($Connection.Name)' is $($Connection.ConnectionStatus)"
 			$NoVPN = $false
 		}
 	}

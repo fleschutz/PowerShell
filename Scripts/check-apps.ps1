@@ -15,7 +15,7 @@ try {
 	if ($IsLinux) {
 		# TODO
 	} else {
-		Write-Progress "⏳ (1/2) Querying installed apps (for current user only)..."
+		Write-Progress "⏳ Querying installed apps..."
 		$Apps = Get-AppxPackage
 		[int]$NumInstalled = $Apps.Count
 		[int]$NumIssues = 0
@@ -23,12 +23,12 @@ try {
 			if ($App.Status -ne "Ok") { $NumIssues++ }
 		}
 
-		Write-Progress "⏳ (2/2) Querying available updates..."
+		Write-Progress "⏳ Querying available updates..."
 		$NumUpdates = (winget upgrade --include-unknown).Count - 5
 
-		Write-Progress -Completed " "
 		[int]$NumErrors = (Get-AppxLastError)
-		"✅ $NumInstalled apps installed, $NumIssues non-ok, $NumErrors errors, $NumUpdates updates available"
+		Write-Host "✅ $NumInstalled apps installed, $NumIssues non-ok, $NumErrors errors, $NumUpdates updates available"
+		Write-Progress -Completed " "
 	}
 	exit 0 # success
 } catch {

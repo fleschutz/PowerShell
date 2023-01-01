@@ -17,11 +17,11 @@
 param([string]$hosts = "amazon.com,bing.com,cnn.com,dropbox.com,facebook.com,google.com,live.com,twitter.com,youtube.com")
 
 try {
-	Write-Progress "⏳ (1/2) Pinging $hosts..."
+	Write-Progress "⏳ Pinging $hosts..."
 	$HostsArray = $hosts.Split(",")
 	$Pings = Test-Connection -count 1 -computerName $HostsArray
 
-	Write-Progress "⏳ (2/2) Calculating results..."
+	Write-Progress "⏳ Calculating results..."
 	[int]$Min = 9999999
 	[int]$Max = [int]$Avg = 0
 	foreach($Ping in $Pings) {
@@ -32,8 +32,8 @@ try {
 	}
 	$Avg /= $Pings.count
 
+	Write-Host "✅ Ping is $($Avg)ms average, $($Min)ms min, $($Max)ms max"
 	Write-Progress -Completed " "
-	"✅ Ping is $($Avg)ms average, $($Min)ms min, $($Max)ms max"
 	exit 0 # success
 } catch {
 	"⚠️ Error in line $($_.InvocationInfo.ScriptLineNumber): $($Error[0])"

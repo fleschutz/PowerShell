@@ -7,6 +7,7 @@
 	Specifies the minimum warning level (10 GB by default)
 .EXAMPLE
 	PS> ./check-drives
+	✅ Drive C uses 87GB of 249GB
 .LINK
 	https://github.com/fleschutz/PowerShell
 .NOTES
