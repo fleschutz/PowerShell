@@ -32,7 +32,7 @@ try {
 	}
 	$Avg /= $Pings.count
 
-	Write-Host "✅ Ping is $($Min)ms min, $($Max)ms max, and $($Avg)ms average."
+	Write-Host "✅ Ping is $($Min)ms min, $($Max)ms max, and $($Avg)ms average"
 	Write-Progress -Completed " " 
 	exit 0 # success
 } catch {
