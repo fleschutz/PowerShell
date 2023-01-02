@@ -7,7 +7,7 @@
 	Specifies the hosts to check, seperated by comma (default is: amazon.com,bing.com,cnn.com,dropbox.com,facebook.com,google.com,live.com,twitter.com,youtube.com)
 .EXAMPLE
 	PS> ./check-ping
-	✅ Ping is 25ms average, 13ms min, 109ms max
+	✅ Ping is 13ms min, 109ms max, and 25ms average.
 .LINK
 	https://github.com/fleschutz/PowerShell
 .NOTES
@@ -32,8 +32,8 @@ try {
 	}
 	$Avg /= $Pings.count
 
-	Write-Host "✅ Ping is $($Avg)ms average, $($Min)ms min, $($Max)ms max"
-	Write-Progress -Completed " "
+	Write-Host "✅ Ping is $($Min)ms min, $($Max)ms max, and $($Avg)ms average."
+	Write-Progress -Completed " " 
 	exit 0 # success
 } catch {
 	"⚠️ Error in line $($_.InvocationInfo.ScriptLineNumber): $($Error[0])"
