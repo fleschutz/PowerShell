@@ -5,6 +5,7 @@
 	This PowerShell script measures and prints the DNS resolution speed by using 200 popular domains.
 .EXAMPLE
 	PS> ./check-dns
+	✅ DNS resolution is 440.5 domains per second
 .LINK
 	https://github.com/fleschutz/PowerShell
 .NOTES
@@ -26,12 +27,10 @@ try {
 	[float]$Elapsed = $StopWatch.Elapsed.TotalSeconds
 
 	$Average = [math]::round($NumRows / $Elapsed, 1)
-	if ($Average -gt 100.0) {
-		Write-Host "✅ DNS resolves excellent $Average domains per second"
-	} elseif ($Average -gt 10.0) {
-		Write-Host "✅ DNS resolves $Average domains per second"
+	if ($Average -gt 10.0) {
+		Write-Host "✅ DNS resolution is $Average domains per second"
 	} else {  
-		Write-Host "⚠️ DNS resolves only $Average domains per second!"
+		Write-Host "⚠️ DNS resolution is $Average domains per second only!"
 	}
 	Write-Progress -Completed " "
 	exit 0 # success
