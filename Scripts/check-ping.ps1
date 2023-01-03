@@ -2,12 +2,12 @@
 .SYNOPSIS
 	Checks the ping latency 
 .DESCRIPTION
-	This PowerShell script checks the ping latency from the local computer to some Internet hosts.
+	This PowerShell script checks the ping latency from the local computer to the given hosts.
 .PARAMETER hosts
-	Specifies the hosts to check, seperated by comma (default is: amazon.com,bing.com,cnn.com,dropbox.com,facebook.com,google.com,live.com,twitter.com,youtube.com)
+	Specifies the hosts to check, seperated by commata (default is: amazon.com,bing.com,cnn.com,dropbox.com,facebook.com,google.com,live.com,twitter.com,youtube.com)
 .EXAMPLE
 	PS> ./check-ping
-	✅ Ping is 13ms min, 109ms max, and 25ms average.
+	✅ Ping latency is 13ms...109ms, 25ms average.
 .LINK
 	https://github.com/fleschutz/PowerShell
 .NOTES
@@ -19,7 +19,7 @@ param([string]$hosts = "amazon.com,bing.com,cnn.com,dropbox.com,facebook.com,goo
 try {
 	Write-Progress "⏳ Pinging $hosts..."
 	$HostsArray = $hosts.Split(",")
-	$Pings = Test-Connection -count 1 -computerName $HostsArray
+	$Pings = Test-Connection -computerName $HostsArray -count 1
 
 	Write-Progress "⏳ Calculating results..."
 	[int]$Min = 9999999
@@ -32,7 +32,7 @@ try {
 	}
 	$Avg /= $Pings.count
 
-	Write-Host "✅ Ping is $($Min)ms min, $($Max)ms max, and $($Avg)ms average"
+	Write-Host "✅ Ping latency is $($Min)ms...$($Max)ms, $($Avg)ms average"
 	Write-Progress -Completed " " 
 	exit 0 # success
 } catch {
