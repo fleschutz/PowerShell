@@ -16,7 +16,7 @@ try {
 	if ($IsLinux) {
 		$Path = Resolve-Path "~/Templates"
 	} else {
-		$Path = [Environment]::GetFolderPath('CommonTemplates')
+		$Path = [Environment]::GetFolderPath('Templates')
 	}
 	if (Test-Path "$Path" -pathType container) {
 		Set-Location "$Path"
