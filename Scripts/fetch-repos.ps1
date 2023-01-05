@@ -24,10 +24,10 @@ try {
 
 	Write-Host "⏳ (2) Checking parent folder...        " -noNewline
 	if (-not(Test-Path "$ParentDir" -pathType container)) { throw "Can't access folder: $ParentDir" }
-	$ParentDirName = (Get-Item "$ParentDir").Name
 	$Folders = (Get-ChildItem "$ParentDir" -attributes Directory)
 	$NumFolders = $Folders.Count
-	Write-Host "$NumFolders subfolders"
+	$ParentDirName = (Get-Item "$ParentDir").Name
+	Write-Host "$NumFolders subfolders in 📂$ParentDirName"
 
 	[int]$Step = 2
 	foreach ($Folder in $Folders) {
