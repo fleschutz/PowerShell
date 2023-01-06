@@ -22,7 +22,7 @@ try {
 	& git --version
 	if ($lastExitCode -ne "0") { throw "Can't execute 'git' - make sure Git is installed and available" }
 
-	Write-Host "⏳ (2/11) Checking path...                 " -noNewline
+	Write-Host "⏳ (2/11) Checking repo path...            " -noNewline
 	$FullPath = Resolve-Path "$RepoDir"
 	if (!(Test-Path "$FullPath" -pathType Container)) { throw "Can't access folder: $FullPath" }
 	"$FullPath"
@@ -31,11 +31,11 @@ try {
 	if (!(Test-Path "$FullPath/.git" -pathType container)) { throw "Can't access folder: $FullPath/.git" }
 	"OK"
 
-	Write-Host "⏳ (4/11) Query remote URL...              " -noNewline
+	Write-Host "⏳ (4/11) Querying remote URL...           " -noNewline
 	& git -C "$FullPath" remote get-url origin
 	if ($lastExitCode -ne "0") { throw "'git remote get-url origin' failed with exit code $lastExitCode" }
 
-	Write-Host "⏳ (5/11) Query current branch...          " -noNewline
+	Write-Host "⏳ (5/11) Querying current branch...       " -noNewline
 	& git -C "$FullPath" branch --show-current
 	if ($lastExitCode -ne "0") { throw "'git branch --show-current' failed with exit code $lastExitCode" }
 
@@ -44,25 +44,25 @@ try {
 	if ($lastExitCode -ne "0") { throw "'git branch --show-current' failed with exit code $lastExitCode" }
 	Write-Host "OK"
 
-	Write-Host "⏳ (7/11) Query latest tag...              " -noNewline
+	Write-Host "⏳ (7/11) Querying latest tag...           " -noNewline
         $LatestTagCommitID = (git -C "$FullPath" rev-list --tags --max-count=1)
         $LatestTagName = (git -C "$FullPath" describe --tags $LatestTagCommitID)
         Write-Host "$LatestTagName (commit $LatestTagCommitID)"
 
-	Write-Host "⏳ (8/11) Verify data integrity..."
+	Write-Host "⏳ (8/11) Verifying data integrity..."
 	& git -C "$FullPath" fsck 
 	if ($lastExitCode -ne "0") { throw "'git fsck' failed with exit code $lastExitCode" }
 
-	Write-Host "⏳ (9/11) Run maintenance tasks..."
+	Write-Host "⏳ (9/11) Running maintenance tasks..."
 	& git -C "$FullPath" maintenance run
 	if ($lastExitCode -ne "0") { throw "'git maintenance run' failed with exit code $lastExitCode" }
 
-	Write-Host "⏳ (10/11) Query submodule status...        " -noNewline
+	Write-Host "⏳ (10/11) Querying submodule status...    " -noNewline
 	& git -C "$FullPath" submodule status
 	if ($lastExitCode -ne "0") { throw "'git submodule status' failed with exit code $lastExitCode" }
 	" "
 
-	Write-Host "⏳ (11/11) Query repository status...      " -noNewline
+	Write-Host "⏳ (11/11) Querying repo status...         " -noNewline
 	& git -C "$FullPath" status --short 
 	if ($lastExitCode -ne "0") { throw "'git status --short' failed with exit code $lastExitCode" }
 	" "
