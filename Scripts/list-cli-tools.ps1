@@ -69,6 +69,7 @@ function ListCmdTools {
 	Test basenc		"--version"
 	Test bash		"--version"
 	Test bc		"--version"
+	Test bcdedit	""
 	Test bunzip2	"--version"
 	Test bzcat		"--version"
 	Test bzip2		"--version"
