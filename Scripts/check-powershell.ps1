@@ -17,10 +17,10 @@ try {
 	$NumModules = (Get-Module).Count
 	$NumAliases = (Get-Alias).Count
 	if ($IsLinux) {
-		"✅ PowerShell $Version ($Edition edition) with $NumModules modules and $NumAliases aliases"
+		"✅ PowerShell $Version ($Edition edition, $NumModules modules, $NumAliases aliases)"
 	} else {
 		$NumCmdlets = (Get-Command -Command-Type cmdlet).Count
-		"✅ PowerShell $Version ($Edition edition) with $NumModules modules, $NumCmdlets cmdlets and $NumAliases aliases"
+		"✅ PowerShell $Version ($Edition edition, $NumModules modules, $NumCmdlets cmdlets, $NumAliases aliases)"
 	}
 	exit 0 # success
 } catch {
