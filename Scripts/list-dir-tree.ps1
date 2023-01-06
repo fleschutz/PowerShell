@@ -1,6 +1,6 @@
 ﻿<#
 .SYNOPSIS
-	Lists the directory tree content
+	Lists a directory tree
 .DESCRIPTION
 	This PowerShell script lists all files and folders in a directory tree.
 .PARAMETER DirTree
@@ -27,7 +27,11 @@ function ListDir { param([string]$Directory, [int]$Depth)
 			ListDir "$Directory\$Filename" $Depth
 			$global:Dirs++
 		} else {
-			Write-Host "├ $Filename ($($Item.Length) bytes)"
+			if ($Filename -like "*.iso") { $Icon = "📀"
+			} elseif ($Filename -like "*.mp3") { $Icon = "🎵"
+			} elseif ($Filename -like "*.epub") { $Icon = "📓"
+			} else { $Icon = "📄" }
+			Write-Host "├$($Icon)$Filename ($($Item.Length) bytes)"
 			$global:Files++
 			$global:Bytes += $Item.Length
 		}
@@ -39,7 +43,7 @@ try {
 	[int]$global:Files = 0
 	[int]$global:Bytes = 0
 	ListDir $DirTree 0
-	"($($global:Dirs) folders, $($global:Files) files, $($global:Bytes) bytes total)"
+	"(Total: $($global:Dirs) folders, $($global:Files) files, $($global:Bytes) bytes)"
 	exit 0 # success
 } catch {
 	"⚠️ Error in line $($_.InvocationInfo.ScriptLineNumber): $($Error[0])"
