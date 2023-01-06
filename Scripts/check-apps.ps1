@@ -1,6 +1,6 @@
 ﻿<#
 .SYNOPSIS
-	Query application details
+	Query app details
 .DESCRIPTION
 	This PowerShell script queries application details and list it.
 .EXAMPLE
@@ -18,16 +18,14 @@ try {
 		Write-Progress "⏳ Querying installed apps..."
 		$Apps = Get-AppxPackage
 		[int]$NumInstalled = $Apps.Count
-		[int]$NumIssues = 0
-		foreach($App in $Apps) {
-			if ($App.Status -ne "Ok") { $NumIssues++ }
-		}
+		[int]$NumNonOk = 0
+		foreach($App in $Apps) { if ($App.Status -ne "Ok") { $NumNonOk++ } }
 
 		Write-Progress "⏳ Querying available updates..."
 		$NumUpdates = (winget upgrade --include-unknown).Count - 5
 
 		[int]$NumErrors = (Get-AppxLastError)
-		Write-Host "✅ $NumInstalled apps installed, $NumIssues non-ok, $NumErrors errors, $NumUpdates updates available"
+		Write-Host "✅ $NumInstalled apps ($NumNonOk non-ok, $NumErrors errors, $NumUpdates updates available)"
 		Write-Progress -Completed " "
 	}
 	exit 0 # success
