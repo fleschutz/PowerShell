@@ -34,6 +34,7 @@
 & "$PSScriptRoot/check-pending-reboot.ps1"
 " "
 & "$PSScriptRoot/write-green.ps1" "   N E T W O R K"
+& "$PSScriptRoot/check-firewall"
 & "$PSScriptRoot/check-ping.ps1"
 & "$PSScriptRoot/check-dns.ps1"
 & "$PSScriptRoot/check-vpn.ps1"
