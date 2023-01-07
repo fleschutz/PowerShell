@@ -36,9 +36,9 @@ function CopyFile { param([string]$SourcePath, [string]$TargetDir, [int]$Date, [
 	}
 	$TargetPath = "$TargetDir/$Year/$MonthDir/$Filename"
 	if (Test-Path "$TargetPath" -pathType leaf) {
-		"⏳ Skipping existing $($Filename)..."
+		Write-Host "⏳ Skipping existing $Year/$MonthDir/$Filename..."
 	} else {
-		"⏳ Copying $Filename to $Year/$MonthDir..."
+		Write-Host "⏳ Copying $Filename to $Year/$MonthDir..."
 		New-Item -path "$TargetDir" -name "$Year" -itemType "directory" -force | out-null
 		New-Item -path "$TargetDir/$Year" -name "$MonthDir" -itemType "directory" -force | out-null
 		Copy-Item "$SourcePath" "$TargetPath" -force
@@ -75,7 +75,7 @@ try {
 			$Array = $Filename.split("_")
 			CopyFile "$File" "$TargetDir" $Array[1] "$Filename"
 		} else {
-			"⏳ Skipping $Filename with unknown filename format..."
+			Write-Host "⏳ Skipping $Filename with unknown filename format..."
 		}
 	}
 	[int]$Elapsed = $StopWatch.Elapsed.TotalSeconds
