@@ -1,8 +1,8 @@
 ﻿<#
 .SYNOPSIS
-	Checks the time zone setting
+	Checks the time zone
 .DESCRIPTION
-	This PowerShell script determines and prints the current time zone.
+	This PowerShell script queries the user's time zone and prints it.
 .EXAMPLE
 	PS> ./check-time-zone
 .LINK
@@ -16,7 +16,7 @@ try {
 	$Time = $((Get-Date).ToShortTimeString())
 	$TZ = (Get-Timezone)
 	if ($TZ.SupportsDaylightSavingTime) { $DST=" & +01:00:00 DST" } else { $DST="" }
-	"✅ $Time in $($TZ.Id) (UTC+$($TZ.BaseUtcOffset)$DST)."
+	Write-Host "✅ $Time in $($TZ.Id) (UTC+$($TZ.BaseUtcOffset)$DST)."
 	exit 0 # success
 } catch {
 	"⚠️ Error in line $($_.InvocationInfo.ScriptLineNumber): $($Error[0])"

@@ -1,8 +1,8 @@
 ﻿<#
 .SYNOPSIS
-	Check uptime 
+	Checks the uptime 
 .DESCRIPTION
-	This PowerShell script queries and prints the uptime.
+	This PowerShell script queries the computer's uptime and prints it.
 .EXAMPLE
 	PS> ./check-uptime
 .LINK
@@ -13,32 +13,33 @@
 
 try {
 	if ($IsLinux) {
-		$Uptime = (get-uptime)
+		$Uptime = (Get-Uptime)
 	} else {
 		$BootTime = Get-WinEvent -ProviderName eventlog | Where-Object {$_.Id -eq 6005} | Select-Object TimeCreated -First 1 
 		$Uptime = New-TimeSpan -Start $BootTime.TimeCreated.Date -End (Get-Date)
 	}
-	$Days = $Uptime.Days
-	$Hours = $Uptime.Hours
-	$Minutes = $Uptime.Minutes 
-
 	$Reply = "Up for "
+	$Days = $Uptime.Days
 	if ($Days -eq "1") {
 		$Reply += "1 day, "
 	} elseif ($Days -ne "0") {
 		$Reply += "$Days days, "
 	}
+
+	$Hours = $Uptime.Hours
 	if ($Hours -eq "1") {
 		$Reply += "1 hour, "
 	} elseif ($Hours -ne "0") {
 		$Reply += "$Hours hours, "
 	}
+
+	$Minutes = $Uptime.Minutes 
 	if ($Minutes -eq "1") {
 		$Reply += "1 minute"
 	} else {
 		$Reply += "$Minutes minutes"
 	}
-	"✅ $Reply."
+	Write-Host "✅ $Reply."
 	exit 0 # success
 } catch {
 	"⚠️ Error in line $($_.InvocationInfo.ScriptLineNumber): $($Error[0])"
