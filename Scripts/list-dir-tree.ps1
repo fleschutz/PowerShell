@@ -15,22 +15,32 @@
 
 param([string]$DirTree = "$PWD")
 
+function GetFileIcon { param([string]$Suffix)
+	switch ($Suffix) {
+	".csv"	{ return "📊" }
+	".epub"	{ return "📓" }
+	".gif"	{ return "🎨" }
+	".iso"	{ return "📀" }
+	".jpg"	{ return "🎨" }
+	".mp3"	{ return "🎵" }
+	".mkv"	{ return "🎬" }
+	default { return "📄" }
+	}
+}
+
 function ListDir { param([string]$Directory, [int]$Depth)
 	$Depth++
 	$Items = Get-ChildItem -path $Directory
 	foreach($Item in $Items) {
 		$Filename = $Item.Name
-		for ($i = 1; $i -lt $Depth; $i++) { Write-Host "│  " -noNewline }
+		for ($i = 1; $i -lt $Depth; $i++) { Write-Host "│ " -noNewline }
 		if ($Item.Mode -like "d*") {
-			Write-Host "├─" -noNewline
+			Write-Host "├" -noNewline
 			Write-Host -foregroundColor green "📂$Filename"
 			ListDir "$Directory\$Filename" $Depth
 			$global:Dirs++
 		} else {
-			if ($Filename -like "*.iso") { $Icon = "📀"
-			} elseif ($Filename -like "*.mp3") { $Icon = "🎵"
-			} elseif ($Filename -like "*.epub") { $Icon = "📓"
-			} else { $Icon = "📄" }
+			$Icon = GetFileIcon $Item.Extension
 			Write-Host "├$($Icon)$Filename ($($Item.Length) bytes)"
 			$global:Files++
 			$global:Bytes += $Item.Length
