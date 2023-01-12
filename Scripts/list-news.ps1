@@ -1,6 +1,6 @@
 ﻿<#
 .SYNOPSIS
-	Lists the news
+	List news
 .DESCRIPTION
 	This PowerShell script lists the latest news by using RSS (Really Simple Syndication) feeds.
 .PARAMETER RSS_URL
@@ -36,7 +36,7 @@ try {
 	$Date = $Date -Replace "Sat, ",""
 	$Date = $Date -Replace "Sun, ",""
 	$Copyright = $Content.rss.channel.copyright
-	"<$Source|$Date|$Copyright>"
+	"($Source|$Date|$Copyright)"
 	exit 0 # success
 } catch {
 	"⚠️ Error in line $($_.InvocationInfo.ScriptLineNumber): $($Error[0])"
