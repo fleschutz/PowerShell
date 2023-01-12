@@ -5,7 +5,7 @@
 	This PowerShell script queries and prints firewall details.
 .EXAMPLE
 	PS> ./check-firewall
-	✅ AMD Ryzen 5 5500U with Radeon Graphics (CPU0, 2100MHz, 31.3°C)
+	✅ Firewall enabled
 .LINK
 	https://github.com/fleschutz/PowerShell
 .NOTES
@@ -14,7 +14,8 @@
 
 try {
 	if ($IsLinux) {
-		# TODO
+		Write-Host "✅ Firewall " -noNewline
+		& sudo ufw status
 	} else {
 		$enabled = (gp 'HKLM:\SYSTEM\ControlSet001\Services\SharedAccess\Parameters\FirewallPolicy\DomainProfile').EnableFirewall
 		if ($enabled) {
