@@ -118,8 +118,9 @@ try {
 	if ($Password -eq "" ) { $Password = read-host "Enter password"	}
 	$StopWatch = [system.diagnostics.stopwatch]::startNew()
 
-	$PasswordBase64 = [System.Convert]::ToBase64String($Password)
-	EncryptFile "$Path" -Algorithm AES -KeyAsPlainText $PasswordBase64 -RemoveSource
+	[char[]]$PasswordAsArray = $Password
+	$PasswordAsBase64 = [System.Convert]::ToBase64String($PasswordAsArray)
+	EncryptFile "$Path" -Algorithm AES -KeyAsPlainText $PasswordAsBase64 -RemoveSource
 
 	[int]$Elapsed = $StopWatch.Elapsed.TotalSeconds
 	"✔️  file encrypted in $Elapsed sec"
