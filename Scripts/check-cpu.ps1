@@ -48,14 +48,21 @@ try {
 	if ($IsLinux) {
 		$Name = $PSVersionTable.OS
 		if ($Name -like "*-generic *") {
-			$Arch = "x86"
+			if ([System.Environment]::Is64BitOperatingSystem) {
+				$Arch = "x86-64"
+			} else {
+				$Arch = "x86-32"
+			}
 		} elseif ($Name -like "*-raspi *") {
-			$Arch = "ARM"
+			if ([System.Environment]::Is64BitOperatingSystem) {
+				$Arch = "ARM64"
+			} else {
+				$Arch = "ARM32"
+			}
 		} else {
 			$Arch = ""
 		}
-		if ([System.Environment]::Is64BitOperatingSystem) { $Bits = "64-bit" } else { $Bits = "32-bit" }
-		$CPUName = "$Arch $Bits CPU"
+		$CPUName = "$Arch CPU"
 		$DeviceID = ""
 		$Speed = ""
 		$Socket = ""
