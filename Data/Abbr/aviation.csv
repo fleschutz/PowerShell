@@ -469,8 +469,6 @@ VOLMET,Meteorological Information for Aircraft in Flight
 VOR,VHF Omni-directional Receiver
 VORTAC,VOR -TACAN combination
 VREF,1.3 times the stalling speed of the aircraft in the stated landing configuration and at the prevailing aircraft weight
-VRR,Voice Recognition and Response
-VRS,Voice Recognition System
 VS,"Stall speed, defined as the minimum steady flight speed at which the airplane is controllable"
 VSBY,Visibility
 VSP,Vertical Speed

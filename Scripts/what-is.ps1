@@ -25,7 +25,7 @@ try {
 		foreach($Row in $Table) {
 			if ($Row.Abbr -eq $abbr) {
 				$Basename = (Get-Item "$File").Basename -Replace "_"," "
-				"🔎 $($Row.Abbr) may refer to $($Row.Term) in $Basename."
+				"💡 In $Basename $($Row.Abbr) may refer to $($Row.Term)."
 				$Missing = $false
 			}
 		}
