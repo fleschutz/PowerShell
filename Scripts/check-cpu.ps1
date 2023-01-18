@@ -49,9 +49,9 @@ try {
 		$Name = $PSVersionTable.OS
 		if ($Name -like "*-generic *") {
 			if ([System.Environment]::Is64BitOperatingSystem) {
-				$Arch = "x86-64"
+				$Arch = "x64"
 			} else {
-				$Arch = "x86-32"
+				$Arch = "x86"
 			}
 		} elseif ($Name -like "*-raspi *") {
 			if ([System.Environment]::Is64BitOperatingSystem) {
