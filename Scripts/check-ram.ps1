@@ -5,7 +5,7 @@
 	This PowerShell script queries and prints details of the installed RAM.
 .EXAMPLE
 	PS> ./check-ram
-	✅ 8GB DDR4 RAM (3200MHz, 1.2V) at P0 CHANNEL A/DIMM 0 by Samsung
+	✅ 8GB DDR4 RAM @ 3200MHz (1.2V) in P0 CHANNEL A/DIMM 0 by Samsung
 .LINK
 	https://github.com/fleschutz/PowerShell
 .NOTES
@@ -69,7 +69,7 @@ try {
 			[float]$Voltage = $Bank.ConfiguredVoltage / 1000.0
 			$Manufacturer = $Bank.Manufacturer
 			$Location = "$($Bank.BankLabel)/$($Bank.DeviceLocator)"
-			Write-Host "✅ $Capacity $Type ($($Speed)MHz, $($Voltage)V) at $Location by $Manufacturer"
+			Write-Host "✅ $Capacity $Type @ $($Speed)MHz ($($Voltage)V) in $Location by $Manufacturer"
 		}
 	}
 	exit 0 # success
