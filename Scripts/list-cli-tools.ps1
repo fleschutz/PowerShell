@@ -208,6 +208,7 @@ function ListCmdTools {
 	Test nroff		"--version"
 	Test nslookup	""
 	Test openssl	""
+	Test pandoc       "--version"
 	Test passwd		"--status"
 	Test paste		"--version"
 	Test perl		"--version"
