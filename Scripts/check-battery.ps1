@@ -1,10 +1,11 @@
 ﻿<#
 .SYNOPSIS
-	Checks the battery status
+	Checks the battery
 .DESCRIPTION
-	This PowerShell script checks and prints the battery status.
+	This PowerShell script queries the status of the system battery and prints it.
 .EXAMPLE
 	PS> ./check-battery
+	✅ Battery 21%, 54 min. remaining
 .LINK
 	https://github.com/fleschutz/PowerShell
 .NOTES
@@ -13,25 +14,34 @@
 
 try {
 	if ($IsLinux) {
-		# TODO
+		$Reply = "✅ AC powered" # TODO, just guessing :-)
 	} else {
 		Add-Type -Assembly System.Windows.Forms
 		$Details = [System.Windows.Forms.SystemInformation]::PowerStatus
-		$Status = "✅"
+		[int]$Percent = 100 * $Details.BatteryLifePercent
+		[int]$Remaining = $Details.BatteryLifeRemaining / 60
 		switch ($Details.PowerLineStatus) {
-		"Online"  { $Power = "AC powered" }
-		"Offline" { $Power = "No AC power" }
+		"Online"  {
+			if ($Details.BatteryChargeStatus -eq "NoSystemBattery") {
+				$Reply = "✅ AC powered"
+			} elseif ($Percent -eq 100) {
+				$Reply = "✅ Battery $Percent% full"
+			} else {
+				$Reply = "✅ Battery $Percent%, charging..."
+			}
 		}
-		if ($Details.BatteryChargeStatus -eq "NoSystemBattery") {
-			$Battery = "no system battery"
-		} else {
-			[int]$Percent = 100 * $Details.BatteryLifePercent
-			[int]$Remaining = $Details.BatteryLifeRemaining / 60
-			if ($Remaining -lt 30) { $Status = "⚠️" }
-			$Battery = "$Percent% battery life, $Remaining min. left"
+		"Offline" {
+			if ($Percent -eq 100) {
+				$Reply = "✅ Battery $Percent% full, $Remaining min. remaining"
+			} elseif ($Remaining -gt 30) {
+				$Reply = "✅ Battery $Percent%, $Remaining min. remaining"
+			} else {
+				$Reply = "⚠️ Battery $Percent%, only $Remaining min. remaining"
+			}
 		}
-		Write-Host "$Status $Power, $Battery"
+		}
 	}
+	Write-Host $Reply
 	exit 0 # success
 } catch {
 	"⚠️ Error in line $($_.InvocationInfo.ScriptLineNumber): $($Error[0])"
