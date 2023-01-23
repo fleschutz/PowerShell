@@ -12,7 +12,7 @@
 #>
 
 $Format="csv" # cap, csv, geojson, kml, kmlraw, quakeml, text, xml
-$MinMagnitude=5.8
+$MinMagnitude=5.7
 $OrderBy="magnitude" # time, time-asc, magnitude, magnitude-asc
 
 function ListEarthquakes { 
@@ -22,6 +22,7 @@ function ListEarthquakes {
 		[int]$Depth = $Quake.depth
 		New-Object PSObject -Property @{ Mag=$Quake.mag; Depth="$Depth km"; Location=$Quake.place; Time=$Quake.time }
 	}
+	Write-Progress -completed "Loading finished."
 }
  
 try {

@@ -39,8 +39,9 @@ try {
 	} else {
 		$Devices = $(smartctl --scan-open)
 	}
+
+	Write-Progress "⏳ Querying S.M.A.R.T devices..."
 	foreach($Device in $Devices) {
-		Write-Progress "⏳ Querying S.M.A.R.T devices..."
 		$Array = $Device.split(" ")
 		$Device = $Array[0]
 		if ("$Device" -eq "#") {
@@ -67,7 +68,7 @@ try {
 		if ($Details.smart_status.passed) { $Status = "passed" } else { $Status = "FAILED" }
 		Write-Host "✅ $($Capacity)$ModelName via $Protocol ($Hours hours, $($PowerOn)x on, v$($Firmware), $($Temp)°C, selftest $Status)"
 	}
-	Write-Progress -Completed " "
+	Write-Progress -completed "Querying S.M.A.R.T devices finished."
 	exit 0 # success
 } catch {
 	"⚠️ Error in line $($_.InvocationInfo.ScriptLineNumber): $($Error[0])"

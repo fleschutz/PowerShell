@@ -33,6 +33,7 @@ function Bytes2String { param([int64]$Bytes)
 }
 
 try {
+	Write-Progress "⏳ Querying drives..."
 	$Drives = Get-PSDrive -PSProvider FileSystem 
 	foreach($Drive in $Drives) {
 		$ID = $Drive.Name
@@ -53,6 +54,7 @@ try {
 			Write-Host "✅ Drive $ID has $(Bytes2String $Free) of $(Bytes2String $Total) free"
 		}
 	}
+	Write-Progress -completed "Querying drives finished."
 	exit 0 # success
 } catch {
 	"⚠️ Error in line $($_.InvocationInfo.ScriptLineNumber): $($Error[0])"
