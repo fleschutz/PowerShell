@@ -45,6 +45,7 @@ function GetDescription { param([string]$Text)
 	"Patchy light drizzle"     	{ return "💧 patchy light drizzle" }
 	"Patchy light rain"     	{ return "💧 patchy light rain" }
 	"Patchy light snow"		{ return "❄️ patchy light snow" }
+	"Patchy moderate snow"		{ return "❄️ patchy moderate snow" }
 	"Patchy rain possible"  	{ return "💧 patchy rain possible" }
 	"Sunny"				{ return "☀️ sunny" }
 	"Thundery outbreaks possible"	{ return "⚡️thundery outbreaks possible" }
