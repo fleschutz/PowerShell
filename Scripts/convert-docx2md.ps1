@@ -1,0 +1,1 @@
+gci -r -i *.docx |foreach{$md=$_.directoryname+"\"+$_.basename+".md";pandoc -f docx -s $_.name -o $md}
