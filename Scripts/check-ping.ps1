@@ -17,7 +17,7 @@
 param([string]$hosts = "amazon.com,bing.com,cnn.com,dropbox.com,facebook.com,google.com,live.com,twitter.com,youtube.com")
 
 try {
-	Write-Progress "⏳ Pinging $hosts..."
+	Write-Progress "⏳ Pinging hosts in parallel..."
 	$HostsArray = $hosts.Split(",")
 	$Pings = Test-Connection -computerName $HostsArray -count 1
 
@@ -33,7 +33,7 @@ try {
 	$Avg /= $Pings.count
 
 	Write-Host "✅ Ping latency is $($Min)ms...$($Max)ms, $($Avg)ms average"
-	Write-Progress -Completed " " 
+	Write-Progress -Completed "Ping finished." 
 	exit 0 # success
 } catch {
 	"⚠️ Error in line $($_.InvocationInfo.ScriptLineNumber): $($Error[0])"

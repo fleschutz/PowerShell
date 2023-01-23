@@ -32,7 +32,7 @@ try {
 	} else {  
 		Write-Host "⚠️ DNS resolution is $Average domains per second only!"
 	}
-	Write-Progress -Completed " "
+	Write-Progress -completed "DNS checked."
 	exit 0 # success
 } catch {
 	"⚠️ Error in line $($_.InvocationInfo.ScriptLineNumber): $($Error[0])"

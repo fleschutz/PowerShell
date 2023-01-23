@@ -2,7 +2,7 @@
 .SYNOPSIS
 	Checks the VPN connection
 .DESCRIPTION
-	This PowerShell script queries and prints the status of any VPN connection.
+	This PowerShell script queries status of the VPN connections and prints it.
 .EXAMPLE
 	PS> ./check-vpn
 .LINK
@@ -22,7 +22,7 @@ try {
 			$NoVPN = $false
 		}
 	}
-	if ($NoVPN) { "⚠️ No VPN connection" }
+	if ($NoVPN) { Write-Host "⚠️ No VPN connection" }
 	exit 0 # success
 } catch {
 	"⚠️ Error in line $($_.InvocationInfo.ScriptLineNumber): $($Error[0])"

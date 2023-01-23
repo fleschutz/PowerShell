@@ -1,8 +1,8 @@
 ﻿<#
 .SYNOPSIS
-	Check the firewall
+	Checks the firewall
 .DESCRIPTION
-	This PowerShell script queries and prints firewall details.
+	This PowerShell script queries the status of the firewall and prints it.
 .EXAMPLE
 	PS> ./check-firewall
 	✅ Firewall enabled
@@ -24,7 +24,6 @@ try {
 			Write-Host "⚠️ Firewall disabled"
 		}
 	}
-
 	exit 0 # success
 } catch {
 	"⚠️ Error in line $($_.InvocationInfo.ScriptLineNumber): $($Error[0])"

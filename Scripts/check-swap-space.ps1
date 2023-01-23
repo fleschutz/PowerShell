@@ -2,7 +2,7 @@
 .SYNOPSIS
 	Checks the swap space
 .DESCRIPTION
-	This PowerShell script checks the free swap space.
+	This PowerShell script queries the status of the swap space and prints it.
 .PARAMETER MinLevel
 	Specifies the minimum level (10 GB by default)
 .EXAMPLE
@@ -44,18 +44,19 @@ try {
 		} 
 	}
 	if ($Total -eq 0) {
-        	Write-Host "⚠️ No swap space configured!"
+        	$Reply = "⚠️ No swap space configured!"
 	} elseif ($Free -eq 0) {
-		Write-Host "⚠️ Swap space of $(MB2String $Total) is full!"
+		$Reply = "⚠️ Swap space of $(MB2String $Total) is full!"
 	} elseif ($Free -lt $MinLevel) {
-		Write-Host "⚠️ Swap space of $(MB2String $Total) is nearly full ($(MB2String $Free) free)!"
+		$Reply = "⚠️ Swap space of $(MB2String $Total) is nearly full ($(MB2String $Free) free)!"
 	} elseif ($Used -eq 0) {
-		Write-Host "✅ Swap space with $(MB2String $Total) reserved"
+		$Reply = "✅ Swap space with $(MB2String $Total) reserved"
 	} elseif ($Used -lt $Free) {
-		Write-Host "✅ Swap space uses $(MB2String $Used) of $(MB2String $Total)"
+		$Reply = "✅ Swap space uses $(MB2String $Used) of $(MB2String $Total)"
 	} else {
-		Write-Host "✅ Swap space has $(MB2String $Free) of $(MB2String $Total) free"
+		$Reply = "✅ Swap space has $(MB2String $Free) of $(MB2String $Total) free"
 	}
+	Write-Host $Reply
 	exit 0 # success
 } catch {
 	"⚠️ Error in line $($_.InvocationInfo.ScriptLineNumber): $($Error[0])"

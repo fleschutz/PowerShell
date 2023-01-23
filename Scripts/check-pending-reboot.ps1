@@ -2,7 +2,7 @@
 .SYNOPSIS
 	Check for pending reboots
 .DESCRIPTION
-	This PowerShell script checks different registry keys and values to determine if a reboot is pending.
+	This PowerShell script queries pending reboots and prints it.
 .EXAMPLE
 	./check-pending-reboot.ps1
 .LINK

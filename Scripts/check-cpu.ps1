@@ -30,7 +30,7 @@ function GetCPUTemperatureInCelsius {
 }
 
 try {
-	Write-Progress "⏳ Querying CPU details ..."
+	Write-Progress "⏳ Querying CPU details..."
 	$Status = "✅"
 	$Celsius = GetCPUTemperatureInCelsius
 	if ($Celsius -eq 99999.9) {
@@ -75,7 +75,7 @@ try {
 	}
 	$Cores = [System.Environment]::ProcessorCount
 	Write-Host "$Status $CPUName ($Cores cores, $($DeviceID)$($Speed)$($Socket)$Temp)"
-	Write-Progress -Completed " "
+	Write-Progress -completed "Querying CPU details finished."
 	exit 0 # success
 } catch {
 	"⚠️ Error in line $($_.InvocationInfo.ScriptLineNumber): $($Error[0])"

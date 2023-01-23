@@ -1,8 +1,8 @@
 ﻿<#
 .SYNOPSIS
-	Checks BIOS details
+	Checks the BIOS
 .DESCRIPTION
-	This PowerShell script queries and prints BIOS details.
+	This PowerShell script queries the BIOS status and prints it.
 .EXAMPLE
 	PS> ./check-bios
 	✅ F6 BIOS by American Megatrends Inc. (S/N NXA82EV0EBB0760, version ALASKA - 1072009)
@@ -13,7 +13,7 @@
 #>
 
 try {
-	Write-Progress "Querying BIOS details..."
+	Write-Progress "⏳ Querying BIOS details..."
 	if ($IsLinux) {
 		$Model = (sudo dmidecode -s system-product-name)
 		if ("$Model" -ne "") {
@@ -30,7 +30,7 @@ try {
 		$Version = $BIOS.Version.Trim()
 		Write-Host "✅ $Model BIOS by $Manufacturer (S/N $Serial, version $Version)"
 	}
-	Write-Progress -Completed " "
+	Write-Progress -completed "BIOS query finished."
 	exit 0 # success
 } catch {
 	"⚠️ Error in line $($_.InvocationInfo.ScriptLineNumber): $($Error[0])"

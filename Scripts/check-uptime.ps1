@@ -18,7 +18,7 @@ try {
 		$BootTime = Get-WinEvent -ProviderName eventlog | Where-Object {$_.Id -eq 6005} | Select-Object TimeCreated -First 1 
 		$Uptime = New-TimeSpan -Start $BootTime.TimeCreated.Date -End (Get-Date)
 	}
-	$Reply = "Up for "
+	$Reply = "✅ Up for "
 	$Days = $Uptime.Days
 	if ($Days -eq "1") {
 		$Reply += "1 day, "
@@ -39,7 +39,7 @@ try {
 	} else {
 		$Reply += "$Minutes minutes"
 	}
-	Write-Host "✅ $Reply."
+	Write-Host $Reply
 	exit 0 # success
 } catch {
 	"⚠️ Error in line $($_.InvocationInfo.ScriptLineNumber): $($Error[0])"
