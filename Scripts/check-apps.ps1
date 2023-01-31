@@ -17,16 +17,19 @@ try {
 	} else {
 		Write-Progress "⏳ Querying installed applications..."
 		$Apps = Get-AppxPackage
-		[int]$NumInstalled = $Apps.Count
+		$Status = "✅ $($Apps.Count) apps installed"
+
+		Write-Progress "⏳ Checking installed applications..."
 		[int]$NumNonOk = 0
 		foreach($App in $Apps) { if ($App.Status -ne "Ok") { $NumNonOk++ } }
-
-		Write-Progress "⏳ Querying application updates..."
-		$NumUpdates = (winget upgrade --include-unknown).Count - 5
-
+		if ($NumNonOk -gt 0) { $Status += ", $NumNonOk non-ok" }
 		[int]$NumErrors = (Get-AppxLastError)
-		Write-Host "✅ $NumInstalled apps ($NumNonOk non-ok, $NumErrors errors, $NumUpdates updates available)"
-		Write-Progress -Completed "Querying application updates finished."
+		if ($NumErrors -gt 0) { $Status += ", $NumErrors errors" }
+
+		Write-Progress "⏳ Querying application upgrades..."
+		$NumUpdates = (winget upgrade --include-unknown).Count - 5
+		Write-Progress -Completed "Querying finished."
+		Write-Host "$Status, $NumUpdates upgrades available"
 	}
 	exit 0 # success
 } catch {
