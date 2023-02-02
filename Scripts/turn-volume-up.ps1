@@ -20,7 +20,6 @@ try {
 	for ([int]$i = 0; $i -lt $percent; $i += 2) {
 		$obj.SendKeys([char]175) # each tick is +2%
 	}
-	& "$PSScriptRoot/speak-english.ps1" "$($percent)% louder."
 	exit 0 # success
 } catch {
 	"⚠️ Error in line $($_.InvocationInfo.ScriptLineNumber): $($Error[0])"
