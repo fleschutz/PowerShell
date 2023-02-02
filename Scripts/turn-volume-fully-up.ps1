@@ -1,6 +1,6 @@
 ﻿<#
 .SYNOPSIS
-	Turns audio volume fully up
+	Turns the volume fully up
 .DESCRIPTION
 	This PowerShell script turns the audio volume fully up to 100%.
 .EXAMPLE
@@ -16,7 +16,6 @@ try {
 	for ([int]$i = 0; $i -lt 100; $i += 2) {
 		$obj.SendKeys([char]175) # each tick is +2%
 	}
-	& "$PSScriptRoot/speak-english.ps1" "Hundred percent now."
 	exit 0 # success
 } catch {
 	"⚠️ Error in line $($_.InvocationInfo.ScriptLineNumber): $($Error[0])"
