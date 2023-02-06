@@ -32,7 +32,7 @@ try {
 			$item = Get-Item $path -ErrorAction Ignore
 			if (!$item) {
 				$NumBroken++
-				"Broken symlink #$($NumBroken): $Symlink ⭢ $Target"
+				"📂$Symlink ⭢ $Target (broken symlink #$($NumBroken))"
 			}
 		}
 		$NumTotal++
@@ -40,13 +40,11 @@ try {
 
 	[int]$Elapsed = $StopWatch.Elapsed.TotalSeconds
 	if ($NumTotal -eq 0) {
-		"✔️ found no symlink at 📂$FullPath in $Elapsed sec" 
-	} elseif ($NumBroken -eq 0) {
-		"✔️ found $NumTotal valid symlinks at 📂$FullPath in $Elapsed sec"
+		"✔️ found no symlink at 📂$FullPath in $Elapsed sec." 
 	} elseif ($NumBroken -eq 1) {
-		"✔️ found $NumBroken broken symlink out of $NumTotal at 📂$FullPath in $Elapsed sec"
+		"✔️ found $NumBroken broken symlink at 📂$FullPath in $Elapsed sec."
 	} else {
-		"✔️ found $NumBroken broken symlinks out of $NumTotal at 📂$FullPath in $Elapsed sec"
+		"✔️ found $NumBroken broken symlinks at 📂$FullPath in $Elapsed sec."
 	}
 	exit $NumBroken
 } catch {
