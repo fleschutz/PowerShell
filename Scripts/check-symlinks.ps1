@@ -32,7 +32,7 @@ try {
 			$item = Get-Item $path -ErrorAction Ignore
 			if (!$item) {
 				$NumBroken++
-				"📂$Symlink ⭢ $Target (broken symlink #$($NumBroken))"
+				"Symlink $Symlink to: $Target seems broken (#$NumBroken)"
 			}
 		}
 		$NumTotal++
