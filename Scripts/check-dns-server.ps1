@@ -13,25 +13,24 @@
 
 function CheckDNS { param($Name, $PriIPv4, $SecIPv4)
 	$StopWatch = [system.diagnostics.stopwatch]::startNew()
-	$null = (nslookup fleschutz.de $PriIPv4)
+	$null = (nslookup fleschutz.de $PriIPv4 2>$null)
 	[int]$Elapsed1 = $StopWatch.Elapsed.TotalMilliseconds
 
 	$StopWatch = [system.diagnostics.stopwatch]::startNew()
-	$null = (nslookup fleschutz.de $SecIPv4)
+	$null = (nslookup fleschutz.de $SecIPv4 2>$null)
 	[int]$Elapsed2 = $StopWatch.Elapsed.TotalMilliseconds
 
-	"   `"$Name`"; `"$PriIPv4`"; `"$Elapsed1 ms`"; `"$SecIPv4`"; `"$Elapsed2 ms`"; "
+	" `"$Name`"; `"$PriIPv4`"; `"$Elapsed1 ms`"; `"$SecIPv4`"; `"$Elapsed2 ms`"; "
 }
  
 try {
 	Write-Progress "Measuring speed of public DNS servers..."
-	"  `"Company`"; `"IPv4 primary`"; `"Latency in ms`"; `"IPv4 secondary`"; `"Latency in ms`"; "
-	CheckDNS "Cloudflare" 1.1.1.1 1.0.0.1
+	" `"DNS SERVICE`"; `"PRIMARY IPv4`"; `"LATENCY`"; `"SECONDARY IPv4`"; `"LATENCY`"; "
+	CheckDNS "Cloudflare (standard)" 1.1.1.1 1.0.0.1
 	CheckDNS "Cloudflare with malware blocklist" 1.1.1.2 1.0.0.2
 	CheckDNS "Cloudflare with malware+adult blocklist" 1.1.1.3 1.0.0.3
-	CheckDNS "DNS0.eu" 193.110.81.0 185.253.5.0
-	CheckDNS "DNS.Watch" 84.200.69.80 84.200.70.40 
-	CheckDNS "FreeDNS Vienna" 37.235.1.174 37.235.1.177
+	CheckDNS "DNS0.eu (standard)" 193.110.81.0 185.253.5.0
+	CheckDNS "DNS0.eu for kids"   193.110.81.1 185.253.5.1
 	CheckDNS "Google Public DNS" 8.8.8.8 8.8.4.4
 	CheckDNS "Level3 one" 4.2.2.1 4.2.2.1
 	CheckDNS "Level3 two" 4.2.2.2 4.2.2.2 
