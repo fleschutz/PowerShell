@@ -1,6 +1,6 @@
 ﻿<#
 .SYNOPSIS
-	Checks DNS server
+	Check DNS servers
 .DESCRIPTION
 	This PowerShell script checks the speed of public DNS server.
 .EXAMPLE
@@ -13,22 +13,23 @@
 
 function CheckDNS { param($Name, $PriIPv4, $SecIPv4)
 	$StopWatch = [system.diagnostics.stopwatch]::startNew()
-	$null = (nslookup whitehouse.gov $PriIPv4)
-	[int]$PriIPv4Elapsed = $StopWatch.Elapsed.TotalMilliseconds
+	$null = (nslookup fleschutz.de $PriIPv4)
+	[int]$Elapsed1 = $StopWatch.Elapsed.TotalMilliseconds
 
 	$StopWatch = [system.diagnostics.stopwatch]::startNew()
-	$null = (nslookup whitehouse.gov $SecIPv4)
-	[int]$SecIPv4Elapsed = $StopWatch.Elapsed.TotalMilliseconds
+	$null = (nslookup fleschutz.de $SecIPv4)
+	[int]$Elapsed2 = $StopWatch.Elapsed.TotalMilliseconds
 
-	"   `"$Name`"; `"$PriIPv4`"; `"$PriIPv4Elapsed ms`"; `"$SecIPv4`"; `"$SecIPv4Elapsed ms`"; "
+	"   `"$Name`"; `"$PriIPv4`"; `"$Elapsed1 ms`"; `"$SecIPv4`"; `"$Elapsed2 ms`"; "
 }
  
 try {
-	"Checking speed of public DNS server..."
+	Write-Progress "Measuring speed of public DNS servers..."
 	"  `"Company`"; `"IPv4 primary`"; `"Latency in ms`"; `"IPv4 secondary`"; `"Latency in ms`"; "
 	CheckDNS "Cloudflare" 1.1.1.1 1.0.0.1
 	CheckDNS "Cloudflare with malware blocklist" 1.1.1.2 1.0.0.2
 	CheckDNS "Cloudflare with malware+adult blocklist" 1.1.1.3 1.0.0.3
+	CheckDNS "DNS0.eu" 193.110.81.0 185.253.5.0
 	CheckDNS "DNS.Watch" 84.200.69.80 84.200.70.40 
 	CheckDNS "FreeDNS Vienna" 37.235.1.174 37.235.1.177
 	CheckDNS "Google Public DNS" 8.8.8.8 8.8.4.4
