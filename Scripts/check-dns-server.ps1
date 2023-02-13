@@ -20,12 +20,12 @@ function CheckDNS { param($Name, $PriIPv4, $SecIPv4)
 	$null = (nslookup fleschutz.de $SecIPv4 2>$null)
 	[int]$Elapsed2 = $StopWatch.Elapsed.TotalMilliseconds
 
-	" `"$Name`"; `"$PriIPv4`"; `"$Elapsed1 ms`"; `"$SecIPv4`"; `"$Elapsed2 ms`"; "
+	" `"$Name`"; `"$PriIPv4`"; `"$SecIPv4`"; `"$Elapsed1 ms / $Elapsed2 ms`"; "
 }
  
 try {
 	Write-Progress "Measuring speed of public DNS servers..."
-	" `"DNS SERVER`"; `"PRIMARY IPv4`"; `"LATENCY`"; `"SECONDARY IPv4`"; `"LATENCY`"; "
+	" `"DNS SERVER`"; `"PRIMARY IPv4`"; `"SECONDARY IPv4`"; `"LATENCY`"; "
 	CheckDNS "Cloudflare (standard)"                     1.1.1.1 1.0.0.1
 	CheckDNS "Cloudflare (with malware blocklist)"       1.1.1.2 1.0.0.2
 	CheckDNS "Cloudflare (with malware+adult blocklist)" 1.1.1.3 1.0.0.3
