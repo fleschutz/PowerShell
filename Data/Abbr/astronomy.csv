@@ -4,7 +4,7 @@ ABBR,TERM
 4MOST,4-metre Multi-Object Spectroscopic Telescope (Proposed new spectroscopic instrument for VISTA)
 4T,Four Telescope (VLTI mode)
 A&A,"Journal, Astronomy & Astrophysics"
-A&ARv,Journal, Annual Review of Astronomy and Astrophysics
+A&ARv,"Journal, Annual Review of Astronomy and Astrophysics"
 ACD,Amplitude Calibration Device (ALMA)
 ACe,Astaldi Cimolai EIE (Consortium)
 ADA,ALMA Department of Administration
@@ -60,9 +60,9 @@ CASA,Common Astronomy Software Applications (ALMA)
 CCD,Charge Coupled Device
 CCTV,Closed Circuit TeleVision
 CDR,Critical Design Review
-CDS,Centre de Données astronomiques de Strasbourg (Strasbourg astronomical Data Center)
-CEA,Commissariat à L’Energie Atomique, France
-CELAC_EU,Summit of the Community of Latin American and Caribbean States–European Union
+CDS,"Centre de Données astronomiques de Strasbourg (Strasbourg astronomical Data Center)"
+CEA,"Commissariat à L’Energie Atomique, France"
+CELAC_EU,"Summit of the Community of Latin American and Caribbean States–European Union"
 CES,Coude Echelle Spectrometer
 CfP,Call for Proposal
 CfT,Call for tender
@@ -77,7 +77,7 @@ CNRS,Centre national de la recherche scientifique
 CO,Carbon monoxide
 CO,Carried Over budget
 COFUND,EU fellowship funding programme
-CONDOR,1.5 THz heterodyne receiver (APEX)
+CONDOR,"1.5 THz heterodyne receiver (APEX)"
 CONICA,COudé Near-Infrared CAmera (VLT)
 CORALIE,Echelle Spectrograph on the 1.2-metre Leonard Euler Swiss telescope
 CoRoT,COnvection ROtation and planetary Transits (French Satellite)
@@ -232,13 +232,13 @@ LOFAR,Low Frequency Array
 LOPS,Local Optical Phasing Sensor
 LP,Large Programme
 LPG,Liquefied Petroleum Gas
-LPO,La Silla ­Paranal Observatory
+LPO,"La Silla ­Paranal Observatory"
 LSM,Local Staff Members
-LSP,La Silla ­Paranal Subcommittee
+LSP,"La Silla ­Paranal Subcommittee"
 LTAO,Laser Tomography Adaptive Optics
 LVSM,Large Visible Sensor Module
-M#,Mirror #
-M,million/1,000,000
+M#,"Mirror #"
+M,"million/1,000,000"
 MACAO,Multiple Application Curvature Adaptive Optic
 MACCON,Motion controller manufacturer
 MAD,Multi-conjugate Adaptive optics Demonstrator
@@ -263,7 +263,7 @@ MNRAS,Journal, Monthly Notices of the Royal Astronomical Society
 MOAO,Multiple-Object Adaptive Optics
 MOONS,Multi Object Optical and Near-infrared Spectrograph (VLT third generation)
 MOS,(ELT) Multi-Object Spectroscopy
-MOSAIC,(ELT) Multi-Object Spectrograph (Multi-Object Spectrograph for Astrophysics, Intergalactic medium studies and Cosmology)
+MOSAIC,"(ELT) Multi-Object Spectrograph (Multi-Object Spectrograph for Astrophysics, Intergalactic medium studies and Cosmology)"
 MOSFIRE,Near-infrared multi-object spectrograph (Keck)
 MPA,Max Planck Institute for Astrophysics
 MPE,Max Planck Institute for Extraterrestrial Physics
@@ -287,7 +287,7 @@ NewAR,Journal, New Astronomy Reviews
 NFM,Narrow Field Mode
 NGC,New General Catalogue
 NGC,New General detector Controller
-NGSD,Proposed large natural/laser guide star WFS detector (ELT)
+NGSD,"Proposed large natural/laser guide star WFS detector (ELT)"
 NGTS,Next Generation Transit Survey
 NINS,National Institutes of Natural Sciences
 NIRPS,(NNT) Near Infra Red Planet Searcher
@@ -324,7 +324,7 @@ PASP,Journal, Publications of the Astronomical Society of the Pacific
 PDR,Preliminary Design Review
 PESSTO,Public ESO Spectroscopic Survey of Transient Objects
 PFS,(ELT) Pre-Focal Station
-PFS-A,(ELT) Pre-Focal Station for Nasmyth A
+PFS-A,"(ELT) Pre-Focal Station for Nasmyth A"
 PhD,Doctor of Philosophy
 PI,Principal Investigator
 PIO,Public Information Officer
@@ -403,7 +403,7 @@ UltraVISTA,Ultra-deep near-infrared survey in the COSMOS field
 UNCOPUOS,United Nations Committee for the Peaceful Uses of Outer Space
 USM,University Observatory Munich
 UT,Unit Telescope of the VLT
-UT1–4,VLT Unit Telescopes 1–4: Antu, Kueyen, Melipal and Yepun
+UT1–4,"VLT Unit Telescopes 1–4: Antu, Kueyen, Melipal and Yepun"
 UV,UltraViolet
 UVES,UV-Visual Echelle Spectrograph (VLT)
 VAT,Value Added Tax
@@ -426,14 +426,14 @@ VM,Visitor Mode (observing)
 VMC,VISTA survey of the Magellanic Cloud system
 VO,Virtual Observatory
 VOP,Virtual Observatory Project Office
-VPHAS+,VST Photometric Hα Survey
+VPHAS+,"VST Photometric Hα Survey"
 VSS,Variability Sky Survey
 VST,VLT Survey Telescope
 VVDS,VIMOS VLT Deep Survey
 VVV,ESO public survey VISTA Variables in the Vía Láctea
 WASP,Wide Angle Search for Planets survey
 WFCAM,Infrared wide field camera for the UK Infrared Telescope on Mauna Kea
-WFI,Wide Field Imager (MPG/ESO 2.2-metre)
+WFI,"Wide Field Imager (MPG/ESO 2.2-metre)"
 WiFi,Wireless Fidelity
 WVR,Water Vapour Radiometer (ALMA)
 X-shooter,Wideband ultraviolet-infrared single target spectrograph (VLT)
@@ -442,6 +442,6 @@ XMM-Newton,X-ray Multi-Mirror satellite (ESA)
 Yepun,VLT Unit Telescope 4
 Z-Spec,Millimetre-wave spectrograph (APEX visitor instrument)
 zCOSMOS,Large Programme to measure 30 000 galaxies in the HST Cosmic Origins field
-ZIMPOL,Zurich Imaging Polarimeter (SPHERE, ELT)
+ZIMPOL,"Zurich Imaging Polarimeter (SPHERE, ELT)"
 ΛCDM,Lambda Cold Dark Matter
 μm,Micrometre
