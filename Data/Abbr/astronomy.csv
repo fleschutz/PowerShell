@@ -3,7 +3,7 @@ ABBR,TERM
 4LGSF,Four-Laser Guide Star Facility
 4MOST,4-metre Multi-Object Spectroscopic Telescope (Proposed new spectroscopic instrument for VISTA)
 4T,Four Telescope (VLTI mode)
-A&A,Journal, Astronomy & Astrophysics
+A&A,"Journal, Astronomy & Astrophysics"
 A&ARv,Journal, Annual Review of Astronomy and Astrophysics
 ACD,Amplitude Calibration Device (ALMA)
 ACe,Astaldi Cimolai EIE (Consortium)
@@ -11,7 +11,7 @@ ADA,ALMA Department of Administration
 ADO,ALMA Director’s Office
 ADS,International Italian optics company working on the DSM for the VLT
 AEM,ALMA construction consortium
-AFNOR,Association Française de Normalisation
+AFNOR,"Association Française de Normalisation"
 AFTA,Astrophysics Focused Telescope Assets
 AGN,Active Galactic Nucleus
 AIDA,Astronomical Infrastructure for Data Access
@@ -20,25 +20,25 @@ AIT,Assembly, Integration and Test
 AIV,Assembly, Integration and Verification
 AJ,The Astronomical Journal
 ALMA,Atacama Large Millimeter/submillimeter Array
-AMBER,Astronomical Multi-BEam combineR (VLTI Instrument)
+AMBER,"Astronomical Multi-BEam combineR (VLTI Instrument)"
 AN,Journal, Astronomische Nachrichten
 Antu,VLT Unit Telescope 1
 AO,Adaptive Optics
 AOF,Adaptive Optics Facility
-AOS,Array Operations Site (ALMA)
+AOS,"Array Operations Site (ALMA)"
 APE,Active Phasing Experiment
 APEX,Atacama Pathfinder Experiment
 ApJ,Astrophysical Journal
 ApJS,Journal, Astrophysical Journal Supplement Series
-AQUARIUS,Mid-infrared detector array (VISIR)
+AQUARIUS,"Mid-infrared detector array (VISIR)"
 ARAL,Alignment facility for the VLTI
 ARC,ALMA Regional Centre
 ArTeMiS,Bolometric camera for APEX
 ASAC,ALMA Science Advisory Committee
-ASIAA,East Asia FEIC (ALMA)
+ASIAA,"East Asia FEIC (ALMA)"
 ASIC,Application Specific Integrated Circuit
 ASSIST,Adaptive Secondary Setup and Instrument Simulator (AOF test bench)
-AstraLux,Lucky Imaging camera for the Calar Alto 2.2-metre telescope
+AstraLux,"Lucky Imaging camera for the Calar Alto 2.2-metre telescope"
 AT,Auxiliary Telescope for the VLTI
 ATC,Astronomy Technology Centre (United Kingdom)
 ATILO,Administrative Tribunal of the International Labour Organisation
