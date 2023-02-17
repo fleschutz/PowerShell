@@ -23,9 +23,9 @@ try {
 	foreach ($File in $Files) {
 		$Table = Import-CSV "$File"
 		foreach($Row in $Table) {
-			if ($Row.Abbr -eq $abbr) {
+			if ($Row.ABBR -eq $abbr) {
 				$Basename = (Get-Item "$File").Basename -Replace "_"," "
-				"💡 In $Basename $($Row.Abbr) may refer to $($Row.Term)."
+				"💡 In $Basename $($Row.ABBR) may refer to $($Row.TERM)."
 				$Missing = $false
 			}
 		}
