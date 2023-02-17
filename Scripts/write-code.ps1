@@ -1,4 +1,11 @@
-﻿<#
+﻿<#PSScriptInfo
+.VERSION 1.0
+.GUID 3bb10ee7-38c1-41b9-88ea-16899164fc19
+.AUTHOR Markus Fleschutz
+.COPYRIGHT CC0
+#>
+
+<#
 .SYNOPSIS
 	Writes code
 .DESCRIPTION
@@ -11,8 +18,6 @@
 	PS> ./write-code
 .LINK
 	https://github.com/fleschutz/PowerShell
-.NOTES
-	Author: Markus Fleschutz | License: CC0
 #>
 
 param([string]$color = "green", [int]$speed = 500) # milliseconds
