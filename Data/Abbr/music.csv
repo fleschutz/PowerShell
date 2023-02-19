@@ -17,7 +17,7 @@ bsthn,Basset horn
 bug,Bugle
 cbcl,Contrabass clarinet
 cbn,Contrabassoon
-cf,Cantus Firmus (“main melody”)
+cf,"Cantus Firmus (“main melody”)"
 cl,Clarinet
 cresc,Crescendo (also noted as <)
 crt,Cornet
@@ -26,38 +26,38 @@ D.C. al Fine,Da Capo al Fine (“from the beginning to the end”)
 D.S. al Fine,Dal Segno al Fine (“from the Segno mark to the end”)
 decresc,Descrescendo (also noted as >)
 dim,Diminuendo
-EAV,band "Erste Allgemeine Verunsicherung"
+EAV,"Band, Erste Allgemeine Verunsicherung"
 eh,English horn
 ELO,Electric Light Orchestra
 euph,Euphonium
 f,Forte
-fda,Flute d’amore (tenor flute)
+fda,"Flute d’amore (tenor flute)"
 ff,Fortissimo
 fff,Fortississimo
 fgh,Flugelhorn
 fl,Flute
 fp,Fortepiano
-gliss,Glissando (“gliding, sliding”)
+gliss,"Glissando (“gliding, sliding”)"
 hn,Horn
-KISS,rock band "Knights in Satan's Service"
+KISS,"Knights in Satan's Service (rock band)"
 KYGO,"Kyrre Gørvell-Dahll (born 11 September 1991), he's a Norwegian DJ, songwriter and record producer"
 m,Measure
 mm,Measures
 MM,Metronome tempo
 mf,Mezzo-Forte
 mp,Mezzo-Piano
-MSG,Michael Schenker Group (rock band)
+MSG,"Michael Schenker Group (rock band)"
 mvt,Movement
-NSYNC,Boy band consisting of JustiN, ChriS, JoeY, LanstoN, and J.C.
+NSYNC,"Boy band consisting of JustiN, ChriS, JoeY, LanstoN, and J.C."
 ob,Oboe
-oda,Oboe d’amore
+oda,"Oboe d’amore"
 orch,Orchestra
 p,Piano
 p,Page,
 pan,Pan flute
 pic,Piccolo
 picc,Piccolo
-pizz,Pizzicato (“plucking”)
+pizz,"Pizzicato (“plucking”)"
 pp,Pianissio
 pp,Pages
 ppp,Pianississimo
@@ -69,23 +69,23 @@ Rf,Rinforzando (“with sudden force”)
 Rfz,Rinforzando (“with sudden force”)
 rpm,Revolutions per minute
 sax,Saxophone
-sf,Sforzando, Sforzato (“sudden accent”)
-sfz,Sforzando, Sforzato (“sudden accent”)
+sf,"Sforzando, Sforzato (“sudden accent”)"
+sfz,"Sforzando, Sforzato (“sudden accent”)"
 sfp,Sforzando followed by Piano
-smorz,Smorzando (“dying away”)
+smorz,"Smorzando (“dying away”)"
 sord,Sordino (“muted”)
-sost. ped,Sostenuto pedal (“sustained pedal”)
+sost. ped,"Sostenuto pedal (“sustained pedal”)"
 spicc,Spiccato (“bounce bow on a stringed instrument”)
 stacc,Staccato (“playing each note separately from the others”)
 stpt,Slide trumpet
-sul pont,Sul Ponticello (“playing with the bow near the bridge”)
+sul pont,"Sul Ponticello (“playing with the bow near the bridge”)"
 tba,Tuba
 tbn,Trombone
 tpt,Trumpet
 tr,Trill
-trem,Tremolo (“trembling, wavering”)
+trem,"Tremolo (“trembling, wavering”)"
 tsx,Tenor saxophone
-vib,Vibrato (“pulsing, vibrating”)
+vib,"Vibrato (“pulsing, vibrating”)"
 vol,Volume
 ww,Woodwinds
 XYZ,American hard rock band
