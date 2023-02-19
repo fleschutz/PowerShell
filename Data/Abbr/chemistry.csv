@@ -87,17 +87,17 @@ BP,Boiling Point
 BPDE,"Benzo[A]Pyrene-Diol-Epoxide BPE,Boiling Point Elevation"
 BPO,Benzoyl PerOxide
 Br,Bromine
-BTA,BuTylated hydroxyAnisole
+BTA,"BuTylated hydroxyAnisole"
 BTEX,"Benzene, Toluene, Ethylbenzene, and Xylene"
 BTTN,"1,2,4-ButaneTriol TriNitrate"
-BTX,Benzene, Toluene, Xylene
+BTX,"Benzene, Toluene, Xylene"
 BWR,Boiling Water Reactor
 Bz,Benzoyl functional group
 BZP,BenZylPiperazine
-B[a]P,Benzo[a]Pyrene
+B[a]P,"Benzo[a]Pyrene"
 C,Carbon
 C,Celsius
-c,centi prefix (10-2)
+c,"centi prefix (10-2)"
 C,Coulomb
 C,Cytosine
 Ca,Calcium
@@ -132,7 +132,7 @@ CFA,Cetylated Fatty Acid
 CFC,Chlorofluorocarbon
 CFRP,Carbon Fiber Reinforced Plastic
 cg,centigram
-CGS,Centimeter, Gram, Second
+CGS,"Centimeter, Gram, Second"
 CHC,Chlorinated HydroCarbon
 Chem,Chemistry
 CHM,Chemistry
@@ -167,13 +167,13 @@ CVCS,Chemical Volume Control System
 CW,Chemical Warfare
 CWA,Chemical Warfare Agent
 d,day
-d,deci prefix (10-1)
+d,"deci prefix (10-1)"
 D,Deuterium
 D,Dilute
 D-,Dextrorotatory
 D2O,Deuterium Oxide or Heavy Water
 da,dalton
-da,deca prefix (101)
+da,"deca prefix (101)"
 DAB,Diaminobenzidine
 DAP,DiAmmonium Phosphate
 dB,decibel
