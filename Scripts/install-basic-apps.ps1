@@ -2,8 +2,8 @@
 .SYNOPSIS
 	Installs basic apps
 .DESCRIPTION
-	This PowerShell script installs basic Windows apps (browser, e-mail client, etc).
-	Apps from the Microsoft Store are preferred for automatic updates. 
+	This PowerShell script installs basic Windows apps such as browser, e-mail client, etc.
+	Apps from the Microsoft Store are preferred (due to security and automatic updates). 
 .EXAMPLE
 	PS> ./install-basic-apps
 .LINK
@@ -20,7 +20,7 @@ try {
 	$NumEntries = $Table.count
 	Write-Host "   The following $NumEntries basic apps will be installed or upgraded: " -NoNewline
 	foreach($Row in $Table) {
-		[string]$AppName = $Row.AppName
+		[string]$AppName = $Row.APPLICATION
 		Write-Host "$AppName, " -NoNewline
 	}
 	""
@@ -30,9 +30,9 @@ try {
 	[int]$Step = 2
 	[int]$Failed = 0
 	foreach($Row in $Table) {
-		[string]$AppName = $Row.AppName
-		[string]$Category = $Row.Category
-		[string]$AppID = $Row.AppID
+		[string]$AppName = $Row.APPLICATION
+		[string]$Category = $Row.CATEGORY
+		[string]$AppID = $Row.APPID
 
 		"⏳ ($Step/$($NumEntries + 1)) Installing $AppName ($Category)..."
 		& winget install --id $AppID --accept-package-agreements --accept-source-agreements
