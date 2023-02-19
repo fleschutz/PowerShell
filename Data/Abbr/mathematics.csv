@@ -152,7 +152,7 @@ lg,common logarithm (log10) or binary logarithm (log2).
 LHS,left-hand side of an equation.
 Li,offset logarithmic integral function.
 li,logarithmic integral function or linearly independent.
-lim,limit of a sequence, or of a function.
+lim,"limit of a sequence, or of a function."
 lim inf,limit inferior.
 lim sup,limit superior.
 LLN,law of large numbers.
