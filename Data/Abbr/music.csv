@@ -53,7 +53,7 @@ ob,Oboe
 oda,"Oboe d’amore"
 orch,Orchestra
 p,Piano
-p,Page,
+p,Page
 pan,Pan flute
 pic,Piccolo
 picc,Piccolo
@@ -61,7 +61,7 @@ pizz,"Pizzicato (“plucking”)"
 pp,Pianissio
 pp,Pages
 ppp,Pianississimo
-rall,Rallentando (“gradual slowing”)
+rall,"Rallentando (“gradual slowing”)"
 rec,Recorder
 REM,"An Athens, Georgia-based alt-rock group"
 rit,Ritardando (“slowing down”)
@@ -73,10 +73,10 @@ sf,"Sforzando, Sforzato (“sudden accent”)"
 sfz,"Sforzando, Sforzato (“sudden accent”)"
 sfp,Sforzando followed by Piano
 smorz,"Smorzando (“dying away”)"
-sord,Sordino (“muted”)
+sord,"Sordino (“muted”)"
 sost. ped,"Sostenuto pedal (“sustained pedal”)"
-spicc,Spiccato (“bounce bow on a stringed instrument”)
-stacc,Staccato (“playing each note separately from the others”)
+spicc,"Spiccato (“bounce bow on a stringed instrument”)"
+stacc,"Staccato (“playing each note separately from the others”)"
 stpt,Slide trumpet
 sul pont,"Sul Ponticello (“playing with the bow near the bridge”)"
 tba,Tuba
