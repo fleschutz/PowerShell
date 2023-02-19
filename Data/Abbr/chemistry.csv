@@ -315,8 +315,8 @@ FSA,Formamidine Sulphinic Acid
 FW,Formula Weight
 G,Gauss
 G,Gibbs Free Energy
-G,Giga prefix (109)
-G,Glycine g,gram
+G,"Giga prefix (109)"
+G,"Glycine g,gram"
 G,Guanosine
 Ga,Gallium
 Ga,Gauge
@@ -360,13 +360,13 @@ GS,Guanosine Synthetase
 GT,Greater Than
 GTL,Gas To Liquid
 GTN,Glyceryl TriNitrate
-Gy,Gray (radiation unit)
+Gy,"Gray (radiation unit)"
 h,convection heat transfer coefficient
 H,Enthalpy
 h,hecto prefix (102)
 H,Hydrogen
 h,Planck’s constant
-Ha,Hahnium (initial name for dubnium)
+Ha,"Hahnium (initial name for dubnium)"
 HA,Hemagglutinin
 HAA,HaloAcetic Acid
 HAc,Acetaldehyde
