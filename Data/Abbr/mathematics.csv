@@ -13,9 +13,9 @@ arccos,inverse cosine function.
 arccosec,inverse cosecant function. (Also written as arccsc.)
 arccot,inverse cotangent function.
 arccsc,inverse cosecant function. (Also written as arccosec.)
-arcexc,inverse excosecant function. (Also written as arcexcsc, arcexcosec.)
-arcexcosec,inverse excosecant function. (Also written as arcexcsc, arcexc.)
-arcexcsc,inverse excosecant function. (Also written as arcexcosec, arcexc.)
+arcexc,"inverse excosecant function. (Also written as arcexcsc, arcexcosec.)"
+arcexcosec,"inverse excosecant function. (Also written as arcexcsc, arcexc.)"
+arcexcsc,"inverse excosecant function. (Also written as arcexcosec, arcexc.)"
 arcexs,inverse exsecant function. (Also written as arcexsec.)
 arcexsec,inverse exsecant function. (Also written as arcexs.)
 arcosech,inverse hyperbolic cosecant function. (Also written as arcsch.)
@@ -38,10 +38,10 @@ A.P.,arithmetic progression.
 Aut,automorphism group.
 bd,boundary. (Also written as fr or ∂.)
 Bi,Airy function of the second kind.
-BIDMAS,Brackets, Indices, Divide, Multiply, Add, Subtract.
+BIDMAS,"Brackets, Indices, Divide, Multiply, Add, Subtract."
 Bias,bias of an estimator
 BWOC,by way of contradiction
-Card,cardinality of a set. (Card(X) is also written #X, ♯X or |X|.)
+Card,"cardinality of a set. (Card(X) is also written #X, ♯X or |X|.)"
 cas,cos + sin function.
 cdf,cumulative distribution function.
 c.f.,cumulative frequency.
@@ -53,8 +53,8 @@ cis,cos + i sin function. (Also written as expi.)
 Cl,conjugacy class.
 cl,topological closure.
 CLT,central limit theorem.
-cod, codom,codomain.
-cok, coker,cokernel.
+cod,"codom,codomain."
+cok,"coker,cokernel."
 conv,convex hull of a set.
 Cor,corollary.
 corr,correlation.
@@ -62,28 +62,28 @@ cos,cosine function.
 cosec,cosecant function. (Also written as csc.)
 cosech,hyperbolic cosecant function. (Also written as csch.)
 cosh,hyperbolic cosine function.
-cosiv,coversine function. (Also written as cover, covers, cvs.)
+cosiv,"coversine function. (Also written as cover, covers, cvs.)"
 cot,cotangent function. (Also written as ctg.)
 coth,hyperbolic cotangent function.
 cov,covariance of a pair of random variables.
-cover,coversine function. (Also written as covers, cvs, cosiv.)
+cover,"coversine function. (Also written as covers, cvs, cosiv.)"
 covercos,covercosine function. (Also written as cvc.)
-covers,coversine function. (Also written as cover, cvs, cosiv.)
+covers,"coversine function. (Also written as cover, cvs, cosiv.)"
 crd,chord function.
 csc,cosecant function. (Also written as cosec.)
 csch,hyperbolic cosecant function. (Also written as cosech.)
 ctg,cotangent function. (Also written as cot.)
 curl,curl of a vector field. (Also written as rot.)
 cvc,covercosine function. (Also written as covercos.)
-cvs,coversine function. (Also written as cover, covers, cosiv.)
+cvs,"coversine function. (Also written as cover, covers, cosiv.)"
 def,define or definition.
-deg,degree of a polynomial, or other recursively-defined objects such as well-formed formulas. (Also written as ∂.)
-del,del, a differential operator. (Also written as {\displaystyle \nabla }\nabla .)
+deg,"degree of a polynomial, or other recursively-defined objects such as well-formed formulas. (Also written as ∂.)"
+del,"del, a differential operator. (Also written as {\displaystyle \nabla }\nabla .)"
 det,determinant of a matrix or linear transformation.
 dim,dimension of a vector space.
 div,divergence of a vector field.
-DNE,a solution for an expression does not exist, or is undefined. Generally used with limits and integrals.
-dom,domain of a function. (Or, more generally, a relation.)
+DNE,"a solution for an expression does not exist, or is undefined. Generally used with limits and integrals."
+dom,"domain of a function. (Or, more generally, a relation.)"
 End,categories of endomorphisms.
 Ei,exponential integral function.
 epi,epigraph of a function.
@@ -92,8 +92,8 @@ erf,error function.
 erfc,complementary error function.
 etr,exponent of the trace.
 exc,excosecant function. (Also written as excsc, excosec.)
-excosec,excosecant function. (Also written as excsc, exc.)
-excsc,excosecant function. (Also written as excosec, exc.)
+excosec,"excosecant function. (Also written as excsc, exc.)"
+excsc,"excosecant function. (Also written as excosec, exc.)"
 exs,exsecant function. (Also written as exsec.)
 exsec,exsecant function. (Also written as exs.)
 exp,exponential function. (exp x is also written as ex.)
