@@ -204,7 +204,7 @@ rng,non-unital ring.
 rot,rotor of a vector field. (Also written as curl.)
 RTP,required to prove.
 RV,random variable. (or as R.V.)
-R - Real numbers
+R,Real numbers
 SD,standard deviation
 SE,standard error
 sec,secant function.
@@ -218,7 +218,7 @@ Si,sine integral function.
 sin,sine function.
 sinc,sinc function.
 sinh,hyperbolic sine function.
-siv,versine function. (Also written as ver, vers.)
+siv,"versine function. (Also written as ver, vers.)"
 SL,special linear group.
 SO,special orthogonal group.
 SOC,second order condition.
