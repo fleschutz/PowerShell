@@ -48,7 +48,7 @@ Mega Collection of PowerShell Scripts
 | ---------------------------------------------------- | ------------------------------------------------------------------------------------------------- |
 | [add-firewall-rules.ps1](Scripts/add-firewall-rules.ps1) | Adds firewall rules for the given executables (needs admin rights). [Read more...](Docs/add-firewall-rules.md) |
 | [check-cpu.ps1](Scripts/check-cpu.ps1)| Checks the CPU temperature. [Read more...](Docs/check-cpu.md)                                                    |
-| [check-dns.ps1](Scripts/check-dns.ps1) | Checks the DNS resolution. [Read more...](Docs/check-dns.md)                                                    |
+| [check-dns.ps1](Scripts/check-dns.ps1) | Checks the DNS resolution. [Read more...](Docs/check-dns.md)                                                  |
 | [check-drive-space.ps1](Scripts/check-drive-space.ps1) | Checks a drive for free space left. [Read more...](Docs/check-drive-space.md)                   |
 | [check-file-system.ps1](Scripts/check-file-system.ps1) | Checks the file system of a drive (needs admin rights). [Read more...](Docs/check-file-system.md)|
 | [check-health.ps1](Scripts/check-health.ps1)         | Checks the system health. [Read more...](Docs/check-health.md)                                    |
@@ -67,6 +67,7 @@ Mega Collection of PowerShell Scripts
 | [install-wsl.ps1](Scripts/install-wsl.ps1)           | Installs Windows Subsystem for Linux (WSL), needs admin rights. [Read more...](Docs/install-wsl.md)|
 | [list-apps.ps1](Scripts/list-apps.ps1)               | Lists the installed applications. [Read more...](Docs/list-installed-apps.md)                     |
 | [list-cli-tools.ps1](Scripts/list-cli-tools.ps1)     | Lists installed command-line interface (CLI) tools. [Read more...](Docs/list-cli-tools.md)        |
+| [list-dns-servers.ps1](Scripts/list-dns-servers.ps1) | Lists public DNS servers. [Read more...](Docs/list-dns-servers.md)  
 | [list-drives.ps1](Scripts/list-drives.ps1)           | Lists all drives. [Read more...](Docs/list-drives.md)                                             |
 | [list-network-shares.ps1](Scripts/list-network-shares.ps1) | Lists all network shares of the local computer. [Read more...](Docs/list-network-shares.md) |
 | [list-installed-software.ps1](Scripts/list-installed-software.ps1) | Lists the installed software (except Windows Store apps). [Read more...](Docs/list-installed-software.md)|
