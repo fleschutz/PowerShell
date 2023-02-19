@@ -1253,8 +1253,8 @@ WR,Water Repellent
 WS,Wash Solution
 WS,Water Soluble
 WSNZ,Water Soluble Zinc
-WSPI,Water-Soluble Phosphorous, Inorganic
-WSPO,Water-Soluble Phosphorous, Organic
+WSPI,"Water-Soluble Phosphorous, Inorganic"
+WSPO,"Water-Soluble Phosphorous, Organic"
 WSS,Water Soluble Stabilizer
 WST,Weighted Settling Time
 WV,Water Vapor
