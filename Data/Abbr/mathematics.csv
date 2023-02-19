@@ -156,11 +156,11 @@ lim,"limit of a sequence, or of a function."
 lim inf,limit inferior.
 lim sup,limit superior.
 LLN,law of large numbers.
-ln,natural logarithm, loge.
+ln,"natural logarithm, loge."
 lnp1,natural logarithm plus 1 function.
 ln1p,natural logarithm plus 1 function.
-log,logarithm. (If without a subscript, this may mean either log10 or loge.)
-logh,natural logarithm, loge.
+log,"logarithm. (If without a subscript, this may mean either log10 or loge.)"
+logh,"natural logarithm, loge."
 LST,language of set theory.
 lub,least upper bound. (Also written sup.)
 max,maximum of a set.
