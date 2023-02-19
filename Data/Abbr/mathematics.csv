@@ -224,35 +224,35 @@ SO,special orthogonal group.
 SOC,second order condition.
 Soln,solution.
 Sp,symplectic group.
-Sp,trace of a matrix, from the German "spur" used for the trace.
-sp,linear span of a set of vectors. (Also written as span or written with angle brackets.)
+Sp,"trace of a matrix, from the German "spur" used for the trace."
+sp,"linear span of a set of vectors. (Also written as span or written with angle brackets.)"
 Spec,spectrum of a ring.
 Spin,spin group.
 s.t.,such that or so that or subject to.
 st,standard part function.
 STP,[it is] sufficient to prove.
 SU,special unitary group.
-sup,supremum of a set. (Also written as lub, which stands for least upper bound.)
+sup,"supremum of a set. (Also written as lub, which stands for least upper bound.)"
 supp,support of a function.
-swish,swish function, an activation function in data analysis.
-Sym,symmetric group (Sym(n) is also written as Sn) or symmetric algebra.
+swish,"swish function, an activation function in data analysis."
+Sym,"symmetric group (Sym(n) is also written as Sn) or symmetric algebra."
 tan,tangent function. (Also written as tgn, tg.)
 tanh,hyperbolic tangent function.
-TAU,the constant 6.283185307179586476925286766559
+TAU,"the constant 6.283185307179586476925286766559"
 TFAE,the following are equivalent.
-tg,tangent function. (Also written as tan, tgn.)
-tgn,tangent function. (Also written as tan, tg.)
+tg,"tangent function. (Also written as tan, tgn.)"
+tgn,"tangent function. (Also written as tan, tg.)"
 Thm,theorem.
 Tor,Tor functor.
-Tr,trace, either the field trace, or the trace of a matrix or linear transformation.
+Tr,"trace, either the field trace, or the trace of a matrix or linear transformation."
 undef,a function or expression is undefined
 V,volume.
 var,variance of a random variable.
 vcs,vercosine function. (Also written as vercos.)
-ver,versine function. (Also written as vers, siv.)
+ver,"versine function. (Also written as vers, siv.)"
 vercos,vercosine function. (Also written as vcs.)
-vers,versine function. (Also written as ver, siv.)
-W^5,which was what we wanted. Synonym of Q.E.D.
+vers,"versine function. (Also written as ver, siv.)"
+W^5,"which was what we wanted. Synonym of Q.E.D."
 walog,without any loss of generality.
 wff,well-formed formula.
 whp,with high probability.
@@ -264,6 +264,6 @@ wrt,with respect to or with regard to.
 WTP,want to prove
 WTS,want to show
 XOR,exclusive or in logic
-XYZ,Cartesian coordinate system (x,y,z)
+XYZ,"Cartesian coordinate system (x,y,z)"
 ZF,Zermelo–Fraenkel axioms of set theory
 ZFC,Zermelo–Fraenkel axioms (with the Axiom of Choice) of set theory
