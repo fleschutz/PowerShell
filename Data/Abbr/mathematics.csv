@@ -118,13 +118,13 @@ GM,geometric mean.
 glb,greatest lower bound. (Also written as inf.)
 GP,geometric progression.
 grad,gradient of a function.
-hacover,hacoversine function. (Also written as hacovers, hcv.)
+hacover,"hacoversine function. (Also written as hacovers, hcv.)"
 hacovercos,hacovercosine function. (Also written as hcc.)
-hacovers,hacoversine function. (Also written as hacover, hcv.)
+hacovers,"hacoversine function. (Also written as hacover, hcv.)"
 hav,haversine function. (Also written as sem.)
 havercos,havercosine function. (Also written as hvc.)
 hcc,hacovercosine function. (Also written as hacovercos.)
-hcv,hacoversine function. (Also written as hacover, hacovers.)
+hcv,"hacoversine function. (Also written as hacover, hacovers.)"
 hcf,highest common factor of two numbers. (Also written as gcd.)
 H.M.,harmonic mean.
 HOL,higher-order logic.
