@@ -5,7 +5,9 @@ ABBR,TERM
 4T,Four Telescope (VLTI mode)
 A&A,"Journal, Astronomy & Astrophysics"
 A&ARv,"Journal, Annual Review of Astronomy and Astrophysics"
+AAA,Amateur Astronomers Association of New York
 ACD,Amplitude Calibration Device (ALMA)
+ACM,"Asteroids, Comets, and Meteors"
 ACe,Astaldi Cimolai EIE (Consortium)
 ADA,ALMA Department of Administration
 ADO,ALMA Director’s Office
@@ -32,7 +34,7 @@ ApJ,Astrophysical Journal
 ApJS,"Journal, Astrophysical Journal Supplement Series"
 AQUARIUS,"Mid-infrared detector array (VISIR)"
 ARAL,Alignment facility for the VLTI
-ARC,ALMA Regional Centre
+ARC,"ALMA Regional Centre, or Ames Research Center"
 ArTeMiS,Bolometric camera for APEX
 ASAC,ALMA Science Advisory Committee
 ASIAA,"East Asia FEIC (ALMA)"
@@ -42,13 +44,16 @@ AstraLux,"Lucky Imaging camera for the Calar Alto 2.2-metre telescope"
 AT,Auxiliary Telescope for the VLTI
 ATC,"Astronomy Technology Centre (United Kingdom)"
 ATILO,Administrative Tribunal of the International Labour Organisation
-AU,Astronomical Unit
+AU,"Astronomical Unit, the distance between the Earth and the Sun"
 AUI,Associated Universities Inc.
 AVM,Astronomical Visualisation Metadata
+AXP,"Anomalous X-Ray Pulsar"
 BAM,Construction company for the Headquarters extension
 BE,Back-End (ALMA)
 BELLA,Building Europe Link to Latin America
 BFL,Budget and Forward Look
+BH,Black hole
+BLAST,Balloon-borne Large Aperture Submillimeter Telescope
 BlackGEM,(La Silla) Telescope array searching for optical counterparts of gravitational wave sources
 BLIP,Background photon noise limited
 C2PAP,"Computational Center for Particle and Astrophysics, Universe Cluster, Garching"
@@ -57,6 +62,7 @@ CADC,Canadian Astronomy Data Centre
 CAPj,Communicating Astronomy with the Public Journal
 CARLA,Clusters Around Radio-Loud AGN (Spitzer)
 CASA,Common Astronomy Software Applications (ALMA)
+CBR,cosmic background radiation
 CCD,Charge Coupled Device
 CCTV,Closed Circuit TeleVision
 CDR,Critical Design Review
@@ -66,9 +72,11 @@ CELAC_EU,"Summit of the Community of Latin American and Caribbean States–Europ
 CES,Coude Echelle Spectrometer
 CfP,Call for Proposal
 CfT,Call for tender
+CGM,Circumgalactic medium
 CHAMP+,Dual channel heterodyne receiver array (APEX)
 CLIF,Convolution with Linearized Inverse Filter algorithm for wavefront sensing
 CLP,Chilean Peso
+CM,center of mass
 CMB,Cosmic Microwave Background
 CMBR,Cosmic Microwave Background Radiation
 CME,Coronal Mass Ejection (usually Sun)
@@ -366,6 +374,7 @@ SINFONI,Spectrograph for INtegral Field Observations in the Near Infrared (VLT)
 SKA,Square Kilometer Array
 SM,Service Mode (observing)
 SM4,Servicing Mission 4 (HST)
+SMBH,Supermassive black hole
 SOFI,SOn oF Isaac (NTT)
 SOPHIE,Spectrographe pour l’Observation des Phénomènes des Intérieurs stellaires et des Exoplanètes
 SOXS,(NTT) Son Of X-Shooter
