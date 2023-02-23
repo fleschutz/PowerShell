@@ -28,41 +28,38 @@ try {
 		}
 	} else {
 		if (Test-Path -Path "HKLM:\SOFTWARE\Microsoft\Windows\CurrentVersion\WindowsUpdate\Auto Update\RebootRequired") {
-			$Reason += ", found registry entry '...\WindowsUpdate\Auto Update\RebootRequired'"
+			$Reason += ", '...\WindowsUpdate\Auto Update\RebootRequired'"
 		}
 		if (Test-Path -Path "HKLM:\SOFTWARE\Microsoft\Windows\CurrentVersion\WindowsUpdate\Auto Update\PostRebootReporting") {
-			$Reason += ", found registry entry '...\WindowsUpdate\Auto Update\PostRebootReporting'"
+			$Reason += ", '...\WindowsUpdate\Auto Update\PostRebootReporting'"
 		}
 		if (Test-Path -Path "HKLM:\SOFTWARE\Microsoft\Windows\CurrentVersion\Component Based Servicing\RebootPending") {
-			$Reason += ", found registry entry '...\Component Based Servicing\RebootPending'"
+			$Reason += ", '...\Component Based Servicing\RebootPending'"
 		}
 		if (Test-Path -Path "HKLM:\SOFTWARE\Microsoft\ServerManager\CurrentRebootAttempts") {
-			$Reason += ", found registry entry '...\ServerManager\CurrentRebootAttempts'"
+			$Reason += ", '...\ServerManager\CurrentRebootAttempts'"
 		}
 		if (Test-RegistryValue -Path "HKLM:\Software\Microsoft\Windows\CurrentVersion\Component Based Servicing" -Value "RebootInProgress") {
-			$Reason += ", found registry entry '...\CurrentVersion\Component Based Servicing' with 'RebootInProgress'"
+			$Reason += ", '...\CurrentVersion\Component Based Servicing' with 'RebootInProgress'"
 		}
 		if (Test-RegistryValue -Path "HKLM:\Software\Microsoft\Windows\CurrentVersion\Component Based Servicing" -Value "PackagesPending") {
-			$Reason += ", found registry entry '...\CurrentVersion\Component Based Servicing' with 'PackagesPending'"
+			$Reason += ", '...\CurrentVersion\Component Based Servicing' with 'PackagesPending'"
 		}
-		#if (Test-RegistryValue -Path "HKLM:\SYSTEM\CurrentControlSet\Control\Session Manager" -Value "PendingFileRenameOperations") {
-		#	$Reason += ", found registry entry '...\CurrentControlSet\Control\Session Manager' with 'PendingFileRenameOperations'"
-		#}
 		if (Test-RegistryValue -Path "HKLM:\SYSTEM\CurrentControlSet\Control\Session Manager" -Value "PendingFileRenameOperations2") {
-			$Reason += ", found registry entry '...\CurrentControlSet\Control\Session Manager' with 'PendingFileRenameOperations2'"
+			$Reason += ", '...\CurrentControlSet\Control\Session Manager' with 'PendingFileRenameOperations2'"
 		}
 		if (Test-RegistryValue -Path "HKLM:\SOFTWARE\Microsoft\Windows\CurrentVersion\RunOnce" -Value "DVDRebootSignal") {
-			$Reason += ", found registry entry '...\Windows\CurrentVersion\RunOnce' with 'DVDRebootSignal'"
+			$Reason += ", '...\Windows\CurrentVersion\RunOnce' with 'DVDRebootSignal'"
 		}
 		if (Test-RegistryValue -Path "HKLM:\SYSTEM\CurrentControlSet\Services\Netlogon" -Value "JoinDomain") {
-			$Reason += ", found registry entry '...\CurrentControlSet\Services\Netlogon' with 'JoinDomain'"
+			$Reason += ", '...\CurrentControlSet\Services\Netlogon' with 'JoinDomain'"
 		}
 		if (Test-RegistryValue -Path "HKLM:\SYSTEM\CurrentControlSet\Services\Netlogon" -Value "AvoidSpnSet") {
-			$Reason += ", found registry entry '...\CurrentControlSet\Services\Netlogon' with 'AvoidSpnSet'"
+			$Reason += ", '...\CurrentControlSet\Services\Netlogon' with 'AvoidSpnSet'"
 		}
 	}
 	if ($Reason -ne "") {
-		Write-Host "⚠️ Pending reboot ($($Reason.substring(2)))"
+		Write-Host "⚠️ Pending reboot (found $($Reason.substring(2)) in registry)"
 	} else {
 		Write-Host "✅ No pending reboot"
 	}
