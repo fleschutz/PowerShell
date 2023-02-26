@@ -1,15 +1,15 @@
 ﻿<#
 .SYNOPSIS
-	Copy a single image into a series of pixelated images
+	Copy a single image into a series of blurred images
 .DESCRIPTION
-	This PowerShell script copies a single image file into a series of pixelated images in a target dir.
+	This PowerShell script copies a single image file into a series of blurred images in a target dir.
 	Requires ImageMagick 6.
 .PARAMETER SourceFile
 	Specifies the path to the image source file
 .PARAMTER TargetDir
 	Specifies the path to the target folder
 .EXAMPLE
-	PS> ./copy-image-pixelated C:\my_photo.jpg C:\Temp
+	PS> ./copy-image-blurred C:\photo.jpg C:\Temp
 .LINK
 	https://github.com/fleschutz/PowerShell
 .NOTES
@@ -31,18 +31,25 @@ try {
 	& convert-im6 --version
 	if ($lastExitCode -ne "0") { throw "Can't execute 'convert-im6' - make sure ImageMagick 6 is installed and available" }
 
-	$Factor = 0.001
-	for ($i = 0; $i -lt 297; $i++) {
+	[int]$ImageWidth = 3509
+	[int]$ImageHeight = 2481
+	[int]$radius = 10
+	[float]$heading = 0.0
+	[float]$distance = 0.0
+	for ($i = 297; $i -gt 0; $i--) {
 		$TargetFile = "$TargetDir/$($Basename)_$($i).jpg"
-		"⏳ ($($i + 3)/300) Copying to $TargetFile with pixelation factor $Factor..."
-		$Coeff1 = 100.0 * $Factor
-		$Coeff2 = 100.0 / $Factor
-		& convert-im6 -scale $Coeff1% -scale $Coeff2% "$SourceFile" "$TargetFile"
-		$Factor += 0.0005
+		"⏳ ($(300 - $i)/300) Copying to $TargetFile..."
+		[int]$x = $ImageWidth / 2  + [math]::cos($heading) * $distance
+		[int]$y = $ImageHeight / 2 + [math]::sin($heading) * $distance
+		& convert-im6 -fill black -draw "circle $x,$y $($x+$radius),$y" "$SourceFile" "$TargetFile"
+		$distance += 5
+		$heading += 0.3
+		$radius += 2
+		$SourceFile = $TargetFile
 	}
 
 	[int]$Elapsed = $StopWatch.Elapsed.TotalSeconds
-	"✅ copied $SourceFile to a series of 300 pixelated images in 📂$TargetDir in $Elapsed sec."
+	"✅ copied to a series of 300 blurred images in 📂$TargetDir in $Elapsed sec."
 	exit 0 # success
 } catch {
 	"⚠️ Error in line $($_.InvocationInfo.ScriptLineNumber): $($Error[0])"
