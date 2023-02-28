@@ -4,8 +4,8 @@
 .DESCRIPTION
 	This PowerShell script copies a single image file into a series of blurred images in a target dir.
 	Requires ImageMagick 6.
-.PARAMETER SourceFile
-	Specifies the path to the image source file
+.PARAMETER ImageFile
+	Specifies the path to the image file
 .PARAMTER TargetDir
 	Specifies the path to the target folder
 .EXAMPLE
@@ -16,40 +16,34 @@
 	Author: Markus Fleschutz | License: CC0
 #>
 
-param([string]$SourceFile = "", [string]$TargetDir = "")
+param([string]$ImageFile = "", [string]$TargetDir = "", [int]$ImageWidth = 1920, [int]$ImageHeight = 1393)
 
 try {
-	if ($SourceFile -eq "") { $SourceFile = Read-Host "Enter file path to source image file" }
+	if ($ImageFile -eq "") { $ImageFile = Read-Host "Enter file path to image file" }
 	if ($TargetDir -eq "") { $TargetDir = Read-Host "Enter file path to target directory" }
 	$StopWatch = [system.diagnostics.stopwatch]::startNew()
 
-	"⏳ (1/300) Checking source image file..."
-	if (!(Test-Path "$SourceFile" -pathType leaf)) { throw "Can't access source image file: $SourceFile" }
-	$Basename = (Get-Item "$SourceFile").Basename
+	"⏳ (1/300) Checking image file..."
+	if (!(Test-Path "$ImageFile" -pathType leaf)) { throw "Can't access image file: $ImageFile" }
+	$Basename = (Get-Item "$ImageFile").Basename
 
-	"⏳ (2/300) Searching for ImageMagick 6 executable..."
+	"⏳ (2/300) Searching for ImageMagick 6..."
 	& convert-im6 --version
 	if ($lastExitCode -ne "0") { throw "Can't execute 'convert-im6' - make sure ImageMagick 6 is installed and available" }
 
-	[int]$ImageWidth = 3509
-	[int]$ImageHeight = 2481
-	[int]$radius = 10
-	[float]$heading = 0.0
-	[float]$distance = 0.0
-	for ($i = 297; $i -gt 0; $i--) {
+	[int]$centerX = $ImageWidth / 2 
+	[int]$centerY = $ImageHeight / 2
+	[int]$Frames = 300
+	[int]$x = 0
+	[float]$increment = $centerX / $Frames
+	for ($i = 0; $i -lt $Frames; $i++) {
 		$TargetFile = "$TargetDir/$($Basename)_$($i).jpg"
-		"⏳ ($(300 - $i)/300) Copying to $TargetFile..."
-		[int]$x = $ImageWidth / 2  + [math]::cos($heading) * $distance
-		[int]$y = $ImageHeight / 2 + [math]::sin($heading) * $distance
-		& convert-im6 -fill black -draw "circle $x,$y $($x+$radius),$y" "$SourceFile" "$TargetFile"
-		$distance += 5
-		$heading += 0.3
-		$radius += 2
-		$SourceFile = $TargetFile
+		"⏳ ($i/$Frames) Copying to $TargetFile..."
+		& convert-im6 -stroke black -strokewidth 9 -fill white -draw "circle $centerX,$centerY $x,$centerY" "$ImageFile" "$TargetFile"
+		$x += $increment
 	}
-
 	[int]$Elapsed = $StopWatch.Elapsed.TotalSeconds
-	"✅ copied to a series of 300 blurred images in 📂$TargetDir in $Elapsed sec."
+	"✅ copied $ImageFile to $Frames frames in 📂$TargetDir in $Elapsed sec."
 	exit 0 # success
 } catch {
 	"⚠️ Error in line $($_.InvocationInfo.ScriptLineNumber): $($Error[0])"
