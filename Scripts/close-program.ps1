@@ -33,7 +33,7 @@ try {
 		foreach ($Process in $Processes) {
 			$Process.CloseMainWindow() | Out-Null
 		} 
-		start-sleep -milliseconds 100
+		Start-Sleep -milliseconds 100
 		stop-process -name $ProgramName -force -errorAction 'silentlycontinue'
 	} else {
 		$Processes = get-process -name $ProgramAliasName -errorAction 'silentlycontinue'
@@ -43,7 +43,7 @@ try {
 		foreach ($Process in $Processes) {
 			$_.CloseMainWindow() | Out-Null
 		} 
-		start-sleep -milliseconds 100
+		Start-Sleep -milliseconds 100
 		stop-process -name $ProgramName -force -errorAction 'silentlycontinue'
 	}
 	if ($($Processes.Count) -eq 1) {

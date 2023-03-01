@@ -17,12 +17,12 @@ param([int]$Seconds = 10)
 
 try {
 	for ([int]$i = 0; $i -lt $Seconds; $i++) {
-		clear-host
-		write-output ""
+		Clear-Host
+		Write-Output ""
 		$CurrentTime = Get-Date -format "yyyy-MM-dd HH:mm:ss" 
 		./write-big $CurrentTime
-		write-output ""
-		start-sleep -s 1
+		Write-Output ""
+		Start-Sleep -seconds 1
 	}
 	exit 0 # success
 } catch {

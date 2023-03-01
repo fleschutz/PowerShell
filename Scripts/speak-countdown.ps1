@@ -18,7 +18,7 @@ param([int]$StartNumber = 10)
 try {
 	for ([int]$i = $StartNumber; $i -gt 0; $i--) {
 		& "$PSScriptRoot/speak-english.ps1" $i
-		start-sleep -milliseconds 200
+		Start-Sleep -milliseconds 200
 	}
 	& "$PSScriptRoot/speak-english.ps1" "zero"
 	exit 0 # success

@@ -24,13 +24,13 @@ param([string]$color = "green", [int]$speed = 500) # milliseconds
 
 function GetRandomCodeLine { 
 	$Generator = New-Object System.Random
-	$Num = [int]$Generator.next(0, 24)
+	$Num = [int]$Generator.next(0, 25)
 	switch($Num) {
 	 0 { return "    `$count = 0" }
 	 1 { return "    `$count++" }
 	 2 { return "    exit 0 # success" }
 	 3 { return "    `$Files = Get-ChildItem C:" }
-	 4 { return "    Start-Sleep 1" }
+	 4 { return "    Start-Sleep -seconds 1" }
 	 5 { return "    `$Generator = New-Object System-Random" }
 	 6 { return "} else {" }
 	 7 { return "} catch {" }
@@ -50,6 +50,7 @@ function GetRandomCodeLine {
 	21 { return "    if (`$count -eq 0) { `$count = Read-Host `"Enter number of iterations`" " }
 	22 { return "    } finally {" }
 	23 { return "    throw `"Can't open file`" " }
+	24 { return "    Start-Sleep -milliseconds 50" }
 	}
 }
 

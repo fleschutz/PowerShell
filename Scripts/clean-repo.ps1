@@ -30,7 +30,7 @@ try {
 	"⏳ (3/4) Removing untracked files in repository..."
 	& git -C "$RepoDir" clean -xfd -f # to delete all untracked files in the main repo
 	if ($lastExitCode -ne "0") {
-		"'git clean' failed with exit code $lastExitCode, retrying once..."
+		Write-Warning "'git clean' failed with exit code $lastExitCode, retrying once..."
 		& git -C "$RepoDir" clean -xfd -f 
 		if ($lastExitCode -ne "0") { throw "'git clean' failed with exit code $lastExitCode" }
 	}

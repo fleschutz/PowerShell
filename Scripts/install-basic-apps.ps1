@@ -25,7 +25,7 @@ try {
 	}
 	""
 	"Press <Control> <C> to abort, otherwise the installation will start in 10 seconds..."
-	sleep -s 10
+	Start-Sleep -seconds 10
 
 	[int]$Step = 2
 	[int]$Failed = 0

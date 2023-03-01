@@ -12,5 +12,5 @@
 #>
 
 [System.Console]::Beep(500,300)
-start-sleep -m 300
+Start-Sleep -milliseconds 300
 exit 0 # success

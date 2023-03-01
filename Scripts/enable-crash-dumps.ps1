@@ -97,9 +97,9 @@ $0x = "0x"
 
 $array = @()
 
-Clear-host
-write-host "Setting up your machine to receive Usermode Dumps via WER."
-Start-sleep -s 3
+Clear-Host
+Write-Host "Setting up your machine to receive Usermode Dumps via WER."
+Start-Sleep -seconds 3
 
 
 New-ItemProperty -Path "HKLM:\SOFTWARE\Microsoft\Windows\Windows Error Reporting\LocalDumps" -Name "DumpFolder" -Value "%LOCALAPPDATA%\CrashDumps" -PropertyType ExpandString -Force
@@ -225,12 +225,12 @@ If ($NCD -eq '3')
         ElseIf($Option -eq 'q')
         {
             write-host "Closing application."
-            Start-Sleep -s 2
+            Start-Sleep -seconds 2
         }
         Else
         {
             write-host "Invalid Option, Try again."
-            Start-sleep -s 2
+            Start-Sleep -seconds 2
         }  
                                                
     }
@@ -291,7 +291,7 @@ ElseIf ($NCD -eq '2')
 }
 Else
 {
-    write-host "You did not enter a valid option.  Please re-run Get-Dump.ps1"
-    start-sleep -s 5
+    Write-Host "You did not enter a valid option.  Please re-run Get-Dump.ps1"
+    Start-Sleep -seconds 5
 }
 exit 0 # success

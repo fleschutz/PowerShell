@@ -36,7 +36,7 @@ try {
 	if ($IPaddress -eq "" ) { $IPaddress = Read-Host "Enter the host's IP address or subnet address (e.g. 255.255.255.255)" }
 
 	Send-WOL $MACaddress $IPaddress $Port
-	start-sleep -milliseconds 100
+	Start-Sleep -milliseconds 100
 	Send-WOL $MACaddress $IPaddress $Port
 
 	"✔️ sent magic packet $MACaddress to IP $IPaddress on port $Port (twice)"
