@@ -253,6 +253,7 @@ function ListCmdTools {
 	Test tar		"--version"
 	Test taskkill	""
 	Test tasklist	""
+	Test tcpdump		"--version"
 	Test tee		"--version"
 	Test time		""
 	Test timeout	""
