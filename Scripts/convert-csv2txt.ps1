@@ -2,7 +2,7 @@
 .SYNOPSIS
 	Converts a .CSV file into a text file
 .DESCRIPTION
-	This PowerShell script converts a .CSV file into a text file.
+	This PowerShell script converts a .CSV file into a text file and prints it.
 .PARAMETER Path
 	Specifies the path to the .CSV file
 .EXAMPLE

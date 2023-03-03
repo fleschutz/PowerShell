@@ -43,7 +43,7 @@ try {
 		$x += $increment
 	}
 	[int]$Elapsed = $StopWatch.Elapsed.TotalSeconds
-	"✅ copied $ImageFile to $Frames frames in 📂$TargetDir in $Elapsed sec."
+	"✅ copied image $ImageFile to $Frames frames in 📂$TargetDir in $Elapsed sec."
 	exit 0 # success
 } catch {
 	"⚠️ Error in line $($_.InvocationInfo.ScriptLineNumber): $($Error[0])"
