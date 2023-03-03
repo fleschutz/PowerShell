@@ -15,20 +15,18 @@ try {
 	if ($IsLinux) {
 		# TODO
 	} else {
-		Write-Progress "⏳ Querying installed applications..."
+		Write-Progress "⏳ Querying installed apps & updates..."
 		$Apps = Get-AppxPackage
 		$Status = "✅ $($Apps.Count) apps installed"
 
-		Write-Progress "⏳ Checking installed applications..."
 		[int]$NumNonOk = 0
 		foreach($App in $Apps) { if ($App.Status -ne "Ok") { $NumNonOk++ } }
 		if ($NumNonOk -gt 0) { $Status += ", $NumNonOk non-ok" }
 		[int]$NumErrors = (Get-AppxLastError)
 		if ($NumErrors -gt 0) { $Status += ", $NumErrors errors" }
 
-		Write-Progress "⏳ Querying application upgrades..."
 		$NumUpdates = (winget upgrade --include-unknown).Count - 5
-		Write-Progress -Completed "Querying finished."
+		Write-Progress -Completed "."
 		Write-Host "$Status, $NumUpdates upgrades available"
 	}
 	exit 0 # success
