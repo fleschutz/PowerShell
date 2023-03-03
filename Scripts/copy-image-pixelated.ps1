@@ -33,7 +33,8 @@ try {
 
 	$Factor = 0.001
 	for ($i = 0; $i -lt 297; $i++) {
-		$TargetFile = "$TargetDir/$($Basename)_$($i).jpg"
+		$FrameNo = '{0:d4}' -f $i
+		$TargetFile = "$TargetDir/frame_$($FrameNo).jpg"
 		"⏳ ($($i + 3)/300) Copying to $TargetFile with pixelation factor $Factor..."
 		$Coeff1 = 100.0 * $Factor
 		$Coeff2 = 100.0 / $Factor
@@ -42,7 +43,7 @@ try {
 	}
 
 	[int]$Elapsed = $StopWatch.Elapsed.TotalSeconds
-	"✅ copied $SourceFile to a series of 300 pixelated images in 📂$TargetDir in $Elapsed sec."
+	"✅ copied $SourceFile to a series of 300 pixelated frames in 📂$TargetDir in $Elapsed sec."
 	exit 0 # success
 } catch {
 	"⚠️ Error in line $($_.InvocationInfo.ScriptLineNumber): $($Error[0])"

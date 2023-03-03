@@ -16,28 +16,28 @@
 	Author: Markus Fleschutz | License: CC0
 #>
 
-param([string]$ImageFile = "", [string]$TargetDir = "", [int]$ImageWidth = 1920, [int]$ImageHeight = 1393)
+param([string]$ImageFile = "", [string]$TargetDir = "", [int]$ImageWidth = 1920, [int]$ImageHeight = 1393, [int]$Frames = 300)
 
 try {
 	if ($ImageFile -eq "") { $ImageFile = Read-Host "Enter file path to image file" }
 	if ($TargetDir -eq "") { $TargetDir = Read-Host "Enter file path to target directory" }
 	$StopWatch = [system.diagnostics.stopwatch]::startNew()
 
-	"⏳ (1/300) Checking image file..."
+	"⏳ (1/$Frames) Checking image file..."
 	if (!(Test-Path "$ImageFile" -pathType leaf)) { throw "Can't access image file: $ImageFile" }
 	$Basename = (Get-Item "$ImageFile").Basename
 
-	"⏳ (2/300) Searching for ImageMagick 6..."
+	"⏳ (2/$Frames) Searching for ImageMagick 6..."
 	& convert-im6 --version
 	if ($lastExitCode -ne "0") { throw "Can't execute 'convert-im6' - make sure ImageMagick 6 is installed and available" }
 
 	[int]$centerX = $ImageWidth / 2 
 	[int]$centerY = $ImageHeight / 2
-	[int]$Frames = 300
 	[int]$x = 0
 	[float]$increment = $centerX / $Frames
 	for ($i = 0; $i -lt $Frames; $i++) {
-		$TargetFile = "$TargetDir/$($Basename)_$($i).jpg"
+		$FrameNo = '{0:d4}' -f $i
+		$TargetFile = "$TargetDir/frame_$($FrameNo).jpg"
 		"⏳ ($i/$Frames) Copying to $TargetFile..."
 		& convert-im6 -stroke black -strokewidth 9 -fill white -draw "circle $centerX,$centerY $x,$centerY" "$ImageFile" "$TargetFile"
 		$x += $increment
