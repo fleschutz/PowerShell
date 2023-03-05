@@ -24,20 +24,21 @@
 param([string]$RepoDir = "$PWD", [string]$Format = "list")
 
 try {
-	if (-not(test-path "$RepoDir" -pathType container)) { throw "Can't access directory: $RepoDir" }
+	if (-not(Test-Path "$RepoDir" -pathType container)) { throw "Can't access directory: $RepoDir" }
 
 	$Null = (git --version)
 	if ($lastExitCode -ne "0") { throw "Can't execute 'git' - make sure Git is installed and available" }
 
-	write-progress "🢃 Fetching latest tags..."
+	Write-Progress "🢃 Fetching latest tags..."
 	& git -C "$RepoDir" fetch --all --quiet
 	if ($lastExitCode -ne "0") { throw "'git fetch' failed" }
+	Write-Progress -Completed " "
 
 	if ($Format -eq "list") {
 		""
-		"ID      Date                            Committer               Description"
-		"--      ----                            ---------               -----------"
-		& git log --pretty=format:"%h%x09%ad%x09%an%x09%s"
+		"Hash            Date            Author                  Description"
+		"----            ----            ------                  -----------"
+		& git log --pretty=format:"%h%x09%cs%x09%an%x09%s"
 	} elseif ($Format -eq "compact") {
 		""
 		"List of Git Commits"
