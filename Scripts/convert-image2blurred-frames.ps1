@@ -16,7 +16,7 @@
 	Author: Markus Fleschutz | License: CC0
 #>
 
-param([string]$ImageFile = "", [string]$TargetDir = "", [int]$ImageWidth = 1920, [int]$ImageHeight = 1393, [int]$Frames = 300)
+param([string]$ImageFile = "", [string]$TargetDir = "", [int]$ImageWidth = 1920, [int]$ImageHeight = 1393, [int]$Frames = 600)
 
 try {
 	if ($ImageFile -eq "") { $ImageFile = Read-Host "Enter file path to image file" }
@@ -38,12 +38,12 @@ try {
 	for ($i = 0; $i -lt $Frames; $i++) {
 		$FrameNo = '{0:d4}' -f $i
 		$TargetFile = "$TargetDir/frame_$($FrameNo).jpg"
-		"⏳ ($i/$Frames) Copying to $TargetFile..."
+		"⏳ ($i/$Frames) Converting with r=$($centerX - $x) to $TargetFile..."
 		& convert-im6 -stroke black -strokewidth 9 -fill white -draw "circle $centerX,$centerY $x,$centerY" "$ImageFile" "$TargetFile"
 		$x += $increment
 	}
 	[int]$Elapsed = $StopWatch.Elapsed.TotalSeconds
-	"✅ converted image $ImageFile to $Frames frames in 📂$TargetDir in $Elapsed sec."
+	"✅ converted image $ImageFile to $Frames blurred frames in 📂$TargetDir in $Elapsed sec."
 	exit 0 # success
 } catch {
 	"⚠️ Error in line $($_.InvocationInfo.ScriptLineNumber): $($Error[0])"

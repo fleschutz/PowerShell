@@ -33,7 +33,7 @@ try {
 	& ffmpeg -framerate 24 -pattern_type glob -i "$SourcePattern" -c:v libx264 -pix_fmt yuv420p "$TargetFile"
 
 	[int]$Elapsed = $StopWatch.Elapsed.TotalSeconds
-	"✅ converted $($Files.Count) image frames to .MP4 video $TargetFile in $Elapsed sec."
+	"✅ converted $($Files.Count) image frames to video $TargetFile in $Elapsed sec."
 	exit 0 # success
 } catch {
 	"⚠️ Error in line $($_.InvocationInfo.ScriptLineNumber): $($Error[0])"
