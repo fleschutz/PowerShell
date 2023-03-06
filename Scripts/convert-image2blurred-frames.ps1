@@ -1,15 +1,15 @@
 ﻿<#
 .SYNOPSIS
-	Copy a single image into a series of blurred images
+	Converts an image into blurred frames
 .DESCRIPTION
-	This PowerShell script copies a single image file into a series of blurred images in a target dir.
+	This PowerShell script converts a single image file into a series of blurred frames in a target dir.
 	Requires ImageMagick 6.
 .PARAMETER ImageFile
 	Specifies the path to the image file
 .PARAMTER TargetDir
 	Specifies the path to the target folder
 .EXAMPLE
-	PS> ./copy-image-blurred C:\photo.jpg C:\Temp
+	PS> ./convert-image2blurred-frames C:\photo.jpg C:\Temp
 .LINK
 	https://github.com/fleschutz/PowerShell
 .NOTES
@@ -43,7 +43,7 @@ try {
 		$x += $increment
 	}
 	[int]$Elapsed = $StopWatch.Elapsed.TotalSeconds
-	"✅ copied image $ImageFile to $Frames frames in 📂$TargetDir in $Elapsed sec."
+	"✅ converted image $ImageFile to $Frames frames in 📂$TargetDir in $Elapsed sec."
 	exit 0 # success
 } catch {
 	"⚠️ Error in line $($_.InvocationInfo.ScriptLineNumber): $($Error[0])"

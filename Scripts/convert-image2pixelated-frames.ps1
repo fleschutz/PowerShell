@@ -1,15 +1,15 @@
 ﻿<#
 .SYNOPSIS
-	Copy a single image into a series of pixelated images
+	Converts an image into pixelated frames
 .DESCRIPTION
-	This PowerShell script copies a single image file into a series of pixelated images in a target dir.
+	This PowerShell script converts a single image file into a series of pixelated frames in a target dir.
 	Requires ImageMagick 6.
 .PARAMETER SourceFile
 	Specifies the path to the image source file
 .PARAMTER TargetDir
 	Specifies the path to the target folder
 .EXAMPLE
-	PS> ./copy-image-pixelated C:\my_photo.jpg C:\Temp
+	PS> ./convert-image2pixelated-frames C:\my_photo.jpg C:\Temp
 .LINK
 	https://github.com/fleschutz/PowerShell
 .NOTES
@@ -43,7 +43,7 @@ try {
 	}
 
 	[int]$Elapsed = $StopWatch.Elapsed.TotalSeconds
-	"✅ copied image $SourceFile to 300 pixelated frames in 📂$TargetDir in $Elapsed sec."
+	"✅ converted image $SourceFile to 300 pixelated frames in 📂$TargetDir in $Elapsed sec."
 	exit 0 # success
 } catch {
 	"⚠️ Error in line $($_.InvocationInfo.ScriptLineNumber): $($Error[0])"
