@@ -26,12 +26,12 @@ try {
 	[float]$Elapsed = $StopWatch.Elapsed.TotalSeconds
 
 	$Average = [math]::round($NumRows / $Elapsed, 1)
-	Write-Progress -completed "."
 	if ($Average -gt 10.0) {
-		Write-Host "✅ DNS resolution is $Average domains per second"
+		"✅ DNS resolution is $Average domains per second"
 	} else {  
-		Write-Host "⚠️ DNS resolution is $Average domains per second only!"
+		"⚠️ DNS resolution is $Average domains per second only!"
 	}
+	Write-Progress -completed "Done."
 	exit 0 # success
 } catch {
 	"⚠️ Error in line $($_.InvocationInfo.ScriptLineNumber): $($Error[0])"
