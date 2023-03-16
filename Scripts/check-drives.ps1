@@ -7,7 +7,7 @@
 	Specifies the minimum warning level (10 GB by default)
 .EXAMPLE
 	PS> ./check-drives
-	✅ Drive C uses 87GB of 249GB
+	✅ C drive uses 87GB of 249GB
 .LINK
 	https://github.com/fleschutz/PowerShell
 .NOTES
@@ -34,7 +34,8 @@ function Bytes2String { param([int64]$Bytes)
 
 try {
 	Write-Progress "⏳ Querying drives..."
-	$Drives = Get-PSDrive -PSProvider FileSystem 
+	$Drives = Get-PSDrive -PSProvider FileSystem
+	Write-Progress -completed "done."
 	foreach($Drive in $Drives) {
 		$ID = $Drive.Name
 		$Details = (Get-PSDrive $ID)
@@ -43,18 +44,17 @@ try {
 		[int64]$Total = ($Used + $Free)
 
 		if ($Total -eq 0) {
-			Write-Host "✅ Drive $ID is empty"
+			Write-Host "✅ $ID drive is empty"
 		} elseif ($Free -eq 0) {
-			Write-Host "⚠️ Drive $ID with $(Bytes2String $Total) is full!"
+			Write-Host "⚠️ $ID drive with $(Bytes2String $Total) is full!"
 		} elseif ($Free -lt $MinLevel) {
-			Write-Host "⚠️ Drive $ID with $(Bytes2String $Total) is nearly full ($(Bytes2String $Free) free)!"
+			Write-Host "⚠️ $ID drive with $(Bytes2String $Total) is nearly full ($(Bytes2String $Free) free)!"
 		} elseif ($Used -lt $Free) {
-			Write-Host "✅ Drive $ID uses $(Bytes2String $Used) of $(Bytes2String $Total)"
+			Write-Host "✅ $ID drive uses $(Bytes2String $Used) of $(Bytes2String $Total)"
 		} else {
-			Write-Host "✅ Drive $ID has $(Bytes2String $Free) of $(Bytes2String $Total) free"
+			Write-Host "✅ $ID drive has $(Bytes2String $Free) of $(Bytes2String $Total) free"
 		}
 	}
-	Write-Progress -completed "Querying drives finished."
 	exit 0 # success
 } catch {
 	"⚠️ Error in line $($_.InvocationInfo.ScriptLineNumber): $($Error[0])"
