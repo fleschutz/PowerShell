@@ -20,6 +20,7 @@ try {
 	Write-Progress "⏳ Sending a ping to 9 popular hosts..."
 	$HostsArray = $hosts.Split(",")
 	$Pings = Test-Connection -computerName $HostsArray -count 1
+	Write-Progress -Completed "."
 
 	[int]$Min = 9999999
 	[int]$Max = [int]$Avg = 0
@@ -30,8 +31,6 @@ try {
 		$Avg += $Latency
 	}
 	$Avg /= $Pings.count
-
-	Write-Progress -Completed "."
 	Write-Host "✅ Ping latency is $($Min)ms...$($Max)ms, $($Avg)ms average"
 	exit 0 # success
 } catch {

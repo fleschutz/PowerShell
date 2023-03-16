@@ -74,8 +74,8 @@ try {
 		$Socket = "$($Details.SocketDesignation) socket, "
 	}
 	$Cores = [System.Environment]::ProcessorCount
+	Write-Progress -completed "done."
 	Write-Host "$Status $CPUName ($Cores cores, $($DeviceID)$($Speed)$($Socket)$Temp)"
-	Write-Progress -completed "Querying CPU details finished."
 	exit 0 # success
 } catch {
 	"⚠️ Error in line $($_.InvocationInfo.ScriptLineNumber): $($Error[0])"
