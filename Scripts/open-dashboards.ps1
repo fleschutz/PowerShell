@@ -18,4 +18,5 @@
 & "$PSScriptRoot/open-default-browser.ps1" https://radio.garden/visit/kempten/V5Ryr1S4
 & "$PSScriptRoot/open-default-browser.ps1" https://www.foto-webcam.eu/
 & "$PSScriptRoot/open-default-browser.ps1" https://sunnyportal.com/FixedPages/Dashboard.aspx
+& "$PSScriptRoot/open-default-browser.ps1" https://covid19.who.int/
 exit 0 # success
