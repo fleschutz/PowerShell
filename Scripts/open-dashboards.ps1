@@ -11,6 +11,7 @@
 	Author: Markus Fleschutz | License: CC0
 #>
 
+& "$PSScriptRoot/open-default-browser.ps1" https://track.toggl.com/timer
 & "$PSScriptRoot/open-default-browser.ps1" https://news.google.com
 & "$PSScriptRoot/open-default-browser.ps1" https://www.windy.com/de/-Wetterradar-radar
 & "$PSScriptRoot/open-default-browser.ps1" https://www.arcgis.com/apps/dashboards/c8af9c5411814584b460cc87cb7c3780

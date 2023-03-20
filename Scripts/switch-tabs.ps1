@@ -1,12 +1,12 @@
 <#
 .SYNOPSIS
-	Presses the Next Tab hotkey
+	Switches browser tabs
 .DESCRIPTION
-	This PowerShell script presses the Next Tab keyboard shortcuts.
+	This PowerShell script switches browser tabs automatically every <n> seconds (by pressing Ctrl + PageDown).
 .EXAMPLE
 	PS> ./switch-tabs
 .NOTES
-	Author:  Markus Fleschutz / License: CC0
+	Author: Markus Fleschutz / License: CC0
 .LINK
 	https://github.com/fleschutz/talk2windows
 #>
@@ -14,7 +14,8 @@
 param([int]$Interval = 5) # in seconds
 
 try {
-	Write-Host "Switching browser tabs every $Interval seconds (press Ctrl + C to stop it)..." -noNewline
+	Write-Host "Switching browser tabs automatically every $Interval seconds."
+	Write-Host "Click into the browser window to activate it (press Ctrl + C here to stop it)..." -noNewline
 	$obj = New-Object -com wscript.shell
 	for ([int]$i = 0; $i -lt 1000; $i++) {
 		Write-Host "." -noNewline
@@ -23,6 +24,6 @@ try {
 	}
 	exit 0 # success
 } catch {
-	& "$PSScriptRoot/_reply.ps1" "Sorry: $($Error[0])"
+	"⚠️ Error in line $($_.InvocationInfo.ScriptLineNumber): $($Error[0])"
 	exit 1
 }
