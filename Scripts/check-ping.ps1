@@ -7,7 +7,7 @@
 	Specifies the hosts to check, seperated by commata (default is: amazon.com,bing.com,cnn.com,dropbox.com,facebook.com,google.com,live.com,twitter.com,youtube.com)
 .EXAMPLE
 	PS> ./check-ping
-	✅ Ping latency is 13ms...109ms, 25ms average.
+	✅ Ping latency is 13ms...109ms with 25ms average.
 .LINK
 	https://github.com/fleschutz/PowerShell
 .NOTES
@@ -20,7 +20,6 @@ try {
 	Write-Progress "⏳ Sending a ping to 9 popular hosts..."
 	$HostsArray = $hosts.Split(",")
 	$Pings = Test-Connection -computerName $HostsArray -count 1
-	Write-Progress -Completed "."
 
 	[int]$Min = 9999999
 	[int]$Max = [int]$Avg = 0
@@ -31,7 +30,9 @@ try {
 		$Avg += $Latency
 	}
 	$Avg /= $Pings.count
-	Write-Host "✅ Ping latency is $($Min)ms...$($Max)ms, $($Avg)ms average"
+
+	Write-Progress -Completed "."
+	Write-Host "✅ Ping latency is $($Min)ms...$($Max)ms with $($Avg)ms average"
 	exit 0 # success
 } catch {
 	"⚠️ Error in line $($_.InvocationInfo.ScriptLineNumber): $($Error[0])"

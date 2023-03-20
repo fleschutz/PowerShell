@@ -13,7 +13,7 @@
 #>
  
 try {
-	Write-Progress "⏳ Resolving 200 popular domains..."
+	Write-Progress "⏳ Resolving 200 popular domain names..."
 	$table = Import-CSV "$PSScriptRoot/../Data/popular-domains.csv"
 	$numRows = $table.Length
 
