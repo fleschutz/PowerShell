@@ -1,8 +1,8 @@
 ﻿<#
 .SYNOPSIS
-	Lists the local computer services
+	Lists the installed services
 .DESCRIPTION
-	This PowerShell script lists all local computer services.
+	This PowerShell script lists all services installed on the local computer.
 .EXAMPLE
 	PS> ./list-services
 
