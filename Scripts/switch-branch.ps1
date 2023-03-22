@@ -29,18 +29,18 @@ try {
 
 	$RepoDir = Resolve-Path "$RepoDir"
 	$RepoDirName = (Get-Item "$RepoDir").Name
-	Write-Host "⏳ (2/6) Checking 📂$RepoDirName repo..."
+	Write-Host "⏳ (2/6) Checking Git repository 📂$RepoDirName ..."
 	if (-not(Test-Path "$RepoDir" -pathType container)) { throw "Can't access directory: $RepoDir" }
 
 	$Result = (git status)
 	if ($lastExitCode -ne "0") { throw "'git status' in $RepoDir failed with exit code $lastExitCode" }
 	if ("$Result" -notmatch "nothing to commit, working tree clean") { throw "Git repository is NOT clean: $Result" }
 
-	"⏳ (3/6) Fetching updates..."
+	"⏳ (3/6) Fetching latest updates..."
 	& git -C "$RepoDir" fetch --all --prune --prune-tags --force
 	if ($lastExitCode -ne "0") { throw "'git fetch' failed with exit code $lastExitCode" }
 
-	"⏳ (4/6) Switching to '$BranchName' branch..."
+	"⏳ (4/6) Switching to branch '$BranchName'..."
 	& git -C "$RepoDir" checkout --recurse-submodules "$BranchName"
 	if ($lastExitCode -ne "0") { throw "'git checkout $BranchName' failed with exit code $lastExitCode" }
 
@@ -53,7 +53,7 @@ try {
 	if ($lastExitCode -ne "0") { throw "'git submodule update' failed with exit code $lastExitCode" }
 
 	[int]$Elapsed = $StopWatch.Elapsed.TotalSeconds
-	"✔️ switched to $BranchName branch in 📂$RepoDirName repo in $Elapsed sec."
+	"✔️ switched 📂$RepoDirName repo to $BranchName branch in $Elapsed sec."
 	exit 0 # success
 } catch {
 	"⚠️ Error in line $($_.InvocationInfo.ScriptLineNumber): $($Error[0])"
