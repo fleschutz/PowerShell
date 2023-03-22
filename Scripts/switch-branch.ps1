@@ -53,7 +53,7 @@ try {
 	if ($lastExitCode -ne "0") { throw "'git submodule update' failed with exit code $lastExitCode" }
 
 	[int]$Elapsed = $StopWatch.Elapsed.TotalSeconds
-	"✔️ switched 📂$RepoDirName repo to $BranchName branch in $Elapsed sec."
+	"✔️ switched 📂$RepoDirName repo to branch $BranchName in $Elapsed sec"
 	exit 0 # success
 } catch {
 	"⚠️ Error in line $($_.InvocationInfo.ScriptLineNumber): $($Error[0])"
