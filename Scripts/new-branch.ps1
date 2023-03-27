@@ -18,7 +18,7 @@
 param([string]$NewBranchName = "", [string]$RepoDir = "$PWD")
 
 try {
-	if ($NewBranchName -eq "") { $NewBranchName = read-host "Enter new branch name" }
+	if ($NewBranchName -eq "") { $NewBranchName = Read-Host "Enter new branch name" }
 
 	$StopWatch = [system.diagnostics.stopwatch]::startNew()
 
@@ -30,7 +30,7 @@ try {
 	Write-Host "⏳ (2/6) Checking Git repository...       📂$RepoDirName"
 	if (-not(Test-Path "$RepoDir" -pathType container)) { throw "Can't access directory: $RepoDir" }
 
-	"⏳ (3/6) Fetching updates..."
+	"⏳ (3/6) Fetching latest updates..."
 	& git -C "$RepoDir" fetch --all --recurse-submodules --prune --prune-tags --force
 	if ($lastExitCode -ne "0") { throw "'git fetch' failed with exit code $lastExitCode" }
 
@@ -50,7 +50,7 @@ try {
 	if ($lastExitCode -ne "0") { throw "'git submodule update' failed with exit code $lastExitCode" }
 
 	[int]$Elapsed = $StopWatch.Elapsed.TotalSeconds
-	"✔️ created new '$NewBranchName' branch based on '$CurrentBranchName' in 📂$RepoDirName repository in $Elapsed sec."
+	"✔️ created new branch '$NewBranchName' in 📂$RepoDirName repository (based on '$CurrentBranchName') in $Elapsed sec."
 	exit 0 # success
 } catch {
 	"⚠️ Error in line $($_.InvocationInfo.ScriptLineNumber): $($Error[0])"
