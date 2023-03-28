@@ -101,6 +101,7 @@ ABIOS,Advanced BIOS
 ABM,activity-based management
 ABP,AdBlock Plus
 ABP,Microsoft Exchange Address Book Policy
+ABR,"AutoBaud Rate or Available Bit Rate"
 abS,absiemens
 abV,abvolt
 ABVS,Automated Best Value System
@@ -286,7 +287,9 @@ AWT,Abstract Window Toolkit
 AXI,automated X-ray inspection
 AXT,alien crosstalk
 B2B,Business to Business
-B2C,Business To Consumer
+B2C,Business to Consumer
+B2G,"Business to Government, or Bitcoin2Gen"
+B2E,Business to Employee
 B8ZS,"bipolar 8-zero substitution, binary 8-zero substitution, clear channel, clear 64"
 BA,business agility
 BA,business analytics
@@ -388,6 +391,7 @@ BYON,Bring Your Own Network
 BYOT,bring your own technology
 BYOx,bring your own everything
 C&C,server command-and-control server
+C2C,Client to Client
 CA,cellular automaton
 CA,certificate authority
 CaaS,Communications as a Service
@@ -706,8 +710,9 @@ CX,consumer experience
 CXO,chief experience officer
 D-AMPS,Digital-Advanced Mobile Phone Service
 D-VHS,Digital Video Home System
-D2D2C,disk-to-disk-to-cloud
-D2D2T,disk-to-disk-to-tape
+D2D,Disk to Disk
+D2D2C,Disk to Disk to Cloud
+D2D2T,Disk to Disk to Tape
 DA,data analytics
 DAA,Data Access Arrangement
 DaaS,Desktop as a Service
@@ -1223,7 +1228,8 @@ FTTx,fiber to the x
 FUD,"Fear, Uncertainty, and Doubt"
 FUN,focus on user needs
 FYI,for your information
-G2G,government to government
+G2G,Government to Government
+G2C,Government to Consumer
 GAAP,Generally Accepted Accounting Principles
 GAAP,generally accepted accounting standards
 GaAs,gallium arsenide
@@ -1292,7 +1298,7 @@ GPMP,General Purpose Macro Processor
 GPO,Group Policy Object
 GPRS,General Packet Radio Services
 GPS,Global Positioning System
-GPT,GUID Partition Table
+GPT,"GUID Partition Table or Generative Pretrained Transformer"
 GPU,Graphics Processing Unit
 GRC,"governance, risk management and compliance"
 GRE,Generic Routing Encapsulation
@@ -1629,6 +1635,7 @@ LIDB,line information database
 LILO,LInux LOader
 LINQ,Language Integrated Query
 LISP,list processing
+LLM,large language model
 LLVM,Compiler Infrastructure (Low Level Virtual Machine)
 LMDS,Local Multi-Point Distribution System
 LMGTFY,Let Me Google That For You
@@ -1659,7 +1666,7 @@ LVS,Layout Verification Systems
 M&A,mergers and acquisitions
 M&O,Management and Operations
 M&S,Modeling and Simulation
-M2M,machine-to-machine
+M2M,Machine to Machine
 M3U,Moving Picture Experts Group Audio Layer 3
 MAC,mandatory access control
 MAC,message authentication code
@@ -1833,7 +1840,7 @@ NetBIOS,Network Basic Input/Output System
 NetPC,Network PC
 NeXT,near-end crosstalk
 NFC,Near Field Communication
-NFT,Non-fungible token
+NFT,Non-Fungible Token
 NFR,not for resale
 NFS,Network File System
 NFTS,national file tracking system
@@ -1892,6 +1899,7 @@ NVLAP,National Voluntary Laboratory Accreditation Program
 NVMe,non-volatile memory express
 NVS,nonvolatile storage
 NWR,NOAA Weather Radio
+O2O,Online to Offline
 OA&M,"operations, administration, and management"
 OAB,offline address book
 OASIS,Organization for the Advancement of Structured Information Standards
@@ -1980,8 +1988,9 @@ OWD,OneWebDay
 P&L,profit and loss statement
 P-Ink,photonic ink
 P2P,path to profitability
-P2P,peer-to-peer 
+P2P,Peer to Peer 
 P2P,procure to pay
+P2T,Push to Talk
 P2V,physical to virtual
 P3P,Platform for Privacy Preferences
 P4,Pentium 4
@@ -2632,6 +2641,7 @@ TVA,Throughput Value Added
 TW,tin whiskers
 TWG,Technology Working Group
 TWT,traveling-wave tube
+U2U,User to User
 UART,Universal Asynchronous Receiver/Transmitter
 UAT,user acceptance testing
 UBE,unsolicited bulk email
