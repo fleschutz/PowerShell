@@ -1,8 +1,8 @@
 ﻿<#
 .SYNOPSIS
-	Pulls repository updates 
+	Pulls Git repo updates 
 .DESCRIPTION
-	This PowerShell script pulls updates for a local Git repository (including submodules).
+	This PowerShell script pulls updates into a local Git repository (including submodules).
 .PARAMETER RepoDir
 	Specifies the file path to the local Git repository (default is working directory)
 .EXAMPLE
@@ -29,7 +29,7 @@ try {
 	$Result = (git -C "$RepoDir" status)
 	if ("$Result" -match "HEAD detached at ") { throw "Currently in detached HEAD state (not on a branch!), so nothing to pull" }
 
-	Write-Host "⏳ (3/4) Pulling updates...                " -noNewline
+	Write-Host "⏳ (3/4) Pulling latest updates..."
 	& git -C "$RepoDir" pull --recurse-submodules=yes
 	if ($lastExitCode -ne "0") { throw "'git pull' failed with exit code $lastExitCode" }
 
