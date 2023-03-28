@@ -1,8 +1,8 @@
 ﻿<#
 .SYNOPSIS
-	Describes an abbreviation
+	Explains an abbreviation
 .DESCRIPTION
-	This PowerShell script queries and prints a description of the given abbreviation.
+	This PowerShell script queries the description of the given abbreviation and prints it.
 .PARAMETER abbr
 	Specifies the abbreviation to look for
 .EXAMPLE
@@ -18,19 +18,19 @@ param([string]$abbr = "")
 try {
 	if ($abbr -eq "" ) { $abbr = Read-Host "Enter the abbreviation" }
 
-	$Missing = $true
 	$Files = (Get-ChildItem "$PSScriptRoot/../Data/Abbr/*.csv")
-	foreach ($File in $Files) {
+	[int]$Matches = 0
+	foreach($File in $Files) {
 		$Table = Import-CSV "$File"
 		foreach($Row in $Table) {
 			if ($Row.ABBR -eq $abbr) {
 				$Basename = (Get-Item "$File").Basename -Replace "_"," "
-				"💡 In $Basename $($Row.ABBR) may refer to $($Row.TERM)."
-				$Missing = $false
+				"💡 In $Basename $($Row.ABBR) may refer to: $($Row.TERM)"
+				$Matches++
 			}
 		}
 	}
-	if ($Missing) { "Sorry, '$abbr' is missing in the database." }
+	if ($Matches -eq 0) { "Sorry, '$abbr' is missing in the database." }
 	exit 0 # success
 } catch {
 	"⚠️ Error in line $($_.InvocationInfo.ScriptLineNumber): $($Error[0])"
