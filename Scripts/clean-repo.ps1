@@ -1,11 +1,11 @@
 ﻿<#
 .SYNOPSIS
-	Clean a repository
+	Cleans a repo
 .DESCRIPTION
-	This PowerShell script deletes all untracked files and folders in a Git repository (including submodules).
+	This PowerShell script deletes all untracked files and folders in a local Git repository (including submodules).
 	NOTE: To be used with care! This cannot be undone!
 .PARAMETER RepoDir
-	Specifies the path to the Git repository
+	Specifies the file path to the local Git repository
 .EXAMPLE
 	PS> ./clean-repo C:\MyRepo
 .LINK
@@ -27,7 +27,7 @@ try {
 	"⏳ (2/4) Checking Git repository...                📂$RepoDirName"
 	if (-not(Test-Path "$RepoDir" -pathType container)) { throw "Can't access folder '$RepoDir' - maybe a typo or missing folder permissions?" }
 
-	"⏳ (3/4) Removing untracked files in repository..."
+	"⏳ (3/4) Removing untracked files in the repository..."
 	& git -C "$RepoDir" clean -xfd -f # to delete all untracked files in the main repo
 	if ($lastExitCode -ne "0") {
 		Write-Warning "'git clean' failed with exit code $lastExitCode, retrying once..."
@@ -35,12 +35,12 @@ try {
 		if ($lastExitCode -ne "0") { throw "'git clean' failed with exit code $lastExitCode" }
 	}
 
-	"⏳ (4/4) Removing untracked files in submodules..."
+	"⏳ (4/4) Removing untracked files in the submodules..."
 	& git -C "$RepoDir" submodule foreach --recursive git clean -xfd -f # to delete all untracked files in the submodules
 	if ($lastExitCode -ne "0") { throw "'git clean' in the submodules failed with exit code $lastExitCode" }
 
 	[int]$Elapsed = $StopWatch.Elapsed.TotalSeconds
-	"✔️ cleaned 📂$RepoDirName repository in $Elapsed sec."
+	"✔️ cleaned 📂$RepoDirName repo in $Elapsed sec"
 	exit 0 # success
 } catch {
 	"⚠️ Error in line $($_.InvocationInfo.ScriptLineNumber): $($Error[0])"

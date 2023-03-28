@@ -1,8 +1,8 @@
 ﻿<#
 .SYNOPSIS
-	Pulls Git repo updates 
+	Pulls updates into a repo
 .DESCRIPTION
-	This PowerShell script pulls updates into a local Git repository (including submodules).
+	This PowerShell script pulls the latest updates into a local Git repository (including submodules).
 .PARAMETER RepoDir
 	Specifies the file path to the local Git repository (default is working directory)
 .EXAMPLE
@@ -38,7 +38,7 @@ try {
 	if ($lastExitCode -ne "0") { throw "'git submodule update' failed with exit code $lastExitCode" }
 
 	[int]$Elapsed = $StopWatch.Elapsed.TotalSeconds
-	"✔️ updated 📂$RepoDirName repository in $Elapsed sec."
+	"✔️ updated 📂$RepoDirName repo in $Elapsed sec"
 	exit 0 # success
 } catch {
 	"⚠️ Error in line $($_.InvocationInfo.ScriptLineNumber): $($Error[0])"
