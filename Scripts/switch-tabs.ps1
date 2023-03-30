@@ -16,7 +16,7 @@
 param([int]$Interval = 10) # in seconds
 
 try {
-	Write-Host "✅ Switching browser tabs automatically every $Interval seconds..."
+	Write-Host "⏳ Switching browser tabs automatically every $Interval seconds..."
 	Write-Host "   (click into the browser window to activate it, press Ctrl + C here to stop it)"
 	$obj = New-Object -com wscript.shell
 	while ($true) {
