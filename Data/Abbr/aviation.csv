@@ -1,6 +1,9 @@
 ABBR,TERM
 3P,"Perceive, Process, Perform"
 5P,"Plan, Plane, Pilot, Passengers, Programming"
+7500,"Transponder code for Aircraft hijacking (ICAO)"
+7600,"Transponder code for Radio failure (lost communications, ICAO)"
+7700,"Transponder code for Emergency (ICAO)"
 A/A,Air to air TACAN function
 A/C,Aircraft
 A/D,Aerodrome
