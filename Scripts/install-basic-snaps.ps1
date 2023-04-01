@@ -22,8 +22,7 @@ try {
 	sudo snap install firefox
 	sudo snap install go
 	sudo snap install hugo
-	sudo snap install nano
-	sudo snap install vlc
+	sudo snap install nano --classic
 	
 	[int]$Elapsed = $StopWatch.Elapsed.TotalSeconds
 	"✔️ installed basic snaps in $Elapsed sec"
