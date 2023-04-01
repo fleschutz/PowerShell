@@ -1,6 +1,6 @@
 ﻿<#
 .SYNOPSIS
-	Clones Git repositories
+	Clones popular repos
 .DESCRIPTION
 	This PowerShell script clones popular Git repositories into a target directory.
 .PARAMETER targetDir
@@ -49,11 +49,11 @@ try {
 			continue
 		}
 		if ($Full -eq "yes") {
-			"⏳ ($Step/$($NumEntries + 4)) Cloning into 📂$($FolderName) ($Branch branch with full history)..."
+			"⏳ ($Step/$($NumEntries + 4)) Cloning into 📂$FolderName ($Branch branch with full history)..."
 			& git clone --branch "$Branch" --recurse-submodules "$URL" "$TargetDir/$FolderName"
 			if ($lastExitCode -ne "0") { throw "'git clone --branch $Branch $URL' failed with exit code $lastExitCode" }
 		} else {
-			"⏳ ($Step/$($NumEntries + 4)) Cloning $Branch branch into 📂$FolderName..."
+			"⏳ ($Step/$($NumEntries + 4)) Cloning into 📂$FolderName ($Branch branch only)..."
 			& git clone --branch "$Branch" --single-branch --recurse-submodules "$URL" "$TargetDir/$FolderName"
 			if ($lastExitCode -ne "0") { throw "'git clone --branch $Branch $URL' failed with exit code $lastExitCode" }
 		}
@@ -61,9 +61,9 @@ try {
 	}
 	[int]$Elapsed = $StopWatch.Elapsed.TotalSeconds
 	if ($Cloned -eq 1) {
-		"✔️ 1 repository cloned into 📂$TargetDirName in $Elapsed sec ($Skipped skipped)."
+		"✔️ 1 repo cloned into 📂$TargetDirName in $Elapsed sec ($Skipped skipped)"
 	} else {
-		"✔️ $Cloned repositories cloned into 📂$TargetDirName in $Elapsed sec ($Skipped skipped)."
+		"✔️ $Cloned repos cloned into 📂$TargetDirName in $Elapsed sec ($Skipped skipped)"
 	}
 	exit 0 # success
 } catch {
