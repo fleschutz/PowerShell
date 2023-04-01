@@ -14,8 +14,16 @@
 try {
 	$StopWatch = [system.diagnostics.stopwatch]::startNew()
 
-	"⏳ (1/1) Installing ant..."
+	"⏳ Installing basic snaps..."
 	sudo snap install ant
+	sudo snap install bashtop
+	sudo snap install cmake
+	sudo snap install cppcheck
+	sudo snap install firefox
+	sudo snap install go
+	sudo snap install hugo
+	sudo snap install nano
+	sudo snap install vlc
 	
 	[int]$Elapsed = $StopWatch.Elapsed.TotalSeconds
 	"✔️ installed basic snaps in $Elapsed sec"
