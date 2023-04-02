@@ -19,18 +19,18 @@ try {
 
 	$stopWatch = [system.diagnostics.stopwatch]::startNew()
 	if ($IsLinux) {
-		foreach($row in $table){$nop=dig $row.Domain +short}
+foreach($row in $table){$nop=dig $row.Domain +short}
 	} else {
-		foreach($row in $table){$nop=Resolve-DNSName $row.Domain}
+foreach($row in $table){$nop=Resolve-DNSName $row.Domain}
 	}
 	[float]$elapsed = $stopWatch.Elapsed.TotalSeconds
 
 	Write-Progress -completed "."
 	$average = [math]::round($numRows / $elapsed, 1)
-	if ($average -gt 10.0) {
-		"✅ DNS resolves $average domains per second"
-	} else {  
+	if ($average -lt 10.0) {
 		"⚠️ DNS resolves $average domains per second only!"
+	} else {  
+		"✅ DNS resolves $average domains per second"
 	}
 	exit 0 # success
 } catch {
