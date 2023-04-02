@@ -18,11 +18,11 @@ try {
 
 	"⏳ Step 1/10: Updating package infos..."
 	& sudo apt update -y
-	if ($lastExitCode -ne "0") { throw "'sudo apt update' failed" }
+	if ($lastExitCode -ne "0") { throw "'apt update' failed" }
 
 	"⏳ Step 2/10: Installing Unbound package..."
-	& sudo apt install unbound -y
-	if ($lastExitCode -ne "0") { throw "'sudo apt install unbound' failed" }
+	& sudo apt install unbound unbound-anchor -y
+	if ($lastExitCode -ne "0") { throw "'apt install unbound' failed" }
 
 	"⏳ Step 3/10: Setting up Unbound..."
 	& sudo unbound-control-setup
