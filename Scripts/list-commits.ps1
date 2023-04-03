@@ -1,12 +1,12 @@
 ﻿<#
 .SYNOPSIS
-	Lists all commits in a Git repository
+	Lists Git commits
 .DESCRIPTION
-	This PowerShell script lists all commits in a Git repository. Supported output formats are: list, compact, normal or JSON.
+	This PowerShell script lists all commits in a Git repository. Supported output formats are: pretty, list, compact, normal or JSON.
 .PARAMETER RepoDir
 	Specifies the path to the Git repository.
 .PARAMETER Format
-	Specifies the output format: list|compact|normal|JSON
+	Specifies the output format: pretty|list|compact|normal|JSON (pretty by default)
 .EXAMPLE
 	PS> ./list-commits
 
@@ -21,7 +21,7 @@
 	Author: Markus Fleschutz | License: CC0
 #>
 
-param([string]$RepoDir = "$PWD", [string]$Format = "list")
+param([string]$RepoDir = "$PWD", [string]$Format = "pretty")
 
 try {
 	if (-not(Test-Path "$RepoDir" -pathType container)) { throw "Can't access directory: $RepoDir" }
@@ -29,12 +29,15 @@ try {
 	$Null = (git --version)
 	if ($lastExitCode -ne "0") { throw "Can't execute 'git' - make sure Git is installed and available" }
 
-	Write-Progress "🢃 Fetching latest tags..."
+	Write-Progress "⏳ Fetching latest updates..."
 	& git -C "$RepoDir" fetch --all --quiet
 	if ($lastExitCode -ne "0") { throw "'git fetch' failed" }
 	Write-Progress -Completed " "
 
-	if ($Format -eq "list") {
+	if ($Format -eq "pretty") {
+		""
+		& git -C "$RepoDir" log --graph --format=format:'%h %C(bold green)%cs %C(bold yellow)%s%C(reset)%d by %C(bold blue)%an%C(reset)' --all
+	} elseif ($Format -eq "list") {
 		""
 		"Hash            Date            Author                  Description"
 		"----            ----            ------                  -----------"
