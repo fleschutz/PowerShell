@@ -1,6 +1,6 @@
 ﻿<#
 .SYNOPSIS
-	Pulls updates into a repo
+	Pulls repo updates 
 .DESCRIPTION
 	This PowerShell script pulls the latest updates into a local Git repository (including submodules).
 .PARAMETER RepoDir
@@ -18,13 +18,13 @@ param([string]$RepoDir = "$PWD")
 try {
 	$StopWatch = [system.diagnostics.stopwatch]::startNew()
 
-	Write-Host "⏳ (1/4) Searching for Git executable...   " -noNewline
+	Write-Host "⏳ (1/4) Searching for Git executable...  " -noNewline
 	& git --version
 	if ($lastExitCode -ne "0") { throw "Can't execute 'git' - make sure Git is installed and available" }
 
-	$RepoDirName = (Get-Item "$RepoDir").Name
-	Write-Host "⏳ (2/4) Checking Git repository...        📂$RepoDirName"
+	Write-Host "⏳ (2/4) Checking repository...           📂$RepoDir"
 	if (-not(Test-Path "$RepoDir" -pathType container)) { throw "Can't access folder: $RepoDir" }
+	$RepoDirName = (Get-Item "$RepoDir").Name
 
 	$Result = (git -C "$RepoDir" status)
 	if ("$Result" -match "HEAD detached at ") { throw "Currently in detached HEAD state (not on a branch!), so nothing to pull" }
@@ -38,7 +38,7 @@ try {
 	if ($lastExitCode -ne "0") { throw "'git submodule update' failed with exit code $lastExitCode" }
 
 	[int]$Elapsed = $StopWatch.Elapsed.TotalSeconds
-	"✔️ updated 📂$RepoDirName repo in $Elapsed sec"
+	"✔️ updated repository 📂$RepoDirName in $Elapsed sec"
 	exit 0 # success
 } catch {
 	"⚠️ Error in line $($_.InvocationInfo.ScriptLineNumber): $($Error[0])"
