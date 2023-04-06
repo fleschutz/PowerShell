@@ -20,7 +20,7 @@ try {
 	& sudo apt update -y
 	if ($lastExitCode -ne "0") { throw "'apt update' failed" }
 
-	"⏳ (2/10) Installing the Unbound package..."
+	"⏳ (2/10) Installing the Unbound packages..."
 	& sudo apt install unbound unbound-anchor -y
 	if ($lastExitCode -ne "0") { throw "'apt install unbound' failed" }
 
