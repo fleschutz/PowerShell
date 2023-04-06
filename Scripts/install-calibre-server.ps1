@@ -1,6 +1,6 @@
 ﻿<#
 .SYNOPSIS
-	Installs a Calibre server (needs admin rights)
+	Installs Calibre server (needs admin rights)
 .DESCRIPTION
 	This PowerShell script installs and starts a local Calibre server as background process (using Web port 8099 by default).
 .PARAMETER port
@@ -20,19 +20,22 @@ param([int]$Port = 8099, [string]$UserDB = "$HOME/CalibreUsers.sqlite", [string]
 try {
 	$StopWatch = [system.diagnostics.stopwatch]::startNew()
 
-	"⏳ (1/4) Updating package infos..."
+	"⏳ (1/5) Updating package infos..."
 	& sudo apt update -y
 	if ($lastExitCode -ne "0") { throw "'apt update' failed" }
 
-	"⏳ (2/4) Installing the Calibre package..."
+	"⏳ (2/5) Installing the Calibre package..."
 	& sudo apt install calibre -y
 	if ($lastExitCode -ne "0") { throw "'apt install calibre' failed" }
 
-	"⏳ (3/4) Searching for Calibre server executable..."
+	"⏳ (3/5) Searching for Calibre server executable..."
 	& calibre-server --version
 	if ($lastExitCode -ne "0") { throw "Can't execute 'calibre-server' - make sure Calibre server is installed and available" }
 
-	"⏳ (4/4) Starting Calibre server as background process..."
+	"⏳ (4/5) Creating folder 'Calibre Library' in your home directory..."
+	mkdir $HOME/'Calibre Library'
+
+	"⏳ (5/5) Starting Calibre server as background process..."
 	& calibre-server --port $Port --num-per-page 100 --userdb $UserDB --log $Logfile --daemonize $HOME/'Calibre Library'
 
 	[int]$Elapsed = $StopWatch.Elapsed.TotalSeconds
