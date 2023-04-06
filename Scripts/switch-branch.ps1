@@ -23,14 +23,14 @@ try {
 
 	$StopWatch = [system.diagnostics.stopwatch]::startNew()
 
-	Write-Host "⏳ (1/6) Searching for Git executable...  " -noNewline
+	Write-Host "⏳ (1/6) Searching for Git executable...   " -noNewline
 	& git --version
 	if ($lastExitCode -ne "0") { throw "Can't execute 'git' - make sure Git is installed and available" }
 
 	$RepoDir = Resolve-Path "$RepoDir"
-	$RepoDirName = (Get-Item "$RepoDir").Name
-	Write-Host "⏳ (2/6) Checking Git repository 📂$RepoDirName ..."
+	Write-Host "⏳ (2/6) Checking repository...            📂$RepoDir"
 	if (-not(Test-Path "$RepoDir" -pathType container)) { throw "Can't access directory: $RepoDir" }
+	$RepoDirName = (Get-Item "$RepoDir").Name
 
 	$Result = (git status)
 	if ($lastExitCode -ne "0") { throw "'git status' in $RepoDir failed with exit code $lastExitCode" }
@@ -53,7 +53,7 @@ try {
 	if ($lastExitCode -ne "0") { throw "'git submodule update' failed with exit code $lastExitCode" }
 
 	[int]$Elapsed = $StopWatch.Elapsed.TotalSeconds
-	"✔️ switched 📂$RepoDirName repo to '$BranchName' branch in $Elapsed sec"
+	"✔️ switched repository 📂$RepoDirName to branch '$BranchName' in $Elapsed sec"
 	exit 0 # success
 } catch {
 	"⚠️ Error in line $($_.InvocationInfo.ScriptLineNumber): $($Error[0])"
