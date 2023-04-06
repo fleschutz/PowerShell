@@ -1,10 +1,10 @@
 ﻿<#
 .SYNOPSIS
-	Installs Unbound (needs admin rights)
+	Installs Unbound server (needs admin rights)
 .DESCRIPTION
 	This PowerShell script installs Unbound, a validating, recursive, caching DNS resolver. It needs admin rights.
 .EXAMPLE
-	PS> ./install-unbound
+	PS> ./install-unbound-server
 .LINK
 	https://github.com/fleschutz/PowerShell
 .NOTES
@@ -20,7 +20,7 @@ try {
 	& sudo apt update -y
 	if ($lastExitCode -ne "0") { throw "'apt update' failed" }
 
-	"⏳ (2/10) Installing Unbound package..."
+	"⏳ (2/10) Installing the Unbound package..."
 	& sudo apt install unbound unbound-anchor -y
 	if ($lastExitCode -ne "0") { throw "'apt install unbound' failed" }
 
@@ -49,11 +49,11 @@ try {
 	& sudo unbound-control start
 	if ($lastExitCode -ne "0") { throw "'unbound-control start' failed" }
 
-	"⏳ (9/10) Checking Unbound status..."
+	"⏳ (9/10) Checking status of Unbound..."
 	& sudo unbound-control status
 	if ($lastExitCode -ne "0") { throw "'unbound-control status' failed" }
 
-	"⏳ (10/10) Training Unbound with popular domain names..."
+	"⏳ (10/10) Training Unbound with 200 popular domain names..."
 	& "$PSScriptRoot/check-dns.ps1" 
 	if ($lastExitCode -ne "0") { throw "'unbound-control status' failed" }
 
