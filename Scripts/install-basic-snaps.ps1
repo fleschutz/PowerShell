@@ -1,8 +1,8 @@
 ﻿<#
 .SYNOPSIS
-	Installs basic snaps
+	Installs basic Linux snaps 
 .DESCRIPTION
-	This PowerShell script installs basic Windows apps such as browser, e-mail client, etc.
+	This PowerShell script installs basic Linux snaps.
 .EXAMPLE
 	PS> ./install-basic-snaps
 .LINK
@@ -13,8 +13,9 @@
 
 try {
 	$StopWatch = [system.diagnostics.stopwatch]::startNew()
+	if (!$IsLinux) { throw "Only Linux currently support snaps" }
 
-	"⏳ Installing basic snaps..."
+	"⏳ Installing basic snaps (sorted alphabetically)..."
 	sudo snap install ant
 	sudo snap install audacity
 	sudo snap install bashtop
@@ -26,8 +27,10 @@ try {
 	sudo snap install firefox
 	sudo snap install gimp
 	sudo snap install go
+	sudo snap install groovy
 	sudo snap install hugo
 	sudo snap install nano --classic
+	sudo snap install nextcloud
 	
 	[int]$Elapsed = $StopWatch.Elapsed.TotalSeconds
 	"✔️ installed basic snaps in $Elapsed sec"
