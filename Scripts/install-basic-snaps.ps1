@@ -31,6 +31,7 @@ try {
 	sudo snap install hugo
 	sudo snap install nano --classic
 	sudo snap install nextcloud
+	sudo snap install plexmediaserver
 	
 	[int]$Elapsed = $StopWatch.Elapsed.TotalSeconds
 	"✔️ installed basic snaps in $Elapsed sec"
