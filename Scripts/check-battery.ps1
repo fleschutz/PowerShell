@@ -5,7 +5,7 @@
 	This PowerShell script queries the status of the system battery and prints it.
 .EXAMPLE
 	PS> ./check-battery
-	✅ Battery 21%, 54 min. remaining
+	✅ 21% battery life, 54 min remaining
 .LINK
 	https://github.com/fleschutz/PowerShell
 .NOTES
@@ -32,11 +32,11 @@ try {
 		}
 		"Offline" {
 			if ($Percent -eq 100) {
-				$Reply = "✅ Battery $Percent% full, $Remaining min. remaining"
+				$Reply = "✅ $Percent% full battery, $Remaining min remaining"
 			} elseif ($Remaining -gt 30) {
-				$Reply = "✅ Battery $Percent%, $Remaining min. remaining"
+				$Reply = "✅ $Percent% battery life, $Remaining min remaining"
 			} else {
-				$Reply = "⚠️ Battery $Percent%, only $Remaining min. remaining"
+				$Reply = "⚠️ $Percent% battery life, only $Remaining min remaining"
 			}
 		}
 		}
