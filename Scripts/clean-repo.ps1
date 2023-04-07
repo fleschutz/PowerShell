@@ -19,13 +19,13 @@ param([string]$RepoDir = "$PWD")
 try {
 	$StopWatch = [system.diagnostics.stopwatch]::startNew()
 
-	"⏳ (1/4) Checking path to repository...      📂$RepoDir"
-	if (-not(Test-Path "$RepoDir" -pathType container)) { throw "Can't access folder '$RepoDir' - maybe a typo or missing folder permissions?" }
-	$RepoDirName = (Get-Item "$RepoDir").Name
-
-	Write-Host "⏳ (2/4) Searching for Git executable...     " -noNewline
+	Write-Host "⏳ (1/4) Searching for Git executable...     " -noNewline
 	& git --version
 	if ($lastExitCode -ne "0") { throw "Can't execute 'git' - make sure Git is installed and available" }
+
+	"⏳ (2/4) Checking repository...              📂$RepoDir"
+	if (-not(Test-Path "$RepoDir" -pathType container)) { throw "Can't access folder '$RepoDir' - maybe a typo or missing folder permissions?" }
+	$RepoDirName = (Get-Item "$RepoDir").Name
 
 	"⏳ (3/4) Removing untracked files in the repository..."
 	& git -C "$RepoDir" clean -xfd -f # to delete all untracked files in the main repo
