@@ -2,7 +2,7 @@
 .SYNOPSIS
 	Installs basic Linux snaps 
 .DESCRIPTION
-	This PowerShell script installs 17 basic Linux snaps.
+	This PowerShell script installs 18 basic Linux snaps.
 .EXAMPLE
 	PS> ./install-basic-snaps
 .LINK
@@ -15,7 +15,7 @@ try {
 	$StopWatch = [system.diagnostics.stopwatch]::startNew()
 	if (!$IsLinux) { throw "Only Linux currently support snaps" }
 
-	"⏳ Installing 17 basic snaps (sorted alphabetically)..."
+	"⏳ Installing 18 basic snaps (sorted alphabetically)..."
 	sudo snap install ant
 	sudo snap install audacity
 	sudo snap install bashtop
@@ -32,6 +32,7 @@ try {
 	sudo snap install jenkins --edge --classic 
 	sudo snap install nano --classic
 	sudo snap install nextcloud
+	sudo snap install node --classic
 	sudo snap install plexmediaserver
 	
 	[int]$Elapsed = $StopWatch.Elapsed.TotalSeconds
