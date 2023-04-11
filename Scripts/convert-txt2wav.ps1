@@ -23,7 +23,7 @@ try {
 
 	Add-Type -AssemblyName System.Speech
 	$SpeechSynthesizer = New-Object System.Speech.Synthesis.SpeechSynthesizer
-	$SpeechSynthesizer.SetOutputToWaveFile($tWavFile)
+	$SpeechSynthesizer.SetOutputToWaveFile($WavFile)
 	$SpeechSynthesizer.Speak($Text)
 	$SpeechSynthesizer.Dispose()
 	exit 0 # success
