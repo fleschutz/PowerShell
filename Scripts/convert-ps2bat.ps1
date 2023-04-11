@@ -34,9 +34,9 @@ function Convert-PowerShellToBatch
 }
  
 try {
-	if ($Filepattern -eq "") { $Filepattern = read-host "Enter path to the PowerShell script(s)" }
+	if ($Filepattern -eq "") { $Filepattern = Read-Host "Enter path to the PowerShell script(s)" }
 
-	$Files = get-childItem -path "$Filepattern"
+	$Files = Get-ChildItem -path "$Filepattern"
 	foreach ($File in $Files) {
 		Convert-PowerShellToBatch "$File"
 	}

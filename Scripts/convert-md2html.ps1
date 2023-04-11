@@ -1,12 +1,12 @@
 <#
 .SYNOPSIS
-	Converts .DOCX file(s) into Markdown 
+	Converts Markdown file(s) into HTML 
 .DESCRIPTION
-	This PowerShell script converts .DOCX file(s) into Markdown.
+	This PowerShell script converts Markdown file(s) into HTML.
 .PARAMETER FilePattern
-	Specifies the file pattern to the .DOCX file(s)
+	Specifies the file pattern to the Markdown file(s)
 .EXAMPLE
-	PS> ./convert-docx2md *.docx
+	PS> ./convert-md2html *.md
 .LINK
 	https://github.com/fleschutz/PowerShell
 .NOTES
@@ -18,7 +18,7 @@ param([string]$FilePattern = "")
 try {
 	$StopWatch = [system.diagnostics.stopwatch]::startNew()
 
-	if ($FilePattern -eq "" ) { $FilePattern = Read-Host "Enter the file pattern to the .DOCX file(s)" }
+	if ($FilePattern -eq "" ) { $FilePattern = Read-Host "Enter the file pattern to the Markdown file(s)" }
 
 	Write-Host "⏳ Searching for pandoc..." 
 	$null = (pandoc --version)
@@ -26,10 +26,9 @@ try {
 
 	Write-Host "⏳ Converting..."
 	gci -r -i $FilePattern | foreach {
-		$TargetPath = $_.directoryname + "\" + $_.basename + ".md"
-		pandoc -f docx -s $_.name -o $TargetPath
+		$TargetPath = $_.directoryname + "\" + $_.basename + ".html"
+		pandoc -f md -s $_.name -o $TargetPath
 	}
-
 	[int]$Elapsed = $StopWatch.Elapsed.TotalSeconds
 	"✔️ converted in $Elapsed sec"
 	exit 0 # success
