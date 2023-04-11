@@ -1,8 +1,8 @@
 ﻿<#
 .SYNOPSIS
-	Query OS details
+	Checks the OS status
 .DESCRIPTION
-	This PowerShell script queries and lists operating system details.
+	This PowerShell script queries the operating system status and prints it.
 .EXAMPLE
 	PS> ./check-os
 	✅ Windows 10 Pro 64-bit (v10.0.19045, since 6/22/2021, S/N 00123-45678-15135-AAOEM, P/K AB123-CD456-EF789-GH000-WFR6P)

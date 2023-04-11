@@ -1,11 +1,11 @@
 ﻿<#
 .SYNOPSIS
-	Checks the RAM 
+	Check the RAM status
 .DESCRIPTION
-	This PowerShell script queries and prints details of the installed RAM.
+	This PowerShell script queries the status of the installed RAM and prints it.
 .EXAMPLE
 	PS> ./check-ram
-	✅ 8GB DDR4 RAM @ 3200MHz (1.2V) in P0 CHANNEL A/DIMM 0 by Samsung
+	✅ 16GB DDR4 RAM @ 3200MHz (1.2V) in P0 CHANNEL A/DIMM 0 by Samsung
 .LINK
 	https://github.com/fleschutz/PowerShell
 .NOTES

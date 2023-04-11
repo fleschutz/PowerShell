@@ -1,10 +1,11 @@
 ﻿<#
 .SYNOPSIS
-	Query app details
+	Query the app status
 .DESCRIPTION
-	This PowerShell script queries application details and lists it.
+	This PowerShell script queries the application status and prints it.
 .EXAMPLE
 	PS> ./check-apps
+	✅ 119 apps installed, 11 upgrades available
 .LINK
 	https://github.com/fleschutz/PowerShell
 .NOTES
@@ -15,7 +16,7 @@ try {
 	if ($IsLinux) {
 		# TODO
 	} else {
-		Write-Progress "⏳ Querying installed apps & updates..."
+		Write-Progress "⏳ Querying installed apps and updates..."
 		$Apps = Get-AppxPackage
 		$Status = "✅ $($Apps.Count) apps installed"
 

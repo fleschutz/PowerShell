@@ -1,11 +1,11 @@
 ﻿<#
 .SYNOPSIS
-	Checks the BIOS
+	Checks the BIOS status
 .DESCRIPTION
 	This PowerShell script queries the BIOS status and prints it.
 .EXAMPLE
 	PS> ./check-bios
-	✅ BIOS F6 by American Megatrends Inc. (S/N NXA82EV0EBB0760, version ALASKA - 1072009)
+	✅ BIOS F6 by American Megatrends Inc. (version ALASKA - 1072009, S/N NXA82EV0EBB0760)
 .LINK
 	https://github.com/fleschutz/PowerShell
 .NOTES
@@ -31,7 +31,7 @@ try {
 		$Serial = $BIOS.SerialNumber.Trim()
 		$Version = $BIOS.Version.Trim()
 		Write-Progress -completed "."
-		Write-Host "✅ BIOS $Model by $Manufacturer (S/N $Serial, version $Version)"
+		Write-Host "✅ BIOS $Model by $Manufacturer (version $Version, S/N $Serial)"
 	}
 	exit 0 # success
 } catch {

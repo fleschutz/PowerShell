@@ -1,8 +1,8 @@
 ﻿<#
 .SYNOPSIS
-	Check PowerShell details
+	Check the PowerShell status
 .DESCRIPTION
-	This PowerShell script queries PowerShell details and lists it.
+	This PowerShell script queries the PowerShell status and prints it.
 .EXAMPLE
 	PS> ./check-powershell
 	✅ PowerShell 5.1.19041.2673 Desktop edition (10 modules, 1458 cmdlets, 172 aliases)

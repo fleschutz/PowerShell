@@ -1,10 +1,11 @@
 ﻿<#
 .SYNOPSIS
-	Checks the VPN connection
+	Checks the VPN status
 .DESCRIPTION
-	This PowerShell script queries status of the VPN connections and prints it.
+	This PowerShell script queries the status of the VPN connections and prints it.
 .EXAMPLE
 	PS> ./check-vpn
+	✅ VPN 'NASA L2TP' is Disconnected
 .LINK
 	https://github.com/fleschutz/PowerShell
 .NOTES

@@ -1,8 +1,8 @@
 ﻿<#
 .SYNOPSIS
-	Queries and prints CPU details
+	Checks the CPU status
 .DESCRIPTION
-	This PowerShell script queries CPU details (name, type, speed, temperature, etc.) and prints it.
+	This PowerShell script queries the CPU status and prints it (name, type, speed, temperature, etc).
 .EXAMPLE
 	PS> ./check-cpu
 	✅ AMD Ryzen 5 5500U with Radeon Graphics (CPU0, 2100MHz, 31.3°C)

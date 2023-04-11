@@ -1,6 +1,6 @@
 ﻿<#
 .SYNOPSIS
-	Checks the firewall
+	Checks the firewall status
 .DESCRIPTION
 	This PowerShell script queries the status of the firewall and prints it.
 .EXAMPLE

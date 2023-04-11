@@ -1,6 +1,6 @@
 ﻿<#
 .SYNOPSIS
-	Checks the swap space
+	Checks the swap space status
 .DESCRIPTION
 	This PowerShell script queries the status of the swap space and prints it.
 .PARAMETER MinLevel

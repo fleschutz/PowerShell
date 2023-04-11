@@ -1,8 +1,8 @@
 ﻿<#
 .SYNOPSIS
-	Checks SMART devices
+	Checks the SMART device status
 .DESCRIPTION
-	This PowerShell script queries S.M.A.R.T. HDD/SSD device details and prints it.
+	This PowerShell script queries the status of the SSD/HDD devices (supporting S.M.A.R.T.) and prints it.
 .EXAMPLE
 	PS> ./check-smart-devices
 	✅ 1TB Samsung SSD 970 EVO via NVMe (2388 hours, 289x on, v2B2QEXE7, 37°C, selftest passed)
@@ -40,8 +40,8 @@ try {
 		$Devices = $(smartctl --scan-open)
 	}
 
-	Write-Progress "⏳ (3/3) Querying S.M.A.R.T devices..."
 	foreach($Device in $Devices) {
+		Write-Progress "⏳ (3/3) Querying S.M.A.R.T devices..."
 		$Array = $Device.split(" ")
 		$Device = $Array[0]
 		if ("$Device" -eq "#") {
