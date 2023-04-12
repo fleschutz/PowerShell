@@ -1,6 +1,6 @@
 ﻿<#
 .SYNOPSIS
-	Lists all branches in a Git repository
+	Lists Git branches
 .DESCRIPTION
 	This PowerShell script lists all branches in a Git repository.
 .PARAMETER RepoDir
