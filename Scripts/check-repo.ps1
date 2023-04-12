@@ -1,12 +1,12 @@
 ﻿<#
 .SYNOPSIS
-	Checks a Git repository
+	Checks a repo
 .DESCRIPTION
 	This PowerShell script verifies the integrity of a local Git repository.
 .PARAMETER RepoDir
 	Specifies the path to the Git repository (current working dir by default)
 .EXAMPLE
-	PS> ./check-repo
+	PS> ./check-repo C:\MyRepo
 .LINK
 	https://github.com/fleschutz/PowerShell
 .NOTES
@@ -22,10 +22,10 @@ try {
 	& git --version
 	if ($lastExitCode -ne "0") { throw "Can't execute 'git' - make sure Git is installed and available" }
 
-	Write-Host "⏳ (2/11) Checking repo path...            " -noNewline
+	Write-Host "⏳ (2/11) Checking file path...            " -noNewline
 	$FullPath = Resolve-Path "$RepoDir"
 	if (!(Test-Path "$FullPath" -pathType Container)) { throw "Can't access folder: $FullPath" }
-	"$FullPath"
+	"📂$FullPath"
 
 	Write-Host "⏳ (3/11) Searching for 📂.git...          " -noNewline
 	if (!(Test-Path "$FullPath/.git" -pathType container)) { throw "Can't access folder: $FullPath/.git" }
@@ -69,7 +69,7 @@ try {
 
 	$RepoDirName = (Get-Item "$FullPath").Name
 	[int]$Elapsed = $StopWatch.Elapsed.TotalSeconds
-	"✔️ checked 📂$RepoDirName repo in $Elapsed sec"
+	"✔️ checked repo 📂$RepoDirName in $Elapsed sec"
 	exit 0 # success
 } catch {
 	"⚠️ Error in line $($_.InvocationInfo.ScriptLineNumber): $($Error[0])"
