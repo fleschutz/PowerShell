@@ -23,7 +23,7 @@ try {
 	& git --version
 	if ($lastExitCode -ne "0") { throw "Can't execute 'git' - make sure Git is installed and available" }
 
-	"⏳ (2/4) Checking repository...              📂$RepoDir"
+	"⏳ (2/4) Checking local repository...        📂$RepoDir"
 	if (-not(Test-Path "$RepoDir" -pathType container)) { throw "Can't access folder '$RepoDir' - maybe a typo or missing folder permissions?" }
 	$RepoDirName = (Get-Item "$RepoDir").Name
 
@@ -40,7 +40,7 @@ try {
 	if ($lastExitCode -ne "0") { throw "'git clean' in the submodules failed with exit code $lastExitCode" }
 
 	[int]$Elapsed = $StopWatch.Elapsed.TotalSeconds
-	"✔️ cleaned repository 📂$RepoDirName in $Elapsed sec"
+	"✔️ cleaned repo 📂$RepoDirName in $Elapsed sec"
 	exit 0 # success
 } catch {
 	"⚠️ Error in line $($_.InvocationInfo.ScriptLineNumber): $($Error[0])"
