@@ -1,16 +1,12 @@
 ﻿<#
 .SYNOPSIS
-	Fetches updates for a Git repo
+	Fetches repo updates
 .DESCRIPTION
-	This PowerShell script fetches updates for a local Git repository (including submodules).
+	This PowerShell script fetches the latest updates into a local Git repository (including submodules).
 .PARAMETER RepoDir
 	Specifies the path to the Git repository.
 .EXAMPLE
-	PS> ./fetch-repo
-	⏳ (1/3) Searching for Git executable...  git version 2.38.1.windows.1
-	⏳ (2/3) Checking Git repository 📂PowerShell...
-	⏳ (3/3) Fetching updates (including submodules)...
-	✔️ fetched updates for 📂PowerShell repository in 2 sec.
+	PS> ./fetch-repo C:\MyRepo
 .LINK
 	https://github.com/fleschutz/PowerShell
 .NOTES
@@ -26,16 +22,16 @@ try {
 	& git --version
 	if ($lastExitCode -ne "0") { throw "Can't execute 'git' - make sure Git is installed and available" }
 
-	$RepoDirName = (Get-Item "$RepoDir").Name
-	Write-Host "⏳ (2/3) Checking Git repository...       📂$RepoDirName"
+	Write-Host "⏳ (2/3) Checking local repository...     📂$RepoDir"
 	if (!(Test-Path "$RepoDir" -pathType container)) { throw "Can't access folder: $RepoDir" }
+	$RepoDirName = (Get-Item "$RepoDir").Name
 
-	Write-Host "⏳ (3/3) Fetching updates... "
+	Write-Host "⏳ (3/3) Fetching latest updates... "
 	& git -C "$RepoDir" fetch --all --recurse-submodules --prune --prune-tags --force 
 	if ($lastExitCode -ne "0") { throw "'git fetch' failed with exit code $lastExitCode" }
 	
 	[int]$Elapsed = $StopWatch.Elapsed.TotalSeconds
-	"✔️ fetched updates for 📂$RepoDirName repository in $Elapsed sec."
+	"✔️ fetched updates into repo 📂$RepoDirName in $Elapsed sec"
 	exit 0 # success
 } catch {
 	"⚠️ Error in line $($_.InvocationInfo.ScriptLineNumber): $($Error[0])"
