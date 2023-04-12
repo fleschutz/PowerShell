@@ -27,16 +27,15 @@ try {
 	& git --version
 	if ($lastExitCode -ne "0") { throw "Can't execute 'git' - make sure Git is installed and available" }
 
+	Write-Host "⏳ (2/6) Checking local repository...      📂$RepoDir"
 	$RepoDir = Resolve-Path "$RepoDir"
-	Write-Host "⏳ (2/6) Checking repository...            📂$RepoDir"
 	if (-not(Test-Path "$RepoDir" -pathType container)) { throw "Can't access directory: $RepoDir" }
-	$RepoDirName = (Get-Item "$RepoDir").Name
-
 	$Result = (git status)
 	if ($lastExitCode -ne "0") { throw "'git status' in $RepoDir failed with exit code $lastExitCode" }
 	if ("$Result" -notmatch "nothing to commit, working tree clean") { throw "Git repository is NOT clean: $Result" }
+	$RepoDirName = (Get-Item "$RepoDir").Name
 
-	"⏳ (3/6) Fetching latest updates..."
+	"⏳ (3/6) Fetching updates..."
 	& git -C "$RepoDir" fetch --all --prune --prune-tags --force
 	if ($lastExitCode -ne "0") { throw "'git fetch' failed with exit code $lastExitCode" }
 
@@ -53,7 +52,7 @@ try {
 	if ($lastExitCode -ne "0") { throw "'git submodule update' failed with exit code $lastExitCode" }
 
 	[int]$Elapsed = $StopWatch.Elapsed.TotalSeconds
-	"✔️ switched repository 📂$RepoDirName to branch '$BranchName' in $Elapsed sec"
+	"✔️ switched repo 📂$RepoDirName to branch '$BranchName' in $Elapsed sec"
 	exit 0 # success
 } catch {
 	"⚠️ Error in line $($_.InvocationInfo.ScriptLineNumber): $($Error[0])"
