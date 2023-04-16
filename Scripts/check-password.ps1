@@ -43,7 +43,7 @@ try {
 	if ($NumBreaches -eq 0) {
 		"👍 Password seems good, it's not listed in any known security breach (as of today)" 
 	} else {
-		"⚠️ Bad password, it's already listed in $NumBreaches known security breaches!"
+		"⚠️ Bad password, it's listed already in $NumBreaches known security breaches!"
 	}
 	exit 0 # success
 } catch {
