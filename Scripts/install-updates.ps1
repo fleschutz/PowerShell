@@ -27,14 +27,13 @@ try {
 		"⏳ (4/4) Upgrading installed Snap packages..."
 		& sudo snap refresh
 	} else {
-		"⏳ (1/2) Querying application updates..."
-		& winget upgrade
+		Write-Progress "⏳ Installing updates..."
 		" "
-		"⏳ (2/2) Upgrading applications..."
 		& winget upgrade --all
+		Write-Progress -completed " "
 	}
 	[int]$Elapsed = $StopWatch.Elapsed.TotalSeconds
-	"✅ updates installed in $Elapsed sec."
+	"✅ updates installed in $Elapsed sec"
 	exit 0 # success
 } catch {
 	"⚠️ Error in line $($_.InvocationInfo.ScriptLineNumber): $($Error[0])"
