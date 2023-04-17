@@ -13,8 +13,10 @@
 
 try {
 	if ($IsLinux) {
-		Write-Host "⏳ Querying available updates..."
+		Write-Host "⏳ Querying updates for installed packages..."
 		& sudo apt update
+		Write-Host "⏳ Querying updates for installed snaps..."
+		sudo snap refresh --list
 	} else {
 		Write-Progress "⏳ Querying available updates..."
 		" "
