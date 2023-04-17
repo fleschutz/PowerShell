@@ -5,7 +5,7 @@
 	This PowerShell script queries the status of the VPN connections and prints it.
 .EXAMPLE
 	PS> ./check-vpn
-	✅ VPN 'NASA L2TP' is Disconnected
+	✅ Disconnected VPN 'NASA L2TP' 
 .LINK
 	https://github.com/fleschutz/PowerShell
 .NOTES
@@ -19,11 +19,11 @@ try {
 	} else {
 		$Connections = Get-VPNConnection
 		foreach($Connection in $Connections) {
-			Write-Host "✅ VPN '$($Connection.Name)' is $($Connection.ConnectionStatus)"
+			"✅ $($Connection.ConnectionStatus) VPN '$($Connection.Name)'"
 			$NoVPN = $false
 		}
 	}
-	if ($NoVPN) { Write-Host "⚠️ No VPN connection" }
+	if ($NoVPN) { "⚠️ No VPN" }
 	exit 0 # success
 } catch {
 	"⚠️ Error in line $($_.InvocationInfo.ScriptLineNumber): $($Error[0])"
