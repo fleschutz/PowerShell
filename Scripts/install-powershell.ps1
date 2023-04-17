@@ -116,7 +116,7 @@ function Remove-Destination([string] $Destination) {
         if ($DoNotOverwrite) {
             throw "Destination folder '$Destination' already exist. Use a different path or omit '-DoNotOverwrite' to overwrite."
         }
-        Write-Verbose "Removing old installation: $Destination" -Verbose
+        Write-Host "Removing old installation at: $Destination" 
         if (Test-Path -Path "$Destination.old") {
             Remove-Item "$Destination.old" -Recurse -Force
         }
@@ -381,7 +381,7 @@ try {
         }
 
         $downloadURL = "https://github.com/PowerShell/PowerShell/releases/download/v${release}/${packageName}"
-        Write-Verbose "About to download package from '$downloadURL'" -Verbose
+        Write-Host "Downloading PowerShell package from: $downloadURL"
 
         $packagePath = Join-Path -Path $tempDir -ChildPath $packageName
         if (!$PSVersionTable.ContainsKey('PSEdition') -or $PSVersionTable.PSEdition -eq "Desktop") {
