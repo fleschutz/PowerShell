@@ -13,7 +13,7 @@
 
 try {
 	if ($IsLinux) {
-		"⏳ (1/4) Querying updates for installed Debian packages..."
+		Write-Host "⏳ Querying available updates..."
 		& sudo apt update
 	} else {
 		Write-Progress "⏳ Querying available updates..."
