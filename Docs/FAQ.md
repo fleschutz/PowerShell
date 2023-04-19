@@ -109,6 +109,11 @@ Good PowerShell scripts are both user-friendly and platform-independent. I recom
 9. On success exit with error code 0 (`exit 0`), otherwise print the error with keyword "ERROR:" (to support log parsers) and exit the error code (mostly 1)
 
 
+Where's the Star History?
+-------------------------
+[![Star History Chart](https://api.star-history.com/svg?repos=fleschutz/PowerShell&type=Date)](https://star-history.com/#fleschutz/PowerShell&Date)
+
+
 Want to contribute or found a bug or issue?
 -------------------------------------------
 If you find something bad (like a bug, error, or any issue), please report it here by open an Issue.
