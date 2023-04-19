@@ -15,6 +15,7 @@ try {
 	if ($IsLinux) {
 		Write-Host "⏳ Querying updates for installed packages..."
 		& sudo apt update
+		& sudo apt list --upgradable
 		Write-Host "⏳ Querying updates for installed snaps..."
 		sudo snap refresh --list
 	} else {
