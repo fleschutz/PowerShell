@@ -3,6 +3,7 @@
 	Lists software updates
 .DESCRIPTION
 	This PowerShell script lists available updates for the local machine.
+	Use "install-updates.ps1" to install the listed updates.
 .EXAMPLE
 	PS> ./list-updates
 .LINK
@@ -13,13 +14,13 @@
 
 try {
 	if ($IsLinux) {
-		Write-Host "⏳ Querying updates for installed packages..."
+		Write-Host "⏳ Querying package updates..."
 		& sudo apt update
 		& sudo apt list --upgradable
-		Write-Host "⏳ Querying updates for installed snaps..."
+		Write-Host "⏳ Querying Snap updates..."
 		sudo snap refresh --list
 	} else {
-		Write-Progress "⏳ Querying available updates..."
+		Write-Progress "⏳ Querying application updates..."
 		" "
 		& winget upgrade
 		Write-Progress -Completed " "
