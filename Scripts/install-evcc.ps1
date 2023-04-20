@@ -14,24 +14,27 @@
 try {
 	$StopWatch = [system.diagnostics.stopwatch]::startNew()
 
-	"⏳ (1/6) Installing necessary packets..."
-	& sudo apt install -y debian-keyring debian-archive-keyring apt-transport-https curl
+	if ($IsLinux) {
+		"⏳ (1/6) Installing necessary packets..."
+		& sudo apt install -y debian-keyring debian-archive-keyring apt-transport-https curl
 
-	"⏳ (2/6) Installing keyring for evcc..."
-	& curl -1sLf 'https://dl.cloudsmith.io/public/evcc/stable/setup.deb.sh' | sudo -E bash
+		"⏳ (2/6) Installing keyring for evcc..."
+		& curl -1sLf 'https://dl.cloudsmith.io/public/evcc/stable/setup.deb.sh' | sudo -E bash
 
-	"⏳ (3/6) Updating packet list...."
-	& sudo apt update
+		"⏳ (3/6) Updating packet list...."
+		& sudo apt update
 
-	"⏳ (4/6) Installing evcc packet..."
-	& sudo apt install -y evcc
+		"⏳ (4/6) Installing evcc packet..."
+		& sudo apt install -y evcc
 
-	"⏳ (5/6) Configuring evcc..."
-	& evcc configure
+		"⏳ (5/6) Configuring evcc..."
+		& evcc configure
 
-	"⏳ (6/6) Starting evcc Web server on :7070 as system service..."
-	& sudo systemctl start evcc
-
+		"⏳ (6/6) Starting evcc Web server on :7070 as system service..."
+		& sudo systemctl start evcc
+	} else {
+		throw "Sorry, only Linux installation currently supported"
+	}
 	[int]$Elapsed = $StopWatch.Elapsed.TotalSeconds
 	"✔️ evcc installed successfully in $Elapsed sec"
 	exit 0 # success
