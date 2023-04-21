@@ -71,7 +71,7 @@ Make sure PowerShell is installed, then execute: `chsh -s /usr/bin/pwsh <usernam
 
 How to install a custom PowerShell profile?
 -------------------------------------------
-Just execute: `./set-profile.ps1`, this will install **my-profile.ps1** as your PowerShell profile (change it to your needs).
+Execute: `./set-profile.ps1` in the *Scripts* subfolder, this will install **my-profile.ps1** as your PowerShell profile. It's a nice looking base profile, but can easily be changed to your needs.
 
 
 How to add the scripts to the search path?
