@@ -69,6 +69,11 @@ How to set PowerShell as my default shell on Linux?
 Make sure PowerShell is installed, then execute: `chsh -s /usr/bin/pwsh <username>`. In case you experience an "invalid shell" error, add "/usr/bin/pwsh" to /etc/shells.
 
 
+How to install a custom PowerShell profile?
+-------------------------------------------
+Just execute: `./set-profile.ps1`, this will install **my-profile.ps1** as your PowerShell profile (change it to your needs).
+
+
 How to add the scripts to the search path?
 ------------------------------------------
 Want to use the PowerShell scripts everywhere on the command-line? Then you need to add the Scripts/ subfolder to the search path:
