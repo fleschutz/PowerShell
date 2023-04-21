@@ -3,6 +3,7 @@
 	Installs software updates
 .DESCRIPTION
 	This PowerShell script installs updates for the local machine (needs admin rights).
+	Use "list-updates.ps1" to list available updates.
 .EXAMPLE
 	PS> ./install-updates
 .LINK

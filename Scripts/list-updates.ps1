@@ -14,16 +14,15 @@
 
 try {
 	if ($IsLinux) {
-		Write-Host "⏳ Querying package updates..."
+		"⏳ (1/2) Querying package updates... (use install-updates.ps1 to install them)"
 		& sudo apt update
 		& sudo apt list --upgradable
-		Write-Host "⏳ Querying Snap updates..."
+		"⏳ (2/2) Querying Snap updates... (use install-updates.ps1 to install them)"
 		sudo snap refresh --list
 	} else {
-		Write-Progress "⏳ Querying application updates..."
+		"⏳ Querying application updates... (use install-updates.ps1 to install them)"
 		" "
 		& winget upgrade
-		Write-Progress -Completed " "
 	}
 	exit 0 # success
 } catch {
