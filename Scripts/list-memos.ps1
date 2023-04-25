@@ -1,8 +1,8 @@
 ﻿<#
 .SYNOPSIS
-	Lists all memos in $HOME/Memos.csv
+	Lists your memo entries
 .DESCRIPTION
-	This PowerShell script lists all memo entries in Memos.csv in the home folder.
+	This PowerShell script lists all memo entries in Memos.csv in your home folder.
 .EXAMPLE
 	PS> ./list-memos
 .LINK
@@ -13,20 +13,19 @@
 
 
 try {
-	$Path = "$HOME/Memos.csv"
-	if (test-path "$Path" -pathType leaf) {
+	$Path = "~/Memos.csv"
+	if (Test-Path "$Path" -pathType leaf) {
 		write-progress "Reading $Path ..."
-		$Table = import-csv "$Path"
+		$Table = Import-CSV "$Path"
 		write-progress -completed "Reading $Path"
 
 		""
-		"Time                 User  Text"
-		"----                 ----  ----"
+		"Time                  Text"
+		"----                  ----"
 		foreach($Row in $Table) {
 			$Time = $Row.Time
-			$User = $Row.User
 			$Text = $Row.Text
-			"$Time $User    $Text"
+			"$Time  $Text"
 		}
 	} else {
 		"Sorry, no memos saved yet"
