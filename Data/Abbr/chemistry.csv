@@ -840,8 +840,8 @@ POP,Persistent Organic Pollutant
 PORC,Porcelain
 PPA,PhenylPropanolAmine
 PPA,PolyPhthalAmide
-PPB,Parts Per Billion
-PPM,Parts Per Million
+ppb,Parts per billion
+ppm,Parts per million
 PPO,PolyPhenylene Oxide
 PPS,PolyPhenylene Sulfide
 PPT,Parts Per Trillion

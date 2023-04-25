@@ -1413,6 +1413,7 @@ IAM,integrated access management
 IANA,Internet Assigned Numbers Authority
 IAO,Information Awareness Office
 IAP,Internet access provider
+IAS,"IAS machine (the first electronic computer built at the Institute for Advanced Study), Interactive Application System (a DEC PDP-11 operating system), Internet Authentication Service (a component of Windows Server)"
 IAX,Inter-Asterisk Exchange Protocol
 IBM,International Business Machines
 IBP,integrated business planning
@@ -2110,8 +2111,7 @@ PPD,post-processing deduplication
 PPD,Postscript Printer Description file
 PPGA,plastic pin grid array
 ppi,pixels per inch
-PPM,pages per minute
-PPM,project and portfolio management
+PPM,"Pages per minute (a measurement of printing speed), Perl package manager (for software packages), Prediction by partial matching (a data compression technique), project and portfolio management"
 PPP,Point-to-Point Protocol
 PPPoE,Point-to-Point Protocol over Ethernet
 PPTP,Point-to-Point Tunneling Protocol
