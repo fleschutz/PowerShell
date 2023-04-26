@@ -17,16 +17,16 @@ param([string]$searchPattern = "*")
 
 function GetFileIcon { param([string]$suffix)
 	switch ($suffix) {
-	".csv"	{ return "📊" }
-	".epub"	{ return "📓" }
-	".gif"	{ return "🎨" }
-	".iso"	{ return "📀" }
-	".jpg"	{ return "🎨" }
-	".mp3"	{ return "🎵" }
-	".mp4"	{ return "🎬" }
-	".mkv"	{ return "🎬" }
-	".ps1"  { return "📑" }
-	default { return "📄" }
+	".conf" {return "⚙️"}
+	".csv"	{return "📊"}
+	".epub"	{return "📓"}
+	".gif"	{return "📸"}
+	".iso"	{return "📀"}
+	".jpg"	{return "📸"}
+	".mp3"	{return "🎵"}
+	".mkv"	{return "🎬"}
+	".zip"  {return "📦"}
+	default {return "📄"}
 	}
 }
 

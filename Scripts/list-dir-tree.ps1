@@ -17,14 +17,16 @@ param([string]$DirTree = "$PWD")
 
 function GetFileIcon { param([string]$Suffix)
 	switch ($Suffix) {
-	".csv"	{ return "📊" }
-	".epub"	{ return "📓" }
-	".gif"	{ return "🎨" }
-	".iso"	{ return "📀" }
-	".jpg"	{ return "🎨" }
-	".mp3"	{ return "🎵" }
-	".mkv"	{ return "🎬" }
-	default { return "📄" }
+	".conf" {return "⚙️"}
+	".csv"	{return "📊"}
+	".epub"	{return "📓"}
+	".gif"	{return "📸"}
+	".iso"	{return "📀"}
+	".jpg"	{return "📸"}
+	".mp3"	{return "🎵"}
+	".mkv"	{return "🎬"}
+	".zip"  {return "📦"}
+	default {return "📄"}
 	}
 }
 
@@ -53,7 +55,7 @@ try {
 	[int]$global:Files = 0
 	[int]$global:Bytes = 0
 	ListDir $DirTree 0
-	"(Total: $($global:Dirs) folders, $($global:Files) files, $($global:Bytes) bytes)"
+	" ($($global:Dirs) folders, $($global:Files) files, $($global:Bytes) bytes in total)"
 	exit 0 # success
 } catch {
 	"⚠️ Error in line $($_.InvocationInfo.ScriptLineNumber): $($Error[0])"
