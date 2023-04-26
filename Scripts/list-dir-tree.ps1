@@ -1,4 +1,4 @@
-﻿<#
+﻿ed<#
 .SYNOPSIS
 	Lists a directory tree
 .DESCRIPTION
@@ -17,15 +17,15 @@ param([string]$DirTree = "$PWD")
 
 function GetFileIcon { param([string]$Suffix)
 	switch ($Suffix) {
-	".conf" {return "⚙️"}
 	".csv"	{return "📊"}
 	".epub"	{return "📓"}
+	".exe"  {return "⚙️"}
 	".gif"	{return "📸"}
 	".iso"	{return "📀"}
 	".jpg"	{return "📸"}
 	".mp3"	{return "🎵"}
 	".mkv"	{return "🎬"}
-	".zip"  {return "📦"}
+	".zip"  {return "🎁"}
 	default {return "📄"}
 	}
 }
