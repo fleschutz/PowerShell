@@ -22,10 +22,10 @@ try {
 	& git --version
 	if ($lastExitCode -ne "0") { throw "Can't execute 'git' - make sure Git is installed and available" }
 
-	Write-Host "⏳ (2) Loading Data/popular-git-repos.csv...      " -noNewline
+	Write-Host "⏳ (2) Loading Data/popular-git-repos.csv...    " -noNewline
 	$Table = Import-CSV "$PSScriptRoot/../Data/popular-git-repos.csv"
 	$NumEntries = $Table.count
-	Write-Host "$NumEntries Git repositories"
+	Write-Host "$NumEntries Git repos listed"
 
 	$TargetDirName = (Get-Item "$TargetDir").Name
 	Write-Host "⏳ (3) Checking target folder...                📂$TargetDirName"
