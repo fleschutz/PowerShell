@@ -15,7 +15,7 @@
 try {
 	$StopWatch = [system.diagnostics.stopwatch]::startNew()
 
-	"⏳ Step 1 - Loading Data/basic-apps.csv..."
+	"⏳ (1/30) Loading Data/basic-apps.csv..."
 	$Table = Import-CSV "$PSScriptRoot/../Data/basic-apps.csv"
 	$NumEntries = $Table.count
 	Write-Host "   The following $NumEntries basic apps will be installed or upgraded: " -NoNewline
@@ -41,7 +41,7 @@ try {
 	}
 	[int]$Installed = ($NumEntries - $Failed)
 	[int]$Elapsed = $StopWatch.Elapsed.TotalSeconds
-	"✔️ installed $Installed basic apps in $Elapsed sec. ($Failed failed)"
+	"✔️ installed $Installed of $NumEntries basic apps in $Elapsed sec"
 	exit 0 # success
 } catch {
 	"⚠️ Error in line $($_.InvocationInfo.ScriptLineNumber): $($Error[0])"
