@@ -29,6 +29,20 @@ function GetCPUTemperatureInCelsius {
 	return $Temp;
 }
 
+function GetProcessorArchitecture {
+	if ("$env:PROCESSOR_ARCHITECTURE" -ne "") { return "$env:PROCESSOR_ARCHITECTURE" }
+	if ($IsLinux) {
+		$Name = $PSVersionTable.OS
+		if ($Name -like "*-generic *") {
+			if ([System.Environment]::Is64BitOperatingSystem) { return "x64" } else { return "x86" }
+		} elseif ($Name -like "*-raspi *") {
+			if ([System.Environment]::Is64BitOperatingSystem) { return "ARM64" } else { return "ARM32" }
+		} else {
+			return ""
+		}
+	}
+}
+
 try {
 	Write-Progress "⏳ Querying CPU details..."
 	$Status = "✅"
@@ -45,37 +59,24 @@ try {
 		$Temp = "$($Celsius)°C"
 	} 
 
+	$Arch = GetProcessorArchitecture
 	if ($IsLinux) {
-		$Name = $PSVersionTable.OS
-		if ($Name -like "*-generic *") {
-			if ([System.Environment]::Is64BitOperatingSystem) {
-				$Arch = "x64"
-			} else {
-				$Arch = "x86"
-			}
-		} elseif ($Name -like "*-raspi *") {
-			if ([System.Environment]::Is64BitOperatingSystem) {
-				$Arch = "ARM64"
-			} else {
-				$Arch = "ARM32"
-			}
-		} else {
-			$Arch = ""
-		}
 		$CPUName = "$Arch CPU"
+		$Arch = ""
 		$DeviceID = ""
 		$Speed = ""
 		$Socket = ""
 	} else {
 		$Details = Get-WmiObject -Class Win32_Processor
 		$CPUName = $Details.Name.trim()
+		$Arch = "$Arch, "
 		$DeviceID = "$($Details.DeviceID), "
 		$Speed = "$($Details.MaxClockSpeed)MHz, "
 		$Socket = "$($Details.SocketDesignation) socket, "
 	}
 	$Cores = [System.Environment]::ProcessorCount
 	Write-Progress -completed "done."
-	Write-Host "$Status $CPUName ($Cores cores, $($DeviceID)$($Speed)$($Socket)$Temp)"
+	Write-Host "$Status $CPUName ($($Arch)$Cores cores, $($DeviceID)$($Speed)$($Socket)$Temp)"
 	exit 0 # success
 } catch {
 	"⚠️ Error in line $($_.InvocationInfo.ScriptLineNumber): $($Error[0])"
