@@ -4,7 +4,7 @@
 .DESCRIPTION
 	This PowerShell script clones popular Git repositories into a target directory.
 .PARAMETER targetDir
-	Specifies the target directory (current working directory by default)
+	Specifies the file path to the target directory (current working directory by default)
 .EXAMPLE
 	PS> ./clone-repos C:\Repos
 .LINK
@@ -31,40 +31,35 @@ try {
 	Write-Host "⏳ (3) Checking target folder...                📂$TargetDirName"
 	if (-not(Test-Path "$TargetDir" -pathType container)) { throw "Can't access directory: $TargetDir" }
 	
-
 	[int]$Step = 3
 	[int]$Cloned = 0
 	[int]$Skipped = 0
 	foreach($Row in $Table) {
-		[string]$Group = $Row.GROUP
 		[string]$FolderName = $Row.FOLDERNAME
+		[string]$Category = $Row.CATEGORY
 		[string]$Branch = $Row.BRANCH
 		[string]$Full = $Row.FULL
 		[string]$URL = $Row.URL
 		$Step++
 
 		if (Test-Path "$TargetDir/$FolderName" -pathType container) {
-			"⏳ ($Step/$($NumEntries + 4)) Skipping existing 📂$($FolderName)..."
+			"⏳ ($Step/$($NumEntries + 4)) Skipping existing 📂$FolderName ($Category)..."
 			$Skipped++
 			continue
 		}
 		if ($Full -eq "yes") {
-			"⏳ ($Step/$($NumEntries + 4)) Cloning into 📂$FolderName ($Branch branch with full history)..."
+			"⏳ ($Step/$($NumEntries + 4)) Cloning into 📂$FolderName ($Category) - $Branch branch with full history..."
 			& git clone --branch "$Branch" --recurse-submodules "$URL" "$TargetDir/$FolderName"
 			if ($lastExitCode -ne "0") { throw "'git clone --branch $Branch $URL' failed with exit code $lastExitCode" }
 		} else {
-			"⏳ ($Step/$($NumEntries + 4)) Cloning into 📂$FolderName ($Branch branch only)..."
+			"⏳ ($Step/$($NumEntries + 4)) Cloning into 📂$FolderName ($Category) - $Branch branch only..."
 			& git clone --branch "$Branch" --single-branch --recurse-submodules "$URL" "$TargetDir/$FolderName"
 			if ($lastExitCode -ne "0") { throw "'git clone --branch $Branch $URL' failed with exit code $lastExitCode" }
 		}
 		$Cloned++
 	}
 	[int]$Elapsed = $StopWatch.Elapsed.TotalSeconds
-	if ($Cloned -eq 1) {
-		"✔️ 1 repo cloned into 📂$TargetDirName in $Elapsed sec ($Skipped skipped)"
-	} else {
-		"✔️ $Cloned repos cloned into 📂$TargetDirName in $Elapsed sec ($Skipped skipped)"
-	}
+	"✔️ cloned $Cloned of $NumEntries Git repos into folder 📂$TargetDirName in $Elapsed sec"
 	exit 0 # success
 } catch {
 	"⚠️ Error in line $($_.InvocationInfo.ScriptLineNumber): $($Error[0])"
