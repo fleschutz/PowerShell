@@ -3,7 +3,7 @@
 	Installs basic apps
 .DESCRIPTION
 	This PowerShell script installs basic Windows apps such as browser, e-mail client, etc.
-	Apps from the Microsoft Store are preferred (due to security and automatic updates). 
+	Apps from Microsoft Store are preferred (due to security and automatic updates). 
 .EXAMPLE
 	PS> ./install-basic-apps
 .LINK
@@ -15,33 +15,34 @@
 try {
 	$StopWatch = [system.diagnostics.stopwatch]::startNew()
 
-	"⏳ (1/30) Loading Data/basic-apps.csv..."
+	Write-Host "⏳ (1/32) Loading Data/basic-apps.csv...    " -noNewline
 	$Table = Import-CSV "$PSScriptRoot/../Data/basic-apps.csv"
 	$NumEntries = $Table.count
-	Write-Host "   The following $NumEntries basic apps will be installed or upgraded: " -NoNewline
+	Write-Host "$NumEntries entries"
+	Write-Host "⏳ (2/32) About to install or upgrade:      " -noNewline
 	foreach($Row in $Table) {
 		[string]$AppName = $Row.APPLICATION
 		Write-Host "$AppName, " -NoNewline
 	}
 	""
-	"Press <Control> <C> to abort, otherwise the installation will start in 10 seconds..."
-	Start-Sleep -seconds 10
+	"Press <Control> <C> to abort, otherwise the installation will start in 15 seconds..."
+	Start-Sleep -seconds 15
 
-	[int]$Step = 2
+	[int]$Step = 3
 	[int]$Failed = 0
 	foreach($Row in $Table) {
 		[string]$AppName = $Row.APPLICATION
 		[string]$Category = $Row.CATEGORY
 		[string]$AppID = $Row.APPID
-
-		"⏳ ($Step/$($NumEntries + 1)) Installing $AppName ($Category)..."
+		Write-Host " "
+		Write-Host "⏳ ($Step/$($NumEntries + 2)) Installing $Category '$AppName'..."
 		& winget install --id $AppID --accept-package-agreements --accept-source-agreements
-        	if ($lastExitCode -ne "0") { Write-Warning "'winget install' for $AppName failed"; $Failed++ }
+        	if ($lastExitCode -ne "0") { $Failed++ }
 		$Step++
 	}
 	[int]$Installed = ($NumEntries - $Failed)
 	[int]$Elapsed = $StopWatch.Elapsed.TotalSeconds
-	"✔️ installed $Installed of $NumEntries basic apps in $Elapsed sec"
+	"✔️ installed $Installed of $NumEntries basic applications in $Elapsed sec"
 	exit 0 # success
 } catch {
 	"⚠️ Error in line $($_.InvocationInfo.ScriptLineNumber): $($Error[0])"
