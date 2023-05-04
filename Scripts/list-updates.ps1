@@ -1,8 +1,8 @@
 ﻿<#
 .SYNOPSIS
-	Lists software updates
+	Lists updates
 .DESCRIPTION
-	This PowerShell script lists available updates for the local machine.
+	This PowerShell script lists available software updates for the local machine.
 	Use "install-updates.ps1" to install the listed updates.
 .EXAMPLE
 	PS> ./list-updates
@@ -20,9 +20,11 @@ try {
 		"⏳ (2/2) Querying Snap updates... (use install-updates.ps1 to install them)"
 		sudo snap refresh --list
 	} else {
-		"⏳ Querying application updates... (use install-updates.ps1 to install them)"
+		Write-Progress "⏳ Querying available software updates..."
 		" "
 		& winget upgrade
+		Write-Progress -completed "."
+		Write-Host "(use install-updates.ps1 to install these updates)"
 	}
 	exit 0 # success
 } catch {
