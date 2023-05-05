@@ -18,7 +18,7 @@ try {
 	Write-Host "⏳ (1/32) Loading Data/basic-apps.csv...    " -noNewline
 	$Table = Import-CSV "$PSScriptRoot/../Data/basic-apps.csv"
 	$NumEntries = $Table.count
-	Write-Host "$NumEntries entries"
+	Write-Host "$NumEntries apps"
 	Write-Host "⏳ (2/32) About to install or upgrade:      " -noNewline
 	foreach($Row in $Table) {
 		[string]$AppName = $Row.APPLICATION
@@ -42,7 +42,7 @@ try {
 	}
 	[int]$Installed = ($NumEntries - $Failed)
 	[int]$Elapsed = $StopWatch.Elapsed.TotalSeconds
-	"✔️ installed $Installed of $NumEntries basic applications in $Elapsed sec"
+	"✔️ installed $Installed of $NumEntries applications in $Elapsed sec"
 	exit 0 # success
 } catch {
 	"⚠️ Error in line $($_.InvocationInfo.ScriptLineNumber): $($Error[0])"
