@@ -122,7 +122,7 @@ Good PowerShell scripts are both user-friendly and platform-independent. I recom
 
    <details><summary>Want to contribute or found a bug or issue?</summary>
 
-If you find something bad (like a bug, error, or any issue), please report it here by open an Issue.
+If you find something bad (like a bug, error, or any issue), please report it here by opening an Issue.
 
 Or even better: Fork the repository, add or fix the script and submit a pull request, so others can participate too.  
    </details>
