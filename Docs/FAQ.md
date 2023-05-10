@@ -42,37 +42,34 @@ NOTE: the group policy object (GPO) settings of your organization might disallow
 * **Otherwise,** download and unzip it from: https://github.com/fleschutz/PowerShell/archive/master.zip
 </details>
 
-How to execute PowerShell Scripts?
-----------------------------------
+<details><summary>How to execute PowerShell Scripts?</summary>
+
 1. In the Windows desktop: right-click the script and select: *Execute with PowerShell*
 2. In a command-line interface (CLI, e.g. *Windows Terminal*, either local or remote via SSH) by typing: `./<FILENAME_OF_SCRIPT>`.
 3. By connecting a context menu item with a script.
 4. By voice control, e.g. see repo [talk2windows](https://github.com/fleschutz/talk2windows) for more information.
 5. By using automation software, e.g. [Jenkins](https://www.jenkins.io).
 6. Automatically on login (see AutoStart folder)/logoff/daily/etc.
+ </details>
 
+ <details><summary>What about Security?</summary>
 
-What about Security?
---------------------
 * Execute scripts only that you trust (and/or where you have checked the code before)!
 * Prefer SSH Remoting instead of PowerShell Remoting
 * More recommendations by NSA and cyber security centers in the U.S. (CISA), New Zealand (NZ NCSC), and the U.K. (NCSC-UK) can be found here: https://media.defense.gov/2022/Jun/22/2003021689/-1/-1/1/CSI_KEEPING_POWERSHELL_SECURITY_MEASURES_TO_USE_AND_EMBRACE_20220622.PDF
+ </details>
 
-
-Why do some scripts show gibberish characters?
-----------------------------------------------
+ <details><summary>Why do some scripts show gibberish characters?</summary>
 Those PowerShell scripts are using Unicode characters. Use a modern console supporting UTF-8 such as *Windows Terminal*, please.
+ </details>
 
-
-How to set PowerShell as favorite shell on Linux?
--------------------------------------------------
+ <details><summary>How to set PowerShell as favorite shell on Linux?</summary>
 Make sure PowerShell is installed, then execute: `chsh -s /usr/bin/pwsh <username>`. In case you experience an "invalid shell" error, add "/usr/bin/pwsh" to /etc/shells.
+  </details>
 
-
-How to install a custom PowerShell profile?
--------------------------------------------
+  <details><summary>How to install a custom PowerShell profile?</summary>
 Execute: `./set-profile.ps1` in the *Scripts* subfolder, this will install **my-profile.ps1** as your PowerShell profile. It's a nice looking base profile, but can easily be changed to your needs.
-
+  </details>
 
 How to add the scripts to the search path?
 ------------------------------------------
