@@ -52,6 +52,14 @@ NOTE: the group policy object (GPO) settings of your organization might disallow
 6. Automatically on login (see AutoStart folder)/logoff/daily/etc.
  </details>
  
+<details><summary>How to execute PowerShell scripts in Windows context menus?</summary>
+   
+* to enable "right-click > New > Windows PowerShell Script" execute `Add_ps1_to_New_context_menu.reg` in subfolder [Data/](../Data)
+ 
+* to disable this execute `Remove_ps1_from_New_context_menu.reg` in subfolder [Data/](../Data)
+</details>
+
+ 
  <details><summary>How to execute PowerShell Scripts in Jenkins?</summary>
  Install the 'PowerShell plugin', it allows Jenkins to invoke PowerShell as build scripts. It uses PowerShell.exe on Windows and pwsh on Linux.
  </details>
@@ -85,13 +93,6 @@ Want to use the PowerShell scripts everywhere on the command-line? Then you need
 * **On Linux using Bash:** edit .profile in your home directory and add the line: PATH="$PATH:/path/to/PowerShell/Scripts"
 * **On Windows:** open Settings > System > About > Advanced system settings > Environment Variables, edit the user's variable "Path", and add the full path to the Scripts/ directory.
    </details>
-
-  <details><summary>How to use PowerShell in Windows context menus?</summary>
-   
-* to enable "right-click > New > Windows PowerShell Script" execute `Add_ps1_to_New_context_menu.reg` in subfolder [Data/](../Data)
-* to disable this execute `Remove_ps1_from_New_context_menu.reg` in subfolder [Data/](../Data)
-  </details>
-
 
   <details><summary>Which editor to use for PowerShell scripts?</summary>
 
