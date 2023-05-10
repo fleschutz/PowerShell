@@ -6,9 +6,8 @@ PowerShell FAQ
  PowerShell is a task automation and configuration management framework from Microsoft, consisting of a command-line shell and associated scripting language.
 </details>
 
-
-Why use PowerShell?
--------------------
+<details>
+ <summary>Why use PowerShell?</summary>
 ✔️ It's **powerful** - fully control your computer
 
 ✔️ It's **easy to learn** - see the tutorial at: https://www.guru99.com/powershell-tutorial.html
@@ -18,7 +17,7 @@ Why use PowerShell?
 ✔️ It's **open-source and free** - see the Github repository at: https://github.com/PowerShell/PowerShell
 
 ✔️ It's **fully documented** - see the PowerShell documentation at: https://docs.microsoft.com/en-us/powershell/
-
+</details>
 
 How to install PowerShell?
 --------------------------
