@@ -1,13 +1,11 @@
 PowerShell FAQ
 ==============
 
-<details>
- <summary>What is PowerShell?</summary>
- PowerShell is a task automation and configuration management framework from Microsoft, consisting of a command-line shell and associated scripting language.
+<details><summary>What is PowerShell?</summary>
+PowerShell is a task automation and configuration management framework from Microsoft, consisting of a command-line shell and associated scripting language.
 </details>
 
-<details>
- <summary>Why use PowerShell?</summary>
+<details><summary>Why use PowerShell?</summary>
  
 ✔️ It's **powerful** - fully control your computer
 
@@ -20,8 +18,7 @@ PowerShell FAQ
 ✔️ It's **fully documented** - see the PowerShell documentation at: https://docs.microsoft.com/en-us/powershell/
 </details>
 
-<details>
- <summary>How to install PowerShell?</summary>
+<details><summary>How to install PowerShell?</summary>
 
 ▶️ **On Windows** it's preinstalled, **but** the script execution policy is *restricted* (forbidden) by default! To change this: open the *Windows PowerShell (Administrator)* console and enter:
 ```
@@ -38,8 +35,8 @@ NOTE: the group policy object (GPO) settings of your organization might disallow
 ```
 </details>
 
-<details>
- <summary>How to get the PowerShell Scripts?</summary>
+<details><summary>How to get the PowerShell Scripts?</summary>
+ 
 * When using **Git**, execute in a terminal window: `> git clone https://github.com/fleschutz/PowerShell`
 * When using **Chocolatey**, execute in *Windows PowerShell (Administrator)*: `> choco install powershell-scripts --version=0.4`
 * **Otherwise,** download and unzip it from: https://github.com/fleschutz/PowerShell/archive/master.zip
