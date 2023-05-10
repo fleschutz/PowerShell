@@ -1,9 +1,10 @@
 PowerShell FAQ
 ==============
 
-What is PowerShell?
--------------------
-PowerShell is a task automation and configuration management framework from Microsoft, consisting of a command-line shell and associated scripting language. 
+<details>
+ <summary>What is PowerShell?</summary>
+ PowerShell is a task automation and configuration management framework from Microsoft, consisting of a command-line shell and associated scripting language.
+</details>
 
 
 Why use PowerShell?
