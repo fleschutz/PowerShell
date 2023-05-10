@@ -60,18 +60,21 @@ NOTE: the group policy object (GPO) settings of your organization might disallow
  </details>
 
  <details><summary>Why do some scripts show gibberish characters?</summary>
+  
 Those PowerShell scripts are using Unicode characters. Use a modern console supporting UTF-8 such as *Windows Terminal*, please.
  </details>
 
  <details><summary>How to set PowerShell as favorite shell on Linux?</summary>
-Make sure PowerShell is installed, then execute: `chsh -s /usr/bin/pwsh <username>`. In case you experience an "invalid shell" error, add "/usr/bin/pwsh" to /etc/shells.
-  </details>
+  
+Make sure PowerShell is installed, then execute: `chsh -s /usr/bin/pwsh USERNAME`. In case you experience an "invalid shell" error, add "/usr/bin/pwsh" to /etc/shells.
+ </details>
 
-  <details><summary>How to install a custom PowerShell profile?</summary>
+ <details><summary>How to install a custom PowerShell profile?</summary>
+   
 Execute: `./set-profile.ps1` in the *Scripts* subfolder, this will install **my-profile.ps1** as your PowerShell profile. It's a nice looking base profile, but can easily be changed to your needs.
   </details>
 
-  <details><summary>How to add the scripts to the search path?</summary>
+ <details><summary>How to add the scripts to the search path?</summary>
 
 Want to use the PowerShell scripts everywhere on the command-line? Then you need to add the Scripts/ subfolder to the search path:
 
@@ -112,7 +115,8 @@ Good PowerShell scripts are both user-friendly and platform-independent. I recom
 9. On success exit with error code 0 (`exit 0`), otherwise print the error with keyword "ERROR:" (to support log parsers) and exit the error code (mostly 1)
    </details>
 
-   <details><summary>Where's the Star History?</summary>>
+   <details><summary>Where's the Star History?</summary>
+    
 [![Star History Chart](https://api.star-history.com/svg?repos=fleschutz/PowerShell&type=Date)](https://star-history.com/#fleschutz/PowerShell&Date)
    </details>
 
