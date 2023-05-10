@@ -35,7 +35,7 @@ NOTE: the group policy object (GPO) settings of your organization might disallow
 ```
 </details>
 
-<details><summary>How to get the PowerShell Scripts?</summary>
+<details><summary>How to get the PowerShell scripts?</summary>
  
 * When using **Git**, execute in a terminal window: `> git clone https://github.com/fleschutz/PowerShell`
 * When using **Chocolatey**, execute in *Windows PowerShell (Administrator)*: `> choco install powershell-scripts --version=0.4`
@@ -60,11 +60,11 @@ NOTE: the group policy object (GPO) settings of your organization might disallow
 </details>
 
  
- <details><summary>How to execute PowerShell Scripts in Jenkins?</summary>
+ <details><summary>How to execute PowerShell scripts in Jenkins?</summary>
  Install the 'PowerShell plugin', it allows Jenkins to invoke PowerShell as build scripts. It uses PowerShell.exe on Windows and pwsh on Linux.
  </details>
 
- <details><summary>What about Security?</summary>
+ <details><summary>What about security?</summary>
 
 * Execute scripts only that you trust (and/or where you have checked the code before)!
 * Prefer SSH Remoting instead of PowerShell Remoting
