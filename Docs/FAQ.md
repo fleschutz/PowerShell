@@ -42,7 +42,7 @@ NOTE: the group policy object (GPO) settings of your organization might disallow
 * **Otherwise,** download and unzip it from: https://github.com/fleschutz/PowerShell/archive/master.zip
 </details>
 
-<details><summary>How to execute PowerShell Scripts?</summary>
+<details><summary>How to execute PowerShell scripts in Windows?</summary>
 
 1. In the Windows desktop: right-click the script and select: *Execute with PowerShell*
 2. In a command-line interface (CLI, e.g. *Windows Terminal*, either local or remote via SSH) by typing: `./<FILENAME_OF_SCRIPT>`.
@@ -50,6 +50,10 @@ NOTE: the group policy object (GPO) settings of your organization might disallow
 4. By voice control, e.g. see repo [talk2windows](https://github.com/fleschutz/talk2windows) for more information.
 5. By using automation software, e.g. [Jenkins](https://www.jenkins.io).
 6. Automatically on login (see AutoStart folder)/logoff/daily/etc.
+ </details>
+ 
+ <details><summary>How to execute PowerShell Scripts in Jenkins?</summary>
+ Install the 'PowerShell plugin', it allows Jenkins to invoke PowerShell as build scripts. It uses PowerShell.exe on Windows and pwsh on Linux.
  </details>
 
  <details><summary>What about Security?</summary>
