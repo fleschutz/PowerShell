@@ -8,6 +8,7 @@ PowerShell FAQ
 
 <details>
  <summary>Why use PowerShell?</summary>
+ 
 ✔️ It's **powerful** - fully control your computer
 
 ✔️ It's **easy to learn** - see the tutorial at: https://www.guru99.com/powershell-tutorial.html
@@ -19,8 +20,9 @@ PowerShell FAQ
 ✔️ It's **fully documented** - see the PowerShell documentation at: https://docs.microsoft.com/en-us/powershell/
 </details>
 
-How to install PowerShell?
---------------------------
+<details>
+ <summary>How to install PowerShell?</summary>
+
 ▶️ **On Windows** it's preinstalled, **but** the script execution policy is *restricted* (forbidden) by default! To change this: open the *Windows PowerShell (Administrator)* console and enter:
 ```
  PS> Set-ExecutionPolicy -ExecutionPolicy Bypass -Scope CurrentUser
@@ -34,13 +36,14 @@ NOTE: the group policy object (GPO) settings of your organization might disallow
  $ snap install PowerShell
  $ ln -s /snap/bin/pwsh /usr/bin/pwsh
 ```
+</details>
 
-How to get the PowerShell Scripts?
-----------------------------------
+<details>
+ <summary>How to get the PowerShell Scripts?</summary>
 * When using **Git**, execute in a terminal window: `> git clone https://github.com/fleschutz/PowerShell`
 * When using **Chocolatey**, execute in *Windows PowerShell (Administrator)*: `> choco install powershell-scripts --version=0.4`
 * **Otherwise,** download and unzip it from: https://github.com/fleschutz/PowerShell/archive/master.zip
-
+</details>
 
 How to execute PowerShell Scripts?
 ----------------------------------
