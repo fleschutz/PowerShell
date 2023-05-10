@@ -71,22 +71,23 @@ Make sure PowerShell is installed, then execute: `chsh -s /usr/bin/pwsh <usernam
 Execute: `./set-profile.ps1` in the *Scripts* subfolder, this will install **my-profile.ps1** as your PowerShell profile. It's a nice looking base profile, but can easily be changed to your needs.
   </details>
 
-How to add the scripts to the search path?
-------------------------------------------
+  <details><summary>How to add the scripts to the search path?</summary>
+
 Want to use the PowerShell scripts everywhere on the command-line? Then you need to add the Scripts/ subfolder to the search path:
 
 * **On Linux using Bash:** edit .profile in your home directory and add the line: PATH="$PATH:/path/to/PowerShell/Scripts"
 * **On Windows:** open Settings > System > About > Advanced system settings > Environment Variables, edit the user's variable "Path", and add the full path to the Scripts/ directory.
+   </details>
 
-
-How to use PowerShell in Windows context menus?
------------------------------------------------
+  <details><summary>How to use PowerShell in Windows context menus?</summary>
+   
 * to enable "right-click > New > Windows PowerShell Script" execute `Add_ps1_to_New_context_menu.reg` in subfolder [Data/](../Data)
 * to disable this execute `Remove_ps1_from_New_context_menu.reg` in subfolder [Data/](../Data)
+  </details>
 
 
-Which editor to use for PowerShell scripts?
--------------------------------------------
+  <details><summary>Which editor to use for PowerShell scripts?</summary>
+
 * **Visual Studio Code** - Supporting syntax highlighting, on-the-fly problem checking and an integrated PowerShell Console (available for free on Linux, Mac OS and Windows, now recommended by Microsoft).
 * **PowerShell ISE** (Integrated Scripting Environment) - Former official PowerShell development environment included with Microsoft Windows.
 * **PowerShell Studio** - Powerful PowerShell IDE with module, help, and user interface development tools, high DPI support and regular updates.
@@ -94,10 +95,10 @@ Which editor to use for PowerShell scripts?
 * **Atom package** - Add-on with PowerShell language support for Atom.
 * **SublimeText package** - Add-on with PowerShell language support for Sublime Text.
 * or your **favorite text editor** as an alternative.
+  </details>
 
+  <details><summary>How to write good PowerShell scripts?</summary>
 
-How to write good PowerShell scripts?
--------------------------------------
 Good PowerShell scripts are both user-friendly and platform-independent. I recommend the following rules as a starting point:
 
 1. Use the `<verb>-<object>.ps1` scheme to name the script.
@@ -109,20 +110,19 @@ Good PowerShell scripts are both user-friendly and platform-independent. I recom
 7. For readibility use UpperCamelCase for variables and functions, lowerCamelCase for everything else.
 8. Set *execute* file permissions for Linux: `chmod a+rx <filename>`
 9. On success exit with error code 0 (`exit 0`), otherwise print the error with keyword "ERROR:" (to support log parsers) and exit the error code (mostly 1)
+   </details>
 
-
-Where's the Star History?
--------------------------
+   <details><summary>Where's the Star History?</summary>>
 [![Star History Chart](https://api.star-history.com/svg?repos=fleschutz/PowerShell&type=Date)](https://star-history.com/#fleschutz/PowerShell&Date)
+   </details>
 
+   <details><summary>Want to contribute or found a bug or issue?</summary>
 
-Want to contribute or found a bug or issue?
--------------------------------------------
 If you find something bad (like a bug, error, or any issue), please report it here by open an Issue.
 
 Or even better: Fork the repository, add or fix the script and submit a pull request, so others can participate too.  
+   </details>
 
-
-Your question is not answered here?
------------------------------------
+   <details><summary>Your question is not answered here?</summary>
 Send your question to: markus.fleschutz [at] gmail.com
+   </details>
