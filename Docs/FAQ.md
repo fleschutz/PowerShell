@@ -79,7 +79,7 @@ NOTE: the group policy object (GPO) settings of your organization might disallow
 **Those PowerShell scripts are using Unicode characters. Use a modern console supporting UTF-8 such as *Windows Terminal*, please.**
 </details>
 
-<details><summary>How to set PowerShell as favorite shell on Linux?</summary>
+<details><summary>How to set PowerShell as my favorite shell on Linux?</summary>
   
 **Make sure PowerShell is installed, then execute: `chsh -s /usr/bin/pwsh USERNAME`. In case you experience an "invalid shell" error, add "/usr/bin/pwsh" to /etc/shells.**
 </details>
