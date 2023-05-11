@@ -94,7 +94,7 @@ Want to use the PowerShell scripts everywhere on the command-line? Then you need
 * **On Windows:** open Settings > System > About > Advanced system settings > Environment Variables, edit the user's variable "Path", and add the full path to the Scripts/ directory.
    </details>
 
-  <details><summary>Which editor to use for PowerShell scripts?</summary>
+<details><summary>Which editor to use for PowerShell scripts?</summary>
 
 * **Visual Studio Code** - Supporting syntax highlighting, on-the-fly problem checking and an integrated PowerShell Console (available for free on Linux, Mac OS and Windows, now recommended by Microsoft).
 * **PowerShell ISE** (Integrated Scripting Environment) - Former official PowerShell development environment included with Microsoft Windows.
@@ -103,35 +103,34 @@ Want to use the PowerShell scripts everywhere on the command-line? Then you need
 * **Atom package** - Add-on with PowerShell language support for Atom.
 * **SublimeText package** - Add-on with PowerShell language support for Sublime Text.
 * or your **favorite text editor** as an alternative.
-  </details>
+</details>
 
-  <details><summary>How to write good PowerShell scripts?</summary>
+<details><summary>How to write good PowerShell scripts?</summary>
+Good PowerShell scripts are both user-friendly and platform-independent. As a starting point I recommend the following:
 
-Good PowerShell scripts are both user-friendly and platform-independent. I recommend the following rules as a starting point:
+* Use the `<verb>-<object>.ps1` scheme to name the script.
+* Use `UTF-8 BOM` encoding to support Unicode characters in the script.
+* Add a comment-based help at the beginning with: `.SYNOPSIS`, `.DESCRIPTION`, `.PARAMETER`, `.EXAMPLE`, `.LINK`, and `.NOTES`.
+* Check the requirements for the script, e.g. `#Requires -RunAsAdministrator`, or `#Requires -Version 3`
+* Prefer command-line options, else ask the user for help
+* Recommended is `Set-StrictMode -Version Latest` to enable additional error checking.
+* For readibility use UpperCamelCase for variables and functions, lowerCamelCase for everything else.
+* Set *execute* file permissions for Linux: `chmod a+rx <filename>`
+* On success exit with error code 0 (`exit 0`), otherwise print the error with keyword "ERROR:" (to support log parsers) and exit the error code (mostly 1)
+ </details>
 
-1. Use the `<verb>-<object>.ps1` scheme to name the script.
-2. Use `UTF-8 BOM` encoding to support Unicode characters in the script.
-3. Add a comment-based help at the beginning with: `.SYNOPSIS`, `.DESCRIPTION`, `.PARAMETER`, `.EXAMPLE`, `.LINK`, and `.NOTES`.
-4. Check the requirements for the script, e.g. `#Requires -RunAsAdministrator`, or `#Requires -Version 3`
-5. Prefer command-line options, else ask the user for help
-6. Recommended is `Set-StrictMode -Version Latest` to enable additional error checking.
-7. For readibility use UpperCamelCase for variables and functions, lowerCamelCase for everything else.
-8. Set *execute* file permissions for Linux: `chmod a+rx <filename>`
-9. On success exit with error code 0 (`exit 0`), otherwise print the error with keyword "ERROR:" (to support log parsers) and exit the error code (mostly 1)
-   </details>
-
-   <details><summary>Where's the Star History of this repo?</summary>
+<details><summary>Where's the Star History of this repo?</summary>
     
 [![Star History Chart](https://api.star-history.com/svg?repos=fleschutz/PowerShell&type=Date)](https://star-history.com/#fleschutz/PowerShell&Date)
-   </details>
+</details>
 
-   <details><summary>Want to contribute or found a bug or issue?</summary>
+<details><summary>How to contribute or how to report a bug?</summary>
 
 If you find something bad (like a bug, error, or any issue), please report it here by opening an Issue.
 
 Or even better: Fork the repository, add or fix the script and submit a pull request, so others can participate too.  
-   </details>
+</details>
 
-   <details><summary>Your question is not answered here?</summary>
-Send your question to: markus.fleschutz [at] gmail.com
+   <details><summary>What if my question is not answered here?</summary>
+Just send your question to: markus.fleschutz [at] gmail.com
    </details>
