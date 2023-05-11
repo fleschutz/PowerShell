@@ -109,7 +109,8 @@ Want to use the PowerShell scripts everywhere on the command-line? Then you need
 </details>
 
 <details><summary>How to write good PowerShell scripts?</summary>
-Good PowerShell scripts are both user-friendly and platform-independent. As a starting point I recommend the following:
+ 
+**Good PowerShell scripts are both user-friendly and platform-independent. As a starting point I recommend the following:**
 
 * Use the `<verb>-<object>.ps1` scheme to name the script.
 * Use `UTF-8 BOM` encoding to support Unicode characters in the script.
