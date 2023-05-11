@@ -128,11 +128,10 @@ Good PowerShell scripts are both user-friendly and platform-independent. As a st
 
 <details><summary>How to contribute or how to report a bug?</summary>
 
-If you find something bad (like a bug, error, or any issue), please report it here by opening an Issue.
-
-Or even better: Fork the repository, add or fix the script and submit a pull request, so others can participate too.  
+**If you find something bad (like a bug, error, or any issue), please report it here by opening an Issue. Or even better: Fork the repository, add or fix the script and submit a pull request, so others can participate too.**
 </details>
 
-   <details><summary>What if my question is not answered here?</summary>
-Just send your question to: markus.fleschutz [at] gmail.com
-   </details>
+<details><summary>What if my question is not answered here?</summary>
+ 
+**Just send your question to: markus.fleschutz [at] gmail.com**
+</details>
