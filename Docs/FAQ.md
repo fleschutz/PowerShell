@@ -62,9 +62,10 @@ NOTE: the group policy object (GPO) settings of your organization might disallow
 </details>
 
  
- <details><summary>How to execute PowerShell scripts in Jenkins?</summary>
- Install the 'PowerShell plugin', it allows Jenkins to invoke PowerShell as build scripts. It uses PowerShell.exe on Windows and pwsh on Linux.
- </details>
+<details><summary>How to execute PowerShell scripts in Jenkins?</summary>
+ 
+**Install the 'PowerShell plugin', it allows Jenkins to invoke PowerShell as build scripts. It uses PowerShell.exe on Windows and pwsh on Linux.**
+</details>
 
  <details><summary>What about security?</summary>
 
@@ -73,20 +74,20 @@ NOTE: the group policy object (GPO) settings of your organization might disallow
 * More recommendations by NSA and cyber security centers in the U.S. (CISA), New Zealand (NZ NCSC), and the U.K. (NCSC-UK) can be found here: https://media.defense.gov/2022/Jun/22/2003021689/-1/-1/1/CSI_KEEPING_POWERSHELL_SECURITY_MEASURES_TO_USE_AND_EMBRACE_20220622.PDF
  </details>
 
- <details><summary>Why do some scripts show gibberish characters?</summary>
+<details><summary>Why do some scripts show gibberish characters?</summary>
   
-Those PowerShell scripts are using Unicode characters. Use a modern console supporting UTF-8 such as *Windows Terminal*, please.
- </details>
+**Those PowerShell scripts are using Unicode characters. Use a modern console supporting UTF-8 such as *Windows Terminal*, please.**
+</details>
 
- <details><summary>How to set PowerShell as favorite shell on Linux?</summary>
+<details><summary>How to set PowerShell as favorite shell on Linux?</summary>
   
-Make sure PowerShell is installed, then execute: `chsh -s /usr/bin/pwsh USERNAME`. In case you experience an "invalid shell" error, add "/usr/bin/pwsh" to /etc/shells.
- </details>
+**Make sure PowerShell is installed, then execute: `chsh -s /usr/bin/pwsh USERNAME`. In case you experience an "invalid shell" error, add "/usr/bin/pwsh" to /etc/shells.**
+</details>
 
- <details><summary>How to install a custom PowerShell profile?</summary>
+<details><summary>How to install a custom PowerShell profile?</summary>
    
-Execute: `./set-profile.ps1` in the *Scripts* subfolder, this will install **my-profile.ps1** as your PowerShell profile. It's a nice looking base profile, but can easily be changed to your needs.
-  </details>
+**Execute: `./set-profile.ps1` in the *Scripts* subfolder, this will install **my-profile.ps1** as your PowerShell profile. It's a nice looking base profile, but can easily be changed to your needs.**
+</details>
 
  <details><summary>How to add the scripts to the search path?</summary>
 
