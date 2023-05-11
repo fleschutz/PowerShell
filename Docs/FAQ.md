@@ -76,7 +76,7 @@ NOTE: the group policy object (GPO) settings of your organization might disallow
 
 <details><summary>Why do some scripts show gibberish characters?</summary>
   
-**Those PowerShell scripts are using Unicode characters. Use a modern console supporting UTF-8 such as *Windows Terminal*, please.**
+**Your current terminal application doesn't support Unicode characters used by those PowerShell scripts. Use a modern one such as *Windows Terminal*, please.**
 </details>
 
 <details><summary>How to configure PowerShell as my default shell on Linux?</summary>
