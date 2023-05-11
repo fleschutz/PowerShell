@@ -96,12 +96,12 @@ Want to use the PowerShell scripts everywhere on the command-line? Then you need
 
 <details><summary>Which editor to use for PowerShell scripts?</summary>
 
-* **Visual Studio Code** - Supporting syntax highlighting, on-the-fly problem checking and an integrated PowerShell Console (available for free on Linux, Mac OS and Windows, now recommended by Microsoft).
-* **PowerShell ISE** (Integrated Scripting Environment) - Former official PowerShell development environment included with Microsoft Windows.
-* **PowerShell Studio** - Powerful PowerShell IDE with module, help, and user interface development tools, high DPI support and regular updates.
-* **PowerShell Plus** - All in one IDE.
-* **Atom package** - Add-on with PowerShell language support for Atom.
-* **SublimeText package** - Add-on with PowerShell language support for Sublime Text.
+* **Visual Studio Code** - it supports syntax highlighting, on-the-fly problem checking and an integrated PowerShell Console (available for free on Linux, Mac OS and Windows, now recommended by Microsoft).
+* **PowerShell ISE** (Integrated Scripting Environment) - the former official PowerShell development environment included with Microsoft Windows.
+* **PowerShell Studio** - a powerful PowerShell IDE with module, help, and user interface development tools, high DPI support and regular updates.
+* **PowerShell Plus** - an all in one IDE.
+* **Atom package** - an add-on with PowerShell language support for Atom.
+* **SublimeText package** - an add-on with PowerShell language support for Sublime Text.
 * or your **favorite text editor** as an alternative.
 </details>
 
