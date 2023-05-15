@@ -33,7 +33,7 @@ try {
                 	Remove-Item -Path $fullPath -Force -Recurse
 			$numRemoved++
            	} else {
-			Write-Host "#$($count): Skipping '$folder' (too young)..."
+			Write-Host "#$($count): Skipping young '$folder'..."
 		}
         }
 	Write-Progress -completed "."
