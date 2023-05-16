@@ -8,6 +8,7 @@ APPLICATION,           CATEGORY,                APPID
 "Git for Windows",     "source code management","Git.Git"
 "Google Chrome",       "desktop browser",       "Google.Chrome"
 "Greenshot",           "screenshot utility",    "Greenshot.Greenshot"
+"grepWin",             "search tool",           "StefansTools.grepWin"
 "inSSIDer",            "Wifi tool",             "MetaGeek.inSSIDer"
 "IrfanView",           "image viewer",          "9PJZ3BTL5PV6"
 "KeePassXC",           "password manager",      "XP8K2L36VP0QMB"
