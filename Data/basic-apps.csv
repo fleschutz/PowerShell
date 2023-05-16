@@ -4,6 +4,7 @@ APPLICATION,           CATEGORY,                APPID
 "CrystalDiskInfo",     "HDD/SSD utility",       "XP8K4RGX25G3GM"
 "Dopamine",            "audio player",          "Digimezzo.Dopamine.2"
 "Dropbox",             "file sync",             "Dropbox.Dropbox"
+"Git Extensions",      "Git client",            "GitExtensionsTeam.GitExtensions"
 "Git for Windows",     "source code management","Git.Git"
 "Google Chrome",       "desktop browser",       "Google.Chrome"
 "Greenshot",           "screenshot utility",    "Greenshot.Greenshot"
