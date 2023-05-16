@@ -15,15 +15,17 @@
 try {
 	$StopWatch = [system.diagnostics.stopwatch]::startNew()
 
-	Write-Host "⏳ (1/32) Loading Data/basic-apps.csv...    " -noNewline
+	Write-Host "⏳ (1/34) Loading Data/basic-apps.csv...    " -noNewline
 	$Table = Import-CSV "$PSScriptRoot/../Data/basic-apps.csv"
 	$NumEntries = $Table.count
-	Write-Host "$NumEntries apps"
-	Write-Host "⏳ (2/32) About to install or upgrade:      " -noNewline
+	"$NumEntries apps"
+	"⏳ (2/34) About to install or upgrade:"
+	""
 	foreach($Row in $Table) {
 		[string]$AppName = $Row.APPLICATION
-		Write-Host "$AppName, " -NoNewline
+		Write-Host " · $AppName" -NoNewline
 	}
+	""
 	""
 	"Press <Control> <C> to abort, otherwise the installation will start in 15 seconds..."
 	Start-Sleep -seconds 15
