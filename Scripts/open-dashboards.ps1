@@ -13,19 +13,20 @@
 
 try {
 	$stopWatch = [system.diagnostics.stopwatch]::startNew()
-	Write-Progress "⏳ Loading Data/popular-dashboards.csv..."
+	Write-Host "⏳ (1/2) Loading Data/popular-dashboards.csv..."
 	$Table = Import-CSV "$PSScriptRoot/../Data/popular-dashboards.csv"
 	$NumRows = $Table.Length
+	Write-Host "⏳ (2/2) Opening dashboards in Web browser: " -noNewLine
 	foreach($Row in $Table) {
 		$Name = $Row.NAME
 		$URL = $Row.URL
-		Write-Progress "⏳ Opening $Name in your browser..."
+		Write-Host "$Name, " -noNewline
 		& "$PSScriptRoot/open-default-browser.ps1" "$URL"
 		Start-Sleep -milliseconds 100
 	}
-	Write-Progress -completed "."
+	Write-Host ""
 	[int]$elapsed = $stopWatch.Elapsed.TotalSeconds
-	"✅ Opened $NumRows Web dashboards in $elapsed sec (use switch-tabs.ps1 to switch the tabs automatically)"
+	"✅ Opened $NumRows dashboards in $elapsed sec (use switch-tabs.ps1 to switch the tabs automatically)"
 	exit 0 # success
 } catch {
 	"⚠️ Error in line $($_.InvocationInfo.ScriptLineNumber): $($Error[0])"
