@@ -36,7 +36,7 @@ try {
 
 	if ($Format -eq "pretty") {
 		""
-		& git -C "$RepoDir" log --graph --format=format:'%h %C(bold green)%cs %C(bold yellow)%s%C(reset)%d by %C(bold blue)%an%C(reset)' --all
+		& git -C "$RepoDir" log --graph --format=format:'%C(bold yellow)%s%C(reset)%d by %an 🕘%cs 🔗%h' --all
 	} elseif ($Format -eq "list") {
 		""
 		"Hash            Date            Author                  Description"
