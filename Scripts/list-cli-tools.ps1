@@ -177,7 +177,7 @@ function ListTools {
 	ListTool ipfs		"--version"
 	ListTool java		"--version"
 	ListTool join		"--version"
-	ListTool jcli		"--version"
+	ListTool jcli		"version"
 	ListTool kill		"--version"
 	ListTool ldd		"--version"
 	ListTool less		"--version"
