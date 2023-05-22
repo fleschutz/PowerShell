@@ -16,13 +16,13 @@ try {
 	Write-Host "⏳ (1/2) Loading Data/popular-dashboards.csv..."
 	$Table = Import-CSV "$PSScriptRoot/../Data/popular-dashboards.csv"
 	$NumRows = $Table.Length
-	Write-Host "⏳ (2/2) Launching Web browser with dashboards: " -noNewLine
+	Write-Host "⏳ (2/2) Launching Web browser with dashboards...   " -noNewLine
 	foreach($Row in $Table) {
 		$Name = $Row.NAME
 		$URL = $Row.URL
 		Write-Host "$Name · " -noNewline
 		& "$PSScriptRoot/open-default-browser.ps1" "$URL"
-		Start-Sleep -milliseconds 100
+		Start-Sleep -milliseconds 50
 	}
 	Write-Host ""
 	[int]$elapsed = $stopWatch.Elapsed.TotalSeconds
