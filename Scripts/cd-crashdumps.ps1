@@ -2,7 +2,7 @@
 .SYNOPSIS
 	Change to the crash dumps folder
 .DESCRIPTION
-	This PowerShell script changes the working directory to the crash dumps directory.
+	This PowerShell script changes the working directory to the crash dumps directory (Windows only).
 .EXAMPLE
 	PS> ./cd-crashdumps
 	📂C:\Users\Markus\AppData\Local\CrashDumps
@@ -13,7 +13,10 @@
 #>
 
 try {
-	$Path = Resolve-Path -Path "~/AppData/Local/CrashDumps"
+	[string]$Path = Resolve-Path -Path "~"
+	if (!(Test-Path $Path)) { throw "Home directory at $Path doesn't exist (yet)" }
+	$Path += "\AppData\Local\CrashDumps"
+	if (!(Test-Path $Path)) { throw "Crashdumps directory at $Path doesn't exist (yet)" }
 	Set-Location "$Path"
 	"📂$Path"
 	exit 0 # success
