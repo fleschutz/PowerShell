@@ -6,7 +6,7 @@
 .EXAMPLE
 	PS> ./list-cli-tools
 
-	Name         Version         Path                                          FileSize
+	Tool         Version         Path                                          FileSize
 	----         -------         ----                                          --------
 	at           10.0.19041.1    C:\WINDOWS\system32\at.exe                    31232
 	...
@@ -41,7 +41,7 @@ function ListTool { param([string]$Cmd, [string]$VersionArg)
 		} else {
 			$FileSize = "0"
 		}
-		New-Object PSObject -Property @{ Name=$Cmd; Version=$Version; Path=$Path; FileSize=$FileSize }
+		New-Object PSObject -Property @{ Tool=$Cmd; Version=$Version; Path=$Path; FileSize=$FileSize }
 	} catch {
 		return
 	}
@@ -176,8 +176,9 @@ function ListTools {
 	ListTool id		"--version"
 	ListTool ipfs		"--version"
 	ListTool java		"--version"
-	ListTool join		"--version"
 	ListTool jcli		"version"
+	ListTool join		"--version"
+	ListTool jhead		"-V"
 	ListTool kill		"--version"
 	ListTool ldd		"--version"
 	ListTool less		"--version"
@@ -294,7 +295,7 @@ function ListTools {
 }
  
 try {
-	ListTools | Format-Table -property @{e='Name';width=12},@{e='Version';width=15},@{e='Path';width=70},@{e='FileSize';width=10}
+	ListTools | Format-Table -property @{e='Tool';width=12},@{e='Version';width=15},@{e='Path';width=70},@{e='FileSize';width=10}
 	exit 0 # success
 } catch {
 	"⚠️ Error in line $($_.InvocationInfo.ScriptLineNumber): $($Error[0])"
