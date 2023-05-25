@@ -2,9 +2,9 @@
 .SYNOPSIS
 	List coffee prices
 .DESCRIPTION
-	This PowerShell script queries cryptocompare.com and lists the current crypto exchange rates in USD/EUR/RUB/CNY.
+	This PowerShell script queries alphavantage.co and lists the global price of coffee (monthly, in cents per points).
 .EXAMPLE
-	PS> ./list-crypto-rates
+	PS> ./list-coffee-prices
 .LINK
 	https://github.com/fleschutz/PowerShell
 .NOTES
@@ -14,24 +14,21 @@
 function WriteBar { param([string]$Text, [float]$Value, [float]$Max)
 	Write-Host "$Text " -noNewline
 	$Num = ($Value * 100.0) / $Max
-	while ($Num -ge 1.0) {
-		write-host -noNewLine "█"
-		$Num -= 1.0
-	}
+	while ($Num -ge 1.0) { Write-Host "█" -noNewline; $Num -= 1.0 }
 	if ($Num -ge 0.875) {
-		write-host -noNewLine "▉"
+		Write-Host -noNewLine "▉"
 	} elseif ($Num -ge 0.75) {
-		write-host -noNewLine "▊"
+		Write-Host -noNewLine "▊"
 	} elseif ($Num -ge 0.625) {
-		write-host -noNewLine "▋"
+		Write-Host -noNewLine "▋"
 	} elseif ($Num -ge 0.5) {
-		write-host -noNewLine "▌"
+		Write-Host -noNewLine "▌"
 	} elseif ($Num -ge 0.375) {
-		write-host -noNewLine "▍"
+		Write-Host -noNewLine "▍"
 	} elseif ($Num -ge 0.25) {
-		write-host -noNewLine "▎"
+		Write-Host -noNewLine "▎"
 	} elseif ($Num -ge 0.125) {
-		write-host -noNewLine "▏"
+		Write-Host -noNewLine "▏"
 	}
 	Write-Host " $Value"
 }
