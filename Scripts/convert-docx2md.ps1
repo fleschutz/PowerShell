@@ -1,4 +1,4 @@
-<#
+﻿<#
 .SYNOPSIS
 	Converts .DOCX file(s) into Markdown 
 .DESCRIPTION
@@ -27,7 +27,7 @@ try {
 	Write-Host "⏳ Converting..."
 	gci -r -i $FilePattern | foreach {
 		$TargetPath = $_.directoryname + "\" + $_.basename + ".md"
-		pandoc -f docx -s $_.name -o $TargetPath
+		& pandoc -f docx -s $_.name -o $TargetPath
 	}
 
 	[int]$Elapsed = $StopWatch.Elapsed.TotalSeconds

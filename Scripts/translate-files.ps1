@@ -23,6 +23,7 @@ function DetectSourceLang { param([string]$Filename)
 }
 
 function TranslateFilename { param([string]$Filename, [string]$SourceLang, [string]$TargetLang)
+	[string]$SourceLanguage = ""
 	if ($SourceLang -eq "de") { $SourceLanguage = "Deutsch" }
 	if ($SourceLang -eq "en") { $SourceLanguage = "English" }
 	if ($SourceLang -eq "fr") { $SourceLanguage = "Français" }

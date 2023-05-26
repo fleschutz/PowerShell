@@ -1,4 +1,4 @@
-<#
+﻿<#
 .SYNOPSIS
 	Converts Markdown file(s) into HTML 
 .DESCRIPTION

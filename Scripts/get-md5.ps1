@@ -16,11 +16,11 @@
 param([string]$file = "")
 
 try {
-	if ($file -eq "" ) { $file = read-host "Enter path to file" }
+	if ($file -eq "" ) { $file = Read-Host "Enter path to file" }
 
-	$Result = get-filehash $file -algorithm MD5
+	$Result = Get-Filehash $file -algorithm MD5
 
-	"✔️ MD5 hash is" $Result.Hash
+	"✔️ MD5 hash is $($Result.Hash)"
 	exit 0 # success
 } catch {
 	"⚠️ Error in line $($_.InvocationInfo.ScriptLineNumber): $($Error[0])"

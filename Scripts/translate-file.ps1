@@ -22,7 +22,7 @@ param([string]$File = "", [string]$SourceLang = "", [string]$TargetLang = "")
 function UseLibreTranslate { param([string]$Text, [string]$SourceLang, [string]$TargetLang)
 	$Parameters = @{"q"="$Text"; "source"="$SourceLang"; "target"="$TargetLang"; }
 	$Result = (Invoke-WebRequest -Uri https://libretranslate.com/translate -Method POST -Body ($Parameters|ConvertTo-Json) -ContentType "application/json").content | ConvertFrom-Json
-	start-sleep -milliseconds 3000 # 20 requests per minute maximum
+	Start-Sleep -milliseconds 3000 # 20 requests per minute maximum
 	return $Result.translatedText
 }
 

@@ -15,7 +15,7 @@
 	Author: Markus Fleschutz | License: CC0
 #>
 
-param([string]$symlink = "", $[string]target = "")
+param([string]$symlink = "", [string]$target = "")
 
 try {
 	if ($symlink -eq "" ) { $symlink = read-host "Enter new symlink filename" }

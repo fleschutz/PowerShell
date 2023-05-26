@@ -18,7 +18,7 @@
 	Author: Markus Fleschutz | License: CC0
 #>
 
-param([string]$TargetIP = "", [int]$TargetPort = 0, $[string]Message = "")
+param([string]$TargetIP = "", [int]$TargetPort = 0, [string]$Message = "")
 
 try {
 	if ($TargetIP -eq "" ) { $TargetIP = read-host "Enter target IP address" }
