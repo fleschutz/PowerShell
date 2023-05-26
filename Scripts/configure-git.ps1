@@ -35,7 +35,6 @@ try {
 	& git config --global core.autocrlf false          # don't change newlines
 	& git config --global core.symlinks true           # enable support for symbolic link files
 	& git config --global core.longpaths true          # enable support for long file paths
-	& git config --global http.sslVerify false
 	& git config --global init.defaultBranch main      # set the default branch name to 'main'
 	& git config --global merge.renamelimit 99999
 	& git config --global pull.rebase false
