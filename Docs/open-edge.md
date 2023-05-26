@@ -4,7 +4,7 @@ This PowerShell script launches the Microsoft Edge Web browser.
 
 ## Parameters
 ```powershell
-open-edge.ps1 [<CommonParameters>]
+/home/mf/Repos/PowerShell/Scripts/open-edge.ps1 [<CommonParameters>]
 
 [<CommonParameters>]
     This script supports the common parameters: Verbose, Debug, ErrorAction, ErrorVariable, WarningAction, 

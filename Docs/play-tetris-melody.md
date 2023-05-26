@@ -4,7 +4,7 @@ This PowerShell script plays the Tetris melody.
 
 ## Parameters
 ```powershell
-play-tetris-melody.ps1 [<CommonParameters>]
+/home/mf/Repos/PowerShell/Scripts/play-tetris-melody.ps1 [<CommonParameters>]
 
 [<CommonParameters>]
     This script supports the common parameters: Verbose, Debug, ErrorAction, ErrorVariable, WarningAction, 
@@ -27,13 +27,13 @@ https://github.com/fleschutz/PowerShell
 ```powershell
 <#
 .SYNOPSIS
-        Plays the Tetris melody
+	Plays the Tetris melody
 .DESCRIPTION
-        This PowerShell script plays the Tetris melody.
+	This PowerShell script plays the Tetris melody.
 .EXAMPLE
-        PS> ./play-tetris-melody
+	PS> ./play-tetris-melody
 .LINK
-        https://github.com/fleschutz/PowerShell
+	https://github.com/fleschutz/PowerShell
 .NOTES
 	Author: Markus Fleschutz | License: CC0
 #>
@@ -59,7 +59,7 @@ https://github.com/fleschutz/PowerShell
 [System.Console]::Beep(1056,500)
 [System.Console]::Beep(880,500)
 [System.Console]::Beep(880,500)
-start-sleep -milliseconds 250
+Start-Sleep -milliseconds 250
 [System.Console]::Beep(1188,500)
 [System.Console]::Beep(1408,250)
 [System.Console]::Beep(1760,500)
@@ -78,7 +78,7 @@ start-sleep -milliseconds 250
 [System.Console]::Beep(1056,500)
 [System.Console]::Beep(880,500)
 [System.Console]::Beep(880,500)
-start-sleep -milliseconds 500
+Start-Sleep -milliseconds 500
 [System.Console]::Beep(1320,500)
 [System.Console]::Beep(990,250)
 [System.Console]::Beep(1056,250)
@@ -100,7 +100,7 @@ start-sleep -milliseconds 500
 [System.Console]::Beep(1056,500)
 [System.Console]::Beep(880,500)
 [System.Console]::Beep(880,500)
-start-sleep -milliseconds 250
+Start-Sleep -milliseconds 250
 [System.Console]::Beep(1188,500)
 [System.Console]::Beep(1408,250)
 [System.Console]::Beep(1760,500)
@@ -119,7 +119,7 @@ start-sleep -milliseconds 250
 [System.Console]::Beep(1056,500)
 [System.Console]::Beep(880,500)
 [System.Console]::Beep(880,500)
-start-sleep -milliseconds 500
+Start-Sleep -milliseconds 500
 [System.Console]::Beep(660,1000)
 [System.Console]::Beep(528,1000)
 [System.Console]::Beep(594,1000)

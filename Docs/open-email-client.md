@@ -4,7 +4,7 @@ This PowerShell script launches the default email client.
 
 ## Parameters
 ```powershell
-open-email-client.ps1 [<CommonParameters>]
+/home/mf/Repos/PowerShell/Scripts/open-email-client.ps1 [<CommonParameters>]
 
 [<CommonParameters>]
     This script supports the common parameters: Verbose, Debug, ErrorAction, ErrorVariable, WarningAction, 

@@ -4,7 +4,7 @@ This PowerShell script closes the Windows Terminal application gracefully.
 
 ## Parameters
 ```powershell
-close-windows-terminal.ps1 [<CommonParameters>]
+/home/mf/Repos/PowerShell/Scripts/close-windows-terminal.ps1 [<CommonParameters>]
 
 [<CommonParameters>]
     This script supports the common parameters: Verbose, Debug, ErrorAction, ErrorVariable, WarningAction, 

@@ -35,7 +35,11 @@ function GetCurrentUserSID { [CmdletBinding()] param()
 
 
 try {
-	$Path = 'C:\$Recycle.Bin\' + "$(GetCurrentUserSID)"
+	if ($IsLinux) {
+		$Path = "$HOME/.local/share/Trash/"
+	} else {
+		$Path = "C:\$Recycle.Bin\" + "$(GetCurrentUserSID)"
+	}
 	if (-not(Test-Path "$Path" -pathType container)) {
 		throw "Recycle bin folder at 📂$Path doesn't exist (yet)"
 	}

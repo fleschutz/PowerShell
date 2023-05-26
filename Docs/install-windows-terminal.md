@@ -4,7 +4,7 @@ This PowerShell script installs Windows Terminal from the Microsoft Store.
 
 ## Parameters
 ```powershell
-install-windows-terminal.ps1 [<CommonParameters>]
+/home/mf/Repos/PowerShell/Scripts/install-windows-terminal.ps1 [<CommonParameters>]
 
 [<CommonParameters>]
     This script supports the common parameters: Verbose, Debug, ErrorAction, ErrorVariable, WarningAction, 

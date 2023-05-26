@@ -4,7 +4,7 @@ This PowerShell script lists "Did you mean?" suggestions from Google.
 
 ## Parameters
 ```powershell
-list-suggestions.ps1 [[-text] <String>] [<CommonParameters>]
+/home/mf/Repos/PowerShell/Scripts/list-suggestions.ps1 [[-text] <String>] [<CommonParameters>]
 
 -text <String>
     Specifies the word or sentence to get suggestions for.

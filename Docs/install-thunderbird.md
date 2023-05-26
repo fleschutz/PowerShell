@@ -4,7 +4,7 @@ This PowerShell script installs Mozilla Thunderbird.
 
 ## Parameters
 ```powershell
-install-thunderbird.ps1 [<CommonParameters>]
+/home/mf/Repos/PowerShell/Scripts/install-thunderbird.ps1 [<CommonParameters>]
 
 [<CommonParameters>]
     This script supports the common parameters: Verbose, Debug, ErrorAction, ErrorVariable, WarningAction, 

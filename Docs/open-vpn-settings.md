@@ -4,7 +4,7 @@ This PowerShell script launches the VPN settings of Windows.
 
 ## Parameters
 ```powershell
-open-vpn-settings.ps1 [<CommonParameters>]
+/home/mf/Repos/PowerShell/Scripts/open-vpn-settings.ps1 [<CommonParameters>]
 
 [<CommonParameters>]
     This script supports the common parameters: Verbose, Debug, ErrorAction, ErrorVariable, WarningAction, 

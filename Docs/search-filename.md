@@ -5,7 +5,7 @@ After you pass in a root folder and a search term, the script will list all file
 
 ## Parameters
 ```powershell
-search-filename.ps1 [-path] <Object> [-term] <Object> [<CommonParameters>]
+/home/mf/Repos/PowerShell/Scripts/search-filename.ps1 [-path] <Object> [-term] <Object> [<CommonParameters>]
 
 -path <Object>
     Specifies the path

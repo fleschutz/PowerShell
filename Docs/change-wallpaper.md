@@ -4,7 +4,7 @@ This PowerShell script downloads a random photo from Unsplash and sets it as des
 
 ## Parameters
 ```powershell
-change-wallpaper.ps1 [[-Category] <String>] [<CommonParameters>]
+/home/mf/Repos/PowerShell/Scripts/change-wallpaper.ps1 [[-Category] <String>] [<CommonParameters>]
 
 -Category <String>
     Specifies the photo category (beach, city, ...)

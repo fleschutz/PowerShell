@@ -4,7 +4,7 @@ This PowerShell script launches the File Explorer with the E: drive folder.
 
 ## Parameters
 ```powershell
-open-e-drive.ps1 [<CommonParameters>]
+/home/mf/Repos/PowerShell/Scripts/open-e-drive.ps1 [<CommonParameters>]
 
 [<CommonParameters>]
     This script supports the common parameters: Verbose, Debug, ErrorAction, ErrorVariable, WarningAction, 

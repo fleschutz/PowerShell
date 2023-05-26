@@ -4,7 +4,7 @@ This PowerShell script lists the latest news by using RSS (Really Simple Syndica
 
 ## Parameters
 ```powershell
-list-news.ps1 [[-RSS_URL] <String>] [[-MaxLines] <Int32>] [[-Speed] <Int32>] [<CommonParameters>]
+/home/mf/Repos/PowerShell/Scripts/list-news.ps1 [[-RSS_URL] <String>] [[-MaxLines] <Int32>] [[-Speed] <Int32>] [<CommonParameters>]
 
 -RSS_URL <String>
     Specifies the URL to the RSS feed (Yahoo News by default)
@@ -54,7 +54,7 @@ https://github.com/fleschutz/PowerShell
 ```powershell
 <#
 .SYNOPSIS
-	Lists the news
+	List news
 .DESCRIPTION
 	This PowerShell script lists the latest news by using RSS (Really Simple Syndication) feeds.
 .PARAMETER RSS_URL
@@ -77,12 +77,20 @@ try {
 	[xml]$Content = (Invoke-WebRequest -URI $RSS_URL -useBasicParsing).Content
 	[int]$Count = 1
 	foreach ($Item in $Content.rss.channel.item) {
-		& "$PSScriptRoot/write-typewriter.ps1" "→ $($Item.title)" $Speed
+		& "$PSScriptRoot/write-typewriter.ps1" "❇️ $($Item.title)" $Speed
 		if ($Count++ -eq $MaxLines) { break }
 	}
 	$Source = $Content.rss.channel.title
 	$Date = $Content.rss.channel.pubDate
-	"     (by *$($Source)* as of $Date)"
+	$Date = $Date -Replace "Mon, ",""
+	$Date = $Date -Replace "Tue, ",""
+	$Date = $Date -Replace "Wed, ",""
+	$Date = $Date -Replace "Thu, ",""
+	$Date = $Date -Replace "Fri, ",""
+	$Date = $Date -Replace "Sat, ",""
+	$Date = $Date -Replace "Sun, ",""
+	$Copyright = $Content.rss.channel.copyright
+	"($Source|$Date|$Copyright)"
 	exit 0 # success
 } catch {
 	"⚠️ Error in line $($_.InvocationInfo.ScriptLineNumber): $($Error[0])"

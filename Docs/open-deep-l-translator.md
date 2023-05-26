@@ -4,7 +4,7 @@ This PowerShell script launches the Web browser with the DeepL Translator websit
 
 ## Parameters
 ```powershell
-open-deep-l-translator.ps1 [<CommonParameters>]
+/home/mf/Repos/PowerShell/Scripts/open-deep-l-translator.ps1 [<CommonParameters>]
 
 [<CommonParameters>]
     This script supports the common parameters: Verbose, Debug, ErrorAction, ErrorVariable, WarningAction, 

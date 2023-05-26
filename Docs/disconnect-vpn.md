@@ -4,7 +4,7 @@ This PowerShell script disconnects the active VPN connection.
 
 ## Parameters
 ```powershell
-disconnect-vpn.ps1 [<CommonParameters>]
+/home/mf/Repos/PowerShell/Scripts/disconnect-vpn.ps1 [<CommonParameters>]
 
 [<CommonParameters>]
     This script supports the common parameters: Verbose, Debug, ErrorAction, ErrorVariable, WarningAction, 

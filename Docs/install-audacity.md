@@ -4,7 +4,7 @@ This PowerShell script installs Audacity.
 
 ## Parameters
 ```powershell
-install-audacity.ps1 [<CommonParameters>]
+/home/mf/Repos/PowerShell/Scripts/install-audacity.ps1 [<CommonParameters>]
 
 [<CommonParameters>]
     This script supports the common parameters: Verbose, Debug, ErrorAction, ErrorVariable, WarningAction, 

@@ -4,7 +4,7 @@ This PowerShell script installs 9 ZIP from the Microsoft Store.
 
 ## Parameters
 ```powershell
-install-nine-zip.ps1 [<CommonParameters>]
+/home/mf/Repos/PowerShell/Scripts/install-nine-zip.ps1 [<CommonParameters>]
 
 [<CommonParameters>]
     This script supports the common parameters: Verbose, Debug, ErrorAction, ErrorVariable, WarningAction, 

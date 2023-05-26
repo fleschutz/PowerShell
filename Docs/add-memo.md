@@ -1,10 +1,10 @@
 ## The *add-memo.ps1* Script
 
-This PowerShell script adds the given memo text to $HOME/Memos.csv.
+This PowerShell script saves the given memo text to Memos.csv in your home folder.
 
 ## Parameters
 ```powershell
-add-memo.ps1 [[-text] <String>] [<CommonParameters>]
+/home/mf/Repos/PowerShell/Scripts/add-memo.ps1 [[-text] <String>] [<CommonParameters>]
 
 -text <String>
     Specifies the text to memorize
@@ -23,7 +23,7 @@ add-memo.ps1 [[-text] <String>] [<CommonParameters>]
 ## Example
 ```powershell
 PS> ./add-memo "Buy apples"
-✔️ added to 📄/home/markus/Memos.csv
+✔️ saved to 📄/home/markus/Memos.csv
 
 ```
 
@@ -39,12 +39,12 @@ https://github.com/fleschutz/PowerShell
 .SYNOPSIS
 	Adds a memo text 
 .DESCRIPTION
-	This PowerShell script adds the given memo text to $HOME/Memos.csv.
+	This PowerShell script saves the given memo text to Memos.csv in your home folder.
 .PARAMETER text
 	Specifies the text to memorize
 .EXAMPLE
 	PS> ./add-memo "Buy apples"
-	✔️ added to 📄/home/markus/Memos.csv
+	✔️ saved to 📄/home/markus/Memos.csv
 .LINK
 	https://github.com/fleschutz/PowerShell
 .NOTES
@@ -54,19 +54,18 @@ https://github.com/fleschutz/PowerShell
 param([string]$text = "")
 
 try {
-	if ($text -eq "" ) { $text = read-host "Enter the memo text to add" }
+	if ($text -eq "" ) { $text = Read-Host "Enter the text to memorize" }
 
-	$Path = "$HOME/Memos.csv"
-	$Time = get-date -format "yyyy-MM-ddTHH:mm:ssZ" -asUTC
-	$User = $(whoami)
-	$Line = "$Time,$User,$text"
+	$Path = "~/Memos.csv"
+	$Time = Get-Date -format FileDateTimeUniversal
+	$Line = "$Time,$text"
 
-	if (-not(test-path "$Path" -pathType leaf)) {
-		write-output "Time,User,text" > "$Path"
+	if (-not(Test-Path "$Path" -pathType leaf)) {
+		Write-Output "TIME,TEXT" > "$Path"
 	}
-	write-output $Line >> "$Path"
+	Write-Output $Line >> "$Path"
 
-	"✔️ added to 📄$Path"
+	"✔️ saved to 📄$Path"
 	exit 0 # success
 } catch {
 	"⚠️ Error in line $($_.InvocationInfo.ScriptLineNumber): $($Error[0])"

@@ -4,7 +4,7 @@ This PowerShell script launches the Web browser with MSN showing the current tra
 
 ## Parameters
 ```powershell
-show-traffic.ps1 [<CommonParameters>]
+/home/mf/Repos/PowerShell/Scripts/show-traffic.ps1 [<CommonParameters>]
 
 [<CommonParameters>]
     This script supports the common parameters: Verbose, Debug, ErrorAction, ErrorVariable, WarningAction, 

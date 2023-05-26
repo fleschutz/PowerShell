@@ -4,7 +4,7 @@ This PowerShell script closes the Netflix application gracefully.
 
 ## Parameters
 ```powershell
-close-netflix.ps1 [<CommonParameters>]
+/home/mf/Repos/PowerShell/Scripts/close-netflix.ps1 [<CommonParameters>]
 
 [<CommonParameters>]
     This script supports the common parameters: Verbose, Debug, ErrorAction, ErrorVariable, WarningAction, 

@@ -4,7 +4,7 @@ This PowerShell script checks the given IPv4 address for validity.
 
 ## Parameters
 ```powershell
-check-ipv4-address.ps1 [[-Address] <String>] [<CommonParameters>]
+/home/mf/Repos/PowerShell/Scripts/check-ipv4-address.ps1 [[-Address] <String>] [<CommonParameters>]
 
 -Address <String>
     Specifies the IPv4 address to check

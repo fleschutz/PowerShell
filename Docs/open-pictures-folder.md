@@ -4,7 +4,7 @@ This script launches the File Explorer with the user's pictures folder.
 
 ## Parameters
 ```powershell
-open-pictures-folder.ps1 [<CommonParameters>]
+/home/mf/Repos/PowerShell/Scripts/open-pictures-folder.ps1 [<CommonParameters>]
 
 [<CommonParameters>]
     This script supports the common parameters: Verbose, Debug, ErrorAction, ErrorVariable, WarningAction, 

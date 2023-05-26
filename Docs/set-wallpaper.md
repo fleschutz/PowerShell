@@ -4,7 +4,7 @@ This PowerShell script sets the given image file as desktop wallpaper (.JPG or .
 
 ## Parameters
 ```powershell
-set-wallpaper.ps1 [[-ImageFile] <String>] [[-Style] <String>] [<CommonParameters>]
+/home/mf/Repos/PowerShell/Scripts/set-wallpaper.ps1 [[-ImageFile] <String>] [[-Style] <String>] [<CommonParameters>]
 
 -ImageFile <String>
     Specifies the path to the image file

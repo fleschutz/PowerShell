@@ -4,7 +4,7 @@ This PowerShell script speaks the given text with a Greek text-to-speech (TTS) v
 
 ## Parameters
 ```powershell
-speak-greek.ps1 [[-text] <String>] [<CommonParameters>]
+/home/mf/Repos/PowerShell/Scripts/speak-greek.ps1 [[-text] <String>] [<CommonParameters>]
 
 -text <String>
     Specifies the text to speak

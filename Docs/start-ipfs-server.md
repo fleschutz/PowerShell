@@ -4,7 +4,7 @@ This PowerShell script starts a local IPFS server as a daemon process.
 
 ## Parameters
 ```powershell
-start-ipfs-server.ps1 [<CommonParameters>]
+/home/mf/Repos/PowerShell/Scripts/start-ipfs-server.ps1 [<CommonParameters>]
 
 [<CommonParameters>]
     This script supports the common parameters: Verbose, Debug, ErrorAction, ErrorVariable, WarningAction, 

@@ -4,7 +4,7 @@ This PowerShell script closes the OneCalendar application gracefully.
 
 ## Parameters
 ```powershell
-close-one-calendar.ps1 [<CommonParameters>]
+/home/mf/Repos/PowerShell/Scripts/close-one-calendar.ps1 [<CommonParameters>]
 
 [<CommonParameters>]
     This script supports the common parameters: Verbose, Debug, ErrorAction, ErrorVariable, WarningAction, 

@@ -4,7 +4,7 @@ This PowerShell script uninstalls Git Extensions from the local computer.
 
 ## Parameters
 ```powershell
-uninstall-git-extensions.ps1 [<CommonParameters>]
+/home/mf/Repos/PowerShell/Scripts/uninstall-git-extensions.ps1 [<CommonParameters>]
 
 [<CommonParameters>]
     This script supports the common parameters: Verbose, Debug, ErrorAction, ErrorVariable, WarningAction, 

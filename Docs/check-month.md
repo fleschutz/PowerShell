@@ -4,7 +4,7 @@ This PowerShell script determines and speaks the current month name by text-to-s
 
 ## Parameters
 ```powershell
-check-month.ps1 [<CommonParameters>]
+/home/mf/Repos/PowerShell/Scripts/check-month.ps1 [<CommonParameters>]
 
 [<CommonParameters>]
     This script supports the common parameters: Verbose, Debug, ErrorAction, ErrorVariable, WarningAction, 

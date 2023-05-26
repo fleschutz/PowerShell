@@ -4,7 +4,7 @@ This PowerShell script lists the exact operating system version.
 
 ## Parameters
 ```powershell
-list-os.ps1 [<CommonParameters>]
+/home/mf/Repos/PowerShell/Scripts/list-os.ps1 [<CommonParameters>]
 
 [<CommonParameters>]
     This script supports the common parameters: Verbose, Debug, ErrorAction, ErrorVariable, WarningAction, 

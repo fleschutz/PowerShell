@@ -1,10 +1,10 @@
 ## The *check-dns.ps1* Script
 
-This PowerShell script measures and prints the DNS resolution speed by using 200 frequently used domain names.
+This PowerShell script measures and prints the DNS resolution speed by using 200 popular domains.
 
 ## Parameters
 ```powershell
-check-dns.ps1 [<CommonParameters>]
+/home/mf/Repos/PowerShell/Scripts/check-dns.ps1 [<CommonParameters>]
 
 [<CommonParameters>]
     This script supports the common parameters: Verbose, Debug, ErrorAction, ErrorVariable, WarningAction, 
@@ -14,6 +14,7 @@ check-dns.ps1 [<CommonParameters>]
 ## Example
 ```powershell
 PS> ./check-dns
+✅ DNS resolves 156.5 domains per second
 
 ```
 
@@ -27,11 +28,12 @@ https://github.com/fleschutz/PowerShell
 ```powershell
 <#
 .SYNOPSIS
-	Checks the DNS resolution 
+	Check DNS resolution 
 .DESCRIPTION
-	This PowerShell script measures and prints the DNS resolution speed by using 200 frequently used domain names.
+	This PowerShell script measures and prints the DNS resolution speed by using 200 popular domains.
 .EXAMPLE
 	PS> ./check-dns
+	✅ DNS resolves 156.5 domains per second
 .LINK
 	https://github.com/fleschutz/PowerShell
 .NOTES
@@ -39,26 +41,26 @@ https://github.com/fleschutz/PowerShell
 #>
  
 try {
-	Write-Progress "⏳ Step 1/2 - Reading from Data/frequent-domains.csv..."
-	$Table = Import-CSV "$PSScriptRoot/../Data/frequent-domains.csv"
-	$NumRows = $Table.Length
+	Write-Progress "⏳ Resolving 200 popular domain names..."
+	$table = Import-CSV "$PSScriptRoot/../Data/popular-domains.csv"
+	$numRows = $table.Length
 
-	Write-Progress "⏳ Step 2/2 - Resolving $NumRows domains..."
-	$StopWatch = [system.diagnostics.stopwatch]::startNew()
+	$stopWatch = [system.diagnostics.stopwatch]::startNew()
 	if ($IsLinux) {
-		foreach($Row in $Table){$nop=dig $Row.Domain +short}
+foreach($row in $table){$nop=dig $row.Domain +short}
 	} else {
-		foreach($Row in $Table){$nop=Resolve-DNSName $Row.Domain}
+foreach($row in $table){$nop=Resolve-DNSName $row.Domain}
 	}
+	[float]$elapsed = $stopWatch.Elapsed.TotalSeconds
 
-	[float]$Elapsed = $StopWatch.Elapsed.TotalSeconds
-	$Average = [math]::round($NumRows / $Elapsed, 1)
-
-	if ($Average -gt 10.0) {
-		"✅ DNS resolves $Average domains per second"
+	
+	$average = [math]::round($numRows / $elapsed, 1)
+	if ($average -lt 10.0) {
+		"⚠️ DNS resolves $average domains per second only!"
 	} else {  
-		"⚠️ DNS resolves only $Average domains per second!"
+		"✅ DNS resolves $average domains per second"
 	}
+	Write-Progress -completed "."
 	exit 0 # success
 } catch {
 	"⚠️ Error in line $($_.InvocationInfo.ScriptLineNumber): $($Error[0])"

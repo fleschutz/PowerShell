@@ -4,7 +4,7 @@ This PowerShell script converts text to a .WAV audio file.
 
 ## Parameters
 ```powershell
-convert-txt2wav.ps1 [[-Text] <String>] [[-WavFile] <String>] [<CommonParameters>]
+/home/mf/Repos/PowerShell/Scripts/convert-txt2wav.ps1 [[-Text] <String>] [[-WavFile] <String>] [<CommonParameters>]
 
 -Text <String>
     Specifies the text to use
@@ -68,7 +68,7 @@ try {
 
 	Add-Type -AssemblyName System.Speech
 	$SpeechSynthesizer = New-Object System.Speech.Synthesis.SpeechSynthesizer
-	$SpeechSynthesizer.SetOutputToWaveFile($tWavFile)
+	$SpeechSynthesizer.SetOutputToWaveFile($WavFile)
 	$SpeechSynthesizer.Speak($Text)
 	$SpeechSynthesizer.Dispose()
 	exit 0 # success

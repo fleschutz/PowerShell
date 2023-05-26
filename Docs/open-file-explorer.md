@@ -4,7 +4,7 @@ This PowerShell script launches the File Explorer.
 
 ## Parameters
 ```powershell
-open-file-explorer.ps1 [[-Path] <String>] [<CommonParameters>]
+/home/mf/Repos/PowerShell/Scripts/open-file-explorer.ps1 [[-Path] <String>] [<CommonParameters>]
 
 -Path <String>
     Specifies the path to the folder to display

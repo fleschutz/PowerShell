@@ -4,7 +4,7 @@ This PowerShell script installs the Microsoft Edge Browser from the Microsoft St
 
 ## Parameters
 ```powershell
-install-edge.ps1 [<CommonParameters>]
+/home/mf/Repos/PowerShell/Scripts/install-edge.ps1 [<CommonParameters>]
 
 [<CommonParameters>]
     This script supports the common parameters: Verbose, Debug, ErrorAction, ErrorVariable, WarningAction, 

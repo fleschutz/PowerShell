@@ -4,7 +4,7 @@ This PowerShell script installs the Vivaldi browser.
 
 ## Parameters
 ```powershell
-install-vivaldi.ps1 [<CommonParameters>]
+/home/mf/Repos/PowerShell/Scripts/install-vivaldi.ps1 [<CommonParameters>]
 
 [<CommonParameters>]
     This script supports the common parameters: Verbose, Debug, ErrorAction, ErrorVariable, WarningAction, 

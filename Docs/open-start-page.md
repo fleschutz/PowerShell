@@ -4,7 +4,7 @@ This script launches the Web browser with the Startpage website.
 
 ## Parameters
 ```powershell
-open-start-page.ps1 [<CommonParameters>]
+/home/mf/Repos/PowerShell/Scripts/open-start-page.ps1 [<CommonParameters>]
 
 [<CommonParameters>]
     This script supports the common parameters: Verbose, Debug, ErrorAction, ErrorVariable, WarningAction, 

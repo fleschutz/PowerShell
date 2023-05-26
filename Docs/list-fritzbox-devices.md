@@ -4,7 +4,7 @@ This PowerShell script lists FRITZ!Box's known devices.
 
 ## Parameters
 ```powershell
-list-fritzbox-devices.ps1 [[-Username] <String>] [[-Password] <String>] [<CommonParameters>]
+/home/mf/Repos/PowerShell/Scripts/list-fritzbox-devices.ps1 [[-Username] <String>] [[-Password] <String>] [<CommonParameters>]
 
 -Username <String>
     Specifies the user name to FRITZ!Box

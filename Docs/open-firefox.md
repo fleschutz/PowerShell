@@ -4,7 +4,7 @@ This PowerShell script launches the Mozilla Firefox Web browser.
 
 ## Parameters
 ```powershell
-open-firefox.ps1 [[-URL] <String>] [<CommonParameters>]
+/home/mf/Repos/PowerShell/Scripts/open-firefox.ps1 [[-URL] <String>] [<CommonParameters>]
 
 -URL <String>
     Specifies an URL

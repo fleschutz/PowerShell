@@ -4,7 +4,7 @@ This script launches the Screen Sketch application.
 
 ## Parameters
 ```powershell
-open-screen-sketch.ps1 [<CommonParameters>]
+/home/mf/Repos/PowerShell/Scripts/open-screen-sketch.ps1 [<CommonParameters>]
 
 [<CommonParameters>]
     This script supports the common parameters: Verbose, Debug, ErrorAction, ErrorVariable, WarningAction, 

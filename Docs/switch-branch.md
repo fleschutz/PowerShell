@@ -4,7 +4,7 @@ This PowerShell script switches to another branch in a Git repository (including
 
 ## Parameters
 ```powershell
-switch-branch.ps1 [[-BranchName] <String>] [[-RepoDir] <String>] [<CommonParameters>]
+/home/mf/Repos/PowerShell/Scripts/switch-branch.ps1 [[-BranchName] <String>] [[-RepoDir] <String>] [<CommonParameters>]
 
 -BranchName <String>
     Specifies the branch name
@@ -68,24 +68,23 @@ try {
 
 	$StopWatch = [system.diagnostics.stopwatch]::startNew()
 
-	Write-Host "⏳ (1/6) Searching for Git executable...  " -noNewline
+	Write-Host "⏳ (1/6) Searching for Git executable...   " -noNewline
 	& git --version
 	if ($lastExitCode -ne "0") { throw "Can't execute 'git' - make sure Git is installed and available" }
 
+	Write-Host "⏳ (2/6) Checking local repository...      📂$RepoDir"
 	$RepoDir = Resolve-Path "$RepoDir"
-	$RepoDirName = (Get-Item "$RepoDir").Name
-	"⏳ (2/6) Checking Git repository 📂$RepoDirName..."
 	if (-not(Test-Path "$RepoDir" -pathType container)) { throw "Can't access directory: $RepoDir" }
-
 	$Result = (git status)
 	if ($lastExitCode -ne "0") { throw "'git status' in $RepoDir failed with exit code $lastExitCode" }
 	if ("$Result" -notmatch "nothing to commit, working tree clean") { throw "Git repository is NOT clean: $Result" }
+	$RepoDirName = (Get-Item "$RepoDir").Name
 
 	"⏳ (3/6) Fetching updates..."
 	& git -C "$RepoDir" fetch --all --prune --prune-tags --force
 	if ($lastExitCode -ne "0") { throw "'git fetch' failed with exit code $lastExitCode" }
 
-	"⏳ (4/6) Switching to '$BranchName' branch..."
+	"⏳ (4/6) Switching to branch '$BranchName'..."
 	& git -C "$RepoDir" checkout --recurse-submodules "$BranchName"
 	if ($lastExitCode -ne "0") { throw "'git checkout $BranchName' failed with exit code $lastExitCode" }
 
@@ -98,7 +97,7 @@ try {
 	if ($lastExitCode -ne "0") { throw "'git submodule update' failed with exit code $lastExitCode" }
 
 	[int]$Elapsed = $StopWatch.Elapsed.TotalSeconds
-	"✔️ switched Git repository 📂$RepoDirName to $BranchName branch in $Elapsed sec."
+	"✔️ switched repo 📂$RepoDirName to branch '$BranchName' in $Elapsed sec"
 	exit 0 # success
 } catch {
 	"⚠️ Error in line $($_.InvocationInfo.ScriptLineNumber): $($Error[0])"

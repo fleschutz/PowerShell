@@ -4,7 +4,7 @@ This PowerShell script installs the Microsoft Powertoys.
 
 ## Parameters
 ```powershell
-install-power-toys.ps1 [<CommonParameters>]
+/home/mf/Repos/PowerShell/Scripts/install-power-toys.ps1 [<CommonParameters>]
 
 [<CommonParameters>]
     This script supports the common parameters: Verbose, Debug, ErrorAction, ErrorVariable, WarningAction, 

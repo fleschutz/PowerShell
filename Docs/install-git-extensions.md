@@ -4,7 +4,7 @@ This PowerShell script installs Git Extensions.
 
 ## Parameters
 ```powershell
-install-git-extensions.ps1 [<CommonParameters>]
+/home/mf/Repos/PowerShell/Scripts/install-git-extensions.ps1 [<CommonParameters>]
 
 [<CommonParameters>]
     This script supports the common parameters: Verbose, Debug, ErrorAction, ErrorVariable, WarningAction, 

@@ -4,7 +4,7 @@ This PowerShell script uninstalls CrystalDiskInfo from the local computer.
 
 ## Parameters
 ```powershell
-uninstall-crystal-disk-info.ps1 [<CommonParameters>]
+/home/mf/Repos/PowerShell/Scripts/uninstall-crystal-disk-info.ps1 [<CommonParameters>]
 
 [<CommonParameters>]
     This script supports the common parameters: Verbose, Debug, ErrorAction, ErrorVariable, WarningAction, 

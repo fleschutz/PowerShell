@@ -4,7 +4,7 @@ This PowerShell script checks the current weather report.
 
 ## Parameters
 ```powershell
-check-weather.ps1 [[-location] <String>] [<CommonParameters>]
+/home/mf/Repos/PowerShell/Scripts/check-weather.ps1 [[-location] <String>] [<CommonParameters>]
 
 -location <String>
     Specifies the location to use (determined automatically per default)

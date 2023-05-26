@@ -4,7 +4,7 @@ This PowerShell script plays a dog sound.
 
 ## Parameters
 ```powershell
-play-dog-sound.ps1 [<CommonParameters>]
+/home/mf/Repos/PowerShell/Scripts/play-dog-sound.ps1 [<CommonParameters>]
 
 [<CommonParameters>]
     This script supports the common parameters: Verbose, Debug, ErrorAction, ErrorVariable, WarningAction, 

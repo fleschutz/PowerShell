@@ -4,7 +4,7 @@ This PowerShell script lists random passwords.
 
 ## Parameters
 ```powershell
-list-passwords.ps1 [[-PasswordLength] <Int32>] [[-Columns] <Int32>] [[-Rows] <Int32>] [<CommonParameters>]
+/home/mf/Repos/PowerShell/Scripts/list-passwords.ps1 [[-PasswordLength] <Int32>] [[-Columns] <Int32>] [[-Rows] <Int32>] [<CommonParameters>]
 
 -PasswordLength <Int32>
     Specifies the length of the password

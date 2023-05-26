@@ -1,10 +1,10 @@
 ## The *check-swap-space.ps1* Script
 
-This PowerShell script checks the free swap space.
+This PowerShell script queries the status of the swap space and prints it.
 
 ## Parameters
 ```powershell
-check-swap-space.ps1 [[-MinLevel] <Int32>] [<CommonParameters>]
+/home/mf/Repos/PowerShell/Scripts/check-swap-space.ps1 [[-MinLevel] <Int32>] [<CommonParameters>]
 
 -MinLevel <Int32>
     Specifies the minimum level (10 GB by default)
@@ -23,7 +23,7 @@ check-swap-space.ps1 [[-MinLevel] <Int32>] [<CommonParameters>]
 ## Example
 ```powershell
 PS> ./check-swap-space
-✅ Swap space uses 63 GB of 1856 GB.
+✅ Swap space uses 63GB of 1856GB
 
 ```
 
@@ -37,14 +37,14 @@ https://github.com/fleschutz/PowerShell
 ```powershell
 <#
 .SYNOPSIS
-	Checks the swap space
+	Checks the swap space status
 .DESCRIPTION
-	This PowerShell script checks the free swap space.
+	This PowerShell script queries the status of the swap space and prints it.
 .PARAMETER MinLevel
 	Specifies the minimum level (10 GB by default)
 .EXAMPLE
 	PS> ./check-swap-space
-	✅ Swap space uses 63 GB of 1856 GB.
+	✅ Swap space uses 63GB of 1856GB
 .LINK
 	https://github.com/fleschutz/PowerShell
 .NOTES
@@ -81,16 +81,19 @@ try {
 		} 
 	}
 	if ($Total -eq 0) {
-        	"⚠️ No swap space configured!"
+        	$Reply = "⚠️ No swap space configured!"
+	} elseif ($Free -eq 0) {
+		$Reply = "⚠️ Swap space of $(MB2String $Total) is full!"
 	} elseif ($Free -lt $MinLevel) {
-		"⚠️ Only $(MB2String $Free) of $(MB2String $Total) swap space left to use!"
+		$Reply = "⚠️ Swap space of $(MB2String $Total) is nearly full ($(MB2String $Free) free)!"
 	} elseif ($Used -eq 0) {
-		"✅ Swap space with $(MB2String $Total) reserved"
+		$Reply = "✅ Swap space with $(MB2String $Total) reserved"
 	} elseif ($Used -lt $Free) {
-		"✅ Swap space uses $(MB2String $Used) of $(MB2String $Total)"
+		$Reply = "✅ Swap space uses $(MB2String $Used) of $(MB2String $Total)"
 	} else {
-		"✅ Swap space has $(MB2String $Free) of $(MB2String $Total) left to use"
+		$Reply = "✅ Swap space has $(MB2String $Free) of $(MB2String $Total) free"
 	}
+	Write-Host $Reply
 	exit 0 # success
 } catch {
 	"⚠️ Error in line $($_.InvocationInfo.ScriptLineNumber): $($Error[0])"

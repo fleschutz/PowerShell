@@ -1,10 +1,10 @@
 ## The *list-workdir.ps1* Script
 
-This PowerShell script lists the current working directory (but not the content itself!)
+This PowerShell script lists the path to current working directory (but not the content itself).
 
 ## Parameters
 ```powershell
-list-workdir.ps1 [<CommonParameters>]
+/home/mf/Repos/PowerShell/Scripts/list-workdir.ps1 [<CommonParameters>]
 
 [<CommonParameters>]
     This script supports the common parameters: Verbose, Debug, ErrorAction, ErrorVariable, WarningAction, 
@@ -14,6 +14,7 @@ list-workdir.ps1 [<CommonParameters>]
 ## Example
 ```powershell
 PS> ./list-workdir
+📂C:\Users\Markus\source\repos\PowerShell\Scripts
 
 ```
 
@@ -29,9 +30,10 @@ https://github.com/fleschutz/PowerShell
 .SYNOPSIS
 	Lists the current working directory
 .DESCRIPTION
-	This PowerShell script lists the current working directory (but not the content itself!)
+	This PowerShell script lists the path to current working directory (but not the content itself).
 .EXAMPLE
 	PS> ./list-workdir
+	📂C:\Users\Markus\source\repos\PowerShell\Scripts
 .LINK
 	https://github.com/fleschutz/PowerShell
 .NOTES
@@ -39,8 +41,8 @@ https://github.com/fleschutz/PowerShell
 #>
 
 try {
-	$CWD = Resolve-Path "$PWD"
-	"📂$CWD"
+	$Path = Resolve-Path -Path "$PWD"
+	"📂$Path"
 	exit 0 # success
 } catch {
 	"⚠️ Error in line $($_.InvocationInfo.ScriptLineNumber): $($Error[0])"

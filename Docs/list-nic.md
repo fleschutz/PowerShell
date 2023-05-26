@@ -4,7 +4,7 @@ This PowerShell script lists the details of the installed network interfaces.
 
 ## Parameters
 ```powershell
-list-nic.ps1 [<CommonParameters>]
+/home/mf/Repos/PowerShell/Scripts/list-nic.ps1 [<CommonParameters>]
 
 [<CommonParameters>]
     This script supports the common parameters: Verbose, Debug, ErrorAction, ErrorVariable, WarningAction, 

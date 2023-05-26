@@ -4,7 +4,7 @@ This PowerShell script opens a text editor to edit the given file.
 
 ## Parameters
 ```powershell
-edit.ps1 [[-Filename] <String>] [<CommonParameters>]
+/home/mf/Repos/PowerShell/Scripts/edit.ps1 [[-Filename] <String>] [<CommonParameters>]
 
 -Filename <String>
     Specifies the path to the filename

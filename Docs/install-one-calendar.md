@@ -4,7 +4,7 @@ This PowerShell script installs One Calendar from the Microsoft Store.
 
 ## Parameters
 ```powershell
-install-one-calendar.ps1 [<CommonParameters>]
+/home/mf/Repos/PowerShell/Scripts/install-one-calendar.ps1 [<CommonParameters>]
 
 [<CommonParameters>]
     This script supports the common parameters: Verbose, Debug, ErrorAction, ErrorVariable, WarningAction, 

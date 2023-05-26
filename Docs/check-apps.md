@@ -1,10 +1,10 @@
 ## The *check-apps.ps1* Script
 
-This PowerShell script queries application details and list it.
+This PowerShell script queries the application status and prints it.
 
 ## Parameters
 ```powershell
-check-apps.ps1 [<CommonParameters>]
+/home/mf/Repos/PowerShell/Scripts/check-apps.ps1 [<CommonParameters>]
 
 [<CommonParameters>]
     This script supports the common parameters: Verbose, Debug, ErrorAction, ErrorVariable, WarningAction, 
@@ -14,6 +14,7 @@ check-apps.ps1 [<CommonParameters>]
 ## Example
 ```powershell
 PS> ./check-apps
+✅ 119 apps installed, 11 upgrades available
 
 ```
 
@@ -27,11 +28,12 @@ https://github.com/fleschutz/PowerShell
 ```powershell
 <#
 .SYNOPSIS
-	Query application details
+	Query the app status
 .DESCRIPTION
-	This PowerShell script queries application details and list it.
+	This PowerShell script queries the application status and prints it.
 .EXAMPLE
 	PS> ./check-apps
+	✅ 119 apps installed, 11 upgrades available
 .LINK
 	https://github.com/fleschutz/PowerShell
 .NOTES
@@ -42,10 +44,19 @@ try {
 	if ($IsLinux) {
 		# TODO
 	} else {
-		Write-Progress "Querying installed apps and available updates..."
-		$NumAppsInstalled = (Get-AppxPackage).Count
-		$NumUpdates = (winget upgrade).Count - 5
-		"✅ $NumAppsInstalled apps installed, $NumUpdates updates available"
+		Write-Progress "⏳ Querying installed apps and updates..."
+		$Apps = Get-AppxPackage
+		$Status = "✅ $($Apps.Count) apps installed"
+
+		[int]$NumNonOk = 0
+		foreach($App in $Apps) { if ($App.Status -ne "Ok") { $NumNonOk++ } }
+		if ($NumNonOk -gt 0) { $Status += ", $NumNonOk non-ok" }
+		[int]$NumErrors = (Get-AppxLastError)
+		if ($NumErrors -gt 0) { $Status += ", $NumErrors errors" }
+
+		$NumUpdates = (winget upgrade --include-unknown).Count - 5
+		Write-Progress -Completed "."
+		Write-Host "$Status, $NumUpdates upgrades available"
 	}
 	exit 0 # success
 } catch {

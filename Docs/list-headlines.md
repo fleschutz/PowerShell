@@ -4,7 +4,7 @@ This PowerShell script lists the latest RSS feed news.
 
 ## Parameters
 ```powershell
-list-headlines.ps1 [[-RSS_URL] <String>] [[-MaxCount] <Int32>] [<CommonParameters>]
+/home/mf/Repos/PowerShell/Scripts/list-headlines.ps1 [[-RSS_URL] <String>] [[-MaxCount] <Int32>] [<CommonParameters>]
 
 -RSS_URL <String>
     Specifies the URL to the RSS feed

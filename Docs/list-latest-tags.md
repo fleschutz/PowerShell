@@ -4,7 +4,7 @@ This PowerShell script lists the latest tags in all Git repositories in the spec
 
 ## Parameters
 ```powershell
-list-latest-tags.ps1 [[-ParentDir] <String>] [<CommonParameters>]
+/home/mf/Repos/PowerShell/Scripts/list-latest-tags.ps1 [[-ParentDir] <String>] [<CommonParameters>]
 
 -ParentDir <String>
     Specifies the path to the parent folder

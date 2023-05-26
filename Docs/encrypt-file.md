@@ -4,7 +4,7 @@ This PowerShell script encrypts a file using the given password and AES encrypti
 
 ## Parameters
 ```powershell
-encrypt-file.ps1 [[-Path] <String>] [[-Password] <String>] [<CommonParameters>]
+/home/mf/Repos/PowerShell/Scripts/encrypt-file.ps1 [[-Path] <String>] [[-Password] <String>] [<CommonParameters>]
 
 -Path <String>
     Specifies the path to the file to encrypt
@@ -163,8 +163,9 @@ try {
 	if ($Password -eq "" ) { $Password = read-host "Enter password"	}
 	$StopWatch = [system.diagnostics.stopwatch]::startNew()
 
-	$PasswordBase64 = [System.Convert]::ToBase64String($Password)
-	EncryptFile "$Path" -Algorithm AES -KeyAsPlainText $PasswordBase64 -RemoveSource
+	[char[]]$PasswordAsArray = $Password
+	$PasswordAsBase64 = [System.Convert]::ToBase64String($PasswordAsArray)
+	EncryptFile "$Path" -Algorithm AES -KeyAsPlainText $PasswordAsBase64 -RemoveSource
 
 	[int]$Elapsed = $StopWatch.Elapsed.TotalSeconds
 	"✔️  file encrypted in $Elapsed sec"

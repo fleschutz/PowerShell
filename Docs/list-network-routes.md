@@ -4,7 +4,7 @@ This PowerShell script lists the network routes on the local computer.
 
 ## Parameters
 ```powershell
-list-network-routes.ps1 [<CommonParameters>]
+/home/mf/Repos/PowerShell/Scripts/list-network-routes.ps1 [<CommonParameters>]
 
 [<CommonParameters>]
     This script supports the common parameters: Verbose, Debug, ErrorAction, ErrorVariable, WarningAction, 

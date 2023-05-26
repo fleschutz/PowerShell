@@ -4,7 +4,7 @@ This PowerShell script searches for a pattern in the given files.
 
 ## Parameters
 ```powershell
-search-files.ps1 [[-pattern] <String>] [[-files] <String>] [<CommonParameters>]
+/home/mf/Repos/PowerShell/Scripts/search-files.ps1 [[-pattern] <String>] [[-files] <String>] [<CommonParameters>]
 
 -pattern <String>
     Specifies the search pattern

@@ -33,25 +33,25 @@ function Speak { param([string]$Text)
 }
 
 try {
-	$Voice = new-object -ComObject SAPI.SPVoice
+	$Voice = New-Object -ComObject SAPI.SPVoice
 	$DefaultVolume = $Voice.volume
 	$DefaultRate = $Voice.rate
-	Speak("This is the default voice with default volume $DefaultVolume and speed $DefaultRate")
+	Speak("Let's begin with the default speed rate of $DefaultRate at the default volume of $($DefaultVolume)%.")
 
 	$Voice.rate = -10
-	Speak("Let's speak very, very slow")
+	Speak("I'm speaking very, very slow at speed rate -10.")
 	$Voice.rate = -5
-	Speak("Let's speak very slow")
+	Speak("I'm speaking very slow at speed rate -5.")
 	$Voice.rate = -3
-	Speak("Let's speak slow")
+	Speak("I'm speaking slow at rate -3.")
 	$Voice.rate = 0
-	Speak("Let's speak normal")
+	Speak("I'm speaking quite normal at speed rate 0.")
 	$Voice.rate = 2
-	Speak("Let's speak fast")
+	Speak("I'm speaking fast at speed rate 2.")
 	$Voice.rate = 5
-	Speak("Let's speak very fast")
+	Speak("I'm speaking very fast at speed rate 5.")
 	$Voice.rate = 10
-	Speak("Let's speak very, very fast")
+	Speak("I'm speaking very, very fast at speed rate 10.")
 	$Voice.rate = $DefaultRate
 
 	$Voice.volume = 100

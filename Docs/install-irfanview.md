@@ -4,7 +4,7 @@ This PowerShell script installs IrfanView from the Microsoft Store.
 
 ## Parameters
 ```powershell
-install-irfanview.ps1 [<CommonParameters>]
+/home/mf/Repos/PowerShell/Scripts/install-irfanview.ps1 [<CommonParameters>]
 
 [<CommonParameters>]
     This script supports the common parameters: Verbose, Debug, ErrorAction, ErrorVariable, WarningAction, 

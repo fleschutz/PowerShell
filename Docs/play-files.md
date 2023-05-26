@@ -4,7 +4,7 @@ This PowerShell script plays the given audio files (supporting MP3 and WAV forma
 
 ## Parameters
 ```powershell
-play-files.ps1 [[-FilePattern] <String>] [<CommonParameters>]
+/home/mf/Repos/PowerShell/Scripts/play-files.ps1 [[-FilePattern] <String>] [<CommonParameters>]
 
 -FilePattern <String>
     Specifies the file pattern

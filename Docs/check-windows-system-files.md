@@ -4,7 +4,7 @@ This PowerShell script checks the validity of the Windows system files. It requi
 
 ## Parameters
 ```powershell
-check-windows-system-files.ps1 [<CommonParameters>]
+/home/mf/Repos/PowerShell/Scripts/check-windows-system-files.ps1 [<CommonParameters>]
 
 [<CommonParameters>]
     This script supports the common parameters: Verbose, Debug, ErrorAction, ErrorVariable, WarningAction, 

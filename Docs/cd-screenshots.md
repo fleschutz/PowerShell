@@ -1,28 +1,16 @@
 ## The *cd-screenshots.ps1* Script
 
-This PowerShell script changes the working directory to the user's screenshots folder.
+cd-screenshots.ps1 
+
 
 ## Parameters
 ```powershell
-cd-screenshots.ps1 [<CommonParameters>]
+
 
 [<CommonParameters>]
     This script supports the common parameters: Verbose, Debug, ErrorAction, ErrorVariable, WarningAction, 
     WarningVariable, OutBuffer, PipelineVariable, and OutVariable.
 ```
-
-## Example
-```powershell
-PS> ./cd-screenshots
-📂C:\Users\Markus\Pictures\Screenshots
-
-```
-
-## Notes
-Author: Markus Fleschutz | License: CC0
-
-## Related Links
-https://github.com/fleschutz/PowerShell
 
 ## Source Code
 ```powershell
@@ -40,16 +28,21 @@ https://github.com/fleschutz/PowerShell
 	Author: Markus Fleschutz | License: CC0
 #>
 
+function GetScreenshotsFolder {
+        if ($IsLinux) {
+                $Path = "$HOME/Pictures"
+		if (-not(Test-Path "$Path" -pathType container)) { throw "Pictures folder at $Path doesn't exist (yet)"	}
+		if (Test-Path "$Path/Screenshots" -pathType container) { $Path = "$Path/Screenshots" }
+        } else {
+                $Path = [Environment]::GetFolderPath('MyPictures')
+		if (-not(Test-Path "$Path" -pathType container)) { throw "Pictures folder at $Path doesn't exist (yet)" }
+		if (Test-Path "$Path\Screenshots" -pathType container) { $Path = "$Path\Screenshots" }
+        }
+	return $Path
+}
+
 try {
-	if ($IsLinux) {
-		$Path = Resolve-Path "$HOME/Pictures/Screenshots"
-	} else {
-		$Path = [Environment]::GetFolderPath('MyPictures')
-		$Path = "$Path\Screenshots"
-	}
-	if (-not(Test-Path "$Path" -pathType container)) {
-		throw "Screenshots folder at 📂$Path doesn't exist (yet)"
-	}
+	$Path = GetScreenshotsFolder
 	Set-Location "$Path"
 	"📂$Path"
 	exit 0 # success

@@ -4,7 +4,7 @@ This PowerShell script closes the Windows Screen Magnifier application gracefull
 
 ## Parameters
 ```powershell
-close-magnifier.ps1 [<CommonParameters>]
+/home/mf/Repos/PowerShell/Scripts/close-magnifier.ps1 [<CommonParameters>]
 
 [<CommonParameters>]
     This script supports the common parameters: Verbose, Debug, ErrorAction, ErrorVariable, WarningAction, 

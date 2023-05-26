@@ -4,7 +4,7 @@ This PowerShell script sets the audio volume in percent.
 
 ## Parameters
 ```powershell
-set-volume.ps1 [-Volume] <Int32> [<CommonParameters>]
+/home/mf/Repos/PowerShell/Scripts/set-volume.ps1 [-Volume] <Int32> [<CommonParameters>]
 
 -Volume <Int32>
     Specifies the percent number

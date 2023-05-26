@@ -4,7 +4,7 @@ This PowerShell script restarts all local network adapters (needs admin rights).
 
 ## Parameters
 ```powershell
-restart-network-adapters.ps1 [<CommonParameters>]
+/home/mf/Repos/PowerShell/Scripts/restart-network-adapters.ps1 [<CommonParameters>]
 
 [<CommonParameters>]
     This script supports the common parameters: Verbose, Debug, ErrorAction, ErrorVariable, WarningAction, 

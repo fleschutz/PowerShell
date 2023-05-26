@@ -4,7 +4,7 @@ This PowerShell script turns the audio volume fully up to 100%.
 
 ## Parameters
 ```powershell
-turn-volume-fully-up.ps1 [<CommonParameters>]
+/home/mf/Repos/PowerShell/Scripts/turn-volume-fully-up.ps1 [<CommonParameters>]
 
 [<CommonParameters>]
     This script supports the common parameters: Verbose, Debug, ErrorAction, ErrorVariable, WarningAction, 
@@ -27,7 +27,7 @@ https://github.com/fleschutz/PowerShell
 ```powershell
 <#
 .SYNOPSIS
-	Turns audio volume fully up
+	Turns the volume fully up
 .DESCRIPTION
 	This PowerShell script turns the audio volume fully up to 100%.
 .EXAMPLE
@@ -43,7 +43,6 @@ try {
 	for ([int]$i = 0; $i -lt 100; $i += 2) {
 		$obj.SendKeys([char]175) # each tick is +2%
 	}
-	& "$PSScriptRoot/speak-english.ps1" "Hundred percent now."
 	exit 0 # success
 } catch {
 	"⚠️ Error in line $($_.InvocationInfo.ScriptLineNumber): $($Error[0])"

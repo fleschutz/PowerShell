@@ -4,7 +4,7 @@ This PowerShell script decrypts a file using the given password and AES encrypti
 
 ## Parameters
 ```powershell
-decrypt-file.ps1 [[-Path] <String>] [[-Password] <String>] [<CommonParameters>]
+/home/mf/Repos/PowerShell/Scripts/decrypt-file.ps1 [[-Path] <String>] [[-Password] <String>] [<CommonParameters>]
 
 -Path <String>
     Specifies the path to the file to decrypt

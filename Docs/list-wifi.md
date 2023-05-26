@@ -4,7 +4,7 @@ This PowerShell script lists the WIFI networks.
 
 ## Parameters
 ```powershell
-list-wifi.ps1 [<CommonParameters>]
+/home/mf/Repos/PowerShell/Scripts/list-wifi.ps1 [<CommonParameters>]
 
 [<CommonParameters>]
     This script supports the common parameters: Verbose, Debug, ErrorAction, ErrorVariable, WarningAction, 

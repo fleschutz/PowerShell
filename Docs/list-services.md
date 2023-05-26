@@ -1,10 +1,10 @@
 ## The *list-services.ps1* Script
 
-This PowerShell script lists all local computer services.
+This PowerShell script lists all services installed on the local computer.
 
 ## Parameters
 ```powershell
-list-services.ps1 [<CommonParameters>]
+/home/mf/Repos/PowerShell/Scripts/list-services.ps1 [<CommonParameters>]
 
 [<CommonParameters>]
     This script supports the common parameters: Verbose, Debug, ErrorAction, ErrorVariable, WarningAction, 
@@ -35,9 +35,9 @@ https://github.com/fleschutz/PowerShell
 ```powershell
 <#
 .SYNOPSIS
-	Lists the local computer services
+	Lists the installed services
 .DESCRIPTION
-	This PowerShell script lists all local computer services.
+	This PowerShell script lists all services installed on the local computer.
 .EXAMPLE
 	PS> ./list-services
 

@@ -4,7 +4,7 @@ This PowerShell script closes the Mozilla Firefox Web browser gracefully.
 
 ## Parameters
 ```powershell
-close-firefox.ps1 [<CommonParameters>]
+/home/mf/Repos/PowerShell/Scripts/close-firefox.ps1 [<CommonParameters>]
 
 [<CommonParameters>]
     This script supports the common parameters: Verbose, Debug, ErrorAction, ErrorVariable, WarningAction, 

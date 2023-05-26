@@ -4,7 +4,7 @@ This PowerShell script lists the PowerShell cheat sheet.
 
 ## Parameters
 ```powershell
-list-cheat-sheet.ps1 [<CommonParameters>]
+/home/mf/Repos/PowerShell/Scripts/list-cheat-sheet.ps1 [<CommonParameters>]
 
 [<CommonParameters>]
     This script supports the common parameters: Verbose, Debug, ErrorAction, ErrorVariable, WarningAction, 

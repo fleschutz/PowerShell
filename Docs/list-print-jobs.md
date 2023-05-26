@@ -4,7 +4,7 @@ This PowerShell script lists all print jobs of all printer devices.
 
 ## Parameters
 ```powershell
-list-print-jobs.ps1 [<CommonParameters>]
+/home/mf/Repos/PowerShell/Scripts/list-print-jobs.ps1 [<CommonParameters>]
 
 [<CommonParameters>]
     This script supports the common parameters: Verbose, Debug, ErrorAction, ErrorVariable, WarningAction, 
@@ -27,7 +27,7 @@ https://github.com/fleschutz/PowerShell
 ```powershell
 <#
 .SYNOPSIS
-	Lists all jobs of all printers
+	Lists all print jobs
 .DESCRIPTION
 	This PowerShell script lists all print jobs of all printer devices.
 .EXAMPLE
@@ -40,20 +40,27 @@ https://github.com/fleschutz/PowerShell
 
 #Requires -Version 4
 
-try {
+function ListPrintJobs {
 	$printers = Get-Printer
 	if ($printers.Count -eq 0) { throw "No printer found" }
 
-	""
-	"Printer                Jobs"
-	"-------                ----"
 	foreach ($printer in $printers) {
+		$PrinterName = $printer.Name
 		$printjobs = Get-PrintJob -PrinterObject $printer
 		if ($printjobs.Count -eq 0) {
-			"$($printer.Name)     none"
+			$PrintJobs = "none"
 		} else {
-			"$($printer.Name)     $printjobs"
+			$PrintJobs = "$printjobs"
 		}
+		New-Object PSObject -Property @{ Printer=$PrinterName; Jobs=$PrintJobs }
+	}
+}
+
+try {
+	if ($IsLinux) {
+		# TODO
+	} else {
+		ListPrintJobs | Format-Table -property Printer,Jobs
 	}
 	exit 0 # success
 } catch {

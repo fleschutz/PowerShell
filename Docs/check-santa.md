@@ -4,7 +4,7 @@ This PowerShell script checks the time until Saint Nicholas Day and replies by t
 
 ## Parameters
 ```powershell
-check-santa.ps1 [<CommonParameters>]
+/home/mf/Repos/PowerShell/Scripts/check-santa.ps1 [<CommonParameters>]
 
 [<CommonParameters>]
     This script supports the common parameters: Verbose, Debug, ErrorAction, ErrorVariable, WarningAction, 

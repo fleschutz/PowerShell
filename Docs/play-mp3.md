@@ -4,7 +4,7 @@ This PowerShell script plays a sound file in .MP3 file format.
 
 ## Parameters
 ```powershell
-play-mp3.ps1 [[-Path] <String>] [<CommonParameters>]
+/home/mf/Repos/PowerShell/Scripts/play-mp3.ps1 [[-Path] <String>] [<CommonParameters>]
 
 -Path <String>
     Specifies the path to the .MP3 file
@@ -52,14 +52,14 @@ https://github.com/fleschutz/PowerShell
 param([string]$Path = "")
 
 try {
-	if ($Path -eq "" ) { $Path = read-host "Enter the path to the MP3 sound file" }
+	if ($Path -eq "" ) { $Path = Read-Host "Enter the path to the MP3 sound file" }
 
-	if (-not(test-path "$Path" -pathType leaf)) { throw "Can't access sound file: $Path" }
-	$FullPath = (get-childItem $Path).fullname
-	$Filename = (get-item "$FullPath").name
+	if (-not(Test-Path "$Path" -pathType leaf)) { throw "Can't access sound file: $Path" }
+	$FullPath = (Get-ChildItem $Path).fullname
+	$Filename = (Get-Item "$FullPath").name
 
-	add-type -assemblyName PresentationCore
-	$MediaPlayer = new-object System.Windows.Media.MediaPlayer
+	Add-Type -assemblyName PresentationCore
+	$MediaPlayer = New-Object System.Windows.Media.MediaPlayer
 
 	do {
 		$MediaPlayer.open($FullPath)
@@ -73,7 +73,7 @@ try {
 	$host.ui.RawUI.WindowTitle = "▶️ $Filename"
 	$MediaPlayer.Volume = 1
 	$MediaPlayer.play()
-	start-sleep -milliseconds $Milliseconds
+	Start-Sleep -milliseconds $Milliseconds
 	$MediaPlayer.stop()
 	$MediaPlayer.close()
 	$host.ui.RawUI.WindowTitle = $PreviousTitle

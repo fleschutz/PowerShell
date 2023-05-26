@@ -4,7 +4,7 @@ This PowerShell script uploads a local file to Dropbox.
 
 ## Parameters
 ```powershell
-upload-to-dropbox.ps1 [-SourceFilePath] <String> [<CommonParameters>]
+/home/mf/Repos/PowerShell/Scripts/upload-to-dropbox.ps1 [-SourceFilePath] <String> [<CommonParameters>]
 
 -SourceFilePath <String>
     

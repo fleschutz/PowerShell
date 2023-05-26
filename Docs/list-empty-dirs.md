@@ -4,10 +4,10 @@ This PowerShell script scans and lists all empty subfolders within the given dir
 
 ## Parameters
 ```powershell
-list-empty-dirs.ps1 [[-DirTree] <String>] [<CommonParameters>]
+/home/mf/Repos/PowerShell/Scripts/list-empty-dirs.ps1 [[-DirTree] <String>] [<CommonParameters>]
 
 -DirTree <String>
-    Specifies the path to the directory tree
+    Specifies the path to the directory tree (current working directory by default)
     
     Required?                    false
     Position?                    1
@@ -36,11 +36,11 @@ https://github.com/fleschutz/PowerShell
 ```powershell
 <#
 .SYNOPSIS
-	Lists empty subfolders within a directory tree
+	Lists empty subfolders
 .DESCRIPTION
 	This PowerShell script scans and lists all empty subfolders within the given directory tree.
 .PARAMETER DirTree
-	Specifies the path to the directory tree
+	Specifies the path to the directory tree (current working directory by default)
 .EXAMPLE
 	PS> ./list-empty-dirs C:\
 .LINK
@@ -52,14 +52,18 @@ https://github.com/fleschutz/PowerShell
 param([string]$DirTree = "$PWD")
 
 try {
-	$DirTree = resolve-path "$DirTree/"
-	write-progress "Listing empty directories in $DirTree..."
+	$StopWatch = [system.diagnostics.stopwatch]::startNew()
+
+	$DirTree = Resolve-Path "$DirTree"
+	Write-Progress "Listing empty subfolders in $DirTree..."
 	[int]$Count = 0
 	Get-ChildItem "$DirTree" -attributes Directory -recurse | Where {$_.GetFileSystemInfos().Count -eq 0} | ForEach-Object {
-		"📂 $($_.FullName)"
+		"📂$($_.FullName)"
 		$Count++
 	}
-	"✔️ directory tree $DirTree has $Count empty directories" 
+
+	[int]$Elapsed = $StopWatch.Elapsed.TotalSeconds
+	"✔️ found $Count empty subfolders within directory tree $DirTree in $Elapsed sec." 
 	exit 0 # success
 } catch {
 	"⚠️ Error in line $($_.InvocationInfo.ScriptLineNumber): $($Error[0])"

@@ -4,7 +4,7 @@ This script launches the Web browser with Cloudflare's speed test website.
 
 ## Parameters
 ```powershell
-open-speed-test.ps1 [<CommonParameters>]
+/home/mf/Repos/PowerShell/Scripts/open-speed-test.ps1 [<CommonParameters>]
 
 [<CommonParameters>]
     This script supports the common parameters: Verbose, Debug, ErrorAction, ErrorVariable, WarningAction, 

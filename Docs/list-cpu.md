@@ -4,7 +4,7 @@ This PowerShell script lists the CPU details.
 
 ## Parameters
 ```powershell
-list-cpu.ps1 [<CommonParameters>]
+/home/mf/Repos/PowerShell/Scripts/list-cpu.ps1 [<CommonParameters>]
 
 [<CommonParameters>]
     This script supports the common parameters: Verbose, Debug, ErrorAction, ErrorVariable, WarningAction, 

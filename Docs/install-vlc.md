@@ -4,7 +4,7 @@ This PowerShell script installs the VLC media player.
 
 ## Parameters
 ```powershell
-install-vlc.ps1 [<CommonParameters>]
+/home/mf/Repos/PowerShell/Scripts/install-vlc.ps1 [<CommonParameters>]
 
 [<CommonParameters>]
     This script supports the common parameters: Verbose, Debug, ErrorAction, ErrorVariable, WarningAction, 

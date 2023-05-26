@@ -1,10 +1,10 @@
 ## The *check-battery.ps1* Script
 
-This PowerShell script checks and prints the battery status.
+This PowerShell script queries the status of the system battery and prints it.
 
 ## Parameters
 ```powershell
-check-battery.ps1 [<CommonParameters>]
+/home/mf/Repos/PowerShell/Scripts/check-battery.ps1 [<CommonParameters>]
 
 [<CommonParameters>]
     This script supports the common parameters: Verbose, Debug, ErrorAction, ErrorVariable, WarningAction, 
@@ -14,6 +14,7 @@ check-battery.ps1 [<CommonParameters>]
 ## Example
 ```powershell
 PS> ./check-battery
+✅ 21% battery life, 54 min remaining
 
 ```
 
@@ -27,11 +28,12 @@ https://github.com/fleschutz/PowerShell
 ```powershell
 <#
 .SYNOPSIS
-	Checks the battery status
+	Checks the battery
 .DESCRIPTION
-	This PowerShell script checks and prints the battery status.
+	This PowerShell script queries the status of the system battery and prints it.
 .EXAMPLE
 	PS> ./check-battery
+	✅ 21% battery life, 54 min remaining
 .LINK
 	https://github.com/fleschutz/PowerShell
 .NOTES
@@ -40,23 +42,34 @@ https://github.com/fleschutz/PowerShell
 
 try {
 	if ($IsLinux) {
-		# TODO
+		$Reply = "✅ AC powered" # TODO, just guessing :-)
 	} else {
 		Add-Type -Assembly System.Windows.Forms
 		$Details = [System.Windows.Forms.SystemInformation]::PowerStatus
-		if ($Details.BatteryChargeStatus -eq "NoSystemBattery") {
-			$BatteryStatus = "No battery"
-		} else {
-			[int]$Percent = 100*$Details.BatteryLifePercent
-			[int]$Remaining = $Details.BatteryLifeRemaining / 60
-			$BatteryStatus = "Battery $Percent%, $Remaining min left"
-		}
+		[int]$Percent = 100 * $Details.BatteryLifePercent
+		[int]$Remaining = $Details.BatteryLifeRemaining / 60
 		switch ($Details.PowerLineStatus) {
-		"Online"  { $PowerStatus = "plugged in to AC power" }
-		"Offline" { $PowerStatus = "disconnected from AC power" }
+		"Online"  {
+			if ($Details.BatteryChargeStatus -eq "NoSystemBattery") {
+				$Reply = "✅ AC powered"
+			} elseif ($Percent -eq 100) {
+				$Reply = "✅ Battery $Percent% full"
+			} else {
+				$Reply = "✅ Battery $Percent%, charging..."
+			}
 		}
-		"✅ $BatteryStatus, $PowerStatus"
+		"Offline" {
+			if ($Percent -eq 100) {
+				$Reply = "✅ $Percent% full battery, $Remaining min remaining"
+			} elseif ($Remaining -gt 30) {
+				$Reply = "✅ $Percent% battery life, $Remaining min remaining"
+			} else {
+				$Reply = "⚠️ $Percent% battery life, only $Remaining min remaining"
+			}
+		}
+		}
 	}
+	Write-Host $Reply
 	exit 0 # success
 } catch {
 	"⚠️ Error in line $($_.InvocationInfo.ScriptLineNumber): $($Error[0])"

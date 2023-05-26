@@ -4,7 +4,7 @@ This PowerShell script installs Skype from the Microsoft Store.
 
 ## Parameters
 ```powershell
-install-skype.ps1 [<CommonParameters>]
+/home/mf/Repos/PowerShell/Scripts/install-skype.ps1 [<CommonParameters>]
 
 [<CommonParameters>]
     This script supports the common parameters: Verbose, Debug, ErrorAction, ErrorVariable, WarningAction, 

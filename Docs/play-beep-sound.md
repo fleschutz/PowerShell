@@ -4,7 +4,7 @@ This PowerShell script plays a short beep sound.
 
 ## Parameters
 ```powershell
-play-beep-sound.ps1 [<CommonParameters>]
+/home/mf/Repos/PowerShell/Scripts/play-beep-sound.ps1 [<CommonParameters>]
 
 [<CommonParameters>]
     This script supports the common parameters: Verbose, Debug, ErrorAction, ErrorVariable, WarningAction, 
@@ -39,7 +39,7 @@ https://github.com/fleschutz/PowerShell
 #>
 
 [System.Console]::Beep(500,300)
-start-sleep -m 300
+Start-Sleep -milliseconds 300
 exit 0 # success
 ```
 

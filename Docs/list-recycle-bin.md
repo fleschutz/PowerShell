@@ -4,7 +4,7 @@ This PowerShell script lists the content of the recycle bin folder.
 
 ## Parameters
 ```powershell
-list-recycle-bin.ps1 [<CommonParameters>]
+/home/mf/Repos/PowerShell/Scripts/list-recycle-bin.ps1 [<CommonParameters>]
 
 [<CommonParameters>]
     This script supports the common parameters: Verbose, Debug, ErrorAction, ErrorVariable, WarningAction, 

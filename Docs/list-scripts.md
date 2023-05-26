@@ -16,7 +16,7 @@ list-scripts.ps1
 ```powershell
 <#
 .SYNOPSIS
-	Lists all PowerShell scripts in this repository
+	Lists all PowerShell scripts
 .DESCRIPTION
 	This PowerShell script lists all PowerShell scripts in the repository (sorted alphabetically).
 .EXAMPLE
@@ -28,23 +28,22 @@ list-scripts.ps1
 #>
 
 function ListScripts { param([string]$FilePath)
-	write-progress "Reading $FilePath..."
-	$Table = import-csv "$FilePath"
-	foreach($Row in $Table) {
+	Write-Progress "Reading $FilePath..."
+	$table = Import-CSV "$FilePath"
+	[int]$No = 1
+	foreach($row in $table) {
 		New-Object PSObject -Property @{
-			'PowerShell Script' = "$($Row.Script)"
-			'Description' = "$($Row.Description)"
+			'No' = $No++
+			'Script' = $row.SCRIPT
+			'Description' = $row.DESCRIPTION
 		}
 	}
 	$global:NumScripts = $Table.Count
-	write-progress -completed "Reading $FilePath..."
+	Write-Progress -completed "."
 }
 
 try {
-	$PathToRepo = "$PSScriptRoot/.."
-	ListScripts "$PathToRepo/Data/scripts.csv" | format-table -property "PowerShell Script",Description
-
-	"✔️ $($global:NumScripts) PowerShell scripts total"
+	ListScripts "$PSScriptRoot/../Data/scripts.csv" | Format-Table -property No,Script,Description
 	exit 0 # success
 } catch {
 	"⚠️ Error in line $($_.InvocationInfo.ScriptLineNumber): $($Error[0])"

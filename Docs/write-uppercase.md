@@ -4,7 +4,7 @@ This PowerShell script writes text in uppercase letters.
 
 ## Parameters
 ```powershell
-write-uppercase.ps1 [[-text] <String>] [<CommonParameters>]
+/home/mf/Repos/PowerShell/Scripts/write-uppercase.ps1 [[-text] <String>] [<CommonParameters>]
 
 -text <String>
     Specifies the text to write

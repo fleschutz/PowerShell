@@ -4,7 +4,7 @@ This PowerShell script determines and speaks the current week number by text-to-
 
 ## Parameters
 ```powershell
-check-week.ps1 [<CommonParameters>]
+/home/mf/Repos/PowerShell/Scripts/check-week.ps1 [<CommonParameters>]
 
 [<CommonParameters>]
     This script supports the common parameters: Verbose, Debug, ErrorAction, ErrorVariable, WarningAction, 

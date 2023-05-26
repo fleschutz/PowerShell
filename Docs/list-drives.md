@@ -4,7 +4,7 @@ This PowerShell script lists all local drives as a table.
 
 ## Parameters
 ```powershell
-list-drives.ps1 [<CommonParameters>]
+/home/mf/Repos/PowerShell/Scripts/list-drives.ps1 [<CommonParameters>]
 
 [<CommonParameters>]
     This script supports the common parameters: Verbose, Debug, ErrorAction, ErrorVariable, WarningAction, 

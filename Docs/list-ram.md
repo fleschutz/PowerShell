@@ -4,7 +4,7 @@ This PowerShell script lists the details of the installed RAM.
 
 ## Parameters
 ```powershell
-list-ram.ps1 [<CommonParameters>]
+/home/mf/Repos/PowerShell/Scripts/list-ram.ps1 [<CommonParameters>]
 
 [<CommonParameters>]
     This script supports the common parameters: Verbose, Debug, ErrorAction, ErrorVariable, WarningAction, 

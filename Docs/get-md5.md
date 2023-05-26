@@ -1,15 +1,36 @@
 ## The *get-md5.ps1* Script
 
-
+This PowerShell script calculates and prints the MD5 checksum of the given file.
 
 ## Parameters
 ```powershell
+/home/mf/Repos/PowerShell/Scripts/get-md5.ps1 [[-file] <String>] [<CommonParameters>]
 
+-file <String>
+    Specifies the path to the file
+    
+    Required?                    false
+    Position?                    1
+    Default value                
+    Accept pipeline input?       false
+    Accept wildcard characters?  false
 
 [<CommonParameters>]
     This script supports the common parameters: Verbose, Debug, ErrorAction, ErrorVariable, WarningAction, 
     WarningVariable, OutBuffer, PipelineVariable, and OutVariable.
 ```
+
+## Example
+```powershell
+PS> ./get-md5 C:\MyFile.txt
+
+```
+
+## Notes
+Author: Markus Fleschutz | License: CC0
+
+## Related Links
+https://github.com/fleschutz/PowerShell
 
 ## Source Code
 ```powershell
@@ -31,11 +52,11 @@
 param([string]$file = "")
 
 try {
-	if ($file -eq "" ) { $file = read-host "Enter path to file" }
+	if ($file -eq "" ) { $file = Read-Host "Enter path to file" }
 
-	$Result = get-filehash $file -algorithm MD5
+	$Result = Get-Filehash $file -algorithm MD5
 
-	"✔️ MD5 hash is" $Result.Hash
+	"✔️ MD5 hash is $($Result.Hash)"
 	exit 0 # success
 } catch {
 	"⚠️ Error in line $($_.InvocationInfo.ScriptLineNumber): $($Error[0])"

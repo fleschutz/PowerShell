@@ -4,7 +4,7 @@ This PowerShell script speaks the given text with an Italian text-to-speech (TTS
 
 ## Parameters
 ```powershell
-speak-italian.ps1 [[-text] <String>] [<CommonParameters>]
+/home/mf/Repos/PowerShell/Scripts/speak-italian.ps1 [[-text] <String>] [<CommonParameters>]
 
 -text <String>
     Specifies the text to speak

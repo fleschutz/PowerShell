@@ -4,7 +4,7 @@ This PowerShell script writes text in a red foreground color.
 
 ## Parameters
 ```powershell
-write-red.ps1 [[-text] <String>] [<CommonParameters>]
+/home/mf/Repos/PowerShell/Scripts/write-red.ps1 [[-text] <String>] [<CommonParameters>]
 
 -text <String>
     Specifies the text to write

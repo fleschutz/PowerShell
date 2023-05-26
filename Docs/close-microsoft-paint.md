@@ -4,7 +4,7 @@ This PowerShell script closes the Microsoft Paint application gracefully.
 
 ## Parameters
 ```powershell
-close-microsoft-paint.ps1 [<CommonParameters>]
+/home/mf/Repos/PowerShell/Scripts/close-microsoft-paint.ps1 [<CommonParameters>]
 
 [<CommonParameters>]
     This script supports the common parameters: Verbose, Debug, ErrorAction, ErrorVariable, WarningAction, 

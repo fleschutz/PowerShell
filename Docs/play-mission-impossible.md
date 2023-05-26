@@ -4,7 +4,7 @@ This PowerShell script plays the Mission Impossible theme.
 
 ## Parameters
 ```powershell
-play-mission-impossible.ps1 [<CommonParameters>]
+/home/mf/Repos/PowerShell/Scripts/play-mission-impossible.ps1 [<CommonParameters>]
 
 [<CommonParameters>]
     This script supports the common parameters: Verbose, Debug, ErrorAction, ErrorVariable, WarningAction, 

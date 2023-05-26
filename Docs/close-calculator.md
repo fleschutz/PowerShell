@@ -4,7 +4,7 @@ This PowerShell script closes the calculator application gracefully.
 
 ## Parameters
 ```powershell
-close-calculator.ps1 [<CommonParameters>]
+/home/mf/Repos/PowerShell/Scripts/close-calculator.ps1 [<CommonParameters>]
 
 [<CommonParameters>]
     This script supports the common parameters: Verbose, Debug, ErrorAction, ErrorVariable, WarningAction, 
@@ -38,11 +38,7 @@ https://github.com/fleschutz/PowerShell
 	Author: Markus Fleschutz | License: CC0
 #>
 
-TaskKill /im Calculator.exe /f /t
-if ($lastExitCode -ne "0") {
-	& "$PSScriptRoot/speak-english.ps1" "Sorry, calculator isn't running."
-	exit 1
-}
+Stop-Process -name "CalculatorApp"
 exit 0 # success
 ```
 

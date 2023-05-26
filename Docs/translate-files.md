@@ -1,21 +1,42 @@
 ## The *translate-files.ps1* Script
 
-
+This PowerShell script translates text files into any supported language.
 
 ## Parameters
 ```powershell
+/home/mf/Repos/PowerShell/Scripts/translate-files.ps1 [[-FilePattern] <String>] [<CommonParameters>]
 
+-FilePattern <String>
+    Specifies the file pattern
+    
+    Required?                    false
+    Position?                    1
+    Default value                
+    Accept pipeline input?       false
+    Accept wildcard characters?  false
 
 [<CommonParameters>]
     This script supports the common parameters: Verbose, Debug, ErrorAction, ErrorVariable, WarningAction, 
     WarningVariable, OutBuffer, PipelineVariable, and OutVariable.
 ```
 
+## Example
+```powershell
+PS> ./translate-files C:\Temp\*.txt
+
+```
+
+## Notes
+Author: Markus Fleschutz | License: CC0
+
+## Related Links
+https://github.com/fleschutz/PowerShell
+
 ## Source Code
 ```powershell
 <#
 .SYNOPSIS
-	Translates text files into any supported language
+	Translates text files
 .DESCRIPTION
 	This PowerShell script translates text files into any supported language.
 .PARAMETER FilePattern
@@ -31,17 +52,18 @@
 param([string]$FilePattern = "")
 
 function DetectSourceLang { param([string]$Filename)
-	if ("$Filename" -like "*Deutsch*") { return "de" }
-	if ("$Filename" -like "*English*") { return "en" }
+	if ("$Filename" -like "*Deutsch*")  { return "de" }
+	if ("$Filename" -like "*English*")  { return "en" }
 	if ("$Filename" -like "*Français*") { return "fr" }
 	return "unknown"
 }
 
 function TranslateFilename { param([string]$Filename, [string]$SourceLang, [string]$TargetLang)
+	[string]$SourceLanguage = ""
 	if ($SourceLang -eq "de") { $SourceLanguage = "Deutsch" }
 	if ($SourceLang -eq "en") { $SourceLanguage = "English" }
 	if ($SourceLang -eq "fr") { $SourceLanguage = "Français" }
-	$TargetLanguage = ("$PSScriptRoot/translate-text.ps1" $SourceLanguage $SourceLang $TargetLang)
+	$TargetLanguage = ("$PSScriptRoot/translate-text.ps1 $SourceLanguage $SourceLang $TargetLang")
 	return $Filename.replace($SourceLanguage, $TargetLanguage)
 }
 

@@ -4,7 +4,7 @@ This PowerShell script lists major earthquakes with magnitude >= 6.0 for the las
 
 ## Parameters
 ```powershell
-list-earthquakes.ps1 [<CommonParameters>]
+/home/mf/Repos/PowerShell/Scripts/list-earthquakes.ps1 [<CommonParameters>]
 
 [<CommonParameters>]
     This script supports the common parameters: Verbose, Debug, ErrorAction, ErrorVariable, WarningAction, 
@@ -39,7 +39,7 @@ https://github.com/fleschutz/PowerShell
 #>
 
 $Format="csv" # cap, csv, geojson, kml, kmlraw, quakeml, text, xml
-$MinMagnitude=5.8
+$MinMagnitude=5.7
 $OrderBy="magnitude" # time, time-asc, magnitude, magnitude-asc
 
 function ListEarthquakes { 
@@ -49,6 +49,7 @@ function ListEarthquakes {
 		[int]$Depth = $Quake.depth
 		New-Object PSObject -Property @{ Mag=$Quake.mag; Depth="$Depth km"; Location=$Quake.place; Time=$Quake.time }
 	}
+	Write-Progress -completed "Loading finished."
 }
  
 try {

@@ -4,7 +4,7 @@ This PowerShell script installs Git for Windows.
 
 ## Parameters
 ```powershell
-install-git-for-windows.ps1 [<CommonParameters>]
+/home/mf/Repos/PowerShell/Scripts/install-git-for-windows.ps1 [<CommonParameters>]
 
 [<CommonParameters>]
     This script supports the common parameters: Verbose, Debug, ErrorAction, ErrorVariable, WarningAction, 

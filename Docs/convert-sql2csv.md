@@ -4,7 +4,7 @@ This PowerShell script converts a SQL database table to a .CSV file.
 
 ## Parameters
 ```powershell
-convert-sql2csv.ps1 [[-server] <String>] [[-database] <String>] [[-username] <String>] [[-password] <String>] [[-query] <String>] [<CommonParameters>]
+/home/mf/Repos/PowerShell/Scripts/convert-sql2csv.ps1 [[-server] <String>] [[-database] <String>] [[-username] <String>] [[-password] <String>] [[-query] <String>] [<CommonParameters>]
 
 -server <String>
     Specifies the server's hostname or IP address

@@ -1,13 +1,13 @@
 ## The *check-ping.ps1* Script
 
-This PowerShell script checks the ping latency from the local computer to some Internet hosts.
+This PowerShell script checks the ping latency from the local computer to 9 popular hosts.
 
 ## Parameters
 ```powershell
-check-ping.ps1 [[-hosts] <String>] [<CommonParameters>]
+/home/mf/Repos/PowerShell/Scripts/check-ping.ps1 [[-hosts] <String>] [<CommonParameters>]
 
 -hosts <String>
-    Specifies the hosts to check, seperated by comma (default is: amazon.com,bing.com,cnn.com,dropbox.com,facebook.com,google.com,live.com,twitter.com,youtube.com)
+    Specifies the hosts to check, seperated by commata (default is: amazon.com,bing.com,cnn.com,dropbox.com,facebook.com,google.com,live.com,twitter.com,youtube.com)
     
     Required?                    false
     Position?                    1
@@ -23,7 +23,7 @@ check-ping.ps1 [[-hosts] <String>] [<CommonParameters>]
 ## Example
 ```powershell
 PS> ./check-ping
-✅ Ping is 25ms average, 13ms min, 109ms max.
+✅ Ping latency is 13ms...109ms with 25ms average.
 
 ```
 
@@ -39,12 +39,12 @@ https://github.com/fleschutz/PowerShell
 .SYNOPSIS
 	Checks the ping latency 
 .DESCRIPTION
-	This PowerShell script checks the ping latency from the local computer to some Internet hosts.
+	This PowerShell script checks the ping latency from the local computer to 9 popular hosts.
 .PARAMETER hosts
-	Specifies the hosts to check, seperated by comma (default is: amazon.com,bing.com,cnn.com,dropbox.com,facebook.com,google.com,live.com,twitter.com,youtube.com)
+	Specifies the hosts to check, seperated by commata (default is: amazon.com,bing.com,cnn.com,dropbox.com,facebook.com,google.com,live.com,twitter.com,youtube.com)
 .EXAMPLE
 	PS> ./check-ping
-	✅ Ping is 25ms average, 13ms min, 109ms max.
+	✅ Ping latency is 13ms...109ms with 25ms average.
 .LINK
 	https://github.com/fleschutz/PowerShell
 .NOTES
@@ -54,9 +54,9 @@ https://github.com/fleschutz/PowerShell
 param([string]$hosts = "amazon.com,bing.com,cnn.com,dropbox.com,facebook.com,google.com,live.com,twitter.com,youtube.com")
 
 try {
-	Write-Progress "⏳ Pinging $hosts..."
+	Write-Progress "⏳ Sending a ping to 9 popular hosts..."
 	$HostsArray = $hosts.Split(",")
-	$Pings = Test-Connection -count 1 -computerName $HostsArray
+	$Pings = Test-Connection -computerName $HostsArray -count 1
 
 	[int]$Min = 9999999
 	[int]$Max = [int]$Avg = 0
@@ -67,7 +67,9 @@ try {
 		$Avg += $Latency
 	}
 	$Avg /= $Pings.count
-	"✅ Ping is $($Avg)ms average, $($Min)ms min, $($Max)ms max"
+
+	Write-Progress -Completed "."
+	Write-Host "✅ Ping latency is $($Min)ms...$($Max)ms with $($Avg)ms average"
 	exit 0 # success
 } catch {
 	"⚠️ Error in line $($_.InvocationInfo.ScriptLineNumber): $($Error[0])"

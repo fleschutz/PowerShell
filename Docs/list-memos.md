@@ -1,10 +1,10 @@
 ## The *list-memos.ps1* Script
 
-This PowerShell script lists all memo entries in Memos.csv in the home folder.
+This PowerShell script lists all memo entries in Memos.csv in your home folder.
 
 ## Parameters
 ```powershell
-list-memos.ps1 [<CommonParameters>]
+/home/mf/Repos/PowerShell/Scripts/list-memos.ps1 [<CommonParameters>]
 
 [<CommonParameters>]
     This script supports the common parameters: Verbose, Debug, ErrorAction, ErrorVariable, WarningAction, 
@@ -27,9 +27,9 @@ https://github.com/fleschutz/PowerShell
 ```powershell
 <#
 .SYNOPSIS
-	Lists all memos in $HOME/Memos.csv
+	Lists your memo entries
 .DESCRIPTION
-	This PowerShell script lists all memo entries in Memos.csv in the home folder.
+	This PowerShell script lists all memo entries in Memos.csv in your home folder.
 .EXAMPLE
 	PS> ./list-memos
 .LINK
@@ -40,20 +40,19 @@ https://github.com/fleschutz/PowerShell
 
 
 try {
-	$Path = "$HOME/Memos.csv"
-	if (test-path "$Path" -pathType leaf) {
+	$Path = "~/Memos.csv"
+	if (Test-Path "$Path" -pathType leaf) {
 		write-progress "Reading $Path ..."
-		$Table = import-csv "$Path"
+		$Table = Import-CSV "$Path"
 		write-progress -completed "Reading $Path"
 
 		""
-		"Time                 User  Text"
-		"----                 ----  ----"
+		"Time                  Text"
+		"----                  ----"
 		foreach($Row in $Table) {
 			$Time = $Row.Time
-			$User = $Row.User
 			$Text = $Row.Text
-			"$Time $User    $Text"
+			"$Time  $Text"
 		}
 	} else {
 		"Sorry, no memos saved yet"

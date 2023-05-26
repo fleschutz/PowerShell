@@ -4,7 +4,7 @@ This PowerShell script checks the inbox of Outlook for new/unread mails.
 
 ## Parameters
 ```powershell
-check-outlook.ps1 [<CommonParameters>]
+/home/mf/Repos/PowerShell/Scripts/check-outlook.ps1 [<CommonParameters>]
 
 [<CommonParameters>]
     This script supports the common parameters: Verbose, Debug, ErrorAction, ErrorVariable, WarningAction, 

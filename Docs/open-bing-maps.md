@@ -4,7 +4,7 @@ This PowerShell script launches the Bing Maps application.
 
 ## Parameters
 ```powershell
-open-bing-maps.ps1 [<CommonParameters>]
+/home/mf/Repos/PowerShell/Scripts/open-bing-maps.ps1 [<CommonParameters>]
 
 [<CommonParameters>]
     This script supports the common parameters: Verbose, Debug, ErrorAction, ErrorVariable, WarningAction, 

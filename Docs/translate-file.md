@@ -4,7 +4,7 @@ This PowerShell script translates a text file into another language.
 
 ## Parameters
 ```powershell
-translate-file.ps1 [[-File] <String>] [[-SourceLang] <String>] [[-TargetLang] <String>] [<CommonParameters>]
+/home/mf/Repos/PowerShell/Scripts/translate-file.ps1 [[-File] <String>] [[-SourceLang] <String>] [[-TargetLang] <String>] [<CommonParameters>]
 
 -File <String>
     Specifies the file to translate
@@ -76,7 +76,7 @@ param([string]$File = "", [string]$SourceLang = "", [string]$TargetLang = "")
 function UseLibreTranslate { param([string]$Text, [string]$SourceLang, [string]$TargetLang)
 	$Parameters = @{"q"="$Text"; "source"="$SourceLang"; "target"="$TargetLang"; }
 	$Result = (Invoke-WebRequest -Uri https://libretranslate.com/translate -Method POST -Body ($Parameters|ConvertTo-Json) -ContentType "application/json").content | ConvertFrom-Json
-	start-sleep -milliseconds 3000 # 20 requests per minute maximum
+	Start-Sleep -milliseconds 3000 # 20 requests per minute maximum
 	return $Result.translatedText
 }
 

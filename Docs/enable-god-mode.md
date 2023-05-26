@@ -4,7 +4,7 @@ This PowerShell script enables the god mode. It adds a new icon to the desktop.
 
 ## Parameters
 ```powershell
-enable-god-mode.ps1 [<CommonParameters>]
+/home/mf/Repos/PowerShell/Scripts/enable-god-mode.ps1 [<CommonParameters>]
 
 [<CommonParameters>]
     This script supports the common parameters: Verbose, Debug, ErrorAction, ErrorVariable, WarningAction, 

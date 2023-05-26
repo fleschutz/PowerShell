@@ -4,7 +4,7 @@ This PowerShell script speaks the given text with a Dutch text-to-speech (TTS) v
 
 ## Parameters
 ```powershell
-speak-dutch.ps1 [[-text] <String>] [<CommonParameters>]
+/home/mf/Repos/PowerShell/Scripts/speak-dutch.ps1 [[-text] <String>] [<CommonParameters>]
 
 -text <String>
     Specifies the text to speak

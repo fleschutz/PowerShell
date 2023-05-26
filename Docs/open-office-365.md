@@ -4,7 +4,7 @@ This script launches the Web browser with the Microsoft Office 365 website.
 
 ## Parameters
 ```powershell
-open-office-365.ps1 [<CommonParameters>]
+/home/mf/Repos/PowerShell/Scripts/open-office-365.ps1 [<CommonParameters>]
 
 [<CommonParameters>]
     This script supports the common parameters: Verbose, Debug, ErrorAction, ErrorVariable, WarningAction, 

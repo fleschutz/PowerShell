@@ -4,7 +4,7 @@ This PowerShell script changes the working directory to the users directory.
 
 ## Parameters
 ```powershell
-cd-users.ps1 [<CommonParameters>]
+/home/mf/Repos/PowerShell/Scripts/cd-users.ps1 [<CommonParameters>]
 
 [<CommonParameters>]
     This script supports the common parameters: Verbose, Debug, ErrorAction, ErrorVariable, WarningAction, 

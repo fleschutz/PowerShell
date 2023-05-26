@@ -4,7 +4,7 @@ This PowerShell script lists all local computer processes.
 
 ## Parameters
 ```powershell
-list-processes.ps1 [<CommonParameters>]
+/home/mf/Repos/PowerShell/Scripts/list-processes.ps1 [<CommonParameters>]
 
 [<CommonParameters>]
     This script supports the common parameters: Verbose, Debug, ErrorAction, ErrorVariable, WarningAction, 

@@ -5,7 +5,7 @@ See the Web page for the correct version number.
 
 ## Parameters
 ```powershell
-install-signal-cli.ps1 [[-Version] <String>] [<CommonParameters>]
+/home/mf/Repos/PowerShell/Scripts/install-signal-cli.ps1 [[-Version] <String>] [<CommonParameters>]
 
 -Version <String>
     Specifies the version to install

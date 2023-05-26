@@ -4,7 +4,7 @@ This PowerShell script launches the File Explorer showing the UWP apps folder.
 
 ## Parameters
 ```powershell
-open-apps-folder.ps1 [<CommonParameters>]
+/home/mf/Repos/PowerShell/Scripts/open-apps-folder.ps1 [<CommonParameters>]
 
 [<CommonParameters>]
     This script supports the common parameters: Verbose, Debug, ErrorAction, ErrorVariable, WarningAction, 

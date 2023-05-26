@@ -1,10 +1,10 @@
 ## The *check-os.ps1* Script
 
-This PowerShell script queries and lists operating system details.
+This PowerShell script queries the operating system status and prints it.
 
 ## Parameters
 ```powershell
-check-os.ps1 [<CommonParameters>]
+/home/mf/Repos/PowerShell/Scripts/check-os.ps1 [<CommonParameters>]
 
 [<CommonParameters>]
     This script supports the common parameters: Verbose, Debug, ErrorAction, ErrorVariable, WarningAction, 
@@ -14,6 +14,7 @@ check-os.ps1 [<CommonParameters>]
 ## Example
 ```powershell
 PS> ./check-os
+✅ Windows 10 Pro 64-bit (v10.0.19045, since 6/22/2021, S/N 00123-45678-15135-AAOEM, P/K AB123-CD456-EF789-GH000-WFR6P)
 
 ```
 
@@ -27,11 +28,12 @@ https://github.com/fleschutz/PowerShell
 ```powershell
 <#
 .SYNOPSIS
-	Query OS details
+	Checks the OS status
 .DESCRIPTION
-	This PowerShell script queries and lists operating system details.
+	This PowerShell script queries the operating system status and prints it.
 .EXAMPLE
 	PS> ./check-os
+	✅ Windows 10 Pro 64-bit (v10.0.19045, since 6/22/2021, S/N 00123-45678-15135-AAOEM, P/K AB123-CD456-EF789-GH000-WFR6P)
 .LINK
 	https://github.com/fleschutz/PowerShell
 .NOTES
@@ -40,10 +42,12 @@ https://github.com/fleschutz/PowerShell
 
 try {
 	if ($IsLinux) {
-		"✅ $(uname -sr)"
+		$Name = $PSVersionTable.OS
+		if ([System.Environment]::Is64BitOperatingSystem) { $Arch = "64-bit" } else { $Arch = "32-bit" }
+		Write-Host "✅ $Name $Arch"
 	} else {
 		$OS = Get-WmiObject -class Win32_OperatingSystem
-		$Name = $OS.Caption
+		$Name = $OS.Caption -Replace "Microsoft Windows","Windows"
 		$Arch = $OS.OSArchitecture
 		$Version = $OS.Version
 
@@ -52,7 +56,9 @@ try {
 		$BuildNo = $OSDetails.BuildNumber
 		$Serial = $OSDetails.SerialNumber
 		$InstallDate = $OSDetails.InstallDate
-		"✅ $($Name) ($Arch, v$Version, S/N $Serial) installed on $($InstallDate.ToShortDateString())"
+
+		$ProductKey = (Get-ItemProperty -Path "HKLM:\SOFTWARE\Microsoft\Windows NT\CurrentVersion\SoftwareProtectionPlatform" -Name BackupProductKeyDefault).BackupProductKeyDefault
+		Write-Host "✅ $Name $Arch (v$Version, since $($InstallDate.ToShortDateString()), S/N $Serial, P/K $ProductKey)"
 	} 
 	exit 0 # success
 } catch {

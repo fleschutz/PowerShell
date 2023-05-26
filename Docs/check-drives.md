@@ -4,7 +4,7 @@ This PowerShell script checks all drives for free space left.
 
 ## Parameters
 ```powershell
-check-drives.ps1 [[-MinLevel] <Int32>] [<CommonParameters>]
+/home/mf/Repos/PowerShell/Scripts/check-drives.ps1 [[-MinLevel] <Int32>] [<CommonParameters>]
 
 -MinLevel <Int32>
     Specifies the minimum warning level (10 GB by default)
@@ -23,6 +23,7 @@ check-drives.ps1 [[-MinLevel] <Int32>] [<CommonParameters>]
 ## Example
 ```powershell
 PS> ./check-drives
+✅ C drive uses 87GB of 249GB
 
 ```
 
@@ -43,6 +44,7 @@ https://github.com/fleschutz/PowerShell
 	Specifies the minimum warning level (10 GB by default)
 .EXAMPLE
 	PS> ./check-drives
+	✅ C drive uses 87GB of 249GB
 .LINK
 	https://github.com/fleschutz/PowerShell
 .NOTES
@@ -68,7 +70,9 @@ function Bytes2String { param([int64]$Bytes)
 }
 
 try {
-	$Drives = Get-PSDrive -PSProvider FileSystem 
+	Write-Progress "⏳ Querying drives..."
+	$Drives = Get-PSDrive -PSProvider FileSystem
+	Write-Progress -completed "done."
 	foreach($Drive in $Drives) {
 		$ID = $Drive.Name
 		$Details = (Get-PSDrive $ID)
@@ -77,13 +81,15 @@ try {
 		[int64]$Total = ($Used + $Free)
 
 		if ($Total -eq 0) {
-			"✅ Drive $ID is empty"
+			Write-Host "✅ $ID drive is empty"
+		} elseif ($Free -eq 0) {
+			Write-Host "⚠️ $ID drive with $(Bytes2String $Total) is full!"
 		} elseif ($Free -lt $MinLevel) {
-			"⚠️ Drive $ID has only $(Bytes2String $Free) of $(Bytes2String $Total) left to use!"
+			Write-Host "⚠️ $ID drive with $(Bytes2String $Total) is nearly full ($(Bytes2String $Free) free)!"
 		} elseif ($Used -lt $Free) {
-			"✅ Drive $ID uses $(Bytes2String $Used) of $(Bytes2String $Total)"
+			Write-Host "✅ $ID drive uses $(Bytes2String $Used) of $(Bytes2String $Total)"
 		} else {
-			"✅ Drive $ID has $(Bytes2String $Free) free of $(Bytes2String $Total)"
+			Write-Host "✅ $ID drive has $(Bytes2String $Free) of $(Bytes2String $Total) free"
 		}
 	}
 	exit 0 # success

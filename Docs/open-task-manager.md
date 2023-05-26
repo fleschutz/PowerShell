@@ -4,7 +4,7 @@ This script launches the Windows Task Manager application.
 
 ## Parameters
 ```powershell
-open-task-manager.ps1 [<CommonParameters>]
+/home/mf/Repos/PowerShell/Scripts/open-task-manager.ps1 [<CommonParameters>]
 
 [<CommonParameters>]
     This script supports the common parameters: Verbose, Debug, ErrorAction, ErrorVariable, WarningAction, 

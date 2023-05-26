@@ -4,7 +4,7 @@ This PowerShell script speaks the given text with an Arabic text-to-speech (TTS)
 
 ## Parameters
 ```powershell
-speak-arabic.ps1 [[-text] <String>] [<CommonParameters>]
+/home/mf/Repos/PowerShell/Scripts/speak-arabic.ps1 [[-text] <String>] [<CommonParameters>]
 
 -text <String>
     Specifies the text to speak

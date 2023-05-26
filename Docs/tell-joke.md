@@ -4,7 +4,7 @@ This PowerShell script selects a random Chuck Norris joke in Data/jokes.csv and 
 
 ## Parameters
 ```powershell
-tell-joke.ps1 [<CommonParameters>]
+/home/mf/Repos/PowerShell/Scripts/tell-joke.ps1 [<CommonParameters>]
 
 [<CommonParameters>]
     This script supports the common parameters: Verbose, Debug, ErrorAction, ErrorVariable, WarningAction, 

@@ -4,7 +4,7 @@ This PowerShell script launches the File Explorer with the user's autostart fold
 
 ## Parameters
 ```powershell
-open-auto-start-folder.ps1 [<CommonParameters>]
+/home/mf/Repos/PowerShell/Scripts/open-auto-start-folder.ps1 [<CommonParameters>]
 
 [<CommonParameters>]
     This script supports the common parameters: Verbose, Debug, ErrorAction, ErrorVariable, WarningAction, 

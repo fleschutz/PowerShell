@@ -4,7 +4,7 @@ This PowerShell script suspends the local computer immediately.
 
 ## Parameters
 ```powershell
-suspend.ps1 [<CommonParameters>]
+/home/mf/Repos/PowerShell/Scripts/suspend.ps1 [<CommonParameters>]
 
 [<CommonParameters>]
     This script supports the common parameters: Verbose, Debug, ErrorAction, ErrorVariable, WarningAction, 

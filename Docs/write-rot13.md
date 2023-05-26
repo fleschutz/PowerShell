@@ -4,7 +4,7 @@ This PowerShell script writes text encoded or decoded with ROT13.
 
 ## Parameters
 ```powershell
-write-rot13.ps1 [[-text] <String>] [<CommonParameters>]
+/home/mf/Repos/PowerShell/Scripts/write-rot13.ps1 [[-text] <String>] [<CommonParameters>]
 
 -text <String>
     Specifies the text to write

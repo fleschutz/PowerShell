@@ -4,7 +4,7 @@ This PowerShell script writes animated text.
 
 ## Parameters
 ```powershell
-write-animated.ps1 [[-Line1] <Object>] [[-Line2] <Object>] [[-Line3] <Object>] [[-Line4] <Object>] [[-Line5] <Object>] [[-Line6] <Object>] [[-Line7] <Object>] [[-Line8] <Object>] [[-Line9] <Object>] [[-Speed] <Int32>] [<CommonParameters>]
+/home/mf/Repos/PowerShell/Scripts/write-animated.ps1 [[-Line1] <Object>] [[-Line2] <Object>] [[-Line3] <Object>] [[-Line4] <Object>] [[-Line5] <Object>] [[-Line6] <Object>] [[-Line7] <Object>] [[-Line8] <Object>] [[-Line9] <Object>] [[-Speed] <Int32>] [<CommonParameters>]
 
 -Line1 <Object>
     

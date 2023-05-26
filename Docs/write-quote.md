@@ -4,7 +4,7 @@ This PowerShell script writes a random quote to the console.
 
 ## Parameters
 ```powershell
-write-quote.ps1 [<CommonParameters>]
+/home/mf/Repos/PowerShell/Scripts/write-quote.ps1 [<CommonParameters>]
 
 [<CommonParameters>]
     This script supports the common parameters: Verbose, Debug, ErrorAction, ErrorVariable, WarningAction, 
@@ -46,11 +46,11 @@ try {
 	$Quote = $Table[$Index].QUOTE
 	$Author = $Table[$Index].AUTHOR
 
-	""
-	Write-Host '“'$Quote' ”'
+	Write-Output ""
+	Write-Host '“'"$Quote"'„'
 	$Spaces = "                                                                                       "
 	$Spaces = $Spaces.Substring(0, $Quote.Length - $Author.Length)
-	"$Spaces    $($Author.toUpper())"	
+	Write-Output "$Spaces- $($Author.toUpper())"	
 	exit 0 # success
 } catch {
 	"⚠️ Error in line $($_.InvocationInfo.ScriptLineNumber): $($Error[0])"

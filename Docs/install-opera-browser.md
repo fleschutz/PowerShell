@@ -4,7 +4,7 @@ This PowerShell script installs Opera Browser from Microsoft Store.
 
 ## Parameters
 ```powershell
-install-opera-browser.ps1 [<CommonParameters>]
+/home/mf/Repos/PowerShell/Scripts/install-opera-browser.ps1 [<CommonParameters>]
 
 [<CommonParameters>]
     This script supports the common parameters: Verbose, Debug, ErrorAction, ErrorVariable, WarningAction, 

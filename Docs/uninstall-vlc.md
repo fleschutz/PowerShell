@@ -4,7 +4,7 @@ This PowerShell script uninstalls the VLC media player from the local computer.
 
 ## Parameters
 ```powershell
-uninstall-vlc.ps1 [<CommonParameters>]
+/home/mf/Repos/PowerShell/Scripts/uninstall-vlc.ps1 [<CommonParameters>]
 
 [<CommonParameters>]
     This script supports the common parameters: Verbose, Debug, ErrorAction, ErrorVariable, WarningAction, 

@@ -4,7 +4,7 @@ This PowerShell script determines and writes the current date.
 
 ## Parameters
 ```powershell
-write-date.ps1 [<CommonParameters>]
+/home/mf/Repos/PowerShell/Scripts/write-date.ps1 [<CommonParameters>]
 
 [<CommonParameters>]
     This script supports the common parameters: Verbose, Debug, ErrorAction, ErrorVariable, WarningAction, 
@@ -14,7 +14,7 @@ write-date.ps1 [<CommonParameters>]
 ## Example
 ```powershell
 PS> ./write-date
-Sunday, October 17, 2021
+📅12/25/2022
 
 ```
 
@@ -33,7 +33,7 @@ https://github.com/fleschutz/PowerShell
 	This PowerShell script determines and writes the current date.
 .EXAMPLE
 	PS> ./write-date
-	Sunday, October 17, 2021
+	📅12/25/2022
 .LINK
 	https://github.com/fleschutz/PowerShell
 .NOTES

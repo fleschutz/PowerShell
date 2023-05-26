@@ -4,7 +4,7 @@ This PowerShell script lists all printers known to the local computer.
 
 ## Parameters
 ```powershell
-list-printers.ps1 [<CommonParameters>]
+/home/mf/Repos/PowerShell/Scripts/list-printers.ps1 [<CommonParameters>]
 
 [<CommonParameters>]
     This script supports the common parameters: Verbose, Debug, ErrorAction, ErrorVariable, WarningAction, 
@@ -27,7 +27,7 @@ https://github.com/fleschutz/PowerShell
 ```powershell
 <#
 .SYNOPSIS
-	Lists all printers known to the local computer
+	Lists the printers 
 .DESCRIPTION
 	This PowerShell script lists all printers known to the local computer.
 .EXAMPLE
@@ -39,8 +39,12 @@ https://github.com/fleschutz/PowerShell
 #>
 
 try {
-	$ComputerName = $(hostname)
-	get-WMIObject -Class Win32_Printer -ComputerName $ComputerName | format-table
+	if ($IsLinux) {
+		# TODO
+	} else {
+		$ComputerName = $(hostname)
+		Get-WMIObject -Class Win32_Printer -ComputerName $ComputerName | Format-Table
+	}
 	exit 0 # success
 } catch {
 	"⚠️ Error in line $($_.InvocationInfo.ScriptLineNumber): $($Error[0])"

@@ -4,7 +4,7 @@ This PowerShell script installs a SSH server (needs admin rights).
 
 ## Parameters
 ```powershell
-install-ssh-server.ps1 [<CommonParameters>]
+/home/mf/Repos/PowerShell/Scripts/install-ssh-server.ps1 [<CommonParameters>]
 
 [<CommonParameters>]
     This script supports the common parameters: Verbose, Debug, ErrorAction, ErrorVariable, WarningAction, 

@@ -4,7 +4,7 @@ This PowerShell script prints the geographic location of the given zip-code.
 
 ## Parameters
 ```powershell
-locate-zip-code.ps1 [[-CountryCode] <String>] [[-ZipCode] <String>] [<CommonParameters>]
+/home/mf/Repos/PowerShell/Scripts/locate-zip-code.ps1 [[-CountryCode] <String>] [[-ZipCode] <String>] [<CommonParameters>]
 
 -CountryCode <String>
     Specifies the country code

@@ -4,7 +4,7 @@ This PowerShell script handles and escalates the given alert message.
 
 ## Parameters
 ```powershell
-alert.ps1 [[-Message] <String>] [<CommonParameters>]
+/home/mf/Repos/PowerShell/Scripts/alert.ps1 [[-Message] <String>] [<CommonParameters>]
 
 -Message <String>
     Specifies the alert message

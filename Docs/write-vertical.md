@@ -4,7 +4,7 @@ This PowerShell script writes text in vertical direction.
 
 ## Parameters
 ```powershell
-write-vertical.ps1 [[-text] <String>] [<CommonParameters>]
+/home/mf/Repos/PowerShell/Scripts/write-vertical.ps1 [[-text] <String>] [<CommonParameters>]
 
 -text <String>
     Specifies the text to write

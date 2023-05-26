@@ -4,7 +4,7 @@ This PowerShell script pulls updates for all Git repositories in a folder (inclu
 
 ## Parameters
 ```powershell
-pull-repos.ps1 [[-ParentDir] <String>] [<CommonParameters>]
+/home/mf/Repos/PowerShell/Scripts/pull-repos.ps1 [[-ParentDir] <String>] [<CommonParameters>]
 
 -ParentDir <String>
     Specifies the path to the parent folder
@@ -54,22 +54,22 @@ param([string]$ParentDir = "$PWD")
 try {
 	$StopWatch = [system.diagnostics.stopwatch]::startNew()
 
-	Write-Host "⏳ (1) Searching for Git executable...  " -NoNewline
+	Write-Host "⏳ (1) Searching for Git executable...     " -NoNewline
 	& git --version
 	if ($lastExitCode -ne "0") { throw "Can't execute 'git' - make sure Git is installed and available" }
 
-	$ParentDirName = (Get-Item "$ParentDir").Name
-	Write-Host "⏳ (2) Checking parent folder 📂$ParentDirName...  " -NoNewline
+	Write-Host "⏳ (2) Checking parent folder...           " -NoNewline
 	if (-not(Test-Path "$ParentDir" -pathType container)) { throw "Can't access folder: $ParentDir" }
 	$Folders = (Get-ChildItem "$ParentDir" -attributes Directory)
 	$NumFolders = $Folders.Count
-	"$NumFolders subfolders"
+	$ParentDirName = (Get-Item "$ParentDir").Name
+	Write-Host "$NumFolders subfolders in 📂$ParentDirName"
 
 	[int]$Step = 3
 	[int]$Failed = 0
 	foreach ($Folder in $Folders) {
 		$FolderName = (Get-Item "$Folder").Name
-		"⏳ ($Step/$($NumFolders + 2)) Pulling into 📂$FolderName... "
+		Write-Host "⏳ ($Step/$($NumFolders + 2)) Pulling into 📂$FolderName...    " -NoNewline
 
 		& git -C "$Folder" pull --recurse-submodules --jobs=4
 		if ($lastExitCode -ne "0") { $Failed++; write-warning "'git pull' in 📂$FolderName failed" }
@@ -81,7 +81,7 @@ try {
 	}
 
 	[int]$Elapsed = $StopWatch.Elapsed.TotalSeconds
-	"✔️ pulled $NumFolders Git repositories in $Elapsed sec ($Failed failed)."
+	"✔️ pulled $NumFolders Git repositories in 📂$ParentDirName in $Elapsed sec ($Failed failed)."
 	exit 0 # success
 } catch {
 	"⚠️ Error in line $($_.InvocationInfo.ScriptLineNumber): $($Error[0])"

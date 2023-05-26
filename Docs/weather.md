@@ -4,7 +4,7 @@ This PowerShell script lists the current weather forecast.
 
 ## Parameters
 ```powershell
-weather.ps1 [[-GeoLocation] <String>] [<CommonParameters>]
+/home/mf/Repos/PowerShell/Scripts/weather.ps1 [[-GeoLocation] <String>] [<CommonParameters>]
 
 -GeoLocation <String>
     Specifies the geographic location to use

@@ -4,7 +4,7 @@ This PowerShell script speaks the given text by the default text-to-speech (TTS)
 
 ## Parameters
 ```powershell
-speak-text.ps1 [[-text] <String>] [<CommonParameters>]
+/home/mf/Repos/PowerShell/Scripts/speak-text.ps1 [[-text] <String>] [<CommonParameters>]
 
 -text <String>
     Specifies the text to read

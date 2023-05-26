@@ -4,7 +4,7 @@ This PowerShell script installs Windows Subsystem for Linux. It needs admin righ
 
 ## Parameters
 ```powershell
-install-wsl.ps1 [<CommonParameters>]
+/home/mf/Repos/PowerShell/Scripts/install-wsl.ps1 [<CommonParameters>]
 
 [<CommonParameters>]
     This script supports the common parameters: Verbose, Debug, ErrorAction, ErrorVariable, WarningAction, 

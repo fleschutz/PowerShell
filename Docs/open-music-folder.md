@@ -4,7 +4,7 @@ This script launches the File Explorer with the user's music folder.
 
 ## Parameters
 ```powershell
-open-music-folder.ps1 [<CommonParameters>]
+/home/mf/Repos/PowerShell/Scripts/open-music-folder.ps1 [<CommonParameters>]
 
 [<CommonParameters>]
     This script supports the common parameters: Verbose, Debug, ErrorAction, ErrorVariable, WarningAction, 

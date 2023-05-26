@@ -4,7 +4,7 @@ This PowerShell script lists all available console colors.
 
 ## Parameters
 ```powershell
-list-console-colors.ps1 [<CommonParameters>]
+/home/mf/Repos/PowerShell/Scripts/list-console-colors.ps1 [<CommonParameters>]
 
 [<CommonParameters>]
     This script supports the common parameters: Verbose, Debug, ErrorAction, ErrorVariable, WarningAction, 

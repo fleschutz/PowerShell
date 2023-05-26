@@ -4,7 +4,7 @@ This PowerShell script spells the given word by text-to-speech (TTS).
 
 ## Parameters
 ```powershell
-spell-word.ps1 [[-word] <String>] [<CommonParameters>]
+/home/mf/Repos/PowerShell/Scripts/spell-word.ps1 [[-word] <String>] [<CommonParameters>]
 
 -word <String>
     Specifies the word to spell

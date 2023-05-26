@@ -24,7 +24,7 @@ copy-photos-sorted.ps1 [[-SourceDir] <string>] [[-TargetDir] <string>]
 .PARAMTER TargetDir
 	Specifies the path to the target folder
 .EXAMPLE
-	PS> ./copy-photos-sorted D:\MyPhone\DCIM C:\MyPhotos
+	PS> ./copy-photos-sorted D:\iPhone\DCIM C:\MyPhotos
 .LINK
 	https://github.com/fleschutz/PowerShell
 .NOTES
@@ -51,24 +51,29 @@ function CopyFile { param([string]$SourcePath, [string]$TargetDir, [int]$Date, [
 	12 {"12 DEC"}
 	}
 	$TargetPath = "$TargetDir/$Year/$MonthDir/$Filename"
-	if (test-path "$TargetPath" -pathType leaf) {
-		"⏳ Skipping $($Filename): already existing..."
+	if (Test-Path "$TargetPath" -pathType leaf) {
+		Write-Host "⏳ Skipping existing $Year/$MonthDir/$Filename..."
 	} else {
-		"⏳ Copying $Filename to $Year/$MonthDir..."
-		new-item -path "$TargetDir" -name "$Year" -itemType "directory" -force | out-null
-		new-item -path "$TargetDir/$Year" -name "$MonthDir" -itemType "directory" -force | out-null
-		copy-item "$SourcePath" "$TargetPath" -force
+		Write-Host "⏳ Copying $Filename to $Year/$MonthDir..."
+		New-Item -path "$TargetDir" -name "$Year" -itemType "directory" -force | out-null
+		New-Item -path "$TargetDir/$Year" -name "$MonthDir" -itemType "directory" -force | out-null
+		Copy-Item "$SourcePath" "$TargetPath" -force
 	}
 }
 
 try {
-	if ($SourceDir -eq "") { $SourceDir = read-host "Enter path to source directory" }
-	if ($TargetDir -eq "") { $TargetDir = read-host "Enter path to target directory" }
-
+	if ($SourceDir -eq "") { $SourceDir = Read-Host "Enter file path to source directory" }
+	if ($TargetDir -eq "") { $TargetDir = Read-Host "Enter file path to target directory" }
 	$StopWatch = [system.diagnostics.stopwatch]::startNew()
+
+	Write-Host "⏳ Checking source directory 📂$($SourceDir)..."
+	if (-not(Test-Path "$SourceDir" -pathType container)) { throw "Can't access source directory: $SourceDir" }
 	$Files = (Get-ChildItem "$SourceDir\*.jpg" -attributes !Directory)
-	"Found $($Files.Count) photos in 📂$SourceDir..."
-	foreach ($File in $Files) {
+
+	Write-Host "⏳ Checking target directory 📂$($TargetDir)..."
+	if (-not(Test-Path "$TargetDir" -pathType container)) { throw "Can't access target directory: $TargetDir" }
+
+	foreach($File in $Files) {
 		$Filename = (Get-Item "$File").Name
 		if ("$Filename" -like "IMG_*_*.jpg") {
 			$Array = $Filename.split("_")
@@ -86,11 +91,11 @@ try {
 			$Array = $Filename.split("_")
 			CopyFile "$File" "$TargetDir" $Array[1] "$Filename"
 		} else {
-			"⏳ Skipping $($Filename): unknown filename format..."
+			Write-Host "⏳ Skipping $Filename with unknown filename format..."
 		}
 	}
 	[int]$Elapsed = $StopWatch.Elapsed.TotalSeconds
-	"✔️ $($Files.Count) photos copied from 📂$SourceDir to 📂$TargetDir in $Elapsed sec"
+	"✔️ copied $($Files.Count) photos from 📂$SourceDir to 📂$TargetDir in $Elapsed sec"
 	exit 0 # success
 } catch {
 	"⚠️ Error in line $($_.InvocationInfo.ScriptLineNumber): $($Error[0])"

@@ -4,7 +4,7 @@ This PowerShell script closes the Mozilla Thunderbird email application graceful
 
 ## Parameters
 ```powershell
-close-thunderbird.ps1 [<CommonParameters>]
+/home/mf/Repos/PowerShell/Scripts/close-thunderbird.ps1 [<CommonParameters>]
 
 [<CommonParameters>]
     This script supports the common parameters: Verbose, Debug, ErrorAction, ErrorVariable, WarningAction, 

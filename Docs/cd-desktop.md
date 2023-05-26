@@ -4,7 +4,7 @@ This PowerShell script changes the working directory to the user's desktop folde
 
 ## Parameters
 ```powershell
-cd-desktop.ps1 [<CommonParameters>]
+/home/mf/Repos/PowerShell/Scripts/cd-desktop.ps1 [<CommonParameters>]
 
 [<CommonParameters>]
     This script supports the common parameters: Verbose, Debug, ErrorAction, ErrorVariable, WarningAction, 
@@ -42,16 +42,16 @@ https://github.com/fleschutz/PowerShell
 
 try {
 	if ($IsLinux) {
-		$Path = Resolve-Path "$HOME/Desktop"
+		$Path = Resolve-Path "~/Desktop"
 	} else {
 		$Path = [Environment]::GetFolderPath('DesktopDirectory')
 	}
-	if (-not(Test-Path "$Path" -pathType container)) {
-		throw "Desktop folder at 📂$Path doesn't exist (yet)"
+	if (Test-Path "$Path" -pathType container) {
+		Set-Location "$Path"
+		"📂$Path"
+		exit 0 # success
 	}
-	Set-Location "$Path"
-	"📂$Path"
-	exit 0 # success
+	throw "User's desktop folder at 📂$Path doesn't exist (yet)"
 } catch {
 	"⚠️ Error in line $($_.InvocationInfo.ScriptLineNumber): $($Error[0])"
 	exit 1

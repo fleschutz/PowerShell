@@ -4,7 +4,7 @@ This PowerShell script reboots the local computer immediately (needs admin right
 
 ## Parameters
 ```powershell
-reboot.ps1 [<CommonParameters>]
+/home/mf/Repos/PowerShell/Scripts/reboot.ps1 [<CommonParameters>]
 
 [<CommonParameters>]
     This script supports the common parameters: Verbose, Debug, ErrorAction, ErrorVariable, WarningAction, 

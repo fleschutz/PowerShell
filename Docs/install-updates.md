@@ -1,10 +1,11 @@
 ## The *install-updates.ps1* Script
 
 This PowerShell script installs updates for the local machine (needs admin rights).
+Use "list-updates.ps1" to list available updates.
 
 ## Parameters
 ```powershell
-install-updates.ps1 [<CommonParameters>]
+/home/mf/Repos/PowerShell/Scripts/install-updates.ps1 [<CommonParameters>]
 
 [<CommonParameters>]
     This script supports the common parameters: Verbose, Debug, ErrorAction, ErrorVariable, WarningAction, 
@@ -30,6 +31,7 @@ https://github.com/fleschutz/PowerShell
 	Installs software updates
 .DESCRIPTION
 	This PowerShell script installs updates for the local machine (needs admin rights).
+	Use "list-updates.ps1" to list available updates.
 .EXAMPLE
 	PS> ./install-updates
 .LINK
@@ -54,14 +56,13 @@ try {
 		"⏳ (4/4) Upgrading installed Snap packages..."
 		& sudo snap refresh
 	} else {
-		"⏳ (1/2) Querying application updates..."
-		& winget upgrade
+		Write-Progress "⏳ Installing updates..."
 		" "
-		"⏳ (2/2) Upgrading applications..."
 		& winget upgrade --all
+		Write-Progress -completed " "
 	}
 	[int]$Elapsed = $StopWatch.Elapsed.TotalSeconds
-	"✅ updates installed in $Elapsed sec."
+	"✅ updates installed in $Elapsed sec"
 	exit 0 # success
 } catch {
 	"⚠️ Error in line $($_.InvocationInfo.ScriptLineNumber): $($Error[0])"

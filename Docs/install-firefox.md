@@ -4,7 +4,7 @@ This PowerShell script installs Mozilla Firefox from the Microsoft Store.
 
 ## Parameters
 ```powershell
-install-firefox.ps1 [<CommonParameters>]
+/home/mf/Repos/PowerShell/Scripts/install-firefox.ps1 [<CommonParameters>]
 
 [<CommonParameters>]
     This script supports the common parameters: Verbose, Debug, ErrorAction, ErrorVariable, WarningAction, 

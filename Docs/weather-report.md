@@ -4,7 +4,7 @@ This PowerShell script lists the local weather report.
 
 ## Parameters
 ```powershell
-weather-report.ps1 [[-GeoLocation] <String>] [<CommonParameters>]
+/home/mf/Repos/PowerShell/Scripts/weather-report.ps1 [[-GeoLocation] <String>] [<CommonParameters>]
 
 -GeoLocation <String>
     Specifies the geographic location to use (determine automatically by default)

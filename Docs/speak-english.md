@@ -4,7 +4,7 @@ This PowerShell scripts speaks the given text with an English text-to-speech (TT
 
 ## Parameters
 ```powershell
-speak-english.ps1 [[-text] <String>] [<CommonParameters>]
+/home/mf/Repos/PowerShell/Scripts/speak-english.ps1 [[-text] <String>] [<CommonParameters>]
 
 -text <String>
     Specifies the text to speak
@@ -22,7 +22,7 @@ speak-english.ps1 [[-text] <String>] [<CommonParameters>]
 
 ## Example
 ```powershell
-PS> ./speak-english Hello
+PS> ./speak-english Hi
 
 ```
 
@@ -42,7 +42,7 @@ https://github.com/fleschutz/PowerShell
 .PARAMETER text
 	Specifies the text to speak
 .EXAMPLE
-	PS> ./speak-english Hello
+	PS> ./speak-english Hi
 .LINK
 	https://github.com/fleschutz/PowerShell
 .NOTES
@@ -52,12 +52,12 @@ https://github.com/fleschutz/PowerShell
 param([string]$text = "")
 
 try {
-	if ("$text" -eq "") { $text = read-host "Enter the English text to speak" }
+	if ("$text" -eq "") { $text = Read-Host "Enter the English text to speak" }
 
 	$TTS = New-Object -ComObject SAPI.SPVoice
-	foreach ($Voice in $TTS.GetVoices()) {
-		if ($Voice.GetDescription() -like "*- English*") {
-			$TTS.Voice = $Voice
+	foreach ($voice in $TTS.GetVoices()) {
+		if ($voice.GetDescription() -like "*- English*") {
+			$TTS.Voice = $voice
 			[void]$TTS.Speak($text)
 			exit 0 # success
 		}

@@ -4,7 +4,7 @@ This PowerShell script changes the working directory to two directory level up.
 
 ## Parameters
 ```powershell
-cd-up2.ps1 [<CommonParameters>]
+/home/mf/Repos/PowerShell/Scripts/cd-up2.ps1 [<CommonParameters>]
 
 [<CommonParameters>]
     This script supports the common parameters: Verbose, Debug, ErrorAction, ErrorVariable, WarningAction, 

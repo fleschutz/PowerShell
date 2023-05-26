@@ -4,7 +4,7 @@ This PowerShell script uninstalls Paint 3D from the local computer.
 
 ## Parameters
 ```powershell
-uninstall-paint-3d.ps1 [<CommonParameters>]
+/home/mf/Repos/PowerShell/Scripts/uninstall-paint-3d.ps1 [<CommonParameters>]
 
 [<CommonParameters>]
     This script supports the common parameters: Verbose, Debug, ErrorAction, ErrorVariable, WarningAction, 

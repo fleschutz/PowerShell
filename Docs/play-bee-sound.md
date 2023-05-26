@@ -4,7 +4,7 @@ This PowerShell script plays a bee sound.
 
 ## Parameters
 ```powershell
-play-bee-sound.ps1 [<CommonParameters>]
+/home/mf/Repos/PowerShell/Scripts/play-bee-sound.ps1 [<CommonParameters>]
 
 [<CommonParameters>]
     This script supports the common parameters: Verbose, Debug, ErrorAction, ErrorVariable, WarningAction, 

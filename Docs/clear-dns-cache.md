@@ -4,7 +4,7 @@ This PowerShell script clears the DNS client cache of the local computer.
 
 ## Parameters
 ```powershell
-clear-dns-cache.ps1 [<CommonParameters>]
+/home/mf/Repos/PowerShell/Scripts/clear-dns-cache.ps1 [<CommonParameters>]
 
 [<CommonParameters>]
     This script supports the common parameters: Verbose, Debug, ErrorAction, ErrorVariable, WarningAction, 

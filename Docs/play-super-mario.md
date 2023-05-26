@@ -4,7 +4,7 @@ This PowerShell script plays the Super Mario intro.
 
 ## Parameters
 ```powershell
-play-super-mario.ps1 [<CommonParameters>]
+/home/mf/Repos/PowerShell/Scripts/play-super-mario.ps1 [<CommonParameters>]
 
 [<CommonParameters>]
     This script supports the common parameters: Verbose, Debug, ErrorAction, ErrorVariable, WarningAction, 

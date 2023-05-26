@@ -4,7 +4,7 @@ This PowerShell script checks a drive for free space left (20 GB by default).
 
 ## Parameters
 ```powershell
-check-drive-space.ps1 [[-Drive] <String>] [[-MinLevel] <Int32>] [<CommonParameters>]
+/home/mf/Repos/PowerShell/Scripts/check-drive-space.ps1 [[-Drive] <String>] [[-MinLevel] <Int32>] [<CommonParameters>]
 
 -Drive <String>
     Specifies the drive to check

@@ -1,15 +1,45 @@
 ## The *new-symlink.ps1* Script
 
-
+This PowerShell script creates a new symbolic link file.
 
 ## Parameters
 ```powershell
+/home/mf/Repos/PowerShell/Scripts/new-symlink.ps1 [[-symlink] <String>] [[-target] <String>] [<CommonParameters>]
 
+-symlink <String>
+    Specifies the new symlink filename
+    
+    Required?                    false
+    Position?                    1
+    Default value                
+    Accept pipeline input?       false
+    Accept wildcard characters?  false
+
+-target <String>
+    Specifies the path to target
+    
+    Required?                    false
+    Position?                    2
+    Default value                
+    Accept pipeline input?       false
+    Accept wildcard characters?  false
 
 [<CommonParameters>]
     This script supports the common parameters: Verbose, Debug, ErrorAction, ErrorVariable, WarningAction, 
     WarningVariable, OutBuffer, PipelineVariable, and OutVariable.
 ```
+
+## Example
+```powershell
+PS> ./new-symlink C:\Temp\HDD C:\
+
+```
+
+## Notes
+Author: Markus Fleschutz | License: CC0
+
+## Related Links
+https://github.com/fleschutz/PowerShell
 
 ## Source Code
 ```powershell
@@ -30,7 +60,7 @@
 	Author: Markus Fleschutz | License: CC0
 #>
 
-param([string]$symlink = "", $[string]target = "")
+param([string]$symlink = "", [string]$target = "")
 
 try {
 	if ($symlink -eq "" ) { $symlink = read-host "Enter new symlink filename" }

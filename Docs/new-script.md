@@ -4,7 +4,7 @@ This PowerShell script creates a new PowerShell script file (by using template f
 
 ## Parameters
 ```powershell
-new-script.ps1 [[-filename] <String>] [<CommonParameters>]
+/home/mf/Repos/PowerShell/Scripts/new-script.ps1 [[-filename] <String>] [<CommonParameters>]
 
 -filename <String>
     Specifies the path to the resulting file

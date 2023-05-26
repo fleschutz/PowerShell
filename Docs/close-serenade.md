@@ -4,7 +4,7 @@ This PowerShell script closes the Serenade.ai application gracefully.
 
 ## Parameters
 ```powershell
-close-serenade.ps1 [<CommonParameters>]
+/home/mf/Repos/PowerShell/Scripts/close-serenade.ps1 [<CommonParameters>]
 
 [<CommonParameters>]
     This script supports the common parameters: Verbose, Debug, ErrorAction, ErrorVariable, WarningAction, 

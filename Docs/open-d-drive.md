@@ -4,7 +4,7 @@ This PowerShell script launches the File Explorer with the D: drive folder.
 
 ## Parameters
 ```powershell
-open-d-drive.ps1 [<CommonParameters>]
+/home/mf/Repos/PowerShell/Scripts/open-d-drive.ps1 [<CommonParameters>]
 
 [<CommonParameters>]
     This script supports the common parameters: Verbose, Debug, ErrorAction, ErrorVariable, WarningAction, 

@@ -4,7 +4,7 @@ This PowerShell script lists the emojis of Unicode 13.0 sorted by category.
 
 ## Parameters
 ```powershell
-list-emojis.ps1 [<CommonParameters>]
+/home/mf/Repos/PowerShell/Scripts/list-emojis.ps1 [<CommonParameters>]
 
 [<CommonParameters>]
     This script supports the common parameters: Verbose, Debug, ErrorAction, ErrorVariable, WarningAction, 

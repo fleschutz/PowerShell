@@ -4,7 +4,7 @@ This PowerShell script launches the File Explorer with the user's Dropbox folder
 
 ## Parameters
 ```powershell
-open-dropbox-folder.ps1 [<CommonParameters>]
+/home/mf/Repos/PowerShell/Scripts/open-dropbox-folder.ps1 [<CommonParameters>]
 
 [<CommonParameters>]
     This script supports the common parameters: Verbose, Debug, ErrorAction, ErrorVariable, WarningAction, 

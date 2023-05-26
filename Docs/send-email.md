@@ -4,7 +4,51 @@ This PowerShell script sends an email message.
 
 ## Parameters
 ```powershell
-send-email.ps1 [<CommonParameters>]
+/home/mf/Repos/PowerShell/Scripts/send-email.ps1 [[-From] <String>] [[-To] <String>] [[-Subject] <String>] [[-Body] <String>] [[-SMTPServer] <String>] [<CommonParameters>]
+
+-From <String>
+    Specifies the sender email address
+    
+    Required?                    false
+    Position?                    1
+    Default value                
+    Accept pipeline input?       false
+    Accept wildcard characters?  false
+
+-To <String>
+    Specifies the recipient email address
+    
+    Required?                    false
+    Position?                    2
+    Default value                
+    Accept pipeline input?       false
+    Accept wildcard characters?  false
+
+-Subject <String>
+    Specifies the subject line
+    
+    Required?                    false
+    Position?                    3
+    Default value                
+    Accept pipeline input?       false
+    Accept wildcard characters?  false
+
+-Body <String>
+    Specifies the body message
+    
+    Required?                    false
+    Position?                    4
+    Default value                
+    Accept pipeline input?       false
+    Accept wildcard characters?  false
+
+-SMTPServer <String>
+    
+    Required?                    false
+    Position?                    5
+    Default value                
+    Accept pipeline input?       false
+    Accept wildcard characters?  false
 
 [<CommonParameters>]
     This script supports the common parameters: Verbose, Debug, ErrorAction, ErrorVariable, WarningAction, 
@@ -30,6 +74,14 @@ https://github.com/fleschutz/PowerShell
 	Sends an email message
 .DESCRIPTION
 	This PowerShell script sends an email message.
+.PARAMETER From
+	Specifies the sender email address
+.PARAMETER To
+	Specifies the recipient email address
+.PARAMETER Subject
+	Specifies the subject line
+.PARAMETER Body
+	Specifies the body message
 .EXAMPLE
 	PS> ./send-email
 .LINK
@@ -38,15 +90,17 @@ https://github.com/fleschutz/PowerShell
 	Author: Markus Fleschutz | License: CC0
 #>
 
-$smtpServer = "smtp.example.com"
-$From = read-host "Enter sender email address"
-$To = read-host "Enter recipient email address"
-$Subject = read-host "Enter subject"
-$Body = read-host "Enter message"
+param([string]$From = "", [string]$To = "", [string]$Subject = "", [string]$Body = "", [string]$SMTPServer = "")
 
 try {
-	$msg = new-object Net.Mail.MailMessage
-	$smtp = new-object Net.Mail.SmtpClient($smtpServer)
+	if ($From -eq "") {    $From = Read-Host "Enter sender email address" }
+	if ($To -eq "") {      $To = Read-Host "Enter recipient email address" }
+	if ($Subject -eq "") { $Subject = Read-Host "Enter subject line" }
+	if ($Body -eq "") {    $Body = Read-Host "Enter body message" }
+	if ($SMTPServer -eq "") { $SMTPServer = Read-Host "Enter SMTP server" }
+
+	$msg = New-Object Net.Mail.MailMessage
+	$smtp = New-Object Net.Mail.SmtpClient($smtpServer)
 	$msg.From = $From
 	$msg.ReplyTo = $From
 	$msg.To.Add($To)

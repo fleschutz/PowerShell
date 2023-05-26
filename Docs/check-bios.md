@@ -1,10 +1,10 @@
 ## The *check-bios.ps1* Script
 
-This PowerShell script queries BIOS details and prints it.
+This PowerShell script queries the BIOS status and prints it.
 
 ## Parameters
 ```powershell
-check-bios.ps1 [<CommonParameters>]
+/home/mf/Repos/PowerShell/Scripts/check-bios.ps1 [<CommonParameters>]
 
 [<CommonParameters>]
     This script supports the common parameters: Verbose, Debug, ErrorAction, ErrorVariable, WarningAction, 
@@ -14,7 +14,7 @@ check-bios.ps1 [<CommonParameters>]
 ## Example
 ```powershell
 PS> ./check-bios
-✅ BIOS V1.10 by INSYDE Corp. (S/N NXA82EV0EBB07600, version ACRSYS - 2)
+✅ BIOS F6 by American Megatrends Inc. (version ALASKA - 1072009, S/N NXA82EV0EBB0760)
 
 ```
 
@@ -28,12 +28,12 @@ https://github.com/fleschutz/PowerShell
 ```powershell
 <#
 .SYNOPSIS
-	Checks BIOS details
+	Checks the BIOS status
 .DESCRIPTION
-	This PowerShell script queries BIOS details and prints it.
+	This PowerShell script queries the BIOS status and prints it.
 .EXAMPLE
 	PS> ./check-bios
-	✅ BIOS V1.10 by INSYDE Corp. (S/N NXA82EV0EBB07600, version ACRSYS - 2)
+	✅ BIOS F6 by American Megatrends Inc. (version ALASKA - 1072009, S/N NXA82EV0EBB0760)
 .LINK
 	https://github.com/fleschutz/PowerShell
 .NOTES
@@ -41,16 +41,25 @@ https://github.com/fleschutz/PowerShell
 #>
 
 try {
-	Write-Progress "Querying BIOS details..."
 	if ($IsLinux) {
-		# TODO
+		Write-Progress "⏳ Querying BIOS..."
+		$Model = (sudo dmidecode -s system-product-name)
+		if ("$Model" -ne "") {
+			$Manufacturer = (sudo dmidecode -s system-manufacturer)
+			$Version = (sudo dmidecode -s bios-version)
+			$RelDate = (sudo dmidecode -s bios-release-date)
+			Write-Host "✅ BIOS $Model by $Manufacturer ($Version release of $RelDate)"
+		}
+		Write-Progress -completed "."
 	} else {
+		Write-Progress "⏳ Querying BIOS..."
 		$BIOS = Get-CimInstance -ClassName Win32_BIOS
-		$Manufacturer = $BIOS.Manufacturer
-		$Model = $BIOS.Name
-		$Serial = $BIOS.SerialNumber
-		$Version = $BIOS.Version
-		"✅ BIOS $Model by $Manufacturer (S/N $Serial, version $Version)"
+		$Model = $BIOS.Name.Trim()
+		$Manufacturer = $BIOS.Manufacturer.Trim()
+		$Serial = $BIOS.SerialNumber.Trim()
+		$Version = $BIOS.Version.Trim()
+		Write-Progress -completed "."
+		Write-Host "✅ BIOS $Model by $Manufacturer (version $Version, S/N $Serial)"
 	}
 	exit 0 # success
 } catch {

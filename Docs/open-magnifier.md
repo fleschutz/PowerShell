@@ -4,7 +4,7 @@ This script launches the Windows Screen Magnifier application.
 
 ## Parameters
 ```powershell
-open-magnifier.ps1 [<CommonParameters>]
+/home/mf/Repos/PowerShell/Scripts/open-magnifier.ps1 [<CommonParameters>]
 
 [<CommonParameters>]
     This script supports the common parameters: Verbose, Debug, ErrorAction, ErrorVariable, WarningAction, 

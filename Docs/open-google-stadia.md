@@ -4,7 +4,7 @@ This PowerShell script launches the Web browser with the Google Stadia website.
 
 ## Parameters
 ```powershell
-open-google-stadia.ps1 [<CommonParameters>]
+/home/mf/Repos/PowerShell/Scripts/open-google-stadia.ps1 [<CommonParameters>]
 
 [<CommonParameters>]
     This script supports the common parameters: Verbose, Debug, ErrorAction, ErrorVariable, WarningAction, 

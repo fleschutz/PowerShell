@@ -4,7 +4,7 @@ This PowerShell script speaks the given checklist by text-to-speech (TTS).
 
 ## Parameters
 ```powershell
-speak-checklist.ps1 [[-Name] <String>] [<CommonParameters>]
+/home/mf/Repos/PowerShell/Scripts/speak-checklist.ps1 [[-Name] <String>] [<CommonParameters>]
 
 -Name <String>
     Specifies the name of the checklist

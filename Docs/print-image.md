@@ -4,7 +4,7 @@ This PowerShell script shows the printer dialogue to print the given image file.
 
 ## Parameters
 ```powershell
-print-image.ps1 [[-Path] <Object>] [<CommonParameters>]
+/home/mf/Repos/PowerShell/Scripts/print-image.ps1 [[-Path] <Object>] [<CommonParameters>]
 
 -Path <Object>
     Specifies the path to the image file

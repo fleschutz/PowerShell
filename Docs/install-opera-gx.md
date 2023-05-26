@@ -4,7 +4,7 @@ This PowerShell script installs Opera GX from Microsoft Store.
 
 ## Parameters
 ```powershell
-install-opera-gx.ps1 [<CommonParameters>]
+/home/mf/Repos/PowerShell/Scripts/install-opera-gx.ps1 [<CommonParameters>]
 
 [<CommonParameters>]
     This script supports the common parameters: Verbose, Debug, ErrorAction, ErrorVariable, WarningAction, 

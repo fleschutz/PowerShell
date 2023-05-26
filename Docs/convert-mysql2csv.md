@@ -4,7 +4,7 @@ This PowerShell script converts a MySQL database table to a .CSV file.
 
 ## Parameters
 ```powershell
-convert-mysql2csv.ps1 [[-server] <String>] [[-database] <String>] [[-username] <String>] [[-password] <String>] [[-query] <String>] [<CommonParameters>]
+/home/mf/Repos/PowerShell/Scripts/convert-mysql2csv.ps1 [[-server] <String>] [[-database] <String>] [[-username] <String>] [[-password] <String>] [[-query] <String>] [<CommonParameters>]
 
 -server <String>
     Specifies the server's hostname or IP address

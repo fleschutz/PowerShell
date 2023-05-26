@@ -4,7 +4,7 @@ This PowerShell script installs OBS Studio (admin rights are needed).
 
 ## Parameters
 ```powershell
-install-obs-studio.ps1 [<CommonParameters>]
+/home/mf/Repos/PowerShell/Scripts/install-obs-studio.ps1 [<CommonParameters>]
 
 [<CommonParameters>]
     This script supports the common parameters: Verbose, Debug, ErrorAction, ErrorVariable, WarningAction, 

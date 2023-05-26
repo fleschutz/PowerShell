@@ -4,7 +4,7 @@ This script launches the Windows Defender application.
 
 ## Parameters
 ```powershell
-open-windows-defender.ps1 [<CommonParameters>]
+/home/mf/Repos/PowerShell/Scripts/open-windows-defender.ps1 [<CommonParameters>]
 
 [<CommonParameters>]
     This script supports the common parameters: Verbose, Debug, ErrorAction, ErrorVariable, WarningAction, 

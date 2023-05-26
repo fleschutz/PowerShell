@@ -4,7 +4,7 @@ This PowerShell script creates a new user account.
 
 ## Parameters
 ```powershell
-new-user.ps1 [[-Username] <String>] [<CommonParameters>]
+/home/mf/Repos/PowerShell/Scripts/new-user.ps1 [[-Username] <String>] [<CommonParameters>]
 
 -Username <String>
     

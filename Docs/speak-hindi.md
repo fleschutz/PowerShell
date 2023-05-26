@@ -4,7 +4,7 @@ This PowerShell script speaks the given text with a Hindi text-to-speech (TTS) v
 
 ## Parameters
 ```powershell
-speak-hindi.ps1 [[-text] <String>] [<CommonParameters>]
+/home/mf/Repos/PowerShell/Scripts/speak-hindi.ps1 [[-text] <String>] [<CommonParameters>]
 
 -text <String>
     Specifies the text to speak

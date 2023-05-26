@@ -5,7 +5,7 @@ NOTE: in case of merge conflicts the script stops immediately!
 
 ## Parameters
 ```powershell
-pick-commit.ps1 [[-CommitID] <String>] [[-CommitMessage] <String>] [[-Branches] <String>] [[-RepoDir] <String>] [<CommonParameters>]
+/home/mf/Repos/PowerShell/Scripts/pick-commit.ps1 [[-CommitID] <String>] [[-CommitMessage] <String>] [[-Branches] <String>] [[-RepoDir] <String>] [<CommonParameters>]
 
 -CommitID <String>
     Specifies the commit ID
@@ -87,8 +87,8 @@ https://github.com/fleschutz/PowerShell
 param([string]$CommitID = "", [string]$CommitMessage = "", [string]$Branches = "", [string]$RepoDir = "$PWD")
 
 try {
-	if (-not(test-path "$RepoDir" -pathType container)) { throw "Can't access directory: $RepoDir" }
-	set-location "$RepoDir"
+	if (-not(Test-Path "$RepoDir" -pathType container)) { throw "Can't access directory: $RepoDir" }
+	Set-Location "$RepoDir"
 
 	if ($CommitID -eq "") { $CommitID = read-host "Enter the Git commit id to cherry-pick" }
 	if ($CommitMessage -eq "") { $CommitMessage = read-host "Enter the commit message to use" }

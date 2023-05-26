@@ -4,7 +4,7 @@ This PowerShell script checks the file system of a drive. It needs admin rights.
 
 ## Parameters
 ```powershell
-check-file-system.ps1 [[-Drive] <String>] [<CommonParameters>]
+/home/mf/Repos/PowerShell/Scripts/check-file-system.ps1 [[-Drive] <String>] [<CommonParameters>]
 
 -Drive <String>
     Specifies the drive to check

@@ -4,7 +4,7 @@ This PowerShell script launches the Web browser and shows lightnings in OpenStre
 
 ## Parameters
 ```powershell
-show-lightnings.ps1 [<CommonParameters>]
+/home/mf/Repos/PowerShell/Scripts/show-lightnings.ps1 [<CommonParameters>]
 
 [<CommonParameters>]
     This script supports the common parameters: Verbose, Debug, ErrorAction, ErrorVariable, WarningAction, 

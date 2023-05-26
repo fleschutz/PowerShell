@@ -4,7 +4,7 @@ This PowerShell script lists the phone calls of the FRITZ!Box device.
 
 ## Parameters
 ```powershell
-list-fritzbox-calls.ps1 [[-Username] <String>] [[-Password] <String>] [<CommonParameters>]
+/home/mf/Repos/PowerShell/Scripts/list-fritzbox-calls.ps1 [[-Username] <String>] [[-Password] <String>] [<CommonParameters>]
 
 -Username <String>
     Specifies the user name for FRITZ!Box

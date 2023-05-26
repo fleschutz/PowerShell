@@ -1,11 +1,11 @@
 ## The *install-basic-apps.ps1* Script
 
-This PowerShell script installs basic Windows apps (browser, e-mail client, etc).
-Apps from the Microsoft Store are preferred for automatic updates.
+This PowerShell script installs basic Windows apps such as browser, e-mail client, etc.
+Apps from Microsoft Store are preferred (due to security and automatic updates).
 
 ## Parameters
 ```powershell
-install-basic-apps.ps1 [<CommonParameters>]
+/home/mf/Repos/PowerShell/Scripts/install-basic-apps.ps1 [<CommonParameters>]
 
 [<CommonParameters>]
     This script supports the common parameters: Verbose, Debug, ErrorAction, ErrorVariable, WarningAction, 
@@ -30,8 +30,8 @@ https://github.com/fleschutz/PowerShell
 .SYNOPSIS
 	Installs basic apps
 .DESCRIPTION
-	This PowerShell script installs basic Windows apps (browser, e-mail client, etc).
-	Apps from the Microsoft Store are preferred for automatic updates. 
+	This PowerShell script installs basic Windows apps such as browser, e-mail client, etc.
+	Apps from Microsoft Store are preferred (due to security and automatic updates). 
 .EXAMPLE
 	PS> ./install-basic-apps
 .LINK
@@ -43,31 +43,36 @@ https://github.com/fleschutz/PowerShell
 try {
 	$StopWatch = [system.diagnostics.stopwatch]::startNew()
 
-	"⏳ Step 1 - Loading table from Data/basic-apps.csv..."
+	Write-Host "⏳ (1/34) Loading Data/basic-apps.csv...    " -noNewline
 	$Table = Import-CSV "$PSScriptRoot/../Data/basic-apps.csv"
 	$NumEntries = $Table.count
-	Write-Host "   About to install $NumEntries apps: " -NoNewline
+	"$NumEntries apps"
+	"⏳ (2/34) About to install or upgrade:"
+	""
 	foreach($Row in $Table) {
-		[string]$AppName = $Row.AppName
-		Write-Host "$AppName, " -NoNewline
+		[string]$AppName = $Row.APPLICATION
+		Write-Host " · $AppName" -NoNewline
 	}
 	""
-	"Press <Control> <C> to abort, otherwise the installation will start..."
-	sleep -s 3
+	""
+	"Press <Control> <C> to abort, otherwise the installation will start in 15 seconds..."
+	Start-Sleep -seconds 15
 
-	[int]$Step = 2
+	[int]$Step = 3
+	[int]$Failed = 0
 	foreach($Row in $Table) {
-		[string]$AppName = $Row.AppName
-		[string]$Category = $Row.Category
-		[string]$AppID = $Row.AppID
-
-		"⏳ Step $Step/$($NumEntries + 1) - Installing $AppName ($Category)..."
+		[string]$AppName = $Row.APPLICATION
+		[string]$Category = $Row.CATEGORY
+		[string]$AppID = $Row.APPID
+		Write-Host " "
+		Write-Host "⏳ ($Step/$($NumEntries + 2)) Installing $Category '$AppName'..."
 		& winget install --id $AppID --accept-package-agreements --accept-source-agreements
-        	if ($lastExitCode -ne "0") { throw "'winget install' for $AppName failed" }
+        	if ($lastExitCode -ne "0") { $Failed++ }
 		$Step++
 	}
+	[int]$Installed = ($NumEntries - $Failed)
 	[int]$Elapsed = $StopWatch.Elapsed.TotalSeconds
-	"✔️ installed $NumEntries apps in $Elapsed sec"
+	"✔️ installed $Installed of $NumEntries applications in $Elapsed sec"
 	exit 0 # success
 } catch {
 	"⚠️ Error in line $($_.InvocationInfo.ScriptLineNumber): $($Error[0])"

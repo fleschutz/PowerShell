@@ -4,7 +4,7 @@ This PowerShell script selects a random quote in Data/quotes.csv and speaks it b
 
 ## Parameters
 ```powershell
-tell-quote.ps1 [<CommonParameters>]
+/home/mf/Repos/PowerShell/Scripts/tell-quote.ps1 [<CommonParameters>]
 
 [<CommonParameters>]
     This script supports the common parameters: Verbose, Debug, ErrorAction, ErrorVariable, WarningAction, 

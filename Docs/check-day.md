@@ -4,7 +4,7 @@ This PowerShell script determines and speaks the current day by text-to-speech (
 
 ## Parameters
 ```powershell
-check-day.ps1 [<CommonParameters>]
+/home/mf/Repos/PowerShell/Scripts/check-day.ps1 [<CommonParameters>]
 
 [<CommonParameters>]
     This script supports the common parameters: Verbose, Debug, ErrorAction, ErrorVariable, WarningAction, 

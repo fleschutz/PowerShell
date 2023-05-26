@@ -4,7 +4,7 @@ This PowerShell script speaks the given text with a German text-to-speech (TTS) 
 
 ## Parameters
 ```powershell
-speak-german.ps1 [[-text] <String>] [<CommonParameters>]
+/home/mf/Repos/PowerShell/Scripts/speak-german.ps1 [[-text] <String>] [<CommonParameters>]
 
 -text <String>
     Specifies the text to speak

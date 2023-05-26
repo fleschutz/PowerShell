@@ -4,7 +4,7 @@ This PowerShell script installs Chocolatey onto the local computer (needs admin 
 
 ## Parameters
 ```powershell
-install-chocolatey.ps1 [<CommonParameters>]
+/home/mf/Repos/PowerShell/Scripts/install-chocolatey.ps1 [<CommonParameters>]
 
 [<CommonParameters>]
     This script supports the common parameters: Verbose, Debug, ErrorAction, ErrorVariable, WarningAction, 

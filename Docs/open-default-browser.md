@@ -4,7 +4,7 @@ This PowerShell script launches the default Web browser, optional with a given U
 
 ## Parameters
 ```powershell
-open-default-browser.ps1 [[-URL] <String>] [<CommonParameters>]
+/home/mf/Repos/PowerShell/Scripts/open-default-browser.ps1 [[-URL] <String>] [<CommonParameters>]
 
 -URL <String>
     Specifies the URL

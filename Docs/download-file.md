@@ -4,7 +4,7 @@ This PowerShell script downloads a file from the given URL
 
 ## Parameters
 ```powershell
-download-file.ps1 [[-URL] <String>] [<CommonParameters>]
+/home/mf/Repos/PowerShell/Scripts/download-file.ps1 [[-URL] <String>] [<CommonParameters>]
 
 -URL <String>
     Specifies the URL where to download from

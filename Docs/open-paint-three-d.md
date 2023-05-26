@@ -4,7 +4,7 @@ This script launches the Paint 3D application.
 
 ## Parameters
 ```powershell
-open-paint-three-d.ps1 [<CommonParameters>]
+/home/mf/Repos/PowerShell/Scripts/open-paint-three-d.ps1 [<CommonParameters>]
 
 [<CommonParameters>]
     This script supports the common parameters: Verbose, Debug, ErrorAction, ErrorVariable, WarningAction, 

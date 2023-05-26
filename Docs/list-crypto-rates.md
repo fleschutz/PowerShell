@@ -16,9 +16,9 @@ list-crypto-rates.ps1
 ```powershell
 <#
 .SYNOPSIS
-	Lists crypto exchange rates
+	List crypto rates
 .DESCRIPTION
-	This PowerShell script queries and lists the current crypto exchange rates from cryptocompare.com.
+	This PowerShell script queries cryptocompare.com and lists the current crypto exchange rates in USD/EUR/RUB/CNY.
 .EXAMPLE
 	PS> ./list-crypto-rates
 .LINK
@@ -35,18 +35,21 @@ function ListCryptoRate { param([string]$Symbol, [string]$Name)
 function ListCryptoRates { 
 	ListCryptoRate BTC   "Bitcoin"
 	ListCryptoRate ETH   "Ethereum"
+	ListCryptoRate BUSD  "BUSD"
+	ListCryptoRate XRP   "XRP"
+	ListCryptoRate USDT  "Tether"
+	ListCryptoRate AVAX  "Avalanche"
+	ListCryptoRate LTC   "Litecoin"
+	ListCryptoRate SOL   "Solana"
+	ListCryptoRate GALA  "Gala"
+	ListCryptoRate DOGE  "Dogecoin"
 	ListCryptoRate ADA   "Cardano"
 	ListCryptoRate BNB   "Binance Coin"
-	ListCryptoRate USDT  "Tether"
-	ListCryptoRate XRP   "XRP"
-	ListCryptoRate DOGE  "Dogecoin"
 	ListCryptoRate USDC  "USD Coin"
 	ListCryptoRate DOT   "Polkadot"
-	ListCryptoRate SOL   "Solana"
 	ListCryptoRate UNI   "Uniswap"
 	ListCryptoRate BUSD  "Binance USD"
 	ListCryptoRate BCH   "Bitcoin Cash"
-	ListCryptoRate LTC   "Litecoin"
 	ListCryptoRate LINK  "Chainlink"
 	ListCryptoRate LUNA  "Terra"
 	ListCryptoRate ICP   "Internet Computer"
@@ -56,10 +59,8 @@ function ListCryptoRates {
 }
 
 try {
-	" "
-	"Current Crypto Exchange Rates by cryptocompare.com"
-	"=================================================="
 	ListCryptoRates | Format-Table -property @{e='Cryptocurrency';width=28},USD,EUR,RUB,CNY
+	Write-Host "(by cryptocompare.com, Crypto is volatile and unregulated. Capital at risk. Taxes may apply)"
 	exit 0 # success
 } catch {
 	"⚠️ Error in line $($_.InvocationInfo.ScriptLineNumber): $($Error[0])"

@@ -4,7 +4,7 @@ This PowerShell script writes a random Juck Norris joke to the console.
 
 ## Parameters
 ```powershell
-write-joke.ps1 [<CommonParameters>]
+/home/mf/Repos/PowerShell/Scripts/write-joke.ps1 [<CommonParameters>]
 
 [<CommonParameters>]
     This script supports the common parameters: Verbose, Debug, ErrorAction, ErrorVariable, WarningAction, 

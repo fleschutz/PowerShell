@@ -4,7 +4,7 @@ This PowerShell script writes the given text with the typewriter effect.
 
 ## Parameters
 ```powershell
-write-typewriter.ps1 [[-text] <String>] [[-speed] <Int32>] [<CommonParameters>]
+/home/mf/Repos/PowerShell/Scripts/write-typewriter.ps1 [[-text] <String>] [[-speed] <Int32>] [<CommonParameters>]
 
 -text <String>
     Specifies the text to write

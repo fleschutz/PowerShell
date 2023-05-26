@@ -4,7 +4,7 @@ This PowerShell script searches and replaces a pattern in the given files by the
 
 ## Parameters
 ```powershell
-replace-in-files.ps1 [[-pattern] <String>] [[-replacement] <String>] [[-files] <String>] [<CommonParameters>]
+/home/mf/Repos/PowerShell/Scripts/replace-in-files.ps1 [[-pattern] <String>] [[-replacement] <String>] [[-files] <String>] [<CommonParameters>]
 
 -pattern <String>
     Specifies the pattern to look for

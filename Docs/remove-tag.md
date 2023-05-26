@@ -4,7 +4,7 @@ This PowerShell script removes a Git tag, either locally, remote, or both.
 
 ## Parameters
 ```powershell
-remove-tag.ps1 [[-TagName] <String>] [[-Mode] <String>] [[-RepoDir] <String>] [<CommonParameters>]
+/home/mf/Repos/PowerShell/Scripts/remove-tag.ps1 [[-TagName] <String>] [[-Mode] <String>] [[-RepoDir] <String>] [<CommonParameters>]
 
 -TagName <String>
     Specifies the Git tag name

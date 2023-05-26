@@ -4,7 +4,7 @@ This PowerShell script counts the number of code lines in a folder (including su
 
 ## Parameters
 ```powershell
-count-lines-of-code.ps1 [[-Folder] <String>] [<CommonParameters>]
+/home/mf/Repos/PowerShell/Scripts/count-lines-of-code.ps1 [[-Folder] <String>] [<CommonParameters>]
 
 -Folder <String>
     Specifies the path to the folder

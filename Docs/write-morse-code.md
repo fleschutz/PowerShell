@@ -1,10 +1,10 @@
 ## The *write-morse-code.ps1* Script
 
-This PowerShell script writes text in Morse code.
+This PowerShell script writes the given text in Morse code.
 
 ## Parameters
 ```powershell
-write-morse-code.ps1 [[-text] <String>] [[-speed] <Int32>] [<CommonParameters>]
+/home/mf/Repos/PowerShell/Scripts/write-morse-code.ps1 [[-text] <String>] [[-speed] <Int32>] [<CommonParameters>]
 
 -text <String>
     Specifies the text to write
@@ -31,7 +31,8 @@ write-morse-code.ps1 [[-text] <String>] [[-speed] <Int32>] [<CommonParameters>]
 
 ## Example
 ```powershell
-PS> ./write-morse-code "Hello World"
+PS> ./write-morse-code ABC
+● ―   ― ● ● ●   ― ● ― ●
 
 ```
 
@@ -45,15 +46,16 @@ https://github.com/fleschutz/PowerShell
 ```powershell
 <#
 .SYNOPSIS
-	Writes text in Morse code
+	Writes Morse code
 .DESCRIPTION
-	This PowerShell script writes text in Morse code.
+	This PowerShell script writes the given text in Morse code.
 .PARAMETER text
 	Specifies the text to write
 .PARAMETER speed
 	Specifies the speed of one time unit (100 ms per default)
 .EXAMPLE
-	PS> ./write-morse-code "Hello World"
+	PS> ./write-morse-code ABC
+	● ―   ― ● ● ●   ― ● ― ●
 .LINK
 	https://github.com/fleschutz/PowerShell
 .NOTES
@@ -63,20 +65,20 @@ https://github.com/fleschutz/PowerShell
 param([string]$text = "", [int]$speed = 100) # one time unit in milliseconds
 
 function gap { param([int]$Length)
-	for ([int]$i = 1; $i -lt $Length; $i++) {
-		write-host " " -nonewline
+	for ([int]$i = 0; $i -lt $Length; $i++) {
+		Write-Host " " -noNewline
 	}
-	start-sleep -milliseconds ($Length * $speed)
+	Start-Sleep -milliseconds ($Length * $speed)
 }
 
 function dot {
-	write-host "." -nonewline
-	start-sleep -milliseconds $speed # signal
+	Write-Host "●" -noNewline
+	Start-Sleep -milliseconds $speed # signal
 }
 
 function dash {
-	write-host "_" -nonewline
-	start-sleep -milliseconds (3 * $speed) # signal
+	Write-Host "―" -noNewline
+	Start-Sleep -milliseconds (3 * $speed) # signal
 }
 
 function Char2MorseCode { param([string]$Char)
@@ -117,19 +119,27 @@ function Char2MorseCode { param([string]$Char)
 	'8' { dash; gap 1; dash; gap 1; dash; gap 1; dot; gap 1; dot; gap 3 }
 	'9' { dash; gap 1; dash; gap 1; dash; gap 1; dash; gap 1; dot; gap 3 }
 	'0' { dash; gap 1; dash; gap 1; dash; gap 1; dash; gap 1; dash; gap 3 }
+	'?' { dot; gap 1; dot; gap 1; dash; gap 1; dash; gap 1; dot; gap 1; dot; gap 3 }
+	'!' { dash; gap 1; dot; gap 1; dash; gap 1; dot; gap 1; dash; gap 1; dash; gap 3 }
+	'.' { dot; gap 1; dash; gap 1; dot; gap 1; dash; gap 1; dot; gap 1; dash; gap 3 }
+	',' { dash; gap 1; dash; gap 1; dot; gap 1; dot; gap 1; dash; gap 1; dash; gap 3 }
+	"'" { dash; gap 1; dot; gap 1; dash; gap 1; dot; gap 1; dash; gap 1; dot; gap 3 }
+	':' { dash; gap 1; dash; gap 1; dash; gap 1; dot; gap 1; dot; gap 1; dot; gap 3 }
+	'+' { dot; gap 1; dash; gap 1; dot; gap 1; dash; gap 1; dot; gap 3 }
+	'-' { dash; gap 1; dot; gap 1; dot; gap 1; dot; gap 1; dot; gap 1; dash; gap 3 }
+	'*' { dash; gap 1; dot; gap 1; dot; gap 1; dash; gap 3 }
+	'÷' { dash; gap 1; dot; gap 1; dot; gap 1; dash; gap 1; dot; gap 3 }
 	default { gap 7 } # medium gap (between words)
 	}
 }
 
 try {
-	if ($text -eq "" ) { [string]$text = read-host "Enter text to write" }
+	if ($text -eq "" ) { [string]$text = Read-Host "Enter text to write" }
 
 	[char[]]$ArrayOfChars = $text.ToUpper()
 	foreach($Char in $ArrayOfChars) {
 		Char2MorseCode $Char 
 	}
-	write-host ""
-	write-host ""
 	exit 0 # success
 } catch {
 	"⚠️ Error in line $($_.InvocationInfo.ScriptLineNumber): $($Error[0])"

@@ -4,7 +4,7 @@ This PowerShell script installs Paint 3D from the Microsoft Store.
 
 ## Parameters
 ```powershell
-install-paint-3d.ps1 [<CommonParameters>]
+/home/mf/Repos/PowerShell/Scripts/install-paint-3d.ps1 [<CommonParameters>]
 
 [<CommonParameters>]
     This script supports the common parameters: Verbose, Debug, ErrorAction, ErrorVariable, WarningAction, 

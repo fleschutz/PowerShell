@@ -4,7 +4,7 @@ This PowerShell script plays an elephant sound.
 
 ## Parameters
 ```powershell
-play-elephant-sound.ps1 [<CommonParameters>]
+/home/mf/Repos/PowerShell/Scripts/play-elephant-sound.ps1 [<CommonParameters>]
 
 [<CommonParameters>]
     This script supports the common parameters: Verbose, Debug, ErrorAction, ErrorVariable, WarningAction, 

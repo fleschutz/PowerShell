@@ -4,7 +4,7 @@ This PowerShell script builds all Git repositories in a folder.
 
 ## Parameters
 ```powershell
-build-repos.ps1 [[-ParentDir] <String>] [<CommonParameters>]
+/home/mf/Repos/PowerShell/Scripts/build-repos.ps1 [[-ParentDir] <String>] [<CommonParameters>]
 
 -ParentDir <String>
     Specifies the path to the parent folder

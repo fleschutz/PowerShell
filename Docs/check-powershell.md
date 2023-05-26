@@ -1,10 +1,10 @@
 ## The *check-powershell.ps1* Script
 
-This PowerShell script queries and lists details of PowerShell.
+This PowerShell script queries the PowerShell status and prints it.
 
 ## Parameters
 ```powershell
-check-powershell.ps1 [<CommonParameters>]
+/home/mf/Repos/PowerShell/Scripts/check-powershell.ps1 [<CommonParameters>]
 
 [<CommonParameters>]
     This script supports the common parameters: Verbose, Debug, ErrorAction, ErrorVariable, WarningAction, 
@@ -14,6 +14,7 @@ check-powershell.ps1 [<CommonParameters>]
 ## Example
 ```powershell
 PS> ./check-powershell
+✅ PowerShell Desktop edition 5.1.19041.2673 (10 modules, 1458 cmdlets, 172 aliases)
 
 ```
 
@@ -27,11 +28,12 @@ https://github.com/fleschutz/PowerShell
 ```powershell
 <#
 .SYNOPSIS
-	Query PowerShell details
+	Check the PowerShell status
 .DESCRIPTION
-	This PowerShell script queries and lists details of PowerShell.
+	This PowerShell script queries the PowerShell status and prints it.
 .EXAMPLE
 	PS> ./check-powershell
+	✅ PowerShell Desktop edition 5.1.19041.2673 (10 modules, 1458 cmdlets, 172 aliases)
 .LINK
 	https://github.com/fleschutz/PowerShell
 .NOTES
@@ -44,10 +46,10 @@ try {
 	$NumModules = (Get-Module).Count
 	$NumAliases = (Get-Alias).Count
 	if ($IsLinux) {
-		"✅ PowerShell $Version ($Edition edition) with $NumModules modules and $NumAliases aliases"
+		"✅ PowerShell $Edition edition $Version ($NumModules modules, $NumAliases aliases)"
 	} else {
 		$NumCmdlets = (Get-Command -Command-Type cmdlet).Count
-		"✅ PowerShell $Version ($Edition edition) with $NumModules modules, $NumCmdlets cmdlets and $NumAliases aliases"
+		"✅ PowerShell $Edition edition $Version ($NumModules modules, $NumCmdlets cmdlets, $NumAliases aliases)"
 	}
 	exit 0 # success
 } catch {

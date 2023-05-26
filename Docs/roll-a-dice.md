@@ -4,7 +4,7 @@ This PowerShell script rolls a dice and returns the number by text-to-speech (TT
 
 ## Parameters
 ```powershell
-roll-a-dice.ps1 [<CommonParameters>]
+/home/mf/Repos/PowerShell/Scripts/roll-a-dice.ps1 [<CommonParameters>]
 
 [<CommonParameters>]
     This script supports the common parameters: Verbose, Debug, ErrorAction, ErrorVariable, WarningAction, 

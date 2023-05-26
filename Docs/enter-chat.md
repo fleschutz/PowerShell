@@ -4,7 +4,7 @@ This PowerShell script enters a chat using a common network shared file.
 
 ## Parameters
 ```powershell
-enter-chat.ps1 [<CommonParameters>]
+/home/mf/Repos/PowerShell/Scripts/enter-chat.ps1 [<CommonParameters>]
 
 [<CommonParameters>]
     This script supports the common parameters: Verbose, Debug, ErrorAction, ErrorVariable, WarningAction, 

@@ -4,7 +4,7 @@ This PowerShell script toggles the Num Lock key state.
 
 ## Parameters
 ```powershell
-toggle-num-lock.ps1 [<CommonParameters>]
+/home/mf/Repos/PowerShell/Scripts/toggle-num-lock.ps1 [<CommonParameters>]
 
 [<CommonParameters>]
     This script supports the common parameters: Verbose, Debug, ErrorAction, ErrorVariable, WarningAction, 

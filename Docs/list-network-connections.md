@@ -4,7 +4,7 @@ This PowerShell script lists all active network connections on the local compute
 
 ## Parameters
 ```powershell
-list-network-connections.ps1 [<CommonParameters>]
+/home/mf/Repos/PowerShell/Scripts/list-network-connections.ps1 [<CommonParameters>]
 
 [<CommonParameters>]
     This script supports the common parameters: Verbose, Debug, ErrorAction, ErrorVariable, WarningAction, 

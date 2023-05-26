@@ -4,7 +4,7 @@ This PowerShell script tries to connect to the VPN.
 
 ## Parameters
 ```powershell
-connect-vpn.ps1 [<CommonParameters>]
+/home/mf/Repos/PowerShell/Scripts/connect-vpn.ps1 [<CommonParameters>]
 
 [<CommonParameters>]
     This script supports the common parameters: Verbose, Debug, ErrorAction, ErrorVariable, WarningAction, 

@@ -5,7 +5,7 @@ to a CSV table for analysis (use query-smart-data.ps1 to generate those JSON fil
 
 ## Parameters
 ```powershell
-smart-data2csv.ps1 [[-Directory] <String>] [<CommonParameters>]
+/home/mf/Repos/PowerShell/Scripts/smart-data2csv.ps1 [[-Directory] <String>] [<CommonParameters>]
 
 -Directory <String>
     Specifies the path to the directory

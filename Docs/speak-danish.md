@@ -4,7 +4,7 @@ This PowerShell script speaks the given text with a Danish text-to-speech (TTS) 
 
 ## Parameters
 ```powershell
-speak-danish.ps1 [[-text] <String>] [<CommonParameters>]
+/home/mf/Repos/PowerShell/Scripts/speak-danish.ps1 [[-text] <String>] [<CommonParameters>]
 
 -text <String>
     Specifies the text to speak

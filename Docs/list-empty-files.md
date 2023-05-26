@@ -4,7 +4,7 @@ This PowerShell script scans and lists all empty files within the given director
 
 ## Parameters
 ```powershell
-list-empty-files.ps1 [[-DirTree] <String>] [<CommonParameters>]
+/home/mf/Repos/PowerShell/Scripts/list-empty-files.ps1 [[-DirTree] <String>] [<CommonParameters>]
 
 -DirTree <String>
     Specifies the path to the directory tree

@@ -4,7 +4,7 @@ Lists calendar elements, either a single month or an entire year.
 
 ## Parameters
 ```powershell
-list-calendar.ps1 [[-Month] <Int32>] [[-Year] <Int32>] [<CommonParameters>]
+/home/mf/Repos/PowerShell/Scripts/list-calendar.ps1 [[-Month] <Int32>] [[-Year] <Int32>] [<CommonParameters>]
 
 -Month <Int32>
     If specified, will limit output to a single month with this numeral value.

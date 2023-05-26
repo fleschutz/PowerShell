@@ -4,7 +4,7 @@ This PowerShell script checks the time until Easter Sunday and replies by text-t
 
 ## Parameters
 ```powershell
-check-easter-sunday.ps1 [<CommonParameters>]
+/home/mf/Repos/PowerShell/Scripts/check-easter-sunday.ps1 [<CommonParameters>]
 
 [<CommonParameters>]
     This script supports the common parameters: Verbose, Debug, ErrorAction, ErrorVariable, WarningAction, 

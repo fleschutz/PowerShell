@@ -4,7 +4,7 @@ This script launches the Web browser with the Stack Overflow website.
 
 ## Parameters
 ```powershell
-open-stack-overflow.ps1 [<CommonParameters>]
+/home/mf/Repos/PowerShell/Scripts/open-stack-overflow.ps1 [<CommonParameters>]
 
 [<CommonParameters>]
     This script supports the common parameters: Verbose, Debug, ErrorAction, ErrorVariable, WarningAction, 

@@ -4,7 +4,7 @@ This script publishes the given files and folders to IPFS.
 
 ## Parameters
 ```powershell
-publish-to-ipfs.ps1 [[-FilePattern] <String>] [[-HashList] <String>] [[-DF_Hashes] <String>] [<CommonParameters>]
+/home/mf/Repos/PowerShell/Scripts/publish-to-ipfs.ps1 [[-FilePattern] <String>] [[-HashList] <String>] [[-DF_Hashes] <String>] [<CommonParameters>]
 
 -FilePattern <String>
     Specifies the file pattern

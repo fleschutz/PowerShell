@@ -4,7 +4,7 @@ This PowerShell script lists the emails in the inbox of Outlook.
 
 ## Parameters
 ```powershell
-list-outlook-inbox.ps1 [<CommonParameters>]
+/home/mf/Repos/PowerShell/Scripts/list-outlook-inbox.ps1 [<CommonParameters>]
 
 [<CommonParameters>]
     This script supports the common parameters: Verbose, Debug, ErrorAction, ErrorVariable, WarningAction, 

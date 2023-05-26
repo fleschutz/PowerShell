@@ -4,7 +4,7 @@ This PowerShell script checks the given XML file for validity.
 
 ## Parameters
 ```powershell
-check-xml-file.ps1 [[-file] <String>] [<CommonParameters>]
+/home/mf/Repos/PowerShell/Scripts/check-xml-file.ps1 [[-file] <String>] [<CommonParameters>]
 
 -file <String>
     Specifies the path to the XML file to check

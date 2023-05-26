@@ -1,13 +1,13 @@
 ## The *what-is.ps1* Script
 
-This PowerShell script prints a description of the given abbreviation.
+This PowerShell script queries the description of the given abbreviation and prints it.
 
 ## Parameters
 ```powershell
-what-is.ps1 [[-abbreviation] <String>] [<CommonParameters>]
+/home/mf/Repos/PowerShell/Scripts/what-is.ps1 [[-abbr] <String>] [<CommonParameters>]
 
--abbreviation <String>
-    Specifies the appreviation to look for
+-abbr <String>
+    Specifies the abbreviation to look for
     
     Required?                    false
     Position?                    1
@@ -36,11 +36,11 @@ https://github.com/fleschutz/PowerShell
 ```powershell
 <#
 .SYNOPSIS
-	Prints a description of an abbreviation
+	Explains an abbreviation
 .DESCRIPTION
-	This PowerShell script prints a description of the given abbreviation.
-.PARAMETER abbreviation
-	Specifies the appreviation to look for
+	This PowerShell script queries the description of the given abbreviation and prints it.
+.PARAMETER abbr
+	Specifies the abbreviation to look for
 .EXAMPLE
 	PS> ./what-is IAS
 .LINK
@@ -49,30 +49,24 @@ https://github.com/fleschutz/PowerShell
 	Author: Markus Fleschutz | License: CC0
 #>
 
-param([string]$abbreviation = "")
-
-function Reply { param([string]$Text)
-	& "$PSScriptRoot/speak-english.ps1" "$Text"
-}
+param([string]$abbr = "")
 
 try {
-	if ($abbreviation -eq "" ) { $abbreviation = read-host "Enter the abbreviation" }
+	if ($abbr -eq "" ) { $abbr = Read-Host "Enter the abbreviation" }
 
-	$FoundOne = $false
-	$Files = (get-childItem "$PSScriptRoot/../Data/Abbr/*.csv")
-
-	foreach ($File in $Files) {
-		$Table = import-csv "$File"
+	$Files = (Get-ChildItem "$PSScriptRoot/../Data/Abbr/*.csv")
+	[int]$Matches = 0
+	foreach($File in $Files) {
+		$Table = Import-CSV "$File"
 		foreach($Row in $Table) {
-			if ($Row.Abbr -eq $abbreviation) {
-				$Basename = (get-item "$File").Basename
-				Reply "In $Basename $($Row.Abbr) may refer to $($Row.Term)"
-				$FoundOne = $true
+			if ($Row.ABBR -eq $abbr) {
+				$Basename = (Get-Item "$File").Basename -Replace "_"," "
+				"💡 $($Row.ABBR) in $Basename refers to: $($Row.TERM)"
+				$Matches++
 			}
 		}
 	}
-
-	if ($FoundOne -eq $false) { Reply "Sorry, no database entry found." }
+	if ($Matches -eq 0) { "Sorry, '$abbr' is missing in the database." }
 	exit 0 # success
 } catch {
 	"⚠️ Error in line $($_.InvocationInfo.ScriptLineNumber): $($Error[0])"

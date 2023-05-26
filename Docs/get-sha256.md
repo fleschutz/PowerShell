@@ -1,15 +1,36 @@
 ## The *get-sha256.ps1* Script
 
-
+This PowerShell script calculates and prints the SHA256 checksum of the given file.
 
 ## Parameters
 ```powershell
+/home/mf/Repos/PowerShell/Scripts/get-sha256.ps1 [[-file] <String>] [<CommonParameters>]
 
+-file <String>
+    Specifies the path to the file
+    
+    Required?                    false
+    Position?                    1
+    Default value                
+    Accept pipeline input?       false
+    Accept wildcard characters?  false
 
 [<CommonParameters>]
     This script supports the common parameters: Verbose, Debug, ErrorAction, ErrorVariable, WarningAction, 
     WarningVariable, OutBuffer, PipelineVariable, and OutVariable.
 ```
+
+## Example
+```powershell
+PS> ./get-sha256 C:\MyFile.txt
+
+```
+
+## Notes
+Author: Markus Fleschutz | License: CC0
+
+## Related Links
+https://github.com/fleschutz/PowerShell
 
 ## Source Code
 ```powershell
@@ -35,7 +56,7 @@ try {
 
 	$Result = get-filehash $file -algorithm SHA256
 
-	"✔️ SHA256 hash is:" $Result.Hash
+	"✔️ SHA256 hash is: $($Result.Hash)"
 	exit 0 # success
 } catch {
 	"⚠️ Error in line $($_.InvocationInfo.ScriptLineNumber): $($Error[0])"

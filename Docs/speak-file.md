@@ -4,7 +4,7 @@ This PowerShell script speaks the content of the given text file by text-to-spee
 
 ## Parameters
 ```powershell
-speak-file.ps1 [[-File] <String>] [<CommonParameters>]
+/home/mf/Repos/PowerShell/Scripts/speak-file.ps1 [[-File] <String>] [<CommonParameters>]
 
 -File <String>
     Specifies the path to the text file

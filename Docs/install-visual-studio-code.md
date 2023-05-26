@@ -4,7 +4,7 @@ This PowerShell script installs Visual Studio Code.
 
 ## Parameters
 ```powershell
-install-visual-studio-code.ps1 [<CommonParameters>]
+/home/mf/Repos/PowerShell/Scripts/install-visual-studio-code.ps1 [<CommonParameters>]
 
 [<CommonParameters>]
     This script supports the common parameters: Verbose, Debug, ErrorAction, ErrorVariable, WarningAction, 

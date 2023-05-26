@@ -4,7 +4,7 @@ This PowerShell script checks the time until Indepence Day and replies by text-t
 
 ## Parameters
 ```powershell
-check-independence-day.ps1 [<CommonParameters>]
+/home/mf/Repos/PowerShell/Scripts/check-independence-day.ps1 [<CommonParameters>]
 
 [<CommonParameters>]
     This script supports the common parameters: Verbose, Debug, ErrorAction, ErrorVariable, WarningAction, 

@@ -4,7 +4,7 @@ This PowerShell script changes the working directory to one directory level up.
 
 ## Parameters
 ```powershell
-cd-up.ps1 [<CommonParameters>]
+/home/mf/Repos/PowerShell/Scripts/cd-up.ps1 [<CommonParameters>]
 
 [<CommonParameters>]
     This script supports the common parameters: Verbose, Debug, ErrorAction, ErrorVariable, WarningAction, 

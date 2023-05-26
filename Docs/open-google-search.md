@@ -4,7 +4,7 @@ This PowerShell script launches the Web browser with the Google Search website.
 
 ## Parameters
 ```powershell
-open-google-search.ps1 [<CommonParameters>]
+/home/mf/Repos/PowerShell/Scripts/open-google-search.ps1 [<CommonParameters>]
 
 [<CommonParameters>]
     This script supports the common parameters: Verbose, Debug, ErrorAction, ErrorVariable, WarningAction, 

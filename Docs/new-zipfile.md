@@ -4,7 +4,7 @@ This PowerShell script creates a new .ZIP file from a folder (including subfolde
 
 ## Parameters
 ```powershell
-new-zipfile.ps1 [[-folder] <String>] [<CommonParameters>]
+/home/mf/Repos/PowerShell/Scripts/new-zipfile.ps1 [[-folder] <String>] [<CommonParameters>]
 
 -folder <String>
     Specifies the path to the folder

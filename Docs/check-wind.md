@@ -4,7 +4,7 @@ This PowerShell script determines the current wind conditions and replies by tex
 
 ## Parameters
 ```powershell
-check-wind.ps1 [[-location] <String>] [<CommonParameters>]
+/home/mf/Repos/PowerShell/Scripts/check-wind.ps1 [[-location] <String>] [<CommonParameters>]
 
 -location <String>
     Specifies the location to use (determined automatically per default)

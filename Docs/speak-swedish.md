@@ -4,7 +4,7 @@ This PowerShell script speaks the given text with a Swedish text-to-speech (TTS)
 
 ## Parameters
 ```powershell
-speak-swedish.ps1 [[-text] <String>] [<CommonParameters>]
+/home/mf/Repos/PowerShell/Scripts/speak-swedish.ps1 [[-text] <String>] [<CommonParameters>]
 
 -text <String>
     Specifies the text to speak

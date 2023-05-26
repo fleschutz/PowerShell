@@ -4,7 +4,7 @@ This PowerShell script lists the user groups on the local computer.
 
 ## Parameters
 ```powershell
-list-user-groups.ps1 [<CommonParameters>]
+/home/mf/Repos/PowerShell/Scripts/list-user-groups.ps1 [<CommonParameters>]
 
 [<CommonParameters>]
     This script supports the common parameters: Verbose, Debug, ErrorAction, ErrorVariable, WarningAction, 

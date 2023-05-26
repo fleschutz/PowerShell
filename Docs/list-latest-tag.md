@@ -4,7 +4,7 @@ This PowerShell script lists the latest tag on the current branch in a Git repos
 
 ## Parameters
 ```powershell
-list-latest-tag.ps1 [[-RepoDir] <String>] [<CommonParameters>]
+/home/mf/Repos/PowerShell/Scripts/list-latest-tag.ps1 [[-RepoDir] <String>] [<CommonParameters>]
 
 -RepoDir <String>
     Specifies the path to the repository

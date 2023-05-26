@@ -4,7 +4,7 @@ This script launches the Microsoft Store application.
 
 ## Parameters
 ```powershell
-open-microsoft-store.ps1 [<CommonParameters>]
+/home/mf/Repos/PowerShell/Scripts/open-microsoft-store.ps1 [<CommonParameters>]
 
 [<CommonParameters>]
     This script supports the common parameters: Verbose, Debug, ErrorAction, ErrorVariable, WarningAction, 
