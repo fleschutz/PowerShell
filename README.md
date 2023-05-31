@@ -1,7 +1,7 @@
 Mega Collection of PowerShell Scripts
 -------------------------------------
 
-**It provides 500+ useful cross-platform PowerShell scripts in the [📂Scripts](Scripts/) subfolder - for command-line interface (CLI) usage, for remote control (via SSH), by context menu, by voice (e.g. [talk2windows](https://github.com/fleschutz/talk2windows)), by automation software (e.g. [Jenkins](https://www.jenkins.io/)), automatically on login/logoff/daily/etc., or simply to learn PowerShell.**
+**It provides 500+ useful cross-platform PowerShell scripts located in the [📂Scripts](Scripts/) subfolder - for command-line interface (CLI) usage, for remote control (e.g. SSH), for automation software (e.g. [Jenkins](https://www.jenkins.io/)), for context menus, for voice commands (e.g. [talk2windows](https://github.com/fleschutz/talk2windows)), automatically on startup/login/logoff/daily/shutdown/etc., or simply to learn PowerShell.**
 
 **[Download](https://github.com/fleschutz/PowerShell/releases) | [FAQ](Docs/FAQ.md)** | **Note:** the scripts support Unicode - a modern console is recommended (e.g. *Windows Terminal*)
 
@@ -86,7 +86,7 @@ Mega Collection of PowerShell Scripts
 | [remove-print-jobs.ps1](Scripts/remove-print-jobs.ps1) | Removes all jobs from all printers. [Read more...](Docs/remove-print-jobs.md)                   |
 | [restart-network-adapters.ps1](Scripts/restart-network-adapters.ps1) | Restarts all local network adapters. [Read more...](Docs/restart-network-adapters.md)|
 | [upgrade-ubuntu.ps1](Scripts/upgrade-ubuntu.ps1)     | Upgrades Ubuntu Linux to the latest (LTS) release. [Read more...](Docs/upgrade-ubuntu.md)         |
-| [wake-up.ps1](Scripts/wake-up.ps1)                   | Wakes up a computer using Wake-on-LAN [Read more...](Docs/wakeup.md)                              |
+| [wake-up.ps1](Scripts/wake-up.ps1)                   | Wakes up a computer using Wake-on-LAN. [Read more...](Docs/wakeup.md)                             |
 
 💻 Scripts for the Desktop
 ---------------------------
