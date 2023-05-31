@@ -40,7 +40,6 @@ NOTE: the group policy object (GPO) settings of your organization might disallow
 <details><summary>How to get the PowerShell scripts?</summary>
  
 * When using **Git**, execute in a terminal window: `> git clone https://github.com/fleschutz/PowerShell`
-* When using **Chocolatey**, execute in *Windows PowerShell (Administrator)*: `> choco install powershell-scripts --version=0.4`
 * **Otherwise,** download and unzip it from: https://github.com/fleschutz/PowerShell/archive/master.zip
 </details>
 
