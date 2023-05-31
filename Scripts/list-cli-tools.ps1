@@ -122,6 +122,7 @@ function ListTools {
 	ListTool dism		""
 	ListTool dmidecode	"--version"
 	ListTool dos2unix	"--version"
+	ListTool dotnet         "--info"
 	ListTool driverquery	""
 	ListTool du		"--version"
 	ListTool echo		"--version"
