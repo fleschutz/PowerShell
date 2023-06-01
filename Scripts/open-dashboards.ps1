@@ -2,9 +2,12 @@
 .SYNOPSIS
 	Open dashboards
 .DESCRIPTION
-	This PowerShell script launches the Web browser with some dashboard websites.
+	This PowerShell script launches the Web browser with tabs of some dashboard websites.
 .EXAMPLE
 	PS> ./open-dashboards
+	⏳ (1/2) Loading Data/popular-dashboards.csv...
+	⏳ (2/2) Launching Web browser with tabs of dashboard websites...
+	...
 .LINK
 	https://github.com/fleschutz/PowerShell
 .NOTES
@@ -16,7 +19,7 @@ try {
 	Write-Host "⏳ (1/2) Loading Data/popular-dashboards.csv..."
 	$Table = Import-CSV "$PSScriptRoot/../Data/popular-dashboards.csv"
 	$NumRows = $Table.Length
-	Write-Host "⏳ (2/2) Launching Web browser with dashboards...   " -noNewLine
+	Write-Host "⏳ (2/2) Launching Web browser with tabs of dashboard websites...   "
 	foreach($Row in $Table) {
 		$Name = $Row.NAME
 		$URL = $Row.URL
