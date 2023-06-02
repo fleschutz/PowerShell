@@ -262,7 +262,7 @@ function ListTools {
 	ListTool tee		"--version"
 	ListTool time		""
 	ListTool timeout	""
-	ListTool top		"-v"
+	ListTool top		"--version"
 	ListTool tskill		""
 	ListTool typeperf	""
 	ListTool tzsync		"--version"
