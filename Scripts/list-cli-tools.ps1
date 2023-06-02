@@ -272,7 +272,7 @@ function ListTools {
 	ListTool vulkaninfo	"--version"
 	ListTool w32tm		"/?"
 	ListTool waitfor	"--version"
-	ListTool wakeonlan	""
+	ListTool wakeonlan	"-v"
 	ListTool wget		"--version"
 	ListTool where		"--version"
 	ListTool whatis		"--version"
