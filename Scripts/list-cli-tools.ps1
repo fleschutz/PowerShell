@@ -16,9 +16,9 @@
 	Author: Markus Fleschutz | License: CC0
 #>
 
-function ListTool { param([string]$Cmd, [string]$VersionArg)
+function ListTool { param([string]$Name, [string]$VersionArg)
 	try {
-		$Info = Get-Command $Cmd -ErrorAction Stop
+		$Info = Get-Command $Name -ErrorAction Stop
 		$Path = $Info.Source
 		if ("$($Info.Version)" -eq "0.0.0.0") {
 			if ("$VersionArg" -ne "") {
@@ -37,11 +37,11 @@ function ListTool { param([string]$Cmd, [string]$VersionArg)
 			$Version = $Info.Version
 		}
 		if (Test-Path "$Path" -pathType leaf) {
-			$FileSize = (Get-Item "$Path").Length
+			$Size = (Get-Item "$Path").Length
 		} else {
-			$FileSize = "0"
+			$Size = 0
 		}
-		New-Object PSObject -Property @{ Tool=$Cmd; Version=$Version; Path=$Path; FileSize=$FileSize }
+		New-Object PSObject -Property @{ Tool=$Name; Version=$Version; Path=$Path; FileSize=$Size }
 	} catch {
 		return
 	}
