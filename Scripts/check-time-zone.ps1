@@ -16,8 +16,8 @@ try {
 	[system.threading.thread]::currentThread.currentCulture = [system.globalization.cultureInfo]"en-US"
 	$Time = $((Get-Date).ToShortTimeString())
 	$TZ = (Get-Timezone)
-	if ($TZ.SupportsDaylightSavingTime) { $DST="+ 01:00:00 daylight saving time" } else { $DST="" }
-	Write-Host "✅ $Time (UTC + $($TZ.BaseUtcOffset) $($TZ.Id) $DST)"
+	if ($TZ.SupportsDaylightSavingTime) { $DST=", DST+1h" } else { $DST="" }
+	Write-Host "✅ $Time $($TZ.Id) time (TZ+$($TZ.BaseUtcOffset)$($DST))"
 	exit 0 # success
 } catch {
 	"⚠️ Error in line $($_.InvocationInfo.ScriptLineNumber): $($Error[0])"
