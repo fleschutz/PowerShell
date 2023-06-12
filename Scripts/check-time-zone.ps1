@@ -5,7 +5,7 @@
 	This PowerShell script queries the time zone and prints it.
 .EXAMPLE
 	PS> ./check-time-zone
-	✅ 11:13 AM (UTC + 01:00:00 W. Europe Standard Time + 01:00:00 daylight saving time)
+	✅ 11:13 AM W. Europe Summer Time (UTC+01:00) Amsterdam, Berlin, Bern, Rome, Stockholm, Vienna (+01:00 DST)
 .LINK
 	https://github.com/fleschutz/PowerShell
 .NOTES
@@ -16,8 +16,14 @@ try {
 	[system.threading.thread]::currentThread.currentCulture = [system.globalization.cultureInfo]"en-US"
 	$Time = $((Get-Date).ToShortTimeString())
 	$TZ = (Get-Timezone)
-	if ($TZ.SupportsDaylightSavingTime) { $DST=", DST+1h" } else { $DST="" }
-	Write-Host "✅ $Time @ $($TZ.Id) (TZ+$($TZ.BaseUtcOffset)$($DST))"
+	if ($TZ.SupportsDaylightSavingTime) {
+		$TZName = $TZ.DaylightName
+		$DST=" (+01:00 DST)"
+	} else {
+		$TZName = $TZ.StandardName
+		$DST=""
+	}
+	Write-Host "✅ $Time $TZName $($TZ.DisplayName)$($DST)"
 	exit 0 # success
 } catch {
 	"⚠️ Error in line $($_.InvocationInfo.ScriptLineNumber): $($Error[0])"
