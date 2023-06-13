@@ -481,15 +481,16 @@ TWR,Control Tower or Thrust to Weight Ratio
 TWY,Taxiway
 TXC,Taxiway Centreline Lights
 TXE,Taxiway Edge Lights
-UAA,University of Alaska Anchorage
+UA,Unmanned Aircraft
 UAC,Upper Area Control Centre
 UAS,Unmanned Aircraft Systems
 UAT,Universal Access Transceiver
 UAV,Unmanned Aerial Vehicle
+UCAV,Unmanned Combat Aerial Vehicle
 UDF,Ultra High Frequency Direction Finding
 UEI,"Units, Equipment, Installations"
 UFA,"UFA, Inc., the world's premier developer of Air Traffic Control simulation systems"
-UHF,Ultra High Frequency
+UHF,Ultra High Frequency (300MHz to 3 GHz)
 UIR,Upper Flight Information Region
 UKCAA,United Kingdom Civil Aviation Authority
 UMASS,University of Massachusetts
@@ -509,7 +510,7 @@ VDL-4,VHF digital link Mode 4 (see also STDMA)
 VDU,Visual Display Unit
 VFOW,Vertical Field of View
 VFR,Visual Flight Rules
-VHF,Very High Frequency
+VHF,Very High Frequency (3 to 300MHz)
 VLF,Very Low Frequency
 VMC,Visual Meteorological Conditions
 VMO,maximum operation speed is the air speed than should never be exceeded deliberately in normal operation, whatever the flight situation isVOR,VHF Omni-directional Range
