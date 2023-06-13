@@ -2,7 +2,7 @@
 .SYNOPSIS
 	Check for pending reboots
 .DESCRIPTION
-	This PowerShell script queries pending reboots and prints it.
+	This PowerShell script queries pending operating system reboots and prints it.
 .EXAMPLE
 	./check-pending-reboot.ps1
 .LINK
@@ -28,19 +28,19 @@ try {
 		}
 	} else {
 		if (Test-Path -Path "HKLM:\SOFTWARE\Microsoft\Windows\CurrentVersion\WindowsUpdate\Auto Update\RebootRequired") {
-			$Reason += ", '...\WindowsUpdate\Auto Update\RebootRequired'"
+			$Reason += ", ...\Auto Update\RebootRequired"
 		}
 		if (Test-Path -Path "HKLM:\SOFTWARE\Microsoft\Windows\CurrentVersion\WindowsUpdate\Auto Update\PostRebootReporting") {
-			$Reason += ", '...\WindowsUpdate\Auto Update\PostRebootReporting'"
+			$Reason += ", ...\Auto Update\PostRebootReporting"
 		}
 		if (Test-Path -Path "HKLM:\SOFTWARE\Microsoft\Windows\CurrentVersion\Component Based Servicing\RebootPending") {
-			$Reason += ", '...\Component Based Servicing\RebootPending'"
+			$Reason += ", ...\Component Based Servicing\RebootPending"
 		}
 		if (Test-Path -Path "HKLM:\SOFTWARE\Microsoft\ServerManager\CurrentRebootAttempts") {
-			$Reason += ", '...\ServerManager\CurrentRebootAttempts'"
+			$Reason += ", ...\ServerManager\CurrentRebootAttempts"
 		}
 		if (Test-RegistryValue -Path "HKLM:\Software\Microsoft\Windows\CurrentVersion\Component Based Servicing" -Value "RebootInProgress") {
-			$Reason += ", '...\CurrentVersion\Component Based Servicing' with 'RebootInProgress'"
+			$Reason += ", ...\CurrentVersion\Component Based Servicing with 'RebootInProgress'"
 		}
 		if (Test-RegistryValue -Path "HKLM:\Software\Microsoft\Windows\CurrentVersion\Component Based Servicing" -Value "PackagesPending") {
 			$Reason += ", '...\CurrentVersion\Component Based Servicing' with 'PackagesPending'"
@@ -59,7 +59,7 @@ try {
 		}
 	}
 	if ($Reason -ne "") {
-		Write-Host "⚠️ Pending reboot (found $($Reason.substring(2)) in registry)"
+		Write-Host "⚠️ Pending reboot (registry contains $($Reason.substring(2)))"
 	} else {
 		Write-Host "✅ No pending reboot"
 	}
