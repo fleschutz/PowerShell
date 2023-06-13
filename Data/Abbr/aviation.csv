@@ -30,7 +30,7 @@ AAMS,Aircraft Arrival Management System
 AARTS,Army Aviation Radar Training System
 AAO,Assumed Adverse Obstacle
 AAS,Airport Advisory Service
-AB,Air Base
+AB,"Air Base, Afterburner"
 ABI,Advanced Boundary Information
 AC,Air Conditioning
 AC,Aircraft
@@ -62,6 +62,7 @@ AERA,Automated En-Route Air Traffic Control
 AEW,Airborne Early Warning
 AF,Air Field
 AFCS,Automatic Flight Control System
+AFI,Air Force Instruction
 AFIS,Aerodrome Flight Information Service
 AFTN,Aeronautical Fixed Telecommunication Network
 AFM,Aircraft Flight Manual
@@ -90,6 +91,7 @@ ALSF1,ALS with Sequenced Flashers I
 ALSF2,ALS with Sequenced Flashers II
 ALSIP,Approach Lighting System Improvement Plan
 ALTRV,Altitude Reservation
+AM,Airfield Management
 AMAN,Arrival Manager
 AMASS,Airport Movement Area Safety System
 AMCC,Air Route Traffic Control Center Maintenance Control Center
@@ -107,8 +109,8 @@ ANG,Air National Guard
 ANGB,Air National Guard Base
 ANMS,Automated Network Monitoring System
 ANSP,Air Navigation Service Provider
-AOA,Air Operations Area
-AOA,Angle of Attack
+AOA,"Angle of Attack, Air Operations Area, Airport Operating Area"
+AOB,Airfield Operations Board
 AOC,Airline Operational Control Center
 AOCC,Atlantic Operations Control Center
 AODR,Authorizing Official Designated Representative
@@ -133,18 +135,24 @@ ARTCC,Air Route Traffic Control Centre
 ASB,Airspace Block
 ASDE,Airport Surface Detection Equipment
 ASDE-X,"Airport Surface Detection Equipment, model X"
+ASOS,Automated Surface Observation System
+ASR,Airport Surveillance Radar
 ATA,Actual Time of Arrival
 ATC,Air Traffic Control
+ATCALS,Air Traffic Control and Landing Systems
 ATIS,Automatic Terminal Information Service
+ATM,Air Traffic Manager
 ATO,Air Traffic Organization
 AWACS,Airborne Warning And Control System
 BC,Back Course
 BAF,Belgian Air Force
+BASH,Bird/Wildlife Aircraft Strike Hazard
+BDOC,Base Defense Operations Center
 BIRTAM,NOTAM on Bird Activity
 BIT,Build-In Test
 BITE,Build-In Test Equipment
 BRNAV,Basic Area Navigation
-BWI,Baltimore/Washington International Thurgood Marshall Airport
+BWC,Bird Watch Condition
 C2,Command and Control
 C3,"Communication, Command and Control"
 C4I,"Communication, Command, Control, Computers and Intelligence"
@@ -161,8 +169,10 @@ CAT,Category of Aircraft
 CATC,Civil Air Traffic Control
 CAVOK,Clouds And Visibility OK
 CBT,Computer-based Training
+CC,Commander
 CCBC,Community College Baltimore County
 CCIS,Closed Circuit Information System
+CCTLR,Chief Controller
 CDA,Continuous Descent Approach
 CDI,Course Deviation Indicator
 CDM,Collaborative Decision Making
@@ -172,13 +182,14 @@ CEATS,Central European Air Traffic Services
 CESC,Chief Executive Standing Conference
 CFIT,Controlled Flight Into Terrain
 CFMU,Central Flow Management Unit
+CFR,Code of Federal Regulations
 COG,Center of Gravity
 CON,Control
 CGD,Combined Graphic Display
 CISM,Critical Incident Stress Management
 CLC,Course Line Computer
 CLNC,Clearance
-CRDA,Converging Runway Display Aid
+CMA,Controlled Movement Area
 CMIC,Civil/Military Interface Standing Committee
 CNS,"Communication, Navigation, Surveillance"
 CODA,Central Office for Delay Analysis
@@ -188,12 +199,15 @@ CORA,Conflict Resolution Advisory
 COTS,Commercial Of-The-Shelf
 CPA,Closest Point of Approach
 CPDLC,Controller Pilot Data Link Communication
+CPI,Crash Position Indicator
 CRC,Control and Reporting Centre
+CRDA,Converging Runway Display Aid
 CREDOS,Crosswind Reduced Separations for Departure Operations
-CTA,Controlled Area
-CTA,Controlled Time of Arrival
+CTA,"Controlled Area, Controlled Time of Arrival"
+CTAF,Common Traffic Advisory Frequency
 CTOT,Calculated Take-Off Time
 CTR,Control Zone or Controlled Traffic Region
+CV,Vice Commander
 CVFR,Controlled Visual Flight Rule (flight)
 CVSM,Conventional Vertical Separation Minimum
 CW,Continous Wave
@@ -207,15 +221,18 @@ DECIDE,"Detect, Estimate, Choose, Identify, Do, and Evaluate"
 DEL,Delivery
 DFS,Deutsche Flugsicherung (ATC in Germany)
 DGAC,Direction Générale de l'Aviation Civile
+DLA,Defense Logistics Agency
 DSNA,Direction des Services de la Navigation Aérienne 
 DTI,Direction Technique Innovation
 DW,Downwind
 EAS,Equivalent Airspeed
 EAVA,Estonian Aviation Academy
 ECAC,European Civil Aviation Conference
-ELEV,Field Elevation
+ECP,Entry Control Point
 EFM,Gesellschaft für Enteisen und Flugzeugschleppen
-ETA,Estimated Time of Arrival
+ELEV,Field Elevation
+ELT,Emergency Locator Transmitter
+ETA,"Estimated Time of Arrival, East Transition Area"
 ETL,Effective Translational Lift (for helicopters)
 ETOPS,Extended-range Twin-engine Operational Performance Standards
 ETVS,Electronic Terminal Voice Switch
@@ -229,6 +246,7 @@ FAT,Final Approach Track
 FATO,Final Approach and Take-off Area
 FAWP,Final Approach Waypoint
 FAWS,Flight Advisory Weather Service
+FBO,Fixed-Base Operator
 FBW,Fly-by-Wire
 FCA,Final Cruise Altitude
 FCC,Federal Communications Commission (USA)
@@ -245,9 +263,11 @@ FE,Field Elevation (highest point of an airport’s usable runways and is measur
 FIA,Flight Information Area
 FIR,Flight Information Region
 FL,Flight Level
+FLIP,Flight Information Publication
 FMG,Flughafen München GmbH
 FOD,Foreign Object Debris
 FOV,Field of View
+GA,General Aviation
 GND,Ground
 GP,Glide Path
 GPS,Global Positioning System
@@ -259,6 +279,7 @@ IAF,Israeli Air Force
 IANS,Institute of Air Navigation Services, a division of Eurocontrol
 IAS,Indicated airspeed
 IATA,International Air Transport Association, HQ in Montreal, Canada
+IFE,In-flight Emergency
 IFR,Instrument Flight Rules
 IG,Image Generator
 IGE,In Ground Effect
@@ -267,6 +288,9 @@ ILS,Instrument Landing System
 ISA,International Standard Atmosphere
 IMC,Instrument Meteorological Conditions
 KAT,Kaufbeuren ATM Training (DFS subcompany)
+KCAS,Calibrated AirSpeed in Knots
+KIAS,Indicated Airspeed in Knots
+KTAS,True AirSpeed in Knots
 LAA,Lappland Aviation Academy
 LITAS,Low Intensity Two Colour Approach System 
 LL,Lower Limit
@@ -280,12 +304,19 @@ MEA,Minimum En-route Altitude
 METAR,Meteorological Aerodrome Report
 MCP,Maximum Continuous Power
 MLW,Maximum Landing Weight
+MSA,Minimum Safe Altitude
 MSL,Median Sea Level
 MSTA,Minimum Safe Turning Altitude
 MTOW,Maximum Take-Off Weight
 NATCA,National Air Traffic Controllers Association
+NAVAIDS,Navigational Aids
+NCOIC,Non-Commissioned Officer in Charge
+NGA,National Geospatial Intelligence Agency
+NIMA,National Imagery Mapping Agency
 NLFS,Night Low Flying System
+NORDO,No Radio
 NOTAM,Notice to Airmen or Notice to Air Missions
+OCS,Obstacle Clearance Surfaces
 OCTA,Outside Control Areas
 OEI,One Engine Inoperative
 OGE,Out of Ground Effect
@@ -295,10 +326,13 @@ OODA,"Observation, Orientation, Decision, and Action"
 PA,Pressure Altitude
 PAPI,Precision Approach Path Indicator
 PAR,Precision Approach Radar
+PCAS,Primary Crash Alarm System
 PIC,Pilot in Command
 PNF,Pilot Not Flying 
 POH,Pilot's Operating Handbook
 PPL,Private Pilot's License
+PMI,Preventative Maintenance Inspection
+POFZ,Precision Obstacle Free Zone
 PTAC,"Position, Turn, Altitude, Clearance (also known as Approach Clearance)"
 PtF,Permit to Fly
 QFE,"the altimeter setting that will cause the altimeter to read the height above a specific aerodrome or ground level, and therefore read zero on landing"
@@ -307,6 +341,7 @@ QNH,atmospheric pressure adjusted to mean sea level
 RADAR,Radio Detection And Ranging
 RADNET,Radar Network
 RAIM,Receiver Autonomous Integrity Monitoring (GPS)
+RAPCON,Radar Approach Control
 RAT,Reliability Acceptance Test (see also FAT and SAT)
 RAM,Radar Absorbent Material
 RAP,Recognised Air Picture
@@ -317,6 +352,7 @@ RBAF,Royal Belgium Armed Forces
 RCAF,Royal Canadian Air Force
 RCC,Rescue Co-ordination Centre
 RCL,Runway Centre Line Lighting
+RCR,Runway Condition Reading
 RCS,Radar Cross Section
 RET,Rapid Exit Taxiways
 RF,Radio Frequency
@@ -335,6 +371,10 @@ ROC,Rate Of Climb
 ROC,Required Obstacle Clearance
 RPM,Revolutions Per Minute
 RPS,Radar Position Symbol
+RSA,Runway Safety Area
+RSC,Runway Surface Condition
+RSI,Remote Status Indicato
+RSRS,Reduced Same Runway Separation
 RTCA,Radio Technical Commission for Aeronautics
 RVR,Runway Visual Range
 RVSM,Reduced Vertical Separation Minimum
@@ -350,6 +390,7 @@ SATCO,Senior Air Traffic Control Officer
 SATCOM,Satellite Communication
 SATNAV,Satellite Navigation
 SATSE,State Air Traffic Services Enterprise
+SCN,Secondary Crash Net
 SDD,Situation Data Display
 SELCAL,Selective Calling System
 SES,Single European Sky
@@ -371,6 +412,7 @@ SLC,Side lobe Cancellation
 SLOC,Slovenia Control
 SM,Statute Mile
 SMR,Surface Movement Radar
+SOF,Supervisor of Flying
 SOW,Statement of Work
 SRC,Safety Regulation Commission (EUROCONTROL)
 SRU,Safety Regulation Unit (EUROCONTROL)
@@ -441,6 +483,7 @@ TXC,Taxiway Centreline Lights
 TXE,Taxiway Edge Lights
 UAA,University of Alaska Anchorage
 UAC,Upper Area Control Centre
+UAS,Unmanned Aircraft Systems
 UAT,Universal Access Transceiver
 UAV,Unmanned Aerial Vehicle
 UDF,Ultra High Frequency Direction Finding
