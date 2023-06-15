@@ -14,6 +14,7 @@
 try {
 	& "$PSScriptRoot/open-dashboards.ps1"
 	& "$PSScriptRoot/open-windows-terminal.ps1"
+	& "$PSScriptRoot/write-clock.ps1"
 	exit 0 # success
 } catch {
         "⚠️ Error in line $($_.InvocationInfo.ScriptLineNumber): $($Error[0])"
