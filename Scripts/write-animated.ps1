@@ -15,7 +15,7 @@ param($Line1 = "", $Line2 = "", $Line3 = "", $Line4 = "", $Line5 = "", $Line6 = 
 
 $TerminalWidth = 120 # characters
 
-function WriteLine { param([string]$Line, [int]$Speed)
+function WriteLine { param([string]$Line)
 	[int]$Start = 1
 	[int]$End = $Line.Length
 	$StartPosition = $HOST.UI.RawUI.CursorPosition
@@ -24,11 +24,11 @@ function WriteLine { param([string]$Line, [int]$Speed)
 	if ($Line -eq "") { return }
 	foreach ($Pos in $Start .. $End) {
 		$TextToDisplay = $Spaces.Substring(0, $TerminalWidth / 2 - $pos / 2) + $Line.Substring(0, $Pos)
-		write-host -nonewline $TextToDisplay
-		start-sleep -milliseconds $Speed
+		Write-Host $TextToDisplay -noNewline
+		Start-Sleep -milliseconds $Speed
 		$HOST.UI.RawUI.CursorPosition = $StartPosition
 	}
-	write-host ""
+	Write-Host ""
 }
 
 if ($Line1 -eq "") {
@@ -40,13 +40,13 @@ if ($Line1 -eq "") {
 	$Line6 = "Markus"
 }
 
-WriteLine $Line1 $Speed
-WriteLine $Line2 $Speed
-WriteLine $Line3 $Speed
-WriteLine $Line4 $Speed
-WriteLine $Line5 $Speed
-WriteLine $Line6 $Speed
-WriteLine $Line7 $Speed
-WriteLine $Line8 $Speed
-WriteLine $Line9 $Speed
+WriteLine $Line1 
+WriteLine $Line2 
+WriteLine $Line3 
+WriteLine $Line4 
+WriteLine $Line5 
+WriteLine $Line6 
+WriteLine $Line7
+WriteLine $Line8
+WriteLine $Line9
 exit 0 # success
