@@ -162,6 +162,7 @@ function ListTools {
 	ListTool gpg-error	"--version"
 	ListTool gpgsplit	"--version"
 	ListTool gpgtar		"--version"
+	ListTool gradle		"--version"
 	ListTool grep		"--version"
 	ListTool groups		"--version"
 	ListTool gzip		"--version"

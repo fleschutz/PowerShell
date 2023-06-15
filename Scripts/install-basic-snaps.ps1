@@ -15,7 +15,7 @@ try {
 	$StopWatch = [system.diagnostics.stopwatch]::startNew()
 	if (!$IsLinux) { throw "Only Linux currently support snaps" }
 
-	"⏳ Installing 18 basic snaps (sorted alphabetically)..."
+	"⏳ Installing 19 Snaps (sorted alphabetically)..."
 	sudo snap install ant
 	sudo snap install audacity
 	sudo snap install bashtop
@@ -27,6 +27,7 @@ try {
 	sudo snap install firefox
 	sudo snap install gimp
 	sudo snap install go
+	sudo snap install gradle --classic
 	sudo snap install groovy --classic
 	sudo snap install hugo
 	sudo snap install jenkins --edge --classic 
@@ -36,7 +37,7 @@ try {
 	sudo snap install plexmediaserver
 	
 	[int]$Elapsed = $StopWatch.Elapsed.TotalSeconds
-	"✔️ Basic Linux snaps installed in $Elapsed sec"
+	"✔️ installed 19 Snaps in $Elapsed sec"
 	exit 0 # success
 } catch {
 	"⚠️ Error in line $($_.InvocationInfo.ScriptLineNumber): $($Error[0])"
