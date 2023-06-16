@@ -15,19 +15,18 @@
 try {
 	$StopWatch = [system.diagnostics.stopwatch]::startNew()
 
-	Write-Host "⏳ (1/34) Loading Data/basic-apps.csv...    " -noNewline
+	Write-Host "⏳ (1/36) Loading Data/basic-apps.csv...        " -noNewline
 	$Table = Import-CSV "$PSScriptRoot/../Data/basic-apps.csv"
 	$NumEntries = $Table.count
 	"$NumEntries apps"
-	"⏳ (2/34) About to install or upgrade:"
-	""
+	Write-Host "⏳ (2/36) About to install/upgrade these apps:  " -noNewline
 	foreach($Row in $Table) {
 		[string]$AppName = $Row.APPLICATION
-		Write-Host " · $AppName" -NoNewline
+		Write-Host "$AppName · " -noNewline
 	}
 	""
 	""
-	"Press <Control> <C> to abort, otherwise the installation will start in 15 seconds..."
+	"Installation will start in 15 seconds... (otherwise press <Control> <C> to abort)"
 	Start-Sleep -seconds 15
 
 	[int]$Step = 3
@@ -44,7 +43,7 @@ try {
 	}
 	[int]$Installed = ($NumEntries - $Failed)
 	[int]$Elapsed = $StopWatch.Elapsed.TotalSeconds
-	"✔️ installed $Installed of $NumEntries applications in $Elapsed sec"
+	"✔️ installed $Installed of $NumEntries basic apps in $Elapsed sec (use list-updates.ps1 later on to list available updates)"
 	exit 0 # success
 } catch {
 	"⚠️ Error in line $($_.InvocationInfo.ScriptLineNumber): $($Error[0])"
