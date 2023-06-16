@@ -267,6 +267,7 @@ function ListTools {
 	ListTool tskill		""
 	ListTool typeperf	""
 	ListTool tzsync		"--version"
+	ListTool unbound	"-V"
 	ListTool uniq		"--version"
 	ListTool vi		"--version"
 	ListTool vim		"--version"
