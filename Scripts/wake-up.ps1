@@ -2,7 +2,7 @@
 .SYNOPSIS
 	Wakes up a computer using Wake-on-LAN
 .DESCRIPTION
-	This PowerShell script sends a magic UDP packet twice to a computer to wake him up (requires the target computer to have Wake-on-LAN activated).
+	This PowerShell script sends a magic UDP packet to a computer to wake him up (requires the target computer to have Wake-on-LAN activated).
 .PARAMETER MACaddress
 	Specifies the host's MAC address (e.g. 11:22:33:44:55:66)
 .PARAMETER IPaddress
@@ -34,15 +34,16 @@ function Send-WOL { param([string]$mac, [string]$ip, [int]$port)
 } 
 
 try {
-	if ($MACaddress -eq "" ) { $MACaddress = Read-Host "Enter the host's MAC address (e.g. 11:22:33:44:55:66)"	}
-	if ($IPaddress -eq "" ) { $IPaddress = Read-Host "Enter the host's IP address or subnet address (e.g. 192.168.0.255)" }
+	if ($MACaddress -eq "" ) { $MACaddress = Read-Host "Enter the host's MAC address, e.g. 11:22:33:44:55:66" }
+	if ($IPaddress -eq "" ) { $IPaddress = Read-Host "Enter the host's IP or subnet address, e.g. 192.168.0.255" }
 
 	Send-WOL $MACaddress $IPaddress $Port
 	for ($i = 0; $i -lt $NumRetries; $i++) {
 		Start-Sleep -milliseconds 100
 		Send-WOL $MACaddress $IPaddress $Port
 	}
-	"✔️ sent magic packet $MACaddress to IP $IPaddress on port $Port ($NumRetries retries)"
+	"✔️ sent magic packet with MAC $MACaddress to IP $IPaddress on port $Port as wakeup call ($($NumRetries + 1) times)"
+	"   (Hint: wait a minute until the computer fully boots up)"
 	exit 0 # success
 } catch {
 	"⚠️ Error in line $($_.InvocationInfo.ScriptLineNumber): $($Error[0])"
