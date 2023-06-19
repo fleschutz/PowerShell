@@ -24,16 +24,16 @@ param([string]$ParentDir = "$PWD")
 function ListRepos { 
 	[int]$No = 1
 	$Folders = (Get-ChildItem "$ParentDir" -attributes Directory)
-	foreach ($Folder in $Folders) {
+	foreach($Folder in $Folders) {
 		$FolderName = (Get-Item "$Folder").Name
 		$Branch = (git -C "$Folder" branch --show-current)
 		$LatestTagCommitID = (git -C "$Folder" rev-list --tags --max-count=1)
 	        $LatestTag = (git -C "$Folder" describe --tags $LatestTagCommitID)
 		$Status = (git -C "$Folder" status --short)
 		if ("$Status" -eq "") { $Status = "clean" }
-		if ("$Status" -like " M *") { $Status = "modified" }
-
-		New-Object PSObject -property @{ 'No'="$No"; 'Repository'="$FolderName"; 'Branch'="$Branch"; 'LatestTag'="$LatestTag"; 'Status'="$Status"; }
+		elseif ("$Status" -like " M *") { $Status = "MODIFIED" }
+		$NumCommits = (git -C "$Folder" rev-list HEAD...origin/$Branch --count)
+		New-Object PSObject -property @{ 'No'="$No"; 'Repository'="$FolderName"; 'Branch'="$Branch"; 'Latest_Tag'="$LatestTag"; 'Status'="$Status ↓$NumCommits"; }
 		$No++
 	}
 }
@@ -44,7 +44,7 @@ try {
 	$Null = (git --version)
 	if ($lastExitCode -ne "0") { throw "Can't execute 'git' - make sure Git is installed and available" }
 
-	ListRepos | Format-Table -property @{e='No';width=3},@{e='Repository';width=25},@{e='Branch';width=20},LatestTag,Status
+	ListRepos | Format-Table -property @{e='No';width=3},@{e='Repository';width=22},@{e='Branch';width=20},Latest_Tag,Status
 	exit 0 # success
 } catch {
 	"⚠️ Error in line $($_.InvocationInfo.ScriptLineNumber): $($Error[0])"
