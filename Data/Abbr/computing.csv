@@ -1033,8 +1033,8 @@ EMS,Microsoft Exchange Management Shell
 ENISA,European Network and Information Security Agency
 EOF,End of File
 EoIP,Electricity over IP
-EOL,end of life
-EOM,end of message
+EOL,"End of Life, End of Line"
+EOM,End of Message
 EOP,Microsoft Exchange Online Protection
 EOQ,Economic Order Quantity
 EPA,Microsoft Exchange Server Profile Analyzer

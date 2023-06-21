@@ -233,6 +233,8 @@ ECP,Entry Control Point
 EFM,Gesellschaft für Enteisen und Flugzeugschleppen
 ELEV,Field Elevation
 ELT,Emergency Locator Transmitter
+EOL,Engine-off landings
+ERPM,Engine Rotations per Minute
 ETA,"Estimated Time of Arrival, East Transition Area"
 ETL,Effective Translational Lift (for helicopters)
 ETOPS,Extended-range Twin-engine Operational Performance Standards
@@ -372,6 +374,7 @@ ROC,Rate Of Climb
 ROC,Required Obstacle Clearance
 RPM,Revolutions Per Minute
 RPS,Radar Position Symbol
+RRPM,Rotor Rotations per Minute
 RSA,Runway Safety Area
 RSC,Runway Surface Condition
 RSI,Remote Status Indicato
@@ -393,6 +396,7 @@ SATNAV,Satellite Navigation
 SATSE,State Air Traffic Services Enterprise
 SCN,Secondary Crash Net
 SDD,Situation Data Display
+SEOL,Simulated engine-off landings
 SELCAL,Selective Calling System
 SES,Single European Sky
 SESAME,Single European Sky ATM Master Plan
