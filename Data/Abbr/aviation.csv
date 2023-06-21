@@ -386,8 +386,7 @@ RWR,Radar Warning Receiver
 RWY,Runway
 SADL,Situational Awareness Data Link
 SAF,Sustainable Aviation Fuel
-SAR,Search and Rescue
-SAR,Synthetic Aperture Radar
+SAR,"Search and Rescue, Synthetic Aperture Radar"
 SARPS,Standards and Recommended Practices (ICAO)
 SAT,Site Acceptance Test (see also FAT and RAT)
 SATCO,Senior Air Traffic Control Officer
