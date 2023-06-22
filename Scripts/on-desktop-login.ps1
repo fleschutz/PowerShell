@@ -4,7 +4,7 @@
 .DESCRIPTION
 	This PowerShell script executes tasks on every desktop login.
 .EXAMPLE
-	PS> ./on-desktop-login
+	PS> ./on-desktop-login.ps1
 .LINK
 	https://github.com/fleschutz/PowerShell
 .NOTES
@@ -13,7 +13,7 @@
 
 try {
 	& "$PSScriptRoot/open-dashboards.ps1"
-	& "$PSScriptRoot/open-windows-terminal.ps1"
+	& "$PSScriptRoot/list-news.ps1"
 	& "$PSScriptRoot/write-clock.ps1"
 	exit 0 # success
 } catch {
