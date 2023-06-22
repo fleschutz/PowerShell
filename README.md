@@ -350,7 +350,7 @@ Mega Collection of PowerShell Scripts
 
 Feedback
 --------
-Send your email feedback to: markus [at] fleschutz [dot] de
+Send your email feedback to: markus.fleschutz [at] gmail [dot] com
 
 License & Copyright
 -------------------
