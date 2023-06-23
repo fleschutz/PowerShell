@@ -1,27 +1,42 @@
+<#
+.SYNOPSIS
+        Writes an ASCII image
+.DESCRIPTION
+        This PowerShell script writes an ASCII image to the console.
+.EXAMPLE
+        PS> .\write-ascii-image.ps1
+.LINK
+        https://github.com/fleschutz/PowerShell
+.NOTES
+        Author: Markus Fleschutz | License: CC0
+#>
 
-""
-"              _-o#&&*''''?d:>b\_"
-"          _o/'`''  '',, dMF9MMMMMHo_"
-"       .o&#'        `'MbHMMMMMMMMMMMHo."
-"     .o'' '         vodM*$&&HMMMMMMMMMM?."
-"    ,'              $M&ood,~'`(&##MMMMMMH\"
-"   /               ,MMMMMMM#b?#bobMMMMHMMML"
-"  &              ?MMMMMMMMMMMMMMMMM7MMM$R*Hk"
-" ?$.            :MMMMMMMMMMMMMMMMMMM/HMMM|`*L"
-"|               |MMMMMMMMMMMMMMMMMMMMbMH'   T,"
-"$H#:            `*MMMMMMMMMMMMMMMMMMMMb#}'  `?"
-"]MMH#             ''*''''*#MMMMMMMMMMMMM'    -"
-"MMMMMb_                   |MMMMMMMMMMMP'     :"
-"HMMMMMMMHo                 `MMMMMMMMMT       ."
-"?MMMMMMMMP                  9MMMMMMMM}       -"
-"-?MMMMMMM                  |MMMMMMMMM?,d-    '"
-" :|MMMMMM-                 `MMMMMMMT .M|.   :"
-"  .9MMM[                    &MMMMM*' `'    ."
-"   :9MMk                    `MMM#'        -"
-"     &M}                     '          .-"
-"      `&.                             ."
-"        `~,   .                     ./"
-"            . _                  .-"
-"              '`--._,dd###pp='''"
-""
+function WriteLine { param([string]$line)
+	Write-Host $line -foregroundColor green
+}
+
+WriteLine ""
+WriteLine "              _-o#&&*''''?d:>b\_"
+WriteLine "          _o/'`''  '',, dMF9MMMMMHo_"
+WriteLine "       .o&#'        `'MbHMMMMMMMMMMMHo."
+WriteLine "     .o'' '         vodM*$&&HMMMMMMMMMM?."
+WriteLine "    ,'              $M&ood,~'`(&##MMMMMMH\"
+WriteLine "   /               ,MMMMMMM#b?#bobMMMMHMMML"
+WriteLine "  &              ?MMMMMMMMMMMMMMMMM7MMM$R*Hk"
+WriteLine " ?$.            :MMMMMMMMMMMMMMMMMMM/HMMM|`*L"
+WriteLine "|               |MMMMMMMMMMMMMMMMMMMMbMH'   T,"
+WriteLine "$H#:            `*MMMMMMMMMMMMMMMMMMMMb#}'  `?"
+WriteLine "]MMH#             ''*''''*#MMMMMMMMMMMMM'    -"
+WriteLine "MMMMMb_                   |MMMMMMMMMMMP'     :"
+WriteLine "HMMMMMMMHo                 `MMMMMMMMMT       ."
+WriteLine "?MMMMMMMMP                  9MMMMMMMM}       -"
+WriteLine "-?MMMMMMM                  |MMMMMMMMM?,d-    '"
+WriteLine " :|MMMMMM-                 `MMMMMMMT .M|.   :"
+WriteLine "  .9MMM[                    &MMMMM*' `'    ."
+WriteLine "   :9MMk                    `MMM#'        -"
+WriteLine "     &M}                     '          .-"
+WriteLine "      `&.                             ."
+WriteLine "        `~,   .                     ./"
+WriteLine "            . _                  .-"
+WriteLine "              '`--._,dd###pp='''"
 exit 0 # success
