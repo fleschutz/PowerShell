@@ -21,25 +21,25 @@ param([string]$File = "", [string]$SourceLang = "", [string]$TargetLang = "")
 
 function UseLibreTranslate { param([string]$Text, [string]$SourceLang, [string]$TargetLang)
 	$Parameters = @{"q"="$Text"; "source"="$SourceLang"; "target"="$TargetLang"; }
-	$Result = (Invoke-WebRequest -Uri https://libretranslate.com/translate -Method POST -Body ($Parameters|ConvertTo-Json) -ContentType "application/json").content | ConvertFrom-Json
-	Start-Sleep -milliseconds 3000 # 20 requests per minute maximum
+	$Result = (Invoke-WebRequest -Uri https://libretranslate.de/translate -Method POST -Body ($Parameters|ConvertTo-Json) -ContentType "application/json" -useBasicParsing).content | ConvertFrom-Json
+	Start-Sleep -seconds 6 # 10 requests per minute maximum
 	return $Result.translatedText
 }
 
 try {
-	if ($File -eq "" ) { $File = read-host "Enter path to file" }
-	if ($SourceLang -eq "" ) { $SourceLang = read-host "Enter language used in this file" }
-	if ($TargetLang -eq "" ) { $TargetLang = read-host "Enter language to translate to" }
+	if ($File -eq "" ) { $File = Read-Host "Enter path to file" }
+	if ($SourceLang -eq "" ) { $SourceLang = Read-Host "Enter language used in this file" }
+	if ($TargetLang -eq "" ) { $TargetLang = Read-Host "Enter language to translate to" }
 
 	$Lines = Get-Content -path $File
 	foreach($Line in $Lines) {
-		if ("$Line" -eq "") { write-output "$Line"; continue }
-		if ("$Line" -eq " ") { write-output "$Line"; continue }
-		if ("$Line" -like "===*") { write-output "$Line"; continue }
-		if ("$Line" -like "---*") { write-output "$Line"; continue }
-		if ("$Line" -like "!*(/*)") { write-output "$Line"; continue }
+		if ("$Line" -eq "") { Write-Output "$Line"; continue }
+		if ("$Line" -eq " ") { Write-Output "$Line"; continue }
+		if ("$Line" -like "===*") { Write-Output "$Line"; continue }
+		if ("$Line" -like "---*") { Write-Output "$Line"; continue }
+		if ("$Line" -like "!*(/*)") { Write-Output "$Line"; continue }
 		$Result = UseLibreTranslate $Line $SourceLang $TargetLang
-		write-output $Result
+		Write-Output $Result
 	}
 	exit 0 # success
 } catch {

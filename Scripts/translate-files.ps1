@@ -16,18 +16,25 @@
 param([string]$filePattern = "")
 
 function DetectSourceLang { param([string]$Filename)
-	if ("$Filename" -like "*Deutsch*")  { return "de" }
-	if ("$Filename" -like "*English*")  { return "en" }
-	if ("$Filename" -like "*Français*") { return "fr" }
+	if ("$Filename" -like "*-Deutsch*")  { return "de" }
+	if ("$Filename" -like "*-English*")  { return "en" }
+	if ("$Filename" -like "*-Español*")  { return "es" }
+	if ("$Filename" -like "*_Français*") { return "fr" }
 	return "unknown"
 }
 
 function TranslateFilename { param([string]$Filename, [string]$SourceLang, [string]$TargetLang)
 	[string]$SourceLanguage = ""
-	if ($SourceLang -eq "de") { $SourceLanguage = "Deutsch" }
-	if ($SourceLang -eq "en") { $SourceLanguage = "English" }
-	if ($SourceLang -eq "fr") { $SourceLanguage = "Français" }
-	$TargetLanguage = ("$PSScriptRoot/translate-text.ps1 $SourceLanguage $SourceLang $TargetLang")
+	if ($SourceLang -eq "de") { $SourceLanguage = "-Deutsch" }
+	if ($SourceLang -eq "en") { $SourceLanguage = "-English" }
+	if ($SourceLang -eq "es") { $SourceLanguage = "-Español" }
+	if ($SourceLang -eq "fr") { $SourceLanguage = "-Français" }
+	[string]$TargetLanguage = "-Unknown"
+	if ($TargetLang -eq "ar") { $TargetLanguage = "-Arabic" }
+	if ($TargetLang -eq "de") { $TargetLanguage = "-Deutsch" }
+	if ($TargetLang -eq "en") { $TargetLanguage = "-English" }
+	if ($TargetLang -eq "es") { $TargetLanguage = "-Español" }
+	if ($TargetLang -eq "fr") { $TargetLanguage = "-Français" }
 	return $Filename.replace($SourceLanguage, $TargetLanguage)
 }
 
@@ -40,7 +47,9 @@ try {
 		$SourceLang = DetectSourceLang $SourceFile
 		foreach($TargetLang in $TargetLanguages) {
 			if ($SourceLang -eq $TargetLang) { continue }
+			Write-Host "Translating $SourceFile from $SourceLang to $TargetLang ..."
 			$TargetFile = TranslateFilename $SourceFile $SourceLang $TargetLang
+			Write-Host "$TargetFile"
 			& "$PSScriptRoot/translate-file.ps1" $SourceFile $SourceLang $TargetLang > $TargetFile
 		}
 	}

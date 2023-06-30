@@ -21,7 +21,7 @@ param([string]$Text = "", [string]$SourceLangCode = "en", [string]$TargetLangCod
 
 function UseLibreTranslate { param([string]$Text, [string]$SourceLangCode, [string]$TargetLangCode)
 	$Parameters = @{"q"="$Text"; "source"="$SourceLangCode"; "target"="$TargetLangCode"; }
-	$Result = (Invoke-WebRequest -Uri https://translate.mentality.rip/translate -Method POST -Body ($Parameters|ConvertTo-Json) -ContentType "application/json" -useBasicParsing).content | ConvertFrom-Json
+	$Result = (Invoke-WebRequest -Uri https://libretranslate.de/translate -Method POST -Body ($Parameters|ConvertTo-Json) -ContentType "application/json" -useBasicParsing).content | ConvertFrom-Json
 	return $Result.translatedText
 }
 
