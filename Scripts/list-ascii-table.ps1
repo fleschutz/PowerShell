@@ -1,3 +1,22 @@
+<#
+.SYNOPSIS
+        Lists the ASCII table
+.DESCRIPTION
+        This PowerShell script lists the ASCII table on the console.
+.EXAMPLE
+        PS> ./list-ascii-table.ps1
+
+	ASCII TABLE
+	Dec    Oct    Hex    HTML    Symbol     Description
+	---    ---    ---    ----    ------     -----------
+	  0    000     00    &#00;    NUL       Null character
+        ...
+.LINK
+        https://github.com/fleschutz/PowerShell
+.NOTES
+        Author: Markus Fleschutz | License: CC0
+#>
+
 ""
 Write-Host "ASCII TABLE" -foregroundColor green
 ""
