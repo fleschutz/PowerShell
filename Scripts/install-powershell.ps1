@@ -74,7 +74,7 @@ if (-not $Destination) {
 $Destination = $PSCmdlet.SessionState.Path.GetUnresolvedProviderPathFromPSPath($Destination)
 
 if (-not $UseMSI) {
-    Write-Verbose "Destination: $Destination" -Verbose
+    Write-Host "Installation destination path: $Destination"
 } else {
     if (-not $IsWinEnv) {
         throw "-UseMSI is only supported on Windows"
@@ -381,7 +381,7 @@ try {
         }
 
         $downloadURL = "https://github.com/PowerShell/PowerShell/releases/download/v${release}/${packageName}"
-        Write-Host "Downloading from: $downloadURL"
+        Write-Host "Downloading: $downloadURL"
 
         $packagePath = Join-Path -Path $tempDir -ChildPath $packageName
         if (!$PSVersionTable.ContainsKey('PSEdition') -or $PSVersionTable.PSEdition -eq "Desktop") {
