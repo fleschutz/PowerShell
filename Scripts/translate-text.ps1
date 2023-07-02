@@ -6,18 +6,18 @@
 .PARAMETER Text
 	Specifies the text to translate
 .PARAMETER SourceLang
-	Specifies the source language
+	Specifies the source language (English by default)
 .PARAMETER TargetLang
-	Specifies the target language
+	Specifies the target language (all by default)
 .EXAMPLE
-	PS> ./translate-text "Hello World" de en
+	PS> ./translate-text "Hello World" en all
 .LINK
 	https://github.com/fleschutz/PowerShell
 .NOTES
 	Author: Markus Fleschutz | License: CC0
 #>
 
-param([string]$Text = "", [string]$SourceLangCode = "en", [string]$TargetLangCode = "any")
+param([string]$Text = "", [string]$SourceLangCode = "en", [string]$TargetLangCode = "all")
 
 function UseLibreTranslate { param([string]$Text, [string]$SourceLangCode, [string]$TargetLangCode)
 	$Parameters = @{"q"="$Text"; "source"="$SourceLangCode"; "target"="$TargetLangCode"; }
@@ -26,17 +26,18 @@ function UseLibreTranslate { param([string]$Text, [string]$SourceLangCode, [stri
 }
 
 try {
-	if ($Text -eq "" ) { $Text = read-host "Enter text to translate" }
+	if ($Text -eq "" ) { $Text = Read-Host "Enter the text to translate" }
 
-	if ($TargetLangCode -eq "any") {
+	if ($TargetLangCode -eq "all") {
 		$TargetLangCodes = "ar","de","es","fr","ga","hi","it","ja","ko","pt","ru","zh"
 		foreach($TargetLangCode in $TargetLangCodes) {
 			$Translation = UseLibreTranslate $Text $SourceLangCode $TargetLangCode
-			write-output "$($TargetLangCode): $Translation"
+			Write-Output "$($TargetLangCode): $Translation"
+			Start-Sleep -seconds 6 # 10 requests maximum per minute
 		}
 	} else {
 		$Translation = UseLibreTranslate $Text $SourceLangCode $TargetLangCode
-		write-output "$Translation"
+		Write-Output "$Translation"
 	}
 	exit 0 # success
 } catch {

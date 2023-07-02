@@ -2,9 +2,9 @@
 .SYNOPSIS
 	Translates a text file into another language 
 .DESCRIPTION
-	This PowerShell script translates a text file into another language.
+	This PowerShell script translates the given text file into another language and writes the output on the console.
 .PARAMETER File
-	Specifies the file to translate
+	Specifies the path to the file to be translated
 .PARAMETER SourceLang
 	Specifies the source language
 .PARAMETER TargetLang
@@ -27,9 +27,9 @@ function UseLibreTranslate { param([string]$Text, [string]$SourceLang, [string]$
 }
 
 try {
-	if ($File -eq "" ) { $File = Read-Host "Enter path to file" }
-	if ($SourceLang -eq "" ) { $SourceLang = Read-Host "Enter language used in this file" }
-	if ($TargetLang -eq "" ) { $TargetLang = Read-Host "Enter language to translate to" }
+	if ($File -eq "" ) { $File = Read-Host "Enter the file path" }
+	if ($SourceLang -eq "" ) { $SourceLang = Read-Host "Enter the source language" }
+	if ($TargetLang -eq "" ) { $TargetLang = Read-Host "Enter the target language" }
 
 	$Lines = Get-Content -path $File
 	foreach($Line in $Lines) {

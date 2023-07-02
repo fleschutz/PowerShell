@@ -19,7 +19,8 @@ function DetectSourceLang { param([string]$Filename)
 	if ("$Filename" -like "*-Deutsch*")  { return "de" }
 	if ("$Filename" -like "*-English*")  { return "en" }
 	if ("$Filename" -like "*-Español*")  { return "es" }
-	if ("$Filename" -like "*_Français*") { return "fr" }
+	if ("$Filename" -like "*-Français*") { return "fr" }
+	if ("$Filename" -like "*-Portuguese*") { return "pt" }
 	return "unknown"
 }
 
@@ -29,12 +30,14 @@ function TranslateFilename { param([string]$Filename, [string]$SourceLang, [stri
 	if ($SourceLang -eq "en") { $SourceLanguage = "-English" }
 	if ($SourceLang -eq "es") { $SourceLanguage = "-Español" }
 	if ($SourceLang -eq "fr") { $SourceLanguage = "-Français" }
+	if ($SourceLang -eq "pt") { $SourceLanguage = "-Portuguese" }
 	[string]$TargetLanguage = "-Unknown"
 	if ($TargetLang -eq "ar") { $TargetLanguage = "-Arabic" }
 	if ($TargetLang -eq "de") { $TargetLanguage = "-Deutsch" }
 	if ($TargetLang -eq "en") { $TargetLanguage = "-English" }
 	if ($TargetLang -eq "es") { $TargetLanguage = "-Español" }
 	if ($TargetLang -eq "fr") { $TargetLanguage = "-Français" }
+	if ($TargetLang -eq "pt") { $TargetLanguage = "-Portuguese" }
 	return $Filename.replace($SourceLanguage, $TargetLanguage)
 }
 
