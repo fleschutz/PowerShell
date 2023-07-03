@@ -4,7 +4,7 @@
 .DESCRIPTION
 	This PowerShell script writes the current time as ACSII clock 
 .EXAMPLE
-	PS> ./write-clock
+	PS> ./write-clock.ps1
 .LINK
 	https://github.com/fleschutz/PowerShell
 .NOTES
@@ -12,15 +12,28 @@
 #>
 
 try {
-	for ([int]$i = 0; $i -lt 99999; $i++) {
-		Clear-Host
-		Write-Output ""
-		$Date = Get-Date -format "yyyy-MM-dd"
+	[system.threading.thread]::currentthread.currentculture = [system.globalization.cultureinfo]"en-US"
+
+	Clear-Host
+	Write-Output ""
+	$Weekday = Get-Date -UFormat "%A"
+	& "$PSScriptRoot/write-big.ps1" "    $Weekday"
+
+	Write-Output ""
+	$Date = Get-Date -UFormat "%d%b%y"
+	& "$PSScriptRoot/write-big.ps1" "    $Date"
+	Write-Output ""
+
+	$StartPosition = $HOST.UI.RawUI.CursorPosition
+	while ($true) {
 		$Time = Get-Date -format "HH:mm:ss" 
-		& "$PSScriptRoot/write-big.ps1" $Date
-		& "$PSScriptRoot/write-big.ps1" $Time
+
+		& "$PSScriptRoot/write-big.ps1" "    $Time  "
 		Write-Output ""
+		Write-Output ""
+		Write-Output "                             (press <Ctrl> <C> to stop)"
 		Start-Sleep -seconds 1
+		$HOST.UI.RawUI.CursorPosition = $StartPosition
 	}
 	exit 0 # success
 } catch {
