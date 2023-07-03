@@ -2,7 +2,7 @@
 .SYNOPSIS
 	Writes animated text
 .DESCRIPTION
-	This PowerShell script writes animated text.
+	This PowerShell script writes animated text to the console.
 .EXAMPLE
 	PS> ./write-animated "Hello World"
 .LINK
@@ -16,13 +16,11 @@ param($Line1 = "", $Line2 = "", $Line3 = "", $Line4 = "", $Line5 = "", $Line6 = 
 $TerminalWidth = 120 # characters
 
 function WriteLine { param([string]$Line)
-	[int]$Start = 1
+	if ($Line -eq "") { return }
 	[int]$End = $Line.Length
 	$StartPosition = $HOST.UI.RawUI.CursorPosition
 	$Spaces = "                                                                     "
-
-	if ($Line -eq "") { return }
-	foreach ($Pos in $Start .. $End) {
+	foreach($Pos in 1 .. $End) {
 		$TextToDisplay = $Spaces.Substring(0, $TerminalWidth / 2 - $pos / 2) + $Line.Substring(0, $Pos)
 		Write-Host $TextToDisplay -noNewline
 		Start-Sleep -milliseconds $Speed
@@ -31,22 +29,26 @@ function WriteLine { param([string]$Line)
 	Write-Host ""
 }
 
-if ($Line1 -eq "") {
-	$Line1 = "Welcome to PowerShell Scripts"
-	$Line2 = " "
-	$Line3 = "This repository contains useful and cross-platform PowerShell scripts."
-	$Line4 = " "
-	$Line5 = "Best regards,"
-	$Line6 = "Markus"
+try {
+	if ($Line1 -eq "") {
+		$Line1 = "Welcome to PowerShell Scripts"
+		$Line2 = " "
+		$Line3 = "This repository contains useful and cross-platform PowerShell scripts."
+		$Line4 = " "
+		$Line5 = "Best regards,"
+		$Line6 = "Markus"
+	}
+	WriteLine $Line1 
+	WriteLine $Line2 
+	WriteLine $Line3 
+	WriteLine $Line4 
+	WriteLine $Line5 
+	WriteLine $Line6 
+	WriteLine $Line7
+	WriteLine $Line8
+	WriteLine $Line9
+	exit 0 # success
+} catch {
+        "⚠️ Error in line $($_.InvocationInfo.ScriptLineNumber): $($Error[0])"
+        exit 1
 }
-
-WriteLine $Line1 
-WriteLine $Line2 
-WriteLine $Line3 
-WriteLine $Line4 
-WriteLine $Line5 
-WriteLine $Line6 
-WriteLine $Line7
-WriteLine $Line8
-WriteLine $Line9
-exit 0 # success
