@@ -15,13 +15,16 @@ try {
 	[system.threading.thread]::currentthread.currentculture = [system.globalization.cultureinfo]"en-US"
 
 	Clear-Host
-	Write-Output ""
 	$Weekday = Get-Date -UFormat "%A"
 	& "$PSScriptRoot/write-big.ps1" "    $Weekday"
-
 	Write-Output ""
+
 	$Date = Get-Date -UFormat "%d%b%y"
 	& "$PSScriptRoot/write-big.ps1" "    $Date"
+	Write-Output ""
+
+	$Week = Get-Date -UFormat "%V"
+	& "$PSScriptRoot/write-big.ps1" "    WEEK$Week"
 	Write-Output ""
 
 	$StartPosition = $HOST.UI.RawUI.CursorPosition
@@ -29,7 +32,6 @@ try {
 		$Time = Get-Date -format "HH:mm:ss" 
 
 		& "$PSScriptRoot/write-big.ps1" "    $Time  "
-		Write-Output ""
 		Write-Output ""
 		Write-Output "                             (press <Ctrl> <C> to stop)"
 		Start-Sleep -seconds 1
