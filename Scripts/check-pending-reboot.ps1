@@ -25,6 +25,7 @@ try {
 	if ($IsLinux) {
 		if (Test-Path "/var/run/reboot-required") {
 			$Reason = "found /var/run/reboot-required"
+			Write-Host "⚠️ Pending reboot ($Reason)"
 		}
 	} else {
 		if (Test-Path -Path "HKLM:\SOFTWARE\Microsoft\Windows\CurrentVersion\WindowsUpdate\Auto Update\RebootRequired") {
@@ -57,10 +58,11 @@ try {
 		if (Test-RegistryValue -Path "HKLM:\SYSTEM\CurrentControlSet\Services\Netlogon" -Value "AvoidSpnSet") {
 			$Reason += ", '...\CurrentControlSet\Services\Netlogon' with 'AvoidSpnSet'"
 		}
+		if ($Reason -ne "") {
+			Write-Host "⚠️ Pending reboot (registry contains $($Reason.substring(2)))"
+		}
 	}
-	if ($Reason -ne "") {
-		Write-Host "⚠️ Pending reboot (registry contains $($Reason.substring(2)))"
-	} else {
+	if ($Reason -eq "") {
 		Write-Host "✅ No pending reboot"
 	}
 	exit 0 # success
