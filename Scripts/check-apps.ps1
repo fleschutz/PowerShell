@@ -14,7 +14,8 @@
 
 try {
 	if ($IsLinux) {
-		# TODO
+		$NumSnaps = (snap list).Count - 1
+		Write-Host "✅ $($NumSnaps) snaps installed"
 	} else {
 		Write-Progress "⏳ Querying installed apps and updates..."
 		$Apps = Get-AppxPackage

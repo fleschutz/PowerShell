@@ -18,7 +18,7 @@ try {
 		& sudo apt update
 		& sudo apt list --upgradable
 		"⏳ (2/2) Querying Snap updates..."
-		sudo snap refresh --list
+		& sudo snap refresh --list
 	} else {
 		" "
 		Write-Progress "⏳ Querying available software updates..."
