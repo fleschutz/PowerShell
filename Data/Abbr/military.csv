@@ -368,6 +368,7 @@ JAG,Judge Advocate General
 JAGIC,Joint Air-Ground Integration Center
 JAOC,Joint Air Operations Center
 JAOP,Joint Air Operations Plan
+JASDF,Japan Air Self Defense Force
 JAST,Joint Advanced Strike Technology
 JCN,Joint Communications Network
 JDAM,Joint Direct Attack Munition
@@ -439,7 +440,6 @@ MAXORD,Maximum Ordinate
 MBT,Main Battle Tank
 MCCS,Marine Corps Community Services
 MCM,Mine Countermeasures
-MCM,Mine Countermeasures
 MCRMC,Military Compensation and Retirement Modernization Commission
 MCSC,Managed Care Support Contract
 MCX,Marine Corps Exchange
@@ -456,11 +456,9 @@ MGIB-SR,Montgomery GI Bill Selected Reserve
 MHA,Military Housing Allowance
 MHA,Military Housing Area
 MHS,Military Health System
-MHS,Military Health System
 MIA,Missing in Action
 MIB,Military Intelligence Board
 MIDB,Modernized Integrated Database
-MILCON,military construction
 MILCON,Military Construction
 MILDEC,military deception
 MILDEP,Military Department
@@ -487,7 +485,6 @@ MPS,Military Postal Service
 MPSA,Military Postal Service Agency
 MR,Maritime Reconnaissance
 MRAV,Multi-Role Armored Vehicle
-MRBM,Medium Range Ballistic Missile
 MRBM,Medium-Range Ballistic Missile
 MRF,Military Retirement F
 MRR,Minimum-Risk Route
@@ -524,7 +521,6 @@ NFA,No-Fire Area
 NFL,No-Fire Line
 NFLS,Naval Forward Logistic Site
 NGFS,Naval Gunfire Support
-NGO,Nongovernmental Organization
 NIMS,National Incident Management System
 NLW,Nonlethal Weapon
 nm,Nautical Mile
@@ -684,7 +680,7 @@ SLS,Shoot-Look-Shoot
 SMC,Specialized Military Condition
 SMG,SubMachine Gun
 SMU,Special Mission Unit
-SNAFU,Situation Normal, All 'Fouled' Up
+SNAFU,"Situation Normal, All 'Fouled' Up"
 SNAP,Supplemental Nutrition Assistance Program
 SOCOM,Special Operations Command
 SOF,Special Operations Forces
@@ -791,7 +787,7 @@ WARM,Wartime Reserve Modes
 WARNORD,Warning Order
 WEZ,Weapon Engagement Zone
 WG,Working Group
-WIC,Women, Infants and Children
+WIC,"Women, Infants and Children"
 WLG,Washington Liaison Group
 WMD,Weapons of Mass Destruction
 WO,Warrant Officer
