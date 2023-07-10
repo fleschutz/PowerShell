@@ -1,9 +1,9 @@
 ﻿<#
 .SYNOPSIS
-	Installs software updates
+	Installs updates
 .DESCRIPTION
-	This PowerShell script installs updates for the local machine (needs admin rights).
-	Use "list-updates.ps1" to list available updates.
+	This PowerShell script installs software updates for the local machine (needs admin rights).
+	Use the script 'list-updates.ps1' to list available updates.
 .EXAMPLE
 	PS> ./install-updates
 .LINK
@@ -34,7 +34,7 @@ try {
 		Write-Progress -completed " "
 	}
 	[int]$Elapsed = $StopWatch.Elapsed.TotalSeconds
-	"✅ updates installed in $Elapsed sec"
+	"✅ installed the updates in $Elapsed sec"
 	exit 0 # success
 } catch {
 	"⚠️ Error in line $($_.InvocationInfo.ScriptLineNumber): $($Error[0])"
