@@ -24,7 +24,7 @@ try {
 	$Reason = ""
 	if ($IsLinux) {
 		if (Test-Path "/var/run/reboot-required") {
-			$Reason = "found /var/run/reboot-required"
+			$Reason = "found: /var/run/reboot-required"
 			Write-Host "⚠️ Pending reboot ($Reason)"
 		}
 	} else {
