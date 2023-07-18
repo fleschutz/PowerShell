@@ -125,6 +125,7 @@ APM,Approach Path Monitor
 APP,Approach
 APS,Airport Planning Standard
 APTS,Automated Personnel Tracking System
+APU,Auxiliary Power Unit
 AQAFO,Aeronautical Quality Assurance Field Office
 AR,Aerial Refueling
 AR,Aspect Ratio
@@ -272,8 +273,10 @@ FIR,Flight Information Region
 FL,Flight Level
 FLIP,Flight Information Publication
 FMG,Flughafen München GmbH
+FMS,Flight Management System
 FOD,Foreign Object Debris
 FOV,Field of View
+FWC,Flight Warning Computer
 GA,General Aviation
 GND,Ground
 GP,Glide Path
@@ -312,6 +315,7 @@ MEA,Minimum En-route Altitude
 METAR,Meteorological Aerodrome Report
 MCP,Maximum Continuous Power
 MLW,Maximum Landing Weight
+MMR,Multi-Mode Receiver
 MSA,Minimum Safe Altitude
 MSL,Median Sea Level
 MSTA,Minimum Safe Turning Altitude
@@ -456,7 +460,7 @@ TAP,Target Acquisition Protocol
 TARMAC,Taxi and Ramp Management and Control
 TAS,Terminal Airspace System
 TAS,True Air Speed
-TAWS,Terrain Awareness and Warning System
+TAWS,Terrain Avoidance and Warning System
 TCAS,Traffic alert and Collision Avoidance System
 TCDS,Type Certificate Data Sheet
 TCH,Threshold Crossing Height
@@ -553,3 +557,4 @@ WS,Work Station
 WTC,Wake Turbulence Category
 WTWS,Wake Turbulence Warning System
 WX,Weather
+WXR,Weather Radar Transceiver
