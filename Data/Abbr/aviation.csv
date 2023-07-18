@@ -48,6 +48,8 @@ ADEP,Aerodrome of Departure
 ADES,Aerodrome of Destination
 ADF,Automatic Direction Finding
 ADI,Automatic De-Ice and Inhibitor
+ADIRS,Air Data and Inertial Reference System
+ADIRU,Air Data Inertial Reference Unit
 ADIZ,Air Defense Identification Zone
 ADL,Aeronautical Data Link
 ADLY,Arrival Delay
@@ -143,6 +145,7 @@ ATCALS,Air Traffic Control and Landing Systems
 ATIS,Automatic Terminal Information Service
 ATM,Air Traffic Manager
 ATO,Air Traffic Organization
+ATPL,Airline Transport Pilot License
 AURO,Autorotation of helicopters
 AWACS,Airborne Warning And Control System
 BC,Back Course
@@ -201,6 +204,7 @@ COTS,Commercial Of-The-Shelf
 CPA,Closest Point of Approach
 CPDLC,Controller Pilot Data Link Communication
 CPI,Crash Position Indicator
+CPL,Commercial Pilot License
 CRC,Control and Reporting Centre
 CRDA,Converging Runway Display Aid
 CREDOS,Crosswind Reduced Separations for Departure Operations
