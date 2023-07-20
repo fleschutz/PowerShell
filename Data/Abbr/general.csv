@@ -911,7 +911,7 @@ CPU,Contract Postal Unit
 CPV,Cape Verde (ISO 3166 trigram)
 CPX,Command Post eXercise
 CQ,"Carrier Qualification,Central Queensland,Charge of Quarters,Congressional Quarterly,Constellation Airlines (IATA airline designator),Northern Mariana Islands (FIPS 10-4 territory code)"
-CQD,Close Quarters Drill (Morse distress code preceding SOS: CQ "calling all stations",D "Distress"; often incorrectly interpreted as "Come Quick,Distress")
+CQD,"Close Quarters Drill (Morse distress code preceding SOS: CQ 'calling all stations',D 'Distress'; often incorrectly interpreted as 'Come Quick,Distress')"
 Cr,Chromium
 CR,"Coral Sea Islands (FIPS 10-4 territory code),Costa Rica (ISO 3166 digram)"
 CRAM,Combined Radiometric Correction Model
