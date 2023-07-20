@@ -23,7 +23,7 @@ try {
 			$NoVPN = $false
 		}
 	}
-	if ($NoVPN) { Write-Host "⚠️ No VPN" }
+	if ($NoVPN) { Write-Host "⚠️ No VPN configured" }
 	exit 0 # success
 } catch {
 	"⚠️ Error in line $($_.InvocationInfo.ScriptLineNumber): $($Error[0])"
