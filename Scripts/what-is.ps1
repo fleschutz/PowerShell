@@ -25,7 +25,7 @@ try {
 		foreach($Row in $Table) {
 			if ($Row.ABBR -eq $abbr) {
 				$Basename = (Get-Item "$File").Basename -Replace "_"," "
-				"💡 $($Row.ABBR) in $Basename refers to: $($Row.TERM)"
+				"💡 $($Row.ABBR) in $Basename refers to: $($Row.MEANING)"
 				$Matches++
 			}
 		}
