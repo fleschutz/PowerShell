@@ -48,59 +48,59 @@ Write-Host " ,.=:^!^!t3Z3z., " -ForegroundColor Red
 Write-Host " :tt:::tt333EE3 " -ForegroundColor Red
 Write-Host " Et:::ztt33EEE " -ForegroundColor Red -NoNewline
 Write-Host " @Ee., ..,     " -ForegroundColor green -NoNewline
-Write-Host "      Time: " -ForegroundColor Red -NoNewline
+Write-Host "      Time: " -ForegroundColor DarkGray -NoNewline
 Write-Host "$CurrentTime" -ForegroundColor Cyan
 Write-Host " ;tt:::tt333EE7" -ForegroundColor Red -NoNewline
 Write-Host " ;EEEEEEttttt33# " -ForegroundColor Green -NoNewline
-Write-Host "    Timezone: " -ForegroundColor Red -NoNewline
+Write-Host "    Timezone: " -ForegroundColor DarkGray -NoNewline
 Write-Host "$TimeZone" -ForegroundColor Cyan
 Write-Host " :Et:::zt333EEQ." -NoNewline -ForegroundColor Red
 Write-Host " SEEEEEttttt33QL " -NoNewline -ForegroundColor Green
-Write-Host "   User: " -NoNewline -ForegroundColor Red
+Write-Host "   User: " -NoNewline -ForegroundColor DarkGray
 Write-Host "$UserName" -ForegroundColor Cyan
 Write-Host " it::::tt333EEF" -NoNewline -ForegroundColor Red
 Write-Host " @EEEEEEttttt33F " -NoNewline -ForegroundColor Green
-Write-Host "    Hostname: " -NoNewline -ForegroundColor Red
+Write-Host "    Hostname: " -NoNewline -ForegroundColor DarkGray
 Write-Host "$ComputerName" -ForegroundColor Cyan
 Write-Host " ;3=*^``````'*4EEV" -NoNewline -ForegroundColor Red
 Write-Host " :EEEEEEttttt33@. " -NoNewline -ForegroundColor Green
-Write-Host "   OS: " -NoNewline -ForegroundColor Red
+Write-Host "   OS: " -NoNewline -ForegroundColor DarkGray
 Write-Host "$OSName" -ForegroundColor Cyan
 Write-Host " ,.=::::it=., " -NoNewline -ForegroundColor Cyan
 Write-Host "``" -NoNewline -ForegroundColor Red
 Write-Host " @EEEEEEtttz33QF " -NoNewline -ForegroundColor Green
-Write-Host "    Kernel: " -NoNewline -ForegroundColor Red
+Write-Host "    Kernel: " -NoNewline -ForegroundColor DarkGray
 Write-Host "$Kernel " -NoNewline -ForegroundColor Cyan
 Write-Host "$Kernel_Info" -ForegroundColor Cyan
 Write-Host " ;::::::::zt33) " -NoNewline -ForegroundColor Cyan
 Write-Host " '4EEEtttji3P* " -NoNewline -ForegroundColor Green
-Write-Host "     Uptime: " -NoNewline -ForegroundColor Red
+Write-Host "     Uptime: " -NoNewline -ForegroundColor DarkGray
 Write-Host "$Uptime" -ForegroundColor Cyan
 Write-Host " :t::::::::tt33." -NoNewline -ForegroundColor Cyan
 Write-Host ":Z3z.. " -NoNewline -ForegroundColor Yellow
 Write-Host " ````" -NoNewline -ForegroundColor Green
 Write-Host " ,..g. " -NoNewline -ForegroundColor Yellow
-Write-Host "   PowerShell: " -NoNewline -ForegroundColor Red
+Write-Host "   PowerShell: " -NoNewline -ForegroundColor DarkGray
 Write-Host "$PowerShellVersion $PowerShellEdition" -ForegroundColor Cyan
 Write-Host " i::::::::zt33F" -NoNewline -ForegroundColor Cyan
 Write-Host " AEEEtttt::::ztF " -NoNewline -ForegroundColor Yellow
-Write-Host "    CPU: " -NoNewline -ForegroundColor Red
+Write-Host "    CPU: " -NoNewline -ForegroundColor DarkGray
 Write-Host "$CPU_Info" -ForegroundColor Cyan
 Write-Host " ;:::::::::t33V" -NoNewline -ForegroundColor Cyan
 Write-Host " ;EEEttttt::::t3 " -NoNewline -ForegroundColor Yellow
-Write-Host "    Processes: " -NoNewline -ForegroundColor Red
+Write-Host "    Processes: " -NoNewline -ForegroundColor DarkGray
 Write-Host "$NumberOfProcesses" -ForegroundColor Cyan
 Write-Host " E::::::::zt33L" -NoNewline -ForegroundColor Cyan
 Write-Host " @EEEtttt::::z3F " -NoNewline -ForegroundColor Yellow
-Write-Host "    Current Load: " -NoNewline -ForegroundColor Red
+Write-Host "    Current Load: " -NoNewline -ForegroundColor DarkGray
 Write-Host "$CurrentLoad" -ForegroundColor Cyan
 Write-Host " {3=*^``````'*4E3)" -NoNewline -ForegroundColor Cyan
 Write-Host " ;EEEtttt:::::tZ`` " -NoNewline -ForegroundColor Yellow
-Write-Host "   Memory: " -NoNewline -ForegroundColor Red
+Write-Host "   Memory: " -NoNewline -ForegroundColor DarkGray
 Write-Host "$Memory_Size" -ForegroundColor Cyan
 Write-Host "              ``" -NoNewline -ForegroundColor Cyan
 Write-Host " :EEEEtttt::::z7 " -NoNewline -ForegroundColor Yellow
-Write-Host "    System Volume: " -NoNewline -ForegroundColor Red
+Write-Host "    System Volume: " -NoNewline -ForegroundColor DarkGray
 Write-Host "$DiskSize" -ForegroundColor Cyan
 Write-Host "                 'VEzjt:;;z>*`` " -ForegroundColor Yellow
 [Environment]::NewLine
