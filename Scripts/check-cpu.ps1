@@ -51,10 +51,10 @@ try {
 		$Temp = "no temp"
 	} elseif ($Celsius -gt 50) {
 		$Temp = "$($Celsius)°C"
-		$Status = "⚠"
+		$Status = "⚠️"
 	} elseif ($Celsius -lt 0) {
 		$Temp = "$($Celsius)°C"
-		$Status = "⚠"
+		$Status = "⚠️"
 	} else {
 		$Temp = "$($Celsius)°C"
 	} 
