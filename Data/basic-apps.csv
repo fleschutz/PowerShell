@@ -18,6 +18,7 @@ APPLICATION,           CATEGORY,                    APPID
 "Mozilla Firefox",     "desktop browser",           "9NZVDKPMR9RD"
 "Mozilla Thunderbird", "email client",              "Mozilla.Thunderbird"
 "Mp3tag",              "MP3 tag editor",            "9NN77TCQ1NC8"
+"Nearby Share",        "file sync",                 "Google.NearbyShare"
 "Netflix",             "video player",              "9WZDNCRFJ3TJ"
 "Notepad++",           "text editor",               "Notepad++.Notepad++"
 "OBS Studio",          "video recorder",            "XPFFH613W8V6LV"
