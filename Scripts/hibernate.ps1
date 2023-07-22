@@ -5,7 +5,7 @@
 	This PowerShell script hibernates the local computer immediately. 
 .EXAMPLE
 	PS> ./hibernate.ps1
-	😴💤 Good night, I'm going to sleep deep...
+	It's 5:04 PM, going to sleep now... 😴💤
 .LINK
 	https://github.com/fleschutz/PowerShell
 .NOTES
@@ -13,7 +13,10 @@
 #>
 
 try {
-	Write-Host "😴💤 Good night, I'm going to sleep deep..."
+	[system.threading.thread]::currentThread.currentCulture = [system.globalization.cultureInfo]"en-US"
+	$CurrentTime = $((Get-Date).ToShortTimeString())
+	Write-Host "It's $CurrentTime, going to sleep now... 😴💤p"
+	Start-Sleep -milliseconds 500
 	& rundll32.exe powrprof.dll,SetSuspendState 1,1,0 # bHibernate,bForce,bWakeupEventsDisabled
 	exit 0 # success
 } catch {
