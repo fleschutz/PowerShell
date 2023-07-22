@@ -2,9 +2,10 @@
 .SYNOPSIS
 	Hibernates the computer
 .DESCRIPTION
-	This PowerShell script enables hibernate mode for the local computer immediately. 
+	This PowerShell script hibernates the local computer immediately. 
 .EXAMPLE
-	PS> ./hibernate
+	PS> ./hibernate.ps1
+	😴💤 Good night, I'm going to sleep deep...
 .LINK
 	https://github.com/fleschutz/PowerShell
 .NOTES
@@ -12,7 +13,7 @@
 #>
 
 try {
-	"Bye bye."
+	Write-Host "😴💤 Good night, I'm going to sleep deep..."
 	& rundll32.exe powrprof.dll,SetSuspendState 1,1,0 # bHibernate,bForce,bWakeupEventsDisabled
 	exit 0 # success
 } catch {
