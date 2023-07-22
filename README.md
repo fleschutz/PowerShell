@@ -98,30 +98,30 @@ Mega Collection of PowerShell Scripts
 | [close-chrome.ps1](Scripts/close-chrome.ps1)         | Closes the Chrome browser. [Read more...](Docs/close-chrome.md)            |
 | [close-program.ps1](Scripts/close-program.ps1)       | Closes the given program gracefully. [Read more...](Docs/close-program.md)           |
 | [close-edge.ps1](Scripts/close-edge.ps1)             | Closes the Edge browser. [Read more...](Docs/close-edge.md)              |
-| [close-file-explorer.ps1](Scripts/close-file-explorer.ps1)| Closes Microsoft File Explorer.                                [Read more...](Docs/close-file-explorer.md)     |
-| [close-firefox.ps1](Scripts/close-firefox.ps1)       | Closes the Firefox browser.                                         [Read more...](Docs/close-edge.md)              |
-| [close-microsoft-store.ps1](Scripts/close-microsoft-store.ps1)| Closes the Microsoft Store app.                            [Read more...](Docs/close-microsoft-store.md)   |
-| [close-netflix.ps1](Scripts/close-netflix.ps1)       | Closes the Netflix app.                                             [Read more...](Docs/close-netflix.md)           |
-| [close-onedrive.ps1](Scripts/close-onedrive.ps1)     | Closes Microsoft OneDrive.                                           [Read more...](Docs/close-onedrive.md)          |
-| [close-serenade.ps1](Scripts/close-serenade.ps1)     | Closes the Serenade application.                                     [Read more...](Docs/close-serenade.md)          |
-| [close-snipping-tool.ps1](Scripts/close-snipping-tool.ps1)| Closes the Snipping Tool application.                           [Read more...](Docs/close-snipping-tool.md)     |
-| [close-spotify.ps1](Scripts/close-spotify.ps1)       | Closes Spotify.                                                      [Read more...](Docs/close-spotify.md)           |
-| [close-system-settings.ps1](Scripts/close-system-settings.ps1) | Closes the System Settings window.                         [Read more...](Docs/close-system-settings.md)   |
-| [close-task-manager.ps1](Scripts/close-task-manager.ps1) | Closes the Task Manager.                                         [Read more...](Docs/close-task-manager.md)      |
-| [close-thunderbird.ps1](Scripts/close-thunderbird.ps1) | Closes Mozilla Thunderbird.                                        [Read more...](Docs/close-thunderbird.md)       |
-| [close-vlc.ps1](Scripts/close-vlc.ps1)               | Closes the VLC media player application.                             [Read more...](Docs/close-vlc.md)               |
-| [close-windows-terminal.ps1](Scripts/close-windows-terminal.ps1) | Closes the Windows Terminal application.                 [Read more...](Docs/close-windows-terminal.md)  |
-| [enable-god-mode.ps1](Scripts/enable-god-mode.ps1)   | Enables the god mode (adds a new icon to the desktop).               [Read more...](Docs/enable-god-mode.md)         |
-| [list-clipboard.ps1](Scripts/list-clipboard.ps1)     | Lists the contents of the clipboard.                                 [Read more...](Docs/list-clipboard.md)          |
-| [new-email.ps1](Scripts/new-email.ps1)               | Starts the default email client to write a new email.                [Read more...](Docs/new-email.md)               |
-| [open-amazon-website.ps1](Scripts/open-amazon-website.ps1)| Opens Amazon's website.                                         [Read more...](Docs/open-amazon-website.md)     |
-| [open-default-browser.ps1](Scripts/open-default-browser.ps1)| Launches the default Web browser.                             [Read more...](Docs/open-default-browser.md)    |
-| [open-calculator.ps1](Scripts/open-calculator.ps1)   | Starts the calculator program.                                       [Read more...](Docs/open-calculator.md)         |
-| [open-c-drive.ps1](Scripts/open-c-drive.ps1)         | Opens the C: drive folder.                                           [Read more...](Docs/open-c-drive.md)            |
-| [open-downloads-folders.ps1](Scripts/open-downloads-folder.ps1) | Opens the user's downloads folder.                        [Read more...](Docs/open-downloads-folder.md)   |
-| [open-dropbox-folder.ps1](Scripts/open-dropbox-folder.ps1) | Opens the user's Dropbox folder.                               [Read more...](Docs/open-dropbox-folder.md)     |
-| [open-edge.ps1](Scripts/open-edge.ps1)               | Launches the Edge browser.                                           [Read more...](Docs/open-edge.md)               |
-| [open-email-client.ps1](Scripts/open-browser.ps1)    | Starts the default email client.                                     [Read more...](Docs/open-email-client.md)       |
+| [close-file-explorer.ps1](Scripts/close-file-explorer.ps1)| Closes Microsoft File Explorer. [Read more...](Docs/close-file-explorer.md)     |
+| [close-firefox.ps1](Scripts/close-firefox.ps1)       | Closes the Firefox browser. [Read more...](Docs/close-edge.md)              |
+| [close-microsoft-store.ps1](Scripts/close-microsoft-store.ps1)| Closes the Microsoft Store app. [Read more...](Docs/close-microsoft-store.md)   |
+| [close-netflix.ps1](Scripts/close-netflix.ps1)       | Closes the Netflix app. [Read more...](Docs/close-netflix.md)           |
+| [close-onedrive.ps1](Scripts/close-onedrive.ps1)     | Closes Microsoft OneDrive. [Read more...](Docs/close-onedrive.md)          |
+| [close-serenade.ps1](Scripts/close-serenade.ps1)     | Closes the Serenade application. [Read more...](Docs/close-serenade.md)          |
+| [close-snipping-tool.ps1](Scripts/close-snipping-tool.ps1)| Closes the Snipping Tool application. [Read more...](Docs/close-snipping-tool.md)     |
+| [close-spotify.ps1](Scripts/close-spotify.ps1)       | Closes Spotify. [Read more...](Docs/close-spotify.md)           |
+| [close-system-settings.ps1](Scripts/close-system-settings.ps1) | Closes the System Settings window. [Read more...](Docs/close-system-settings.md)   |
+| [close-task-manager.ps1](Scripts/close-task-manager.ps1) | Closes the Task Manager. [Read more...](Docs/close-task-manager.md)      |
+| [close-thunderbird.ps1](Scripts/close-thunderbird.ps1) | Closes Mozilla Thunderbird. [Read more...](Docs/close-thunderbird.md)       |
+| [close-vlc.ps1](Scripts/close-vlc.ps1)               | Closes the VLC media player application. [Read more...](Docs/close-vlc.md)               |
+| [close-windows-terminal.ps1](Scripts/close-windows-terminal.ps1) | Closes the Windows Terminal application. [Read more...](Docs/close-windows-terminal.md)  |
+| [enable-god-mode.ps1](Scripts/enable-god-mode.ps1)   | Enables the god mode (adds a new icon to the desktop). [Read more...](Docs/enable-god-mode.md)         |
+| [list-clipboard.ps1](Scripts/list-clipboard.ps1)     | Lists the contents of the clipboard. [Read more...](Docs/list-clipboard.md)          |
+| [new-email.ps1](Scripts/new-email.ps1)               | Starts the default email client to write a new email. [Read more...](Docs/new-email.md)               |
+| [open-amazon-website.ps1](Scripts/open-amazon-website.ps1)| Opens Amazon's website. [Read more...](Docs/open-amazon-website.md)     |
+| [open-default-browser.ps1](Scripts/open-default-browser.ps1)| Launches the default Web browser. [Read more...](Docs/open-default-browser.md)    |
+| [open-calculator.ps1](Scripts/open-calculator.ps1)   | Starts the calculator program. [Read more...](Docs/open-calculator.md)         |
+| [open-c-drive.ps1](Scripts/open-c-drive.ps1)         | Opens the C: drive folder. [Read more...](Docs/open-c-drive.md)            |
+| [open-downloads-folders.ps1](Scripts/open-downloads-folder.ps1) | Opens the user's downloads folder. [Read more...](Docs/open-downloads-folder.md)   |
+| [open-dropbox-folder.ps1](Scripts/open-dropbox-folder.ps1) | Opens the user's Dropbox folder. [Read more...](Docs/open-dropbox-folder.md)     |
+| [open-edge.ps1](Scripts/open-edge.ps1)               | Launches the Edge browser. [Read more...](Docs/open-edge.md)               |
+| [open-email-client.ps1](Scripts/open-browser.ps1)    | Starts the default email client. [Read more...](Docs/open-email-client.md)       |
 | [open-facebook-website.ps1](Scripts/open-facebook-website.ps1)| Opens Facebook's website.                                  [Read more...](Docs/open-facebook-website.md)   |
 | [open-file-explorer.ps1](Scripts/open-file-explorer.ps1) | Opens the File Explorer.                                         [Read more...](Docs/open-file-explorer.md)      |
 | [open-firefox.ps1](Scripts/open-firefox.ps1)         | Launches the Firefox browser.                                        [Read more...](Docs/open-firefox.md)            |
