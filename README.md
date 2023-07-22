@@ -91,71 +91,71 @@ Mega Collection of PowerShell Scripts
 💻 Scripts for the Desktop
 ---------------------------
 
-| Script                                               | Description                                                        | Help                                    |
-| ---------------------------------------------------- | ------------------------------------------------------------------ | --------------------------------------- |
-| [close-calculator.ps1](Scripts/close-calculator.ps1) | Closes the calculator application                                  | [Help](Docs/close-calculator.md)        |
-| [close-cortana.ps1](Scripts/close-cortana.ps1)       | Closes Cortana                                                     | [Help](Docs/close-cortana.md)           |
-| [close-chrome.ps1](Scripts/close-chrome.ps1)         | Closes the Chrome browser                                          | [Help](Docs/close-chrome.md)            |
-| [close-program.ps1](Scripts/close-program.ps1)       | Closes the given program gracefully                                | [Help](Docs/close-program.md)           |
-| [close-edge.ps1](Scripts/close-edge.ps1)             | Closes the Edge browser                                            | [Help](Docs/close-edge.md)              |
-| [close-file-explorer.ps1](Scripts/close-file-explorer.ps1)| Closes Microsoft File Explorer                                | [Help](Docs/close-file-explorer.md)     |
-| [close-firefox.ps1](Scripts/close-firefox.ps1)       | Closes the Firefox browser                                         | [Help](Docs/close-edge.md)              |
-| [close-microsoft-store.ps1](Scripts/close-microsoft-store.ps1)| Closes the Microsoft Store app                            | [Help](Docs/close-microsoft-store.md)   |
-| [close-netflix.ps1](Scripts/close-netflix.ps1)       | Closes the Netflix app                                             | [Help](Docs/close-netflix.md)           |
-| [close-onedrive.ps1](Scripts/close-onedrive.ps1)     | Closes Microsoft OneDrive                                          | [Help](Docs/close-onedrive.md)          |
-| [close-serenade.ps1](Scripts/close-serenade.ps1)     | Closes the Serenade application                                    | [Help](Docs/close-serenade.md)          |
-| [close-snipping-tool.ps1](Scripts/close-snipping-tool.ps1)| Closes the Snipping Tool application                          | [Help](Docs/close-snipping-tool.md)     |
-| [close-spotify.ps1](Scripts/close-spotify.ps1)       | Closes Spotify                                                     | [Help](Docs/close-spotify.md)           |
-| [close-system-settings.ps1](Scripts/close-system-settings.ps1) | Closes the System Settings window                        | [Help](Docs/close-system-settings.md)   |
-| [close-task-manager.ps1](Scripts/close-task-manager.ps1) | Closes the Task Manager                                        | [Help](Docs/close-task-manager.md)      |
-| [close-thunderbird.ps1](Scripts/close-thunderbird.ps1) | Closes Mozilla Thunderbird                                       | [Help](Docs/close-thunderbird.md)       |
-| [close-vlc.ps1](Scripts/close-vlc.ps1)               | Closes the VLC media player application                            | [Help](Docs/close-vlc.md)               |
-| [close-windows-terminal.ps1](Scripts/close-windows-terminal.ps1) | Closes the Windows Terminal application                | [Help](Docs/close-windows-terminal.md)  |
-| [enable-god-mode.ps1](Scripts/enable-god-mode.ps1)   | Enables the god mode (adds a new icon to the desktop)              | [Help](Docs/enable-god-mode.md)         |
-| [list-clipboard.ps1](Scripts/list-clipboard.ps1)     | Lists the contents of the clipboard                                | [Help](Docs/list-clipboard.md)          |
-| [new-email.ps1](Scripts/new-email.ps1)               | Starts the default email client to write a new email               | [Help](Docs/new-email.md)               |
-| [open-amazon-website.ps1](Scripts/open-amazon-website.ps1)| Opens Amazon's website                                        | [Help](Docs/open-amazon-website.md)     |
-| [open-default-browser.ps1](Scripts/open-default-browser.ps1)| Launches the default Web browser                            | [Help](Docs/open-default-browser.md)    |
-| [open-calculator.ps1](Scripts/open-calculator.ps1)   | Starts the calculator program                                      | [Help](Docs/open-calculator.md)         |
-| [open-c-drive.ps1](Scripts/open-c-drive.ps1)         | Opens the C: drive folder                                          | [Help](Docs/open-c-drive.md)            |
-| [open-downloads-folders.ps1](Scripts/open-downloads-folder.ps1) | Opens the user's downloads folder                       | [Help](Docs/open-downloads-folder.md)   |
-| [open-dropbox-folder.ps1](Scripts/open-dropbox-folder.ps1) | Opens the user's Dropbox folder                              | [Help](Docs/open-dropbox-folder.md)     |
-| [open-edge.ps1](Scripts/open-edge.ps1)               | Launches the Edge browser                                          | [Help](Docs/open-edge.md)               |
-| [open-email-client.ps1](Scripts/open-browser.ps1)    | Starts the default email client                                    | [Help](Docs/open-email-client.md)       |
-| [open-facebook-website.ps1](Scripts/open-facebook-website.ps1)| Opens Facebook's website                                  | [Help](Docs/open-facebook-website.md)   |
-| [open-file-explorer.ps1](Scripts/open-file-explorer.ps1) | Opens the File Explorer                                        | [Help](Docs/open-file-explorer.md)      |
-| [open-firefox.ps1](Scripts/open-firefox.ps1)         | Launches the Firefox browser                                       | [Help](Docs/open-firefox.md)            |
-| [open-fritz-box.ps1](Scripts/open-fritz-box.ps1)     | Opens FRITZ!Box's web interface                                    | [Help](Docs/open-fritz-box.md)          |
-| [open-github.ps1](Scripts/open-github.ps1)           | Opens GitHub's website                                             | [Help](Docs/open-github.md)             |
-| [open-google-contacts.ps1](Scripts/open-google-contacts.ps1) | Opens Google Contacts                                      | [Help](Docs/open-google-contacts.md)    |
-| [open-google-earth.ps1](Scripts/open-google-earth.ps1) | Opens Google Earth                                               | [Help](Docs/open-google-earth.md)       |
-| [open-google-mail.ps1](Scripts/open-google-mail.ps1) | Opens Google Mail                                                  | [Help](Docs/open-google-mail.md)        |
-| [open-google-maps.ps1](Scripts/open-google-maps.ps1) | Opens Google Maps                                                  | [Help](Docs/open-google-maps.md)        |
-| [open-google-news.ps1](Scripts/open-google-news.ps1) | Opens Google News                                                  | [Help](Docs/open-google-news.md)        |
-| [open-google-play.ps1](Scripts/open-google-play.ps1) | Opens Google Play                                                  | [Help](Docs/open-google-play.md)        |
-| [open-google-search.ps1](Scripts/open-google-search.ps1) | Opens Google Search                                            | [Help](Docs/open-google-search.md)      |
-| [open-google-translate.ps1](Scripts/open-google-translate.ps1) | Opens Google Translate                                   | [Help](Docs/open-google-translate.md)   |
-| [open-home-folder.ps1](Scripts/open-home-folder.ps1) | Opens the user's home folder                                       | [Help](Docs/open-home-folder.md)        |
-| [open-music-folder.ps1](Scripts/open-music-folder.ps1)| Opens the user's music folder                                     | [Help](Docs/open-music-folder.md)       |
-| [open-netflix.ps1](Scripts/open-netflix.ps1)         | Starts the Netflix app                                             | [Help](Docs/open-netflix.md)            |
-| [open-microsoft-store.ps1](Scripts/open-microsoft-store.ps1)| Launches the Microsoft Store app                            | [Help](Docs/open-microsoft-store.md)    |
-| [open-notepad.ps1](Scripts/open-notepad.ps1)         | Starts the Notepad app                                             | [Help](Docs/open-notepad.md)            |
-| [open-onedrive-folder.ps1](Scripts/open-onedrive-folder.ps1)| Opens the user's OneDrive folder                            | [Help](Docs/open-onedrive-folder.md)    |
-| [open-pictures-folder.ps1](Scripts/open-pictures-folder.ps1) | Opens the user's pictures folder                           | [Help](Docs/open-pictures-folder.md)    |
-| [open-recycle-bin.ps1](Scripts/open-recycle-bin.ps1) | Opens the user's recycle bin folder                                | [Help](Docs/open-recycle-bin.md)        |
-| [open-repos-folder.ps1](Scripts/open-repos-folder.ps1) | Opens the user's Git repositories folder                         | [Help](Docs/open-repos-folder.md)       |
-| [open-snipping-tool.ps1](Scripts/open-snipping-tool.ps1)| Starts the Snipping Tool                                        | [Help](Docs/open-snipping-tool.md)      |
-| [open-speed-test.ps1](Scripts/open-speed-test.ps1)   | Opens Cloudflare's speed test                                      | [Help](Docs/open-speed-test.md)         |
-| [open-spotify.ps1](Scripts/open-spotify.ps1)         | Opens Spotify                                                      | [Help](Docs/open-spotify.md)            |
-| [open-system-settings.ps1](Scripts/open-system-settings.ps1)| Opens system settings of Windows                            | [Help](Docs/open-system-settings.md)    |
-| [open-task-manager.ps1](Scripts/open-task-manager.ps1)| Starts the Task Manager                                           | [Help](Docs/open-task-manager.md)       |
-| [open-videos-folder.ps1](Scripts/open-videos-folder.ps1)| Opens the user's videos folder                                  | [Help](Docs/open-videos-folder.md)      |
-| [open-windows-terminal.ps1](Scripts/open-windows-terminal.ps1)| Launches Windows Terminal                                 | [Help](Docs/open-windows-terminal.md)   |
-| [open-wikipedia-website.ps1](Scripts/open-wikipedia-website.ps1)| Opens Wikipedia's website                               | [Help](Docs/open-wikipedia-website.md)  |
-| [open-youtube-website.ps1](Scripts/open-youtube-website.ps1)| Opens YouTube's website                                     | [Help](Docs/open-youtube-website.md)    |
-| [remind-me.ps1](Scripts/remind-me.ps1)               | Creates a scheduled task that will display a popup message         | [Help](Docs/remind-me.md)               |
-| [save-screenshot.ps1](Scripts/save-screenshot.ps1)   | Saves a single screenshot                                          | [Help](Docs/save-screenshot.md)         |
-| [set-wallpaper.ps1](Scripts/set-wallpaper.ps1)       | Sets the given image as wallpaper                                  | [Help](Docs/set-wallpaper.md)           |
+| Script                                               | Description                                                                                           |
+| ---------------------------------------------------- | --------------------------------------------------------------------------------------------------------- |
+| [close-calculator.ps1](Scripts/close-calculator.ps1) | Closes the calculator application. [Read more...](Docs/close-calculator.md)        |
+| [close-cortana.ps1](Scripts/close-cortana.ps1)       | Closes Cortana. [Read more...](Docs/close-cortana.md)           |
+| [close-chrome.ps1](Scripts/close-chrome.ps1)         | Closes the Chrome browser                                          [Read more...](Docs/close-chrome.md)            |
+| [close-program.ps1](Scripts/close-program.ps1)       | Closes the given program gracefully                               [Read more...](Docs/close-program.md)           |
+| [close-edge.ps1](Scripts/close-edge.ps1)             | Closes the Edge browser                                            [Read more...](Docs/close-edge.md)              |
+| [close-file-explorer.ps1](Scripts/close-file-explorer.ps1)| Closes Microsoft File Explorer                                [Read more...](Docs/close-file-explorer.md)     |
+| [close-firefox.ps1](Scripts/close-firefox.ps1)       | Closes the Firefox browser                                         [Read more...](Docs/close-edge.md)              |
+| [close-microsoft-store.ps1](Scripts/close-microsoft-store.ps1)| Closes the Microsoft Store app                            [Read more...](Docs/close-microsoft-store.md)   |
+| [close-netflix.ps1](Scripts/close-netflix.ps1)       | Closes the Netflix app                                             [Read more...](Docs/close-netflix.md)           |
+| [close-onedrive.ps1](Scripts/close-onedrive.ps1)     | Closes Microsoft OneDrive                                           [Read more...](Docs/close-onedrive.md)          |
+| [close-serenade.ps1](Scripts/close-serenade.ps1)     | Closes the Serenade application                                     [Read more...](Docs/close-serenade.md)          |
+| [close-snipping-tool.ps1](Scripts/close-snipping-tool.ps1)| Closes the Snipping Tool application                           [Read more...](Docs/close-snipping-tool.md)     |
+| [close-spotify.ps1](Scripts/close-spotify.ps1)       | Closes Spotify                                                      [Read more...](Docs/close-spotify.md)           |
+| [close-system-settings.ps1](Scripts/close-system-settings.ps1) | Closes the System Settings window                         [Read more...](Docs/close-system-settings.md)   |
+| [close-task-manager.ps1](Scripts/close-task-manager.ps1) | Closes the Task Manager                                         [Read more...](Docs/close-task-manager.md)      |
+| [close-thunderbird.ps1](Scripts/close-thunderbird.ps1) | Closes Mozilla Thunderbird                                        [Read more...](Docs/close-thunderbird.md)       |
+| [close-vlc.ps1](Scripts/close-vlc.ps1)               | Closes the VLC media player application                             [Read more...](Docs/close-vlc.md)               |
+| [close-windows-terminal.ps1](Scripts/close-windows-terminal.ps1) | Closes the Windows Terminal application                 [Read more...](Docs/close-windows-terminal.md)  |
+| [enable-god-mode.ps1](Scripts/enable-god-mode.ps1)   | Enables the god mode (adds a new icon to the desktop)               [Read more...](Docs/enable-god-mode.md)         |
+| [list-clipboard.ps1](Scripts/list-clipboard.ps1)     | Lists the contents of the clipboard                                 [Read more...](Docs/list-clipboard.md)          |
+| [new-email.ps1](Scripts/new-email.ps1)               | Starts the default email client to write a new email                [Read more...](Docs/new-email.md)               |
+| [open-amazon-website.ps1](Scripts/open-amazon-website.ps1)| Opens Amazon's website                                         [Read more...](Docs/open-amazon-website.md)     |
+| [open-default-browser.ps1](Scripts/open-default-browser.ps1)| Launches the default Web browser                             [Read more...](Docs/open-default-browser.md)    |
+| [open-calculator.ps1](Scripts/open-calculator.ps1)   | Starts the calculator program                                       [Read more...](Docs/open-calculator.md)         |
+| [open-c-drive.ps1](Scripts/open-c-drive.ps1)         | Opens the C: drive folder                                           [Read more...](Docs/open-c-drive.md)            |
+| [open-downloads-folders.ps1](Scripts/open-downloads-folder.ps1) | Opens the user's downloads folder                        [Read more...](Docs/open-downloads-folder.md)   |
+| [open-dropbox-folder.ps1](Scripts/open-dropbox-folder.ps1) | Opens the user's Dropbox folder                               [Read more...](Docs/open-dropbox-folder.md)     |
+| [open-edge.ps1](Scripts/open-edge.ps1)               | Launches the Edge browser                                           [Read more...](Docs/open-edge.md)               |
+| [open-email-client.ps1](Scripts/open-browser.ps1)    | Starts the default email client                                     [Read more...](Docs/open-email-client.md)       |
+| [open-facebook-website.ps1](Scripts/open-facebook-website.ps1)| Opens Facebook's website                                   [Read more...](Docs/open-facebook-website.md)   |
+| [open-file-explorer.ps1](Scripts/open-file-explorer.ps1) | Opens the File Explorer                                         [Read more...](Docs/open-file-explorer.md)      |
+| [open-firefox.ps1](Scripts/open-firefox.ps1)         | Launches the Firefox browser                                        [Read more...](Docs/open-firefox.md)            |
+| [open-fritz-box.ps1](Scripts/open-fritz-box.ps1)     | Opens FRITZ!Box's web interface                                     [Read more...](Docs/open-fritz-box.md)          |
+| [open-github.ps1](Scripts/open-github.ps1)           | Opens GitHub's website                                              [Read more...](Docs/open-github.md)             |
+| [open-google-contacts.ps1](Scripts/open-google-contacts.ps1) | Opens Google Contacts                                       [Read more...](Docs/open-google-contacts.md)    |
+| [open-google-earth.ps1](Scripts/open-google-earth.ps1) | Opens Google Earth                                                [Read more...](Docs/open-google-earth.md)       |
+| [open-google-mail.ps1](Scripts/open-google-mail.ps1) | Opens Google Mail                                                   [Read more...](Docs/open-google-mail.md)        |
+| [open-google-maps.ps1](Scripts/open-google-maps.ps1) | Opens Google Maps                                                   [Read more...](Docs/open-google-maps.md)        |
+| [open-google-news.ps1](Scripts/open-google-news.ps1) | Opens Google News                                                   [Read more...](Docs/open-google-news.md)        |
+| [open-google-play.ps1](Scripts/open-google-play.ps1) | Opens Google Play                                                   [Read more...](Docs/open-google-play.md)        |
+| [open-google-search.ps1](Scripts/open-google-search.ps1) | Opens Google Search                                             [Read more...](Docs/open-google-search.md)      |
+| [open-google-translate.ps1](Scripts/open-google-translate.ps1) | Opens Google Translate                                    [Read more...](Docs/open-google-translate.md)   |
+| [open-home-folder.ps1](Scripts/open-home-folder.ps1) | Opens the user's home folder                                        [Read more...](Docs/open-home-folder.md)        |
+| [open-music-folder.ps1](Scripts/open-music-folder.ps1)| Opens the user's music folder                                      [Read more...](Docs/open-music-folder.md)       |
+| [open-netflix.ps1](Scripts/open-netflix.ps1)         | Starts the Netflix app                                              [Read more...](Docs/open-netflix.md)            |
+| [open-microsoft-store.ps1](Scripts/open-microsoft-store.ps1)| Launches the Microsoft Store app                             [Read more...](Docs/open-microsoft-store.md)    |
+| [open-notepad.ps1](Scripts/open-notepad.ps1)         | Starts the Notepad app                                              [Read more...](Docs/open-notepad.md)            |
+| [open-onedrive-folder.ps1](Scripts/open-onedrive-folder.ps1)| Opens the user's OneDrive folder                             [Read more...](Docs/open-onedrive-folder.md)    |
+| [open-pictures-folder.ps1](Scripts/open-pictures-folder.ps1) | Opens the user's pictures folder                            [Read more...](Docs/open-pictures-folder.md)    |
+| [open-recycle-bin.ps1](Scripts/open-recycle-bin.ps1) | Opens the user's recycle bin folder                                 [Read more...](Docs/open-recycle-bin.md)        |
+| [open-repos-folder.ps1](Scripts/open-repos-folder.ps1) | Opens the user's Git repositories folder                          [Read more...](Docs/open-repos-folder.md)       |
+| [open-snipping-tool.ps1](Scripts/open-snipping-tool.ps1)| Starts the Snipping Tool                                         [Read more...](Docs/open-snipping-tool.md)      |
+| [open-speed-test.ps1](Scripts/open-speed-test.ps1)   | Opens Cloudflare's speed test                                       [Read more...](Docs/open-speed-test.md)         |
+| [open-spotify.ps1](Scripts/open-spotify.ps1)         | Opens Spotify                                                       [Read more...](Docs/open-spotify.md)            |
+| [open-system-settings.ps1](Scripts/open-system-settings.ps1)| Opens system settings of Windows                             [Read more...](Docs/open-system-settings.md)    |
+| [open-task-manager.ps1](Scripts/open-task-manager.ps1)| Starts the Task Manager                                            [Read more...](Docs/open-task-manager.md)       |
+| [open-videos-folder.ps1](Scripts/open-videos-folder.ps1)| Opens the user's videos folder                                   [Read more...](Docs/open-videos-folder.md)      |
+| [open-windows-terminal.ps1](Scripts/open-windows-terminal.ps1)| Launches Windows Terminal                                  [Read more...](Docs/open-windows-terminal.md)   |
+| [open-wikipedia-website.ps1](Scripts/open-wikipedia-website.ps1)| Opens Wikipedia's website                                [Read more...](Docs/open-wikipedia-website.md)  |
+| [open-youtube-website.ps1](Scripts/open-youtube-website.ps1)| Opens YouTube's website                                      [Read more...](Docs/open-youtube-website.md)    |
+| [remind-me.ps1](Scripts/remind-me.ps1)               | Creates a scheduled task that will display a popup message          [Read more...](Docs/remind-me.md)               |
+| [save-screenshot.ps1](Scripts/save-screenshot.ps1)   | Saves a single screenshot                                           [Read more...](Docs/save-screenshot.md)         |
+| [set-wallpaper.ps1](Scripts/set-wallpaper.ps1)       | Sets the given image as wallpaper                                   [Read more...](Docs/set-wallpaper.md)           |
 
 📁 Scripts for Files & Folders 
 -------------------------------
