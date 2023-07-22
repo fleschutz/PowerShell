@@ -46,7 +46,7 @@ Mega Collection of PowerShell Scripts
 
 | Script                                               | Description                                                                                       |
 | ---------------------------------------------------- | ------------------------------------------------------------------------------------------------- |
-| [add-firewall-rules.ps1](Scripts/add-firewall-rules.ps1) | Adds firewall rules for the given executables (needs admin rights). [Read more...](Docs/add-firewall-rules.md) |
+| [add-firewall-rules.ps1](Scripts/add-firewall-rules.ps1) | Adds firewall rules for executables, needs admin rights. [Read more...](Docs/add-firewall-rules.md) |
 | [check-cpu.ps1](Scripts/check-cpu.ps1)| Checks the CPU temperature. [Read more...](Docs/check-cpu.md)                                                    |
 | [check-dns.ps1](Scripts/check-dns.ps1) | Checks the DNS resolution. [Read more...](Docs/check-dns.md)                                                  |
 | [check-drive-space.ps1](Scripts/check-drive-space.ps1) | Checks a drive for free space left. [Read more...](Docs/check-drive-space.md)                   |
@@ -70,7 +70,7 @@ Mega Collection of PowerShell Scripts
 | [list-dns-servers.ps1](Scripts/list-dns-servers.ps1) | Lists public DNS servers. [Read more...](Docs/list-dns-servers.md)  
 | [list-drives.ps1](Scripts/list-drives.ps1)           | Lists all drives. [Read more...](Docs/list-drives.md)                                             |
 | [list-network-shares.ps1](Scripts/list-network-shares.ps1) | Lists all network shares of the local computer. [Read more...](Docs/list-network-shares.md) |
-| [list-installed-software.ps1](Scripts/list-installed-software.ps1) | Lists the installed software (except Windows Store apps). [Read more...](Docs/list-installed-software.md)|
+| [list-installed-software.ps1](Scripts/list-installed-software.ps1) | Lists the installed software. [Read more...](Docs/list-installed-software.md)|
 | [list-printers.ps1](Scripts/list-printers.ps1)       | Lists all printer known to the computer. [Read more...](Docs/list-printers.md)                    |
 | [list-print-jobs.ps1](Scripts/list-print-jobs.ps1)   | Lists all jobs of all printers. [Read more...](Docs/list-print-jobs.md)                           |
 | [list-processes.ps1](Scripts/list-processes.ps1)     | Lists the local computer processes. [Read more...](Docs/list-processes.md)                        |
