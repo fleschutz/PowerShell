@@ -3,9 +3,11 @@
 	Installs basic apps
 .DESCRIPTION
 	This PowerShell script installs basic Windows apps such as browser, e-mail client, etc.
-	Apps from Microsoft Store are preferred (due to security and automatic updates). 
+	NOTE: Apps from Microsoft Store are preferred (due to security and automatic updates). 
 .EXAMPLE
 	PS> ./install-basic-apps
+	⏳ (1/37) Loading Data/basic-apps.csv...            35 apps
+	⏳ (2/37) These apps will be installed or upgraded: 7-Zip · Aquile Reader ...
 .LINK
 	https://github.com/fleschutz/PowerShell
 .NOTES
@@ -15,11 +17,11 @@
 try {
 	$StopWatch = [system.diagnostics.stopwatch]::startNew()
 
-	Write-Host "⏳ (1/36) Loading Data/basic-apps.csv...        " -noNewline
+	Write-Host "⏳ (1/37) Loading Data/basic-apps.csv...            " -noNewline
 	$Table = Import-CSV "$PSScriptRoot/../Data/basic-apps.csv"
 	$NumEntries = $Table.count
 	"$NumEntries apps"
-	Write-Host "⏳ (2/36) About to install/upgrade these apps:  " -noNewline
+	Write-Host "⏳ (2/37) These apps will be installed or upgraded: " -noNewline
 	foreach($Row in $Table) {
 		[string]$AppName = $Row.APPLICATION
 		Write-Host "$AppName · " -noNewline
@@ -43,7 +45,7 @@ try {
 	}
 	[int]$Installed = ($NumEntries - $Failed)
 	[int]$Elapsed = $StopWatch.Elapsed.TotalSeconds
-	"✔️ installed $Installed of $NumEntries basic apps in $Elapsed sec (use list-updates.ps1 later on to list available updates)"
+	"✔️ installed $Installed of $NumEntries basic apps in $Elapsed sec"
 	exit 0 # success
 } catch {
 	"⚠️ Error in line $($_.InvocationInfo.ScriptLineNumber): $($Error[0])"
