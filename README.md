@@ -160,59 +160,59 @@ Mega Collection of PowerShell Scripts
 📁 Scripts for Files & Folders 
 -------------------------------
 
-| Script                                               | Description                                                        | Help                                |
-| ---------------------------------------------------- | ------------------------------------------------------------------ | ----------------------------------- |
-| [cd-autostart.ps1](Scripts/cd-autostart.ps1)         | Set the working directory to the user's autostart folder           | [Help](Docs/cd-autostart.md)        |
-| [cd-desktop.ps1](Scripts/cd-desktop.ps1)             | Set the working directory to the user's desktop folder             | [Help](Docs/cd-desktop.md)          |
-| [cd-docs.ps1](Scripts/cd-docs.ps1)                   | Set the working directory to the user's documents folder           | [Help](Docs/cd-docs.md)             |
-| [cd-downloads.ps1](Scripts/cd-downloads.ps1)         | Set the working directory to the user's downloads folder           | [Help](Docs/cd-downloads.md)        |
-| [cd-dropbox.ps1](Scripts/cd-dropbox.ps1)             | Set the working directory to the user's Dropbox folder             | [Help](Docs/cd-dropbox.md)          |
-| [cd-home.ps1](Scripts/cd-home.ps1)                   | Set the working directory to the user's home folder                | [Help](Docs/cd-home.md)             |
-| [cd-music.ps1](Scripts/cd-music.ps1)                 | Set the working directory to the user's music folder               | [Help](Docs/cd-music.md)            |  
-| [cd-onedrive.ps1](Scripts/cd-onedrive.ps1)           | Set the working directory to the user's OneDrive folder            | [Help](Docs/cd-onedrive.md)         |
-| [cd-pics.ps1](Scripts/cd-pics.ps1)                   | Set the working directory to the user's pictures folder            | [Help](Docs/cd-pics.md)             |
-| [cd-recycle-bin.ps1](Scripts/cd-recycle-bin.ps1)     | Set the working directory to the user's recycle bin folder         | [Help](Docs/cd-recycle-bin.md)      |
-| [cd-repos.ps1](Scripts/cd-repos.ps1)                 | Change the working directory to the user's Git repositories folder | [Help](Docs/cd-repos.md)            |
-| [cd-root.ps1](Scripts/cd-root.ps1)                   | Set the working directory to the root directory (C:\ on Windows)   | [Help](Docs/cd-root.md)             |
-| [cd-scripts.ps1](Scripts/cd-scripts.ps1)             | Set the working directory to the PowerShell Scripts folder         | [Help](Docs/cd-scripts.md)          |
-| [cd-ssh.ps1](Scripts/cd-ssh.ps1)                     | Set the working directory to the user's SSH folder                 | [Help](Docs/cd-ssh.md)              |
-| [cd-up.ps1](Scripts/cd-up.ps1)                       | Set the working directory to one directory level up                | [Help](Docs/cd-up.md)               | 
-| [cd-up2.ps1](Scripts/cd-up2.ps1)                     | Set the working directory to two directory levels up               | [Help](Docs/cd-up2.md)              |
-| [cd-up3.ps1](Scripts/cd-up3.ps1)                     | Set the working directory to three directory levels up             | [Help](Docs/cd-up3.md)              |
-| [cd-up4.ps1](Scripts/cd-up4.ps1)                     | Set the working directory to four directory levels up              | [Help](Docs/cd-up4.md)              |
-| [cd-videos.ps1](Scripts/cd-videos.ps1)               | Set the working directory to the user's videos folder              | [Help](Docs/cd-videos.md)           |
-| [check-symlinks.ps1](Scripts/check-symlinks.ps1)     | Checks every symlink in a directory tree                           | [Help](Docs/check-symlinks.md)      |
-| [check-xml-file.ps1](Scripts/check-xml-file.ps1)     | Checks the given XML file for validity                             | [Help](Docs/check-xml-file.md)      |
-| [clear-recycle-bin.ps1](Scripts/clear-recycle-bin.ps1) | Removes the content of the recycle bin folder (can not be undo!) | [Help](Docs/clear-recycle-bin.md)   |
-| [copy-photos-sorted.ps1](Scripts/copy-photos-sorted.ps1) | Copy image files sorted by year and month                      | [Help](Docs/copy-photos-sorted.md)  |
-| [decrypt-file.ps1](Scripts/decrypt-file.ps1)         | Decrypts the given file                                            | [Help](Docs/decrypt-file.md)        |
-| [download-dir.ps1](Scripts/download-dir.ps1)         | Downloads a directory tree from the given URL                      | [Help](Docs/download-dir.md)        |
-| [download-file.ps1](Scripts/download-file.ps1)       | Downloads a file from the given URL                                | [Help](Docs/download-file.md)       |
-| [edit.ps1](Scripts/edit.ps1)                         | Edits the given file with the built-in text editor                 | [Help](Docs/edit.md)                |
-| [encrypt-file.ps1](Scripts/encrypt-file.ps1)         | Encrypts the given file                                            | [Help](Docs/encrypt-file.md)        |
-| [get-md5.ps1](Scripts/get-md5.ps1)                   | Prints the MD5 checksum of the given file                          | [Help](Docs/get-md5.md)             |
-| [get-sha1.ps1](Scripts/get-sha1.ps1)                 | Prints the SHA1 checksum of the given file                         | [Help](Docs/get-sha1.md)            |
-| [get-sha256.ps1](Scripts/get-sha256.ps1)             | Prints the SHA256 checksum of the given file                       | [Help](Docs/get-sha256.md)          |
-| [inspect-exe.ps1](Scripts/inspect-exe.ps1)           | Prints basic information of the given executable file              | [Help](Docs/inspect-exe.md)         |
-| [list-dir-tree.ps1](Scripts/list-dir-tree.ps1)       | Lists the directory tree content                                   | [Help](Docs/list-dir-treep.md)      |
-| [list-empty-dirs.ps1](Scripts/list-empty-dirs.ps1)   | Lists empty subfolders within the given directory tree             | [Help](Docs/list-empty-dirs.md)     |
-| [list-empty-files.ps1](Scripts/list-empty-files.ps1) | Lists empty files within the given directory tree                  | [Help](Docs/list-empty-files.md)    |
-| [list-files.ps1](Scripts/list-files.ps1)             | Lists all files in the given folder and also in every subfolder    | [Help](Docs/list-files.md)          |
-| [list-folder.ps1](Scripts/list-folder.ps1)           | Lists the folder content                                           | [Help](Docs/list-folder.md)         |
-| [list-hidden-files.ps1](Scripts/list-hidden-files.ps1) | Lists hidden files within the given directory tree               | [Help](Docs/list-hidden-files.md)   |
-| [list-recycle-bin.ps1](Scripts/list-recycle-bin.ps1) | Lists the content of the recycle bin folder                        | [Help](Docs/list-recycle-bin.md)    |
-| [list-unused-files.ps1](Scripts/list-unused-files.ps1) | Lists unused files in a directory tree                           | [Help](Docs/list-unused-files.md)   |
-| [list-workdir.ps1](Scripts/list-workdir.ps1)         | Lists the current working directory                                | [Help](Docs/list-workdir.md)        |
-| [make-install.ps1](Scripts/make-install.ps1)         | Installs built executables and libs to the installation directory  | [Help](Docs/make-install.md)        |
-| [new-shortcut.ps1](Scripts/new-shortcut.ps1)         | Creates a new shortcut file                                        | [Help](Docs/new-shortcut.md)        |
-| [new-symlink.ps1](Scripts/new-symlink.ps1)           | Creates a new symbolic link file                                   | [Help](Docs/new-symlink.md)         |
-| [new-zipfile.ps1](Scripts/new-zipfile.ps1)           | Creates a new .zip file from a directory                           | [Help](Docs/new-zipfile.md)         |
-| [publish-to-ipfs.ps1](Scripts/publish-to-ipfs.ps1)   | Publishes the given files or directory to IPFS                     | [Help](Docs/publish-to-ipfs.md)     |
-| [remove-empty-dirs.ps1](Scripts/remove-empty-dirs.ps1) | Removes empty subfolders within the given directory tree         | [Help](Docs/remove-empty-dirs.md)   |
-| [replace-in-files.ps1](Scripts/replace-in-files.ps1) | Search and replace a pattern in the given files by the replacement | [Help](Docs/replace-in-files.md)    |
-| [search-filename.ps1](Scripts/search-filename.ps1)   | Searches the directory tree for filenames by given pattern         | [Help](Docs/search-filename.md)     |
-| [search-files.ps1](Scripts/search-files.ps1)         | Searches the given pattern in the given files                      | [Help](Docs/search-files.md)        |
-| [upload-file.ps1](Scripts/upload-file.ps1)           | Uploads the local file to the given FTP server                     | [Help](Docs/upload-file.md)         |
+| Script                                               | Description                                                                                      |
+| ---------------------------------------------------- | --------------------------------------------------------------------------------------------------- |
+| [cd-autostart.ps1](Scripts/cd-autostart.ps1)         | Set the working directory to the user's autostart folder. [Read more...](Docs/cd-autostart.md)        |
+| [cd-desktop.ps1](Scripts/cd-desktop.ps1)             | Set the working directory to the user's desktop folder. [Read more...](Docs/cd-desktop.md)          |
+| [cd-docs.ps1](Scripts/cd-docs.ps1)                   | Set the working directory to the user's documents folder. [Read more...](Docs/cd-docs.md)             |
+| [cd-downloads.ps1](Scripts/cd-downloads.ps1)         | Set the working directory to the user's downloads folder. [Read more...](Docs/cd-downloads.md)        |
+| [cd-dropbox.ps1](Scripts/cd-dropbox.ps1)             | Set the working directory to the user's Dropbox folder. [Read more...](Docs/cd-dropbox.md)          |
+| [cd-home.ps1](Scripts/cd-home.ps1)                   | Set the working directory to the user's home folder. [Read more...](Docs/cd-home.md)             |
+| [cd-music.ps1](Scripts/cd-music.ps1)                 | Set the working directory to the user's music folder. [Read more...](Docs/cd-music.md)            |  
+| [cd-onedrive.ps1](Scripts/cd-onedrive.ps1)           | Set the working directory to the user's OneDrive folder. [Read more...](Docs/cd-onedrive.md)         |
+| [cd-pics.ps1](Scripts/cd-pics.ps1)                   | Set the working directory to the user's pictures folder. [Read more...](Docs/cd-pics.md)             |
+| [cd-recycle-bin.ps1](Scripts/cd-recycle-bin.ps1)     | Set the working directory to the user's recycle bin folder. [Read more...](Docs/cd-recycle-bin.md)      |
+| [cd-repos.ps1](Scripts/cd-repos.ps1)                 | Change the working directory to the user's Git repositories folder. [Read more...](Docs/cd-repos.md)            |
+| [cd-root.ps1](Scripts/cd-root.ps1)                   | Set the working directory to the root directory. [Read more...](Docs/cd-root.md)             |
+| [cd-scripts.ps1](Scripts/cd-scripts.ps1)             | Set the working directory to the PowerShell Scripts folder. [Read more...](Docs/cd-scripts.md)          |
+| [cd-ssh.ps1](Scripts/cd-ssh.ps1)                     | Set the working directory to the user's SSH folder. [Read more...](Docs/cd-ssh.md)              |
+| [cd-up.ps1](Scripts/cd-up.ps1)                       | Set the working directory to one directory level up. [Read more...](Docs/cd-up.md)               | 
+| [cd-up2.ps1](Scripts/cd-up2.ps1)                     | Set the working directory to two directory levels up. [Read more...](Docs/cd-up2.md)              |
+| [cd-up3.ps1](Scripts/cd-up3.ps1)                     | Set the working directory to three directory levels up. [Read more...](Docs/cd-up3.md)              |
+| [cd-up4.ps1](Scripts/cd-up4.ps1)                     | Set the working directory to four directory levels up. [Read more...](Docs/cd-up4.md)              |
+| [cd-videos.ps1](Scripts/cd-videos.ps1)               | Set the working directory to the user's videos folder. [Read more...](Docs/cd-videos.md)           |
+| [check-symlinks.ps1](Scripts/check-symlinks.ps1)     | Checks every symlink in a directory tree. [Read more...](Docs/check-symlinks.md)      |
+| [check-xml-file.ps1](Scripts/check-xml-file.ps1)     | Checks the given XML file for validity. [Read more...](Docs/check-xml-file.md)      |
+| [clear-recycle-bin.ps1](Scripts/clear-recycle-bin.ps1) | Removes the content of the recycle bin folder (can not be undo!). [Read more...](Docs/clear-recycle-bin.md)   |
+| [copy-photos-sorted.ps1](Scripts/copy-photos-sorted.ps1) | Copy image files sorted by year and month. [Read more...](Docs/copy-photos-sorted.md)  |
+| [decrypt-file.ps1](Scripts/decrypt-file.ps1)         | Decrypts the given file. [Read more...](Docs/decrypt-file.md)        |
+| [download-dir.ps1](Scripts/download-dir.ps1)         | Downloads a directory tree from the given URL. [Read more...](Docs/download-dir.md)        |
+| [download-file.ps1](Scripts/download-file.ps1)       | Downloads a file from the given URL. [Read more...](Docs/download-file.md)       |
+| [edit.ps1](Scripts/edit.ps1)                         | Edits the given file with the built-in text editor. [Read more...](Docs/edit.md)                |
+| [encrypt-file.ps1](Scripts/encrypt-file.ps1)         | Encrypts the given file. [Read more...](Docs/encrypt-file.md)        |
+| [get-md5.ps1](Scripts/get-md5.ps1)                   | Prints the MD5 checksum of the given file. [Read more...](Docs/get-md5.md)             |
+| [get-sha1.ps1](Scripts/get-sha1.ps1)                 | Prints the SHA1 checksum of the given file. [Read more...](Docs/get-sha1.md)            |
+| [get-sha256.ps1](Scripts/get-sha256.ps1)             | Prints the SHA256 checksum of the given file. [Read more...](Docs/get-sha256.md)          |
+| [inspect-exe.ps1](Scripts/inspect-exe.ps1)           | Prints basic information of the given executable file. [Read more...](Docs/inspect-exe.md)         |
+| [list-dir-tree.ps1](Scripts/list-dir-tree.ps1)       | Lists the directory tree content. [Read more...](Docs/list-dir-treep.md)      |
+| [list-empty-dirs.ps1](Scripts/list-empty-dirs.ps1)   | Lists empty subfolders within the given directory tree. [Read more...](Docs/list-empty-dirs.md)     |
+| [list-empty-files.ps1](Scripts/list-empty-files.ps1) | Lists empty files within the given directory tree. [Read more...](Docs/list-empty-files.md)    |
+| [list-files.ps1](Scripts/list-files.ps1)             | Lists all files in the given folder and also in every subfolder. [Read more...](Docs/list-files.md)          |
+| [list-folder.ps1](Scripts/list-folder.ps1)           | Lists the folder content. [Read more...](Docs/list-folder.md)         |
+| [list-hidden-files.ps1](Scripts/list-hidden-files.ps1) | Lists hidden files within the given directory tree. [Read more...](Docs/list-hidden-files.md)   |
+| [list-recycle-bin.ps1](Scripts/list-recycle-bin.ps1) | Lists the content of the recycle bin folder. [Read more...](Docs/list-recycle-bin.md)    |
+| [list-unused-files.ps1](Scripts/list-unused-files.ps1) | Lists unused files in a directory tree. [Read more...](Docs/list-unused-files.md)   |
+| [list-workdir.ps1](Scripts/list-workdir.ps1)         | Lists the current working directory. [Read more...](Docs/list-workdir.md)        |
+| [make-install.ps1](Scripts/make-install.ps1)         | Installs built executables and libs to the installation directory. [Read more...](Docs/make-install.md)        |
+| [new-shortcut.ps1](Scripts/new-shortcut.ps1)         | Creates a new shortcut file. [Read more...](Docs/new-shortcut.md)        |
+| [new-symlink.ps1](Scripts/new-symlink.ps1)           | Creates a new symbolic link file. [Read more...](Docs/new-symlink.md)         |
+| [new-zipfile.ps1](Scripts/new-zipfile.ps1)           | Creates a new .zip file from a directory. [Read more...](Docs/new-zipfile.md)         |
+| [publish-to-ipfs.ps1](Scripts/publish-to-ipfs.ps1)   | Publishes the given files or directory to IPFS. [Read more...](Docs/publish-to-ipfs.md)     |
+| [remove-empty-dirs.ps1](Scripts/remove-empty-dirs.ps1) | Removes empty subfolders within the given directory tree. [Read more...](Docs/remove-empty-dirs.md)   |
+| [replace-in-files.ps1](Scripts/replace-in-files.ps1) | Search and replace a pattern in the given files by the replacement. [Read more...](Docs/replace-in-files.md)    |
+| [search-filename.ps1](Scripts/search-filename.ps1)   | Searches the directory tree for filenames by given pattern. [Read more...](Docs/search-filename.md)     |
+| [search-files.ps1](Scripts/search-files.ps1)         | Searches the given pattern in the given files. [Read more...](Docs/search-files.md)        |
+| [upload-file.ps1](Scripts/upload-file.ps1)           | Uploads the local file to the given FTP server. [Read more...](Docs/upload-file.md)         |
 
 ♻️ Scripts to Convert Files
 ---------------------------
