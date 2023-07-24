@@ -4591,13 +4591,14 @@ TZ,Tanzania (ISO 3166 and FIPS 10-4 country code digram)
 TZA,Tanzania (ISO 3166 trigram)
 TZC,Tetrazolium chloride
 U,Uranium
-UA,Ukraine (ISO 3166 digram)  Unit of Action
+UA,Unit of Action
 UAAP,University Athletic Association of the Philippines
 UAB,University of Alabama at Birmingham
 UAE,United Arab Emirates (also IOC and FIFA trigram,but not ISO 3166)
 UAR,"Uniformly At Random (probability),Unión Argentina de Rugby (Spanish for "Argentine Rugby Union"),United Arab Republic"
 UAV,"Unmanned Aerial Vehicle,Unprotected Anal and Vaginal sex,UB[edit]"
 UBC,"United Baptist Church,University of British Columbia"
+UBI,Universal Basic Income
 UBIGEO,Ubicación Geografica (Spanish for Geographical Location)
 UBS,"Unbundled Bitstream Services,United Bank of Switzerland,United Banque Suisse"
 UCBSA,United Cricket Board of South Africa
@@ -4618,8 +4619,6 @@ UEFA,Union of European Football Associations
 UESAC,Uppsala-ESO Survey of Asteroids and Comets
 UFC,Ultimate Fighting Championship
 UFO,"Unidentified Flying Object, or: United Farmers of Ontario"
-UG,Uganda (ISO 3166 and FIPS 10-4 country code digram)
-UGA,Uganda (ISO 3166 trigram)
 UGV,Unmanned Ground Vehicle
 UHF,Ultra High Frequency
 UHMW,Ultra-High Molecular Weight
@@ -4697,21 +4696,21 @@ URL, Uniform Resource Locator ("earl")
 URU,Uruguay (IOC and FIFA trigram,but not ISO 3166)
 URY,Uruguay (ISO 3166 trigram)
 US,United States (also ISO 3166 and FIPS 10-4 country code digram)
-USA,United States of America (also ISO 3166 trigram),United States Army
-USAADAC,U.S. Army Air Defense Artillery Center,Fort Bliss,Texas
-USAARMC,U.S. Army ARMor Center,Fort Knox,Kentucky
-USAAVNC,U.S. Army AViatioN Center,Fort Rucker,Alabama
+USA,"United States of America (also ISO 3166 trigram), United States Army"
+USAADAC,"U.S. Army Air Defense Artillery Center,Fort Bliss,Texas"
+USAARMC,"U.S. Army ARMor Center,Fort Knox,Kentucky"
+USAAVNC,"U.S. Army AViatioN Center,Fort Rucker,Alabama"
 USAF,United States Air Force
 USAFSPC,U.S. Air Force Space Command
-USAIC,U.S. Army Infantry Center,U.S. Army Intelligence Center
+USAIC,"U.S. Army Infantry Center,U.S. Army Intelligence Center"
 USAID, United States Agency for International Development
-USAP,Union Sportive des Arlequins Perpignanais,United States Antarctic Program
+USAP,"Union Sportive des Arlequins Perpignanais,United States Antarctic Program"
 USAPATRIOT,Uniting and Strengthening America by Providing Appropriate Tools Required to Intercept and Obstruct Terrorism
 USAREUR,United States Army Europe
 USB,Universal Serial Bus
-USC,United States Code,University of South Carolina,University of Southern California
+USC,"United States Code,University of South Carolina,University of Southern California"
 USCG,United States Coast Guard
-USCINCSPACE,United States Commander in Chief,Space Command
+USCINCSPACE,"United States Commander in Chief,Space Command"
 USDA,United States Department of Agriculture
 USDI,United States Department of the Interior
 USDOE,United States Department of Energy
@@ -4722,11 +4721,11 @@ USFWS,United States Fish and Wildlife Service
 USGS,United States Geological Survey
 USIA,United States Information Agency
 USJFCOM,United States Joint Forces Command
-USL,United Soccer League,a third-level U.S. league. Not to be confused with an earlier league of the same name.,United Soccer Leagues,the organization that operates the above league,plus several other lower-level leagues,University of Southwestern Louisiana,a former name for the school now known as the University of Louisiana at Lafayette
+USL,"United Soccer League,a third-level U.S. league. Not to be confused with an earlier league of the same name.,United Soccer Leagues,the organization that operates the above league,plus several other lower-level leagues,University of Southwestern Louisiana,a former name for the school now known as the University of Louisiana at Lafayette"
 USMC,United States Marine Corps
 USMNT,United States men's national (soccer) team
 USN,United States Navy
-USNA,United States National Arboretum,United States Naval Academy
+USNA,"United States National Arboretum,United States Naval Academy"
 USNB,United States Naval Base
 USNG,United States National Grid
 USNH,United States Naval Hospital
@@ -4736,11 +4735,11 @@ USNOFS,United States Naval Observatory Flagstaff Station
 USNP,United States Newspaper Program
 USNR,United States Navy Reserve
 USNS,United States Naval Ship
-USNY,University of the State of New York (usually pronounced "use-knee")
+USNY,"University of the State of New York (usually pronounced 'use-knee')"
 USNZ,University Sport New Zealand
 USPS,United States Postal Service
 USPTO,United States Patent and Trademark Office
-USR,Universal System Resources (/usr,directory in a *NIX filesystem),User
+USR,User
 USS,United States ship (sometimes meaningless; see Star Trek)
 USSPACECOM,United States Space Command
 USSR,Union of Soviet Socialist Republics
