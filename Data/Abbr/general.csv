@@ -1918,7 +1918,9 @@ GY,Guyana (FIPS 10-4 country code; ISO 3166 digram)
 GZ,Gaza Strip (FIPS 10-4 territory code),Ground Zero
 GZK,Greisen-Zatsepin-Kuzmin cut-off (cosmic ray energies)
 h,Hecto
-H,Henry,Hydrogen
+H,Henry
+H1,First half of the year
+H2,Second half of the year
 HA,Haiti (FIPS 10-4 country code),High Availability
 HAARP,High Frequency Active Auroral Research Program
 HAART,Highly Active Anti-Retroviral Therapy
@@ -3991,10 +3993,10 @@ PY,Paraguay (ISO 3166 digram),Person-Year,Portsmouth yardstick
 PYF,French Polynesia (ISO 3166 trigram)
 PYMWYMI,Put Your Money Where Your Mouth Is
 PZ,Panama Canal Zone (ISO 3166 digram; obsolete 1980),Pickup Zone
-Q1,First Quarter
-Q2,Second Quarter
-Q3,Third Quarter
-Q4,Fourth Quarter
+Q1,First quarter of the year
+Q2,Second quarter of the year
+Q3,Third quarter of the year
+Q4,Fourth quarter of the year
 QA,Qatar (FIPS 10-4 country code; ISO 3166 digram)
 Qantas,Queensland And Northern Territory Aerial Services
 QAP,Quadripartite Advisory Publication ("kwapp")

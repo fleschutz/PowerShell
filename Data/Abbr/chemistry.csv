@@ -360,11 +360,10 @@ GT,Greater Than
 GTL,Gas To Liquid
 GTN,Glyceryl TriNitrate
 Gy,"Gray (radiation unit)"
-h,convection heat transfer coefficient
-H,Enthalpy
-h,hecto prefix (102)
-H,Hydrogen
-h,Planck’s constant
+H,"Enthalpy, Hydrogen"
+h,"hecto prefix (102), Planck’s constant, convection heat transfer coefficient"
+H2,Chemical formula for hydrogen gas (dihydrogen)
+H2O,Chemical symbol for water - each molecule of water contains two atoms of hydrogen (H) joined to a single atom of oxygen (O)
 Ha,"Hahnium (initial name for dubnium)"
 HA,Hemagglutinin
 HAA,HaloAcetic Acid
