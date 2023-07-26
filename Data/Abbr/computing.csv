@@ -323,9 +323,7 @@ BGP,Border Gateway Protocol
 BHIE,Bidirectional Health Information Exchange
 BI,business intelligence
 BIA,business impact analysis
-BIC,bank identifier code
-BIC,Best In Class
-BIC,business information center
+BIC,"bank identifier code, Best In Class, business information center"
 BICC,Bearer Independent Call Control
 BICC,business intelligence competency center
 BIOS,Basic Input/Output System
@@ -1251,7 +1249,6 @@ GCC,GNU Compiler Collection
 GDDR,Graphics Double Data Rate
 GDI,Graphics Device Interface
 GDMO,Guidelines for Definition of Managed Objects
-GDP,Gross Domestic Product
 GDPR,General Data Protection Regulation
 GEM,Generic Equipment Model
 GEM,Graphics Environment Manager
@@ -2549,7 +2546,6 @@ SWAT,Samba Web Administration Tool
 SWF,Shockwave Flash file
 Swift,Programming language released in 2014 by Apple Inc.
 SWIFT,Simulated Work Input and Flow Time
-SWIFT,Society for the Worldwide Interbank Financial Telecommunication
 SWOT,"Strengths, Weakness, Opportunity and Threats Analysis"
 sysadmin,system administrator
 sysop,system operator
