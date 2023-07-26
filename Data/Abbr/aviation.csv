@@ -303,6 +303,7 @@ KCAS,Calibrated AirSpeed in Knots
 KIAS,Indicated Airspeed in Knots
 KTAS,True AirSpeed in Knots
 LAA,Lappland Aviation Academy
+LDAH,Landing distance available (Helicopter)
 LITAS,Low Intensity Two Colour Approach System 
 LL,Lower Limit
 LMUK,Lockheed Martin UK
@@ -475,12 +476,13 @@ TFM,Traffic Flow Management
 TFR,Temporary Flight Restriction
 TH,True Heading
 TID,Touch Input Device
-TIGPRO,TOWSIM Image Generator Protocol
 TIS,Traffic Information System
+TLOF,Touchdown and Lift-off Area
 TM,Traffic Management
 TMA,Terminal Control Area
 TOC,Top Of Climb
 TOD,Top Of Descent
+TODAH,Take-off distance available (Helicopter)
 TOP,Take-Off Power
 TOR,Terms Of Reference
 TOR,Tornado aircraft
