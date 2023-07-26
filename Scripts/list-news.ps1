@@ -1,6 +1,6 @@
 ﻿<#
 .SYNOPSIS
-	List news
+	List the latest news
 .DESCRIPTION
 	This PowerShell script lists the latest news by using RSS (Really Simple Syndication) feeds.
 .PARAMETER RSS_URL
@@ -10,7 +10,9 @@
 .PARAMETER Speed
         Specifies the speed to write the text (10 ms by default)
 .EXAMPLE
-	PS> ./list-news
+	PS> ./list-news.ps1
+	❇️ Deadly Mediterranean wildfires kill more than 40
+	...
 .LINK
 	https://github.com/fleschutz/PowerShell
 .NOTES
@@ -35,8 +37,7 @@ try {
 	$Date = $Date -Replace "Fri, ",""
 	$Date = $Date -Replace "Sat, ",""
 	$Date = $Date -Replace "Sun, ",""
-	$Copyright = $Content.rss.channel.copyright
-	"($Source|$Date|$Copyright)"
+	"(by $Source as of $Date)"
 	exit 0 # success
 } catch {
 	"⚠️ Error in line $($_.InvocationInfo.ScriptLineNumber): $($Error[0])"
