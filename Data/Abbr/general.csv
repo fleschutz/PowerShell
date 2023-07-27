@@ -3113,7 +3113,7 @@ MSU,Michigan State University,Montana State University,Mountain State University
 Mt,Meitnerium
 mT,Millitesla
 MTA,Metropolitan Transportation Authority (Boston) (now Massachusetts Bay Transportation Authority),Metropolitan Transportation Authority (New York)
-MTBF,Mean time between failures
+MTBF,Mean Time Between Failures
 MTF,Magnetized target fusion,Medical Treatment Facility,Message Text Format,Modulation transfer function (optics)
 MtF,Male-to-female transsexual
 MTG,Magic: The Gathering
@@ -3122,6 +3122,8 @@ MTP,Maritime Tactical Publication,Materiel Transfer Plan,Mission Training Plan
 MTQ,Martinique (ISO 3166 trigram)
 MTS,Maintenance Training System,Manitoba Telecom Services,Michigan Terminal/Timesharing System,Movement Tracking System,Multichannel television sound,Multi-Technical Services
 MTT,Methylthiazol tetrazolium (assay)
+MTTF,Mean Time To Failure
+MTTR,Mean Time To Recover
 MTU,Tankovei Mostoukladchik (Russian Танковый Мостоукладчик,"Tank Bridge-Layer") †
 MTV,MainosTeleVisio (Finnish commercial TV company),Music TeleVision
 MTVL,Mobile Tracked Vehicle,Light
