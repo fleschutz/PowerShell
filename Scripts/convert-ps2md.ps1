@@ -56,7 +56,8 @@ try {
 
 	$full = Get-Help $filename -Full 
 
-	"## Script: *$($ScriptName)*"
+	"PS> *$($ScriptName)*"
+	"===================="
 
 	$Description = ($full.description | Out-String).Trim()
 	if ($Description -ne "") {
@@ -67,7 +68,8 @@ try {
 		"$($full.Synopsis)"
 	}
 	""
-	"## Parameters"
+	"Parameters"
+	"----------"
 	"``````powershell"
 	$Syntax = (($full.syntax | Out-String) -replace "`r`n", "`r`n").Trim()
 	$Syntax = (($Syntax | Out-String) -replace "/home/mf/Repos/PowerShell/Scripts/", "")
@@ -86,19 +88,22 @@ try {
 
 	foreach($input in $full.inputTypes.inputType) {
 		""
-		"## Inputs"
+		"Inputs"
+		"------"
 		"$($input.type.name)"
 	}
 
 	foreach($output in $full.outputTypes.outputType) {
 		""
-		"## Outputs"
+		"Outputs"
+		"-------"
 		"$($output.type.name)"
 	}
 
 	foreach($example in $full.examples.example) {
 		""
-		"## Example"
+		"Example"
+		"-------"
 		"``````powershell"
 		"$(GetCode $example)"
 		"``````"
@@ -107,19 +112,22 @@ try {
 	$Notes = ($full.alertSet.alert | Out-String).Trim()
 	if ($Notes -ne "") {
 		""
-		"## Notes"
+		"Notes"
+		"-----"
 		"$Notes"
 	}
 
 	$Links = ($full.relatedlinks | Out-String).Trim()
 	if ($Links -ne "") {
 		""
-		"## Related Links"
+		"Related Links"
+		"-------------"
 		"$Links"
 	}
 
 	""
-	"## Script Content"
+	"Script Content"
+	"--------------"
 	"``````powershell"
 	$Lines = Get-Content -path "$filename"
         foreach($Line in $Lines) {
