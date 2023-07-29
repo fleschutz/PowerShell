@@ -56,7 +56,7 @@ try {
 
 	$full = Get-Help $filename -Full 
 
-	"PS> *$($ScriptName)*"
+	"PS> *./$($ScriptName)*"
 	"===================="
 
 	$Description = ($full.description | Out-String).Trim()
@@ -72,7 +72,7 @@ try {
 	"----------"
 	"``````powershell"
 	$Syntax = (($full.syntax | Out-String) -replace "`r`n", "`r`n").Trim()
-	$Syntax = (($Syntax | Out-String) -replace "/home/mf/Repos/PowerShell/Scripts/", "PS> ")
+	$Syntax = (($Syntax | Out-String) -replace "/home/mf/Repos/PowerShell/Scripts/", "PS> ./")
 	if ($Syntax -ne "") {
 		"$Syntax"
 	}
