@@ -56,8 +56,8 @@ try {
 
 	$full = Get-Help $filename -Full 
 
-	"PS> *./$($ScriptName)*"
-	"===================="
+	"*$($ScriptName)*"
+	"================"
 
 	$Description = ($full.description | Out-String).Trim()
 	if ($Description -ne "") {
