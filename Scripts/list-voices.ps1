@@ -4,7 +4,7 @@
 .DESCRIPTION
 	This PowerShell script lists the installed text-to-speech (TTS) voices.
 .EXAMPLE
-	PS> ./list-voices
+	PS> ./list-voices.ps1
 
 	Name                     Culture  Gender     Age
 	----                     -------  ------     ---

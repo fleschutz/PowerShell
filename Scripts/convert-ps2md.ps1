@@ -72,7 +72,7 @@ try {
 	"----------"
 	"``````powershell"
 	$Syntax = (($full.syntax | Out-String) -replace "`r`n", "`r`n").Trim()
-	$Syntax = (($Syntax | Out-String) -replace "/home/mf/Repos/PowerShell/Scripts/", "")
+	$Syntax = (($Syntax | Out-String) -replace "/home/mf/Repos/PowerShell/Scripts/", "PS> ")
 	if ($Syntax -ne "") {
 		"$Syntax"
 	}
