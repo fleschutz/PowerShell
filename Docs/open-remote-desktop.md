@@ -4,7 +4,7 @@ This script launches the Remote Desktop application.
 
 ## Parameters
 ```powershell
-/home/mf/Repos/PowerShell/Scripts/open-remote-desktop.ps1 [<CommonParameters>]
+open-remote-desktop.ps1 [<CommonParameters>]
 
 [<CommonParameters>]
     This script supports the common parameters: Verbose, Debug, ErrorAction, ErrorVariable, WarningAction, 

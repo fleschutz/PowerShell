@@ -4,7 +4,7 @@ This PowerShell script uninstalls all applications from the local computer. Usef
 
 ## Parameters
 ```powershell
-/home/mf/Repos/PowerShell/Scripts/uninstall-all-apps.ps1 [<CommonParameters>]
+uninstall-all-apps.ps1 [<CommonParameters>]
 
 [<CommonParameters>]
     This script supports the common parameters: Verbose, Debug, ErrorAction, ErrorVariable, WarningAction, 

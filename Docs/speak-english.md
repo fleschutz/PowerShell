@@ -4,7 +4,7 @@ This PowerShell scripts speaks the given text with an English text-to-speech (TT
 
 ## Parameters
 ```powershell
-/home/mf/Repos/PowerShell/Scripts/speak-english.ps1 [[-text] <String>] [<CommonParameters>]
+speak-english.ps1 [[-text] <String>] [<CommonParameters>]
 
 -text <String>
     Specifies the text to speak

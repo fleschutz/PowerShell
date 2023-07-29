@@ -4,7 +4,7 @@ This PowerShell script builds a repository by supporting: cmake, configure, auto
 
 ## Parameters
 ```powershell
-/home/mf/Repos/PowerShell/Scripts/build-repo.ps1 [[-RepoDir] <String>] [<CommonParameters>]
+build-repo.ps1 [[-RepoDir] <String>] [<CommonParameters>]
 
 -RepoDir <String>
     Specifies the path to the Git repository

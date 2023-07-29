@@ -1,10 +1,10 @@
 ## The *check-vpn.ps1* Script
 
-This PowerShell script queries the status of the VPN connections and prints it.
+This PowerShell script queries and prints the status of the VPN connection(s).
 
 ## Parameters
 ```powershell
-/home/mf/Repos/PowerShell/Scripts/check-vpn.ps1 [<CommonParameters>]
+check-vpn.ps1 [<CommonParameters>]
 
 [<CommonParameters>]
     This script supports the common parameters: Verbose, Debug, ErrorAction, ErrorVariable, WarningAction, 
@@ -13,8 +13,8 @@ This PowerShell script queries the status of the VPN connections and prints it.
 
 ## Example
 ```powershell
-PS> ./check-vpn
-✅ Disconnected VPN 'NASA L2TP'
+PS> ./check-vpn.ps1
+✅ VPN to NASA L2TP is disconnected
 
 ```
 
@@ -30,10 +30,10 @@ https://github.com/fleschutz/PowerShell
 .SYNOPSIS
 	Checks the VPN status
 .DESCRIPTION
-	This PowerShell script queries the status of the VPN connections and prints it.
+	This PowerShell script queries and prints the status of the VPN connection(s).
 .EXAMPLE
-	PS> ./check-vpn
-	✅ Disconnected VPN 'NASA L2TP' 
+	PS> ./check-vpn.ps1
+	✅ VPN to NASA L2TP is disconnected
 .LINK
 	https://github.com/fleschutz/PowerShell
 .NOTES
@@ -47,11 +47,11 @@ try {
 	} else {
 		$Connections = Get-VPNConnection
 		foreach($Connection in $Connections) {
-			"✅ $($Connection.ConnectionStatus) VPN '$($Connection.Name)'"
+			Write-Host "✅ VPN to $($Connection.Name) is $($Connection.ConnectionStatus.ToLower())"
 			$NoVPN = $false
 		}
 	}
-	if ($NoVPN) { "⚠️ No VPN" }
+	if ($NoVPN) { Write-Host "⚠️ No VPN configured" }
 	exit 0 # success
 } catch {
 	"⚠️ Error in line $($_.InvocationInfo.ScriptLineNumber): $($Error[0])"

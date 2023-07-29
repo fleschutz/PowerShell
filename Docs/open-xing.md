@@ -4,7 +4,7 @@ This script launches the XING application.
 
 ## Parameters
 ```powershell
-/home/mf/Repos/PowerShell/Scripts/open-xing.ps1 [<CommonParameters>]
+open-xing.ps1 [<CommonParameters>]
 
 [<CommonParameters>]
     This script supports the common parameters: Verbose, Debug, ErrorAction, ErrorVariable, WarningAction, 

@@ -4,7 +4,7 @@ This PowerShell script measures and prints the DNS resolution speed by using 200
 
 ## Parameters
 ```powershell
-/home/mf/Repos/PowerShell/Scripts/check-dns.ps1 [<CommonParameters>]
+check-dns.ps1 [<CommonParameters>]
 
 [<CommonParameters>]
     This script supports the common parameters: Verbose, Debug, ErrorAction, ErrorVariable, WarningAction, 

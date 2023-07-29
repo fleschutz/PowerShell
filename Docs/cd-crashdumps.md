@@ -4,7 +4,7 @@ This PowerShell script changes the working directory to the crash dumps director
 
 ## Parameters
 ```powershell
-/home/mf/Repos/PowerShell/Scripts/cd-crashdumps.ps1 [<CommonParameters>]
+cd-crashdumps.ps1 [<CommonParameters>]
 
 [<CommonParameters>]
     This script supports the common parameters: Verbose, Debug, ErrorAction, ErrorVariable, WarningAction, 

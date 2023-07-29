@@ -4,7 +4,7 @@ This PowerShell script plays a gorilla sound.
 
 ## Parameters
 ```powershell
-/home/mf/Repos/PowerShell/Scripts/play-gorilla-sound.ps1 [<CommonParameters>]
+play-gorilla-sound.ps1 [<CommonParameters>]
 
 [<CommonParameters>]
     This script supports the common parameters: Verbose, Debug, ErrorAction, ErrorVariable, WarningAction, 

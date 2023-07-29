@@ -4,7 +4,7 @@ This PowerShell script writes the given text in Morse code.
 
 ## Parameters
 ```powershell
-/home/mf/Repos/PowerShell/Scripts/write-morse-code.ps1 [[-text] <String>] [[-speed] <Int32>] [<CommonParameters>]
+write-morse-code.ps1 [[-text] <String>] [[-speed] <Int32>] [<CommonParameters>]
 
 -text <String>
     Specifies the text to write

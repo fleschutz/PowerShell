@@ -4,7 +4,7 @@ This PowerShell script installs Zoom.
 
 ## Parameters
 ```powershell
-/home/mf/Repos/PowerShell/Scripts/install-zoom.ps1 [<CommonParameters>]
+install-zoom.ps1 [<CommonParameters>]
 
 [<CommonParameters>]
     This script supports the common parameters: Verbose, Debug, ErrorAction, ErrorVariable, WarningAction, 

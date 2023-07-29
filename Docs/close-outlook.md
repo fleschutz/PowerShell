@@ -4,7 +4,7 @@ This PowerShell script closes the Microsoft Outlook email application gracefully
 
 ## Parameters
 ```powershell
-/home/mf/Repos/PowerShell/Scripts/close-outlook.ps1 [<CommonParameters>]
+close-outlook.ps1 [<CommonParameters>]
 
 [<CommonParameters>]
     This script supports the common parameters: Verbose, Debug, ErrorAction, ErrorVariable, WarningAction, 

@@ -4,7 +4,7 @@ This PowerShell script scans and lists files in a folder with last access time o
 
 ## Parameters
 ```powershell
-/home/mf/Repos/PowerShell/Scripts/list-unused-files.ps1 [[-DirTree] <String>] [[-Days] <Int32>] [<CommonParameters>]
+list-unused-files.ps1 [[-DirTree] <String>] [[-Days] <Int32>] [<CommonParameters>]
 
 -DirTree <String>
     Specifies the path to the directory tree

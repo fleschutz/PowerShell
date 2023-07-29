@@ -4,7 +4,7 @@ This PowerShell script lists all files and folders in a directory tree.
 
 ## Parameters
 ```powershell
-/home/mf/Repos/PowerShell/Scripts/list-dir-tree.ps1 [[-DirTree] <String>] [<CommonParameters>]
+list-dir-tree.ps1 [[-DirTree] <String>] [<CommonParameters>]
 
 -DirTree <String>
     Specifies the path to the directory tree

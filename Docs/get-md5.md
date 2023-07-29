@@ -4,7 +4,7 @@ This PowerShell script calculates and prints the MD5 checksum of the given file.
 
 ## Parameters
 ```powershell
-/home/mf/Repos/PowerShell/Scripts/get-md5.ps1 [[-file] <String>] [<CommonParameters>]
+get-md5.ps1 [[-file] <String>] [<CommonParameters>]
 
 -file <String>
     Specifies the path to the file

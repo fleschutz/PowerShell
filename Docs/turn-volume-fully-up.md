@@ -4,7 +4,7 @@ This PowerShell script turns the audio volume fully up to 100%.
 
 ## Parameters
 ```powershell
-/home/mf/Repos/PowerShell/Scripts/turn-volume-fully-up.ps1 [<CommonParameters>]
+turn-volume-fully-up.ps1 [<CommonParameters>]
 
 [<CommonParameters>]
     This script supports the common parameters: Verbose, Debug, ErrorAction, ErrorVariable, WarningAction, 

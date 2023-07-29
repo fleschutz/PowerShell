@@ -4,7 +4,7 @@ This PowerShell script creates a new tag in a Git repository.
 
 ## Parameters
 ```powershell
-/home/mf/Repos/PowerShell/Scripts/new-tag.ps1 [[-TagName] <String>] [[-RepoDir] <String>] [<CommonParameters>]
+new-tag.ps1 [[-TagName] <String>] [[-RepoDir] <String>] [<CommonParameters>]
 
 -TagName <String>
     Specifies the new tag name

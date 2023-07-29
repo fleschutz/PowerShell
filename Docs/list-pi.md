@@ -4,7 +4,7 @@ This PowerShell script calculates and lists the digits of the mathematical const
 
 ## Parameters
 ```powershell
-/home/mf/Repos/PowerShell/Scripts/list-pi.ps1 [[-Digits] <Int32>] [<CommonParameters>]
+list-pi.ps1 [[-Digits] <Int32>] [<CommonParameters>]
 
 -Digits <Int32>
     Specifies the number of digits to list (1000 by default)

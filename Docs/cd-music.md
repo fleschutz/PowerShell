@@ -4,7 +4,7 @@ This PowerShell script changes the working directory to the user's music folder.
 
 ## Parameters
 ```powershell
-/home/mf/Repos/PowerShell/Scripts/cd-music.ps1 [<CommonParameters>]
+cd-music.ps1 [<CommonParameters>]
 
 [<CommonParameters>]
     This script supports the common parameters: Verbose, Debug, ErrorAction, ErrorVariable, WarningAction, 

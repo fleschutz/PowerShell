@@ -4,7 +4,7 @@ This PowerShell script closes the Microsoft Visual Studio application gracefully
 
 ## Parameters
 ```powershell
-/home/mf/Repos/PowerShell/Scripts/close-visual-studio.ps1 [<CommonParameters>]
+close-visual-studio.ps1 [<CommonParameters>]
 
 [<CommonParameters>]
     This script supports the common parameters: Verbose, Debug, ErrorAction, ErrorVariable, WarningAction, 

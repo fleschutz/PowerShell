@@ -4,10 +4,10 @@ This PowerShell script verifies the integrity of a local Git repository.
 
 ## Parameters
 ```powershell
-/home/mf/Repos/PowerShell/Scripts/check-repo.ps1 [[-RepoDir] <String>] [<CommonParameters>]
+check-repo.ps1 [[-RepoDir] <String>] [<CommonParameters>]
 
 -RepoDir <String>
-    Specifies the path to the Git repository (current working dir by default)
+    Specifies the path to the Git repository (current working directory by default)
     
     Required?                    false
     Position?                    1
@@ -22,7 +22,15 @@ This PowerShell script verifies the integrity of a local Git repository.
 
 ## Example
 ```powershell
-PS> ./check-repo C:\MyRepo
+PS> ./check-repo.ps1 C:\MyRepo
+⏳ (1/10) Searching for Git executable...  git version 2.41.0.windows.3
+⏳ (2/10) Checking local folder...         📂C:\MyRepo
+⏳ (3/10) Querying remote URL...           git@github.com:fleschutz/PowerShell.git
+⏳ (4/10) Querying current branch...       main
+⏳ (5/10) Fetching remote updates...
+⏳ (6/10) Querying latest tag...           v0.8 (commit 02171a401d83b01a0cda0af426840b605e617f08)
+⏳ (7/10) Verifying data integrity...
+...
 
 ```
 
@@ -40,9 +48,17 @@ https://github.com/fleschutz/PowerShell
 .DESCRIPTION
 	This PowerShell script verifies the integrity of a local Git repository.
 .PARAMETER RepoDir
-	Specifies the path to the Git repository (current working dir by default)
+	Specifies the path to the Git repository (current working directory by default)
 .EXAMPLE
-	PS> ./check-repo C:\MyRepo
+	PS> ./check-repo.ps1 C:\MyRepo
+	⏳ (1/10) Searching for Git executable...  git version 2.41.0.windows.3
+	⏳ (2/10) Checking local folder...         📂C:\MyRepo
+	⏳ (3/10) Querying remote URL...           git@github.com:fleschutz/PowerShell.git
+	⏳ (4/10) Querying current branch...       main
+	⏳ (5/10) Fetching remote updates...
+	⏳ (6/10) Querying latest tag...           v0.8 (commit 02171a401d83b01a0cda0af426840b605e617f08)
+	⏳ (7/10) Verifying data integrity...
+	...
 .LINK
 	https://github.com/fleschutz/PowerShell
 .NOTES
@@ -58,7 +74,7 @@ try {
 	& git --version
 	if ($lastExitCode -ne "0") { throw "Can't execute 'git' - make sure Git is installed and available" }
 
-	Write-Host "⏳ (2/10) Checking repository...           " -noNewline
+	Write-Host "⏳ (2/10) Checking local folder...         " -noNewline
 	$FullPath = Resolve-Path "$RepoDir"
 	if (!(Test-Path "$FullPath" -pathType Container)) { throw "Can't access folder: $FullPath" }
 	"📂$FullPath"
@@ -71,9 +87,9 @@ try {
 	& git -C "$FullPath" branch --show-current
 	if ($lastExitCode -ne "0") { throw "'git branch --show-current' failed with exit code $lastExitCode" }
 
-	Write-Host "⏳ (5/10) Fetching updates..."
+	Write-Host "⏳ (5/10) Fetching remote updates..."
 	& git -C "$FullPath" fetch
-	if ($lastExitCode -ne "0") { throw "'git branch --show-current' failed with exit code $lastExitCode" }
+	if ($lastExitCode -ne "0") { throw "'git fetch' failed with exit code $lastExitCode" }
 
 	Write-Host "⏳ (6/10) Querying latest tag...           " -noNewline
         $LatestTagCommitID = (git -C "$FullPath" rev-list --tags --max-count=1)
@@ -98,7 +114,7 @@ try {
 
 	$RepoDirName = (Get-Item "$FullPath").Name
 	[int]$Elapsed = $StopWatch.Elapsed.TotalSeconds
-	"✔️ successfully checked repo 📂$RepoDirName in $Elapsed sec"
+	"✔️ checked Git repository 📂$RepoDirName in $Elapsed sec"
 	exit 0 # success
 } catch {
 	"⚠️ Error in line $($_.InvocationInfo.ScriptLineNumber): $($Error[0])"

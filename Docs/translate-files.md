@@ -1,13 +1,13 @@
 ## The *translate-files.ps1* Script
 
-This PowerShell script translates text files into any supported language.
+This PowerShell script translates text files into multiple languages.
 
 ## Parameters
 ```powershell
-/home/mf/Repos/PowerShell/Scripts/translate-files.ps1 [[-FilePattern] <String>] [<CommonParameters>]
+translate-files.ps1 [[-filePattern] <String>] [<CommonParameters>]
 
--FilePattern <String>
-    Specifies the file pattern
+-filePattern <String>
+    Specifies the file pattern of the text file(s) to be translated
     
     Required?                    false
     Position?                    1
@@ -38,9 +38,9 @@ https://github.com/fleschutz/PowerShell
 .SYNOPSIS
 	Translates text files
 .DESCRIPTION
-	This PowerShell script translates text files into any supported language.
-.PARAMETER FilePattern
-	Specifies the file pattern
+	This PowerShell script translates text files into multiple languages.
+.PARAMETER filePattern
+	Specifies the file pattern of the text file(s) to be translated
 .EXAMPLE
 	PS> ./translate-files C:\Temp\*.txt
 .LINK
@@ -49,34 +49,46 @@ https://github.com/fleschutz/PowerShell
 	Author: Markus Fleschutz | License: CC0
 #>
 
-param([string]$FilePattern = "")
+param([string]$filePattern = "")
 
 function DetectSourceLang { param([string]$Filename)
-	if ("$Filename" -like "*Deutsch*")  { return "de" }
-	if ("$Filename" -like "*English*")  { return "en" }
-	if ("$Filename" -like "*Français*") { return "fr" }
+	if ("$Filename" -like "*-Deutsch*")  { return "de" }
+	if ("$Filename" -like "*-English*")  { return "en" }
+	if ("$Filename" -like "*-Español*")  { return "es" }
+	if ("$Filename" -like "*-Français*") { return "fr" }
+	if ("$Filename" -like "*-Portuguese*") { return "pt" }
 	return "unknown"
 }
 
 function TranslateFilename { param([string]$Filename, [string]$SourceLang, [string]$TargetLang)
 	[string]$SourceLanguage = ""
-	if ($SourceLang -eq "de") { $SourceLanguage = "Deutsch" }
-	if ($SourceLang -eq "en") { $SourceLanguage = "English" }
-	if ($SourceLang -eq "fr") { $SourceLanguage = "Français" }
-	$TargetLanguage = ("$PSScriptRoot/translate-text.ps1 $SourceLanguage $SourceLang $TargetLang")
+	if ($SourceLang -eq "de") { $SourceLanguage = "-Deutsch" }
+	if ($SourceLang -eq "en") { $SourceLanguage = "-English" }
+	if ($SourceLang -eq "es") { $SourceLanguage = "-Español" }
+	if ($SourceLang -eq "fr") { $SourceLanguage = "-Français" }
+	if ($SourceLang -eq "pt") { $SourceLanguage = "-Portuguese" }
+	[string]$TargetLanguage = "-Unknown"
+	if ($TargetLang -eq "ar") { $TargetLanguage = "-Arabic" }
+	if ($TargetLang -eq "de") { $TargetLanguage = "-Deutsch" }
+	if ($TargetLang -eq "en") { $TargetLanguage = "-English" }
+	if ($TargetLang -eq "es") { $TargetLanguage = "-Español" }
+	if ($TargetLang -eq "fr") { $TargetLanguage = "-Français" }
+	if ($TargetLang -eq "pt") { $TargetLanguage = "-Portuguese" }
 	return $Filename.replace($SourceLanguage, $TargetLanguage)
 }
 
 try {
-	if ($FilePattern -eq "" ) { $FilePattern = read-host "Enter the file pattern" }
+	if ($filePattern -eq "" ) { $filePattern = Read-Host "Enter the file pattern of the text file(s) to be translated" }
 
 	$TargetLanguages = "ar","zh","fr","de","hi","ga","it","ja","ko","pt","ru","es"
-	$SourceFiles = get-childItem -path "$FilePattern"
+	$SourceFiles = Get-ChildItem -path "$filePattern"
 	foreach($SourceFile in $SourceFiles) {
 		$SourceLang = DetectSourceLang $SourceFile
 		foreach($TargetLang in $TargetLanguages) {
 			if ($SourceLang -eq $TargetLang) { continue }
+			Write-Host "Translating $SourceFile from $SourceLang to $TargetLang ..."
 			$TargetFile = TranslateFilename $SourceFile $SourceLang $TargetLang
+			Write-Host "$TargetFile"
 			& "$PSScriptRoot/translate-file.ps1" $SourceFile $SourceLang $TargetLang > $TargetFile
 		}
 	}

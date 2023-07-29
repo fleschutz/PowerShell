@@ -4,7 +4,7 @@ This PowerShell script converts Markdown file(s) into HTML.
 
 ## Parameters
 ```powershell
-/home/mf/Repos/PowerShell/Scripts/convert-md2html.ps1 [[-FilePattern] <String>] [<CommonParameters>]
+convert-md2html.ps1 [[-FilePattern] <String>] [<CommonParameters>]
 
 -FilePattern <String>
     Specifies the file pattern to the Markdown file(s)

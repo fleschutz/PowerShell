@@ -1,11 +1,11 @@
 ## The *install-basic-apps.ps1* Script
 
 This PowerShell script installs basic Windows apps such as browser, e-mail client, etc.
-Apps from Microsoft Store are preferred (due to security and automatic updates).
+NOTE: Apps from Microsoft Store are preferred (due to security and automatic updates).
 
 ## Parameters
 ```powershell
-/home/mf/Repos/PowerShell/Scripts/install-basic-apps.ps1 [<CommonParameters>]
+install-basic-apps.ps1 [<CommonParameters>]
 
 [<CommonParameters>]
     This script supports the common parameters: Verbose, Debug, ErrorAction, ErrorVariable, WarningAction, 
@@ -15,6 +15,8 @@ Apps from Microsoft Store are preferred (due to security and automatic updates).
 ## Example
 ```powershell
 PS> ./install-basic-apps
+⏳ (1/37) Loading Data/basic-apps.csv...            35 apps
+⏳ (2/37) These apps will be installed or upgraded: 7-Zip · Aquile Reader ...
 
 ```
 
@@ -31,9 +33,11 @@ https://github.com/fleschutz/PowerShell
 	Installs basic apps
 .DESCRIPTION
 	This PowerShell script installs basic Windows apps such as browser, e-mail client, etc.
-	Apps from Microsoft Store are preferred (due to security and automatic updates). 
+	NOTE: Apps from Microsoft Store are preferred (due to security and automatic updates). 
 .EXAMPLE
 	PS> ./install-basic-apps
+	⏳ (1/37) Loading Data/basic-apps.csv...            35 apps
+	⏳ (2/37) These apps will be installed or upgraded: 7-Zip · Aquile Reader ...
 .LINK
 	https://github.com/fleschutz/PowerShell
 .NOTES
@@ -43,19 +47,18 @@ https://github.com/fleschutz/PowerShell
 try {
 	$StopWatch = [system.diagnostics.stopwatch]::startNew()
 
-	Write-Host "⏳ (1/34) Loading Data/basic-apps.csv...    " -noNewline
+	Write-Host "⏳ (1/37) Loading Data/basic-apps.csv...            " -noNewline
 	$Table = Import-CSV "$PSScriptRoot/../Data/basic-apps.csv"
 	$NumEntries = $Table.count
 	"$NumEntries apps"
-	"⏳ (2/34) About to install or upgrade:"
-	""
+	Write-Host "⏳ (2/37) These apps will be installed or upgraded: " -noNewline
 	foreach($Row in $Table) {
 		[string]$AppName = $Row.APPLICATION
-		Write-Host " · $AppName" -NoNewline
+		Write-Host "$AppName · " -noNewline
 	}
 	""
 	""
-	"Press <Control> <C> to abort, otherwise the installation will start in 15 seconds..."
+	"Installation will start in 15 seconds... (otherwise press <Control> <C> to abort)"
 	Start-Sleep -seconds 15
 
 	[int]$Step = 3
@@ -72,7 +75,7 @@ try {
 	}
 	[int]$Installed = ($NumEntries - $Failed)
 	[int]$Elapsed = $StopWatch.Elapsed.TotalSeconds
-	"✔️ installed $Installed of $NumEntries applications in $Elapsed sec"
+	"✔️ installed $Installed of $NumEntries basic apps in $Elapsed sec"
 	exit 0 # success
 } catch {
 	"⚠️ Error in line $($_.InvocationInfo.ScriptLineNumber): $($Error[0])"

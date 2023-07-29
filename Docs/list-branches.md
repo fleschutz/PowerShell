@@ -4,7 +4,7 @@ This PowerShell script lists all branches in a Git repository.
 
 ## Parameters
 ```powershell
-/home/mf/Repos/PowerShell/Scripts/list-branches.ps1 [[-RepoDir] <String>] [[-SearchPattern] <String>] [<CommonParameters>]
+list-branches.ps1 [[-RepoDir] <String>] [[-SearchPattern] <String>] [<CommonParameters>]
 
 -RepoDir <String>
     Specifies the path to the Git repository (current working directory by default)

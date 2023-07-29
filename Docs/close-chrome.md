@@ -4,7 +4,7 @@ This PowerShell script closes the Google Chrome Web browser gracefully.
 
 ## Parameters
 ```powershell
-/home/mf/Repos/PowerShell/Scripts/close-chrome.ps1 [<CommonParameters>]
+close-chrome.ps1 [<CommonParameters>]
 
 [<CommonParameters>]
     This script supports the common parameters: Verbose, Debug, ErrorAction, ErrorVariable, WarningAction, 

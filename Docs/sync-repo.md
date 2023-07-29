@@ -4,7 +4,7 @@ This PowerShell script synchronizes a local Git repository by push and pull (inc
 
 ## Parameters
 ```powershell
-/home/mf/Repos/PowerShell/Scripts/sync-repo.ps1 [[-RepoDir] <String>] [<CommonParameters>]
+sync-repo.ps1 [[-RepoDir] <String>] [<CommonParameters>]
 
 -RepoDir <String>
     Specifies the path to the Git repository

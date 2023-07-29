@@ -4,7 +4,7 @@ This PowerShell script speaks the given text with a Turkish text-to-speech (TTS)
 
 ## Parameters
 ```powershell
-/home/mf/Repos/PowerShell/Scripts/speak-turkish.ps1 [[-text] <String>] [<CommonParameters>]
+speak-turkish.ps1 [[-text] <String>] [<CommonParameters>]
 
 -text <String>
     Specifies the text to speak

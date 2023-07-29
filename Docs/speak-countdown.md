@@ -4,7 +4,7 @@ This PowerShell script speaks a countdown by text-to-speech (TTS) starting from 
 
 ## Parameters
 ```powershell
-/home/mf/Repos/PowerShell/Scripts/speak-countdown.ps1 [[-StartNumber] <Int32>] [<CommonParameters>]
+speak-countdown.ps1 [[-StartNumber] <Int32>] [<CommonParameters>]
 
 -StartNumber <Int32>
     Specifies the number to start from (10 by default)

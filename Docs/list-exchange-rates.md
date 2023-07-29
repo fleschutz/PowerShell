@@ -4,7 +4,7 @@ This PowerShell script lists the current exchange rates for the given currency (
 
 ## Parameters
 ```powershell
-/home/mf/Repos/PowerShell/Scripts/list-exchange-rates.ps1 [[-currency] <String>] [<CommonParameters>]
+list-exchange-rates.ps1 [[-currency] <String>] [<CommonParameters>]
 
 -currency <String>
     Specifies the base currency

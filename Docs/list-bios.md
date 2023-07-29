@@ -4,7 +4,7 @@ This PowerShell script lists the BIOS details.
 
 ## Parameters
 ```powershell
-/home/mf/Repos/PowerShell/Scripts/list-bios.ps1 [<CommonParameters>]
+list-bios.ps1 [<CommonParameters>]
 
 [<CommonParameters>]
     This script supports the common parameters: Verbose, Debug, ErrorAction, ErrorVariable, WarningAction, 

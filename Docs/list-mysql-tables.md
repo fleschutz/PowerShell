@@ -4,7 +4,7 @@ This PowerShell script lists all tables of the given MySQL database.
 
 ## Parameters
 ```powershell
-/home/mf/Repos/PowerShell/Scripts/list-mysql-tables.ps1 [-server] <Object> [-database] <Object> [-dbuser] <Object> [-dbpass] <Object> [<CommonParameters>]
+list-mysql-tables.ps1 [-server] <Object> [-database] <Object> [-dbuser] <Object> [-dbpass] <Object> [<CommonParameters>]
 
 -server <Object>
     

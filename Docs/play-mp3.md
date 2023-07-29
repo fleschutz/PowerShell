@@ -4,7 +4,7 @@ This PowerShell script plays a sound file in .MP3 file format.
 
 ## Parameters
 ```powershell
-/home/mf/Repos/PowerShell/Scripts/play-mp3.ps1 [[-Path] <String>] [<CommonParameters>]
+play-mp3.ps1 [[-Path] <String>] [<CommonParameters>]
 
 -Path <String>
     Specifies the path to the .MP3 file

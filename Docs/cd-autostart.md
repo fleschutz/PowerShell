@@ -4,7 +4,7 @@ This PowerShell script changes the working directory to the user's autostart fol
 
 ## Parameters
 ```powershell
-/home/mf/Repos/PowerShell/Scripts/cd-autostart.ps1 [<CommonParameters>]
+cd-autostart.ps1 [<CommonParameters>]
 
 [<CommonParameters>]
     This script supports the common parameters: Verbose, Debug, ErrorAction, ErrorVariable, WarningAction, 

@@ -4,7 +4,7 @@ This PowerShell script switches browser tabs automatically every <n> seconds (by
 
 ## Parameters
 ```powershell
-/home/mf/Repos/PowerShell/Scripts/switch-tabs.ps1 [[-Interval] <Int32>] [<CommonParameters>]
+switch-tabs.ps1 [[-Interval] <Int32>] [<CommonParameters>]
 
 -Interval <Int32>
     Specifies the switch interval in seconds (10 sec per default)

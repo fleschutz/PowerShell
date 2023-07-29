@@ -5,7 +5,7 @@ NOTE: To be used with care! This cannot be undone!
 
 ## Parameters
 ```powershell
-/home/mf/Repos/PowerShell/Scripts/clean-repo.ps1 [[-RepoDir] <String>] [<CommonParameters>]
+clean-repo.ps1 [[-RepoDir] <String>] [<CommonParameters>]
 
 -RepoDir <String>
     Specifies the file path to the local Git repository
@@ -56,15 +56,15 @@ param([string]$RepoDir = "$PWD")
 try {
 	$StopWatch = [system.diagnostics.stopwatch]::startNew()
 
-	Write-Host "⏳ (1/4) Searching for Git executable...     " -noNewline
+	Write-Host "⏳ (1/4) Searching for Git executable...          " -noNewline
 	& git --version
 	if ($lastExitCode -ne "0") { throw "Can't execute 'git' - make sure Git is installed and available" }
 
-	"⏳ (2/4) Checking repository...              📂$RepoDir"
+	"⏳ (2/4) Checking local repository...             📂$RepoDir"
 	if (-not(Test-Path "$RepoDir" -pathType container)) { throw "Can't access folder '$RepoDir' - maybe a typo or missing folder permissions?" }
 	$RepoDirName = (Get-Item "$RepoDir").Name
 
-	"⏳ (3/4) Removing repo's untracked files..."
+	"⏳ (3/4) Removing untracked files in repository..."
 	& git -C "$RepoDir" clean -xfd -f # to delete all untracked files in the main repo
 	if ($lastExitCode -ne "0") {
 		Write-Warning "'git clean' failed with exit code $lastExitCode, retrying once..."
@@ -72,7 +72,7 @@ try {
 		if ($lastExitCode -ne "0") { throw "'git clean' failed with exit code $lastExitCode" }
 	}
 
-	"⏳ (4/4) Removing submodules' untracked files..."
+	"⏳ (4/4) Removing untracked files in submodules..."
 	& git -C "$RepoDir" submodule foreach --recursive git clean -xfd -f # to delete all untracked files in the submodules
 	if ($lastExitCode -ne "0") { throw "'git clean' in the submodules failed with exit code $lastExitCode" }
 

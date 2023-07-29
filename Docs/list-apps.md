@@ -4,7 +4,7 @@ This PowerShell script lists the installed applications (from Windows Store, or 
 
 ## Parameters
 ```powershell
-/home/mf/Repos/PowerShell/Scripts/list-apps.ps1 [<CommonParameters>]
+list-apps.ps1 [<CommonParameters>]
 
 [<CommonParameters>]
     This script supports the common parameters: Verbose, Debug, ErrorAction, ErrorVariable, WarningAction, 

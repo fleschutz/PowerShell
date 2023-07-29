@@ -4,7 +4,7 @@ This PowerShell script queries the status of the swap space and prints it.
 
 ## Parameters
 ```powershell
-/home/mf/Repos/PowerShell/Scripts/check-swap-space.ps1 [[-MinLevel] <Int32>] [<CommonParameters>]
+check-swap-space.ps1 [[-MinLevel] <Int32>] [<CommonParameters>]
 
 -MinLevel <Int32>
     Specifies the minimum level (10 GB by default)

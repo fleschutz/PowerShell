@@ -1,10 +1,10 @@
 ## The *hibernate.ps1* Script
 
-This PowerShell script enables hibernate mode for the local computer immediately.
+This PowerShell script hibernates the local computer immediately.
 
 ## Parameters
 ```powershell
-/home/mf/Repos/PowerShell/Scripts/hibernate.ps1 [<CommonParameters>]
+hibernate.ps1 [<CommonParameters>]
 
 [<CommonParameters>]
     This script supports the common parameters: Verbose, Debug, ErrorAction, ErrorVariable, WarningAction, 
@@ -13,7 +13,8 @@ This PowerShell script enables hibernate mode for the local computer immediately
 
 ## Example
 ```powershell
-PS> ./hibernate
+PS> ./hibernate.ps1
+It's 5:04 PM, going to sleep now... 😴💤
 
 ```
 
@@ -29,9 +30,10 @@ https://github.com/fleschutz/PowerShell
 .SYNOPSIS
 	Hibernates the computer
 .DESCRIPTION
-	This PowerShell script enables hibernate mode for the local computer immediately. 
+	This PowerShell script hibernates the local computer immediately. 
 .EXAMPLE
-	PS> ./hibernate
+	PS> ./hibernate.ps1
+	It's 5:04 PM, going to sleep now... 😴💤
 .LINK
 	https://github.com/fleschutz/PowerShell
 .NOTES
@@ -39,7 +41,10 @@ https://github.com/fleschutz/PowerShell
 #>
 
 try {
-	"Bye bye."
+	[system.threading.thread]::currentThread.currentCulture = [system.globalization.cultureInfo]"en-US"
+	$CurrentTime = $((Get-Date).ToShortTimeString())
+	Write-Host "It's $CurrentTime, going to sleep now... 😴💤p"
+	Start-Sleep -milliseconds 500
 	& rundll32.exe powrprof.dll,SetSuspendState 1,1,0 # bHibernate,bForce,bWakeupEventsDisabled
 	exit 0 # success
 } catch {

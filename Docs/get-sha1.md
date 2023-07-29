@@ -4,7 +4,7 @@ This PowerShell script calculates and prints the SHA1 checksum of the given file
 
 ## Parameters
 ```powershell
-/home/mf/Repos/PowerShell/Scripts/get-sha1.ps1 [[-file] <String>] [<CommonParameters>]
+get-sha1.ps1 [[-file] <String>] [<CommonParameters>]
 
 -file <String>
     Specifies the path to the file

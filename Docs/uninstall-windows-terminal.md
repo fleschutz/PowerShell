@@ -4,7 +4,7 @@ This PowerShell script uninstalls Windows Terminal from the local computer.
 
 ## Parameters
 ```powershell
-/home/mf/Repos/PowerShell/Scripts/uninstall-windows-terminal.ps1 [<CommonParameters>]
+uninstall-windows-terminal.ps1 [<CommonParameters>]
 
 [<CommonParameters>]
     This script supports the common parameters: Verbose, Debug, ErrorAction, ErrorVariable, WarningAction, 

@@ -4,7 +4,7 @@ This PowerShell script uninstalls Mozilla Firefox from the local computer.
 
 ## Parameters
 ```powershell
-/home/mf/Repos/PowerShell/Scripts/uninstall-firefox.ps1 [<CommonParameters>]
+uninstall-firefox.ps1 [<CommonParameters>]
 
 [<CommonParameters>]
     This script supports the common parameters: Verbose, Debug, ErrorAction, ErrorVariable, WarningAction, 

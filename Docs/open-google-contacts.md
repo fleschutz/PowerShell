@@ -4,7 +4,7 @@ This PowerShell script launches the Web browser with the Google Contacts website
 
 ## Parameters
 ```powershell
-/home/mf/Repos/PowerShell/Scripts/open-google-contacts.ps1 [<CommonParameters>]
+open-google-contacts.ps1 [<CommonParameters>]
 
 [<CommonParameters>]
     This script supports the common parameters: Verbose, Debug, ErrorAction, ErrorVariable, WarningAction, 

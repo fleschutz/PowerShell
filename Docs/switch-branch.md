@@ -4,7 +4,7 @@ This PowerShell script switches to another branch in a Git repository (including
 
 ## Parameters
 ```powershell
-/home/mf/Repos/PowerShell/Scripts/switch-branch.ps1 [[-BranchName] <String>] [[-RepoDir] <String>] [<CommonParameters>]
+switch-branch.ps1 [[-BranchName] <String>] [[-RepoDir] <String>] [<CommonParameters>]
 
 -BranchName <String>
     Specifies the branch name

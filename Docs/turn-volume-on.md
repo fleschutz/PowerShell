@@ -4,7 +4,7 @@ This PowerShell script immediately unmutes the audio output.
 
 ## Parameters
 ```powershell
-/home/mf/Repos/PowerShell/Scripts/turn-volume-on.ps1 [<CommonParameters>]
+turn-volume-on.ps1 [<CommonParameters>]
 
 [<CommonParameters>]
     This script supports the common parameters: Verbose, Debug, ErrorAction, ErrorVariable, WarningAction, 

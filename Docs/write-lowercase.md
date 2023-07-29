@@ -1,10 +1,10 @@
 ## The *write-lowercase.ps1* Script
 
-This PowerShell script writes text in lowercase letters.
+This PowerShell script writes the given text in lowercase letters.
 
 ## Parameters
 ```powershell
-/home/mf/Repos/PowerShell/Scripts/write-lowercase.ps1 [[-text] <String>] [<CommonParameters>]
+write-lowercase.ps1 [[-text] <String>] [<CommonParameters>]
 
 -text <String>
     Specifies the text to write
@@ -23,6 +23,7 @@ This PowerShell script writes text in lowercase letters.
 ## Example
 ```powershell
 PS> ./write-lowercase "Hello World"
+hello world
 
 ```
 
@@ -38,11 +39,12 @@ https://github.com/fleschutz/PowerShell
 .SYNOPSIS
 	Writes text in lowercase letters
 .DESCRIPTION
-	This PowerShell script writes text in lowercase letters.
+	This PowerShell script writes the given text in lowercase letters.
 .PARAMETER text
 	Specifies the text to write
 .EXAMPLE
 	PS> ./write-lowercase "Hello World"
+	hello world
 .LINK
 	https://github.com/fleschutz/PowerShell
 .NOTES
@@ -51,9 +53,9 @@ https://github.com/fleschutz/PowerShell
 
 param([string]$text = "")
 
-if ($text -eq "" ) { $text = read-host "Enter the text to write" }
+if ($text -eq "" ) { $text = Read-Host "Enter the text to write" }
 
-write-output $text.ToLower()
+Write-Output $text.ToLower()
 exit 0 # success
 ```
 

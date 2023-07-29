@@ -4,7 +4,7 @@ This PowerShell script determines and prints the file type of the given file.
 
 ## Parameters
 ```powershell
-/home/mf/Repos/PowerShell/Scripts/check-file.ps1 [[-Path] <String>] [<CommonParameters>]
+check-file.ps1 [[-Path] <String>] [<CommonParameters>]
 
 -Path <String>
     Specifies the path to the file

@@ -4,7 +4,7 @@ This PowerShell script saves the given memo text to Memos.csv in your home folde
 
 ## Parameters
 ```powershell
-/home/mf/Repos/PowerShell/Scripts/add-memo.ps1 [[-text] <String>] [<CommonParameters>]
+add-memo.ps1 [[-text] <String>] [<CommonParameters>]
 
 -text <String>
     Specifies the text to memorize

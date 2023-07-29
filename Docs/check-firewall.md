@@ -4,7 +4,7 @@ This PowerShell script queries the status of the firewall and prints it.
 
 ## Parameters
 ```powershell
-/home/mf/Repos/PowerShell/Scripts/check-firewall.ps1 [<CommonParameters>]
+check-firewall.ps1 [<CommonParameters>]
 
 [<CommonParameters>]
     This script supports the common parameters: Verbose, Debug, ErrorAction, ErrorVariable, WarningAction, 

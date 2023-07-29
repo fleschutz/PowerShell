@@ -4,7 +4,7 @@ This PowerShell script lists the battery status.
 
 ## Parameters
 ```powershell
-/home/mf/Repos/PowerShell/Scripts/list-battery-status.ps1 [<CommonParameters>]
+list-battery-status.ps1 [<CommonParameters>]
 
 [<CommonParameters>]
     This script supports the common parameters: Verbose, Debug, ErrorAction, ErrorVariable, WarningAction, 

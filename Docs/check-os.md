@@ -4,7 +4,7 @@ This PowerShell script queries the operating system status and prints it.
 
 ## Parameters
 ```powershell
-/home/mf/Repos/PowerShell/Scripts/check-os.ps1 [<CommonParameters>]
+check-os.ps1 [<CommonParameters>]
 
 [<CommonParameters>]
     This script supports the common parameters: Verbose, Debug, ErrorAction, ErrorVariable, WarningAction, 

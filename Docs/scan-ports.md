@@ -4,7 +4,7 @@ This PowerShell script scans the network for open or closed ports.
 
 ## Parameters
 ```powershell
-/home/mf/Repos/PowerShell/Scripts/scan-ports.ps1 [<CommonParameters>]
+scan-ports.ps1 [<CommonParameters>]
 
 [<CommonParameters>]
     This script supports the common parameters: Verbose, Debug, ErrorAction, ErrorVariable, WarningAction, 

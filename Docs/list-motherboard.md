@@ -4,7 +4,7 @@ This PowerShell script lists the motherboard details.
 
 ## Parameters
 ```powershell
-/home/mf/Repos/PowerShell/Scripts/list-motherboard.ps1 [<CommonParameters>]
+list-motherboard.ps1 [<CommonParameters>]
 
 [<CommonParameters>]
     This script supports the common parameters: Verbose, Debug, ErrorAction, ErrorVariable, WarningAction, 

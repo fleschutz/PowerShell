@@ -4,7 +4,7 @@ This PowerShell script queries the computer's uptime and prints it.
 
 ## Parameters
 ```powershell
-/home/mf/Repos/PowerShell/Scripts/check-uptime.ps1 [<CommonParameters>]
+check-uptime.ps1 [<CommonParameters>]
 
 [<CommonParameters>]
     This script supports the common parameters: Verbose, Debug, ErrorAction, ErrorVariable, WarningAction, 

@@ -4,7 +4,7 @@ This PowerShell script lists all services installed on the local computer.
 
 ## Parameters
 ```powershell
-/home/mf/Repos/PowerShell/Scripts/list-services.ps1 [<CommonParameters>]
+list-services.ps1 [<CommonParameters>]
 
 [<CommonParameters>]
     This script supports the common parameters: Verbose, Debug, ErrorAction, ErrorVariable, WarningAction, 

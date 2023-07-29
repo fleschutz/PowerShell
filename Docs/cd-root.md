@@ -4,7 +4,7 @@ This PowerShell script changes the current working directory to the root directo
 
 ## Parameters
 ```powershell
-/home/mf/Repos/PowerShell/Scripts/cd-root.ps1 [<CommonParameters>]
+cd-root.ps1 [<CommonParameters>]
 
 [<CommonParameters>]
     This script supports the common parameters: Verbose, Debug, ErrorAction, ErrorVariable, WarningAction, 

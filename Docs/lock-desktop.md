@@ -4,7 +4,7 @@ This PowerShell script locks the local computer desktop immediately.
 
 ## Parameters
 ```powershell
-/home/mf/Repos/PowerShell/Scripts/lock-desktop.ps1 [<CommonParameters>]
+lock-desktop.ps1 [<CommonParameters>]
 
 [<CommonParameters>]
     This script supports the common parameters: Verbose, Debug, ErrorAction, ErrorVariable, WarningAction, 

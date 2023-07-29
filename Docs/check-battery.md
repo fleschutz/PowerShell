@@ -4,7 +4,7 @@ This PowerShell script queries the status of the system battery and prints it.
 
 ## Parameters
 ```powershell
-/home/mf/Repos/PowerShell/Scripts/check-battery.ps1 [<CommonParameters>]
+check-battery.ps1 [<CommonParameters>]
 
 [<CommonParameters>]
     This script supports the common parameters: Verbose, Debug, ErrorAction, ErrorVariable, WarningAction, 

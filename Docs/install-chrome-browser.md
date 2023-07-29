@@ -4,7 +4,7 @@ This PowerShell script installs the latest Google Chrome Web browser.
 
 ## Parameters
 ```powershell
-/home/mf/Repos/PowerShell/Scripts/install-chrome-browser.ps1 [<CommonParameters>]
+install-chrome-browser.ps1 [<CommonParameters>]
 
 [<CommonParameters>]
     This script supports the common parameters: Verbose, Debug, ErrorAction, ErrorVariable, WarningAction, 

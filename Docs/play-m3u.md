@@ -4,7 +4,7 @@ This PowerShell script plays the given playlist (in .M3U file format)
 
 ## Parameters
 ```powershell
-/home/mf/Repos/PowerShell/Scripts/play-m3u.ps1 [[-filename] <String>] [<CommonParameters>]
+play-m3u.ps1 [[-filename] <String>] [<CommonParameters>]
 
 -filename <String>
     Specifies the path to the playlist

@@ -4,7 +4,7 @@ This PowerShell script converts text to a .WAV audio file.
 
 ## Parameters
 ```powershell
-/home/mf/Repos/PowerShell/Scripts/convert-txt2wav.ps1 [[-Text] <String>] [[-WavFile] <String>] [<CommonParameters>]
+convert-txt2wav.ps1 [[-Text] <String>] [[-WavFile] <String>] [<CommonParameters>]
 
 -Text <String>
     Specifies the text to use

@@ -6,7 +6,7 @@ Queries the S.M.A.R.T. data of your HDD/SSD's and saves it to the current/given 
 
 ## Parameters
 ```powershell
-/home/mf/Repos/PowerShell/Scripts/query-smart-data.ps1 [[-Directory] <String>] [<CommonParameters>]
+query-smart-data.ps1 [[-Directory] <String>] [<CommonParameters>]
 
 -Directory <String>
     Specifies the path to the target directory

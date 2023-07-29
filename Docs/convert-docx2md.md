@@ -4,7 +4,7 @@ This PowerShell script converts .DOCX file(s) into Markdown.
 
 ## Parameters
 ```powershell
-/home/mf/Repos/PowerShell/Scripts/convert-docx2md.ps1 [[-FilePattern] <String>] [<CommonParameters>]
+convert-docx2md.ps1 [[-FilePattern] <String>] [<CommonParameters>]
 
 -FilePattern <String>
     Specifies the file pattern to the .DOCX file(s)

@@ -4,7 +4,7 @@ This PowerShell script replies to 'Merry Christmas' by text-to-speech (TTS).
 
 ## Parameters
 ```powershell
-/home/mf/Repos/PowerShell/Scripts/merry-christmas.ps1 [<CommonParameters>]
+merry-christmas.ps1 [<CommonParameters>]
 
 [<CommonParameters>]
     This script supports the common parameters: Verbose, Debug, ErrorAction, ErrorVariable, WarningAction, 

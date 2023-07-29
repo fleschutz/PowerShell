@@ -4,7 +4,7 @@ This PowerShell script continuously shows the current weather conditions (simila
 
 ## Parameters
 ```powershell
-/home/mf/Repos/PowerShell/Scripts/ping-weather.ps1 [[-Location] <String>] [[-UpdateInterval] <Int32>] [<CommonParameters>]
+ping-weather.ps1 [[-Location] <String>] [[-UpdateInterval] <Int32>] [<CommonParameters>]
 
 -Location <String>
     Specifies the location to use (determined automatically per default)

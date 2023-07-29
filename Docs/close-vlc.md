@@ -4,7 +4,7 @@ This PowerShell script closes the VLC media player application gracefully.
 
 ## Parameters
 ```powershell
-/home/mf/Repos/PowerShell/Scripts/close-vlc.ps1 [<CommonParameters>]
+close-vlc.ps1 [<CommonParameters>]
 
 [<CommonParameters>]
     This script supports the common parameters: Verbose, Debug, ErrorAction, ErrorVariable, WarningAction, 

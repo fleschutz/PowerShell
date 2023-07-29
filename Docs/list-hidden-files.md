@@ -4,7 +4,7 @@ This PowerShell script scans and lists all hidden files in a directory tree.
 
 ## Parameters
 ```powershell
-/home/mf/Repos/PowerShell/Scripts/list-hidden-files.ps1 [[-DirTree] <String>] [<CommonParameters>]
+list-hidden-files.ps1 [[-DirTree] <String>] [<CommonParameters>]
 
 -DirTree <String>
     Specifies the path to the directory tree

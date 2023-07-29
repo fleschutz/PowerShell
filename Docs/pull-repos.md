@@ -4,7 +4,7 @@ This PowerShell script pulls updates for all Git repositories in a folder (inclu
 
 ## Parameters
 ```powershell
-/home/mf/Repos/PowerShell/Scripts/pull-repos.ps1 [[-ParentDir] <String>] [<CommonParameters>]
+pull-repos.ps1 [[-ParentDir] <String>] [<CommonParameters>]
 
 -ParentDir <String>
     Specifies the path to the parent folder

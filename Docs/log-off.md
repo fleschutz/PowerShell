@@ -4,7 +4,7 @@ This PowerShell script logs off the current Windows user.
 
 ## Parameters
 ```powershell
-/home/mf/Repos/PowerShell/Scripts/log-off.ps1 [<CommonParameters>]
+log-off.ps1 [<CommonParameters>]
 
 [<CommonParameters>]
     This script supports the common parameters: Verbose, Debug, ErrorAction, ErrorVariable, WarningAction, 

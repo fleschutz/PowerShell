@@ -4,7 +4,7 @@ This PowerShell script launches the Google Chrome Web browser.
 
 ## Parameters
 ```powershell
-/home/mf/Repos/PowerShell/Scripts/open-chrome.ps1 [[-URL] <String>] [<CommonParameters>]
+open-chrome.ps1 [[-URL] <String>] [<CommonParameters>]
 
 -URL <String>
     Specifies an optional URL

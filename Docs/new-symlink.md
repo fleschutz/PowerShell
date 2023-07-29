@@ -4,7 +4,7 @@ This PowerShell script creates a new symbolic link file.
 
 ## Parameters
 ```powershell
-/home/mf/Repos/PowerShell/Scripts/new-symlink.ps1 [[-symlink] <String>] [[-target] <String>] [<CommonParameters>]
+new-symlink.ps1 [[-symlink] <String>] [[-target] <String>] [<CommonParameters>]
 
 -symlink <String>
     Specifies the new symlink filename

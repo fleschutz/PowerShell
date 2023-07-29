@@ -4,7 +4,7 @@ This PowerShell script generates and writes PowerShell code on the console (for 
 
 ## Parameters
 ```powershell
-/home/mf/Repos/PowerShell/Scripts/write-code.ps1 [[-color] <String>] [[-speed] <Int32>] [<CommonParameters>]
+write-code.ps1 [[-color] <String>] [[-speed] <Int32>] [<CommonParameters>]
 
 -color <String>
     Specifies the color to use ("green" by default)

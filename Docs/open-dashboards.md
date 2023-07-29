@@ -1,10 +1,10 @@
 ## The *open-dashboards.ps1* Script
 
-This PowerShell script launches the Web browser with some dashboard websites.
+This PowerShell script launches the web browser with tabs of 18 dashboard websites.
 
 ## Parameters
 ```powershell
-/home/mf/Repos/PowerShell/Scripts/open-dashboards.ps1 [<CommonParameters>]
+open-dashboards.ps1 [<CommonParameters>]
 
 [<CommonParameters>]
     This script supports the common parameters: Verbose, Debug, ErrorAction, ErrorVariable, WarningAction, 
@@ -13,7 +13,10 @@ This PowerShell script launches the Web browser with some dashboard websites.
 
 ## Example
 ```powershell
-PS> ./open-dashboards
+PS> ./open-dashboards.ps1
+⏳ (1/2) Loading Data/web-dashboards.csv...
+⏳ (2/2) Launching web browser with tabs of Toggl Track · Google Calendar · CNN News...
+...
 
 ```
 
@@ -27,11 +30,14 @@ https://github.com/fleschutz/PowerShell
 ```powershell
 <#
 .SYNOPSIS
-	Open dashboards
+	Open web dashboards
 .DESCRIPTION
-	This PowerShell script launches the Web browser with some dashboard websites.
+	This PowerShell script launches the web browser with tabs of 18 dashboard websites.
 .EXAMPLE
-	PS> ./open-dashboards
+	PS> ./open-dashboards.ps1
+	⏳ (1/2) Loading Data/web-dashboards.csv...
+	⏳ (2/2) Launching web browser with tabs of Toggl Track · Google Calendar · CNN News...
+	...
 .LINK
 	https://github.com/fleschutz/PowerShell
 .NOTES
@@ -40,21 +46,18 @@ https://github.com/fleschutz/PowerShell
 
 try {
 	$stopWatch = [system.diagnostics.stopwatch]::startNew()
-	Write-Host "⏳ (1/2) Loading Data/popular-dashboards.csv..."
-	$Table = Import-CSV "$PSScriptRoot/../Data/popular-dashboards.csv"
-	$NumRows = $Table.Length
-	Write-Host "⏳ (2/2) Launching Web browser with dashboards...   " -noNewLine
-	foreach($Row in $Table) {
-		$Name = $Row.NAME
-		$URL = $Row.URL
-		Write-Host "$Name · " -noNewline
-		& "$PSScriptRoot/open-default-browser.ps1" "$URL"
-		Start-Sleep -milliseconds 50
+	Write-Host "⏳ (1/2) Loading Data/web-dashboards.csv..."
+	$table = Import-CSV "$PSScriptRoot/../Data/web-dashboards.csv"
+	$numRows = $table.Length
+	Write-Host "⏳ (2/2) Launching web browser with tabs of " -noNewline
+	foreach($row in $table) {
+		Write-Host "$($row.NAME) · " -noNewline
+		& "$PSScriptRoot/open-default-browser.ps1" "$($row.URL)"
+		Start-Sleep -milliseconds 100
 	}
 	Write-Host ""
 	[int]$elapsed = $stopWatch.Elapsed.TotalSeconds
-	"Hint: use switch-tabs.ps1 to switch the browser tabs automatically"
-	"✅ Opened $NumRows dashboards in $elapsed sec"
+	"✅ Opened $NumRows web dashboards in $elapsed sec (Hint: use 'switch-tabs.ps1' to switch between the tabs automatically)"
 	exit 0 # success
 } catch {
 	"⚠️ Error in line $($_.InvocationInfo.ScriptLineNumber): $($Error[0])"

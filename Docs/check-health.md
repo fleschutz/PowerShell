@@ -1,10 +1,10 @@
 ## The *check-health.ps1* Script
 
-This PowerShell script checks and prints the system health of the local computer.
+This PowerShell script queries the system health of the local computer (hardware, software, and network) and prints it.
 
 ## Parameters
 ```powershell
-/home/mf/Repos/PowerShell/Scripts/check-health.ps1 [<CommonParameters>]
+check-health.ps1 [<CommonParameters>]
 
 [<CommonParameters>]
     This script supports the common parameters: Verbose, Debug, ErrorAction, ErrorVariable, WarningAction, 
@@ -13,7 +13,8 @@ This PowerShell script checks and prints the system health of the local computer
 
 ## Example
 ```powershell
-PS> ./check-health
+PS> ./check-health.ps1
+ 
 H A R D W A R E
 ✅ Intel(R) Core(TM) i5-6400 CPU @ 2.70GHz (CPU0, 2701MHz, socket U3E1, 30.1°C)
 ...
@@ -32,9 +33,10 @@ https://github.com/fleschutz/PowerShell
 .SYNOPSIS
 	Checks the system health 
 .DESCRIPTION
-	This PowerShell script checks and prints the system health of the local computer.
+	This PowerShell script queries the system health of the local computer (hardware, software, and network) and prints it.
 .EXAMPLE
-	PS> ./check-health
+	PS> ./check-health.ps1
+  
 	H A R D W A R E
 	✅ Intel(R) Core(TM) i5-6400 CPU @ 2.70GHz (CPU0, 2701MHz, socket U3E1, 30.1°C)
 	...
@@ -44,30 +46,9 @@ https://github.com/fleschutz/PowerShell
 	Author: Markus Fleschutz | License: CC0
 #>
 
-" "
-& "$PSScriptRoot/write-green.ps1" "   H A R D W A R E"
-& "$PSScriptRoot/check-cpu.ps1"
-& "$PSScriptRoot/check-ram.ps1"
-& "$PSScriptRoot/check-gpu.ps1"
-& "$PSScriptRoot/check-smart-devices.ps1"
-& "$PSScriptRoot/check-drives.ps1"
-& "$PSScriptRoot/check-battery.ps1"
-" "
-& "$PSScriptRoot/write-green.ps1" "   S O F T W A R E"
-& "$PSScriptRoot/check-bios.ps1"
-& "$PSScriptRoot/check-os.ps1"
-& "$PSScriptRoot/check-powershell.ps1"
-& "$PSScriptRoot/check-apps.ps1"
-& "$PSScriptRoot/check-uptime.ps1"
-& "$PSScriptRoot/check-time-zone.ps1"
-& "$PSScriptRoot/check-swap-space.ps1"
-& "$PSScriptRoot/check-pending-reboot.ps1"
-" "
-& "$PSScriptRoot/write-green.ps1" "   N E T W O R K"
-& "$PSScriptRoot/check-firewall"
-& "$PSScriptRoot/check-ping.ps1"
-& "$PSScriptRoot/check-dns.ps1"
-& "$PSScriptRoot/check-vpn.ps1"
+& "$PSScriptRoot/check-hardware.ps1"
+& "$PSScriptRoot/check-software.ps1"
+& "$PSScriptRoot/check-network.ps1"
 exit 0 # success
 ```
 

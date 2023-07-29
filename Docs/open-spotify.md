@@ -4,7 +4,7 @@ This script launches the Spotify application.
 
 ## Parameters
 ```powershell
-/home/mf/Repos/PowerShell/Scripts/open-spotify.ps1 [<CommonParameters>]
+open-spotify.ps1 [<CommonParameters>]
 
 [<CommonParameters>]
     This script supports the common parameters: Verbose, Debug, ErrorAction, ErrorVariable, WarningAction, 

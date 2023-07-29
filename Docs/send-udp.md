@@ -4,7 +4,7 @@ This PowerShell script sends a UDP datagram message to an IP address and port.
 
 ## Parameters
 ```powershell
-/home/mf/Repos/PowerShell/Scripts/send-udp.ps1 [[-TargetIP] <String>] [[-TargetPort] <Int32>] [[-Message] <String>] [<CommonParameters>]
+send-udp.ps1 [[-TargetIP] <String>] [[-TargetPort] <Int32>] [[-Message] <String>] [<CommonParameters>]
 
 -TargetIP <String>
     Specifies the target IP address

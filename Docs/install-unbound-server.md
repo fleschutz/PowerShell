@@ -4,7 +4,7 @@ This PowerShell script installs Unbound, a validating, recursive, caching DNS re
 
 ## Parameters
 ```powershell
-/home/mf/Repos/PowerShell/Scripts/install-unbound-server.ps1 [<CommonParameters>]
+install-unbound-server.ps1 [<CommonParameters>]
 
 [<CommonParameters>]
     This script supports the common parameters: Verbose, Debug, ErrorAction, ErrorVariable, WarningAction, 

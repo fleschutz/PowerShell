@@ -4,7 +4,7 @@ This PowerShell script lists the content of a directory (alphabetically formatte
 
 ## Parameters
 ```powershell
-/home/mf/Repos/PowerShell/Scripts/list-folder.ps1 [[-searchPattern] <String>] [<CommonParameters>]
+list-folder.ps1 [[-searchPattern] <String>] [<CommonParameters>]
 
 -searchPattern <String>
     Specifies the search pattern ("*" by default which means anything)

@@ -4,7 +4,7 @@ This PowerShell script converts the comment-based help of a PowerShell script to
 
 ## Parameters
 ```powershell
-/home/mf/Repos/PowerShell/Scripts/convert-ps2md.ps1 [[-filename] <String>] [<CommonParameters>]
+convert-ps2md.ps1 [[-filename] <String>] [<CommonParameters>]
 
 -filename <String>
     Specifies the path to the PowerShell script
@@ -106,7 +106,7 @@ try {
 	"## Parameters"
 	"``````powershell"
 	$Syntax = (($full.syntax | Out-String) -replace "`r`n", "`r`n").Trim()
-	$Syntax = (($Syntax | Out-String) -replace "/home/mf/PowerShell/Scripts/", "")
+	$Syntax = (($Syntax | Out-String) -replace "/home/mf/Repos/PowerShell/Scripts/", "")
 	if ($Syntax -ne "") {
 		"$Syntax"
 	}

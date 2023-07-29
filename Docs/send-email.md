@@ -4,7 +4,7 @@ This PowerShell script sends an email message.
 
 ## Parameters
 ```powershell
-/home/mf/Repos/PowerShell/Scripts/send-email.ps1 [[-From] <String>] [[-To] <String>] [[-Subject] <String>] [[-Body] <String>] [[-SMTPServer] <String>] [<CommonParameters>]
+send-email.ps1 [[-From] <String>] [[-To] <String>] [[-Subject] <String>] [[-Body] <String>] [[-SMTPServer] <String>] [<CommonParameters>]
 
 -From <String>
     Specifies the sender email address

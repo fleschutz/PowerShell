@@ -4,7 +4,7 @@ This PowerShell script lists the commit statistics of a Git repository.
 
 ## Parameters
 ```powershell
-/home/mf/Repos/PowerShell/Scripts/list-commit-statistics.ps1 [[-RepoDir] <String>] [<CommonParameters>]
+list-commit-statistics.ps1 [[-RepoDir] <String>] [<CommonParameters>]
 
 -RepoDir <String>
     Specifies the path to the Git repository.

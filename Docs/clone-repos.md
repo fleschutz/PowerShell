@@ -4,7 +4,7 @@ This PowerShell script clones popular Git repositories into a target directory.
 
 ## Parameters
 ```powershell
-/home/mf/Repos/PowerShell/Scripts/clone-repos.ps1 [[-TargetDir] <String>] [<CommonParameters>]
+clone-repos.ps1 [[-TargetDir] <String>] [<CommonParameters>]
 
 -TargetDir <String>
     Specifies the file path to the target directory (current working directory by default)

@@ -4,7 +4,7 @@ This PowerShell script changes the working directory to the user's Git repositor
 
 ## Parameters
 ```powershell
-/home/mf/Repos/PowerShell/Scripts/cd-repos.ps1 [[-Subpath] <String>] [<CommonParameters>]
+cd-repos.ps1 [[-Subpath] <String>] [<CommonParameters>]
 
 -Subpath <String>
     Specifies an additional relative subpath (optional)

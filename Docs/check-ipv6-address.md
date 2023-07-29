@@ -4,7 +4,7 @@ This PowerShell script checks the given IPv6 address for validity
 
 ## Parameters
 ```powershell
-/home/mf/Repos/PowerShell/Scripts/check-ipv6-address.ps1 [[-Address] <String>] [<CommonParameters>]
+check-ipv6-address.ps1 [[-Address] <String>] [<CommonParameters>]
 
 -Address <String>
     Specifies the IPv6 address to check

@@ -4,7 +4,7 @@ This PowerShell script changes the working directory to the Windows directory.
 
 ## Parameters
 ```powershell
-/home/mf/Repos/PowerShell/Scripts/cd-windows.ps1 [<CommonParameters>]
+cd-windows.ps1 [<CommonParameters>]
 
 [<CommonParameters>]
     This script supports the common parameters: Verbose, Debug, ErrorAction, ErrorVariable, WarningAction, 

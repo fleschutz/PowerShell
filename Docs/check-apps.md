@@ -4,7 +4,7 @@ This PowerShell script queries the application status and prints it.
 
 ## Parameters
 ```powershell
-/home/mf/Repos/PowerShell/Scripts/check-apps.ps1 [<CommonParameters>]
+check-apps.ps1 [<CommonParameters>]
 
 [<CommonParameters>]
     This script supports the common parameters: Verbose, Debug, ErrorAction, ErrorVariable, WarningAction, 
@@ -42,7 +42,8 @@ https://github.com/fleschutz/PowerShell
 
 try {
 	if ($IsLinux) {
-		# TODO
+		$NumSnaps = (snap list).Count - 1
+		Write-Host "✅ $($NumSnaps) snaps installed"
 	} else {
 		Write-Progress "⏳ Querying installed apps and updates..."
 		$Apps = Get-AppxPackage

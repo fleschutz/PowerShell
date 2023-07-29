@@ -4,7 +4,7 @@ This PowerShell script uninstalls 9 ZIP from the local computer.
 
 ## Parameters
 ```powershell
-/home/mf/Repos/PowerShell/Scripts/uninstall-nine-zip.ps1 [<CommonParameters>]
+uninstall-nine-zip.ps1 [<CommonParameters>]
 
 [<CommonParameters>]
     This script supports the common parameters: Verbose, Debug, ErrorAction, ErrorVariable, WarningAction, 

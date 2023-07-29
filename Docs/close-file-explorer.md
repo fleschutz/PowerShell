@@ -4,7 +4,7 @@ This PowerShell script closes the Microsoft File Explorer application gracefully
 
 ## Parameters
 ```powershell
-/home/mf/Repos/PowerShell/Scripts/close-file-explorer.ps1 [<CommonParameters>]
+close-file-explorer.ps1 [<CommonParameters>]
 
 [<CommonParameters>]
     This script supports the common parameters: Verbose, Debug, ErrorAction, ErrorVariable, WarningAction, 

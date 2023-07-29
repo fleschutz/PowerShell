@@ -4,7 +4,7 @@ This PowerShell script closes a program's processes gracefully.
 
 ## Parameters
 ```powershell
-/home/mf/Repos/PowerShell/Scripts/close-program.ps1 [[-FullProgramName] <String>] [[-ProgramName] <String>] [[-ProgramAliasName] <String>] [<CommonParameters>]
+close-program.ps1 [[-FullProgramName] <String>] [[-ProgramName] <String>] [[-ProgramAliasName] <String>] [<CommonParameters>]
 
 -FullProgramName <String>
     Specifies the full program name

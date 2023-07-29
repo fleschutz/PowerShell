@@ -4,7 +4,7 @@ This PowerShell script fetches the latest updates into a local Git repository (i
 
 ## Parameters
 ```powershell
-/home/mf/Repos/PowerShell/Scripts/fetch-repo.ps1 [[-RepoDir] <String>] [<CommonParameters>]
+fetch-repo.ps1 [[-RepoDir] <String>] [<CommonParameters>]
 
 -RepoDir <String>
     Specifies the file path to the local Git repository (default is working directory).

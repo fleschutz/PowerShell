@@ -4,7 +4,7 @@ This PowerShell script installs CrystalDiskMark from the Microsoft Store.
 
 ## Parameters
 ```powershell
-/home/mf/Repos/PowerShell/Scripts/install-crystal-disk-mark.ps1 [<CommonParameters>]
+install-crystal-disk-mark.ps1 [<CommonParameters>]
 
 [<CommonParameters>]
     This script supports the common parameters: Verbose, Debug, ErrorAction, ErrorVariable, WarningAction, 

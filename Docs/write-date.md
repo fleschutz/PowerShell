@@ -4,7 +4,7 @@ This PowerShell script determines and writes the current date.
 
 ## Parameters
 ```powershell
-/home/mf/Repos/PowerShell/Scripts/write-date.ps1 [<CommonParameters>]
+write-date.ps1 [<CommonParameters>]
 
 [<CommonParameters>]
     This script supports the common parameters: Verbose, Debug, ErrorAction, ErrorVariable, WarningAction, 

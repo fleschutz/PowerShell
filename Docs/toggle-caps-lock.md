@@ -4,7 +4,7 @@ This PowerShell script toggles the Caps Lock key state.
 
 ## Parameters
 ```powershell
-/home/mf/Repos/PowerShell/Scripts/toggle-caps-lock.ps1 [<CommonParameters>]
+toggle-caps-lock.ps1 [<CommonParameters>]
 
 [<CommonParameters>]
     This script supports the common parameters: Verbose, Debug, ErrorAction, ErrorVariable, WarningAction, 

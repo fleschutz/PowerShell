@@ -4,7 +4,7 @@ This PowerShell script speaks the given text with a Portuguese text-to-speech (T
 
 ## Parameters
 ```powershell
-/home/mf/Repos/PowerShell/Scripts/speak-portuguese.ps1 [[-text] <String>] [<CommonParameters>]
+speak-portuguese.ps1 [[-text] <String>] [<CommonParameters>]
 
 -text <String>
     Specifies the text to speak

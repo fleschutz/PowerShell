@@ -4,7 +4,7 @@ This PowerShell script uninstalls Spotify from the local computer.
 
 ## Parameters
 ```powershell
-/home/mf/Repos/PowerShell/Scripts/uninstall-spotify.ps1 [<CommonParameters>]
+uninstall-spotify.ps1 [<CommonParameters>]
 
 [<CommonParameters>]
     This script supports the common parameters: Verbose, Debug, ErrorAction, ErrorVariable, WarningAction, 

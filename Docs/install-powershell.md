@@ -5,9 +5,9 @@ If '-Daily' is specified, then the latest PowerShell daily package will be insta
 
 ## Parameters
 ```powershell
-/home/mf/Repos/PowerShell/Scripts/install-powershell.ps1 [-Destination <String>] [-Daily] [-DoNotOverwrite] [-AddToPath] [-Preview] [<CommonParameters>]
+install-powershell.ps1 [-Destination <String>] [-Daily] [-DoNotOverwrite] [-AddToPath] [-Preview] [<CommonParameters>]
 
-/home/mf/Repos/PowerShell/Scripts/install-powershell.ps1 [-UseMSI] [-Quiet] [-AddExplorerContextMenu] [-EnablePSRemoting] [-Preview] [<CommonParameters>]
+install-powershell.ps1 [-UseMSI] [-Quiet] [-AddExplorerContextMenu] [-EnablePSRemoting] [-Preview] [<CommonParameters>]
 
 -Destination <String>
     The destination path to install PowerShell to.
@@ -185,7 +185,7 @@ if (-not $Destination) {
 $Destination = $PSCmdlet.SessionState.Path.GetUnresolvedProviderPathFromPSPath($Destination)
 
 if (-not $UseMSI) {
-    Write-Verbose "Destination: $Destination" -Verbose
+    Write-Host "Installation destination path: $Destination"
 } else {
     if (-not $IsWinEnv) {
         throw "-UseMSI is only supported on Windows"
@@ -492,7 +492,7 @@ try {
         }
 
         $downloadURL = "https://github.com/PowerShell/PowerShell/releases/download/v${release}/${packageName}"
-        Write-Host "Downloading from: $downloadURL"
+        Write-Host "Downloading: $downloadURL"
 
         $packagePath = Join-Path -Path $tempDir -ChildPath $packageName
         if (!$PSVersionTable.ContainsKey('PSEdition') -or $PSVersionTable.PSEdition -eq "Desktop") {

@@ -4,7 +4,7 @@ This PowerShell script lists the user accounts on the local computer.
 
 ## Parameters
 ```powershell
-/home/mf/Repos/PowerShell/Scripts/list-user-accounts.ps1 [<CommonParameters>]
+list-user-accounts.ps1 [<CommonParameters>]
 
 [<CommonParameters>]
     This script supports the common parameters: Verbose, Debug, ErrorAction, ErrorVariable, WarningAction, 

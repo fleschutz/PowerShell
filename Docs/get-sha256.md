@@ -4,7 +4,7 @@ This PowerShell script calculates and prints the SHA256 checksum of the given fi
 
 ## Parameters
 ```powershell
-/home/mf/Repos/PowerShell/Scripts/get-sha256.ps1 [[-file] <String>] [<CommonParameters>]
+get-sha256.ps1 [[-file] <String>] [<CommonParameters>]
 
 -file <String>
     Specifies the path to the file

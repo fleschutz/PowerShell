@@ -4,7 +4,7 @@ This PowerShell script lists all print jobs of all printer devices.
 
 ## Parameters
 ```powershell
-/home/mf/Repos/PowerShell/Scripts/list-print-jobs.ps1 [<CommonParameters>]
+list-print-jobs.ps1 [<CommonParameters>]
 
 [<CommonParameters>]
     This script supports the common parameters: Verbose, Debug, ErrorAction, ErrorVariable, WarningAction, 

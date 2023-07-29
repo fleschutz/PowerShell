@@ -4,7 +4,7 @@ This PowerShell script installs evcc. Sevcc is an extensible EV Charge Controlle
 
 ## Parameters
 ```powershell
-/home/mf/Repos/PowerShell/Scripts/install-evcc.ps1 [<CommonParameters>]
+install-evcc.ps1 [<CommonParameters>]
 
 [<CommonParameters>]
     This script supports the common parameters: Verbose, Debug, ErrorAction, ErrorVariable, WarningAction, 

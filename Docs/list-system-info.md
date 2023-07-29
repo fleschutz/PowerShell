@@ -4,7 +4,7 @@ This PowerShell script lists system information of the local computer.
 
 ## Parameters
 ```powershell
-/home/mf/Repos/PowerShell/Scripts/list-system-info.ps1 [<CommonParameters>]
+list-system-info.ps1 [<CommonParameters>]
 
 [<CommonParameters>]
     This script supports the common parameters: Verbose, Debug, ErrorAction, ErrorVariable, WarningAction, 

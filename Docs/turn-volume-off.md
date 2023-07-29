@@ -4,7 +4,7 @@ This PowerShell script mutes the default audio device immediately.
 
 ## Parameters
 ```powershell
-/home/mf/Repos/PowerShell/Scripts/turn-volume-off.ps1 [<CommonParameters>]
+turn-volume-off.ps1 [<CommonParameters>]
 
 [<CommonParameters>]
     This script supports the common parameters: Verbose, Debug, ErrorAction, ErrorVariable, WarningAction, 

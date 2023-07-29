@@ -4,7 +4,7 @@ This PowerShell script checks the security status of the given password by havei
 
 ## Parameters
 ```powershell
-/home/mf/Repos/PowerShell/Scripts/check-password.ps1 [[-password] <String>] [<CommonParameters>]
+check-password.ps1 [[-password] <String>] [<CommonParameters>]
 
 -password <String>
     

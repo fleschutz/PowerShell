@@ -4,7 +4,7 @@ This PowerShell script sends a TCP message to the given IP address and port.
 
 ## Parameters
 ```powershell
-/home/mf/Repos/PowerShell/Scripts/send-tcp.ps1 [[-TargetIP] <String>] [[-TargetPort] <Int32>] [[-Message] <String>] [<CommonParameters>]
+send-tcp.ps1 [[-TargetIP] <String>] [[-TargetPort] <Int32>] [[-Message] <String>] [<CommonParameters>]
 
 -TargetIP <String>
     Specifies the target IP address

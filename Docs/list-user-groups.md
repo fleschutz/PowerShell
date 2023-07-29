@@ -1,10 +1,10 @@
 ## The *list-user-groups.ps1* Script
 
-This PowerShell script lists the user groups on the local computer.
+This PowerShell script lists the user groups of the local computer.
 
 ## Parameters
 ```powershell
-/home/mf/Repos/PowerShell/Scripts/list-user-groups.ps1 [<CommonParameters>]
+list-user-groups.ps1 [<CommonParameters>]
 
 [<CommonParameters>]
     This script supports the common parameters: Verbose, Debug, ErrorAction, ErrorVariable, WarningAction, 
@@ -17,10 +17,9 @@ PS> ./list-user-groups
 
 
 
-Name            Description
-----            -----------
-HomeUsers       HomeUsers Security Group
-Ssh Users       Members of this group can remotely access this computer over SSH protocol.
+Name                 Description
+----                 -----------
+Administrators       Administrators have complete and unrestricted access to the computer/domain
 ...
 
 ```
@@ -35,16 +34,15 @@ https://github.com/fleschutz/PowerShell
 ```powershell
 <#
 .SYNOPSIS
-	Lists the user groups on the local computer
+	Lists the user groups
 .DESCRIPTION
-	This PowerShell script lists the user groups on the local computer.
+	This PowerShell script lists the user groups of the local computer.
 .EXAMPLE
 	PS> ./list-user-groups
 
-	Name            Description
-	----            -----------
-	HomeUsers       HomeUsers Security Group
-	Ssh Users       Members of this group can remotely access this computer over SSH protocol.
+	Name                 Description
+	----                 -----------
+	Administrators       Administrators have complete and unrestricted access to the computer/domain
 	...
 .LINK
 	https://github.com/fleschutz/PowerShell

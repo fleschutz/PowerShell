@@ -4,7 +4,7 @@ This PowerShell script lists the details of the current time zone.
 
 ## Parameters
 ```powershell
-/home/mf/Repos/PowerShell/Scripts/list-timezone.ps1 [<CommonParameters>]
+list-timezone.ps1 [<CommonParameters>]
 
 [<CommonParameters>]
     This script supports the common parameters: Verbose, Debug, ErrorAction, ErrorVariable, WarningAction, 

@@ -4,7 +4,7 @@ This PowerShell script plays a short beep sound.
 
 ## Parameters
 ```powershell
-/home/mf/Repos/PowerShell/Scripts/play-beep-sound.ps1 [<CommonParameters>]
+play-beep-sound.ps1 [<CommonParameters>]
 
 [<CommonParameters>]
     This script supports the common parameters: Verbose, Debug, ErrorAction, ErrorVariable, WarningAction, 

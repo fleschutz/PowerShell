@@ -4,7 +4,7 @@ This PowerShell script installs and starts a local Calibre server as background 
 
 ## Parameters
 ```powershell
-/home/mf/Repos/PowerShell/Scripts/install-calibre-server.ps1 [[-Port] <Int32>] [[-UserDB] <String>] [[-Logfile] <String>] [<CommonParameters>]
+install-calibre-server.ps1 [[-Port] <Int32>] [[-UserDB] <String>] [[-Logfile] <String>] [<CommonParameters>]
 
 -Port <Int32>
     Specifies the Web port number (8099 by default)

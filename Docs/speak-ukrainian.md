@@ -4,7 +4,7 @@ This PowerShell script speaks the given text with a Ukrainian text-to-speech (TT
 
 ## Parameters
 ```powershell
-/home/mf/Repos/PowerShell/Scripts/speak-ukrainian.ps1 [[-text] <String>] [<CommonParameters>]
+speak-ukrainian.ps1 [[-text] <String>] [<CommonParameters>]
 
 -text <String>
     Specifies the text to speak

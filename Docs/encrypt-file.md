@@ -4,7 +4,7 @@ This PowerShell script encrypts a file using the given password and AES encrypti
 
 ## Parameters
 ```powershell
-/home/mf/Repos/PowerShell/Scripts/encrypt-file.ps1 [[-Path] <String>] [[-Password] <String>] [<CommonParameters>]
+encrypt-file.ps1 [[-Path] <String>] [[-Password] <String>] [<CommonParameters>]
 
 -Path <String>
     Specifies the path to the file to encrypt

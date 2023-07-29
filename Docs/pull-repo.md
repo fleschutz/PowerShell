@@ -4,7 +4,7 @@ This PowerShell script pulls the latest updates into a local Git repository (inc
 
 ## Parameters
 ```powershell
-/home/mf/Repos/PowerShell/Scripts/pull-repo.ps1 [[-RepoDir] <String>] [<CommonParameters>]
+pull-repo.ps1 [[-RepoDir] <String>] [<CommonParameters>]
 
 -RepoDir <String>
     Specifies the file path to the local Git repository (default is working directory)

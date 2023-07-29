@@ -4,7 +4,7 @@ This PowerShell script lists the hourly weather report in a nice table.
 
 ## Parameters
 ```powershell
-/home/mf/Repos/PowerShell/Scripts/list-weather.ps1 [[-Location] <String>] [<CommonParameters>]
+list-weather.ps1 [[-Location] <String>] [<CommonParameters>]
 
 -Location <String>
     Specifies the location to use (determined automatically per default)
@@ -77,6 +77,7 @@ function GetDescription { param([string]$Text)
 	"Moderate or heavy snow showers"{ return "❄️ moderate or heavy snow showers ⚠️" }
 	"Moderate or heavy freezing rain"{ return "💧 moderate or heavy freezing rain ⚠️" }
 	"Moderate rain"			{ return "💧 moderate rain" }
+	"Moderate rain at times"	{ return "💧 moderate rain at times" }
 	"Moderate snow"			{ return "❄️ moderate snow" }
 	"Mist"				{ return "🌫  misty" }
 	"Overcast"			{ return "☁️ overcast" }
@@ -118,7 +119,7 @@ function GetWindDir { param([string]$Text)
 }
 
 try {
-	Write-Progress "⏳ Loading data from http://wttr.in ..."
+	Write-Progress "⏳ Loading weather data from http://wttr.in ..."
 	$Weather = (Invoke-WebRequest -URI http://wttr.in/${Location}?format=j1 -userAgent "curl" -useBasicParsing).Content | ConvertFrom-Json
 	Write-Progress -completed "."
 	$Area = $Weather.nearest_area.areaName.value

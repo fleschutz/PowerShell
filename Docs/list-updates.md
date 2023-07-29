@@ -1,11 +1,11 @@
 ## The *list-updates.ps1* Script
 
-This PowerShell script lists available software updates for the local machine.
-Use "install-updates.ps1" to install the listed updates.
+This PowerShell script queries and lists available software updates for the local machine.
+Use 'install-updates.ps1' to install the listed updates.
 
 ## Parameters
 ```powershell
-/home/mf/Repos/PowerShell/Scripts/list-updates.ps1 [<CommonParameters>]
+list-updates.ps1 [<CommonParameters>]
 
 [<CommonParameters>]
     This script supports the common parameters: Verbose, Debug, ErrorAction, ErrorVariable, WarningAction, 
@@ -15,6 +15,13 @@ Use "install-updates.ps1" to install the listed updates.
 ## Example
 ```powershell
 PS> ./list-updates
+
+
+
+Name                                            Id                                Version       Available        Source
+-----------------------------------------------------------------------------------------------------------------------
+Git                                             Git.Git                           2.41.0        2.41.0.2         winget
+       ...
 
 ```
 
@@ -28,12 +35,17 @@ https://github.com/fleschutz/PowerShell
 ```powershell
 <#
 .SYNOPSIS
-	Lists updates
+	Lists new software updates
 .DESCRIPTION
-	This PowerShell script lists available software updates for the local machine.
-	Use "install-updates.ps1" to install the listed updates.
+	This PowerShell script queries and lists available software updates for the local machine.
+	Use 'install-updates.ps1' to install the listed updates.
 .EXAMPLE
 	PS> ./list-updates
+
+	Name                                            Id                                Version       Available        Source
+	-----------------------------------------------------------------------------------------------------------------------
+	Git                                             Git.Git                           2.41.0        2.41.0.2         winget
+        ...
 .LINK
 	https://github.com/fleschutz/PowerShell
 .NOTES
@@ -42,18 +54,18 @@ https://github.com/fleschutz/PowerShell
 
 try {
 	if ($IsLinux) {
-		"⏳ (1/2) Querying package updates... (use install-updates.ps1 to install them)"
+		"⏳ (1/2) Querying package updates..."
 		& sudo apt update
 		& sudo apt list --upgradable
-		"⏳ (2/2) Querying Snap updates... (use install-updates.ps1 to install them)"
-		sudo snap refresh --list
+		"⏳ (2/2) Querying Snap updates..."
+		& sudo snap refresh --list
 	} else {
-		Write-Progress "⏳ Querying available software updates..."
 		" "
+		Write-Progress "⏳ Querying new software updates..."
 		& winget upgrade
 		Write-Progress -completed "."
-		Write-Host "(use install-updates.ps1 to install these updates)"
 	}
+	"(use 'install-updates.ps1' to install the listed updates)"
 	exit 0 # success
 } catch {
 	"⚠️ Error in line $($_.InvocationInfo.ScriptLineNumber): $($Error[0])"

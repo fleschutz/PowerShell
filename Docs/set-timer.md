@@ -4,7 +4,7 @@ This PowerShell script sets a timer for a countdown.
 
 ## Parameters
 ```powershell
-/home/mf/Repos/PowerShell/Scripts/set-timer.ps1 [[-Seconds] <Int32>] [<CommonParameters>]
+set-timer.ps1 [[-Seconds] <Int32>] [<CommonParameters>]
 
 -Seconds <Int32>
     Specifies the number of seconds

@@ -4,7 +4,7 @@ This PowerShell script lists all installed PowerShell scripts.
 
 ## Parameters
 ```powershell
-/home/mf/Repos/PowerShell/Scripts/list-installed-scripts.ps1 [<CommonParameters>]
+list-installed-scripts.ps1 [<CommonParameters>]
 
 [<CommonParameters>]
     This script supports the common parameters: Verbose, Debug, ErrorAction, ErrorVariable, WarningAction, 

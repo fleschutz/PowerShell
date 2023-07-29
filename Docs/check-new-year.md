@@ -4,7 +4,7 @@ This PowerShell script checks the time until New Year and replies by text-to-spe
 
 ## Parameters
 ```powershell
-/home/mf/Repos/PowerShell/Scripts/check-new-year.ps1 [<CommonParameters>]
+check-new-year.ps1 [<CommonParameters>]
 
 [<CommonParameters>]
     This script supports the common parameters: Verbose, Debug, ErrorAction, ErrorVariable, WarningAction, 

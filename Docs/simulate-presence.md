@@ -4,7 +4,7 @@ This PowerShell script simulates the human presence against burglars. It switche
 
 ## Parameters
 ```powershell
-/home/mf/Repos/PowerShell/Scripts/simulate-presence.ps1 [[-IPaddress] <String>] [<CommonParameters>]
+simulate-presence.ps1 [[-IPaddress] <String>] [<CommonParameters>]
 
 -IPaddress <String>
     Specifies the IP address of the Shelly1 device

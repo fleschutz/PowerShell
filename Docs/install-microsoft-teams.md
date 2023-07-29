@@ -4,7 +4,7 @@ This PowerShell script installs Microsoft Teams from the Microsoft Store.
 
 ## Parameters
 ```powershell
-/home/mf/Repos/PowerShell/Scripts/install-microsoft-teams.ps1 [<CommonParameters>]
+install-microsoft-teams.ps1 [<CommonParameters>]
 
 [<CommonParameters>]
     This script supports the common parameters: Verbose, Debug, ErrorAction, ErrorVariable, WarningAction, 

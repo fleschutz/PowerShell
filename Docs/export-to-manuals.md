@@ -4,7 +4,7 @@ This PowerShell script exports the comment based help of all PowerShell scripts 
 
 ## Parameters
 ```powershell
-/home/mf/Repos/PowerShell/Scripts/export-to-manuals.ps1 [[-FilePattern] <String>] [[-TargetDir] <String>] [<CommonParameters>]
+export-to-manuals.ps1 [[-FilePattern] <String>] [[-TargetDir] <String>] [<CommonParameters>]
 
 -FilePattern <String>
     

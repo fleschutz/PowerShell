@@ -18,7 +18,7 @@ check-pending-reboot.ps1
 .SYNOPSIS
 	Check for pending reboots
 .DESCRIPTION
-	This PowerShell script queries pending reboots and prints it.
+	This PowerShell script queries pending operating system reboots and prints it.
 .EXAMPLE
 	./check-pending-reboot.ps1
 .LINK
@@ -40,23 +40,24 @@ try {
 	$Reason = ""
 	if ($IsLinux) {
 		if (Test-Path "/var/run/reboot-required") {
-			$Reason = "found /var/run/reboot-required"
+			$Reason = "found: /var/run/reboot-required"
+			Write-Host "⚠️ Pending reboot ($Reason)"
 		}
 	} else {
 		if (Test-Path -Path "HKLM:\SOFTWARE\Microsoft\Windows\CurrentVersion\WindowsUpdate\Auto Update\RebootRequired") {
-			$Reason += ", '...\WindowsUpdate\Auto Update\RebootRequired'"
+			$Reason += ", ...\Auto Update\RebootRequired"
 		}
 		if (Test-Path -Path "HKLM:\SOFTWARE\Microsoft\Windows\CurrentVersion\WindowsUpdate\Auto Update\PostRebootReporting") {
-			$Reason += ", '...\WindowsUpdate\Auto Update\PostRebootReporting'"
+			$Reason += ", ...\Auto Update\PostRebootReporting"
 		}
 		if (Test-Path -Path "HKLM:\SOFTWARE\Microsoft\Windows\CurrentVersion\Component Based Servicing\RebootPending") {
-			$Reason += ", '...\Component Based Servicing\RebootPending'"
+			$Reason += ", ...\Component Based Servicing\RebootPending"
 		}
 		if (Test-Path -Path "HKLM:\SOFTWARE\Microsoft\ServerManager\CurrentRebootAttempts") {
-			$Reason += ", '...\ServerManager\CurrentRebootAttempts'"
+			$Reason += ", ...\ServerManager\CurrentRebootAttempts"
 		}
 		if (Test-RegistryValue -Path "HKLM:\Software\Microsoft\Windows\CurrentVersion\Component Based Servicing" -Value "RebootInProgress") {
-			$Reason += ", '...\CurrentVersion\Component Based Servicing' with 'RebootInProgress'"
+			$Reason += ", ...\CurrentVersion\Component Based Servicing with 'RebootInProgress'"
 		}
 		if (Test-RegistryValue -Path "HKLM:\Software\Microsoft\Windows\CurrentVersion\Component Based Servicing" -Value "PackagesPending") {
 			$Reason += ", '...\CurrentVersion\Component Based Servicing' with 'PackagesPending'"
@@ -73,10 +74,11 @@ try {
 		if (Test-RegistryValue -Path "HKLM:\SYSTEM\CurrentControlSet\Services\Netlogon" -Value "AvoidSpnSet") {
 			$Reason += ", '...\CurrentControlSet\Services\Netlogon' with 'AvoidSpnSet'"
 		}
+		if ($Reason -ne "") {
+			Write-Host "⚠️ Pending reboot (registry contains $($Reason.substring(2)))"
+		}
 	}
-	if ($Reason -ne "") {
-		Write-Host "⚠️ Pending reboot (found $($Reason.substring(2)) in registry)"
-	} else {
+	if ($Reason -eq "") {
 		Write-Host "✅ No pending reboot"
 	}
 	exit 0 # success

@@ -5,7 +5,7 @@ NOTE: in case of merge conflicts the script stops immediately!
 
 ## Parameters
 ```powershell
-/home/mf/Repos/PowerShell/Scripts/pick-commit.ps1 [[-CommitID] <String>] [[-CommitMessage] <String>] [[-Branches] <String>] [[-RepoDir] <String>] [<CommonParameters>]
+pick-commit.ps1 [[-CommitID] <String>] [[-CommitMessage] <String>] [[-Branches] <String>] [[-RepoDir] <String>] [<CommonParameters>]
 
 -CommitID <String>
     Specifies the commit ID

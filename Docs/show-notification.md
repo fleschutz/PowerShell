@@ -4,7 +4,7 @@ This PowerShell script shows a toast-message notification for the Windows 10 Not
 
 ## Parameters
 ```powershell
-/home/mf/Repos/PowerShell/Scripts/show-notification.ps1 [[-Text] <String>] [[-Title] <String>] [[-Duration] <Int32>] [<CommonParameters>]
+show-notification.ps1 [[-Text] <String>] [[-Title] <String>] [[-Duration] <Int32>] [<CommonParameters>]
 
 -Text <String>
     

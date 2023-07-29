@@ -4,7 +4,7 @@ This PowerShell script converts a .CSV file into a text file and prints it.
 
 ## Parameters
 ```powershell
-/home/mf/Repos/PowerShell/Scripts/convert-csv2txt.ps1 [[-Path] <String>] [<CommonParameters>]
+convert-csv2txt.ps1 [[-Path] <String>] [<CommonParameters>]
 
 -Path <String>
     Specifies the path to the .CSV file

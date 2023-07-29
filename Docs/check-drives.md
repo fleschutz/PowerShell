@@ -4,7 +4,7 @@ This PowerShell script checks all drives for free space left.
 
 ## Parameters
 ```powershell
-/home/mf/Repos/PowerShell/Scripts/check-drives.ps1 [[-MinLevel] <Int32>] [<CommonParameters>]
+check-drives.ps1 [[-MinLevel] <Int32>] [<CommonParameters>]
 
 -MinLevel <Int32>
     Specifies the minimum warning level (10 GB by default)

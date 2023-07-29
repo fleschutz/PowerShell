@@ -4,7 +4,7 @@ This PowerShell script queries the BIOS status and prints it.
 
 ## Parameters
 ```powershell
-/home/mf/Repos/PowerShell/Scripts/check-bios.ps1 [<CommonParameters>]
+check-bios.ps1 [<CommonParameters>]
 
 [<CommonParameters>]
     This script supports the common parameters: Verbose, Debug, ErrorAction, ErrorVariable, WarningAction, 
@@ -14,7 +14,7 @@ This PowerShell script queries the BIOS status and prints it.
 ## Example
 ```powershell
 PS> ./check-bios
-✅ BIOS F6 by American Megatrends Inc. (version ALASKA - 1072009, S/N NXA82EV0EBB0760)
+✅ BIOS 'F6', release ALASKA - 1072009, S/N NXA82EV0EBB0760 by American Megatrends Inc.
 
 ```
 
@@ -33,7 +33,7 @@ https://github.com/fleschutz/PowerShell
 	This PowerShell script queries the BIOS status and prints it.
 .EXAMPLE
 	PS> ./check-bios
-	✅ BIOS F6 by American Megatrends Inc. (version ALASKA - 1072009, S/N NXA82EV0EBB0760)
+	✅ BIOS 'F6', release ALASKA - 1072009, S/N NXA82EV0EBB0760 by American Megatrends Inc.
 .LINK
 	https://github.com/fleschutz/PowerShell
 .NOTES
@@ -52,14 +52,14 @@ try {
 		}
 		Write-Progress -completed "."
 	} else {
-		Write-Progress "⏳ Querying BIOS..."
+		# Write-Progress "⏳ Querying BIOS..."
 		$BIOS = Get-CimInstance -ClassName Win32_BIOS
 		$Model = $BIOS.Name.Trim()
 		$Manufacturer = $BIOS.Manufacturer.Trim()
 		$Serial = $BIOS.SerialNumber.Trim()
 		$Version = $BIOS.Version.Trim()
-		Write-Progress -completed "."
-		Write-Host "✅ BIOS $Model by $Manufacturer (version $Version, S/N $Serial)"
+		# Write-Progress -completed "."
+		Write-Host "✅ BIOS '$Model', release $Version, S/N $Serial by $Manufacturer"
 	}
 	exit 0 # success
 } catch {

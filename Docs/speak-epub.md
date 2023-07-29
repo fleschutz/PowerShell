@@ -4,7 +4,7 @@ This PowerShell script speaks the content of the given Epub file by text-to-spee
 
 ## Parameters
 ```powershell
-/home/mf/Repos/PowerShell/Scripts/speak-epub.ps1 [[-Filename] <String>] [<CommonParameters>]
+speak-epub.ps1 [[-Filename] <String>] [<CommonParameters>]
 
 -Filename <String>
     Specifies the path to the Epub file

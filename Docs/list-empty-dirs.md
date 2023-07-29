@@ -4,7 +4,7 @@ This PowerShell script scans and lists all empty subfolders within the given dir
 
 ## Parameters
 ```powershell
-/home/mf/Repos/PowerShell/Scripts/list-empty-dirs.ps1 [[-DirTree] <String>] [<CommonParameters>]
+list-empty-dirs.ps1 [[-DirTree] <String>] [<CommonParameters>]
 
 -DirTree <String>
     Specifies the path to the directory tree (current working directory by default)

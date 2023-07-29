@@ -4,7 +4,7 @@ This PowerShell script lists major earthquakes with magnitude >= 6.0 for the las
 
 ## Parameters
 ```powershell
-/home/mf/Repos/PowerShell/Scripts/list-earthquakes.ps1 [<CommonParameters>]
+list-earthquakes.ps1 [<CommonParameters>]
 
 [<CommonParameters>]
     This script supports the common parameters: Verbose, Debug, ErrorAction, ErrorVariable, WarningAction, 
