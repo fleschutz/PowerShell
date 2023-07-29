@@ -1,5 +1,9 @@
+<<<<<<< HEAD
 PS> *list-voices.ps1*
 ====================
+=======
+# Script: *list-voices.ps1*
+>>>>>>> 4ae2d6ca4860751d3c91023d1194157da528bb33
 
 This PowerShell script lists the installed text-to-speech (TTS) voices.
 
