@@ -261,6 +261,7 @@ function ListTools {
 	ListTool tasklist	""
 	ListTool tcpdump	"--version"
 	ListTool tee		"--version"
+	ListTool terraform	"--version"
 	ListTool time		""
 	ListTool timeout	""
 	ListTool top		"--version"
