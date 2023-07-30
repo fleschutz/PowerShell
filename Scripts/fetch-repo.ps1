@@ -22,12 +22,12 @@ try {
 	& git --version
 	if ($lastExitCode -ne "0") { throw "Can't execute 'git' - make sure Git is installed and available" }
 
-	Write-Host "⏳ (2/3) Checking local folder ...        📂$RepoDir"
+	Write-Host "⏳ (2/3) Checking local folder...         📂$RepoDir"
 	if (!(Test-Path "$RepoDir" -pathType container)) { throw "Can't access folder: $RepoDir" }
 	$RepoDirName = (Get-Item "$RepoDir").Name
 
-	Write-Host "⏳ (3/3) Fetching updates...              " -noNewline
-	& git -C "$RepoDir" fetch --all --recurse-submodules --tags --prune --prune-tags --force 
+	Write-Host "⏳ (3/3) Fetching updates..."
+	& git -C "$RepoDir" fetch --all --recurse-submodules --tags --prune --prune-tags --force --quiet
 	if ($lastExitCode -ne "0") { throw "'git fetch --all' failed with exit code $lastExitCode" }
 	
 	[int]$Elapsed = $StopWatch.Elapsed.TotalSeconds
