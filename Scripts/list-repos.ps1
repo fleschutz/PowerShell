@@ -8,10 +8,10 @@
 .EXAMPLE
 	PS> ./list-repos C:\MyRepos
 	
-	Repository    Branch    LatestTag    Status
-	----------    ------    ---------    ------
-	cmake         main      v3.23.0      clean
-	opencv        main      4.5.5        modified
+	Repository    Branch    Latest Tag   Updates  Status
+	----------    ------    ----------   -------  ------
+	📂cmake      🌵main     v3.23.0     ↓0       ✔️clean
+	📂opencv     🌵main     4.5.5       ↓0       ⚠️modified
 	...
 .LINK
 	https://github.com/fleschutz/PowerShell
@@ -26,13 +26,17 @@ function ListRepos {
 	foreach($Folder in $Folders) {
 		$Repository = (Get-Item "$Folder").Name
 		$Branch = (git -C "$Folder" branch --show-current)
-		$LatestTagCommitID = (git -C "$Folder" rev-list --tags --max-count=1) | out-null
-	        $LatestTag = (git -C "$Folder" describe --tags $LatestTagCommitID)
+		$LatestTagCommitID = (git -C "$Folder" rev-list --tags --max-count=1)
+		if ($LatestTagCommitID -ne "") {
+	        	$LatestTag = (git -C "$Folder" describe --tags $LatestTagCommitID)
+		} else {
+			$LatestTag = ""
+		}
 		$NumCommits = (git -C "$Folder" rev-list HEAD...origin/$Branch --count)
 		$Status = (git -C "$Folder" status --short)
-		if ("$Status" -eq "") { $Status = "clean" }
-		elseif ("$Status" -like " M *") { $Status = "MODIFIED" }
-		New-Object PSObject -property @{ 'Repository'="📂$Repository"; 'Branch'="$Branch"; 'Latest Tag'="$LatestTag"; 'Updates'="↓$NumCommits"; 'Status'="$Status"; }
+		if ("$Status" -eq "") { $Status = "✔️clean" }
+		elseif ("$Status" -like " M *") { $Status = "⚠️modified" }
+		New-Object PSObject -property @{ 'Repository'="📂$Repository"; 'Branch'="🌵$Branch"; 'Latest Tag'="$LatestTag"; 'Updates'="↓$NumCommits"; 'Status'="$Status"; }
 	}
 }
 
