@@ -22,16 +22,16 @@ try {
 	& git --version
 	if ($lastExitCode -ne "0") { throw "Can't execute 'git' - make sure Git is installed and available" }
 
-	Write-Host "⏳ (2/3) Checking repository...           📂$RepoDir"
+	Write-Host "⏳ (2/3) Checking local folder ...        📂$RepoDir"
 	if (!(Test-Path "$RepoDir" -pathType container)) { throw "Can't access folder: $RepoDir" }
 	$RepoDirName = (Get-Item "$RepoDir").Name
 
-	Write-Host "⏳ (3/3) Fetching updates... "
-	& git -C "$RepoDir" fetch --all --recurse-submodules --prune --prune-tags --force 
-	if ($lastExitCode -ne "0") { throw "'git fetch' failed with exit code $lastExitCode" }
+	Write-Host "⏳ (3/3) Fetching updates...              " -noNewline
+	& git -C "$RepoDir" fetch --all --recurse-submodules --tags --prune --prune-tags --force 
+	if ($lastExitCode -ne "0") { throw "'git fetch --all' failed with exit code $lastExitCode" }
 	
 	[int]$Elapsed = $StopWatch.Elapsed.TotalSeconds
-	"✔️ fetched updates into repo 📂$RepoDirName in $Elapsed sec"
+	"✔️ Fetching updates into 📂$RepoDirName repo took $Elapsed sec"
 	exit 0 # success
 } catch {
 	"⚠️ Error in line $($_.InvocationInfo.ScriptLineNumber): $($Error[0])"
