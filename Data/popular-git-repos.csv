@@ -11,7 +11,7 @@ kubo,              file sharing tool,  master,  no,     "git@github.com:ipfs/kub
 grafana,           visualization tool, main,    no,     "git@github.com:grafana/grafana.git"
 jhead,		   EXIF tool,          master,  no,     "git@github.com:Matthias-Wandel/jhead"
 leon,              personal assistant, master,  no,     "git@github.com:leon-ai/leon.git"
-llvm,              compiler,           master,  no,     "git@github.com:llvm/llvm-project.git"
+llvm,              compiler,           main,    no,     "git@github.com:llvm/llvm-project.git"
 LSS,               math tool,          main,    no,     "git@github.com:fleschutz/LSS.git"
 ninja,             build tool,         master,  no,     "git@github.com:ninja-build/ninja.git"
 opencv,            lib,                master,  no,     "git@github.com:opencv/opencv.git"
