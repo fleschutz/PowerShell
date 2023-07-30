@@ -12,7 +12,7 @@ grafana,           visualization tool, main,    no,     "git@github.com:grafana/
 jhead,		   EXIF tool,          master,  no,     "git@github.com:Matthias-Wandel/jhead"
 leon,              personal assistant, master,  no,     "git@github.com:leon-ai/leon.git"
 llvm,              compiler,           master,  no,     "git@github.com:llvm/llvm-project.git"
-LSS,               math,               master,  no,     "git@github.com:fleschutz/LSS.git"
+LSS,               math tool,          main,    no,     "git@github.com:fleschutz/LSS.git"
 ninja,             build tool,         master,  no,     "git@github.com:ninja-build/ninja.git"
 opencv,            lib,                master,  no,     "git@github.com:opencv/opencv.git"
 operating-systems, collection,         main,    no,     "git@github.com:fleschutz/operating-systems.git"
