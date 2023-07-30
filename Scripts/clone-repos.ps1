@@ -25,7 +25,7 @@ try {
 	Write-Host "⏳ (2) Loading Data/popular-git-repos.csv...    " -noNewline
 	$Table = Import-CSV "$PSScriptRoot/../Data/popular-git-repos.csv"
 	$NumEntries = $Table.count
-	Write-Host "$NumEntries Git repos listed"
+	Write-Host "$NumEntries repos"
 
 	$TargetDirName = (Get-Item "$TargetDir").Name
 	Write-Host "⏳ (3) Checking target folder...                📂$TargetDirName"
