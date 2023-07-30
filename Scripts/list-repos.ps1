@@ -1,17 +1,17 @@
 ﻿<#
 .SYNOPSIS
-	Lists Git repositories
+	Lists Git repos
 .DESCRIPTION
-	This PowerShell script lists the details of all Git repositories in a folder.
+	This PowerShell script lists details of all Git repositories in a folder.
 .PARAMETER ParentDir
 	Specifies the path to the parent directory.
 .EXAMPLE
 	PS> ./list-repos C:\MyRepos
 	
-	No   Repository    Branch    LatestTag    Status
-	--   ----------    ------    ---------    ------
-	1    cmake         main      v3.23.0      clean
-	2    opencv        main      4.5.5        modified
+	Repository    Branch    LatestTag    Status
+	----------    ------    ---------    ------
+	cmake         main      v3.23.0      clean
+	opencv        main      4.5.5        modified
 	...
 .LINK
 	https://github.com/fleschutz/PowerShell
@@ -22,19 +22,17 @@
 param([string]$ParentDir = "$PWD")
 
 function ListRepos { 
-	[int]$No = 1
 	$Folders = (Get-ChildItem "$ParentDir" -attributes Directory)
 	foreach($Folder in $Folders) {
-		$FolderName = (Get-Item "$Folder").Name
+		$Repository = (Get-Item "$Folder").Name
 		$Branch = (git -C "$Folder" branch --show-current)
-		$LatestTagCommitID = (git -C "$Folder" rev-list --tags --max-count=1)
+		$LatestTagCommitID = (git -C "$Folder" rev-list --tags --max-count=1) | out-null
 	        $LatestTag = (git -C "$Folder" describe --tags $LatestTagCommitID)
+		$NumCommits = (git -C "$Folder" rev-list HEAD...origin/$Branch --count)
 		$Status = (git -C "$Folder" status --short)
 		if ("$Status" -eq "") { $Status = "clean" }
 		elseif ("$Status" -like " M *") { $Status = "MODIFIED" }
-		$NumCommits = (git -C "$Folder" rev-list HEAD...origin/$Branch --count)
-		New-Object PSObject -property @{ 'No'="$No"; 'Repository'="$FolderName"; 'Branch'="$Branch"; 'Latest_Tag'="$LatestTag"; 'Status'="$Status ↓$NumCommits"; }
-		$No++
+		New-Object PSObject -property @{ 'Repository'="📂$Repository"; 'Branch'="$Branch"; 'Latest Tag'="$LatestTag"; 'Updates'="↓$NumCommits"; 'Status'="$Status"; }
 	}
 }
 
@@ -44,7 +42,7 @@ try {
 	$Null = (git --version)
 	if ($lastExitCode -ne "0") { throw "Can't execute 'git' - make sure Git is installed and available" }
 
-	ListRepos | Format-Table -property @{e='No';width=3},@{e='Repository';width=22},@{e='Branch';width=20},Latest_Tag,Status
+	ListRepos | Format-Table -property @{e='Repository';width=22},@{e='Branch';width=20},'Latest Tag',@{e='Updates';width=10},Status
 	exit 0 # success
 } catch {
 	"⚠️ Error in line $($_.InvocationInfo.ScriptLineNumber): $($Error[0])"
