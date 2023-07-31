@@ -1,6 +1,6 @@
 ﻿<#
 .SYNOPSIS
-	Fetches Git repo updates
+	Fetches repository updates
 .DESCRIPTION
 	This PowerShell script fetches the latest updates into a local Git repository (including submodules).
 .PARAMETER RepoDir
@@ -22,7 +22,7 @@ try {
 	& git --version
 	if ($lastExitCode -ne "0") { throw "Can't execute 'git' - make sure Git is installed and available" }
 
-	Write-Host "⏳ (2/3) Checking local folder...         📂$RepoDir"
+	Write-Host "⏳ (2/3) Checking local repository...     📂$RepoDir"
 	if (!(Test-Path "$RepoDir" -pathType container)) { throw "Can't access folder: $RepoDir" }
 	$RepoDirName = (Get-Item "$RepoDir").Name
 

@@ -1,6 +1,6 @@
 ﻿<#
 .SYNOPSIS
-	Pulls Git repo updates 
+	Pulls repository updates 
 .DESCRIPTION
 	This PowerShell script pulls the latest updates into a local Git repository (including submodules).
 .PARAMETER RepoDir
@@ -22,7 +22,7 @@ try {
 	& git --version
 	if ($lastExitCode -ne "0") { throw "Can't execute 'git' - make sure Git is installed and available" }
 
-	Write-Host "⏳ (2/4) Checking repository...           📂$RepoDir"
+	Write-Host "⏳ (2/4) Checking local repository...     📂$RepoDir"
 	if (-not(Test-Path "$RepoDir" -pathType container)) { throw "Can't access folder: $RepoDir" }
 	$Result = (git -C "$RepoDir" status)
 	if ("$Result" -match "HEAD detached at ") { throw "Currently in detached HEAD state (not on a branch!), so nothing to pull" }
@@ -37,7 +37,7 @@ try {
 	if ($lastExitCode -ne "0") { throw "'git submodule update' failed with exit code $lastExitCode" }
 
 	[int]$Elapsed = $StopWatch.Elapsed.TotalSeconds
-	"✔️ updated repo 📂$RepoDirName in $Elapsed sec"
+	"✔️ Updating 📂$RepoDirName repo took $Elapsed sec"
 	exit 0 # success
 } catch {
 	"⚠️ Error in line $($_.InvocationInfo.ScriptLineNumber): $($Error[0])"
