@@ -226,11 +226,14 @@ DAS,DFS Aviation Services (DFS subcompany for services outside Germany)
 DCIA,Dependent Converging Instrument Approach
 DECIDE,"Detect, Estimate, Choose, Identify, Do, and Evaluate"
 DEL,Delivery
+DER,Departure End of Runway
 DFS,Deutsche Flugsicherung (ATC in Germany)
 DGAC,Direction Générale de l'Aviation Civile
 DLA,Defense Logistics Agency
+DP,Departure Procedure
 DSNA,Direction des Services de la Navigation Aérienne 
 DTI,Direction Technique Innovation
+DVA,Diverse Vector Area
 DW,Downwind
 EAS,Equivalent Airspeed
 EAVA,Estonian Aviation Academy
@@ -333,6 +336,7 @@ NUAIR,Northeast UAS Airspace Integration Research (a New York based nonprofit or
 OCS,Obstacle Clearance Surfaces
 OCTA,Outside Control Areas
 OEI,One Engine Inoperative
+ODP,Obstacle Departure Procedure
 OGE,Out of Ground Effect
 OFZ,Obstacle Free Zone
 OJT,On the Job Training
@@ -520,6 +524,7 @@ VASI,Visual Approach Slope Indicator
 VASIS,Visual Approach Slope Indicator System 
 VCS,Voice Communication System
 VCCS,Voice Communication Control System
+VCOA,Visual Climb Over Airport
 VDF,Very High Frequency Direction Finding
 VDGS,Visual Database Generation System
 VDL-4,VHF digital link Mode 4 (see also STDMA)
