@@ -70,6 +70,7 @@ AFTN,Aeronautical Fixed Telecommunication Network
 AFM,Aircraft Flight Manual
 AGAS,Action Group for ATM Safety (EUROCONTROL)
 AGL,Above Ground Level
+AH,Acceleration Height
 ahdg,alter heading
 AICS,Aircraft Inventory and Charter System
 AID,Airport Information Desk
@@ -492,6 +493,7 @@ TOR,Terms Of Reference
 TOR,Tornado aircraft
 TOWSIM,Tower Simulator
 TRACON,Terminal Radar Approach Control
+TRH,Thrust Reduction Height
 TSO,Technical Standard Order
 TSTC,Texas State Technical College
 TT,True Track
