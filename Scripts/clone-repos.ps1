@@ -1,12 +1,17 @@
 ﻿<#
 .SYNOPSIS
-	Clones popular repos
+	Clones Git repos
 .DESCRIPTION
 	This PowerShell script clones popular Git repositories into a target directory.
 .PARAMETER targetDir
 	Specifies the file path to the target directory (current working directory by default)
 .EXAMPLE
 	PS> ./clone-repos C:\Repos
+	⏳ (1) Searching for Git executable...          git version 2.41.0.windows.3
+	⏳ (2) Loading Data/popular-git-repos.csv...    28 repos
+	⏳ (3) Checking target folder...                📂repos
+	⏳ (4/32) Cloning into 📂base256unicode (dev tool)...
+	...
 .LINK
 	https://github.com/fleschutz/PowerShell
 .NOTES
@@ -59,7 +64,7 @@ try {
 		$Cloned++
 	}
 	[int]$Elapsed = $StopWatch.Elapsed.TotalSeconds
-	"✔️ cloned $Cloned of $NumEntries Git repos into folder 📂$TargetDirName in $Elapsed sec"
+	"✔️ Cloning $Cloned of $NumEntries Git repos into folder 📂$TargetDirName took $Elapsed sec"
 	exit 0 # success
 } catch {
 	"⚠️ Error in line $($_.InvocationInfo.ScriptLineNumber): $($Error[0])"
