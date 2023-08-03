@@ -7,6 +7,10 @@
 	Specifies the path to the parent folder
 .EXAMPLE
 	PS> ./fetch-repos C:\MyRepos
+	⏳ (1) Searching for Git executable...  git version 2.41.0.windows.3
+	⏳ (2) Checking parent folder...        33 subfolders
+	⏳ (3/35) Fetching into 📂base256unicode...
+	...
 .LINK
 	https://github.com/fleschutz/PowerShell
 .NOTES
@@ -27,7 +31,7 @@ try {
 	$Folders = (Get-ChildItem "$ParentDir" -attributes Directory)
 	$NumFolders = $Folders.Count
 	$ParentDirName = (Get-Item "$ParentDir").Name
-	Write-Host "$NumFolders subfolders in 📂$ParentDirName"
+	Write-Host "$NumFolders subfolders"
 
 	[int]$Step = 2
 	foreach ($Folder in $Folders) {
@@ -39,7 +43,7 @@ try {
 		if ($lastExitCode -ne "0") { throw "'git fetch' in $Folder failed with exit code $lastExitCode" }
 	}
 	[int]$Elapsed = $StopWatch.Elapsed.TotalSeconds
-	"✔️ fetched $NumFolders Git repositories in 📂$ParentDirName in $Elapsed sec."
+	"✔️ Fetching updates for $NumFolders repositories in 📂$ParentDirName took $Elapsed sec"
 	exit 0 # success
 } catch {
 	"⚠️ Error in line $($_.InvocationInfo.ScriptLineNumber): $($Error[0])"

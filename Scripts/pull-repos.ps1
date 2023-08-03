@@ -7,6 +7,10 @@
 	Specifies the path to the parent folder
 .EXAMPLE
 	PS> ./pull-repos C:\MyRepos
+	⏳ (1) Searching for Git executable...  git version 2.41.0.windows.3
+	⏳ (2) Checking parent folder...        33 subfolders
+	⏳ (3/35) Pulling into 📂base256unicode...
+	...
 .LINK
 	https://github.com/fleschutz/PowerShell
 .NOTES
@@ -27,7 +31,7 @@ try {
 	$Folders = (Get-ChildItem "$ParentDir" -attributes Directory)
 	$NumFolders = $Folders.Count
 	$ParentDirName = (Get-Item "$ParentDir").Name
-	Write-Host "$NumFolders subfolders in 📂$ParentDirName"
+	Write-Host "$NumFolders subfolders"
 
 	[int]$Step = 3
 	[int]$Failed = 0
@@ -40,12 +44,10 @@ try {
 
 		& git -C "$Folder" submodule update --init --recursive
 		if ($lastExitCode -ne "0") { throw "'git submodule update' in 📂$Folder failed with exit code $lastExitCode" }
-
 		$Step++
 	}
-
 	[int]$Elapsed = $StopWatch.Elapsed.TotalSeconds
-	"✔️ pulled $NumFolders Git repositories in 📂$ParentDirName in $Elapsed sec ($Failed failed)."
+	"✔️ Pulling updates for $NumFolders repositories in 📂$ParentDirName took $Elapsed sec ($Failed failed)"
 	exit 0 # success
 } catch {
 	"⚠️ Error in line $($_.InvocationInfo.ScriptLineNumber): $($Error[0])"
