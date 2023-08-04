@@ -23,7 +23,7 @@ APPLICATION,           CATEGORY,                    APPID
 "Notepad++",           "text editor",               "Notepad++.Notepad++"
 "OBS Studio",          "video recorder",            "XPFFH613W8V6LV"
 "One Calendar",        "desktop calendar",          "9WZDNCRDR0SF"
-"Pandoc",              "file converter",            "JohnMacFarlane.Pandoc"
+"Pandoc",              "document converter",        "JohnMacFarlane.Pandoc"
 "Rufus",               "ISO image writer",          "9PC3H3V7Q9CH"
 "Signal",              "messenger",                 "OpenWhisperSystems.Signal"
 "smartmontools",       "HDD/SSD utility",           "smartmontools.smartmontools"

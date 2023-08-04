@@ -32,7 +32,7 @@ try {
 	Start-Sleep -seconds 15
 
 	[int]$Step = 3
-	[int]$Failed = 0
+	[int]$Skipped = 0
 	foreach($Row in $Table) {
 		[string]$AppName = $Row.APPLICATION
 		[string]$Category = $Row.CATEGORY
@@ -40,12 +40,12 @@ try {
 		Write-Host " "
 		Write-Host "⏳ ($Step/$($NumEntries + 2)) Installing $Category '$AppName'..."
 		& winget install --id $AppID --accept-package-agreements --accept-source-agreements
-        	if ($lastExitCode -ne "0") { $Failed++ }
+        	if ($lastExitCode -ne "0") { $Skipped++ }
 		$Step++
 	}
-	[int]$Installed = ($NumEntries - $Failed)
+	[int]$Installed = ($NumEntries - $Skipped)
 	[int]$Elapsed = $StopWatch.Elapsed.TotalSeconds
-	"✔️ installed $Installed of $NumEntries basic apps in $Elapsed sec"
+	"✔️ Installation of $Installed basic apps ($Skipped skipped) took $Elapsed sec"
 	exit 0 # success
 } catch {
 	"⚠️ Error in line $($_.InvocationInfo.ScriptLineNumber): $($Error[0])"
