@@ -23,16 +23,14 @@ foreach($row in $table){$nop=dig $row.Domain +short}
 	} else {
 foreach($row in $table){$nop=Resolve-DNSName $row.Domain}
 	}
+	Write-Progress -completed "."
 	[float]$elapsed = $stopWatch.Elapsed.TotalSeconds
-
-	
 	$average = [math]::round($numRows / $elapsed, 1)
 	if ($average -lt 10.0) {
-		"⚠️ DNS resolves $average domains per second only!"
+		Write-Output "⚠️ DNS resolves $average domains per second only"
 	} else {  
-		"✅ DNS resolves $average domains per second"
+		Write-Output "✅ DNS resolves $average domains per second"
 	}
-	Write-Progress -completed "."
 	exit 0 # success
 } catch {
 	"⚠️ Error in line $($_.InvocationInfo.ScriptLineNumber): $($Error[0])"
