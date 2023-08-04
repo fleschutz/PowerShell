@@ -31,7 +31,7 @@ try {
 	if ($lastExitCode -ne "0") { throw "'git fetch --all' failed with exit code $lastExitCode" }
 	
 	[int]$Elapsed = $StopWatch.Elapsed.TotalSeconds
-	"✔️ Fetching updates into 📂$RepoDirName repo took $Elapsed sec"
+	"✔️ Fetching updates into repository 📂$RepoDirName took $Elapsed sec"
 	exit 0 # success
 } catch {
 	"⚠️ Error in line $($_.InvocationInfo.ScriptLineNumber): $($Error[0])"
