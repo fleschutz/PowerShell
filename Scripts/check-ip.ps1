@@ -5,7 +5,7 @@
         This PowerShell script queries the public IP address and prints it.
 .EXAMPLE
         PS> ./check-ip.ps1
-	✅ Public IPv4 185.74.219.161, IPv6 2003:f2:6729:fc00:e563:641:3dc2:a628, near Munich
+	✅ Public IPv4 185.77.209.161, IPv6 2003:f2:6128:fc01:e503:601:30c2:a028, near Munich
 .LINK
         https://github.com/fleschutz/PowerShell
 .NOTES
