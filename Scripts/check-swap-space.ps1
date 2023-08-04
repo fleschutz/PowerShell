@@ -6,7 +6,7 @@
 .PARAMETER MinLevel
 	Specifies the minimum level (10 GB by default)
 .EXAMPLE
-	PS> ./check-swap-space
+	PS> ./check-swap-space.ps1
 	✅ Swap space uses 63GB of 1856GB
 .LINK
 	https://github.com/fleschutz/PowerShell
@@ -44,19 +44,18 @@ try {
 		} 
 	}
 	if ($Total -eq 0) {
-        	$Reply = "⚠️ No swap space configured!"
+        	Write-Output "⚠️ No swap space configured"
 	} elseif ($Free -eq 0) {
-		$Reply = "⚠️ Swap space of $(MB2String $Total) is full!"
+		Write-Output "⚠️ Swap space of $(MB2String $Total) is full"
 	} elseif ($Free -lt $MinLevel) {
-		$Reply = "⚠️ Swap space of $(MB2String $Total) is nearly full ($(MB2String $Free) free)!"
+		Write-Output "⚠️ Swap space of $(MB2String $Total) is nearly full ($(MB2String $Free) free)"
 	} elseif ($Used -eq 0) {
-		$Reply = "✅ Swap space with $(MB2String $Total) reserved"
+		Write-Output "✅ Swap space with $(MB2String $Total) reserved"
 	} elseif ($Used -lt $Free) {
-		$Reply = "✅ Swap space uses $(MB2String $Used) of $(MB2String $Total)"
+		Write-Output "✅ Swap space uses $(MB2String $Used) of $(MB2String $Total)"
 	} else {
-		$Reply = "✅ Swap space has $(MB2String $Free) of $(MB2String $Total) free"
+		Write-Output "✅ Swap space has $(MB2String $Free) of $(MB2String $Total) free"
 	}
-	Write-Host $Reply
 	exit 0 # success
 } catch {
 	"⚠️ Error in line $($_.InvocationInfo.ScriptLineNumber): $($Error[0])"
