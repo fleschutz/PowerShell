@@ -1,8 +1,8 @@
 ﻿<#
 .SYNOPSIS
-	Pulls updates for Git repos
+	Pulls updates into Git repos
 .DESCRIPTION
-	This PowerShell script pulls updates for all Git repositories in a folder (including submodules).
+	This PowerShell script pulls updates into all Git repositories in a folder (including submodules).
 .PARAMETER ParentDir
 	Specifies the path to the parent folder
 .EXAMPLE
@@ -47,7 +47,7 @@ try {
 		$Step++
 	}
 	[int]$Elapsed = $StopWatch.Elapsed.TotalSeconds
-	"✔️ Pulling updates for $NumFolders repositories in 📂$ParentDirName took $Elapsed sec ($Failed failed)"
+	"✔️ Pulling updates into $NumFolders repositories under 📂$ParentDirName took $Elapsed sec ($Failed failed)"
 	exit 0 # success
 } catch {
 	"⚠️ Error in line $($_.InvocationInfo.ScriptLineNumber): $($Error[0])"

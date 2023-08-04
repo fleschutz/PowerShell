@@ -1,8 +1,8 @@
 ﻿<#
 .SYNOPSIS
-	Fetches updates for Git repos
+	Fetches updates into Git repos
 .DESCRIPTION
-	This PowerShell script fetches updates for all Git repositories in a folder (including submodules).
+	This PowerShell script fetches updates into all Git repositories in a folder (including submodules).
 .PARAMETER ParentDir
 	Specifies the path to the parent folder
 .EXAMPLE
@@ -43,7 +43,7 @@ try {
 		if ($lastExitCode -ne "0") { throw "'git fetch' in $Folder failed with exit code $lastExitCode" }
 	}
 	[int]$Elapsed = $StopWatch.Elapsed.TotalSeconds
-	"✔️ Fetching updates for $NumFolders repositories in 📂$ParentDirName took $Elapsed sec"
+	"✔️ Fetching updates into $NumFolders repositories under 📂$ParentDirName took $Elapsed sec"
 	exit 0 # success
 } catch {
 	"⚠️ Error in line $($_.InvocationInfo.ScriptLineNumber): $($Error[0])"
