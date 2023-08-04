@@ -132,9 +132,10 @@ Want to use the PowerShell scripts everywhere on the command-line? Then you need
 **If you find something bad (like a bug, error, or any issue), please report it here by opening an Issue. Or even better: Fork the repository, add or fix the script and submit a pull request, so others can participate too.**
 </details>
 
-<details>How to donate to this project?</details>
+<details><summary>How to donate to this project?</summary>
 
 **Just follow this link: [https://www.paypal.com/paypalme/Fleschutz](https://www.paypal.com/paypalme/Fleschutz). Thank you very much!**
+</details>
 
 <details><summary>What if my question is not answered here?</summary>
  
