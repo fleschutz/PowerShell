@@ -7,7 +7,7 @@
 	Specifies the minimum level (10 GB by default)
 .EXAMPLE
 	PS> ./check-swap-space.ps1
-	✅ Swap space uses 122MB (10%) of 1GB
+	✅ Swap space 10% full, 901MB of 1TB free
 .LINK
 	https://github.com/fleschutz/PowerShell
 .NOTES
@@ -51,11 +51,9 @@ try {
 		Write-Output "⚠️ Swap space of $(MB2String $Total) is nearly full ($(MB2String $Free) free)"
 	} elseif ($Used -eq 0) {
 		Write-Output "✅ Swap space with $(MB2String $Total) reserved"
-	} elseif ($Used -lt $Free) {
-		[int]$Percent = ($Used * 100) / $Total
-		Write-Output "✅ Swap space uses $(MB2String $Used) ($($Percent)%) of $(MB2String $Total)"
 	} else {
-		Write-Output "✅ Swap space has $(MB2String $Free) of $(MB2String $Total) free"
+		[int]$Percent = ($Used * 100) / $Total
+		Write-Output "✅ Swap space $Percent% full, $(MB2String $Free) of $(MB2String $Total) free"
 	}
 	exit 0 # success
 } catch {
