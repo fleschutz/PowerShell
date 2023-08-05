@@ -5,7 +5,7 @@
 	This PowerShell script queries the status of the system battery and prints it.
 .EXAMPLE
 	PS> ./check-battery
-	✅ 21% battery life, 54 min remaining
+	✅ Battery at 21%, 54 min remaining
 .LINK
 	https://github.com/fleschutz/PowerShell
 .NOTES
@@ -20,28 +20,25 @@ try {
 		$Details = [System.Windows.Forms.SystemInformation]::PowerStatus
 		[int]$Percent = 100 * $Details.BatteryLifePercent
 		[int]$Remaining = $Details.BatteryLifeRemaining / 60
-		switch ($Details.PowerLineStatus) {
-		"Online"  {
+		if ($Details.PowerLineStatus -eq "Online") {
 			if ($Details.BatteryChargeStatus -eq "NoSystemBattery") {
 				$Reply = "✅ AC powered"
-			} elseif ($Percent -eq 100) {
-				$Reply = "✅ Battery $Percent% full"
+			} elseif ($Percent -ge 95) {
+				$Reply = "✅ Battery fully charged ($Percent%)"
 			} else {
-				$Reply = "✅ Battery $Percent%, charging..."
+				$Reply = "✅ Battery charging... ($Percent%)"
 			}
-		}
-		"Offline" {
-			if ($Percent -eq 100) {
-				$Reply = "✅ $Percent% full battery, $Remaining min remaining"
+		} else { # must be offline
+			if ($Percent -ge 80) {
+				$Reply = "✅ Battery $Percent% full, $Remaining min remaining"
 			} elseif ($Remaining -gt 30) {
-				$Reply = "✅ $Percent% battery life, $Remaining min remaining"
+				$Reply = "✅ Battery at $Percent%, $Remaining min remaining"
 			} else {
-				$Reply = "⚠️ $Percent% battery life, only $Remaining min remaining"
+				$Reply = "⚠️ Battery at $Percent%, only $Remaining min remaining"
 			}
-		}
 		}
 	}
-	Write-Host $Reply
+	Write-Output $Reply
 	exit 0 # success
 } catch {
 	"⚠️ Error in line $($_.InvocationInfo.ScriptLineNumber): $($Error[0])"
