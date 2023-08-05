@@ -29,7 +29,9 @@ try {
 				$Reply = "✅ Battery charging... ($Percent%)"
 			}
 		} else { # must be offline
-			if ($Remaining -le 5) {
+			if ($Remaining -eq 0) {
+				$Reply = "✅ Battery at $Percent%, calculating remaining time..."
+			} elseif ($Remaining -le 5) {
 				$Reply = "⚠️ Battery at $Percent%, ONLY $Remaining MIN remaining"
 			} elseif ($Remaining -le 30) {
 				$Reply = "⚠️ Battery at $Percent%, only $Remaining min remaining"
