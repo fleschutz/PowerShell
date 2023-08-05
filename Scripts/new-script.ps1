@@ -17,9 +17,9 @@
 param([string]$filename = "")
 
 try {
-	if ($filename -eq "" ) { $shortcut = read-host "Enter the new filename" }
+	if ($filename -eq "" ) { $filename = Read-Host "Enter the new filename" }
 
-	copy-item "$PSScriptRoot/../Data/template.ps1" "$filename"
+	Copy-Item "$PSScriptRoot/../Data/template.ps1" "$filename"
 
 	"✔️ created new PowerShell script: $filename"
 	exit 0 # success

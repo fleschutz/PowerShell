@@ -52,7 +52,8 @@ try {
 	} elseif ($Used -eq 0) {
 		Write-Output "✅ Swap space with $(MB2String $Total) reserved"
 	} elseif ($Used -lt $Free) {
-		Write-Output "✅ Swap space uses $(MB2String $Used) of $(MB2String $Total)"
+		[int]$Percent = ($Used * 100) / $Total
+		Write-Output "✅ Swap space uses $(MB2String $Used) or $($Percent)% of $(MB2String $Total)"
 	} else {
 		Write-Output "✅ Swap space has $(MB2String $Free) of $(MB2String $Total) free"
 	}
