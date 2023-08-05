@@ -38,7 +38,7 @@ try {
 	Write-Progress -completed "."
 	foreach($Drive in $Drives) {
 		$Details = (Get-PSDrive $Drive.Name)
-		if ($IsLinx) { $ID = $Drive.Name } else { $ID = $Drive.Name + ":" }
+		if ($IsLinux) { $ID = $Drive.Name } else { $ID = $Drive.Name + ":" }
 		[int64]$Free = $Details.Free
  		[int64]$Used = $Details.Used
 		[int64]$Total = ($Used + $Free)
