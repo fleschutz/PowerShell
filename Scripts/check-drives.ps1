@@ -7,7 +7,7 @@
 	Specifies the minimum warning level (10 GB by default)
 .EXAMPLE
 	PS> ./check-drives
-	✅ C drive uses 87GB of 249GB
+	✅ Drive C: uses 87GB of 249GB
 .LINK
 	https://github.com/fleschutz/PowerShell
 .NOTES
@@ -35,24 +35,23 @@ function Bytes2String { param([int64]$Bytes)
 try {
 	Write-Progress "⏳ Querying drives..."
 	$Drives = Get-PSDrive -PSProvider FileSystem
-	Write-Progress -completed "done."
+	Write-Progress -completed "."
 	foreach($Drive in $Drives) {
-		$ID = $Drive.Name
-		$Details = (Get-PSDrive $ID)
+		$Details = (Get-PSDrive $Drive.Name)
+		if ($IsLinx) { $ID = $Drive.Name } else { $ID = $Drive.Name + ":" }
 		[int64]$Free = $Details.Free
  		[int64]$Used = $Details.Used
 		[int64]$Total = ($Used + $Free)
 
 		if ($Total -eq 0) {
-			Write-Host "✅ $ID drive is empty"
+			Write-Host "✅ Drive $ID is empty"
 		} elseif ($Free -eq 0) {
-			Write-Host "⚠️ $ID drive with $(Bytes2String $Total) is full!"
+			Write-Host "⚠️ Drive $ID with $(Bytes2String $Total) is 100% full"
 		} elseif ($Free -lt $MinLevel) {
-			Write-Host "⚠️ $ID drive with $(Bytes2String $Total) is nearly full ($(Bytes2String $Free) free)!"
-		} elseif ($Used -lt $Free) {
-			Write-Host "✅ $ID drive uses $(Bytes2String $Used) of $(Bytes2String $Total)"
+			Write-Host "⚠️ Drive $ID with $(Bytes2String $Total) is nearly full ($(Bytes2String $Free) free)"
 		} else {
-			Write-Host "✅ $ID drive has $(Bytes2String $Free) of $(Bytes2String $Total) free"
+			[int]$Percent = ($Used * 100) / $Total
+			Write-Host "✅ Drive $ID $Percent% full, $(Bytes2String $Free) of $(Bytes2String $Total) free"
 		}
 	}
 	exit 0 # success
