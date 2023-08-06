@@ -8,7 +8,11 @@
 .PARAMETER SearchPattern
 	Specifies the search patter (anything by default)
 .EXAMPLE
-	PS> ./list-branches
+	PS> ./list-branches.ps1
+
+	List of Git Branches
+	--------------------
+	main
 .LINK
 	https://github.com/fleschutz/PowerShell
 .NOTES

@@ -6,7 +6,7 @@
 .PARAMETER City
 	Specifies the city to look for
 .EXAMPLE
-	PS> ./locate-city Paris
+	PS> ./locate-city.ps1 Paris
 .LINK
 	https://github.com/fleschutz/PowerShell
 .NOTES
@@ -16,9 +16,9 @@
 param([string]$City = "")
 
 try {
-	if ($City -eq "" ) { $City = read-host "Enter the city name" }
+	if ($City -eq "" ) { $City = Read-Host "Enter the city name" }
 
-	write-progress "Reading worldcities.csv..."
+	Write-Progress "Reading worldcities.csv..."
 	$Table = import-csv "$PSScriptRoot/../Data/worldcities.csv"
 
 	$FoundOne = 0

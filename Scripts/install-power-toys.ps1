@@ -4,7 +4,7 @@
 .DESCRIPTION
 	This PowerShell script installs the Microsoft Powertoys.
 .EXAMPLE
-	PS> ./install-power-toys
+	PS> ./install-power-toys.ps1
 .LINK
 	https://github.com/fleschutz/PowerShell
 .NOTES

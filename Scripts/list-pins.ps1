@@ -10,7 +10,7 @@
 .PARAMETER Rows
 	Specifies the number of rows
 .EXAMPLE
-	PS> ./list-pins
+	PS> ./list-pins.ps1
 .LINK
 	https://github.com/fleschutz/PowerShell
 .NOTES

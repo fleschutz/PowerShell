@@ -4,7 +4,12 @@
 .DESCRIPTION
 	This PowerShell script lists the installed software (except Windows Store apps).
 .EXAMPLE
-	PS> ./list-installed-software
+	PS> ./list-installed-software.ps1
+
+	DisplayName                            DisplayVersion                  InstallDate
+	-----------                            --------------                  -----------
+	CrystalDiskInfo 9.1.1                  9.1.1                           20230718
+	...
 .LINK
 	https://github.com/fleschutz/PowerShell
 .NOTES

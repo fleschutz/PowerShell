@@ -6,7 +6,7 @@
 .PARAMETER text
 	Specifies the text to memorize
 .EXAMPLE
-	PS> ./add-memo "Buy apples"
+	PS> ./add-memo.ps1 "Buy apples"
 	✔️ saved to 📄/home/markus/Memos.csv
 .LINK
 	https://github.com/fleschutz/PowerShell

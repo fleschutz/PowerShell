@@ -4,7 +4,7 @@
 .DESCRIPTION
 	This PowerShell script closes the Microsoft Outlook email application gracefully.
 .EXAMPLE
-	PS> ./close-outlook
+	PS> ./close-outlook.ps1
 .LINK
 	https://github.com/fleschutz/PowerShell
 .NOTES

@@ -4,7 +4,7 @@
 .DESCRIPTION
 	This PowerShell script installs Unbound, a validating, recursive, caching DNS resolver. It needs admin rights.
 .EXAMPLE
-	PS> ./install-unbound-server
+	PS> ./install-unbound-server.ps1
 .LINK
 	https://github.com/fleschutz/PowerShell
 .NOTES

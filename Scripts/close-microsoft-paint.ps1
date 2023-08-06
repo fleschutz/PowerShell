@@ -4,7 +4,7 @@
 .DESCRIPTION
 	This PowerShell script closes the Microsoft Paint application gracefully.
 .EXAMPLE
-	PS> ./close-microsoft-paint
+	PS> ./close-microsoft-paint.ps1
 .LINK
 	https://github.com/fleschutz/PowerShell
 .NOTES

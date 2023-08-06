@@ -4,7 +4,7 @@
 .DESCRIPTION
 	This PowerShell script closes the Microsoft Visual Studio application gracefully.
 .EXAMPLE
-	PS> ./close-visual-studio
+	PS> ./close-visual-studio.ps1
 .LINK
 	https://github.com/fleschutz/PowerShell
 .NOTES

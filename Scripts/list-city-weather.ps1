@@ -4,7 +4,7 @@
 .DESCRIPTION
 	This PowerShell script lists the current weather of cities world-wide (west to east).
 .EXAMPLE
-	PS> ./list-city-weather
+	PS> ./list-city-weather.ps1
 .LINK
 	https://github.com/fleschutz/PowerShell
 .NOTES

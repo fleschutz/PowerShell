@@ -4,7 +4,7 @@
 .DESCRIPTION
 	This PowerShell script installs Audacity.
 .EXAMPLE
-	PS> ./install-audacity
+	PS> ./install-audacity.ps1
 .LINK
 	https://github.com/fleschutz/PowerShell
 .NOTES

@@ -4,7 +4,7 @@
 .DESCRIPTION
         This PowerShell script queries the GPU status and prints it.
 .EXAMPLE
-        PS> ./check-gpu
+        PS> ./check-gpu.ps1
 	✅ NVIDIA Quadro P400 GPU (2GB RAM, 3840x2160 pixels, 32 bit, 59 Hz, driver 31.0.15.1740, status OK)
 .LINK
         https://github.com/fleschutz/PowerShell

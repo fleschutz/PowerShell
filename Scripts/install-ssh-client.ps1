@@ -4,7 +4,7 @@
 .DESCRIPTION
 	This PowerShell script installs a SSH client (needs admin rights).
 .EXAMPLE
-	PS> ./install-ssh-client
+	PS> ./install-ssh-client.ps1
 .LINK
 	https://github.com/fleschutz/PowerShell
 .NOTES

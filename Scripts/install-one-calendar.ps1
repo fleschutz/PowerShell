@@ -4,7 +4,7 @@
 .DESCRIPTION
 	This PowerShell script installs One Calendar from the Microsoft Store.
 .EXAMPLE
-	PS> ./install-one-calendar
+	PS> ./install-one-calendar.ps1
 .LINK
 	https://github.com/fleschutz/PowerShell
 .NOTES

@@ -4,8 +4,8 @@
 .DESCRIPTION
 	This PowerShell script lists the path to current working directory (but not the content itself).
 .EXAMPLE
-	PS> ./list-workdir
-	📂C:\Users\Markus\source\repos\PowerShell\Scripts
+	PS> ./list-workdir.ps1
+	📂C:\Users\Markus
 .LINK
 	https://github.com/fleschutz/PowerShell
 .NOTES

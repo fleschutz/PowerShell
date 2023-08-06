@@ -4,7 +4,8 @@
 .DESCRIPTION
 	This PowerShell script disconnects the active VPN connection.
 .EXAMPLE
-	PS> ./disconnect-vpn
+	PS> ./disconnect-vpn.ps1
+	Disconnected now.
 .LINK
 	https://github.com/fleschutz/PowerShell
 .NOTES

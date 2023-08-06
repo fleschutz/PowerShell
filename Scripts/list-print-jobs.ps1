@@ -4,7 +4,12 @@
 .DESCRIPTION
 	This PowerShell script lists all print jobs of all printer devices.
 .EXAMPLE
-	PS> ./list-print-jobs
+	PS> ./list-print-jobs.ps1
+
+	Printer                       Jobs
+	-------                       ----
+	ET-2810 Series 		      none
+	...
 .LINK
 	https://github.com/fleschutz/PowerShell
 .NOTES

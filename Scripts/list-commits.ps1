@@ -13,7 +13,6 @@
 	ID      Date                            Committer               Description
 	--      ----                            ---------               -----------
 	ccd0d3e Wed Sep 29 08:28:20 2021 +0200  Markus Fleschutz        Fix typo
-	291d785 Wed Sep 29 08:18:28 2021 +0200  Markus Fleschutz        Update README.md
 	...
 .LINK
 	https://github.com/fleschutz/PowerShell

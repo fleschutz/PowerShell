@@ -4,7 +4,7 @@
 .DESCRIPTION
 	This PowerShell script closes the Netflix application gracefully.
 .EXAMPLE
-	PS> ./close-netflix
+	PS> ./close-netflix.ps1
 .LINK
 	https://github.com/fleschutz/PowerShell
 .NOTES

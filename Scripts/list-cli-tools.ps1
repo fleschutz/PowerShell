@@ -4,7 +4,7 @@
 .DESCRIPTION
 	This PowerShell script lists installed command-line interface (CLI) tools (sorted alphabetically by name).
 .EXAMPLE
-	PS> ./list-cli-tools
+	PS> ./list-cli-tools.ps1
 
 	Tool         Version         Path                                          FileSize
 	----         -------         ----                                          --------

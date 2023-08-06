@@ -4,7 +4,7 @@
 .DESCRIPTION
 	This PowerShell script installs Mozilla Thunderbird.
 .EXAMPLE
-	PS> ./install-thunderbird
+	PS> ./install-thunderbird.ps1
 .LINK
 	https://github.com/fleschutz/PowerShell
 .NOTES

@@ -6,7 +6,7 @@
 .PARAMETER RepoDir
 	Specifies the path to the repository (current working directory by default)
 .EXAMPLE
-	PS> ./list-submodules C:\MyRepo
+	PS> ./list-submodules.ps1 C:\MyRepo
 .LINK
 	https://github.com/fleschutz/PowerShell
 .NOTES

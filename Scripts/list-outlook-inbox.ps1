@@ -4,7 +4,7 @@
 .DESCRIPTION
 	This PowerShell script lists the emails in the inbox of Outlook.
 .EXAMPLE
-	PS> ./list-outlook-inbox
+	PS> ./list-outlook-inbox.ps1
 .LINK
 	https://github.com/fleschutz/PowerShell
 .NOTES

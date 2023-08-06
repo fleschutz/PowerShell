@@ -5,7 +5,7 @@
 	This PowerShell script installs basic Windows apps such as browser, e-mail client, etc.
 	NOTE: Apps from Microsoft Store are preferred (due to security and automatic updates). 
 .EXAMPLE
-	PS> ./install-basic-apps
+	PS> ./install-basic-apps.ps1
 	⏳ (1/37) Loading Data/basic-apps.csv...            35 apps
 	⏳ (2/37) These apps will be installed or upgraded: 7-Zip · Aquile Reader ...
 .LINK

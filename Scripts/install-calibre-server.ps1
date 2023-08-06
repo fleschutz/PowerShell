@@ -6,7 +6,7 @@
 .PARAMETER port
 	Specifies the Web port number (8099 by default)
 .EXAMPLE
-	PS> ./install-calibre-server
+	PS> ./install-calibre-server.ps1
 .LINK
 	https://github.com/fleschutz/PowerShell
 .NOTES

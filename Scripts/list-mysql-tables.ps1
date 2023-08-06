@@ -4,7 +4,7 @@
 .DESCRIPTION
 	This PowerShell script lists all tables of the given MySQL database.
 .EXAMPLE
-	PS> ./list-mysql-tables
+	PS> ./list-mysql-tables.ps1
 .LINK
 	https://github.com/fleschutz/PowerShell
 .NOTES

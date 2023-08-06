@@ -4,7 +4,7 @@
 .DESCRIPTION
 	This PowerShell script copies newer EXE's + DLL's from the build directory to the installation directory.
 .EXAMPLE
-	PS> ./make-install
+	PS> ./make-install.ps1
 .LINK
 	https://github.com/fleschutz/PowerShell
 .NOTES

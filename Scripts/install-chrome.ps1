@@ -4,7 +4,7 @@
 .DESCRIPTION
 	This PowerShell script installs the Google Chrome browser.
 .EXAMPLE
-	PS> ./install-chrome
+	PS> ./install-chrome.ps1
 .LINK
 	https://github.com/fleschutz/PowerShell
 .NOTES

@@ -6,7 +6,7 @@
 .PARAMETER ParentDir
 	Specifies the path to the parent folder
 .EXAMPLE
-	PS> ./build-repos C:\MyRepos
+	PS> ./build-repos.ps1 C:\MyRepos
 .LINK
 	https://github.com/fleschutz/PowerShell
 .NOTES

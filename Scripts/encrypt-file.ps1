@@ -8,7 +8,7 @@
 .PARAMETER Password
 	Specifies the password to use
 .EXAMPLE
-	PS> ./encrypt-file C:\MyFile.txt "123"
+	PS> ./encrypt-file.ps1 C:\MyFile.txt "123"
 .LINK
 	https://github.com/fleschutz/PowerShell
 .NOTES

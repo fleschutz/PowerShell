@@ -6,7 +6,7 @@
 .PARAMETER location
 	Specifies the location to use (determined automatically per default)
 .EXAMPLE
-	PS> ./check-weather
+	PS> ./check-weather.ps1
 .LINK
 	https://github.com/fleschutz/PowerShell
 .NOTES

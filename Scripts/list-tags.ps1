@@ -8,12 +8,12 @@
 .PARAMETER SearchPattern
 	Specifies the search pattern (anything by default)
 .EXAMPLE
-	PS> ./list-tags C:\MyRepo
+	PS> ./list-tags.ps1 C:\MyRepo
 
 	Tag             Description
 	---             -----------
 	v0.1            Update README.md
-	v0.2            Fix typo
+	...
 .LINK
 	https://github.com/fleschutz/PowerShell
 .NOTES

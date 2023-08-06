@@ -5,7 +5,7 @@
 	This PowerShell script changes the working directory to the user's OneDrive folder.
 .EXAMPLE
 	PS> ./cd-onedrive
-	📂/home/Markus/OneDrive
+	📂C:\Users\Markus\OneDrive
 .LINK
 	https://github.com/fleschutz/PowerShell
 .NOTES

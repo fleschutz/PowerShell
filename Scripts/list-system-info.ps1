@@ -4,7 +4,7 @@
 .DESCRIPTION
 	This PowerShell script lists system information of the local computer.
 .EXAMPLE
-	PS> ./list-system-info
+	PS> ./list-system-info.ps1
 .LINK
 	https://github.com/fleschutz/PowerShell
 .NOTES

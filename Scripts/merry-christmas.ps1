@@ -4,7 +4,7 @@
 .DESCRIPTION
 	This PowerShell script replies to 'Merry Christmas' by text-to-speech (TTS).
 .EXAMPLE
-	PS> ./merry-christmas
+	PS> ./merry-christmas.ps1
 .LINK
 	https://github.com/fleschutz/PowerShell
 .NOTES

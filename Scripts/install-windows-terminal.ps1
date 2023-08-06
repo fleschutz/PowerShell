@@ -4,7 +4,7 @@
 .DESCRIPTION
 	This PowerShell script installs Windows Terminal from the Microsoft Store.
 .EXAMPLE
-	PS> ./install-windows-terminal
+	PS> ./install-windows-terminal.ps1
 .LINK
 	https://github.com/fleschutz/PowerShell
 .NOTES

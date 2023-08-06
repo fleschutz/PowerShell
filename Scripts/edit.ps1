@@ -6,7 +6,7 @@
 .PARAMETER Filename
 	Specifies the path to the filename
 .EXAMPLE
-	PS> ./edit C:\MyFile.txt
+	PS> ./edit.ps1 C:\MyFile.txt
 .LINK
 	https://github.com/fleschutz/PowerShell
 .NOTES
@@ -23,7 +23,6 @@ try {
 		& notepad.exe "$Filename"
 		if ($lastExitCode -ne "0") { throw "Can't execute 'notepad.exe' - make sure notepad.exe is installed and available" }
 	}
-
 	exit 0 # success
 } catch {
 	"⚠️ Error in line $($_.InvocationInfo.ScriptLineNumber): $($Error[0])"

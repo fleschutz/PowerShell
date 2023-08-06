@@ -4,7 +4,7 @@
 .DESCRIPTION
 	This PowerShell script closes the OneCalendar application gracefully.
 .EXAMPLE
-	PS> ./close-one-calendar
+	PS> ./close-one-calendar.ps1
 .LINK
 	https://github.com/fleschutz/PowerShell
 .NOTES

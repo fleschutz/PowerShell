@@ -4,7 +4,7 @@
 .DESCRIPTION
 	This PowerShell script lists the details of the installed network interfaces.
 .EXAMPLE
-	PS> ./list-nic
+	PS> ./list-nic.ps1
 .LINK
 	https://github.com/fleschutz/PowerShell
 .NOTES

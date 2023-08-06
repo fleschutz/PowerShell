@@ -4,12 +4,11 @@
 .DESCRIPTION
 	This PowerShell script lists all automatic variables of PowerShell.
 .EXAMPLE
-	PS> ./list-automatic-variables
+	PS> ./list-automatic-variables.ps1
 
-	Variable                        Content
-	--------                        -------
-	$false                          False
-	$HOME                           C:\Users\Markus
+	Variable                  Content
+	--------                  -------
+	$HOME                     C:\Users\Markus
 	...
 .LINK
 	https://github.com/fleschutz/PowerShell

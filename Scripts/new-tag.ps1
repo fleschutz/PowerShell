@@ -8,7 +8,7 @@
 .PARAMETER RepoDir
 	Specifies the path to the Git repository
 .EXAMPLE
-	PS> ./create-tag v1.7
+	PS> ./new-tag.ps1 v1.7
 .LINK
 	https://github.com/fleschutz/PowerShell
 .NOTES

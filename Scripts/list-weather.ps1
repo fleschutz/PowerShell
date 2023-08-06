@@ -6,7 +6,7 @@
 .PARAMETER Location
 	Specifies the location to use (determined automatically per default)
 .EXAMPLE
-	PS> ./list-weather
+	PS> ./list-weather.ps1
 	TODAY   🌡°C  ☂️mm  💧  💨km/h ☀️UV  ☁️  👁km  at Munich (Bayern, Germany)
 	 0°°   -2°   0.0   93%   ↗ 6   1    21%  10  🌙 clear
 	...

@@ -4,7 +4,7 @@
 .DESCRIPTION
 	This PowerShell script closes the Git Extensions application gracefully.
 .EXAMPLE
-	PS> ./close-git-extensions
+	PS> ./close-git-extensions.ps1
 .LINK
 	https://github.com/fleschutz/PowerShell
 .NOTES

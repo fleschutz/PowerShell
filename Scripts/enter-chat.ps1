@@ -4,7 +4,7 @@
 .DESCRIPTION
 	This PowerShell script enters a chat using a common network shared file.
 .EXAMPLE
-	PS> ./enter-chat
+	PS> ./enter-chat.ps1
 .LINK
 	https://github.com/fleschutz/PowerShell
 .NOTES

@@ -14,9 +14,7 @@
 
 try {
 	$Path = Resolve-Path "../../../.."
-	if (-not(Test-Path "$Path" -pathType container)) {
-		throw "Folder at 📂$Path doesn't exist (yet)"
-	}
+	if (-not(Test-Path "$Path" -pathType container)) { throw "Folder at 📂$Path doesn't exist (yet)" }
 	Set-Location "$Path"
 	"📂$Path"
 	exit 0 # success

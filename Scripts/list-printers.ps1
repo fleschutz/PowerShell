@@ -4,7 +4,7 @@
 .DESCRIPTION
 	This PowerShell script lists all printers known to the local computer.
 .EXAMPLE
-	PS> ./list-printers
+	PS> ./list-printers.ps1
 .LINK
 	https://github.com/fleschutz/PowerShell
 .NOTES

@@ -4,7 +4,7 @@
 .DESCRIPTION
 	This PowerShell script installs the VLC media player.
 .EXAMPLE
-	PS> ./install-vlc
+	PS> ./install-vlc.ps1
 .LINK
 	https://github.com/fleschutz/PowerShell
 .NOTES

@@ -6,11 +6,11 @@
 .PARAMETER RepoDir
 	Specifies the path to the Git repository.
 .EXAMPLE
-	PS> ./list-commit-statistics
+	PS> ./list-commit-statistics.ps1
   
         Commits Author
         ------- ------
-	   2034 Markus Fleschutz <markus@fleschutz.de>
+	   2034 Markus Fleschutz <markus.fleschutz@gmail.com>
 	...
 .LINK
 	https://github.com/fleschutz/PowerShell

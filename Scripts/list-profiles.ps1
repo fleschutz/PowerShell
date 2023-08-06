@@ -4,7 +4,7 @@
 .DESCRIPTION
 	This PowerShell script lists the user's PowerShell profiles.
 .EXAMPLE
-	PS> ./list-profiles
+	PS> ./list-profiles.ps1
 	
 	Level Profile                Location                                                         Existent
 	----- -------                --------                                                         --------

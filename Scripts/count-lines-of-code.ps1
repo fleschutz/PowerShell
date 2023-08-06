@@ -6,7 +6,7 @@
 .PARAMETER Folder
 	Specifies the path to the folder
 .EXAMPLE
-	PS> ./count-lines-of-code .
+	PS> ./count-lines-of-code.ps1 .
 	⏳ Counting lines at 📂C:\PowerShell\Scripts ...
 	✔️ 📂Scripts contains 15287 lines of code in 485 files (took 1 sec)
 .LINK

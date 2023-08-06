@@ -24,9 +24,7 @@ try {
 	} else {
 		$Path = "C:\$Recycle.Bin\" + "$(GetCurrentUserSID)"
 	}
-	if (-not(Test-Path "$Path" -pathType container)) {
-		throw "Recycle bin folder at 📂$Path doesn't exist (yet)"
-	}
+	if (-not(Test-Path "$Path" -pathType container)) { throw "Recycle bin folder at 📂$Path doesn't exist (yet)" }
 	Set-Location "$Path"
 	"📂$Path"
 	exit 0 # success

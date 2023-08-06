@@ -6,7 +6,7 @@
 .PARAMETER ParentDir
 	Specifies the path to the parent folder
 .EXAMPLE
-	PS> ./fetch-repos C:\MyRepos
+	PS> ./fetch-repos.ps1 C:\MyRepos
 	⏳ (1) Searching for Git executable...  git version 2.41.0.windows.3
 	⏳ (2) Checking parent folder...        33 subfolders
 	⏳ (3/35) Fetching into 📂base256unicode...

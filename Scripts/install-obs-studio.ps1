@@ -4,7 +4,7 @@
 .DESCRIPTION
 	This PowerShell script installs OBS Studio (admin rights are needed).
 .EXAMPLE
-	PS> ./install-obs-studio
+	PS> ./install-obs-studio.ps1
 .LINK
 	https://github.com/fleschutz/PowerShell
 .NOTES

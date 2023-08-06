@@ -4,7 +4,7 @@
 .DESCRIPTION
 	This PowerShell script closes the Serenade.ai application gracefully.
 .EXAMPLE
-	PS> ./close-serenade
+	PS> ./close-serenade.ps1
 .LINK
 	https://github.com/fleschutz/PowerShell
 .NOTES

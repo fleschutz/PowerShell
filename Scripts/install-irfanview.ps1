@@ -4,7 +4,7 @@
 .DESCRIPTION
 	This PowerShell script installs IrfanView from the Microsoft Store.
 .EXAMPLE
-	PS> ./install-irfan-view
+	PS> ./install-irfan-view.ps1
 .LINK
 	https://github.com/fleschutz/PowerShell
 .NOTES

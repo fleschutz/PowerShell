@@ -4,7 +4,7 @@
 .DESCRIPTION
 	This PowerShell script lists the network routes on the local computer.
 .EXAMPLE
-	PS> ./list-network-routes
+	PS> ./list-network-routes.ps1
 .LINK
 	https://github.com/fleschutz/PowerShell
 .NOTES

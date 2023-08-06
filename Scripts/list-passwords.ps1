@@ -10,7 +10,10 @@
 .PARAMETER Rows
 	Specifies the number of rows
 .EXAMPLE
-	PS> ./list-passwords
+	PS> ./list-passwords.ps1
+
+	"4yE=[mu"Az|IE@   PZ}E9Q"&?.!%49`   zU3[E7`xA)(6W_3   :wd'a(O@fr}.Z8=
+	...
 .LINK
 	https://github.com/fleschutz/PowerShell
 .NOTES

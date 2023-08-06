@@ -4,7 +4,7 @@
 .DESCRIPTION
 	This PowerShell script closes the Paint 3D application gracefully.
 .EXAMPLE
-	PS> ./close-paint-3d
+	PS> ./close-paint-3d.ps1
 .LINK
 	https://github.com/fleschutz/PowerShell
 .NOTES

@@ -6,7 +6,7 @@
 .PARAMETER URL
 	Specifies the URL where to download from
 .EXAMPLE
-	PS> ./download-file https://www.cnn.com/index.html
+	PS> ./download-file.ps1 https://www.cnn.com/index.html
 .LINK
 	https://github.com/fleschutz/PowerShell
 .NOTES

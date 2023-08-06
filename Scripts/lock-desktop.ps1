@@ -4,7 +4,7 @@
 .DESCRIPTION
 	This PowerShell script locks the local computer desktop immediately.
 .EXAMPLE
-	PS> ./lock-desktop
+	PS> ./lock-desktop.ps1
 .LINK
 	https://github.com/fleschutz/PowerShell
 .NOTES

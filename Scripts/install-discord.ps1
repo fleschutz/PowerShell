@@ -4,7 +4,7 @@
 .DESCRIPTION
 	This PowerShell script installs Discord from the Microsoft Store.
 .EXAMPLE
-	PS> ./install-discord
+	PS> ./install-discord.ps1
 .LINK
 	https://github.com/fleschutz/PowerShell
 .NOTES

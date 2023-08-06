@@ -7,6 +7,7 @@
 	Specifies the path to the file
 .EXAMPLE
 	PS> ./get-sha256 C:\MyFile.txt
+	✔️ SHA256 hash is: CEB4AD71524996EB8AA3ADCE04F1E45636A4B58B8BF4462E6971CF2E56B4293E
 .LINK
 	https://github.com/fleschutz/PowerShell
 .NOTES
@@ -16,7 +17,7 @@
 param([string]$file = "")
 
 try {
-	if ($file -eq "" ) { $file = read-host "Enter the filename" }
+	if ($file -eq "" ) { $file = Read-Host "Enter the filename" }
 
 	$Result = get-filehash $file -algorithm SHA256
 

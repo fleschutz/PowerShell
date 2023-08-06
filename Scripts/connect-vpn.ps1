@@ -4,7 +4,7 @@
 .DESCRIPTION
 	This PowerShell script tries to connect to the VPN.
 .EXAMPLE
-	PS> ./connect-vpn
+	PS> ./connect-vpn.ps1
 .LINK
 	https://github.com/fleschutz/PowerShell
 .NOTES

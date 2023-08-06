@@ -4,7 +4,7 @@
 .DESCRIPTION
 	This PowerShell script launches the Web browser with the Google Find My Device website.
 .EXAMPLE
-	PS> ./locate-my-phone
+	PS> ./locate-my-phone.ps1
 .LINK
 	https://github.com/fleschutz/PowerShell
 .NOTES

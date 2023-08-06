@@ -6,7 +6,7 @@
 .PARAMETER EmailAddress
 	Specifies the email address fill in
 .EXAMPLE
-	PS> ./new-email
+	PS> ./new-email.ps1
 .LINK
 	https://github.com/fleschutz/PowerShell
 .NOTES

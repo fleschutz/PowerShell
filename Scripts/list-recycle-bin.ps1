@@ -4,7 +4,7 @@
 .DESCRIPTION
 	This PowerShell script lists the content of the recycle bin folder.
 .EXAMPLE
-	PS> ./list-recycle-bin
+	PS> ./list-recycle-bin.ps1
 .LINK
 	https://github.com/fleschutz/PowerShell
 .NOTES

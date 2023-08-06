@@ -6,7 +6,7 @@
 .PARAMETER address
 	Specifies the subnet mask to check
 .EXAMPLE
-	PS> ./check-subnet-mask 255.255.255.0
+	PS> ./check-subnet-mask.ps1 255.255.255.0
 	✔️ subnet mask 255.255.255.0 is valid
 .LINK
 	https://github.com/fleschutz/PowerShell

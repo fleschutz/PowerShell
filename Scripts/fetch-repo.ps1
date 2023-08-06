@@ -6,7 +6,11 @@
 .PARAMETER RepoDir
 	Specifies the file path to the local Git repository (default is working directory).
 .EXAMPLE
-	PS> ./fetch-repo C:\MyRepo
+	PS> ./fetch-repo.ps1 C:\MyRepo
+	⏳ (1/3) Searching for Git executable...  git version 2.41.0.windows.3
+	⏳ (2/3) Checking local repository...     📂C:\MyRepo
+	⏳ (3/3) Fetching updates...
+	✔️ Fetching updates into repository 📂MyRepo took 2 sec
 .LINK
 	https://github.com/fleschutz/PowerShell
 .NOTES

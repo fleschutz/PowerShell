@@ -4,12 +4,11 @@
 .DESCRIPTION
 	This PowerShell script lists all local computer processes.
 .EXAMPLE
-	PS> ./list-processes
+	PS> ./list-processes.ps1
 
 	   Id  CPU(s) ProcessName
 	   --  ------ -----------
 	 9712   0,39% 64DriverLoad
-	 2484         AppleMobileDeviceService
 	 ...
 .LINK
 	https://github.com/fleschutz/PowerShell

@@ -4,7 +4,7 @@
 .DESCRIPTION
 	This PowerShell script introduces PowerShell to new users.
 .EXAMPLE
-	PS> ./introduce-powershell
+	PS> ./introduce-powershell.ps1
 .LINK
 	https://github.com/fleschutz/PowerShell
 .NOTES

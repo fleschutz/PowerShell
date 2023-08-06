@@ -6,7 +6,7 @@
 .PARAMETER Filepattern
 	Specifies the file pattern
 .EXAMPLE
-	PS> ./convert-ps2bat *.ps1
+	PS> ./convert-ps2bat.ps1 *.ps1
 .LINK
 	https://github.com/fleschutz/PowerShell
 .NOTES

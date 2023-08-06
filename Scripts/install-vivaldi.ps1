@@ -4,7 +4,7 @@
 .DESCRIPTION
 	This PowerShell script installs the Vivaldi browser.
 .EXAMPLE
-	PS> ./install-vivaldi
+	PS> ./install-vivaldi.ps1
 .LINK
 	https://github.com/fleschutz/PowerShell
 .NOTES

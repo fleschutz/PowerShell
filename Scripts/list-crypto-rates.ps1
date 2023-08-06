@@ -4,7 +4,12 @@
 .DESCRIPTION
 	This PowerShell script queries cryptocompare.com and lists the current crypto exchange rates in USD/EUR/RUB/CNY.
 .EXAMPLE
-	PS> ./list-crypto-rates
+	PS> ./list-crypto-rates.ps1
+
+	Cryptocurrency               USD                    EUR                    RUB                    CNY
+	--------------               ---                    ---                    ---                    ---
+	1 Bitcoin (BTC) =            29054.01               26552.23               2786627.84             172521.27
+	...
 .LINK
 	https://github.com/fleschutz/PowerShell
 .NOTES

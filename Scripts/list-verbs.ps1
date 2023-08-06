@@ -4,7 +4,7 @@
 .DESCRIPTION
 	This PowerShell script lists all allowed verbs.
 .EXAMPLE
-	PS> ./list-verbs
+	PS> ./list-verbs.ps1
 
 	Verb        Group
 	----        -----

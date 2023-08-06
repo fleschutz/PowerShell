@@ -4,7 +4,7 @@
 .DESCRIPTION
 	This PowerShell script queries the status of the firewall and prints it.
 .EXAMPLE
-	PS> ./check-firewall
+	PS> ./check-firewall.ps1
 	✅ Firewall enabled
 .LINK
 	https://github.com/fleschutz/PowerShell

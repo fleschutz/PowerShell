@@ -6,7 +6,7 @@
 .PARAMETER DirTree
 	Specifies the path to the directory tree
 .EXAMPLE
-	PS> ./list-empty-files C:\
+	PS> ./list-empty-files.ps1 C:\
 .LINK
 	https://github.com/fleschutz/PowerShell
 .NOTES

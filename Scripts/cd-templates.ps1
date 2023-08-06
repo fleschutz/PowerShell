@@ -18,12 +18,10 @@ try {
 	} else {
 		$Path = [Environment]::GetFolderPath('Templates')
 	}
-	if (Test-Path "$Path" -pathType container) {
-		Set-Location "$Path"
-		"📂$Path"
-		exit 0 # success
-	}
-	throw "Templates folder at 📂$Path doesn't exist (yet)"
+	if (-not(Test-Path "$Path" -pathType container)) { throw "Templates folder at 📂$Path doesn't exist (yet)" }
+	Set-Location "$Path"
+	"📂$Path"
+	exit 0 # success
 } catch {
 	"⚠️ Error in line $($_.InvocationInfo.ScriptLineNumber): $($Error[0])"
 	exit 1

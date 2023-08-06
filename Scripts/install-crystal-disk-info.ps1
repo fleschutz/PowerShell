@@ -4,7 +4,7 @@
 .DESCRIPTION
 	This PowerShell script installs CrystalDiskInfo from the Microsoft Store.
 .EXAMPLE
-	PS> ./install-crystal-disk-info
+	PS> ./install-crystal-disk-info.ps1
 .LINK
 	https://github.com/fleschutz/PowerShell
 .NOTES

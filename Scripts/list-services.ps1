@@ -4,12 +4,11 @@
 .DESCRIPTION
 	This PowerShell script lists all services installed on the local computer.
 .EXAMPLE
-	PS> ./list-services
+	PS> ./list-services.ps1
 
 	Status   Name               DisplayName
 	------   ----               -----------
 	Running  AarSvc_886c2       Agent Activation Runtime_886c2
-	Running  Apple Mobile De... Apple Mobile Device Service
 	...
 .LINK
 	https://github.com/fleschutz/PowerShell

@@ -4,7 +4,7 @@
 .DESCRIPTION
 	This PowerShell script lists the exact operating system version.
 .EXAMPLE
-	PS> ./list-os
+	PS> ./list-os.ps1
 .LINK
 	https://github.com/fleschutz/PowerShell
 .NOTES

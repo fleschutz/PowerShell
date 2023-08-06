@@ -4,7 +4,7 @@
 .DESCRIPTION
 	This PowerShell script queries the status of the SSD/HDD devices (supporting S.M.A.R.T.) and prints it.
 .EXAMPLE
-	PS> ./check-smart-devices
+	PS> ./check-smart-devices.ps1
 	✅ 1TB Samsung SSD 970 EVO via NVMe (2388 hours, 289x on, v2B2QEXE7, 37°C, selftest passed)
 .LINK
 	https://github.com/fleschutz/PowerShell

@@ -6,7 +6,7 @@
 .PARAMETER digits
 	Specifies the number of digits to list (1000 by default)
 .EXAMPLE
-	PS> ./list-pi
+	PS> ./list-pi.ps1
 	3.141592653589793238462643383279502884197169399375105820974944592307816406286208998628034825342...
 .LINK
 	https://github.com/fleschutz/PowerShell

@@ -5,7 +5,7 @@
         This PowerShell script checks the security status of the given password by haveibeenpwned.com
 .EXAMPLE
         PS> ./check-password qwerty
-		⚠️ Bad password, it's already listed in 10584568 known security breaches!
+	⚠️  Bad password, it's already listed in 10584568 known security breaches!
 .LINK
         https://github.com/fleschutz/PowerShell
 .NOTES
@@ -41,7 +41,7 @@ try {
 	if ($password -eq "") { $password = Read-Host "Enter the password" }
 	$NumBreaches = Get-PasswordPwnCount $password
 	if ($NumBreaches -eq 0) {
-		"👍 Password seems good, it's not listed in any known security breach (as of today)" 
+		"👍 Password seems good, it's not listed in any known security breach as of today." 
 	} else {
 		"⚠️ Bad password, it's listed already in $NumBreaches known security breaches!"
 	}

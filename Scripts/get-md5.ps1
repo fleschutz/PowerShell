@@ -7,6 +7,7 @@
 	Specifies the path to the file
 .EXAMPLE
 	PS> ./get-md5 C:\MyFile.txt
+	✔️ MD5 hash is 041E16F16E60AD250EB794AF0681BD4A
 .LINK
 	https://github.com/fleschutz/PowerShell
 .NOTES

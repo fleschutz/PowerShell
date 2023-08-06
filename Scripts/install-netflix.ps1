@@ -4,7 +4,7 @@
 .DESCRIPTION
 	This PowerShell script installs Netflix from the Microsoft Store.
 .EXAMPLE
-	PS> ./install-netflix
+	PS> ./install-netflix.ps1
 .LINK
 	https://github.com/fleschutz/PowerShell
 .NOTES

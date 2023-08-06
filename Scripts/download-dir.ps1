@@ -6,7 +6,7 @@
 .PARAMETER URL
 	Specifies the URL where to download from
 .EXAMPLE
-	PS> ./download-dir https://www.cnn.com
+	PS> ./download-dir.ps1 https://www.cnn.com
 .LINK
 	https://github.com/fleschutz/PowerShell
 .NOTES
@@ -16,7 +16,7 @@
 param([string]$URL = "")
 
 try {
-	if ($URL -eq "") { $URL = read-host "Enter directory URL to download" }
+	if ($URL -eq "") { $URL = Read-Host "Enter directory URL to download" }
 
 	$StopWatch = [system.diagnostics.stopwatch]::startNew()
 

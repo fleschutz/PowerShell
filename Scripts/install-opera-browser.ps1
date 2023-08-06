@@ -4,7 +4,7 @@
 .DESCRIPTION
 	This PowerShell script installs Opera Browser from Microsoft Store.
 .EXAMPLE
-	PS> ./install-opera-browser
+	PS> ./install-opera-browser.ps1
 .LINK
 	https://github.com/fleschutz/PowerShell
 .NOTES

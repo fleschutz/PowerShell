@@ -4,7 +4,7 @@
 .DESCRIPTION
 	This PowerShell script installs a SSH server (needs admin rights).
 .EXAMPLE
-	PS> ./install-ssh-server
+	PS> ./install-ssh-server.ps1
 .LINK
 	https://github.com/fleschutz/PowerShell
 .NOTES

@@ -4,7 +4,7 @@
 .DESCRIPTION
 	This PowerShell script closes the Mozilla Thunderbird email application gracefully.
 .EXAMPLE
-	PS> ./close-thunderbird
+	PS> ./close-thunderbird.ps1
 .LINK
 	https://github.com/fleschutz/PowerShell
 .NOTES

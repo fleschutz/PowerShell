@@ -4,7 +4,7 @@
 .DESCRIPTION
 	This PowerShell script queries the BIOS status and prints it.
 .EXAMPLE
-	PS> ./check-bios
+	PS> ./check-bios.ps1
 	✅ BIOS model F6 version ALASKA - 1072009 by American Megatrends Inc.
 .LINK
 	https://github.com/fleschutz/PowerShell

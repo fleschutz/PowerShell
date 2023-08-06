@@ -4,7 +4,7 @@
 .DESCRIPTION
 	This PowerShell script lists all active network connections on the local computer.
 .EXAMPLE
-	PS> ./list-network-connections
+	PS> ./list-network-connections.ps1
 .LINK
 	https://github.com/fleschutz/PowerShell
 .NOTES

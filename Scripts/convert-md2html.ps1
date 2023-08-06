@@ -6,7 +6,7 @@
 .PARAMETER FilePattern
 	Specifies the file pattern to the Markdown file(s)
 .EXAMPLE
-	PS> ./convert-md2html *.md
+	PS> ./convert-md2html.ps1 *.md
 .LINK
 	https://github.com/fleschutz/PowerShell
 .NOTES

@@ -4,7 +4,10 @@
 .DESCRIPTION
 	This PowerShell script lists the motherboard details.
 .EXAMPLE
-	PS> ./list-motherboard
+	PS> ./list-motherboard.ps1
+
+	Manufacturer : Gigabyte Technology Co., Ltd.
+	...
 .LINK
 	https://github.com/fleschutz/PowerShell
 .NOTES

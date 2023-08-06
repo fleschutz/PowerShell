@@ -7,7 +7,12 @@
 .PARAMETER RepoDir
 	Specifies the file path to the local Git repository
 .EXAMPLE
-	PS> ./clean-repo C:\MyRepo
+	PS> ./clean-repo C:\base256unicode
+	⏳ (1/4) Searching for Git executable...          git version 2.41.0.windows.3
+	⏳ (2/4) Checking local repository...        	  📂C:\base256unicode
+	⏳ (3/4) Removing untracked files in repository...
+	⏳ (4/4) Removing untracked files in submodules...
+	✔️ Cleaning the 📂base256unicode repo took 1 sec
 .LINK
 	https://github.com/fleschutz/PowerShell
 .NOTES

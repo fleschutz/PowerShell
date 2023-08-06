@@ -4,7 +4,8 @@
 .DESCRIPTION
 	This PowerShell script queries the computer's uptime and prints it.
 .EXAMPLE
-	PS> ./check-uptime
+	PS> ./check-uptime.ps1
+	✅ Up for 2 days, 20 hours, 10 minutes
 .LINK
 	https://github.com/fleschutz/PowerShell
 .NOTES

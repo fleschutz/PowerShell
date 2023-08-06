@@ -6,7 +6,7 @@
 	Install-Module InvokeQuery
 	Run the above command if you do not have this module.
 .EXAMPLE
-	PS> ./list-sql-tables
+	PS> ./list-sql-tables.ps1
 .LINK
 	https://github.com/fleschutz/PowerShell
 .NOTES

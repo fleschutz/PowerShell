@@ -8,7 +8,7 @@
 .PARAMETER Password
 	Specifies the password to FRITZ!Box
 .EXAMPLE
-	PS> ./list-fritzbox-calls
+	PS> ./list-fritzbox-calls.ps1
 .LINK
 	https://github.com/fleschutz/PowerShell
 .NOTES

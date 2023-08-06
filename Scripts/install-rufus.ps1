@@ -4,7 +4,7 @@
 .DESCRIPTION
 	This PowerShell script installs Rufus from the Microsoft Store.
 .EXAMPLE
-	PS> ./install-rufus
+	PS> ./install-rufus.ps1
 .LINK
 	https://github.com/fleschutz/PowerShell
 .NOTES

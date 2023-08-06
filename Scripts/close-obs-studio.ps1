@@ -4,7 +4,7 @@
 .DESCRIPTION
 	This PowerShell script closes the OBS Studio application gracefully.
 .EXAMPLE
-	PS> ./close-obs-studio
+	PS> ./close-obs-studio.ps1
 .LINK
 	https://github.com/fleschutz/PowerShell
 .NOTES

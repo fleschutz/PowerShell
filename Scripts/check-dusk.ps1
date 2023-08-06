@@ -4,7 +4,8 @@
 .DESCRIPTION
 	This PowerShell script queries the time of dusk and answers by text-to-speech (TTS).
 .EXAMPLE
-	PS> ./check-dusk
+	PS> ./check-dusk.ps1
+	Dusk is in 2 hours at 8 PM.
 .LINK
 	https://github.com/fleschutz/PowerShell
 .NOTES
@@ -35,7 +36,7 @@ try {
                 $TimeSpan = TimeSpanToString($Now - $Dusk)
                 $Reply = "Dusk was $TimeSpan ago at $($Dusk.ToShortTimeString())."
         }
-	& "$PSScriptRoot/speak-english.ps1" "$Reply"
+	Write-Output $Reply
 	exit 0 # success
 } catch {
 	"⚠️ Error in line $($_.InvocationInfo.ScriptLineNumber): $($Error[0])"

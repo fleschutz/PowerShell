@@ -4,7 +4,11 @@
 .DESCRIPTION
 	This PowerShell script lists the CPU details.
 .EXAMPLE
-	PS> ./list-cpu
+	PS> ./list-cpu.ps1
+
+	Caption           : Intel64 Family 6 Model 94 Stepping 3
+	DeviceID          : CPU0
+	...
 .LINK
 	https://github.com/fleschutz/PowerShell
 .NOTES

@@ -5,7 +5,7 @@
 	This PowerShell script changes the working directory to the user's home directory.
 .EXAMPLE
 	PS> ./cd-home
-	📂/home/Markus
+	📂C:\Users\Markus
 .LINK
 	https://github.com/fleschutz/PowerShell
 .NOTES

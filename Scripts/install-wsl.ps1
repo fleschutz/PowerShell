@@ -4,7 +4,7 @@
 .DESCRIPTION
 	This PowerShell script installs Windows Subsystem for Linux. It needs admin rights.
 .EXAMPLE
-	PS> ./install-wsl
+	PS> ./install-wsl.ps1
 .LINK
 	https://github.com/fleschutz/PowerShell
 .NOTES

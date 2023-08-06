@@ -6,7 +6,7 @@
 .PARAMETER PathToExecutables
 	Specifies the path to the executables
 .EXAMPLE
-	PS> ./add-firewall-rules C:\MyApp\bin
+	PS> ./add-firewall-rules.ps1 C:\MyApp\bin
 	Adding firewall rule for C:\MyApp\bin\app1.exe
 	Adding firewall rule for C:\MyApp\bin\app2.exe
 	...

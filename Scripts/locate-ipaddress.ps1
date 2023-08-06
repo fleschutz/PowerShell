@@ -6,7 +6,7 @@
 .PARAMTER IPaddress
 	Specifies the IP address
 .EXAMPLE
-	PS> ./locate-ipaddress 177.144.67.98
+	PS> ./locate-ipaddress.ps1 177.144.67.98
 .LINK
 	https://github.com/fleschutz/PowerShell
 .NOTES

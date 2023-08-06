@@ -4,7 +4,7 @@
 .DESCRIPTION
 	This PowerShell script installs Git Extensions.
 .EXAMPLE
-	PS> ./install-git-extensions
+	PS> ./install-git-extensions.ps1
 .LINK
 	https://github.com/fleschutz/PowerShell
 .NOTES

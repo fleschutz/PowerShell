@@ -11,7 +11,6 @@
 	Repository   Latest Tag   Branch    Updates  Status
 	----------   ----------   ------    -------  ------
 	📂cmake      v3.23.0      🌵main    ↓0       ✔️clean
-	📂opencv     4.5.5        🌵main    ↓0       ⚠️modified
 	...
 .LINK
 	https://github.com/fleschutz/PowerShell

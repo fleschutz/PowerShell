@@ -4,7 +4,7 @@
 .DESCRIPTION
 	This PowerShell script installs Microsoft Teams from the Microsoft Store.
 .EXAMPLE
-	PS> ./install-microsoft-teams
+	PS> ./install-microsoft-teams.ps1
 .LINK
 	https://github.com/fleschutz/PowerShell
 .NOTES

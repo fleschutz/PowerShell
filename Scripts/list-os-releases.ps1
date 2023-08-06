@@ -4,7 +4,7 @@
 .DESCRIPTION
 	This PowerShell script lists OS releases and download URL.
 .EXAMPLE
-	PS> ./list-os-releases
+	PS> ./list-os-releases.ps1
 .LINK
 	https://github.com/fleschutz/PowerShell
 .NOTES

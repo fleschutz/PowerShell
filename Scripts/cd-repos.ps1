@@ -7,7 +7,7 @@
 	Specifies an additional relative subpath (optional)
 .EXAMPLE
 	PS> ./cd-repos
-	📂C:\Users\Markus\Repos
+	📂C:\Users\Markus\source\Repos
 .LINK
 	https://github.com/fleschutz/PowerShell
 .NOTES
@@ -26,9 +26,7 @@ try {
 	} else {
 		throw "The folder for Git repositories in your home directory doesn't exist (yet)."
 	}
-	if (-not(Test-Path "$Path" -pathType Container)) {
-		throw "The path to 📂$Path doesn't exist (yet)."
-	}
+	if (-not(Test-Path "$Path" -pathType Container)) { throw "The path to 📂$Path doesn't exist (yet)." }
 	$Path = Resolve-Path "$Path"
 	Set-Location "$Path"
 	"📂$Path"

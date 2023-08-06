@@ -5,7 +5,7 @@
 	This PowerShell script installs software updates for the local machine (needs admin rights).
 	Use the script 'list-updates.ps1' to list available updates.
 .EXAMPLE
-	PS> ./install-updates
+	PS> ./install-updates.ps1
 .LINK
 	https://github.com/fleschutz/PowerShell
 .NOTES

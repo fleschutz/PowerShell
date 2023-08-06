@@ -14,9 +14,7 @@
 
 try {
 	$Path = Resolve-Path "$env:WINDIR"
-	if (-not(Test-Path "$Path" -pathType container)) {
-		throw "Windows directory at 📂$Path doesn't exist"
-	}
+	if (-not(Test-Path "$Path" -pathType container)) { throw "Windows directory at 📂$Path doesn't exist" }
 	Set-Location "$Path"
 	"📂$Path"
 	exit 0 # success

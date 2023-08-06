@@ -4,7 +4,7 @@
 .DESCRIPTION
 	This PowerShell script installs Mozilla Firefox from the Microsoft Store.
 .EXAMPLE
-	PS> ./install-firefox
+	PS> ./install-firefox.ps1
 .LINK
 	https://github.com/fleschutz/PowerShell
 .NOTES
@@ -12,12 +12,12 @@
 #>
 
 try {
-	"Installing Firefox, please wait..."
+	"Installing Mozilla Firefox, please wait..."
 
 	& winget install "Mozilla Firefox Browser" --source msstore --accept-package-agreements --accept-source-agreements
 	if ($lastExitCode -ne "0") { throw "'winget install' failed" }
 
-	"Firefox installed successfully."
+	"Mozilla Firefox installed successfully."
 	exit 0 # success
 } catch {
 	"⚠️ Error in line $($_.InvocationInfo.ScriptLineNumber): $($Error[0])"

@@ -4,7 +4,7 @@
 .DESCRIPTION
 	This PowerShell script installs Twitter from the Microsoft Store.
 .EXAMPLE
-	PS> ./install-twitter
+	PS> ./install-twitter.ps1
 .LINK
 	https://github.com/fleschutz/PowerShell
 .NOTES

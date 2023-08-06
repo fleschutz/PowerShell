@@ -6,7 +6,6 @@
 .EXAMPLE
         PS> ./list-ascii-table.ps1
 
-	ASCII TABLE
 	Dec    Oct    Hex    HTML    Symbol     Description
 	---    ---    ---    ----    ------     -----------
 	  0    000     00    &#00;    NUL       Null character
@@ -17,8 +16,6 @@
         Author: Markus Fleschutz | License: CC0
 #>
 
-""
-Write-Host "ASCII TABLE" -foregroundColor green
 ""
 "Dec    Oct    Hex     Binary     HTML    Symbol    Description"
 "---    ---    ---     ------     ----    ------    -----------"

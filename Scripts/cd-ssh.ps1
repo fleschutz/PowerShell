@@ -5,7 +5,7 @@
 	This PowerShell script changes the working directory to the user's SSH folder.
 .EXAMPLE
 	PS> ./cd-ssh
-	📂/home/Markus/.ssh
+	📂C:\Users\Markus\.ssh
 .LINK
 	https://github.com/fleschutz/PowerShell
 .NOTES
@@ -14,12 +14,10 @@
 
 try {
 	$Path = Resolve-Path "~/.ssh"
-	if (Test-Path "$Path" -pathType container) {
-		Set-Location "$Path"
-		"📂$Path"
-		exit 0 # success
-	}
-	throw "User's SSH folder at 📂$Path doesn't exist (yet)"
+	if (-not(Test-Path "$Path" -pathType container)) { throw "User's SSH folder at 📂$Path doesn't exist (yet)" }
+	Set-Location "$Path"
+	"📂$Path"
+	exit 0 # success
 } catch {
 	"⚠️ Error in line $($_.InvocationInfo.ScriptLineNumber): $($Error[0])"
 	exit 1

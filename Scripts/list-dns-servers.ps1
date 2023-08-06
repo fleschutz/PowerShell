@@ -4,12 +4,12 @@
 .DESCRIPTION
 	This PowerShell script measures the latency of public and free DNS servers and lists it.
 .EXAMPLE
-	PS> ./list-dns-servers
+	PS> ./list-dns-servers.ps1
       
-      Provider                IPv4                             Latency
-      --------                ----                             -------
-      AdGuard DNS (Cyprus)    94.140.14.14 / 94.140.15.15      222 / 205 ms
-      ...
+	Provider                IPv4                             Latency
+	--------                ----                             -------
+	AdGuard DNS (Cyprus)    94.140.14.14 / 94.140.15.15      222 / 205 ms
+	...
 .LINK
 	https://github.com/fleschutz/PowerShell
 .NOTES

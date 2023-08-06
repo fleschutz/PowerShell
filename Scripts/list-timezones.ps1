@@ -10,7 +10,6 @@
                                                                                SavingTime
 	--                              -----------                            ----------------
 	Hawaiian Standard Time          (UTC-10:00) Hawaii                     False
-	Alaskan Standard Time           (UTC-09:00) Alaska                     True
 	...
 .LINK
 	https://github.com/fleschutz/PowerShell

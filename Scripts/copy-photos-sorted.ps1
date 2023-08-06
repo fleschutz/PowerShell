@@ -8,7 +8,7 @@
 .PARAMTER TargetDir
 	Specifies the path to the target folder
 .EXAMPLE
-	PS> ./copy-photos-sorted D:\iPhone\DCIM C:\MyPhotos
+	PS> ./copy-photos-sorted.ps1 D:\iPhone\DCIM C:\MyPhotos
 .LINK
 	https://github.com/fleschutz/PowerShell
 .NOTES

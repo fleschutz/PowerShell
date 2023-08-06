@@ -8,7 +8,7 @@
 .PARAMETER MaxCount
 	Specifies the number of news to list
 .EXAMPLE
-	PS> ./list-os-updates
+	PS> ./list-os-updates.ps1
 .LINK
 	https://github.com/fleschutz/PowerShell
 .NOTES

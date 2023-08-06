@@ -4,7 +4,7 @@
 .DESCRIPTION
 	This PowerShell script changes the working directory to the user's autostart folder.
 .EXAMPLE
-	PS> ./cd-autostart
+	PS> ./cd-autostart.ps1
 	📂C:\Users\Markus\AppData\Roaming\Microsoft\Windows\Start Menu\Programs\Startup
 .LINK
 	https://github.com/fleschutz/PowerShell

@@ -4,7 +4,7 @@
 .DESCRIPTION
 	This PowerShell script installs evcc. Sevcc is an extensible EV Charge Controller with PV integration implemented in Go. See https://evcc.io for details.
 .EXAMPLE
-	PS> ./install-evcc
+	PS> ./install-evcc.ps1
 .LINK
 	https://github.com/fleschutz/PowerShell
 .NOTES

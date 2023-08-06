@@ -4,7 +4,7 @@
 .DESCRIPTION
 	This PowerShell script lists the user groups of the local computer.
 .EXAMPLE
-	PS> ./list-user-groups
+	PS> ./list-user-groups.ps1
 
 	Name                 Description
 	----                 -----------

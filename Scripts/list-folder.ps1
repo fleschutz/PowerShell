@@ -6,7 +6,7 @@
 .PARAMETER SearchPattern
 	Specifies the search pattern ("*" by default which means anything)
 .EXAMPLE
-	PS> ./list-folder C:\*
+	PS> ./list-folder.ps1 C:\*
 .LINK
 	https://github.com/fleschutz/PowerShell
 .NOTES

@@ -18,12 +18,10 @@ try {
 	} else {
 		$Path = Resolve-Path "~/../Public"
 	}
-	if (Test-Path "$Path" -pathType container) {
-		Set-Location "$Path"
-		"📂$Path"
-		exit 0 # success
-	}
-	throw "Public folder at 📂$Path doesn't exist (yet)"
+	if (-not(Test-Path "$Path" -pathType container)) { throw "Public folder at 📂$Path doesn't exist (yet)" }
+	Set-Location "$Path"
+	"📂$Path"
+	exit 0 # success
 } catch {
 	"⚠️ Error in line $($_.InvocationInfo.ScriptLineNumber): $($Error[0])"
 	exit 1

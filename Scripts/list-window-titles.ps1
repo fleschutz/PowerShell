@@ -2,9 +2,14 @@
 .SYNOPSIS
 	Lists window titles
 .DESCRIPTION
-	This PowerShell script list all main window titles and displays them in a table.
+	This PowerShell script queries all main window titles and lists them as a table.
 .EXAMPLE
-	PS> ./list-window-titles
+	PS> ./list-window-titles.ps1
+
+	   Id Name                 MainWindowTitle
+	   -- ----                 ---------------
+	11556 Spotify              Spotify Free
+	...
 .LINK
 	https://github.com/fleschutz/PowerShell
 .NOTES

@@ -4,7 +4,7 @@
 .DESCRIPTION
 	This PowerShell script closes the Windows Screen Magnifier application gracefully.
 .EXAMPLE
-	PS> ./close-magnifier
+	PS> ./close-magnifier.ps1
 .LINK
 	https://github.com/fleschutz/PowerShell
 .NOTES

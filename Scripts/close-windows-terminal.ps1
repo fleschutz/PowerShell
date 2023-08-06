@@ -4,7 +4,7 @@
 .DESCRIPTION
 	This PowerShell script closes the Windows Terminal application gracefully.
 .EXAMPLE
-	PS> ./close-windows-terminal
+	PS> ./close-windows-terminal.ps1
 .LINK
 	https://github.com/fleschutz/PowerShell
 .NOTES

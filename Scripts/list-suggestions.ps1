@@ -4,7 +4,7 @@
 .DESCRIPTION
 	This PowerShell script lists "Did you mean?" suggestions from Google.
 .EXAMPLE
-	PS> ./list-suggestions Joe
+	PS> ./list-suggestions.ps1 Joe
 	joe biden
 	joe cocker
 	...

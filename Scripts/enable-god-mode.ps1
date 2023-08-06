@@ -2,9 +2,10 @@
 .SYNOPSIS
 	Enables the god mode
 .DESCRIPTION
-	This PowerShell script enables the god mode. It adds a new icon to the desktop.
+	This PowerShell script enables the god mode in Windows. It adds a new icon to the desktop.
 .EXAMPLE
-	PS> ./enable-god-mode
+	PS> ./enable-god-mode.ps1
+	✔ God mode enabled, please click the new desktop icon
 .LINK
 	https://github.com/fleschutz/PowerShell
 .NOTES
@@ -17,9 +18,8 @@ try {
 		Name = "GodMode.{ED7BA470-8E54-465E-825C-99712043E01C}"
 		ItemType = 'Directory'
 	}
-	$null = new-item @GodModeSplat
-
-	"✔️ enabled god mode - see the new desktop icon"
+	$null = New-Item @GodModeSplat
+	"✔️ God mode enabled, please click the new desktop icon"
 	exit 0 # success
 } catch {
 	"⚠️ Error in line $($_.InvocationInfo.ScriptLineNumber): $($Error[0])"

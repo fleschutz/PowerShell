@@ -6,7 +6,7 @@
 .PARAMETER RepoDir
 	Specifies the path to the Git repository
 .EXAMPLE
-	PS> ./build-repo C:\MyRepo
+	PS> ./build-repo.ps1 C:\MyRepo
 .LINK
 	https://github.com/fleschutz/PowerShell
 .NOTES

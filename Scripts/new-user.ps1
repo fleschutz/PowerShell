@@ -4,7 +4,7 @@
 .DESCRIPTION
 	This PowerShell script creates a new user account.
 .EXAMPLE
-	PS> ./new-user
+	PS> ./new-user.ps1
 .LINK
 	https://github.com/fleschutz/PowerShell
 .NOTES
@@ -14,7 +14,7 @@
 param([string]$Username = "")
 
 try {
-	if ($Username -eq "") { $Username = read-host "Enter new user name" }
+	if ($Username -eq "") { $Username = Read-Host "Enter new user name" }
 	$StopWatch = [system.diagnostics.stopwatch]::startNew()
 
 	if ($IsLinux) {

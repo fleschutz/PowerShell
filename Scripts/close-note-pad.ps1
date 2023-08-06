@@ -4,7 +4,7 @@
 .DESCRIPTION
 	This PowerShell script closes the Notepad application gracefully.
 .EXAMPLE
-	PS> ./close-note-pad
+	PS> ./close-note-pad.ps1
 .LINK
 	https://github.com/fleschutz/PowerShell
 .NOTES

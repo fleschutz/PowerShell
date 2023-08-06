@@ -4,7 +4,7 @@
 .DESCRIPTION
 	This PowerShell script installs CrystalDiskMark from the Microsoft Store.
 .EXAMPLE
-	PS> ./install-crystal-disk-mark
+	PS> ./install-crystal-disk-mark.ps1
 .LINK
 	https://github.com/fleschutz/PowerShell
 .NOTES

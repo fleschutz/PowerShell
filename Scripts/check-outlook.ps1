@@ -4,7 +4,8 @@
 .DESCRIPTION
 	This PowerShell script checks the inbox of Outlook for new/unread mails.
 .EXAMPLE
-	PS> ./check-outlook
+	PS> ./check-outlook.ps1
+	✅ No new mails.
 .LINK
 	https://github.com/fleschutz/PowerShell
 .NOTES

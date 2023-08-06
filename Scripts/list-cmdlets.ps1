@@ -4,7 +4,7 @@
 .DESCRIPTION
 	This PowerShell script lists all PowerShell cmdlets.
 .EXAMPLE
-	PS> ./list-cmdlets
+	PS> ./list-cmdlets.ps1
 
 	CommandType     Name                                  Version    Source
 	-----------     ----                                  -------    ------

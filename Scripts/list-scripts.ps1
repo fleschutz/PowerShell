@@ -4,7 +4,7 @@
 .DESCRIPTION
 	This PowerShell script lists all PowerShell scripts in the repository (sorted alphabetically).
 .EXAMPLE
-	PS> ./list-scripts
+	PS> ./list-scripts.ps1
 .LINK
 	https://github.com/fleschutz/PowerShell
 .NOTES

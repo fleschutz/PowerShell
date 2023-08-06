@@ -4,7 +4,7 @@
 .DESCRIPTION
 	This PowerShell script lists all network shares of the local computer.
 .EXAMPLE
-	PS> ./list-network-shares
+	PS> ./list-network-shares.ps1
 
 	Name  Path     Description
 	----  ----     -----------

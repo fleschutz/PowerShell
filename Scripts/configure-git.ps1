@@ -10,7 +10,7 @@
 .PARAMETER FavoriteEditor
 	Specifies the user's favorite text editor
 .EXAMPLE
-	PS> ./configure-git
+	PS> ./configure-git.ps1
 .LINK
 	https://github.com/fleschutz/PowerShell
 .NOTES

@@ -4,7 +4,7 @@
 .DESCRIPTION
 	This PowerShell script lists all available console colors.
 .EXAMPLE
-	PS> ./list-console-colors
+	PS> ./list-console-colors.ps1
 
 	Color     As Foreground     As Background
 	-----     -------------     -------------

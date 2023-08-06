@@ -4,7 +4,7 @@
 .DESCRIPTION
         This PowerShell script installs Knot Resolver. Knot Resolver is a DNS resolver daemon. It needs admin rights.
 .EXAMPLE
-        PS> ./install-knot-resolver
+        PS> ./install-knot-resolver.ps1
 .LINK
         https://github.com/fleschutz/PowerShell
 .NOTES

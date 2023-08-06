@@ -6,7 +6,7 @@
 .PARAMETER folder
 	Specifies the path to the folder
 .EXAMPLE
-	PS> ./new-zipfile C:\Windows
+	PS> ./new-zipfile.ps1 C:\Windows
 .LINK
 	https://github.com/fleschutz/PowerShell
 .NOTES

@@ -4,7 +4,7 @@
 .DESCRIPTION
 	This PowerShell script logs off the current Windows user.
 .EXAMPLE
-	PS> ./log-off
+	PS> ./log-off.ps1
 .LINK
 	https://github.com/fleschutz/PowerShell
 .NOTES

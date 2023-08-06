@@ -4,7 +4,7 @@
 .DESCRIPTION
 	This PowerShell script queries the status of the system battery and prints it.
 .EXAMPLE
-	PS> ./check-battery
+	PS> ./check-battery.ps1
 	⚠️ Battery 9% low, 54 min remaining
 .LINK
 	https://github.com/fleschutz/PowerShell

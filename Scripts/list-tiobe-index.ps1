@@ -4,7 +4,7 @@
 .DESCRIPTION
 	This PowerShell script lists the TIOBE index of top programming languages.
 .EXAMPLE
-	PS> ./list-tiobe-index
+	PS> ./list-tiobe-index.ps1
 .LINK
 	https://github.com/fleschutz/PowerShell
 .NOTES

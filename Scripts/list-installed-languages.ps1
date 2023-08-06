@@ -4,7 +4,11 @@
 .DESCRIPTION
 	This PowerShell script lists the installed languages.
 .EXAMPLE
-	PS> ./list-installed-languages
+	PS> ./list-installed-languages.ps1
+
+	Tag   Autonym               English Spellchecking Handwriting
+	---   -------               ------- ------------- -----------
+	de-DE Deutsch (Deutschland) German  True          False
 .LINK
 	https://github.com/fleschutz/PowerShell
 .NOTES

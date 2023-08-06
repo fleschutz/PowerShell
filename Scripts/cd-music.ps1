@@ -5,7 +5,7 @@
 	This PowerShell script changes the working directory to the user's music folder.
 .EXAMPLE
 	PS> ./cd-music
-	📂/home/Markus/Music
+	📂C:\Users\Markus\Music
 .LINK
 	https://github.com/fleschutz/PowerShell
 .NOTES

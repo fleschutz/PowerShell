@@ -4,12 +4,11 @@
 .DESCRIPTION
 	This PowerShell script lists all environment variables.
 .EXAMPLE
-	PS> ./list-environment-variables
+	PS> ./list-environment-variables.ps1
 
 	Name                           Value
 	----                           -----
 	ALLUSERSPROFILE                C:\ProgramData
-	APPDATA                        C:\Users\Joe\AppData\Roaming
 	...
 .LINK
 	https://github.com/fleschutz/PowerShell

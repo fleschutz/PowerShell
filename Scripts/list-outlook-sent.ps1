@@ -4,7 +4,7 @@
 .DESCRIPTION
 	This PowerShell script lists the mails in the Sent Mail folder of Outlook.
 .EXAMPLE
-	PS> ./list-outlook-sent
+	PS> ./list-outlook-sent.ps1
 .LINK
 	https://github.com/fleschutz/PowerShell
 .NOTES

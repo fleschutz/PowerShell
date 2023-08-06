@@ -4,7 +4,11 @@
 .DESCRIPTION
 	This PowerShell script lists the BIOS details.
 .EXAMPLE
-	PS> ./list-bios
+	PS> ./list-bios.ps1
+
+	SMBIOSBIOSVersion : F6
+	Manufacturer      : American Megatrends Inc.
+	...
 .LINK
 	https://github.com/fleschutz/PowerShell
 .NOTES

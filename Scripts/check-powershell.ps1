@@ -4,7 +4,7 @@
 .DESCRIPTION
 	This PowerShell script queries the PowerShell status and prints it.
 .EXAMPLE
-	PS> ./check-powershell
+	PS> ./check-powershell.ps1
 	✅ PowerShell Desktop edition 5.1.19041.2673 (10 modules, 1458 cmdlets, 172 aliases)
 .LINK
 	https://github.com/fleschutz/PowerShell

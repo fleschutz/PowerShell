@@ -4,7 +4,7 @@
 .DESCRIPTION
 	This PowerShell script lists the installed PowerShell modules.
 .EXAMPLE
-	PS> ./list-modules
+	PS> ./list-modules.ps1
 
 	Name                             Version  ModuleType  ExportedCommands
 	----                             -------  ----------  ----------------

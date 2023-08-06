@@ -8,7 +8,7 @@
 .PARAMETER ImageSize
 	Specifies the image size (width x height)
 .EXAMPLE
-	PS> ./new-qrcode "Fasten seatbelt" 500x500
+	PS> ./new-qrcode.ps1 "Fasten seatbelt" 500x500
 .LINK
 	https://github.com/fleschutz/PowerShell
 .NOTES

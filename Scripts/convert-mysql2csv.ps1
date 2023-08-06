@@ -14,7 +14,7 @@
 .PARAMETER query
 	Specifies the SQL query
 .EXAMPLE
-	PS> ./convert-mysql2csv
+	PS> ./convert-mysql2csv.ps1
 .LINK
 	https://github.com/fleschutz/PowerShell
 .NOTES

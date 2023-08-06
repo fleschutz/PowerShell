@@ -4,7 +4,7 @@
 .DESCRIPTION
 	This PowerShell script lists all special folders (sorted alphabetically).
 .EXAMPLE
-	PS> ./list-special-folders
+	PS> ./list-special-folders.ps1
 
 	Folder Name     Folder Path
 	-----------     -----------

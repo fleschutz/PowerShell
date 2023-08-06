@@ -6,7 +6,7 @@
 .PARAMETER filename
 	Specifies the path to the PowerShell script
 .EXAMPLE
-	PS> ./convert-ps2md myscript.ps1
+	PS> ./convert-ps2md.ps1 myscript.ps1
 .LINK
 	https://github.com/fleschutz/PowerShell
 .NOTES

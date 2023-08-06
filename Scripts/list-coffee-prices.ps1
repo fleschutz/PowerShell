@@ -4,7 +4,7 @@
 .DESCRIPTION
 	This PowerShell script queries alphavantage.co and lists the global price of coffee (monthly, in cents per points).
 .EXAMPLE
-	PS> ./list-coffee-prices
+	PS> ./list-coffee-prices.ps1
 .LINK
 	https://github.com/fleschutz/PowerShell
 .NOTES

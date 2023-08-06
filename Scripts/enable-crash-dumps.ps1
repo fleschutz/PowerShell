@@ -4,7 +4,7 @@
 .DESCRIPTION
 	This PowerShell script enables the writing of crash dumps.
 .EXAMPLE
-	PS> ./enable-crash-dumps
+	PS> ./enable-crash-dumps.ps1
 .LINK
 	https://github.com/fleschutz/PowerShell
 .NOTES

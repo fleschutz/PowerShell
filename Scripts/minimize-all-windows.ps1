@@ -4,7 +4,7 @@
 .DESCRIPTION
 	This PowerShell script minimizes all open windows.
 .EXAMPLE
-	PS> ./minimize-all-windows
+	PS> ./minimize-all-windows.ps1
 .LINK
 	https://github.com/fleschutz/PowerShell
 .NOTES

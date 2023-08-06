@@ -5,7 +5,7 @@
 	This PowerShell script changes the working directory to the user's Dropbox folder.
 .EXAMPLE
 	PS> ./cd-dropbox
-	📂/home/Markus/Dropbox
+	📂C:\Users\Markus\Dropbox
 .LINK
 	https://github.com/fleschutz/PowerShell
 .NOTES

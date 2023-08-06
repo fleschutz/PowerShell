@@ -6,7 +6,7 @@
 .PARAMETER message
 	Specifies the alert message
 .EXAMPLE
-	PS> ./alert "Harddisk failure"
+	PS> ./alert.ps1 "Harddisk failure"
 .LINK
 	https://github.com/fleschutz/PowerShell
 .NOTES

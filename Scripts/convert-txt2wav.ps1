@@ -8,7 +8,7 @@
 .PARAMETER WavFile
 	Specifies the path to the resulting WAV file
 .EXAMPLE
-	PS> ./convert-txt2wav "Hello World" spoken.wav
+	PS> ./convert-txt2wav.ps1 "Hello World" spoken.wav
 .LINK
 	https://github.com/fleschutz/PowerShell
 .NOTES

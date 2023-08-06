@@ -4,7 +4,7 @@
 .DESCRIPTION
 	This PowerShell script lists the WIFI networks.
 .EXAMPLE
-	PS> ./list-wifi
+	PS> ./list-wifi.ps1
 .LINK
 	https://github.com/fleschutz/PowerShell
 .NOTES

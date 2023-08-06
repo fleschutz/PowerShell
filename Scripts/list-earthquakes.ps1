@@ -4,7 +4,12 @@
 .DESCRIPTION
 	This PowerShell script lists major earthquakes with magnitude >= 6.0 for the last 30 days.
 .EXAMPLE
-	PS> ./list-earthquakes
+	PS> ./list-earthquakes.ps1
+
+	Mag   Location                                   Depth        Time
+	---   --------                                   -----        ----
+	7.2   98 km S of Sand Point, Alaska              33 km        2023-07-16T06:48:22.606Z
+	...
 .LINK
 	https://github.com/fleschutz/PowerShell
 .NOTES

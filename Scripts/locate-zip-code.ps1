@@ -8,7 +8,8 @@
 .PARAMETER ZipCode
 	Specifies the zip code
 .EXAMPLE
-	PS> ./locate-zip-code
+	PS> ./locate-zip-code.ps1 de 87600
+	* DE 87600 Kaufbeuren is at 47.8824°N, 10.6219°W
 .LINK
 	https://github.com/fleschutz/PowerShell
 .NOTES

@@ -18,9 +18,7 @@ try {
 	} else {
 		$Path = [Environment]::GetFolderPath('MyVideos')
 	}
-	if (-not(Test-Path "$Path" -pathType container)) {
-		throw "Videos folder at 📂$Path doesn't exist (yet)"
-	}
+	if (-not(Test-Path "$Path" -pathType container)) { throw "Videos folder at 📂$Path doesn't exist (yet)" }
 	Set-Location "$Path"
 	"📂$Path"
 	exit 0 # success

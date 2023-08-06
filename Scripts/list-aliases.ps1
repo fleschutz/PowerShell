@@ -4,12 +4,11 @@
 .DESCRIPTION
 	This PowerShell scripts lists all PowerShell aliases.
 .EXAMPLE
-	PS> ./list-aliases
+	PS> ./list-aliases.ps1
 
 	CommandType     Name                                               Version    Source
 	-----------     ----                                               -------    ------
 	Alias           CFS -> ConvertFrom-String                          3.1.0.0    Microsoft.PowerShell.Utility
-	Alias           fhx -> Format-Hex                                  3.1.0.0    Microsoft.PowerShell.Utility
 	...
 .LINK
 	https://github.com/fleschutz/PowerShell

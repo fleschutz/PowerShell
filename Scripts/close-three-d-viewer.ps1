@@ -4,7 +4,7 @@
 .DESCRIPTION
 	This PowerShell script closes the 3D-Viewer application gracefully.
 .EXAMPLE
-	PS> ./close-three-d-viewer
+	PS> ./close-three-d-viewer.ps1
 .LINK
 	https://github.com/fleschutz/PowerShell
 .NOTES

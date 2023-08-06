@@ -4,7 +4,7 @@
 .DESCRIPTION
 	This PowerShell script queries the status of the installed RAM and prints it.
 .EXAMPLE
-	PS> ./check-ram
+	PS> ./check-ram.ps1
 	✅ 16GB DDR4 RAM @ 3200MHz (1.2V) in P0 CHANNEL A/DIMM 0 by Samsung
 .LINK
 	https://github.com/fleschutz/PowerShell

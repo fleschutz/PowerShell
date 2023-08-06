@@ -4,7 +4,7 @@
 .DESCRIPTION
 	This PowerShell script lists all memo entries in Memos.csv in your home folder.
 .EXAMPLE
-	PS> ./list-memos
+	PS> ./list-memos.ps1
 .LINK
 	https://github.com/fleschutz/PowerShell
 .NOTES

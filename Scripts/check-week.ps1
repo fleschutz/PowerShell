@@ -4,7 +4,7 @@
 .DESCRIPTION
 	This PowerShell script determines and speaks the current week number by text-to-speech (TTS).
 .EXAMPLE
-	PS> ./check-week
+	PS> ./check-week.ps1
 .LINK
 	https://github.com/fleschutz/PowerShell
 .NOTES

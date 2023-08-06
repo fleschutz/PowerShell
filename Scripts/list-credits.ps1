@@ -4,7 +4,7 @@
 .DESCRIPTION
 	This PowerShell script shows the credits for the PowerShell Scripts.
 .EXAMPLE
-	PS> ./list-credits
+	PS> ./list-credits.ps1
 .LINK
 	https://github.com/fleschutz/PowerShell
 .NOTES

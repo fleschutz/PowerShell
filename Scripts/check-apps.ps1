@@ -4,7 +4,7 @@
 .DESCRIPTION
 	This PowerShell script queries the application status and prints it.
 .EXAMPLE
-	PS> ./check-apps
+	PS> ./check-apps.ps1
 	✅ 119 apps installed, 11 upgrades available
 .LINK
 	https://github.com/fleschutz/PowerShell

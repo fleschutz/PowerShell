@@ -4,7 +4,7 @@
 .DESCRIPTION
 	This PowerShell script lists all local drives as a table.
 .EXAMPLE
-	PS> ./list-drives
+	PS> ./list-drives.ps1
 
 	Name Root Used (GB) Free (GB)
 	---- ---- --------- ---------

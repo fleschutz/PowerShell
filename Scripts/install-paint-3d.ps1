@@ -4,7 +4,7 @@
 .DESCRIPTION
 	This PowerShell script installs Paint 3D from the Microsoft Store.
 .EXAMPLE
-	PS> ./install-paint-3d
+	PS> ./install-paint-3d.ps1
 .LINK
 	https://github.com/fleschutz/PowerShell
 .NOTES

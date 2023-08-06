@@ -4,7 +4,7 @@
 .DESCRIPTION
 	This PowerShell script queries the time zone and prints it.
 .EXAMPLE
-	PS> ./check-time-zone
+	PS> ./check-time-zone.ps1
 	✅ 11:13 AM W. Europe Summer Time (UTC+01:00) Amsterdam, Berlin, Bern, Rome, Stockholm, Vienna (+01:00 DST)
 .LINK
 	https://github.com/fleschutz/PowerShell

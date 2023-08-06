@@ -4,7 +4,7 @@
 .DESCRIPTION
 	This PowerShell script prints the current moon phase.
 .EXAMPLE
-	PS> ./moon
+	PS> ./moon.ps1
 .LINK
 	https://github.com/fleschutz/PowerShell
 .NOTES

@@ -4,7 +4,12 @@
 .DESCRIPTION
 	This PowerShell script lists all Bluetooth devices connected to the computer.
 .EXAMPLE
-	PS> ./list-bluetooth-devices
+	PS> ./list-bluetooth-devices.ps1
+
+	Status     Class           FriendlyName                                    InstanceId
+	------     -----           ------------                                    ----------
+	OK         Bluetooth       Realtek Bluetooth 5.3 Adapter                   USB\VID_...
+	...
 .LINK
 	https://github.com/fleschutz/PowerShell
 .NOTES

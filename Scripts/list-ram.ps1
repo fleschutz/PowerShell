@@ -4,7 +4,11 @@
 .DESCRIPTION
 	This PowerShell script lists the details of the installed RAM.
 .EXAMPLE
-	PS> ./list-ram
+	PS> ./list-ram.ps1
+
+	__GENUS              : 2
+	__CLASS              : Win32_PhysicalMemory
+	...
 .LINK
 	https://github.com/fleschutz/PowerShell
 .NOTES

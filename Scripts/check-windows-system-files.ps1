@@ -4,7 +4,7 @@
 .DESCRIPTION
 	This PowerShell script checks the validity of the Windows system files. It requires admin rights.
 .EXAMPLE
-	PS> ./check-windows-system-files
+	PS> ./check-windows-system-files.ps1
 	✔️ checked Windows system files
 .LINK
 	https://github.com/fleschutz/PowerShell

@@ -4,7 +4,7 @@
 .DESCRIPTION
 	This PowerShell script lists the installed applications (from Windows Store, or Snap Store).
 .EXAMPLE
-	PS> ./list-apps
+	PS> ./list-apps.ps1
 .LINK
 	https://github.com/fleschutz/PowerShell
 .NOTES

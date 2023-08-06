@@ -4,7 +4,7 @@
 .DESCRIPTION
         This PowerShell script installs Chocolatey onto the local computer (needs admin rights).
 .EXAMPLE
-        PS> ./install-chocolatey
+        PS> ./install-chocolatey.ps1
 .LINK
         https://github.com/fleschutz/PowerShell
 .NOTES

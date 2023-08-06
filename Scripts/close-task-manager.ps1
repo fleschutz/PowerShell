@@ -4,7 +4,7 @@
 .DESCRIPTION
 	This PowerShell script closes the Task Manager application gracefully.
 .EXAMPLE
-	PS> ./close-task-manager
+	PS> ./close-task-manager.ps1
 .LINK
 	https://github.com/fleschutz/PowerShell
 .NOTES

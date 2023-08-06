@@ -5,11 +5,11 @@
 	This PowerShell script queries and lists available software updates for the local machine.
 	Use 'install-updates.ps1' to install the listed updates.
 .EXAMPLE
-	PS> ./list-updates
+	PS> ./list-updates.ps1
 
-	Name                                            Id                                Version       Available        Source
-	-----------------------------------------------------------------------------------------------------------------------
-	Git                                             Git.Git                           2.41.0        2.41.0.2         winget
+	Name                   Id                                Version       Available        Source
+	--------------------------------------------------------------------------------------------------
+	Git                    Git.Git                           2.41.0        2.41.0.2         winget
         ...
 .LINK
 	https://github.com/fleschutz/PowerShell

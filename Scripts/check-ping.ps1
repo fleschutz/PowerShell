@@ -6,7 +6,7 @@
 .PARAMETER hosts
 	Specifies the hosts to check, seperated by commata (default is: amazon.com,bing.com,cnn.com,dropbox.com,facebook.com,github.com,google.com,live.com,twitter.com,youtube.com)
 .EXAMPLE
-	PS> ./check-ping
+	PS> ./check-ping.ps1
 	✅ Ping latency is 29ms average (13ms...109ms, 0 loss)
 .LINK
 	https://github.com/fleschutz/PowerShell

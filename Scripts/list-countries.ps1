@@ -4,7 +4,7 @@
 .DESCRIPTION
 	This PowerShell script lists details of all countries.
 .EXAMPLE
-	PS> ./list-countries
+	PS> ./list-countries.ps1
 .LINK
 	https://github.com/fleschutz/PowerShell
 .NOTES

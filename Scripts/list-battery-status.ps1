@@ -4,7 +4,11 @@
 .DESCRIPTION
 	This PowerShell script lists the battery status.
 .EXAMPLE
-	PS> ./list-battery-status
+	PS> ./list-battery-status.ps1
+
+	PowerLineStatus      : Online
+	BatteryChargeStatus  : NoSystemBattery
+	...
 .LINK
 	https://github.com/fleschutz/PowerShell
 .NOTES

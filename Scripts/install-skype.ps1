@@ -4,7 +4,7 @@
 .DESCRIPTION
 	This PowerShell script installs Skype from the Microsoft Store.
 .EXAMPLE
-	PS> ./install-skype
+	PS> ./install-skype.ps1
 .LINK
 	https://github.com/fleschutz/PowerShell
 .NOTES

@@ -4,7 +4,7 @@
 .DESCRIPTION
 	This PowerShell script lists the user accounts on the local computer.
 .EXAMPLE
-	PS> ./list-user-accounts
+	PS> ./list-user-accounts.ps1
 .LINK
 	https://github.com/fleschutz/PowerShell
 .NOTES

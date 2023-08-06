@@ -4,7 +4,7 @@
 .DESCRIPTION
 	This PowerShell script installs Zoom.
 .EXAMPLE
-	PS> ./install-zoom
+	PS> ./install-zoom.ps1
 .LINK
 	https://github.com/fleschutz/PowerShell
 .NOTES

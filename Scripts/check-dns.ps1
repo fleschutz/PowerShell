@@ -4,7 +4,7 @@
 .DESCRIPTION
 	This PowerShell script measures and prints the DNS resolution speed by using 200 popular domains.
 .EXAMPLE
-	PS> ./check-dns
+	PS> ./check-dns.ps1
 	✅ DNS resolves 156.5 domains per second
 .LINK
 	https://github.com/fleschutz/PowerShell

@@ -8,7 +8,7 @@
 .PARAMETER Days
 	Specifies the number of days
 .EXAMPLE
-	PS> ./list-unused-files C:\ 100
+	PS> ./list-unused-files.ps1 C:\ 100
 .LINK
 	https://github.com/fleschutz/PowerShell
 .NOTES

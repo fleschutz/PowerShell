@@ -4,7 +4,7 @@
 .DESCRIPTION
 	This PowerShell script installs 18 basic Linux snaps.
 .EXAMPLE
-	PS> ./install-basic-snaps
+	PS> ./install-basic-snaps.ps1
 .LINK
 	https://github.com/fleschutz/PowerShell
 .NOTES

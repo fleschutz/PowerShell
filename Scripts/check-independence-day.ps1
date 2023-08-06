@@ -4,7 +4,7 @@
 .DESCRIPTION
 	This PowerShell script checks the time until Indepence Day and replies by text-to-speech (TTS).
 .EXAMPLE
-	PS> ./check-independence-day
+	PS> ./check-independence-day.ps1
 .LINK
 	https://github.com/fleschutz/PowerShell
 .NOTES
