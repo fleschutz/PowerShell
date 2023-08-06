@@ -1,12 +1,12 @@
 ﻿<#
 .SYNOPSIS
-	Speaks text with a Mandarin text-to-speech voice
+	Speaks text in Mandarin 
 .DESCRIPTION
 	This PowerShell script speaks the given text with a Mandarin text-to-speech (TTS) voice.
 .PARAMETER text
 	Specifies the text to speak
 .EXAMPLE
-	PS> ./speak-mandarin "你好"
+	PS> ./speak-mandarin.ps1 "你好"
 .LINK
 	https://github.com/fleschutz/PowerShell
 .NOTES

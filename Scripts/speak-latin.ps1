@@ -6,7 +6,7 @@
 .PARAMETER text
 	Specifies the text to speak
 .EXAMPLE
-	PS> ./speak-latin Salve
+	PS> ./speak-latin.ps1 Salve
 .LINK
 	https://github.com/fleschutz/PowerShell
 .NOTES

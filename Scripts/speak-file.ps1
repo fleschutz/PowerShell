@@ -6,7 +6,7 @@
 .PARAMETER File
 	Specifies the path to the text file
 .EXAMPLE
-	PS> ./speak-file C:\MyFile.txt
+	PS> ./speak-file.ps1 C:\MyFile.txt
 .LINK
 	https://github.com/fleschutz/PowerShell
 .NOTES

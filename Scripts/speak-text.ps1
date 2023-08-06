@@ -6,7 +6,7 @@
 .PARAMETER text
 	Specifies the text to read
 .EXAMPLE
-	PS> ./speak-text "Hello World"
+	PS> ./speak-text.ps1 Hi
 .LINK
 	https://github.com/fleschutz/PowerShell
 .NOTES

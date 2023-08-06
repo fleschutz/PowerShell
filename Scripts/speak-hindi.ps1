@@ -1,12 +1,12 @@
 ﻿<#
 .SYNOPSIS
-	Speaks text with a Hindi text-to-speech voice
+	Speaks text in Hindi 
 .DESCRIPTION
 	This PowerShell script speaks the given text with a Hindi text-to-speech (TTS) voice.
 .PARAMETER text
 	Specifies the text to speak
 .EXAMPLE
-	PS> ./speak-hindi "नमस्ते"
+	PS> ./speak-hindi.ps1 "नमस्ते"
 .LINK
 	https://github.com/fleschutz/PowerShell
 .NOTES

@@ -6,7 +6,7 @@
 .PARAMETER Name
 	Specifies the name of the checklist
 .EXAMPLE
-	PS> ./speak-checklist
+	PS> ./speak-checklist.ps1
 .LINK
 	https://github.com/fleschutz/PowerShell
 .NOTES

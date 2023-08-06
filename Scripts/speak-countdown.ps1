@@ -6,7 +6,7 @@
 .PARAMETER StartNumber
 	Specifies the number to start from (10 by default)
 .EXAMPLE
-	PS> ./speak-countdown 60
+	PS> ./speak-countdown.ps1 60
 .LINK
 	https://github.com/fleschutz/PowerShell
 .NOTES

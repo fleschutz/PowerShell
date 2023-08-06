@@ -6,7 +6,7 @@
 .PARAMETER text
 	Specifies the text to speak
 .EXAMPLE
-	PS> ./speak-english Hi
+	PS> ./speak-english.ps1 Hi
 .LINK
 	https://github.com/fleschutz/PowerShell
 .NOTES
