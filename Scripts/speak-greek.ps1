@@ -4,7 +4,7 @@
 .DESCRIPTION
 	This PowerShell script speaks the given text with a Greek text-to-speech (TTS) voice.
 .PARAMETER text
-	Specifies the text to speak
+	Specifies the Greek text to speak
 .EXAMPLE
 	PS> ./speak-greek.ps1 "γεια"
 .LINK

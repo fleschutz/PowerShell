@@ -4,7 +4,7 @@
 .DESCRIPTION
 	This PowerShell script speaks the given text with a Turkish text-to-speech (TTS) voice.
 .PARAMETER text
-	Specifies the text to speak
+	Specifies the Turkish text to speak
 .EXAMPLE
 	PS> ./speak-turkish.ps1 Merhaba
 .LINK

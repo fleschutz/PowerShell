@@ -4,7 +4,7 @@
 .DESCRIPTION
 	This PowerShell script speaks the given text with a Japanese text-to-speech (TTS) voice.
 .PARAMETER text
-	Specifies the text to speak
+	Specifies the Japanese text to speak
 .EXAMPLE
 	PS> ./speak-japanese.ps1 "ハロー"
 .LINK

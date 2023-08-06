@@ -4,7 +4,7 @@
 .DESCRIPTION
 	This PowerShell script speaks the given text with a Spanish text-to-speech (TTS) voice.
 .PARAMETER text
-	Specifies the text to speak
+	Specifies the Spanish text to speak
 .EXAMPLE
 	PS> ./speak-spanish.ps1 Hola
 .LINK

@@ -4,7 +4,7 @@
 .DESCRIPTION
 	This PowerShell script speaks the given text with an Arabic text-to-speech (TTS) voice.
 .PARAMETER text
-	Specifies the text to speak
+	Specifies the Arabic text to speak
 .EXAMPLE
 	PS> ./speak-arabic.ps1 "أهلاً"
 .LINK

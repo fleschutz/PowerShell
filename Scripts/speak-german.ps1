@@ -4,7 +4,7 @@
 .DESCRIPTION
 	This PowerShell script speaks the given text with a German text-to-speech (TTS) voice.
 .PARAMETER text
-	Specifies the text to speak
+	Specifies the German text to speak
 .EXAMPLE
 	PS> ./speak-german.ps1 Hallo
 .LINK

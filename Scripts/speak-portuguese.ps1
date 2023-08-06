@@ -4,7 +4,7 @@
 .DESCRIPTION
 	This PowerShell script speaks the given text with a Portuguese text-to-speech (TTS) voice.
 .PARAMETER text
-	Specifies the text to speak
+	Specifies the Portuguese text to speak
 .EXAMPLE
 	PS> ./speak-portuguese.ps1 Olá
 .LINK

@@ -4,7 +4,7 @@
 .DESCRIPTION
 	This PowerShell script speaks the given text with a Ukrainian text-to-speech (TTS) voice.
 .PARAMETER text
-	Specifies the text to speak
+	Specifies the Ukranian text to speak
 .EXAMPLE
 	PS> ./speak-ukrainian.ps1 "Привіт"
 .LINK

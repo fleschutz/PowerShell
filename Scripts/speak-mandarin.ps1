@@ -4,7 +4,7 @@
 .DESCRIPTION
 	This PowerShell script speaks the given text with a Mandarin text-to-speech (TTS) voice.
 .PARAMETER text
-	Specifies the text to speak
+	Specifies the Mandarin text to speak
 .EXAMPLE
 	PS> ./speak-mandarin.ps1 "你好"
 .LINK

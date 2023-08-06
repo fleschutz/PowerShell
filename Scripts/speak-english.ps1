@@ -4,7 +4,7 @@
 .DESCRIPTION
 	This PowerShell script speaks the given text with an English text-to-speech (TTS) voice.
 .PARAMETER text
-	Specifies the text to speak
+	Specifies the English text to speak
 .EXAMPLE
 	PS> ./speak-english.ps1 Hi
 .LINK
@@ -16,7 +16,7 @@
 param([string]$text = "")
 
 try {
-	if ("$text" -eq "") { $text = Read-Host "Enter the English text to speak" }
+	if ($text -eq "") { $text = Read-Host "Enter the English text to speak" }
 
 	$TTS = New-Object -ComObject SAPI.SPVoice
 	foreach ($voice in $TTS.GetVoices()) {

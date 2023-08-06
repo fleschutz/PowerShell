@@ -4,7 +4,7 @@
 .DESCRIPTION
 	This PowerShell script speaks the given text with an Italian text-to-speech (TTS) voice.
 .PARAMETER text
-	Specifies the text to speak
+	Specifies the Italian text to speak
 .EXAMPLE
 	PS> ./speak-italian.ps1 Ciao
 .LINK

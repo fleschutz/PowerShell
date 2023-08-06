@@ -4,7 +4,7 @@
 .DESCRIPTION
 	This PowerShell script speaks the given text with a Swedish text-to-speech (TTS) voice.
 .PARAMETER text
-	Specifies the text to speak
+	Specifies the Swedish text to speak
 .EXAMPLE
 	PS> ./speak-swedish.ps1 Hallå
 .LINK

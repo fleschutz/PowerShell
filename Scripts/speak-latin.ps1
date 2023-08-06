@@ -4,7 +4,7 @@
 .DESCRIPTION
 	This PowerShell script speaks the given text with a Latin text-to-speech (TTS) voice.
 .PARAMETER text
-	Specifies the text to speak
+	Specifies the Latin text to speak
 .EXAMPLE
 	PS> ./speak-latin.ps1 Salve
 .LINK
