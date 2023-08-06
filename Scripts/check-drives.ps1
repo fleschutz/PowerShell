@@ -6,8 +6,8 @@
 .PARAMETER MinLevel
 	Specifies the minimum warning level (10 GB by default)
 .EXAMPLE
-	PS> ./check-drives
-	✅ Drive C: with 250GB is 10% full, 225GB free
+	PS> ./check-drives.ps1
+	✅ Drive C: with 250GB at 10%, 225GB free
 .LINK
 	https://github.com/fleschutz/PowerShell
 .NOTES
@@ -51,7 +51,11 @@ try {
 			Write-Host "⚠️ Drive $ID with $(Bytes2String $Total) is nearly full, $(Bytes2String $Free) free"
 		} else {
 			[int]$Percent = ($Used * 100) / $Total
-			Write-Host "✅ Drive $ID with $(Bytes2String $Total) is $Percent% full, $(Bytes2String $Free) free"
+			if ($Percent -gt 90) {
+				Write-Host "✅ Drive $ID with $(Bytes2String $Total) is $Percent% full, $(Bytes2String $Free) free"
+			} else {
+				Write-Host "✅ Drive $ID with $(Bytes2String $Total) at $Percent%, $(Bytes2String $Free) free"
+			}
 		}
 	}
 	exit 0 # success
