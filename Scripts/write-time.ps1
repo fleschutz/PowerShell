@@ -2,9 +2,10 @@
 .SYNOPSIS
 	Writes the current time 
 .DESCRIPTION
-	This PowerShell script determines and writes the current time.
+	This PowerShell script queries the current time and writes it to the console.
 .EXAMPLE
-	PS> ./write-time
+	PS> ./write-time.ps1
+	🕒7:20 PM
 .LINK
 	https://github.com/fleschutz/PowerShell
 .NOTES
