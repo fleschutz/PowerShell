@@ -7,7 +7,7 @@
 	Specifies the minimum warning level (10 GB by default)
 .EXAMPLE
 	PS> ./check-drives
-	✅ Drive C: uses 87GB of 249GB
+	✅ Drive C: with 250GB is 10% full, 225GB free
 .LINK
 	https://github.com/fleschutz/PowerShell
 .NOTES
@@ -48,10 +48,10 @@ try {
 		} elseif ($Free -eq 0) {
 			Write-Host "⚠️ Drive $ID with $(Bytes2String $Total) is 100% full"
 		} elseif ($Free -lt $MinLevel) {
-			Write-Host "⚠️ Drive $ID with $(Bytes2String $Total) is nearly full ($(Bytes2String $Free) free)"
+			Write-Host "⚠️ Drive $ID with $(Bytes2String $Total) is nearly full, $(Bytes2String $Free) free"
 		} else {
 			[int]$Percent = ($Used * 100) / $Total
-			Write-Host "✅ Drive $ID $Percent% full, $(Bytes2String $Free) of $(Bytes2String $Total) free"
+			Write-Host "✅ Drive $ID with $(Bytes2String $Total) is $Percent% full, $(Bytes2String $Free) free"
 		}
 	}
 	exit 0 # success
