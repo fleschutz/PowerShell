@@ -16,17 +16,17 @@
 param([string]$text = "")
 
 try {
-	if ($text -eq "") { $text = read-host "Enter the Dutch text to speak" }
+	if ($text -eq "") { $text = Read-Host "Enter the Dutch text to speak" }
 
 	$TTSVoice = New-Object -ComObject SAPI.SPVoice
-	foreach ($Voice in $TTSVoice.GetVoices()) {
-		if ($Voice.GetDescription() -like "*- Dutch*") { 
-			$TTSVoice.Voice = $Voice
+	foreach ($voice in $TTSVoice.GetVoices()) {
+		if ($voice.GetDescription() -like "*- Dutch*") { 
+			$TTSVoice.Voice = $voice
 			[void]$TTSVoice.Speak($text)
 			exit 0 # success
 		}
 	}
-	throw "No Dutch voice for text-to-speech (TTS) found - please install one"
+	throw "No Dutch text-to-speech voice found - please install one"
 } catch {
 	"⚠️ Error in line $($_.InvocationInfo.ScriptLineNumber): $($Error[0])"
 	exit 1

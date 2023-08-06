@@ -16,7 +16,7 @@
 param([string]$text = "")
 
 try {
-	if ($text -eq "") { $text = read-host "Enter the Greek text to speak" }
+	if ($text -eq "") { $text = Read-Host "Enter the Greek text to speak" }
 
 	$TTS = New-Object -ComObject SAPI.SPVoice
 	foreach ($Voice in $TTS.GetVoices()) {
@@ -26,7 +26,7 @@ try {
 			exit 0 # success
 		}
 	}
-	throw "No Greek voice for text-to-speech (TTS) found - please install one"
+	throw "No Greek text-to-speech voice found - please install one"
 } catch {
 	"⚠️ Error in line $($_.InvocationInfo.ScriptLineNumber): $($Error[0])"
 	exit 1

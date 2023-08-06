@@ -16,7 +16,7 @@
 param([string]$File = "")
 
 try {
-	if ($File -eq "") { $File = read-host "Enter path to text file" }
+	if ($File -eq "") { $File = Read-Host "Enter path to text file" }
 
 	$Text = Get-Content $File
 

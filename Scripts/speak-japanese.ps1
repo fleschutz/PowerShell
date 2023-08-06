@@ -16,17 +16,17 @@
 param([string]$text = "")
 
 try {
-	if ($text -eq "") { $text = read-host "Enter the Japanese text to speak" }
+	if ($text -eq "") { $text = Read-Host "Enter the Japanese text to speak" }
 
 	$TTS = New-Object -ComObject SAPI.SPVoice
-	foreach ($Voice in $TTS.GetVoices()) {
-		if ($Voice.GetDescription() -like "*- Japanese*") { 
-			$TTS.Voice = $Voice
+	foreach ($voice in $TTS.GetVoices()) {
+		if ($voice.GetDescription() -like "*- Japanese*") { 
+			$TTS.Voice = $voice
 			[void]$TTS.Speak($text)
 			exit 0 # success
 		}
 	}
-	throw "No Japanese voice for text-to-speech (TTS) found - please install one"
+	throw "No Japanese text-to-speech voice found - please install one"
 } catch {
 	"⚠️ Error in line $($_.InvocationInfo.ScriptLineNumber): $($Error[0])"
 	exit 1

@@ -2,7 +2,7 @@
 .SYNOPSIS
 	Speaks text in English
 .DESCRIPTION
-	This PowerShell scripts speaks the given text with an English text-to-speech (TTS) voice.
+	This PowerShell script speaks the given text with an English text-to-speech (TTS) voice.
 .PARAMETER text
 	Specifies the text to speak
 .EXAMPLE
@@ -26,7 +26,7 @@ try {
 			exit 0 # success
 		}
 	}
-	throw "No English voice for text-to-speech (TTS) found - please install one."
+	throw "No English text-to-speech voice found - please install one."
 } catch {
 	"⚠️ Error in line $($_.InvocationInfo.ScriptLineNumber): $($Error[0])"
 	exit 1
