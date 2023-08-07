@@ -243,7 +243,7 @@ ECP,Entry Control Point
 EFM,Gesellschaft für Enteisen und Flugzeugschleppen
 ELEV,Field Elevation
 ELT,Emergency Locator Transmitter
-EOL,Engine-off landings
+EOL,Engine-off landing
 ERPM,Engine Rotations per Minute
 ETA,"Estimated Time of Arrival, East Transition Area"
 ETL,Effective Translational Lift (for helicopters)
@@ -411,7 +411,7 @@ SATNAV,Satellite Navigation
 SATSE,State Air Traffic Services Enterprise
 SCN,Secondary Crash Net
 SDD,Situation Data Display
-SEOL,Simulated engine-off landings
+SEOL,Simulated engine-off landing
 SELCAL,Selective Calling System
 SES,Single European Sky
 SESAME,Single European Sky ATM Master Plan
