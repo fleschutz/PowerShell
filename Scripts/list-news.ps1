@@ -30,13 +30,6 @@ try {
 	}
 	$Source = $Content.rss.channel.title
 	$Date = $Content.rss.channel.pubDate
-	$Date = $Date -Replace "Mon, ",""
-	$Date = $Date -Replace "Tue, ",""
-	$Date = $Date -Replace "Wed, ",""
-	$Date = $Date -Replace "Thu, ",""
-	$Date = $Date -Replace "Fri, ",""
-	$Date = $Date -Replace "Sat, ",""
-	$Date = $Date -Replace "Sun, ",""
 	"(by $Source as of $Date)"
 	exit 0 # success
 } catch {

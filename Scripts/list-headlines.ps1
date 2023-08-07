@@ -23,7 +23,7 @@ try {
 	[xml]$Content = (Invoke-WebRequest -uri $RSS_URL -useBasicParsing).Content
 	[int]$Count = 0
 	foreach ($item in $Content.rss.channel.item) {
-		"❇ $($item.title)"
+		"❇️ $($item.title)"
 		$Count++
 		if ($Count -eq $MaxCount) { break }
 	}
