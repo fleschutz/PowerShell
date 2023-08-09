@@ -27,12 +27,12 @@ PowerShell FAQ
  $ snap install PowerShell
  $ ln -s /snap/bin/pwsh /usr/bin/pwsh
 ```
-2 Otherwise visit https://github.com/PowerShell/PowerShell for installation.
+2 Otherwise visit: https://github.com/PowerShell/PowerShell for installation.
 </details>
 
 <details><summary>How to install PowerShell on MacOS?</summary>
 
-Visit https://github.com/PowerShell/PowerShell for installation.
+Visit: https://github.com/PowerShell/PowerShell for installation.
 </details>
 
 <details><summary>How to install PowerShell on Windows?</summary>
