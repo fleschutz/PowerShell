@@ -50,7 +50,7 @@ NOTE: the group policy object (GPO) settings of your organization might disallow
 2. **Otherwise,** download and unzip it from: https://github.com/fleschutz/PowerShell/archive/master.zip
 </details>
 
-<details><summary>How to execute PowerShell scripts in Windows?</summary>
+<details><summary>How to execute PowerShell scripts on Windows?</summary>
 
 1. In the Windows desktop: right-click the script and select: *Execute with PowerShell*
 2. In a command-line interface (CLI, e.g. *Windows Terminal*, either local or remote via SSH) by typing: `./<FILENAME_OF_SCRIPT>`.
