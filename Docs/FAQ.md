@@ -46,8 +46,8 @@ NOTE: the group policy object (GPO) settings of your organization might disallow
 
 <details><summary>How to get this PowerShell script collection?</summary>
  
-* When using **Git**, execute in a terminal window: `> git clone https://github.com/fleschutz/PowerShell`
-* **Otherwise,** download and unzip it from: https://github.com/fleschutz/PowerShell/archive/master.zip
+1. When using **Git**, execute in a terminal window: `> git clone https://github.com/fleschutz/PowerShell`
+2. **Otherwise,** download and unzip it from: https://github.com/fleschutz/PowerShell/archive/master.zip
 </details>
 
 <details><summary>How to execute PowerShell scripts in Windows?</summary>
