@@ -75,9 +75,9 @@ NOTE: the group policy object (GPO) settings of your organization might disallow
 
  <details><summary>What about security?</summary>
 
-* Execute scripts only that you trust (and/or where you have checked the code before)!
-* Prefer SSH Remoting instead of PowerShell Remoting
-* More recommendations by NSA and cyber security centers in the U.S. (CISA), New Zealand (NZ NCSC), and the U.K. (NCSC-UK) can be found here: https://media.defense.gov/2022/Jun/22/2003021689/-1/-1/1/CSI_KEEPING_POWERSHELL_SECURITY_MEASURES_TO_USE_AND_EMBRACE_20220622.PDF
+1. Execute scripts only that you trust (and/or where you have checked the code before)!
+2. Prefer SSH Remoting instead of PowerShell Remoting
+3. More recommendations by NSA and cyber security centers in the U.S. (CISA), New Zealand (NZ NCSC), and the U.K. (NCSC-UK) can be found here: https://media.defense.gov/2022/Jun/22/2003021689/-1/-1/1/CSI_KEEPING_POWERSHELL_SECURITY_MEASURES_TO_USE_AND_EMBRACE_20220622.PDF
  </details>
 
 <details><summary>Why do some scripts show gibberish characters?</summary>
