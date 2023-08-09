@@ -57,16 +57,19 @@ NOTE: the group policy object (GPO) settings of your organization might disallow
 3. By connecting a context menu item with a script.
 4. By voice control, e.g. see repo [talk2windows](https://github.com/fleschutz/talk2windows) for more information.
 5. By using automation software, e.g. [Jenkins](https://www.jenkins.io).
-6. Automatically on login (see AutoStart folder)/logoff/daily/etc.
  </details>
  
 <details><summary>How to execute PowerShell scripts in Windows context menus?</summary>
    
-* to enable "right-click > New > Windows PowerShell Script" execute `Add_ps1_to_New_context_menu.reg` in subfolder [Data/](../Data)
- 
-* to disable this execute `Remove_ps1_from_New_context_menu.reg` in subfolder [Data/](../Data)
+* To enable "right-click > New > Windows PowerShell Script" execute `Add_ps1_to_New_context_menu.reg` in subfolder [Data/](../Data)
+* To disable this execute `Remove_ps1_from_New_context_menu.reg` in subfolder [Data/](../Data)
 </details>
 
+<details><summary>How to execute PowerShell scripts automatically on login in Windows?</summary>
+
+1. Open the File Explorer with your Autostart folder (usually at: C:\Users\<YOUR_NAME>\AppData\Roaming\Microsoft\Windows\Start Menu\Programs\Startup).
+2. Copy the script (or a link to it) into this folder.
+</details>
  
 <details><summary>How to execute PowerShell scripts in Jenkins?</summary>
  
