@@ -67,7 +67,7 @@ NOTE: the group policy object (GPO) settings of your organization might disallow
 
 <details><summary>How to execute PowerShell scripts automatically on login in Windows?</summary>
 
-1. Open the File Explorer with your Autostart folder (usually at: C:\Users\<YOUR_NAME>\AppData\Roaming\Microsoft\Windows\Start Menu\Programs\Startup).
+1. Open the File Explorer with your Autostart folder (usually at: C:\Users\YOUR_USERNAME\AppData\Roaming\Microsoft\Windows\Start Menu\Programs\Startup).
 2. Copy the script (or a link to it) into this folder.
 </details>
  
