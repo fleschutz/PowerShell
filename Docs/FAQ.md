@@ -20,20 +20,28 @@ PowerShell FAQ
 ✔️ **It's fully documented** - see the PowerShell documentation at: https://docs.microsoft.com/en-us/powershell/
 </details>
 
-<details><summary>How to install PowerShell?</summary>
-
-▶️ **On Windows** it's preinstalled, **but** the script execution policy is *restricted* (forbidden) by default! To change this: open the *Windows PowerShell (Administrator)* console and enter:
-```
- PS> Set-ExecutionPolicy -ExecutionPolicy Bypass -Scope CurrentUser
-```
-NOTE: the group policy object (GPO) settings of your organization might disallow changes. In that case contact your system administrator for help.
-   
-▶️ **On Linux with Snap support** just execute:
+<details><summary>How to install PowerShell on Linux?</summary>
+ 
+1. On Linux with Snap support just execute:
 ```
  $ snap install PowerShell
  $ ln -s /snap/bin/pwsh /usr/bin/pwsh
 ```
-▶️ **Otherwise on Linux or macOS** visit https://github.com/PowerShell/PowerShell for installation.
+2 Otherwise visit https://github.com/PowerShell/PowerShell for installation.
+</details>
+
+<details><summary>How to install PowerShell on MacOS?</summary>
+
+Visit https://github.com/PowerShell/PowerShell for installation.
+</details>
+
+<details><summary>How to install PowerShell on Windows?</summary>
+
+Good news: it's preinstalled, **but** the script execution policy is *restricted* (forbidden) by default! To change this: open the *Windows PowerShell (Administrator)* console and enter:
+```
+ PS> Set-ExecutionPolicy -ExecutionPolicy Bypass -Scope CurrentUser
+```
+NOTE: the group policy object (GPO) settings of your organization might disallow changes. In that case contact your system administrator for help.
 </details>
 
 <details><summary>How to get the PowerShell scripts?</summary>
