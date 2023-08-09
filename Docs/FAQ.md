@@ -73,7 +73,8 @@ NOTE: the group policy object (GPO) settings of your organization might disallow
  
 <details><summary>How to execute PowerShell scripts in Jenkins?</summary>
  
-**Install the 'PowerShell plugin' in Jenkins, it allows to invoke PowerShell as build scripts. It uses PowerShell.exe on Windows and pwsh on Linux.**
+1. Install the Jenkins plugin **PowerShell plugin** (it uses PowerShell.exe on Windows and pwsh on Linux).**
+2. Add or reference your PowerShell scripts in the Jenkins jobs or in your Jenkinsfiles.
 </details>
 
  <details><summary>What about security?</summary>
