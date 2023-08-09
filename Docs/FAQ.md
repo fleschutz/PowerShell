@@ -28,13 +28,12 @@ PowerShell FAQ
 ```
 NOTE: the group policy object (GPO) settings of your organization might disallow changes. In that case contact your system administrator for help.
    
-▶️ **On CentOS, Debian, Docker, Fedora, macOS, openSUSE, Red Hat, Ubuntu** visit https://github.com/PowerShell/PowerShell for installation.
-
-▶️ **On Linux supporting Snaps** execute:
+▶️ **On Linux with Snap support** just execute:
 ```
  $ snap install PowerShell
  $ ln -s /snap/bin/pwsh /usr/bin/pwsh
 ```
+▶️ **Otherwise on Linux or macOS** visit https://github.com/PowerShell/PowerShell for installation.
 </details>
 
 <details><summary>How to get the PowerShell scripts?</summary>
