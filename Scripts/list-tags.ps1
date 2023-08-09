@@ -1,8 +1,8 @@
 ﻿<#
 .SYNOPSIS
-	Lists all tags in a Git repository
+	Lists all tags in a repository
 .DESCRIPTION
-	This PowerShell script lists all tags in a Git repository.
+	This PowerShell script fetches and lists all tags in a Git repository.
 .PARAMETER RepoDir
 	Specifies the path to the Git repository (current working directory by default)
 .PARAMETER SearchPattern
@@ -27,20 +27,18 @@ try {
 	$Null = (git --version)
 	if ($lastExitCode -ne "0") { throw "Can't execute 'git' - make sure Git is installed and available" }
 
-	Write-Progress "⏳ (2/3) Checking folder... "
+	Write-Progress "⏳ (2/3) Checking local repository... "
 	if (-not(Test-Path "$RepoDir" -pathType container)) { throw "Can't access directory: $RepoDir" }
 
 	Write-Progress "⏳ (3/3) Fetching latest tags..."
-	& git -C "$RepoDir" fetch --all --tags --quiet
-	if ($lastExitCode -ne "0") { throw "'git fetch --all --tags' failed" }
-
-	Write-Progress -completed "Fetched" 
-	""
+	& git -C "$RepoDir" fetch --tags
+	if ($lastExitCode -ne "0") { throw "'git fetch --tags' failed" }
+	Write-Progress -completed "."
+ 	""
 	"Tag             Description"
 	"---             -----------"
 	& git -C "$RepoDir" tag --list "$SearchPattern" -n
 	if ($lastExitCode -ne "0") { throw "'git tag --list' failed" }
-
 	exit 0 # success
 } catch {
 	"⚠️ Error in line $($_.InvocationInfo.ScriptLineNumber): $($Error[0])"
