@@ -44,7 +44,7 @@ Good news: it's preinstalled, **but** the script execution policy is *restricted
 NOTE: the group policy object (GPO) settings of your organization might disallow changes. In that case contact your system administrator for help.
 </details>
 
-<details><summary>How to get the PowerShell scripts?</summary>
+<details><summary>How to get this PowerShell script collection?</summary>
  
 * When using **Git**, execute in a terminal window: `> git clone https://github.com/fleschutz/PowerShell`
 * **Otherwise,** download and unzip it from: https://github.com/fleschutz/PowerShell/archive/master.zip
