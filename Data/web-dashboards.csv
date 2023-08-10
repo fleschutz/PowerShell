@@ -1,20 +1,20 @@
-NAME,                         URL
-"Toggl Track",                "https://track.toggl.com/timer"
-"Google Calendar",            "https://calendar.google.com/calendar/u/0/r/agenda"
-"Google Mail",                "https://mail.google.com/"
-"Google Keep",                "https://keep.google.com/"
-"Google Photos",              "https://photos.google.com/"
-"Google News",                "https://news.google.com"
-"Outlook Mail",               "https://outlook.office.com/mail/"
-"CNN News",                   "https://edition.cnn.com"
-"GitHub Explore",             "https://github.com/explore"
-"FlightRadar24",              "https://www.flightradar24.com/27.63,-6.98/3"
-"Earthquake Watch",           "https://www.arcgis.com/apps/dashboards/c8af9c5411814584b460cc87cb7c3780"
-"Live Cyber Threat Map",      "https://threatmap.checkpoint.com"
-"Netflix Top 10",             "https://www.netflix.com/tudum/top10/"
-"YouTube Music Charts",       "https://charts.youtube.com/"
-"Webcams",                    "https://www.foto-webcam.eu"
-"Peak Zugspitze",             "https://zugspitze.panomax.com"
-"Airport Salzburg",           "https://livecam.salzburg-airport.com"
-"Windy Weather Radar",        "https://www.windy.com/de/-Weather-radar-radar"
-"Windy Weather Temperatures", "https://www.windy.com/-Temperature-temp"
+NAME,                         URL,
+"Toggl Track",                "https://track.toggl.com/timer",
+"Google Calendar",            "https://calendar.google.com/calendar/u/0/r/agenda",
+"Google Mail",                "https://mail.google.com/",
+"Google Keep",                "https://keep.google.com/",
+"Google Photos",              "https://photos.google.com/",
+"Google News",                "https://news.google.com",
+"Outlook Mail",               "https://outlook.office.com/mail/",
+"CNN News",                   "https://edition.cnn.com",
+"GitHub Explore",             "https://github.com/explore",
+"FlightRadar24",              "https://www.flightradar24.com/27.63,-6.98/3",
+"Earthquake Watch",           "https://www.arcgis.com/apps/dashboards/c8af9c5411814584b460cc87cb7c3780",
+"Live Cyber Threat Map",      "https://threatmap.checkpoint.com",
+"Netflix Top 10",             "https://www.netflix.com/tudum/top10/",
+"YouTube Music Charts",       "https://charts.youtube.com/",
+"Webcams",                    "https://www.foto-webcam.eu",
+"Peak Zugspitze",             "https://zugspitze.panomax.com",
+"Airport Salzburg",           "https://livecam.salzburg-airport.com",
+"Windy Weather Radar",        "https://www.windy.com/de/-Weather-radar-radar",
+"Windy Weather Temperatures", "https://www.windy.com/-Temperature-temp",
