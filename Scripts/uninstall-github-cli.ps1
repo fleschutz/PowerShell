@@ -17,7 +17,13 @@ try {
 	"⏳ Uninstalling GitHub CLI..."
 	$StopWatch = [system.diagnostics.stopwatch]::startNew()
 
-	& winget uninstall --id GitHub.cli
+	if ($IsMacOS) {
+		& brew uninstall gh
+	} elseif ($IsLinux) {
+		& sudo apt remote gh
+	} else {
+		& winget uninstall --id GitHub.cli
+	}
 	if ($lastExitCode -ne "0") { throw "Can't uninstall GitHub CLI, is it installed?" }
 
 	[int]$Elapsed = $StopWatch.Elapsed.TotalSeconds
