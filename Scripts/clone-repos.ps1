@@ -8,7 +8,7 @@
 .EXAMPLE
 	PS> ./clone-repos C:\Repos
 	⏳ (1) Searching for Git executable...          git version 2.41.0.windows.3
-	⏳ (2) Loading Data/popular-git-repos.csv...    28 repos
+	⏳ (2) Reading Data/popular-repositories.csv... 28 repos
 	⏳ (3) Checking target folder...                📂repos
 	⏳ (4/32) Cloning into 📂base256unicode (dev tool)...
 	...
@@ -27,8 +27,8 @@ try {
 	& git --version
 	if ($lastExitCode -ne "0") { throw "Can't execute 'git' - make sure Git is installed and available" }
 
-	Write-Host "⏳ (2) Loading Data/popular-git-repos.csv...    " -noNewline
-	$Table = Import-CSV "$PSScriptRoot/../Data/popular-git-repos.csv"
+	Write-Host "⏳ (2) Reading Data/popular-repositories.csv... " -noNewline
+	$Table = Import-CSV "$PSScriptRoot/../Data/popular-repositories.csv"
 	$NumEntries = $Table.count
 	Write-Host "$NumEntries repos"
 
@@ -43,7 +43,7 @@ try {
 		[string]$FolderName = $Row.FOLDERNAME
 		[string]$Category = $Row.CATEGORY
 		[string]$Branch = $Row.BRANCH
-		[string]$Full = $Row.FULL
+		[string]$Shallow = $Row.SHALLOW
 		[string]$URL = $Row.URL
 		$Step++
 
@@ -52,13 +52,13 @@ try {
 			$Skipped++
 			continue
 		}
-		if ($Full -eq "yes") {
-			"⏳ ($Step/$($NumEntries + 4)) Cloning into 📂$FolderName ($Category) - $Branch branch with full history..."
-			& git clone --branch "$Branch" --recurse-submodules "$URL" "$TargetDir/$FolderName"
-			if ($lastExitCode -ne "0") { throw "'git clone --branch $Branch $URL' failed with exit code $lastExitCode" }
-		} else {
+		if ($Shallow -eq "yes") {
 			"⏳ ($Step/$($NumEntries + 4)) Cloning into 📂$FolderName ($Category) - $Branch branch only..."
 			& git clone --branch "$Branch" --single-branch --recurse-submodules "$URL" "$TargetDir/$FolderName"
+			if ($lastExitCode -ne "0") { throw "'git clone --branch $Branch $URL' failed with exit code $lastExitCode" }
+		} else {
+			"⏳ ($Step/$($NumEntries + 4)) Cloning into 📂$FolderName ($Category) - $Branch branch with full history..."
+			& git clone --branch "$Branch" --recurse-submodules "$URL" "$TargetDir/$FolderName"
 			if ($lastExitCode -ne "0") { throw "'git clone --branch $Branch $URL' failed with exit code $lastExitCode" }
 		}
 		$Cloned++
