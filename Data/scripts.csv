@@ -270,7 +270,7 @@ turn-volume-down.ps1, Turns the audio volume down (-10% by default)
 unmute-audio.ps1, Unmutes audio
 upgrade-ubuntu.ps1, Upgrades Ubuntu Linux to the latest (LTS) release 
 upload-file.ps1, Uploads the local file to the given FTP server
-wakeup.ps1, Sends a magic packet to the given computer, waking him up
+wakeup.ps1,"Sends a magic packet to the given computer, waking him up"
 weather.ps1, Prints the current weather forecast
 weather-report.ps1, Prints the local weather report
 what-is.ps1, Prints a description of the given abbreviation
