@@ -1,4 +1,6 @@
-﻿class BucketSort {
+﻿param([int]$numIntegers = 1000)
+
+class BucketSort {
     static Sort($targetList) {
 
         $max = $targetList[0]
@@ -34,7 +36,7 @@
 }
 
 $stopWatch = [system.diagnostics.stopwatch]::startNew()
-$list = (1..1000 | %{Get-Random -Minimum 1 -Maximum 1000})
+$list = (1..$numIntegers | %{Get-Random -Minimum 1 -Maximum 1000})
 [BucketSort]::Sort($list)
 [float]$Elapsed = $StopWatch.Elapsed.TotalSeconds
-"🕒 BucketSort of 1000 integers took $Elapsed sec"
+"🕒 BucketSort of $numIntegers integers took $Elapsed sec"
