@@ -16,8 +16,9 @@ class BubbleSort {
     }
 }
 
+$list = (1..$NumIntegers | foreach{Get-Random -minimum 1 -maximum $numIntegers})
 $stopWatch = [system.diagnostics.stopwatch]::startNew()
-$list = (1..$NumIntegers | %{Get-Random -Minimum 1 -Maximum 1000})
 [BubbleSort]::Sort($list)
-[float]$Elapsed = $StopWatch.Elapsed.TotalSeconds
-"🕒 BubbleSort of $NumIntegers integers took $Elapsed sec"
+[float]$elapsed = $stopWatch.Elapsed.TotalSeconds
+"🕒 BubbleSort of $numIntegers integers took $elapsed sec"
+exit 0 # success

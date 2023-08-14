@@ -25,8 +25,9 @@ class QuickSort {
     }
 }
 
+$list = (1..$numIntegers | foreach{Get-Random -minimum 1 -maximum $numIntegers})
 $stopWatch = [system.diagnostics.stopwatch]::startNew()
-$list = (1..$numIntegers | ForEach{Get-Random -Minimum 1 -Maximum 1000})
 [QuickSort]::Sort($list, 0, $list.Count-1)
-[float]$Elapsed = $StopWatch.Elapsed.TotalSeconds
-"🕒 QuickSort of $numIntegers integers took $Elapsed sec"
+[float]$elapsed = $stopWatch.Elapsed.TotalSeconds
+"🕒 QuickSort of $numIntegers integers took $elapsed sec"
+exit 0 # success

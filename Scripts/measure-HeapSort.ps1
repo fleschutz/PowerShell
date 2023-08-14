@@ -44,8 +44,9 @@ class HeapSort {
     }
 }
 
+$list = (1..$numIntegers | foreach{Get-Random -minimum 1 -maximum $numIntegers})
 $stopWatch = [system.diagnostics.stopwatch]::startNew()
-$list = (1..$numIntegers | %{Get-Random -Minimum 1 -Maximum 1000})
 [HeapSort]::Sort($list)
-[float]$Elapsed = $StopWatch.Elapsed.TotalSeconds
-"🕒 HeapSort of $numIntegers integers took $Elapsed sec"
+[float]$elapsed = $stopWatch.Elapsed.TotalSeconds
+"🕒 HeapSort of $numIntegers integers took $elapsed sec"
+exit 0 # success
