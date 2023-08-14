@@ -5,7 +5,7 @@
 	This PowerShell script lists the latest RSS feed news.
 .PARAMETER RSS_URL
 	Specifies the URL to the RSS feed
-.PARAMETER MaxCount
+.PARAMETER maxCount
 	Specifies the number of news to list
 .EXAMPLE
 	PS> ./list-headlines.ps1
@@ -17,19 +17,19 @@
 	Author: Markus Fleschutz | License: CC0
 #>
 
-param([string]$RSS_URL = "https://yahoo.com/news/rss/world", [int]$MaxCount = 20)
+param([string]$RSS_URL = "https://yahoo.com/news/rss/world", [int]$maxCount = 20)
 
 try {
-	[xml]$Content = (Invoke-WebRequest -uri $RSS_URL -useBasicParsing).Content
-	[int]$Count = 0
-	foreach ($item in $Content.rss.channel.item) {
+	[xml]$content = (Invoke-WebRequest -uri $RSS_URL -useBasicParsing).Content
+	[int]$count = 0
+	foreach ($item in $content.rss.channel.item) {
 		"❇️ $($item.title)"
-		$Count++
-		if ($Count -eq $MaxCount) { break }
+		$count++
+		if ($count -eq $maxCount) { break }
 	}
-        $Source = $Content.rss.channel.title
-        $Date = $Content.rss.channel.pubDate
-	"(by $Source as of $Date)"
+        $source = $Content.rss.channel.title
+        $date = $Content.rss.channel.pubDate
+	"   (by $source as of $date)"
 	exit 0 # success
 } catch {
 	"⚠️ Error in line $($_.InvocationInfo.ScriptLineNumber): $($Error[0])"
