@@ -5,9 +5,9 @@
 	This PowerShell script lists the latest news by using RSS (Really Simple Syndication) feeds.
 .PARAMETER RSS_URL
 	Specifies the URL to the RSS feed (Yahoo News by default)
-.PARAMETER MaxLines
+.PARAMETER maxLines
 	Specifies the maximum number of lines to list (24 by default)
-.PARAMETER Speed
+.PARAMETER speed
         Specifies the speed to write the text (10 ms by default)
 .EXAMPLE
 	PS> ./list-news.ps1
@@ -19,18 +19,18 @@
 	Author: Markus Fleschutz | License: CC0
 #>
 
-param([string]$RSS_URL = "https://yahoo.com/news/rss/world", [int]$MaxLines = 24, [int]$Speed = 10)
+param([string]$RSS_URL = "https://yahoo.com/news/rss/world", [int]$maxLines = 24, [int]$speed = 10)
 
 try {
-	[xml]$Content = (Invoke-WebRequest -URI $RSS_URL -useBasicParsing).Content
-	[int]$Count = 1
-	foreach ($Item in $Content.rss.channel.item) {
-		& "$PSScriptRoot/write-typewriter.ps1" "❇️ $($Item.title)" $Speed
-		if ($Count++ -eq $MaxLines) { break }
+	[xml]$content = (Invoke-WebRequest -URI $RSS_URL -useBasicParsing).Content
+	[int]$count = 1
+	foreach ($item in $content.rss.channel.item) {
+		& "$PSScriptRoot/write-typewriter.ps1" "❇️ $($item.title)" $speed
+		if ($count++ -eq $maxLines) { break }
 	}
-	$Source = $Content.rss.channel.title
-	$Date = $Content.rss.channel.pubDate
-	"(by $Source as of $Date)"
+	$source = $Content.rss.channel.title
+	$date = $Content.rss.channel.pubDate
+	"   (by $source as of $date)"
 	exit 0 # success
 } catch {
 	"⚠️ Error in line $($_.InvocationInfo.ScriptLineNumber): $($Error[0])"
