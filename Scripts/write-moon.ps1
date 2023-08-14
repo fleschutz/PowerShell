@@ -1,10 +1,10 @@
 ﻿<#
 .SYNOPSIS
-	Prints the current moon phase
+	Writes the moon phase
 .DESCRIPTION
-	This PowerShell script prints the current moon phase.
+	This PowerShell script writes the current moon phase to the console.
 .EXAMPLE
-	PS> ./moon.ps1
+	PS> ./write-moon.ps1
 .LINK
 	https://github.com/fleschutz/PowerShell
 .NOTES
