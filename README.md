@@ -32,8 +32,8 @@ Mega Collection of PowerShell Scripts
 | [speak-spanish.ps1](Scripts/speak-spanish.ps1)       | Speaks text with a Spanish text-to-speech voice. [Read more...](Docs/speak-spanish.md)          |
 | [speak-test.ps1](Scripts/speak-test.ps1)             | Performs a speak test by text-to-speech. [Read more...](Docs/speak-test.md)                     |
 | [speak-text.ps1](Scripts/speak-text.ps1)             | Speaks the given text by text-to-speech. [Read more...](Docs/speak-text.md)                     |
-| [tell-joke.ps1](Scripts/tell-joke.ps1)               | Tells a joke by text-to-speech. [Read more...](Docs/tell-joke.md)                               |
-| [tell-quote.ps1](Scripts/tell-quote.ps1)             | Tells a quote by text-to-speech. [Read more...](Docs/tell-quote.md)                             |
+| [tell-joke.ps1](Scripts/tell-joke.ps1)               | Tells a random joke by text-to-speech. [Read more...](Docs/tell-joke.md)                        |
+| [tell-quote.ps1](Scripts/tell-quote.ps1)             | Tells a random quote by text-to-speech. [Read more...](Docs/tell-quote.md)                      |
 | [turn-volume-down.ps1](Scripts/turn-volume-down.ps1) | Turns the audio volume down. [Read more...](Docs/turn-volume-down.md)                           |
 | [turn-volume-fully-up.ps1](Scripts/turn-volume-fully-up.ps1) | Turns the audio volume fully up. [Read more...](Docs/turn-volume-fully-up.md)           |
 | [turn-volume-off.ps1](Scripts/turn-volume-off.ps1)   | Turns audio off. [Read more...](Docs/turn-volume-off-audio.md)                                  |
