@@ -45,7 +45,7 @@ try {
 		if ($total -eq 0) {
 			Write-Host "✅ Drive $name is empty"
 		} elseif ($free -eq 0) {
-			Write-Host "⚠️ Drive $name with $(Bytes2String $total) is 100% full"
+			Write-Host "⚠️ Drive $name with $(Bytes2String $total) is full"
 		} elseif ($free -lt $minLevel) {
 			Write-Host "⚠️ Drive $name with $(Bytes2String $total) is nearly full, $(Bytes2String $free) free"
 		} else {
