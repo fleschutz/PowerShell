@@ -1,11 +1,11 @@
 
 try {
-	"⏳ Installing Octoprint (latest stable version)..."
+	"⏳ Installing OctoPrint (snap 'octoprint-sdev', latest stable version)..."
 
-	& sudo snap install octoprint-sdev
-	if ($lastExitCode -ne "0") { throw "Can't install Octoprint, is it already installed?" }
+	& sudo snap install octoprint-sdev --beta 
+	if ($lastExitCode -ne "0") { throw "Can't install OctoPrint, is it already installed?" }
 
-	"NOTE: Octoprint's web interface can be reached at http://<HOSTNAME>:5000"
+	"HINT: Access Octoprint's web login at: http://<HOSTNAME>:5000"
 	exit 0 # success
 } catch {
         "⚠️ Error in line $($_.InvocationInfo.ScriptLineNumber): $($Error[0])"
