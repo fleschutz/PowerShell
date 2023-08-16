@@ -14,8 +14,11 @@
 
 try {
 	if ($IsLinux) {
-		$NumSnaps = (snap list).Count - 1
-		Write-Host "✅ $($NumSnaps) snaps installed"
+		Write-Progress "⏳ Querying installed applications..."
+		$numPkgs = (apt list --installed 2>/dev/null).Count
+		$numSnaps = (snap list).Count - 1
+		Write-Progress -Completed "."
+		Write-Host "✅ $numPkgs Debian packages, $numSnaps snaps installed"
 	} else {
 		Write-Progress "⏳ Querying installed applications..."
 		$Apps = Get-AppxPackage
