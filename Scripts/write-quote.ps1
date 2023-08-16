@@ -1,10 +1,12 @@
 ﻿<#
 .SYNOPSIS
-	Writes a quote to the console
+	Writes a quote
 .DESCRIPTION
-	This PowerShell script writes a random quote to the console.
+	This PowerShell script selects a random quote and prints it to the console.
 .EXAMPLE
-	PS> ./write-quote
+	PS> ./write-quote.ps1
+	“ We must become the change we want to see. „
+	                           - MAHATMA GANDHI
 .LINK
 	https://github.com/fleschutz/PowerShell
 .NOTES
@@ -12,18 +14,16 @@
 #>
 
 try {
-	$Table = Import-CSV "$PSScriptRoot/../Data/quotes.csv"
+	$table = Import-CSV "$PSScriptRoot/../Data/quotes.csv"
 
-	$Generator = New-Object System.Random
-	$Index = [int]$Generator.next(0, $Table.Count - 1)
-	$Quote = $Table[$Index].QUOTE
-	$Author = $Table[$Index].AUTHOR
+	$randomNumberGenerator = New-Object System.Random
+	$row = [int]$randomNumberGenerator.next(0, $table.Count - 1)
+	$quote = $table[$row].QUOTE
+	$author = $table[$row].AUTHOR.toUpper()
+	$spaces = "                                                                                                                             "
+	$spaces = $spaces.Substring(0, $quote.Length - $author.Length)
 
-	Write-Output ""
-	Write-Host '“'"$Quote"'„'
-	$Spaces = "                                                                                       "
-	$Spaces = $Spaces.Substring(0, $Quote.Length - $Author.Length)
-	Write-Output "$Spaces- $($Author.toUpper())"	
+	Write-Host "`n"'“'"$quote"'„'"`n$spaces- $author"
 	exit 0 # success
 } catch {
 	"⚠️ Error in line $($_.InvocationInfo.ScriptLineNumber): $($Error[0])"
