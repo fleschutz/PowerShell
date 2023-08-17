@@ -141,6 +141,7 @@ ASDE,Airport Surface Detection Equipment
 ASDE-X,"Airport Surface Detection Equipment, model X"
 ASOS,Automated Surface Observation System
 ASR,Airport Surveillance Radar
+ASTERIX,All Purpose Structured Eurocontrol Surveillance Information Exchange
 ATA,Actual Time of Arrival
 ATC,Air Traffic Control
 ATCALS,Air Traffic Control and Landing Systems
@@ -149,7 +150,7 @@ ATIS,Automatic Terminal Information Service
 ATM,Air Traffic Manager
 ATO,Air Traffic Organization
 ATPL,Airline Transport Pilot License
-AURO,Autorotation of helicopters
+AURO,Autorotation (by helicopters)
 AWACS,Airborne Warning And Control System
 BC,Back Course
 BAF,Belgian Air Force
