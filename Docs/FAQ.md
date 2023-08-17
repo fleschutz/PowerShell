@@ -80,7 +80,7 @@ NOTE: the group policy object (GPO) settings of your organization might disallow
 <details><summary>How to learn PowerShell?</summary>
 
 * Please find tutorials at: https://www.guru99.com/powershell-tutorial.html
-* And a PowerShell cheat sheet at: [cheat-sheet.md](cheat-sheet.md)
+* And a PowerShell cheat sheet at: [PowerShell/Docs/cheat-sheet.md](cheat-sheet.md)
 * The official PowerShell documentation is at: https://docs.microsoft.com/en-us/powershell/
 </details>
 

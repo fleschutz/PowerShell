@@ -21,7 +21,7 @@ Ctrl+left/right : Navigate a word at a time
 Tab / Shift-Tab : Command line completion
 ```
 
-				 
+
 Commands to get Help
 --------------------
 ```
@@ -139,10 +139,10 @@ Regular Expressions
 'Trevor' -match '^T\w*'                                   # Perform a regular expression match against a string value. # Returns $true and populates $matches variable
 $matches[0]                                               # Returns 'Trevor', based on the above match
 
-@('Trevor', 'Billy', 'Bobby') -match '^B'                 # Perform a regular expression match against an array of string values. Returns Billy, Bobby
+@('Joe', 'Billy', 'Bobby') -match '^B'                    # Perform a regular expression match against an array of string values. Returns Billy, Bobby
 
 $regex = [regex]'(\w{3,8})'
-$regex.Matches('Trevor Bobby Dillon Joe Jacob').Value     # Find multiple matches against a singleton string value.
+$regex.Matches('Bobby Dillon Joe Jacob').Value            # Find multiple matches against a singleton string value.
 ```
 
 
@@ -209,8 +209,8 @@ Hashtables (Dictionary)
 -----------------------
 ```
 $Person = @{
-  FirstName = 'Markus'
-  LastName = 'Fleschutz'
+  FirstName = 'Joe'
+  LastName = 'Doe'
   Likes = @(
     'Bacon',
     'Beer'
@@ -280,7 +280,7 @@ PowerShell Classes
 ```
 class Person {
   [string] $FirstName                                       # Define a class property as a string
-  [string] $LastName = 'Sullivan'                           # Define a class property with a default value
+  [string] $LastName = 'Doe'                                # Define a class property with a default value
   [int] $Age                                                # Define a class property as an integer
   
   Person() {                                                # Add a default constructor (no input parameters) for a class
@@ -295,7 +295,7 @@ class Person {
   }
 }
 $Person01 = [Person]::new()                                 # Instantiate a new Person object.
-$Person01.FirstName = 'Trevor'                              # Set the FirstName property on the Person object.
+$Person01.FirstName = 'Joe'                                 # Set the FirstName property on the Person object.
 $Person01.FullName()                                        # Call the FullName() method on the Person object. Returns 'Trevor Sullivan'
 
 
@@ -325,4 +325,4 @@ $Params = @{
   Method = 'Get'
 }
 Invoke-RestMethod @Params                                   # Call a REST API, using the HTTP GET method
-```				 
+```
