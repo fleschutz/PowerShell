@@ -77,7 +77,14 @@ NOTE: the group policy object (GPO) settings of your organization might disallow
 2. Add or reference your PowerShell scripts in the Jenkins jobs or in your Jenkinsfiles.
 </details>
 
- <details><summary>What about security?</summary>
+<details><summary>How to learn PowerShell?</summary>
+
+* Please find tutorials at: https://www.guru99.com/powershell-tutorial.html
+* And a PowerShell cheat sheet at: https://gist.github.com/pcgeek86/336e08d1a09e3dd1a8f0a30a9fe61c8a
+* The official PowerShell documentation is at: https://docs.microsoft.com/en-us/powershell/
+</details>
+
+<details><summary>What about security?</summary>
 
 1. Execute scripts only that you trust (and/or where you have checked the code before)!
 2. Prefer SSH Remoting instead of PowerShell Remoting
