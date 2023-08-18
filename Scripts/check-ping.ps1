@@ -17,10 +17,9 @@
 param([string]$hosts = "amazon.com,bing.com,cnn.com,dropbox.com,facebook.com,github.com,google.com,live.com,twitter.com,youtube.com")
 
 try {
-	Write-Host "✅ Ping latency is" -noNewline
 	$hostsArray = $hosts.Split(",")
 	$t = $hostsArray | foreach {
-		(New-Object Net.NetworkInformation.Ping).SendPingAsync($_, 250)
+		(New-Object Net.NetworkInformation.Ping).SendPingAsync($_, 500)
 	}
 	[Threading.Tasks.Task]::WaitAll($t)
 	[int]$min = 9999999
@@ -36,8 +35,12 @@ try {
 			$lossCount++
 		}
 	}
-	$avg /= $successCount
-	Write-Host " $($avg)ms average ($($min)ms...$($max)ms, $lossCount loss)"
+	if ($successCount -eq 0) {
+		Write-Host "⚠️ Offline ($lossCount/$lossCount loss)"
+	} else {
+		$avg /= $successCount
+		Write-Host "✅ Ping latency is $($avg)ms average ($($min)ms...$($max)ms, $lossCount loss)"
+	}
 	exit 0 # success
 } catch {
 	"⚠️ Error in line $($_.InvocationInfo.ScriptLineNumber): $($Error[0])"
