@@ -10,7 +10,7 @@
 	
 	Repository   Latest Tag   Branch    Updates  Status
 	----------   ----------   ------    -------  ------
-	📂cmake      v3.23.0      🌵main    ↓0       ✔️clean
+	📂cmake      v3.23.0      main      ↓0       ✔️clean
 	...
 .LINK
 	https://github.com/fleschutz/PowerShell
@@ -35,7 +35,7 @@ function ListRepos {
 		$Status = (git -C "$Folder" status --short)
 		if ("$Status" -eq "") { $Status = "✔️clean" }
 		elseif ("$Status" -like " M *") { $Status = "⚠️modified" }
-		New-Object PSObject -property @{'Repository'="📂$Repository";'Latest Tag'="$LatestTag";'Branch'="🌵$Branch";'Updates'="↓$NumCommits";'Status'="$Status";}
+		New-Object PSObject -property @{'Repository'="📂$Repository";'Latest Tag'="$LatestTag";'Branch'="$Branch";'Updates'="↓$NumCommits";'Status'="$Status";}
 	}
 }
 
