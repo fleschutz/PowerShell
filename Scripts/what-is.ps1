@@ -2,11 +2,12 @@
 .SYNOPSIS
 	Explains an abbreviation
 .DESCRIPTION
-	This PowerShell script queries the description of the given abbreviation and prints it.
+	This PowerShell script queries the meaning of the given abbreviation and prints it.
 .PARAMETER abbr
-	Specifies the abbreviation to look for
+	Specifies the abbreviation to query
 .EXAMPLE
-	PS> ./what-is IAS
+	PS> ./what-is VTOL
+	💡 VTOL in aviation refers to: Vertical Take-Off and Landing
 .LINK
 	https://github.com/fleschutz/PowerShell
 .NOTES
@@ -16,21 +17,18 @@
 param([string]$abbr = "")
 
 try {
-	if ($abbr -eq "" ) { $abbr = Read-Host "Enter the abbreviation" }
-
-	$Files = (Get-ChildItem "$PSScriptRoot/../Data/Abbr/*.csv")
-	[int]$Matches = 0
-	foreach($File in $Files) {
-		$Table = Import-CSV "$File"
-		foreach($Row in $Table) {
-			if ($Row.ABBR -eq $abbr) {
-				$Basename = (Get-Item "$File").Basename -Replace "_"," "
-				"💡 $($Row.ABBR) in $Basename refers to: $($Row.MEANING)"
-				$Matches++
-			}
+	if ($abbr -eq "" ) { $abbr = Read-Host "Enter the abbreviation to query" }
+	$files = (Get-ChildItem "$PSScriptRoot/../Data/Abbr/*.csv")
+	$basename = ""
+	foreach($file in $files) {
+		$table = Import-CSV "$file"
+		foreach($row in $table) {
+			if ($row.ABBR -ne $abbr) { continue }
+			$basename = (Get-Item "$file").Basename -Replace "_"," "
+			"💡 $($row.ABBR) in $basename refers to: $($row.MEANING)"
 		}
 	}
-	if ($Matches -eq 0) { "Sorry, '$abbr' is missing in the database." }
+	if ($basename -eq "") { "🤷‍ Sorry, my databases have no '$abbr' entry." }
 	exit 0 # success
 } catch {
 	"⚠️ Error in line $($_.InvocationInfo.ScriptLineNumber): $($Error[0])"
