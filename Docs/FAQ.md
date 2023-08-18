@@ -1,5 +1,5 @@
-PowerShell FAQ
-==============
+🤔 PowerShell FAQ
+==================
 
 <details><summary>What is PowerShell?</summary>
  
