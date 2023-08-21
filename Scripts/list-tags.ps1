@@ -30,10 +30,11 @@ try {
 	Write-Progress "⏳ (2/3) Checking local repository... "
 	if (-not(Test-Path "$RepoDir" -pathType container)) { throw "Can't access directory: $RepoDir" }
 
-	Write-Progress "⏳ (3/3) Fetching latest tags..."
-	& git -C "$RepoDir" fetch --tags
-	if ($lastExitCode -ne "0") { throw "'git fetch --tags' failed" }
-	Write-Progress -completed "."
+	Write-Progress "⏳ (3/3) Fetching remote tags..."
+	& git -C "$RepoDir" fetch --all --tags
+	Write-Progress -completed "Done."
+	if ($lastExitCode -ne "0") { throw "'git fetch --all --tags' failed" }
+
  	""
 	"Tag             Description"
 	"---             -----------"
