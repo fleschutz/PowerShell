@@ -1,4 +1,24 @@
-﻿param([int]$numIntegers = 1000)
+﻿<#
+.SYNOPSIS
+        Measures the speed of QuickSort
+.DESCRIPTION
+        This PowerShell script measures the speed of the QuickSort algorithm.
+        QuickSort is an in-place sorting algorithm. Developed by British computer scientist
+	Tony Hoare in 1959 and published in 1961, it is still a commonly used algorithm for
+	sorting. When implemented well, it can be somewhat faster than merge sort and about
+	two or three times faster than heapsort.
+.PARAMETER numIntegers
+        Specifies the number of integers to sort
+.EXAMPLE
+        PS> ./measure-QuickSort.ps1
+        🕒 QuickSort of 1000 integers took 0.0853411 sec
+.LINK
+        https://github.com/fleschutz/PowerShell
+.NOTES
+        Author: Markus Fleschutz | License: CC0
+#>
+
+param([int]$numIntegers = 1000)
 
 class QuickSort {
     static Sort($targetList, $left, $right) {
