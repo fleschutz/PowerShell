@@ -5,7 +5,7 @@
 	This PowerShell script queries the BIOS status and prints it.
 .EXAMPLE
 	PS> ./check-bios.ps1
-	✅ BIOS model F6 version ALASKA - 1072009 by American Megatrends Inc.
+	✅ BIOS model P62 v02.67 by HP (version HPQOEM - 5, S/N CZC1080B01)
 .LINK
 	https://github.com/fleschutz/PowerShell
 .NOTES
@@ -15,24 +15,24 @@
 try {
 	if ($IsLinux) {
 		Write-Progress "⏳ Querying BIOS details..."
-		$Model = (sudo dmidecode -s system-product-name)
-		if ("$Model" -ne "") {
-			$Version = (sudo dmidecode -s bios-version)
-			$RelDate = (sudo dmidecode -s bios-release-date)
-			$Manufacturer = (sudo dmidecode -s system-manufacturer)
-			Write-Host "✅ BIOS model $Model version $Version of $RelDate by $Manufacturer"
+		$model = (sudo dmidecode -s system-product-name)
+		if ("$model" -ne "") {
+			$version = (sudo dmidecode -s bios-version)
+			$releaseDate = (sudo dmidecode -s bios-release-date)
+			$manufacturer = (sudo dmidecode -s system-manufacturer)
+			Write-Host "✅ BIOS model $model by $manufacturer (version $version of $releaseDate)"
 		}
 		Write-Progress -completed "."
 	} else {
 		$BIOS = Get-CimInstance -ClassName Win32_BIOS
-		$Model = $BIOS.Name.Trim()
-		$Version = $BIOS.Version.Trim()
-		$Serial = $BIOS.SerialNumber.Trim()
-		$Manufacturer = $BIOS.Manufacturer.Trim()
-		if ($Serial -eq "To be filled by O.E.M.") {
-			Write-Host "✅ BIOS model $Model version $Version by $Manufacturer"
+		$model = $BIOS.Name.Trim()
+		$version = $BIOS.Version.Trim()
+		$serialNumber = $BIOS.SerialNumber.Trim()
+		$manufacturer = $BIOS.Manufacturer.Trim()
+		if ($serialNumber -eq "To be filled by O.E.M.") {
+			Write-Host "✅ BIOS model $model by $manufacturer (version $version)"
 		} else {
-			Write-Host "✅ BIOS model $Model version $Version, S/N $Serial, by $Manufacturer"
+			Write-Host "✅ BIOS model $model by $manufacturer (version $version, S/N $serialNumber)"
 		}
 	}
 	exit 0 # success
