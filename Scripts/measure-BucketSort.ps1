@@ -1,4 +1,29 @@
-﻿param([int]$numIntegers = 1000)
+﻿<#
+.SYNOPSIS
+        Measures the BucketSort algorithm
+.DESCRIPTION
+        This PowerShell script measures the speed of the BucketSort algorithm.
+        BubbleSort is a sorting algorithm that works by distributing the elements
+	of an array into a number of buckets. Each bucket is then sorted individually,
+	either using a different sorting algorithm, or by recursively applying the bucket
+	sorting algorithm. It is a distribution sort, a generalization of pigeonhole sort
+	that allows multiple keys per bucket, and is a cousin of radix sort in the
+	most-to-least significant digit flavor. Bucket sort can be implemented with comparisons
+	and therefore can also be considered a comparison sort algorithm. The computational
+	complexity depends on the algorithm used to sort each bucket, the number of buckets
+	to use, and whether the input is uniformly distributed.
+.PARAMETER numIntegers
+        Specifies the number of integers to sort
+.EXAMPLE
+        PS> ./measure-bucketsort.ps1
+        🕒 BucketSort of 1000 integers took 0.0653755 sec
+.LINK
+        https://github.com/fleschutz/PowerShell
+.NOTES
+        Author: Markus Fleschutz | License: CC0
+#>
+
+param([int]$numIntegers = 1000)
 
 class BucketSort {
     static Sort($targetList) {
@@ -31,7 +56,6 @@ class BucketSort {
                 }
             }
         }
-
     }
 }
 
