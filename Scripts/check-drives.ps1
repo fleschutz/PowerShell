@@ -7,15 +7,15 @@
 	Specifies the minimum warning level (10 GB by default)
 .EXAMPLE
 	PS> ./check-drives.ps1
-	✅ Drive C: at 49% of 1TB, 512GB free
-	✅ Drive D: at 84% of 4TB, 641GB free
+	✅ Drive C: uses 49% of 1TB, 512GB free
+	✅ Drive D: uses 84% of 4TB, 641GB free
 .LINK
 	https://github.com/fleschutz/PowerShell
 .NOTES
 	Author: Markus Fleschutz | License: CC0
 #>
 
-param([int]$minLevel = 10) # 10 GB minimum
+param([int64]$minLevel = 10) # 10 GB minimum
 
 function Bytes2String { param([int64]$bytes)
         if ($bytes -lt 1000) { return "$bytes bytes" }
@@ -34,6 +34,7 @@ function Bytes2String { param([int64]$bytes)
 try {
 	Write-Progress "⏳ Querying drives..."
 	$drives = Get-PSDrive -PSProvider FileSystem
+	$minLevel *= 1000 * 1000 * 1000
 	Write-Progress -completed "."
 	foreach($drive in $drives) {
 		$details = (Get-PSDrive $drive.Name)
@@ -50,7 +51,7 @@ try {
 			Write-Host "⚠️ Drive $name with $(Bytes2String $total) is nearly full, $(Bytes2String $free) free"
 		} else {
 			[int]$percent = ($used * 100) / $total
-			Write-Host "✅ Drive $name at $percent% of $(Bytes2String $total), $(Bytes2String $free) free"
+			Write-Host "✅ Drive $name uses $percent% of $(Bytes2String $total), $(Bytes2String $free) free"
 		}
 	}
 	exit 0 # success
