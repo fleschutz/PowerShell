@@ -1,4 +1,29 @@
-﻿param([int]$numIntegers = 1000)
+﻿<#
+.SYNOPSIS
+        Measures the CountingSort algorithm
+.DESCRIPTION
+        This PowerShell script measures the speed of the CountingSort algorithm.
+        CountingSort is an algorithm for sorting a collection of objects according to keys
+	that are small positive integers; that is, it is an integer sorting algorithm. It
+	operates by counting the number of objects that possess distinct key values, and
+	applying prefix sum on those counts to determine the positions of each key value in
+	the output sequence. Its running time is linear in the number of items and the difference
+	between the maximum key value and the minimum key value, so it is only suitable for direct
+	use in situations where the variation in keys is not significantly greater than the number
+	of items. It is often used as a subroutine in radix sort, another sorting algorithm, which
+	can handle larger keys more efficiently.
+.PARAMETER numIntegers
+        Specifies the number of integers to sort
+.EXAMPLE
+        PS> ./measure-CountingSort.ps1
+        🕒 CountingSort of 1000 integers took 0.0454597 sec
+.LINK
+        https://github.com/fleschutz/PowerShell
+.NOTES
+        Author: Markus Fleschutz | License: CC0
+#>
+
+param([int]$numIntegers = 1000)
 
 class CountingSort {
     static Sort($targetList) {
