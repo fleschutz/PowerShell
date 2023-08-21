@@ -11,7 +11,7 @@
         Specifies the number of integers to sort
 .EXAMPLE
         PS> ./measure-QuickSort.ps1
-        🕒 QuickSort of 1000 integers took 0.0853411 sec
+ 	🧭 Sorting 1000 integers by QuickSort took 0.0853411 sec
 .LINK
         https://github.com/fleschutz/PowerShell
 .NOTES
@@ -49,5 +49,5 @@ $list = (1..$numIntegers | foreach{Get-Random -minimum 1 -maximum $numIntegers})
 $stopWatch = [system.diagnostics.stopwatch]::startNew()
 [QuickSort]::Sort($list, 0, $list.Count-1)
 [float]$elapsed = $stopWatch.Elapsed.TotalSeconds
-"🕒 QuickSort of $numIntegers integers took $elapsed sec"
+"🧭 Sorting $numIntegers integers by QuickSort took $elapsed sec"
 exit 0 # success

@@ -14,7 +14,7 @@
         Specifies the number of integers to sort
 .EXAMPLE
         PS> ./measure-HeapSort.ps1
-        🕒 HeapSort of 1000 integers took 0.6145732 sec
+        🧭 Sorting 1000 integers by HeapSort took 0.6145732 sec
 .LINK
         https://github.com/fleschutz/PowerShell
 .NOTES
@@ -71,5 +71,5 @@ $list = (1..$numIntegers | foreach{Get-Random -minimum 1 -maximum $numIntegers})
 $stopWatch = [system.diagnostics.stopwatch]::startNew()
 [HeapSort]::Sort($list)
 [float]$elapsed = $stopWatch.Elapsed.TotalSeconds
-"🕒 HeapSort of $numIntegers integers took $elapsed sec"
+"🧭 Sorting $numIntegers integers by HeapSort took $elapsed sec"
 exit 0 # success

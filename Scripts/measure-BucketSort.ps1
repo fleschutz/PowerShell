@@ -1,9 +1,9 @@
 ﻿<#
 .SYNOPSIS
-        Measures the BucketSort algorithm
+	Measures the speed of BucketSort 
 .DESCRIPTION
-        This PowerShell script measures the speed of the BucketSort algorithm.
-        BubbleSort is a sorting algorithm that works by distributing the elements
+	This PowerShell script measures the speed of the BucketSort algorithm.
+	BucketSort is a sorting algorithm that works by distributing the elements
 	of an array into a number of buckets. Each bucket is then sorted individually,
 	either using a different sorting algorithm, or by recursively applying the bucket
 	sorting algorithm. It is a distribution sort, a generalization of pigeonhole sort
@@ -13,14 +13,14 @@
 	complexity depends on the algorithm used to sort each bucket, the number of buckets
 	to use, and whether the input is uniformly distributed.
 .PARAMETER numIntegers
-        Specifies the number of integers to sort
+	Specifies the number of integers to sort
 .EXAMPLE
-        PS> ./measure-bucketsort.ps1
-        🕒 BucketSort of 1000 integers took 0.0653755 sec
+	PS> ./measure-BucketSort.ps1
+	🧭 Sorting 1000 integers by BucketSort took 0.0653755 sec
 .LINK
-        https://github.com/fleschutz/PowerShell
+	https://github.com/fleschutz/PowerShell
 .NOTES
-        Author: Markus Fleschutz | License: CC0
+	Author: Markus Fleschutz | License: CC0
 #>
 
 param([int]$numIntegers = 1000)
@@ -63,5 +63,5 @@ $list = (1..$numIntegers | foreach{Get-Random -minimum 1 -maximum $numIntegers})
 $stopWatch = [system.diagnostics.stopwatch]::startNew()
 [BucketSort]::Sort($list)
 [float]$elapsed = $stopWatch.Elapsed.TotalSeconds
-"🕒 BucketSort of $numIntegers integers took $elapsed sec"
+"🧭 Sorting $numIntegers integers by BucketSort took $elapsed sec"
 exit 0 # success

@@ -12,7 +12,7 @@
         Specifies the number of integers to sort
 .EXAMPLE
         PS> ./measure-SelectionSort.ps1
-        🕒 SelectionSort of 1000 integers took 0.3351773 sec
+	🧭 Sorting 1000 integers by SelectionSort took 0.3351773 sec
 .LINK
         https://github.com/fleschutz/PowerShell
 .NOTES
@@ -41,5 +41,5 @@ $list = (1..$numIntegers | foreach{Get-Random -minimum 1 -maximum $numIntegers})
 $stopWatch = [system.diagnostics.stopwatch]::startNew()
 [SelectionSort]::Sort($list)
 [float]$elapsed = $stopWatch.Elapsed.TotalSeconds
-"🕒 SelectionSort of $numIntegers integers took $elapsed sec"
+"🧭 Sorting $numIntegers integers by SelectionSort took $elapsed sec"
 exit 0 # success

@@ -1,6 +1,6 @@
 ﻿<#
 .SYNOPSIS
-        Measures the CountingSort algorithm
+        Measures the speed of CountingSort
 .DESCRIPTION
         This PowerShell script measures the speed of the CountingSort algorithm.
         CountingSort is an algorithm for sorting a collection of objects according to keys
@@ -16,7 +16,7 @@
         Specifies the number of integers to sort
 .EXAMPLE
         PS> ./measure-CountingSort.ps1
-        🕒 CountingSort of 1000 integers took 0.0454597 sec
+        🧭 Sorting 1000 integers by CountingSort took 0.0454597 sec
 .LINK
         https://github.com/fleschutz/PowerShell
 .NOTES
@@ -54,5 +54,5 @@ $list = (1..$numIntegers | foreach{Get-Random -minimum 1 -maximum $numIntegers})
 $stopWatch = [system.diagnostics.stopwatch]::startNew()
 [CountingSort]::Sort($list)
 [float]$elapsed = $stopWatch.Elapsed.TotalSeconds
-"🕒 CountingSort of $numIntegers integers took $elapsed sec"
+"🧭 Sorting $numIntegers integers by CountingSort took $elapsed sec"
 exit 0 # success
