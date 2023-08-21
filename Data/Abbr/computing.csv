@@ -2866,29 +2866,31 @@ WMI,Windows Management Instrumentation
 WMIC,Windows Management Instrumentation Command line
 WML,Wireless Markup Language
 WMM,Wi-Fi Multimedia
-WMN,wireless mesh network
+WMN,Wireless Mesh Network
 WMP,Windows Media Player
 WMS,Warehouse Management System
-WMTS,wireless medical telemetry services
+WMTS,Wireless Medical Telemetry Services
 WORA,"write once, run anywhere"
 WORM,"write once, read many"
 WPA,Wi-Fi Protected Access
 WPA,Windows Product Activation
 WPAD,Web Proxy Autodiscovery
-WPAN,wireless personal area network
+WPAN,Wireless Prsonal Area Network
 WPAS,Windows Process Activation Service
 WPF,Windows Presentation Foundation
 WRAM,Window RAM
+WSA,Windows Subsystem for Android
 WSCI,Web Service Choreography Interface
 WSD,white space device
 WSDL,Web Services Description Language
 WSFC,Windows Server Failover Clustering
-WSP,wireless service provider
+WSL,Windows Subsystem for Linux
+WSP,Wireless Service Provider
 WSS,Windows Sharepoint Services
 WSTx,Web Services Transactions
 WSUS,Windows Server Update Services 
 WTLS,Wireless Transport Layer Security
-WTS,Microsoft Windows Terminal Server
+WTS,Windows Terminal Server
 WUE,water usage effectiveness
 WUSB,wireless USB
 WWN,World Wide Name
