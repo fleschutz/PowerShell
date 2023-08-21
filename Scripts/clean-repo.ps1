@@ -7,12 +7,12 @@
 .PARAMETER RepoDir
 	Specifies the file path to the local Git repository
 .EXAMPLE
-	PS> ./clean-repo C:\base256unicode
+	PS> ./clean-repo.ps1 C:\rust
 	⏳ (1/4) Searching for Git executable...          git version 2.41.0.windows.3
-	⏳ (2/4) Checking local repository...        	  📂C:\base256unicode
+	⏳ (2/4) Checking local repository...        	  📂C:\rust
 	⏳ (3/4) Removing untracked files in repository...
 	⏳ (4/4) Removing untracked files in submodules...
-	✔️ Cleaning the 📂base256unicode repo took 1 sec
+	✔️ Cleaning repository 📂rust took 1 sec
 .LINK
 	https://github.com/fleschutz/PowerShell
 .NOTES
@@ -45,7 +45,7 @@ try {
 	if ($lastExitCode -ne "0") { throw "'git clean' in the submodules failed with exit code $lastExitCode" }
 
 	[int]$Elapsed = $StopWatch.Elapsed.TotalSeconds
-	"✔️ Cleaning the 📂$RepoDirName repo took $Elapsed sec"
+	"✔️ Cleaning repository 📂$RepoDirName took $Elapsed sec"
 	exit 0 # success
 } catch {
 	"⚠️ Error in line $($_.InvocationInfo.ScriptLineNumber): $($Error[0])"
