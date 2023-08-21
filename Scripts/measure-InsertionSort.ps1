@@ -1,4 +1,23 @@
-﻿param([int]$numIntegers = 1000)
+﻿<#
+.SYNOPSIS
+        Measures the speed of InsertionSort
+.DESCRIPTION
+        This PowerShell script measures the speed of the InsertionSort algorithm.
+        InsertionSort is a simple sorting algorithm that builds the final sorted array (or list)
+	one item at a time. It is much less efficient on large lists than more advanced algorithms
+	such as quicksort, heapsort, or merge sort.
+.PARAMETER numIntegers
+        Specifies the number of integers to sort
+.EXAMPLE
+        PS> ./measure-InsertionSort.ps1
+        🕒 InsertionSort of 1000 integers took 0.4234268 sec
+.LINK
+        https://github.com/fleschutz/PowerShell
+.NOTES
+        Author: Markus Fleschutz | License: CC0
+#>
+
+param([int]$numIntegers = 1000)
 
 class InsertionSort {
     static Sort($targetList) {
