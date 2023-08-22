@@ -284,7 +284,7 @@ FMS,Flight Management System
 FOD,Foreign Object Debris
 FOV,Field of View
 FWC,Flight Warning Computer
-GA,General Aviation
+GA,"General Aviation, Go Around (VFR)"
 GND,Ground
 GP,Glide Path
 GPS,Global Positioning System
@@ -318,6 +318,7 @@ LOD,Level of Detail
 LTA,Lower Traffic Area
 LVNL,Luchtverkeersleiding Nederland (Air Traffic Control the Netherlands)
 LVP,Low Visibility Procedures
+MA,Missed Approach (IFR)
 MATS,Malta Air Traffic Services
 MEA,Minimum En-route Altitude
 METAR,Meteorological Aerodrome Report
