@@ -21,5 +21,5 @@
 & "$PSScriptRoot/check-ping.ps1"
 & "$PSScriptRoot/check-dns.ps1"
 & "$PSScriptRoot/check-vpn.ps1"
-& "$PSScriptRoot/check-ip.ps1"
+& "$PSScriptRoot/list-public-ip.ps1"
 exit 0 # success
