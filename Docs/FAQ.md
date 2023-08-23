@@ -1,5 +1,5 @@
-🤔 PowerShell FAQ
-==================
+![](powershell_black_icon_64x64.png) PowerShell FAQ
+===================================================
 
 <details><summary>What is PowerShell?</summary>
  
