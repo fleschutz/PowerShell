@@ -8,9 +8,9 @@
 .EXAMPLE
 	PS> ./list-repos C:\MyRepos
 	
-	Repository   Latest Tag   Branch    Updates  Status
-	----------   ----------   ------    -------  ------
-	📂cmake      v3.23.0      main      ↓0       ✔️clean
+	Repository   Latest Tag   Branch    Status    Remote
+	----------   ----------   ------    ------    ------
+	📂cmake      v3.23.0      main      ✔️clean    git@github.com:Kitware/CMake ↓0
 	...
 .LINK
 	https://github.com/fleschutz/PowerShell
@@ -31,11 +31,12 @@ function ListRepos {
 			$LatestTag = ""
 		}
 		$Branch = (git -C "$Folder" branch --show-current)
+		$RemoteURL = (git -C "$Folder" remote get-url origin)
 		$NumCommits = (git -C "$Folder" rev-list HEAD...origin/$Branch --count)
 		$Status = (git -C "$Folder" status --short)
 		if ("$Status" -eq "") { $Status = "✔️clean" }
 		elseif ("$Status" -like " M *") { $Status = "⚠️modified" }
-		New-Object PSObject -property @{'Repository'="📂$Repository";'Latest Tag'="$LatestTag";'Branch'="$Branch";'Updates'="↓$NumCommits";'Status'="$Status";}
+		New-Object PSObject -property @{'Repository'="📂$Repository";'Latest Tag'="$LatestTag";'Branch'="$Branch";'Status'="$Status";'Remote'="$RemoteURL ↓$NumCommits";}
 	}
 }
 
@@ -45,7 +46,7 @@ try {
 	$Null = (git --version)
 	if ($lastExitCode -ne "0") { throw "Can't execute 'git' - make sure Git is installed and available" }
 
-	ListRepos | Format-Table -property @{e='Repository';width=20},@{e='Latest Tag';width=18},@{e='Branch';width=20},@{e='Updates';width=8},Status
+	ListRepos | Format-Table -property @{e='Repository';width=20},@{e='Latest Tag';width=18},@{e='Branch';width=20},@{e='Status';width=10},Remote
 	exit 0 # success
 } catch {
 	"⚠️ Error in line $($_.InvocationInfo.ScriptLineNumber): $($Error[0])"
