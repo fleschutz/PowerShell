@@ -1,11 +1,11 @@
 ﻿<#
 .SYNOPSIS
-	Check the RAM status
+	Checks the RAM
 .DESCRIPTION
-	This PowerShell script queries the status of the installed RAM and prints it.
+	This PowerShell script queries the status of the installed RAM memory modules and prints it.
 .EXAMPLE
 	PS> ./check-ram.ps1
-	✅ 16GB DDR4 RAM @ 3200MHz (1.2V) in P0 CHANNEL A/DIMM 0 by Samsung
+	✅ 16GB DDR4 RAM @ 3200MHz by Micron (in CPU0/CPU0-DIMM3 @ 1.2V)
 .LINK
 	https://github.com/fleschutz/PowerShell
 .NOTES
@@ -69,7 +69,7 @@ try {
 			[float]$Voltage = $Bank.ConfiguredVoltage / 1000.0
 			$Manufacturer = $Bank.Manufacturer
 			$Location = "$($Bank.BankLabel)/$($Bank.DeviceLocator)"
-			Write-Host "✅ $Capacity $Type @ $($Speed)MHz ($($Voltage)V) in $Location by $Manufacturer"
+			Write-Host "✅ $Capacity $Type @ $($Speed)MHz by $Manufacturer (in $Location @ $($Voltage)V)"
 		}
 	}
 	exit 0 # success
