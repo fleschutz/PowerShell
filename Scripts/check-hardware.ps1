@@ -22,5 +22,5 @@
 & "$PSScriptRoot/check-gpu.ps1"
 & "$PSScriptRoot/check-smart-devices.ps1"
 & "$PSScriptRoot/check-drives.ps1"
-& "$PSScriptRoot/check-battery.ps1"
+& "$PSScriptRoot/check-power.ps1"
 exit 0 # success
