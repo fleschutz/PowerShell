@@ -1,5 +1,5 @@
-PowerShell Cheat Sheet
-======================
+![](powershell_black_icon_64x64.png) PowerShell Cheat Sheet
+===========================================================
 
 Basic Commands
 --------------
