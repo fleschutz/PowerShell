@@ -27,7 +27,7 @@
  $ snap install PowerShell
  $ ln -s /snap/bin/pwsh /usr/bin/pwsh
 ```
-2 **Otherwise, please visit:** https://github.com/PowerShell/PowerShell **and scroll down to 'Get PowerShell'.**
+2. **Otherwise, please visit:** https://github.com/PowerShell/PowerShell **and scroll down to 'Get PowerShell'.**
 </details>
 
 <details><summary>How to install PowerShell on MacOS?</summary>
