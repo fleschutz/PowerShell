@@ -140,7 +140,7 @@ Want to use the PowerShell scripts everywhere on the command-line? Then you need
 * On success exit with error code 0 (**exit 0**), otherwise print the error with keyword **ERROR:** (to support log parsers) and exit the error code (mostly 1)
  </details>
 
-<details><summary>Where's the Star History of this repo?</summary>
+<details><summary>Where's the Star History of this repository?</summary>
     
 [![Star History Chart](https://api.star-history.com/svg?repos=fleschutz/PowerShell&type=Date)](https://star-history.com/#fleschutz/PowerShell&Date)
 </details>
