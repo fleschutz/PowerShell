@@ -27,27 +27,27 @@
  $ snap install PowerShell
  $ ln -s /snap/bin/pwsh /usr/bin/pwsh
 ```
-2. **Otherwise, please visit:** https://github.com/PowerShell/PowerShell **and scroll down to 'Get PowerShell'.**
+2. **Otherwise, please visit:** https://github.com/PowerShell/PowerShell **and scroll down to: 'Get PowerShell'.**
 </details>
 
 <details><summary>How to install PowerShell on MacOS?</summary>
 
-**Please visit:** https://github.com/PowerShell/PowerShell **and scroll down to 'Get PowerShell'.**
+**Please visit:** https://github.com/PowerShell/PowerShell **and scroll down to: 'Get PowerShell'.**
 </details>
 
 <details><summary>How to install PowerShell on Windows?</summary>
 
-Good news: it's preinstalled, **but** the script execution policy is *restricted* (forbidden) by default! To change this: open the *Windows PowerShell (Administrator)* console and enter:
+**Good news:** it's preinstalled, **but** the script execution policy is *restricted* (forbidden) by default! To change this: open the *Windows PowerShell (Administrator)* console and enter:
 ```
  PS> Set-ExecutionPolicy -ExecutionPolicy Bypass -Scope CurrentUser
 ```
-NOTE: the group policy object (GPO) settings of your organization might disallow changes. In that case contact your system administrator for help.
+**NOTE:** the group policy object (GPO) settings of your organization might disallow changes. In that case contact your system administrator for help.
 </details>
 
 <details><summary>How to get this PowerShell script collection?</summary>
  
-1. When using **Git**, execute in a terminal window: `> git clone https://github.com/fleschutz/PowerShell`
-2. **Otherwise,** download and unzip it from: https://github.com/fleschutz/PowerShell/archive/master.zip
+1. **When using Git, execute in a terminal window:** `> git clone https://github.com/fleschutz/PowerShell`
+2. **Otherwise, download and unzip it from:** https://github.com/fleschutz/PowerShell/archive/master.zip
 </details>
 
 <details><summary>How to execute PowerShell scripts on Windows?</summary>
@@ -67,14 +67,14 @@ NOTE: the group policy object (GPO) settings of your organization might disallow
 
 <details><summary>How to execute PowerShell scripts automatically on login in Windows?</summary>
 
-1. Open the **File Explorer** with your **Autostart folder** (usually at: C:\Users\YOUR_USERNAME\AppData\Roaming\Microsoft\Windows\Start Menu\Programs\Startup).
-2. Copy the script (or a link to it) into this folder.
+1. **Open the *File Explorer* with your Autostart folder** (usually at: `C:\Users\YOUR_USERNAME\AppData\Roaming\Microsoft\Windows\Start Menu\Programs\Startup`).
+2. **Copy the script (or a link to it) into this folder.**
 </details>
  
 <details><summary>How to execute PowerShell scripts in Jenkins?</summary>
  
-1. Install the Jenkins plugin **PowerShell plugin** (it uses PowerShell.exe on Windows and pwsh on Linux).
-2. Add or reference your PowerShell scripts in the Jenkins jobs or in your Jenkinsfiles.
+1. **Install the Jenkins plugin:** `PowerShell plugin` (it uses PowerShell.exe on Windows and pwsh on Linux).
+2. **Add or reference your PowerShell scripts in the Jenkins jobs or in your Jenkinsfiles.**
 </details>
 
 <details><summary>How to learn PowerShell?</summary>
@@ -86,9 +86,9 @@ NOTE: the group policy object (GPO) settings of your organization might disallow
 
 <details><summary>What about security?</summary>
 
-1. Execute scripts only that you trust (and/or where you have checked the code before)!
-2. Prefer SSH Remoting instead of PowerShell Remoting
-3. More recommendations by NSA and cyber security centers in the U.S. (CISA), New Zealand (NZ NCSC), and the U.K. (NCSC-UK) can be found here: https://media.defense.gov/2022/Jun/22/2003021689/-1/-1/1/CSI_KEEPING_POWERSHELL_SECURITY_MEASURES_TO_USE_AND_EMBRACE_20220622.PDF
+1. **Execute scripts only that you trust (and/or where you have checked the code before)!**
+2. **Prefer SSH Remoting instead of PowerShell Remoting**
+3. **More recommendations by NSA and cyber security centers in the U.S. (CISA), New Zealand (NZ NCSC), and the U.K. (NCSC-UK) can be found here:** https://media.defense.gov/2022/Jun/22/2003021689/-1/-1/1/CSI_KEEPING_POWERSHELL_SECURITY_MEASURES_TO_USE_AND_EMBRACE_20220622.PDF
  </details>
 
 <details><summary>Why do some scripts show gibberish characters?</summary>
