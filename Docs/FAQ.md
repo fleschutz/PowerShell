@@ -22,17 +22,17 @@
 
 <details><summary>How to install PowerShell on Linux?</summary>
  
-1. On Linux with Snap support just execute:
+1. On Linux with **Snap** support just execute:
 ```
  $ snap install PowerShell
  $ ln -s /snap/bin/pwsh /usr/bin/pwsh
 ```
-2 Otherwise visit: https://github.com/PowerShell/PowerShell for installation (scroll down to 'Get PowerShell').
+2 **Otherwise** visit: https://github.com/PowerShell/PowerShell for installation (scroll down to 'Get PowerShell').
 </details>
 
 <details><summary>How to install PowerShell on MacOS?</summary>
 
-Visit: https://github.com/PowerShell/PowerShell for installation (scroll down to 'Get PowerShell').
+**Please visit:** https://github.com/PowerShell/PowerShell for installation (scroll down to 'Get PowerShell').
 </details>
 
 <details><summary>How to install PowerShell on Windows?</summary>
@@ -79,9 +79,9 @@ NOTE: the group policy object (GPO) settings of your organization might disallow
 
 <details><summary>How to learn PowerShell?</summary>
 
-* Please find **tutorials** at: https://www.guru99.com/powershell-tutorial.html
-* See a **cheat sheet** at: [PowerShell/Docs/cheat-sheet.md](cheat-sheet.md)
-* The official PowerShell **documentation** is at: https://docs.microsoft.com/en-us/powershell/
+* **Please find tutorials at:** https://www.guru99.com/powershell-tutorial.html
+* **See a cheat sheet at:** [PowerShell/Docs/cheat-sheet.md](cheat-sheet.md)
+* **The official PowerShell documentation can be found here:** https://docs.microsoft.com/en-us/powershell/
 </details>
 
 <details><summary>What about security?</summary>
@@ -129,15 +129,15 @@ Want to use the PowerShell scripts everywhere on the command-line? Then you need
  
 **Good PowerShell scripts are both user-friendly and platform-independent. As a starting point I recommend the following:**
 
-* As filename use the `<verb>-<object>.ps1` scheme. Approved verbs can be found here: [https://learn.microsoft.com/en-us/powershell/scripting/developer/cmdlet/approved-verbs-for-windows-powershell-commands](https://learn.microsoft.com/en-us/powershell/scripting/developer/cmdlet/approved-verbs-for-windows-powershell-commands)
-* Use `UTF-8 BOM` encoding to support Unicode characters in the script.
-* Add a comment-based help at the beginning with: `.SYNOPSIS`, `.DESCRIPTION`, `.PARAMETER`, `.EXAMPLE`, `.LINK`, and `.NOTES`.
-* Check the requirements for the script, e.g. `#Requires -RunAsAdministrator`, or `#Requires -Version 3`
-* Prefer command-line options, else ask the user for help
-* Recommended is `Set-StrictMode -Version Latest` to enable additional error checking.
-* For readibility use UpperCamelCase for variables and functions, lowerCamelCase for everything else.
-* Set *execute* file permissions for Linux: `chmod a+rx <filename>`
-* On success exit with error code 0 (`exit 0`), otherwise print the error with keyword "ERROR:" (to support log parsers) and exit the error code (mostly 1)
+* As filename use the **<verb>-<object>.ps1** scheme. Approved verbs can be found here: [https://learn.microsoft.com/en-us/powershell/scripting/developer/cmdlet/approved-verbs-for-windows-powershell-commands](https://learn.microsoft.com/en-us/powershell/scripting/developer/cmdlet/approved-verbs-for-windows-powershell-commands)
+* Use **UTF-8 BOM** encoding to support Unicode characters in the script.
+* Add a **comment-based help** at the beginning with: `.SYNOPSIS`, `.DESCRIPTION`, `.PARAMETER`, `.EXAMPLE`, `.LINK`, and `.NOTES`.
+* Check the **requirements** for the script, e.g. `#Requires -RunAsAdministrator`, or `#Requires -Version 3`
+* Prefer **command-line options**, else ask the user for help
+* Recommended is **Set-StrictMode -Version Latest** to enable additional error checking.
+* For readibility use **lowerCamelCase** to name variables, functions, etc.
+* Set execute file permissions for Linux: **chmod a+rx <filename>**
+* On success exit with error code 0 (**exit 0**), otherwise print the error with keyword **ERROR:** (to support log parsers) and exit the error code (mostly 1)
  </details>
 
 <details><summary>Where's the Star History of this repo?</summary>
