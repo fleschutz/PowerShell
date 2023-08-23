@@ -22,12 +22,12 @@
 
 <details><summary>How to install PowerShell on Linux?</summary>
  
-1. On Linux with **Snap** support just execute:
+1. **On Linux with Snap support just execute:**
 ```
  $ snap install PowerShell
  $ ln -s /snap/bin/pwsh /usr/bin/pwsh
 ```
-2 **Otherwise** visit: https://github.com/PowerShell/PowerShell for installation (scroll down to 'Get PowerShell').
+2 **Otherwise visit:** https://github.com/PowerShell/PowerShell for installation (scroll down to 'Get PowerShell').
 </details>
 
 <details><summary>How to install PowerShell on MacOS?</summary>
