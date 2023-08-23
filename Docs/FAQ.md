@@ -152,7 +152,7 @@ Want to use the PowerShell scripts everywhere on the command-line? Then you need
 
 <details><summary>How to donate to this project?</summary>
 
-**Just follow this link: [https://www.paypal.com/paypalme/Fleschutz](https://www.paypal.com/paypalme/Fleschutz). Thank you very much!**
+**Thanks a lot! Just follow this link:** [https://www.paypal.com/paypalme/Fleschutz](https://www.paypal.com/paypalme/Fleschutz)
 </details>
 
 <details><summary>What if my question is not answered here?</summary>
