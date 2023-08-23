@@ -32,7 +32,7 @@
 
 <details><summary>How to install PowerShell on MacOS?</summary>
 
-**Please visit:** https://github.com/PowerShell/PowerShell for installation (scroll down to 'Get PowerShell').
+**Please visit:** https://github.com/PowerShell/PowerShell **and scroll down to 'Get PowerShell'.**
 </details>
 
 <details><summary>How to install PowerShell on Windows?</summary>
