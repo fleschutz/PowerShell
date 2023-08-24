@@ -32,21 +32,21 @@ try {
 			if ($Remaining -eq 0) {
 				$Reply = "✅ Battery at $Percent%"
 			} elseif ($Remaining -le 5) {
-				$Reply = "⚠️ Battery at $Percent% (ONLY $Remaining MIN remaining)"
+				$Reply = "⚠️ Battery at $Percent%, ONLY $Remaining MIN remaining"
 			} elseif ($Remaining -le 30) {
-				$Reply = "⚠️ Battery at $Percent% (only $Remaining min remaining)"
+				$Reply = "⚠️ Battery at $Percent%, only $Remaining min remaining"
 			} elseif ($Percent -lt 10) {
-				$Reply = "⚠️ Battery at $Percent% ($Remaining min remaining)"
+				$Reply = "⚠️ Battery at $Percent% with $Remaining min remaining"
 			} elseif ($Percent -ge 80) {
-				$Reply = "✅ Battery $Percent% full ($Remaining min remaining)"
+				$Reply = "✅ Battery $Percent% full with $Remaining min remaining"
 			} else {
-				$Reply = "✅ Battery at $Percent% ($Remaining min remaining)"
+				$Reply = "✅ Battery at $Percent% with $Remaining min remaining"
 			}
 		}
 		$PowerScheme = (powercfg /getactivescheme)
-		$PowerScheme = $PowerScheme -Replace "Power Scheme(.*)  \(",""
+		$PowerScheme = $PowerScheme -Replace "^(.*)  \(",""
 		$PowerScheme = $PowerScheme -Replace "\)$",""
-		$Reply += " with power scheme: $PowerScheme"
+		$Reply += ", power scheme is '$PowerScheme'"
 	}
 	Write-Output $Reply
 	exit 0 # success
