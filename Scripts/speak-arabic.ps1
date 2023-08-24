@@ -1,6 +1,6 @@
 ﻿<#
 .SYNOPSIS
-	Speaks text with an Arabic text-to-speech voice
+	Speaks text in Arabic
 .DESCRIPTION
 	This PowerShell script speaks the given text with an Arabic text-to-speech (TTS) voice.
 .PARAMETER text
