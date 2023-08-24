@@ -4,15 +4,17 @@
 .DESCRIPTION
 	This PowerShell script performs a text-to-speech (TTS) test.
 .EXAMPLE
-	PS> ./speak-test
+	PS> ./speak-test.ps1
+	📣 Let's begin with the default speed rate of 0 at the default volume of 100%.
+	...
 .LINK
 	https://github.com/fleschutz/PowerShell
 .NOTES
 	Author: Markus Fleschutz | License: CC0
 #>
 
-function Speak { param([string]$Text)
-	write-output "'$Text'"
+function Speak([string]$Text) { 
+	Write-Output "📣 $Text"
 	[void]$Voice.speak("$Text")
 }
 
@@ -39,21 +41,22 @@ try {
 	$Voice.rate = $DefaultRate
 
 	$Voice.volume = 100
-	Speak("Let's try 100% volume")
+	Speak("Let's try 100% volume.")
 	$Voice.volume = 75
-	Speak("Let's try 75% volume")
+	Speak("Let's try 75% volume.")
 	$Voice.volume = 50
-	Speak("Let's try 50% volume")
+	Speak("Let's try 50% volume.")
 	$Voice.volume = 25
-	Speak("Let's try 25% volume")
+	Speak("Let's try 25% volume.")
 	$Voice.volume = $DefaultVolume
 
 	$Voices = $Voice.GetVoices()
 	foreach ($OtherVoice in $Voices) {
 		$Voice.Voice = $OtherVoice
 		$Description = $OtherVoice.GetDescription()
-		Speak("Hi, I'm the voice called $Description")
+		Speak("Hi, I'm the voice called $Description.")
 	}
+	Speak("Thanks for your attention.")
 	exit 0 # success
 } catch {
 	"⚠️ Error in line $($_.InvocationInfo.ScriptLineNumber): $($Error[0])"
