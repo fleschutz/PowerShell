@@ -2,9 +2,13 @@
 .SYNOPSIS
 	Writes a chart
 .DESCRIPTION
-	This PowerShell script writes a chart.
+	This PowerShell script writes an horizontal chart to the console.
 .EXAMPLE
-	PS> ./write-chart
+	PS> ./write-chart.ps1
+	
+	2023 BOWLING RESULTS
+	████████████████▏ 40.5% Joe
+	████████████▎ 30.9% Tom
 .LINK
 	https://github.com/fleschutz/PowerShell
 .NOTES
@@ -14,32 +18,32 @@
 function WriteChartLine { param([string]$Text, [float]$Value, [float]$Max)
 	$Num = ($Value * 40.0) / $Max
 	while ($Num -ge 1.0) {
-		write-host -noNewLine "█"
+		Write-Host -noNewLine "█"
 		$Num -= 1.0
 	}
 	if ($Num -ge 0.875) {
-		write-host -noNewLine "▉"
+		Write-Host -noNewLine "▉"
 	} elseif ($Num -ge 0.75) {
-		write-host -noNewLine "▊"
+		Write-Host -noNewLine "▊"
 	} elseif ($Num -ge 0.625) {
-		write-host -noNewLine "▋"
+		Write-Host -noNewLine "▋"
 	} elseif ($Num -ge 0.5) {
-		write-host -noNewLine "▌"
+		Write-Host -noNewLine "▌"
 	} elseif ($Num -ge 0.375) {
-		write-host -noNewLine "▍"
+		Write-Host -noNewLine "▍"
 	} elseif ($Num -ge 0.25) {
-		write-host -noNewLine "▎"
+		Write-Host -noNewLine "▎"
 	} elseif ($Num -ge 0.125) {
-		write-host -noNewLine "▏"
+		Write-Host -noNewLine "▏"
 	}
 	if ($Max -eq 100.0) {
-		write-host " $($Value)% $Text"
+		Write-Host " $($Value)% $Text"
 	} else {
-		write-host " $Value / $Max $Text"
+		Write-Host " $Value / $Max $Text"
 	}
 }
 
-"2021 Wins"
-WriteChartLine "Markus" 40.5 100.0
-WriteChartLine "Andrea" 30.9 100.0
+Write-Host "`n2023 BOWLING RESULTS" -foregroundColor green
+WriteChartLine "Joe" 40.5 100.0
+WriteChartLine "Tom" 30.9 100.0
 exit 0 # success
