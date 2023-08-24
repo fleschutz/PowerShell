@@ -1,6 +1,6 @@
 ﻿<#
 .SYNOPSIS
-	Tells a joke by text-to-speech
+	Tells a random joke by text-to-speech
 .DESCRIPTION
 	This PowerShell script selects a random Chuck Norris joke in Data/jokes.csv and speaks it by text-to-speech (TTS).
 .EXAMPLE
