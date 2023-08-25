@@ -1,8 +1,8 @@
 ﻿<#
 .SYNOPSIS
-	Writes a quote
+	Writes a random quote
 .DESCRIPTION
-	This PowerShell script selects a random quote and prints it to the console.
+	This PowerShell script selects a random quote from Data/quotes.csv and writes it to the console.
 .EXAMPLE
 	PS> ./write-quote.ps1
 	“ We must become the change we want to see. „
@@ -23,7 +23,7 @@ try {
 	$spaces = "                                                                                                                             "
 	$spaces = $spaces.Substring(0, $quote.Length - $author.Length)
 
-	Write-Host "`n"'“'"$quote"'„'"`n$spaces- $author"
+	Write-Host "`n"'“'"$quote"'„'"`n$spaces- $author" -foregroundColor Magenta
 	exit 0 # success
 } catch {
 	"⚠️ Error in line $($_.InvocationInfo.ScriptLineNumber): $($Error[0])"
