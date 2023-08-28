@@ -348,8 +348,8 @@ Mega Collection of PowerShell Scripts
 | [write-uppercase.ps1](Scripts/write-uppercase.ps1)   | Writes the given text in uppercase letters.                          [Read more...](Docs/write-uppercase.md)         |
 | [write-vertical.ps1](Scripts/write-vertical.ps1)     | Writes the given text in vertical direction.                         [Read more...](Docs/write-vertical.md)          |
 
-Feedback
---------
+📧 Feedback
+------------
 Send your email feedback to: `markus.fleschutz [at] gmail.com`
 
 🤝 License & Copyright
