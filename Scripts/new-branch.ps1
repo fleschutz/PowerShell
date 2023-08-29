@@ -8,7 +8,7 @@
 .PARAMETER repoPath
 	Specifies the path to the Git repository (current working directory per default)
 .EXAMPLE
-	PS> ./new-branch.ps1 test123
+	PS> ./new-branch.ps1 test123 C:\MyRepo
 .LINK
 	https://github.com/fleschutz/PowerShell
 .NOTES
@@ -50,7 +50,7 @@ try {
 	if ($lastExitCode -ne "0") { throw "'git submodule update' failed with exit code $lastExitCode" }
 
 	[int]$elapsed = $stopWatch.Elapsed.TotalSeconds
-	"✔️ created branch '$newBranch' based on '$currentBranch' in repo 📂$repoPathName in $elapsed sec"
+	"✔️ Creating branch '$newBranch' in repo 📂$repoPathName (based on '$currentBranch') took $elapsed sec"
 	exit 0 # success
 } catch {
 	"⚠️ Error in line $($_.InvocationInfo.ScriptLineNumber): $($Error[0])"
