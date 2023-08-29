@@ -137,6 +137,7 @@ ARLNO,Airline Office
 ARP,Airport Reference Point
 ARTCC,Air Route Traffic Control Centre
 ASB,Airspace Block
+ASDA,Accelerate Stop Distance Available
 ASDE,Airport Surface Detection Equipment
 ASDE-X,"Airport Surface Detection Equipment, model X"
 ASOS,Automated Surface Observation System
@@ -224,6 +225,7 @@ CW,Continous Wave
 CW,Cold Weather
 CWS,Collision Warning System
 CWP,Controller Working Position
+CWY,Clearway
 DA,Density Altitude
 DAS,DFS Aviation Services (DFS subcompany for services outside Germany)
 DCIA,Dependent Converging Instrument Approach
@@ -297,7 +299,8 @@ IAA,Israeli Airport Authority
 IAF,Israeli Air Force
 IANS,Institute of Air Navigation Services, a division of Eurocontrol
 IAS,Indicated airspeed
-IATA,International Air Transport Association, HQ in Montreal, Canada
+IATA,"International Air Transport Association, HQ in Montreal, Canada"
+ICA,Initial Climb Area
 IFE,In-flight Emergency
 IFR,Instrument Flight Rules
 IG,Image Generator
@@ -311,12 +314,14 @@ KCAS,Calibrated AirSpeed in Knots
 KIAS,Indicated Airspeed in Knots
 KTAS,True AirSpeed in Knots
 LAA,Lappland Aviation Academy
-LDAH,Landing distance available (Helicopter)
+LDA,Landing Distance Available
+LDAH,Landing Distance Available for Helicopter
 LITAS,Low Intensity Two Colour Approach System 
 LL,Lower Limit
 LMUK,Lockheed Martin UK
 LOD,Level of Detail
 LTA,Lower Traffic Area
+LUAW,Line up and wait
 LVNL,Luchtverkeersleiding Nederland (Air Traffic Control the Netherlands)
 LVP,Low Visibility Procedures
 LWINS,Lightweight Inertial Navigation System
@@ -380,6 +385,7 @@ RCC,Rescue Co-ordination Centre
 RCL,Runway Centre Line Lighting
 RCR,Runway Condition Reading
 RCS,Radar Cross Section
+RESA,Runway End Safety Area
 RET,Rapid Exit Taxiways
 RF,Radio Frequency
 RFFS,Rescue and Fire Fighting Services
@@ -459,6 +465,7 @@ SUA,Special Use Airspace
 SV,Supervisor
 SVFR,Special Visual Flight Rules
 SWT,Switch
+SWY,Stopway
 SYSCO,System Coordination – Data Exchange and Coordination
 TA,Terminal Airspace
 TAA,Terminal Arrival Area
@@ -494,10 +501,11 @@ TM,Traffic Management
 TMA,Terminal Control Area
 TOC,Top Of Climb
 TOD,Top Of Descent
-TODAH,Take-off distance available (Helicopter)
+TODA,Take-off Distance Available
+TODAH,Take-off Distance Available for Helicopter
 TOP,Take-Off Power
-TOR,Terms Of Reference
-TOR,Tornado aircraft
+TOR,"Terms of Reference, or Tornado aircraft"
+TORA,Takeoff Run Available
 TOWSIM,Tower Simulator
 TRACON,Terminal Radar Approach Control
 TRH,Thrust Reduction Height
