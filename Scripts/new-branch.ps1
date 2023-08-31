@@ -50,7 +50,7 @@ try {
 	if ($lastExitCode -ne "0") { throw "'git submodule update' failed with exit code $lastExitCode" }
 
 	[int]$elapsed = $stopWatch.Elapsed.TotalSeconds
-	"✔️ Creating branch '$newBranch' in repo 📂$repoPathName (based on '$currentBranch') took $elapsed sec"
+	"✔️ Created new branch '$newBranch' in repo 📂$repoPathName (based on '$currentBranch', it took $elapsed sec)"
 	exit 0 # success
 } catch {
 	"⚠️ Error in line $($_.InvocationInfo.ScriptLineNumber): $($Error[0])"
