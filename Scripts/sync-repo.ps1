@@ -2,7 +2,7 @@
 .SYNOPSIS
 	Synchronizes a repo 
 .DESCRIPTION
-	This PowerShell script synchronizes a local Git repository by push and pull (including submodules).
+	This PowerShell script synchronizes a local Git repository by pull and push (including submodules).
 .PARAMETER path
 	Specifies the path to the Git repository
 .EXAMPLE
