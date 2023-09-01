@@ -12,7 +12,7 @@
 	⏳ (2/4) Checking local repository...        	  📂C:\rust
 	⏳ (3/4) Removing untracked files in repository...
 	⏳ (4/4) Removing untracked files in submodules...
-	✔️ Cleaning repo 📂rust took 1 sec
+	✔️ Cleaned repo 📂rust in 1 sec
 .LINK
 	https://github.com/fleschutz/PowerShell
 .NOTES
@@ -45,7 +45,7 @@ try {
 	if ($lastExitCode -ne "0") { throw "'git clean' in the submodules failed with exit code $lastExitCode" }
 
 	[int]$Elapsed = $StopWatch.Elapsed.TotalSeconds
-	"✔️ Cleaning repo 📂$RepoDirName took $Elapsed sec"
+	"✔️ Cleaned repo 📂$RepoDirName in $Elapsed sec"
 	exit 0 # success
 } catch {
 	"⚠️ Error in line $($_.InvocationInfo.ScriptLineNumber): $($Error[0])"
