@@ -256,7 +256,7 @@ Mega Collection of PowerShell Scripts
 | [pull-repos.ps1](Scripts/pull-repos.ps1)             | Pulls updates for all Git repositories in a folder. [Read more...](Docs/pull-repos.md)            |
 | [remove-tag.ps1](Scripts/remove-tag.ps1)             | Removes a tag in a Git repository. [Read more...](Docs/remove-tag.md)                             |
 | [switch-branch.ps1](Scripts/switch-branch.ps1)       | Switches the branch in a Git repository. [Read more...](Docs/switch-branch.md)                    |
-| [sync-repo.ps1](Scripts/sync-repo.ps1)               | Synchronizes a Git repository by push & pull. [Read more...](Docs/sync-repo.md)                   |
+| [sync-repo.ps1](Scripts/sync-repo.ps1)               | Synchronizes a Git repository by pull & push. [Read more...](Docs/sync-repo.md)                   |
 
 🔎 Scripts for PowerShell 
 ------------------------
