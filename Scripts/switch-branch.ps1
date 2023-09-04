@@ -9,6 +9,13 @@
 	Specifies the path to the local Git repository
 .EXAMPLE
 	PS> ./switch-branch main C:\MyRepo
+	⏳ (1/6) Searching for Git executable...   git version 2.42.0.windows.1
+	⏳ (2/6) Checking local repository...
+	⏳ (3/6) Fetching updates...
+	⏳ (4/6) Switching to branch 'main'...
+	⏳ (5/6) Pulling updates...
+	⏳ (6/6) Updating submodules...
+	✔️ Switched repo 📂MyRepo to branch 'main' (took 22 sec)
 .LINK
 	https://github.com/fleschutz/PowerShell
 .NOTES
@@ -27,7 +34,7 @@ try {
 	& git --version
 	if ($lastExitCode -ne "0") { throw "Can't execute 'git' - make sure Git is installed and available" }
 
-	Write-Host "⏳ (2/6) Checking local repository...      📂$RepoDir"
+	Write-Host "⏳ (2/6) Checking local repository..."
 	$RepoDir = Resolve-Path "$RepoDir"
 	if (-not(Test-Path "$RepoDir" -pathType container)) { throw "Can't access directory: $RepoDir" }
 	$Result = (git status)
@@ -52,7 +59,7 @@ try {
 	if ($lastExitCode -ne "0") { throw "'git submodule update' failed with exit code $lastExitCode" }
 
 	[int]$Elapsed = $StopWatch.Elapsed.TotalSeconds
-	"✔️ Switched repo 📂$RepoDirName to branch '$BranchName' (in $Elapsed sec)"
+	"✔️ Switched repo 📂$RepoDirName to branch '$BranchName' (took $Elapsed sec)"
 	exit 0 # success
 } catch {
 	"⚠️ Error in line $($_.InvocationInfo.ScriptLineNumber): $($Error[0])"
