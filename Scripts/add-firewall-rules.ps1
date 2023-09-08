@@ -1,15 +1,16 @@
 ﻿<#
 .SYNOPSIS
-	Adds firewall rules for executables (needs admin rights)
+	Adds firewall rules for executables (needs admin rights).
 .DESCRIPTION
 	This PowerShell script adds firewall rules for the given executable. Administrator rights are required.
 .PARAMETER PathToExecutables
-	Specifies the path to the executables
+	Specifies the path to the executables.
+.PARAMETER Direction
+	Specifies the direction for the firewall rule. Can be 'Inbound' or 'Outbound'. Default is 'Inbound'.
+.PARAMETER FirewallProfile 
+	Specifies the firewall profile. Can be 'Domain', 'Private', or 'Public'. Multiple values can be specified as an array.
 .EXAMPLE
-	PS> ./add-firewall-rules.ps1 C:\MyApp\bin
-	Adding firewall rule for C:\MyApp\bin\app1.exe
-	Adding firewall rule for C:\MyApp\bin\app2.exe
-	...
+	PS> ./add-firewall-rules.ps1 -PathToExecutables C:\MyApp\bin -Direction Outbound -Profile Private
 .LINK
 	https://github.com/fleschutz/PowerShell
 .NOTES
@@ -18,47 +19,36 @@
 
 #Requires -RunAsAdministrator
 
-param([string]$PathToExecutables = "")
-
-$command = '
-$output = ''Firewall rules for path '' + $args[0]
-write-output $output
-for($i = 1; $i -lt $args.count; $i++){
-	$path = $args[0]
-	$path += ''\''
-	$path += $args[$i]
-
-	$null = $args[$i] -match ''[^\\]*\.exe$''
-	$name = $matches[0]
-    $output = ''Adding firewall rule for '' + $name
-	write-output $output
-	$null = New-NetFirewallRule -DisplayName $name -Direction Inbound -Program $path -Profile Domain, Private -Action Allow
-}
-write-host -foregroundColor green -noNewline ''Done - press any key to continue...'';
-[void]$Host.UI.RawUI.ReadKey(''NoEcho,IncludeKeyDown'');
-'
-
+param(
+	[string]$PathToExecutables = "",
+	[string]$Direction = "Inbound",
+	[array]$FirewallProfile  = @("Domain", "Private")
+)
 
 try {
-	if ($PathToExecutables -eq "" ) {
-		$PathToExecutables = read-host "Enter path to executables"
+	if (-not $PathToExecutables) {
+		$PathToExecutables = Read-Host "Enter path to executables"
 	}
 
-	$PathToExecutables = Convert-Path -Path $PathToExecutables
+	$AbsPath = Convert-Path -Path $PathToExecutables
+	$Executables = Get-ChildItem -Path $AbsPath -Filter "*.exe"
 
-	$Apps = Get-ChildItem "$PathToExecutables\*.exe" -Name
-
-	if($Apps.count -eq 0){
-		write-warning "No executables found. No Firewall rules have been created."
-		Write-Host -NoNewhLine 'Press any key to continue...';
-		[void]$Host.UI.RawUI.ReadKey('NoEcho,IncludeKeyDown');
-		exit 1
+	if (-not $Executables) {
+		Write-Warning "No executables found. No Firewall rules have been created."
+		Read-Host "Press Enter to continue..."
+		return
 	}
 
-	$arg = "PathToExecutables $Apps"
-	Start-Process powershell -Verb runAs -ArgumentList "-command & {$command}  $arg"
-	exit 0 # success
+	foreach ($exe in $Executables) {
+		$exeName = $exe.Name
+		$exeFullPath = $exe.FullName
+
+		Write-Output "Adding firewall rule for $exeName"
+		New-NetFirewallRule -DisplayName $exeName -Direction $Direction -Program $exeFullPath -Profile $FirewallProfile  -Action Allow
+	}
+
+	Write-Host -ForegroundColor Green "Done"
 } catch {
-	"⚠️ Error in line $($_.InvocationInfo.ScriptLineNumber): $($Error[0])"
-	exit 1
+	Write-Error "Error in line $($_.InvocationInfo.ScriptLineNumber): $($_.Exception.Message)"
 }
+
