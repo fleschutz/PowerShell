@@ -58,8 +58,6 @@ Mega Collection of PowerShell Scripts
 | [enable-crash-dumps.ps1](Scripts/enable-crash-dumps.ps1) | Enables the writing of crash dumps. [Read more...](Docs/enable-crash-dumps.md)                |
 | [hibernate.ps1](Scripts/hibernate.ps1)               | Hibernates the local computer immediately. [Read more...](Docs/hibernate.md)                      |
 | [install-github-cli.ps1](Scripts/install-github-cli.ps1) | Installs GitHub CLI. [Read more...](Docs/install-github-cli.md)                               |
-| [install-chrome-browser.ps1](Scripts/install-chrome-browser.ps1) | Installs the Google Chrome browser. [Read more...](Docs/install-chrome-browser.md)    |
-| [install-firefox.ps1](Scripts/install-firefox.ps1)   | Installs the Firefox browser. [Read more...](Docs/install-firefox.md)    |
 | [install-knot-resolver.ps1](Scripts/install-knot-resolver.ps1) | Installs the Knot Resolver (needs admin rights). [Read more...](Docs/install-knot-resolver.md)|
 | [install-ssh-client.ps1](Scripts/install-ssh-client.ps1) | Installs a SSH client (needs admin rights). [Read more...](Docs/install-ssh-client.md)        |
 | [install-ssh-server.ps1](Scripts/install-ssh-server.ps1) | Installs a SSH server (needs admin rights). [Read more...](Docs/install-ssh-server.md)        |
@@ -96,7 +94,7 @@ Mega Collection of PowerShell Scripts
 | ---------------------------------------------------- | ------------------------------------------------------------------------------------------- |
 | [close-calculator.ps1](Scripts/close-calculator.ps1) | Closes the calculator application. [Read more...](Docs/close-calculator.md)                 |
 | [close-cortana.ps1](Scripts/close-cortana.ps1)       | Closes Cortana. [Read more...](Docs/close-cortana.md)                                       |
-| [close-chrome.ps1](Scripts/close-chrome.ps1)         | Closes the Chrome browser. [Read more...](Docs/close-chrome.md)                             |
+| [close-chrome.ps1](Scripts/close-chrome.ps1)         | Closes the Google Chrome browser. [Read more...](Docs/close-chrome.md)                             |
 | [close-program.ps1](Scripts/close-program.ps1)       | Closes the given program gracefully. [Read more...](Docs/close-program.md)                  |
 | [close-edge.ps1](Scripts/close-edge.ps1)             | Closes the Edge browser. [Read more...](Docs/close-edge.md)                                 |
 | [close-file-explorer.ps1](Scripts/close-file-explorer.ps1)| Closes Microsoft File Explorer. [Read more...](Docs/close-file-explorer.md)            |
@@ -113,6 +111,8 @@ Mega Collection of PowerShell Scripts
 | [close-vlc.ps1](Scripts/close-vlc.ps1)               | Closes the VLC media player application. [Read more...](Docs/close-vlc.md)                  |
 | [close-windows-terminal.ps1](Scripts/close-windows-terminal.ps1) | Closes the Windows Terminal application. [Read more...](Docs/close-windows-terminal.md)  |
 | [enable-god-mode.ps1](Scripts/enable-god-mode.ps1)   | Enables the god mode (adds a new icon to the desktop). [Read more...](Docs/enable-god-mode.md) |
+| [install-chrome.ps1](Scripts/install-chrome.ps1)     | Installs the Google Chrome browser. [Read more...](Docs/install-chrome-browser.md)    |
+| [install-firefox.ps1](Scripts/install-firefox.ps1)   | Installs the Firefox browser. [Read more...](Docs/install-firefox.md)    |
 | [list-clipboard.ps1](Scripts/list-clipboard.ps1)     | Lists the contents of the clipboard. [Read more...](Docs/list-clipboard.md)                 |
 | [new-email.ps1](Scripts/new-email.ps1)               | Starts the default email client to write a new email. [Read more...](Docs/new-email.md)     |
 | [open-amazon-website.ps1](Scripts/open-amazon-website.ps1)| Opens Amazon's website. [Read more...](Docs/open-amazon-website.md)                    |
