@@ -7,7 +7,7 @@
 	Specifies the path to the executables.
 .PARAMETER Direction
 	Specifies the direction for the firewall rule. Can be 'Inbound' or 'Outbound'. Default is 'Inbound'.
-.PARAMETER FirewallProfile 
+.PARAMETER Profile 
 	Specifies the firewall profile. Can be 'Domain', 'Private', or 'Public'. Multiple values can be specified as an array.
 .EXAMPLE
 	PS> ./add-firewall-rules.ps1 -PathToExecutables C:\MyApp\bin -Direction Outbound -Profile Private
