@@ -491,7 +491,6 @@ CEBP,communications-enabled business processes
 CELL,Cell processor
 CEM,customer experience management
 CEMS,Contract Electronic Manufacturing Services
-CEO,Chief Executive Officer
 CEP,complex event processing
 CERCLA,"Comprehensive Environmental Response, Compensation and Litigation Act"
 CERN,Conseil Europeen pour la Recherche Nucleaire
@@ -2798,6 +2797,7 @@ VSTO,Visual Studio Tools for Office or Microsoft Visual Studio Tools
 VSTS,Visual Studio Team System
 VTAM,Virtual Telecommunications Access Method
 VTL,Virtual Tape Library
+VUGM,Virtual User Group Meeting
 VUM,VMware vSphere Update Manager
 VXLAN,Virtual Extensible LAN
 W-CDMA,Wideband Code-Division Multiple Access
