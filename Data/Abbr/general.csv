@@ -1084,7 +1084,7 @@ DICASS,DIrectional Command Activated Sonobuoy System
 DIFAR,DIrectional Frequency Analysis and Recording
 DIME,Dense Inert Metal Explosive
 DIN,Deutsches Institut für Normung (German,"German Institute for Standardization"),Drug Identification Number (Canadian drug marketing requirement)
-DINA-(p/a) Diesel Nacional (Spanish,"National Diesel"—Mexican bus and truck manufacturer now known as DINA),Dirección de Inteligencia Nacional (Spanish,"National Intelligence Directorate"—former secret police of Chile)
+DINA-Diesel Nacional (Spanish,"National Diesel"—Mexican bus and truck manufacturer now known as DINA),Dirección de Inteligencia Nacional (Spanish,"National Intelligence Directorate"—former secret police of Chile)
 DINKY,Double Income,No Kids Yet
 DIP,Dual In-line Package (electronics)
 DIPS,Defense independent pitching statistics
@@ -2723,7 +2723,7 @@ LOGPAC,Logistics Package
 LOL,Laughing Out Loud (Internet shorthand)
 LOMEZ,Low Altitude Missile Engagement Zone
 LONEOS,Lowell Observatory Near-Earth-Object Search
-LOOGY,"(p/a) Lefty One-Out GuY,a sometimes pejorative nickname for the left-handed specialist in baseball"
+LOOGY,"Lefty One-Out GuY,a sometimes pejorative nickname for the left-handed specialist in baseball"
 loq,loquitur (Latin," he speaks")
 LORTID,LOng Range Target IDentification
 LOS,Line Of Sight
@@ -4201,7 +4201,7 @@ RPL,Reverse Polish Lisp
 RPM,Records,Promotion,Music (expansion of the title of a former Canadian music magazine),Red Hat Package Manager
 rpm,revolutions per minute
 RPN,reverse Polish notation
-RPO,Radiation Protection Officer,Regular Production Option,RPR-FOM,(i/a) Realtime Platform Reference Federation Object Model ("reaper fomm")
+RPO,Radiation Protection Officer,Regular Production Option,RPR-FOM,Realtime Platform Reference Federation Object Model ("reaper fomm")
 rps,revolutions per second
 RPV,Remotely Piloted Vehicle
 RQ,Puerto Rico (FIPS 10-4 territory code)
@@ -4261,8 +4261,11 @@ SAD,Seasonal Affective Disorder,Situational Awareness Display,SADD —  original
 SADL,Situation Awareness Data Link (“saddle”),Structural Architecture Description Language
 SALT- Save A Life Today (SALT) Alert; Emergency Contact System,Southern African Large Telescope,Strategic Arms Limitation s
 SAM,Sequential-Access Memory,Sociedad Aeronáutica de Medellín,Surface-to-Air Missile
-Sambo,(p/a) Samooborona bez oruzhiya (Russian: "Самооборона без оружия",literally "self-defense without weapons")
-SARA,Southeastern Association for Research in Astronomy,Scientific Atlanta Resident Application,Scottish Amateur Rowing Association,Southern African Railway Association,State Administration for Religious Affairs,SARP —  Search And Rescue Processor,SARR — (i/a) Search And Rescue Repeater,SARS —  Severe Acute Respiratory Syndrome
+Sambo,Samooborona bez oruzhiya (Russian: "Самооборона без оружия",literally "self-defense without weapons")
+SARA,Southeastern Association for Research in Astronomy,Scientific Atlanta Resident Application,Scottish Amateur Rowing Association,Southern African Railway Association,State Administration for Religious Affairs,
+SARP,Search And Rescue Processor,
+SARR,Search And Rescue Repeater,
+SARS,Severe Acute Respiratory Syndrome
 SART,Search and Rescue Transponder,Situational Awareness Rating Technique,SARU —  South African Rugby Union
 SAS,Scandinavian Airlines System,Second Avenue Subway,Situational Awareness System,Special Air Service,Studies,Analysis and Simulation,Side Angle Side,Statistical Analysis System (original meaning; SAS Institute Inc. has evolved far beyond that scope),SASE —  Self-Addressed Stamped Envelope,SASO —  Stability and Support Operations,SASOL —  Suid Afrikaanse Steenkool en Oli.e. (Afrikaans,“South African Coal and Oil”)
 SAT,formerly Scholastic Aptitude Test and Scholastic Assessment Test; now known solely by the initials,Small Arms Trainer,SATB —  Soprano Alto Tenor Bass,SATNAV —  Satellite Navigation (Increasingly common GPS based system in new vehicles),SATs —  Standard Assessment Tasks and other similar terms describing tests used in English schools; see National Curriculum assessment#Terminology,SAU —  Saudi Arabia (ISO 3166 trigram),SAVAK —  Sazamane Etelaat va Amniate Kechvar (Iranian “Security and Intelligence Service”)
@@ -4656,8 +4659,8 @@ UML,Unified Marxist-Leninist Communist Party of Nepal,Unified Modeling Language,
 UMTS,Universal Mobile Telecommunications System
 UN,United Nations
 UNABOM,University and airline bomber (FBI case name)
-UNAIDS,(i/a) Joint United Nations Programme on HIV/AIDS
-UNaM,(p/a) Universidad Nacional de Misiones (Spanish,"National University of Misiones")
+UNAIDS,Joint United Nations Programme on HIV/AIDS
+UNaM,Universidad Nacional de Misiones (Spanish,"National University of Misiones")
 UNAM,Universidad Nacional Autónoma de México (Spanish,"National Autonomous University of Mexico")
 UNAMSIL,United Nations Mission in Sierra Leone
 UNCF,United Negro College Fund
@@ -4665,7 +4668,7 @@ UNCLOS,United Nations Convention on the Law of the Sea
 UNCSGN,United Nations Conference on the Standardization of Geographical Names
 UNCTAD,United Nations Conference on Trade and Development
 UNDCP,United Nations Drug Control Programme
-UNDE,(i/a) Union of National Defence Employees (Canada)
+UNDE,Union of National Defence Employees (Canada)
 UNDP,United Nations Development Programme
 UNEP,United Nations Environment Programme
 UNESCO,United Nations Educational,Scientific and Cultural Organization
@@ -4678,7 +4681,7 @@ UNICRI,United Nations Interregional Crime and Justice Research Institute
 UNIDO,United Nations Industrial Development Organization
 UNIFEM,United Nations Development Fund for Women (from the French Fonds de développement des Nations unies pour la femme)
 UNIS,University of Surrey,Guildford,England
-UNLV,University of Nevada,Las Vegas
+UNLV,"University of Nevada,Las Vegas"
 UNMIK,United Nations Interim Administration Mission in Kosovo
 UNMOVIC,United Nations Monitoring,Verification and Inspection Commission
 UNOSOM,United Nations Operations in Somalia
@@ -4686,31 +4689,29 @@ UNPROFOR,United Nations Protection Force (in former Yugoslavia)
 UNRISD,United Nations Research Institute for Social Development
 UNSM,Union of Nova Scotian Municipalities
 UNTAC,United Nations Transitional Authority in Cambodia
-UNTAET,(i/a) United Nations Transitional Administration in East Timor
+UNTAET,United Nations Transitional Administration in East Timor
 UNU,United Nations University
 UP,Ukraine (FIPS 10-4 country code),Union Pacific Railroad (AAR reporting mark),Upper Peninsula (of Michigan),Uttar Pradesh
 UPC,United Pentecostal Church,Universal Product Code
 UPDM,Uganda People's Democratic Movement,Unified Modeling Language Profile for DoDAF and MoDAF,Unité de psychiatrie du développement mental,Universal Pattern Decomposition Method,Unix Power Device Management,Unpressurized Docking Mast,Urban Planning,Design and Management
 UPdM,Università Popolare della Multimedialità
-UPF,Universitat Pompeu Fabra (Catalan,"Pompeu Fabra University")
+UPF,"Universitat Pompeu Fabra (Catalan for: 'Pompeu Fabra University')"
 UPI,United Press International
 UPN,United Paramount Network
 UPS,Uninterruptible Power Supply,United Parcel Service
 UPTN,Universal Personal Telecommunications Number,Upper Peninsula Telehealth Network
 UPU,Universal Postal Union
-UR,Soviet Union (NATO country code,obsolete 1992)
+UR,"Soviet Union (NATO country code,obsolete 1992)"
 URBSFA,Union royale belge des sociétés de football association (French for Royal Belgian Football Association)
 URD,User Requirements Document
-URI,Uniform Resource Identifier,University of Rhode Island
-URL, Uniform Resource Locator ("earl")
-URU,Uruguay (IOC and FIFA trigram,but not ISO 3166)
+URI,University of Rhode Island
+URU,"Uruguay (IOC and FIFA trigram, but not ISO 3166)"
 URY,Uruguay (ISO 3166 trigram)
 US,United States (also ISO 3166 and FIPS 10-4 country code digram)
 USA,"United States of America (also ISO 3166 trigram), United States Army"
 USAADAC,"U.S. Army Air Defense Artillery Center,Fort Bliss,Texas"
 USAARMC,"U.S. Army ARMor Center,Fort Knox,Kentucky"
 USAAVNC,"U.S. Army AViatioN Center,Fort Rucker,Alabama"
-USAF,United States Air Force
 USAFSPC,U.S. Air Force Space Command
 USAIC,"U.S. Army Infantry Center,U.S. Army Intelligence Center"
 USAID, United States Agency for International Development
@@ -4793,8 +4794,8 @@ VCR,Video cassette recorder
 VCT,Saint Vincent and the Grenadines (ISO 3166 trigram)
 VD,North Vietnam (ISO 3166 digram,obsolete 1977),Venereal Disease
 VDFS,VisualSVN Distributed File System (VDFS)
-VDMOS,(i/a) Vertical Double-diffused MOS transistor ("vee-dee-moss")
-VDOT,(i/a) Virginia Department of Transportation ("vee-dot")
+VDMOS,Vertical Double-diffused MOS transistor ("vee-dee-moss")
+VDOT,Virginia Department of Transportation ("vee-dot")
 VDR,North Vietnam (ISO 3166 trigram,obsolete 1977)
 VE,Venezuela (FIPS 10-4 country code; ISO 3166 digram)
 VEEGA,Venus Earth Earth Gravity Assist manœuvre
@@ -4818,7 +4819,7 @@ VIC,Victoria,Australia (postal symbol),Video Interface Chip,Virginia Intermont C
 VIDS,Visual Information Display System
 VII,7 (in Roman numerals)
 VIII,8 (in Roman numerals)
-VIN,(i/a) Vehicle Identification Number (ISO 3779)
+VIN,Vehicle Identification Number (ISO 3779)
 VIP,Very Important Person
 VIR,U.S. Virgin Islands (ISO 3166 trigram),Virgin Atlantic Airways (ICAO code)
 VIS,Vavoua International School,Vienna Independent Shorts,Viewable Image Size,Visual Instruction Set
@@ -4838,7 +4839,7 @@ VLSF,Very Loud,Stink-Free
 VLSI,Very-large-scale integration
 VLVS,Very Loud,Very Stinky
 VM,Vietnam (FIPS 10-4 country code)
-VMASC,(i/a) Virginia Modeling Analysis & Simulation Center ("vee-mask")
+VMASC,Virginia Modeling Analysis & Simulation Center ("vee-mask")
 VMF,Marine Fighting Squadron of the United States Marine Corps
 VMF,Variable Message Format
 VMN,VentroMedial Nucleus (neurophysiology)

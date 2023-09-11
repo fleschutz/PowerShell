@@ -406,6 +406,7 @@ RPM,Revolutions Per Minute
 RPS,Radar Position Symbol
 RRPM,Rotor Rotations per Minute
 RSA,Runway Safety Area
+RSAF,Republic of Singapore Air Force
 RSC,Runway Surface Condition
 RSI,Remote Status Indicato
 RSRS,Reduced Same Runway Separation
@@ -533,7 +534,7 @@ UIR,Upper Flight Information Region
 UKCAA,United Kingdom Civil Aviation Authority
 UMASS,University of Massachusetts
 URET,User Request Evaluation Tool
-USAF,US Air Force
+USAF,United States Air Force
 UTA,Upper Traffic Area
 V1,Decision speed, the speed beyond which takeoff should no longer be aborted
 V2,Takeoff speed. The speed at which the aircraft may safely be climbed with one engine inoperative
