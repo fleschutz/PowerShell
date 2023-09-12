@@ -2225,32 +2225,33 @@ RIBLOE,Remote Insight Board -- Lights Out Edition
 RID,relative identifier
 RIM,records information management
 RIM,Reference Information Model
-RIP,raster image processor
+RIP,Raster Image Processor
 RIP,Routing Information Protocol
 RIR,Regional Internet Registry
 RIS,Radiology Information System
 RIS,Remote Installation Service
-RISC,reduced instruction set computer
+RISC,Reduced Instruction Set Computer
 RJE,Remote Job Entry
 RMA,Return Material (or Merchandise) Authorization
 RMA,return merchandise authorization
 RMI,Remote Method Invocation
+RMM,Remote Monitoring & Management
 RMON,Remote Network Monitoring
 RMS,root-mean-square
 RNAAPP,Remote Network Access Application
 RNIS,Reseau Numerique a Integration de Services
-ROA,resource-oriented architecture
-ROADM,reconfigurable optical add-drop multiplexer
+ROA,Resource-Oriented Architecture
+ROADM,Reconfigurable Optical Add-Drop Multiplexer
 ROC,Report on Compliance
-ROD,reuse-oriented model or reuse-oriented development
-RODC,read-only domain controller
+ROD,Reuse-Oriented Model or Reuse-Oriented Development
+RODC,Read-Only Domain Controller
 RoHS,Restriction of Hazardous Substances
 ROI,Return On Investment
 ROIC,Return On Invested Capital
 ROKSO,Register of Known Spam Operations
-ROLAP,relational online analytical processing
-ROM,read-only memory
-ROMI,return on marketing investment
+ROLAP,Relational Online Analytical Processing
+ROM,Read-Only Memory
+ROMI,Return On Marketing Investment
 RONA,Return On Net Assets
 ROP,Reorder Point
 RoR,Ruby on Rails
@@ -2259,7 +2260,7 @@ ROU,Record Of Understanding
 ROWE,Results-Only Work Environment
 RPC,Remote Procedure Call
 RPG,Report Program Generator
-RPG,role-playing game
+RPG,Role-Playing Game
 RPM,Rapid Response Manufacturing
 RPM,remote patient monitoring
 RPO,recovery point objective
