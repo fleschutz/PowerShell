@@ -36,11 +36,11 @@ try {
 			$lossCount++
 		}
 	}
-	if ($successCount -eq 0) {
-		Write-Host "⚠️ Offline ($lossCount/$totalCount loss)"
-	} else {
+	if ($successCount -ne 0) {
 		$avg /= $successCount
-		Write-Host "✅ Ping latency is $($avg)ms average ($($min)ms...$($max)ms, $lossCount/$totalCount loss)"
+		Write-Host "✅ Online with $($avg)ms ping latency ($($min)ms...$($max)ms, $lossCount/$totalCount loss)"
+	} else {
+		Write-Host "⚠️ Offline ($lossCount/$totalCount loss)"
 	}
 	exit 0 # success
 } catch {

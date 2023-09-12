@@ -7,7 +7,7 @@
 	PS> ./check-network.ps1
 
 	N E T W O R K
-	✅ Firewall enabled
+	✅ Online with 30ms latency (16ms..56ms, 0/10 loss)
 	...
 .LINK
 	https://github.com/fleschutz/PowerShell
@@ -17,8 +17,8 @@
 
 " "
 & "$PSScriptRoot/write-green.ps1" "   N E T W O R K"
-& "$PSScriptRoot/check-firewall"
 & "$PSScriptRoot/check-ping.ps1"
+& "$PSScriptRoot/check-firewall"
 & "$PSScriptRoot/check-dns.ps1"
 & "$PSScriptRoot/check-vpn.ps1"
 & "$PSScriptRoot/list-public-ip.ps1"
