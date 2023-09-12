@@ -123,7 +123,7 @@ Want to use the PowerShell scripts everywhere on the command-line? Then you need
 * **PowerShell Plus** - an all in one IDE.
 * **Atom package** - an add-on with PowerShell language support for Atom.
 * **SublimeText package** - an add-on with PowerShell language support for Sublime Text.
-* or your **favorite text editor** as an alternative.
+* or simply your **favorite text editor** as an alternative.
 </details>
 
 <details><summary>How to write good PowerShell scripts?</summary>
