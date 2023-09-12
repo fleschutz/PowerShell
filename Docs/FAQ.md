@@ -129,7 +129,7 @@ Want to use the PowerShell scripts everywhere on the command-line? Then you need
  
 **Good PowerShell scripts are both user-friendly and platform-independent. As a starting point I recommend the following:**
 
-* As filename use the `<verb>-<object>.ps1` scheme. Approved verbs can be found here: [https://learn.microsoft.com/en-us/powershell/scripting/developer/cmdlet/approved-verbs-for-windows-powershell-commands](https://learn.microsoft.com/en-us/powershell/scripting/developer/cmdlet/approved-verbs-for-windows-powershell-commands)
+* Use the `<verb>-<object>.ps1` scheme for filenames (e.g. `list-news.ps1`). Approved verbs can be found here: [https://learn.microsoft.com/en-us/powershell/scripting/developer/cmdlet/approved-verbs-for-windows-powershell-commands](https://learn.microsoft.com/en-us/powershell/scripting/developer/cmdlet/approved-verbs-for-windows-powershell-commands)
 * Use **UTF-8 BOM** encoding to support Unicode characters in the script.
 * Add a **comment-based help** at the beginning with: `.SYNOPSIS`, `.DESCRIPTION`, `.PARAMETER`, `.EXAMPLE`, `.LINK`, and `.NOTES`.
 * Check the **requirements** for the script, e.g. `#Requires -RunAsAdministrator`, or `#Requires -Version 3`
@@ -147,7 +147,9 @@ Want to use the PowerShell scripts everywhere on the command-line? Then you need
 
 <details><summary>How to contribute or how to report a bug?</summary>
 
-**If you find something bad (like a bug, error, or any issue), please report it here by opening an Issue. Or even better: Fork the repository, add or fix the script and submit a pull request, so others can participate too.**
+**If you find something bad (like a bug, error, or any issue), please report it here by opening an Issue.**
+
+**Or even better: Fork the repository, add or fix the script and submit a pull request, so others can participate too.**
 </details>
 
 <details><summary>How to donate to this project?</summary>
