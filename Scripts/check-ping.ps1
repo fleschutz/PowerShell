@@ -7,7 +7,7 @@
 	Specifies the hosts to check, seperated by commata (default is: amazon.com,bing.com,cnn.com,dropbox.com,github.com,google.com,live.com,meta.com,x.com,youtube.com)
 .EXAMPLE
 	PS> ./check-ping.ps1
-	✅ Ping latency is 29ms average (13ms...109ms, 0/10 loss)
+	✅ Online with 18ms latency average (13ms...109ms, 0/10 ping loss)
 .LINK
 	https://github.com/fleschutz/PowerShell
 .NOTES
@@ -38,9 +38,9 @@ try {
 	}
 	if ($successCount -ne 0) {
 		$avg /= $successCount
-		Write-Host "✅ Online with $($avg)ms ping latency ($($min)ms...$($max)ms, $lossCount/$totalCount loss)"
+		Write-Host "✅ Online with $($avg)ms latency average ($($min)ms...$($max)ms, $lossCount/$totalCount ping loss)"
 	} else {
-		Write-Host "⚠️ Offline ($lossCount/$totalCount loss)"
+		Write-Host "⚠️ Offline ($lossCount/$totalCount ping loss)"
 	}
 	exit 0 # success
 } catch {
