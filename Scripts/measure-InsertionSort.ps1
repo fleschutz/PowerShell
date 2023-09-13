@@ -10,7 +10,7 @@
         Specifies the number of integers to sort
 .EXAMPLE
         PS> ./measure-InsertionSort.ps1
-	🧭 Sorting of 1000 integers by InsertionSort took 0.4234268 sec
+	🧭 0.423 sec to sort 1000 integers by InsertionSort 
 .LINK
         https://github.com/fleschutz/PowerShell
 .NOTES
@@ -44,5 +44,6 @@ $list = (1..$numIntegers | foreach{Get-Random -minimum 1 -maximum $numIntegers})
 $stopWatch = [system.diagnostics.stopwatch]::startNew()
 [InsertionSort]::Sort($list)
 [float]$elapsed = $stopWatch.Elapsed.TotalSeconds
-"🧭 Sorting of $numIntegers integers by InsertionSort took $elapsed sec"
+$elapsed3 = "{0:N3}" -f $elapsed # formatted to 3 decimal places
+"🧭 $elapsed3 sec to sort $numIntegers integers by InsertionSort"
 exit 0 # success

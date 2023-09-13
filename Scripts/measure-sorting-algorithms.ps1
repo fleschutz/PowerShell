@@ -7,7 +7,7 @@
 	Specifies the number of integers to sort (3000 by default)
 .EXAMPLE
 	PS> ./measure-sorting-algorithms.ps1
-	🧭 Sorting of 3000 integers by BubbleSort took 6.041561 sec
+	🧭 6.041 sec to sort 3000 integers by BubbleSort
 	...
 .LINK
 	https://github.com/fleschutz/PowerShell
