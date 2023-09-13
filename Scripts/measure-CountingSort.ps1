@@ -16,7 +16,7 @@
         Specifies the number of integers to sort
 .EXAMPLE
         PS> ./measure-CountingSort.ps1
-        🧭 Sorting 1000 integers by CountingSort took 0.0454597 sec
+        🧭 Sorting of 1000 integers by CountingSort took 0.0454597 sec
 .LINK
         https://github.com/fleschutz/PowerShell
 .NOTES
@@ -54,5 +54,5 @@ $list = (1..$numIntegers | foreach{Get-Random -minimum 1 -maximum $numIntegers})
 $stopWatch = [system.diagnostics.stopwatch]::startNew()
 [CountingSort]::Sort($list)
 [float]$elapsed = $stopWatch.Elapsed.TotalSeconds
-"🧭 Sorting $numIntegers integers by CountingSort took $elapsed sec"
+"🧭 Sorting of $numIntegers integers by CountingSort took $elapsed sec"
 exit 0 # success

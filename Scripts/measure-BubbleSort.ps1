@@ -11,7 +11,7 @@
 	Specifies the number of integers to sort
 .EXAMPLE
 	PS> ./measure-BubbleSort.ps1
-	🧭 Sorting 1000 integers by BubbleSort took 0.7291663 sec
+	🧭 Sorting of 1000 integers by BubbleSort took 0.7291663 sec
 .LINK
 	https://github.com/fleschutz/PowerShell
 .NOTES
@@ -40,5 +40,5 @@ $list = (1..$NumIntegers | foreach{Get-Random -minimum 1 -maximum $numIntegers})
 $stopWatch = [system.diagnostics.stopwatch]::startNew()
 [BubbleSort]::Sort($list)
 [float]$elapsed = $stopWatch.Elapsed.TotalSeconds
-"🧭 Sorting $numIntegers integers by BubbleSort took $elapsed sec"
+"🧭 Sorting of $numIntegers integers by BubbleSort took $elapsed sec"
 exit 0 # success

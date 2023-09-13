@@ -12,7 +12,7 @@
         Specifies the number of integers to sort
 .EXAMPLE
         PS> ./measure-MergeSort.ps1
-	🧭 Sorting 1000 integers by MergeSort took 0.3786619 sec
+	🧭 Sorting of 1000 integers by MergeSort took 0.3786619 sec
 .LINK
         https://github.com/fleschutz/PowerShell
 .NOTES
@@ -67,5 +67,5 @@ $list = (1..$numIntegers | foreach{Get-Random -minimum 1 -maximum $numIntegers})
 $stopWatch = [system.diagnostics.stopwatch]::startNew()
 [MergeSort]::Sort($list)
 [float]$elapsed = $stopWatch.Elapsed.TotalSeconds
-"🧭 Sorting $numIntegers integers by MergeSort took $elapsed sec"
+"🧭 Sorting of $numIntegers integers by MergeSort took $elapsed sec"
 exit 0 # success
