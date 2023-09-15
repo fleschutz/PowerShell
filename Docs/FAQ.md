@@ -95,7 +95,9 @@
 
 <details><summary>Why do some scripts show gibberish characters?</summary>
   
-**Your current terminal application doesn't support Unicode characters used by those PowerShell scripts. Use a modern one such as *Windows Terminal*, please.**
+**Your current terminal application doesn't support Unicode characters used by those PowerShell scripts.**
+
+**Use a modern one such as *Windows Terminal*, please.**
 </details>
 
 <details><summary>How to configure PowerShell as my default shell on Linux?</summary>
