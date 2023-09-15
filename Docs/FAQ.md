@@ -17,7 +17,7 @@
 
 ✔️ **It's open-source and free** - see the Github repository at: https://github.com/PowerShell/PowerShell
 
-✔️ **It's fully documented** - see the PowerShell documentation at: https://docs.microsoft.com/en-us/powershell/
+✔️ **It's fully documented** - see the PowerShell documentation at: https://docs.microsoft.com/en-us/powershell
 </details>
 
 <details><summary>How to install PowerShell on Linux?</summary>
