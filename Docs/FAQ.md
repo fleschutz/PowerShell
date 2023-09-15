@@ -53,11 +53,12 @@
 <details><summary>How to execute PowerShell scripts on Windows?</summary>
 
 1. **In the Windows desktop:** right-click the script and select: *Execute with PowerShell*
-2. **On the command-line:** launch a terminal application (e.g. *Windows Terminal*), then type: `./<FILENAME_OF_SCRIPT>`.
-3. **By context menu:** see below.
-4. **By voice control:** see repo [talk2windows](https://github.com/fleschutz/talk2windows) for more information.
-5. **By automation software:** see [Jenkins.io](https://www.jenkins.io) or [AutoHotKey.com](https://www.autohotkey.com/) for more information.
-6. **Automatically on login:** see below.
+2. **On the command-line:** launch a terminal application (e.g. *Windows Terminal*), then type: `./<SCRIPT>.ps1`.
+3. **By remote login:** use *SSH* to login to the Windows machine, then type: `cd <PATH>`, then: `./<SCRIPT>.ps1`.
+4. **By context menu:** see below.
+5. **By voice control:** see repo [talk2windows](https://github.com/fleschutz/talk2windows) for more information.
+6. **By automation software:** see [Jenkins.io](https://www.jenkins.io) or [AutoHotKey.com](https://www.autohotkey.com/) for more information.
+7. **Automatically on login:** see below.
  </details>
  
 <details><summary>How to execute PowerShell scripts in Windows context menus?</summary>
