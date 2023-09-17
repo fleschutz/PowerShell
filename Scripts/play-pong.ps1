@@ -1,16 +1,15 @@
-$console = [System.Console]::BufferWidth = [System.Console]::WindowWidth = 50
-[System.Console]::BufferHeight = [System.Console]::WindowHeight = 20
-
-$player1 = 5
-$player2 = 5
-$ball = @{
-    X = 25
-    Y = 10
-    Dx = 1
-    Dy = 1
-}
-$scorePlayer1 = 0
-$scorePlayer2 = 0
+<#
+.SYNOPSIS
+        Play the Pong game
+.DESCRIPTION
+        This PowerShell script lets you play the Pong game.
+.EXAMPLE
+        PS> ./play-pong.ps1
+.LINK
+        https://github.com/fleschutz/PowerShell
+.NOTES
+        Author: Markus Fleschutz | License: CC0
+#>
 
 function DrawScores {
     $middle = [System.Console]::WindowWidth / 2
@@ -19,11 +18,10 @@ function DrawScores {
 }
 
 function DrawFooter {
-    $text = "Created in PS only with GPT-4"
-    $rightAlignX = [System.Console]::WindowWidth - $text.Length
-    $bottomY = [System.Console]::WindowHeight - 1
-
-    [System.Console]::SetCursorPosition($rightAlignX, $bottomY)
+    $text = "| Player 1: <W> for up, <S> for down | Player 2: <UP> or <DOWN> | ESC key to quit |"
+    $x = ([System.Console]::WindowWidth - $text.Length) / 2
+    $y = [System.Console]::WindowHeight - 1
+    [System.Console]::SetCursorPosition($x, $y)
     [System.Console]::Write($text)
 }
 
@@ -51,7 +49,6 @@ function ClearPaddle($y, $isLeft) {
     }
 }
 
-
 function DrawBall($x, $y) {
     if ($x -lt 0 -or $x -ge [System.Console]::WindowWidth - 1 -or $y -lt 0 -or $y -ge [System.Console]::WindowHeight) {
         return
@@ -60,7 +57,6 @@ function DrawBall($x, $y) {
     [System.Console]::Write("O")
 }
 
-
 function ClearBall($x, $y) {
     if ($x -lt 0 -or $x -ge [System.Console]::WindowWidth - 1 -or $y -lt 0 -or $y -ge [System.Console]::WindowHeight) {
         return
@@ -68,12 +64,6 @@ function ClearBall($x, $y) {
     [System.Console]::SetCursorPosition($x, $y)
     [System.Console]::Write(" ")
 }
-
-
-DrawPaddle $player1 $true
-DrawPaddle $player2 $false
-DrawScores
-DrawFooter
 
 function UpdateBall {
     $nextX = $script:ball.X + $script:ball.Dx
@@ -106,10 +96,26 @@ function UpdateBall {
     $script:ball.Y = $nextY
 }
 
+$ui = (Get-Host).ui
+$rui = $ui.rawui
+$console = [System.Console]::BufferWidth = [System.Console]::WindowWidth = $rui.MaxWindowSize.Width
+[System.Console]::BufferHeight = [System.Console]::WindowHeight = $rui.MaxWindowSize.Height
 
-
-
-
+$player1 = 5
+$player2 = 5
+$ball = @{
+    X = 25
+    Y = 10
+    Dx = 1
+    Dy = 1
+}
+$scorePlayer1 = 0
+$scorePlayer2 = 0
+[System.Console]::Clear()
+DrawPaddle $player1 $true
+DrawPaddle $player2 $false
+DrawScores
+DrawFooter
 [System.Console]::TreatControlCAsInput = $true
 
 while ($true) {
@@ -144,9 +150,6 @@ while ($true) {
     DrawPaddle $player1 $true
     DrawPaddle $player2 $false
 
-
     Start-Sleep -Milliseconds 100
 }
-
-
 [System.Console]::Clear()
