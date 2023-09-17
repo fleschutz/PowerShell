@@ -27,9 +27,12 @@ try {
 
 		"⏳ (4/4) Upgrading installed Snap packages..."
 		& sudo snap refresh
+	} elseif ($IsMacOS) {
+		Write-Progress "⏳ Installing updates..."
+		& sudo softwareupdate -i -a
+		Write-Progress -completed " "
 	} else {
 		Write-Progress "⏳ Installing updates..."
-		" "
 		& winget upgrade --all
 		Write-Progress -completed " "
 	}
