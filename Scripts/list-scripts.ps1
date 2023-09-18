@@ -27,12 +27,12 @@ function ListScripts { param([string]$FilePath)
 }
 
 try {
-#	ListScripts "$PSScriptRoot/../Data/scripts.csv" | Format-Table -property No,Script,Description
-	$files = Get-ChildItem -path "./*.ps1" -attributes !Directory
-	foreach ($file in $files) {
-		$help = Get-Help $file -full
-		Write-Output "$($file.Name),$($help.Synopsis),"
-	}
+	ListScripts "$PSScriptRoot/../Data/scripts.csv" | Format-Table -property No,Script,Description
+#	$files = Get-ChildItem -path "./*.ps1" -attributes !Directory
+#	foreach ($file in $files) {
+#		$help = Get-Help $file -full
+#		Write-Output "$($file.Name),$($help.Synopsis),"
+#	}
 	exit 0 # success
 } catch {
 	"⚠️ Error in line $($_.InvocationInfo.ScriptLineNumber): $($Error[0])"
