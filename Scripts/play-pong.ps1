@@ -1,15 +1,15 @@
-<#
+﻿<#
 .SYNOPSIS
-        Play the Pong game
+	Play the Pong game
 .DESCRIPTION
-        This PowerShell script lets 2 players play the famous Pong game.
+	This PowerShell script lets 2 players play the famous Pong game.
 	NOTE: Player 1: <W> moves up, <S> moves down | Player 2: <UP> or <DOWN> | <ESC> to quit
 .EXAMPLE
-        PS> ./play-pong.ps1
+	PS> ./play-pong.ps1
 .LINK
-        https://github.com/fleschutz/PowerShell
+	https://github.com/fleschutz/PowerShell
 .NOTES
-        Author: Markus Fleschutz | License: CC0
+	Author: Markus Fleschutz | License: CC0
 #>
 
 function DrawScores {
@@ -34,7 +34,7 @@ function DrawPaddle($y, $isLeft) {
     }
     for ($i = 0; $i -lt 5; $i++) {
         [System.Console]::SetCursorPosition($x, $y + $i)
-        [System.Console]::Write("|")
+        [System.Console]::Write("│")
     }
 }
 
@@ -55,7 +55,7 @@ function DrawBall($x, $y) {
         return
     }
     [System.Console]::SetCursorPosition($x, $y)
-    Write-Host "o" -foregroundColor red -noNewline
+    Write-Host "🔴" -noNewline
 }
 
 function ClearBall($x, $y) {
