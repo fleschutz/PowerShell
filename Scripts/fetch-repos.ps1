@@ -17,33 +17,34 @@
 	Author: Markus Fleschutz | License: CC0
 #>
 
-param([string]$ParentDir = "$PWD")
+param([string]$parentDirPath = "$PWD")
 
 try {
-	$StopWatch = [system.diagnostics.stopwatch]::startNew()
+	$stopWatch = [system.diagnostics.stopwatch]::startNew()
 
-	Write-Host "⏳ (1) Searching for Git executable...  " -noNewline
+	Write-Host "⏳ (1) Searching for Git executable...     " -noNewline
 	& git --version
 	if ($lastExitCode -ne "0") { throw "Can't execute 'git' - make sure Git is installed and available" }
 
-	Write-Host "⏳ (2) Checking parent folder...        " -noNewline
-	if (-not(Test-Path "$ParentDir" -pathType container)) { throw "Can't access folder: $ParentDir" }
-	$Folders = (Get-ChildItem "$ParentDir" -attributes Directory)
-	$NumFolders = $Folders.Count
-	$ParentDirName = (Get-Item "$ParentDir").Name
-	Write-Host "$NumFolders subfolders"
+	Write-Host "⏳ (2) Checking parent folder...           " -noNewline
+	if (-not(Test-Path "$parentDirPath" -pathType container)) { throw "Can't access folder: $parentDirPath" }
+	$folders = (Get-ChildItem "$parentDirPath" -attributes Directory)
+	$numFolders = $folders.Count
+	$parentDirPathName = (Get-Item "$parentDirPath").Name
+	Write-Host "$numFolders subfolders"
 
-	[int]$Step = 2
-	foreach ($Folder in $Folders) {
-		$FolderName = (Get-Item "$Folder").Name
-		$Step++
-		Write-Host "⏳ ($Step/$($NumFolders + 2)) Fetching into 📂$FolderName...  "
+	[int]$step = 3
+	foreach ($folder in $folders) {
+		$folderName = (Get-Item "$folder").Name
+		Write-Host "⏳ ($step/$($numFolders + 2)) Fetching into 📂$folderName...  "
 
-		& git -C "$Folder" fetch --all --recurse-submodules --prune --prune-tags --force
-		if ($lastExitCode -ne "0") { throw "'git fetch' in $Folder failed with exit code $lastExitCode" }
+		& git -C "$folder" fetch --all --recurse-submodules --prune --prune-tags --force
+		if ($lastExitCode -ne "0") { throw "'git fetch' in $folder failed with exit code $lastExitCode" }
+
+		$step++
 	}
-	[int]$Elapsed = $StopWatch.Elapsed.TotalSeconds
-	"✔️ Fetched updates into 📂$ParentDirName ($NumFolders repos) in $Elapsed sec"
+	[int]$elapsed = $stopWatch.Elapsed.TotalSeconds
+	"✔️ Fetched updates into $numFolders repos under 📂$parentDirPathName in $elapsed sec"
 	exit 0 # success
 } catch {
 	"⚠️ Error in line $($_.InvocationInfo.ScriptLineNumber): $($Error[0])"
