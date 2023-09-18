@@ -2,7 +2,8 @@
 .SYNOPSIS
         Play the Pong game
 .DESCRIPTION
-        This PowerShell script lets you play the Pong game.
+        This PowerShell script lets 2 players play the famous Pong game.
+	NOTE: Player 1: <W> moves up, <S> moves down | Player 2: <UP> or <DOWN> | <ESC> to quit
 .EXAMPLE
         PS> ./play-pong.ps1
 .LINK
@@ -12,13 +13,13 @@
 #>
 
 function DrawScores {
-    $middle = [System.Console]::WindowWidth / 2
-    [System.Console]::SetCursorPosition($middle - 4, 1)
+    $x = [System.Console]::WindowWidth / 2 - 4
+    [System.Console]::SetCursorPosition($x, 1)
     [System.Console]::Write("$($script:scorePlayer1) - $($script:scorePlayer2)")
 }
 
 function DrawFooter {
-    $text = "| Player 1: <W> for up, <S> for down | Player 2: <UP> or <DOWN> | ESC key to quit |"
+    $text = "| Player 1: <W> moves up, <S> moves down | Player 2: <UP> or <DOWN> | <ESC> to quit |"
     $x = ([System.Console]::WindowWidth - $text.Length) / 2
     $y = [System.Console]::WindowHeight - 1
     [System.Console]::SetCursorPosition($x, $y)
@@ -54,7 +55,7 @@ function DrawBall($x, $y) {
         return
     }
     [System.Console]::SetCursorPosition($x, $y)
-    [System.Console]::Write("O")
+    Write-Host "o" -foregroundColor red -noNewline
 }
 
 function ClearBall($x, $y) {
@@ -153,3 +154,4 @@ while ($true) {
     Start-Sleep -Milliseconds 100
 }
 [System.Console]::Clear()
+exit 0 # success
