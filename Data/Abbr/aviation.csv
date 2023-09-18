@@ -254,6 +254,7 @@ ETA,"Estimated Time of Arrival, East Transition Area"
 ETL,Effective Translational Lift (for helicopters)
 ETOPS,Extended-range Twin-engine Operational Performance Standards
 ETVS,Electronic Terminal Voice Switch
+eVTOL,Electric Vertical Take-off and Landing
 FAA,U.S. Federal Aviation Administration
 FAR,Fuel Air Ratio
 FAS,Final Approach Segment
@@ -522,6 +523,7 @@ TXC,Taxiway Centreline Lights
 TXE,Taxiway Edge Lights
 UA,Unmanned Aircraft
 UAC,Upper Area Control Centre
+UAM,Urban Air Mobility
 UAS,Unmanned Aircraft Systems
 UAT,Universal Access Transceiver
 UAV,Unmanned Aerial Vehicle
