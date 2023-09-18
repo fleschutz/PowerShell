@@ -1,9 +1,9 @@
 ﻿<#
 .SYNOPSIS
-	Installs updates
+	Installs software updates
 .DESCRIPTION
 	This PowerShell script installs software updates for the local machine (needs admin rights).
-	Use the script 'list-updates.ps1' to list available updates.
+	NOTE: Use the script 'list-updates.ps1' to list the latest software updates.
 .EXAMPLE
 	PS> ./install-updates.ps1
 .LINK
@@ -32,12 +32,12 @@ try {
 		& sudo softwareupdate -i -a
 		Write-Progress -completed " "
 	} else {
-		Write-Progress "⏳ Installing updates..."
-		& winget upgrade --all
+		Write-Progress "⏳ Installing updates from winget and Microsoft Store..."
+		& winget upgrade --all --include-unknown
 		Write-Progress -completed " "
 	}
 	[int]$Elapsed = $StopWatch.Elapsed.TotalSeconds
-	"✅ Updates installed in $Elapsed sec"
+	"✅ Installed updates in $Elapsed sec"
 	exit 0 # success
 } catch {
 	"⚠️ Error in line $($_.InvocationInfo.ScriptLineNumber): $($Error[0])"
