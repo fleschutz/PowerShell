@@ -27,15 +27,15 @@ function DrawFooter {
 }
 
 function DrawPaddle($y, $isLeft) {
-    if ($isLeft) {
-        $x = 0
-    } else {
-        $x = [System.Console]::WindowWidth - 1
-    }
-    for ($i = 0; $i -lt 5; $i++) {
-        [System.Console]::SetCursorPosition($x, $y + $i)
-        [System.Console]::Write("│")
-    }
+	if ($isLeft) {
+		$x = 0
+	} else {
+		$x = [System.Console]::WindowWidth - 1
+	}
+	for ($i = 0; $i -lt 5; $i++) {
+		[System.Console]::SetCursorPosition($x, $y + $i)
+		[System.Console]::Write("▌")
+	}
 }
 
 function ClearPaddle($y, $isLeft) {
@@ -83,7 +83,7 @@ function UpdateBall {
         $nextX = $script:ball.X
     }
 
-        if ($nextX -lt 0) {
+    if ($nextX -lt 0) {
         $script:scorePlayer2++
         DrawScores
         $nextX = [System.Console]::WindowWidth / 2
