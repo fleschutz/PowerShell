@@ -2,12 +2,12 @@
 .SYNOPSIS
 	Counts the lines of code (LOC)
 .DESCRIPTION
-	This PowerShell script counts the number of code lines in a folder (including subfolders).
+	This PowerShell script counts the number of code lines in a directory tree.
 .PARAMETER path
-	Specifies the path to the folder
+	Specifies the path to the directory tree.
 .EXAMPLE
 	PS> ./count-lines-of-code.ps1 .
-	✔️ Counted 19609 lines of code (LOC) in 577 files in 📂Scripts (took 1 sec)
+	✔️ 19765 lines of code (LOC) in 578 files in 📂Scripts (it took 1 sec)
 .LINK
 	https://github.com/fleschutz/PowerShell
 .NOTES
@@ -17,23 +17,23 @@
 param([string]$path = "")
 
 try {
-	if ($path -eq "" ) { $Folder = Read-Host "Enter the path to the folder" }
+	if ($path -eq "" ) { $path = Read-Host "Enter the path to the directory tree" }
 
-	$StopWatch = [system.diagnostics.stopwatch]::startNew()
+	$stopWatch = [system.diagnostics.stopwatch]::startNew()
 	$path = Resolve-Path "$path"
 
 	Write-Progress "⏳ Counting lines of code in 📂$path ..."
-	[int]$Files = [int]$CodeLines = 0
+	[int]$files = [int]$LOC = 0
 	Get-ChildItem -Path $path -Include *.c,*.h,*.cpp,*.hpp,*.java,*.ps1 -Recurse | ForEach-Object {
-		$FileStats = Get-Content $_.FullName | Measure-Object -line
-		$CodeLines += $FileStats.Lines
-		$Files++
+		$fileStats = Get-Content $_.FullName | Measure-Object -line
+		$LOC += $fileStats.Lines
+		$files++
 	}
 	Write-Progress -completed "."
 
-	$FolderName = (Get-Item "$path").Name
-	[int]$Elapsed = $StopWatch.Elapsed.TotalSeconds
-	"✔️ Counted $CodeLines lines of code (LOC) in $Files files in 📂$FolderName (took $Elapsed sec)" 
+	$folderName = (Get-Item "$path").Name
+	[int]$Elapsed = $stopWatch.Elapsed.TotalSeconds
+	"✔️ $LOC lines of code (LOC) in $files files in 📂$folderName (took $Elapsed sec)" 
 	exit 0 # success
 } catch {
 	"⚠️ Error in line $($_.InvocationInfo.ScriptLineNumber): $($Error[0])"
