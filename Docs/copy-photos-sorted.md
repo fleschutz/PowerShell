@@ -1,7 +1,7 @@
 *copy-photos-sorted.ps1*
 ================
 
-copy-photos-sorted.ps1 [[-SourceDir] <string>] [[-TargetDir] <string>]
+copy-photos-sorted.ps1 [[-sourceDir] <string>] [[-targetDir] <string>]
 
 
 Parameters
@@ -21,25 +21,27 @@ Script Content
 .SYNOPSIS
 	Copy photos sorted by year and month
 .DESCRIPTION
-	This PowerShell script copies image files from SourceDir to TargetDir sorted by year and month.
-.PARAMETER SourceDir
+	This PowerShell script copies image files from sourceDir to targetDir sorted by year and month.
+.PARAMETER sourceDir
 	Specifies the path to the source folder
-.PARAMTER TargetDir
+.PARAMTER targetDir
 	Specifies the path to the target folder
 .EXAMPLE
 	PS> ./copy-photos-sorted.ps1 D:\iPhone\DCIM C:\MyPhotos
+	⏳ Copying IMG_20230903_134445.jpg to C:\MyPhotos\2023\09 SEP\...
+	✔️ Copied 1 photo to 📂C:\MyPhotos in 41 sec
 .LINK
 	https://github.com/fleschutz/PowerShell
 .NOTES
 	Author: Markus Fleschutz | License: CC0
 #>
 
-param([string]$SourceDir = "", [string]$TargetDir = "")
+param([string]$sourceDir = "", [string]$targetDir = "")
 
-function CopyFile { param([string]$SourcePath, [string]$TargetDir, [int]$Date, [string]$Filename)
-	[int]$Year = $Date / 10000
-	[int]$Month = ($Date / 100) % 100
-	$MonthDir = switch($Month) {
+function CopyFile { param([string]$sourcePath, [string]$targetDir, [int]$date, [string]$filename)
+	[int]$year = $date / 10000
+	[int]$month = ($date / 100) % 100
+	$monthDir = switch($month) {
 	1  {"01 JAN"}
 	2  {"02 FEB"}
 	3  {"03 MAR"}
@@ -53,52 +55,52 @@ function CopyFile { param([string]$SourcePath, [string]$TargetDir, [int]$Date, [
 	11 {"11 NOV"}
 	12 {"12 DEC"}
 	}
-	$TargetPath = "$TargetDir/$Year/$MonthDir/$Filename"
+	$TargetPath = "$targetDir/$year/$monthDir/$filename"
 	if (Test-Path "$TargetPath" -pathType leaf) {
-		Write-Host "⏳ Skipping existing $Year/$MonthDir/$Filename..."
+		Write-Host "⏳ Skipping existing $targetDir\$year\$monthDir\$filename..."
 	} else {
-		Write-Host "⏳ Copying $Filename to $Year/$MonthDir..."
-		New-Item -path "$TargetDir" -name "$Year" -itemType "directory" -force | out-null
-		New-Item -path "$TargetDir/$Year" -name "$MonthDir" -itemType "directory" -force | out-null
-		Copy-Item "$SourcePath" "$TargetPath" -force
+		Write-Host "⏳ Copying $filename to $targetDir\$year\$monthDir\..."
+		New-Item -path "$targetDir" -name "$year" -itemType "directory" -force | out-null
+		New-Item -path "$targetDir/$year" -name "$monthDir" -itemType "directory" -force | out-null
+		Copy-Item "$sourcePath" "$TargetPath" -force
 	}
 }
 
 try {
-	if ($SourceDir -eq "") { $SourceDir = Read-Host "Enter file path to source directory" }
-	if ($TargetDir -eq "") { $TargetDir = Read-Host "Enter file path to target directory" }
-	$StopWatch = [system.diagnostics.stopwatch]::startNew()
+	if ($sourceDir -eq "") { $sourceDir = Read-Host "Enter file path to the source directory" }
+	if ($targetDir -eq "") { $targetDir = Read-Host "Enter file path to the target directory" }
+	$stopWatch = [system.diagnostics.stopWatch]::startNew()
 
-	Write-Host "⏳ Checking source directory 📂$($SourceDir)..."
-	if (-not(Test-Path "$SourceDir" -pathType container)) { throw "Can't access source directory: $SourceDir" }
-	$Files = (Get-ChildItem "$SourceDir\*.jpg" -attributes !Directory)
+	Write-Host "⏳ Checking source directory 📂$($sourceDir)..."
+	if (-not(Test-Path "$sourceDir" -pathType container)) { throw "Can't access source directory: $sourceDir" }
+	$files = (Get-ChildItem "$sourceDir\*.jpg" -attributes !Directory)
 
-	Write-Host "⏳ Checking target directory 📂$($TargetDir)..."
-	if (-not(Test-Path "$TargetDir" -pathType container)) { throw "Can't access target directory: $TargetDir" }
+	Write-Host "⏳ Checking target directory 📂$($targetDir)..."
+	if (-not(Test-Path "$targetDir" -pathType container)) { throw "Can't access target directory: $targetDir" }
 
-	foreach($File in $Files) {
-		$Filename = (Get-Item "$File").Name
-		if ("$Filename" -like "IMG_*_*.jpg") {
-			$Array = $Filename.split("_")
-			CopyFile "$File" "$TargetDir" $Array[1] "$Filename"
-		} elseif ("$Filename" -like "IMG-*-*.jpg") {
-			$Array = $Filename.split("-")
-			CopyFile "$File" "$TargetDir" $Array[1] "$Filename"
-		} elseif ("$Filename" -like "PANO_*_*.jpg") {
-			$Array = $Filename.split("_")
-			CopyFile "$File"  "$TargetDir" $Array[1] "$Filename"
-		} elseif ("$Filename" -like "PANO-*-*.jpg") {
-			$Array = $Filename.split("-")
-			CopyFile "$File" "$TargetDir" $Array[1] "$Filename"
-		} elseif ("$Filename" -like "SAVE_*_*.jpg") {
-			$Array = $Filename.split("_")
-			CopyFile "$File" "$TargetDir" $Array[1] "$Filename"
+	foreach($file in $files) {
+		$filename = (Get-Item "$file").Name
+		if ("$filename" -like "IMG_*_*.jpg") {
+			$Array = $filename.split("_")
+			CopyFile "$file" "$targetDir" $Array[1] "$filename"
+		} elseif ("$filename" -like "IMG-*-*.jpg") {
+			$Array = $filename.split("-")
+			CopyFile "$file" "$targetDir" $Array[1] "$filename"
+		} elseif ("$filename" -like "PANO_*_*.jpg") {
+			$Array = $filename.split("_")
+			CopyFile "$file"  "$targetDir" $Array[1] "$filename"
+		} elseif ("$filename" -like "PANO-*-*.jpg") {
+			$Array = $filename.split("-")
+			CopyFile "$file" "$targetDir" $Array[1] "$filename"
+		} elseif ("$filename" -like "SAVE_*_*.jpg") {
+			$Array = $filename.split("_")
+			CopyFile "$file" "$targetDir" $Array[1] "$filename"
 		} else {
-			Write-Host "⏳ Skipping $Filename with unknown filename format..."
+			Write-Host "⏳ Skipping $filename with unknown filename format..."
 		}
 	}
-	[int]$Elapsed = $StopWatch.Elapsed.TotalSeconds
-	"✔️ copied $($Files.Count) photos from 📂$SourceDir to 📂$TargetDir in $Elapsed sec"
+	[int]$elapsed = $stopWatch.Elapsed.TotalSeconds
+	"✔️ Copied $($files.Count) photos to 📂$targetDir in $elapsed sec"
 	exit 0 # success
 } catch {
 	"⚠️ Error in line $($_.InvocationInfo.ScriptLineNumber): $($Error[0])"
@@ -106,4 +108,4 @@ try {
 }
 ```
 
-*(generated by convert-ps2md.ps1 using the comment-based help of copy-photos-sorted.ps1 as of 09/13/2023 09:48:39)*
+*(generated by convert-ps2md.ps1 using the comment-based help of copy-photos-sorted.ps1 as of 09/20/2023 17:04:39)*
