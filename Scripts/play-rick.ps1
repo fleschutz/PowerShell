@@ -1,10 +1,10 @@
 ﻿<#
 .SYNOPSIS
-	Opens Rick Astley's song
+	Plays Rick Astley
 .DESCRIPTION
 	This PowerShell script launches the Web browser with YouTube playing Rick Astley.
 .EXAMPLE
-	PS> ./open-rick-astley.ps1
+	PS> ./play-rick.ps1
 .LINK
 	https://github.com/fleschutz/PowerShell
 .NOTES
