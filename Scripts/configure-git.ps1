@@ -33,7 +33,7 @@ try {
 	"⏳ (2/6) Query user settings..."
 	if ($fullName -eq "") { $fullName = Read-Host "Enter your full name" }
 	if ($emailAddress -eq "") { $emailAddress = Read-Host "Enter your e-mail address"}
-	if ($favoriteEditor -eq "") { $favoriteEditor = Read-Host "Enter your favorite text editor (atom,emacs,nano,subl,vi,vim,...)" }
+	if ($favoriteEditor -eq "") { $favoriteEditor = Read-Host "Enter your favorite text editor (atom,code,emacs,nano,notepad,subl,vi,vim,...)" }
 	$stopWatch = [system.diagnostics.stopwatch]::startNew()
 
 	"⏳ (3/6) Saving basic settings (autocrlf,symlinks,longpaths,etc.)..."
