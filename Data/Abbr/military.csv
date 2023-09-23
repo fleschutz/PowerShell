@@ -87,8 +87,11 @@ ASV,Anti-Surface Vessel
 ASVAB,Armed Services Vocational Aptitude Battery
 ASW,Anti-Submarine Warfare
 AT,Anti-Tank
+ATACMS,Army TACtical Missile System
+ATAS,Air-To-Air Stinger (missile)
 ATBM,Anti-Tactical Ballistic Missile
 ATCS,Air Traffic Control Section
+ATCCIS,Army Tactical Command and Control Information System
 ATGW,Anti-Tank Guided Weapon
 ATR,Anti-Tank Rifle
 AUW,All-Up Weight
@@ -529,6 +532,7 @@ NMCS,Not Mission Capable, Supply
 NMS,National Military Strategy
 NOC,National Operations Center
 NOE,Nap of the Earth
+NORAD,North American Aerospace Defense Command (formerly North American Air Defense Command)
 NSC,National Security Council
 NSFS,Naval Surface Fire Support
 NSL,No-Strike List
