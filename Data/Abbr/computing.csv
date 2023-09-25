@@ -135,9 +135,9 @@ ADC,automated data collection
 ADE,qutomated data entry
 ADF,Automatic Document Feeder
 ADO,ActiveX Data Objects
-ADP,automatic data processing
+ADP,Automatic Data Processing
 ADPCM,adaptive differential pulse-code modulation
-ADS,alternate data stream
+ADS,Alternate Data Stream
 ADSI,Analog Display Services Interface
 ADSL,Asymmetric Digital Subscriber Line
 ADSM,ADSTAR Distributed Storage Management
@@ -175,7 +175,6 @@ ALM,application lifecycle management
 ALPR,Automated License Plate Recognition
 alt.,alternate newsgroup
 ALU,Arithmetic Logic Unit
-ALU,arithmetic-logic unit
 AMD,Advanced Micro Devices
 AMD-V,AMD virtualization
 AMI,advanced metering infrastructure
@@ -203,42 +202,37 @@ API,Application Programming Interface
 APICS,American Production and Inventory Control Society
 APIPA,Automatic Private IP Addressing
 APL,a programming language
-APM,application performance monitoring
-APM,application portfolio management
-APO,Advanced Planner and Optimizer
-APO,advanced planning and optimization
+APM,"application performance monitoring, application portfolio management"
+APO,"Advanced Planner and Optimizer, advanced planning and optimization"
 AppBlast,Project AppBlast
 APPC,Advanced Program-to-Program Communication or LU 6.2
-Apple VPP,Apple Volume Purchase Program
-Apple WWDC,Apple Worldwide Developers Conference
 APPN,Advanced Peer-to-Peer Networking
 APQP,advanced product quality planning
-APS,advanced planning and scheduling
-APT,advanced persistent threat
+APS,Advanced Planning and Scheduling
+APT,Advanced Persistent Threat
 APU,Accelerated Processing Unit
-AR,accounts receivable
-AR,augmented reality
+AR,Accounts Receivable
+AR,Augmented Reality
 ARAX,Asynchronous Ruby and XML
 ARIN,American Registry of Internet Numbers
-Arista EOS,Arista Extensible Operating System
 ARJ,Archive Robert Jung
 ARP,Address Resolution Protocol
 ARPA,Advanced Research Projects Agency
 ARPU,average revenue per user or average revenue per unit
-ARQ,automatic repeat request
+ARQ,Automatic Repeat Request
 ARRA,American Recovery and Reinvestment Act of 2009
 ARRL,American Radio Relay League
-AS,autonomous system
+AS,Autonomous System
 AS/400,"IBM iSeries, AS/400e, eServer iSeries/400"
 AS1,Applicability Statement 1
 AS2,Applicability Statement 2
 ASAP,AcceleratedSAP
 ASCII,American Standard Code for Information Interchange
-ASD,agile software development
+ASD,Agile Software Development
 ASE,Adaptive Server Enterprise
 ASF,Apache Software Foundation
 ASHRAE,"American Society of Heating, Refrigerating, and Air-Conditioning Engineers"
-ASIC,application-specific integrated circuit
+ASIC,Application-Specific Integrated Circuit
 ASIO,Audio Stream Input/Output
 ASLR,address space layout randomization
 ASN,advanced shipping notice
