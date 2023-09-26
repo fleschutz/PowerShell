@@ -1,0 +1,21 @@
+<#
+.SYNOPSIS
+        Opens the RDP app
+.DESCRIPTION
+        This script launches the Remote Desktop Protocol (RDP) application.
+.EXAMPLE
+        PS> ./open-rdp.ps1
+.LINK
+        https://github.com/fleschutz/PowerShell
+.NOTES
+        Author: Markus Fleschutz | License: CC0
+#>
+
+param([string]$hostname = "")
+
+if ($hostname -eq "") {
+	& Start-Process "$env:windir\system32\mstsc.exe"
+} else {
+	& Start-Process "$env:windir\system32\mstsc.exe" -ArgumentList "/v:$hostname"
+}
+exit 0 # success
