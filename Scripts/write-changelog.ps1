@@ -1,4 +1,4 @@
-<#
+﻿<#
 .SYNOPSIS
         Writes a changelog
 .DESCRIPTION
@@ -14,17 +14,30 @@
 .NOTES
         Author: Markus Fleschutz | License: CC0
 #>
+
+param([string]$RepoDir = "$PWD")
  
 try {
-	#Set-Location (Split-Path $MyInvocation.MyCommand.Path)
+        $StopWatch = [system.diagnostics.stopwatch]::startNew()
 	$branch = $args[0]
 	$version = ($args[1]+"..")
 	$path = $args[2]
 
-	Write-Progress "Listing Git commits..."
-	$commits = (git log --boundary --pretty=oneline --pretty=format:%s $version)
+	Write-Progress "⏳ (1/5) Searching for Git executable..."
+        $null = (git --version)
+        if ($lastExitCode -ne "0") { throw "Can't execute 'git' - make sure Git is installed and available" }
 
-	Write-Progress "Sorting the Git commits..."
+	Write-Progress "⏳ (2/5) Checking local repository..."
+        if (!(Test-Path "$RepoDir" -pathType container)) { throw "Can't access folder: $RepoDir" }
+
+	Write-Progress "⏳ (3/5) Fetching commits..."
+        & git -C "$RepoDir" fetch --all --force --quiet
+        if ($lastExitCode -ne "0") { throw "'git fetch --all' failed with exit code $lastExitCode" }
+
+	Write-Progress "⏳ (4/5) Listing Git commits..."
+	$commits = (git -C "$RepoDir" log --boundary --pretty=oneline --pretty=format:%s)
+
+	Write-Progress "⏳ (5/5) Sorting the Git commits..."
 	$features = @()
 	$fixes = @()
 	$updates = @()
@@ -52,7 +65,7 @@ try {
 			$other += $commit
 		}
  	}
-	Write-Progress "Writing output..."
+	Write-Progress -completed " "
 	$tab = "    "
 	Write-Output " "
 	Write-Output "1. New Features"
@@ -78,7 +91,6 @@ try {
 	foreach($c in $other) {
 		Write-Output ($tab + "- " + $c)
 	}
-	Write-Progress -completed " "
 	exit 0 # success
 } catch {
 	Write-Error $_.Exception.ToString()
