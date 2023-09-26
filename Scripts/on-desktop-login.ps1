@@ -13,6 +13,8 @@
 #>
 
 try {
+	& "$PSScriptRoot/write-big.ps1" "Welcome back"
+	" "
 	& "$PSScriptRoot/open-dashboards.ps1"
 	" "
 	& "$PSScriptRoot/write-quote.ps1"
