@@ -3,6 +3,7 @@
         Opens the RDP app
 .DESCRIPTION
         This script launches the Remote Desktop Protocol (RDP) application.
+	NOTE: Documentation of mstsc at: https://learn.microsoft.com/en-us/windows-server/administration/windows-commands/mstsc
 .EXAMPLE
         PS> ./open-rdp.ps1
 .LINK
