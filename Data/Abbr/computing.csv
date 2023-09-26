@@ -2569,6 +2569,7 @@ TDD,test-driven development
 TDM,Team Data Manager
 TDM,time-division multiplexing
 TDMA,time division multiple access
+TEE,Trusted Execution Environment
 telco,telephone company
 TETRA,Terrestrial Trunked Radio
 TEWE,Technology for Enterprise-Wide Engineering
@@ -2603,8 +2604,7 @@ TP,thin provisioning
 TPA,Technology and Product Assurance
 TPC,Transaction Processing Performance Council
 TPI,Total Profit Improvement
-TPM,Total Productive Maintenance
-TPM,Trusted Platform Module
+TPM,"Total Productive Maintenance, Trusted Platform Module"
 TPOP,Time-Phased Order Point
 TPS,Terminal Proxy Server
 TPU,Tensor Processing Unit
