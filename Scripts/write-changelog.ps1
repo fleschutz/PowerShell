@@ -2,12 +2,13 @@
 .SYNOPSIS
         Writes a changelog
 .DESCRIPTION
-        This PowerShell script writes a changelog by using the Git commits.
+        This PowerShell script writes an automated changelog to the console in Markdown format by using the Git commits.
+	NOTE: You may also redirect the output into a file for later use.
 .EXAMPLE
         PS> ./write-changelog.ps1
 	  
-	1. New Features
-	---------------
+	Changelog of PowerShell
+	=======================
 	...
 .LINK
         https://github.com/fleschutz/PowerShell
@@ -18,30 +19,28 @@
 param([string]$RepoDir = "$PWD")
  
 try {
-        $StopWatch = [system.diagnostics.stopwatch]::startNew()
-	$branch = $args[0]
-	$version = ($args[1]+"..")
-	$path = $args[2]
+	[system.threading.thread]::currentthread.currentculture = [system.globalization.cultureinfo]"en-US"
 
-	Write-Progress "⏳ (1/5) Searching for Git executable..."
+	Write-Progress "⏳ (1/6) Searching for Git executable..."
         $null = (git --version)
         if ($lastExitCode -ne "0") { throw "Can't execute 'git' - make sure Git is installed and available" }
 
-	Write-Progress "⏳ (2/5) Checking local repository..."
+	Write-Progress "⏳ (2/6) Checking local repository..."
         if (!(Test-Path "$RepoDir" -pathType container)) { throw "Can't access folder: $RepoDir" }
+	$RepoDirName = (Get-Item "$RepoDir").Name
 
-	Write-Progress "⏳ (3/5) Fetching commits..."
+	Write-Progress "⏳ (3/6) Fetching the latest commits..."
         & git -C "$RepoDir" fetch --all --force --quiet
         if ($lastExitCode -ne "0") { throw "'git fetch --all' failed with exit code $lastExitCode" }
 
-	Write-Progress "⏳ (4/5) Listing Git commits..."
-	$commits = (git -C "$RepoDir" log --boundary --pretty=oneline --pretty=format:%s)
+	Write-Progress "⏳ (4/6) Listing all Git commit messages..."
+	$commits = (git -C "$RepoDir" log --boundary --pretty=oneline --pretty=format:%s | sort -u)
 
-	Write-Progress "⏳ (5/5) Sorting the Git commits..."
+	Write-Progress "⏳ (5/6) Sorting the Git commit messages..."
 	$features = @()
 	$fixes = @()
 	$updates = @()
-	$other = @()
+	$various = @()
 	foreach($commit in $commits) {
  		if ($commit -like "New*") {
  			$features += $commit
@@ -53,43 +52,63 @@ try {
  			$fixes += $commit
  		} elseif ($commit -like "Hotfix*") {
  			$fixes += $commit
+ 		} elseif ($commit -like "Bugfix*") {
+ 			$fixes += $commit
 		} elseif ($commit -like "Update*") {
  			$updates += $commit
+		} elseif ($commit -like "Updating*") {
+ 			$updates += $commit
 		} elseif ($commit -like "Updaate*") {
+ 			$updates += $commit
+		} elseif ($commit -like "Adapt*") {
  			$updates += $commit
 		} elseif ($commit -like "Improve*") {
  			$updates += $commit
 		} elseif ($commit -like "Change*") {
  			$updates += $commit
+		} elseif ($commit -like "Changing*") {
+ 			$updates += $commit
  		} else {
-			$other += $commit
+			$various += $commit
 		}
  	}
+	Write-Progress "⏳ (6/6) Listing all contributors..."
+	$contributors = (git -C "$RepoDir" log --format='%aN' | sort -u)
 	Write-Progress -completed " "
-	$tab = "    "
+
+        $Today = (Get-Date).ToShortDateString()
 	Write-Output " "
-	Write-Output "1. New Features"
+	Write-Output "Changelog of $RepoDirName as of $Today"
+	Write-Output "======================================"
+	Write-Output " "
+	Write-Output "🚀 New Features"
 	Write-Output "---------------"
  	foreach($c in $features) {
- 		Write-Output ($tab + "- " + $c)
+ 		Write-Output "* $c"
 	}
 	Write-Output " "
- 	Write-Output "2. Hotfixes"
-	Write-Output "-----------"
+ 	Write-Output "⚠️ Bug Fixes"
+	Write-Output "------------"
  	foreach($c in $fixes) {
- 		Write-Output ($tab + "- " + $c)
+ 		Write-Output "* $c"
  	}
 	Write-Output " "
-	Write-Output "3. Updates"
+	Write-Output "🎉 Updates"
 	Write-Output "----------"
 	foreach($c in $updates) {
-		Write-Output ($tab + "- " + $c)
+		Write-Output "* $c"
 	}
 	Write-Output " "
-	Write-Output "4. Various Changes"
-	Write-Output "------------------"
-	foreach($c in $other) {
-		Write-Output ($tab + "- " + $c)
+	Write-Output "🔦 Various"
+	Write-Output "----------"
+	foreach($c in $various) {
+		Write-Output "* $c"
+	}
+	Write-Output " "
+	Write-Output "🥇 Contributors"
+	Write-Output "---------------"
+	foreach($c in $contributors) {
+		Write-Output "* $c"
 	}
 	exit 0 # success
 } catch {
