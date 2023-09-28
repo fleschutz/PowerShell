@@ -313,7 +313,7 @@ remind-me.ps1, ,Creates a scheduled task that will display a popup message,
 remove-empty-dirs.ps1,filesystem,"Removes all empty subfolders within a directory tree",
 remove-old-dirs.ps1,filesystem,"Removes old directories",
 remove-print-jobs.ps1,misc,"Removes all jobs from all printers",
-remove-tag.ps1,git,"Removes a Git tag (locally, remote, or both)"
+remove-tag.ps1,git,"Removes a Git tag (locally, remote, or both)",
 replace-in-files.ps1, ,Search and replace a pattern in the given files by the replacement,
 restart-network-adapters.ps1, ,Restarts all local network adapters,
 save-screenshot.ps1, ,Saves a single screenshot,
