@@ -407,7 +407,7 @@ weather-report.ps1, ,Lists the local weather report,
 weather.ps1, ,Lists the current weather forecast,
 what-is.ps1, ,Explains an abbreviation,
 write-animated.ps1, ,Writes animated text,
-write-ascii-image.ps1, ,write-ascii-image.ps1
+write-ascii-image.ps1, ,write-ascii-image.ps1,
 write-big.ps1, ,Writes text in big letters,
 write-blue.ps1, ,Writes text in a blue foreground color,
 write-braille.ps1, ,Writes text in Braille,
