@@ -1,37 +1,48 @@
 ﻿<#
 .SYNOPSIS
-	Lists all PowerShell scripts
+	Lists the PowerShell scripts
 .DESCRIPTION
-	This PowerShell script lists all PowerShell scripts in the repository (sorted alphabetically).
+	This PowerShell script lists the Mega collection of PowerShell scripts (sorted alphabetically and optionally by category).
+.PARAM category
+	Specifies the desired category: audio, desktop, filesystem, fun, git, misc, or: * (default)
 .EXAMPLE
 	PS> ./list-scripts.ps1
+
+	 No Script                    Category   Description
+	 -- ------                    --------   -----------
+	  1 add-firewall-rules.ps1    misc       Adds firewall rules for executables (needs admin rights)
+	...
 .LINK
 	https://github.com/fleschutz/PowerShell
 .NOTES
 	Author: Markus Fleschutz | License: CC0
 #>
 
-function ListScripts { param([string]$FilePath)
-	Write-Progress "Reading $FilePath..."
-	$table = Import-CSV "$FilePath"
+param([string]$category = "*")
+
+function ListScripts([string]$category) { 
+	Write-Progress "Loading data from ../Data/script.csv..."
+	$table = Import-CSV "$PSScriptRoot/../Data/scripts.csv"
 	[int]$No = 1
 	foreach($row in $table) {
-		New-Object PSObject -Property @{
-			'No' = $No++
-			'Script' = $row.SCRIPT
-			'Description' = $row.DESCRIPTION
+		if ($row.CATEGORY -like $category) { 
+			New-Object PSObject -Property @{
+				'No' = $No++
+				'Script' = $row.SCRIPT
+				'Category' = $row.CATEGORY
+				'Description' = $row.DESCRIPTION
+			}
 		}
 	}
-	$global:NumScripts = $Table.Count
-	Write-Progress -completed "."
+	Write-Progress -completed " "
 }
 
 try {
-	ListScripts "$PSScriptRoot/../Data/scripts.csv" | Format-Table -property No,Script,Description
+	ListScripts $category | Format-Table -property No,Script,Category,Description
 #	$files = Get-ChildItem -path "./*.ps1" -attributes !Directory
 #	foreach ($file in $files) {
 #		$help = Get-Help $file -full
-#		Write-Output "$($file.Name),$($help.Synopsis),"
+#		Write-Output "$($file.Name), ,`"$($help.Synopsis)`","
 #	}
 	exit 0 # success
 } catch {

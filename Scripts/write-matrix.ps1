@@ -59,3 +59,4 @@ while ($true) {
 	Start-Sleep -milliseconds 30
 }
 exit 0 # success
+
