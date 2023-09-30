@@ -17,6 +17,9 @@
 #>
 
 try {
+	Write-Host " "
+	Write-Host "Windows Defender Settings                               Value"
+	Write-Host "-------------------------                               -----" -noNewline
 	Get-MpPreference
 	"NOTE: Documentation at: https://learn.microsoft.com/en-us/previous-versions/windows/desktop/legacy/dn455323(v=vs.85)"
 	exit 0 # success
