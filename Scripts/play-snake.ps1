@@ -18,11 +18,11 @@ $a=0..($q.Height-1)|%{$i=$_;0..$w|%{@{X=$_;Y=$i}}};$s=($f=$n=$a[($x=$y=$d=3)]),$
 
 function Z($c,$t) {
 	$u.CursorPosition=$c
-	Write-Host $t -N
+	Write-Host $t -noNewline -foregroundColor green
 }
 
 while(0..$w-contains$x-and($b=$x+$y*($w+1))-ge0-and($n=$a[$b])-and$s-notcontains$n) {
-	Z $n "X"
+	Z $n "O"
 	sleep -M 99
 	while($u.KeyAvailable-and1..4-contains($k=$u.ReadKey(15).VirtualKeyCode-36)-and$d%2-ne$k%2) {
 		$d=$k
@@ -43,5 +43,10 @@ while(0..$w-contains$x-and($b=$x+$y*($w+1))-ge0-and($n=$a[$b])-and$s-notcontains
 	Z $f "🔶"
 }
 
-Write-Host "`n---------`nGAME OVER`n---------"
+Write-Host " "
+Write-Host "-----------------------------------" -backgroundColor red
+Write-Host "| !!!   G A M E    O V E R    !!! |" -backgroundColor red
+Write-Host "-----------------------------------" -backgroundColor red
+[System.Console]::Beep(500,300)
+Start-Sleep -milliseconds 300
 exit 0 # success
