@@ -58,6 +58,8 @@ Mega Collection of PowerShell Scripts
 | [enable-crash-dumps.ps1](Scripts/enable-crash-dumps.ps1) | Enables the writing of crash dumps. [Read more...](Docs/enable-crash-dumps.md)                |
 | [hibernate.ps1](Scripts/hibernate.ps1)               | Hibernates the local computer immediately. [Read more...](Docs/hibernate.md)                      |
 | [install-github-cli.ps1](Scripts/install-github-cli.ps1) | Installs GitHub CLI. [Read more...](Docs/install-github-cli.md)                               |
+| [install-chrome-browser.ps1](Scripts/install-chrome-browser.ps1) | Installs the Google Chrome browser. [Read more...](Docs/install-chrome-browser.md)    |
+| [firefox-installer.ps1](Scripts/firefox-installer.ps1) | Installs the firefox browser. [Read more...](Docs/install-firefox-browser.md)    |
 | [install-knot-resolver.ps1](Scripts/install-knot-resolver.ps1) | Installs the Knot Resolver (needs admin rights). [Read more...](Docs/install-knot-resolver.md)|
 | [install-ssh-client.ps1](Scripts/install-ssh-client.ps1) | Installs a SSH client (needs admin rights). [Read more...](Docs/install-ssh-client.md)        |
 | [install-ssh-server.ps1](Scripts/install-ssh-server.ps1) | Installs a SSH server (needs admin rights). [Read more...](Docs/install-ssh-server.md)        |
@@ -86,6 +88,8 @@ Mega Collection of PowerShell Scripts
 | [restart-network-adapters.ps1](Scripts/restart-network-adapters.ps1) | Restarts all local network adapters. [Read more...](Docs/restart-network-adapters.md)|
 | [upgrade-ubuntu.ps1](Scripts/upgrade-ubuntu.ps1)     | Upgrades Ubuntu Linux to the latest (LTS) release. [Read more...](Docs/upgrade-ubuntu.md)         |
 | [wake-up.ps1](Scripts/wake-up.ps1)                   | Wakes up a computer using Wake-on-LAN. [Read more...](Docs/wakeup.md)                             |
+|[WinDefender.ps1](Scripts/WinDefender.ps1)|Turn off/on and check for real time monitoring of Windwos Defender. [Read more...](Docs/WinDefender.md)|
+
 
 💻 Scripts for the Desktop
 ---------------------------
