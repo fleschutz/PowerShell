@@ -5,7 +5,7 @@
 	This PowerShell script queries the power status and prints it.
 .EXAMPLE
 	PS> ./check-power.ps1
-	⚠️ Battery at 9% (54 min remaining) with power scheme: HP Optimized 
+	⚠️ Battery at 9% · 54 min remaining · power scheme 'HP Optimized' 
 .LINK
 	https://github.com/fleschutz/PowerShell
 .NOTES
@@ -14,41 +14,43 @@
 
 try {
 	if ($IsLinux) {
-		$Reply = "✅ AC powered" # TODO, just guessing :-)
+		$reply = "✅ AC powered" # TODO, just guessing :-)
 	} else {
 		Add-Type -Assembly System.Windows.Forms
-		$Details = [System.Windows.Forms.SystemInformation]::PowerStatus
-		[int]$Percent = 100 * $Details.BatteryLifePercent
-		[int]$Remaining = $Details.BatteryLifeRemaining / 60
-		if ($Details.PowerLineStatus -eq "Online") {
-			if ($Details.BatteryChargeStatus -eq "NoSystemBattery") {
-				$Reply = "✅ AC powered"
-			} elseif ($Percent -ge 95) {
-				$Reply = "✅ Battery fully charged ($Percent%)"
+		$details = [System.Windows.Forms.SystemInformation]::PowerStatus
+		[int]$percent = 100 * $details.BatteryLifePercent
+		[int]$remaining = $details.BatteryLifeRemaining / 60
+		if ($details.PowerLineStatus -eq "Online") {
+			if ($details.BatteryChargeStatus -eq "NoSystemBattery") {
+				$reply = "✅ AC powered"
+			} elseif ($percent -ge 95) {
+				$reply = "✅ Battery $percent% fully charged"
 			} else {
-				$Reply = "✅ Battery charging... ($Percent%)"
+				$reply = "✅ Battery charging... ($percent%)"
 			}
 		} else { # must be offline
-			if ($Remaining -eq 0) {
-				$Reply = "✅ Battery at $Percent%"
-			} elseif ($Remaining -le 5) {
-				$Reply = "⚠️ Battery at $Percent%, ONLY $Remaining MIN remaining"
-			} elseif ($Remaining -le 30) {
-				$Reply = "⚠️ Battery at $Percent%, only $Remaining min remaining"
-			} elseif ($Percent -lt 10) {
-				$Reply = "⚠️ Battery at $Percent% with $Remaining min remaining"
-			} elseif ($Percent -ge 80) {
-				$Reply = "✅ Battery $Percent% full with $Remaining min remaining"
+			if (($remaining -eq 0) -and ($percent -gt 90)) {
+				$reply = "✅ Battery $percent% full"
+			} elseif ($remaining -eq 0) {
+				$reply = "✅ Battery at $percent%"
+			} elseif ($remaining -le 5) {
+				$reply = "⚠️ Battery at $percent% · ONLY $remaining MIN remaining"
+			} elseif ($remaining -le 30) {
+				$reply = "⚠️ Battery at $percent% · only $remaining min remaining"
+			} elseif ($percent -lt 10) {
+				$reply = "⚠️ Battery at $percent% · $remaining min remaining"
+			} elseif ($percent -ge 80) {
+				$reply = "✅ Battery $percent% full · $remaining min remaining"
 			} else {
-				$Reply = "✅ Battery at $Percent% with $Remaining min remaining"
+				$reply = "✅ Battery at $percent% · $remaining min remaining"
 			}
 		}
-		$PowerScheme = (powercfg /getactivescheme)
-		$PowerScheme = $PowerScheme -Replace "^(.*)  \(",""
-		$PowerScheme = $PowerScheme -Replace "\)$",""
-		$Reply += ", power scheme is '$PowerScheme'"
+		$powerScheme = (powercfg /getactivescheme)
+		$powerScheme = $powerScheme -Replace "^(.*)  \(",""
+		$powerScheme = $powerScheme -Replace "\)$",""
+		$reply += " · power scheme '$powerScheme'"
 	}
-	Write-Output $Reply
+	Write-Output $reply
 	exit 0 # success
 } catch {
 	"⚠️ Error in line $($_.InvocationInfo.ScriptLineNumber): $($Error[0])"
