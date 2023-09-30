@@ -134,7 +134,7 @@ ACTF,"(U.S.) Army Constructive Training Federation,Australian Children's Televis
 ACTU,Australian Council of Trade Unions
 ACU,American Conservative Union
 ACUF,"Advisory Committee on Undersea Features,American Conservative Union Foundation"
-AD,"Air Defence,Andorra (ISO 3166 digram),Anno Domini (Latin for 'In the year of our Lord')"
+AD,Anno Domini (Latin for 'In the year of our Lord')
 ADA,"Air Defence Artillery,American Dental Association,Assistant District Attorney,Americans with Disabilities Act (see also the similar but non-acronymic Ada programming language)"
 ADAC,"Allgemeiner Deutscher Automobil-Club (German for 'General German Automobile Club')"
 ADAGE,Air Defense Air to Ground Engagement (simulation)
@@ -152,7 +152,6 @@ ADGB,Air Defence of Great Britain
 ADHD,Attention-Deficit Hyperactivity Disorder
 ADHS,Attention-Deficit Hyperactivity Syndrome
 ADI,Acceptable/Allowable Daily Intake
-ADIZ,Air Defence Identification Zone
 ADL,Anti-Defamation League
 ADM,"Administrative,,Admiral,and the U.S. Public Health Service Commissioned Corps,Archer Daniels Midland,Assistant Deputy Minister"
 ADOA,Air Defence Operations Area
@@ -200,7 +199,7 @@ AFQT,Armed Forces Qualification Test
 AFRC,Air Force Reserve Command
 AFRL,Air Force Research Laboratory
 AFROTC,Air Force Reserve Officer Training Corps
-AFRRI,(i,U.S.) Armed Forces Radiobiology Research Institute
+AFRRI,(U.S.) Armed Forces Radiobiology Research Institute
 AFRTS,Armed Forces Radio and Television Service
 AFS,Active Front Steering,Air Facility Sub-System,Amniotic Fluid-derived Stem cell,AFS&A or AFSA,U.S. Air Force Studies and Analysis
 AFSC,"U.S. Air Force Staff College (obsolete; replaced with JFSC), U.S. Air Force Systems Command"
@@ -436,13 +435,10 @@ At,Astatine
 aT,Attotesla
 ATA,"Advanced Technology Attachment (IBM Personal Computer),Afghan Transitional Authority,Allen Telescope Array,Antarctica (ISO 3166 trigram)"
 ATAC,Air Transportable Acoustic Communications
-ATACMS,Army TACtical Missile System
 ATAPI,Advanced Technology Attachment Packet Interface
-ATAS,Air-To-Air Stinger (missile)
 ATAT,Aiken Tactical Airsoft Team / Star Wars vehicle
 ATB,"Active Time Battle,British Antarctic Territory (ISO 3166 trigram; merged with AQ in 1979)"
 ATC,"Air Training Corps, U.S. Air Transport Command (1942-1948), Athletic Trainer,Certified"
-ATCCIS,Army Tactical Command and Control Information System
 ATESS,Aerospace and Telecommunications Engineering Support Squadron
 ATF,"French Southern Territories (ISO 3166 trigram),(U.S.) Bureau of Alcohol,Tobacco,Firearms and Explosives"
 ATG,Antigua and Barbuda (ISO 3166 and FIFA trigram)
@@ -555,6 +551,8 @@ BR,"Brazil (ISO 3166 digram; FIPS 10-4 country code) ,Bihar (Indian state code)
 BRA,Brazil (ISO 3166 trigram)
 BRAG,Bicycle Ride Across Georgia
 BRASS,"Breathe,Relax,Aim,Sight,Squeeze (acronym for using a rifle)"
+BRIC,"Brazil, Russia, India, and China"
+BRICS,"Brazil, Russia, India, China, and South Africa"
 BS,The Bahamas (ISO 3166 digram),Bassas da India (FIPS 10-4 territory code),Bachelor of Science degree,British subject
 BSA,"Birmingham Small Arms (motorcycles company),Boy Scouts of America,Brigade Support Area"
 BSatCoP,Benjamin Sniddlegrass and the Cauldron of Penguins
@@ -974,6 +972,7 @@ CVLL,Crypto Variable Logic Label
 CVSD,Continuous Variable Slope Delta (modulation)
 CVT,Continuously Variable Transmission
 CW,"Calendar Week, or: Continuous Wave, or: Clothes Washer, or: Cook Islands (FIPS 10-4 territory code)"
+CWA,Communications Workers of America
 CWC,Chemical Weapons Convention
 CWRU,Case Western Reserve University
 CWS,Canadian Wildlife Service
@@ -1082,7 +1081,7 @@ DICASS,DIrectional Command Activated Sonobuoy System
 DIFAR,DIrectional Frequency Analysis and Recording
 DIME,Dense Inert Metal Explosive
 DIN,Deutsches Institut für Normung (German,"German Institute for Standardization"),Drug Identification Number (Canadian drug marketing requirement)
-DINA-(p/a) Diesel Nacional (Spanish,"National Diesel"—Mexican bus and truck manufacturer now known as DINA),Dirección de Inteligencia Nacional (Spanish,"National Intelligence Directorate"—former secret police of Chile)
+DINA-Diesel Nacional (Spanish,"National Diesel"—Mexican bus and truck manufacturer now known as DINA),Dirección de Inteligencia Nacional (Spanish,"National Intelligence Directorate"—former secret police of Chile)
 DINKY,Double Income,No Kids Yet
 DIP,Dual In-line Package (electronics)
 DIPS,Defense independent pitching statistics
@@ -2608,7 +2607,6 @@ LACMA,Los Angeles County Museum of Art
 LAD,Laser Aiming Device
 LADW,Local Air Defence Warning
 LAESI,Local Authority & Emergency Service Information
-LAN,Local Area Network
 LANL,Los Alamos National Laboratory
 LAO,Laos (ISO 3166 trigram)
 LAR,"Light Armoured Reconnaissance, Logistics Assistance Representative"
@@ -2644,7 +2642,6 @@ LCol,Lieutenant-Colonel (Canada,UK)
 LCS,League of Legends Championship Series
 LD,Laser Designator,Limited Deployment,Line of Departure
 LDA,Lateral Drift Apparatus (paratroops)
-LDAP,Lightweight Directory Access Protocol (pronounced "ell-dap")
 LDC,Lesser Developing/Developed Country
 LDL,Low-Density Lipoprotein
 LDS,Latter-day Saint (also "Latter Day Saint"); also used as an abbreviation by The Church of Jesus Christ of Latter-day Saints,Liberal Democracy of Slovenia
@@ -2664,9 +2661,10 @@ LF,Low Frequency
 LFO,Low Frequency Oscillation / Oscillator
 LFTR,Liquid fluoride thorium reactor
 LG,Latvia (FIPS 10-4 country code)
-LGB,Lesbian,Gay,Bisexual,Laser-guided bomb,self-explanatory
-LGBT,Lesbian,Gay,Bisexual,Transgender
-LGLO,Love God,Love Others
+LGB,"Lesbian,Gay,Bisexual"
+LGBT,"Lesbian,Gay,Bisexual,Transgender"
+LGBTQ,"Lesbian,Gay,Bisexual,Transgender,Queer"
+LGLO,"Love God,Love Others"
 LGM,Little Green Men
 LGS,Landsat Ground Station
 LH,Lithuania (FIPS 10-4 country code),Luteinising Hormone
@@ -2710,18 +2708,18 @@ LNB,Liga Nacional de Básquet (Rioplatense Spanish,"National Basketball League";
 LNER,London and North Eastern Railway
 LNG,Liquefied Natural Gas
 LNO,Liaison Officer
-LNR,Ligue Nationale de Rugby (French,"National Rugby League")
+LNR,"Ligue Nationale de Rugby (French for: 'National Rugby League')"
 LO,Slovakia (FIPS 10-4 country code)
 LOA,Limit Of Advance
-LOC,"Level of Operational Capability,Limited Operational Capability,Lines Of Code,Lines Of Communication,see entry"
-LOD,Limit of Detection,see Detection limit
+LOC,"Level of Operational Capability, Limited Operational Capability"
+LOD,"Limit of Detection,see Detection limit"
 LoD,Lines of Development (UK)
 LOFAR,Low Frequency Analysis and Recording
 LOGPAC,Logistics Package
 LOL,Laughing Out Loud (Internet shorthand)
 LOMEZ,Low Altitude Missile Engagement Zone
 LONEOS,Lowell Observatory Near-Earth-Object Search
-LOOGY,(p/a) Lefty One-Out GuY,a sometimes pejorative nickname for the left-handed specialist in baseball
+LOOGY,"Lefty One-Out GuY,a sometimes pejorative nickname for the left-handed specialist in baseball"
 loq,loquitur (Latin," he speaks")
 LORTID,LOng Range Target IDentification
 LOS,Line Of Sight
@@ -2729,12 +2727,12 @@ LOSAT,Line-Of-Sight Anti-Tank (missile)
 LOTA,Licentiate of the Orthodontic Technicians Association
 LOTIS,Livermore Optical Transient Imaging System
 LOTS,Logistics Over-The-Shore
-LP,Linkin Park,Linkup Point,Listening Post,Long Playing record,Louisiana Pacific (cf. LP Field)
+LP,"Linkin Park,Linkup Point,Listening Post,Long Playing record,Louisiana Pacific (cf. LP Field)"
 LPC,Linear Predictive Coding
-LPD,Landing Platform Dock (Navy hull classification),Low Probability of Detection
+LPD,"Landing Platform Dock (Navy hull classification),Low Probability of Detection"
 LPG,Liquefied Petroleum Gas (cf. LNG)
 LPI,Low Probability of Intercept
-LPS,Landsat Processing System,LipoPolySaccharide
+LPS,"Landsat Processing System,LipoPolySaccharide"
 LQ,Palmyra Atoll (FIPS 10-4 territory code)
 Lr,Lawrencium
 LR,Liberia (ISO 3166 digram)
@@ -2748,8 +2746,8 @@ LRP,Logistics Release Point
 LRPE,Long-Range Planning Element
 LRS,Long Range Surveillance
 LRU,Line-Replaceable Unit
-LS,Landing Support,Lesotho (ISO 3166 digram),Liechtenstein (FIPS 10-4 country code),locus sigilli (Latin,"place of the seal")
-LSAT,Law School Admission Test (often pronounced as "el-SAT")
+LS,"Landing Support,Lesotho (ISO 3166 digram),Liechtenstein (FIPS 10-4 country code),locus sigilli (Latin,"place of the seal")"
+LSAT,"Law School Admission Test (often pronounced as 'el-SAT')"
 LSD,Landing Ship,Dock (Navy hull classification),librae,solidii,denarii (Latin: Pounds,shillings and pence),lyserg-saüre-dietylamid (German "lysergic acid diethylamide")
 LSE,Least Squares Estimate/Error,London School of Economics,London Stock Exchange
 LSI,Large-Scale Integration
@@ -2757,15 +2755,15 @@ LSIF,Labour Sponsored Investment Fund
 LSND,Liquid Scintillator Neutrino Detector
 LSO,Lesotho (ISO 3166 trigram)
 LSST,Large Synoptic Survey Telescope
-LST,Landing Ship,Tank (World War II; also known,not entirely affectionately,as "Large Slow Target")
-LSVW,Light Support Vehicle,Wheeled
-LT,Lesotho (FIPS 10-4 country code),Lithuania (ISO 3166 digram)
+LST,"Landing Ship,Tank (World War II; also known,not entirely affectionately,as 'Large Slow Target')"
+LSVW,"Light Support Vehicle,Wheeled"
+LT,"Lesotho (FIPS 10-4 country code),Lithuania (ISO 3166 digram)"
 Lt,Lieutenant
 LtC,Lieutenant-Colonel (U.S.)
 LTC,Long-Term Costing
 Ltd,Limited
 LTDP,Long-Term Defence Plan
-LTG,Lieutenant General,Lightning (METAR Code)
+LTG,"Lieutenant General,Lightning (METAR Code)"
 LTI,Linear Time-Invariant
 LTM,Acronym for Laughing To Myself
 LTP,Long-Term Potentiation
@@ -2776,40 +2774,40 @@ Lu,Lutetium
 LUCA,Last Universal Common Ancestor
 LUG,Linux User Group
 LULU,Locally Unwanted Land Use (urbanism)
-LUT,Limited User Test (ing),Local User Terminal
-LUVW,Light Utility Vehicle,Wheeled
+LUT,"Limited User Test (ing),Local User Terminal"
+LUVW,"Light Utility Vehicle,Wheeled"
 LUX,Luxembourg (ISO 3166 trigram)
-LV,Las Vegas,Latvia (ISO 3166 digram),Launch Vehicle,Leading Vehicle,Leave,Left Ventricle,Level Valve,Linking Verb,Liverpool Victoria
+LV,"Las Vegas,Latvia (ISO 3166 digram),Launch Vehicle,Leading Vehicle,Leave,Left Ventricle,Level Valve,Linking Verb,Liverpool Victoria"
 LVA,Latvia (ISO 3166 trigram)
-LVAD,Left Ventricular Assist Device,Low-Velocity Airdrop
+LVAD,"Left Ventricular Assist Device,Low-Velocity Airdrop"
 LVEF,Left Ventricular Ejection Fraction
-LW,Land Warrior,Low Water (nautical charts)
+LW,"Land Warrior,Low Water (nautical charts)"
 Lw,Lawrencium (obsolete 1963)
 LWR,Laser warning receiver
 LWRC,Land Warfare Resources Corporation
 LWS,Land Warrior System
 LX,Electrics (theatrical term)
-LX,Luxembourg (amateur radio ITU prefix),Swiss International Air Lines (IATA code)
-LY,Libya (FIPS 10-4 country code; ISO 3166 digram),Lithuania (amateur radio ITU prefix)
+LX,"Luxembourg (amateur radio ITU prefix),Swiss International Air Lines (IATA code)"
+LY,"Libya (FIPS 10-4 country code; ISO 3166 digram),Lithuania (amateur radio ITU prefix)"
 LYAO,Laugh Your Ass Off
 LYLAS,Love You Like A Sister
-LZ,Bulgaria (amateur radio ITU prefix),Landing Zone
-M,Mega-,One thousand (in Roman numerals)
-m,Metre,Milli
-MA,Madagascar (FIPS 10-4 country code),Marijuana Anonymous,Master of Arts,Massachusetts (postal symbol),Megaampere,Morocco (ISO 3166 digram)
+LZ,"Bulgaria (amateur radio ITU prefix),Landing Zone"
+M,"Mega-,One thousand (in Roman numerals)"
+m,"Metre,Milli"
+MA,"Madagascar (FIPS 10-4 country code),Marijuana Anonymous,Master of Arts,Massachusetts (postal symbol),Megaampere,Morocco (ISO 3166 digram)"
 Ma,Megaannum
 mA,Milliampere
 MAA,Mathematical Association of America
 MAAC,Metro Atlantic Athletic Conference
 MACE,Multi-Agent Computing Environment
 MACHO,MAssive Compact Halo Object
-MADD,Mothers Against Drunk Driving,MyoAdenylate Deaminase Deficiency,Multiply-Add
+MADD,"Mothers Against Drunk Driving,MyoAdenylate Deaminase Deficiency,Multiply-Add"
 MAF,Maintenance Action Form
 MAFF,Ministry of Agriculture,Forestry and Fisheries (various countries)
 MAGIC,Major Atmospheric Gamma-ray Imaging Cherenkov (telescope)
 MAGNETAR,Metaprogrammable AGent NETwork ARchitecture
 MAGTF,Marine Air-Ground Task Force
-Mahasz,Magyar Hanglemezkiadók Szövetsége (Hungarian,"Association of Hungarian Record Companies")
+Mahasz,"Magyar Hanglemezkiadók Szövetsége (Hungarian for: 'Association of Hungarian Record Companies')"
 MALD,Miniature Air-Launched Decoy
 MANPADS,MAN-Portable Air Defence System
 MANPRINT,MANpower and PeRsonnel INTegration
@@ -3151,6 +3149,7 @@ MYT,Mayotte (ISO 3166 trigram)
 MZ,Mach-Zehnder (interferometer),Magnetic Azimuth,Move,Zig (Zero Wing),Mozambique (FIPS 10-4 country code; ISO 3166 digram)
 n,Nano
 N,Newton,Nitrogen,North
+N/A,"Not Available, Not Applicable, or: No Answer"
 N3F,National Fantasy Fan Federation
 NA,Namibia (ISO 3166 digram),Narcotics Anonymous,National Archives,Negative Acknowledge
 nA,Nanoampere
@@ -3358,14 +3357,15 @@ NLB,Non-Linear Battlefield
 NLD,Netherlands (ISO 3166 trigram)
 NLF,National Liberation Front (disambiguation)
 NLL,National Lacrosse League
-NLP,Natural Language Processing,Neuro-Linguistic Programming (pseudoscience)
+NLP,"Natural Language Processing,Neuro-Linguistic Programming (pseudoscience)"
+NLRB,National Labor Relations Board
 NLW,Non-Lethal Weapon
 nm,Nanometre
 NM,New Mexico (postal symbol)
 NMCI,Navy Marine Corps Intranet
 NMCS,Not Mission Capable Supply (SM&R code)
 NMD,U.S. National Missile Defense
-NMHNFG,Not Made Here,No Fucking Good
+NMHNFG,"Not Made Here,No Fucking Good"
 NMN,No middle name
 NMOS,N-type/Negative Metal-Oxide-Semiconductor transistor ("enn-moss")
 NMR,Nuclear Magnetic Resonance
@@ -3374,7 +3374,7 @@ nN,Nanonewton
 NNE,North North-East
 NNSA,U.S. National Nuclear Security Administration
 NNW,North North-West
-NO,Nitric Oxide,Normally Open,Norway (ISO 3166 and FIPS 10-4 country code digram)
+NO,"Nitric Oxide,Normally Open,Norway (ISO 3166 and FIPS 10-4 country code digram)"
 No,Nobelium
 NOAA,U.S. National Oceanic and Atmospheric Administration
 NOAF,Norwegian Air Force
@@ -3382,58 +3382,58 @@ NOAO,National Optical Astronomy Observatory
 NOC,UK. National Oceanography Centre
 NODEF,NATO Oceanographic Data Exchange Format
 NOGI,New Orleans Grande Isle (award for diving)
-NOLA,New Orleans,Louisiana (LA is the official postal code for Louisiana)
+NOLA,"New Orleans,Louisiana (LA is the official postal code for Louisiana)"
 NOLF,Navy OutLying Field
 NOM,Novus Ordo Missae or New Ordinary of the Mass (sometimes abbreviated to simply "NO")
-NoMBO,Non-mine,Mine-like Bottom Object
+NoMBO,"Non-mine,Mine-like Bottom Object"
 NOME,Not on Mars Either
 NOME,Not on Mars Either (see NIMBY)
-NOPA,National Office Products Alliance,National Office Products Association
+NOPA,"National Office Products Alliance,National Office Products Association"
 NOR,Norway (ISO 3166 trigram)
 NORCECA,North,Central America and Caribbean Volleyball Confederation
 NORELPREF,No religious preference
 NORML,National Organization for the Reform of Marijuana Laws ("normal")
 NORTHAG,Northern Army Group
-NOS,Network Operating System,New Old Stock (Internet auction/trading listings),Nitric Oxide Synthase (enzyme)
+NOS,"Network Operating System,New Old Stock (Internet auction/trading listings),Nitric Oxide Synthase (enzyme)"
 NOSA,NATO OSI Security Architecture
 NOTAFLOF,No One Turned Away For Lack Of Funds
 NOW,National Organization for Women
-NP,National Permit,A permit in India for trucks so they can go anywhere in the nation
-Np,Neap tide (nautical charts),Neptunium
+NP,"National Permit,A permit in India for trucks so they can go anywhere in the nation"
+Np,"Neap tide (nautical charts),Neptunium"
 NP,Nepal (ISO 3166 and FIPS 10-4 country code digram)
 NPB,Nippon Professional Baseball
-NPC,National Postgraduate Committee,National Provincial Championship (New Zealand rugby competition,now defunct),Navigation Planning Chart,Non-Player Character (role-playing games)
+NPC,"National Postgraduate Committee,National Provincial Championship (New Zealand rugby competition,now defunct),Navigation Planning Chart"
 NPCS,Non-Passenger Coaching stock (in Railways)
 NPD,Nationaldemokratische Partei Deutschlands (German)
 NPDI,New Product Development and Introduction
 NPG,Needline/Network Participation Group
 NPH,Normal Pressure Hydrocephalus
-NPL,National Priorities List,Nepal (ISO 3166 trigram)
+NPL,"National Priorities List,Nepal (ISO 3166 trigram)"
 NPO,nothing by mouth
 NPOV,Neutral Point Of View
-NQ,Dronning Maud Land (ISO 3166 digram; obsolete 1983)
-NQOCD,Not Quite Our Class,Dear (or Darling). (Upper-class English slang)
+NQ,"Dronning Maud Land (ISO 3166 digram; obsolete 1983)"
+NQOCD,"Not Quite Our Class,Dear (or Darling). (Upper-class English slang)"
 NR,Nauru (ISO 3166 and FIPS 10-4 country code digram)
 NRA,National Rifle Association
 NRAO,National Radio Astronomy Observatory
-NRC,National Research Council (U.S.),Nuclear Regulatory Commission (U.S.)
+NRC,"(U.S.) National Research Council,Nuclear Regulatory Commission (U.S.)"
 NRDC,(U.S.) Natural Resources Defense Council
-NREL,U.S. National Renewable Energy Laboratory
+NREL,(U.S.) National Renewable Energy Laboratory
 NRK,Norsk Rikskringkasting (Norwegian Broadcasting Corporation)
 NRMP,National Resident Matching Program (U.S. medicine)
-NRO,U.S. National Reconnaissance Office
+NRO,(U.S.) National Reconnaissance Office
 NRT,Near Real Time
-NRTA,National Rat Terrier Association,National Retail Tenants Association,National Retired Teachers Association,Northwest Regional Transmission Association
+NRTA,"National Rat Terrier Association,National Retail Tenants Association,National Retired Teachers Association,Northwest Regional Transmission Association"
 NRU,Nauru (ISO 3166 trigram)
 ns,Nanosecond
 nS,Nanosiemens
-NS,Norfolk Southern Railway (AAR reporting mark),Nova Scotia (postal symbol),Suriname (FIPS 10-4 country code)
-NSA,U.S. National Security Agency,Naval Support Activity,No Strings Attached
+NS,"Norfolk Southern Railway (AAR reporting mark),Nova Scotia (postal symbol),Suriname (FIPS 10-4 country code)"
+NSA,"U.S. National Security Agency,Naval Support Activity,No Strings Attached"
 NSABB,National Science Advisory Board for Biosecurity
 NSAID,Non-Steroidal Anti-Inflammatory Drug
 NSB,Norges Statsbaner (Norwegian State Railways)
 NSC,National Security Council
-NSDAP,Nationalsozialistische Deutsche Arbeiterpartei (German: "German National Socialist Workers Party",the formal name of the Nazi Party)
+NSDAP,"Nationalsozialistische Deutsche Arbeiterpartei (German: 'German National Socialist Workers Party',the formal name of the Nazi Party)"
 NSDL,National Science Digital Library (US)
 NSG,National System for Geospatial-Intelligence
 NSN,National Stock Number
@@ -3442,29 +3442,29 @@ NSO,National Standardization Office (ABCA)
 NSS,(U.S.) Naval Simulation System
 NST,(UK) Nimrod Software Team
 NSTAC,National Security Telecommunications Advisory Committee
-NSV,Nikitin-Sokolov-Volkov heavy machine gun (Russian НСВ Никитина-Соколова-Волкова) ru:ПулеметНСВ-12,7 "Утес"
+NSV,"Nikitin-Sokolov-Volkov heavy machine gun (Russian НСВ Никитина-Соколова-Волкова) ru:ПулеметНСВ-12,7 'Утес'"
 NSW,New South Wales (postal symbol)
 nT,Nanotesla
-NT,National Trust (UK),Saudi-Iraqi neutral zone (ISO 3166 digram; obsolete 1993),New Technology (Windows NT),Northern Territory (Australia) (postal symbol),Northwest Territories (Canada) (postal symbol)
-NTC,National Training Center,Negative Temperature Coefficient (thermistor)
+NT,"National Trust (UK),Saudi-Iraqi neutral zone (ISO 3166 digram; obsolete 1993),New Technology (Windows NT),Northern Territory (Australia) (postal symbol),Northwest Territories (Canada) (postal symbol)"
+NTC,"National Training Center,Negative Temperature Coefficient (thermistor)"
 NTDS,Naval Tactical Data System
 NTP,Network Time Protocol
 NTR,Network Time Reference
 NTRA,National Thoroughbred Racing Association
 NTSB,National Transportation Safety Board
-NTSC,National Television Standards Committee (colloquially,Never Twice the Same Color)
+NTSC,"National Television Standards Committee (colloquially,Never Twice the Same Color)"
 NTV,Non-Tactical Vehicle
-NTY,(Internet Abbreviations:) Not Tested Yet; (Alternatively) No Thank You
-NTZ,Iraq-Saudi Arabia Neutral Zone (ISO 3166 trigram; obsolete 1993)
-NU,Nicaragua (FIPS 10-4 country code),Niue (ISO 3166 digram),Nunavut (postal symbol)
+NTY,"(Internet Abbreviations:) Not Tested Yet; (Alternatively) No Thank You"
+NTZ,"Iraq-Saudi Arabia Neutral Zone (ISO 3166 trigram; obsolete 1993)"
+NU,"Nicaragua (FIPS 10-4 country code),Niue (ISO 3166 digram),Nunavut (postal symbol)"
 NUI,No user interface ("noo-ey")
-NUL,Null character (ASCII code of control character),National Urban League
+NUL,"Null character (ASCII code of control character),National Urban League"
 NUTS,Nuclear Utilization Target Selection
 NUWC,U.S. Naval Undersea Warfare Center
 NV,Naamloze vennootschap (Dutch,"innominate partnership" or "anonymous venture"; i.e. a public limited-liability company),Nevada (postal symbol)
 nV,Nanovolt
 NVEOL,Night Vision and Electro-Optics Laboratory
-NVESD,CERDEC Night Vision and Electronic Sensors Directorate,Fort Belvoir,Virginia
+NVESD,"CERDEC Night Vision and Electronic Sensors Directorate,Fort Belvoir,Virginia"
 NVG,Night Vision Goggles
 NVL,Night Vision Laboratory
 nW,Nanowatt
@@ -3643,7 +3643,7 @@ OSOTPBOIAS,"One Sec,On The Phone,Be Off In A Sec"
 OSPA,Operations Security Professional's Association site of OSPA
 OSPA,Oregon School Psychologists Association [3]
 OSRH,Oružane Snage Republike Hrvatske (en: Armed forces of the Republic of Croatia)
-OSS,Office of Strategic Services (1942-1945,forerunner of CIA)
+OSS,"Office of Strategic Services (1942-1945, forerunner of CIA)"
 OSU,"Ohio State University,Oklahoma State University"
 OTA,"Office of Technology Assessment, Orthodontic Technicians Association"
 OTAC,"Orthodontic Technicians Association Conference,Orthodontic Technicians Association Council"
@@ -4199,7 +4199,7 @@ RPL,Reverse Polish Lisp
 RPM,Records,Promotion,Music (expansion of the title of a former Canadian music magazine),Red Hat Package Manager
 rpm,revolutions per minute
 RPN,reverse Polish notation
-RPO,Radiation Protection Officer,Regular Production Option,RPR-FOM,(i/a) Realtime Platform Reference Federation Object Model ("reaper fomm")
+RPO,Radiation Protection Officer,Regular Production Option,RPR-FOM,Realtime Platform Reference Federation Object Model ("reaper fomm")
 rps,revolutions per second
 RPV,Remotely Piloted Vehicle
 RQ,Puerto Rico (FIPS 10-4 territory code)
@@ -4259,8 +4259,11 @@ SAD,Seasonal Affective Disorder,Situational Awareness Display,SADD —  original
 SADL,Situation Awareness Data Link (“saddle”),Structural Architecture Description Language
 SALT- Save A Life Today (SALT) Alert; Emergency Contact System,Southern African Large Telescope,Strategic Arms Limitation s
 SAM,Sequential-Access Memory,Sociedad Aeronáutica de Medellín,Surface-to-Air Missile
-Sambo,(p/a) Samooborona bez oruzhiya (Russian: "Самооборона без оружия",literally "self-defense without weapons")
-SARA,Southeastern Association for Research in Astronomy,Scientific Atlanta Resident Application,Scottish Amateur Rowing Association,Southern African Railway Association,State Administration for Religious Affairs,SARP —  Search And Rescue Processor,SARR — (i/a) Search And Rescue Repeater,SARS —  Severe Acute Respiratory Syndrome
+Sambo,Samooborona bez oruzhiya (Russian: "Самооборона без оружия",literally "self-defense without weapons")
+SARA,Southeastern Association for Research in Astronomy,Scientific Atlanta Resident Application,Scottish Amateur Rowing Association,Southern African Railway Association,State Administration for Religious Affairs,
+SARP,Search And Rescue Processor,
+SARR,Search And Rescue Repeater,
+SARS,Severe Acute Respiratory Syndrome
 SART,Search and Rescue Transponder,Situational Awareness Rating Technique,SARU —  South African Rugby Union
 SAS,Scandinavian Airlines System,Second Avenue Subway,Situational Awareness System,Special Air Service,Studies,Analysis and Simulation,Side Angle Side,Statistical Analysis System (original meaning; SAS Institute Inc. has evolved far beyond that scope),SASE —  Self-Addressed Stamped Envelope,SASO —  Stability and Support Operations,SASOL —  Suid Afrikaanse Steenkool en Oli.e. (Afrikaans,“South African Coal and Oil”)
 SAT,formerly Scholastic Aptitude Test and Scholastic Assessment Test; now known solely by the initials,Small Arms Trainer,SATB —  Soprano Alto Tenor Bass,SATNAV —  Satellite Navigation (Increasingly common GPS based system in new vehicles),SATs —  Standard Assessment Tasks and other similar terms describing tests used in English schools; see National Curriculum assessment#Terminology,SAU —  Saudi Arabia (ISO 3166 trigram),SAVAK —  Sazamane Etelaat va Amniate Kechvar (Iranian “Security and Intelligence Service”)
@@ -4654,8 +4657,8 @@ UML,Unified Marxist-Leninist Communist Party of Nepal,Unified Modeling Language,
 UMTS,Universal Mobile Telecommunications System
 UN,United Nations
 UNABOM,University and airline bomber (FBI case name)
-UNAIDS,(i/a) Joint United Nations Programme on HIV/AIDS
-UNaM,(p/a) Universidad Nacional de Misiones (Spanish,"National University of Misiones")
+UNAIDS,Joint United Nations Programme on HIV/AIDS
+UNaM,Universidad Nacional de Misiones (Spanish,"National University of Misiones")
 UNAM,Universidad Nacional Autónoma de México (Spanish,"National Autonomous University of Mexico")
 UNAMSIL,United Nations Mission in Sierra Leone
 UNCF,United Negro College Fund
@@ -4663,7 +4666,7 @@ UNCLOS,United Nations Convention on the Law of the Sea
 UNCSGN,United Nations Conference on the Standardization of Geographical Names
 UNCTAD,United Nations Conference on Trade and Development
 UNDCP,United Nations Drug Control Programme
-UNDE,(i/a) Union of National Defence Employees (Canada)
+UNDE,Union of National Defence Employees (Canada)
 UNDP,United Nations Development Programme
 UNEP,United Nations Environment Programme
 UNESCO,United Nations Educational,Scientific and Cultural Organization
@@ -4676,7 +4679,7 @@ UNICRI,United Nations Interregional Crime and Justice Research Institute
 UNIDO,United Nations Industrial Development Organization
 UNIFEM,United Nations Development Fund for Women (from the French Fonds de développement des Nations unies pour la femme)
 UNIS,University of Surrey,Guildford,England
-UNLV,University of Nevada,Las Vegas
+UNLV,"University of Nevada,Las Vegas"
 UNMIK,United Nations Interim Administration Mission in Kosovo
 UNMOVIC,United Nations Monitoring,Verification and Inspection Commission
 UNOSOM,United Nations Operations in Somalia
@@ -4684,31 +4687,29 @@ UNPROFOR,United Nations Protection Force (in former Yugoslavia)
 UNRISD,United Nations Research Institute for Social Development
 UNSM,Union of Nova Scotian Municipalities
 UNTAC,United Nations Transitional Authority in Cambodia
-UNTAET,(i/a) United Nations Transitional Administration in East Timor
+UNTAET,United Nations Transitional Administration in East Timor
 UNU,United Nations University
 UP,Ukraine (FIPS 10-4 country code),Union Pacific Railroad (AAR reporting mark),Upper Peninsula (of Michigan),Uttar Pradesh
 UPC,United Pentecostal Church,Universal Product Code
 UPDM,Uganda People's Democratic Movement,Unified Modeling Language Profile for DoDAF and MoDAF,Unité de psychiatrie du développement mental,Universal Pattern Decomposition Method,Unix Power Device Management,Unpressurized Docking Mast,Urban Planning,Design and Management
 UPdM,Università Popolare della Multimedialità
-UPF,Universitat Pompeu Fabra (Catalan,"Pompeu Fabra University")
+UPF,"Universitat Pompeu Fabra (Catalan for: 'Pompeu Fabra University')"
 UPI,United Press International
 UPN,United Paramount Network
 UPS,Uninterruptible Power Supply,United Parcel Service
 UPTN,Universal Personal Telecommunications Number,Upper Peninsula Telehealth Network
 UPU,Universal Postal Union
-UR,Soviet Union (NATO country code,obsolete 1992)
+UR,"Soviet Union (NATO country code,obsolete 1992)"
 URBSFA,Union royale belge des sociétés de football association (French for Royal Belgian Football Association)
 URD,User Requirements Document
-URI,Uniform Resource Identifier,University of Rhode Island
-URL, Uniform Resource Locator ("earl")
-URU,Uruguay (IOC and FIFA trigram,but not ISO 3166)
+URI,University of Rhode Island
+URU,"Uruguay (IOC and FIFA trigram, but not ISO 3166)"
 URY,Uruguay (ISO 3166 trigram)
 US,United States (also ISO 3166 and FIPS 10-4 country code digram)
 USA,"United States of America (also ISO 3166 trigram), United States Army"
 USAADAC,"U.S. Army Air Defense Artillery Center,Fort Bliss,Texas"
 USAARMC,"U.S. Army ARMor Center,Fort Knox,Kentucky"
 USAAVNC,"U.S. Army AViatioN Center,Fort Rucker,Alabama"
-USAF,United States Air Force
 USAFSPC,U.S. Air Force Space Command
 USAIC,"U.S. Army Infantry Center,U.S. Army Intelligence Center"
 USAID, United States Agency for International Development
@@ -4791,8 +4792,8 @@ VCR,Video cassette recorder
 VCT,Saint Vincent and the Grenadines (ISO 3166 trigram)
 VD,North Vietnam (ISO 3166 digram,obsolete 1977),Venereal Disease
 VDFS,VisualSVN Distributed File System (VDFS)
-VDMOS,(i/a) Vertical Double-diffused MOS transistor ("vee-dee-moss")
-VDOT,(i/a) Virginia Department of Transportation ("vee-dot")
+VDMOS,Vertical Double-diffused MOS transistor ("vee-dee-moss")
+VDOT,Virginia Department of Transportation ("vee-dot")
 VDR,North Vietnam (ISO 3166 trigram,obsolete 1977)
 VE,Venezuela (FIPS 10-4 country code; ISO 3166 digram)
 VEEGA,Venus Earth Earth Gravity Assist manœuvre
@@ -4816,7 +4817,7 @@ VIC,Victoria,Australia (postal symbol),Video Interface Chip,Virginia Intermont C
 VIDS,Visual Information Display System
 VII,7 (in Roman numerals)
 VIII,8 (in Roman numerals)
-VIN,(i/a) Vehicle Identification Number (ISO 3779)
+VIN,Vehicle Identification Number (ISO 3779)
 VIP,Very Important Person
 VIR,U.S. Virgin Islands (ISO 3166 trigram),Virgin Atlantic Airways (ICAO code)
 VIS,Vavoua International School,Vienna Independent Shorts,Viewable Image Size,Visual Instruction Set
@@ -4836,7 +4837,7 @@ VLSF,Very Loud,Stink-Free
 VLSI,Very-large-scale integration
 VLVS,Very Loud,Very Stinky
 VM,Vietnam (FIPS 10-4 country code)
-VMASC,(i/a) Virginia Modeling Analysis & Simulation Center ("vee-mask")
+VMASC,Virginia Modeling Analysis & Simulation Center ("vee-mask")
 VMF,Marine Fighting Squadron of the United States Marine Corps
 VMF,Variable Message Format
 VMN,VentroMedial Nucleus (neurophysiology)
@@ -4854,12 +4855,11 @@ VOR,Voice of Russia
 VOX,Voice Operated oscillator
 VP, Vice-President ("veep")
 VPOTUS,Vice President of the United States
-VPN,Virtual Private Network
 VQ,Vector Quantization,U.S. Virgin Islands (FIPS 10-4 territory code)
 VR,Virtual Reality
 VRSG,Virtual Reality Scene Generator
 VS,Very Special (brandy grade),vide supra (Latin for 'see above')
-VSAT,Very Small Aperture Terminal ("vee-satt")
+VSAT,Very Small Aperture Terminal ('vee-satt')
 VSHORAD,Very Short Range Air Defence
 VSO,Voluntary Services Overseas
 VSOP,Variations séculaires des orbites planétaires (French,"Planetary Orbit Secular Variations"),Very Small Outline Package (integrated circuit),Very Superior Old Pale (brandy grade),VLBI Space Observatory Programme
@@ -4867,47 +4867,45 @@ VSR,Very Special Relativity
 VT,Vatican City-State (FIPS 10-4 country code),Vermont (postal symbol),Video tape,Virginia Tech
 VTC,Video Tele-Conference
 VTEC,Variable valve Timing and Electronic lift Control
-VU,Vanuatu (ISO 3166 digram),Vedanta University
+VU,"Vanuatu (ISO 3166 digram), Vedanta University"
 VUB,Vrije Universiteit Brussel (Belgian university)
 VUT,Vanuatu (ISO 3166 trigram)
-VV,Via Voice,Village Voice
+VV,"Via Voice,Village Voice"
 VVAF,Vietnam Veterans of America Foundation
 VW,Volkswagen
 VZ,Verizon Communications (NYSE code)
 vzw,vereniging zonder winstoogmerk (Dutch "non-profit organisation")
-W,Tungsten (from German Wolfram),Watt,West
+W,"Tungsten (from German Wolfram),Watt,West"
 W3C,World Wide Web Consortium
-WA,Namibia (FIPS 10-4 country code; from West Africa),Washington state (postal symbol),Western Australia (postal symbol),World Archery (Federation)
+WA,"Namibia (FIPS 10-4 country code; from West Africa),Washington state (postal symbol),Western Australia (postal symbol),World Archery (Federation)"
 WAAC,Women's Army Auxiliary Corps (Britain) (World War I UK)
 WAAF,Women's Auxiliary Air Force (World War II UK)
-WAC,Western Athletic Conference,Women's Auxiliary Corps (World War II Canada),Women's Army Corps (World War II U.S.)
+WAC,"Western Athletic Conference,Women's Auxiliary Corps (World War II Canada),Women's Army Corps (World War II U.S.)"
 WACC,Weighted Average Cost of Capital (accounting)
 WACS,What-A-Cartoon! Show
 WAD,Weapons Alert Designator
 WAGGGS,World Association of Girl Guides and Girl Scouts
-WAGs,Wives And Girlfriends (most notably of England national football team players at the 2006 FIFA World Cup,although the term existed earlier)
+WAGs,"Wives And Girlfriends (most notably of England national football team players at the 2006 FIFA World Cup,although the term existed earlier)"
 WAK,Wake Island (ISO 3166 trigram,obsolete 1986)
 WAL,see entry
-WAN,Wide area network
-WAP,Wireless Application Protocol
 WAPIMA,What a pain in my ass
 WAR,With All Respect
 WAsP,Short form of WAAAAP (Wind Atlas Analysis and Application Program)
 WASP,White Anglo-Saxon Protestant,Wide Angle Search for Planets,Women Airforce Service Pilots
 WAYP,White And Yellow Pages
-WB,Warner Bros.,Welcome Back (Internet shorthand)
+WB,"Warner Bros.,Welcome Back (Internet shorthand)"
 Wb,Weber
-WBA,Warner Bros. Animation,West Bromwich Albion (F.C.),World Boxing Association
+WBA,"Warner Bros. Animation,West Bromwich Albion (F.C.),World Boxing Association"
 WBC,World Boxing Council
 WBE,Work Breakdown Element
 WBO,World Boxing Organization
-WC,Water Closet,Winston Churchill,World Cup (sports)
+WC,"Water Closet,Winston Churchill,World Cup (sports)"
 WCBO,World Chess Boxing Organisation
 WCBP,World Center for Birds of Prey
 WCL,World Confederation of Labour
-WCS,Weapon Control Status,Wildlife Conservation Society
+WCS,"Weapon Control Status,Wildlife Conservation Society"
 WCW,World Championship Wrestling
-WDC,Western Design Center,World Data Center
+WDC,"Western Design Center,World Data Center"
 WDIN,Wildlife Disease Information Node
 WDWR,Walt Disney World Resort
 WEBS,Weapon Effectiveness Battle Simulation
@@ -4932,15 +4930,15 @@ WHI,Women's Health Initiative
 WHIP,Walks plus hits per inning pitched
 WHO,World Health Organisation
 WHS,(U.S.) Washington Headquarters Services
-WI,Western Sahara (FIPS 10-4 country code),Wisconsin (postal symbol),Women's Institute
-WIA,Wounded In Action,Wireless Institute of Australia (Amateur Radio)
+WI,"Western Sahara (FIPS 10-4 country code),Wisconsin (postal symbol),Women's Institute"
+WIA,"Wounded In Action,Wireless Institute of Australia (Amateur Radio)"
 WIIFM,What's in it for me?
-WIMP,Weakly Interacting Massive Particle,Windows,Icons,Menus,Pointers
+WIMP,"Weakly Interacting Massive Particle, Windows,Icons,Menus,Pointers"
 WIP,Work In Progress
 WIPO, World Intellectual Property Organization
 WIPP,[Nuclear] Waste Isolation Pilot Plant
 WIYN,Wisconsin Indiana Yale NOAO telescope consortium
-WK,Wake Island (ISO 3166 digram,obsolete 1986)
+WK,"Wake Island (ISO 3166 digram,obsolete 1986)"
 WKYP,Will Keep You Posted
 WL,Wehrmacht Luftwaffe (German World War II air force vehicle licence plate code)
 WLB,Women's Land Brigade (World War II Canada)
@@ -4955,22 +4953,22 @@ WNA,World Nuclear Association
 WNF,"Will Not Fix"
 WNIT,Women's National Invitation Tournament
 WNL,Medical initialism for "Within Normal Limits"
-WNSD,What's New,Scooby-Doo?
+WNSD,"What's New,Scooby-Doo?"
 WNW,West North-West
 WO,Warrant Officer
 WOF,Width of Fabric
 WOFT,Waste Of Fucking Time
 WOFTAM,Waste Of Fucking Time And Money
-WOI, Wheels Of Italy
+WOI,Wheels Of Italy
 WOM,Write Only Memory
 WOS,Wilson Ornithological Society
-WOSM,World Organization of the Scout Movement,Worldwide Oil Spill Model
+WOSM,"World Organization of the Scout Movement, Worldwide Oil Spill Model"
 WOT,Waste Of Time
 WP,White Phosphorus (ammunition)
 WPB,War Production Board during World War II
 WPE,World Pork Expo
 WPK,Wider Peacekeeping
-WPT,World Poker Tour,World Premiere Toons
+WPT,"World Poker Tour,World Premiere Toons"
 WR,Wide Receiver (football)
 WRAC,Women's Royal Army Corps (World War II UK)
 WRAIR,Walter Reed Army Institute of Research
@@ -4980,47 +4978,47 @@ WRC,World Religions Conference
 WRNG,Warning
 WRNS,Women's Royal Naval Service (World War II UK) (pronounced "wrens")
 WRS,Worldwide Reference System
-WRT,"With respect to",especially in fields such as Mathematics.
+WRT,"With respect to (especially in fields such as Mathematics)"
 WRT,NHS Workforce Review Team
 WRT,The Linksys routers whose model name start with 'WRT'
 WRT,Third party firmware for the Linksys WRT routers and compatible models from other vendors.
-WRT,Wallace Roberts & Todd,LLC (Urban Planning and Design)
+WRT,"Wallace Roberts & Todd,LLC (Urban Planning and Design)"
 WRT,Web Runtime (WRT) is a portable application framework developed by Nokia that allows the creation of widgets on the S60 Platform.
-WRT,Wholesale,Trade,Retail sector,category in employment and economics statistics
-WRT,Wireless Receiver/Transmitter ( computer networks/IT )
+WRT,"Wholesale,Trade,Retail sector,category in employment and economics statistics"
+WRT,Wireless Receiver/Transmitter (computer networks/IT)
 WRT,Wireless Ronin Technologies (digital signage)
 WRT,World Rally Team
 WRT,Writer Response Theory
-WRVS,Women's Royal Voluntary Service,now only known by the acronym (UK)
-WS,Samoa (ISO 3166 and FIPS 10-4 country code digram; from the country's former name of Western Samoa),Writer to the Signet (a Scottish solicitor)
+WRVS,"Women's Royal Voluntary Service,now only known by the acronym (UK)"
+WS,"Samoa (ISO 3166 and FIPS 10-4 country code digram; from the country's former name of Western Samoa),Writer to the Signet (a Scottish solicitor)"
 WSC,Weapon System Catalogue
 WSDL,Web Services Description Language
 WSJ,(The) Wall Street Journal
-WSL,White Star Line (shipping company),Women's Super League,used to describe England's top women's association football league and top women's rugby union competition,Workers' Socialist League (UK political party)
+WSL,"White Star Line (shipping company),Women's Super League,used to describe England's top women's association football league and top women's rugby union competition,Workers' Socialist League (UK political party)"
 WSM,Samoa (ISO 3166 trigram; from Western Samoa),Winchester Short Magnum (family of rifle cartridges)
 WSMR, White Sands Missile Range ("whiz-murr")
 WSROC,Western Sydney Regional Organisation of Councils
 WSSM,Winchester Super Short Magnum (family of rifle cartridges)
 WSTC,Women Signallers Territorial Corps (World War II UK)
 WSW,West South-West
-WTB,Wales Tourism Board,Warenterminbörse Hannover
+WTB,"Wales Tourism Board,Warenterminbörse Hannover"
 WTB,Want to Buy (a commonly used phrase in the online game "World of Warcraft")
 WTC,World Trade Center
-WTF,What the fuck?; also What a Terrible Failure (android)
+WTF,"What the fuck?; also What a Terrible Failure (android)"
 WTFH,What The Fucking Hell
 WTH,What the Hell
 WTO,World Trade Organization
 WTS,Want to Sell (a commonly used phrase in the online game "World of Warcraft")
-WU,Wabash University,Washington University in St. Louis,Western Union,Windows Update,Work unit,WU Wien (German Wirtschaftsuniversität Wien,Vienna University of Economics and Business Administration)
+WU,"Wabash University,Washington University in St. Louis,Western Union,Windows Update,Work unit,WU Wien (German Wirtschaftsuniversität Wien,Vienna University of Economics and Business Administration)"
 WUBU2,What you been up to
-WUU2,What you up to,Internet slang popular with teenagers.
+WUU2,What you up to (Internet slang popular with teenagers)
 WV,West Virginia (postal symbol)
 WVA,World Veterinary Association
 WVIAC,West Virginia Intercollegiate Athletic Conference
 WVR,Women's Volunteer Reserve (World War II UK)
 WVSC,Women's Volunteer Service Corps (World War II Canada)
 WVU,West Virginia University
-WVUIT,West Virginia University Institute of Technology (note,however,that the initialism is almost never used; the popular name of the school is "WVU Tech")
+WVUIT,"West Virginia University Institute of Technology (note,however,that the initialism is almost never used; the popular name of the school is "WVU Tech")"
 WW,see entry
 WWE,World Wrestling Entertainment
 WWF,World Wide Fund for Nature,from its original name of World Wildlife Fund,which remains the legal name in the U.S. and Canada,World Wrestling Federation

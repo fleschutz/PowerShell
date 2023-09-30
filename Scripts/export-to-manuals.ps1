@@ -7,7 +7,7 @@
 	PS> ./export-to-manuals.ps1
 	⏳ (1/2) Reading PowerShell scripts from /home/mf/PowerShell/Scripts/*.ps1 ... 
 	⏳ (2/2) Exporting Markdown manuals to /home/mf/PowerShell/Scripts/../Docs ...
-	✔️ Exporting 518 Markdown manuals took 28 sec
+	✔️ Exported 518 Markdown manuals in 28 sec
 .LINK
 	https://github.com/fleschutz/PowerShell
 .NOTES
@@ -30,7 +30,7 @@ try {
 	}
 
 	[int]$Elapsed = $StopWatch.Elapsed.TotalSeconds
-	"✔️ Exporting $($Scripts.Count) Markdown manuals took $Elapsed sec"
+	"✔️ Exported $($Scripts.Count) Markdown manuals in $Elapsed sec"
 	exit 0 # success
 } catch {
 	"⚠️ Error in line $($_.InvocationInfo.ScriptLineNumber): $($Error[0])"

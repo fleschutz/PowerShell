@@ -1,11 +1,11 @@
 ﻿<#
 .SYNOPSIS
-	Writes a random Juck Norris joke to the console
+	Writes a random joke
 .DESCRIPTION
-	This PowerShell script writes a random Juck Norris joke to the console.
+	This PowerShell script selects a random joke from Data/jokes.csv and writes it to the console.
 .EXAMPLE
-	PS> ./write-joke
-	When Chuck Norris does division, there are no remainders. 😂
+	PS> ./write-joke.ps1
+	Chuck Norris can dribble a bowling ball. 😂
 .LINK
 	https://github.com/fleschutz/PowerShell
 .NOTES
@@ -13,13 +13,13 @@
 #>
 
 try {
-	$Table = import-csv "$PSScriptRoot/../Data/jokes.csv"
+	$table = Import-CSV "$PSScriptRoot/../Data/jokes.csv"
 
-	$Generator = New-Object System.Random
-	$Index = [int]$Generator.next(0, $Table.Count - 1)
-	$Joke = $Table[$Index].Joke
+	$randomNumberGenerator = New-Object System.Random
+	$row = [int]$randomNumberGenerator.next(0, $table.Count - 1)
+	$joke = $table[$row].JOKE
 
-	"$Joke 😂"
+	Write-Host "`n$Joke 😂" -foregroundColor Magenta
 	exit 0 # success
 } catch {
 	"⚠️ Error in line $($_.InvocationInfo.ScriptLineNumber): $($Error[0])"

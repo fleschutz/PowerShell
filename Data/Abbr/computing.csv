@@ -135,9 +135,9 @@ ADC,automated data collection
 ADE,qutomated data entry
 ADF,Automatic Document Feeder
 ADO,ActiveX Data Objects
-ADP,automatic data processing
+ADP,Automatic Data Processing
 ADPCM,adaptive differential pulse-code modulation
-ADS,alternate data stream
+ADS,Alternate Data Stream
 ADSI,Analog Display Services Interface
 ADSL,Asymmetric Digital Subscriber Line
 ADSM,ADSTAR Distributed Storage Management
@@ -175,7 +175,6 @@ ALM,application lifecycle management
 ALPR,Automated License Plate Recognition
 alt.,alternate newsgroup
 ALU,Arithmetic Logic Unit
-ALU,arithmetic-logic unit
 AMD,Advanced Micro Devices
 AMD-V,AMD virtualization
 AMI,advanced metering infrastructure
@@ -203,42 +202,37 @@ API,Application Programming Interface
 APICS,American Production and Inventory Control Society
 APIPA,Automatic Private IP Addressing
 APL,a programming language
-APM,application performance monitoring
-APM,application portfolio management
-APO,Advanced Planner and Optimizer
-APO,advanced planning and optimization
+APM,"application performance monitoring, application portfolio management"
+APO,"Advanced Planner and Optimizer, advanced planning and optimization"
 AppBlast,Project AppBlast
 APPC,Advanced Program-to-Program Communication or LU 6.2
-Apple VPP,Apple Volume Purchase Program
-Apple WWDC,Apple Worldwide Developers Conference
 APPN,Advanced Peer-to-Peer Networking
 APQP,advanced product quality planning
-APS,advanced planning and scheduling
-APT,advanced persistent threat
+APS,Advanced Planning and Scheduling
+APT,Advanced Persistent Threat
 APU,Accelerated Processing Unit
-AR,accounts receivable
-AR,augmented reality
+AR,Accounts Receivable
+AR,Augmented Reality
 ARAX,Asynchronous Ruby and XML
 ARIN,American Registry of Internet Numbers
-Arista EOS,Arista Extensible Operating System
 ARJ,Archive Robert Jung
 ARP,Address Resolution Protocol
 ARPA,Advanced Research Projects Agency
 ARPU,average revenue per user or average revenue per unit
-ARQ,automatic repeat request
+ARQ,Automatic Repeat Request
 ARRA,American Recovery and Reinvestment Act of 2009
 ARRL,American Radio Relay League
-AS,autonomous system
+AS,Autonomous System
 AS/400,"IBM iSeries, AS/400e, eServer iSeries/400"
 AS1,Applicability Statement 1
 AS2,Applicability Statement 2
 ASAP,AcceleratedSAP
 ASCII,American Standard Code for Information Interchange
-ASD,agile software development
+ASD,Agile Software Development
 ASE,Adaptive Server Enterprise
 ASF,Apache Software Foundation
 ASHRAE,"American Society of Heating, Refrigerating, and Air-Conditioning Engineers"
-ASIC,application-specific integrated circuit
+ASIC,Application-Specific Integrated Circuit
 ASIO,Audio Stream Input/Output
 ASLR,address space layout randomization
 ASN,advanced shipping notice
@@ -491,7 +485,6 @@ CEBP,communications-enabled business processes
 CELL,Cell processor
 CEM,customer experience management
 CEMS,Contract Electronic Manufacturing Services
-CEO,Chief Executive Officer
 CEP,complex event processing
 CERCLA,"Comprehensive Environmental Response, Compensation and Litigation Act"
 CERN,Conseil Europeen pour la Recherche Nucleaire
@@ -1594,7 +1587,6 @@ L2TP,Layer 2 Tunneling Protocol
 L2TP,Layer Two Tunneling Protocol
 LAMP,"Linux, Apache, MySQL, PHP"
 LAN,Local Area Network
-LAN,local area network
 LAR,Large Account Reseller
 LATA,local access and transport area
 LBA,logical block addressing
@@ -1638,6 +1630,7 @@ LMS,learning management system
 LNA,Local Noise Amplifier
 LNP,Local Number Portability
 LOB,line-of-business
+LOC,Lines Of Code
 LOINC,Logical Observation Identifiers Names and Codes
 LOM,lights-out management
 LP,Lean Production
@@ -1805,8 +1798,7 @@ NAHIT,National Alliance for Health Information Technology
 NAK,negative acknowledgment or not acknowledged
 NAP,Microsoft Network Access Protection
 NAP,network access point
-NAS,network access server
-NAS,network-attached storage
+NAS,"Network Access Server, Network-Attached Storage"
 NAT,Network Address Translation
 NBA,network behavior analysis
 NBAD,network behavior anomaly detection
@@ -1842,7 +1834,7 @@ NGSCB,Next Generation Secure Computing Base
 NHII,National Health Information Infrastructure
 NHIN,Nationwide Health Information Network
 NHRP,Next Hop Resolution Protocol
-NI,network intelligence
+NI,Network Intelligence
 Ni2,Net indexer 2
 NIAP,National Information Assurance Partnership
 NIC,Network Interface Card
@@ -1858,13 +1850,14 @@ NMTA,National Machining and Tooling Association
 NNI,National Nanotechnology Initiative
 NNM,Network Node Manager
 NNTP,Network News Transfer Protocol
-NOC,network operations center
-noop,no operation
-NOS,network operating system
+NOC,Network Operations Center
+noop,No Operation
+NOS,Network Operating System
 NoSQL,Not Only SQL
-NPD,new product development 
-NPE,non-practicing entity 
-NPI,national provider identifier
+NPC,Non-Player Character (in role-playing games)
+NPD,New Product Development 
+NPE,Non-Practicing Entity 
+NPI,National Provider Identifier
 NPI,New Product Introduction
 NPIV,N_Port ID virtualization
 NPV,Net present value
@@ -1876,6 +1869,7 @@ NSAPI,Netscape Server Application Programming Interface
 NSIS,Next Steps in Signaling
 NSP,network service provider
 NT1,network terminator 1
+NTIA,"(U.S.) National Telecommunications and Information Administration"
 NTFS,New Technology File System
 NTP,Network Time Protocol
 NTR,Normal Trade Relations
@@ -1907,8 +1901,7 @@ ODBC,Open Database Connectivity
 ODCA,Open Data Center Alliance
 ODF,Open Document Format
 ODI,Open Data-Link Interface
-ODIN,Open Data Center with an Interoperable Network
-ODIN,Open Device Identification Number
+ODIN,"Open Data Center with an Interoperable Network, Open Device Identification Number"
 ODL,Open and Distance Learning
 ODM,Original Design Manufacturer
 ODMA,Open Document Management API or Application Program Interface
@@ -1930,7 +1923,6 @@ OLED,light-emitting diode
 OLPC,One Laptop Per Child
 OLT,optical line terminal
 OLTP,On Line Transaction Processing
-OLTP,online transaction processing
 OMAP,Open Multimedia Application Platform
 OMG,Object Management Group
 OMSS,Oracle Mobile Security Suite
@@ -1963,9 +1955,7 @@ OSI,Open Systems Interconnection
 OSP,online service provider
 OSP,Open Settlement Protocol
 OSPF,Open Shortest Path First
-OSS,Online Service System
-OSS,open source software
-OSS,operational support system
+OSS,"Online Service System, Open Source Software, Operational Support System, Off-the-shelf Software Support"
 OTA,Over the Air
 OTC,order to cash
 OTCR,On-Time delivery performance to Customer Request Date
@@ -1979,9 +1969,7 @@ OWASP,Open Web Application Security Project
 OWD,OneWebDay
 P&L,profit and loss statement
 P-Ink,photonic ink
-P2P,path to profitability
-P2P,Peer to Peer 
-P2P,procure to pay
+P2P,"path to profitability,Peer to Peer,procure to pay"
 P2T,Push to Talk
 P2V,physical to virtual
 P3P,Platform for Privacy Preferences
@@ -1996,8 +1984,7 @@ PACS,Personal Access Communications System
 PACS,picture archiving and communication system
 PAIR,Policy Analysis of Internet Routing
 PAL,Phase Alternation Line
-PAM,partner account manager
-PAM,pulse amplitude modulation
+PAM,"partner account manager, pulse amplitude modulation"
 PAN,personal area network
 PAP,Packet-Level Procedure
 PAR,performance and accountability reporting
@@ -2038,8 +2025,7 @@ PGP,Pretty Good Privacy
 PHDSC,Public Health Data Standards Consortium
 PHI,personal health information
 PHOLED,phosphorescent organic light-emitting device
-PHP,Hypertext Preprocessor
-PHP,Personal Home Page
+PHP,"Hypertext Preprocessor, Personal Home Page"
 PHR,personal health record
 PHS,Personal Handyphone System
 PI,Predictive Index
@@ -2053,13 +2039,9 @@ PID,Problem Identification Document
 PID,process identifier
 PIFI,personally identifiable financial information
 PII,personally identifiable information
-PIM,privileged identity management
-PIM,processing in memory
-PIM,Product Information Management
-PIM,protocol-independent multicast
+PIM,"privileged identity management, processing in memory, Product Information Management, protocol-independent multicast"
 PIO,Programmed Input/Output
-PIP,Partner Integration Process
-PIP,Picture in Picture
+PIP,"Partner Integration Process, Picture in Picture"
 PIV,personal identity verification
 PKCS,Public-Key Cryptography Standards
 PKI,public key infrastructure
@@ -2092,8 +2074,7 @@ PON,passive optical network
 POP,point-of-presence
 POP3,Post Office Protocol 3
 PoR,power-on reset
-POS,personal operating space
-POS,Point of Sale
+POS,"personal operating space, Point of Sale"
 POSIX,Portable Operating System Interface
 POST,Power-On Self-Test
 POTS,plain old telephone service
@@ -2162,7 +2143,6 @@ RAC,Real Application Cluster
 RACE,Rapid Access Computing Environment
 RACF,Resource Access Control Facility
 RAD,rapid application development
-radar,radio detection and ranging
 RADIUS,Remote Authentication Dial-In User Service
 RAF,risk assessment framework
 RAID,redundant array of independent disks
@@ -2175,8 +2155,7 @@ RAP,Revenue Acquisition Process
 RARP,Reverse Address Resolution Protocol
 RAS,"registration, admission, and status"
 RAS,"Reliability, Availability and Serviceability"
-RAS,Remote Access Server 
-RAS,row address strobe
+RAS,"Remote Access Server, row address strobe"
 RAT,remote access Trojan
 RBA,risk-based authentication
 RBAC,role-based access control
@@ -2224,32 +2203,33 @@ RIBLOE,Remote Insight Board -- Lights Out Edition
 RID,relative identifier
 RIM,records information management
 RIM,Reference Information Model
-RIP,raster image processor
+RIP,Raster Image Processor
 RIP,Routing Information Protocol
 RIR,Regional Internet Registry
 RIS,Radiology Information System
 RIS,Remote Installation Service
-RISC,reduced instruction set computer
+RISC,Reduced Instruction Set Computer
 RJE,Remote Job Entry
 RMA,Return Material (or Merchandise) Authorization
 RMA,return merchandise authorization
 RMI,Remote Method Invocation
+RMM,Remote Monitoring & Management
 RMON,Remote Network Monitoring
 RMS,root-mean-square
 RNAAPP,Remote Network Access Application
 RNIS,Reseau Numerique a Integration de Services
-ROA,resource-oriented architecture
-ROADM,reconfigurable optical add-drop multiplexer
+ROA,Resource-Oriented Architecture
+ROADM,Reconfigurable Optical Add-Drop Multiplexer
 ROC,Report on Compliance
-ROD,reuse-oriented model or reuse-oriented development
-RODC,read-only domain controller
+ROD,Reuse-Oriented Model or Reuse-Oriented Development
+RODC,Read-Only Domain Controller
 RoHS,Restriction of Hazardous Substances
 ROI,Return On Investment
 ROIC,Return On Invested Capital
 ROKSO,Register of Known Spam Operations
-ROLAP,relational online analytical processing
-ROM,read-only memory
-ROMI,return on marketing investment
+ROLAP,Relational Online Analytical Processing
+ROM,Read-Only Memory
+ROMI,Return On Marketing Investment
 RONA,Return On Net Assets
 ROP,Reorder Point
 RoR,Ruby on Rails
@@ -2258,7 +2238,7 @@ ROU,Record Of Understanding
 ROWE,Results-Only Work Environment
 RPC,Remote Procedure Call
 RPG,Report Program Generator
-RPG,role-playing game
+RPG,Role-Playing Game
 RPM,Rapid Response Manufacturing
 RPM,remote patient monitoring
 RPO,recovery point objective
@@ -2275,12 +2255,10 @@ RSoP,Resultant Set of Policy
 RSVP,Resource Reservation Protocol
 RT,retweet
 RTA,real-time application
-RTC,real-time clock
-RTC,real-time communications
+RTC,"real-time clock, real-time communications"
 RTCD,real-time communications dashboard 
 RTCP,Real-Time Transport Control Protocol
-RTD,reconfigurable tactile display
-RTD,Research and Technical Development
+RTD,"reconfigurable tactile display, Research and Technical Development"
 RTF,Rich Text Format
 RTFM,Read The Fucking Manual
 RTLS,real-time location system
@@ -2301,19 +2279,12 @@ S.M.A.R.T.,Self-Monitoring Analysis & Reporting Technology
 S/MIME,Secure Multi-Purpose Internet Mail Extensions
 S/PDIF,Sony/Philips Digital Interface
 S4L,spam for life
-SA,Microsoft Exchange System Attendant
-SA,Microsoft Software Assurance
-SA,service assurance
+SA,"Microsoft Exchange System Attendant, Microsoft Software Assurance, service assurance"
 SAA,Systems Application Architecture
-SaaS,BI Software as a Service BI
-SaaS,ERP software-as-a-service ERP hosting
-SaaS,Security as a Service
-SaaS,Software as a Service
-SaaS,Storage as a Service
+SaaS,"Software as a Service, Security as a Service, Storage as a Service"
 SACD,Super Audio CD
 SAFE,Samsung for Enterprise
-SAM,Security Accounts Manager
-SAM,storage area management 
+SAM,"Security Accounts Manager, storage area management"
 SAML,Security Assertion Markup Language
 SAN,storage area network
 SAPI,Speech Application Program Interface
@@ -2325,11 +2296,11 @@ SAX,Simple API for XML
 SBAs,search-based applications
 SBC,session border controller
 SBIR,Small Business Innovative Research
+SBOM,Software bill of materials
 SBR,skill-based routing
-SC,sunk cost
-SC,supply chain
+SC,"sunk cost, supply chain"
 SCA,service-component architecture
-SCADA,supervisory control and data acquisition
+SCADA,Supervisory Control And Data Acquisition
 SCC,Supply Chain Council
 SCCP,Signalling Connection Control Part
 SCE,supply chain execution
@@ -2339,8 +2310,7 @@ SCL,spam confidence level
 SCM,Supply Chain Management
 SCOR,Supply Chain Operations Reference model
 SCORM,Shareable Content Object Reference Model
-SCP,session control protocol
-SCP,supply chain planning
+SCP,"session control protocol, supply chain planning"
 SCR,Synchronized Customer Response
 SCSA,Signal Computing System Architecture
 SCSI,Small Computer System Interface 
@@ -2348,7 +2318,6 @@ SCSIe,SCSI Express
 SCTP,Stream Control Transmission Protocol
 SCV,supply chain visibility
 SD2,Sound Designer II
-SD2,Sound Designer II or SDII
 SDA,Smart Data Access
 SDARS,Satellite Digital Audio Radio Service
 SDB,Small Disadvantaged Business
@@ -2358,8 +2327,7 @@ SDH,Synchronous Digital Hierarchy
 SDI,Serial Digital Interface
 SDK,Software Development Kit
 SDL,Specification and Description Language
-SDLC,Synchronous Data Link Control
-SDLC,systems development life cycle
+SDLC,"Synchronous Data Link Control, systems development life cycle"
 SDMA,spatial division multiple access
 SDN,software-defined networking
 SDO,Service Data Objects
@@ -2401,8 +2369,7 @@ SIG,Special Interest Group
 SIGTRAN,Signaling Transport
 SIM,security information management
 SIMD,Single Instruction Multiple Data
-SIMM,Service Integration Maturity Model
-SIMM,single in-line memory module
+SIMM,"Service Integration Maturity Model, single in-line memory module"
 SIMO,"single input, multiple output"
 SIMPLE,SIP for Instant Messaging and Presence Leveraging Extensions
 SIP,Session Initiation Protocol
@@ -2421,12 +2388,10 @@ SLICE,Simple Low-Cost Innovative Engine
 SLIP,Serial Line Internet Protocol
 SLP,Service Location Protocol
 SMART,Self Monitoring Analysis and Reporting Technology
-SMB,Server Message Block 
-SMB,small and medium-sized business or small and midsized business
+SMB,"Server Message Block, small and medium-sized business, small and midsized business"
 SMBXML,Small Business Extensible Markup Language
 SMDS,Switched Multimegabit Data Service
-SME ,mall to medium enterprise
-SME,Society of Manufacturing Engineers
+SME,"small to medium enterprise, Society of Manufacturing Engineers"
 SMF,Standard MIDI File
 SMI-S,Storage Management Initiative Specification
 SMIL,Synchronized Multimedia Integration Language
@@ -2453,15 +2418,13 @@ SoC,system-on-a-chip
 SoD,segregation of duties
 SOFC,solid oxide fuel cell
 SOHO,Small Office Home Office
-SOI,service-oriented integration
-SOI,Silicon-on-Insulator
+SOI,"service-oriented integration, Silicon-on-Insulator"
 SOLED,stacked organic light-emitting device
 SoLoMo,"social, local and mobile"
 SOM,service-oriented management
 SoMoClo,"social, mobile and cloud"
 SONET,Synchronous Optical Network
-SOP,Sales and Operations Planning
-SOP,Same Origin Policy
+SOP,"Sales and Operations Planning, Same Origin Policy"
 SOPA,Stop Online Piracy Act
 SOR,system of record
 SoS,system of systems
@@ -2492,10 +2455,7 @@ SQuID,Source Quench Introduced Delay
 SR-IOV,Single Root I/O Virtualization
 SRAM,static random access memory
 SRE,serious reportable event
-SRM,Standard Reference Material
-SRM,storage resource management
-SRM,supplier relationship management
-SRM,sustainability risk management
+SRM,"Standard Reference Material, storage resource management, supplier relationship management, sustainability risk management"
 SRS,software requirements specification
 SRT,Source-route transparent
 SRTP,Secure Real-Time Transport Protocol or Secure RTP
@@ -2504,12 +2464,9 @@ SSA,Serial Storage Architecture
 SSADM,Structured Systems Analysis & Design Method
 SSD,Solid-State Drive
 SSH,Secure Shell
-SSI,server-side include
-SSI,single-system image
+SSI,"server-side include, single-system image"
 SSID,service set identifier
-SSL,card server accelerator card
-SSL,Secure Sockets Layer
-SSL,solid-state lighting
+SSL,"Secure Sockets Layer, solid-state lighting"
 SSM,solid state module
 SSO,single sign-on
 SSP,storage service provider
@@ -2534,9 +2491,7 @@ STONITH,Shoot The Other Node In The Head
 STP,spanning tree protocol
 STP,standard temperature and pressure
 STUN,Simple Traversal of UDP through NAT
-SVC,scalable video coding
-SVC,supervisor call
-SVC,switched virtual circuit
+SVC,"scalable video coding, supervisor call, switched virtual circuit"
 SVG,Scalable Vector Graphics
 SVVP,server virtualization validation program
 SWAG,Semantic Web Agreement Group
@@ -2571,9 +2526,9 @@ TD-SCDMA,time division synchronous code division multiple access
 TDC,Total Delivered Cost
 TDD,Telecommunications Display Device
 TDD,test-driven development
-TDM,Team Data Manager
-TDM,time-division multiplexing
+TDM,"Team Data Manager, time-division multiplexing"
 TDMA,time division multiple access
+TEE,Trusted Execution Environment
 telco,telephone company
 TETRA,Terrestrial Trunked Radio
 TEWE,Technology for Enterprise-Wide Engineering
@@ -2608,10 +2563,10 @@ TP,thin provisioning
 TPA,Technology and Product Assurance
 TPC,Transaction Processing Performance Council
 TPI,Total Profit Improvement
-TPM,Total Productive Maintenance
-TPM,Trusted Platform Module
+TPM,"Total Productive Maintenance, Trusted Platform Module"
 TPOP,Time-Phased Order Point
-TPS,terminal proxy server
+TPS,Terminal Proxy Server
+TPU,Tensor Processing Unit
 TQC,Total Quality Control
 TQM,Total Quality Management
 TRI,Toxic Release Inventory
@@ -2621,8 +2576,7 @@ TRT,Transition Tree
 TSAP,Transport Services Access Point
 TSCA,Toxic Substances Control Act
 TSR,terminate and stay resident
-TTL,time-to-live 
-TTL,transistor-to-transistor logic
+TTL,"time-to-live, transistor-to-transistor logic"
 TTS,text-to-speech
 TtV,time to value
 TTY,teletypewriter
@@ -2659,8 +2613,7 @@ ULA,Oracle Unlimited License Agreement
 UM,unified messaging 
 UMLS,Unified Medical Language System
 UMS,unified messaging system
-UMTS,Universal Mobile Telecommunications Service
-UMTS,Universal Mobile Telecommunications System
+UMTS,"Universal Mobile Telecommunications Service, Universal Mobile Telecommunications System"
 UNC,Universal Naming Convention
 UPN,User Principal Name
 UPnP,Universal Plug and Play
@@ -2675,7 +2628,6 @@ USITC,United States International Trade Commission
 USP,unique selling point
 USR,"Universal System Resources (the /usr directory in a *NIX filesystem)"
 USSD,Unstructured Supplementary Service Data
-USSS,United States Secret Service
 UTF,Unicode Transformation Format
 UTM,unified threat management
 UUCP,UNIX-to-UNIX Copy Protocol
@@ -2778,8 +2730,7 @@ VRM,voltage regulator module
 VRML,Virtual Reality Modeling Language
 VRR,"Voice Recognition and Response, or Variable Refresh Rate"
 VRRP,Virtual Router Redundancy Protocol
-VSA,virtual SAN appliance
-VSA,Virtual Storage Appliance
+VSA,"virtual SAN appliance, Virtual Storage Appliance"
 VSAM,Virtual Storage Access Method
 VSAN,virtual storage area network
 VSAT,Very Small Aperture Terminal
@@ -2794,6 +2745,7 @@ VSTO,Visual Studio Tools for Office or Microsoft Visual Studio Tools
 VSTS,Visual Studio Team System
 VTAM,Virtual Telecommunications Access Method
 VTL,Virtual Tape Library
+VUGM,Virtual User Group Meeting
 VUM,VMware vSphere Update Manager
 VXLAN,Virtual Extensible LAN
 W-CDMA,Wideband Code-Division Multiple Access
@@ -2837,8 +2789,7 @@ WebRTC,Web Real-Time Communications
 WEEE,Waste Electrical and Electronic Equipment Regulation
 WEP,Wired Equivalent Privacy 
 WF,Windows Workflow Foundation
-WfM,Wired for Management
-WFM,Workforce management
+WfM,"Wired for Management, Workforce management"
 WFO,workforce optimization
 WFQ,weighted fair queueing
 WGA,Windows Genuine Advantage

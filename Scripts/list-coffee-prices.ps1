@@ -33,7 +33,10 @@ function WriteHorizontalBar { param([float]$Value, [float]$Max)
 }
 
 try {
+	Write-Progress "⏳ Loading data from www.alphavantage.co..."
 	$prices = (Invoke-WebRequest -URI "https://www.alphavantage.co/query?function=COFFEE&interval=monthly&apikey=demo" -userAgent "curl" -useBasicParsing).Content | ConvertFrom-Json
+	Write-Progress -completed " "
+
 	""
 	"$($prices.name) (by alphavantage.co, in $($prices.unit))"
 	"---------------------------------------------------------------"

@@ -28,7 +28,7 @@ try {
 			"💡 $($row.ABBR) in $basename refers to: $($row.MEANING)"
 		}
 	}
-	if ($basename -eq "") { "🤷‍ Sorry, my databases have no '$abbr' entry." }
+	if ($basename -eq "") { "🤷‍ Sorry, no entry '$abbr' in my database (located at .../Data/Abbr/)." }
 	exit 0 # success
 } catch {
 	"⚠️ Error in line $($_.InvocationInfo.ScriptLineNumber): $($Error[0])"

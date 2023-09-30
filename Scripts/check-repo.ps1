@@ -70,7 +70,7 @@ try {
 
 	$RepoDirName = (Get-Item "$FullPath").Name
 	[int]$Elapsed = $StopWatch.Elapsed.TotalSeconds
-	"✔️ checked Git repository 📂$RepoDirName in $Elapsed sec"
+	"✔️ Checked repo 📂$RepoDirName in $Elapsed sec"
 	exit 0 # success
 } catch {
 	"⚠️ Error in line $($_.InvocationInfo.ScriptLineNumber): $($Error[0])"

@@ -1,4 +1,25 @@
-﻿param([int]$numIntegers = 1000)
+﻿<#
+.SYNOPSIS
+        Measures the speed of MergeSort
+.DESCRIPTION
+        This PowerShell script measures the speed of the MergeSort algorithm.
+        MergeSort is an efficient, general-purpose, and comparison-based sorting algorithm.
+	Most implementations produce a stable sort, which means that the order of equal elements
+	is the same in the input and output. Merge sort is a divide-and-conquer algorithm that
+	was invented by John von Neumann in 1945. A detailed description and analysis of bottom-up
+	merge sort appeared in a report by Goldstine and von Neumann as early as 1948.
+.PARAMETER numIntegers
+        Specifies the number of integers to sort
+.EXAMPLE
+        PS> ./measure-MergeSort.ps1
+	🧭 0.378 sec to sorting 1000 integers by MergeSort
+.LINK
+        https://github.com/fleschutz/PowerShell
+.NOTES
+        Author: Markus Fleschutz | License: CC0
+#>
+
+param([int]$numIntegers = 1000)
 
 class MergeSort {
 
@@ -46,5 +67,6 @@ $list = (1..$numIntegers | foreach{Get-Random -minimum 1 -maximum $numIntegers})
 $stopWatch = [system.diagnostics.stopwatch]::startNew()
 [MergeSort]::Sort($list)
 [float]$elapsed = $stopWatch.Elapsed.TotalSeconds
-"🕒 MergeSort of $numIntegers integers took $elapsed sec"
+$elapsed3 = "{0:N3}" -f $elapsed # formatted to 3 decimal places
+"🧭 $elapsed3 sec to sort $numIntegers integers by MergeSort"
 exit 0 # success

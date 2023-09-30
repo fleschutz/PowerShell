@@ -1,11 +1,11 @@
 ﻿<#
 .SYNOPSIS
-	Checks the battery
+	Checks the power status
 .DESCRIPTION
-	This PowerShell script queries the status of the system battery and prints it.
+	This PowerShell script queries the power status and prints it.
 .EXAMPLE
-	PS> ./check-battery.ps1
-	⚠️ Battery 9% low, 54 min remaining
+	PS> ./check-power.ps1
+	⚠️ Battery at 9% (54 min remaining) with power scheme: HP Optimized 
 .LINK
 	https://github.com/fleschutz/PowerShell
 .NOTES
@@ -30,19 +30,23 @@ try {
 			}
 		} else { # must be offline
 			if ($Remaining -eq 0) {
-				$Reply = "✅ Battery at $Percent%, calculating remaining time..."
+				$Reply = "✅ Battery at $Percent%"
 			} elseif ($Remaining -le 5) {
 				$Reply = "⚠️ Battery at $Percent%, ONLY $Remaining MIN remaining"
 			} elseif ($Remaining -le 30) {
 				$Reply = "⚠️ Battery at $Percent%, only $Remaining min remaining"
 			} elseif ($Percent -lt 10) {
-				$Reply = "⚠️ Battery $Percent% low, $Remaining min remaining"
+				$Reply = "⚠️ Battery at $Percent% with $Remaining min remaining"
 			} elseif ($Percent -ge 80) {
-				$Reply = "✅ Battery $Percent% full, $Remaining min remaining"
+				$Reply = "✅ Battery $Percent% full with $Remaining min remaining"
 			} else {
-				$Reply = "✅ Battery at $Percent%, $Remaining min remaining"
+				$Reply = "✅ Battery at $Percent% with $Remaining min remaining"
 			}
 		}
+		$PowerScheme = (powercfg /getactivescheme)
+		$PowerScheme = $PowerScheme -Replace "^(.*)  \(",""
+		$PowerScheme = $PowerScheme -Replace "\)$",""
+		$Reply += ", power scheme is '$PowerScheme'"
 	}
 	Write-Output $Reply
 	exit 0 # success

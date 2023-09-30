@@ -87,8 +87,11 @@ ASV,Anti-Surface Vessel
 ASVAB,Armed Services Vocational Aptitude Battery
 ASW,Anti-Submarine Warfare
 AT,Anti-Tank
+ATACMS,Army TACtical Missile System
+ATAS,Air-To-Air Stinger (missile)
 ATBM,Anti-Tactical Ballistic Missile
 ATCS,Air Traffic Control Section
+ATCCIS,Army Tactical Command and Control Information System
 ATGW,Anti-Tank Guided Weapon
 ATR,Anti-Tank Rifle
 AUW,All-Up Weight
@@ -361,6 +364,7 @@ IRR,Individual Ready Reserve
 IRS,Inertial Reference System
 IRST,Infra-Red Search-and-Track
 ISOPREP,Isolated Personnel Report
+ISW,Institute for the Study of War
 IT,Information Technology
 JA,Judge Advocate
 JAAT,Joint Air Attack Team
@@ -523,12 +527,12 @@ NFLS,Naval Forward Logistic Site
 NGFS,Naval Gunfire Support
 NIMS,National Incident Management System
 NLW,Nonlethal Weapon
-nm,Nautical Mile
 NMCS,National Military Command System
 NMCS,Not Mission Capable, Supply
 NMS,National Military Strategy
 NOC,National Operations Center
 NOE,Nap of the Earth
+NORAD,North American Aerospace Defense Command (formerly North American Air Defense Command)
 NSC,National Security Council
 NSFS,Naval Surface Fire Support
 NSL,No-Strike List
@@ -755,7 +759,6 @@ UJTL,Universal Joint Task List
 ULN,Unit Line Number
 USAAC,United States Army Air Corps
 USAAF,United States Army Air Forces
-USAF,United States Air Force
 USAFE,United States Air Force in Europe
 USCG,United States Coast Guard
 USDA,U.S. Department of Agriculture

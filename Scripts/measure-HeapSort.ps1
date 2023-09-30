@@ -1,4 +1,27 @@
-﻿param([int]$numIntegers = 1000)
+﻿<#
+.SYNOPSIS
+        Measures the speed of HeapSort
+.DESCRIPTION
+        This PowerShell script measures the speed of the HeapSort algorithm.
+        HeapSort is a comparison-based sorting algorithm. Heapsort can be thought of as an
+	improved selection sort: like selection sort, heapsort divides its input into a sorted
+	and an unsorted region, and it iteratively shrinks the unsorted region by extracting
+	the largest element from it and inserting it into the sorted region. Unlike selection
+	sort, heapsort does not waste time with a linear-time scan of the unsorted region;
+	rather, heap sort maintains the unsorted region in a heap data structure to more quickly
+	find the largest element in each step.
+.PARAMETER numIntegers
+        Specifies the number of integers to sort
+.EXAMPLE
+        PS> ./measure-HeapSort.ps1
+        🧭 0.614 sec to sort 1000 integers by HeapSort 
+.LINK
+        https://github.com/fleschutz/PowerShell
+.NOTES
+        Author: Markus Fleschutz | License: CC0
+#>
+
+param([int]$numIntegers = 1000)
 
 class HeapSort {
     static Sort($targetList) {
@@ -48,5 +71,6 @@ $list = (1..$numIntegers | foreach{Get-Random -minimum 1 -maximum $numIntegers})
 $stopWatch = [system.diagnostics.stopwatch]::startNew()
 [HeapSort]::Sort($list)
 [float]$elapsed = $stopWatch.Elapsed.TotalSeconds
-"🕒 HeapSort of $numIntegers integers took $elapsed sec"
+$elapsed3 = "{0:N3}" -f $elapsed # formatted to 3 decimal places
+"🧭 $elapsed3 sec to sort $numIntegers integers by HeapSort"
 exit 0 # success

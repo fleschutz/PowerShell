@@ -3,7 +3,7 @@ Mega Collection of PowerShell Scripts
 
 **It includes 500+ useful cross-platform PowerShell scripts located in the [📂Scripts](Scripts/) subfolder - for the command-line interface (CLI), for remote control via SSH, for automation (e.g. [AutoHotkey](https://www.autohotkey.com/) or [Jenkins](https://www.jenkins.io/)), for context menus, for voice commands (e.g. [talk2windows](https://github.com/fleschutz/talk2windows)), automatically on startup/login/logoff/daily/shutdown/etc., or simply to learn PowerShell.**
 
-**[Download](https://github.com/fleschutz/PowerShell/releases) | [FAQ](Docs/FAQ.md)** | **Note:** the scripts support Unicode - a modern console is recommended (e.g. *Windows Terminal*)
+**[Download](https://github.com/fleschutz/PowerShell/releases) | [Table of Scripts](https://github.com/fleschutz/PowerShell/blob/master/Data/scripts.csv) | [FAQ](Docs/FAQ.md)** | **Note:** the scripts support Unicode - a modern console is recommended (e.g. *Windows Terminal*)
 
 🔊 Scripts for Audio & Voice 
 -----------------------------
@@ -98,7 +98,7 @@ Mega Collection of PowerShell Scripts
 | ---------------------------------------------------- | ------------------------------------------------------------------------------------------- |
 | [close-calculator.ps1](Scripts/close-calculator.ps1) | Closes the calculator application. [Read more...](Docs/close-calculator.md)                 |
 | [close-cortana.ps1](Scripts/close-cortana.ps1)       | Closes Cortana. [Read more...](Docs/close-cortana.md)                                       |
-| [close-chrome.ps1](Scripts/close-chrome.ps1)         | Closes the Chrome browser. [Read more...](Docs/close-chrome.md)                             |
+| [close-chrome.ps1](Scripts/close-chrome.ps1)         | Closes the Google Chrome browser. [Read more...](Docs/close-chrome.md)                             |
 | [close-program.ps1](Scripts/close-program.ps1)       | Closes the given program gracefully. [Read more...](Docs/close-program.md)                  |
 | [close-edge.ps1](Scripts/close-edge.ps1)             | Closes the Edge browser. [Read more...](Docs/close-edge.md)                                 |
 | [close-file-explorer.ps1](Scripts/close-file-explorer.ps1)| Closes Microsoft File Explorer. [Read more...](Docs/close-file-explorer.md)            |
@@ -115,6 +115,8 @@ Mega Collection of PowerShell Scripts
 | [close-vlc.ps1](Scripts/close-vlc.ps1)               | Closes the VLC media player application. [Read more...](Docs/close-vlc.md)                  |
 | [close-windows-terminal.ps1](Scripts/close-windows-terminal.ps1) | Closes the Windows Terminal application. [Read more...](Docs/close-windows-terminal.md)  |
 | [enable-god-mode.ps1](Scripts/enable-god-mode.ps1)   | Enables the god mode (adds a new icon to the desktop). [Read more...](Docs/enable-god-mode.md) |
+| [install-chrome.ps1](Scripts/install-chrome.ps1)     | Installs the Google Chrome browser. [Read more...](Docs/install-chrome-browser.md)    |
+| [install-firefox.ps1](Scripts/install-firefox.ps1)   | Installs the Firefox browser. [Read more...](Docs/install-firefox.md)    |
 | [list-clipboard.ps1](Scripts/list-clipboard.ps1)     | Lists the contents of the clipboard. [Read more...](Docs/list-clipboard.md)                 |
 | [new-email.ps1](Scripts/new-email.ps1)               | Starts the default email client to write a new email. [Read more...](Docs/new-email.md)     |
 | [open-amazon-website.ps1](Scripts/open-amazon-website.ps1)| Opens Amazon's website. [Read more...](Docs/open-amazon-website.md)                    |
@@ -259,7 +261,7 @@ Mega Collection of PowerShell Scripts
 | [pull-repos.ps1](Scripts/pull-repos.ps1)             | Pulls updates for all Git repositories in a folder. [Read more...](Docs/pull-repos.md)            |
 | [remove-tag.ps1](Scripts/remove-tag.ps1)             | Removes a tag in a Git repository. [Read more...](Docs/remove-tag.md)                             |
 | [switch-branch.ps1](Scripts/switch-branch.ps1)       | Switches the branch in a Git repository. [Read more...](Docs/switch-branch.md)                    |
-| [sync-repo.ps1](Scripts/sync-repo.ps1)               | Synchronizes a Git repository by push & pull. [Read more...](Docs/sync-repo.md)                   |
+| [sync-repo.ps1](Scripts/sync-repo.ps1)               | Synchronizes a Git repository by pull & push. [Read more...](Docs/sync-repo.md)                   |
 
 🔎 Scripts for PowerShell 
 ------------------------
@@ -351,10 +353,10 @@ Mega Collection of PowerShell Scripts
 | [write-uppercase.ps1](Scripts/write-uppercase.ps1)   | Writes the given text in uppercase letters.                          [Read more...](Docs/write-uppercase.md)         |
 | [write-vertical.ps1](Scripts/write-vertical.ps1)     | Writes the given text in vertical direction.                         [Read more...](Docs/write-vertical.md)          |
 
-Feedback
---------
-Send your email feedback to: markus.fleschutz [at] gmail [dot] com
+📧 Feedback
+------------
+Send your email feedback to: `markus.fleschutz [at] gmail.com`
 
-🤝🏾 License & Copyright
+🤝 License & Copyright
 -----------------------
-This open source project is licensed under the CC0 license. All trademarks are the property of their respective owners.
+This open source project is licensed under the CC0-1.0 license. All trademarks are the property of their respective owners.

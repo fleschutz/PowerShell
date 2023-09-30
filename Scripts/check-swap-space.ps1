@@ -7,7 +7,7 @@
 	Specifies the minimum level in GB (10 GB by default)
 .EXAMPLE
 	PS> ./check-swap-space.ps1
-	✅ Swap space at 42% of 1GB, 748MB free
+	✅ Swap space uses 42% of 1GB, 748MB free
 .LINK
 	https://github.com/fleschutz/PowerShell
 .NOTES
@@ -29,31 +29,31 @@ function MB2String { param([int64]$Bytes)
 }
 
 try {
-	[int]$Total = [int]$Used = [int]$Free = 0
+	[int64]$Total = [int64]$Used = [int64]$Free = 0
 	if ($IsLinux) {
 		$Result = $(free --mega | grep Swap:)
-		[int]$Total = $Result.subString(5,14)
-		[int]$Used = $Result.substring(20,13)
-		[int]$Free = $Result.substring(32,11)
+		[int64]$Total = $Result.subString(5,14)
+		[int64]$Used = $Result.substring(20,13)
+		[int64]$Free = $Result.substring(32,11)
 	} else {
 		$Items = Get-WmiObject -class "Win32_PageFileUsage" -namespace "root\CIMV2" -computername localhost 
 		foreach ($Item in $Items) { 
-			$Total = $Item.AllocatedBaseSize
-			$Used = $Item.CurrentUsage
-			$Free = ($Total - $Used)
+			$Total += $Item.AllocatedBaseSize
+			$Used += $Item.CurrentUsage
+			$Free += ($Total - $Used)
 		} 
 	}
 	if ($Total -eq 0) {
         	Write-Output "⚠️ No swap space configured"
 	} elseif ($Free -eq 0) {
-		Write-Output "⚠️ $(MB2String $Total) Swap space is full"
+		Write-Output "⚠️ Swap space of $(MB2String $Total) is full"
 	} elseif ($Free -lt $minLevel) {
-		Write-Output "⚠️ $(MB2String $Total) Swap space is nearly full, only $(MB2String $Free) free"
+		Write-Output "⚠️ Swap space of $(MB2String $Total) is nearly full, only $(MB2String $Free) free"
 	} elseif ($Used -eq 0) {
-		Write-Output "✅ $(MB2String $Total) Swap space reserved"
+		Write-Output "✅ Swap space of $(MB2String $Total) reserved"
 	} else {
 		[int]$Percent = ($Used * 100) / $Total
-		Write-Output "✅ Swap space at $Percent% of $(MB2String $Total), $(MB2String $Free) free"
+		Write-Output "✅ Swap space uses $Percent% of $(MB2String $Total), $(MB2String $Free) free"
 	}
 	exit 0 # success
 } catch {

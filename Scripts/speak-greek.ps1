@@ -1,6 +1,6 @@
 ﻿<#
 .SYNOPSIS
-	Speaks text with a Greek text-to-speech voice
+	Speaks text in Greek
 .DESCRIPTION
 	This PowerShell script speaks the given text with a Greek text-to-speech (TTS) voice.
 .PARAMETER text

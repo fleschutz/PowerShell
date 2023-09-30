@@ -7,7 +7,7 @@
 	Specifies the hosts to check, seperated by commata (default is: amazon.com,bing.com,cnn.com,dropbox.com,github.com,google.com,live.com,meta.com,x.com,youtube.com)
 .EXAMPLE
 	PS> ./check-ping.ps1
-	✅ Ping latency is 29ms average (13ms...109ms, 0/10 loss)
+	✅ Online with 18ms latency average (13ms...109ms, 0/10 ping loss)
 .LINK
 	https://github.com/fleschutz/PowerShell
 .NOTES
@@ -19,28 +19,26 @@ param([string]$hosts = "bing.com,cnn.com,dropbox.com,github.com,google.com,ibm.c
 try {
 	$hostsArray = $hosts.Split(",")
 	$parallelTasks = $hostsArray | foreach {
-		(New-Object Net.NetworkInformation.Ping).SendPingAsync($_, 500)
+		(New-Object Net.NetworkInformation.Ping).SendPingAsync($_,750)
 	}
 	[int]$min = 9999999
-	[int]$max = [int]$avg = [int]$successCount = [int]$lossCount = 0
-	[int]$totalCount = $hostsArray.Count
+	[int]$max = [int]$avg = [int]$success = 0
+	[int]$total = $hostsArray.Count
 	[Threading.Tasks.Task]::WaitAll($parallelTasks)
 	foreach($ping in $parallelTasks.Result) {
-		if ($ping.Status -eq "Success") {
-			[int]$latency = $ping.RoundtripTime
-			if ($latency -lt $min) { $min = $latency }
-			if ($latency -gt $max) { $max = $latency }
-			$avg += $latency
-			$successCount++
-		} else {
-			$lossCount++
-		}
+		if ($ping.Status -ne "Success") { continue }
+		$success++
+		[int]$latency = $ping.RoundtripTime
+		$avg += $latency
+		if ($latency -lt $min) { $min = $latency }
+		if ($latency -gt $max) { $max = $latency }
 	}
-	if ($successCount -eq 0) {
-		Write-Host "⚠️ Offline ($lossCount/$totalCount loss)"
+	[int]$loss = $total - $success
+	if ($success -ne 0) {
+		$avg /= $success
+		Write-Host "✅ Online with $($avg)ms latency average ($($min)ms...$($max)ms, $loss/$total ping loss)"
 	} else {
-		$avg /= $successCount
-		Write-Host "✅ Ping latency is $($avg)ms average ($($min)ms...$($max)ms, $lossCount/$totalCount loss)"
+		Write-Host "⚠️ Offline ($loss/$total ping loss)"
 	}
 	exit 0 # success
 } catch {

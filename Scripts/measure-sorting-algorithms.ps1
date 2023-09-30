@@ -1,13 +1,13 @@
 ﻿<#
 .SYNOPSIS
-	Measure sorting algorithms
+	Measures the speed of sorting algorithms
 .DESCRIPTION
 	This PowerShell script measures the speed of several sorting algorithms and prints it.
 .PARAMETER numIntegers
 	Specifies the number of integers to sort (3000 by default)
 .EXAMPLE
 	PS> ./measure-sorting-algorithms.ps1
-	🕒 BubbleSort of 3000 integers took 6.041561 sec
+	🧭 6.041 sec to sort 3000 integers by BubbleSort
 	...
 .LINK
 	https://github.com/fleschutz/PowerShell
@@ -16,6 +16,7 @@
 #>
 
 param([int]$numIntegers = 3000)
+
 " "
 & "$PSScriptRoot/measure-BubbleSort.ps1" $numIntegers
 & "$PSScriptRoot/measure-BucketSort.ps1" $numIntegers

@@ -53,12 +53,12 @@ try {
 	& sudo unbound-control status
 	if ($lastExitCode -ne "0") { throw "'unbound-control status' failed" }
 
-	"⏳ (10/10) Training Unbound with 200 popular domain names..."
+	"⏳ (10/10) Training Unbound with 100 popular domain names..."
 	& "$PSScriptRoot/check-dns.ps1" 
 	if ($lastExitCode -ne "0") { throw "'unbound-control status' failed" }
 
 	[int]$Elapsed = $StopWatch.Elapsed.TotalSeconds
-	"✔️ installed Unbound in $Elapsed sec"
+	"✔️ Installed Unbound in $Elapsed sec"
 	exit 0 # success
 } catch {
 	"⚠️ Error in line $($_.InvocationInfo.ScriptLineNumber): $($Error[0])"
