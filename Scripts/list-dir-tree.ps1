@@ -9,7 +9,7 @@
 	PS> ./list-dir-tree.ps1 C:\MyFolder
 	├📂Results
 	│ ├📄sales.txt (442K)
-	(2 folders, 1 file, 442K total)
+	(2 folders, 1 file, 442K file size in total)
 .LINK
 	https://github.com/fleschutz/PowerShell
 .NOTES
@@ -69,7 +69,7 @@ try {
 	[int64]$global:files = 0
 	[int64]$global:bytes = 0
 	ListDirectory $Path 0
-	Write-Output " ($($global:folders) folders, $($global:files) files, $(Bytes2String $global:bytes) total)"
+	Write-Output " ($($global:folders) folders, $($global:files) files, $(Bytes2String $global:bytes) file size in total)"
 	exit 0 # success
 } catch {
 	"⚠️ Error in line $($_.InvocationInfo.ScriptLineNumber): $($Error[0])"
