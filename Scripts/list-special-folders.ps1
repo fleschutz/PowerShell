@@ -31,10 +31,8 @@ function TryFolder([string]$name, [string]$path) {
 
 function ListSpecialFolders {
 	if ($IsLinux) {
-		TryFolder "Boot files"        "/boot"
 		TryFolder "Config files"      "/etc"
 		TryFolder "Desktop"           "$HOME/Desktop"
-		TryFolder "Device files"      "/dev"
 		TryFolder "Documents"         "$HOME/Documents"
 		TryFolder "Downloads"         "$HOME/Downloads"
 		TryFolder "Dropbox"           "$HOME/Dropbox"
@@ -52,7 +50,10 @@ function ListSpecialFolders {
 		TryFolder "Scripts"           "$PSScriptRoot"
 		TryFolder "Snap"              "$HOME/snap"
 		TryFolder "SSH"               "$HOME/.ssh"
+		TryFolder "System boot"       "/boot"
 		TryFolder "System binaries"   "/sbin"
+		TryFolder "System devices"    "/dev"
+		TryFolder "System logs"       "/var/log"
 		TryFolder "Trash"             "$HOME/.local/share/Trash"
 		TryFolder "Templates"         "$Home/Templates"
 		TryFolder "Temporary"         "$(GetTempDir)"
