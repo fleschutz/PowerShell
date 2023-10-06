@@ -660,6 +660,7 @@ CBML,Coalition Battle Management Language
 CBN,CardsApp Brand Number
 CBOL,Consortium for the Barcode of Life
 CBOT,Chicago Board of Trade
+CBP,Customs and Border Protection
 CBR,Case-Based Reasoning
 CBRN,"Chemical,Biological,Radiological,or Nuclear (weapon or event)"
 CBRNE,"Chemical,Biological,Radiological,Nuclear or [high-yield] Explosive (weapon or event)"
@@ -2128,7 +2129,7 @@ ICBM,Intercontinental Ballistic Missile
 ICBN,International Code of Botanical Nomenclature
 ICC,Integrated Command and Control,International Criminal Court,International Cricket Council,Interstate Commerce Commission,International Chamber of Commerce
 ICD,Implantable Cardioverter-Defibrillator,Initial Capabilities Document,International Classification of Diseases
-ICE,In case of emergency
+ICE,"In case of emergency, Immigration and Customs Enforcement"
 ICES,International Council for the Exploration of the Sea
 ICF,Intelligent Community Forum
 ICHTHYS,Iesous Christos,Theou Yios,Soter (Greek,"Jesus Christ,Son of God,Savior")

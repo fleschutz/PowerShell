@@ -794,7 +794,6 @@ DFT,Demand Flow Technology
 DG,data governance
 DHA,directory harvest attack
 DHCP,Dynamic Host Configuration Protocol
-DHS,U.S. Department of Homeland Security
 DICOM,Digital Imaging and Communications in Medicine
 DID,Direct Inward Dialing 
 DIF,Data Interchange Format
@@ -1409,9 +1408,7 @@ IBP,integrated business planning
 IC,integrated circuit
 IC-BPMS,integration-centric business process management suite
 ICANN,Internet Corporation for Assigned Names and Numbers
-ICE,In Case of Emergency
-ICE,in-circuit emulator
-ICE,Information and Content Exchange
+ICE,"In-Circuit Emulator, Information and Content Exchange"
 IcM,incident management
 ICMP,Internet Control Message Protocol
 ICP,Internet commerce provider
