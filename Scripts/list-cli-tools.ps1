@@ -113,6 +113,7 @@ function ListTools {
 	ListTool csplit		"--version"
 	ListTool ctest		"--version"
 	ListTool curl		"--version"
+	ListTool curl.exe       "--version"
 	ListTool cut		"--version"
 	ListTool cygcheck	"--version"
 	ListTool cygpath	"--version"
