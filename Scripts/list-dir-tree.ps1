@@ -65,9 +65,9 @@ function ListDirectory([string]$path, [int]$depth) {
 }
 
 try {
-	[int]$global:folders = 1
-	[int]$global:files = 0
-	[int]$global:bytes = 0
+	[int64]$global:folders = 1
+	[int64]$global:files = 0
+	[int64]$global:bytes = 0
 	ListDirectory $Path 0
 	Write-Output " ($($global:folders) folders, $($global:files) files, $(Bytes2String $global:bytes) total)"
 	exit 0 # success
