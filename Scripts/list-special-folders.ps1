@@ -49,27 +49,29 @@ function ListSpecialFolders {
 		TryFolder "Repositories"      "$HOME/Repositories"
 		TryFolder "Root"              "/"
 		TryFolder "Screenshots"       "$HOME/Pictures/Screenshots"
+		TryFolder "Scripts"           "$PSScriptRoot"
 		TryFolder "Snap"              "$HOME/snap"
 		TryFolder "SSH"               "$HOME/.ssh"
 		TryFolder "System binaries"   "/sbin"
 		TryFolder "Trash"             "$HOME/.local/share/Trash"
 		TryFolder "Templates"         "$Home/Templates"
 		TryFolder "Temporary"         "$(GetTempDir)"
-		$Path = Resolve-Path "$HOME/.."
-		TryFolder "Users"             "$Path"
+		$path = Resolve-Path "$HOME/.."
+		TryFolder "Users"             "$path"
 		TryFolder "Videos"            "$HOME/Videos"
 	} else {
-		$FolderNames = [System.Enum]::GetNames('System.Environment+SpecialFolder')
-		$FolderNames | Sort-Object | ForEach-Object {
-			if ($Path = [System.Environment]::GetFolderPath($_)) {
-				TryFolder "$_" "$Path"
+		$folderNames = [System.Enum]::GetNames('System.Environment+SpecialFolder')
+		$folderNames | Sort-Object | ForEach-Object {
+			if ($path = [System.Environment]::GetFolderPath($_)) {
+				TryFolder "$_" "$path"
 			}
 		}
-		TryFolder "Repositories"     "$HOME\source\repos"
-		TryFolder "SSH"              "$HOME\.ssh"
-		TryFolder "Temporary"        "$(GetTempDir)"
-		$Path = Resolve-Path "$HOME/.."
-		TryFolder "Users"            "$Path"
+		TryFolder "Repositories"      "$HOME\source\repos"
+		TryFolder "Scripts"           "$PSScriptRoot"
+		TryFolder "SSH"               "$HOME\.ssh"
+		TryFolder "Temporary"         "$(GetTempDir)"
+		$path = Resolve-Path "$HOME/.."
+		TryFolder "Users"             "$path"
 	}
 }
 
