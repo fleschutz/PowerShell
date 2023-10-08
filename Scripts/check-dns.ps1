@@ -13,9 +13,9 @@
 #>
  
 try {
+	Write-Progress "⏳ Measuring DNS resolution..."
 	$table = Import-CSV "$PSScriptRoot/../Data/popular-domains.csv"
 	$numRows = $table.Length
-	Write-Progress "⏳ Resolving $numRows domain names..."
 
 	$stopWatch = [system.diagnostics.stopwatch]::startNew()
 	if ($IsLinux) {
@@ -23,13 +23,14 @@ try {
 	} else {
 		foreach($row in $table){$nop=Resolve-DNSName $row.Domain}
 	}
-	Write-Progress -completed "."
 	[float]$elapsed = $stopWatch.Elapsed.TotalSeconds
+
+	Write-Progress -completed " "
 	$average = [math]::round($numRows / $elapsed, 1)
 	if ($average -lt 10.0) {
-		Write-Output "⚠️ DNS resolves $average domains per second only"
+		Write-Host "⚠️ DNS resolves $average domains per second only"
 	} else {  
-		Write-Output "✅ DNS resolves $average domains per second"
+		Write-Host "✅ DNS resolves $average domains per second"
 	}
 	exit 0 # success
 } catch {
