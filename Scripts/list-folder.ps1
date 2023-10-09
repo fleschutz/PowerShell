@@ -15,7 +15,7 @@
 
 param([string]$searchPattern = "*")
 
-function GetFileIcon { param([string]$suffix)
+function GetFileIcon([string]$suffix) {
 	switch ($suffix) {
 	".csv"	{return "📊"}
 	".epub"	{return "📓"}
@@ -30,7 +30,7 @@ function GetFileIcon { param([string]$suffix)
 	}
 }
 
-function ListFolder { param([string]$searchPattern)
+function ListFolder([string]$searchPattern) {
 	$items = Get-ChildItem -path "$searchPattern"
 	foreach ($item in $items) {
 		$name = $item.Name
