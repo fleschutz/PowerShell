@@ -2,31 +2,31 @@
 .SYNOPSIS
 	Checks the CPU status
 .DESCRIPTION
-	This PowerShell script queries the CPU status and prints it (name, type, speed, temperature, etc).
+	This PowerShell script queries the CPU status (name, type, speed, temperature, etc) and prints it.
 .EXAMPLE
 	PS> ./check-cpu.ps1
-	✅ AMD Ryzen 5 5500U with Radeon Graphics (CPU0, 2100MHz, 31.3°C)
+	✅  Intel(R) Core(TM) i9-10900X CPU @ 3.70GHz (AMD64, 20 cores, CPU0, 3696MHz, CPU0 socket, 31.3°C)
 .LINK
 	https://github.com/fleschutz/PowerShell
 .NOTES
 	Author: Markus Fleschutz | License: CC0
 #>
 
-function GetCPUTemperatureInCelsius {
-	$Temp = 99999.9 # unsupported
+function GetProcessorTemperature {
+	$temp = 99999.9 # unsupported
 	if ($IsLinux) {
 		if (Test-Path "/sys/class/thermal/thermal_zone0/temp" -pathType leaf) {
 			[int]$IntTemp = Get-Content "/sys/class/thermal/thermal_zone0/temp"
-			$Temp = [math]::round($IntTemp / 1000.0, 1)
+			$temp = [math]::round($IntTemp / 1000.0, 1)
 		}
 	} else {
-		$Objects = Get-WmiObject -Query "SELECT * FROM Win32_PerfFormattedData_Counters_ThermalZoneInformation" -Namespace "root/CIMV2"
-		foreach ($Obj in $Objects) {
-			$HiPrec = $Obj.HighPrecisionTemperature
-			$Temp = [math]::round($HiPrec / 100.0, 1)
+		$objects = Get-WmiObject -Query "SELECT * FROM Win32_PerfFormattedData_Counters_ThermalZoneInformation" -Namespace "root/CIMV2"
+		foreach ($object in $objects) {
+			$highPrec = $object.HighPrecisionTemperature
+			$temp = [math]::round($highPrec / 100.0, 1)
 		}
 	}
-	return $Temp;
+	return $temp
 }
 
 function GetProcessorArchitecture {
@@ -44,39 +44,39 @@ function GetProcessorArchitecture {
 }
 
 try {
-	Write-Progress "⏳ Querying CPU details..."
-	$Status = "✅"
-	$Celsius = GetCPUTemperatureInCelsius
-	if ($Celsius -eq 99999.9) {
-		$Temp = "no temp"
-	} elseif ($Celsius -gt 50) {
-		$Temp = "$($Celsius)°C"
-		$Status = "⚠️"
-	} elseif ($Celsius -lt 0) {
-		$Temp = "$($Celsius)°C"
-		$Status = "⚠️"
+	Write-Progress "⏳ Querying CPU status...     "
+	$status = "✅"
+	$celsius = GetProcessorTemperature
+	if ($celsius -eq 99999.9) {
+		$temp = "no temp"
+	} elseif ($celsius -gt 50) {
+		$temp = "$($celsius)°C"
+		$status = "⚠️"
+	} elseif ($celsius -lt 0) {
+		$temp = "$($celsius)°C"
+		$status = "⚠️"
 	} else {
-		$Temp = "$($Celsius)°C"
+		$temp = "$($celsius)°C"
 	} 
 
-	$Arch = GetProcessorArchitecture
+	$arch = GetProcessorArchitecture
 	if ($IsLinux) {
-		$CPUName = "$Arch CPU"
-		$Arch = ""
-		$DeviceID = ""
-		$Speed = ""
-		$Socket = ""
+		$cpuName = "$arch CPU"
+		$arch = ""
+		$deviceID = ""
+		$speed = ""
+		$socket = ""
 	} else {
-		$Details = Get-WmiObject -Class Win32_Processor
-		$CPUName = $Details.Name.trim()
-		$Arch = "$Arch, "
-		$DeviceID = "$($Details.DeviceID), "
-		$Speed = "$($Details.MaxClockSpeed)MHz, "
-		$Socket = "$($Details.SocketDesignation) socket, "
+		$details = Get-WmiObject -Class Win32_Processor
+		$cpuName = $details.Name.trim()
+		$arch = "$arch, "
+		$deviceID = "$($details.DeviceID), "
+		$speed = "$($details.MaxClockSpeed)MHz, "
+		$socket = "$($details.SocketDesignation) socket, "
 	}
-	$Cores = [System.Environment]::ProcessorCount
-	Write-Progress -completed "done."
-	Write-Host "$Status $CPUName ($($Arch)$Cores cores, $($DeviceID)$($Speed)$($Socket)$Temp)"
+	$cores = [System.Environment]::ProcessorCount
+	Write-Progress -completed " "
+	Write-Host "$status $cpuName ($($arch)$cores cores, $($deviceID)$($speed)$($socket)$temp)"
 	exit 0 # success
 } catch {
 	"⚠️ Error in line $($_.InvocationInfo.ScriptLineNumber): $($Error[0])"
