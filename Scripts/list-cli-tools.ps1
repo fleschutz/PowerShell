@@ -6,9 +6,9 @@
 .EXAMPLE
 	PS> ./list-cli-tools.ps1
 
-	Tool         Version         Path                                          FileSize
-	----         -------         ----                                          --------
-	at           10.0.19041.1    C:\WINDOWS\system32\at.exe                    31232
+	CLI-Tool     Version         Location
+	--------     -------         --------
+	at           10.0.19041.1    C:\WINDOWS\system32\at.exe (31K)
 	...
 .LINK
 	https://github.com/fleschutz/PowerShell
@@ -16,7 +16,19 @@
 	Author: Markus Fleschutz | License: CC0
 #>
 
-function ListTool { param([string]$Name, [string]$VersionArg)
+function Bytes2String([int64]$bytes) {
+        if ($bytes -lt 1000) { return "$bytes bytes" }
+        $bytes /= 1000
+        if ($bytes -lt 1000) { return "$($bytes)K" }
+        $bytes /= 1000
+        if ($bytes -lt 1000) { return "$($bytes)MB" }
+        $bytes /= 1000
+        if ($bytes -lt 1000) { return "$($bytes)GB" }
+        $bytes /= 1000
+        return "$($Bytes)TB"
+}
+
+function ListTool([string]$Name, [string]$VersionArg) {
 	try {
 		$Info = Get-Command $Name -ErrorAction Stop
 		$Path = $Info.Source
@@ -41,7 +53,7 @@ function ListTool { param([string]$Name, [string]$VersionArg)
 		} else {
 			$Size = 0
 		}
-		New-Object PSObject -Property @{ Tool=$Name; Version=$Version; Path=$Path; FileSize=$Size }
+		New-Object PSObject -Property @{ 'CLI-Tool'=$Name; Version=$Version; Location="$Path ($(Bytes2String $Size))" }
 	} catch {
 		return
 	}
@@ -313,7 +325,7 @@ function ListTools {
 }
  
 try {
-	ListTools | Format-Table -property @{e='Tool';width=12},@{e='Version';width=15},@{e='Path';width=70},@{e='FileSize';width=10}
+	ListTools | Format-Table -property @{e='CLI-Tool';width=14},@{e='Version';width=17},@{e='Location';width=90}
 	exit 0 # success
 } catch {
 	"⚠️ Error in line $($_.InvocationInfo.ScriptLineNumber): $($Error[0])"
