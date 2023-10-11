@@ -2,7 +2,7 @@
 .SYNOPSIS
 	Checks the uptime 
 .DESCRIPTION
-	This PowerShell script queries the computer's uptime and prints it.
+	This PowerShell script queries the computer's uptime (time between now and last boot up time) and prints it.
 .EXAMPLE
 	PS> ./check-uptime.ps1
 	✅ Up for 2 days, 20 hours, 10 minutes
@@ -14,33 +14,33 @@
 
 try {
 	if ($IsLinux) {
-		$Uptime = (Get-Uptime)
+		$uptime = (Get-Uptime)
 	} else {
-		$BootTime = Get-WinEvent -ProviderName eventlog | Where-Object {$_.Id -eq 6005} | Select-Object TimeCreated -First 1 
-		$Uptime = New-TimeSpan -Start $BootTime.TimeCreated.Date -End (Get-Date)
+		$lastBootTime = (Get-CimInstance Win32_OperatingSystem).LastBootUpTime 
+		$uptime = New-TimeSpan -Start $lastBootTime -End (Get-Date)
 	}
-	$Reply = "✅ Up for "
-	$Days = $Uptime.Days
-	if ($Days -eq "1") {
-		$Reply += "1 day, "
-	} elseif ($Days -ne "0") {
-		$Reply += "$Days days, "
+	$reply = "✅ Up for "
+	$days = $uptime.Days
+	if ($days -eq "1") {
+		$reply += "1 day, "
+	} elseif ($days -ne "0") {
+		$reply += "$days days, "
 	}
 
-	$Hours = $Uptime.Hours
-	if ($Hours -eq "1") {
-		$Reply += "1 hour, "
-	} elseif ($Hours -ne "0") {
-		$Reply += "$Hours hours, "
+	$hours = $uptime.Hours
+	if ($hours -eq "1") {
+		$reply += "1 hour, "
+	} elseif ($hours -ne "0") {
+		$reply += "$hours hours, "
 	}
 
-	$Minutes = $Uptime.Minutes 
-	if ($Minutes -eq "1") {
-		$Reply += "1 minute"
+	$minutes = $uptime.Minutes 
+	if ($minutes -eq "1") {
+		$reply += "1 minute"
 	} else {
-		$Reply += "$Minutes minutes"
+		$reply += "$minutes minutes"
 	}
-	Write-Host $Reply
+	Write-Host $reply
 	exit 0 # success
 } catch {
 	"⚠️ Error in line $($_.InvocationInfo.ScriptLineNumber): $($Error[0])"
