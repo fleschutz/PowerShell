@@ -21,10 +21,11 @@ ABBR,MEANING
 8D,Eight-Dimensional
 9D,Nine-Dimensional
 A,Ampere
+A/C,"Air Conditioned/Conditioning"
 A10,Atlantic 10 Conference
 A1C,Airman First Class
 A4,European standard office paper size
-AA,achieved availability,Alcoholics Anonymous,Armed Forces Americas (postal symbol),Aruba (FIPS 10-4 territory code),assembly area,Automobile Association,avenue of approach
+AA,achieved availability,Alcoholics Anonymous,Armed Forces Americas (postal symbol),assembly area,Automobile Association,avenue of approach
 aA,Attoampere
 AAA,"administration,authorization,and authentication,American Automobile Association ('Triple-A'),anti-aircraft artillery,Amateur Athletic Association (of England),Asistencia Asesoría y Administración (Spanish,'Assistance,Consulting,and Administration'—Mexican professional wrestling promotion)"
 AAAI,Association for the Advancement of Artificial Intelligence,formerly American Association for Artificial Intelligence
@@ -86,7 +87,7 @@ ABSTRIPS,abstraction-based STRIPS
 ABV,Alcohol by volume
 ABW,Aruba (ISO 3166 trigram)
 Ac,Actinium
-AC,"Adriamycin-Cyclophosphamide (chemotherapy),Air Conditioning,Aircraftman,Alternating Current,Altocumulus,ante Christum (Latin,'before Christ'; see BC),ante cibum (Latin,'before meals'),Antigua and Barbuda (FIPS 10-4 country code),Associazione Calcio (Italian,'football (soccer) club'),A/C,Air Conditioned/Conditioning,Aircraft"
+AC,"Adriamycin-Cyclophosphamide (chemotherapy),Air Conditioning,Aircraftman,Alternating Current,Altocumulus,ante Christum (Latin,'before Christ'; see BC),ante cibum (Latin,'before meals'),Associazione Calcio (Italian,'football (soccer) club')"
 aC,Attocoulomb
 AC1,Aircraftman 1st Class
 AC2,Aircraftman 2nd Class
@@ -162,7 +163,7 @@ ADSR,"Attack,Decay,Sustain,Release (sound envelope specification)"
 ADT,Atlantic Daylight Time (UTC−3 hours)
 ADTB,Army Doctrine and Training Bulletin
 ADW,Air Defence Warning
-AE,"Armed Forces Africa/Canada/Europe/Middle East (postal symbol),United Arab Emirates (ISO 3166 digram; FIPS 10-4 country code),Artix Entertainment,American Eagle,A&E, Arts & Entertainment Network,the original name for the U.S. TV channel now known as A&E Network"
+AE,"Armed Forces Africa/Canada/Europe/Middle East (postal symbol),United Arab Emirates (ISO 3166 digram),Artix Entertainment,American Eagle,A&E, Arts & Entertainment Network,the original name for the U.S. TV channel now known as A&E Network"
 AEDT,Australian Eastern Daylight Time
 AEF,American Expeditionary Force
 AEGIS,Airborne Early warning Ground environment Interface Segment (fake etymology)
@@ -170,7 +171,7 @@ AESR,Aeronautical Equipment Service Record
 AEST,Australian Eastern Standard Time
 aet,After extra time (Football)
 AEW,"Airborne Early Warning,Airborne Electronic Warfare"
-AF,"Afghanistan (FIPS 10-4 country code; ISO 3166 digram),Air Force,As f*ck"
+AF,"Afghanistan (ISO 3166 digram),Air Force,As f*ck"
 aF,Attofarad
 AFA,"U.S. Air Force Academy,Asociación del Fútbol Argentino (Spanish for 'Argentine Football Association')"
 AFAIC,As Far As I'm Concerned
@@ -208,7 +209,7 @@ AFSPC,Air Force Space Command
 AFT,American Farmland Trust
 AFV,armoured fighting vehicle
 AFWA,Air Force Weather Agency,Association of Fish and Wildlife Agencies,AG[edit]
-AG,"air gunner,Aktiengesellschaft (German,'incorporated'),Algeria (FIPS 10-4 country code),Antigua and Barbuda (ISO 3166 digram),Assemblies of God"
+AG,"air gunner,Aktiengesellschaft (German,'incorporated'),Antigua and Barbuda (ISO 3166 digram),Assemblies of God"
 ag,Attogram
 Ag,Silver (Latin for 'argentum')
 AGA,"AB Gas-accumulator ('ah-gah',Swedish company),Advanced Graphics Architecture"
@@ -256,7 +257,6 @@ AIRS,Aerometric Information Retrieval System (obsolete; replaced with AFS)
 AIS,"Australian Institute of Sport,Automatic Identification System"
 AISB,(British Society for the Study of) Artificial Intelligence and the Simulation of Behaviour
 aJ,Attojoule
-AJ,Azerbaijan (FIPS 10-4 country code)
 Ajax,Asynchronous JavaScript And XML
 AJD,Astronomical Julian day
 AJP,Allied Joint Publication
@@ -267,7 +267,7 @@ AKA,Above knee amputation (orthopaedic usage)
 AKDT,Alaska Standard Daylight Saving Time (UTC−8 hours)
 AKP,"Adalet ve Kalkınma Partisi (Turkish,'Justice and Development Party')"
 AKST,Alaska Standard Time (UTC−9 hours)
-AL,"Alabama (postal symbol),Albania (FIPS 10-4 country code; ISO 3166 digram),Anno Lucis (Latin,'Year of Light',in Masonic tradition,most often seen on plaques bearing the founding dates of buildings,in years AD and years AL)"
+AL,"Alabama (postal symbol),Albania (ISO 3166 digram),Anno Lucis (Latin,'Year of Light',in Masonic tradition,most often seen on plaques bearing the founding dates of buildings,in years AD and years AL)"
 Al,Aluminium
 aL,Attolitre
 ALA,Åland Islands (ISO 3166 trigram)
@@ -287,7 +287,7 @@ ALSHS,Abraham Low Self-Help Systems
 ALSP,Aggregate Level Simulation Protocol
 ALTE,Association of Language Testers in Europe
 Am,Americium
-AM,"Amplitude Modulation and Ante Meridiem; see entry,Armenia (FIPS 10-4 country code; ISO 3166 digram)"
+AM,"Amplitude Modulation and Ante Meridiem; see entry,Armenia (ISO 3166 digram)"
 AM1,Airman 1st class
 AMA,American Medical Association,Australian Medical Association
 AMAPS,Aircraft,Missile,Avionics Performance Simulation
@@ -310,7 +310,7 @@ AMSAA,U.S. Army Materiel Systems Analysis Activity
 AMSO,U.S. Army Model and Simulation Office
 AMSU,Advanced Microwave Sounding Unit
 AMTE,UK Admiralty Marine Technology Establishment (1977-1984)
-AN,"Andorra (FIPS 10-4 country code),Netherlands Antilles (ISO 3166 digram)"
+AN,"Netherlands Antilles (ISO 3166 digram)"
 aN,Attonewton
 ANA,"Administration for Native Americans,Afghan National Army,All Nippon Airways,Anti-Nuclear Anti-body,Australian National Airways,Australian Natives' Association"
 ANC,African National Congress
@@ -328,7 +328,7 @@ ANTY,"Acronyms,No Thank You"
 ANWR,Arctic National Wildlife Refuge /ˈænwɑr/
 ANZ,Australia and New Zealand Banking Group
 ANZAC,Australian and New Zealand Army Corps
-AO,"Angola (FIPS 10-4 country code; ISO 3166 digram),Approach Officer (submarine),Area of Operations"
+AO,"Angola (ISO 3166 digram),Approach Officer (submarine),Area of Operations"
 AOC,"Air Operations Centre,Air Officer Commanding"
 AOD,Adrenalin O.D. (punk rock band)
 AOI,Angle Of Incidence (Arab Organization for Industrialization)
@@ -357,9 +357,9 @@ APOLLO,Apache Point Observatory Lunar Laser-ranging Operation
 APP,Allied Procedural Publication
 APR,Annual Percentage Rate
 APS,Advanced Photo System (cf. APS-C,an image sensor format based on the size of the original APS film frame),American Physical Society,Antiphospholipid Antibody Syndrome,AQ[edit]
-AQ,AdventureQuest,American Samoa (FIPS 10-4 territory code),Antarctica (ISO 3166 digram),Automatic qualifier,a term used by U.S. sports media from 1998 to 2013 to refer to the six conferences whose champions automatically entered the now-defunct Bowl Championship Series of college football
+AQ,AdventureQuest,Antarctica (ISO 3166 digram),Automatic qualifier,a term used by U.S. sports media from 1998 to 2013 to refer to the six conferences whose champions automatically entered the now-defunct Bowl Championship Series of college football
 AQIM,Al-Qaeda in the Islamic Maghreb
-AR,Argentina (FIPS 10-4 country code; ISO 3166 digram),Arkansas (postal symbol),Armour,Arunachal Pradesh (Indian state code)
+AR,"Argentina (ISO 3166 digram),Arkansas (postal symbol),Armour,Arunachal Pradesh (Indian state code)"
 Ar,Argon
 ARAG,Advanced Research and Assessment Group
 ARB,Administrative Review Board
@@ -387,7 +387,7 @@ ART,Adaptive Resonance Theory,Anti-Retroviral Therapy
 ARTCC,Air Route Traffic Control Center
 ARWG,Army Research Working Group
 AS,ActionScript
-AS,"American Samoa (postal symbol; ISO 3166 digram),Australia (FIPS 10-4 country code),Assam / Asom (Indian state code)"
+AS,"American Samoa (postal symbol; ISO 3166 digram),Assam / Asom (Indian state code)"
 As,Arsenic
 aS,Attosiemens
 ASA,"AcetylSalicylic Acid,American Standards Association,Army Security Agency,Atlantic Southeast Airlines"
@@ -430,7 +430,7 @@ ASVEL,"Association Sportive Villeurbanne Éveil Lyonnais (Association Sportive i
 ASW,AntiSubmarine Warfare
 ASWORG,(U.S.) AntiSubmarine Warfare Operations Research Group
 ASX,"Advanced Stream Redirector,Australian Securities Exchange"
-AT,"Anti-Tank,Ashmore and Cartier Islands (FIPS 10-4 territory code),Austria (ISO 3166 digram),Advanced Technology (IBM Personal Computer/AT)"
+AT,"Anti-Tank,Austria (ISO 3166 digram),Advanced Technology (IBM Personal Computer/AT)"
 At,Astatine
 aT,Attotesla
 ATA,"Advanced Technology Attachment (IBM Personal Computer),Afghan Transitional Authority,Allen Telescope Array,Antarctica (ISO 3166 trigram)"
@@ -457,7 +457,7 @@ ATSD,(U.S.) Assistant Secretary of Defense
 ATSDR,Agency for Toxic Substances and Disease Registry
 ATV,All-Terrain Vehicle
 ATWA,"Air,Trees,Water,Animals"
-AU,"African Union (was OAU before 2000),American University,Astronomical Unit,Australia (ISO 3166 digram),Austria (FIPS 10-4 country code)"
+AU,"African Union (was OAU before 2000),American University,Astronomical Unit,Australia (ISO 3166 digram)"
 Au,Gold (Latin 'Aurum')
 AUC,"Ab Urbe Condita / Anno Urbis Conditae (Latin for 'from the founding of the city' / 'in the year since the founding of the city') (of Rome),Area Under the Curve (concentration time curve; medicine)"
 AUS,Australia (ISO 3166 trigram)
@@ -465,7 +465,7 @@ AUSCANNZUKUS,"Australia,Canada,New Zealand,United Kingdom,United States (securit
 Auslan,Australian Sign Language
 AUT,Austria (ISO 3166 trigram)
 AUTL,Army Universal Task List
-AV,"Anguilla (FIPS 10-4 territory code),Audio-Visual,Aviation"
+AV,"Audio-Visual,Aviation"
 Av,Aperture value (photographic mode)
 aV,Attovolt
 AVA,American Viticultural Area
@@ -494,14 +494,13 @@ AWST,Australian Western Standard Time
 AWW,Above Water Warfare
 AX,Åland Islands (ISO 3166 digram)
 AXP,Ambulance eXchange Point
-AY,Antarctica (FIPS 10-4 territory code)
 AYBABTU,All Your Base Are Belong To Us
 AYU,As Yet Unknown
 AZ,"Arizona (postal symbol),Azerbaijan (ISO 3166 digram),Alkmaar Zaanstreek (Dutch football club)"
 AZE,Azerbaijan (ISO 3166 trigram)
 AZUR,"Actions en zone urbaine (French for: Urban Operations)"
 BAR,"Barbados (IOC trigram,but not FIFA or ISO 3166),British American Racing,Browning Automatic Rifle,Buy-American Restrictions,BARD , Binational Agricultural Research and Development fund (between the US and Israel),BARDA , Biomedical Advanced Research and Development Agency,BART , Bay Area Rapid Transit,BAS , Battalion Aid Station,BASE , Building,Antenna,Span,Earth (parachute from),BASF , Badische Anilin und Soda Fabrik (Baden Aniline and Soda Factory,a German chemicals company),BASIC , Beginner's All-purpose Symbolic Instruction Code (acronym was added later,originally it was simply Basic),BAT , Basic Aid Training,BATF , U.S. Bureau of Alcohol,Tobacco,and Firearms,BATS , Behavior Analysis Training System ,Bradley Advanced Training System,BATTeRS , Bisei Asteroid Tracking Telescope for Rapid Survey,BB[edit]"
-BB,"Barbados (ISO 3166 digram; FIPS 10-4 country code),Boys' Brigade (Christian youth organization),Brigitte Bardot (actress),Bumblebee"
+BB,"Barbados (ISO 3166 digram),Boys' Brigade (Christian youth organization),Brigitte Bardot (actress),Bumblebee"
 BBB,"Better Business Bureau,Blood-brain barrier"
 BBC,"Breeding Bird Census,British Broadcasting Corporation,Bumper to Back of Cab (trucking measurement)"
 BBL,"Be Back Later,Bird Banding Laboratory,British Basketball League"
@@ -509,7 +508,7 @@ BBN,"Bolt,Beranek and Newman"
 BBQ,Barbecue
 BBS,"Breeding Bird Survey (North America),Brigade/Battalion Battle Simulation,Bulletin Board System,BBSRC , U.K. Biotechnology and Biological Sciences Research Council,BBVA , Banco Bilbao Vizcaya Argentaria (Spanish bank)"
 BBYO,"B'nai B'rith Youth Organization"
-BC,"Before Christ,Blind Copy (in emailers),Boston College,Botswana (FIPS 10-4 country code; from Bechuanaland),British Columbia (postal symbol)"
+BC,"Before Christ,Blind Copy (in emailers),Boston College,British Columbia (postal symbol)"
 BCA,"Bachelor of Computer Application,Black Coaches & Administrators"
 BCC,Blind Carbon Copy
 BCCI,"Bank of Credit and Commerce International,Board of Control for Cricket in India,BCD , Binary-Coded Decimal"
@@ -519,14 +518,14 @@ BEN,Benin (ISO 3166 trigram)
 BEO,Banquet Event Order
 BERC,Business Environmental Resource Center
 BER,Bit Error Rate
-BH,"Bahrain (ISO 3166 digram),Belize (FIPS 10-4 country code)"
+BH,"Bahrain (ISO 3166 digram)"
 BHR,Bahrain (ISO 3166 trigram)
 BNF,"Backus-Naur Form (computing), British National Formulary"
 BNICE,"Biological,Nuclear,Incendiary,Chemical,and Explosive Agents"
 BNP,"British National Party,Banque Nationale de Paris,a predecessor to today's BNP Paribas"
 BNS,Bank of Nova Scotia
 BNSF,Burlington Northern Santa Fe (also AAR reporting mark)
-BO,"Back Orifice,Belarus (FIPS 10-4 country code),Biarritz Olympique (French rugby union club),Bolivia (ISO 3166 digram),Body odor"
+BO,"Back Orifice,Biarritz Olympique (French rugby union club),Bolivia (ISO 3166 digram),Body odor"
 BOAC,British Overseas Airways Corporation (predecessor of British Airways)
 BoAML,Bank of America Merrill Lynch
 BOC,"British Orthodontic Society, British Oxygen Company"
@@ -544,16 +543,16 @@ BOPB,Biarritz Olympique Pays Basque (the complete name of the rugby club),
 BOPD,Barrel of Oil Per Day
 BOS,Battlefield Operating System
 BOT,"Balance of Trade,Botswana (IOC and FIFA trigram,but not ISO 3166),Build Operate Transfer,Bank of Thailand,BP[edit]"
-BP,"Battle Position,British Petroleum (today,BP does not officially stand for anything),Solomon Islands (FIPS 10-4 country code; from British Protectorate of the Solomon Islands),Bp , Bishop,BPD , Bipolar Personality Disorder,BPM , Beats Per Minute,BPMo , Business Process Mobility"
+BP,"Battle Position,British Petroleum (today,BP does not officially stand for anything),Bp , Bishop,BPD , Bipolar Personality Disorder,BPM , Beats Per Minute,BPMo , Business Process Mobility"
 BPV,"Battlefield Planning Visualization,Bovine papillomavirus"
-BQ,"British Antarctic Territory (former ISO 3166 digram; merged with AQ in 1979),Caribbean Netherlands (current ISO 3166 digram; based on the entity's alternate name of Bonaire,Sint Eustatius and Saba),Navassa Island (FIPS 10-4 territory code)"
-BR,"Brazil (ISO 3166 digram; FIPS 10-4 country code) ,Bihar (Indian state code),British Rail,Break Ranks (marching band term)"
+BQ,"British Antarctic Territory (former ISO 3166 digram; merged with AQ in 1979),Caribbean Netherlands (current ISO 3166 digram; based on the entity's alternate name of Bonaire,Sint Eustatius and Saba)"
+BR,"Brazil (ISO 3166 digram) ,Bihar (Indian state code),British Rail,Break Ranks (marching band term)"
 BRA,Brazil (ISO 3166 trigram)
 BRAG,Bicycle Ride Across Georgia
 BRASS,"Breathe,Relax,Aim,Sight,Squeeze (acronym for using a rifle)"
 BRIC,"Brazil, Russia, India, and China"
 BRICS,"Brazil, Russia, India, China, and South Africa"
-BS,The Bahamas (ISO 3166 digram),Bassas da India (FIPS 10-4 territory code),Bachelor of Science degree,British subject
+BS,The Bahamas (ISO 3166 digram),Bachelor of Science degree,British subject
 BSA,"Birmingham Small Arms (motorcycles company),Boy Scouts of America,Brigade Support Area"
 BSatCoP,Benjamin Sniddlegrass and the Cauldron of Penguins
 BSE,"Bovine Spongiform Encephalopathy (better known as mad cow disease)"
@@ -564,19 +563,19 @@ BSP,"Between-Show Promotion,Binary Space Partitioning,Board Support Package,Brit
 BST,"Binary search tree,Blended Sales Tax,Bovine somatotropin,British Summer Time"
 BSW,British Standard Whitworth (screw thread)
 BSX,Bendigo Stock Exchange
-BT,"Baal teshuva (Hebrew,'master of repentance') ,used to describe a Jew who adopts Orthodox Judaism as an adult,Bathythermograph,Bhutan (FIPS 10-4 country code; ISO 3166 digram),BitTorrent,British Telecom,the former name of the company now known as BT Group,BTDT , Been There,Done That,Bti , Bacillus thuringiensis israelensis,BTID , Battlefield Target Identification Device,BTIS , Battlefield Target Identification System"
+BT,"Baal teshuva (Hebrew,'master of repentance') ,used to describe a Jew who adopts Orthodox Judaism as an adult,Bathythermograph,Bhutan (ISO 3166 digram),BitTorrent,British Telecom,the former name of the company now known as BT Group,BTDT , Been There,Done That,Bti , Bacillus thuringiensis israelensis,BTID , Battlefield Target Identification Device,BTIS , Battlefield Target Identification System"
 Bt,"Baronet,Bacillus thuringiensis"
 BTO,Built To Order
 BTP,British Transport Police
 BTR,"Bronetransporter (БТР = Бронетранспортер '(Heavy) Armoured (Personnel) Transporter')"
 BTU,British Thermal Unit
 BTW,By The Way
-BU,"Bulgaria (FIPS 10-4 country code) -,Burma (ISO 3166 digram; obsolete since 1989)"
+BU,"Burma (ISO 3166 digram; obsolete since 1989)"
 BUAV,British Union for the Abolition of Vivisection
 BUG-E,"Battlefield Universal Gateway Equipment ('buggy')"
 BUNO,Bureau Number (aircraft serial number)
 BUR,"Burma (ISO 3166 trigram; obsolete since 1989)"
-BV,"Background Vocals -,Battlefield Visualization ,,Bouvet Island (ISO 3166 digram; FIPS 10-4 territory code)"
+BV,"Background Vocals -,Battlefield Visualization ,,Bouvet Island (ISO 3166 digram)"
 BVD,"Bradley,Voorhees & Day (underwear manufacturer)"
 BVR,Beyond Visual Range
 BVT,Bouvet Island (ISO 3166 trigram)
@@ -588,7 +587,7 @@ BWARS,"Bees,Wasps & Ants Recording Society"
 BWC,Biological and Toxin Weapons Convention
 BWR,Boiling-Water Reactor
 BX,Base eXchange
-BY,"Burundi (FIPS 10-4 country code), Belarus (ISO 3166 digram), Bavaria"
+BY,"Belarus (ISO 3166 digram), Bavaria"
 BYOB,"Bring Your Own Bottle (or beer, beverage, or booze) (multiple,but similar,meanings)"
 BYOC,Bring Your Own Computer (play on BYOB)
 BYOF,Bring Your Own Flask
@@ -601,7 +600,7 @@ c,Centi
 C2C,"Consumer-To-Consumer electronic commerce, Cam-To-Cam internet chat"
 c2c,the British rail company formerly known as LTS Rail
 Ca,Calcium
-CA,"California (postal symbol),Canada (FIPS 10-4 country code; ISO 3166 digram),Catalonia,Civil Affairs,Close Armour,Cocaine Anonymous,Computer Associates,Counter-Air,Cricket Australia"
+CA,"California (postal symbol),Canada (ISO 3166 digram),Catalonia,Civil Affairs,Close Armour,Cocaine Anonymous,Computer Associates,Counter-Air,Cricket Australia"
 CAA,"Canadian Automobile Association,(NORAD) Center for Aerospace Analysis,(U.S.) Center for Army Analysis,(U.S.) Clean Air Act,(U.S. Army) Concepts Analysis Agency,Civil Aviation Authority,Colonial Athletic Association"
 CAAT,"Campaign Against Arms Trade,Center for Alternatives to Animal Testing"
 CAC,"California Association of Criminalists,Chronic Asymptomatic [Disease] Carrier"
@@ -647,7 +646,7 @@ CATT,Combined Arms Tactical Trainer
 CAV,Cavalry
 CAVOK,"Ceiling And Visibility OK ('Kav-okay')"
 CAW,Canadian Auto Workers (trade union)
-CB,"Citizens' Band radio,Cambodia (FIPS 10-4 country code)"
+CB,"Citizens' Band radio"
 CBASSE,"Commission on Behavioral And Social Sciences and Education ('sea bass')"
 CBC,"Canadian Broadcasting Corporation,Christmas Bird Count,Cipher-Block Chaining,Cornering Brake Control"
 CBE,"Commander of the Order of the British Empire,Cab Beside Engine (see truck)"
@@ -738,7 +737,7 @@ CEST,Central European Summer Time
 CET,Central European Time
 CEWC,Council for Education in World Citizenship
 Cf,Californium
-CF,"Canadian Forces,Central African Republic (ISO 3166 digram),Republic of the Congo (FIPS 10-4 country code)"
+CF,"Canadian Forces,Central African Republic (ISO 3166 digram)"
 CFA,"Cat Fanciers' Association,Chartered Financial Analyst,Colour Filtering Array,County Fire Authority,Covering Force Area"
 CFAR,"Christine's,Federal Acquisition Regulation"
 CFC,"ChloroFluoroCarbon,Canadian Fish Company"
@@ -759,14 +758,14 @@ CFSP,Common Foreign and Security Policy
 CFU,Colony Forming Unit in Microbiology
 CFV,Cavalry Fighting Vehicle
 CFZ,Critical Friendly Zone
-CG,"Client Group,Computer Graphics,Controls Group,Democratic Republic of the Congo (FIPS 10-4 country code),Republic of the Congo (ISO 3166 digram)"
+CG,"Client Group,Computer Graphics,Controls Group,Republic of the Congo (ISO 3166 digram)"
 CGH,Comparative Genomic Hybridisation
 CGIG,Cross-Government Implementation Group
 CGO,"Republic of the Congo (IOC and FIFA trigram,but not ISO 3166)"
 CGS,Chief of the General Staff
 CGT,Capital Gains Tax
 ch,ch(L) is used to denote the Chern character of a line bundle
-CH,"Chieftain tank,China (FIPS 10-4 country code),Switzerland (ISO 3166 digram; from Latin Confoederatio Helvetica)"
+CH,"Chieftain tank,Switzerland (ISO 3166 digram; from Latin Confoederatio Helvetica)"
 CHAMPUS,(U.S.) Civilian Health and Medical Program of the Uniformed Services (now known as TRICARE)
 CHAOS,Cambridge Heart Anti-Oxidant Study
 CHAPS,Clearing House Automated Payment System
@@ -783,7 +782,7 @@ CHP,California Highway Patrol,Combined Heat and Power
 CHPSO,California Hospital Patient Safety Organization
 CHRS,Canadian Heart Rhythm Society
 CHT,Certified Hand Therapist
-CI,"Chile (FIPS 10-4 country code),Côte d'Ivoire (ISO 3166 digram),Counter-Intelligence,101 (in Roman numerals)"
+CI,"Côte d'Ivoire (ISO 3166 digram),Counter-Intelligence,101 (in Roman numerals)"
 Ci,Curie
 CIA,"U.S. Central Intelligence Agency, Cairo International Airport, Culinary Institute of America"
 CIAO,"Critical Infrastructure Assurance Office,Component-Integrated ACE ORB"
@@ -810,13 +809,13 @@ CIV,Côte d'Ivoire (ISO 3166 trigram)
 CIVETS,"Colombia,Indonesia,Vietnam,Egypt,Turkey,South Africa (economics)"
 CIVPOP,Civilian Population
 CIWS,Close-In Weapon System
-CJ,"Cayman Islands (FIPS 10-4 country code),Criminal Justice"
+CJ,"Criminal Justice"
 CJC,"Canadian Jewish Congress,Cold Junction Compensation"
 CJCS,Chairman of the Joint Chiefs of Staff
 CJD,"Chronological Julian Day,Creutzfeldt-Jakob Disease"
 CJO,Chief of Joint Operations
 CJTF,Combined Joint Task Force
-CK,"Cocos (Keeling) Islands (FIPS 10-4 country code),Cook Islands (ISO 3166 digram)"
+CK,"Cook Islands (ISO 3166 digram)"
 CKA,"commonly known as, Canada Kicks Ass"
 CKND,Codename: Kids Next Door
 CL,"Chile (ISO 3166 digram),Co-ordination Line,One Hundred and Fifty (in Roman numerals)"
@@ -829,7 +828,7 @@ CLO,Cornell Lab of Ornithology
 CLOS,Command to Line-Of-Sight (missile control system)
 CLPFC,CentroLateral PreFrontal Cortex
 CLRP,College Loan Repayment Program
-CM,"Cameroon (FIPS 10-4 country code; ISO 3166 digram),Cruise Missile,Nine Hundred (in Roman numerals)"
+CM,"Cameroon (ISO 3166 digram),Cruise Missile,Nine Hundred (in Roman numerals)"
 Cm,Curium
 CMA,"U.S. Chemical Materials Agency,Country Music Association (also used to refer to the organization's annual awards),Crystal Meth Anonymous"
 CMHC,Canada Mortgage and Housing Corporation
@@ -851,7 +850,7 @@ CMT,Country Music Television
 CMU,"Carnegie Mellon University,Central Michigan University,Concrete Masonry Unit"
 CMW,"Marconi's Wireless Telegraph Company of Canada,Canadian Manufacturing Week,Canadian Music Week,Catherine McAuley Westmead (school in New South Wales,Australia),Chicago,Missouri and Western (Railway),Compartmented Mode Workstation,Compton's Most Wanted,Continuous Microwave (processing technology),Custom Maintenance Wizard (Microsoft Office Resource Kit)"
 CMYK,Cyan Magenta Yellow Key/blacK (colour model)
-CN,"Canadian National (railway; also the AAR reporting mark for said company),China (ISO 3166 digram),Comoros (FIPS 10-4 country code)"
+CN,"Canadian National (railway; also the AAR reporting mark for said company),China (ISO 3166 digram)"
 CNA,"Center for Naval Analyses,Certified Network Administrator,Computer Network Attack,Continental (Casualty Company),National (Fire Insurance Company),and American (Casualty Company),the three companies that merged to form what is now known as CNA Financial"
 CNBC,Consumer News and Business Channel
 CND,"Campaign for Nuclear Disarmament,Computer Network Defence"
@@ -909,10 +908,10 @@ CPT,Contingency Planning Team
 CPU,Contract Postal Unit
 CPV,Cape Verde (ISO 3166 trigram)
 CPX,Command Post eXercise
-CQ,"Carrier Qualification,Central Queensland,Charge of Quarters,Congressional Quarterly,Constellation Airlines (IATA airline designator),Northern Mariana Islands (FIPS 10-4 territory code)"
+CQ,"Carrier Qualification,Central Queensland,Charge of Quarters,Congressional Quarterly,Constellation Airlines (IATA airline designator)"
 CQD,"Close Quarters Drill (Morse distress code preceding SOS: CQ 'calling all stations',D 'Distress'; often incorrectly interpreted as 'Come Quick,Distress')"
 Cr,Chromium
-CR,"Coral Sea Islands (FIPS 10-4 territory code),Costa Rica (ISO 3166 digram)"
+CR,"Costa Rica (ISO 3166 digram)"
 CRAM,Combined Radiometric Correction Model
 CRD,Capstone Requirements Document
 CREB,Cyclic AMP-response Element Binding (protein)
@@ -957,7 +956,7 @@ CTS,"Clear-To-Send,Collective Training Standards,Communications Technology Servi
 CTSS,Compatible Time-Sharing System
 CTU,Counter Terrorist Unit (fictional branch of the Central Intelligence Agency in the television action series 24)
 CTVT,Canine Transmissible Venereal Tumour
-CU,Carrie Underwood,Cuba (FIPS 10-4 country code; ISO 3166 digram)
+CU,"Carrie Underwood, Cuba (ISO 3166 digram)"
 Cu,Copper (Latin 'Cuprum')
 CUB,Cuba (ISO 3166 trigram)
 CUCV,Commercial Utility Cargo Vehicle
@@ -972,21 +971,21 @@ CV,curriculum vitae (résumé)
 CVLL,Crypto Variable Logic Label
 CVSD,Continuous Variable Slope Delta (modulation)
 CVT,Continuously Variable Transmission
-CW,"Calendar Week, or: Continuous Wave, or: Clothes Washer, or: Cook Islands (FIPS 10-4 territory code)"
+CW,"Calendar Week, or: Continuous Wave, or: Clothes Washer"
 CWA,Communications Workers of America
 CWC,Chemical Weapons Convention
 CWRU,Case Western Reserve University
 CWS,Canadian Wildlife Service
 CX,"Christmas Island (ISO 3166 digram),or: One Hundred and Ten (in Roman numerals)"
 CXR,Christmas Island (ISO 3166 trigram)
-CY,"Calendar year, or: Cyprus (ISO 3166 and FIPS 10-4 country code digram)"
+CY,"Calendar year, or: Cyprus (ISO 3166 country code digram)"
 CYM,Cayman Islands (ISO 3166 trigram)
 CZE,Czech Republic (ISO 3166 trigram)
 CZF,(Christian Zombie Fan)
 CZMA,(US) Coastal Zone Management Act
 d,Deci
 D,Deuterium
-DA,Denmark (FIPS 10-4 country code),Debtors Anonymous,U.S. Department of the Army,District Attorney
+DA,"Debtors Anonymous,U.S. Department of the Army,District Attorney"
 DADVSI,"Loi sur le droit d’auteur et les droits voisins dans la société de l’information (French,'Law on copyrights and related rights in the information society')"
 DAES,"Defence Acquisition Executive Summary,(UK MoD) Directorate of Analysis,Experimentation and Simulation"
 DAF,"Dissolved Air Flotation,a technique used in water treatment"
@@ -1095,7 +1094,7 @@ DISSTAF,DIS Search and Target Acquisition Fidelity experiment
 DITY,Do-It-Yourself
 DIVAD,Division Air Defence
 DIY,Do It Yourself
-DJ,Disc Jockey,Dinner Jacket,Djibouti (ISO 3166 digram; FIPS 10-4 country code)
+DJ,Disc Jockey,Dinner Jacket,Djibouti (ISO 3166 digram)
 DJD,Degenerative Joint Disease,Dublin Julian Day,Discoveries in the Judaean Desert
 DJI,Djibouti (ISO 3166 trigram)
 DJS,Director,Joint Staff
@@ -1140,8 +1139,8 @@ DNK,Denmark (ISO 3166 trigram)
 DNM,Defence Nuclear Material
 DNR,Do Not Resuscitate
 DNS,Domain Name System
-DO,Dominica (FIPS 10-4 country code),Dominican Republic (ISO 3166 digram),Doctor of Osteopathic Medicine
-DOA,Dead On Arrival,Dead or Alive
+DO,"Dominican Republic (ISO 3166 digram),Doctor of Osteopathic Medicine"
+DOA,"Dead On Arrival,Dead or Alive"
 DOB,Date Of Birth
 DOD,U.S. Department of Defense
 DODAF,U.S. Department of Defense Architectural Framework
@@ -1171,8 +1170,8 @@ DPPDB,Digital Point Positioning Database
 DPRE,Displaced Person or Refugee (plural Displaced Persons and Refugees) (originally Displaced Persons,Refugees,Evacuees)
 DPRK,Democratic People's Republic of Korea
 DPST,Double-Pole Single-Throw
-DQ,Dairy Queen,Jarvis Island (FIPS 10-4 country code)
-DR,Dead Reckoning,Dominican Republic (FIPS 10-4 country code),Danmarks Radio (Danish Broadcasting Corporation)
+DQ,Dairy Queen
+DR,"Dead Reckoning,Danmarks Radio (Danish Broadcasting Corporation)"
 DRA,Defence Research Agency (UK,1991-1995),Democratic Republic of America
 DRAGN,Double Radio source Active Galactic Nucleus ("dragon")
 DRC,Democratic Republic of the Congo
@@ -1320,7 +1319,7 @@ EFSA,European Food Safety Authority
 EFT,Electronic Fund Transfer
 EFTA,European Free Trade Area,European Free Trade Association
 EFV,Expeditionary Fighting Vehicle
-EG,Egypt (ISO 3166 digram; FIPS 10-4 country code)
+EG,Egypt (ISO 3166 digram)
 EGBUS,External Genitalia,Bartholin's glands,Urethra & Skene's glands
 EGCG,EpiGalloCatechin-3-Gallate
 EGIS,Erieye Ground Interface Segment
@@ -1331,7 +1330,6 @@ EHA,Education for All Handicapped Children Act (U.S. federal legislation; since 
 EHF,Extremely High Frequency
 EHR,Equipment History Record
 Ei,Exbi
-EI,Ireland (FIPS 10-4 country code; from Éire)
 EIA,Environmental Impact Assessment
 EIAH,Encyclopedia of Iranian Architectural History
 EIAH,Environnements Informatiques pour l'Apprentissage Humain
@@ -1341,7 +1339,7 @@ eID,electronic ID
 EIRP,Effective Isotropic Radiated Power
 EIS,Environmental Impact Statement
 EJ,Exajoule
-EK,Equatorial Guinea (FIPS 10-4 country code),Exakelvin
+EK,Exakelvin
 EKG,Electrocardiogram (from German Elektrokardiogramm)
 EKMS,Electronic Key Management System
 EL,Exalitre
@@ -1369,7 +1367,7 @@ EMP,ElectroMagnetic Pulse
 EMS,Emergency Medical Services
 EMT,Emergency Medical Technician
 EMU,Electric Multiple Unit,a method of connecting self-propelled railway vehicles together to form a train under the control of one driver.
-EN,Corps of Engineers,Estonia (FIPS 10-4 country code),Exanewton
+EN,"Corps of Engineers,Exanewton"
 ENCODE,Encyclopedia of DNA Elements (human genome data project)
 ENE,East North-East
 ENG,England (FIFA trigram; not eligible for an ISO 3166 or IOC trigram)
@@ -1403,7 +1401,7 @@ EPR,European Pressurised [Nuclear] Reactor
 EPW,Earth Penetrator Weapon/Warhead,Economic and Political Weekly (Indian publication),Enemy Prisoner of War,EQ[edit]
 EQ,Emotional Quotient
 EQG,Equatorial Guinea (FIFA trigram,but not IOC or ISO 3166)
-ER,Emergency Room,Eritrea (ISO 3166 digram; FIPS 10-4 country code)
+ER,Emergency Room,Eritrea (ISO 3166 digram)
 Er,Erbium
 ERA,Earned run average,Engineering Research Associates,Equal Rights Amendment,English Racing Automobiles,European Railway Agency
 ERCIM, European Research Consortium for Informatics and Mathematics
@@ -1416,7 +1414,7 @@ ERS,Earth Resources Survey
 ERTS,Earth Resources Technology Satellite (became Landsat)
 ERV,Endogenous RetroVirus
 Es,Einsteinium,Exasecond
-ES,El Salvador (FIPS 10-4 country code),Electronic warfare Support,Exasiemens,Spain (ISO 3166 digram; from the country's native name of España)
+ES,"Electronic warfare Support,Exasiemens,Spain (ISO 3166 digram; from the country's native name of España)"
 ESA,Electro-Spark Alloying,Endangered Species Act,European Space Agency
 ESC,Embryonic Stem Cell,Electronic Stability Control
 ESD,ElectroStatic Discharge
@@ -1433,7 +1431,7 @@ ESPN,Entertainment and Sports Programming Network
 EST,Eastern Standard Time (UTC−5 hours),Estonia (ISO 3166 trigram)
 ESU,Emergency Services Unit
 ESV,Engineer Support Vehicle
-ET,Ethiopia (ISO 3166 digram; FIPS 10-4 country code)
+ET,Ethiopia (ISO 3166 digram)
 ETA,Estimated Time of Arrival,Euzkadi Ta Azkatasuna ("etta",Basque,"Basque Homeland and Freedom"),et al.,et alii/aliae/alia (Latin,"and others")
 ETF,Emergency Task Force (a special police unit,also jocularly said to stand for Extra-Thick Fuzz)
 ETH,Ethiopia (ISO 3166 trigram)
@@ -1441,7 +1439,7 @@ ETI,Extra-Terrestrial Intelligence
 ETLA,Extended TLA
 ETM,Electronic Technical Manual,Enhanced Thematic Mapper
 ETT,Embedded Training Team
-EU,Europa Island (FIPS 10-4 country code),European Union
+EU,European Union
 Eu,Europium
 EUCOM,(U.S.) European Command
 EUUSA,European Union and United States of America
@@ -1454,7 +1452,7 @@ EWTN,Eternal Word Television Network
 Exatesla,Extra Terrestrial
 EXREP,Expeditious Repair (SM&R code)
 EYD-Ejaan Yang Disempurnakan (Indonesian,"Perfected Spelling System",used officially in Indonesia since 1972),Eurovision Young Dancers,EZ[edit]
-EZ,Czech Republic (FIPS 10-4 country code),Extraction Zone
+EZ,Extraction Zone
 EZLN,Ejército Zapatista de Liberación Nacional (Spanish,"Zapatista Army of National Liberation")
 F,Farad,Fluorine
 f,Femto
@@ -1550,13 +1548,13 @@ FFS,For Fuck's Sake
 FFT,Final Fantasy Tactics
 FG,Falun Gong
 fg,Femtogram
-FG,"Fog (METAR Code), French Guiana (FIPS 10-4 territory code)"
+FG,"Fog (METAR Code)"
 FGOTUS,First Gentleman of the United States
 FGR,Flickr Group Roulette
 fH,Femtohenry
 FHFIF,Foster's Home for Imaginary Friends
 FHI,"Family Health International, Fuji Heavy Industries,Ltd."
-FI,"Finland (ISO 3166 digram; FIPS 10-4 country code)"
+FI,"Finland (ISO 3166 digram)"
 FIA,Fédération internationale de l'automobile (French for: International Automobile Federation)"
 FIAT,"Fabbrica Italiana Automobili Torino (Italian for: Italian Car Factory of Turin)"
 FIB,"Fucking Illinois Bastard (Wisconsin slang, variants exist)"
@@ -1584,10 +1582,10 @@ FiST,Fire Support Team
 FITS,Flexible Image Transport System
 FIU,Florida International University
 fJ,Femtojoule
-FJ,"Fiji (ISO 3166 digram; FIPS 10-4 country code)"
+FJ,"Fiji (ISO 3166 digram)"
 FJI,Fiji (ISO 3166 trigram)
 FJN,Financial Job Network
-FK,"Falkland Islands (ISO 3166 digram; FIPS 10-4 territory code)"
+FK,"Falkland Islands (ISO 3166 digram)"
 fK,Femtokelvin
 FKSM,Fort Knox Supplemental Manual
 FKT,Fastest Known Time
@@ -1614,7 +1612,7 @@ FLTSAT,Fleet Satellite
 FLTSATCOM,Fleet Satellite Communication System
 FLUBOS,"Fat, Lazy, Useless, Bag Of Shit"
 FM,Factory Mutual
-FM,"Federal Magistrate (Australian post-nominal),Federated States of Micronesia (postal symbol; ISO 3166 digram; FIPS 10-4 territory code),Field Manual,Flight Manager,Frequency Modulation (electronics)"
+FM,"Federal Magistrate (Australian post-nominal),Federated States of Micronesia (postal symbol; ISO 3166 digram),Field Manual,Flight Manager,Frequency Modulation (electronics)"
 fm,Femtometre
 Fm,Fermium
 FMC,"Federal Magistrates' Court (an Australian federal court,formerly FMS),Food Machinery Corporation (original name of the company now known as FMC Corporation)"
@@ -1653,11 +1651,10 @@ FOT,Free on truck
 FOTA,Fellow of the Orthodontic Technicians Association
 FOTC,Flight of the Conchords
 FOUO,For Official Use Only
-FP,French Polynesia (FIPS 10-4 territory code)
 FPF,"Federação Portuguesa de Futebol (Portuguese for: Portuguese Football Federation), Final Protective Fire"
 FPS,Fire Prevention System
-FQ,"Baker Island (FIPS 10-4 territory code),French Southern and Antarctic Territories (ISO 3166 digram; obsolete 1979)"
-FR,France (FIPS 10-4 country code; ISO 3166 digram)
+FQ,"French Southern and Antarctic Territories (ISO 3166 digram; obsolete 1979)"
+FR,France (ISO 3166 digram)
 Fr,Francium
 FRA,"Federal Railroad Administration, France (ISO 3166 trigram)"
 FRAND,"Fair,reasonable,and non-discriminatory (concept in standards-setting and intellectual property law)"
@@ -1732,7 +1729,7 @@ G6,Assistant Chief-of-Staff,Information Technology,Group of 6 (France,Germany,Un
 G7,Assistant Chief-of-Staff,Training,Group of 7 (G6 + Canada) (1976)
 G77,Group of 77 (issued from the United Nations Conference on Commerce and Development,1964; currently numbers 133)
 G8,Assistant Chief-of-Staff,Finance,Group of 8 (G7 + Russia) (1998)
-GA,Gabon (ISO 3166 digram),The Gambia (FIPS 10-4 country code),Gamblers Anonymous,Georgia (postal symbol),Gigaampere,Goa (Indian state code)
+GA,Gabon (ISO 3166 digram),Gamblers Anonymous,Georgia (postal symbol),Gigaampere,Goa (Indian state code)
 Ga,Gallium,Gigaannum
 GAAR,General Anti-Avoidance Rule (tax evasion)
 GAB,Gabon (ISO 3166 trigram)
@@ -1742,7 +1739,7 @@ GAF,Garfield and Friends
 GALCIT,Guggenheim Aeronautical Laboratory,California Institute of Technology
 GAO,U.S. Government Accountability Office
 GAW,Global Atmospheric Watch
-GB,Gabon (FIPS 10-4 country code),United Kingdom of Great Britain and Northern Ireland (ISO 3166 digram) [glamour boy 7-9/10]
+GB,United Kingdom of Great Britain and Northern Ireland (ISO 3166 digram) [glamour boy 7-9/10]
 GBBC,Great (Global) Backyard Bird Count
 GBE,Knight/Dame Grand Cross of the Order of the British Empire
 GBH,Great Bash Heel (Japanese professional wrestling stable),Gregory Bonner Hale (British design and advertising agency),Grievous bodily harm
@@ -1787,13 +1784,12 @@ GFI,Ground Fault Interruptor (aka GFCI)
 GFL,German Football League (Germany's Bundesliga for American football; the English-language name is used in German without translation)
 GFN,Global Footprint Network
 GFY,"good for you" or "go fuck yourself",depending on the context (Internet chat)
-GG,Georgia (FIPS 10-4 country code)
 GGK,Good God Karma
 GGP,General Game Playing,General Growth Properties (U.S. shopping center owner),GH[edit]
-GH,Ghana (ISO 3166 digram; FIPS 10-4 country code),Gigahenry
+GH,Ghana (ISO 3166 digram),Gigahenry
 GHA,Ghana (ISO 3166 trigram)
 GHB,gamma-Hydroxybutyric acid
-GI,Galvanised Iron,Gastro-Intestinal,General Issue,Gibraltar (ISO 3166 digram; FIPS 10-4 territory code),Government Issue
+GI,Galvanised Iron,Gastro-Intestinal,General Issue,Gibraltar (ISO 3166 digram),Government Issue
 Gi,Gibi
 GIB,Gibraltar (ISO 3166 trigram)
 GIG,Global Information Grid
@@ -1801,10 +1797,10 @@ GIN,Guinea (ISO 3166 trigram),Guidelines International Network
 GINK,Going Insane Not Knowing,orig. Colorado 2010 M.Kalfas
 GINO,Godzilla In Name Only
 GISS,"General Impression of Size and Shape,Goddard Institute for Space Studies"
-GJ,Gigajoule,Grenada (FIPS 10-4 country code),Gujarat (Indian state code)
+GJ,"Gigajoule,Gujarat (Indian state code)"
 GJD,Geocentric Julian Day
-GK,Gigakelvin,Guernsey (FIPS 10-4 territory code)
-GL,Gigalitre,Graphics Language,Greenland (ISO 3166 digram; FIPS 10-4 territory code),Grenade Launcher
+GK,Gigakelvin
+GL,Gigalitre,Graphics Language,Greenland (ISO 3166 digram),Grenade Launcher
 GLAAD,Gay and Lesbian Alliance Against Defamation
 GLAC,General Ledger Accounting Code
 GLAST,Gamma-ray Large Area Space Telescope
@@ -1815,7 +1811,7 @@ GLONASS,Globalnaya navigatsionnaya sputnikovaya sistema (Russian Глоба́л�
 GLP,Guadeloupe (ISO 3166 trigram)
 GLV,Gained Life Value
 Gm,Gigametre
-GM,"The Gambia (ISO 3166 digram),GameMaster (role-playing),General Motors,Genetically Modified,Germany (FIPS 10-4 country code),Guru Meditation (computing)"
+GM,"The Gambia (ISO 3166 digram),GameMaster (role-playing),General Motors,Genetically Modified,Guru Meditation (computing)"
 GMAC,"General Motors Acceptance Corporation,the original name of the company now known as Ally Financial,Graduate Management Admission Council,G-MAC,Great Midwest Athletic Conference"
 GMB,"The Gambia (ISO 3166 trigram),General,Municipal,Boilermakers (and Allied Trade Union)"
 GmbH,Gesellschaft mit beschränkter Haftung (German,"Company with limited liability")
@@ -1832,7 +1828,6 @@ GNC,"G&C Records" NetLabel,General Nutrition Centers (US sports nutrition retail
 GNP,Gross National Product
 GNQ,Equatorial Guinea (ISO 3166 trigram)
 GnRH,Gonadotropin-Releasing Hormone
-GO,Glorioso Islands (FIPS 10-4 territory code)
 GOA,General of the Army (United States only)
 GOA,Gun Owners of America"
 GOAT,Greatest Of All Time
@@ -1845,7 +1840,7 @@ GOSH,Great Ormond Street Hospital
 GOSP,Gas/Oil Separation Plant
 GOTS,Government off-the-shelf
 GOYADIN,"Get Off Your Arse,Do It Now (anti-procrastination mantra)"
-GP,"General Practitioner,General Purpose,Grand Prix,Guadeloupe (ISO 3166 digram; FIPS 10-4 territory code)"
+GP,"General Practitioner,General Purpose,Grand Prix,Guadeloupe (ISO 3166 digram)"
 GPA,Grade Point Average
 GPC,Global Path Cache
 GPIB,General-Purpose Instrumentation/Interface Bus
@@ -1855,8 +1850,8 @@ GPR,Ground-Penetrating Radar
 GPS,"General Problem Solver,Global Positioning System"
 GPT,"General Purpose Technology, Get paid to surf (an online business model)"
 GPU,Gosudarstvennoye Politicheskoye Upravlenie (Russian Государственное Политическое Управление,"State Political Administration") (1922-1934)
-GQ,"Equatorial Guinea (ISO 3166 digram),Gentlemen's Quarterly (the original name of the magazine now known simply as GQ),Guam (FIPS 10-4 territory code),GR[edit]"
-GR,"Greece (FIPS 10-4 country code; ISO 3166 digram),Hail (METAR Code)"
+GQ,"Equatorial Guinea (ISO 3166 digram),Gentlemen's Quarterly (the original name of the magazine now known simply as GQ),GR[edit]"
+GR,"Greece (ISO 3166 digram),Hail (METAR Code)"
 GRAIL,Gravity Recovery and Interior Laboratory
 GRAS,Generally recognized as safe (FDA list)
 GRB,Gamma-Ray Burst
@@ -1887,7 +1882,7 @@ GSR,Gun Shot Residue
 GSS,Generic Security Services
 GST,Goods and Services Tax (Australia,Canada,and other countries)
 GSW,Gunshot wound
-GT,Gigatesla,Gran Turismo,Grand Touring,Guatemala (FIPS 10-4 country code; ISO 3166 digram)
+GT,Gigatesla,Gran Turismo,Grand Touring,Guatemala (ISO 3166 digram)
 GTB,Get to bed,namely to get a new job after a long time of searching,usually following a phone call
 GTC,Gran Telescopio Canarias (Spanish,Canaries Great Telescope)
 GTD,Getting Things Done
@@ -1904,7 +1899,7 @@ Gulag,Glavnoye Upravleniye ispravitelno-trudovykh LAGerei i kolonii (Russian Г�
 GULCR,Grupo de Usuarios de Linux de Costa Rica
 GUM,Glavnyi Universalnyi Magazin (Russian Главный Универсальный Магазин,"Main Department Store"; known in Soviet times as Gosudarstvennyi Universalnyi Magazin/Государственный Универсальный Магазин,"State Department Store"),Guam (ISO 3166 trigram),Guide to the expression of Uncertainty in Measurement
 GUT,Grand Unification Theory
-GV,Gigavolt,Guinea (FIPS 10-4 country code)
+GV,Gigavolt
 GW,Games Workshop,Germ Warfare,Gigawatt,Guided Weapon,Guinea-Bissau (ISO 3166 digram)
 GWARS,Ground Warfare System (simulation)
 GWAS,Grand Western Archery Society
@@ -1914,14 +1909,14 @@ GXE,Gene-enivronment interaction
 GXM,Matrox Graphics eXpansion Module
 GxP,Good X Practice (X can mean: clinical,manufacturing,pharmaceutical,etc.)
 GXP,Grid Exit Point,Global Xchange Programme,Indication of highest performance level on some Pontiac vehicles
-GY,Guyana (FIPS 10-4 country code; ISO 3166 digram)
-GZ,Gaza Strip (FIPS 10-4 territory code),Ground Zero
+GY,Guyana (ISO 3166 digram)
+GZ,Ground Zero
 GZK,Greisen-Zatsepin-Kuzmin cut-off (cosmic ray energies)
 h,Hecto
 H,Henry
 H1,First half of the year
 H2,Second half of the year
-HA,Haiti (FIPS 10-4 country code),High Availability
+HA,High Availability
 HAARP,High Frequency Active Auroral Research Program
 HAART,Highly Active Anti-Retroviral Therapy
 HAI,Human Awareness Institute
@@ -1994,7 +1989,7 @@ HIV,Human Immunodeficiency Virus
 HIWT,Hobart Institute of Welding Technology
 HJ,hic jacet (Latin,"here lies")
 HJD,Heliocentric Julian Day
-HK,Hong Kong (ISO 3166 digram; FIPS 10-4 territory code)
+HK,Hong Kong (ISO 3166 digram)
 HKG,Hong Kong (ISO 3166 trigram)
 HKS,HyperKinetic Syndrome
 hL,Hectolitre
@@ -2005,7 +2000,7 @@ HLN,Headline News
 HLOS,High Level Output Specification
 HLS,hoc loco situs (Latin,"laid in this place")
 HLVW,Heavy Logistics Vehicle,Wheeled
-HM,Heard Island and McDonald Islands (ISO 3166 digram; FIPS 10-4 territory code)
+HM,Heard Island and McDonald Islands (ISO 3166 digram)
 HMCE,Her/His Majesty's Customs and Excise (former UK government department; succeeded by HM Revenue and Customs)
 HMCS,Her/His Majesty's Canadian Ship,Her Majesty's Courts Service (former UK agency; succeeded by Her Majesty's Courts and Tribunals Service)
 HMD,Heard and McDonald Islands (ISO 3166 trigram)
@@ -2020,7 +2015,6 @@ HMV,His Master's Voice
 HN,Honduras (ISO 3166 digram)
 HND,Honduras (ISO 3166 trigram)
 Ho,Holmium
-HO,Honduras (FIPS 10-4 country code)
 HOLLAND,Hope Our Love Lasts And Never Dies
 HOMES,the Great Lakes; Huron,Ontario,Michigan,Erie,Superior
 HONY,Humans of New York,a photoblog.
@@ -2038,9 +2032,9 @@ HPCL,Hindustan Petroleum Corporation Limited
 HPLC,High Performance Liquid Chromatography
 HPT,High[er] Payoff Target
 HPV,Human Papilloma Virus
-HQ,HeadQuarters,Howland Island (FIPS 10-4 territory code)
+HQ,HeadQuarters
 HQDA,HeadQuarters,Department of the Army
-HR,Croatia (FIPS 10-4 country code; ISO 3166 digram,from the country's native name of Hrvatska),Haryana (Indian state code),Harvard Revised star catalogue,Human Resources
+HR,Croatia (ISO 3166 digram,from the country's native name of Hrvatska),Haryana (Indian state code),Harvard Revised star catalogue,Human Resources
 HRBL,High-level Representation of Behavior Language (original name of the Herbal language)
 HRD,Human Resource Development
 HRED,(U.S. Army Research Laboratory's) Human Research and Engineering Directorate (Aberdeen Proving Ground,Maryland)
@@ -2071,7 +2065,7 @@ HTML,HyperText Markup Language
 HTR,Heated Towel Rail
 HTS,High-Temperature Superconducting wire
 HTTP,HyperText Transfer Protocol
-HU,Hungary (ISO 3166 digram; FIPS 10-4 country code)
+HU,Hungary (ISO 3166 digram)
 HUD,Head-Up Display,Housing and Urban Development
 HUHA,Head up his/her ass (Marine salute; probably a backcronym)
 HUN,Hungary (ISO 3166 trigram)
@@ -2121,7 +2115,7 @@ IBDS,Integrated Biological Detection System,International Business Development S
 IBM,International Business Machines
 IBRD,International Bank for Reconstruction and Development (part of the World Bank)
 IBS,Irritable Bowel Syndrome
-IC,Ice Crystals (METAR Code),Iceland (FIPS 10-4 country code),Integrated Circuit,[inner circle]
+IC,"Ice Crystals (METAR Code),Integrated Circuit,[inner circle]"
 ICANN,Internet Corporation for Assigned Names and Numbers
 ICAO,International Civil Aviation Organization
 ICBM,I see (phonetically "c") BatMan
@@ -2152,7 +2146,7 @@ ICV,Infantry Carrier Vehicle
 ICW,In Co-ordination With,Indonesia Corruption Watch,Infectious and Chemotherapeutic Waste,Insulating Concrete Wall,Integral Crystalline Waterproofing,Interactive Courseware
 ICYMI,In Case You Missed It
 ICZN,International Code of Zoological Nomenclature,International Commission on Zoological Nomenclature
-ID,Idaho (postal symbol),Identity,Indonesia (FIPS 10-4 country code; ISO 3166 digram),Infantry Division,Intelligent Design,ID10T Error,Idiot User Error (IT help desk inside joke)
+ID,"Idaho (postal symbol),Identity,Indonesia (ISO 3166 digram),Infantry Division,Intelligent Design,ID10T Error,Idiot User Error (IT help desk inside joke)"
 IDA,U.S. Institute for Defense Analyses,International Development Association (part of the World Bank
 IDC,International Data Corporation
 IDDI,I don't do initialisms (see irony)
@@ -2213,7 +2207,7 @@ ILDS,Improved Landmine Detection System
 ILO,International Labour Organization
 ILRI,International Livestock Research Institute
 ILY,I Love You [pronounced ILL-LEE]
-IM,Isle of Man (FIPS 10-4 territory code),Instant Message (internet speech)
+IM,Instant Message (internet speech)
 IMA,Intermediate Maintenance Activity,Institute of Mathematics and Applications
 IMBD,International Migratory Bird Day
 IMDb,Internet Movie Database
@@ -2237,7 +2231,7 @@ IMSA,Illinois Mathematics and Science Academy,International Mind Sports Associat
 IMsL,International Ms. Leather
 IMT,Integrated Management Tool
 IMU,International Mathematical Union
-IN,India (FIPS 10-4 country code; ISO 3166 digram),Indiana (postal symbol),Infantry
+IN,"India (ISO 3166 digram),Indiana (postal symbol),Infantry"
 In,Indium
 INA,Immigration and Nationality Act
 INAS,International Near-Earth Asteroid Survey
@@ -2257,14 +2251,14 @@ InSAR,Interferometric synthetic aperture radar
 INST,Information Standards and Technology
 INTERFET,International Force for East Timor
 INTSUM,Intelligence Summary
-IO,British Indian Ocean Territory (ISO 3166 digram; FIPS 10-4 territory code)
+IO,British Indian Ocean Territory (ISO 3166 digram)
 IOC,Initial Operational Capability,Intergovernmental Oceanic Commission,International Olympic Committee,International Ornithological Congress
 IOLTA,Interest on Lawyer Trust Accounts (charitable funding mechanism,especially for legal aid)
 IOM,Iowa,Ohio,Michigan (soybean origin),Institute of Medicine,International Organisation for Migration,Isle of Man
 IONA,Islands of the North Atlantic (alternate name for Great Britain,Ireland,the Isle of Man,and related islands)
 IOT,British Indian Ocean Territory (ISO 3166 trigram)
 IOU,"I Owe You" (Promissory note)
-IP,Clipperton Island (FIPS 10-4 territory code),Initial Point,Intellectual Property,Internet Protocol
+IP,Initial Point,Intellectual Property,Internet Protocol
 IPA,India Pale Ale,International Phonetic Alphabet,Isopropyl alcohol
 IPB,Intelligence Preparation of the Battlefield
 IPCC,Intergovernmental Panel on Climate Change,Independent Police Complaints Commission
@@ -2296,7 +2290,7 @@ IRQ,Iraq (ISO 3166 trigram)
 IRS,U.S. Internal Revenue Service
 IRSN,Institut de radioprotection et de sûreté nucléaire (French,"Institute for Radiation Protection and Nuclear Safety")
 IRST,Infra-red Search and Track
-IS,Iceland (ISO 3166 digram),Israel (FIPS 10-4 country code)
+IS,Iceland (ISO 3166 digram)
 ISA,Individual Savings Account,Industry Standard Architecture,Instruction Set Architecture,International Seabed Authority
 ISAAA,International Service for the Acquisition of Agri-biotech Applications
 ISAF,International Sailing Federation,International Security Assistance Force
@@ -2331,7 +2325,7 @@ ISTAR,Intelligence,Surveillance,Target Acquisition,and Reconnaissance
 ISTC,Institute of Scientific and Technical Communications (UK)
 ISTS,Intel Science Talent Search
 ISU,Integrated Sight Unit,International Skating Union,IT[edit]
-IT,InferoTemporal (neurophysiology),Information Technology,Italy (FIPS 10-4 country code; ISO 3166 digram)
+IT,InferoTemporal (neurophysiology),Information Technology,Italy (ISO 3166 digram)
 ITA,Italy (ISO 3166 trigram)
 ITAG,Inertial Terrain-Aided Guidance
 ITALY,I'll Truly Always Love You
@@ -2351,7 +2345,7 @@ ITU,Intent-to-Use,International Telecommunication Union (International Telegraph
 IUCN,International Union for the Conservation of Nature and Natural Resources (World Conservation Union)
 IUPAC,International Union of Pure and Applied Chemistry (pronounced "eye-yoo-pac")
 IUSS,Integrated Undersea Surveillance System,Integrated Unit Simulation System,International Union of Soil Sciences
-IV,Côte d'Ivoire (FIPS 10-4 country code; from Ivory Coast),Four (in Roman numerals),IntraVenous (as in intravenous drip or intravenous therapy)
+IV,"Four (in Roman numerals),IntraVenous (as in intravenous drip or intravenous therapy)"
 IVD,Internet Video Device,intra vas device
 Iveco,Industrial Vehicles Corporation
 IVF,In Vitro Fertilisation
@@ -2366,8 +2360,6 @@ IWC,International Whaling Commission
 IWW,Industrial Workers of the World
 IX,Nine (in Roman numerals)
 IXT,IntraText digital library; IntraText lexical hypertext
-IY,Saudi-Iraqi neutral zone (FIPS 10-4 territory code; obsolete 1993)
-IZ,Iraq (FIPS 10-4 country code)
 J,Joule
 J1,Joint [Manpower &] Personnel Directorate
 J2,Joint Intelligence Directorate
@@ -2380,7 +2372,6 @@ J5,Joint Strategic Plans & Policy Directorate
 J6,Joint Information Technology Directorate (Command,Control,Communications & Computer Systems)
 J7,Joint Operational Plans & Interoperability Directorate
 J8,Joint Force Structure,Resources,& Assessment Directorate
-JA,Japan (FIPS 10-4 country code)
 JAFT,Just A Field Test
 JAL,Japan Airlines
 JALLC,Joint Analysis and Lessons Learned Centre (NATO)
@@ -2407,7 +2398,6 @@ JDCC,UK Joint Doctrine and Concepts Centre,now the Development,Concepts,and Doct
 JDEM,Joint Dark Energy Mission
 JDL,Jewish Defense League
 JDM,Japanese domestic market,referring specifically to automobiles and parts,Java Data Mining,Joint design manufacturing,JE[edit]
-JE,Jersey (FIPS 10-4 territory code)
 JEB,James Ewell Brown (Stuart),John Ellis Bush
 JEDP,Jahwist,Elohist,Deuteronomist,Priestly (according to the documentary hypothesis,the sources of the Torah)
 JEE,Java Platform,Enterprise ion
@@ -2437,12 +2427,11 @@ JJAP,Japanese Journal of Applied Physics
 JK,Jedi Knight,Just Kidding,Spanair (IATA airline designator),Jammu & Kashmir (Indian state code)
 JL,Japan Airlines (IATA airline designator)
 JLA,Justice League of America
-JM,Jamaica (FIPS 10-4 country code; ISO 3166 digram)
+JM,Jamaica (ISO 3166 digram)
 JMS,Java Message Service
-JN,Jan Mayen Island (FIPS 10-4 territory code)
 JNI,Java Native Interface
 JNLP,Java Network Launch Protocol
-JO,Jordan (FIPS 10-4 country code; ISO 3166 digram)
+JO,Jordan (ISO 3166 digram)
 JOA,Joint Operations Area
 Jofa,Jonssons fabriker (Swedish,"Jonsson's Factories")
 JOPES,Joint Operations Planning and Execution System
@@ -2453,7 +2442,7 @@ JPEG,Joint Photographic Experts Group ("djay-peg")
 JPL,Jet Propulsion Laboratory
 JPN,Japan (ISO 3166 trigram)
 JPOW,Joint Project Optic Windmill
-JQ,Jetstar Airways (IATA airline designator),Johnny Quick,Johnston Atoll (FIPS 10-4 territory code),Jonny Quest,Joshua Quagmire
+JQ,Jetstar Airways (IATA airline designator),Johnny Quick,Jonny Quest,Joshua Quagmire
 JRA,Japanese Red Army,Joint Rear Area
 JRDF,Joint Rapid Deployment Forces
 JRE,Java Runtime Environment
@@ -2487,7 +2476,6 @@ JTLS,Joint Theater Level Simulation
 JTMD,Joint Theatre Missile Defence
 JTN,Johnston Atoll (ISO 3166 trigram; obsolete 1986)
 JTRS,Joint Tactical Radio System ("jitters")
-JU,Juan de Nova Island (FIPS 10-4 territory code)
 JUGFET,JUnction Gate Field-Effect Transistor
 JUICE,JUpiter ICy Moon Explorer
 JUO,Joint Urban Operations
@@ -2519,7 +2507,7 @@ KCL,King's College London
 KCMO,"Kansas City,Missouri (pronounced: K-C-Moe)"
 KCS,Kansas City Southern Railway (AAR reporting mark)
 KD,"Kawasaki Disease,Kraft Dinner"
-KE,"Kenya (FIPS 10-4 country code; ISO 3166 digram),Kinetic Energy,Knowledge Engineering"
+KE,"Kenya (ISO 3166 digram),Kinetic Energy,Knowledge Engineering"
 KEDO,Korean Peninsula Energy Development Organization
 KEN,Kenya (ISO 3166 trigram)
 KERA,Kentucky Education Reform Act (of 1990)
@@ -2530,7 +2518,7 @@ kF,Kilofarad
 KFC,Kentucky Fried Chicken
 KFOR,UN Kosovo Force
 KFUPM,King Fahd University of Petroleum & Minerals
-KG,Kyrgyzstan (FIPS 10-4 country code; ISO 3166 digram)
+KG,Kyrgyzstan (ISO 3166 digram)
 KGB,Komitet Gosudarstvennoy Bezopasnosti (Russian "Committee for State Security") (1954-1991)
 KGO,Knight of the Guelphic Order of Hanover
 KGZ,Kyrgyzstan (ISO 3166 trigram)
@@ -2561,7 +2549,7 @@ KLS,Kleine-Levin syndrome,Košarkaška liga Srbije (Latin) or Кошаркашк
 KM,"Comoros,Knowledge Management"
 KMFDM,"Kein Mitleid für die Mehrheit (German: No pity for the majority, music band)
 KMR,Kwajalein Missile Range
-KN,"Democratic People's Republic of Korea (FIPS 10-4 country code),Saint Kitts and Nevis (ISO 3166 digram)"
+KN,"Saint Kitts and Nevis (ISO 3166 digram)"
 kN,Kilonewton
 KNA,Saint Kitts and Nevis (ISO 3166 trigram)
 KNVB,Koninklijke Nederlandse Voetbal Bond (Dutch for Royal Dutch Football Association)
@@ -2572,19 +2560,18 @@ KPMG,"Klynveld,Peat,Marwick,Goerdeler"
 KPNO,Kitt Peak National Observatory
 KPV,Krupnokaliberniy Pulemet Vladimorova (Russian КПВТ Крупнокалиберный Пулемет Владимирова,"Large-Calibre Machinegun Vladimirov")[1]
 KPVT,Krupnokaliberniy Pulemet Vladimorova Tankoviy (Russian КПВТ Крупнокалиберный Пулемет Владимирова Танковый,"Large-Calibre Machinegun Vladimirov Tank")[2]
-KQ,"Kenya Airways (IATA airline designator), Kingman Reef (FIPS 10-4 territory code)"
+KQ,"Kenya Airways (IATA airline designator)"
 KR,"Kiribati (FIPS 10-4 country code), Republic of Korea (ISO 3166 digram)"
 Kr,Krypton
-KS,"Kansas (postal symbol), Republic of Korea (FIPS 10-4 country code)"
+KS,"Kansas (postal symbol)"
 kS,Kilosiemens
 KSC,Kennedy Space Center
 KSI,Killed or Seriously Injured
 KSM,Korean Service Medal,Khalid Sheikh Mohammed
 KSU,Kansas State University
-KT,"Christmas Island (FIPS 10-4 territory code), Knight of the Order of the Thistle, Knights Templar"
+KT,"Knight of the Order of the Thistle, Knights Templar"
 kT,Kilotesla
 KTS,Knight of the Tower and Sword (of Portugal)
-KU,Kuwait (FIPS 10-4 country code)
 KUL,Katholieke Universiteit Leuven (Flemish,Catholic University of Leuven)
 KUW,"Kuwait (UNDP country code,IOC and FIFA trigram,but not ISO 3166)"
 KV,"Kavminvodyavia (IATA airline designator),Kendriya Vidhyalaya (Indian school),Kliment Voroshilov (tanks),Köchel-Verzeichnis (Mozart catalogue),Valley of the Kings (originally "Kings' Valley")"
@@ -2597,10 +2584,10 @@ KWB,Kids' WB!
 KWT,Kuwait (ISO 3166 trigram)
 KX,Cayman Airways (IATA airline designator)
 KY,"Cayman Islands (ISO 3166 digram), Kentucky (postal symbol)"
-KZ,Kazakhstan (FIPS 10-4 country code; ISO 3166 digram)
+KZ,Kazakhstan (ISO 3166 digram)
 KZN,KwaZulu-Natal
 La,Lanthanum
-LA,"Laos (FIPS 10-4 country code; ISO 3166 digram), Louisiana (postal symbol), Los Angeles"
+LA,"Laos (ISO 3166 digram), Louisiana (postal symbol), Los Angeles"
 LAAS,"Local Area Augmentation System, Los Angeles Astronomical Society"
 LAB,Logistics Assault Base
 LabVIEW,Laboratory Virtual Instrumentation Engineering Workbench
@@ -2648,7 +2635,6 @@ LDL,Low-Density Lipoprotein
 LDS,Latter-day Saint (also "Latter Day Saint"); also used as an abbreviation by The Church of Jesus Christ of Latter-day Saints,Liberal Democracy of Slovenia
 LDV,Local Defence Volunteers (British Home Guard)
 LDW,Lane Departure Warning (ADAS)
-LE,Lebanon (FIPS 10-4 country code)
 LEC,Local Exchange Carrier
 LED,Light-Emitting Diode
 LEGAD,Legal Advice
@@ -2661,18 +2647,17 @@ LEU,Low-Enriched Uranium
 LF,Low Frequency
 LFO,Low Frequency Oscillation / Oscillator
 LFTR,Liquid fluoride thorium reactor
-LG,Latvia (FIPS 10-4 country code)
 LGB,"Lesbian,Gay,Bisexual"
 LGBT,"Lesbian,Gay,Bisexual,Transgender"
 LGBTQ,"Lesbian,Gay,Bisexual,Transgender,Queer"
 LGLO,"Love God,Love Others"
 LGM,Little Green Men
 LGS,Landsat Ground Station
-LH,Lithuania (FIPS 10-4 country code),Luteinising Hormone
+LH,Luteinising Hormone
 LHC,Large Hadron Collider
 LHD,litterarum humaniorum doctor (Latin,"doctor of humane letters (humanities)"),Left-Hand Drive (automobile)
 LHS,Left Hand Side
-LI,Fifty-one (in Roman numerals),Liberia (FIPS 10-4 country code),Liechtenstein (ISO 3166 digram)
+LI,"Fifty-one (in Roman numerals),Liechtenstein (ISO 3166 digram)"
 Li,Lithium
 LIBOR,London Interbank Offered Rate
 LIBS,Laser Induced Breakdown Spectroscopy
@@ -2710,7 +2695,6 @@ LNER,London and North Eastern Railway
 LNG,Liquefied Natural Gas
 LNO,Liaison Officer
 LNR,"Ligue Nationale de Rugby (French for: 'National Rugby League')"
-LO,Slovakia (FIPS 10-4 country code)
 LOA,Limit Of Advance
 LOC,"Level of Operational Capability, Limited Operational Capability"
 LOD,"Limit of Detection,see Detection limit"
@@ -2734,7 +2718,6 @@ LPD,"Landing Platform Dock (Navy hull classification),Low Probability of Detecti
 LPG,Liquefied Petroleum Gas (cf. LNG)
 LPI,Low Probability of Intercept
 LPS,"Landsat Processing System,LipoPolySaccharide"
-LQ,Palmyra Atoll (FIPS 10-4 territory code)
 Lr,Lawrencium
 LR,Liberia (ISO 3166 digram)
 LRAD,Long Range Acoustic Device ("ell-rad")
@@ -2747,7 +2730,7 @@ LRP,Logistics Release Point
 LRPE,Long-Range Planning Element
 LRS,Long Range Surveillance
 LRU,Line-Replaceable Unit
-LS,"Landing Support,Lesotho (ISO 3166 digram),Liechtenstein (FIPS 10-4 country code),locus sigilli (Latin,"place of the seal")"
+LS,"Landing Support,Lesotho (ISO 3166 digram),locus sigilli (Latin,"place of the seal")"
 LSAT,"Law School Admission Test (often pronounced as 'el-SAT')"
 LSD,Landing Ship,Dock (Navy hull classification),librae,solidii,denarii (Latin: Pounds,shillings and pence),lyserg-saüre-dietylamid (German "lysergic acid diethylamide")
 LSE,Least Squares Estimate/Error,London School of Economics,London Stock Exchange
@@ -2758,7 +2741,7 @@ LSO,Lesotho (ISO 3166 trigram)
 LSST,Large Synoptic Survey Telescope
 LST,"Landing Ship,Tank (World War II; also known,not entirely affectionately,as 'Large Slow Target')"
 LSVW,"Light Support Vehicle,Wheeled"
-LT,"Lesotho (FIPS 10-4 country code),Lithuania (ISO 3166 digram)"
+LT,"Lithuania (ISO 3166 digram)"
 Lt,Lieutenant
 LtC,Lieutenant-Colonel (U.S.)
 LTC,Long-Term Costing
@@ -2789,13 +2772,13 @@ LWRC,Land Warfare Resources Corporation
 LWS,Land Warrior System
 LX,Electrics (theatrical term)
 LX,"Luxembourg (amateur radio ITU prefix),Swiss International Air Lines (IATA code)"
-LY,"Libya (FIPS 10-4 country code; ISO 3166 digram),Lithuania (amateur radio ITU prefix)"
+LY,"Libya (ISO 3166 digram),Lithuania (amateur radio ITU prefix)"
 LYAO,Laugh Your Ass Off
 LYLAS,Love You Like A Sister
 LZ,"Bulgaria (amateur radio ITU prefix),Landing Zone"
 M,"Mega-,One thousand (in Roman numerals)"
 m,"Metre,Milli"
-MA,"Madagascar (FIPS 10-4 country code),Marijuana Anonymous,Master of Arts,Massachusetts (postal symbol),Megaampere,Morocco (ISO 3166 digram)"
+MA,"Marijuana Anonymous,Master of Arts,Massachusetts (postal symbol),Megaampere,Morocco (ISO 3166 digram)"
 Ma,Megaannum
 mA,Milliampere
 MAA,Mathematical Association of America
@@ -2830,8 +2813,8 @@ MATREX,Modeling Architecture for Technology,Research & EXperimentation
 MAVS,Mobile Artillery Vehicle System
 MAW,Malawi (IOC trigram,but not FIFA or ISO 3166)
 MAX,Meta-reasoning Architecture for "X"
-MB,Manitoba (postal symbol),Martinique (FIPS 10-4 territory code),Medal of Bravery (Canada)
-MBA,Main Battle Area,Main Belt Asteroid,Masters of Business Administration
+MB,"Manitoba (postal symbol),Medal of Bravery (Canada)"
+MBA,"Main Battle Area,Main Belt Asteroid,Masters of Business Administration"
 MBBL,(U.S. Armor Center) Mounted Battlespace Battle Laboratory
 MBCC,Migratory Bird Conservation Commission (U.S.)
 MBCS,Multi-Byte Character Set
@@ -2907,16 +2890,16 @@ MEV,Medical Evacuation Vehicle,Musica Elettronica Viva
 MeV,Megaelectronvolt
 MEX,Mexico (ISO 3166 trigram)
 MEZ,Missile Engagement Zone
-MF,Mayotte (FIPS 10-4 territory code),Megafarad
+MF,Megafarad
 mF,Millifarad
 MFSB,Mother,Father,Sister,Brother (1970s Philadelphia studio musicians collective)
-MG,Machine Gun,Madagascar (ISO 3166 digram),Major General,Mongolia (FIPS 10-4 country code),Morris Garage
+MG,"Machine Gun,Madagascar (ISO 3166 digram),Major General,Morris Garage"
 Mg,Magnesium,Megagram
 MGB,Medium Girder Bridge,Motor Gun Boat
 MGM,Metro Goldwyn Mayer,Montgomery,Alabama (Airport Code)
 MGPAM,My Gym Partner's a Monkey
 MGS,Mobile Gun System
-MH,Marshall Islands (postal symbol; ISO 3166 digram),Megahenry,Montserrat (FIPS 10-4 territory code)
+MH,Marshall Islands (postal symbol; ISO 3166 digram),Megahenry
 mH,Millihenry
 MHC,Major Histocompatibility Complex
 MHHW,Mean Higher High Water (nautical charts)
@@ -2964,7 +2947,7 @@ MKG,Michael Kidd-Gilchrist (American basketball player)
 MKO,Mojahedin-e-Khalq Organization (Persian,"People's Mujahedin of Iran")
 MKS,Metre-Kilogram-Second (system of units),MKS Inc. software company
 MKSA,Metre-Kilogram-Second-Ampere (system of units)
-ML,Mali (FIPS 10-4 country code; ISO 3166 digram),Maximum Likelihood,Megalitre
+ML,Mali (ISO 3166 digram),Maximum Likelihood,Megalitre
 mL,Millilitre
 MLA,Martial Law Administration of Bangladesh,Master of Landscape Architecture,Medical Library Association,Member of Legislative Assembly,Modern Language Association,Mutual legal assistance treaty,Myelosis Leucemica Acuta
 MLB,Major League Baseball
@@ -3069,7 +3052,7 @@ MPSI,Member of the Pharmaceutical Society of Ireland
 MPSoC,MultiProcessor System-on-Chip
 MPSRON,Maritime Propositioning Ship Squadron
 MQ,Martinique (ISO 3166 digram),Midway Islands (FIPS 10-4 territory code)
-MR,Mauritania (FIPS 10-4 country code; ISO 3166 digram)
+MR,Mauritania (ISO 3166 digram)
 MRAV,Multi-Role Armoured Vehicle
 MRBM,Medium Range Ballistic Missile
 MRC,Maintenance Requirements Card
@@ -3127,9 +3110,9 @@ MTU,Tankovei Mostoukladchik (Russian Танковый Мостоукладчик
 MTV,MainosTeleVisio (Finnish commercial TV company),Music TeleVision
 MTVL,Mobile Tracked Vehicle,Light
 MTWS,MAGTF Tactical Warfare System
-MU,Mauritius (ISO 3166 digram),Oman (FIPS 10-4 country code; from Muscat)
+MU,Mauritius (ISO 3166 digram),Oman (from Muscat)
 MUS,Mauritius (ISO 3166 trigram)
-MV,Maldives (FIPS 10-4 country code; ISO 3166 digram),Megavolt,Motor Vehicle,Motor Vessel
+MV,Maldives (ISO 3166 digram),Megavolt,Motor Vehicle,Motor Vessel
 mV,Millivolt
 MVC,Missouri Valley Conference
 MVFC,Missouri Valley Football Conference
@@ -3142,12 +3125,12 @@ MWI,Malawi (ISO 3166 trigram)
 MWOA,Mount Wilson Observatory Association
 MWR,Morale,Welfare,and Recreation
 MWTB,Mounted Warfare Test Bed
-MX,Mail Exchange,Mexico (FIPS 10-4 country code; ISO 3166 digram),Missile eXperimental
-MY,Malaysia (FIPS 10-4 country code; ISO 3166 digram)
+MX,Mail Exchange,Mexico (ISO 3166 digram),Missile eXperimental
+MY,Malaysia (ISO 3166 digram)
 MYOB,Mind Your Own Business
 MYS,Malaysia (ISO 3166 trigram)
 MYT,Mayotte (ISO 3166 trigram)
-MZ,Mach-Zehnder (interferometer),Magnetic Azimuth,Move,Zig (Zero Wing),Mozambique (FIPS 10-4 country code; ISO 3166 digram)
+MZ,Mach-Zehnder (interferometer),Magnetic Azimuth,Move,Zig (Zero Wing),Mozambique (ISO 3166 digram)
 n,Nano
 N,Newton,Nitrogen,North
 N/A,"Not Available, Not Applicable, or: No Answer"
@@ -3302,7 +3285,7 @@ NGO,non-governmental organization
 NGR,Nigeria (IOC trigram,but not ISO 3166 or FIFA)
 NGS,Naval Gunfire Support
 nH,Nanohenry
-NH,New Hampshire (postal symbol),New Hebrides (ISO 3166 digram; obsolete 1980),Vanuatu (FIPS 10-4 country code; from New Hebrides)
+NH,New Hampshire (postal symbol),New Hebrides (ISO 3166 digram; obsolete 1980),Vanuatu (from New Hebrides)
 NHANES,National Health and Nutrition Examination Survey
 NHB,New Hebrides (ISO 3166 trigram; obsolete 1980)
 NHB,No Holds Barred radio (Link)
@@ -4001,7 +3984,7 @@ Q1,First quarter of the year
 Q2,Second quarter of the year
 Q3,Third quarter of the year
 Q4,Fourth quarter of the year
-QA,Qatar (FIPS 10-4 country code; ISO 3166 digram)
+QA,Qatar (ISO 3166 digram)
 Qantas,Queensland And Northern Territory Aerial Services
 QAP,Quadripartite Advisory Publication ("kwapp")
 QAT,Qatar (ISO 3166 trigram)
@@ -4273,7 +4256,7 @@ SBA,Santa Barbara Airport,Simulation-Based Acquisition,Sovereign Base Area,Stude
 SBNO,Standing but not operating (in reference to amusement parks)
 SBP,Samahang Basketbol ng Pilipinas (Filipino,"Basketball Federation of the Philippines"),U.S. School Breakfast Program,Society of Business Practitioners,State Bank of Pakistan
 SBS,Special Boat Service,Special Broadcasting Service,Seoul Broadcasting System
-SC,Cruiser Submarine (US Navy hull classification) c Saint Kitts and Nevis (FIPS 10-4 country code; from Saint Christopher),Seychelles (ISO 3166 digram),South Carolina (postal symbol)
+SC,Cruiser Submarine (US Navy hull classification) c Saint Kitts and Nevis (from Saint Christopher),Seychelles (ISO 3166 digram),South Carolina (postal symbol)
 SCOTUS,Supreme Court of the United States
 SCROTUS,So-called Ruler of the United States
 SCS,Scan Correlated Shift,Soil Conservation Service
@@ -4404,7 +4387,7 @@ TBM,Tactical Ballistic Missile,Theatre Ballistic Missile
 TBS,Turner Broadcasting System
 TBT,Tributyltin
 Tc,Technetium
-TC,Teracoulomb,Turks and Caicos (ISO 3166 digram),United Arab Emirates (FIPS 10-4 country code; from Trucial Coast States)
+TC,Teracoulomb,Turks and Caicos (ISO 3166 digram),United Arab Emirates (from Trucial Coast States)
 TCA,Transformational Communications Architecture,Turks and Caicos (ISO 3166 trigram)
 TCAA,Top Counter-Assault Agents
 TCAS,Traffic Collision Avoidance System
@@ -4762,7 +4745,7 @@ UU,Unitarian Universalism,University of Utah,Unseen University
 UUA,Unitarian Universalist Association
 UUID,Universally Unique Identifier (see also GUID)
 UUV,Unmanned Underwater Vehicle
-UV,Burkina Faso (FIPS 10-4 country code; from Upper Volta),ultraviolet
+UV,Burkina Faso (from Upper Volta),ultraviolet
 UVM,Universal Verification Methodology,Universidad del Valle de México,University of Vermont,from its Latin name of Universitas Viridis Montis ("University of the Green Mountains"),UV mapping,UW[edit]
 UW,University of Washington
 UWO,University of Western Ontario
@@ -4782,7 +4765,7 @@ VAO,Vienna Art Orchestra
 VAT,Vatican City-State (ISO 3166 trigram)
 VB,Victoria Bitter (beer),Visual Basic
 VBA,Visual Basic for Applications
-VC,Saint Vincent and the Grenadines (FIPS 10-4 country code; ISO 3166 digram),Victoria Cross
+VC,Saint Vincent and the Grenadines (ISO 3166 digram),Victoria Cross
 VCDS,(Canada) Vice-Chief of the Defence Staff,VAG-COM Diagnostic System
 VCJCS,Vice Chairman,Joint Chiefs of Staff
 vCJD,Variant Creutzfeldt-Jakob Disease
@@ -4795,7 +4778,7 @@ VDFS,VisualSVN Distributed File System (VDFS)
 VDMOS,Vertical Double-diffused MOS transistor ("vee-dee-moss")
 VDOT,Virginia Department of Transportation ("vee-dot")
 VDR,North Vietnam (ISO 3166 trigram,obsolete 1977)
-VE,Venezuela (FIPS 10-4 country code; ISO 3166 digram)
+VE,Venezuela (ISO 3166 digram)
 VEEGA,Venus Earth Earth Gravity Assist manœuvre
 VEN,Venezuela (ISO 3166 trigram)
 VERDI,Vittorio Emanuele Re D'Italia (Victor Emmanuel,King of Italy)
@@ -4877,7 +4860,7 @@ VZ,Verizon Communications (NYSE code)
 vzw,vereniging zonder winstoogmerk (Dutch "non-profit organisation")
 W,"Tungsten (from German Wolfram),Watt,West"
 W3C,World Wide Web Consortium
-WA,"Namibia (FIPS 10-4 country code; from West Africa),Washington state (postal symbol),Western Australia (postal symbol),World Archery (Federation)"
+WA,"Namibia (from West Africa),Washington state (postal symbol),Western Australia (postal symbol),World Archery (Federation)"
 WAAC,Women's Army Auxiliary Corps (Britain) (World War I UK)
 WAAF,Women's Auxiliary Air Force (World War II UK)
 WAC,"Western Athletic Conference,Women's Auxiliary Corps (World War II Canada),Women's Army Corps (World War II U.S.)"

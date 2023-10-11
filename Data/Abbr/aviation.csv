@@ -33,7 +33,6 @@ AAO,Assumed Adverse Obstacle
 AAS,Airport Advisory Service
 AB,"Air Base, Afterburner"
 ABI,Advanced Boundary Information
-AC,Air Conditioning
 AC,Aircraft
 ACAC,Arab Civil Aviation Conference
 ACAM,Aircraft Continuing Airworthiness Monitoring
@@ -181,6 +180,7 @@ CASE,Controlled Airspace Synthetic Environment (Simulator of Alenia Marconi)
 CAT,"Category of Aircraft, Clear Air Turbulence"
 CATC,Civil Air Traffic Control
 CAVOK,Clouds And Visibility OK
+C/S,Callsign
 CBT,Computer-based Training
 CC,Commander
 CCBC,Community College Baltimore County
