@@ -15,9 +15,9 @@ try {
 	if ($IsLinux) {
 		# TODO
 	} else {
-		$ComputerName = $(hostname)
-		Get-WMIObject -Class Win32_Printer -ComputerName $ComputerName | Format-Table
-		"(PrinterStatus: 1=various 2=unknown 3=idle 4=printing 5=warmup 6=finished 7=offline)"
+		# $ComputerName = $(hostname)
+		# Get-WMIObject -Class Win32_Printer -ComputerName $ComputerName | Format-Table
+		Get-Printer * | Select-Object Name,Type,Location,Comment,DriverName,PrinterStatus | Format-Table -autoSize
 	}
 	exit 0 # success
 } catch {
