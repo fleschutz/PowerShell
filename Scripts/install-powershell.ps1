@@ -74,7 +74,7 @@ if (-not $Destination) {
 $Destination = $PSCmdlet.SessionState.Path.GetUnresolvedProviderPathFromPSPath($Destination)
 
 if (-not $UseMSI) {
-    Write-Host "Installation destination path: $Destination"
+    #Write-Host "Installation destination path: $Destination"
 } else {
     if (-not $IsWinEnv) {
         throw "-UseMSI is only supported on Windows"
@@ -116,7 +116,7 @@ function Remove-Destination([string] $Destination) {
         if ($DoNotOverwrite) {
             throw "Destination folder '$Destination' already exist. Use a different path or omit '-DoNotOverwrite' to overwrite."
         }
-        Write-Host "Removing old installation at: $Destination" 
+        Write-Host "⏳ (2/2) Removing old installation at: $Destination" 
         if (Test-Path -Path "$Destination.old") {
             Remove-Item "$Destination.old" -Recurse -Force
         }
@@ -381,7 +381,7 @@ try {
         }
 
         $downloadURL = "https://github.com/PowerShell/PowerShell/releases/download/v${release}/${packageName}"
-        Write-Host "Downloading: $downloadURL"
+        Write-Host "⏳ (1/2) Loading $downloadURL"
 
         $packagePath = Join-Path -Path $tempDir -ChildPath $packageName
         if (!$PSVersionTable.ContainsKey('PSEdition') -or $PSVersionTable.PSEdition -eq "Desktop") {
@@ -508,10 +508,12 @@ try {
     }
 
     if (-not $UseMSI) {
-        Write-Host "PowerShell has been installed at: $Destination"
+        Write-Host "✅ PowerShell has been installed at: $Destination" -noNewline
         if ($Destination -eq $PSHOME) {
-            Write-Host "Please restart pwsh" -ForegroundColor Magenta
-        }
+            Write-Host " - Please restart pwsh now."
+        } else {
+	    Write-Host " "
+	}
     }
 } finally {
     # Restore original value
