@@ -77,7 +77,7 @@ function ListSpecialFolders {
 }
 
 try {
-	ListSpecialFolders | Format-Table -property @{e='Folder Name';width=19},'Folder Path'
+	ListSpecialFolders | Format-Table -property @{e='Folder Name';width=22},'Folder Path'
 	exit 0 # success
 } catch {
 	"⚠️ Error in line $($_.InvocationInfo.ScriptLineNumber): $($Error[0])"
