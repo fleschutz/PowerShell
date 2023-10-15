@@ -3,12 +3,12 @@
 	Fetches updates into Git repos
 .DESCRIPTION
 	This PowerShell script fetches updates into all Git repositories in a folder (including submodules).
-.PARAMETER ParentDir
+.PARAMETER parentDirPath
 	Specifies the path to the parent folder
 .EXAMPLE
 	PS> ./fetch-repos.ps1 C:\MyRepos
-	⏳ (1) Searching for Git executable...  git version 2.41.0.windows.3
-	⏳ (2) Checking parent folder...        33 subfolders
+	⏳ (1) Searching for Git executable...       git version 2.42.0
+	⏳ (2) Checking parent folder...             33 subfolders
 	⏳ (3/35) Fetching into 📂base256unicode...
 	...
 .LINK
@@ -36,10 +36,10 @@ try {
 	[int]$step = 3
 	foreach ($folder in $folders) {
 		$folderName = (Get-Item "$folder").Name
-		Write-Host "⏳ ($step/$($numFolders + 2)) Fetching into 📂$folderName...  "
+		Write-Host "⏳ ($step/$($numFolders + 2)) Fetching into 📂$folderName...`t`t"
 
 		& git -C "$folder" fetch --all --recurse-submodules --prune --prune-tags --force
-		if ($lastExitCode -ne "0") { throw "'git fetch' in $folder failed with exit code $lastExitCode" }
+		if ($lastExitCode -ne "0") { throw "'git fetch --all' in $folder failed with exit code $lastExitCode" }
 
 		$step++
 	}
