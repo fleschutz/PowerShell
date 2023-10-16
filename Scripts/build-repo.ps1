@@ -2,7 +2,7 @@
 .SYNOPSIS
 	Builds a repository 
 .DESCRIPTION
-	This PowerShell script builds a Git repository by supporting: cmake, configure, autogen, Imakefile, and Makefile.
+	This PowerShell script builds a Git repository by supporting build systems such as: autogen, cmake, configure, Gradle, Imakefile, Makefile, and Meson.
 .PARAMETER path
 	Specifies the path to the Git repository (current working dir by default)
 .EXAMPLE
@@ -21,7 +21,7 @@ param([string]$path = "$PWD")
 function BuildInDir([string]$path) {
 	$dirName = (Get-Item "$path").Name
 	if (Test-Path "$path/CMakeLists.txt" -pathType leaf) {
-		"⏳ Building 📂$dirName using CMakeLists.txt into 📂$dirName/_My_Build..."
+		"⏳ Building 📂$dirName by using CMake into 📂$dirName/_My_Build..."
 		if (-not(Test-Path "$path/_My_Build/" -pathType container)) { 
 			& mkdir "$path/_My_Build/"
 		}
@@ -37,7 +37,7 @@ function BuildInDir([string]$path) {
 		if ($lastExitCode -ne "0") { throw "Executing 'make test' has failed" }
 
 	} elseif (Test-Path "$path/configure" -pathType leaf) { 
-		"⏳ Building 📂$dirName using 'configure'..."
+		"⏳ Building 📂$dirName by using 'configure'..."
 		Set-Location "$path/"
 
 		& ./configure
@@ -50,7 +50,7 @@ function BuildInDir([string]$path) {
 		if ($lastExitCode -ne "0") { throw "Executing 'make test' has failed" }
 
 	} elseif (Test-Path "$path/autogen.sh" -pathType leaf) { 
-		"⏳ Building 📂$dirName using 'autogen.sh'..."
+		"⏳ Building 📂$dirName by using 'autogen.sh'..."
 		Set-Location "$path/"
 
 		& ./autogen.sh
@@ -60,7 +60,7 @@ function BuildInDir([string]$path) {
 		if ($lastExitCode -ne "0") { throw "Executing 'make -j4' has failed" }
 
 	} elseif (Test-Path "$path/build.gradle" -pathType leaf) {
-		"⏳ Building 📂$dirName using build.gradle..."
+		"⏳ Building 📂$dirName by using Gradle..."
 		Set-Location "$path"
 
 		& gradle build
@@ -69,8 +69,14 @@ function BuildInDir([string]$path) {
 		& gradle test
 		if ($lastExitCode -ne "0") { throw "'gradle test' has failed" }
 
+	} elseif (Test-Path "$path/meson.build" -pathType leaf) {
+		"⏳ Building 📂$dirName by using Meson..."
+		Set-Location "$path"
+		& meson . build --prefix=/usr/local
+		if ($lastExitCode -ne "0") { throw "'meson . build' has failed" }
+
 	} elseif (Test-Path "$path/Imakefile" -pathType leaf) {
-		"⏳ Building 📂$dirName using Imakefile..."
+		"⏳ Building 📂$dirName by using Imakefile..."
 		Set-Location "$path/"
 
 		& xmkmf 
@@ -80,21 +86,21 @@ function BuildInDir([string]$path) {
 		if ($lastExitCode -ne "0") { throw "Executing 'make -j4' has failed" }
 
 	} elseif (Test-Path "$path/Makefile" -pathType leaf) {
-		"⏳ Building 📂$dirName using Makefile..."
+		"⏳ Building 📂$dirName by using Makefile..."
 		Set-Location "$path"
 
 		& make -j4
 		if ($lastExitCode -ne "0") { throw "Executing 'make -j4' has failed" }
 
 	} elseif (Test-Path "$path/makefile" -pathType leaf) {
-		"⏳ Building 📂$dirName using makefile..."
+		"⏳ Building 📂$dirName by using makefile..."
 		Set-Location "$path"
 
 		& make -j4
 		if ($lastExitCode -ne "0") { throw "Executing 'make -j4' has failed" }
 
 	} elseif (Test-Path "$path/compile.sh" -pathType leaf) { 
-		"⏳ Building 📂$dirName using 'compile.sh'..."
+		"⏳ Building 📂$dirName by using 'compile.sh'..."
 		Set-Location "$path/"
 
 		& ./compile.sh
@@ -104,7 +110,7 @@ function BuildInDir([string]$path) {
 		if ($lastExitCode -ne "0") { throw "Executing 'make -j4' has failed" }
 
 	} elseif (Test-Path "$path/attower/src/build/DevBuild/build.bat" -pathType leaf) {
-		"⏳ Building 📂$dirName using build.bat ..."
+		"⏳ Building 📂$dirName by using build.bat ..."
 		Set-Location "$path/attower/src/build/DevBuild/"
 
 		& ./build.bat build-all-release
