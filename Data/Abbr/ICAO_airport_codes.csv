@@ -257,7 +257,7 @@ ABBR,MEANING
 03TS,Shannon Medical Center Heliport (USA)
 03TT,Brazos Polo Airport (USA)
 03TX,M D K Field Heliport (USA)
-03UT,AZ Minerals Corporation Airport (USA)
+03UT (Azerbaijan) Minerals Corporation Airport (USA)
 03VA,Whipoorwill Springs Airport (USA)
 03WA,Spangle Field (USA)
 03WI,Zink Airport (USA)
@@ -4973,7 +4973,7 @@ ABBR,MEANING
 40XA,Lone Star Heliport (USA)
 40XS,Hank Sasser Airport at Breakaway (USA)
 41AK,Settlers Bay Airstrip (USA)
-41AL,UAB Hospital/Gardendale Fed Heliport (USA)
+41AL (Ukraine)B Hospital/Gardendale Fed Heliport (USA)
 41AR,Ashworth Airport (USA)
 41AZ,Ak Chin Community Airfield (USA)
 41C,Calkins Field (USA)
@@ -7544,7 +7544,7 @@ ABBR,MEANING
 6AR0,Cypress Creek Airpark (USA)
 6AR1,Elder Airstrip (USA)
 6AR2,A J's Airport (USA)
-6AR3,UAMS Alpha Heliport (USA)
+6AR3 (Ukraine)MS Alpha Heliport (USA)
 6AR4,Baptist Health Medical Center-Heber Spring Heliport (USA)
 6AR5,Mc Donald's Airstrip (USA)
 6AR6,Two Rivers Airport (USA)
@@ -12282,7 +12282,7 @@ AR24,White River Medical Center Heliport (USA)
 AR25,Vilonia Airport (USA)
 AR27,Lollars Creek Farm Airport (USA)
 AR28,Odom Field (USA)
-AR29,UAMS Bravo Heliport (USA)
+AR29 (Ukraine)MS Bravo Heliport (USA)
 AR30,Baptist Memorial Hospital-Blytheville Heliport (USA)
 AR31,C. Andrew Laird Heliport (USA)
 AR32,Dardanelle Hospital Heliport (USA)
@@ -13188,31 +13188,31 @@ AYZU,Oum Airstrip (Papua New Guinea)
 AYZW,Siawi Airstrip (Papua New Guinea)
 AYZY,Yilui Airstrip (Papua New Guinea)
 AYZZ,Zuebak Airstrip (Papua New Guinea)
-AZ-0001,Zabrat Airport,AZ
-AZ-0002,Khachmaz Airport,AZ
-AZ-0003,Shaki Airport,AZ
-AZ-0004,Naftalan Airport,AZ
-AZ-0005,Tanrykulular Airport,AZ
-AZ-0006,Agdash Airport,AZ
-AZ-0007,Göyçay Airport,AZ
-AZ-0008,Bygyr Airport,AZ
-AZ-0009,Mollakend Airport,AZ
-AZ-0010,Agjabedi Airport,AZ
-AZ-0011,Fuzuli International Airport,AZ
-AZ-0012,Agdam Airport,AZ
-AZ-0013,Sitalchay Airbase,AZ
-AZ-0014,Baku Lökbatan Airport,AZ
-AZ-0015,Sangachaly Air Base,AZ
-AZ-0016,Pirsagat Airport,AZ
-AZ-0017,Hajigabul Kazı Magomed Airport,AZ
-AZ-0018,Qarachala Airport,AZ
-AZ-0019,Salyan Air Base,AZ
-AZ-0020,Pushkino East Air Base,AZ
-AZ-0021,Qizilagach Air Base,AZ
-AZ-0022,Pirallahı Heliport,AZ
-AZ-0023,Çilov Heliport,AZ
-AZ-0024,Baku Heliport,AZ
-AZ-0025,Sangachal Oil Terminal Heliport,AZ
+AZ-0001,Zabrat Airport (Azerbaijan)
+AZ-0002,Khachmaz Airport (Azerbaijan)
+AZ-0003,Shaki Airport (Azerbaijan)
+AZ-0004,Naftalan Airport (Azerbaijan)
+AZ-0005,Tanrykulular Airport (Azerbaijan)
+AZ-0006,Agdash Airport (Azerbaijan)
+AZ-0007,Göyçay Airport (Azerbaijan)
+AZ-0008,Bygyr Airport (Azerbaijan)
+AZ-0009,Mollakend Airport (Azerbaijan)
+AZ-0010,Agjabedi Airport (Azerbaijan)
+AZ-0011,Fuzuli International Airport (Azerbaijan)
+AZ-0012,Agdam Airport (Azerbaijan)
+AZ-0013,Sitalchay Airbase (Azerbaijan)
+AZ-0014,Baku Lökbatan Airport (Azerbaijan)
+AZ-0015,Sangachaly Air Base (Azerbaijan)
+AZ-0016,Pirsagat Airport (Azerbaijan)
+AZ-0017,Hajigabul Kazı Magomed Airport (Azerbaijan)
+AZ-0018,Qarachala Airport (Azerbaijan)
+AZ-0019,Salyan Air Base (Azerbaijan)
+AZ-0020,Pushkino East Air Base (Azerbaijan)
+AZ-0021,Qizilagach Air Base (Azerbaijan)
+AZ-0022,Pirallahı Heliport (Azerbaijan)
+AZ-0023,Çilov Heliport (Azerbaijan)
+AZ-0024,Baku Heliport (Azerbaijan)
+AZ-0025,Sangachal Oil Terminal Heliport (Azerbaijan)
 AZ00,Morton Field Ultralight Flightpark (USA)
 AZ01,Outback Ranch Airstrip (USA)
 AZ02,Gateway East KNXV-TV Heliport (USA)
@@ -15618,7 +15618,7 @@ BY-0007,Bykhau Air Base,BY
 BY-0008,Bel Airfield,BY
 BY-0009,Lida Air Base,BY
 BY-0010,Borovukha-2 Helipad,BY
-BY-0011,Aerodrom Belz,UA
+BY-0011,Aerodrom Belz (Ukraine)
 BY-0012,Aerodrom Kukoviatsino,BY
 BY-0013,VD Bolshoy Bokov Airfield,BY
 BY-0014,Lipki Air Base,BY
@@ -19337,101 +19337,101 @@ CTX2,Lac Trévet Seaplane Base (Canada)
 CTY3,Cascades Seaplane Base (Canada)
 CTY4,Olds / North 40 Ranch Airstrip (Canada)
 CTY5,Rougemont Airport (Canada)
-CU-0001,Corral de Rio Airport,CU
-CU-0002,Eugenia Airport,CU
-CU-0003,Preston Airport,CU
-CU-0004,Guardalavaca Airport,CU
-CU-0005,El Caney Airport,CU
-CU-0006,La Olivia Airport,CU
-CU-0007,San Pedro Airport,CU
-CU-0008,Mantua Airport,CU
-CU-0009,La Asunción Agricultural Aviation Airport,CU
-CU-0010,El Frances Airport,CU
-CU-0011,Juan de la Cruz Airport,CU
-CU-0012,Artemisa Airport,CU
-CU-0013,San Pedro Highway Airstrip,CU
-CU-0014,San Jose de las Lajas Highway Airstrip,CU
-CU-0015,McCalla Field,CU
-CU-0016,La Francia Airfield,CU
-CU-0017,Imias Airport,CU
-CU-0018,Los Mangos de Baragua Airport,CU
-CU-0019,Altagracia Airport,CU
-CU-0020,Lora Airport,CU
-CU-0021,Delicias South Airport,CU
-CU-0022,Caio Voisan Airport,CU
-CU-0023,Bayamo Northwest Airport,CU
-CU-0024,Mateo Remas Airport,CU
-CU-0025,La Escondida Airport,CU
-CU-0026,Cayama Nueva Airport,CU
-CU-0027,Guamo Airport,CU
-CU-0028,Puente Guillen Airport,CU
-CU-0029,El Dormitorio Airport,CU
-CU-0030,San German Airport,CU
-CU-0031,El Congo Airport,CU
-CU-0032,Jobabo Northwest Airport,CU
-CU-0033,Campechuela Airport,CU
-CU-0034,San Jose Northwest Airport,CU
-CU-0035,Francisco Airport,CU
-CU-0036,Hatuey Airport,CU
-CU-0037,Guaicanamar Airport,CU
-CU-0038,Fundo de Buena Ventura Airport,CU
-CU-0039,Los Ingleses Airport,CU
-CU-0040,San Carlos Airport,CU
-CU-0041,Las Cruces Agricultural Airport,CU
-CU-0042,Vertientes Southwest Agricultural Airport,CU
-CU-0043,Vertientes Airport,CU
-CU-0044,Cabrera Airport,CU
-CU-0045,El Cenizo Airport,CU
-CU-0046,Amansa Guapos Airport,CU
-CU-0047,Esmeralda Airport,CU
-CU-0048,Cupeyes Airport,CU
-CU-0049,Moron Airport,CU
-CU-0050,Pina Airport,CU
-CU-0051,El Asiento Airport,CU
-CU-0052,Adelaide Airport,CU
-CU-0053,Jatibonico South Airport,CU
-CU-0054,Ramblazon de Reyes Airport,CU
-CU-0055,Las Crisis Airport,CU
-CU-0056,Maria Rayes Airport,CU
-CU-0057,Las Obas Airport,CU
-CU-0058,Los Galleguitos East Airport,CU
-CU-0059,El Jibaro Airport,CU
-CU-0060,Los Tamarindos Airport,CU
-CU-0061,Las Guasimas Airport,CU
-CU-0062,Viejo Airport,CU
-CU-0063,Jutiera Airport,CU
-CU-0064,Purio Airport,CU
-CU-0065,Las Nuevas Airport,CU
-CU-0066,Martí Airport,CU
-CU-0067,Los Arabos Airport,CU
-CU-0068,Mieles Airport,CU
-CU-0069,Jaguey Grande North Airport,CU
-CU-0070,Giron Airport,CU
-CU-0071,Union de Reyes Airport,CU
-CU-0072,Aguacate Airport,CU
-CU-0073,Santa Fe Airport,CU
-CU-0074,Güira de Melena Airport,CU
-CU-0075,Branas Agricultural Aviation Airport,CU
-CU-0076,Alturas Airport,CU
-CU-0077,La Cubana Agricultural Aviation Airport,CU
-CU-0078,Los Zagales Agricultural Aviation Airport,CU
-CU-0079,Caserio la Jocuma North Airport,CU
-CU-0080,Las Cruces Airport,CU
-CU-0081,Las Glorias Airport,CU
-CU-0082,Cunagua Airport,CU
-CU-0083,El Yarual Airport,CU
-CU-0084,El Carmen Airport,CU
-CU-0085,Lombillo Airport,CU
-CU-0086,Sola Airport,CU
-CU-0087,Minas Airport,CU
-CU-0088,Banes Airport,CU
-CU-0089,Palma Soriano Airport,CU
-CU-0090,Roncali Heliprt,CU
-CU-0091,María La Gorda Hotel Heliport,CU
-CU-0092,Santa Bárbara Airport,CU
-CU-0093,Nueva Paz Airport,CU
-CU-0094,Parque Antonio Maceo Heliport,CU
-CU-0095,Central Army Staff Heliport,CU
+CU-0001,Corral de Rio Airport (Cuba)
+CU-0002,Eugenia Airport (Cuba)
+CU-0003,Preston Airport (Cuba)
+CU-0004,Guardalavaca Airport (Cuba)
+CU-0005,El Caney Airport (Cuba)
+CU-0006,La Olivia Airport (Cuba)
+CU-0007,San Pedro Airport (Cuba)
+CU-0008,Mantua Airport (Cuba)
+CU-0009,La Asunción Agricultural Aviation Airport (Cuba)
+CU-0010,El Frances Airport (Cuba)
+CU-0011,Juan de la Cruz Airport (Cuba)
+CU-0012,Artemisa Airport (Cuba)
+CU-0013,San Pedro Highway Airstrip (Cuba)
+CU-0014,San Jose de las Lajas Highway Airstrip (Cuba)
+CU-0015,McCalla Field (Cuba)
+CU-0016,La Francia Airfield (Cuba)
+CU-0017,Imias Airport (Cuba)
+CU-0018,Los Mangos de Baragua Airport (Cuba)
+CU-0019,Altagracia Airport (Cuba)
+CU-0020,Lora Airport (Cuba)
+CU-0021,Delicias South Airport (Cuba)
+CU-0022,Caio Voisan Airport (Cuba)
+CU-0023,Bayamo Northwest Airport (Cuba)
+CU-0024,Mateo Remas Airport (Cuba)
+CU-0025,La Escondida Airport (Cuba)
+CU-0026,Cayama Nueva Airport (Cuba)
+CU-0027,Guamo Airport (Cuba)
+CU-0028,Puente Guillen Airport (Cuba)
+CU-0029,El Dormitorio Airport (Cuba)
+CU-0030,San German Airport (Cuba)
+CU-0031,El Congo Airport (Cuba)
+CU-0032,Jobabo Northwest Airport (Cuba)
+CU-0033,Campechuela Airport (Cuba)
+CU-0034,San Jose Northwest Airport (Cuba)
+CU-0035,Francisco Airport (Cuba)
+CU-0036,Hatuey Airport (Cuba)
+CU-0037,Guaicanamar Airport (Cuba)
+CU-0038,Fundo de Buena Ventura Airport (Cuba)
+CU-0039,Los Ingleses Airport (Cuba)
+CU-0040,San Carlos Airport (Cuba)
+CU-0041,Las Cruces Agricultural Airport (Cuba)
+CU-0042,Vertientes Southwest Agricultural Airport (Cuba)
+CU-0043,Vertientes Airport (Cuba)
+CU-0044,Cabrera Airport (Cuba)
+CU-0045,El Cenizo Airport (Cuba)
+CU-0046,Amansa Guapos Airport (Cuba)
+CU-0047,Esmeralda Airport (Cuba)
+CU-0048,Cupeyes Airport (Cuba)
+CU-0049,Moron Airport (Cuba)
+CU-0050,Pina Airport (Cuba)
+CU-0051,El Asiento Airport (Cuba)
+CU-0052,Adelaide Airport (Cuba)
+CU-0053,Jatibonico South Airport (Cuba)
+CU-0054,Ramblazon de Reyes Airport (Cuba)
+CU-0055,Las Crisis Airport (Cuba)
+CU-0056,Maria Rayes Airport (Cuba)
+CU-0057,Las Obas Airport (Cuba)
+CU-0058,Los Galleguitos East Airport (Cuba)
+CU-0059,El Jibaro Airport (Cuba)
+CU-0060,Los Tamarindos Airport (Cuba)
+CU-0061,Las Guasimas Airport (Cuba)
+CU-0062,Viejo Airport (Cuba)
+CU-0063,Jutiera Airport (Cuba)
+CU-0064,Purio Airport (Cuba)
+CU-0065,Las Nuevas Airport (Cuba)
+CU-0066,Martí Airport (Cuba)
+CU-0067,Los Arabos Airport (Cuba)
+CU-0068,Mieles Airport (Cuba)
+CU-0069,Jaguey Grande North Airport (Cuba)
+CU-0070,Giron Airport (Cuba)
+CU-0071,Union de Reyes Airport (Cuba)
+CU-0072,Aguacate Airport (Cuba)
+CU-0073,Santa Fe Airport (Cuba)
+CU-0074,Güira de Melena Airport (Cuba)
+CU-0075,Branas Agricultural Aviation Airport (Cuba)
+CU-0076,Alturas Airport (Cuba)
+CU-0077,La Cubana Agricultural Aviation Airport (Cuba)
+CU-0078,Los Zagales Agricultural Aviation Airport (Cuba)
+CU-0079,Caserio la Jocuma North Airport (Cuba)
+CU-0080,Las Cruces Airport (Cuba)
+CU-0081,Las Glorias Airport (Cuba)
+CU-0082,Cunagua Airport (Cuba)
+CU-0083,El Yarual Airport (Cuba)
+CU-0084,El Carmen Airport (Cuba)
+CU-0085,Lombillo Airport (Cuba)
+CU-0086,Sola Airport (Cuba)
+CU-0087,Minas Airport (Cuba)
+CU-0088,Banes Airport (Cuba)
+CU-0089,Palma Soriano Airport (Cuba)
+CU-0090,Roncali Heliprt (Cuba)
+CU-0091,María La Gorda Hotel Heliport (Cuba)
+CU-0092,Santa Bárbara Airport (Cuba)
+CU-0093,Nueva Paz Airport (Cuba)
+CU-0094,Parque Antonio Maceo Heliport (Cuba)
+CU-0095,Central Army Staff Heliport (Cuba)
 CUJ,Culion Airport,PH
 cvb2,Voisey's Bay Airport (Canada)
 CVF2,Fergus (Vodarek Field) (Canada)
@@ -21247,7 +21247,7 @@ EBLY,Ranst/Lymar Heliport,BE
 EBLZ,Zaffelare heliport,BE
 EBMA,Westmalle heliport,BE
 EBMB,Melsbroek Air Base,BE
-EBMD,AZ Middelheim heliport,BE
+EBMD (Azerbaijan) Middelheim heliport,BE
 EBME,Meerbeek Heliport,BE
 EBMG,Matagne-la-Petite Ulmodrome,BE
 EBMK,Maarkedal - Nukerke Heliport,BE
@@ -21829,49 +21829,49 @@ EDXU,Sonderlandeplatz Hüttenbusch (Germany)
 EDXW,Westerland Sylt Airport (Germany)
 EDXY,Wyk auf Föhr Airport (Germany)
 EDXZ,Flugplatz Kührstedt-Bederkesa (Germany)
-EE-0001,Aste Air Base,EE
-EE-0002,Haapsalu Air Base,EE
-EE-0003,Nässuma Airstrip,EE
-EE-0004,Jägala Highway Strip,EE
-EE-0005,Roomassaare Seaplane Base,EE
-EE-0006,Piirissaar Airfield,EE
-EE-0007,Kagul Air Base,EE
-EE-0008,Tallinn Lasnamäe Airfield,EE
-EE-0009,Avaste Airfield,EE
-EE-0010,Kaavi Airstrip,EE
-EE-1612,Vohma Air Base,EE
-EE-4931,Tõrva Air Base,EE
-EE-7685,Valga Air Base,EE
-EE-9278,Kunda Air Base,EE
-EEAA,Antsla Airfield,EE
+EE-0001,Aste Air Base (Estonia)
+EE-0002,Haapsalu Air Base (Estonia)
+EE-0003,Nässuma Airstrip (Estonia)
+EE-0004,Jägala Highway Strip (Estonia)
+EE-0005,Roomassaare Seaplane Base (Estonia)
+EE-0006,Piirissaar Airfield (Estonia)
+EE-0007,Kagul Air Base (Estonia)
+EE-0008,Tallinn Lasnamäe Airfield (Estonia)
+EE-0009,Avaste Airfield (Estonia)
+EE-0010,Kaavi Airstrip (Estonia)
+EE-1612,Vohma Air Base (Estonia)
+EE-4931,Tõrva Air Base (Estonia)
+EE-7685,Valga Air Base (Estonia)
+EE-9278,Kunda Air Base (Estonia)
+EEAA,Antsla Airfield (Estonia)
 EEB,El Espino Airport (Colombia)
-EECL,Tallinn Linnahall Heliport,EE
-EEEI,Ämari Air Base,EE
-EEHA,Humala Aerodrome,EE
-EEJI,Jõhvi Airfield,EE
-EEKA,Kärdla Airport,EE
-EEKE,Kuressaare Airport,EE
-EEKI,Karksi Airfield,EE
-EEKU,Kihnu Airfield,EE
-EELM,Lange Airfield,EE
-EELU,Lyckholm Airstrip,EE
-EENA,Narva Airfield,EE
-EENI,Nurmsi Airfield,EE
-EEPU,Pärnu Airport,EE
-EERA,Rapla Airfield,EE
-EERD,Riidaja Airfield,EE
-EERE,Rakvere Airfield,EE
-EERI,Ridali Airfield,EE
-EERU,Ruhnu Airfield,EE
+EECL,Tallinn Linnahall Heliport (Estonia)
+EEEI,Ämari Air Base (Estonia)
+EEHA,Humala Aerodrome (Estonia)
+EEJI,Jõhvi Airfield (Estonia)
+EEKA,Kärdla Airport (Estonia)
+EEKE,Kuressaare Airport (Estonia)
+EEKI,Karksi Airfield (Estonia)
+EEKU,Kihnu Airfield (Estonia)
+EELM,Lange Airfield (Estonia)
+EELU,Lyckholm Airstrip (Estonia)
+EENA,Narva Airfield (Estonia)
+EENI,Nurmsi Airfield (Estonia)
+EEPU,Pärnu Airport (Estonia)
+EERA,Rapla Airfield (Estonia)
+EERD,Riidaja Airfield (Estonia)
+EERE,Rakvere Airfield (Estonia)
+EERI,Ridali Airfield (Estonia)
+EERU,Ruhnu Airfield (Estonia)
 EES,Berenice International Airport / Banas Cape Air Base,EG
-EESE,Salme Heliport,EE
-EETA,Tapa Air Base,EE
-EETN,Lennart Meri Tallinn Airport,EE
-EETR,Raadi Airfield,EE
-EETU,Tartu Airport,EE
-EEVI,Viljandi Airfield,EE
-EEVO,Vormsi Airfield,EE
-EEVU,Varstu Airfield,EE
+EESE,Salme Heliport (Estonia)
+EETA,Tapa Air Base (Estonia)
+EETN,Lennart Meri Tallinn Airport (Estonia)
+EETR,Raadi Airfield (Estonia)
+EETU,Tartu Airport (Estonia)
+EEVI,Viljandi Airfield (Estonia)
+EEVO,Vormsi Airfield (Estonia)
+EEVU,Varstu Airfield (Estonia)
 EFAA,Aavahelukka Airport,FI
 EFAH,Ahmosuo Airport,FI
 EFAL,Alavus Airfield,FI
@@ -27714,7 +27714,7 @@ HR-0019,Novalja Seaplane Terminal,HR
 HR-0020,Hvar/Jelsa Seaplane Base,HR
 HR-0021,Split Seaplane City,HR
 HR-0022,Split-Resnik Seaplane Base,HR
-HRC,Sary Su Airport,KZ
+HRC,Sary Su Airport (Kazakhstan)
 HRN,Heron Island Helipad (Australia)
 HRYG,Gisenyi Airport,RW
 HRYI,Butare Airport,RW
@@ -38909,146 +38909,146 @@ KYKM,Yakima Air Terminal McAllister Field (USA)
 KYKN,Chan Gurney Municipal Airport (USA)
 KYL,Port Largo Airport (USA)
 KYNG,Youngstown Warren Regional Airport (USA)
-KZ-0001,Zhuz-Agach Air Base,KZ
-KZ-0002,Arkalyk Airport,KZ
-KZ-0003,Arys Northeast Airport,KZ
-KZ-0004,Badam Airport,KZ
-KZ-0005,Buzachi Airport,KZ
-KZ-0006,Chilik Southeast Airfield,KZ
-KZ-0007,Sayram Airport,KZ
-KZ-0008,Former Zhezkazgan Airport,KZ
-KZ-0009,Gurvey Northeast Airport,KZ
-KZ-0010,Iliysk North Airport,KZ
-KZ-0011,Zhetygen Airport,KZ
-KZ-0012,Karabulak Airport,KZ
-KZ-0013,Kok-Tyube Airport,KZ
-KZ-0014,Kostanay Airport,KZ
-KZ-0015,Sarkand Airport,KZ
-KZ-0016,Berkut Military Sport Aviation Base Airport,KZ
-KZ-0017,Zhanaozen Airport,KZ
-KZ-0018,Yeskiikan Southeast Airport,KZ
-KZ-0019,Bayserke Airport,KZ
-KZ-0020,Zhilga South Airport,KZ
-KZ-0021,Abay Bazar Airport,KZ
-KZ-0022,Almaty North Airport,KZ
-KZ-0023,Aitbuzum East Airport,KZ
-KZ-0024,Aksu Airport,KZ
-KZ-0025,Arkaylyk South Airport,KZ
-KZ-0026,Novotroitskoye West Airfield,KZ
-KZ-0027,Blinkovo Airport,KZ
-KZ-0028,Bugun Airport,KZ
-KZ-0029,Burynshik Airport,KZ
-KZ-0030,Burynshik Southeast Airport,KZ
-KZ-0031,Chikment / Khatynkopir Airport,KZ
-KZ-0032,Chubarovka Airport,KZ
-KZ-0033,Dzhetygara Airport,KZ
-KZ-0034,Moinkum Airport,KZ
-KZ-0035,Karagandy Southeast Airport,KZ
-KZ-0036,Karaganda Southwest Airport,KZ
-KZ-0037,Karazhal Airport,KZ
-KZ-0038,Kegan Airport,KZ
-KZ-0039,Kentau Airport,KZ
-KZ-0040,Kokshetau Old Airport,KZ
-KZ-0041,Krasnyy Most East Airport,KZ
-KZ-0042,Kyzylasker Airport,KZ
-KZ-0043,Kyzylkishlak Airport,KZ
-KZ-0044,Kyzylorda Old Airport,KZ
-KZ-0045,Narynkol Airport,KZ
-KZ-0046,Novotroitskoye Airport,KZ
-KZ-0047,Obruchevka Airport,KZ
-KZ-0048,Pervomoyevka Airport,KZ
-KZ-0049,Petropavl North Airport,KZ
-KZ-0050,Podgorny Airport,KZ
-KZ-0051,Rodnikovskiy Airport,KZ
-KZ-0052,Sary Agach Airport,KZ
-KZ-0053,Shagyr Airport,KZ
-KZ-0054,Shelpe Southeast Airport,KZ
-KZ-0055,Stepnoye East Airport,KZ
-KZ-0056,Stepnoye West Airport,KZ
-KZ-0057,Syugaty Airport,KZ
-KZ-0058,Taganassay Airport,KZ
-KZ-0059,Tamerlanovka Airport,KZ
-KZ-0060,Togyzbay Airport,KZ
-KZ-0061,Turkestan Airport,KZ
-KZ-0062,Uralsk West Airport,KZ
-KZ-0063,Ush Tobe Airport,KZ
-KZ-0064,Volskoye Airport,KZ
-KZ-0065,Aksuyek Airport,KZ
-KZ-0066,Aktogay Air Base,KZ
-KZ-0067,Krainiy Airport,KZ
-KZ-0068,Kurchatov Airfield,KZ
-KZ-0069,Zhangiztobe Air Base,KZ
-KZ-0070,Zhosaly Airport,KZ
-KZ-0071,Karas Air Base,KZ
-KZ-0072,Aksu Heliport,KZ
-KZ-0073,Chundzha Airfield,KZ
-KZ-0074,Dzhaman Kuduk Airfield,KZ
-KZ-0075,Charyn Airfield,KZ
-KZ-0076,Blagoveshchenskoye-Chu Airport,KZ
-KZ-0077,Tughyl Airport,KZ
-KZ-0078,Zaysan West Airport,KZ
-KZ-0079,Akzhar Airport,KZ
-KZ-0080,Akkala Airport,KZ
-KZ-0081,Zubovsk Airport,KZ
-KZ-0082,Usharal Airport,KZ
-KZ-0083,Akchatau Airport,KZ
-KZ-0084,Gora Sasyrly Airport,KZ
-KZ-0085,Koktas Southwest Airport,KZ
-KZ-0086,Koktas Airport,KZ
-KZ-0087,Kambala Airport,KZ
-KZ-0088,Jeppesen Avia Club Airport,KZ
-KZ-0089,Yrgyz Airport,KZ
-KZ-0090,Beyneu Airport,KZ
-KZ-0091,Novotroitskoye Airport,KZ
-KZ-0092,Amangeldy Airfield,KZ
-KZ-0093,Aktau Summer Sea Residence Heliport,KZ
-KZ-0094,Aktau Summer Sea Harbor Heliport,KZ
-KZ-0095,Sayakhat Beach Heliport,KZ
-KZ-0096,Balkhash East Airfield,KZ
-KZ-0097,Barshatas Airfield,KZ
-KZ-0098,Tekeli Heliport,KZ
-KZ-0099,Kyzylagash Heliport,KZ
-KZ-0100,Sarkand Heliport,KZ
-KZ-0101,Arman Dala Airstrip,KZ
-KZ-0102,Azem/Talis Aeroclub Airfield,KZ
-KZ-0103,Ushkonyr Mountain Heliport,KZ
-KZ-0104,Shelek Heliport,KZ
-KZ-0105,Karashoky Airport,KZ
-KZ-0106,Moyynkum Airport,KZ
-KZ-0107,Zhuantobe Airport,KZ
-KZ-0108,Kokpek Highway Strip,KZ
-KZ-0109,Romanovka Airfield,KZ
-KZ-0110,Zholaman Airfield,KZ
-KZ-0111,Stolichny Airfield,KZ
-KZ-0112,Balapan Airfield,KZ
-KZ-0113,Ulken Airport,KZ
-KZ-0114,Bayanaul Airport,KZ
-KZ-0115,Korshunovo Heliport,KZ
-KZ-0116,Kabanbay Airport,KZ
-KZ-0117,Bautino East Heliport,KZ
-KZ-0118,Malaya Almatynka Helipad,KZ
-KZ-0119,MCHS Heliport,KZ
-KZ-0120,Karakum Private Heliport,KZ
-KZ-0121,Kendirli Recreation Center Heliport,KZ
-KZ-0122,ERSAI Heliport,KZ
-KZ-0123,Ikum Heliport,KZ
-KZ-0124,Bautino Port Heliport,KZ
-KZ-0125,Teniz Hotel Heliport,KZ
-KZ-0126,Akku Hotel Complex Heliport,KZ
-KZ-0127,Sarykamys Airport,KZ
-KZ-0128,Yuzhnyy Tengiz Heliport,KZ
-KZ-0129,Almaty City Clinical Hospital Number 4 Heliport,KZ
-KZ-0130,Shengeldy East Heliport,KZ
-KZ-0131,Shengeldy North Heliport,KZ
-KZ-0132,Lepsy Airport,KZ
-KZ-0133,Dzhaksy Dzhartasskiy Airport,KZ
-KZ-0134,Bayanaul Heliport,KZ
-KZ-0135,Kazakhstan Heliport,KZ
-KZ-0136,Zhezkent Heliport,KZ
-KZ-0137,Shelek Airport,KZ
-KZ-6022,Dolon Southwest Air Base,KZ
-KZ-7470,Dolon Air Base,KZ
-KZ-ATX,Atbasar Airport,KZ
+KZ-0001,Zhuz-Agach Air Base (Kazakhstan)
+KZ-0002,Arkalyk Airport (Kazakhstan)
+KZ-0003,Arys Northeast Airport (Kazakhstan)
+KZ-0004,Badam Airport (Kazakhstan)
+KZ-0005,Buzachi Airport (Kazakhstan)
+KZ-0006,Chilik Southeast Airfield (Kazakhstan)
+KZ-0007,Sayram Airport (Kazakhstan)
+KZ-0008,Former Zhezkazgan Airport (Kazakhstan)
+KZ-0009,Gurvey Northeast Airport (Kazakhstan)
+KZ-0010,Iliysk North Airport (Kazakhstan)
+KZ-0011,Zhetygen Airport (Kazakhstan)
+KZ-0012,Karabulak Airport (Kazakhstan)
+KZ-0013,Kok-Tyube Airport (Kazakhstan)
+KZ-0014,Kostanay Airport (Kazakhstan)
+KZ-0015,Sarkand Airport (Kazakhstan)
+KZ-0016,Berkut Military Sport Aviation Base Airport (Kazakhstan)
+KZ-0017,Zhanaozen Airport (Kazakhstan)
+KZ-0018,Yeskiikan Southeast Airport (Kazakhstan)
+KZ-0019,Bayserke Airport (Kazakhstan)
+KZ-0020,Zhilga South Airport (Kazakhstan)
+KZ-0021,Abay Bazar Airport (Kazakhstan)
+KZ-0022,Almaty North Airport (Kazakhstan)
+KZ-0023,Aitbuzum East Airport (Kazakhstan)
+KZ-0024,Aksu Airport (Kazakhstan)
+KZ-0025,Arkaylyk South Airport (Kazakhstan)
+KZ-0026,Novotroitskoye West Airfield (Kazakhstan)
+KZ-0027,Blinkovo Airport (Kazakhstan)
+KZ-0028,Bugun Airport (Kazakhstan)
+KZ-0029,Burynshik Airport (Kazakhstan)
+KZ-0030,Burynshik Southeast Airport (Kazakhstan)
+KZ-0031,Chikment / Khatynkopir Airport (Kazakhstan)
+KZ-0032,Chubarovka Airport (Kazakhstan)
+KZ-0033,Dzhetygara Airport (Kazakhstan)
+KZ-0034,Moinkum Airport (Kazakhstan)
+KZ-0035,Karagandy Southeast Airport (Kazakhstan)
+KZ-0036,Karaganda Southwest Airport (Kazakhstan)
+KZ-0037,Karazhal Airport (Kazakhstan)
+KZ-0038,Kegan Airport (Kazakhstan)
+KZ-0039,Kentau Airport (Kazakhstan)
+KZ-0040,Kokshetau Old Airport (Kazakhstan)
+KZ-0041,Krasnyy Most East Airport (Kazakhstan)
+KZ-0042,Kyzylasker Airport (Kazakhstan)
+KZ-0043,Kyzylkishlak Airport (Kazakhstan)
+KZ-0044,Kyzylorda Old Airport (Kazakhstan)
+KZ-0045,Narynkol Airport (Kazakhstan)
+KZ-0046,Novotroitskoye Airport (Kazakhstan)
+KZ-0047,Obruchevka Airport (Kazakhstan)
+KZ-0048,Pervomoyevka Airport (Kazakhstan)
+KZ-0049,Petropavl North Airport (Kazakhstan)
+KZ-0050,Podgorny Airport (Kazakhstan)
+KZ-0051,Rodnikovskiy Airport (Kazakhstan)
+KZ-0052,Sary Agach Airport (Kazakhstan)
+KZ-0053,Shagyr Airport (Kazakhstan)
+KZ-0054,Shelpe Southeast Airport (Kazakhstan)
+KZ-0055,Stepnoye East Airport (Kazakhstan)
+KZ-0056,Stepnoye West Airport (Kazakhstan)
+KZ-0057,Syugaty Airport (Kazakhstan)
+KZ-0058,Taganassay Airport (Kazakhstan)
+KZ-0059,Tamerlanovka Airport (Kazakhstan)
+KZ-0060,Togyzbay Airport (Kazakhstan)
+KZ-0061,Turkestan Airport (Kazakhstan)
+KZ-0062,Uralsk West Airport (Kazakhstan)
+KZ-0063,Ush Tobe Airport (Kazakhstan)
+KZ-0064,Volskoye Airport (Kazakhstan)
+KZ-0065,Aksuyek Airport (Kazakhstan)
+KZ-0066,Aktogay Air Base (Kazakhstan)
+KZ-0067,Krainiy Airport (Kazakhstan)
+KZ-0068,Kurchatov Airfield (Kazakhstan)
+KZ-0069,Zhangiztobe Air Base (Kazakhstan)
+KZ-0070,Zhosaly Airport (Kazakhstan)
+KZ-0071,Karas Air Base (Kazakhstan)
+KZ-0072,Aksu Heliport (Kazakhstan)
+KZ-0073,Chundzha Airfield (Kazakhstan)
+KZ-0074,Dzhaman Kuduk Airfield (Kazakhstan)
+KZ-0075,Charyn Airfield (Kazakhstan)
+KZ-0076,Blagoveshchenskoye-Chu Airport (Kazakhstan)
+KZ-0077,Tughyl Airport (Kazakhstan)
+KZ-0078,Zaysan West Airport (Kazakhstan)
+KZ-0079,Akzhar Airport (Kazakhstan)
+KZ-0080,Akkala Airport (Kazakhstan)
+KZ-0081,Zubovsk Airport (Kazakhstan)
+KZ-0082,Usharal Airport (Kazakhstan)
+KZ-0083,Akchatau Airport (Kazakhstan)
+KZ-0084,Gora Sasyrly Airport (Kazakhstan)
+KZ-0085,Koktas Southwest Airport (Kazakhstan)
+KZ-0086,Koktas Airport (Kazakhstan)
+KZ-0087,Kambala Airport (Kazakhstan)
+KZ-0088,Jeppesen Avia Club Airport (Kazakhstan)
+KZ-0089,Yrgyz Airport (Kazakhstan)
+KZ-0090,Beyneu Airport (Kazakhstan)
+KZ-0091,Novotroitskoye Airport (Kazakhstan)
+KZ-0092,Amangeldy Airfield (Kazakhstan)
+KZ-0093,Aktau Summer Sea Residence Heliport (Kazakhstan)
+KZ-0094,Aktau Summer Sea Harbor Heliport (Kazakhstan)
+KZ-0095,Sayakhat Beach Heliport (Kazakhstan)
+KZ-0096,Balkhash East Airfield (Kazakhstan)
+KZ-0097,Barshatas Airfield (Kazakhstan)
+KZ-0098,Tekeli Heliport (Kazakhstan)
+KZ-0099,Kyzylagash Heliport (Kazakhstan)
+KZ-0100,Sarkand Heliport (Kazakhstan)
+KZ-0101,Arman Dala Airstrip (Kazakhstan)
+KZ-0102,Azem/Talis Aeroclub Airfield (Kazakhstan)
+KZ-0103,Ushkonyr Mountain Heliport (Kazakhstan)
+KZ-0104,Shelek Heliport (Kazakhstan)
+KZ-0105,Karashoky Airport (Kazakhstan)
+KZ-0106,Moyynkum Airport (Kazakhstan)
+KZ-0107,Zhuantobe Airport (Kazakhstan)
+KZ-0108,Kokpek Highway Strip (Kazakhstan)
+KZ-0109,Romanovka Airfield (Kazakhstan)
+KZ-0110,Zholaman Airfield (Kazakhstan)
+KZ-0111,Stolichny Airfield (Kazakhstan)
+KZ-0112,Balapan Airfield (Kazakhstan)
+KZ-0113,Ulken Airport (Kazakhstan)
+KZ-0114,Bayanaul Airport (Kazakhstan)
+KZ-0115,Korshunovo Heliport (Kazakhstan)
+KZ-0116,Kabanbay Airport (Kazakhstan)
+KZ-0117,Bautino East Heliport (Kazakhstan)
+KZ-0118,Malaya Almatynka Helipad (Kazakhstan)
+KZ-0119,MCHS Heliport (Kazakhstan)
+KZ-0120,Karakum Private Heliport (Kazakhstan)
+KZ-0121,Kendirli Recreation Center Heliport (Kazakhstan)
+KZ-0122,ERSAI Heliport (Kazakhstan)
+KZ-0123,Ikum Heliport (Kazakhstan)
+KZ-0124,Bautino Port Heliport (Kazakhstan)
+KZ-0125,Teniz Hotel Heliport (Kazakhstan)
+KZ-0126,Akku Hotel Complex Heliport (Kazakhstan)
+KZ-0127,Sarykamys Airport (Kazakhstan)
+KZ-0128,Yuzhnyy Tengiz Heliport (Kazakhstan)
+KZ-0129,Almaty City Clinical Hospital Number 4 Heliport (Kazakhstan)
+KZ-0130,Shengeldy East Heliport (Kazakhstan)
+KZ-0131,Shengeldy North Heliport (Kazakhstan)
+KZ-0132,Lepsy Airport (Kazakhstan)
+KZ-0133,Dzhaksy Dzhartasskiy Airport (Kazakhstan)
+KZ-0134,Bayanaul Heliport (Kazakhstan)
+KZ-0135,Kazakhstan Heliport (Kazakhstan)
+KZ-0136,Zhezkent Heliport (Kazakhstan)
+KZ-0137,Shelek Airport (Kazakhstan)
+KZ-6022,Dolon Southwest Air Base (Kazakhstan)
+KZ-7470,Dolon Air Base (Kazakhstan)
+KZ-ATX,Atbasar Airport (Kazakhstan)
 KZ01,Eglin Auxiliary Field 6 Airport (USA)
 KZ10,Fort Lewis Road / Pacemaker Landing Zone Airport (USA)
 KZ12,General Mitchell Intl Heliport (USA)
@@ -42841,60 +42841,60 @@ MU96,Refueling Pad Heliport (USA)
 MU97,Platte Valley Airport (USA)
 MU98,Eagles Nest Airport (USA)
 MU99,Fabick-Colmarile Heliport (USA)
-MUAT,Antilla Airport,CU
-MUBA,Gustavo Rizo Airport,CU
-MUBE,El Caribe Airport,CU
-MUBO,Batabanó Airport,CU
-MUBR,Las Brujas Airport,CU
-MUBY,Carlos Manuel de Cespedes Airport,CU
-MUCA,Maximo Gomez Airport,CU
-MUCB,Caibarién Airport,CU
-MUCC,Jardines Del Rey Airport,CU
-MUCD,Ciego De Avila Sur Airport,CU
-MUCF,Jaime Gonzalez Airport,CU
-MUCL,Vilo Acuña International Airport,CU
-MUCM,Ignacio Agramonte International Airport,CU
-MUCO,Colón Airport,CU
-MUCU,Antonio Maceo International Airport,CU
-MUCV,Las Clavellinas Airport,CU
-MUCY,Cayajabo Airport,CU
-MUFL,Florida Airport,CU
-MUGA,Central Agramonte Airport,CU
-MUGM,Leeward Point Field,CU
-MUGT,Mariana Grajales Airport,CU
-MUHA,José Martí International Airport,CU
-MUHG,Frank Pais International Airport,CU
-MUIV,Nuevitas Airport,CU
-MUKW,Kawama Airport,CU
-MULB,Ciudad Libertad Airport,CU
-MULM,La Coloma Airport,CU
-MUMA,Alfredo Noa Díaz Airport,CU
-MUMG,Managua Airport,CU
-MUMH,Matahambre Airport,CU
-MUMJ,Mayajigua Airport,CU
-MUML,Mariel Airport,CU
-MUMO,Orestes Acosta Airport,CU
-MUMT,Matanzas Airport,CU
-MUMZ,Sierra Maestra International Airport,CU
-MUNB,San Nicolás de Bari Airport,CU
-MUNC,Nicaro Airport,CU
-MUNG,Rafael Cabrera Airport,CU
-MUOC,Cayo Coco Airport,CU
-MUPA,Punta Alegre Airport,CU
-MUPB,Playa Baracoa Airport,CU
-MUPL,Pilon Airport,CU
-MUPR,Pinar Del Rio Airport,CU
-MUSA,San Antonio de los Baños Airfield,CU
-MUSC,Abel Santamaria Airport,CU
-MUSG,Sagua La Grande Airport,CU
-MUSJ,San Julián Air Base,CU
-MUSL,Joaquín de Agüero Airport,CU
-MUSN,Siguanea Airport,CU
-MUSS,Sancti Spiritus Airport,CU
-MUTD,Alberto Delgado Airport,CU
-MUTI,Manati Airport,CU
-MUVR,Juan Gualberto Gomez International Airport,CU
-MUVT,Hermanos Ameijeiras Airport,CU
+MUAT,Antilla Airport (Cuba)
+MUBA,Gustavo Rizo Airport (Cuba)
+MUBE,El Caribe Airport (Cuba)
+MUBO,Batabanó Airport (Cuba)
+MUBR,Las Brujas Airport (Cuba)
+MUBY,Carlos Manuel de Cespedes Airport (Cuba)
+MUCA,Maximo Gomez Airport (Cuba)
+MUCB,Caibarién Airport (Cuba)
+MUCC,Jardines Del Rey Airport (Cuba)
+MUCD,Ciego De Avila Sur Airport (Cuba)
+MUCF,Jaime Gonzalez Airport (Cuba)
+MUCL,Vilo Acuña International Airport (Cuba)
+MUCM,Ignacio Agramonte International Airport (Cuba)
+MUCO,Colón Airport (Cuba)
+MUCU,Antonio Maceo International Airport (Cuba)
+MUCV,Las Clavellinas Airport (Cuba)
+MUCY,Cayajabo Airport (Cuba)
+MUFL,Florida Airport (Cuba)
+MUGA,Central Agramonte Airport (Cuba)
+MUGM,Leeward Point Field (Cuba)
+MUGT,Mariana Grajales Airport (Cuba)
+MUHA,José Martí International Airport (Cuba)
+MUHG,Frank Pais International Airport (Cuba)
+MUIV,Nuevitas Airport (Cuba)
+MUKW,Kawama Airport (Cuba)
+MULB,Ciudad Libertad Airport (Cuba)
+MULM,La Coloma Airport (Cuba)
+MUMA,Alfredo Noa Díaz Airport (Cuba)
+MUMG,Managua Airport (Cuba)
+MUMH,Matahambre Airport (Cuba)
+MUMJ,Mayajigua Airport (Cuba)
+MUML,Mariel Airport (Cuba)
+MUMO,Orestes Acosta Airport (Cuba)
+MUMT,Matanzas Airport (Cuba)
+MUMZ,Sierra Maestra International Airport (Cuba)
+MUNB,San Nicolás de Bari Airport (Cuba)
+MUNC,Nicaro Airport (Cuba)
+MUNG,Rafael Cabrera Airport (Cuba)
+MUOC,Cayo Coco Airport (Cuba)
+MUPA,Punta Alegre Airport (Cuba)
+MUPB,Playa Baracoa Airport (Cuba)
+MUPL,Pilon Airport (Cuba)
+MUPR,Pinar Del Rio Airport (Cuba)
+MUSA,San Antonio de los Baños Airfield (Cuba)
+MUSC,Abel Santamaria Airport (Cuba)
+MUSG,Sagua La Grande Airport (Cuba)
+MUSJ,San Julián Air Base (Cuba)
+MUSL,Joaquín de Agüero Airport (Cuba)
+MUSN,Siguanea Airport (Cuba)
+MUSS,Sancti Spiritus Airport (Cuba)
+MUTD,Alberto Delgado Airport (Cuba)
+MUTI,Manati Airport (Cuba)
+MUVR,Juan Gualberto Gomez International Airport (Cuba)
+MUVT,Hermanos Ameijeiras Airport (Cuba)
 MVI,Manetai Airport (Papua New Guinea)
 MVJ,Marlboro Airport,JM
 MW-0001,Chintheche Aerodrome,MW
@@ -51736,7 +51736,7 @@ RU-1777,Nerchinsk Air Base (Russia)
 RU-187,Lodeynoye Pole Air Base (Russia)
 RU-1892,Dolinsk-Sokol Air Base (Russia)
 RU-2070,Logovushka Airfield (Russia)
-RU-2098,Mukachevo Air Base,UA
+RU-2098,Mukachevo Air Base (Ukraine)
 RU-2244,Ukrainka Air Base (Russia)
 RU-2249,Gromovo Air Base (Russia)
 RU-2344,Samara Kryazh Air Base (Russia)
@@ -60827,215 +60827,215 @@ U94,Hazelton Municipal Airport (USA)
 U97,Howe Airport (USA)
 U98,Idaho City US Forest Service Airport (USA)
 U99,Laidlaw Corrals Airport (USA)
-UA-0001,Borodyanka Air Base,UA
-UA-0002,Brody Air Base,UA
-UA-0003,Chernihiv Air Base,UA
-UA-0004,Pustogorod Air Base,UA
-UA-0005,Nizhyn Air Base,UA
-UA-0006,Kornych Air Base,UA
-UA-0007,Kolomiya Airport,UA
-UA-0008,Chortkiv Air Base,UA
-UA-0009,Gora Klementyeva Airfield,UA
-UA-0010,Oktyabrskoe Air Base,UA
-UA-0011,Karankut Air Base,UA
-UA-0012,Kirovskoe Air Base,UA
-UA-0013,Risovoye Airfield,UA
-UA-0014,Donuzlav Air Base,UA
-UA-0015,Perekop Airfield,UA
-UA-0016,Yukharina Balka Airfield,UA
-UA-0017,Genichesk Air Base,UA
-UA-0018,Sevastopol Kozachya Bay Aerodrome / Khersones Air Base,UA
-UA-0019,Bagerovo Air Base,UA
-UA-0020,Melitopol Air Base,UA
-UA-0021,Skadovsk Airfield,UA
-UA-0022,Kacha Air Base,UA
-UA-0023,Chkalovskiy Airfield,UA
-UA-0024,Askaniya-Nova Airport,UA
-UA-0025,Bila Tserkva Air Base,UA
-UA-0026,Blagoyevo Air Base,UA
-UA-0027,Bliznyuki Air Base,UA
-UA-0028,Zhovtneve Air Base,UA
-UA-0029,Bolshoy Tokmak Air Base,UA
-UA-0030,Luzhani Airfield,UA
-UA-0031,Oleksandriya Air Base,UA
-UA-0032,Artsyz Air Base,UA
-UA-0033,Kiliya Airport,UA
-UA-0034,Lymanske Airfield,UA
-UA-0035,Chоrnobil Heliport,UA
-UA-0036,Dmitrievka Airfield,UA
-UA-0037,Dobrianka Airfield,UA
-UA-0038,Kyiv Chaika Airfield,UA
-UA-0039,Tsuniv Airfield,UA
-UA-0040,Sovyetskiy Air Base,UA
-UA-0041,Yuzhniy Airfield,UA
-UA-0042,Voznesensk Air Base,UA
-UA-0043,State House #10 (M S Gorbachev Dacha) (Foros) Heliport,UA
-UA-0044,Sevastopol Naval Institute Helipad,UA
-UA-0045,Izyum Air Base,UA
-UA-0046,Kalynivka Air Base,UA
-UA-0047,Dolgintsevo Air Base,UA
-UA-0048,Poltava Air Base,UA
-UA-0049,Myrhorod Air Base,UA
-UA-0050,Kakhnovka Airfield,UA
-UA-0051,Lokhvitsya Airfield,UA
-UA-0052,Korotych Airfield,UA
-UA-0053,Palmira Airfield,UA
-UA-0054,Kupyansk Air Base,UA
-UA-0055,Shiroke Airfield,UA
-UA-0056,Mayske Airfield,UA
-UA-0057,Mospyne Airfield,UA
-UA-0058,Yenakiyeve Airfield,UA
-UA-0059,Valeryanivka Airfield,UA
-UA-0060,Gostra Mogila Airfield,UA
-UA-0061,Dalnik Airfield,UA
-UA-0062,Liman Airfield,UA
-UA-0063,Kruglaya Bukhta Heliport,UA
-UA-0064,Yalta Heliport,UA
-UA-0065,Respect Hall Helipad,UA
-UA-0066,Ochakiv Air Base,UA
-UA-0067,Kanatove Air Base,UA
-UA-0068,Mala Vyska Airfield,UA
-UA-0069,Uman Air Base,UA
-UA-0070,Kam'yanka Airfield,UA
-UA-0071,Zhovti Vody Airstrip,UA
-UA-0072,Volodimirivka Airstrip,UA
-UA-0073,Hydropark Heliport,UA
-UA-0074,Mariinsky Park Heliport,UA
-UA-0075,Zhalizhnia,UA
-UA-0076,Turynka,UA
-UA-0077,Aerodrom Krupske,UA
-UA-0078,Chervonoarmiis'ke Airstrip,UA
-UA-0079,Andrushivka,UA
-UA-0080,Narodychi,UA
-UA-0081,Tal'ne,UA
-UA-0082,Vinnytsia Aircraft Sports Club - Sutysky Airport,UA
-UA-0083,Filiutka,UA
-UA-0084,Mykolaivka-Novorosiis'ka Airstrip,UA
-UA-0085,Iziaslav,UA
-UA-0086,Pohrebyshche,UA
-UA-0087,Krasni Okny Airfield,UA
-UA-0088,Chervonobirka Airstrip,UA
-UA-0089,Shevchenkove Airstrip,UA
-UA-0090,Korostelivka Airstrip,UA
-UA-0091,Lidavo Airstrip,UA
-UA-0092,Kryzhopil Airstrip,UA
-UA-0093,Pishchanka Airstrip,UA
-UA-0094,Smodna Airfield,UA
-UA-0095,Turiisk Airfield,UA
-UA-0096,Frunzivka Airstrip,UA
-UA-0097,Troits'ke Airstrip,UA
-UA-0098,Zabroshennyy Airport,UA
-UA-0099,Kremydivka Airfield,UA
-UA-0100,Ksaverivka Airfield,UA
-UA-0101,Mezhigyrya Heliport,UA
-UA-0102,Lyneya Airstrip,UA
-UA-0103,Buzova Glider Field,UA
-UA-0104,Dymer Airstrip,UA
-UA-0105,Karabachyn Airstrip,UA
-UA-0106,Anan'iv Airstrip,UA
-UA-0107,Kam'yanets'-Podil's'kyi Airfield,UA
-UA-0108,Drohobych Airfield,UA
-UA-0109,Malyn Airstrip,UA
-UA-0110,Pogorelovka Airstrip,UA
-UA-0111,Rudnya Airstrip,UA
-UA-0112,Palianychyntsi Airstrip,UA
-UA-0113,Lanivtsi Airstrip,UA
-UA-0114,Zahnitkiv Airstrip,UA
-UA-0115,Hardyshivka Airstrip,UA
-UA-0116,Nova Vasylivka Airstrip,UA
-UA-0117,Orekhovo Airfield,UA
-UA-0118,Rafalivka Helicopter Base,UA
-UA-0119,Romashky Airstrip,UA
-UA-0120,Novopavlivka Airstrip,UA
-UA-0121,Kobelyachok Airstrip,UA
-UA-0122,Iskrivka Airstrip,UA
-UA-0123,Biloyarivka Airstrip,UA
-UA-0124,Vychivka Helicopter Base,UA
-UA-0125,Bilohorodka Heliport,UA
-UA-0126,Pidhirya Airfield,UA
-UA-0127,Kosino Spa Resort,UA
-UA-0128,Pidverbtsi Airstrip,UA
-UA-0129,Koktebel Gliding Center,UA
-UA-0130,Kurgannoye Airstrip,UA
-UA-0131,Kukushkino Airstrip,UA
-UA-0132,Slavne Airfield,UA
-UA-0133,Pochetnoye Airfield,UA
-UA-0134,Chervonyi Chaban Airfield,UA
-UA-0135,Pryvillia Airfield,UA
-UA-0136,Lazume Airfield,UA
-UA-0137,Bekhtery Airfield,UA
-UA-0138,Oleksiivka Airfield,UA
-UA-0139,Trakhtemyriv Heliport,UA
-UA-0140,Kyiv Challenge Heliport,UA
-UA-0141,Luhansk Aviation Sports Club Airfield,UA
-UA-0142,Lysychansk Heliport,UA
-UA-0143,Blagodatnoye Delta-Paradrome,UA
-UA-0144,Borodyanka Aerodrome,UA
-UA-0145,Chernihiv West Airfield,UA
-UA-0146,Aeroclub Swallow,UA
-UA-0147,Yuzhne Heliport,UA
-UA-0148,Oleksandrivka Airfield,UA
-UA-0149,Mriya Resort Helipad,UA
-UA-0150,Internal Affairs Ministry Dacha Helipad,UA
-UA-0151,Demetrynskaya Street Helipad,UA
-UA-0152,Orlinovsky Helipad,UA
-UA-0153,State House #9 (Oliva) Heliport,UA
-UA-0154,State House #8 (Berehove) Heliport,UA
-UA-0155,GK Tavriya Resort Seaside Helipad,UA
-UA-0156,GK Tavriya Resort Heliport,UA
-UA-0157,Naberezhnaya Helipad,UA
-UA-0158,Oreanda Heliport,UA
-UA-0159,Pension Wisteria Helipad,UA
-UA-0160,Massandra Palace Heliport,UA
-UA-0161,Artek Heliport,UA
-UA-0162,Partenit Heliport,UA
-UA-0163,Profug Heliport,UA
-UA-0164,Reni Heliport,UA
-UA-0165,Frumushyka Airstrip,UA
-UA-0166,Frumushyka Heliport,UA
-UA-0167,Yuzhniy Heliport,UA
-UA-0168,Chaplynka Airport,UA
-UA-0169,Vesele Airport,UA
-UA-0170,Shyroke Airport,UA
-UA-0171,Prymors'k Airport,UA
-UA-0172,Korsak Airport,UA
-UA-0173,Hlukhiv Airport,UA
-UA-0174,Zmiyinyy Island Helipad,UA
-UA-0175,Holubivka Airfield,UA
-UA-0176,Yalta North Helipad,UA
-UA-0177,Ximik Airport,UA
-UA-0178,Mala Bilozerka Airport,UA
-UA-0179,Mamalyha Heliport,UA
-UA-0180,Sydorenkove Airport,UA
-UA-1901,Sambir Air Base,UA
-UA-2644,Starokostiantyniv Air Base,UA
-UA-2904,Dubno Air Base,UA
-UA-3578,Konotop Air Base,UA
-UA-3730,Okhtyrka Air Base,UA
-UA-3897,Lebedyn Air Base,UA
-UA-6118,Vasylkiv Air Base,UA
-UA-6709,Velyka Krucha Air Base,UA
-UA-7707,Pryluki Air Base,UA
-UA-8143,Stryi Air Base,UA
-UA-8322,Horodnia Air Base,UA
-UA-8381,Liubsha Air Base,UA
-UA-8984,Lutsk Air Base,UA
-UA-9155,Ovruch Air Base,UA
-UA-9861,Zhovtneve Air Base,UA
+UA-0001,Borodyanka Air Base (Ukraine)
+UA-0002,Brody Air Base (Ukraine)
+UA-0003,Chernihiv Air Base (Ukraine)
+UA-0004,Pustogorod Air Base (Ukraine)
+UA-0005,Nizhyn Air Base (Ukraine)
+UA-0006,Kornych Air Base (Ukraine)
+UA-0007,Kolomiya Airport (Ukraine)
+UA-0008,Chortkiv Air Base (Ukraine)
+UA-0009,Gora Klementyeva Airfield (Ukraine)
+UA-0010,Oktyabrskoe Air Base (Ukraine)
+UA-0011,Karankut Air Base (Ukraine)
+UA-0012,Kirovskoe Air Base (Ukraine)
+UA-0013,Risovoye Airfield (Ukraine)
+UA-0014,Donuzlav Air Base (Ukraine)
+UA-0015,Perekop Airfield (Ukraine)
+UA-0016,Yukharina Balka Airfield (Ukraine)
+UA-0017,Genichesk Air Base (Ukraine)
+UA-0018,Sevastopol Kozachya Bay Aerodrome / Khersones Air Base (Ukraine)
+UA-0019,Bagerovo Air Base (Ukraine)
+UA-0020,Melitopol Air Base (Ukraine)
+UA-0021,Skadovsk Airfield (Ukraine)
+UA-0022,Kacha Air Base (Ukraine)
+UA-0023,Chkalovskiy Airfield (Ukraine)
+UA-0024,Askaniya-Nova Airport (Ukraine)
+UA-0025,Bila Tserkva Air Base (Ukraine)
+UA-0026,Blagoyevo Air Base (Ukraine)
+UA-0027,Bliznyuki Air Base (Ukraine)
+UA-0028,Zhovtneve Air Base (Ukraine)
+UA-0029,Bolshoy Tokmak Air Base (Ukraine)
+UA-0030,Luzhani Airfield (Ukraine)
+UA-0031,Oleksandriya Air Base (Ukraine)
+UA-0032,Artsyz Air Base (Ukraine)
+UA-0033,Kiliya Airport (Ukraine)
+UA-0034,Lymanske Airfield (Ukraine)
+UA-0035,Chоrnobil Heliport (Ukraine)
+UA-0036,Dmitrievka Airfield (Ukraine)
+UA-0037,Dobrianka Airfield (Ukraine)
+UA-0038,Kyiv Chaika Airfield (Ukraine)
+UA-0039,Tsuniv Airfield (Ukraine)
+UA-0040,Sovyetskiy Air Base (Ukraine)
+UA-0041,Yuzhniy Airfield (Ukraine)
+UA-0042,Voznesensk Air Base (Ukraine)
+UA-0043,State House #10 (M S Gorbachev Dacha) (Foros) Heliport (Ukraine)
+UA-0044,Sevastopol Naval Institute Helipad (Ukraine)
+UA-0045,Izyum Air Base (Ukraine)
+UA-0046,Kalynivka Air Base (Ukraine)
+UA-0047,Dolgintsevo Air Base (Ukraine)
+UA-0048,Poltava Air Base (Ukraine)
+UA-0049,Myrhorod Air Base (Ukraine)
+UA-0050,Kakhnovka Airfield (Ukraine)
+UA-0051,Lokhvitsya Airfield (Ukraine)
+UA-0052,Korotych Airfield (Ukraine)
+UA-0053,Palmira Airfield (Ukraine)
+UA-0054,Kupyansk Air Base (Ukraine)
+UA-0055,Shiroke Airfield (Ukraine)
+UA-0056,Mayske Airfield (Ukraine)
+UA-0057,Mospyne Airfield (Ukraine)
+UA-0058,Yenakiyeve Airfield (Ukraine)
+UA-0059,Valeryanivka Airfield (Ukraine)
+UA-0060,Gostra Mogila Airfield (Ukraine)
+UA-0061,Dalnik Airfield (Ukraine)
+UA-0062,Liman Airfield (Ukraine)
+UA-0063,Kruglaya Bukhta Heliport (Ukraine)
+UA-0064,Yalta Heliport (Ukraine)
+UA-0065,Respect Hall Helipad (Ukraine)
+UA-0066,Ochakiv Air Base (Ukraine)
+UA-0067,Kanatove Air Base (Ukraine)
+UA-0068,Mala Vyska Airfield (Ukraine)
+UA-0069,Uman Air Base (Ukraine)
+UA-0070,Kam'yanka Airfield (Ukraine)
+UA-0071,Zhovti Vody Airstrip (Ukraine)
+UA-0072,Volodimirivka Airstrip (Ukraine)
+UA-0073,Hydropark Heliport (Ukraine)
+UA-0074,Mariinsky Park Heliport (Ukraine)
+UA-0075,Zhalizhnia (Ukraine)
+UA-0076,Turynka (Ukraine)
+UA-0077,Aerodrom Krupske (Ukraine)
+UA-0078,Chervonoarmiis'ke Airstrip (Ukraine)
+UA-0079,Andrushivka (Ukraine)
+UA-0080,Narodychi (Ukraine)
+UA-0081,Tal'ne (Ukraine)
+UA-0082,Vinnytsia Aircraft Sports Club - Sutysky Airport (Ukraine)
+UA-0083,Filiutka (Ukraine)
+UA-0084,Mykolaivka-Novorosiis'ka Airstrip (Ukraine)
+UA-0085,Iziaslav (Ukraine)
+UA-0086,Pohrebyshche (Ukraine)
+UA-0087,Krasni Okny Airfield (Ukraine)
+UA-0088,Chervonobirka Airstrip (Ukraine)
+UA-0089,Shevchenkove Airstrip (Ukraine)
+UA-0090,Korostelivka Airstrip (Ukraine)
+UA-0091,Lidavo Airstrip (Ukraine)
+UA-0092,Kryzhopil Airstrip (Ukraine)
+UA-0093,Pishchanka Airstrip (Ukraine)
+UA-0094,Smodna Airfield (Ukraine)
+UA-0095,Turiisk Airfield (Ukraine)
+UA-0096,Frunzivka Airstrip (Ukraine)
+UA-0097,Troits'ke Airstrip (Ukraine)
+UA-0098,Zabroshennyy Airport (Ukraine)
+UA-0099,Kremydivka Airfield (Ukraine)
+UA-0100,Ksaverivka Airfield (Ukraine)
+UA-0101,Mezhigyrya Heliport (Ukraine)
+UA-0102,Lyneya Airstrip (Ukraine)
+UA-0103,Buzova Glider Field (Ukraine)
+UA-0104,Dymer Airstrip (Ukraine)
+UA-0105,Karabachyn Airstrip (Ukraine)
+UA-0106,Anan'iv Airstrip (Ukraine)
+UA-0107,Kam'yanets'-Podil's'kyi Airfield (Ukraine)
+UA-0108,Drohobych Airfield (Ukraine)
+UA-0109,Malyn Airstrip (Ukraine)
+UA-0110,Pogorelovka Airstrip (Ukraine)
+UA-0111,Rudnya Airstrip (Ukraine)
+UA-0112,Palianychyntsi Airstrip (Ukraine)
+UA-0113,Lanivtsi Airstrip (Ukraine)
+UA-0114,Zahnitkiv Airstrip (Ukraine)
+UA-0115,Hardyshivka Airstrip (Ukraine)
+UA-0116,Nova Vasylivka Airstrip (Ukraine)
+UA-0117,Orekhovo Airfield (Ukraine)
+UA-0118,Rafalivka Helicopter Base (Ukraine)
+UA-0119,Romashky Airstrip (Ukraine)
+UA-0120,Novopavlivka Airstrip (Ukraine)
+UA-0121,Kobelyachok Airstrip (Ukraine)
+UA-0122,Iskrivka Airstrip (Ukraine)
+UA-0123,Biloyarivka Airstrip (Ukraine)
+UA-0124,Vychivka Helicopter Base (Ukraine)
+UA-0125,Bilohorodka Heliport (Ukraine)
+UA-0126,Pidhirya Airfield (Ukraine)
+UA-0127,Kosino Spa Resort (Ukraine)
+UA-0128,Pidverbtsi Airstrip (Ukraine)
+UA-0129,Koktebel Gliding Center (Ukraine)
+UA-0130,Kurgannoye Airstrip (Ukraine)
+UA-0131,Kukushkino Airstrip (Ukraine)
+UA-0132,Slavne Airfield (Ukraine)
+UA-0133,Pochetnoye Airfield (Ukraine)
+UA-0134,Chervonyi Chaban Airfield (Ukraine)
+UA-0135,Pryvillia Airfield (Ukraine)
+UA-0136,Lazume Airfield (Ukraine)
+UA-0137,Bekhtery Airfield (Ukraine)
+UA-0138,Oleksiivka Airfield (Ukraine)
+UA-0139,Trakhtemyriv Heliport (Ukraine)
+UA-0140,Kyiv Challenge Heliport (Ukraine)
+UA-0141,Luhansk Aviation Sports Club Airfield (Ukraine)
+UA-0142,Lysychansk Heliport (Ukraine)
+UA-0143,Blagodatnoye Delta-Paradrome (Ukraine)
+UA-0144,Borodyanka Aerodrome (Ukraine)
+UA-0145,Chernihiv West Airfield (Ukraine)
+UA-0146,Aeroclub Swallow (Ukraine)
+UA-0147,Yuzhne Heliport (Ukraine)
+UA-0148,Oleksandrivka Airfield (Ukraine)
+UA-0149,Mriya Resort Helipad (Ukraine)
+UA-0150,Internal Affairs Ministry Dacha Helipad (Ukraine)
+UA-0151,Demetrynskaya Street Helipad (Ukraine)
+UA-0152,Orlinovsky Helipad (Ukraine)
+UA-0153,State House #9 (Oliva) Heliport (Ukraine)
+UA-0154,State House #8 (Berehove) Heliport (Ukraine)
+UA-0155,GK Tavriya Resort Seaside Helipad (Ukraine)
+UA-0156,GK Tavriya Resort Heliport (Ukraine)
+UA-0157,Naberezhnaya Helipad (Ukraine)
+UA-0158,Oreanda Heliport (Ukraine)
+UA-0159,Pension Wisteria Helipad (Ukraine)
+UA-0160,Massandra Palace Heliport (Ukraine)
+UA-0161,Artek Heliport (Ukraine)
+UA-0162,Partenit Heliport (Ukraine)
+UA-0163,Profug Heliport (Ukraine)
+UA-0164,Reni Heliport (Ukraine)
+UA-0165,Frumushyka Airstrip (Ukraine)
+UA-0166,Frumushyka Heliport (Ukraine)
+UA-0167,Yuzhniy Heliport (Ukraine)
+UA-0168,Chaplynka Airport (Ukraine)
+UA-0169,Vesele Airport (Ukraine)
+UA-0170,Shyroke Airport (Ukraine)
+UA-0171,Prymors'k Airport (Ukraine)
+UA-0172,Korsak Airport (Ukraine)
+UA-0173,Hlukhiv Airport (Ukraine)
+UA-0174,Zmiyinyy Island Helipad (Ukraine)
+UA-0175,Holubivka Airfield (Ukraine)
+UA-0176,Yalta North Helipad (Ukraine)
+UA-0177,Ximik Airport (Ukraine)
+UA-0178,Mala Bilozerka Airport (Ukraine)
+UA-0179,Mamalyha Heliport (Ukraine)
+UA-0180,Sydorenkove Airport (Ukraine)
+UA-1901,Sambir Air Base (Ukraine)
+UA-2644,Starokostiantyniv Air Base (Ukraine)
+UA-2904,Dubno Air Base (Ukraine)
+UA-3578,Konotop Air Base (Ukraine)
+UA-3730,Okhtyrka Air Base (Ukraine)
+UA-3897,Lebedyn Air Base (Ukraine)
+UA-6118,Vasylkiv Air Base (Ukraine)
+UA-6709,Velyka Krucha Air Base (Ukraine)
+UA-7707,Pryluki Air Base (Ukraine)
+UA-8143,Stryi Air Base (Ukraine)
+UA-8322,Horodnia Air Base (Ukraine)
+UA-8381,Liubsha Air Base (Ukraine)
+UA-8984,Lutsk Air Base (Ukraine)
+UA-9155,Ovruch Air Base (Ukraine)
+UA-9861,Zhovtneve Air Base (Ukraine)
 UA30,Batken Airport,KG
-UA34,Chardara Airport,KZ
-UA36,Lugovoy Airport,KZ
+UA34,Chardara Airport (Kazakhstan)
+UA36,Lugovoy Airport (Kazakhstan)
 UA66,Chirchik Airport,UZ
-UAAA,Almaty International Airport,KZ
-UAAH,Balkhash Airport,KZ
-UAAR,Boralday Airport,KZ
-UAAT,Taldykorgan Airport,KZ
+UAAA,Almaty International Airport (Kazakhstan)
+UAAH,Balkhash Airport (Kazakhstan)
+UAAR,Boralday Airport (Kazakhstan)
+UAAT,Taldykorgan Airport (Kazakhstan)
 UABA,Burana Airport,KG
-UACC,Nursultan Nazarbayev International Airport,KZ
-UACK,Kokshetau Airport,KZ
-UACP,Petropavl Airport,KZ
-UACS,Stepnogorsk Airport,KZ
-UADD,Taraz Airport,KZ
+UACC,Nursultan Nazarbayev International Airport (Kazakhstan)
+UACK,Kokshetau Airport (Kazakhstan)
+UACP,Petropavl Airport (Kazakhstan)
+UACS,Stepnogorsk Airport (Kazakhstan)
+UADD,Taraz Airport (Kazakhstan)
 UAE,Mount Aue Airport (Papua New Guinea)
 UAFG,Cholpon-Ata Airport,KG
 UAFI,Isfana Airport,KG
@@ -61045,41 +61045,41 @@ UAFO,Osh Airport,KG
 UAFP,Karakol Airport,KG
 UAFW,Kant Air Base,KG
 UAFZ,Kazarman Airport,KG
-UAII,Shymkent Airport,KZ
-UAIT,Hazrat Sultan International Airport,KZ
-UAKD,Zhezkazgan National Airport,KZ
-UAKK,Sary-Arka Airport,KZ
-UAON,Yubileyniy Airfield,KZ
-UAOO,Kyzylorda Airport,KZ
-UARR,Uralsk Airport,KZ
-UASA,Ayaguz Airport,KZ
-UASB,Ekibastuz Airport,KZ
-UASK,Ust-Kamenogorsk Airport,KZ
-UASP,Pavlodar Airport,KZ
-UASS,Semey Airport,KZ
-UASZ,Zaysan Airport,KZ
-UATA,Aralsk Airport,KZ
-UATE,Aktau Airport,KZ
-UATG,Atyrau International Airport,KZ
-UATR,Shalkar Airport,KZ
-UATT,Aktobe Airport,KZ
-UATZ,Tengiz Airport,KZ
-UAUR,Arkalyk North Airport,KZ
-UAUT,Turgay Airport,KZ
-UAUU,Kostanay West Airport,KZ
-UB12,Nasosnaya Air Base,AZ
-UB13,Stepanakert Airport,AZ
-UB14,Kyurdamir Air Base,AZ
-UB16,Balakan Airport,AZ
-UB18,Baku Kala Air Base,AZ
-UBBA,Akstafa Airport,AZ
-UBBB,Heydar Aliyev International Airport,AZ
-UBBG,Ganja International Airport,AZ
-UBBL,Lankaran International Airport,AZ
-UBBN,Nakhchivan Airport,AZ
-UBBQ,Gabala International Airport,AZ
-UBBY,Zaqatala International Airport,AZ
-UBEE,Yevlakh Airport,AZ
+UAII,Shymkent Airport (Kazakhstan)
+UAIT,Hazrat Sultan International Airport (Kazakhstan)
+UAKD,Zhezkazgan National Airport (Kazakhstan)
+UAKK,Sary-Arka Airport (Kazakhstan)
+UAON,Yubileyniy Airfield (Kazakhstan)
+UAOO,Kyzylorda Airport (Kazakhstan)
+UARR,Uralsk Airport (Kazakhstan)
+UASA,Ayaguz Airport (Kazakhstan)
+UASB,Ekibastuz Airport (Kazakhstan)
+UASK,Ust-Kamenogorsk Airport (Kazakhstan)
+UASP,Pavlodar Airport (Kazakhstan)
+UASS,Semey Airport (Kazakhstan)
+UASZ,Zaysan Airport (Kazakhstan)
+UATA,Aralsk Airport (Kazakhstan)
+UATE,Aktau Airport (Kazakhstan)
+UATG,Atyrau International Airport (Kazakhstan)
+UATR,Shalkar Airport (Kazakhstan)
+UATT,Aktobe Airport (Kazakhstan)
+UATZ,Tengiz Airport (Kazakhstan)
+UAUR,Arkalyk North Airport (Kazakhstan)
+UAUT,Turgay Airport (Kazakhstan)
+UAUU,Kostanay West Airport (Kazakhstan)
+UB12,Nasosnaya Air Base (Azerbaijan)
+UB13,Stepanakert Airport (Azerbaijan)
+UB14,Kyurdamir Air Base (Azerbaijan)
+UB16,Balakan Airport (Azerbaijan)
+UB18,Baku Kala Air Base (Azerbaijan)
+UBBA,Akstafa Airport (Azerbaijan)
+UBBB,"Heydar Aliyev International Airport (Baku, Azerbaijan)"
+UBBG,Ganja International Airport (Azerbaijan)
+UBBL,Lankaran International Airport (Azerbaijan)
+UBBN,Nakhchivan Airport (Azerbaijan)
+UBBQ,Gabala International Airport (Azerbaijan)
+UBBY,Zaqatala International Airport (Azerbaijan)
+UBEE,Yevlakh Airport (Azerbaijan)
 UBI,Buin Airport (Papua New Guinea)
 UD21,Arzni Airport,AM
 UDLS,Stepanavan Airport,AM
@@ -61185,7 +61185,7 @@ UG-0015,Bulago Airport,UG
 UG-0016,Kayonza Airport,UG
 UG-OYG,Moyo Airport,UG
 UG0U,Gudauta Air Base,GE
-UG11,Dollyar Air Base,AZ
+UG11,Dollyar Air Base (Azerbaijan)
 UG22,Tbilisi Marneuli Air Base,GE
 UG24,Tbilisi Soganlug Air Base,GE
 UG25,Telavi Kurdgelauri Airport,GE
@@ -61313,57 +61313,57 @@ UIUN,Nizhneangarsk Airport (Russia)
 UIUU,Baikal International Airport (Russia)
 UJAP,Ujae Atoll Airport,MH
 UJN,Uljin Airport (South Korea)
-UK59,Chuhuiv Air Base,UA
-UK61,Jagellon Airfield,UA
-UKBB,Boryspil International Airport,UA
-UKCC,Donetsk Sergei Prokofiev International Airport,UA
-UKCK,Kramatorsk Airport,UA
-UKCM,Mariupol International Airport,UA
-UKCS,Sievierodonetsk Airport,UA
-UKCW,Luhansk International Airport,UA
-UKDB,Berdyansk Airport,UA
-UKDD,Dnipro International Airport,UA
-UKDE,Zaporizhzhia International Airport,UA
-UKDR,Kryvyi Rih International Airport,UA
-UKFB,Sevastopol International Airport / Belbek Air Base,UA
-UKFF,Simferopol International Airport,UA
-UKFG,Gvardeyskoe Air Base,UA
-UKFI,Saky Air Base,UA
-UKFK,Kerch Airport,UA
-UKFV,Yevpatoriya Airport,UA
-UKFW,Zavodskoe Airfield,UA
-UKFY,Dzhankoy Airport,UA
-UKGW,Voroniv Airfield,UA
+UK59,Chuhuiv Air Base (Ukraine)
+UK61,Jagellon Airfield (Ukraine)
+UKBB,Boryspil International Airport (Ukraine)
+UKCC,Donetsk Sergei Prokofiev International Airport (Ukraine)
+UKCK,Kramatorsk Airport (Ukraine)
+UKCM,Mariupol International Airport (Ukraine)
+UKCS,Sievierodonetsk Airport (Ukraine)
+UKCW,Luhansk International Airport (Ukraine)
+UKDB,Berdyansk Airport (Ukraine)
+UKDD,Dnipro International Airport (Ukraine)
+UKDE,Zaporizhzhia International Airport (Ukraine)
+UKDR,Kryvyi Rih International Airport (Ukraine)
+UKFB,Sevastopol International Airport / Belbek Air Base (Ukraine)
+UKFF,Simferopol International Airport (Ukraine)
+UKFG,Gvardeyskoe Air Base (Ukraine)
+UKFI,Saky Air Base (Ukraine)
+UKFK,Kerch Airport (Ukraine)
+UKFV,Yevpatoriya Airport (Ukraine)
+UKFW,Zavodskoe Airfield (Ukraine)
+UKFY,Dzhankoy Airport (Ukraine)
+UKGW,Voroniv Airfield (Ukraine)
 UKH,Mukhaizna Airport (Oman)
-UKHD,Kharkiv North Airport,UA
-UKHH,Kharkiv International Airport,UA
-UKHP,Suprunovka Airport,UA
-UKHS,Sumy Airport,UA
-UKKE,Cherkasy International Airport,UA
-UKKG,Kirovograd Airport,UA
-UKKH,Chepelevka (Uzin) Air Base,UA
-UKKK,Ihor Sikorsky Kyiv International Airport (Zhuliany),UA
-UKKM,Hostomel Airport,UA
-UKKO,Ozerne Air Base,UA
-UKKT,Svyatoshyn Airport,UA
-UKKV,Zhytomyr Airport,UA
-UKLC,Lutsk Airport,UA
-UKLH,Khmelnytskyi Airport,UA
-UKLI,Ivano-Frankivsk International Airport,UA
-UKLL,Lviv International Airport,UA
-UKLN,Chernivtsi International Airport,UA
-UKLR,Rivne International Airport,UA
-UKLT,Ternopil International Airport,UA
-UKLU,Uzhhorod International Airport,UA
-UKNG,Gogoliv Airfield,UA
-UKOH,Kherson International Airport,UA
-UKOI,Izmail International Airport,UA
-UKON,Mykolaiv International Airport,UA
-UKOO,Odessa International Airport,UA
-UKOR,Kulbakyne Air Base,UA
-UKRR,Chernihiv Shestovytsia Airport,UA
-UKVN,Nalyvaikivka Airfield,UA
-UKWW,Vinnytsia/Gavyryshivka International Airport,UA
+UKHD,Kharkiv North Airport (Ukraine)
+UKHH,Kharkiv International Airport (Ukraine)
+UKHP,Suprunovka Airport (Ukraine)
+UKHS,Sumy Airport (Ukraine)
+UKKE,Cherkasy International Airport (Ukraine)
+UKKG,Kirovograd Airport (Ukraine)
+UKKH,Chepelevka (Uzin) Air Base (Ukraine)
+UKKK,Ihor Sikorsky Kyiv International Airport (Zhuliany) (Ukraine)
+UKKM,Hostomel Airport (Ukraine)
+UKKO,Ozerne Air Base (Ukraine)
+UKKT,Svyatoshyn Airport (Ukraine)
+UKKV,Zhytomyr Airport (Ukraine)
+UKLC,Lutsk Airport (Ukraine)
+UKLH,Khmelnytskyi Airport (Ukraine)
+UKLI,Ivano-Frankivsk International Airport (Ukraine)
+UKLL,Lviv International Airport (Ukraine)
+UKLN,Chernivtsi International Airport (Ukraine)
+UKLR,Rivne International Airport (Ukraine)
+UKLT,Ternopil International Airport (Ukraine)
+UKLU,Uzhhorod International Airport (Ukraine)
+UKNG,Gogoliv Airfield (Ukraine)
+UKOH,Kherson International Airport (Ukraine)
+UKOI,Izmail International Airport (Ukraine)
+UKON,Mykolaiv International Airport (Ukraine)
+UKOO,Odessa International Airport (Ukraine)
+UKOR,Kulbakyne Air Base (Ukraine)
+UKRR,Chernihiv Shestovytsia Airport (Ukraine)
+UKVN,Nalyvaikivka Airfield (Ukraine)
+UKWW,Vinnytsia/Gavyryshivka International Airport (Ukraine)
 ULAA,Talagi Airport (Russia)
 ULAE,Mezen Airport (Russia)
 ULAH,Vaskovo Airport (Russia)
@@ -63727,7 +63727,7 @@ US-2174,Pollyet Airport (USA)
 US-2175,Galloway Airport (USA)
 US-2176,Red Hill Landing Strip (USA)
 US-2177,Brown Landing Strip (USA)
-US-2178,AZ Landing Strip (USA)
+US-2178 (Azerbaijan) Landing Strip (USA)
 US-2179,Tyee Hydro Facility Airport (USA)
 US-2180,Guadalupe Intermediate Field (USA)
 US-2181,Delaware River Ranch Airport (USA)
@@ -69517,7 +69517,7 @@ UZ-0153,Suh airport,UZ
 UZ-UT73,Maymanak Airport,UZ
 UZ-UT77,Kungirot Airport,UZ
 UZM,Hope Bay Aerodrome (Canada)
-UZR,Urzhar Airport,KZ
+UZR,Urzhar Airport (Kazakhstan)
 VA-0001,Vatican City Heliport,VA
 VA00,Brook Hill Farm Airport (USA)
 VA01,Marty 1 Heliport (USA)
