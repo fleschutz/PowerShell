@@ -67,6 +67,7 @@ function ListSpecialFolders {
 				TryFolder "$_" "$path"
 			}
 		}
+		TryFolder "CrashDumps"        "$HOME\AppData\Local\CrashDumps"
 		TryFolder "Repositories"      "$HOME\source\repos"
 		TryFolder "Scripts"           "$PSScriptRoot"
 		TryFolder "SSH keys"          "$HOME\.ssh"
