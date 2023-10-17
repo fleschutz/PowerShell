@@ -29,20 +29,20 @@ try {
 				$reply = "✅ Battery charging... ($percent%)"
 			}
 		} else { # must be offline
-			if (($remaining -eq 0) -and ($percent -gt 90)) {
+			if (($remaining -eq 0) -and ($percent -ge 60)) {
 				$reply = "✅ Battery $percent% full"
 			} elseif ($remaining -eq 0) {
 				$reply = "✅ Battery at $percent%"
 			} elseif ($remaining -le 5) {
-				$reply = "⚠️ Battery at $percent% · ONLY $remaining MIN remaining"
+				$reply = "⚠️ Battery at $percent% · ONLY $($remaining)min remaining"
 			} elseif ($remaining -le 30) {
-				$reply = "⚠️ Battery at $percent% · only $remaining min remaining"
+				$reply = "⚠️ Battery at $percent% · only $($remaining)min remaining"
 			} elseif ($percent -lt 10) {
-				$reply = "⚠️ Battery at $percent% · $remaining min remaining"
-			} elseif ($percent -ge 80) {
-				$reply = "✅ Battery $percent% full · $remaining min remaining"
+				$reply = "⚠️ Battery at $percent% · $($remaining)min remaining"
+			} elseif ($percent -ge 60) {
+				$reply = "✅ Battery $percent% full · $($remaining)min remaining"
 			} else {
-				$reply = "✅ Battery at $percent% · $remaining min remaining"
+				$reply = "✅ Battery at $percent% · $($remaining)min remaining"
 			}
 		}
 		$powerScheme = (powercfg /getactivescheme)
