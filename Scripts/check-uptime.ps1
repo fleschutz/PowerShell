@@ -12,35 +12,29 @@
 	Author: Markus Fleschutz | License: CC0
 #>
 
+function TimeSpan2String([TimeSpan]$uptime)
+{
+	[int]$days = $uptime.Days
+	[int]$hours = $days * 24 + $uptime.Hours
+	if ($days -gt 2) {
+		return "$days days"
+	} elseif ($hours -gt 1) {
+		return "$hours hours"
+	} else {
+		return "$($uptime.Minutes)min"
+	}
+}
+
 try {
 	if ($IsLinux) {
 		$uptime = (Get-Uptime)
+		Write-Host "✅ Up for $(TimeSpan2String $uptime)"
 	} else {
+		[system.threading.thread]::currentthread.currentculture = [system.globalization.cultureinfo]"en-US"
 		$lastBootTime = (Get-CimInstance Win32_OperatingSystem).LastBootUpTime 
 		$uptime = New-TimeSpan -Start $lastBootTime -End (Get-Date)
+		Write-Host "✅ Up for $(TimeSpan2String $uptime) since $($lastBootTime.ToShortDateString())"
 	}
-	$reply = "✅ Up for "
-	$days = $uptime.Days
-	if ($days -eq "1") {
-		$reply += "1 day, "
-	} elseif ($days -ne "0") {
-		$reply += "$days days, "
-	}
-
-	$hours = $uptime.Hours
-	if ($hours -eq "1") {
-		$reply += "1 hour, "
-	} elseif ($hours -ne "0") {
-		$reply += "$hours hours, "
-	}
-
-	$minutes = $uptime.Minutes 
-	if ($minutes -eq "1") {
-		$reply += "1 minute"
-	} else {
-		$reply += "$minutes minutes"
-	}
-	Write-Host $reply
 	exit 0 # success
 } catch {
 	"⚠️ Error in line $($_.InvocationInfo.ScriptLineNumber): $($Error[0])"
