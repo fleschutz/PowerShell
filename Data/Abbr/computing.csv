@@ -571,10 +571,7 @@ CMOS,Complementary Metal–Oxide–Semiconductor
 CMOx,conductive metal-oxide
 CMR,customer-managed relationship
 CMRP,Capacitated Material Requirements Planning
-CMS,Centers for Medicare & Medicaid Services
-CMS,Cisco Meeting Server
-CMS,content management system
-CMS,Conversational Monitor System
+CMS,"Content Management System, Cisco Meeting Server, Conversational Monitor System"
 CMTS,cable modem termination system
 CMYK,"cyan, magenta, yellow, key"
 CNA,converged network adapter
@@ -658,15 +655,8 @@ CSMA,Carrier Sense Multiple Access
 CSO,Chief Security Officer
 CSO,Chief Strategy Officer
 CSP,Commerce Service Provider
-CSR,Certificate Signing Request
-CSR,Carrier Sensitive Routing
-CSR,corporate social responsibility
-CSS,Cascading Style Sheets
-CSS,Content Scrambling System
-CSS,customer self-service
-CSS,customer service and support
-CSS1,"Cascading Style Sheet, level 1"
-CSU/DSU,Channel Service Unit/Data Service Unit
+CSR,"Certificate Signing Request, Carrier Sensitive Routing, corporate social responsibility"
+CSS,"Cascading Style Sheets, Content Scrambling System, customer self-service, customer service and support"
 CSV,Cluster Shared Volumes
 CSV,Comma Separated Values (a file format)
 CTC,click-to-talk
@@ -1079,6 +1069,7 @@ EVM,Earned Value Management
 EWS,Exchange Web Services
 EWSD,Electronic Worldwide Switch Digital
 ExBPA,Exchange Best Practices Analyzer
+EXIF,Exchangeable Image File Format
 ExRCA,Exchange Remote Connectivity Analyzer
 EZ/EC,Empowerment Zone/Enterprise Community
 FA,Flexible Automation
