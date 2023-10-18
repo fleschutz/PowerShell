@@ -37,7 +37,7 @@
 
 <details><summary>How to install PowerShell on Windows?</summary>
 
-**Good news:** it's preinstalled, **but** the script execution policy is *restricted* (forbidden) by default! To change this: open the *Windows PowerShell (Administrator)* console and enter:
+**Good news:** it's preinstalled, **but** the script execution policy is *restricted* (forbidden) by default! To change this: open the *Windows PowerShell (Admin)* console and enter:
 ```
 > Set-ExecutionPolicy RemoteSigned -Scope CurrentUser
 ```
