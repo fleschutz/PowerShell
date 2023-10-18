@@ -7,7 +7,7 @@
 	Specifies the abbreviation to query
 .EXAMPLE
 	PS> ./what-is VTOL
-	💡 VTOL in aviation refers to: Vertical Take-Off and Landing
+	💡 VTOL in aviation refers to Vertical Take-Off and Landing
 .LINK
 	https://github.com/fleschutz/PowerShell
 .NOTES
@@ -25,7 +25,7 @@ try {
 		foreach($row in $table) {
 			if ($row.ABBR -ne $abbr) { continue }
 			$basename = (Get-Item "$file").Basename -Replace "_"," "
-			"💡 $($row.ABBR) in $basename refers to: $($row.MEANING)"
+			"💡 $($row.ABBR) in $basename refers to $($row.MEANING)"
 		}
 	}
 	if ($basename -eq "") { "🤷‍ Sorry, no entry '$abbr' in my database (located at .../Data/Abbr/)." }
