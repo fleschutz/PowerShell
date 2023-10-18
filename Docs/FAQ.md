@@ -39,7 +39,7 @@
 
 **Good news:** it's preinstalled, **but** the script execution policy is *restricted* (forbidden) by default! To change this: open the *Windows PowerShell (Administrator)* console and enter:
 ```
- PS> Set-ExecutionPolicy RemoteSigned -Scope CurrentUser
+> Set-ExecutionPolicy RemoteSigned -Scope CurrentUser
 ```
 **NOTE:** the group policy object (GPO) settings of your organization might disallow changes. In that case contact your system administrator for help.
 </details>
