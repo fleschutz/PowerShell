@@ -248,11 +248,12 @@ Mega Collection of PowerShell Scripts
 | [fetch-repo.ps1](Scripts/fetch-repo.ps1)             | Fetches updates for a Git repository. [Read more...](Docs/fetch-repo.md)                          |
 | [fetch-repos.ps1](Scripts/fetch-repos.ps1)           | Fetches updates for all Git repositories in a folder. [Read more...](Docs/fetch-repos.md)         |
 | [list-branches.ps1](Scripts/list-branches.ps1)       | Lists all branches in a Git repository. [Read more...](Docs/list-branches.md)                     |
+| [list-commit-stats.ps1](Scripts/list-commit-stats.ps1) | Lists a Git commit statistic. [Read more...](Docs/list-commit-stats.md)                         |
 | [list-commits.ps1](Scripts/list-commits.ps1)         | Lists all commits in a Git repository. [Read more...](Docs/list-commits.md)                       |
 | [list-latest-tag.ps1](Scripts/list-latest-tag.ps1)   | Lists the latest tag on the current branch in a Git repository. [Read more...](Docs/list-latest-tag.md) |
 | [list-latest-tags.ps1](Scripts/list-latest-tags.ps1) | Lists the latests tags in all Git repositories under a directory. [Read more...](Docs/list-latest-tags.md) |
-| [list-repos.ps1](Scripts/list-repos.ps1)             | Lists the Git repositories in a folder. [Read more...](Docs/list-repos.md)                        |
-| [list-submodules.ps1](Scripts/list-submodules.ps1)   | Lists the submodules in a Git repository. [Read more...](Docs/list-submodules.md)                 |
+| [list-repos.ps1](Scripts/list-repos.ps1)             | Lists all Git repositories in a folder. [Read more...](Docs/list-repos.md)                        |
+| [list-submodules.ps1](Scripts/list-submodules.ps1)   | Lists all submodules in a Git repository. [Read more...](Docs/list-submodules.md)                 |
 | [list-tags.ps1](Scripts/list-tags.ps1)               | Lists all tags in a Git repository. [Read more...](Docs/list-tags.md)                             |
 | [new-branch.ps1](Scripts/new-branch.ps1)             | Creates a new branch in a Git repository. [Read more...](Docs/new-branch.md)                      |
 | [new-tag.ps1](Scripts/new-tag.ps1)                   | Creates a new tag in a Git repository. [Read more...](Docs/new-tag.md)                            |
@@ -262,6 +263,7 @@ Mega Collection of PowerShell Scripts
 | [remove-tag.ps1](Scripts/remove-tag.ps1)             | Removes a tag in a Git repository. [Read more...](Docs/remove-tag.md)                             |
 | [switch-branch.ps1](Scripts/switch-branch.ps1)       | Switches the branch in a Git repository. [Read more...](Docs/switch-branch.md)                    |
 | [sync-repo.ps1](Scripts/sync-repo.ps1)               | Synchronizes a Git repository by pull & push. [Read more...](Docs/sync-repo.md)                   |
+| [write-changelog.ps1](Scripts/write-changelog.ps1)   | Writes a changelog from Git commits. [Read more...](Docs/write-changelog.md)                      |
 
 🔎 Scripts for PowerShell 
 ------------------------
