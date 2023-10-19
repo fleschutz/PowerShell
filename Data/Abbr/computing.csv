@@ -1161,8 +1161,12 @@ FORTRAN,The IBM Mathematical FORmula TRANslating System (a programming language)
 FOSS,Free and Open-Source Software
 FOV,Field Of View
 FP&A,financial planning and analysis
-FP,fat provisioning
-FP,Finite Planning
+FP,"Fat Provisioning, Finite Planning"
+FP4,Floating Point 4-bit datatype
+FP8,Floating Point 8-bit datatype
+FP16,Floating Point 16-bit datatype
+FP32,Floating Point 32-bit datatype
+FP64,Floating Point 64-bit datatype
 FPCA,Foreign Corrupt Practices Act
 FPDS,Federal Procurement Data System
 FPGA,Field-Programmable Gate Array
