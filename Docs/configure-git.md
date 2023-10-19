@@ -1,14 +1,14 @@
 *configure-git.ps1*
 ================
 
-This PowerShell script configures the user settings for Git.
+This PowerShell script configures the Git user settings.
 
 Parameters
 ----------
 ```powershell
-PS> ./configure-git.ps1 [[-FullName] <String>] [[-EmailAddress] <String>] [[-FavoriteEditor] <String>] [<CommonParameters>]
+PS> ./configure-git.ps1 [[-fullName] <String>] [[-emailAddress] <String>] [[-favoriteEditor] <String>] [<CommonParameters>]
 
--FullName <String>
+-fullName <String>
     Specifies the user's full name
     
     Required?                    false
@@ -17,7 +17,7 @@ PS> ./configure-git.ps1 [[-FullName] <String>] [[-EmailAddress] <String>] [[-Fav
     Accept pipeline input?       false
     Accept wildcard characters?  false
 
--EmailAddress <String>
+-emailAddress <String>
     Specifies the user's email address
     
     Required?                    false
@@ -26,7 +26,7 @@ PS> ./configure-git.ps1 [[-FullName] <String>] [[-EmailAddress] <String>] [[-Fav
     Accept pipeline input?       false
     Accept wildcard characters?  false
 
--FavoriteEditor <String>
+-favoriteEditor <String>
     Specifies the user's favorite text editor
     
     Required?                    false
@@ -43,7 +43,13 @@ PS> ./configure-git.ps1 [[-FullName] <String>] [[-EmailAddress] <String>] [[-Fav
 Example
 -------
 ```powershell
-PS> ./configure-git.ps1
+PS> ./configure-git.ps1 "Joe Doe" joe@doe.com vim
+⏳ (1/6) Searching for Git executable...  git version 2.42.0.windows.1
+⏳ (2/6) Query user settings...
+⏳ (3/6) Saving basic settings (autocrlf,symlinks,longpaths,etc.)...
+⏳ (4/6) Saving user settings (name,email,editor)...
+⏳ (5/6) Saving user shortcuts ('git br', 'git ls', 'git st', etc.)...
+⏳ (6/6) Listing your current settings...
 
 ```
 
@@ -62,70 +68,75 @@ Script Content
 .SYNOPSIS
 	Configures Git 
 .DESCRIPTION
-	This PowerShell script configures the user settings for Git.
-.PARAMETER FullName
+	This PowerShell script configures the Git user settings.
+.PARAMETER fullName
 	Specifies the user's full name
-.PARAMETER EmailAddress
+.PARAMETER emailAddress
 	Specifies the user's email address
-.PARAMETER FavoriteEditor
+.PARAMETER favoriteEditor
 	Specifies the user's favorite text editor
 .EXAMPLE
-	PS> ./configure-git.ps1
+	PS> ./configure-git.ps1 "Joe Doe" joe@doe.com vim
+	⏳ (1/6) Searching for Git executable...  git version 2.42.0.windows.1
+	⏳ (2/6) Query user settings...
+	⏳ (3/6) Saving basic settings (autocrlf,symlinks,longpaths,etc.)...
+	⏳ (4/6) Saving user settings (name,email,editor)...
+	⏳ (5/6) Saving user shortcuts ('git br', 'git ls', 'git st', etc.)...
+	⏳ (6/6) Listing your current settings...
 .LINK
 	https://github.com/fleschutz/PowerShell
 .NOTES
 	Author: Markus Fleschutz | License: CC0
 #>
 
-param([string]$FullName = "", [string]$EmailAddress = "", [string]$FavoriteEditor = "")
+param([string]$fullName = "", [string]$emailAddress = "", [string]$favoriteEditor = "")
 
 try {
-	$StopWatch = [system.diagnostics.stopwatch]::startNew()
-		
 	Write-Host "⏳ (1/6) Searching for Git executable...  " -noNewline
 	& git --version
 	if ($lastExitCode -ne "0") { throw "Can't execute 'git' - make sure Git is installed and available" }
 
-	"⏳ (2/6) Asking for details..."
-	if ($FullName -eq "") { $FullName = read-host "Enter your full name" }
-	if ($EmailAddress -eq "") { $EmailAddress = read-host "Enter your e-mail address"}
-	if ($FavoriteEditor -eq "") { $FavoriteEditor = read-host "Enter your favorite text editor (atom,emacs,nano,subl,vi,vim,...)" }
+	"⏳ (2/6) Query user settings..."
+	if ($fullName -eq "") { $fullName = Read-Host "Enter your full name" }
+	if ($emailAddress -eq "") { $emailAddress = Read-Host "Enter your e-mail address"}
+	if ($favoriteEditor -eq "") { $favoriteEditor = Read-Host "Enter your favorite text editor (atom,code,emacs,nano,notepad,subl,vi,vim,...)" }
+	$stopWatch = [system.diagnostics.stopwatch]::startNew()
 
 	"⏳ (3/6) Saving basic settings (autocrlf,symlinks,longpaths,etc.)..."
 	& git config --global core.autocrlf false          # don't change newlines
 	& git config --global core.symlinks true           # enable support for symbolic link files
 	& git config --global core.longpaths true          # enable support for long file paths
 	& git config --global init.defaultBranch main      # set the default branch name to 'main'
-	& git config --global merge.renamelimit 99999
+	& git config --global merge.renamelimit 99999      # raise the rename limit
 	& git config --global pull.rebase false
 	& git config --global fetch.parallel 0             # enable parallel fetching to improve the speed
 	if ($lastExitCode -ne "0") { throw "'git config' failed with exit code $lastExitCode" }
 
-	"⏳ (4/6) Saving personal settings (name,email,editor)..."
-	& git config --global user.name $FullName
-	& git config --global user.email $EmailAddress
-	& git config --global core.editor $FavoriteEditor
+	"⏳ (4/6) Saving user settings (name,email,editor)..."
+	& git config --global user.name $fullName
+	& git config --global user.email $emailAddress
+	& git config --global core.editor $favoriteEditor
 	if ($lastExitCode -ne "0") { throw "'git config' failed with exit code $lastExitCode" }
 
-	"⏳ (5/6) Saving personal shortcuts (git co, git br, etc.)..."
-	& git config --global alias.co "checkout"
+	"⏳ (5/6) Saving user shortcuts ('git br', 'git ls', 'git st', etc.)..."
 	& git config --global alias.br "branch"
+	& git config --global alias.chp "cherry-pick --no-commit"
 	& git config --global alias.ci "commit"
-	& git config --global alias.st "status"
+	& git config --global alias.co "checkout"
+	& git config --global alias.ls "log -n20 --pretty=format:'%Cred%h%Creset%C(yellow)%d%Creset %s %C(bold blue)by %an%Creset %C(green)%cr%Creset' --abbrev-commit"
+	& git config --global alias.mrg "merge --no-commit --no-ff"
 	& git config --global alias.pl "pull --recurse-submodules"
 	& git config --global alias.ps "push"
-	& git config --global alias.mrg "merge --no-commit --no-ff"
-	& git config --global alias.chp "cherry-pick --no-commit"
-	& git config --global alias.ls "log -n20 --pretty=format:'%Cred%h%Creset%C(yellow)%d%Creset %s %C(bold blue)by %an%Creset %C(green)%cr%Creset' --abbrev-commit"
 	& git config --global alias.smu "submodule update --init"
+	& git config --global alias.st "status"
 	if ($lastExitCode -ne "0") { throw "'git config' failed" }
 
 	"⏳ (6/6) Listing your current settings..."
 	& git config --list
 	if ($lastExitCode -ne "0") { throw "'git config --list' failed with exit code $lastExitCode" }
 
-	[int]$Elapsed = $StopWatch.Elapsed.TotalSeconds
-	"✔️ configured Git in $Elapsed sec"
+	[int]$elapsed = $stopWatch.Elapsed.TotalSeconds
+	"✔️ Saved your Git configuration in $elapsed sec"
 	exit 0 # success
 } catch {
 	"⚠️ Error in line $($_.InvocationInfo.ScriptLineNumber)): $($Error[0])"
@@ -133,4 +144,4 @@ try {
 }
 ```
 
-*(generated by convert-ps2md.ps1 using the comment-based help of configure-git.ps1 as of 09/20/2023 17:04:39)*
+*(generated by convert-ps2md.ps1 using the comment-based help of configure-git.ps1 as of 10/19/2023 08:11:37)*
