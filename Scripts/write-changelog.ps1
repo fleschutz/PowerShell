@@ -1,9 +1,11 @@
 ﻿<#
 .SYNOPSIS
-        Writes a changelog
+        Writes a changelog from Git commits
 .DESCRIPTION
-        This PowerShell script writes an automated changelog to the console in Markdown format by using the Git commits.
-	NOTE: You may also redirect the output into a file for later use.
+        This PowerShell script writes an automated changelog in Markdown format to the console by using the Git commits only.
+	NOTE: For proper sorting the Git commits should start with verbs such as 'Add', 'Fix', 'Update', etc. You may also redirect the output into a file for later use.
+.PARAMETER RepoDir
+	Specifies the path to the local Git repository (default is current working dir)
 .EXAMPLE
         PS> ./write-changelog.ps1
 	  
@@ -37,37 +39,24 @@ try {
 	$commits = (git -C "$RepoDir" log --boundary --pretty=oneline --pretty=format:%s | sort -u)
 
 	Write-Progress "⏳ (5/6) Sorting the Git commit messages..."
-	$features = @()
+	$new = @()
 	$fixes = @()
 	$updates = @()
 	$various = @()
 	foreach($commit in $commits) {
- 		if ($commit -like "New*") {
- 			$features += $commit
-		} elseif ($commit -like "Add*") {
- 			$features += $commit
-		} elseif ($commit -like "Create*") {
- 			$features += $commit
-		} elseif ($commit -like "Fix*") {
- 			$fixes += $commit
- 		} elseif ($commit -like "Hotfix*") {
- 			$fixes += $commit
- 		} elseif ($commit -like "Bugfix*") {
- 			$fixes += $commit
-		} elseif ($commit -like "Update*") {
- 			$updates += $commit
-		} elseif ($commit -like "Updating*") {
- 			$updates += $commit
-		} elseif ($commit -like "Updaate*") {
- 			$updates += $commit
-		} elseif ($commit -like "Adapt*") {
- 			$updates += $commit
-		} elseif ($commit -like "Improve*") {
- 			$updates += $commit
-		} elseif ($commit -like "Change*") {
- 			$updates += $commit
-		} elseif ($commit -like "Changing*") {
- 			$updates += $commit
+ 		if ($commit -like "New*") {		$new += $commit
+		} elseif ($commit -like "Add*") {	$new += $commit
+		} elseif ($commit -like "Create*") {	$new += $commit
+		} elseif ($commit -like "Fix*") {	$fixes += $commit
+ 		} elseif ($commit -like "Hotfix*") {	$fixes += $commit
+ 		} elseif ($commit -like "Bugfix*") {	$fixes += $commit
+		} elseif ($commit -like "Update*") {	$updates += $commit
+		} elseif ($commit -like "Updating*") {	$updates += $commit
+		} elseif ($commit -like "Updaate*") {	$updates += $commit
+		} elseif ($commit -like "Adapt*") {	$updates += $commit
+		} elseif ($commit -like "Improve*") {	$updates += $commit
+		} elseif ($commit -like "Change*") {	$updates += $commit
+		} elseif ($commit -like "Changing*") {	$updates += $commit
  		} else {
 			$various += $commit
 		}
@@ -83,7 +72,7 @@ try {
 	Write-Output " "
 	Write-Output "🚀 New Features"
 	Write-Output "---------------"
- 	foreach($c in $features) {
+ 	foreach($c in $new) {
  		Write-Output "* $c"
 	}
 	Write-Output " "
