@@ -21,18 +21,21 @@ param([string]$path = "$PWD")
 function BuildInDir([string]$path) {
 	$dirName = (Get-Item "$path").Name
 	if (Test-Path "$path/CMakeLists.txt" -pathType leaf) {
-		"⏳ Building 📂$dirName by using CMake into 📂$dirName/_My_Build..."
+		"⏳ (1/4) Building 📂$dirName by using CMake into 📂$dirName/_My_Build..."
 		if (-not(Test-Path "$path/_My_Build/" -pathType container)) { 
 			& mkdir "$path/_My_Build/"
 		}
 		Set-Location "$path/_My_Build/"
 
+		"⏳ (2/4) Executing 'cmake' to generate the Makefile..."
 		& cmake ..
 		if ($lastExitCode -ne "0") { throw "Executing 'cmake ..' has failed" }
 
+		"⏳ (3/4) Executing 'make -j4' to compile and link..."
 		& make -j4
 		if ($lastExitCode -ne "0") { throw "Executing 'make -j4' has failed" }
 
+		"⏳ (4/4) Executing 'make test' to perform tests (optional)..."
 		& make test
 		if ($lastExitCode -ne "0") { throw "Executing 'make test' has failed" }
 
