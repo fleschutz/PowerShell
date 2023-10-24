@@ -1,31 +1,35 @@
 ﻿<#
 .SYNOPSIS
-	Lists empty files within a directory tree
+	Lists all empty files in a directory tree
 .DESCRIPTION
-	This PowerShell script scans and lists all empty files within the given directory tree.
-.PARAMETER DirTree
-	Specifies the path to the directory tree
+	This PowerShell script scans a directory tree and lists all empty files.
+.PARAMETER path
+	Specifies the path to the directory tree (default is current working dir)
 .EXAMPLE
-	PS> ./list-empty-files.ps1 C:\
+	PS> ./list-empty-files.ps1 C:\Windows
+	...
+	✔️ Found 6 empty files within C:\Windows in 54 sec
 .LINK
 	https://github.com/fleschutz/PowerShell
 .NOTES
 	Author: Markus Fleschutz | License: CC0
 #>
 
-param([string]$DirTree = "")
+param([string]$path = "$PWD")
 
 try {
-	if ($DirTree -eq "" ) { $DirTree = read-host "Enter the path to the directory tree" }
+	$stopWatch = [system.diagnostics.stopwatch]::startNew()
 
-	[int]$Count = 0
-	write-progress "Listing empty files in $DirTree ..."
-	get-childItem $DirTree -attributes !Directory -recurse | where {$_.Length -eq 0} | foreach-object {
-		write-output $_.FullName
-		$Count++
+	$path = Resolve-Path "$path"
+	Write-Progress "Scanning $path for empty files..."
+	[int]$count = 0
+	Get-ChildItem $path -attributes !Directory -recurse | where {$_.Length -eq 0} | Foreach-Object {
+		"📄$($_.FullName)"
+		$count++
 	}
-
-	"✔️ found $Count empty file(s)" 
+	Write-Progress -completed " "
+	[int]$elapsed = $stopWatch.Elapsed.TotalSeconds
+	"✔️ Found $count empty files within $path in $elapsed sec" 
 	exit 0 # success
 } catch {
 	"⚠️ Error in line $($_.InvocationInfo.ScriptLineNumber): $($Error[0])"

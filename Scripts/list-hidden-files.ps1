@@ -24,7 +24,7 @@ try {
 	Write-Progress "Scanning $path for hidden files..."
 	[int]$count = 0
 	Get-ChildItem "$path" -attributes Hidden -recurse | Foreach-Object {
-		"📄 $($_.FullName)"
+		"📄$($_.FullName)"
 		$count++
 	}
 	Write-Progress -completed " "
