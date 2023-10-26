@@ -11,6 +11,7 @@ ACD,Amplitude Calibration Device (ALMA)
 ACM,"Asteroids, Comets, and Meteors"
 ACe,Astaldi Cimolai EIE (Consortium)
 ADA,ALMA Department of Administration
+ADCS,Attitude Determination and Control
 ADO,ALMA Director’s Office
 ADS,International Italian optics company working on the DSM for the VLT
 AEM,ALMA construction consortium
@@ -23,6 +24,7 @@ AIT,"Assembly, Integration and Test"
 AIV,"Assembly, Integration and Verification"
 AJ,The Astronomical Journal
 ALMA,Atacama Large Millimeter/submillimeter Array
+AM0,Air Mass Zero (Space Vacuum)
 AMBER,"Astronomical Multi-BEam combineR (VLTI Instrument)"
 AN,"Journal, Astronomische Nachrichten"
 Antu,VLT Unit Telescope 1
@@ -38,6 +40,7 @@ ARAL,Alignment facility for the VLTI
 ARC,"ALMA Regional Centre, or Ames Research Center"
 ArTeMiS,Bolometric camera for APEX
 ASAC,ALMA Science Advisory Committee
+ASAL,Agence Spatiale Algerienne
 ASIAA,"East Asia FEIC (ALMA)"
 ASIC,Application Specific Integrated Circuit
 ASSIST,Adaptive Secondary Setup and Instrument Simulator (AOF test bench)
@@ -203,6 +206,7 @@ IRO,International Relations Office
 ISAAC,Infrared Spectrometer And Array Camera (VLT)
 ISERD,Israeli inter-ministerial agency for R&D cooperation with Europe
 ISM,International Staff Member
+ISRO,Indian Space Research Organisation
 ISS,International Space Station
 IT,Information Technology
 ITAR,International Traffic in Arms Regulations
@@ -298,6 +302,7 @@ NTT,New Technology Telescope
 NUVA,Network for UltraViolet Astrophysics
 OAA,Arcetri Astrophysical Observatory
 OBAMA,Optical Bidule for Aberration Measurement on the ATs
+OBC,On-Board Computer
 OCA-NICE,Cote d’Azur Observatory (Observatoire de la Cote d’Azur)
 ODG,Office of the Director General
 OECD,Organisation for Economic Co-operation and Development
@@ -335,6 +340,7 @@ PMD,Project Management Department
 PMPD,Performance Management and Professional Development
 PRIMA,Phase-Referenced Imaging and Micro-arcsecond Astrometry facility (VLTI)
 PSF,Point Spread Function
+PSLV,Polar Satellite Launch Vehicle
 PTP,Precision Time Protocol
 Q,Quarter
 QSO,"Quasi Stellar Object, quasar"
@@ -380,6 +386,7 @@ SPT,South Pole Telescope
 SSDF,Science Support Discretionary Fund
 SSED,Software System Engineering Department
 SSWG,Science Strategy Working Group
+SSS,Surrey Space Centre
 ST-ECF,Space Telescope European Coordination Facility
 STC,Scientific Technical Committee
 STFC,Science and Technology Facilities Council (UK)
@@ -398,7 +405,7 @@ ToO,Target of Opportunity
 TRAPPIST,TRAnsiting Planets and PlanetesImals Small Telescope
 TRR,Test Readiness Review
 UC,Users Committee
-UK ATC,UK Astronomy Technology Centre
+UKSA,United Kingdom Space Agency
 Ultracam,High-speed camera (VLT)
 UltraVISTA,Ultra-deep near-infrared survey in the COSMOS field
 UNCOPUOS,United Nations Committee for the Peaceful Uses of Outer Space
