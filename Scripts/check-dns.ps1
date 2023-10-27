@@ -13,7 +13,7 @@
 #>
  
 try {
-	Write-Progress "⏳ Measuring DNS resolution..."
+	Write-Progress "Measuring DNS resolution..."
 	$table = Import-CSV "$PSScriptRoot/../Data/popular-domains.csv"
 	$numRows = $table.Length
 

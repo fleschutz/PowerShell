@@ -23,22 +23,22 @@ param([string]$RepoDir = "$PWD")
 try {
 	[system.threading.thread]::currentthread.currentculture = [system.globalization.cultureinfo]"en-US"
 
-	Write-Progress "⏳ (1/6) Searching for Git executable..."
+	Write-Progress "(1/6) Searching for Git executable..."
         $null = (git --version)
         if ($lastExitCode -ne "0") { throw "Can't execute 'git' - make sure Git is installed and available" }
 
-	Write-Progress "⏳ (2/6) Checking local repository..."
+	Write-Progress "(2/6) Checking local repository..."
         if (!(Test-Path "$RepoDir" -pathType container)) { throw "Can't access folder: $RepoDir" }
 	$RepoDirName = (Get-Item "$RepoDir").Name
 
-	Write-Progress "⏳ (3/6) Fetching the latest commits..."
+	Write-Progress "(3/6) Fetching the latest commits..."
         & git -C "$RepoDir" fetch --all --force --quiet
         if ($lastExitCode -ne "0") { throw "'git fetch --all' failed with exit code $lastExitCode" }
 
-	Write-Progress "⏳ (4/6) Listing all Git commit messages..."
+	Write-Progress "(4/6) Listing all Git commit messages..."
 	$commits = (git -C "$RepoDir" log --boundary --pretty=oneline --pretty=format:%s | sort -u)
 
-	Write-Progress "⏳ (5/6) Sorting the Git commit messages..."
+	Write-Progress "(5/6) Sorting the Git commit messages..."
 	$new = @()
 	$fixes = @()
 	$updates = @()
@@ -61,7 +61,7 @@ try {
 			$various += $commit
 		}
  	}
-	Write-Progress "⏳ (6/6) Listing all contributors..."
+	Write-Progress "(6/6) Listing all contributors..."
 	$contributors = (git -C "$RepoDir" log --format='%aN' | sort -u)
 	Write-Progress -completed " "
 

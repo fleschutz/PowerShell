@@ -32,10 +32,10 @@ function Bytes2String { param([int64]$bytes)
 }
 
 try {
-	Write-Progress "⏳ Querying drives..."
+	Write-Progress "Querying drives..."
 	$drives = Get-PSDrive -PSProvider FileSystem
 	$minLevel *= 1000 * 1000 * 1000
-	Write-Progress -completed "."
+	Write-Progress -completed " "
 	foreach($drive in $drives) {
 		$details = (Get-PSDrive $drive.Name)
 		if ($IsLinux) { $name = $drive.Name } else { $name = $drive.Name + ":" }

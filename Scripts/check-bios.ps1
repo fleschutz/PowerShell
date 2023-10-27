@@ -14,7 +14,7 @@
 
 try {
 	if ($IsLinux) {
-		Write-Progress "⏳ Querying BIOS details..."
+		Write-Progress "Querying BIOS details..."
 		$model = (sudo dmidecode -s system-product-name)
 		if ("$model" -ne "") {
 			$version = (sudo dmidecode -s bios-version)

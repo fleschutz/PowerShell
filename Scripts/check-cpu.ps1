@@ -44,7 +44,7 @@ function GetProcessorArchitecture {
 }
 
 try {
-	Write-Progress "⏳ Querying CPU status...     "
+	Write-Progress "Querying CPU status...     "
 	$status = "✅"
 	$celsius = GetProcessorTemperature
 	if ($celsius -eq 99999.9) {

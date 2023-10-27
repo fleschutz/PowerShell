@@ -19,7 +19,7 @@ param([string]$path = "")
 try {
 	if ($path -eq "" ) { $path = Read-Host "Enter the path to the directory tree" }
 
-	Write-Progress "⏳ Counting lines of code (LOC)..."
+	Write-Progress "Counting lines.."
 	$stopWatch = [system.diagnostics.stopwatch]::startNew()
 	$path = Resolve-Path "$path"
 

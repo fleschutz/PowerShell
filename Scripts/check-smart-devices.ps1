@@ -29,11 +29,11 @@ function Bytes2String { param([int64]$Bytes)
 }
 
 try {
-	Write-Progress "⏳ (1/3) Searching for smartmontools..."
+	Write-Progress "(1/3) Searching for smartmontools..."
 	$Result = (smartctl --version)
 	if ($lastExitCode -ne "0") { throw "Can't execute 'smartctl' - make sure smartmontools are installed" }
 
-	Write-Progress "⏳ (2/3) Scanning S.M.A.R.T devices..."
+	Write-Progress "(2/3) Scanning S.M.A.R.T devices..."
 	if ($IsLinux) {
 		$Devices = $(sudo smartctl --scan-open)
 	} else {
@@ -41,7 +41,7 @@ try {
 	}
 
 	foreach($Device in $Devices) {
-		Write-Progress "⏳ (3/3) Querying S.M.A.R.T devices..."
+		Write-Progress "(3/3) Querying S.M.A.R.T devices..."
 		$Array = $Device.split(" ")
 		$Device = $Array[0]
 		if ("$Device" -eq "#") {

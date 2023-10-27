@@ -81,7 +81,7 @@ function GetWindDir { param([string]$Text)
 }
 
 try {
-	Write-Progress "⏳ Loading weather data from http://wttr.in ..."
+	Write-Progress "Loading weather data from http://wttr.in ..."
 	$Weather = (Invoke-WebRequest -URI http://wttr.in/${Location}?format=j1 -userAgent "curl" -useBasicParsing).Content | ConvertFrom-Json
 	Write-Progress -completed "."
 	$Area = $Weather.nearest_area.areaName.value

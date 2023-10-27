@@ -14,10 +14,10 @@
 #>
 
 try {
-	Write-Progress "⏳ Reading Data/popular-dashboards.csv..."
+	Write-Progress "Reading Data/popular-dashboards.csv..."
 	$table = Import-CSV "$PSScriptRoot/../Data/popular-dashboards.csv"
 	$numRows = $table.Length
-	Write-Progress -completed "."
+	Write-Progress -completed " "
 	Write-Host "✅ Launching Web browser with 20 tabs showing: " -noNewline
 	foreach($row in $table) {
 		Write-Host "$($row.NAME), " -noNewline

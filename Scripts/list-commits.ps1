@@ -28,10 +28,10 @@ try {
 	$Null = (git --version)
 	if ($lastExitCode -ne "0") { throw "Can't execute 'git' - make sure Git is installed and available" }
 
-	Write-Progress "⏳ Fetching latest updates..."
+	Write-Progress "Fetching latest updates..."
 	& git -C "$RepoDir" fetch --all --quiet
 	if ($lastExitCode -ne "0") { throw "'git fetch' failed" }
-	Write-Progress -Completed " "
+	Write-Progress -Completed "Done."
 
 	if ($Format -eq "pretty") {
 		""
