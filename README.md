@@ -63,7 +63,7 @@ Mega Collection of PowerShell Scripts
 | [install-knot-resolver.ps1](Scripts/install-knot-resolver.ps1) | Installs the Knot Resolver (needs admin rights). [Read more...](Docs/install-knot-resolver.md)|
 | [install-ssh-client.ps1](Scripts/install-ssh-client.ps1) | Installs a SSH client (needs admin rights). [Read more...](Docs/install-ssh-client.md)        |
 | [install-ssh-server.ps1](Scripts/install-ssh-server.ps1) | Installs a SSH server (needs admin rights). [Read more...](Docs/install-ssh-server.md)        |
-| [install-signal-cli.ps1](Scripts/install-signal-cli.ps1) | Installs signal-cli from github.com/AsamK/signal-cli. [Read more...](Docs/install-signal-cli.md)|
+| [install-signal-cli.ps1](Scripts/install-signal-cli.ps1) | Installs the CLI edition of the Signal messenger. [Read more...](Docs/install-signal-cli.md)|
 | [install-updates.ps1](Scripts/install-updates.ps1)   | Installs updates (need admin rights). [Read more...](Docs/install-updates.md)                     |
 | [install-wsl.ps1](Scripts/install-wsl.ps1)           | Installs Windows Subsystem for Linux (WSL), needs admin rights. [Read more...](Docs/install-wsl.md)|
 | [list-apps.ps1](Scripts/list-apps.ps1)               | Lists the installed applications. [Read more...](Docs/list-installed-apps.md)                     |
