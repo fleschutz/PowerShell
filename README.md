@@ -54,7 +54,7 @@ Mega Collection of PowerShell Scripts
 | [check-health.ps1](Scripts/check-health.ps1)         | Checks the system health. [Read more...](Docs/check-health.md)                                    |
 | [check-ping.ps1](Scripts/check-ping.ps1)             | Checks the ping latency to the internet. [Read more...](Docs/check-ping.md)                       |
 | [check-swap-space.ps1](Scripts/check-swap-space.ps1) | Checks the swap space for free space left. [Read more...](Docs/check-swap-space.md)               |
-| [check-windows-system-files.ps1](Scripts/check-windows-system-files.ps1) | Checks the validity of the Windows system files (needs admin rights). [Read more...](Docs/check-windows-system-files.md) |
+| [check-windows-system-files.ps1](Scripts/check-windows-system-files.ps1) | Checks Windows system files (needs admin rights). [Read more...](Docs/check-windows-system-files.md) |
 | [enable-crash-dumps.ps1](Scripts/enable-crash-dumps.ps1) | Enables the writing of crash dumps. [Read more...](Docs/enable-crash-dumps.md)                |
 | [hibernate.ps1](Scripts/hibernate.ps1)               | Hibernates the local computer immediately. [Read more...](Docs/hibernate.md)                      |
 | [install-github-cli.ps1](Scripts/install-github-cli.ps1) | Installs GitHub CLI. [Read more...](Docs/install-github-cli.md)                               |
