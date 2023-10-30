@@ -1,7 +1,7 @@
 Mega Collection of PowerShell Scripts
 =====================================
 
-**It includes 500+ useful cross-platform PowerShell scripts located in the [📂Scripts](Scripts/) subfolder - for the command-line interface (CLI), for remote control via SSH, for automation (e.g. [AutoHotkey](https://www.autohotkey.com/) or [Jenkins](https://www.jenkins.io/)), for context menus, for voice commands (e.g. [talk2windows](https://github.com/fleschutz/talk2windows)), automatically on startup/login/logoff/daily/shutdown/etc., or simply to learn PowerShell.**
+**It includes 500+ useful cross-platform PowerShell scripts located in the [📂Scripts](Scripts/) subfolder - for the command-line, for remote control via SSH, for automation (e.g. [AutoHotkey](https://www.autohotkey.com/) or [Jenkins](https://www.jenkins.io/)), for context menus, for voice commands (e.g. [talk2windows](https://github.com/fleschutz/talk2windows)), automatically on startup/login/logoff/daily/shutdown/etc., or simply to learn PowerShell.**
 
 **[Download](https://github.com/fleschutz/PowerShell/releases) | [Table of Scripts](https://github.com/fleschutz/PowerShell/blob/master/Data/scripts.csv) | [FAQ](Docs/FAQ.md)** | **Note:** the scripts support Unicode - a modern console is recommended (e.g. *Windows Terminal*)
 
@@ -248,7 +248,7 @@ Mega Collection of PowerShell Scripts
 | [fetch-repo.ps1](Scripts/fetch-repo.ps1)             | Fetches updates for a Git repository. [Read more...](Docs/fetch-repo.md)                          |
 | [fetch-repos.ps1](Scripts/fetch-repos.ps1)           | Fetches updates for all Git repositories in a folder. [Read more...](Docs/fetch-repos.md)         |
 | [list-branches.ps1](Scripts/list-branches.ps1)       | Lists all branches in a Git repository. [Read more...](Docs/list-branches.md)                     |
-| [list-commit-stats.ps1](Scripts/list-commit-stats.ps1) | Lists a Git commit statistic. [Read more...](Docs/list-commit-stats.md)                         |
+| [list-commit-stats.ps1](Scripts/list-commit-stats.ps1) | Lists a Git commit statistics. [Read more...](Docs/list-commit-stats.md)                        |
 | [list-commits.ps1](Scripts/list-commits.ps1)         | Lists all commits in a Git repository. [Read more...](Docs/list-commits.md)                       |
 | [list-latest-tag.ps1](Scripts/list-latest-tag.ps1)   | Lists the latest tag on the current branch in a Git repository. [Read more...](Docs/list-latest-tag.md) |
 | [list-latest-tags.ps1](Scripts/list-latest-tags.ps1) | Lists the latests tags in all Git repositories under a directory. [Read more...](Docs/list-latest-tags.md) |
