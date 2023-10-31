@@ -1,4 +1,4 @@
-<#
+﻿<#
 .SYNOPSIS
 	Checks the given subnet mask for validity
 .DESCRIPTION

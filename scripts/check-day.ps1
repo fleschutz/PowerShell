@@ -1,4 +1,4 @@
-<#
+﻿<#
 .SYNOPSIS
 	Determines the current day 
 .DESCRIPTION

@@ -1,4 +1,4 @@
-<#
+﻿<#
 .SYNOPSIS
 	Gets the current month name
 .DESCRIPTION

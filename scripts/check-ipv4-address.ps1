@@ -1,4 +1,4 @@
-<#
+﻿<#
 .SYNOPSIS
 	Checks an IPv4 address for validity
 .DESCRIPTION
