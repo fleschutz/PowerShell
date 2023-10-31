@@ -1,4 +1,4 @@
-<#
+﻿<#
 .SYNOPSIS
 	Explains an abbreviation
 .DESCRIPTION

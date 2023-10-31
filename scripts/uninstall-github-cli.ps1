@@ -1,4 +1,4 @@
-<#
+﻿<#
 .SYNOPSIS
 	Uninstalls GitHub CLI
 .DESCRIPTION

@@ -1,4 +1,4 @@
-<#
+﻿<#
 .SYNOPSIS
 	Scans the network for open/closed ports
 .DESCRIPTION

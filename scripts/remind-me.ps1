@@ -1,4 +1,4 @@
-<#
+﻿<#
 .SYNOPSIS
 	Creates a scheduled task that will display a popup message
 .DESCRIPTION

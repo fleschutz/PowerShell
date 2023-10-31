@@ -1,4 +1,4 @@
-<#
+﻿<#
 .SYNOPSIS
 	Turn audio on
 .DESCRIPTION

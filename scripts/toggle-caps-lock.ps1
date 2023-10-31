@@ -1,4 +1,4 @@
-<#
+﻿<#
 .SYNOPSIS
 	Toggle Caps Lock
 .DESCRIPTION

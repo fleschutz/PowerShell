@@ -1,4 +1,4 @@
-<#
+﻿<#
 .SYNOPSIS
 	Sets the audio volume 
 .DESCRIPTION

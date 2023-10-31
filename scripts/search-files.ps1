@@ -1,4 +1,4 @@
-<#
+﻿<#
 .SYNOPSIS
 	Searches for a pattern in files
 .DESCRIPTION

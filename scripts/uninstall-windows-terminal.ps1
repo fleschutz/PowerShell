@@ -1,4 +1,4 @@
-<#
+﻿<#
 .SYNOPSIS
 	Uninstalls Windows Terminal
 .DESCRIPTION

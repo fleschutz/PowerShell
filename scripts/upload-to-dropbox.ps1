@@ -1,4 +1,4 @@
-<#
+﻿<#
 .SYNOPSIS
 	Uploads a file to Dropbox
 .DESCRIPTION

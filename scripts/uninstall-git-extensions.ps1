@@ -1,4 +1,4 @@
-<#
+﻿<#
 .SYNOPSIS
 	Uninstalls Git Extensions
 .DESCRIPTION

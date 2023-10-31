@@ -1,4 +1,4 @@
-<#
+﻿<#
 .SYNOPSIS
 	Uninstalls IrfanView
 .DESCRIPTION

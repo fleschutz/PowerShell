@@ -1,4 +1,4 @@
-<#
+﻿<#
 .SYNOPSIS
 	Uninstalls the Chrome browser
 .DESCRIPTION

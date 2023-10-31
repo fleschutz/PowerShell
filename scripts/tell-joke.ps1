@@ -1,4 +1,4 @@
-<#
+﻿<#
 .SYNOPSIS
 	Tells a random joke by text-to-speech
 .DESCRIPTION

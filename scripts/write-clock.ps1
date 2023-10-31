@@ -1,4 +1,4 @@
-<#
+﻿<#
 .SYNOPSIS
 	Writes an ASCII clock
 .DESCRIPTION

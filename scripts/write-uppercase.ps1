@@ -1,4 +1,4 @@
-<#
+﻿<#
 .SYNOPSIS
 	Writes text in uppercase letters
 .DESCRIPTION

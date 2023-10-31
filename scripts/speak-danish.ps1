@@ -1,4 +1,4 @@
-<#
+﻿<#
 .SYNOPSIS
 	Speaks text in Danish
 .DESCRIPTION

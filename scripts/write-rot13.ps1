@@ -1,4 +1,4 @@
-<#
+﻿<#
 .SYNOPSIS
 	Writes text encoded or decoded with ROT13
 .DESCRIPTION

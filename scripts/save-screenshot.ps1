@@ -1,4 +1,4 @@
-<#
+﻿<#
 .SYNOPSIS
 	Saves a single screenshot
 .DESCRIPTION

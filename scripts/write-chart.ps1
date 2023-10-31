@@ -1,4 +1,4 @@
-<#
+﻿<#
 .SYNOPSIS
 	Writes a chart
 .DESCRIPTION

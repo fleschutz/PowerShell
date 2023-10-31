@@ -1,4 +1,4 @@
-<#
+﻿<#
 .SYNOPSIS
 	Translates a text file into another language 
 .DESCRIPTION

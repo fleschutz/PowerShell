@@ -1,4 +1,4 @@
-<#
+﻿<#
 .SYNOPSIS
 	Windows defender in powershell
 .DESCRIPTION

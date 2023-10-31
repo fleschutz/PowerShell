@@ -1,4 +1,4 @@
-<#
+﻿<#
 .SYNOPSIS
         Writes a changelog from Git commits
 .DESCRIPTION

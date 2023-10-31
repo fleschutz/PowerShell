@@ -1,4 +1,4 @@
-<#
+﻿<#
 .SYNOPSIS
 	Search and replace a pattern in the given files by the replacement
 .DESCRIPTION

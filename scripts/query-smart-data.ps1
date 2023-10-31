@@ -1,4 +1,4 @@
-<#
+﻿<#
 .SYNOPSIS
 	Queries and saves the S.M.A.R.T. data of your HDD's/SSD's
 .DESCRIPTION

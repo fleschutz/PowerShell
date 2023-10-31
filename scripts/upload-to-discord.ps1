@@ -1,4 +1,4 @@
-function Upload-Discord {
+﻿function Upload-Discord {
 
 [CmdletBinding()]
 param (
