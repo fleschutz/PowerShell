@@ -1,4 +1,4 @@
-<#
+﻿<#
 .SYNOPSIS
 	Closes the OneCalendar app 
 .DESCRIPTION

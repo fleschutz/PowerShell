@@ -1,4 +1,4 @@
-<#
+﻿<#
 .SYNOPSIS
 	Connects to the VPN
 .DESCRIPTION

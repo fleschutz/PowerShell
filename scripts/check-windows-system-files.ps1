@@ -1,4 +1,4 @@
-<#
+﻿<#
 .SYNOPSIS
 	Checks the validity of the Windows system files (requires admin rights)
 .DESCRIPTION

@@ -1,4 +1,4 @@
-<#
+﻿<#
 .SYNOPSIS
 	Configures Git 
 .DESCRIPTION

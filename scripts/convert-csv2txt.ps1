@@ -1,4 +1,4 @@
-<#
+﻿<#
 .SYNOPSIS
 	Converts a .CSV file into a text file
 .DESCRIPTION

@@ -1,4 +1,4 @@
-<#
+﻿<#
 .SYNOPSIS
 	Clears the recycle bin folder
 .DESCRIPTION
