@@ -18,7 +18,7 @@ param([string]$abbr = "")
 
 try {
 	if ($abbr -eq "" ) { $abbr = Read-Host "Enter the abbreviation to query" }
-	$files = (Get-ChildItem "$PSScriptRoot/../Data/Abbr/*.csv")
+	$files = (Get-ChildItem "$PSScriptRoot/../Data/abbr/*.csv")
 	$basename = ""
 	foreach($file in $files) {
 		$table = Import-CSV "$file"
