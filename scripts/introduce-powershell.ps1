@@ -1,4 +1,4 @@
-<#
+﻿<#
 .SYNOPSIS
 	Introducing PowerShell
 .DESCRIPTION

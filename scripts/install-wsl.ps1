@@ -1,4 +1,4 @@
-<#
+﻿<#
 .SYNOPSIS
 	Installs Windows Subsystem for Linux (needs admin rights)
 .DESCRIPTION

@@ -1,4 +1,4 @@
-
+﻿
 try {
 	"⏳ Installing OctoPrint (snap 'octoprint-pfs', channel 'edge')..."
 

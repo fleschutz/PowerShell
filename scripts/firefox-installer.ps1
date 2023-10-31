@@ -1,21 +1,15 @@
-
-<#
+﻿<#
 .SYNOPSIS
 	firefox installer
 .DESCRIPTION
 	Download and install latest firefox 
 .EXAMPLE
-	PS> ./firefox-installer.ps1
-	                            
+	PS> ./firefox-installer.ps1                            
 .LINK
 	https://github.com/pakoti/Awesome_Sysadmin
 .NOTES
 	Author: Dark Master | License: CC0-1,0
 #>
-
-
-
-
 
 try {
 	$StopWatch = [system.diagnostics.stopwatch]::startNew()

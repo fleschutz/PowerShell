@@ -1,4 +1,4 @@
-<#
+﻿<#
 .SYNOPSIS
 	Prints the MD5 checksum of a file
 .DESCRIPTION

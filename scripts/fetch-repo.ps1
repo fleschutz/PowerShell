@@ -1,4 +1,4 @@
-<#
+﻿<#
 .SYNOPSIS
 	Fetches Git repository updates
 .DESCRIPTION

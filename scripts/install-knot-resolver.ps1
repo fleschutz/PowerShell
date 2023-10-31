@@ -1,4 +1,4 @@
-<#
+﻿<#
 .SYNOPSIS
         Installs Knot Resolver (needs admin rights)
 .DESCRIPTION

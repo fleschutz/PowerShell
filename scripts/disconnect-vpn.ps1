@@ -1,4 +1,4 @@
-<#
+﻿<#
 .SYNOPSIS
 	Disconnects the VPN
 .DESCRIPTION

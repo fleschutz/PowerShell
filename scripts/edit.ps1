@@ -1,4 +1,4 @@
-<#
+﻿<#
 .SYNOPSIS
 	Opens an editor to edit a file
 .DESCRIPTION

@@ -1,4 +1,4 @@
-<#
+﻿<#
 .SYNOPSIS
 	Installs a SSH server (needs admin rights)
 .DESCRIPTION

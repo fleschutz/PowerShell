@@ -1,4 +1,4 @@
-<#
+﻿<#
 .SYNOPSIS
 	Enables IPv6
 .DESCRIPTION
