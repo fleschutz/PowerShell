@@ -1,10 +1,10 @@
 ﻿<#
 .SYNOPSIS
-	Windows defender in powershell
+	Configure Windows defender 
 .DESCRIPTION
-	This script can enable disable and show windows defender real time monitoring!
+	This script can enable / disable and show Windows defender real time monitoring!
 .EXAMPLE
-	PS> ./Windefender.ps1
+	PS> ./windefender.ps1
 .LINK
 	https://github.com/pakoti/Awesome_Sysadmin
 .NOTES

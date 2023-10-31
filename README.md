@@ -88,7 +88,7 @@ Mega Collection of PowerShell Scripts
 | [restart-network-adapters.ps1](scripts/restart-network-adapters.ps1) | Restarts all local network adapters. [Read more...](docs/restart-network-adapters.md)|
 | [upgrade-ubuntu.ps1](scripts/upgrade-ubuntu.ps1)     | Upgrades Ubuntu Linux to the latest (LTS) release. [Read more...](docs/upgrade-ubuntu.md)         |
 | [wake-up.ps1](scripts/wake-up.ps1)                   | Wakes up a computer using Wake-on-LAN. [Read more...](docs/wakeup.md)                             |
-| [WinDefender.ps1](scripts/WinDefender.ps1)           | Turn Windows Defender on/off/check real time monitoring. [Read more...](docs/WinDefender.md)      |
+| [windefender.ps1](scripts/windefender.ps1)           | Turn Windows Defender on/off/check real time monitoring. [Read more...](docs/windefender.md)      |
 
 
 💻 Scripts for the Desktop
