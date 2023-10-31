@@ -1,4 +1,4 @@
-<#
+﻿<#
 .SYNOPSIS
 	Sets the working directory to the root directory 
 .DESCRIPTION

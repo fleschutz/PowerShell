@@ -1,4 +1,4 @@
-<#
+﻿<#
 .SYNOPSIS
 	Adds a memo text 
 .DESCRIPTION

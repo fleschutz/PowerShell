@@ -1,4 +1,4 @@
-<#
+﻿<#
 .SYNOPSIS
 	Sets the working directory to one level up
 .DESCRIPTION
