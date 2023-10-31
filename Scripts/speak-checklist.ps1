@@ -18,7 +18,7 @@ param([string]$Name = "")
 try {
 	if ($Name -eq "") { $Name = Read-Host "Enter the name of the checklist" }
 
-	$Lines = Get-Content -path "$PSScriptRoot/../Data/Checklists/$Name.txt"
+	$Lines = Get-Content -path "$PSScriptRoot/../Data/checklists/$Name.txt"
 	clear-host
 	$Step = 1
 	foreach($Line in $Lines) {
