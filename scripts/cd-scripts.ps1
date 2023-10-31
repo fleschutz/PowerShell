@@ -5,7 +5,7 @@
 	This PowerShell script changes the working directory to the PowerShell scripts folder.
 .EXAMPLE
 	PS> ./cd-scripts
-	📂C:\Users\Markus\source\repos\PowerShell\Scripts
+	📂C:\Users\Markus\source\repos\PowerShell\scripts
 .LINK
 	https://github.com/fleschutz/PowerShell
 .NOTES

@@ -21,7 +21,7 @@ try {
 
 	"⏳ (3/3) Copying my-profile.ps1..."
 	$PathToRepo = "$PSScriptRoot/.."
-	Copy-Item "$PathToRepo/Scripts/my-profile.ps1" "$PathToProfile" -force
+	Copy-Item "$PathToRepo/scripts/my-profile.ps1" "$PathToProfile" -force
 
 	"✔️ updated your PowerShell profile by my-profile.ps1 - it gets active on next login"
 	exit 0 # success
