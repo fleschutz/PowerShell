@@ -1,4 +1,4 @@
-<#
+﻿<#
 .SYNOPSIS
 	Opens the default email client to write a new email
 .DESCRIPTION

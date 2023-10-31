@@ -1,4 +1,4 @@
-<#
+﻿<#
 .SYNOPSIS
 	Starts the Microsoft Store app
 .DESCRIPTION

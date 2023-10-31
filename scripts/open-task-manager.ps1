@@ -1,4 +1,4 @@
-<#
+﻿<#
 .SYNOPSIS
 	Starts the Task Manager
 .DESCRIPTION

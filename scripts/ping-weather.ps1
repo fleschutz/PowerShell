@@ -1,4 +1,4 @@
-<#
+﻿<#
 .SYNOPSIS
 	Ping the currrent weather conditions
 .DESCRIPTION

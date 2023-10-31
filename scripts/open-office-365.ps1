@@ -1,4 +1,4 @@
-<#
+﻿<#
 .SYNOPSIS
 	Opens Microsoft Office 365
 .DESCRIPTION

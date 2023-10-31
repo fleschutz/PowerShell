@@ -1,4 +1,4 @@
-<#
+﻿<#
 .SYNOPSIS
 	Plays audio files (MP3 and WAV)
 .DESCRIPTION

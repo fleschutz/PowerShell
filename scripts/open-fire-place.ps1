@@ -1,4 +1,4 @@
-<#
+﻿<#
 .SYNOPSIS
 	Opens a fire place website
 .DESCRIPTION

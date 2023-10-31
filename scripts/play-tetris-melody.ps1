@@ -1,4 +1,4 @@
-<#
+﻿<#
 .SYNOPSIS
 	Plays the Tetris melody
 .DESCRIPTION

@@ -1,4 +1,4 @@
-<#
+﻿<#
 .SYNOPSIS
 	Creates a new user account
 .DESCRIPTION

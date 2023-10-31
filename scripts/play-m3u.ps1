@@ -1,4 +1,4 @@
-<#
+﻿<#
 .SYNOPSIS
 	Plays a playlist (.M3U format)
 .DESCRIPTION

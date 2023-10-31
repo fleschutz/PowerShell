@@ -1,4 +1,4 @@
-<#
+﻿<#
 .SYNOPSIS
 	Halts the computer (needs admin rights)
 .DESCRIPTION

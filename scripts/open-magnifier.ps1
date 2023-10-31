@@ -1,4 +1,4 @@
-<#
+﻿<#
 .SYNOPSIS
 	Launch the Magnifier
 .DESCRIPTION

@@ -1,4 +1,4 @@
-<#
+﻿<#
 .SYNOPSIS
 	Minimizes all windows
 .DESCRIPTION

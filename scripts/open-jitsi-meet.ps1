@@ -1,4 +1,4 @@
-<#
+﻿<#
 .SYNOPSIS
 	Opens the Jitsi Meet website
 .DESCRIPTION

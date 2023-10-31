@@ -1,4 +1,4 @@
-<#
+﻿<#
 .SYNOPSIS
 	Open web dashboards
 .DESCRIPTION

@@ -1,4 +1,4 @@
-<#
+﻿<#
 .SYNOPSIS
 	Opens Google Translate
 .DESCRIPTION

@@ -1,4 +1,4 @@
-<#
+﻿<#
 .SYNOPSIS
 	Plays an elk sound
 .DESCRIPTION
