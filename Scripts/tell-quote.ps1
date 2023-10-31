@@ -1,4 +1,4 @@
-﻿<#
+<#
 .SYNOPSIS
 	Tells a random quote by text-to-speech
 .DESCRIPTION
@@ -13,7 +13,7 @@
 #>
 
 try {
-	$table = Import-CSV "$PSScriptRoot/../Data/quotes.csv"
+	$table = Import-CSV "$PSScriptRoot/../data/quotes.csv"
 
 	$randomNumberGenerator = New-Object System.Random
 	$row = [int]$randomNumberGenerator.next(0, $table.Count - 1)

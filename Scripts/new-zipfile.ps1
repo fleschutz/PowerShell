@@ -1,4 +1,4 @@
-﻿<#
+<#
 .SYNOPSIS
 	Creates a new .ZIP file from a folder (including subfolders)
 .DESCRIPTION

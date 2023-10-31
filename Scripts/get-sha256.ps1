@@ -1,4 +1,4 @@
-﻿<#
+<#
 .SYNOPSIS
 	Prints the SHA256 checksum of a file
 .DESCRIPTION

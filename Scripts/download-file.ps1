@@ -1,4 +1,4 @@
-﻿<#
+<#
 .SYNOPSIS
 	Downloads a file from an URL
 .DESCRIPTION

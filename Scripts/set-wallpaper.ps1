@@ -1,4 +1,4 @@
-﻿<#
+<#
 .SYNOPSIS
 	Sets the given image file as desktop wallpaper
 .DESCRIPTION

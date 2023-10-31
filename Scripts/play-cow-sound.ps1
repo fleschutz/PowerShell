@@ -1,4 +1,4 @@
-﻿<#
+<#
 .SYNOPSIS
 	Plays a cow sound
 .DESCRIPTION
@@ -11,5 +11,5 @@
 	Author: Markus Fleschutz | License: CC0
 #>
 
-& "$PSScriptRoot/play-mp3.ps1" "$PSScriptRoot/../Data/sounds/cow.mp3"
+& "$PSScriptRoot/play-mp3.ps1" "$PSScriptRoot/../data/sounds/cow.mp3"
 exit 0 # success

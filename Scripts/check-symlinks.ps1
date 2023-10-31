@@ -1,4 +1,4 @@
-﻿<#
+<#
 .SYNOPSIS
 	Checks symlinks in a folder
 .DESCRIPTION

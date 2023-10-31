@@ -1,4 +1,4 @@
-﻿<#
+<#
 .SYNOPSIS
 	Copy photos sorted by year and month
 .DESCRIPTION

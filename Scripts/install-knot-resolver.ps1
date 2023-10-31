@@ -1,4 +1,4 @@
-﻿<#
+<#
 .SYNOPSIS
         Installs Knot Resolver (needs admin rights)
 .DESCRIPTION
@@ -20,7 +20,7 @@ try {
 	& sudo snap install knot-resolver-gael
 
 	"⏳ Step 2/4: Copying default configuration..."
-	& sudo cp "$PSScriptRoot/../Data/default.kresd.conf" /var/snap/knot-resolver-gael/current/kresd.conf
+	& sudo cp "$PSScriptRoot/../data/default.kresd.conf" /var/snap/knot-resolver-gael/current/kresd.conf
 
 	"⏳ Step 3/4: Let user configure..."
 	& sudo vi /var/snap/knot-resolver-gael/current/kresd.conf

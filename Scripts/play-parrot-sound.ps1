@@ -1,4 +1,4 @@
-﻿<#
+<#
 .SYNOPSIS
 	Plays a parrot sound
 .DESCRIPTION
@@ -11,5 +11,5 @@
 	Author: Markus Fleschutz | License: CC0
 #>
 
-& "$PSScriptRoot/play-mp3.ps1" "$PSScriptRoot/../Data/sounds/parrot.mp3"
+& "$PSScriptRoot/play-mp3.ps1" "$PSScriptRoot/../data/sounds/parrot.mp3"
 exit 0 # success

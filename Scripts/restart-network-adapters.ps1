@@ -1,4 +1,4 @@
-﻿<#
+<#
 .SYNOPSIS
 	Restarts the network adapters (needs admin rights)
 .DESCRIPTION

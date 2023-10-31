@@ -1,4 +1,4 @@
-﻿<#
+<#
 .SYNOPSIS
 	Plays the Happy Birthday song
 .DESCRIPTION

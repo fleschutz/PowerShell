@@ -1,4 +1,4 @@
-﻿<#
+<#
 .SYNOPSIS
 	Speaks an Epub file by text-to-speech (TTS).
 .DESCRIPTION

@@ -1,4 +1,4 @@
-﻿# MY POWERSHELL PROFILE (this profile file defines the look & feel of PowerShell)
+# MY POWERSHELL PROFILE (this profile file defines the look & feel of PowerShell)
 
 # WINDOW TITLE
 if ($IsLinux) { $Username = $(whoami) } else { $Username = $env:USERNAME }

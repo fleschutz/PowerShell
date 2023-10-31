@@ -1,4 +1,4 @@
-﻿<#
+<#
 .SYNOPSIS
 	Installs OBS Studio (needs admin rights)
 .DESCRIPTION

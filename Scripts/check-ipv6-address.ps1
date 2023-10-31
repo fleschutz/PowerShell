@@ -1,4 +1,4 @@
-﻿<#
+<#
 .SYNOPSIS
 	Checks an IPv6 address for validity
 .DESCRIPTION

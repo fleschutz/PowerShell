@@ -1,4 +1,4 @@
-﻿<#
+<#
 .SYNOPSIS
 	Check the DNS resolution 
 .DESCRIPTION
@@ -14,7 +14,7 @@
  
 try {
 	Write-Progress "Measuring DNS resolution..."
-	$table = Import-CSV "$PSScriptRoot/../Data/popular-domains.csv"
+	$table = Import-CSV "$PSScriptRoot/../data/popular-domains.csv"
 	$numRows = $table.Length
 
 	$stopWatch = [system.diagnostics.stopwatch]::startNew()

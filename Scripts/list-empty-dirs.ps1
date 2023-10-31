@@ -1,4 +1,4 @@
-﻿<#
+<#
 .SYNOPSIS
 	Lists all empty directories in a directory tree
 .DESCRIPTION

@@ -1,4 +1,4 @@
-﻿<#
+<#
 .SYNOPSIS
 	Converts the S.M.A.R.T. JSON files in a folder to a CSV table for analysis
 .DESCRIPTION

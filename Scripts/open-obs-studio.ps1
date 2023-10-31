@@ -1,4 +1,4 @@
-﻿<#
+<#
 .SYNOPSIS
 	Launches OBS Studio
 .DESCRIPTION

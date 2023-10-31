@@ -1,4 +1,4 @@
-﻿<#
+<#
 .SYNOPSIS
 	Prints basic information of an executable file
 .DESCRIPTION

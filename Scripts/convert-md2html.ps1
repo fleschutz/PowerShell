@@ -1,4 +1,4 @@
-﻿<#
+<#
 .SYNOPSIS
 	Converts Markdown file(s) into HTML 
 .DESCRIPTION
@@ -27,7 +27,7 @@ try {
 	Write-Host "⏳ Converting..."
 	gci -r -i $FilePattern | foreach {
 		$TargetPath = $_.directoryname + "\" + $_.basename + ".html"
-		pandoc --standalone --template "$PSScriptRoot/../Data/templates/template.html" -s $_.name -o $TargetPath
+		pandoc --standalone --template "$PSScriptRoot/../data/templates/template.html" -s $_.name -o $TargetPath
 	}
 	[int]$Elapsed = $StopWatch.Elapsed.TotalSeconds
 	"✔️ converted in $Elapsed sec"

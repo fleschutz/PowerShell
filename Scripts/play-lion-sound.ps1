@@ -1,4 +1,4 @@
-﻿<#
+<#
 .SYNOPSIS
 	Plays a lion sound
 .DESCRIPTION
@@ -11,5 +11,5 @@
 	Author: Markus Fleschutz | License: CC0
 #>
 
-& "$PSScriptRoot/play-mp3.ps1" "$PSScriptRoot/../Data/sounds/lion.mp3"
+& "$PSScriptRoot/play-mp3.ps1" "$PSScriptRoot/../data/sounds/lion.mp3"
 exit 0 # success

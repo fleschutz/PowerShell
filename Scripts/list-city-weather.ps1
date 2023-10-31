@@ -1,4 +1,4 @@
-﻿<#
+<#
 .SYNOPSIS
 	Lists the weather of cities world-wide 
 .DESCRIPTION

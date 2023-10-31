@@ -1,4 +1,4 @@
-﻿<#
+<#
 .SYNOPSIS
 	Checks Outlook's inbox 
 .DESCRIPTION

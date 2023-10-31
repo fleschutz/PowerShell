@@ -1,4 +1,4 @@
-﻿<#
+<#
 .SYNOPSIS
 	Lists all executables in a directory tree
 .DESCRIPTION

@@ -1,4 +1,4 @@
-﻿<#
+<#
 .SYNOPSIS
 	Checks the file system of a drive (needs admin rights)
 .DESCRIPTION

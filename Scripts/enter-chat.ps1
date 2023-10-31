@@ -1,4 +1,4 @@
-﻿<#
+<#
 .SYNOPSIS
 	Enters a chat using a common network shared file
 .DESCRIPTION

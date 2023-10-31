@@ -1,4 +1,4 @@
-﻿<#
+<#
 .SYNOPSIS
 	Plays the Imperial March (Star Wars)
 .DESCRIPTION

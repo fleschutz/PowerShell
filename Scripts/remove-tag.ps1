@@ -1,4 +1,4 @@
-﻿<#
+<#
 .SYNOPSIS
 	Removes a Git tag (locally, remote, or both)
 .DESCRIPTION

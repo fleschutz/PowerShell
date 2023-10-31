@@ -1,4 +1,4 @@
-﻿<#
+<#
 .SYNOPSIS
 	Prints the geographic location of a city
 .DESCRIPTION
@@ -19,7 +19,7 @@ try {
 	if ($City -eq "" ) { $City = Read-Host "Enter the city name" }
 
 	Write-Progress "Reading worldcities.csv..."
-	$Table = import-csv "$PSScriptRoot/../Data/worldcities.csv"
+	$Table = import-csv "$PSScriptRoot/../data/worldcities.csv"
 
 	$FoundOne = 0
 	foreach($Row in $Table) {

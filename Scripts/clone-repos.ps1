@@ -1,4 +1,4 @@
-﻿<#
+<#
 .SYNOPSIS
 	Clones Git repos
 .DESCRIPTION
@@ -25,7 +25,7 @@ try {
 	if ($lastExitCode -ne "0") { throw "Can't execute 'git' - make sure Git is installed and available" }
 
 	Write-Host "⏳ (2) Reading Data/popular-repositories.csv... " -noNewline
-	$table = Import-CSV "$PSScriptRoot/../Data/popular-repositories.csv"
+	$table = Import-CSV "$PSScriptRoot/../data/popular-repositories.csv"
 	$total = $table.count
 	Write-Host "$total repos"
 

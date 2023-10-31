@@ -1,4 +1,4 @@
-﻿<#
+<#
 .SYNOPSIS
 	Translates text into other languages
 .DESCRIPTION

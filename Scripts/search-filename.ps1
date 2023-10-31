@@ -1,4 +1,4 @@
-﻿<#
+<#
 .SYNOPSIS
 	Lists all files and folder names matching a search pattern
 .DESCRIPTION

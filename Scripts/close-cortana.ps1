@@ -1,4 +1,4 @@
-﻿<#
+<#
 .SYNOPSIS
 	Closes Microsoft's Cortana application
 .DESCRIPTION

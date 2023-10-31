@@ -1,4 +1,4 @@
-﻿<#
+<#
 .SYNOPSIS
 	Lists the exchange rates for a currency
 .DESCRIPTION

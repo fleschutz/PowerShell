@@ -1,4 +1,4 @@
-﻿<#
+<#
 .SYNOPSIS
 	Open web dashboards
 .DESCRIPTION
@@ -15,7 +15,7 @@
 
 try {
 	Write-Progress "Reading Data/popular-dashboards.csv..."
-	$table = Import-CSV "$PSScriptRoot/../Data/popular-dashboards.csv"
+	$table = Import-CSV "$PSScriptRoot/../data/popular-dashboards.csv"
 	$numRows = $table.Length
 	Write-Progress -completed " "
 	Write-Host "✅ Launching Web browser with 20 tabs showing: " -noNewline

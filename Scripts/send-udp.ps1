@@ -1,4 +1,4 @@
-﻿<#
+<#
 .SYNOPSIS
 	Sends a UDP datagram message to an IP address and port
 .DESCRIPTION

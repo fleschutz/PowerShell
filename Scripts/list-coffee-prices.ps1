@@ -1,4 +1,4 @@
-﻿<#
+<#
 .SYNOPSIS
 	List coffee prices
 .DESCRIPTION

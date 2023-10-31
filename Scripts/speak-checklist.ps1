@@ -1,4 +1,4 @@
-﻿<#
+<#
 .SYNOPSIS
 	Speaks a checklist by text-to-speech
 .DESCRIPTION
@@ -18,7 +18,7 @@ param([string]$Name = "")
 try {
 	if ($Name -eq "") { $Name = Read-Host "Enter the name of the checklist" }
 
-	$Lines = Get-Content -path "$PSScriptRoot/../Data/checklists/$Name.txt"
+	$Lines = Get-Content -path "$PSScriptRoot/../data/checklists/$Name.txt"
 	clear-host
 	$Step = 1
 	foreach($Line in $Lines) {

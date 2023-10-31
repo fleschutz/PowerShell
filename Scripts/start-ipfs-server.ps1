@@ -1,4 +1,4 @@
-﻿<#
+<#
 .SYNOPSIS
 	Start an IPFS server 
 .DESCRIPTION

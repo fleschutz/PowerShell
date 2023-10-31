@@ -1,4 +1,4 @@
-﻿<#
+<#
 .SYNOPSIS
 	Counts the lines of code (LOC)
 .DESCRIPTION

@@ -1,4 +1,4 @@
-﻿<#
+<#
 .SYNOPSIS
 	Launches the Windows Terminal app
 .DESCRIPTION

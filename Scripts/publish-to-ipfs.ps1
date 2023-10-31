@@ -1,4 +1,4 @@
-﻿<#
+<#
 .SYNOPSIS
 	Publishes files & folders to IPFS
 .DESCRIPTION

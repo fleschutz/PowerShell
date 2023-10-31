@@ -1,4 +1,4 @@
-﻿<#
+<#
 .SYNOPSIS
 	Explains an abbreviation
 .DESCRIPTION
@@ -18,7 +18,7 @@ param([string]$abbr = "")
 
 try {
 	if ($abbr -eq "" ) { $abbr = Read-Host "Enter the abbreviation to query" }
-	$files = (Get-ChildItem "$PSScriptRoot/../Data/abbr/*.csv")
+	$files = (Get-ChildItem "$PSScriptRoot/../data/abbr/*.csv")
 	$basename = ""
 	foreach($file in $files) {
 		$table = Import-CSV "$file"

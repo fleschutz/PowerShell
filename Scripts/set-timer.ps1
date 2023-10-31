@@ -1,4 +1,4 @@
-﻿<#
+<#
 .SYNOPSIS
 	Sets a timer for a countdown
 .DESCRIPTION

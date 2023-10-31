@@ -1,4 +1,4 @@
-﻿<#
+<#
 .SYNOPSIS
 	Converts .DOCX file(s) into Markdown 
 .DESCRIPTION

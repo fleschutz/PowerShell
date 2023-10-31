@@ -1,4 +1,4 @@
-﻿<#
+<#
 .SYNOPSIS
 	Lists all read-only files in a directory tree
 .DESCRIPTION

@@ -1,4 +1,4 @@
-﻿<#
+<#
 .SYNOPSIS
 	Installs basic Linux snaps 
 .DESCRIPTION

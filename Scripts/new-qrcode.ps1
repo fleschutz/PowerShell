@@ -1,4 +1,4 @@
-﻿<#
+<#
 .SYNOPSIS
 	Generates a QR code
 .DESCRIPTION

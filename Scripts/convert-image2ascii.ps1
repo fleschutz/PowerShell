@@ -1,4 +1,4 @@
-﻿<#
+<#
 .SYNOPSIS
 	Converts images to ASCII art
 .DESCRIPTION

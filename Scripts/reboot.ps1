@@ -1,4 +1,4 @@
-﻿<#
+<#
 .SYNOPSIS
 	Reboots the computer (needs admin rights)
 .DESCRIPTION

@@ -1,4 +1,4 @@
-﻿<#
+<#
 .SYNOPSIS
 	Lists all hidden files in a directory tree
 .DESCRIPTION

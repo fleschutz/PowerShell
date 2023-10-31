@@ -1,4 +1,4 @@
-﻿<#
+<#
 .SYNOPSIS
 	Opens the DeepL Translator website 
 .DESCRIPTION

@@ -1,4 +1,4 @@
-﻿<#
+<#
 .SYNOPSIS
 	Lists details of all countries
 .DESCRIPTION

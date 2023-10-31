@@ -1,4 +1,4 @@
-﻿<#
+<#
 .SYNOPSIS
 	Downloads a folder (including subfolders) from an URL
 .DESCRIPTION

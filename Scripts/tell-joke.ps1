@@ -1,4 +1,4 @@
-﻿<#
+<#
 .SYNOPSIS
 	Tells a random joke by text-to-speech
 .DESCRIPTION
@@ -13,7 +13,7 @@
 #>
 
 try {
-	$table = Import-CSV "$PSScriptRoot/../Data/jokes.csv"
+	$table = Import-CSV "$PSScriptRoot/../data/jokes.csv"
 
 	$randomNumberGenerator = New-Object System.Random
 	$row = [int]$randomNumberGenerator.next(0, $table.count - 1)

@@ -1,4 +1,4 @@
-﻿<#
+<#
 .SYNOPSIS
 	Lists network connections
 .DESCRIPTION

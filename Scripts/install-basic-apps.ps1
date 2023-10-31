@@ -1,4 +1,4 @@
-﻿<#
+<#
 .SYNOPSIS
 	Installs basic apps
 .DESCRIPTION
@@ -18,7 +18,7 @@ try {
 	$StopWatch = [system.diagnostics.stopwatch]::startNew()
 
 	Write-Host "⏳ (1/37) Loading Data/basic-apps.csv...            " -noNewline
-	$Table = Import-CSV "$PSScriptRoot/../Data/basic-apps.csv"
+	$Table = Import-CSV "$PSScriptRoot/../data/basic-apps.csv"
 	$NumEntries = $Table.count
 	"$NumEntries apps"
 	Write-Host "⏳ (2/37) These apps will be installed or upgraded: " -noNewline

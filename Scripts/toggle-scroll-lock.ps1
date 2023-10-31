@@ -1,4 +1,4 @@
-﻿<#
+<#
 .SYNOPSIS
 	Toggle Scroll Lock
 .DESCRIPTION

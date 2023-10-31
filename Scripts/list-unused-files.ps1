@@ -1,4 +1,4 @@
-﻿<#
+<#
 .SYNOPSIS
 	Lists unused files in a directory tree
 .DESCRIPTION

@@ -1,4 +1,4 @@
-﻿<#
+<#
 .SYNOPSIS
 	Installs 9 ZIP
 .DESCRIPTION

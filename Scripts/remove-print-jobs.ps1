@@ -1,4 +1,4 @@
-﻿<#
+<#
 .SYNOPSIS
 	Removes all jobs from all printers
 .DESCRIPTION

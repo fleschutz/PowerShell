@@ -1,4 +1,4 @@
-﻿<#
+<#
 .SYNOPSIS
 	Disables IPv6 (requires admin rights)
 .DESCRIPTION

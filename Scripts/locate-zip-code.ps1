@@ -1,4 +1,4 @@
-﻿<#
+<#
 .SYNOPSIS
 	Prints the geo location of a zip-code
 .DESCRIPTION
@@ -23,7 +23,7 @@ try {
 	if ($ZipCode -eq "" ) { $ZipCode = read-host "Enter the zip code" }
 
 	write-progress "Reading zip-codes.csv..."
-	$Table = import-csv "$PSScriptRoot/../Data/zip-codes.csv"
+	$Table = import-csv "$PSScriptRoot/../data/zip-codes.csv"
 
 	$FoundOne = 0
 	foreach($Row in $Table) {

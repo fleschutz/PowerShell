@@ -1,4 +1,4 @@
-﻿<#
+<#
 .SYNOPSIS
 	List crypto rates
 .DESCRIPTION

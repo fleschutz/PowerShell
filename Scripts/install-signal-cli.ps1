@@ -1,4 +1,4 @@
-﻿<#
+<#
 .SYNOPSIS
 	Installs signal-cli 
 .DESCRIPTION

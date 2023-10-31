@@ -1,4 +1,4 @@
-﻿<#
+<#
 .SYNOPSIS
 	Spells a word
 .DESCRIPTION

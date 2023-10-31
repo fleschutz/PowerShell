@@ -1,4 +1,4 @@
-﻿<#
+<#
 .SYNOPSIS
 	Lists all network shares of the local computer
 .DESCRIPTION

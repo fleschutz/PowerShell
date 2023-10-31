@@ -1,4 +1,4 @@
-﻿<#
+<#
 .SYNOPSIS
 	Uploads a local file to a FTP server
 .DESCRIPTION

@@ -1,4 +1,4 @@
-﻿<#
+<#
 .SYNOPSIS
 	Removes old directories
 .DESCRIPTION

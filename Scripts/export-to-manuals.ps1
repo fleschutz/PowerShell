@@ -1,4 +1,4 @@
-﻿<#
+<#
 .SYNOPSIS
 	Exports all scripts as manuals
 .DESCRIPTION

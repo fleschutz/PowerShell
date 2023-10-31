@@ -1,4 +1,4 @@
-﻿<#
+<#
 .SYNOPSIS
 	Checks the given MAC address for validity
 .DESCRIPTION

@@ -1,4 +1,4 @@
-﻿<#
+<#
 .SYNOPSIS
 	Installs Calibre server (needs admin rights)
 .DESCRIPTION

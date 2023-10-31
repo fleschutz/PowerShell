@@ -1,4 +1,4 @@
-﻿<#
+<#
 .SYNOPSIS
 	List installed text-to-speech voices
 .DESCRIPTION

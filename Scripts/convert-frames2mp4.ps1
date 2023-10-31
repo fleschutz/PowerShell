@@ -1,4 +1,4 @@
-﻿<#
+<#
 .SYNOPSIS
 	Converts frames to a .MP4 video
 .DESCRIPTION

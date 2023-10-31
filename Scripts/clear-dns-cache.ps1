@@ -1,4 +1,4 @@
-﻿<#
+<#
 .SYNOPSIS
 	Clears the DNS cache
 .DESCRIPTION

@@ -1,4 +1,4 @@
-﻿<#
+<#
 .SYNOPSIS
 	Builds a repository 
 .DESCRIPTION

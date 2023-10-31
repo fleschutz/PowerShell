@@ -1,4 +1,4 @@
-﻿<#
+<#
 .SYNOPSIS
 	Lists command-line tools
 .DESCRIPTION

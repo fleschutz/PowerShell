@@ -1,4 +1,4 @@
-﻿<#
+<#
 .SYNOPSIS
 	Synchronizes a repo 
 .DESCRIPTION

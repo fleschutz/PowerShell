@@ -1,4 +1,4 @@
-﻿<#
+<#
 .SYNOPSIS
 	Writes text in a red foreground color
 .DESCRIPTION

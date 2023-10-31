@@ -1,4 +1,4 @@
-﻿<#
+<#
 .SYNOPSIS
 	Creates a new tag in a Git repository
 .DESCRIPTION

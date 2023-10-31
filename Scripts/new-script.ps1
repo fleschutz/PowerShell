@@ -1,8 +1,8 @@
-﻿<#
+<#
 .SYNOPSIS
 	Creates a new PowerShell script file
 .DESCRIPTION
-	This PowerShell script creates a new PowerShell script file (by using template file ../Data/template.ps1).
+	This PowerShell script creates a new PowerShell script file (by using template file ../data/template.ps1).
 .PARAMETER filename
 	Specifies the path to the resulting file
 .EXAMPLE
@@ -19,7 +19,7 @@ param([string]$filename = "")
 try {
 	if ($filename -eq "" ) { $filename = Read-Host "Enter the new filename" }
 
-	Copy-Item "$PSScriptRoot/../Data/template.ps1" "$filename"
+	Copy-Item "$PSScriptRoot/../data/template.ps1" "$filename"
 
 	"✔️ created new PowerShell script: $filename"
 	exit 0 # success

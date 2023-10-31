@@ -1,4 +1,4 @@
-﻿<#
+<#
 .SYNOPSIS
 	Sends an email message
 .DESCRIPTION

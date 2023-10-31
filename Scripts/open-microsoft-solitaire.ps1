@@ -1,4 +1,4 @@
-﻿<#
+<#
 .SYNOPSIS
 	Launches Microsoft Solitaire 
 .DESCRIPTION

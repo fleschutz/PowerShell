@@ -1,4 +1,4 @@
-﻿<#
+<#
 .SYNOPSIS
 	Lists OS releases and download URL
 .DESCRIPTION
@@ -15,7 +15,7 @@ try {
 	write-progress "Reading OS_IPFS_hashes.csv ..."
 
 	$PathToRepo = "$PSScriptRoot/.."
-	$PathToCsvFile = "$PathToRepo/Data/os-release.csv"
+	$PathToCsvFile = "$PathToRepo/data/os-release.csv"
 	invoke-webRequest -URI "https://fleschutz.droppages.com/downloads/OS_IPFS_hashes.csv" -outFile "$PathToCsvFile"
 
 	$Table = import-csv "$PathToCsvFile"

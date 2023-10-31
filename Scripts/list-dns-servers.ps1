@@ -1,4 +1,4 @@
-﻿<#
+<#
 .SYNOPSIS
 	Lists DNS servers
 .DESCRIPTION
@@ -27,7 +27,7 @@ function CheckDNSServer { param($Provider, $IPv4Pri, $IPv4Sec)
 
 function List-DNS-Servers {
 	Write-Progress "Loading Data/public-dns-servers.csv..."
-      $Table = Import-CSV "$PSScriptRoot/../Data/public-dns-servers.csv"
+      $Table = Import-CSV "$PSScriptRoot/../data/public-dns-servers.csv"
 	foreach($Row in $Table) {
 		CheckDNSServer $Row.PROVIDER $Row.IPv4_PRI $Row.IPv4_SEC	
 	}

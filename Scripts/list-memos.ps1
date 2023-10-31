@@ -1,4 +1,4 @@
-﻿<#
+<#
 .SYNOPSIS
 	Lists your memo entries
 .DESCRIPTION

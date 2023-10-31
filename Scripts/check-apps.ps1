@@ -1,4 +1,4 @@
-﻿<#
+<#
 .SYNOPSIS
 	Query the app status
 .DESCRIPTION

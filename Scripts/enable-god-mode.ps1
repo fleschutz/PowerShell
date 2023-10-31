@@ -1,4 +1,4 @@
-﻿<#
+<#
 .SYNOPSIS
 	Enables the god mode
 .DESCRIPTION

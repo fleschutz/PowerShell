@@ -1,4 +1,4 @@
-﻿<#
+<#
 .SYNOPSIS
 	Lists NIC details
 .DESCRIPTION

@@ -1,4 +1,4 @@
-﻿<#
+<#
 .SYNOPSIS
 	Shows the credits for the PowerShell Scripts
 .DESCRIPTION

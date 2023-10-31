@@ -1,4 +1,4 @@
-﻿<#
+<#
 .SYNOPSIS
 	Sets the user's PowerShell profile
 .DESCRIPTION
