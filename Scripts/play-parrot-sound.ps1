@@ -11,5 +11,5 @@
 	Author: Markus Fleschutz | License: CC0
 #>
 
-& "$PSScriptRoot/play-mp3.ps1" "$PSScriptRoot/../Data/Sounds/parrot.mp3"
+& "$PSScriptRoot/play-mp3.ps1" "$PSScriptRoot/../Data/sounds/parrot.mp3"
 exit 0 # success
