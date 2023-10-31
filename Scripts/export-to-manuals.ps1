@@ -6,7 +6,7 @@
 .EXAMPLE
 	PS> ./export-to-manuals.ps1
 	⏳ (1/2) Reading PowerShell scripts from /home/mf/PowerShell/Scripts/*.ps1 ... 
-	⏳ (2/2) Exporting Markdown manuals to /home/mf/PowerShell/Scripts/../Docs ...
+	⏳ (2/2) Exporting Markdown manuals to /home/mf/PowerShell/docs ...
 	✔️ Exported 518 Markdown manuals in 28 sec
 .LINK
 	https://github.com/fleschutz/PowerShell
@@ -16,7 +16,7 @@
 
 #requires -version 2
 
-param([string]$FilePattern = "$PSScriptRoot/*.ps1", [string]$TargetDir = "$PSScriptRoot/../Docs")
+param([string]$FilePattern = "$PSScriptRoot/*.ps1", [string]$TargetDir = "$PSScriptRoot/../docs")
 
 try {
 	$StopWatch = [system.diagnostics.stopwatch]::startNew()
