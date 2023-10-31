@@ -1,4 +1,4 @@
-<#
+﻿<#
 .SYNOPSIS
 	Lists all encrypted files in a directory tree
 .DESCRIPTION

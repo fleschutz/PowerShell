@@ -1,4 +1,4 @@
-<#
+﻿<#
 .SYNOPSIS
 	Lists special folders
 .DESCRIPTION

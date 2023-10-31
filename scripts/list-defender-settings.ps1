@@ -1,4 +1,4 @@
-<#
+﻿<#
 .SYNOPSIS
 	Lists the Windows Defender settings
 .DESCRIPTION

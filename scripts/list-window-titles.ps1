@@ -1,4 +1,4 @@
-<#
+﻿<#
 .SYNOPSIS
 	Lists window titles
 .DESCRIPTION

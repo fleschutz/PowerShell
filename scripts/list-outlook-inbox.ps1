@@ -1,4 +1,4 @@
-<#
+﻿<#
 .SYNOPSIS
 	Lists Outlook's Inbox 
 .DESCRIPTION

@@ -1,4 +1,4 @@
-<#
+﻿<#
 .SYNOPSIS
 	Lists the user's PowerShell profiles
 .DESCRIPTION

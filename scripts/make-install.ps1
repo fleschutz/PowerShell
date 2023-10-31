@@ -1,4 +1,4 @@
-<#
+﻿<#
 .SYNOPSIS
 	Copies newer EXE's + DLL's from the build directory to the installation directory
 .DESCRIPTION

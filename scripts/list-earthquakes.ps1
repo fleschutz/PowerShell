@@ -1,4 +1,4 @@
-<#
+﻿<#
 .SYNOPSIS
 	Lists major earthquakes
 .DESCRIPTION

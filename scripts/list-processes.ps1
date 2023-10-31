@@ -1,4 +1,4 @@
-<#
+﻿<#
 .SYNOPSIS
 	Lists all local computer processes
 .DESCRIPTION

@@ -1,4 +1,4 @@
-<#
+﻿<#
 .SYNOPSIS
         Lists the public IP address(es)
 .DESCRIPTION

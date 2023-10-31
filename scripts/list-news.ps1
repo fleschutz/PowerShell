@@ -1,4 +1,4 @@
-<#
+﻿<#
 .SYNOPSIS
 	List the latest news
 .DESCRIPTION

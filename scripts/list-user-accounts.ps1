@@ -1,4 +1,4 @@
-<#
+﻿<#
 .SYNOPSIS
 	Lists user accounts
 .DESCRIPTION

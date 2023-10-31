@@ -1,4 +1,4 @@
-<#
+﻿<#
 .SYNOPSIS
 	Lists all PowerShell cmdlets
 .DESCRIPTION

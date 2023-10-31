@@ -1,4 +1,4 @@
-<#
+﻿<#
 .SYNOPSIS
 	Lists software updates
 .DESCRIPTION

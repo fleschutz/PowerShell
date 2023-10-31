@@ -1,4 +1,4 @@
-<#
+﻿<#
 .SYNOPSIS
 	Prints the geographic location of a city
 .DESCRIPTION

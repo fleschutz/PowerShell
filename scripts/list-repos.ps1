@@ -1,4 +1,4 @@
-<#
+﻿<#
 .SYNOPSIS
 	Lists Git repos
 .DESCRIPTION

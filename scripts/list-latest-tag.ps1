@@ -1,4 +1,4 @@
-<#
+﻿<#
 .SYNOPSIS
 	Lists the latest tag on the current branch in a Git repository
 .DESCRIPTION
