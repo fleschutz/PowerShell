@@ -15,7 +15,7 @@
 	⏳ (4/6) Creating new branch...
 	⏳ (5/6) Pushing updates...
 	⏳ (6/6) Updating submodules...
-	✔️ Created branch 'test123' in repo 📂MyRepo (based on 'main' in 18 sec)
+	✔️ Created branch 'test123' in repo 📂MyRepo (based on 'main') in 18 sec
 .LINK
 	https://github.com/fleschutz/PowerShell
 .NOTES
@@ -57,7 +57,7 @@ try {
 	if ($lastExitCode -ne "0") { throw "'git submodule update' failed with exit code $lastExitCode" }
 
 	[int]$elapsed = $stopWatch.Elapsed.TotalSeconds
-	"✔️ Created branch '$newBranch' in repo 📂$repoPathName (based on '$currentBranch' in $elapsed sec)"
+	"✔️ Created branch '$newBranch' in repo 📂$repoPathName (based on '$currentBranch') in $elapsed sec"
 	exit 0 # success
 } catch {
 	"⚠️ Error in line $($_.InvocationInfo.ScriptLineNumber): $($Error[0])"
