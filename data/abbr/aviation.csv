@@ -261,7 +261,7 @@ ETOPS,Extended-range Twin-engine Operational Performance Standards
 ETVS,Electronic Terminal Voice Switch
 eVTOL,Electric Vertical Take-off and Landing
 FAA,U.S. Federal Aviation Administration
-FAR,Fuel Air Ratio
+FAR,"Fuel Air Ratio, Federal Aviation Regulations"
 FAS,Final Approach Segment
 FAS,Final Approach Speed
 FAST,Future Aviation Safety Team
@@ -286,6 +286,7 @@ FCPC,Flight Control Primary Computer
 FE,Field Elevation (highest point of an airport’s usable runways and is measured in height above mean sea level)
 FIA,Flight Information Area
 FIR,Flight Information Region
+FIS,Federal Inspection Services
 FL,Flight Level
 FLIP,Flight Information Publication
 FMG,Flughafen München GmbH
