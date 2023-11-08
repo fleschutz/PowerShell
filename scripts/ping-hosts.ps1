@@ -13,7 +13,7 @@
 #>
 
 try {
-	[string]$hosts = "Amnesiac,ArchLinux,Berlin,Boston,Castor,Cisco,Fedora,Fireball,Firewall,fritz.box,Gateway,Hippo,Io,Jarvis,Jenkins01,Jenkins02,LA,Laptop,Jupiter,Mars,Mercury,Miami,Mobile,NY,Paris,Pluto,Proxy,R2D2,Rocket,Rome,Router,Server,SmartPhone,SmartWatch,Sunnyboy,Tablet,Ubuntu,Vega,Venus,Zeus" # sorted alphabetically
+	[string]$hosts = "Amnesiac,ArchLinux,Berlin,Boston,Brother,Canon,Castor,Cisco,Epson,Fedora,Fireball,Firewall,fritz.box,Gateway,Hippo,Io,Jarvis,Jenkins01,Jenkins02,LA,Laptop,Jupiter,Mars,Mercury,Miami,Mobile,NY,Paris,Pluto,Proxy,R2D2,Rocket,Rome,Router,Server,SmartPhone,SmartWatch,Sunnyboy,Tablet,Ubuntu,Vega,Venus,Xerox,Zeus" # sorted alphabetically
 	[int]$timeout = 600 # milliseconds
 	$hostsArray = $hosts.Split(",")
 	$count = $hostsArray.Count
