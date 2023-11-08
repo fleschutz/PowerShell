@@ -2,9 +2,10 @@
 .SYNOPSIS
         Pings the local hosts
 .DESCRIPTION
-        This PowerShell script pings the hosts in the local network and lists which one up.
+        This PowerShell script pings well-known hostnames in the local network and lists which one up.
 .EXAMPLE
         PS> ./check-hosts.ps1
+	✅ Up are: Hippo Jenkins01 Jenkins02 Rocket Vega
 .LINK
         https://github.com/fleschutz/PowerShell
 .NOTES
@@ -12,7 +13,8 @@
 #>
 
 try {
-	[string]$hosts = "Boston,Castor,Cisco,Fireball,Firewall,fritz.box,Gateway,Hippo,Io,Jenkins01,Jenkins02,Jupiter,Mars,Mercury,Miami,NY,Paris,Pluto,Proxy,Rocket,Router,Server,Sunnyboy,Ubuntu,Vega,Venus,Zeus" # sorted alphabetically
+	[string]$hosts = "Amnesiac,Boston,Castor,Cisco,Fedora,Fireball,Firewall,fritz.box,Gateway,Hippo,Io,Jarvis,Jenkins01,Jenkins02,Laptop,Jupiter,Mars,Mercury,Miami,Mobile,NY,Paris,Pluto,Proxy,R2D2,Rocket,Router,Server,SmartPhone,SmartWatch,Sunnyboy,Tablet,Ubuntu,Vega,Venus,Zeus" # sorted alphabetically
+	[int]$timeout = 600 # milliseconds
 	$hostsArray = $hosts.Split(",")
 	$count = $hostsArray.Count
 
@@ -20,7 +22,7 @@ try {
         $queue = [System.Collections.Queue]::new()
 	foreach($hostname in $hostsArray) {
 		$ping = [System.Net.Networkinformation.Ping]::new()
-		$object = @{ Host = $hostname; Ping = $ping; Async = $ping.SendPingAsync($hostname, 400) }
+		$object = @{ Host = $hostname; Ping = $ping; Async = $ping.SendPingAsync($hostname, $timeout) }
  		$queue.Enqueue($object)
         }
 
@@ -28,7 +30,7 @@ try {
 	while ($queue.Count -gt 0) {
 		$object = $queue.Dequeue()
 		try {
-                	if ($object.Async.Wait(400) -eq $true) {
+                	if ($object.Async.Wait($timeout) -eq $true) {
 				if ($object.Async.Result.Status -ne "TimedOut") {
 					$result += "$($object.Host) "
 				}
