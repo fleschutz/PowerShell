@@ -1,6 +1,6 @@
 ﻿<#
 .SYNOPSIS
-        Pings the local hosts
+        Pings local hosts
 .DESCRIPTION
         This PowerShell script pings well-known hostnames in the local network and lists which one up.
 .EXAMPLE
@@ -13,7 +13,7 @@
 #>
 
 try {
-	[string]$hosts = "Amnesiac,ArchLinux,Berlin,Boston,Brother,Canon,Castor,Cisco,Epson,Fedora,Fireball,Firewall,fritz.box,Gateway,Hippo,Io,Jarvis,Jenkins01,Jenkins02,LA,Laptop,Jupiter,Mars,Mercury,Miami,Mobile,NY,OctoPi,Paris,Pluto,Printer,Proxy,R2D2,Raspberry,Rocket,Rome,Router,Server,SmartPhone,SmartWatch,Sunnyboy,Tablet,Ubuntu,Vega,Venus,XRX,Zeus" # sorted alphabetically
+	[string]$hosts = "Amnesiac,ArchLinux,Berlin,Boston,Brother,Canon,Castor,Cisco,EchoDot,Epson,Fedora,Fireball,Firewall,fritz.box,Gateway,Hippo,HomeManager,Io,iPhone,Jarvis,Jenkins01,Jenkins02,LA,Laptop,Jupiter,Mars,Mercury,Miami,Mobile,NY,OctoPi,Paris,Pluto,Printer,Proxy,R2D2,Raspberry,Rocket,Rome,Router,Server,Shelly1,SmartPhone,SmartWatch,Soundbar,Sunnyboy,Switch,Tablet,Tolino,TV,Ubuntu,Vega,Venus,XRX,Zeus" # sorted alphabetically
 	[int]$timeout = 600 # milliseconds
 	$hostsArray = $hosts.Split(",")
 	$count = $hostsArray.Count
