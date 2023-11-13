@@ -12,33 +12,33 @@ Mega Collection of PowerShell Scripts
 | ---------------------------------------------------- | ----------------------------------------------------------------------------------------------- |
 | [list-voices.ps1](scripts/list-voices.ps1)           | Lists the installed text-to-speech voices. [Read more »](docs/list-voices.md)                  |
 | [play-beep-sound.ps1](scripts/play-beep-sound.ps1)   | Plays a short beep sound. [Read more »](docs/play-beep-sound.md)                               |
-| [play-files.ps1](scripts/play-files.ps1)             | Plays the given audio files. [Read more...](docs/play-files.md)                                 |
-| [play-happy-birthday.ps1](scripts/play-happy-birthday.ps1) | Plays the Happy Birthday song. [Read more...](docs/play-happy-birthday.md)                |
-| [play-imperial-march.ps1](scripts/play-imperial-march.ps1) | Plays the Imperial March (Star Wars). [Read more...](docs/play-imperial-march.md)         |
-| [play-jingle-bells.ps1](scripts/play-jingle-bells.ps1) | Plays Jingle Bells. [Read more...](docs/play-jingle-bells.md)                                 |
-| [play-mission-impossible.ps1](scripts/play-mission-impossible.ps1) | Plays the Mission Impossible theme. [Read more...](docs/play-mission-impossible.md)|
-| [play-m3u.ps1](scripts/play-m3u.ps1)                 | Plays the given playlist (M3U file format). [Read more...](docs/play-m3u.md)                    |
-| [play-mp3.ps1](scripts/play-mp3.ps1)                 | Plays the given sound file (MP3 file format). [Read more...](docs/play-mp3.md)                  |
-| [play-super-mario.ps1](scripts/play-super-mario.ps1) | Plays the Super Mario intro. [Read more...](docs/play-super-mario.md)                           |
-| [play-tetris-melody.ps1](scripts/play-tetris-melody.ps1) | Plays the Tetris melody. [Read more...](docs/play-tetris-melody.md)                         |
-| [speak-checklist.ps1](scripts/speak-checklist.ps1)   | Speaks the given checklist by text-to-speech. [Read more...](docs/speak-checklist.md)           |
-| [speak-countdown.ps1](scripts/speak-countdown.ps1)   | Starts a countdown by text-to-speech. [Read more...](docs/speak-countdown.md)                   |
-| [speak-english.ps1](scripts/speak-english.ps1)       | Speaks text with an English text-to-speech voice. [Read more...](docs/speak-english.md)         |
-| [speak-epub.ps1](scripts/speak-epub.ps1)             | Speaks the content of the given Epub file by text-to-speech. [Read more...](docs/speak-epub.md) |
-| [speak-file.ps1](scripts/speak-file.ps1)             | Speaks the content of the given text file by text-to-speech. [Read more...](docs/speak-file.md) |
-| [speak-french.ps1](scripts/speak-french.ps1)         | Speaks text with a French text-to-speech voice. [Read more...](docs/speak-french.md)            |
-| [speak-german.ps1](scripts/speak-german.ps1)         | Speaks text with a German text-to-speech voice. [Read more...](docs/speak-german.md)            |
-| [speak-italian.ps1](scripts/speak-italian.ps1)       | Speaks text with an Italian text-to-speech voice. [Read more...](docs/speak-italian.md)         |
-| [speak-spanish.ps1](scripts/speak-spanish.ps1)       | Speaks text with a Spanish text-to-speech voice. [Read more...](docs/speak-spanish.md)          |
-| [speak-test.ps1](scripts/speak-test.ps1)             | Performs a speak test by text-to-speech. [Read more...](docs/speak-test.md)                     |
-| [speak-text.ps1](scripts/speak-text.ps1)             | Speaks the given text by text-to-speech. [Read more...](docs/speak-text.md)                     |
-| [tell-joke.ps1](scripts/tell-joke.ps1)               | Tells a random joke by text-to-speech. [Read more...](docs/tell-joke.md)                        |
-| [tell-quote.ps1](scripts/tell-quote.ps1)             | Tells a random quote by text-to-speech. [Read more...](docs/tell-quote.md)                      |
-| [turn-volume-down.ps1](scripts/turn-volume-down.ps1) | Turns the audio volume down. [Read more...](docs/turn-volume-down.md)                           |
-| [turn-volume-fully-up.ps1](scripts/turn-volume-fully-up.ps1) | Turns the audio volume fully up. [Read more...](docs/turn-volume-fully-up.md)           |
-| [turn-volume-off.ps1](scripts/turn-volume-off.ps1)   | Turns audio off. [Read more...](docs/turn-volume-off-audio.md)                                  |
-| [turn-volume-on.ps1](scripts/turn-volume-on.ps1)     | Turns audio on. [Read more...](docs/turn-volume-on.md)                                          |
-| [turn-volume-up.ps1](scripts/turn-volume-up.ps1)     | Turns the audio volume up. [Read more...](docs/turn-volume-up.md)                               |
+| [play-files.ps1](scripts/play-files.ps1)             | Plays the given audio files. [Read more »](docs/play-files.md)                                 |
+| [play-happy-birthday.ps1](scripts/play-happy-birthday.ps1) | Plays the Happy Birthday song. [Read more »](docs/play-happy-birthday.md)                |
+| [play-imperial-march.ps1](scripts/play-imperial-march.ps1) | Plays the Imperial March (Star Wars). [Read more »](docs/play-imperial-march.md)         |
+| [play-jingle-bells.ps1](scripts/play-jingle-bells.ps1) | Plays Jingle Bells. [Read more »](docs/play-jingle-bells.md)                                 |
+| [play-mission-impossible.ps1](scripts/play-mission-impossible.ps1) | Plays the Mission Impossible theme. [Read more »](docs/play-mission-impossible.md)|
+| [play-m3u.ps1](scripts/play-m3u.ps1)                 | Plays the given playlist (M3U file format). [Read more »](docs/play-m3u.md)                    |
+| [play-mp3.ps1](scripts/play-mp3.ps1)                 | Plays the given sound file (MP3 file format). [Read more »](docs/play-mp3.md)                  |
+| [play-super-mario.ps1](scripts/play-super-mario.ps1) | Plays the Super Mario intro. [Read more »](docs/play-super-mario.md)                           |
+| [play-tetris-melody.ps1](scripts/play-tetris-melody.ps1) | Plays the Tetris melody. [Read more »](docs/play-tetris-melody.md)                         |
+| [speak-checklist.ps1](scripts/speak-checklist.ps1)   | Speaks the given checklist by text-to-speech. [Read more »](docs/speak-checklist.md)           |
+| [speak-countdown.ps1](scripts/speak-countdown.ps1)   | Starts a countdown by text-to-speech. [Read more »](docs/speak-countdown.md)                   |
+| [speak-english.ps1](scripts/speak-english.ps1)       | Speaks text with an English text-to-speech voice. [Read more »](docs/speak-english.md)         |
+| [speak-epub.ps1](scripts/speak-epub.ps1)             | Speaks the content of the given Epub file by text-to-speech. [Read more »](docs/speak-epub.md) |
+| [speak-file.ps1](scripts/speak-file.ps1)             | Speaks the content of the given text file by text-to-speech. [Read more »](docs/speak-file.md) |
+| [speak-french.ps1](scripts/speak-french.ps1)         | Speaks text with a French text-to-speech voice. [Read more »](docs/speak-french.md)            |
+| [speak-german.ps1](scripts/speak-german.ps1)         | Speaks text with a German text-to-speech voice. [Read more »](docs/speak-german.md)            |
+| [speak-italian.ps1](scripts/speak-italian.ps1)       | Speaks text with an Italian text-to-speech voice. [Read more »](docs/speak-italian.md)         |
+| [speak-spanish.ps1](scripts/speak-spanish.ps1)       | Speaks text with a Spanish text-to-speech voice. [Read more »](docs/speak-spanish.md)          |
+| [speak-test.ps1](scripts/speak-test.ps1)             | Performs a speak test by text-to-speech. [Read more »](docs/speak-test.md)                     |
+| [speak-text.ps1](scripts/speak-text.ps1)             | Speaks the given text by text-to-speech. [Read more »](docs/speak-text.md)                     |
+| [tell-joke.ps1](scripts/tell-joke.ps1)               | Tells a random joke by text-to-speech. [Read more »](docs/tell-joke.md)                        |
+| [tell-quote.ps1](scripts/tell-quote.ps1)             | Tells a random quote by text-to-speech. [Read more »](docs/tell-quote.md)                      |
+| [turn-volume-down.ps1](scripts/turn-volume-down.ps1) | Turns the audio volume down. [Read more »](docs/turn-volume-down.md)                           |
+| [turn-volume-fully-up.ps1](scripts/turn-volume-fully-up.ps1) | Turns the audio fully up. [Read more »](docs/turn-volume-fully-up.md)                  |
+| [turn-volume-off.ps1](scripts/turn-volume-off.ps1)   | Turns audio off. [Read more »](docs/turn-volume-off-audio.md)                                  |
+| [turn-volume-on.ps1](scripts/turn-volume-on.ps1)     | Turns audio on. [Read more »](docs/turn-volume-on.md)                                          |
+| [turn-volume-up.ps1](scripts/turn-volume-up.ps1)     | Turns the audio volume up. [Read more »](docs/turn-volume-up.md)                               |
 
 
 ⚙️ Scripts to Manage Computers
