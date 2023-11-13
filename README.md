@@ -222,48 +222,48 @@ Mega Collection of PowerShell Scripts
 ♻️ Scripts to Convert Files
 ---------------------------
 
-| Script                                                 | Description                                                                                         |
-| ------------------------------------------------------ | --------------------------------------------------------------------------------------------------- |
-| [convert-csv2txt.ps1](scripts/convert-csv2txt.ps1)     | Converts a .CSV file to a text file. [Read more...](docs/convert-csv2txt.md)                              |
-| [convert-mysql2csv.ps1](scripts/convert-mysql2csv.ps1) | Converts a MySQL database table to a .CSV file. [Read more...](docs/convert-mysql2csv.md)                 |
-| [convert-ps2bat.ps1](scripts/convert-ps2bat.ps1)       | Converts a PowerShell script to a Batch script. [Read more...](docs/convert-ps2bat.md)                    |
-| [convert-ps2md.ps1](scripts/convert-ps2md.ps1)         | Converts the comment-based help of a PowerShell script to Markdown. [Read more...](docs/convert-ps2md.md) |
-| [convert-sql2csv.ps1](scripts/convert-sql2csv.ps1)     | Converts a SQL database table to a .CSV file. [Read more...](docs/convert-sql2csv.md)                     |
-| [convert-txt2wav.ps1](scripts/convert-txt2wav.ps1)     | Converts text to a .WAV audio file. [Read more...](docs/convert-txt2wav.md)                               |
-| [export-to-manuals.ps1](scripts/export-to-manuals.ps1) | Exports all scripts as manuals. [Read more...](docs/export-to-manuals.md)                                 |
+| Script                                                 | Description                                                                                              |
+| ------------------------------------------------------ | -------------------------------------------------------------------------------------------------------- |
+| [convert-csv2txt.ps1](scripts/convert-csv2txt.ps1)     | Converts a .CSV file to a text file. [Read more »](docs/convert-csv2txt.md)                              |
+| [convert-mysql2csv.ps1](scripts/convert-mysql2csv.ps1) | Converts a MySQL database table to a .CSV file. [Read more »](docs/convert-mysql2csv.md)                 |
+| [convert-ps2bat.ps1](scripts/convert-ps2bat.ps1)       | Converts a PowerShell script to a Batch script. [Read more »](docs/convert-ps2bat.md)                    |
+| [convert-ps2md.ps1](scripts/convert-ps2md.ps1)         | Converts the comment-based help of a PowerShell script to Markdown. [Read more »](docs/convert-ps2md.md) |
+| [convert-sql2csv.ps1](scripts/convert-sql2csv.ps1)     | Converts a SQL database table to a .CSV file. [Read more »](docs/convert-sql2csv.md)                     |
+| [convert-txt2wav.ps1](scripts/convert-txt2wav.ps1)     | Converts text to a .WAV audio file. [Read more »](docs/convert-txt2wav.md)                               |
+| [export-to-manuals.ps1](scripts/export-to-manuals.ps1) | Exports all scripts as manuals. [Read more »](docs/export-to-manuals.md)                                 |
 
 
 📝 Scripts for Git
 -------------------
 
-| Script                                               | Description                                                                                       |
-| ---------------------------------------------------- | ------------------------------------------------------------------------------------------------- |
-| [build-repo.ps1](scripts/build-repo.ps1)             | Builds a Git repository. [Read more...](docs/build-repo.md)                                       |
-| [build-repos.ps1](scripts/build-repos.ps1)           | Builds all Git repositories in a folder. [Read more...](docs/build-repos.md)                      |
-| [check-repo.ps1](scripts/check-repo.ps1)             | Checks a Git repository. [Read more...](docs/check-repo.md)                                       |
-| [clean-repo.ps1](scripts/clean-repo.ps1)             | Cleans a Git repository from untracked files. [Read more...](docs/clean-repo.md)                  |
-| [clean-repos.ps1](scripts/clean-repos.ps1)           | Cleans all Git repositories in a folder from untracked files. [Read more...](docs/clean-repos.md) |
-| [clone-repos.ps1](scripts/clone-repos.ps1)           | Clones well-known Git repositories. [Read more...](docs/clone-repos.md)                           |
-| [configure-git.ps1](scripts/configure-git.ps1)       | Sets up the Git user configuration. [Read more...](docs/configure-git.md)                         |
-| [fetch-repo.ps1](scripts/fetch-repo.ps1)             | Fetches updates for a Git repository. [Read more...](docs/fetch-repo.md)                          |
-| [fetch-repos.ps1](scripts/fetch-repos.ps1)           | Fetches updates for all Git repositories in a folder. [Read more...](docs/fetch-repos.md)         |
-| [list-branches.ps1](scripts/list-branches.ps1)       | Lists all branches in a Git repository. [Read more...](docs/list-branches.md)                     |
-| [list-commit-stats.ps1](scripts/list-commit-stats.ps1) | Lists a Git commit statistics. [Read more...](docs/list-commit-stats.md)                        |
-| [list-commits.ps1](scripts/list-commits.ps1)         | Lists all commits in a Git repository. [Read more...](docs/list-commits.md)                       |
-| [list-latest-tag.ps1](scripts/list-latest-tag.ps1)   | Lists the latest tag on the current branch in a Git repository. [Read more...](docs/list-latest-tag.md) |
-| [list-latest-tags.ps1](scripts/list-latest-tags.ps1) | Lists the latests tags in all Git repositories under a directory. [Read more...](docs/list-latest-tags.md) |
-| [list-repos.ps1](scripts/list-repos.ps1)             | Lists all Git repositories in a folder. [Read more...](docs/list-repos.md)                        |
-| [list-submodules.ps1](scripts/list-submodules.ps1)   | Lists all submodules in a Git repository. [Read more...](docs/list-submodules.md)                 |
-| [list-tags.ps1](scripts/list-tags.ps1)               | Lists all tags in a Git repository. [Read more...](docs/list-tags.md)                             |
-| [new-branch.ps1](scripts/new-branch.ps1)             | Creates a new branch in a Git repository. [Read more...](docs/new-branch.md)                      |
-| [new-tag.ps1](scripts/new-tag.ps1)                   | Creates a new tag in a Git repository. [Read more...](docs/new-tag.md)                            |
-| [pick-commit.ps1](scripts/pick-commit.ps1)           | Cherry-picks a Git commit into multiple branches. [Read more...](docs/pick-commit.md)             |
-| [pull-repo.ps1](scripts/pull-repo.ps1)               | Pulls updates for a Git repository. [Read more...](docs/pull-repo.md)                             |
-| [pull-repos.ps1](scripts/pull-repos.ps1)             | Pulls updates for all Git repositories in a folder. [Read more...](docs/pull-repos.md)            |
-| [remove-tag.ps1](scripts/remove-tag.ps1)             | Removes a tag in a Git repository. [Read more...](docs/remove-tag.md)                             |
-| [switch-branch.ps1](scripts/switch-branch.ps1)       | Switches the branch in a Git repository. [Read more...](docs/switch-branch.md)                    |
-| [sync-repo.ps1](scripts/sync-repo.ps1)               | Synchronizes a Git repository by pull & push. [Read more...](docs/sync-repo.md)                   |
-| [write-changelog.ps1](scripts/write-changelog.ps1)   | Writes a changelog from Git commits. [Read more...](docs/write-changelog.md)                      |
+| Script                                               | Description                                                                                      |
+| ---------------------------------------------------- | ------------------------------------------------------------------------------------------------ |
+| [build-repo.ps1](scripts/build-repo.ps1)             | Builds a Git repository. [Read more »](docs/build-repo.md)                                       |
+| [build-repos.ps1](scripts/build-repos.ps1)           | Builds all Git repositories in a folder. [Read more »](docs/build-repos.md)                      |
+| [check-repo.ps1](scripts/check-repo.ps1)             | Checks a Git repository. [Read more »](docs/check-repo.md)                                       |
+| [clean-repo.ps1](scripts/clean-repo.ps1)             | Cleans a Git repository from untracked files. [Read more »](docs/clean-repo.md)                  |
+| [clean-repos.ps1](scripts/clean-repos.ps1)           | Cleans all Git repositories in a folder from untracked files. [Read more »](docs/clean-repos.md) |
+| [clone-repos.ps1](scripts/clone-repos.ps1)           | Clones well-known Git repositories. [Read more »](docs/clone-repos.md)                           |
+| [configure-git.ps1](scripts/configure-git.ps1)       | Sets up the Git user configuration. [Read more »](docs/configure-git.md)                         |
+| [fetch-repo.ps1](scripts/fetch-repo.ps1)             | Fetches updates for a Git repository. [Read more »](docs/fetch-repo.md)                          |
+| [fetch-repos.ps1](scripts/fetch-repos.ps1)           | Fetches updates for all Git repositories in a folder. [Read more »](docs/fetch-repos.md)         |
+| [list-branches.ps1](scripts/list-branches.ps1)       | Lists all branches in a Git repository. [Read more »](docs/list-branches.md)                     |
+| [list-commit-stats.ps1](scripts/list-commit-stats.ps1) | Lists a Git commit statistics. [Read more »](docs/list-commit-stats.md)                        |
+| [list-commits.ps1](scripts/list-commits.ps1)         | Lists all commits in a Git repository. [Read more »](docs/list-commits.md)                       |
+| [list-latest-tag.ps1](scripts/list-latest-tag.ps1)   | Lists the latest tag on the current branch in a Git repository. [Read more »](docs/list-latest-tag.md) |
+| [list-latest-tags.ps1](scripts/list-latest-tags.ps1) | Lists the latests tags in all Git repositories under a directory. [Read more »](docs/list-latest-tags.md) |
+| [list-repos.ps1](scripts/list-repos.ps1)             | Lists all Git repositories in a folder. [Read more »](docs/list-repos.md)                        |
+| [list-submodules.ps1](scripts/list-submodules.ps1)   | Lists all submodules in a Git repository. [Read more »](docs/list-submodules.md)                 |
+| [list-tags.ps1](scripts/list-tags.ps1)               | Lists all tags in a Git repository. [Read more »](docs/list-tags.md)                             |
+| [new-branch.ps1](scripts/new-branch.ps1)             | Creates a new branch in a Git repository. [Read more »](docs/new-branch.md)                      |
+| [new-tag.ps1](scripts/new-tag.ps1)                   | Creates a new tag in a Git repository. [Read more »](docs/new-tag.md)                            |
+| [pick-commit.ps1](scripts/pick-commit.ps1)           | Cherry-picks a Git commit into multiple branches. [Read more »](docs/pick-commit.md)             |
+| [pull-repo.ps1](scripts/pull-repo.ps1)               | Pulls updates for a Git repository. [Read more »](docs/pull-repo.md)                             |
+| [pull-repos.ps1](scripts/pull-repos.ps1)             | Pulls updates for all Git repositories in a folder. [Read more »](docs/pull-repos.md)            |
+| [remove-tag.ps1](scripts/remove-tag.ps1)             | Removes a tag in a Git repository. [Read more »](docs/remove-tag.md)                             |
+| [switch-branch.ps1](scripts/switch-branch.ps1)       | Switches the branch in a Git repository. [Read more »](docs/switch-branch.md)                    |
+| [sync-repo.ps1](scripts/sync-repo.ps1)               | Synchronizes a Git repository by pull & push. [Read more »](docs/sync-repo.md)                   |
+| [write-changelog.ps1](scripts/write-changelog.ps1)   | Writes a changelog from Git commits. [Read more »](docs/write-changelog.md)                      |
 
 🔎 Scripts for PowerShell 
 ------------------------
