@@ -10,8 +10,8 @@ Mega Collection of PowerShell Scripts
 
 | Script                                               | Description                                                                                     |
 | ---------------------------------------------------- | ----------------------------------------------------------------------------------------------- |
-| [list-voices.ps1](scripts/list-voices.ps1)           | Lists the installed text-to-speech voices. [Read more...](docs/list-voices.md)                  |
-| [play-beep-sound.ps1](scripts/play-beep-sound.ps1)   | Plays a short beep sound. [Read more...](docs/play-beep-sound.md)                               |
+| [list-voices.ps1](scripts/list-voices.ps1)           | Lists the installed text-to-speech voices. [Read more »](docs/list-voices.md)                  |
+| [play-beep-sound.ps1](scripts/play-beep-sound.ps1)   | Plays a short beep sound. [Read more »](docs/play-beep-sound.md)                               |
 | [play-files.ps1](scripts/play-files.ps1)             | Plays the given audio files. [Read more...](docs/play-files.md)                                 |
 | [play-happy-birthday.ps1](scripts/play-happy-birthday.ps1) | Plays the Happy Birthday song. [Read more...](docs/play-happy-birthday.md)                |
 | [play-imperial-march.ps1](scripts/play-imperial-march.ps1) | Plays the Imperial March (Star Wars). [Read more...](docs/play-imperial-march.md)         |
