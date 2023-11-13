@@ -3,47 +3,46 @@
 	Wakes up a computer using Wake-on-LAN
 .DESCRIPTION
 	This PowerShell script sends a magic UDP packet to a computer to wake him up (requires the target computer to have Wake-on-LAN activated).
-.PARAMETER MACaddress
+.PARAMETER macAddr
 	Specifies the host's MAC address (e.g. 11:22:33:44:55:66)
-.PARAMETER IPaddress
+.PARAMETER ipAddr
 	Specifies the host's IP address or subnet address (e.g. 192.168.0.255)
-.PARAMETER Port
+.PARAMETER udpPort
 	Specifies the UDP port (9 by default)
-.PARAMETER NumRetries
-	Specifies number of retries (3 by default)
+.PARAMETER numTimes
+	Specifies # of times to send the packet (3 by default)
 .EXAMPLE
 	PS> ./wake-up.ps1 11:22:33:44:55:66 192.168.100.100
+	✔️ Sent magic packet to IP 192.168.100.100, UDP port 9 (3 times). Wait a minute until the computer fully boots up.
 .LINK
 	https://github.com/fleschutz/PowerShell
 .NOTES
 	Author: Markus Fleschutz | License: CC0
 #>
 
-param([string]$MACaddress = "", [string]$IPaddress = "", [int]$Port=9, [int]$NumRetries=3)
+param([string]$macAddr = "", [string]$ipAddr = "", [int]$udpPort = 9, [int]$numTimes = 3)
 	
-function Send-WOL { param([string]$mac, [string]$ip, [int]$port) 
-	$broadcast = [Net.IPAddress]::Parse($ip) 
+function Send-WOL { param([string]$macAddr, [string]$ipAddr, [int]$udpPort) 
+	$broadcastAddr = [Net.IPAddress]::Parse($ipAddr) 
   
-	$mac=(($mac.replace(":","")).replace("-","")).replace(".","") 
-	$target=0,2,4,6,8,10 | % {[convert]::ToByte($mac.substring($_,2),16)} 
+	$macAddr = (($macAddr.replace(":","")).replace("-","")).replace(".","") 
+	$target = 0,2,4,6,8,10 | % {[convert]::ToByte($macAddr.substring($_,2),16)} 
 	$packet = (,[byte]255 * 6) + ($target * 16) 
   
-	$UDPclient = new-Object System.Net.Sockets.UdpClient 
-	$UDPclient.Connect($broadcast,$port) 
+	$UDPclient = New-Object System.Net.Sockets.UdpClient 
+	$UDPclient.Connect($broadcastAddr, $udpPort) 
 	[void]$UDPclient.Send($packet, 102)  
 } 
 
 try {
-	if ($MACaddress -eq "" ) { $MACaddress = Read-Host "Enter the host's MAC address, e.g. 11:22:33:44:55:66" }
-	if ($IPaddress -eq "" ) { $IPaddress = Read-Host "Enter the host's IP or subnet address, e.g. 192.168.0.255" }
+	if ($macAddr -eq "" ) { $macAddr = Read-Host "Enter the host's MAC address, e.g. 11:22:33:44:55:66" }
+	if ($ipAddr -eq "" ) { $ipAddr = Read-Host "Enter the host's IP or subnet address, e.g. 192.168.0.255" }
 
-	Send-WOL $MACaddress $IPaddress $Port
-	for ($i = 0; $i -lt $NumRetries; $i++) {
-		Start-Sleep -milliseconds 100
-		Send-WOL $MACaddress $IPaddress $Port
+	for ($i = 0; $i -lt $numTimes; $i++) {
+		Send-WOL $macAddr $ipAddr $udpPort
+		Start-Sleep -milliseconds 100	
 	}
-	"✔️ sent magic packet with MAC $MACaddress to IP $IPaddress on port $Port as wakeup call ($($NumRetries + 1) times)"
-	"   (Hint: wait a minute until the computer fully boots up)"
+	"✔️ Sent magic packet to IP $ipAddr, UDP port $udpPort ($numTimes times). Wait a minute until the computer fully boots up."
 	exit 0 # success
 } catch {
 	"⚠️ Error in line $($_.InvocationInfo.ScriptLineNumber): $($Error[0])"
