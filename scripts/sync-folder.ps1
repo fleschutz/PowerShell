@@ -1,31 +1,43 @@
-<#
+﻿<#
 .SYNOPSIS
-	Sync's two folders
+	Syncronizes two folders
 .DESCRIPTION
-	This PowerShell script synchronizes two folders via Robocopy (useful for e.g. backups).
-	NOTE: Make sure the target folder is correct because the content gets replaced!
-.PARAMETER Source
-	Path to the source folder
-.PARAMETER Destination
-	Path to the destination folder
+	This PowerShell script synchronizes (mirrors) the content of 2 directory trees by using Robocopy.
+	Typical use cases are backups: at first everything is copied (full backup), afterward only changes are copied (incremental backup).
+	IMPORTANT NOTE: Make sure the target path is correct because the content gets replaced (DATA LOSS)!
+.PARAMETER sourcePath
+	Specifies the path to the source folder
+.PARAMETER targetPath
+	Specifies the path to the target folder
 .EXAMPLE
-	sync-folder -source C:\Folder01 -destination C:\Folder02
+	PS> ./sync-folder.ps1 C:\MyPhotos D:\Backups\MyPhotos
+.LINK
+	https://github.com/fleschutz/PowerShell
+.NOTES
+	Author: Markus Fleschutz | License: CC0
 #>
 
-function Sync-Folder
-{
+param([string]$sourcePath = "", [string]$targetPath = "")
 
-	[CmdletBinding()]
-	param (
-		
-		[Parameter(Mandatory)][string]$Source,
-		[Parameter(Mandatory)][string]$Destination
-	)
-	
-	$RobocopyParams = $Source, $Destination, '/MIR', '/FFT', '/NDL', '/NP', '/NS'
+try {
+	if ($sourcePath -eq "") { $sourcePath = Read-Host "Enter the path to the source folder" }
+	if ($targetPath -eq "") { $targetPath = Read-Host "Enter the path to the target folder" }
+	$stopWatch = [system.diagnostics.stopwatch]::startNew()
 
-	robocopy.exe $RobocopyParams
+	$robocopyParameters = $sourcePath, $targetPath, '/MIR', '/FFT', '/NDL', '/NP', '/NS'
+	# /MIR = mirror a directory tree
+	# /FFT = assume FAT file times (2-second granularity)
+	# /NDL = don't log directory names
+	# /NP  = don't display percentage copied
+	# /NS  = don't log file sizes
 
-	if ($LastExitCode -gt 3) { throw 'Robocopy failed.' }
+	robocopy.exe $robocopyParameters
+	if ($lastExitCode -gt 3) { throw 'Robocopy failed.' }
 
+	[int]$elapsed = $stopWatch.Elapsed.TotalSeconds
+	"✔️ Synced 📂$sourcePath to 📂$targetPath in $elapsed sec"
+	exit 0 # success
+} catch {
+	"⚠️ Error in line $($_.InvocationInfo.ScriptLineNumber): $($Error[0])"
+	exit 1
 }
