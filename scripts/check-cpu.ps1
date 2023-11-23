@@ -5,14 +5,26 @@
 	This PowerShell script queries the CPU status (name, type, speed, temperature, etc) and prints it.
 .EXAMPLE
 	PS> ./check-cpu.ps1
-	✅  Intel(R) Core(TM) i9-10900X CPU @ 3.70GHz (AMD64, 20 cores, CPU0, 3696MHz, CPU0 socket, 31.3°C)
+	✅ Intel(R) Core(TM) i9-10900X CPU @ 3.70GHz (AMD64, 20 cores, CPU0, 3696MHz, CPU0 socket, 31.3°C)
 .LINK
 	https://github.com/fleschutz/PowerShell
 .NOTES
 	Author: Markus Fleschutz | License: CC0
 #>
 
-function GetProcessorTemperature {
+function GetCPUArchitecture {
+	if ("$env:PROCESSOR_ARCHITECTURE" -ne "") { return "$env:PROCESSOR_ARCHITECTURE" }
+	if ($IsLinux) {
+		$Name = $PSVersionTable.OS
+		if ($Name -like "*-generic *") {
+			if ([System.Environment]::Is64BitOperatingSystem) { return "x64" } else { return "x86" }
+		} elseif ($Name -like "*-raspi *") {
+			if ([System.Environment]::Is64BitOperatingSystem) { return "ARM64" } else { return "ARM32" }
+		} elseif ([System.Environment]::Is64BitOperatingSystem) { return "64-bit" } else { return "32-bit" }
+	}
+}
+
+function GetCPUTemperature {
 	$temp = 99999.9 # unsupported
 	if ($IsLinux) {
 		if (Test-Path "/sys/class/thermal/thermal_zone0/temp" -pathType leaf) {
@@ -29,37 +41,10 @@ function GetProcessorTemperature {
 	return $temp
 }
 
-function GetProcessorArchitecture {
-	if ("$env:PROCESSOR_ARCHITECTURE" -ne "") { return "$env:PROCESSOR_ARCHITECTURE" }
-	if ($IsLinux) {
-		$Name = $PSVersionTable.OS
-		if ($Name -like "*-generic *") {
-			if ([System.Environment]::Is64BitOperatingSystem) { return "x64" } else { return "x86" }
-		} elseif ($Name -like "*-raspi *") {
-			if ([System.Environment]::Is64BitOperatingSystem) { return "ARM64" } else { return "ARM32" }
-		} else {
-			return ""
-		}
-	}
-}
-
 try {
 	Write-Progress "Querying CPU status...     "
 	$status = "✅"
-	$celsius = GetProcessorTemperature
-	if ($celsius -eq 99999.9) {
-		$temp = "no temp"
-	} elseif ($celsius -gt 50) {
-		$temp = "$($celsius)°C"
-		$status = "⚠️"
-	} elseif ($celsius -lt 0) {
-		$temp = "$($celsius)°C"
-		$status = "⚠️"
-	} else {
-		$temp = "$($celsius)°C"
-	} 
-
-	$arch = GetProcessorArchitecture
+	$arch = GetCPUArchitecture
 	if ($IsLinux) {
 		$cpuName = "$arch CPU"
 		$arch = ""
@@ -75,7 +60,20 @@ try {
 		$socket = "$($details.SocketDesignation) socket, "
 	}
 	$cores = [System.Environment]::ProcessorCount
-	Write-Progress -completed " "
+	$celsius = GetCPUTemperature
+	if ($celsius -eq 99999.9) {
+		$temp = "no temp"
+	} elseif ($celsius -gt 50) {
+		$temp = "$($celsius)°C"
+		$status = "⚠️"
+	} elseif ($celsius -lt 0) {
+		$temp = "$($celsius)°C"
+		$status = "⚠️"
+	} else {
+		$temp = "$($celsius)°C"
+	} 
+
+	Write-Progress -completed "Done."
 	Write-Host "$status $cpuName ($($arch)$cores cores, $($deviceID)$($speed)$($socket)$temp)"
 	exit 0 # success
 } catch {
