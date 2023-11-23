@@ -500,6 +500,10 @@ AYU,As Yet Unknown
 AZ,"Arizona (postal symbol),Azerbaijan (ISO 3166 digram),Alkmaar Zaanstreek (Dutch football club)"
 AZE,Azerbaijan (ISO 3166 trigram)
 AZUR,"Actions en zone urbaine (French for: Urban Operations)"
+B2B,Business to Business
+B2C,Business to Consumer
+B2G,Business to Government
+B2E,Business to Employee
 BAR,"Barbados (IOC trigram,but not FIFA or ISO 3166),British American Racing,Browning Automatic Rifle,Buy-American Restrictions,BARD , Binational Agricultural Research and Development fund (between the US and Israel),BARDA , Biomedical Advanced Research and Development Agency,BART , Bay Area Rapid Transit,BAS , Battalion Aid Station,BASE , Building,Antenna,Span,Earth (parachute from),BASF , Badische Anilin und Soda Fabrik (Baden Aniline and Soda Factory,a German chemicals company),BASIC , Beginner's All-purpose Symbolic Instruction Code (acronym was added later,originally it was simply Basic),BAT , Basic Aid Training,BATF , U.S. Bureau of Alcohol,Tobacco,and Firearms,BATS , Behavior Analysis Training System ,Bradley Advanced Training System,BATTeRS , Bisei Asteroid Tracking Telescope for Rapid Survey,BB[edit]"
 BB,"Barbados (ISO 3166 digram),Boys' Brigade (Christian youth organization),Brigitte Bardot (actress),Bumblebee"
 BBB,"Better Business Bureau,Blood-brain barrier"
@@ -4041,8 +4045,6 @@ RAE,UK Royal Aircraft Establishment (-1991)
 RAF,Red Army Faction,Royal Air Force
 RAG,Raising and Giving,Rocket Antitank Grenade
 RAGBRAI,Register's Annual Great Bicycle Ride Across Iowa
-RAM,Rolling Airframe Missile,
-RAM,Royal Air Maroc
 Ramark,RAdar MARKer
 RAOC,Rear Area Operation Centre
 RAP, Radio Access Point,Radiological Assistance Program (U.S. Department of Energy),Rear Area Protection,Recognised [Operating/Operational] Air Picture,Recurring Advance Payment,Relational Associative Processor,Reliable Acoustic Path,Rocket-Assisted Projectile,Rule Against Perpetuities

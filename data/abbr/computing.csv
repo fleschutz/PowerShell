@@ -153,6 +153,7 @@ AFP,Apple Filing Protocol
 AFS,Andrew file system
 aglet,agile applet
 AGP,Accelerated Graphics Port
+AGI,Artificial General Intelligence
 AHA,Accelerated Hub Architecture
 AHIMA,American Health Information Management Association
 AHRQ,Agency for Healthcare Research and Quality
@@ -281,10 +282,6 @@ AWS,Amazon Web Services
 AWT,Abstract Window Toolkit
 AXI,automated X-ray inspection
 AXT,alien crosstalk
-B2B,Business to Business
-B2C,Business to Consumer
-B2G,"Business to Government, or Bitcoin2Gen"
-B2E,Business to Employee
 B8ZS,"bipolar 8-zero substitution, binary 8-zero substitution, clear channel, clear 64"
 BA,business agility
 BA,business analytics
@@ -1355,7 +1352,6 @@ HMIPv6,Hierarchical Mobile IPv6
 HMM,Hidden Markov Model
 HOLAP,hybrid online analytical processing
 HomeRF,home radio frequency
-HP,Hewlett-Packard
 HP,High Performance
 HP-GL,Hewlett-Packard Graphics Language
 HPC,High-Performance Computing
@@ -1911,7 +1907,6 @@ OID,object ID
 OLA,operational level agreement
 OLAP,online analytical processing
 OLE,Object Linking and Embedding
-OLED,light-emitting diode
 OLPC,One Laptop Per Child
 OLT,optical line terminal
 OLTP,On Line Transaction Processing
