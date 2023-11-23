@@ -17,7 +17,7 @@
 	Author: Markus Fleschutz | License: CC0
 #>
 
-param([string]$RSS_URL = "https://yahoo.com/news/rss/world", [int]$maxCount = 20)
+param([string]$RSS_URL = "https://www.yahoo.com/news/rss", [int]$maxCount = 20)
 
 try {
 	[xml]$content = (Invoke-WebRequest -uri $RSS_URL -useBasicParsing).Content

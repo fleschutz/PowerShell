@@ -19,7 +19,7 @@
 	Author: Markus Fleschutz | License: CC0
 #>
 
-param([string]$RSS_URL = "https://yahoo.com/news/rss/world", [int]$maxLines = 24, [int]$speed = 10)
+param([string]$RSS_URL = "https://www.yahoo.com/news/rss", [int]$maxLines = 24, [int]$speed = 10)
 
 try {
 	[xml]$content = (Invoke-WebRequest -URI $RSS_URL -useBasicParsing).Content
