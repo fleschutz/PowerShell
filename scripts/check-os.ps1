@@ -16,7 +16,7 @@ try {
 	if ($IsLinux) {
 		$Name = $PSVersionTable.OS
 		if ([System.Environment]::Is64BitOperatingSystem) { $Arch = "64-bit" } else { $Arch = "32-bit" }
-		Write-Host "✅ $Name $Arch"
+		Write-Host "✅ $Name (Linux $Arch)"
 	} else {
 		$OS = Get-WmiObject -class Win32_OperatingSystem
 		$Name = $OS.Caption -Replace "Microsoft Windows","Windows"
