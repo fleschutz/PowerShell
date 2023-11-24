@@ -1,10 +1,10 @@
 ﻿<#
 .SYNOPSIS
-	List the latest news
+	Lists the latest news
 .DESCRIPTION
-	This PowerShell script lists the latest news by using RSS (Really Simple Syndication) feeds.
+	This PowerShell script lists the latest news by using a RSS (Really Simple Syndication) feed.
 .PARAMETER RSS_URL
-	Specifies the URL to the RSS feed (Yahoo News by default)
+	Specifies the URL to the RSS feed (Yahoo World News by default)
 .PARAMETER maxLines
 	Specifies the maximum number of lines to list (24 by default)
 .PARAMETER speed
@@ -19,7 +19,7 @@
 	Author: Markus Fleschutz | License: CC0
 #>
 
-param([string]$RSS_URL = "https://www.yahoo.com/news/rss", [int]$maxLines = 24, [int]$speed = 10)
+param([string]$RSS_URL = "https://news.yahoo.com/rss/world", [int]$maxLines = 24, [int]$speed = 10)
 
 try {
 	[xml]$content = (Invoke-WebRequest -URI $RSS_URL -useBasicParsing).Content
@@ -28,8 +28,8 @@ try {
 		& "$PSScriptRoot/write-typewriter.ps1" "❇️ $($item.title)" $speed
 		if ($count++ -eq $maxLines) { break }
 	}
-	$source = $Content.rss.channel.title
-	$date = $Content.rss.channel.pubDate
+	$source = $content.rss.channel.title
+	$date = $content.rss.channel.pubDate
 	"   (by $source as of $date)"
 	exit 0 # success
 } catch {
