@@ -2,7 +2,7 @@
 .SYNOPSIS
 	Executes tasks on desktop login
 .DESCRIPTION
-	This PowerShell script executes some 'welcome' tasks on every user's desktop login.
+	This PowerShell script executes some 'welcome' tasks on desktop login by the user.
 	NOTE: For installation on Windows create and put a symbolic link to this script into the Autostart folder (usually at: C:\Users\<USERNAME>\AppData\Roaming\Microsoft\Windows\Start Menu\Programs\Startup).
 .EXAMPLE
 	PS> ./on-desktop-login.ps1
