@@ -1,19 +1,17 @@
 ﻿<#
 .SYNOPSIS
-	← enter overview of script here
+	← enter a brief description of the script here
 .DESCRIPTION
-	← enter brief description of script here
-.INPUTS
-	← enter inputs here (if any, otherwise state None)
-.OUTPUTS
-	← enter outputs here (if any, otherwise state None)
+	← enter a detailed description of the script here
+.PARAMETER
+	← enter the description of a parameter here (repeat the .PARAMETER for each parameter)
 .EXAMPLE
-	PS> .\template.ps1 ← enter example here (repeat this attribute for more than one example)
+	← enter a sample command that uses the script, optionally followed by sample output and a description (repeat the .EXAMPLE for each example)
 .NOTES
 	Author:        ← enter full name here
 	License:       ← enter license here
 .LINK
-	← enter URL here
+	← enter URL to additional information here
 #>
 
 #requires -version 4
@@ -26,8 +24,8 @@ try {
 #	← enter instructions here 
 
 	"✔️ Done."
-	exit 0
+	exit 0 # success
 } catch {
-	write-error "⚠️ Error in line $($_.InvocationInfo.ScriptLineNumber): $($Error[0])"
+	"⚠️ Error in line $($_.InvocationInfo.ScriptLineNumber): $($Error[0])"
 	exit 1
 }
