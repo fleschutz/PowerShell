@@ -24,8 +24,10 @@ try {
 		& sudo apt list --upgradable
 		"⏳ (2/2) Querying Snap updates..."
 		& sudo snap refresh --list
+	} elseif ($IsMacOS) {
+		throw "Sorry, MacOS not supported yet"
 	} else {
-		Write-Progress "Querying the latest updates from winget and Microsoft Store..."
+		Write-Progress "Querying updates from Microsoft Store and winget..."
 		" "
 		& winget upgrade --include-unknown
 		Write-Progress -completed "Done."
