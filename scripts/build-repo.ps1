@@ -35,8 +35,8 @@ function BuildInDir([string]$path) {
 		& make -j4
 		if ($lastExitCode -ne "0") { throw "Executing 'make -j4' has failed" }
 
-		"⏳ (4/4) Executing 'make test' to perform tests (optional)..."
-		& make test
+		"⏳ (4/4) Executing 'ctest -V' to perform tests (optional)..."
+		& ctest -V
 		if ($lastExitCode -ne "0") { throw "Executing 'make test' has failed" }
 
 	} elseif (Test-Path "$path/configure" -pathType leaf) { 
@@ -139,7 +139,7 @@ try {
 
 	$repoDirName = (Get-Item "$path").Name
 	[int]$elapsed = $stopWatch.Elapsed.TotalSeconds
-	"✔️ Built 📂$repoDirName in $elapsed sec"
+	"✔️ Built repo 📂$repoDirName in $elapsed sec"
 	exit 0 # success
 } catch {
 	"⚠️ Error in line $($_.InvocationInfo.ScriptLineNumber): $($Error[0])"
