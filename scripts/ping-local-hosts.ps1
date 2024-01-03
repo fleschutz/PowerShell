@@ -5,7 +5,7 @@
         This PowerShell script pings the computers in the local network and lists which one are up.
 .EXAMPLE
         PS> ./ping-local-hosts.ps1
-	✅ Up are: Hippo Jenkins01 Jenkins02 Rocket Vega
+	✅ Hippo Jenkins01 Jenkins02 Rocket Vega are up.
 .LINK
         https://github.com/fleschutz/PowerShell
 .NOTES
@@ -13,38 +13,36 @@
 #>
 
 try {
+	Write-Progress "Sending pings to the local hosts..."
 	[string]$hosts = "Amnesiac,ArchLinux,Berlin,Boston,Brother,Canon,Castor,Cisco,EchoDot,Epson,Fedora,Fireball,Firewall,fritz.box,GasSensor,Gateway,Hippo,HomeManager,Io,iPhone,Jarvis,Jenkins01,Jenkins02,LA,Laptop,Jupiter,Mars,Mercury,Miami,Mobile,NY,OctoPi,Paris,Pixel-6a,Pluto,Printer,Proxy,R2D2,Raspberry,Rocket,Rome,Router,Server,Shelly1,SmartPhone,SmartWatch,Soundbar,Sunnyboy,Surface,Switch,Tablet,Tolino,TV,Ubuntu,Vega,Venus,XRX,Zeus" # sorted alphabetically
-	[int]$timeout = 600 # milliseconds
 	$hostsArray = $hosts.Split(",")
 	$count = $hostsArray.Count
 
-	Write-Progress "Sending pings to the local hosts..."
+	[int]$timeout = 600 # ms
         $queue = [System.Collections.Queue]::new()
 	foreach($hostname in $hostsArray) {
 		$ping = [System.Net.Networkinformation.Ping]::new()
-		$object = @{ Host = $hostname; Ping = $ping; Async = $ping.SendPingAsync($hostname, $timeout) }
- 		$queue.Enqueue($object)
+		$obj = @{ Host = $hostname; Ping = $ping; Async = $ping.SendPingAsync($hostname, $timeout) }
+ 		$queue.Enqueue($obj)
         }
 
 	[string]$result = ""
 	while ($queue.Count -gt 0) {
-		$object = $queue.Dequeue()
+		$obj = $queue.Dequeue()
 		try {
-                	if ($object.Async.Wait($timeout) -eq $true) {
-				if ($object.Async.Result.Status -ne "TimedOut") {
-					$result += "$($object.Host) "
+                	if ($obj.Async.Wait($timeout) -eq $true) {
+				if ($obj.Async.Result.Status -ne "TimedOut") {
+					$result += "$($obj.Host) "
 				}
 				continue
 			}
 		} catch {
-			if ($object.Async.IsCompleted -eq $true) {
-				continue
-			}
+			if ($obj.Async.IsCompleted -eq $true) {	continue }
 		}
-		$queue.Enqueue($object)
+		$queue.Enqueue($obj)
 	}
 	Write-Progress -completed "Done."
-	Write-Host "✅ Up are: $result"
+	Write-Host "✅ $($result)are up."
 	exit 0 # success
 } catch {
         "⚠️ Error in line $($_.InvocationInfo.ScriptLineNumber): $($Error[0])"
