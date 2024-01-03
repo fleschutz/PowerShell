@@ -1,12 +1,12 @@
 ﻿<#
 .SYNOPSIS
-	Checks the ping latency 
+	Pings remote hosts to measure the latency 
 .DESCRIPTION
-	This PowerShell script measures the ping roundtrip times from the local computer to other ones (10 Internet servers by default).
+	This PowerShell script measures the ping roundtrip times from the local computer to remote ones (10 Internet servers by default).
 .PARAMETER hosts
 	Specifies the hosts to ping, seperated by commata (10 Internet servers by default)
 .EXAMPLE
-	PS> ./check-ping.ps1
+	PS> ./ping-remote-hosts.ps1
 	✅ Online with 18ms latency (13ms...109ms, 0/10 ping loss)
 .LINK
 	https://github.com/fleschutz/PowerShell
