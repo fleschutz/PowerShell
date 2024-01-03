@@ -2,9 +2,9 @@
 .SYNOPSIS
         Pings local hosts
 .DESCRIPTION
-        This PowerShell script pings well-known hostnames in the local network and lists which one up.
+        This PowerShell script pings the computers in the local network and lists which one are up.
 .EXAMPLE
-        PS> ./check-hosts.ps1
+        PS> ./ping-local-hosts.ps1
 	✅ Up are: Hippo Jenkins01 Jenkins02 Rocket Vega
 .LINK
         https://github.com/fleschutz/PowerShell
@@ -18,7 +18,7 @@ try {
 	$hostsArray = $hosts.Split(",")
 	$count = $hostsArray.Count
 
-	Write-Progress "Sending pings to $count local hosts..."
+	Write-Progress "Sending pings to the local hosts..."
         $queue = [System.Collections.Queue]::new()
 	foreach($hostname in $hostsArray) {
 		$ping = [System.Net.Networkinformation.Ping]::new()
