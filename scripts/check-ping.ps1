@@ -2,12 +2,12 @@
 .SYNOPSIS
 	Checks the ping latency 
 .DESCRIPTION
-	This PowerShell script measures the ping roundtrip times from the local computer to other computers (10 Internet servers by default).
+	This PowerShell script measures the ping roundtrip times from the local computer to other ones (10 Internet servers by default).
 .PARAMETER hosts
-	Specifies the hosts to check, seperated by commata (default is: amazon.com,bing.com,cnn.com,dropbox.com,github.com,google.com,live.com,meta.com,x.com,youtube.com)
+	Specifies the hosts to ping, seperated by commata (10 Internet servers by default)
 .EXAMPLE
 	PS> ./check-ping.ps1
-	✅ Online with 18ms latency average (13ms...109ms, 0/10 ping loss)
+	✅ Online with 18ms latency (13ms...109ms, 0/10 ping loss)
 .LINK
 	https://github.com/fleschutz/PowerShell
 .NOTES
@@ -36,7 +36,7 @@ try {
 	[int]$loss = $total - $success
 	if ($success -ne 0) {
 		$avg /= $success
-		Write-Host "✅ Online with $($avg)ms latency average ($($min)ms...$($max)ms, $loss/$total ping loss)"
+		Write-Host "✅ Online with $($avg)ms latency ($($min)ms...$($max)ms, $loss/$total ping loss)"
 	} else {
 		Write-Host "⚠️ Offline ($loss/$total ping loss)"
 	}
