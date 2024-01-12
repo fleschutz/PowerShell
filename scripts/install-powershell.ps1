@@ -247,22 +247,12 @@ function Add-PathTToSettings {
 }
 
 if ($IsLinux) {
-    $Name = $PSVersionTable.OS
-    if ($Name -like "*-generic *") {
-        if ([System.Environment]::Is64BitOperatingSystem) {
-            $architecture = "x64"
-	} else {
-            $architecture = "x86"
-	}
-    } elseif ($Name -like "*-raspi *") {
-        if ([System.Environment]::Is64BitOperatingSystem) {
-            $architecture = "arm64"
-	} else {
-            $architecture = "arm32"
-	}
-    } else {
-        $architecture = "x64"
-    }
+    $platform = (uname -i)
+    if ($platform -eq "x86_64") { $architecture = "x64" }
+    elseif ($platform -eq "x86_32") { $architecture = "x86" }
+    elseif ($platform -eq "aarch64") { $architecture = "arm64" }
+    elseif ($platform -eq "aarch32") { $architecture = "arm32" }
+    else { Write-Host "Unknown platform $platform" }
 } elseif (-not $IsWinEnv) {
     $architecture = "x64"
 } elseif ($(Get-ComputerInfo -Property OsArchitecture).OsArchitecture -eq "ARM 64-bit Processor") {
