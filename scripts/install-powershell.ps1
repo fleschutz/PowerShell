@@ -22,6 +22,7 @@
     Invoke this script directly from GitHub
     Invoke-Expression "& { $(Invoke-RestMethod 'https://aka.ms/install-powershell.ps1') } -daily"
 #>
+
 [CmdletBinding(DefaultParameterSetName = "Daily")]
 param(
     [Parameter(ParameterSetName = "Daily")]
@@ -116,7 +117,7 @@ function Remove-Destination([string] $Destination) {
         if ($DoNotOverwrite) {
             throw "Destination folder '$Destination' already exist. Use a different path or omit '-DoNotOverwrite' to overwrite."
         }
-        Write-Host "⏳ (2/2) Removing old installation at: $Destination" 
+        Write-Host "⏳ (5/5) Removing old installation at: $Destination" 
         if (Test-Path -Path "$Destination.old") {
             Remove-Item "$Destination.old" -Recurse -Force
         }
@@ -259,6 +260,8 @@ if ($IsLinux) {
 	} else {
             $architecture = "arm32"
 	}
+    } else {
+        $architecture = "x64"
     }
 } elseif (-not $IsWinEnv) {
     $architecture = "x64"
@@ -357,12 +360,14 @@ try {
             tar zxf $packagePath -C $contentPath
         }
     } else {
+        Write-Host "⏳ (1/5) Loading metadata from https://raw.githubusercontent.com ..."
         $metadata = Invoke-RestMethod https://raw.githubusercontent.com/PowerShell/PowerShell/master/tools/metadata.json
         if ($Preview) {
             $release = $metadata.PreviewReleaseTag -replace '^v'
         } else {
             $release = $metadata.ReleaseTag -replace '^v'
         }
+	Write-Host "⏳ (2/5) Found latest release $release for $architecture..."
 
         if ($IsWinEnv) {
             if ($UseMSI) {
@@ -379,9 +384,10 @@ try {
         } elseif ($IsMacOSEnv) {
             $packageName = "powershell-${release}-osx-${architecture}.tar.gz"
         }
+	Write-Host "⏳ (3/5) Package name to download is $packageName..."
 
         $downloadURL = "https://github.com/PowerShell/PowerShell/releases/download/v${release}/${packageName}"
-        Write-Host "⏳ (1/2) Loading $downloadURL"
+        Write-Host "⏳ (4/5) Loading $downloadURL"
 
         $packagePath = Join-Path -Path $tempDir -ChildPath $packageName
         if (!$PSVersionTable.ContainsKey('PSEdition') -or $PSVersionTable.PSEdition -eq "Desktop") {
