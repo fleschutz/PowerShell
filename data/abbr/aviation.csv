@@ -70,6 +70,7 @@ AFTN,Aeronautical Fixed Telecommunication Network
 AFM,Aircraft Flight Manual
 AGAS,Action Group for ATM Safety (EUROCONTROL)
 AGL,Above Ground Level
+AGNIS,"Azimuth Guidance for Nose-In Stand (docking system)"
 AH,Acceleration Height
 ahdg,alter heading
 AICS,Aircraft Inventory and Charter System
@@ -124,6 +125,7 @@ AOPA,Aircraft Owners and Pilots Association
 AOR,Area of Responsibility
 AP,Acquisition Plan
 APB,Acquisition Program Baselines
+APIS,Aircraft Parking and Information System
 APM,Approach Path Monitor
 APP,Approach
 APS,Airport Planning Standard
@@ -366,6 +368,8 @@ OFZ,Obstacle Free Zone
 OJT,On the Job Training
 OODA,"Observation, Orientation, Decision, and Action"
 PA,Pressure Altitude
+PADS,Parallax Aircraft Docking System
+PAPA,"Parallax Aircraft Parking Aid (docking system)"
 PAPI,Precision Approach Path Indicator
 PAR,Precision Approach Radar
 PCAS,Primary Crash Alarm System
@@ -554,7 +558,7 @@ VCS,Voice Communication System
 VCCS,Voice Communication Control System
 VCOA,Visual Climb Over Airport
 VDF,Very High Frequency Direction Finding
-VDGS,Visual Database Generation System
+VDGS,"Visual Docking Guidance System, Visual Database Generation System"
 VDL-4,VHF digital link Mode 4 (see also STDMA)
 VDU,Visual Display Unit
 VFS,Vertical Flight Society
