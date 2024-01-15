@@ -11,6 +11,7 @@ A/F,Autofeather
 A/FD,Airport/Facility Directory
 A/P,Autopilot
 A/R,Altitude Rate
+A-VDGS,Advanced Visual Docking Guidance System
 A300,Airbus A300 twinjet
 A310,Airbus A310 twinjet
 A320,Airbus A320 family of twinjets
@@ -55,8 +56,7 @@ ADL,Aeronautical Data Link
 ADLY,Arrival Delay
 ADP,Aerodrome dé Paris (Charles de Gaulle)
 ADP,Automated Data Processing
-ADS,Automated Distribution System
-ADS,Automatic Dependent Surveillance
+ADS,"Automated Distribution System, Automatic Dependent Surveillance, Aircraft Docking System"
 ADS-B,Automatic Dependent Surveillance-Broadcast
 AENA,Aeropuertos Españoles y Navegación Aérea
 AEO,All Engines Operative
