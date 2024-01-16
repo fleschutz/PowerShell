@@ -247,6 +247,7 @@ function ListTools {
 	ListTool pip		"--version"
 	ListTool pip3		"--version"
 	ListTool pip3.8		"--version"
+	ListTool pnputil	"/?"
 	ListTool powercfg	"/?"
 	ListTool powershell	"--version"
 	ListTool print		""
