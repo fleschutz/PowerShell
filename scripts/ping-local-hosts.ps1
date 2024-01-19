@@ -5,7 +5,7 @@
         This PowerShell script pings the computers in the local network and lists which one are up.
 .EXAMPLE
         PS> ./ping-local-hosts.ps1
-	✅ Hippo Jenkins01 Jenkins02 Rocket Vega are up.
+	✅ Up: Hippo Jenkins01 Jenkins02 Rocket Vega 
 .LINK
         https://github.com/fleschutz/PowerShell
 .NOTES
@@ -42,7 +42,7 @@ try {
 		$queue.Enqueue($obj)
 	}
 	Write-Progress -completed "Done."
-	Write-Host "✅ $($result)are up."
+	Write-Host "✅ Up: $($result)"
 	exit 0 # success
 } catch {
         "⚠️ Error in line $($_.InvocationInfo.ScriptLineNumber): $($Error[0])"

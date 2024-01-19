@@ -49,8 +49,8 @@ try {
 		Write-Output "⚠️ Swap space of $(MB2String $Total) is full"
 	} elseif ($Free -lt $minLevel) {
 		Write-Output "⚠️ Swap space of $(MB2String $Total) is nearly full, only $(MB2String $Free) free"
-	} elseif ($Used -eq 0) {
-		Write-Output "✅ Swap space of $(MB2String $Total) reserved"
+	} elseif ($Used -lt 5) {
+		Write-Output "✅ Swap space unused, $(MB2String $Free) free"
 	} else {
 		[int]$Percent = ($Used * 100) / $Total
 		Write-Output "✅ Swap space uses $Percent%, $(MB2String $Free) free of $(MB2String $Total)"
