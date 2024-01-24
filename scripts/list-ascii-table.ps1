@@ -6,9 +6,9 @@
 .EXAMPLE
         PS> ./list-ascii-table.ps1
 
-	Dec    Oct    Hex    HTML    Symbol     Description
-	---    ---    ---    ----    ------     -----------
-	  0    000     00    &#00;    NUL       Null character
+	Dec    Oct   Hex     Binary    HTML    Symbol     Description
+	---    ---   ---     ------    ----    ------     -----------
+	  0    000    00    00000000   &#00;    NUL       Null character
         ...
 .LINK
         https://github.com/fleschutz/PowerShell
@@ -52,11 +52,29 @@
 " 30    036     1E    00011110    &#30;    RS       Record Separator"
 " 31    037     1F    00011111    &#31;    US       Unit Separator"
 " 32    040     20    00100000    &#32;    space    Space"
-" 33    041     21    00100001    &#33;    !        Exclamation mark"
-" 34    042     22    00100010    &#34;    `"        Double quote"
-" 35    043     23    00100011    &#35;    #        Number"
-" 36    044     24    00100100    &#36;    $        Dollar sign"
-" 37    045     25    00100101    &#37;    %        Percent"
-" 38    046     26    00100110    &#38;    &        Ampersand"
-" 39    047     27    00100111    &#39;    '        Single quote"
+" 33    041     21    00100001    &excl;   !        Exclamation mark"
+" 34    042     22    00100010    &quot;   `"        Double quote"
+" 35    043     23    00100011    &num;    #        Number"
+" 36    044     24    00100100    &dollar; $        Dollar sign"
+" 37    045     25    00100101    &percnt; %        Percent"
+" 38    046     26    00100110    &amp;    &        Ampersand"
+" 39    047     27    00100111    &apos    '        Single quote"
+" 40    050     28    00101000    &lparen; (        Open parenthesis (or open bracket)"
+" 41    051     29    00101001    &rparen; )        Close parenthesis (or close bracket)"
+" 42    052     2A    00101010    &ast;    *        Asterisk"
+" 43    053     2B    00101011    &plus;   +        Plus"
+" 44    054     2C    00101100    &comma;  ,        Comma"
+" 45    055     2D    00101101    &#45;    -        Hyphen-minus"
+" 46    056     2E    00101110    &period; .        Period, dot or full stop"
+" 47    057     2F    00101111    &sol;    /        Slash or divide"
+" 48    060     30    00110000    &#48;    0        Zero"
+" 49    061     31    00110001    &#49;    1        One"
+" 50    062     32    00110010    &#50;    2        Two"
+" 51    063     33    00110011    &#51;    3        Three"
+" 52    064     34    00110100    &#52;    4        Four"
+" 53    065     35    00110101    &#53;    5        Five"
+" 54    066     36    00110110    &#54;    6        Six"
+" 55    067     37    00110111    &#55;    7        Seven"
+" 56    070     38    00111000    &#56;    8        Eight"
+" 57    071     39    00111001    &#57;    9        Nine"
 exit 0 # success
