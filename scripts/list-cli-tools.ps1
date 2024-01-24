@@ -92,6 +92,7 @@ function ListTools {
 	ListTool captoinfo	"-V"
 	ListTool cat		"-version"
 	ListTool cc		"--version"
+	ListTool certutil       "/?"
 	ListTool chattr		"--version"
 	ListTool chcon		"--version"
 	ListTool chcpu		"--version"
