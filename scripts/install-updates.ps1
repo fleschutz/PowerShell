@@ -2,10 +2,14 @@
 .SYNOPSIS
 	Installs software updates
 .DESCRIPTION
-	This PowerShell script installs software updates for the local machine (needs admin rights).
-	NOTE: Use the script 'list-updates.ps1' to list the latest software updates.
+	This PowerShell script installs software updates for the local machine (might need admin rights).
+	NOTE: Use the script 'list-updates.ps1' to list the latest software updates before.
 .EXAMPLE
 	PS> ./install-updates.ps1
+	⏳ (1/2) Checking drive space...
+	✅ Drive C: uses 56%, 441GB free of 999GB
+	⏳ (2/2) Installing updates from winget and Microsoft Store...
+	...
 .LINK
 	https://github.com/fleschutz/PowerShell
 .NOTES
@@ -13,7 +17,7 @@
 #>
 
 try {
-	$StopWatch = [system.diagnostics.stopwatch]::startNew()
+	$stopWatch = [system.diagnostics.stopwatch]::startNew()
 
 	if ($IsLinux) {
 		"⏳ (1/5) Checking drive space..."
@@ -35,12 +39,15 @@ try {
 		& sudo softwareupdate -i -a
 		Write-Progress -completed " "
 	} else {
-		Write-Progress "⏳ Installing updates from winget and Microsoft Store..."
+		"⏳ (1/2) Checking drive space..."
+		& "$PSScriptRoot/check-drive-space.ps1" C
+
+		"⏳ (2/2) Installing updates from winget and Microsoft Store..."
+		""
 		& winget upgrade --all --include-unknown
-		Write-Progress -completed " "
 	}
-	[int]$Elapsed = $StopWatch.Elapsed.TotalSeconds
-	"✅ Installed updates in $Elapsed sec"
+	[int]$elapsed = $stopWatch.Elapsed.TotalSeconds
+	"✅ Installed updates in $elapsed sec"
 	exit 0 # success
 } catch {
 	"⚠️ Error in line $($_.InvocationInfo.ScriptLineNumber): $($Error[0])"
