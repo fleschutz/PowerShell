@@ -299,6 +299,7 @@ function ListTools {
 	ListTool uniq		"--version"
 	ListTool vi		"--version"
 	ListTool vim		"--version"
+	ListTool vssadmin       "/?"
 	ListTool vulkaninfo	"--version"
 	ListTool w32tm		"/?"
 	ListTool waitfor	"--version"
