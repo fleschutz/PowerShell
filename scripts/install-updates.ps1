@@ -16,16 +16,19 @@ try {
 	$StopWatch = [system.diagnostics.stopwatch]::startNew()
 
 	if ($IsLinux) {
-		"⏳ (1/4) Querying updates for installed Debian packages..."
+		"⏳ (1/5) Checking drive space..."
+		& "$PSScriptRoot/check-drive-space.ps1" /
+
+		"⏳ (2/5) Querying latest package information..."
 		& sudo apt update
 
-		"⏳ (2/4) Upgrading installed Debian packages..."
-		& sudo apt upgrade --yes
-
-		"⏳ (3/4) Removing obsolete Debian packages..."
+		"⏳ (3/5) Removing obsolete packages..."
 		& sudo apt autoremove --yes
 
-		"⏳ (4/4) Upgrading installed Snap packages..."
+		"⏳ (4/5) Upgrading installed packages..."
+		& sudo apt upgrade --yes
+
+		"⏳ (5/5) Upgrading installed Snaps..."
 		& sudo snap refresh
 	} elseif ($IsMacOS) {
 		Write-Progress "⏳ Installing updates..."

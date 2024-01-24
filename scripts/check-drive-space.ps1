@@ -1,37 +1,56 @@
 ﻿<#
 .SYNOPSIS
-	Checks a drive for free space left 
+	Checks the drive space 
 .DESCRIPTION
-	This PowerShell script checks a drive for free space left (20 GB by default).
-.PARAMETER Drive
-	Specifies the drive to check
-.PARAMETER MinLevel
-	Specifies the minimum level in Gigabyte
+	This PowerShell script checks the given drive for free space left (10 GB by default).
+.PARAMETER driveName
+	Specifies the drive name to check (e.g. "C")
+.PARAMETER minLevel
+	Specifies the minimum level in bytes (10GB by default)
 .EXAMPLE
-	PS> ./check-drive-space C
-	✔️ 172 GB left on drive C (61 of 233 GB used)
+	PS> ./check-drive-space.ps1 C
+	✅ Drive C: uses 56%, 442GB free of 999GB
 .LINK
 	https://github.com/fleschutz/PowerShell
 .NOTES
 	Author: Markus Fleschutz | License: CC0
 #>
 
-param([string]$Drive = "", [int]$MinLevel = 20) # minimum level in GB
+param([string]$driveName = "", [int64]$minLevel = 10 * 1000 * 1000) # GB
+
+function Bytes2String { param([int64]$bytes)
+        if ($bytes -lt 1000) { return "$bytes bytes" }
+        $bytes /= 1000
+        if ($bytes -lt 1000) { return "$($bytes)KB" }
+        $bytes /= 1000
+        if ($bytes -lt 1000) { return "$($bytes)MB" }
+        $bytes /= 1000
+        if ($bytes -lt 1000) { return "$($bytes)GB" }
+        $bytes /= 1000
+        if ($bytes -lt 1000) { return "$($bytes)TB" }
+        $bytes /= 1000
+        return "$($bytes)PB"
+}
 
 try {
-	if ($Drive -eq "" ) { $Drive = read-host "Enter drive to check" }
+	if ($driveName -eq "" ) { $driveName = Read-Host "Enter the drive name to check" }
 
-	$DriveDetails = (get-psdrive $Drive)
-	[int]$Free = (($DriveDetails.Free / 1024) / 1024) / 1024
-	[int]$Used = (($DriveDetails.Used / 1024) / 1024) / 1024
-	[int]$Total = ($Used + $Free)
+	$details = (Get-PSDrive $driveName)
+        if (-not $IsLinux) { $driveName = $driveName + ":" }
+	[int64]$free = $details.Free
+        [int64]$used = $details.Used
+        [int64]$total = ($used + $free)
 
-	if ($Free -lt $MinLevel) {
-        	write-warning "Drive $Drive has only $Free GB left to use! ($Used of $Total GB used, minimum is $MinLevel GB)"
-		exit 1
-	}
-
-	& "$PSScriptRoot/speak-english.ps1" "Drive $Drive has $Free GB left ($Total GB total)"
+	if ($total -eq 0) {
+		Write-Host "✅ Drive $driveName is empty"
+        } elseif ($free -eq 0) {
+                Write-Host "⚠️ Drive $driveName with $(Bytes2String $total) is full"
+        } elseif ($free -lt $minLevel) {
+                Write-Host "⚠️ Drive $driveName with $(Bytes2String $total) is nearly full, $(Bytes2String $free) free"
+        } else {
+        	[int]$percent = ($used * 100) / $total
+                Write-Host "✅ Drive $driveName uses $percent%, $(Bytes2String $free) free of $(Bytes2String $total)"
+        }
 	exit 0 # success
 } catch {
 	"⚠️ Error in line $($_.InvocationInfo.ScriptLineNumber): $($Error[0])"
