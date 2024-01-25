@@ -27,6 +27,7 @@ try {
 	$ReaderSettings.ValidationType = [System.Xml.ValidationType]::Schema
 	$ReaderSettings.ValidationFlags = [System.Xml.Schema.XmlSchemaValidationFlags]::ProcessInlineSchema -bor [System.Xml.Schema.XmlSchemaValidationFlags]::ProcessSchemaLocation
 	$ReaderSettings.add_ValidationEventHandler({ $script:ErrorCount++ })
+	$ReaderSettings.DtdProcessing = [System.Xml.DtdProcessing]::Parse
 	$Reader = [System.Xml.XmlReader]::Create($XmlFile.FullName, $ReaderSettings)
 	while ($Reader.Read()) { }
 	$Reader.Close()
