@@ -1,13 +1,13 @@
 ﻿<#
 .SYNOPSIS
-	Verifies the given XML file
+	Verifies an XML file
 .DESCRIPTION
 	This PowerShell script checks the given XML file for validity.
 .PARAMETER path
-	Specifies the path to the XML file to check
+	Specifies the path to the XML file
 .EXAMPLE
 	PS> ./check-xml-file.ps1 myfile.xml
-	✔️ Valid XML in 'myfile.xml'
+	✔️ Valid XML in 📄myfile.xml
 .LINK
 	https://github.com/fleschutz/PowerShell
 .NOTES
@@ -31,13 +31,11 @@ try {
 	while ($Reader.Read()) { }
 	$Reader.Close()
 	
-	if ($script:ErrorCount -gt 0) {
-		throw "Invalid XML in '$path'"
-	} 
+	if ($script:ErrorCount -gt 0) {	throw "Invalid XML" } 
 
-	"✔️ Valid XML in '$path'"
+	"✔️ Valid XML in 📄$path"
 	exit 0 # success
 } catch {
-	"⚠️ Error in line $($_.InvocationInfo.ScriptLineNumber): $($Error[0])"
+	"⚠️ $($Error[0]) in 📄$path"
 	exit 1
 }
