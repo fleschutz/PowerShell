@@ -52,12 +52,12 @@ function GetRemark { param($Example)
 
 try {
 	if ($filename -eq "") { $filename = Read-Host "Enter path to PowerShell script" }
-	$ScriptName = (Get-Item "$filename").Name
 
+	$ScriptName = (Get-Item "$filename").Name
 	$full = Get-Help $filename -Full 
 
-	"*$($ScriptName)*"
-	"================"
+	"Script: *$($ScriptName)*"
+	"========================"
 
 	$Description = ($full.description | Out-String).Trim()
 	if ($Description -ne "") {
