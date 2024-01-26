@@ -18,8 +18,8 @@
 
 param([string]$Location = "") # empty means determine automatically
 
-function GetDescription { param([string]$Text)
-	switch($Text) {
+function GetDescription { param([string]$text)
+	switch ($text.trim()) {
 	"Blizzard"			{ return "❄️ blizzard ⚠️" }
 	"Blowing snow"			{ return "❄️ blowing snow ⚠️" }
 	"Clear"				{ return "🌙 clear" }
@@ -52,6 +52,7 @@ function GetDescription { param([string]$Text)
 	"Patchy light snow"		{ return "❄️ patchy light snow" }
 	"Patchy moderate snow"		{ return "❄️ patchy moderate snow" }
 	"Patchy rain possible"  	{ return "💧 patchy rain possible" }
+	"Patchy rain nearby"		{ return "💧 patchy rain nearby" }
 	"Patchy snow possible"  	{ return "❄️ patchy snow possible" }
 	"Sunny"				{ return "☀️ sunny" }
 	"Thundery outbreaks possible"	{ return "⚡️thundery outbreaks possible" }
