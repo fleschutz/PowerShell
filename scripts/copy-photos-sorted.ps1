@@ -76,6 +76,9 @@ try {
 		} elseif ("$filename" -like "SAVE_*_*.jpg") {
 			$Array = $filename.split("_")
 			CopyFile "$file" "$targetDir" $Array[1] "$filename"
+		} elseif ("$filename" -like "PXL_*_*.jpg") {
+			$Array = $filename.split("_")
+			CopyFile "$file" "$targetDir" $Array[1] "$filename"
 		} else {
 			Write-Host "⏳ Skipping $filename with unknown filename format..."
 		}
