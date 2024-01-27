@@ -24,7 +24,7 @@ try {
 			if ($details.BatteryChargeStatus -eq "NoSystemBattery") {
 				$reply = "✅ AC powered"
 			} elseif ($percent -ge 95) {
-				$reply = "✅ Battery fully charged ($percent%)"
+				$reply = "✅ Battery $percent% full"
 			} else {
 				$reply = "✅ Battery charging ($percent%)"
 			}
