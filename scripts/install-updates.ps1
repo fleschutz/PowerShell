@@ -7,7 +7,8 @@
 .EXAMPLE
 	PS> ./install-updates.ps1
 	⏳ (1/2) Checking drive space...
-	✅ Drive C: uses 56%, 441GB free of 999GB
+	✅ Drive C: uses 56% of 1TB · 441GB free
+
 	⏳ (2/2) Installing updates from winget and Microsoft Store...
 	...
 .LINK
@@ -22,7 +23,7 @@ try {
 	if ($IsLinux) {
 		"⏳ (1/5) Checking drive space..."
 		& "$PSScriptRoot/check-drive-space.ps1" /
-
+		""
 		"⏳ (2/5) Querying latest package information..."
 		& sudo apt update
 
@@ -41,7 +42,7 @@ try {
 	} else {
 		"⏳ (1/2) Checking drive space..."
 		& "$PSScriptRoot/check-drive-space.ps1" C
-
+		""
 		"⏳ (2/2) Installing updates from winget and Microsoft Store..."
 		""
 		& winget upgrade --all --include-unknown
