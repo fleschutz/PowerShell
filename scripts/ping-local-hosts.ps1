@@ -12,7 +12,7 @@
         Author: Markus Fleschutz | License: CC0
 #>
 
-$names = @('ad','amnesiac','archlinux','auriga','berlin','boston','brother','canon','castor','cisco','echodot','epson','fedora','fireball','firewall','fritz.box','fritz!repeater','gassensor','gateway','hippo','heizung','hodor','homemanager','io','iphone','jarvis','jenkins','la','laptop','jupiter','mars','mercury','miami','mobile','ny','octopi','office','officepc','paris','pi','pixel-6a','pluto','printer','proxy','r2d2','raspberry','rocket','rome','router','sentinel','server','shelly1','smartphone','smartwatch','soundbar','sunnyboy','surface','switch','tablet','tau','tigercat','tolino','tv','ubuntu','vega','venus','xrx','zeus') # sorted alphabetically
+$names = @('ad','amnesiac','archlinux','auriga','berlin','boston','brother','canon','castor','cisco','echodot','epson','fedora','fireball','firewall','fritz.box','fritz!repeater','gassensor','gateway','hippo','heizung','hodor','homemanager','io','iphone','jarvis','jenkins','la','laptop','jupiter','mars','mercury','miami','mobile','none','none-1','none-2','ny','octopi','office','officepc','paris','pi','pixel-6a','pluto','printer','proxy','r2d2','raspberry','rocket','rome','router','sentinel','server','shelly1','smartphone','smartwatch','soundbar','sunnyboy','surface','switch','tablet','tau','tigercat','tolino','tv','ubuntu','vega','venus','xrx','zeus') # sorted alphabetically
 [int]$pingTimeout = 600 # ms
 
 try {
