@@ -5,7 +5,7 @@
 	This PowerShell script queries the computer's uptime (time between now and last boot up time) and prints it.
 .EXAMPLE
 	PS> ./check-uptime.ps1
-	✅ Up for 2 days, 20 hours, 10 minutes
+	✅ OfficePC is up for 13 days since 1/25/2024
 .LINK
 	https://github.com/fleschutz/PowerShell
 .NOTES
@@ -26,14 +26,15 @@ function TimeSpan2String([TimeSpan]$uptime)
 }
 
 try {
+	$hostname = $(hostname)
 	if ($IsLinux) {
 		$uptime = (Get-Uptime)
-		Write-Host "✅ Up for $(TimeSpan2String $uptime)"
+		Write-Host "✅ $hostname is up for $(TimeSpan2String $uptime)"
 	} else {
 		[system.threading.thread]::currentthread.currentculture = [system.globalization.cultureinfo]"en-US"
 		$lastBootTime = (Get-CimInstance Win32_OperatingSystem).LastBootUpTime 
 		$uptime = New-TimeSpan -Start $lastBootTime -End (Get-Date)
-		Write-Host "✅ Up for $(TimeSpan2String $uptime) since $($lastBootTime.ToShortDateString())"
+		Write-Host "✅ $hostname is up for $(TimeSpan2String $uptime) since $($lastBootTime.ToShortDateString())"
 	}
 	exit 0 # success
 } catch {
