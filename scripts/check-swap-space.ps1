@@ -16,44 +16,46 @@
 
 param([int]$minLevel = 10)
 
-function MB2String { param([int64]$Bytes)
-        if ($Bytes -lt 1000) { return "$($Bytes)MB" }
-        $Bytes /= 1000
-        if ($Bytes -lt 1000) { return "$($Bytes)GB" }
-        $Bytes /= 1000
-        if ($Bytes -lt 1000) { return "$($Bytes)TB" }
-        $Bytes /= 1000
-        if ($Bytes -lt 1000) { return "$($Bytes)PB" }
-        $Bytes /= 1000
-        if ($Bytes -lt 1000) { return "$($Bytes)EB" }
+function MB2String { param([int64]$bytes)
+        if ($bytes -lt 1000) { return "$($bytes)MB" }
+        $bytes /= 1000
+        if ($bytes -lt 1000) { return "$($bytes)GB" }
+        $bytes /= 1000
+        if ($bytes -lt 1000) { return "$($bytes)TB" }
+        $bytes /= 1000
+        if ($bytes -lt 1000) { return "$($bytes)PB" }
+        $bytes /= 1000
+        if ($bytes -lt 1000) { return "$($bytes)EB" }
 }
 
 try {
-	[int64]$Total = [int64]$Used = [int64]$Free = 0
+	
 	if ($IsLinux) {
 		$Result = $(free --mega | grep Swap:)
-		[int64]$Total = $Result.subString(5,14)
-		[int64]$Used = $Result.substring(20,13)
-		[int64]$Free = $Result.substring(32,11)
+		[int64]$total = $Result.subString(5,14)
+		[int64]$used = $Result.substring(20,13)
+		[int64]$free = $Result.substring(32,11)
 	} else {
-		$Items = Get-WmiObject -class "Win32_PageFileUsage" -namespace "root\CIMV2" -computername localhost 
-		foreach ($Item in $Items) { 
-			$Total += $Item.AllocatedBaseSize
-			$Used += $Item.CurrentUsage
-			$Free += ($Total - $Used)
-		} 
+		$items = Get-WmiObject -class "Win32_PageFileUsage" -namespace "root\CIMV2" -computername localhost 
+		[int64]$total = [int64]$used = 0
+		foreach ($item in $items) { 
+			$total += $item.AllocatedBaseSize
+			$used += $item.CurrentUsage
+			
+		}
+		[int64]$free = ($total - $used)
 	}
-	if ($Total -eq 0) {
+	if ($total -eq 0) {
         	Write-Output "⚠️ No swap space configured"
-	} elseif ($Free -eq 0) {
-		Write-Output "⚠️ Swap space of $(MB2String $Total) is full"
-	} elseif ($Free -lt $minLevel) {
-		Write-Output "⚠️ Swap space of $(MB2String $Total) is nearly full, only $(MB2String $Free) free"
-	} elseif ($Used -lt 5) {
-		Write-Output "✅ Swap space unused, $(MB2String $Free) free"
+	} elseif ($free -eq 0) {
+		Write-Output "⚠️ Swap space of $(MB2String $total) is full"
+	} elseif ($free -lt $minLevel) {
+		Write-Output "⚠️ Swap space of $(MB2String $total) is nearly full, only $(MB2String $free) free"
+	} elseif ($used -lt 5) {
+		Write-Output "✅ Swap space unused, $(MB2String $free) free"
 	} else {
-		[int]$Percent = ($Used * 100) / $Total
-		Write-Output "✅ Swap space uses $Percent% of $(MB2String $Total) · $(MB2String $Free) free"
+		[int]$Percent = ($used * 100) / $total
+		Write-Output "✅ Swap space uses $Percent% of $(MB2String $total) · $(MB2String $free) free"
 	}
 	exit 0 # success
 } catch {
