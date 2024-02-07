@@ -6,8 +6,9 @@
 	NOTE: Use the script 'list-updates.ps1' to list the latest software updates before.
 .EXAMPLE
 	PS> ./install-updates.ps1
-	⏳ (1/2) Checking drive space...
+	⏳ (1/2) Checking drive and swap space...
 	✅ Drive C: uses 56% of 1TB · 441GB free
+	✅ Swap space uses 2% of 1GB · 1GB free
 
 	⏳ (2/2) Installing updates from winget and Microsoft Store...
 	...
@@ -21,8 +22,9 @@ try {
 	$stopWatch = [system.diagnostics.stopwatch]::startNew()
 
 	if ($IsLinux) {
-		"⏳ (1/5) Checking drive space..."
+		"⏳ (1/5) Checking drive and swap space..."
 		& "$PSScriptRoot/check-drive-space.ps1" /
+		& "$PSScriptRoot/check-swap-space.ps1"
 		""
 		"⏳ (2/5) Querying latest package information..."
 		& sudo apt update
@@ -40,8 +42,9 @@ try {
 		& sudo softwareupdate -i -a
 		Write-Progress -completed " "
 	} else {
-		"⏳ (1/2) Checking drive space..."
+		"⏳ (1/2) Checking drive and swap space..."
 		& "$PSScriptRoot/check-drive-space.ps1" C
+		& "$PSScriptRoot/check-swap-space.ps1"
 		""
 		"⏳ (2/2) Installing updates from winget and Microsoft Store..."
 		""
