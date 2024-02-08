@@ -4,7 +4,7 @@
 .DESCRIPTION
 	This PowerShell script queries the free space of all drives and prints it.
 .PARAMETER minLevel
-	Specifies the minimum warning level (10 GB by default)
+	Specifies the minimum warning level (10GB by default)
 .EXAMPLE
 	PS> ./check-drives.ps1
 	✅ Drive C: uses 49% of 1TB · 512GB free
@@ -17,24 +17,19 @@
 
 param([int64]$minLevel = 10) # 10 GB minimum
 
-function Bytes2String { param([int64]$bytes)
-        if ($bytes -lt 1000) { return "$bytes bytes" }
-        $bytes /= 1000
-        if ($bytes -lt 1000) { return "$($bytes)KB" }
-        $bytes /= 1000
-        if ($bytes -lt 1000) { return "$($bytes)MB" }
-        $bytes /= 1000
-        if ($bytes -lt 1000) { return "$($bytes)GB" }
-        $bytes /= 1000
-        if ($bytes -lt 1000) { return "$($bytes)TB" }
-        $bytes /= 1000
-        return "$($bytes)PB"
+function Bytes2String { param([int64]$number)
+        if ($number -lt 1KB) { return "$number bytes" }
+        if ($number -lt 1MB) { return '{0:N0}KB' -f ($number / 1KB) }
+        if ($number -lt 1GB) { return '{0:N0}MB' -f ($number / 1MB) }
+        if ($number -lt 1TB) { return '{0:N0}GB' -f ($number / 1GB) }
+        if ($number -lt 1PB) { return '{0:N0}TB' -f ($number / 1TB) }
+        return '{0:N0}GB' -f ($number / 1PB)
 }
 
 try {
 	Write-Progress "Querying drives..."
 	$drives = Get-PSDrive -PSProvider FileSystem
-	$minLevel *= 1000 * 1000 * 1000
+	$minLevel *= 1GB
 	Write-Progress -completed " "
 	foreach($drive in $drives) {
 		$details = (Get-PSDrive $drive.Name)
