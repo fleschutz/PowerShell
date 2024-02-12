@@ -18,14 +18,14 @@ param([string]$term = "")
 
 try {
 	if ($term -eq "" ) { $term = Read-Host "Enter the term/abbreviation/etc. to query" }
-	$files = (Get-ChildItem "$PSScriptRoot/../data/abbr/*.csv")
+	$files = (Get-ChildItem "$PSScriptRoot/../data/dictionaries/*.csv")
 	$basename = ""
 	foreach($file in $files) {
 		$table = Import-CSV "$file"
 		foreach($row in $table) {
-			if ($row.ABBR -ne $term) { continue }
+			if ($row.TERM -ne $term) { continue }
 			$basename = (Get-Item "$file").Basename -Replace "_"," "
-			"💡 $($row.ABBR) in $basename refers to: $($row.MEANING)"
+			"💡 $($row.TERM) in $basename refers to: $($row.MEANING)"
 		}
 	}
 	if ($basename -eq "") { "🤷‍ Sorry, no '$term' entry found. Use <Ctrl> <Click> to google it: https://www.google.com/search?q=abbreviation+$term" }

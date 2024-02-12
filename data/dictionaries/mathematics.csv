@@ -1,0 +1,269 @@
+TERM,MEANING
+AC,"Axiom of Choice, or set of absolutely continuous functions"
+a.c.,absolutely continuous
+acrd,inverse chord function
+ad,adjoint representation (or adjoint action) of a Lie group
+adj,adjugate of a matrix
+a.e.,almost everywhere
+Ai,Airy function
+AL,Action limit
+Alt,alternating group (Alt(n) is also written as An)
+A.M.,arithmetic mean
+arccos,inverse cosine function
+arccosec,inverse cosecant function (also written as arccsc)
+arccot,inverse cotangent function
+arccsc,inverse cosecant function (also written as arccosec)
+arcexc,"inverse excosecant function (also written as arcexcsc, arcexcosec)"
+arcexcosec,"inverse excosecant function (also written as arcexcsc, arcexc)"
+arcexcsc,"inverse excosecant function (also written as arcexcosec, arcexc)"
+arcexs,inverse exsecant function (also written as arcexsec)
+arcexsec,inverse exsecant function (also written as arcexs)
+arcosech,inverse hyperbolic cosecant function (also written as arcsch)
+arcosh,inverse hyperbolic cosine function
+arcoth,inverse hyperbolic cotangent function
+arcsch,inverse hyperbolic cosecant function (also written as arcosech)
+arcsec,inverse secant function
+arcsin,inverse sine function
+arctan,inverse tangent function
+arctan2,inverse tangent function with two arguments (also written as atan2)
+arg,argument of
+arg max,argument of the maximum
+arg min,argument of the minimum
+arsech,inverse hyperbolic secant function
+arsinh,inverse hyperbolic sine function
+artanh,inverse hyperbolic tangent function
+a.s.,almost surely
+atan2,inverse tangent function with two arguments (also written as arctan2)
+A.P.,arithmetic progression
+Aut,automorphism group
+bd,boundary (also written as fr or ∂)
+Bi,Airy function of the second kind
+BIDMAS,"Brackets, Indices, Divide, Multiply, Add, Subtract"
+Bias,bias of an estimator
+BWOC,by way of contradiction
+Card,"cardinality of a set (Card(X) is also written #X, ♯X or |X|)"
+cas,cos + sin function
+cdf,cumulative distribution function
+c.f.,cumulative frequency
+c.c.,complex conjugate
+char,characteristic of a ring
+Chi,hyperbolic cosine integral function
+Ci,cosine integral function
+cis,cos + i sin function (also written as expi)
+Cl,conjugacy class
+cl,topological closure
+CLT,central limit theorem
+cod,"codom,codomain"
+cok,"coker,cokernel"
+conv,convex hull of a set
+Cor,corollary
+corr,correlation
+cos,cosine function
+cosec,cosecant function (also written as csc)
+cosech,hyperbolic cosecant function (also written as csch)
+cosh,hyperbolic cosine function
+cosiv,"coversine function (also written as cover, covers, cvs)"
+cot,cotangent function (also written as ctg)
+coth,hyperbolic cotangent function
+cov,covariance of a pair of random variables
+cover,"coversine function (also written as covers, cvs, cosiv)"
+covercos,covercosine function (also written as cvc)
+covers,"coversine function (also written as cover, cvs, cosiv)"
+crd,chord function
+csc,cosecant function (also written as cosec)
+csch,hyperbolic cosecant function (also written as cosech)
+ctg,cotangent function (also written as cot)
+curl,curl of a vector field (also written as rot)
+cvc,covercosine function (also written as covercos)
+cvs,"coversine function (also written as cover, covers, cosiv)"
+def,define or definition.
+deg,"degree of a polynomial, or other recursively-defined objects such as well-formed formulas (also written as ∂)"
+del,"del, a differential operator (also written as {\displaystyle \nabla }\nabla )"
+det,determinant of a matrix or linear transformation
+dim,dimension of a vector space
+div,divergence of a vector field
+DNE,"a solution for an expression does not exist, or is undefined. Generally used with limits and integrals"
+dom,"domain of a function (Or, more generally, a relation)"
+End,categories of endomorphisms
+Ei,exponential integral function
+epi,epigraph of a function
+Eqn,equation
+erf,error function
+erfc,complementary error function
+etr,exponent of the trace
+exc,"excosecant function (also written as excsc, excosec)"
+excosec,"excosecant function (also written as excsc, exc)"
+excsc,"excosecant function (also written as excosec, exc)"
+exs,exsecant function (also written as exsec)
+exsec,exsecant function (also written as exs)
+exp,exponential function (exp x is also written as ex)
+expi,cos + i sin function (also written as cis)
+expm1,exponential minus 1 function (also written as exp1m)
+exp1m,exponential minus 1 function (also written as expm1)
+Ext,Ext functor.
+ext,exterior.
+extr,a set of extreme points of a set.
+FIP,finite intersection property.
+FOC,first order condition.
+FOL,first-order logic.
+fr,boundary (also written as bd or ∂)
+Frob,Frobenius endomorphism.
+Gal,Galois group (also written as Γ)
+gcd,greatest common divisor of two numbers (also written as hcf)
+gd,Gudermannian function
+GF,Galois field
+GF,generating function
+GL,general linear group
+GM,geometric mean
+glb,greatest lower bound (also written as inf)
+GP,geometric progression
+grad,gradient of a function
+hacover,"hacoversine function (also written as hacovers, hcv)"
+hacovercos,hacovercosine function (also written as hcc)
+hacovers,"hacoversine function (also written as hacover, hcv)"
+hav,haversine function (also written as sem)
+havercos,havercosine function (also written as hvc)
+hcc,hacovercosine function (also written as hacovercos)
+hcv,"hacoversine function (also written as hacover, hacovers)"
+hcf,highest common factor of two numbers (also written as gcd)
+H.M.,harmonic mean
+HOL,higher-order logic
+Hom,Hom functor
+hom,hom-class
+hot,higher order term
+HOTPO,half or triple plus one
+hvc,havercosine function (also written as havercos)
+hyp,hypograph of a function
+iff,if and only if
+IH,induction hypothesis
+iid,independent and identically distributed random variables
+Im,imaginary part of a complex number (also written as {\displaystyle \Im }\Im )
+im,image
+inf,infimum of a set (also written as glb)
+int,interior
+I.o.,Infinitely often
+ker,kernel
+lb,binary logarithm (log2) (also written as ld)
+lcm,lowest common multiple (a.k.a. least common multiple) of two numbers
+LCHS,locally compact Hausdorff second countable
+ld,binary logarithm (log2) (also written as lb)
+lerp,linear interpolation
+lg,common logarithm (log10) or binary logarithm (log2)
+LHS,left-hand side of an equation
+Li,offset logarithmic integral function
+li,logarithmic integral function or linearly independent
+lim,"limit of a sequence, or of a function"
+lim inf,limit inferior
+lim sup,limit superior
+LLN,law of large numbers
+ln,"natural logarithm, loge"
+lnp1,natural logarithm plus 1 function
+ln1p,natural logarithm plus 1 function
+log,"logarithm (If without a subscript, this may mean either log10 or loge)"
+logh,"natural logarithm, loge"
+LST,language of set theory
+lub,least upper bound (also written sup)
+max,maximum of a set
+MGF,moment-generating function
+M.I.,mathematical induction
+min,minimum of a set
+mod,modulo
+Mp,metaplectic group
+mtanh,modified hyperbolic tangent function (also written as mth)
+mth,modified hyperbolic tangent function (also written as mtanh)
+mx,matrix
+NAND,not-and in logic
+No.,number
+NOR,not-or in logic
+NTS,need to show
+OBGF,ordinary bivariate generating function
+ob,object class
+ord,ordinal number of a well-ordered set
+pdf,probability density function
+pf,proof
+PGL,projective general linear group
+PI,the constant 3.14159265359
+Pin,pin group.
+pmf,probability mass function
+Pn,previous number
+Pr,probability of an event
+PSL,projective special linear group
+PSO,projective orthogonal group.
+PSU,projective special unitary group
+PU,projective unitary group
+QED,"Quod erat demonstrandum, a Latin phrase used at the end of a definitive proof"
+QEF,"quod erat faciendum, a Latin phrase sometimes used at the end of a geometrical construction"
+ran,range of a function
+rank,rank of a matrix (also written as rk)
+Re,real part of a complex number
+resp,respectively
+RHS,right-hand side of an equation
+rk,rank (also written as rank)
+RMS,"rms,root mean square"
+rng,non-unital ring
+rot,rotor of a vector field (also written as curl)
+RTP,required to prove
+RV,random variable (or as R.V)
+R,Real numbers
+SD,standard deviation
+SE,standard error
+sec,secant function
+sech,hyperbolic secant function
+seg,initial segment of
+sem,haversine function (also written as hav)
+SFIP,strong finite intersection property
+sgn,sign function
+Shi,hyperbolic sine integral function
+Si,sine integral function
+sin,sine function
+sinc,sinc function
+sinh,hyperbolic sine function
+siv,"versine function (also written as ver, vers)"
+SL,special linear group
+SO,special orthogonal group
+SOC,second order condition
+Soln,solution
+Sp,symplectic group
+Sp,"trace of a matrix, from the German 'spur' used for the trace"
+sp,"linear span of a set of vectors (also written as span or written with angle brackets)"
+Spec,spectrum of a ring
+Spin,spin group
+s.t.,such that or so that or subject to
+st,standard part function
+STP,[it is] sufficient to prove
+SU,special unitary group
+sup,"supremum of a set (also written as lub, which stands for least upper bound)"
+supp,support of a function
+swish,"swish function, an activation function in data analysis"
+Sym,"symmetric group (Sym(n) is also written as Sn) or symmetric algebra"
+tan,"tangent function (also written as tgn, tg)"
+tanh,hyperbolic tangent function
+TAU,"the constant 6.283185307179586476925286766559"
+TFAE,the following are equivalent
+tg,"tangent function (also written as tan, tgn)"
+tgn,"tangent function (also written as tan, tg)"
+Thm,theorem
+Tor,Tor functor
+Tr,"trace, either the field trace, or the trace of a matrix or linear transformation"
+undef,a function or expression is undefined
+V,volume
+var,variance of a random variable
+vcs,vercosine function (also written as vercos)
+ver,"versine function (also written as vers, siv)"
+vercos,vercosine function (also written as vcs)
+vers,"versine function (also written as ver, siv)"
+W^5,"which was what we wanted. Synonym of Q.E.D"
+walog,without any loss of generality
+wff,well-formed formula
+whp,with high probability
+wlog,without loss of generality
+WMA,we may assume.
+WO,well-ordered set
+wp1,with probability 1
+wrt,with respect to or with regard to
+WTP,want to prove
+WTS,want to show
+XOR,exclusive or in logic
+XYZ,"Cartesian coordinate system (x,y,z)"
+ZF,Zermelo–Fraenkel axioms of set theory
+ZFC,Zermelo–Fraenkel axioms (with the Axiom of Choice) of set theory
