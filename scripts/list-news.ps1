@@ -11,7 +11,7 @@
         Specifies the speed to write the text (10 ms by default)
 .EXAMPLE
 	PS> ./list-news.ps1
-	❇️ Deadly Mediterranean wildfires kill more than 40
+	❇️ 09:15 Deadly Mediterranean wildfires kill more than 40
 	...
 .LINK
 	https://github.com/fleschutz/PowerShell
@@ -25,12 +25,13 @@ try {
 	[xml]$content = (Invoke-WebRequest -URI $RSS_URL -useBasicParsing).Content
 	[int]$count = 1
 	foreach ($item in $content.rss.channel.item) {
-		& "$PSScriptRoot/write-typewriter.ps1" "❇️ $($item.title)" $speed
+		$title = $item.title
+		$time = $item.pubDate.Substring(11, 5)
+		& "$PSScriptRoot/write-typewriter.ps1" "❇️ $time $title" $speed
 		if ($count++ -eq $maxLines) { break }
 	}
-	$source = $content.rss.channel.title
-	$date = $content.rss.channel.pubDate
-	"   (by $source as of $date)"
+	$URL = $content.rss.channel.link
+	"   (Times in UTC | Read more: $URL)"
 	exit 0 # success
 } catch {
 	"⚠️ Error in line $($_.InvocationInfo.ScriptLineNumber): $($Error[0])"
