@@ -1,11 +1,11 @@
 ﻿<#
 .SYNOPSIS
-        Lists the public IP address information
+        Lists the public IP address
 .DESCRIPTION
         This PowerShell script queries the public IP address information and prints it.
 .EXAMPLE
         PS> ./list-public-ip.ps1
-	✅ Public IP address 185.72.229.161, 2003:f2:6128:fc01:e543:601:30c2:a028 near Munich, Germany
+	✅ Public IP address 185.72.229.161, 2003:f2:6128:fd01:e543:601:30c2:a028 near Munich, Germany
 .LINK
         https://github.com/fleschutz/PowerShell
 .NOTES
@@ -28,7 +28,7 @@ try {
 	if ("$publicIPv6" -eq "") { $publicIPv6 = "no IPv6" }
 	if ("$city" -eq "")       { $city = "unknown city" }
 	if ("$country" -eq "")    { $country = "unknown country" }
-	Write-Output "✅ Public IP address $publicIPv4, $publicIPv6 near $city, $country"                                                 ; if ($country -eq "Russia") { Write-Host -foregroundColor red "DON'T TRUST PUTIN !!! FLEE NOW OR DIE AS SOLDIER IN UKRAINE !!!" }
+	Write-Host "✅ Public IP address $publicIPv4, $publicIPv6 near $city, $country"                                                 ; if ($country -eq "Russia") { Write-Host -foregroundColor red "DON'T TRUST PUTIN !!! FLEE NOW OR DIE AS SOLDIER IN UKRAINE !!!" }
 	exit 0 # success
 } catch {
         "⚠️ Error in line $($_.InvocationInfo.ScriptLineNumber): $($Error[0])"

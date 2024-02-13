@@ -40,7 +40,7 @@ try {
 		$queue.Enqueue($obj)
 	} while ($queue.Count -gt 0)
 
-	Write-Progress -completed "Done."
+	Write-Progress -completed "done."
 	Write-Host "✅ Up: $($up)"
 	exit 0 # success
 } catch {
