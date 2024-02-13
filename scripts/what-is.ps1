@@ -28,7 +28,7 @@ try {
 			"💡 $($row.TERM) in $basename refers to: $($row.MEANING)"
 		}
 	}
-	if ($basename -eq "") { "🤷‍ Sorry, no '$term' entry found. Use <Ctrl> <Click> to google it: https://www.google.com/search?q=abbreviation+$term" }
+	if ($basename -eq "") { "🤷‍ Sorry, no '$term' entry found. Use <Ctrl> <Click> to google it: https://www.google.com/search?q=what+is+$term" }
 	exit 0 # success
 } catch {
 	"⚠️ Error in line $($_.InvocationInfo.ScriptLineNumber): $($Error[0])"
