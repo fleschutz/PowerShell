@@ -31,7 +31,7 @@ try {
 		if ($count++ -eq $maxLines) { break }
 	}
 	$URL = $content.rss.channel.link
-	"   (UTC) Read more at: $URL"
+	"   <UTC> <Read more at: $URL>"
 	exit 0 # success
 } catch {
 	"⚠️ Error in line $($_.InvocationInfo.ScriptLineNumber): $($Error[0])"
