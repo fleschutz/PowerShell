@@ -3,7 +3,7 @@
 	List commits live in real-time.
 .DESCRIPTION
 	This PowerShell script permanently lists the latest commit in a Git repository in real-time.
-.PARAMETER RepoDir
+.PARAMETER pathToRepo
 	Specifies the file path to the local Git repository.
 .EXAMPLE
 	PS> ./commit-ticker.ps1
@@ -15,7 +15,7 @@
 	Author: Markus Fleschutz | License: CC0
 #>
 
-param([string]$RepoDir = "$PWD")
+param([string]$pathToRepo = "$PWD")
 
 try {
 	Write-Progress "Searching for Git executable..."
@@ -23,20 +23,21 @@ try {
 	if ($lastExitCode -ne "0") { throw "Can't execute 'git' - make sure Git is installed and available" }
 
 	Write-Progress "Checking file patch to Git repository..."
-	if (-not(Test-Path "$RepoDir" -pathType container)) { throw "Can't access directory: $RepoDir" }
+	if (-not(Test-Path "$pathToRepo" -pathType container)) { throw "Can't access directory: $pathToRepo" }
 	Write-Progress -completed "Done."
 
 	$linePrev = ""
 	for (;;) {
-		& git -C "$RepoDir" fetch --all --recurse-submodules=no --jobs=1 --quiet
+		& git -C "$pathToRepo" fetch --all --recurse-submodules=no --jobs=1 --quiet
 		if ($lastExitCode -ne "0") { throw "'git fetch' failed" }
 
-		$lineNow = (git -C "$RepoDir" log --format=format:'%s by %an%d' -n 1)
+		$lineNow = (git -C "$pathToRepo" log origin --format=format:'%s by %an%d' --max-count=1)
 		if ($lineNow -ne $linePrev) {
 			Write-Host "❇️ $lineNow"
 			$linePrev = $lineNow
+		} else {
+			Start-Sleep -seconds 10
 		}
-		Start-Sleep -seconds 10
 	}
 	exit 0 # success
 } catch {
