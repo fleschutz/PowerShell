@@ -28,7 +28,7 @@ try {
 
 	$linePrev = ""
 	for (;;) {
-		& git -C "$RepoDir" fetch --recurse-submodules=no --jobs=1 --quiet
+		& git -C "$RepoDir" fetch --all --recurse-submodules=no --jobs=1 --quiet
 		if ($lastExitCode -ne "0") { throw "'git fetch' failed" }
 
 		$lineNow = (git -C "$RepoDir" log --format=format:'%s by %an%d' -n 1)
@@ -36,7 +36,7 @@ try {
 			Write-Host "❇️ $lineNow"
 			$linePrev = $lineNow
 		}
-		Start-Sleep -seconds 1
+		Start-Sleep -seconds 10
 	}
 	exit 0 # success
 } catch {
