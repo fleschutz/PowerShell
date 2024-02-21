@@ -15,7 +15,7 @@
 	Author: Markus Fleschutz | License: CC0
 #>
 
-param([string]$pathToRepo = "$PWD")
+param([string]$pathToRepo = "$PWD", [int]$updateInterval = 30, [int]$speed = 17)
 
 try {
 	Write-Progress "Searching for Git executable..."
@@ -24,20 +24,29 @@ try {
 
 	Write-Progress "Checking file patch to Git repository..."
 	if (-not(Test-Path "$pathToRepo" -pathType container)) { throw "Can't access directory: $pathToRepo" }
+
+	Write-Progress "Fetching updates..."
+	& git -C "$pathToRepo" fetch --all --recurse-submodules=no --jobs=1 --quiet
+	if ($lastExitCode -ne "0") { throw "'git fetch' failed" }
 	Write-Progress -completed "Done."
 
-	$linePrev = ""
+	$prevLine = ""
+	$tzOffset = (Get-Timezone).BaseUtcOffset.TotalSeconds
 	for (;;) {
+		$line = (git -C "$pathToRepo" log origin --format=format:'%at %s by %an%d' --max-count=1)
+		if ($line -ne $prevLine) {
+			$unixTimestamp = [int64]$line.Substring(0,10)
+			$time = (Get-Date -day 1 -month 1 -year 1970 -hour 0 -minute 0 -second 0).AddSeconds($unixTimestamp)
+			$time = $time.AddSeconds($tzOffset)
+			$timeString = $time.ToString("HH:mm")
+			$message = $line.Substring(11)
+			& "$PSScriptRoot/write-typewriter.ps1" "❇️ $timeString $message" $speed
+			$prevLine = $line
+		} else {
+			Start-Sleep -seconds $updateInterval
+		}
 		& git -C "$pathToRepo" fetch --all --recurse-submodules=no --jobs=1 --quiet
 		if ($lastExitCode -ne "0") { throw "'git fetch' failed" }
-
-		$lineNow = (git -C "$pathToRepo" log origin --format=format:'%s by %an%d' --max-count=1)
-		if ($lineNow -ne $linePrev) {
-			Write-Host "❇️ $lineNow"
-			$linePrev = $lineNow
-		} else {
-			Start-Sleep -seconds 10
-		}
 	}
 	exit 0 # success
 } catch {
