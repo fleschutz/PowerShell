@@ -12,7 +12,7 @@
 	Author: Markus Fleschutz | License: CC0
 #>
 
-function TimeSpan2String([TimeSpan]$uptime)
+function TimeSpanAsString([TimeSpan]$uptime)
 {
 	[int]$days = $uptime.Days
 	[int]$hours = $days * 24 + $uptime.Hours
@@ -26,16 +26,15 @@ function TimeSpan2String([TimeSpan]$uptime)
 }
 
 try {
-	$hostname = $(hostname)
+	[system.threading.thread]::currentthread.currentculture = [system.globalization.cultureinfo]"en-US"
 	if ($IsLinux) {
+		$lastBootTime = (Get-Uptime -since)
 		$uptime = (Get-Uptime)
-		Write-Host "✅ $hostname is up for $(TimeSpan2String $uptime)"
 	} else {
-		[system.threading.thread]::currentthread.currentculture = [system.globalization.cultureinfo]"en-US"
 		$lastBootTime = (Get-CimInstance Win32_OperatingSystem).LastBootUpTime 
 		$uptime = New-TimeSpan -Start $lastBootTime -End (Get-Date)
-		Write-Host "✅ $hostname is up for $(TimeSpan2String $uptime) since $($lastBootTime.ToShortDateString())"
 	}
+	Write-Host "✅ $(hostname) is up for $(TimeSpanAsString $uptime) since $($lastBootTime.ToShortDateString())"
 	exit 0 # success
 } catch {
 	"⚠️ Error in line $($_.InvocationInfo.ScriptLineNumber): $($Error[0])"
