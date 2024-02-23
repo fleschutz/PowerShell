@@ -5,7 +5,7 @@ if ($IsLinux) { $Username = $(whoami) } else { $Username = $env:USERNAME }
 $host.ui.RawUI.WindowTitle = "$Username @ $(hostname)"
 
 # COMMAND PROMPT
-function prompt { write-host -noNewline -foregroundColor yellow "`n➤"; return " " }
+function prompt { Write-Host -noNewline -foregroundColor yellow "`n➤ "; return " " }
 
 # ALIAS NAMES
 del alias:pwd -force -errorAction SilentlyContinue
