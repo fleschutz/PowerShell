@@ -1,7 +1,7 @@
 Mega Collection of PowerShell Scripts
 =====================================
 
-**Contains 500+ free and stand-alone cross-platform PowerShell scripts (located in the 📂[scripts](scripts/) subfolder) - for command-line use, for remote control via SSH, for automation (e.g. [AutoHotkey](https://www.autohotkey.com/) or [Jenkins](https://www.jenkins.io/)), for context menus, for voice commands (e.g. [talk2windows](https://github.com/fleschutz/talk2windows)), automatically on startup/login/logoff/daily/shutdown/etc., or simply to learn PowerShell.**
+**Contains 500+ free and stand-alone cross-platform PowerShell scripts - for command-line use, for remote control via SSH, for automation (e.g. [AutoHotkey](https://www.autohotkey.com/) or [Jenkins](https://www.jenkins.io/)), for context menus, for voice commands (e.g. [talk2windows](https://github.com/fleschutz/talk2windows)), automatically on startup/login/logoff/daily/shutdown/etc., or simply to learn PowerShell (all scripts located in the 📂[scripts](scripts/) subfolder).**
 
 **[Download](https://github.com/fleschutz/PowerShell/releases) | [FAQ](docs/FAQ.md)** | **Note:** the scripts support Unicode - a modern console is recommended (e.g. *Windows Terminal*)
 
