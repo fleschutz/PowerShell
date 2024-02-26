@@ -1,10 +1,10 @@
 ﻿<#
 .SYNOPSIS
-	Lists PowerShell modules
+	Lists the PowerShell modules
 .DESCRIPTION
 	This PowerShell script lists the installed PowerShell modules.
 .EXAMPLE
-	PS> ./list-modules.ps1
+	PS> ./list-powershell-modules.ps1
 
 	Name                             Version  ModuleType  ExportedCommands
 	----                             -------  ----------  ----------------
