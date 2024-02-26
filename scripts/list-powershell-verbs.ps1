@@ -1,10 +1,10 @@
 ﻿<#
 .SYNOPSIS
-	Lists verbs
+	Lists verbs in PowerShell
 .DESCRIPTION
-	This PowerShell script lists all allowed verbs.
+	This PowerShell script lists all allowed/recommended verbs in PowerShell.
 .EXAMPLE
-	PS> ./list-verbs.ps1
+	PS> ./list-powershell-verbs.ps1
 
 	Verb        Group
 	----        -----
