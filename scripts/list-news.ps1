@@ -11,6 +11,7 @@
         Specifies the speed to write the text (10 ms by default)
 .EXAMPLE
 	PS> ./list-news.ps1
+	   <UTC> <Source: https://www.yahoo.com/news/world>
 	❇️ 09:15 Deadly Mediterranean wildfires kill more than 40
 	...
 .LINK
@@ -23,6 +24,11 @@ param([string]$RSS_URL = "https://news.yahoo.com/rss/world", [int]$maxLines = 24
 
 try {
 	[xml]$content = (Invoke-WebRequest -URI $RSS_URL -useBasicParsing).Content
+
+	$URL = $content.rss.channel.link
+	""
+	"   [UTC] [SOURCE: $URL]"
+
 	[int]$count = 1
 	foreach ($item in $content.rss.channel.item) {
 		$title = $item.title
@@ -30,8 +36,6 @@ try {
 		& "$PSScriptRoot/write-typewriter.ps1" "❇️ $time $title" $speed
 		if ($count++ -eq $maxLines) { break }
 	}
-	$URL = $content.rss.channel.link
-	"   <UTC> <Read more at: $URL>"
 	exit 0 # success
 } catch {
 	"⚠️ Error in line $($_.InvocationInfo.ScriptLineNumber): $($Error[0])"
