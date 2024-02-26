@@ -1,13 +1,13 @@
 ﻿<#
 .SYNOPSIS
-	Lists the user's PowerShell profiles
+	Lists the PowerShell profiles
 .DESCRIPTION
 	This PowerShell script lists the user's PowerShell profiles.
 .EXAMPLE
-	PS> ./list-profiles.ps1
+	PS> ./list-powershell-profiles.ps1
 	
-	Level Profile                Location                                                         Existent
-	----- -------                --------                                                         --------
+	Prio  Profile Name           Location                                                         Existent
+	----  ------------           --------                                                         --------
 	1     AllUsersAllHosts       /opt/PowerShell/profile.ps1                                      no
 	2     AllUsersCurrentHost    /opt/PowerShell/Microsoft.PowerShell_profile.ps1                 no
 	3     CurrentUserAllHosts    /home/markus/.config/powershell/profile.ps1                      no
@@ -18,9 +18,9 @@
 	Author: Markus Fleschutz | License: CC0
 #>
 
-function ListProfile { param([int]$Level, [string]$Profile, [string]$Location)
-	if (test-path "$Location") { $Existent = "yes" } else { $Existent = "no" }
-	New-Object PSObject -Property @{ 'Level'="$Level"; 'Profile'="$Profile"; 'Location'="$Location"; 'Existent'="$Existent"	}
+function ListProfile { param([int]$prio, [string]$profileName, [string]$Location)
+	if (Test-Path "$Location") { $Exists = "yes" } else { $Exists = "no" }
+	New-Object PSObject -Property @{ 'Prio'="$prio"; 'Profile Name'="$profileName"; 'Location'="$Location"; 'Exists'="$Exists" }
 }
 
 function ListProfiles { 
@@ -31,7 +31,7 @@ function ListProfiles {
 }
 
 try {
-	ListProfiles | format-table -property Level,Profile,Location,Existent
+	ListProfiles | Format-Table -property Prio,'Profile Name',Exists,Location
 	exit 0 # success
 } catch {
 	"⚠️ Error in line $($_.InvocationInfo.ScriptLineNumber): $($Error[0])"
