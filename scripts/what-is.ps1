@@ -18,7 +18,7 @@ param([string]$term = "")
 
 try {
 	if ($term -eq "" ) { $term = Read-Host "Enter the term/abbreviation/etc. to query" }
-	$files = (Get-ChildItem "$PSScriptRoot/../data/dictionaries/*.csv")
+	$files = (Get-ChildItem "$PSScriptRoot/../data/dicts/*.csv")
 	$basename = ""
 	foreach($file in $files) {
 		$table = Import-CSV "$file"
