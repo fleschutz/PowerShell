@@ -1,27 +1,35 @@
 ﻿<#
 .SYNOPSIS
-	Writes the user's PowerShell profile
+	Writes the PowerShell profile
 .DESCRIPTION
 	This PowerShell script writes the PowerShell profile for the current user.
+.PARAMETER path
+	Specifies the path to the new profile ($PSScriptRoot/my-profile.ps1 by default)
 .EXAMPLE
 	PS> ./write-powershell-profile.ps1
+	⏳ (1/2) Querying path to profile 'CurrentUserCurrentHost'...
+	         C:\Users\Markus\Documents\WindowsPowerShell\Microsoft.PowerShell_profile.ps1
+	⏳ (2/2) Copying file 'my-profile.ps1'...
+	✔️ New PowerShell profile written - it gets active on next login
 .LINK
 	https://github.com/fleschutz/PowerShell
 .NOTES
 	Author: Markus Fleschutz | License: CC0
 #>
 
+param([string]$path = "$PSScriptRoot/my-profile.ps1")
+
 try {
-	"⏳ (1/3) Querying path to PowerShell profile 'CurrentUserCurrentHost'..."
+	"⏳ (1/2) Querying path to profile 'CurrentUserCurrentHost'..."
 	$pathToProfile = $PROFILE.CurrentUserCurrentHost
+	"         $pathToProfile"
 
-	"⏳ (2/3) Creating the profile (if non-existent)..."
+	$filename = (Get-Item "$path").Name
+	"⏳ (2/2) Copying file '$filename'..."
 	$null = New-Item -Path $pathToProfile -ItemType "file" -Force
+	Copy-Item "$path" "$pathToProfile" -force
 
-	"⏳ (3/3) Updating the profile by my-profile.ps1..."
-	Copy-Item "$PSScriptRoot/my-profile.ps1" "$pathToProfile" -force
-
-	"✔️ Updated your PowerShell profile - it gets active on next login"
+	"✔️ New PowerShell profile written - it gets active on next login"
 	exit 0 # success
 } catch {
 	"⚠️ Error in line $($_.InvocationInfo.ScriptLineNumber): $($Error[0])"
