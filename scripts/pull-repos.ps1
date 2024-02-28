@@ -47,7 +47,7 @@ try {
 		$step++
 	}
 	[int]$elapsed = $stopWatch.Elapsed.TotalSeconds
-	"✔️ Pulled updates into $numFolders repos under 📂$parentDirName ($failed failed, took $elapsed sec)"
+	"✔️ Pulled updates into $numFolders repos under 📂$parentDirName in $elapsed sec ($failed failed)"
 	exit 0 # success
 } catch {
 	"⚠️ Error in line $($_.InvocationInfo.ScriptLineNumber): $($Error[0])"
