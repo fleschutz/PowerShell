@@ -7,7 +7,7 @@
 	Specifies the path to the parent folder
 .EXAMPLE
 	PS> ./pull-repos C:\MyRepos
-	⏳ (1) Searching for Git executable...       git version 2.42.0
+	⏳ (1) Searching for Git executable...       git version 2.43.0
 	⏳ (2) Checking parent folder...             33 subfolders
 	⏳ (3/35) Pulling into 📂base256unicode...
 	...
@@ -47,8 +47,13 @@ try {
 		$step++
 	}
 	[int]$elapsed = $stopWatch.Elapsed.TotalSeconds
-	"✔️ Pulled updates into $numFolders repos under 📂$parentDirName in $elapsed sec ($failed failed)"
-	exit 0 # success
+	if ($failed -eq 0) {
+		"✔️ Pulled updates into $numFolders repos under 📂$parentDirName in $elapsed sec."
+		exit 0 # success
+	} else {
+		"⚠️ Pulled updates into $numFolders repos under 📂$parentDirName but $failed failed (took $elapsed sec)."
+		exit 1
+	}
 } catch {
 	"⚠️ Error in line $($_.InvocationInfo.ScriptLineNumber): $($Error[0])"
 	exit 1
