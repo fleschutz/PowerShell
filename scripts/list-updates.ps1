@@ -2,14 +2,15 @@
 .SYNOPSIS
 	Lists software updates
 .DESCRIPTION
-	This PowerShell script queries the latest available software updates for the local machine and lists it.
+	This PowerShell script queries the latest available software updates for the
+	local machine and lists it.
 	NOTE: Use the script 'install-updates.ps1' to install the listed updates.
 .EXAMPLE
 	PS> ./list-updates.ps1
 
-	Name                   Id                                Version       Available        Source
-	--------------------------------------------------------------------------------------------------
-	Git                    Git.Git                           2.41.0        2.41.0.2         winget
+	Name               Id                    Version       Available        Source
+	------------------------------------------------------------------------------
+	Git                Git.Git               2.43.0        2.44.0           winget
         ...
 .LINK
 	https://github.com/fleschutz/PowerShell
@@ -32,7 +33,8 @@ try {
 		& winget upgrade --include-unknown
 		Write-Progress -completed "Done."
 	}
-	"                                                       (use 'install-updates.ps1' to install the listed updates)"
+	" "
+	"NOTE: Use the script 'install-updates.ps1' to install the listed updates."
 	exit 0 # success
 } catch {
 	"⚠️ Error in line $($_.InvocationInfo.ScriptLineNumber): $($Error[0])"
