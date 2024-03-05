@@ -1601,7 +1601,7 @@ LIDB,line information database
 LILO,LInux LOader
 LINQ,Language Integrated Query
 LISP,list processing
-LLM,large language model
+LLM,Large Language Model
 LLVM,Compiler Infrastructure (Low Level Virtual Machine)
 LMDS,Local Multi-Point Distribution System
 LMGTFY,Let Me Google That For You
@@ -2122,33 +2122,32 @@ RA,registration authority
 RAC,Real Application Cluster
 RACE,Rapid Access Computing Environment
 RACF,Resource Access Control Facility
-RAD,rapid application development
+RAD,Rapid Application Development
 RADIUS,Remote Authentication Dial-In User Service
-RAF,risk assessment framework
-RAID,redundant array of independent disks
+RAF,Risk Assessment Framework
+RAG,Retrieval Augmented Generation
+RAID,Redundant Array of Independent Disks
 RAIN,redundant/reliable array of inexpensive/independent nodes
 RAM,Random Access Memory
-RAMAC,random access method of accounting and control
-RAMDAC,random access memory digital-to-analog converter
+RAMAC,Random Access Method of Accounting and Control
+RAMDAC,Random Access Memory dDgital-to-analog Converter
 RAND,reasonable and nondiscriminatory
 RAP,Revenue Acquisition Process
 RARP,Reverse Address Resolution Protocol
-RAS,"registration, admission, and status"
-RAS,"Reliability, Availability and Serviceability"
-RAS,"Remote Access Server, row address strobe"
-RAT,remote access Trojan
-RBA,risk-based authentication
-RBAC,role-based access control
-RBOC,regional Bell operating company
-RCE,remote code execution
+RAS,"Registration,Admission and Status, or Reliability,Availability and Serviceability, or Remote Access Server, row address strobe"
+RAT,Remote Access Trojan
+RBA,Risk-Based Authentication
+RBAC,Role-Based Access Control
+RBOC,Regional Bell Operating Company
+RCE,Remote Code Execution
 RCP,Rich Client Platform
-RD,running disparity
-RDBMS,relational database management system
-RDC,remote deposit capture
+RD,Running Disparity
+RDBMS,Relational DataBase Management System
+RDC,Remote Deposit Capture
 RDF,Resource Description Framework
-RDM,raw device mapping
+RDM,Raw Device Mapping
 RDMA,Remote Direct Memory Access
-rDNS,reverse DNS
+rDNS,Reverse DNS
 RDO,Remote Data Objects
 RDP,Remote Desktop Protocol
 RDRAM,Rambus Dynamic Random Access Memory
@@ -2159,39 +2158,35 @@ RDT&E,"Research, Development, Testing & Evaluation"
 REC,Regional Extension Center
 ReFS,Resilient File System
 regex,regular expression
-REST,representational state transfer
-RF,radio frequency
+REST,REpresentational State Transfer
+RF,Radio Frequency
 RFC,Remote Function Call
 RFC,Request for Comments
 RFI,request for information
-RFID,radio frequency identification
+RFID,Radio Frequency IDentification
 RFO,Request for Offer
-RFP,request for proposal 
-RFQ,request for quotation
+RFP,Request for Proposal 
+RFQ,Request for Quotation
 RFR,Red Flags Rule
 RGB,"red, green, and blue"
 RHCVA,Red Hat Certified Virtualization Administrator
 RHEL,Red Hat Enterprise Linux
 RHEV,Red Hat Enterprise Virtualization
-RHIA,registered health information administrator
+RHIA,Registered Health Information Administrator
 RHIO,Regional Health Information Organization
-RHIT,registered health information technician
+RHIT,Registered Health Information Technician
 RHS,Red Hat Storage
 RIA,Rich Internet Application
 RIAA,Recording Industry Association of America
 RIBLOE,Remote Insight Board -- Lights Out Edition
-RID,relative identifier
-RIM,records information management
-RIM,Reference Information Model
-RIP,Raster Image Processor
-RIP,Routing Information Protocol
+RID,Relative IDentifier
+RIM,"Records Information Management, or: Reference Information Model"
+RIP,"Raster Image Processor, or: Routing Information Protocol"
 RIR,Regional Internet Registry
-RIS,Radiology Information System
-RIS,Remote Installation Service
+RIS,"Radiology Information System, or: Remote Installation Service"
 RISC,Reduced Instruction Set Computer
 RJE,Remote Job Entry
 RMA,Return Material (or Merchandise) Authorization
-RMA,return merchandise authorization
 RMI,Remote Method Invocation
 RMM,Remote Monitoring & Management
 RMON,Remote Network Monitoring
