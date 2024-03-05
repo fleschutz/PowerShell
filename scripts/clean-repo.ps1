@@ -12,40 +12,40 @@
 	⏳ (2/4) Checking local repository...        	  📂C:\rust
 	⏳ (3/4) Removing untracked files in repository...
 	⏳ (4/4) Removing untracked files in submodules...
-	✔️ Cleaned repo 📂rust in 1 sec
+	✔️ Cleaned up repository 📂rust in 1 sec.
 .LINK
 	https://github.com/fleschutz/PowerShell
 .NOTES
 	Author: Markus Fleschutz | License: CC0
 #>
 
-param([string]$RepoDir = "$PWD")
+param([string]$pathToRepo = "$PWD")
 
 try {
-	$StopWatch = [system.diagnostics.stopwatch]::startNew()
+	$stopWatch = [system.diagnostics.stopwatch]::startNew()
 
 	Write-Host "⏳ (1/4) Searching for Git executable...          " -noNewline
 	& git --version
 	if ($lastExitCode -ne "0") { throw "Can't execute 'git' - make sure Git is installed and available" }
 
-	"⏳ (2/4) Checking local repository...             📂$RepoDir"
-	if (-not(Test-Path "$RepoDir" -pathType container)) { throw "Can't access folder '$RepoDir' - maybe a typo or missing folder permissions?" }
-	$RepoDirName = (Get-Item "$RepoDir").Name
+	"⏳ (2/4) Checking local repository...             📂$pathToRepo"
+	if (-not(Test-Path "$pathToRepo" -pathType container)) { throw "Can't access folder '$pathToRepo' - maybe a typo or missing folder permissions?" }
+	$repoName = (Get-Item "$pathToRepo").Name
 
 	"⏳ (3/4) Removing untracked files in repository..."
-	& git -C "$RepoDir" clean -xfd -f # to delete all untracked files in the main repo
+	& git -C "$pathToRepo" clean -xfd -f # to delete all untracked files in the main repo
 	if ($lastExitCode -ne "0") {
 		Write-Warning "'git clean' failed with exit code $lastExitCode, retrying once..."
-		& git -C "$RepoDir" clean -xfd -f 
+		& git -C "$pathToRepo" clean -xfd -f 
 		if ($lastExitCode -ne "0") { throw "'git clean' failed with exit code $lastExitCode" }
 	}
 
 	"⏳ (4/4) Removing untracked files in submodules..."
-	& git -C "$RepoDir" submodule foreach --recursive git clean -xfd -f # to delete all untracked files in the submodules
+	& git -C "$pathToRepo" submodule foreach --recursive git clean -xfd -f # to delete all untracked files in the submodules
 	if ($lastExitCode -ne "0") { throw "'git clean' in the submodules failed with exit code $lastExitCode" }
 
-	[int]$Elapsed = $StopWatch.Elapsed.TotalSeconds
-	"✔️ Cleaned repo 📂$RepoDirName in $Elapsed sec"
+	[int]$elapsed = $stopWatch.Elapsed.TotalSeconds
+	"✔️ Cleaned up repository 📂$repoName in $elapsed sec."
 	exit 0 # success
 } catch {
 	"⚠️ Error in line $($_.InvocationInfo.ScriptLineNumber): $($Error[0])"
