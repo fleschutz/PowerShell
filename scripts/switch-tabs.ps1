@@ -1,27 +1,29 @@
 ﻿<#
 .SYNOPSIS
-	Switches browser tabs
+	Switches Web browser tabs
 .DESCRIPTION
-	This PowerShell script switches browser tabs automatically every <n> seconds (by pressing Ctrl + PageDown).
-.PARAMETER Interval
-        Specifies the switch interval in seconds (10 sec per default)
+	This PowerShell script switches automatically from tab to tab every <n> seconds (by pressing Ctrl + PageDown).
+.PARAMETER timeInterval
+        Specifies the time interval in seconds (10sec per default)
 .EXAMPLE
-	PS> ./switch-tabs
+	PS> ./switch-tabs.ps1
+	⏳ Switching from tab to tab automatically every 10 seconds...
+	   (click the Web browser to activate it - press <Ctrl C> here to stop it)
 .NOTES
 	Author: Markus Fleschutz / License: CC0
 .LINK
-	https://github.com/fleschutz/talk2windows
+	https://github.com/fleschutz/PowerShell
 #>
 
-param([int]$Interval = 10) # in seconds
+param([int]$timeInterval = 10) # in seconds
 
 try {
-	Write-Host "⏳ Switching browser tabs automatically every $Interval seconds..."
-	Write-Host "   (click into the browser window to activate it, press Ctrl + C here to stop it)"
+	Write-Host "⏳ Switching from tab to tab automatically every $timeInterval seconds..."
+	Write-Host "   (click the Web browser to activate it - press <Ctrl C> here to stop it)"
 	$obj = New-Object -com wscript.shell
 	while ($true) {
 		$obj.SendKeys("^{PGDN}")
-		Start-Sleep -seconds $Interval
+		Start-Sleep -seconds $timeInterval
 	}
 	exit 0 # success
 } catch {
