@@ -8,14 +8,14 @@
 .PARAMETER pathToRepo
 	Specifies the file path to the local Git repository
 .EXAMPLE
-	PS> ./switch-branch main C:\MyRepo
+	PS> ./switch-branch main C:\Repos\rust
 	⏳ (1/6) Searching for Git executable...   git version 2.43.0.windows.1
 	⏳ (2/6) Checking Git repository...
 	⏳ (3/6) Fetching updates...
 	⏳ (4/6) Switching to branch 'main'...
 	⏳ (5/6) Pulling updates...
 	⏳ (6/6) Updating submodules...
-	✔️ Switched repo 📂MyRepo to branch 'main' in 22 sec
+	✔️ Switched repository 📂rust to 'main' branch in 22 sec.
 .LINK
 	https://github.com/fleschutz/PowerShell
 .NOTES
@@ -40,7 +40,7 @@ try {
 	$result = (git status)
 	if ($lastExitCode -ne "0") { throw "'git status' in $pathToRepo failed with exit code $lastExitCode" }
 	if ("$result" -notmatch "nothing to commit, working tree clean") { throw "Git repository is NOT clean: $result" }
-	$pathToRepoName = (Get-Item "$pathToRepo").Name
+	$repoDirName = (Get-Item "$pathToRepo").Name
 
 	"⏳ (3/6) Fetching updates..."
 	& git -C "$pathToRepo" fetch --all --prune --prune-tags --force
@@ -59,7 +59,7 @@ try {
 	if ($lastExitCode -ne "0") { throw "'git submodule update' failed with exit code $lastExitCode" }
 
 	[int]$elapsed = $stopWatch.Elapsed.TotalSeconds
-	"✔️ Switched repo 📂$pathToRepoName to branch '$branchName' in $elapsed sec."
+	"✔️ Switched repository 📂$repoDirName to '$branchName' branch in $elapsed sec."
 	exit 0 # success
 } catch {
 	"⚠️ Error in line $($_.InvocationInfo.ScriptLineNumber): $($Error[0])"
