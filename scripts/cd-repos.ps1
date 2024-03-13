@@ -7,7 +7,11 @@
 	Specifies an additional relative subpath (optional)
 .EXAMPLE
 	PS> ./cd-repos
-	📂C:\Users\Markus\source\Repos
+	📂C:\Users\Markus\Repos
+
+	PS> ./cd-repos rust
+	📂C:\Users\Markus\Repos\rust
+	  on branch: ## main ... origin/main
 .LINK
 	https://github.com/fleschutz/PowerShell
 .NOTES
@@ -35,7 +39,11 @@ try {
 	$path = Resolve-Path "$path"
 	Set-Location "$path"
 	"📂$path"
-	if ("$subpath" -ne "") { & git status --short --branch --show-stash }
+
+	if ("$subpath" -ne "") {
+		Write-Host -noNewline "  on branch: "
+		& git status --short --branch --show-stash
+	}
 	exit 0 # success
 } catch {
 	"⚠️ Error: $($Error[0])"
