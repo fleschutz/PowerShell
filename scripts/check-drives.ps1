@@ -45,7 +45,7 @@ try {
 		} elseif ($free -lt $minLevel) {
 			Write-Host "⚠️ Drive $name with $(Bytes2String $total) is nearly full, $(Bytes2String $free) free"
 		} else {
-			[int]$percent = ($used * 100) / $total
+			[int64]$percent = ($used * 100) / $total
 			Write-Host "✅ Drive $name has $(Bytes2String $free) free ($percent% of $(Bytes2String $total) used)"
 		}
 	}
