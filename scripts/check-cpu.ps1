@@ -42,7 +42,7 @@ function GetCPUTemperature {
 }
 
 try {
-	Write-Progress "Querying the CPU status...     "
+	Write-Progress "Querying CPU status...     "
 	$status = "✅"
 	$arch = GetCPUArchitecture
 	if ($IsLinux) {
