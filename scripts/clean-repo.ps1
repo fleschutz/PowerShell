@@ -4,7 +4,7 @@
 .DESCRIPTION
 	This PowerShell script deletes all untracked files and folders in a local Git repository (including submodules).
 	NOTE: To be used with care! This cannot be undone!
-.PARAMETER RepoDir
+.PARAMETER pathToRepo
 	Specifies the file path to the local Git repository
 .EXAMPLE
 	PS> ./clean-repo.ps1 C:\rust
@@ -12,7 +12,7 @@
 	⏳ (2/4) Checking local repository...        	  📂C:\rust
 	⏳ (3/4) Removing untracked files in repository...
 	⏳ (4/4) Removing untracked files in submodules...
-	✔️ Cleaned up repository 📂rust in 1 sec.
+	✔️ Cleaned up 📂rust repository in 1 sec.
 .LINK
 	https://github.com/fleschutz/PowerShell
 .NOTES
@@ -29,7 +29,7 @@ try {
 	if ($lastExitCode -ne "0") { throw "Can't execute 'git' - make sure Git is installed and available" }
 
 	"⏳ (2/4) Checking local repository...             📂$pathToRepo"
-	if (-not(Test-Path "$pathToRepo" -pathType container)) { throw "Can't access folder '$pathToRepo' - maybe a typo or missing folder permissions?" }
+	if (-not(Test-Path "$pathToRepo" -pathType container)) { throw "Can't access repo folder '$pathToRepo' - maybe a typo or missing folder permissions?" }
 	$repoName = (Get-Item "$pathToRepo").Name
 
 	"⏳ (3/4) Removing untracked files in repository..."
@@ -45,7 +45,7 @@ try {
 	if ($lastExitCode -ne "0") { throw "'git clean' in the submodules failed with exit code $lastExitCode" }
 
 	[int]$elapsed = $stopWatch.Elapsed.TotalSeconds
-	"✔️ Cleaned up repository 📂$repoName in $elapsed sec."
+	"✔️ Cleaned up 📂$repoName repository in $elapsed sec."
 	exit 0 # success
 } catch {
 	"⚠️ Error in line $($_.InvocationInfo.ScriptLineNumber): $($Error[0])"
