@@ -1,28 +1,48 @@
 ﻿<#
 .SYNOPSIS
-	Opens an editor to edit a file
+	Opens a text editor
 .DESCRIPTION
-	This PowerShell script opens a text editor to edit the given file.
-.PARAMETER Filename
-	Specifies the path to the filename
+	This PowerShell script opens a text editor with the given text file.
+.PARAMETER path
+	Specifies the path to the text file (will be queried if none given)
 .EXAMPLE
-	PS> ./edit.ps1 C:\MyFile.txt
+	PS> ./edit.ps1 C:\MyDiary.txt
 .LINK
 	https://github.com/fleschutz/PowerShell
 .NOTES
 	Author: Markus Fleschutz | License: CC0
 #>
 
-param([string]$Filename = "")
+param([string]$path = "")
+
+function TryEditor { param([string]$editor, [string]$path)
+	try {
+		Write-Host -noNewline "$editor... "
+		& $editor "$path"
+		if ($lastExitCode -ne "0") {
+			"⚠️ Can't execute '$editor' - make sure it's installed and available"
+			exit 1
+		}
+		exit 0 # success
+	} catch {
+		return
+	}
+}
 
 try {
-	if ($IsLinux) {
-		& vi "$Filename"
-		if ($lastExitCode -ne "0") { throw "Can't execute 'vi' - make sure vi is installed and available" }
-	} else {
-		& notepad.exe "$Filename"
-		if ($lastExitCode -ne "0") { throw "Can't execute 'notepad.exe' - make sure notepad.exe is installed and available" }
-	}
+	if ($path -eq "" ) { $path = Read-Host "Enter the path to the text file" }
+
+	Write-Host -noNewline "Trying "
+	TryEditor "vim" $path
+	TryEditor "vi" $path
+	TryEditor "nano" $path
+	TryEditor "pico" $path
+	TryEditor "emacs" $path
+	TryEditor "notepad.exe" $path
+	TryEditor "wordpad.exe" $path
+	Write-Host ""
+
+	throw "No text editor found - use 'winget install' to install your favorite text editor."
 	exit 0 # success
 } catch {
 	"⚠️ Error in line $($_.InvocationInfo.ScriptLineNumber): $($Error[0])"
