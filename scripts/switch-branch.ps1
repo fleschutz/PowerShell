@@ -15,7 +15,7 @@
 	⏳ (4/6) Switching to branch 'main'...
 	⏳ (5/6) Pulling updates...
 	⏳ (6/6) Updating submodules...
-	✔️ Switched repository 📂rust to 'main' branch in 22 sec.
+	✔️ Switched 📂rust repository to 'main' branch in 22 sec.
 .LINK
 	https://github.com/fleschutz/PowerShell
 .NOTES
@@ -26,7 +26,7 @@ param([string]$branchName = "", [string]$pathToRepo = "$PWD")
 
 try {
 	if ($branchName -eq "") { $branchName = Read-Host "Enter the branch name to switch to" }
-	if ($pathToRepo -eq "") { $pathToRepo = Read-Host "Enter the path to the local Git repository" }
+	if ($pathToRepo -eq "") { $pathToRepo = Read-Host "Enter the file path to the Git repository" }
 
 	$stopWatch = [system.diagnostics.stopwatch]::startNew()
 
@@ -36,7 +36,7 @@ try {
 
 	Write-Host "⏳ (2/6) Checking Git repository..."
 	$pathToRepo = Resolve-Path "$pathToRepo"
-	if (-not(Test-Path "$pathToRepo" -pathType container)) { throw "Can't access directory: $pathToRepo" }
+	if (-not(Test-Path "$pathToRepo" -pathType container)) { throw "Can't access repo folder: $pathToRepo" }
 	$result = (git status)
 	if ($lastExitCode -ne "0") { throw "'git status' in $pathToRepo failed with exit code $lastExitCode" }
 	if ("$result" -notmatch "nothing to commit, working tree clean") { throw "Git repository is NOT clean: $result" }
@@ -59,7 +59,7 @@ try {
 	if ($lastExitCode -ne "0") { throw "'git submodule update' failed with exit code $lastExitCode" }
 
 	[int]$elapsed = $stopWatch.Elapsed.TotalSeconds
-	"✔️ Switched repository 📂$repoDirName to '$branchName' branch in $elapsed sec."
+	"✔️ Switched 📂$repoDirName repository to '$branchName' branch in $elapsed sec."
 	exit 0 # success
 } catch {
 	"⚠️ Error in line $($_.InvocationInfo.ScriptLineNumber): $($Error[0])"
