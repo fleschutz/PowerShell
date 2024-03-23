@@ -6,7 +6,7 @@
 .EXAMPLE
 	PS> ./write-chart.ps1
 	
-	2023 BOWLING RESULTS
+	BOWLING RESULTS 2024
 	████████████████▏ 40.5% Joe
 	████████████▎ 30.9% Tom
 .LINK
@@ -43,7 +43,7 @@ function WriteChartLine { param([string]$Text, [float]$Value, [float]$Max)
 	}
 }
 
-Write-Host "`n2023 BOWLING RESULTS" -foregroundColor green
+Write-Host "`nBOWLING RESULTS 2024" -foregroundColor green
 WriteChartLine "Joe" 40.5 100.0
 WriteChartLine "Tom" 30.9 100.0
 exit 0 # success
