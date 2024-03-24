@@ -10,7 +10,7 @@
 .EXAMPLE
 	PS> ./ping-host.ps1
 	
-	Ping roundtrip times of host windows.com:
+	Ping Roundtrip Times to Host: windows.com
 	██████████████ 136ms
 	████████████████ 154ms
 	█████████████████████████ 234ms
@@ -25,14 +25,14 @@ param([string]$hostname = "windows.com", [int]$timeInterval = 1000)
 
 function GetPingLatency([string]$hostname) {
 	$hostsArray = $hostname.Split(",")
-    $parallelTasks = $hostsArray | foreach {
-        (New-Object Net.NetworkInformation.Ping).SendPingAsync($_,1000)
-    }
-	[Threading.Tasks.Task]::WaitAll($parallelTasks)
-	foreach($ping in $parallelTasks.Result) { 
-        if ($ping.Status -eq "Success") { return $ping.RoundtripTime }
+	$tasks = $hostsArray | foreach {
+		(New-Object Net.NetworkInformation.Ping).SendPingAsync($_,1000)
 	}
-	return 1000.0
+	[Threading.Tasks.Task]::WaitAll($tasks)
+	foreach($ping in $tasks.Result) { 
+        	if ($ping.Status -eq "Success") { return $ping.RoundtripTime }
+	}
+	return 1000
 }
 
 function WriteChartLine { param([float]$value, [float]$maxValue, [string]$text)
@@ -60,7 +60,7 @@ function WriteChartLine { param([float]$value, [float]$maxValue, [string]$text)
 }
 
 try {
-	Write-Output "`nPing roundtrip times of host $($hostname):"
+	Write-Host "`nPing Roundtrip Times to Host: $($hostname)" -foregroundColor green
 	do {
 		[float]$latency = GetPingLatency $hostname
 		WriteChartLine $latency 1000.0 "$($latency)ms"
