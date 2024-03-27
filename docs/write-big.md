@@ -9,11 +9,11 @@ Parameters
 PS> ./write-big.ps1 [[-text] <String>] [<CommonParameters>]
 
 -text <String>
-    Specifies the text to write
+    Specifies the text to write ("Hello World" by default)
     
     Required?                    false
     Position?                    1
-    Default value                
+    Default value                Hello World
     Accept pipeline input?       false
     Accept wildcard characters?  false
 
@@ -25,7 +25,11 @@ PS> ./write-big.ps1 [[-text] <String>] [<CommonParameters>]
 Example
 -------
 ```powershell
-PS> ./write-big "Hello World"
+PS> ./write-big.ps1
+ _   _  ____  _     _      ___         __    __   ___   ____  _     ____
+| |_| || ___)| |   | |    / _ \       \  \/\/  / / _ \ |  _ \| |   |  _ \
+|  _  || __) | |__ | |__ ( (_) )       \      / ( (_) )|    /| |__ | (_) )
+|_| |_||____)|____)|____) \___/         \_/\_/   \___/ |_|\_)|____)|____/
 
 ```
 
@@ -46,21 +50,25 @@ Script Content
 .DESCRIPTION
 	This PowerShell script writes the given text in big letters.
 .PARAMETER text
-	Specifies the text to write
+	Specifies the text to write ("Hello World" by default)
 .EXAMPLE
-	PS> ./write-big "Hello World"
+	PS> ./write-big.ps1
+	 _   _  ____  _     _      ___         __    __   ___   ____  _     ____
+	| |_| || ___)| |   | |    / _ \       \  \/\/  / / _ \ |  _ \| |   |  _ \
+	|  _  || __) | |__ | |__ ( (_) )       \      / ( (_) )|    /| |__ | (_) )
+	|_| |_||____)|____)|____) \___/         \_/\_/   \___/ |_|\_)|____)|____/
 .LINK
 	https://github.com/fleschutz/PowerShell
 .NOTES
 	Author: Markus Fleschutz | License: CC0
 #>
 
-param([string]$text = "")
+param([string]$text = "Hello World")
 
 Set-StrictMode -Version Latest
 
-function BigA { param([int]$Row)
-	switch($Row) {
+function BigA { param([int]$row)
+	switch($row) {
 	1 { return "   __   " }
 	2 { return "  /__\  " }
 	3 { return " /(__)\ " }
@@ -68,8 +76,8 @@ function BigA { param([int]$Row)
 	}
 }
 
-function BigB { param([int]$Row)
-	switch($Row) {
+function BigB { param([int]$row)
+	switch($row) {
 	1 { return " ____ " }
 	2 { return "| _  )" }
 	3 { return "| _ ( " }
@@ -77,8 +85,8 @@ function BigB { param([int]$Row)
 	}
 }
 
-function BigC { param([int]$Row)
-	switch($Row) {
+function BigC { param([int]$row)
+	switch($row) {
 	1 { return "  ___ " }
 	2 { return " / __)" }
 	3 { return "( (__ " }
@@ -86,8 +94,8 @@ function BigC { param([int]$Row)
 	}
 }
 
-function BigD { param([int]$Row)
-	switch($Row) {
+function BigD { param([int]$row)
+	switch($row) {
 	1 { return " ____  " }
 	2 { return "|  _ \ " }
 	3 { return "| (_) )" }
@@ -95,8 +103,8 @@ function BigD { param([int]$Row)
 	}
 }
 
-function BigE { param([int]$Row)
-	switch($Row) {
+function BigE { param([int]$row)
+	switch($row) {
 	1 { return " ____ " }
 	2 { return "| ___)" }
 	3 { return "| __) " }
@@ -104,8 +112,8 @@ function BigE { param([int]$Row)
 	}
 }
 
-function BigF { param([int]$Row)
-	switch($Row) {
+function BigF { param([int]$row)
+	switch($row) {
 	1 { return " ____ " }
 	2 { return "| ___)" }
 	3 { return "| __) " }
@@ -113,8 +121,8 @@ function BigF { param([int]$Row)
 	}
 }
 
-function BigG { param([int]$Row)
-	switch($Row) {
+function BigG { param([int]$row)
+	switch($row) {
 	1 { return "  ____ " }
 	2 { return " / ___)" }
 	3 { return "( (__-." }
@@ -122,8 +130,8 @@ function BigG { param([int]$Row)
 	}
 }
 
-function BigH { param([int]$Row)
-	switch($Row) {
+function BigH { param([int]$row)
+	switch($row) {
 	1 { return " _   _ " }
 	2 { return "| |_| |" }
 	3 { return "|  _  |" }
@@ -131,8 +139,8 @@ function BigH { param([int]$Row)
 	}
 }
 
-function BigI { param([int]$Row)
-	switch($Row) {
+function BigI { param([int]$row)
+	switch($row) {
 	1 { return " _ " }
 	2 { return "| |" }
 	3 { return "| |" }
@@ -140,8 +148,8 @@ function BigI { param([int]$Row)
 	}
 }
 
-function BigJ { param([int]$Row)
-	switch($Row) {
+function BigJ { param([int]$row)
+	switch($row) {
 	1 { return "   __ " }
 	2 { return "  (  |" }
 	3 { return ".-_) |" }
@@ -149,8 +157,8 @@ function BigJ { param([int]$Row)
 	}
 }
 
-function BigK { param([int]$Row)
-	switch($Row) {
+function BigK { param([int]$row)
+	switch($row) {
 	1 { return " _  _ " }
 	2 { return "| |/ )" }
 	3 { return "|   ( " }
@@ -158,8 +166,8 @@ function BigK { param([int]$Row)
 	}
 }
 
-function BigL { param([int]$Row)
-	switch($Row) {
+function BigL { param([int]$row)
+	switch($row) {
 	1 { return " _    " }
 	2 { return "| |   " }
 	3 { return "| |__ " }
@@ -167,8 +175,8 @@ function BigL { param([int]$Row)
 	}
 }
 
-function BigM { param([int]$Row)
-	switch($Row) {
+function BigM { param([int]$row)
+	switch($row) {
 	1 { return " _    _ " }
 	2 { return "| \  / |" }
 	3 { return "|  \/  |" }
@@ -176,8 +184,8 @@ function BigM { param([int]$Row)
 	}
 }
 
-function BigN { param([int]$Row)
-	switch($Row) {
+function BigN { param([int]$row)
+	switch($row) {
 	1 { return " _   _ " }
 	2 { return "| \ | |" }
 	3 { return "|  \| |" }
@@ -185,8 +193,8 @@ function BigN { param([int]$Row)
 	}
 }
 
-function BigO { param([int]$Row)
-	switch($Row) {
+function BigO { param([int]$row)
+	switch($row) {
 	1 { return "  ___  " }
 	2 { return " / _ \ " }
 	3 { return "( (_) )" }
@@ -194,8 +202,8 @@ function BigO { param([int]$Row)
 	}
 }
 
-function BigP { param([int]$Row)
-	switch($Row) {
+function BigP { param([int]$row)
+	switch($row) {
 	1 { return " ____ " }
 	2 { return "|  _ \" }
 	3 { return "|  __/" }
@@ -203,8 +211,8 @@ function BigP { param([int]$Row)
 	}
 }
 
-function BigQ { param([int]$Row)
-	switch($Row) {
+function BigQ { param([int]$row)
+	switch($row) {
 	1 { return "  ____  " }
 	2 { return " / _  \ " }
 	3 { return "( (_) ( " }
@@ -212,8 +220,8 @@ function BigQ { param([int]$Row)
 	}
 }
 
-function BigR { param([int]$Row)
-	switch($Row) {
+function BigR { param([int]$row)
+	switch($row) {
 	1 { return " ____ " }
 	2 { return "|  _ \" }
 	3 { return "|    /" }
@@ -221,8 +229,8 @@ function BigR { param([int]$Row)
 	}
 }
 
-function BigS { param([int]$Row)
-	switch($Row) {
+function BigS { param([int]$row)
+	switch($row) {
 	1 { return " ____ " }
 	2 { return "/  __)" }
 	3 { return "\__  \" }
@@ -230,8 +238,8 @@ function BigS { param([int]$Row)
 	}
 }
 
-function BigT { param([int]$Row)
-	switch($Row) {
+function BigT { param([int]$row)
+	switch($row) {
 	1 { return " _____ " }
 	2 { return "|_   _|" }
 	3 { return "  | |  " }
@@ -239,8 +247,8 @@ function BigT { param([int]$Row)
 	}
 }
 
-function BigU { param([int]$Row)
-	switch($Row) {
+function BigU { param([int]$row)
+	switch($row) {
 	1 { return " _   _ " }
 	2 { return "| | | |" }
 	3 { return "| |_| |" }
@@ -248,8 +256,8 @@ function BigU { param([int]$Row)
 	}
 }
 
-function BigV { param([int]$Row)
-	switch($Row) {
+function BigV { param([int]$row)
+	switch($row) {
 	1 { return " _  _ " }
 	2 { return "( \/ )" }
 	3 { return " \  / " }
@@ -257,8 +265,8 @@ function BigV { param([int]$Row)
 	}
 }
 
-function BigW { param([int]$Row)
-	switch($Row) {
+function BigW { param([int]$row)
+	switch($row) {
 	1 { return " __    __ " }
 	2 { return "\  \/\/  /" }
 	3 { return " \      / " }
@@ -266,8 +274,8 @@ function BigW { param([int]$Row)
 	}
 }
 
-function BigX { param([int]$Row)
-	switch($Row) {
+function BigX { param([int]$row)
+	switch($row) {
 	1 { return " _  _ " }
 	2 { return "( \/ )" }
 	3 { return " )  ( " }
@@ -275,8 +283,8 @@ function BigX { param([int]$Row)
 	}
 }
 
-function BigY { param([int]$Row)
-	switch($Row) {
+function BigY { param([int]$row)
+	switch($row) {
 	1 { return " _  _ " }
 	2 { return "( \/ )" }
 	3 { return " \  / " }
@@ -284,8 +292,8 @@ function BigY { param([int]$Row)
 	}
 }
 
-function BigZ { param([int]$Row)
-	switch($Row) {
+function BigZ { param([int]$row)
+	switch($row) {
 	1 { return " ____ " }
 	2 { return "(_   )" }
 	3 { return " / /_ " }
@@ -293,8 +301,8 @@ function BigZ { param([int]$Row)
 	}
 }
 
-function Big0 { param([int]$Row)
-	switch($Row) {
+function Big0 { param([int]$row)
+	switch($row) {
 	1 { return "  ___  " }
 	2 { return " / _ \ " }
 	3 { return "( (_) )" }
@@ -302,8 +310,8 @@ function Big0 { param([int]$Row)
 	}
 }
 
-function Big1 { param([int]$Row)
-	switch($Row) {
+function Big1 { param([int]$row)
+	switch($row) {
 	1 { return " ___ " }
 	2 { return "/_  |" }
 	3 { return "  | |" }
@@ -311,8 +319,8 @@ function Big1 { param([int]$Row)
 	}
 }
 
-function Big2 { param([int]$Row)
-	switch($Row) {
+function Big2 { param([int]$row)
+	switch($row) {
 	1 { return " ___  " }
 	2 { return "(__ \ " }
 	3 { return " / _/ " }
@@ -320,8 +328,8 @@ function Big2 { param([int]$Row)
 	}
 }
 
-function Big3 { param([int]$Row)
-	switch($Row) {
+function Big3 { param([int]$row)
+	switch($row) {
 	1 { return " ___ " }
 	2 { return "(__ )" }
 	3 { return " (_ \" }
@@ -329,8 +337,8 @@ function Big3 { param([int]$Row)
 	}
 }
 
-function Big4 { param([int]$Row)
-	switch($Row) {
+function Big4 { param([int]$row)
+	switch($row) {
 	1 { return "  __  " }
 	2 { return " /. | " }
 	3 { return "(_  _)" }
@@ -338,8 +346,8 @@ function Big4 { param([int]$Row)
 	}
 }
 
-function Big5 { param([int]$Row)
-	switch($Row) {
+function Big5 { param([int]$row)
+	switch($row) {
 	1 { return " ____ " }
 	2 { return "| ___)" }
 	3 { return "|__ \ " }
@@ -347,8 +355,8 @@ function Big5 { param([int]$Row)
 	}
 }
 
-function Big6 { param([int]$Row)
-	switch($Row) {
+function Big6 { param([int]$row)
+	switch($row) {
 	1 { return "  _  " }
 	2 { return " / ) " }
 	3 { return "/ _ \" }
@@ -356,8 +364,8 @@ function Big6 { param([int]$Row)
 	}
 }
 
-function Big7 { param([int]$Row)
-	switch($Row) {
+function Big7 { param([int]$row)
+	switch($row) {
 	1 { return " ___ " }
 	2 { return "(__ )" }
 	3 { return " / / " }
@@ -365,8 +373,8 @@ function Big7 { param([int]$Row)
 	}
 } 
 
-function Big8 { param([int]$Row)
-	switch($Row) {
+function Big8 { param([int]$row)
+	switch($row) {
 	1 { return " ___ " }
 	2 { return "( _ )" }
 	3 { return "/ _ \" }
@@ -374,8 +382,8 @@ function Big8 { param([int]$Row)
 	}
 } 
 
-function Big9 { param([int]$Row)
-	switch($Row) {
+function Big9 { param([int]$row)
+	switch($row) {
 	1 { return " ___ " }
 	2 { return "/ _ \" }
 	3 { return "\_  /" }
@@ -383,8 +391,8 @@ function Big9 { param([int]$Row)
 	}
 } 
 
-function BigColon { param([int]$Row)
-	switch($Row) {
+function BigColon { param([int]$row)
+	switch($row) {
 	1 { return "   " }
 	2 { return " o " }
 	3 { return " o " }
@@ -392,8 +400,8 @@ function BigColon { param([int]$Row)
 	}
 } 
 
-function BigMinus { param([int]$Row)
-	switch($Row) {
+function BigMinus { param([int]$row)
+	switch($row) {
 	1 { return "      " }
 	2 { return " ____ " }
 	3 { return "(____)" }
@@ -401,63 +409,61 @@ function BigMinus { param([int]$Row)
 	}
 } 
 
-function BigChar { param([string]$Char, [int]$Row)
-	switch($Char) {
-	'A' { return BigA $Row }
-	'B' { return BigB $Row }
-	'C' { return BigC $Row }
-	'D' { return BigD $Row }
-	'E' { return BigE $Row }
-	'F' { return BigF $Row }
-	'G' { return BigG $Row }
-	'H' { return BigH $Row }
-	'I' { return BigI $Row }
-	'J' { return BigJ $Row }
-	'K' { return BigK $Row }
-	'L' { return BigL $Row }
-	'M' { return BigM $Row }
-	'N' { return BigN $Row }
-	'O' { return BigO $Row }
-	'P' { return BigP $Row }
-	'Q' { return BigQ $Row }
-	'R' { return BigR $Row }
-	'S' { return BigS $Row }
-	'T' { return BigT $Row }
-	'U' { return BigU $Row }
-	'V' { return BigV $Row }
-	'W' { return BigW $Row }
-	'X' { return BigX $Row }
-	'Y' { return BigY $Row }
-	'Z' { return BigZ $Row }
-	'0' { return Big0 $Row }
-	'1' { return Big1 $Row }
-	'2' { return Big2 $Row }
-	'3' { return Big3 $Row }
-	'4' { return Big4 $Row }
-	'5' { return Big5 $Row }
-	'6' { return Big6 $Row }
-	'7' { return Big7 $Row }
-	'8' { return Big8 $Row }
-	'9' { return Big9 $Row }
-	':' { return BigColon $Row }
-	'-' { return BigMinus $Row }
+function BigChar { param([string]$char, [int]$row)
+	switch($char) {
+	'A' { return BigA $row }
+	'B' { return BigB $row }
+	'C' { return BigC $row }
+	'D' { return BigD $row }
+	'E' { return BigE $row }
+	'F' { return BigF $row }
+	'G' { return BigG $row }
+	'H' { return BigH $row }
+	'I' { return BigI $row }
+	'J' { return BigJ $row }
+	'K' { return BigK $row }
+	'L' { return BigL $row }
+	'M' { return BigM $row }
+	'N' { return BigN $row }
+	'O' { return BigO $row }
+	'P' { return BigP $row }
+	'Q' { return BigQ $row }
+	'R' { return BigR $row }
+	'S' { return BigS $row }
+	'T' { return BigT $row }
+	'U' { return BigU $row }
+	'V' { return BigV $row }
+	'W' { return BigW $row }
+	'X' { return BigX $row }
+	'Y' { return BigY $row }
+	'Z' { return BigZ $row }
+	'0' { return Big0 $row }
+	'1' { return Big1 $row }
+	'2' { return Big2 $row }
+	'3' { return Big3 $row }
+	'4' { return Big4 $row }
+	'5' { return Big5 $row }
+	'6' { return Big6 $row }
+	'7' { return Big7 $row }
+	'8' { return Big8 $row }
+	'9' { return Big9 $row }
+	':' { return BigColon $row }
+	'-' { return BigMinus $row }
 	}
 	return "      "
 }
 
 try {
-	if ($text -eq "" ) { [String]$text = read-host "Enter text to write" }
-
-	[char[]]$ArrayOfChars = $text.ToUpper()
-	write-output ""
-	for ($Row = 1; $Row -lt 5; $Row++) {
-		$Line = ""
-		foreach($Char in $ArrayOfChars) {
-			$Line += BigChar $Char $Row
+	Write-Output ""
+	[char[]]$arrayOfChars = $text.ToUpper()
+	for ($row = 1; $row -lt 5; $row++) {
+		$line = ""
+		foreach($char in $arrayOfChars) {
+			$line += BigChar $char $row
 		}
-		write-output $Line
+		Write-Output $line
 	}
-	write-output ""
+	Write-Output ""
 	exit 0 # success
 } catch {
 	"⚠️ Error in line $($_.InvocationInfo.ScriptLineNumber): $($Error[0])"
@@ -465,4 +471,4 @@ try {
 }
 ```
 
-*(generated by convert-ps2md.ps1 using the comment-based help of write-big.ps1 as of 01/25/2024 13:58:43)*
+*(generated by convert-ps2md.ps1 using the comment-based help of write-big.ps1 as of 03/27/2024 17:36:33)*
