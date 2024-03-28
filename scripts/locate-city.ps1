@@ -3,43 +3,41 @@
 	Prints the geographic location of a city
 .DESCRIPTION
 	This PowerShell script prints the geographic location of the given city.
-.PARAMETER City
-	Specifies the city to look for
+.PARAMETER city
+	Specifies the name of the city to look for
 .EXAMPLE
-	PS> ./locate-city.ps1 Paris
+	PS> ./locate-city.ps1 Amsterdam
+	* Amsterdam (United States, New York, population 21241) is at 42.9420°N, -74.1907°W
+	* Amsterdam (Netherlands, Noord-Holland, population 1031000) is at 52.3500°N, 4.9166°W
 .LINK
 	https://github.com/fleschutz/PowerShell
 .NOTES
 	Author: Markus Fleschutz | License: CC0
 #>
 
-param([string]$City = "")
+param([string]$city = "")
 
 try {
-	if ($City -eq "" ) { $City = Read-Host "Enter the city name" }
+	if ($city -eq "" ) { $city = Read-Host "Enter the name of the city" }
 
-	Write-Progress "Reading worldcities.csv..."
-	$Table = import-csv "$PSScriptRoot/../data/worldcities.csv"
+	Write-Progress "Reading data/worldcities.csv..."
+	$table = Import-CSV "$PSScriptRoot/../data/worldcities.csv"
 
-	$FoundOne = 0
-	foreach($Row in $Table) {
-		if ($Row.city -eq $City) {
-			$FoundOne = 1
-			$Country = $Row.country
-			$Region = $Row.admin_name
-			$Lat = $Row.lat
-			$Long = $Row.lng
-			$Population = $Row.population
-			write-host "* $City ($Country, $Region, population $Population) is at $Lat°N, $Long°W"
+	$foundOne = 0
+	foreach($row in $table) {
+		if ($row.city -eq $city) {
+			$foundOne = 1
+			$country = $row.country
+			$region = $row.admin_name
+			$lat = $row.lat
+			$long = $row.lng
+			$population = $row.population
+			Write-Host "* $city ($country, $region, population $population) is at $lat°N, $long°W"
 		}
 	}
-
-	if ($FoundOne) {
-		exit 0 # success
-	}
-	write-error "City $City not found"
-	exit 1
+	if (-not $foundOne) { throw "No city '$city' found in database" }
+	exit 0 # success
 } catch {
-	"⚠️ Error in line $($_.InvocationInfo.ScriptLineNumber): $($Error[0])"
+	"⚠️ Error $($_.InvocationInfo.ScriptLineNumber): $($Error[0])."
 	exit 1
 }
