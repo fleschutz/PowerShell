@@ -48,7 +48,7 @@ try {
 	}
 	[int]$elapsed = $stopWatch.Elapsed.TotalSeconds
 	if ($failed -eq 0) {
-		"✔️ Updated $numFolders repos under 📂$parentDirName in $elapsed sec."
+		"✔️ Pulled updates into $numFolders repos under 📂$parentDirName in $elapsed sec."
 		exit 0 # success
 	} else {
 		"⚠️ Updated $numFolders repos under 📂$parentDirName but $failed failed (took $elapsed sec)."
