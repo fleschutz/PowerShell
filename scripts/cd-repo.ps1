@@ -1,20 +1,25 @@
 ﻿<#
 .SYNOPSIS
-	Sets the working directory to the user's repos folder
+	Sets the working directory to a repository
 .DESCRIPTION
-	This PowerShell script changes the working directory to the user's Git repositories folder.
-.PARAMETER subpath
-	Specifies an additional relative subpath (optional)
+	This PowerShell script changes the working directory to a Git repository.
+.PARAMETER folderName
+	Specifies the folder name
 .EXAMPLE
-	PS> ./cd-repos.ps1
-	📂C:\Users\Markus\Repos
+	PS> ./cd-repo.ps1 rust
+	📂C:\Users\Markus\Repos\rust
+	  on branch: ## main ... origin/main
 .LINK
 	https://github.com/fleschutz/PowerShell
 .NOTES
 	Author: Markus Fleschutz | License: CC0
 #>
 
+param([string]$folderName = "")
+
 try {
+	if ("$folderName" -eq "") { $folderName = Read-Host "Enter the folder name" }
+
 	if (Test-Path "$HOME/Repos/" -pathType Container) {		 # try short name
 		$path = "$HOME/Repos/"
 	} elseif (Test-Path "$HOME/repos/" -pathType Container) {
@@ -28,10 +33,15 @@ try {
 	} else {
 		throw "The folder for Git repositories doesn't exist (yet)"
 	}
+	$path += $folderName
+
 	if (-not(Test-Path "$path" -pathType Container)) { throw "The path to 📂$path doesn't exist (yet)" }
 	$path = Resolve-Path "$path"
 	Set-Location "$path"
 	"📂$path"
+
+	Write-Host -noNewline "  on branch: "
+	& git status --short --branch --show-stash
 	exit 0 # success
 } catch {
 	"⚠️ Error: $($Error[0])"
