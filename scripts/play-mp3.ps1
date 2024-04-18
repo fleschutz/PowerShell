@@ -1,47 +1,49 @@
 ﻿<#
 .SYNOPSIS
-	Plays a MP3 sound file 
+	Plays a .MP3 sound file 
 .DESCRIPTION
-	This PowerShell script plays a sound file in .MP3 file format.
-.PARAMETER Path
-	Specifies the path to the .MP3 file
+	This PowerShell script plays the given sound file (MPEG-1 audio layer-3 file format).
+.PARAMETER path
+	Specifies the file path to the .MP3 file
 .EXAMPLE
-	PS> ./play-mp3 C:\thunder.mp3
+	PS> ./play-mp3.ps1 C:\thunder.mp3
 .LINK
 	https://github.com/fleschutz/PowerShell
 .NOTES
 	Author: Markus Fleschutz | License: CC0
 #>
 
-param([string]$Path = "")
+param([string]$path = "")
 
 try {
-	if ($Path -eq "" ) { $Path = Read-Host "Enter the path to the MP3 sound file" }
+	if ($path -eq "" ) { $path = Read-Host "Enter the file path to the MP3 sound file" }
 
-	if (-not(Test-Path "$Path" -pathType leaf)) { throw "Can't access sound file: $Path" }
-	$FullPath = (Get-ChildItem $Path).fullname
-	$Filename = (Get-Item "$FullPath").name
+	if (-not(Test-Path "$path" -pathType leaf)) { throw "Can't access sound file: $path" }
+	$fullPath = (Get-ChildItem $path).fullname
+	$filename = (Get-Item "$fullPath").name
 
 	Add-Type -assemblyName PresentationCore
-	$MediaPlayer = New-Object System.Windows.Media.MediaPlayer
+	$mediaPlayer = New-Object System.Windows.Media.MediaPlayer
 
 	do {
-		$MediaPlayer.open($FullPath)
-		$Milliseconds = $MediaPlayer.NaturalDuration.TimeSpan.TotalMilliseconds
-	} until ($Milliseconds)
+		$mediaPlayer.open($fullPath)
+		$milliseconds = $mediaPlayer.NaturalDuration.TimeSpan.TotalMilliseconds
+	} until ($milliseconds)
 
-	[int]$Minutes = $Milliseconds / 60000
-	[int]$Seconds = ($Milliseconds / 1000) % 60
-	"▶️ Playing $Filename for $($Minutes.ToString('00')):$($Seconds.ToString('00')) sec..."
-	$PreviousTitle = $host.ui.RawUI.WindowTitle 
-	$host.ui.RawUI.WindowTitle = "▶️ $Filename"
-	$MediaPlayer.Volume = 1
-	$MediaPlayer.play()
-	Start-Sleep -milliseconds $Milliseconds
-	$MediaPlayer.stop()
-	$MediaPlayer.close()
-	$host.ui.RawUI.WindowTitle = $PreviousTitle
+	[int]$minutes = $milliseconds / 60000
+	[int]$seconds = ($milliseconds / 1000) % 60
+	Write-Host "  ▶️" -noNewline -foregroundColor green
+	Write-Host "Playing $filename for $($minutes.ToString('00')):$($seconds.ToString('00'))s..."
 
+	$previousTitle = $host.ui.RawUI.WindowTitle 
+	$host.ui.RawUI.WindowTitle = "▶️ $filename"
+	$mediaPlayer.Volume = 1
+	$mediaPlayer.play()
+	Start-Sleep -milliseconds $milliseconds
+
+	$mediaPlayer.stop()
+	$mediaPlayer.close()
+	$host.ui.RawUI.WindowTitle = $previousTitle
 	exit 0 # success
 } catch {
 	"⚠️ Error in line $($_.InvocationInfo.ScriptLineNumber): $($Error[0])"
