@@ -503,7 +503,7 @@ try {
     }
 
     if (-not $UseMSI) {
-        Write-Host "✅ PowerShell $release has been installed at $Destination" -noNewline
+        Write-Host "✅ Installed PowerShell $release at $Destination" -noNewline
         if ($Destination -eq $PSHOME) {
             Write-Host " - Please restart pwsh now."
         } else {
