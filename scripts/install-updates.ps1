@@ -24,6 +24,7 @@ try {
 
 	if ($IsLinux) {
 		"⏳ (1/5) Checking requirements..."
+		& "$PSScriptRoot/check-smart-devices.ps1"
 		& "$PSScriptRoot/check-drive-space.ps1" /
 		& "$PSScriptRoot/check-swap-space.ps1"
 		& "$PSScriptRoot/check-pending-reboot.ps1"
@@ -47,6 +48,7 @@ try {
 	} else {
 		# Windows:
 		"⏳ (1/2) Checking requirements..."
+		& "$PSScriptRoot/check-smart-devices.ps1"
 		& "$PSScriptRoot/check-drive-space.ps1" C
 		& "$PSScriptRoot/check-swap-space.ps1"
 		& "$PSScriptRoot/check-pending-reboot.ps1"
@@ -57,7 +59,7 @@ try {
 		& winget upgrade --all --include-unknown
 	}
 	[int]$elapsed = $stopWatch.Elapsed.TotalSeconds
-	"✅ Installed updates in $elapsed sec"
+	"✅ Installed updates in $elapsed sec."
 	exit 0 # success
 } catch {
 	"⚠️ Error in line $($_.InvocationInfo.ScriptLineNumber): $($Error[0])"

@@ -5,7 +5,7 @@
 	This PowerShell script queries pending operating system reboots and prints it.
 .EXAMPLE
 	./check-pending-reboot.ps1
-	✅ No pending system reboot
+	✅ No pending reboot
 .LINK
         https://github.com/fleschutz/PowerShell
 .NOTES
@@ -60,11 +60,11 @@ try {
 			$Reason += ", '...\CurrentControlSet\Services\Netlogon' with 'AvoidSpnSet'"
 		}
 		if ($Reason -ne "") {
-			Write-Host "⚠️ Pending reboot (registry contains $($Reason.substring(2)))"
+			Write-Host "⚠️ Pending reboot (registry got $($Reason.substring(2)))"
 		}
 	}
 	if ($Reason -eq "") {
-		Write-Host "✅ No pending system reboot"
+		Write-Host "✅ No pending reboot"
 	}
 	exit 0 # success
 } catch {
