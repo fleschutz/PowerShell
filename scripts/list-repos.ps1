@@ -1,15 +1,15 @@
 ﻿<#
 .SYNOPSIS
-	Lists Git repos
+	Lists Git repositories
 .DESCRIPTION
-	This PowerShell script lists details of all Git repositories in a folder.
+	This PowerShell script lists all Git repositories in a folder with some details.
 .PARAMETER parentDir
 	Specifies the path to the parent directory (current working directory by default)
 .EXAMPLE
-	PS> ./list-repos C:\MyRepos
+	PS> ./list-repos.ps1 C:\Repos
 	
-	Repository   Latest Tag   Branch    Status    Remote URL
-	----------   ----------   ------    ------    ----------
+	Local Repo   Latest Tag   Branch    Status    Remote Repo
+	----------   ----------   ------    ------    -----------
 	📂cmake      v3.23.0      main      ✔️clean    git@github.com:Kitware/CMake ↓0
 	...
 .LINK
@@ -36,7 +36,7 @@ function ListRepos {
 		$status = (git -C "$folder" status --short)
 		if ("$status" -eq "") { $status = "✔️clean" }
 		elseif ("$status" -like " M *") { $status = "⚠️modified" }
-		New-Object PSObject -property @{'Repository'="📂$folderName";'Latest Tag'="$latestTag";'Branch'="$branch";'Status'="$status";'Remote URL'="$remoteURL ↓$numCommits";}
+		New-Object PSObject -property @{'Local Repo'="📂$folderName";'Latest Tag'="$latestTag";'Branch'="$branch";'Status'="$status";'Remote Repo'="$remoteURL ↓$numCommits";}
 	}
 }
 
@@ -46,7 +46,7 @@ try {
 	$null = (git --version)
 	if ($lastExitCode -ne "0") { throw "Can't execute 'git' - make sure Git is installed and available" }
 
-	ListRepos | Format-Table -property @{e='Repository';width=19},@{e='Latest Tag';width=18},@{e='Branch';width=20},@{e='Status';width=10},'Remote URL'
+	ListRepos | Format-Table -property @{e='Local Repo';width=19},@{e='Latest Tag';width=18},@{e='Branch';width=20},@{e='Status';width=10},'Remote Repo'
 	exit 0 # success
 } catch {
 	"⚠️ Error in line $($_.InvocationInfo.ScriptLineNumber): $($Error[0])"
