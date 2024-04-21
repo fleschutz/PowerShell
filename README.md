@@ -8,8 +8,8 @@ Mega Collection of PowerShell Scripts
 🔊 Scripts for Audio & Voice 
 -----------------------------
 
-| Script                                               | Description                                                                                     |
-| ---------------------------------------------------- | ----------------------------------------------------------------------------------------------- |
+| Script                                               | Description                                                                                    |
+| ---------------------------------------------------- | ---------------------------------------------------------------------------------------------- |
 | [list-voices.ps1](scripts/list-voices.ps1)           | Lists the installed text-to-speech voices. [Read more »](docs/list-voices.md)                  |
 | [play-beep-sound.ps1](scripts/play-beep-sound.ps1)   | Plays a short beep sound. [Read more »](docs/play-beep-sound.md)                               |
 | [play-files.ps1](scripts/play-files.ps1)             | Plays the given audio files. [Read more »](docs/play-files.md)                                 |
@@ -17,8 +17,8 @@ Mega Collection of PowerShell Scripts
 | [play-imperial-march.ps1](scripts/play-imperial-march.ps1) | Plays the Imperial March (Star Wars). [Read more »](docs/play-imperial-march.md)         |
 | [play-jingle-bells.ps1](scripts/play-jingle-bells.ps1) | Plays Jingle Bells. [Read more »](docs/play-jingle-bells.md)                                 |
 | [play-mission-impossible.ps1](scripts/play-mission-impossible.ps1) | Plays the Mission Impossible theme. [Read more »](docs/play-mission-impossible.md)|
-| [play-m3u.ps1](scripts/play-m3u.ps1)                 | Plays the given playlist (M3U file format). [Read more »](docs/play-m3u.md)                    |
-| [play-mp3.ps1](scripts/play-mp3.ps1)                 | Plays the given sound file (MP3 file format). [Read more »](docs/play-mp3.md)                  |
+| [play-m3u.ps1](scripts/play-m3u.ps1)                 | Plays the given M3U playlist. [Read more »](docs/play-m3u.md)                                  |
+| [play-mp3.ps1](scripts/play-mp3.ps1)                 | Plays the given MP3 sound file. [Read more »](docs/play-mp3.md)                                |
 | [play-super-mario.ps1](scripts/play-super-mario.ps1) | Plays the Super Mario intro. [Read more »](docs/play-super-mario.md)                           |
 | [play-tetris-melody.ps1](scripts/play-tetris-melody.ps1) | Plays the Tetris melody. [Read more »](docs/play-tetris-melody.md)                         |
 | [speak-checklist.ps1](scripts/speak-checklist.ps1)   | Speaks the given checklist by text-to-speech. [Read more »](docs/speak-checklist.md)           |
