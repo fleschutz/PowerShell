@@ -22,7 +22,7 @@ Mega Collection of PowerShell Scripts
 | [play-super-mario.ps1](scripts/play-super-mario.ps1) | Plays the Super Mario intro. [Read more »](docs/play-super-mario.md)                           |
 | [play-tetris-melody.ps1](scripts/play-tetris-melody.ps1) | Plays the Tetris melody. [Read more »](docs/play-tetris-melody.md)                         |
 | [speak-checklist.ps1](scripts/speak-checklist.ps1)   | Speaks the given checklist by text-to-speech. [Read more »](docs/speak-checklist.md)           |
-| [speak-countdown.ps1](scripts/speak-countdown.ps1)   | Starts a countdown by text-to-speech. [Read more »](docs/speak-countdown.md)                   |
+| [speak-countdown.ps1](scripts/speak-countdown.ps1)   | Speaks a countdown by text-to-speech. [Read more »](docs/speak-countdown.md)                   |
 | [speak-english.ps1](scripts/speak-english.ps1)       | Speaks text with an English text-to-speech voice. [Read more »](docs/speak-english.md)         |
 | [speak-epub.ps1](scripts/speak-epub.ps1)             | Speaks the content of the given Epub file by text-to-speech. [Read more »](docs/speak-epub.md) |
 | [speak-file.ps1](scripts/speak-file.ps1)             | Speaks the content of the given text file by text-to-speech. [Read more »](docs/speak-file.md) |
