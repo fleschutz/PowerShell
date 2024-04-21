@@ -98,7 +98,7 @@ Mega Collection of PowerShell Scripts
 | ---------------------------------------------------- | ------------------------------------------------------------------------------------------- |
 | [close-calculator.ps1](scripts/close-calculator.ps1) | Closes the calculator application. [Read more...](docs/close-calculator.md)                 |
 | [close-cortana.ps1](scripts/close-cortana.ps1)       | Closes Cortana. [Read more...](docs/close-cortana.md)                                       |
-| [close-chrome.ps1](scripts/close-chrome.ps1)         | Closes the Google Chrome browser. [Read more...](docs/close-chrome.md)                             |
+| [close-chrome.ps1](scripts/close-chrome.ps1)         | Closes the Google Chrome browser. [Read more...](docs/close-chrome.md)                      |
 | [close-program.ps1](scripts/close-program.ps1)       | Closes the given program gracefully. [Read more...](docs/close-program.md)                  |
 | [close-edge.ps1](scripts/close-edge.ps1)             | Closes the Edge browser. [Read more...](docs/close-edge.md)                                 |
 | [close-file-explorer.ps1](scripts/close-file-explorer.ps1)| Closes Microsoft File Explorer. [Read more...](docs/close-file-explorer.md)            |
@@ -115,8 +115,8 @@ Mega Collection of PowerShell Scripts
 | [close-vlc.ps1](scripts/close-vlc.ps1)               | Closes the VLC media player application. [Read more...](docs/close-vlc.md)                  |
 | [close-windows-terminal.ps1](scripts/close-windows-terminal.ps1) | Closes the Windows Terminal application. [Read more...](docs/close-windows-terminal.md)  |
 | [enable-god-mode.ps1](scripts/enable-god-mode.ps1)   | Enables the god mode (adds a new icon to the desktop). [Read more...](docs/enable-god-mode.md) |
-| [install-chrome.ps1](scripts/install-chrome.ps1)     | Installs the Google Chrome browser. [Read more...](docs/install-chrome-browser.md)    |
-| [install-firefox.ps1](scripts/install-firefox.ps1)   | Installs the Firefox browser. [Read more...](docs/install-firefox.md)    |
+| [install-chrome.ps1](scripts/install-chrome.ps1)     | Installs the Google Chrome browser. [Read more...](docs/install-chrome-browser.md)          |
+| [install-firefox.ps1](scripts/install-firefox.ps1)   | Installs the Firefox browser. [Read more...](docs/install-firefox.md)                       |
 | [list-clipboard.ps1](scripts/list-clipboard.ps1)     | Lists the contents of the clipboard. [Read more...](docs/list-clipboard.md)                 |
 | [new-email.ps1](scripts/new-email.ps1)               | Starts the default email client to write a new email. [Read more...](docs/new-email.md)     |
 | [open-amazon-website.ps1](scripts/open-amazon-website.ps1)| Opens Amazon's website. [Read more...](docs/open-amazon-website.md)                    |
@@ -128,39 +128,39 @@ Mega Collection of PowerShell Scripts
 | [open-edge.ps1](scripts/open-edge.ps1)               | Launches the Edge browser. [Read more...](docs/open-edge.md)                                |
 | [open-email-client.ps1](scripts/open-browser.ps1)    | Starts the default email client. [Read more...](docs/open-email-client.md)                  |
 | [open-facebook-website.ps1](scripts/open-facebook-website.ps1)| Opens Facebook's website. [Read more...](docs/open-facebook-website.md)            |
-| [open-file-explorer.ps1](scripts/open-file-explorer.ps1) | Opens the File Explorer. [Read more...](docs/open-file-explorer.md)      |
-| [open-firefox.ps1](scripts/open-firefox.ps1)         | Launches the Firefox browser.  [Read more...](docs/open-firefox.md)            |
-| [open-fritz-box.ps1](scripts/open-fritz-box.ps1)     | Opens FRITZ!Box's web interface. [Read more...](docs/open-fritz-box.md)          |
-| [open-github.ps1](scripts/open-github.ps1)           | Opens GitHub's website.  [Read more...](docs/open-github.md)             |
-| [open-google-contacts.ps1](scripts/open-google-contacts.ps1) | Opens Google Contacts.  [Read more...](docs/open-google-contacts.md)    |
-| [open-google-earth.ps1](scripts/open-google-earth.ps1) | Opens Google Earth.  [Read more...](docs/open-google-earth.md)       |
-| [open-google-mail.ps1](scripts/open-google-mail.ps1) | Opens Google Mail.  [Read more...](docs/open-google-mail.md)        |
-| [open-google-maps.ps1](scripts/open-google-maps.ps1) | Opens Google Maps. [Read more...](docs/open-google-maps.md)        |
-| [open-google-news.ps1](scripts/open-google-news.ps1) | Opens Google News. [Read more...](docs/open-google-news.md)        |
-| [open-google-play.ps1](scripts/open-google-play.ps1) | Opens Google Play.  [Read more...](docs/open-google-play.md)        |
-| [open-google-search.ps1](scripts/open-google-search.ps1) | Opens Google Search.   [Read more...](docs/open-google-search.md)      |
-| [open-google-translate.ps1](scripts/open-google-translate.ps1) | Opens Google Translate. [Read more...](docs/open-google-translate.md)   |
-| [open-home-folder.ps1](scripts/open-home-folder.ps1) | Opens the user's home folder.  [Read more...](docs/open-home-folder.md)        |
-| [open-music-folder.ps1](scripts/open-music-folder.ps1)| Opens the user's music folder.  [Read more...](docs/open-music-folder.md)       |
-| [open-netflix.ps1](scripts/open-netflix.ps1)         | Starts the Netflix app.  [Read more...](docs/open-netflix.md)            |
-| [open-microsoft-store.ps1](scripts/open-microsoft-store.ps1)| Launches the Microsoft Store app.  [Read more...](docs/open-microsoft-store.md)    |
-| [open-notepad.ps1](scripts/open-notepad.ps1)         | Starts the Notepad app.  [Read more...](docs/open-notepad.md)            |
-| [open-onedrive-folder.ps1](scripts/open-onedrive-folder.ps1)| Opens the user's OneDrive folder. [Read more...](docs/open-onedrive-folder.md)    |
-| [open-pictures-folder.ps1](scripts/open-pictures-folder.ps1) | Opens the user's pictures folder.  [Read more...](docs/open-pictures-folder.md)    |
-| [open-recycle-bin.ps1](scripts/open-recycle-bin.ps1) | Opens the user's recycle bin folder.  [Read more...](docs/open-recycle-bin.md)        |
-| [open-repos-folder.ps1](scripts/open-repos-folder.ps1) | Opens the user's Git repositories folder.  [Read more...](docs/open-repos-folder.md)       |
-| [open-snipping-tool.ps1](scripts/open-snipping-tool.ps1)| Starts the Snipping Tool. [Read more...](docs/open-snipping-tool.md)      |
-| [open-speed-test.ps1](scripts/open-speed-test.ps1)   | Opens Cloudflare's speed test.  [Read more...](docs/open-speed-test.md)         |
-| [open-spotify.ps1](scripts/open-spotify.ps1)         | Opens Spotify.  [Read more...](docs/open-spotify.md)            |
-| [open-system-settings.ps1](scripts/open-system-settings.ps1)| Opens the system settings of Windows.  [Read more...](docs/open-system-settings.md)    |
-| [open-task-manager.ps1](scripts/open-task-manager.ps1)| Starts the Task Manager.  [Read more...](docs/open-task-manager.md)       |
-| [open-videos-folder.ps1](scripts/open-videos-folder.ps1)| Opens the user's videos folder. [Read more...](docs/open-videos-folder.md)      |
-| [open-windows-terminal.ps1](scripts/open-windows-terminal.ps1)| Launches Windows Terminal. [Read more...](docs/open-windows-terminal.md)   |
-| [open-wikipedia-website.ps1](scripts/open-wikipedia-website.ps1)| Opens Wikipedia's website.  [Read more...](docs/open-wikipedia-website.md)  |
-| [open-youtube-website.ps1](scripts/open-youtube-website.ps1)| Opens YouTube's website. [Read more...](docs/open-youtube-website.md)    |
-| [remind-me.ps1](scripts/remind-me.ps1)               | Creates a scheduled task that will display a popup message.          [Read more...](docs/remind-me.md)               |
-| [save-screenshot.ps1](scripts/save-screenshot.ps1)   | Saves a single screenshot. [Read more...](docs/save-screenshot.md)         |
-| [set-wallpaper.ps1](scripts/set-wallpaper.ps1)       | Sets the given image as wallpaper. [Read more...](docs/set-wallpaper.md)           |
+| [open-file-explorer.ps1](scripts/open-file-explorer.ps1) | Opens the File Explorer. [Read more...](docs/open-file-explorer.md)                     |
+| [open-firefox.ps1](scripts/open-firefox.ps1)         | Launches the Firefox browser.  [Read more...](docs/open-firefox.md)                         |
+| [open-fritz-box.ps1](scripts/open-fritz-box.ps1)     | Opens FRITZ!Box's web interface. [Read more...](docs/open-fritz-box.md)                     |
+| [open-github.ps1](scripts/open-github.ps1)           | Opens GitHub's website.  [Read more...](docs/open-github.md)                                |
+| [open-google-contacts.ps1](scripts/open-google-contacts.ps1) | Opens Google Contacts.  [Read more...](docs/open-google-contacts.md)                |
+| [open-google-earth.ps1](scripts/open-google-earth.ps1) | Opens Google Earth.  [Read more...](docs/open-google-earth.md)                            |
+| [open-google-mail.ps1](scripts/open-google-mail.ps1) | Opens Google Mail.  [Read more...](docs/open-google-mail.md)                                |
+| [open-google-maps.ps1](scripts/open-google-maps.ps1) | Opens Google Maps. [Read more...](docs/open-google-maps.md)                                 |
+| [open-google-news.ps1](scripts/open-google-news.ps1) | Opens Google News. [Read more...](docs/open-google-news.md)                                 |
+| [open-google-play.ps1](scripts/open-google-play.ps1) | Opens Google Play.  [Read more...](docs/open-google-play.md)                                |
+| [open-google-search.ps1](scripts/open-google-search.ps1) | Opens Google Search.   [Read more...](docs/open-google-search.md)                       |
+| [open-google-translate.ps1](scripts/open-google-translate.ps1) | Opens Google Translate. [Read more...](docs/open-google-translate.md)             |
+| [open-home-folder.ps1](scripts/open-home-folder.ps1) | Opens the user's home folder.  [Read more...](docs/open-home-folder.md)                     |
+| [open-music-folder.ps1](scripts/open-music-folder.ps1)| Opens the user's music folder.  [Read more...](docs/open-music-folder.md)                  |
+| [open-netflix.ps1](scripts/open-netflix.ps1)         | Starts the Netflix app.  [Read more...](docs/open-netflix.md)                               |
+| [open-microsoft-store.ps1](scripts/open-microsoft-store.ps1)| Launches the Microsoft Store app.  [Read more...](docs/open-microsoft-store.md)      |
+| [open-notepad.ps1](scripts/open-notepad.ps1)         | Starts the Notepad app.  [Read more...](docs/open-notepad.md)                               |
+| [open-onedrive-folder.ps1](scripts/open-onedrive-folder.ps1)| Opens the user's OneDrive folder. [Read more...](docs/open-onedrive-folder.md)       |
+| [open-pictures-folder.ps1](scripts/open-pictures-folder.ps1) | Opens the user's pictures folder.  [Read more...](docs/open-pictures-folder.md)     |
+| [open-recycle-bin.ps1](scripts/open-recycle-bin.ps1) | Opens the user's recycle bin folder.  [Read more...](docs/open-recycle-bin.md)              |
+| [open-repos-folder.ps1](scripts/open-repos-folder.ps1) | Opens the user's Git repositories folder.  [Read more...](docs/open-repos-folder.md)      |
+| [open-snipping-tool.ps1](scripts/open-snipping-tool.ps1)| Starts the Snipping Tool. [Read more...](docs/open-snipping-tool.md)                     |
+| [open-speed-test.ps1](scripts/open-speed-test.ps1)   | Opens Cloudflare's speed test.  [Read more...](docs/open-speed-test.md)                     |
+| [open-spotify.ps1](scripts/open-spotify.ps1)         | Opens Spotify.  [Read more...](docs/open-spotify.md)                                        |
+| [open-system-settings.ps1](scripts/open-system-settings.ps1)| Opens the system settings of Windows.  [Read more...](docs/open-system-settings.md)  |
+| [open-task-manager.ps1](scripts/open-task-manager.ps1)| Starts the Task Manager.  [Read more...](docs/open-task-manager.md)                        |
+| [open-videos-folder.ps1](scripts/open-videos-folder.ps1)| Opens the user's videos folder. [Read more...](docs/open-videos-folder.md)               |
+| [open-windows-terminal.ps1](scripts/open-windows-terminal.ps1)| Launches Windows Terminal. [Read more...](docs/open-windows-terminal.md)           |
+| [open-wikipedia-website.ps1](scripts/open-wikipedia-website.ps1)| Opens Wikipedia's website.  [Read more...](docs/open-wikipedia-website.md)       |
+| [open-youtube-website.ps1](scripts/open-youtube-website.ps1)| Opens YouTube's website. [Read more...](docs/open-youtube-website.md)                |
+| [remind-me.ps1](scripts/remind-me.ps1)               | Creates a scheduled task that will display a popup message. [Read more...](docs/remind-me.md)|
+| [save-screenshot.ps1](scripts/save-screenshot.ps1)   | Saves a single screenshot. [Read more...](docs/save-screenshot.md)                          |
+| [set-wallpaper.ps1](scripts/set-wallpaper.ps1)       | Sets the given image as wallpaper. [Read more...](docs/set-wallpaper.md)                    |
 
 📁 Scripts for Files & Folders 
 -------------------------------
@@ -178,7 +178,7 @@ Mega Collection of PowerShell Scripts
 | [cd-pics.ps1](scripts/cd-pics.ps1)                   | Set the working directory to the user's pictures folder. [Read more...](docs/cd-pics.md)            |
 | [cd-recycle-bin.ps1](scripts/cd-recycle-bin.ps1)     | Set the working directory to the user's recycle bin folder. [Read more...](docs/cd-recycle-bin.md)  |
 | [cd-repos.ps1](scripts/cd-repos.ps1)                 | Change the working directory to the user's Git repositories folder. [Read more...](docs/cd-repos.md)|
-| [cd-repos.ps1](scripts/cd-repo.ps1)                  | Change the working directory to the given Git repository folder. [Read more...](docs/cd-repo.md)    |
+| [cd-repo.ps1](scripts/cd-repo.ps1)                   | Change the working directory to the given Git repository folder. [Read more...](docs/cd-repo.md)    |
 | [cd-root.ps1](scripts/cd-root.ps1)                   | Set the working directory to the root directory. [Read more...](docs/cd-root.md)                    |
 | [cd-scripts.ps1](scripts/cd-scripts.ps1)             | Set the working directory to the PowerShell Scripts folder. [Read more...](docs/cd-scripts.md)      |
 | [cd-ssh.ps1](scripts/cd-ssh.ps1)                     | Set the working directory to the user's SSH folder. [Read more...](docs/cd-ssh.md)                  |
