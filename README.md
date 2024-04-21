@@ -59,7 +59,7 @@ Mega Collection of PowerShell Scripts
 | [hibernate.ps1](scripts/hibernate.ps1)               | Hibernates the local computer immediately. [Read more »](docs/hibernate.md)                      |
 | [install-github-cli.ps1](scripts/install-github-cli.ps1) | Installs GitHub CLI. [Read more »](docs/install-github-cli.md)                               |
 | [install-chrome-browser.ps1](scripts/install-chrome-browser.ps1) | Installs the Google Chrome browser. [Read more »](docs/install-chrome-browser.md)    |
-| [firefox-installer.ps1](scripts/firefox-installer.ps1) | Installs the firefox browser. [Read more »](docs/install-firefox-browser.md)    |
+| [install-firefox.ps1](scripts/install-firefox.ps1)   | Installs the Firefox browser. [Read more »](docs/install-firefox.md)    |
 | [install-knot-resolver.ps1](scripts/install-knot-resolver.ps1) | Installs the Knot Resolver (needs admin rights). [Read more »](docs/install-knot-resolver.md)|
 | [install-ssh-client.ps1](scripts/install-ssh-client.ps1) | Installs a SSH client (needs admin rights). [Read more »](docs/install-ssh-client.md)        |
 | [install-ssh-server.ps1](scripts/install-ssh-server.ps1) | Installs a SSH server (needs admin rights). [Read more »](docs/install-ssh-server.md)        |
