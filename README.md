@@ -178,7 +178,7 @@ Mega Collection of PowerShell Scripts
 | [cd-pics.ps1](scripts/cd-pics.ps1)                   | Set the working directory to the user's pictures folder. [Read more...](docs/cd-pics.md)            |
 | [cd-recycle-bin.ps1](scripts/cd-recycle-bin.ps1)     | Set the working directory to the user's recycle bin folder. [Read more...](docs/cd-recycle-bin.md)  |
 | [cd-repos.ps1](scripts/cd-repos.ps1)                 | Change the working directory to the user's Git repositories folder. [Read more...](docs/cd-repos.md)|
-| [cd-repos.ps1](scripts/cd-repo.ps1)                  | Change the working directory to the given Git repository folder. [Read more...](docs/cd-repos.md)   |
+| [cd-repos.ps1](scripts/cd-repo.ps1)                  | Change the working directory to the given Git repository folder. [Read more...](docs/cd-repo.md)    |
 | [cd-root.ps1](scripts/cd-root.ps1)                   | Set the working directory to the root directory. [Read more...](docs/cd-root.md)                    |
 | [cd-scripts.ps1](scripts/cd-scripts.ps1)             | Set the working directory to the PowerShell Scripts folder. [Read more...](docs/cd-scripts.md)      |
 | [cd-ssh.ps1](scripts/cd-ssh.ps1)                     | Set the working directory to the user's SSH folder. [Read more...](docs/cd-ssh.md)                  |
