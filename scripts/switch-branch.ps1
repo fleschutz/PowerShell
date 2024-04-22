@@ -2,18 +2,18 @@
 .SYNOPSIS
 	Switches the Git branch
 .DESCRIPTION
-	This PowerShell script switches to a given branch in a Git repository (including updating submodules).
+	This PowerShell script switches to the given branch in a Git repository (also updates submodules).
 .PARAMETER branchName
-	Specifies the target branch name
+	Specifies the branch name to switch to
 .PARAMETER pathToRepo
 	Specifies the file path to the local Git repository
 .EXAMPLE
 	PS> ./switch-branch main C:\Repos\rust
 	⏳ (1/6) Searching for Git executable...   git version 2.43.0.windows.1
 	⏳ (2/6) Checking Git repository...
-	⏳ (3/6) Fetching updates...
+	⏳ (3/6) Fetching remote updates...
 	⏳ (4/6) Switching to branch 'main'...
-	⏳ (5/6) Pulling updates...
+	⏳ (5/6) Pulling remote updates...
 	⏳ (6/6) Updating submodules...
 	✔️ Switched 📂rust repository to 'main' branch in 22 sec.
 .LINK
@@ -26,7 +26,6 @@ param([string]$branchName = "", [string]$pathToRepo = "$PWD")
 
 try {
 	if ($branchName -eq "") { $branchName = Read-Host "Enter the branch name to switch to" }
-	if ($pathToRepo -eq "") { $pathToRepo = Read-Host "Enter the file path to the Git repository" }
 
 	$stopWatch = [system.diagnostics.stopwatch]::startNew()
 
@@ -34,15 +33,14 @@ try {
 	& git --version
 	if ($lastExitCode -ne "0") { throw "Can't execute 'git' - make sure Git is installed and available" }
 
-	Write-Host "⏳ (2/6) Checking Git repository..."
-	$pathToRepo = Resolve-Path "$pathToRepo"
+	Write-Host "⏳ (2/6) Checking local repository...      📂$pathToRepo"
 	if (-not(Test-Path "$pathToRepo" -pathType container)) { throw "Can't access repo folder: $pathToRepo" }
 	$result = (git status)
 	if ($lastExitCode -ne "0") { throw "'git status' in $pathToRepo failed with exit code $lastExitCode" }
 	if ("$result" -notmatch "nothing to commit, working tree clean") { throw "Git repository is NOT clean: $result" }
 	$repoDirName = (Get-Item "$pathToRepo").Name
 
-	"⏳ (3/6) Fetching updates..."
+	"⏳ (3/6) Fetching remote updates..."
 	& git -C "$pathToRepo" fetch --all --prune --prune-tags --force
 	if ($lastExitCode -ne "0") { throw "'git fetch' failed with exit code $lastExitCode" }
 
@@ -50,7 +48,7 @@ try {
 	& git -C "$pathToRepo" checkout --recurse-submodules "$branchName"
 	if ($lastExitCode -ne "0") { throw "'git checkout $branchName' failed with exit code $lastExitCode" }
 
-	"⏳ (5/6) Pulling updates..."
+	"⏳ (5/6) Pulling remote updates..."
 	& git -C "$pathToRepo" pull --recurse-submodules
 	if ($lastExitCode -ne "0") { throw "'git pull' failed with exit code $lastExitCode" }
 
