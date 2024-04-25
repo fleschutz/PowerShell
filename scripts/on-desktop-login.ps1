@@ -1,9 +1,9 @@
 ﻿<#
 .SYNOPSIS
-	Executes tasks on every desktop login
+	Executes tasks on desktop login
 .DESCRIPTION
 	This PowerShell script executes some 'welcome' tasks on every desktop login by the user.
-	NOTE: For installation on Windows create and put a symbolic link to this script into the Autostart folder (usually at: C:\Users\<USERNAME>\AppData\Roaming\Microsoft\Windows\Start Menu\Programs\Startup).
+	NOTE: for installation on Windows create and put a symbolic link to this script into the Autostart folder (usually at: C:\Users\<USERNAME>\AppData\Roaming\Microsoft\Windows\Start Menu\Programs\Startup).
 .EXAMPLE
 	PS> ./on-desktop-login.ps1
 .LINK
@@ -22,6 +22,7 @@ try {
 	& "$PSScriptRoot/check-swap-space.ps1"
 	& "$PSScriptRoot/check-drives.ps1"
 	& "$PSScriptRoot/open-dashboards.ps1"
+	& "$PSScriptRoot/open-home-folder.ps1"
 	" "
 	& "$PSScriptRoot/write-quote.ps1"
 	" "
