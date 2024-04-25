@@ -21,9 +21,12 @@ function PlaySoundFiles([string]$filePattern) {
 }
 
 try {
+	if ($IsLinux -or $IsMacOS) { throw "Currently only supported for Windows" }
+
 	$WinDir = Resolve-Path "$env:WINDIR"
         if (-not(Test-Path "$WinDir" -pathType container)) { throw "Windows directory at 📂$Path doesn't exist" }
 
+	Write-Host "`n  Windows System Sounds at $WinDir\Media" -foregroundColor green
 	PlaySoundFiles "$WinDir\Media\*.wav"
 	PlaySoundFiles "$WinDir\Media\*\*.wav"
 	exit 0 # success
