@@ -48,10 +48,10 @@ try {
 			continue
 		} elseif ($IsLinux) {
 			$details = (sudo smartctl --all --json $dev) | ConvertFrom-Json
-			$null = (sudo smartctl --test=short $dev)
+			$null = (sudo smartctl --test=conveyance $dev)
 		} else {
 			$details = (smartctl --all --json $dev) | ConvertFrom-Json
-			$null = (smartctl --test=short $dev)
+			$null = (smartctl --test=conveyance $dev)
 		}
 		$status = "✅"
 		$modelName = $details.model_name
