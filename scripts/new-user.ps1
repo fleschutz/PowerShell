@@ -5,7 +5,7 @@
 	This PowerShell script creates a new user account with an encrypted home directory.
 .EXAMPLE
 	PS> ./new-user.ps1 Joe
-	✔️ Created new user 'Joe' with encrypted home directory in 11 sec
+	✔️ Created new user 'Joe' with encrypted home directory in 11s.
 .LINK
 	https://github.com/fleschutz/PowerShell
 .NOTES
@@ -25,7 +25,7 @@ try {
 	}
 
 	[int]$elapsed = $stopWatch.Elapsed.TotalSeconds
-	"✔️ Created new user '$username' with encrypted home directory in $elapsed sec"
+	"✔️ Created new user '$username' with encrypted home directory in $($elapsed)s."
 	exit 0 # success
 } catch {
 	"⚠️ Error in line $($_.InvocationInfo.ScriptLineNumber): $($Error[0])"
