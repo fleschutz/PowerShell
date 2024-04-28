@@ -7,10 +7,9 @@
 	Specifies the path to the new profile ($PSScriptRoot/my-profile.ps1 by default)
 .EXAMPLE
 	PS> ./write-powershell-profile.ps1
-	⏳ (1/2) Querying path to profile 'CurrentUserCurrentHost'...
-	         C:\Users\Markus\Documents\WindowsPowerShell\Microsoft.PowerShell_profile.ps1
-	⏳ (2/2) Copying file 'my-profile.ps1'...
-	✔️ New PowerShell profile written - it gets active on next login
+	⏳ (1/2) Query location of PowerShell profile 'CurrentUserCurrentHost'...
+	⏳ (2/2) Copy my-profile.ps1 to C:\Users\Markus\OneDrive\Dokumente\WindowsPowerShell\Microsoft.PowerShell_profile.ps1...
+	✔️ New PowerShell profile written - it get's active on next login.
 .LINK
 	https://github.com/fleschutz/PowerShell
 .NOTES
@@ -20,16 +19,15 @@
 param([string]$path = "$PSScriptRoot/my-profile.ps1")
 
 try {
-	"⏳ (1/2) Querying path to profile 'CurrentUserCurrentHost'..."
+	"⏳ (1/2) Query location of PowerShell profile 'CurrentUserCurrentHost'..."
 	$pathToProfile = $PROFILE.CurrentUserCurrentHost
-	"         $pathToProfile"
 
 	$filename = (Get-Item "$path").Name
-	"⏳ (2/2) Copying file '$filename'..."
+	"⏳ (2/2) Copy $filename to $pathToProfile..."
 	$null = New-Item -Path $pathToProfile -ItemType "file" -Force
 	Copy-Item "$path" "$pathToProfile" -force
 
-	"✔️ New PowerShell profile written - it gets active on next login"
+	"✔️ New PowerShell profile written - it get's active on next login."
 	exit 0 # success
 } catch {
 	"⚠️ Error in line $($_.InvocationInfo.ScriptLineNumber): $($Error[0])"
