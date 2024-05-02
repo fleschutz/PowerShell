@@ -4,9 +4,9 @@
 .DESCRIPTION
 	This PowerShell script checks all Git repositories in a folder.
 .PARAMETER parentDir
-	Specifies the path to the parent folder
+	Specifies the file path to the parent folder
 .EXAMPLE
-	PS> ./check-repos.ps1 C:\MyRepos
+	PS> ./check-repos.ps1 C:\Repos
 .LINK
 	https://github.com/fleschutz/PowerShell
 .NOTES
@@ -19,20 +19,21 @@ try {
 	$stopWatch = [system.diagnostics.stopwatch]::startNew()
 
 	$parentDirName = (Get-Item "$parentDir").Name
-	"⏳ Step 1 - Checking parent folder 📂$parentDirName..."
+	Write-Host "⏳ Checking parent folder 📂$parentDir...       " -noNewline
 	if (-not(Test-Path "$parentDir" -pathType container)) { throw "Can't access folder: $parentDir" }
 	$folders = (Get-ChildItem "$parentDir" -attributes Directory)
 	$numFolders = $folders.Count
-	"Found $numFolders subfolders."
+	"$numFolders subfolders"
 
-	[int]$Step = 1
+	[int]$step = 2
 	foreach ($folder in $folders) {
+		"`n⏳ Checking repository 📂$folder ($step/$numFolders)..."
 		& "$PSScriptRoot/check-repo.ps1" "$folder"
-		$Step++
+		$step++
 	}
 
 	[int]$elapsed = $stopWatch.Elapsed.TotalSeconds
-	"✔️ Checked $numFolders Git repos at 📂$parentDirName in $elapsed sec"
+	"✔️ Checked $numFolders Git repos under 📂$parentDirName in $($elapsed)s."
 	exit 0 # success
 } catch {
 	"⚠️ Error in line $($_.InvocationInfo.ScriptLineNumber): $($Error[0])"
