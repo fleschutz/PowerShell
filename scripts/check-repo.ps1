@@ -2,7 +2,7 @@
 .SYNOPSIS
 	Checks a Git repository
 .DESCRIPTION
-	This PowerShell script verifies the integrity of a local Git repository.
+	This PowerShell script verifies the integrity of a local Git repository and performs maintenance tasks.
 .PARAMETER pathToRepo
 	Specifies the file path to the local Git repository (current working directory by default)
 .EXAMPLE
@@ -12,7 +12,7 @@
 	⏳ (3/10) Querying remote URL...           git@github.com:fleschutz/PowerShell.git
 	⏳ (4/10) Querying current branch...       main
 	⏳ (5/10) Fetching remote updates...       OK
-	⏳ (6/10) Querying latest tag...           v0.8 (commit 02171a401d83b01a0cda0af426840b605e617f08)
+	⏳ (6/10) Querying latest tag...           v0.8 (at commit 02171a401d83b01a0cda0af426840b605e617f08)
 	⏳ (7/10) Verifying data integrity...
 	...
 .LINK
@@ -51,7 +51,7 @@ try {
 	Write-Host "⏳ (6/10) Querying latest tag...           " -noNewline
         $latestTagCommitID = (git -C "$FullPath" rev-list --tags --max-count=1)
         $latestTagName = (git -C "$FullPath" describe --tags $latestTagCommitID)
-        Write-Host "$latestTagName (commit $latestTagCommitID)"
+        Write-Host "$latestTagName (at commit $latestTagCommitID)"
 
 	Write-Host "⏳ (7/10) Verifying data integrity..."
 	& git -C "$FullPath" fsck 
