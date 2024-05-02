@@ -6,8 +6,8 @@
 .EXAMPLE
 	PS> ./list-window-titles.ps1
 
-	   Id Name                 MainWindowTitle
-	   -- ----                 ---------------
+	   Id ProcessName          MainWindowTitle
+	   -- -----------          ---------------
 	11556 Spotify              Spotify Free
 	...
 .LINK
@@ -17,7 +17,7 @@
 #>
 
 try {
-	Get-Process | Where-Object {$_.mainWindowTitle} | Format-Table Id,Name,mainWindowtitle -AutoSize
+	Get-Process | Where-Object {$_.mainWindowTitle} | Format-Table ID,ProcessName,MainWindowTitle -AutoSize
 	exit 0 # success
 } catch {
 	"⚠️ Error in line $($_.InvocationInfo.ScriptLineNumber): $($Error[0])"
