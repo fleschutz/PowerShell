@@ -39,7 +39,7 @@ function GetDescription { param([string]$text)
 	"Moderate or heavy sleet"	{ return "❄️ moderate or heavy sleet ⚠️" }
 	"Moderate or heavy rain shower" { return "💧 moderate or heavy rain shower ⚠️" }
 	"Moderate or heavy snow showers"{ return "❄️ moderate or heavy snow showers ⚠️" }
-	"Moderate or heavy snow in area with thunder" { return "❄️ moderate or heavy snow with thunder ⚠️" }
+	"Moderate or heavy snow in area with thunder" { return "❄️ moderate or heavy snow in area with thunder ⚠️" }
 	"Moderate rain"			{ return "💧 moderate rain" }
 	"Moderate rain at times"	{ return "💧 moderate rain at times" }
 	"Moderate snow"			{ return "❄️ moderate snow" }
@@ -49,6 +49,7 @@ function GetDescription { param([string]$text)
 	"Patchy heavy snow"		{ return "❄️ patchy heavy snow ⚠️" }
 	"Patchy light drizzle"     	{ return "💧 patchy light drizzle" }
 	"Patchy light rain"     	{ return "💧 patchy light rain" }
+	"Patchy light rain in area with thunder" { return "💧 patchy light rain in area with thunder" }
 	"Patchy light rain with thunder" { return "💧 patchy light rain with thunder" }
 	"Patchy light snow"		{ return "❄️ patchy light snow" }
 	"Patchy moderate snow"		{ return "❄️ patchy moderate snow" }
