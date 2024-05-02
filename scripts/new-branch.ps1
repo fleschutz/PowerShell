@@ -1,21 +1,21 @@
 ﻿<#
 .SYNOPSIS
-	Creates a new branch 
+	Creates a new Git branch 
 .DESCRIPTION
-	This PowerShell script creates a new Git branch in a local repository and switches to it.
+	This PowerShell script creates a new branch in a local Git repository and switches to it.
 .PARAMETER newBranch
-	Specifies the new Git branch name (check the allowed characters)
+	Specifies the new Git branch name
 .PARAMETER pathToRepo
-	Specifies the file path to the local repository (current working directory per default)
+	Specifies the file path to the local Git repository (current working directory per default)
 .EXAMPLE
 	PS> ./new-branch.ps1 test123 C:\Repos\rust
 	⏳ (1/6) Searching for Git executable...  git version 2.42.0.windows.2
-	⏳ (2/6) Checking Git repository...
-	⏳ (3/6) Fetching updates...
+	⏳ (2/6) Checking local repository...     📂C:\Repos\rust
+	⏳ (3/6) Fetching remote updates...
 	⏳ (4/6) Creating new branch...
 	⏳ (5/6) Pushing updates...
 	⏳ (6/6) Updating submodules...
-	✔️ Created branch 'test123' in 📂rust repository in 18 sec (based on 'main')
+	✔️ Created branch 'test123' in repo 📂rust (based on 'main', took 18s)
 .LINK
 	https://github.com/fleschutz/PowerShell
 .NOTES
@@ -33,11 +33,13 @@ try {
 	& git --version
 	if ($lastExitCode -ne "0") { throw "Can't execute 'git' - make sure Git is installed and available" }
 
-	Write-Host "⏳ (2/6) Checking Git repository..."
-	if (-not(Test-Path "$pathToRepo" -pathType container)) { throw "Can't access directory: $pathToRepo" }
+	Write-Host "⏳ (2/6) Checking local repository...     📂$pathToRepo"
+	if (-not(Test-Path "$pathToRepo" -pathType container)) { throw "Can't access repo folder: $pathToRepo" }
+	$result = (git -C "$pathToRepo" status)
+        if ($lastExitCode -ne "0") { throw "'git status' in $pathToRepo failed with exit code $lastExitCode" }
 	$repoName = (Get-Item "$pathToRepo").Name
 
-	"⏳ (3/6) Fetching updates..."
+	"⏳ (3/6) Fetching remote updates..."
 	& git -C "$pathToRepo" fetch --all --recurse-submodules --prune --prune-tags --force
 	if ($lastExitCode -ne "0") { throw "'git fetch' failed with exit code $lastExitCode" }
 
@@ -57,7 +59,7 @@ try {
 	if ($lastExitCode -ne "0") { throw "'git submodule update' failed with exit code $lastExitCode" }
 
 	[int]$elapsed = $stopWatch.Elapsed.TotalSeconds
-	"✔️ Created branch '$newBranch' in 📂$repoName repository in $elapsed sec (based on '$currentBranch')"
+	"✔️ Created branch '$newBranch' in repo 📂$repoName (based on '$currentBranch', took $($elapsed)s)"
 	exit 0 # success
 } catch {
 	"⚠️ Error in line $($_.InvocationInfo.ScriptLineNumber): $($Error[0])"

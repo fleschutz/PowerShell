@@ -4,13 +4,13 @@
 .DESCRIPTION
 	This PowerShell script switches to the given branch in a Git repository (also updates submodules).
 .PARAMETER branchName
-	Specifies the branch name to switch to
+	Specifies the Git branch name to switch to
 .PARAMETER pathToRepo
 	Specifies the file path to the local Git repository
 .EXAMPLE
 	PS> ./switch-branch main C:\Repos\rust
 	⏳ (1/6) Searching for Git executable...   git version 2.43.0.windows.1
-	⏳ (2/6) Checking Git repository...
+	⏳ (2/6) Checking local repository...      📂C:\Repos\rust
 	⏳ (3/6) Fetching remote updates...
 	⏳ (4/6) Switching to branch 'main'...
 	⏳ (5/6) Pulling remote updates...
@@ -35,7 +35,7 @@ try {
 
 	Write-Host "⏳ (2/6) Checking local repository...      📂$pathToRepo"
 	if (-not(Test-Path "$pathToRepo" -pathType container)) { throw "Can't access repo folder: $pathToRepo" }
-	$result = (git status)
+	$result = (git -C "$pathToRepo" status)
 	if ($lastExitCode -ne "0") { throw "'git status' in $pathToRepo failed with exit code $lastExitCode" }
 	if ("$result" -notmatch "nothing to commit, working tree clean") { throw "Git repository is NOT clean: $result" }
 	$repoDirName = (Get-Item "$pathToRepo").Name
