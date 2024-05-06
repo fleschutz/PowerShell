@@ -46,7 +46,7 @@ try {
 		$statusMsg += ", $numUpdates upgrades available"
 
 		$crashDumps = GetCrashDumps
-		if ($crashDump -ne 0) { $statusIcon = "⚠️"; $statusMsg += ", $crashDumps crash dumps found" }
+		if ($crashDumps -ne 0) { $statusIcon = "⚠️"; $statusMsg += ", $crashDumps crash dumps found" }
 	}
 	Write-Host "$statusIcon $statusMsg"
 	exit 0 # success
