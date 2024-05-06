@@ -6,8 +6,8 @@
 .PARAMETER path
 	Specifies the path and filename of the new directory
 .EXAMPLE
-	PS> ./new-dir.ps1 Joe
-	✔️ New directory 'Joe' created.
+	PS> ./new-dir.ps1 MyCollection
+	✔️ New 📂C:\Temp\MyCollection created.
 .LINK
 	https://github.com/fleschutz/PowerShell
 .NOTES
@@ -24,7 +24,7 @@ try {
 	$null =	(New-Item -itemType directory -path $path)
 
 	$path = Resolve-Path $path
-	"✔️ New directory 📂$path created."
+	"✔️ New 📂$path created."
 	exit 0 # success
 } catch {
 	"⚠️ Error in line $($_.InvocationInfo.ScriptLineNumber): $($Error[0])"
