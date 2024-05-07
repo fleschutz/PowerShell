@@ -11,7 +11,9 @@
         Specifies the speed to write the text (10 ms by default)
 .EXAMPLE
 	PS> ./list-news.ps1
-	   [UTC] [Yahoo News - Latest News & Headline - https://www.yahoo.com/news/world]
+  
+	   UTC   Yahoo News - Latest News & Headlines - https://www.yahoo.com/news/world
+	   ---   -----------------------------------------------------------------------
 	❇️ 09:15 Deadly Mediterranean wildfires kill more than 40
 	...
 .LINK
@@ -27,7 +29,9 @@ try {
 
 	$title = $content.rss.channel.title
 	$URL = $content.rss.channel.link
-	"`n   [UTC] [$title - $URL]"
+	" "
+	"   UTC   $title - $URL"
+	"   ---   -----------------------------------------------------------------------"
 
 	[int]$count = 1
 	foreach ($item in $content.rss.channel.item) {
