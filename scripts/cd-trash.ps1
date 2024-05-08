@@ -1,6 +1,6 @@
 ﻿<#
 .SYNOPSIS
-	Sets the working directory to the user's trash folder
+	Sets the working directory to the trash folder
 .DESCRIPTION
 	This PowerShell script changes the working directory to the user's trash folder.
 .EXAMPLE
@@ -20,13 +20,13 @@ function GetCurrentUserSID { [CmdletBinding()] param()
 
 try {
 	if ($IsLinux) {
-		$Path = "$HOME/.local/share/Trash/"
+		$path = "$HOME/.local/share/Trash/"
 	} else {
-		$Path = "C:\$Recycle.Bin\" + "$(GetCurrentUserSID)"
+		$path = "C:\`$Recycle.Bin\$(GetCurrentUserSID)"
 	}
-	if (-not(Test-Path "$Path" -pathType container)) { throw "Trash folder at 📂$Path doesn't exist (yet)" }
-	Set-Location "$Path"
-	"📂$Path"
+	if (-not(Test-Path "$path" -pathType container)) { throw "Trash folder at 📂$path doesn't exist (yet)" }
+	Set-Location "$path"
+	"📂$path"
 	exit 0 # success
 } catch {
 	"⚠️ Error in line $($_.InvocationInfo.ScriptLineNumber): $($Error[0])"
