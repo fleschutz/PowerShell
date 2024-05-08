@@ -48,7 +48,7 @@ try {
 	}
 	[int]$elapsed = $stopWatch.Elapsed.TotalSeconds
 	if ($failed -eq 0) {
-		"✔️ Pulled updates into $numFolders repos under 📂$parentDirName in $elapsed sec."
+		"✔️ Remote updates pulled into $numFolders repos within 📂$parentDirName in $($elapsed)s."
 		exit 0 # success
 	} else {
 		"⚠️ Updated $numFolders repos under 📂$parentDirName but $failed failed (took $elapsed sec)."
