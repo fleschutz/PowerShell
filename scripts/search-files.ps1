@@ -1,39 +1,37 @@
 ﻿<#
 .SYNOPSIS
-	Searches for a pattern in files
+	Searches for a text pattern in files
 .DESCRIPTION
-	This PowerShell script searches for a pattern in the given files.
-.PARAMETER pattern
-	Specifies the search pattern
-.PARAMETER files
-	Specifies the files
+	This PowerShell script searches for the given pattern in the given files.
+.PARAMETER textPattern
+	Specifies the text pattern to search for
+.PARAMETER filePattern
+	Specifies the files to search 
 .EXAMPLE
 	PS> ./search-files UFO C:\Temp\*.txt
+	...
+	✔️ Found 'UFO' at 9 locations.
 .LINK
 	https://github.com/fleschutz/PowerShell
 .NOTES
 	Author: Markus Fleschutz | License: CC0
 #>
 
-param([string]$pattern = "", [string]$files = "")
+param([string]$textPattern = "", [string]$filePattern = "")
 
 function ListLocations { param([string]$Pattern, [string]$Path)
-	$List = Select-String -Path $Path -Pattern "$Pattern" 
-	foreach ($Item in $List) {
-		New-Object PSObject -Property @{
-			'Path' = "$($Item.Path)"
-			'Line' = "$($Item.LineNumber)"
-			'Text' = "$($Item.Line)"
-		}
+	$list = Select-String -path $Path -pattern "$Pattern" 
+	foreach ($item in $list) {
+		New-Object PSObject -Property @{ 'FILE'="$($item.Path)"; 'LINE'="$($item.LineNumber):$($item.Line)" }
 	}
-	write-output "(found $($List.Count) locations with pattern '$pattern')"
+	Write-Output "✔️ Found '$Pattern' at $($list.Count) locations."
 }
 
 try {
-	if ($pattern -eq "" ) { $pattern = read-host "Enter search pattern" }
-	if ($files -eq "" ) { $files = read-host "Enter path to files" }
+	if ($textPattern -eq "" ) { $textPattern = Read-Host "Enter the text pattern (e.g. 'UFO')" }
+	if ($filePattern -eq "" ) { $filePattern = Read-Host "Enter the file pattern (e.g. '*.txt')" }
 
-	ListLocations $pattern $files | format-table -property Path,Line,Text
+	ListLocations $textPattern $filePattern | Format-Table -property FILE,LINE -autoSize
 	exit 0 # success
 } catch {
 	"⚠️ Error in line $($_.InvocationInfo.ScriptLineNumber): $($Error[0])"
