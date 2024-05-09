@@ -1,6 +1,6 @@
 ﻿<#
 .SYNOPSIS
-	Lists the (cached) network neighborspwd
+	Lists the (cached) network neighbors
 .DESCRIPTION
 	This PowerShell script lists all cached network neighbors of the local computer.
 .EXAMPLE
@@ -17,9 +17,13 @@
 #>
 
 try {
-	if ($IsLinux -or $IsMacOS) { throw "Sorry, currently available for Windows only" }
-
-	Get-NetNeighbor -includeAllCompartments | Format-Table -property Name,InterfaceAlias,IPAddress,LinkLayerAddress,State -autoSize
+	if ($IsLinux) {
+		& ip neigh
+	} elseif ($IsMacOS) {
+		& ip neigh
+	} else {
+		Get-NetNeighbor -includeAllCompartments | Format-Table -property InterfaceAlias,IPAddress,LinkLayerAddress,State -autoSize
+	}
 	exit 0 # success
 } catch {
 	"⚠️ Error in line $($_.InvocationInfo.ScriptLineNumber): $($Error[0])"
