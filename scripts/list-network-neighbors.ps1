@@ -22,7 +22,7 @@ try {
 	} elseif ($IsMacOS) {
 		& ip neigh
 	} else {
-		Get-NetNeighbor -includeAllCompartments | Format-Table -property InterfaceAlias,IPAddress,LinkLayerAddress,State -autoSize
+		Get-NetNeighbor -includeAllCompartments | Format-Table -property @{e='IPAddress';width=38},@{e='InterfaceAlias';width=14},@{e='LinkLayerAddress';width=19},@{e='State';width=12} 
 	}
 	exit 0 # success
 } catch {
