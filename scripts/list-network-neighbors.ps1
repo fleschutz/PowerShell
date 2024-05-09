@@ -2,13 +2,13 @@
 .SYNOPSIS
 	Lists the (cached) network neighbors
 .DESCRIPTION
-	This PowerShell script lists all cached network neighbors of the local computer.
+	This PowerShell script lists all network neighbors of the local computer (using the ARP cache).
 .EXAMPLE
 	PS> ./list-network-neighbors.ps1
 
-	Name                  InterfaceAlias     IPAddress       LinkLayerAddress        State
-	----                  --------------     ---------       ----------------        -----
-	<<>8:8:8<?;55;=55;    Ethernet           224.0.0.251     01-00-5E-00-00-FB   Permanent
+	IPAddress                              InterfaceAlias LinkLayerAddress           State
+	---------                              -------------- ----------------           -----
+	192.168.178.43                         Ethernet       2C-F0-5D-E7-8E-EE      Reachable
 	...
 .LINK
 	https://github.com/fleschutz/PowerShell
@@ -18,11 +18,11 @@
 
 try {
 	if ($IsLinux) {
-		& ip neigh
+		& ip neigh | grep REACHABLE
 	} elseif ($IsMacOS) {
-		& ip neigh
+		& ip neigh | grep REACHABLE
 	} else {
-		Get-NetNeighbor -includeAllCompartments | Format-Table -property @{e='IPAddress';width=38},@{e='InterfaceAlias';width=14},@{e='LinkLayerAddress';width=19},@{e='State';width=12} 
+		Get-NetNeighbor -includeAllCompartments -state Permanent,Reachable | Format-Table -property @{e='IPAddress';width=38},@{e='InterfaceAlias';width=14},@{e='LinkLayerAddress';width=19},@{e='State';width=12} 
 	}
 	exit 0 # success
 } catch {
