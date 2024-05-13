@@ -140,6 +140,7 @@ ARINC,Aeronautical Radio, Inc. (USA)
 ARLNO,Airline Office
 ARP,Airport Reference Point
 ARTCC,Air Route Traffic Control Centre
+ASACS,Air Surveillance and Control System
 ASB,Airspace Block
 ASDA,Accelerate Stop Distance Available
 ASDE,Airport Surface Detection Equipment
@@ -319,6 +320,7 @@ IGLR,Integrated Ground Lighting and Radar
 ILS,Instrument Landing System
 ISA,International Standard Atmosphere
 IMC,Instrument Meteorological Conditions
+JTAC,Joint Terminal Attack Control
 KAT,Kaufbeuren ATM Training (DFS subcompany)
 KCAS,Calibrated AirSpeed in Knots
 KIAS,Indicated Airspeed in Knots
@@ -368,6 +370,7 @@ OGE,Out of Ground Effect
 OFZ,Obstacle Free Zone
 OJT,On the Job Training
 OODA,"Observation, Orientation, Decision, and Action"
+OSC,On Scene Commander
 PA,Pressure Altitude
 PADS,Parallax Aircraft Docking System
 PAPA,"Parallax Aircraft Parking Aid (docking system)"
@@ -397,7 +400,7 @@ RB,Relative Bearing
 RBI,Relative Bearing Indicator
 RBAF,Royal Belgium Armed Forces
 RCAF,Royal Canadian Air Force
-RCC,Rescue Co-ordination Centre
+RCC,Rescue Coordination Center
 RCL,Runway Centre Line Lighting
 RCR,Runway Condition Reading
 RCS,Radar Cross Section
@@ -421,7 +424,8 @@ RRPM,Rotor Rotations per Minute
 RSA,Runway Safety Area
 RSAF,Republic of Singapore Air Force
 RSC,Runway Surface Condition
-RSI,Remote Status Indicato
+RSI,Remote Status Indicator
+RSO,Range Safety Officer
 RSRS,Reduced Same Runway Separation
 RTCA,Radio Technical Commission for Aeronautics
 RVR,Runway Visual Range
@@ -462,6 +466,7 @@ SM,Statute Mile
 SMR,Surface Movement Radar
 SOF,Supervisor of Flying
 SOW,Statement of Work
+SRA,Surveillance Radar Approach
 SRC,Safety Regulation Commission (EUROCONTROL)
 SRU,Safety Regulation Unit (EUROCONTROL)
 SSR,Secondary Surveillance Radar

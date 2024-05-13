@@ -6,12 +6,12 @@
 .PARAMETER pathToRepo
 	Specifies the file path to the local Git repository (default is working directory)
 .EXAMPLE
-	PS> ./pull-repo.ps1 C:\Repos\rust
+	PS> ./pull-repo.ps1
 	⏳ (1/4) Searching for Git executable...  git version 2.44.0.windows.1
-	⏳ (2/4) Checking local repository...
+	⏳ (2/4) Checking local repository...     📂C:\Repos\rust
 	⏳ (3/4) Pulling remote updates...
 	⏳ (4/4) Updating submodules...
-	✔️ Pulled updates into 📂rust repository in 14 sec.
+	✔️ Pulled remote updates into 📂rust repo in 14s.
 .LINK
 	https://github.com/fleschutz/PowerShell
 .NOTES
@@ -27,10 +27,10 @@ try {
 	& git --version
 	if ($lastExitCode -ne "0") { throw "Can't execute 'git' - make sure Git is installed and available" }
 
-	Write-Host "⏳ (2/4) Checking local repository..."
+	Write-Host "⏳ (2/4) Checking local repository...     📂$pathToRepo"
 	if (-not(Test-Path "$pathToRepo" -pathType container)) { throw "Can't access folder: $pathToRepo" }
 	$result = (git -C "$pathToRepo" status)
-	if ("$result" -match "HEAD detached at ") { throw "Currently in detached HEAD state (not on a branch!), so nothing to pull" }
+	if ("$result" -match "HEAD detached at ") { throw "Nothing to pull due to detached HEAD state (not on a branch!)" }
 	$pathToRepoName = (Get-Item "$pathToRepo").Name
 
 	Write-Host "⏳ (3/4) Pulling remote updates..."
@@ -42,7 +42,7 @@ try {
 	if ($lastExitCode -ne "0") { throw "'git submodule update' failed with exit code $lastExitCode" }
 
 	[int]$elapsed = $stopWatch.Elapsed.TotalSeconds
-	"✔️ Pulled updates into 📂$pathToRepoName repository in $elapsed sec."
+	"✔️ Pulled remote updates into 📂$pathToRepoName repo in $($elapsed)s."
 	exit 0 # success
 } catch {
 	"⚠️ Error in line $($_.InvocationInfo.ScriptLineNumber): $($Error[0])"

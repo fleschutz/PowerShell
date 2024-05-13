@@ -59,7 +59,8 @@ function GetDescription { param([string]$text)
 	"Patchy snow possible"  	{ return "❄️ patchy snow possible" }
 	"Sunny"				{ return "☀️ sunny" }
 	"Thundery outbreaks possible"	{ return "⚡️thundery outbreaks possible" }
-	default				{ return "$Text" }
+	"Thundery outbreaks in nearby"	{ return "⚡️thundery outbreaks in nearby" }
+	default				{ return $text }
 	}
 }
 
@@ -107,7 +108,7 @@ try {
 		$Desc = GetDescription $Hourly.weatherDesc.value
 		if ($Hour -eq 0) {
 			if ($Day -eq 0) {
-				Write-Host -foregroundColor green "TODAY   🌡°C  ☂️mm  💧  💨km/h  ☀️UV  ☁️   👁km   at $Area ($Region, $Country)"
+				Write-Host -foregroundColor green "TODAY  🌡°C  ☂️mm  💧  💨km/h  ☀️UV  ☁️   👁km   at $Area ($Region, $Country)"
 			} elseif ($Day -eq 1) {
 				$Date = (Get-Date).AddDays(1)
 				[string]$Weekday = $Date.DayOfWeek
@@ -119,7 +120,7 @@ try {
 			}
 			$Day++
 		}
-		"$(($Hour.toString()).PadLeft(2))°°  $Temp°   $Precip  $Humidity%   $($WindDir)$WindSpeed    $UV   $Clouds%   $Visib   $Desc"
+		"$(($Hour.toString()).PadLeft(2))h  $Temp°   $Precip  $Humidity%   $($WindDir)$WindSpeed    $UV   $Clouds%   $Visib   $Desc"
 	}
 	exit 0 # success
 } catch {
