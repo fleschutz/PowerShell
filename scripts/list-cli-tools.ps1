@@ -268,6 +268,7 @@ function ListTools {
 	ListTool rsh		""
 	ListTool rsync		"--version"
 	ListTool rundll32	"--version"
+	ListTool sc.exe		"/?"
 	ListTool scp		""
 	ListTool setx           ""
 	ListTool sftp		""
