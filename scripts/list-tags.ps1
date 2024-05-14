@@ -23,17 +23,18 @@
 param([string]$repoDir = "$PWD", [string]$searchPattern="*")
 
 try {
-	Write-Progress "(1/3) Searching for Git executable... "
+	Write-Progress "(1/4) Searching for Git executable... "
 	$null = (git --version)
 	if ($lastExitCode -ne "0") { throw "Can't execute 'git' - make sure Git is installed and available" }
 
-	Write-Progress "(2/3) Checking local repository... "
+	Write-Progress "(2/4) Checking local repository... "
 	if (-not(Test-Path "$repoDir" -pathType container)) { throw "Can't access directory: $repoDir" }
 
-	Write-Progress "(3/3) Updating Git tags from remote..."
+	Write-Progress "(3/4) Fetching newer Git tags..."
 	& git -C "$repoDir" fetch --tags
 	if ($lastExitCode -ne "0") { throw "'git fetch --tags' failed" }
 
+	Write-Progress "(4/4) Fetching out-dated Git tags..."
 	& git -C "$repoDir" fetch --prune-tags
 	if ($lastExitCode -ne "0") { throw "'git fetch --prune-tags' failed" }
 
