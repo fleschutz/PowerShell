@@ -14,7 +14,7 @@
 try {
 	Clear-Host
 	""
-	& "$PSScriptRoot/write-typewriter.ps1" " There's one shell to rule them all. It's called:" 200
+	& "$PSScriptRoot/write-typewriter.ps1" " Hi $USERNAME, move into the fast lane by using . . ." 200
 	""
 	Write-Host "  _____                       _____ _          _ _ " -foregroundColor blue
 	Write-Host " |  __ \                     / ____| |        | | |" -foregroundColor blue
@@ -33,13 +33,14 @@ try {
 	& "$PSScriptRoot/write-typewriter.ps1" "PowerShell is open-source and free! It's available for Linux, Mac OS and Windows" 25
 	""
 	Write-Host " 🔷 " -noNewline
+	& "$PSScriptRoot/write-typewriter.ps1" "Enhance PowerShell by 500+ PowerShell scripts! Get them from: https://github.com/fleschutz/PowerShell" 25
+	""
+
+	Write-Host " 🔷 " -noNewline
 	& "$PSScriptRoot/write-typewriter.ps1" "Want to learn PowerShell? See the tutorial at: https://www.guru99.com/powershell-tutorial.html" 25
 	""
 	Write-Host " 🔷 " -noNewline
 	& "$PSScriptRoot/write-typewriter.ps1" "Need docs? See the official documentation at: https://docs.microsoft.com/en-us/powershell" 25
-	""
-	Write-Host " 🔷 " -noNewline
-	& "$PSScriptRoot/write-typewriter.ps1" "Want sample scripts? See the Mega Collection of PowerShell scripts at: https://github.com/fleschutz/PowerShell" 25
 	""
 	Write-Host " 🔷 " -noNewline
 	& "$PSScriptRoot/write-typewriter.ps1" "Want a cheat sheet? See: https://github.com/fleschutz/PowerShell/blob/master/docs/cheat-sheet.md" 25

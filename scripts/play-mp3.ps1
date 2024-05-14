@@ -32,7 +32,7 @@ try {
 
 	[int]$minutes = $milliseconds / 60000
 	[int]$seconds = ($milliseconds / 1000) % 60
-	Write-Host "  ▶️" -noNewline -foregroundColor green
+	Write-Host "   ▶️" -noNewline -foregroundColor green
 	Write-Host "Playing $filename for $($minutes.ToString('00')):$($seconds.ToString('00'))s..."
 
 	$previousTitle = $host.ui.RawUI.WindowTitle 
