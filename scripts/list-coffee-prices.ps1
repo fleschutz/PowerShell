@@ -5,6 +5,10 @@
 	This PowerShell script queries alphavantage.co and lists the global price of coffee (monthly, in cents per points).
 .EXAMPLE
 	PS> ./list-coffee-prices.ps1
+
+	Monthly Global Price of Coffee (by alphavantage.co, in cents per pound)
+	-----------------------------------------------------------------------
+	2024-04-01 ████████████████████████████████████████████████████████████████████▌ 240
 .LINK
 	https://github.com/fleschutz/PowerShell
 .NOTES
@@ -29,22 +33,23 @@ function WriteHorizontalBar { param([float]$Value, [float]$Max)
 	} elseif ($Num -ge 0.125) {
 		Write-Host "▏" -noNewline
 	}
-	Write-Host " $Value"
+	Write-Host " $Value" -noNewline
 }
 
 try {
 	Write-Progress "Loading data from www.alphavantage.co..."
 	$prices = (Invoke-WebRequest -URI "https://www.alphavantage.co/query?function=COFFEE&interval=monthly&apikey=demo" -userAgent "curl" -useBasicParsing).Content | ConvertFrom-Json
-	Write-Progress -completed " "
+	Write-Progress -completed "Done."
 
 	""
-	"$($prices.name) (by alphavantage.co, in $($prices.unit))"
-	"---------------------------------------------------------------"
+	"Monthly $($prices.name) (by alphavantage.co, in $($prices.unit))"
+	"-----------------------------------------------------------------------"
 	foreach($item in $prices.data) {
 		if ($Item.value -eq ".") { continue }
 		Write-Host "$($item.date) " -noNewline
 		[int]$value = $Item.value
 		WriteHorizontalBar $value 350.0
+		Write-Host "ct"
 	}
 	exit 0 # success
 } catch {
