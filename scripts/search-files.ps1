@@ -8,9 +8,12 @@
 .PARAMETER filePattern
 	Specifies the files to search 
 .EXAMPLE
-	PS> ./search-files UFO C:\Temp\*.txt
+	PS> ./search-files.ps1 UFO *.ps1
+
+	FILE                                              LINE
+	----                                              ----
+	/home/Markus/PowerShell/scripts/check-month.ps1   17: $MonthName = (Get-Date -UFormat %B)
 	...
-	✔️ Found 'UFO' at 9 locations.
 .LINK
 	https://github.com/fleschutz/PowerShell
 .NOTES
@@ -24,12 +27,12 @@ function ListLocations { param([string]$Pattern, [string]$Path)
 	foreach ($item in $list) {
 		New-Object PSObject -Property @{ 'FILE'="$($item.Path)"; 'LINE'="$($item.LineNumber):$($item.Line)" }
 	}
-	Write-Output "✔️ Found '$Pattern' at $($list.Count) locations."
+	Write-Output "✔️ Found $($list.Count) lines containing '$Pattern' in $filePattern."
 }
 
 try {
 	if ($textPattern -eq "" ) { $textPattern = Read-Host "Enter the text pattern (e.g. 'UFO')" }
-	if ($filePattern -eq "" ) { $filePattern = Read-Host "Enter the file pattern (e.g. '*.txt')" }
+	if ($filePattern -eq "" ) { $filePattern = Read-Host "Enter the file pattern (e.g. '*.ps1')" }
 
 	ListLocations $textPattern $filePattern | Format-Table -property FILE,LINE -autoSize
 	exit 0 # success
