@@ -1,11 +1,14 @@
-﻿# MY POWERSHELL PROFILE (this profile file defines the look & feel of PowerShell)
+﻿# MY POWERSHELL PROFILE (defines the look & feel of PowerShell)
 
 # WINDOW TITLE
 if ($IsLinux) { $Username = $(whoami) } else { $Username = $env:USERNAME }
 $host.ui.RawUI.WindowTitle = "$Username @ $(hostname)"
 
+# GREETING
+Write-Host "Hi $USERNAME, what's up?" -foregroundColor green
+
 # COMMAND PROMPT
-function prompt { Write-Host -noNewline -foregroundColor yellow "`n➤ "; return " " }
+function prompt { Write-Host "`n➤ " -noNewline -foregroundColor yellow; return " " }
 
 # ALIAS NAMES
 del alias:pwd -force -errorAction SilentlyContinue
