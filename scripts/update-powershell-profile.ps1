@@ -9,7 +9,7 @@
 	PS> ./update-powershell-profile.ps1
 	⏳ (1/2) Query location of PowerShell profile 'CurrentUserCurrentHost'...
 	⏳ (2/2) Copy my-profile.ps1 to C:\Users\Markus\Documents\WindowsPowerShell\Microsoft.PowerShell_profile.ps1...
-	✔️ PowerShell profile updated - it get's active on next login.
+	✔️ Your PowerShell profile is updated - it get's active on next login.
 .LINK
 	https://github.com/fleschutz/PowerShell
 .NOTES
@@ -27,7 +27,7 @@ try {
 	$null = New-Item -Path $pathToProfile -ItemType "file" -Force
 	Copy-Item "$path" "$pathToProfile" -force
 
-	"✔️ PowerShell profile updated - it get's active on next login."
+	"✔️ Your PowerShell profile is updated - it get's active on next login."
 	exit 0 # success
 } catch {
 	"⚠️ Error in line $($_.InvocationInfo.ScriptLineNumber): $($Error[0])"
