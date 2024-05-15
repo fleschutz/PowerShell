@@ -12,8 +12,8 @@
         Author: Markus Fleschutz | License: CC0
 #>
 
-$names = @('accesspoint','ad','ap','amnesiac','archlinux','auriga','berlin','boston','brother','canon','castor','cisco','echodot','epson','epson2550','epson2815','fedora','fireball','firewall','fritz.box','fritz!repeater','gassensor','gateway','hippo','heizung','hodor','homemanager','io','iphone','jarvis','jenkins','la','laptop','jupiter','mars','mercury','miami','mobile','none','none-1','none-2','ny','octopi','office','officepc','paris','pi','pixel-6a','pluto','printer','proxy','r2d2','raspberry','rocket','rome','router','sentinel','server','shelly1','smartphone','smartwatch','soundbar','sunnyboy','surface','switch','tablet','tau','tigercat','tolino','tv','ubuntu','vega','venus','xrx','zeus') # sorted alphabetically
-[int]$pingTimeout = 600 # ms
+$names = @('accesspoint','AD','AP','amnesiac','archlinux','auriga','berlin','boston','brother','canon','castor','cisco','echodot','epson','epson2550','epson2815','fedora','fireball','firewall','fritz.box','fritz!repeater','gassensor','gateway','hippo','heizung','hodor','homemanager','io','iphone','jarvis','jenkins','LA','laptop','linux','jupiter','mars','mercury','miami','mobile','none','none-1','none-2','NY','octo','office','officepc','paris','PI','pixel-6a','PC','pluto','printer','proxy','R2D2','raspberry','rocket','rome','router','sentinel','server','shelly','shelly1','smartphone','smartwatch','soundbar','sunnyboy','surface','switch','tablet','tau','tigercat','tolino','TV','ubuntu','vega','venus','xrx','zeus') # sorted alphabetically
+[int]$timeout = 600 # ms ping timeout
 
 try {
 	Write-Progress "Sending pings to the local hosts..."
@@ -21,24 +21,18 @@ try {
         $queue = [System.Collections.Queue]::new()
 	foreach($name in $names) {
 		$ping = [System.Net.Networkinformation.Ping]::new()
-		$queue.Enqueue( @{Host=$name; Ping=$ping; Async=$ping.SendPingAsync($name, $pingTimeout)} )
+		$queue.Enqueue( @{Host=$name; Ping=$ping; Async=$ping.SendPingAsync($name, $timeout)} )
         }
 
 	$up = ""
-	do {
-		$obj = $queue.Dequeue()
-		try {
-                	if ($obj.Async.Wait($pingTimeout)) {
-				if ($obj.Async.Result.Status -ne "TimedOut") {
-					$up += "$($obj.Host) "
-				}
+	while ($queue.Count -gt 0) { $obj = $queue.Dequeue()
+		try { if ($obj.Async.Wait($timeout)) {
+				if ($obj.Async.Result.Status -ne "TimedOut") { $up += "$($obj.Host) " }
 				continue
 			}
-		} catch {
-			if ($obj.Async.IsCompleted) { continue }
-		}
+		} catch { continue }
 		$queue.Enqueue($obj)
-	} while ($queue.Count -gt 0)
+	}
 
 	Write-Progress -completed "done."
 	Write-Host "✅ Up: $($up)"
