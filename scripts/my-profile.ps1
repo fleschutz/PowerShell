@@ -5,7 +5,7 @@ if ($IsLinux) { $Username = $(whoami) } else { $Username = $env:USERNAME }
 $host.ui.RawUI.WindowTitle = "$Username @ $(hostname)"
 
 # GREETING
-Write-Host "Hi $USERNAME, what's up?" -foregroundColor green
+Write-Host "Welcome $USERNAME at $(hostname), what's up?" -foregroundColor green
 
 # COMMAND PROMPT
 function prompt { Write-Host "`n➤ " -noNewline -foregroundColor yellow; return " " }
