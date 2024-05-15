@@ -105,9 +105,9 @@
 **Make sure PowerShell is installed, then execute: `chsh -s /usr/bin/pwsh USERNAME`. In case you experience an "invalid shell" error, add "/usr/bin/pwsh" to /etc/shells.**
 </details>
 
-<details><summary>How to install a custom PowerShell profile?</summary>
+<details><summary>How to set a custom PowerShell profile?</summary>
    
-**Execute: `./set-profile.ps1` in the *Scripts* subfolder, this will install **my-profile.ps1** as your PowerShell profile. It's a nice looking base profile, but can easily be changed to your needs.**
+**Execute: `./update-powershell-profile.ps1` in the *Scripts* subfolder, this will install **my-profile.ps1** as your PowerShell profile. It's a nice looking basic profile and can easily be adapted to your needs.**
 </details>
 
  <details><summary>How to add the scripts to the search path?</summary>
