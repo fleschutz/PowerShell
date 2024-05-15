@@ -131,7 +131,8 @@ Want to use the PowerShell scripts everywhere on the command-line? Then you need
 
 <details><summary>How to remove the banner message in PowerShell?</summary>
 
-* **Quite simple:** just start powershell.exe with option '-nologo'.
+* **In general:** start powershell.exe with option '-nologo'.
+* **For Windows Terminal:** open Settings > Profiles > Windows PowerShell > Command line and add " -nologo".
 </details>
 
 <details><summary>How to write good PowerShell scripts?</summary>
