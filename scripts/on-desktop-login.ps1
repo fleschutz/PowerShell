@@ -22,7 +22,6 @@ try {
 	& "$PSScriptRoot/check-swap-space.ps1"
 	& "$PSScriptRoot/check-drives.ps1"
 	& "$PSScriptRoot/open-dashboards.ps1"
-	& "$PSScriptRoot/open-home-folder.ps1"
 	" "
 	& "$PSScriptRoot/write-quote.ps1"
 	" "
