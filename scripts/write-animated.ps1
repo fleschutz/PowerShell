@@ -2,51 +2,37 @@
 .SYNOPSIS
 	Writes animated text
 .DESCRIPTION
-	This PowerShell script writes animated text to the console.
+	This PowerShell script writes text centered and animated to the console.
+.PARAMETER text
+	Specifies the text line to write ("Welcome to PowerShell" by default)
+.PARAMETER speed
+	Specifies the animation speed per character (10ms by default)
 .EXAMPLE
-	PS> ./write-animated "Hello World"
+	PS> ./write-animated.ps1
+	(watch and enjoy)
 .LINK
 	https://github.com/fleschutz/PowerShell
 .NOTES
 	Author: Markus Fleschutz | License: CC0
 #>
 
-param($Line1 = "", $Line2 = "", $Line3 = "", $Line4 = "", $Line5 = "", $Line6 = "", $Line7 = "", $Line8 = "", $Line9 = "", [int]$Speed = 30) # 30 ms pause
+param([string]$text = "Welcome to PowerShell", [int]$speed = 10) # 10ms
 
-$TerminalWidth = 120 # characters
-
-function WriteLine { param([string]$Line)
-	if ($Line -eq "") { return }
-	[int]$End = $Line.Length
-	$StartPosition = $HOST.UI.RawUI.CursorPosition
-	$Spaces = "                                                                     "
-	foreach($Pos in 1 .. $End) {
-		$TextToDisplay = $Spaces.Substring(0, $TerminalWidth / 2 - $pos / 2) + $Line.Substring(0, $Pos)
-		Write-Host $TextToDisplay -noNewline
-		Start-Sleep -milliseconds $Speed
-		$HOST.UI.RawUI.CursorPosition = $StartPosition
+function WriteLine([string]$line) {
+	[int]$end = $line.Length
+	$startPos = $HOST.UI.RawUI.CursorPosition
+	$spaces = "                                                                     "
+	[int]$termHalfWidth = 120 / 2
+	foreach($pos in 1 .. $end) {
+		$HOST.UI.RawUI.CursorPosition = $startPos
+		Write-Host "$($spaces.Substring(0, $termHalfWidth - $pos / 2) + $line.Substring(0, $pos))" -noNewline
+		Start-Sleep -milliseconds $speed
 	}
 	Write-Host ""
 }
 
 try {
-	if ($Line1 -eq "") {
-		$Line1 = "Welcome to PowerShell Scripts"
-		$Line2 = " "
-		$Line3 = "This repository contains useful and cross-platform PowerShell scripts."
-		$Line4 = " "
-		$Line5 = "Best regards,"
-		$Line6 = "Markus"
-	}
-	WriteLine $Line1 
-	WriteLine $Line2 
-	WriteLine $Line3 
-	WriteLine $Line4 
-	WriteLine $Line5 
-	WriteLine $Line6 
-	WriteLine $Line7
-	WriteLine $Line8
-	WriteLine $Line9
+	WriteLine $text 
 	exit 0 # success
 } catch {
         "⚠️ Error in line $($_.InvocationInfo.ScriptLineNumber): $($Error[0])"
