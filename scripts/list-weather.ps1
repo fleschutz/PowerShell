@@ -26,6 +26,7 @@ function GetDescription([string]$text) {
 	"Cloudy"			{ return "☁️ cloudy" }
 	"Fog"				{ return "🌫  fog" }
 	"Freezing fog"			{ return "🌫  freezing fog" }
+	"Heavy rain"			{ return "💧 heavy rain ⚠️" }
 	"Heavy snow"			{ return "❄️ heavy snow ⚠️" }
 	"Light drizzle"			{ return "💧 light drizzle" }
 	"Light freezing rain"		{ return "💧 light freezing rain ⚠️" }
@@ -99,7 +100,7 @@ try {
 	foreach($hourly in $weather.weather.hourly) {
 		$hour = $hourly.time / 100
 		$tempC = $(($hourly.tempC.toString()).PadLeft(3))
-		$precip = $hourly.precipMM
+		$precip = $($($hourly.precipMM).PadLeft(4))
 		$humidity = $(($hourly.humidity.toString()).PadLeft(3))
 		$pressure = $hourly.pressure
 		$windSpeed = $(($hourly.windspeedKmph.toString()).PadLeft(2))
