@@ -102,7 +102,8 @@
 
 <details><summary>How to configure PowerShell as my default shell on Linux?</summary>
   
-**Make sure PowerShell is installed, then execute: `chsh -s /usr/bin/pwsh USERNAME`. In case you experience an "invalid shell" error, add "/usr/bin/pwsh" to /etc/shells.**
+1. Make sure PowerShell is installed, then **execute: `chsh -s /usr/bin/pwsh USERNAME`** (replace USERNAME by your user name).
+2. In case you experience an "invalid shell" error, **add the line "/usr/bin/pwsh" to /etc/shells.**
 </details>
 
 <details><summary>How to set a custom PowerShell profile?</summary>
