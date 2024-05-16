@@ -1,6 +1,6 @@
 ﻿<#
 .SYNOPSIS
-	List commits live in real-time.
+	Show commits live in real-time.
 .DESCRIPTION
 	This PowerShell script permanently lists the latest commit in a Git repository in real-time.
 .PARAMETER pathToRepo
