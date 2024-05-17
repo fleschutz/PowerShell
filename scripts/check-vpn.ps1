@@ -17,9 +17,9 @@ try {
 	if ($IsLinux) {
 		# TODO
 	} else {
-		$Connections = Get-VPNConnection
-		foreach($Connection in $Connections) {
-			Write-Host "✅ VPN to $($Connection.Name) is $($Connection.ConnectionStatus.ToLower())"
+		$connections = Get-VPNConnection
+		foreach($connection in $connections) {
+			Write-Host "✅ VPN to $($connection.Name) is $($connection.ConnectionStatus.ToLower())"
 			$noVPN = $false
 		}
 	}
