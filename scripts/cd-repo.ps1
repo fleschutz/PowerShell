@@ -7,8 +7,7 @@
 	Specifies the folder name
 .EXAMPLE
 	PS> ./cd-repo.ps1 rust
-	📂C:\Users\Markus\Repos\rust
-	  on branch: ## main ... origin/main
+	📂C:\Repos\rust • on Git branch: ## main ... origin/main
 .LINK
 	https://github.com/fleschutz/PowerShell
 .NOTES
@@ -38,7 +37,7 @@ try {
 	if (-not(Test-Path "$path" -pathType Container)) { throw "The path to 📂$path doesn't exist (yet)" }
 	$path = Resolve-Path "$path"
 	Set-Location "$path"
-	Write-Host "📂$path • on branch: " -noNewline
+	Write-Host "📂$path • on Git branch: " -noNewline
 
 	& git status --short --branch --show-stash
 	exit 0 # success
