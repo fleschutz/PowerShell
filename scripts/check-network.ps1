@@ -15,8 +15,7 @@
 	Author: Markus Fleschutz | License: CC0
 #>
 
-" "
-& "$PSScriptRoot/write-green.ps1" "   N E T W O R K"
+Write-Host "`n   N E T W O R K" -foregroundColor green
 & "$PSScriptRoot/ping-remote-hosts.ps1"
 & "$PSScriptRoot/check-firewall"
 & "$PSScriptRoot/check-dns.ps1"

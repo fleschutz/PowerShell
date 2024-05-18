@@ -15,8 +15,7 @@
 	Author: Markus Fleschutz | License: CC0
 #>
 
-" "
-& "$PSScriptRoot/write-green.ps1" "   S O F T W A R E"
+Write-Host "`n   S O F T W A R E" -foregroundColor green
 & "$PSScriptRoot/check-os.ps1"
 & "$PSScriptRoot/check-uptime.ps1"
 & "$PSScriptRoot/check-apps.ps1"
