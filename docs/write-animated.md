@@ -1,90 +1,28 @@
 Script: *write-animated.ps1*
 ========================
 
-This PowerShell script writes animated text to the console.
+This PowerShell script writes text centered and animated to the console.
 
 Parameters
 ----------
 ```powershell
-PS> ./write-animated.ps1 [[-Line1] <Object>] [[-Line2] <Object>] [[-Line3] <Object>] [[-Line4] <Object>] [[-Line5] <Object>] [[-Line6] <Object>] [[-Line7] <Object>] [[-Line8] <Object>] [[-Line9] <Object>] [[-Speed] <Int32>] [<CommonParameters>]
+PS> ./write-animated.ps1 [[-text] <String>] [[-speed] <Int32>] [<CommonParameters>]
 
--Line1 <Object>
+-text <String>
+    Specifies the text line to write ("Welcome to PowerShell" by default)
     
     Required?                    false
     Position?                    1
-    Default value                
+    Default value                Welcome to PowerShell
     Accept pipeline input?       false
     Accept wildcard characters?  false
 
--Line2 <Object>
+-speed <Int32>
+    Specifies the animation speed per character (10ms by default)
     
     Required?                    false
     Position?                    2
-    Default value                
-    Accept pipeline input?       false
-    Accept wildcard characters?  false
-
--Line3 <Object>
-    
-    Required?                    false
-    Position?                    3
-    Default value                
-    Accept pipeline input?       false
-    Accept wildcard characters?  false
-
--Line4 <Object>
-    
-    Required?                    false
-    Position?                    4
-    Default value                
-    Accept pipeline input?       false
-    Accept wildcard characters?  false
-
--Line5 <Object>
-    
-    Required?                    false
-    Position?                    5
-    Default value                
-    Accept pipeline input?       false
-    Accept wildcard characters?  false
-
--Line6 <Object>
-    
-    Required?                    false
-    Position?                    6
-    Default value                
-    Accept pipeline input?       false
-    Accept wildcard characters?  false
-
--Line7 <Object>
-    
-    Required?                    false
-    Position?                    7
-    Default value                
-    Accept pipeline input?       false
-    Accept wildcard characters?  false
-
--Line8 <Object>
-    
-    Required?                    false
-    Position?                    8
-    Default value                
-    Accept pipeline input?       false
-    Accept wildcard characters?  false
-
--Line9 <Object>
-    
-    Required?                    false
-    Position?                    9
-    Default value                
-    Accept pipeline input?       false
-    Accept wildcard characters?  false
-
--Speed <Int32>
-    
-    Required?                    false
-    Position?                    10
-    Default value                30
+    Default value                10
     Accept pipeline input?       false
     Accept wildcard characters?  false
 
@@ -96,7 +34,8 @@ PS> ./write-animated.ps1 [[-Line1] <Object>] [[-Line2] <Object>] [[-Line3] <Obje
 Example
 -------
 ```powershell
-PS> ./write-animated "Hello World"
+PS> ./write-animated.ps1
+(watch and enjoy)
 
 ```
 
@@ -115,51 +54,37 @@ Script Content
 .SYNOPSIS
 	Writes animated text
 .DESCRIPTION
-	This PowerShell script writes animated text to the console.
+	This PowerShell script writes text centered and animated to the console.
+.PARAMETER text
+	Specifies the text line to write ("Welcome to PowerShell" by default)
+.PARAMETER speed
+	Specifies the animation speed per character (10ms by default)
 .EXAMPLE
-	PS> ./write-animated "Hello World"
+	PS> ./write-animated.ps1
+	(watch and enjoy)
 .LINK
 	https://github.com/fleschutz/PowerShell
 .NOTES
 	Author: Markus Fleschutz | License: CC0
 #>
 
-param($Line1 = "", $Line2 = "", $Line3 = "", $Line4 = "", $Line5 = "", $Line6 = "", $Line7 = "", $Line8 = "", $Line9 = "", [int]$Speed = 30) # 30 ms pause
+param([string]$text = "Welcome to PowerShell", [int]$speed = 10) # 10ms
 
-$TerminalWidth = 120 # characters
-
-function WriteLine { param([string]$Line)
-	if ($Line -eq "") { return }
-	[int]$End = $Line.Length
-	$StartPosition = $HOST.UI.RawUI.CursorPosition
-	$Spaces = "                                                                     "
-	foreach($Pos in 1 .. $End) {
-		$TextToDisplay = $Spaces.Substring(0, $TerminalWidth / 2 - $pos / 2) + $Line.Substring(0, $Pos)
-		Write-Host $TextToDisplay -noNewline
-		Start-Sleep -milliseconds $Speed
-		$HOST.UI.RawUI.CursorPosition = $StartPosition
+function WriteLine([string]$line) {
+	[int]$end = $line.Length
+	$startPos = $HOST.UI.RawUI.CursorPosition
+	$spaces = "                                                                     "
+	[int]$termHalfWidth = 120 / 2
+	foreach($pos in 1 .. $end) {
+		$HOST.UI.RawUI.CursorPosition = $startPos
+		Write-Host "$($spaces.Substring(0, $termHalfWidth - $pos / 2) + $line.Substring(0, $pos))" -noNewline
+		Start-Sleep -milliseconds $speed
 	}
 	Write-Host ""
 }
 
 try {
-	if ($Line1 -eq "") {
-		$Line1 = "Welcome to PowerShell Scripts"
-		$Line2 = " "
-		$Line3 = "This repository contains useful and cross-platform PowerShell scripts."
-		$Line4 = " "
-		$Line5 = "Best regards,"
-		$Line6 = "Markus"
-	}
-	WriteLine $Line1 
-	WriteLine $Line2 
-	WriteLine $Line3 
-	WriteLine $Line4 
-	WriteLine $Line5 
-	WriteLine $Line6 
-	WriteLine $Line7
-	WriteLine $Line8
-	WriteLine $Line9
+	WriteLine $text 
 	exit 0 # success
 } catch {
         "⚠️ Error in line $($_.InvocationInfo.ScriptLineNumber): $($Error[0])"
@@ -167,4 +92,4 @@ try {
 }
 ```
 
-*(generated by convert-ps2md.ps1 using the comment-based help of write-animated.ps1 as of 03/27/2024 17:36:32)*
+*(generated by convert-ps2md.ps1 using the comment-based help of write-animated.ps1 as of 05/19/2024 10:25:27)*
