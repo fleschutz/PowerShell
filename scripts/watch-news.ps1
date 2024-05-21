@@ -5,9 +5,11 @@
 	This PowerShell script lists the latest headlines by using a RSS (Really Simple Syndication) feed.
 .PARAMETER RSS_URL
 	Specifies the URL to the RSS feed (Yahoo World News by default)
+.PARAMETER timeInterval
+	Specifies the time interval in millisec between the Web requests
 .EXAMPLE
-	PS> ./watch-headlines.ps1
-	             ❇️ Niger coup: Ecowas deadline sparks anxiety in northern Nigeria ❇️
+	PS> ./watch-news.ps1
+	❇️ Niger coup: Ecowas deadline sparks anxiety in northern Nigeria ❇️
 .LINK
 	https://github.com/fleschutz/PowerShell
 .NOTES
@@ -16,20 +18,26 @@
 
 param([string]$RSS_URL = "https://news.yahoo.com/rss/world", [int]$timeInterval = 30000) # in ms
 
-function GetLatestHeadline {
+function PrintLatestHeadlines([string]$previous, [int]$maxLines) {
 	[xml]$content = (Invoke-WebRequest -URI $RSS_URL -useBasicParsing).Content
-	foreach ($item in $content.rss.channel.item) { return "$($item.title)" }
-	return ""
+	[string]$latest = ""
+
+	foreach ($item in $content.rss.channel.item) {
+		$itemTitle = "$($item.title)"
+		if ($latest -eq "") { $latest = $itemTitle }
+		if ($itemTitle -eq $previous) { break }
+
+		& "$PSScriptRoot/write-animated.ps1" "❇️ $itemTitle ❇️"
+		$maxLines--
+		if ($maxLines -eq 0) { break }
+	}
+	return $latest
 }
 
 try {
-	$previous = ""
+	$latest = ""
 	while ($true) {
-		$latest = GetLatestHeadline
-		if ($latest -ne $previous) {
-			& "$PSScriptRoot/write-animated.ps1" "❇️ $latest ❇️"
-			$previous = $latest
-		}
+		$latest = PrintLatestHeadlines $latest 10
 		Start-Sleep -milliseconds $timeInterval
 	}
 	exit 0 # success
