@@ -41,7 +41,7 @@ ACARS,Aircraft Communications Addressing and Reporting System
 ACAS,Airborne Collision Avoidance System
 ACC,Area Control Center
 ACE,Airport airside Capacity Enhancement
-ACI,Airports Council International
+ACI,"Airports Council International, Area of Common Interest"
 ACP,Accept
 AD,Air Defence
 ADAC,Abu Dhabi Airports
@@ -122,12 +122,12 @@ AOCC,Atlantic Operations Control Center
 AODR,Authorizing Official Designated Representative
 AOM,Airplane Operating Manual
 AOPA,Aircraft Owners and Pilots Association
-AOR,Area of Responsibility
+AoR,Area of Responsibility
 AP,Acquisition Plan
 APB,Acquisition Program Baselines
 APIS,Aircraft Parking and Information System
 APM,Approach Path Monitor
-APP,Approach
+APP,"Approach Area, Approach ATS Unit"
 APS,Airport Planning Standard
 APTS,Automated Personnel Tracking System
 APU,Auxiliary Power Unit
@@ -156,6 +156,8 @@ ATIS,Automatic Terminal Information Service
 ATM,"Air Traffic Management, Air Traffic Manager"
 ATO,Air Traffic Organization
 ATPL,Airline Transport Pilot License
+ATS,Air Traffic Services
+ATZ,Air Traffic Zone
 AURO,Autorotation (by helicopters)
 AWACS,Airborne Warning And Control System
 BC,Back Course
@@ -184,6 +186,7 @@ CAT,"Category of Aircraft, Clear Air Turbulence"
 CATC,Civil Air Traffic Control
 CAVOK,Clouds And Visibility OK
 C/S,Callsign
+CBA,Cross-Border Area
 CBT,Computer-based Training
 CC,Commander
 CCBC,Community College Baltimore County
@@ -192,6 +195,7 @@ CCTLR,Chief Controller
 CDA,Continuous Descent Approach
 CDI,Course Deviation Indicator
 CDM,Collaborative Decision Making
+CDR,Conditional Route
 CDTI,Cockpit Display of Traffic Information
 CDU,Cockpit Display Unit
 CEATS,Central European Air Traffic Services
@@ -220,10 +224,11 @@ CPL,Commercial Pilot License
 CRC,Control and Reporting Centre
 CRDA,Converging Runway Display Aid
 CREDOS,Crosswind Reduced Separations for Departure Operations
-CTA,"Controlled Area, Controlled Time of Arrival"
+CTA,"Control Area, Controlled Time of Arrival"
 CTAF,Common Traffic Advisory Frequency
 CTOT,Calculated Take-Off Time
 CTR,Control Zone or Controlled Traffic Region
+CTZ,Control Zone
 CV,Vice Commander
 CVFR,Controlled Visual Flight Rule (flight)
 CVSM,Conventional Vertical Separation Minimum
@@ -238,6 +243,7 @@ DCIA,Dependent Converging Instrument Approach
 DECIDE,"Detect, Estimate, Choose, Identify, Do, and Evaluate"
 DEL,Delivery
 DER,Departure End of Runway
+DFL,Division Flight Level 
 DFS,Deutsche Flugsicherung (ATC in Germany)
 DGAC,Direction Générale de l'Aviation Civile
 DLA,Defense Logistics Agency
@@ -260,6 +266,7 @@ ERPM,Engine Rotations per Minute
 eSTOL,Electric Short Take-off and Landing
 ETA,"Estimated Time of Arrival, East Transition Area"
 ETL,Effective Translational Lift (for helicopters)
+ETO,Estimated Time Over Significant Point
 ETOPS,Extended-range Twin-engine Operational Performance Standards
 ETVS,Electronic Terminal Voice Switch
 eVTOL,Electric Vertical Take-off and Landing
@@ -370,6 +377,7 @@ OGE,Out of Ground Effect
 OFZ,Obstacle Free Zone
 OJT,On the Job Training
 OODA,"Observation, Orientation, Decision, and Action"
+ORCAM,Originating Region Code Assignment Method
 OSC,On Scene Commander
 PA,Pressure Altitude
 PADS,Parallax Aircraft Docking System
@@ -428,6 +436,7 @@ RSI,Remote Status Indicator
 RSO,Range Safety Officer
 RSRS,Reduced Same Runway Separation
 RTCA,Radio Technical Commission for Aeronautics
+RTF,Radio Telephony
 RVR,Runway Visual Range
 RVSM,Reduced Vertical Separation Minimum
 RWR,Radar Warning Receiver
@@ -448,6 +457,7 @@ SELCAL,Selective Calling System
 SES,Single European Sky
 SESAME,Single European Sky ATM Master Plan
 SESAR,Single European Sky ATM Research
+SFC,Surface
 SFL,Sequencing Flashing Light
 SFO,Simulated Flameout Operation
 SI,Selective Interrogation
@@ -527,14 +537,16 @@ TOP,Take-Off Power
 TOR,"Terms of Reference, or Tornado aircraft"
 TORA,Takeoff Run Available
 TOWSIM,Tower Simulator
+TRA,Temporary Reserved Area
 TRACON,Terminal Radar Approach Control
 TRH,Thrust Reduction Height
+TSA,Temporary Segregated Area
 TSO,Technical Standard Order
 TSTC,Texas State Technical College
 TT,True Track
 TVOR,Terminal VOR
 TWEB,Transcribed Weather Broadcast (USA for ATIS)
-TWR,Control Tower or Thrust to Weight Ratio
+TWR,Aerodrome Control Tower or Thrust to Weight Ratio
 TWY,Taxiway
 TXC,Taxiway Centreline Lights
 TXE,Taxiway Edge Lights
@@ -552,6 +564,7 @@ UHF,Ultra High Frequency (300MHz to 3 GHz)
 UIR,Upper Flight Information Region
 UKCAA,United Kingdom Civil Aviation Authority
 UMASS,University of Massachusetts
+UNL,Unlimited
 URET,User Request Evaluation Tool
 USAF,United States Air Force
 UTA,Upper Traffic Area
