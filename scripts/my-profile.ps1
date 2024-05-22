@@ -1,11 +1,11 @@
 ﻿# MY POWERSHELL PROFILE (defines the look & feel of PowerShell)
 
 # WINDOW TITLE
-if ($IsLinux) { $Username = $(whoami) } else { $Username = $env:USERNAME }
-$host.ui.RawUI.WindowTitle = "$Username @ $(hostname)"
+if ($IsLinux) { $username = $(whoami) } else { $username = $env:USERNAME }
+$host.ui.RawUI.WindowTitle = "$username @ $(hostname)"
 
 # GREETING
-Write-Host "Welcome $USERNAME at $(hostname), what's up?" -foregroundColor green
+Write-Host "👋 Welcome $username to PowerShell at $(hostname)." -foregroundColor green
 
 # COMMAND PROMPT
 function prompt { Write-Host "`n➤ " -noNewline -foregroundColor yellow; return " " }
