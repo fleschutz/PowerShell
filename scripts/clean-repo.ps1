@@ -4,22 +4,22 @@
 .DESCRIPTION
 	This PowerShell script deletes all untracked files and folders in a local Git repository (including submodules).
 	NOTE: To be used with care! This cannot be undone!
-.PARAMETER pathToRepo
-	Specifies the file path to the local Git repository
+.PARAMETER path
+	Specifies the file path to the local Git repository (current working directory by default)
 .EXAMPLE
-	PS> ./clean-repo.ps1 C:\rust
-	⏳ (1/4) Searching for Git executable...          git version 2.41.0.windows.3
-	⏳ (2/4) Checking local repository...        	  📂C:\rust
+	PS> ./clean-repo.ps1 C:\Repos\rust
+	⏳ (1/4) Searching for Git executable...           git version 2.45.0
+	⏳ (2/4) Checking local repository...        	  📂C:\Repos\rust
 	⏳ (3/4) Removing untracked files in repository...
 	⏳ (4/4) Removing untracked files in submodules...
-	✔️ Repo 📂rust is clean now (took 1s).
+	✔️ Cleaned the 📂rust repository in 1s.
 .LINK
 	https://github.com/fleschutz/PowerShell
 .NOTES
 	Author: Markus Fleschutz | License: CC0
 #>
 
-param([string]$pathToRepo = "$PWD")
+param([string]$path = "$PWD")
 
 try {
 	$stopWatch = [system.diagnostics.stopwatch]::startNew()
@@ -28,24 +28,24 @@ try {
 	& git --version
 	if ($lastExitCode -ne "0") { throw "Can't execute 'git' - make sure Git is installed and available" }
 
-	"⏳ (2/4) Checking local repository...             📂$pathToRepo"
-	if (-not(Test-Path "$pathToRepo" -pathType container)) { throw "Can't access repo folder '$pathToRepo' - maybe a typo or missing folder permissions?" }
-	$repoName = (Get-Item "$pathToRepo").Name
+	"⏳ (2/4) Checking local repository...             📂$path"
+	if (-not(Test-Path "$path" -pathType container)) { throw "Can't access repo folder '$path' - maybe a typo or missing folder permissions?" }
+	$repoName = (Get-Item "$path").Name
 
 	"⏳ (3/4) Removing untracked files in repository..."
-	& git -C "$pathToRepo" clean -xfd -f # to delete all untracked files in the main repo
+	& git -C "$path" clean -xfd -f # to delete all untracked files in the main repo
 	if ($lastExitCode -ne "0") {
 		Write-Warning "'git clean' failed with exit code $lastExitCode, retrying once..."
-		& git -C "$pathToRepo" clean -xfd -f 
+		& git -C "$path" clean -xfd -f 
 		if ($lastExitCode -ne "0") { throw "'git clean' failed with exit code $lastExitCode" }
 	}
 
 	"⏳ (4/4) Removing untracked files in submodules..."
-	& git -C "$pathToRepo" submodule foreach --recursive git clean -xfd -f # to delete all untracked files in the submodules
+	& git -C "$path" submodule foreach --recursive git clean -xfd -f # to delete all untracked files in the submodules
 	if ($lastExitCode -ne "0") { throw "'git clean' in the submodules failed with exit code $lastExitCode" }
 
 	[int]$elapsed = $stopWatch.Elapsed.TotalSeconds
-	"✔️ Repo 📂$repoName is clean now (took $($elapsed)s)."
+	"✔️ Cleaned the 📂$repoName repository in $($elapsed)s."
 	exit 0 # success
 } catch {
 	"⚠️ Error in line $($_.InvocationInfo.ScriptLineNumber): $($Error[0])"
