@@ -9,13 +9,13 @@
 	Specifies the file path to the local Git repository (current working directory per default)
 .EXAMPLE
 	PS> ./new-branch.ps1 test123 C:\Repos\rust
-	⏳ (1/6) Searching for Git executable...  git version 2.42.0.windows.2
+	⏳ (1/6) Searching for Git executable...  git version 2.45.0
 	⏳ (2/6) Checking local repository...     📂C:\Repos\rust
 	⏳ (3/6) Fetching remote updates...
 	⏳ (4/6) Creating new branch...
 	⏳ (5/6) Pushing updates...
 	⏳ (6/6) Updating submodules...
-	✔️ Created branch 'test123' in repo 📂rust (based on 'main', took 18s)
+	✔️ Created branch 'test123' in repo 📂rust in 18s (based on 'main')
 .LINK
 	https://github.com/fleschutz/PowerShell
 .NOTES
@@ -59,7 +59,7 @@ try {
 	if ($lastExitCode -ne "0") { throw "'git submodule update' failed with exit code $lastExitCode" }
 
 	[int]$elapsed = $stopWatch.Elapsed.TotalSeconds
-	"✔️ Created branch '$newBranch' in repo 📂$repoName (based on '$currentBranch', took $($elapsed)s)"
+	"✔️ Created branch '$newBranch' in repo 📂$repoName in $($elapsed)s (based on '$currentBranch')"
 	exit 0 # success
 } catch {
 	"⚠️ Error in line $($_.InvocationInfo.ScriptLineNumber): $($Error[0])"
