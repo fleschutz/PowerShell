@@ -13,7 +13,6 @@
 #>
 
 try {
-	& "$PSScriptRoot/write-big.ps1" "Welcome back"
 	" "
 	& "$PSScriptRoot/check-uptime.ps1"
 	& "$PSScriptRoot/check-pending-reboot.ps1"
@@ -33,7 +32,7 @@ try {
 	& "$PSScriptRoot/fetch-repos.ps1"
 	" "
 	& "$PSScriptRoot/play-big-ben.ps1"
-	& "$PSScriptRoot/write-clock.ps1"
+	& "$PSScriptRoot/watch-news.ps1"
 	exit 0 # success
 } catch {
         "⚠️ Error in line $($_.InvocationInfo.ScriptLineNumber): $($Error[0])"
