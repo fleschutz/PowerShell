@@ -73,8 +73,8 @@ try {
 		$temp = "$($celsius)°C"
 	} 
 
-	Write-Progress -completed "Done."
 	Write-Host "$status $cpuName ($($arch)$cores cores, $($deviceID)$($speed)$($socket)$temp)"
+	Write-Progress -completed "Done."
 	exit 0 # success
 } catch {
 	"⚠️ Error in line $($_.InvocationInfo.ScriptLineNumber): $($Error[0])"

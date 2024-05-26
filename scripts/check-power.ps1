@@ -50,7 +50,7 @@ try {
 		$powerScheme = $powerScheme -Replace "\)$",""
 		$reply += " · power scheme '$powerScheme'"
 	}
-	Write-Output $reply
+	Write-Host $reply
 	exit 0 # success
 } catch {
 	"⚠️ Error in line $($_.InvocationInfo.ScriptLineNumber): $($Error[0])"

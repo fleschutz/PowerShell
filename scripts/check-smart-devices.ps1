@@ -29,18 +29,18 @@ function Bytes2String([int64]$bytes) {
 }
 
 try {
-	Write-Progress "(1/3) Searching for smartmontools..."
+	#Write-Progress "(1/3) Searching for smartmontools..."
 	$result = (smartctl --version)
 	if ($lastExitCode -ne "0") { throw "Can't execute 'smartctl' - make sure smartmontools are installed" }
 
-	Write-Progress "(2/3) Scanning S.M.A.R.T devices..."
+	#Write-Progress "(2/3) Scanning S.M.A.R.T devices..."
 	if ($IsLinux) {
 		$devices = $(sudo smartctl --scan-open)
 	} else {
 		$devices = $(smartctl --scan-open)
 	}
 
-	Write-Progress "(3/3) Querying S.M.A.R.T devices..."
+	#Write-Progress "Querying S.M.A.R.T devices..."
 	foreach($device in $devices) {
 		$array = $device.split(" ")
 		$dev = $array[0]
@@ -89,7 +89,7 @@ try {
 		$firmwareVersion = $details.firmware_version
 		Write-Host "$status $capacity$modelName via $protocol ($temp, $hours, $powerOn, $selftest, v$firmwareVersion)"
 	}
-	Write-Progress -completed " "
+	#Write-Progress -completed "Done."
 	exit 0 # success
 } catch {
 	"⚠️ Error in line $($_.InvocationInfo.ScriptLineNumber): $($Error[0])"
