@@ -46,7 +46,7 @@
 
 <details><summary>How to get the Mega collection of PowerShell scripts?</summary>
  
-1. **When using Git, execute in a terminal window:** `> git clone https://github.com/fleschutz/PowerShell`
+1. **When using Git, execute in a terminal window:** `git clone https://github.com/fleschutz/PowerShell`
 2. **Otherwise, download and unzip it from:** https://github.com/fleschutz/PowerShell/archive/master.zip
 </details>
 
