@@ -93,6 +93,15 @@
 3. **More recommendations by NSA and cyber security centers in the U.S. (CISA), New Zealand (NZ NCSC), and the U.K. (NCSC-UK) can be found here:** https://media.defense.gov/2022/Jun/22/2003021689/-1/-1/1/CSI_KEEPING_POWERSHELL_SECURITY_MEASURES_TO_USE_AND_EMBRACE_20220622.PDF
  </details>
 
+ <details><summary>How to get the best PowerShell experience?</summary>
+
+1. **On Windows: install and use *Windows Terminal* with 50% transparency, font 'Fira Code' and no PowerShell banner message.**
+2. **Install and use *Visual Studio Code* with plugin 'PowerShell' to edit PowerShell scripts.**
+3. **Install the *Mega Collection of PowerShell scripts* and set the PATH environment variable to it.**
+4. **Use an own PowerShell profile, e.g. execute: './update-powershell-profile.ps1'**
+</details>
+
+
 <details><summary>Why do some scripts show gibberish characters?</summary>
   
 **Your current terminal application doesn't support Unicode characters used by those PowerShell scripts.**
@@ -134,11 +143,6 @@ Want to use the PowerShell scripts everywhere on the command-line? Then you need
 
 * **In general:** start powershell.exe with option '-nologo'.
 * **For Windows Terminal:** open Settings > Profiles > Windows PowerShell > Command line and add " -nologo".
-</details>
-
-<details><summary>What's recommended for the best PowerShell experience?</summary>
-
-1. Use *Windows Terminal* with 50% transparency, no PowerShell banner message, and font 'Fira Code'.
 </details>
 
 <details><summary>How to write good PowerShell scripts?</summary>
