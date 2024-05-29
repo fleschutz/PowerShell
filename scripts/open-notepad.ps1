@@ -2,9 +2,9 @@
 .SYNOPSIS
 	Launches the Notepad app
 .DESCRIPTION
-	This script launches the Notepad application.
+	This PowerShell script launches the Notepad application.
 .EXAMPLE
-	PS> ./open-note-pad
+	PS> ./open-notepad.ps1
 .LINK
 	https://github.com/fleschutz/PowerShell
 .NOTES
