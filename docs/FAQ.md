@@ -97,7 +97,7 @@
  <details><summary>How to get the best PowerShell experience?</summary>
 
 1. **Install *PowerShell* on all your Linux/Mac OS/Windows machines and configure it as default shell.**
-2. **On Windows: install and use *Windows Terminal* with 50% transparency, font 'Fira Code' and no PowerShell banner message.**
+2. **Install the free *Windows Terminal* on Windows with 50% transparency, font 'Fira Code' and no PowerShell banner message.**
 3. **Install the free *Visual Studio Code* with plugin 'PowerShell' to edit PowerShell scripts.**
 4. **Install the *Mega Collection of PowerShell scripts* and set the PATH environment variable to it.**
 5. **Use an own PowerShell profile, e.g. execute: './update-powershell-profile.ps1'**
