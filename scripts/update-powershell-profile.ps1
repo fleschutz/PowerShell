@@ -7,8 +7,8 @@
 	Specifies the path to the new profile ($PSScriptRoot/my-profile.ps1 by default)
 .EXAMPLE
 	PS> ./update-powershell-profile.ps1
-	⏳ (1/2) Query path to PowerShell profile 'CurrentUserCurrentHost'...
-	⏳ (2/2) Copy my-profile.ps1 to C:\Users\Markus\Documents\WindowsPowerShell\Microsoft.PowerShell_profile.ps1...
+	⏳ (1/2) Querying path to PowerShell profile 'CurrentUserCurrentHost'...
+	⏳ (2/2) Copying my-profile.ps1 to /home/Markus/.config/powershell/Microsoft.PowerShell_profile.ps1...
 	✔️ PowerShell profile updated - it get's active on next login.
 .LINK
 	https://github.com/fleschutz/PowerShell
@@ -19,11 +19,11 @@
 param([string]$path = "$PSScriptRoot/my-profile.ps1")
 
 try {
-	"⏳ (1/2) Query path to PowerShell profile 'CurrentUserCurrentHost'..."
+	"⏳ (1/2) Querying path to PowerShell profile 'CurrentUserCurrentHost'..."
 	$pathToProfile = $PROFILE.CurrentUserCurrentHost
 
 	$filename = (Get-Item "$path").Name
-	"⏳ (2/2) Copy $filename to $pathToProfile..."
+	"⏳ (2/2) Copying $filename to $pathToProfile..."
 	$null = New-Item -Path $pathToProfile -ItemType "file" -Force
 	Copy-Item "$path" "$pathToProfile" -force
 
