@@ -136,6 +136,11 @@ Want to use the PowerShell scripts everywhere on the command-line? Then you need
 * **For Windows Terminal:** open Settings > Profiles > Windows PowerShell > Command line and add " -nologo".
 </details>
 
+<details><summary>What's recommended for the best PowerShell experience?</summary>
+
+1. Use *Windows Terminal* with 50% transparency, no PowerShell banner message, and font 'Fira Code'.
+</details>
+
 <details><summary>How to write good PowerShell scripts?</summary>
  
 **Good PowerShell scripts are both user-friendly and platform-independent. As a starting point I recommend the following:**
