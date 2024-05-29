@@ -3,8 +3,7 @@
 
 <details><summary>What is PowerShell?</summary>
  
-**PowerShell is a task automation and configuration management framework from Microsoft, consisting of a command-line shell and associated scripting language.**
- 
+**PowerShell is a cross-platform task automation solution made up of a command-line shell, a scripting language, and a configuration management framework. PowerShell runs on Linux, Mac OS, and Windows.**
 </details>
 
 <details><summary>Why use PowerShell?</summary>
