@@ -88,19 +88,19 @@
 
 <details><summary>What about PowerShell security?</summary>
 
-1. **Do not execute scripts from untrusted sources. We also recommend to check the code before use.**
-2. **Prefer SSH Remoting instead of PowerShell Remoting**
-3. **More recommendations by NSA and cyber security centers in the U.S. (CISA), New Zealand (NZ NCSC), and the U.K. (NCSC-UK) can be found here:** https://media.defense.gov/2022/Jun/22/2003021689/-1/-1/1/CSI_KEEPING_POWERSHELL_SECURITY_MEASURES_TO_USE_AND_EMBRACE_20220622.PDF
+1. **Do NOT execute scripts from untrusted sources!**
+2. **Check the script content for strange things (that's impossible for executables).**
+3. **Prefer SSH Remoting instead of PowerShell Remoting**
+4. **More recommendations by NSA and cyber security centers in the U.S. (CISA), New Zealand (NZ NCSC), and the U.K. (NCSC-UK) can be found here:** https://media.defense.gov/2022/Jun/22/2003021689/-1/-1/1/CSI_KEEPING_POWERSHELL_SECURITY_MEASURES_TO_USE_AND_EMBRACE_20220622.PDF
  </details>
 
  <details><summary>How to get the best PowerShell experience?</summary>
 
-1. **Install *PowerShell* on all your Linux/Mac OS/Windows machines.**
-2. **Configure *PowerShell* as default shell on all your machines.**
-3. **On Windows: install and use *Windows Terminal* with 50% transparency, font 'Fira Code' and no PowerShell banner message.**
-4. **Install and use *Visual Studio Code* with plugin 'PowerShell' to edit PowerShell scripts.**
-5. **Install the *Mega Collection of PowerShell scripts* and set the PATH environment variable to it.**
-6. **Use an own PowerShell profile, e.g. execute: './update-powershell-profile.ps1'**
+1. **Install *PowerShell* on all your Linux/Mac OS/Windows machines and configure it as default shell.**
+2. **On Windows: install and use *Windows Terminal* with 50% transparency, font 'Fira Code' and no PowerShell banner message.**
+3. **Install and use *Visual Studio Code* with plugin 'PowerShell' to edit PowerShell scripts.**
+4. **Install the *Mega Collection of PowerShell scripts* and set the PATH environment variable to it.**
+5. **Use an own PowerShell profile, e.g. execute: './update-powershell-profile.ps1'**
 </details>
 
 
