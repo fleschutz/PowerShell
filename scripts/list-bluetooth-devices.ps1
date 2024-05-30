@@ -2,13 +2,13 @@
 .SYNOPSIS
 	Lists Bluetooth devices
 .DESCRIPTION
-	This PowerShell script lists all Bluetooth devices connected to the computer.
+	This PowerShell script lists all Bluetooth devices connected to the local computer.
 .EXAMPLE
 	PS> ./list-bluetooth-devices.ps1
 
-	Status     Class           FriendlyName                                    InstanceId
-	------     -----           ------------                                    ----------
-	OK         Bluetooth       Realtek Bluetooth 5.3 Adapter                   USB\VID_...
+	FriendlyName                 Status  InstanceId
+	------------                 ------  ----------
+	G3 Headset                   OK      BTHENUM\DEV_FC58FA7A51C6\8&152049BE&0&BLUETOOTHDEVICE_FC58FA7A51C6
 	...
 .LINK
 	https://github.com/fleschutz/PowerShell
@@ -17,7 +17,7 @@
 #>
 
 try {
-	Get-PnpDevice | Where-Object {$_.Class -eq "Bluetooth"}
+	Get-PnpDevice | Where-Object {$_.Class -eq "Bluetooth"} | Format-Table -property FriendlyName,Status,InstanceId
 	exit 0 # success
 } catch {
 	"⚠️ Error in line $($_.InvocationInfo.ScriptLineNumber): $($Error[0])"
