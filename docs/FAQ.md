@@ -30,6 +30,9 @@
  $ ln -s /snap/bin/pwsh /usr/bin/pwsh
 ```
 2. **Otherwise, visit:** https://github.com/PowerShell/PowerShell **and scroll down to: *Get PowerShell*.**
+3. **Configure PowerShell as your default shell?**
+3.1 Check that the file **/etc/shells** contains the **/usr/bin/pwsh** line, otherwise add it.**
+3.2 Now execute: **`chsh -s /usr/bin/pwsh USERNAME`** (replace USERNAME by your user name).
 </details>
 
 <details><summary>How to install PowerShell on MacOS?</summary>
@@ -105,12 +108,6 @@
 **Your current terminal application doesn't support Unicode characters used by those PowerShell scripts.**
 
 **Use a modern one such as *Windows Terminal*, please.**
-</details>
-
-<details><summary>How to configure PowerShell as my default shell on Linux?</summary>
-  
-1. Make sure PowerShell is installed, then **execute: `chsh -s /usr/bin/pwsh USERNAME`** (replace USERNAME by your user name).
-2. In case you experience an "invalid shell" error, **add the line "/usr/bin/pwsh" to /etc/shells.**
 </details>
 
 <details><summary>How to set a custom PowerShell profile?</summary>
