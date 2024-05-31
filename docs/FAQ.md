@@ -19,7 +19,7 @@
 
 * **Please find tutorials at:** https://www.guru99.com/powershell-tutorial.html
 * **See a cheat sheet at:** [PowerShell/Docs/cheat-sheet.md](cheat-sheet.md)
-* **The official PowerShell documentation can be found here:** https://docs.microsoft.com/en-us/powershell/
+* **Visit the official PowerShell documentation at:** https://docs.microsoft.com/en-us/powershell/
 </details>
 
 <details><summary>How to install PowerShell on Linux?</summary>
