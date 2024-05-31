@@ -17,7 +17,7 @@
 #>
 
 try {
-	Get-PnpDevice | Where-Object {$_.Class -eq "Bluetooth"} | Format-Table -property FriendlyName,Status,InstanceId
+	Get-PnpDevice | Where-Object {$_.Class -eq "Bluetooth"} | Sort-Object -property FriendlyName | Format-Table -property FriendlyName,Status,InstanceId
 	exit 0 # success
 } catch {
 	"⚠️ Error in line $($_.InvocationInfo.ScriptLineNumber): $($Error[0])"

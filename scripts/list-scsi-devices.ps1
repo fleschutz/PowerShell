@@ -17,7 +17,7 @@
 #>
 
 try {
-	Get-PnpDevice | Where-Object {$_.Class -like "SCSI*"} | Format-Table -property FriendlyName,Status,InstanceId
+	Get-PnpDevice | Where-Object {$_.Class -like "SCSI*"} | Sort-Object -property FriendlyName | Format-Table -property FriendlyName,Status,InstanceId
 	exit 0 # success
 } catch {
 	"⚠️ Error in line $($_.InvocationInfo.ScriptLineNumber): $($Error[0])"
