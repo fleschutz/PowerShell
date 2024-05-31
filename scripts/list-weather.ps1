@@ -111,7 +111,7 @@ try {
 		$desc = GetDescription $hourly.weatherDesc.value.trim()
 		if ($hour -eq 0) {
 			if ($day -eq 0) {
-				Write-Host "TODAY  🌡°C  ☂️mm  💧  💨km/h  ☀️UV  ☁️   👁km   at $area ($region, $country)" -foregroundColor green
+				Write-Host "TODAY  🌡°C  ☂️mm   💧  💨km/h ☀️UV   ☁️   👁km   at $area ($region, $country)" -foregroundColor green
 			} elseif ($day -eq 1) {
 				$date = (Get-Date).AddDays(1)
 				[string]$dayOfWeek = $date.DayOfWeek
