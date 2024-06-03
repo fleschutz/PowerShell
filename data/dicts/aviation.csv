@@ -327,6 +327,7 @@ IGLR,Integrated Ground Lighting and Radar
 ILS,Instrument Landing System
 ISA,International Standard Atmosphere
 IMC,Instrument Meteorological Conditions
+JATO,Jet Assisted Take Off
 JTAC,Joint Terminal Attack Control
 KAT,Kaufbeuren ATM Training (DFS subcompany)
 KCAS,Calibrated AirSpeed in Knots
@@ -401,6 +402,7 @@ RADNET,Radar Network
 RAIM,Receiver Autonomous Integrity Monitoring (GPS)
 RAPCON,Radar Approach Control
 RAT,Reliability Acceptance Test (see also FAT and SAT)
+RATO,Rocket Assisted Take Off
 RAM,Royal Air Maroc
 RAP,Recognised Air Picture
 RASP,Recognised Air and Surveillance Picture
@@ -619,3 +621,4 @@ WTC,Wake Turbulence Category
 WTWS,Wake Turbulence Warning System
 WX,Weather
 WXR,Weather Radar Transceiver
+ZELL,Zero Length Launch
