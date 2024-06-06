@@ -287,74 +287,75 @@ Mega Collection of PowerShell Scripts
 🛒 Various PowerShell Scripts 
 ------------------------------
 
-| Script                                               | Description                                                                                         |
-| ---------------------------------------------------- | ------------------------------------------------------------------------------------------------------ |
-| [add-memo.ps1](scripts/add-memo.ps1)                 | Adds the given memo text to $HOME/Memos.csv.                        [Read more...](docs/add-memo.md)                |
-| [check-ipv4-address.ps1](scripts/check-ipv4-address.ps1)| Checks the given IPv4 address for validity.                       [Read more...](docs/check-ipv4-address.md)      |
-| [check-ipv6-address.ps1](scripts/check-ipv6-address.ps1)| Checks the given IPv6 address for validity.                       [Read more...](docs/check-ipv6-address.md)      |
-| [check-mac-address.ps1](scripts/check-mac-address.ps1)| Checks the given MAC address for validity.                          [Read more...](docs/check-mac-address.md)       |
-| [check-subnet-mask.ps1](scripts/check-subnet-mask.ps1)| Checks the given subnet mask for validity.                          [Read more...](docs/check-subnet-mask.md)       |
-| [check-weather.ps1](scripts/check-weather.ps1)       | Checks the current weather for critical values.                      [Read more...](docs/check-weather.md)           |
-| [display-time.ps1](scripts/display-time.ps1)         | Displays the current time for 10 seconds by default.                 [Read more...](docs/display-time.md)            |
-| [list-anagrams.ps1](scripts/list-anagrams.ps1)       | Lists all anagrams of the given word.                                [Read more...](docs/list-anagrams.md)           |
-| [list-city-weather.ps1](scripts/list-city-weather.ps1)| Lists the current weather of cities worldwide (west to east).       [Read more...](docs/list-city-weather.md)       |
-| [list-countries.ps1](scripts/list-countries.ps1)     | Lists details of all countries.                                      [Read more...](docs/list-countries.md)          |
-| [list-credits.ps1](scripts/list-credits.ps1)         | Shows the credits.                                                   [Read more...](docs/list-credits.md)            |
-| [list-crypto-rates.ps1](scripts/list-crypto-rates.ps1)| Lists the current crypto exchange rates.                            [Read more...](docs/list-crypto-rates.md)       |
-| [list-environment-variables.ps1](scripts/list-environment-variables.ps1)| Lists all environment variables.                  [Read more...](docs/list-environment-variables.md)|
-| [list-emojis.ps1](scripts/list-emojis.ps1)           | Lists the emojis of Unicode 13.0.                                    [Read more...](docs/list-emojis.md)             |
-| [list-fritzbox-calls.ps1](scripts/list-fritzbox-calls.ps1)| Lists the FRITZ!Box calls.                                      [Read more...](docs/list-fritzbox-calls.md)     |
-| [list-fritzbox-devices.ps1](scripts/list-fritzbox-devices.ps1)| Lists FRITZ!Box's known devices.                            [Read more...](docs/list-fritzbox-devices.md)   |
-| [list-earthquakes.ps1](scripts/list-earthquakes.ps1) | Lists earthquakes with magnitude >= 6.0 for the last 30 days.        [Read more...](docs/list-earthquakes.md)        |
-| [list-exchange-rates.ps1](scripts/list-exchange-rates.ps1)| Lists the current exchange rates for the given currency.        [Read more...](docs/list-exchange-rates.md)     |
-| [list-memos.ps1](scripts/list-memos.ps1)             | Lists the memos at $HOME/Memos.csv.                                  [Read more...](docs/list-memos.md)              |
-| [list-mysql-tables.ps1](scripts/list-mysql-tables.ps1)| Lists the MySQL server tables.                                      [Read more...](docs/list-mysql-tables.md)       |
-| [list-news.ps1](scripts/list-news.ps1)               | Lists the latest news.                                               [Read more...](docs/list-news.md)               |
-| [list-os-releases.ps1](scripts/list-os-releases.ps1) | Lists operating system releases and download URL.                    [Read more...](docs/list-os-releases.md)        |
-| [list-os-updates.ps1](scripts/list-os-updates.ps1)   | Lists operating system updates.                                      [Read more...](docs/list-os-updates.md)         |
-| [list-passwords.ps1](scripts/list-passwords.ps1)     | Prints a list of random passwords.                                   [Read more...](docs/list-passwords.md)          |
-| [list-pins.ps1](scripts/list-pins.ps1)               | Prints a list of random PIN's.                                       [Read more...](docs/list-pins.md)               |
-| [list-sql-tables.ps1](scripts/list-sql-tables.ps1)   | Lists the SQL server tables.                                         [Read more...](docs/list-sql-tables.md)         |
-| [list-tiobe-index.ps1](scripts/list-tiobe-index.ps1) | Lists the TIOBE index of top programming languages.                  [Read more...](docs/list-tiobe-index.md)        |
-| [list-weather.ps1](scripts/list-weather.ps1)         | Lists the hourly weather.                                            [Read more...](docs/list-weather.md)            |
-| [locate-city.ps1](scripts/locate-city.ps1)           | Prints the geographic location of the given city.                    [Read more...](docs/locate-city.md)             |
-| [locate-ipaddress.ps1](scripts/locate-ipaddress.ps1) | Prints the geographic location of the given IP address.              [Read more...](docs/locate-ipaddress.md)        |
-| [locate-zip-code.ps1](scripts/locate-zip-code.ps1)   | Prints the geographic location of the given zip-code.                [Read more...](docs/locate-zip-code.md)         |
-| [moon.ps1](scripts/moon.ps1)                         | Prints the current moon phase.                                       [Read more...](docs/moon.md)                    |
-| [new-qrcode.ps1](scripts/new-qrcode.ps1)             | Generates a new QR code image file.                                  [Read more...](docs/new-qrcode.md)              |
-| [reboot-fritzbox.ps1](scripts/reboot-fritzbox.ps1)   | Reboots the FRITZ!box device.                                        [Read more...](docs/reboot-fritzbox.md)         |
-| [scan-ports.ps1](scripts/scan-ports.ps1)             | Scans the network for open/closed ports.                             [Read more...](docs/scan-ports.md)              |
-| [send-email.ps1](scripts/send-email.ps1)             | Sends an email message.                                              [Read more...](docs/send-email.md)              |
-| [send-tcp.ps1](scripts/send-udp.ps1)                 | Sends a TCP message to the given IP address and port.                [Read more...](docs/send-tcp.md)                |
-| [send-udp.ps1](scripts/send-udp.ps1)                 | Sends a UDP datagram message to the given IP address and port.       [Read more...](docs/send-udp.md)                |
-| [set-timer.ps1](scripts/set-timer.ps1)               | Sets a timer for a countdown.                                        [Read more...](docs/set-timer.md)               |
-| [simulate-presence.ps1](scripts/simulate-presence.ps1)| Simulates the human presence against burglars.                      [Read more...](docs/simulate-presence.md)       |
-| [start-calibre-server.ps1](scripts/start-calibre-server.ps1)| Starts a local Calibre server.                                [Read more...](docs/start-calibre-server.md)    |
-| [start-ipfs-server.ps1](scripts/start-ipfs-server.ps1)| Starts a local IPFS server.                                         [Read more...](docs/start-ipfs-server.md)       |
-| [switch-shelly1.ps1](scripts/switch-shelly1.ps1)     | Switches a Shelly1 device in the local network.                      [Read more...](docs/switch-shelly1.md)          |
-| [translate-file.ps1](scripts/translate-file.ps1)     | Translates the given text file into other languages.                 [Read more...](docs/translate-file.md)          |
-| [translate-files.ps1](scripts/translate-files.ps1)   | Translates the given text files into any supported language.         [Read more...](docs/translate-files.md)         |
-| [translate-text.ps1](scripts/translate-text.ps1)     | Translates the given text in English into other languages.           [Read more...](docs/translate-text.md)          |
-| [weather.ps1](scripts/weather.ps1)                   | Prints the current weather forecast.                                 [Read more...](docs/weather.md)                 |
-| [weather-report.ps1](scripts/weather-report.ps1)     | Prints the local weather report.                                     [Read more...](docs/weather-report.md)          |
-| [what-is.ps1](scripts/what-is.ps1)                   | Prints a description of the given abbreviation.                      [Read more...](docs/what-is.md)                 |
-| [write-animated.ps1](scripts/write-animated.ps1)     | Writes animated text.                                                [Read more...](docs/write-animated.md)          |
-| [write-big.ps1](scripts/write-big.ps1)               | Writes the given text in big letters.                                [Read more...](docs/write-big.md)               |
-| [write-blue.ps1](scripts/write-blue.ps1)             | Writes the given text in a blue foreground color.                    [Read more...](docs/write-blue.md)              |
-| [write-braille.ps1](scripts/write-braille.ps1)       | Writes the given text in Braille.                                    [Read more...](docs/write-braille.md)           |
-| [write-calendar.ps1](scripts/write-calendar.ps1)     | Writes the calendar (month of year).                                 [Read more...](docs/write-calendar.md)          |
-| [write-green.ps1](scripts/write-green.ps1)           | Writes the given text in a green foreground color.                   [Read more...](docs/write-green.md)             |
-| [write-joke.ps1](scripts/write-joke.ps1)             | Writes a random Juck Norris joke.                                    [Read more...](docs/write-joke.md)              |
-| [write-lowercase.ps1](scripts/write-lowercase.ps1)   | Writes the given text in lowercase letters.                          [Read more...](docs/write-lowercase.md)         |
-| [write-marquee.ps1](scripts/write-marquee.ps1)       | Writes the given text as marquee.                                    [Read more...](docs/write-marquee.md)           |
-| [write-morse-code.ps1](scripts/write-morse-code.ps1) | Writes the given text in Morse code.                                 [Read more...](docs/write-morse-code.md)        |
-| [write-motd.ps1](scripts/write-motd.ps1)             | Writes the message of the day (MOTD).                                [Read more...](docs/write-motd.md)              |
-| [write-quote.ps1](scripts/write-quote.ps1)           | Writes a random quote.                                               [Read more...](docs/write-quote.md)             |
-| [write-red.ps1](scripts/write-red.ps1)               | Writes the given text in a red foreground color.                     [Read more...](docs/write-red.md)               |
-| [write-rot13.ps1](scripts/write-rot13.ps1)           | Encodes or decodes the given text with ROT13.                        [Read more...](docs/write-rot13.md)             |
-| [write-typewriter.ps1](scripts/write-typewriter.ps1) | Writes the given text with the typewriter effect.                    [Read more...](docs/write-typewriter.md)        |
-| [write-uppercase.ps1](scripts/write-uppercase.ps1)   | Writes the given text in uppercase letters.                          [Read more...](docs/write-uppercase.md)         |
-| [write-vertical.ps1](scripts/write-vertical.ps1)     | Writes the given text in vertical direction.                         [Read more...](docs/write-vertical.md)          |
+| Script                                                                                    | Description                                                                                                                     |
+|-------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------|
+| [add-memo.ps1](scripts/add-memo.ps1)                                                      | Adds the given memo text to $HOME/Memos.csv.                        [Read more...](docs/add-memo.md)                            |
+| [check-ipv4-address.ps1](scripts/check-ipv4-address.ps1)                                  | Checks the given IPv4 address for validity.                       [Read more...](docs/check-ipv4-address.md)                    |
+| [check-ipv6-address.ps1](scripts/check-ipv6-address.ps1)                                  | Checks the given IPv6 address for validity.                       [Read more...](docs/check-ipv6-address.md)                    |
+| [check-mac-address.ps1](scripts/check-mac-address.ps1)                                    | Checks the given MAC address for validity.                          [Read more...](docs/check-mac-address.md)                   |
+| [check-subnet-mask.ps1](scripts/check-subnet-mask.ps1)                                    | Checks the given subnet mask for validity.                          [Read more...](docs/check-subnet-mask.md)                   |
+| [check-weather.ps1](scripts/check-weather.ps1)                                            | Checks the current weather for critical values.                      [Read more...](docs/check-weather.md)                      |
+| [display-time.ps1](scripts/display-time.ps1)                                              | Displays the current time for 10 seconds by default.                 [Read more...](docs/display-time.md)                       |
+| [list-anagrams.ps1](scripts/list-anagrams.ps1)                                            | Lists all anagrams of the given word.                                [Read more...](docs/list-anagrams.md)                      |
+| [list-city-weather.ps1](scripts/list-city-weather.ps1)                                    | Lists the current weather of cities worldwide (west to east).       [Read more...](docs/list-city-weather.md)                   |
+| [list-countries.ps1](scripts/list-countries.ps1)                                          | Lists details of all countries.                                      [Read more...](docs/list-countries.md)                     |
+| [list-credits.ps1](scripts/list-credits.ps1)                                              | Shows the credits.                                                   [Read more...](docs/list-credits.md)                       |
+| [list-crypto-rates.ps1](scripts/list-crypto-rates.ps1)                                    | Lists the current crypto exchange rates.                            [Read more...](docs/list-crypto-rates.md)                   |
+| [list-environment-variables.ps1](scripts/list-environment-variables.ps1)                  | Lists all environment variables.                  [Read more...](docs/list-environment-variables.md)                            |
+| [list-emojis.ps1](scripts/list-emojis.ps1)                                                | Lists the emojis of Unicode 13.0.                                    [Read more...](docs/list-emojis.md)                        |
+| [list-fritzbox-calls.ps1](scripts/list-fritzbox-calls.ps1)                                | Lists the FRITZ!Box calls.                                      [Read more...](docs/list-fritzbox-calls.md)                     |
+| [list-fritzbox-devices.ps1](scripts/list-fritzbox-devices.ps1)                            | Lists FRITZ!Box's known devices.                            [Read more...](docs/list-fritzbox-devices.md)                       |
+| [list-earthquakes.ps1](scripts/list-earthquakes.ps1)                                      | Lists earthquakes with magnitude >= 6.0 for the last 30 days.        [Read more...](docs/list-earthquakes.md)                   |
+| [list-exchange-rates.ps1](scripts/list-exchange-rates.ps1)                                | Lists the current exchange rates for the given currency.        [Read more...](docs/list-exchange-rates.md)                     |
+| [list-memos.ps1](scripts/list-memos.ps1)                                                  | Lists the memos at $HOME/Memos.csv.                                  [Read more...](docs/list-memos.md)                         |
+| [list-mysql-tables.ps1](scripts/list-mysql-tables.ps1)                                    | Lists the MySQL server tables.                                      [Read more...](docs/list-mysql-tables.md)                   |
+| [list-news.ps1](scripts/list-news.ps1)                                                    | Lists the latest news.                                               [Read more...](docs/list-news.md)                          |
+| [list-os-releases.ps1](scripts/list-os-releases.ps1)                                      | Lists operating system releases and download URL.                    [Read more...](docs/list-os-releases.md)                   |
+| [list-os-updates.ps1](scripts/list-os-updates.ps1)                                        | Lists operating system updates.                                      [Read more...](docs/list-os-updates.md)                    |
+| [list-passwords.ps1](scripts/list-passwords.ps1)                                          | Prints a list of random passwords.                                   [Read more...](docs/list-passwords.md)                     |
+| [list-pins.ps1](scripts/list-pins.ps1)                                                    | Prints a list of random PIN's.                                       [Read more...](docs/list-pins.md)                          |
+| [list-sql-tables.ps1](scripts/list-sql-tables.ps1)                                        | Lists the SQL server tables.                                         [Read more...](docs/list-sql-tables.md)                    |
+| [list-tiobe-index.ps1](scripts/list-tiobe-index.ps1)                                      | Lists the TIOBE index of top programming languages.                  [Read more...](docs/list-tiobe-index.md)                   |
+| [list-weather.ps1](scripts/list-weather.ps1)                                              | Lists the hourly weather.                                            [Read more...](docs/list-weather.md)                       |
+| [locate-city.ps1](scripts/locate-city.ps1)                                                | Prints the geographic location of the given city.                    [Read more...](docs/locate-city.md)                        |
+| [locate-ipaddress.ps1](scripts/locate-ipaddress.ps1)                                      | Prints the geographic location of the given IP address.              [Read more...](docs/locate-ipaddress.md)                   |
+| [locate-zip-code.ps1](scripts/locate-zip-code.ps1)                                        | Prints the geographic location of the given zip-code.                [Read more...](docs/locate-zip-code.md)                    |
+| [moon.ps1](scripts/moon.ps1)                                                              | Prints the current moon phase.                                       [Read more...](docs/moon.md)                               |
+| [new-qrcode.ps1](scripts/new-qrcode.ps1)                                                  | Generates a new QR code image file.                                  [Read more...](docs/new-qrcode.md)                         |
+| [reboot-fritzbox.ps1](scripts/reboot-fritzbox.ps1)                                        | Reboots the FRITZ!box device.                                        [Read more...](docs/reboot-fritzbox.md)                    |
+| [scan-ports.ps1](scripts/scan-ports.ps1)                                                  | Scans the network for open/closed ports.                             [Read more...](docs/scan-ports.md)                         |
+| [send-email.ps1](scripts/send-email.ps1)                                                  | Sends an email message.                                              [Read more...](docs/send-email.md)                         |
+| [send-tcp.ps1](scripts/send-udp.ps1)                                                      | Sends a TCP message to the given IP address and port.                [Read more...](docs/send-tcp.md)                           |
+| [send-udp.ps1](scripts/send-udp.ps1)                                                      | Sends a UDP datagram message to the given IP address and port.       [Read more...](docs/send-udp.md)                           |
+| [set-timer.ps1](scripts/set-timer.ps1)                                                    | Sets a timer for a countdown.                                        [Read more...](docs/set-timer.md)                          |
+| [simulate-presence.ps1](scripts/simulate-presence.ps1)                                    | Simulates the human presence against burglars.                      [Read more...](docs/simulate-presence.md)                   |
+| [start-calibre-server.ps1](scripts/start-calibre-server.ps1)                              | Starts a local Calibre server.                                [Read more...](docs/start-calibre-server.md)                      |
+| [start-ipfs-server.ps1](scripts/start-ipfs-server.ps1)                                    | Starts a local IPFS server.                                         [Read more...](docs/start-ipfs-server.md)                   |
+| [switch-shelly1.ps1](scripts/switch-shelly1.ps1)                                          | Switches a Shelly1 device in the local network.                      [Read more...](docs/switch-shelly1.md)                     |
+| [translate-file.ps1](scripts/translate-file.ps1)                                          | Translates the given text file into other languages.                 [Read more...](docs/translate-file.md)                     |
+| [translate-files.ps1](scripts/translate-files.ps1)                                        | Translates the given text files into any supported language.         [Read more...](docs/translate-files.md)                    |
+| [translate-text.ps1](scripts/translate-text.ps1)                                          | Translates the given text in English into other languages.           [Read more...](docs/translate-text.md)                     |
+| [weather.ps1](scripts/weather.ps1)                                                        | Prints the current weather forecast.                                 [Read more...](docs/weather.md)                            |
+| [weather-report.ps1](scripts/weather-report.ps1)                                          | Prints the local weather report.                                     [Read more...](docs/weather-report.md)                     |
+| [what-is.ps1](scripts/what-is.ps1)                                                        | Prints a description of the given abbreviation.                      [Read more...](docs/what-is.md)                            |
+| [write-animated.ps1](scripts/write-animated.ps1)                                          | Writes animated text.                                                [Read more...](docs/write-animated.md)                     |
+| [write-big.ps1](scripts/write-big.ps1)                                                    | Writes the given text in big letters.                                [Read more...](docs/write-big.md)                          |
+| [write-blue.ps1](scripts/write-blue.ps1)                                                  | Writes the given text in a blue foreground color.                    [Read more...](docs/write-blue.md)                         |
+| [write-braille.ps1](scripts/write-braille.ps1)                                            | Writes the given text in Braille.                                    [Read more...](docs/write-braille.md)                      |
+| [write-calendar.ps1](scripts/write-calendar.ps1)                                          | Writes the calendar (month of year).                                 [Read more...](docs/write-calendar.md)                     |
+| [write-green.ps1](scripts/write-green.ps1)                                                | Writes the given text in a green foreground color.                   [Read more...](docs/write-green.md)                        |
+| [write-joke.ps1](scripts/write-joke.ps1)                                                  | Writes a random Juck Norris joke.                                    [Read more...](docs/write-joke.md)                         |
+| [write-lowercase.ps1](scripts/write-lowercase.ps1)                                        | Writes the given text in lowercase letters.                          [Read more...](docs/write-lowercase.md)                    |
+| [write-marquee.ps1](scripts/write-marquee.ps1)                                            | Writes the given text as marquee.                                    [Read more...](docs/write-marquee.md)                      |
+| [write-morse-code.ps1](scripts/write-morse-code.ps1)                                      | Writes the given text in Morse code.                                 [Read more...](docs/write-morse-code.md)                   |
+| [write-motd.ps1](scripts/write-motd.ps1)                                                  | Writes the message of the day (MOTD).                                [Read more...](docs/write-motd.md)                         |
+| [write-quote.ps1](scripts/write-quote.ps1)                                                | Writes a random quote.                                               [Read more...](docs/write-quote.md)                        |
+| [write-red.ps1](scripts/write-red.ps1)                                                    | Writes the given text in a red foreground color.                     [Read more...](docs/write-red.md)                          |
+| [write-rot13.ps1](scripts/write-rot13.ps1)                                                | Encodes or decodes the given text with ROT13.                        [Read more...](docs/write-rot13.md)                        |
+| [write-typewriter.ps1](scripts/write-typewriter.ps1)                                      | Writes the given text with the typewriter effect.                    [Read more...](docs/write-typewriter.md)                   |
+| [write-uppercase.ps1](scripts/write-uppercase.ps1)                                        | Writes the given text in uppercase letters.                          [Read more...](docs/write-uppercase.md)                    |
+| [write-vertical.ps1](scripts/write-vertical.ps1)                                          | Writes the given text in vertical direction.                         [Read more...](docs/write-vertical.md)                     |
+| [show-notification-motivation-quote.ps1](scripts/show-notification-motivation-quote.ps1)  | Show notification with random cat picture and motivation quote.      [Read more...](docs/show-notification-motivation-quote.md) |
 
 📧 Feedback
 ------------
