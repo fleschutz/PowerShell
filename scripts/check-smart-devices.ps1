@@ -5,7 +5,7 @@
 	This PowerShell script queries the status of the SSD/HDD devices (supporting S.M.A.R.T.) and prints it.
 .EXAMPLE
 	PS> ./check-smart-devices.ps1
-	✅ 1TB Samsung SSD 970 EVO via NVMe (37°C, 2388 hours, 289x on/off, v2B2QEXE7, selftest passed)
+	✅ 1TB Samsung SSD 970 EVO via NVMe (37°C, 2388 hours, 289x on/off, v2B2QEXE7): selftest OK
 .LINK
 	https://github.com/fleschutz/PowerShell
 .NOTES
@@ -81,13 +81,13 @@ try {
 			$powerOn = "$($details.power_cycle_count)x on/off"
 		}	
 		if ($details.smart_status.passed) {
-			$selftest = "selftest passed"
+			$selftest = "selftest OK"
 		} else {
 			$selftest = "selftest FAILED"
 			$status = "⚠️"
 		}
 		$firmwareVersion = $details.firmware_version
-		Write-Host "$status $capacity$modelName via $protocol ($temp, $hours, $powerOn, $selftest, v$firmwareVersion)"
+		Write-Host "$status $capacity$modelName via $protocol ($temp, $hours, $powerOn, v$firmwareVersion): $selftest"
 	}
 	#Write-Progress -completed "Done."
 	exit 0 # success

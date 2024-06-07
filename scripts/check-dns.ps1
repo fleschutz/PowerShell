@@ -13,7 +13,7 @@
 #>
  
 try {
-	Write-Progress "Measuring DNS resolution..."
+	#Write-Progress "Measuring DNS resolution..."
 	$table = Import-CSV "$PSScriptRoot/../data/popular-domains.csv"
 	$numRows = $table.Length
 
@@ -25,7 +25,7 @@ try {
 	}
 	[float]$elapsed = $stopWatch.Elapsed.TotalSeconds
 
-	Write-Progress -completed " "
+	#Write-Progress -completed "Measuring DNS resolution..."
 	$average = [math]::round($numRows / $elapsed, 1)
 	if ($average -lt 10.0) {
 		Write-Host "⚠️ DNS resolves $average domains per second only"
