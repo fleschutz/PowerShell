@@ -37,8 +37,9 @@ try {
 	if (-not(Test-Path "$path" -pathType Container)) { throw "The path to 📂$path doesn't exist (yet)" }
 	$path = Resolve-Path "$path"
 	Set-Location "$path"
-	Write-Host "📂$path • on Git branch: " -noNewline
+	Write-Host "📂$path"
 
+	Write-Host "🌵Git branch " -noNewline
 	& git status --short --branch --show-stash
 	exit 0 # success
 } catch {
