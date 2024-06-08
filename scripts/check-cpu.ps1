@@ -42,7 +42,7 @@ function GetCPUTemperature {
 }
 
 try {
-	Write-Progress "Querying CPU status...     "
+	Write-Progress "Querying CPU status..."
 	$status = "✅"
 	$arch = GetCPUArchitecture
 	if ($IsLinux) {
@@ -57,24 +57,24 @@ try {
 		$arch = "$arch, "
 		$deviceID = "$($details.DeviceID), "
 		$speed = "$($details.MaxClockSpeed)MHz, "
-		$socket = "$($details.SocketDesignation) socket, "
+		$socket = "$($details.SocketDesignation) socket"
 	}
 	$cores = [System.Environment]::ProcessorCount
 	$celsius = GetCPUTemperature
 	if ($celsius -eq 99999.9) {
 		$temp = "no temp"
 	} elseif ($celsius -gt 50) {
-		$temp = "$($celsius)°C"
+		$temp = "$($celsius)°C HOT"
 		$status = "⚠️"
 	} elseif ($celsius -lt 0) {
-		$temp = "$($celsius)°C"
+		$temp = "$($celsius)°C COLD"
 		$status = "⚠️"
 	} else {
-		$temp = "$($celsius)°C"
+		$temp = "$($celsius)°C OK"
 	} 
 
-	Write-Host "$status $cpuName ($($arch)$cores cores, $($deviceID)$($speed)$($socket)$temp)"
 	Write-Progress -completed "Done."
+	Write-Host "$status $cpuName ($($arch)$cores cores, $($deviceID)$($speed)$($socket)) - $temp"
 	exit 0 # success
 } catch {
 	"⚠️ Error in line $($_.InvocationInfo.ScriptLineNumber): $($Error[0])"
