@@ -9,10 +9,10 @@
 .EXAMPLE
 	PS> ./clean-repo.ps1 C:\Repos\rust
 	⏳ (1/4) Searching for Git executable...           git version 2.45.0
-	⏳ (2/4) Checking local repository...        	  📂C:\Repos\rust
+	⏳ (2/4) Checking local repository...        	  C:\Repos\rust
 	⏳ (3/4) Removing untracked files in repository...
 	⏳ (4/4) Removing untracked files in submodules...
-	✔️ Cleaned the 📂rust repository in 1s.
+	✔️ Cleaned up repository 📂rust in 2s.
 .LINK
 	https://github.com/fleschutz/PowerShell
 .NOTES
@@ -28,7 +28,7 @@ try {
 	& git --version
 	if ($lastExitCode -ne "0") { throw "Can't execute 'git' - make sure Git is installed and available" }
 
-	"⏳ (2/4) Checking local repository...             📂$path"
+	"⏳ (2/4) Checking local repository...             $path"
 	if (-not(Test-Path "$path" -pathType container)) { throw "Can't access repo folder '$path' - maybe a typo or missing folder permissions?" }
 	$repoName = (Get-Item "$path").Name
 
@@ -45,7 +45,7 @@ try {
 	if ($lastExitCode -ne "0") { throw "'git clean' in the submodules failed with exit code $lastExitCode" }
 
 	[int]$elapsed = $stopWatch.Elapsed.TotalSeconds
-	"✔️ Cleaned the 📂$repoName repository in $($elapsed)s."
+	"✔️ Cleaned up repository 📂$repoName in $($elapsed)s."
 	exit 0 # success
 } catch {
 	"⚠️ Error in line $($_.InvocationInfo.ScriptLineNumber): $($Error[0])"
