@@ -31,7 +31,6 @@ try {
 	& "$PSScriptRoot/cd-repos.ps1"
 	& "$PSScriptRoot/fetch-repos.ps1"
 	" "
-	& "$PSScriptRoot/play-big-ben.ps1"
 	& "$PSScriptRoot/watch-news.ps1"
 	exit 0 # success
 } catch {
