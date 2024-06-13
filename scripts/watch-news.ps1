@@ -5,8 +5,10 @@
 	This PowerShell script lists the latest headlines by using a RSS (Really Simple Syndication) feed.
 .PARAMETER RSS_URL
 	Specifies the URL to the RSS feed (Yahoo World News by default)
+.PARAMETER lines
+	Specifies the initial number of headlines
 .PARAMETER timeInterval
-	Specifies the time interval in millisec between the Web requests
+	Specifies the time interval in seconds between the Web requests
 .EXAMPLE
 	PS> ./watch-news.ps1
 	❇️ Niger coup: Ecowas deadline sparks anxiety in northern Nigeria ❇️
@@ -16,7 +18,7 @@
 	Author: Markus Fleschutz | License: CC0
 #>
 
-param([string]$RSS_URL = "https://news.yahoo.com/rss/world", [int]$timeInterval = 30000) # in ms
+param([string]$RSS_URL = "https://news.yahoo.com/rss/world", [int]$lines = 10, [int]$timeInterval = 30) # in seconds
 
 function PrintLatestHeadlines([string]$previous, [int]$maxLines) {
 	[xml]$content = (Invoke-WebRequest -URI $RSS_URL -useBasicParsing).Content
@@ -37,8 +39,8 @@ function PrintLatestHeadlines([string]$previous, [int]$maxLines) {
 try {
 	$latest = ""
 	while ($true) {
-		$latest = PrintLatestHeadlines $latest 10
-		Start-Sleep -milliseconds $timeInterval
+		$latest = PrintLatestHeadlines $latest $lines
+		Start-Sleep -seconds $timeInterval
 	}
 	exit 0 # success
 } catch {
