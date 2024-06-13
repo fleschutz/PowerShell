@@ -48,10 +48,10 @@ try {
 	}
 	[int]$elapsed = $stopWatch.Elapsed.TotalSeconds
 	if ($failed -eq 0) {
-		"✔️ Updated $numFolders repositories in 📂$parentDirName (took $($elapsed)s)."
+		"✔️ Updated $numFolders repositories under 📂$parentDirName in $($elapsed)s."
 		exit 0 # success
 	} else {
-		"⚠️ Updated $numFolders repositories in 📂$parentDirName but $failed failed (took $($elapsed)s)."
+		"⚠️ Updated $numFolders repositories under 📂$parentDirName in $($elapsed)s but $failed failed!"
 		exit 1
 	}
 } catch {

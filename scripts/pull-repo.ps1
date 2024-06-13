@@ -8,7 +8,7 @@
 .EXAMPLE
 	PS> ./pull-repo.ps1
 	⏳ (1/4) Searching for Git executable...  git version 2.44.0.windows.1
-	⏳ (2/4) Checking local repository...     📂C:\Repos\rust
+	⏳ (2/4) Checking local repository...     C:\Repos\rust
 	⏳ (3/4) Pulling remote updates...
 	⏳ (4/4) Updating submodules...
 	✔️ Updates pulled into 📂rust repo in 14s.
@@ -27,7 +27,7 @@ try {
 	& git --version
 	if ($lastExitCode -ne "0") { throw "Can't execute 'git' - make sure Git is installed and available" }
 
-	Write-Host "⏳ (2/4) Checking local repository...     📂$pathToRepo"
+	Write-Host "⏳ (2/4) Checking local repository...     $pathToRepo"
 	if (-not(Test-Path "$pathToRepo" -pathType container)) { throw "Can't access folder: $pathToRepo" }
 	$result = (git -C "$pathToRepo" status)
 	if ("$result" -match "HEAD detached at ") { throw "Nothing to pull due to detached HEAD state (not on a branch!)" }

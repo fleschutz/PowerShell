@@ -8,7 +8,7 @@
 .EXAMPLE
 	PS> ./check-repo.ps1 C:\MyRepo
 	⏳ (1/10) Searching for Git executable...  git version 2.41.0.windows.3
-	⏳ (2/10) Checking local repository...     📂C:\MyRepo
+	⏳ (2/10) Checking local repository...     C:\MyRepo
 	⏳ (3/10) Querying remote URL...           git@github.com:fleschutz/PowerShell.git
 	⏳ (4/10) Querying current branch...       main
 	⏳ (5/10) Fetching remote updates...       OK
@@ -33,7 +33,7 @@ try {
 	Write-Host "⏳ (2/10) Checking local repository...     " -noNewline
 	$FullPath = Resolve-Path "$pathToRepo"
 	if (!(Test-Path "$FullPath" -pathType Container)) { throw "Can't access folder: $FullPath" }
-	"📂$FullPath"
+	"$FullPath"
 
 	Write-Host "⏳ (3/10) Querying remote URL...           " -noNewline
 	& git -C "$FullPath" remote get-url origin
@@ -71,7 +71,7 @@ try {
 
 	$repoDirName = (Get-Item "$FullPath").Name
 	[int]$elapsed = $stopWatch.Elapsed.TotalSeconds
-	"✔️ Checked repo 📂$repoDirName in $($elapsed)s."
+	"✔️ Checked repository 📂$repoDirName in $($elapsed)s."
 	exit 0 # success
 } catch {
 	"⚠️ Error in line $($_.InvocationInfo.ScriptLineNumber): $($Error[0])"
