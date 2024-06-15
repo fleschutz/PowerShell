@@ -7,7 +7,7 @@
 	Specifies the minimum level in GB (10 GB by default)
 .EXAMPLE
 	PS> ./check-swap-space.ps1
-	✅ Swap space uses 51% of 2GB - 948MB free
+	✅ Swap space uses 21% of 1GB - 1005MB free
 .LINK
 	https://github.com/fleschutz/PowerShell
 .NOTES
@@ -17,15 +17,15 @@
 param([int]$minLevel = 10)
 
 function MB2String { param([int64]$bytes)
-        if ($bytes -lt 1000) { return "$($bytes)MB" }
-        $bytes /= 1000
-        if ($bytes -lt 1000) { return "$($bytes)GB" }
-        $bytes /= 1000
-        if ($bytes -lt 1000) { return "$($bytes)TB" }
-        $bytes /= 1000
-        if ($bytes -lt 1000) { return "$($bytes)PB" }
-        $bytes /= 1000
-        if ($bytes -lt 1000) { return "$($bytes)EB" }
+        if ($bytes -lt 1024) { return "$($bytes)MB" }
+        $bytes /= 1024
+        if ($bytes -lt 1024) { return "$($bytes)GB" }
+        $bytes /= 1024
+        if ($bytes -lt 1024) { return "$($bytes)TB" }
+        $bytes /= 1024
+        if ($bytes -lt 1024) { return "$($bytes)PB" }
+        $bytes /= 1024
+        if ($bytes -lt 1024) { return "$($bytes)EB" }
 }
 
 try {
