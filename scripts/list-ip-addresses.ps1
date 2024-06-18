@@ -1,10 +1,10 @@
 ﻿<#
 .SYNOPSIS
-        Lists the public IP address
+        Lists the IP addresses
 .DESCRIPTION
-        This PowerShell script queries the public IP address information and prints it.
+        This PowerShell script queries all IP address information and prints it.
 .EXAMPLE
-        PS> ./list-public-ip.ps1
+        PS> ./list-ip-addresses.ps1
 	✅ Public IP address 185.72.229.161, 2003:f2:6128:fd01:e543:601:30c2:a028 near Munich, Germany
 .LINK
         https://github.com/fleschutz/PowerShell
@@ -12,7 +12,29 @@
         Author: Markus Fleschutz | License: CC0
 #>
 
+function WriteLocalInterface($interface) {
+	$IPv4 = ""
+	$IPv6 = ""
+	$addresses = Get-NetIPAddress
+	foreach ($addr in $addresses) {
+		if ($addr.InterfaceAlias -like "$($interface)*") {
+			if ($addr.AddressFamily -eq "IPv4") {
+				$IPv4 = $addr.IPAddress
+			} else {
+				$IPv6 = $addr.IPAddress
+			}
+		}
+	}
+	if ($IPv4 -ne "" -or $IPv6 -ne "") {
+		Write-Host "✅ Local $interface IP address $IPv4, $IPv6"
+	}
+}		
+
 try {
+	WriteLocalInterface "Ethernet"
+	WriteLocalInterface "WLAN"
+	WriteLocalInterface "Bluetooth"
+ 
 	if ($IsLinux) {
 		[string]$publicIPv4 = (curl -4 --silent ifconfig.co)
 		[string]$publicIPv6 = (curl -6 --silent ifconfig.co)

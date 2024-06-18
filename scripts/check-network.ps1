@@ -16,10 +16,10 @@
 #>
 
 Write-Host "`n   N E T W O R K" -foregroundColor green
+& "$PSScriptRoot/list-ip-addresses.ps1"
 & "$PSScriptRoot/ping-remote-hosts.ps1"
 & "$PSScriptRoot/check-firewall"
 & "$PSScriptRoot/check-dns.ps1"
 & "$PSScriptRoot/check-vpn.ps1"
-& "$PSScriptRoot/list-public-ip.ps1"
 & "$PSScriptRoot/ping-local-hosts.ps1"
 exit 0 # success
