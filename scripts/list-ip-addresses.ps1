@@ -13,20 +13,20 @@
 #>
 
 function WriteLocalInterface($interface) {
-	$IPv4 = ""
-	$IPv6 = ""
+	$IPv4 = $IPv6 = $prefixLen = ""
 	$addresses = Get-NetIPAddress
 	foreach ($addr in $addresses) {
 		if ($addr.InterfaceAlias -like "$($interface)*") {
 			if ($addr.AddressFamily -eq "IPv4") {
 				$IPv4 = $addr.IPAddress
+				$prefixLen = $addr.PrefixLength
 			} else {
 				$IPv6 = $addr.IPAddress
 			}
 		}
 	}
 	if ($IPv4 -ne "" -or $IPv6 -ne "") {
-		Write-Host "✅ Local $interface IP address $IPv4, $IPv6"
+		Write-Host "✅ Local $interface IP address $IPv4/$prefixLen, $IPv6"
 	}
 }		
 
