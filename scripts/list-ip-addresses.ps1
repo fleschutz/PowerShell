@@ -31,10 +31,11 @@ function WriteLocalInterface($interface) {
 }		
 
 try {
-	WriteLocalInterface "Ethernet"
-	WriteLocalInterface "WLAN"
-	WriteLocalInterface "Bluetooth"
- 
+	if (!$IsLinux) {
+		WriteLocalInterface "Ethernet"
+		WriteLocalInterface "WLAN"
+		WriteLocalInterface "Bluetooth"
+ 	}
 	if ($IsLinux) {
 		[string]$publicIPv4 = (curl -4 --silent ifconfig.co)
 		[string]$publicIPv6 = (curl -6 --silent ifconfig.co)
