@@ -10,7 +10,7 @@
 .EXAMPLE
 	PS> ./switch-branch main C:\Repos\rust
 	⏳ (1/6) Searching for Git executable...   git version 2.43.0.windows.1
-	⏳ (2/6) Checking local repository...      📂C:\Repos\rust
+	⏳ (2/6) Checking local repository...      C:\Repos\rust
 	⏳ (3/6) Fetching remote updates...
 	⏳ (4/6) Switching to branch 'main'...
 	⏳ (5/6) Pulling remote updates...
@@ -33,14 +33,17 @@ try {
 	& git --version
 	if ($lastExitCode -ne "0") { throw "Can't execute 'git' - make sure Git is installed and available" }
 
-	Write-Host "⏳ (2/6) Checking local repository...      📂$pathToRepo"
+	Write-Host "⏳ (2/6) Checking local repository...      $pathToRepo"
 	if (-not(Test-Path "$pathToRepo" -pathType container)) { throw "Can't access repo folder: $pathToRepo" }
 	$result = (git -C "$pathToRepo" status)
 	if ($lastExitCode -ne "0") { throw "'git status' in $pathToRepo failed with exit code $lastExitCode" }
 	if ("$result" -notmatch "nothing to commit, working tree clean") { throw "Git repository is NOT clean: $result" }
 	$repoDirName = (Get-Item "$pathToRepo").Name
 
-	"⏳ (3/6) Fetching remote updates..."
+	Write-Host "⏳ (3/6) Fetching remote updates...        " -noNewline
+	& git -C "$pathToRepo" remote get-url origin
+        if ($lastExitCode -ne "0") { throw "'git remote get-url origin' failed with exit code $lastExitCode" }
+
 	& git -C "$pathToRepo" fetch --all --prune --prune-tags --force
 	if ($lastExitCode -ne "0") { throw "'git fetch' failed with exit code $lastExitCode" }
 
@@ -60,6 +63,6 @@ try {
 	"✔️ Switched 📂$repoDirName repo to '$branchName' branch in $($elapsed)s."
 	exit 0 # success
 } catch {
-	"⚠️ Error in line $($_.InvocationInfo.ScriptLineNumber): $($Error[0])"
+	"⚠️ Error: $($Error[0]) in script line $($_.InvocationInfo.ScriptLineNumber)"
 	exit 1
 }
