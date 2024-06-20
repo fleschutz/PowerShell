@@ -33,7 +33,10 @@ try {
 	if ("$result" -match "HEAD detached at ") { throw "Nothing to pull due to detached HEAD state (not on a branch!)" }
 	$pathToRepoName = (Get-Item "$pathToRepo").Name
 
-	Write-Host "⏳ (3/4) Pulling remote updates..."
+	Write-Host "⏳ (3/4) Pulling remote updates...        " -noNewline
+        & git -C "$pathToRepo" remote get-url origin
+        if ($lastExitCode -ne "0") { throw "'git remote get-url origin' failed with exit code $lastExitCode" }
+
 	& git -C "$pathToRepo" pull --recurse-submodules=yes
 	if ($lastExitCode -ne "0") { throw "'git pull' failed with exit code $lastExitCode" }
 
@@ -45,6 +48,6 @@ try {
 	"✔️ Updates pulled into 📂$pathToRepoName repo in $($elapsed)s."
 	exit 0 # success
 } catch {
-	"⚠️ Error in line $($_.InvocationInfo.ScriptLineNumber): $($Error[0])"
+	"⚠️ Error: $($Error[0]) in script line $($_.InvocationInfo.ScriptLineNumber)"
 	exit 1
 }
