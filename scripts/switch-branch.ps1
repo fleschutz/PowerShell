@@ -2,13 +2,13 @@
 .SYNOPSIS
 	Switches the Git branch
 .DESCRIPTION
-	This PowerShell script switches to the given branch in a Git repository (also updates submodules).
+	This PowerShell script switches to the given branch in a Git repository and also updates the submodules.
 .PARAMETER branchName
 	Specifies the Git branch name to switch to
 .PARAMETER pathToRepo
 	Specifies the file path to the local Git repository
 .EXAMPLE
-	PS> ./switch-branch main C:\Repos\rust
+	PS> ./switch-branch main 
 	⏳ (1/6) Searching for Git executable...   git version 2.43.0.windows.1
 	⏳ (2/6) Checking local repository...      C:\Repos\rust
 	⏳ (3/6) Fetching remote updates...

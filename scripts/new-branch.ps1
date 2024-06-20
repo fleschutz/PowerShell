@@ -8,14 +8,14 @@
 .PARAMETER pathToRepo
 	Specifies the file path to the local Git repository (current working directory per default)
 .EXAMPLE
-	PS> ./new-branch.ps1 test123 C:\Repos\rust
+	PS> ./new-branch.ps1 test123
 	⏳ (1/6) Searching for Git executable...  git version 2.45.0
 	⏳ (2/6) Checking local repository...     📂C:\Repos\rust
 	⏳ (3/6) Fetching remote updates...
 	⏳ (4/6) Creating new branch...
 	⏳ (5/6) Pushing updates...
 	⏳ (6/6) Updating submodules...
-	✔️ Created branch 'test123' in repo 📂rust in 18s (based on 'main')
+	✔️ Created branch 'test123' in 📂rust repo in 18s (based on 'main')
 .LINK
 	https://github.com/fleschutz/PowerShell
 .NOTES
@@ -39,7 +39,10 @@ try {
         if ($lastExitCode -ne "0") { throw "'git status' in $pathToRepo failed with exit code $lastExitCode" }
 	$repoName = (Get-Item "$pathToRepo").Name
 
-	"⏳ (3/6) Fetching remote updates..."
+	Write-Host "⏳ (3/6) Fetching remote updates...       " -noNewline
+	& git -C "$pathToRepo" remote get-url origin
+        if ($lastExitCode -ne "0") { throw "'git remote get-url origin' failed with exit code $lastExitCode" }
+
 	& git -C "$pathToRepo" fetch --all --recurse-submodules --prune --prune-tags --force
 	if ($lastExitCode -ne "0") { throw "'git fetch' failed with exit code $lastExitCode" }
 
@@ -59,7 +62,7 @@ try {
 	if ($lastExitCode -ne "0") { throw "'git submodule update' failed with exit code $lastExitCode" }
 
 	[int]$elapsed = $stopWatch.Elapsed.TotalSeconds
-	"✔️ Created branch '$newBranch' in repo 📂$repoName in $($elapsed)s (based on '$currentBranch')"
+	"✔️ Created branch '$newBranch' in 📂$repoName repo in $($elapsed)s (based on '$currentBranch')"
 	exit 0 # success
 } catch {
 	"⚠️ Error in line $($_.InvocationInfo.ScriptLineNumber): $($Error[0])"
