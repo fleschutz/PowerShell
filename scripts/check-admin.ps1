@@ -5,7 +5,7 @@
         This PowerShell script checks if the user has administrator rights.
 .EXAMPLE
         PS> ./check-admin.ps1
-        ✅ Yes
+        ✅ Yes, Markus has admin rights.
 .LINK
         https://github.com/fleschutz/PowerShell
 .NOTES
@@ -19,15 +19,15 @@ try {
 		$user = [Security.Principal.WindowsIdentity]::GetCurrent()
 		$principal = (New-Object Security.Principal.WindowsPrincipal $user)
 		if ($principal.IsInRole([Security.Principal.WindowsBuiltinRole]::Administrator)) {
-			"✅ Yes"
+			"✅ Yes, $USERNAME has admin rights."
 		} elseif ($principal.IsInRole([Security.Principal.WindowsBuiltinRole]::Guest)) {
-			"⚠️ No, guest rights only"
+			"⚠️ No, $USERNAME, has guest rights only."
 		} else {
-			"⚠️ No, normal user rights only"
+			"⚠️ No, $USERNAME has normal user rights only."
 		}
 	}  
-        exit 0 # success
+	exit 0 # success
 } catch {
-        "⚠️ Error in line $($_.InvocationInfo.ScriptLineNumber): $($Error[0])"
-        exit 1
+	"⚠️ Error: $($Error[0]) (in script line $($_.InvocationInfo.ScriptLineNumber))"
+	exit 1
 }	
