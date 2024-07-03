@@ -6,6 +6,7 @@ ABC,"American Broadcasting Corporation, Associated British Corporation, Australi
 ACLU,American Civil Liberties Union
 ADB,Asian Development Bank
 AIIB,Asian Infrastructure Investment Bank
+APEC,Asia-Pacific Economic Cooperation
 ASEAN,Association of South East Nations
 AT&T,American Telephone and Telegraph Company
 ATF,"U.S. Alcohol, Tobacco, Firearms and Explosives Bureau"
@@ -27,15 +28,22 @@ EASA,European Aviation Safety Agency
 ED,U.S. Department of Education
 ESA,European Space Agency
 ESPN, Entertainment and Sports Programming Network
+FAO,Food and Agriculture Organization
 FBI,U.S. Federal Bureau of Investigation
+FIFA,Fédération Internationale de Football Association
 GEICO, Government Employees Insurance Company
 H&M, Hennes and Mauritz
 HHS,U.S. Department of Health and Human Services
+HRW,Human Rights Watch
 HSBC, Hongkong and Shanghai Banking Corporation
 HUD,U.S. Department of Housing and Urban Development
 IBM, International Business Machines
+ICC,International Cricket Council
 ICI,Imperial Chemical Industries
+ICJ,International Court of Justice
 IMF,International Monetary Fund
+IMO,International Maritime Organization
+IOC,International Olympic Committee
 ISO,International Organization for Standardization
 J&J,Johnson & Johnson
 JBL, James Bullough Lansing
@@ -45,6 +53,7 @@ LBA,Luftfahrtbundesamt (German aviation agency)
 M&M, Mars & Murrie’s
 MILF,Moro Islamic Liberation Front
 NASA,National Aeronautics and Space Administration
+NATO,North Atlantic Treaty Organization
 NBC,National Broadcasting Company
 NIST,U.S. National Institute of Standards and Technology
 NIWA,National Institute of Water and Atmospheric Research Limited
@@ -53,13 +62,17 @@ NSA,U.S. National Security Agency
 NYPD,New York Police Department
 OECD,Organization for Economic Cooperation & Development
 ONCD,Office of the National Cyber Director
+OPCW,Organization for the Prohibition of Chemical Weapons
+OPEC,Organization of Petroleum Exporting Countries
 RSF,Reporters Sans Frontières (French for: Reporters Without Borders)
 SAARC,South Asian Association for Regional Cooperation
 TREAS,U.S. Department of the Treasury
 ULA,United Launch Alliance
 UN,United Nations Organization
+UNCTAD,United Nations Conference on Trade & Development
 UNESCO,United Nations Education Scientific & Cultural Organization
 UNICEF,United Nations Children's Fund
+UNIDO,United Nations Industrial Development Organization
 UNO,United Nations Organization
 USDA,United States Department of Agriculture
 UPS,United Parcel Service
@@ -70,6 +83,8 @@ VA,U.S. Department of Veterans Affairs
 VW,Volkswagen
 WEF,World Economic Forum
 WHO,World Health Organization
+WIPO,World Intellectual Property Organization
+WMO,World Meteorological Organization
 WWF,World Wide Fund for Nature
 YKK, Yoshida Manufacturing Corporation
 YMCA,Young Men's Christian Association
