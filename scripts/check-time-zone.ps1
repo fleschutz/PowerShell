@@ -2,10 +2,10 @@
 .SYNOPSIS
 	Checks the time zone
 .DESCRIPTION
-	This PowerShell script queries the time zone and prints it.
+	This PowerShell script queries the local time zone and prints it.
 .EXAMPLE
 	PS> ./check-time-zone.ps1
-	✅ 11:13 AM W. Europe Summer Time (UTC+01:00) Amsterdam, Berlin, Bern, Rome, Stockholm, Vienna (+01:00 DST)
+	✅ 3:27 PM in W. Europe Summer Time (UTC+01:00:00 +1h DST)
 .LINK
 	https://github.com/fleschutz/PowerShell
 .NOTES
@@ -16,14 +16,15 @@ try {
 	[system.threading.thread]::currentThread.currentCulture = [system.globalization.cultureInfo]"en-US"
 	$Time = $((Get-Date).ToShortTimeString())
 	$TZ = (Get-Timezone)
+	$offset = $TZ.BaseUtcOffset
 	if ($TZ.SupportsDaylightSavingTime) {
 		$TZName = $TZ.DaylightName
-		$DST=" (+01:00 DST)"
+		$DST=" +1h DST"
 	} else {
 		$TZName = $TZ.StandardName
 		$DST=""
 	}
-	Write-Host "✅ $Time $TZName $($TZ.DisplayName)$($DST)"
+	Write-Host "✅ $Time in $TZName (UTC+$($offset)$($DST))"
 	exit 0 # success
 } catch {
 	"⚠️ Error in line $($_.InvocationInfo.ScriptLineNumber): $($Error[0])"
