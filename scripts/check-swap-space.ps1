@@ -4,7 +4,7 @@
 .DESCRIPTION
 	This PowerShell script queries the current status of the swap space and prints it.
 .PARAMETER minLevel
-	Specifies the minimum level in GB (10 GB by default)
+	Specifies the minimum level in MB (10 MB by default)
 .EXAMPLE
 	PS> ./check-swap-space.ps1
 	✅ Swap space uses 21% of 1GB - 1005MB free
@@ -51,11 +51,11 @@ try {
 		Write-Output "⚠️ Swap space of $(MB2String $total) is full"
 	} elseif ($free -lt $minLevel) {
 		Write-Output "⚠️ Swap space has only $(MB2String $free) of $(MB2String $total) free"
-	} elseif ($used -lt 5) {
-		Write-Output "✅ Swap space unused - $(MB2String $free) free"
+	} elseif ($used -lt 3) {
+		Write-Output "✅ Swap space unused - full $(MB2String $free) free"
 	} else {
 		[int64]$percent = ($used * 100) / $total
-		Write-Output "✅ Swap space uses $percent% of $(MB2String $total) - $(MB2String $free) free"
+		Write-Output "✅ Swap space at $percent% of $(MB2String $total) - $(MB2String $free) free"
 	}
 	exit 0 # success
 } catch {
