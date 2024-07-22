@@ -5,7 +5,7 @@
 	This PowerShell script queries the power status and prints it.
 .EXAMPLE
 	PS> ./check-power.ps1
-	⚠️ Battery at 9% · 54 min remaining · power scheme 'HP Optimized' 
+	⚠️ Battery at 9% with 54min remaining · power scheme 'HP Optimized' 
 .LINK
 	https://github.com/fleschutz/PowerShell
 .NOTES
@@ -34,21 +34,21 @@ try {
 			} elseif ($remaining -eq 0) {
 				$reply = "✅ Battery at $percent%"
 			} elseif ($remaining -le 5) {
-				$reply = "⚠️ Battery at $percent% · ONLY $($remaining)min remaining"
+				$reply = "⚠️ Battery at $percent% with ONLY $($remaining)min remaining"
 			} elseif ($remaining -le 30) {
-				$reply = "⚠️ Battery at $percent% · only $($remaining)min remaining"
+				$reply = "⚠️ Battery at $percent% with only $($remaining)min remaining"
 			} elseif ($percent -lt 10) {
-				$reply = "⚠️ Battery at $percent% · $($remaining)min remaining"
-			} elseif ($percent -ge 60) {
-				$reply = "✅ Battery $percent% full · $($remaining)min remaining"
+				$reply = "⚠️ Battery at $percent% with $($remaining)min remaining"
+			} elseif ($percent -ge 80) {
+				$reply = "✅ Battery $percent% full with $($remaining)min remaining"
 			} else {
-				$reply = "✅ Battery at $percent% · $($remaining)min remaining"
+				$reply = "✅ Battery at $percent% with $($remaining)min remaining"
 			}
 		}
 		$powerScheme = (powercfg /getactivescheme)
 		$powerScheme = $powerScheme -Replace "^(.*)  \(",""
 		$powerScheme = $powerScheme -Replace "\)$",""
-		$reply += " · power scheme '$powerScheme'"
+		$reply += ", power scheme is '$powerScheme'"
 	}
 	Write-Host $reply
 	exit 0 # success
