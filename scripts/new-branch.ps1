@@ -10,12 +10,12 @@
 .EXAMPLE
 	PS> ./new-branch.ps1 test123
 	⏳ (1/6) Searching for Git executable...  git version 2.45.0
-	⏳ (2/6) Checking local repository...     📂C:\Repos\rust
-	⏳ (3/6) Fetching remote updates...
+	⏳ (2/6) Checking local repository...     C:\Repos\rust
+	⏳ (3/6) Fetching remote updates...       git@github.org:rust/rust.git
 	⏳ (4/6) Creating new branch...
 	⏳ (5/6) Pushing updates...
 	⏳ (6/6) Updating submodules...
-	✔️ Created branch 'test123' in 📂rust repo in 18s (based on 'main')
+	✔️ Created branch 'test123' based on 'main' in 📂rust repo in 18s.
 .LINK
 	https://github.com/fleschutz/PowerShell
 .NOTES
@@ -33,7 +33,7 @@ try {
 	& git --version
 	if ($lastExitCode -ne "0") { throw "Can't execute 'git' - make sure Git is installed and available" }
 
-	Write-Host "⏳ (2/6) Checking local repository...     📂$pathToRepo"
+	Write-Host "⏳ (2/6) Checking local repository...     $pathToRepo"
 	if (-not(Test-Path "$pathToRepo" -pathType container)) { throw "Can't access repo folder: $pathToRepo" }
 	$result = (git -C "$pathToRepo" status)
         if ($lastExitCode -ne "0") { throw "'git status' in $pathToRepo failed with exit code $lastExitCode" }
@@ -62,7 +62,7 @@ try {
 	if ($lastExitCode -ne "0") { throw "'git submodule update' failed with exit code $lastExitCode" }
 
 	[int]$elapsed = $stopWatch.Elapsed.TotalSeconds
-	"✔️ Created branch '$newBranch' in 📂$repoName repo in $($elapsed)s (based on '$currentBranch')"
+	"✔️ Created branch '$newBranch' based on '$currentBranch' in 📂$repoName repo in $($elapsed)s."
 	exit 0 # success
 } catch {
 	"⚠️ Error in line $($_.InvocationInfo.ScriptLineNumber): $($Error[0])"
