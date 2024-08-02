@@ -45,7 +45,7 @@ try {
 		$step++
 
 		if (Test-Path "$targetDir/$folderName" -pathType container) {
-			"⏳ ($step/$($total + 3)) Skipping existing $category 📂$folderName..."
+			"⏳ ($step/$($total + 3)) Skipping 📂$folderName - the $category exists already..."
 			$skipped++
 		} elseif ($shallow -eq "yes") {
 			"⏳ ($step/$($total + 3)) Cloning into 📂$folderName (a $category, $branch branch, shallow)..."
