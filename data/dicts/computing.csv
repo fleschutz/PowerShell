@@ -1293,7 +1293,7 @@ HA,high availability
 HaaS,Hardware as a Service
 HAL,hardware abstraction layer
 HALO,High Altitude Long Operation
-HANA,SAP HANA
+HAMR,Heat-Assisted Magnetic Recording
 HASA,Highly Accelerated Stress Audit
 HAVA,Help America Vote Act of 2002
 HAVi,Home Audio Visual
@@ -1325,6 +1325,7 @@ HHR,hybrid health record
 HHS,Health and Human Services
 HID,Human Interface Device
 HIE,health information exchange
+HIMR,Heat-Assisted Interlaced Magnetic Recording
 HIMSS,Healthcare Information and Management Systems Society
 HIPAA,Health Insurance Portability and Accountability Act
 HIPPI,High-Performance Parallel Interface
@@ -1863,7 +1864,8 @@ NURBS,nonuniform rational B-spline
 NUS,network unified storage
 NVGRE,Network Virtualization using Generic Routing Encapsulation
 NVLAP,National Voluntary Laboratory Accreditation Program
-NVMe,non-volatile memory express
+NVM,Non-Volatile Memory
+NVMe,Non-Volatile Memory Express
 NVS,nonvolatile storage
 NWR,NOAA Weather Radio
 O2O,Online to Offline
@@ -1981,7 +1983,7 @@ PCB,printed circuit board
 PCE,Path Computation Element
 PCEP,Path Computation Element Protocol
 PCI,Peripheral Component Interconnect
-PCI-X,Peripheral Component Interconnect Extended
+PCIe,Peripheral Component Interconnect Express
 PCL,Printer Control Language 
 PCM,phase-change memory
 PCM,pulse code modulation
