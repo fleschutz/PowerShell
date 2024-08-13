@@ -1,8 +1,8 @@
 ﻿<#
 .SYNOPSIS
-	Searches for a text pattern in files
+	Searches for text in files
 .DESCRIPTION
-	This PowerShell script searches for the given pattern in the given files.
+	This PowerShell script searches for the given text pattern in the given files.
 .PARAMETER textPattern
 	Specifies the text pattern to search for
 .PARAMETER filePattern
@@ -22,17 +22,15 @@
 
 param([string]$textPattern = "", [string]$filePattern = "")
 
-function ListLocations { param([string]$Pattern, [string]$Path)
-	$list = Select-String -path $Path -pattern "$Pattern" 
-	foreach ($item in $list) {
-		New-Object PSObject -Property @{ 'FILE'="$($item.Path)"; 'LINE'="$($item.LineNumber):$($item.Line)" }
-	}
-	Write-Output "✔️ Found $($list.Count) lines containing '$Pattern' in $filePattern."
+function ListLocations { param([string]$textPattern, [string]$filePattern)
+	$list = Select-String -path $filePattern -pattern "$textPattern" 
+	foreach($item in $list) { New-Object PSObject -Property @{ 'FILE'="$($item.Path)"; 'LINE'="$($item.LineNumber):$($item.Line)" }	}
+	"✔️ Found $($list.Count) lines containing '$textPattern' in $filePattern."
 }
 
 try {
-	if ($textPattern -eq "" ) { $textPattern = Read-Host "Enter the text pattern (e.g. 'UFO')" }
-	if ($filePattern -eq "" ) { $filePattern = Read-Host "Enter the file pattern (e.g. '*.ps1')" }
+	if ($textPattern -eq "" ) { $textPattern = Read-Host "Enter the text pattern, e.g. 'UFO'" }
+	if ($filePattern -eq "" ) { $filePattern = Read-Host "Enter the file pattern, e.g. '*.ps1'" }
 
 	ListLocations $textPattern $filePattern | Format-Table -property FILE,LINE -autoSize
 	exit 0 # success
