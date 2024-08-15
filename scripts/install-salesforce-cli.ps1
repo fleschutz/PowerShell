@@ -1,11 +1,15 @@
 <#
 .SYNOPSIS
-    Installs the Salesforce CLI (sfdx) on Windows.
+    Installs the Salesforce CLI (sfdx).
 .DESCRIPTION
-    This PowerShell script downloads and installs the Salesforce CLI.
+    This PowerShell script downloads and installs the Salesforce CLI on Windows.
 .EXAMPLE
     PS> ./install-salesforce-cli.ps1
     (The Salesforce CLI installer will be downloaded and run.)
+.LINK
+    https://github.com/fleschutz/PowerShell
+.NOTES
+    Author: Gavin R. McDavitt
 #>
 
 try {
