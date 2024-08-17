@@ -5,7 +5,7 @@
 	This PowerShell script queries the operating system status and prints it.
 .EXAMPLE
 	PS> ./check-os.ps1
-	✅ Windows 10 Pro 64-bit (v10.0.19045, since 6/22/2021, S/N 00123-45678-15135-AAOEM, P/K AB123-CD456-EF789-GH000-WFR6P)
+	✅ Windows 10 Pro 64-bit since 6/22/2021 (v10.0.19045, S/N 00123-45678-15135-AAOEM, P/K AB123-CD456-EF789-GH000-WFR6P)
 .LINK
 	https://github.com/fleschutz/PowerShell
 .NOTES
@@ -30,7 +30,7 @@ try {
 		$InstallDate = $OSDetails.InstallDate
 
 		$ProductKey = (Get-ItemProperty -Path "HKLM:\SOFTWARE\Microsoft\Windows NT\CurrentVersion\SoftwareProtectionPlatform" -Name BackupProductKeyDefault).BackupProductKeyDefault
-		Write-Host "✅ $Name $Arch (v$Version, since $($InstallDate.ToShortDateString()), S/N $Serial, P/K $ProductKey)"
+		Write-Host "✅ $Name $Arch since $($InstallDate.ToShortDateString()) (v$Version, S/N $Serial, P/K $ProductKey)"
 	} 
 	exit 0 # success
 } catch {
