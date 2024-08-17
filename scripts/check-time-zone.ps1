@@ -5,7 +5,7 @@
 	This PowerShell script queries the local time zone and prints it.
 .EXAMPLE
 	PS> ./check-time-zone.ps1
-	✅ 3:27 PM in W. Europe Summer Time (UTC+01:00:00 +1h DST)
+	✅ 3:27 PM West Europe Summer Time (UTC+01:00:00 +1h DST)
 .LINK
 	https://github.com/fleschutz/PowerShell
 .NOTES
@@ -24,7 +24,7 @@ try {
 		$TZName = $TZ.StandardName
 		$DST=""
 	}
-	Write-Host "✅ $Time in $TZName (UTC+$($offset)$($DST))"
+	Write-Host "✅ $Time $TZName (UTC+$($offset)$($DST))"
 	exit 0 # success
 } catch {
 	"⚠️ Error in line $($_.InvocationInfo.ScriptLineNumber): $($Error[0])"
