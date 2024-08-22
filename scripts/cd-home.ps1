@@ -4,7 +4,7 @@
 .DESCRIPTION
 	This PowerShell script changes the working directory to the user's home directory.
 .EXAMPLE
-	PS> ./cd-home
+	PS> ./cd-home.ps1
 	📂C:\Users\Markus
 .LINK
 	https://github.com/fleschutz/PowerShell
@@ -13,13 +13,11 @@
 #>
 
 try {
-	$Path = Resolve-Path -Path "~"
-	if (Test-Path "$Path" -pathType container) {
-		Set-Location "$Path"
-		"📂$Path"
-		exit 0 # success
-	}
-	throw "User's home folder at 📂$Path doesn't exist (yet)"
+	$path = Resolve-Path "~"
+	if (-not(Test-Path "$path" -pathType container)) { throw "Home folder at $path doesn't exist (yet)" }
+	Set-Location "$path"
+	"📂$path"
+	exit 0 # success
 } catch {
 	"⚠️ Error in line $($_.InvocationInfo.ScriptLineNumber): $($Error[0])"
 	exit 1
