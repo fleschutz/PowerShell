@@ -45,15 +45,15 @@ try {
 		$step++
 
 		if (Test-Path "$targetDir/$folderName" -pathType container) {
-			"⏳ ($step/$($total + 3)) Skipping 📂$folderName - the $category exists already..."
+			"⏳ ($step/$($total + 3)) Skipping 📂$folderName ($category) - exists already..."
 			$skipped++
 		} elseif ($shallow -eq "yes") {
-			"⏳ ($step/$($total + 3)) Cloning into 📂$folderName (a $category, $branch branch, shallow)..."
+			"⏳ ($step/$($total + 3)) Cloning 📂$folderName ($category, shallow $branch branch) from $URL..."
 			& git clone --branch "$branch" --single-branch --recurse-submodules "$URL" "$targetDir/$folderName"
 			if ($lastExitCode -ne "0") { throw "'git clone --branch $branch $URL' failed with exit code $lastExitCode" }
 			$cloned++
 		} else {
-			"⏳ ($step/$($total + 3)) Cloning into 📂$folderName (a $category, $branch branch, full history)..."
+			"⏳ ($step/$($total + 3)) Cloning 📂$folderName ($category, full $branch branch) from $URL..."
 			& git clone --branch "$branch" --recurse-submodules "$URL" "$targetDir/$folderName"
 			if ($lastExitCode -ne "0") { throw "'git clone --branch $branch $URL' failed with exit code $lastExitCode" }
 			$clone++
