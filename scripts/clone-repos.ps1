@@ -7,8 +7,11 @@
 	Specifies the file path to the target directory (current working directory by default)
 .EXAMPLE
 	PS> ./clone-repos C:\MyRepos
+	⏳ (1) Searching for Git executable...       git version 2.46.0.windows.1
+	⏳ (2) Reading data/popular-repos.csv...     29 repos
+	⏳ (3) Checking target folder...             📂Repos
+	⏳ (4/32) Cloning 📂base256 (dev tool) from git@github.com:fleschutz/talk2windows.git (shallow main branch)...
 	...
-	✔️ Cloned 29 additional Git repos into 📂MyRepos in 123s.
 .LINK
 	https://github.com/fleschutz/PowerShell
 .NOTES
@@ -45,15 +48,15 @@ try {
 		$step++
 
 		if (Test-Path "$targetDir/$folderName" -pathType container) {
-			"⏳ ($step/$($total + 3)) Skipping 📂$folderName ($category) - exists already..."
+			"⏳ ($step/$($total + 3)) Skipping 📂$folderName ($category): exists already"
 			$skipped++
 		} elseif ($shallow -eq "yes") {
-			"⏳ ($step/$($total + 3)) Cloning 📂$folderName ($category, shallow $branch branch) from $URL..."
+			"⏳ ($step/$($total + 3)) Cloning 📂$folderName ($category) from $URL (shallow $branch branch)..."
 			& git clone --branch "$branch" --single-branch --recurse-submodules "$URL" "$targetDir/$folderName"
 			if ($lastExitCode -ne "0") { throw "'git clone --branch $branch $URL' failed with exit code $lastExitCode" }
 			$cloned++
 		} else {
-			"⏳ ($step/$($total + 3)) Cloning 📂$folderName ($category, full $branch branch) from $URL..."
+			"⏳ ($step/$($total + 3)) Cloning 📂$folderName ($category) from $URL (full $branch branch)..."
 			& git clone --branch "$branch" --recurse-submodules "$URL" "$targetDir/$folderName"
 			if ($lastExitCode -ne "0") { throw "'git clone --branch $branch $URL' failed with exit code $lastExitCode" }
 			$clone++
