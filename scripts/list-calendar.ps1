@@ -33,16 +33,17 @@ function Print-Month ($month, $year) {
     
     $header = (Get-Date $firstDayOfMonth -Format MMMM) + " " + $firstDayOfMonth.Year
     Write-Host
-    Write-Host ((" " * (($daysLine.Length - $header.Length) / 2)) + $header)
+    Write-Host $header.ToUpper()
+    Write-Host "__________________________"
     Write-Host $daysLine
     
     for ($day = $firstDayOfMonth; $day -le $lastDayOfMonth; $day = $day.AddDays(1)) {
         if ($day.day -eq 1) {
-            Write-Host (" " * 3 * [int](Get-Date $day -uformat %u)) -NoNewLine
+            Write-Host (" " * 4 * [int](Get-Date $day -uformat %u)) -NoNewLine
         }
         
         Write-Host ((Get-Date $day -Format dd).ToString()) -NoNewLine 
-        Write-Host " " -NoNewLine
+        Write-Host "  " -NoNewLine
         
         if ($day.DayOfWeek -eq "Saturday") {
             Write-Host
@@ -65,7 +66,7 @@ function Print-Year($year) {
         
         for ($i = $month; $i -lt $month + 3; $i++) {
             $tempHeader = (Get-Date -month $i -Format MMMM) + " " + $year.ToString()
-            $header += ((" " * (($daysLine.Length - $tempHeader.Length) / 2)) + $tempHeader + (" " * (($daysLine.Length - $tempHeader.Length) / 2)))
+            $header += ((" " * (($daysLine.Length - $tempHeader.Length) / 2)) + $tempHeader.toUpper() + (" " * (($daysLine.Length - $tempHeader.Length) / 2)))
             $header += "  "
         }
         
@@ -84,14 +85,14 @@ function Print-Year($year) {
             $dayOffset = [int](Get-Date -day 1 -month ($month + $i) -year $year -uformat %u)
             
             if ($dayOfMonth -eq 1) {
-                Write-Host (" " * 3 * $dayOffSet) -NoNewLine
+                Write-Host (" " * 4 * $dayOffSet) -NoNewLine
             }
                 
             if ($dayOfMonth -le (Get-Date -day 1 -month ((($i + $month) % 12) + 1) -year $year).AddDays(-1).day) {
                 $currentDay = (Get-Date -day $dayOfMonth -month ((($i + $month - 1) % 12) + 1) -year $year)
 
                 Write-Host ((Get-Date -month ($i + $month) -day $dayOfMonth -year $year -Format dd).ToString()) -NoNewLine 
-                Write-Host " " -NoNewLine
+                Write-Host "  " -NoNewLine
             }
             else {
                 Write-Host "   " -NoNewLine
@@ -145,21 +146,21 @@ function Find-LastWeekDay ($year, $month, $dayOfWeek) {
 }
 
 try {
-	Set-Variable -name daysLine -option Constant -value "Su Mo Tu We Th Fr Sa "
+	Set-Variable -name daysLine -option Constant -value "Su  Mo  Tu  We  Th  Fr  Sa "
 
 	if ($year -lt 0) { throw "Year parameter must be greater than 0" }
 	if ($month -lt 0) { throw "Month parameter must be between 1 and 12" }
 
 	if (($month -gt 12) -and ($year -eq (Get-Date).Year)) {
-	    $year = $month
-	    $month = 0
+		$year = $month
+		$month = 0
 	} elseif (($month -gt 12) -and ($year -ne (Get-Date).Year)) {
-	    throw "Month parameter must be between 1 and 12"
+		throw "Month parameter must be between 1 and 12"
 	}
 	if ($month -ne 0) {
-	    Print-Month $month $year
+		Print-Month $month $year
 	} else {
-	    Print-Year $year
+		Print-Year $year
 	}
 	exit 0 # success
 } catch {
