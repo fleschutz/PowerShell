@@ -24,8 +24,10 @@ try {
 		Write-Host $text -noNewline
 		Write-Host $URL -foregroundColor blue
 	}
-	Start-Process $URL
-
+	if ($IsLinux) {
+	} else {
+		Start-Process $URL
+	}
 	exit 0 # success
 } catch {
 	"⚠️ Error: $($Error[0]) (script line $($_.InvocationInfo.ScriptLineNumber))"

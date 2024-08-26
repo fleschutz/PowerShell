@@ -13,7 +13,7 @@
 
 try {
 	""
-	& "$PSScriptRoot/write-typewriter.ps1" "OK - DON'T PANIC - HELP IS ON THE WAY..." 150
+	& "$PSScriptRoot/write-typewriter.ps1" "DON'T PANIC - HELP IS ON THE WAY..." 170
 	""
 	& "$PSScriptRoot/open-URL.ps1" -text "1. See the official PowerShell documentation at: " "https://docs.microsoft.com/en-us/powershell" 
 	Start-Sleep -milliseconds 50
