@@ -64,7 +64,7 @@ if (-not $Destination) {
     if ($IsWinEnv) {
         $Destination = "$env:LOCALAPPDATA\Microsoft\powershell"
     } else {
-	if (Test-Path "/opt/PowerShell" -pathType container) {
+	if (Test-Path -path "/opt/PowerShell" -pathType container) {
 		$Destination = "/opt/PowerShell"
 	} else {
         	$Destination = "~/.powershell"
@@ -116,16 +116,16 @@ function Expand-ArchiveInternal {
     }
 }
 
-function Remove-Destination([string] $Destination) {
-    if (Test-Path -Path $Destination) {
+function Remove-Destination([string]$Destination) {
+    if (Test-Path -path $Destination -pathType container) {
         if ($DoNotOverwrite) {
             throw "Destination folder '$Destination' already exist. Use a different path or omit '-DoNotOverwrite' to overwrite."
         }
-        Write-Host "⏳ (4/4) Removing old installation at $Destination" 
-        if (Test-Path -Path "$Destination.old") {
+        if (Test-Path -path "$Destination.old") {
             Remove-Item "$Destination.old" -Recurse -Force
         }
         if ($IsWinEnv -and ($Destination -eq $PSHOME)) {
+       	    Write-Host "⏳ (4/5) Removing old installation at $Destination... " -noNewline
             # handle the case where the updated folder is currently in use
             Get-ChildItem -Recurse -File -Path $PSHOME | ForEach-Object {
                 if ($_.extension -eq ".old") {
@@ -135,9 +135,11 @@ function Remove-Destination([string] $Destination) {
                 }
             }
         } else {
+       	    Write-Host "⏳ (4/5) Moving old installation to $($Destination).old... " -noNewline
             # Unix systems don't keep open file handles so you can just move files/folders even if in use
-            Move-Item "$Destination" "$Destination.old"
+            sudo mv "$Destination" "$($Destination).old"
         }
+	Write-Host "OK"
     }
 }
 
@@ -354,7 +356,7 @@ try {
             tar zxf $packagePath -C $contentPath
         }
     } else {
-        Write-Host "⏳ (1/4) Loading metadata from https://raw.githubusercontent.com ..."
+        Write-Host "⏳ (1/5) Loading infos from https://raw.githubusercontent.com ..."
         $metadata = Invoke-RestMethod https://raw.githubusercontent.com/PowerShell/PowerShell/master/tools/metadata.json
         if ($Preview) {
             $release = $metadata.PreviewReleaseTag -replace '^v'
@@ -377,10 +379,10 @@ try {
         } elseif ($IsMacOSEnv) {
             $packageName = "powershell-${release}-osx-${architecture}.tar.gz"
         }
-	Write-Host "⏳ (2/4) Latest release is $release for $architecture, package name is $packageName ..."
+	Write-Host "⏳ (2/5) Latest release is $release for $architecture, package name is $packageName ..."
 
         $downloadURL = "https://github.com/PowerShell/PowerShell/releases/download/v${release}/${packageName}"
-        Write-Host "⏳ (3/4) Loading $downloadURL"
+        Write-Host "⏳ (3/5) Loading $downloadURL"
 
         $packagePath = Join-Path -Path $tempDir -ChildPath $packageName
         if (!$PSVersionTable.ContainsKey('PSEdition') -or $PSVersionTable.PSEdition -eq "Desktop") {
@@ -436,10 +438,15 @@ try {
                 $DestinationFilePath = Join-Path $Destination $_.fullname.replace($contentPath, "")
                 Copy-Item $_.fullname -Destination $DestinationFilePath
             }
-        } else {
+        } elseif ($IsWinEnv) {
             $null = New-Item -Path (Split-Path -Path $Destination -Parent) -ItemType Directory -ErrorAction SilentlyContinue
             Move-Item -Path $contentPath -Destination $Destination
-        }
+        } else {
+            Write-Host "⏳ (5/5) Moving new installation to $Destination... "
+            #& sudo mkdir "$Destination"
+            #& sudo cp -rf "$contentPath/*" "$Destination"
+            & sudo mv "$contentPath" "$Destination"
+	}
     }
 
     ## Change the mode of 'pwsh' to 'rwxr-xr-x' to allow execution
@@ -474,7 +481,7 @@ try {
             if ($IsLinuxEnv) { $symlink = "/usr/bin/pwsh" } elseif ($IsMacOSEnv) { $symlink = "/usr/local/bin/pwsh" }
             $needNewSymlink = $true
 
-            if (Test-Path -Path $symlink) {
+            if (Test-Path -path $symlink) {
                 $linkItem = Get-Item -Path $symlink
                 if ($linkItem.LinkType -ne "SymbolicLink") {
                     Write-Warning "'$symlink' already exists but it's not a symbolic link. Abort adding to PATH."
