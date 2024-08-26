@@ -125,7 +125,7 @@ function Remove-Destination([string]$Destination) {
             Remove-Item "$Destination.old" -Recurse -Force
         }
         if ($IsWinEnv -and ($Destination -eq $PSHOME)) {
-       	    Write-Host "⏳ (4/5) Removing old installation at $Destination... " -noNewline
+       	    Write-Host "⏳ (4/5) Removing old installation at $Destination... "
             # handle the case where the updated folder is currently in use
             Get-ChildItem -Recurse -File -Path $PSHOME | ForEach-Object {
                 if ($_.extension -eq ".old") {
@@ -135,11 +135,10 @@ function Remove-Destination([string]$Destination) {
                 }
             }
         } else {
-       	    Write-Host "⏳ (4/5) Moving old installation to $($Destination).old... " -noNewline
+       	    Write-Host "⏳ (4/5) Moving old installation to $($Destination).old... " 
             # Unix systems don't keep open file handles so you can just move files/folders even if in use
             sudo mv "$Destination" "$($Destination).old"
         }
-	Write-Host "OK"
     }
 }
 
@@ -356,7 +355,7 @@ try {
             tar zxf $packagePath -C $contentPath
         }
     } else {
-        Write-Host "⏳ (1/5) Loading infos from https://raw.githubusercontent.com ..."
+        Write-Host "⏳ (1/5) Loading details from https://raw.githubusercontent.com ..."
         $metadata = Invoke-RestMethod https://raw.githubusercontent.com/PowerShell/PowerShell/master/tools/metadata.json
         if ($Preview) {
             $release = $metadata.PreviewReleaseTag -replace '^v'
@@ -443,8 +442,6 @@ try {
             Move-Item -Path $contentPath -Destination $Destination
         } else {
             Write-Host "⏳ (5/5) Moving new installation to $Destination... "
-            #& sudo mkdir "$Destination"
-            #& sudo cp -rf "$contentPath/*" "$Destination"
             & sudo mv "$contentPath" "$Destination"
 	}
     }
