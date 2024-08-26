@@ -64,7 +64,11 @@ if (-not $Destination) {
     if ($IsWinEnv) {
         $Destination = "$env:LOCALAPPDATA\Microsoft\powershell"
     } else {
-        $Destination = "~/.powershell"
+	if (Test-Path "/opt/PowerShell" -pathType container) {
+		$Destination = "/opt/PowerShell"
+	} else {
+        	$Destination = "~/.powershell"
+	}
     }
 
     if ($Daily) {
