@@ -1,10 +1,10 @@
 ﻿<#
 .SYNOPSIS
-        Provide help to the user
+        Writes a help page
 .DESCRIPTION
-        This PowerShell script launches new tabs in the Web browser with help pages.
+        This PowerShell script writes a help page to help the user.
 .EXAMPLE
-        PS> ./open-help.ps1
+        PS> ./write-help.ps1
 .LINK
         https://github.com/fleschutz/PowerShell
 .NOTES
@@ -16,7 +16,6 @@ function Line ([string]$line) {
 }
 
 try {
-	""
 	Line "█████████████████████████████████████"
 	Line "█████████████████████████████████████"
 	Line "████ ▄▄▄▄▄ █▀ █▀▀█▀▀  ▄▄██ ▄▄▄▄▄ ████ POWERSHELL $($PSVersionTable.PSVersion) $($PSVersionTable.PSEdition) edition"
@@ -25,18 +24,17 @@ try {
 	Line "████▄▄▄▄▄▄▄█▄█▄█ █▄█ █▄▀ █▄▄▄▄▄▄▄████"
 	Line "████▄▄  ▄█▄▄  ▄█▄▄ █▀ ▀▀▀ ▀▄▀▄█▄▀████ Tutorial: https://www.guru99.com/powershell-tutorial.html"
 	Line "████▀▄▄█▀█▄██ ▀ ▄▄▀ █▄█▀ ▀ ▄▀▀█▀█████"
-	Line "█████ ▄▄█▄▄▀▄ ▀▄▀ ▄▄  ▀ ▀▀▀ ▀▄▄█▀████ FAQ's: https://github.com/fleschutz/PowerShell/blob/main/docs/FAQ.md"
+	Line "█████ ▄▄█▄▄▀▄ ▀▄▀ ▄▄  ▀ ▀▀▀ ▀▄▄█▀████ 500+ Sample Scripts: https://github.com/fleschutz/PowerShell"
 	Line "████▄ ▀ ▄ ▄▄█  █▀██▄ ██▀▄█▄▄▀▄▄▀█████"
-	Line "████  ████▄▄  ▄█▄▄▄██  ▀ ▀▀▀▀▄ █▀████ Cheat Sheet: https://github.com/fleschutz/PowerShell/blob/main/docs/cheat-sheet.md"
+	Line "████  ████▄▄  ▄█▄▄▄██  ▀ ▀▀▀▀▄ █▀████ FAQ's: https://github.com/fleschutz/PowerShell/blob/main/docs/FAQ.md"
 	Line "████ ███▄ ▄▀▀██ ▄█ ▄▄▄█▀ ▄▄ ██▄▀█████"
-	Line "████▄█▄███▄▄▀▄▄▄▀ ▄▄ ▄▀▄ ▄▄▄ ▀   ████ NOTE: Use <Ctrl> + <Click> to open the links in your browser."
+	Line "████▄█▄███▄▄▀▄▄▄▀ ▄▄ ▄▀▄ ▄▄▄ ▀   ████ Cheat Sheet: https://github.com/fleschutz/PowerShell/blob/main/docs/cheat-sheet.md"
 	Line "████ ▄▄▄▄▄ █▄▄▄█▀█▄  ██  █▄█ ▄▄█▀████"
-	Line "████ █   █ █ ▀▄█▄ ▄▄  ▀█ ▄▄▄▄▀   ████"
+	Line "████ █   █ █ ▀▄█▄ ▄▄  ▀█ ▄▄▄▄▀   ████ NOTE: Use <Ctrl> + <Click> to open the links in your browser."
 	Line "████ █▄▄▄█ █ ██ ▄█▄  ▄▀▀▀ ▄▄  ▄ █████"
 	Line "████▄▄▄▄▄▄▄█▄▄█▄▄████▄▄▄██▄▄▄█▄██████"
 	Line "█████████████████████████████████████"
 	Line "█████████████████████████████████████"
-	""
 	exit 0 # success
 } catch {
 	"⚠️ Error in line $($_.InvocationInfo.ScriptLineNumber): $($Error[0])"
