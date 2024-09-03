@@ -11,26 +11,35 @@
         Author: Markus Fleschutz | License: CC0
 #>
 
+function Line ([string]$line) {
+	Write-Host $line -foregroundColor white -backgroundColor black
+}
+
 try {
+	Line "█████████████████████████████████████"
+	Line "█████████████████████████████████████"
+	Line "████ ▄▄▄▄▄ █▀ █▀▀█▀▀  ▄▄██ ▄▄▄▄▄ ████"
+	Line "████ █   █ █▀ ▄ █▀ ▀ ▀▄█ █ █   █ ████"
+	Line "████ █▄▄▄█ █▀█ █▄▀▄▀ ▀ ▄▄█ █▄▄▄█ ████"
+	Line "████▄▄▄▄▄▄▄█▄█▄█ █▄█ █▄▀ █▄▄▄▄▄▄▄████"
+	Line "████▄▄  ▄█▄▄  ▄█▄▄ █▀ ▀▀▀ ▀▄▀▄█▄▀████"
+	Line "████▀▄▄█▀█▄██ ▀ ▄▄▀ █▄█▀ ▀ ▄▀▀█▀█████"
+	Line "█████ ▄▄█▄▄▀▄ ▀▄▀ ▄▄  ▀ ▀▀▀ ▀▄▄█▀████"
+	Line "████▄ ▀ ▄ ▄▄█  █▀██▄ ██▀▄█▄▄▀▄▄▀█████"
+	Line "████  ████▄▄  ▄█▄▄▄██  ▀ ▀▀▀▀▄ █▀████"
+	Line "████ ███▄ ▄▀▀██ ▄█ ▄▄▄█▀ ▄▄ ██▄▀█████"
+	Line "████▄█▄███▄▄▀▄▄▄▀ ▄▄ ▄▀▄ ▄▄▄ ▀   ████"
+	Line "████ ▄▄▄▄▄ █▄▄▄█▀█▄  ██  █▄█ ▄▄█▀████"
+	Line "████ █   █ █ ▀▄█▄ ▄▄  ▀█ ▄▄▄▄▀   ████"
+	Line "████ █▄▄▄█ █ ██ ▄█▄  ▄▀▀▀ ▄▄  ▄ █████"
+	Line "████▄▄▄▄▄▄▄█▄▄█▄▄████▄▄▄██▄▄▄█▄██████"
+	Line "█████████████████████████████████████"
+	Line "█████████████████████████████████████"
 	""
-	Write-Host "                             " -foregroundColor black -backgroundColor white
-	Write-Host "    ▄▄▄▄▄▄▄ ▄ ▄▄▄ ▄▄▄▄▄▄▄    " -foregroundColor black -backgroundColor white
-	Write-Host "    █ ▄▄▄ █ ▄▄▀█  █ ▄▄▄ █    " -foregroundColor black -backgroundColor white
-	Write-Host "    █ ███ █ █▀ ▄▀ █ ███ █    " -foregroundColor black -backgroundColor white
-	Write-Host "    █▄▄▄▄▄█ ▄▀█▀█ █▄▄▄▄▄█    " -foregroundColor black -backgroundColor white
-	Write-Host "    ▄▄▄▄  ▄ ▄▄▄██▄  ▄▄▄ ▄    " -foregroundColor black -backgroundColor white
-	Write-Host "    ▀ █ ▀▄▄▀█▀▀█▀█▀█▀▀▀▄█    " -foregroundColor black -backgroundColor white
-	Write-Host "    ▄▄██▀▀▄▄█ ▄▀▄▄▄▀ ▀ ▀▄    " -foregroundColor black -backgroundColor white
-	Write-Host "    ▄▄▄▄▄▄▄ ▀▀██▄▄██▄ ▀ ▀    " -foregroundColor black -backgroundColor white
-	Write-Host "    █ ▄▄▄ █  ▀▄ ▄▀ ▀ ██▀▀    " -foregroundColor black -backgroundColor white
-	Write-Host "    █ ███ █ █▄  ▄ ▀▄ ▀█▀     " -foregroundColor black -backgroundColor white
-	Write-Host "    █▄▄▄▄▄█ █▀▄█ ███▀ ▄ ▀    " -foregroundColor black -backgroundColor white
-	Write-Host "                             " -foregroundColor black -backgroundColor white
-	""
-	Write-Host " 🔷 PowerShell documentation: " -noNewline
+	Write-Host " 🔷 PowerShell Documentation: " -noNewline
 	Write-Host "https://docs.microsoft.com/en-us/powershell" -foregroundColor blue
 
-	Write-Host " 🔷 PowerShell tutorial: " -noNewline
+	Write-Host " 🔷 PowerShell Tutorial: " -noNewline
 	Write-Host "https://www.guru99.com/powershell-tutorial.html" -foregroundColor blue
 
 	Write-Host " 🔷 PowerShell FAQ's: " -noNewline

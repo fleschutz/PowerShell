@@ -18,7 +18,7 @@ param([string]$hosts = "bing.com,cnn.com,dropbox.com,github.com,google.com,ibm.c
 
 try {
 	$hostsArray = $hosts.Split(",")
-	$tasks = $hostsArray | foreach { (New-Object Net.NetworkInformation.Ping).SendPingAsync($_,1000)	}
+	$tasks = $hostsArray | foreach { (New-Object Net.NetworkInformation.Ping).SendPingAsync($_,1000) }
 	[int]$min = 9999999
 	[int]$max = [int]$avg = [int]$success = 0
 	[int]$total = $hostsArray.Count
