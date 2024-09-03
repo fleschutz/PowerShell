@@ -12,7 +12,7 @@ function prompt { Write-Host "`n➤ " -noNewline -foregroundColor yellow; return
 
 # ALIAS NAMES
 del alias:pwd -force -errorAction SilentlyContinue
-set-alias -name hlp -value open-help.ps1
+set-alias -name hlp -value write-help.ps1
 set-alias -name pwd -value list-workdir.ps1	# pwd = print working directory
 set-alias -name ll -value get-childitem		# ll = list folder (long format)
 del alias:ls -force -errorAction SilentlyContinue 
