@@ -1,4 +1,4 @@
-<#
+﻿<#
 .SYNOPSIS
         Provide help to the user
 .DESCRIPTION
@@ -13,18 +13,31 @@
 
 try {
 	""
-	& "$PSScriptRoot/write-typewriter.ps1" "DON'T PANIC - HELP IS ON THE WAY..." 170
+	Write-Host "                             " -foregroundColor black -backgroundColor white
+	Write-Host "    ▄▄▄▄▄▄▄ ▄ ▄▄▄ ▄▄▄▄▄▄▄    " -foregroundColor black -backgroundColor white
+	Write-Host "    █ ▄▄▄ █ ▄▄▀█  █ ▄▄▄ █    " -foregroundColor black -backgroundColor white
+	Write-Host "    █ ███ █ █▀ ▄▀ █ ███ █    " -foregroundColor black -backgroundColor white
+	Write-Host "    █▄▄▄▄▄█ ▄▀█▀█ █▄▄▄▄▄█    " -foregroundColor black -backgroundColor white
+	Write-Host "    ▄▄▄▄  ▄ ▄▄▄██▄  ▄▄▄ ▄    " -foregroundColor black -backgroundColor white
+	Write-Host "    ▀ █ ▀▄▄▀█▀▀█▀█▀█▀▀▀▄█    " -foregroundColor black -backgroundColor white
+	Write-Host "    ▄▄██▀▀▄▄█ ▄▀▄▄▄▀ ▀ ▀▄    " -foregroundColor black -backgroundColor white
+	Write-Host "    ▄▄▄▄▄▄▄ ▀▀██▄▄██▄ ▀ ▀    " -foregroundColor black -backgroundColor white
+	Write-Host "    █ ▄▄▄ █  ▀▄ ▄▀ ▀ ██▀▀    " -foregroundColor black -backgroundColor white
+	Write-Host "    █ ███ █ █▄  ▄ ▀▄ ▀█▀     " -foregroundColor black -backgroundColor white
+	Write-Host "    █▄▄▄▄▄█ █▀▄█ ███▀ ▄ ▀    " -foregroundColor black -backgroundColor white
+	Write-Host "                             " -foregroundColor black -backgroundColor white
 	""
-	& "$PSScriptRoot/open-URL.ps1" -text "1. See the official PowerShell documentation at: " "https://docs.microsoft.com/en-us/powershell" 
-	Start-Sleep -milliseconds 50
+	Write-Host " 🔷 PowerShell documentation: " -noNewline
+	Write-Host "https://docs.microsoft.com/en-us/powershell" -foregroundColor blue
 
-	& "$PSScriptRoot/open-URL.ps1" -text "2. A PowerShell tutorial is at: " "https://www.guru99.com/powershell-tutorial.html" 
-	Start-Sleep -milliseconds 50
+	Write-Host " 🔷 PowerShell tutorial: " -noNewline
+	Write-Host "https://www.guru99.com/powershell-tutorial.html" -foregroundColor blue
 
-	& "$PSScriptRoot/open-URL.ps1" -text "3. PowerShell FAQ's can be found here: " "https://github.com/fleschutz/PowerShell/blob/main/docs/FAQ.md" 
-	Start-Sleep -milliseconds 50
+	Write-Host " 🔷 PowerShell FAQ's: " -noNewline
+	Write-Host "https://github.com/fleschutz/PowerShell/blob/main/docs/FAQ.md" -foregroundColor blue
 
-	& "$PSScriptRoot/open-URL.ps1" -text "4. A PowerShell Cheat Sheet is at: " "https://github.com/fleschutz/PowerShell/blob/main/docs/cheat-sheet.md"
+	Write-Host " 🔷 PowerShell Cheat Sheet: " -noNewline
+	Write-Host "https://github.com/fleschutz/PowerShell/blob/main/docs/cheat-sheet.md" -foregroundColor blue
 	""
 	"NOTE: Use <Ctrl> + <Click> to open the links in your browser."
         exit 0 # success
