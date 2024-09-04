@@ -21,22 +21,22 @@
 param([string]$parentDir = "$PWD")
 
 function ListRepos { 
-	$folders = (Get-ChildItem "$parentDir" -attributes Directory)
-	foreach($folder in $folders) {
-		$folderName = (Get-Item "$folder").Name
-		$latestTagCommitID = (git -C "$folder" rev-list --tags --max-count=1)
-		if ($latestTagCommitID -ne "") {
-	        	$latestTag = (git -C "$folder" describe --tags $latestTagCommitID)
+	$dirs = (Get-ChildItem "$parentDir" -attributes Directory)
+	foreach($dir in $dirs) {
+		$dirName = (Get-Item "$dir").Name
+		$latestTagCommitID = (git -C "$dir" rev-list --tags --max-count=1)
+		if ("$latestTagCommitID" -ne "") {
+	        	$latestTag = (git -C "$dir" describe --tags $latestTagCommitID)
 		} else {
 			$latestTag = ""
 		}
-		$branch = (git -C "$folder" branch --show-current)
-		$remoteURL = (git -C "$folder" remote get-url origin)
-		$numCommits = (git -C "$folder" rev-list HEAD...origin/$branch --count)
-		$status = (git -C "$folder" status --short)
+		$branch = (git -C "$dir" branch --show-current)
+		$remoteURL = (git -C "$dir" remote get-url origin)
+		$numCommits = (git -C "$dir" rev-list HEAD...origin/$branch --count)
+		$status = (git -C "$dir" status --short)
 		if ("$status" -eq "") { $status = "✔️clean" }
 		elseif ("$status" -like " M *") { $status = "⚠️changed" }
-		New-Object PSObject -property @{'REPOSITORY'="📂$folderName";'LATEST TAG'="$latestTag";'BRANCH'="$branch";'REMOTE URL'="$remoteURL";'STATUS'="$status ↓$numCommits"}
+		New-Object PSObject -property @{'REPOSITORY'="📂$dirName";'LATEST TAG'="$latestTag";'BRANCH'="$branch";'REMOTE URL'="$remoteURL";'STATUS'="$status ↓$numCommits"}
 	}
 }
 
