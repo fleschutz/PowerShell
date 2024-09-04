@@ -63,11 +63,14 @@ try {
 	$celsius = GetCPUTemperature
 	if ($celsius -eq 99999.9) {
 		$temp = "no temp"
+	} elseif ($celsius -gt 80) {
+		$temp = "$($celsius)°C TOO HOT"
+		$status = "⚠️"
 	} elseif ($celsius -gt 50) {
 		$temp = "$($celsius)°C HOT"
 		$status = "⚠️"
 	} elseif ($celsius -lt 0) {
-		$temp = "$($celsius)°C COLD"
+		$temp = "$($celsius)°C TOO COLD"
 		$status = "⚠️"
 	} else {
 		$temp = "$($celsius)°C OK"
