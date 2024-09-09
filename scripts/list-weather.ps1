@@ -127,6 +127,6 @@ try {
 	}
 	exit 0 # success
 } catch {
-	"⚠️ Error in line $($_.InvocationInfo.ScriptLineNumber): $($Error[0])"
+	"⚠️ Sorry: $($Error[0]) in script line $($_.InvocationInfo.ScriptLineNumber)."
 	exit 1
 }
