@@ -22,5 +22,4 @@ Write-Host "`n   S O F T W A R E" -foregroundColor green
 & "$PSScriptRoot/check-powershell.ps1"
 & "$PSScriptRoot/check-time-zone.ps1"
 & "$PSScriptRoot/check-swap-space.ps1"
-& "$PSScriptRoot/check-pending-reboot.ps1"
 exit 0 # success
