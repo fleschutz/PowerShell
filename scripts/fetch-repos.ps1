@@ -7,7 +7,7 @@
 	Specifies the path to the parent folder
 .EXAMPLE
 	PS> ./fetch-repos.ps1 C:\MyRepos
-	⏳ (1) Searching for Git executable...       git version 2.42.0
+	⏳ (1) Searching for Git executable...       git version 2.43.0
 	⏳ (2) Checking parent folder...             33 subfolders
 	⏳ (3/35) Fetching into 📂base256unicode...
 	...
@@ -44,7 +44,7 @@ try {
 		$step++
 	}
 	[int]$elapsed = $stopWatch.Elapsed.TotalSeconds
-	"✔️ Fetched updates into $numFolders repos under 📂$parentDirPathName in $elapsed sec"
+	"✔️ Fetched into $numFolders repos under 📂$parentDirPathName in $($elapsed)s."
 	exit 0 # success
 } catch {
 	"⚠️ Error in line $($_.InvocationInfo.ScriptLineNumber): $($Error[0])"
