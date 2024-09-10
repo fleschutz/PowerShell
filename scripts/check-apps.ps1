@@ -5,50 +5,47 @@
 	This PowerShell script queries the installed applications and prints it.
 .EXAMPLE
 	PS> ./check-apps.ps1
-	✅ 119 Windows apps installed, 11 upgrades available
+	⚠️ 150 Win apps installed, 72 upgrades available, 5 crash dump(s) found
 .LINK
 	https://github.com/fleschutz/PowerShell
 .NOTES
 	Author: Markus Fleschutz | License: CC0
 #>
 
-function GetCrashDumps {
+function CountCrashDumps {
 	[string]$path = Resolve-Path -Path "~\AppData\Local\CrashDumps"
-	$count = 0
 	$files = (Get-ChildItem -path "$path\*.dmp" -attributes !Directory)
-	foreach($file in $files) { $count++ }
-	return $count
+	return $files.Count
 }
 
 try {
-	$statusIcon = "✅"
-	$statusMsg = ""
+	$status = "✅"
 	if ($IsLinux) {
 		Write-Progress "Querying installed applications..."
 		$numPkgs = (apt list --installed 2>/dev/null).Count
 		$numSnaps = (snap list).Count - 1
 		Write-Progress -completed "Done."
-		$statusMsg += "$numPkgs Debian packages, $numSnaps snaps installed"
+		$reply = "$numPkgs Debian packages, $numSnaps snaps installed"
 	} else {
 		Write-Progress "Querying installed apps..."
-		$Apps = Get-AppxPackage
+		$apps = Get-AppxPackage
 		Write-Progress -completed "Done."
-		$statusMsg = "$($Apps.Count) Win apps installed"
+		$reply = "$($apps.Count) Win apps installed"
 
 		[int]$numNonOk = 0
-		foreach($App in $Apps) { if ($App.Status -ne "Ok") { $numNonOk++ } }
-		if ($numNonOk -gt 0) { $statusIcon = "⚠️"; $statusMsg += ", $numNonOk non-ok" }
+		foreach($app in $apps) { if ($app.Status -ne "Ok") { $numNonOk++ } }
+		if ($numNonOk -gt 0) { $status = "⚠️"; $reply += ", $numNonOk non-ok" }
 
 		[int]$numErrors = (Get-AppxLastError)
-		if ($numErrors -gt 0) { $statusIcon = "⚠️"; $statusMsg += ", $numErrors errors" }
+		if ($numErrors -gt 0) { $status = "⚠️"; $reply += ", $numErrors errors" }
 
 		$numUpdates = (winget upgrade --include-unknown).Count - 5
-		$statusMsg += ", $numUpdates upgrades available"
+		$reply += ", $numUpdates upgrades available"
 
-		$crashDumps = GetCrashDumps
-		if ($crashDumps -ne 0) { $statusIcon = "⚠️"; $statusMsg += " - found $crashDumps crash dump(s)" }
+		$numCrashDumps = CountCrashDumps
+		if ($numCrashDumps -ne 0) { $status = "⚠️"; $reply += ", $numCrashDumps crash dump(s) found" }
 	}
-	Write-Host "$statusIcon $statusMsg"
+	Write-Host "$status $reply"
 	exit 0 # success
 } catch {
 	"⚠️ Error in line $($_.InvocationInfo.ScriptLineNumber): $($Error[0])"
