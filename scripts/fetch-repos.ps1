@@ -7,9 +7,9 @@
 	Specifies the path to the parent folder
 .EXAMPLE
 	PS> ./fetch-repos.ps1 C:\MyRepos
-	⏳ (1) Searching for Git executable...       git version 2.42.0
+	⏳ (1) Searching for Git executable...       git version 2.46.0.windows.1
 	⏳ (2) Checking parent folder...             33 subfolders
-	⏳ (3/35) Fetching into 📂base256unicode...
+	⏳ (3/35) Fetching into 📂curl...
 	...
 .LINK
 	https://github.com/fleschutz/PowerShell
@@ -39,12 +39,12 @@ try {
 		Write-Host "⏳ ($step/$($numFolders + 2)) Fetching into 📂$folderName...`t`t"
 
 		& git -C "$folder" fetch --all --recurse-submodules --prune --prune-tags --force
-		if ($lastExitCode -ne "0") { throw "'git fetch --all' in $folder failed with exit code $lastExitCode" }
+		if ($lastExitCode -ne "0") { throw "'git fetch --all' in 📂$folder failed with exit code $lastExitCode" }
 
 		$step++
 	}
 	[int]$elapsed = $stopWatch.Elapsed.TotalSeconds
-	"✔️ Fetched updates into $numFolders repos under 📂$parentDirPathName in $elapsed sec"
+	"✔️ Fetched into $numFolders repos under 📂$parentDirPathName in $($elapsed)s."
 	exit 0 # success
 } catch {
 	"⚠️ Error in line $($_.InvocationInfo.ScriptLineNumber): $($Error[0])"
