@@ -6,18 +6,18 @@
 .EXAMPLE
 	PS> ./list-tasks.ps1
 
-	TaskName                            State  TaskPath                                       
-	--------                            -----  --------
-	.NET Framework NGEN v4.0.30319      Ready  \Microsoft\Windows\.NET Framework\             
+	TASKNAME                          TASKPATH                             STATE           
+	--------                          --------                             -----
+	.NET Framework NGEN v4.0.30319    \Microsoft\Windows\.NET Framework\   Ready      
 	...
 .LINK
-	https://github.com/fleschutz/PowerShell
+	https://github.com/fleschutz/PowerShell0
 .NOTES
 	Author: Markus Fleschutz | License: CC0
 #>
 
 try {
-	Get-ScheduledTask | Format-Table -property TaskName,State,TaskPath
+	Get-ScheduledTask | Format-Table -property @{e='TASKNAME';width=40},@{e='TASKPATH';width=55},@{e='STATE';width=10}
 	exit 0 # success
 } catch {
 	"⚠️ Error in line $($_.InvocationInfo.ScriptLineNumber): $($Error[0])"
