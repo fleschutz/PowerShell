@@ -5,7 +5,7 @@
 	This PowerShell script queries the power status and prints it.
 .EXAMPLE
 	PS> ./check-power.ps1
-	⚠️ Battery at 9% with power scheme 'HP Optimized' - 54min remaining
+	⚠️ Battery 9% only with 54min remaining (power scheme is 'HP Optimized') 
 .LINK
 	https://github.com/fleschutz/PowerShell
 .NOTES
@@ -27,25 +27,25 @@ try {
 			if ($details.BatteryChargeStatus -eq "NoSystemBattery") {
 				$reply = "✅ AC powered"
 			} elseif ($percent -ge 95) {
-				$reply = "✅ Battery nearly full ($percent%, power scheme '$powerScheme')"
+				$reply = "✅ Battery nearly full ($percent%, power scheme is '$powerScheme')"
 			} else {
-				$reply = "✅ Battery charging ($percent%, power scheme '$powerScheme')"
+				$reply = "✅ Battery charging ($percent%, power scheme is '$powerScheme')"
 			}
 		} else { # must be offline
 			if (($remaining -eq 0) -and ($percent -ge 60)) {
-				$reply = "✅ Battery $percent% full (power scheme '$powerScheme')"
+				$reply = "✅ Battery $percent% full (power scheme is '$powerScheme')"
 			} elseif ($remaining -eq 0) {
-				$reply = "✅ Battery at $percent% (power scheme '$powerScheme')"
+				$reply = "✅ Battery at $percent% (power scheme is '$powerScheme')"
 			} elseif ($remaining -le 5) {
-				$reply = "⚠️ Battery at $percent% (power scheme '$powerScheme') - ONLY $($remaining)min remaining"
+				$reply = "⚠️ Battery $percent% ONLY $($remaining)min remaining (power scheme is '$powerScheme')"
 			} elseif ($remaining -le 30) {
-				$reply = "⚠️ Battery at $percent% (power scheme '$powerScheme') - only $($remaining)min remaining"
+				$reply = "⚠️ Battery $percent% only $($remaining)min remaining (power scheme is '$powerScheme')"
 			} elseif ($percent -lt 10) {
-				$reply = "⚠️ Battery at $percent% (power scheme '$powerScheme') - $($remaining)min remaining"
-			} elseif ($percent -ge 80) {
-				$reply = "✅ Battery $percent% full (power scheme '$powerScheme') - $($remaining)min remaining"
+				$reply = "⚠️ Battery $percent% only with $($remaining)min remaining (power scheme is '$powerScheme') "
+			} elseif ($percent -ge 90) {
+				$reply = "✅ Battery $percent% full with $($remaining)min remaining (power scheme is '$powerScheme')"
 			} else {
-				$reply = "✅ Battery at $percent% (power scheme '$powerScheme') - $($remaining)min remaining"
+				$reply = "✅ Battery $percent% with $($remaining)min remaining (power scheme is '$powerScheme') "
 			}
 		}
 	}
