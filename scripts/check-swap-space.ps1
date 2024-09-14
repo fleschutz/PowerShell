@@ -48,14 +48,14 @@ try {
 	if ($total -eq 0) {
         	Write-Output "⚠️ No swap space configured"
 	} elseif ($free -eq 0) {
-		Write-Output "⚠️ Swap space is FULL ($(MB2String $total))"
+		Write-Output "⚠️ Swap space is full ($(MB2String $total))"
 	} elseif ($free -lt $minLevel) {
-		Write-Output "⚠️ Swap space has only $(MB2String $free) of $(MB2String $total) free"
+		Write-Output "⚠️ Swap space has only $(MB2String $free) of $(MB2String $total) left"
 	} elseif ($used -lt 3) {
 		Write-Output "✅ Swap space unused - $(MB2String $free) available"
 	} else {
-		[int64]$percent = ($used * 100) / $total
-		Write-Output "✅ Swap space at $percent% of $(MB2String $total) - $(MB2String $free) free"
+		[int64]$percent = ($free * 100) / $total
+		Write-Output "✅ Swap space has $(MB2String $free) of $(MB2String $total) left ($percent%)"
 	}
 	exit 0 # success
 } catch {
