@@ -15,7 +15,7 @@
 	Author: Markus Fleschutz | License: CC0
 #>
 
-param([int64]$minLevel = 10) # 10 GB minimum
+param([int64]$minLevel = 10GB)
 
 function Bytes2String { param([int64]$number)
         if ($number -lt 1KB) { return "$number bytes" }
@@ -29,26 +29,29 @@ function Bytes2String { param([int64]$number)
 try {
 	Write-Progress "Querying drives..."
 	$drives = Get-PSDrive -PSProvider FileSystem
-	$minLevel *= 1GB
-	Write-Progress -completed " "
+	Write-Progress -completed "Done."
+	$status = "✅"
+	$reply = ""
 	foreach($drive in $drives) {
 		$details = (Get-PSDrive $drive.Name)
 		if ($IsLinux) { $name = $drive.Name } else { $name = $drive.Name + ":" }
 		[int64]$free = $details.Free
  		[int64]$used = $details.Used
 		[int64]$total = ($used + $free)
-
 		if ($total -eq 0) {
-			Write-Host "✅ $name is empty"
+			$reply += "📂$name is empty  "
 		} elseif ($free -eq 0) {
-			Write-Host "⚠️ $name with $(Bytes2String $total) is full"
+			$status = "⚠️"
+			$reply += "📂$name is full ($(Bytes2String $total))  "
 		} elseif ($free -lt $minLevel) {
-			Write-Host "⚠️ $name with $(Bytes2String $total) is nearly full, $(Bytes2String $free) free"
+			$status = "⚠️"
+			$reply += "📂$name is nearly full ($(Bytes2String $free) of $(Bytes2String $total) left)  "
 		} else {
-			[int64]$percent = ($used * 100) / $total
-			Write-Host "✅ $name at $percent% of $(Bytes2String $total) - $(Bytes2String $free) free"
+			[int64]$percent = ($free * 100) / $total
+			$reply += "📂$name has $(Bytes2String $free) of $(Bytes2String $total) left ($percent%)  "
 		}
 	}
+	Write-Host "$status $reply"
 	exit 0 # success
 } catch {
 	"⚠️ Error in line $($_.InvocationInfo.ScriptLineNumber): $($Error[0])"
