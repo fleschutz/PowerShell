@@ -2,7 +2,7 @@
 .SYNOPSIS
         Writes a help page
 .DESCRIPTION
-        This PowerShell script writes a help page to help the user.
+        This PowerShell script writes a PowerShell help page.
 .EXAMPLE
         PS> ./write-help.ps1
 .LINK
@@ -18,7 +18,7 @@ function Line ([string]$line) {
 try {
 	Line "█████████████████████████████████████"
 	Line "█████████████████████████████████████"
-	Line "████ ▄▄▄▄▄ █▀ █▀▀█▀▀  ▄▄██ ▄▄▄▄▄ ████ POWERSHELL $($PSVersionTable.PSVersion) $($PSVersionTable.PSEdition) edition"
+	Line "████ ▄▄▄▄▄ █▀ █▀▀█▀▀  ▄▄██ ▄▄▄▄▄ ████ You are using POWERSHELL $($PSVersionTable.PSVersion) $($PSVersionTable.PSEdition) edition."
 	Line "████ █   █ █▀ ▄ █▀ ▀ ▀▄█ █ █   █ ████"
 	Line "████ █▄▄▄█ █▀█ █▄▀▄▀ ▀ ▄▄█ █▄▄▄█ ████ Documentation: https://docs.microsoft.com/en-us/powershell"
 	Line "████▄▄▄▄▄▄▄█▄█▄█ █▄█ █▄▀ █▄▄▄▄▄▄▄████"
@@ -30,9 +30,9 @@ try {
 	Line "████ ███▄ ▄▀▀██ ▄█ ▄▄▄█▀ ▄▄ ██▄▀█████"
 	Line "████▄█▄███▄▄▀▄▄▄▀ ▄▄ ▄▀▄ ▄▄▄ ▀   ████ Cheat Sheet: https://github.com/fleschutz/PowerShell/blob/main/docs/cheat-sheet.md"
 	Line "████ ▄▄▄▄▄ █▄▄▄█▀█▄  ██  █▄█ ▄▄█▀████"
-	Line "████ █   █ █ ▀▄█▄ ▄▄  ▀█ ▄▄▄▄▀   ████ NOTE: Use <Ctrl> + <Click> to open the links in your browser."
+	Line "████ █   █ █ ▀▄█▄ ▄▄  ▀█ ▄▄▄▄▀   ████ Videos: https://www.youtube.com/results?search_query=PowerShell"
 	Line "████ █▄▄▄█ █ ██ ▄█▄  ▄▀▀▀ ▄▄  ▄ █████"
-	Line "████▄▄▄▄▄▄▄█▄▄█▄▄████▄▄▄██▄▄▄█▄██████"
+	Line "████▄▄▄▄▄▄▄█▄▄█▄▄████▄▄▄██▄▄▄█▄██████ HINT: Use <Ctrl> + <Click> to open the links in your browser."
 	Line "█████████████████████████████████████"
 	Line "█████████████████████████████████████"
 	exit 0 # success
