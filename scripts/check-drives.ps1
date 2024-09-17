@@ -7,8 +7,7 @@
 	Specifies the minimum warning level (10GB by default)
 .EXAMPLE
 	PS> ./check-drives.ps1
-	✅ C: at 49% of 1TB - 512GB free
-	✅ D: at 84% of 4TB - 641GB free
+	✅ 📂C: has 432GB of 930GB left (54% full)  📂D: has 507GB of 4TB left (86% full)  📂E: is empty
 .LINK
 	https://github.com/fleschutz/PowerShell
 .NOTES
@@ -42,13 +41,13 @@ try {
 			$reply += "📂$name is empty  "
 		} elseif ($free -eq 0) {
 			$status = "⚠️"
-			$reply += "📂$name is full ($(Bytes2String $total))  "
+			$reply += "📂$name with ($(Bytes2String $total)) is FULL  "
 		} elseif ($free -lt $minLevel) {
 			$status = "⚠️"
 			$reply += "📂$name is nearly full ($(Bytes2String $free) of $(Bytes2String $total) left)  "
 		} else {
-			[int64]$percent = ($free * 100) / $total
-			$reply += "📂$name has $(Bytes2String $free) of $(Bytes2String $total) left ($percent%)  "
+			[int64]$percent = ($used * 100) / $total
+			$reply += "📂$name has $(Bytes2String $free) of $(Bytes2String $total) left ($percent% full)  "
 		}
 	}
 	Write-Host "$status $reply"
