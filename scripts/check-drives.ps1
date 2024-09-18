@@ -7,7 +7,7 @@
 	Specifies the minimum warning level (10GB by default)
 .EXAMPLE
 	PS> ./check-drives.ps1
-	✅ 📂C: has 432GB of 930GB left (54% full)  📂D: has 507GB of 4TB left (86% full)  📂E: is empty
+	✅ 📂C: uses 489GB (53%) of 930GB, 📂D: uses 3TB (87%) of 4TB, 📂E: is empty
 .LINK
 	https://github.com/fleschutz/PowerShell
 .NOTES
@@ -16,13 +16,13 @@
 
 param([int64]$minLevel = 10GB)
 
-function Bytes2String { param([int64]$number)
-        if ($number -lt 1KB) { return "$number bytes" }
-        if ($number -lt 1MB) { return '{0:N0}KB' -f ($number / 1KB) }
-        if ($number -lt 1GB) { return '{0:N0}MB' -f ($number / 1MB) }
-        if ($number -lt 1TB) { return '{0:N0}GB' -f ($number / 1GB) }
-        if ($number -lt 1PB) { return '{0:N0}TB' -f ($number / 1TB) }
-        return '{0:N0}GB' -f ($number / 1PB)
+function Bytes2String { param([int64]$bytes)
+        if ($bytes -lt 1KB) { return "$bytes bytes" }
+        if ($bytes -lt 1MB) { return '{0:N0}KB' -f ($bytes / 1KB) }
+        if ($bytes -lt 1GB) { return '{0:N0}MB' -f ($bytes / 1MB) }
+        if ($bytes -lt 1TB) { return '{0:N0}GB' -f ($bytes / 1GB) }
+        if ($bytes -lt 1PB) { return '{0:N0}TB' -f ($bytes / 1TB) }
+        return '{0:N0}GB' -f ($bytes / 1PB)
 }
 
 try {
@@ -37,17 +37,18 @@ try {
 		[int64]$free = $details.Free
  		[int64]$used = $details.Used
 		[int64]$total = ($used + $free)
+		if ($reply -ne "") { $reply += ", " }
 		if ($total -eq 0) {
-			$reply += "📂$name is empty  "
+			$reply += "📂$name is empty"
 		} elseif ($free -eq 0) {
 			$status = "⚠️"
-			$reply += "📂$name with ($(Bytes2String $total)) is FULL  "
+			$reply += "📂$name with ($(Bytes2String $total)) is FULL"
 		} elseif ($free -lt $minLevel) {
 			$status = "⚠️"
-			$reply += "📂$name is nearly full ($(Bytes2String $free) of $(Bytes2String $total) left)  "
+			$reply += "📂$name is nearly full ($(Bytes2String $free) of $(Bytes2String $total) left)"
 		} else {
 			[int64]$percent = ($used * 100) / $total
-			$reply += "📂$name has $(Bytes2String $free) of $(Bytes2String $total) left ($percent% full)  "
+			$reply += "📂$name uses $(Bytes2String $used) ($percent%) of $(Bytes2String $total)"
 		}
 	}
 	Write-Host "$status $reply"
