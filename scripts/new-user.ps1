@@ -1,6 +1,6 @@
 ﻿<#
 .SYNOPSIS
-	Creates a new user account
+	Create a new user
 .DESCRIPTION
 	This PowerShell script creates a new user account with an encrypted home directory.
 .EXAMPLE
