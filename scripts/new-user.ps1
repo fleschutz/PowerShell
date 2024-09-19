@@ -5,7 +5,7 @@
 	This PowerShell script creates a new user account with an encrypted home directory.
 .EXAMPLE
 	PS> ./new-user.ps1 Joe
-	✔️ Created new user 'Joe' with encrypted home directory in 11s.
+	✔️ Created user account 'Joe' with encrypted home directory in 11s.
 .LINK
 	https://github.com/fleschutz/PowerShell
 .NOTES
@@ -19,13 +19,14 @@ try {
 	$stopWatch = [system.diagnostics.stopwatch]::startNew()
 
 	if ($IsLinux) {
+ 		& sudo apt install ecryptfs-utils
 		& sudo adduser --encrypt-home $username
 	} else {
 		throw "Not supported yet"
 	}
 
 	[int]$elapsed = $stopWatch.Elapsed.TotalSeconds
-	"✔️ Created new user '$username' with encrypted home directory in $($elapsed)s."
+	"✔️ Created user account '$username' with encrypted home directory in $($elapsed)s."
 	exit 0 # success
 } catch {
 	"⚠️ Error in line $($_.InvocationInfo.ScriptLineNumber): $($Error[0])"
