@@ -6,7 +6,7 @@
 .EXAMPLE
 	PS> ./install-github-cli.ps1
 	⏳ Installing GitHub CLI...
-	✔ Installation of GitHub CLI took 17 sec
+	✔ GitHub CLI installed successfully in 17s - to authenticate execute: 'gh auth login'.
 .LINK
 	https://github.com/fleschutz/PowerShell
 .NOTES
@@ -15,7 +15,7 @@
 
 try {
 	"⏳ Installing GitHub CLI..."
-	$StopWatch = [system.diagnostics.stopwatch]::startNew()
+	$stopWatch = [system.diagnostics.stopwatch]::startNew()
 
 	if ($IsMacOS) {
 		& brew install gh
@@ -23,9 +23,10 @@ try {
 		& sudo apt install gh
 	} else {
 		& winget install --id GitHub.cli
+		if ($lastExitCode -ne "0") { throw "Installation of GitHub CLI failed, maybe it's already installed." }
 	}
-	[int]$Elapsed = $StopWatch.Elapsed.TotalSeconds
-	"✔️ Installation of GitHub CLI took $Elapsed sec"
+	[int]$elapsed = $stopWatch.Elapsed.TotalSeconds
+	"✔️ GitHub CLI installed successfully in $($elapsed)s - to authenticate execute: 'gh auth login'"
 	exit 0 # success
 } catch {
 	"⚠️ Error in line $($_.InvocationInfo.ScriptLineNumber): $($Error[0])"
