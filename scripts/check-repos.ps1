@@ -37,7 +37,7 @@ try {
 	}
 
 	[int]$elapsed = $stopWatch.Elapsed.TotalSeconds
-	"✔️ Checked all $numFolders Git repos in 📂$parentDir in $($elapsed)s."
+	"✅ Checked all $numFolders Git repos in 📂$parentDir in $($elapsed)s."
 	exit 0 # success
 } catch {
 	"⚠️ Error in line $($_.InvocationInfo.ScriptLineNumber): $($Error[0])"

@@ -11,7 +11,7 @@
 	⏳ (2/4) Checking local repository...     📂C:\MyRepo
 	⏳ (3/4) Pulling remote updates...        Already up to date.
 	⏳ (4/4) Pushing local updates...         Everything up-to-date
-	✔️ Synced repo 📂MyRepo in 5 sec
+	✅ Synced repo 📂MyRepo in 5 sec
 .LINK
 	https://github.com/fleschutz/PowerShell
 .NOTES
@@ -40,7 +40,7 @@ try {
 	if ($lastExitCode -ne "0") { throw "'git push' failed" }
 
 	[int]$Elapsed = $StopWatch.Elapsed.TotalSeconds
-	"✔️ Synced repo 📂$pathName in $Elapsed sec"
+	"✅ Synced repo 📂$pathName in $Elapsed sec"
 	exit 0 # success
 } catch {
 	"⚠️ Error in line $($_.InvocationInfo.ScriptLineNumber): $($Error[0])"

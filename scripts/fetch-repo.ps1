@@ -10,7 +10,7 @@
 	⏳ (1/3) Searching for Git executable...  git version 2.41.0.windows.3
 	⏳ (2/3) Checking local repository...     C:\Repos\rust
 	⏳ (3/3) Fetching updates (including submodules)...
-	✔️ Updates fetched into 📂rust repo in 2s.
+	✅ Updates fetched into 📂rust repo in 2s.
 .LINK
 	https://github.com/fleschutz/PowerShell
 .NOTES
@@ -35,7 +35,7 @@ try {
 	if ($lastExitCode -ne "0") { throw "'git fetch --all' failed with exit code $lastExitCode" }
 	
 	[int]$elapsed = $stopWatch.Elapsed.TotalSeconds
-	"✔️ Updates fetched into 📂$repoDirName repo in $($elapsed)s."
+	"✅ Updates fetched into 📂$repoDirName repo in $($elapsed)s."
 	exit 0 # success
 } catch {
 	"⚠️ Error in line $($_.InvocationInfo.ScriptLineNumber): $($Error[0])"

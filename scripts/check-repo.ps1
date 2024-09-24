@@ -71,7 +71,7 @@ try {
 
 	$repoDirName = (Get-Item "$FullPath").Name
 	[int]$elapsed = $stopWatch.Elapsed.TotalSeconds
-	"✔️ Checked 📂$repoDirName repo in $($elapsed)s."
+	"✅ Checked 📂$repoDirName repo in $($elapsed)s."
 	exit 0 # success
 } catch {
 	"⚠️ Error in line $($_.InvocationInfo.ScriptLineNumber): $($Error[0])"

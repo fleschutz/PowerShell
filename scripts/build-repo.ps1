@@ -9,7 +9,7 @@
 	PS> ./build-repo.ps1 C:\Repos\ninja
 	⏳ Building 📂ninja using CMakeLists.txt into 📂ninja/_Build_Results...
 	...
-	✔️ Built 📂ninja repository in 47 sec.
+	✅ Built 📂ninja repository in 47 sec.
 .LINK
 	https://github.com/fleschutz/PowerShell
 .NOTES
@@ -143,7 +143,7 @@ try {
 
 	$repoDirName = (Get-Item "$path").Name
 	[int]$elapsed = $stopWatch.Elapsed.TotalSeconds
-	"✔️ Built 📂$repoDirName repository in $elapsed sec."
+	"✅ Built 📂$repoDirName repository in $elapsed sec."
 	exit 0 # success
 } catch {
 	"⚠️ Error in line $($_.InvocationInfo.ScriptLineNumber): $($Error[0])"

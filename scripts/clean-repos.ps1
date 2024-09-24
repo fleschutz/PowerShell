@@ -46,7 +46,7 @@ try {
 		if ($lastExitCode -ne "0") { throw "'git clean -xfd -f' in submodules failed with exit code $lastExitCode" }
 	}
 	[int]$elapsed = $stopWatch.Elapsed.TotalSeconds
-	"✔️ Cleaned $numFolders Git repos under 📂$parentDirName in $elapsed sec"
+	"✅ Cleaned $numFolders Git repos under 📂$parentDirName in $elapsed sec"
 	exit 0 # success
 } catch {
 	"⚠️ Error in line $($_.InvocationInfo.ScriptLineNumber): $($Error[0])"

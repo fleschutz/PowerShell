@@ -63,7 +63,7 @@ try {
 		}
 	}
 	[int]$elapsed = $stopWatch.Elapsed.TotalSeconds
-	"✔️ Cloned $cloned additional Git repos into 📂$targetDirName in $($elapsed)s."
+	"✅ Cloned $cloned additional Git repos into 📂$targetDirName in $($elapsed)s."
 	exit 0 # success
 } catch {
 	"⚠️ Error in line $($_.InvocationInfo.ScriptLineNumber): $($Error[0])"
