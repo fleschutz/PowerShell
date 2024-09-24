@@ -11,7 +11,7 @@
 	⏳ (2/4) Checking local repository...     C:\Repos\rust
 	⏳ (3/4) Pulling remote updates...
 	⏳ (4/4) Updating submodules...
-	✔️ Updates pulled into 📂rust repo in 14s.
+	✅ Updates pulled into 📂rust repo in 14s.
 .LINK
 	https://github.com/fleschutz/PowerShell
 .NOTES
@@ -45,7 +45,7 @@ try {
 	if ($lastExitCode -ne "0") { throw "'git submodule update' failed with exit code $lastExitCode" }
 
 	[int]$elapsed = $stopWatch.Elapsed.TotalSeconds
-	"✔️ Updates pulled into 📂$pathToRepoName repo in $($elapsed)s."
+	"✅ Updates pulled into 📂$pathToRepoName repo in $($elapsed)s."
 	exit 0 # success
 } catch {
 	"⚠️ Error: $($Error[0]) in script line $($_.InvocationInfo.ScriptLineNumber)"
