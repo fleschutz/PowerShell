@@ -10,7 +10,7 @@
 	
 	REPOSITORY   LATEST TAG   BRANCH    REMOTE URL                        STATUS
 	----------   ----------   ------    ----------                        ------
-	📂cmake      v3.30.2      master    https://github.com/Kitware/CMake  ✔️clean ↓0
+	📂cmake      v3.30.2      master    https://github.com/Kitware/CMake  ✅clean ↓0
 	...
 .LINK
 	https://github.com/fleschutz/PowerShell
@@ -34,7 +34,7 @@ function ListRepos {
 		$remoteURL = (git -C "$dir" remote get-url origin)
 		$numCommits = (git -C "$dir" rev-list HEAD...origin/$branch --count)
 		$status = (git -C "$dir" status --short)
-		if ("$status" -eq "") { $status = "✔️clean" }
+		if ("$status" -eq "") { $status = "✅clean" }
 		elseif ("$status" -like " M *") { $status = "⚠️changed" }
 		New-Object PSObject -property @{'REPOSITORY'="📂$dirName";'LATEST TAG'="$latestTag";'BRANCH'="$branch";'REMOTE URL'="$remoteURL";'STATUS'="$status ↓$numCommits"}
 	}
