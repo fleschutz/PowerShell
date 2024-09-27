@@ -44,11 +44,11 @@ try {
 		$uptime = New-TimeSpan -Start $lastBootTime -End (Get-Date)
 	}
 	$status = "✅"
-	$pending = "No pending reboot"
+	$pending = ""
 	if ($IsLinux) {
 		if (Test-Path "/var/run/reboot-required") {
 			$status = "⚠️ "
-			$pending = "Pending reboot (found: /var/run/reboot-required)"
+			$pending = "with pending reboot (found /var/run/reboot-required)"
 		}
 	} else {
 		$reason = ""
@@ -84,10 +84,10 @@ try {
 		}
 		if ($reason -ne "") {
 			$status = "⚠️ "
-			$pending = "Pending reboot (registry got $($reason.substring(2)))"
+			$pending = "with pending reboot (registry got $($reason.substring(2)))"
 		}
 	}
-	Write-Host "$status $(hostname) is up for $(TimeSpanAsString $uptime) since $($lastBootTime.ToShortDateString()) - $pending"
+	Write-Host "$status $(hostname) is up for $(TimeSpanAsString $uptime) since $($lastBootTime.ToShortDateString()) $pending"
 	exit 0 # success
 } catch {
 	"⚠️ Error in line $($_.InvocationInfo.ScriptLineNumber): $($Error[0])"
