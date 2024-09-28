@@ -13,7 +13,7 @@
 	Specifies # of times to send the packet (3 by default)
 .EXAMPLE
 	PS> ./wake-up.ps1 11:22:33:44:55:66 192.168.100.100
-	✔️ Magic packet sent 3x to IP 192.168.100.100, UDP port 9 - wait a minute until the computer fully boots up.
+	✅ Magic packet sent to IP 192.168.100.100, UDP port 9, 3x - wait a minute until the computer fully boots up.
 .LINK
 	https://github.com/fleschutz/PowerShell
 .NOTES
@@ -42,7 +42,7 @@ try {
 		Send-WOL $macAddr.Trim() $ipAddr.Trim() $udpPort
 		Start-Sleep -milliseconds 100	
 	}
-	"✔️ Magic packet sent $($numTimes)x to IP $ipAddr, UDP port $udpPort - wait a minute until the computer fully boots up."
+	"✅ Magic packet sent to IP $ipAddr, UDP port $udpPort, $($numTimes)x - wait a minute until the computer fully boots up."
 	exit 0 # success
 } catch {
 	"⚠️ Error in line $($_.InvocationInfo.ScriptLineNumber): $($Error[0])"
