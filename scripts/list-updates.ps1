@@ -34,7 +34,7 @@ try {
 		Write-Progress -completed "Done."
 	}
 	" "
-	"NOTE: Use the script 'install-updates.ps1' to install the listed updates."
+	"NOTE: Execute script 'install-updates.ps1' to install the listed updates."
 	exit 0 # success
 } catch {
 	"⚠️ Error in line $($_.InvocationInfo.ScriptLineNumber): $($Error[0])"
