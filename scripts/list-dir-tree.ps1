@@ -1,9 +1,9 @@
 ﻿<#
 .SYNOPSIS
-	Lists a directory tree
+	Lists a dir tree
 .DESCRIPTION
 	This PowerShell script lists all files and folders in a neat directory tree (including icon and size).
-.PARAMETER Path
+.PARAMETER path
 	Specifies the path to the directory tree
 .EXAMPLE
 	PS> ./list-dir-tree.ps1 C:\MyFolder
@@ -16,7 +16,7 @@
 	Author: Markus Fleschutz | License: CC0
 #>
 
-param([string]$Path = "$PWD")
+param([string]$path = "$PWD")
 
 function GetFileIcon([string]$suffix) {
 	switch ($suffix) {
@@ -28,6 +28,9 @@ function GetFileIcon([string]$suffix) {
 	".jpg"	{return "📸"}
 	".mp3"	{return "🎵"}
 	".mkv"	{return "🎬"}
+	".png"	{return "📸"}
+	".rar"  {return "🎁"}
+	".tar"  {return "🎁"}
 	".zip"  {return "🎁"}
 	default {return "📄"}
 	}
@@ -45,7 +48,7 @@ function Bytes2String([int64]$bytes) {
 	return "$($Bytes)TB"
 }
 
-function ListDirectory([string]$path, [int]$depth) {
+function ListDir([string]$path, [int]$depth) {
 	$depth++
 	$items = Get-ChildItem -path $path
 	foreach($item in $items) {
@@ -53,8 +56,7 @@ function ListDirectory([string]$path, [int]$depth) {
 		for ($i = 1; $i -lt $depth; $i++) { Write-Host "│ " -noNewline }
 		if ($item.Mode -like "d*") {
 			Write-Output "├📂$Filename"
-			ListDirectory "$path\$filename" $depth
-			$global:folders++
+			ListDir "$path\$filename" $depth
 		} else {
 			$icon = GetFileIcon $item.Extension
 			Write-Output "├$($icon)$filename ($(Bytes2String $item.Length))"
@@ -62,14 +64,15 @@ function ListDirectory([string]$path, [int]$depth) {
 			$global:bytes += $item.Length
 		}
 	}
+	$global:folders++
 }
 
 try {
-	[int64]$global:folders = 1
+	[int64]$global:folders = 0
 	[int64]$global:files = 0
 	[int64]$global:bytes = 0
-	ListDirectory $Path 0
-	Write-Output " ($($global:folders) folders, $($global:files) files, $(Bytes2String $global:bytes) file size in total)"
+	ListDir $path 0
+	Write-Output " ($($global:folders) folders, $($global:files) files, $(Bytes2String $global:bytes) total)"
 	exit 0 # success
 } catch {
 	"⚠️ Error in line $($_.InvocationInfo.ScriptLineNumber): $($Error[0])"
