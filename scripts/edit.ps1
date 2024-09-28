@@ -17,7 +17,7 @@ param([string]$path = "")
 
 function TryEditor { param([string]$editor, [string]$path)
 	try {
-		Write-Host -noNewline "$editor·"
+		Write-Host "$editor.." -noNewline
 		& $editor "$path"
 		if ($lastExitCode -ne "0") {
 			"⚠️ Can't execute '$editor' - make sure it's installed and available"
@@ -32,7 +32,8 @@ function TryEditor { param([string]$editor, [string]$path)
 try {
 	if ($path -eq "" ) { $path = Read-Host "Enter the path to the text file" }
 
-	Write-Host -noNewline "Trying "
+	Write-Host "Searching for " -noNewline
+	TryEditor "neovim" $path
 	TryEditor "vim" $path
 	TryEditor "vi" $path
 	TryEditor "nano" $path
