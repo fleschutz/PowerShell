@@ -18,7 +18,7 @@
 Write-Host "`n   N E T W O R K" -foregroundColor green
 & "$PSScriptRoot/check-firewall"
 & "$PSScriptRoot/list-ip-addresses.ps1"
-& "$PSScriptRoot/ping-local-hosts.ps1"
+& "$PSScriptRoot/ping-local-devices.ps1"
 & "$PSScriptRoot/list-ssh-key.ps1"
 & "$PSScriptRoot/ping-remote-hosts.ps1"
 & "$PSScriptRoot/check-dns.ps1"
