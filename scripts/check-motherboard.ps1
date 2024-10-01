@@ -15,7 +15,11 @@
 #>
 
 try {
-	Get-WmiObject -Class Win32_BaseBoard
+	if ($IsLinux) {
+	} else {
+		$details = Get-WmiObject -Class Win32_BaseBoard
+		"✅ $($details.Product) motherboard by $($details.Manufacturer)"
+	}
 	exit 0 # success
 } catch {
 	"⚠️ Error in line $($_.InvocationInfo.ScriptLineNumber): $($Error[0])"
