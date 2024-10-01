@@ -1,6 +1,6 @@
 ﻿<#
 .SYNOPSIS
-	Ping a host continuously
+	Ping a host
 .DESCRIPTION
 	This PowerShell script pings the given host continously and shows the roundtrip times in a horizontal chart.
 .PARAMETER hostname
@@ -9,11 +9,12 @@
 	Specifies the time interval in milliseconds to repeat the ping (1000 by default)
 .EXAMPLE
 	PS> ./ping-host.ps1
-	
-	Ping Roundtrip Times to Host: windows.com
-	██████████████ 136ms
-	████████████████ 154ms
-	█████████████████████████ 234ms
+	-----------------------------------------
+	   Ping Roundtrip Times to windows.com
+	-----------------------------------------
+	#1 ██████████████ 136ms
+	#2 ████████████████ 154ms
+	#3 █████████████████████████ 234ms
 	...
 .LINK
 	https://github.com/fleschutz/PowerShell
@@ -36,7 +37,7 @@ function GetPingLatency([string]$hostname) {
 }
 
 function WriteChartLine { param([float]$value, [float]$maxValue, [string]$text)
-	$num = ($value * 110.0) / $maxValue
+	$num = ($value * 108.0) / $maxValue
 	while ($num -ge 1.0) {
 		Write-Host -noNewLine "█"
 		$num -= 1.0
@@ -60,11 +61,14 @@ function WriteChartLine { param([float]$value, [float]$maxValue, [string]$text)
 }
 
 try {
-	Write-Host "`nPing Roundtrip Times to Host: $($hostname)" -foregroundColor green
+	& "$PSScriptRoot/write-headline.ps1" "Ping Roundtrip Times to $($hostname)"
+	[int]$count = 1
 	do {
 		[float]$latency = GetPingLatency $hostname
+		Write-Host "#$count " -noNewline
 		WriteChartLine $latency 1000.0 "$($latency)ms"
 		Start-Sleep -Milliseconds $timeInterval
+		$count++
 	} while($true)
 	exit 0 # success
 } catch {

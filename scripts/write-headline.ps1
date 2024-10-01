@@ -7,9 +7,9 @@
 	Specifies the text to write
 .EXAMPLE
 	PS> ./write-headline.ps1 "Hello World"
-
-	* Hello World *
-	---------------
+	-----------------
+	   Hello World  
+	-----------------
 .LINK
 	https://github.com/fleschutz/PowerShell
 .NOTES
@@ -21,11 +21,10 @@ param([string]$text = "")
 try {
 	if ($text -eq "") { $text = Read-Host "Enter the text to write" }
 
-	Write-Host "`n* $text *" -foregroundColor green
 	[int]$len = $text.Length
-	[string]$line = "----"
+	[string]$line = "------"
 	for ([int]$i = 0; $i -lt $len; $i++) { $line += "-" }
-	Write-Host "$line" -foregroundColor green
+	Write-Host "`n$line`n   $text`n$line" -foregroundColor green
 	exit 0 # success
 } catch {
 	"⚠️ Error in line $($_.InvocationInfo.ScriptLineNumber): $($Error[0])"
