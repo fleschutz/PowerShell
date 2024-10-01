@@ -1,4 +1,4 @@
-﻿<#
+<#
 .SYNOPSIS
         Lists distros for Windows Subsystem for Linux
 .DESCRIPTION

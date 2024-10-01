@@ -1,4 +1,4 @@
-﻿function Watch-File {
+function Watch-File {
 
     Param(
         [Parameter(Mandatory=$false)]

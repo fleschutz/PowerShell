@@ -1,4 +1,4 @@
-﻿<#
+<#
 .SYNOPSIS
 	Performs a text-to-speech test
 .DESCRIPTION

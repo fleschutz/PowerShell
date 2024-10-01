@@ -1,4 +1,4 @@
-﻿<#
+<#
 .SYNOPSIS
 	Lists all encrypted files in a directory tree
 .DESCRIPTION
@@ -8,7 +8,7 @@
 .EXAMPLE
 	PS> ./list-encrypted-files.ps1 C:\Windows
 	...
-	✔️ Found 0 encrypted files within 📂C:\Windows in 41 sec
+	✅ Found 0 encrypted files within 📂C:\Windows in 41 sec
 .LINK
 	https://github.com/fleschutz/PowerShell
 .NOTES
@@ -29,7 +29,7 @@ try {
 	}
 	Write-Progress -completed " "
 	[int]$elapsed = $stopWatch.Elapsed.TotalSeconds
-	"✔️ Found $count encrypted files within 📂$path in $elapsed sec" 
+	"✅ Found $count encrypted files within 📂$path in $elapsed sec" 
 	exit 0 # success
 } catch {
 	"⚠️ Error in line $($_.InvocationInfo.ScriptLineNumber): $($Error[0])"

@@ -1,4 +1,4 @@
-﻿<#
+<#
 .SYNOPSIS
 	Converts a SQL database table to a .CSV file
 .DESCRIPTION

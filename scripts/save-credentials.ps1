@@ -1,4 +1,4 @@
-﻿<#
+<#
 .SYNOPSIS
 	Saves credentials encrypted
 .DESCRIPTION
@@ -8,7 +8,7 @@
 .EXAMPLE
 	PS> ./save-credentials.ps1
 	Enter username and password, please.
- 	✔️ Your credentials have been saved encrypted into C:\Users\Markus\my.credentials
+ 	✅ Your credentials have been saved encrypted into C:\Users\Markus\my.credentials
 .LINK
 	https://github.com/fleschutz/PowerShell
 .NOTES
@@ -21,7 +21,7 @@ try {
 	Write-Host "Enter username and password, please." -foreground red
 	$cred = Get-Credential
 	$cred.Password | ConvertFrom-SecureString | Set-Content "$TargetFile"
-	"✔️ Your credentials have been saved encrypted into $TargetFile"
+	"✅ Your credentials have been saved encrypted into $TargetFile"
 	exit 0 # success
 } catch {
 	"⚠️ Error in line $($_.InvocationInfo.ScriptLineNumber): $($Error[0])"

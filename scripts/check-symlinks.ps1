@@ -1,4 +1,4 @@
-﻿<#
+<#
 .SYNOPSIS
 	Checks symlinks in a folder
 .DESCRIPTION
@@ -9,7 +9,7 @@
 .EXAMPLE
 	PS> ./check-symlinks C:\Users
 	⏳ Checking symlinks at 📂C:\Users including subfolders...
-	✔️ Found 0 broken symlinks at 📂C:\Users in 60 sec
+	✅ Found 0 broken symlinks at 📂C:\Users in 60 sec
 .LINK
 	https://github.com/fleschutz/PowerShell
 .NOTES
@@ -42,11 +42,11 @@ try {
 
 	[int]$Elapsed = $StopWatch.Elapsed.TotalSeconds
 	if ($NumTotal -eq 0) {
-		"✔️ No symlink found at 📂$FullPath in $Elapsed sec" 
+		"✅ No symlink found at 📂$FullPath in $Elapsed sec" 
 	} elseif ($NumBroken -eq 1) {
-		"✔️ Found $NumBroken broken symlink at 📂$FullPath in $Elapsed sec"
+		"✅ Found $NumBroken broken symlink at 📂$FullPath in $Elapsed sec"
 	} else {
-		"✔️ Found $NumBroken broken symlinks at 📂$FullPath in $Elapsed sec"
+		"✅ Found $NumBroken broken symlinks at 📂$FullPath in $Elapsed sec"
 	}
 	exit $NumBroken
 } catch {

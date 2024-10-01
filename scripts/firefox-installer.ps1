@@ -1,4 +1,4 @@
-﻿<#
+<#
 .SYNOPSIS
 	firefox installer
 .DESCRIPTION

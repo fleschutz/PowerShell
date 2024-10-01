@@ -1,4 +1,4 @@
-﻿<#
+<#
 .SYNOPSIS
 	Writes the current time 
 .DESCRIPTION

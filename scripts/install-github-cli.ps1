@@ -1,4 +1,4 @@
-﻿<#
+<#
 .SYNOPSIS
 	Installs GitHub CLI
 .DESCRIPTION
@@ -26,7 +26,7 @@ try {
 		if ($lastExitCode -ne "0") { throw "Installation of GitHub CLI failed, maybe it's already installed." }
 	}
 	[int]$elapsed = $stopWatch.Elapsed.TotalSeconds
-	"✔️ GitHub CLI installed successfully in $($elapsed)s - to authenticate execute: 'gh auth login'"
+	"✅ GitHub CLI installed successfully in $($elapsed)s - to authenticate execute: 'gh auth login'"
 	exit 0 # success
 } catch {
 	"⚠️ Error in line $($_.InvocationInfo.ScriptLineNumber): $($Error[0])"

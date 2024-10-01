@@ -1,4 +1,4 @@
-﻿<#
+<#
 .SYNOPSIS
 	Speaks file content by text-to-speech
 .DESCRIPTION

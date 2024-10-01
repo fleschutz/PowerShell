@@ -1,4 +1,4 @@
-﻿<#
+<#
 .SYNOPSIS
 	Checks all XML files in a directory tree
 .DESCRIPTION
@@ -8,7 +8,7 @@
 .EXAMPLE
 	PS> ./check-xml-files.ps1 C:\Windows
 	...
-	✔️ Checked 3387 XML files (2462 invalid, 925 valid) within 📂C:\Windows in 116 sec
+	✅ Checked 3387 XML files (2462 invalid, 925 valid) within 📂C:\Windows in 116 sec
 .LINK
 	https://github.com/fleschutz/PowerShell
 .NOTES
@@ -31,7 +31,7 @@ try {
 
 	[int]$total = $valid + $invalid
         [int]$elapsed = $stopWatch.Elapsed.TotalSeconds
-        "✔️ Checked $total XML files ($invalid invalid, $valid valid) within 📂$path in $elapsed sec"
+        "✅ Checked $total XML files ($invalid invalid, $valid valid) within 📂$path in $elapsed sec"
 	exit 0 # success
 } catch {
 	"⚠️ Error in line $($_.InvocationInfo.ScriptLineNumber): $($Error[0])"

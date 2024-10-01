@@ -1,4 +1,4 @@
-﻿<#
+<#
 .SYNOPSIS
 	Lists the Fibonacci numbers
 .DESCRIPTION

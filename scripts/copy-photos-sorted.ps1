@@ -1,4 +1,4 @@
-﻿<#
+<#
 .SYNOPSIS
 	Copy photos sorted by year and month
 .DESCRIPTION
@@ -10,7 +10,7 @@
 .EXAMPLE
 	PS> ./copy-photos-sorted.ps1 D:\iPhone\DCIM C:\MyPhotos
 	⏳ Copying IMG_20240903_134445.jpg to C:\MyPhotos\2024\09 SEP\...
-	✔️ Copied 1 photo (0 skipped) to 📂C:\MyPhotos in 41s.
+	✅ Copied 1 photo (0 skipped) to 📂C:\MyPhotos in 41s.
 .LINK
 	https://github.com/fleschutz/PowerShell
 .NOTES
@@ -88,7 +88,7 @@ try {
 	}
 	[int]$elapsed = $stopWatch.Elapsed.TotalSeconds
 	[int]$copied = $files.Count - $skipped
-	"✔️ Copied $copied photos ($skipped skipped) to 📂$targetDir in $($elapsed)s."
+	"✅ Copied $copied photos ($skipped skipped) to 📂$targetDir in $($elapsed)s."
 	exit 0 # success
 } catch {
 	"⚠️ Error in line $($_.InvocationInfo.ScriptLineNumber): $($Error[0])"

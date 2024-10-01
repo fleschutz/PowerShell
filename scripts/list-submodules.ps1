@@ -1,4 +1,4 @@
-﻿<#
+<#
 .SYNOPSIS
 	Lists the submodules in a Git repository
 .DESCRIPTION

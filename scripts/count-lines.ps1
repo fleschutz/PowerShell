@@ -1,4 +1,4 @@
-﻿<#
+<#
 .SYNOPSIS
 	Counts the number of lines 
 .DESCRIPTION
@@ -7,7 +7,7 @@
 	Specifies the path to the directory tree.
 .EXAMPLE
 	PS> ./count-lines.ps1 C:\Repos\cmake
-	✔️ Found 639921 lines in 11411 text files within 📂cmake in 34 sec.
+	✅ Found 639921 lines in 11411 text files within 📂cmake in 34 sec.
 .LINK
 	https://github.com/fleschutz/PowerShell
 .NOTES
@@ -32,7 +32,7 @@ try {
 	$folderName = (Get-Item "$pathToDirTree").Name
 	Write-Progress -completed " "
 	[int]$Elapsed = $stopWatch.Elapsed.TotalSeconds
-	"✔️ Found $numLines lines in $numFiles text files within 📂$folderName in $Elapsed sec." 
+	"✅ Found $numLines lines in $numFiles text files within 📂$folderName in $Elapsed sec." 
 	exit 0 # success
 } catch {
 	"⚠️ Error in line $($_.InvocationInfo.ScriptLineNumber): $($Error[0])"

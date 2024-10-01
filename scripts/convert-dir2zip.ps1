@@ -1,4 +1,4 @@
-﻿<#
+<#
 .SYNOPSIS
 	Converts a directory into a compressed .ZIP file
 .DESCRIPTION
@@ -9,7 +9,7 @@
 	Specifies the path to the target .ZIP file (default is dirPath.zip)
 .EXAMPLE
 	PS> ./convert-dir2zip.ps1 C:\Windows Win.zip
-	✔️ Converted into compressed Win.zip in 291s.
+	✅ Converted into compressed Win.zip in 291s.
 .LINK
 	https://github.com/fleschutz/PowerShell
 .NOTES
@@ -28,7 +28,7 @@ try {
 	Compress-Archive -path $dirPath -destinationPath $zipPath
 
 	[int]$elapsed = $StopWatch.Elapsed.TotalSeconds
-	"✔️ Converted into compressed $zipPath in $($elapsed)s."
+	"✅ Converted into compressed $zipPath in $($elapsed)s."
 	exit 0 # success
 } catch {
 	"⚠️ Error in line $($_.InvocationInfo.ScriptLineNumber): $($Error[0])"

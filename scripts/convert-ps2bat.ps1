@@ -1,4 +1,4 @@
-﻿<#
+<#
 .SYNOPSIS
 	Converts PowerShell scripts to batch files
 .DESCRIPTION

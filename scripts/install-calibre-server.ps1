@@ -1,4 +1,4 @@
-﻿<#
+<#
 .SYNOPSIS
 	Installs the Calibre server (needs admin rights)
 .DESCRIPTION
@@ -43,7 +43,7 @@ try {
 	& calibre-server --port $port --num-per-page 100 --userdb $userDB --log $logfile --daemonize $HOME/'Calibre Library'
 
 	[int]$elapsed = $stopWatch.Elapsed.TotalSeconds
-	"✔️ Installed Calibre server on port $port in $($elapsed)s (media at: $mediaFolder, user DB: $userDB, log to: $logfile)"
+	"✅ Installed Calibre server on port $port in $($elapsed)s (media at: $mediaFolder, user DB: $userDB, log to: $logfile)"
 	exit 0 # success
 } catch {
 "⚠️ Error in line $($_.InvocationInfo.ScriptLineNumber): $($Error[0])"

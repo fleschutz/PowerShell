@@ -1,4 +1,4 @@
-﻿<#
+<#
 .SYNOPSIS
         Moves the mouse pointer
 .DESCRIPTION

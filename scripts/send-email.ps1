@@ -1,4 +1,4 @@
-﻿<#
+<#
 .SYNOPSIS
 	Sends an email message
 .DESCRIPTION
@@ -36,7 +36,7 @@ try {
 	$msg.subject = $Subject
 	$msg.body = $Body
 	$smtp.Send($msg)
-	"✔️  Message sent."
+	"✅  Message sent."
 	exit 0 # success
 } catch {
 	"⚠️ Error in line $($_.InvocationInfo.ScriptLineNumber): $($Error[0])"

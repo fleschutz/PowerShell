@@ -1,4 +1,4 @@
-﻿<#
+<#
 .SYNOPSIS
 	Creates a new Git branch 
 .DESCRIPTION
@@ -15,7 +15,7 @@
 	⏳ (4/6) Creating new branch...
 	⏳ (5/6) Pushing updates...
 	⏳ (6/6) Updating submodules...
-	✔️ Created branch 'test123' based on 'main' in 📂rust repo in 18s.
+	✅ Created branch 'test123' based on 'main' in 📂rust repo in 18s.
 .LINK
 	https://github.com/fleschutz/PowerShell
 .NOTES
@@ -62,7 +62,7 @@ try {
 	if ($lastExitCode -ne "0") { throw "'git submodule update' failed with exit code $lastExitCode" }
 
 	[int]$elapsed = $stopWatch.Elapsed.TotalSeconds
-	"✔️ Created branch '$newBranch' based on '$currentBranch' in 📂$repoName repo in $($elapsed)s."
+	"✅ Created branch '$newBranch' based on '$currentBranch' in 📂$repoName repo in $($elapsed)s."
 	exit 0 # success
 } catch {
 	"⚠️ Error in line $($_.InvocationInfo.ScriptLineNumber): $($Error[0])"

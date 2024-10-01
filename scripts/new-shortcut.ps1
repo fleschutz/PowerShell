@@ -1,4 +1,4 @@
-﻿<#
+<#
 .SYNOPSIS
 	Creates a new shortcut file
 .DESCRIPTION
@@ -32,7 +32,7 @@ try {
 	$sc.Description = "$description"
 	$sc.save()
 
-	"✔️ created new shortcut $shortcut ⭢ $target"
+	"✅ created new shortcut $shortcut ⭢ $target"
 	exit 0 # success
 } catch {
 	"⚠️ Error in line $($_.InvocationInfo.ScriptLineNumber): $($Error[0])"

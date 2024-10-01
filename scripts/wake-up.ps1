@@ -1,4 +1,4 @@
-﻿<#
+<#
 .SYNOPSIS
 	Wakes up a computer using Wake-on-LAN
 .DESCRIPTION

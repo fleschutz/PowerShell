@@ -1,4 +1,4 @@
-﻿<#
+<#
 .SYNOPSIS
 	Checks PnP devices
 .DESCRIPTION

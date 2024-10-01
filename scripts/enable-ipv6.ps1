@@ -1,4 +1,4 @@
-﻿<#
+<#
 .SYNOPSIS
 	Enables IPv6
 .DESCRIPTION
@@ -14,7 +14,7 @@
 
 try {
 	Enable-NetAdapterBinding -Name '*' -ComponentID 'ms_tcpip6'
-	"✔️ IPv6 is enabled now."
+	"✅ IPv6 is enabled now."
 	exit 0 # success
 } catch {
 	"⚠️ Error in line $($_.InvocationInfo.ScriptLineNumber): $($Error[0])"

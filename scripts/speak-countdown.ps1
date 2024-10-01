@@ -1,4 +1,4 @@
-﻿<#
+<#
 .SYNOPSIS
 	Speaks a countdown by text-to-speech
 .DESCRIPTION

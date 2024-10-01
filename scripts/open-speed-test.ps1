@@ -1,4 +1,4 @@
-﻿<#
+<#
 .SYNOPSIS
 	Opens Cloudflare's Speed Test
 .DESCRIPTION

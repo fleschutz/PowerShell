@@ -1,4 +1,4 @@
-﻿<#
+<#
 .SYNOPSIS
         Uninstalls bloatware
 .DESCRIPTION
@@ -61,5 +61,5 @@ winget uninstall 'Netflix'
 winget uninstall 'LinkedIn'
 winget uninstall 'Prime Video for Windows'
 
-"✔️ Finished"
+"✅ Finished"
 exit 0 # success

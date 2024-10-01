@@ -1,4 +1,4 @@
-﻿<#
+<#
 .SYNOPSIS
 	Start an IPFS server 
 .DESCRIPTION
@@ -48,7 +48,7 @@ try {
 	Start-Process nohup -ArgumentList 'ipfs','daemon' -RedirectStandardOutput "$HOME/console.out" -RedirectStandardError "$HOME/console.err"
 
 	[int]$Elapsed = $StopWatch.Elapsed.TotalSeconds
-	"✔️  started IPFS server in $Elapsed sec"
+	"✅  started IPFS server in $Elapsed sec"
 	"⚠️ NOTE: make sure your router does not block TCP/UDP port 4001 for IPv4 and IPv6"
 	exit 0 # success
 } catch {

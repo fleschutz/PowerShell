@@ -1,4 +1,4 @@
-﻿<#
+<#
 .SYNOPSIS
 	Removes old directories
 .DESCRIPTION
@@ -37,7 +37,7 @@ try {
 		}
 	}
 	[int]$elapsed = $stopWatch.Elapsed.TotalSeconds
-	"✔️ Removed $numRemoved of $count subfolders older than $numDays days in $elapsed sec"
+	"✅ Removed $numRemoved of $count subfolders older than $numDays days in $elapsed sec"
 	exit 0 # success
 } catch {
 	"⚠️ Error in line $($_.InvocationInfo.ScriptLineNumber): $($Error[0])"

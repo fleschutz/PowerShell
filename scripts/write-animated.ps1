@@ -1,4 +1,4 @@
-﻿<#
+<#
 .SYNOPSIS
 	Writes animated text
 .DESCRIPTION

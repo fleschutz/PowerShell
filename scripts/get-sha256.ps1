@@ -1,4 +1,4 @@
-﻿<#
+<#
 .SYNOPSIS
 	Prints the SHA256 checksum of a file
 .DESCRIPTION
@@ -7,7 +7,7 @@
 	Specifies the path to the file
 .EXAMPLE
 	PS> ./get-sha256 C:\MyFile.txt
-	✔️ SHA256 hash is: CEB4AD71524996EB8AA3ADCE04F1E45636A4B58B8BF4462E6971CF2E56B4293E
+	✅ SHA256 hash is: CEB4AD71524996EB8AA3ADCE04F1E45636A4B58B8BF4462E6971CF2E56B4293E
 .LINK
 	https://github.com/fleschutz/PowerShell
 .NOTES
@@ -21,7 +21,7 @@ try {
 
 	$Result = get-filehash $file -algorithm SHA256
 
-	"✔️ SHA256 hash is: $($Result.Hash)"
+	"✅ SHA256 hash is: $($Result.Hash)"
 	exit 0 # success
 } catch {
 	"⚠️ Error in line $($_.InvocationInfo.ScriptLineNumber): $($Error[0])"

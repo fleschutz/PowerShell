@@ -1,4 +1,4 @@
-﻿<#
+<#
 .SYNOPSIS
 	Executes tasks on desktop login
 .DESCRIPTION

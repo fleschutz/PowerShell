@@ -1,4 +1,4 @@
-﻿<#
+<#
 .SYNOPSIS
 	Removes a Git tag (locally, remote, or both)
 .DESCRIPTION
@@ -43,7 +43,7 @@ try {
 	}
 
 	[int]$Elapsed = $StopWatch.Elapsed.TotalSeconds
-	"✔️ removed tag '$TagName' in $Elapsed sec"
+	"✅ removed tag '$TagName' in $Elapsed sec"
 	exit 0 # success
 } catch {
 	"⚠️ Error in line $($_.InvocationInfo.ScriptLineNumber): $($Error[0])"

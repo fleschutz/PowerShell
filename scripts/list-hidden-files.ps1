@@ -1,4 +1,4 @@
-﻿<#
+<#
 .SYNOPSIS
 	Lists all hidden files in a directory tree
 .DESCRIPTION
@@ -8,7 +8,7 @@
 .EXAMPLE
 	PS> ./list-hidden-files.ps1 C:\Windows
 	...
-	✔️ Found 256 hidden files within 📂C:\Windows in 40 sec
+	✅ Found 256 hidden files within 📂C:\Windows in 40 sec
 .LINK
 	https://github.com/fleschutz/PowerShell
 .NOTES
@@ -29,7 +29,7 @@ try {
 	}
 	Write-Progress -completed " "
 	[int]$elapsed = $stopWatch.Elapsed.TotalSeconds
-	"✔️ Found $count hidden files within 📂$path in $elapsed sec" 
+	"✅ Found $count hidden files within 📂$path in $elapsed sec" 
 	exit 0 # success
 } catch {
 	"⚠️ Error in line $($_.InvocationInfo.ScriptLineNumber): $($Error[0])"

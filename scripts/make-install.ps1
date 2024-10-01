@@ -1,4 +1,4 @@
-﻿<#
+<#
 .SYNOPSIS
 	Copies newer EXE's + DLL's from the build directory to the installation directory
 .DESCRIPTION
@@ -23,7 +23,7 @@ try {
 	echo ------------------------------------------------------------------------------
 	echo.
 
-	"✔️ synced to %DST_DIR%"
+	"✅ synced to %DST_DIR%"
 	exit 0 # success
 } catch {
 	"⚠️ Error in line $($_.InvocationInfo.ScriptLineNumber): $($Error[0])"

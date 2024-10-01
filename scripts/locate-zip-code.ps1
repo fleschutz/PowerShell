@@ -1,4 +1,4 @@
-﻿<#
+<#
 .SYNOPSIS
 	Prints the geo location of a zip-code
 .DESCRIPTION

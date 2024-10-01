@@ -1,4 +1,4 @@
-﻿<#
+<#
 .SYNOPSIS
 	Sets a timer for a countdown
 .DESCRIPTION
@@ -24,7 +24,7 @@ try {
 		Start-Sleep -seconds 1
 	}
 
-	"✔️ $Seconds seconds countdown finished"
+	"✅ $Seconds seconds countdown finished"
 	exit 0 # success
 } catch {
 	"⚠️ Error in line $($_.InvocationInfo.ScriptLineNumber): $($Error[0])"

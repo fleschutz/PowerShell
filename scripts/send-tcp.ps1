@@ -1,4 +1,4 @@
-﻿<#
+<#
 .SYNOPSIS
 	Sends a TCP message to an IP address and port
 .DESCRIPTION
@@ -36,7 +36,7 @@ try {
         $Stream.Close()
         $Socket.Close()
 
-	"✔️  Done."
+	"✅  Done."
 	exit 0 # success
 } catch {
 	"⚠️ Error in line $($_.InvocationInfo.ScriptLineNumber): $($Error[0])"

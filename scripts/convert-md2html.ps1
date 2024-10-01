@@ -1,4 +1,4 @@
-﻿<#
+<#
 .SYNOPSIS
 	Converts Markdown file(s) into HTML 
 .DESCRIPTION
@@ -30,7 +30,7 @@ try {
 		pandoc --standalone --template "$PSScriptRoot/../data/templates/template.html" -s $_.name -o $TargetPath
 	}
 	[int]$Elapsed = $StopWatch.Elapsed.TotalSeconds
-	"✔️ converted in $Elapsed sec"
+	"✅ converted in $Elapsed sec"
 	exit 0 # success
 } catch {
 	"⚠️ Error in line $($_.InvocationInfo.ScriptLineNumber): $($Error[0])"

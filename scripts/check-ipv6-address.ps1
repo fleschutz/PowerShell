@@ -1,4 +1,4 @@
-﻿<#
+<#
 .SYNOPSIS
 	Checks an IPv6 address for validity
 .DESCRIPTION
@@ -7,7 +7,7 @@
 	Specifies the IPv6 address to check
 .EXAMPLE
 	PS> ./check-ipv6-address fe80::200:5aee:feaa:20a2
-	✔️ IPv6 fe80::200:5aee:feaa:20a2 is valid
+	✅ IPv6 fe80::200:5aee:feaa:20a2 is valid
 .LINK
 	https://github.com/fleschutz/PowerShell
 .NOTES
@@ -43,7 +43,7 @@ try {
 		$Address = read-host "Enter IPv6 address to validate"
 	}
 	if (IsIPv6AddressValid $Address) {
-		"✔️  IPv6 $Address is valid"
+		"✅  IPv6 $Address is valid"
 		exit 0 # success
 	} else {
 		write-warning "Invalid IPv6 address: $Address"

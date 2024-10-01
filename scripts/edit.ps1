@@ -1,4 +1,4 @@
-﻿<#
+<#
 .SYNOPSIS
 	Opens a text editor
 .DESCRIPTION

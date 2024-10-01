@@ -1,4 +1,4 @@
-﻿<#
+<#
 .SYNOPSIS
 	Plays a rattlesnake sound
 .DESCRIPTION

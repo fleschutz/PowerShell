@@ -1,4 +1,4 @@
-﻿<#
+<#
 .SYNOPSIS
 	Checks for Midnight
 .DESCRIPTION

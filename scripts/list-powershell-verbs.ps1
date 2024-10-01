@@ -1,4 +1,4 @@
-﻿<#
+<#
 .SYNOPSIS
 	Lists verbs in PowerShell
 .DESCRIPTION

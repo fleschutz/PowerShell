@@ -1,4 +1,4 @@
-﻿<#
+<#
 .SYNOPSIS
 	Remembers a text 
 .DESCRIPTION
@@ -7,7 +7,7 @@
 	Specifies the text to memorize
 .EXAMPLE
 	PS> ./remember.ps1 "Buy apples"
-	✔️ Saved to /home/Markus/Remember.csv in 0s.
+	✅ Saved to /home/Markus/Remember.csv in 0s.
 .LINK
 	https://github.com/fleschutz/PowerShell
 .NOTES
@@ -34,7 +34,7 @@ try {
 	$path = Resolve-Path $path
 
 	[int]$elapsed = $stopWatch.Elapsed.TotalSeconds
-	"✔️ Saved to $path in $($elapsed)s."
+	"✅ Saved to $path in $($elapsed)s."
 	exit 0 # success
 } catch {
 	"⚠️ Error in line $($_.InvocationInfo.ScriptLineNumber): $($Error[0])"

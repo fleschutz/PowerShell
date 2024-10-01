@@ -1,4 +1,4 @@
-﻿<#
+<#
 .SYNOPSIS
 	Installs basic apps
 .DESCRIPTION
@@ -9,7 +9,7 @@
 	⏳ (1) Loading data/basic-apps.csv...    37 apps listed
 	⏳ (2) Applications to install/upgrade:  7-Zip · Aquile Reader ...
 	...
-	✔️ Installed 37 basic apps (0 skipped) in 387 sec.
+	✅ Installed 37 basic apps (0 skipped) in 387 sec.
 .LINK
 	https://github.com/fleschutz/PowerShell
 .NOTES
@@ -47,7 +47,7 @@ try {
 	}
 	[int]$numInstalled = ($numEntries - $numSkipped)
 	[int]$elapsed = $stopWatch.Elapsed.TotalSeconds
-	"✔️ Installed $numInstalled basic apps ($numSkipped skipped) in $elapsed sec."
+	"✅ Installed $numInstalled basic apps ($numSkipped skipped) in $elapsed sec."
 	exit 0 # success
 } catch {
 	"⚠️ Error in line $($_.InvocationInfo.ScriptLineNumber): $($Error[0])"

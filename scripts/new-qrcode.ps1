@@ -1,4 +1,4 @@
-﻿<#
+<#
 .SYNOPSIS
 	Creates a QR code
 .DESCRIPTION
@@ -42,7 +42,7 @@ try {
 		"&color=" + $ForegroundColor + "&bgcolor=" + $BackgroundColor.Text + `
 		"&format=" + $fileFormat), $newFile)
 
-	"✔️ New QR code saved as: $newFile"
+	"✅ New QR code saved as: $newFile"
 	exit 0 # success
 } catch {
 	"⚠️ Error in line $($_.InvocationInfo.ScriptLineNumber): $($Error[0])"

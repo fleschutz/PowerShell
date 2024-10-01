@@ -1,4 +1,4 @@
-﻿<#
+<#
 .SYNOPSIS
 	Enables the god mode
 .DESCRIPTION
@@ -19,7 +19,7 @@ try {
 		ItemType = 'Directory'
 	}
 	$null = New-Item @GodModeSplat
-	"✔️ God mode enabled, please click the new desktop icon"
+	"✅ God mode enabled, please click the new desktop icon"
 	exit 0 # success
 } catch {
 	"⚠️ Error in line $($_.InvocationInfo.ScriptLineNumber): $($Error[0])"

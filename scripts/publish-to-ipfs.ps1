@@ -1,4 +1,4 @@
-﻿<#
+<#
 .SYNOPSIS
 	Publishes files & folders to IPFS
 .DESCRIPTION
@@ -50,7 +50,7 @@ try {
 	}
 
 	[int]$Elapsed = $StopWatch.Elapsed.TotalSeconds
-	"✔️ published $Count file(s)/folder(s) to IPFS in $Elapsed sec"
+	"✅ published $Count file(s)/folder(s) to IPFS in $Elapsed sec"
 	"  NOTE: to publish it to IPNS execute: ipfs name publish <HASH>"
 	exit 0 # success
 } catch {

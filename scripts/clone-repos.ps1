@@ -1,4 +1,4 @@
-﻿<#
+<#
 .SYNOPSIS
 	Clones Git repos
 .DESCRIPTION

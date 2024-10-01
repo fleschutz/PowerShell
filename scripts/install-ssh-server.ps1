@@ -1,4 +1,4 @@
-﻿<#
+<#
 .SYNOPSIS
 	Installs a SSH server (needs admin rights)
 .DESCRIPTION
@@ -37,7 +37,7 @@ try {
 	}
 
 	[int]$Elapsed = $StopWatch.Elapsed.TotalSeconds
-	"✔️ installed and started SSH server in $Elapsed sec"
+	"✅ installed and started SSH server in $Elapsed sec"
 	exit 0 # success
 } catch {
 	"⚠️ Error in line $($_.InvocationInfo.ScriptLineNumber): $($Error[0])"

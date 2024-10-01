@@ -1,4 +1,4 @@
-﻿<#
+<#
 .SYNOPSIS
 	Installs Unbound server (needs admin rights)
 .DESCRIPTION
@@ -58,7 +58,7 @@ try {
 	if ($lastExitCode -ne "0") { throw "'unbound-control status' failed" }
 
 	[int]$Elapsed = $StopWatch.Elapsed.TotalSeconds
-	"✔️ Installed Unbound in $Elapsed sec"
+	"✅ Installed Unbound in $Elapsed sec"
 	exit 0 # success
 } catch {
 	"⚠️ Error in line $($_.InvocationInfo.ScriptLineNumber): $($Error[0])"

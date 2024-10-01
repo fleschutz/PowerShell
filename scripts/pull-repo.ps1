@@ -1,4 +1,4 @@
-﻿<#
+<#
 .SYNOPSIS
 	Pulls updates into a Git repo
 .DESCRIPTION

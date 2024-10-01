@@ -1,4 +1,4 @@
-﻿<#
+<#
 .SYNOPSIS
 	Disables IPv6 (requires admin rights)
 .DESCRIPTION
@@ -14,7 +14,7 @@
 
 try {
 	Disable-NetAdapterBinding -Name '*' -ComponentID 'ms_tcpip6'
-	"✔️ IPv6 is disabled now."
+	"✅ IPv6 is disabled now."
 	exit 0 # success
 } catch {
 	"⚠️ Error in line $($_.InvocationInfo.ScriptLineNumber): $($Error[0])"

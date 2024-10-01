@@ -1,4 +1,4 @@
-﻿<#
+<#
 .SYNOPSIS
 	Queries and saves the S.M.A.R.T. data of your HDD's/SSD's
 .DESCRIPTION
@@ -54,7 +54,7 @@ try {
 		$DevNo++
 	}
 
-	"✔️  Done."
+	"✅  Done."
 	exit 0 # success
 } catch {
 	"⚠️ Error in line $($_.InvocationInfo.ScriptLineNumber): $($Error[0])"

@@ -1,4 +1,4 @@
-﻿<#
+<#
 .SYNOPSIS
 	Hibernates the computer
 .DESCRIPTION

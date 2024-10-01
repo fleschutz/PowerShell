@@ -1,4 +1,4 @@
-﻿<#
+<#
 .SYNOPSIS
 	Installs evcc
 .DESCRIPTION
@@ -36,7 +36,7 @@ try {
 		throw "Sorry, only Linux installation currently supported"
 	}
 	[int]$Elapsed = $StopWatch.Elapsed.TotalSeconds
-	"✔️ evcc installed successfully in $Elapsed sec"
+	"✅ evcc installed successfully in $Elapsed sec"
 	exit 0 # success
 } catch {
 	"Sorry: $($Error[0])"

@@ -1,4 +1,4 @@
-﻿<#
+<#
 .SYNOPSIS
 	Verifies an XML file
 .DESCRIPTION
@@ -7,7 +7,7 @@
 	Specifies the path to the XML file
 .EXAMPLE
 	PS> ./check-xml-file.ps1 myfile.xml
-	✔️ Valid XML in 📄myfile.xml
+	✅ Valid XML in 📄myfile.xml
 .LINK
 	https://github.com/fleschutz/PowerShell
 .NOTES
@@ -34,7 +34,7 @@ try {
 	
 	if ($script:ErrorCount -gt 0) {	throw "Invalid XML" } 
 
-	"✔️ Valid XML in 📄$path"
+	"✅ Valid XML in 📄$path"
 	exit 0 # success
 } catch {
 	"⚠️ $($Error[0]) in 📄$path"

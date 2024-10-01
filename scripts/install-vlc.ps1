@@ -1,4 +1,4 @@
-﻿<#
+<#
 .SYNOPSIS
 	Installs VLC
 .DESCRIPTION
@@ -6,7 +6,7 @@
 .EXAMPLE
 	PS> ./install-vlc.ps1
 	⏳ Installing VLC media player...
-	✔️ Installation of VLC media player took 25 sec
+	✅ Installation of VLC media player took 25 sec
 .LINK
 	https://github.com/fleschutz/PowerShell
 .NOTES
@@ -21,7 +21,7 @@ try {
 	if ($lastExitCode -ne "0") { throw "Can't install VLC media player, is it already installed?" }
 
 	[int]$Elapsed = $StopWatch.Elapsed.TotalSeconds
-	"✔️ Installation of VLC media player took $Elapsed sec"
+	"✅ Installation of VLC media player took $Elapsed sec"
 	exit 0 # success
 } catch {
 	"⚠️ Error in line $($_.InvocationInfo.ScriptLineNumber): $($Error[0])"

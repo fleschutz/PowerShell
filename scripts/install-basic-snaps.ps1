@@ -1,4 +1,4 @@
-﻿<#
+<#
 .SYNOPSIS
 	Installs basic Linux snaps 
 .DESCRIPTION
@@ -37,7 +37,7 @@ try {
 	sudo snap install plexmediaserver
 	
 	[int]$Elapsed = $StopWatch.Elapsed.TotalSeconds
-	"✔️ installed 19 Snaps in $Elapsed sec"
+	"✅ installed 19 Snaps in $Elapsed sec"
 	exit 0 # success
 } catch {
 	"⚠️ Error in line $($_.InvocationInfo.ScriptLineNumber): $($Error[0])"

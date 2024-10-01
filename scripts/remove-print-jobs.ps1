@@ -1,4 +1,4 @@
-﻿<#
+<#
 .SYNOPSIS
 	Removes all jobs from all printers
 .DESCRIPTION
@@ -24,7 +24,7 @@ try {
 		}
 	}
 
-	"✔️ all print jobs removed"
+	"✅ all print jobs removed"
 	exit 0 # success
 } catch {
 	"⚠️ Error in line $($_.InvocationInfo.ScriptLineNumber): $($Error[0])"

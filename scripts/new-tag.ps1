@@ -1,4 +1,4 @@
-﻿<#
+<#
 .SYNOPSIS
 	Creates a new tag in a Git repository
 .DESCRIPTION
@@ -42,7 +42,7 @@ try {
 	if ($lastExitCode -ne "0") { throw "Error: 'git push origin $TagName' failed!" }
 
 	[int]$Elapsed = $StopWatch.Elapsed.TotalSeconds
-	"✔️ created new tag '$TagName' in $Elapsed sec"
+	"✅ created new tag '$TagName' in $Elapsed sec"
 	exit 0 # success
 } catch {
 	"⚠️ Error in line $($_.InvocationInfo.ScriptLineNumber): $($Error[0])"

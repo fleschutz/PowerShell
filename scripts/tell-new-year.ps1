@@ -1,4 +1,4 @@
-﻿<#
+<#
 .SYNOPSIS
 	Tells the time until New Year
 .DESCRIPTION

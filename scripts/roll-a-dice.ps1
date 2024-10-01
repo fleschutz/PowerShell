@@ -1,4 +1,4 @@
-﻿<#
+<#
 .SYNOPSIS
 	Replies to "Roll a dice"
 .DESCRIPTION

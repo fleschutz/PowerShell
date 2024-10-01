@@ -1,4 +1,4 @@
-﻿<#
+<#
 .SYNOPSIS
 	Downloads a file from an URL
 .DESCRIPTION
@@ -27,7 +27,7 @@ try {
 	if ($lastExitCode -ne "0") { throw "Can't execute 'wget --mirror $URL'" }
 
 	[int]$Elapsed = $StopWatch.Elapsed.TotalSeconds
-	"✔️ downloaded file from $URL in $Elapsed sec"
+	"✅ downloaded file from $URL in $Elapsed sec"
 	exit 0 # success
 } catch {
 	"⚠️ Error in line $($_.InvocationInfo.ScriptLineNumber): $($Error[0])"

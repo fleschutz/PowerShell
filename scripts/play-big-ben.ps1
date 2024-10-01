@@ -1,4 +1,4 @@
-﻿<#
+<#
 .SYNOPSIS
 	Plays the Big Ben sound
 .DESCRIPTION

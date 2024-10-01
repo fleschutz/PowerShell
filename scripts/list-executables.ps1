@@ -1,4 +1,4 @@
-﻿<#
+<#
 .SYNOPSIS
 	Lists all executables in a dir tree
 .DESCRIPTION
@@ -9,7 +9,7 @@
 	PS> ./list-executables.ps1 C:\Windows
 	C:\Windows\bfsvc.exe
 	...
-	✔️ Found 7967 executables within 📂C:\Windows in 168 sec.
+	✅ Found 7967 executables within 📂C:\Windows in 168 sec.
 .LINK
 	https://github.com/fleschutz/PowerShell
 .NOTES
@@ -30,7 +30,7 @@ try {
 	}
 	Write-Progress -completed " "
 	[int]$elapsed = $stopWatch.Elapsed.TotalSeconds
-	"✔️ Found $count executables within 📂$path in $elapsed sec." 
+	"✅ Found $count executables within 📂$path in $elapsed sec." 
 	exit 0 # success
 } catch {
 	"⚠️ Error in line $($_.InvocationInfo.ScriptLineNumber): $($Error[0])"

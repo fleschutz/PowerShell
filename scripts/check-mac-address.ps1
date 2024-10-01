@@ -1,4 +1,4 @@
-﻿<#
+<#
 .SYNOPSIS
 	Checks the given MAC address for validity
 .DESCRIPTION
@@ -8,7 +8,7 @@
 	Specifies the MAC address to check
 .EXAMPLE
 	PS> ./check-mac-address 11:22:33:44:55:66
-	✔️ MAC address 11:22:33:44:55:66 is valid
+	✅ MAC address 11:22:33:44:55:66 is valid
 .LINK
 	https://github.com/fleschutz/PowerShell
 .NOTES
@@ -31,7 +31,7 @@ try {
 		$MAC = read-host "Enter MAC address to validate"
 	}
 	if (IsMACAddressValid $MAC) {
-		"✔️ MAC address $MAC is valid"
+		"✅ MAC address $MAC is valid"
 		exit 0 # success
 	} else {
 		write-warning "Invalid MAC address: $MAC"

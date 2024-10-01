@@ -1,4 +1,4 @@
-﻿<#
+<#
 .SYNOPSIS
 	Lists unused files in a directory tree
 .DESCRIPTION
@@ -10,7 +10,7 @@
 .EXAMPLE
 	PS> ./list-unused-files.ps1 C:\Windows
 	...
-	✔️ Found 43729 unused files (no access for 100 days) within 📂C:\Windows in 113 sec
+	✅ Found 43729 unused files (no access for 100 days) within 📂C:\Windows in 113 sec
 .LINK
 	https://github.com/fleschutz/PowerShell
 .NOTES
@@ -34,7 +34,7 @@ try {
 
 	Write-Progress -completed " "
         [int]$elapsed = $stopWatch.Elapsed.TotalSeconds
-        "✔️ Found $count unused files (no access for $days days) within 📂$path in $elapsed sec"
+        "✅ Found $count unused files (no access for $days days) within 📂$path in $elapsed sec"
 	exit 0 # success
 } catch {
 	"⚠️ Error in line $($_.InvocationInfo.ScriptLineNumber): $($Error[0])"

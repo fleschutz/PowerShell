@@ -1,4 +1,4 @@
-﻿<#
+<#
 .SYNOPSIS
 	Checks the given subnet mask for validity
 .DESCRIPTION
@@ -7,7 +7,7 @@
 	Specifies the subnet mask to check
 .EXAMPLE
 	PS> ./check-subnet-mask.ps1 255.255.255.0
-	✔️ subnet mask 255.255.255.0 is valid
+	✅ subnet mask 255.255.255.0 is valid
 .LINK
 	https://github.com/fleschutz/PowerShell
 .NOTES
@@ -29,7 +29,7 @@ try {
 	if ($address -eq "" ) { $address = read-host "Enter subnet mask to validate" }
 
 	if (IsSubNetMaskValid $address) {
-		"✔️ subnet mask $Address is valid"
+		"✅ subnet mask $Address is valid"
 		exit 0 # success
 	} else {
 		write-warning "Invalid subnet mask: $address"

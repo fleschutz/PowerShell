@@ -1,4 +1,4 @@
-﻿<#
+<#
 .SYNOPSIS
 	Change to the crash dumps folder
 .DESCRIPTION

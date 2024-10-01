@@ -1,4 +1,4 @@
-﻿<#
+<#
 .SYNOPSIS
 	Shows a notification
 .DESCRIPTION

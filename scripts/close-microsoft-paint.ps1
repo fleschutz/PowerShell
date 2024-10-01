@@ -1,4 +1,4 @@
-﻿<#
+<#
 .SYNOPSIS
 	Closes the Microsoft Paint app 
 .DESCRIPTION

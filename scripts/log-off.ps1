@@ -1,4 +1,4 @@
-﻿<#
+<#
 .SYNOPSIS
 	Log off the current user
 .DESCRIPTION

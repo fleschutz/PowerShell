@@ -1,4 +1,4 @@
-﻿<#
+<#
 .SYNOPSIS
         Check for admin rights
 .DESCRIPTION

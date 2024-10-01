@@ -1,4 +1,4 @@
-﻿<#
+<#
 .SYNOPSIS
 	Lists all read-only files in a directory tree
 .DESCRIPTION
@@ -8,7 +8,7 @@
 .EXAMPLE
 	PS> ./list-read-only-files.ps1 C:\Windows
 	...
-	✔️ Found 107 read-only files within 📂C:\Windows in 50 sec
+	✅ Found 107 read-only files within 📂C:\Windows in 50 sec
 .LINK
 	https://github.com/fleschutz/PowerShell
 .NOTES
@@ -29,7 +29,7 @@ try {
 	}
 	Write-Progress -completed " "
 	[int]$elapsed = $stopWatch.Elapsed.TotalSeconds
-	"✔️ Found $count read-only files within 📂$path in $elapsed sec" 
+	"✅ Found $count read-only files within 📂$path in $elapsed sec" 
 	exit 0 # success
 } catch {
 	"⚠️ Error in line $($_.InvocationInfo.ScriptLineNumber): $($Error[0])"

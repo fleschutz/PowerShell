@@ -1,4 +1,4 @@
-﻿<#
+<#
 .SYNOPSIS
         Installs Knot Resolver (needs admin rights)
 .DESCRIPTION
@@ -29,7 +29,7 @@ try {
 	& sudo snap start knot-resolver-gael
 
 	[int]$Elapsed = $StopWatch.Elapsed.TotalSeconds
-	"✔️ installed Knot Resolver in $Elapsed sec"
+	"✅ installed Knot Resolver in $Elapsed sec"
 	exit 0 # success
 } catch {
 	"⚠️ Error in line $($_.InvocationInfo.ScriptLineNumber): $($Error[0])"

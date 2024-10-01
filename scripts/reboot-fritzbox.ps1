@@ -1,4 +1,4 @@
-﻿<#
+<#
 .SYNOPSIS
 	Reboots the FRITZ!Box device
 .DESCRIPTION

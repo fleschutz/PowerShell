@@ -1,4 +1,4 @@
-﻿<#
+<#
 .SYNOPSIS
 	Syncronizes two folders
 .DESCRIPTION
@@ -35,7 +35,7 @@ try {
 	if ($lastExitCode -gt 3) { throw 'Robocopy failed.' }
 
 	[int]$elapsed = $stopWatch.Elapsed.TotalSeconds
-	"✔️ Synced 📂$sourcePath to 📂$targetPath in $elapsed sec"
+	"✅ Synced 📂$sourcePath to 📂$targetPath in $elapsed sec"
 	exit 0 # success
 } catch {
 	"⚠️ Error in line $($_.InvocationInfo.ScriptLineNumber): $($Error[0])"

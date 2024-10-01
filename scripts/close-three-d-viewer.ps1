@@ -1,4 +1,4 @@
-﻿<#
+<#
 .SYNOPSIS
 	Closes the 3D-Viewer app 
 .DESCRIPTION

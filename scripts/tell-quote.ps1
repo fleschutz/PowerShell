@@ -1,4 +1,4 @@
-﻿<#
+<#
 .SYNOPSIS
 	Tells a random quote by text-to-speech
 .DESCRIPTION

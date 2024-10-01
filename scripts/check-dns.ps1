@@ -1,4 +1,4 @@
-﻿<#
+<#
 .SYNOPSIS
 	Check the DNS resolution 
 .DESCRIPTION

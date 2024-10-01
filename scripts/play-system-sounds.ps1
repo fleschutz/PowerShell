@@ -1,4 +1,4 @@
-﻿<#
+<#
 .SYNOPSIS
 	Plays all system sounds
 .DESCRIPTION

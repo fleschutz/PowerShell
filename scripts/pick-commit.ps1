@@ -1,4 +1,4 @@
-﻿<#
+<#
 .SYNOPSIS
 	Cherry-picks a Git commit into one or more branches
 .DESCRIPTION
@@ -73,7 +73,7 @@ try {
 		if ($lastExitCode -ne "0") { throw "'git push' failed" }
 	}
 	[int]$Elapsed = $StopWatch.Elapsed.TotalSeconds
-	"✔️ cherry picked $CommitID into $NumBranches branches in $Elapsed sec"
+	"✅ cherry picked $CommitID into $NumBranches branches in $Elapsed sec"
 	exit 0 # success
 } catch {
 	"⚠️ Error in line $($_.InvocationInfo.ScriptLineNumber): $($Error[0])"

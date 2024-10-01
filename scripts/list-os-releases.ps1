@@ -1,4 +1,4 @@
-﻿<#
+<#
 .SYNOPSIS
 	Lists OS releases and download URL
 .DESCRIPTION

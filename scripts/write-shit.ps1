@@ -1,4 +1,4 @@
-﻿<#
+<#
 .SYNOPSIS
 	Writes shit
 .DESCRIPTION

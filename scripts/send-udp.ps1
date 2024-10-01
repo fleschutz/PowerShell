@@ -1,4 +1,4 @@
-﻿<#
+<#
 .SYNOPSIS
 	Sends a UDP datagram message to an IP address and port
 .DESCRIPTION
@@ -11,7 +11,7 @@
 	Specifies the message text to send
 .EXAMPLE
 	PS> ./send-udp 192.168.100.100 8080 "TEST"
-	✔️  Done.
+	✅  Done.
 .LINK
 	https://github.com/fleschutz/PowerShell
 .NOTES
@@ -33,7 +33,7 @@ try {
 	$SendMessage = $Socket.Send($EncodedText, $EncodedText.Length, $EndPoints) 
 	$Socket.Close() 
 
-	"✔️  Done."
+	"✅  Done."
 	exit 0 # success
 } catch {
 	"⚠️ Error in line $($_.InvocationInfo.ScriptLineNumber): $($Error[0])"

@@ -1,4 +1,4 @@
-﻿<#
+<#
 .SYNOPSIS
 	Checks credentials 
 .DESCRIPTION
@@ -8,7 +8,7 @@
 .EXAMPLE
 	PS> ./check-credentials.ps1
 	Enter username and password, please.
- 	✔️ Your credentials are correct.
+ 	✅ Your credentials are correct.
 .LINK
 	https://github.com/fleschutz/PowerShell
 .NOTES
@@ -30,7 +30,7 @@ try {
 	$pw2 = [Runtime.InteropServices.Marshal]::PtrToStringAuto([Runtime.InteropServices.Marshal]::SecureStringToBSTR($credsFromFile.Password))
 	if ($pw1 -cne $pw2) { throw "Sorry, your password is wrong." }
 
-	"✔️ Your credentials are correct."
+	"✅ Your credentials are correct."
 	exit 0 # success
 } catch {
 	"⚠️ Error in line $($_.InvocationInfo.ScriptLineNumber): $($Error[0])"

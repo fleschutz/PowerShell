@@ -1,11 +1,11 @@
-﻿<#
+<#
 .SYNOPSIS
 	Removes an user account
 .DESCRIPTION
 	This PowerShell script removes an existing user account including the home directory.
 .EXAMPLE
 	PS> ./remove-user.ps1 Joe
-	✔️ Removed user 'Joe' including home directory in 11s.
+	✅ Removed user 'Joe' including home directory in 11s.
 .LINK
 	https://github.com/fleschutz/PowerShell
 .NOTES
@@ -25,7 +25,7 @@ try {
 	}
 
 	[int]$elapsed = $stopWatch.Elapsed.TotalSeconds
-	"✔️ Removed user '$username' including home directory in $($elapsed)s."
+	"✅ Removed user '$username' including home directory in $($elapsed)s."
 	exit 0 # success
 } catch {
 	"⚠️ Error in line $($_.InvocationInfo.ScriptLineNumber): $($Error[0])"

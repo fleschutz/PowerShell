@@ -1,4 +1,4 @@
-﻿<#
+<#
 .SYNOPSIS
 	Switches a Shelly1 device 
 .DESCRIPTION
@@ -26,7 +26,7 @@ try {
 
 	$result = Invoke-RestMethod "http://$($host)/relay/0?turn=$($turnMode)&timer=$($timer)"
 	
-	"✔️ Switched Shelly1 device at $host to $turnMode for $timer sec."
+	"✅ Switched Shelly1 device at $host to $turnMode for $timer sec."
 	exit 0 # success
 } catch {
 	"⚠️ Error in line $($_.InvocationInfo.ScriptLineNumber): $($Error[0])"

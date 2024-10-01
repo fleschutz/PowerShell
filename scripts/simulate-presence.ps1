@@ -1,4 +1,4 @@
-﻿<#
+<#
 .SYNOPSIS
 	Simulate a human against burglars
 .DESCRIPTION
@@ -24,7 +24,7 @@ try {
 		& "$PSScriptRoot/switch-shelly1.ps1" $IPaddress off 0
 		Start-Sleep -seconds 60 # off for 60 seconds
 	}
-	"✔️ Done."
+	"✅ Done."
 	exit 0 # success
 } catch {
 	"⚠️ Error in line $($_.InvocationInfo.ScriptLineNumber): $($Error[0])"

@@ -1,4 +1,4 @@
-﻿<#
+<#
 .SYNOPSIS
 	Lists SCSI devices
 .DESCRIPTION

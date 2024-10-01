@@ -1,4 +1,4 @@
-﻿<#
+<#
 .SYNOPSIS
 	Counts the number of characters
 .DESCRIPTION
@@ -7,7 +7,7 @@
 	Specifies the given string.
 .EXAMPLE
 	PS> ./count-characters.ps1 "Hello World"
-	✔️ 11 characters counted in 'Hello World'.
+	✅ 11 characters counted in 'Hello World'.
 .LINK
 	https://github.com/fleschutz/PowerShell
 .NOTES
@@ -20,7 +20,7 @@ try {
 	if ($givenString -eq "" ) { $givenString = Read-Host "Enter the string" }
 
 	[int64]$numChars = $givenString.Length
-	"✔️ $numChars characters counted in '$givenString'." 
+	"✅ $numChars characters counted in '$givenString'." 
 	exit 0 # success
 } catch {
 	"⚠️ Error in line $($_.InvocationInfo.ScriptLineNumber): $($Error[0])"

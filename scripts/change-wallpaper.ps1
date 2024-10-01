@@ -1,4 +1,4 @@
-﻿<#
+<#
 .SYNOPSIS
 	Changes the wallpaper
 .DESCRIPTION

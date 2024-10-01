@@ -1,11 +1,11 @@
-﻿<#
+<#
 .SYNOPSIS
         Creates a new SSH key
 .DESCRIPTION
         This PowerShell script creates a new SSH key for the user.
 .EXAMPLE
         PS> ./new-ssh-key.ps1
-	✔️ New SSH key of Ed25519 type saved to ~/.ssh - your public key is:
+	✅ New SSH key of Ed25519 type saved to ~/.ssh - your public key is:
 	    ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAILb8s5zU9YDApGQ82H45fMKVPMr5cw9fzh3PEBjZZ+Rm markus@PI
 .LINK
         https://github.com/fleschutz/PowerShell
@@ -26,7 +26,7 @@ try {
 	} else {
 		throw "No public key found."
 	}
-	"✔️ New SSH key of $enc type saved to ~/.ssh - your public key is:"
+	"✅ New SSH key of $enc type saved to ~/.ssh - your public key is:"
 	"   $publicKey"
 	exit 0 # success
 } catch {

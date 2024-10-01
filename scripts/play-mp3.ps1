@@ -1,4 +1,4 @@
-﻿<#
+<#
 .SYNOPSIS
 	Plays a .MP3 sound file 
 .DESCRIPTION

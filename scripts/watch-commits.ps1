@@ -1,4 +1,4 @@
-﻿<#
+<#
 .SYNOPSIS
 	Show commits live in real-time.
 .DESCRIPTION

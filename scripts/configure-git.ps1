@@ -1,4 +1,4 @@
-﻿<#
+<#
 .SYNOPSIS
 	Configures Git 
 .DESCRIPTION
@@ -16,7 +16,7 @@
 	⏳ (3/5) Saving basic settings (autocrlf,symlinks,longpaths,etc.)...
 	⏳ (4/5) Saving user settings (name,email,editor)...
 	⏳ (5/5) Saving user shortcuts ('git br', 'git ls', 'git st', etc.)...
-	✔️ Saved your Git configuration to ~/.gitconfig in 11s.
+	✅ Saved your Git configuration to ~/.gitconfig in 11s.
 
 .LINK
 	https://github.com/fleschutz/PowerShell
@@ -67,7 +67,7 @@ try {
 	if ($lastExitCode -ne "0") { throw "'git config' failed" }
 
 	[int]$elapsed = $stopWatch.Elapsed.TotalSeconds
-	"✔️ Saved your Git configuration to ~/.gitconfig in $($elapsed)s."
+	"✅ Saved your Git configuration to ~/.gitconfig in $($elapsed)s."
 	exit 0 # success
 } catch {
 	"⚠️ Error in line $($_.InvocationInfo.ScriptLineNumber)): $($Error[0])"

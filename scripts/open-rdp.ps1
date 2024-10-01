@@ -1,4 +1,4 @@
-﻿<#
+<#
 .SYNOPSIS
         Opens the RDP app
 .DESCRIPTION

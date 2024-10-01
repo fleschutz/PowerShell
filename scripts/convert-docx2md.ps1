@@ -1,4 +1,4 @@
-﻿<#
+<#
 .SYNOPSIS
 	Converts .DOCX file(s) into Markdown 
 .DESCRIPTION
@@ -31,7 +31,7 @@ try {
 	}
 
 	[int]$Elapsed = $StopWatch.Elapsed.TotalSeconds
-	"✔️ converted in $Elapsed sec"
+	"✅ converted in $Elapsed sec"
 	exit 0 # success
 } catch {
 	"⚠️ Error in line $($_.InvocationInfo.ScriptLineNumber): $($Error[0])"

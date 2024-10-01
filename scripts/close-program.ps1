@@ -1,4 +1,4 @@
-﻿<#
+<#
 .SYNOPSIS
 	Closes a program
 .DESCRIPTION
@@ -47,9 +47,9 @@ try {
 		Stop-Process -name $programName -force -errorAction 'silentlycontinue'
 	}
 	if ($($processes.Count) -eq 1) {
-		"✔️ $fullProgramName closed."
+		"✅ $fullProgramName closed."
 	} else {
-		"✔️ $fullProgramName closed and $($processes.Count) processes stopped."
+		"✅ $fullProgramName closed and $($processes.Count) processes stopped."
 	}
 	exit 0 # success
 } catch {

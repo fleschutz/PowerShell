@@ -1,4 +1,4 @@
-﻿<#
+<#
 .SYNOPSIS
 	Sets the given image file as desktop wallpaper
 .DESCRIPTION
@@ -63,7 +63,7 @@ try {
 	if ($ImageFile -eq "" ) { $ImageFile = read-host "Enter path to image file" }
 
 	SetWallPaper -Image $ImageFile -Style $Style
-	"✔️  Done."
+	"✅  Done."
 	exit 0 # success
 } catch {
 	"⚠️ Error in line $($_.InvocationInfo.ScriptLineNumber): $($Error[0])"

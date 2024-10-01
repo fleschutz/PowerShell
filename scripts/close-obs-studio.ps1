@@ -1,4 +1,4 @@
-﻿<#
+<#
 .SYNOPSIS
 	Closes OBS Studio
 .DESCRIPTION

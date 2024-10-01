@@ -1,4 +1,4 @@
-﻿<#
+<#
 .SYNOPSIS
 	Lists OS updates
 .DESCRIPTION

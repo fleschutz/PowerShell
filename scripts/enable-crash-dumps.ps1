@@ -1,4 +1,4 @@
-﻿<#
+<#
 .SYNOPSIS
 	Enables the writing of crash dumps
 .DESCRIPTION

@@ -1,4 +1,4 @@
-﻿<#
+<#
 .SYNOPSIS
         Lists the IP addresses
 .DESCRIPTION

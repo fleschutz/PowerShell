@@ -1,4 +1,4 @@
-﻿<#
+<#
 .SYNOPSIS
 	Plays the Mission Impossible theme
 .DESCRIPTION

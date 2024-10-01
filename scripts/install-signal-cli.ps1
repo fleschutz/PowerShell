@@ -1,4 +1,4 @@
-﻿<#
+<#
 .SYNOPSIS
 	Installs signal-cli 
 .DESCRIPTION
@@ -39,7 +39,7 @@ try {
 	if ($lastExitCode -ne "0") { throw "'rm' failed" }
 
 	[int]$Elapsed = $StopWatch.Elapsed.TotalSeconds
-	"✔️ installed signal-cli $Version to /opt and /usr/local/bin in $Elapsed sec"
+	"✅ installed signal-cli $Version to /opt and /usr/local/bin in $Elapsed sec"
 	exit 0 # success
 } catch {
 	"⚠️ Error in line $($_.InvocationInfo.ScriptLineNumber): $($Error[0])"

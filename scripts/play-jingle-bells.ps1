@@ -1,4 +1,4 @@
-﻿<#
+<#
 .SYNOPSIS
         Plays Jingle Bells
 .DESCRIPTION

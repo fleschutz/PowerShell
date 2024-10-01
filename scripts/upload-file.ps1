@@ -1,4 +1,4 @@
-﻿<#
+<#
 .SYNOPSIS
 	Uploads a local file to a FTP server
 .DESCRIPTION
@@ -67,7 +67,7 @@ try {
 	$fileStream.Dispose()
 
 	[int]$Elapsed = $StopWatch.Elapsed.TotalSeconds
-	"✔️ uploaded 📄$Filename to $URL in $Elapsed sec"
+	"✅ uploaded 📄$Filename to $URL in $Elapsed sec"
 	exit 0 # success
 } catch {
 	[int]$Elapsed = $StopWatch.Elapsed.TotalSeconds

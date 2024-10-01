@@ -1,4 +1,4 @@
-﻿<#
+<#
 .SYNOPSIS
 	Upgrades Ubuntu Linux 
 .DESCRIPTION
@@ -46,7 +46,7 @@ try {
 		sudo reboot
 	}
 
-	"✔️  Done."
+	"✅  Done."
 	exit 0 # success
 } catch {
 	"⚠️ Error in line $($_.InvocationInfo.ScriptLineNumber): $($Error[0])"

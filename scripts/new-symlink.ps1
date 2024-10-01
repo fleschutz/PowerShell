@@ -1,4 +1,4 @@
-﻿<#
+<#
 .SYNOPSIS
 	Creates a new symbolic link file
 .DESCRIPTION
@@ -23,7 +23,7 @@ try {
 
 	new-item -path "$symlink" -itemType SymbolicLink -Value "$target"
 
-	"✔️ created new symlink $symlink ⭢ $target"
+	"✅ created new symlink $symlink ⭢ $target"
 	exit 0 # success
 } catch {
 	"⚠️ Error in line $($_.InvocationInfo.ScriptLineNumber): $($Error[0])"

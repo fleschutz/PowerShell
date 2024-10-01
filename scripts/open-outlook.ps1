@@ -1,4 +1,4 @@
-﻿<#
+<#
 .SYNOPSIS
 	Launches the Microsoft Outlook app
 .DESCRIPTION

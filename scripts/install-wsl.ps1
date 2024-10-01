@@ -1,4 +1,4 @@
-﻿<#
+<#
 .SYNOPSIS
 	Installs Windows Subsystem for Linux (needs admin rights)
 .DESCRIPTION
@@ -32,7 +32,7 @@ try {
 	}
 
 	[int]$Elapsed = $StopWatch.Elapsed.TotalSeconds
-	"✔️ installed Windows Subsystem for Linux (WSL) in $Elapsed sec"
+	"✅ installed Windows Subsystem for Linux (WSL) in $Elapsed sec"
 	"  NOTE: reboot now, then visit the Microsoft Store and install a Linux distribution (e.g. Ubuntu, openSUSE, SUSE Linux, Kali Linux, Debian, Fedora, Pengwin, or Alpine)"
 	exit 0 # success
 } catch {

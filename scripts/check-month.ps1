@@ -1,11 +1,11 @@
-﻿<#
+<#
 .SYNOPSIS
 	Gets the current month name
 .DESCRIPTION
 	This PowerShell script determines and speaks the current month name by text-to-speech (TTS).
 .EXAMPLE
 	PS> ./check-month
-	✔️ It's December.
+	✅ It's December.
 .LINK
 	https://github.com/fleschutz/PowerShell
 .NOTES

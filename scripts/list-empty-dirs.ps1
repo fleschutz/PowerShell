@@ -1,4 +1,4 @@
-﻿<#
+<#
 .SYNOPSIS
 	Lists all empty directories in a directory tree
 .DESCRIPTION
@@ -8,7 +8,7 @@
 .EXAMPLE
 	PS> ./list-empty-dirs.ps1 C:\Windows
 	...
-	✔️ Found 39972 empty directories within 📂C:\Windows in 222 sec
+	✅ Found 39972 empty directories within 📂C:\Windows in 222 sec
 .LINK
 	https://github.com/fleschutz/PowerShell
 .NOTES
@@ -29,7 +29,7 @@ try {
 	}
 	Write-Progress -completed " "
 	[int]$Elapsed = $stopWatch.Elapsed.TotalSeconds
-	"✔️ Found $count empty directories within 📂$path in $elapsed sec" 
+	"✅ Found $count empty directories within 📂$path in $elapsed sec" 
 	exit 0 # success
 } catch {
 	"⚠️ Error in line $($_.InvocationInfo.ScriptLineNumber): $($Error[0])"

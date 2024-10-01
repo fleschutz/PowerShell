@@ -1,4 +1,4 @@
-﻿<#
+<#
 .SYNOPSIS
 	Encrypts a file
 .DESCRIPTION
@@ -123,7 +123,7 @@ try {
 	EncryptFile "$Path" -Algorithm AES -KeyAsPlainText $PasswordAsBase64 -RemoveSource
 
 	[int]$Elapsed = $StopWatch.Elapsed.TotalSeconds
-	"✔️  file encrypted in $Elapsed sec"
+	"✅  file encrypted in $Elapsed sec"
 	exit 0 # success
 } catch {
 	"⚠️ Error in line $($_.InvocationInfo.ScriptLineNumber): $($Error[0])"

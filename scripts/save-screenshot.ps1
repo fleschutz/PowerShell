@@ -1,4 +1,4 @@
-﻿<#
+<#
 .SYNOPSIS
 	Saves a single screenshot
 .DESCRIPTION
@@ -7,7 +7,7 @@
 	Specifies the target folder (the user's screenshots folder by default)
 .EXAMPLE
 	PS> ./save-screenshot
- 	✔️ screenshot saved to C:\Users\Markus\Pictures\Screenshots\2021-10-10T14-33-22.png
+ 	✅ screenshot saved to C:\Users\Markus\Pictures\Screenshots\2021-10-10T14-33-22.png
 .LINK
 	https://github.com/fleschutz/PowerShell
 .NOTES
@@ -47,7 +47,7 @@ try {
 	$FilePath = (Join-Path $TargetFolder $Filename)
 	TakeScreenshot $FilePath
 
-	"✔️ screenshot saved to $FilePath"
+	"✅ screenshot saved to $FilePath"
 	exit 0 # success
 } catch {
 	"⚠️ Error in line $($_.InvocationInfo.ScriptLineNumber): $($Error[0])"

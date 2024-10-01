@@ -1,4 +1,4 @@
-﻿<#
+<#
 .SYNOPSIS
 	Searches for text in files
 .DESCRIPTION
@@ -25,7 +25,7 @@ param([string]$textPattern = "", [string]$filePattern = "")
 function ListLocations { param([string]$textPattern, [string]$filePattern)
 	$list = Select-String -path $filePattern -pattern "$textPattern" 
 	foreach($item in $list) { New-Object PSObject -Property @{ 'FILE'="$($item.Path)"; 'LINE'="$($item.LineNumber):$($item.Line)" }	}
-	"✔️ Found $($list.Count) lines containing '$textPattern' in $filePattern."
+	"✅ Found $($list.Count) lines containing '$textPattern' in $filePattern."
 }
 
 try {

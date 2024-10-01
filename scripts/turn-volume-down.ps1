@@ -1,4 +1,4 @@
-﻿<#
+<#
 .SYNOPSIS
 	Turns the volume down
 .DESCRIPTION

@@ -1,4 +1,4 @@
-﻿<#
+<#
 .SYNOPSIS
 	Removes all empty subfolders within a directory tree
 .DESCRIPTION
@@ -41,7 +41,7 @@ try {
 			Remove-Item -Path $Folder.Object.FullName -Force
 		}
 	}
-	"✔️  Done."
+	"✅  Done."
 	exit 0 # success
 } catch {
 	"⚠️ Error in line $($_.InvocationInfo.ScriptLineNumber): $($Error[0])"

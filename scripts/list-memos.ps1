@@ -1,4 +1,4 @@
-﻿<#
+<#
 .SYNOPSIS
 	Lists your remembered entries
 .DESCRIPTION

@@ -1,4 +1,4 @@
-﻿<#
+<#
 .SYNOPSIS
 	Lists FRITZ!Box's known devices
 .DESCRIPTION

@@ -1,4 +1,4 @@
-﻿<#
+<#
 .SYNOPSIS
 	Checks Git repositories
 .DESCRIPTION
@@ -10,7 +10,7 @@
 	⏳ Checking parent folder 📂C:\Repos...    16 subfolders
 	⏳ Checking 📂rust repository (1/16)...
 	...
-	✔️ Checked all 16 Git repos in 📂C:\Repos in 356s.
+	✅ Checked all 16 Git repos in 📂C:\Repos in 356s.
 .LINK
 	https://github.com/fleschutz/PowerShell
 .NOTES
