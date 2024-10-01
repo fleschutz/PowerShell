@@ -1,4 +1,4 @@
-<#
+﻿<#
 .SYNOPSIS
 	Updates the user's PowerShell profile
 .DESCRIPTION

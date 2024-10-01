@@ -1,4 +1,4 @@
-$VMName = "debian"
+﻿$VMName = "debian"
 $WarningPreference = 'SilentlyContinue' # If VM already stopped
 Stop-VM $VMName -Force
 Remove-VM $VMName -Force

@@ -1,4 +1,4 @@
-<#
+﻿<#
 .SYNOPSIS
 	Searches for text in a repo
 .DESCRIPTION

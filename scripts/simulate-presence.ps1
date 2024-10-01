@@ -1,4 +1,4 @@
-<#
+﻿<#
 .SYNOPSIS
 	Simulate a human against burglars
 .DESCRIPTION

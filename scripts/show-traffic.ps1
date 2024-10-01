@@ -1,4 +1,4 @@
-<#
+﻿<#
 .SYNOPSIS
 	Shows the current traffic 
 .DESCRIPTION

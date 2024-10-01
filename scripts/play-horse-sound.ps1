@@ -1,4 +1,4 @@
-<#
+﻿<#
 .SYNOPSIS
 	Plays a horse sound
 .DESCRIPTION

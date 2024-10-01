@@ -1,4 +1,4 @@
-<#
+﻿<#
 .SYNOPSIS
 	Removes an user account
 .DESCRIPTION

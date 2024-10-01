@@ -1,4 +1,4 @@
-<#
+﻿<#
 .SYNOPSIS
 	Plays the Super Mario intro
 .DESCRIPTION

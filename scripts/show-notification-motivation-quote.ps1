@@ -1,4 +1,4 @@
-#Api key for quotes https://api.api-ninjas.com
+﻿#Api key for quotes https://api.api-ninjas.com
  $headerQuote = @{
     "X-Api-Key"="FZ/rIx6RAn/W7+3S10zrHQ==gWBfP5fO0xcUiKp3"
    }

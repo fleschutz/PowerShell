@@ -1,4 +1,4 @@
-<#
+﻿<#
 .SYNOPSIS
 	Writes a QR code
 .DESCRIPTION

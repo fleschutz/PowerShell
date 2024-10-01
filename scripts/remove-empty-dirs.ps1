@@ -1,4 +1,4 @@
-<#
+﻿<#
 .SYNOPSIS
 	Removes all empty subfolders within a directory tree
 .DESCRIPTION

@@ -1,4 +1,4 @@
-<#
+﻿<#
 .SYNOPSIS
 	Switches the Git branch
 .DESCRIPTION

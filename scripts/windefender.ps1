@@ -1,4 +1,4 @@
-<#
+﻿<#
 .SYNOPSIS
 	Configure Windows defender 
 .DESCRIPTION

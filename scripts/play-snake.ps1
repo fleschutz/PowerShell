@@ -1,4 +1,4 @@
-<#
+﻿<#
 .SYNOPSIS
 	Play the Snake game
 .DESCRIPTION

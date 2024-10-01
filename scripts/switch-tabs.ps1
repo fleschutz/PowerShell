@@ -1,4 +1,4 @@
-<#
+﻿<#
 .SYNOPSIS
 	Switches Web browser tabs
 .DESCRIPTION

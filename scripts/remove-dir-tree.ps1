@@ -1,4 +1,4 @@
-<#
+﻿<#
 .SYNOPSIS
         Removes a dir tree
 .DESCRIPTION

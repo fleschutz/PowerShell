@@ -1,4 +1,4 @@
-<#
+﻿<#
 .SYNOPSIS
 	Writes the current date 
 .DESCRIPTION

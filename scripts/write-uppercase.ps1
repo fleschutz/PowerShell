@@ -1,12 +1,12 @@
-<#
+﻿<#
 .SYNOPSIS
 	Writes text in uppercase letters
 .DESCRIPTION
 	This PowerShell script writes the given text in uppercase letters.
 .PARAMETER text
-	Specifies the text to write
+	Specifies the text to write (ask user by default)
 .EXAMPLE
-	PS> ./write-uppercase "Hello World"
+	PS> ./write-uppercase.ps1 "Hello World"
 	HELLO WORLD
 .LINK
 	https://github.com/fleschutz/PowerShell

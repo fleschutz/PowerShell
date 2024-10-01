@@ -1,4 +1,4 @@
-<#
+﻿<#
 .SYNOPSIS
 	Sends a TCP message to an IP address and port
 .DESCRIPTION

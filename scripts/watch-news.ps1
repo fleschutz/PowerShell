@@ -1,4 +1,4 @@
-<#
+﻿<#
 .SYNOPSIS
 	Watch the latest headlines
 .DESCRIPTION

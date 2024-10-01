@@ -1,4 +1,4 @@
-<#
+﻿<#
 .SYNOPSIS
 	Remembers a text 
 .DESCRIPTION

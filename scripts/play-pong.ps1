@@ -1,4 +1,4 @@
-<#
+﻿<#
 .SYNOPSIS
 	Play the Pong game
 .DESCRIPTION

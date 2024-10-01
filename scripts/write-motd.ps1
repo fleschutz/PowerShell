@@ -1,4 +1,4 @@
-<#
+﻿<#
 .SYNOPSIS
 	Writes the message of the day
 .DESCRIPTION

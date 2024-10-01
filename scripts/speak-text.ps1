@@ -1,4 +1,4 @@
-<#
+﻿<#
 .SYNOPSIS
 	Speaks text by the default text-to-speech voice
 .DESCRIPTION

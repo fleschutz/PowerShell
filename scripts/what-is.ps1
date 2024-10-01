@@ -1,4 +1,4 @@
-<#
+﻿<#
 .SYNOPSIS
 	Explains a term/abbreviation/etc.
 .DESCRIPTION

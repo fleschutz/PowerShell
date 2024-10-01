@@ -1,4 +1,4 @@
-<#
+﻿<#
 .SYNOPSIS
 	Prints an image
 .DESCRIPTION

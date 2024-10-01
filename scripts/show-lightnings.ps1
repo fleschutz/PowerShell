@@ -1,4 +1,4 @@
-<#
+﻿<#
 .SYNOPSIS
 	Shows Lightnings in OpenStreetMap
 .DESCRIPTION

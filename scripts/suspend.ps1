@@ -1,4 +1,4 @@
-<#
+﻿<#
 .SYNOPSIS
 	Suspends the computer
 .DESCRIPTION

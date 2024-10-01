@@ -1,4 +1,4 @@
-<#
+﻿<#
 .SYNOPSIS
 	Syncronizes two folders
 .DESCRIPTION

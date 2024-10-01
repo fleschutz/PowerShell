@@ -1,4 +1,4 @@
-<#
+﻿<#
 .SYNOPSIS
 	Saves credentials encrypted
 .DESCRIPTION

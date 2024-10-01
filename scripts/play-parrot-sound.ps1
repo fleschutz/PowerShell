@@ -1,4 +1,4 @@
-<#
+﻿<#
 .SYNOPSIS
 	Plays a parrot sound
 .DESCRIPTION
