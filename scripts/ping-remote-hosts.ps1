@@ -33,10 +33,10 @@ try {
 	}
 	[int]$loss = $total - $success
 	if ($success -eq 0) {
-		Write-Host "⚠️ Offline ($loss/$total ping loss)"
+		Write-Host "⚠️ Internet offline (100% ping loss)"
 	} elseif ($loss -eq 0) {
 		$avg /= $success
-		Write-Host "✅ Online with $($min)...$($max)ms latency - $($avg)ms average"
+		Write-Host "✅ Internet latency $($min)...$($max)ms, average is $($avg)ms"
 	} else {
 		$avg /= $success
 		Write-Host "✅ Online with $loss/$total ping loss and $($min)...$($max)ms latency - $($avg)ms average"
