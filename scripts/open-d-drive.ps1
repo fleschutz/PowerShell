@@ -1,4 +1,4 @@
-<#
+﻿<#
 .SYNOPSIS
 	Opens the D: drive folder
 .DESCRIPTION

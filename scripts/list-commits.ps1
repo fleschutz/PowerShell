@@ -1,4 +1,4 @@
-<#
+﻿<#
 .SYNOPSIS
 	Lists Git commits
 .DESCRIPTION

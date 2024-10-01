@@ -1,4 +1,4 @@
-<#
+﻿<#
 .SYNOPSIS
 	Changes to the /etc directory
 .DESCRIPTION

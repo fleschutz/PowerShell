@@ -1,4 +1,4 @@
-<#
+﻿<#
 .SYNOPSIS
 	Checks all XML files in a directory tree
 .DESCRIPTION

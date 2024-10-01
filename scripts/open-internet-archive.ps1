@@ -1,4 +1,4 @@
-<#
+﻿<#
 .SYNOPSIS
 	Opens the Internet Archive website 
 .DESCRIPTION

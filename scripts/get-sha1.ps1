@@ -1,4 +1,4 @@
-<#
+﻿<#
 .SYNOPSIS
 	Prints the SHA1 checksum of a file
 .DESCRIPTION

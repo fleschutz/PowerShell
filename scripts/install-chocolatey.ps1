@@ -1,4 +1,4 @@
-<#
+﻿<#
 .SYNOPSIS
         Installs Chocolatey (needs admin rights)
 .DESCRIPTION

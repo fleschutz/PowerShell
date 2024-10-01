@@ -1,4 +1,4 @@
-<#
+﻿<#
 .Synopsis
     Install PowerShell on Windows, Linux or macOS.
 .DESCRIPTION

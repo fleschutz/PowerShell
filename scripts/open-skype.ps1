@@ -1,4 +1,4 @@
-<#
+﻿<#
 .SYNOPSIS
 	Launches the Skype app
 .DESCRIPTION

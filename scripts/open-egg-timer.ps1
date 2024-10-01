@@ -1,4 +1,4 @@
-<#
+﻿<#
 .SYNOPSIS
 	Opens an egg timer
 .DESCRIPTION

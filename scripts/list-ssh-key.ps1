@@ -1,4 +1,4 @@
-<#
+﻿<#
 .SYNOPSIS
         Lists the SSH key
 .DESCRIPTION

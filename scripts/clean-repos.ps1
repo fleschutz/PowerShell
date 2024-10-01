@@ -1,4 +1,4 @@
-<#
+﻿<#
 .SYNOPSIS
 	Cleans all Git repositories in a folder from untracked files 
 .DESCRIPTION

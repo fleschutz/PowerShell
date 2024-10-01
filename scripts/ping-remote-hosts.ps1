@@ -1,4 +1,4 @@
-<#
+﻿<#
 .SYNOPSIS
 	Pings remote hosts to measure the latency 
 .DESCRIPTION

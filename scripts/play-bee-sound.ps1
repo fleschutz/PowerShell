@@ -1,4 +1,4 @@
-<#
+﻿<#
 .SYNOPSIS
 	Plays a bee sound
 .DESCRIPTION

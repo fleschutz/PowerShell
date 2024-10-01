@@ -1,4 +1,4 @@
-<#
+﻿<#
 .SYNOPSIS
 	Closes the Notepad app
 .DESCRIPTION

@@ -1,4 +1,4 @@
-<#
+﻿<#
 .SYNOPSIS
 	Closes the Snipping Tool
 .DESCRIPTION

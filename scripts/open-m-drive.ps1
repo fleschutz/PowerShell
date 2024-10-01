@@ -1,4 +1,4 @@
-<#
+﻿<#
 .SYNOPSIS
 	Opens the M: drive folder
 .DESCRIPTION

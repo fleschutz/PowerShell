@@ -1,4 +1,4 @@
-<#
+﻿<#
 .SYNOPSIS
 	Prints the geo location of the given IP address
 .DESCRIPTION

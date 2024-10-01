@@ -1,4 +1,4 @@
-<#
+﻿<#
 .SYNOPSIS
 	Lists the content of the recycle bin folder
 .DESCRIPTION

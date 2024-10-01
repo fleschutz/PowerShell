@@ -1,4 +1,4 @@
-<#
+﻿<#
 .SYNOPSIS
 	Lists IPv6 states
 .DESCRIPTION

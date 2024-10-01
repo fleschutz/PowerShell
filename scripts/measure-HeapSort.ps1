@@ -1,4 +1,4 @@
-<#
+﻿<#
 .SYNOPSIS
         Measures the speed of HeapSort
 .DESCRIPTION

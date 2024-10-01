@@ -1,4 +1,4 @@
-<#
+﻿<#
 .SYNOPSIS
 	Lists all anagrams of the given word
 .DESCRIPTION

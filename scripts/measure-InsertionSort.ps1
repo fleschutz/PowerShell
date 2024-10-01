@@ -1,4 +1,4 @@
-<#
+﻿<#
 .SYNOPSIS
         Measures the speed of InsertionSort
 .DESCRIPTION
@@ -7,14 +7,14 @@
 	one item at a time. It is much less efficient on large lists than more advanced algorithms
 	such as quicksort, heapsort, or merge sort.
 .PARAMETER numIntegers
-        Specifies the number of integers to sort
+	Specifies the number of integers to sort
 .EXAMPLE
-        PS> ./measure-InsertionSort.ps1
+	PS> ./measure-InsertionSort.ps1
 	🧭 0.423 sec to sort 1000 integers by InsertionSort 
 .LINK
-        https://github.com/fleschutz/PowerShell
+	https://github.com/fleschutz/PowerShell
 .NOTES
-        Author: Markus Fleschutz | License: CC0
+	Author: Markus Fleschutz | License: CC0
 #>
 
 param([int]$numIntegers = 1000)

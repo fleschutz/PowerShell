@@ -1,4 +1,4 @@
-<#
+﻿<#
 .SYNOPSIS
 	Lists the phone calls of the FRITZ!Box device
 .DESCRIPTION

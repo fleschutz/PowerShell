@@ -1,4 +1,4 @@
-<#
+﻿<#
 .SYNOPSIS
 	Starts the Snipping Tool
 .DESCRIPTION

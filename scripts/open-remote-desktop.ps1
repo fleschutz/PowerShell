@@ -1,4 +1,4 @@
-<#
+﻿<#
 .SYNOPSIS
 	Launches the Remote Desktop app
 .DESCRIPTION

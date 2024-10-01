@@ -1,4 +1,4 @@
-<#
+﻿<#
 .SYNOPSIS
 	Convert a MySQL database table to a .CSV file
 .DESCRIPTION

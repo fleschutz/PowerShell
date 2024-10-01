@@ -1,4 +1,4 @@
-<#
+﻿<#
 .SYNOPSIS
 	Cherry-picks a Git commit into one or more branches
 .DESCRIPTION

@@ -1,4 +1,4 @@
-<#
+﻿<#
 .SYNOPSIS
 	Checks PowerShell file(s) for validity
 .DESCRIPTION

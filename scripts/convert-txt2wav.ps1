@@ -1,4 +1,4 @@
-<#
+﻿<#
 .SYNOPSIS
 	Converts text to a .WAV audio file
 .DESCRIPTION

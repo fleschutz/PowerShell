@@ -1,4 +1,4 @@
-<#
+﻿<#
 .SYNOPSIS
 	Checks the time until Saint Nicholas Day
 .DESCRIPTION

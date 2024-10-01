@@ -1,4 +1,4 @@
-<#
+﻿<#
 .SYNOPSIS
     Installs the Salesforce CLI (sfdx).
 .DESCRIPTION

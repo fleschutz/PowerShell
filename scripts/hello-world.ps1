@@ -1,4 +1,4 @@
-<#
+﻿<#
 .SYNOPSIS
 	Sample Script
 .DESCRIPTION

@@ -1,4 +1,4 @@
-<#
+﻿<#
 .SYNOPSIS
 	Changes to the Jenkins home directory
 .DESCRIPTION

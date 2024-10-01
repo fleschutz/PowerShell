@@ -1,4 +1,4 @@
-<#
+﻿<#
 .SYNOPSIS
 	Converts an image into blurred frames
 .DESCRIPTION

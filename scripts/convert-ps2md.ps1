@@ -1,4 +1,4 @@
-<#
+﻿<#
 .SYNOPSIS
 	Converts a PowerShell script to Markdown
 .DESCRIPTION

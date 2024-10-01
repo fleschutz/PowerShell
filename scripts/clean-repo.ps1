@@ -1,4 +1,4 @@
-<#
+﻿<#
 .SYNOPSIS
 	Cleans a repo
 .DESCRIPTION

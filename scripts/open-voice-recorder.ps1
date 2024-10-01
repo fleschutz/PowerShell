@@ -1,4 +1,4 @@
-<#
+﻿<#
 .SYNOPSIS
         Launches the Voice Recorder app
 .DESCRIPTION

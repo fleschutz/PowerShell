@@ -1,4 +1,4 @@
-<#
+﻿<#
 .SYNOPSIS
 	Decrypts a file
 .DESCRIPTION

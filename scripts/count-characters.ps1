@@ -1,4 +1,4 @@
-<#
+﻿<#
 .SYNOPSIS
 	Counts the number of characters
 .DESCRIPTION

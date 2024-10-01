@@ -1,4 +1,4 @@
-<#
+﻿<#
 .SYNOPSIS
         Lists all pull requests
 .DESCRIPTION

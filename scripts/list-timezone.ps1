@@ -1,4 +1,4 @@
-<#
+﻿<#
 .SYNOPSIS
 	Lists time zone details
 .DESCRIPTION

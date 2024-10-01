@@ -1,4 +1,4 @@
-<#
+﻿<#
 .SYNOPSIS
 	Installs One Calendar
 .DESCRIPTION

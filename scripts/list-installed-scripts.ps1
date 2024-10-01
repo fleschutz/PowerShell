@@ -1,4 +1,4 @@
-<#
+﻿<#
 .SYNOPSIS
 	Lists all installed PowerShell scripts 
 .DESCRIPTION

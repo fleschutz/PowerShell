@@ -1,4 +1,4 @@
-<#
+﻿<#
 .SYNOPSIS
 	Clones a shallow Git repo
 .DESCRIPTION

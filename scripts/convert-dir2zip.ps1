@@ -1,4 +1,4 @@
-<#
+﻿<#
 .SYNOPSIS
 	Converts a directory into a compressed .ZIP file
 .DESCRIPTION

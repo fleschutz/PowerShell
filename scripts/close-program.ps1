@@ -1,4 +1,4 @@
-<#
+﻿<#
 .SYNOPSIS
 	Closes a program
 .DESCRIPTION

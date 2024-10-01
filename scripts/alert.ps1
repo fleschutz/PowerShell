@@ -1,4 +1,4 @@
-<#
+﻿<#
 .SYNOPSIS
 	Handles and escalates an alert 
 .DESCRIPTION

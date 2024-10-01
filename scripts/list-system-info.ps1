@@ -1,4 +1,4 @@
-<#
+﻿<#
 .SYNOPSIS
 	Lists system information of the local computer
 .DESCRIPTION

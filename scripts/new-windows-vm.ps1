@@ -1,4 +1,4 @@
-$VMName = "windows"
+﻿$VMName = "windows"
 
  $VM = @{
      Name = $VMName

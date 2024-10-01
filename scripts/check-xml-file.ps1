@@ -1,4 +1,4 @@
-<#
+﻿<#
 .SYNOPSIS
 	Verifies an XML file
 .DESCRIPTION

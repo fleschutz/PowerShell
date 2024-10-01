@@ -1,4 +1,4 @@
-<#
+﻿<#
 .SYNOPSIS
 	Opens an URL in the default browser
 .DESCRIPTION

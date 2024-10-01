@@ -1,4 +1,4 @@
-<#
+﻿<#
 .SYNOPSIS
 	Lists DNS servers
 .DESCRIPTION

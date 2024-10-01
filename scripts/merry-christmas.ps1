@@ -1,4 +1,4 @@
-<#
+﻿<#
 .SYNOPSIS
 	Replies to "Merry Christmas"
 .DESCRIPTION

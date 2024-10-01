@@ -1,4 +1,4 @@
-<#
+﻿<#
 .SYNOPSIS
 	List coffee prices
 .DESCRIPTION
@@ -9,6 +9,7 @@
 	Monthly Global Price of Coffee (by alphavantage.co, in cents per pound)
 	-----------------------------------------------------------------------
 	2024-04-01 ████████████████████████████████████████████████████████████████████▌ 240
+	...
 .LINK
 	https://github.com/fleschutz/PowerShell
 .NOTES

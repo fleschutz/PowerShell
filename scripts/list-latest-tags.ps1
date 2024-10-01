@@ -1,4 +1,4 @@
-<#
+﻿<#
 .SYNOPSIS
 	Lists the latests tags in all Git repositories in a folder
 .DESCRIPTION

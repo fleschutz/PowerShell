@@ -1,4 +1,4 @@
-<#
+﻿<#
 .SYNOPSIS
 	Lists random passwords
 .DESCRIPTION

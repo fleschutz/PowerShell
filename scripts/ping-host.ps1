@@ -1,4 +1,4 @@
-<#
+﻿<#
 .SYNOPSIS
 	Ping a host continuously
 .DESCRIPTION

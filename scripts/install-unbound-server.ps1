@@ -1,4 +1,4 @@
-<#
+﻿<#
 .SYNOPSIS
 	Installs Unbound server (needs admin rights)
 .DESCRIPTION

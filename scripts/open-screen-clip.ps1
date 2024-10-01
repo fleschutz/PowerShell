@@ -1,4 +1,4 @@
-<#
+﻿<#
 .SYNOPSIS
 	Launches Screen Clip
 .DESCRIPTION

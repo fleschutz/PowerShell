@@ -1,4 +1,4 @@
-<#
+﻿<#
 .SYNOPSIS
 	Determines the week number 
 .DESCRIPTION

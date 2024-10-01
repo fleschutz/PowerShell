@@ -1,4 +1,4 @@
-<#
+﻿<#
 .SYNOPSIS
 	Checks a Git repository
 .DESCRIPTION

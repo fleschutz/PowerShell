@@ -1,4 +1,4 @@
-<#
+﻿<#
 .SYNOPSIS
 	Starts the default email client
 .DESCRIPTION

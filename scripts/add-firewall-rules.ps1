@@ -1,4 +1,4 @@
-<#
+﻿<#
 .SYNOPSIS
 	Adds firewall rules for executables (needs admin rights).
 .DESCRIPTION

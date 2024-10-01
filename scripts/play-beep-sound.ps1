@@ -1,4 +1,4 @@
-<#
+﻿<#
 .SYNOPSIS
 	Plays a short beep sound
 .DESCRIPTION
