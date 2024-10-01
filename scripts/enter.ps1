@@ -3,8 +3,8 @@
 	SSH login to another host
 .DESCRIPTION
 	This PowerShell script logs into another host by SSH.
-.PARAMETER hostName
-	Specifies the hostname or IP address
+.PARAMETER remoteHost
+	Specifies the remote hostname or IP address
 .EXAMPLE
 	PS> ./enter.ps1 linuxhost
 .LINK
@@ -13,15 +13,16 @@
 	Author: Markus Fleschutz | License: CC0
 #>
 
-param([string]$hostName = "")
+param([string]$remoteHost = "")
 
 try {
-	if ($hostName -eq "") { $hostName = Read-Host "Enter the target hostname" }
+	if ($remoteHost -eq "") { $remoteHost = Read-Host "Enter the remote hostname" }
 	if ($IsLinux) { $username = $(whoami) } else { $username = $env:USERNAME }
+	$username = $username.toLower()
 
-	Write-Host "Entering host '$hostName' as user '$username' using " -noNewline
+	Write-Host "Entering remote host '$remoteHost' as user '$username' using " -noNewline
 	& ssh -V
-	& ssh "$($username)@$($hostName)"
+	& ssh "$($username)@$($remoteHost)"
 	exit 0 # success
 } catch {
 	"⚠️ Error in line $($_.InvocationInfo.ScriptLineNumber): $($Error[0])"
