@@ -13,14 +13,12 @@
 #>
 
 try {
-	$Path = Resolve-Path "$HOME/OneDrive"
-	if (-not(Test-Path "$Path" -pathType container)) {
-		throw "OneDrive folder at 📂$Path doesn't exist (yet)"
-	}
-	Set-Location "$Path"
-	"📂$Path"
+	$path = Resolve-Path "~/OneDrive"
+	if (-not(Test-Path "$path" -pathType container)) { throw "No OneDrive folder at 📂$path - is OneDrive installed?" }
+	Set-Location "$path"
+	"📂$path"
 	exit 0 # success
 } catch {
-	"⚠️ Error in line $($_.InvocationInfo.ScriptLineNumber): $($Error[0])"
+	"⚠️ Error: $($Error[0])"
 	exit 1
 }

@@ -18,12 +18,12 @@ try {
 	} elseif (Test-Path "/var/snap/jenkins" -pathType container) {
 		$path = "/var/snap/jenkins"
 	} else {
-		throw "The Jenkins home directory doesn't exist (yet)"
+		throw "No Jenkins home directory found - is Jenkins installed?"
 	}
 	Set-Location "$path"
 	"📂$path"
 	exit 0 # success
 } catch {
-	"⚠️ Error in line $($_.InvocationInfo.ScriptLineNumber): $($Error[0])"
+	"⚠️ Error: $($Error[0])"
 	exit 1
 }
