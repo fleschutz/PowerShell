@@ -2,10 +2,10 @@
 .SYNOPSIS
 	Check the DNS resolution 
 .DESCRIPTION
-	This PowerShell script measures the DNS resolution speed (using 100 popular domains) and prints it.
+	This PowerShell script measures the DNS resolution speed using 100 internet domains and prints it.
 .EXAMPLE
 	PS> ./check-dns.ps1
-	✅ DNS resolves 56.5 domains per second
+	✅ Internet DNS resolves 56.5 domains/sec
 .LINK
 	https://github.com/fleschutz/PowerShell
 .NOTES
@@ -13,24 +13,22 @@
 #>
  
 try {
-	#Write-Progress "Measuring DNS resolution..."
 	$table = Import-CSV "$PSScriptRoot/../data/popular-domains.csv"
-	$numRows = $table.Length
 
 	$stopWatch = [system.diagnostics.stopwatch]::startNew()
 	if ($IsLinux) {
 		foreach($row in $table){$nop=dig $row.Domain +short}
 	} else {
+		Clear-DnsClientCache
 		foreach($row in $table){$nop=Resolve-DNSName $row.Domain}
 	}
 	[float]$elapsed = $stopWatch.Elapsed.TotalSeconds
 
-	#Write-Progress -completed "Measuring DNS resolution..."
-	$average = [math]::round($numRows / $elapsed, 1)
-	if ($average -lt 10.0) {
-		Write-Host "⚠️ DNS resolves $average domains per second only"
+	$speed = [math]::round($table.Length / $elapsed, 1)
+	if ($speed -lt 10.0) {
+		Write-Host "⚠️ Internet DNS resolves $speed domains/sec only"
 	} else {  
-		Write-Host "✅ DNS resolves $average domains per second"
+		Write-Host "✅ Internet DNS resolves $speed domains/sec"
 	}
 	exit 0 # success
 } catch {

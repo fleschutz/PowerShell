@@ -7,7 +7,7 @@
 	Specifies the hosts to ping, seperated by commata (10 Internet servers by default)
 .EXAMPLE
 	PS> ./ping-remote-hosts.ps1
-	✅ Online with 11...40ms latency - 18ms average
+	✅ Internet latency 12ms (9...18ms range)
 .LINK
 	https://github.com/fleschutz/PowerShell
 .NOTES
@@ -36,7 +36,7 @@ try {
 		Write-Host "⚠️ Internet offline (100% ping loss)"
 	} elseif ($loss -eq 0) {
 		$avg /= $success
-		Write-Host "✅ Internet latency $($min)...$($max)ms, average is $($avg)ms"
+		Write-Host "✅ Internet latency $($avg)ms ($($min)...$($max)ms range)"
 	} else {
 		$avg /= $success
 		Write-Host "✅ Online with $loss/$total ping loss and $($min)...$($max)ms latency - $($avg)ms average"
