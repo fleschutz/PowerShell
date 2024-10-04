@@ -61,7 +61,7 @@ function WriteChartLine { param([float]$value, [float]$maxValue, [string]$text)
 }
 
 try {
-	& "$PSScriptRoot/write-headline.ps1" "Ping Roundtrip Times to $($hostname)"
+	Write-Host "`n   PING ROUNDTRIP TIMES TO: $hostname" -foregroundColor green
 	[int]$count = 1
 	do {
 		[float]$latency = GetPingLatency $hostname
