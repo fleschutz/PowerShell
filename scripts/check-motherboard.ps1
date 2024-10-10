@@ -4,10 +4,8 @@
 .DESCRIPTION
 	This PowerShell script lists the motherboard details.
 .EXAMPLE
-	PS> ./list-motherboard.ps1
-
-	Manufacturer : Gigabyte Technology Co., Ltd.
-	...
+	PS> ./check-motherboard.ps1
+	✅ Motherboard Calla_LC by LN
 .LINK
 	https://github.com/fleschutz/PowerShell
 .NOTES
@@ -18,7 +16,7 @@ try {
 	if ($IsLinux) {
 	} else {
 		$details = Get-WmiObject -Class Win32_BaseBoard
-		"✅ $($details.Product) motherboard by $($details.Manufacturer)"
+		"✅ Motherboard $($details.Product) by $($details.Manufacturer)"
 	}
 	exit 0 # success
 } catch {
