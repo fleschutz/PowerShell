@@ -84,7 +84,7 @@ try {
 		}
 		if ($reason -ne "") {
 			$status = "⚠️ "
-			$pending = "with pending reboot (registry got $($reason.substring(2)))"
+			$pending = "with pending reboot ($($reason.substring(2)) in registry)"
 		}
 	}
 	Write-Host "$status $(hostname) is up for $(TimeSpanAsString $uptime) since $($lastBootTime.ToShortDateString()) $pending"
