@@ -1282,7 +1282,7 @@ gTLD,generic top-level domain name
 GTM,strategy go-to-market strategy
 GUA,graphical password or graphical user authentication 
 GUI,Graphical User Interface
-GUID,global unique identifier
+GUID,Globally Unique Identifier (see also UUID)
 GUM,Global Update Manager
 GWAC,governmentwide acquisition contract
 GXA,Global XML Web Services Architecture
@@ -2606,7 +2606,7 @@ USSD,Unstructured Supplementary Service Data
 UTF,Unicode Transformation Format
 UTM,unified threat management
 UUCP,UNIX-to-UNIX Copy Protocol
-UUID,Universal Unique Identifier
+UUID,Universally Unique Identifier (see also GUID)
 UX,user experience
 UXGA,Ultra Extended Graphics Array
 V2P,virtual to physical
