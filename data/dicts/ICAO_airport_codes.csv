@@ -235,7 +235,7 @@ TERM,MEANING
 03ND,Olafson Brothers Airport (USA)
 03NE,Hyde Ranch Airport (USA)
 03NH,Lorden Heliport (USA)
-03NJ,AT&T Heliport (USA)
+03NJ (Austria)&T Heliport (USA)
 03NM,Miner's Colfax Medical Center Heliport (USA)
 03NR,Johnston Medical Center Heliport (USA)
 03NV,Llama Ranch Airport (USA)
@@ -562,7 +562,7 @@ TERM,MEANING
 08SD,Douglas County Memorial Hospital Heliport (USA)
 08TA,Rancho Del Lago Heliport (USA)
 08TE,B J McCombs Sisterdale Airport (USA)
-08TN,PTC Airport (USA)
+08TN (Portugal)C Airport (USA)
 08TS,Puesta Del Sol Airport (USA)
 08TT,LZ Tango Charlie Airport (USA)
 08TX,Cross Wind Airport (USA)
@@ -1351,7 +1351,7 @@ TERM,MEANING
 11TA,Conoco Heliport (USA)
 11TE,Flying M Ranch Airport (USA)
 11TN,Salem Field (USA)
-11TS,PT Enterprise D&W Ranch Airport (USA)
+11TS (Portugal) Enterprise D&W Ranch Airport (USA)
 11TX,Butler Airport (USA)
 11UT,Flying R Airport (USA)
 11VA,Chesapeake General Hospital Heliport (USA)
@@ -5238,7 +5238,7 @@ TERM,MEANING
 46AR,Robert Chris McIntosh Airport (USA)
 46AZ,Piñon Airport (USA)
 46CA,Rancho Vallecito Airport (USA)
-46CL,AT&T Center Heliport (USA)
+46CL (Austria)&T Center Heliport (USA)
 46CN,Crystal Airport (USA)
 46CO,Huerfano Agricultural Airport (USA)
 46FA,Perdido Key Fire Station Helipad (USA)
@@ -7190,7 +7190,7 @@ TERM,MEANING
 63A,Lloyd R. Roundtree Seaplane Facility Seaplane Base (USA)
 63AK,Kucera Residence Airport (USA)
 63AR,Stokes Airport (USA)
-63AZ,AT&T - Apache Junction Heliport (USA)
+63AZ (Austria)&T - Apache Junction Heliport (USA)
 63CA,Desert Air Sky Ranch Airport (USA)
 63CL,G3 Ranch Airport (USA)
 63CN,Meadowlark Field (USA)
@@ -12351,16 +12351,16 @@ AR98,Johnson Field (USA)
 ARP,Aragip Airport (Papua New Guinea)
 AS89,Public Safety Heliport (USA)
 ASZ,Asirim Airport (Papua New Guinea)
-AT-0001,Pöchlarn-Wörth Heliport,AT
-AT-0002,Scalaria Airchallenge Water Landing Area,AT
-AT-0003,Bad Tatzmannsdorf PVA Hospital Helipad,AT
-AT-0004,Güssing Hospital Helipad,AT
-AT-0005,Retzer Land Heliport,AT
-AT-0006,Nenzing Heliport,AT
-AT-0007,Christophorus 15 Heliport,AT
-AT-0008,Gmünd Heliport,AT
-AT-0009,Ameis Airstrip,AT
-AT-0010,Radochen Airstrip,AT
+AT-0001,Pöchlarn-Wörth Heliport (Austria)
+AT-0002,Scalaria Airchallenge Water Landing Area (Austria)
+AT-0003,Bad Tatzmannsdorf PVA Hospital Helipad (Austria)
+AT-0004,Güssing Hospital Helipad (Austria)
+AT-0005,Retzer Land Heliport (Austria)
+AT-0006,Nenzing Heliport (Austria)
+AT-0007,Christophorus 15 Heliport (Austria)
+AT-0008,Gmünd Heliport (Austria)
+AT-0009,Ameis Airstrip (Austria)
+AT-0010,Radochen Airstrip (Austria)
 AT03,Concordia Skyway,AQ
 AT13,Zucchelli Ice Runway,AQ
 AT25,Showa Station Skiway,AQ
@@ -20662,7 +20662,7 @@ DE-0350,Brandis Airbase (Germany)
 DE-0351,Balloonport Bitterfeld (Germany)
 DE-0352,Skydive Bad Lippspringe (Germany)
 DE-0353,Beedeln Ultralight Flightpark (Germany)
-DE-0354,Ternberg Landing Field,AT
+DE-0354,Ternberg Landing Field (Austria)
 DE-0355,Sonderlandeplatz Meißendorf-Brunsiek (Germany)
 DE-0356,Flugplatz Uehrde (Germany)
 DE-0357,UL-Flugplatz Brauna (Germany)
@@ -22848,7 +22848,7 @@ ES-0021,Aeròdrom d'Avinyonet (Spain)
 ES-0022,ULM de Dolores (Spain)
 ES-0023,Basa Aérea de Valencia-Bétera (Spain)
 ES-0024,Ultralight Aeroclub Müller (Spain)
-ES-0025,Aerodromo de Figueira dos Cavaleiros,PT
+ES-0025,Aerodromo de Figueira dos Cavaleiros (Portugal)
 ES-0026,Camp de Vol de Palafolls (Spain)
 ES-0027,Aerodromo El Judio (Spain)
 ES-0028,AeroCieza (Spain)
@@ -28494,7 +28494,7 @@ IE-0006,Clifden Alcock & Brown Airport,IE
 IE-0007,Inishbofin Airfield,IE
 IE-0008,Lough Conn Airstrip,IE
 IE-0009,Dowth Hall Airfield,IE
-IE-0010,ILAS Wexford Airfield,IE
+IE-0010 (Israel)AS Wexford Airfield,IE
 IE-0011,Limetree Airfield,IE
 IE-0012,Ballinvally Farm Airstrip,IE
 IE-0013,Ashfield - Russell's field UL,IE
@@ -28656,19 +28656,19 @@ II96,Buchta Airport (USA)
 II97,Solenberg Airport (USA)
 II98,Shrum Field (USA)
 II99,Drake Field (USA)
-IL-0001,Kefar Gallim Highway Strip,IL
-IL-0002,Mishmar Ayalon Highway Strip H,IL
-IL-0003,Gvulot Airstrip,IL
-IL-0004,Talmei Yosef Airstrip,IL
-IL-0005,Palmahim South Airstrip,IL
-IL-0006,Naan Airstrip,IL
-IL-0007,Israeli Center for Sport Aviation,IL
-IL-0008,Ein Vered Airfield,IL
-IL-0009,Meir Medical Center Helipad,IL
-IL-0010,Hadassah Heliport,IL
-IL-0011,Kedma Airport,IL
-IL-0012,Dimona Airport,IL
-IL-0013,Assuta Helipad,IL
+IL-0001,Kefar Gallim Highway Strip (Israel)
+IL-0002,Mishmar Ayalon Highway Strip H (Israel)
+IL-0003,Gvulot Airstrip (Israel)
+IL-0004,Talmei Yosef Airstrip (Israel)
+IL-0005,Palmahim South Airstrip (Israel)
+IL-0006,Naan Airstrip (Israel)
+IL-0007,Israeli Center for Sport Aviation (Israel)
+IL-0008,Ein Vered Airfield (Israel)
+IL-0009,Meir Medical Center Helipad (Israel)
+IL-0010,Hadassah Heliport (Israel)
+IL-0011,Kedma Airport (Israel)
+IL-0012,Dimona Airport (Israel)
+IL-0013,Assuta Helipad (Israel)
 IL00,Welch Heliport (USA)
 IL01,Wolford's Airport (USA)
 IL02,Herbert C. Maas Airport (USA)
@@ -33339,7 +33339,7 @@ JP-3015,Nisenji Heliport (Japan)
 JP-3016,Yuzawa Interchange Heliport (Japan)
 JP-3017,Muikamachi Interchange Heliport (Japan)
 JP-3018,Uenotaira Heliport (Japan)
-JP-3019,ATLA Niijima Heliport (Japan)
+JP-3019 (Austria)LA Niijima Heliport (Japan)
 JP-3020,Wakago Heliport (Japan)
 JP-3021,Shinnoshobo Emergency Heliport (Japan)
 JP-3022,Marinetopia Heliport (Japan)
@@ -40376,8 +40376,8 @@ LL12,Brown and Lambrecht Heliport (USA)
 LL13,Stoney Real Estate Airport (USA)
 LL14,NW Lake Forest Hospital-Grayslake Heliport (USA)
 LL18,Ernest E Orwig Airport (USA)
-LL1A,Hatzerim Northwest Airport,IL
-LL1B,Arad Airport,IL
+LL1A,Hatzerim Northwest Airport (Israel)
+LL1B,Arad Airport (Israel)
 LL20,Smith Restricted Landing Area (USA)
 LL22,Brookeridge Air Park (USA)
 LL23,Meyer Airport (USA)
@@ -40410,8 +40410,8 @@ LL53,Olson Airport (USA)
 LL54,Dunn Airport (USA)
 LL55,Gentry Airport (USA)
 LL56,Schott Airport (USA)
-LL59,Palmahim Air Base,IL
-LL60,Nitzana West Airport,IL
+LL59,Palmahim Air Base (Israel)
+LL60,Nitzana West Airport (Israel)
 LL61,Doering's Port Airport (USA)
 LL64,Ralph E. Daniels Airport (USA)
 LL65,Edgar Read Airport (USA)
@@ -40437,266 +40437,266 @@ LL95,Clarke Heliport (USA)
 LL97,Rockenbach Airport (USA)
 LL98,John W Meils Restricted Landing Area (USA)
 LLAZ,Gush Katif Airport,PS
-LLBG,Ben Gurion International Airport,IL
-LLBL,Rabin Medical Center (Beilinson),IL
-LLBO,Habonim Airfield,IL
-LLBS,Beersheba (Teyman) Airport,IL
-LLEK,Tel Nof Air Base,IL
-LLER,Ramon International Airport,IL
-LLES,Ein Shemer Airfield,IL
-LLET,Eilat Airport,IL
-LLEY,Ein Yahav Airfield,IL
-LLFK,Fiq Airfield,IL
+LLBG,Ben Gurion International Airport (Israel)
+LLBL,Rabin Medical Center (Beilinson) (Israel)
+LLBO,Habonim Airfield (Israel)
+LLBS,Beersheba (Teyman) Airport (Israel)
+LLEK,Tel Nof Air Base (Israel)
+LLER,Ramon International Airport (Israel)
+LLES,Ein Shemer Airfield (Israel)
+LLET,Eilat Airport (Israel)
+LLEY,Ein Yahav Airfield (Israel)
+LLFK,Fiq Airfield (Israel)
 LLH,La Lima - Reginaldo Hammer Airport,HN
-LLHA,Haifa International Airport,IL
-LLHB,Hatzerim Air Base,IL
-LLHD,Hadassah Ein Kerem Heliport,IL
-LLHS,Hatzor Air Base,IL
-LLHY,Hillel Yaffe,IL
-LLHZ,Herzliya Airport,IL
-LLIB,Rosh Pina Airport,IL
-LLIC,Sourasky (Ichilov) Medical Center,IL
-LLKS,Kiryat Shmona Airport,IL
+LLHA,Haifa International Airport (Israel)
+LLHB,Hatzerim Air Base (Israel)
+LLHD,Hadassah Ein Kerem Heliport (Israel)
+LLHS,Hatzor Air Base (Israel)
+LLHY,Hillel Yaffe (Israel)
+LLHZ,Herzliya Airport (Israel)
+LLIB,Rosh Pina Airport (Israel)
+LLIC,Sourasky (Ichilov) Medical Center (Israel)
+LLKS,Kiryat Shmona Airport (Israel)
 LLL,Lissadell Airport (Australia)
-LLMG,Megiddo Airport,IL
-LLMR,Mitzpe Ramon Airfield,IL
-LLMZ,Bar Yehuda Airfield,IL
-LLNV,Nevatim Air Base,IL
-LLOV,Ovda Airport,IL
-LLPO,Poriya Medical Center,IL
-LLRB,Rambam Heliport,IL
-LLRD,Ramat David Air Base,IL
-LLRM,Ramon Air Base,IL
-LLSD,Sde Dov Airport,IL
-LLSM,Sheba (Tel HaShomer) Medical Center,IL
-LLSR,Soroka Medical Center Heliport,IL
-LLTN,Tnuvot Ultralight Airfield,IL
-LLYO,Yotvata Airfield,IL
-LMMG,Xewkija Heliport,MT
-LMML,Malta International Airport,MT
+LLMG,Megiddo Airport (Israel)
+LLMR,Mitzpe Ramon Airfield (Israel)
+LLMZ,Bar Yehuda Airfield (Israel)
+LLNV,Nevatim Air Base (Israel)
+LLOV,Ovda Airport (Israel)
+LLPO,Poriya Medical Center (Israel)
+LLRB,Rambam Heliport (Israel)
+LLRD,Ramat David Air Base (Israel)
+LLRM,Ramon Air Base (Israel)
+LLSD,Sde Dov Airport (Israel)
+LLSM,Sheba (Tel HaShomer) Medical Center (Israel)
+LLSR,Soroka Medical Center Heliport (Israel)
+LLTN,Tnuvot Ultralight Airfield (Israel)
+LLYO,Yotvata Airfield (Israel)
+LMMG,Xewkija Heliport (Malta)
+LMML,Malta International Airport (Malta)
 LMV,Madivaru Airport,MV
 LMZ,Palma Airport,MZ
 LNC,Lengbati Airport (Papua New Guinea)
 LNF,Munbil Airport (Papua New Guinea)
 LNM,Langimar Airport (Papua New Guinea)
-LNMC,Monaco Heliport,MC
+LNMC,Monaco Heliport (Monaco)
 LNQ,Loani Airport (Papua New Guinea)
-LOAA,Ottenschlag Airport,AT
-LOAB,Dobersberg Airfield,AT
-LOAC,Kittsee Heliport,AT
-LOAD,Völtendorf Airport,AT
-LOAE,Eisenstadt Heliport,AT
-LOAF,Baden Heliport,AT
-LOAG,Krems Airport,AT
-LOAH,Horn Heliport,AT
-LOAJ,Öamtc Heliport,AT
-LOAK,Krems Heliport,AT
-LOAL,Leopoldsdorf im Marchfelde Airport,AT
-LOAM,Meidling Heliport,AT
-LOAN,Wiener Neustadt East Airport,AT
-LOAO,Oberpullendorf Heliport,AT
-LOAP,Waidhofen an der Ybbs Hospital Helipad,AT
-LOAQ,Krankenhaus Heliport,AT
-LOAR,Altlichtenwarth Gliderfield,AT
-LOAS,Spitzerberg Airfield,AT
-LOAT,Trausdorf Airport,AT
-LOAU,Stockerau Airport,AT
-LOAV,Vöslau-Kottingbrunn Airport,AT
-LOAW,Öamtc Heliport,AT
-LOAX,St. Pölten Heliport,AT
-LOAY,Kilb Heliport,AT
-LOAZ,Zwettl Heliport,AT
-LOBA,Wien Heliport,AT
-LOBF,Christophorus 9 Hospital Heliport,AT
-LOBI,Mödling Krankenhaus Heliport,AT
-LOBM,Mistelbach Hospital Helipad,AT
-LODL,Business Center Leitner Heliport,AT
-LODO,Christophorus 16 Heliport,AT
+LOAA,Ottenschlag Airport (Austria)
+LOAB,Dobersberg Airfield (Austria)
+LOAC,Kittsee Heliport (Austria)
+LOAD,Völtendorf Airport (Austria)
+LOAE,Eisenstadt Heliport (Austria)
+LOAF,Baden Heliport (Austria)
+LOAG,Krems Airport (Austria)
+LOAH,Horn Heliport (Austria)
+LOAJ,Öamtc Heliport (Austria)
+LOAK,Krems Heliport (Austria)
+LOAL,Leopoldsdorf im Marchfelde Airport (Austria)
+LOAM,Meidling Heliport (Austria)
+LOAN,Wiener Neustadt East Airport (Austria)
+LOAO,Oberpullendorf Heliport (Austria)
+LOAP,Waidhofen an der Ybbs Hospital Helipad (Austria)
+LOAQ,Krankenhaus Heliport (Austria)
+LOAR,Altlichtenwarth Gliderfield (Austria)
+LOAS,Spitzerberg Airfield (Austria)
+LOAT,Trausdorf Airport (Austria)
+LOAU,Stockerau Airport (Austria)
+LOAV,Vöslau-Kottingbrunn Airport (Austria)
+LOAW,Öamtc Heliport (Austria)
+LOAX,St. Pölten Heliport (Austria)
+LOAY,Kilb Heliport (Austria)
+LOAZ,Zwettl Heliport (Austria)
+LOBA,Wien Heliport (Austria)
+LOBF,Christophorus 9 Hospital Heliport (Austria)
+LOBI,Mödling Krankenhaus Heliport (Austria)
+LOBM,Mistelbach Hospital Helipad (Austria)
+LODL,Business Center Leitner Heliport (Austria)
+LODO,Christophorus 16 Heliport (Austria)
 LOF,Loen Airport,MH
-LOGA,Bad Radkersburg Hospital Helipad,AT
-LOGC,Niederöblarn Heliport,AT
-LOGF,Fürstenfeld Airport,AT
-LOGG,Punitz-Güssing Airport,AT
-LOGH,Graz University Hospital Helipad,AT
-LOGI,Trieben Airport,AT
-LOGJ,Judenburg Heliport,AT
-LOGK,Kapfenberg Airport,AT
-LOGL,Flugplatz Lanzen-Turnau,AT
-LOGM,Flugfeld Mariazell,AT
-LOGO,Flugplatz Niederöblarn,AT
-LOGP,Pinkafeld Airfield,AT
-LOGR,Schwerpunkt Heliport,AT
-LOGT,Leoben/Timmersdorf Airfield,AT
-LOGW,Unterfladnitz Airport,AT
-LOHD,Hartberg LKH Heliport,AT
-LOIA,Kitzbühel Hospital Helipad,AT
-LOIB,Hörlahof Heliport,AT
-LOIC,St. Anton Am Arlberg Heliport,AT
-LOID,Kufstein Heliport,AT
-LOIE,Reutte Heliport,AT
-LOIF,Feldkirch State Hospital Helipad,AT
-LOIG,Ludesch Heliport,AT
-LOIH,Hohenems-Dornbirn Airfield,AT
-LOII,Hall in Tirol Hospital Heliport,AT
-LOIJ,Sankt Johann Airport,AT
-LOIK,Kufstein-Langkampfen Airport,AT
-LOIL,ÖAMTC Heliport,AT
-LOIM,Langkampfen - Au Heliport,AT
-LOIN,Feuerwehrschule Heliport,AT
-LOIO,Sölden Heliport,AT
-LOIP,Idalpe Heliport,AT
-LOIQ,Dr. Schenk Heliport,AT
-LOIR,Reutte-Höfen Airport,AT
-LOIS,Swarovski Heliport,AT
-LOIT,St Johann In Tirol Hospital Heliport,AT
-LOIU,Uni Klinik Heliport,AT
-LOIV,St. Vinzenz Heliport,AT
-LOIW,Waidring Heliport,AT
-LOIX,Bregenz Heliport,AT
-LOIY,Sanatorium Dr. Schenk Heliport,AT
-LOIZ,Schwaz Heliport,AT
-LOJB,Bludenz State Hospital Helipad,AT
-LOJK,Kaltenbach Heliport,AT
-LOJM,Mayrhofen Heliport,AT
-LOJO,Flugrettungszentrum Öamtc Heliport,AT
-LOJP,Karres Heliport,AT
-LOJT,Hat Tux Heliport,AT
-LOJZ,Zugspitzarena Heliport,AT
-LOKA,Bodenlandeplatz/Ground-Landing Area Heliport,AT
-LOKB,Bad Kleinkircheim Heliport,AT
-LOKC,Glock Heliport,AT
-LOKD,Föderlach Heliport,AT
-LOKF,Feldkirchen Airfield,AT
-LOKG,Ferlach-Glainach Airport,AT
-LOKH,Hirt Airport,AT
-LOKI,Wietersdorf Heliport,AT
-LOKJ,Lienz Heliport,AT
-LOKK,Hallegg Heliport,AT
-LOKL,Lienz-Nikolsdorf Airport,AT
-LOKM,Mayerhofen Airport,AT
-LOKN,Nötsch im Gailtal Airfield,AT
-LOKO,Goldeck Talstation Heliport,AT
-LOKP,Deutsch-Ordens-Spital Heliport,AT
-LOKQ,Öamtc Heliport,AT
-LOKR,Sankt Donat / Mairist Airfield,AT
-LOKS,St. Andrä Im Lavanttal Heliport,AT
-LOKT,Villach Heliport,AT
-LOKU,Dachlandeplatz 2 Heliport,AT
-LOKV,Febau Heliport,AT
-LOKW,Wolfsberg Airport,AT
-LOKX,Feldkirchen-Waiern Heliport,AT
-LOKY,Landespolizeikommando Kärnten Heliport,AT
-LOKZ,Zwatzhof Heliport,AT
-LOLC,Flugplatz Scharnstein,AT
-LOLD,Europa 3 Heliport,AT
-LOLE,Flugplatz Eferding,AT
-LOLF,Freistadt Airfield,AT
-LOLG,Sankt Georgen Airfield,AT
-LOLH,Hofkirchen Airfield,AT
-LOLK,Ried-Kirchheim Airfield,AT
-LOLM,Micheldorf Airport,AT
-LOLO,Linz-East Airport,AT
-LOLS,Flugplatz Schärding-Suben,AT
-LOLT,Flugplatz Seitenstetten,AT
-LOLU,Gmunden-Laakirchen Airfield,AT
-LOLW,Wels Airport,AT
+LOGA,Bad Radkersburg Hospital Helipad (Austria)
+LOGC,Niederöblarn Heliport (Austria)
+LOGF,Fürstenfeld Airport (Austria)
+LOGG,Punitz-Güssing Airport (Austria)
+LOGH,Graz University Hospital Helipad (Austria)
+LOGI,Trieben Airport (Austria)
+LOGJ,Judenburg Heliport (Austria)
+LOGK,Kapfenberg Airport (Austria)
+LOGL,Flugplatz Lanzen-Turnau (Austria)
+LOGM,Flugfeld Mariazell (Austria)
+LOGO,Flugplatz Niederöblarn (Austria)
+LOGP,Pinkafeld Airfield (Austria)
+LOGR,Schwerpunkt Heliport (Austria)
+LOGT,Leoben/Timmersdorf Airfield (Austria)
+LOGW,Unterfladnitz Airport (Austria)
+LOHD,Hartberg LKH Heliport (Austria)
+LOIA,Kitzbühel Hospital Helipad (Austria)
+LOIB,Hörlahof Heliport (Austria)
+LOIC,St. Anton Am Arlberg Heliport (Austria)
+LOID,Kufstein Heliport (Austria)
+LOIE,Reutte Heliport (Austria)
+LOIF,Feldkirch State Hospital Helipad (Austria)
+LOIG,Ludesch Heliport (Austria)
+LOIH,Hohenems-Dornbirn Airfield (Austria)
+LOII,Hall in Tirol Hospital Heliport (Austria)
+LOIJ,Sankt Johann Airport (Austria)
+LOIK,Kufstein-Langkampfen Airport (Austria)
+LOIL,ÖAMTC Heliport (Austria)
+LOIM,Langkampfen - Au Heliport (Austria)
+LOIN,Feuerwehrschule Heliport (Austria)
+LOIO,Sölden Heliport (Austria)
+LOIP,Idalpe Heliport (Austria)
+LOIQ,Dr. Schenk Heliport (Austria)
+LOIR,Reutte-Höfen Airport (Austria)
+LOIS,Swarovski Heliport (Austria)
+LOIT,St Johann In Tirol Hospital Heliport (Austria)
+LOIU,Uni Klinik Heliport (Austria)
+LOIV,St. Vinzenz Heliport (Austria)
+LOIW,Waidring Heliport (Austria)
+LOIX,Bregenz Heliport (Austria)
+LOIY,Sanatorium Dr. Schenk Heliport (Austria)
+LOIZ,Schwaz Heliport (Austria)
+LOJB,Bludenz State Hospital Helipad (Austria)
+LOJK,Kaltenbach Heliport (Austria)
+LOJM,Mayrhofen Heliport (Austria)
+LOJO,Flugrettungszentrum Öamtc Heliport (Austria)
+LOJP,Karres Heliport (Austria)
+LOJT,Hat Tux Heliport (Austria)
+LOJZ,Zugspitzarena Heliport (Austria)
+LOKA,Bodenlandeplatz/Ground-Landing Area Heliport (Austria)
+LOKB,Bad Kleinkircheim Heliport (Austria)
+LOKC,Glock Heliport (Austria)
+LOKD,Föderlach Heliport (Austria)
+LOKF,Feldkirchen Airfield (Austria)
+LOKG,Ferlach-Glainach Airport (Austria)
+LOKH,Hirt Airport (Austria)
+LOKI,Wietersdorf Heliport (Austria)
+LOKJ,Lienz Heliport (Austria)
+LOKK,Hallegg Heliport (Austria)
+LOKL,Lienz-Nikolsdorf Airport (Austria)
+LOKM,Mayerhofen Airport (Austria)
+LOKN,Nötsch im Gailtal Airfield (Austria)
+LOKO,Goldeck Talstation Heliport (Austria)
+LOKP,Deutsch-Ordens-Spital Heliport (Austria)
+LOKQ,Öamtc Heliport (Austria)
+LOKR,Sankt Donat / Mairist Airfield (Austria)
+LOKS,St. Andrä Im Lavanttal Heliport (Austria)
+LOKT,Villach Heliport (Austria)
+LOKU,Dachlandeplatz 2 Heliport (Austria)
+LOKV,Febau Heliport (Austria)
+LOKW,Wolfsberg Airport (Austria)
+LOKX,Feldkirchen-Waiern Heliport (Austria)
+LOKY,Landespolizeikommando Kärnten Heliport (Austria)
+LOKZ,Zwatzhof Heliport (Austria)
+LOLC,Flugplatz Scharnstein (Austria)
+LOLD,Europa 3 Heliport (Austria)
+LOLE,Flugplatz Eferding (Austria)
+LOLF,Freistadt Airfield (Austria)
+LOLG,Sankt Georgen Airfield (Austria)
+LOLH,Hofkirchen Airfield (Austria)
+LOLK,Ried-Kirchheim Airfield (Austria)
+LOLM,Micheldorf Airport (Austria)
+LOLO,Linz-East Airport (Austria)
+LOLS,Flugplatz Schärding-Suben (Austria)
+LOLT,Flugplatz Seitenstetten (Austria)
+LOLU,Gmunden-Laakirchen Airfield (Austria)
+LOLW,Wels Airport (Austria)
 LOM,Francisco Primo de Verdad y Ramos Airport (Mexico)
-LOMP,Patergassen Heliport,AT
-LOMW,Dachlandeplatz Heliport,AT
+LOMP,Patergassen Heliport (Austria)
+LOMW,Dachlandeplatz Heliport (Austria)
 LOR,Lowe AHP (Fort Rucker) Heliport (USA)
-LOSJ,St. Johann Im Pongau Heliport,AT
-LOSL,Dachlandeplatz Heliport,AT
-LOSM,Flugplatz Mauterndorf,AT
-LOSS,Schwarzach Heliport,AT
-LOWG,Graz Airport,AT
-LOWI,Innsbruck Airport,AT
-LOWK,Klagenfurt Airport,AT
-LOWL,Linz-Hörsching Airport / Vogler Air Base,AT
-LOWS,Salzburg Airport,AT
-LOWW,Vienna International Airport,AT
-LOWZ,Flugplatz Zell am See,AT
-LOXA,Fiala-Fernbrugg Air Base,AT
-LOXH,Hochfilzen Heliport,AT
-LOXI,Schwaz Military Heliport,AT
-LOXN,Wiener Neustadt West Airport,AT
-LOXS,Schwarzenbergkaserne Military Heliport,AT
-LOXT,Brumowski  Air Base,AT
-LOXZ,Hinterstoisser Air Base,AT
-LP77,Military Airfield of Santa Margarida,PT
-LPAG,Albergaria-a-Velha Heliport,PT
-LPAR,Alverca Air Base,PT
-LPAV,São Jacinto Airfield,PT
-LPAZ,Santa Maria Airport,PT
-LPBG,Bragança Airport,PT
-LPBH,Braga Hospital Heliport,PT
-LPBJ,Beja Airport / Airbase,PT
-LPBR,Braga Municipal Aerodrome,PT
-LPCB,Aerodromo de Castelo Branco,PT
-LPCC,Dr. Nélio Mendonça Hospital Heliport,PT
-LPCD,Santa Comba Dão Heliport,PT
-LPCH,Aerodromo de Chaves,PT
-LPCI,Coimbra University Hospital Helipad,PT
-LPCL,Covilhã Hospital Helipad,PT
-LPCO,Aerodromo Municipal de Coimbra,PT
-LPCR,Corvo Airport,PT
-LPCS,Cascais Airport,PT
-LPCV,Covilhã Airfield,PT
-LPDA,Porto Heliport,PT
-LPER,Évora Hospital Helipad,PT
-LPEV,Évora Airfield,PT
-LPFL,Flores Airport,PT
-LPFR,Faro Airport,PT
-LPGO,Almada Hospital Heliport,PT
-LPGR,Graciosa Airport,PT
-LPHB,Herdade da Brava Heliport,PT
-LPHC,Cascais Hospital Heliport,PT
-LPHR,Horta Airport,PT
-LPIN,Espinho Airfield,PT
-LPJB,Algés Heliport,PT
-LPJF,Aerodromo de Leiria,PT
-LPJO,Aerodromo de Alijó,PT
-LPLA,Lajes Airport,PT
-LPLZ,Aerodromo da Lousã,PT
-LPMA,Madeira International Airport Cristiano Ronaldo,PT
-LPMB,Miguel Barros Heliport,PT
-LPMC,Macedo de Cavaleiros,PT
-LPMD,Mirandela Hospitat Heliport,PT
-LPMF,Aerodromo de Monfortinho,PT
-LPMI,Mirandela Airfield,PT
-LPMO,Morargil Airfield,PT
-LPMP,Mafra Heliport,PT
-LPMR,Monte Real Air Base,PT
-LPMT,Montijo Air Base,PT
-LPMU,Mogadouro Airfield,PT
-LPMZ,Porto Moniz Helipad,PT
-LPNV,Torres Novas Hospital Heliport,PT
-LPOT,Ota Air Base,PT
-LPOV,Ovar Air Base,PT
-LPPA,Padre Américo Hospital Helipad,PT
-LPPB,Baltar Heliport,PT
-LPPD,João Paulo II Airport,PT
-LPPI,Pico Airport,PT
-LPPJ,Beja Heliport,PT
-LPPM,Portimão Airport,PT
-LPPR,Francisco de Sá Carneiro Airport,PT
-LPPS,Porto Santo Airport,PT
-LPPT,Humberto Delgado Airport (Lisbon Portela Airport),PT
-LPPV,Praia Verde Eco Airfield,PT
-LPSC,Santa Cruz Airfield,PT
-LPSI,Sines Airport,PT
-LPSJ,São Jorge Airport,PT
-LPSM,Santa Maria Hospital Helipad,PT
-LPSO,Aeródromo Municipal de Ponte de Sor,PT
-LPSR,Santarém Airfield,PT
-LPST,Sintra Air Base,PT
-LPTH,Tomar Hospital Helipad,PT
-LPTM,Bragança Hospital Helipad,PT
-LPTN,Tancos Airbase,PT
-LPVC,Viana do Castelo Hospital Helipad,PT
-LPVL,Vilar de Luz Airfield,PT
-LPVR,Vila Real Airport,PT
-LPVZ,Aerodromo Goncalves Lobato (Viseu Airport),PT
-LPXR,Vila Franca de Xira Hospital Helipad,PT
+LOSJ,St. Johann Im Pongau Heliport (Austria)
+LOSL,Dachlandeplatz Heliport (Austria)
+LOSM,Flugplatz Mauterndorf (Austria)
+LOSS,Schwarzach Heliport (Austria)
+LOWG,Graz Airport (Austria)
+LOWI,Innsbruck Airport (Austria)
+LOWK,Klagenfurt Airport (Austria)
+LOWL,Linz-Hörsching Airport / Vogler Air Base (Austria)
+LOWS,Salzburg Airport (Austria)
+LOWW,Vienna International Airport (Austria)
+LOWZ,Flugplatz Zell am See (Austria)
+LOXA,Fiala-Fernbrugg Air Base (Austria)
+LOXH,Hochfilzen Heliport (Austria)
+LOXI,Schwaz Military Heliport (Austria)
+LOXN,Wiener Neustadt West Airport (Austria)
+LOXS,Schwarzenbergkaserne Military Heliport (Austria)
+LOXT,Brumowski  Air Base (Austria)
+LOXZ,Hinterstoisser Air Base (Austria)
+LP77,Military Airfield of Santa Margarida (Portugal)
+LPAG,Albergaria-a-Velha Heliport (Portugal)
+LPAR,Alverca Air Base (Portugal)
+LPAV,São Jacinto Airfield (Portugal)
+LPAZ,Santa Maria Airport (Portugal)
+LPBG,Bragança Airport (Portugal)
+LPBH,Braga Hospital Heliport (Portugal)
+LPBJ,Beja Airport / Airbase (Portugal)
+LPBR,Braga Municipal Aerodrome (Portugal)
+LPCB,Aerodromo de Castelo Branco (Portugal)
+LPCC,Dr. Nélio Mendonça Hospital Heliport (Portugal)
+LPCD,Santa Comba Dão Heliport (Portugal)
+LPCH,Aerodromo de Chaves (Portugal)
+LPCI,Coimbra University Hospital Helipad (Portugal)
+LPCL,Covilhã Hospital Helipad (Portugal)
+LPCO,Aerodromo Municipal de Coimbra (Portugal)
+LPCR,Corvo Airport (Portugal)
+LPCS,Cascais Airport (Portugal)
+LPCV,Covilhã Airfield (Portugal)
+LPDA,Porto Heliport (Portugal)
+LPER,Évora Hospital Helipad (Portugal)
+LPEV,Évora Airfield (Portugal)
+LPFL,Flores Airport (Portugal)
+LPFR,Faro Airport (Portugal)
+LPGO,Almada Hospital Heliport (Portugal)
+LPGR,Graciosa Airport (Portugal)
+LPHB,Herdade da Brava Heliport (Portugal)
+LPHC,Cascais Hospital Heliport (Portugal)
+LPHR,Horta Airport (Portugal)
+LPIN,Espinho Airfield (Portugal)
+LPJB,Algés Heliport (Portugal)
+LPJF,Aerodromo de Leiria (Portugal)
+LPJO,Aerodromo de Alijó (Portugal)
+LPLA,Lajes Airport (Portugal)
+LPLZ,Aerodromo da Lousã (Portugal)
+LPMA,Madeira International Airport Cristiano Ronaldo (Portugal)
+LPMB,Miguel Barros Heliport (Portugal)
+LPMC,Macedo de Cavaleiros (Portugal)
+LPMD,Mirandela Hospitat Heliport (Portugal)
+LPMF,Aerodromo de Monfortinho (Portugal)
+LPMI,Mirandela Airfield (Portugal)
+LPMO,Morargil Airfield (Portugal)
+LPMP,Mafra Heliport (Portugal)
+LPMR,Monte Real Air Base (Portugal)
+LPMT,Montijo Air Base (Portugal)
+LPMU,Mogadouro Airfield (Portugal)
+LPMZ,Porto Moniz Helipad (Portugal)
+LPNV,Torres Novas Hospital Heliport (Portugal)
+LPOT,Ota Air Base (Portugal)
+LPOV,Ovar Air Base (Portugal)
+LPPA,Padre Américo Hospital Helipad (Portugal)
+LPPB,Baltar Heliport (Portugal)
+LPPD,João Paulo II Airport (Portugal)
+LPPI,Pico Airport (Portugal)
+LPPJ,Beja Heliport (Portugal)
+LPPM,Portimão Airport (Portugal)
+LPPR,Francisco de Sá Carneiro Airport (Portugal)
+LPPS,Porto Santo Airport (Portugal)
+LPPT,Humberto Delgado Airport (Lisbon Portela Airport) (Portugal)
+LPPV,Praia Verde Eco Airfield (Portugal)
+LPSC,Santa Cruz Airfield (Portugal)
+LPSI,Sines Airport (Portugal)
+LPSJ,São Jorge Airport (Portugal)
+LPSM,Santa Maria Hospital Helipad (Portugal)
+LPSO,Aeródromo Municipal de Ponte de Sor (Portugal)
+LPSR,Santarém Airfield (Portugal)
+LPST,Sintra Air Base (Portugal)
+LPTH,Tomar Hospital Helipad (Portugal)
+LPTM,Bragança Hospital Helipad (Portugal)
+LPTN,Tancos Airbase (Portugal)
+LPVC,Viana do Castelo Hospital Helipad (Portugal)
+LPVL,Vilar de Luz Airfield (Portugal)
+LPVR,Vila Real Airport (Portugal)
+LPVZ,Aerodromo Goncalves Lobato (Viseu Airport) (Portugal)
+LPXR,Vila Franca de Xira Hospital Helipad (Portugal)
 LQBI,Bihać sportski aerodrom - Bihac sport Airfield,BA
 LQBK,Banja Luka International Airport,BA
 LQCO,Ćoralići Air Base,BA
@@ -47630,7 +47630,7 @@ OK52,Cherokee Nation Redbird Smith Health Center Heliport (USA)
 OK53,KOTV Heliport (USA)
 OK54,May Ranch Airport (USA)
 OK55,Bost Ranch Airport (USA)
-OK56,PTNO Airport (USA)
+OK56 (Portugal)NO Airport (USA)
 OK57,Boeing MROTC Heliport (USA)
 OK58,Bluestem Airport (USA)
 OK59,Wolf Mountain Airport (USA)
@@ -49803,153 +49803,153 @@ PS92,Va Medical Center Heliport (USA)
 PS95,Mazzuca Heliport (USA)
 PS98,Travis Airport (USA)
 PS99,West Penn Township Airport (USA)
-PT-0001,Alfragide Heliport,PT
-PT-0002,Barlavento Algarvio Hospital Heliport,PT
-PT-0003,Fafe heliport,PT
-PT-0004,Hospital Amadora Heliport,PT
-PT-0005,Hospital de Santa Cruz heliport,PT
-PT-0006,Hospital de Sao Teotonio heliport,PT
-PT-0007,Hospital Distrital de Abrantes heliport,PT
-PT-0008,Hospital Distrital de Faro Heliport,PT
-PT-0009,Hospital Distrital de Guarda Heliport,PT
-PT-0010,Hospital Distrital Leiria heliport,PT
-PT-0011,Hospital do Divino Espirito Santo Heliport,PT
-PT-0012,Hospital José Joaquim Fernandes heliport,PT
-PT-0013,Hospital Pedro Hispano heliport,PT
-PT-0014,São Sebastião Hospital Helipad,PT
-PT-0015,Loule heliport,PT
-PT-0016,Nisa heliport,PT
-PT-0017,Alentejo Air Park,PT
-PT-0018,Santa Maria Da Feira heliport,PT
-PT-0019,Sines heliport,PT
-PT-0020,Aerodromo de Cabeceiras de Basto,PT
-PT-0021,Benavente Airfield,PT
-PT-0022,Aerodromo do Cerval,PT
-PT-0023,Laúndos Airfield,PT
-PT-0024,Tojeira Airfield,PT
-PT-0025,Lagos Airfield ULM,PT
-PT-0026,Aerodromo Municipal de Agueda,PT
-PT-0027,Arraiolos Ultralight Airfield,PT
-PT-0028,Aeródromo de Vila Meã,PT
-PT-0029,Aeródromo de Coja,PT
-PT-0030,Pista do Monte do Lago,PT
-PT-0031,Beja Civil Airfield,PT
-PT-0032,Amendoeira Aerodrome,PT
-PT-0033,Aeródromo de Pombal,PT
-PT-0034,Aeródromo da Lourinhã,PT
-PT-0035,Aeródromo de Seia,PT
-PT-0036,Aeródromo Municipal de Ferreira do Zezere,PT
-PT-0037,Aeródromo da Pampilhosa da Serra,PT
-PT-0038,Aerodromo Fátima Giesteira,PT
-PT-0039,Aérodromo de Ferreira do Alentejo,PT
-PT-0040,Aérodromo Municipal de Proença-a-Nova,PT
-PT-0041,Leziria Aerodrome,PT
-PT-0042,Campo de Voo de Valdonas,PT
-PT-0043,Aeródromo de Óbidos,PT
-PT-0044,Torres Vedras Heliport,PT
-PT-0045,Santarém Hospital Heliport,PT
-PT-0046,Pernes Heliport,PT
-PT-0047,Monchique Heliport,PT
-PT-0048,Sardoal Heliport,PT
-PT-0049,Coimbra Hospital Covões Heliport,PT
-PT-0050,Martim Longo Airstrip,PT
-PT-0051,Lamego Hospital Heliport,PT
-PT-0052,Pista da Herdade da Zambujeira,PT
-PT-0053,Fátima Salgueira Airstrip,PT
-PT-0054,Aerodromo de Pias Longas (Old - Closed),PT
-PT-0055,Aerodromo de Pias Longas (New),PT
-PT-0056,Pista do Arrepiado,PT
-PT-0057,Pista da Herdade da Comporta,PT
-PT-0058,Pista da Coudelaria Herdade do Pinheiro,PT
-PT-0059,Pista da SAPEC (Santa Catarina),PT
-PT-0060,Pista de Montevil (Batalha),PT
-PT-0061,Pista da Herdade da Barrosinha,PT
-PT-0062,Aerodromo da Palma,PT
-PT-0063,Pista de Melides,PT
-PT-0064,Pista de Aguas de Moura,PT
-PT-0065,Herdade do Rio Frio Airstrip,PT
-PT-0066,Alhos Vedros Aerodrome,PT
-PT-0067,Pista da Torre Vã,PT
-PT-0068,Pista do Torrão,PT
-PT-0069,Pista de Lavre,PT
-PT-0070,Pista de Grandola,PT
-PT-0071,Pista de Fonte Serne,PT
-PT-0072,Pista do Cabo Sardão,PT
-PT-0073,Bombeiros de Sines Heliport,PT
-PT-0074,Bombeiros de Alcacer do Sal Heliport,PT
-PT-0075,Herdade da Apostiça Heliport,PT
-PT-0076,Pista da Sonega,PT
-PT-0077,Aerodromo de Ourique,PT
-PT-0078,Pista da Barragem de Odivelas,PT
-PT-0079,Hospital das Forças Armadas Heliport,PT
-PT-0080,Pista da Barragem do Roxo,PT
-PT-0081,Armacao de Pera Airfield ULM,PT
-PT-0082,Aerodromo de Tavira ULM,PT
-PT-0083,Pista do Belo,PT
-PT-0084,Pista da Adiça,PT
-PT-0085,Pista do Monte das Tezas,PT
-PT-0086,Aerodromo da Amareleja,PT
-PT-0087,Pista de Alcanena,PT
-PT-0088,V. das Areias Airfield,PT
-PT-0089,Pista de Campo Maior,PT
-PT-0090,Aerodromo de Monforte,PT
-PT-0091,Viana do Alentejo Aerodrome,PT
-PT-0092,Herdade da Lentisca Airstrip,PT
-PT-0093,Cerieira Airfield,PT
-PT-0094,Campinho Airfield,PT
-PT-0095,Reguengos de Monsaraz Airstrip,PT
-PT-0096,Nossa Senhora de Machede Airstrip,PT
-PT-0097,Aerodromo do Coentral,PT
-PT-0098,Pista do Sorraia,PT
-PT-0099,Pista do Cabeço da Vaca,PT
-PT-0100,Pista do Ladoeiro,PT
-PT-0101,Aerodromo de Atouguia da Baleia,PT
-PT-0102,Cascais Marina Heliport,PT
-PT-0103,Pista de Montargil,PT
-PT-0104,Pista da Herdade da Lameira,PT
-PT-0105,Pista da Comenda,PT
-PT-0106,Pista de Mouriscas,PT
-PT-0107,Aerodromo de Mação,PT
-PT-0108,Vendas Novas Airstrip,PT
-PT-0109,Ciborro Airstrip,PT
-PT-0110,Pista de Biscainho Brandão,PT
-PT-0111,Pista do Couço,PT
-PT-0112,Pista de Volta do Vale,PT
-PT-0113,Pista de Bilrete,PT
-PT-0114,Aerodromo de Muge,PT
-PT-0115,Pista de Almoster,PT
-PT-0116,Pista de Valada do Ribatejo,PT
-PT-0117,Aerodromo do Alqueidão,PT
-PT-0118,Aerodromo da Azambuja,PT
-PT-0119,Pista da Garrocheira,PT
-PT-0120,Porto Alto Airstrip,PT
-PT-0121,Alcochete Military Airfield,PT
-PT-0122,Aerodromo da Pedra da Broa,PT
-PT-0123,Aerodromo de Sao Cosmado,PT
-PT-0124,Entre-os-Rios Airstrip,PT
-PT-0125,Corvachã Ultralight Airfield,PT
-PT-0126,Pista do Minhéu,PT
-PT-0127,Pista da Barragem do Maranhão,PT
-PT-0128,Pista da Chamusca,PT
-PT-0129,Quinta da Foz Airstrip,PT
-PT-0130,Herdade do Pontal Airstrip,PT
-PT-0131,Faias Aerodrome,PT
-PT-0132,Heliporto do Tabaçô,PT
-PT-0133,Heliporto de Alcaria,PT
-PT-0134,Pista do Monte do Pombo,PT
-PT-0135,Pista da Lagoa da Carrasqueira,PT
-PT-0136,Dragoa Airstrip,PT
-PT-0137,V.N.Milfontes,PT
-PT-0138,Piper Road Airstrip,PT
-PT-0139,Regimento Artilharia Military Airfield,PT
-PT-0140,Herdade da Galega,PT
-PT-0141,Courela do Outeiro Private Airstrip,PT
-PT-0142,Quinta de Fôja,PT
-PT-0143,Aerodromo de Daroeira,PT
-PT-0144,Aeródromo da Aldeia de Palma,PT
-PT-0145,Monte de Freixial Airstrip,PT
-PT-0146,Rebocho,PT
-PT-0147,Cano,PT
+PT-0001,Alfragide Heliport (Portugal)
+PT-0002,Barlavento Algarvio Hospital Heliport (Portugal)
+PT-0003,Fafe heliport (Portugal)
+PT-0004,Hospital Amadora Heliport (Portugal)
+PT-0005,Hospital de Santa Cruz heliport (Portugal)
+PT-0006,Hospital de Sao Teotonio heliport (Portugal)
+PT-0007,Hospital Distrital de Abrantes heliport (Portugal)
+PT-0008,Hospital Distrital de Faro Heliport (Portugal)
+PT-0009,Hospital Distrital de Guarda Heliport (Portugal)
+PT-0010,Hospital Distrital Leiria heliport (Portugal)
+PT-0011,Hospital do Divino Espirito Santo Heliport (Portugal)
+PT-0012,Hospital José Joaquim Fernandes heliport (Portugal)
+PT-0013,Hospital Pedro Hispano heliport (Portugal)
+PT-0014,São Sebastião Hospital Helipad (Portugal)
+PT-0015,Loule heliport (Portugal)
+PT-0016,Nisa heliport (Portugal)
+PT-0017,Alentejo Air Park (Portugal)
+PT-0018,Santa Maria Da Feira heliport (Portugal)
+PT-0019,Sines heliport (Portugal)
+PT-0020,Aerodromo de Cabeceiras de Basto (Portugal)
+PT-0021,Benavente Airfield (Portugal)
+PT-0022,Aerodromo do Cerval (Portugal)
+PT-0023,Laúndos Airfield (Portugal)
+PT-0024,Tojeira Airfield (Portugal)
+PT-0025,Lagos Airfield ULM (Portugal)
+PT-0026,Aerodromo Municipal de Agueda (Portugal)
+PT-0027,Arraiolos Ultralight Airfield (Portugal)
+PT-0028,Aeródromo de Vila Meã (Portugal)
+PT-0029,Aeródromo de Coja (Portugal)
+PT-0030,Pista do Monte do Lago (Portugal)
+PT-0031,Beja Civil Airfield (Portugal)
+PT-0032,Amendoeira Aerodrome (Portugal)
+PT-0033,Aeródromo de Pombal (Portugal)
+PT-0034,Aeródromo da Lourinhã (Portugal)
+PT-0035,Aeródromo de Seia (Portugal)
+PT-0036,Aeródromo Municipal de Ferreira do Zezere (Portugal)
+PT-0037,Aeródromo da Pampilhosa da Serra (Portugal)
+PT-0038,Aerodromo Fátima Giesteira (Portugal)
+PT-0039,Aérodromo de Ferreira do Alentejo (Portugal)
+PT-0040,Aérodromo Municipal de Proença-a-Nova (Portugal)
+PT-0041,Leziria Aerodrome (Portugal)
+PT-0042,Campo de Voo de Valdonas (Portugal)
+PT-0043,Aeródromo de Óbidos (Portugal)
+PT-0044,Torres Vedras Heliport (Portugal)
+PT-0045,Santarém Hospital Heliport (Portugal)
+PT-0046,Pernes Heliport (Portugal)
+PT-0047,Monchique Heliport (Portugal)
+PT-0048,Sardoal Heliport (Portugal)
+PT-0049,Coimbra Hospital Covões Heliport (Portugal)
+PT-0050,Martim Longo Airstrip (Portugal)
+PT-0051,Lamego Hospital Heliport (Portugal)
+PT-0052,Pista da Herdade da Zambujeira (Portugal)
+PT-0053,Fátima Salgueira Airstrip (Portugal)
+PT-0054,Aerodromo de Pias Longas (Old - Closed) (Portugal)
+PT-0055,Aerodromo de Pias Longas (New) (Portugal)
+PT-0056,Pista do Arrepiado (Portugal)
+PT-0057,Pista da Herdade da Comporta (Portugal)
+PT-0058,Pista da Coudelaria Herdade do Pinheiro (Portugal)
+PT-0059,Pista da SAPEC (Santa Catarina) (Portugal)
+PT-0060,Pista de Montevil (Batalha) (Portugal)
+PT-0061,Pista da Herdade da Barrosinha (Portugal)
+PT-0062,Aerodromo da Palma (Portugal)
+PT-0063,Pista de Melides (Portugal)
+PT-0064,Pista de Aguas de Moura (Portugal)
+PT-0065,Herdade do Rio Frio Airstrip (Portugal)
+PT-0066,Alhos Vedros Aerodrome (Portugal)
+PT-0067,Pista da Torre Vã (Portugal)
+PT-0068,Pista do Torrão (Portugal)
+PT-0069,Pista de Lavre (Portugal)
+PT-0070,Pista de Grandola (Portugal)
+PT-0071,Pista de Fonte Serne (Portugal)
+PT-0072,Pista do Cabo Sardão (Portugal)
+PT-0073,Bombeiros de Sines Heliport (Portugal)
+PT-0074,Bombeiros de Alcacer do Sal Heliport (Portugal)
+PT-0075,Herdade da Apostiça Heliport (Portugal)
+PT-0076,Pista da Sonega (Portugal)
+PT-0077,Aerodromo de Ourique (Portugal)
+PT-0078,Pista da Barragem de Odivelas (Portugal)
+PT-0079,Hospital das Forças Armadas Heliport (Portugal)
+PT-0080,Pista da Barragem do Roxo (Portugal)
+PT-0081,Armacao de Pera Airfield ULM (Portugal)
+PT-0082,Aerodromo de Tavira ULM (Portugal)
+PT-0083,Pista do Belo (Portugal)
+PT-0084,Pista da Adiça (Portugal)
+PT-0085,Pista do Monte das Tezas (Portugal)
+PT-0086,Aerodromo da Amareleja (Portugal)
+PT-0087,Pista de Alcanena (Portugal)
+PT-0088,V. das Areias Airfield (Portugal)
+PT-0089,Pista de Campo Maior (Portugal)
+PT-0090,Aerodromo de Monforte (Portugal)
+PT-0091,Viana do Alentejo Aerodrome (Portugal)
+PT-0092,Herdade da Lentisca Airstrip (Portugal)
+PT-0093,Cerieira Airfield (Portugal)
+PT-0094,Campinho Airfield (Portugal)
+PT-0095,Reguengos de Monsaraz Airstrip (Portugal)
+PT-0096,Nossa Senhora de Machede Airstrip (Portugal)
+PT-0097,Aerodromo do Coentral (Portugal)
+PT-0098,Pista do Sorraia (Portugal)
+PT-0099,Pista do Cabeço da Vaca (Portugal)
+PT-0100,Pista do Ladoeiro (Portugal)
+PT-0101,Aerodromo de Atouguia da Baleia (Portugal)
+PT-0102,Cascais Marina Heliport (Portugal)
+PT-0103,Pista de Montargil (Portugal)
+PT-0104,Pista da Herdade da Lameira (Portugal)
+PT-0105,Pista da Comenda (Portugal)
+PT-0106,Pista de Mouriscas (Portugal)
+PT-0107,Aerodromo de Mação (Portugal)
+PT-0108,Vendas Novas Airstrip (Portugal)
+PT-0109,Ciborro Airstrip (Portugal)
+PT-0110,Pista de Biscainho Brandão (Portugal)
+PT-0111,Pista do Couço (Portugal)
+PT-0112,Pista de Volta do Vale (Portugal)
+PT-0113,Pista de Bilrete (Portugal)
+PT-0114,Aerodromo de Muge (Portugal)
+PT-0115,Pista de Almoster (Portugal)
+PT-0116,Pista de Valada do Ribatejo (Portugal)
+PT-0117,Aerodromo do Alqueidão (Portugal)
+PT-0118,Aerodromo da Azambuja (Portugal)
+PT-0119,Pista da Garrocheira (Portugal)
+PT-0120,Porto Alto Airstrip (Portugal)
+PT-0121,Alcochete Military Airfield (Portugal)
+PT-0122,Aerodromo da Pedra da Broa (Portugal)
+PT-0123,Aerodromo de Sao Cosmado (Portugal)
+PT-0124,Entre-os-Rios Airstrip (Portugal)
+PT-0125,Corvachã Ultralight Airfield (Portugal)
+PT-0126,Pista do Minhéu (Portugal)
+PT-0127,Pista da Barragem do Maranhão (Portugal)
+PT-0128,Pista da Chamusca (Portugal)
+PT-0129,Quinta da Foz Airstrip (Portugal)
+PT-0130,Herdade do Pontal Airstrip (Portugal)
+PT-0131,Faias Aerodrome (Portugal)
+PT-0132,Heliporto do Tabaçô (Portugal)
+PT-0133,Heliporto de Alcaria (Portugal)
+PT-0134,Pista do Monte do Pombo (Portugal)
+PT-0135,Pista da Lagoa da Carrasqueira (Portugal)
+PT-0136,Dragoa Airstrip (Portugal)
+PT-0137,V.N.Milfontes (Portugal)
+PT-0138,Piper Road Airstrip (Portugal)
+PT-0139,Regimento Artilharia Military Airfield (Portugal)
+PT-0140,Herdade da Galega (Portugal)
+PT-0141,Courela do Outeiro Private Airstrip (Portugal)
+PT-0142,Quinta de Fôja (Portugal)
+PT-0143,Aerodromo de Daroeira (Portugal)
+PT-0144,Aeródromo da Aldeia de Palma (Portugal)
+PT-0145,Monte de Freixial Airstrip (Portugal)
+PT-0146,Rebocho (Portugal)
+PT-0147,Cano (Portugal)
 PTKK,Chuuk International Airport,FM
 PTPN,Pohnpei International Airport,FM
 PTRO,Babelthuap Airport,PW
@@ -66393,7 +66393,7 @@ US-4833,South Phoenix Airport (USA)
 US-4834,Air-Topia Airport (USA)
 US-4835,Mountain Vista Medical Center Heliport (USA)
 US-4836,Citrus County Mosquito Control Home Base Heliport (USA)
-US-4837,ATA Memorial White Waltham Airport (USA)
+US-4837 (Austria)A Memorial White Waltham Airport (USA)
 US-4838,AX Ranch Airstrip (USA)
 US-4839,A-Copy Heliport (USA)
 US-4840,The Medical Center at Caverna Heliport (USA)
@@ -71521,7 +71521,7 @@ X-RPVB,Bacolod City Domestic Airport,PH
 X-TA37,Belo Broadcasting Heliport (USA)
 X-TRPM,W H Bramble Airport,MS
 X-US001,Pike Airfield (USA)
-X-VIE,Aspern Airfield,AT
+X-VIE,Aspern Airfield (Austria)
 X01,Everglades Airpark (USA)
 X09,Covey Trails Airport (USA)
 X23,Umatilla Municipal Airport (USA)
@@ -73951,7 +73951,7 @@ ZA-0232,Welgevonden Western Airstrip,ZA
 ZA-0233,Marataba Airport,ZA
 ZA-0234,Ndlopfu Airfield,ZA
 ZA-0235,Palala Airfield,ZA
-ZA-0236,ATE Helipad,ZA
+ZA-0236 (Austria)E Helipad,ZA
 ZA-0237,Sun City Heliport,ZA
 ZA-0238,Sanbona Wildlife Reserve Airfield,ZA
 ZA-0239,Nambiti Airfield,ZA
