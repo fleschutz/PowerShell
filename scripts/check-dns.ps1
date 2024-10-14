@@ -22,13 +22,12 @@ try {
 		Clear-DnsClientCache
 		foreach($row in $table){$nop=Resolve-DNSName $row.Domain}
 	}
-	[float]$elapsed = $stopWatch.Elapsed.TotalSeconds
-
-	$speed = [math]::round($table.Length / $elapsed, 1)
-	if ($speed -lt 10.0) {
-		Write-Host "⚠️ Internet DNS resolves $speed domains/sec only"
+	[float]$elapsed = $stopWatch.Elapsed.TotalSeconds * 1000.0
+	$speed = [math]::round($elapsed / $table.Length, 1)
+	if ($speed -gt 100.0) {
+		Write-Host "⚠️ Internet DNS query time $($speed)ms only"
 	} else {  
-		Write-Host "✅ Internet DNS resolves $speed domains/sec"
+		Write-Host "✅ Internet DNS query time $($speed)ms"
 	}
 	exit 0 # success
 } catch {
