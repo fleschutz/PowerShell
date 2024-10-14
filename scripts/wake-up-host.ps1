@@ -12,7 +12,7 @@
 .PARAMETER numTimes
 	Specifies # of times to send the packet (3 by default)
 .EXAMPLE
-	PS> ./wake-up.ps1 11:22:33:44:55:66 192.168.100.100
+	PS> ./wake-up-host.ps1 11:22:33:44:55:66 192.168.100.100
 	✅ Magic packet sent to IP 192.168.100.100, UDP port 9, 3x - wait a minute until the computer fully boots up.
 .LINK
 	https://github.com/fleschutz/PowerShell
