@@ -12,7 +12,11 @@
 #>
 
 try {
-	& net user
+	if ($IsLinux) {
+		& getent passwd
+	} else {
+		& net user
+	}
 	exit 0 # success
 } catch {
 	"⚠️ Error in line $($_.InvocationInfo.ScriptLineNumber): $($Error[0])"
