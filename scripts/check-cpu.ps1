@@ -55,31 +55,31 @@ try {
 		$details = Get-WmiObject -Class Win32_Processor
 		$cpuName = $details.Name.trim()
 		$arch = "$arch, "
-		$deviceID = "$($details.DeviceID), "
-		$speed = "$($details.MaxClockSpeed)MHz, "
-		$socket = "$($details.SocketDesignation) socket"
+		$deviceID = ", $($details.DeviceID)"
+		$speed = ", $($details.MaxClockSpeed)MHz"
+		$socket = ", $($details.SocketDesignation) socket"
 	}
 	$cores = [System.Environment]::ProcessorCount
 	$celsius = GetCPUTemperature
 	if ($celsius -eq 99999.9) {
-		$temp = "no temp"
+		$temp = ""
 	} elseif ($celsius -gt 80) {
-		$temp = "$($celsius)°C TOO HOT"
+		$temp = ", $($celsius)°C TOO HOT"
 		$status = "⚠️"
 	} elseif ($celsius -gt 50) {
-		$temp = "$($celsius)°C HOT"
+		$temp = ", $($celsius)°C HOT"
 		$status = "⚠️"
 	} elseif ($celsius -lt 0) {
-		$temp = "$($celsius)°C TOO COLD"
+		$temp = ", $($celsius)°C TOO COLD"
 		$status = "⚠️"
 	} elseif ($celsius -lt 30) {
-		$temp = "$($celsius)°C cool"
+		$temp = ", $($celsius)°C cool"
 	} else {
-		$temp = "$($celsius)°C OK"
+		$temp = ", $($celsius)°C OK"
 	} 
 
 	Write-Progress -completed "Done."
-	Write-Host "$status $cpuName ($($arch)$cores cores, $($deviceID)$($speed)$($socket)) - $temp"
+	Write-Host "$status $cpuName ($($arch)$cores cores$($temp)$($deviceID)$($speed)$($socket))"
 	exit 0 # success
 } catch {
 	"⚠️ Error in line $($_.InvocationInfo.ScriptLineNumber): $($Error[0])"
