@@ -35,11 +35,11 @@ try {
 	if ($success -eq 0) {
 		Write-Host "⚠️ Internet offline (100% ping loss)"
 	} elseif ($loss -eq 0) {
-		$avg /= $success
-		Write-Host "✅ Internet ping latency $($avg)ms ($($min)...$($max)ms range)"
+		[float]$speed = [math]::round([float]$avg / [float]$success, 1)
+		Write-Host "✅ Internet ping latency $($speed)ms ($($min)...$($max)ms range)"
 	} else {
-		$avg /= $success
-		Write-Host "✅ Online with $loss/$total ping loss and $($min)...$($max)ms latency - $($avg)ms average"
+		[float]$speed = [math]::round([float]$avg / [float]$success, 1)
+		Write-Host "✅ Online with $loss/$total ping loss and $($min)...$($max)ms latency - $($speed)ms average"
 	}
 	exit 0 # success
 } catch {
