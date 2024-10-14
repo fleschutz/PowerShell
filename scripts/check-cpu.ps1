@@ -75,7 +75,7 @@ try {
 	} elseif ($celsius -lt 30) {
 		$temp = ", $($celsius)°C cool"
 	} else {
-		$temp = ", $($celsius)°C OK"
+		$temp = ", $($celsius)°C"
 	} 
 
 	Write-Progress -completed "Done."
