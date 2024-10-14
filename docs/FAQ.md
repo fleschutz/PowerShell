@@ -30,9 +30,9 @@
  $ sudo ln -s /snap/bin/pwsh /usr/bin/pwsh
 ```
 2. **Otherwise, visit:** https://github.com/PowerShell/PowerShell **and scroll down to: *Get PowerShell*.**
-3. **Want to configure PowerShell as your default shell?**
+3. **Want to set PowerShell as your default shell?**
    * Make sure the file **/etc/shells** (contains valid login shells) has a **/usr/bin/pwsh** line, otherwise add it.
-   * Now execute: **`chsh -s /usr/bin/pwsh <USERNAME>`** (replace <USERNAME> by your user name).
+   * Now execute: **`chsh -s /usr/bin/pwsh <USERNAME>`** (replace &lt;USERNAME&gt; by your user name).
 </details>
 
 <details><summary>How to install PowerShell on MacOS?</summary>
