@@ -33,6 +33,8 @@
 3. **Want to set PowerShell as your default shell?**
    * Make sure the file **/etc/shells** (contains valid login shells) has a **/usr/bin/pwsh** line, otherwise add it.
    * Now execute: **`chsh -s /usr/bin/pwsh <USERNAME>`** (replace &lt;USERNAME&gt; by your user name).
+4. **The SSH login is too verbose?**
+   * Just execute: `echo > ~/.hushlogin`
 </details>
 
 <details><summary>How to install PowerShell on MacOS?</summary>
