@@ -4,7 +4,7 @@
 .DESCRIPTION
 	This PowerShell script queries the free space of all drives and prints it.
 .PARAMETER minLevel
-	Specifies the minimum warning level (10GB by default)
+	Specifies the minimum warning level (5GB by default)
 .EXAMPLE
 	PS> ./check-drives.ps1
 	✅ Drive C: uses 489GB (53%) of 930GB, D: uses 3TB (87%) of 4TB, E: is empty
@@ -14,7 +14,7 @@
 	Author: Markus Fleschutz | License: CC0
 #>
 
-param([int64]$minLevel = 10GB)
+param([int64]$minLevel = 5GB)
 
 function Bytes2String { param([int64]$bytes)
         if ($bytes -lt 1KB) { return "$bytes bytes" }
@@ -45,7 +45,7 @@ try {
 			$reply += "$name with ($(Bytes2String $total)) is FULL"
 		} elseif ($free -lt $minLevel) {
 			$status = "⚠️"
-			$reply += "$name is nearly full ($(Bytes2String $free) of $(Bytes2String $total) left)"
+			$reply += "$name nearly full ($(Bytes2String $free) of $(Bytes2String $total) left)"
 		} else {
 			[int64]$percent = ($used * 100) / $total
 			$reply += "$name uses $(Bytes2String $used) ($percent%) of $(Bytes2String $total)"
