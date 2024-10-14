@@ -26,8 +26,8 @@
  
 1. **Execute on Linux with Snap support:**
 ```
- $ snap install PowerShell
- $ ln -s /snap/bin/pwsh /usr/bin/pwsh
+ $ sudo snap install PowerShell
+ $ sudo ln -s /snap/bin/pwsh /usr/bin/pwsh
 ```
 2. **Otherwise, visit:** https://github.com/PowerShell/PowerShell **and scroll down to: *Get PowerShell*.**
 3. **Want to configure PowerShell as your default shell?**
