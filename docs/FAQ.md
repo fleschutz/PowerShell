@@ -24,14 +24,14 @@
 
 <details><summary>How to install PowerShell on Linux?</summary>
  
-1. **Execute on Linux with Snap support:**
+1. **Your Linux supports Snap packages? Then execute:**
 ```
  $ sudo snap install PowerShell
  $ sudo ln -s /snap/bin/pwsh /usr/bin/pwsh
 ```
 2. **Otherwise, visit:** https://github.com/PowerShell/PowerShell **and scroll down to: *Get PowerShell*.**
 3. **Want to configure PowerShell as your default shell?**
-   * Check that the file **/etc/shells** contains the **/usr/bin/pwsh** line, otherwise add it.
+   * Make sure the file **/etc/shells** (contains valid login shells) has a **/usr/bin/pwsh** line, otherwise add it.
    * Now execute: **`chsh -s /usr/bin/pwsh <USERNAME>`** (replace <USERNAME> by your user name).
 </details>
 
