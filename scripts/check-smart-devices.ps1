@@ -63,7 +63,10 @@ try {
 			$capacity = ""
 		}
 		if ($details.temperature.current -gt 50) {
-			$temp = "$($details.temperature.current)°C (!)"
+			$temp = "$($details.temperature.current)°C TOO HOT"
+			$status = "⚠️"
+		} elseif ($details.temperature.current -lt 0) {
+			$temp = "$($details.temperature.current)°C TOO COLD"
 			$status = "⚠️"
 		} else {
 			$temp = "$($details.temperature.current)°C"
@@ -81,13 +84,13 @@ try {
 			$powerOn = "$($details.power_cycle_count)x on/off"
 		}	
 		if ($details.smart_status.passed) {
-			$selftest = "selftest OK"
+			$selftest = "test passed"
 		} else {
-			$selftest = "selftest FAILED"
+			$selftest = "test FAILED"
 			$status = "⚠️"
 		}
 		$firmwareVersion = $details.firmware_version
-		Write-Host "$status $capacity$modelName via $protocol ($temp, $hours, $powerOn, v$firmwareVersion) - $selftest"
+		Write-Host "$status $capacity$modelName via $protocol ($hours, $powerOn, v$firmwareVersion) - $temp & $selftest"
 	}
 	#Write-Progress -completed "Done."
 	exit 0 # success
