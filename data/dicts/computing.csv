@@ -675,7 +675,9 @@ CWE,Common Weakness Enumeration
 CWF,common working file
 CWNP,Certified Wireless Networking Professional
 CX,consumer experience
+CXF,Credential Exchange Format
 CXO,chief experience officer
+CXP,Credential Exchange Protocol
 D-AMPS,Digital-Advanced Mobile Phone Service
 D-VHS,Digital Video Home System
 D2D,Disk to Disk
@@ -1111,6 +1113,7 @@ FHA,Federal Health Architecture
 FHIE,Federal Health Information Exchange
 FI,Fast Infoset
 FICON,Fiber Connectivity
+FIDO,Fast Identity Online Alliance
 FIFO,"First In, First Out"
 FILO,"First In, Last Out"
 FIM,federated identity management
