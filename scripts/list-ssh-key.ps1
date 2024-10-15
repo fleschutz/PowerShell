@@ -1,6 +1,6 @@
 ﻿<#
 .SYNOPSIS
-        Lists the SSH key
+        Lists the public SSH key
 .DESCRIPTION
         This PowerShell script lists the user's public SSH key.
 .EXAMPLE
@@ -14,13 +14,13 @@
 try {
 	if (Test-Path "~/.ssh/id_ed25519.pub") {
 		$key = Get-Content "~/.ssh/id_ed25519.pub"
-		"✅ Public SSH key is: $key"
 	} elseif (Test-Path "~/.ssh/id_rsa.pub") {
-		$key = Get-Content "~/.ssh/id_rsa.pub"
-		"✅ Public SSH key is: $key"
+		$key = Get-Content "~/.ssh/id_rsa.pub"	
 	} else {
-		"⚠️ No SSH key found"
+		"⚠️ No SSH key found - execute 'new-ssh-key.ps1' to create one"
+		exit 1
 	}
+	"✅ Public SSH key: $key"
 	exit 0 # success
 } catch {
 	"⚠️ Error in line $($_.InvocationInfo.ScriptLineNumber): $($Error[0])"
