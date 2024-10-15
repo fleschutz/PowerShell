@@ -2,7 +2,7 @@
 .SYNOPSIS
 	Shows a notification
 .DESCRIPTION
-	This PowerShell script shows a toast-message notification for the Windows 10 Notification Center.
+	This PowerShell script shows a toast-message notification for the Windows Notification Center.
 .PARAMETER text
 	Specifies the text to show ('Hello World' by default)
 .PARAMETER title
@@ -10,14 +10,14 @@
 .PARAMETER duration
 	Specifies the view duration in milliseconds (5000 by default)
 .EXAMPLE
-	PS> ./show-notification
+	PS> ./show-notification.ps1
 .LINK
 	https://github.com/fleschutz/PowerShell
 .NOTES
 	Author: Markus Fleschutz | License: CC0
 #>
 
-param([string]$text = "Hello World", [string]$title = "NOTE", [int]$Duration = 5000)
+param([string]$text = "Hello World", [string]$title = "NOTE", [int]$duration = 5000)
 
 try {
 	Add-Type -AssemblyName System.Windows.Forms 
@@ -28,7 +28,7 @@ try {
 	$balloon.BalloonTipText = $text
 	$balloon.BalloonTipTitle = $title 
 	$balloon.Visible = $true 
-	$balloon.ShowBalloonTip($Duration)
+	$balloon.ShowBalloonTip($duration)
 	exit 0 # success
 } catch {
 	"⚠️ Error in line $($_.InvocationInfo.ScriptLineNumber): $($Error[0])"
