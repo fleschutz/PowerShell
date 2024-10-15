@@ -7,7 +7,7 @@
 	Specifies the remote hostname or IP address
 .EXAMPLE
 	PS> ./enter-host.ps1 tux
-	Entering 💻tux as user 'markus' using OpenSSH_for_Windows_9.5p1, LibreSSL 3.8.2
+	💻 Entering 'tux' as user 'markus' using OpenSSH_for_Windows_9.5p1, LibreSSL 3.8.2
 	...
 .LINK
 	https://github.com/fleschutz/PowerShell
@@ -22,9 +22,10 @@ try {
 	if ($IsLinux) { $username = $(whoami) } else { $username = $env:USERNAME }
 	$username = $username.toLower()
 
-	Write-Host "Entering 💻$remoteHost as user '$username' using " -noNewline
+	Write-Host "💻 Entering '$remoteHost' as user '$username' using " -noNewline
 	& ssh -V
 	if ($lastExitCode -ne "0") { throw "'ssh -V' failed with exit code $lastExitCode" }
+	Write-Host "                                        (type 'exit' to leave $remoteHost)"
 
 	& ssh "$($username)@$($remoteHost)"
 	exit 0 # success
