@@ -47,7 +47,7 @@ try {
 	$pending = ""
 	if ($IsLinux) {
 		if (Test-Path "/var/run/reboot-required") {
-			$status = "⚠️ "
+			$status = "⚠️"
 			$pending = "with pending reboot (found /var/run/reboot-required)"
 		}
 	} else {
@@ -83,7 +83,7 @@ try {
 			$reason += ", '...\CurrentControlSet\Services\Netlogon' with 'AvoidSpnSet'"
 		}
 		if ($reason -ne "") {
-			$status = "⚠️ "
+			$status = "⚠️"
 			$pending = "with pending reboot ($($reason.substring(2)) in registry)"
 		}
 	}
