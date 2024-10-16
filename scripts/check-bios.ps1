@@ -31,7 +31,7 @@ try {
 	}
 	if ($model -eq "To be filled by O.E.M.") { $model = "N/A" }
 	if ($version -eq "To be filled by O.E.M.") { $version = "N/A" }
-	if ($releaseDate -ne "") { $releaseDate = " of $releaseDate" }
+	if ("$releaseDate" -ne "") { $releaseDate = " of $releaseDate" }
 	if ("$serial" -eq "") { $serial = "N/A" }
 	if ($serial -eq "To be filled by O.E.M.") { $serial = "N/A" }
 	Write-Host "✅ BIOS model $model, version $($version)$($releaseDate), S/N $serial by $manufacturer"
