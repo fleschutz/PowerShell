@@ -14,13 +14,12 @@
 
 try {
 	if ($IsLinux) {
-		Write-Progress "Querying BIOS details..."
 		$model = (sudo dmidecode -s system-product-name)
-		if ("$model" -ne "") {
-			$version = (sudo dmidecode -s bios-version)
-			$releaseDate = (sudo dmidecode -s bios-release-date)
-			$manufacturer = (sudo dmidecode -s system-manufacturer)
-		}
+		if ("$model" -eq "") { exit 0 } # no information
+		Write-Progress "Querying BIOS details..."
+		$version = (sudo dmidecode -s bios-version)
+		$releaseDate = (sudo dmidecode -s bios-release-date)
+		$manufacturer = (sudo dmidecode -s system-manufacturer)
 		Write-Progress -completed "Done."
 	} else {
 		$details = Get-CimInstance -ClassName Win32_BIOS
