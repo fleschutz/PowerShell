@@ -20,21 +20,21 @@ try {
 			$version = (sudo dmidecode -s bios-version)
 			$releaseDate = (sudo dmidecode -s bios-release-date)
 			$manufacturer = (sudo dmidecode -s system-manufacturer)
-			Write-Host "✅ BIOS model $model, version $version of $releaseDate by $manufacturer"
 		}
-		Write-Progress -completed "."
+		Write-Progress -completed "Done."
 	} else {
-		$BIOS = Get-CimInstance -ClassName Win32_BIOS
-		$model = $BIOS.Name.Trim()
-		$version = $BIOS.Version.Trim()
-		$serial = $BIOS.SerialNumber.Trim()
-		$manufacturer = $BIOS.Manufacturer.Trim()
-		if ($serial -eq "To be filled by O.E.M.") {
-			Write-Host "✅ BIOS model $model, version $version by $manufacturer"
-		} else {
-			Write-Host "✅ BIOS model $model, version $version, S/N $serial by $manufacturer"
-		}
+		$details = Get-CimInstance -ClassName Win32_BIOS
+		$model = $details.Name.Trim()
+		$version = $details.Version.Trim()
+		$serial = $details.SerialNumber.Trim()
+		$manufacturer = $details.Manufacturer.Trim()
 	}
+	if ($model -eq "To be filled by O.E.M.") { $model = "N/A" }
+	if ($version -eq "To be filled by O.E.M.") { $version = "N/A" }
+	if ($releaseDate -ne "") { $releaseDate = " of $releaseDate" }
+	if ("$serial" -eq "") { $serial = "N/A" }
+	if ($serial -eq "To be filled by O.E.M.") { $serial = "N/A" }
+	Write-Host "✅ BIOS model $model, version $($version)$($releaseDate), S/N $serial by $manufacturer"
 	exit 0 # success
 } catch {
 	"⚠️ Error in line $($_.InvocationInfo.ScriptLineNumber): $($Error[0])"
