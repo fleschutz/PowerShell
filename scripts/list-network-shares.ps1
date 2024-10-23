@@ -5,7 +5,7 @@
 	This PowerShell script lists all network shares (aka "shared folders") of the local computer.
 .EXAMPLE
 	PS> ./list-network-shares.ps1
-	✅ Network share \\LAPTOP\Public mapped to: 📂D:\Public ("Public folder for file transfer")
+	✅ Network share \\LAPTOP\Public ("Public folder for file transfer") mapped to: 📂D:\Public 
 .LINK
 	https://github.com/fleschutz/PowerShell
 .NOTES
@@ -18,7 +18,7 @@ try {
 	} else {
 		$shares = Get-WmiObject win32_share | where {$_.name -NotLike "*$"} 
 		foreach ($share in $shares) {
-			Write-Output "✅ Network share \\$(hostname)\$($share.Name) mapped to: 📂$($share.Path) (`"$($share.Description)`")"
+			Write-Output "✅ Network share \\$(hostname)\$($share.Name) (`"$($share.Description)`") mapped to: 📂$($share.Path)"
 		}
 	}
 	exit 0 # success
