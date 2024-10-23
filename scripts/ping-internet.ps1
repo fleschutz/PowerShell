@@ -7,7 +7,7 @@
 	Specifies the hosts to ping, seperated by commata (10 Internet servers by default)
 .EXAMPLE
 	PS> ./ping-internet.ps1
-	✅ Internet ping latency 12ms (9...18ms range)
+	✅ Internet ping takes 12ms (9...18ms range)
 .LINK
 	https://github.com/fleschutz/PowerShell
 .NOTES
@@ -34,12 +34,12 @@ try {
 	[int]$loss = $total - $success
 	if ($success -eq 0) {
 		Write-Host "⚠️ Internet offline (100% ping loss)"
-	} elseif ($loss -eq 0) {
-		[float]$speed = [math]::round([float]$avg / [float]$success, 1)
-		Write-Host "✅ Internet ping latency $($speed)ms ($($min)...$($max)ms range)"
-	} else {
+	} elseif ($loss -gt 0) {
 		[float]$speed = [math]::round([float]$avg / [float]$success, 1)
 		Write-Host "✅ Online with $loss/$total ping loss and $($min)...$($max)ms latency - $($speed)ms average"
+	} else {
+		[float]$speed = [math]::round([float]$avg / [float]$success, 1)
+		Write-Host "✅ Internet ping takes $($speed)ms ($($min)...$($max)ms range)"
 	}
 	exit 0 # success
 } catch {
