@@ -11,32 +11,35 @@
         Author: Markus Fleschutz | License: CC0
 #>
 
-function Line ([string]$line) {
-	Write-Host $line -foregroundColor white -backgroundColor black
+function White([string]$line) {
+	Write-Host $line -foregroundColor white -backgroundColor black -noNewline
+}
+function Blue([string]$line) {
+	Write-Host $line -foregroundColor blue -backgroundColor black -noNewline
 }
 
 try {
-	Line "█████████████████████████████████████"
-	Line "█████████████████████████████████████"
-	Line "████ ▄▄▄▄▄ █▀ █▀▀█▀▀  ▄▄██ ▄▄▄▄▄ ████ You are using POWERSHELL $($PSVersionTable.PSVersion) $($PSVersionTable.PSEdition) edition."
-	Line "████ █   █ █▀ ▄ █▀ ▀ ▀▄█ █ █   █ ████"
-	Line "████ █▄▄▄█ █▀█ █▄▀▄▀ ▀ ▄▄█ █▄▄▄█ ████ Documentation: https://docs.microsoft.com/en-us/powershell"
-	Line "████▄▄▄▄▄▄▄█▄█▄█ █▄█ █▄▀ █▄▄▄▄▄▄▄████"
-	Line "████▄▄  ▄█▄▄  ▄█▄▄ █▀ ▀▀▀ ▀▄▀▄█▄▀████ Tutorial: https://www.guru99.com/powershell-tutorial.html"
-	Line "████▀▄▄█▀█▄██ ▀ ▄▄▀ █▄█▀ ▀ ▄▀▀█▀█████"
-	Line "█████ ▄▄█▄▄▀▄ ▀▄▀ ▄▄  ▀ ▀▀▀ ▀▄▄█▀████ 500+ Sample Scripts: https://github.com/fleschutz/PowerShell"
-	Line "████▄ ▀ ▄ ▄▄█  █▀██▄ ██▀▄█▄▄▀▄▄▀█████"
-	Line "████  ████▄▄  ▄█▄▄▄██  ▀ ▀▀▀▀▄ █▀████ FAQ's: https://github.com/fleschutz/PowerShell/blob/main/docs/FAQ.md"
-	Line "████ ███▄ ▄▀▀██ ▄█ ▄▄▄█▀ ▄▄ ██▄▀█████"
-	Line "████▄█▄███▄▄▀▄▄▄▀ ▄▄ ▄▀▄ ▄▄▄ ▀   ████ Cheat Sheet: https://github.com/fleschutz/PowerShell/blob/main/docs/cheat-sheet.md"
-	Line "████ ▄▄▄▄▄ █▄▄▄█▀█▄  ██  █▄█ ▄▄█▀████"
-	Line "████ █   █ █ ▀▄█▄ ▄▄  ▀█ ▄▄▄▄▀   ████ Videos: https://www.youtube.com/results?search_query=PowerShell"
-	Line "████ █▄▄▄█ █ ██ ▄█▄  ▄▀▀▀ ▄▄  ▄ █████"
-	Line "████▄▄▄▄▄▄▄█▄▄█▄▄████▄▄▄██▄▄▄█▄██████ HINT: Use <Ctrl> + <Click> to open the links in your browser."
-	Line "█████████████████████████████████████"
-	Line "█████████████████████████████████████"
+	White "█████████████████████████████████████`n"
+	White "█████████████████████████████████████`n"
+	White "████ ▄▄▄▄▄ █▀ █▀▀█▀▀  ▄▄██ ▄▄▄▄▄ ████ You are using POWERSHELL $($PSVersionTable.PSVersion) $($PSVersionTable.PSEdition) edition.`n"
+	White "████ █   █ █▀ ▄ █▀ ▀ ▀▄█ █ █   █ ████`n"
+	White "████ █▄▄▄█ █▀█ █▄▀▄▀ ▀ ▄▄█ █▄▄▄█ ████ Documentation: "; Blue "https://docs.microsoft.com/en-us/powershell`n"
+	White "████▄▄▄▄▄▄▄█▄█▄█ █▄█ █▄▀ █▄▄▄▄▄▄▄████`n"
+	White "████▄▄  ▄█▄▄  ▄█▄▄ █▀ ▀▀▀ ▀▄▀▄█▄▀████ Tutorial: "; Blue "https://www.guru99.com/powershell-tutorial.html`n"
+	White "████▀▄▄█▀█▄██ ▀ ▄▄▀ █▄█▀ ▀ ▄▀▀█▀█████`n"
+	White "█████ ▄▄█▄▄▀▄ ▀▄▀ ▄▄  ▀ ▀▀▀ ▀▄▄█▀████ 500+ Sample Scripts: "; Blue "https://github.com/fleschutz/PowerShell`n"
+	White "████▄ ▀ ▄ ▄▄█  █▀██▄ ██▀▄█▄▄▀▄▄▀█████`n"
+	White "████  ████▄▄  ▄█▄▄▄██  ▀ ▀▀▀▀▄ █▀████ FAQ's: "; Blue "https://github.com/fleschutz/PowerShell/blob/main/docs/FAQ.md`n"
+	White "████ ███▄ ▄▀▀██ ▄█ ▄▄▄█▀ ▄▄ ██▄▀█████`n"
+	White "████▄█▄███▄▄▀▄▄▄▀ ▄▄ ▄▀▄ ▄▄▄ ▀   ████ Cheat Sheet: "; Blue "https://github.com/fleschutz/PowerShell/blob/main/docs/cheat-sheet.md`n"
+	White "████ ▄▄▄▄▄ █▄▄▄█▀█▄  ██  █▄█ ▄▄█▀████`n"
+	White "████ █   █ █ ▀▄█▄ ▄▄  ▀█ ▄▄▄▄▀   ████ Videos: "; Blue "https://www.youtube.com/results?search_query=PowerShell`n"
+	White "████ █▄▄▄█ █ ██ ▄█▄  ▄▀▀▀ ▄▄  ▄ █████`n"
+	White "████▄▄▄▄▄▄▄█▄▄█▄▄████▄▄▄██▄▄▄█▄██████ HINT: Use <Ctrl> + <Click> to open the links in your browser.`n"
+	White "█████████████████████████████████████`n"
+	White "█████████████████████████████████████`n"
 	exit 0 # success
 } catch {
-	"⚠️ Error in line $($_.InvocationInfo.ScriptLineNumber): $($Error[0])"
+	"⚠️ Error in line $($_.InvocationInfo.ScriptWhiteNumber): $($Error[0])"
 	exit 1
 }
