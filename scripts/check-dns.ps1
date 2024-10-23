@@ -5,7 +5,7 @@
 	This PowerShell script measures the DNS resolution speed using 100 internet domains and prints it.
 .EXAMPLE
 	PS> ./check-dns.ps1
-	✅ Internet DNS resolves 56.5 domains/sec
+	✅ Internet DNS queries take 33.6ms 
 .LINK
 	https://github.com/fleschutz/PowerShell
 .NOTES
@@ -25,9 +25,9 @@ try {
 	[float]$elapsed = $stopWatch.Elapsed.TotalSeconds * 1000.0
 	$speed = [math]::round($elapsed / $table.Length, 1)
 	if ($speed -gt 100.0) {
-		Write-Host "⚠️ Internet DNS query time $($speed)ms only"
+		Write-Host "⚠️ Internet DNS queries are $($speed)ms slow"
 	} else {  
-		Write-Host "✅ Internet DNS query time $($speed)ms"
+		Write-Host "✅ Internet DNS queries take $($speed)ms"
 	}
 	exit 0 # success
 } catch {
