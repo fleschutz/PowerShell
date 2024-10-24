@@ -2,7 +2,7 @@
 .SYNOPSIS
 	Writes the current date 
 .DESCRIPTION
-	This PowerShell script determines and writes the current date.
+	This PowerShell script determines and writes the current date in US format.
 .EXAMPLE
 	PS> ./write-date
 	📅12/25/2022
