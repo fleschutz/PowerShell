@@ -39,7 +39,12 @@ try {
 		Write-Host "✅ Online with $loss/$total ping loss and $($min)...$($max)ms latency - $($speed)ms average"
 	} else {
 		[float]$speed = [math]::round([float]$avg / [float]$success, 1)
-		Write-Host "✅ Internet ping takes $($speed)ms ($($min)...$($max)ms range)"
+		if ($speed -lt 20.0) { $result = "excellent" 
+		} elseif ($speed -lt 50.0) { $result = "good"
+		} elseif ($speed -lt 100.0) { $result = "average"
+		} elseif ($speed -lt 150.0) { $result = "okay"
+		} else { $result = "laggy" }
+		Write-Host "✅ Internet ping is $($result): $($speed)ms ($($min)-$($max)ms range)"
 	}
 	exit 0 # success
 } catch {
