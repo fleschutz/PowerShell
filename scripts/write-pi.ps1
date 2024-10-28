@@ -1,12 +1,12 @@
 ﻿<#
 .SYNOPSIS
-	Lists PI
+	Writes PI
 .DESCRIPTION
-	This PowerShell script calculates and lists the digits of the mathematical constant PI.
+	This PowerShell script calculates and writes the digits of the mathematical constant PI.
 .PARAMETER digits
 	Specifies the number of digits to list (1000 by default)
 .EXAMPLE
-	PS> ./list-pi.ps1
+	PS> ./write-pi.ps1
 	3.141592653589793238462643383279502884197169399375105820974944592307816406286208998628034825342...
 .LINK
 	https://github.com/fleschutz/PowerShell
@@ -14,9 +14,9 @@
 	Author: Markus Fleschutz | License: CC0
 #>
 
-param([int]$Digits = 1000)
+param([int]$digits = 1000)
 
-function List-Pi ( $Digits ) {
+function Write-Pi ( $digits ) {
 	$Big = [bigint[]](0..10)
  
 	$ndigits = 0
@@ -43,7 +43,7 @@ function List-Pi ( $Digits ) {
  	$q *= $Big[10]
  	$r = $nr
  
- 	while ($ndigits -lt $Digits) {
+ 	while ($ndigits -lt $digits) {
 		if ($Big[4] * $q + $r - $t -lt $n * $t) {
 			Write-Host "$n" -noNewline
 			$ndigits++
@@ -62,11 +62,11 @@ function List-Pi ( $Digits ) {
 			$r = $nr
 		}
       }
-	Write-Host "...  ($Digits digits)"
+	Write-Host "...  ($digits digits)"
 }
 
 try {
-	List-Pi $Digits
+	Write-Pi $digits
 	exit 0 # success
 } catch {
 	"⚠️ Error in line $($_.InvocationInfo.ScriptLineNumber): $($Error[0])"
