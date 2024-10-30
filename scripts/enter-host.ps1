@@ -27,14 +27,14 @@ try {
 		$remoteUser = $(whoami)
 	} else {
 		$remoteUser = $env:USERNAME
+		$remoteUser = $remoteUser.toLower()
 	}
-	$username = $username.toLower()
 
-	Write-Host "⏳ Connecting to '$remoteHost' as user '$username' using " -noNewline
+	Write-Host "⏳ Connecting to '$remoteHost' as user '$remoteUser' using " -noNewline
 	& ssh -V
 	if ($lastExitCode -ne "0") { throw "'ssh -V' failed with exit code $lastExitCode" }
 
-	& ssh "$($username)@$($remoteHost)"
+	& ssh "$($remoteUser)@$($remoteHost)"
 	exit 0 # success
 } catch {
 	"⚠️ Error in line $($_.InvocationInfo.ScriptLineNumber): $($Error[0])"
