@@ -14,13 +14,13 @@
 
 try {
 	if ($IsLinux) {
-		$Path = Resolve-Path "~/Public"
+		$path = Resolve-Path "~/Public"
 	} else {
-		$Path = Resolve-Path "~/../Public"
+		$path = Resolve-Path "~/../Public"
 	}
-	if (-not(Test-Path "$Path" -pathType container)) { throw "Public folder at 📂$Path doesn't exist (yet)" }
-	Set-Location "$Path"
-	"📂$Path"
+	if (-not(Test-Path "$path" -pathType container)) { throw "Public folder at 📂$path doesn't exist (yet)" }
+	Set-Location "$path"
+	"📂$path"
 	exit 0 # success
 } catch {
 	"⚠️ Error in line $($_.InvocationInfo.ScriptLineNumber): $($Error[0])"

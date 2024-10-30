@@ -15,14 +15,14 @@
 #>
 
 try {
-	if (Test-Path "$HOME/Repos/" -pathType Container) {		 # try short name
-		$path = "$HOME/Repos/"
-	} elseif (Test-Path "$HOME/repos/" -pathType Container) {
-		$path = "$HOME/repos/"
-	} elseif (Test-Path "$HOME/Repositories/" -pathType Container) { # try long name
-		$path = "$HOME/Repositories/"
-	} elseif (Test-Path "$HOME/source/repos/" -pathType Container) { # try Visual Studio default
-		$path = "$HOME/source/repos/"
+	if (Test-Path "~/Repos/" -pathType Container) {		 # try short name
+		$path = "~/Repos/"
+	} elseif (Test-Path "~/repos/" -pathType Container) {
+		$path = "~/repos/"
+	} elseif (Test-Path "~/Repositories/" -pathType Container) { # try long name
+		$path = "~/Repositories/"
+	} elseif (Test-Path "~/source/repos/" -pathType Container) { # try Visual Studio default
+		$path = "~/source/repos/"
 	} elseif (Test-Path "/Repos/" -pathType Container) {
 		$path = "/Repos/"
 	} else {

@@ -14,13 +14,13 @@
 
 try {
 	if ($IsLinux) {
-		$Path = Resolve-Path "~/Templates"
+		$path = Resolve-Path "~/Templates"
 	} else {
-		$Path = [Environment]::GetFolderPath('Templates')
+		$path = [Environment]::GetFolderPath('Templates')
 	}
-	if (-not(Test-Path "$Path" -pathType container)) { throw "Templates folder at 📂$Path doesn't exist (yet)" }
-	Set-Location "$Path"
-	"📂$Path"
+	if (-not(Test-Path "$path" -pathType container)) { throw "Templates folder at 📂$path doesn't exist (yet)" }
+	Set-Location "$path"
+	"📂$path"
 	exit 0 # success
 } catch {
 	"⚠️ Error in line $($_.InvocationInfo.ScriptLineNumber): $($Error[0])"

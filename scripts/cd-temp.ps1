@@ -20,10 +20,10 @@ function GetTempDir {
 }
 
 try {
-	$Path = GetTempDir
-	if (-not(Test-Path "$Path" -pathType container)) { throw "Temporary folder at 📂$Path doesn't exist (yet)" }
-	Set-Location "$Path"
-	"📂$Path"
+	$path = GetTempDir
+	if (-not(Test-Path "$path" -pathType container)) { throw "Temporary folder at 📂$path doesn't exist (yet)" }
+	Set-Location "$path"
+	"📂$path"
 	exit 0 # success
 } catch {
 	"⚠️ Error in line $($_.InvocationInfo.ScriptLineNumber): $($Error[0])"

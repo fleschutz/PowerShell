@@ -20,7 +20,7 @@ function GetCurrentUserSID { [CmdletBinding()] param()
 
 try {
 	if ($IsLinux) {
-		$path = "$HOME/.local/share/Trash/"
+		$path = "~/.local/share/Trash/"
 	} else {
 		$path = "C:\`$Recycle.Bin\$(GetCurrentUserSID)"
 	}

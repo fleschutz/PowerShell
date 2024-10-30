@@ -14,16 +14,16 @@
 
 try {
 	if ($IsLinux) {
-		$Path = Resolve-Path "~/Music"
+		$path = Resolve-Path "~/Music"
 	} else {
-		$Path = [Environment]::GetFolderPath('MyMusic')
+		$path = [Environment]::GetFolderPath('MyMusic')
 	}
-	if (Test-Path "$Path" -pathType container) {
-		Set-Location "$Path"
-		"📂$Path"
+	if (Test-Path "$path" -pathType container) {
+		Set-Location "$path"
+		"📂$path"
 		exit 0 # success
 	}
-	throw "User's music folder at 📂$Path doesn't exist (yet)"
+	throw "User's music folder at 📂$path doesn't exist (yet)"
 } catch {
 	"⚠️ Error in line $($_.InvocationInfo.ScriptLineNumber): $($Error[0])"
 	exit 1

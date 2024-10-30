@@ -13,9 +13,9 @@
 #>
 
 try {
-	if ($IsLinux) {	$Path = "/" } else { $Path = "C:\" }
-	Set-Location "$Path"
-	"📂$Path"
+	if ($IsLinux) {	$path = "/" } else { $path = "C:\" }
+	Set-Location "$path"
+	"📂$path"
 	exit 0 # success
 } catch {
 	"⚠️ Error in line $($_.InvocationInfo.ScriptLineNumber): $($Error[0])"

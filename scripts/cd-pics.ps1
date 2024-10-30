@@ -14,13 +14,13 @@
 
 try {
 	if ($IsLinux) {
-		$Path = Resolve-Path "$HOME/Pictures"
+		$path = Resolve-Path "~/Pictures"
 	} else {
-		$Path = [Environment]::GetFolderPath('MyPictures')
+		$path = [Environment]::GetFolderPath('MyPictures')
 	}
-	if (-not(Test-Path "$Path" -pathType container)) { throw "Pictures folder at 📂$Path doesn't exist (yet)" }
-	Set-Location "$Path"
-	"📂$Path"
+	if (-not(Test-Path "$path" -pathType container)) { throw "Pictures folder at 📂$path doesn't exist (yet)" }
+	Set-Location "$path"
+	"📂$path"
 	exit 0 # success
 } catch {
 	"⚠️ Error in line $($_.InvocationInfo.ScriptLineNumber): $($Error[0])"

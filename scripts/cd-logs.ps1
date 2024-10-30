@@ -19,9 +19,9 @@ function GetLogsDir {
 }
 
 try {
-	$Path = GetLogsDir
-	Set-Location "$Path"
-	"📂$Path"
+	$path = GetLogsDir
+	Set-Location "$path"
+	"📂$path"
 	exit 0 # success
 } catch {
 	"⚠️ Error in line $($_.InvocationInfo.ScriptLineNumber): $($Error[0])"

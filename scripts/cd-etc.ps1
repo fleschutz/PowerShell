@@ -14,15 +14,15 @@
 
 try {
 	if ($IsLinx) {
-		$Path = "/etc"
+		$path = "/etc"
 	} else {
-		$Path = Resolve-Path "$env:WINDIR\System32\drivers\etc"
+		$path = Resolve-Path "$env:WINDIR\System32\drivers\etc"
 	}
-	if (-not(Test-Path "$Path" -pathType container)) {
-		throw "/etc directory at 📂$Path doesn't exist (yet)"
+	if (-not(Test-Path "$path" -pathType container)) {
+		throw "/etc directory at 📂$path doesn't exist (yet)"
 	}
-	Set-Location "$Path"
-	"📂$Path"
+	Set-Location "$path"
+	"📂$path"
 	exit 0 # success
 } catch {
 	"⚠️ Error in line $($_.InvocationInfo.ScriptLineNumber): $($Error[0])"

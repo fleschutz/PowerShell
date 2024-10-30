@@ -13,10 +13,10 @@
 #>
 
 try {
-	$Path = Resolve-Path "$env:WINDIR"
-	if (-not(Test-Path "$Path" -pathType container)) { throw "Windows directory at 📂$Path doesn't exist" }
-	Set-Location "$Path"
-	"📂$Path"
+	$path = Resolve-Path "$env:WINDIR"
+	if (-not(Test-Path "$path" -pathType container)) { throw "Windows directory at 📂$path doesn't exist" }
+	Set-Location "$path"
+	"📂$path"
 	exit 0 # success
 } catch {
 	"⚠️ Error in line $($_.InvocationInfo.ScriptLineNumber): $($Error[0])"
