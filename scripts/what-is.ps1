@@ -17,9 +17,9 @@
 param([string]$term = "")
 
 try {
-	if ($term -eq "" ) { $term = Read-Host "Enter the term/abbreviation/etc. to query" }
+	if ($term -eq "" ) { $term = Read-Host "Enter the term to query" }
 
-	$files = (Get-ChildItem "$PSScriptRoot/../data/dicts/*.csv")
+	$files = Get-ChildItem "$PSScriptRoot/../data/dicts/*.csv"
 	$basename = ""
 	foreach($file in $files) {
 		$table = Import-CSV "$file"
@@ -30,7 +30,8 @@ try {
 		}
 	}
 	if ($basename -eq "") {
-		& "$PSScriptRoot/open-URL.ps1" "https://www.google.com/search?q=what+is+$term" "🤷‍ Sorry, no '$term' entry found. Let's google it at: "
+		Write-Host "🤷‍ Sorry, '$term' is unknown to me. Ctrl + click here to google it: " -noNewline
+		Write-Host "https://www.google.com/search?q=what+is+$term" -foregroundColor blue
 	}
 	exit 0 # success
 } catch {
