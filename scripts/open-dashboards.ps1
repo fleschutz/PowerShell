@@ -1,13 +1,13 @@
 ﻿<#
 .SYNOPSIS
-	Open web dashboards
+	Open 20 web dashboards
 .DESCRIPTION
 	This PowerShell script launches the Web browser with 20 tabs of popular dashboard websites.
 .PARAMETER timeInterval
 	Specifies the time interval between each tab (110ms per default)
 .EXAMPLE
 	PS> ./open-dashboards.ps1
-	✅ Launching Web browser with 20 tabs showing Toggl Track•Google Calendar•Google Mail, ...
+	✅ Launching Web browser with 20 tabs: Toggl Track•Google Calendar•Google Mail, ...
 	NOTE: Execute './switch-tabs.ps1' to switch from tab to tab automatically.
 	...
 .LINK
@@ -16,15 +16,14 @@
 	Author: Markus Fleschutz | License: CC0
 #>
 
-param([int]$timeInterval = 110) # milliseconds
+param([int]$timeInterval = 120) # milliseconds
 
 try {
 	Write-Progress "Reading Data/popular-dashboards.csv..."
 	$table = Import-CSV "$PSScriptRoot/../data/popular-dashboards.csv"
 	Write-Progress -completed "Done."
 
-	Write-Host "✅ Launching Web browser with 20 tabs showing " -noNewline
-	$numRows = $table.Length
+	Write-Host "✅ Launching Web browser with 20 tabs: " -noNewline
 	foreach($row in $table) {
 		Write-Host "$($row.NAME)•" -noNewline
 		& "$PSScriptRoot/open-default-browser.ps1" "$($row.URL)"
