@@ -355,7 +355,7 @@ try {
             tar zxf $packagePath -C $contentPath
         }
     } else {
-        Write-Host "⏳ (1/5) Loading details from https://raw.githubusercontent.com ..."
+        Write-Host "⏳ (1/5) Querying infos from https://raw.githubusercontent.com ..."
         $metadata = Invoke-RestMethod https://raw.githubusercontent.com/PowerShell/PowerShell/master/tools/metadata.json
         if ($Preview) {
             $release = $metadata.PreviewReleaseTag -replace '^v'
