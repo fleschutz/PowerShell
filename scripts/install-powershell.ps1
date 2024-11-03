@@ -424,21 +424,23 @@ try {
                 Expand-ArchiveInternal -Path $packagePath -DestinationPath $contentPath
             }
         } else {
-	    Write-Host "Extracting..."
+            Write-Host "⏳ (3/4) Extracting package to: $contentPath..."
             tar zxf $packagePath -C $contentPath
         }
     }
 
     if (-not $UseMSI) {
+        Write-Host "Removing current installation at: $Destination ..."
         Remove-Destination $Destination
         if (Test-Path $Destination) {
-            Write-Host "Copying files..." 
+            Write-Host "⏳ (4/4) Copying files to $Destination... "
             # only copy files as folders will already exist at $Destination
             Get-ChildItem -Recurse -Path "$contentPath" -File | ForEach-Object {
                 $DestinationFilePath = Join-Path $Destination $_.fullname.replace($contentPath, "")
                 Copy-Item $_.fullname -Destination $DestinationFilePath
             }
         } elseif ($IsWinEnv) {
+            Write-Host "⏳ (4/4) Moving new installation to $Destination... "
             $null = New-Item -Path (Split-Path -Path $Destination -Parent) -ItemType Directory -ErrorAction SilentlyContinue
             Move-Item -Path $contentPath -Destination $Destination
         } else {
