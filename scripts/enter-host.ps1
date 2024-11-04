@@ -7,7 +7,8 @@
 	Specifies the remote hostname or IP address
 .EXAMPLE
 	PS> ./enter-host.ps1 tux
-	⏳ Connecting to 'tux' as user 'markus' using OpenSSH_for_Windows_9.5p1, LibreSSL 3.8.2
+	✅ tux is up and running (3ms latency).
+	⏳ Connecting as user 'markus' using OpenSSH_for_Windows_9.5p1, LibreSSL 3.8.2
 	markus@tux's password:
 	...
 .LINK
@@ -22,7 +23,6 @@ try {
 	if ($remoteHost -eq "") {
 		$remoteHost = Read-Host "Enter the remote hostname or IP address"
 		$remoteUser = Read-Host "Enter the username at $remoteHost"
-
 	} elseif ($IsLinux) {
 		$remoteUser = $(whoami)
 	} else {
@@ -30,7 +30,10 @@ try {
 		$remoteUser = $remoteUser.toLower()
 	}
 
-	Write-Host "⏳ Connecting to '$remoteHost' as user '$remoteUser' using " -noNewline
+	& "$PSScriptRoot/ping-host.ps1" $remoteHost
+	if ($lastExitCode -ne "0") { exit 1 }
+
+	Write-Host "⏳ Connecting as user '$remoteUser' using " -noNewline
 	& ssh -V
 	if ($lastExitCode -ne "0") { throw "'ssh -V' failed with exit code $lastExitCode" }
 
