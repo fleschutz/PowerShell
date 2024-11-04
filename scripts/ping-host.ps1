@@ -27,7 +27,7 @@ function GetPingLatency([string]$hostname) {
 try {
 	[int]$latency = GetPingLatency($hostname)
 	if ($latency -eq 1500) {
-		Write-Host "⚠️ Host '$hostname' doesn't respond - check the connection or wake the host up."
+		Write-Host "⚠️ Host '$hostname' doesn't respond - check the connection or maybe the host is down."
 		exit 1
 	} 
 	Write-Host "✅ $hostname is up and running ($($latency)ms latency)."

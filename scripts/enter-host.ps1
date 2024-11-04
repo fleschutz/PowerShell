@@ -31,7 +31,10 @@ try {
 	}
 
 	& "$PSScriptRoot/ping-host.ps1" $remoteHost
-	if ($lastExitCode -ne "0") { exit 1 }
+	if ($lastExitCode -ne "0") {
+		Write-Host "Let's try to wake '$remoteHost' up..."
+		& "$PSScriptRoot/wake-up-host.ps1" 
+	}
 
 	Write-Host "⏳ Connecting as user '$remoteUser' using " -noNewline
 	& ssh -V
