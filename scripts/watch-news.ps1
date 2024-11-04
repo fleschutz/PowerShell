@@ -22,36 +22,33 @@
 	Author: Markus Fleschutz | License: CC0
 #>
 
-param([string]$URL = "https://news.yahoo.com/rss/world", [int]$lines = 10, [int]$timeInterval = 30) # in seconds
+param([string]$URL = "https://news.yahoo.com/rss/world", [int]$timeInterval = 30) # in seconds
 
-function PrintLatestHeadlines([string]$previous, [int]$maxLines) {
-	[xml]$content = (Invoke-WebRequest -URI $URL -useBasicParsing).Content
-	[string]$latest = ""
-
-	foreach ($item in $content.rss.channel.item) {
+function PrintLatestHeadlines([xml]$content, [string]$latestTimestamp) {
+	$items = $content.rss.channel.item
+	[array]::Reverse($items)
+	foreach($item in $items) {
+		if ($($item.pubDate) -le $latestTimestamp) { continue }
 		$title = $item.title
-		if ($latest -eq "") { $latest = $title }
-		if ($title -eq $previous) { break }
 		$time = $item.pubDate.Substring(11, 5)
-		& "$PSScriptRoot/write-typewriter.ps1" "❇️ $time $title" 10
-		$maxLines--
-		if ($maxLines -eq 0) { break }
+		& "$PSScriptRoot/write-typewriter.ps1" "❇️ $time $title" 2
+		$latestTimestamp = $item.pubDate
 	}
-	return $latest
+	return $latestTimestamp
 }
 
 try {
 	[xml]$content = (Invoke-WebRequest -URI $URL -useBasicParsing).Content
-
 	$title = $content.rss.channel.title
-	$URL = $content.rss.channel.link
+	$link = $content.rss.channel.link
 	" "
-	"   UTC   $title - $URL"
+	"   UTC   $title - $link"
 	"   ---   -----------------------------------------------------------------------"
-	$latest = ""
+	$latestTimestamp = "2000-01-01"
 	do {
-		$latest = PrintLatestHeadlines $latest $lines
+		$latestTimestamp = PrintLatestHeadlines $content $latestTimestamp
 		Start-Sleep -seconds $timeInterval
+		[xml]$content = (Invoke-WebRequest -URI $URL -useBasicParsing).Content
 	} while ($true)
 	exit 0 # success
 } catch {
