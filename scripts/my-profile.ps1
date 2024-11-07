@@ -11,9 +11,10 @@ Write-Host "👋 Welcome $username to $(hostname)'s PowerShell - type 'hlp' if y
 function prompt { Write-Host "`n➤ " -noNewline -foregroundColor yellow; return " " }
 
 # ALIASES
-del alias:pwd -force -errorAction SilentlyContinue
+set-alias -name enter -value enter-host.ps1
 set-alias -name hlp -value write-help.ps1
-set-alias -name pwd -value list-workdir.ps1	# pwd = print working directory
-set-alias -name ll -value get-childitem		# ll = list folder (long format)
+set-alias -name ll -value Get-ChildItem		# ll = list folder (long format)
 del alias:ls -force -errorAction SilentlyContinue 
 set-alias -name ls -value list-folder.ps1	# ls = list folder (short format)
+del alias:pwd -force -errorAction SilentlyContinue
+set-alias -name pwd -value list-workdir.ps1	# pwd = print working directory
