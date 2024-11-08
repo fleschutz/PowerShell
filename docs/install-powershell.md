@@ -7,9 +7,9 @@ If '-Daily' is specified, then the latest PowerShell daily package will be insta
 Parameters
 ----------
 ```powershell
-PS> ./install-powershell.ps1 [-Destination <String>] [-Daily] [-DoNotOverwrite] [-AddToPath] [-Preview] [<CommonParameters>]
+/home/markus/Repos/PowerShell/scripts/install-powershell.ps1 [-Destination <String>] [-Daily] [-DoNotOverwrite] [-AddToPath] [-Preview] [<CommonParameters>]
 
-PS> ./install-powershell.ps1 [-UseMSI] [-Quiet] [-AddExplorerContextMenu] [-EnablePSRemoting] [-Preview] [<CommonParameters>]
+/home/markus/Repos/PowerShell/scripts/install-powershell.ps1 [-UseMSI] [-Quiet] [-AddExplorerContextMenu] [-EnablePSRemoting] [-Preview] [<CommonParameters>]
 
 -Destination <String>
     The destination path to install PowerShell to.
@@ -180,7 +180,11 @@ if (-not $Destination) {
     if ($IsWinEnv) {
         $Destination = "$env:LOCALAPPDATA\Microsoft\powershell"
     } else {
-        $Destination = "~/.powershell"
+	if (Test-Path -path "/opt/PowerShell" -pathType container) {
+		$Destination = "/opt/PowerShell"
+	} else {
+        	$Destination = "~/.powershell"
+	}
     }
 
     if ($Daily) {
@@ -228,16 +232,16 @@ function Expand-ArchiveInternal {
     }
 }
 
-function Remove-Destination([string] $Destination) {
-    if (Test-Path -Path $Destination) {
+function Remove-Destination([string]$Destination) {
+    if (Test-Path -path $Destination -pathType container) {
         if ($DoNotOverwrite) {
             throw "Destination folder '$Destination' already exist. Use a different path or omit '-DoNotOverwrite' to overwrite."
         }
-        Write-Host "⏳ (4/4) Removing old installation at $Destination" 
-        if (Test-Path -Path "$Destination.old") {
+        if (Test-Path -path "$Destination.old") {
             Remove-Item "$Destination.old" -Recurse -Force
         }
         if ($IsWinEnv -and ($Destination -eq $PSHOME)) {
+       	    Write-Host "⏳ (3/4) Removing old installation at $Destination... "
             # handle the case where the updated folder is currently in use
             Get-ChildItem -Recurse -File -Path $PSHOME | ForEach-Object {
                 if ($_.extension -eq ".old") {
@@ -247,8 +251,9 @@ function Remove-Destination([string] $Destination) {
                 }
             }
         } else {
+       	    Write-Host "⏳ (3/4) Moving old installation to $($Destination).old... " 
             # Unix systems don't keep open file handles so you can just move files/folders even if in use
-            Move-Item "$Destination" "$Destination.old"
+            sudo mv "$Destination" "$($Destination).old"
         }
     }
 }
@@ -466,7 +471,7 @@ try {
             tar zxf $packagePath -C $contentPath
         }
     } else {
-        Write-Host "⏳ (1/4) Loading metadata from https://raw.githubusercontent.com ..."
+        Write-Host "⏳ (1/4) Querying infos from https://raw.githubusercontent.com ..."
         $metadata = Invoke-RestMethod https://raw.githubusercontent.com/PowerShell/PowerShell/master/tools/metadata.json
         if ($Preview) {
             $release = $metadata.PreviewReleaseTag -replace '^v'
@@ -489,10 +494,10 @@ try {
         } elseif ($IsMacOSEnv) {
             $packageName = "powershell-${release}-osx-${architecture}.tar.gz"
         }
-	Write-Host "⏳ (2/4) Latest release is $release for $architecture, package name is $packageName ..."
+	Write-Host "         Latest release is $release for $architecture, package name is: $packageName"
 
         $downloadURL = "https://github.com/PowerShell/PowerShell/releases/download/v${release}/${packageName}"
-        Write-Host "⏳ (3/4) Loading $downloadURL"
+        Write-Host "⏳ (2/4) Loading $downloadURL"
 
         $packagePath = Join-Path -Path $tempDir -ChildPath $packageName
         if (!$PSVersionTable.ContainsKey('PSEdition') -or $PSVersionTable.PSEdition -eq "Desktop") {
@@ -535,23 +540,34 @@ try {
                 Expand-ArchiveInternal -Path $packagePath -DestinationPath $contentPath
             }
         } else {
+            Write-Host "⏳ (3/4) Extracting package to: $contentPath..."
             tar zxf $packagePath -C $contentPath
         }
     }
 
     if (-not $UseMSI) {
-        Remove-Destination $Destination
+        Write-Host "⏳ (4/5) Removing current installation at: $Destination ..."
+        if ($IsLinuxEnv) { 
+		& sudo rm -rf "$Destination"
+	} else {
+        	Remove-Destination "$Destination"
+	}
+
         if (Test-Path $Destination) {
-            Write-Verbose "Copying files" -Verbose
+            Write-Host "⏳ (4/4) Copying files to $Destination... "
             # only copy files as folders will already exist at $Destination
             Get-ChildItem -Recurse -Path "$contentPath" -File | ForEach-Object {
                 $DestinationFilePath = Join-Path $Destination $_.fullname.replace($contentPath, "")
                 Copy-Item $_.fullname -Destination $DestinationFilePath
             }
-        } else {
+        } elseif ($IsWinEnv) {
+            Write-Host "⏳ (4/4) Moving new installation to $Destination... "
             $null = New-Item -Path (Split-Path -Path $Destination -Parent) -ItemType Directory -ErrorAction SilentlyContinue
             Move-Item -Path $contentPath -Destination $Destination
-        }
+        } else {
+            Write-Host "⏳ (4/4) Moving new installation to $Destination... "
+            & sudo mv "$contentPath" "$Destination"
+	}
     }
 
     ## Change the mode of 'pwsh' to 'rwxr-xr-x' to allow execution
@@ -586,7 +602,7 @@ try {
             if ($IsLinuxEnv) { $symlink = "/usr/bin/pwsh" } elseif ($IsMacOSEnv) { $symlink = "/usr/local/bin/pwsh" }
             $needNewSymlink = $true
 
-            if (Test-Path -Path $symlink) {
+            if (Test-Path -path $symlink) {
                 $linkItem = Get-Item -Path $symlink
                 if ($linkItem.LinkType -ne "SymbolicLink") {
                     Write-Warning "'$symlink' already exists but it's not a symbolic link. Abort adding to PATH."
@@ -635,4 +651,4 @@ try {
 }
 ```
 
-*(generated by convert-ps2md.ps1 using the comment-based help of install-powershell.ps1 as of 08/15/2024 09:50:48)*
+*(generated by convert-ps2md.ps1 using the comment-based help of install-powershell.ps1 as of 11/08/2024 12:34:49)*

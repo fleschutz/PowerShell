@@ -430,8 +430,13 @@ try {
     }
 
     if (-not $UseMSI) {
-        Write-Host "Removing current installation at: $Destination ..."
-        Remove-Destination $Destination
+        Write-Host "⏳ (4/5) Removing current installation at: $Destination ..."
+        if ($IsLinuxEnv) { 
+		& sudo rm -rf "$Destination"
+	} else {
+        	Remove-Destination "$Destination"
+	}
+
         if (Test-Path $Destination) {
             Write-Host "⏳ (4/4) Copying files to $Destination... "
             # only copy files as folders will already exist at $Destination
