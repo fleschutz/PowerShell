@@ -1,13 +1,13 @@
 ﻿<#
 .SYNOPSIS
-	Scans a folder for viruses
+	Scans a directory tree for malware
 .DESCRIPTION
-	This PowerShell script scans the given folder (including subfolders) for viruses. Requires the installation of ESET or Windows Defender.
+	This PowerShell script scans a directory tree for malware. Requires the installation of ESET or Windows Defender.
 .PARAMETER path
 	Specifies the file path to the folder (default is working directory).
 .EXAMPLE
 	PS> ./scan-folder.ps1 C:\Windows
-	⏳ Scanning folder with ESET Antivirus...
+	⏳ Scanning 📂C:\Windows with ESET Antivirus...
 	...
 .LINK
 	https://github.com/fleschutz/PowerShell
@@ -25,13 +25,13 @@ try {
 
 	if (Test-Path "C:\Program Files\ESET\ESET Security\ecls.exe" -pathType leaf) {
 
-		"⏳ Scanning folder with ESET Antivirus..."
+		"⏳ Scanning 📂$path with ESET Antivirus..."
 		& "C:\Program Files\ESET\ESET Security\ecls.exe" $path
 		if ($lastExitCode -ne 0) { throw "ESET Antivirus failed with exit code $lastExitCode - POTENTIAL DANGER!!!" }
 
 	} elseif (Test-Path "C:\Program Files\Windows Defender\MpCmdRun.exe" -pathType leaf) {
 
-		"⏳ Scanning folder with Windows Defender..."
+		"⏳ Scanning 📂$path with Windows Defender..."
 		& "C:\Program Files\Windows Defender\MpCmdRun.exe" -Scan -ScanType 2 -File $path
 		if ($lastExitCode -ne 0) { throw "Windows Defender failed with exit code $lastExitCode - POTENTIAL DANGER !!!" }
 
