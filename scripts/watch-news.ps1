@@ -42,7 +42,7 @@ function PrintLatestHeadlines([xml]$content, [string]$latestTimestamp, [string]$
 
 try {
 	[xml]$content = (Invoke-WebRequest -URI $URL -useBasicParsing).Content
-	$title = $content.rss.channel.title
+	$title = $content.rss.channel.title.toUpper()
 	$link = $content.rss.channel.link
 	Write-Host "`n UTC   $title - " -noNewline
 	Write-Host $link -foregroundColor blue
