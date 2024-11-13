@@ -12,8 +12,8 @@
 .EXAMPLE
 	PS> ./watch-news.ps1
 
-	UTC    Yahoo News - Latest News & Headlines - https://www.yahoo.com/news/world
-	---    -----------------------------------------------------------------------
+	 UTC   HEADLINES (by: https://www.yahoo.com/news/world)
+	 ---   ------------------------------------------------
 	14:29  Niger coup: Ecowas deadline sparks anxiety in northern Nigeria
 	...
 .LINK
@@ -44,9 +44,10 @@ try {
 	[xml]$content = (Invoke-WebRequest -URI $URL -useBasicParsing).Content
 	$title = $content.rss.channel.title.toUpper()
 	$link = $content.rss.channel.link
-	Write-Host "`n UTC   $title - " -noNewline
-	Write-Host $link -foregroundColor blue
-	Write-Host " ---   -----------------------------------------------------------------------"
+	Write-Host "`n UTC   HEADLINES (by: " -noNewline
+	Write-Host $link -foregroundColor blue -noNewline
+	Write-Host ")"
+	Write-Host " ---   ------------------------------------------------"
 	$latestTimestamp = "2000-01-01"
 	$icon = ""
 	do {
