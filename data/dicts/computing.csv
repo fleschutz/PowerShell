@@ -538,9 +538,7 @@ CKO,chief knowledge officer
 CL,cluster log
 CLASS,Capacity Loading and Operation Sequence Scheduling
 CLEC,competitive local exchange carrier
-CLI,command line interface
-CLI,Command Line Interpreter
-CLI,Common Language Infrastructure
+CLI,"Command Line Interface, Command Line Interpreter, Common Language Infrastructure"
 CLM,Council For Logistics Management
 CLO,chief learning officer
 CLOB,Character Large OBject
@@ -549,7 +547,8 @@ CLR,Common Language Runtime
 CM,configuration management
 CM,content management
 CM,Contract Manufacturer
-CMA,content management application
+CMA,Content Management Application
+CMD,Command Prompt
 CMDB,configuration management database
 CMDM,Collaborative Master Data Management
 CMIO,Chief Medical Information Officer
