@@ -60,7 +60,7 @@ Write-Host "   User: " -NoNewline -ForegroundColor DarkGray
 Write-Host "$UserName" -ForegroundColor Cyan
 Write-Host " it::::tt333EEF" -NoNewline -ForegroundColor Red
 Write-Host " @EEEEEEttttt33F " -NoNewline -ForegroundColor Green
-Write-Host "    Hostname: " -NoNewline -ForegroundColor DarkGray
+Write-Host "    Host: " -NoNewline -ForegroundColor DarkGray
 Write-Host "$ComputerName" -ForegroundColor Cyan
 Write-Host " ;3=*^``````'*4EEV" -NoNewline -ForegroundColor Red
 Write-Host " :EEEEEEttttt33@. " -NoNewline -ForegroundColor Green
