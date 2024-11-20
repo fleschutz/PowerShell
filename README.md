@@ -47,48 +47,48 @@ Mega Collection of PowerShell Scripts
 | Script                                               | Description                                                                                       |
 | ---------------------------------------------------- | ------------------------------------------------------------------------------------------------- |
 | [add-firewall-rules.ps1](scripts/add-firewall-rules.ps1) | Adds firewall rules for executables, needs admin rights. [Read more »](docs/add-firewall-rules.md) |
-| [check-cpu.ps1](scripts/check-cpu.ps1)| Checks the CPU temperature. [Read more »](docs/check-cpu.md)                                                    |
-| [check-dns.ps1](scripts/check-dns.ps1) | Checks the DNS resolution. [Read more »](docs/check-dns.md)                                                    |
-| [check-drive-space.ps1](scripts/check-drive-space.ps1) | Checks a drive for free space left. [Read more »](docs/check-drive-space.md)                   |
-| [check-file-system.ps1](scripts/check-file-system.ps1) | Checks the file system of a drive (needs admin rights). [Read more »](docs/check-file-system.md)|
-| [check-health.ps1](scripts/check-health.ps1)         | Checks the system health. [Read more »](docs/check-health.md)                                    |
-| [check-ping.ps1](scripts/check-ping.ps1)             | Checks the ping latency to the internet. [Read more »](docs/check-ping.md)                       |
-| [check-swap-space.ps1](scripts/check-swap-space.ps1) | Checks the swap space for free space left. [Read more »](docs/check-swap-space.md)               |
-| [check-windows-system-files.ps1](scripts/check-windows-system-files.ps1) | Checks Windows system files (needs admin rights). [Read more »](docs/check-windows-system-files.md) |
-| [enable-crash-dumps.ps1](scripts/enable-crash-dumps.ps1) | Enables the writing of crash dumps. [Read more »](docs/enable-crash-dumps.md)                |
-| [hibernate.ps1](scripts/hibernate.ps1)               | Hibernates the local computer immediately. [Read more »](docs/hibernate.md)                      |
-| [install-github-cli.ps1](scripts/install-github-cli.ps1) | Installs GitHub CLI. [Read more »](docs/install-github-cli.md)                               |
-| [install-chrome-browser.ps1](scripts/install-chrome-browser.ps1) | Installs the Google Chrome browser. [Read more »](docs/install-chrome-browser.md)    |
-| [install-firefox.ps1](scripts/install-firefox.ps1)   | Installs the Firefox browser. [Read more »](docs/install-firefox.md)    |
-| [install-knot-resolver.ps1](scripts/install-knot-resolver.ps1) | Installs the Knot Resolver (needs admin rights). [Read more »](docs/install-knot-resolver.md)|
-| [install-ssh-client.ps1](scripts/install-ssh-client.ps1) | Installs a SSH client (needs admin rights). [Read more »](docs/install-ssh-client.md)        |
-| [install-ssh-server.ps1](scripts/install-ssh-server.ps1) | Installs a SSH server (needs admin rights). [Read more »](docs/install-ssh-server.md)        |
-| [install-signal-cli.ps1](scripts/install-signal-cli.ps1) | Installs the CLI edition of the Signal messenger. [Read more »](docs/install-signal-cli.md)|
-| [install-updates.ps1](scripts/install-updates.ps1)   | Installs updates (need admin rights). [Read more »](docs/install-updates.md)                     |
-| [install-wsl.ps1](scripts/install-wsl.ps1)           | Installs Windows Subsystem for Linux (WSL), needs admin rights. [Read more »](docs/install-wsl.md)|
-| [list-apps.ps1](scripts/list-apps.ps1)               | Lists the installed applications. [Read more »](docs/list-installed-apps.md)                     |
-| [list-cli-tools.ps1](scripts/list-cli-tools.ps1)     | Lists installed command-line interface (CLI) tools. [Read more »](docs/list-cli-tools.md)        |
-| [list-dns-servers.ps1](scripts/list-dns-servers.ps1) | Lists public DNS servers. [Read more »](docs/list-dns-servers.md)                                |
-| [list-drives.ps1](scripts/list-drives.ps1)           | Lists all drives. [Read more »](docs/list-drives.md)                                             |
-| [list-network-shares.ps1](scripts/list-network-shares.ps1) | Lists all network shares of the local computer. [Read more »](docs/list-network-shares.md) |
-| [list-installed-software.ps1](scripts/list-installed-software.ps1) | Lists the installed software. [Read more »](docs/list-installed-software.md)       |
-| [list-printers.ps1](scripts/list-printers.ps1)       | Lists all printer known to the computer. [Read more »](docs/list-printers.md)                    |
-| [list-print-jobs.ps1](scripts/list-print-jobs.ps1)   | Lists all jobs of all printers. [Read more »](docs/list-print-jobs.md)                           |
-| [list-processes.ps1](scripts/list-processes.ps1)     | Lists the local computer processes. [Read more »](docs/list-processes.md)                        |
-| [list-services.ps1](scripts/list-services.ps1)       | Lists the services on the local computer. [Read more »](docs/list-services.md)                   |
-| [list-system-info.ps1](scripts/list-system-info.ps1) | Lists system information on the local computer. [Read more »](docs/list-system-info.md)          |
-| [list-tasks.ps1](scripts/list-tasks.ps1)             | Lists all Windows scheduler tasks. [Read more »](docs/list-tasks.md)                             |
-| [list-timezone.ps1](scripts/list-timezone.ps1)       | Lists the current time zone details. [Read more »](docs/list-timezone.md)                        |
-| [list-timezones.ps1](scripts/list-timezones.ps1)     | Lists all time zones available. [Read more »](docs/list-timezones.md)                            |
-| [list-user-groups.ps1](scripts/list-user-groups.ps1) | Lists the user groups on the local computer. [Read more »](docs/list-user-groups.md)             |
-| [poweroff.ps1](scripts/poweroff.ps1)                 | Halts the local computer (needs admin rights). [Read more »](docs/poweroff.md)                   |
-| [query-smart-data.ps1](scripts/query-smart-data.ps1) | Queries the S.M.A.R.T. data of your HDD/SSD's. [Read more »](docs/query-smart-data.md)           |
-| [reboot.ps1](scripts/reboot.ps1)                     | Reboots the local computer (needs admin rights). [Read more »](docs/reboot.md)                   |
-| [remove-print-jobs.ps1](scripts/remove-print-jobs.ps1) | Removes all jobs from all printers. [Read more »](docs/remove-print-jobs.md)                   |
-| [restart-network-adapters.ps1](scripts/restart-network-adapters.ps1) | Restarts all local network adapters. [Read more »](docs/restart-network-adapters.md)|
-| [upgrade-ubuntu.ps1](scripts/upgrade-ubuntu.ps1)     | Upgrades Ubuntu Linux to the latest (LTS) release. [Read more »](docs/upgrade-ubuntu.md)         |
-| [wake-up-host.ps1](scripts/wake-up-host.ps1)         | Wakes up a computer using Wake-on-LAN. [Read more »](docs/wake-up-host.md)                       |
-| [windefender.ps1](scripts/windefender.ps1)           | Turn Windows Defender on/off/check real time monitoring. [Read more »](docs/windefender.md)      |
+| [check-cpu.ps1](scripts/check-cpu.ps1)| Checks the CPU temperature. [More »](docs/check-cpu.md)                                                    |
+| [check-dns.ps1](scripts/check-dns.ps1) | Checks the DNS resolution. [More »](docs/check-dns.md)                                                    |
+| [check-drive-space.ps1](scripts/check-drive-space.ps1) | Checks a drive for free space left. [More »](docs/check-drive-space.md)                   |
+| [check-file-system.ps1](scripts/check-file-system.ps1) | Checks the file system of a drive (needs admin rights). [More »](docs/check-file-system.md)|
+| [check-health.ps1](scripts/check-health.ps1)         | Checks the system health. [More »](docs/check-health.md)                                    |
+| [check-ping.ps1](scripts/check-ping.ps1)             | Checks the ping latency to the internet. [More »](docs/check-ping.md)                       |
+| [check-swap-space.ps1](scripts/check-swap-space.ps1) | Checks the swap space for free space left. [More »](docs/check-swap-space.md)               |
+| [check-windows-system-files.ps1](scripts/check-windows-system-files.ps1) | Checks Windows system files (needs admin rights). [More »](docs/check-windows-system-files.md) |
+| [enable-crash-dumps.ps1](scripts/enable-crash-dumps.ps1) | Enables the writing of crash dumps. [More »](docs/enable-crash-dumps.md)                |
+| [hibernate.ps1](scripts/hibernate.ps1)               | Hibernates the local computer immediately. [More »](docs/hibernate.md)                      |
+| [install-github-cli.ps1](scripts/install-github-cli.ps1) | Installs GitHub CLI. [More »](docs/install-github-cli.md)                               |
+| [install-chrome-browser.ps1](scripts/install-chrome-browser.ps1) | Installs the Google Chrome browser. [More »](docs/install-chrome-browser.md)    |
+| [install-firefox.ps1](scripts/install-firefox.ps1)   | Installs the Firefox browser. [More »](docs/install-firefox.md)    |
+| [install-knot-resolver.ps1](scripts/install-knot-resolver.ps1) | Installs the Knot Resolver (needs admin rights). [More »](docs/install-knot-resolver.md)|
+| [install-ssh-client.ps1](scripts/install-ssh-client.ps1) | Installs a SSH client (needs admin rights). [More »](docs/install-ssh-client.md)        |
+| [install-ssh-server.ps1](scripts/install-ssh-server.ps1) | Installs a SSH server (needs admin rights). [More »](docs/install-ssh-server.md)        |
+| [install-signal-cli.ps1](scripts/install-signal-cli.ps1) | Installs the CLI edition of the Signal messenger. [More »](docs/install-signal-cli.md)|
+| [install-updates.ps1](scripts/install-updates.ps1)   | Installs updates (need admin rights). [More »](docs/install-updates.md)                     |
+| [install-wsl.ps1](scripts/install-wsl.ps1)           | Installs Windows Subsystem for Linux (WSL), needs admin rights. [More »](docs/install-wsl.md)|
+| [list-apps.ps1](scripts/list-apps.ps1)               | Lists the installed applications. [More »](docs/list-installed-apps.md)                     |
+| [list-cli-tools.ps1](scripts/list-cli-tools.ps1)     | Lists installed command-line interface (CLI) tools. [More »](docs/list-cli-tools.md)        |
+| [list-dns-servers.ps1](scripts/list-dns-servers.ps1) | Lists public DNS servers. [More »](docs/list-dns-servers.md)                                |
+| [list-drives.ps1](scripts/list-drives.ps1)           | Lists all drives. [More »](docs/list-drives.md)                                             |
+| [list-network-shares.ps1](scripts/list-network-shares.ps1) | Lists all network shares of the local computer. [More »](docs/list-network-shares.md) |
+| [list-installed-software.ps1](scripts/list-installed-software.ps1) | Lists the installed software. [More »](docs/list-installed-software.md)       |
+| [list-printers.ps1](scripts/list-printers.ps1)       | Lists all printer known to the computer. [More »](docs/list-printers.md)                    |
+| [list-print-jobs.ps1](scripts/list-print-jobs.ps1)   | Lists all jobs of all printers. [More »](docs/list-print-jobs.md)                           |
+| [list-processes.ps1](scripts/list-processes.ps1)     | Lists the local computer processes. [More »](docs/list-processes.md)                        |
+| [list-services.ps1](scripts/list-services.ps1)       | Lists the services on the local computer. [More »](docs/list-services.md)                   |
+| [list-system-info.ps1](scripts/list-system-info.ps1) | Lists system information on the local computer. [More »](docs/list-system-info.md)          |
+| [list-tasks.ps1](scripts/list-tasks.ps1)             | Lists all Windows scheduler tasks. [More »](docs/list-tasks.md)                             |
+| [list-timezone.ps1](scripts/list-timezone.ps1)       | Lists the current time zone details. [More »](docs/list-timezone.md)                        |
+| [list-timezones.ps1](scripts/list-timezones.ps1)     | Lists all time zones available. [More »](docs/list-timezones.md)                            |
+| [list-user-groups.ps1](scripts/list-user-groups.ps1) | Lists the user groups on the local computer. [More »](docs/list-user-groups.md)             |
+| [poweroff.ps1](scripts/poweroff.ps1)                 | Halts the local computer (needs admin rights). [More »](docs/poweroff.md)                   |
+| [query-smart-data.ps1](scripts/query-smart-data.ps1) | Queries the S.M.A.R.T. data of your HDD/SSD's. [More »](docs/query-smart-data.md)           |
+| [reboot.ps1](scripts/reboot.ps1)                     | Reboots the local computer (needs admin rights). [More »](docs/reboot.md)                   |
+| [remove-print-jobs.ps1](scripts/remove-print-jobs.ps1) | Removes all jobs from all printers. [More »](docs/remove-print-jobs.md)                   |
+| [restart-network-adapters.ps1](scripts/restart-network-adapters.ps1) | Restarts all local network adapters. [More »](docs/restart-network-adapters.md)|
+| [upgrade-ubuntu.ps1](scripts/upgrade-ubuntu.ps1)     | Upgrades Ubuntu Linux to the latest (LTS) release. [More »](docs/upgrade-ubuntu.md)         |
+| [wake-up-host.ps1](scripts/wake-up-host.ps1)         | Wakes up a computer using Wake-on-LAN. [More »](docs/wake-up-host.md)                       |
+| [windefender.ps1](scripts/windefender.ps1)           | Turn Windows Defender on/off/check real time monitoring. [More »](docs/windefender.md)      |
 
 
 💻 Scripts for the Desktop
