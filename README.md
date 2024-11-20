@@ -1,9 +1,9 @@
 Mega Collection of PowerShell Scripts
 =====================================
 
-**Contains 500+ free and stand-alone PowerShell scripts for Linux, Mac OS, and Windows. Useful on the command-line, for remote control via SSH, for automation (e.g. [AutoHotkey](https://www.autohotkey.com/) or [Jenkins](https://www.jenkins.io/)), for context menus, for voice commands (e.g. [talk2windows](https://github.com/fleschutz/talk2windows)), automatically on startup/login/logoff/daily/shutdown/etc., or simply to learn PowerShell. All scripts are located in the 📂[scripts](scripts/) subfolder and support Unicode - a modern console is recommended (e.g. *Windows Terminal*).**
+**Contains 500+ free and stand-alone PowerShell scripts for Linux, Mac OS, and Windows. Useful on the command-line (CLI), for remote control via SSH, for automation (see AutoHotkey or Jenkins), for context menus, for voice commands (see [talk2windows](https://github.com/fleschutz/talk2windows)), automatically on startup/login/logoff/daily/shutdown/etc., or simply to learn PowerShell. All scripts are located in the 📂[scripts](scripts/) subfolder and support Unicode - a modern console is recommended (e.g. *Windows Terminal*).**
 
-**[Download](https://github.com/fleschutz/PowerShell/releases) | [FAQ](docs/FAQ.md) | [PowerShell Cheat Sheet](docs/cheatsheet.md)**
+**[Download](https://github.com/fleschutz/PowerShell/releases) | [PowerShell FAQ](docs/FAQ.md) | [PowerShell Cheat Sheet](docs/cheats-heet.md)**
 
 🔊 Scripts for Audio & Voice 
 -----------------------------
