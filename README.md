@@ -96,25 +96,25 @@ Mega Collection of PowerShell Scripts
 
 | Script                                               | Description                                                                                 |
 | ---------------------------------------------------- | ------------------------------------------------------------------------------------------- |
-| [close-calculator.ps1](scripts/close-calculator.ps1) | Closes the calculator application. [Read more...](docs/close-calculator.md)                 |
-| [close-cortana.ps1](scripts/close-cortana.ps1)       | Closes Cortana. [Read more...](docs/close-cortana.md)                                       |
-| [close-chrome.ps1](scripts/close-chrome.ps1)         | Closes the Google Chrome browser. [Read more...](docs/close-chrome.md)                      |
-| [close-program.ps1](scripts/close-program.ps1)       | Closes the given program gracefully. [Read more...](docs/close-program.md)                  |
-| [close-edge.ps1](scripts/close-edge.ps1)             | Closes the Edge browser. [Read more...](docs/close-edge.md)                                 |
-| [close-file-explorer.ps1](scripts/close-file-explorer.ps1)| Closes Microsoft File Explorer. [Read more...](docs/close-file-explorer.md)            |
-| [close-firefox.ps1](scripts/close-firefox.ps1)       | Closes the Firefox browser. [Read more...](docs/close-edge.md)                              |
-| [close-microsoft-store.ps1](scripts/close-microsoft-store.ps1)| Closes the Microsoft Store app. [Read more...](docs/close-microsoft-store.md)      |
-| [close-netflix.ps1](scripts/close-netflix.ps1)       | Closes the Netflix app. [Read more...](docs/close-netflix.md)                               |
-| [close-onedrive.ps1](scripts/close-onedrive.ps1)     | Closes Microsoft OneDrive. [Read more...](docs/close-onedrive.md)                           |
-| [close-serenade.ps1](scripts/close-serenade.ps1)     | Closes the Serenade application. [Read more...](docs/close-serenade.md)                     |
-| [close-snipping-tool.ps1](scripts/close-snipping-tool.ps1)| Closes the Snipping Tool application. [Read more...](docs/close-snipping-tool.md)      |
-| [close-spotify.ps1](scripts/close-spotify.ps1)       | Closes Spotify. [Read more...](docs/close-spotify.md)                                       |
-| [close-system-settings.ps1](scripts/close-system-settings.ps1) | Closes the System Settings window. [Read more...](docs/close-system-settings.md)  |
-| [close-task-manager.ps1](scripts/close-task-manager.ps1) | Closes the Task Manager. [Read more...](docs/close-task-manager.md)                     |
-| [close-thunderbird.ps1](scripts/close-thunderbird.ps1) | Closes Mozilla Thunderbird. [Read more...](docs/close-thunderbird.md)                     |
-| [close-vlc.ps1](scripts/close-vlc.ps1)               | Closes the VLC media player application. [Read more...](docs/close-vlc.md)                  |
-| [close-windows-terminal.ps1](scripts/close-windows-terminal.ps1) | Closes the Windows Terminal application. [Read more...](docs/close-windows-terminal.md)  |
-| [enable-god-mode.ps1](scripts/enable-god-mode.ps1)   | Enables the god mode (adds a new icon to the desktop). [Read more...](docs/enable-god-mode.md) |
+| [close-calculator.ps1](scripts/close-calculator.ps1) | Closes the calculator application. [Read more »](docs/close-calculator.md)                 |
+| [close-cortana.ps1](scripts/close-cortana.ps1)       | Closes Cortana. [More »](docs/close-cortana.md)                                       |
+| [close-chrome.ps1](scripts/close-chrome.ps1)         | Closes the Google Chrome browser. [More »](docs/close-chrome.md)                      |
+| [close-program.ps1](scripts/close-program.ps1)       | Closes the given program gracefully. [More »](docs/close-program.md)                  |
+| [close-edge.ps1](scripts/close-edge.ps1)             | Closes the Edge browser. [More »](docs/close-edge.md)                                 |
+| [close-file-explorer.ps1](scripts/close-file-explorer.ps1)| Closes Microsoft File Explorer. [More »](docs/close-file-explorer.md)            |
+| [close-firefox.ps1](scripts/close-firefox.ps1)       | Closes the Firefox browser. [More »](docs/close-edge.md)                              |
+| [close-microsoft-store.ps1](scripts/close-microsoft-store.ps1)| Closes the Microsoft Store app. [More »](docs/close-microsoft-store.md)      |
+| [close-netflix.ps1](scripts/close-netflix.ps1)       | Closes the Netflix app. [More »](docs/close-netflix.md)                               |
+| [close-onedrive.ps1](scripts/close-onedrive.ps1)     | Closes Microsoft OneDrive. [More »](docs/close-onedrive.md)                           |
+| [close-serenade.ps1](scripts/close-serenade.ps1)     | Closes the Serenade application. [More »](docs/close-serenade.md)                     |
+| [close-snipping-tool.ps1](scripts/close-snipping-tool.ps1)| Closes the Snipping Tool application. [More »](docs/close-snipping-tool.md)      |
+| [close-spotify.ps1](scripts/close-spotify.ps1)       | Closes Spotify. [More »](docs/close-spotify.md)                                       |
+| [close-system-settings.ps1](scripts/close-system-settings.ps1) | Closes the System Settings window. [More »](docs/close-system-settings.md)  |
+| [close-task-manager.ps1](scripts/close-task-manager.ps1) | Closes the Task Manager. [More »](docs/close-task-manager.md)                     |
+| [close-thunderbird.ps1](scripts/close-thunderbird.ps1) | Closes Mozilla Thunderbird. [More »](docs/close-thunderbird.md)                     |
+| [close-vlc.ps1](scripts/close-vlc.ps1)               | Closes the VLC media player application. [More »](docs/close-vlc.md)                  |
+| [close-windows-terminal.ps1](scripts/close-windows-terminal.ps1) | Closes the Windows Terminal application. [More »](docs/close-windows-terminal.md)  |
+| [enable-god-mode.ps1](scripts/enable-god-mode.ps1)   | Enables the god mode (adds a new icon to the desktop). [More »](docs/enable-god-mode.md) |
 | [install-chrome.ps1](scripts/install-chrome.ps1)     | Installs the Google Chrome browser. [Read more...](docs/install-chrome-browser.md)          |
 | [install-firefox.ps1](scripts/install-firefox.ps1)   | Installs the Firefox browser. [Read more...](docs/install-firefox.md)                       |
 | [list-clipboard.ps1](scripts/list-clipboard.ps1)     | Lists the contents of the clipboard. [Read more...](docs/list-clipboard.md)                 |
@@ -167,12 +167,12 @@ Mega Collection of PowerShell Scripts
 
 | Script                                               | Description                                                                                         |
 | ---------------------------------------------------- | --------------------------------------------------------------------------------------------------- |
-| [cd-autostart.ps1](scripts/cd-autostart.ps1)         | Set the working directory to the user's autostart folder. [Read more...](docs/cd-autostart.md)      |
-| [cd-desktop.ps1](scripts/cd-desktop.ps1)             | Set the working directory to the user's desktop folder. [Read more...](docs/cd-desktop.md)          |
-| [cd-docs.ps1](scripts/cd-docs.ps1)                   | Set the working directory to the user's documents folder. [Read more...](docs/cd-docs.md)           |
-| [cd-downloads.ps1](scripts/cd-downloads.ps1)         | Set the working directory to the user's downloads folder. [Read more...](docs/cd-downloads.md)      |
-| [cd-dropbox.ps1](scripts/cd-dropbox.ps1)             | Set the working directory to the user's Dropbox folder. [Read more...](docs/cd-dropbox.md)          |
-| [cd-home.ps1](scripts/cd-home.ps1)                   | Set the working directory to the user's home folder. [Read more...](docs/cd-home.md)                |
+| [cd-autostart.ps1](scripts/cd-autostart.ps1)         | Set the working directory to the user's autostart folder. [Read more »](docs/cd-autostart.md)      |
+| [cd-desktop.ps1](scripts/cd-desktop.ps1)             | Set the working directory to the user's desktop folder. [More »](docs/cd-desktop.md)          |
+| [cd-docs.ps1](scripts/cd-docs.ps1)                   | Set the working directory to the user's documents folder. [More »](docs/cd-docs.md)           |
+| [cd-downloads.ps1](scripts/cd-downloads.ps1)         | Set the working directory to the user's downloads folder. [More »](docs/cd-downloads.md)      |
+| [cd-dropbox.ps1](scripts/cd-dropbox.ps1)             | Set the working directory to the user's Dropbox folder. [More »](docs/cd-dropbox.md)          |
+| [cd-home.ps1](scripts/cd-home.ps1)                   | Set the working directory to the user's home folder. [More »](docs/cd-home.md)                |
 | [cd-music.ps1](scripts/cd-music.ps1)                 | Set the working directory to the user's music folder. [Read more...](docs/cd-music.md)              |  
 | [cd-onedrive.ps1](scripts/cd-onedrive.ps1)           | Set the working directory to the user's OneDrive folder. [Read more...](docs/cd-onedrive.md)        |
 | [cd-pics.ps1](scripts/cd-pics.ps1)                   | Set the working directory to the user's pictures folder. [Read more...](docs/cd-pics.md)            |
@@ -226,12 +226,12 @@ Mega Collection of PowerShell Scripts
 | Script                                                 | Description                                                                                              |
 | ------------------------------------------------------ | -------------------------------------------------------------------------------------------------------- |
 | [convert-csv2txt.ps1](scripts/convert-csv2txt.ps1)     | Converts a .CSV file to a text file. [Read more »](docs/convert-csv2txt.md)                              |
-| [convert-mysql2csv.ps1](scripts/convert-mysql2csv.ps1) | Converts a MySQL database table to a .CSV file. [Read more »](docs/convert-mysql2csv.md)                 |
-| [convert-ps2bat.ps1](scripts/convert-ps2bat.ps1)       | Converts a PowerShell script to a Batch script. [Read more »](docs/convert-ps2bat.md)                    |
-| [convert-ps2md.ps1](scripts/convert-ps2md.ps1)         | Converts the comment-based help of a PowerShell script to Markdown. [Read more »](docs/convert-ps2md.md) |
-| [convert-sql2csv.ps1](scripts/convert-sql2csv.ps1)     | Converts a SQL database table to a .CSV file. [Read more »](docs/convert-sql2csv.md)                     |
-| [convert-txt2wav.ps1](scripts/convert-txt2wav.ps1)     | Converts text to a .WAV audio file. [Read more »](docs/convert-txt2wav.md)                               |
-| [export-to-manuals.ps1](scripts/export-to-manuals.ps1) | Exports all scripts as manuals. [Read more »](docs/export-to-manuals.md)                                 |
+| [convert-mysql2csv.ps1](scripts/convert-mysql2csv.ps1) | Converts a MySQL database table to a .CSV file. [More »](docs/convert-mysql2csv.md)                 |
+| [convert-ps2bat.ps1](scripts/convert-ps2bat.ps1)       | Converts a PowerShell script to a Batch script. [More »](docs/convert-ps2bat.md)                    |
+| [convert-ps2md.ps1](scripts/convert-ps2md.ps1)         | Converts the comment-based help of a PowerShell script to Markdown. [More »](docs/convert-ps2md.md) |
+| [convert-sql2csv.ps1](scripts/convert-sql2csv.ps1)     | Converts a SQL database table to a .CSV file. [More »](docs/convert-sql2csv.md)                     |
+| [convert-txt2wav.ps1](scripts/convert-txt2wav.ps1)     | Converts text to a .WAV audio file. [More »](docs/convert-txt2wav.md)                               |
+| [export-to-manuals.ps1](scripts/export-to-manuals.ps1) | Exports all scripts as manuals. [More »](docs/export-to-manuals.md)                                 |
 
 
 📝 Scripts for Git
@@ -271,30 +271,30 @@ Mega Collection of PowerShell Scripts
 
 | Script                                                 | Description                                                                                            |
 | ------------------------------------------------------ | ------------------------------------------------------------------------------------------------------ |
-| [daily-tasks.sh](scripts/daily-tasks.sh)               | Execute PowerShell scripts automatically as daily tasks (Linux only). [Read more...](docs/daily-tasks.sh.md) |
-| [introduce-powershell.ps1](scripts/introduce-powershell.ps1) | Introduces PowerShell to new users. [Read more...](docs/introduce-powershell.md)                 |
-| [list-aliases.ps1](scripts/list-aliases.ps1)           | Lists all PowerShell aliases. [Read more...](docs/list-aliases.md)                                     |
-| [list-automatic-variables.ps1](scripts/list-automatic-variables.ps1) | Lists the automatic variables of PowerShell. [Read more...](docs/list-automatic-variables.md)|
-| [list-cheat-sheet.ps1](scripts/list-cheat-sheet.ps1)   | Lists the PowerShell cheat sheet. [Read more...](docs/list-cheat-sheet.md)                             |
-| [list-cmdlets.ps1](scripts/list-cmdlets.ps1)           | Lists the PowerShell cmdlets. [Read more...](docs/list-cmdlets.md)                                     |
-| [list-console-colors.ps1](scripts/list-console-colors.ps1) | Lists all console colors. [Read more...](docs/list-console-colors.md)                              |
-| [list-modules.ps1](scripts/list-modules.ps1)           | Lists the PowerShell modules. [Read more...](docs/list-modules.md)                                     |
-| [list-profiles.ps1](scripts/list-profiles.ps1)         | Lists your PowerShell profiles. [Read more...](docs/list-profiles.md)                                  |
-| [list-scripts.ps1](scripts/list-scripts.ps1)           | Lists all PowerShell scripts in this repository. [Read more...](docs/list-scripts.md)                  |
-| [new-script.ps1](scripts/new-script.ps1)               | Creates a new PowerShell script. [Read more...](docs/new-script.md)                                    |
-| [set-profile.ps1](scripts/set-profile.ps1)             | Updates your PowerShell user profile. [Read more...](docs/set-profile.md)                              |
+| [daily-tasks.sh](scripts/daily-tasks.sh)               | Execute PowerShell scripts automatically as daily tasks (Linux only). [Read more »](docs/daily-tasks.sh.md) |
+| [introduce-powershell.ps1](scripts/introduce-powershell.ps1) | Introduces PowerShell to new users. [More »](docs/introduce-powershell.md)                 |
+| [list-aliases.ps1](scripts/list-aliases.ps1)           | Lists all PowerShell aliases. [More »](docs/list-aliases.md)                                     |
+| [list-automatic-variables.ps1](scripts/list-automatic-variables.ps1) | Lists the automatic variables of PowerShell. [More »](docs/list-automatic-variables.md)|
+| [list-cheat-sheet.ps1](scripts/list-cheat-sheet.ps1)   | Lists the PowerShell cheat sheet. [More »](docs/list-cheat-sheet.md)                             |
+| [list-cmdlets.ps1](scripts/list-cmdlets.ps1)           | Lists the PowerShell cmdlets. [More »](docs/list-cmdlets.md)                                     |
+| [list-console-colors.ps1](scripts/list-console-colors.ps1) | Lists all console colors. [More »](docs/list-console-colors.md)                              |
+| [list-modules.ps1](scripts/list-modules.ps1)           | Lists the PowerShell modules. [More »](docs/list-modules.md)                                     |
+| [list-profiles.ps1](scripts/list-profiles.ps1)         | Lists your PowerShell profiles. [More »](docs/list-profiles.md)                                  |
+| [list-scripts.ps1](scripts/list-scripts.ps1)           | Lists all PowerShell scripts in this repository. [More »](docs/list-scripts.md)                  |
+| [new-script.ps1](scripts/new-script.ps1)               | Creates a new PowerShell script. [More »](docs/new-script.md)                                    |
+| [set-profile.ps1](scripts/set-profile.ps1)             | Updates your PowerShell user profile. [More »](docs/set-profile.md)                              |
 
 🛒 Various PowerShell Scripts 
 ------------------------------
 
 | Script                                                                                    | Description                                                                                                                     |
 |-------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------|
-| [add-memo.ps1](scripts/add-memo.ps1)                                                      | Adds the given memo text to $HOME/Memos.csv.                        [Read more...](docs/add-memo.md)                            |
-| [check-ipv4-address.ps1](scripts/check-ipv4-address.ps1)                                  | Checks the given IPv4 address for validity.                       [Read more...](docs/check-ipv4-address.md)                    |
-| [check-ipv6-address.ps1](scripts/check-ipv6-address.ps1)                                  | Checks the given IPv6 address for validity.                       [Read more...](docs/check-ipv6-address.md)                    |
-| [check-mac-address.ps1](scripts/check-mac-address.ps1)                                    | Checks the given MAC address for validity.                          [Read more...](docs/check-mac-address.md)                   |
-| [check-subnet-mask.ps1](scripts/check-subnet-mask.ps1)                                    | Checks the given subnet mask for validity.                          [Read more...](docs/check-subnet-mask.md)                   |
-| [check-weather.ps1](scripts/check-weather.ps1)                                            | Checks the current weather for critical values.                      [Read more...](docs/check-weather.md)                      |
+| [add-memo.ps1](scripts/add-memo.ps1)                                                      | Adds the given memo text to $HOME/Memos.csv. [Read more »](docs/add-memo.md)                            |
+| [check-ipv4-address.ps1](scripts/check-ipv4-address.ps1)                                  | Checks the given IPv4 address for validity. [More »](docs/check-ipv4-address.md)                    |
+| [check-ipv6-address.ps1](scripts/check-ipv6-address.ps1)                                  | Checks the given IPv6 address for validity. [More »](docs/check-ipv6-address.md)                    |
+| [check-mac-address.ps1](scripts/check-mac-address.ps1)                                    | Checks the given MAC address for validity. [More »](docs/check-mac-address.md)                   |
+| [check-subnet-mask.ps1](scripts/check-subnet-mask.ps1)                                    | Checks the given subnet mask for validity. [More »](docs/check-subnet-mask.md)                   |
+| [check-weather.ps1](scripts/check-weather.ps1)                                            | Checks the current weather for critical values. [More »](docs/check-weather.md)                      |
 | [display-time.ps1](scripts/display-time.ps1)                                              | Displays the current time for 10 seconds by default.                 [Read more...](docs/display-time.md)                       |
 | [list-anagrams.ps1](scripts/list-anagrams.ps1)                                            | Lists all anagrams of the given word.                                [Read more...](docs/list-anagrams.md)                      |
 | [list-city-weather.ps1](scripts/list-city-weather.ps1)                                    | Lists the current weather of cities worldwide (west to east).       [Read more...](docs/list-city-weather.md)                   |
@@ -352,10 +352,10 @@ Mega Collection of PowerShell Scripts
 | [write-quote.ps1](scripts/write-quote.ps1)                                                | Writes a random quote.                                               [Read more...](docs/write-quote.md)                        |
 | [write-red.ps1](scripts/write-red.ps1)                                                    | Writes the given text in a red foreground color.                     [Read more...](docs/write-red.md)                          |
 | [write-rot13.ps1](scripts/write-rot13.ps1)                                                | Encodes or decodes the given text with ROT13.                        [Read more...](docs/write-rot13.md)                        |
-| [write-typewriter.ps1](scripts/write-typewriter.ps1)                                      | Writes the given text with the typewriter effect.                    [Read more...](docs/write-typewriter.md)                   |
-| [write-uppercase.ps1](scripts/write-uppercase.ps1)                                        | Writes the given text in uppercase letters.                          [Read more...](docs/write-uppercase.md)                    |
-| [write-vertical.ps1](scripts/write-vertical.ps1)                                          | Writes the given text in vertical direction.                         [Read more...](docs/write-vertical.md)                     |
-| [show-notification-motivation-quote.ps1](scripts/show-notification-motivation-quote.ps1)  | Show notification with random cat picture and motivation quote.      [Read more...](docs/show-notification-motivation-quote.md) |
+| [write-typewriter.ps1](scripts/write-typewriter.ps1)                                      | Writes the given text with the typewriter effect. [More »](docs/write-typewriter.md)                   |
+| [write-uppercase.ps1](scripts/write-uppercase.ps1)                                        | Writes the given text in uppercase letters. [More »](docs/write-uppercase.md)                    |
+| [write-vertical.ps1](scripts/write-vertical.ps1)                                          | Writes the given text in vertical direction. [More »](docs/write-vertical.md)                     |
+| [show-notification-motivation-quote.ps1](scripts/show-notification-motivation-quote.ps1)  | Show notification with random cat picture and motivation quote. [More »](docs/show-notification-motivation-quote.md) |
 
 📧 Feedback
 ------------
