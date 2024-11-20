@@ -94,13 +94,13 @@
 4. **More recommendations by NSA and cyber security centers in the U.S. (CISA), New Zealand (NZ NCSC), and the U.K. (NCSC-UK) can be found here:** https://media.defense.gov/2022/Jun/22/2003021689/-1/-1/1/CSI_KEEPING_POWERSHELL_SECURITY_MEASURES_TO_USE_AND_EMBRACE_20220622.PDF
  </details>
 
- <details><summary>How to get the best PowerShell experience?</summary>
+ <details><summary>How to get the ultimate PowerShell experience?</summary>
 
-1. **Install *PowerShell* on all your Linux/Mac OS/Windows machines and configure it as default shell.**
-2. **For remote control install *SSH client & server* on all your Linux/Mac OS/Windows machines.**
-3. **Install the free *Windows Terminal* on Windows with 50% transparency, font 'Fira Code' and no PowerShell banner message.**
-4. **To edit PowerShell scripts install the free *Visual Studio Code* with plugin 'PowerShell'.**
-5. **Install the *Mega Collection of PowerShell scripts* and set the PATH environment variable to it.**
+1. **Install *PowerShell* (free) on all your Linux/Mac OS/Windows machines and configure it as your default shell.**
+2. **Install an *SSH client & server* (free) on all your Linux/Mac OS/Windows machines for remote control via SSH.**
+3. **Install *Windows Terminal* (free) on Windows with 50% transparency, font 'Fira Code' and no PowerShell banner message.**
+4. **Install *Visual Studio Code* (free) with plugin 'PowerShell' to edit PowerShell scripts.**
+5. **Install this *Mega Collection of PowerShell scripts* and set the PATH environment variable to it.**
 6. **Use an own PowerShell profile, e.g. execute: './update-powershell-profile.ps1'**
 </details>
 
