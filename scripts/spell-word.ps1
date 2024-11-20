@@ -4,9 +4,10 @@
 .DESCRIPTION
 	This PowerShell script spells the given word by text-to-speech (TTS).
 .PARAMETER word
-        Specifies the word to spell
+        Specifies the word to spell (queried by default)
 .EXAMPLE
-	PS> ./spell-word
+	PS> ./spell-word.ps1 Yoda
+	(listen)
 .LINK
 	https://github.com/fleschutz/PowerShell
 .NOTES
@@ -16,15 +17,14 @@
 param([string]$word = "")
 
 try {
-	if ($word -eq "" ) { $word = read-host "Enter word to spell" }
+	if ($word -eq "" ) { $word = Read-Host "Enter the word to spell" }
 
-	[char[]]$ArrayOfChars = $word.ToUpper()
-	$Reply = ""
-	foreach($Char in $ArrayOfChars) {
-		$Reply += $Char
-		$Reply += " "
+	[char[]]$array = $word.ToUpper()
+	$reply = ""
+	foreach($char in $array) {
+		$reply += $char + ", "
 	}
-	& "$PSScriptRoot/speak-english.ps1" "$Reply"
+	& "$PSScriptRoot/speak-english.ps1" $reply
 	exit 0 # success
 } catch {
 	"⚠️ Error in line $($_.InvocationInfo.ScriptLineNumber): $($Error[0])"
