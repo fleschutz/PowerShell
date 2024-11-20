@@ -32,6 +32,7 @@ Mega Collection of PowerShell Scripts
 | [speak-spanish.ps1](scripts/speak-spanish.ps1)       | Speaks text with a Spanish text-to-speech voice. [More »](docs/speak-spanish.md)          |
 | [speak-test.ps1](scripts/speak-test.ps1)             | Performs a speak test by text-to-speech. [More »](docs/speak-test.md)                     |
 | [speak-text.ps1](scripts/speak-text.ps1)             | Speaks the given text by text-to-speech. [More »](docs/speak-text.md)                     |
+| [spell-word.ps1](scripts/spell-word.ps1)             | Spells the given word by text-to-speech. [More »](docs/spell-word.md)                     |
 | [tell-joke.ps1](scripts/tell-joke.ps1)               | Tells a random joke by text-to-speech. [More »](docs/tell-joke.md)                        |
 | [tell-quote.ps1](scripts/tell-quote.ps1)             | Tells a random quote by text-to-speech. [More »](docs/tell-quote.md)                      |
 | [turn-volume-down.ps1](scripts/turn-volume-down.ps1) | Turns the audio volume down. [More »](docs/turn-volume-down.md)                           |
