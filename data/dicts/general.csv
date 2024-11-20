@@ -340,17 +340,18 @@ AOSTH,Adventures of Sonic the Hedgehog
 AOTS,"Attack of the Show!"
 AOU,American Ornithologists' Union
 AP,"Advanced Placement,Air Publication,Andhra Pradesh (Indian state code),Armed Forces Pacific (postal symbol),Associated Press,Auto Pilot"
+APAC,Asia Pacific
 APB,All Points Bulletin (police jargon)
-APC,Armoured Personnel Carrier,Armour Piercing Capped (ammunition)
-APCNR,Armour-Piercing,Composite Non-Rigid (ammunition)
-APCR,Armour-Piercing,Composite Rigid (ammunition)
-APDS,Armour-Piercing,Discarding-Sabot (ammunition)
+APC,"Armoured Personnel Carrier, Armour Piercing Capped (ammunition)"
+APCNR,"Armour-Piercing,Composite Non-Rigid (ammunition)"
+APCR,"Armour-Piercing,Composite Rigid (ammunition)"
+APDS,"Armour-Piercing,Discarding-Sabot (ammunition)"
 APEC,Asia Pacific Economic Cooperation
 APEDS,AMSAA Performance Estimates Data System
 APEX,Applied Physics Express
-APFSDS,Armour-Piercing,Fin-Stabilised,Discarding Sabot (ammunition)
+APFSDS,"Armour-Piercing,Fin-Stabilised,Discarding Sabot (ammunition)"
 APHA,American Public Health Association
-APHE,Armour-Piercing,High Explosive (ammunition)
+APHE,"Armour-Piercing, High Explosive (ammunition)"
 APHIS,Animal and Plant Health Inspection Service
 APL,"Acute Promyeloid Leukaemia,Anti-Personnel Landmine,Applied Physics Laboratory (Johns Hopkins University)"
 APOD,Aerial Port (Airport) Of Debarkation
@@ -370,13 +371,13 @@ ARC,Arc-second Raster Chart,Appalachian Regional Commission
 ARCA,Automobile Racing Club of America
 ARCENT,United States Army Central Command
 ARDA,Advanced Research and Development Activity (became DTO 2006)
-ARE,UK Admiralty Research Establishment (-1991),United Arab Emirates (ISO 3166 trigram)
+ARE,"UK Admiralty Research Establishment (-1991),United Arab Emirates (ISO 3166 trigram)"
 ARF,ASEAN Regional Forum
 ARG,Argentina (ISO 3166 trigram)
 ARH,Armed Reconnaissance Helicopter
-ARI,Acute Respiratory Infection,U.S. Army Research Institute for the Behavioral and Social Sciences
-ARL,UK Admiralty Research Laboratory (1921-1977),U.S. Army Research Laboratory,UIUC Aviation Research Laboratory
-ARM,Anti-Radiation Missile,Adjustable-rate mortgage,Armenia (ISO 3166 trigram)
+ARI,"Acute Respiratory Infection,U.S. Army Research Institute for the Behavioral and Social Sciences"
+ARL,"UK Admiralty Research Laboratory (1921-1977),U.S. Army Research Laboratory,UIUC Aviation Research Laboratory"
+ARM,"Anti-Radiation Missile,Adjustable-rate mortgage,Armenia (ISO 3166 trigram)"
 ARNet,Acquisition Reform Network
 ARP,Applied Research Programme
 ARPA,Advanced Research Projects Agency
@@ -385,7 +386,7 @@ ARRF,Allied Rapid Reaction Force
 ARRL,American Radio Relay League
 ARSC,Arctic Region Supercomputing Center
 ARSPACE,U.S. Army Space Command
-ART,Adaptive Resonance Theory,Anti-Retroviral Therapy
+ART,"Adaptive Resonance Theory, Anti-Retroviral Therapy"
 ARTCC,Air Route Traffic Control Center
 ARWG,Army Research Working Group
 AS,ActionScript
