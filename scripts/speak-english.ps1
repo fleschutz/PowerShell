@@ -22,11 +22,10 @@ try {
 	foreach ($voice in $TTS.GetVoices()) {
 		if ($voice.GetDescription() -like "*- English*") {
 			$TTS.Voice = $voice
-			[void]$TTS.Speak($text)
-			exit 0 # success
 		}
 	}
-	throw "No English text-to-speech voice found - please install one."
+	[void]$TTS.Speak($text)
+	exit 0 # success
 } catch {
 	"⚠️ Error in line $($_.InvocationInfo.ScriptLineNumber): $($Error[0])"
 	exit 1
