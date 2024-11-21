@@ -1,32 +1,40 @@
 ﻿<#
 .SYNOPSIS
-	Plays audio files (MP3 and WAV)
+	Plays audio files
 .DESCRIPTION
-	This PowerShell script plays the given audio files (supporting MP3 and WAV format).
-.PARAMETER FilePattern
-	Specifies the file pattern
+	This PowerShell script plays the given audio files (supporting .MP3 and .WAV format).
+.PARAMETER filePattern
+	Specifies the file pattern ('*' by default)
 .EXAMPLE
-	PS> ./play-files *.mp3
+	PS> ./play-files.ps1 *.mp3
+	   ▶️ Playing '01 Sandy beaches - strong waves.mp3' (02:54) ...
+	   ...
 .LINK
 	https://github.com/fleschutz/PowerShell
 .NOTES
 	Author: Markus Fleschutz | License: CC0
 #>
 
-param([string]$FilePattern = "*")
+param([string]$filePattern = "*")
 
 try {
-	$Files = (get-childItem -path "$FilePattern" -attributes !Directory)
-	"Playing $($Files.Count) files ..."
-	foreach ($File in $Files) {
-		if ("$File" -like "*.mp3") {
-			& "$PSScriptRoot/play-mp3.ps1" "$File"
+	$stopWatch = [system.diagnostics.stopwatch]::startNew()
+
+	$files = (Get-ChildItem -path "$filePattern" -attributes !Directory)
+	[int]$count = 0
+	foreach ($file in $files) {
+		if ("$file" -like "*.mp3") {
+			& "$PSScriptRoot/play-mp3.ps1" "$file"
+			$count++
 		} elseif ("$File" -like "*.wav") {
-			& "$PSScriptRoot/play-mp3.ps1" "$File"
+			& "$PSScriptRoot/play-mp3.ps1" "$file"
+			$count++
 		} else {
-			"Skipping $File ..."
+			"Skipping $file (no audio file)..."
 		}
 	}
+        [int]$elapsed = $stopWatch.Elapsed.TotalSeconds
+	"✅ Played $count audio files for $($elapsed)s."
 	exit 0 # success
 } catch {
 	"⚠️ Error in line $($_.InvocationInfo.ScriptLineNumber): $($Error[0])"
