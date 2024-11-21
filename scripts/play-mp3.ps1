@@ -7,6 +7,7 @@
 	Specifies the file path to the .MP3 file
 .EXAMPLE
 	PS> ./play-mp3.ps1 C:\thunder.mp3
+	   ▶️ Playing 'thunder.mp3' (00:03) ...
 .LINK
 	https://github.com/fleschutz/PowerShell
 .NOTES
@@ -33,16 +34,17 @@ try {
 	[int]$minutes = $milliseconds / 60000
 	[int]$seconds = ($milliseconds / 1000) % 60
 	Write-Host "   ▶️" -noNewline -foregroundColor green
-	Write-Host "Playing $filename for $($minutes.ToString('00')):$($seconds.ToString('00'))s..."
+	Write-Host "Playing '$filename' ($($minutes.ToString('00')):$($seconds.ToString('00'))) ..."
 
 	$previousTitle = $host.ui.RawUI.WindowTitle 
 	$host.ui.RawUI.WindowTitle = "▶️ $filename"
+
 	$mediaPlayer.Volume = 1
 	$mediaPlayer.play()
 	Start-Sleep -milliseconds $milliseconds
-
 	$mediaPlayer.stop()
 	$mediaPlayer.close()
+
 	$host.ui.RawUI.WindowTitle = $previousTitle
 	exit 0 # success
 } catch {
