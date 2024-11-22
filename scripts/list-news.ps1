@@ -22,22 +22,21 @@
 	Author: Markus Fleschutz | License: CC0
 #>
 
-param([string]$RSS_URL = "https://news.yahoo.com/rss/world", [int]$maxLines = 24, [int]$speed = 10)
+param([string]$RSS_URL = "https://news.yahoo.com/rss/world", [int]$maxLines = 24, [int]$speed = 5)
 
 try {
 	[xml]$content = (Invoke-WebRequest -URI $RSS_URL -useBasicParsing).Content
-
 	$title = $content.rss.channel.title
 	$URL = $content.rss.channel.link
-	" "
-	"   UTC   $title - $URL"
-	"   ---   -----------------------------------------------------------------------"
-
+	Write-Host "`nUTC     HEADLINES             (by: " -noNewline
+        Write-Host $URL -foregroundColor blue -noNewline
+        Write-Host ")"
+        Write-Host "---     ---------"
 	[int]$count = 1
 	foreach ($item in $content.rss.channel.item) {
-		$title = $item.title
+		$title = $item.title -replace "â","'"
 		$time = $item.pubDate.Substring(11, 5)
-		& "$PSScriptRoot/write-typewriter.ps1" "❇️ $time $title" $speed
+		& "$PSScriptRoot/write-typewriter.ps1" "$time • $title" $speed
 		if ($count++ -eq $maxLines) { break }
 	}
 	exit 0 # success
