@@ -12,5 +12,7 @@
 	Author: Markus Fleschutz | License: CC0
 #>
 
-& "$PSScriptRoot/play-mp3.ps1" "$PSScriptRoot/../data/sounds/Big Ben.mp3"
-exit 0 # success
+do {
+	& "$PSScriptRoot/play-mp3.ps1" "$PSScriptRoot/../data/sounds/Big Ben.mp3"
+} while ($true)
+
