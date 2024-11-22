@@ -58,6 +58,7 @@ function GetDescription([string]$text) {
 	"Patchy rain possible"  	{ return "💧 patchy rain possible" }
 	"Patchy rain nearby"		{ return "💧 patchy rain nearby" }
 	"Patchy sleet nearby"		{ return "❄️ patchy sleet nearby" }
+	"Patchy snow nearby"		{ return "❄️ patchy snow nearby" }
 	"Patchy snow possible"  	{ return "❄️ patchy snow possible" }
 	"Sunny"				{ return "☀️ sunny" }
 	"Thundery outbreaks possible"	{ return "⚡️thundery outbreaks possible" }
