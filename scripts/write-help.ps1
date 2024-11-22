@@ -28,7 +28,7 @@ try {
 	White "████▄▄  ▄█▄▄  ▄█▄▄ █▀ ▀▀▀ ▀▄▀▄█▄▀████`n"
 	White "████▀▄▄█▀█▄██ ▀ ▄▄▀ █▄█▀ ▀ ▄▀▀█▀█████ Video tutorials: "; Blue "https://www.youtube.com/results?search_query=PowerShell`n"
 	White "█████ ▄▄█▄▄▀▄ ▀▄▀ ▄▄  ▀ ▀▀▀ ▀▄▄█▀████`n"
-	White "████▄ ▀ ▄ ▄▄█  █▀██▄ ██▀▄█▄▄▀▄▄▀█████ Execute: 'Get-Help <NAME>' to display information about <NAME>`n"
+	White "████▄ ▀ ▄ ▄▄█  █▀██▄ ██▀▄█▄▄▀▄▄▀█████ Type 'Get-Help <NAME>' to display information about <NAME>`n"
 	White "████  ████▄▄  ▄█▄▄▄██  ▀ ▀▀▀▀▄ █▀████`n"
 	White "████ ███▄ ▄▀▀██ ▄█ ▄▄▄█▀ ▄▄ ██▄▀█████ FAQ's: "; Blue "https://github.com/fleschutz/PowerShell/blob/main/docs/FAQ.md`n"
 	White "████▄█▄███▄▄▀▄▄▄▀ ▄▄ ▄▀▄ ▄▄▄ ▀   ████`n"
