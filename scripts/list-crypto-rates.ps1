@@ -6,7 +6,7 @@
 .EXAMPLE
 	PS> ./list-crypto-rates.ps1
 
-	Cryptocurrency               USD                    EUR                    RUB                    CNY
+	CRYPTOCURRENCY               USD                    EUR                    RUB                    CNY
 	--------------               ---                    ---                    ---                    ---
 	1 Bitcoin (BTC) =            29054.01               26552.23               2786627.84             172521.27
 	...
@@ -17,8 +17,8 @@
 #>
 
 function ListCryptoRate { param([string]$Symbol, [string]$Name)
-	$Rates = (Invoke-WebRequest -URI "https://min-api.cryptocompare.com/data/price?fsym=$Symbol&tsyms=USD,EUR,RUB,CNY" -userAgent "curl" -useBasicParsing).Content | ConvertFrom-Json
-	New-Object PSObject -property @{ 'Cryptocurrency' = "1 $Name ($Symbol) ="; 'USD' = "$($Rates.USD)"; 'EUR' = "$($Rates.EUR)"; 'RUB' = "$($Rates.RUB)"; 'CNY' = "$($Rates.CNY)" }
+	$rates = (Invoke-WebRequest -URI "https://min-api.cryptocompare.com/data/price?fsym=$Symbol&tsyms=USD,EUR,RUB,CNY" -userAgent "curl" -useBasicParsing).Content | ConvertFrom-Json
+	New-Object PSObject -property @{ 'CRYPTOCURRENCY' = "1 $Name ($Symbol) ="; 'USD' = "$($rates.USD)"; 'EUR' = "$($rates.EUR)"; 'RUB' = "$($rates.RUB)"; 'CNY' = "$($rates.CNY)" }
 }
 
 function ListCryptoRates { 
@@ -48,8 +48,8 @@ function ListCryptoRates {
 }
 
 try {
-	ListCryptoRates | Format-Table -property @{e='Cryptocurrency';width=28},USD,EUR,RUB,CNY
-	Write-Host "(by cryptocompare.com, Crypto is volatile and unregulated. Capital at risk. Taxes may apply)"
+	ListCryptoRates | Format-Table -property @{e='CRYPTOCURRENCY';width=28},USD,EUR,RUB,CNY
+	Write-Host "(by cryptocompare.com • Crypto is volatile and unregulated • Capital at risk • Taxes may apply)"
 	exit 0 # success
 } catch {
 	"⚠️ Error in line $($_.InvocationInfo.ScriptLineNumber): $($Error[0])"
