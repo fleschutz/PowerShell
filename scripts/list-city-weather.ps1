@@ -11,20 +11,20 @@
 	Author: Markus Fleschutz | License: CC0
 #>
 
-function ListCityWeather {
-	$Cities="Hawaii","Los Angeles","Mexico City","Dallas","Miami","New York","Rio de Janeiro","Paris","London","Berlin","Cape Town","Dubai","Mumbai","Singapore","Hong Kong","Perth","Peking","Tokyo","Sydney"
+param($cities = @("Hawaii","Los Angeles","Mexico City","Dallas","Miami","New York","Rio de Janeiro","Paris","London","Berlin","Cape Town","Dubai","Mumbai","Singapore","Hong Kong","Perth","Peking","Tokyo","Sydney"))
 
-	foreach($City in $Cities) {
+function ListCityWeather {
+	foreach($city in $cities) {
 		$Temp = (Invoke-WebRequest http://wttr.in/${City}?format="%t %c " -UserAgent "curl" -useBasicParsing).Content
 		$Rain = (Invoke-WebRequest http://wttr.in/${City}?format="%p %h" -UserAgent "curl" -useBasicParsing).Content
 		$Wind = (Invoke-WebRequest http://wttr.in/${City}?format="%w" -UserAgent "curl" -useBasicParsing).Content
 		$Sun = (Invoke-WebRequest http://wttr.in/${City}?format="%S → %s" -UserAgent "curl" -useBasicParsing).Content
-		New-Object PSObject -Property @{ City="$City"; Temp="$Temp"; Rain="$Rain"; Wind="$Wind"; Sun="$Sun" }
+		New-Object PSObject -Property @{ CITY="$city"; TEMP="$Temp"; RAIN="$Rain"; WIND="$Wind"; SUN="$Sun" }
 	}
 }
 
 try {
-	ListCityWeather | Format-Table -property @{e='City';width=17},@{e='Temp';width=13},@{e='Rain';width=15},@{e='Wind';width=12},@{e='Sun';width=20}
+	ListCityWeather | Format-Table -property @{e='CITY';width=17},@{e='TEMP';width=13},@{e='RAIN';width=15},@{e='WIND';width=12},@{e='SUN';width=20}
 	exit 0 # success
 } catch {
 	"⚠️ Error in line $($_.InvocationInfo.ScriptLineNumber): $($Error[0])"
