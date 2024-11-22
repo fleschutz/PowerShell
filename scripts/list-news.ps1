@@ -12,9 +12,9 @@
 .EXAMPLE
 	PS> ./list-news.ps1
   
-	   UTC   Yahoo News - Latest News & Headlines - https://www.yahoo.com/news/world
-	   ---   -----------------------------------------------------------------------
-	❇️ 09:15 Deadly Mediterranean wildfires kill more than 40
+	 UTC    HEADLINES         (by https://www.yahoo.com/news/world
+	 ---    ---------
+	09:15 • Deadly Mediterranean wildfires kill more than 40
 	...
 .LINK
 	https://github.com/fleschutz/PowerShell
@@ -28,10 +28,10 @@ try {
 	[xml]$content = (Invoke-WebRequest -URI $RSS_URL -useBasicParsing).Content
 	$title = $content.rss.channel.title
 	$URL = $content.rss.channel.link
-	Write-Host "`nUTC     HEADLINES             (by: " -noNewline
+	Write-Host "`n UTC    HEADLINES             (by: " -noNewline
         Write-Host $URL -foregroundColor blue -noNewline
         Write-Host ")"
-        Write-Host "---     ---------"
+        Write-Host " ---    ---------"
 	[int]$count = 1
 	foreach ($item in $content.rss.channel.item) {
 		$title = $item.title -replace "â","'"

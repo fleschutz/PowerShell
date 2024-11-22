@@ -31,7 +31,7 @@ function PrintLatestHeadlines([xml]$content, [string]$latestTimestamp, [string]$
 	foreach($item in $items) {
 		$pubDate = $item.pubDate
 		if ($pubDate -le $latestTimestamp) { continue }
-		$title = $item.title
+		$title = $item.title -replace "â","'"
 		$time = $pubDate.Substring(11, 5)
 		Write-Host "$time  $title$icon"
 		Start-Sleep -milliseconds 500
