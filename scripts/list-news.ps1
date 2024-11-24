@@ -28,7 +28,7 @@ try {
 	[xml]$content = (Invoke-WebRequest -URI $RSS_URL -useBasicParsing).Content
 	$title = $content.rss.channel.title
 	$URL = $content.rss.channel.link
-	Write-Host "`n UTC    HEADLINES             (by: " -noNewline
+	Write-Host "`n UTC    HEADLINES             (by " -noNewline
         Write-Host $URL -foregroundColor blue -noNewline
         Write-Host ")"
         Write-Host " ---    ---------"
