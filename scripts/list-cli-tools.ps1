@@ -6,9 +6,9 @@
 .EXAMPLE
 	PS> ./list-cli-tools.ps1
 
-	Tool Name      Version   Installation Path
-	---------      -------   -----------------
-	7z             23.01     /usr/bin/7z (38 bytes)
+	TOOL      VERSION           INSTALLATION PATH
+	----      -------           -----------------
+	arp       10.0.22621.4111   C:\Windows\system32\ARP.EXE (45K)
 	...
 .LINK
 	https://github.com/fleschutz/PowerShell
@@ -53,13 +53,13 @@ function ListTool([string]$Name, [string]$VersionArg) {
 		} else {
 			$Size = 0
 		}
-		New-Object PSObject -Property @{ 'Tool Name'=$Name; 'Version'=$Version; 'Installation Path'="$Path ($(Bytes2String $Size))" }
+		New-Object PSObject -Property @{ 'TOOL'=$Name; 'VERSION'=$Version; 'INSTALLATION PATH'="$Path ($(Bytes2String $Size))" }
 	} catch {
 		return
 	}
 }
 
-function ListTools {
+function List-CLI-Tools {
 	ListTool 7z		"-version"
 	ListTool ant		"-v"
 	ListTool apt		"--version"
@@ -331,7 +331,7 @@ function ListTools {
 }
  
 try {
-	ListTools | Format-Table -property @{e='Tool Name';width=15},@{e='Version';width=15},@{e='Installation Path';width=90}
+	List-CLI-Tools | Format-Table -property @{e='TOOL';width=15},@{e='VERSION';width=16},@{e='INSTALLATION PATH';width=90}
 	exit 0 # success
 } catch {
 	"⚠️ Error in line $($_.InvocationInfo.ScriptLineNumber): $($Error[0])"
