@@ -1,13 +1,13 @@
 ﻿<#
 .SYNOPSIS
-	Scans a directory tree for malware
+	Scans a folder for malware
 .DESCRIPTION
-	This PowerShell script scans a directory tree for malware. Requires the installation of ESET or Windows Defender.
+	This PowerShell script scans a folder for malware (including subfolders). Requires ESET Endpoint Security or Windows Defender.
 .PARAMETER path
 	Specifies the file path to the folder (default is working directory).
 .EXAMPLE
 	PS> ./scan-folder.ps1 C:\Windows
-	⏳ Scanning 📂C:\Windows with ESET Antivirus...
+	⏳ Scanning C:\Windows with ESET Endpoint Security...
 	...
 .LINK
 	https://github.com/fleschutz/PowerShell
@@ -24,22 +24,20 @@ try {
 	$path = Resolve-Path $path
 
 	if (Test-Path "C:\Program Files\ESET\ESET Security\ecls.exe" -pathType leaf) {
-
-		"⏳ Scanning 📂$path with ESET Antivirus..."
+		Write-Host "⏳ Scanning $path with ESET Endpoint Security..."
 		& "C:\Program Files\ESET\ESET Security\ecls.exe" $path
-		if ($lastExitCode -ne 0) { throw "ESET Antivirus failed with exit code $lastExitCode - POTENTIAL DANGER!!!" }
+		if ($lastExitCode -ne 0) { throw "ESET Endpoibnt Security exited with code $lastExitCode - POTENTIAL THREAT !!!" }
 
 	} elseif (Test-Path "C:\Program Files\Windows Defender\MpCmdRun.exe" -pathType leaf) {
-
-		"⏳ Scanning 📂$path with Windows Defender..."
+		Write-Host "⏳ Scanning $path with Windows Defender..."
 		& "C:\Program Files\Windows Defender\MpCmdRun.exe" -Scan -ScanType 2 -File $path
-		if ($lastExitCode -ne 0) { throw "Windows Defender failed with exit code $lastExitCode - POTENTIAL DANGER !!!" }
+		if ($lastExitCode -ne 0) { throw "Windows Defender exited with code $lastExitCode - POTENTIAL THREAT !!!" }
 
 	} else {
-		throw "Found no ESET or Windows Defender - please install one."
+		throw "No ESET Endpoint Security or Windows Defender available - please install one."
 	}
 	[int]$elapsed = $stopWatch.Elapsed.TotalSeconds
-	"✅ Scanned 📂$path in $($elapsed)s: No malware found."
+	Write-Host "✅ Scanned $path in $($elapsed)s: No malware found."
 	exit 0 # success
 } catch {
 	"⚠️ Error: $($Error[0])"
