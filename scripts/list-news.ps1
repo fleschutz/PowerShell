@@ -12,7 +12,7 @@
 .EXAMPLE
 	PS> ./list-news.ps1
   
-	 UTC    HEADLINES         (by https://www.yahoo.com/news/world
+	 UTC    HEADLINES         (source: https://www.yahoo.com/news/world)
 	 ---    ---------
 	09:15 • Deadly Mediterranean wildfires kill more than 40
 	...
@@ -28,7 +28,7 @@ try {
 	[xml]$content = (Invoke-WebRequest -URI $RSS_URL -useBasicParsing).Content
 	$title = $content.rss.channel.title
 	$URL = $content.rss.channel.link
-	Write-Host "`n UTC    HEADLINES             (by " -noNewline
+	Write-Host "`n UTC    HEADLINES             (source: " -noNewline
         Write-Host $URL -foregroundColor blue -noNewline
         Write-Host ")"
         Write-Host " ---    ---------"
