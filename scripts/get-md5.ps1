@@ -3,10 +3,11 @@
 	Prints the MD5 checksum of a file
 .DESCRIPTION
 	This PowerShell script calculates and prints the MD5 checksum of the given file.
-.PARAMETER file
-	Specifies the path to the file
+	NOTE: MD5 is no longer considered secure, use it for simple change validation only!
+.PARAMETER path
+	Specifies the file path to the file
 .EXAMPLE
-	PS> ./get-md5 C:\MyFile.txt
+	PS> ./get-md5.ps1 C:\MyFile.txt
 	✅ MD5 hash is 041E16F16E60AD250EB794AF0681BD4A
 .LINK
 	https://github.com/fleschutz/PowerShell
@@ -14,16 +15,17 @@
 	Author: Markus Fleschutz | License: CC0
 #>
 
-param([string]$file = "")
+param([string]$path = "")
 
 try {
-	if ($file -eq "" ) { $file = Read-Host "Enter path to file" }
+	if ($path -eq "" ) { $path = Read-Host "Enter the file path" }
+	if (-not(Test-Path $path -pathType leaf)) { throw "Invalid file path given: $path" }
 
-	$Result = Get-Filehash $file -algorithm MD5
+	$result = Get-FileHash -path $path -algorithm MD5
 
-	"✅ MD5 hash is $($Result.Hash)"
+	"✅ MD5 hash is $($result.Hash)"
 	exit 0 # success
 } catch {
-	"⚠️ Error in line $($_.InvocationInfo.ScriptLineNumber): $($Error[0])"
+	"⚠️ Error: $($Error[0])"
 	exit 1
 }

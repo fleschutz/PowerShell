@@ -1,12 +1,13 @@
 ﻿<#
 .SYNOPSIS
-	Prints the SHA1 checksum of a file
+	Prints the SHA1 hash of a file
 .DESCRIPTION
 	This PowerShell script calculates and prints the SHA1 checksum of the given file.
-.PARAMETER file
-	Specifies the path to the file
+	NOTE: SHA1 is no longer considered secure, use it for simple change validation only!
+.PARAMETER path
+	Specifies the local file path to the file
 .EXAMPLE
-	PS> ./get-sha1 C:\MyFile.txt
+	PS> ./get-sha1.ps1 C:\MyFile.txt
 	✅ SHA1 hash is 8105D424D350E308AED92BD9DDEB74A1B53C5D7C
 .LINK
 	https://github.com/fleschutz/PowerShell
@@ -14,16 +15,17 @@
 	Author: Markus Fleschutz | License: CC0
 #>
 
-param([string]$file = "")
+param([string]$path = "")
 
 try {
-	if ($file -eq "" ) { $file = Read-Host "Enter the filename" }
+	if ($path -eq "" ) { $path = Read-Host "Enter the file path" }
+	if (-not(Test-Path $path -pathType leaf)) { throw "Invalid file path given: $path" }
 
-	$Result = get-filehash $file -algorithm SHA1
+	$result = Get-FileHash -path $path -algorithm SHA1
 
-	"✅ SHA1 hash is $($Result.Hash)"
+	"✅ SHA1 hash is $($result.Hash)"
 	exit 0 # success
 } catch {
-	"⚠️ Error in line $($_.InvocationInfo.ScriptLineNumber): $($Error[0])"
+	"⚠️ Error: $($Error[0])"
 	exit 1
 }
