@@ -1,5 +1,5 @@
 FOLDERNAME,        CATEGORY,             URL,                                              BRANCH,  SHALLOW,
-base256,           "dev tool",           "git@github.com:fleschutz/base256.git",           main,    yes,
+base256U,          "dev tool",           "git@github.com:fleschutz/base256U.git",          main,    yes,
 bazel,             "build tool",         "https://github.com/bazelbuild/bazel",            master,  yes, 
 cmake,             "build tool",         "https://github.com/Kitware/CMake",               master,  yes,
 cmatrix,           "fun tool",           "https://github.com/abishekvashok/cmatrix",       master,  yes,
