@@ -6,14 +6,15 @@
 .PARAMETER macAddr
 	Specifies the host's MAC address (e.g. 11:22:33:44:55:66)
 .PARAMETER ipAddr
-	Specifies the host's IP address or subnet address (e.g. 192.168.0.255)
+	Specifies the subnet address (e.g. 192.168.178.255)
 .PARAMETER udpPort
 	Specifies the UDP port (9 by default)
 .PARAMETER numTimes
 	Specifies # of times to send the packet (3 by default)
 .EXAMPLE
-	PS> ./wake-up-host.ps1 11:22:33:44:55:66 192.168.100.100
-	✅ Magic packet sent to IP 192.168.100.100, UDP port 9, 3x - wait a minute until the computer fully boots up.
+	PS> ./wake-up-host.ps1 11:22:33:44:55:66 192.168.100.255
+	✅ Sent magic packet 3 times to subnet 192.168.100.255, UDP port 9.
+	   NOTE: wait a minute until the computer fully boots up.
 .LINK
 	https://github.com/fleschutz/PowerShell
 .NOTES
@@ -36,13 +37,14 @@ function Send-WOL { param([string]$macAddr, [string]$ipAddr, [int]$udpPort)
 
 try {
 	if ($macAddr -eq "" ) { $macAddr = Read-Host "Enter the host's MAC address, e.g. 11:22:33:44:55:66" }
-	if ($ipAddr -eq "" ) { $ipAddr = Read-Host "Enter the host's IP or subnet address, e.g. 192.168.0.255" }
+	if ($ipAddr -eq "" ) { $ipAddr = Read-Host "Enter the subnet address, e.g. 192.168.178.255" }
 
 	for ($i = 0; $i -lt $numTimes; $i++) {
 		Send-WOL $macAddr.Trim() $ipAddr.Trim() $udpPort
 		Start-Sleep -milliseconds 100	
 	}
-	"✅ Magic packet sent to IP $ipAddr, UDP port $udpPort, $($numTimes)x - wait a minute until the computer fully boots up."
+	"✅ Sent magic packet $numTimes times to subnet $ipAddr, UDP port $($udpPort)."
+	"   NOTE: wait a minute until the computer fully boots up."
 	exit 0 # success
 } catch {
 	"⚠️ Error in line $($_.InvocationInfo.ScriptLineNumber): $($Error[0])"
