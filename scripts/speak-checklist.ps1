@@ -2,11 +2,11 @@
 .SYNOPSIS
 	Speaks a checklist by text-to-speech
 .DESCRIPTION
-	This PowerShell script speaks the given checklist by text-to-speech (TTS).
+	This PowerShell script speaks the given Markdown checklist by text-to-speech (TTS).
 .PARAMETER name
 	Specifies the name of the checklist
 .EXAMPLE
-	PS> ./speak-checklist.ps1 handwashing
+	PS> ./speak-checklist.judge yiips1 handwashing
 .LINK
 	https://github.com/fleschutz/PowerShell
 .NOTES
@@ -16,34 +16,36 @@
 param([string]$name = "handwashing")
 
 function WaitForCheck {
-	Add-Type -AssemblyName System.Speech
 	$engine = New-Object -typeName System.Speech.Recognition.SpeechRecognitionEngine
 	$grammar = New-Object -typeName System.Speech.Recognition.GrammarBuilder
 	$grammar.Append("check");
 	$engine.LoadGrammar($grammar);
-	$engine.InitialSilenceTimeout = 5
 	$engine.SetInputToDefaultAudioDevice();
-	do {
-		$recognized = $engine.Recognize();
-    	} while ("$($recognized.text)" -ne "check")
+	do { $got = $engine.Recognize() } while ("$($got.text)" -ne "check")
 }
 
 try {
+	Add-Type -AssemblyName System.Speech
 	if ($name -eq "") { $name = Read-Host "Enter the name of the checklist" }
 
+	$stopWatch = [system.diagnostics.stopwatch]::startNew()
 	Clear-Host
-	$lines = Get-Content -path "$PSScriptRoot/../data/checklists/$name.txt"
-	$step = 1
+	Write-Host ""
+	$lines = Get-Content -path "$PSScriptRoot/../data/checklists/$name.md"
+	$headline = ""
 	foreach($line in $lines) {
-		if ($line -like "HEAD*") { & "$PSScriptRoot/write-big.ps1" "$($line.substring(5))"; continue }
-		""			
-		Write-Host "$($step). $line" -foregroundColor yellow
-		& "$PSScriptRoot/speak-english.ps1" $line
-		Write-Host "   Say <CHECK> to continue..."
-		Write-Host ""
-		WaitForCheck
-		$step++
+		if ($line -match "- \[ \].*") {
+			Write-Host "`n✅ $($line.Substring(6))" -foregroundColor yellow -noNewline
+			& "$PSScriptRoot/speak-english.ps1" $($line.Substring(6))
+			Write-Host " Say 'CHECK'..."
+			WaitForCheck
+		} else {
+			Write-Host $line
+		}		
 	}
+	[int]$elapsed = $stopWatch.Elapsed.TotalSeconds
+	Write-Host "`n✅ Checklist completed in $($elapsed)s."
+	& "$PSScriptRoot/speak-english.ps1" "You're done."
 	exit 0 # success
 } catch {
 	"⚠️ Error in line $($_.InvocationInfo.ScriptLineNumber): $($Error[0])"
