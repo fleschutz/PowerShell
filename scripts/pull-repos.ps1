@@ -9,7 +9,7 @@
 	PS> ./pull-repos C:\MyRepos
 	⏳ (1) Searching for Git executable...       git version 2.43.0
 	⏳ (2) Checking parent folder...             33 subfolders
-	⏳ (3/35) Pulling into 📂base256unicode...
+	⏳ (3/35) Pulling into 📂base256U...
 	...
 .LINK
 	https://github.com/fleschutz/PowerShell
@@ -48,10 +48,10 @@ try {
 	}
 	[int]$elapsed = $stopWatch.Elapsed.TotalSeconds
 	if ($failed -eq 0) {
-		"✅ Updated $numFolders repos at 📂$parentDir in $($elapsed)s."
+		"✅ Pulled into $numFolders repos at 📂$parentDir in $($elapsed)s."
 		exit 0 # success
 	} else {
-		"⚠️ Updated $numFolders repos at 📂$parentDir in $($elapsed)s but $failed failed!"
+		"⚠️ Pulled into $numFolders repos at 📂$parentDir in $($elapsed)s but $failed failed!"
 		exit 1
 	}
 } catch {
