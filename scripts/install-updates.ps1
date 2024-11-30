@@ -56,7 +56,8 @@ try {
 		""
 		"⏳ (2/2) Installing updates from winget and Microsoft Store..."
 		""
-		& winget upgrade --all --include-unknown
+		& winget upgrade --all --source=winget
+		# & winget upgrade --all --source=msstore # does not work
 	}
 	[int]$elapsed = $stopWatch.Elapsed.TotalSeconds
 	"✅ Updates installed in $($elapsed)s."
