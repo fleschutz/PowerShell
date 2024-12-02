@@ -2,7 +2,7 @@
 .SYNOPSIS
 	Writes a value with value range
 .DESCRIPTION
-	This PowerShell script writes the given value to stdout.
+	This PowerShell script writes the given value with value range to the console.
 .PARAMETER value
 	Specifies the value
 .EXAMPLE
@@ -16,49 +16,50 @@
 
 param([float]$value = 0.5, [string]$unit = "Mach", [float]$min = 0.0, [float]$max = 10.0)
 
-function WriteLine([float]$count)
-{
-	for ([int]$i = 0; $i -lt $count; $i++) {
+function WriteLine([float]$count) {
+	while ($count -ge 1.0) {
 		Write-Host "⎯" -noNewline
+		$count -= 1.0
 	}
+	return $count
 }
 
 function WriteBlock([float]$value, [string]$unit, [float]$min, [float]$max) {
-	$text = "[$min $value $unit $max]"
-	$left = 32 - $text.Length
+	$text = "[$min $($value)$unit $max]"
+	[float]$left = 20.0 - $text.Length
 	if ($value -gt $max) {
 		Write-Host "[$min" -noNewline
-		WriteLine $left
+		$rest = WriteLine $left
 		Write-Host "$max]" -noNewline
-		Write-Host " $value $unit " -noNewline -foregroundColor red
+		Write-Host " $($value)$unit " -noNewline -foregroundColor red
 	} elseif ($value -lt $min) {
-		Write-Host "$value $unit" -noNewline -foregroundColor red
+		Write-Host "$($value)$unit" -noNewline -foregroundColor red
 		Write-Host " [$min" -noNewline
-		WriteLine $left
+		$rest = WriteLine $left
 		Write-Host "$max] " -noNewline
 	} else {
-		[float]$percent = ($value * 100.0) / $max
+		[float]$percent = (($value - $min) * $left) / ($max - $min)
 		Write-Host "[$min" -noNewline
-		WriteLine ($percent / 5.0)
-		Write-Host "$value $unit" -noNewline -foregroundColor green
-		WriteLine ((100.0 - $percent) / 5.0)
+		$rest = WriteLine $percent
+		Write-Host "$($value)$unit" -noNewline -foregroundColor green
+		$rest = WriteLine ($left - $percent + $rest + 1.0)
 		Write-Host "$max] " -noNewline
 	}
 }
 
-WriteBlock -11.5 "Mach" 0.0 10.0
-Write-Host "Too slow"
+WriteBlock -3.5 "°C" 0 100
+Write-Host "CPU too cold"
 
-WriteBlock 0.5 "Mach" 0.0 10.0
-Write-Host "Good"
+WriteBlock 15 "°C" 0 100
+Write-Host "OK"
 
-WriteBlock 5 "Mach" 0.0 10.0
-Write-Host "Good"
+WriteBlock 50 "°C" 0 100
+Write-Host "OK"
 
-WriteBlock 7 "Mach" 0.0 10.0
-Write-Host "Good"
+WriteBlock 70 "°C" 0 100
+Write-Host "OK"
 
-WriteBlock 15 "Mach" 0.0 10.0
-Write-Host "Too fast"
+WriteBlock 110 "°C" 0 100
+Write-Host "CPU too hot "
 
 exit 0 # success
