@@ -56,7 +56,7 @@ function WriteValueInRange([float]$value, [string]$unit, [float]$redMin, [float]
 		if ($leftSide -lt 1.0) { $leftSide = 1.0 }
 		if ($leftSide -gt ($total - 1.0)) { $leftSide = $total - 1.0 }
 		Write-Host "[$redMin$($line.Substring(0, $leftSide))" -noNewline
-		if (($value -le $yellowMin) -or ($value -ge $yellowMax)) {
+		if (($value -lt $yellowMin) -or ($value -gt $yellowMax)) {
 			Write-Host "$($value)$unit" -noNewline -foregroundColor yellow
 		} else {
 			Write-Host "$($value)$unit" -noNewline -foregroundColor green
@@ -67,16 +67,27 @@ function WriteValueInRange([float]$value, [string]$unit, [float]$redMin, [float]
 
 try {
 	do {
+		[int]$Time = Get-Date -format "HHmm"
 		$CPUtemp = GetCPUTemperature
 		$numProcesses = (Get-Process).Count
+		$load = "{0}" -f $(Get-WmiObject Win32_Processor | Measure-Object -Property LoadPercentage -Average | Select-Object -ExpandProperty Average)
+		$DriveDetails = Get-PSDrive C
+		$DiskUse = [math]::round($DriveDetails.Used / 1GB)
+		$DiskSize = [math]::round(($DriveDetails.Used + $DriveDetails.Free) / 1GB)
 		$numDaysUp = GetUptime
 
 		Clear-Host
-		Write-Host "`n* CPU TEMP  " -noNewline
+		Write-Host "`n* TIME " -noNewline
+		WriteValueInRange $Time "" 0 0 2400 2400
+		Write-Host "`n* CPU  " -noNewline
 		WriteValueInRange $CPUtemp "°C" 0 10 80 100
-		Write-Host "`n* PROCESSES " -noNewline
+		Write-Host "`n* LOAD " -noNewline
+		WriteValueInRange $load "%" 0 0 90 100
+		Write-Host "`n* PROC " -noNewline
 		WriteValueInRange $numProcesses "" 0 10 900 1000
-		Write-Host "`n* UPTIME    " -noNewline
+		Write-Host "`n* DISK " -noNewline
+		WriteValueInRange $DiskUse "GB" 0 0 $DiskSize $DiskSize
+		Write-Host "`n* UP   " -noNewline
 		WriteValueInRange $numDaysUp " days" 0 0 900 1000
 
 
