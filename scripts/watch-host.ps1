@@ -67,6 +67,7 @@ function WriteValueInRange([float]$value, [string]$unit, [float]$redMin, [float]
 
 try {
 	do {
+		[int]$DayOfYear = (Get-Date).DayofYear
 		[int]$Time = Get-Date -format "HHmm"
 		[int]$TimeZone = Get-Date -format "zz"
 		$CPUtemp = GetCPUTemperature
@@ -78,9 +79,25 @@ try {
 		$DiskSize = [math]::round(($DriveDetails.Used + $DriveDetails.Free) / 1GB)
 		$numDaysUp = GetUptime
 
+		if ($IsLinux) {
+                	$result = $(free --mega | grep Swap:)
+                	[int64]$total = $result.subString(5,14)
+                	[int64]$used = $result.substring(20,13)
+        	} else {
+                	$items = Get-WmiObject -class "Win32_PageFileUsage" -namespace "root\CIMV2" -computername localhost
+                	[int64]$total = [int64]$used = 0
+                	foreach ($item in $items) {
+                 		$total += $item.AllocatedBaseSize
+                        	$used += $item.CurrentUsage
+
+                	}
+		}
+
 		Clear-Host
 		Write-Host "Host $env:COMPUTERNAME"
 		Write-Host "=================="
+		Write-Host "`n* DATE " -noNewline
+		WriteValueInRange $DayOfYear "" 0 0 366 366
 		Write-Host "`n* TIME " -noNewline
 		WriteValueInRange $Time "" 0 0 2400 2400
 		Write-Host "`n* ZONE " -noNewline
@@ -95,6 +112,8 @@ try {
 		WriteValueInRange $load "%" 0 0 90 100
 		Write-Host "`n* PROC " -noNewline
 		WriteValueInRange $numProcesses "" 0 10 900 1000
+		Write-Host "`n* SWAP " -noNewline
+		WriteValueInRange $used "GB" 0 0 $total $total
 		Write-Host "`n* DISK " -noNewline
 		WriteValueInRange $DiskUse "GB" 0 0 $DiskSize $DiskSize
 		Write-Host "`n* UP   " -noNewline
