@@ -15,7 +15,7 @@
 #>
 
 function GetCPUTemperature {
-        $temp = 99999.9 # unsupported
+        $temp = -300 # unsupported
         if ($IsLinux) {
                 if (Test-Path "/sys/class/thermal/thermal_zone0/temp" -pathType leaf) {
                         [int]$IntTemp = Get-Content "/sys/class/thermal/thermal_zone0/temp"
@@ -68,7 +68,9 @@ function WriteValueInRange([float]$value, [string]$unit, [float]$redMin, [float]
 try {
 	do {
 		[int]$Time = Get-Date -format "HHmm"
+		[int]$TimeZone = Get-Date -format "zz"
 		$CPUtemp = GetCPUTemperature
+		$numCores = $env:NUMBER_OF_PROCESSORS
 		$numProcesses = (Get-Process).Count
 		$load = "{0}" -f $(Get-WmiObject Win32_Processor | Measure-Object -Property LoadPercentage -Average | Select-Object -ExpandProperty Average)
 		$DriveDetails = Get-PSDrive C
@@ -77,10 +79,18 @@ try {
 		$numDaysUp = GetUptime
 
 		Clear-Host
+		Write-Host "Host $env:COMPUTERNAME"
+		Write-Host "=================="
 		Write-Host "`n* TIME " -noNewline
 		WriteValueInRange $Time "" 0 0 2400 2400
+		Write-Host "`n* ZONE " -noNewline
+		WriteValueInRange $TimeZone "" -23 -23 23 23
+		if ($CPUtemp -ne -300) {
+			Write-Host "`n* CPU  " -noNewline
+			WriteValueInRange $CPUtemp "°C" 0 10 80 100
+		}
 		Write-Host "`n* CPU  " -noNewline
-		WriteValueInRange $CPUtemp "°C" 0 10 80 100
+		WriteValueInRange $numCores " cores" 0 0 100 100
 		Write-Host "`n* LOAD " -noNewline
 		WriteValueInRange $load "%" 0 0 90 100
 		Write-Host "`n* PROC " -noNewline
@@ -91,7 +101,7 @@ try {
 		WriteValueInRange $numDaysUp " days" 0 0 900 1000
 
 
-		Start-Sleep -milliseconds 1000
+		Start-Sleep -milliseconds 5000
 	} while ($true)
 } catch {
         "⚠️ Error in line $($_.InvocationInfo.ScriptLineNumber): $($Error[0])"
