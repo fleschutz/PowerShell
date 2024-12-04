@@ -113,11 +113,11 @@ try {
 		Write-Host "`n* PROC " -noNewline
 		WriteValueInRange $numProcesses "" 0 10 900 1000
 		Write-Host "`n* SWAP " -noNewline
-		WriteValueInRange $used "GB" 0 0 $total $total
+		WriteValueInRange $used "GB" 0 0 ($total - 1) $total
 		Write-Host "`n* DISK " -noNewline
-		WriteValueInRange $DiskUse "GB" 0 0 $DiskSize $DiskSize
+		WriteValueInRange $DiskUse "GB" 0 0 ($DiskSize - 5) $DiskSize
 		Write-Host "`n* UP   " -noNewline
-		WriteValueInRange $numDaysUp " days" 0 0 900 1000
+		WriteValueInRange $numDaysUp " days" 0 0 1000 1000
 
 
 		Start-Sleep -milliseconds 5000
