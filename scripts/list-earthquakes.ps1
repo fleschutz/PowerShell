@@ -8,7 +8,7 @@
 .EXAMPLE
 	PS> ./list-earthquakes.ps1
 
-	Mag   Location                                   Depth        Time UTC
+	MAG   LOCATION                                   DEPTH        TIME UTC
 	---   --------                                   -----        --------
 	7.2   98 km S of Sand Point, Alaska              33 km        2023-07-16T06:48:22.606Z
 	...
@@ -30,13 +30,13 @@ function ListEarthquakes {
 
 	foreach($quake in $quakes) {
 		[int]$depth = $quake.depth
-		New-Object PSObject -Property @{ Mag=$quake.mag; Depth="$depth km"; Location=$quake.place; 'Time UTC'=$quake.time }
+		New-Object PSObject -Property @{ MAG=$quake.mag; DEPTH="$depth km"; LOCATION=$quake.place; 'TIME UTC'=$quake.time }
 	}
 
 }
  
 try {
-	ListEarthquakes | Format-Table -property @{e='Mag';width=5},@{e='Location';width=42},@{e='Depth';width=12},'Time UTC' 
+	ListEarthquakes | Format-Table -property @{e='MAG';width=5},@{e='LOCATION';width=50},@{e='DEPTH';width=8},'TIME UTC' 
 	exit 0 # success
 } catch {
 	"⚠️ Error in line $($_.InvocationInfo.ScriptLineNumber): $($Error[0])"
