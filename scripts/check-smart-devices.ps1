@@ -5,7 +5,7 @@
 	This PowerShell script queries the status of the SSD/HDD devices (supporting S.M.A.R.T.) and prints it.
 .EXAMPLE
 	PS> ./check-smart-devices.ps1
-	✅ 1TB Samsung SSD 970 EVO via NVMe (37°C, 2388 hours, 289x on/off, v2B2QEXE7, test passed)
+	✅ 1TB Samsung SSD 970 EVO 1TB via NVMe (35°C, 6142h, 34TB read, 64TB written, 770x on/off, v2B2QEXE7, test passed)
 .LINK
 	https://github.com/fleschutz/PowerShell
 .NOTES
@@ -29,18 +29,15 @@ function Bytes2String([int64]$bytes) {
 }
 
 try {
-	#Write-Progress "(1/3) Searching for smartmontools..."
 	$result = (smartctl --version)
 	if ($lastExitCode -ne "0") { throw "Can't execute 'smartctl' - make sure smartmontools are installed" }
 
-	#Write-Progress "(2/3) Scanning S.M.A.R.T devices..."
 	if ($IsLinux) {
 		$devices = $(sudo smartctl --scan-open)
 	} else {
 		$devices = $(smartctl --scan-open)
 	}
 
-	#Write-Progress "Querying S.M.A.R.T devices..."
 	foreach($device in $devices) {
 		$array = $device.split(" ")
 		$dev = $array[0]
@@ -62,37 +59,41 @@ try {
 		} else {
 			$capacity = ""
 		}
+		$infos = ""
 		if ($details.temperature.current -gt 50) {
-			$temp = "$($details.temperature.current)°C TOO HOT"
+			$infos = "$($details.temperature.current)°C TOO HOT"
 			$status = "⚠️"
 		} elseif ($details.temperature.current -lt 0) {
-			$temp = "$($details.temperature.current)°C TOO COLD"
+			$infos = "$($details.temperature.current)°C TOO COLD"
 			$status = "⚠️"
 		} else {
-			$temp = "$($details.temperature.current)°C"
+			$infos = "$($details.temperature.current)°C"
 		}
 		if ($details.power_on_time.hours -gt 87600) { # 10 years
-			$hours = "$($details.power_on_time.hours) hours (!)"
+			$infos += ", $($details.power_on_time.hours)h (!)"
 			$status = "⚠️"
 		} else {
-			$hours = "$($details.power_on_time.hours) hours"
+			$infos += ", $($details.power_on_time.hours)h"
+		}
+		if ($details.nvme_smart_health_information_log.host_reads) {
+			$infos += ", $(Bytes2String ($details.nvme_smart_health_information_log.data_units_read * 512 * 1000)) read"
+			$infos += ", $(Bytes2String ($details.nvme_smart_health_information_log.data_units_written * 512 * 1000)) written"
 		}
 		if ($details.power_cycle_count -gt 100000) { 
-			$powerOn = "$($details.power_cycle_count)x on/off (!)"
+			$infos += ", $($details.power_cycle_count)x on/off (!)"
 			$status = "⚠️"
 		} else {
-			$powerOn = "$($details.power_cycle_count)x on/off"
-		}	
+			$infos += ", $($details.power_cycle_count)x on/off"
+		}
+		$infos += ", v$($details.firmware_version)"
 		if ($details.smart_status.passed) {
-			$selftest = "test passed"
+			$infos += ", test passed"
 		} else {
-			$selftest = "test FAILED"
+			$infos += ", test FAILED"
 			$status = "⚠️"
 		}
-		$firmwareVersion = $details.firmware_version
-		Write-Host "$status $capacity$modelName via $protocol ($temp, $hours, $powerOn, v$firmwareVersion, $selftest)"
+		Write-Host "$status $capacity$modelName via $protocol ($infos)"
 	}
-	#Write-Progress -completed "Done."
 	exit 0 # success
 } catch {
 	"⚠️ Error in line $($_.InvocationInfo.ScriptLineNumber): $($Error[0])"
