@@ -8,8 +8,7 @@ AACC,American Association for Clinical Chemistry
 AADC,Amino Acid DeCarboxylase
 AADC,Aromatic L-Amino acid DeCarboxylase
 AAS,Atomic Absorption Spectroscopy
-AB,Acid Base
-AB,Acid Bath
+AB,"Acid Base, Acid Bath"
 ABCC,Advanced Biomedical Computing Center
 ABCC,American Board of Clinical Chemistry
 ABS,"Absorb, Acrylonitrile Butadiene Styrene"
@@ -734,8 +733,7 @@ OV,Organic Vapor
 OVA,Organic Vapor Analyser
 OVA,OVAlbumin
 OWC,Oil-Water Contact
-OX,Oxidation
-OX,oxygen
+OX,"Oxidation, Oxygen"
 OXA,OXanilic Acid
 OXT,OXyTocin
 OXY,Oxygen
@@ -743,17 +741,14 @@ p+,Proton
 P,Peta prefix (1015)
 P,Phosphorus
 p,pico prefix (10-12)
-P,Pressure
-P,Proton
+P,"Pressure, Proton"
 Pa,Pascal
 PA,Phosphatidic Acid
 Pa,Protactinium
 PA,Proton Affinity
 PAA,PolyAcrylic Acid
 PABA,ParaAminoBenzoic Acid
-PAC,Pharmaceutically Active Compound
-PAC,Polycyclic Aromatic Content
-PAC,Powdered Activated Carbon
+PAC,"Pharmaceutically Active Compound, Polycyclic Aromatic Content, Powdered Activated Carbon"
 PAEK,PolyArylEtherKetone
 PAGE,PolyAcrylamide Gel Electrophoresis
 PAH,Polycyclic Aromatic Hydrocarbon
@@ -768,19 +763,15 @@ PBI,PolyBenzImidazole
 PBN,PolyButylene Naphthalate
 PBS,Phosphate Buffered Saline
 PBT,PolyButylene Terephthalate
-PC,PolyCarbonate
-PC,Pyruvate Carboxylase
+PC,"PolyCarbonate, Pyruvate Carboxylase"
 PCA,Pyrrolidone Carboxylic Acid
 PCC,Pyridine Chloro Chromate
 PCE,Tetrachloroethylene
 PCR,Polymerase Chain Reaction
 PCV,Pressure Control Valve
 Pd,Palladium
-PD,Positive Displacement
-PD,Potential Difference
-PE,PhycoErythrin
-PE,Polyethylene
-PE,Potential Energy
+PD,"Positive Displacement, Potential Difference"
+PE,"PhycoErythrin, Polyethylene, Potential Energy"
 PEA,PolyEster Amine
 PEEK,PolyEtherEtherKetone
 PEG,PolyEthylene Glycol
@@ -806,17 +797,14 @@ PHB,PolyHydroxyButyrate
 PHC,Petroleum HydroCarbon
 PHMB,PolyHexaMethyleneBiguanide
 PHT,PHThalate
-PI,Phosphate Ion
-PI,PolyImide
+PI,"Phosphate Ion, PolyImide"
 PIB,PolyIsoButylene
 pK,measurement of the dissociation constant
 PLA,Polymerized Lactic Acid
 PLC,PhosphoLipase-C
-PM,Particulate Matter
-PM,Photo Multiplier
+PM,"Particulate Matter, Photo Multiplier"
 pm,picometer
-PM,Plasma Membrane
-PM,Powder Metallurgy
+PM,"Plasma Membrane, Powder Metallurgy"
 Pm,Promethium
 PM10,Particulates smaller than 10 μm.
 PM3,Parameterized Model number 3
@@ -833,15 +821,12 @@ pOH,measurement of OH- ions in aqueous solution
 POL,"Petroleum, Oils, and Lubricants"
 POP,Persistent Organic Pollutant
 PORC,Porcelain
-PPA,PhenylPropanolAmine
-PPA,PolyPhthalAmide
+PPA,"PhenylPropanolAmine, PolyPhthalAmide"
 ppb,Parts per billion
 ppm,Parts per million
 PPO,PolyPhenylene Oxide
 PPS,PolyPhenylene Sulfide
-PPT,Parts Per Trillion
-PPT,PolyPyrimidine Tract
-PPT,Precipitate
+PPT,"Parts Per Trillion, PolyPyrimidine Tract, Precipitate"
 Pr,Praseodymium
 PRV,Pressure Relief Valve
 PSI,Pounds per Square Inch
@@ -850,8 +835,7 @@ Pt,Platinum
 PTFE,PolyTetraFluoroEthylene
 Pu,Plutonium
 PU,PolyUrethane
-PV,Parity Violation
-PV,Pressure Volume
+PV,"Parity Violation, Pressure Volume"
 PVC,PolyVinyl Chloride
 PVT,"Pressure, Volume, Temperature"
 PXY,Para-XYlene
@@ -859,11 +843,9 @@ Q,Heat energy
 QA,Quinolinic Acid
 QC,Quality Control
 QCD,Quantum ChromoDynamics
-QED,Quantum ElectroDynamics
-QED,Quod Erat Demonstradum (Latin for “which was to be demonstrated”)
+QED,"Quantum ElectroDynamics, Quod Erat Demonstradum (Latin for “which was to be demonstrated”)"
 QM,Quantum Mechanics
-QS,Quantum State
-QS,Quantum Sufficit (Latin for “as much as needed”)
+QS,"Quantum State, Quantum Sufficit (Latin for “as much as needed”)"
 qt,quart
 QW,Quit Whining
 QY,Quantum Yield
@@ -888,8 +870,7 @@ RBD,"Refined, Bleached and Deodorized"
 RCS,Reactive Chemical Species
 RDA,Recommended Daily Allowance
 RDT,Recombinant DNA Technology
-RDX,cyclotrimethylenetrinitramine
-RDX,Research Department Explosive
+RDX,"cyclotrimethylenetrinitramine, Research Department Explosive"
 RE,Rare Earth
 Re,Rhenium
 REACH,"Registration, Evaluation, Authorization, and restriction of CHemical substances"
@@ -899,8 +880,7 @@ rem,"Radiation Equivalent, Man"
 REM,Rare Earth Metal
 REQ,Required
 RER,Respiratory Exchange Ratio
-RF,Radio Frequency
-RF,Resonance Frequency
+RF,"Radio Frequency, Resonance Frequency"
 Rf,Rutherfordium
 RFIC,Reagent-Free Ion Chromatography
 RFM,Relative Formula Mass
@@ -927,9 +907,7 @@ ROS,Reactive Oxygen Species
 ROWPU,Reverse Osmosis Water Purification Unit
 RPT,Repeat
 RSC,Royal Society of Chemistry
-RT,Energy (Rydberg Constant x Temperature)
-RT,Reverse Transcriptase
-RT,Room Temperature
+RT,"Energy (Rydberg Constant x Temperature), Reverse Transcriptase, Room Temperature"
 RTM,Read The Manual
 RTP,Room Temperature and Pressure
 RTSC,Room Temperature Super Conductor
@@ -977,18 +955,16 @@ Se,Selenium
 Sec,Seconds
 SEP,Separate
 SEU,Slightly Enriched Uranium
-SF,Safety Factor
-SF,Significant Figures
+SF,"Safety Factor, Significant Figures"
 SFC,Supercritical Fluid Chromatography
 SFPM,Suspended Fine Particulate Matter
 Sg,Seaborgium
-SG,Specific Gravity
-SG,Spheroidal Graphite
+SG,"Specific Gravity, Spheroidal Graphite"
 SH,Thiol functional group
 SHC,Synthetic HydroCarbon
 SHE,Standard Hydrogen Electrode
 SHF,Super High Frequency
-SI units,Système international d’unités (International System of Units)
+SI,"Système international d’unités (International System of Units)"
 Si,Silicon
 SL,Sea Level
 SL,Short Lived
@@ -1028,8 +1004,7 @@ TAC,Teiacetyl Cellulose
 TAG,TriAcylGlyceride
 tan,tangent
 TAN,Total Acid Number
-TAS,Total Alkali versus Silica
-TAS,Total Analysis System
+TAS,"Total Alkali versus Silica, Total Analysis System"
 TAT,TriAcetone TriPeroxide
 Tb,Terbium
 TBA,"2,4,6-TriBromoAnisole"
@@ -1038,22 +1013,15 @@ TBC,4-TertButylCatechol
 TBHQ,TertButylHydroQuinone
 TBP,True Boiling Point
 TBT,TriButylTin
-Tc,Critical Temperature
-Tc,Technitium
-TC,Temperature Compensated
-TC,Temperature Controlled
-TC,Theoretical Chemistry
+Tc,"Critical Temperature, Technitium"
+TC,"Temperature Compensated, Temperature Controlled, Theoretical Chemistry"
 TCA,TauroCholic Acid
 TCA,TCA cycle (citric acid cycle)
 TCA,TriChloroAcetic Acid
 TCE,TriChloroEthane
 TCF,ThiolCarbon Fiber
 TCM,TetraChloromethane
-TCP,"1,2,3-TriChloropropane"
-TCP,Thermal Conversion Process
-TCP,Tocopherol
-TCP,TriCalcium Phosphate
-TCP,TriChloroPhenol
+TCP,"1,2,3-TriChloropropane, Thermal Conversion Process, Tocopherol, TriCalcium Phosphate, TriChloroPhenol"
 TCS,Toxic Chemical System
 TCT,ToCoTrienol
 TCV,Temperature Control Valve
@@ -1100,8 +1068,7 @@ TOC,Total Organic Carbon
 TOI,Table Of Isotopes
 TON,Table Of Nuclides
 TOX,Toxic
-TP,Transition Point
-TP,Triple Point
+TP,"Transition Point, Triple Point"
 TPE,ThermoPlastic Elastomer
 TPM,Total Particulate Matter
 TR,Table Row
@@ -1125,16 +1092,13 @@ TTX,Tetrodotoxin
 TU,Thermally Unbound
 TWMC,Time Weighted Mean Concentration
 TWV,Total Water Vapor
-U,Internal Energy
-U,Undetectable
-U,Uranium
+U,"Internal Energy, Undetectable, Uranium"
 UAFM,Uranyl Acetate Fluorescence Method
 UCK,Universal Chemical Key
 UG,"Undisturbed Gas UHC,Unburned HydroCarbons"
 UHF,Ultra High Frequency
 UHMW,Ultra High Molecular Weight
-UHP,Ultra High Pressure
-UHP,Ultra High Purity
+UHP,"Ultra High Pressure, Ultra High Purity"
 UHT,Ultra High Temperature
 UHV,Ultra High Vacuum
 ULG,Universal Liquid Gas
@@ -1162,38 +1126,27 @@ UVL,UltraViolet Lamp
 UVR,UltraViolet Reactive
 UXS,Glucuronic Acid DeCarboxylase
 UYQ,Uranium Yield Quantity
-V,Vacuum
-V,Valene
-V,Vanadium
+V,"Vacuum, Valene, Vanadium, Volt, Volume"
 v,velocity
-V,Volt
-V,Volume
-VA,Nitrogen group
-VA,Volume Analyzer
-VAC,Vacuum
-VAC,Vacuum Assisted Closure
-VB,Vacuum Break
-VB,Valence Band
+VA,"Nitrogen group, Volume Analyzer"
+VAC,"Vacuum, Vacuum Assisted Closure"
+VB,"Vacuum Break, Valence Band"
 VBJ,Vacuum Bell Jar
 VBT,Valence Bond Theory
-VC,Vapor Cloud
-VC,Vinyl Chloride
-VC,Viscous Coupled
+VC,"Vapor Cloud, Vinyl Chloride, Viscous Coupled"
 VCE,Vapor Cloud Explosion
 VCM,Vinyl Chloride Monomer
 Vd,Volume distribution
 VDB,VanDyke Brown test
 VDF,Van der Waals force
 VDW,Van der Waals radius
-VEQ,EQuilibrium Volume
-VEQ,EQuivalence point Volume
+VEQ,"EQuilibrium Volume, EQuivalence point Volume"
 VFn,Vertical Face number (n is a number)
 VH,Vapor Hazard
 VHH,Volatile Halogenated Hydrocarbon
 VHI,Vapor Hazard Index
 VHN,Vickers Hardness Number
-VHP,Vaporized Hydrogen Peroxide
-VHP,Very High Pressure
+VHP,"Vaporized Hydrogen Peroxide, Very High Pressure"
 VHT,Very High Temperature
 VHY,Very High Yield
 VI,Viscosity Index
@@ -1204,8 +1157,7 @@ VO,Vacuum Oven
 VOA,Volatile Organic Analysis
 VOC,Volatile Organic Compound
 VOL,Volume
-VP,Vapor Point
-VP,Vapor Pressure
+VP,"Vapor Point, Vapor Pressure"
 VPE,Virtual Potential Energy
 VR,Very Rapid
 VS,Very Saturated
@@ -1215,28 +1167,17 @@ VSS,Volatile Suspended Solid
 VTC,Variable Temperature Cutoff
 VTP,"Volume, Temperature, Pressure"
 VU,Volume Units
-VV,Vacuum Vessel
-VV,Valence-Valence
+VV,"Vacuum Vessel, Valence-Valence"
 VW,Varies Widely
-W,Tryptofan
-W,Tungsten
-W,Watt
-W,wavelength
-W,Weight
-W,width
-W,Work
+W,"Tryptofan, Tungsten, Watt, wavelength, Weight, width, Work"
 W5,Which Was What We Wanted
 WA,Weak Acid
 WAC,Weak Acid Cation
-WB,Water Based
-WB,Weak Base
-WB,Weak Bond
+WB,"Water Based, Weak Base, Weak Bond"
 WBA,Weak Base Anion
 WC,Water Cosolvent
 WCS,Worst Case Scenario
-WD,Water Dispersant
-WD,Water Displacement
-WD,Wet/Dry
+WD,"Water Dispersant, Water Displacement, Wet/Dry"
 WIAP,Water In All Phases
 WIN,Water Insoluble Nitrogen
 WNA,World Nuclear Association
@@ -1244,8 +1185,7 @@ WO,Weak Oxidizer
 WP,White Phosphorus
 WPS,Water Phase Salt
 WR,Water Repellent
-WS,Wash Solution
-WS,Water Soluble
+WS,"Wash Solution, Water Soluble"
 WSNZ,Water Soluble Zinc
 WSPI,"Water-Soluble Phosphorous, Inorganic"
 WSPO,"Water-Soluble Phosphorous, Organic"
@@ -1262,8 +1202,7 @@ WWIX,Waste Water Ion eXchange
 WYOL,Write Your Own Lab
 WYOLA,Write Your Own Lab Assignment
 WYU,What You Use
-X,Halogen
-X,unknown
+X,"Halogen, unknown"
 XAG,Silver Troy Ounce
 XAN,XANthine
 XAU,Gold Troy Ounce
@@ -1275,10 +1214,8 @@ XPD,Palladium Troy Ounce
 XPT,Platinum Troy Ounce
 XUM,X-ray Ultra-Microscope
 XYD,XYliDine
-Y,Tyrosine
+Y,"Tyrosine, Yotta prefix (1024), Yttrium"
 y,yocto prefix (10-24)
-Y,Yotta prefix (1024)
-Y,Yttrium
 YA,Yield Analysis
 YAG,Yttrium Aluminum Garnet
 YAP,Yield Analysis Pattern
@@ -1290,13 +1227,8 @@ Yd,Yard
 YIC,Yttrium Lithium Fluoride
 Yr,Year
 YZN,Yellow ZiNc dichromate
-Z,Atomic Number
-Z,azimuth
-Z,Impedance
-Z,proton number
+Z,"Atomic Number, azimuth, Impedance, proton number, zero, Zetta prefix (1021)"
 z,zepto prefix (10-21)
-Z,zero
-Z,Zetta prefix (1021)
 ZB,Zinc Blende
 ZC,Zero Calibration
 ZC,Zinc Composite
