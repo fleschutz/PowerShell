@@ -1,6 +1,7 @@
 TERM,MEANING
 3P,"Perceive, Process, Perform"
-5LNC,Five Letter Name Codes
+5ANNC,Five Letter Alpha Numeric Code
+5LNC,Five Letter Naming Code
 5P,"Plan, Plane, Pilot, Passengers, Programming"
 7500,"Transponder code for Aircraft hijacking (ICAO)"
 7600,"Transponder code for Radio failure (lost communications, ICAO)"
@@ -369,11 +370,13 @@ NATOPS,Naval Aviation Training and Operating Procedures Standardization
 NATS,National Air Traffic Services (UK)
 NAVAIDS,Navigational Aids
 NCOIC,Non-Commissioned Officer in Charge
+NDB,Non-Directional Beacon
 NIMA,National Imagery Mapping Agency
 NLFS,Night Low Flying System
 NM,Nautical Mile
 NORDO,No Radio
 NOTAM,Notice to Airmen or Notice to Air Missions
+NRS,Navigation Reference System
 NUAIR,Northeast UAS Airspace Integration Research (a New York based nonprofit organization)
 OCS,Obstacle Clearance Surfaces
 OCTA,Outside Control Areas
