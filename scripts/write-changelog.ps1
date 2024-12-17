@@ -9,8 +9,8 @@
 .EXAMPLE
         PS> ./write-changelog.ps1
 	  
-	Changelog of PowerShell
-	=======================
+	Changelog of Repo 'PowerShell'
+	==============================
 	...
 .LINK
         https://github.com/fleschutz/PowerShell
@@ -40,25 +40,22 @@ try {
 
 	Write-Progress "(5/6) Sorting the Git commit messages..."
 	$new = @()
-	$fixes = @()
-	$updates = @()
+	$improved = @()
+	$fixed = @()
 	$various = @()
 	foreach($commit in $commits) {
  		if ($commit -like "New*") {		$new += $commit
 		} elseif ($commit -like "Add*") {	$new += $commit
 		} elseif ($commit -like "Create*") {	$new += $commit
-		} elseif ($commit -like "Fix*") {	$fixes += $commit
- 		} elseif ($commit -like "Hotfix*") {	$fixes += $commit
- 		} elseif ($commit -like "Bugfix*") {	$fixes += $commit
-		} elseif ($commit -like "Update*") {	$updates += $commit
-		} elseif ($commit -like "Updating*") {	$updates += $commit
-		} elseif ($commit -like "Updaate*") {	$updates += $commit
-		} elseif ($commit -like "Adapt*") {	$updates += $commit
-		} elseif ($commit -like "Improve*") {	$updates += $commit
-		} elseif ($commit -like "Change*") {	$updates += $commit
-		} elseif ($commit -like "Changing*") {	$updates += $commit
- 		} else {
-			$various += $commit
+		} elseif ($commit -like "Upda*") {	$improved += $commit
+		} elseif ($commit -like "Adapt*") {	$improved += $commit
+		} elseif ($commit -like "Improve*") {	$improved += $commit
+		} elseif ($commit -like "Change*") {	$improved += $commit
+		} elseif ($commit -like "Changing*") {	$improved += $commit
+		} elseif ($commit -like "Fix*") {	$fixed += $commit
+ 		} elseif ($commit -like "Hotfix*") {	$fixed += $commit
+ 		} elseif ($commit -like "Bugfix*") {	$fixed += $commit
+ 		} else {				$various += $commit
 		}
  	}
 	Write-Progress "(6/6) Listing all contributors..."
@@ -67,8 +64,8 @@ try {
 
         $Today = (Get-Date).ToShortDateString()
 	Write-Output " "
-	Write-Output "Changelog of $RepoDirName as of $Today"
-	Write-Output "======================================"
+	Write-Output "Changelog of Repo '$RepoDirName'"
+	Write-Output "================================"
 	Write-Output " "
 	Write-Output "🚀 New Features"
 	Write-Output "---------------"
@@ -76,17 +73,17 @@ try {
  		Write-Output "* $c"
 	}
 	Write-Output " "
- 	Write-Output "⚠️ Bug Fixes"
-	Write-Output "------------"
- 	foreach($c in $fixes) {
- 		Write-Output "* $c"
- 	}
-	Write-Output " "
-	Write-Output "🎉 Updates"
+	Write-Output "🎉 Improved"
 	Write-Output "----------"
-	foreach($c in $updates) {
+	foreach($c in $improved) {
 		Write-Output "* $c"
 	}
+	Write-Output " "
+ 	Write-Output "⚠️ Fixed"
+	Write-Output "--------"
+ 	foreach($c in $fixed) {
+ 		Write-Output "* $c"
+ 	}
 	Write-Output " "
 	Write-Output "🔦 Various"
 	Write-Output "----------"
@@ -99,6 +96,8 @@ try {
 	foreach($c in $contributors) {
 		Write-Output "* $c"
 	}
+	Write-Output ""
+	Write-Output "Changelog as of $Today."
 	exit 0 # success
 } catch {
 	Write-Error $_.Exception.ToString()

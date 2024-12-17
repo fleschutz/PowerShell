@@ -1,5 +1,7 @@
 TERM,MEANING
 3P,"Perceive, Process, Perform"
+5ANNC,Five Letter Alpha Numeric Code
+5LNC,Five Letter Naming Code
 5P,"Plan, Plane, Pilot, Passengers, Programming"
 7500,"Transponder code for Aircraft hijacking (ICAO)"
 7600,"Transponder code for Radio failure (lost communications, ICAO)"
@@ -322,6 +324,7 @@ IANS,Institute of Air Navigation Services, a division of Eurocontrol
 IAS,Indicated airspeed
 IATA,"International Air Transport Association, HQ in Montreal, Canada"
 ICA,Initial Climb Area
+ICARD,International Codes and Route Designators
 IFE,In-flight Emergency
 IFR,Instrument Flight Rules
 IG,Image Generator
@@ -367,22 +370,26 @@ NATOPS,Naval Aviation Training and Operating Procedures Standardization
 NATS,National Air Traffic Services (UK)
 NAVAIDS,Navigational Aids
 NCOIC,Non-Commissioned Officer in Charge
+NDB,Non-Directional Beacon
 NIMA,National Imagery Mapping Agency
 NLFS,Night Low Flying System
 NM,Nautical Mile
 NORDO,No Radio
 NOTAM,Notice to Airmen or Notice to Air Missions
+NRS,Navigation Reference System
 NUAIR,Northeast UAS Airspace Integration Research (a New York based nonprofit organization)
 OCS,Obstacle Clearance Surfaces
 OCTA,Outside Control Areas
 OEI,One Engine Inoperative
 ODP,Obstacle Departure Procedure
 OGE,Out of Ground Effect
+OID,Operational Instrument Departure
 OFZ,Obstacle Free Zone
 OJT,On the Job Training
 OODA,"Observation, Orientation, Decision, and Action"
 ORCAM,Originating Region Code Assignment Method
 OSC,On Scene Commander
+OWE,Operational Weight Empty
 PA,Pressure Altitude
 PADS,Parallax Aircraft Docking System
 PANSA,Polish Air Navigation Services Agency
