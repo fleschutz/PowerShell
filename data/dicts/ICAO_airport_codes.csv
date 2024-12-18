@@ -1062,8 +1062,8 @@ TERM,MEANING
 0P0,Valley Forge Bicentennial Heliport (USA)
 0P1,Van Pak Airport (USA)
 0P2,Shoestring Aviation Airfield (USA)
-0PA0,Philadelphia Gliderport (USA)
-0PA1,Phoenix Technologies Heliport (USA)
+0PA0 (Philippines)iladelphia Gliderport (USA)
+0PA1 (Philippines)oenix Technologies Heliport (USA)
 0PA2,Haunstein Ultralightport (USA)
 0PA3,Robbins Farm Airport (USA)
 0PA4,Ecko Field (USA)
@@ -1138,7 +1138,7 @@ TERM,MEANING
 0TN1,Tims Ford Seaplane Base (USA)
 0TN2,Village Airport (USA)
 0TN3,Park West Heliport (USA)
-0TN4,Physicians Medical Regional Center Heliport (USA)
+0TN4 (Philippines)ysicians Medical Regional Center Heliport (USA)
 0TN5,McDonald Airport (USA)
 0TN6,Riner Farm Airport (USA)
 0TN7,Horne Properties Heliport (USA)
@@ -2090,7 +2090,7 @@ TERM,MEANING
 1L4,Kidwell Airport (USA)
 1LA0,Ken Guidry #2 Airport (USA)
 1LA1,Triche Field (USA)
-1LA2,Phi Harahan Heliport (USA)
+1LA2 (Philippines)i Harahan Heliport (USA)
 1LA3,Goose Island Airport (USA)
 1LA4,Bayou Fourchon Seaplane Base (USA)
 1LA5,Morrow Strip (USA)
@@ -2308,7 +2308,7 @@ TERM,MEANING
 1PA4,Wagner Airport (USA)
 1PA5,Beaver Creek Ultralightport (USA)
 1PA6,Auer Field (USA)
-1PA7,Philmont Heliport (USA)
+1PA7 (Philippines)ilmont Heliport (USA)
 1PA8,Motola's Helicopter Service Inc. Heliport (USA)
 1PA9,Schadels Airport (USA)
 1PN0,Bentley Airport (USA)
@@ -2828,7 +2828,7 @@ TERM,MEANING
 25NC,Smith Air Strip (USA)
 25ND,Landeis Airstrip (USA)
 25NE,Corr Airport (USA)
-25NH,Phantom Three Heliport (USA)
+25NH (Philippines)antom Three Heliport (USA)
 25NJ,Hercules Heliport (USA)
 25NK,Loucks Airport (USA)
 25NM,Dream Catcher Ranch Airport (USA)
@@ -2887,7 +2887,7 @@ TERM,MEANING
 26N,Ocean City Municipal Airport (USA)
 26NC,Boonville Airport (USA)
 26ND,Chitwood Airstrip (USA)
-26NH,Phantom Two Heliport (USA)
+26NH (Philippines)antom Two Heliport (USA)
 26NJ,Burdette Tomlin Memorial Hospital Heliport (USA)
 26NK,Ridge Heliport (USA)
 26NV,Darrow Field (USA)
@@ -2944,7 +2944,7 @@ TERM,MEANING
 27MT,Rahn Airport (USA)
 27NC,Brunswick Media Center Heliport (USA)
 27NE,Hendricks Field (USA)
-27NH,Phantom One Heliport (USA)
+27NH (Philippines)antom One Heliport (USA)
 27NJ,Sony Music Heliport (USA)
 27NK,Mohawk Air Park (USA)
 27NY,Don's Heliport (USA)
@@ -3183,7 +3183,7 @@ TERM,MEANING
 2D6,Bannock Heliport (USA)
 2D7,Beach City Airport (USA)
 2DE2,Willaview Airport (USA)
-2DE3,Hrupsa Airport (USA)
+2DE3 (Croatia)upsa Airport (USA)
 2DE8,Murphy's Landing Airport (USA)
 200,Sharpe's Strip (USA)
 2000000,Groton Municipal Airport (USA)
@@ -3778,7 +3778,7 @@ TERM,MEANING
 2Z6,False Island Seaplane Base (USA)
 30AK,Doyle Estates Airport (USA)
 30AL,Med Flight 2 Heliport (USA)
-30AR,Phalanx Airport (USA)
+30AR (Philippines)alanx Airport (USA)
 30AZ,Gila Compressor Station Airport (USA)
 30CA,Indian Valley Hospital Heliport (USA)
 30CL,Long Beach Memorial Medical Center Heliport (USA)
@@ -4638,12 +4638,12 @@ TERM,MEANING
 3NC9,Womble Field (USA)
 3ND5,Gage Flying Farmer Airport (USA)
 3ND6,DJR Ultralight Flightpark (USA)
-3NE2,Phillips Private Airport (USA)
+3NE2 (Philippines)illips Private Airport (USA)
 3NE3,Wells Airport (USA)
 3NE5,MT Airfield (USA)
 3NE6,Burkinshaw Field (USA)
 3NE7,Pawlet Ranch Airport (USA)
-3NE9,Phelps Airport (USA)
+3NE9 (Philippines)elps Airport (USA)
 3NH2,Flying Loon Seaplane Base (USA)
 3NH4,Portsmouth Regional Hospital Heliport (USA)
 3NH9,Longview Heliport (USA)
@@ -4746,7 +4746,7 @@ TERM,MEANING
 3PN6,Gravel Run Airport (USA)
 3PN7,Stahl's Mountain Airport (USA)
 3PN8,Wyeth Pharmaceuticals Heliport (USA)
-3PN9,Phil Cain Memorial Field Ultralight Flightpark (USA)
+3PN9 (Philippines)il Cain Memorial Field Ultralight Flightpark (USA)
 3PS0,Penn Chester County Hospital Heliport (USA)
 3PS1,Pitcairn Heliport (USA)
 3PS2,Chestnut Street Garage Heliport (USA)
@@ -5276,7 +5276,7 @@ TERM,MEANING
 46TE,02 Ranch Airport (USA)
 46TN,Pleasantville Pentacostal Church Heliport (USA)
 46TS,Lavon North Airport (USA)
-46TX,Phillips Corporation Airport (USA)
+46TX (Philippines)illips Corporation Airport (USA)
 46VA,Byrd Creek Airport (USA)
 46WA,Don Williams Private Heliport (USA)
 46WI,Holy Family Hospital Heliport (USA)
@@ -5544,7 +5544,7 @@ TERM,MEANING
 4FL4,Darrah Air Park (USA)
 4FL5,Ridge Landing Airport (USA)
 4FL6,Royal Trails Airport (USA)
-4FL7,Physicians Regional Medical Center Collier Boulevard Heliport (USA)
+4FL7 (Philippines)ysicians Regional Medical Center Collier Boulevard Heliport (USA)
 4FL8,Schwartz Farms Inc Airport (USA)
 4FL9,Gore Airport (USA)
 4G1,Greenville Municipal Airport (USA)
@@ -5671,7 +5671,7 @@ TERM,MEANING
 4MD2,Ward's Airport (USA)
 4MD3,Carey Field (USA)
 4MD4,Clements Airport (USA)
-4MD5,Phh Heliport (USA)
+4MD5 (Philippines)h Heliport (USA)
 4MD6,Moxley's Airport (USA)
 4MD7,Catoctin Crosswind Airport (USA)
 4MD8,Ijamsville Airport (USA)
@@ -5681,7 +5681,7 @@ TERM,MEANING
 4MI0,Kriewall Strip (USA)
 4MI1,Air Rahe Airport (USA)
 4MI2,McLaren Lapeer Region Heliport (USA)
-4MI3,Phil's Field (USA)
+4MI3 (Philippines)il's Field (USA)
 4MI4,Whitcomb Field (USA)
 4MI5,Bps Heliport (USA)
 4MI6,Benedick Airport (USA)
@@ -6057,7 +6057,7 @@ TERM,MEANING
 51MI,Cass Lake-Cove Island Seaplane Base (USA)
 51MN,Barry Heliport (USA)
 51MO,Georger Farms Airport (USA)
-51NC,Phillip R Bunn Airport (USA)
+51NC (Philippines)illip R Bunn Airport (USA)
 51NE,Bil Lo Airport (USA)
 51NH,Blue Puffin Farm Heliport (USA)
 51NJ,Germania Heliport (USA)
@@ -7301,7 +7301,7 @@ TERM,MEANING
 65CL,Al Divine Airport (USA)
 65CN,Bottimore Ranch Airport (USA)
 65CO,Wkr Airport (USA)
-65FA,Physicians Regional Medical Center Heliport (USA)
+65FA (Philippines)ysicians Regional Medical Center Heliport (USA)
 65FD,Yellow Whirley Bird Heliport (USA)
 65FL,"Floridian National Golf Club, LLC Heliport" (USA)
 65G,Maple Grove Airport (USA)
@@ -7660,7 +7660,7 @@ TERM,MEANING
 6II8,Godahavit Airport (USA)
 6IL0,Idlas Restricted Landing Area (USA)
 6IL1,The American Coal Company Heliport (USA)
-6IL2,Phyllis Field (USA)
+6IL2 (Philippines)yllis Field (USA)
 6IL3,Rummel Restricted Landing Area (USA)
 6IL4,Foxfield Aerodrome (USA)
 6IL5,Keil Airport (USA)
@@ -8066,7 +8066,7 @@ TERM,MEANING
 70OI,Crestline Hospital Heliport (USA)
 70OK,Old 66 Strip (USA)
 70OR,Goodin Creek Airport (USA)
-70PA,Phico Heliport (USA)
+70PA (Philippines)ico Heliport (USA)
 70PN,Sanders Personal Use Airport (USA)
 70PR (Puerto Rico) Police-Ponce Area Heliport (Puerto Rico)
 70S,Mead Flying Service Airport (USA)
@@ -8141,7 +8141,7 @@ TERM,MEANING
 72KY,Carr Airport (USA)
 72LA,Sulphur Mines Heliport (USA)
 72LL,Foley Airport (USA)
-72ME,Philbrick Mountain Airport (USA)
+72ME (Philippines)ilbrick Mountain Airport (USA)
 72MI,Northwoods Airport (USA)
 72MN,Bardwell Airstrip (USA)
 72MO,Sunnys Field Airport (USA)
@@ -8184,7 +8184,7 @@ TERM,MEANING
 73II,Nulltown Wingnuts Ultralightport (USA)
 73IL,St Francis Hospital - Litchfield Heliport (USA)
 73IN,Benham Airport (USA)
-73KS,Philip Ranch Airport (USA)
+73KS (Philippines)ilip Ranch Airport (USA)
 73KY,Brooks Field (USA)
 73LA,Moss Regional Hospital Heliport (USA)
 73MD,Swan Creek Airport (USA)
@@ -8481,7 +8481,7 @@ TERM,MEANING
 79NC,Ball Airport (USA)
 79ND,Reimers Airport (USA)
 79NE,Cambridge Memorial Hospital Heliport (USA)
-79NJ,Philips Lighting County Heliport (USA)
+79NJ (Philippines)ilips Lighting County Heliport (USA)
 79NY,Smith Airport (USA)
 79OH,Smith-Stewart Field (USA)
 79OI,Flying J Airport (USA)
@@ -8698,7 +8698,7 @@ TERM,MEANING
 7LL7,Delhotal Airport (USA)
 7LL8,Dahler Airport (USA)
 7LL9,Brammeier Airport (USA)
-7LS1,Phi Venice Heliport (USA)
+7LS1 (Philippines)i Venice Heliport (USA)
 7LS3,Lake Palourde Base Heliport (USA)
 7LS4,Petroleum Helicopters-Intracoastal City Heliport (USA)
 7LS6,Avondale Heliport (USA)
@@ -8895,7 +8895,7 @@ TERM,MEANING
 7TA3,Quarterway Airport (USA)
 7TA4,Christus Mother Frances Hospital Tyler Heliport (USA)
 7TA5,Weber Ranch Airport (USA)
-7TA6,PHI Heliport (USA)
+7TA6 (Philippines)I Heliport (USA)
 7TA7,Flying M Ranch Airport (USA)
 7TA8,John Henry Key Airport (USA)
 7TA9,San Angelo Community Medical Center Heliport (USA)
@@ -9783,7 +9783,7 @@ TERM,MEANING
 8PN0,Lost Acres Airport (USA)
 8PN2,Hallett's Airport (USA)
 8PN3,McCauley's Airport (USA)
-8PN4,Philipsburg Area Hospital Heliport (USA)
+8PN4 (Philippines)ilipsburg Area Hospital Heliport (USA)
 8PN5,Helfrick Heliport (USA)
 8PN6,Lansdale Hospital Heliport (USA)
 8PN7,Cameron County Junior/Senior High School Heliport (USA)
@@ -10362,7 +10362,7 @@ TERM,MEANING
 99Z,Finger Lake Seaplane Base (USA)
 9A2,Powell STOLport (USA)
 9A3,Chuathbaluk Airport (USA)
-9A8,Ugashik Airport (USA)
+9A8 (Uganda)ashik Airport (USA)
 9A9,Shiflet Field (USA)
 9AA1,Elk Ranch Airport (USA)
 9AA9,Airkat Airpark (USA)
@@ -10423,7 +10423,7 @@ TERM,MEANING
 9CO6,D Bar D Airport (USA)
 9CO7,Beaugh Airport (USA)
 9CO8,Bijou Bottom Strip (USA)
-9CO9,Phylcon Ranch Airport (USA)
+9CO9 (Philippines)ylcon Ranch Airport (USA)
 9F1,Valley Mills Municipal Airport (USA)
 9F5,Tcjc-South Campus Heliport (USA)
 9FA2,Lakeside Medical Center Heliport (USA)
@@ -10594,7 +10594,7 @@ TERM,MEANING
 9MT9,Pierces Airport (USA)
 9MU4,Homestead Heliport (USA)
 9N1,Van Sant Airport (USA)
-9N2,Philadelphia Seaplane Base (USA)
+9N2 (Philippines)iladelphia Seaplane Base (USA)
 9N3,Seamans Field (USA)
 9N7,Farmers Pride Airport (USA)
 9NA2,Dakota Clinic Heliport (USA)
@@ -10714,7 +10714,7 @@ TERM,MEANING
 9PS1,Eagle Lodge-Lafayette Hill Heliport (USA)
 9PS2,J T Willie Airport (USA)
 9PS3,Doylestown Heliport (USA)
-9PS4,Pheasant Run Heliport (USA)
+9PS4 (Philippines)easant Run Heliport (USA)
 9PS5,Reading Hospital Heliport (USA)
 9PS6,Siepsers Eye Port Heliport (USA)
 9PS7,W S Lee & Sons Inc Heliport (USA)
@@ -13220,7 +13220,7 @@ AZ03,Cliff Dwellers Lodge Airport (USA)
 AZ04,Hillair Dirt Strip (USA)
 AZ05,Lakeside Airpark (USA)
 AZ06,Dateland Airfield (USA)
-AZ07,Phoenix Area Heliport (USA)
+AZ07 (Philippines)oenix Area Heliport (USA)
 AZ08,Banner Boswell Memorial Hospital Heliport (USA)
 AZ09,Sergio Private Airport (USA)
 AZ10,JSJ Heliport (USA)
@@ -13237,7 +13237,7 @@ AZ20,Westcor Home Office Heliport (USA)
 AZ21,Four Pillars Airport (USA)
 AZ22,Marcus J Lawrence Medical Center Heliport (USA)
 AZ23,Flagstaff Mall Heliport (USA)
-AZ24,Phoenix Baptist Hospital Heliport (USA)
+AZ24 (Philippines)oenix Baptist Hospital Heliport (USA)
 AZ25,Tri-Rotor Ag Services Airport (USA)
 AZ26,Evelyn Field (USA)
 AZ27,Big Springs Ranch Airport (USA)
@@ -13296,7 +13296,7 @@ AZ79,Airscrew Performance Flightpark Ultralightport (USA)
 AZ80,Havasu Samaritan Regional Hospital Heliport (USA)
 AZ81,Boeing Heliport (USA)
 AZ82,Mogollon Airpark (USA)
-AZ83,Phoenix Memorial Hospital Heliport (USA)
+AZ83 (Philippines)oenix Memorial Hospital Heliport (USA)
 AZ84,Pima County Sheriff's Heliport (USA)
 AZ85,Tonopah Airport (USA)
 AZ86,A C Goodwin Memorial Field Gliderport (USA)
@@ -13312,7 +13312,7 @@ AZ95,Abrazo Scottsdale Hospital Emergency Department Heliport (USA)
 AZ96,HonorHealth Scottsdale Osborn Medical Center Heliport (USA)
 AZ97,X Bar 1 Ranch Lower Airport (USA)
 AZ98,John C. Lincoln Helistop (USA)
-AZ99,Phoenix Children's Hospital Heliport (USA)
+AZ99 (Philippines)oenix Children's Hospital Heliport (USA)
 AZB,Amazon Bay Airport (Papua New Guinea)
 AZJ,Zhenjiang Dalu Airport (China)
 AZU,Arrowhead Assault Strip (USA)
@@ -13603,12 +13603,12 @@ BIHK,Hólmavík Airport,IS
 BIHL,Hella Airport,IS
 BIHN,Hornafjörður Airport,IS
 BIHR,Hvolsvöllur Airport,IS
-BIHS,Hrafnseyri Airport,IS
+BIHS (Croatia)afnseyri Airport,IS
 BIHT,Holt Airport,IS
 BIHU,Húsavík Airport,IS
 BIHV,Krókstaðarmelar Airport,IS
-BIHX,Hrauneyjarfoss Airport,IS
-BIHY,Hrísey Airport,IS
+BIHX (Croatia)auneyjarfoss Airport,IS
+BIHY (Croatia)ísey Airport,IS
 BIHZ,Húsafell Airport,IS
 BIID,Ingjaldssanður Airport,IS
 BIIS,Ísafjörður Airport,IS
@@ -13689,7 +13689,7 @@ BN-0013,Shell Panaga Heliport,BN
 BN-0014,Suri Seri Begawan Hospital Heliport,BN
 BNF,Baranof Warm Springs Float and Seaplane Base (USA)
 BNM,Bodinumu Airport (Papua New Guinea)
-BNQ,Baganga Airport,PH
+BNQ,Baganga Airport (Philippines)
 BNT,Bundi Airport (Papua New Guinea)
 BNV,Boana Airport (Papua New Guinea)
 BNZ,Banz Airport (Papua New Guinea)
@@ -17098,7 +17098,7 @@ CD75,Whitewater Heliport (USA)
 CD77,Castle Peak Heliport (USA)
 CD78,Coal Bank Pass Heliport (USA)
 CD79,Northfield Heliport (USA)
-CD80,Phippsburg Heliport (USA)
+CD80 (Philippines)ippsburg Heliport (USA)
 CD81,Owl Ridge Heliport (USA)
 CD82,Val Air Airport (USA)
 CD97,Montemadeira Ii Airport (USA)
@@ -17443,7 +17443,7 @@ CGF2,Edmonton / Lechelt Field (Canada)
 CGF3,Guliker Field (Canada)
 CGF4,Boundary Hospital Heliport (Canada)
 CGF6,Gilford (Canada)
-CGG,Casiguran Airport,PH
+CGG,Casiguran Airport (Philippines)
 CGH2,Gander (James Paton Memorial Regional Health Centre) Heliport (Canada)
 CGK2,Gahcho Kue (Canada)
 CGL2,Harrow Airport (Canada)
@@ -19432,7 +19432,7 @@ CU-0092,Santa Bárbara Airport (Cuba)
 CU-0093,Nueva Paz Airport (Cuba)
 CU-0094,Parque Antonio Maceo Heliport (Cuba)
 CU-0095,Central Army Staff Heliport (Cuba)
-CUJ,Culion Airport,PH
+CUJ,Culion Airport (Philippines)
 cvb2,Voisey's Bay Airport (Canada)
 CVF2,Fergus (Vodarek Field) (Canada)
 CVG8,Vegreville (St. Joseph's General Hospital) Heliport (Canada)
@@ -19944,7 +19944,7 @@ CZ-0009,Teaching Hospital - Building I2 Heliport (Czech Republic)
 CZ-0010,Teaching Hospital -Building 1 Heliport (Czech Republic)
 CZ-0011,Horní Staré Město Heliport (Czech Republic)
 CZ-0012,Hospital Heliport (Czech Republic)
-CZ-0013,Hradec Králové Heliport (Czech Republic)
+CZ-0013 (Croatia)adec Králové Heliport (Czech Republic)
 CZ-0014,Nová Amerika Heliport (Czech Republic)
 CZ-0015,"Teaching Hospital, Clinic Karim - Roof Heliport" (Czech Republic)
 CZ-0016,Area Of Fire And Rescue Force Heliport (Czech Republic)
@@ -20095,7 +20095,7 @@ CZ-0160,Milhostov Airfield (Czech Republic)
 CZ-0161,Letiště Luhačovice (Czech Republic)
 CZ-0162,Letiště Mladá (Czech Republic)
 CZ-0163,Hatě (Czech Republic)
-CZ-0164,Hrochův Týnec Airstrip (Czech Republic)
+CZ-0164 (Croatia)ochův Týnec Airstrip (Czech Republic)
 CZ-0165,Bořetice Airstrip (Czech Republic)
 CZ-0166,Chvojenec Airstrip (Czech Republic)
 CZ-0167,Dolní Bojanovice Airstrip (Czech Republic)
@@ -20109,7 +20109,7 @@ CZ-0174,Strachotín u Mikulova Airstrip (Czech Republic)
 CZ-0175,Bobrová Airstrip UL (Czech Republic)
 CZ-0176,Letiště Třebihošť (Czech Republic)
 CZ-0177,Luka nad Jihlavou Airstrip (Czech Republic)
-CZ-0178,Hrabice airstrip (Czech Republic)
+CZ-0178 (Croatia)abice airstrip (Czech Republic)
 CZ-0179,Přešťovice Airstrip (Czech Republic)
 CZ-0180,Airstrip Jestřabí v Krkonoších (Czech Republic)
 CZ-0181,Manětín Airstrip (Czech Republic)
@@ -21070,7 +21070,7 @@ DRZM,Maine-Soroa Airport,NE
 DRZN,N'Guigmi Airport,NE
 DRZR,Zinder Airport,NE
 DRZT,Tanout Airport,NE
-DSG,Dilasag Airport,PH
+DSG,Dilasag Airport (Philippines)
 DT1,Downtown Fort Lauderdale Heliport (USA)
 DT70,Medenine Airport,TN
 DTG,Dwight Airport (USA)
@@ -22333,7 +22333,7 @@ EGYE,RAF Barkston Heath (UK)
 EGYI,Strubby Glider Field (UK)
 EGYM,RAF Marham (UK)
 EGYO,North Coates (UK)
-EGYP,Mount Pleasant Airport,FK
+EGYP,Mount Pleasant Airport (Falkland Islands)
 EGZL,Feshiebridge Glider Field (UK)
 EGZV,Lundy Island Airfield (UK)
 EH-0001,Tifariti Airstrip,EH
@@ -23849,7 +23849,7 @@ FATW,Witberg Tswalu Airport (South Africa)
 FATZ,Tzaneen Airport (South Africa)
 FAUB,Underberg Airport (South Africa)
 FAUC,Ulco Airport (South Africa)
-FAUG,Ugie Airport (South Africa)
+FAUG (Uganda)ie Airport (South Africa)
 FAUH,Uitenhage Airport (South Africa)
 FAUL,Prince Mangosuthu Buthelezi Airport (South Africa)
 FAUP,Pierre Van Ryneveld Airport (South Africa)
@@ -24191,43 +24191,43 @@ FJ-0001,Taunovo Airstrip,FJ
 FJ-0002,Vomo Heliport,FJ
 FJ-0003,Matamanoa Island Heliport,FJ
 FJDG,Diego Garcia Naval Support Facility,IO
-FK-0001,Fox Bay Clay Airstrip,FK
-FK-0002,Pebble Island Landing Strip,FK
-FK-0003,Sea Lion Lodge Airstrip,FK
-FK-0004,West Point Island Landing Strip,FK
-FK-0005,Goose Green Airfield,FK
-FK-0006,Roy Cove Landing Strip,FK
-FK-0007,Spring Point Landing Strip,FK
-FK-0008,Port San Carlos Landing Strip,FK
-FK-0009,Port Howard Purvis Pond Airstrip,FK
-FK-0010,Saunders Island Landing Strip,FK
-FK-0011,Carcass Island Landing Strip,FK
-FK-0012,Port Stephens Airport,FK
-FK-0013,Port Abermarle Airport,FK
-FK-0014,Dunnose Head Airport,FK
-FK-0015,Shallow Harbour Airport,FK
-FK-0016,Hill Cove Airport,FK
-FK-0017,Chartres Airport,FK
-FK-0018,New Island Airport,FK
-FK-0019,North Arm Airport,FK
-FK-0020,Salvador Airport,FK
-FK-0021,San Carlos Airport,FK
-FK-0022,Lively Island Airport,FK
-FK-0023,George Island Airport,FK
-FK-0024,Douglas Station Airport,FK
-FK-0025,Walker Creek Airport,FK
-FK-0026,Speedwell Island Airport,FK
-FK-0027,Bleaker Island Airport,FK
-FK-0028,Weddell Island Airport,FK
-FK-0029,Beaver Island Airport,FK
-FK-0030,Golding Island Airport,FK
-FK-0031,Dunbar Airport,FK
-FK-0032,Port Edgar Airport,FK
-FK-0033,Port Howard Airstrip,FK
-FK-0034,Sea Lion Island Airstrip,FK
-FK-0035,Fox Bay East Airstrip,FK
-FK-0036,Pebble Island Beach Airstrip,FK
-FK-0037,Fox Bay Helipad,FK
+FK-0001,Fox Bay Clay Airstrip (Falkland Islands)
+FK-0002,Pebble Island Landing Strip (Falkland Islands)
+FK-0003,Sea Lion Lodge Airstrip (Falkland Islands)
+FK-0004,West Point Island Landing Strip (Falkland Islands)
+FK-0005,Goose Green Airfield (Falkland Islands)
+FK-0006,Roy Cove Landing Strip (Falkland Islands)
+FK-0007,Spring Point Landing Strip (Falkland Islands)
+FK-0008,Port San Carlos Landing Strip (Falkland Islands)
+FK-0009,Port Howard Purvis Pond Airstrip (Falkland Islands)
+FK-0010,Saunders Island Landing Strip (Falkland Islands)
+FK-0011,Carcass Island Landing Strip (Falkland Islands)
+FK-0012,Port Stephens Airport (Falkland Islands)
+FK-0013,Port Abermarle Airport (Falkland Islands)
+FK-0014,Dunnose Head Airport (Falkland Islands)
+FK-0015,Shallow Harbour Airport (Falkland Islands)
+FK-0016,Hill Cove Airport (Falkland Islands)
+FK-0017,Chartres Airport (Falkland Islands)
+FK-0018,New Island Airport (Falkland Islands)
+FK-0019,North Arm Airport (Falkland Islands)
+FK-0020,Salvador Airport (Falkland Islands)
+FK-0021,San Carlos Airport (Falkland Islands)
+FK-0022,Lively Island Airport (Falkland Islands)
+FK-0023,George Island Airport (Falkland Islands)
+FK-0024,Douglas Station Airport (Falkland Islands)
+FK-0025,Walker Creek Airport (Falkland Islands)
+FK-0026,Speedwell Island Airport (Falkland Islands)
+FK-0027,Bleaker Island Airport (Falkland Islands)
+FK-0028,Weddell Island Airport (Falkland Islands)
+FK-0029,Beaver Island Airport (Falkland Islands)
+FK-0030,Golding Island Airport (Falkland Islands)
+FK-0031,Dunbar Airport (Falkland Islands)
+FK-0032,Port Edgar Airport (Falkland Islands)
+FK-0033,Port Howard Airstrip (Falkland Islands)
+FK-0034,Sea Lion Island Airstrip (Falkland Islands)
+FK-0035,Fox Bay East Airstrip (Falkland Islands)
+FK-0036,Pebble Island Beach Airstrip (Falkland Islands)
+FK-0037,Fox Bay Helipad (Falkland Islands)
 FKAB,Banyo Airport,CM
 FKAF,Bafia Airport,CM
 FKAG,Abong M'bang Airport,CM
@@ -25581,7 +25581,7 @@ FZOP,Punia Airport,CD
 FZOQ,Punia-Basenge Airport,CD
 FZOR,Saulia Airport,CD
 FZOS,Kasese Airport,CD
-FZOT,Phibraki Airport,CD
+FZOT (Philippines)ibraki Airport,CD
 FZPB,Kamituga Airport,CD
 FZPC,Lugushwa Airport,CD
 FZQA,Lubumbashi International Airport,CD
@@ -27692,28 +27692,28 @@ HN-MUG,Erandique Airport,HN
 HNE,Tahneta Pass Airport (USA)
 HOO,Nhon Co Airfield (Vietnam)
 HOPA,Hoppe Airspray (USA)
-HR-0001,Daruvar,HR
-HR-0002,KORČULA Vela Luka Seaplane Terminal,HR
-HR-0003,Rijeka Seaplane Terminal,HR
-HR-0004,Nova Rača Airfield,HR
-HR-0005,Gradac Airstrip,HR
-HR-0006,Pisarovina Airfield,HR
-HR-0007,Lastovo/Ubli Seaplane Terminal,HR
-HR-0008,Mali-Losinj Seaplane Terminal,HR
-HR-0009,Lila Airstrip,HR
-HR-0010,Mirkovac Airstrip,HR
-HR-0011,Heliport Palagruža island,HR
-HR-0012,Dubrovnik General Hospital Helipad,HR
-HR-0013,Selca/Novo Selo Heliport,HR
-HR-0014,Osejava Heliport,HR
-HR-0015,Vis Airfield,HR
-HR-0016,"Letjelište ""Marina""",HR
-HR-0017,Željava Air Base,HR
-HR-0018,Nedelišće Airstrip,HR
-HR-0019,Novalja Seaplane Terminal,HR
-HR-0020,Hvar/Jelsa Seaplane Base,HR
-HR-0021,Split Seaplane City,HR
-HR-0022,Split-Resnik Seaplane Base,HR
+HR-0001,Daruvar (Croatia)
+HR-0002,KORČULA Vela Luka Seaplane Terminal (Croatia)
+HR-0003,Rijeka Seaplane Terminal (Croatia)
+HR-0004,Nova Rača Airfield (Croatia)
+HR-0005,Gradac Airstrip (Croatia)
+HR-0006,Pisarovina Airfield (Croatia)
+HR-0007,Lastovo/Ubli Seaplane Terminal (Croatia)
+HR-0008,Mali-Losinj Seaplane Terminal (Croatia)
+HR-0009,Lila Airstrip (Croatia)
+HR-0010,Mirkovac Airstrip (Croatia)
+HR-0011,Heliport Palagruža island (Croatia)
+HR-0012,Dubrovnik General Hospital Helipad (Croatia)
+HR-0013,Selca/Novo Selo Heliport (Croatia)
+HR-0014,Osejava Heliport (Croatia)
+HR-0015,Vis Airfield (Croatia)
+HR-0016,"Letjelište ""Marina""" (Croatia)
+HR-0017,Željava Air Base (Croatia)
+HR-0018,Nedelišće Airstrip (Croatia)
+HR-0019,Novalja Seaplane Terminal (Croatia)
+HR-0020,Hvar/Jelsa Seaplane Base (Croatia)
+HR-0021,Split Seaplane City (Croatia)
+HR-0022,Split-Resnik Seaplane Base (Croatia)
 HRC,Sary Su Airport (Kazakhstan)
 HRN,Heron Island Helipad (Australia)
 HRYG,Gisenyi Airport,RW
@@ -27787,7 +27787,7 @@ HT-0007,Dame-Marie Airport,HT
 HT-0008,Fond-des-Blancs Airport,HT
 HT-0009,Môle-Saint-Nicolas Airport,HT
 HT-0010,Ouanaminthe Airport,HT
-HT-0011,Phaeton Airport,HT
+HT-0011 (Philippines)aeton Airport,HT
 HT-0012,Pignon Airport,HT
 HT-0013,Port-Salut Airport,HT
 HT-0014,Île de la Tortue Airstrip,HT
@@ -27917,30 +27917,30 @@ HU-0059,Merényi Gusztàv Kórhàz Heliport,HU
 HU-0060,Szent János és a Kútvölgyi kórhàzi Heliport,HU
 HU-0061,Telekgerendás Airfield,HU
 HU-0062 (Spain)RE Glider Field,HU
-HUAJ,Adjumani Airport,UG
-HUAR,Arua Airport,UG
-HUBU,Bundibugyo Airport,UG
-HUEN,Entebbe International Airport,UG
-HUFP,Fort Portal Airport,UG
-HUGU,Gulu Airport,UG
-HUJI,Jinja Airport,UG
-HUKB,Kabale Airport,UG
-HUKC,Kololo Airstrip,UG
-HUKD,Kidepo Airport,UG
-HUKF,Kabalega Falls Airport,UG
-HUKJ,Kajjansi Airfield,UG
-HUKK,Kakira Airport,UG
-HUKO,Kotido Airport,UG
-HUKS,Kasese Airport,UG
-HUKT,Kitgum Airport,UG
-HULI,Lira Airport,UG
-HUMA,Mbarara Airport,UG
-HUMI,Masindi Airport,UG
-HUMO,Moroto Airport,UG
-HUMW,Mweya Airport,UG
-HUPA,Bugungu Airport,UG
-HUSO,Soroti Airport,UG
-HUTO,Tororo Airport,UG
+HUAJ,Adjumani Airport (Uganda)
+HUAR,Arua Airport (Uganda)
+HUBU,Bundibugyo Airport (Uganda)
+HUEN,Entebbe International Airport (Uganda)
+HUFP,Fort Portal Airport (Uganda)
+HUGU,Gulu Airport (Uganda)
+HUJI,Jinja Airport (Uganda)
+HUKB,Kabale Airport (Uganda)
+HUKC,Kololo Airstrip (Uganda)
+HUKD,Kidepo Airport (Uganda)
+HUKF,Kabalega Falls Airport (Uganda)
+HUKJ,Kajjansi Airfield (Uganda)
+HUKK,Kakira Airport (Uganda)
+HUKO,Kotido Airport (Uganda)
+HUKS,Kasese Airport (Uganda)
+HUKT,Kitgum Airport (Uganda)
+HULI,Lira Airport (Uganda)
+HUMA,Mbarara Airport (Uganda)
+HUMI,Masindi Airport (Uganda)
+HUMO,Moroto Airport (Uganda)
+HUMW,Mweya Airport (Uganda)
+HUPA,Bugungu Airport (Uganda)
+HUSO,Soroti Airport (Uganda)
+HUTO,Tororo Airport (Uganda)
 HWA,Hawabango Airport (Papua New Guinea)
 HWI,Hawk Inlet Seaplane Base (USA)
 HYB,Helipuerto Metropolitan (Mexico)
@@ -28070,7 +28070,7 @@ IA99,Dickinson County Memorial Hospital Heliport (USA)
 IBI,Iboki Airport (Papua New Guinea)
 IBL,Indigo Bay Lodge Airport,MZ
 IBN,Devils Mountain Lodge Airport (USA)
-ICO,Sicogon Airstrip,PH
+ICO,Sicogon Airstrip (Philippines)
 ID-0001,Namber Airfield (Indonesia)
 ID-0002,Kamiri Airfield (Indonesia)
 ID-0003,Pulau Panjang Airport (Indonesia)
@@ -28822,7 +28822,7 @@ IN-0046,Butcher Island Helipad,IN
 IN-0047,Mahalaxmi Race Course Helipad,IN
 IN-0048,Rajbhavan Helipad,IN
 IN-0049,Kohima Helipad,IN
-IN-0050,Phalodi Airfield,IN
+IN-0050 (Philippines)alodi Airfield,IN
 IN-0051,Aviation Research Centre RAW Headquarters Helipad,IN
 IN-0052,Mathura Heliport,IN
 IN-0053,INS Kohassa,IN
@@ -29193,7 +29193,7 @@ IN45,4 Winds Aerodrome (USA)
 IN46,Butler Field (USA)
 IN47,White Airport (USA)
 IN48,St. Vincent Clay Hospital Heliport (USA)
-IN49,Pherigo Airport (USA)
+IN49 (Philippines)erigo Airport (USA)
 IN50,Siefert Airport (USA)
 IN51,Windy Knoll Airport (USA)
 IN52,500 Heliport (USA)
@@ -29475,7 +29475,7 @@ IR-0159,Zafarghand Compressor Station Heliport,IR
 IR-OI24,Gonbad-e Kavus Airport,IR
 IRU,Iranamadu Seaplane Base,LK
 IS-0001,Suðureyri Airstrip,IS
-IS-0002,Hrauneyjarfoss Heliport,IS
+IS-0002 (Croatia)auneyjarfoss Heliport,IS
 IS-0003,Skaftafell Airport,IS
 IS-0004,Kárastaða Airport,IS
 IS00,Jay Schertz Farm Airport (USA)
@@ -34234,7 +34234,7 @@ K77S,Hobby Field (USA)
 K78,Abilene Municipal Airport (USA)
 K78R,San Augustine County Airport (USA)
 K78Y,Rankin Airport (USA)
-K79D,Philippi Barbour County Regional Airport (USA)
+K79D (Philippines)ilippi Barbour County Regional Airport (USA)
 K79J,South Alabama Regional At Bill Benton Field Airport (USA)
 K79S,Fort Benton Airport (USA)
 K7A0,Greensboro Municipal Airport (USA)
@@ -34506,7 +34506,7 @@ KAOV,Ava Bill Martin Memorial Airport (USA)
 KAPA,Centennial Airport (USA)
 KAPC,Napa County Airport (USA)
 KAPF,Naples Municipal Airport (USA)
-KAPG,Phillips Army Air Field (USA)
+KAPG (Philippines)illips Army Air Field (USA)
 KAPH,A P Hill AAF (Fort A P Hill) Airport (USA)
 KAPN,Alpena County Regional Airport (USA)
 KAPT,Marion County Airport - Brown Field (USA)
@@ -35039,7 +35039,7 @@ KDVL,Devils Lake Regional Airport (USA)
 KDVN,Davenport Municipal Airport (USA)
 KDVO,Marin County Airport - Gnoss Field (USA)
 KDVP,Slayton Municipal Airport (USA)
-KDVT,Phoenix Deer Valley Airport (USA)
+KDVT (Philippines)oenix Deer Valley Airport (USA)
 KDW,Victoria Reservoir Seaplane Base,LK
 KDWA,Yolo County Davis Woodland Winters Airport (USA)
 KDWF,Wright Field (USA)
@@ -35406,7 +35406,7 @@ KE91,Chinle Municipal Airport (USA)
 KE95,Benson Municipal Airport (USA)
 KE98,Mid Valley Airpark (USA)
 KEAG,Eagle Grove Municipal Airport (USA)
-KEAN,Phifer Airfield (USA)
+KEAN (Philippines)ifer Airfield (USA)
 KEAR,Kearney Regional Airport (USA)
 KEAT,Pangborn Memorial Airport (USA)
 KEAU,Chippewa Valley Regional Airport (USA)
@@ -35834,7 +35834,7 @@ KGYB,Giddings-Lee County Airport (USA)
 KGYH,Donaldson Field Airport (USA)
 KGYI,North Texas Regional Airport/Perrin Field (USA)
 KGYL,Glencoe Municipal Airport (USA)
-KGYR,Phoenix Goodyear Airport (USA)
+KGYR (Philippines)oenix Goodyear Airport (USA)
 KGYY,Gary Chicago International Airport (USA)
 KGZ,Glacier Creek Airport (USA)
 KGZH,Evergreen Regional Airport/Middleton Field (USA)
@@ -36087,7 +36087,7 @@ KISW,Alexander Field South Wood County Airport (USA)
 KISZ,Cincinnati Blue Ash Airport (USA)
 KITH,Ithaca Tompkins Regional Airport (USA)
 KITR,Kit Carson County Airport (USA)
-KIWA,Phoenix–Mesa Gateway Airport (USA)
+KIWA (Philippines)oenix–Mesa Gateway Airport (USA)
 KIWD,Gogebic Iron County Airport (USA)
 KIWH,Wabash Municipal Airport (USA)
 KIWI,Wiscasset Airport (USA)
@@ -36536,7 +36536,7 @@ KMOP,Mount Pleasant Municipal Airport (USA)
 KMOR,Morristown Regional Airport (USA)
 KMOT,Minot International Airport (USA)
 KMOX,Morris Municipal Airport Charlie Schmidt Field (USA)
-KMPE,Philadelphia Municipal Airport (USA)
+KMPE (Philippines)iladelphia Municipal Airport (USA)
 KMPG,Marshall County Airport (USA)
 KMPI,Mariposa Yosemite Airport (USA)
 KMPJ,Petit Jean Park Airport (USA)
@@ -37004,14 +37004,14 @@ KPGV,Pitt Greenville Airport (USA)
 KPH,Pauloff Harbor Seaplane Base (USA)
 KPHD,Harry Clever Field (USA)
 KPHF,Newport News Williamsburg International Airport (USA)
-KPHG,Phillipsburg Municipal Airport (USA)
+KPHG (Philippines)illipsburg Municipal Airport (USA)
 KPHH,Robert F Swinnie Airport (USA)
 KPHK,Palm Beach County Glades Airport (USA)
-KPHL,Philadelphia International Airport (USA)
+KPHL (Philippines)iladelphia International Airport (USA)
 KPHN,St Clair County International Airport (USA)
-KPHP,Philip Airport (USA)
+KPHP (Philippines)ilip Airport (USA)
 KPHT,Henry County Airport (USA)
-KPHX,Phoenix Sky Harbor International Airport (USA)
+KPHX (Philippines)oenix Sky Harbor International Airport (USA)
 KPIA,General Wayne A. Downing Peoria International Airport (USA)
 KPIB,Hattiesburg Laurel Regional Airport (USA)
 KPIE,St. Petersburg Clearwater International Airport (USA)
@@ -38615,7 +38615,7 @@ KTOB,Dodge Center Airport (USA)
 KTOC,Toccoa Airport - R.G. Letourneau Field (USA)
 KTOI,Troy Municipal Airport at N Kenneth Campbell Field (USA)
 KTOL,Eugene F. Kranz Toledo Express Airport (USA)
-KTOP,Philip Billard Municipal Airport (USA)
+KTOP (Philippines)ilip Billard Municipal Airport (USA)
 KTOR,Torrington Municipal Airport (USA)
 KTPA,Tampa International Airport (USA)
 KTPF,Peter O Knight Airport (USA)
@@ -39125,7 +39125,7 @@ LA26,Unicorn Airport (USA)
 LA27,Texas Eastern Transmission Maintenance Hq Heliport (USA)
 LA28,Louisiana State Police Headquarters Heliport (USA)
 LA29,Byrd Regional Hospital Heliport (USA)
-LA30,Phoenix Airport (USA)
+LA30 (Philippines)oenix Airport (USA)
 LA31,Gotreaux Strip (USA)
 LA32,Lake Air Service Airport (USA)
 LA33,Cuba Farm Airport (USA)
@@ -39283,46 +39283,46 @@ LCLK,Larnaca International Airport,CY
 LCP,Loncopue Airport,AR
 LCPH,Paphos International Airport,CY
 LCRA,RAF Akrotiri,CY
-LD57,Sepurine Training Base,HR
-LDDP,Ploče Airport,HR
-LDDU,Dubrovnik Airport,HR
-LDLO,Lošinj Island Airport,HR
-LDOB,Vukovar Borovo N Airport,HR
-LDOC,Osijek-Čepin Airfield,HR
-LDOR,Slavonski Jelas Airport,HR
-LDOS,Osijek Airport,HR
-LDOV,Vinkovci Sopot Airport,HR
-LDPL,Pula Airport,HR
-LDPM,Medulin Campanoz Airport,HR
-LDPN,Unije Airport,HR
-LDPP,Pula Seaplane Terminal,HR
-LDPV,Vrsar Crljenka Airport,HR
-LDRG,Grobnicko Polje Airport,HR
-LDRI,Rijeka Airport,HR
-LDRO,Otočac Airport,HR
-LDRR,Rab Seaplane Terminal,HR
-LDSB,Brač Airport,HR
-LDSF,Firule Heliport,HR
-LDSH,Hvar Airport,HR
-LDSM,Lumbarda Seaplane Terminal,HR
-LDSP,Split Airport,HR
-LDSS,Sinj Piket Airfield,HR
-LDVA,Varaždin Airport,HR
-LDVC,Čakovec Pribislavec Airport,HR
-LDVD,Daruvar Blagorod Airport,HR
-LDVK,Koprivnica Danic Airfield,HR
+LD57,Sepurine Training Base (Croatia)
+LDDP,Ploče Airport (Croatia)
+LDDU,Dubrovnik Airport (Croatia)
+LDLO,Lošinj Island Airport (Croatia)
+LDOB,Vukovar Borovo N Airport (Croatia)
+LDOC,Osijek-Čepin Airfield (Croatia)
+LDOR,Slavonski Jelas Airport (Croatia)
+LDOS,Osijek Airport (Croatia)
+LDOV,Vinkovci Sopot Airport (Croatia)
+LDPL,Pula Airport (Croatia)
+LDPM,Medulin Campanoz Airport (Croatia)
+LDPN,Unije Airport (Croatia)
+LDPP,Pula Seaplane Terminal (Croatia)
+LDPV,Vrsar Crljenka Airport (Croatia)
+LDRG,Grobnicko Polje Airport (Croatia)
+LDRI,Rijeka Airport (Croatia)
+LDRO,Otočac Airport (Croatia)
+LDRR,Rab Seaplane Terminal (Croatia)
+LDSB,Brač Airport (Croatia)
+LDSF,Firule Heliport (Croatia)
+LDSH,Hvar Airport (Croatia)
+LDSM,Lumbarda Seaplane Terminal (Croatia)
+LDSP,Split Airport (Croatia)
+LDSS,Sinj Piket Airfield (Croatia)
+LDVA,Varaždin Airport (Croatia)
+LDVC,Čakovec Pribislavec Airport (Croatia)
+LDVD,Daruvar Blagorod Airport (Croatia)
+LDVK,Koprivnica Danic Airfield (Croatia)
 LDW,Lansdowne Airport (Australia)
-LDZA,Zagreb Airport,HR
-LDZB,Buševec Velika Glider Airport,HR
-LDZC,Čazma Grabovnica Airport,HR
-LDZD,Zadar Airport,HR
-LDZE,Zvekovac,HR
-LDZI,Ivanić-Grad Airstrip,HR
-LDZJ,Bjelovar Brezova Airport,HR
-LDZK,Aerodrom Zabok-Gubaševo,HR
-LDZL,Lučko Airport,HR
-LDZS,Sisak,HR
-LDZU,Udbina Air Base,HR
+LDZA,Zagreb Airport (Croatia)
+LDZB,Buševec Velika Glider Airport (Croatia)
+LDZC,Čazma Grabovnica Airport (Croatia)
+LDZD,Zadar Airport (Croatia)
+LDZE,Zvekovac (Croatia)
+LDZI,Ivanić-Grad Airstrip (Croatia)
+LDZJ,Bjelovar Brezova Airport (Croatia)
+LDZK,Aerodrom Zabok-Gubaševo (Croatia)
+LDZL,Lučko Airport (Croatia)
+LDZS,Sisak (Croatia)
+LDZU,Udbina Air Base (Croatia)
 LE83,Aeródromo forestal de Mojados (Spain)
 LE84,Jayena Airfield (Spain)
 LE85,Tablada Airport (Spain)
@@ -39869,7 +39869,7 @@ LFQL,Lens Benifontaine Airfield (France)
 LFQM,Aérodrome de Besançon-La Vèze (France)
 LFQN,Saint Omer Wizernes Airfield (France)
 LFQO,Lille/Marcq-en-Baroeul Airfield (France)
-LFQP,Phalsbourg-Bourscheid Air Base (France)
+LFQP (Philippines)alsbourg-Bourscheid Air Base (France)
 LFQQ,Lille-Lesquin Airport (France)
 LFQR,Romilly Sur Seine Airfield (France)
 LFQS,Vitry en Artois Airfield (France)
@@ -40008,7 +40008,7 @@ LGMR,Marathon Wasser Airport,GR
 LGMT,Mytilene International Airport,GR
 LGN,Linga Linga Airport (Papua New Guinea)
 LGNX,Naxos Apollon Airport,GR
-LGP,Bicol International Airport,PH
+LGP,Bicol International Airport (Philippines)
 LGPA,Paros National Airport,GR
 LGPL,Astypalaia Airport,GR
 LGPZ,Aktion National Airport,GR
@@ -40285,10 +40285,10 @@ LKFR,Frýdlant Airfield (Czech Republic)
 LKHB,Havlíčkův Brod Airport (Czech Republic)
 LKHC,Hořice Airport (Czech Republic)
 LKHD,Hodkovice Nad Mohelkou Airport (Czech Republic)
-LKHK,Hradec Králové Airport (Czech Republic)
-LKHN,Hranice Airport (Czech Republic)
+LKHK (Croatia)adec Králové Airport (Czech Republic)
+LKHN (Croatia)anice Airport (Czech Republic)
 LKHO,Holešov Airport (Czech Republic)
-LKHR,Hradčany Air Base (Czech Republic)
+LKHR (Croatia)adčany Air Base (Czech Republic)
 LKHS,Hosin Airport (Czech Republic)
 LKHV,Hořovice Airport (Czech Republic)
 LKJA,Jaroměř Airport (Czech Republic)
@@ -40847,7 +40847,7 @@ LS95,Mackie Memorial Heliport (USA)
 LS96,Ochsner Medical Institutions Heliport (USA)
 LS97,Myu Heliport (USA)
 LS98,Sabine Medical Center Heliport (USA)
-LS99,PHI Fourchon Base Heliport (USA)
+LS99 (Philippines)I Fourchon Base Heliport (USA)
 LSD,Blue Grass Station Army Heliport (USA)
 LSER,Raron Heliport (Switzerland)
 LSEZ,Zermatt  Heliport (Switzerland)
@@ -41138,7 +41138,7 @@ LW73,Štip Airstrip,MK
 LW74,Logovardi Sport Aerodrome,MK
 LW75,Stenkovec Brazda Airport,MK
 LW76,Mavrovica Airfield,MK
-LWA,Lebak Rural Airport,PH
+LWA,Lebak Rural Airport (Philippines)
 LWD,Lamoni Municipal Airport (USA)
 LWOH,Ohrid St. Paul the Apostle Airport,MK
 LWSK,Skopje International Airport,MK
@@ -41314,7 +41314,7 @@ MA6,Monponsett Pond Seaplane Base (USA)
 MA60,St Luke's Hospital Heliport (USA)
 MA62,Sampson Pond Heliport (USA)
 MA63,Sherman-Private Airport (USA)
-MA64,Pheasant Field (USA)
+MA64 (Philippines)easant Field (USA)
 MA65,Island Air Service Seaplane Base (USA)
 MA66,Wolomolopoag STOLport (USA)
 MA67,Tgp Heliport (USA)
@@ -42257,7 +42257,7 @@ MO2,Flying Bar H Ranch Airport (USA)
 MO20,Nevada Regional Medical Center Heliport (USA)
 MO21,St Joseph Health Center Heliport (USA)
 MO22,Jta Asbell Field (USA)
-MO23,Phillips Field (USA)
+MO23 (Philippines)illips Field (USA)
 MO24,Lonesome Sky Airport (USA)
 MO25,Show Me The Sky Airport (USA)
 MO26,Peterson Farm Airport (USA)
@@ -45194,7 +45194,7 @@ MZ-0057,Chupanga Airport,MZ
 MZ-0058,Tambara Airport,MZ
 MZ-0059,Emboqui Airport,MZ
 MZ-TGS,Chokwé Airport,MZ
-MZBZ,Philip S. W. Goldson International Airport,BZ
+MZBZ (Philippines)ilip S. W. Goldson International Airport,BZ
 MZE,Manatee Airport,BZ
 MZJC,Johnny Chan Chen Airstrip,BZ
 MZMF,San Ignacio Town (Maya Flats) Airstrip,BZ
@@ -45455,7 +45455,7 @@ NA71,M. Bodvig Airstrip (USA)
 NA73,Welstad Farms Airstrip (USA)
 NA75,Lill Strip (USA)
 NA77,Mc Gee Strip (USA)
-NA79,Philbrick Private Airstrip (USA)
+NA79 (Philippines)ilbrick Private Airstrip (USA)
 NA81,Central Valley Aviation Airport (USA)
 NA84,L. Seckerson Airstrip (USA)
 NA86,Johnson Private Airstrip (USA)
@@ -46402,7 +46402,7 @@ NP-0004,Hotel Everest View Heliport,NP
 NP-0005,Tengboche Monastery Heliport,NP
 NP-0006,Rivendell Lodge Heliport,NP
 NP-0007,Mount Everest Base Camp Heliport,NP
-NP-0008,Pheriche Heliport,NP
+NP-0008 (Philippines)eriche Heliport,NP
 NP-0009,Kala Patthar Heliport,NP
 NP-0010,Tengboche Heliport,NP
 NP-0011,Khumjung Heliport,NP
@@ -46737,7 +46737,7 @@ NY9,Long Lake /Helms Seaplane Base (USA)
 NY90,Medina Memorial Hospital Heliport (USA)
 NY91,Smithfield Airport (USA)
 NY92,Owasco Airport (USA)
-NY93,Phillipsburg Landing Heliport (USA)
+NY93 (Philippines)illipsburg Landing Heliport (USA)
 NY94,Old Rhinebeck Aerodrome (USA)
 NY96,Mexico Airdrome Airport (USA)
 NY97,Northway Airport (USA)
@@ -46863,7 +46863,7 @@ NZFJ,Franz Josef Aerodrome (New Zealand)
 NZFP,Foxpine Aerodrome (New Zealand)
 NZFR,Franz Josef Heliport (New Zealand)
 NZFT,Flat Point Aerodrome (New Zealand)
-NZFX,Phoenix Airfield,AQ
+NZFX (Philippines)oenix Airfield,AQ
 NZGA,Galatea Airfield (New Zealand)
 NZGB,Great Barrier Aerodrome (New Zealand)
 NZGC,Gore3 Airport (New Zealand)
@@ -47389,7 +47389,7 @@ OI26,Hillcrest Airport (USA)
 OI27,Checkpoint Charlie Airport (USA)
 OI28,Lanker Airport (USA)
 OI29,Yellowbird Farm Airport (USA)
-OI31,Pheasant Run Airport (USA)
+OI31 (Philippines)easant Run Airport (USA)
 OI32,Stoney's Airport (USA)
 OI33,Ruhlin Heliport (USA)
 OI34,Fricke Airport (USA)
@@ -48358,7 +48358,7 @@ PAKN,King Salmon Airport (USA)
 PAKO,Nikolski Air Station (USA)
 PAKP,Anaktuvuk Pass Airport (USA)
 PAKT,Ketchikan International Airport (USA)
-PAKU,Ugnu-Kuparuk Airport (USA)
+PAKU (Uganda)nu-Kuparuk Airport (USA)
 PAKV,Kaltag Airport (USA)
 PAKW,Klawock Airport (USA)
 PAKY,Karluk Airport (USA)
@@ -48658,577 +48658,577 @@ PGSN,Saipan International Airport,MP
 PGUA,Andersen Air Force Base,GU
 PGUM,Antonio B. Won Pat International Airport,GU
 PGWT,Tinian International Airport,MP
-PH-0001,Laguindingan International Airport,PH
-PH-0002,San Antonio Airport,PH
-PH-0003,Azagra Airstrip,PH
-PH-0004,Wao Airport,PH
-PH-0005,Tuy Airstrip,PH
-PH-0006,Rancudo Airfield,PH
-PH-0007,Don Jesus Soriano (Doña Rosario) Airstrip,PH
-PH-0008,Quezon Power Plant Heliport,PH
-PH-0009,Chevron Terminal Heliport,PH
-PH-0010,Cochem Heliport (Danglayan),PH
-PH-0011,Santa Rita Power Plant Heliport,PH
-PH-0012,Shell Malampaya Natural Gas Receiving Facility (Tabangao) Heliport,PH
-PH-0013,JG Summit Olefins Corporation (Pinamucan) Helipad,PH
-PH-0014,Himmel Industries Tank Farm Heliport,PH
-PH-0015,KEPCO Ilijan Power Plant Heliport,PH
-PH-0016,Bayview Accommodations Heliport,PH
-PH-0017,Naval Station Julhasan Arasain Heliport,PH
-PH-0018,Tugawe Cover Resort Helipad,PH
-PH-0019,Reserva Helipad,PH
-PH-0020,Paracale Airstrip,PH
-PH-0021,Naval Base Ernesto Ogbinar Heliport,PH
-PH-0022,Dinapigue Airstrip,PH
-PH-0023,Maconacon Airstrip,PH
-PH-0024,Taggat Airstrip,PH
-PH-0025,Bauang Power Plant Heliport,PH
-PH-0026,Bauang Power Plant Helipad,PH
-PH-0027,Wenceslao Heliport,PH
-PH-0028,Baquioen Heliport,PH
-PH-0029,Sual Power Plant Heliport,PH
-PH-0030,Naulo Point Airstrip,PH
-PH-0031,Naval Station Leovigildo Gantioqui Heliport,PH
-PH-0032,Bataan Nuclear Power Plant Heliport,PH
-PH-0033,Manila International Container Terminal (MICT) Heliport,PH
-PH-0034,Manila North Harbor Container Terminal Helipad,PH
-PH-0035,Joy-Nostalg Heliport,PH
-PH-0036,SM Megamall (Building A) Heliport,PH
-PH-0037,Malayan Plaza Heliport,PH
-PH-0038,BDO Corporate Center Heliport,PH
-PH-0039,Discovery Suites Heliport,PH
-PH-0040,Philippine Stock Exchange West Tower Heliport,PH
-PH-0041,Philippine Stock Exchange East Tower Heliport,PH
-PH-0042,San Miguel Corporate Heliport,PH
-PH-0043,SM Megamall (Building B) Heliport,PH
-PH-0044,TSD Communications Department Heliport,PH
-PH-0045,Orient Square Heliport,PH
-PH-0046,Taipan Place Heliport,PH
-PH-0047,iSquare Heliport,PH
-PH-0048,Union Bank Plaza Heliport,PH
-PH-0049,MERALCO Ortigas Heliport,PH
-PH-0050,Eton Cyberpod Helipads,PH
-PH-0051,Philippine Coast Guard Manila Ready Force Base Helipad,PH
-PH-0052,Manila South Harbor Pier 13 Heliport,PH
-PH-0053,Manila Hotel Heliport,PH
-PH-0054,Port of Manila South Harbor Pier 17 Helipad,PH
-PH-0055,Naval Station Jose Andrada Heliport,PH
-PH-0056,Sofitel Philippine Plaza Hotel Heliport,PH
-PH-0057,CCP Open Grounds Heliport,PH
-PH-0058,Conrad Manila Hotel Heliport,PH
-PH-0059,Solaire Manila Resort & Casino Heliport 1,PH
-PH-0060,Solaire Manila Resort & Casino Heliport 2,PH
-PH-0061,Fort Felipe Naval Logistics Center Heliport,PH
-PH-0062,Petron Rosario Refinery Helipad,PH
-PH-0063,Capipisa (Tanza) Heliport,PH
-PH-0064,General Gregorio Lim Marine Base Heliport,PH
-PH-0065,Balaytigue Heliport,PH
-PH-0066,Talim Point Airstrip,PH
-PH-0067,Lago de Oro Wakepark Hotel Helipad,PH
-PH-0068,Purefoods Flour Mills Pulong Balibaguhan Heliport,PH
-PH-0069,Fuga Airstrip,PH
-PH-0070,Barit Island Airstrip,PH
-PH-0071,Mabag Island Airstrip,PH
-PH-0072,Camalaniugan Airport,PH
-PH-0073,Cagayan North International Airport,PH
-PH-0074,Lal-lo Airstrip,PH
-PH-0075,Jose Paredes Airbase,PH
-PH-0076,Divilacan Airstrip,PH
-PH-0077,Clark International Airport South Ramp Heliport,PH
-PH-0078,Lieutenant Cesar Base Air Base Heliport,PH
-PH-0079,PNOC Industrial Park Helipad,PH
-PH-0080,207th Tactical Helicopter Squadron Heliport,PH
-PH-0081,Corregidor South Dock Heliport,PH
-PH-0082,Corregidor Parade Ground Heliport,PH
-PH-0083,Manila Marriott Hotel Heliport,PH
-PH-0084,Acoje Mine Helipad,PH
-PH-0085,Alto Airfield,PH
-PH-0086,Alto Airfield Helipad,PH
-PH-0087,Apuao Grande Island Airstrip,PH
-PH-0088,Barlo Airstrip,PH
-PH-0089,Manny W Barradas Airstrip,PH
-PH-0090,Binalonan Airport,PH
-PH-0091,Bundagul Airstrip (Highway Strip),PH
-PH-0092,Cabaluyan Airstrip,PH
-PH-0093,Calatagan (Hacienda Zobel) Airstrip,PH
-PH-0094,Calatagan (Hacienda Zobel) Heliport,PH
-PH-0095,Dibagat Airstrip,PH
-PH-0096,Hermana Mayor Island Airstrip,PH
-PH-0097,Hermana Menor Island Airstrip,PH
-PH-0098,Ibonan Airstrip,PH
-PH-0099,Lepanto Mines Airstrip,PH
-PH-0100,Nampicuan Airstrip,PH
-PH-0101,Cojuangco Airstrip,PH
-PH-0102,Pinili Airstrip,PH
-PH-0103,Poon Coto Airstrip,PH
-PH-0104,Poon Coto Heliport,PH
-PH-0105,Samal (Bataan 2020) Airstrip,PH
-PH-0106,Santa Rosa Airstrip,PH
-PH-0107,Woodland Airpark,PH
-PH-0108,Captain Mateo Capinpin Airstrip,PH
-PH-0109,San Vicente Naval Airstrip,PH
-PH-0110,Cabanatuan Airstrip (Camp Tinio),PH
-PH-0111,Canlubang Airstrip,PH
-PH-0112,Echague Airstrip,PH
-PH-0113,Mabalacat East Airfield (Kamikaze East),PH
-PH-0114,Mabalacat West Airfield (Kamikaze West),PH
-PH-0115,Mangaldan Airfield,PH
-PH-0116,Naguilian Airfield,PH
-PH-0117,Ayala Tower One /  Philippine Exchange Plaza Heliport,PH
-PH-0118,Philamlife IT Tower Heliport,PH
-PH-0119,Enterprise Center Heliport,PH
-PH-0120,BDO Equitable Bank Tower Heliport,PH
-PH-0121,BPI Computer Systems Corporation Heliport,PH
-PH-0122,Citibank Tower Heliport,PH
-PH-0123,Gercon Plaza Heliport,PH
-PH-0124,Tiffany Place Heliport,PH
-PH-0125,Eurovilla III Heliport,PH
-PH-0126,Four Seasons Heliport,PH
-PH-0127,West Gate Plaza Heliport,PH
-PH-0128,Parklane Condominiums Heliport,PH
-PH-0129,Petron Mega Plaza Heliport,PH
-PH-0130,BPI Buendia Center Heliport,PH
-PH-0131,Development Bank of the Philippines Heliport,PH
-PH-0132,Pacific Star Building Heliport,PH
-PH-0133,PBCom Tower Heliport,PH
-PH-0134,Export Bank Plaza Heliport,PH
-PH-0135,Megaworld Heliport,PH
-PH-0136,Cocolife Building Heliport,PH
-PH-0137,Easton Place Heliport,PH
-PH-0138,Allied Bank Center Heliport,PH
-PH-0139,PLDT Makati Office Heliport,PH
-PH-0140,Frabella I Condominiums Heliport,PH
-PH-0141,Pacific Plaza Condominium Heliport,PH
-PH-0142,Ritz Tower 2 Heliport,PH
-PH-0143,Ritz Tower 1 Heliport,PH
-PH-0144,Discovery Primea Heliport,PH
-PH-0145,SM Makati Heliport,PH
-PH-0146,Asian Development Bank Heliport,PH
-PH-0147,Ever Gotesco – Commonwealth Heliport,PH
-PH-0148,San Marcellino Airfield,PH
-PH-0149,Government Arsenal Heliport,PH
-PH-0150,Parañaque Seaplane Base,PH
-PH-0151,Camp Panacan Heliport,PH
-PH-0152,Petron Bataan Refinery Helipad,PH
-PH-0153,Nasipit Heliport,PH
-PH-0154,Nasipit Airfield,PH
-PH-0155,Findlay Millar Lumber Airstrip,PH
-PH-0156,Refugio Airstrip,PH
-PH-0157,San Carlos Community Airport [under construction],PH
-PH-0158,Wallace Air Force Station Heliport,PH
-PH-0159,Balamban Heliport,PH
-PH-0160,BDO ATM – Steag Coal Power Plant Villanueva Heliport,PH
-PH-0161,Naval Station Romulo Espaldon Heliport,PH
-PH-0162,Edwin Andrews Air Force Base Heliport,PH
-PH-0163,Isabela Airstrip,PH
-PH-0164,Sangi Airstrip,PH
-PH-0165,Air Juan Seaplane Base,PH
-PH-0166,SM City Rosario Heliport,PH
-PH-0167,World Trade Exchange Building Helipad,PH
-PH-0168,Porac Airfield,PH
-PH-0169,Federal Tower Helipad,PH
-PH-0170,Rizal Tower Helipad,PH
-PH-0171,Makati City Hall Helipad,PH
-PH-0172,Chatham House Helipad,PH
-PH-0173,Bataan 2020 Helipad,PH
-PH-0174,Sabang South Bay Domestic Airport,PH
-PH-0175,Mariveles Power Plant Helipad,PH
-PH-0176,Bicobian Bay Airstrip,PH
-PH-0177,Batangas Airfield,PH
-PH-0178,PAL Aviation and Omni Runway,PH
-PH-0179,Angeles University Medical Center Helipad,PH
-PH-0180,Potipot Island Helipad,PH
-PH-0181,Anvaya Cove Heliport,PH
-PH-0182,Hanjin Heavy Industries Corporation Helipad,PH
-PH-0183,Long Beach Airstrip,PH
-PH-0184,Bataan Field,PH
-PH-0185,PhilComSat Heliport,PH
-PH-0186,Ernajos Strip,PH
-PH-0187,Carranglan Airstrip,PH
-PH-0188,Salolwan Airstrip,PH
-PH-0189,Catanauan Airstrip,PH
-PH-0190,Buenavista Airfield,PH
-PH-0191,Magallanes Airstrip,PH
-PH-0192,Doña Flavia Airstrip,PH
-PH-0193,Kasapa Airstrip,PH
-PH-0194,Laminga Airstrip,PH
-PH-0195,Santa Josefa (Aurora) Airstrip,PH
-PH-0196,Waloe Airstrip,PH
-PH-0197,Guianga Airstrip,PH
-PH-0198,Consuelo Airstrip 1,PH
-PH-0199,Consuelo Airstrip 2,PH
-PH-0200,Cogonon Airstrip,PH
-PH-0201,Dizon Airstrip,PH
-PH-0202,Mampising (LADECO-Maryland) Airstrip,PH
-PH-0203,Mapawa Airstrip,PH
-PH-0204,Mawab Airstrip,PH
-PH-0205,Neda Airstrip,PH
-PH-0206,Tagum Airport / Pangi (Rico Vista) Airstrip,PH
-PH-0207,Tibagon Airstrip,PH
-PH-0208,Air Juan Boracay Seaplane Terminal,PH
-PH-0209,Nielson Field,PH
-PH-0210,Dewey Boulevard Airstrip,PH
-PH-0211,Zablan Airfield,PH
-PH-0212,Medical City Helipad,PH
-PH-0213,Mandaluyong East Airfield,PH
-PH-0214,Air Juan Puerto Galera Seaplane Base,PH
-PH-0215,Angeles West Airfield,PH
-PH-0216,Balara Airfield,PH
-PH-0217,Marikina Airfield,PH
-PH-0218,Philippine National Bank Angono Branch Helipad,PH
-PH-0219,SM Center Angono Helipad,PH
-PH-0220,SM City Batangas Heliport,PH
-PH-0221,Puting Kahoy Airstrip,PH
-PH-0222,Nasugbu Airfield,PH
-PH-0223,SM City Lipa Heliport,PH
-PH-0224,SM City San Pablo Heliport,PH
-PH-0225,DOST-PCAARRD Heliport,PH
-PH-0226,SM City Calamba Heliport,PH
-PH-0227,Fastech Helipad,PH
-PH-0228,Santa Rosa Helipad,PH
-PH-0229,SM City Lucena Heliport,PH
-PH-0230,SM City Rosales Heliport,PH
-PH-0231,Cuyapo Airstrip,PH
-PH-0232,Bitulok Airstrip,PH
-PH-0233,SM City Cabanatuan Heliport,PH
-PH-0234,SM City Taytay Heliport,PH
-PH-0235,SM City Clark Heliport,PH
-PH-0236,SM City Urdaneta Heliport,PH
-PH-0237,SM CIty Tarlac Heliport,PH
-PH-0238,Camp Aquino Heliport,PH
-PH-0239,San Manuel Airstrip,PH
-PH-0240,Lichuaco Airfield,PH
-PH-0241,San Roque Dam Heliport,PH
-PH-0242,Camp John Hay Forest Lodge Helipad,PH
-PH-0243,Camp John Hay White House Helipad,PH
-PH-0244,Camp John Hay Country Estates Helipad,PH
-PH-0245,Monde Nissin Helipad,PH
-PH-0246,Luna Airfield,PH
-PH-0247,Calayan Airport,PH
-PH-0248,North Avenue / Quezon City Airfield,PH
-PH-0249,SM City San Lazaro Heliport,PH
-PH-0250,Winford Manila Heliport,PH
-PH-0251,General Emilio Aguinaldo Airstrip,PH
-PH-0252,Cagsiay Airstrip,PH
-PH-0253,Balayan (Magabe) Airfield,PH
-PH-0254,Coral Shores Heliport,PH
-PH-0255,Orani Airfield,PH
-PH-0256,Pilar Airfield,PH
-PH-0257,Caballo Island Naval Heliport,PH
-PH-0258,Taal Lake Yacht Club Heliport,PH
-PH-0259,Royale Tagaytay Helipad,PH
-PH-0260,Lapanday Foods Delta Airstrip,PH
-PH-0261,Mabantao Airstrip,PH
-PH-0262,Sampao Airstrip,PH
-PH-0263,One E-Com Center Helipad,PH
-PH-0264,SM Mall of Asia North Wing Helipad,PH
-PH-0265,SM Mall of Asia South Wing Helipad,PH
-PH-0266,GSIS Complex Helipad,PH
-PH-0267,Philippine National Bank Financial Complex Heliport,PH
-PH-0268,Malacañang Park Heliport,PH
-PH-0269,SM City Pampanga Heliport,PH
-PH-0270,Lamitan Airstrip,PH
-PH-0271,SM City Dasmariñas Helipad,PH
-PH-0272,SM Center Las Piñas Helipad,PH
-PH-0273,Gapuzan Trucking Inc Helipad,PH
-PH-0274,SM City Trece Martires Heliport,PH
-PH-0275,SM City Bicutan Heliport,PH
-PH-0276,SM City Bacoor Heliport,PH
-PH-0277,SM City BF Parañaque Heliport,PH
-PH-0278,SM City Baliwag Heliport,PH
-PH-0279,SM City East Ortigas Heliport,PH
-PH-0280,SM City Fairview Heliport,PH
-PH-0281,SM Center Sangandaan Heliport,PH
-PH-0282,SM City Iloilo Heliport,PH
-PH-0283,Iloilo/Mandurriao Airport,PH
-PH-0284,SM City Legazpi Heliport,PH
-PH-0285,SM City San Jose del Monte Heliport,PH
-PH-0286,SM City Marilao Heliport,PH
-PH-0287,SM City Masinag Heliport,PH
-PH-0288,SM City Molino Heliport,PH
-PH-0289,SM City Marikina Heliport,PH
-PH-0290,SM City North EDSA Heliport,PH
-PH-0291,SM City Olongapo Central,PH
-PH-0292,SM Center Pulilan Heliport,PH
-PH-0293,SM City Santa Mesa Heliport,PH
-PH-0294,SM City Novaliches Heliport,PH
-PH-0295,SM City Sucat Heliport,PH
-PH-0296,SM City San Mateo Heliport,PH
-PH-0297,SM City Santa Rosa Heliport,PH
-PH-0298,SM Center Tuguegarao Downtown Heliport,PH
-PH-0299,SM Center Lemery Heliport,PH
-PH-0300,SM Center Muntinlupa Heliport,PH
-PH-0301,SM Center Ormoc Heliport,PH
-PH-0302,SM Center Valenzuela Heliport,PH
-PH-0303,Hamilo Coast Helipad,PH
-PH-0304,Sem-Calaca Helipad,PH
-PH-0305,Camella Lipa Helipad,PH
-PH-0306,Metrobank Plaza Heliport,PH
-PH-0307,The Peninsula Heliport,PH
-PH-0308,One Roxas Triangle Tower Heliport,PH
-PH-0309,Two Roxas Triangle Tower Heliport,PH
-PH-0310,Trafalgar Plaza Heliport,PH
-PH-0311,Salcedo Park Twin Towers North Heliport,PH
-PH-0312,Salcedo Park Twin Towers South Heliport,PH
-PH-0313,Classica Tower Heliport,PH
-PH-0314,Grand Soho Makati Heliport,PH
-PH-0315,ACT Tower Heliport,PH
-PH-0316,World Centre Heliport,PH
-PH-0317,Camp Crame Heliport,PH
-PH-0318,Aurora Tower Helipad,PH
-PH-0319,Angeles Airfield,PH
-PH-0320,Angeles Northeast Airfield,PH
-PH-0321,Grace Park / Manila North Airfield,PH
-PH-0322,Naval Station Jose Francisco Heliport,PH
-PH-0323,United States Embassy Heliport,PH
-PH-0324,SM Southmall Helipad,PH
-PH-0325,Fairways Tower Helipad,PH
-PH-0326,James Steelworks Heliport,PH
-PH-0327,Cavite Naval Hospital Heliport,PH
-PH-0328,Maritime Safety Services Command Heliport,PH
-PH-0329,Island Cove Heliport,PH
-PH-0330,Belvedere Tower Helipad,PH
-PH-0331,Pacific Center Building Helipad,PH
-PH-0332,Octagon Center Helipad,PH
-PH-0333,San Miguel Property Centre Building Helipad,PH
-PH-0334,Robinsons Equitable Tower Helipad,PH
-PH-0335,AIC Burgundy Empire Tower Helipad,PH
-PH-0336,Crowne Plaza Manila Galleria Helipad,PH
-PH-0337,Parc Royale Building Helipad,PH
-PH-0338,Antel Global Business Center Helipad,PH
-PH-0339,Avant Garde Residences Helipad,PH
-PH-0340,Prestige Tower Helipad,PH
-PH-0341,Raffles Building Helipad,PH
-PH-0342,Holiday Inn Galleria Manila Helipad,PH
-PH-0343,Caswynn Building Helipad,PH
-PH-0344,GMA Network Tower Helipad,PH
-PH-0345,Eton Centris Heliport,PH
-PH-0346,Eton Heliport,PH
-PH-0347,National Office Building Helipad,PH
-PH-0348,DILG-NAPOLCOM Center Helipad,PH
-PH-0349,New Manila International Airport (under construction),PH
-PH-0350,La Libertad Airstrip,PH
-PH-0351,TADECO Santo Tomas Airstrip,PH
-PH-0352,MEPI Aerodrome,PH
-PH-0353,A O Floirendo Airstrip,PH
-PH-0354,Searbemco Airstrip,PH
-PH-0355,Evergreen Farms Airstrip,PH
-PH-0356,Kasilak Airstrip,PH
-PH-0357,Madaum Airstrip,PH
-PH-0358,New Sambog Airstrip,PH
-PH-0359,Alpha Saucedo Condominium Helipad,PH
-PH-0360,RCBC Plaza Yuchengco Tower Heliport,PH
-PH-0361,ABS-CBN Building Helipad,PH
-PH-0362,Orchard Helipad,PH
-PH-0363,Camp Bagong Diwa Heliport,PH
-PH-0364,Fort Victoria Tower A Helipad,PH
-PH-0365,Fort Victoria Tower B Helipad,PH
-PH-0366,Fort Victoria Tower C Helipad,PH
-PH-0367,Pacific Plaza Towers South Helipad,PH
-PH-0368,Pacific Plaza Towers North Helipad,PH
-PH-0369,One McKinley Place Helipad,PH
-PH-0370,Net One Center Helipad,PH
-PH-0371,Picadilly Star Building Helipad,PH
-PH-0372,Eight Forbestown Road Helipad,PH
-PH-0373,Fort Legend Tower Helipad,PH
-PH-0374,Globe Tower Helipad,PH
-PH-0375,Saint Luke's Medical Center Bonifacio Global City Heliport,PH
-PH-0376,SM Aura Office Tower Helipad,PH
-PH-0377,Regent Parkway Condominium Helipad,PH
-PH-0378,Essensa 1 Helipad,PH
-PH-0379,Del Rosario Law Building Helipad,PH
-PH-0380,Essensa 2 Helipad,PH
-PH-0381,Solar Century Tower Helipad,PH
-PH-0382,Splendido Gardens Helipad,PH
-PH-0383,Antel Platinum Towers Helipad,PH
-PH-0384,Forbes Tower West Helipad,PH
-PH-0385,Liberty Center Helipad,PH
-PH-0386,Malolos Sport & Convention Center Helipad,PH
-PH-0387,Thousand Islands International Airport (under construction),PH
-PH-0388,Sagada Heliport,PH
-PH-0389,Baliuag Heliport,PH
-PH-0390,Bamban Airfield,PH
-PH-0391,Angeles South (Lara) Airfield,PH
-PH-0392,Zablan Auxiliary Airfield,PH
-PH-0393,Pasig Airfield,PH
-PH-0394,Kawit Airfield,PH
-PH-0395,Camp O'Donnell Officer Candidate School Heliport,PH
-PH-0396,Camp O'Donnell Armor School Heliport,PH
-PH-0397,Vernida IV Heliport,PH
-PH-0398,BPI-Philam Life Makati Helipad,PH
-PH-0399,GT Tower Helipad,PH
-PH-0400,LKG Tower Helipad,PH
-PH-0401,Cityland Herrera Tower Helipad,PH
-PH-0402,Robinsons Summit Center Helipad,PH
-PH-0403,Makati Medical Center Heliport,PH
-PH-0404,Rufino Pacific Tower Helipad,PH
-PH-0405,Lepanto Building Helipad,PH
-PH-0406,L V Locsin Building Helipad,PH
-PH-0407,Limay (Bataan) Airfield,PH
-PH-0408,Cabcaben Airfield,PH
-PH-0409,Mariveles Airfield,PH
-PH-0410,Akle Airfield,PH
-PH-0411,Minuyan Airstrip,PH
-PH-0412,San Fernando Tower Helipad,PH
-PH-0413,518 Fundidor Street Helipad,PH
-PH-0414,Sagay Airfield,PH
-PH-0415,Lorenville Heliport,PH
-PH-0416,AES Masinloc Heliport,PH
-PH-0417,Lapanday Foods Tampakan Airport,PH
-PH-0418,Lapanday Foods Guihing Airport,PH
-PH-0419,Kling Airport,PH
-PH-0420,Lapanday Foods Kalaong Airport,PH
-PH-0421,Lapanday Foods Mandug Airport,PH
-PH-0422,Milbuk Airport,PH
-PH-0423,MILUDECO Airstrip,PH
-PH-0424,Malangas Airport,PH
-PH-0425,Inandeng Airport,PH
-PH-0426,Lakawon Resort Seaplane Base,PH
-PH-0427,Lutopan Airstrip,PH
-PH-0428,Nabulao Airstrip,PH
-PH-0429,Cordon Airport,PH
-PH-0430,Pradera Verde Executive Airpark,PH
-PH-0431,Casay Airstrip,PH
-PH-0432,Sagpangan Airport,PH
-PH-0433,Dacudao Airport,PH
-PH-0434,Lagao Airport,PH
-PH-0435,Tungao Airport,PH
-PH-0436,Aras-Asan Airport,PH
-PH-0437,Bad-As Airport,PH
-PH-0438,Barobo Airport,PH
-PH-0439,Diatagon Airport,PH
-PH-0440,Lanuza (Carmen) Airport,PH
-PH-0441,PICOP Airport,PH
-PH-0442,Tagbina Airport,PH
-PH-0443,Elmore Airfield,PH
-PH-0444,Hill Airfield,PH
-PH-0445,Murtha Airfield,PH
-PH-0446,Agutaya Airport,PH
-PH-0447,Veterans Memorial Medical Center Heliport,PH
-PH-0448,Former Lucena Airport,PH
-PH-0449,Aparri (Maura) Airport,PH
-PH-0450,Malalag Airport,PH
-PH-0451,Sarangani Provincial Capitol Heliport,PH
-PH-0452,Sultan Kudarat Provincial Capitol Heliport,PH
-PH-0453,Maraymaray Airport,PH
-PH-0454,Bukidnon Domestic Airport (under construction),PH
-PH-0455,Lurugan Airport,PH
-PH-0456,Manolo Fortich Airport,PH
-PH-0457,La Filipina Airport,PH
-PH-0458,Lunga-og Airport,PH
-PH-0459,Kapalong Airport,PH
-PH-0460,Datu Paglas Airport,PH
-PH-0461,Digal Airport,PH
-PH-0462,Central Mindanao Airport,PH
-PH-0463,President Quirino Airport,PH
-PH-0464,Lambayong Airport,PH
-PH-0465,Sirawai Airport,PH
-PH-0466,Maguindanao del Sur Provincial Capitol Heliport,PH
-PH-0467,Masiu Heliport,PH
-PH-0468,Boracay Helicopter Adventures Heliport,PH
-PH-0469,GreenHeli Boracay Heliport,PH
-PH-0470,GreenHeli Boracay Heliport,PH
-PH-0471,Lahuy Airport,PH
-PH-0472,Tugawe Cove Resort Heliport,PH
-PH-0473,Tinambac Airport,PH
-PH-0474,Mayon Old Heliport,PH
-PH-0475,Mayon Heliport,PH
-PH-0476,Chinese General Hospital Heliport,PH
-PH-0477,Philippine Merchant Marine Academy Heliport,PH
-PH-0478,Dahilayan Heliport,PH
-PH-0479,Shangri-La Mactan Island Resort Heliport,PH
-PH-0480,Isabela Provincial Capitol Heliport,PH
-PH-0481,Lawak Island (Nanshan Island) Helipad,PH
-PH-0482,Candaraman Airport,PH
-PH-0483,Candaraman Island Helipad,PH
-PH-0484,Rio Tuba Airport,PH
-PH-0485,Bugsuk (Bonbon) Airport,PH
-PH-0486,ABCI Heliport,PH
-PH-0487,Didipio Heliport,PH
-PH-0488,Mountain View College Airport,PH
-PH-0489,Batag Airport,PH
-PH-0490,Camotes Airstrip,PH
-PH-0491,Air Juan Cebu City South Road Properties Seaplane Terminal,PH
-PH-0492,Three Thirty Airstrip,PH
-PH-0493,Clark Balloonport,PH
-PH-0494,Busuanga Bay Lodge Seaplane Terminal,PH
-PH-0495,Huma Island Resort Seaplane Terminal,PH
-PH-0496,SUMAPI Airstrip,PH
-PH-0497,Coron Rural Airport,PH
-PH-0498,Daja Airstrip,PH
-PH-0499,Ferrol (Odiongan) Airstrip,PH
-PH-0500,Two Seasons Resort Seaplane Terminal,PH
-PH-0501,Lahug Airfield,PH
-PH-0502,Tagbita Airstrip,PH
-PH-0503,Rizal Airport,PH
-PH-0504,Philippine Adventist Medical Aviation Service Airstrip,PH
-PH-0505,Isugod Airstrip,PH
-PH-0506,Berong Airport,PH
-PH-0507,Apurawan Airport,PH
-PH-0508,Sabang Sheridan Beach Resort Heliport,PH
-PH-0509,Bato Airport,PH
-PH-0510,Parola Island (Northeast Cay) Helipad,PH
-PH-0511,Maya-maya (Viper North Shoal) Helipad,PH
-PH-0512,Santa Lucia Mall Heliport,PH
-PH-0513,Santa Lucia East Grand Mall Heliport,PH
-PH-0514,Tarumpitao Point Airfield,PH
-PH-0515,Brooke's Point Airstrip,PH
-PH-0516,Samariniana Airfield,PH
-PH-0517,Bataraza Airport,PH
-PH-0518,Sebaring Airstrip,PH
-PH-0519,Western Mindanao Community Hospital Heliport,PH
-PH-0520,Camp Sang-an Heliport,PH
-PH-0521,Camp Peralta Heliport,PH
-PH-0522,Camp Dela Cruz Heliport,PH
-PH-0523,Camp Lukban Heliport,PH
-PH-0524,Camp Lim Heliport,PH
-PH-0525,Camp Angeles Heliport,PH
-PH-0526,Camp Abat Heliport,PH
-PH-0527,Camp Riego de Dios Heliport,PH
-PH-0528,Naval Station Juan Magluyan Heliport,PH
-PH-0529,Naval Base Rafael Ramos Heliport,PH
-PH-0530,Biliran Heliport,PH
-PH-0531,Naval Station Carlito Cunanan Heliport,PH
-PH-0532,Sebaring Heliport,PH
-PH-0533,Guimaras Airport,PH
-PH-0534,Naval Station Felix Apolinario Heliport,PH
-PH-0535,Okada Manila Rooftop Heliport,PH
-PH-0536,Sunview Palace Condominium Helipad,PH
-PH-0537,Cunanan Wharf Heliport,PH
-PH-0538,TechZone Philippines Building Helipad,PH
-PH-0539,Burgundy Corporate Tower Helipad,PH
-PH-0540,Camilla & Lumina Heliport,PH
-PH-0541,Caylabne Bay Resort Heliport,PH
-PH-0542,Paniman Beach Resort Heliport,PH
-PH-0543,Sabang South Bay Seaplane Base,PH
-PH-0544,Musahamat Farms Airport,PH
-PH-0545,PIntatagan Airport,PH
-PH-0546,Macangao Airport,PH
-PH-0547,Union Airstrip,PH
-PH-0548,Talayan Airport,PH
-PH-0549,Plamango Heliport,PH
-PH-0550,Magatos Airport,PH
-PH-0551,Lapanday Foods Macgum Airport,PH
-PH-0552,Matling Industrial and Commercial Corporation Airstrip,PH
-PH-0553,Balabagan Airport,PH
-PH-0554,Kalamansig Airport,PH
-PH-0555,Bascon Heliport,PH
-PH-0556,Philippines Paramotor Training Field,PH
-PH-0557,Danao Ultralight Airport,PH
-PH-0558,Kenram Airport,PH
-PH-0559,Washington Tower Helipad,PH
-PH-0560,Cleveland Tower Helipad,PH
-PH-0561,Burgundy McKinley Place Helipad,PH
-PH-0562,Okada Manila Ground Heliport,PH
-PH-0563,Five E-Com Center Helipad,PH
-PH-0564,City of Dreams Manila Helipad,PH
-PH-0565,Manato Airport,PH
-PH-0566,Amoroy Airport,PH
-PH-0567,Calanay Airport,PH
-PH-0568,Taratak Airfield,PH
-PH-0569,Ri-Rance Helipad,PH
-PH-0570,Camp Nakar Heliport,PH
-PH-ENI,El Nido Airport,PH
+PH-0001,Laguindingan International Airport (Philippines)
+PH-0002,San Antonio Airport (Philippines)
+PH-0003,Azagra Airstrip (Philippines)
+PH-0004,Wao Airport (Philippines)
+PH-0005,Tuy Airstrip (Philippines)
+PH-0006,Rancudo Airfield (Philippines)
+PH-0007,Don Jesus Soriano (Doña Rosario) Airstrip (Philippines)
+PH-0008,Quezon Power Plant Heliport (Philippines)
+PH-0009,Chevron Terminal Heliport (Philippines)
+PH-0010,Cochem Heliport (Danglayan) (Philippines)
+PH-0011,Santa Rita Power Plant Heliport (Philippines)
+PH-0012,Shell Malampaya Natural Gas Receiving Facility (Tabangao) Heliport (Philippines)
+PH-0013,JG Summit Olefins Corporation (Pinamucan) Helipad (Philippines)
+PH-0014,Himmel Industries Tank Farm Heliport (Philippines)
+PH-0015,KEPCO Ilijan Power Plant Heliport (Philippines)
+PH-0016,Bayview Accommodations Heliport (Philippines)
+PH-0017,Naval Station Julhasan Arasain Heliport (Philippines)
+PH-0018,Tugawe Cover Resort Helipad (Philippines)
+PH-0019,Reserva Helipad (Philippines)
+PH-0020,Paracale Airstrip (Philippines)
+PH-0021,Naval Base Ernesto Ogbinar Heliport (Philippines)
+PH-0022,Dinapigue Airstrip (Philippines)
+PH-0023,Maconacon Airstrip (Philippines)
+PH-0024,Taggat Airstrip (Philippines)
+PH-0025,Bauang Power Plant Heliport (Philippines)
+PH-0026,Bauang Power Plant Helipad (Philippines)
+PH-0027,Wenceslao Heliport (Philippines)
+PH-0028,Baquioen Heliport (Philippines)
+PH-0029,Sual Power Plant Heliport (Philippines)
+PH-0030,Naulo Point Airstrip (Philippines)
+PH-0031,Naval Station Leovigildo Gantioqui Heliport (Philippines)
+PH-0032,Bataan Nuclear Power Plant Heliport (Philippines)
+PH-0033,Manila International Container Terminal (MICT) Heliport (Philippines)
+PH-0034,Manila North Harbor Container Terminal Helipad (Philippines)
+PH-0035,Joy-Nostalg Heliport (Philippines)
+PH-0036,SM Megamall (Building A) Heliport (Philippines)
+PH-0037,Malayan Plaza Heliport (Philippines)
+PH-0038,BDO Corporate Center Heliport (Philippines)
+PH-0039,Discovery Suites Heliport (Philippines)
+PH-0040 (Philippines)ilippine Stock Exchange West Tower Heliport (Philippines)
+PH-0041 (Philippines)ilippine Stock Exchange East Tower Heliport (Philippines)
+PH-0042,San Miguel Corporate Heliport (Philippines)
+PH-0043,SM Megamall (Building B) Heliport (Philippines)
+PH-0044,TSD Communications Department Heliport (Philippines)
+PH-0045,Orient Square Heliport (Philippines)
+PH-0046,Taipan Place Heliport (Philippines)
+PH-0047,iSquare Heliport (Philippines)
+PH-0048,Union Bank Plaza Heliport (Philippines)
+PH-0049,MERALCO Ortigas Heliport (Philippines)
+PH-0050,Eton Cyberpod Helipads (Philippines)
+PH-0051 (Philippines)ilippine Coast Guard Manila Ready Force Base Helipad (Philippines)
+PH-0052,Manila South Harbor Pier 13 Heliport (Philippines)
+PH-0053,Manila Hotel Heliport (Philippines)
+PH-0054,Port of Manila South Harbor Pier 17 Helipad (Philippines)
+PH-0055,Naval Station Jose Andrada Heliport (Philippines)
+PH-0056,Sofitel Philippine Plaza Hotel Heliport (Philippines)
+PH-0057,CCP Open Grounds Heliport (Philippines)
+PH-0058,Conrad Manila Hotel Heliport (Philippines)
+PH-0059,Solaire Manila Resort & Casino Heliport 1 (Philippines)
+PH-0060,Solaire Manila Resort & Casino Heliport 2 (Philippines)
+PH-0061,Fort Felipe Naval Logistics Center Heliport (Philippines)
+PH-0062,Petron Rosario Refinery Helipad (Philippines)
+PH-0063,Capipisa (Tanza) Heliport (Philippines)
+PH-0064,General Gregorio Lim Marine Base Heliport (Philippines)
+PH-0065,Balaytigue Heliport (Philippines)
+PH-0066,Talim Point Airstrip (Philippines)
+PH-0067,Lago de Oro Wakepark Hotel Helipad (Philippines)
+PH-0068,Purefoods Flour Mills Pulong Balibaguhan Heliport (Philippines)
+PH-0069,Fuga Airstrip (Philippines)
+PH-0070,Barit Island Airstrip (Philippines)
+PH-0071,Mabag Island Airstrip (Philippines)
+PH-0072,Camalaniugan Airport (Philippines)
+PH-0073,Cagayan North International Airport (Philippines)
+PH-0074,Lal-lo Airstrip (Philippines)
+PH-0075,Jose Paredes Airbase (Philippines)
+PH-0076,Divilacan Airstrip (Philippines)
+PH-0077,Clark International Airport South Ramp Heliport (Philippines)
+PH-0078,Lieutenant Cesar Base Air Base Heliport (Philippines)
+PH-0079,PNOC Industrial Park Helipad (Philippines)
+PH-0080,207th Tactical Helicopter Squadron Heliport (Philippines)
+PH-0081,Corregidor South Dock Heliport (Philippines)
+PH-0082,Corregidor Parade Ground Heliport (Philippines)
+PH-0083,Manila Marriott Hotel Heliport (Philippines)
+PH-0084,Acoje Mine Helipad (Philippines)
+PH-0085,Alto Airfield (Philippines)
+PH-0086,Alto Airfield Helipad (Philippines)
+PH-0087,Apuao Grande Island Airstrip (Philippines)
+PH-0088,Barlo Airstrip (Philippines)
+PH-0089,Manny W Barradas Airstrip (Philippines)
+PH-0090,Binalonan Airport (Philippines)
+PH-0091,Bundagul Airstrip (Highway Strip) (Philippines)
+PH-0092,Cabaluyan Airstrip (Philippines)
+PH-0093,Calatagan (Hacienda Zobel) Airstrip (Philippines)
+PH-0094,Calatagan (Hacienda Zobel) Heliport (Philippines)
+PH-0095,Dibagat Airstrip (Philippines)
+PH-0096,Hermana Mayor Island Airstrip (Philippines)
+PH-0097,Hermana Menor Island Airstrip (Philippines)
+PH-0098,Ibonan Airstrip (Philippines)
+PH-0099,Lepanto Mines Airstrip (Philippines)
+PH-0100,Nampicuan Airstrip (Philippines)
+PH-0101,Cojuangco Airstrip (Philippines)
+PH-0102,Pinili Airstrip (Philippines)
+PH-0103,Poon Coto Airstrip (Philippines)
+PH-0104,Poon Coto Heliport (Philippines)
+PH-0105,Samal (Bataan 2020) Airstrip (Philippines)
+PH-0106,Santa Rosa Airstrip (Philippines)
+PH-0107,Woodland Airpark (Philippines)
+PH-0108,Captain Mateo Capinpin Airstrip (Philippines)
+PH-0109,San Vicente Naval Airstrip (Philippines)
+PH-0110,Cabanatuan Airstrip (Camp Tinio) (Philippines)
+PH-0111,Canlubang Airstrip (Philippines)
+PH-0112,Echague Airstrip (Philippines)
+PH-0113,Mabalacat East Airfield (Kamikaze East) (Philippines)
+PH-0114,Mabalacat West Airfield (Kamikaze West) (Philippines)
+PH-0115,Mangaldan Airfield (Philippines)
+PH-0116,Naguilian Airfield (Philippines)
+PH-0117,Ayala Tower One /  Philippine Exchange Plaza Heliport (Philippines)
+PH-0118 (Philippines)ilamlife IT Tower Heliport (Philippines)
+PH-0119,Enterprise Center Heliport (Philippines)
+PH-0120,BDO Equitable Bank Tower Heliport (Philippines)
+PH-0121,BPI Computer Systems Corporation Heliport (Philippines)
+PH-0122,Citibank Tower Heliport (Philippines)
+PH-0123,Gercon Plaza Heliport (Philippines)
+PH-0124,Tiffany Place Heliport (Philippines)
+PH-0125,Eurovilla III Heliport (Philippines)
+PH-0126,Four Seasons Heliport (Philippines)
+PH-0127,West Gate Plaza Heliport (Philippines)
+PH-0128,Parklane Condominiums Heliport (Philippines)
+PH-0129,Petron Mega Plaza Heliport (Philippines)
+PH-0130,BPI Buendia Center Heliport (Philippines)
+PH-0131,Development Bank of the Philippines Heliport (Philippines)
+PH-0132,Pacific Star Building Heliport (Philippines)
+PH-0133,PBCom Tower Heliport (Philippines)
+PH-0134,Export Bank Plaza Heliport (Philippines)
+PH-0135,Megaworld Heliport (Philippines)
+PH-0136,Cocolife Building Heliport (Philippines)
+PH-0137,Easton Place Heliport (Philippines)
+PH-0138,Allied Bank Center Heliport (Philippines)
+PH-0139,PLDT Makati Office Heliport (Philippines)
+PH-0140,Frabella I Condominiums Heliport (Philippines)
+PH-0141,Pacific Plaza Condominium Heliport (Philippines)
+PH-0142,Ritz Tower 2 Heliport (Philippines)
+PH-0143,Ritz Tower 1 Heliport (Philippines)
+PH-0144,Discovery Primea Heliport (Philippines)
+PH-0145,SM Makati Heliport (Philippines)
+PH-0146,Asian Development Bank Heliport (Philippines)
+PH-0147,Ever Gotesco – Commonwealth Heliport (Philippines)
+PH-0148,San Marcellino Airfield (Philippines)
+PH-0149,Government Arsenal Heliport (Philippines)
+PH-0150,Parañaque Seaplane Base (Philippines)
+PH-0151,Camp Panacan Heliport (Philippines)
+PH-0152,Petron Bataan Refinery Helipad (Philippines)
+PH-0153,Nasipit Heliport (Philippines)
+PH-0154,Nasipit Airfield (Philippines)
+PH-0155,Findlay Millar Lumber Airstrip (Philippines)
+PH-0156,Refugio Airstrip (Philippines)
+PH-0157,San Carlos Community Airport [under construction] (Philippines)
+PH-0158,Wallace Air Force Station Heliport (Philippines)
+PH-0159,Balamban Heliport (Philippines)
+PH-0160,BDO ATM – Steag Coal Power Plant Villanueva Heliport (Philippines)
+PH-0161,Naval Station Romulo Espaldon Heliport (Philippines)
+PH-0162,Edwin Andrews Air Force Base Heliport (Philippines)
+PH-0163,Isabela Airstrip (Philippines)
+PH-0164,Sangi Airstrip (Philippines)
+PH-0165,Air Juan Seaplane Base (Philippines)
+PH-0166,SM City Rosario Heliport (Philippines)
+PH-0167,World Trade Exchange Building Helipad (Philippines)
+PH-0168,Porac Airfield (Philippines)
+PH-0169,Federal Tower Helipad (Philippines)
+PH-0170,Rizal Tower Helipad (Philippines)
+PH-0171,Makati City Hall Helipad (Philippines)
+PH-0172,Chatham House Helipad (Philippines)
+PH-0173,Bataan 2020 Helipad (Philippines)
+PH-0174,Sabang South Bay Domestic Airport (Philippines)
+PH-0175,Mariveles Power Plant Helipad (Philippines)
+PH-0176,Bicobian Bay Airstrip (Philippines)
+PH-0177,Batangas Airfield (Philippines)
+PH-0178,PAL Aviation and Omni Runway (Philippines)
+PH-0179,Angeles University Medical Center Helipad (Philippines)
+PH-0180,Potipot Island Helipad (Philippines)
+PH-0181,Anvaya Cove Heliport (Philippines)
+PH-0182,Hanjin Heavy Industries Corporation Helipad (Philippines)
+PH-0183,Long Beach Airstrip (Philippines)
+PH-0184,Bataan Field (Philippines)
+PH-0185 (Philippines)ilComSat Heliport (Philippines)
+PH-0186,Ernajos Strip (Philippines)
+PH-0187,Carranglan Airstrip (Philippines)
+PH-0188,Salolwan Airstrip (Philippines)
+PH-0189,Catanauan Airstrip (Philippines)
+PH-0190,Buenavista Airfield (Philippines)
+PH-0191,Magallanes Airstrip (Philippines)
+PH-0192,Doña Flavia Airstrip (Philippines)
+PH-0193,Kasapa Airstrip (Philippines)
+PH-0194,Laminga Airstrip (Philippines)
+PH-0195,Santa Josefa (Aurora) Airstrip (Philippines)
+PH-0196,Waloe Airstrip (Philippines)
+PH-0197,Guianga Airstrip (Philippines)
+PH-0198,Consuelo Airstrip 1 (Philippines)
+PH-0199,Consuelo Airstrip 2 (Philippines)
+PH-0200,Cogonon Airstrip (Philippines)
+PH-0201,Dizon Airstrip (Philippines)
+PH-0202,Mampising (LADECO-Maryland) Airstrip (Philippines)
+PH-0203,Mapawa Airstrip (Philippines)
+PH-0204,Mawab Airstrip (Philippines)
+PH-0205,Neda Airstrip (Philippines)
+PH-0206,Tagum Airport / Pangi (Rico Vista) Airstrip (Philippines)
+PH-0207,Tibagon Airstrip (Philippines)
+PH-0208,Air Juan Boracay Seaplane Terminal (Philippines)
+PH-0209,Nielson Field (Philippines)
+PH-0210,Dewey Boulevard Airstrip (Philippines)
+PH-0211,Zablan Airfield (Philippines)
+PH-0212,Medical City Helipad (Philippines)
+PH-0213,Mandaluyong East Airfield (Philippines)
+PH-0214,Air Juan Puerto Galera Seaplane Base (Philippines)
+PH-0215,Angeles West Airfield (Philippines)
+PH-0216,Balara Airfield (Philippines)
+PH-0217,Marikina Airfield (Philippines)
+PH-0218 (Philippines)ilippine National Bank Angono Branch Helipad (Philippines)
+PH-0219,SM Center Angono Helipad (Philippines)
+PH-0220,SM City Batangas Heliport (Philippines)
+PH-0221,Puting Kahoy Airstrip (Philippines)
+PH-0222,Nasugbu Airfield (Philippines)
+PH-0223,SM City Lipa Heliport (Philippines)
+PH-0224,SM City San Pablo Heliport (Philippines)
+PH-0225,DOST-PCAARRD Heliport (Philippines)
+PH-0226,SM City Calamba Heliport (Philippines)
+PH-0227,Fastech Helipad (Philippines)
+PH-0228,Santa Rosa Helipad (Philippines)
+PH-0229,SM City Lucena Heliport (Philippines)
+PH-0230,SM City Rosales Heliport (Philippines)
+PH-0231,Cuyapo Airstrip (Philippines)
+PH-0232,Bitulok Airstrip (Philippines)
+PH-0233,SM City Cabanatuan Heliport (Philippines)
+PH-0234,SM City Taytay Heliport (Philippines)
+PH-0235,SM City Clark Heliport (Philippines)
+PH-0236,SM City Urdaneta Heliport (Philippines)
+PH-0237,SM CIty Tarlac Heliport (Philippines)
+PH-0238,Camp Aquino Heliport (Philippines)
+PH-0239,San Manuel Airstrip (Philippines)
+PH-0240,Lichuaco Airfield (Philippines)
+PH-0241,San Roque Dam Heliport (Philippines)
+PH-0242,Camp John Hay Forest Lodge Helipad (Philippines)
+PH-0243,Camp John Hay White House Helipad (Philippines)
+PH-0244,Camp John Hay Country Estates Helipad (Philippines)
+PH-0245,Monde Nissin Helipad (Philippines)
+PH-0246,Luna Airfield (Philippines)
+PH-0247,Calayan Airport (Philippines)
+PH-0248,North Avenue / Quezon City Airfield (Philippines)
+PH-0249,SM City San Lazaro Heliport (Philippines)
+PH-0250,Winford Manila Heliport (Philippines)
+PH-0251,General Emilio Aguinaldo Airstrip (Philippines)
+PH-0252,Cagsiay Airstrip (Philippines)
+PH-0253,Balayan (Magabe) Airfield (Philippines)
+PH-0254,Coral Shores Heliport (Philippines)
+PH-0255,Orani Airfield (Philippines)
+PH-0256,Pilar Airfield (Philippines)
+PH-0257,Caballo Island Naval Heliport (Philippines)
+PH-0258,Taal Lake Yacht Club Heliport (Philippines)
+PH-0259,Royale Tagaytay Helipad (Philippines)
+PH-0260,Lapanday Foods Delta Airstrip (Philippines)
+PH-0261,Mabantao Airstrip (Philippines)
+PH-0262,Sampao Airstrip (Philippines)
+PH-0263,One E-Com Center Helipad (Philippines)
+PH-0264,SM Mall of Asia North Wing Helipad (Philippines)
+PH-0265,SM Mall of Asia South Wing Helipad (Philippines)
+PH-0266,GSIS Complex Helipad (Philippines)
+PH-0267 (Philippines)ilippine National Bank Financial Complex Heliport (Philippines)
+PH-0268,Malacañang Park Heliport (Philippines)
+PH-0269,SM City Pampanga Heliport (Philippines)
+PH-0270,Lamitan Airstrip (Philippines)
+PH-0271,SM City Dasmariñas Helipad (Philippines)
+PH-0272,SM Center Las Piñas Helipad (Philippines)
+PH-0273,Gapuzan Trucking Inc Helipad (Philippines)
+PH-0274,SM City Trece Martires Heliport (Philippines)
+PH-0275,SM City Bicutan Heliport (Philippines)
+PH-0276,SM City Bacoor Heliport (Philippines)
+PH-0277,SM City BF Parañaque Heliport (Philippines)
+PH-0278,SM City Baliwag Heliport (Philippines)
+PH-0279,SM City East Ortigas Heliport (Philippines)
+PH-0280,SM City Fairview Heliport (Philippines)
+PH-0281,SM Center Sangandaan Heliport (Philippines)
+PH-0282,SM City Iloilo Heliport (Philippines)
+PH-0283,Iloilo/Mandurriao Airport (Philippines)
+PH-0284,SM City Legazpi Heliport (Philippines)
+PH-0285,SM City San Jose del Monte Heliport (Philippines)
+PH-0286,SM City Marilao Heliport (Philippines)
+PH-0287,SM City Masinag Heliport (Philippines)
+PH-0288,SM City Molino Heliport (Philippines)
+PH-0289,SM City Marikina Heliport (Philippines)
+PH-0290,SM City North EDSA Heliport (Philippines)
+PH-0291,SM City Olongapo Central (Philippines)
+PH-0292,SM Center Pulilan Heliport (Philippines)
+PH-0293,SM City Santa Mesa Heliport (Philippines)
+PH-0294,SM City Novaliches Heliport (Philippines)
+PH-0295,SM City Sucat Heliport (Philippines)
+PH-0296,SM City San Mateo Heliport (Philippines)
+PH-0297,SM City Santa Rosa Heliport (Philippines)
+PH-0298,SM Center Tuguegarao Downtown Heliport (Philippines)
+PH-0299,SM Center Lemery Heliport (Philippines)
+PH-0300,SM Center Muntinlupa Heliport (Philippines)
+PH-0301,SM Center Ormoc Heliport (Philippines)
+PH-0302,SM Center Valenzuela Heliport (Philippines)
+PH-0303,Hamilo Coast Helipad (Philippines)
+PH-0304,Sem-Calaca Helipad (Philippines)
+PH-0305,Camella Lipa Helipad (Philippines)
+PH-0306,Metrobank Plaza Heliport (Philippines)
+PH-0307,The Peninsula Heliport (Philippines)
+PH-0308,One Roxas Triangle Tower Heliport (Philippines)
+PH-0309,Two Roxas Triangle Tower Heliport (Philippines)
+PH-0310,Trafalgar Plaza Heliport (Philippines)
+PH-0311,Salcedo Park Twin Towers North Heliport (Philippines)
+PH-0312,Salcedo Park Twin Towers South Heliport (Philippines)
+PH-0313,Classica Tower Heliport (Philippines)
+PH-0314,Grand Soho Makati Heliport (Philippines)
+PH-0315,ACT Tower Heliport (Philippines)
+PH-0316,World Centre Heliport (Philippines)
+PH-0317,Camp Crame Heliport (Philippines)
+PH-0318,Aurora Tower Helipad (Philippines)
+PH-0319,Angeles Airfield (Philippines)
+PH-0320,Angeles Northeast Airfield (Philippines)
+PH-0321,Grace Park / Manila North Airfield (Philippines)
+PH-0322,Naval Station Jose Francisco Heliport (Philippines)
+PH-0323,United States Embassy Heliport (Philippines)
+PH-0324,SM Southmall Helipad (Philippines)
+PH-0325,Fairways Tower Helipad (Philippines)
+PH-0326,James Steelworks Heliport (Philippines)
+PH-0327,Cavite Naval Hospital Heliport (Philippines)
+PH-0328,Maritime Safety Services Command Heliport (Philippines)
+PH-0329,Island Cove Heliport (Philippines)
+PH-0330,Belvedere Tower Helipad (Philippines)
+PH-0331,Pacific Center Building Helipad (Philippines)
+PH-0332,Octagon Center Helipad (Philippines)
+PH-0333,San Miguel Property Centre Building Helipad (Philippines)
+PH-0334,Robinsons Equitable Tower Helipad (Philippines)
+PH-0335,AIC Burgundy Empire Tower Helipad (Philippines)
+PH-0336,Crowne Plaza Manila Galleria Helipad (Philippines)
+PH-0337,Parc Royale Building Helipad (Philippines)
+PH-0338,Antel Global Business Center Helipad (Philippines)
+PH-0339,Avant Garde Residences Helipad (Philippines)
+PH-0340,Prestige Tower Helipad (Philippines)
+PH-0341,Raffles Building Helipad (Philippines)
+PH-0342,Holiday Inn Galleria Manila Helipad (Philippines)
+PH-0343,Caswynn Building Helipad (Philippines)
+PH-0344,GMA Network Tower Helipad (Philippines)
+PH-0345,Eton Centris Heliport (Philippines)
+PH-0346,Eton Heliport (Philippines)
+PH-0347,National Office Building Helipad (Philippines)
+PH-0348,DILG-NAPOLCOM Center Helipad (Philippines)
+PH-0349,New Manila International Airport (under construction) (Philippines)
+PH-0350,La Libertad Airstrip (Philippines)
+PH-0351,TADECO Santo Tomas Airstrip (Philippines)
+PH-0352,MEPI Aerodrome (Philippines)
+PH-0353,A O Floirendo Airstrip (Philippines)
+PH-0354,Searbemco Airstrip (Philippines)
+PH-0355,Evergreen Farms Airstrip (Philippines)
+PH-0356,Kasilak Airstrip (Philippines)
+PH-0357,Madaum Airstrip (Philippines)
+PH-0358,New Sambog Airstrip (Philippines)
+PH-0359,Alpha Saucedo Condominium Helipad (Philippines)
+PH-0360,RCBC Plaza Yuchengco Tower Heliport (Philippines)
+PH-0361,ABS-CBN Building Helipad (Philippines)
+PH-0362,Orchard Helipad (Philippines)
+PH-0363,Camp Bagong Diwa Heliport (Philippines)
+PH-0364,Fort Victoria Tower A Helipad (Philippines)
+PH-0365,Fort Victoria Tower B Helipad (Philippines)
+PH-0366,Fort Victoria Tower C Helipad (Philippines)
+PH-0367,Pacific Plaza Towers South Helipad (Philippines)
+PH-0368,Pacific Plaza Towers North Helipad (Philippines)
+PH-0369,One McKinley Place Helipad (Philippines)
+PH-0370,Net One Center Helipad (Philippines)
+PH-0371,Picadilly Star Building Helipad (Philippines)
+PH-0372,Eight Forbestown Road Helipad (Philippines)
+PH-0373,Fort Legend Tower Helipad (Philippines)
+PH-0374,Globe Tower Helipad (Philippines)
+PH-0375,Saint Luke's Medical Center Bonifacio Global City Heliport (Philippines)
+PH-0376,SM Aura Office Tower Helipad (Philippines)
+PH-0377,Regent Parkway Condominium Helipad (Philippines)
+PH-0378,Essensa 1 Helipad (Philippines)
+PH-0379,Del Rosario Law Building Helipad (Philippines)
+PH-0380,Essensa 2 Helipad (Philippines)
+PH-0381,Solar Century Tower Helipad (Philippines)
+PH-0382,Splendido Gardens Helipad (Philippines)
+PH-0383,Antel Platinum Towers Helipad (Philippines)
+PH-0384,Forbes Tower West Helipad (Philippines)
+PH-0385,Liberty Center Helipad (Philippines)
+PH-0386,Malolos Sport & Convention Center Helipad (Philippines)
+PH-0387,Thousand Islands International Airport (under construction) (Philippines)
+PH-0388,Sagada Heliport (Philippines)
+PH-0389,Baliuag Heliport (Philippines)
+PH-0390,Bamban Airfield (Philippines)
+PH-0391,Angeles South (Lara) Airfield (Philippines)
+PH-0392,Zablan Auxiliary Airfield (Philippines)
+PH-0393,Pasig Airfield (Philippines)
+PH-0394,Kawit Airfield (Philippines)
+PH-0395,Camp O'Donnell Officer Candidate School Heliport (Philippines)
+PH-0396,Camp O'Donnell Armor School Heliport (Philippines)
+PH-0397,Vernida IV Heliport (Philippines)
+PH-0398,BPI-Philam Life Makati Helipad (Philippines)
+PH-0399,GT Tower Helipad (Philippines)
+PH-0400,LKG Tower Helipad (Philippines)
+PH-0401,Cityland Herrera Tower Helipad (Philippines)
+PH-0402,Robinsons Summit Center Helipad (Philippines)
+PH-0403,Makati Medical Center Heliport (Philippines)
+PH-0404,Rufino Pacific Tower Helipad (Philippines)
+PH-0405,Lepanto Building Helipad (Philippines)
+PH-0406,L V Locsin Building Helipad (Philippines)
+PH-0407,Limay (Bataan) Airfield (Philippines)
+PH-0408,Cabcaben Airfield (Philippines)
+PH-0409,Mariveles Airfield (Philippines)
+PH-0410,Akle Airfield (Philippines)
+PH-0411,Minuyan Airstrip (Philippines)
+PH-0412,San Fernando Tower Helipad (Philippines)
+PH-0413,518 Fundidor Street Helipad (Philippines)
+PH-0414,Sagay Airfield (Philippines)
+PH-0415,Lorenville Heliport (Philippines)
+PH-0416,AES Masinloc Heliport (Philippines)
+PH-0417,Lapanday Foods Tampakan Airport (Philippines)
+PH-0418,Lapanday Foods Guihing Airport (Philippines)
+PH-0419,Kling Airport (Philippines)
+PH-0420,Lapanday Foods Kalaong Airport (Philippines)
+PH-0421,Lapanday Foods Mandug Airport (Philippines)
+PH-0422,Milbuk Airport (Philippines)
+PH-0423,MILUDECO Airstrip (Philippines)
+PH-0424,Malangas Airport (Philippines)
+PH-0425,Inandeng Airport (Philippines)
+PH-0426,Lakawon Resort Seaplane Base (Philippines)
+PH-0427,Lutopan Airstrip (Philippines)
+PH-0428,Nabulao Airstrip (Philippines)
+PH-0429,Cordon Airport (Philippines)
+PH-0430,Pradera Verde Executive Airpark (Philippines)
+PH-0431,Casay Airstrip (Philippines)
+PH-0432,Sagpangan Airport (Philippines)
+PH-0433,Dacudao Airport (Philippines)
+PH-0434,Lagao Airport (Philippines)
+PH-0435,Tungao Airport (Philippines)
+PH-0436,Aras-Asan Airport (Philippines)
+PH-0437,Bad-As Airport (Philippines)
+PH-0438,Barobo Airport (Philippines)
+PH-0439,Diatagon Airport (Philippines)
+PH-0440,Lanuza (Carmen) Airport (Philippines)
+PH-0441,PICOP Airport (Philippines)
+PH-0442,Tagbina Airport (Philippines)
+PH-0443,Elmore Airfield (Philippines)
+PH-0444,Hill Airfield (Philippines)
+PH-0445,Murtha Airfield (Philippines)
+PH-0446,Agutaya Airport (Philippines)
+PH-0447,Veterans Memorial Medical Center Heliport (Philippines)
+PH-0448,Former Lucena Airport (Philippines)
+PH-0449,Aparri (Maura) Airport (Philippines)
+PH-0450,Malalag Airport (Philippines)
+PH-0451,Sarangani Provincial Capitol Heliport (Philippines)
+PH-0452,Sultan Kudarat Provincial Capitol Heliport (Philippines)
+PH-0453,Maraymaray Airport (Philippines)
+PH-0454,Bukidnon Domestic Airport (under construction) (Philippines)
+PH-0455,Lurugan Airport (Philippines)
+PH-0456,Manolo Fortich Airport (Philippines)
+PH-0457,La Filipina Airport (Philippines)
+PH-0458,Lunga-og Airport (Philippines)
+PH-0459,Kapalong Airport (Philippines)
+PH-0460,Datu Paglas Airport (Philippines)
+PH-0461,Digal Airport (Philippines)
+PH-0462,Central Mindanao Airport (Philippines)
+PH-0463,President Quirino Airport (Philippines)
+PH-0464,Lambayong Airport (Philippines)
+PH-0465,Sirawai Airport (Philippines)
+PH-0466,Maguindanao del Sur Provincial Capitol Heliport (Philippines)
+PH-0467,Masiu Heliport (Philippines)
+PH-0468,Boracay Helicopter Adventures Heliport (Philippines)
+PH-0469,GreenHeli Boracay Heliport (Philippines)
+PH-0470,GreenHeli Boracay Heliport (Philippines)
+PH-0471,Lahuy Airport (Philippines)
+PH-0472,Tugawe Cove Resort Heliport (Philippines)
+PH-0473,Tinambac Airport (Philippines)
+PH-0474,Mayon Old Heliport (Philippines)
+PH-0475,Mayon Heliport (Philippines)
+PH-0476,Chinese General Hospital Heliport (Philippines)
+PH-0477 (Philippines)ilippine Merchant Marine Academy Heliport (Philippines)
+PH-0478,Dahilayan Heliport (Philippines)
+PH-0479,Shangri-La Mactan Island Resort Heliport (Philippines)
+PH-0480,Isabela Provincial Capitol Heliport (Philippines)
+PH-0481,Lawak Island (Nanshan Island) Helipad (Philippines)
+PH-0482,Candaraman Airport (Philippines)
+PH-0483,Candaraman Island Helipad (Philippines)
+PH-0484,Rio Tuba Airport (Philippines)
+PH-0485,Bugsuk (Bonbon) Airport (Philippines)
+PH-0486,ABCI Heliport (Philippines)
+PH-0487,Didipio Heliport (Philippines)
+PH-0488,Mountain View College Airport (Philippines)
+PH-0489,Batag Airport (Philippines)
+PH-0490,Camotes Airstrip (Philippines)
+PH-0491,Air Juan Cebu City South Road Properties Seaplane Terminal (Philippines)
+PH-0492,Three Thirty Airstrip (Philippines)
+PH-0493,Clark Balloonport (Philippines)
+PH-0494,Busuanga Bay Lodge Seaplane Terminal (Philippines)
+PH-0495,Huma Island Resort Seaplane Terminal (Philippines)
+PH-0496,SUMAPI Airstrip (Philippines)
+PH-0497,Coron Rural Airport (Philippines)
+PH-0498,Daja Airstrip (Philippines)
+PH-0499,Ferrol (Odiongan) Airstrip (Philippines)
+PH-0500,Two Seasons Resort Seaplane Terminal (Philippines)
+PH-0501,Lahug Airfield (Philippines)
+PH-0502,Tagbita Airstrip (Philippines)
+PH-0503,Rizal Airport (Philippines)
+PH-0504 (Philippines)ilippine Adventist Medical Aviation Service Airstrip (Philippines)
+PH-0505,Isugod Airstrip (Philippines)
+PH-0506,Berong Airport (Philippines)
+PH-0507,Apurawan Airport (Philippines)
+PH-0508,Sabang Sheridan Beach Resort Heliport (Philippines)
+PH-0509,Bato Airport (Philippines)
+PH-0510,Parola Island (Northeast Cay) Helipad (Philippines)
+PH-0511,Maya-maya (Viper North Shoal) Helipad (Philippines)
+PH-0512,Santa Lucia Mall Heliport (Philippines)
+PH-0513,Santa Lucia East Grand Mall Heliport (Philippines)
+PH-0514,Tarumpitao Point Airfield (Philippines)
+PH-0515,Brooke's Point Airstrip (Philippines)
+PH-0516,Samariniana Airfield (Philippines)
+PH-0517,Bataraza Airport (Philippines)
+PH-0518,Sebaring Airstrip (Philippines)
+PH-0519,Western Mindanao Community Hospital Heliport (Philippines)
+PH-0520,Camp Sang-an Heliport (Philippines)
+PH-0521,Camp Peralta Heliport (Philippines)
+PH-0522,Camp Dela Cruz Heliport (Philippines)
+PH-0523,Camp Lukban Heliport (Philippines)
+PH-0524,Camp Lim Heliport (Philippines)
+PH-0525,Camp Angeles Heliport (Philippines)
+PH-0526,Camp Abat Heliport (Philippines)
+PH-0527,Camp Riego de Dios Heliport (Philippines)
+PH-0528,Naval Station Juan Magluyan Heliport (Philippines)
+PH-0529,Naval Base Rafael Ramos Heliport (Philippines)
+PH-0530,Biliran Heliport (Philippines)
+PH-0531,Naval Station Carlito Cunanan Heliport (Philippines)
+PH-0532,Sebaring Heliport (Philippines)
+PH-0533,Guimaras Airport (Philippines)
+PH-0534,Naval Station Felix Apolinario Heliport (Philippines)
+PH-0535,Okada Manila Rooftop Heliport (Philippines)
+PH-0536,Sunview Palace Condominium Helipad (Philippines)
+PH-0537,Cunanan Wharf Heliport (Philippines)
+PH-0538,TechZone Philippines Building Helipad (Philippines)
+PH-0539,Burgundy Corporate Tower Helipad (Philippines)
+PH-0540,Camilla & Lumina Heliport (Philippines)
+PH-0541,Caylabne Bay Resort Heliport (Philippines)
+PH-0542,Paniman Beach Resort Heliport (Philippines)
+PH-0543,Sabang South Bay Seaplane Base (Philippines)
+PH-0544,Musahamat Farms Airport (Philippines)
+PH-0545,PIntatagan Airport (Philippines)
+PH-0546,Macangao Airport (Philippines)
+PH-0547,Union Airstrip (Philippines)
+PH-0548,Talayan Airport (Philippines)
+PH-0549,Plamango Heliport (Philippines)
+PH-0550,Magatos Airport (Philippines)
+PH-0551,Lapanday Foods Macgum Airport (Philippines)
+PH-0552,Matling Industrial and Commercial Corporation Airstrip (Philippines)
+PH-0553,Balabagan Airport (Philippines)
+PH-0554,Kalamansig Airport (Philippines)
+PH-0555,Bascon Heliport (Philippines)
+PH-0556 (Philippines)ilippines Paramotor Training Field (Philippines)
+PH-0557,Danao Ultralight Airport (Philippines)
+PH-0558,Kenram Airport (Philippines)
+PH-0559,Washington Tower Helipad (Philippines)
+PH-0560,Cleveland Tower Helipad (Philippines)
+PH-0561,Burgundy McKinley Place Helipad (Philippines)
+PH-0562,Okada Manila Ground Heliport (Philippines)
+PH-0563,Five E-Com Center Helipad (Philippines)
+PH-0564,City of Dreams Manila Helipad (Philippines)
+PH-0565,Manato Airport (Philippines)
+PH-0566,Amoroy Airport (Philippines)
+PH-0567,Calanay Airport (Philippines)
+PH-0568,Taratak Airfield (Philippines)
+PH-0569,Ri-Rance Helipad (Philippines)
+PH-0570,Camp Nakar Heliport (Philippines)
+PH-ENI,El Nido Airport (Philippines)
 PHBK,Barking Sands Airport (USA)
 PHDH,Dillingham Airfield (USA)
 PHHF,French Frigate Shoals Airport (USA)
@@ -49714,7 +49714,7 @@ PR60,Lake Huron Medical Center Heliport (USA)
 PR68,Mora Development Corp Heliport (Puerto Rico)
 PR93,San Lorenzo Municipal Heliport Nr 1 (Puerto Rico)
 PR99,Puerto Heliport (Puerto Rico)
-PRNO,Siocon Airport,PH
+PRNO,Siocon Airport (Philippines)
 PS-0001,Jurish Highway Strip H,PS
 PS-0002,Muqeible Airfield,PS
 PS-0003,Bethlehem Heliport,PS
@@ -50671,112 +50671,112 @@ RORT,Tarama Airport (Japan)
 RORY,Yoron Airport (Japan)
 ROTM,Futenma Marine Corps Air Station (Japan)
 ROYN,Yonaguni Airport (Japan)
-RP12,Pagbilao Grande Island Airport,PH
-RP13,Nonoc Airport,PH
-RP14,Magat River Multipurpose Project  Airstrip,PH
-RP15,Isabel PASAR Airport,PH
-RP16,Seahawk Lz Airstrip,PH
-RP17,Malita Airport,PH
-RPBL,Balesin Island Airport,PH
-RPLA,Pinamalayan Airport,PH
-RPLB,Subic Bay International Airport / Naval Air Station Cubi Point,PH
-RPLC,Clark International Airport / Clark Air Base,PH
-RPLI,Laoag International Airport,PH
-RPLJ,Jomalig Island Airport,PH
-RPLL,Ninoy Aquino International Airport,PH
-RPLN,Palanan Community Airport,PH
-RPLO,Cuyo Airport,PH
-RPLP,Legazpi City International Airport,PH
-RPLQ,Colonel Ernesto Rabina Air Base,PH
-RPLR,Carmen (Rosales) Airstrip,PH
-RPLS,Danilo Atienza Air Base,PH
-RPLT,Itbayat Jorge Abad Airport,PH
-RPLU,Lubang Airport,PH
-RPLV,Fort Magsaysay Airport,PH
-RPLX,Corregidor Airport (Kindley Field),PH
-RPLY,Alabat Island Airport,PH
-RPLZ,Sorsogon Airport,PH
-RPMA,Allah Valley Airport,PH
-RPMB,Rajah Buayan Air Base,PH
-RPMC,Cotabato (Awang) Airport,PH
-RPMD,Francisco Bangoy International Airport,PH
-RPME,Bancasi Airport,PH
-RPMF,Bislig Airport,PH
-RPMG,Dipolog Airport,PH
-RPMH,Camiguin Airport,PH
-RPMI,Maria Cristina (Iligan) Airport,PH
-RPMJ,Jolo Airport,PH
-RPML,Lumbia Airfield,PH
-RPMM,Malabang Airport,PH
-RPMN,Sanga Sanga Airport,PH
-RPMO,Labo Airport,PH
-RPMP,Pagadian Airport,PH
-RPMQ,Mati National Airport,PH
-RPMR,General Santos International Airport,PH
-RPMS,Surigao Airport,PH
-RPMU,Cagayan de Sulu Airport,PH
-RPMV,Ipil Airport,PH
-RPMW,Tandag Airport,PH
-RPMX,Liloy Airport,PH
-RPMY,Malaybalay Airport,PH
-RPMZ,Zamboanga International Airport,PH
-RPNS,Siargao Airport,PH
-RPSB,Bantayan Airport,PH
-RPSD,Cesar Lim Rodriguez (Taytay-Sandoval) Airport,PH
-RPSM,Maasin Airport,PH
-RPSN,Ubay Airport,PH
-RPSP,Bohol-Panglao International Airport,PH
-RPSV,San Vicente Airport,PH
-RPUA,Pamalican Airstrip,PH
-RPUB,Loakan Airport,PH
-RPUD,Daet Airport,PH
-RPUE,Semirara Airport,PH
-RPUF,Basa Air Base,PH
-RPUG,Lingayen Airport,PH
-RPUH,San Jose Airport,PH
-RPUI,Iba Airport,PH
-RPUJ,Castillejos - Jesus F Magsaysay Airfield,PH
-RPUK,Calapan National Airport,PH
-RPUL,Basilio Fernando Air Base,PH
-RPUM,Mamburao Airport,PH
-RPUN,Naga Airport,PH
-RPUO,Basco Airport,PH
-RPUP,Jose Panganiban (Larap) Airstrip,PH
-RPUQ,Vigan Airport,PH
-RPUR,Dr Juan C Angara Airport,PH
-RPUS,San Fernando Airport,PH
-RPUT,Tuguegarao Airport,PH
-RPUU,Bulan Airport,PH
-RPUV,Virac Airport,PH
-RPUW,Marinduque Airport,PH
-RPUX,Plaridel Airport,PH
-RPUY,Cauayan Airport,PH
-RPUZ,Bagabag Airport,PH
+RP12,Pagbilao Grande Island Airport (Philippines)
+RP13,Nonoc Airport (Philippines)
+RP14,Magat River Multipurpose Project  Airstrip (Philippines)
+RP15,Isabel PASAR Airport (Philippines)
+RP16,Seahawk Lz Airstrip (Philippines)
+RP17,Malita Airport (Philippines)
+RPBL,Balesin Island Airport (Philippines)
+RPLA,Pinamalayan Airport (Philippines)
+RPLB,Subic Bay International Airport / Naval Air Station Cubi Point (Philippines)
+RPLC,Clark International Airport / Clark Air Base (Philippines)
+RPLI,Laoag International Airport (Philippines)
+RPLJ,Jomalig Island Airport (Philippines)
+RPLL,Ninoy Aquino International Airport (Philippines)
+RPLN,Palanan Community Airport (Philippines)
+RPLO,Cuyo Airport (Philippines)
+RPLP,Legazpi City International Airport (Philippines)
+RPLQ,Colonel Ernesto Rabina Air Base (Philippines)
+RPLR,Carmen (Rosales) Airstrip (Philippines)
+RPLS,Danilo Atienza Air Base (Philippines)
+RPLT,Itbayat Jorge Abad Airport (Philippines)
+RPLU,Lubang Airport (Philippines)
+RPLV,Fort Magsaysay Airport (Philippines)
+RPLX,Corregidor Airport (Kindley Field) (Philippines)
+RPLY,Alabat Island Airport (Philippines)
+RPLZ,Sorsogon Airport (Philippines)
+RPMA,Allah Valley Airport (Philippines)
+RPMB,Rajah Buayan Air Base (Philippines)
+RPMC,Cotabato (Awang) Airport (Philippines)
+RPMD,Francisco Bangoy International Airport (Philippines)
+RPME,Bancasi Airport (Philippines)
+RPMF,Bislig Airport (Philippines)
+RPMG,Dipolog Airport (Philippines)
+RPMH,Camiguin Airport (Philippines)
+RPMI,Maria Cristina (Iligan) Airport (Philippines)
+RPMJ,Jolo Airport (Philippines)
+RPML,Lumbia Airfield (Philippines)
+RPMM,Malabang Airport (Philippines)
+RPMN,Sanga Sanga Airport (Philippines)
+RPMO,Labo Airport (Philippines)
+RPMP,Pagadian Airport (Philippines)
+RPMQ,Mati National Airport (Philippines)
+RPMR,General Santos International Airport (Philippines)
+RPMS,Surigao Airport (Philippines)
+RPMU,Cagayan de Sulu Airport (Philippines)
+RPMV,Ipil Airport (Philippines)
+RPMW,Tandag Airport (Philippines)
+RPMX,Liloy Airport (Philippines)
+RPMY,Malaybalay Airport (Philippines)
+RPMZ,Zamboanga International Airport (Philippines)
+RPNS,Siargao Airport (Philippines)
+RPSB,Bantayan Airport (Philippines)
+RPSD,Cesar Lim Rodriguez (Taytay-Sandoval) Airport (Philippines)
+RPSM,Maasin Airport (Philippines)
+RPSN,Ubay Airport (Philippines)
+RPSP,Bohol-Panglao International Airport (Philippines)
+RPSV,San Vicente Airport (Philippines)
+RPUA,Pamalican Airstrip (Philippines)
+RPUB,Loakan Airport (Philippines)
+RPUD,Daet Airport (Philippines)
+RPUE,Semirara Airport (Philippines)
+RPUF,Basa Air Base (Philippines)
+RPUG,Lingayen Airport (Philippines)
+RPUH,San Jose Airport (Philippines)
+RPUI,Iba Airport (Philippines)
+RPUJ,Castillejos - Jesus F Magsaysay Airfield (Philippines)
+RPUK,Calapan National Airport (Philippines)
+RPUL,Basilio Fernando Air Base (Philippines)
+RPUM,Mamburao Airport (Philippines)
+RPUN,Naga Airport (Philippines)
+RPUO,Basco Airport (Philippines)
+RPUP,Jose Panganiban (Larap) Airstrip (Philippines)
+RPUQ,Vigan Airport (Philippines)
+RPUR,Dr Juan C Angara Airport (Philippines)
+RPUS,San Fernando Airport (Philippines)
+RPUT,Tuguegarao Airport (Philippines)
+RPUU,Bulan Airport (Philippines)
+RPUV,Virac Airport (Philippines)
+RPUW,Marinduque Airport (Philippines)
+RPUX,Plaridel Airport (Philippines)
+RPUY,Cauayan Airport (Philippines)
+RPUZ,Bagabag Airport (Philippines)
 RPV,Roper Valley Airport (Australia)
-RPVA,Daniel Z. Romualdez Airport,PH
-RPVB,Bacolod-Silay Airport,PH
-RPVC,Calbayog Airport,PH
-RPVD,Sibulan Airport,PH
-RPVE,Godofredo P. Ramos Airport,PH
-RPVF,Catarman National Airport,PH
-RPVG,Guiuan Airport,PH
-RPVH,Hilongos Airport,PH
-RPVI,Iloilo International Airport,PH
-RPVJ,Moises R. Espinosa Airport,PH
-RPVK,Kalibo International Airport,PH
-RPVL,Wasig Airport,PH
-RPVM,Mactan Cebu International Airport,PH
-RPVO,Ormoc Airport,PH
-RPVP,Puerto Princesa International Airport / PAF Antonio Bautista Air Base,PH
-RPVQ,Biliran Airport,PH
-RPVR,Roxas Airport,PH
-RPVS,Evelio Javier Airport,PH
-RPVT,Tagbilaran Airport,PH
-RPVU,Tugdan Airport,PH
-RPVV,Francisco B. Reyes (Busuanga) Airport,PH
-RPVW,Borongan Airport,PH
-RPVY,Catbalogan Airport,PH
-RPVZ,Siquijor Airport,PH
+RPVA,Daniel Z. Romualdez Airport (Philippines)
+RPVB,Bacolod-Silay Airport (Philippines)
+RPVC,Calbayog Airport (Philippines)
+RPVD,Sibulan Airport (Philippines)
+RPVE,Godofredo P. Ramos Airport (Philippines)
+RPVF,Catarman National Airport (Philippines)
+RPVG,Guiuan Airport (Philippines)
+RPVH,Hilongos Airport (Philippines)
+RPVI,Iloilo International Airport (Philippines)
+RPVJ,Moises R. Espinosa Airport (Philippines)
+RPVK,Kalibo International Airport (Philippines)
+RPVL,Wasig Airport (Philippines)
+RPVM,Mactan Cebu International Airport (Philippines)
+RPVO,Ormoc Airport (Philippines)
+RPVP,Puerto Princesa International Airport / PAF Antonio Bautista Air Base (Philippines)
+RPVQ,Biliran Airport (Philippines)
+RPVR,Roxas Airport (Philippines)
+RPVS,Evelio Javier Airport (Philippines)
+RPVT,Tagbilaran Airport (Philippines)
+RPVU,Tugdan Airport (Philippines)
+RPVV,Francisco B. Reyes (Busuanga) Airport (Philippines)
+RPVW,Borongan Airport (Philippines)
+RPVY,Catbalogan Airport (Philippines)
+RPVZ,Siquijor Airport (Philippines)
 RRM,Marromeu Airport,MZ
 RS-0001,Bela Crkva Airport,RS
 RS-0002,Bojnik Airport,RS
@@ -50949,7 +50949,7 @@ RU-0145,Chaikovskiy Airport (Russia)
 RU-0146,Froly Airfield (Russia)
 RU-0147,Kurkachi Airfield (Russia)
 RU-0148,Maikhe Airfield (Russia)
-RU-0149,Uglovaya Air Base (Russia)
+RU-0149 (Uganda)lovaya Air Base (Russia)
 RU-0150,Saint Petersburg Children's Hospital No.1 Helipad (Russia)
 RU-0151,Petropavlovskaya Krepost Helipad (Russia)
 RU-0152,Mozdok Air Base (Russia)
@@ -50977,7 +50977,7 @@ RU-0173,Georgiyevka Airfield (Russia)
 RU-0174,Emergency Medicine Research Institute Helipad (Russia)
 RU-0175,Ambassador Hotel Helipad (Russia)
 RU-0176,Marli Helipad (Russia)
-RU-0177,Uglich Fominskoye Helipad (Russia)
+RU-0177 (Uganda)lich Fominskoye Helipad (Russia)
 RU-0178,Yaskino Helipad (Russia)
 RU-0179,Tushino Children's Hospital Helipad (Russia)
 RU-0180,Alyye Parusa Helipad (Russia)
@@ -51864,7 +51864,7 @@ SA-0002,Al Wariah SE Highway Strip (Saudi Arabia)
 SA-0003,Qalibah Highway Strip (Saudi Arabia)
 SA-0004,Ras Saffaniyah Airport (Saudi Arabia)
 SA-0005,Al Hasa Airport (Saudi Arabia)
-SA-0006,Ugtah Highway Strip (Saudi Arabia)
+SA-0006 (Uganda)tah Highway Strip (Saudi Arabia)
 SA-0007,Uwayqilah Airport (Saudi Arabia)
 SA-0008,Kharmiyah Airstrip (Saudi Arabia)
 SA-0009,Farasan Hospital Helipad (Saudi Arabia)
@@ -54107,14 +54107,14 @@ SETN,General Rivadeneira Airport,EC
 SETR,Tarapoa Airport,EC
 SETU,Lieutenant Colonel Luis A. Mantilla International Airport,EC
 SEVR,El Vergel Airport,EC
-SFAL,Port Stanley Airport,FK
+SFAL,Port Stanley Airport (Falkland Islands)
 SFR,San Fernando Airport (USA)
 SFU,Safia Airport (Papua New Guinea)
-SG-0001,Brani Naval Base Heliport,SG
-SG-0002,Pulau Sudong Military Airstrip,SG
-SG-0003,Lim Chu Kang Road (Tengah Highway Strip),SG
-SG-0004,Kallang Airport,SG
-SG-0005,Murai Airfield,SG
+SG-0001,Brani Naval Base Heliport (Singapore)
+SG-0002,Pulau Sudong Military Airstrip (Singapore)
+SG-0003,Lim Chu Kang Road (Tengah Highway Strip) (Singapore)
+SG-0004,Kallang Airport (Singapore)
+SG-0005,Murai Airfield (Singapore)
 SG67,Aeródromo de la Estancia Pai Quara,PY
 SGAS,Aeropuerto Internacional Silvio Pettirossi,PY
 SGAY,Aeropuerto Nacional de Juan De Ayolas,PY
@@ -55836,7 +55836,7 @@ SJZZ,Fazenda Passo Fundo Airport (Brazil)
 SK-0001,Dobra Niva airfield,SK
 SK-0002,Košťany nad Turcom Airstrip,SK
 SK-0003,Dunajská Streda,SK
-SK-0004,Hrabušice,SK
+SK-0004 (Croatia)abušice,SK
 SK-0005,Kamenný Most,SK
 SK-0006,Krakovany,SK
 SK-0007,Malý Madaras,SK
@@ -58343,7 +58343,7 @@ SSUW,Fazenda Palmeiras Airport (Brazil)
 SSUX,Usina Mandu Airport (Brazil)
 SSUY,Fazenda Menina Airport (Brazil)
 SSUZ,Fazenda Vista Alegre Airport (Brazil)
-SSV,Siasi Airport,PH
+SSV,Siasi Airport (Philippines)
 SSVA,Fazenda Visa Estância Airport (Brazil)
 SSVB,Fazenda Vaca Branca Airport (Brazil)
 SSVD,Fazenda Alvorada Airport (Brazil)
@@ -59622,7 +59622,7 @@ T91,The Carter Memorial Airport (USA)
 T94,Twin-Oaks Airport (USA)
 T95,Bay Electric Supply Heliport (USA)
 TA00,Rafter P Airport (USA)
-TA01,Phillips Farm Airport (USA)
+TA01 (Philippines)illips Farm Airport (USA)
 TA02,Howard Field (USA)
 TA03,Jo Na Acres Airport (USA)
 TA04,Sheriff Department Heliport (USA)
@@ -59899,7 +59899,7 @@ TH-0017,Kaeng Krachan Airfield,TH
 TH-0018,Pran Buri Airport,TH
 TH-0019,Ratthaphum Airfield,TH
 TH-0020,Khuan Timun Helipad,TH
-TH-0021,Phanom Sarakham Airport,TH
+TH-0021 (Philippines)anom Sarakham Airport,TH
 TH-0022,Old Betong Airport,TH
 TH-0023,Banana,TH
 TH-0024,Vanchanphen Airpark,TH
@@ -61167,23 +61167,23 @@ UESZ,Kazachye Airport (Russia)
 UEWD,Dzhargalakh Airport (Russia)
 UEWO,Kudu-Kyuyol Airport (Russia)
 UEYR,Sasyr Airport (Russia)
-UG-0001,Kisoro Airport,UG
-UG-0002,Savannah Airstrip,UG
-UG-0003,Mutukula Airport,UG
-UG-0004,Nakasongola Airport,UG
-UG-0005,Koboko Airport,UG
-UG-0006,Kalongo Airport,UG
-UG-0007,Chobe Safari Lodge Airport,UG
-UG-0008,Matany Airstrip,UG
-UG-0009,Lake Albert Lodge Airstrip,UG
-UG-0010,Buhuka Airport,UG
-UG-0011,Buseruka Airport,UG
-UG-0012,Butiaba Airport,UG
-UG-0013,Hoima International Airport (under construction),UG
-UG-0014,Bukasa Airport,UG
-UG-0015,Bulago Airport,UG
-UG-0016,Kayonza Airport,UG
-UG-OYG,Moyo Airport,UG
+UG-0001,Kisoro Airport (Uganda)
+UG-0002,Savannah Airstrip (Uganda)
+UG-0003,Mutukula Airport (Uganda)
+UG-0004,Nakasongola Airport (Uganda)
+UG-0005,Koboko Airport (Uganda)
+UG-0006,Kalongo Airport (Uganda)
+UG-0007,Chobe Safari Lodge Airport (Uganda)
+UG-0008,Matany Airstrip (Uganda)
+UG-0009,Lake Albert Lodge Airstrip (Uganda)
+UG-0010,Buhuka Airport (Uganda)
+UG-0011,Buseruka Airport (Uganda)
+UG-0012,Butiaba Airport (Uganda)
+UG-0013,Hoima International Airport (under construction) (Uganda)
+UG-0014,Bukasa Airport (Uganda)
+UG-0015,Bulago Airport (Uganda)
+UG-0016,Kayonza Airport (Uganda)
+UG-OYG,Moyo Airport (Uganda)
 UG0U,Gudauta Air Base,GE
 UG11,Dollyar Air Base (Azerbaijan)
 UG22,Tbilisi Marneuli Air Base,GE
@@ -61192,7 +61192,7 @@ UG25,Telavi Kurdgelauri Airport,GE
 UG26,Kutaisi West Airport,GE
 UG27,Vaziani Air Base,GE
 UG28,Bolshiye Shiraki Air Base,GE
-UGB,Ugashik Bay Airport (USA)
+UGB (Uganda)ashik Bay Airport (USA)
 UGEJ,Jermuk Airport,AM
 UGKO,David the Builder Kutaisi International Airport,GE
 UGMM,Mukhrani Airport,GE
@@ -61231,7 +61231,7 @@ UHKG,Kamenny Ruchey Naval Air Base (Russia)
 UHKK,Komsomolsk-on-Amur Airport (Russia)
 UHKM,Sovetskaya Gavan (Maygatka) Airport (Russia)
 UHKP,Sovetskaya Gavan (Postovaya) Airport (Russia)
-UHMA,Ugolny Yuri Ryktheu Airport (Russia)
+UHMA (Uganda)olny Yuri Ryktheu Airport (Russia)
 UHMD,Provideniya Bay Airport (Russia)
 UHME,Zaliv Kresta Airport (Russia)
 UHMF,Omsukchan Airport (Russia)
@@ -61443,7 +61443,7 @@ UMKK,Khrabrovo Airport (Russia)
 UMLI,Minsk Machulishchy Air Base,BY
 UMMA,Baranavichi Air Base,BY
 UMMB,Borovaya Airfield,BY
-UMMG,Hrodna Airport,BY
+UMMG (Croatia)odna Airport,BY
 UMMM,Minsk 1 Airport,BY
 UMMR,Ross Air Base,BY
 UMMS,Minsk National Airport,BY
@@ -61729,7 +61729,7 @@ US-0179,Black Butte North Airport (USA)
 US-0180,Bullwhacker Airport (USA)
 US-0181,Tavares Seaplane Base (USA)
 US-0182,Southwest Lakes Airpark (USA)
-US-0183,Phoebe Sumter Heliport (USA)
+US-0183 (Philippines)oebe Sumter Heliport (USA)
 US-0184,Saint Anthony's Hospital East Heliport (USA)
 US-0185,Castle Rock Adventist Health Campus Heliport (USA)
 US-0186,Watsontown / Helicopter 1 LLC Heliport (USA)
@@ -61945,7 +61945,7 @@ US-0394,Blackberry Ridge Heliport (USA)
 US-0395,West Wind Airport (USA)
 US-0396,Carilion Clinic Heliport (USA)
 US-0397,Heinen Airport (USA)
-US-0398,Pheasant Wings Airport (USA)
+US-0398 (Philippines)easant Wings Airport (USA)
 US-0399,LaSalle General Hospital Heliport (USA)
 US-0400,Flugplatz Airport (USA)
 US-0401,Dead Cow Field (USA)
@@ -62011,7 +62011,7 @@ US-0460,Falwell Base (USA)
 US-0461,Oak Grove Farm Airport (USA)
 US-0462,Mercey Hot Springs Airport (USA)
 US-0463,Medflight 5 Heliport (USA)
-US-0464,Pharmnall Airport (USA)
+US-0464 (Philippines)armnall Airport (USA)
 US-0465,Falwell Freeway (USA)
 US-0466,Schroeder's Field (USA)
 US-0467,Fish Hatchery Farm Airport (USA)
@@ -62460,7 +62460,7 @@ US-0909,La Parra Ranch Airport (USA)
 US-0910,Claytime Heliport (USA)
 US-0911,South Tajos Ranch Airport (USA)
 US-0912,Cardinal Field (USA)
-US-0913,Ugashik Narrows Airport (USA)
+US-0913 (Uganda)ashik Narrows Airport (USA)
 US-0914,St Vincent North Hospital Heliport (USA)
 US-0915,Memorial Hospital Los Banos Heliport (USA)
 US-0916,Zamora Airport (USA)
@@ -63117,7 +63117,7 @@ US-1565,Stadler Ranch Airport (USA)
 US-1566,Stand Fast Airport (USA)
 US-1567,Eden Valley Ranch / Albert Seeno Jr Airstrip (USA)
 US-1568,Taylorcraft Airport (USA)
-US-1569,Philmont Scout Ranch Landing Strip (USA)
+US-1569 (Philippines)ilmont Scout Ranch Landing Strip (USA)
 US-1570,Inscription House Airport (USA)
 US-1571,Kaibito Airport (USA)
 US-1572,Inscription House Trading Post Landing Strip (USA)
@@ -63823,7 +63823,7 @@ US-2269,Bac Lieu Stagefield Army Heliport (USA)
 US-2270,Soc Trang Stagefield Army Heliport (USA)
 US-2271,My Tho Stagefield Army Heliport (USA)
 US-2272,King Landing Strip (USA)
-US-2273,Phu Loi Stagefield Army Heliport (USA)
+US-2273 (Philippines)u Loi Stagefield Army Heliport (USA)
 US-2274,Vung Tau Stagefield Army Heliport (USA)
 US-2275,Dempsey Army Heliport (USA)
 US-2276,Mafrige Ranch Inc Airport (USA)
@@ -63853,7 +63853,7 @@ US-2299,Fountain Hills Airport (USA)
 US-2300,Hassayampa Airport (USA)
 US-2301,Lake Pleasant Landing Field (USA)
 US-2302,Marsh Airstrip (USA)
-US-2303,Phoenix District Airport (USA)
+US-2303 (Philippines)oenix District Airport (USA)
 US-2304,Ross Airport (USA)
 US-2305,Saguaro Airport (USA)
 US-2306,Sanders Airport (USA)
@@ -63875,7 +63875,7 @@ US-2321,Rosebud Landing Strip (USA)
 US-2322,Big Creek Airport (USA)
 US-2323,Frank Ranch Field (USA)
 US-2324,Strickland/Smalley Field (USA)
-US-2325,Phoebe Putney Memorial Hospital Heliport (USA)
+US-2325 (Philippines)oebe Putney Memorial Hospital Heliport (USA)
 US-2326,Paradox Heliport (USA)
 US-2327,Bagdad Intermediate Field (USA)
 US-2328,Amboy Airfield (USA)
@@ -64438,7 +64438,7 @@ US-2884,Moose Point Airport (USA)
 US-2885,Swanson River Airport (USA)
 US-2886,Chickaloon River Airport (USA)
 US-2887,Fire Tower Ridge Airstrip (USA)
-US-2888,Philos Airport (USA)
+US-2888 (Philippines)ilos Airport (USA)
 US-2889,Minnicks Airport (USA)
 US-2890,Caves Lake Airport (USA)
 US-2891,Fish Creek Airport (USA)
@@ -64466,7 +64466,7 @@ US-2912,Eightmile Lake Airfield (USA)
 US-2913,Bethel Airport (1939) (USA)
 US-2914,Bethel Airport (1941) (USA)
 US-2915,Weeks Field (USA)
-US-2916,Phillips Field (USA)
+US-2916 (Philippines)illips Field (USA)
 US-2917,Miller Army Airfield (USA)
 US-2918,Huslia Airport (1952) (USA)
 US-2919,Cannikin Nuclear Test Site Airfield (USA)
@@ -65787,7 +65787,7 @@ US-4228,Riverby Ranch Airport (USA)
 US-4229,Koch Airport (USA)
 US-4230,Galichia Airport (USA)
 US-4231,Old Bolivar Airport (USA)
-US-4232,Phillips Airport (USA)
+US-4232 (Philippines)illips Airport (USA)
 US-4233,Harrison Field (USA)
 US-4234,Halm Ranch Airport (USA)
 US-4235,Houston Methodist The Woodlands Hospital Heliport (USA)
@@ -66045,7 +66045,7 @@ US-4486,Adventist Health Delano Regional Medical Center Heliport (USA)
 US-4487,Jamison Field (USA)
 US-4488,Sodbuster Strip (USA)
 US-4489,Turner Heliport (USA)
-US-4490,Phelps County Regional Medical Center Heliport (USA)
+US-4490 (Philippines)elps County Regional Medical Center Heliport (USA)
 US-4491,Mercy Hospital-Lebanon Heliport (USA)
 US-4492,Pfeiffer Field (USA)
 US-4493,Aerodrome Les Noyers (USA)
@@ -66502,7 +66502,7 @@ US-4942,Air Evac 98 Heliport (USA)
 US-4943,Air Evac 104 Heliport (USA)
 US-4944,Air Evac 111 Heliport (USA)
 US-4945,Washington County Memorial Hospital Heliport (USA)
-US-4946,PHI Med 14 Heliport (USA)
+US-4946 (Philippines)I Med 14 Heliport (USA)
 US-4947,Penn Presbyterian Medical Center - North Heliport (USA)
 US-4948,Amelia Airport (USA)
 US-4949,Sequim EMS Heliport (USA)
@@ -67285,8 +67285,8 @@ US-5724,Bristol Motor Speedway Heliport (USA)
 US-5725,Darlington Raceway Heliport (USA)
 US-5726,Nashville Superspeedway Heliport (USA)
 US-5727,World Wide Technology Raceway (USA)
-US-5728,Phoenix Raceway Heliport (USA)
-US-5729,Phoenix Raceway Infield Heliport (USA)
+US-5728 (Philippines)oenix Raceway Heliport (USA)
+US-5729 (Philippines)oenix Raceway Infield Heliport (USA)
 US-5730,Las Vegas Motor Speedway Infield Heliport (USA)
 US-5731,Las Vegas Motor Speedway Heliport (USA)
 US-5732,Raisin City Airport (USA)
@@ -67526,7 +67526,7 @@ US-5964,Haby Ranch Airport (USA)
 US-5965,Canyon Ranch Airport (USA)
 US-5966,Pan-Gil Ranch Airport (USA)
 US-5967,Eppright Flying Service / Mission Agro Airport (USA)
-US-5968,Pharr Airport (USA)
+US-5968 (Philippines)arr Airport (USA)
 US-5969,Los Fresnos Airport (USA)
 US-5970,Woods Airport (USA)
 US-5971,Walker Farms Airport (USA)
@@ -68171,7 +68171,7 @@ US-6608,Haeuser Airport (USA)
 US-6609,St Croix Regional Medical Center Heliport (USA)
 US-6610,Sickles Airport (USA)
 US-6611,Hinton-Red Rock Airport (USA)
-US-6612,Physicians Hospital in Anadarko Heliport (USA)
+US-6612 (Philippines)ysicians Hospital in Anadarko Heliport (USA)
 US-6613,Wildrose Ranger Station Heliport (USA)
 US-6614,Amargosa Valley Airport (USA)
 US-6615,Belcher Airport (USA)
@@ -69026,7 +69026,7 @@ US-7463,Sheldon Airstrip (USA)
 US-7464,Muddy Creek Airport (USA)
 US-7465,Dekker Landing Field (USA)
 US-7466,Fryar Field (USA)
-US-7467,Phenix City Airport (USA)
+US-7467 (Philippines)enix City Airport (USA)
 US-7468,Warrensburg Airport (USA)
 US-7469,Browder Airport (USA)
 US-7470,Jaeck Stagefield Army Heliport (USA)
@@ -69199,7 +69199,7 @@ UT71,Tooele Valley Hospital Heliport (USA)
 UT72,Two Jays #2 Heliport (USA)
 UT74,Fry Canyon Field (USA)
 UT75,Mineral Canyon Strip (USA)
-UT76,Phc Hospital Heliport (USA)
+UT76 (Philippines)c Hospital Heliport (USA)
 UT78,Timpanogos Regional Hospital Heliport (USA)
 UT79,3-I Rocker Ranch Airport (USA)
 UT80,Hamilton Fort Ranch Airport (USA)
@@ -69563,7 +69563,7 @@ VA26,Trent Farm Airstrip (USA)
 VA27,Moorefield's Airstrip (USA)
 VA28,Layne Farm Airstrip (USA)
 VA29,Novant Health UVA Culpeper Medical Center Heliport (USA)
-VA2A,Phalodi Airport,IN
+VA2A (Philippines)alodi Airport,IN
 VA2B,Dr. Bhimrao Ambedkar Airstrip,IN
 VA2C,Birsi Airport,IN
 VA2D,Ratlam Airport,IN
@@ -69690,7 +69690,7 @@ VDKH,Kampong Chhnang Airport,KH
 VDKK,Koh Kong Airport,KH
 VDKT,Kratie Airport,KH
 VDMK,Mondulkiri Airport,KH
-VDPP,Phnom Penh International Airport,KH
+VDPP (Philippines)nom Penh International Airport,KH
 VDRK,Ratanakiri Airport,KH
 VDSR,Siem Reap International Airport,KH
 VDST,Stung Treng Airport,KH
@@ -69997,7 +69997,7 @@ VG10,Cathro Airport (USA)
 VG11,Carrsville Volunteer Fire Department Heliport (USA)
 VG12,Simpsonville Airport (USA)
 VG13,White Stone Heliport (USA)
-VG14,Philip M Grabill Jr Memorial Heliport (USA)
+VG14 (Philippines)ilip M Grabill Jr Memorial Heliport (USA)
 VG15,White Stone Family Practice Heliport (USA)
 VG16,Landis Airport (USA)
 VG17,Defense Supply Center Richmond Heliport (USA)
@@ -70146,7 +70146,7 @@ VLLB,Luang Phabang International Airport,LA
 VLLN,Luang Namtha Airport,LA
 VLOS,Oudomsay Airport,LA
 VLPS,Pakse International Airport,LA
-VLPV,Phonesavanh Airport,LA
+VLPV (Philippines)onesavanh Airport,LA
 VLSB,Sayaboury Airport,LA
 VLSK,Savannakhet Airport,LA
 VLSN,Sam Neua Airport,LA
@@ -70166,7 +70166,7 @@ VN-0006,Đảo Nam Yết (Namyit Island) Helipad (Vietnam)
 VN-0007,Đá Tây (West London Reef) Helipad (Vietnam)
 VN-0008,Đá Lớn (Discovery Great Reef) Helipad (Vietnam)
 VN-0009,Đảo Phan Vinh (Pearson Reef B) Helipad (Vietnam)
-VN-0010,Phu Quoc Airport (Vietnam)
+VN-0010 (Philippines)u Quoc Airport (Vietnam)
 VN-0011,Năm Căn Heliport (Vietnam)
 VN-0012,Nước Mặn (Marble Mountain) Air Facility (Vietnam)
 VN-0013,Red Beach Airfield (Vietnam)
@@ -70175,7 +70175,7 @@ VN-0015,Keangnam Tower A Helipad (Vietnam)
 VN-0016,Keangnam Tower B Helipad (Vietnam)
 VN-0017,Keangnam Hanoi Landmark Tower Helipad (Vietnam)
 VN-0018,Long Thanh International Airport (under construction) (Vietnam)
-VN-0019,Phu Quy Airport (Vietnam)
+VN-0019 (Philippines)u Quy Airport (Vietnam)
 VN-0020,Ongkarak Airport (Klong 16),TH
 VN-0021,Đảo An Bang (Amboyna Cay) Helipad (Vietnam)
 VN-0022,Trường Sa Đông (Central London Reef) Helipad (Vietnam)
@@ -70185,7 +70185,7 @@ VN-0025,Đảo Sơn Ca (Sand Cay) Helipad (Vietnam)
 VN-0026,Đảo Sinh Tồn (Sin Cowe Island) Helipad (Vietnam)
 VN-0027,Đảo Sinh Tồn Đông (Sin Cowe East Island) Helipad (Vietnam)
 VN-0028,Đảo Song Tử Tây (Southwest Cay) Helipad (Vietnam)
-VN-0029,Phu Tho Municipal Airport (Vietnam)
+VN-0029 (Philippines)u Tho Municipal Airport (Vietnam)
 VN-0030,Hoa Lac Airfield (Vietnam)
 VN-0031,Hai Au Seaplane Base (Vietnam)
 VN-0032,Tuan Chau Heliport (Vietnam)
@@ -70195,12 +70195,12 @@ VN-0035,108 Hospital North Tower Heliport (Vietnam)
 VN-0036,108 Hospital South Tower Heliport (Vietnam)
 VN-0037,Tay Loc Airfield (Vietnam)
 VN-0038,Bu Dop Airport (Vietnam)
-VN-0039,Phuoc Binh Airport (Vietnam)
+VN-0039 (Philippines)uoc Binh Airport (Vietnam)
 VN-0040,Tan Loi Airport (Vietnam)
 VN-0041,Minh Tam Airport (Vietnam)
 VN-0042,Dau Tieng Airport (Vietnam)
 VN-0043,Chon Thanh Airport (Vietnam)
-VN-0044,Phu Giao Airport (Vietnam)
+VN-0044 (Philippines)u Giao Airport (Vietnam)
 VN-0045,Long Khanh Airport (Vietnam)
 VN-0046,Thong Binh Airport (Vietnam)
 VN-0047,Dak Mil Airport (Vietnam)
@@ -70240,7 +70240,7 @@ VNMG,Meghauli Airport,NP
 VNMN,Mahendranagar Airport,NP
 VNNG,Nepalgunj Airport,NP
 VNPK,Pokhara Airport,NP
-VNPL,Phaplu Airport,NP
+VNPL (Philippines)aplu Airport,NP
 VNRB,Rajbiraj Airport,NP
 VNRC,Ramechhap Airport,NP
 VNRK,Rukum Chaurjahari Airport,NP
@@ -70407,28 +70407,28 @@ VTBS,Suvarnabhumi Airport,TH
 VTBT,Bang Phra Airport,TH
 VTBU,U-Tapao International Airport,TH
 VTBW,Watthana Nakhon Airport,TH
-VTCB,Phayao Ban Chiang Kham Airport,TH
+VTCB (Philippines)ayao Ban Chiang Kham Airport,TH
 VTCC,Chiang Mai International Airport,TH
 VTCH,Mae Hong Son Airport,TH
 VTCI,Pai Airport,TH
 VTCL,Lampang Airport,TH
 VTCN,Nan Airport,TH
 VTCO,Lamphun Airport,TH
-VTCP,Phrae Airport,TH
+VTCP (Philippines)rae Airport,TH
 VTCR,Old Chiang Rai Airport,TH
 VTCS,Mae Sariang Airport,TH
 VTCT,Mae Fah Luang - Chiang Rai International Airport,TH
 VTCY,Nok Airfield,TH
 VTED,Udorn Air Base,TH
-VTPB,Phetchabun Airport,TH
+VTPB (Philippines)etchabun Airport,TH
 VTPH,Hua Hin Airport,TH
 VTPI,Takhli Airport,TH
 VTPL,Sak Long Airport,TH
 VTPM,Mae Sot Airport,TH
 VTPN,Nakhon Sawan Airport,TH
 VTPO,Sukhothai Airport,TH
-VTPP,Phitsanulok Airport,TH
-VTPR,Photharam Airport,TH
+VTPP (Philippines)itsanulok Airport,TH
+VTPR (Philippines)otharam Airport,TH
 VTPT,Tak Airport,TH
 VTPU,Uttaradit Airport,TH
 VTPY,Khunan Phumipol Airport,TH
@@ -70442,11 +70442,11 @@ VTSH,Songkhla Airport,TH
 VTSK,Pattani Airport,TH
 VTSM,Samui Airport,TH
 VTSN,Cha Eian Airport,TH
-VTSP,Phuket International Airport,TH
+VTSP (Philippines)uket International Airport,TH
 VTSR,Ranong Airport,TH
 VTSS,Hat Yai International Airport,TH
 VTST,Trang Airport,TH
-VTSW,Phuket Airpark,TH
+VTSW (Philippines)uket Airpark,TH
 VTUD,Udon Thani Airport,TH
 VTUI,Sakon Nakhon Airport,TH
 VTUJ,Surin Airport,TH
@@ -70484,12 +70484,12 @@ VVN,Las Malvinas/Echarate Airport (Peru)
 VVNB,Noi Bai International Airport (Vietnam)
 VVNS,Na San Airport (Vietnam)
 VVNT,Nha Trang Air Base (Vietnam)
-VVPB,Phu Bai International Airport (Vietnam)
-VVPC,Phu Cat Airport (Vietnam)
+VVPB (Philippines)u Bai International Airport (Vietnam)
+VVPC (Philippines)u Cat Airport (Vietnam)
 VVPK,Pleiku Airport (Vietnam)
-VVPQ,Phu Quoc International Airport (Vietnam)
-VVPR,Phan Rang Airport (Vietnam)
-VVPT,Phan Thiet Airport (Vietnam)
+VVPQ (Philippines)u Quoc International Airport (Vietnam)
+VVPR (Philippines)an Rang Airport (Vietnam)
+VVPT (Philippines)an Thiet Airport (Vietnam)
 VVRG,Rach Gia Airport (Vietnam)
 VVTH,Dong Tac Airport (Vietnam)
 VVTS,Tan Son Nhat International Airport (Vietnam)
@@ -70542,7 +70542,7 @@ VYNP,Nampong Air Base (Myanmar)
 VYNS,Namsang Airport (Myanmar)
 VYNT,Namtu Airport (Myanmar)
 VYPA,Hpa-N Airport (Myanmar)
-VYPB,Phonngbyin Airport (Myanmar)
+VYPB (Philippines)onngbyin Airport (Myanmar)
 VYPE,Seinzan (Paletwa) Airport (Myanmar)
 VYPI,Pearl Island Airport (Myanmar)
 VYPK,Pauk Airport (Myanmar)
@@ -71340,15 +71340,15 @@ WS91,Sky Hollow Airport (USA)
 WS96,Hughes Airport (USA)
 WS98,St Joseph's Hospital Heliport (USA)
 WSA,Wasua Airport (Papua New Guinea)
-WSAC,Changi Air Base (East),SG
-WSAG,Sembawang Air Base,SG
-WSAP,Paya Lebar Air Base,SG
-WSAT,Tengah Air Base,SG
+WSAC,Changi Air Base (East) (Singapore)
+WSAG,Sembawang Air Base (Singapore)
+WSAP,Paya Lebar Air Base (Singapore)
+WSAT,Tengah Air Base (Singapore)
 WSB,Steamboat Bay Seaplane Base (USA)
 WSJ,San Juan /Uganik/ Seaplane Base (USA)
 WSM,Wiseman Airport (USA)
-WSSL,Seletar Airport,SG
-WSSS,Singapore Changi Airport,SG
+WSSL,Seletar Airport (Singapore)
+WSSS,Singapore Changi Airport (Singapore)
 WT00,Grays Harbor Community Hospital Heliport (USA)
 WT01,Hillcrest Farms Airport (USA)
 WT02,Hammer EVOC Skid Pad Heliport (USA)
@@ -71441,7 +71441,7 @@ WV68,Durrett Ranches Airport (USA)
 WV69,Bluefield Regional Medical Center Heliport (USA)
 WV70,Fairview Airport (USA)
 WV71,Lieving Airport (USA)
-WV72,Philip Sporn Plant Heliport (USA)
+WV72 (Philippines)ilip Sporn Plant Heliport (USA)
 WV73,Wood County Heliport (USA)
 WV74,Snowshoe Heliport (USA)
 WV75,Stonewall Jackson Memorial Hospital Heliport (USA)
@@ -71517,7 +71517,7 @@ WZQ,Urad Middle Banner Airport (China)
 X-CBG6,Salmo Airport (Canada)
 X-KDEN,Denver Stapleton International Airport (USA)
 X-MMTG,Francisco Sarabia National Airport (Mexico)
-X-RPVB,Bacolod City Domestic Airport,PH
+X-RPVB,Bacolod City Domestic Airport (Philippines)
 X-TA37,Belo Broadcasting Heliport (USA)
 X-TRPM,W H Bramble Airport,MS
 X-US001,Pike Airfield (USA)
@@ -71647,7 +71647,7 @@ XLMV,Severomorsk-3 Naval Air Base (Russia)
 XLO,Long Xuyên Airport (Vietnam)
 XLWF,Fedotovo Naval Air Base (Russia)
 XLWT,Trufanovo Airfield (Russia)
-XMA,Maramag Airport,PH
+XMA,Maramag Airport (Philippines)
 XMUC,Flughafen München-Riem (Germany)
 XNG,Quảng Ngãi Airfield (Vietnam)
 XPLO,Plockton Airstrip (UK)
@@ -73058,7 +73058,7 @@ YPFT,Cooma/Polo Flat (Unlic) Airport (Australia)
 YPGH,Pigeon Hole Airport (Australia)
 YPGV,Gove Airport (Australia)
 YPHS,Pine Hill Station Airport (Australia)
-YPID,Phillip Island Heliport (Australia)
+YPID (Philippines)illip Island Heliport (Australia)
 YPIN,Pinnacle Airport (Australia)
 YPIR,Port Pirie Airport (Australia)
 YPIX,Pia Airport (Australia)
@@ -73724,11 +73724,11 @@ ZA-0005,Blanco Airport (South Africa)
 ZA-0006,Brosterlea Farm Airport (South Africa)
 ZA-0007,Stockdale Landing Strip Airport (South Africa)
 ZA-0008,Venterstad Airport (South Africa)
-ZA-0009,Philippolis Airport (South Africa)
+ZA-0009 (Philippines)ilippolis Airport (South Africa)
 ZA-0010,Arbeitsgenot Airport (South Africa)
 ZA-0011,Brandfort Moreson Airport (South Africa)
 ZA-0012,Arizona Airport (South Africa)
-ZA-0013,Phuthadijhaba Airport (South Africa)
+ZA-0013 (Philippines)uthadijhaba Airport (South Africa)
 ZA-0014,Sterkfontein Airport (South Africa)
 ZA-0015,Aldam Airport (South Africa)
 ZA-0016,Aero Farm Airport (South Africa)
