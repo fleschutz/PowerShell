@@ -139,6 +139,7 @@ AR,Aspect Ratio
 ARAC,Army Radar Approach Control (AAF)
 ARFOR,Area Forecast
 ARINC,Aeronautical Radio, Inc. (USA)
+ARNS,Aeronautical Radio Navigation Service
 ARLNO,Airline Office
 ARP,Airport Reference Point
 ARTCC,Air Route Traffic Control Centre
@@ -249,6 +250,7 @@ DFL,Division Flight Level
 DFS,Deutsche Flugsicherung (ATC in Germany)
 DGAC,Direction Générale de l'Aviation Civile
 DLA,Defense Logistics Agency
+DME,Distance Measuring Equipment
 DP,Departure Procedure
 DSNA,Direction des Services de la Navigation Aérienne 
 DTI,Direction Technique Innovation
