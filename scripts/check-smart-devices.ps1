@@ -5,7 +5,7 @@
 	This PowerShell script queries the status of the SSD/HDD devices (supporting S.M.A.R.T.) and prints it.
 .EXAMPLE
 	PS> ./check-smart-devices.ps1
-	✅ 1TB Samsung SSD 970 EVO 1TB via NVMe (35°C, 6142h, 34TB read, 64TB written, 770x on/off, v2B2QEXE7, test passed)
+	✅ 1TB Samsung SSD 970 EVO 1TB via NVMe (35°C, 6142h, 770x on/off, 34TB read, 64TB written, v2B2QEXE7, test passed)
 .LINK
 	https://github.com/fleschutz/PowerShell
 .NOTES
@@ -75,15 +75,15 @@ try {
 		} else {
 			$infos += ", $($details.power_on_time.hours)h"
 		}
-		if ($details.nvme_smart_health_information_log.host_reads) {
-			$infos += ", $(Bytes2String ($details.nvme_smart_health_information_log.data_units_read * 512 * 1000)) read"
-			$infos += ", $(Bytes2String ($details.nvme_smart_health_information_log.data_units_written * 512 * 1000)) written"
-		}
 		if ($details.power_cycle_count -gt 100000) { 
 			$infos += ", $($details.power_cycle_count)x on/off (!)"
 			$status = "⚠️"
 		} else {
 			$infos += ", $($details.power_cycle_count)x on/off"
+		}
+		if ($details.nvme_smart_health_information_log.host_reads) {
+			$infos += ", $(Bytes2String ($details.nvme_smart_health_information_log.data_units_read * 512 * 1000)) read"
+			$infos += ", $(Bytes2String ($details.nvme_smart_health_information_log.data_units_written * 512 * 1000)) written"
 		}
 		$infos += ", v$($details.firmware_version)"
 		if ($details.smart_status.passed) {
