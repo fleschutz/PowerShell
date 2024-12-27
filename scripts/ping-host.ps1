@@ -7,7 +7,7 @@
 	Specifies the hostname or IP address to ping (x.com by default)
 .EXAMPLE
 	PS> ./ping-host.ps1 x.com
-	✅ Host 'x.com' is UP (20ms latency to IP 104.244.42.65).
+	✅ Host 'x.com' at IP 104.244.42.1 is up with 20ms latency.
 .LINK
 	https://github.com/fleschutz/PowerShell
 .NOTES
@@ -22,11 +22,11 @@ try {
 	[Threading.Tasks.Task]::WaitAll($tasks)
 	foreach($ping in $tasks.Result) {
 		if ($ping.Status -eq "Success") {
-			Write-Host "✅ Host '$hostname' is UP ($($ping.RoundtripTime)ms latency to IP $($ping.Address))."
+			Write-Output "✅ Host '$hostname' at IP $($ping.Address) is up with $($ping.RoundtripTime)ms latency."
 			exit 0 # success
 		}
 	}
-	Write-Host "⚠️ Host '$hostname' doesn't respond - check the connection or maybe the host is down (yet)."
+	Write-Output "⚠️ Host '$hostname' doesn't respond - check the connection or maybe the host is down."
 	exit 1
 } catch {
 	"⚠️ Error in line $($_.InvocationInfo.ScriptLineNumber): $($Error[0])"

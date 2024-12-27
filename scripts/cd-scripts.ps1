@@ -4,8 +4,8 @@
 .DESCRIPTION
 	This PowerShell script changes the working directory to the PowerShell scripts folder.
 .EXAMPLE
-	PS> ./cd-scripts
-	📂C:\Users\Markus\Repos\PowerShell\scripts
+	PS> ./cd-scripts.ps1
+	📂C:\Repos\PowerShell\scripts
 .LINK
 	https://github.com/fleschutz/PowerShell
 .NOTES
