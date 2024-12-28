@@ -24,9 +24,12 @@ try {
 		if ($ping.Status -eq "Success") {
 			Write-Output "✅ Host '$hostname' at IP $($ping.Address) is up with $($ping.RoundtripTime)ms latency."
 			exit 0 # success
+		} else {
+			Write-Output "⚠️ No reply from '$hostname' (IP $($ping.Address)) - check the connection or maybe the host is down."
+			exit 1
 		}
 	}
-	Write-Output "⚠️ Host '$hostname' doesn't respond - check the connection or maybe the host is down."
+	Write-Output "⚠️ No reply from host '$hostname' - check the connection or maybe the host is down."
 	exit 1
 } catch {
 	"⚠️ Error in line $($_.InvocationInfo.ScriptLineNumber): $($Error[0])"
