@@ -6,7 +6,7 @@
 .EXAMPLE
 	PS> ./check-software.ps1
 
-	S O F T W A R E
+	   === S O F T W A R E ===
 	✅ Windows 10 Pro 64-Bit (v10.0.19045, since 5/2/2021)
 	...
 .LINK
@@ -15,7 +15,7 @@
 	Author: Markus Fleschutz | License: CC0
 #>
 
-Write-Host "`n   S O F T W A R E" -foregroundColor green
+Write-Host "`n   === S O F T W A R E ===" -foregroundColor green
 & "$PSScriptRoot/check-os.ps1"
 & "$PSScriptRoot/check-uptime.ps1"
 & "$PSScriptRoot/check-apps.ps1"

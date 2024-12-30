@@ -6,7 +6,7 @@
 .EXAMPLE
 	PS> ./check-hardware.ps1
   
-	H A R D W A R E
+	   === H A R D W A R E ===
 	✅ Intel(R) Core(TM) i5-6400 CPU @ 2.70GHz (CPU0, 2701MHz, socket U3E1, 30.1°C)
 	...
 .LINK
@@ -15,7 +15,7 @@
 	Author: Markus Fleschutz | License: CC0
 #>
 
-Write-Host "`n   H A R D W A R E" -foregroundColor green
+Write-Host "`n   === H A R D W A R E ===" -foregroundColor green
 & "$PSScriptRoot/check-cpu.ps1"
 & "$PSScriptRoot/check-ram.ps1"
 & "$PSScriptRoot/check-gpu.ps1"
