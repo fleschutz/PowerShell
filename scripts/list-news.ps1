@@ -12,9 +12,9 @@
 .EXAMPLE
 	PS> ./list-news.ps1
   
-	 UTC    HEADLINES         (source: https://www.yahoo.com/news/world)
-	 ---    ---------
-	09:15 • Deadly Mediterranean wildfires kill more than 40
+	 UTC   HEADLINES         (source: https://www.yahoo.com/news/world)
+	 ---   ---------
+	09:15  Deadly Mediterranean wildfires kill more than 40
 	...
 .LINK
 	https://github.com/fleschutz/PowerShell
@@ -28,15 +28,15 @@ try {
 	[xml]$content = (Invoke-WebRequest -URI $RSS_URL -useBasicParsing).Content
 	$title = $content.rss.channel.title
 	$URL = $content.rss.channel.link
-	Write-Host "`n UTC    HEADLINES             (source: " -noNewline
+	Write-Host "`n UTC   HEADLINES             (source: " -noNewline
         Write-Host $URL -foregroundColor blue -noNewline
         Write-Host ")"
-        Write-Host " ---    ---------"
+        Write-Host " ---   ---------"
 	[int]$count = 1
 	foreach ($item in $content.rss.channel.item) {
 		$title = $item.title -replace "â","'"
 		$time = $item.pubDate.Substring(11, 5)
-		& "$PSScriptRoot/write-typewriter.ps1" "$time • $title" $speed
+		& "$PSScriptRoot/write-typewriter.ps1" "$time  $title" $speed
 		if ($count++ -eq $maxLines) { break }
 	}
 	exit 0 # success
