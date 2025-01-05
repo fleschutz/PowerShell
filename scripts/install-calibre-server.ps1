@@ -17,7 +17,7 @@
 
 #Requires -RunAsAdministrator
 
-param([int]$port = 8099, [string]$mediaFolder = "$HOME/Calibre Library", [string]$userDB = "$HOME/CalibreUsers.sqlite", [string]$logfile = "$HOME/CalibreServer.log")
+param([int]$port = 8099, [string]$mediaFolder = "/opt/Calibre Library", [string]$userDB = "/opt/CalibreUsers.sqlite", [string]$logfile = "/opt/CalibreServer.log")
 
 try {
 	if (-not $IsLinux) { throw "Sorry, currently only supported on Linux" }
