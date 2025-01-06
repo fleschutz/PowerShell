@@ -24,28 +24,29 @@ try {
 
 	$stopWatch = [system.diagnostics.stopwatch]::startNew()
 
-	"⏳ (1/5) Updating package infos..."
+	"`n⏳ (1/5) Updating package infos..."
 	& sudo apt update -y
 	if ($lastExitCode -ne "0") { throw "'apt update' failed" }
 
-	"⏳ (2/5) Installing Calibre package..."
+	"`n⏳ (2/5) Installing Calibre package..."
 	& sudo apt install calibre -y
 	if ($lastExitCode -ne "0") { throw "'apt install calibre' failed" }
 
-	Write-Host "⏳ (3/5) Searching for Calibre server executable...    " -noNewline
+	"`n⏳ (3/5) Searching for Calibre server executable..." 
 	& calibre-server --version
 	if ($lastExitCode -ne "0") { throw "Can't execute 'calibre-server' - make sure Calibre server is installed and available" }
 
-	"⏳ (4/5) Creating media folder at: $mediaFolder ... (if non-existent)"
+	"`n⏳ (4/5) Creating media folder at: $mediaFolder ... (if non-existent)"
 	mkdir $mediaFolder
 
-	"⏳ (5/5) Starting Calibre server as background process..."
-	& calibre-server --port $port --num-per-page 100 --userdb $userDB --log $logfile --daemonize $HOME/'Calibre Library'
+	"`n⏳ (5/5) Starting Calibre server as background process..."
+	& calibre-server --port $port --num-per-page 100 --userdb $userDB --log $logfile --daemonize $mediaFolder
 
 	[int]$elapsed = $stopWatch.Elapsed.TotalSeconds
-	"✅ Installed Calibre server on port $port in $($elapsed)s (media at: $mediaFolder, user DB: $userDB, log to: $logfile)"
+	"✅ Installed and started Calibre server on port $port in $($elapsed)s."
+	"   (media at: $mediaFolder, user DB: $userDB, logging to: $logfile)"
 	exit 0 # success
 } catch {
-"⚠️ Error in line $($_.InvocationInfo.ScriptLineNumber): $($Error[0])"
-exit 1
+	"⚠️ Error in line $($_.InvocationInfo.ScriptLineNumber): $($Error[0])"
+	exit 1
 }
