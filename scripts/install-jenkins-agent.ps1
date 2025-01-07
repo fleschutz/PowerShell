@@ -1,13 +1,34 @@
+<#
+.SYNOPSIS
+        Installs the Jenkins Agent
+.DESCRIPTION
+        This PowerShell script installs and starts the Jenkins Agent.
+.EXAMPLE
+        PS> ./install-jenkins-agent.ps1
+.LINK
+        https://github.com/fleschutz/PowerShell
+.NOTES
+        Author: Markus Fleschutz | License: CC0
+#>
 
+param([string]$installDir = "/opt/jenkins-agent", [string]$jenkinsURL = "http://tux:8080", [string]$secretKey = "")
 
-mkdir /opt/jenkins-agent
+try {
+	"`n⏳ (1/4) Installing Java Runtime Environment (JRE)..."
+	& sudo apt install default-jre
 
-cd /opt/jenkins-agent
+	"`n⏳ (2/4) Creating installation folder at: $installDir ... (if non-existent)"
+	& mkdir $installDir
+	& cd $installDir
 
-curl -sO http://tau:8080/jnlpJars/agent.jar
+	"`n⏳ (3/4) Loading current .JAR program from Jenkins controller..."
+	& curl -sO $jenkinsURL/jnlpJars/agent.jar
 
-sudo apt install default-jre
+	"`n⏳ (4/4) Starting Jenkins agent ..."
+	& java -jar agent.jar -url $jenkinsURL -secret $secretKey -name pi -webSocket -workDir $installDir
 
-& java -jar agent.jar -url http://tau:8080/ -secret a7865adef7df7aa6ea222a3d523ee4bb62fa0c5c2a87f3b58a84fe30b979f9c0 -name pi -webSocket -workDir "/opt/jenkins-agent"
-
-exit 0 # success
+	exit 0 # success
+} catch {
+        "⚠️ Error in line $($_.InvocationInfo.ScriptLineNumber): $($Error[0])"
+        exit 1
+}
