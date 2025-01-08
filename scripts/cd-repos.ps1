@@ -1,13 +1,13 @@
 ﻿<#
 .SYNOPSIS
-	Sets the working directory to the user's repos folder
+	Sets the working directory to the Git repos folder
 .DESCRIPTION
-	This PowerShell script changes the working directory to the user's Git repositories folder.
+	This PowerShell script changes the working directory to the Git repositories folder.
 .PARAMETER subpath
 	Specifies an additional relative subpath (optional)
 .EXAMPLE
 	PS> ./cd-repos.ps1
-	📂C:\Users\Markus\Repos
+	📂C:\Repos
 .LINK
 	https://github.com/fleschutz/PowerShell
 .NOTES
@@ -25,6 +25,10 @@ try {
 		$path = "~/source/repos/"
 	} elseif (Test-Path "/Repos/" -pathType Container) {
 		$path = "/Repos/"
+	} elseif (Test-Path "C:/Repos" -pathType Container) {
+		$path = "C:/Repos"
+	} elseif (Test-Path "C:/Repositories" -pathType Container) {
+		$path = "C:/Repositories"
 	} else {
 		throw "The folder for Git repositories doesn't exist (yet)"
 	}

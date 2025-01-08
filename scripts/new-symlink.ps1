@@ -4,12 +4,12 @@
 .DESCRIPTION
 	This PowerShell script creates a new symbolic link file, linking to a target.
 .PARAMETER symlink
-	Specifies the path to the new symlink file
+	Specifies the file path to the new symlink file
 .PARAMETER target
-	Specifies the path to the target
+	Specifies the file path to the target
 .EXAMPLE
 	PS> ./new-symlink.ps1 C:\User\Markus\Windows C:\Windows
-	✅ New symlink file 'C:\User\Markus\Windows' created, linking to: C:\Windows
+	✅ Created new symlink file 'C:\User\Markus\Windows', linking to: C:\Windows
 .LINK
 	https://github.com/fleschutz/PowerShell
 .NOTES
@@ -23,8 +23,9 @@ try {
 	if ($target -eq "" ) { $target = Read-Host "Enter path to target" }
 
 	New-Item -path "$symlink" -itemType SymbolicLink -value "$target"
+	if ($lastExitCode -ne "0") { throw "Command 'New-Item' has failed" }
 
-	"✅ New symlink file '$symlink' created, linking to: $target"
+	"✅ Created new symlink file '$symlink', linking to: $target"
 	exit 0 # success
 } catch {
 	"⚠️ Error in line $($_.InvocationInfo.ScriptLineNumber): $($Error[0])"
