@@ -15,25 +15,28 @@
 #>
 
 try {
-	if (Test-Path "~/Repos/" -pathType Container) {		 # try short name
-		$path = "~/Repos/"
-	} elseif (Test-Path "~/repos/" -pathType Container) {
-		$path = "~/repos/"
-	} elseif (Test-Path "~/Repositories/" -pathType Container) { # try long name
-		$path = "~/Repositories/"
+	if (Test-Path "~/Repos" -pathType Container) {		 # try short name in home dir
+		$path = "~/Repos"
+	} elseif (Test-Path "~/repos" -pathType Container) {
+		$path = "~/repos"
+	} elseif (Test-Path "~/Repositories" -pathType Container) { # try long name
+		$path = "~/Repositories"
+	} elseif (Test-Path "~/repositories" -pathType Container) {
+		$path = "~/repositories"
+	} elseif (Test-Path "/Repos" -pathType Container) { # try short name in root dir
+		$path = "/Repos"
+	} elseif (Test-Path "/repos" -pathType Container) {
+		$path = "/repos"
+	} elseif (Test-Path "/Repositories" -pathType Container) { # try long name
+		$path = "/Repositories"
+	} elseif (Test-Path "/repositories" -pathType Container) {
+		$path = "/repositories"
 	} elseif (Test-Path "~/source/repos/" -pathType Container) { # try Visual Studio default
 		$path = "~/source/repos/"
-	} elseif (Test-Path "/Repos/" -pathType Container) {
-		$path = "/Repos/"
-	} elseif (Test-Path "C:/Repos" -pathType Container) {
-		$path = "C:/Repos"
-	} elseif (Test-Path "C:/Repositories" -pathType Container) {
-		$path = "C:/Repositories"
 	} else {
-		throw "The folder for Git repositories doesn't exist (yet)"
+		throw "No Git repositories folder in your home directory or in the root folder yet"
 	}
-	if (-not(Test-Path "$path" -pathType Container)) { throw "The path to 📂$path doesn't exist (yet)" }
-	$path = Resolve-Path "$path"
+	$path = Resolve-Path $path
 	Set-Location "$path"
 	"📂$path"
 	exit 0 # success
