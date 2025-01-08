@@ -31,8 +31,8 @@ try {
 		$path = "/Repositories"
 	} elseif (Test-Path "/repositories" -pathType Container) {
 		$path = "/repositories"
-	} elseif (Test-Path "~/source/repos/" -pathType Container) { # try Visual Studio default
-		$path = "~/source/repos/"
+	} elseif (Test-Path "~/source/repos" -pathType Container) { # try Visual Studio default
+		$path = "~/source/repos"
 	} else {
 		throw "No Git repositories folder in your home directory or in the root folder yet"
 	}
