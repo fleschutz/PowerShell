@@ -18,7 +18,7 @@ param([string]$hostname = "x.com")
 
 try {
 	$remoteHosts = $hostname.Split(",")
-	$tasks = $remoteHosts | foreach { (New-Object Net.NetworkInformation.Ping).SendPingAsync($_,3000) }
+	$tasks = $remoteHosts | foreach { (New-Object Net.NetworkInformation.Ping).SendPingAsync($_,5000) }
 	[Threading.Tasks.Task]::WaitAll($tasks)
 	foreach($ping in $tasks.Result) {
 		if ($ping.Status -eq "Success") {
