@@ -1,8 +1,8 @@
 ﻿<#
 .SYNOPSIS
-	Watch commits live.
+	Watch Git commits live.
 .DESCRIPTION
-	This PowerShell script continuously lists the latest commit in a Git repository in real-time.
+	This PowerShell script continuously lists the latest commits in a Git repository in real-time.
 .PARAMETER pathToRepo
 	Specifies the file path to the local Git repository.
 .EXAMPLE
