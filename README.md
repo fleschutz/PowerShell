@@ -115,6 +115,7 @@ Mega Collection of PowerShell Scripts
 | [close-thunderbird.ps1](scripts/close-thunderbird.ps1) | Closes Mozilla Thunderbird. [More »](docs/close-thunderbird.md)                     |
 | [close-vlc.ps1](scripts/close-vlc.ps1)               | Closes the VLC media player application. [More »](docs/close-vlc.md)                  |
 | [close-windows-terminal.ps1](scripts/close-windows-terminal.ps1) | Closes the Windows Terminal application. [More »](docs/close-windows-terminal.md)  |
+| [create-power-plan.ps1](scripts/create-power-plan.ps1) | creates a custom power plan based on the active one. [More »](docs/create-power-plan.md)  |
 | [enable-god-mode.ps1](scripts/enable-god-mode.ps1)   | Enables the god mode (adds a new icon to the desktop). [More »](docs/enable-god-mode.md) |
 | [install-chrome.ps1](scripts/install-chrome.ps1)     | Installs the Google Chrome browser. [Read more...](docs/install-chrome-browser.md)          |
 | [install-firefox.ps1](scripts/install-firefox.ps1)   | Installs the Firefox browser. [Read more...](docs/install-firefox.md)                       |
