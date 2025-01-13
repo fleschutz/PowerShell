@@ -312,6 +312,7 @@ FOD,Foreign Object Debris
 FOV,Field of View
 FWC,Flight Warning Computer
 GA,"General Aviation, Go Around (VFR)"
+GAF,German Air Force
 GND,Ground
 GP,Glide Path
 GPS,Global Positioning System
@@ -442,6 +443,7 @@ RNAV,Area Navigation
 RNP,Required Navigation Performance
 ROC,Rate Of Climb
 ROC,Required Obstacle Clearance
+ROKAF,Republic of Korea Air Force
 RPS,Radar Position Symbol
 RRPM,Rotor Rotations per Minute
 RSA,Runway Safety Area

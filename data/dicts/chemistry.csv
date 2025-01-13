@@ -316,17 +316,14 @@ G,Gibbs Free Energy
 G,"Giga prefix (109)"
 G,"Glycine g,gram"
 G,Guanosine
-Ga,Gallium
-Ga,Gauge
+Ga,Gallium or Gauge
+GaF,"Gallium(I)-fluorid"
 GABA,Gamma-AminoButyric Acid
 GAD,Glutamate Decarboxylase
 GAG,Glycosaminoglycan
 GBB,Gas Blow Back
 GC,Geiger Counter
-GCC,Global Carbon Cycle
-GCC,Global Climate Change
-GCC,Glucocorticoid
-GCC,Guanylyl Cyclase C
+GCC,"Global Carbon Cycle, Global Climate Change, Glucocorticoid, or: Guanylyl Cyclase C"
 GCMS,Gas Chromatographic Mass Spectrometer
 Gd,Gadolinium
 GDP,Guanosine DiPhosphate
