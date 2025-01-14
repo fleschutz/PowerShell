@@ -72,8 +72,6 @@ try {
 	} elseif ($celsius -lt 0) {
 		$temp = ", $($celsius)°C TOO COLD"
 		$status = "⚠️"
-	} elseif ($celsius -lt 30) {
-		$temp = ", $($celsius)°C cool"
 	} else {
 		$temp = ", $($celsius)°C"
 	} 

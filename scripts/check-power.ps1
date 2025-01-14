@@ -27,9 +27,9 @@ try {
 			if ($details.BatteryChargeStatus -eq "NoSystemBattery") {
 				$reply = "✅ AC powered"
 			} elseif ($percent -ge 95) {
-				$reply = "✅ Battery nearly full ($percent%, power scheme is '$powerScheme')"
+				$reply = "✅ Battery full ($percent%, power scheme is '$powerScheme')"
 			} else {
-				$reply = "✅ Battery $percent% and charging (power scheme is '$powerScheme')"
+				$reply = "✅ Battery charging ($percent%, power scheme is '$powerScheme')"
 			}
 		} else { # must be offline
 			if (($remaining -eq 0) -and ($percent -ge 60)) {
@@ -37,13 +37,13 @@ try {
 			} elseif ($remaining -eq 0) {
 				$reply = "✅ Battery at $percent% (power scheme is '$powerScheme')"
 			} elseif ($remaining -le 5) {
-				$reply = "⚠️ Battery $percent% ONLY $($remaining)min remaining (power scheme is '$powerScheme')"
+				$reply = "⚠️ Battery LOW ($percent%, $($remaining)min remaining, power scheme is '$powerScheme')"
 			} elseif ($remaining -le 30) {
-				$reply = "⚠️ Battery $percent% only $($remaining)min remaining (power scheme is '$powerScheme')"
+				$reply = "⚠️ Battery low ($percent%, $($remaining)min remaining, power scheme is '$powerScheme')"
 			} elseif ($percent -lt 10) {
 				$reply = "⚠️ Battery $percent% only with $($remaining)min remaining (power scheme is '$powerScheme') "
 			} elseif ($percent -ge 90) {
-				$reply = "✅ Battery $percent% full with $($remaining)min remaining (power scheme is '$powerScheme')"
+				$reply = "✅ Battery full ($percent%, $($remaining)min remaining, power scheme is '$powerScheme')"
 			} else {
 				$reply = "✅ Battery $percent% with $($remaining)min remaining (power scheme is '$powerScheme') "
 			}
