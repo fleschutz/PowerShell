@@ -9,8 +9,10 @@
 	Specifies the number of days (1000 by default)
 .EXAMPLE
 	PS> ./remove-old-dirs.ps1 C:\Temp 90
+.LINK
+        https://github.com/fleschutz/PowerShell
 .NOTES
-	Author: Markus Fleschutz
+	Author: Markus Fleschutz | License: CC0
 #>
 
 param([string]$path = "", [int]$numDays = 1000)
@@ -20,24 +22,22 @@ try {
 	if ("$path" -eq "") { $path = Read-Host "Enter the file path to the parent folder" }
 	if (!(Test-Path -Path "$path" -PathType container)) { throw "Given path doesn't exist - enter a valid path, please" }
 
-	Write-Host "⏳ Removing subfolders older than $numDays days in $path..."
+	Write-Host "⏳ Searching for subfolders at '$path' older than $numDays days..."
+	$numRemoved = $numSkipped = 0
 	$folders = Get-ChildItem -path "$path" -directory
-	$numRemoved = 0
-	$count = 0
 	foreach ($folder in $folders) {
 		[datetime]$folderDate = ($folder | Get-ItemProperty -Name LastWriteTime).LastWriteTime
-		$count++
 		if ($folderDate -lt (Get-Date).AddDays(-$numDays)) {
-			Write-Host "($($count)) Removing old '$folder'..."
+			Write-Host "Removing old '$folder'..."
 			$fullPath = $folder | Select-Object -ExpandProperty FullName
 			Remove-Item -path "$fullPath" -force -recurse
 			$numRemoved++
 		} else {
-			Write-Host "($($count)) Skipping young '$folder'..."
+			$numSkipped++
 		}
 	}
 	[int]$elapsed = $stopWatch.Elapsed.TotalSeconds
-	"✅ Removed $numRemoved of $count subfolders older than $numDays days in $elapsed sec"
+	"✅ Removed $numRemoved subfolders older than $numDays days in $($elapsed)s ($numSkipped skipped)."
 	exit 0 # success
 } catch {
 	"⚠️ Error in line $($_.InvocationInfo.ScriptLineNumber): $($Error[0])"
