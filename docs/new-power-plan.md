@@ -8,7 +8,7 @@ This PowerShell script:
 3. Renames the new power plan to a custom name.
 4. Sets the newly created power plan as the active plan.
 ## EXAMPLE
-	PS> ./create-power-plan.ps1
+	PS> ./new-power-plan.ps1
 
 ## LINK
 https://github.com/Arash-Seifi/PowerShell

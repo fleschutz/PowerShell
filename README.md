@@ -42,8 +42,8 @@ Mega Collection of PowerShell Scripts
 | [turn-volume-up.ps1](scripts/turn-volume-up.ps1)     | Turns the audio volume up. [More »](docs/turn-volume-up.md)                               |
 
 
-⚙️ Scripts to Manage Computers
--------------------------------
+⚙️ Scripts for Computer Management
+----------------------------------
 
 | Script                                               | Description                                                                                       |
 | ---------------------------------------------------- | ------------------------------------------------------------------------------------------------- |
@@ -82,6 +82,7 @@ Mega Collection of PowerShell Scripts
 | [list-timezone.ps1](scripts/list-timezone.ps1)       | Lists the current time zone details. [More »](docs/list-timezone.md)                        |
 | [list-timezones.ps1](scripts/list-timezones.ps1)     | Lists all time zones available. [More »](docs/list-timezones.md)                            |
 | [list-user-groups.ps1](scripts/list-user-groups.ps1) | Lists the user groups on the local computer. [More »](docs/list-user-groups.md)             |
+| [new-power-plan.ps1](scripts/new-power-plan.ps1)     | Creates a custom power plan based on the active one. [More »](docs/new-power-plan.md)       |
 | [poweroff.ps1](scripts/poweroff.ps1)                 | Halts the local computer (needs admin rights). [More »](docs/poweroff.md)                   |
 | [query-smart-data.ps1](scripts/query-smart-data.ps1) | Queries the S.M.A.R.T. data of your HDD/SSD's. [More »](docs/query-smart-data.md)           |
 | [reboot.ps1](scripts/reboot.ps1)                     | Reboots the local computer (needs admin rights). [More »](docs/reboot.md)                   |
@@ -115,7 +116,6 @@ Mega Collection of PowerShell Scripts
 | [close-thunderbird.ps1](scripts/close-thunderbird.ps1) | Closes Mozilla Thunderbird. [More »](docs/close-thunderbird.md)                     |
 | [close-vlc.ps1](scripts/close-vlc.ps1)               | Closes the VLC media player application. [More »](docs/close-vlc.md)                  |
 | [close-windows-terminal.ps1](scripts/close-windows-terminal.ps1) | Closes the Windows Terminal application. [More »](docs/close-windows-terminal.md)  |
-| [create-power-plan.ps1](scripts/create-power-plan.ps1) | creates a custom power plan based on the active one. [More »](docs/create-power-plan.md)  |
 | [enable-god-mode.ps1](scripts/enable-god-mode.ps1)   | Enables the god mode (adds a new icon to the desktop). [More »](docs/enable-god-mode.md) |
 | [install-chrome.ps1](scripts/install-chrome.ps1)     | Installs the Google Chrome browser. [Read more...](docs/install-chrome-browser.md)          |
 | [install-firefox.ps1](scripts/install-firefox.ps1)   | Installs the Firefox browser. [Read more...](docs/install-firefox.md)                       |
