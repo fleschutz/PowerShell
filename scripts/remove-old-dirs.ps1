@@ -18,8 +18,8 @@
 param([string]$path = "", [int]$numDays = 1000)
 
 try {
-	$stopWatch = [system.diagnostics.stopwatch]::startNew()
 	if ("$path" -eq "") { $path = Read-Host "Enter the file path to the parent folder" }
+	$stopWatch = [system.diagnostics.stopwatch]::startNew()
 	if (!(Test-Path -Path "$path" -PathType container)) { throw "Given path doesn't exist - enter a valid path, please" }
 
 	Write-Host "⏳ Searching for subfolders at '$path' older than $numDays days..."
