@@ -9,7 +9,7 @@
 	Specifies the file path to the target
 .EXAMPLE
 	PS> ./new-symlink.ps1 C:\User\Markus\Windows C:\Windows
-	✅ Created new symlink file 'C:\User\Markus\Windows', linking to: C:\Windows
+	✅ Created new symlink 'C:\User\Markus\Windows' linking to: C:\Windows
 .LINK
 	https://github.com/fleschutz/PowerShell
 .NOTES
@@ -25,7 +25,7 @@ try {
 	New-Item -path "$symlink" -itemType SymbolicLink -value "$target"
 	if ($lastExitCode -ne "0") { throw "Command 'New-Item' has failed" }
 
-	"✅ Created new symlink file '$symlink', linking to: $target"
+	"✅ Created new symlink '$symlink' linking to: $target"
 	exit 0 # success
 } catch {
 	"⚠️ Error in line $($_.InvocationInfo.ScriptLineNumber): $($Error[0])"
