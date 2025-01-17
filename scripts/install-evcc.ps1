@@ -2,7 +2,7 @@
 .SYNOPSIS
 	Installs evcc
 .DESCRIPTION
-	This PowerShell script installs evcc. Sevcc is an extensible EV Charge Controller with PV integration implemented in Go. See https://evcc.io for details.
+	This PowerShell script installs evcc. Evcc is an extensible EV Charge Controller with PV integration implemented in Go. See https://evcc.io for details.
 .EXAMPLE
 	PS> ./install-evcc.ps1
 .LINK
@@ -12,7 +12,7 @@
 #>
 
 try {
-	$StopWatch = [system.diagnostics.stopwatch]::startNew()
+	$stopWatch = [system.diagnostics.stopwatch]::startNew()
 
 	if ($IsLinux) {
 		"⏳ (1/6) Installing necessary packets..."
@@ -35,8 +35,8 @@ try {
 	} else {
 		throw "Sorry, only Linux installation currently supported"
 	}
-	[int]$Elapsed = $StopWatch.Elapsed.TotalSeconds
-	"✅ evcc installed successfully in $Elapsed sec"
+	[int]$elapsed = $stopWatch.Elapsed.TotalSeconds
+	"✅ evcc installed successfully in $($elapsed)s."
 	exit 0 # success
 } catch {
 	"Sorry: $($Error[0])"
