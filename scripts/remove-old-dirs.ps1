@@ -8,7 +8,8 @@
 .PARAMETER numDays
 	Specifies the number of days (1000 by default)
 .EXAMPLE
-	PS> ./remove-old-dirs.ps1 C:\Temp 90
+	PS> ./remove-old-dirs.ps1 C:\Temp 365
+	✅ Removed 0 subfolders in 1s (67 skipped).
 .LINK
         https://github.com/fleschutz/PowerShell
 .NOTES
@@ -22,7 +23,7 @@ try {
 	$stopWatch = [system.diagnostics.stopwatch]::startNew()
 	if (!(Test-Path -Path "$path" -PathType container)) { throw "Given path doesn't exist - enter a valid path, please" }
 
-	Write-Host "⏳ Searching for subfolders at '$path' older than $numDays days..."
+	Write-Host "⏳ Searching in '$path' for subfolders older than $numDays days..."
 	$numRemoved = $numSkipped = 0
 	$folders = Get-ChildItem -path "$path" -directory
 	foreach ($folder in $folders) {
@@ -37,7 +38,7 @@ try {
 		}
 	}
 	[int]$elapsed = $stopWatch.Elapsed.TotalSeconds
-	"✅ Removed $numRemoved subfolders older than $numDays days in $($elapsed)s ($numSkipped skipped)."
+	"✅ Removed $numRemoved subfolders in $($elapsed)s ($numSkipped skipped)."
 	exit 0 # success
 } catch {
 	"⚠️ Error in line $($_.InvocationInfo.ScriptLineNumber): $($Error[0])"
