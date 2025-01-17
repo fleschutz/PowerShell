@@ -62,6 +62,7 @@ Mega Collection of PowerShell Scripts
 | [install-chrome-browser.ps1](scripts/install-chrome-browser.ps1) | Installs the Google Chrome browser. [More »](docs/install-chrome-browser.md)    |
 | [install-firefox.ps1](scripts/install-firefox.ps1)   | Installs the Firefox browser. [More »](docs/install-firefox.md)    |
 | [install-knot-resolver.ps1](scripts/install-knot-resolver.ps1) | Installs the Knot Resolver (needs admin rights). [More »](docs/install-knot-resolver.md)|
+| [install-salesforce-cli.ps1](scripts/install-salesforce-cli.ps1) | Installs the Salesforce CLI (sfdx). [More »](docs/install-salesforce-cli.md)    |
 | [install-ssh-client.ps1](scripts/install-ssh-client.ps1) | Installs a SSH client (needs admin rights). [More »](docs/install-ssh-client.md)        |
 | [install-ssh-server.ps1](scripts/install-ssh-server.ps1) | Installs a SSH server (needs admin rights). [More »](docs/install-ssh-server.md)        |
 | [install-signal-cli.ps1](scripts/install-signal-cli.ps1) | Installs the CLI edition of the Signal messenger. [More »](docs/install-signal-cli.md)|
