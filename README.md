@@ -1,16 +1,16 @@
 Mega Collection of PowerShell Scripts
 =====================================
 
-**Contains 500+ free and stand-alone PowerShell scripts for Linux, Mac OS, and Windows. Useful on the command-line (CLI), for remote control via SSH, for automation via AutoHotkey/Jenkins/etc. or on startup/login/logoff/daily/hourly/shutdown/etc., for context menus, for voice commands (see [talk2windows](https://github.com/fleschutz/talk2windows)), or simply to learn PowerShell. All scripts are located in the 📂[scripts](scripts/) subfolder and support Unicode - a modern console like *Windows Terminal* is recommended.**
+**Contains 500+ free and stand-alone PowerShell scripts for Linux, Mac OS, and Windows. Useful on the command-line (CLI), for remote control via SSH, for automation (on startup/login/logoff/daily/hourly/shutdown or via AutoHotkey/Jenkins/etc.), for context menus, for voice commands (see [talk2windows](https://github.com/fleschutz/talk2windows)), or simply to learn PowerShell. All scripts are located in the 📂[scripts](scripts/) subfolder and support Unicode - a modern console like *Windows Terminal* is recommended.**
 
 **[Download](https://github.com/fleschutz/PowerShell/releases) | [PowerShell FAQ](docs/FAQ.md) | [PowerShell Cheat Sheet](docs/cheat-sheet.md)**
 
 🔊 Scripts for Audio & Voice 
 -----------------------------
 
-| Script                                               | Description                                                                                    |
-| ---------------------------------------------------- | ---------------------------------------------------------------------------------------------- |
-| [list-voices.ps1](scripts/list-voices.ps1)           | Lists the installed text-to-speech voices. [Read more »](docs/list-voices.md)                  |
+| Script                                               | Description                                                                               |
+| ---------------------------------------------------- | ----------------------------------------------------------------------------------------- |
+| [list-voices.ps1](scripts/list-voices.ps1)           | Lists the installed text-to-speech voices. [Read more »](docs/list-voices.md)             |
 | [play-beep-sound.ps1](scripts/play-beep-sound.ps1)   | Plays a short beep sound. [More »](docs/play-beep-sound.md)                               |
 | [play-files.ps1](scripts/play-files.ps1)             | Plays the given audio files. [More »](docs/play-files.md)                                 |
 | [play-happy-birthday.ps1](scripts/play-happy-birthday.ps1) | Plays the Happy Birthday song. [More »](docs/play-happy-birthday.md)                |
@@ -45,8 +45,8 @@ Mega Collection of PowerShell Scripts
 ⚙️ Scripts for Computer Management
 ----------------------------------
 
-| Script                                               | Description                                                                                       |
-| ---------------------------------------------------- | ------------------------------------------------------------------------------------------------- |
+| Script                                               | Description                                                                                 |
+| ---------------------------------------------------- | ------------------------------------------------------------------------------------------- |
 | [add-firewall-rules.ps1](scripts/add-firewall-rules.ps1) | Adds firewall rules for executables, needs admin rights. [Read more »](docs/add-firewall-rules.md) |
 | [check-cpu.ps1](scripts/check-cpu.ps1)| Checks the CPU temperature. [More »](docs/check-cpu.md)                                                    |
 | [check-dns.ps1](scripts/check-dns.ps1) | Checks the DNS resolution. [More »](docs/check-dns.md)                                                    |
