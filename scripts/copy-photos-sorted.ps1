@@ -5,12 +5,12 @@
 	This PowerShell script copies image files from <sourceDir> to <targetDir> sorted by year and month.
 .PARAMETER sourceDir
 	Specifies the path to the source folder
-.PARAMTER targetDir
+.PARAMETER targetDir
 	Specifies the path to the target folder
 .EXAMPLE
 	PS> ./copy-photos-sorted.ps1 D:\iPhone\DCIM C:\MyPhotos
 	⏳ Copying IMG_20240903_134445.jpg to C:\MyPhotos\2024\09 SEP\...
-	✅ Copied 1 photo to 📂C:\MyPhotos (0 skipped) in 41s.
+	✅ Copied 1 photo to 📂C:\MyPhotos in 13s (0 skipped).
 .LINK
 	https://github.com/fleschutz/PowerShell
 .NOTES
@@ -88,7 +88,7 @@ try {
 	}
 	[int]$elapsed = $stopWatch.Elapsed.TotalSeconds
 	[int]$copied = $files.Count - $skipped
-	"✅ Copied $copied photos to 📂$targetDir ($skipped skipped) in $($elapsed)s."
+	"✅ Copied $copied photos to 📂$targetDir in $($elapsed)s ($skipped skipped)."
 	exit 0 # success
 } catch {
 	"⚠️ Error in line $($_.InvocationInfo.ScriptLineNumber): $($Error[0])"
