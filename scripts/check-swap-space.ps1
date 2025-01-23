@@ -32,7 +32,7 @@ try {
 	
 	if ($IsLinux) {
 		$Result = $(free --mega | grep Swap:)
-		[int64]$total = $Result.subString(5,14)
+		[int64]$total = $Result.subString(5,15)
 		[int64]$used = $Result.substring(20,13)
 		[int64]$free = $Result.substring(32,11)
 	} else {
