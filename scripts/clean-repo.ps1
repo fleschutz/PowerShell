@@ -8,11 +8,11 @@
 	Specifies the file path to the local Git repository (current working directory by default)
 .EXAMPLE
 	PS> ./clean-repo.ps1 C:\Repos\rust
-	⏳ (1/4) Searching for Git executable...           git version 2.45.0
+	⏳ (1/4) Searching for Git executable...           git version 2.47.0
 	⏳ (2/4) Checking local repository...        	  C:\Repos\rust
 	⏳ (3/4) Removing untracked files in repository...
 	⏳ (4/4) Removing untracked files in submodules...
-	✅ Cleaned up repo 📂rust in 2s.
+	✅ Cleaned the 📂rust repository in 2s.
 .LINK
 	https://github.com/fleschutz/PowerShell
 .NOTES
@@ -45,7 +45,7 @@ try {
 	if ($lastExitCode -ne "0") { throw "'git clean' in the submodules failed with exit code $lastExitCode" }
 
 	[int]$elapsed = $stopWatch.Elapsed.TotalSeconds
-	"✅ Cleaned up repo 📂$repoName in $($elapsed)s."
+	"✅ Cleaned the 📂$repoName repository in $($elapsed)s."
 	exit 0 # success
 } catch {
 	"⚠️ Error in line $($_.InvocationInfo.ScriptLineNumber): $($Error[0])"
