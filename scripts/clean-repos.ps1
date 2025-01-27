@@ -7,7 +7,7 @@
 	Specifies the path to the parent folder (current working dir by default)
 .EXAMPLE
 	PS> ./clean-repos.ps1 C:\MyRepos
-	⏳ (1) Searching for Git executable...    git version 2.40.1
+	⏳ (1) Searching for Git executable...    git version 2.47.1
 	⏳ (2) Checking parent folder 📂Repos...  28 subfolders found
 	⏳ (3/30) Cleaning 📂base256unicode...
 	...
@@ -46,7 +46,7 @@ try {
 		if ($lastExitCode -ne "0") { throw "'git clean -xfd -f' in submodules failed with exit code $lastExitCode" }
 	}
 	[int]$elapsed = $stopWatch.Elapsed.TotalSeconds
-	"✅ Cleaned $numFolders Git repos under 📂$parentDirName in $elapsed sec"
+	"✅ Cleaned $numFolders Git repositories under 📂$parentDirName in $($elapsed)s."
 	exit 0 # success
 } catch {
 	"⚠️ Error in line $($_.InvocationInfo.ScriptLineNumber): $($Error[0])"
