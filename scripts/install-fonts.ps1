@@ -1,5 +1,11 @@
-# Set the source folder containing the fonts, Like the example below
-$sourceFolder = "D:\related\FONT"
+param(
+    [string]$sourceFolder = ""
+)
+
+# If no parameter is given, prompt the user for the source folder
+if (-not $sourceFolder) {
+    $sourceFolder = Read-Host "Please enter the path to the source folder"
+}
 
 # Set the destination folder for fonts, you don't need to change this
 $fontsFolder = "$env:SystemRoot\Fonts"
