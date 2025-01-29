@@ -203,6 +203,7 @@ Mega Collection of PowerShell Scripts
 | [get-sha1.ps1](scripts/get-sha1.ps1)                 | Prints the SHA1 checksum of the given file. [Read more...](docs/get-sha1.md)                        |
 | [get-sha256.ps1](scripts/get-sha256.ps1)             | Prints the SHA256 checksum of the given file. [Read more...](docs/get-sha256.md)                    |
 | [inspect-exe.ps1](scripts/inspect-exe.ps1)           | Prints basic information of the given executable file. [Read more...](docs/inspect-exe.md)          |
+| [install-fonts.ps1](scripts/install-fonts.ps1)           | installs fonts and updates the registry. [Read more...](docs/install-fonts.md)          |
 | [list-dir-tree.ps1](scripts/list-dir-tree.ps1)       | Lists the directory tree content. [Read more...](docs/list-dir-treep.md)                            |
 | [list-empty-dirs.ps1](scripts/list-empty-dirs.ps1)   | Lists empty subfolders within the given directory tree. [Read more...](docs/list-empty-dirs.md)     |
 | [list-empty-files.ps1](scripts/list-empty-files.ps1) | Lists empty files within the given directory tree. [Read more...](docs/list-empty-files.md)         |
