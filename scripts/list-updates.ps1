@@ -28,13 +28,11 @@ try {
 	} elseif ($IsMacOS) {
 		throw "Sorry, MacOS not supported yet"
 	} else {
-		Write-Progress "Querying available updates from winget..."
-		Write-Host " "
+		Write-Host "`n   === WinGet Store ===" -foregroundColor green
 		& winget upgrade --include-unknown --source=winget
-		Write-Host " "
-		Write-Progress "Querying available updates from Microsoft Store..."
+
+		Write-Host "`n   === Microsoft Store ===" -foregroundColor green
 		& winget upgrade --include-unknown --source=msstore
-		Write-Progress -completed "Done."
 	}
 	" "
 	"NOTE: Execute script 'install-updates.ps1' to install the listed updates."
