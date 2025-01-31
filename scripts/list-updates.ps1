@@ -28,9 +28,12 @@ try {
 	} elseif ($IsMacOS) {
 		throw "Sorry, MacOS not supported yet"
 	} else {
-		Write-Progress "Querying updates from Microsoft Store and winget..."
-		" "
-		& winget upgrade --include-unknown
+		Write-Progress "Querying available updates from winget..."
+		Write-Host " "
+		& winget upgrade --include-unknown --source=winget
+		Write-Host " "
+		Write-Progress "Querying available updates from Microsoft Store..."
+		& winget upgrade --include-unknown --source=msstore
 		Write-Progress -completed "Done."
 	}
 	" "
