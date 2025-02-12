@@ -1,6 +1,6 @@
 ﻿<#
 .SYNOPSIS
-	Sync two dirs
+	Sync's two dirs
 .DESCRIPTION
 	This PowerShell script synchronizes (mirrors) the content of 2 directory trees by using Robocopy.
 	Typical use cases are backups: at first everything is copied (full backup), afterward only changes are copied (incremental backup).
@@ -11,6 +11,8 @@
 	Specifies the path to the target dir (to be entered by default)
 .EXAMPLE
 	PS> ./sync-dir.ps1 C:\Photos D:\Backups\Photos
+	⏳ Please wait while syncing content from 📂C:\Photos to 📂D:\Backups\Photos ...
+	✅ Synced 📂C:\Photos to 📂D:\Backups\Photos in 32s.
 .LINK
 	https://github.com/fleschutz/PowerShell
 .NOTES
@@ -24,16 +26,18 @@ try {
 	if ($targetPath -eq "") { $targetPath = Read-Host "Enter the path to the target directory" }
 	$stopWatch = [system.diagnostics.stopwatch]::startNew()
 
-	$robocopyParameters = $sourcePath, $targetPath, '/MIR', '/FFT', '/NDL', '/NP', '/NS'
+	"⏳ Please wait while syncing content from 📂$sourcePath to 📂$targetPath ..."
+	& robocopy.exe $sourcePath $targetPath /MIR /FFT /NJH /NDL /NFL /NP /NS
 	#
 	# /MIR = mirror a directory tree
 	# /FFT = assume FAT file times (2-second granularity)
-	# /NDL = don't log directory names
-	# /NP  = don't display percentage copied
-	# /NS  = don't log file sizes
+	# /NJH = no job header
+	# /NDL = no directory list (don't log directory names)
+	# /NFL = no file list (don't log file names)
+	# /NP  = no progress (don't display percentage copied)
+	# /NS  = no size (don't log file sizes)
 	#
-	& robocopy.exe $robocopyParameters
-	if ($lastExitCode -gt 3) { throw 'Robocopy failed.' }
+	if ($lastExitCode -gt 3) { throw 'Robocopy failed with exit code $lastExitCode.' }
 
 	[int]$elapsed = $stopWatch.Elapsed.TotalSeconds
 	"✅ Synced 📂$sourcePath to 📂$targetPath in $($elapsed)s."
