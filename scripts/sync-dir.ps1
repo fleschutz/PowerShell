@@ -27,9 +27,10 @@ try {
 	$stopWatch = [system.diagnostics.stopwatch]::startNew()
 
 	"⏳ Please wait while syncing content from 📂$sourcePath to 📂$targetPath ..."
-	& robocopy.exe $sourcePath $targetPath /MIR /FFT /NJH /NDL /NFL /NP /NS
+	& robocopy.exe $sourcePath $targetPath /MIR /SL /FFT /NJH /NDL /NFL /NP /NS
 	#
 	# /MIR = mirror a directory tree
+	# /SL  = copy Symbolic Links as links instead of as the link targets
 	# /FFT = assume FAT file times (2-second granularity)
 	# /NJH = no job header
 	# /NDL = no directory list (don't log directory names)
