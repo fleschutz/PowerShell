@@ -23,7 +23,8 @@ try {
 	$stopWatch = [system.diagnostics.stopwatch]::startNew()
 
 	if ($IsLinux) {
-		"⏳ (1/5) Checking update requirements..."
+		"⏳ (1/5) Checking requirements..."
+		& "$PSScriptRoot/check-power.ps1"
 		& "$PSScriptRoot/check-smart-devices.ps1"
 		& "$PSScriptRoot/check-drive-space.ps1" /
 		& "$PSScriptRoot/check-swap-space.ps1"
@@ -45,9 +46,9 @@ try {
 		Write-Progress "⏳ Installing updates..."
 		& sudo softwareupdate -i -a
 		Write-Progress -completed " "
-	} else {
-		# Windows:
-		"⏳ (1/2) Checking update requirements..."
+	} else { # Windows:
+		"⏳ (1/2) Checking requirements..."
+		& "$PSScriptRoot/check-power.ps1"
 		& "$PSScriptRoot/check-smart-devices.ps1"
 		& "$PSScriptRoot/check-drive-space.ps1" C
 		& "$PSScriptRoot/check-swap-space.ps1"
