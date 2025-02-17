@@ -10,7 +10,7 @@
 	⏳ (1) Searching for Git executable...       git version 2.46.0.windows.1
 	⏳ (2) Reading data/popular-repos.csv...     29 repos
 	⏳ (3) Checking target folder...             📂Repos
-	⏳ (4/32) Cloning 📂base256 (dev tool) from git@github.com:fleschutz/talk2windows.git (shallow main branch)...
+	⏳ (4/32) Cloning 📂base256 (dev tool) from git@github.com:fleschutz/talk2windows.git (main branch only)...
 	...
 .LINK
 	https://github.com/fleschutz/PowerShell
@@ -51,7 +51,7 @@ try {
 			"⏳ ($step/$($total + 3)) Skipping 📂$folderName ($category): exists already"
 			$skipped++
 		} elseif ($shallow -eq "yes") {
-			"⏳ ($step/$($total + 3)) Cloning 📂$folderName ($category) from $URL (shallow $branch branch)..."
+			"⏳ ($step/$($total + 3)) Cloning 📂$folderName ($category) from $URL ($branch branch only)..."
 			& git clone --branch "$branch" --single-branch --recurse-submodules "$URL" "$targetDir/$folderName"
 			if ($lastExitCode -ne "0") { throw "'git clone --branch $branch $URL' failed with exit code $lastExitCode" }
 			$cloned++
