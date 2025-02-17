@@ -28,10 +28,10 @@ try {
 	} elseif ($IsMacOS) {
 		throw "Sorry, MacOS not supported yet"
 	} else {
-		Write-Host "`n   === WinGet Store ===" -foregroundColor green
+		Write-Host "`n       === Application Updates from WinGet Store ===" -foregroundColor green
 		& winget upgrade --include-unknown --source=winget
 
-		Write-Host "`n   === Microsoft Store ===" -foregroundColor green
+		Write-Host "`n       === Application Updates from Microsoft Store ===" -foregroundColor green
 		& winget upgrade --include-unknown --source=msstore
 	}
 	" "
