@@ -1148,11 +1148,12 @@ DNS,Domain Name System
 DO,"Dominican Republic (ISO 3166 digram),Doctor of Osteopathic Medicine"
 DOA,"Dead On Arrival,Dead or Alive"
 DOB,Date Of Birth
-DOD,U.S. Department of Defense
-DODAF,U.S. Department of Defense Architectural Framework
-DoDD,U.S. Department of Defense Directive
-DoDEA,(U.S.) Department of Defense Education Activity
-DOE,U.S. Department of Energy
+DoD,Department of Defense (USA)
+DODAF,Department of Defense Architectural Framework (USA)
+DoDD,Department of Defense Directive (USA)
+DoDEA,Department of Defense Education Activity (USA)
+DOE,Department of Energy (USA)
+DOGE,Department of Government Efficiency (USA)
 DOHC,Dual-OverHead-Cam engine
 DOI,U.S. Department of the Interior
 DOM,Deo optimo maximo (Latin,"to God,the best and greatest"),Document Object Model,Dominican Republic (ISO 3166 trigram)
@@ -4699,14 +4700,14 @@ USAID, United States Agency for International Development
 USAP,"Union Sportive des Arlequins Perpignanais,United States Antarctic Program"
 USAPATRIOT,Uniting and Strengthening America by Providing Appropriate Tools Required to Intercept and Obstruct Terrorism
 USAREUR,United States Army Europe
-USB,Universal Serial Bus
 USC,"United States Code,University of South Carolina,University of Southern California"
 USCG,United States Coast Guard
 USCINCSPACE,"United States Commander in Chief,Space Command"
 USDA,United States Department of Agriculture
 USDI,United States Department of the Interior
 USDOE,United States Department of Energy
-USDRE,(U.S.) Under-Secretary of Defense for Research and Engineering (1978-1986)
+USDRE,Under-Secretary of Defense for Research and Engineering (USA, 1978-1986)
+USDS,United States Digital Service
 USEC,United States Enrichment Corporation
 USFL,United States Football League
 USFWS,United States Fish and Wildlife Service
