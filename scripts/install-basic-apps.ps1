@@ -42,7 +42,7 @@ try {
 		Write-Host " "
 		Write-Host "⏳ ($step/$($numEntries + 2)) Installing $category '$appName'..."
 		& winget install --id $appID --accept-package-agreements --accept-source-agreements
-        	if ($lastExitCode -ne "0") { $numSkipped++ }
+        	if ($lastExitCode -ne 0) { $numSkipped++ }
 		$step++
 	}
 	[int]$numInstalled = ($numEntries - $numSkipped)

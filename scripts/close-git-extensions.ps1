@@ -12,7 +12,7 @@
 #>
 
 TaskKill /im GitExtensions.exe
-if ($lastExitCode -ne "0") {
+if ($lastExitCode -ne 0) {
 	& "$PSScriptRoot/speak-english.ps1" "Sorry, Git Extensions isn't running."
 	exit 1
 }

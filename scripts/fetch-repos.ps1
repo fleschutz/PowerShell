@@ -24,7 +24,7 @@ try {
 
 	Write-Host "⏳ (1) Searching for Git executable...     " -noNewline
 	& git --version
-	if ($lastExitCode -ne "0") { throw "Can't execute 'git' - make sure Git is installed and available" }
+	if ($lastExitCode -ne 0) { throw "Can't execute 'git' - make sure Git is installed and available" }
 
 	Write-Host "⏳ (2) Checking parent folder...           " -noNewline
 	if (-not(Test-Path "$parentDirPath" -pathType container)) { throw "Can't access folder: $parentDirPath" }
@@ -39,7 +39,7 @@ try {
 		Write-Host "⏳ ($step/$($numFolders + 2)) Fetching into 📂$folderName...`t`t"
 
 		& git -C "$folder" fetch --all --recurse-submodules --prune --prune-tags --force
-		if ($lastExitCode -ne "0") { throw "'git fetch --all' in 📂$folder failed with exit code $lastExitCode" }
+		if ($lastExitCode -ne 0) { throw "'git fetch --all' in 📂$folder failed with exit code $lastExitCode" }
 
 		$step++
 	}

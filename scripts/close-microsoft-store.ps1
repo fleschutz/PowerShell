@@ -12,7 +12,7 @@
 #>
 
 TaskKill /im WinStore.App.exe /f /t
-if ($lastExitCode -ne "0") {
+if ($lastExitCode -ne 0) {
 	& "$PSScriptRoot/speak-english.ps1" "Sorry, Microsoft Store isn't running."
 	exit 1
 }

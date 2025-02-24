@@ -25,7 +25,7 @@ try {
 
 	Write-Host "⏳ (1/4) Searching for Git executable...  " -noNewline
 	& git --version
-	if ($lastExitCode -ne "0") { throw "Can't execute 'git' - make sure Git is installed and available" }
+	if ($lastExitCode -ne 0) { throw "Can't execute 'git' - make sure Git is installed and available" }
 
 	Write-Host "⏳ (2/4) Checking local repository...     $pathToRepo"
 	if (-not(Test-Path "$pathToRepo" -pathType container)) { throw "Can't access folder: $pathToRepo" }
@@ -35,14 +35,14 @@ try {
 
 	Write-Host "⏳ (3/4) Pulling remote updates...        " -noNewline
         & git -C "$pathToRepo" remote get-url origin
-        if ($lastExitCode -ne "0") { throw "'git remote get-url origin' failed with exit code $lastExitCode" }
+        if ($lastExitCode -ne 0) { throw "'git remote get-url origin' failed with exit code $lastExitCode" }
 
 	& git -C "$pathToRepo" pull --recurse-submodules=yes
-	if ($lastExitCode -ne "0") { throw "'git pull' failed with exit code $lastExitCode" }
+	if ($lastExitCode -ne 0) { throw "'git pull' failed with exit code $lastExitCode" }
 
 	Write-Host "⏳ (4/4) Updating submodules... "
 	& git -C "$pathToRepo" submodule update --init --recursive
-	if ($lastExitCode -ne "0") { throw "'git submodule update' failed with exit code $lastExitCode" }
+	if ($lastExitCode -ne 0) { throw "'git submodule update' failed with exit code $lastExitCode" }
 
 	[int]$elapsed = $stopWatch.Elapsed.TotalSeconds
 	"✅ Updates pulled into 📂$pathToRepoName repo in $($elapsed)s."

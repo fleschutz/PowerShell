@@ -18,7 +18,7 @@ try {
 		if ($Connection.ConnectionStatus -ne "Disconnected") { continue }
 		"Connecting to VPN $($Connection.Name)..."
 		& rasdial.exe "$($Connection.Name)"
-		if ($lastExitCode -ne "0") { throw "Cannot establish connection" }
+		if ($lastExitCode -ne 0) { throw "Cannot establish connection" }
 		"Connected now."
 		exit 0 # success 
 	}

@@ -24,7 +24,7 @@ try {
 
 	Write-Host "⏳ (1) Searching for Git executable...    " -noNewline
         & git --version
-        if ($lastExitCode -ne "0") { throw "Can't execute 'git' - make sure Git is installed and available" }
+        if ($lastExitCode -ne 0) { throw "Can't execute 'git' - make sure Git is installed and available" }
 
         $parentDirName = (Get-Item "$ParentDir").Name
         Write-Host "⏳ (2) Checking parent folder 📂$parentDirName...  " -noNewline
@@ -40,10 +40,10 @@ try {
 		"⏳ ($Step/$($numFolders + 2)) Cleaning 📂$FolderName..."
 
 		& git -C "$folder" clean -xfd -f # force + recurse into dirs + don't use the standard ignore rules
-		if ($lastExitCode -ne "0") { throw "'git clean -xfd -f' failed with exit code $lastExitCode" }
+		if ($lastExitCode -ne 0) { throw "'git clean -xfd -f' failed with exit code $lastExitCode" }
 
 		& git -C "$folder" submodule foreach --recursive git clean -xfd -f 
-		if ($lastExitCode -ne "0") { throw "'git clean -xfd -f' in submodules failed with exit code $lastExitCode" }
+		if ($lastExitCode -ne 0) { throw "'git clean -xfd -f' in submodules failed with exit code $lastExitCode" }
 	}
 	[int]$elapsed = $stopWatch.Elapsed.TotalSeconds
 	"✅ Cleaned $numFolders Git repositories under 📂$parentDirName in $($elapsed)s."

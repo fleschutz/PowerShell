@@ -15,7 +15,7 @@ try {
 	"Installing Twitter, please wait..."
 
 	& winget install "Twitter" --source msstore --accept-package-agreements --accept-source-agreements
-	if ($lastExitCode -ne "0") { throw "'winget install' failed" }
+	if ($lastExitCode -ne 0) { throw "'winget install' failed" }
 
 	"Twitter installed successfully."
 	exit 0 # success

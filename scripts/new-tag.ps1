@@ -26,20 +26,20 @@ try {
 	set-location "$RepoDir"
 
 	$Null = (git --version)
-	if ($lastExitCode -ne "0") { throw "Can't execute 'git' - make sure Git is installed and available" }
+	if ($lastExitCode -ne 0) { throw "Can't execute 'git' - make sure Git is installed and available" }
 
 	$Result = (git status)
-	if ($lastExitCode -ne "0") { throw "'git status' failed in $RepoDir" }
+	if ($lastExitCode -ne 0) { throw "'git status' failed in $RepoDir" }
 	if ("$Result" -notmatch "nothing to commit, working tree clean") { throw "Repository is NOT clean: $Result" }
 
 	& "$PSScriptRoot/fetch-repo.ps1"
-	if ($lastExitCode -ne "0") { throw "Script 'fetch-repo.ps1' failed" }
+	if ($lastExitCode -ne 0) { throw "Script 'fetch-repo.ps1' failed" }
 
 	& git tag "$TagName"
-	if ($lastExitCode -ne "0") { throw "Error: 'git tag $TagName' failed!" }
+	if ($lastExitCode -ne 0) { throw "Error: 'git tag $TagName' failed!" }
 
 	& git push origin "$TagName"
-	if ($lastExitCode -ne "0") { throw "Error: 'git push origin $TagName' failed!" }
+	if ($lastExitCode -ne 0) { throw "Error: 'git push origin $TagName' failed!" }
 
 	[int]$Elapsed = $StopWatch.Elapsed.TotalSeconds
 	"✅ created new tag '$TagName' in $Elapsed sec"

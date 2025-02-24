@@ -15,7 +15,7 @@ try {
 	"Installing Microsoft Teams, please wait..."
 
 	& winget install --id Microsoft.Teams --accept-package-agreements --accept-source-agreements
-	if ($lastExitCode -ne "0") { throw "'winget install' failed" }
+	if ($lastExitCode -ne 0) { throw "'winget install' failed" }
 
 	"Microsoft Teams installed successfully."
 	exit 0 # success

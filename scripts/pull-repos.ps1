@@ -24,7 +24,7 @@ try {
 
 	Write-Host "⏳ (1) Searching for Git executable...`t`t" -NoNewline
 	& git --version
-	if ($lastExitCode -ne "0") { throw "Can't execute 'git' - make sure Git is installed and available" }
+	if ($lastExitCode -ne 0) { throw "Can't execute 'git' - make sure Git is installed and available" }
 
 	Write-Host "⏳ (2) Checking parent folder...`t`t" -NoNewline
 	if (-not(Test-Path "$parentDir" -pathType container)) { throw "Can't access folder: $parentDir" }
@@ -40,10 +40,10 @@ try {
 		Write-Host "⏳ ($step/$($numFolders + 2)) Pulling into 📂$folderName...`t`t" -NoNewline
 
 		& git -C "$folder" pull --recurse-submodules --jobs=4
-		if ($lastExitCode -ne "0") { $failed++; write-warning "'git pull' in 📂$folderName failed" }
+		if ($lastExitCode -ne 0) { $failed++; write-warning "'git pull' in 📂$folderName failed" }
 
 		& git -C "$folder" submodule update --init --recursive
-		if ($lastExitCode -ne "0") { throw "'git submodule update' in 📂$folder failed with exit code $lastExitCode" }
+		if ($lastExitCode -ne 0) { throw "'git submodule update' in 📂$folder failed with exit code $lastExitCode" }
 		$step++
 	}
 	[int]$elapsed = $stopWatch.Elapsed.TotalSeconds

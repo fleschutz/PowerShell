@@ -15,7 +15,7 @@ try {
 	"Installing IrfanView, please wait..."
 
 	& winget install "IrfanView64" --source msstore --accept-package-agreements --accept-source-agreements
-	if ($lastExitCode -ne "0") { throw "'winget install' failed" }
+	if ($lastExitCode -ne 0) { throw "'winget install' failed" }
 
 	"IrfanView installed successfully."
 	exit 0 # success

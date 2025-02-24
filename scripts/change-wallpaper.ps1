@@ -27,7 +27,7 @@ try {
 
 	$Path = "$(GetTempDir)/next_wallpaper.jpg"
 	& wget -O $Path "https://source.unsplash.com/3840x2160?$Category"
-	if ($lastExitCode -ne "0") { throw "Download failed" }
+	if ($lastExitCode -ne 0) { throw "Download failed" }
 
 	& "$PSScriptRoot/set-wallpaper.ps1" -ImageFile "$Path"
 	exit 0 # success

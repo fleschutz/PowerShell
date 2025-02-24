@@ -15,7 +15,7 @@
 
 try {
 	& ssh-keygen
-	if ($lastExitCode -ne "0") { throw "ssh-keygen failed" }
+	if ($lastExitCode -ne 0) { throw "ssh-keygen failed" }
 
 	if (Test-Path "~/.ssh/id_ed25519.pub") {
 		$publicKey = Get-Content "~/.ssh/id_ed25519.pub"

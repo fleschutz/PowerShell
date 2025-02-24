@@ -25,7 +25,7 @@ try {
 
 	Write-Host "⏳ (1) Searching for Git executable...       " -noNewline
 	& git --version
-	if ($lastExitCode -ne "0") { throw "Can't execute 'git' - make sure Git is installed and available" }
+	if ($lastExitCode -ne 0) { throw "Can't execute 'git' - make sure Git is installed and available" }
 
 	Write-Host "⏳ (2) Reading data/popular-repos.csv...     " -noNewline
 	$table = Import-CSV "$PSScriptRoot/../data/popular-repos.csv"
@@ -53,12 +53,12 @@ try {
 		} elseif ($shallow -eq "yes") {
 			"⏳ ($step/$($total + 3)) Cloning 📂$folderName ($category) from $URL ($branch branch only)..."
 			& git clone --branch "$branch" --single-branch --recurse-submodules "$URL" "$targetDir/$folderName"
-			if ($lastExitCode -ne "0") { throw "'git clone --branch $branch $URL' failed with exit code $lastExitCode" }
+			if ($lastExitCode -ne 0) { throw "'git clone --branch $branch $URL' failed with exit code $lastExitCode" }
 			$cloned++
 		} else {
 			"⏳ ($step/$($total + 3)) Cloning 📂$folderName ($category) from $URL (full $branch branch)..."
 			& git clone --branch "$branch" --recurse-submodules "$URL" "$targetDir/$folderName"
-			if ($lastExitCode -ne "0") { throw "'git clone --branch $branch $URL' failed with exit code $lastExitCode" }
+			if ($lastExitCode -ne 0) { throw "'git clone --branch $branch $URL' failed with exit code $lastExitCode" }
 			$clone++
 		}
 	}

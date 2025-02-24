@@ -15,7 +15,7 @@ try {
 	"Installing Spotify, please wait..."
 
 	& winget install "Spotify - Music and Podcasts" --source msstore --accept-package-agreements --accept-source-agreements
-	if ($lastExitCode -ne "0") { throw "'winget install' failed" }
+	if ($lastExitCode -ne 0) { throw "'winget install' failed" }
 
 	"Spotify installed successfully."
 	exit 0 # success

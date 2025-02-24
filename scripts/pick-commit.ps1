@@ -38,39 +38,39 @@ try {
 
 		"🍒 Switching to branch $Branch ..."
 		& git checkout --recurse-submodules --force $Branch
-		if ($lastExitCode -ne "0") { throw "'git checkout $Branch' failed" }
+		if ($lastExitCode -ne 0) { throw "'git checkout $Branch' failed" }
 
 		"🍒 Updating submodules..."
 		& git submodule update --init --recursive
-		if ($lastExitCode -ne "0") { throw "'git submodule update' failed" }
+		if ($lastExitCode -ne 0) { throw "'git submodule update' failed" }
 
 		"🍒 Cleaning the repository from untracked files..."
 		& git clean -fdx -f
-		if ($lastExitCode -ne "0") { throw "'git clean -fdx -f' failed" }
+		if ($lastExitCode -ne 0) { throw "'git clean -fdx -f' failed" }
 			
 		& git submodule foreach --recursive git clean -fdx -f
-		if ($lastExitCode -ne "0") { throw "'git clean -fdx -f' in submodules failed" }
+		if ($lastExitCode -ne 0) { throw "'git clean -fdx -f' in submodules failed" }
 
 		"🍒 Pulling latest updates..."
 		& git pull --recurse-submodules 
-		if ($lastExitCode -ne "0") { throw "'git pull' failed" }
+		if ($lastExitCode -ne 0) { throw "'git pull' failed" }
 
 		"🍒 Checking the status..."
 		$Result = (git status)
-		if ($lastExitCode -ne "0") { throw "'git status' failed" }
+		if ($lastExitCode -ne 0) { throw "'git status' failed" }
 		if ("$Result" -notmatch "nothing to commit, working tree clean") { throw "Branch is NOT clean: $Result" }
 
 		"🍒 Cherry picking..."
 		& git cherry-pick --no-commit "$CommitID"
-		if ($lastExitCode -ne "0") { throw "'git cherry-pick $CommitID' failed" }
+		if ($lastExitCode -ne 0) { throw "'git cherry-pick $CommitID' failed" }
 
 		"🍒 Committing..."
 		& git commit -m "$CommitMessage"
-		if ($lastExitCode -ne "0") { throw "'git commit' failed" }
+		if ($lastExitCode -ne 0) { throw "'git commit' failed" }
 
 		"🍒 Pushing..."
 		& git push
-		if ($lastExitCode -ne "0") { throw "'git push' failed" }
+		if ($lastExitCode -ne 0) { throw "'git push' failed" }
 	}
 	[int]$Elapsed = $StopWatch.Elapsed.TotalSeconds
 	"✅ cherry picked $CommitID into $NumBranches branches in $Elapsed sec"

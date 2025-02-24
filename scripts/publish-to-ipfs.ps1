@@ -26,7 +26,7 @@ try {
 
 	Write-Host "⏳ (1/3) Searching for IPFS executable..." -NoNewline
 	& ipfs --version
-	if ($lastExitCode -ne "0") { throw "Can't execute 'ipfs' - make sure IPFS is installed and available" }
+	if ($lastExitCode -ne 0) { throw "Can't execute 'ipfs' - make sure IPFS is installed and available" }
 
 	if (test-path "$FilePattern" -pathType container) {
 		"⏳ (2/3) Publishing folder $FilePattern/..."

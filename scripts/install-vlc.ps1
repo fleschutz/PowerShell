@@ -18,7 +18,7 @@ try {
 	$StopWatch = [system.diagnostics.stopwatch]::startNew()
 
 	& winget install --id XPDM1ZW6815MQM --accept-package-agreements --accept-source-agreements
-	if ($lastExitCode -ne "0") { throw "Can't install VLC media player, is it already installed?" }
+	if ($lastExitCode -ne 0) { throw "Can't install VLC media player, is it already installed?" }
 
 	[int]$Elapsed = $StopWatch.Elapsed.TotalSeconds
 	"✅ Installation of VLC media player took $Elapsed sec"

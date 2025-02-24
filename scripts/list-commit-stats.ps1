@@ -23,14 +23,14 @@ param([string]$path = "$PWD")
 try {
 	Write-Progress "(1/4) Searching for Git executable..."
 	$null = (git --version)
-	if ($lastExitCode -ne "0") { throw "Can't execute 'git' - make sure Git is installed and available" }
+	if ($lastExitCode -ne 0) { throw "Can't execute 'git' - make sure Git is installed and available" }
 
 	Write-Progress "(2/4) Checking local Git repository..."
 	if (-not(Test-Path "$path" -pathType container)) { throw "Can't access directory: $path" }
 
 	Write-Progress "(3/4) Fetching updates..."
 	& git -C "$path" fetch --all --quiet
-	if ($lastExitCode -ne "0") { throw "'git fetch' failed with exit code $lastExitCode" }
+	if ($lastExitCode -ne 0) { throw "'git fetch' failed with exit code $lastExitCode" }
 
 	Write-Progress "(4/4) Querying commits..."
 	" "
@@ -38,7 +38,7 @@ try {
 	"------- ------"
 	Write-Progress -completed "Done."
 	git -C "$path" shortlog --summary --numbered --email --no-merges
-	if ($lastExitCode -ne "0") { throw "'git shortlog' failed with exit code $lastExitCode" }
+	if ($lastExitCode -ne 0) { throw "'git shortlog' failed with exit code $lastExitCode" }
 	exit 0 # success
 } catch {
 	"⚠️ Error in line $($_.InvocationInfo.ScriptLineNumber): $($Error[0])"

@@ -25,18 +25,18 @@ try {
 
 	Write-Host "⏳ (1/4) Searching for Git executable...  " -noNewline
  	& git --version
- 	if ($lastExitCode -ne "0") { throw "Can't execute 'git' - make sure Git is installed and available" }
+ 	if ($lastExitCode -ne 0) { throw "Can't execute 'git' - make sure Git is installed and available" }
 
 	Write-Host "⏳ (2/4) Checking local repository...     $path"
 	if (!(Test-Path "$path" -pathType container)) { throw "Can't access folder: $path" }
 
 	Write-Host "⏳ (3/4) Pulling remote updates...        " -noNewline
 	& git -C "$path" pull --all --recurse-submodules
-	if ($lastExitCode -ne "0") { throw "'git pull --all --recurse-submodes' failed" }
+	if ($lastExitCode -ne 0) { throw "'git pull --all --recurse-submodes' failed" }
 
 	Write-Host "⏳ (4/4) Pushing local updates...         " -noNewline
 	& git -C "$path" push
-	if ($lastExitCode -ne "0") { throw "'git push' failed" }
+	if ($lastExitCode -ne 0) { throw "'git push' failed" }
 
 	$pathName = (Get-Item "$path").Name
 	[int]$elapsed = $stopWatch.Elapsed.TotalSeconds

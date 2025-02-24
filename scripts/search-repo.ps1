@@ -26,10 +26,10 @@ try {
 	if (-not(Test-Path "$path" -pathType container)) { throw "Can't access Git repository at: $path" }
 
 	$null = (git --version)
-	if ($lastExitCode -ne "0") { throw "Can't execute 'git' - make sure Git is installed and available" }
+	if ($lastExitCode -ne 0) { throw "Can't execute 'git' - make sure Git is installed and available" }
 
 	& git -C "$path" grep $textPattern
-	if ($lastExitCode -ne "0") { throw "'git grep' failed with exit code $lastExitCode" }
+	if ($lastExitCode -ne 0) { throw "'git grep' failed with exit code $lastExitCode" }
 
 	exit 0 # success
 } catch {

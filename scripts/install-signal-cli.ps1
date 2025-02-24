@@ -24,19 +24,19 @@ try {
 	set-location /tmp
 
 	& wget --version
-	if ($lastExitCode -ne "0") { throw "Can't execute 'wget' - make sure wget is installed and available" }
+	if ($lastExitCode -ne 0) { throw "Can't execute 'wget' - make sure wget is installed and available" }
 
 	& wget "https://github.com/AsamK/signal-cli/releases/download/v$Version/signal-cli-$($Version).tar.gz"
-	if ($lastExitCode -ne "0") { throw "'wget' failed" }
+	if ($lastExitCode -ne 0) { throw "'wget' failed" }
 
 	sudo tar xf "signal-cli-$Version.tar.gz" -C /opt
-	if ($lastExitCode -ne "0") { throw "'sudo tar xf' failed" }
+	if ($lastExitCode -ne 0) { throw "'sudo tar xf' failed" }
 
 	sudo ln -sf "/opt/signal-cli-$Version/bin/signal-cli" /usr/local/bin/
-	if ($lastExitCode -ne "0") { throw "'sudo ln -sf' failed" }
+	if ($lastExitCode -ne 0) { throw "'sudo ln -sf' failed" }
 
 	rm "signal-cli-$Version.tar.gz"
-	if ($lastExitCode -ne "0") { throw "'rm' failed" }
+	if ($lastExitCode -ne 0) { throw "'rm' failed" }
 
 	[int]$Elapsed = $StopWatch.Elapsed.TotalSeconds
 	"✅ installed signal-cli $Version to /opt and /usr/local/bin in $Elapsed sec"

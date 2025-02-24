@@ -22,7 +22,7 @@ try {
 
 	Write-Host "⏳ Searching for pandoc..." 
 	$null = (pandoc --version)
-	if ($lastExitCode -ne "0") { throw "Can't execute 'pandoc' - make sure it's installed and available" }
+	if ($lastExitCode -ne 0) { throw "Can't execute 'pandoc' - make sure it's installed and available" }
 
 	Write-Host "⏳ Converting..."
 	gci -r -i $FilePattern | foreach {

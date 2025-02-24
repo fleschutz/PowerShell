@@ -12,7 +12,7 @@
 #>
 
 TaskKill /im devenv.exe
-if ($lastExitCode -ne "0") {
+if ($lastExitCode -ne 0) {
 	& "$PSScriptRoot/speak-english.ps1" "Sorry, Visual Studio isn't running."
 	exit 1
 }

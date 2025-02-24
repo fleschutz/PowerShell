@@ -15,7 +15,7 @@ try {
 	"Installing Opera GX, please wait..."
 
 	& winget install "Opera GX" --source msstore --accept-package-agreements --accept-source-agreements
-	if ($lastExitCode -ne "0") { throw "'winget install' failed" }
+	if ($lastExitCode -ne 0) { throw "'winget install' failed" }
 
 	"Opera GX installed successfully."
 	exit 0 # success

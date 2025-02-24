@@ -15,7 +15,7 @@ try {
 	"Installing Netflix, please wait..."
 
 	& winget install "Netflix" --source msstore --accept-package-agreements --accept-source-agreements
-	if ($lastExitCode -ne "0") { throw "'winget install' failed" }
+	if ($lastExitCode -ne 0) { throw "'winget install' failed" }
 
 	"Netflix installed successfully."
 	exit 0 # success

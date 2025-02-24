@@ -19,7 +19,7 @@ function TryEditor { param([string]$editor, [string]$path)
 	try {
 		Write-Host "$editor.." -noNewline
 		& $editor "$path"
-		if ($lastExitCode -ne "0") {
+		if ($lastExitCode -ne 0) {
 			"⚠️ Can't execute '$editor' - make sure it's installed and available"
 			exit 1
 		}

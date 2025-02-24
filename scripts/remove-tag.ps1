@@ -28,18 +28,18 @@ try {
 	if (-not(test-path "$RepoDir" -pathType container)) { throw "Can't access directory: $RepoDir" }
 
 	$Null = (git --version)
-	if ($lastExitCode -ne "0") { throw "Can't execute 'git' - make sure Git is installed and available" }
+	if ($lastExitCode -ne 0) { throw "Can't execute 'git' - make sure Git is installed and available" }
 
 	if (($Mode -eq "locally") -or ($Mode -eq "both")) {
 		"Removing local tag..."
 		& git -C "$RepoDir" tag --delete $TagName
-		if ($lastExitCode -ne "0") { throw "'git tag --delete' failed with exit code $lastExitCode" }
+		if ($lastExitCode -ne 0) { throw "'git tag --delete' failed with exit code $lastExitCode" }
 	}
 
 	if (($Mode -eq "remote") -or ($Mode -eq "both")) {
 		"Removing remote tag..."
 		& git -C "$RepoDir" push origin :refs/tags/$TagName
-		if ($lastExitCode -ne "0") { throw "'git push origin' failed with exit code $lastExitCode" }
+		if ($lastExitCode -ne 0) { throw "'git push origin' failed with exit code $lastExitCode" }
 	}
 
 	[int]$Elapsed = $StopWatch.Elapsed.TotalSeconds

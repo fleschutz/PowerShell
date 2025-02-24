@@ -20,7 +20,7 @@ try {
 	if (-not(Test-Path "$RepoDir" -pathType container)) { throw "Can't access directory: $RepoDir" }
 
 	$Null = (git --version)
-	if ($lastExitCode -ne "0") { throw "Can't execute 'git' - make sure Git is installed and available" }
+	if ($lastExitCode -ne 0) { throw "Can't execute 'git' - make sure Git is installed and available" }
 
 	$LatestTagCommit = (git -C "$RepoDir" rev-list --tags --max-count=1)
 	$LatestTagName = (git -C "$RepoDir" describe --tags $LatestTagCommit)

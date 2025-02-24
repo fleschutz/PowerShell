@@ -28,7 +28,7 @@ try {
 
 	Write-Host "⏳ (1/10) Searching for Git executable...  " -noNewline
 	& git --version
-	if ($lastExitCode -ne "0") { throw "Can't execute 'git' - make sure Git is installed and available" }
+	if ($lastExitCode -ne 0) { throw "Can't execute 'git' - make sure Git is installed and available" }
 
 	Write-Host "⏳ (2/10) Checking local repository...     " -noNewline
 	$FullPath = Resolve-Path "$pathToRepo"
@@ -37,15 +37,15 @@ try {
 
 	Write-Host "⏳ (3/10) Querying remote URL...           " -noNewline
 	& git -C "$FullPath" remote get-url origin
-	if ($lastExitCode -ne "0") { throw "'git remote get-url origin' failed with exit code $lastExitCode" }
+	if ($lastExitCode -ne 0) { throw "'git remote get-url origin' failed with exit code $lastExitCode" }
 
 	Write-Host "⏳ (4/10) Querying current branch...       " -noNewline
 	& git -C "$FullPath" branch --show-current
-	if ($lastExitCode -ne "0") { throw "'git branch --show-current' failed with exit code $lastExitCode" }
+	if ($lastExitCode -ne 0) { throw "'git branch --show-current' failed with exit code $lastExitCode" }
 
 	Write-Host "⏳ (5/10) Fetching remote updates...       " -noNewline
 	& git -C "$FullPath" fetch --all --recurse-submodules --tags --force --quiet
-	if ($lastExitCode -ne "0") { throw "'git fetch' failed with exit code $lastExitCode" }
+	if ($lastExitCode -ne 0) { throw "'git fetch' failed with exit code $lastExitCode" }
 	Write-Host "OK"
 
 	Write-Host "⏳ (6/10) Querying latest tag...           " -noNewline
@@ -55,19 +55,19 @@ try {
 
 	Write-Host "⏳ (7/10) Verifying data integrity..."
 	& git -C "$FullPath" fsck 
-	if ($lastExitCode -ne "0") { throw "'git fsck' failed with exit code $lastExitCode" }
+	if ($lastExitCode -ne 0) { throw "'git fsck' failed with exit code $lastExitCode" }
 
 	Write-Host "⏳ (8/10) Running maintenance tasks..."
 	& git -C "$FullPath" maintenance run
-	if ($lastExitCode -ne "0") { throw "'git maintenance run' failed with exit code $lastExitCode" }
+	if ($lastExitCode -ne 0) { throw "'git maintenance run' failed with exit code $lastExitCode" }
 
 	Write-Host "⏳ (9/10) Checking submodule status..."
 	& git -C "$FullPath" submodule status
-	if ($lastExitCode -ne "0") { throw "'git submodule status' failed with exit code $lastExitCode" }
+	if ($lastExitCode -ne 0) { throw "'git submodule status' failed with exit code $lastExitCode" }
 
 	Write-Host "⏳ (10/10) Checking repo status...         " -noNewline
 	& git -C "$FullPath" status 
-	if ($lastExitCode -ne "0") { throw "'git status --short' failed with exit code $lastExitCode" }
+	if ($lastExitCode -ne 0) { throw "'git status --short' failed with exit code $lastExitCode" }
 
 	$repoDirName = (Get-Item "$FullPath").Name
 	[int]$elapsed = $stopWatch.Elapsed.TotalSeconds

@@ -23,7 +23,7 @@ try {
 		& sudo apt install gh
 	} else {
 		& winget install --id GitHub.cli
-		if ($lastExitCode -ne "0") { throw "Installation of GitHub CLI failed, maybe it's already installed." }
+		if ($lastExitCode -ne 0) { throw "Installation of GitHub CLI failed, maybe it's already installed." }
 	}
 	[int]$elapsed = $stopWatch.Elapsed.TotalSeconds
 	"✅ GitHub CLI installed successfully in $($elapsed)s - to authenticate execute: 'gh auth login'"

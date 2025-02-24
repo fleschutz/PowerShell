@@ -15,7 +15,7 @@ try {
 	"Installing Audacity, please wait..."
 
 	& winget install --id Audacity.Audacity --accept-package-agreements --accept-source-agreements
-	if ($lastExitCode -ne "0") { throw "'winget install' failed" }
+	if ($lastExitCode -ne 0) { throw "'winget install' failed" }
 
 	"Audacity installed successfully."
 	exit 0 # success

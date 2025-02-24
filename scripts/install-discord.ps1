@@ -15,7 +15,7 @@ try {
 	"Installing Discord, please wait..."
 
 	& winget install "Discord" --source msstore --accept-package-agreements --accept-source-agreements
-	if ($lastExitCode -ne "0") { throw "'winget install' failed" }
+	if ($lastExitCode -ne 0) { throw "'winget install' failed" }
 
 	"Discord installed successfully."
 	exit 0 # success

@@ -21,10 +21,10 @@ try {
 	$StopWatch = [system.diagnostics.stopwatch]::startNew()
 
 	& wget --version
-	if ($lastExitCode -ne "0") { throw "Can't execute 'wget' - make sure wget is installed and available" }
+	if ($lastExitCode -ne 0) { throw "Can't execute 'wget' - make sure wget is installed and available" }
 
 	& wget --mirror --convert-links --adjust-extension --page-requisites --no-parent $URL --directory-prefix . --no-verbose
-	if ($lastExitCode -ne "0") { throw "Can't execute 'wget --mirror $URL'" }
+	if ($lastExitCode -ne 0) { throw "Can't execute 'wget --mirror $URL'" }
 
 	[int]$Elapsed = $StopWatch.Elapsed.TotalSeconds
 	"✅ downloaded file from $URL in $Elapsed sec"

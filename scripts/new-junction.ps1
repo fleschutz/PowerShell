@@ -23,7 +23,7 @@ try {
 	if ($target -eq "" ) { $target = Read-Host "Enter path to target" }
 
 	New-Item -path "$symlink" -itemType Junction -value "$target"
-	if ($lastExitCode -ne "0") { throw "Command 'New-Item' has failed" }
+	if ($lastExitCode -ne 0) { throw "Command 'New-Item' has failed" }
 
 	"✅ Created new junction '$symlink' linking to: $target"
 	exit 0 # success

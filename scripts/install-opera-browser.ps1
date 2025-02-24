@@ -15,7 +15,7 @@ try {
 	"Installing Opera Browser, please wait..."
 
 	& winget install "Opera Browser" --source msstore --accept-package-agreements --accept-source-agreements
-	if ($lastExitCode -ne "0") { throw "'winget install' failed" }
+	if ($lastExitCode -ne 0) { throw "'winget install' failed" }
 
 	"Opera Browser installed successfully."
 	exit 0 # success

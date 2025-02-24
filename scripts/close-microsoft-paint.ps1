@@ -12,7 +12,7 @@
 #>
 
 TaskKill /im mspaint.exe
-if ($lastExitCode -ne "0") {
+if ($lastExitCode -ne 0) {
 	& "$PSScriptRoot/speak-english.ps1" "Sorry, Microsoft Paint isn't running."
 	exit 1
 }

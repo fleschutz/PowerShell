@@ -30,7 +30,7 @@ function Bytes2String([int64]$bytes) {
 
 try {
 	$result = (smartctl --version)
-	if ($lastExitCode -ne "0") { throw "Can't execute 'smartctl' - make sure smartmontools are installed" }
+	if ($lastExitCode -ne 0) { throw "Can't execute 'smartctl' - make sure smartmontools are installed" }
 
 	if ($IsLinux) {
 		$devices = $(sudo smartctl --scan-open)

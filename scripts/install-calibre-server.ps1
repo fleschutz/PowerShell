@@ -32,15 +32,15 @@ try {
 
 	"`n⏳ (1/5) Updating package infos..."
 	& sudo apt update -y
-	if ($lastExitCode -ne "0") { throw "'apt update' failed" }
+	if ($lastExitCode -ne 0) { throw "'apt update' failed" }
 
 	"`n⏳ (2/5) Installing Calibre package..."
 	& sudo apt install calibre -y
-	if ($lastExitCode -ne "0") { throw "'apt install calibre' failed" }
+	if ($lastExitCode -ne 0) { throw "'apt install calibre' failed" }
 
 	"`n⏳ (3/5) Searching for Calibre server executable..." 
 	& calibre-server --version
-	if ($lastExitCode -ne "0") { throw "Can't execute 'calibre-server' - make sure Calibre server is installed and available" }
+	if ($lastExitCode -ne 0) { throw "Can't execute 'calibre-server' - make sure Calibre server is installed and available" }
 
 	"`n⏳ (4/5) Creating media folder at: $mediaFolder ... (if non-existent)"
 	& mkdir $mediaFolder

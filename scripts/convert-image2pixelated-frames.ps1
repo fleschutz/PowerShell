@@ -29,7 +29,7 @@ try {
 
 	"⏳ (2/$Frames) Searching for ImageMagick 6 executable..."
 	& convert-im6 --version
-	if ($lastExitCode -ne "0") { throw "Can't execute 'convert-im6' - make sure ImageMagick 6 is installed and available" }
+	if ($lastExitCode -ne 0) { throw "Can't execute 'convert-im6' - make sure ImageMagick 6 is installed and available" }
 
 	$Factor = 0.001
 	for ($i = 0; $i -lt $Frames; $i++) {

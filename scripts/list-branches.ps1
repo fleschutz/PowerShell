@@ -25,13 +25,13 @@ try {
 	if (-not(Test-Path "$pathToRepo" -pathType container)) { throw "Can't access repo folder '$pathToRepo' - maybe a typo or missing folder permissions?" }
 
 	$null = (git --version)
-	if ($lastExitCode -ne "0") { throw "Can't execute 'git' - make sure Git is installed and available" }
+	if ($lastExitCode -ne 0) { throw "Can't execute 'git' - make sure Git is installed and available" }
 
 	& git -C "$pathToRepo" fetch 
-	if ($lastExitCode -ne "0") { throw "'git fetch' failed" }
+	if ($lastExitCode -ne 0) { throw "'git fetch' failed" }
 
 	$branches = $(git -C "$pathToRepo" branch --list --remotes --no-color --no-column)
-	if ($lastExitCode -ne "0") { throw "'git branch --list' failed" }
+	if ($lastExitCode -ne 0) { throw "'git branch --list' failed" }
 
 	""
 	"List of Git Branches"

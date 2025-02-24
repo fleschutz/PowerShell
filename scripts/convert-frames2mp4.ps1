@@ -24,7 +24,7 @@ try {
 
 	"⏳ (1/3) Searching for ffmpeg..."
 	& ffmpeg -L
-	if ($lastExitCode -ne "0") { throw "Can't execute 'ffmpeg' - make sure ffmpeg is installed and available" }
+	if ($lastExitCode -ne 0) { throw "Can't execute 'ffmpeg' - make sure ffmpeg is installed and available" }
 
 	"⏳ (2/3) Checking file pattern of the image frames..."
 	$Files = (Get-ChildItem -path "$SourcePattern" -attributes !Directory)

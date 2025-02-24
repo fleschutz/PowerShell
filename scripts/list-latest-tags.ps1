@@ -19,7 +19,7 @@ try {
 	if (-not(test-path "$ParentDir" -pathType container)) { throw "Can't access directory: $ParentDir" }
 
 	$Null = (git --version)
-	if ($lastExitCode -ne "0") { throw "Can't execute 'git' - make sure Git is installed and available" }
+	if ($lastExitCode -ne 0) { throw "Can't execute 'git' - make sure Git is installed and available" }
 
 	$Folders = (get-childItem "$ParentDir" -attributes Directory)
 	$FolderCount = $Folders.Count
@@ -30,7 +30,7 @@ try {
 		$FolderName = (get-item "$Folder").Name
 
 #		& git -C "$Folder" fetch --tags
-#		if ($lastExitCode -ne "0") { throw "'git fetch --tags' failed" }
+#		if ($lastExitCode -ne 0) { throw "'git fetch --tags' failed" }
 
 		$LatestTagCommitID = (git -C "$Folder" rev-list --tags --max-count=1)
 		$LatestTag = (git -C "$Folder" describe --tags $LatestTagCommitID)

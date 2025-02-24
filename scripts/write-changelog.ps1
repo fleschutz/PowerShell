@@ -25,7 +25,7 @@ try {
 
 	Write-Progress "(1/6) Searching for Git executable..."
         $null = (git --version)
-        if ($lastExitCode -ne "0") { throw "Can't execute 'git' - make sure Git is installed and available" }
+        if ($lastExitCode -ne 0) { throw "Can't execute 'git' - make sure Git is installed and available" }
 
 	Write-Progress "(2/6) Checking local repository..."
         if (!(Test-Path "$RepoDir" -pathType container)) { throw "Can't access folder: $RepoDir" }
@@ -33,7 +33,7 @@ try {
 
 	Write-Progress "(3/6) Fetching the latest commits..."
         & git -C "$RepoDir" fetch --all --force --quiet
-        if ($lastExitCode -ne "0") { throw "'git fetch --all' failed with exit code $lastExitCode" }
+        if ($lastExitCode -ne 0) { throw "'git fetch --all' failed with exit code $lastExitCode" }
 
 	Write-Progress "(4/6) Listing all Git commit messages..."
 	$commits = (git -C "$RepoDir" log --boundary --pretty=oneline --pretty=format:%s | sort -u)

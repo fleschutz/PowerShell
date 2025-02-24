@@ -23,7 +23,7 @@ param([string]$pathToRepo = "$PWD", [int]$updateInterval = 60, [int]$speed = 10)
 try {
 	Write-Progress "Searching for Git executable..."
 	$null = (git --version)
-	if ($lastExitCode -ne "0") { throw "Can't execute 'git' - make sure Git is installed and available" }
+	if ($lastExitCode -ne 0) { throw "Can't execute 'git' - make sure Git is installed and available" }
 
 	Write-Progress "Checking local Git repository..."
 	if (-not(Test-Path "$pathToRepo" -pathType container)) { throw "Can't access directory: $pathToRepo" }
@@ -36,10 +36,10 @@ try {
 	$tzOffset = (Get-Timezone).BaseUtcOffset.TotalSeconds
 	for (;;) {
 		& git -C "$pathToRepo" fetch --all --recurse-submodules=no --jobs=1 --quiet
-		if ($lastExitCode -ne "0") { throw "'git fetch' failed" }
+		if ($lastExitCode -ne 0) { throw "'git fetch' failed" }
 
 		$line = (git -C "$pathToRepo" log origin --format=format:'%at %s by %an%d' --max-count=1)
-		if ($lastExitCode -ne "0") { throw "'git log origin' failed" }
+		if ($lastExitCode -ne 0) { throw "'git log origin' failed" }
 		if ("$line" -eq "$prevLine") { Start-Sleep -seconds $updateInterval; continue }
 
 		$unixTimestamp = [int64]$line.Substring(0,10)

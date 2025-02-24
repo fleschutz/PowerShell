@@ -15,7 +15,7 @@ try {
 	"Installing CrystalDiskMark, please wait..."
 
 	& winget install "CrystalDiskMark Shizuku Edition" --source msstore --accept-package-agreements --accept-source-agreements
-	if ($lastExitCode -ne "0") { throw "'winget install' failed" }
+	if ($lastExitCode -ne 0) { throw "'winget install' failed" }
 
 	"CrystalDiskMark installed successfully."
 	exit 0 # success
