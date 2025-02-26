@@ -5,7 +5,7 @@
 	This PowerShell script queries pending operating system reboots and prints it.
 .EXAMPLE
 	./check-pending-reboot.ps1
-	✅ No pending reboot
+	✅ No pending reboot.
 .LINK
         https://github.com/fleschutz/PowerShell
 .NOTES
@@ -22,7 +22,7 @@ function Test-RegistryValue { param([parameter(Mandatory=$true)][ValidateNotNull
 }
 
 try {
-	$reply = "✅ No pending reboot"
+	[string]$reply = "✅ No pending reboot."
 	if ($IsLinux) {
 		if (Test-Path "/var/run/reboot-required") {
 			$reply = "⚠️ Pending reboot (found: /var/run/reboot-required)"
@@ -60,7 +60,7 @@ try {
 			$reason += ", '...\CurrentControlSet\Services\Netlogon' with 'AvoidSpnSet'"
 		}
 		if ($reason -ne "") {
-			$reply = "⚠️ Pending reboot (registry got $($reason.substring(2)))"
+			$reply = "⚠️ Pending reboot (found: $($reason.substring(2)) in registry)"
 		}
 	}
 	Write-Host $reply
