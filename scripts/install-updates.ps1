@@ -55,10 +55,20 @@ try {
 		& "$PSScriptRoot/check-pending-reboot.ps1"
 		Start-Sleep -seconds 3
 		""
-		"⏳ (2/2) Installing updates from winget..."
+		"⏳ (2/4) Updating Windows Store apps..."
+		if (Get-Command winget -ErrorAction SilentlyContinue) {
+			& winget upgrade --all --source=msstore --include-unknown
+		}
 		""
-		& winget upgrade --all --source=winget
-		# & winget upgrade --all --source=msstore # does not work
+		"⏳ (3/4) Updating Chocolatey packages..."
+		if (Get-Command choco -ErrorAction SilentlyContinue) {
+			& choco upgrade all -y
+		}
+		""
+		"⏳ (4/4) Updating Winget packages..."
+		if (Get-Command winget -ErrorAction SilentlyContinue) {
+			& winget upgrade --all --source=winget --include-unknown
+		}
 	}
 	[int]$elapsed = $stopWatch.Elapsed.TotalSeconds
 	"✅ Updates installed in $($elapsed)s."

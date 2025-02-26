@@ -29,7 +29,7 @@ try {
 			} elseif ($percent -ge 95) {
 				$reply = "✅ Battery full ($percent%, power scheme is '$powerScheme')"
 			} else {
-				$reply = "✅ Battery charging ($percent%, power scheme is '$powerScheme')"
+				$reply = "✅ Battery $percent% and charging (power scheme is '$powerScheme')"
 			}
 		} else { # must be offline
 			if (($remaining -eq 0) -and ($percent -ge 60)) {
