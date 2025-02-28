@@ -49,8 +49,8 @@ try {
 	& sudo calibre-server --port $port --num-per-page 100 --userdb $userDB --log $logfile --daemonize $mediaFolder
 
 	[int]$elapsed = $stopWatch.Elapsed.TotalSeconds
-	"✅ Installed and started Calibre server on port $port in $($elapsed)s."
-	"   (media at: $mediaFolder, user DB: $userDB, logging to: $logfile)"
+	"✅ Calibre server installed in $($elapsed)s."
+	"   (URL=http://$(hostname):$port media=$mediaFolder userDB=$userDB log=$logfile)."
 	exit 0 # success
 } catch {
 	"⚠️ Error in line $($_.InvocationInfo.ScriptLineNumber): $($Error[0])"
