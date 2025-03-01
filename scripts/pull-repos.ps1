@@ -48,10 +48,10 @@ try {
 	}
 	[int]$elapsed = $stopWatch.Elapsed.TotalSeconds
 	if ($failed -eq 0) {
-		"✅ Pulled into $numFolders repos at 📂$parentDir in $($elapsed)s."
+		"✅ Updated $numFolders Git repositories at 📂$parentDir in $($elapsed)s."
 		exit 0 # success
 	} else {
-		"⚠️ Pulled into $numFolders repos at 📂$parentDir in $($elapsed)s but $failed failed!"
+		"⚠️⚠️Updated $numFolders Git repositories at 📂$parentDir in $($elapsed)s but $failed failed!"
 		exit 1
 	}
 } catch {
