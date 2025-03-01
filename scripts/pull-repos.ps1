@@ -51,7 +51,7 @@ try {
 		"✅ Updated $numFolders Git repositories at 📂$parentDir in $($elapsed)s."
 		exit 0 # success
 	} else {
-		"⚠️⚠️Updated $numFolders Git repositories at 📂$parentDir in $($elapsed)s but $failed failed!"
+		"⚠️ Updated $numFolders Git repositories at 📂$parentDir in $($elapsed)s but $failed failed!"
 		exit 1
 	}
 } catch {
