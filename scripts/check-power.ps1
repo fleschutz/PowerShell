@@ -26,8 +26,8 @@ try {
 		if ($details.PowerLineStatus -eq "Online") {
 			if ($details.BatteryChargeStatus -eq "NoSystemBattery") {
 				$reply = "✅ AC powered"
-			} elseif ($percent -ge 95) {
-				$reply = "✅ Battery full ($percent%, power scheme is '$powerScheme')"
+			} elseif ($percent -ge 90) {
+				$reply = "✅ Battery $percent% full (power scheme is '$powerScheme')"
 			} else {
 				$reply = "✅ Battery $percent% and charging (power scheme is '$powerScheme')"
 			}
@@ -43,7 +43,7 @@ try {
 			} elseif ($percent -lt 10) {
 				$reply = "⚠️ Battery $percent% only with $($remaining)min remaining (power scheme is '$powerScheme') "
 			} elseif ($percent -ge 90) {
-				$reply = "✅ Battery full ($percent%, $($remaining)min remaining, power scheme is '$powerScheme')"
+				$reply = "✅ Battery $percent% full ($($remaining)min remaining, power scheme is '$powerScheme')"
 			} else {
 				$reply = "✅ Battery $percent% with $($remaining)min remaining (power scheme is '$powerScheme') "
 			}
