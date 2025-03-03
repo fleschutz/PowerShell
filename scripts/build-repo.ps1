@@ -1,15 +1,15 @@
 ﻿<#
 .SYNOPSIS
-	Builds a repository 
+	Builds a repo
 .DESCRIPTION
-	This PowerShell script builds a Git repository by supporting build systems such as: autogen, cmake, configure, Gradle, Imakefile, Makefile, and Meson.
+	This PowerShell script builds a Git repository by supporting the build systems: autogen, cmake, configure, Gradle, Imakefile, Makefile, and Meson.
 .PARAMETER path
-	Specifies the path to the Git repository (default is current working directory)
+	Specifies the path to the Git repository (current working directory by default)
 .EXAMPLE
 	PS> ./build-repo.ps1 C:\Repos\ninja
-	⏳ Building 📂ninja using CMakeLists.txt into 📂ninja/_Build_Results...
+	⏳ Building 📂ninja by using CMake...
 	...
-	✅ Built 📂ninja repository in 47 sec.
+	✅ Repo 📂ninja built successfully in 47s.
 .LINK
 	https://github.com/fleschutz/PowerShell
 .NOTES
@@ -18,10 +18,11 @@
 
 param([string]$path = "$PWD")
 
-function BuildInDir([string]$path) {
+function BuildFolder([string]$path) {
 	$dirName = (Get-Item "$path").Name
 	if (Test-Path "$path/CMakeLists.txt" -pathType leaf) {
-		"⏳ (1/4) Building 📂$dirName by using CMake into 📂$dirName/_Build_Results..."
+		"⏳ (1/4) Building 📂$dirName by using CMake..."
+		$global:results = "$path/_Build_Results"
 		if (-not(Test-Path "$path/_Build_Results/" -pathType container)) { 
 			& mkdir "$path/_Build_Results/"
 		}
@@ -38,9 +39,8 @@ function BuildInDir([string]$path) {
 		"⏳ (4/4) Executing 'ctest -V' to perform tests (optional)..."
 		& ctest -V
 		if ($lastExitCode -ne 0) { throw "Executing 'ctest -V' exited with error code $lastExitCode" }
-
 	} elseif (Test-Path "$path/autogen.sh" -pathType leaf) { 
-		"⏳ Building 📂$dirName by using 'autogen.sh'..."
+		"⏳ Building 📂$dirName by executing 'autogen.sh'..."
 		Set-Location "$path/"
 
 		& ./autogen.sh --force
@@ -52,9 +52,8 @@ function BuildInDir([string]$path) {
 		& make -j4
 		if ($lastExitCode -ne 0) { throw "Executing 'make -j4' exited with error code $lastExitCode" }
 
-
 	} elseif (Test-Path "$path/configure" -pathType leaf) { 
-		"⏳ Building 📂$dirName by using 'configure'..."
+		"⏳ Building 📂$dirName by executing './configure' and 'make'..."
 		Set-Location "$path/"
 
 		& ./configure
@@ -107,7 +106,7 @@ function BuildInDir([string]$path) {
 		if ($lastExitCode -ne 0) { throw "Executing 'make -j4' has failed" }
 
 	} elseif (Test-Path "$path/compile.sh" -pathType leaf) { 
-		"⏳ Building 📂$dirName by using 'compile.sh'..."
+		"⏳ Building 📂$dirName by executing 'compile.sh'..."
 		Set-Location "$path/"
 
 		& ./compile.sh
@@ -117,15 +116,16 @@ function BuildInDir([string]$path) {
 		if ($lastExitCode -ne 0) { throw "Executing 'make -j4' has failed" }
 
 	} elseif (Test-Path "$path/attower/src/build/DevBuild/build.bat" -pathType leaf) {
-		"⏳ Building 📂$dirName by using build.bat ..."
-		Set-Location "$path/attower/src/build/DevBuild/"
 
-		& ./build.bat build-all-release
-		if ($lastExitCode -ne 0) { throw "Executing 'build.bat build-all-release' exited with error code $lastExitCode" }
+		Write-Host "⏳ Building 📂$dirName by executing 'build.bat'..."
+		Set-Location "$path/attower/src/build/DevBuild/"
+		& ./build.bat build-core-release
+		if ($lastExitCode -ne 0) { throw "Executing 'build.bat' exited with error code $lastExitCode" }
+		$global:results = "$path\attower\Executables\"
 
 	} elseif (Test-Path "$path/$dirName" -pathType container) {
 		"⏳ No make rule found, trying subfolder 📂$($dirName)..."
-		BuildInDir "$path/$dirName"
+		BuildFolder "$path/$dirName"
 	} else {
 		Write-Warning "Sorry, no make rule applies to: 📂$dirName"
 		exit 0 # success
@@ -134,18 +134,24 @@ function BuildInDir([string]$path) {
 
 try {
 	$stopWatch = [system.diagnostics.stopwatch]::startNew()
-
-	if (-not(Test-Path "$path" -pathType container)) { throw "Can't access directory: $path" }
-
 	$previousPath = Get-Location
-	BuildInDir "$path"
+
+	if (-not(Test-Path "$path" -pathType container)) { throw "The file path '$path' doesn't exist (yet)" }
+
+	$global:results = ""
+	BuildFolder "$path"
 	Set-Location "$previousPath"
 
 	$repoDirName = (Get-Item "$path").Name
 	[int]$elapsed = $stopWatch.Elapsed.TotalSeconds
-	"✅ Built 📂$repoDirName repository in $elapsed sec."
+	if ($global:results -eq "") {
+		"✅ Repo 📂$repoDirName built successfully in $($elapsed)s."
+	} else {
+		"✅ Repo 📂$repoDirName built successfully in $($elapsed)s, results at: 📂$($global:results)"
+	}
 	exit 0 # success
 } catch {
 	"⚠️ Error in line $($_.InvocationInfo.ScriptLineNumber): $($Error[0])"
+	Set-Location "$previousPath"
 	exit 1
 }

@@ -17,7 +17,7 @@
 param([string]$folderName = "")
 
 try {
-	if ("$folderName" -eq "") { $folderName = Read-Host "Enter the Git repository's folder name" }
+	if ("$folderName" -eq "") { $folderName = Read-Host "Enter the folder name of the Git repository" }
 
 	if (Test-Path "~/Repos"              -pathType container) { $path = "~/Repos"
 	} elseif (Test-Path "~/repos"        -pathType container) { $path = "~/repos"
@@ -33,7 +33,7 @@ try {
 		throw "No Git repositories folder in your home directory or in the root folder yet"
 	}
 	$path += "/" + $folderName
-	if (-not(Test-Path "$path" -pathType container)) { throw "The path to 📂$path doesn't exist (yet)" }
+	if (-not(Test-Path "$path" -pathType container)) { throw "The file path '$path' doesn't exist (yet)" }
 
 	$path = Resolve-Path "$path"
 	Set-Location "$path"
