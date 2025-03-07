@@ -9,7 +9,7 @@
 	PS> ./build-repo.ps1 C:\Repos\ninja
 	⏳ Building 📂ninja by using CMake...
 	...
-	✅ Repo 📂ninja built successfully in 47s.
+	✅ Build of 📂ninja succeeded in 47s, results in: 📂C:\Repos\ninja\_results
 .LINK
 	https://github.com/fleschutz/PowerShell
 .NOTES
@@ -22,7 +22,7 @@ function BuildFolder([string]$path) {
 	$dirName = (Get-Item "$path").Name
 	if (Test-Path "$path/CMakeLists.txt" -pathType leaf) {
 		"⏳ (1/4) Building 📂$dirName by using CMake..."
-		$global:results = "$path/_build_results/"
+		$global:results = "$path/_results/"
 		if (-not(Test-Path $global:results -pathType container)) { 
 			& mkdir $global:results
 		}
@@ -121,7 +121,7 @@ function BuildFolder([string]$path) {
 		Set-Location "$path/attower/src/build/DevBuild/"
 		& ./build.bat build-core-release
 		if ($lastExitCode -ne 0) { throw "Executing 'build.bat' failed with exit code $lastExitCode" }
-		$global:results = "$path\attower\Executables\"
+		$global:results = "$path\attower\Executables"
 
 	} elseif (Test-Path "$path/$dirName" -pathType container) {
 		"⏳ No make rule found, trying subfolder 📂$($dirName)..."
@@ -145,9 +145,9 @@ try {
 	$repoDirName = (Get-Item "$path").Name
 	[int]$elapsed = $stopWatch.Elapsed.TotalSeconds
 	if ($global:results -eq "") {
-		"✅ Repo 📂$repoDirName built successfully in $($elapsed)s."
+		"✅ Build of 📂$repoDirName succeeded in $($elapsed)s."
 	} else {
-		"✅ Repo 📂$repoDirName built successfully in $($elapsed)s, results in: 📂$($global:results)"
+		"✅ Build of 📂$repoDirName succeeded in $($elapsed)s, results in: 📂$($global:results)"
 	}
 	exit 0 # success
 } catch {
