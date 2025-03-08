@@ -34,24 +34,24 @@ try {
 	Write-Host "$numFolders subfolders"
 
 	[int]$step = 3
-	[int]$failed = 0
+	[int]$numFailed = 0
 	foreach ($folder in $folders) {
 		$folderName = (Get-Item "$folder").Name
 		Write-Host "⏳ ($step/$($numFolders + 2)) Pulling into 📂$folderName...`t`t" -NoNewline
 
 		& git -C "$folder" pull --recurse-submodules --jobs=4
-		if ($lastExitCode -ne 0) { $failed++; write-warning "'git pull' in 📂$folderName failed" }
+		if ($lastExitCode -ne 0) { $numFailed++; Write-Warning "'git pull' in 📂$folderName failed" }
 
 		& git -C "$folder" submodule update --init --recursive
-		if ($lastExitCode -ne 0) { throw "'git submodule update' in 📂$folder failed with exit code $lastExitCode" }
+		if ($lastExitCode -ne 0) { $numFailed++; Write-Warning "'git submodule update' in 📂$folderName failed with exit code $lastExitCode" }
 		$step++
 	}
 	[int]$elapsed = $stopWatch.Elapsed.TotalSeconds
-	if ($failed -eq 0) {
-		"✅ $numFolders Git repositories at 📂$parentDir updated in $($elapsed)s."
+	if ($numFailed -eq 0) {
+		"✅ Update of $numFolders Git repos at 📂$parentDir succeeded in $($elapsed)s."
 		exit 0 # success
 	} else {
-		"⚠️ $numFolders Git repositories at 📂$parentDir updated in $($elapsed)s but $failed failed!"
+		"⚠️ Updated $numFolders Git repos at 📂$parentDir in $($elapsed)s but $numFailed failed!"
 		exit 1
 	}
 } catch {
