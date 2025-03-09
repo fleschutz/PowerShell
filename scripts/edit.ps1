@@ -2,9 +2,10 @@
 .SYNOPSIS
 	Opens a text editor
 .DESCRIPTION
-	This PowerShell script opens a text editor with the given text file.
+	This PowerShell script opens the installed text editor with the given text file.
+	Supported are: Emacs, Helix, pico, nano, neovim, Notepad, vi, vim, and Wordpad.
 .PARAMETER path
-	Specifies the path to the text file (will be queried if none given)
+	Specifies the path to the text file (default is to query the user to specify it)
 .EXAMPLE
 	PS> ./edit.ps1 C:\MyDiary.txt
 .LINK
@@ -17,35 +18,25 @@ param([string]$path = "")
 
 function TryEditor { param([string]$editor, [string]$path)
 	try {
-		Write-Host "$editor.." -noNewline
+		Write-Host "$editor..." -noNewline
 		& $editor "$path"
-		if ($lastExitCode -ne 0) {
-			"⚠️ Can't execute '$editor' - make sure it's installed and available"
-			exit 1
-		}
+		if ($lastExitCode -ne 0) { "⚠️ Can't execute '$editor' - make sure it's installed and available"; exit 1 }
 		exit 0 # success
-	} catch {
-		return
-	}
+	} catch { return }
 }
 
-try {
-	if ($path -eq "" ) { $path = Read-Host "Enter the path to the text file" }
+if ($path -eq "" ) { $path = Read-Host "Enter the path to the text file" }
+Write-Host "Trying to open '$path' by " -noNewline
+TryEditor "neovim"      $path
+TryEditor "vim"         $path
+TryEditor "vi"          $path
+TryEditor "nano"        $path
+TryEditor "pico"        $path
+TryEditor "hx"          $path
+TryEditor "emacs"       $path
+TryEditor "notepad.exe" $path
+TryEditor "wordpad.exe" $path
+Write-Host ""
 
-	Write-Host "Searching for " -noNewline
-	TryEditor "neovim" $path
-	TryEditor "vim" $path
-	TryEditor "vi" $path
-	TryEditor "nano" $path
-	TryEditor "pico" $path
-	TryEditor "emacs" $path
-	TryEditor "notepad.exe" $path
-	TryEditor "wordpad.exe" $path
-	Write-Host ""
-
-	throw "No text editor found - use 'winget install' to install your favorite text editor."
-	exit 0 # success
-} catch {
-	"⚠️ Error in line $($_.InvocationInfo.ScriptLineNumber): $($Error[0])"
-	exit 1
-}
+"⚠️ Sorry, no text editor found. Please install your favorite one (e.g. by executing 'winget install helix.helix')."
+exit 1
