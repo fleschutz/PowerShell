@@ -30,8 +30,8 @@ try {
 		}
 	}
 	if ($basename -eq "") {
-		Write-Host "🤷‍ Sorry, '$term' is unknown to me. Ctrl + click here to google it: " -noNewline
-		Write-Host "https://www.google.com/search?q=what+is+$term" -foregroundColor blue
+		Write-Host "🤷‍ Sorry, '$term' is new to me. Let's search it at: " -noNewline
+		Write-Host "https://www.qwant.com/?q=what+is+$term" -foregroundColor blue
 	}
 	exit 0 # success
 } catch {
