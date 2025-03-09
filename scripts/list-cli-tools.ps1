@@ -198,6 +198,7 @@ function List-CLI-Tools {
 	ListTool hostid		"--version"
 	ListTool hostname	""
 	ListTool htop		"--version"
+	ListTool hx		"--version" # Helix editor
 	ListTool icacls		"--version"
 	ListTool iconv		"--version"
 	ListTool id		"--version"
