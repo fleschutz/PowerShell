@@ -35,7 +35,7 @@ TryEditor "nano"        $path
 TryEditor "pico"        $path
 TryEditor "hx"          $path
 TryEditor "emacs"       $path
-TryEditor "Code.exe"    $path
+TryEditor "Code"        $path
 TryEditor "notepad.exe" $path
 TryEditor "wordpad.exe" $path
 Write-Host ""
