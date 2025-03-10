@@ -3,7 +3,7 @@
 	Opens a text editor
 .DESCRIPTION
 	This PowerShell script opens the installed text editor with the given text file.
-	Supported are: Emacs, Helix, pico, nano, neovim, Notepad, vi, vim, and Wordpad.
+	Supported are: Emacs, Helix, pico, nano, neovim, Notepad, vi, vim, Visual Studio Code and Wordpad.
 .PARAMETER path
 	Specifies the path to the text file (default is to query the user to specify it)
 .EXAMPLE
@@ -35,6 +35,7 @@ TryEditor "nano"        $path
 TryEditor "pico"        $path
 TryEditor "hx"          $path
 TryEditor "emacs"       $path
+TryEditor "Code.exe"    $path
 TryEditor "notepad.exe" $path
 TryEditor "wordpad.exe" $path
 Write-Host ""
