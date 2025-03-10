@@ -28,7 +28,7 @@ function TryEditor { param([string]$editor, [string]$path)
 if ($path -eq "" ) { $path = Read-Host "Enter the path to the text file" }
 if (-not(Test-Path "$path" -pathType leaf)) { throw "Can't access file '$path'" }
 Write-Host "⏳ Editing '$path' by executing " -noNewline
-TryEditor "neovim"      $path
+TryEditor "nvim"        $path
 TryEditor "vim"         $path
 TryEditor "vi"          $path
 TryEditor "nano"        $path
