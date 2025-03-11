@@ -12,7 +12,7 @@
 	⏳ (2/4) Checking local repository...        	  C:\Repos\rust
 	⏳ (3/4) Removing untracked files in repository...
 	⏳ (4/4) Removing untracked files in submodules...
-	✅ Cleaned the 📂rust repository in 2s.
+	✅ Repo 📂rust is clean now.
 .LINK
 	https://github.com/fleschutz/PowerShell
 .NOTES
@@ -22,8 +22,6 @@
 param([string]$path = "$PWD")
 
 try {
-	$stopWatch = [system.diagnostics.stopwatch]::startNew()
-
 	Write-Host "⏳ (1/4) Searching for Git executable...          " -noNewline
 	& git --version
 	if ($lastExitCode -ne 0) { throw "Can't execute 'git' - make sure Git is installed and available" }
@@ -44,8 +42,7 @@ try {
 	& git -C "$path" submodule foreach --recursive git clean -xfd -f # to delete all untracked files in the submodules
 	if ($lastExitCode -ne 0) { throw "'git clean' in the submodules failed with exit code $lastExitCode" }
 
-	[int]$elapsed = $stopWatch.Elapsed.TotalSeconds
-	"✅ Cleaned the 📂$repoName repository in $($elapsed)s."
+	"✅ Repo 📂$repoName is clean now."
 	exit 0 # success
 } catch {
 	"⚠️ Error in line $($_.InvocationInfo.ScriptLineNumber): $($Error[0])"

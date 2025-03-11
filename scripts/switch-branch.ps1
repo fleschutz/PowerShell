@@ -15,7 +15,7 @@
 	⏳ (4/6) Switching to branch 'main'...
 	⏳ (5/6) Pulling remote updates...
 	⏳ (6/6) Updating submodules...
-	✅ Switched 📂rust repo to 'main' branch in 22s.
+	✅ Repo 📂rust switched to 'main' branch in 22s.
 .LINK
 	https://github.com/fleschutz/PowerShell
 .NOTES
@@ -60,7 +60,7 @@ try {
 	if ($lastExitCode -ne 0) { throw "'git submodule update' failed with exit code $lastExitCode" }
 
 	[int]$elapsed = $stopWatch.Elapsed.TotalSeconds
-	"✅ Switched 📂$repoDirName repo to '$branchName' branch in $($elapsed)s."
+	"✅ Repo 📂$repoDirName switched to '$branchName' branch in $($elapsed)s."
 	exit 0 # success
 } catch {
 	"⚠️ Error: $($Error[0]) in script line $($_.InvocationInfo.ScriptLineNumber)"
