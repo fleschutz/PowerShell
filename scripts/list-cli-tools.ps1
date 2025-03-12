@@ -134,6 +134,7 @@ function List-CLI-Tools {
 	ListTool dash		"--version"
 	ListTool date		""
 	ListTool dd		"--version"
+	ListTool defrag.exe	"/?"
 	ListTool delgroup	"--version"
 	ListTool deluser	"--version"
 	ListTool df		"--version"
