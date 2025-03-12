@@ -7,7 +7,7 @@
 	Specifies the folder name of the Git repository
 .EXAMPLE
 	PS> ./cd-repo.ps1 rust
-	📂C:\Repos\rust · on branch: ## main ... origin/main
+	📂C:\Repos\rust entered, current branch is: ## main ... origin/main
 .LINK
 	https://github.com/fleschutz/PowerShell
 .NOTES
@@ -37,7 +37,7 @@ try {
 
 	$path = Resolve-Path "$path"
 	Set-Location "$path"
-	Write-Host "📂$path · on branch: " -noNewline
+	Write-Host "📂$path entered, current branch is: " -noNewline
 	& git status --short --branch --show-stash
 	exit 0 # success
 } catch {
