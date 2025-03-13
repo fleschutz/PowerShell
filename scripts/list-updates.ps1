@@ -42,7 +42,7 @@ try {
 		}
 	}
 	" "
-	"💡 Execute the script 'install-updates.ps1' to install the listed updates."
+	"💡 Execute 'install-updates.ps1' to install the listed updates."
 	exit 0 # success
 } catch {
 	"⚠️ Error in line $($_.InvocationInfo.ScriptLineNumber): $($Error[0])"
