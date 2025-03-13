@@ -28,14 +28,21 @@ try {
 	} elseif ($IsMacOS) {
 		throw "Sorry, MacOS not supported yet"
 	} else {
-		Write-Host "`n       === Application Updates from WinGet Store ===" -foregroundColor green
-		& winget upgrade --include-unknown --source=winget
-
-		Write-Host "`n       === Application Updates from Microsoft Store ===" -foregroundColor green
-		& winget upgrade --include-unknown --source=msstore
+		if (Get-Command winget -ErrorAction SilentlyContinue) {
+			Write-Host "`n⏳ Querying updates from WinGet Store..." -foregroundColor green
+			& winget upgrade --include-unknown --source=winget
+		}
+		if (Get-Command winget -ErrorAction SilentlyContinue) {
+			Write-Host "`n⏳ Querying updates from Microsoft Store..." -foregroundColor green
+			& winget upgrade --include-unknown --source=msstore
+		}
+		if (Get-Command choco -ErrorAction SilentlyContinue) {
+			Write-Host "`n⏳ Querying updates from Chocolatey..." -foregroundColor green
+			& choco outdated
+		}
 	}
 	" "
-	"NOTE: Execute script 'install-updates.ps1' to install the listed updates."
+	"💡 Execute the script 'install-updates.ps1' to install the listed updates."
 	exit 0 # success
 } catch {
 	"⚠️ Error in line $($_.InvocationInfo.ScriptLineNumber): $($Error[0])"
