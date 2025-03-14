@@ -298,6 +298,7 @@ function List-CLI-Tools {
 	ListTool time		""
 	ListTool timeout	""
 	ListTool top		"--version"
+	ListTool tracert	""
 	ListTool tskill		""
 	ListTool typeperf	""
 	ListTool tzsync		"--version"
