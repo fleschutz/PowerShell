@@ -38,7 +38,7 @@ try {
 	$path = Resolve-Path "$path"
 	Set-Location "$path"
 	Write-Host "📂$path entered, current branch is: " -noNewline
-	& git status --short --branch --show-stash
+	& git status --branch --short 
 	exit 0 # success
 } catch {
 	"⚠️ Error: $($Error[0])"
