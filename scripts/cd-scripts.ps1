@@ -15,8 +15,9 @@
 try {
 	$path = Resolve-Path "$PSScriptRoot"
 	if (-not(Test-Path "$path" -pathType container)) { throw "PowerShell scripts folder at 📂$path doesn't exist (yet)" }
+	$files = Get-ChildItem $path -attributes !Directory
+	"📂$path entered, containing $($files.Count) scripts."
 	Set-Location "$path"
-	"📂$path"
 	exit 0 # success
 } catch {
 	"⚠️ Error in line $($_.InvocationInfo.ScriptLineNumber): $($Error[0])"
