@@ -29,7 +29,7 @@ try {
 	$path = Resolve-Path $path
 	Set-Location "$path"
 	$subfolders = Get-ChildItem $path -attributes Directory
-	"📂$path entered, containing $($subfolders.Count) subfolders."
+	"📂$path entered (has $($subfolders.Count) subfolders)."
 	exit 0 # success
 } catch {
 	"⚠️ Error: $($Error[0])"

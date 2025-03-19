@@ -9,7 +9,7 @@
 	Specifies the path to the target directory
 .EXAMPLE
 	PS> ./new-junction.ps1 C:\User\Joe\D_drive D:
-	✅ Created a new junction 'C:\User\Joe\D_drive', linking to 📂D:
+	✅ New junction 'C:\User\Joe\D_drive' created, linking to: 📂D:
 .LINK
 	https://github.com/fleschutz/PowerShell
 .NOTES
@@ -19,13 +19,13 @@
 param([string]$junction = "", [string]$targetDir = "")
 
 try {
-	if ($junction -eq "" ) { $symlink = Read-Host "Enter path and filename of the new junction" }
-	if ($targetDir -eq "" ) { $target = Read-Host "Enter the path to the target directory" }
+	if ($junction -eq "" ) { $junction = Read-Host "Enter the new junction's path and filename" }
+	if ($targetDir -eq "" ) { $target = Read-Host "Enter the path to the target directory    " }
 
-	New-Item -path "$symlink" -itemType Junction -value "$targetDir"
+	New-Item -path "$junction" -itemType Junction -value "$targetDir"
 	if ($lastExitCode -ne 0) { throw "Command 'New-Item' has failed" }
 
-	"✅ Created a new junction '$symlink', linking to 📂$targetDir"
+	"✅ New junction '$junction' created, linking to: 📂$targetDir"
 	exit 0 # success
 } catch {
 	"⚠️ Error in line $($_.InvocationInfo.ScriptLineNumber): $($Error[0])"
