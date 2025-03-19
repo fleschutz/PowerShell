@@ -2,10 +2,10 @@
 .SYNOPSIS
 	Installs basic Snap apps
 .DESCRIPTION
-	This PowerShell script installs 20 basic Snap apps.
+	This PowerShell script installs 20 basic snap apps.
 .EXAMPLE
 	PS> ./install-basic-snaps.ps1
-	⏳ Installing 20 Snap apps (sorted alphabetically)...
+	⏳ Installing 20 snap apps (sorted alphabetically)...
 .LINK
 	https://github.com/fleschutz/PowerShell
 .NOTES
@@ -16,11 +16,11 @@ try {
 	$StopWatch = [system.diagnostics.stopwatch]::startNew()
 	if (!$IsLinux) { throw "Only Linux currently support snaps" }
 
-	"⏳ Installing 20 Snap apps (sorted alphabetically)..."
+	"⏳ Installing 20 snap apps (sorted alphabetically)..."
 	& sudo snap install ant
 	& sudo snap install audacity
 	& sudo snap install bashtop
-	& sudo snap install blender
+	& sudo snap install blender --classic
 	& sudo snap install chromium
 	& sudo snap install cmake
 	& sudo snap install cups
@@ -39,7 +39,7 @@ try {
 	& sudo snap install plexmediaserver
 	
 	[int]$elapsed = $StopWatch.Elapsed.TotalSeconds
-	"✅ Installed 20 Snap apps in $($elapsed)s."
+	"✅ Installed 20 snap apps in $($elapsed)s."
 	exit 0 # success
 } catch {
 	"⚠️ Error in line $($_.InvocationInfo.ScriptLineNumber): $($Error[0])"
