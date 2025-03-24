@@ -4,13 +4,14 @@
 .DESCRIPTION
 	This PowerShell script queries the latest available software updates for the
 	local machine and lists it.
-	NOTE: Use the script 'install-updates.ps1' to install the listed updates.
+	NOTE: Execute 'install-updates.ps1' to install the listed updates.
 .EXAMPLE
 	PS> ./list-updates.ps1
+	⏳ Querying updates from Microsoft Store...
 
-	Name               Id                    Version       Available        Source
-	------------------------------------------------------------------------------
-	Git                Git.Git               2.43.0        2.44.0           winget
+	Name               Id                    Version       Available
+	----------------------------------------------------------------
+	Git                Git.Git               2.43.0        2.44.0   
         ...
 .LINK
 	https://github.com/fleschutz/PowerShell
@@ -29,12 +30,11 @@ try {
 		throw "Sorry, MacOS not supported yet"
 	} else {
 		if (Get-Command winget -ErrorAction SilentlyContinue) {
-			Write-Host "`n⏳ Querying updates from WinGet Store..." -foregroundColor green
-			& winget upgrade --include-unknown --source=winget
-		}
-		if (Get-Command winget -ErrorAction SilentlyContinue) {
 			Write-Host "`n⏳ Querying updates from Microsoft Store..." -foregroundColor green
 			& winget upgrade --include-unknown --source=msstore
+
+			Write-Host "`n⏳ Querying updates from WinGet Store..." -foregroundColor green
+			& winget upgrade --include-unknown --source=winget
 		}
 		if (Get-Command choco -ErrorAction SilentlyContinue) {
 			Write-Host "`n⏳ Querying updates from Chocolatey..." -foregroundColor green
