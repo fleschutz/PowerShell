@@ -12,10 +12,10 @@
 	⏳ (1/6) Searching for Git executable...   git version 2.43.0.windows.1
 	⏳ (2/6) Checking local repository...      C:\Repos\rust
 	⏳ (3/6) Fetching remote updates...
-	⏳ (4/6) Switching to branch 'main'...
+	⏳ (4/6) Switching to 'main' branch...
 	⏳ (5/6) Pulling remote updates...
 	⏳ (6/6) Updating submodules...
-	✅ Repo 📂rust switched to 'main' branch in 22s.
+	✅ Switched repo 📂rust to 'main' branch in 22s.
 .LINK
 	https://github.com/fleschutz/PowerShell
 .NOTES
@@ -47,7 +47,7 @@ try {
 	& git -C "$pathToRepo" fetch --all --prune --prune-tags --force
 	if ($lastExitCode -ne 0) { throw "'git fetch' failed with exit code $lastExitCode" }
 
-	"⏳ (4/6) Switching to branch '$branchName'..."
+	"⏳ (4/6) Switching to '$branchName' branch..."
 	& git -C "$pathToRepo" checkout --recurse-submodules "$branchName"
 	if ($lastExitCode -ne 0) { throw "'git checkout $branchName' failed with exit code $lastExitCode" }
 
@@ -60,7 +60,7 @@ try {
 	if ($lastExitCode -ne 0) { throw "'git submodule update' failed with exit code $lastExitCode" }
 
 	[int]$elapsed = $stopWatch.Elapsed.TotalSeconds
-	"✅ Repo 📂$repoDirName switched to '$branchName' branch in $($elapsed)s."
+	"✅ Switched repo 📂$repoDirName to '$branchName' branch in $($elapsed)s."
 	exit 0 # success
 } catch {
 	"⚠️ Error: $($Error[0]) in script line $($_.InvocationInfo.ScriptLineNumber)"
