@@ -12,5 +12,5 @@
 #>
 
 & "$PSScriptRoot/open-default-browser.ps1" "https://www.youtube.com/watch?v=v7ScGV5128A"
-"You've been Rick-Rolled 🤣"
+"Sorry, you've been Rick-Rolled by Markus 🤣"
 exit 0 # success
