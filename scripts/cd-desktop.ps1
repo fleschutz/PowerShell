@@ -18,13 +18,13 @@ try {
 	} else {
 		$path = [Environment]::GetFolderPath('DesktopDirectory')
 	}
-	if (Test-Path "$path" -pathType container) {
-		Set-Location "$path"
-		"📂$path"
-		exit 0 # success
+	if (-not(Test-Path "$path" -pathType container)) {
+		throw "No desktop folder at 📂$path"
 	}
-	throw "User's desktop folder at 📂$path doesn't exist (yet)"
+	Set-Location "$path"
+	"📂$path"
+	exit 0 # success
 } catch {
-	"⚠️ Error in line $($_.InvocationInfo.ScriptLineNumber): $($Error[0])"
+	"⚠️ Error: $($Error[0])"
 	exit 1
 }

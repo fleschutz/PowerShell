@@ -14,7 +14,9 @@
 
 try {
 	$path = Resolve-Path "~/Dropbox"
-	if (-not(Test-Path "$path" -pathType container)) { throw "No Dropbox folder at 📂$path - is Dropbox installed?"	}
+	if (-not(Test-Path "$path" -pathType container)) {
+		throw "No Dropbox folder at 📂$path - is Dropbox installed?"
+	}
 	Set-Location "$path"
 	"📂$path"
 	exit 0 # success

@@ -19,7 +19,7 @@ try {
 		$path = (New-Object -ComObject Shell.Application).NameSpace('shell:Downloads').Self.Path
 	}
 	if (-not(Test-Path "$path" -pathType container)) {
-		throw "User's downloads folder at 📂$path doesn't exist (yet)"
+		throw "No downloads folder at 📂$path"
 	}
 	Set-Location "$path"
 	$files = Get-ChildItem $path -attributes !Directory
@@ -27,6 +27,6 @@ try {
 	"📂$path entered (has $($files.Count) files and $($folders.Count) folders)"
 	exit 0 # success
 } catch {
-	"⚠️ Error in line $($_.InvocationInfo.ScriptLineNumber): $($Error[0])"
+	"⚠️ Error: $($Error[0])"
 	exit 1
 }

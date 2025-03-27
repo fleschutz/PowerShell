@@ -16,16 +16,16 @@ try {
 	if ($IsLinux) { throw "Sorry, Windows only" }
 
 	[string]$path = Resolve-Path -Path "~"
-	if (!(Test-Path "$path" -pathType container)) { throw "Home directory at $path doesn't exist (yet)" }
+	if (!(Test-Path "$path" -pathType container)) { throw "No home directory at $path" }
 
 	$path += "\AppData\Local\CrashDumps"
-	if (!(Test-Path "$path" -pathType container)) { throw "Crashdumps directory at $path doesn't exist (yet)" }
+	if (!(Test-Path "$path" -pathType container)) { throw "No crashdumps folder at $path" }
 	Set-Location "$Path"
 	$files = Get-ChildItem $path -attributes !Directory
 	$folders = Get-ChildItem $path -attributes Directory
 	"📂$path entered (has $($files.Count) files and $($folders.Count) folders)"
 	exit 0 # success
 } catch {
-	"⚠️ Error in line $($_.InvocationInfo.ScriptLineNumber): $($Error[0])"
+	"⚠️ Error: $($Error[0])"
 	exit 1
 }

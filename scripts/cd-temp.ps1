@@ -5,7 +5,7 @@
 	This PowerShell script changes the working directory to the temporary folder.
 .EXAMPLE
 	PS> ./cd-temp
-	📂C:\Users\Markus\AppData\Local\Temp
+	📂C:\Users\Markus\AppData\Local\Temp (has 2 files and 3 subfolders)
 .LINK
 	https://github.com/fleschutz/PowerShell
 .NOTES
@@ -21,11 +21,15 @@ function GetTempDir {
 
 try {
 	$path = GetTempDir
-	if (-not(Test-Path "$path" -pathType container)) { throw "Temporary folder at 📂$path doesn't exist (yet)" }
+	if (-not(Test-Path "$path" -pathType container)) { throw
+		"No temporary folder at $path"
+	}
 	Set-Location "$path"
-	"📂$path"
+	$files = Get-ChildItem $path -attributes !Directory
+	$folders = Get-ChildItem $path -attributes Directory
+	"📂$path entered (has $($files.Count) files and $($folders.Count) subfolders)"
 	exit 0 # success
 } catch {
-	"⚠️ Error in line $($_.InvocationInfo.ScriptLineNumber): $($Error[0])"
+	"⚠️ Error: $($Error[0])"
 	exit 1
 }

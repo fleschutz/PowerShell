@@ -19,12 +19,12 @@ try {
 		$path = Resolve-Path "$env:WINDIR\System32\drivers\etc"
 	}
 	if (-not(Test-Path "$path" -pathType container)) {
-		throw "/etc directory at 📂$path doesn't exist (yet)"
+		throw "No /etc directory at 📂$path"
 	}
 	Set-Location "$path"
 	"📂$path"
 	exit 0 # success
 } catch {
-	"⚠️ Error in line $($_.InvocationInfo.ScriptLineNumber): $($Error[0])"
+	"⚠️ Error: $($Error[0])"
 	exit 1
 }

@@ -33,6 +33,6 @@ try {
 	"📂$path entered (has $($files.Count) files and $($folders.Count) folders)"
 	exit 0 # success
 } catch {
-	"⚠️ Error in line $($_.InvocationInfo.ScriptLineNumber): $($Error[0])"
+	"⚠️ Error: $($Error[0])"
 	exit 1
 }

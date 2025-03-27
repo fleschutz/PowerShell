@@ -15,12 +15,12 @@
 try {
 	$path = [Environment]::GetFolderPath('Fonts')
 	if (-not(Test-Path "$path" -pathType container)) {
-		throw "Fonts folder at 📂$path doesn't exist (yet)"
+		throw "No fonts folder at 📂$path"
 	}
 	Set-Location "$path"
 	"📂$path"
 	exit 0 # success
 } catch {
-	"⚠️ Error in line $($_.InvocationInfo.ScriptLineNumber): $($Error[0])"
+	"⚠️ Error: $($Error[0])"
 	exit 1
 }

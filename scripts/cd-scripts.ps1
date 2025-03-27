@@ -14,12 +14,14 @@
 
 try {
 	$path = Resolve-Path "$PSScriptRoot"
-	if (-not(Test-Path "$path" -pathType container)) { throw "PowerShell scripts folder at 📂$path doesn't exist (yet)" }
+	if (-not(Test-Path "$path" -pathType container)) {
+		throw "No PowerShell scripts folder at 📂$path"
+	}
+	Set-Location "$path"
 	$files = Get-ChildItem $path -attributes !Directory
 	"📂$path entered (has $($files.Count) scripts)"
-	Set-Location "$path"
 	exit 0 # success
 } catch {
-	"⚠️ Error in line $($_.InvocationInfo.ScriptLineNumber): $($Error[0])"
+	"⚠️ Error: $($Error[0])"
 	exit 1
 }

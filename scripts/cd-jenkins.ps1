@@ -5,7 +5,7 @@
 	This PowerShell script changes the working directory to the Jenkins home directory.
 .EXAMPLE
 	PS> ./cd-jenkins
-	📂C:\Users\Markus\.jenkins
+	📂C:\Users\Markus\.jenkins entered (has 2 files and 21 folders)
 .LINK
 	https://github.com/fleschutz/PowerShell
 .NOTES
@@ -21,7 +21,9 @@ try {
 		throw "No Jenkins home directory found - is Jenkins installed?"
 	}
 	Set-Location "$path"
-	"📂$path"
+	$files = Get-ChildItem $path -attributes !Directory
+	$folders = Get-ChildItem $path -attributes Directory
+	"📂$path entered (has $($files.Count) files and $($folders.Count) folders)"
 	exit 0 # success
 } catch {
 	"⚠️ Error: $($Error[0])"
