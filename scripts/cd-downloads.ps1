@@ -5,7 +5,7 @@
 	This PowerShell script changes the working directory to the user's downloads folder.
 .EXAMPLE
 	PS> ./cd-downloads
-	📂C:\Users\Markus\Downloads
+	📂C:\Users\Markus\Downloads entered (has 0 files and 0 folders)
 .LINK
 	https://github.com/fleschutz/PowerShell
 .NOTES
@@ -24,7 +24,7 @@ try {
 	Set-Location "$path"
 	$files = Get-ChildItem $path -attributes !Directory
 	$folders = Get-ChildItem $path -attributes Directory
-	"📂$path (has $($files.Count) files and $($folders.Count) folders)"
+	"📂$path entered (has $($files.Count) files and $($folders.Count) folders)"
 	exit 0 # success
 } catch {
 	"⚠️ Error in line $($_.InvocationInfo.ScriptLineNumber): $($Error[0])"

@@ -5,7 +5,7 @@
 	This PowerShell script changes the working directory to the documents folder.
 .EXAMPLE
 	PS> ./cd-docs
-	📂C:\Users\Markus\Documents
+	📂C:\Users\Markus\Documents entered (has 3 files and 0 folders)
 .LINK
 	https://github.com/fleschutz/PowerShell
 .NOTES
@@ -22,7 +22,9 @@ try {
 		throw "Documents folder at 📂$path doesn't exist (yet)"
 	}
 	Set-Location "$path"
-	"📂$path"
+	$files = Get-ChildItem $path -attributes !Directory
+	$folders = Get-ChildItem $path -attributes Directory
+	"📂$path entered (has $($files.Count) files and $($folders.Count) folders)"
 	exit 0 # success
 } catch {
 	"⚠️ Error in line $($_.InvocationInfo.ScriptLineNumber): $($Error[0])"

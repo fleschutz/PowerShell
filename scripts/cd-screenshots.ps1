@@ -5,7 +5,7 @@
 	This PowerShell script changes the working directory to the user's screenshots folder.
 .EXAMPLE
 	PS> ./cd-screenshots
-	📂C:\Users\Markus\Pictures\Screenshots
+	📂C:\Users\Markus\Pictures\Screenshots (has 7 files and 0 folders)
 .LINK
 	https://github.com/fleschutz/PowerShell
 .NOTES
@@ -28,7 +28,9 @@ function GetScreenshotsFolder {
 try {
 	$path = GetScreenshotsFolder
 	Set-Location "$path"
-	"📂$path"
+	$files = Get-ChildItem $path -attributes !Directory
+	$folders = Get-ChildItem $path -attributes Directory
+	"📂$path entered (has $($files.Count) files and $($folders.Count) folders)"
 	exit 0 # success
 } catch {
 	"⚠️ Error in line $($_.InvocationInfo.ScriptLineNumber): $($Error[0])"

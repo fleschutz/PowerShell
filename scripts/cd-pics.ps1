@@ -5,7 +5,7 @@
 	This PowerShell script changes the working directory to the user's pictures folder.
 .EXAMPLE
 	PS> ./cd-pics
-	📂C:\Users\Markus\Pictures
+	📂C:\Users\Markus\Pictures entered (has 7 files and 0 folders)
 .LINK
 	https://github.com/fleschutz/PowerShell
 .NOTES
@@ -20,7 +20,9 @@ try {
 	}
 	if (-not(Test-Path "$path" -pathType container)) { throw "Pictures folder at 📂$path doesn't exist (yet)" }
 	Set-Location "$path"
-	"📂$path"
+	$files = Get-ChildItem $path -attributes !Directory
+	$folders = Get-ChildItem $path -attributes Directory
+	"📂$path entered (has $($files.Count) files and $($folders.Count) folders)"
 	exit 0 # success
 } catch {
 	"⚠️ Error in line $($_.InvocationInfo.ScriptLineNumber): $($Error[0])"
