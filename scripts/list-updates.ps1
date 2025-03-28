@@ -7,7 +7,7 @@
 	NOTE: Execute 'install-updates.ps1' to install the listed updates.
 .EXAMPLE
 	PS> ./list-updates.ps1
-	⏳ Querying updates from Microsoft Store...
+	⏳ Querying Microsoft Store updates...
 
 	Name               Id                    Version       Available
 	----------------------------------------------------------------
@@ -30,14 +30,14 @@ try {
 		throw "Sorry, MacOS not supported yet"
 	} else {
 		if (Get-Command winget -ErrorAction SilentlyContinue) {
-			Write-Host "`n⏳ Querying updates from Microsoft Store..." -foregroundColor green
+			Write-Host "`n⏳ Querying Microsoft Store updates..." -foregroundColor green
 			& winget upgrade --include-unknown --source=msstore
 
-			Write-Host "`n⏳ Querying updates from WinGet Store..." -foregroundColor green
+			Write-Host "`n⏳ Querying WinGet Store updates..." -foregroundColor green
 			& winget upgrade --include-unknown --source=winget
 		}
 		if (Get-Command choco -ErrorAction SilentlyContinue) {
-			Write-Host "`n⏳ Querying updates from Chocolatey..." -foregroundColor green
+			Write-Host "`n⏳ Querying Chocolatey updates..." -foregroundColor green
 			& choco outdated
 		}
 	}

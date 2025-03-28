@@ -11,7 +11,7 @@
 	✅ Swap space has 1GB free (2% of 1GB used)
 	✅ No pending system reboot
 
-	⏳ (2/2) Installing updates from winget and Microsoft Store...
+	⏳ (2/2) Updating Microsoft Store apps...
 	...
 .LINK
 	https://github.com/fleschutz/PowerShell
@@ -55,19 +55,19 @@ try {
 		& "$PSScriptRoot/check-pending-reboot.ps1"
 		Start-Sleep -seconds 3
 		""
-		"⏳ (2/4) Updating Windows Store apps..."
-		if (Get-Command winget -ErrorAction SilentlyContinue) {
+		"⏳ (2/4) Updating Microsoft Store apps..."
+		if (Get-Command winget -errorAction SilentlyContinue) {
 			& winget upgrade --all --source=msstore --include-unknown
 		}
 		""
-		"⏳ (3/4) Updating Chocolatey packages..."
-		if (Get-Command choco -ErrorAction SilentlyContinue) {
-			& choco upgrade all -y
+		"⏳ (3/4) Updating WinGet Store apps..."
+		if (Get-Command winget -errorAction SilentlyContinue) {
+			& winget upgrade --all --source=winget --include-unknown
 		}
 		""
-		"⏳ (4/4) Updating Winget packages..."
-		if (Get-Command winget -ErrorAction SilentlyContinue) {
-			& winget upgrade --all --source=winget --include-unknown
+		"⏳ (4/4) Updating Chocolatey packages..."
+		if (Get-Command choco -errorAction SilentlyContinue) {
+			& choco upgrade all -y
 		}
 	}
 	[int]$elapsed = $stopWatch.Elapsed.TotalSeconds
