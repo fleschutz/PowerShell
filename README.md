@@ -230,6 +230,7 @@ Mega Collection of PowerShell Scripts
 | Script                                                 | Description                                                                                              |
 | ------------------------------------------------------ | -------------------------------------------------------------------------------------------------------- |
 | [convert-csv2txt.ps1](scripts/convert-csv2txt.ps1)     | Converts a .CSV file to a text file. [Read more »](docs/convert-csv2txt.md)                              |
+| [convert-images2webp.ps1](scripts/convert-images2webp.ps1)        | Converts images in a directory or a single image file to WebP format in parallel. [More »](docs/convert-images2webp.md) |
 | [convert-mysql2csv.ps1](scripts/convert-mysql2csv.ps1) | Converts a MySQL database table to a .CSV file. [More »](docs/convert-mysql2csv.md)                 |
 | [convert-ps2bat.ps1](scripts/convert-ps2bat.ps1)       | Converts a PowerShell script to a Batch script. [More »](docs/convert-ps2bat.md)                    |
 | [convert-ps2md.ps1](scripts/convert-ps2md.ps1)         | Converts the comment-based help of a PowerShell script to Markdown. [More »](docs/convert-ps2md.md) |
