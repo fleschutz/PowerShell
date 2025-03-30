@@ -227,13 +227,20 @@ Mega Collection of PowerShell Scripts
 ♻️ Scripts to Convert Files
 ---------------------------
 
-| Script                                                 | Description                                                                                              |
-| ------------------------------------------------------ | -------------------------------------------------------------------------------------------------------- |
-| [convert-csv2txt.ps1](scripts/convert-csv2txt.ps1)     | Converts a .CSV file to a text file. [Read more »](docs/convert-csv2txt.md)                              |
-| [convert-images2webp.ps1](scripts/convert-images2webp.ps1)        | Converts images in a directory or a single image file to WebP format in parallel. [More »](docs/convert-images2webp.md) |
+| Script                                                 | Description                                                                                         |
+| ------------------------------------------------------ | --------------------------------------------------------------------------------------------------- |
+| [convert-csv2txt.ps1](scripts/convert-csv2txt.ps1)     | Converts a .CSV file to a text file. [Read more »](docs/convert-csv2txt.md)                         |
+| [convert-dir27z.ps1](scripts/convert-dir27z.ps1)       | Converts a directory tree to a compressed .7z file. [Read more »](docs/convert-dir27z.md)           |
+| [convert-dir2zip.ps1](scripts/convert-dir2zip.ps1)     | Converts a directory tree to a compressed .ZIP file. [Read more »](docs/convert-dir2zip.md)         |
+| [convert-history2ps1.ps1](scripts/convert-history2ps1.ps1) | Converts your command history to a PowerShell script. [Read more »](docs/convert-history2ps1.md) |
+| [convert-image2ascii.ps1](scripts/convert-image2ascii.ps1) | Converts images to ASCII art. [Read more »](docs/convert-image2ascii.md)                        |
+| [convert-images2webp.ps1](scripts/convert-images2webp.ps1) | Converts images in a directory or a single image file to WebP format in parallel. [More »](docs/convert-images2webp.md) |
 | [convert-mysql2csv.ps1](scripts/convert-mysql2csv.ps1) | Converts a MySQL database table to a .CSV file. [More »](docs/convert-mysql2csv.md)                 |
 | [convert-ps2bat.ps1](scripts/convert-ps2bat.ps1)       | Converts a PowerShell script to a Batch script. [More »](docs/convert-ps2bat.md)                    |
 | [convert-ps2md.ps1](scripts/convert-ps2md.ps1)         | Converts the comment-based help of a PowerShell script to Markdown. [More »](docs/convert-ps2md.md) |
+| [convert-md2docx.ps1](scripts/convert-md2docx.ps1)     | Converts Markdown file(s) to .DOCX format. [Read more »](docs/convert-md2docx.md)                   |
+| [convert-md2html.ps1](scripts/convert-md2html.ps1)     | Converts Markdown file(s) to HTML format. [Read more »](docs/convert-md2html.md)                    |
+| [convert-md2pdf.ps1](scripts/convert-md2pdf.ps1)       | Converts Markdown file(s) to PDF format. [Read more »](docs/convert-md2pdf.md)                      |
 | [convert-sql2csv.ps1](scripts/convert-sql2csv.ps1)     | Converts a SQL database table to a .CSV file. [More »](docs/convert-sql2csv.md)                     |
 | [convert-txt2wav.ps1](scripts/convert-txt2wav.ps1)     | Converts text to a .WAV audio file. [More »](docs/convert-txt2wav.md)                               |
 | [export-to-manuals.ps1](scripts/export-to-manuals.ps1) | Exports all scripts as manuals. [More »](docs/export-to-manuals.md)                                 |
