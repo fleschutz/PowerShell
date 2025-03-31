@@ -323,6 +323,7 @@ function List-CLI-Tools {
 	ListTool wsl		"--version"
 	ListTool xcopy		"--version"
 	ListTool yes		"--version"
+	ListTool zig		"--version"
 	ListTool zip		"--version"
 	ListTool zipcloak	"--version"
 	ListTool zipdetails	""
@@ -331,6 +332,7 @@ function List-CLI-Tools {
 	ListTool zipnote	""
 	ListTool zipsplit	""
 	ListTool zsh		"--version"
+	ListTool zvm		"--version"
 }
  
 try {
