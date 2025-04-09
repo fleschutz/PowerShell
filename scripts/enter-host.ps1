@@ -7,7 +7,7 @@
 	Specifies the remote hostname or IP address
 .EXAMPLE
 	PS> ./enter-host.ps1 tux
-	✅ tux is up and running (3ms latency).
+	✅ tux is online (3ms latency to 192.168.1.179)
 	⏳ Connecting as user 'markus' using OpenSSH_for_Windows_9.5p1, LibreSSL 3.8.2
 	markus@tux's password:
 	...
