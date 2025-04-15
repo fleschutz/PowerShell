@@ -3,8 +3,7 @@
 	Lists software updates
 .DESCRIPTION
 	This PowerShell script queries the latest available software updates for the
-	local machine and lists it.
-	NOTE: Execute 'install-updates.ps1' to install the listed updates.
+	local machine and lists it (for installation use 'install-updates.ps1').
 .EXAMPLE
 	PS> ./list-updates.ps1
 	⏳ Querying Microsoft Store updates...
@@ -21,24 +20,35 @@
 
 try {
 	if ($IsLinux) {
-		"⏳ (1/2) Querying package updates..."
-		& sudo apt update
-		& sudo apt list --upgradable
-		"⏳ (2/2) Querying Snap updates..."
-		& sudo snap refresh --list
+		if (Get-Command apt -ErrorAction SilentlyContinue) {
+			Write-Host "`n⏳ Querying APT package updates..." -foregroundColor green
+			& sudo apt update
+			& sudo apt list --upgradable
+		}
+		if (Get-Command snap -ErrorAction SilentlyContinue) {
+			Write-Host "`n⏳ Querying Snap updates..." -foregroundColor green
+			& sudo snap refresh --list
+		}
 	} elseif ($IsMacOS) {
-		throw "Sorry, MacOS not supported yet"
+		if (Get-Command brew -ErrorAction SilentlyContinue) {
+			Write-Host "`n⏳ Querying Homebrew updates..." -foregroundColor green
+			& brew outdated
+		}
 	} else {
 		if (Get-Command winget -ErrorAction SilentlyContinue) {
 			Write-Host "`n⏳ Querying Microsoft Store updates..." -foregroundColor green
 			& winget upgrade --include-unknown --source=msstore
 
-			Write-Host "`n⏳ Querying WinGet Store updates..." -foregroundColor green
+			Write-Host "`n⏳ Querying WinGet updates..." -foregroundColor green
 			& winget upgrade --include-unknown --source=winget
 		}
 		if (Get-Command choco -ErrorAction SilentlyContinue) {
 			Write-Host "`n⏳ Querying Chocolatey updates..." -foregroundColor green
 			& choco outdated
+		}
+		if (Get-Command scoop -ErrorAction SilentlyContinue) {
+			Write-Host "`n⏳ Querying Scoop updates..." -foregroundColor green
+			& scoop status
 		}
 	}
 	" "
