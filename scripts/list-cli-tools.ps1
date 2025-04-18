@@ -6,8 +6,8 @@
 .EXAMPLE
 	PS> ./list-cli-tools.ps1
 
-	TOOL      VERSION           INSTALLATION PATH
-	----      -------           -----------------
+	NAME      VERSION           PATH
+	----      -------           ----
 	arp       10.0.22621.4111   C:\Windows\system32\ARP.EXE (45K)
 	...
 .LINK
@@ -53,7 +53,7 @@ function ListTool([string]$Name, [string]$VersionArg) {
 		} else {
 			$Size = 0
 		}
-		New-Object PSObject -Property @{ 'TOOL'=$Name; 'VERSION'=$Version; 'INSTALLATION PATH'="$Path ($(Bytes2String $Size))" }
+		New-Object PSObject -Property @{ 'NAME'=$Name; 'VERSION'=$Version; 'PATH'="$Path ($(Bytes2String $Size))" }
 	} catch {
 		return
 	}
@@ -336,7 +336,7 @@ function List-CLI-Tools {
 }
  
 try {
-	List-CLI-Tools | Format-Table -property @{e='TOOL';width=15},@{e='VERSION';width=16},@{e='INSTALLATION PATH';width=90}
+	List-CLI-Tools | Format-Table -property @{e='NAME';width=15},@{e='VERSION';width=16},@{e='PATH';width=90}
 	exit 0 # success
 } catch {
 	"⚠️ Error in line $($_.InvocationInfo.ScriptLineNumber): $($Error[0])"
