@@ -9,7 +9,7 @@
 .LINK
         https://github.com/fleschutz/PowerShell
 .NOTES
-        Author: Markus Fleschutz | License: CC0
+        Author: Markus Fleschutz, Tyler MacInnis | License: CC0
 #>
 
 function Bytes2String { param([int64]$Bytes)
@@ -29,15 +29,17 @@ try {
 		# TODO
 	} else {
 		$Details = Get-WmiObject Win32_VideoController
-		$Model = $Details.Caption
-		$RAMSize = $Details.AdapterRAM
-		$ResWidth = $Details.CurrentHorizontalResolution
-		$ResHeight = $Details.CurrentVerticalResolution
-		$BitsPerPixel = $Details.CurrentBitsPerPixel
-		$RefreshRate = $Details.CurrentRefreshRate
-		$DriverVersion = $Details.DriverVersion
-		$Status = $Details.Status
-		Write-Host "✅ $Model GPU ($(Bytes2String $RAMSize) RAM, $($ResWidth)x$($ResHeight) pixels, $($BitsPerPixel)-bit, $($RefreshRate)Hz, driver $DriverVersion) - status $Status"
+		foreach ($GPU in $Details) {
+			$Model = $GPU.Caption
+			$RAMSize = $GPU.AdapterRAM
+			$ResWidth = $GPU.CurrentHorizontalResolution
+			$ResHeight = $GPU.CurrentVerticalResolution
+			$BitsPerPixel = $GPU.CurrentBitsPerPixel
+			$RefreshRate = $GPU.CurrentRefreshRate
+			$DriverVersion = $GPU.DriverVersion
+			$Status = $GPU.Status
+			Write-Host "✅ $Model GPU ($(Bytes2String $RAMSize) RAM, $($ResWidth)x$($ResHeight) pixels, $($BitsPerPixel)-bit, $($RefreshRate)Hz, driver $DriverVersion) - status $Status"
+		}
 	}
 	exit 0 # success
 } catch {
