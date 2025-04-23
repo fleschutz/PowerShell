@@ -13,13 +13,16 @@
 #>
 
 try {
-	if ($IsLinux) {
+	if ($IsLinux -or $IsMacOS) {
+		if (-not(Test-Path "~/Downloads" -pathType container)) {
+			throw "No downloads folder at ~/Downloads yet"
+		}
 		$path = Resolve-Path "~/Downloads"
 	} else {
 		$path = (New-Object -ComObject Shell.Application).NameSpace('shell:Downloads').Self.Path
-	}
-	if (-not(Test-Path "$path" -pathType container)) {
-		throw "No downloads folder at 📂$path"
+		if (-not(Test-Path "$path" -pathType container)) {
+			throw "No downloads folder at 📂$path"
+		}
 	}
 	Set-Location "$path"
 	$files = Get-ChildItem $path -attributes !Directory
