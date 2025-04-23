@@ -15,7 +15,7 @@
 try {
 	if ($IsLinux -or $IsMacOS) {
 		if (-not(Test-Path "~/Downloads" -pathType container)) {
-			throw "No downloads folder at ~/Downloads yet"
+			throw "No 📂Downloads folder in your home directory yet"
 		}
 		$path = Resolve-Path "~/Downloads"
 	} else {

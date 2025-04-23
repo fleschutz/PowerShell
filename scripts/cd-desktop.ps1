@@ -13,13 +13,16 @@
 #>
 
 try {
-	if ($IsLinux) {
+	if ($IsLinux -or $IsMacOS) {
+		if (-not(Test-Path "~/Desktop" -pathType container)) {
+			throw "No 📂Desktop folder in your home directory yet"
+		}
 		$path = Resolve-Path "~/Desktop"
 	} else {
 		$path = [Environment]::GetFolderPath('DesktopDirectory')
-	}
-	if (-not(Test-Path "$path" -pathType container)) {
-		throw "No desktop folder at 📂$path"
+		if (-not(Test-Path "$path" -pathType container)) {
+			throw "No desktop folder at 📂$path yet"
+		}
 	}
 	Set-Location "$path"
 	"📂$path"

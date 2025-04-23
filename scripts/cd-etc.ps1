@@ -5,7 +5,7 @@
 	This PowerShell script changes the working directory to the /etc directory.
 .EXAMPLE
 	PS> ./cd-etc
-	📂C:\Windows\System32\drivers\etc
+	📂C:\Windows\System32\drivers\etc (has 2 files and 3 subfolders)
 .LINK
 	https://github.com/fleschutz/PowerShell
 .NOTES
@@ -13,7 +13,7 @@
 #>
 
 try {
-	if ($IsLinx) {
+	if ($IsLinux -or $IsMacOS) {
 		$path = "/etc"
 	} else {
 		$path = Resolve-Path "$env:WINDIR\System32\drivers\etc"
@@ -22,7 +22,9 @@ try {
 		throw "No /etc directory at 📂$path"
 	}
 	Set-Location "$path"
-	"📂$path"
+	$files = Get-ChildItem $path -attributes !Directory
+	$folders = Get-ChildItem $path -attributes Directory
+	"📂$path entered (has $($files.Count) files and $($folders.Count) subfolders)"
 	exit 0 # success
 } catch {
 	"⚠️ Error: $($Error[0])"

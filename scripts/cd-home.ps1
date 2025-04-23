@@ -5,7 +5,7 @@
 	This PowerShell script changes the working directory to the user's home directory.
 .EXAMPLE
 	PS> ./cd-home.ps1
-	📂C:\Users\Markus entered (has 4 files and 7 folders)
+	📂C:\Users\Markus entered (has 4 files and 7 subfolders)
 .LINK
 	https://github.com/fleschutz/PowerShell
 .NOTES
@@ -13,12 +13,12 @@
 #>
 
 try {
+	if (-not(Test-Path "~" -pathType container)) { throw "No home directory at $path" }
 	$path = Resolve-Path "~"
-	if (-not(Test-Path "$path" -pathType container)) { throw "No home directory at $path" }
 	Set-Location "$path"
 	$files = Get-ChildItem $path -attributes !Directory
 	$folders = Get-ChildItem $path -attributes Directory
-	"📂$path entered (has $($files.Count) files and $($folders.Count) folders)"
+	"📂$path entered (has $($files.Count) files and $($folders.Count) subfolders)"
 	exit 0 # success
 } catch {
 	"⚠️ Error: $($Error[0])"

@@ -13,13 +13,16 @@
 #>
 
 try {
-	if ($IsLinux) {
+	if ($IsLinux -or $IsMacOS) {
+		if (-not(Test-Path "~/Documents" -pathType container)) {
+			throw "No 📂Documents folder in your home directory yet"
+		}
 		$path = Resolve-Path "~/Documents"
 	} else {
 		$path = [Environment]::GetFolderPath('MyDocuments')
-	}
-	if (-not(Test-Path "$path" -pathType container)) {
-		throw "No documents folder at 📂$path"
+		if (-not(Test-Path "$path" -pathType container)) {
+			throw "No documents folder at 📂$path yet"
+		}
 	}
 	Set-Location "$path"
 	$files = Get-ChildItem $path -attributes !Directory
