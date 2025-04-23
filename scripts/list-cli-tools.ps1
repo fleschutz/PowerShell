@@ -182,6 +182,7 @@ function List-CLI-Tools {
 	ListTool git		"--version"
 	ListTool gkill		"--version"
 	ListTool gmondump	"--version"
+	ListTool go		"version"
 	ListTool gpg		"--version"
 	ListTool gpg-agent	"--version"
 	ListTool gpgconf	"--version"
