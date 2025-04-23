@@ -307,6 +307,7 @@ function List-CLI-Tools {
 	ListTool uniq		"--version"
 	ListTool vi		"--version"
 	ListTool vim		"--version"
+	ListTool vlc		"--version"
 	ListTool vssadmin       "/?"
 	ListTool vulkaninfo	"--version"
 	ListTool w32tm		"/?"
