@@ -18,35 +18,33 @@
 
 function ListCryptoRate { param([string]$Symbol, [string]$Name)
 	$rates = (Invoke-WebRequest -URI "https://min-api.cryptocompare.com/data/price?fsym=$Symbol&tsyms=USD,EUR,CNY,JPY" -userAgent "curl" -useBasicParsing).Content | ConvertFrom-Json
-	New-Object PSObject -property @{ 'CRYPTOCURRENCY' = "1 $Name ($Symbol) ="; 'USD' = "$($rates.USD)"; 'EUR' = "$($rates.EUR)"; 'CNY' = "$($rates.CNY)"; 'JPY' = "$($rates.JPY)" }
+	New-Object PSObject -property @{ 'CRYPTOCURRENCY' = "1 $Symbol ($Name) ="; 'USD' = "$($rates.USD)"; 'EUR' = "$($rates.EUR)"; 'CNY' = "$($rates.CNY)"; 'JPY' = "$($rates.JPY)" }
 }
 
 function ListCryptoRates { 
-	ListCryptoRate BTC   "Bitcoin"
-	ListCryptoRate ETH   "Ethereum"
-	ListCryptoRate SOL   "Solana"
-	ListCryptoRate XRP   "XRP"
-	ListCryptoRate USDC  "USD Coin"
-	ListCryptoRate SUI   "Sui"
-	ListCryptoRate DOGE  "Dogecoin"
-	ListCryptoRate TRUMP "Official Trump"
-	ListCryptoRate USDT  "Tether"
-	ListCryptoRate BUSD  "BUSD"
-	ListCryptoRate AVAX  "Avalanche"
-	ListCryptoRate LTC   "Litecoin"
-	ListCryptoRate GALA  "Gala"
 	ListCryptoRate ADA   "Cardano"
-	ListCryptoRate BNB   "Binance Coin"
-	ListCryptoRate DOT   "Polkadot"
-	ListCryptoRate UNI   "Uniswap"
-	ListCryptoRate BUSD  "Binance USD"
+	ListCryptoRate AVAX  "Avalanche"
 	ListCryptoRate BCH   "Bitcoin Cash"
+	ListCryptoRate BNB   "Binance Coin"
+	ListCryptoRate BTC   "Bitcoin"
+	ListCryptoRate BUSD  "Binance USD"
+	ListCryptoRate DOGE  "Dogecoin"
+	ListCryptoRate DOT   "Polkadot"
+	ListCryptoRate GALA  "Gala"
+	ListCryptoRate ETH   "Ethereum"
 	ListCryptoRate LINK  "Chainlink"
+	ListCryptoRate LTC   "Litecoin"
 	ListCryptoRate LUNA  "Terra"
-	ListCryptoRate ICP   "Internet Computer"
-	ListCryptoRate WBTC  "Wrapped Bitcoin"
 	ListCryptoRate MATIC "Polygon"
+	ListCryptoRate SOL   "Solana"
+	ListCryptoRate SUI   "Sui"
+	ListCryptoRate TRUMP "Official Trump"
+	ListCryptoRate WBTC  "Wrapped Bitcoin"
 	ListCryptoRate XLM   "Stellar"
+	ListCryptoRate XRP   "XRP"
+	ListCryptoRate UNI   "Uniswap"
+	ListCryptoRate USDC  "USD Coin"
+	ListCryptoRate USDT  "Tether"
 }
 
 try {
