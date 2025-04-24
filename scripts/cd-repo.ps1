@@ -17,7 +17,7 @@
 param([string]$folderName = "")
 
 try {
-	if ("$folderName" -eq "") { $folderName = Read-Host "Enter the folder name of the Git repository" }
+	if ("$folderName" -eq "") { $folderName = Read-Host "Please enter the Git repository's folder name" }
 
 	if (Test-Path "~/Repos"              -pathType container) { $path = "~/Repos"
 	} elseif (Test-Path "~/repos"        -pathType container) { $path = "~/repos"
