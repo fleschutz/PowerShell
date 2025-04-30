@@ -378,7 +378,7 @@ try {
         } elseif ($IsMacOSEnv) {
             $packageName = "powershell-${release}-osx-${architecture}.tar.gz"
         }
-	Write-Host "         Latest release is $release for $architecture, package name is: $packageName"
+	Write-Host "         Latest release is $release for $architecture (package name: $packageName)"
 
         $downloadURL = "https://github.com/PowerShell/PowerShell/releases/download/v${release}/${packageName}"
         Write-Host "⏳ (2/5) Loading $downloadURL"
@@ -424,8 +424,8 @@ try {
                 Expand-ArchiveInternal -Path $packagePath -DestinationPath $contentPath
             }
         } else {
-            Write-Host "⏳ (3/5) Extracting package to $contentPath..."
-            tar zxf $packagePath -C $contentPath
+            Write-Host "⏳ (3/5) Extracting to $contentPath..."
+            & tar zxf $packagePath -C $contentPath
         }
     }
 
