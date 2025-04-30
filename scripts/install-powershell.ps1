@@ -438,18 +438,18 @@ try {
 	}
 
         if (Test-Path $Destination) {
-            Write-Host "⏳ (4/5) Copying files to $Destination... "
+            Write-Host "⏳ (5/5) Copying files to $Destination... "
             # only copy files as folders will already exist at $Destination
             Get-ChildItem -Recurse -Path "$contentPath" -File | ForEach-Object {
                 $DestinationFilePath = Join-Path $Destination $_.fullname.replace($contentPath, "")
                 Copy-Item $_.fullname -Destination $DestinationFilePath
             }
         } elseif ($IsWinEnv) {
-            Write-Host "⏳ (4/5) Moving new installation to $Destination... "
+            Write-Host "⏳ (5/5) Moving new installation to $Destination... "
             $null = New-Item -Path (Split-Path -Path $Destination -Parent) -ItemType Directory -ErrorAction SilentlyContinue
             Move-Item -Path $contentPath -Destination $Destination
         } else {
-            Write-Host "⏳ (4/5) Moving new installation to $Destination... "
+            Write-Host "⏳ (5/5) Moving new installation to $Destination... "
             & sudo mv "$contentPath" "$Destination"
 	}
     }
