@@ -7,7 +7,7 @@
 	Specifies the path to the XML file
 .EXAMPLE
 	PS> ./check-xml-file.ps1 myfile.xml
-	✅ Valid XML in 📄myfile.xml
+	✅ myfile.xml is valid XML
 .LINK
 	https://github.com/fleschutz/PowerShell
 .NOTES
@@ -34,7 +34,7 @@ try {
 	
 	if ($script:ErrorCount -gt 0) {	throw "Invalid XML" } 
 
-	"✅ Valid XML in 📄$path"
+	"✅ $path is valid XML"
 	exit 0 # success
 } catch {
 	"⚠️ $($Error[0]) in 📄$path"
