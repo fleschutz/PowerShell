@@ -6,7 +6,7 @@
 .EXAMPLE
 	PS> ./list-crypto-rates.ps1
 
-	CRYPTOCURRENCY               USD                    EUR                    CNY                    JPY
+	CRYPTOCURRENCY               US$                    €UR                    CN¥Y                    JPY
 	--------------               ---                    ---                    ---                    ---
 	1 Bitcoin (BTC) =            97309.81               94385.57               38800                  14798679.56
 	...
@@ -18,37 +18,37 @@
 
 function ListCryptoRate { param([string]$Symbol, [string]$Name)
 	$rates = (Invoke-WebRequest -URI "https://min-api.cryptocompare.com/data/price?fsym=$Symbol&tsyms=USD,EUR,CNY,JPY" -userAgent "curl" -useBasicParsing).Content | ConvertFrom-Json
-	New-Object PSObject -property @{ 'CRYPTOCURRENCY' = "1 $Symbol ($Name) ="; 'USD' = "$($rates.USD)"; 'EUR' = "$($rates.EUR)"; 'CNY' = "$($rates.CNY)"; 'JPY' = "$($rates.JPY)" }
+	New-Object PSObject -property @{ 'CRYPTOCURRENCY' = "1 $Name ($Symbol) ="; 'US$' = "$($rates.USD)"; '€' = "$($rates.EUR)"; 'CN¥' = "$($rates.CNY)"; 'JP¥' = "$($rates.JPY)" }
 }
 
 function ListCryptoRates { 
-	ListCryptoRate ADA   "Cardano"
 	ListCryptoRate AVAX  "Avalanche"
-	ListCryptoRate BCH   "Bitcoin Cash"
 	ListCryptoRate BNB   "Binance Coin"
 	ListCryptoRate BTC   "Bitcoin"
+	ListCryptoRate BCH   "Bitcoin Cash"
 	ListCryptoRate BUSD  "Binance USD"
+	ListCryptoRate ADA   "Cardano"
+	ListCryptoRate LINK  "Chainlink"
 	ListCryptoRate DOGE  "Dogecoin"
-	ListCryptoRate DOT   "Polkadot"
 	ListCryptoRate GALA  "Gala"
 	ListCryptoRate ETH   "Ethereum"
-	ListCryptoRate LINK  "Chainlink"
 	ListCryptoRate LTC   "Litecoin"
-	ListCryptoRate LUNA  "Terra"
+	ListCryptoRate TRUMP "Official Trump"
+	ListCryptoRate DOT   "Polkadot"
 	ListCryptoRate MATIC "Polygon"
 	ListCryptoRate SOL   "Solana"
-	ListCryptoRate SUI   "Sui"
-	ListCryptoRate TRUMP "Official Trump"
-	ListCryptoRate WBTC  "Wrapped Bitcoin"
 	ListCryptoRate XLM   "Stellar"
+	ListCryptoRate SUI   "Sui"
+	ListCryptoRate LUNA  "Terra"
+	ListCryptoRate USDT  "Tether"
+	ListCryptoRate WBTC  "Wrapped Bitcoin"
 	ListCryptoRate XRP   "XRP"
 	ListCryptoRate UNI   "Uniswap"
 	ListCryptoRate USDC  "USD Coin"
-	ListCryptoRate USDT  "Tether"
 }
 
 try {
-	ListCryptoRates | Format-Table -property @{e='CRYPTOCURRENCY';width=28},USD,EUR,CNY,JPY
+	ListCryptoRates | Format-Table -property @{e='CRYPTOCURRENCY';width=28},'US$','€','CN¥','JP¥'
 	Write-Host "(by https://www.cryptocompare.com • Crypto is volatile and unregulated • Capital at risk • Taxes may apply)"
 	exit 0 # success
 } catch {
