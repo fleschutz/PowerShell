@@ -46,7 +46,7 @@ try {
 	& mkdir $mediaFolder
 
 	"`n⏳ (5/5) Starting Calibre server as background process..."
-	& sudo calibre-server --port $port --num-per-page 100 --userdb $userDB --log $logfile --daemonize $mediaFolder
+	& sudo calibre-server --port $port --num-per-page 100 --userdb $userDB --log $logfile --disable-use-bonjour $mediaFolder &
 
 	[int]$elapsed = $stopWatch.Elapsed.TotalSeconds
 	"✅ Calibre server installed in $($elapsed)s."
