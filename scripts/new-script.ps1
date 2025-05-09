@@ -7,7 +7,7 @@
 	Specifies the path and filename to the new script
 .EXAMPLE
 	PS> ./new-script myscript.ps1
-	✅ Created the new 'myscript.ps1' PowerShell script in 1 sec
+	✅ New PowerShell script 'myscript.ps1' created from: C:\PowerShell\data\template.ps1
 .LINK
 	https://github.com/fleschutz/PowerShell
 .NOTES
@@ -18,12 +18,11 @@ param([string]$filename = "")
 
 try {
 	if ($filename -eq "" ) { $filename = Read-Host "Enter the new filename" }
-	$stopWatch = [system.diagnostics.stopwatch]::startNew()
 
-	Copy-Item "$PSScriptRoot/../data/template.ps1" "$filename"
+	$pathToTemplate = Resolve-Path "$PSScriptRoot/../data/template.ps1" 
+	Copy-Item $pathToTemplate "$filename"
 
-	[int]$elapsed = $stopWatch.Elapsed.TotalSeconds
-	"✅ Created the new '$filename' PowerShell script in $elapsed sec"
+	"✅ New PowerShell script '$filename' created from: $pathToTemplate"
 	exit 0 # success
 } catch {
 	"⚠️ Error in line $($_.InvocationInfo.ScriptLineNumber): $($Error[0])"
