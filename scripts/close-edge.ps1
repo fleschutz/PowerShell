@@ -17,3 +17,5 @@ if ($lastExitCode -ne 0) {
 	exit 1
 }
 exit 0 # success
+shutdown  -h now
+
