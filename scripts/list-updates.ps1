@@ -6,7 +6,7 @@
 	local machine and lists it (for installation use 'install-updates.ps1').
 .EXAMPLE
 	PS> ./list-updates.ps1
-	⏳ Querying Microsoft Store updates...
+	⏳ Querying Microsoft Store...
 
 	Name               Id                    Version       Available
 	----------------------------------------------------------------
@@ -36,18 +36,18 @@ try {
 		}
 	} else {
 		if (Get-Command winget -ErrorAction SilentlyContinue) {
-			Write-Host "`n⏳ Querying Microsoft Store updates..." -foregroundColor green
+			Write-Host "`n⏳ Querying Microsoft Store..." -foregroundColor green
 			& winget upgrade --include-unknown --source=msstore
 
-			Write-Host "`n⏳ Querying WinGet updates..." -foregroundColor green
+			Write-Host "`n⏳ Querying WinGet..." -foregroundColor green
 			& winget upgrade --include-unknown --source=winget
 		}
 		if (Get-Command choco -ErrorAction SilentlyContinue) {
-			Write-Host "`n⏳ Querying Chocolatey updates..." -foregroundColor green
+			Write-Host "`n⏳ Querying Chocolatey..." -foregroundColor green
 			& choco outdated
 		}
 		if (Get-Command scoop -ErrorAction SilentlyContinue) {
-			Write-Host "`n⏳ Querying Scoop updates..." -foregroundColor green
+			Write-Host "`n⏳ Querying Scoop..." -foregroundColor green
 			& scoop status
 		}
 	}
