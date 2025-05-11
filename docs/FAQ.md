@@ -144,7 +144,7 @@ Want to use the PowerShell scripts everywhere on the command-line? Then you need
 
 <details><summary>Where to find even more scripts?</summary>
 
-* [https://www.scriptshare.io/](ScriptShare.io) - ScriptShare is an evergrowing library of scripts and automations.
+* [ScriptShare.io](https://www.scriptshare.io/) - ScriptShare is an evergrowing library of scripts and automations.
 </details>
 
 
