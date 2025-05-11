@@ -142,9 +142,9 @@ Want to use the PowerShell scripts everywhere on the command-line? Then you need
 * **For Windows Terminal:** open Settings > Profiles > Windows PowerShell > Command line and add " -nologo".
 </details>
 
-<details><summary>Where to find more PowerShell scripts?</summary>
+<details><summary>Where to find even more scripts?</summary>
 
-* [https://www.sharescripts.io](ShareScripts.io) 
+* [https://www.scriptshare.io/](ScriptShare.io) - ScriptShare is an evergrowing library of scripts and automations.
 </details>
 
 
