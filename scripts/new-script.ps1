@@ -2,29 +2,30 @@
 .SYNOPSIS
 	Creates a new PowerShell script
 .DESCRIPTION
-	This PowerShell script creates a new PowerShell script file by using the template file ../data/template.ps1.
-.PARAMETER filename
-	Specifies the path and filename to the new script
+	This PowerShell script creates a new PowerShell script file by using the template file at: ../data/templates/PowerShell.ps1.
+.PARAMETER path
+	Specifies the path and new filename
 .EXAMPLE
-	PS> ./new-script myscript.ps1
-	✅ New PowerShell script 'myscript.ps1' created from: C:\PowerShell\data\template.ps1
+	PS> ./new-script.ps1 bot.ps1
+	✅ New PowerShell script 'bot.ps1' created from template 'PowerShell.ps1'.
 .LINK
 	https://github.com/fleschutz/PowerShell
 .NOTES
 	Author: Markus Fleschutz | License: CC0
 #>
 
-param([string]$filename = "")
+param([string]$path = "")
 
 try {
-	if ($filename -eq "" ) { $filename = Read-Host "Enter the new filename" }
+	if ($path -eq "" ) { $path = Read-Host "Enter the new filename" }
 
-	$pathToTemplate = Resolve-Path "$PSScriptRoot/../data/template.ps1" 
-	Copy-Item $pathToTemplate "$filename"
+	$pathToTemplate = Resolve-Path "$PSScriptRoot/../data/templates/PowerShell.ps1" 
+	Copy-Item $pathToTemplate "$path"
+	if ($lastExitCode -ne 0) { throw "Can't copy to: $path" }
 
-	"✅ New PowerShell script '$filename' created from: $pathToTemplate"
+	"✅ New PowerShell script '$path' created from template 'PowerShell.ps1'."
 	exit 0 # success
 } catch {
-	"⚠️ Error in line $($_.InvocationInfo.ScriptLineNumber): $($Error[0])"
+	"⚠️ Error: $($Error[0])"
 	exit 1
 }
