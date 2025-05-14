@@ -23,14 +23,15 @@
 param([string]$textPattern = "", [string]$filePattern = "")
 
 function ListLocations { param([string]$textPattern, [string]$filePattern)
+	$files = Get-Item $filePattern
 	$list = Select-String -path $filePattern -pattern "$textPattern" 
 	foreach($item in $list) { New-Object PSObject -Property @{ 'FILE'="$($item.Path)"; 'LINE'="$($item.LineNumber):$($item.Line)" }	}
-	"✅ Found $($list.Count) lines containing '$textPattern' in $filePattern."
+	"✅ Found $($list.Count) lines in $($files.Count) files containing '$textPattern'."
 }
 
 try {
-	if ($textPattern -eq "" ) { $textPattern = Read-Host "Enter the text pattern, e.g. 'UFO'" }
-	if ($filePattern -eq "" ) { $filePattern = Read-Host "Enter the file pattern, e.g. '*.ps1'" }
+	if ($textPattern -eq "" ) { $textPattern = Read-Host "Enter the text pattern (e.g. ALIEN)" }
+	if ($filePattern -eq "" ) { $filePattern = Read-Host "Enter the file pattern (e.g. *.txt)" }
 
 	ListLocations $textPattern $filePattern | Format-Table -property FILE,LINE -autoSize
 	exit 0 # success
