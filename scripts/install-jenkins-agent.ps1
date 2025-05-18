@@ -11,28 +11,29 @@
         Author: Markus Fleschutz | License: CC0
 #>
 
-param([string]$installDir = "/opt/jenkins-agent", [string]$jenkinsURL = "http://tux:8080", [string]$secretKey = "")
+param([string]$installDir = "/opt/jenkins-agent", [string]$jenkinsURL = "", [string]$secretKey = "")
 
 try {
+	"`n⏳ (1/5) Asking for details..."
 	if ($jenkinsURL -eq "") { $jenkinsURL = Read-Host "Enter the URL to the Jenkins controller" }
 	if ($secretKey -eq "")  { $secretKey  = Read-Host "Enter the secret key" }
 	
 	 $stopWatch = [system.diagnostics.stopwatch]::startNew() 
-	"`n⏳ (1/4) Installing Java Runtime Environment (JRE)..."
+	"`n⏳ (2/5) Installing Java Runtime Environment (JRE)..."
 	& sudo apt install default-jre
 
-	"`n⏳ (2/4) Creating installation folder at: $installDir ... (if non-existent)"
+	"`n⏳ (3/5) Creating installation folder at: $installDir ... (if non-existent)"
 	& mkdir $installDir
 	& cd $installDir
 
-	"`n⏳ (3/4) Loading current .JAR program from Jenkins controller..."
+	"`n⏳ (4/5) Downloading Jenkins agent .JAR program from Jenkins controller..."
 	& curl -sO $jenkinsURL/jnlpJars/agent.jar
 
-	"`n⏳ (4/4) Starting Jenkins agent ..."
-	& java -jar agent.jar -url $jenkinsURL -secret $secretKey -name pi -webSocket -workDir $installDir
+	"`n⏳ (5/5) Starting Jenkins agent ..."
+	& nohup java -jar agent.jar -url $jenkinsURL -secret $secretKey -name pi -webSocket -workDir $installDir &
 
 	[int]$elapsed = $stopWatch.Elapsed.TotalSeconds
-    "✅ Jenkins Agent installed successfully in $($elapsed)s."
+	"✅ Jenkins Agent installed successfully in $($elapsed)s."
 	exit 0 # success
 } catch {
     "⚠️ Error in line $($_.InvocationInfo.ScriptLineNumber): $($Error[0])"
