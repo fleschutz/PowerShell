@@ -1,4 +1,4 @@
-<#
+﻿<#
 .SYNOPSIS
         Installs the Jenkins Agent
 .DESCRIPTION
@@ -14,6 +14,10 @@
 param([string]$installDir = "/opt/jenkins-agent", [string]$jenkinsURL = "http://tux:8080", [string]$secretKey = "")
 
 try {
+	if ($jenkinsURL -eq "") { $jenkinsURL = Read-Host "Enter the URL to the Jenkins controller" }
+	if ($secretKey -eq "")  { $secretKey  = Read-Host "Enter the secret key" }
+	
+	 $stopWatch = [system.diagnostics.stopwatch]::startNew() 
 	"`n⏳ (1/4) Installing Java Runtime Environment (JRE)..."
 	& sudo apt install default-jre
 
@@ -27,8 +31,10 @@ try {
 	"`n⏳ (4/4) Starting Jenkins agent ..."
 	& java -jar agent.jar -url $jenkinsURL -secret $secretKey -name pi -webSocket -workDir $installDir
 
+	[int]$elapsed = $stopWatch.Elapsed.TotalSeconds
+    "✅ Jenkins Agent installed successfully in $($elapsed)s."
 	exit 0 # success
 } catch {
-        "⚠️ Error in line $($_.InvocationInfo.ScriptLineNumber): $($Error[0])"
-        exit 1
+    "⚠️ Error in line $($_.InvocationInfo.ScriptLineNumber): $($Error[0])"
+    exit 1
 }
