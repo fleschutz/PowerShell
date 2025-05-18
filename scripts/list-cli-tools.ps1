@@ -288,6 +288,7 @@ function List-CLI-Tools {
 	ListTool strings	"--version"
 	ListTool strip		"--version"
 	ListTool sudo		"--version"
+	ListTool syncthing	"--version"
 	ListTool systeminfo	""
 	ListTool tail		"--version"
 	ListTool tar		"--version"

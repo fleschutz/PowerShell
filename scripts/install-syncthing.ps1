@@ -6,7 +6,7 @@
 	Syncthing is a continuous file synchronization program. See https://syncthing.net for details.
 .EXAMPLE
 	PS> ./install-syncthing.ps1
-	⏳ Installing Syncthing...
+	⏳ Installing Syncthing from WinGet...
 	...
 .LINK
 	Author: Markus Fleschutz | License: CC0
@@ -15,20 +15,24 @@
 #>
 
 try {
-	"⏳ Installing Syncthing..."
 	$stopWatch = [system.diagnostics.stopwatch]::startNew()
 
 	if ($IsLinux) {
+		"⏳ Installing Syncthing..."
 		& sudo apt install syncthing
 	} else {
-		& winget install --id Syncthing.Syncthing
+		"⏳ Installing Syncthing from WinGet..."
+		& winget install --id Syncthing.Syncthing --accept-package-agreements --accept-source-agreements
+
+		"⏳ Starting Syncthing as daemon..."
+		Start-Process -NoNewWindow "$env:LOCALAPPDATA\Microsoft\WinGet\Links\syncthing.exe"
 	}
 	[int]$elapsed = $stopWatch.Elapsed.TotalSeconds
 	"✅ Syncthing installed successfully in $($elapsed)s."
-	"   Adming GUI at: http://127.0.0.1:8384 (use <Ctrl> <click>)"
-	"   Your sync folder is at: ~/Sync/"
+	"   Web interface:  http://127.0.0.1:8384  (open by: <Ctrl> <click>)"
+	"   Sync folder at: ~/Sync/                (execute: cd-sync.ps1)"
 	exit 0 # success
 } catch {
-	"⚠️ Error in line $($_.InvocationInfo.ScriptLineNumber): $($Error[0])"
+	"⚠️ Error: $($Error[0])"
 	exit 1
 }
