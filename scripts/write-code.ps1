@@ -40,7 +40,7 @@ function GetRandomCodeLine {
 	14 { return $Tabs + "return 0" }
 	15 { return $Tabs + "Write-Progress `"Working...`" " }
 	16 { return $Tabs + "[bool]`$keepAlive = `$true" }
-	17 { return $Tabs + "# Copyright © 2023 write-code.ps1. All Rights Reserved." }
+	17 { return $Tabs + "# Copyright © 2025 by write-code.ps1. All Rights Reserved." }
 	18 { $global:Tabs = "        "; return "for ([int]`$i = 0; `$i -lt 42; `$i++) {" }
 	19 { return $Tabs + "`$stopWatch = [system.diagnostics.stopwatch]::startNew()" }
 	20 { return $Tabs + "[int]`$elapsed = `$stopWatch.Elapsed.TotalSeconds" }
@@ -58,6 +58,9 @@ function GetRandomCodeLine {
 }
 
 try {
+	Write-Host -foreground $color "#"
+	Write-Host -foreground $color "# Copyright © 2025 by AI. All Rights Reserved."
+	Write-Host -foreground $color "#"
 	while ($true) {
 		Write-Host -foreground $color "$(GetRandomCodeLine)"
 		Start-Sleep -milliseconds $speed
