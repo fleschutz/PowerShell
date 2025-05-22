@@ -67,6 +67,8 @@ Operators
 $a = 2                                                    # Basic variable assignment operator
 $a += 1                                                   # Incremental assignment operator
 $a -= 1                                                   # Decrement assignment operator
+$a++                                                      # Incremental assignment operator
+$a--                                                      # Decrement assignment operator
 
 $a -eq 0                                                  # Equality comparison operator
 $a -ne 5                                                  # Not-equal comparison operator
@@ -326,3 +328,12 @@ $Params = @{
 }
 Invoke-RestMethod @Params                                   # Call a REST API, using the HTTP GET method
 ```
+
+More Help
+---------
+* PowerShell documentation: https://docs.microsoft.com/en-us/powershell
+* Tutorial: https://www.guru99.com/powershell-tutorial.html
+* Video tutorials: https://www.youtube.com/results?search_query=PowerShell
+* FAQ's: https://github.com/fleschutz/PowerShell/blob/main/docs/FAQ.md
+* 500+ sample scripts: https://github.com/fleschutz/PowerShell
+
