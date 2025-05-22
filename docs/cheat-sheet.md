@@ -329,8 +329,8 @@ $Params = @{
 Invoke-RestMethod @Params                                   # Call a REST API, using the HTTP GET method
 ```
 
-More Help
----------
+Useful Links
+------------
 * PowerShell documentation: https://docs.microsoft.com/en-us/powershell
 * Tutorial: https://www.guru99.com/powershell-tutorial.html
 * Video tutorials: https://www.youtube.com/results?search_query=PowerShell
