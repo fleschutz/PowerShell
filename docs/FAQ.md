@@ -96,12 +96,13 @@
 
  <details><summary>How to get the ultimate PowerShell experience?</summary>
 
-1. **Install *PowerShell* (free) on all your Linux/Mac OS/Windows machines and configure it as your default shell.**
-2. **Install an *SSH client & server* (free) on all your Linux/Mac OS/Windows machines for remote control via SSH.**
-3. **Install *Windows Terminal* (free) on Windows with 50% transparency, font 'Fira Code' and no PowerShell banner message.**
-4. **Install *Visual Studio Code* (free) with plugin 'PowerShell' to edit PowerShell scripts.**
-5. **Install this *Mega Collection of PowerShell scripts* and set the PATH environment variable to it.**
-6. **Use an own PowerShell profile, e.g. execute: './update-powershell-profile.ps1'**
+1. **Install *PowerShell* (free)** on all your Linux/Mac OS/Windows machines and configure it as your default shell.
+2. **Install *SSH client & server* (free)** on all your Linux/Mac OS/Windows machines for remote control via SSH.
+3. **Install *Windows Terminal* (free)** on Windows with 50% transparency, font 'Fira Code' and no PowerShell banner message.
+4. **Install *Visual Studio Code* (free)** with plugin 'PowerShell' to edit PowerShell scripts.
+5. **Install this GitHub repo** and set the PATH environment variable to the 📂scripts subfolder.
+6. **Set an own PowerShell profile,** e.g. by executing: './update-powershell-profile.ps1'.
+7. **For Jenkins** install the *PowerShell plugin* and use PowerShell in your Jenkins jobs.
 </details>
 
 
