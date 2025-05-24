@@ -2,9 +2,10 @@
 .SYNOPSIS
 	Builds a repo
 .DESCRIPTION
-	This PowerShell script builds a Git repository by supporting the build systems: autogen, cmake, configure, Gradle, Imakefile, Makefile, and Meson.
+	This PowerShell script builds a Git repository by supporting the following build
+	systems: autogen, cargo, cmake, configure, Gradle, Imakefile, Makefile, and Meson.
 .PARAMETER path
-	Specifies the path to the Git repository (current working directory by default)
+	Specifies the file path to the Git repository (default: current working directory)
 .EXAMPLE
 	PS> ./build-repo.ps1 C:\Repos\ninja
 	⏳ Building 📂ninja by using CMake...
@@ -39,6 +40,13 @@ function BuildFolder([string]$path) {
 		"⏳ (4/4) Executing 'ctest -V'... (if tests are provided)"
 		& ctest -V
 		if ($lastExitCode -ne 0) { throw "Executing 'ctest -V' failed with exit code $lastExitCode" }
+	} elseif (Test-Path "$path/.cargo/release.toml" -pathType leaf) { 
+		"⏳ (1/4) Building 📂$dirName by using Cargo..."
+		Set-Location "$path/"
+
+		& cargo build --config .cargo/release.toml --release
+		if ($lastExitCode -ne 0) { throw "Executing 'cargo build' failed with exit code $lastExitCode" }
+
 	} elseif (Test-Path "$path/autogen.sh" -pathType leaf) { 
 		"⏳ Building 📂$dirName by executing 'autogen.sh'..."
 		Set-Location "$path/"
