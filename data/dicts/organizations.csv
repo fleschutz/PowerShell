@@ -12,7 +12,7 @@ AT&T,American Telephone and Telegraph Company
 ATF,"Alcohol, Tobacco, Firearms and Explosives Bureau (USA)"
 BMW,Bavarian Motor Works
 BND,Bundesnachrichtendienst (Germany)
-BVD, Bradley, Voorhees, and Day
+BVD,"Bradley, Voorhees, and Day"
 CERN,European Organization for Nuclear Research
 CIA,Central Intelligence Agency (USA)
 CISA,Cybersecurity Insurance and Security Agency (USA)
@@ -33,18 +33,18 @@ DOT,Department of Transportation (USA)
 EASA,European Aviation Safety Agency
 ED,U.S. Department of Education
 ESA,European Space Agency
-ESPN, Entertainment and Sports Programming Network
+ESPN,Entertainment and Sports Programming Network
 FAO,Food and Agriculture Organization
 FBI,Federal Bureau of Investigation (USA)
 FDA,Food and Drug Administration (USA)
 FIFA,Fédération Internationale de Football Association
-GEICO, Government Employees Insurance Company
-H&M, Hennes and Mauritz
+GEICO,Government Employees Insurance Company
+H&M,Hennes and Mauritz
 HHS,U.S. Department of Health and Human Services
 HRW,Human Rights Watch
-HSBC, Hongkong and Shanghai Banking Corporation
+HSBC,Hongkong and Shanghai Banking Corporation
 HUD,U.S. Department of Housing and Urban Development
-IBM, International Business Machines
+IBM International Business Machines
 ICC,International Cricket Council
 ICI,Imperial Chemical Industries
 ICJ,International Court of Justice
@@ -53,11 +53,11 @@ IMO,International Maritime Organization
 IOC,International Olympic Committee
 ISO,International Organization for Standardization
 J&J,Johnson & Johnson
-JBL, James Bullough Lansing
-L.L. Bean, Leon Leonwood Bean
+JBL,James Bullough Lansing
+L.L. Bean,Leon Leonwood Bean
 LAPD,Los Angeles Police Department
 LBA,Luftfahrtbundesamt (German aviation agency)
-M&M, Mars & Murrie’s
+M&M,Mars & Murrie’s
 MILF,Moro Islamic Liberation Front
 NASA,National Aeronautics and Space Administration
 NATO,North Atlantic Treaty Organization
@@ -83,9 +83,8 @@ UNIDO,United Nations Industrial Development Organization
 UNO,United Nations Organization
 USDA,United States Department of Agriculture
 UPS,United Parcel Service
-USSF,"United States Soccer Federation, governing body of soccer in the United States"
-USSF,"United States Social Forum, an activist organization"
-USSF,"US Sumo Federation, governing body of sumo in the United States"
+USIP,United States Institute of Peace
+USSF,"United States Soccer Federation, US Social Forum, US Sumo Federation"
 VA,U.S. Department of Veterans Affairs
 VW,Volkswagen
 WEF,World Economic Forum
@@ -93,6 +92,6 @@ WHO,World Health Organization
 WIPO,World Intellectual Property Organization
 WMO,World Meteorological Organization
 WWF,World Wide Fund for Nature
-YKK, Yoshida Manufacturing Corporation
+YKK,Yoshida Manufacturing Corporation
 YMCA,Young Men's Christian Association
 YWCA,Young Women's Christian Association
