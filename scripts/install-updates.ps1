@@ -7,11 +7,10 @@
 .EXAMPLE
 	PS> ./install-updates.ps1
 	⏳ (1/2) Checking update requirements...
-	✅ Drive C: has 441 GB free (56% of 1TB used)
-	✅ Swap space has 1GB free (2% of 1GB used)
-	✅ No pending system reboot
+	✅ Drive C: uses 56% of 1TB: 441GB free
+	✅ Swap space uses 22% of 4GB: 3GB free
 
-	⏳ (2/2) Updating Microsoft Store apps...
+	⏳ (2/2) Checking Microsoft Store for updates...
 	...
 .LINK
 	https://github.com/fleschutz/PowerShell
@@ -28,7 +27,6 @@ try {
 		& "$PSScriptRoot/check-smart-devices.ps1"
 		& "$PSScriptRoot/check-drive-space.ps1" /
 		& "$PSScriptRoot/check-swap-space.ps1"
-		& "$PSScriptRoot/check-pending-reboot.ps1"
 		Start-Sleep -seconds 3
 		""
 		"⏳ (2/5) Querying latest package information..."
@@ -52,24 +50,24 @@ try {
 		& "$PSScriptRoot/check-smart-devices.ps1"
 		& "$PSScriptRoot/check-drive-space.ps1" C
 		& "$PSScriptRoot/check-swap-space.ps1"
-		& "$PSScriptRoot/check-pending-reboot.ps1"
 		Start-Sleep -seconds 3
 		""
-		"⏳ (2/4) Updating Microsoft Store apps..."
+		"⏳ (2/4) Checking Microsoft Store for updates..."
 		if (Get-Command winget -errorAction SilentlyContinue) {
 			& winget upgrade --all --source=msstore --include-unknown
 		}
 		""
-		"⏳ (3/4) Updating WinGet Store apps..."
+		"⏳ (3/4) Checking WinGet for updates..."
 		if (Get-Command winget -errorAction SilentlyContinue) {
 			& winget upgrade --all --source=winget --include-unknown
 		}
 		""
-		"⏳ (4/4) Updating Chocolatey packages..."
+		"⏳ (4/4) Checking Chocolatey for updates..."
 		if (Get-Command choco -errorAction SilentlyContinue) {
 			& choco upgrade all -y
 		}
 	}
+	& "$PSScriptRoot/check-pending-reboot.ps1"
 	[int]$elapsed = $stopWatch.Elapsed.TotalSeconds
 	"✅ Updates installed in $($elapsed)s."
 	exit 0 # success

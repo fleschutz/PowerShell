@@ -55,7 +55,7 @@ try {
 		Write-Output "✅ Swap space has $(MB2String $total) reserved."
 	} else {
 		[int64]$percent = ($used * 100) / $total
-		Write-Output "✅ Swap space at $(MB2String $used) ($percent%) of $(MB2String $total)."
+		Write-Output "✅ Swap space uses $percent% of $(MB2String $total): $(MB2String $free) free"
 	}
 	exit 0 # success
 } catch {
