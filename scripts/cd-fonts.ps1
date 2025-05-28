@@ -5,7 +5,7 @@
 	This PowerShell script changes the working directory to the fonts folder.
 .EXAMPLE
 	PS> ./cd-fonts
-	📂C:\Windows\Fonts (has 2 file and 3 subfolders)
+	📂C:\Windows\Fonts (has 12 fonts and 0 folders)
 .LINK
 	https://github.com/fleschutz/PowerShell
 .NOTES
@@ -15,12 +15,12 @@
 try {
 	$path = [Environment]::GetFolderPath('Fonts')
 	if (-not(Test-Path "$path" -pathType container)) {
-		throw "No fonts folder at 📂$path"
+		throw "No fonts folder at: $path"
 	}
 	Set-Location "$path"
 	$files = Get-ChildItem $path -attributes !Directory
 	$folders = Get-ChildItem $path -attributes Directory
-	"📂$path entered (has $($files.Count) files and $($folders.Count) subfolders)"
+	"📂$path entered (has $($files.Count) fonts and $($folders.Count) folders)"
 	exit 0 # success
 } catch {
 	"⚠️ Error: $($Error[0])"
