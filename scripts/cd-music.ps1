@@ -4,8 +4,8 @@
 .DESCRIPTION
 	This PowerShell script changes the working directory to the user's music folder.
 .EXAMPLE
-	PS> ./cd-music
-	📂C:\Users\Markus\Music entered (has 3 folders and 0 files)
+	PS> ./cd-music.ps1
+	📂C:\Users\Markus\Music with 3 folders and 0 files entered.
 .LINK
 	https://github.com/fleschutz/PowerShell
 .NOTES
@@ -15,7 +15,7 @@
 try {
 	if ($IsLinux) {
 		if (-not(Test-Path "~/Music/" -pathType container)) {
-			throw "No music folder at ~/Music/"
+			throw "No 'Music' folder in home directory"
 		}
 		$path = Resolve-Path "~/Music"
 	} else {
@@ -25,9 +25,9 @@ try {
 		}
 	}
 	Set-Location "$path"
-	$files = Get-ChildItem $path -attributes !Directory
 	$folders = Get-ChildItem $path -attributes Directory
-	"📂$path entered (has $($folders.Count) folders and $($files.Count) files)"
+	$files = Get-ChildItem $path -attributes !Directory
+	"📂$path with $($folders.Count) folders and $($files.Count) files entered."
 	exit 0 # success
 } catch {
 	"⚠️ Error: $($Error[0])"

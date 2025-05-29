@@ -5,7 +5,7 @@
 	This PowerShell script changes the working directory to the PowerShell scripts folder.
 .EXAMPLE
 	PS> ./cd-scripts.ps1
-	📂C:\Repos\PowerShell\scripts entered (has 645 scripts)
+	📂C:\Repos\PowerShell\scripts with 655 scripts entered.
 .LINK
 	https://github.com/fleschutz/PowerShell
 .NOTES
@@ -14,12 +14,10 @@
 
 try {
 	$path = Resolve-Path "$PSScriptRoot"
-	if (-not(Test-Path "$path" -pathType container)) {
-		throw "No PowerShell scripts folder at 📂$path"
-	}
+	if (-not(Test-Path "$path" -pathType container)) { throw "No scripts folder at: $path" }
 	Set-Location "$path"
 	$files = Get-ChildItem $path -attributes !Directory
-	"📂$path entered (has $($files.Count) scripts)"
+	"📂$path with $($files.Count) scripts entered."
 	exit 0 # success
 } catch {
 	"⚠️ Error: $($Error[0])"
