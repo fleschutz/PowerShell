@@ -1,11 +1,11 @@
 ﻿<#
 .SYNOPSIS
-	Sets the working directory to the user's pictures folder
+	Sets the working dir to the user's pictures folder
 .DESCRIPTION
-	This PowerShell script changes the working directory to the user's pictures folder.
+	This PowerShell script sets the current working directory to the user's pictures folder.
 .EXAMPLE
-	PS> ./cd-pics
-	📂C:\Users\Markus\Pictures entered (has 7 files and 0 subfolders)
+	PS> ./cd-pics.ps1
+	📂C:\Users\Markus\Pictures with 7 files and 0 folders entered.
 .LINK
 	https://github.com/fleschutz/PowerShell
 .NOTES
@@ -14,17 +14,20 @@
 
 try {
 	if ($IsLinux) {
+		if (-not(Test-Path "~/Pictures" -pathType container)) {
+			throw "No 'Pictures' folder in your home directory yet"
+		}
 		$path = Resolve-Path "~/Pictures"
 	} else {
 		$path = [Environment]::GetFolderPath('MyPictures')
-	}
-	if (-not(Test-Path "$path" -pathType container)) {
-		throw "No pictures folder at $path"
+		if (-not(Test-Path "$path" -pathType container)) {
+			throw "No pictures folder at: $path"
+		}
 	}
 	Set-Location "$path"
 	$files = Get-ChildItem $path -attributes !Directory
 	$folders = Get-ChildItem $path -attributes Directory
-	"📂$path entered (has $($files.Count) files and $($folders.Count) subfolders)"
+	"📂$path with $($files.Count) files and $($folders.Count) folders entered."
 	exit 0 # success
 } catch {
 	"⚠️ Error: $($Error[0])"

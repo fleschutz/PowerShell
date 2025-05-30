@@ -1,11 +1,11 @@
 ﻿<#
 .SYNOPSIS
-	Sets the working directory to the templates folder
+	Sets the working dir to the templates folder
 .DESCRIPTION
-	This PowerShell script changes the working directory to the templates folder.
+	This PowerShell script sets the current working directory to the templates folder.
 .EXAMPLE
-	PS> ./cd-templates
-	📂/home/Markus/Templates entered (has 3 files and 0 subfolders)
+	PS> ./cd-templates.ps1
+	📂/home/Markus/Templates with 3 files and 0 folders entered.
 .LINK
 	https://github.com/fleschutz/PowerShell
 .NOTES
@@ -14,17 +14,20 @@
 
 try {
 	if ($IsLinux) {
+		if (-not(Test-Path "~/Templates" -pathType container)) {
+			throw "No 'Templates' folder in your home directory yet"
+		}
 		$path = Resolve-Path "~/Templates"
 	} else {
 		$path = [Environment]::GetFolderPath('Templates')
-	}
-	if (-not(Test-Path "$path" -pathType container)) {
-		throw "No templates folder at $path"
+		if (-not(Test-Path "$path" -pathType container)) {
+			throw "No templates folder at: $path"
+		}
 	}
 	Set-Location "$path"
 	$files = Get-ChildItem $path -attributes !Directory
 	$folders = Get-ChildItem $path -attributes Directory
-	"📂$path entered (has $($files.Count) files and $($folders.Count) subfolders)"
+	"📂$path with $($files.Count) files and $($folders.Count) folders entered."
 	exit 0 # success
 } catch {
 	"⚠️ Error: $($Error[0])"
