@@ -1,11 +1,11 @@
 ﻿<#
 .SYNOPSIS
-	Sets the working directory to the SSH folder
+	Sets the working dir to the SSH folder
 .DESCRIPTION
-	This PowerShell script changes the working directory to the user's secure shell (SSH) folder.
+	This PowerShell script sets the current working directory to the user's secure shell (SSH) folder.
 .EXAMPLE
 	PS> ./cd-ssh.ps1
-	📂C:\Users\Markus\.ssh entered (has 4 files)
+	📂C:\Users\Markus\.ssh with 4 files entered.
 .LINK
 	https://github.com/fleschutz/PowerShell
 .NOTES
@@ -15,12 +15,12 @@
 try {
 	$path = "~/.ssh"
 	if (-not(Test-Path "$path" -pathType container)) {
-		throw "No secure shell (SSH) folder at $path"
+		throw "No '.ssh' folder in your home directory yet - Is SSH installed?"
 	}
 	$path = Resolve-Path "$path"
 	Set-Location "$path"
 	$files = Get-ChildItem $path -attributes !Directory
-	"📂$path entered (has $($files.Count) files)"
+	"📂$path with $($files.Count) files entered."
 	exit 0 # success
 } catch {
 	"⚠️ Error: $($Error[0])"
