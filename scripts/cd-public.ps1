@@ -1,11 +1,11 @@
 ﻿<#
 .SYNOPSIS
-	Sets the working directory to the Public folder
+	Sets the working dir to the Public folder
 .DESCRIPTION
-	This PowerShell script changes the working directory to the Public folder.
+	This PowerShell script sets the current working directory to the Public folder.
 .EXAMPLE
-	PS> ./cd-public
-	📂C:\Users\Public entered (has 2 files and 3 subfolders)
+	PS> ./cd-public.ps1
+	📂C:\Users\Public with 2 files and 3 folders entered.
 .LINK
 	https://github.com/fleschutz/PowerShell
 .NOTES
@@ -14,17 +14,20 @@
 
 try {
 	if ($IsLinux) {
+		if (-not(Test-Path "~/Public" -pathType container)) {
+			throw "No 'Public' folder in your home directory yet"
+		}
 		$path = Resolve-Path "~/Public"
 	} else {
+		if (-not(Test-Path "~/../Public" -pathType container)) {
+			throw "No 'Public' folder yet"
+		}
 		$path = Resolve-Path "~/../Public"
-	}
-	if (-not(Test-Path "$path" -pathType container)) {
-		throw "No public folder at $path"
 	}
 	Set-Location "$path"
 	$files = Get-ChildItem $path -attributes !Directory
 	$folders = Get-ChildItem $path -attributes Directory
-	"📂$path entered (has $($files.Count) files and $($folders.Count) subfolders)"
+	"📂$path with $($files.Count) files and $($folders.Count) folders entered."
 	exit 0 # success
 } catch {
 	"⚠️ Error: $($Error[0])"
