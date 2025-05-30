@@ -1,11 +1,11 @@
 ﻿<#
 .SYNOPSIS
-	Sets the working directory to the user's OneDrive folder
+	Sets the working dir to the OneDrive folder
 .DESCRIPTION
-	This PowerShell script changes the working directory to the user's OneDrive folder.
+	This PowerShell script sets the current working directory to the user's OneDrive folder.
 .EXAMPLE
-	PS> ./cd-onedrive
-	📂C:\Users\Markus\OneDrive entered (has 2 files and 0 folders)
+	PS> ./cd-onedrive.ps1
+	📂C:\Users\Markus\OneDrive with 2 files and 0 folders entered.
 .LINK
 	https://github.com/fleschutz/PowerShell
 .NOTES
@@ -20,7 +20,7 @@ try {
 	Set-Location "$path"
 	$files = Get-ChildItem $path -attributes !Directory
 	$folders = Get-ChildItem $path -attributes Directory
-	"📂$path entered (has $($files.Count) files and $($folders.Count) folders)"
+	"📂$path with $($files.Count) files and $($folders.Count) folders entered."
 	exit 0 # success
 } catch {
 	"⚠️ Error: $($Error[0])"
