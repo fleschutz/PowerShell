@@ -1,11 +1,11 @@
 ﻿<#
 .SYNOPSIS
-	Sets the working directory to the users directory
+	Sets the working dir to the users directory
 .DESCRIPTION
-	This PowerShell script changes the working directory to the users directory.
+	This PowerShell script sets the current working directory to the users directory.
 .EXAMPLE
-	PS> ./cd-users
-	📂C:\Users entered (has 0 files and 4 subfolders)
+	PS> ./cd-users.ps1
+	📂C:\Users with 4 folders entered.
 .LINK
 	https://github.com/fleschutz/PowerShell
 .NOTES
@@ -15,12 +15,11 @@
 try {
 	$path = Resolve-Path "~/.."
 	if (-not(Test-Path "$path" -pathType container)) {
-		throw "No users directory at $path"
+		throw "No users directory at: $path"
 	}
 	Set-Location "$path"
-	$files = Get-ChildItem $path -attributes !Directory
 	$folders = Get-ChildItem $path -attributes Directory
-	"📂$path entered (has $($files.Count) files and $($folders.Count) subfolders)"
+	"📂$path with $($folders.Count) folders entered."
 	exit 0 # success
 } catch {
 	"⚠️ Error: $($Error[0])"
