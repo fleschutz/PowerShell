@@ -1,11 +1,11 @@
 ﻿<#
 .SYNOPSIS
-	Sets the working directory to the root directory 
+	Sets the working dir to the root dir
 .DESCRIPTION
 	This PowerShell script changes the current working directory to the root directory (C:\ on Windows).
 .EXAMPLE
-	PS> ./cd-root
-	📂C:\ entered (has 0 files and 7 folders)
+	PS> ./cd-root.ps1
+	📂C:\ with 7 folders and 0 files entered.
 .LINK
 	https://github.com/fleschutz/PowerShell
 .NOTES
@@ -13,11 +13,11 @@
 #>
 
 try {
-	if ($IsLinux) {	$path = "/" } else { $path = "C:\" }
+	if ($IsLinux -or $IsMacOS) { $path = "/" } else { $path = "C:\" }
 	Set-Location "$path"
-	$files = Get-ChildItem $path -attributes !Directory
 	$folders = Get-ChildItem $path -attributes Directory
-	"📂$path entered (has $($files.Count) files and $($folders.Count) folders)"
+	$files = Get-ChildItem $path -attributes !Directory
+	"📂$path with $($folders.Count) folders and $($files.Count) files entered."
 	exit 0 # success
 } catch {
 	"⚠️ Error: $($Error[0])"
