@@ -12,14 +12,16 @@
 #>
 
 try {
-	"Installing CrystalDiskInfo, please wait..."
+	"⏳ Installing CrystalDiskInfo from Microsoft Store, please wait..."
+	$stopWatch = [system.diagnostics.stopwatch]::startNew()
 
 	& winget install "CrystalDiskInfo" --source msstore --accept-package-agreements --accept-source-agreements
-	if ($lastExitCode -ne 0) { throw "'winget install' failed" }
+	if ($lastExitCode -ne 0) { throw "Can't install CrystalDiskInfo, is it already installed?" }
 
-	"CrystalDiskInfo installed successfully."
+	int]$elapsed = $stopWatch.Elapsed.TotalSeconds
+        "✅ CrystalDiskInfo installed successfully in $($elapsed)s."
 	exit 0 # success
 } catch {
-	"⚠️ Error in line $($_.InvocationInfo.ScriptLineNumber): $($Error[0])"
+	"⚠️ Error: $($Error[0])"
 	exit 1
 }
