@@ -8,7 +8,7 @@
 .EXAMPLE
 	PS> ./list-system-files.ps1 C:\Windows
 	...
-	✅ Found 764 system files within 📂C:\windows in 50 sec
+	✅ Found 764 system files within 📂C:\windows in 50s.
 .LINK
 	https://github.com/fleschutz/PowerShell
 .NOTES
@@ -29,7 +29,7 @@ try {
 	}
 	Write-Progress -completed " "
 	[int]$elapsed = $stopWatch.Elapsed.TotalSeconds
-	"✅ Found $count system files within 📂$path in $elapsed sec" 
+	"✅ Found $count system files within 📂$path in $($elapsed)s." 
 	exit 0 # success
 } catch {
 	"⚠️ Error in line $($_.InvocationInfo.ScriptLineNumber): $($Error[0])"
