@@ -391,7 +391,8 @@ ODP,Obstacle Departure Procedure
 OGE,Out of Ground Effect
 OID,Operational Instrument Departure
 OFZ,Obstacle Free Zone
-OJT,On the Job Training
+OJT,On-the-Job Training
+OJTI,On-the-Job Training Instructor
 OODA,"Observation, Orientation, Decision, and Action"
 ORCAM,Originating Region Code Assignment Method
 OSC,On Scene Commander
@@ -588,6 +589,7 @@ UFA,"UFA, Inc., the world's premier developer of Air Traffic Control simulation 
 UHF,Ultra High Frequency (300MHz to 3 GHz)
 UIR,Upper Flight Information Region
 UKCAA,United Kingdom Civil Aviation Authority
+UkSATSE,Ukranian State Air Traffic Services Enterprise
 UMASS,University of Massachusetts
 UNL,Unlimited
 URET,User Request Evaluation Tool
