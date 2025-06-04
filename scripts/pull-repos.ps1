@@ -31,7 +31,7 @@ try {
 	$folders = (Get-ChildItem "$parentDir" -attributes Directory)
 	$numFolders = $folders.Count
 	$parentDirName = (Get-Item "$parentDir").Name
-	Write-Host "$numFolders subfolders"
+	Write-Host "$parentDir with $numFolders subfolders"
 
 	[int]$step = 3
 	[int]$numFailed = 0
