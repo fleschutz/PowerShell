@@ -17,6 +17,8 @@
 param([string]$path = "bot.ps1")
 
 try {
+	if (Test-Path "$path" -pathType leaf)) { throw "File '$path' is already existing" }
+
 	$pathToTemplate = Resolve-Path "$PSScriptRoot/../data/templates/New.ps1" 
 	Copy-Item $pathToTemplate "$path"
 	if ($lastExitCode -ne 0) { throw "Can't copy to: $path" }
