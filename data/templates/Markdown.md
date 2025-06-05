@@ -1,5 +1,5 @@
-Your Headline
-=============
+Headline
+========
 
 Some introductory words...
 

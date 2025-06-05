@@ -1,13 +1,13 @@
 ﻿<#
 .SYNOPSIS
-	Creates a new text file 
+	Creates a text file 
 .DESCRIPTION
-	This PowerShell script creates a new .txt file from template file at: ../data/templates/Text.txt.
+	This PowerShell script creates a new .txt file from: ../data/templates/New.txt.
 .PARAMETER path
 	Specifies the path and new filename (README.txt by default)
 .EXAMPLE
 	PS> ./new-text-file.ps1 
-	✅ New file 'README.txt' created from template 'Text.txt'.
+	✅ New 'README.txt' created (from data/templates/New.txt).
 .LINK
 	https://github.com/fleschutz/PowerShell
 .NOTES
@@ -17,11 +17,11 @@
 param([string]$path = "README.txt")
 
 try {
-	$pathToTemplate = Resolve-Path "$PSScriptRoot/../data/templates/Text.txt" 
+	$pathToTemplate = Resolve-Path "$PSScriptRoot/../data/templates/New.txt" 
 	Copy-Item $pathToTemplate "$path"
 	if ($lastExitCode -ne 0) { throw "Can't copy template to: $path" }
 
-	"✅ New file '$path' created from template 'Text.txt'."
+	"✅ New '$path' created (from data/templates/New.txt)."
 	exit 0 # success
 } catch {
 	"⚠️ Error: $($Error[0])"
