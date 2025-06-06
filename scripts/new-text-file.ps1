@@ -17,7 +17,7 @@
 param([string]$path = "README.txt")
 
 try {
-	if (Test-Path "$path" -pathType leaf)) { throw "File '$path' is already existing" }
+	if (Test-Path "$path" -pathType leaf) { throw "File '$path' is already existing" }
 
 	$pathToTemplate = Resolve-Path "$PSScriptRoot/../data/templates/New.txt" 
 	Copy-Item $pathToTemplate "$path"
