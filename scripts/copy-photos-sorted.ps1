@@ -10,7 +10,8 @@
 .EXAMPLE
 	PS> ./copy-photos-sorted.ps1 D:\iPhone\DCIM C:\MyPhotos
 	⏳ Copying IMG_20240903_134445.jpg to C:\MyPhotos\2024\09 SEP\...
-	✅ Copied 1 photo to 📂C:\MyPhotos in 13s (0 skipped).
+	...
+	✅ 123 photos copied to 📂C:\MyPhotos in 13s (0 skipped).
 .LINK
 	https://github.com/fleschutz/PowerShell
 .NOTES
@@ -19,7 +20,7 @@
 
 param([string]$sourceDir = "", [string]$targetDir = "")
 
-function CopyFile { param([string]$sourcePath, [string]$targetDir, [int]$date, [string]$filename)
+function CopyPhoto([string]$sourcePath, [string]$targetDir, [int]$date, [string]$filename) {
 	[int]$year = $date / 10000
 	[int]$month = ($date / 100) % 100
 	$monthDir = switch($month) {
@@ -65,22 +66,22 @@ try {
 		$filename = (Get-Item "$file").Name
 		if ("$filename" -like "IMG_*_*.jpg") {
 			$array = $filename.split("_")
-			$skipped += CopyFile "$file" "$targetDir" $array[1] "$filename"
+			$skipped += CopyPhoto "$file" "$targetDir" $array[1] "$filename"
 		} elseif ("$filename" -like "IMG-*-*.jpg") {
 			$array = $filename.split("-")
-			$skipped += CopyFile "$file" "$targetDir" $array[1] "$filename"
+			$skipped += CopyPhoto "$file" "$targetDir" $array[1] "$filename"
 		} elseif ("$filename" -like "PANO_*_*.jpg") {
 			$array = $filename.split("_")
-			$skipped += CopyFile "$file"  "$targetDir" $array[1] "$filename"
+			$skipped += CopyPhoto "$file"  "$targetDir" $array[1] "$filename"
 		} elseif ("$filename" -like "PANO-*-*.jpg") {
 			$array = $filename.split("-")
-			$skipped += CopyFile "$file" "$targetDir" $array[1] "$filename"
+			$skipped += CopyPhoto "$file" "$targetDir" $array[1] "$filename"
 		} elseif ("$filename" -like "SAVE_*_*.jpg") {
 			$array = $filename.split("_")
-			$skipped += CopyFile "$file" "$targetDir" $array[1] "$filename"
+			$skipped += CopyPhoto "$file" "$targetDir" $array[1] "$filename"
 		} elseif ("$filename" -like "PXL_*_*.jpg") {
 			$array = $filename.split("_")
-			$skipped += CopyFile "$file" "$targetDir" $array[1] "$filename"
+			$skipped += CopyPhoto "$file" "$targetDir" $array[1] "$filename"
 		} else {
 			Write-Host "⏳ Skipping $filename with unknown filename format..."
 			$skipped++
@@ -88,7 +89,7 @@ try {
 	}
 	[int]$elapsed = $stopWatch.Elapsed.TotalSeconds
 	[int]$copied = $files.Count - $skipped
-	"✅ Copied $copied photos to 📂$targetDir in $($elapsed)s ($skipped skipped)."
+	"✅ $copied photos copied to 📂$targetDir in $($elapsed)s ($skipped skipped)."
 	exit 0 # success
 } catch {
 	"⚠️ Error in line $($_.InvocationInfo.ScriptLineNumber): $($Error[0])"
