@@ -5,7 +5,7 @@
 	This PowerShell script changes the working directory to the user's desktop folder.
 .EXAMPLE
 	PS> ./cd-desktop.ps1
-	📂/home/Markus/Desktop (has 3 files and 0 folders)
+	📂/home/Markus/Desktop with 3 files and 0 folders entered.
 .LINK
 	https://github.com/fleschutz/PowerShell
 .NOTES
@@ -21,13 +21,13 @@ try {
 	} else {
 		$path = [Environment]::GetFolderPath('DesktopDirectory')
 		if (-not(Test-Path "$path" -pathType container)) {
-			throw "No desktop folder at $path yet"
+			throw "Desktop folder at $path does not exist yet"
 		}
 	}
 	Set-Location "$path"
 	$files = Get-ChildItem $path -attributes !Directory
 	$folders = Get-ChildItem $path -attributes Directory
-	"📂$path entered (has $($files.Count) files and $($folders.Count) folders)"
+	"📂$path with $($files.Count) files and $($folders.Count) folders entered."
 	exit 0 # success
 } catch {
 	"⚠️ Error: $($Error[0])"
