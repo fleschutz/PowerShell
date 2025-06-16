@@ -4,8 +4,8 @@
 .DESCRIPTION
 	This PowerShell script changes the working directory to the crash dumps directory (Windows only). Whenever a software crashes and crash dumps are enabled(!) a crash dump file is written. This file helps to identify the reason for the crash.
 .EXAMPLE
-	PS> ./cd-crashdumps
-	📂C:\Users\Markus\AppData\Local\CrashDumps entered (has 3 files and 0 folders)
+	PS> ./cd-crashdumps.ps1
+	📂C:\Users\Markus\AppData\Local\CrashDumps with 3 files entered.
 .LINK
 	https://github.com/fleschutz/PowerShell
 .NOTES
@@ -20,10 +20,10 @@ try {
 
 	$path += "\AppData\Local\CrashDumps"
 	if (!(Test-Path "$path" -pathType container)) { throw "No crashdumps folder at $path" }
-	Set-Location "$Path"
+
+	Set-Location "$path"
 	$files = Get-ChildItem $path -attributes !Directory
-	$folders = Get-ChildItem $path -attributes Directory
-	"📂$path entered (has $($files.Count) files and $($folders.Count) folders)"
+	"📂$path with $($files.Count) files entered."
 	exit 0 # success
 } catch {
 	"⚠️ Error: $($Error[0])"

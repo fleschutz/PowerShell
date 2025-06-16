@@ -151,6 +151,7 @@ function List-CLI-Tools {
 	ListTool driverquery	""
 	ListTool du		"--version"
 	ListTool echo		"--version"
+	ListTool edit.exe	"--version"
 	ListTool egrep		"--version"
 	ListTool emacs		"--version"
 	ListTool env		"--version"
