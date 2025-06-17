@@ -140,6 +140,7 @@ function List-CLI-Tools {
 	ListTool df		"--version"
 	ListTool diff		"--version"
 	ListTool diff3		"--version"
+	ListTool difft		"--version"
 	ListTool dir		"--version"
 	ListTool dircolors	"--version"
 	ListTool dirname	"--version"
