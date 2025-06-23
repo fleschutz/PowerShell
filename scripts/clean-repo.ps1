@@ -8,11 +8,11 @@
 	Specifies the file path to the local Git repository (current working directory by default)
 .EXAMPLE
 	PS> ./clean-repo.ps1 C:\Repos\rust
-	⏳ (1/4) Searching for Git executable...           git version 2.47.0
-	⏳ (2/4) Checking local repository...        	  C:\Repos\rust
+	⏳ (1/4) Searching for Git executable...           git version 2.50.0
+	⏳ (2/4) Checking local repository...        	   C:\Repos\rust
 	⏳ (3/4) Removing untracked files in repository...
 	⏳ (4/4) Removing untracked files in submodules...
-	✅ Repo 📂rust is clean now.
+	✅ Repo 'rust' is clean now.
 .LINK
 	https://github.com/fleschutz/PowerShell
 .NOTES
@@ -42,7 +42,7 @@ try {
 	& git -C "$path" submodule foreach --recursive git clean -xfd -f # to delete all untracked files in the submodules
 	if ($lastExitCode -ne 0) { throw "'git clean' in the submodules failed with exit code $lastExitCode" }
 
-	"✅ Repo 📂$repoName is clean now."
+	"✅ Repo '$repoName' is clean now."
 	exit 0 # success
 } catch {
 	"⚠️ Error in line $($_.InvocationInfo.ScriptLineNumber): $($Error[0])"
