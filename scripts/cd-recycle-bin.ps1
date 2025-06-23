@@ -1,11 +1,11 @@
 ﻿<#
 .SYNOPSIS
-	Sets the working directory to the recycle bin folder
+	Sets the working dir to the recycle bin folder
 .DESCRIPTION
 	This PowerShell script changes the working directory to the user's recycle bin folder.
 .EXAMPLE
-	PS> ./cd-recycle-bin
-	📂C:\$Recycle.Bin\S-1-5-21-123404-23309-294260-1001 entered (has 2 files and 0 subfolders)
+	PS> ./cd-recycle-bin.ps1
+	📂C:\$Recycle.Bin\S-1-5-21-123404-23309-294260-1001 with 2 files and 0 folders entered.
 .LINK
 	https://github.com/fleschutz/PowerShell
 .NOTES
@@ -30,7 +30,7 @@ try {
 	Set-Location "$path"
 	$files = Get-ChildItem $path -attributes !Directory
 	$folders = Get-ChildItem $path -attributes Directory
-	"📂$path entered (has $($files.Count) files and $($folders.Count) subfolders)"
+	"📂$path with $($files.Count) files and $($folders.Count) folders entered."
 	exit 0 # success
 } catch {
 	"⚠️ Error: $($Error[0])"
