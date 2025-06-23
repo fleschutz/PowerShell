@@ -2,9 +2,11 @@
 .SYNOPSIS
 	Installs Mozilla Firefox
 .DESCRIPTION
-	This PowerShell script installs Mozilla Firefox from the Microsoft Store.
+	This PowerShell script installs the Mozilla Firefox browser from Microsoft Store.
 .EXAMPLE
 	PS> ./install-firefox.ps1
+	⏳ Installing Mozilla Firefox from Microsoft Store...
+        ✅ Mozilla Firefox installed successfully in 25s.
 .LINK
 	https://github.com/fleschutz/PowerShell
 .NOTES
@@ -12,14 +14,16 @@
 #>
 
 try {
-	"Installing Mozilla Firefox, please wait..."
+	$stopWatch = [system.diagnostics.stopwatch]::startNew()
+	"⏳ Installing Mozilla Firefox from Microsoft Store..."
 
-	& winget install "Mozilla Firefox Browser" --source msstore --accept-package-agreements --accept-source-agreements
-	if ($lastExitCode -ne 0) { throw "'winget install' failed" }
+	& winget install --id 9NZVDKPMR9RD --source msstore --accept-package-agreements --accept-source-agreements
+	if ($lastExitCode -ne 0) { throw "Can't install Mozilla Firefox, is it already installed?" }
 
-	"Mozilla Firefox installed successfully."
+        [int]$elapsed = $stopWatch.Elapsed.TotalSeconds
+        "✅ Mozilla Firefox installed successfully in $($elapsed)s."
 	exit 0 # success
 } catch {
-	"⚠️ Error in line $($_.InvocationInfo.ScriptLineNumber): $($Error[0])"
+	"⚠️ Error: $($Error[0])"
 	exit 1
 }
