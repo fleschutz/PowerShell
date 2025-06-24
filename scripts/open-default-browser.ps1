@@ -6,19 +6,19 @@
 .PARAMETER URL
 	Specifies the URL
 .EXAMPLE
-	PS> ./open-default-browser
+	PS> ./open-default-browser.ps1
 .LINK
 	https://github.com/fleschutz/PowerShell
 .NOTES
 	Author: Markus Fleschutz | License: CC0
 #>
 
-param([string]$URL = "http://www.fleschutz.de")
+param([string]$URL = "https://www.fleschutz.de")
 
 try {
 	Start-Process $URL
 	exit 0 # success
 } catch {
-	"⚠️ Error in line $($_.InvocationInfo.ScriptLineNumber): $($Error[0])"
+	"⚠️ ERROR: $($Error[0])"
 	exit 1
 }
