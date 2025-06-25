@@ -1,0 +1,29 @@
+﻿<#
+.SYNOPSIS
+	Installs Edit
+.DESCRIPTION
+	This PowerShell script installs Microsoft Edit.
+.EXAMPLE
+	PS> ./install-edit.ps1
+	⏳ Installing Microsoft Edit from Microsoft Store...
+	✅ Microsoft Edit installed successfully in 25s.
+.LINK
+	https://github.com/fleschutz/PowerShell
+.NOTES
+	Author: Markus Fleschutz | License: CC0
+#>
+
+try {
+	"⏳ Installing Microsoft Edit from Microsoft Store..."
+	$stopWatch = [system.diagnostics.stopwatch]::startNew()
+
+	& winget install --id Microsoft.Edit --accept-package-agreements --accept-source-agreements
+	if ($lastExitCode -ne 0) { throw "Can't install Microsoft Edit, is it already installed?" }
+
+	[int]$elapsed = $stopWatch.Elapsed.TotalSeconds
+	"✅ Microsoft Edit installed successfully in $($elapsed)s."
+	exit 0 # success
+} catch {
+	"⚠️ ERROR: $($Error[0])"
+	exit 1
+}
