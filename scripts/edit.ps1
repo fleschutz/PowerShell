@@ -37,6 +37,7 @@ TryEditor "hx"          $path
 TryEditor "emacs"       $path
 TryEditor "Code"        $path
 TryEditor "notepad.exe" $path
+TryEditor "edit.exe"    $path
 TryEditor "wordpad.exe" $path
 Write-Host ""
 
