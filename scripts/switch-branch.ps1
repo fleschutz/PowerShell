@@ -63,6 +63,6 @@ try {
 	"✅ Switched repo '$repoDirName' to '$branchName' branch in $($elapsed)s."
 	exit 0 # success
 } catch {
-	"⚠️ Error: $($Error[0]) in script line $($_.InvocationInfo.ScriptLineNumber)"
+	"⚠️ ERROR: $($Error[0]) in script line $($_.InvocationInfo.ScriptLineNumber)"
 	exit 1
 }

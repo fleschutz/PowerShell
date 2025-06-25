@@ -153,16 +153,16 @@ try {
 	BuildFolder "$path"
 	Set-Location "$previousPath"
 
-	$repoDirName = (Get-Item "$path").Name
+	$dirName = (Get-Item "$path").Name
 	[int]$elapsed = $stopWatch.Elapsed.TotalSeconds
 	if ($global:results -eq "") {
-		"✅ Build of 📂$repoDirName succeeded in $($elapsed)s."
+		"✅ Build of '$dirName' succeeded in $($elapsed)s."
 	} else {
-		"✅ Build of 📂$repoDirName succeeded in $($elapsed)s, results in: 📂$($global:results)"
+		"✅ Build of '$dirName' succeeded in $($elapsed)s, results in: 📂$($global:results)"
 	}
 	exit 0 # success
 } catch {
-	"⚠️ Error in line $($_.InvocationInfo.ScriptLineNumber): $($Error[0])"
+	"⚠️ ERROR: $($Error[0]) in script line $($_.InvocationInfo.ScriptLineNumber)"
 	Set-Location "$previousPath"
 	exit 1
 }
