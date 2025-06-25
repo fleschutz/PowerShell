@@ -14,12 +14,17 @@
 #>
 
 try {
-	"⏳ Installing Microsoft Edit from Microsoft Store..."
 	$stopWatch = [system.diagnostics.stopwatch]::startNew()
 
-	& winget install --id Microsoft.Edit --accept-package-agreements --accept-source-agreements
-	if ($lastExitCode -ne 0) { throw "Can't install Microsoft Edit, is it already installed?" }
-
+	if ($IsLinux) {
+		"⏳ Installing Microsoft Edit from Snap Store..."
+		& sudo snap install msedit 
+		if ($lastExitCode -ne 0) { throw "Can't install Microsoft Edit, is it already installed?" }
+	} else {
+		"⏳ Installing Microsoft Edit from Microsoft Store..."
+		& winget install --id Microsoft.Edit --accept-package-agreements --accept-source-agreements
+		if ($lastExitCode -ne 0) { throw "Can't install Microsoft Edit, is it already installed?" }
+	}
 	[int]$elapsed = $stopWatch.Elapsed.TotalSeconds
 	"✅ Microsoft Edit installed successfully in $($elapsed)s."
 	exit 0 # success
