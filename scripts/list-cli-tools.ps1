@@ -237,6 +237,7 @@ function List-CLI-Tools {
 	ListTool mktemp		"--version"
 	ListTool mount		"--version"
 	ListTool MpCmdRun	"-h"
+	ListTool msedit		"--version"
 	ListTool nano		"--version"
 	ListTool netsh		""
 	ListTool netstat	""
