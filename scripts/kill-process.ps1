@@ -18,7 +18,7 @@ param([string]$processName = "")
 try {
 	if ($processName -eq "") { $processName = Read-Host "Enter the process name" }
 	Get-Process | Where-Object -FilterScript {$_.processname -eq $processName} | Select-Object id | Stop-Process
-	"✔️ Done."
+	"✔️ Stopped all processes matching '$processName'."
 	exit 0 # success
 } catch {
 	"⚠️ ERROR: $($Error[0])"
