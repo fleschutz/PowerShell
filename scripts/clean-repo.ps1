@@ -22,6 +22,8 @@
 param([string]$path = "$PWD")
 
 try {
+	$stopWatch = [system.diagnostics.stopwatch]::startNew()
+
 	Write-Host "⏳ (1/4) Searching for Git executable...          " -noNewline
 	& git --version
 	if ($lastExitCode -ne 0) { throw "Can't execute 'git' - make sure Git is installed and available" }
@@ -42,7 +44,8 @@ try {
 	& git -C "$path" submodule foreach --recursive git clean -xfd -f # to delete all untracked files in the submodules
 	if ($lastExitCode -ne 0) { throw "'git clean' in the submodules failed with exit code $lastExitCode" }
 
-	"✅ Repo '$repoName' is clean now."
+	[int]$elapsed = $stopWatch.Elapsed.TotalSeconds
+	"✅ Repo '$repoName' cleaned in $($elapsed)s."
 	exit 0 # success
 } catch {
 	"⚠️ Error in line $($_.InvocationInfo.ScriptLineNumber): $($Error[0])"

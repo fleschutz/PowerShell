@@ -1,35 +1,26 @@
 ﻿<#
 .SYNOPSIS
-	Kills all local processes matching the given name
+	Kills local processes
 .DESCRIPTION
-	← enter a detailed description of the script here
-.PARAMETER
-	← enter the description of a parameter here (repeat the .PARAMETER for each parameter)
+	This PowerShell script stops all local processes matching the given name
+.PARAMETER processName
+	Specifies the process name (ask user by default)
 .EXAMPLE
-	← enter a sample command that uses the script, optionally followed by sample output and a description (repeat the .EXAMPLE for each example)
-.NOTES
-	Author:        ← enter full name here
-	License:       ← enter license here
+	PS> ./kill-process.ps1
 .LINK
-	← enter URL to additional information here
+	https://github.com/fleschutz/PowerShell
+.NOTES
+	Author: Markus Fleschutz | License: CC0
 #>
 
-[CmdletBinding()]
-param(
-#  [Parameter(Mandatory,ParameterSetName='ByProcessName')]
-  [string]$ProcessName = $(Read-Host -Prompt 'Enter the process name'))
-
-function KillProcesses {
-	Write-Host -BackgroundColor Yellow -ForegroundColor Red "Process to kill: $ProcessName"  
-	Get-Process | Where-Object -FilterScript {$_.processname -eq $ProcessName} | Select-Object id | Stop-Process
-}
-
+param([string]$processName = "")
 
 try {
-	KillProcesses -ProcessName $processName
+	if ($processName -eq "") { $processName = Read-Host "Enter the process name" }
+	Get-Process | Where-Object -FilterScript {$_.processname -eq $processName} | Select-Object id | Stop-Process
 	"✔️ Done."
 	exit 0 # success
 } catch {
-	"⚠️ Error in line $($_.InvocationInfo.ScriptLineNumber): $($Error[0])"
+	"⚠️ ERROR: $($Error[0])"
 	exit 1
 }
