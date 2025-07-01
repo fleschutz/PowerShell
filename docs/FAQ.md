@@ -51,6 +51,14 @@
 **NOTE:** the group policy object (GPO) settings of your organization might disallow changes. In that case contact your system administrator for help.
 </details>
 
+<details><summary>Which PowerShell version should be used?</summary>
+
+* **Out-dated** is Windows PowerShell up to version 2.0 (will be removed in newer Windows releases).
+* Windows 10 and 11 are using PowerShell 5.1
+* **Latest** version is PowerShell 7.5.2 (as of July 2025).
+</details>
+
+
 <details><summary>How to get the 500+ PowerShell sample scripts?</summary>
  
 1. **When using Git, execute in a terminal window:** `git clone https://github.com/fleschutz/PowerShell`
