@@ -53,9 +53,9 @@
 
 <details><summary>Which PowerShell version should be used?</summary>
 
-* **Out-dated** is Windows PowerShell up to version 2.0 (will be removed in newer Windows releases).
-* Windows 10 and 11 are using PowerShell 5.1
-* **Latest** version is PowerShell 7.5.2 (as of July 2025).
+* **Windows PowerShell 2.0** (or lower) is out-dated and will be removed in newer Windows releases.
+* **PowerShell 5.1** is preinstalled on every Windows 10 or 11.
+* **PowerShell 7.5.2** is the latest version (as of July 2025, needs to be installed manually).
 </details>
 
 
