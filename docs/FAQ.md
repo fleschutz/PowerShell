@@ -55,7 +55,8 @@
 
 * **Windows PowerShell 2.0** (or lower) is out-dated and will be removed in newer Windows releases.
 * **PowerShell 5.1** is preinstalled on every Windows 10 or 11.
-* **PowerShell 7.5.2** is the latest version (as of July 2025, needs to be installed manually).
+* **PowerShell 7.5.2** is the very latest (as of July 2025), but needs to be installed manually.
+* **Version history** is at: https://github.com/PowerShell/PowerShell/releases
 </details>
 
 
