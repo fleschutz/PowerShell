@@ -4,7 +4,7 @@
 .DESCRIPTION
 	This PowerShell script creates a new branch in a local Git repository and switches to it.
 .PARAMETER newBranch
-	Specifies the new Git branch name
+	Specifies the new branch name
 .PARAMETER path
 	Specifies the file path to the local Git repository (current working directory by default)
 .EXAMPLE
@@ -15,7 +15,7 @@
 	⏳ (4/6) Creating new branch...
 	⏳ (5/6) Pushing updates...
 	⏳ (6/6) Updating submodules...
-	✅ Repo 'rust' now on new 'feature123' branch (based on 'main', took 18s).
+	✅ Repo 'rust' on new branch 'feature123' (based on 'main', took 18s).
 .LINK
 	https://github.com/fleschutz/PowerShell
 .NOTES
@@ -62,7 +62,7 @@ try {
 	if ($lastExitCode -ne 0) { throw "'git submodule update' failed with exit code $lastExitCode" }
 
 	[int]$elapsed = $stopWatch.Elapsed.TotalSeconds
-	"✅ Repo '$repoName' now on new '$newBranch' branch (based on '$currentBranch', took $($elapsed)s)."
+	"✅ Repo '$repoName' on new branch '$newBranch' (based on '$currentBranch', took $($elapsed)s)."
 	exit 0 # success
 } catch {
 	"⚠️ ERROR: $($Error[0]) in script line $($_.InvocationInfo.ScriptLineNumber)"
