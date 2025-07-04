@@ -1,9 +1,9 @@
 ﻿<#
 .SYNOPSIS
-	Checks a Git repository
+	Checks a Git repo
 .DESCRIPTION
 	This PowerShell script verifies the integrity of a local Git repository and performs maintenance tasks.
-.PARAMETER pathToRepo
+.PARAMETER path
 	Specifies the file path to the local Git repository (current working directory by default)
 .EXAMPLE
 	PS> ./check-repo.ps1 C:\MyRepo
@@ -21,7 +21,7 @@
 	Author: Markus Fleschutz | License: CC0
 #>
 
-param([string]$pathToRepo = "$PWD")
+param([string]$path = "$PWD")
 
 try {
 	$stopWatch = [system.diagnostics.stopwatch]::startNew()
@@ -31,7 +31,7 @@ try {
 	if ($lastExitCode -ne 0) { throw "Can't execute 'git' - make sure Git is installed and available" }
 
 	Write-Host "⏳ (2/10) Checking local repository...     " -noNewline
-	$FullPath = Resolve-Path "$pathToRepo"
+	$FullPath = Resolve-Path "$path"
 	if (!(Test-Path "$FullPath" -pathType Container)) { throw "Can't access folder: $FullPath" }
 	"$FullPath"
 
@@ -71,7 +71,7 @@ try {
 
 	$repoDirName = (Get-Item "$FullPath").Name
 	[int]$elapsed = $stopWatch.Elapsed.TotalSeconds
-	"✅ Checked 📂$repoDirName repo in $($elapsed)s."
+	"✅ Repo '$repoDirName' has been checked in $($elapsed)s."
 	exit 0 # success
 } catch {
 	"⚠️ ERROR: $($Error[0]) in script line $($_.InvocationInfo.ScriptLineNumber)"
