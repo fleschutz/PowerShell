@@ -1,11 +1,11 @@
 ﻿<#
 .SYNOPSIS
-	Sets the working directory to the Windows directory
+	Sets the working dir to the Windows directory
 .DESCRIPTION
-	This PowerShell script changes the working directory to the Windows directory.
+	This PowerShell script sets the current working directory to the Windows directory.
 .EXAMPLE
-	PS> ./cd-windows
-	📂C:\Windows entered (has 7 files and 42 folders)
+	PS> ./cd-windows.ps1
+	📂C:\Windows with 7 files and 42 folders entered.
 .LINK
 	https://github.com/fleschutz/PowerShell
 .NOTES
@@ -13,16 +13,17 @@
 #>
 
 try {
+	if ($IsLinux -or $IsMacOS) { throw "This script requires a Windows operating system" }
+
 	$path = Resolve-Path "$env:WINDIR"
-	if (-not(Test-Path "$path" -pathType container)) {
-		throw "No Windows directory at $path"
-	}
+	if (-not(Test-Path "$path" -pathType container)) { throw "No Windows directory at $path" }
+
 	Set-Location "$path"
 	$files = Get-ChildItem $path -attributes !Directory
 	$folders = Get-ChildItem $path -attributes Directory
-	"📂$path entered (has $($files.Count) files and $($folders.Count) folders)"
+	"📂$path with $($files.Count) files and $($folders.Count) folders entered."
 	exit 0 # success
 } catch {
-	"⚠️ Error: $($Error[0])"
+	"⚠️ ERROR: $($Error[0])"
 	exit 1
 }
