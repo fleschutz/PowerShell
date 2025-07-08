@@ -2,10 +2,10 @@
 .SYNOPSIS
 	Changes to the /etc directory
 .DESCRIPTION
-	This PowerShell script changes the working directory to the /etc directory.
+	This PowerShell script changes the current working directory to the /etc directory.
 .EXAMPLE
-	PS> ./cd-etc
-	📂C:\Windows\System32\drivers\etc (has 5 files and 0 folders)
+	PS> ./cd-etc.ps1
+	📂C:\Windows\System32\drivers\etc with 5 files and 0 folders entered.
 .LINK
 	https://github.com/fleschutz/PowerShell
 .NOTES
@@ -24,9 +24,9 @@ try {
 	Set-Location "$path"
 	$files = Get-ChildItem $path -attributes !Directory
 	$folders = Get-ChildItem $path -attributes Directory
-	"📂$path entered (has $($files.Count) files and $($folders.Count) folders)"
+	"📂$path with $($files.Count) files and $($folders.Count) folders entered."
 	exit 0 # success
 } catch {
-	"⚠️ Error: $($Error[0])"
+	"⚠️ ERROR: $($Error[0])"
 	exit 1
 }
