@@ -2,7 +2,7 @@
 .SYNOPSIS
 	Sets the working dir to the documents folder
 .DESCRIPTION
-	This PowerShell script sets the current working directory to the documents folder.
+	This PowerShell script changes the current working directory to the documents folder.
 .EXAMPLE
 	PS> ./cd-docs.ps1
 	📂C:\Users\Markus\Documents with 3 files and 0 folders entered.
@@ -15,7 +15,7 @@
 try {
 	if ($IsLinux -or $IsMacOS) {
 		if (-not(Test-Path "~/Documents" -pathType container)) {
-			throw "No 'Documents' folder in your home directory yet"
+			throw "Your home directory has no 'Documents' folder yet"
 		}
 		$path = Resolve-Path "~/Documents"
 	} else {
@@ -30,6 +30,6 @@ try {
 	"📂$path with $($files.Count) files and $($folders.Count) folders entered."
 	exit 0 # success
 } catch {
-	"⚠️ Error: $($Error[0])"
+	"⚠️ ERROR: $($Error[0])"
 	exit 1
 }
