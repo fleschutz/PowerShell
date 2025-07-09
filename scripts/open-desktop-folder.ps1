@@ -4,12 +4,14 @@
 .DESCRIPTION
 	This PowerShell script launches the File Explorer with the user's desktop folder.
 .EXAMPLE
-	PS> ./open-desktop-folder
+	PS> ./open-desktop-folder.ps1
 .LINK
 	https://github.com/fleschutz/PowerShell
 .NOTES
 	Author: Markus Fleschutz | License: CC0
 #>
+
+#requires -version 5.1
 
 try {
 	$TargetDir = resolve-path "$HOME/Desktop"

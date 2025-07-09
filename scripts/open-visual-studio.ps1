@@ -11,6 +11,8 @@
 	Author: Markus Fleschutz | License: CC0
 #>
 
+#requires -version 5.1
+
 function tryToLaunch { param($filePath)
 	if (Test-Path "$filePath" -pathType leaf) {
 		Start-Process "$filePath"

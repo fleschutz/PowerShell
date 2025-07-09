@@ -4,12 +4,14 @@
 .DESCRIPTION
 	This script launches the File Explorer showing the temporary folder.
 .EXAMPLE
-	PS> ./open-temporary-folder
+	PS> ./open-temporary-folder.ps1
 .LINK
 	https://github.com/fleschutz/PowerShell
 .NOTES
 	Author: Markus Fleschutz | License: CC0
 #>
+
+#requires -version 5.1
 
 function GetTempDir {
 	if ("$env:TEMP" -ne "")	{ return "$env:TEMP" }

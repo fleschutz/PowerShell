@@ -4,15 +4,17 @@
 .DESCRIPTION
 	This script launches the Paint 3D application.
 .EXAMPLE
-	PS> ./open-paint-3d
+	PS> ./open-paint-3d.ps1
 .LINK
 	https://github.com/fleschutz/PowerShell
 .NOTES
 	Author: Markus Fleschutz | License: CC0
 #>
 
+#requires -version 5.1
+
 try {
-	start-process ms-paint:
+	Start-Process ms-paint:
 	exit 0 # success
 } catch {
 	"⚠️ Error in line $($_.InvocationInfo.ScriptLineNumber): $($Error[0])"

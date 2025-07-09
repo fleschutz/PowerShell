@@ -11,6 +11,8 @@
 	Author: Markus Fleschutz | License: CC0
 #>
 
+#requires -version 5.1
+
 try {
 	Start-Process ms-clock:
 	exit 0 # success

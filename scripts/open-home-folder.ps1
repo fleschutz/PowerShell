@@ -4,12 +4,14 @@
 .DESCRIPTION
 	This script launches the File Explorer with the user's home folder.
 .EXAMPLE
-	PS> ./open-home-folder
+	PS> ./open-home-folder.ps1
 .LINK
 	https://github.com/fleschutz/PowerShell
 .NOTES
 	Author: Markus Fleschutz | License: CC0
 #>
+
+#requires -version 5.1
 
 try {
 	$TargetDir = resolve-path "$HOME"

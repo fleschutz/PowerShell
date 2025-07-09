@@ -4,12 +4,14 @@
 .DESCRIPTION
 	This script launches the File Explorer with the user's Git repositories folder.
 .EXAMPLE
-	PS> ./open-repos-folder
+	PS> ./open-repos-folder.ps1
 .LINK
 	https://github.com/fleschutz/PowerShell
 .NOTES
 	Author: Markus Fleschutz | License: CC0
 #>
+
+#requires -version 5.1
 
 try {
 	$TargetDir = Resolve-Path "$HOME/Repos"

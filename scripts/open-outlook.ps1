@@ -4,12 +4,14 @@
 .DESCRIPTION
 	This script launches the Microsoft Outlook email application.
 .EXAMPLE
-	PS> ./open-outlook
+	PS> ./open-outlook.ps1
 .LINK
 	https://github.com/fleschutz/PowerShell
 .NOTES
 	Author: Markus Fleschutz | License: CC0
 #>
+
+#requires -version 5.1
 
 function TryToExec { param($Folder, $Binary)
         if (test-path "$Folder/$Binary" -pathType leaf) {

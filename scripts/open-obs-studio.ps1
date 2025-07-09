@@ -4,12 +4,14 @@
 .DESCRIPTION
 	This script launches the OBS Studio application.
 .EXAMPLE
-	PS> ./open-obs-studio
+	PS> ./open-obs-studio.ps1
 .LINK
 	https://github.com/fleschutz/PowerShell
 .NOTES
 	Author: Markus Fleschutz | License: CC0
 #>
+
+#requires -version 5.1
 
 function TryLaunching { param([string]$Path, [string]$Dir)
 	if (test-path "$Path" -pathType leaf) {

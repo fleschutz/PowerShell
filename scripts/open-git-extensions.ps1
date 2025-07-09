@@ -11,6 +11,8 @@
 	Author: Markus Fleschutz | License: CC0
 #>
 
+#requires -version 5.1
+
 function TryToExec { param($Folder, $Binary)
 	if (test-path "$Folder/$Binary" -pathType leaf) {
 		start-process "$Folder/$Binary" -WorkingDirectory "$Folder"

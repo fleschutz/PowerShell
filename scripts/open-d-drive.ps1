@@ -11,4 +11,6 @@
 	Author: Markus Fleschutz | License: CC0
 #>
 
+#requires -version 5.1
+
 & "$PSScriptRoot/open-file-explorer.ps1" "D:"

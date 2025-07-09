@@ -15,6 +15,8 @@
 	Author: Markus Fleschutz | License: CC0
 #>
 
+#requires -version 5.1
+
 param([string]$URL = "", [string]$text = "")
 
 try {

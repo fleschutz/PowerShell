@@ -4,15 +4,17 @@
 .DESCRIPTION
 	This script launches the File Explorer with the user's music folder.
 .EXAMPLE
-	PS> ./open-music-folder
+	PS> ./open-music-folder.ps1
 .LINK
 	https://github.com/fleschutz/PowerShell
 .NOTES
 	Author: Markus Fleschutz | License: CC0
 #>
 
+#requires -version 5.1
+
 try {
-	$TargetDir = resolve-path "$HOME/Music"
+	$TargetDir = Resolve-Path "$HOME/Music"
 	if (-not(test-path "$TargetDir" -pathType container)) {
 		throw "Music folder at 📂$TargetDir doesn't exist (yet)"
 	}

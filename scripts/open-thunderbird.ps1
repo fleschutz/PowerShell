@@ -4,12 +4,14 @@
 .DESCRIPTION
 	This script launches the Mozilla Thunderbird email application.
 .EXAMPLE
-	PS> ./open-thunderbird
+	PS> ./open-thunderbird.ps1
 .LINK
 	https://github.com/fleschutz/PowerShell
 .NOTES
 	Author: Markus Fleschutz | License: CC0
 #>
+
+#requires -version 5.1
 
 function TryToExec { param($Folder, $Binary)
         if (test-path "$Folder/$Binary" -pathType leaf) {

@@ -13,7 +13,9 @@
 	Author: Markus Fleschutz | License: CC0
 #>
 
-param([string]$URL = "http://www.fleschutz.de")
+#requires -version 5.1
+
+param([string]$URL = "https://www.fleschutz.de")
 
 try {
 	$App = Get-AppxPackage -Name Mozilla.FireFox

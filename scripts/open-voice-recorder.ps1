@@ -11,6 +11,8 @@
         Author: Markus Fleschutz | License: CC0
 #>
 
+#requires -version 5.1
+
 try {
 	Start-Process explorer.exe shell:appsFolder\Microsoft.WindowsSoundRecorder_8wekyb3d8bbwe!App
         exit 0 # success

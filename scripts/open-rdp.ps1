@@ -12,11 +12,13 @@
         Author: Markus Fleschutz | License: CC0
 #>
 
+#requires -version 5.1
+
 param([string]$hostname = "")
 
 if ($hostname -eq "") {
-	& Start-Process "$env:windir\system32\mstsc.exe"
+	& Start-Process "$env:WINDIR\system32\mstsc.exe"
 } else {
-	& Start-Process "$env:windir\system32\mstsc.exe" -ArgumentList "/v:$hostname"
+	& Start-Process "$env:WINDIR\system32\mstsc.exe" -ArgumentList "/v:$hostname"
 }
 exit 0 # success
