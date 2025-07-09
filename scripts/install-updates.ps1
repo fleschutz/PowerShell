@@ -18,6 +18,8 @@
 	Author: Markus Fleschutz | License: CC0
 #>
 
+#requires -version 5.1
+
 try {
 	$stopWatch = [system.diagnostics.stopwatch]::startNew()
 

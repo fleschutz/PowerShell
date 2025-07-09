@@ -12,6 +12,8 @@
     Author: Gavin R. McDavitt
 #>
 
+#requires -version 5.1
+
 try {
     # Define the URL of the Salesforce CLI installer
     $url = "https://developer.salesforce.com/media/salesforce-cli/sf/channels/stable/sf-x64.exe"

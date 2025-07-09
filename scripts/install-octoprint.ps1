@@ -1,4 +1,5 @@
-﻿
+﻿#requires -version 5.1
+
 try {
 	"⏳ Installing OctoPrint (snap 'octoprint-pfs', channel 'edge')..."
 

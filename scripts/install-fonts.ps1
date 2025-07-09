@@ -1,3 +1,5 @@
+#requires -version 5.1
+
 param(
     [string]$sourceFolder = ""
 )

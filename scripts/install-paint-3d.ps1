@@ -11,6 +11,8 @@
 	Author: Markus Fleschutz | License: CC0
 #>
 
+#requires -version 5.1
+
 try {
 	"Installing Paint 3D, please wait..."
 

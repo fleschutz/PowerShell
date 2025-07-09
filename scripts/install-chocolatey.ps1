@@ -11,7 +11,7 @@
         Author: Markus Fleschutz | License: CC0
 #>
 
-#Requires -RunAsAdministrator
+#requires -version 5.1 -RunAsAdministrator
 
 try {
 	[System.Net.ServicePointManager]::SecurityProtocol = [System.Net.ServicePointManager]::SecurityProtocol -bor 3072

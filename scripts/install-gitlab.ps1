@@ -1,3 +1,4 @@
+#requires -version 5.1
 
 "1. Install and configure the necessary dependencies"
 & sudo apt-get update

@@ -14,6 +14,8 @@
 	https://github.com/fleschutz/PowerShell
 #>
 
+#requires -version 5.1
+
 try {
 	$stopWatch = [system.diagnostics.stopwatch]::startNew()
 

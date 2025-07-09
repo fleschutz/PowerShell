@@ -21,7 +21,7 @@
 	Author: Markus Fleschutz | License: CC0
 #>
 
-#Requires -RunAsAdministrator
+#requires -version 5.1 -RunAsAdministrator
 
 param([int]$port = 8099, [string]$mediaFolder = "/opt/Calibre Library", [string]$userDB = "/opt/CalibreUsers.sqlite", [string]$logfile = "/opt/CalibreServer.log")
 

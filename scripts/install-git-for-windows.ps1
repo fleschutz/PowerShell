@@ -11,6 +11,8 @@
 	Author: Markus Fleschutz | License: CC0
 #>
 
+#requires -version 5.1
+
 try {
 	"Installing Git for Windows, please wait..."
 

@@ -12,6 +12,8 @@
 	Author: Markus Fleschutz | License: CC0
 #>
 
+#requires -version 5.1
+
 try {
 	$StopWatch = [system.diagnostics.stopwatch]::startNew()
 	if (!$IsLinux) { throw "Only Linux currently support snaps" }

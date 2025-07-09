@@ -13,6 +13,8 @@
 	Author: Markus Fleschutz | License: CC0
 #>
 
+#requires -version 5.1
+
 try {
 	"⏳ Installing VLC media player from WinGet..."
 	$stopWatch = [system.diagnostics.stopwatch]::startNew()
