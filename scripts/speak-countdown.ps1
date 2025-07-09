@@ -14,6 +14,8 @@
 	Author: Markus Fleschutz | License: CC0
 #>
 
+#requires -version 5.1
+
 param([int]$startNumber = 10)
 
 try {

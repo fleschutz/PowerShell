@@ -13,6 +13,8 @@
 	Author: Markus Fleschutz | License: CC0
 #>
 
+#requires -version 5.1
+
 function Speak([string]$Text) { 
 	Write-Output "📣 $Text"
 	[void]$Voice.speak("$Text")
