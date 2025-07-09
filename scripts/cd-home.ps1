@@ -12,6 +12,8 @@
 	Author: Markus Fleschutz | License: CC0
 #>
 
+#requires -version 5.1
+
 try {
 	if (-not(Test-Path "~" -pathType container)) { throw "No home directory at: $path" }
 	$path = Resolve-Path "~"

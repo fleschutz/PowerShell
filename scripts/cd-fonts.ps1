@@ -12,6 +12,8 @@
 	Author: Markus Fleschutz | License: CC0
 #>
 
+#requires -version 5.1
+
 try {
 	$path = [Environment]::GetFolderPath('Fonts')
 	if (-not(Test-Path "$path" -pathType container)) {

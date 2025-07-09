@@ -12,6 +12,8 @@
 	Author: Markus Fleschutz | License: CC0
 #>
 
+#requires -version 5.1
+
 function GetCurrentUserSID { [CmdletBinding()] param()
 	Add-Type -AssemblyName System.DirectoryServices.AccountManagement
 	return ([System.DirectoryServices.AccountManagement.UserPrincipal]::Current).SID.Value

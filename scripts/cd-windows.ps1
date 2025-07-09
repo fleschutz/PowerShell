@@ -12,6 +12,8 @@
 	Author: Markus Fleschutz | License: CC0
 #>
 
+#requires -version 5.1
+
 try {
 	if ($IsLinux -or $IsMacOS) { throw "This script requires a Windows operating system" }
 

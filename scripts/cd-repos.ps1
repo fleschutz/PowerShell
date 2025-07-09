@@ -12,6 +12,8 @@
 	Author: Markus Fleschutz | License: CC0
 #>
 
+#requires -version 5.1
+
 try {
 	if (Test-Path "~/Repos"              -pathType container) { $path = "~/Repos"
 	} elseif (Test-Path "~/repos"        -pathType container) { $path = "~/repos"
