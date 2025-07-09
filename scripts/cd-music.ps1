@@ -12,6 +12,8 @@
 	Author: Markus Fleschutz | License: CC0
 #>
 
+#requires -version 5.1
+
 try {
 	if ($IsLinux) {
 		if (-not(Test-Path "~/Music/" -pathType container)) {
@@ -30,6 +32,6 @@ try {
 	"📂$path with $($folders.Count) folders and $($files.Count) files entered."
 	exit 0 # success
 } catch {
-	"⚠️ Error: $($Error[0])"
+	"⚠️ ERROR: $($Error[0])"
 	exit 1
 }

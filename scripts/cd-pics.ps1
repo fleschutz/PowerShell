@@ -2,7 +2,7 @@
 .SYNOPSIS
 	Sets the working dir to the user's pictures folder
 .DESCRIPTION
-	This PowerShell script sets the current working directory to the user's pictures folder.
+	This PowerShell script changes the current working directory to the user's pictures folder.
 .EXAMPLE
 	PS> ./cd-pics.ps1
 	📂C:\Users\Markus\Pictures with 7 files and 0 folders entered.
@@ -11,6 +11,8 @@
 .NOTES
 	Author: Markus Fleschutz | License: CC0
 #>
+
+#requires -version 5.1
 
 try {
 	if ($IsLinux) {
@@ -30,6 +32,6 @@ try {
 	"📂$path with $($files.Count) files and $($folders.Count) folders entered."
 	exit 0 # success
 } catch {
-	"⚠️ Error: $($Error[0])"
+	"⚠️ ERROR: $($Error[0])"
 	exit 1
 }

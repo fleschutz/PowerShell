@@ -2,7 +2,7 @@
 .SYNOPSIS
 	Sets the working dir to the repos folder
 .DESCRIPTION
-	This PowerShell script changes the working directory to the folder for Git repositories.
+	This PowerShell script changes the current working directory to the folder for Git repositories.
 .EXAMPLE
 	PS> ./cd-repos.ps1
 	📂C:\Repos with 33 folders entered.
@@ -32,6 +32,6 @@ try {
 	"📂$path with $($folders.Count) folders entered."
 	exit 0 # success
 } catch {
-	"⚠️ Error: $($Error[0])"
+	"⚠️ ERROR: $($Error[0])"
 	exit 1
 }

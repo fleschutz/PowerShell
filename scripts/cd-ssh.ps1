@@ -12,10 +12,12 @@
 	Author: Markus Fleschutz | License: CC0
 #>
 
+#requires -version 5.1
+
 try {
 	$path = "~/.ssh"
 	if (-not(Test-Path "$path" -pathType container)) {
-		throw "Your home directory has no '.ssh' folder yet - Please install SSH."
+		throw "No '.ssh' folder in your home directory yet - Please install SSH."
 	}
 	$path = Resolve-Path "$path"
 	Set-Location "$path"

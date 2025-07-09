@@ -12,6 +12,8 @@
 	Author: Markus Fleschutz | License: CC0
 #>
 
+#requires -version 5.1
+
 try {
 	$path = Resolve-Path "~/AppData/Roaming/Microsoft/Windows/Start Menu/Programs/Startup"
 	if (-not(Test-Path "$path" -pathType container)) {

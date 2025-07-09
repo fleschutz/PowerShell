@@ -4,13 +4,15 @@
 .DESCRIPTION
 	This PowerShell script changes the working directory to the Jenkins home directory.
 .EXAMPLE
-	PS> ./cd-jenkins
+	PS> ./cd-jenkins.ps1
 	📂C:\Users\Markus\.jenkins entered (has 2 files and 21 folders)
 .LINK
 	https://github.com/fleschutz/PowerShell
 .NOTES
 	Author: Markus Fleschutz | License: CC0
 #>
+
+#requires -version 5.1
 
 try {
 	if (Test-Path "~/.jenkins" -pathType container) {

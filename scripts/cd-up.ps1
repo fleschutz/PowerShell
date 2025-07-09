@@ -2,15 +2,17 @@
 .SYNOPSIS
 	Sets the working directory to one level up
 .DESCRIPTION
-	This PowerShell script changes the working directory to one directory level up.
+	This PowerShell script changes the current working directory to one directory level up.
 .EXAMPLE
-	PS> .\cd-up
+	PS> .\cd-up.ps1
 	📂C:\Users
 .LINK
 	https://github.com/fleschutz/PowerShell
 .NOTES
 	Author: Markus Fleschutz | License: CC0
 #>
+
+#requires -version 5.1
 
 try {
 	$path = Resolve-Path ".."
@@ -19,6 +21,6 @@ try {
 	"📂$path"
 	exit 0 # success
 } catch {
-	"⚠️ Error in line $($_.InvocationInfo.ScriptLineNumber): $($Error[0])"
+	"⚠️ ERROR: $($Error[0])"
 	exit 1
 }

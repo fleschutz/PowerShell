@@ -12,6 +12,8 @@
 	Author: Markus Fleschutz | License: CC0
 #>
 
+#requires -version 5.1
+
 try {
 	if (-not(Test-Path "~/Dropbox" -pathType container)) {
 		throw "No 'Dropbox' folder in your home directory - is Dropbox installed?"

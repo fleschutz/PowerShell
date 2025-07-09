@@ -12,6 +12,8 @@
 	Author: Markus Fleschutz | License: CC0
 #>
 
+#requires -version 5.1
+
 try {
 	if ($IsLinux -or $IsMacOS) { $path = "/" } else { $path = "C:\" }
 	Set-Location "$path"
@@ -20,6 +22,6 @@ try {
 	"📂$path with $($folders.Count) folders and $($files.Count) files entered."
 	exit 0 # success
 } catch {
-	"⚠️ Error: $($Error[0])"
+	"⚠️ ERROR: $($Error[0])"
 	exit 1
 }

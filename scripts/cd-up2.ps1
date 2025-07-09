@@ -1,16 +1,18 @@
 ﻿<#
 .SYNOPSIS
-	Sets the working directory to two directory levels up
+	Sets the working directory 2 directory levels up
 .DESCRIPTION
-	This PowerShell script changes the working directory to two directory level up.
+	This PowerShell script changes the current working directory to two directory level up.
 .EXAMPLE
-	PS> ./cd-up2
+	PS> ./cd-up2.ps1
 	📂C:\
 .LINK
 	https://github.com/fleschutz/PowerShell
 .NOTES
 	Author: Markus Fleschutz | License: CC0
 #>
+
+#requires -version 5.1
 
 try {
 	$path = Resolve-Path "../.."
@@ -19,6 +21,6 @@ try {
 	"📂$path"
 	exit 0 # success
 } catch {
-	"⚠️ Error in line $($_.InvocationInfo.ScriptLineNumber): $($Error[0])"
+	"⚠️ ERROR: $($Error[0])"
 	exit 1
 }

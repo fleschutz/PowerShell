@@ -12,6 +12,8 @@
 	Author: Markus Fleschutz | License: CC0
 #>
 
+#requires -version 5.1
+
 function GetTempDir {
         if ("$env:TEMP" -ne "") { return "$env:TEMP" }
         if ("$env:TMP" -ne "")  { return "$env:TMP" }
@@ -21,9 +23,7 @@ function GetTempDir {
 
 try {
 	$path = GetTempDir
-	if (-not(Test-Path "$path" -pathType container)) { throw
-		"No temporary folder at: $path"
-	}
+	if (-not(Test-Path "$path" -pathType container)) { throw "No temporary folder at: $path" }
 	Set-Location "$path"
 	$files = Get-ChildItem $path -attributes !Directory
 	$folders = Get-ChildItem $path -attributes Directory

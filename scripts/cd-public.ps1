@@ -2,7 +2,7 @@
 .SYNOPSIS
 	Sets the working dir to the Public folder
 .DESCRIPTION
-	This PowerShell script sets the current working directory to the Public folder.
+	This PowerShell script changes the current working directory to the Public folder.
 .EXAMPLE
 	PS> ./cd-public.ps1
 	📂C:\Users\Public with 2 files and 3 folders entered.
@@ -11,6 +11,8 @@
 .NOTES
 	Author: Markus Fleschutz | License: CC0
 #>
+
+#requires -version 5.1
 
 try {
 	if ($IsLinux) {
@@ -30,6 +32,6 @@ try {
 	"📂$path with $($files.Count) files and $($folders.Count) folders entered."
 	exit 0 # success
 } catch {
-	"⚠️ Error: $($Error[0])"
+	"⚠️ ERROR: $($Error[0])"
 	exit 1
 }

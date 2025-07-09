@@ -12,9 +12,11 @@
 	Author: Markus Fleschutz | License: CC0
 #>
 
+#requires -version 5.1
+
 try {
 	if (-not(Test-Path "~/Sync" -pathType container)) {
-		throw "Your home directory has no 'Sync' folder yet - Please install Syncthing."
+		throw "No 'Sync' folder in your home directory yet - Please install Syncthing."
 	}
 	$path = Resolve-Path "~/Sync"
 	Set-Location "$path"

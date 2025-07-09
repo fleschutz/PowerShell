@@ -2,7 +2,7 @@
 .SYNOPSIS
 	Sets the working directory to a repo
 .DESCRIPTION
-	This PowerShell script changes the working directory to the given local Git repository.
+	This PowerShell script changes the current working directory to the given local Git repository.
 .PARAMETER folderName
 	Specifies the folder name of the Git repository
 .EXAMPLE
@@ -43,6 +43,6 @@ try {
 	& git status --branch --short 
 	exit 0 # success
 } catch {
-	"⚠️ Error: $($Error[0])"
+	"⚠️ ERROR: $($Error[0])"
 	exit 1
 }

@@ -2,9 +2,9 @@
 .SYNOPSIS
 	Sets the working dir to the trash folder
 .DESCRIPTION
-	This PowerShell script changes the working directory to the user's trash folder.
+	This PowerShell script changes the current working directory to the user's trash folder.
 .EXAMPLE
-	PS> ./cd-trash
+	PS> ./cd-trash.ps1
 	📂C:\$Recycle.Bin\S-1-5-21-123404-23309-294260-1001 with 4 files and 0 folders entered.
 .LINK
 	https://github.com/fleschutz/PowerShell
@@ -35,6 +35,6 @@ try {
 	"📂$path with $($files.Count) files and $($folders.Count) folders entered."
 	exit 0 # success
 } catch {
-	"⚠️ Error: $($Error[0])"
+	"⚠️ ERROR: $($Error[0])"
 	exit 1
 }

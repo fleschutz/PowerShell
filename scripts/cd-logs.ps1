@@ -4,13 +4,15 @@
 .DESCRIPTION
 	This PowerShell script changes the current working directory to the logs directory.
 .EXAMPLE
-	PS> ./cd-logs
-	📂/var/logs entered (has 3 files and 2 subfolders)
+	PS> ./cd-logs.ps1
+	📂/var/logs with 3 files and 2 folders entered.
 .LINK
 	https://github.com/fleschutz/PowerShell
 .NOTES
 	Author: Markus Fleschutz | License: CC0
 #>
+
+#requires -version 5.1
 
 function GetLogsDir {
 	if ($IsLinux -or $IsMacOS) { return "/var/logs" }
@@ -23,9 +25,9 @@ try {
 	Set-Location "$path"
 	$files = Get-ChildItem $path -attributes !Directory
 	$folders = Get-ChildItem $path -attributes Directory
-	"📂$path entered (has $($files.Count) files and $($folders.Count) subfolders)"
+	"📂$path with $($files.Count) files and $($folders.Count) folders entered."
 	exit 0 # success
 } catch {
-	"⚠️ Error: $($Error[0])"
+	"⚠️ ERROR: $($Error[0])"
 	exit 1
 }
