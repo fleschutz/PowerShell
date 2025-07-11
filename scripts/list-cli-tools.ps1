@@ -338,6 +338,7 @@ function List-CLI-Tools {
 	ListTool zipnote	""
 	ListTool zipsplit	""
 	ListTool zsh		"--version"
+	ListTool zstd		"--version"
 	ListTool zvm		"--version"
 }
  
