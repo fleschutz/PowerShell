@@ -50,6 +50,19 @@
 #                                                                #
 ##################################################################
 
+# Check if running with administrator privileges
+if (-NOT ([Security.Principal.WindowsPrincipal] [Security.Principal.WindowsIdentity]::GetCurrent()).IsInRole([Security.Principal.WindowsBuiltInRole] "Administrator")) {
+    Write-Host "ERROR: This script requires administrator privileges to modify registry keys." -ForegroundColor Red
+    Write-Host "Please run this script as an administrator:" -ForegroundColor Yellow
+    Write-Host "1. Right-click on PowerShell" -ForegroundColor Yellow
+    Write-Host "2. Select 'Run as administrator'" -ForegroundColor Yellow
+    Write-Host "3. Re-run this script" -ForegroundColor Yellow
+    Write-Host ""
+    Write-Host "Press any key to exit..."
+    $null = $Host.UI.RawUI.ReadKey("NoEcho,IncludeKeyDown")
+    exit 1
+}
+
 #Setting Values:
 $MDN = '0'
 $MDWDS = '1'
@@ -101,7 +114,7 @@ Clear-Host
 Write-Host "Setting up your machine to receive Usermode Dumps via WER."
 Start-Sleep -seconds 3
 
-
+New-Item -Path "HKLM:\SOFTWARE\Microsoft\Windows\Windows Error Reporting\LocalDumps" -Force
 New-ItemProperty -Path "HKLM:\SOFTWARE\Microsoft\Windows\Windows Error Reporting\LocalDumps" -Name "DumpFolder" -Value "%LOCALAPPDATA%\CrashDumps" -PropertyType ExpandString -Force
 New-ItemProperty -Path "HKLM:\SOFTWARE\Microsoft\Windows\Windows Error Reporting\LocalDumps" -Name "DumpCount" -Value "10" -PropertyType DWORD -Force
 
@@ -115,7 +128,7 @@ $NCD = Read-Host "Enter a number option"
 
 If ($NCD -eq '3')
 {
-    
+    New-Item -Path "HKLM:\SOFTWARE\Microsoft\Windows\Windows Error Reporting\LocalDumps" -Force
     New-ItemProperty -Path "HKLM:\SOFTWARE\Microsoft\Windows\Windows Error Reporting\LocalDumps" -Name "DumpType" -Value "0" -PropertyType DWORD -Force
     Do
     {
@@ -239,6 +252,7 @@ If ($NCD -eq '3')
     $SumArray = Invoke-Expression $sum
     $FinalSum = $0x + $SumArray
 
+    New-Item -Path "HKLM:\SOFTWARE\Microsoft\Windows\Windows Error Reporting\LocalDumps" -Force
     New-ItemProperty -Path "HKLM:\SOFTWARE\Microsoft\Windows\Windows Error Reporting\LocalDumps" -Name "CustomDumpFlags" -Value "$FinalSum" -PropertyType DWORD -Force
 
     write-host " "
@@ -263,6 +277,7 @@ ElseIf ($NCD -eq '0')
 }
 ElseIf ($NCD -eq '1')
 {
+    New-Item -Path "HKLM:\SOFTWARE\Microsoft\Windows\Windows Error Reporting\LocalDumps" -Force
     New-ItemProperty -Path "HKLM:\SOFTWARE\Microsoft\Windows\Windows Error Reporting\LocalDumps" -Name "DumpType" -Value "2" -PropertyType DWORD -Force
     write-host "The computer has been set up to create a Full Sized Dump and will be located in %LOCALAPPDATA%\CrashDumps."
     write-host "The computer must also restart for settings to take effect.  Would you like to now? (Y/n)"
@@ -277,6 +292,7 @@ ElseIf ($NCD -eq '1')
 }
 ElseIf ($NCD -eq '2')
 {
+    New-Item -Path "HKLM:\SOFTWARE\Microsoft\Windows\Windows Error Reporting\LocalDumps" -Force
     New-ItemProperty -Path "HKLM:\SOFTWARE\Microsoft\Windows\Windows Error Reporting\LocalDumps" -Name "DumpType" -Value "1" -PropertyType DWORD -Force
     write-host "The computer has been set up to create a Mini Dump and will be located in %LOCALAPPDATA%\CrashDumps."
     write-host "The computer must also restart for settings to take effect.  Would you like to now? (Y/n)"
