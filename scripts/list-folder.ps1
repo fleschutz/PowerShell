@@ -4,7 +4,7 @@
 .DESCRIPTION
 	This PowerShell script lists the content of a directory (alphabetically formatted in columns).
 .PARAMETER SearchPattern
-	Specifies the search pattern ("*" by default which means anything)
+	Specifies the search pattern (default is "*" which means anything)
 .EXAMPLE
 	PS> ./list-folder.ps1 C:\*
 .LINK
@@ -25,6 +25,7 @@ function GetFileIcon([string]$suffix) {
 	".jpg"	{return "📸"}
 	".mp3"	{return "🎵"}
 	".mkv"	{return "🎬"}
+	".ps1"  {return "⚙️"}
 	".zip"  {return "🎁"}
 	default {return "📄"}
 	}
