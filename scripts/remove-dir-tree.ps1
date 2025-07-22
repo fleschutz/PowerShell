@@ -7,6 +7,7 @@
         Specifies the file path to the directory tree
 .EXAMPLE
         PS> ./remove-dir-tree.ps1 C:\Temp
+	✅ Removed directory 'C:\Temp\ in 9s.
 .LINK
         https://github.com/fleschutz/PowerShell
 .NOTES
@@ -17,9 +18,13 @@ param([string]$pathToDirTree = "")
 
 try {
 	if ($pathToDirTree -eq "" ) { $pathToDirTree = Read-Host "Enter the path to the directory tree" }
+	$stopWatch = [system.diagnostics.stopwatch]::startNew()
 
 	Remove-Item -Force -Recurse -Confirm:$false $pathToDirTree
+	if ($lastExitCode -ne 0) { throw "'Remove-Item' failed with exit code $lastExitCode" }
 
+	[int]$elapsed = $stopWatch.Elapsed.TotalSeconds
+	"✅ Removed directory '$pathToDirTree' in $($elapsed)s."
 	exit 0 # success
 } catch {
         "⚠️ Error in line $($_.InvocationInfo.ScriptLineNumber): $($Error[0])"
