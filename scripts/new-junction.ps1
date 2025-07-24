@@ -20,10 +20,9 @@ param([string]$junction = "", [string]$targetDir = "")
 
 try {
 	if ($junction -eq "" ) { $junction = Read-Host "Enter the new junction's path and filename" }
-	if ($targetDir -eq "" ) { $target = Read-Host "Enter the path to the target directory    " }
+	if ($targetDir -eq "" ) { $targetDir = Read-Host "Enter the path to the target directory    " }
 
 	New-Item -path "$junction" -itemType Junction -value "$targetDir"
-	if ($lastExitCode -ne 0) { throw "Command 'New-Item' has failed" }
 
 	"✅ New junction '$junction' created, linking to: 📂$targetDir"
 	exit 0 # success
