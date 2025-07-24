@@ -42,9 +42,9 @@ try {
 	if ($lastExitCode -ne 0) { throw "Error: 'git push origin $TagName' failed!" }
 
 	[int]$Elapsed = $StopWatch.Elapsed.TotalSeconds
-	"✅ created new tag '$TagName' in $Elapsed sec"
+	"✅ Created new tag '$TagName' in $Elapsed sec"
 	exit 0 # success
 } catch {
-	"⚠️ Error in line $($_.InvocationInfo.ScriptLineNumber): $($Error[0])"
+	"⚠️ ERROR: $($Error[0]) in script line $($_.InvocationInfo.ScriptLineNumber)."
 	exit 1
 }

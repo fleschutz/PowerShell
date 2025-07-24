@@ -8,7 +8,7 @@
         Specifies the file path to the directory tree
 .EXAMPLE
         PS> ./remove-dir.ps1 C:\Temp
-	⏳ Removing 'C:\Temp'...      (please wait)"
+	⏳ Removing directory 'C:\Temp', please wait..."
 	✅ Directory C:\Temp\ removed (took 9s).
 .LINK
         https://github.com/fleschutz/PowerShell
@@ -20,16 +20,18 @@ param([string]$pathToDir = "")
 
 try {
 	if ($pathToDir -eq "" ) { $pathToDir = Read-Host "Enter the file path to the obsolete directory" }
-	$stopWatch = [system.diagnostics.stopwatch]::startNew()
-	"⏳ Removing '$pathToDir'...      (please wait)"
 
-	Remove-Item -Force -Recurse -Confirm:$false $pathToDir
+	$stopWatch = [system.diagnostics.stopwatch]::startNew()
+	if (!(Test-Path "$pathToDir" -pathType container)) { throw "Cannot access directory '$pathToDir'" }
+
+	"⏳ Removing directory '$pathToDir', please wait..."
+	Remove-Item -force -recurse -confirm:$false $pathToDir
 	if ($lastExitCode -ne 0) { throw "'Remove-Item' failed with exit code $lastExitCode" }
 
 	[int]$elapsed = $stopWatch.Elapsed.TotalSeconds
 	"✅ Directory $pathToDir removed (took $($elapsed)s)."
 	exit 0 # success
 } catch {
-        "⚠️ Error in line $($_.InvocationInfo.ScriptLineNumber): $($Error[0])"
+	"⚠️ ERROR: $($Error[0]) in script line $($_.InvocationInfo.ScriptLineNumber)."
         exit 1
 }

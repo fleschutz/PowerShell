@@ -41,6 +41,6 @@ try {
 	"✅ evcc installed successfully in $($elapsed)s."
 	exit 0 # success
 } catch {
-	"Sorry: $($Error[0])"
+	"⚠️ ERROR: $($Error[0]) in script line $($_.InvocationInfo.ScriptLineNumber)."
 	exit 1
 }

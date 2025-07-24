@@ -6,7 +6,7 @@
 .EXAMPLE
 	PS> ./install-edit.ps1
 	⏳ Installing Microsoft Edit from Microsoft Store...
-	✅ Microsoft Edit installed successfully in 25s.
+	✅ Microsoft Edit installed successfully (took 25s).
 .LINK
 	https://github.com/fleschutz/PowerShell
 .NOTES
@@ -28,9 +28,9 @@ try {
 		if ($lastExitCode -ne 0) { throw "Can't install Microsoft Edit, is it already installed?" }
 	}
 	[int]$elapsed = $stopWatch.Elapsed.TotalSeconds
-	"✅ Microsoft Edit installed successfully in $($elapsed)s."
+	"✅ Microsoft Edit installed successfully (took $($elapsed)s)."
 	exit 0 # success
 } catch {
-	"⚠️ ERROR: $($Error[0])"
+	"⚠️ ERROR: $($Error[0]) in script line $($_.InvocationInfo.ScriptLineNumber)."
 	exit 1
 }

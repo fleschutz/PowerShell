@@ -40,10 +40,10 @@ try {
 	rm "signal-cli-$Version.tar.gz"
 	if ($lastExitCode -ne 0) { throw "'rm' failed" }
 
-	[int]$Elapsed = $StopWatch.Elapsed.TotalSeconds
-	"✅ installed signal-cli $Version to /opt and /usr/local/bin in $Elapsed sec"
+	[int]$elapsed = $StopWatch.Elapsed.TotalSeconds
+	"✅ Signal-cli $Version installed to /opt and /usr/local/bin in $elapsed sec."
 	exit 0 # success
 } catch {
-	"⚠️ Error in line $($_.InvocationInfo.ScriptLineNumber): $($Error[0])"
+	"⚠️ ERROR: $($Error[0]) in script line $($_.InvocationInfo.ScriptLineNumber)."
 	exit 1
 }
