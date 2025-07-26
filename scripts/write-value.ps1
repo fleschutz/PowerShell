@@ -40,25 +40,37 @@ function WriteValueInRange([float]$value, [string]$unit, [float]$redMin, [float]
 	}
 }
 
-WriteValueInRange -3.5 "°C" 0 10 90 100
-Write-Host "CPU too cold"
+Write-Host ""
+Write-Host "   TRACK " -noNewline
+WriteValueInRange 50.0 "°" 0 0 360 360
+Write-Host ""
 
-WriteValueInRange 5 "°C" 0 10 90 100
-Write-Host "CPU quite cold"
+Write-Host "   ALT   " -noNewline
+WriteValueInRange 800 "m" 0 0 6000 8000
+Write-Host ""
 
-WriteValueInRange 15 "°C" 0 10 90 100
-Write-Host "OK"
+Write-Host "   SPEED " -noNewline
+WriteValueInRange 190 "km/h" 0 0 180 200
+Write-Host ""
 
-WriteValueInRange 50 "°C" 0 10 90 100
-Write-Host "OK"
+Write-Host "   BANK  " -noNewline
+WriteValueInRange 3.3 "°" -30 -10 10 30
+Write-Host ""
 
-WriteValueInRange 70 "°C" 0 10 90 100
-Write-Host "OK"
+Write-Host "   ENG   " -noNewline
+WriteValueInRange 2000 "RPM" 0 0 5000 6000
+Write-Host ""
 
-WriteValueInRange 95 "°C" 0 10 90 100
-Write-Host "CPU quite hot "
+Write-Host "   TEMP  " -noNewline
+WriteValueInRange 21.8 "°C" 0 10 90 100
+Write-Host ""
 
-WriteValueInRange 110 "°C" 0 10 90 100
-Write-Host "CPU too hot "
+Write-Host "   FUEL  " -noNewline
+WriteValueInRange 0.1 "l" 0 5 60 65
+Write-Host ""
+
+Write-Host "   FREQ  " -noNewline
+WriteValueInRange 104.4 "MHz" 80 80 108 108
+Write-Host ""
 
 exit 0 # success
