@@ -7,8 +7,8 @@
 	Specifies the remote hostname or IP address
 .EXAMPLE
 	PS> ./enter-host.ps1 tux
-	✅ tux is online (3ms latency to 192.168.1.179)
-	⏳ Connecting as user 'markus'...    using OpenSSH_for_Windows_9.5p1, LibreSSL 3.8.2
+	✅ 'tux' is online with 3ms ping to it's IP 192.168.1.179
+	⏳ Connecting as user 'markus' with OpenSSH_for_Windows_9.5p1, LibreSSL 3.8.2
 	markus@tux's password:
 	...
 .LINK
@@ -36,7 +36,7 @@ try {
 		& "$PSScriptRoot/wake-up-host.ps1" 
 	}
 
-	Write-Host "⏳ Connecting as user '$remoteUser'...      using " -noNewline
+	Write-Host "⏳ Connecting as user '$remoteUser' with " -noNewline
 	& ssh -V
 	if ($lastExitCode -ne 0) { throw "'ssh -V' failed with exit code $lastExitCode" }
 
