@@ -4,14 +4,14 @@
 .DESCRIPTION
 	This PowerShell script synchronizes a local Git repository by pull and push (including submodules).
 .PARAMETER path
-	Specifies the path to the Git repository (current working directory by default)
+	Specifies the file path to the Git repository (current working directory by default)
 .EXAMPLE
 	PS> ./sync-repo.ps1 C:\Repos\curl
 	⏳ (1/4) Searching for Git executable...  git version 2.42.0.windows.1
 	⏳ (2/4) Checking local repository...     C:\Repos\curl
 	⏳ (3/4) Pulling remote updates...        Already up to date.
 	⏳ (4/4) Pushing local updates...         Everything up-to-date
-	✅ Synced the 📂curl repo in 5s.
+	✅ Repo 'curl' synchronized in 5s.
 .LINK
 	https://github.com/fleschutz/PowerShell
 .NOTES
@@ -40,9 +40,9 @@ try {
 
 	$pathName = (Get-Item "$path").Name
 	[int]$elapsed = $stopWatch.Elapsed.TotalSeconds
-	"✅ Synced the 📂$pathName repo in $($elapsed)s."
+	"✅ Repo '$pathName' synchronized in $($elapsed)s."
 	exit 0 # success
 } catch {
-	"⚠️ Error in line $($_.InvocationInfo.ScriptLineNumber): $($Error[0])"
+	"⚠️ ERROR: $($Error[0]) in script line $($_.InvocationInfo.ScriptLineNumber)."
 	exit 1
 }
