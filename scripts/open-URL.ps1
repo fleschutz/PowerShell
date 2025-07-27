@@ -22,16 +22,17 @@ param([string]$URL = "", [string]$text = "")
 try {
 	if ($URL -eq "") { $URL = Read-Host "Enter the URL" }
 
-	if ($text -ne "") {
+	if ($IsLinux -or $IsMacOS) {
 		Write-Host $text -noNewline
-		Write-Host $URL -foregroundColor blue
-	}
-	if ($IsLinux) {
+		Write-Host $URL -foregroundColor blue -noNewline
+		Write-Host " (open link with: <Ctrl> <click>)"
 	} else {
 		Start-Process $URL
+		Write-Host "✅ Launched Web browser with $text" -noNewline
+		Write-Host $URL -foregroundColor blue
 	}
 	exit 0 # success
 } catch {
-	"⚠️ Error: $($Error[0]) (script line $($_.InvocationInfo.ScriptLineNumber))"
+	"⚠️ ERROR: $($Error[0]) in script line $($_.InvocationInfo.ScriptLineNumber)."
 	exit 1
 }
