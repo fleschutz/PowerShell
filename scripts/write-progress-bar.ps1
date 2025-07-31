@@ -1,8 +1,7 @@
 ﻿$progressBar = @('⣾','⣽','⣻','⢿','⡿','⣟','⣯','⣷')
-$progressIndex = 0
     
-do {
-	Write-Host "`r$($progressBar[$progressIndex]) Working on something..." -NoNewline
-	$progressIndex = ($progressIndex + 1) % $progressBar.Length
+for ([int]$i = 0; $i -lt 150; $i++) {
+	Write-Host "`r$($progressBar[$i % 7]) Working on something..." -NoNewline
 	Start-Sleep -milliseconds 100
-} while ($true)
+}
+exit 0 # success
