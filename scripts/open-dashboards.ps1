@@ -7,7 +7,7 @@
 	Specifies the time interval between each tab (110ms per default)
 .EXAMPLE
 	PS> ./open-dashboards.ps1
-	⏳ Launching Web browser with 24 tabs: Toggl Track•Google Calendar•Google Mail, ...
+	⏳ Launching Web browser with 24 tabs: Toggl Track,Google Calendar,Google Mail,...
 	NOTE: Execute './switch-tabs.ps1' to switch from tab to tab automatically.
 .LINK
 	https://github.com/fleschutz/PowerShell
@@ -27,7 +27,7 @@ try {
 
 	Write-Host "⏳ Launching Web browser with $numRows tabs: " -noNewline
 	foreach($row in $table) {
-		Write-Host "$($row.NAME)•" -noNewline
+		Write-Host "$($row.NAME)," -noNewline
 		& "$PSScriptRoot/open-default-browser.ps1" "$($row.URL)"
 		Start-Sleep -milliseconds $timeInterval
 	}
@@ -35,6 +35,6 @@ try {
 	Write-Host "NOTE: Execute './switch-tabs.ps1' to switch from tab to tab automatically."
 	exit 0 # success
 } catch {
-	"⚠️ Error in line $($_.InvocationInfo.ScriptLineNumber): $($Error[0])"
+	"⚠️ ERROR: $($Error[0]) in script line $($_.InvocationInfo.ScriptLineNumber)."
 	exit 1
 }
