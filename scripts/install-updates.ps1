@@ -6,11 +6,11 @@
 	HINT: Use the script 'list-updates.ps1' to list the latest software updates in advance.
 .EXAMPLE
 	PS> ./install-updates.ps1
-	⏳ (1/2) Checking update requirements...
+	⏳ (1/2) Checking requirements...
 	✅ Drive C: uses 56% of 1TB: 441GB free
 	✅ Swap space uses 22% of 4GB: 3GB free
 
-	⏳ (2/2) Checking Microsoft Store for updates...
+	⏳ (2/2) Querying Microsoft Store...
 	...
 .LINK
 	https://github.com/fleschutz/PowerShell
@@ -54,17 +54,17 @@ try {
 		& "$PSScriptRoot/check-swap-space.ps1"
 		Start-Sleep -seconds 3
 		""
-		"⏳ (2/4) Checking Microsoft Store for updates..."
+		"⏳ (2/4) Querying Microsoft Store..."
 		if (Get-Command winget -errorAction SilentlyContinue) {
 			& winget upgrade --all --source=msstore --include-unknown
 		}
 		""
-		"⏳ (3/4) Checking WinGet for updates..."
+		"⏳ (3/4) Querying WinGet..."
 		if (Get-Command winget -errorAction SilentlyContinue) {
 			& winget upgrade --all --source=winget --include-unknown
 		}
 		""
-		"⏳ (4/4) Checking Chocolatey for updates..."
+		"⏳ (4/4) Querying Chocolatey..."
 		if (Get-Command choco -errorAction SilentlyContinue) {
 			& choco upgrade all -y
 		}
