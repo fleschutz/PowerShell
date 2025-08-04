@@ -1,13 +1,13 @@
 ﻿<#
 .SYNOPSIS
-	Checks all symlinks in a folder
+	Checks all symlinks in a dir tree
 .DESCRIPTION
 	This PowerShell script checks all symbolic links in a directory tree. It returns the number of broken symlinks as exit value.
-.PARAMETER folder
-	Specifies the path to the folder
+.PARAMETER path
+	Specifies the file path to the directory tree
 .EXAMPLE
 	PS> ./check-symlinks D:\
-	⏳ Please wait while checking symlinks at: 📂D:\ ...
+	⏳ Checking symlinks at 'D:\'... (please wait)
 	✅ Found 0 broken symlinks at 📂D:\ in 60s.
 .LINK
 	https://github.com/fleschutz/PowerShell
@@ -15,14 +15,14 @@
 	Author: Markus Fleschutz | License: CC0
 #>
 
-param([string]$Folder = "")
+param([string]$path = "")
 
 try {
-	if ($Folder -eq "" ) { $Folder = Read-Host "Enter the path to the folder" }
+	if ($path -eq "" ) { $path = Read-Host "Enter the path to the folder" }
 
 	$stopWatch = [system.diagnostics.stopwatch]::startNew()
-	$fullPath = Resolve-Path "$Folder"
-	"⏳ Please wait while checking symlinks at 📂$fullPath ..."
+	$fullPath = Resolve-Path "$path"
+	"⏳ Checking symlinks at '$fullPath'... (please wait)"
 
 	[int]$numTotal = [int]$numBroken = 0
 	Get-ChildItem $fullPath -recurse  | Where { $_.Attributes -match "ReparsePoint" } | ForEach-Object {
@@ -41,14 +41,16 @@ try {
 
 	[int]$elapsed = $stopWatch.Elapsed.TotalSeconds
 	if ($numTotal -eq 0) {
-		"✅ No symlink found at 📂$fullPath in $($elapsed)s." 
+		"✅ No symlinks at $fullPath (took $($elapsed)s)." 
+	} elseif ($numBroken -eq 0) {
+		"✅ No broken symlinks at $fullPath (found $numTotal symlinks, took $($elapsed)s)." 
 	} elseif ($numBroken -eq 1) {
-		"✅ Found $numBroken broken symlink at 📂$fullPath in $($elapsed)s ($numTotal symlinks in total)."
+		"⚠️ 1 broken symlink at $fullPath (found $numTotal symlinks, took $($elapsed)s)."
 	} else {
-		"✅ Found $numBroken broken symlinks at 📂$fullPath in $($elapsed)s ($numTotal symlinks in total)."
+		"⚠️ $numBroken broken symlinks at $fullPath (found $numTotal symlinks, took $($elapsed)s)."
 	}
 	exit $numBroken
 } catch {
-	"⚠️ Error in line $($_.InvocationInfo.ScriptLineNumber): $($Error[0])"
+	"⚠️ ERROR: $($Error[0]) in script line $($_.InvocationInfo.ScriptLineNumber)."
 	exit 1
 }
