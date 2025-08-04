@@ -6,10 +6,11 @@
 	NOTE: Apps from Microsoft Store are preferred (due to security and automatic updates). 
 .EXAMPLE
 	PS> ./install-basic-apps.ps1
-	⏳ (1) Loading data/basic-apps.csv...    37 apps listed
-	⏳ (2) Applications to install/upgrade:  7-Zip · Aquile Reader ...
+	⏳ (1) Loading basic-apps.csv from data/ folder...
+	⏳ (2) Will install/upgrade 39 basic apps: 7-Zip, Aquile Reader ...
+	NOTE: Installation starts in 15 seconds or press <Control> <C> to abort...
 	...
-	✅ Installed 37 basic apps (0 skipped) in 387 sec.
+	✅ 39 basic apps installed (0 skipped, took 387s)
 .LINK
 	https://github.com/fleschutz/PowerShell
 .NOTES
@@ -21,18 +22,16 @@
 try {
 	$stopWatch = [system.diagnostics.stopwatch]::startNew()
 
-	Write-Host "⏳ (1) Loading data/basic-apps.csv...     " -noNewline
+	Write-Host "⏳ (1) Loading basic-apps.csv from data/ folder..."
 	$table = Import-CSV "$PSScriptRoot/../data/basic-apps.csv"
 	$numEntries = $table.count
-	"$numEntries apps listed"
-	Write-Host "⏳ (2) Applications to install/upgrade:   " -noNewline
+	Write-Host "⏳ (2) Will install/upgrade $numEntries basic apps: " -noNewline
 	foreach($row in $table) {
 		[string]$appName = $row.APPLICATION
-		Write-Host "$appName · " -noNewline
+		Write-Host "$appName, " -noNewline
 	}
 	""
-	""
-	"The installation will start in 15 seconds or press <Control> <C> to abort..."
+	"NOTE: Installation starts in 15 seconds or press <Control> <C> to abort..."
 	Start-Sleep -seconds 15
 
 	[int]$step = 3
@@ -43,13 +42,13 @@ try {
 		[string]$appID = $row.APPID
 		Write-Host " "
 		Write-Host "⏳ ($step/$($numEntries + 2)) Installing $category '$appName'..."
-		& winget install --id $appID --accept-package-agreements --accept-source-agreements
+		& winget install --id $appID --silent --accept-package-agreements --accept-source-agreements
         	if ($lastExitCode -ne 0) { $numSkipped++ }
 		$step++
 	}
 	[int]$numInstalled = ($numEntries - $numSkipped)
 	[int]$elapsed = $stopWatch.Elapsed.TotalSeconds
-	"✅ Installed $numInstalled basic apps ($numSkipped skipped) in $elapsed sec."
+	"✅ $numInstalled basic apps installed ($numSkipped skipped, took $($elapsed)s)"
 	exit 0 # success
 } catch {
 	"⚠️ ERROR: $($Error[0]) in script line $($_.InvocationInfo.ScriptLineNumber)."
