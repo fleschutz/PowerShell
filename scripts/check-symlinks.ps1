@@ -6,9 +6,9 @@
 .PARAMETER path
 	Specifies the file path to the directory tree
 .EXAMPLE
-	PS> ./check-symlinks D:\
-	⏳ Checking symlinks at 'D:\'... (please wait)
-	✅ Found 0 broken symlinks at 📂D:\ in 60s.
+	PS> ./check-symlinks C:\Windows
+	⏳ Checking symlinks at 'C:\Windows'... (please wait)
+	✅ No symlinks at C:\Windows (took 102s).
 .LINK
 	https://github.com/fleschutz/PowerShell
 .NOTES
@@ -18,7 +18,7 @@
 param([string]$path = "")
 
 try {
-	if ($path -eq "" ) { $path = Read-Host "Enter the path to the folder" }
+	if ($path -eq "" ) { $path = Read-Host "Enter the file path to the directory tree" }
 
 	$stopWatch = [system.diagnostics.stopwatch]::startNew()
 	$fullPath = Resolve-Path "$path"
