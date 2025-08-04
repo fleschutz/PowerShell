@@ -10,7 +10,7 @@
 	PS> ./build-repo.ps1 C:\Repos\ninja
 	⏳ Building 'ninja' by executing cmake...
 	...
-	✅ Build of 'ninja' succeeded in 47s, results in: 📂C:\Repos\ninja\_results
+	✅ Build of 'ninja' succeeded in 47s, results at: 📂C:\Repos\ninja\_results
 .LINK
 	https://github.com/fleschutz/PowerShell
 .NOTES
@@ -158,7 +158,7 @@ try {
 	if ($global:results -eq "") {
 		"✅ Build of '$dirName' succeeded in $($elapsed)s."
 	} else {
-		"✅ Build of '$dirName' succeeded in $($elapsed)s, results in: 📂$($global:results)"
+		"✅ Build of '$dirName' succeeded in $($elapsed)s, results at: 📂$($global:results)"
 	}
 	exit 0 # success
 } catch {
