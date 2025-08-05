@@ -43,17 +43,18 @@ try {
 	Write-Progress -completed "Done."
 
 	""
-	"Monthly $($prices.name) (by alphavantage.co, in $($prices.unit))"
-	"-----------------------------------------------------------------------"
+	"Monthly $($prices.name) 1990-2025 ($($prices.unit), source: alphavantage.co)"
+	"------------------------------------------------------------------------------"
+	[array]::Reverse($prices.data)
 	foreach($item in $prices.data) {
-		if ($Item.value -eq ".") { continue }
+		if ($item.value -eq ".") { continue }
 		Write-Host "$($item.date) " -noNewline
-		[int]$value = $Item.value
-		WriteHorizontalBar $value 350.0
+		[int]$value = $item.value
+		WriteHorizontalBar $value 400.0
 		Write-Host "ct"
 	}
 	exit 0 # success
 } catch {
-	"⚠️ Error in line $($_.InvocationInfo.ScriptLineNumber): $($Error[0])"
+	"⚠️ ERROR: $($Error[0]) in script line $($_.InvocationInfo.ScriptLineNumber)."
 	exit 1
 }
