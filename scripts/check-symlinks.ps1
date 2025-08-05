@@ -7,7 +7,7 @@
 	Specifies the file path to the directory tree
 .EXAMPLE
 	PS> ./check-symlinks C:\Windows
-	⏳ Checking symlinks at 'C:\Windows'... (please wait)
+	⏳ Checking symlinks at C:\Windows including subfolders...
 	✅ No symlinks at C:\Windows (took 102s).
 .LINK
 	https://github.com/fleschutz/PowerShell
@@ -22,7 +22,7 @@ try {
 
 	$stopWatch = [system.diagnostics.stopwatch]::startNew()
 	$fullPath = Resolve-Path "$path"
-	"⏳ Checking symlinks at '$fullPath'... (please wait)"
+	"⏳ Checking symlinks at $fullPath including subfolders..."
 
 	[int]$numTotal = [int]$numBroken = 0
 	Get-ChildItem $fullPath -recurse  | Where { $_.Attributes -match "ReparsePoint" } | ForEach-Object {
@@ -43,11 +43,11 @@ try {
 	if ($numTotal -eq 0) {
 		"✅ No symlinks at $fullPath (took $($elapsed)s)." 
 	} elseif ($numBroken -eq 0) {
-		"✅ No broken symlinks at $fullPath (found $numTotal symlinks, took $($elapsed)s)." 
+		"✅ No broken symlinks at $fullPath ($numTotal symlinks in total, took $($elapsed)s)." 
 	} elseif ($numBroken -eq 1) {
-		"⚠️ 1 broken symlink at $fullPath (found $numTotal symlinks, took $($elapsed)s)."
+		"⚠️ 1 broken symlink within $fullPath ($numTotal symlinks in total, took $($elapsed)s)."
 	} else {
-		"⚠️ $numBroken broken symlinks at $fullPath (found $numTotal symlinks, took $($elapsed)s)."
+		"⚠️ $numBroken broken symlinks within $fullPath ($numTotal symlinks in total, took $($elapsed)s)."
 	}
 	exit $numBroken
 } catch {
