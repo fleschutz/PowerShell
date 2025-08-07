@@ -56,8 +56,8 @@ try {
 	$ScriptName = (Get-Item "$filename").Name
 	$full = Get-Help $filename -Full 
 
-	"PowerShell Script: *$($ScriptName)*"
-	"==================================="
+	"Script: *$($ScriptName)*"
+	"========================"
 
 	$Description = ($full.description | Out-String).Trim()
 	if ($Description -ne "") {
