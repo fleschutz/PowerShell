@@ -5,7 +5,7 @@
         This PowerShell script queries all public IP address information and prints it.
 .EXAMPLE
         PS> ./list-internet-ip.ps1
-	✅ Internet IP 185.72.229.161, 2003:f2:6128:fd01:e543:601:30c2:a028 near Munich, Germany
+	✅ Internet IP 185.72.229.161 and 2003:f2:6128:fd01:e543:601:30c2:a028 near Munich, Germany
 .LINK
         https://github.com/fleschutz/PowerShell
 .NOTES
@@ -28,9 +28,9 @@ try {
 	if ("$publicIPv6" -eq "") { $publicIPv6 = "no IPv6" }
 	if ("$city" -eq "")       { $city = "unknown city" }
 	if ("$country" -eq "")    { $country = "unknown country" }
-	"✅ Internet IP $publicIPv4, $publicIPv6 near $city, $country"
+	Write-Host "✅ Internet IP $publicIPv4 and $publicIPv6 near $city, $country"
 	exit 0 # success
 } catch {
-        "⚠️ Error in line $($_.InvocationInfo.ScriptLineNumber): $($Error[0])"
+	"⚠️ ERROR: $($Error[0]) (script line $($_.InvocationInfo.ScriptLineNumber))"
         exit 1
 }
