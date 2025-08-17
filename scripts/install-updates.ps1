@@ -34,7 +34,7 @@ try {
 		"⏳ (2/5) Querying latest package information..."
 		& sudo apt update
 
-		"⏳ (3/5) Removing obsolete packages..."
+		"⏳ (3/5) Removing obsolete packages (to save disk space)..."
 		& sudo apt autoremove --yes
 
 		"⏳ (4/5) Upgrading installed packages..."
@@ -74,6 +74,6 @@ try {
 	"✅ Updates installed in $($elapsed)s."
 	exit 0 # success
 } catch {
-	"⚠️ ERROR: $($Error[0]) in script line $($_.InvocationInfo.ScriptLineNumber)."
+	"⚠️ ERROR: $($Error[0]) (script line $($_.InvocationInfo.ScriptLineNumber))"
 	exit 1
 }
