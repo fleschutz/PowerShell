@@ -1,6 +1,6 @@
 ﻿<#
 .SYNOPSIS
-	Lists unused files in a directory tree
+	List unused files in a directory tree
 .DESCRIPTION
 	This PowerShell script scans a directory tree and lists unused files (no read/write access since a number of days).
 .PARAMETER path
@@ -10,7 +10,7 @@
 .EXAMPLE
 	PS> ./list-unused-files.ps1 C:\Windows
 	...
-	✅ Found 43729 unused files (no access for 100 days) within 📂C:\Windows in 113 sec
+	✅ 43729 unused files at 📂C:\Windows (no access for 100 days, took 113s).
 .LINK
 	https://github.com/fleschutz/PowerShell
 .NOTES
@@ -28,15 +28,15 @@ try {
 	$cutOffDate = (Get-Date).AddDays(-$Days)
  	[int]$count = 0
 	Get-ChildItem -path $path -recurse | Where-Object {$_.LastAccessTime -le $cutOffDate} | Foreach-Object {
-		"📄$($_.FullName)"
+		"$($_.FullName)"
                 $count++
         }
 
 	Write-Progress -completed " "
         [int]$elapsed = $stopWatch.Elapsed.TotalSeconds
-        "✅ Found $count unused files (no access for $days days) within 📂$path in $elapsed sec"
+        "✅ $count unused files at 📂$path (no access for $days days, took $($elapsed)s)."
 	exit 0 # success
 } catch {
-	"⚠️ Error in line $($_.InvocationInfo.ScriptLineNumber): $($Error[0])"
+	"⚠️ ERROR: $($Error[0]) (script line $($_.InvocationInfo.ScriptLineNumber))"
 	exit 1
 }
