@@ -26,6 +26,6 @@ try {
 	"✅ VLC media player installed successfully in $($elapsed)s."
 	exit 0 # success
 } catch {
-	"⚠️ Error: $($Error[0])"
+	"⚠️ ERROR: $($Error[0])"
 	exit 1
 }

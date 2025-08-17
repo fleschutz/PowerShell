@@ -1,31 +1,35 @@
 ﻿<#
 .SYNOPSIS
-	Installs OBS Studio (needs admin rights)
+	Installs OBS Studio
 .DESCRIPTION
-	This PowerShell script installs OBS Studio (admin rights are needed).
+	This PowerShell script installs OBS Studio from Microsoft Store.
 .EXAMPLE
 	PS> ./install-obs-studio.ps1
+	⏳ Installing OBS from Microsoft Store...
+	✅ OBS installed successfully in 25s.
 .LINK
 	https://github.com/fleschutz/PowerShell
 .NOTES
 	Author: Markus Fleschutz | License: CC0
 #>
 
-#requires -version 5.1 -RunAsAdministrator
+#requires -version 5.1 
 
 try {
-	$StopWatch = [system.diagnostics.stopwatch]::startNew()
+	$stopWatch = [system.diagnostics.stopwatch]::startNew()
+	"⏳ Installing OBS Studio from Microsoft Store..."
 
-	if ($IsLinux) {
+	if ($IsLinux -or $IsMacOS) {
 		"Sorry, not supported yet."
 	} else {
-		winget install obsproject.obsstudio
+		& winget install --id XPFFH613W8V6LV 
+		if ($lastExitCode -ne 0) { throw "Can't install OBS, is it already installed?" }
 	}
 
-	[int]$Elapsed = $StopWatch.Elapsed.TotalSeconds
-	"✅ installed OBS Studio in $Elapsed sec"
+	[int]$elapsed = $stopWatch.Elapsed.TotalSeconds
+	"✅ OBS Studio installed successfully in $($elapsed)s."
 	exit 0 # success
 } catch {
-	"⚠️ Error in line $($_.InvocationInfo.ScriptLineNumber): $($Error[0])"
+	"⚠️ ERROR: $($Error[0])"
 	exit 1
 }
