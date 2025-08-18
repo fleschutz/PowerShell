@@ -35,7 +35,7 @@ try {
 		throw "No Git repositories folder in your home directory or in the root folder yet"
 	}
 	$path += "/" + $folderName
-	if (-not(Test-Path "$path" -pathType container)) { throw "The file path '$path' doesn't exist (yet)" }
+	if (-not(Test-Path "$path" -pathType container)) { throw "The path to folder '$path' doesn't exist (yet)" }
 
 	$path = Resolve-Path "$path"
 	Set-Location "$path"

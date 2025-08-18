@@ -15,16 +15,12 @@
 #requires -version 5.1
 
 try {
-	if ($IsLinux) {
-		if (-not(Test-Path "~/Templates" -pathType container)) {
-			throw "No 'Templates' folder in your home directory yet"
-		}
+	if ($IsLinux -or $IsMacOS) {
+		if (-not(Test-Path "~/Templates" -pathType container)) { throw "No 'Templates' folder in your home directory (yet)"
 		$path = Resolve-Path "~/Templates"
 	} else {
 		$path = [Environment]::GetFolderPath('Templates')
-		if (-not(Test-Path "$path" -pathType container)) {
-			throw "No templates folder at: $path"
-		}
+		if (-not(Test-Path "$path" -pathType container)) { throw "The path to templates folder '$path' doesn't exist (yet)" }
 	}
 	Set-Location "$path"
 	$files = Get-ChildItem $path -attributes !Directory

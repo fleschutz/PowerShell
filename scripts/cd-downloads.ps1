@@ -16,15 +16,12 @@
 
 try {
 	if ($IsLinux -or $IsMacOS) {
-		if (-not(Test-Path "~/Downloads" -pathType container)) {
-			throw "No 'Downloads' folder in your home directory yet"
+		if (-not(Test-Path "~/Downloads" -pathType container)) { throw "No 'Downloads' folder in your home directory (yet)"
 		}
 		$path = Resolve-Path "~/Downloads"
 	} else {
 		$path = (New-Object -ComObject Shell.Application).NameSpace('shell:Downloads').Self.Path
-		if (-not(Test-Path "$path" -pathType container)) {
-			throw "No downloads folder at: $path"
-		}
+		if (-not(Test-Path "$path" -pathType container)) { throw "The path to downloads folder '$path' doesn't exist (yet)" }
 	}
 	Set-Location "$path"
 	$files = Get-ChildItem $path -attributes !Directory

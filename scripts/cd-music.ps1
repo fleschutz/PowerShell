@@ -15,16 +15,12 @@
 #requires -version 5.1
 
 try {
-	if ($IsLinux) {
-		if (-not(Test-Path "~/Music/" -pathType container)) {
-			throw "No 'Music' folder in home directory"
-		}
+	if ($IsLinux -or $IsMacOS) {
+		if (-not(Test-Path "~/Music/" -pathType container)) { throw "No 'Music' folder in your home directory (yet)" }
 		$path = Resolve-Path "~/Music"
 	} else {
 		$path = [Environment]::GetFolderPath('MyMusic')
-		if (-not(Test-Path "$path" -pathType container)) {
-			throw "No music folder at: $path"
-		}
+		if (-not(Test-Path "$path" -pathType container)) { throw "The path to music folder '$path' doesn't exist (yet)" }
 	}
 	Set-Location "$path"
 	$folders = Get-ChildItem $path -attributes Directory

@@ -23,7 +23,7 @@ function GetTempDir {
 
 try {
 	$path = GetTempDir
-	if (-not(Test-Path "$path" -pathType container)) { throw "No temporary folder at: $path" }
+	if (-not(Test-Path "$path" -pathType container)) { throw "The path to temporary folder '$path' doesn't exist (yet)" }
 	Set-Location "$path"
 	$files = Get-ChildItem $path -attributes !Directory
 	$folders = Get-ChildItem $path -attributes Directory

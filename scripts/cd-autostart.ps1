@@ -16,9 +16,7 @@
 
 try {
 	$path = Resolve-Path "~/AppData/Roaming/Microsoft/Windows/Start Menu/Programs/Startup"
-	if (-not(Test-Path "$path" -pathType container)) {
-		throw "No autostart folder at 📂$path"
-	}
+	if (-not(Test-Path "$path" -pathType container)) { throw "The path to autostart folder '$path' doesn't exist (yet)" }
 	Set-Location "$path"
 	"📂$path"
 	exit 0 # success

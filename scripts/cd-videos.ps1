@@ -15,13 +15,13 @@
 #requires -version 5.1
 
 try {
-	if ($IsLinux) {
+	if ($IsLinux -or $IsMacOS) {
+		if (-not(Test-Path "~/Videos" -pathType container)) { throw "No 'Videos' folder in your home directory (yet)" }
+		}
 		$path = Resolve-Path "~/Videos"
-	} else {
-		$path = [Environment]::GetFolderPath('MyVideos')
-	}
-	if (-not(Test-Path "$path" -pathType container)) {
-		throw "No videos folder at $path"
+	} else { }
+		$path = [Environment]::GetFolderPath('MyVideos') }
+		if (-not(Test-Path "$path" -pathType container)) { throw "The path to video folder '$path' doesn't exist (yet)" }
 	}
 	Set-Location "$path"
 	$files = Get-ChildItem $path -attributes !Directory

@@ -15,7 +15,7 @@
 #requires -version 5.1
 
 try {
-	if (-not(Test-Path "~" -pathType container)) { throw "No home directory at: $path" }
+	if (-not(Test-Path "~" -pathType container)) { throw "The path to home directory '$path' doesn't exist (yet)" }
 	$path = Resolve-Path "~"
 	Set-Location "$path"
 	$files = Get-ChildItem $path -attributes !Directory
