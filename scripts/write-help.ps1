@@ -37,7 +37,7 @@ try {
 	White "████ █   █ █ ▀▄█▄ ▄▄  ▀█ ▄▄▄▄▀   ████`n"
 	White "████ █▄▄▄█ █ ██ ▄█▄  ▄▀▀▀ ▄▄  ▄ █████ Type 'Get-Help <NAME>' to display information about <NAME>`n"
 	White "████▄▄▄▄▄▄▄█▄▄█▄▄████▄▄▄██▄▄▄█▄██████`n"
-	White "█████████████████████████████████████ HINT: press <Ctrl> + <Click> to follow the links.`n"
+	White "█████████████████████████████████████ HINT: press <Ctrl> <Click> to follow the links above.`n"
 	White "█████████████████████████████████████`n"
 	exit 0 # success
 } catch {
