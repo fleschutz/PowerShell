@@ -30,11 +30,12 @@ try {
 		}
 	}
 	if ($basename -eq "") {
-		Write-Host "🤷‍ Sorry, '$term' is new to me. Let's search it at: " -noNewline
-		Write-Host "https://www.qwant.com/?q=what+is+$term" -foregroundColor blue
+		Write-Host "🤷‍ Sorry, I don't know '$term'. Let's search for it: " -noNewline
+		Write-Host "https://qwant.com/?q=what+is+$term" -foregroundColor blue -noNewline
+		Write-Host " (use <Ctrl> <Click>)"
 	}
 	exit 0 # success
 } catch {
-	"⚠️ Error in line $($_.InvocationInfo.ScriptLineNumber): $($Error[0])"
+	"⚠️ ERROR: $($Error[0]) (script line $($_.InvocationInfo.ScriptLineNumber))"
 	exit 1
 }
