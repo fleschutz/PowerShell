@@ -1,11 +1,11 @@
-﻿# POWERSHELL PROFILE TO DEFINE THE LOOK & FEEL
+﻿# MY POWERSHELL PROFILE 
 
 # WINDOW TITLE
 if ($IsLinux) { $username = $(whoami) } else { $username = $env:USERNAME }
 $host.ui.RawUI.WindowTitle = "$username @ $(hostname)"
 
 # GREETING
-Write-Host "✨ Welcome $username to $(hostname)'s PowerShell - type 'FAQ' for help." -foregroundColor green
+Write-Host "✨ Welcome $username to $(hostname) - type 'FAQ' for help." -foregroundColor green
 
 # PROMPT
 function prompt { Write-Host "`n➤ " -noNewline -foregroundColor yellow; return " " }

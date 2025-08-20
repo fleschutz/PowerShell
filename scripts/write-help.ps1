@@ -20,7 +20,7 @@ function Blue([string]$line) {
 
 try {
 	Write-Host ""
-	White "█████████████████████████████████████ PowerShell $($PSVersionTable.PSVersion) $($PSVersionTable.PSEdition) Edition`n"
+	White "█████████████████████████████████████ POWERSHELL $($PSVersionTable.PSVersion) $($PSVersionTable.PSEdition) Edition`n"
 	White "█████████████████████████████████████ ------------------------------------------`n"
 	White "████ ▄▄▄▄▄ █▀ █▀▀█▀▀  ▄▄██ ▄▄▄▄▄ ████`n"
 	White "████ █   █ █▀ ▄ █▀ ▀ ▀▄█ █ █   █ ████ Documentation: "; Blue "https://docs.microsoft.com/en-us/powershell`n"
