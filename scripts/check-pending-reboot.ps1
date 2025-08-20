@@ -60,7 +60,7 @@ try {
 			$reason += ", '...\CurrentControlSet\Services\Netlogon' with 'AvoidSpnSet'"
 		}
 		if ($reason -ne "") {
-			$reply = "⚠️ Pending reboot (found: $($reason.substring(2)) in registry)"
+			$reply = "⚠️ Pending reboot (registry has $($reason.substring(2)))"
 		}
 	}
 	Write-Host $reply
