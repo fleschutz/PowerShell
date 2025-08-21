@@ -1,9 +1,9 @@
 ﻿<#
 .SYNOPSIS
-	Lists software updates
+	Lists available software updates
 .DESCRIPTION
 	This PowerShell script queries the latest available software updates for the
-	local machine and lists it (for installation use 'install-updates.ps1').
+	local machine and lists it (execute 'install-updates.ps1' for installation).
 .EXAMPLE
 	PS> ./list-updates.ps1
 	⏳ Querying Microsoft Store...
@@ -19,42 +19,38 @@
 #>
 
 try {
-	if ($IsLinux) {
-		if (Get-Command apt -ErrorAction SilentlyContinue) {
-			Write-Host "`n⏳ Querying APT package updates..." -foregroundColor green
-			& sudo apt update
-			& sudo apt list --upgradable
-		}
-		if (Get-Command snap -ErrorAction SilentlyContinue) {
-			Write-Host "`n⏳ Querying Snap updates..." -foregroundColor green
-			& sudo snap refresh --list
-		}
-	} elseif ($IsMacOS) {
-		if (Get-Command brew -ErrorAction SilentlyContinue) {
-			Write-Host "`n⏳ Querying Homebrew updates..." -foregroundColor green
-			& brew outdated
-		}
-	} else {
-		if (Get-Command winget -ErrorAction SilentlyContinue) {
-			Write-Host "`n⏳ Querying Microsoft Store..." -foregroundColor green
-			& winget upgrade --include-unknown --source=msstore
+	if (Get-Command apt -ErrorAction SilentlyContinue) {
+		Write-Host "`n⏳ Querying APT package updates..." -foregroundColor green
+		& sudo apt update
+		& sudo apt list --upgradable
+	}
+	if (Get-Command snap -ErrorAction SilentlyContinue) {
+		Write-Host "`n⏳ Querying Snap updates..." -foregroundColor green
+		& sudo snap refresh --list
+	}
+	if (Get-Command brew -ErrorAction SilentlyContinue) {
+		Write-Host "`n⏳ Querying Homebrew updates..." -foregroundColor green
+		& brew outdated
+	}
+	if (Get-Command winget -ErrorAction SilentlyContinue) {
+		Write-Host "`n⏳ Querying Microsoft Store..." -foregroundColor green
+		& winget upgrade --include-unknown --source=msstore
 
-			Write-Host "`n⏳ Querying WinGet..." -foregroundColor green
-			& winget upgrade --include-unknown --source=winget
-		}
-		if (Get-Command choco -ErrorAction SilentlyContinue) {
-			Write-Host "`n⏳ Querying Chocolatey..." -foregroundColor green
-			& choco outdated
-		}
-		if (Get-Command scoop -ErrorAction SilentlyContinue) {
-			Write-Host "`n⏳ Querying Scoop..." -foregroundColor green
-			& scoop status
-		}
+		Write-Host "`n⏳ Querying WinGet..." -foregroundColor green
+		& winget upgrade --include-unknown --source=winget
+	}
+	if (Get-Command choco -ErrorAction SilentlyContinue) {
+		Write-Host "`n⏳ Querying Chocolatey..." -foregroundColor green
+		& choco outdated
+	}
+	if (Get-Command scoop -ErrorAction SilentlyContinue) {
+		Write-Host "`n⏳ Querying Scoop..." -foregroundColor green
+		& scoop status
 	}
 	" "
-	"💡 Execute 'install-updates.ps1' to install the listed updates."
+	"💡 Execute 'install-updates.ps1' for installation."
 	exit 0 # success
 } catch {
-	"⚠️ ERROR: $($Error[0]) in script line $($_.InvocationInfo.ScriptLineNumber)."
+	"⚠️ ERROR: $($Error[0]) (script line $($_.InvocationInfo.ScriptLineNumber))"
 	exit 1
 }
