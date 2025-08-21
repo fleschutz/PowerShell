@@ -23,7 +23,7 @@
 try {
 	$stopWatch = [system.diagnostics.stopwatch]::startNew()
 
-	"`n⏳ Checking requirements..."
+	Write-Host "`n⏳ Checking requirements..." -foregroundColor green
 	& "$PSScriptRoot/check-power.ps1"
 	& "$PSScriptRoot/check-smart-devices.ps1"
 	if ($IsLinux -or $IsMacOS) {
@@ -35,33 +35,33 @@ try {
 	Start-Sleep -seconds 3
 
 	if (Get-Command apt -ErrorAction SilentlyContinue) {
-		"`n⏳ Querying latest package information..."
+		Write-Host "`n⏳ Querying APT package updates..." -foregroundColor green
 		& sudo apt update
 
-		"`n⏳ Removing obsolete packages to save space..."
+		Write-Host "`n⏳ Removing obsolete packages to save space..." -foregroundColor green
 		& sudo apt autoremove --yes
 
-		"`n⏳ Upgrading installed packages..."
+		Write-Host "`n⏳ Upgrading installed packages..." -foregroundColor green
 		& sudo apt upgrade --yes
 	}
 	if (Get-Command snap -ErrorAction SilentlyContinue) {
-		"`n⏳ Upgrading installed Snaps..."
+		Write-Host "`n⏳ Upgrading installed Snaps..." -foregroundColor green
 		& sudo snap refresh
 	}
 	if (Get-Command softwareupdate -ErrorAction SilentlyContinue) {
-		"`n⏳ Installing updates..."
+		Write-Host "`n⏳ Updating software..." -foregroundColor green
 		& sudo softwareupdate -i -a
 	}
 	if (Get-Command winget -errorAction SilentlyContinue) {
-		"`n⏳ Querying Microsoft Store..."
+		Write-Host "`n⏳ Upgrading by Microsoft Store..." -foregroundColor green
 		& winget upgrade --all --source=msstore --include-unknown
 	}
 	if (Get-Command winget -errorAction SilentlyContinue) {
-		"`n⏳ Querying WinGet..."
+		Write-Host "`n⏳ Upgrading by WinGet..." -foregroundColor green
 		& winget upgrade --all --source=winget --include-unknown
 	}
 	if (Get-Command choco -errorAction SilentlyContinue) {
-		"`n⏳ Querying Chocolatey..."
+		Write-Host "`n⏳ Upgrading by Chocolatey..." -foregroundColor green
 		& choco upgrade all -y
 	}
 	& "$PSScriptRoot/check-pending-reboot.ps1"
