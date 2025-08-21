@@ -23,53 +23,46 @@
 try {
 	$stopWatch = [system.diagnostics.stopwatch]::startNew()
 
-	if ($IsLinux) {
-		""
-		"⏳ (1/5) Checking requirements..."
-		& "$PSScriptRoot/check-power.ps1"
-		& "$PSScriptRoot/check-smart-devices.ps1"
+	"`n⏳ Checking requirements..."
+	& "$PSScriptRoot/check-power.ps1"
+	& "$PSScriptRoot/check-smart-devices.ps1"
+	if ($IsLinux -or $IsMacOS) {
 		& "$PSScriptRoot/check-drive-space.ps1" /
-		& "$PSScriptRoot/check-swap-space.ps1"
-		Start-Sleep -seconds 3
-		""
-		"⏳ (2/5) Querying latest package information..."
+	} else {
+		& "$PSScriptRoot/check-drive-space.ps1" C
+	}
+	& "$PSScriptRoot/check-swap-space.ps1"
+	Start-Sleep -seconds 3
+
+	if (Get-Command apt -ErrorAction SilentlyContinue) {
+		"`n⏳ Querying latest package information..."
 		& sudo apt update
 
-		"⏳ (3/5) Removing obsolete packages to save space..."
+		"`n⏳ Removing obsolete packages to save space..."
 		& sudo apt autoremove --yes
 
-		"⏳ (4/5) Upgrading installed packages..."
+		"`n⏳ Upgrading installed packages..."
 		& sudo apt upgrade --yes
-
-		"⏳ (5/5) Upgrading installed Snaps..."
+	}
+	if (Get-Command snap -ErrorAction SilentlyContinue) {
+		"`n⏳ Upgrading installed Snaps..."
 		& sudo snap refresh
-	} elseif ($IsMacOS) {
-		Write-Progress "⏳ Installing updates..."
+	}
+	if (Get-Command softwareupdate -ErrorAction SilentlyContinue) {
+		"`n⏳ Installing updates..."
 		& sudo softwareupdate -i -a
-		Write-Progress -completed " "
-	} else { # Windows:
-		""
-		"⏳ (1/2) Checking requirements..."
-		& "$PSScriptRoot/check-power.ps1"
-		& "$PSScriptRoot/check-smart-devices.ps1"
-		& "$PSScriptRoot/check-drive-space.ps1" C
-		& "$PSScriptRoot/check-swap-space.ps1"
-		Start-Sleep -seconds 3
-		""
-		"⏳ (2/4) Querying Microsoft Store..."
-		if (Get-Command winget -errorAction SilentlyContinue) {
-			& winget upgrade --all --source=msstore --include-unknown
-		}
-		""
-		"⏳ (3/4) Querying WinGet..."
-		if (Get-Command winget -errorAction SilentlyContinue) {
-			& winget upgrade --all --source=winget --include-unknown
-		}
-		""
-		"⏳ (4/4) Querying Chocolatey..."
-		if (Get-Command choco -errorAction SilentlyContinue) {
-			& choco upgrade all -y
-		}
+	}
+	if (Get-Command winget -errorAction SilentlyContinue) {
+		"`n⏳ Querying Microsoft Store..."
+		& winget upgrade --all --source=msstore --include-unknown
+	}
+	if (Get-Command winget -errorAction SilentlyContinue) {
+		"`n⏳ Querying WinGet..."
+		& winget upgrade --all --source=winget --include-unknown
+	}
+	if (Get-Command choco -errorAction SilentlyContinue) {
+		"`n⏳ Querying Chocolatey..."
+		& choco upgrade all -y
 	}
 	& "$PSScriptRoot/check-pending-reboot.ps1"
 	[int]$elapsed = $stopWatch.Elapsed.TotalSeconds
