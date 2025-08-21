@@ -9,7 +9,7 @@
 	PS> ./pull-repos C:\MyRepos
 	⏳ (1) Searching for Git executable...       git version 2.43.0
 	⏳ (2) Checking parent folder...             33 subfolders
-	⏳ (3/35) Pulling into 'base256U' repo...
+	⏳ (3/35) Pulling into 'base256U'...
 	...
 .LINK
 	https://github.com/fleschutz/PowerShell
@@ -37,9 +37,9 @@ try {
 	[int]$numFailed = 0
 	foreach ($folder in $folders) {
 		$folderName = (Get-Item "$folder").Name
-		Write-Host "⏳ ($step/$($numFolders + 2)) Pulling into repo '$folderName'...`t`t" -NoNewline
+		Write-Host "⏳ ($step/$($numFolders + 2)) Pulling into '$folderName'...`t`t" -NoNewline
 
-		& git -C "$folder" pull --recurse-submodules --jobs=4
+		& git -C "$folder" pull --recurse-submodules=yes
 		if ($lastExitCode -ne 0) { $numFailed++; Write-Warning "'git pull' into 📂$folderName failed" }
 
 		& git -C "$folder" submodule update --init --recursive
@@ -55,6 +55,6 @@ try {
 		exit 1
 	}
 } catch {
-	"⚠️ ERROR: $($Error[0]) in script line $($_.InvocationInfo.ScriptLineNumber)."
+	"⚠️ ERROR: $($Error[0]) (in script line $($_.InvocationInfo.ScriptLineNumber))"
 	exit 1
 }
