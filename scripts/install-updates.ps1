@@ -24,6 +24,7 @@ try {
 	$stopWatch = [system.diagnostics.stopwatch]::startNew()
 
 	if ($IsLinux) {
+		""
 		"⏳ (1/5) Checking requirements..."
 		& "$PSScriptRoot/check-power.ps1"
 		& "$PSScriptRoot/check-smart-devices.ps1"
@@ -34,7 +35,7 @@ try {
 		"⏳ (2/5) Querying latest package information..."
 		& sudo apt update
 
-		"⏳ (3/5) Removing obsolete packages (to save disk space)..."
+		"⏳ (3/5) Removing obsolete packages to save space..."
 		& sudo apt autoremove --yes
 
 		"⏳ (4/5) Upgrading installed packages..."
@@ -47,6 +48,7 @@ try {
 		& sudo softwareupdate -i -a
 		Write-Progress -completed " "
 	} else { # Windows:
+		""
 		"⏳ (1/2) Checking requirements..."
 		& "$PSScriptRoot/check-power.ps1"
 		& "$PSScriptRoot/check-smart-devices.ps1"
