@@ -1,22 +1,19 @@
 ﻿<#
 .SYNOPSIS
-	Plays Rick Astley
+	Plays an ASCII video
 .DESCRIPTION
 	This PowerShell script launches the Web browser with YouTube playing Rick Astley.
 .EXAMPLE
-	PS> ./play-rick.ps1
+	PS> ./play-ascii-video.ps1
 .LINK
 	https://github.com/fleschutz/PowerShell
 .NOTES
 	Author: Markus Fleschutz | License: CC0
 #>
 
-
-$host.ui.RawUI.WindowTitle = "You've been Rick-Rolled! 🤣"
-& "$PSScriptRoot/open-URL.ps1" "https://www.youtube.com/watch?v=v7ScGV5128A"
 if ($IsLinux -or $IsMacOS) {
-	& curl ascii.live/rick
+	& curl ascii.live/forrest
 } else {
-	& curl.exe ascii.live/rick
+	& curl.exe ascii.live/forrest
 }
 exit 0 # success
