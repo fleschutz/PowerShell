@@ -11,7 +11,7 @@
         Author: Markus Fleschutz | License: CC0
 #>
 
-function WriteLine { param([string]$line)
+function WriteLine([string]$line) {
 	Write-Host $line -foregroundColor green
 }
 
