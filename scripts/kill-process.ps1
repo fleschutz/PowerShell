@@ -21,6 +21,6 @@ try {
 	"✔️ Stopped all processes matching '$processName'."
 	exit 0 # success
 } catch {
-	"⚠️ ERROR: $($Error[0])"
+	"⚠️ ERROR: $($Error[0]) (script line $($_.InvocationInfo.ScriptLineNumber))"
 	exit 1
 }

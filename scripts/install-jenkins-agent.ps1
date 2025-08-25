@@ -38,6 +38,6 @@ try {
 	"✅ Jenkins Agent installed successfully in $($elapsed)s."
 	exit 0 # success
 } catch {
-    "⚠️ Error in line $($_.InvocationInfo.ScriptLineNumber): $($Error[0])"
-    exit 1
+	"⚠️ ERROR: $($Error[0]) (script line $($_.InvocationInfo.ScriptLineNumber))"
+	exit 1
 }

@@ -54,6 +54,6 @@ try {
 	& "$PSScriptRoot/write-typewriter.ps1" "    NOTE: Use <Ctrl> + <Click> to open the links above in your browser" 100
 	exit 0 # success
 } catch {
-	"⚠️ Error in line $($_.InvocationInfo.ScriptLineNumber): $($Error[0])"
+	"⚠️ ERROR: $($Error[0]) (script line $($_.InvocationInfo.ScriptLineNumber))"
 	exit 1
 }

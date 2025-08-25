@@ -49,6 +49,7 @@ try {
 
 	Write-Host -ForegroundColor Green "Done"
 } catch {
-	Write-Error "Error in line $($_.InvocationInfo.ScriptLineNumber): $($_.Exception.Message)"
+	"⚠️ ERROR: $($Error[0]) (script line $($_.InvocationInfo.ScriptLineNumber))"
+	exit 1
 }
 

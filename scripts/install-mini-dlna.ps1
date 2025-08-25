@@ -27,6 +27,6 @@ try {
 	"   Log file: /var/snap/minidlna-jdstrand/current/home/minidlna.log"
 	exit 0 # success
 } catch {
-	"Sorry: $($Error[0])"
+	"⚠️ ERROR: $($Error[0]) (script line $($_.InvocationInfo.ScriptLineNumber))"
 	exit 1
 }

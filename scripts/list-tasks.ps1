@@ -20,6 +20,6 @@ try {
 	Get-ScheduledTask | Format-Table -property @{e='TASKNAME';width=40},@{e='TASKPATH';width=55},@{e='STATE';width=10}
 	exit 0 # success
 } catch {
-	"⚠️ Error in line $($_.InvocationInfo.ScriptLineNumber): $($Error[0])"
+	"⚠️ ERROR: $($Error[0]) (script line $($_.InvocationInfo.ScriptLineNumber))"
 	exit 1
 }

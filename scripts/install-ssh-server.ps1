@@ -40,6 +40,6 @@ try {
 	"✅ installed and started SSH server in $Elapsed sec"
 	exit 0 # success
 } catch {
-	"⚠️ ERROR: $($Error[0]) in script line $($_.InvocationInfo.ScriptLineNumber)."
+	"⚠️ ERROR: $($Error[0]) (script line $($_.InvocationInfo.ScriptLineNumber))"
 	exit 1
 }

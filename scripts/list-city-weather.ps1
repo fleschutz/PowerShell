@@ -32,6 +32,6 @@ try {
 	List-City-Weather | Format-Table -property @{e='CITY';width=19},@{e='TEMP';width=9},@{e='RAIN';width=14},@{e='WIND';width=12},@{e='SUN';width=20}
 	exit 0 # success
 } catch {
-	"⚠️ Error in line $($_.InvocationInfo.ScriptLineNumber): $($Error[0])"
+	"⚠️ ERROR: $($Error[0]) (script line $($_.InvocationInfo.ScriptLineNumber))"
 	exit 1
 }

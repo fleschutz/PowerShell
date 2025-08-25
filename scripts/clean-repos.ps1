@@ -49,6 +49,6 @@ try {
 	"✅ Cleaned $numFolders Git repositories under 📂$parentDirName in $($elapsed)s."
 	exit 0 # success
 } catch {
-	"⚠️ ERROR: $($Error[0]) in script line $($_.InvocationInfo.ScriptLineNumber)."
+	"⚠️ ERROR: $($Error[0]) (script line $($_.InvocationInfo.ScriptLineNumber))"
 	exit 1
 }

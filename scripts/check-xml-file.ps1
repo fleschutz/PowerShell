@@ -37,6 +37,6 @@ try {
 	"✅ $path is valid XML"
 	exit 0 # success
 } catch {
-	"⚠️ $($Error[0]) in 📄$path"
+	"⚠️ ERROR: $($Error[0]) (script line $($_.InvocationInfo.ScriptLineNumber))"
 	exit 1
 }

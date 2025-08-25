@@ -25,6 +25,6 @@ try {
 	TryToExec "C:\Programs\Microsoft Office\Office14" "OUTLOOK.EXE"
 	throw "It seems Outlook isn't installed yet."
 } catch {
-	& "$PSScriptRoot/speak-english.ps1" "Sorry: $($Error[0])"
+	"⚠️ ERROR: $($Error[0]) (script line $($_.InvocationInfo.ScriptLineNumber))"
 	exit 1
 }

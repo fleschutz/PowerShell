@@ -71,6 +71,6 @@ try {
 	exit 0 # success
 } catch {
 	[int]$Elapsed = $StopWatch.Elapsed.TotalSeconds
-	"⚠️ Error in line $($_.InvocationInfo.ScriptLineNumber): $($Error[0]) after $Elapsed sec."
+	"⚠️ ERROR: $($Error[0]) (script line $($_.InvocationInfo.ScriptLineNumber))"
 	exit 1
 }

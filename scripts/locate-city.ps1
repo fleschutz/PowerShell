@@ -38,6 +38,6 @@ try {
 	if (-not $foundOne) { throw "No city '$city' found in database" }
 	exit 0 # success
 } catch {
-	"⚠️ Error $($_.InvocationInfo.ScriptLineNumber): $($Error[0])."
+	"⚠️ ERROR: $($Error[0]) (script line $($_.InvocationInfo.ScriptLineNumber))"
 	exit 1
 }

@@ -38,6 +38,6 @@ try {
 	"✅ h2static installed in $($elapsed)s, Web server runs at :$port, execute 'snap info h2static' for details."
 	exit 0 # success
 } catch {
-	"Sorry: $($Error[0])"
+	"⚠️ ERROR: $($Error[0]) (script line $($_.InvocationInfo.ScriptLineNumber))"
 	exit 1
 }

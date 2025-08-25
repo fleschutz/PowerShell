@@ -17,6 +17,6 @@ try {
 	Start-Process explorer.exe shell:appsFolder\Microsoft.WindowsSoundRecorder_8wekyb3d8bbwe!App
         exit 0 # success
 } catch {
-        "⚠️ Error: $($Error[0]) (script line $($_.InvocationInfo.ScriptLineNumber))"
+	"⚠️ ERROR: $($Error[0]) (script line $($_.InvocationInfo.ScriptLineNumber))"
         exit 1
 }

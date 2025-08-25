@@ -25,6 +25,6 @@ try {
 	& "$PSScriptRoot/speak-english.ps1" "$($WindSpeed)km/h wind from $WindDir at $Area ($Region)."
 	exit 0 # success
 } catch {
-	"⚠️ Error in line $($_.InvocationInfo.ScriptLineNumber): $($Error[0])"
+	"⚠️ ERROR: $($Error[0]) (script line $($_.InvocationInfo.ScriptLineNumber))"
 	exit 1
 }

@@ -346,6 +346,6 @@ try {
 	List-CLI-Tools | Format-Table -property @{e='NAME';width=15},@{e='VERSION';width=16},@{e='PATH';width=90}
 	exit 0 # success
 } catch {
-	"⚠️ Error in line $($_.InvocationInfo.ScriptLineNumber): $($Error[0])"
+	"⚠️ ERROR: $($Error[0]) (script line $($_.InvocationInfo.ScriptLineNumber))"
 	exit 1
 }

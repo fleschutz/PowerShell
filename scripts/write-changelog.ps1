@@ -100,6 +100,6 @@ try {
 	Write-Output "Changelog as of $Today."
 	exit 0 # success
 } catch {
-	Write-Error $_.Exception.ToString()
+	"⚠️ ERROR: $($Error[0]) (script line $($_.InvocationInfo.ScriptLineNumber))"
 	exit 1
 }

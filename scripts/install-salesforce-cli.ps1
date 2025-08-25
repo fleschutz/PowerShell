@@ -33,6 +33,6 @@ try {
 
     exit 0 # success
 } catch {
-    Write-Output "⚠️ ERROR: $($Error[0]) in script line $($_.InvocationInfo.ScriptLineNumber)."
-    exit 1
+	"⚠️ ERROR: $($Error[0]) (script line $($_.InvocationInfo.ScriptLineNumber))"
+	exit 1
 }
