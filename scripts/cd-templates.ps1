@@ -16,7 +16,7 @@
 
 try {
 	if ($IsLinux -or $IsMacOS) {
-		if (-not(Test-Path "~/Templates" -pathType container)) { throw "No 'Templates' folder in your home directory (yet)"
+		if (-not(Test-Path "~/Templates" -pathType container)) { throw "No 'Templates' folder in your home directory (yet)" }
 		$path = Resolve-Path "~/Templates"
 	} else {
 		$path = [Environment]::GetFolderPath('Templates')
