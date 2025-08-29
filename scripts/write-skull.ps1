@@ -17,15 +17,15 @@
 #requires -version 5.1
 
 function WriteLine([string]$line) {
-	Write-Host $line -foregroundColor black -backgroundColor white
+	Write-Host $line -foregroundColor black -backgroundColor red
 }
 
 Clear-Host
-WriteLine "███████████████████████████"
-WriteLine "███████████████████████████"
-WriteLine "███████████████████████████"
-WriteLine "███████████████████████████"
-WriteLine "███████████████████████████"
+WriteLine ""
+WriteLine ""
+WriteLine ""
+WriteLine ""
+WriteLine ""
 WriteLine "███████▀▀▀░░░░░░░▀▀▀███████"
 WriteLine "████▀░░░░░░░░░░░░░░░░░▀████"
 WriteLine "███│░░░░░░░░░░░░░░░░░░░│███"
@@ -43,9 +43,9 @@ WriteLine "████▌░░░▀┬┼┼┼┼┼┼┼┬▀░░░▐
 WriteLine "█████▄░░░└┴┴┴┴┴┴┴┘░░░▄█████"
 WriteLine "███████▄░░░░░░░░░░░▄███████"
 WriteLine "██████████▄▄▄▄▄▄▄██████████"
-WriteLine "███████████████████████████"
-WriteLine "███████████████████████████"
-WriteLine "███████████████████████████"
-WriteLine "███████████████████████████"
-WriteLine "███████████████████████████"
+WriteLine ""
+WriteLine ""
+WriteLine ""
+WriteLine ""
+WriteLine ""
 exit 0 # success
