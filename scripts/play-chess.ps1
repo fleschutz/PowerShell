@@ -17,8 +17,8 @@ they only appear when run in PowerShell ISE.
 
 #Update-Board must be run before Publish-Board
 #Draws the board to the screen and displays all the icons
-Function Publish-Board {
-    Clear
+function Publish-Board {
+    Clear-Host
     Write-Host "`n`n"
     Write-Host '     A   B   C   D   E   F   G   H'
     Write-Host '   --------------------------------- '
@@ -82,7 +82,7 @@ Function Read-Input {
 }
 
 #Update the status of all the pieces and place them
-Function Update-Board {
+function Update-Board {
     #Get arrays of all piece that are still alive
     [Array]$CurrentWhite = $Script:WhitePieces | Where-Object {$_.Alive -eq $true}
     [Array]$CurrentBlack = $Script:BlackPieces | Where-Object {$_.Alive -eq $true}
@@ -107,7 +107,7 @@ Function Update-Board {
 }
 
 #Used to move pieces on the board
-Function New-Move {
+function New-Move {
     param ([string]$src, [string]$dst)
 
     enum castleOptions {
@@ -580,7 +580,7 @@ Function New-Move {
 }
 
 #Log logic will go here
-Function Update-Log {
+function Update-Log {
     param([string]$src, [string]$dst, [string]$piece, [bool]$attack, 
           [int]$castle, [bool]$promote, [bool]$ep, [bool]$check, [bool]$resign)
 
@@ -655,7 +655,7 @@ Function Update-Log {
 }
 
 #Try a move, used for check and castling logic
-Function Test-Move {
+function Test-Move {
     param ([string]$src, [string]$dst)
 
     [bool]$attack = $false
@@ -982,7 +982,7 @@ Function Test-Move {
 }
 
 #Figure out if the game is over or still ongoing
-Function Test-Gamestatus {
+function Test-Gamestatus {
     if ($wK.Alive -eq $false) {
         $Script:gameStatus = [gamestatus]::blackWin
     } elseif ($bK.Alive -eq $false) {
@@ -990,7 +990,7 @@ Function Test-Gamestatus {
     }
 }
 
-Function Get-Column {
+function Get-Column {
     param ([ValidatePattern('[A-H]')][string]$Col)
     switch ($Col) {
         "A" {Return "0"}
@@ -1004,7 +1004,7 @@ Function Get-Column {
     }
 }
 
-Function Get-Row {
+function Get-Row {
     param ([ValidateRange(1,8)][string]$row)
 
     return ($row - 1)
