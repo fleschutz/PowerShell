@@ -1,8 +1,8 @@
-<#
+﻿<#
 .SYNOPSIS
 	Play Tetris 
 .DESCRIPTION
-	This PowerShell script plays the Tetris.
+	This PowerShell script let's you play the Tetris game.
 .EXAMPLE
 	PS> ./play-tetris.ps1
 .LINK
@@ -10,6 +10,8 @@
 .NOTES
 	Author: Markus Fleschutz | License: CC0
 #>
+
+#requires -version 5.1
 
 using Namespace System.Drawing
 using Namespace System.Windows.Forms
@@ -26,10 +28,10 @@ enum ShapeTypes {
 }
 
 class TetrisShape {
-    [System.Drawing.Point] $Position
-    [System.Drawing.Color] $Color
-    [ShapeTypes] $Type = 0
-    [int[, ]] $Body
+    [System.Drawing.Point]$Position
+    [System.Drawing.Color]$Color
+    [ShapeTypes]$Type = 0
+    [int[, ]]$Body
     
     [PSCustomObject] $Moveset = [PSCustomObject] @{
         Left  = $false
@@ -40,7 +42,7 @@ class TetrisShape {
 
     [int[, ]] SetShape([ShapeTypes] $Type) {
         $Coordinates = [int[, ]]::new(5, 5)
-        Switch ([int]$Type) {
+        switch ([int]$Type) {
             Default {
                 $Coordinates[2, 0] = 1
                 $Coordinates[2, 1] = 1
