@@ -15,7 +15,7 @@
 #requires -version 5.1
 
 try {
-	if ($IsLinux -or $IsMacOS) { throw "This script requires a Windows operating system" }
+	if ($IsLinux -or $IsMacOS) { throw "This script only works on Windows" }
 
 	$path = Resolve-Path "$env:WINDIR"
 	if (-not(Test-Path "$path" -pathType container)) { throw "No Windows directory at $path" }
