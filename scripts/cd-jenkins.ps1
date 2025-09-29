@@ -20,7 +20,7 @@ try {
 	} elseif (Test-Path "/var/snap/jenkins" -pathType container) {
 		$path = "/var/snap/jenkins"
 	} else {
-		throw "No Jenkins home directory found - is Jenkins installed?"
+		throw "No Jenkins home directory found - Please install Jenkins"
 	}
 	Set-Location "$path"
 	$files = Get-ChildItem $path -attributes !Directory
@@ -28,6 +28,6 @@ try {
 	"📂$path entered (has $($files.Count) files and $($folders.Count) folders)"
 	exit 0 # success
 } catch {
-	"⚠️ Error: $($Error[0])"
+	"⚠️ ERROR: $($Error[0])"
 	exit 1
 }

@@ -5,7 +5,7 @@
 	This PowerShell script changes the current working directory to the folder for Git repositories.
 .EXAMPLE
 	PS> ./cd-repos.ps1
-	📂C:\Repos with 33 folders entered.
+	📂C:\Repos entered (has 33 subfolders)
 .LINK
 	https://github.com/fleschutz/PowerShell
 .NOTES
@@ -29,7 +29,7 @@ try {
 	$path = Resolve-Path $path
 	Set-Location "$path"
 	$folders = Get-ChildItem $path -attributes Directory
-	"📂$path with $($folders.Count) folders entered."
+	"📂$path entered (has $($folders.Count) subfolders)"
 	exit 0 # success
 } catch {
 	"⚠️ ERROR: $($Error[0])"

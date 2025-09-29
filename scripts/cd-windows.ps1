@@ -5,7 +5,7 @@
 	This PowerShell script sets the current working directory to the Windows directory.
 .EXAMPLE
 	PS> ./cd-windows.ps1
-	📂C:\Windows with 7 files and 42 folders entered.
+	📂C:\Windows entered (has 7 files and 42 folders)
 .LINK
 	https://github.com/fleschutz/PowerShell
 .NOTES
@@ -15,7 +15,7 @@
 #requires -version 5.1
 
 try {
-	if ($IsLinux -or $IsMacOS) { throw "This script only works on Windows" }
+	if ($IsLinux -or $IsMacOS) { throw "This script requires Windows" }
 
 	$path = Resolve-Path "$env:WINDIR"
 	if (-not(Test-Path "$path" -pathType container)) { throw "No Windows directory at $path" }
@@ -23,7 +23,7 @@ try {
 	Set-Location "$path"
 	$files = Get-ChildItem $path -attributes !Directory
 	$folders = Get-ChildItem $path -attributes Directory
-	"📂$path with $($files.Count) files and $($folders.Count) folders entered."
+	"📂$path entered (has $($files.Count) files and $($folders.Count) folders)"
 	exit 0 # success
 } catch {
 	"⚠️ ERROR: $($Error[0])"

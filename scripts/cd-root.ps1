@@ -5,7 +5,7 @@
 	This PowerShell script changes the current working directory to the root directory (C:\ on Windows).
 .EXAMPLE
 	PS> ./cd-root.ps1
-	📂C:\ with 7 folders and 0 files entered.
+	📂C:\ entered (has 7 folders and 0 files)
 .LINK
 	https://github.com/fleschutz/PowerShell
 .NOTES
@@ -19,7 +19,7 @@ try {
 	Set-Location "$path"
 	$folders = Get-ChildItem $path -attributes Directory
 	$files = Get-ChildItem $path -attributes !Directory
-	"📂$path with $($folders.Count) folders and $($files.Count) files entered."
+	"📂$path entered (has $($folders.Count) folders and $($files.Count) files)"
 	exit 0 # success
 } catch {
 	"⚠️ ERROR: $($Error[0])"

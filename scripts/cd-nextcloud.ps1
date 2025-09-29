@@ -5,7 +5,7 @@
 	This PowerShell script changes the working directory to the user's NextCloud folder.
 .EXAMPLE
 	PS> ./cd-nextcloud.ps1
-	📂C:\Users\Markus\NextCloud with 2 files and 0 folders entered.
+	📂C:\Users\Markus\NextCloud entered (has 2 files and 0 folder)
 .LINK
 	https://github.com/fleschutz/PowerShell
 .NOTES
@@ -16,13 +16,13 @@
 
 try {
 	if (-not(Test-Path "~/NextCloud" -pathType container)) {
-		throw "No 'NextCloud' folder in your home directory - is NextCloud installed?"
+		throw "No 'NextCloud' folder in your home directory - Please install NextCloud"
 	}
 	$path = Resolve-Path "~/NextCloud"
 	Set-Location "$path"
 	$files = Get-ChildItem $path -attributes !Directory
 	$folders = Get-ChildItem $path -attributes Directory
-	"📂$path with $($files.Count) files and $($folders.Count) folders entered."
+	"📂$path entered (has $($files.Count) files and $($folders.Count) folders)"
 	exit 0 # success
 } catch {
 	"⚠️ ERROR: $($Error[0])"
