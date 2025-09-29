@@ -1,11 +1,11 @@
 ﻿<#
 .SYNOPSIS
-	Check the DNS resolution 
+	Checks the DNS speed 
 .DESCRIPTION
 	This PowerShell script measures the DNS resolution speed using 100 internet domains and prints it.
 .EXAMPLE
 	PS> ./check-dns.ps1
-	✅ Internet DNS: 33.6ms lookup time
+	✅ Internet DNS with 33.6ms average lookup time
 .LINK
 	https://github.com/fleschutz/PowerShell
 .NOTES
@@ -25,11 +25,11 @@ try {
 	[float]$elapsed = $stopWatch.Elapsed.TotalSeconds * 1000.0
 	$speed = [math]::round($elapsed / $table.Length, 1)
 	if ($speed -lt 10.0) {
-		Write-Output "✅ Internet DNS: $($speed)ms excellent lookup time"
+		Write-Output "✅ Internet DNS with excellent $($speed)ms average lookup time"
 	} elseif ($speed -lt 100.0) {
-		Write-Output "✅ Internet DNS: $($speed)ms lookup time"
+		Write-Output "✅ Internet DNS with $($speed)ms average lookup time"
 	} else {  
-		Write-Output "⚠️ Internet DNS: $($speed)ms slow lookup time"
+		Write-Output "⚠️ Internet DNS with slow $($speed)ms average lookup time"
 	}
 	exit 0 # success
 } catch {
