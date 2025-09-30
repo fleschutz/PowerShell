@@ -5,7 +5,8 @@
 	This PowerShell script disconnects the active VPN connection.
 .EXAMPLE
 	PS> ./disconnect-vpn.ps1
-	Disconnected now.
+	⏳ Disconnecting NASA-VPN...
+	✅ VPN disconnected.
 .LINK
 	https://github.com/fleschutz/PowerShell
 .NOTES
@@ -13,17 +14,17 @@
 #>
 
 try {
-	$Connections = (Get-VPNConnection)
-	foreach($Connection in $Connections) {
-		if ($Connection.ConnectionStatus -ne "Connected") { continue }
-		"Disconnecting $($Connection.Name)..."
-		& rasdial.exe "$($Connection.Name)" /DISCONNECT
+	$connections = (Get-VPNConnection)
+	foreach($connection in $connections) {
+		if ($connection.ConnectionStatus -ne "Connected") { continue }
+		"⏳ Disconnecting $($connection.Name)..."
+		& rasdial.exe "$($connection.Name)" /DISCONNECT
 		if ($lastExitCode -ne 0) { throw "Disconnect failed with exit code $lastExitCode" }
-		"Disconnected now."
+		"✅ VPN disconnected."
 		exit 0 # success
 	}
 	throw "No VPN connection found."
 } catch {
-	"⚠️ ERROR: $($Error[0]) (script line $($_.InvocationInfo.ScriptLineNumber))"
+	"⚠️ ERROR: $($Error[0])"
 	exit 1
 }
