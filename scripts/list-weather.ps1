@@ -7,8 +7,8 @@
 	Specifies the location to use (determined automatically by default)
 .EXAMPLE
 	PS> ./list-weather.ps1
-	TODAY Temp  ☂️mm  💧  💨km/h  ☀️UV  ☁️   👁km   at Munich (Bayern, Germany)
-	 0h   11°   0.0   88%   ↖ 7    1    8%    10   🌙 clear
+	TODAY Temp  ☂️mm  💧  💨km/h  ☀️UV  ☁️   👁km   Munich (Bayern, Germany)
+	 0h   🌙11°  0.0  88%   ↖ 7    1    8%    10    clear
 	...
 .LINK
 	https://github.com/fleschutz/PowerShell
@@ -113,7 +113,7 @@ try {
 		$icon = GetDescription $desc
 		if ($hour -eq 0) {
 			if ($day -eq 0) {
-				Write-Host "TODAY  Temp  ☂️mm   💧  💨km/h ☀️UV   ☁️   👁 km  at $area ($region, $country)" -foregroundColor green
+				Write-Host "`nTODAY  Temp  ☂️mm    💧 💨km/h   ☁️  ☀️UV 👁 km  $area ($region, $country)" -foregroundColor green
 			} elseif ($day -eq 1) {
 				$date = (Get-Date).AddDays(1)
 				[string]$dayOfWeek = $date.DayOfWeek
@@ -125,7 +125,7 @@ try {
 			}
 			$day++
 		}
-		"$(($hour.toString()).PadLeft(2))h   $($icon)$tempC°  $precip  $humidity%   $($windDir)$windSpeed    $UV   $clouds%   $visib   $desc"
+		"$(($hour.toString()).PadLeft(2))h   $($icon)$tempC°  $precip  $humidity%   $($windDir)$windSpeed   $clouds%   $UV   $visib   $desc"
 	}
 	exit 0 # success
 } catch {
