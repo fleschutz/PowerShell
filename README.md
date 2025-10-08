@@ -380,5 +380,3 @@ Mega Collection of PowerShell Scripts
 📜 License & Copyright
 -----------------------
 This open source project is licensed under the CC0-1.0 license. All trademarks are the property of their respective owners.
-
-If you made it this far, thanks for reading!
