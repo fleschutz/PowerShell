@@ -8,7 +8,7 @@
 .EXAMPLE
 	PS> ./switch-tabs.ps1
 	⏳ Switching from tab to tab automatically every 10 seconds...
-	   (click the Web browser to activate it - press <Ctrl C> here to stop it)
+	💡 Hint: click the Web browser to activate it. Press <Ctrl> <C> here to stop it.
 .NOTES
 	Author: Markus Fleschutz / License: CC0
 .LINK
@@ -19,7 +19,7 @@ param([int]$timeInterval = 10) # in seconds
 
 try {
 	Write-Host "⏳ Switching from tab to tab automatically every $timeInterval seconds..."
-	Write-Host "   (click the Web browser to activate it - press <Ctrl C> here to stop it)"
+	Write-Host "💡 Hint: click the Web browser to activate it. Press <Ctrl> <C> here to stop it."
 	$obj = New-Object -com wscript.shell
 	while ($true) {
 		$obj.SendKeys("^{PGDN}")
