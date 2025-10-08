@@ -369,13 +369,16 @@ Mega Collection of PowerShell Scripts
 | [write-vertical.ps1](scripts/write-vertical.ps1)                                          | Writes the given text in vertical direction. [More »](docs/write-vertical.md)                     |
 | [show-notification-motivation-quote.ps1](scripts/show-notification-motivation-quote.ps1)  | Show notification with random cat picture and motivation quote. [More »](docs/show-notification-motivation-quote.md) |
 
+
 🤝 Contributing
 ---------------
 * Contributions, suggestions, and improvements are welcome!
 * Open an Issue if you encounter bugs or have feature ideas.
 * Create a Pull Request if you'd like to improve a script.
-* Or just send your feedback to: `markus.fleschutz [at] gmail.com`
+
 
 📜 License & Copyright
 -----------------------
 This open source project is licensed under the CC0-1.0 license. All trademarks are the property of their respective owners.
+
+If you made it this far, thanks for reading!
