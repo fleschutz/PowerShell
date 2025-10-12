@@ -12,7 +12,7 @@
 #>
 
 try {
-	"⏳ (1/4) Checking requirements..." -foregroundColor green
+	"⏳ (1/4) Checking requirements..."
 	& "$PSScriptRoot/check-power.ps1"
 	& "$PSScriptRoot/check-smart-devices.ps1"
 	if ($IsLinux -or $IsMacOS) {
