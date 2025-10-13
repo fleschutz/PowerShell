@@ -7,7 +7,7 @@
 	Specifies the minimum level in MB (10 MB by default)
 .EXAMPLE
 	PS> ./check-swap-space.ps1
-	✅ Swap space uses 21% of 5GB with 1GB free.
+	✅ Swap space uses 21% of 5GB (1GB free)
 .LINK
 	https://github.com/fleschutz/PowerShell
 .NOTES
@@ -30,7 +30,7 @@ function MB2String { param([int64]$bytes)
 
 try {
 	
-	if ($IsLinux) {
+	if ($IsLinux -or $IsMacOS) {
 		$Result = $(free --mega | grep Swap:)
 		[int64]$total = $Result.subString(5,15)
 		[int64]$used = $Result.substring(20,13)
@@ -46,7 +46,7 @@ try {
 		[int64]$free = ($total - $used)
 	}
 	if ($total -eq 0) {
-        	Write-Output "⚠️ No swap space configured."
+		Write-Output "⚠️ No swap space configured."
 	} elseif ($free -eq 0) {
 		Write-Output "⚠️ Swap space of $(MB2String $total) is FULL!"
 	} elseif ($free -lt $minLevel) {
@@ -55,7 +55,7 @@ try {
 		Write-Output "✅ Swap space has $(MB2String $total) reserved."
 	} else {
 		[int64]$percent = ($used * 100) / $total
-		Write-Output "✅ Swap space uses $percent% of $(MB2String $total) with $(MB2String $free) free."
+		Write-Output "✅ Swap space uses $percent% of $(MB2String $total) ($(MB2String $free) free)"
 	}
 	exit 0 # success
 } catch {
