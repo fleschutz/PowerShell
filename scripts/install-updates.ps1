@@ -53,11 +53,11 @@ try {
 		& sudo softwareupdate -i -a
 	}
 	if (Get-Command winget -errorAction SilentlyContinue) {
-		Write-Host "`n⏳ Upgrading by Microsoft Store..." -foregroundColor green
+		Write-Host "`n⏳ Upgrading apps from Microsoft Store..." -foregroundColor green
 		& winget upgrade --all --source=msstore --include-unknown
 	}
 	if (Get-Command winget -errorAction SilentlyContinue) {
-		Write-Host "`n⏳ Upgrading by WinGet..." -foregroundColor green
+		Write-Host "`n⏳ Upgrading apps from WinGet..." -foregroundColor green
 		& winget upgrade --all --source=winget --include-unknown
 	}
 	if (Get-Command choco -errorAction SilentlyContinue) {
