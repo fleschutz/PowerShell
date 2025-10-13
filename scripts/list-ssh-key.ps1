@@ -1,10 +1,11 @@
 ﻿<#
 .SYNOPSIS
-        Lists the public SSH key
+        List the public SSH key
 .DESCRIPTION
-        This PowerShell script lists the user's public SSH key.
+        This PowerShell script lists the user's public SSH key (resides in the ~/.ssh folder).
 .EXAMPLE
         PS> ./list-ssh-key.ps1
+	✅ Public SSH key is: ssh-ed25519 AAAC3NzaC1lZDINTE5AAAAIKjhD0zlk9HV6OAXVtluUJ5c2BawfetGDLWu0CA1R markus@tux
 .LINK
         https://github.com/fleschutz/PowerShell
 .NOTES
@@ -17,12 +18,11 @@ try {
 	} elseif (Test-Path "~/.ssh/id_rsa.pub") {
 		$key = Get-Content "~/.ssh/id_rsa.pub"	
 	} else {
-		"⚠️ No SSH key found - execute 'new-ssh-key.ps1' to create one"
-		exit 1
+		throw "No public SSH key found - execute 'new-ssh-key.ps1' to create one"
 	}
-	"✅ Public SSH key: $key"
+	Write-Host "✅ Public SSH key is: $key"
 	exit 0 # success
 } catch {
-	"⚠️ ERROR: $($Error[0]) (script line $($_.InvocationInfo.ScriptLineNumber))"
+	"⚠️ ERROR: $($Error[0])"
 	exit 1
 }
