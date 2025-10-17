@@ -27,8 +27,8 @@ Example
 -------
 ```powershell
 PS> ./list-weather.ps1
-TODAY  🌡°C  ☂️mm  💧  💨km/h  ☀️UV  ☁️   👁km   at Munich (Bayern, Germany)
- 0h   11°   0.0   88%   ↖ 7    1    8%    10   🌙 clear
+TODAY Temp  ☂️mm  💧  💨km/h  ☀️UV  ☁️   👁km   Munich (Bayern, Germany)
+ 0h   🌙11°  0.0  88%   ↖ 7    1    8%    10    clear
 ...
 
 ```
@@ -53,8 +53,8 @@ Script Content
 	Specifies the location to use (determined automatically by default)
 .EXAMPLE
 	PS> ./list-weather.ps1
-	TODAY  🌡°C  ☂️mm  💧  💨km/h  ☀️UV  ☁️   👁km   at Munich (Bayern, Germany)
-	 0h   11°   0.0   88%   ↖ 7    1    8%    10   🌙 clear
+	TODAY Temp  ☂️mm  💧  💨km/h  ☀️UV  ☁️   👁km   Munich (Bayern, Germany)
+	 0h   🌙11°  0.0  88%   ↖ 7    1    8%    10    clear
 	...
 .LINK
 	https://github.com/fleschutz/PowerShell
@@ -66,50 +66,50 @@ param([string]$location = "") # empty means determine automatically
 
 function GetDescription([string]$text) { 
 	switch ($text) {
-	"Blizzard"			{ return "❄️ blizzard ⚠️" }
-	"Blowing snow"			{ return "❄️ blowing snow ⚠️" }
-	"Clear"				{ return "🌙 clear" }
-	"Cloudy"			{ return "☁️ cloudy" }
-	"Fog"				{ return "🌫  fog" }
-	"Freezing fog"			{ return "🌫  freezing fog" }
-	"Heavy rain"			{ return "💧 heavy rain ⚠️" }
-	"Heavy snow"			{ return "❄️ heavy snow ⚠️" }
-	"Light drizzle"			{ return "💧 light drizzle" }
-	"Light freezing rain"		{ return "💧 light freezing rain ⚠️" }
-	"Light rain"			{ return "💧 light rain" }
-	"Light rain shower"		{ return "💧 light rain shower" }
-	"Light sleet"			{ return "❄️ light sleet" }
-	"Light sleet showers"		{ return "❄️ light sleet showers" }
-	"Light snow"			{ return "❄️ light snow" }
-	"Light snow showers"		{ return "❄️ light snow showers" }
-	"Moderate or heavy freezing rain"{return "💧 moderate or heavy freezing rain ⚠️" }
-	"Moderate or heavy sleet"	{ return "❄️ moderate or heavy sleet ⚠️" }
-	"Moderate or heavy rain shower" { return "💧 moderate or heavy rain shower ⚠️" }
-	"Moderate or heavy rain in area with thunder" { return "💧 moderate or heavy rain in area with thunder ⚠️" }
-	"Moderate or heavy snow showers"{ return "❄️ moderate or heavy snow showers ⚠️" }
-	"Moderate or heavy snow in area with thunder" { return "❄️ moderate or heavy snow in area with thunder ⚠️" }
-	"Moderate rain"			{ return "💧 moderate rain" }
-	"Moderate rain at times"	{ return "💧 moderate rain at times" }
-	"Moderate snow"			{ return "❄️ moderate snow" }
-	"Mist"				{ return "🌫  misty" }
-	"Overcast"			{ return "☁️ overcast" }
-	"Partly cloudy"			{ return "⛅️ partly cloudy" }
-	"Patchy heavy snow"		{ return "❄️ patchy heavy snow ⚠️" }
-	"Patchy light drizzle"     	{ return "💧 patchy light drizzle" }
-	"Patchy light rain"     	{ return "💧 patchy light rain" }
-	"Patchy light rain in area with thunder" { return "💧 patchy light rain in area with thunder" }
-	"Patchy light rain with thunder" { return "💧 patchy light rain with thunder" }
-	"Patchy light snow"		{ return "❄️ patchy light snow" }
-	"Patchy moderate snow"		{ return "❄️ patchy moderate snow" }
-	"Patchy rain possible"  	{ return "💧 patchy rain possible" }
-	"Patchy rain nearby"		{ return "💧 patchy rain nearby" }
-	"Patchy sleet nearby"		{ return "❄️ patchy sleet nearby" }
-	"Patchy snow nearby"		{ return "❄️ patchy snow nearby" }
-	"Patchy snow possible"  	{ return "❄️ patchy snow possible" }
-	"Sunny"				{ return "☀️ sunny" }
-	"Thundery outbreaks possible"	{ return "⚡️ thundery outbreaks possible" }
-	"Thundery outbreaks in nearby"	{ return "⚡️ thundery outbreaks in nearby" }
-	default				{ return $text }
+	"Blizzard"			{ return "❄️" }
+	"Blowing snow"			{ return "❄️" }
+	"Clear"				{ return "🌙" }
+	"Cloudy"			{ return "☁️" }
+	"Fog"				{ return "🌫 " }
+	"Freezing fog"			{ return "🌫 " }
+	"Heavy rain"			{ return "💧" }
+	"Heavy snow"			{ return "❄️" }
+	"Light drizzle"			{ return "💧" }
+	"Light freezing rain"		{ return "💧" }
+	"Light rain"			{ return "💧" }
+	"Light rain shower"		{ return "💧" }
+	"Light sleet"			{ return "❄️" }
+	"Light sleet showers"		{ return "❄️" }
+	"Light snow"			{ return "❄️" }
+	"Light snow showers"		{ return "❄️" }
+	"Moderate or heavy freezing rain"{return "💧" }
+	"Moderate or heavy sleet"	{ return "❄️" }
+	"Moderate or heavy rain shower" { return "💧" }
+	"Moderate or heavy rain in area with thunder" { return "💧" }
+	"Moderate or heavy snow showers"{ return "❄️" }
+	"Moderate or heavy snow in area with thunder" { return "❄️" }
+	"Moderate rain"			{ return "💧" }
+	"Moderate rain at times"	{ return "💧" }
+	"Moderate snow"			{ return "❄️" }
+	"Mist"				{ return "🌫 " }
+	"Overcast"			{ return "☁️" }
+	"Partly cloudy"			{ return "⛅️" }
+	"Patchy heavy snow"		{ return "❄️" }
+	"Patchy light drizzle"     	{ return "💧" }
+	"Patchy light rain"     	{ return "💧" }
+	"Patchy light rain in area with thunder" { return "💧" }
+	"Patchy light rain with thunder" { return "💧" }
+	"Patchy light snow"		{ return "❄️" }
+	"Patchy moderate snow"		{ return "❄️" }
+	"Patchy rain possible"  	{ return "💧" }
+	"Patchy rain nearby"		{ return "💧" }
+	"Patchy sleet nearby"		{ return "❄️" }
+	"Patchy snow nearby"		{ return "❄️" }
+	"Patchy snow possible"  	{ return "❄️" }
+	"Sunny"				{ return "☀️" }
+	"Thundery outbreaks possible"	{ return "⚡️" }
+	"Thundery outbreaks in nearby"	{ return "⚡️" }
+	default				{ return "?" }
 	}
 }
 
@@ -146,7 +146,7 @@ try {
 	[int]$day = 0
 	foreach($hourly in $weather.weather.hourly) {
 		$hour = $hourly.time / 100
-		$tempC = $(($hourly.tempC.toString()).PadLeft(3))
+		$tempC = $(($hourly.tempC.toString()).PadLeft(2))
 		$precip = $($($hourly.precipMM).PadLeft(4))
 		$humidity = $(($hourly.humidity.toString()).PadLeft(3))
 		$pressure = $hourly.pressure
@@ -155,10 +155,11 @@ try {
 		$UV = $hourly.uvIndex
 		$clouds = $(($hourly.cloudcover.toString()).PadLeft(3))
 		$visib = $(($hourly.visibility.toString()).PadLeft(2))
-		$desc = GetDescription $hourly.weatherDesc.value.trim()
+		$desc = $hourly.weatherDesc.value.trim()
+		$icon = GetDescription $desc
 		if ($hour -eq 0) {
 			if ($day -eq 0) {
-				Write-Host "TODAY  🌡°C  ☂️mm   💧  💨km/h ☀️UV   ☁️   👁km   at $area ($region, $country)" -foregroundColor green
+				Write-Host "`nTODAY  Temp  ☂️mm    💧 💨km/h   ☁️  ☀️UV 👁 km  $area ($region, $country)" -foregroundColor green
 			} elseif ($day -eq 1) {
 				$date = (Get-Date).AddDays(1)
 				[string]$dayOfWeek = $date.DayOfWeek
@@ -170,7 +171,7 @@ try {
 			}
 			$day++
 		}
-		"$(($hour.toString()).PadLeft(2))h  $tempC°   $precip  $humidity%   $($windDir)$windSpeed    $UV   $clouds%   $visib   $desc"
+		"$(($hour.toString()).PadLeft(2))h   $($icon)$tempC°  $precip  $humidity%   $($windDir)$windSpeed   $clouds%   $UV   $visib   $desc"
 	}
 	exit 0 # success
 } catch {
@@ -179,4 +180,4 @@ try {
 }
 ```
 
-*(page generated by convert-ps2md.ps1 as of 08/25/2025 16:51:27)*
+*(page generated by convert-ps2md.ps1 as of 10/17/2025 15:46:19)*
