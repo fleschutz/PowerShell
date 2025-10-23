@@ -253,13 +253,14 @@ function Add-PathTToSettings {
     $Key.SetValue("PATH", $NewPathValue, $PathValueKind)
 }
 
+Write-Host "⏳ (1/6) Querying platform... " -noNewline
 if ($IsLinux) {
-    $platform = (uname -i)
+    $platform = (uname -m)
     if ($platform -eq "x86_64") { $architecture = "x64" }
     elseif ($platform -eq "x86_32") { $architecture = "x86" }
     elseif ($platform -eq "aarch64") { $architecture = "arm64" }
     elseif ($platform -eq "aarch32") { $architecture = "arm32" }
-    else { Write-Host "Unknown platform $platform" }
+    else { Write-Host "Unknown platform '$platform'" }
 } elseif (-not $IsWinEnv) {
     $architecture = "x64"
 } elseif ($(Get-ComputerInfo -Property OsArchitecture).OsArchitecture -eq "ARM 64-bit Processor") {
@@ -271,6 +272,7 @@ if ($IsLinux) {
         default { throw "PowerShell package for OS architecture '$_' is not supported." }
     }
 }
+Write-Host "$architecture" 
 $tempDir = Join-Path ([System.IO.Path]::GetTempPath()) ([System.IO.Path]::GetRandomFileName())
 $null = New-Item -ItemType Directory -Path $tempDir -Force -ErrorAction SilentlyContinue
 try {
@@ -357,7 +359,7 @@ try {
             tar zxf $packagePath -C $contentPath
         }
     } else {
-        Write-Host "⏳ (1/5) Querying infos from https://raw.githubusercontent.com ..."
+        Write-Host "⏳ (2/6) Querying infos from https://raw.githubusercontent.com ..."
         $metadata = Invoke-RestMethod https://raw.githubusercontent.com/PowerShell/PowerShell/master/tools/metadata.json
         if ($Preview) {
             $release = $metadata.PreviewReleaseTag -replace '^v'
@@ -383,7 +385,7 @@ try {
 	Write-Host "         Latest release is $release for $architecture (package name: $packageName)"
 
         $downloadURL = "https://github.com/PowerShell/PowerShell/releases/download/v${release}/${packageName}"
-        Write-Host "⏳ (2/5) Loading $downloadURL"
+        Write-Host "⏳ (3/6) Loading $downloadURL"
 
         $packagePath = Join-Path -Path $tempDir -ChildPath $packageName
         if (!$PSVersionTable.ContainsKey('PSEdition') -or $PSVersionTable.PSEdition -eq "Desktop") {
@@ -426,13 +428,13 @@ try {
                 Expand-ArchiveInternal -Path $packagePath -DestinationPath $contentPath
             }
         } else {
-            Write-Host "⏳ (3/5) Extracting to $contentPath..."
+            Write-Host "⏳ (4/6) Extracting to $contentPath..."
             & tar zxf $packagePath -C $contentPath
         }
     }
 
     if (-not $UseMSI) {
-        Write-Host "⏳ (4/5) Removing old installation at $Destination ..."
+        Write-Host "⏳ (5/6) Removing old installation at $Destination ..."
         if ($IsLinuxEnv) { 
 		& sudo rm -rf "$Destination"
 	} else {
@@ -440,18 +442,18 @@ try {
 	}
 
         if (Test-Path $Destination) {
-            Write-Host "⏳ (5/5) Copying files to $Destination... "
+            Write-Host "⏳ (6/6) Copying files to $Destination... "
             # only copy files as folders will already exist at $Destination
             Get-ChildItem -Recurse -Path "$contentPath" -File | ForEach-Object {
                 $DestinationFilePath = Join-Path $Destination $_.fullname.replace($contentPath, "")
                 Copy-Item $_.fullname -Destination $DestinationFilePath
             }
         } elseif ($IsWinEnv) {
-            Write-Host "⏳ (5/5) Moving new installation to $Destination... "
+            Write-Host "⏳ (6/6) Moving new installation to $Destination... "
             $null = New-Item -Path (Split-Path -Path $Destination -Parent) -ItemType Directory -ErrorAction SilentlyContinue
             Move-Item -Path $contentPath -Destination $Destination
         } else {
-            Write-Host "⏳ (5/5) Moving new installation to $Destination... "
+            Write-Host "⏳ (6/6) Moving new installation to $Destination... "
             & sudo mv "$contentPath" "$Destination"
 	}
     }
