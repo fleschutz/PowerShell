@@ -5,7 +5,7 @@
 	This PowerShell script changes the current working directory to the user's secure shell (SSH) folder.
 .EXAMPLE
 	PS> ./cd-ssh.ps1
-	📂C:\Users\Markus\.ssh entered (has 4 files)
+	📂C:\Users\Markus\.ssh entered, has 4 files.
 .LINK
 	https://github.com/fleschutz/PowerShell
 .NOTES
@@ -22,7 +22,7 @@ try {
 	$path = Resolve-Path "$path"
 	Set-Location "$path"
 	$files = Get-ChildItem $path -attributes !Directory
-	"📂$path entered (has $($files.Count) files)"
+	"📂$path entered, has $($files.Count) files."
 	exit 0 # success
 } catch {
 	"⚠️ ERROR: $($Error[0])"
