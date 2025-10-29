@@ -1,8 +1,8 @@
 ﻿<#
 .SYNOPSIS
-	Checks the OS status
+	Check the OS status
 .DESCRIPTION
-	This PowerShell script queries the operating system status and prints it.
+	This PowerShell script queries the operating system status and writes it to the console.
 .EXAMPLE
 	PS> ./check-os.ps1
 	✅ Windows 10 Pro 64-bit since 6/22/2021 (v10.0.19045, S/N 00123-45678-15135-AAOEM, P/K AB123-CD456-EF789-GH000-WFR6P)
@@ -14,9 +14,10 @@
 
 try {
 	if ($IsLinux) {
-		$Name = $PSVersionTable.OS
-		if ([System.Environment]::Is64BitOperatingSystem) { $Arch = "64-bit" } else { $Arch = "32-bit" }
-		Write-Host "✅ $Name (Linux $Arch)"
+		$name = $PSVersionTable.OS
+		$kernel = (uname --kernel-release)
+		$architecture = (uname --machine)
+		Write-Host "✅ $name (Linux kernel $kernel on $architecture)"
 	} else {
 		$OS = Get-WmiObject -class Win32_OperatingSystem
 		$Name = $OS.Caption -Replace "Microsoft Windows","Windows"
