@@ -8,9 +8,9 @@
 	Specifies the file path to the Git repository (default: current working directory)
 .EXAMPLE
 	PS> ./build-repo.ps1 C:\Repos\ninja
-	⏳ Building 'ninja' by executing cmake...
+	⏳ Configuring ninja by executing 'cmake .'...
 	...
-	✅ Build of 'ninja' succeeded in 47s, results at: 📂C:\Repos\ninja\_results
+	✅ ninja built successfully in 47s, results at: 📂C:\Repos\ninja\_x86_64_build
 .LINK
 	https://github.com/fleschutz/PowerShell
 .NOTES
@@ -22,8 +22,9 @@ param([string]$path = "$PWD")
 function BuildFolder([string]$path) {
 	$dirName = (Get-Item "$path").Name
 	if (Test-Path "$path/CMakeLists.txt" -pathType leaf) {
-		"⏳ (1/3) Building '$dirName' by executing cmake..."
-		$global:results = "$path/_results/"
+		"⏳ (1/3) Configuring $dirName by executing 'cmake .'..."
+		$arch = (uname -m)
+		$global:results = "$path/_$(arch)_build/"
 		if (-not(Test-Path $global:results -pathType container)) { 
 			& mkdir $global:results
 		}
@@ -31,11 +32,11 @@ function BuildFolder([string]$path) {
 		& cmake ..
 		if ($lastExitCode -ne 0) { throw "Executing 'cmake ..' failed with exit code $lastExitCode" }
 
-		"⏳ (2/3) Executing 'make -j4' to compile and link..."
+		"⏳ (2/3) Building $dirName by executing 'make -j4'..."
 		& make -j4
 		if ($lastExitCode -ne 0) { throw "Executing 'make -j4' failed with exit code $lastExitCode" }
 
-		"⏳ (3/3) Checking '$dirName' by executing 'ctest -V'... (if tests are provided)"
+		"⏳ (3/3) Testing $dirName by executing 'ctest -V'... (if tests are provided)"
 		& ctest -V
 		if ($lastExitCode -ne 0) { throw "Executing 'ctest -V' failed with exit code $lastExitCode" }
 	} elseif (Test-Path "$path/.cargo/release.toml" -pathType leaf) { 
@@ -158,7 +159,7 @@ try {
 	if ($global:results -eq "") {
 		"✅ Build of '$dirName' succeeded in $($elapsed)s."
 	} else {
-		"✅ Build of '$dirName' succeeded in $($elapsed)s, results at: 📂$($global:results)"
+		"✅ $dirName built successfully in $($elapsed)s, results at: 📂$($global:results)"
 	}
 	exit 0 # success
 } catch {
