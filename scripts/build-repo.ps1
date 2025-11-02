@@ -157,9 +157,9 @@ try {
 	$dirName = (Get-Item "$path").Name
 	[int]$elapsed = $stopWatch.Elapsed.TotalSeconds
 	if ($global:results -eq "") {
-		"✅ Build of '$dirName' succeeded in $($elapsed)s."
+		"✅ $dirName built and tested successfully in $($elapsed)s."
 	} else {
-		"✅ $dirName built successfully in $($elapsed)s, results at: 📂$($global:results)"
+		"✅ $dirName built and tested successfully in $($elapsed)s, results at: 📂$($global:results)"
 	}
 	exit 0 # success
 } catch {
