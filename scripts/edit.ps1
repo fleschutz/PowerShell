@@ -5,7 +5,7 @@
 	This PowerShell script opens the installed text editor with the given text file.
 	Supported are: Emacs, Helix, pico, nano, neovim, Notepad, vi, vim, Visual Studio Code and Wordpad.
 .PARAMETER path
-	Specifies the path to the text file (default is to query the user to specify it)
+	Specifies the path to the file to edit (default: ask user)
 .EXAMPLE
 	PS> ./edit.ps1 C:\MyDiary.txt
 .LINK
@@ -41,5 +41,5 @@ TryEditor "edit.exe"    $path
 TryEditor "wordpad.exe" $path
 Write-Host ""
 
-"⚠️ Sorry, no text editor found. Please install your favorite one (e.g. by executing 'winget install helix.helix')."
+"⚠️ Sorry, no supported text editor found (Emacs, Helix, pico, nano, neovim, Notepad, vi, vim, Visual Studio Code, Wordpad)"
 exit 1
