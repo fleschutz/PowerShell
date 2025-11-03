@@ -8,9 +8,9 @@
 	Specifies the file path to the Git repository (default: current working directory)
 .EXAMPLE
 	PS> ./build-repo.ps1 C:\Repos\ninja
-	⏳ Configuring ninja by executing 'cmake .'...
+	⏳ Configuring CMake by executing 'cmake .'...
 	...
-	✅ ninja built successfully in 47s, results at: 📂C:\Repos\ninja\_x86_64_build
+	✅ Repo 'ninja' built successfully in 47s, results at: 📂C:\Repos\ninja\_x86_64_build
 .LINK
 	https://github.com/fleschutz/PowerShell
 .NOTES
@@ -22,7 +22,7 @@ param([string]$path = "$PWD")
 function BuildFolder([string]$path) {
 	$dirName = (Get-Item "$path").Name
 	if (Test-Path "$path/CMakeLists.txt" -pathType leaf) {
-		"⏳ (1/3) Configuring $dirName by executing 'cmake .'..."
+		"⏳ (1/3) Configuring CMake by executing 'cmake .'..."
 		$arch = (uname -m)
 		$global:results = "$path/_$(arch)_build/"
 		if (-not(Test-Path $global:results -pathType container)) { 
@@ -157,9 +157,9 @@ try {
 	$dirName = (Get-Item "$path").Name
 	[int]$elapsed = $stopWatch.Elapsed.TotalSeconds
 	if ($global:results -eq "") {
-		"✅ $dirName built and tested successfully in $($elapsed)s."
+		"✅ Repo '$dirName' built successfully in $($elapsed)s."
 	} else {
-		"✅ $dirName built and tested successfully in $($elapsed)s, results at: 📂$($global:results)"
+		"✅ Repo '$dirName' built successfully in $($elapsed)s, results at: 📂$($global:results)"
 	}
 	exit 0 # success
 } catch {
