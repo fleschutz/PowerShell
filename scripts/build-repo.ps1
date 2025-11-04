@@ -2,8 +2,9 @@
 .SYNOPSIS
 	Builds a repo
 .DESCRIPTION
-	This PowerShell script builds a Git repository by supporting the following build
-	systems: autogen, cargo, cmake, configure, Gradle, Imakefile, Makefile, and Meson.
+	This PowerShell script builds an arbitrary source code repository by supporting
+	build systems like: autogen, cargo, cmake, configure, Gradle, Imakefile, Makefile,
+	Meson, and PowerShell (build.ps1).
 .PARAMETER path
 	Specifies the file path to the Git repository (default: current working directory)
 .EXAMPLE
@@ -115,6 +116,13 @@ function BuildFolder([string]$path) {
 
 		& make -j4
 		if ($lastExitCode -ne 0) { throw "Executing 'make -j4' failed with exit code $lastExitCode" }
+
+	} elseif (Test-Path "$path/build.ps1" -pathType leaf) { 
+
+		"⏳ Building '$dirName' by executing 'build.ps1'..."
+		Set-Location "$path/"
+		& ./build.ps1
+		if ($lastExitCode -ne 0) { throw "Executing './build.ps1' failed with exit code $lastExitCode" }
 
 	} elseif (Test-Path "$path/compile.sh" -pathType leaf) { 
 
