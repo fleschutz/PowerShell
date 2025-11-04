@@ -29,7 +29,7 @@ try {
 		& "$PSScriptRoot/build-repo.ps1" "$folder"
 	}
 	[int]$elapsed = $stopWatch.Elapsed.TotalSeconds
-	"✅ Built $numFolders Git repositories at 📂$parentDirName in $($elapsed)s."
+	"✅ $numFolders Git repositories built at 📂$parentDir in $($elapsed)s."
 	exit 0 # success
 } catch {
 	"⚠️ ERROR: $($Error[0]) (script line $($_.InvocationInfo.ScriptLineNumber))"
