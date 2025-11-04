@@ -1,9 +1,9 @@
 ﻿<#
 .SYNOPSIS
-	Builds Git repositories
+	Build Git repos
 .DESCRIPTION
-	This PowerShell script builds all Git repositories in a folder.
-.PARAMETER ParentDir
+	This PowerShell script builds all Git repositories within a folder.
+.PARAMETER parentDir
 	Specifies the path to the parent folder
 .EXAMPLE
 	PS> ./build-repos.ps1 C:\MyRepos
@@ -13,26 +13,23 @@
 	Author: Markus Fleschutz | License: CC0
 #>
 
-param([string]$ParentDir = "$PWD")
+param([string]$parentDir = "$PWD")
 
 try {
-	$StopWatch = [system.diagnostics.stopwatch]::startNew()
+	$stopWatch = [system.diagnostics.stopwatch]::startNew()
 
-	$ParentDirName = (Get-Item "$ParentDir").Name
-	"⏳ Step 1 - Checking parent folder 📂$ParentDirName..."
-	if (-not(Test-Path "$ParentDir" -pathType container)) { throw "Can't access folder: $ParentDir" }
-	$Folders = (Get-ChildItem "$ParentDir" -attributes Directory)
-	$FolderCount = $Folders.Count
-	"Found $FolderCount subfolders."
+	$parentDirName = (Get-Item "$parentDir").Name
+	"⏳ Step 1 - Checking parent folder 📂$parentDirName..."
+	if (-not(Test-Path "$parentDir" -pathType container)) { throw "Can't access folder: $parentDir" }
+	$folders = (Get-ChildItem "$parentDir" -attributes Directory)
+	$numFolders = $folders.Count
+	"Found $numFolders subfolders."
 
-	[int]$Step = 1
-	foreach ($Folder in $Folders) {
-		& "$PSScriptRoot/build-repo.ps1" "$Folder"
-		$Step++
+	foreach ($folder in $folders) {
+		& "$PSScriptRoot/build-repo.ps1" "$folder"
 	}
-
-	[int]$Elapsed = $StopWatch.Elapsed.TotalSeconds
-	"✅ Built $FolderCount Git repositories at 📂$ParentDirName in $Elapsed sec"
+	[int]$elapsed = $stopWatch.Elapsed.TotalSeconds
+	"✅ Built $numFolders Git repositories at 📂$parentDirName in $($elapsed)s."
 	exit 0 # success
 } catch {
 	"⚠️ ERROR: $($Error[0]) (script line $($_.InvocationInfo.ScriptLineNumber))"
