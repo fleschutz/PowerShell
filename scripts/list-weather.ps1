@@ -18,7 +18,7 @@
 
 param([string]$location = "") # empty means determine automatically
 
-function GetDescription([string]$text) { 
+function GetEmoji([string]$text) { 
 	switch ($text) {
 	"Blizzard"			{ return "❄️" }
 	"Blowing snow"			{ return "❄️" }
@@ -100,17 +100,16 @@ try {
 	[int]$day = 0
 	foreach($hourly in $weather.weather.hourly) {
 		$hour = $hourly.time / 100
-		$tempC = $(($hourly.tempC.toString()).PadLeft(2))
+		$temp = $(($hourly.tempC.toString()).PadLeft(2))
 		$precip = $($($hourly.precipMM).PadLeft(4))
 		$humidity = $(($hourly.humidity.toString()).PadLeft(3))
-		$pressure = $hourly.pressure
 		$windSpeed = $(($hourly.windspeedKmph.toString()).PadLeft(2))
 		$windDir = GetWindDir $hourly.winddir16Point
-		$UV = $hourly.uvIndex
 		$clouds = $(($hourly.cloudcover.toString()).PadLeft(3))
+		$UV = $hourly.uvIndex
 		$visib = $(($hourly.visibility.toString()).PadLeft(2))
 		$desc = $hourly.weatherDesc.value.trim()
-		$icon = GetDescription $desc
+		$emoji = GetEmoji $desc
 		if ($hour -eq 0) {
 			if ($day -eq 0) {
 				Write-Host "`nTODAY  Temp  ☂️mm    💧 💨km/h   ☁️  ☀️UV 👁 km  $area ($region, $country)" -foregroundColor green
@@ -125,7 +124,7 @@ try {
 			}
 			$day++
 		}
-		"$(($hour.toString()).PadLeft(2))h   $($icon)$tempC°  $precip  $humidity%   $($windDir)$windSpeed   $clouds%   $UV   $visib   $desc"
+		"$(($hour.toString()).PadLeft(2))h   $($emoji)$temp°  $precip  $humidity%   $($windDir)$windSpeed   $clouds%   $UV   $visib   $desc"
 	}
 	exit 0 # success
 } catch {
