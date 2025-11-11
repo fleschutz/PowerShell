@@ -1,13 +1,14 @@
 ﻿<#
 .SYNOPSIS
-	Opens a text editor
+	Edit a text file
 .DESCRIPTION
 	This PowerShell script opens the installed text editor with the given text file.
-	Supported are: Emacs, Helix, pico, nano, neovim, Notepad, vi, vim, Visual Studio Code and Wordpad.
+	It tries to use neovim, vim, vi, nano, pico, Helix, Emacs, Visual Studio Code,
+	Notepad, Microsoft Edit, or Wordpad (in that order).
 .PARAMETER path
 	Specifies the path to the file to edit (default: ask user)
 .EXAMPLE
-	PS> ./edit.ps1 C:\MyDiary.txt
+	PS> ./vi.ps1 C:\MyDiary.txt
 .LINK
 	https://github.com/fleschutz/PowerShell
 .NOTES

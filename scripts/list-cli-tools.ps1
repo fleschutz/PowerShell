@@ -183,6 +183,7 @@ function List-CLI-Tools {
 	ListTool gh		"--version"
 	ListTool git		"--version"
 	ListTool gkill		"--version"
+	ListTool glxinfo	""
 	ListTool gmondump	"--version"
 	ListTool go		"version"
 	ListTool gpg		"--version"
