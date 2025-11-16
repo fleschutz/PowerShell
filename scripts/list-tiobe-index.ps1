@@ -42,8 +42,9 @@ function WriteBar { param([string]$text, [float]$value, [float]$max, [float]$cha
 
 try {
 	Write-Host ""
-	Write-Host "TIOBE INDEX 2021-06  (source: https://www.tiobe.com)"
-	Write-Host "===================================================="
+	Write-Host ""
+	Write-Host "`t`t`t`tTIOBE Index for November 2025"
+	Write-Host "`t`t`t`t============================="
 	Write-Host ""
 
 	$table = Import-CSV "$PSScriptRoot/../data/TIOBE-index.csv"
@@ -51,8 +52,12 @@ try {
 		[string]$name = $row.Language
 		[float]$value = $row.Popularity
 		[float]$change = $row.Change
-		WriteBar $name $value 14.0 $change
+		WriteBar $name $value 25.0 $change
 	}
+	Write-Host ""
+	Write-Host "Source: " -noNewline
+	Write-Host "https://tiobe.com/tiobe-index/" -foregroundColor blue -noNewline
+	Write-Host " (<Ctrl> <Click> to open the link in your browser)"
 	exit 0 # success
 } catch {
 	"⚠️ ERROR: $($Error[0]) (script line $($_.InvocationInfo.ScriptLineNumber))"
