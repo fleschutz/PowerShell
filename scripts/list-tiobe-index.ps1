@@ -49,10 +49,12 @@ try {
 
 	$table = Import-CSV "$PSScriptRoot/../data/TIOBE-index.csv"
 	foreach($row in $table) {
-		[string]$name = $row.Language
-		[float]$value = $row.Popularity
-		[float]$change = $row.Change
-		WriteBar $name $value 25.0 $change
+		[string]$rank = "{0,2}" -f $row.RANK
+		[string]$language = "{0,-20}" -f $row.LANGUAGE
+		[float]$popularity = $row.POPULARITY
+		[float]$change = $row.CHANGE
+		Write-Host "$($rank). $language" -noNewline
+		WriteBar "" $popularity 30.0 $change
 	}
 	Write-Host ""
 	Write-Host "Source: " -noNewline
