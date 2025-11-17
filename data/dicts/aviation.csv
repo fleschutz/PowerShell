@@ -329,6 +329,7 @@ IANS,Institute of Air Navigation Services, a division of Eurocontrol
 IAS,Indicated airspeed
 IATA,"International Air Transport Association, HQ in Montreal, Canada"
 ICA,Initial Climb Area
+ICAO,International Civil Aviation Organization
 ICARD,International Codes and Route Designators
 IFE,In-flight Emergency
 IFR,Instrument Flight Rules
@@ -435,7 +436,6 @@ RCR,Runway Condition Reading
 RCS,Radar Cross Section
 RESA,Runway End Safety Area
 RET,Rapid Exit Taxiways
-RF,Radio Frequency
 RFFS,Rescue and Fire Fighting Services
 RFM,Rotorcraft Flight Manual
 RIMCAS,Runway Incursion Monitoring and Conflict Alert System

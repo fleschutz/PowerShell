@@ -32,7 +32,7 @@ try {
 	if ($basename -eq "") {
 		Write-Host "🤷‍ Sorry, I don't know '$term'. Let's search for it: " -noNewline
 		Write-Host "https://qwant.com/?q=what+is+$term" -foregroundColor blue -noNewline
-		Write-Host " (use <Ctrl> <Click>)"
+		Write-Host " (Ctrl+Click to open link)"
 	}
 	exit 0 # success
 } catch {

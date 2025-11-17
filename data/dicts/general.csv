@@ -94,7 +94,6 @@ AC1,Aircraftman 1st Class
 AC2,Aircraftman 2nd Class
 ACA,"Affordable Care Act,shorthand for the Patient Protection and Affordable Care Act,commonly called 'Obamacare',Airspace Control Authority,Airspace Co-ordination Area,A Current Affair"
 ACAB,All cops are bastards
-ACARS,Aircraft Communications Addressing and Reporting System
 ACAS,"Aboriginal Children's Advancement Society,Advisory,Conciliation and Arbitration Service"
 ACB,"Asociación de Clubes de Baloncesto (Spanish for 'Association of Basketball Clubs')"
 ACCA,The Association of Chartered Certified Accountants,Automatic Cloud Cover Assessment
@@ -292,7 +291,7 @@ Am,Americium
 AM,"Amplitude Modulation and Ante Meridiem; see entry,Armenia (ISO 3166 digram)"
 AM1,Airman 1st class
 AMA,American Medical Association,Australian Medical Association
-AMAPS,Aircraft,Missile,Avionics Performance Simulation
+AMAPS,"Aircraft,Missile,Avionics Performance Simulation"
 AMC,Adaptive modulation and coding (digital communications),U.S. Air Mobility Command,American Motors Corporation,American Movie Classics (TV network; now known simply by the initials),U.S. Army Materiel Command
 AMCB,Army/Marine Corps Board (USA)
 AMFOM,Advanced Missile Fly Out Model
@@ -2115,7 +2114,6 @@ IBRD,International Bank for Reconstruction and Development (part of the World Ba
 IBS,Irritable Bowel Syndrome
 IC,"Ice Crystals (METAR Code),Integrated Circuit,[inner circle]"
 ICANN,Internet Corporation for Assigned Names and Numbers
-ICAO,International Civil Aviation Organization
 ICBM,I see (phonetically "c") BatMan
 ICBM,Intercontinental Ballistic Missile
 ICBN,International Code of Botanical Nomenclature
@@ -4087,8 +4085,7 @@ RERC,Rehabilitation Engineering Research Center
 RES,Radiation Exposure Status,Reserve
 RESNA,Rehabilitation Engineering and Assistive Technology Society of North America
 REU,Réunion (ISO 3166 trigram)
-RF,Radio Frequency,Receptive Field (neurophysiology)
-Rf,Rutherfordium
+RF,"Radio Frequency, Resonance Frequency, Receptive Field (neurophysiology)"
 RFC,Request for Comments,Royal Flying Corps (WWI precursor to RAF)
 RFD,Request for Documentation
 RFE,Request for Evaluation

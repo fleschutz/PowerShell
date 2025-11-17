@@ -1508,8 +1508,7 @@ ITS,issue tracking system
 ITSM,IT Service Management
 ITSO,International Technical Support Organization
 ITSS,Information Technology Solutions Shop
-ITU,International Technical Union
-ITU,International Telecommunication Union
+ITU,International Telecommunications Union
 IV,initialization vector
 IVR,Interactive Voice Response
 IXC,interexchange carrier
@@ -1750,6 +1749,7 @@ MSCS,Microsoft Cluster Server
 MSDOS,Microsoft Disk Operating System
 MSDS,Material Safety Data Sheet
 MSE,Microsoft Security Essentials 
+MSFS,Microsoft Flight Simulator
 MSP,managed service provider
 MSP,management service provider
 MSRP,Message Session Relay Protocol
@@ -2169,7 +2169,6 @@ REC,Regional Extension Center
 ReFS,Resilient File System
 regex,regular expression
 REST,REpresentational State Transfer
-RF,Radio Frequency
 RFC,Remote Function Call
 RFC,Request for Comments
 RFI,request for information
