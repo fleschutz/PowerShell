@@ -309,6 +309,7 @@ FIS,Federal Inspection Services
 FL,Flight Level
 FLIP,Flight Information Publication
 FMG,Flughafen München GmbH
+FMGC,Flight Management and Guidance Computer
 FMS,Flight Management System
 FOD,Foreign Object Debris
 FOV,Field of View
@@ -353,6 +354,7 @@ LH,Lufthansa
 LITAS,Low Intensity Two Colour Approach System 
 LL,Lower Limit
 LMUK,Lockheed Martin UK
+LNAV,Lateral Navigation
 LOD,Level of Detail
 LTA,Lower Traffic Area
 LUAW,Line up and wait
@@ -363,6 +365,7 @@ MA,Missed Approach (IFR)
 MATS,Malta Air Traffic Services
 MEA,Minimum En-route Altitude
 METAR,Meteorological Aerodrome Report
+MCDU,Multifunction Control and Display Unit
 MCP,Maximum Continuous Power
 MGTOW,Maximum Gross Take-off Weight
 MLW,Maximum Landing Weight
@@ -558,6 +561,7 @@ TOC,Top Of Climb
 TOD,Top Of Descent
 TODA,Take-off Distance Available
 TODAH,Take-off Distance Available for Helicopter
+TOGA,Take-Off/Go Around
 TOP,Take-Off Power
 TOR,"Terms of Reference, or Tornado aircraft"
 TORA,Takeoff Run Available
@@ -617,6 +621,7 @@ VMO,maximum operation speed is the air speed than should never be exceeded delib
 VOLMET,Meteorological Information for Aircraft in Flight
 VOR,VHF Omni-directional Receiver
 VORTAC,VOR -TACAN combination
+VNAV,Vertical Navigation
 VREF,1.3 times the stalling speed of the aircraft in the stated landing configuration and at the prevailing aircraft weight
 VRS,Vortex Ring State
 VS,"Stall speed, defined as the minimum steady flight speed at which the airplane is controllable"
