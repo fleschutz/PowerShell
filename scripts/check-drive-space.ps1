@@ -9,7 +9,7 @@
 	Specifies the minimum level in bytes (10GB by default)
 .EXAMPLE
 	PS> ./check-drive-space.ps1 C
-	✅ Drive C: uses 56% of 1TB with 442GB free.
+	✅ Drive C: uses 56% of 1TB (442GB free)
 .LINK
 	https://github.com/fleschutz/PowerShell
 .NOTES
@@ -44,12 +44,12 @@ try {
 	if ($total -eq 0) {
 		Write-Host "✅ Drive $driveName is empty"
         } elseif ($free -eq 0) {
-                Write-Host "⚠️ Drive $driveName with $(Bytes2String $total) is full"
+                Write-Host "⚠️ Drive $driveName with $(Bytes2String $total) is FULL"
         } elseif ($free -lt $minLevel) {
                 Write-Host "⚠️ Drive $driveName with $(Bytes2String $total) is nearly full, $(Bytes2String $free) free"
         } else {
         	[int64]$percent = ($used * 100) / $total
-                Write-Host "✅ Drive $driveName uses $percent% of $(Bytes2String $total) with $(Bytes2String $free) free."
+                Write-Host "✅ Drive $driveName uses $percent% of $(Bytes2String $total) ($(Bytes2String $free) free)"
         }
 	exit 0 # success
 } catch {
