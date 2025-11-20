@@ -1,3 +1,18 @@
+<#
+.SYNOPSIS
+	Reboots into BIOS (needs admin rights)
+.DESCRIPTION
+	This PowerShell script reboots the local computer immediately into BIOS (needs admin rights).
+.EXAMPLE
+	PS> ./reboot-into-bios.ps1
+.LINK
+	https://github.com/fleschutz/PowerShell
+.NOTES
+	Author: Markus Fleschutz | License: CC0
+#>
+
+#Requires -RunAsAdministrator
+
 # Requires admin privileges to run
 if (!([Security.Principal.WindowsPrincipal][Security.Principal.WindowsIdentity]::GetCurrent()).IsInRole([Security.Principal.WindowsBuiltInRole]::Administrator)) {
 	Write-Host "This script requires administrative privileges." -ForegroundColor Red
@@ -17,9 +32,9 @@ try {
 	$result = shutdown /r /fw /t 0
 	if ($lastExitCode -ne 0) { throw "Failed to initiate reboot" }
 
+	exit 0 # success
 } catch {
-	Write-Host "Error: $_" -ForegroundColor Red
-	Write-Host "Failed to initiate BIOS reboot." -ForegroundColor Red
+	"⚠️ ERROR: $($Error[0]) (script line $($_.InvocationInfo.ScriptLineNumber))"
 	pause
 	exit 1
 }

@@ -1,21 +1,27 @@
-﻿# Skript zum erstellen bzw. Anpassen eine Neustarttasks
-# Stannek GmbH - Version 1.3 - 15.06.2023 ES
+﻿<#
+.SYNOPSIS
+	Create a timed task to reboot
+.DESCRIPTION
+	This PowerShell script creates a timed task to reboot the local computer.
+.EXAMPLE
+	./new-reboot-task.ps1
+.LINK
+        https://github.com/fleschutz/PowerShell
+.NOTES
+        Author: Markus Fleschutz | License: CC0
+#>
 
-# Diese Skript muss als Administrator ausgeführt werden, ansonsten wird es nicht gestartet
 #Requires -RunAsAdministrator
 
-# Parameter
-$TaskName = "einmaliger Neustart"
+# parameter
+$TaskName = "Timed Reboot"
 
-# Assemblys laden
 Add-Type -AssemblyName System.Windows.Forms
 
-## Abfrage Fenster ##
-
-# Erstellt das Hauptfenster
+# main menu
 $font = New-Object System.Drawing.Font("Arial", 11)
 $mainForm = New-Object System.Windows.Forms.Form
-$mainForm.Text = "Neustart-Task planen"
+$mainForm.Text = "Plan the next reboot"
 $mainForm.Font = $font
 $mainForm.ForeColor = "Black"
 $mainForm.BackColor = "White"
@@ -24,68 +30,58 @@ $mainForm.Height = 200
 $mainForm.StartPosition = "CenterScreen"
 $mainForm.MaximizeBox = $False
 
-# Erzeugt das Description Label
+# create description label
 $DescriptLabel = New-Object System.Windows.Forms.Label
-$DescriptLabel.Text = "Wann soll der Computer neustarten?"
+$DescriptLabel.Text = "When to reboot the computer?"
 $DescriptLabel.Location = "15, 10"
 $DescriptLabel.Height = 22
 $DescriptLabel.Width = 280
-# Fügt Label zum Hauptfenster hinzu
 $mainForm.Controls.Add($DescriptLabel)
 
-
-# Rezeugt das DatePicker Label
+# create DatePicker label
 $datePickerLabel = New-Object System.Windows.Forms.Label
-$datePickerLabel.Text = "Datum"
+$datePickerLabel.Text = "Date"
 $datePickerLabel.Location = "15, 45"
 $datePickerLabel.Height = 22
 $datePickerLabel.Width = 90
-# Fügt Label zum Hauptfenster hinzu
 $mainForm.Controls.Add($datePickerLabel)
 
-# Erzeugt das TimePicker Label
+# create TimePicker label
 $TimePickerLabel = New-Object System.Windows.Forms.Label
-$TimePickerLabel.Text = "Uhrzeit"
+$TimePickerLabel.Text = "Time"
 $TimePickerLabel.Location = "15, 80"
 $TimePickerLabel.Height = 22
 $TimePickerLabel.Width = 90
-# Fügt Label zum Hauptfenster hinzu
 $mainForm.Controls.Add($TimePickerLabel)
 
-# Erzeugt das DatePicker-Feld
+# create DatePicker input field
 $datePicker = New-Object System.Windows.Forms.DateTimePicker
 $datePicker.Location = "110, 42"
 $datePicker.Width = "150"
 $datePicker.Format = [windows.forms.datetimepickerFormat]::custom
 $datePicker.CustomFormat = "dd/MM/yyyy"
-# Fügt DatePicker-Feld zum Hauptfenster hinzu
 $mainForm.Controls.Add($datePicker)
 
-# Erzeugt das TimePicker-Feld
+# create TimePicker input field
 $TimePicker = New-Object System.Windows.Forms.DateTimePicker
 $TimePicker.Location = "110, 77"
 $TimePicker.Width = "150"
 $TimePicker.Format = [windows.forms.datetimepickerFormat]::custom
 $TimePicker.CustomFormat = "HH:mm"
 $TimePicker.ShowUpDown = $TRUE
-# Fügt TimePicker-Feld zum Hauptfenster hinzu
 $mainForm.Controls.Add($TimePicker)
 
-# Erzeugt den OK Button
+# create OK button
 $okButton = New-Object System.Windows.Forms.Button
 $okButton.Location = "15, 130"
 $okButton.ForeColor = "Black"
 $okButton.BackColor = "White"
 $okButton.Text = "OK"
-# Legt die Button Aktion fest (DialogResult auf OK und Eingabefenster schließen
 $okButton.add_Click({$mainForm.DialogResult = "OK";$mainForm.close()})
-# Fügt Button zum Hauptfenster hinzu
 $mainForm.Controls.Add($okButton)
 
-# Fensterausgabe
+# show window
 [void] $mainForm.ShowDialog()
-
-## Ende Abfrage Fenster ##
 
 # Skript abbrechen, wenn Fenster geschlossen wird
 If ($mainForm.DialogResult -eq "Cancel") {Break}

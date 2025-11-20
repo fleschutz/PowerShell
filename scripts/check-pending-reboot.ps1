@@ -5,7 +5,6 @@
 	This PowerShell script queries pending operating system reboots and prints it.
 .EXAMPLE
 	./check-pending-reboot.ps1
-	✅ No pending reboot.
 .LINK
         https://github.com/fleschutz/PowerShell
 .NOTES
