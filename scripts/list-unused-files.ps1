@@ -26,15 +26,14 @@ try {
 	Write-Progress "Scanning $path for unused files..."
 
 	$cutOffDate = (Get-Date).AddDays(-$Days)
- 	[int]$count = 0
+	[int]$count = 0
 	Get-ChildItem -path $path -recurse | Where-Object {$_.LastAccessTime -le $cutOffDate} | Foreach-Object {
 		"$($_.FullName)"
-                $count++
-        }
-
+		$count++
+	}
 	Write-Progress -completed " "
-        [int]$elapsed = $stopWatch.Elapsed.TotalSeconds
-        "✅ $count unused files at 📂$path (no access for $days days, took $($elapsed)s)."
+	[int]$elapsed = $stopWatch.Elapsed.TotalSeconds
+	"✅ $count unused files at 📂$path (no access for $days days, took $($elapsed)s)."
 	exit 0 # success
 } catch {
 	"⚠️ ERROR: $($Error[0]) (script line $($_.InvocationInfo.ScriptLineNumber))"
