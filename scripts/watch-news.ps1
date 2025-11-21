@@ -9,18 +9,13 @@
 	Specifies the update interval in seconds (default: 60 seconds)
 .EXAMPLE
 	PS> ./watch-news.ps1
-
-	TIME   NEWS      (source: https://www.yahoo.com/news/world, UTC times)
-	----   ----
-	14:29  Niger coup: Ecowas deadline sparks anxiety in northern Nigeria
-	...
 .LINK
 	https://github.com/fleschutz/PowerShell
 .NOTES
 	Author: Markus Fleschutz | License: CC0
 #>
 
-param([string]$URL = "https://news.yahoo.com/rss/world", [int]$updateInterval = 60) # in seconds
+param([string]$URL = "https://news.yahoo.com/rss/world", [int]$updateInterval = 60, [int]$speed = 10)
 
 function PrintNewerHeadlines([xml]$content, [string]$latestTimestamp, [string]$icon) {
 	$items = $content.rss.channel.item
@@ -31,7 +26,7 @@ function PrintNewerHeadlines([xml]$content, [string]$latestTimestamp, [string]$i
 		if ($pubDate -le $latestTimestamp) { continue }
 		$title = $item.title -replace "â","'"
 		$time = $pubDate.Substring(11, 5)
-		Write-Host "$time  $title$icon"
+		& "$PSScriptRoot/write-animated.ps1" "$title ($time)$icon" $speed
 		if ($pubDate -gt $newLatest) { $newLatest = $pubDate }
 	}
 	return $newLatest
@@ -40,10 +35,8 @@ function PrintNewerHeadlines([xml]$content, [string]$latestTimestamp, [string]$i
 try {
 	[xml]$content = (Invoke-WebRequest -URI $URL -useBasicParsing).Content
 	$webLink = $content.rss.channel.link
-	Write-Host "`nTIME   NEWS       (source: " -noNewline
-	Write-Host $webLink -foregroundColor blue -noNewline
-	Write-Host ", UTC times)"
-	Write-Host "----   ----"
+	& "$PSScriptRoot/write-animated.ps1" "Source: $webLink" $speed
+	& "$PSScriptRoot/write-animated.ps1" "-----------------------------" $speed
 	$latestTimestamp = "2000-01-01"
 	$icon = ""
 	do {
