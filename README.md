@@ -278,7 +278,7 @@ Mega Collection of PowerShell Scripts
 | [sync-repo.ps1](scripts/sync-repo.ps1)               | Synchronizes a Git repository by pull & push. [More »](docs/sync-repo.md)                   |
 | [write-changelog.ps1](scripts/write-changelog.ps1)   | Writes a changelog from Git commits. [More »](docs/write-changelog.md)                      |
 
-🔎 Scripts for PowerShell 
+▶️ Scripts for PowerShell 
 ------------------------
 
 | Script                                                 | Description                                                                                            |
@@ -296,7 +296,7 @@ Mega Collection of PowerShell Scripts
 | [new-script.ps1](scripts/new-script.ps1)               | Creates a new PowerShell script. [More »](docs/new-script.md)                                    |
 | [set-profile.ps1](scripts/set-profile.ps1)             | Updates your PowerShell user profile. [More »](docs/set-profile.md)                              |
 
-🛒 Various PowerShell Scripts 
+🎉 Various PowerShell Scripts 
 ------------------------------
 
 | Script                                                                                    | Description                                                                                                                     |
