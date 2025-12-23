@@ -33,9 +33,9 @@ function BuildFolder([string]$path) {
 		& cmake ..
 		if ($lastExitCode -ne 0) { throw "Executing 'cmake ..' failed with exit code $lastExitCode" }
 
-		"⏳ (2/3) Building $dirName by executing 'make -j4'..."
-		& make -j4
-		if ($lastExitCode -ne 0) { throw "Executing 'make -j4' failed with exit code $lastExitCode" }
+		"⏳ (2/3) Building $dirName by executing 'make'..."
+		& make
+		if ($lastExitCode -ne 0) { throw "Executing 'make' failed with exit code $lastExitCode" }
 
 		"⏳ (3/3) Testing $dirName by executing 'ctest -V'... (if tests are provided)"
 		& ctest -V
