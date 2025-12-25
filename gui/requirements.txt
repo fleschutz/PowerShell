@@ -1,0 +1,4 @@
+# PowerShell Commander Dependencies
+# Install with: pip install -r requirements.txt
+
+customtkinter>=5.2.0

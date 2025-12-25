@@ -1,0 +1,511 @@
+{
+  "categories": {
+    "Files": {
+      "icon": "📁",
+      "description": "File and folder operations",
+      "scripts": [
+        {
+          "name": "new-dir",
+          "display_name": "Create New Folder",
+          "description": "Create a new directory",
+          "requires_input": true,
+          "input_prompts": [
+            {"name": "path", "label": "Folder Path", "placeholder": "Enter folder path to create"}
+          ]
+        },
+        {
+          "name": "remove-empty-dirs",
+          "display_name": "Remove Empty Folders",
+          "description": "Delete all empty directories",
+          "requires_input": true,
+          "input_prompts": [
+            {"name": "path", "label": "Root Path", "placeholder": "Enter root folder to scan"}
+          ]
+        },
+        {
+          "name": "list-files",
+          "display_name": "List Files",
+          "description": "List all files in a directory",
+          "requires_input": true,
+          "input_prompts": [
+            {"name": "path", "label": "Folder Path", "placeholder": "Enter folder to list"}
+          ]
+        },
+        {
+          "name": "search-files",
+          "display_name": "Search Files",
+          "description": "Search for files by pattern",
+          "requires_input": true,
+          "input_prompts": [
+            {"name": "pattern", "label": "Search Pattern", "placeholder": "*.txt, *.pdf, etc."}
+          ]
+        },
+        {
+          "name": "convert-dir2zip",
+          "display_name": "Folder to ZIP",
+          "description": "Compress a folder to ZIP",
+          "requires_input": true,
+          "input_prompts": [
+            {"name": "path", "label": "Folder Path", "placeholder": "Folder to compress"}
+          ]
+        },
+        {
+          "name": "convert-txt2md",
+          "display_name": "TXT to Markdown",
+          "description": "Convert text files to markdown",
+          "requires_input": true,
+          "input_prompts": [
+            {"name": "path", "label": "File Path", "placeholder": "Text file to convert"}
+          ]
+        },
+        {
+          "name": "count-files",
+          "display_name": "Count Files",
+          "description": "Count files in a folder",
+          "requires_input": true,
+          "input_prompts": [
+            {"name": "path", "label": "Folder Path", "placeholder": "Folder to count"}
+          ]
+        },
+        {
+          "name": "list-folder",
+          "display_name": "Folder Contents",
+          "description": "Show folder tree structure",
+          "requires_input": true,
+          "input_prompts": [
+            {"name": "path", "label": "Folder Path", "placeholder": "Folder to display"}
+          ]
+        }
+      ]
+    },
+    "Computer": {
+      "icon": "💻",
+      "description": "System management and monitoring",
+      "scripts": [
+        {
+          "name": "check-cpu",
+          "display_name": "Check CPU",
+          "description": "Display CPU information and usage",
+          "requires_input": false,
+          "input_prompts": []
+        },
+        {
+          "name": "check-ram",
+          "display_name": "Check RAM",
+          "description": "Display memory usage",
+          "requires_input": false,
+          "input_prompts": []
+        },
+        {
+          "name": "check-drives",
+          "display_name": "Check Drives",
+          "description": "Show drive space and health",
+          "requires_input": false,
+          "input_prompts": []
+        },
+        {
+          "name": "check-health",
+          "display_name": "System Health",
+          "description": "Full system health check",
+          "requires_input": false,
+          "input_prompts": []
+        },
+        {
+          "name": "list-processes",
+          "display_name": "List Processes",
+          "description": "Show running processes",
+          "requires_input": false,
+          "input_prompts": []
+        },
+        {
+          "name": "list-apps",
+          "display_name": "List Apps",
+          "description": "Show installed applications",
+          "requires_input": false,
+          "input_prompts": []
+        },
+        {
+          "name": "list-os",
+          "display_name": "OS Info",
+          "description": "Display operating system info",
+          "requires_input": false,
+          "input_prompts": []
+        },
+        {
+          "name": "poweroff",
+          "display_name": "Shutdown",
+          "description": "Shut down the computer",
+          "requires_input": false,
+          "input_prompts": []
+        },
+        {
+          "name": "reboot",
+          "display_name": "Restart",
+          "description": "Restart the computer",
+          "requires_input": false,
+          "input_prompts": []
+        },
+        {
+          "name": "hibernate",
+          "display_name": "Hibernate",
+          "description": "Put computer to hibernate",
+          "requires_input": false,
+          "input_prompts": []
+        }
+      ]
+    },
+    "Network": {
+      "icon": "🌐",
+      "description": "Network and DNS operations",
+      "scripts": [
+        {
+          "name": "check-dns",
+          "display_name": "Check DNS",
+          "description": "Test DNS resolution",
+          "requires_input": false,
+          "input_prompts": []
+        },
+        {
+          "name": "check-ping",
+          "display_name": "Ping Test",
+          "description": "Ping a host",
+          "requires_input": true,
+          "input_prompts": [
+            {"name": "host", "label": "Host/IP", "placeholder": "google.com or 8.8.8.8"}
+          ]
+        },
+        {
+          "name": "flush-dns",
+          "display_name": "Flush DNS",
+          "description": "Clear DNS cache",
+          "requires_input": false,
+          "input_prompts": []
+        },
+        {
+          "name": "list-network-shares",
+          "display_name": "Network Shares",
+          "description": "Show network shares",
+          "requires_input": false,
+          "input_prompts": []
+        },
+        {
+          "name": "check-vpn",
+          "display_name": "Check VPN",
+          "description": "VPN connection status",
+          "requires_input": false,
+          "input_prompts": []
+        },
+        {
+          "name": "check-ip-address",
+          "display_name": "My IP Address",
+          "description": "Show your IP address",
+          "requires_input": false,
+          "input_prompts": []
+        },
+        {
+          "name": "list-wifi",
+          "display_name": "WiFi Networks",
+          "description": "List available WiFi networks",
+          "requires_input": false,
+          "input_prompts": []
+        },
+        {
+          "name": "scan-ports",
+          "display_name": "Port Scanner",
+          "description": "Scan ports on a host",
+          "requires_input": true,
+          "input_prompts": [
+            {"name": "host", "label": "Host/IP", "placeholder": "Host to scan"}
+          ]
+        }
+      ]
+    },
+    "Audio": {
+      "icon": "🔊",
+      "description": "Sound and speech operations",
+      "scripts": [
+        {
+          "name": "turn-volume-up",
+          "display_name": "Volume Up",
+          "description": "Increase system volume",
+          "requires_input": false,
+          "input_prompts": []
+        },
+        {
+          "name": "turn-volume-down",
+          "display_name": "Volume Down",
+          "description": "Decrease system volume",
+          "requires_input": false,
+          "input_prompts": []
+        },
+        {
+          "name": "mute-audio",
+          "display_name": "Mute",
+          "description": "Mute system audio",
+          "requires_input": false,
+          "input_prompts": []
+        },
+        {
+          "name": "unmute-audio",
+          "display_name": "Unmute",
+          "description": "Unmute system audio",
+          "requires_input": false,
+          "input_prompts": []
+        },
+        {
+          "name": "speak-english",
+          "display_name": "Speak (English)",
+          "description": "Text to speech in English",
+          "requires_input": true,
+          "input_prompts": [
+            {"name": "text", "label": "Text to Speak", "placeholder": "Enter text to speak"}
+          ]
+        },
+        {
+          "name": "play-mp3",
+          "display_name": "Play MP3",
+          "description": "Play an audio file",
+          "requires_input": true,
+          "input_prompts": [
+            {"name": "path", "label": "Audio File", "placeholder": "Path to audio file"}
+          ]
+        },
+        {
+          "name": "list-voices",
+          "display_name": "List Voices",
+          "description": "Show available TTS voices",
+          "requires_input": false,
+          "input_prompts": []
+        },
+        {
+          "name": "play-beep-sound",
+          "display_name": "Beep Sound",
+          "description": "Play a beep notification",
+          "requires_input": false,
+          "input_prompts": []
+        }
+      ]
+    },
+    "Apps": {
+      "icon": "📦",
+      "description": "Application management",
+      "scripts": [
+        {
+          "name": "open-chrome",
+          "display_name": "Open Chrome",
+          "description": "Launch Google Chrome",
+          "requires_input": false,
+          "input_prompts": []
+        },
+        {
+          "name": "open-firefox",
+          "display_name": "Open Firefox",
+          "description": "Launch Firefox browser",
+          "requires_input": false,
+          "input_prompts": []
+        },
+        {
+          "name": "open-notepad",
+          "display_name": "Open Notepad",
+          "description": "Launch Notepad",
+          "requires_input": false,
+          "input_prompts": []
+        },
+        {
+          "name": "open-file-explorer",
+          "display_name": "File Explorer",
+          "description": "Open File Explorer",
+          "requires_input": false,
+          "input_prompts": []
+        },
+        {
+          "name": "open-task-manager",
+          "display_name": "Task Manager",
+          "description": "Open Task Manager",
+          "requires_input": false,
+          "input_prompts": []
+        },
+        {
+          "name": "close-chrome",
+          "display_name": "Close Chrome",
+          "description": "Close Google Chrome",
+          "requires_input": false,
+          "input_prompts": []
+        },
+        {
+          "name": "close-program",
+          "display_name": "Close Program",
+          "description": "Close a running program",
+          "requires_input": true,
+          "input_prompts": [
+            {"name": "name", "label": "Program Name", "placeholder": "Name of program to close"}
+          ]
+        },
+        {
+          "name": "install-chrome",
+          "display_name": "Install Chrome",
+          "description": "Install Google Chrome",
+          "requires_input": false,
+          "input_prompts": []
+        }
+      ]
+    },
+    "Dev": {
+      "icon": "⚙️",
+      "description": "Development and Git tools",
+      "scripts": [
+        {
+          "name": "check-repo",
+          "display_name": "Check Repo",
+          "description": "Validate git repository",
+          "requires_input": true,
+          "input_prompts": [
+            {"name": "path", "label": "Repo Path", "placeholder": "Path to repository"}
+          ]
+        },
+        {
+          "name": "build-repo",
+          "display_name": "Build Repo",
+          "description": "Build a repository",
+          "requires_input": true,
+          "input_prompts": [
+            {"name": "path", "label": "Repo Path", "placeholder": "Path to repository"}
+          ]
+        },
+        {
+          "name": "clean-repo",
+          "display_name": "Clean Repo",
+          "description": "Clean build artifacts",
+          "requires_input": true,
+          "input_prompts": [
+            {"name": "path", "label": "Repo Path", "placeholder": "Path to repository"}
+          ]
+        },
+        {
+          "name": "fetch-repo",
+          "display_name": "Fetch Repo",
+          "description": "Git fetch from remote",
+          "requires_input": true,
+          "input_prompts": [
+            {"name": "path", "label": "Repo Path", "placeholder": "Path to repository"}
+          ]
+        },
+        {
+          "name": "pull-repo",
+          "display_name": "Pull Repo",
+          "description": "Git pull latest changes",
+          "requires_input": true,
+          "input_prompts": [
+            {"name": "path", "label": "Repo Path", "placeholder": "Path to repository"}
+          ]
+        },
+        {
+          "name": "list-branches",
+          "display_name": "List Branches",
+          "description": "Show git branches",
+          "requires_input": true,
+          "input_prompts": [
+            {"name": "path", "label": "Repo Path", "placeholder": "Path to repository"}
+          ]
+        },
+        {
+          "name": "new-branch",
+          "display_name": "New Branch",
+          "description": "Create a new git branch",
+          "requires_input": true,
+          "input_prompts": [
+            {"name": "name", "label": "Branch Name", "placeholder": "Name for new branch"}
+          ]
+        },
+        {
+          "name": "list-commits",
+          "display_name": "List Commits",
+          "description": "Show recent commits",
+          "requires_input": true,
+          "input_prompts": [
+            {"name": "path", "label": "Repo Path", "placeholder": "Path to repository"}
+          ]
+        }
+      ]
+    },
+    "Utils": {
+      "icon": "🔧",
+      "description": "Utility scripts",
+      "scripts": [
+        {
+          "name": "list-weather",
+          "display_name": "Weather",
+          "description": "Show current weather",
+          "requires_input": true,
+          "input_prompts": [
+            {"name": "location", "label": "Location", "placeholder": "City name", "default": ""}
+          ]
+        },
+        {
+          "name": "list-news",
+          "display_name": "News Headlines",
+          "description": "Show latest news",
+          "requires_input": false,
+          "input_prompts": []
+        },
+        {
+          "name": "list-calendar",
+          "display_name": "Calendar",
+          "description": "Display calendar",
+          "requires_input": false,
+          "input_prompts": []
+        },
+        {
+          "name": "list-timezones",
+          "display_name": "Time Zones",
+          "description": "Show world time zones",
+          "requires_input": false,
+          "input_prompts": []
+        },
+        {
+          "name": "get-md5",
+          "display_name": "Get MD5 Hash",
+          "description": "Calculate MD5 checksum",
+          "requires_input": true,
+          "input_prompts": [
+            {"name": "file", "label": "File Path", "placeholder": "File to hash"}
+          ]
+        },
+        {
+          "name": "get-sha256",
+          "display_name": "Get SHA256 Hash",
+          "description": "Calculate SHA256 checksum",
+          "requires_input": true,
+          "input_prompts": [
+            {"name": "file", "label": "File Path", "placeholder": "File to hash"}
+          ]
+        },
+        {
+          "name": "take-screenshot",
+          "display_name": "Screenshot",
+          "description": "Take a screenshot",
+          "requires_input": false,
+          "input_prompts": []
+        },
+        {
+          "name": "list-emojis",
+          "display_name": "Emoji List",
+          "description": "Show available emojis",
+          "requires_input": false,
+          "input_prompts": []
+        }
+      ]
+    },
+    "Custom": {
+      "icon": "⭐",
+      "description": "Your custom scripts",
+      "scripts": []
+    }
+  },
+  "window": {
+    "width": 1200,
+    "height": 800,
+    "theme": "dark"
+  },
+  "scripts_per_row": 4
+}
