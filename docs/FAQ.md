@@ -58,7 +58,7 @@
 * **PowerShell 5.1** is preinstalled on Windows 10 or 11.
 * **PowerShell 7.5.2** is the very latest (as of July 2025), but needs to be installed manually.
 * **Version history** can be found at: https://github.com/PowerShell/PowerShell/releases
-* **Scripts** should specify the required version, e.g.: `#Requires -Version 5`. This also helps to identify out-dated scripts.  
+* **Scripts** should specify the required version, e.g.: `#Requires -Version 5` (it also helps to identify out-dated scripts).  
 </details>
 
 
