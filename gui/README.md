@@ -1,9 +1,9 @@
+![Python](https://img.shields.io/badge/Python-3.8+-green)
+![CustomTkinter](https://img.shields.io/badge/CustomTkinter-5.2+-blue)
+
 # PowerShell Commander
 
 A modern dark-themed GUI for managing and running PowerShell scripts.
-
-![CustomTkinter](https://img.shields.io/badge/CustomTkinter-5.2+-blue)
-![Python](https://img.shields.io/badge/Python-3.8+-green)
 
 ## Features
 
@@ -17,23 +17,15 @@ A modern dark-themed GUI for managing and running PowerShell scripts.
 
 ## Installation
 
-### Prerequisites
-
-- PowerShell 5.1+ (Windows) or PowerShell Core (Linux/macOS)
+Requires PowerShell 5.1+ (Windows) or PowerShell Core (Linux/macOS).
 
 ### Quick Start
 
-1. Make sure Python 3.8 or higher is installed, e.g. by executing: `winget install "Python 3.9"`
+1. Make sure Python 3.8 or higher is installed, e.g. by executing: ` winget install "Python 3.9" `
 
-2. Install dependencies:
-   ```bash
-   pip install -r requirements.txt
-   ```
+2. Install dependencies: ` pip install -r requirements.txt `
 
-3. Run the application:
-   ```bash
-   python powershell_commander.py
-   ```
+3. Run the application: ` python powershell_commander.py `
 
 ### Windows Auto-Start
 
