@@ -111,7 +111,7 @@
 
 1. **Install *PowerShell* (free)** on all your Linux/Mac OS/Windows machines and configure it as your default shell.
 2. **Install *SSH client & server* (free)** on all your Linux/Mac OS/Windows machines for remote control via SSH.
-3. **Install this *PowerShell* repo** and set the PATH environment variable to the 📂scripts subfolder (600+ scripts).
+3. **Install this *PowerShell* repo** and set the PATH environment variable to the 📂scripts subfolder with 600+ scripts.
 4. **Install *Windows Terminal* (free)** on Windows with 80% transparency, font 'Fira Code' and no PowerShell banner message.
 5. **Install *Visual Studio Code* (free)** with plugin 'PowerShell' to edit your PowerShell scripts.
 6. **Set an own *PowerShell* profile** by executing: ` ./update-powershell-profile.ps1 `
