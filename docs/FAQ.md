@@ -165,15 +165,15 @@ Want to use the PowerShell scripts everywhere on the command-line? Then you need
 
 <details><summary>How to write good PowerShell scripts?</summary>
  
-**Good PowerShell scripts are both user-friendly and platform-independent. As a starting point I recommend the following:**
+**Good PowerShell scripts are both user-friendly and platform-independent. As a starting point I recommend:**
 
 * Use the `<verb>-<noun>.ps1` scheme for filenames (e.g. *new-symlink.ps1*). Official approved verbs can be found here: [https://learn.microsoft.com/en-us/powershell/scripting/developer/cmdlet/approved-verbs-for-windows-powershell-commands](https://learn.microsoft.com/en-us/powershell/scripting/developer/cmdlet/approved-verbs-for-windows-powershell-commands)
-* Use **UTF-8 BOM** encoding to support Unicode characters in the script.
+* Use **UTF-8 BOM** file encoding to support Unicode characters in your script.
 * Add a **comment-based help** at the beginning with: `.SYNOPSIS`, `.DESCRIPTION`, `.PARAMETER`, `.EXAMPLE`, `.LINK`, and `.NOTES`.
-* Check the **requirements** for the script, e.g. `#Requires -RunAsAdministrator`, or `#Requires -Version 3`
-* Prefer **command-line options**, else ask the user for help
+* Add the **requirements** for your script, e.g. `#Requires -RunAsAdministrator`, or `#Requires -Version 5`
+* Check for **command-line options**, otherwise ask the user for input.
 * Recommended is **Set-StrictMode -Version Latest** to enable additional error checking.
-* For readibility use **lowerCamelCase** to name variables, functions, etc.
+* Use **lowerCamelCase** to name variables/functions/etc to improve readability.
 * Set execute file permissions for Linux: **chmod a+rx <filename>**
 * On success exit with error code 0 (**exit 0**), otherwise print the error with keyword **ERROR:** (to support log parsers) and exit the error code (mostly 1)
  </details>
