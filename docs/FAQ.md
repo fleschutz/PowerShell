@@ -81,8 +81,8 @@
  
 <details><summary>How to execute PowerShell scripts in Windows context menus?</summary>
    
-* To enable "right-click > New > Windows PowerShell Script" execute `Add_ps1_to_New_context_menu.reg` in subfolder [Data/](../Data)
-* To disable this execute `Remove_ps1_from_New_context_menu.reg` in subfolder [Data/](../Data)
+* To enable "right-click > New > Windows PowerShell Script" execute `Add_ps1_to_New_context_menu.reg` in subfolder [data/](../scripts/data)
+* To disable this execute `Remove_ps1_from_New_context_menu.reg` in subfolder [data/](../scripts/data)
 </details>
 
 <details><summary>How to execute PowerShell scripts automatically on login in Windows?</summary>
