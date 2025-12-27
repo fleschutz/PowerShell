@@ -61,6 +61,14 @@
 * **Scripts** should specify the required version, e.g.: `#Requires -Version 5` (it also helps to identify out-dated scripts).  
 </details>
 
+<details><summary>How to safely use PowerShell scripts?</summary>
+
+1. **DO NOT execute scripts or executables from untrusted sources! Watch out for fake profiles!**
+2. **CHECK the script content prior execution.**
+3. **Prefer SSH Remoting instead of PowerShell Remoting**
+4. **More recommendations by NSA and cyber security centers in the U.S. (CISA), New Zealand (NZ NCSC), and the U.K. (NCSC-UK) can be found here:** https://media.defense.gov/2022/Jun/22/2003021689/-1/-1/1/CSI_KEEPING_POWERSHELL_SECURITY_MEASURES_TO_USE_AND_EMBRACE_20220622.PDF
+ </details>
+
 
 <details><summary>How to get the 600+ PowerShell sample scripts?</summary>
  
@@ -97,13 +105,6 @@
 2. **Add or reference your PowerShell scripts in the Jenkins jobs or in your Jenkinsfiles.**
 </details>
 
-<details><summary>What about PowerShell security?</summary>
-
-1. **DO NOT execute scripts or executables from untrusted sources! Watch out for fake profiles!**
-2. **CHECK the script content prior execution.**
-3. **Prefer SSH Remoting instead of PowerShell Remoting**
-4. **More recommendations by NSA and cyber security centers in the U.S. (CISA), New Zealand (NZ NCSC), and the U.K. (NCSC-UK) can be found here:** https://media.defense.gov/2022/Jun/22/2003021689/-1/-1/1/CSI_KEEPING_POWERSHELL_SECURITY_MEASURES_TO_USE_AND_EMBRACE_20220622.PDF
- </details>
 
  <details><summary>How to get the ultimate PowerShell experience? (Pro tip)</summary>
 
