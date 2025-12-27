@@ -197,5 +197,5 @@ Want to use the PowerShell scripts everywhere on the command-line? Then you need
 
 <details><summary>What if my question is not answered here?</summary>
  
-**Just send your question by e-mail to:** `markus.fleschutz [at] gmail.com`
+**Please send your question by e-mail to:** `markus.fleschutz [at] gmail.com`
 </details>
