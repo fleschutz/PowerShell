@@ -76,15 +76,16 @@
 2. **Otherwise, download and unzip it from:** https://github.com/fleschutz/PowerShell/archive/master.zip
 </details>
 
-<details><summary>How to execute PowerShell scripts on Windows?</summary>
+<details><summary>How to execute PowerShell scripts?</summary>
 
 1. **In the Windows desktop:** right-click the script and select: *Execute with PowerShell*
-2. **On the command-line:** launch a terminal application (e.g. *Windows Terminal*), then type: `cd <PATH>`, then: `./<SCRIPT>.ps1`.
-3. **By remote login:** use *SSH* to login to the Windows machine, then type: `cd <PATH>`, then: `./<SCRIPT>.ps1`.
+2. **On the command-line (CLI):** launch a terminal application (e.g. *Windows Terminal*), then type: `cd <PATH>`, then: `./<SCRIPT-NAME>.ps1`.
+3. **By remote login:** use *SSH* to login to the remote machine, then type: `cd <PATH>`, then: `./<SCRIPT-NAME>.ps1`.
 4. **By context menu:** see below.
-5. **By voice control:** see repo [talk2windows](https://github.com/fleschutz/talk2windows) for more information.
-6. **By automation software:** see [Jenkins.io](https://www.jenkins.io) or [AutoHotKey.com](https://www.autohotkey.com/) for more information.
-7. **Automatically on login:** see below.
+5. **By voice commands:** see repo [talk2windows](https://github.com/fleschutz/talk2windows) for more information.
+6. **By GUI:** see [gui/README.md](../gui/README.md) for more information.
+7. **By automation software:** see [Jenkins.io](https://www.jenkins.io) or [AutoHotKey.com](https://www.autohotkey.com/) for more information.
+8. **Automatically on login:** see below.
  </details>
  
 <details><summary>How to execute PowerShell scripts in Windows context menus?</summary>
@@ -113,7 +114,7 @@
 3. **Install *Windows Terminal* (free)** on Windows with 80% transparency, font 'Fira Code' and no PowerShell banner message.
 4. **Install *Visual Studio Code* (free)** with plugin 'PowerShell' to edit your PowerShell scripts.
 5. **Install this *PowerShell repo* (free)** and set the PATH environment variable to the 📂scripts subfolder.
-6. **Set an own *PowerShell* profile** by executing: ´ ./update-powershell-profile.ps1 ´
+6. **Set an own *PowerShell profile* ** by executing: ´ ./update-powershell-profile.ps1 ´
 7. **Install *Jenkins* (free)** together with the *PowerShell plugin* and use PowerShell scripts in your Jenkins jobs.
 </details>
 
