@@ -26,7 +26,7 @@ function MeasureDNSServer([string]$provider, [string]$IPv4Pri, [string]$IPv4Sec)
 
 function List-DNS-Servers {
 	Write-Progress "Loading data/public-dns-servers.csv..."
-	$table = Import-CSV "$PSScriptRoot/../data/public-dns-servers.csv"
+	$table = Import-CSV "$PSScriptRoot/data/public-dns-servers.csv"
 	Write-Progress -completed "Done."
 	foreach($row in $table) { MeasureDNSServer $row.PROVIDER $row.IPv4_PRI $row.IPv4_SEC }
 	

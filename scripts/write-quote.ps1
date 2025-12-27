@@ -2,7 +2,7 @@
 .SYNOPSIS
 	Writes a random quote
 .DESCRIPTION
-	This PowerShell script selects a random quote from .../data/quotes.csv and writes it to the console.
+	This PowerShell script selects a random quote from data/quotes.csv and writes it to the console.
 .EXAMPLE
 	PS> ./write-quote.ps1
 .LINK
@@ -12,7 +12,7 @@
 #>
 
 try {
-	$table = Import-CSV "$PSScriptRoot/../data/quotes.csv"
+	$table = Import-CSV "$PSScriptRoot/data/quotes.csv"
 
 	$randomNumberGenerator = New-Object System.Random
 	$row = [int]$randomNumberGenerator.next(0, $table.Count - 1)

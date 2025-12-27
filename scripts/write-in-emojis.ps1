@@ -19,7 +19,7 @@ param([string]$text = "")
 try {
 	if ($text -eq "")  { $text = Read-Host "Enter the text" }
 	
-	$table = Import-CSV "$PSScriptRoot/../data/emojis.csv"
+	$table = Import-CSV "$PSScriptRoot/data/emojis.csv"
 	foreach($row in $table) {
 		$text = $text -Replace "\s?$($row.WORD)\s?","$($row.EMOJI)️"
 	}

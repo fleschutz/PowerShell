@@ -28,7 +28,7 @@ try {
 	if ($lastExitCode -ne 0) { throw "Can't execute 'git' - make sure Git is installed and available" }
 
 	Write-Host "⏳ (2) Reading data/popular-repos.csv...     " -noNewline
-	$table = Import-CSV "$PSScriptRoot/../data/popular-repos.csv"
+	$table = Import-CSV "$PSScriptRoot/data/popular-repos.csv"
 	$total = $table.count
 	Write-Host "$total repos"
 

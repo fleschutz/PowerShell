@@ -21,7 +21,7 @@ try {
 	if ($city -eq "" ) { $city = Read-Host "Enter the name of the city" }
 
 	Write-Progress "Reading data/worldcities.csv..."
-	$table = Import-CSV "$PSScriptRoot/../data/worldcities.csv"
+	$table = Import-CSV "$PSScriptRoot/data/worldcities.csv"
 	$foundOne = $false
 	foreach($row in $table) {
 		if ($row.city -eq $city) {

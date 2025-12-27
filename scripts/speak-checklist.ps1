@@ -33,7 +33,7 @@ try {
 	$stopWatch = [system.diagnostics.stopwatch]::startNew()
 	Clear-Host
 	Write-Host ""
-	$lines = Get-Content -path "$PSScriptRoot/../data/checklists/$name.md"
+	$lines = Get-Content -path "$PSScriptRoot/data/checklists/$name.md"
 	$headline = ""
 	foreach($line in $lines) {
 		if ($line -match "- \[ \].*") {

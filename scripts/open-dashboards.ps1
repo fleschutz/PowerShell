@@ -20,8 +20,8 @@
 param([int]$timeInterval = 120) # milliseconds
 
 try {
-	Write-Progress "Reading Data/popular-dashboards.csv..."
-	$table = Import-CSV "$PSScriptRoot/../data/popular-dashboards.csv"
+	Write-Progress "Reading data/popular-dashboards.csv..."
+	$table = Import-CSV "$PSScriptRoot/data/popular-dashboards.csv"
 	$numRows = $table.Count
 	Write-Progress -completed "Done."
 

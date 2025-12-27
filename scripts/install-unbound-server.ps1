@@ -33,11 +33,11 @@ try {
 	if ($lastExitCode -ne 0) { throw "'unbound-anchor' failed" }
 
 	"⏳ (5/10) Checking config file..."
-	& unbound-checkconf "$PSScriptRoot/../data/unbound.conf"
+	& unbound-checkconf "$PSScriptRoot/data/unbound.conf"
 	if ($lastExitCode -ne 0) { throw "'unbound-checkconf' failed - check the syntax" }
 
 	"⏳ (6/10) Copying config file to /etc/unbound/unbound.conf ..."
-	& sudo cp "$PSScriptRoot/../data/unbound.conf" /etc/unbound/unbound.conf
+	& sudo cp "$PSScriptRoot/data/unbound.conf" /etc/unbound/unbound.conf
 	if ($lastExitCode -ne 0) { throw "'cp' failed" }
 
 	"⏳ (7/10) Stopping default DNS cache daemon systemd-resolved..."

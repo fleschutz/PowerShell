@@ -2,7 +2,7 @@
 .SYNOPSIS
 	Tells a random joke by text-to-speech
 .DESCRIPTION
-	This PowerShell script selects a random Chuck Norris joke in Data/jokes.csv and speaks it by text-to-speech (TTS).
+	This PowerShell script selects a random Chuck Norris joke from data/jokes.csv and speaks it by text-to-speech (TTS).
 .EXAMPLE
 	PS> ./tell-joke.ps1
 	(listen and enjoy)
@@ -13,7 +13,7 @@
 #>
 
 try {
-	$table = Import-CSV "$PSScriptRoot/../data/jokes.csv"
+	$table = Import-CSV "$PSScriptRoot/data/jokes.csv"
 
 	$randomNumberGenerator = New-Object System.Random
 	$row = [int]$randomNumberGenerator.next(0, $table.count - 1)

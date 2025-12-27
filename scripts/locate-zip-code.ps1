@@ -22,8 +22,8 @@ try {
 	if ($CountryCode -eq "" ) { $CountryCode = read-host "Enter the country code" }
 	if ($ZipCode -eq "" ) { $ZipCode = read-host "Enter the zip code" }
 
-	write-progress "Reading zip-codes.csv..."
-	$Table = import-csv "$PSScriptRoot/../data/zip-codes.csv"
+	write-progress "Reading data/zip-codes.csv..."
+	$Table = import-csv "$PSScriptRoot/data/zip-codes.csv"
 
 	$FoundOne = 0
 	foreach($Row in $Table) {

@@ -21,8 +21,8 @@
 param([string]$category = "*")
 
 function ListScripts([string]$category) { 
-	Write-Progress "Loading data from ../data/script.csv..."
-	$table = Import-CSV "$PSScriptRoot/../data/scripts.csv"
+	Write-Progress "Loading data from data/script.csv..."
+	$table = Import-CSV "$PSScriptRoot/data/scripts.csv"
 	[int]$No = 1
 	foreach($row in $table) {
 		if ($row.CATEGORY -like $category) { 

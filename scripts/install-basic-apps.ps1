@@ -23,7 +23,7 @@ try {
 	$stopWatch = [system.diagnostics.stopwatch]::startNew()
 
 	Write-Host "⏳ (1) Loading basic-apps.csv from data/ folder..."
-	$table = Import-CSV "$PSScriptRoot/../data/basic-apps.csv"
+	$table = Import-CSV "$PSScriptRoot/data/basic-apps.csv"
 	$numEntries = $table.count
 	Write-Host "⏳ (2) Will install/upgrade $numEntries basic apps: " -noNewline
 	foreach($row in $table) {

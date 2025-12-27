@@ -47,7 +47,7 @@ try {
 	Write-Host "`t`t`t`t============================="
 	Write-Host ""
 
-	$table = Import-CSV "$PSScriptRoot/../data/TIOBE-index.csv"
+	$table = Import-CSV "$PSScriptRoot/data/TIOBE-index.csv"
 	foreach($row in $table) {
 		[string]$rank = "{0,2}" -f $row.RANK
 		[string]$language = "{0,-20}" -f $row.LANGUAGE

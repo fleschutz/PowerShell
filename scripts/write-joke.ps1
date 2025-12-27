@@ -13,7 +13,7 @@
 #>
 
 try {
-	$table = Import-CSV "$PSScriptRoot/../data/jokes.csv"
+	$table = Import-CSV "$PSScriptRoot/data/jokes.csv"
 
 	$randomNumberGenerator = New-Object System.Random
 	$rowNumber = [int]$randomNumberGenerator.next(0, $table.Count - 1)

@@ -19,7 +19,7 @@ param([string]$term = "")
 try {
 	if ($term -eq "" ) { $term = Read-Host "Enter the term to query" }
 
-	$files = Get-ChildItem "$PSScriptRoot/../data/dicts/*.csv"
+	$files = Get-ChildItem "$PSScriptRoot/data/dicts/*.csv"
 	$basename = ""
 	foreach($file in $files) {
 		$table = Import-CSV "$file"

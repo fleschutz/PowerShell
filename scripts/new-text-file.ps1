@@ -2,7 +2,7 @@
 .SYNOPSIS
 	Creates a text file 
 .DESCRIPTION
-	This PowerShell script creates a new .txt file from: ../data/templates/New.txt.
+	This PowerShell script creates a new .txt file from: data/templates/New.txt.
 .PARAMETER path
 	Specifies the path and new filename (README.txt by default)
 .EXAMPLE
@@ -19,7 +19,7 @@ param([string]$path = "README.txt")
 try {
 	if (Test-Path "$path" -pathType leaf) { throw "File '$path' is already existing" }
 
-	$pathToTemplate = Resolve-Path "$PSScriptRoot/../data/templates/New.txt" 
+	$pathToTemplate = Resolve-Path "$PSScriptRoot/data/templates/New.txt" 
 	Copy-Item $pathToTemplate "$path"
 	if ($lastExitCode -ne 0) { throw "Can't copy template to: $path" }
 

@@ -13,6 +13,6 @@
 #>
 
 do {
-	& "$PSScriptRoot/play-mp3.ps1" "$PSScriptRoot/../data/sounds/Big Ben.mp3"
+	& "$PSScriptRoot/play-mp3.ps1" "$PSScriptRoot/data/sounds/Big Ben.mp3"
 } while ($true)
 

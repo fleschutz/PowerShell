@@ -13,7 +13,7 @@
 #>
  
 try {
-	$table = Import-CSV "$PSScriptRoot/../data/popular-domains.csv"
+	$table = Import-CSV "$PSScriptRoot/data/popular-domains.csv"
 
 	$stopWatch = [system.diagnostics.stopwatch]::startNew()
 	if ($IsLinux) {
