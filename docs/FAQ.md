@@ -114,7 +114,7 @@
 3. **Install *Windows Terminal* (free)** on Windows with 80% transparency, font 'Fira Code' and no PowerShell banner message.
 4. **Install *Visual Studio Code* (free)** with plugin 'PowerShell' to edit your PowerShell scripts.
 5. **Install this *PowerShell repo* (free)** and set the PATH environment variable to the 📂scripts subfolder.
-6. **Set an own *PowerShell profile* ** by executing: ´ ./update-powershell-profile.ps1 ´
+6. **Set an own *PowerShell* profile** by executing: ` ./update-powershell-profile.ps1 `
 7. **Install *Jenkins* (free)** together with the *PowerShell plugin* and use PowerShell scripts in your Jenkins jobs.
 </details>
 
