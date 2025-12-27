@@ -19,17 +19,18 @@ A modern dark-themed GUI for managing and running PowerShell scripts.
 
 ### Prerequisites
 
-- Python 3.8 or higher
 - PowerShell 5.1+ (Windows) or PowerShell Core (Linux/macOS)
 
 ### Quick Start
 
-1. Install dependencies:
+1. Make sure Python 3.8 or higher is installed, e.g. by executing: `winget install "Python 3.9"`
+
+2. Install dependencies:
    ```bash
    pip install -r requirements.txt
    ```
 
-2. Run the application:
+3. Run the application:
    ```bash
    python powershell_commander.py
    ```
