@@ -165,7 +165,7 @@ Want to use the PowerShell scripts everywhere on the command-line? Then you need
 
 <details><summary>How to write good PowerShell scripts?</summary>
  
-**Good PowerShell scripts are both user-friendly and platform-independent. As a starting point I recommend:**
+**Good scripts are both user-friendly and platform-independent. As a starting point I recommend:**
 
 * Use the `<verb>-<noun>.ps1` scheme for filenames (e.g. *new-symlink.ps1*). Official approved verbs can be found here: [https://learn.microsoft.com/en-us/powershell/scripting/developer/cmdlet/approved-verbs-for-windows-powershell-commands](https://learn.microsoft.com/en-us/powershell/scripting/developer/cmdlet/approved-verbs-for-windows-powershell-commands)
 * Use **UTF-8 BOM** file encoding to support Unicode characters in your script.
