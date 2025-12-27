@@ -62,7 +62,7 @@
 </details>
 
 
-<details><summary>How to get the 500+ PowerShell sample scripts?</summary>
+<details><summary>How to get the 600+ PowerShell sample scripts?</summary>
  
 1. **When using Git, execute in a terminal window:** `git clone https://github.com/fleschutz/PowerShell`
 2. **Otherwise, download and unzip it from:** https://github.com/fleschutz/PowerShell/archive/master.zip
