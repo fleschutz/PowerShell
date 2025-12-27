@@ -13,7 +13,7 @@
 * **It's cross-platform** - available for Linux, Mac OS and Windows.
 * **It's open-source and free** - see the Github repository at: https://github.com/PowerShell/PowerShell.
 * **It's fully documented** - see the official documentation at: https://docs.microsoft.com/en-us/powershell.
-* **It's got modern features** such as Unicode support, metadata header, try-catch-blocks, and many more.
+* **It supports modern features** such as Unicode, metadata header, try-catch-blocks, and many more.
 </details>
 
 <details><summary>How to learn PowerShell?</summary>
