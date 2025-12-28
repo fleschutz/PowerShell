@@ -9,7 +9,7 @@
 	PS> ./list-dir-tree.ps1 C:\MyFolder
 	├📂Results
 	│ ├📄sales.txt (442K)
-	   (2 folders, 1 file, 442K total)
+	   (1 file, 2 folders, 1 folder level, 442K total)
 .LINK
 	https://github.com/fleschutz/PowerShell
 .NOTES
@@ -50,16 +50,23 @@ function Bytes2String([int64]$bytes) {
 
 function ListDir([string]$path, [int]$depth) {
 	$items = Get-ChildItem -path $path
+	# files first
 	foreach($item in $items) {
-		Write-Host "  " -noNewline
-		for ([int]$i = 1; $i -lt $depth; $i++) { Write-Host "│  " -noNewline }
-		if ($item.Mode -like "d*") {
-			Write-Host "├📂$($item.Name)"
-			ListDir "$path\$($item.Name)" ($depth + 1)
-		} else {
+		if ($item.Mode -notlike "d*") {
+			Write-Host "  " -noNewline
+			for ([int]$i = 1; $i -lt $depth; $i++) { Write-Host "   " -noNewline }
 			Write-Host "├$(GetFileIcon $item.Extension)$($item.Name) ($(Bytes2String $item.Length))"
 			$global:files++
 			$global:bytes += $item.Length
+		}
+	}
+	# folders second
+	foreach($item in $items) {
+		if ($item.Mode -like "d*") {
+			Write-Host "  " -noNewline
+			for ([int]$i = 1; $i -lt $depth; $i++) { Write-Host "   " -noNewline }
+			Write-Host "├📂$($item.Name)"
+			ListDir "$path\$($item.Name)" ($depth + 1)
 		}
 	}
 	$global:folders++
@@ -70,7 +77,7 @@ try {
 	Write-Host "`n 📂$path"
 	[int64]$global:files = $global:folders = $global:depth = $global:bytes = 0
 	ListDir $path 1
-	"     ($($global:files) files, $($global:folders) folders, depth $($global:depth), $(Bytes2String $global:bytes) total)"
+	Write-Host "($($global:files) files, $($global:folders) folders, $($global:depth) folder levels, $(Bytes2String $global:bytes) total)"
 	exit 0 # success
 } catch {
 	"⚠️ ERROR: $($Error[0]) (script line $($_.InvocationInfo.ScriptLineNumber))"
