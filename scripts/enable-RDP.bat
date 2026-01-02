@@ -1,10 +1,5 @@
 :: Script to enable Remote Desktop on a machine (must run locally)
 
-:: For a version of this script that can be run against a REMOTE machine, see here:
-::  https://github.com/bmrf/standalone_scripts/blob/master/RDP_remote_enabler.bat
-
-:: Thanks to reddit.com/user/diggity801 for idea and initial script
-
 :: Open the firewall to allow incoming connections
 netsh advfirewall firewall set rule group="Remote Desktop" new enable=Yes
 
