@@ -15,7 +15,7 @@
 
 param([string]$text = "")
 
-if ($text -eq "" ) { $text = read-host "Enter the text to write" }
+if ($text -eq "" ) { $text = Read-Host "Enter the text to write" }
 
-write-host -foregroundcolor red "$text"
+Write-Host -foregroundColor red "$text"
 exit 0 # success
