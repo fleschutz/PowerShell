@@ -372,6 +372,15 @@ function BigApostroph { param([int]$row)
 	}
 } 
 
+function BigDot { param([int]$row)
+	switch($row) {
+	1 { return "     " }
+	2 { return "     " }
+	3 { return "  _  " }
+	4 { return " |_| " }
+	}
+} 
+
 function BigChar { param([string]$char, [int]$row)
 	switch($char) {
 	'A' { return BigA $row }
@@ -412,6 +421,7 @@ function BigChar { param([string]$char, [int]$row)
 	'9' { return Big9 $row }
 	':' { return BigColon $row }
 	'-' { return BigMinus $row }
+	'.' { return BigDot $row }
 	"'" { return BigApostroph $row }
 	}
 	return "      "
