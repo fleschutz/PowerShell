@@ -266,6 +266,7 @@ ECP,Entry Control Point
 EFM,Gesellschaft für Enteisen und Flugzeugschleppen
 EFPS,Electronic Flight Progress Strips
 EICAS,Engine Instrument Crew Alerting System
+ELBA,Emergency Location Beacon for Aircrafts
 ELEV,Field Elevation
 ELT,Emergency Locator Transmitter
 ENR,En-Route
@@ -363,6 +364,7 @@ LVNL,Luchtverkeersleiding Nederland (Air Traffic Control the Netherlands)
 LVP,Low Visibility Procedures
 LWINS,Lightweight Inertial Navigation System
 MA,Missed Approach (IFR)
+MAFFS,Modular Airborne Fire Fighting System
 MATS,Malta Air Traffic Services
 MEA,Minimum En-route Altitude
 METAR,Meteorological Aerodrome Report
