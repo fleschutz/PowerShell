@@ -279,10 +279,8 @@ ALD,Accounting Line Designator (nuclear weapon targeting)
 ALERT,"Advanced Linked Extended Reconnaissance and Targeting,Attack and Launch Early Reporting to Theatre"
 ALF,"Africa Leadership Forum,Alien Life Form (cf. ALF (TV series)),Animal Liberation Front"
 ALG,"Algeria (IOC and FIFA trigram,but not ISO 3166)"
-ALGOL,ALGOrithmic Language
 ALOA,Associated Locksmiths of America,Inc.
 ALOC,Air Lines Of Communication,Average Length of Calls
-ALPA,Air Line Pilots Association
 ALS,Amyotrophic Lateral Sclerosis
 ALSHS,Abraham Low Self-Help Systems
 ALSP,Aggregate Level Simulation Protocol
@@ -301,6 +299,7 @@ AML,Acute Myeloid Leukaemia
 AMLCD,Active Matrix Liquid Crystal Display
 AMLO,"Andrés Manuel López Obrador (Mexican politician),Anti-Money Laundering Office (Thailand government agency)"
 AMO,Atlantic Multidecadal Oscillation
+AMOC,Atlantic Meridional Overturning Circulation
 AMOLED,Active-matrix organic light-emitting diode
 AMOS,"Advanced MOrtar System,Air Force Maui Optical and Supercomputing observatory"
 AMP,"Adenosine MonoPhosphate,Automated Mission Planner"
@@ -338,7 +337,7 @@ AOR,Area of Responsibility
 AOSTH,Adventures of Sonic the Hedgehog
 AOTS,"Attack of the Show!"
 AOU,American Ornithologists' Union
-AP,"Advanced Placement,Air Publication,Andhra Pradesh (Indian state code),Armed Forces Pacific (postal symbol),Associated Press,Auto Pilot"
+AP,"Advanced Placement,Air Publication,Andhra Pradesh (Indian state code),Armed Forces Pacific (postal symbol),Associated Press"
 APAC,Asia Pacific
 APB,All Points Bulletin (police jargon)
 APC,"Armoured Personnel Carrier, Armour Piercing Capped (ammunition)"
@@ -1186,7 +1185,7 @@ DRMS,(U.S.) Defense Revitalization and Marketing Service
 DRPR,Drawing Practices
 DRT,Document Related Technologies
 Ds,Darmstadtium
-DS,Dear son (increasingly prevalent on social mailing lists,blogs,and bulletin boards),Defence Scientist,Direct Support,Dust Storm (METAR Code)
+DS,"Dear son (increasingly prevalent on social mailing lists,blogs,and bulletin boards),Defence Scientist,Direct Support"
 DSA,(U.S.) Defense Support Activities,Division Support Area
 DSAA,(U.S.) Defense Security Assistance Agency,Driving Schools Association of the Americas,DECT Standard Authentication Algorithm
 DSAS,Disney Sing Along Songs
@@ -1235,7 +1234,7 @@ DTOMLS,Doctrine,Training,Organization,Materiel,Leader and Soldier development (m
 DTR,Determine The Relationship
 DTRA,Defense Threat Reduction Agency ("deet-ra")
 DTSA,(U.S.) Defense Technology Security Administration
-DU,Depleted Uranium,Dust (METAR Code)
+DU,Depleted Uranium
 DUI,Data Use Identifier,Data Use Institute,Davis Unified Ignition,Diving Unlimited International,Documento Único de Identidad,Documento Unico de Importación,Driving Under the Influence,Duke University Improv
 DUMBO,Down Under the Manhattan Bridge Overpass (Brooklyn neighborhood)
 DUSD,(U.S.) Deputy Under-Secretary of Defense
@@ -1259,7 +1258,7 @@ DXA,Dual-energy X-ray Absorptiometry
 DXM,DeXtroMethorphan
 DY,Dahomey (ISO 3166 digram; obsolete since 1977)
 Dy,Dysprosium
-DZ,Algeria (ISO 3166 digram),Drizzle (METAR Code),Drop Zone
+DZ,Algeria (ISO 3166 digram)
 DZA,Algeria (ISO 3166 trigram)
 E,East
 EA,Electronic Attack,Emotions Anonymous,Engagement Area,Electronic Arts,Enrolled Agent,Environmental Assessment,Enterprise Architect,Exaampere
@@ -1342,7 +1341,7 @@ EK,Exakelvin
 EKG,Electrocardiogram (from German Elektrokardiogramm)
 EKMS,Electronic Key Management System
 EL,Exalitre
-ELF- Earth Liberation Front,Endangered Language Fund,Eritrean Liberation Front,Executable and Linkable Format,Extremely Low Frequency
+ELF,"Earth Liberation Front,Endangered Language Fund,Eritrean Liberation Front,Executable and Linkable Format,Extremely Low Frequency"
 ELINT,Electronic Intelligence
 ELL,English Language Learner
 ELM,Edge-Localised Mode (plasma physics)
@@ -1498,7 +1497,7 @@ FBM,Board foot
 FBR,Fast Breeder Reactor,Foundation for Biomedical Research,Friedman,Billings,Ramsey (now known as Arlington Asset Investment)
 FBS-Federal Bureau of Statistics (Pakistan),Fetal bovine serum,Football Bowl Subdivision (U.S. college football),Fukuoka Broadcasting Corporation,FC[edit]
 fC,Femtocoulomb
-FC,Fire Control,Football Club,Funnel Cloud (METAR Code)
+FC,"Fire Control,Football Club"
 FCC,U.S. Federal Communications Commission
 FCE,First Certificate in English
 FCF,Financial Free Cash Flow
@@ -1515,25 +1514,25 @@ Fe,Iron (Latin Ferrum)
 FEAR,First Encounter Assault Recon,False Evidence Appears Real
 FEAST,Forum for European-Australian Science and Technology Cooperation
 FEATS,Festival of European Anglophone Theatrical Societies link title
-FEB,Federación Española de Baloncesto (Spanish,"Spanish Basketball Federation"),Federatie Eredivisie Basketball (Dutch,"Federation Honorary Division (of) Basketball"),the former name of the basketball competition now known in Dutch by the English-language Dutch Basketball League,Força Expedicionária Brasileira (Portuguese,"Brazilian Expeditionary Force")
+FEB,"Federación Española de Baloncesto (Spanish,'Spanish Basketball Federation'),Federatie Eredivisie Basketball (Dutch,'Federation Honorary Division (of) Basketball'),the former name of the basketball competition now known in Dutch by the English-language Dutch Basketball League,Força Expedicionária Brasileira (Portuguese,'Brazilian Expeditionary Force')"
 FEBA,Forward Edge of the Battle Area
 FED,Field Emission Display
 FEDEP,Federation Development Process (Simulation)
 FEF,Frontal Eye Field (neurophysiology)
-FEI,Fédération équestre internationale (French,"International Federation for Equestrian Sports")
+FEI,"Fédération équestre internationale (French,'International Federation for Equestrian Sports')"
 FEMA,"Farm Equipment Manufacturers Association, U.S. Federal Emergency Management Agency,Fire Equipment Manufacturers' Association"
-FEMEXFUT,Federación Mexicana de Fútbol Asociación (Spanish,"Mexican Association Football Federation")
-FENAFUTH,Federación Nacional Autónoma de Fútbol de Honduras (Spanish,"National Autonomous Football Federation of Honduras")
+FEMEXFUT,"Federación Mexicana de Fútbol Asociación (Spanish,'Mexican Association Football Federation')"
+FENAFUTH,"Federación Nacional Autónoma de Fútbol de Honduras (Spanish,'National Autonomous Football Federation of Honduras')"
 FENS,Federation of European Neuroscience Societies
-FEP,Firepower Enhancement Program,Fleet satellite (FLTSAT) Extremely high frequency (EHF) Package
-FEPAFUT,Federación Panameña de Fútbol (Spanish,"Panamanian Football Federation")
+FEP,"Firepower Enhancement Program,Fleet satellite (FLTSAT) Extremely high frequency (EHF) Package"
+FEPAFUT,"Federación Panameña de Fútbol (Spanish,'Panamanian Football Federation')"
 FES,Flywheel Energy Storage
-FEST,Frankfurt English Speaking Theatre link title
+FEST,Frankfurt English Speaking Theatre
 FET,Field-effect transistor
 FEZ,Fighter Engagement Zone
 fF,Femtofarad
 FF,Final Fantasy
-FFA,Football Federation Australia,Pacific Islands Forum Fisheries Agency,Free-Fire Area,Fusiform Face Area,Future Farmers of America (today the National FFA Organization)
+FFA,"Football Federation Australia,Pacific Islands Forum Fisheries Agency,Free-Fire Area,Fusiform Face Area,Future Farmers of America (today the National FFA Organization)"
 FFB,Frum From Birth (referring to an observant Jew born into a religiously observant family)
 FFC,Free For Chat
 FFE,Fukuoka Futures Exchange
@@ -1545,7 +1544,6 @@ FFS,For Fuck's Sake
 FFT,Final Fantasy Tactics
 FG,Falun Gong
 fg,Femtogram
-FG,"Fog (METAR Code)"
 FGOTUS,First Gentleman of the United States
 FGR,Flickr Group Roulette
 fH,Femtohenry
@@ -1688,7 +1686,6 @@ FTS,Flight Termination System used during some rocket launches
 FTS,Fuck That Shit
 FTSE,Financial Times Stock Exchange ("footsie")
 FTW,For The Win (a commonly used phrase used online to indicate success) F@#K The World,Forever Together Where ever (gang slogan)
-FU,Smoke (METAR Code)
 FUBAR,Fucked/Fouled Up Beyond All Recognition/Repair
 FUCK,For,Unlawful,Carnal,Knowledge (Van Halen album title)
 FUD,Fear,Uncertainty & Doubt (marketing strategy)
@@ -1701,17 +1698,14 @@ FWI,French West Indies
 FWIW,For What It's Worth
 FWS,U.S. Fish and Wildlife Service
 FWT,Fresh Water Tank
-FX,Firefox,Fox Extended,Metropolitan France (ISO 3166 digram; obsolete 1997),Special effect
+FX,"Firefox,Fox Extended,Metropolitan France (ISO 3166 digram; obsolete 1997),Special effect"
 FXX,Metropolitan France (ISO 3166 trigram; obsolete 1997)
-FY,Fiscal Year,Former Yugoslav Republic of Macedonia (NATO country code)
+FY,"Fiscal Year, Former Yugoslav Republic of Macedonia (NATO country code)"
 FYA,For Your Agenda
 FYDP,Five-Year Defense Plan (U.S.)
 FYI,For Your Information
 FYROM,Former Yugoslav Republic of Macedonia
-FZDZ,Freezing Drizzle (METAR Code)
-FZFG,Freezing Fog (METAR Code)
-FZRA,Freezing Rain (METAR Code)
-G,Gauss,General Audiences (movie rating)
+G,"Gauss,General Audiences (movie rating)"
 g,Gram
 G1,Assistant Chief-of-Staff,Personnel
 G10,Group of 10 (G7 + Belgium,Netherlands,Sweden,Switzerland; numbering 11 in fact)
@@ -1848,7 +1842,7 @@ GPS,"General Problem Solver,Global Positioning System"
 GPT,"General Purpose Technology, Get paid to surf (an online business model)"
 GPU,Gosudarstvennoye Politicheskoye Upravlenie (Russian Государственное Политическое Управление,"State Political Administration") (1922-1934)
 GQ,"Equatorial Guinea (ISO 3166 digram),Gentlemen's Quarterly (the original name of the magazine now known simply as GQ),GR[edit]"
-GR,"Greece (ISO 3166 digram),Hail (METAR Code)"
+GR,Greece (ISO 3166 digram)
 GRAIL,Gravity Recovery and Interior Laboratory
 GRAS,Generally recognized as safe (FDA list)
 GRB,Gamma-Ray Burst
@@ -2078,7 +2072,6 @@ HWM,Hardware morphing (computer graphics rendering)
 HX,IATA code of Hong Kong Airlines,Medical history,Hydrogen halide,Concept automobile by HUMMER
 HXB,The glycoprotein Tenascian C
 HYS,Harvard,Yale,Stanford (perennially named as the top three law schools in the U.S.)
-HZ,Haze (METAR Code)
 Hz,Hertz
 I,Iodine,One (in Roman numerals)
 IA,Iowa (postal symbol)
@@ -2111,7 +2104,7 @@ IBDS,Integrated Biological Detection System,International Business Development S
 IBM,International Business Machines
 IBRD,International Bank for Reconstruction and Development (part of the World Bank)
 IBS,Irritable Bowel Syndrome
-IC,"Ice Crystals (METAR Code),Integrated Circuit,[inner circle]"
+IC,"Integrated Circuit,[inner circle]"
 ICANN,Internet Corporation for Assigned Names and Numbers
 ICBM,I see (phonetically "c") BatMan
 ICBM,Intercontinental Ballistic Missile
@@ -2740,7 +2733,7 @@ LtC,Lieutenant-Colonel (U.S.)
 LTC,Long-Term Costing
 Ltd,Limited
 LTDP,Long-Term Defence Plan
-LTG,"Lieutenant General,Lightning (METAR Code)"
+LTG,Lieutenant General
 LTI,Linear Time-Invariant
 LTM,Acronym for Laughing To Myself
 LTP,Long-Term Potentiation
@@ -2876,7 +2869,6 @@ MES,Manufacturing Execution Systems
 MES,Marconi Electronic Systems,Medium Edison screw
 MESSENGER,MErcury Surface,Space ENvironment,GEochemistry and Ranging
 MET,Meteorological,Middle European Time
-METAR,[Meteorological] Aviation Routine weather report
 METL,Mission Essential Task List ("mettle")
 METOC,Meteorological and Oceanographic
 MEU,U.S. Marine Expeditionary Unit,Maximum Expected Utility
@@ -2914,7 +2906,6 @@ MID,Midway Islands (ISO 3166 trigram; obsolete 1986)
 MIDAS,Man-machine Integration Design and Analysis System
 MIDI,Musical Instrument Digital Interface
 MIDS,Multi-Function Information Distribution System
-MIFG,Shallow Fog (METAR Code)
 MIKE,Monitoring of Illegal Killing of Elephants
 MIL,Man-In-the-Loop
 MILAN,Missile d´infanterie léger antichar (French,"Anti-Tank Light Infantry Missile")
@@ -3637,8 +3628,8 @@ OTW,On The Way
 OTYBL,Over To You Blue Leader
 OTYRL,Over To You Red Leader
 OU,University of Oklahoma
-OVC,Overcast (METAR Code),Ohio Valley Conference
-OVV,Optically Visually Violent,or Optically Violently Variable,a type of quasar
+OVC,Ohio Valley Conference
+OVV,"Optically Visually Violent,or Optically Violently Variable,a type of quasar"
 OW,Old Wykehamist
 OWN,Oprah Winfrey Network
 OX,IATA code for Orient Thai Airlines
@@ -3737,7 +3728,7 @@ PDQ,Pre-Defined Queries (Siebel packages),Pretty Damn Quick
 PDRY,People's Democratic Republic of Yemen (obsolete since 1990)
 PDT,Pacific Daylight [Saving] Time (UTC-7 hours)
 PDU,Police Dog Unit,Power Distribution Unit,Protocol Data Unit
-PE,Ice Pellets (old style METAR Code),Peru (ISO 3166 and FIPS 10-4 country code digram),Physical Education,Premature Ejaculation,Prince Edward Island (postal code),Price to Earning ratio (used for equity shares),Plant Extract
+PE,"Peru (ISO 3166 and FIPS 10-4 country code digram),Physical Education,Premature Ejaculation,Prince Edward Island (postal code),Price to Earning ratio (used for equity shares),Plant Extract"
 PE,Professional Engineer
 PEBCAC,Problem Exists Between Chair and Computer (IT help desk in-joke)
 PEBKAC,Problem Exists Between Keyboard and Chair (ditto)
@@ -3794,25 +3785,19 @@ PINF,People In Need Foundation (Czech charitable organisation)
 PIPA, Program on International Policy Attitudes
 PIR,Priority Intelligence Requirement
 PIRA,Provisional Irish Republican Army
-PIREPS,Pilot Reports
 PITA,Pain In The Ass
 PJ,petajoule
 pJ,picojoule
 PJHQ,Permanent Joint Headquarters
 PJs,Pajamas ("pee-jayz")
-PK,Pakistan (ISO 3166 and FIPS 10-4 country code digram),petakelvin,Player Kill[er],Probability of Kill,PolyKetone,Pulemet Kalashnikova (Russian ПК пулемет Калашникова,"Machinegun Kalashnikov")[1]
-PKA,Previously Known As,Professionally Known As
-PKE,Partnership of Kindermusik Educators [1] &[2] & [2]
+PK,"Pakistan (ISO 3166 and FIPS 10-4 country code digram),petakelvin,Player Kill[er],Probability of Kill,PolyKetone,Pulemet Kalashnikova (Russian ПК пулемет Калашникова,'Machinegun Kalashnikov')[1]"
+PKA,"Previously Known As,Professionally Known As"
+PKE,"Partnership of Kindermusik Educators"
 PKI,Public Key Infrastructure (cryptography)
-PKM,Pulemet Kalashnikova Modernizirovanniy (Russian ПКМ пулемет Калашникова модернизированный,"Machinegun Kalashnikov Modernised")[1]
-PKMS,Pulemet Kalashnikova Modernizirovanniy Stepanova (Russian ПКМС пулемет Калашникова модернизированный Степанова,"Machinegun Kalashnikov Modernised Stepanova")[1]
-PKMT,Pulemet Kalashnikova Modernizirovanniy Tankoviy (Russian ПКМТ пулемет Калашникова модернизированный танковый,"Machinegun Kalashnikov Modernised Tank") (a.k.a. PKTM[1])
-PKT,Pulemet Kalashnikova Tankoviy (Russian ПКТ пулемет Калашникова танковый,"Machinegun Kalashnikov Tank")[1]
-PKTM,Pulemet Kalashnikova Tankoviy Modernizirovanniy (Russian ПКТМ пулемет Калашникова танковый модернизированный,"Machinegun Kalashnikov Tank Modernised") (a.k.a. PKMT)[1]
 PKU,Phenylketonuria
-PL,Ice Pellets (new style METAR Code),petalitre,Phase Line (Co-ordination Line),Poland (ISO 3166 and FIPS 10-4 country code digram)
+PL,"petalitre,Phase Line (Co-ordination Line),Poland (ISO 3166 and FIPS 10-4 country code digram)"
 pL,picolitre
-PLAF, People's Liberation Armed Forces,Pluggable look and feel,Product Line Architecture Framework
+PLAF,"People's Liberation Armed Forces,Pluggable look and feel,Product Line Architecture Framework"
 PLAID,Precision Location and Identification
 PLB,Personal Locator Beacon
 PLC,Public Limited Company (British)
@@ -3821,10 +3806,10 @@ PLD,Probable Line of Deployment
 PLEBS,People Lacking Everyday Basic Skills
 PLF,Parachute Landing Fall
 PLGR,Precision Lightweight GPS Receiver ("plugger")
-PLI,Position Location Information,Private Lands Initiative,Professional Liability Insurance
+PLI,"Position Location Information,Private Lands Initiative,Professional Liability Insurance"
 PLIF,Planar Laser-Induced Fluorescence
-PLK,Polska Liga Koszykówki (Polish,"Polish Basketball League")
-PLKK,Polska Liga Koszykówki Kobiet (Polish,"Polish Women's Basketball League")
+PLK,"Polska Liga Koszykówki (Polish,'Polish Basketball League')"
+PLKK,"Polska Liga Koszykówki Kobiet (Polish,'Polish Women's Basketball League')"
 PLL,Phase-Locked Loop (electronics)
 PLM,Polarized Light Microscope/Microscopy
 PLMBA,Phospholipid Bilayer Microarray
@@ -3835,7 +3820,7 @@ PLP,Platonic Life Partner
 PLS,Palletized Loading System,Personal Locator System
 PLUTO,Pipe Line Under The Ocean
 PLW,Palau (ISO 3166 trigram)
-PM,Panama (FIPS 10-4 country code),Perry Mason,Phase Modulation,Post Meridiem (Latin "after noon"),Prime Minister,Project Manager,Saint Pierre and Miquelon (ISO 3166 digram)
+PM,"Panama (FIPS 10-4 country code),Perry Mason,Phase Modulation,Post Meridiem (Latin 'after noon'),Prime Minister,Project Manager,Saint Pierre and Miquelon (ISO 3166 digram)"
 Pm,petametre,Promethium
 pm,picometre
 PMC,Primary Motor Cortex
@@ -3849,12 +3834,11 @@ PMT,Premenstrual Tension (UK) (see Premenstrual Syndrome)
 PN,petanewton,Pitcairn Islands (ISO 3166 diagram)
 pN,piconewton
 PNAC,Project for the New American Century
-PNC,Palestinian National Council,Palmerston North City (cf. PNC,a New Zealand rapper from this city),Pittsburgh National Corporation,one of the two companies that merged into today's PNC Financial Services,Provident National Corporation,the other company that merged into PNC Financial Services
-PNG,Papua New Guinea (ISO 3166 trigram),Portable Network Graphics
-PNH,Paroxysmal nocturnal hemoglobinuria,Police Nationale d'Haïti (French,"National Police of Haiti"),PO[edit]
-PNP,Partido Nuevo Progresista,Plug 'N' Play/Pray,Positive Negative Positive
-PNVS,Pilot Night Vision Sensor
-PO,Dust Devil (METAR Code),per os (Latin,"by mouth"),Portugal (FIPS 10-4 country code)
+PNC,"Palestinian National Council,Palmerston North City (cf. PNC,a New Zealand rapper from this city),Pittsburgh National Corporation,one of the two companies that merged into today's PNC Financial Services,Provident National Corporation,the other company that merged into PNC Financial Services"
+PNG,"Papua New Guinea (ISO 3166 trigram),Portable Network Graphics"
+PNH,"Paroxysmal nocturnal hemoglobinuria,Police Nationale d'Haïti (French, 'National Police of Haiti')"
+PNP,"Partido Nuevo Progresista,Plug 'N' Play/Pray,Positive Negative Positive"
+PO,"per os (Latin,'by mouth'),Portugal (FIPS 10-4 country code)"
 Po,Polonium
 PO,Post Office
 PO,Purchase Order
@@ -3907,7 +3891,6 @@ Prb,Presbyter
 PRBO,Point Reyes Bird Observatory
 PRC,People's Republic of China
 PRD,CERDEC Product Realization Directorate
-PRFG,Partial Fog (METAR Code)
 PRI,Puerto Rico (ISO 3166 trigram)
 PRK,Democratic People's Republic of Korea (ISO 3166 trigram)
 PRM,Personnel iness Management
@@ -4021,8 +4004,8 @@ R2I,Resistance to Interrogation
 R3P,Rearm,Refuel,and Resupply Point
 RA,Radio Australia
 Ra,Radium
-RA,Rain (METAR Code),Rear Area,Reinforced Alert,Republican Army,Right Ascension,Royal Artillery (UK),Royal Academy
-RAA,Royal Automobile Association,South Australia,Rear Assembly Area
+RA,"Rear Area,Reinforced Alert,Republican Army,Right Ascension,Royal Artillery (UK),Royal Academy"
+RAA,"Royal Automobile Association,South Australia,Rear Assembly Area"
 RAAF,Royal Australian Air Force
 Rabobank,Raiffeisen-Boerenleenbank (from the two banks that merged to form the modern company)
 RAC,Royal Automobile Club (in the United Kingdom,renamed RAC plc in 2002)
@@ -4224,7 +4207,7 @@ RWR,Radar Warning Receiver
 RWS,Remote Weapon Station
 Rx,"Medical prescription (possibly from Latin 'recipere','to take': see entry)"
 RX,Receive
-SA,Sand (METAR Code),Saudi Arabia (ISO 3166 and FIPS 10-4 country code digram),Sexaholics Anonymous,sine anno (Latin,“without year”),Situational awareness,South Africa,(i/s) South Australia (postal symbol),Standards Australia,Sturmabteilung (German,“Storm Detachment”,Nazi forerunner and rival of SS),S.A.,designation for a corporation in many European countries; see article for meanings
+SA,"Saudi Arabia (ISO 3166 and FIPS 10-4 country code digram),Sexaholics Anonymous,sine anno (Latin,“without year”),Situational awareness,South Africa,(i/s) South Australia (postal symbol),Standards Australia,Sturmabteilung (German,“Storm Detachment”,Nazi forerunner and rival of SS),S.A.,designation for a corporation in many European countries; see article for meanings"
 SAA,Saudi Arabian Airlines,former name of Saudia,Sex Addicts Anonymous,South African Airways,Southern Athletic Association,Standards Association of Australia,a former name of Standards Australia,SAAB —  Svenska Aeroplan AB (Swedish aircraft manufacturer; also refers to its former auto manufacturing arm),SAAFR —  Standard use Army Aircraft Flight Route (“safer”),SAAMI —  Sporting Arms and Ammunition Manufacturers' Institute (“sammy”),SAARC —  South Asian Association for Regional Cooperation,SAB —  Soprano Alto Baritone,Sabena —  Société anonyme belge d'exploitation de la navigation aérienne (French for “Belgian Company for Exploiting Aerial Navigation”,1923-2001),SABIC —  Saudi Basic Industries Corporation,SABR —  Society for American Baseball Research
 SAC,Standards Activity Committee (of SISO),U.S. Strategic Air Command (1946-1992),SACAT —  Semi Attended Customer Activated Terminal (Supermarket checkout),SACEUR —  Supreme Allied Commander EURope,SACLANT —  Supreme Allied Commander atLANTic,SACLOS —  Semi-Automatic Command to Line of Sight
 SAD,Seasonal Affective Disorder,Situational Awareness Display,SADD —  originally Students Against Drunk Driving,now Students Against Destructive Decisions (U.S. national school-related group)
@@ -4259,7 +4242,7 @@ SEP,Somebody Else’s Problem,Spherical Error Probable,System Enhancement Packag
 SEU,Single Event Upset (solid state physics),Slightly Enriched Uranium,Special Evidence Unit,SF[edit]
 SF,Fleet Submarine (retired US Navy hull classification),San Francisco,Science fiction,South Africa (FIPS 10-4 country code),Speculative fiction,Special Forces
 SFA,Sales force automation,Saturated fatty acid,Scottish Football Association,Stephen F. Austin (State University),Sudan Football Association
-SG,"Senegal (FIPS 10-4 country code), Singapore (ISO 3166 digram), Snow Grains (METAR Code), Study Group"
+SG,"Senegal (FIPS 10-4 country code), Singapore (ISO 3166 digram), Study Group"
 SGOTUS,Second Gentleman of the United States
 SH,Saint Helena (ISO 3166 digram),SONATRACH (Algerian petroleum company)
 SHAC,Stop Huntingdon Animal Cruelty,Student Health Action Coalition,SHAPE —  Supreme Headquarters Allied Powers Europe,SHF —  Super High Frequency,SHN —  Saint Helena (ISO 3166 trigram)
@@ -4293,7 +4276,7 @@ SOR,State Of iness,Statement Of Requirements
 Sp,Special,Spring tide (nautical charts),sine prole (Latin,“without offspring”)
 SR,Sound Reinforcement,Supply Route,Suriname (ISO 3166 digram),Sveriges Radio (Swedish Radio Ltd),SR —  Sustained release of a drug
 SRG,SACEUR Rover Group,Special Republican Guard,SRGW —  Short-Range Guided Weapon
-SS,Sand Storm (METAR Code),Schutzstaffel (German,roughly "Protection Squadron"; Nazi elite Praetorian guard),U.S. Secret Service,Spanish Ship,Stainless steel,Stockholm Skins,Submarine (US Navy hull classification),Super Sport,Surface-to-Surface (missile)
+SS,"Schutzstaffel (German,roughly "Protection Squadron"; Nazi elite Praetorian guard),U.S. Secret Service,Spanish Ship,Stainless steel,Stockholm Skins,Submarine (US Navy hull classification),Super Sport,Surface-to-Surface (missile)"
 SSA,Cargo Submarine (US Navy hull classification),Social Security Administration (U.S.),Statistics South Africa,SSB —  Single-sideband modulation,SSB —  Sacramento Sustainable Business,SSBN —  Nuclear-Powered Ballistic Missile Submarine (US Navy hull classification)
 SSC,"Safe,Sane,Consensual (SM phrase),Secondary Somatosensory Cortex,Smaller-Scale Contingency,U.S. Army Soldiers System Center (Natick,Massachusetts),Superconducting Super Collider,SSCCATAGAPP — Singles,Seniors,Childless Couples,And Teens And Gays Against Parasitic Parents (fictional organization from The Simpsons)"
 SSD,South Sudan (ISO 3166 trigram)
@@ -4523,7 +4506,7 @@ TRU,Transuranic
 TRUEX,Training in Urban Environment Exercise
 TRW,Thompson Ramo Wooldridge Inc.
 Ts,Terasecond
-TS,"Terasiemens,Thunderstorm (METAR code),Tunisia (FIPS 10-4 country code),TinySex,Transsexual, Tough Sh*t"
+TS,"Terasiemens,Tunisia (FIPS 10-4 country code),TinySex,Transsexual, Tough Sh*t"
 TSA,"Theatre Storage Area,Time Slot Allocation,Transportation Security Administration,The Salvation Army"
 TSCA,Toxic Substances Control Act ("tosca")
 TSEC,Transmission Security Encryption Code
@@ -4862,7 +4845,7 @@ WAL,see entry
 WAPIMA,What a pain in my ass
 WAR,With All Respect
 WAsP,Short form of WAAAAP (Wind Atlas Analysis and Application Program)
-WASP,White Anglo-Saxon Protestant,Wide Angle Search for Planets,Women Airforce Service Pilots
+WASP,"White Anglo-Saxon Protestant,Wide Angle Search for Planets"
 WAYP,White And Yellow Pages
 WB,"Warner Bros.,Welcome Back (Internet shorthand)"
 Wb,Weber
@@ -5013,7 +4996,6 @@ Xe,Xenon
 XF,Automobile made by Jaguar,Truck made by DAF Trucks,IATA code for Vladivostok Air
 XFA,XML Forms Architecture
 XFC,Xtreme Fighting Championships
-XFD,Fighter aircraft made by Douglas
 Xfe,X File Explorer
 XFF,X-Forwarded-For
 XFG,Exfoliation glaucoma

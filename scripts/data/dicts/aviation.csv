@@ -91,7 +91,7 @@ AIRNET,Airport Network Simulation Model
 AIRPAC,Advisor for the Intelligent Resolution of Predicted Aircraft
 ALO,Aviation Logistics Organization
 ALP,Airport Layout Plan
-ALPA,Airlines Pilots Association
+ALPA,Air Line Pilots Association
 ALS,Approach Lighting System
 ALSF,Approach Lighting System With Sequenced Flashing Lights
 ALSF1,ALS with Sequenced Flashers I
@@ -127,8 +127,7 @@ AODR,Authorizing Official Designated Representative
 AOM,Airplane Operating Manual
 AOPA,Aircraft Owners and Pilots Association
 AoR,Area of Responsibility
-AP,Acquisition Plan
-APB,Acquisition Program Baselines
+AP,Auto Pilot
 APIS,Aircraft Parking and Information System
 APM,Approach Path Monitor
 APP,"Approach Area, Approach ATS Unit"
@@ -140,7 +139,7 @@ AR,Aerial Refueling
 AR,Aspect Ratio
 ARAC,Army Radar Approach Control (AAF)
 ARFOR,Area Forecast
-ARINC,Aeronautical Radio, Inc. (USA)
+ARINC,"Aeronautical Radio, Inc. (USA)"
 ARNS,Aeronautical Radio Navigation Service
 ARLNO,Airline Office
 ARP,Airport Reference Point
@@ -254,10 +253,13 @@ DGAC,Direction Générale de l'Aviation Civile
 DLA,Defense Logistics Agency
 DME,Distance Measuring Equipment
 DP,Departure Procedure
+DS,Dust Storm (METAR code)
 DSNA,Direction des Services de la Navigation Aérienne 
 DTI,Direction Technique Innovation
+DU,Dust (METAR code)
 DVA,Diverse Vector Area
 DW,Downwind
+DZ,"Drizzle (METAR code), Drop Zone"
 EAS,Equivalent Airspeed
 EAVA,Estonian Aviation Academy
 ECAC,European Civil Aviation Conference
@@ -271,7 +273,7 @@ ELEV,Field Elevation
 ELT,Emergency Locator Transmitter
 ENR,En-Route
 EOL,Engine-off landing
-ERAU,Embry-Riddle Aeronautical University (Daytona Beach, Florida)
+ERAU,"Embry-Riddle Aeronautical University (Daytona Beach, Florida)"
 ERPM,Engine Rotations per Minute
 eSTOL,Electric Short Take-off and Landing
 ETA,"Estimated Time of Arrival, East Transition Area"
@@ -293,6 +295,7 @@ FAWP,Final Approach Waypoint
 FAWS,Flight Advisory Weather Service
 FBO,Fixed-Base Operator
 FBW,Fly-by-Wire
+FC,Funnel Cloud (METAR code)
 FCA,Final Cruise Altitude
 FCC,Federal Communications Commission (USA)
 FCC,Flight Control Computer
@@ -305,6 +308,7 @@ FCOM,Flight Crew Operating Manual
 FCOM,Flight Crew Operations Manual
 FCPC,Flight Control Primary Computer
 FE,Field Elevation (highest point of an airport’s usable runways and is measured in height above mean sea level)
+FG,Fog (METAR code)
 FIA,Flight Information Area
 FIR,Flight Information Region
 FIS,Federal Inspection Services
@@ -315,22 +319,29 @@ FMGC,Flight Management and Guidance Computer
 FMS,Flight Management System
 FOD,Foreign Object Debris
 FOV,Field of View
+FU,Smoke (METAR code)
 FWC,Flight Warning Computer
+FZDZ,Freezing Drizzle (METAR code)
+FZFG,Freezing Fog (METAR code)
+FZRA,Freezing Rain (METAR code)
 GA,"General Aviation, Go Around (VFR)"
 GAF,German Air Force
 GND,Ground
 GP,Glide Path
 GPS,Global Positioning System
+GR,Hail (METAR code)
 GS,Ground Speed or Glideslope
 HEMS,Helicopter Emergency Medical Services
 HKIA,Hong Kong International Airport
 HOGE,Hover Out of Ground Effect
 HOTS,Higher-Order Thinking Skills
+HZ,Haze (METAR code)
 IAA,Israeli Airport Authority
 IAF,Israeli Air Force
-IANS,Institute of Air Navigation Services, a division of Eurocontrol
+IANS,"Institute of Air Navigation Services, a division of Eurocontrol"
 IAS,Indicated airspeed
 IATA,"International Air Transport Association, HQ in Montreal, Canada"
+IC,Ice Crystals (METAR code)
 ICA,Initial Climb Area
 ICAO,International Civil Aviation Organization
 ICARD,International Codes and Route Designators
@@ -359,6 +370,7 @@ LMUK,Lockheed Martin UK
 LNAV,Lateral Navigation
 LOD,Level of Detail
 LTA,Lower Traffic Area
+LTG,Lightning (METAR code)
 LUAW,Line up and wait
 LVNL,Luchtverkeersleiding Nederland (Air Traffic Control the Netherlands)
 LVP,Low Visibility Procedures
@@ -371,6 +383,7 @@ METAR,Meteorological Aerodrome Report
 MCDU,Multifunction Control and Display Unit
 MCP,Maximum Continuous Power
 MGTOW,Maximum Gross Take-off Weight
+MIFG,Shallow Fog (METAR code)
 MLW,Maximum Landing Weight
 MMR,Multi-Mode Receiver
 MRTT,Multi-Role Tanker Transport
@@ -403,6 +416,7 @@ OJTI,On-the-Job Training Instructor
 OODA,"Observation, Orientation, Decision, and Action"
 ORCAM,Originating Region Code Assignment Method
 OSC,On Scene Commander
+OVC,Overcast (METAR code)
 OWE,Operational Weight Empty
 PA,Pressure Altitude
 PADS,Parallax Aircraft Docking System
@@ -411,17 +425,24 @@ PAPA,"Parallax Aircraft Parking Aid (docking system)"
 PAPI,Precision Approach Path Indicator
 PAR,Precision Approach Radar
 PCAS,Primary Crash Alarm System
+PE,Ice Pellets (old style METAR code)
 PIC,Pilot in Command
+PIREPS,Pilot Reports
 PNF,Pilot Not Flying 
+PNVS,Pilot Night Vision Sensor
+PO,Dust Devil (METAR code)
 POH,Pilot's Operating Handbook
+PL,Ice Pellets (new style METAR code)
 PPL,Private Pilot's License
 PMI,Preventative Maintenance Inspection
 POFZ,Precision Obstacle Free Zone
+PRFG,Partial Fog (METAR code)
 PTAC,"Position, Turn, Altitude, Clearance (also known as Approach Clearance)"
 PtF,Permit to Fly
 QFE,"the altimeter setting that will cause the altimeter to read the height above a specific aerodrome or ground level, and therefore read zero on landing"
 QNE,pressure altitude at the landing runway threshold
 QNH,atmospheric pressure adjusted to mean sea level
+RA,Rain (METAR code)
 RADAR,Radio Detection And Ranging
 RADNET,Radar Network
 RAIM,Receiver Autonomous Integrity Monitoring (GPS)
@@ -471,6 +492,7 @@ RVR,Runway Visual Range
 RVSM,Reduced Vertical Separation Minimum
 RWR,Radar Warning Receiver
 RWY,Runway
+SA,Sand (METAR code)
 SADL,Situational Awareness Data Link
 SAF,Sustainable Aviation Fuel
 SAR,"Search and Rescue, Synthetic Aperture Radar"
@@ -491,6 +513,7 @@ SESAR,Single European Sky ATM Research
 SFC,Surface
 SFL,Sequencing Flashing Light
 SFO,Simulated Flameout Operation
+SG,Snow Grains (METAR code)
 SI,Selective Interrogation
 SIAP,Standard Instrument Approach Procedure
 SID,Standard Instrument Departure
@@ -510,6 +533,7 @@ SOW,Statement of Work
 SRA,Surveillance Radar Approach
 SRC,Safety Regulation Commission (EUROCONTROL)
 SRU,Safety Regulation Unit (EUROCONTROL)
+SS,Sand Storm (METAR code)
 SSR,Secondary Surveillance Radar
 STAR,Standard Arrival Route or Standard Terminal Arrival Route
 STARS,Standard Terminal Automation Replacement System
@@ -572,6 +596,7 @@ TOWSIM,Tower Simulator
 TRA,Temporary Reserved Area
 TRACON,Terminal Radar Approach Control
 TRH,Thrust Reduction Height
+TS,Thunderstorm (METAR code)
 TSA,Temporary Segregated Area
 TSAT,Target Startup Approval Time
 TSO,Technical Standard Order
@@ -602,8 +627,8 @@ UNL,Unlimited
 URET,User Request Evaluation Tool
 USAF,United States Air Force
 UTA,Upper Traffic Area
-V1,Decision speed, the speed beyond which takeoff should no longer be aborted
-V2,Takeoff speed. The speed at which the aircraft may safely be climbed with one engine inoperative
+V1,Decision speed (the speed beyond which takeoff should no longer be aborted)
+V2,Takeoff speed (the speed at which the aircraft may safely be climbed with one engine inoperative)
 VAR,Magnetic Variation
 VASI,Visual Approach Slope Indicator
 VASIS,Visual Approach Slope Indicator System 
@@ -620,7 +645,7 @@ VFR,Visual Flight Rules
 VHF,Very High Frequency (3 to 300MHz)
 VLF,Very Low Frequency
 VMC,Visual Meteorological Conditions
-VMO,maximum operation speed is the air speed than should never be exceeded deliberately in normal operation, whatever the flight situation isVOR,VHF Omni-directional Range
+VMO,"maximum operation speed is the air speed than should never be exceeded deliberately in normal operation, whatever the flight situation is"
 VOLMET,Meteorological Information for Aircraft in Flight
 VOR,VHF Omni-directional Receiver
 VORTAC,VOR -TACAN combination
@@ -642,6 +667,7 @@ Vz,Rate-of-climb
 WA,Wind Angle
 WAAS,Wide Area Augmentation System
 WAM,Wide Area Multilateration
+WASP,Women Airforce Service Pilots
 WBS,Work Break-down Structure
 WCA,Wind Correction Angle
 WDI,Wind Direction Indicator
@@ -653,4 +679,5 @@ WTC,Wake Turbulence Category
 WTWS,Wake Turbulence Warning System
 WX,Weather
 WXR,Weather Radar Transceiver
+XFD,Fighter aircraft made by Douglas
 ZELL,Zero Length Launch
