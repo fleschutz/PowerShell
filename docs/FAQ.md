@@ -54,9 +54,9 @@
 **NOTE:** the group policy object (GPO) settings of your organization might disallow changes. In that case contact your system administrator for help.
 </details>
 
-<details><summary>Which PowerShell version should be used?</summary>
+<details><summary>Which PowerShell version to use?</summary>
 
-* **PowerShell 2.0** (or lower) is out-dated and will be removed in newer Windows releases.
+* **PowerShell up to 2.0** is out-dated and will be removed in newer Windows releases.
 * **PowerShell 5.1** is preinstalled on Windows 10 or 11.
 * **PowerShell 7.5.4** is the very latest (as of December 2025), but needs to be installed manually.
 * See also the **version history** at: https://github.com/PowerShell/PowerShell/releases
