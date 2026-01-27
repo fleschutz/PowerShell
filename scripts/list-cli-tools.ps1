@@ -120,6 +120,7 @@ function List-CLI-Tools {
 	ListTool column		"--version"
 	ListTool comp		""
 	ListTool compact	""
+	ListTool conan		"--help"
 	ListTool cp		"--version"
 	ListTool cpack		"--version"
 	ListTool cscript        ""
