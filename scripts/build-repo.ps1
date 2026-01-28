@@ -11,7 +11,7 @@
 	PS> ./build-repo.ps1 C:\Repos\ninja
 	⏳ Configuring CMake by executing 'cmake .'...
 	...
-	✅ Repo 'ninja' built successfully in 47s, results at: 📂C:\Repos\ninja\_x86_64_build
+	✅ Repo 'ninja' built successfully in 47s, results at: 📂C:\Repos\ninja\_x86_64_builds
 .LINK
 	https://github.com/fleschutz/PowerShell
 .NOTES
@@ -25,7 +25,7 @@ function BuildFolder([string]$path) {
 	if (Test-Path "$path/CMakeLists.txt" -pathType leaf) {
 		"⏳ (1/3) Configuring CMake by executing 'cmake .'..."
 		$arch = (uname -m)
-		$global:results = "$path/_$(arch)_build/"
+		$global:results = "$path/_$(arch)_builds/"
 		if (-not(Test-Path $global:results -pathType container)) { 
 			& mkdir $global:results
 		}
@@ -143,9 +143,14 @@ function BuildFolder([string]$path) {
 		if ($lastExitCode -ne 0) { throw "Executing 'build.bat' failed with exit code $lastExitCode" }
 		$global:results = "$path\attower\Executables"
 
+	} elseif (Test-Path "$path/src" -pathType container) {
+		"⏳ Trying to build in 📂src subfolder..."
+		BuildFolder "$path/src"
+
 	} elseif (Test-Path "$path/$dirName" -pathType container) {
-		"⏳ No make rule found, trying subfolder '$($dirName)'..."
+		"⏳ Trying to build in 📂$($dirName) subfolder..."
 		BuildFolder "$path/$dirName"
+
 	} else {
 		Write-Warning "Sorry, no make rule applies to: 📂$dirName"
 		exit 0 # success
