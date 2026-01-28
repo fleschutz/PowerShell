@@ -24,7 +24,11 @@ function BuildFolder([string]$path) {
 	$dirName = (Get-Item "$path").Name
 	if (Test-Path "$path/CMakeLists.txt" -pathType leaf) {
 		"⏳ (1/3) Configuring CMake by executing 'cmake .'..."
-		$arch = (uname -m)
+		if ($IsLinux -or $IsMacOS) {
+			$arch = (uname -m)
+		} else {
+			$arch = "win64"
+		}
 		$global:results = "$path/_$(arch)_builds/"
 		if (-not(Test-Path $global:results -pathType container)) { 
 			& mkdir $global:results
