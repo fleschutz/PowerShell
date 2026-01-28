@@ -25,11 +25,11 @@ function BuildFolder([string]$path) {
 	if (Test-Path "$path/CMakeLists.txt" -pathType leaf) {
 		"⏳ (1/3) Configuring CMake by executing 'cmake .'..."
 		if ($IsLinux -or $IsMacOS) {
-			$arch = (uname -m)
+			$architecture = (uname -m)
 		} else {
-			$arch = "win64"
+			$architecture = "win64"
 		}
-		$global:results = "$path/_$(arch)_builds/"
+		$global:results = "$path/_$($architecture)_builds/"
 		if (-not(Test-Path $global:results -pathType container)) { 
 			& mkdir $global:results
 		}
