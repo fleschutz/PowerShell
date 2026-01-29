@@ -63,8 +63,6 @@ function Start-CoffeeCupAnimation { param ([int]$DelayMs = 250)
 
 
 try {
-	$host.UI.RawUI.WindowTitle = "🍵 Brewing Coffee..."
-
 	Start-CoffeeCupAnimation 
 
 	exit 0 # success
