@@ -171,6 +171,7 @@ BDOC,Base Defense Operations Center
 BIRTAM,NOTAM on Bird Activity
 BIT,Build-In Test
 BITE,Build-In Test Equipment
+BNATCS,Brand New Air Traffic Control System
 BRNAV,Basic Area Navigation
 BWB,Blended Wing Body
 BWC,Bird Watch Condition
@@ -283,7 +284,7 @@ ETO,Estimated Time Over Significant Point
 ETOPS,Extended-range Twin-engine Operational Performance Standards
 ETVS,Electronic Terminal Voice Switch
 eVTOL,Electric Vertical Take-off and Landing
-FAA,U.S. Federal Aviation Administration
+FAA,Federal Aviation Administration (USA)
 FAR,"Fuel Air Ratio, Federal Aviation Regulations"
 FAS,Final Approach Segment
 FAS,Final Approach Speed
