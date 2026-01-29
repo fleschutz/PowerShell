@@ -2,12 +2,12 @@
 .SYNOPSIS
 	Sets the working directory to a repo
 .DESCRIPTION
-	This PowerShell script changes the current working directory to the given local Git repository.
+	This PowerShell script changes the current working directory to a local Git repository.
 .PARAMETER folderName
 	Specifies the folder name of the Git repository
 .EXAMPLE
 	PS> ./cd-repo.ps1 rust
-	📂C:\Repos\rust entered, current branch is: ## main ... origin/main
+	📂C:\Repos\rust entered with branch at: ## main ... origin/main
 .LINK
 	https://github.com/fleschutz/PowerShell
 .NOTES
@@ -39,7 +39,7 @@ try {
 
 	$path = Resolve-Path "$path"
 	Set-Location "$path"
-	Write-Host "📂$path entered, current branch is: " -noNewline
+	Write-Host "📂$path entered with branch at: " -noNewline
 	& git status --branch --short 
 	exit 0 # success
 } catch {
