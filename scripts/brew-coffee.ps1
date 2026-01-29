@@ -14,14 +14,6 @@
 #requires -version 5.1
 
 function Start-CoffeeCupAnimation { param ([int]$DelayMs = 250)
-    
-    $CoffeeCup = @(
-     "      _________   "
-     "  ###|         |  "
-     " |   |         |  "
-     "  ###|_________|  "
-     "     \_________/  "
-    )
 
     $SteamFrames = @(
         # Frame 1
@@ -41,19 +33,23 @@ function Start-CoffeeCupAnimation { param ([int]$DelayMs = 250)
         )
     )
     $SteamFrameIndex = 0
+ 
+    $CoffeeCup = @(
+     "      _________   "
+     "  ###|         |  "
+     " |   |         |  "
+     " |   | B O S S |  "
+     " |   |         |  "
+     "  ###|_________|  "
+     "     \_________/  "
+    )
 
     while ($true) {
-            Clear-Host
-
             $currentSteam = $SteamFrames[$SteamFrameIndex]
-            foreach ($line in $currentSteam) {
-                Write-Host $line
-            }
 
-            foreach ($line in $CoffeeCup) {
-                Write-Host $line
-            }
-
+            Clear-Host
+            foreach ($line in $currentSteam) { Write-Host $line }
+            foreach ($line in $CoffeeCup) { Write-Host $line }
            
             $SteamFrameIndex = ($SteamFrameIndex + 1) % $SteamFrames.Length
             
