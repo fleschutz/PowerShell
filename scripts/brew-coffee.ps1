@@ -1,17 +1,20 @@
-$host.UI.RawUI.WindowTitle = "Homebrew Coffee 🍵"
+﻿<#
+.SYNOPSIS
+	Brews coffee as animation
+.DESCRIPTION
+	This PowerShell script writes a coffee cup with animated steam to the console.
+.EXAMPLE
+	PS> ./brew-coffee.ps1
+.LINK
+	https://github.com/fleschutz/PowerShell
+.NOTES
+	Author: Markus Fleschutz | License: CC0
+#>
 
-$wsh = New-Object -ComObject WScript.Shell
+#requires -version 5.1
 
-
-function Start-CoffeeCupAnimation {
-    param (
-        [int]$DelayMs = 250
-    )
-
+function Start-CoffeeCupAnimation { param ([int]$DelayMs = 250)
     
-    $HideCursor = "`e[?25l" # Hide cursor
-    $ShowCursor = "`e[?25h" # Show cursor
-
     $CoffeeCup = @(
      "      _________   "
      "  ###|         |  "
@@ -19,7 +22,6 @@ function Start-CoffeeCupAnimation {
      "  ###|_________|  "
      "     \_________/  "
     )
-
 
     $SteamFrames = @(
         # Frame 1
@@ -37,27 +39,10 @@ function Start-CoffeeCupAnimation {
             "       )(   )(   "
             "      (  ) (  )  "
         )
-)
-
+    )
     $SteamFrameIndex = 0
 
-
-    $wsh = New-Object -ComObject WScript.Shell
-    $f16Job = Start-Job -ScriptBlock {
-        param($wshComObject)
-        $wshLocal = New-Object -ComObject WScript.Shell
-
-        
-        while ($true) {
-#            $wshLocal.SendKeys("{F16}")
-            Start-Sleep -Seconds 55
-        }
-    } -ArgumentList $wsh
-
-    Write-Host -NoNewline $HideCursor
-
-    try {
-        while ($true) {
+    while ($true) {
             Clear-Host
 
             $currentSteam = $SteamFrames[$SteamFrameIndex]
@@ -71,19 +56,19 @@ function Start-CoffeeCupAnimation {
 
            
             $SteamFrameIndex = ($SteamFrameIndex + 1) % $SteamFrames.Length
-
             
             Start-Sleep -Milliseconds $DelayMs
         }
-    }
-    finally {
-        Write-Host -NoNewline $ShowCursor
-        if ($f16Job) {
-            Stop-Job -Job $f16Job
-            Remove-Job -Job $f16Job
-    }
 }
 
-}
 
-Start-CoffeeCupAnimation 
+try {
+	$host.UI.RawUI.WindowTitle = "🍵 Brewing Coffee..."
+
+	Start-CoffeeCupAnimation 
+
+	exit 0 # success
+} catch {
+	"⚠️ Error: $($Error[0])"
+	exit 1
+}
