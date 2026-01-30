@@ -323,6 +323,7 @@ function List-CLI-Tools {
 	ListTool where		"--version"
 	ListTool whatis		"--version"
 	ListTool which		""
+	ListTool winapp		"--version"
 	ListTool winget		"--version"
 	ListTool winsat		""
 	ListTool whoami		"--version"
