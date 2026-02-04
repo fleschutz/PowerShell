@@ -35,7 +35,7 @@ function ListRepos {
 		$numCommits = (git -C "$dir" rev-list HEAD...origin/$branch --count)
 		$status = (git -C "$dir" status --short)
 		if ("$status" -eq "") { $status = "✅clean" }
-		elseif ("$status" -like " M *") { $status = "⚠️changed" }
+		elseif ("$status" -like " M *") { $status = "🚧️changed" }
 		New-Object PSObject -property @{'GIT REPOSITORY'="📂$dirName";'LATEST TAG'="$latestTag";'BRANCH'="$branch";'REMOTE URL'="$remoteURL";'STATUS'="$status ↓$numCommits"}
 	}
 }
