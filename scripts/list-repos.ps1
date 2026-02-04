@@ -8,9 +8,9 @@
 .EXAMPLE
 	PS> ./list-repos.ps1 C:\MyRepos
 	
-	REPOSITORY   LATEST TAG   BRANCH    REMOTE URL                           STATUS
-	----------   ----------   ------    ----------                           ------
-	📂cmake      v3.30.2      master    https://github.com/Kitware/CMake     ✅clean ↓0
+	GIT REPOSITORY   LATEST TAG   BRANCH    REMOTE URL                           STATUS
+	--------------   ----------   ------    ----------                           ------
+	📂cmake          v3.30.2      master    https://github.com/Kitware/CMake     ✅clean ↓0
 	...
 .LINK
 	https://github.com/fleschutz/PowerShell
@@ -36,7 +36,7 @@ function ListRepos {
 		$status = (git -C "$dir" status --short)
 		if ("$status" -eq "") { $status = "✅clean" }
 		elseif ("$status" -like " M *") { $status = "⚠️changed" }
-		New-Object PSObject -property @{'REPOSITORY'="📂$dirName";'LATEST TAG'="$latestTag";'BRANCH'="$branch";'REMOTE URL'="$remoteURL";'STATUS'="$status ↓$numCommits"}
+		New-Object PSObject -property @{'GIT REPOSITORY'="📂$dirName";'LATEST TAG'="$latestTag";'BRANCH'="$branch";'REMOTE URL'="$remoteURL";'STATUS'="$status ↓$numCommits"}
 	}
 }
 
@@ -46,7 +46,7 @@ try {
 	$null = (git --version)
 	if ($lastExitCode -ne 0) { throw "Can't execute 'git' - make sure Git is installed and available" }
 
-	ListRepos | Format-Table -property @{e='REPOSITORY';width=19},@{e='LATEST TAG';width=16},@{e='BRANCH';width=17},@{e='REMOTE URL';width=48},@{e='STATUS';width=14}
+	ListRepos | Format-Table -property @{e='GIT REPOSITORY';width=19},@{e='LATEST TAG';width=16},@{e='BRANCH';width=17},@{e='REMOTE URL';width=48},@{e='STATUS';width=14}
 	exit 0 # success
 } catch {
 	"⚠️ ERROR: $($Error[0]) (script line $($_.InvocationInfo.ScriptLineNumber))"
