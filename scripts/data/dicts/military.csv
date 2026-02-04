@@ -590,12 +590,11 @@ PLB,Personal Locator Beacon
 PM,Peacemaking
 PNGDF,Papua New Guinea Defense Force
 PO,Peace Operations
-POC,Point of Contact
-POC,Privately Owned Conveyance
+POC,"Point of Contact, Privately Owned Conveyance"
 POD,Port of Debarkation
 POE,Port of Embarkation
 POW,Prisoner of War
-PPBE,Planning, Programming, Budget, and Execution
+PPBE,"Planning, Programming, Budget, and Execution"
 PPE,personal Protective Equipment
 PPM,Personally Procured Move
 PPO,Preferred Provider Organization
@@ -617,7 +616,7 @@ R&R,Rest and Recuperation
 RA,Risk Assessment
 RAAWS,Radar Altimeter and Altitude Warning System
 RAM,"Radar Absorbing Material, Rolling Airframe Missile"
-RAST,Recovery Assist, Secure and Traverse system
+RAST,"Recovery Assist, Secure and Traverse system"
 RATO,Rocket-Assisted Take-Off
 RC,Reserve Component
 RCC,Rescue Coordination Center
@@ -652,7 +651,7 @@ RWR,Radar Warning Receiver
 SA,Surface-to-Air
 SAC,School-Age Care
 SAC,Strategic Air Command
-SAFE kit,Sexual Assault Forensic Examination Kit
+SAFE,Sexual Assault Forensic Examination (kit)
 SAM,Surface-to-Air Missile
 SAP,Special Access Program
 SAR,Search and Rescue
@@ -663,7 +662,7 @@ SCAR,Strike Coordination and Reconnaissance
 SCRA,Servicemembers Civil Relief Act
 SDT,Second Destination Transportation
 SEAD,Suppression of Enemy Air Defenses
-SEALs,SEA, Air and Land (USN)
+SEALs,"SEA, Air and Land (US Navy)"
 SENSO,SENSor Operator
 SEP,Systems Enhancement Package
 SFG,Special Forces Group
@@ -732,7 +731,7 @@ TO,Theater of Operations
 TOA,Table of Allowance
 TOF,Time of Flight
 TOT,Time on Target
-TOW,Tube-launched, Optically-tracked, Wire-Guided
+TOW,"Tube-launched, Optically-tracked, Wire-guided"
 TQ,Tactical Questioning
 TRANSCOM,Transportation Command
 TRANSEC,Transmission Security
