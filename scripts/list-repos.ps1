@@ -46,7 +46,7 @@ try {
 	$null = (git --version)
 	if ($lastExitCode -ne 0) { throw "Can't execute 'git' - make sure Git is installed and available" }
 
-	ListRepos | Format-Table -property @{e='GIT REPOSITORY';width=19},@{e='LATEST TAG';width=16},@{e='BRANCH';width=17},@{e='REMOTE URL';width=48},@{e='STATUS';width=14}
+	ListRepos | Format-Table -property @{e='GIT REPOSITORY';width=22},@{e='LATEST TAG';width=15},@{e='BRANCH';width=18},@{e='REMOTE URL';width=46},@{e='STATUS';width=14}
 	exit 0 # success
 } catch {
 	"⚠️ ERROR: $($Error[0]) (script line $($_.InvocationInfo.ScriptLineNumber))"
