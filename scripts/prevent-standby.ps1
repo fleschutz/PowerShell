@@ -1,8 +1,25 @@
-param($minutes = 3)
+<#
+.SYNOPSIS
+	Prevents the standby
+.DESCRIPTION
+	This PowerShell script prevents the standby mode by pressing <NUMLOCK> from time to time.
+.EXAMPLE
+	PS> ./prevent-standby.ps1
+.LINK
+	https://github.com/fleschutz/PowerShell
+#>
 
-$myshell = New-Object -com "Wscript.Shell"
+try {
+	$myshell = New-Object -com "Wscript.Shell"
 
-for ($i = 0; $i -lt $minutes; $i++) {
-  Start-Sleep -Seconds 60
-  $myshell.sendkeys(".")
+	while ($true) {
+		$myshell.SendKeys('{NUMLOCK}')
+		Start-Sleep -milliseconds 50
+		$myshell.SendKeys('{NUMLOCK}')
+		Start-Sleep -seconds 60
+	}
+	exit 0 # success
+} catch {
+	"⚠️ ERROR: $($Error[0]) (script line $($_.InvocationInfo.ScriptLineNumber))"
+	exit 1
 }
