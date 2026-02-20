@@ -5,7 +5,7 @@
         This PowerShell script pings devices in the local network and lists which one are up.
 .EXAMPLE
         PS> ./ping-local-devices.ps1
-	✅ Up are: epson raspi tux 
+	✅ Up: epson raspi tux 
 .LINK
         https://github.com/fleschutz/PowerShell
 .NOTES
@@ -22,7 +22,7 @@ try {
 		$queue.Enqueue( @{Host=$name;Ping=$ping;Async=$ping.SendPingAsync($name,$timeout)} )
         }
 	[string]$up = ""
-	Write-Host "✅ Up are: " -noNewline
+	Write-Host "✅ Up: " -noNewline
 	while($queue.Count -gt 0) { $obj = $queue.Dequeue()
 		try { if ($obj.Async.Wait($timeout)) {
 				if ($obj.Async.Result.Status -ne "TimedOut") { Write-Host "$($obj.Host) " -noNewline }
