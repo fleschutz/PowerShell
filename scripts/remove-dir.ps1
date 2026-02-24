@@ -25,8 +25,10 @@ try {
 	if (!(Test-Path "$path" -pathType container)) { throw "Cannot access directory at: '$path'" }
 
 	"⏳ Removing directory tree at: $path ... (please wait)"
+	$lastExitCode = 0
 	Remove-Item -force -recurse -confirm:$false $path
-	if ($lastExitCode -ne 0) { throw "'Remove-Item -force -recurse' failed with exit code $lastExitCode" }
+	if ($lastExitCode -ne 0) { throw "'Remove-Item $path' failed with exit code $lastExitCode" }
+	if (Test-Path "$path" -pathType container) { throw "Removal of '$path' failed, it's still available" }
 
 	[int]$elapsed = $stopWatch.Elapsed.TotalSeconds
 	"✅ Removed '$path' in $($elapsed)s."
