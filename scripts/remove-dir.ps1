@@ -2,13 +2,13 @@
 .SYNOPSIS
         Removes a directory
 .DESCRIPTION
-        This PowerShell script removes the given directory tree recursively.
-	NOTE: Use with care! This cannot be undone!
-.PARAMETER pathToDir
-        Specifies the file path to the directory tree
+        This PowerShell script removes the given directory. It removes all files and all subfolders in the directory!
+	IMPORTANT NOTE: Use with care! This cannot be undone!
+.PARAMETER path
+        Specifies the path to the directory tree to remove
 .EXAMPLE
         PS> ./remove-dir.ps1 C:\Temp
-	⏳ Removing directory 'C:\Temp', please wait...
+	⏳ Removing directory tree at: C:\Temp... (please wait)
 	✅ Removed 'C:\Temp\' in 9s.
 .LINK
         https://github.com/fleschutz/PowerShell
@@ -16,22 +16,22 @@
         Author: Markus Fleschutz | License: CC0
 #>
 
-param([string]$pathToDir = "")
+param([string]$path = "")
 
 try {
-	if ($pathToDir -eq "" ) { $pathToDir = Read-Host "Enter the file path to the obsolete directory" }
+	if ($path -eq "" ) { $path = Read-Host "Enter the path to the directory to remove" }
 
 	$stopWatch = [system.diagnostics.stopwatch]::startNew()
-	if (!(Test-Path "$pathToDir" -pathType container)) { throw "Cannot access directory '$pathToDir'" }
+	if (!(Test-Path "$path" -pathType container)) { throw "Cannot access directory at: '$path'" }
 
-	"⏳ Removing directory '$pathToDir' ..."
-	Remove-Item -force -recurse -confirm:$false $pathToDir
-	if ($lastExitCode -ne 0) { throw "'Remove-Item' failed with exit code $lastExitCode" }
+	"⏳ Removing directory tree at: $path ... (please wait)"
+	Remove-Item -force -recurse -confirm:$false $path
+	if ($lastExitCode -ne 0) { throw "'Remove-Item -force -recurse' failed with exit code $lastExitCode" }
 
 	[int]$elapsed = $stopWatch.Elapsed.TotalSeconds
-	"✅ Removed '$pathToDir' in $($elapsed)s."
+	"✅ Removed '$path' in $($elapsed)s."
 	exit 0 # success
 } catch {
-	"⚠️ ERROR: $($Error[0]) (script line $($_.InvocationInfo.ScriptLineNumber))"
+	"⚠️ ERROR: $($Error[0]) (in script line $($_.InvocationInfo.ScriptLineNumber))"
         exit 1
 }
