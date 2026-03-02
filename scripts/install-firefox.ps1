@@ -20,12 +20,12 @@ try {
 	"⏳ Installing Mozilla Firefox from Microsoft Store..."
 
 	& winget install --id 9NZVDKPMR9RD --source msstore --accept-package-agreements --accept-source-agreements
-	if ($lastExitCode -ne 0) { throw "Can't install Mozilla Firefox, is it already installed?" }
+	if ($lastExitCode -ne 0) { throw "Can't install Mozilla Firefox - maybe it's already installed" }
 
         [int]$elapsed = $stopWatch.Elapsed.TotalSeconds
         "✅ Mozilla Firefox installed successfully in $($elapsed)s."
 	exit 0 # success
 } catch {
-	"⚠️ ERROR: $($Error[0]) (script line $($_.InvocationInfo.ScriptLineNumber))"
+	"⚠️ ERROR: $($Error[0]) (in script line $($_.InvocationInfo.ScriptLineNumber))"
 	exit 1
 }
