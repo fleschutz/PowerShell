@@ -7,7 +7,7 @@
 	Specifies the hostname or IP address to ping (x.com by default)
 .EXAMPLE
 	PS> ./ping-host.ps1 x.com
-	⏳ Pinging...   from 'Laptop' -> 20ms -> 'x.com' (IP 104.244.42.1)
+	⏳ Pinging...  from 'Laptop' -> 20ms -> 'x.com' (IP 104.244.42.1)
 .LINK
 	https://github.com/fleschutz/PowerShell
 .NOTES
@@ -23,7 +23,7 @@ try {
 	[Threading.Tasks.Task]::WaitAll($tasks)
 	foreach($ping in $tasks.Result) {
 		if ($ping.Status -eq "Success") {
-			Write-Host "  from '$(hostname)' -> $($ping.RoundtripTime / 2.0)ms -> '$($hostname)' (IP $($ping.Address))"
+			Write-Host " from '$(hostname)' -> $($ping.RoundtripTime / 2.0)ms -> '$($hostname)' (IP $($ping.Address))"
 			exit 0 # success
 		} else {
 			Write-Host "No reply from IP $($ping.Address) for 5sec - check the connection or maybe the host is down."
