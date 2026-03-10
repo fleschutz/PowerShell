@@ -130,7 +130,7 @@ AoR,Area of Responsibility
 AP,Auto Pilot
 APIS,Aircraft Parking and Information System
 APM,Approach Path Monitor
-APP,"Approach Area, Approach ATS Unit"
+APP,"Approach, or Approach Area"
 APS,Airport Planning Standard
 APTS,Automated Personnel Tracking System
 APU,Auxiliary Power Unit
@@ -248,6 +248,7 @@ DAS,DFS Aviation Services (DFS subcompany for services outside Germany)
 DCIA,Dependent Converging Instrument Approach
 DECIDE,"Detect, Estimate, Choose, Identify, Do, and Evaluate"
 DEL,Delivery
+DEP,Departure
 DER,Departure End of Runway
 DFL,Division Flight Level 
 DFS,Deutsche Flugsicherung (ATC in Germany)
@@ -463,6 +464,7 @@ RCC,Rescue Coordination Center
 RCL,Runway Centre Line Lighting
 RCR,Runway Condition Reading
 RCS,Radar Cross Section
+RDR,Radar
 RESA,Runway End Safety Area
 RET,Rapid Exit Taxiways
 RFFS,Rescue and Fire Fighting Services
@@ -621,7 +623,6 @@ UCAV,Unmanned Combat Aerial Vehicle
 UDF,Ultra High Frequency Direction Finding
 UEI,"Units, Equipment, Installations"
 UFA,"UFA, Inc., the world's premier developer of Air Traffic Control simulation systems"
-UHF,Ultra High Frequency (300MHz to 3 GHz)
 UIR,Upper Flight Information Region
 UKCAA,United Kingdom Civil Aviation Authority
 UkSATSE,Ukranian State Air Traffic Services Enterprise
