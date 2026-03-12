@@ -49,7 +49,7 @@
 
 <details><summary>How to install PowerShell on Windows?</summary>
 
-**It's preinstalled and just needs to be enabled** (the script execution policy is *restricted* by default). Open *Windows Settings > System > Advanced > Terminal* and enable PowerShell. 
+**It's preinstalled, but disabled by default** (script execution policy is *restricted*). Open: *Windows Settings > System > Advanced > Terminal* and enable PowerShell. 
 
 **NOTE:** the group policy object (GPO) settings of your organization might disallow changes. In that case contact your system administrator for help.
 </details>
