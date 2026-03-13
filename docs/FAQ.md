@@ -14,8 +14,8 @@
 * **It's easy to learn** - see the tutorial at: https://www.guru99.com/powershell-tutorial.html.
 * **It's cross-platform** for Linux, Mac OS and Windows.
 * **It's open-source and free** - see the Github repository at: https://github.com/PowerShell/PowerShell.
-* **Automate tasks** by using PowerShell scripts.
-* **Supports modern features** such as Unicode, metadata header, try-catch-blocks, and a lot more.
+* **It supports modern features** such as Unicode, metadata header, try-catch-blocks, and a lot more.
+* **Use PowerShell scripts** to automate tasks.
 * **It's fully documented** - see the official documentation at: https://docs.microsoft.com/en-us/powershell.
 </details>
 
@@ -49,10 +49,8 @@
 
 <details><summary>How to install PowerShell on Windows?</summary>
 
-**Good news:** It's preinstalled, but not enabled yet (script execution policy is *restricted*). To change this: **open *Windows PowerShell (Admin)* console** and enter:
-```
-> Set-ExecutionPolicy RemoteSigned -Scope CurrentUser
-```
+**It's preinstalled, but disabled by default** (script execution policy is *restricted*). Open: *Windows Settings > System > Advanced > Terminal* and enable PowerShell. 
+
 **NOTE:** the group policy object (GPO) settings of your organization might disallow changes. In that case contact your system administrator for help.
 </details>
 
