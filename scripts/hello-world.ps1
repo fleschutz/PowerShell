@@ -1,8 +1,8 @@
 ﻿<#
 .SYNOPSIS
-	Sample Script
+	'Hello World' Script
 .DESCRIPTION
-	This PowerShell script is a sample script writing "Hello World" to the console.
+	This PowerShell script is a small sample script writing 'Hello World' to the console.
 .EXAMPLE
 	PS> ./hello-world.ps1
 	Hello World
