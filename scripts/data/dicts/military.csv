@@ -41,6 +41,7 @@ AFD,Automatic Feeding Device
 AFMC,Air Force Material Command
 AFN,American Forces Network
 AFV,Armored Fighting Vehicle
+AGW,Autonomous Guided Weapon
 AIFV,Armored Infantry Fighting Vehicle
 AIP,Assignment Incentive Pay
 AIRSUPREQ,Air Support Request
@@ -60,13 +61,13 @@ AMRAAM,Advanced Medium Range Air-to-Air Missile
 ANG,Air National Guard
 AOC,Air Operations Center
 AP,Armor Piercing
-APAM,Anti-Personnel, Anti-Material
+APAM,"Anti-Personnel, Anti-Material"
 APC,Armored Personnel Carrier
-APDS,Armor-Piercing, Discarding Sabot
-APDS-T,Armor-Piercing, Discarding Sabot (Tracer)
+APDS,"Armor-Piercing, Discarding Sabot"
+APDS-T,"Armor-Piercing, Discarding Sabot (Tracer)"
 APF,Appropriated Funds
-APFSDS,Armor Piercing, Fin-Stabilized, Discarding Sabot
-APHE,Armor Piercing, High-Explosive
+APFSDS,"Armor Piercing, Fin-Stabilized, Discarding Sabot"
+APHE,"Armor Piercing, High-Explosive"
 AP-T,Armor Piercing - Tracer
 ARCT,Air Refueling Control Team
 ARM,Anti-Radiation Missile
@@ -91,6 +92,7 @@ ATAS,Air-To-Air Stinger (missile)
 ATBM,Anti-Tactical Ballistic Missile
 ATCS,Air Traffic Control Section
 ATCCIS,Army Tactical Command and Control Information System
+ATGM,Anti-Tank Guided Missile
 ATGW,Anti-Tank Guided Weapon
 ATR,Anti-Tank Rifle
 AUW,All-Up Weight
@@ -116,8 +118,8 @@ BRS,Blended Retirement System
 BVR,Beyond Visual Range
 BZ,Buffer Zone
 C2,Command and Control
-C3,Command, Control and Communications
-C3I,Command, Control, Communications and Intelligence
+C3,"Command, Control and Communications"
+C3I,"Command, Control, Communications and Intelligence"
 CABG,Coronary Artery Bypass Grafting
 CAHPS,Consumer Assessment of Healthcare Providers and Systems
 CAP,Combat Air Patrol
@@ -141,7 +143,7 @@ CFE,Conventional Forces Europe
 CFL,Coordinated FireLine
 CFR,Code of Federal Regulations
 CFV,Cavalry Fighting Vehicle
-CIWS,Close-In Weapon System (US)
+CIWS,Close-In Weapon System
 CLEP,College Level Examinations Program
 CLS,Combat Life Saver
 CM,Cruise Missile
@@ -174,7 +176,7 @@ C-STARS,Centers for Sustainment of Trauma and Readiness Skills (USAF)
 CTS,Close-To-Shore
 CV,Combat Vehicle
 CV,Conventionally Powered aircraft carrier (USN)
-CVN,Attack aircraft carrier, nuclear powered (US)
+CVN,"Attack aircraft carrier, nuclear powered (US)"
 CVRT,Combat Vehicle Reconnaissance Tracked
 CVW,Carrier Air Wing
 CWC,Composite Warfare Commander
@@ -307,9 +309,9 @@ HCSDB,Health Care Survey of DoD Beneficiaries
 HD,Homeland Defense
 HDP-L,Hardship Duty Pay Locations
 HE,High Explosive
-HEAP,High Explosive, Anti-Personnel
-HEAT,High Explosive, Anti-Tank
-HEAT-FS,High Explosive, Anti-Tank - Fin Stabilized
+HEAP,"High Explosive, Anti-Personnel"
+HEAT,"High Explosive, Anti-Tank"
+HEAT-FS,"High Explosive, Anti-Tank - Fin Stabilized"
 HEC,Health Executive Committee
 HEDIS,Healthcare Effectiveness Data and Information Set
 HE-FRAG,High Explosive-Fragmentation
@@ -324,7 +326,7 @@ HMO,Health Maintenance Organization
 HOB,Height of Burst
 HOC,Humanitarian Operations Center
 HOTAS,Hands-On-Throttle-and-Stick
-HOTCC,Hands on Throttle, Collective and Cyclic
+HOTCC,"Hands on Throttle, Collective and Cyclic"
 HPT,High-Payoff Target
 HQ,Headquarter(s)
 HR,Hostage Rescue
@@ -499,13 +501,13 @@ MSP,Maritime Security Program
 MSR,Main Supply Route
 MSRRA,Military Spouse Residency Relief Act
 MTF,Medical Treatment Facility
-MWR,Morale, Welfare & Recreation
+MWR,"Morale, Welfare & Recreation"
 MyCAA,Military Spouse Career Advancement Accounts
 NAF,Nonappropriated Funds
 NAI,Named Area of Interest
 NAS,Naval Air Station
 NAVSOF,Navy Special Operations Forces
-NBC,Nuclear, Biological and Chemical
+NBC,"Nuclear, Biological and Chemical"
 NBI,Nonbattle Injury
 NCO,Non-Commissioned Officer
 NCP,Normal Cost Payments
@@ -525,7 +527,7 @@ NGFS,Naval Gunfire Support
 NIMS,National Incident Management System
 NLW,Nonlethal Weapon
 NMCS,National Military Command System
-NMCS,Not Mission Capable, Supply
+NMCS,"Not Mission Capable, Supply"
 NMS,National Military Strategy
 NOC,National Operations Center
 NOE,Nap of the Earth
@@ -788,6 +790,7 @@ WIC,"Women, Infants and Children"
 WLG,Washington Liaison Group
 WMD,Weapons of Mass Destruction
 WO,Warrant Officer
+WSMR,White Sands Missile Range ("whiz-murr")
 WSO,Weapon System Operator (or Weapon System Officer)
 XO,Executive Officer
 YOS,Years of Service

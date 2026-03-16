@@ -230,7 +230,6 @@ AGRICOLA,Agriculture Online Access
 AGS,Alaska Ground Station (LandSat)
 AGTS,Advanced Gunnery Training System
 AGU,American Geophysical Union
-AGW,Autonomous Guided Weapon
 Ah,Ampere-hour
 AH,Attack Helicopter
 aH,Attohenry
@@ -443,8 +442,6 @@ ATC,"Air Training Corps, Air Transport Command (USA, 1942-1948), Athletic Traine
 ATESS,Aerospace and Telecommunications Engineering Support Squadron
 ATF,"French Southern Territories (ISO 3166 trigram),(U.S.) Bureau of Alcohol,Tobacco,Firearms and Explosives"
 ATG,Antigua and Barbuda (ISO 3166 and FIFA trigram)
-ATGM,Anti-Tank Guided Missile
-ATGW,Anti-Tank Guided Weapon
 ATI,Allied Telesyn International,Inc.,Array Technologies Incorporated. (ATI Technologies)
 Atisbo,a Local Government Area in Nigeria named for constituent communities (Ago-Are,Tede,Irawo,Sabe,Baasi,Ofiki and Owo)
 ATK,Attack
@@ -814,7 +811,6 @@ CITES,"Convention on International Trade in Endangered Species (of Wild Fauna an
 CIV,Côte d'Ivoire (ISO 3166 trigram)
 CIVETS,"Colombia,Indonesia,Vietnam,Egypt,Turkey,South Africa (economics)"
 CIVPOP,Civilian Population
-CIWS,Close-In Weapon System
 CJ,"Criminal Justice"
 CJC,"Canadian Jewish Congress,Cold Junction Compensation"
 CJCS,Chairman of the Joint Chiefs of Staff
@@ -1202,58 +1198,57 @@ DSL,Digital Subscriber Line
 DSLR,Digital single-lens reflex (camera)
 DSM,Diagnostic and Statistical Manual of Mental Disorders
 DSN,Deep Space Network
-dsp,decessit sine prole (Latin,"died without issue"),genealogy short-hand
-DSP,Defense Standardization Program,Defense Support Program,
-dspl,decessit sine prole legitima (Latin,"died without legitimate issue")
+dsp,"decessit sine prole (Latin,'died without issue'),genealogy short-hand"
+DSP,"Defense Standardization Program, Defense Support Program"
+dspl,"decessit sine prole legitima (Latin,'died without legitimate issue')"
 DSPL,Design Specialists and Plans Language
-dspm,decessit sine prole mascula [superstite] (Latin,"died without surviving male issue" )
-dspml,decessit sine prole mascula legitima (Latin,"died without legitimate male issue")
-dspms,decessit sine prole mascula superstite (Latin,"died without surviving male issue")
-dsps,Decessit sine prole superstite (Latin,"died without surviving issue")
+dspm,"decessit sine prole mascula [superstite] (Latin,'died without surviving male issue')"
+dspml,"decessit sine prole mascula legitima (Latin,'died without legitimate male issue')"
+dspms,"decessit sine prole mascula superstite (Latin,'died without surviving male issue')"
+dsps,"Decessit sine prole superstite (Latin,'died without surviving issue')"
 DSR,Deformed Special Relativity
-DSRV,Deaf Sports Recreation Victoria,Deep Submergence Rescue Vehicle
-DSS,Digitized Sky Survey,Discarding-Sabot Shell (ammunition)
+DSRV,"Deaf Sports Recreation Victoria, Deep Submergence Rescue Vehicle"
+DSS,"Digitized Sky Survey, Discarding-Sabot Shell (ammunition)"
 DST,Daylight Saving Time
 DSTL,British Defence Science and Technology Laboratory
-dsvp,d.s.v.p. decessit sine vitae patria (Latin,"died within fathers lifetime")
+dsvp,"d.s.v.p. decessit sine vitae patria (Latin,'died within fathers lifetime')"
 DSWA,(U.S.) Defense Special Weapons Agency
 DTA,Dental Technologists Association
 DTD,Digital Terrain Data
-DTE,Data Terminal Equipment,Down To Earth
+DTE,"Data Terminal Equipment, Down To Earth"
 DTED,Digital Terrain Elevation Data ("dee-ted")
 DTG,Date-Time Group
 DTH,Direct To Home (television)
 DTI,UK Department of Trade and Industry
 DTIC,(U.S.) Defense Technical Information Center
 DTL,Diode-Transistor Logic (electronics)
-DTLOMS,Doctrine,Training,Leader development,Organization,Materiel,and Soldier (mnemonic)
-DTM,Deutsche Tourenwagen Masters (German,"German Touring Car Masters",a current motor racing series),Deutsche Tourenwagen Meisterschaft (German,"German Touring Car Championship",a defunct motor racing series)
+DTLOMS,"Doctrine,Training,Leader development,Organization,Materiel,and Soldier"
+DTM,"Deutsche Tourenwagen Masters (German,'German Touring Car Masters',a current motor racing series)"
 DTMF,Dual-tone multi-frequency signaling
 DTO,Disruptive Technology Office (was ARDA)
-DTOMLS,Doctrine,Training,Organization,Materiel,Leader and Soldier development (mnemonic)
+DTOMLS,"Doctrine,Training,Organization,Materiel,Leader and Soldier development"
 DTR,Determine The Relationship
 DTRA,Defense Threat Reduction Agency ("deet-ra")
 DTSA,(U.S.) Defense Technology Security Administration
 DU,Depleted Uranium
-DUI,Data Use Identifier,Data Use Institute,Davis Unified Ignition,Diving Unlimited International,Documento Único de Identidad,Documento Unico de Importación,Driving Under the Influence,Duke University Improv
+DUI,"Data Use Identifier,Data Use Institute,Davis Unified Ignition,Diving Unlimited International,Documento Único de Identidad,Documento Unico de Importación,Driving Under the Influence,Duke University Improv"
 DUMBO,Down Under the Manhattan Bridge Overpass (Brooklyn neighborhood)
 DUSD,(U.S.) Deputy Under-Secretary of Defense
-DV,Daily Value (FDA food guide),Deo volente (Latin,"God willing")
+DV,"Daily Value (FDA food guide),Deo volente (Latin,'God willing')"
 DVLC,UK Driver and Vehicle Licencing Centre
-dvm,decessit vita matris (Latin,"died in the lifetime of the mother")
+dvm,"decessit vita matris (Latin,'died in the lifetime of the mother')"
 DVM,Doctor of Veterinary Medicine
 DVO,Direct View Optics
 DVOM,Digital Volt-Ohm Meter
-dvp,decessit vita patris (Latin,"died in the lifetime of the father")
-DVP,various meanings (disambiguation page)
-dvu,decessit vita uxoris (Latin,"died in the lifetime of spouse")
+dvp,"decessit vita patris (Latin,'died in the lifetime of the father')"
+dvu,"decessit vita uxoris (Latin,'died in the lifetime of spouse')"
 DW,Drum Workshop
-DWI,Dance With Intensity,Danish West Indies,Diffusion-weighted imaging,Direct water injection,Disaster Welfare Inquiry,Drinking Water Inspectorate,Driving While Intoxicated/Impaired
+DWI,"Dance With Intensity,Danish West Indies,Diffusion-weighted imaging,Direct water injection,Disaster Welfare Inquiry,Drinking Water Inspectorate,Driving While Intoxicated/Impaired"
 DWIM,Do What I Mean
 DWM,Doctor Who Magazine
 DWTS,Dancing with the Stars
 DWW,Down with Webster
-DX,Dexterity (role-playing games),DeXtrorphan,Distant (radio),D-Generation X (professional wrestling stable)
+DX,"Dexterity (role-playing games),DeXtrorphan,Distant (radio),D-Generation X (professional wrestling stable)"
 DXA,Dual-energy X-ray Absorptiometry
 DXM,DeXtroMethorphan
 DY,Dahomey (ISO 3166 digram; obsolete since 1977)
@@ -1261,7 +1256,7 @@ Dy,Dysprosium
 DZ,Algeria (ISO 3166 digram)
 DZA,Algeria (ISO 3166 trigram)
 E,East
-EA,Electronic Attack,Emotions Anonymous,Engagement Area,Electronic Arts,Enrolled Agent,Environmental Assessment,Enterprise Architect,Exaampere
+EA,"Electronic Attack,Emotions Anonymous,Engagement Area,Electronic Arts,Enrolled Agent,Environmental Assessment,Enterprise Architect,Exaampere"
 EABU,Explain Acronyms Before Use
 EAC,Echelons Above Corps
 EAFUS,"Everything" Added to Food in the United States (FDA list)
@@ -1269,62 +1264,62 @@ EAPC,Euro-Atlantic Partnership Council
 EAST,Experimental Advanced Superconducting Tokamak
 EBD,Electronic Brake Distribution
 EBE,Extraterrestrial Biological Entity
-EBO,Effects Based Operations,Encyclopædia Britannica Online,European Board of Ophthalmology
+EBO,"Effects Based Operations,Encyclopædia Britannica Online,European Board of Ophthalmology"
 EBSA,Employee Benefits Security Administration
 EBW,Electron Beam Welding
 EBW,Exploding BridgeWire
 ECASS,European Centre for Analysis in the Social Sciences [1]
-ECB,England (and Wales) Cricket Board,European Central Bank
+ECB,"England (and Wales) Cricket Board, European Central Bank"
 ECBR,European Coalition for Biomedical Research
 ECCM,Electronic Counter-Counter-Measures
 ECFS,Electronic Case Filing System
 ECG,Electrocardiogram
-ECHO,Each Community Helps Others (EPA programme),Educational Concerns for Hunger Organization,European Commission Host Organization,European Commission Humanitarian aid Office,Exchange Clearing House,Expanded Characteristic Option,Explanatory Coherence by Harmony Optimization
+ECHO,"Each Community Helps Others (EPA programme),Educational Concerns for Hunger Organization,European Commission Host Organization,European Commission Humanitarian aid Office,Exchange Clearing House,Expanded Characteristic Option,Explanatory Coherence by Harmony Optimization"
 ECHR,European Court on Human Rights
 ECJ,European Court of Justice
 ECL,Emitter Coupled Logic (electronics)
-ECM,Electronic Counter-Measures,Enterprise Content Management
+ECM,"Electronic Counter-Measures, Enterprise Content Management"
 ECommHR,European Commission on Human Rights
-ECS,Emergency Contact System,Enhanced Chip Set (computing),EOSDIS Core System,Extended Chip Set (computing)
+ECS,"Emergency Contact System,Enhanced Chip Set (computing),EOSDIS Core System,Extended Chip Set (computing)"
 ECSC,European Coal and Steel Community (distant ancestor of the EU)
 ECT,ElectroConvulsive Therapy
 ECtHR,European Court of Human Rights
-ECU,Ecuador (ISO 3166 trigram),European Currency Unit (ancestor of the euro)
-ECW,Eastern Championship Wrestling/Extreme Championship Wrestling,ED[edit]
+ECU,"Ecuador (ISO 3166 trigram),European Currency Unit (ancestor of the euro)"
+ECW,Eastern Championship Wrestling/Extreme Championship Wrestling
 EDA,European Defence Agency
 EDAC,Error Detection And Correction
 EDCS,Environmental Data Coding Specification
-EDD,Earliest due date,Electron-detachment dissociation,Elena Delle Donne (American basketball player),Employment Development Department (California state agency),End-diastolic dimension,Expected Date of Delivery (pregnancy)
-EDGAR,Electronic Data Gathering,Analysis,and Retrieval (U.S. Securities and Exchange Commission filings database)
+EDD,"Earliest due date,Electron-detachment dissociation,Elena Delle Donne (American basketball player),Employment Development Department (California state agency),End-diastolic dimension,Expected Date of Delivery (pregnancy)"
+EDGAR,"Electronic Data Gathering,Analysis,and Retrieval (U.S. Securities and Exchange Commission filings database)"
 EDH,Eastman Dental Hospital
-EDS,Electronic Data Systems,Electronic Differential System
+EDS,"Electronic Data Systems, Electronic Differential System"
 EDSA,Epifanio de los Santos Avenue (a major thoroughfare in Manila with great significance to post-1980 Philippines history)
 EDT,Eastern Daylight Saving Time (UTC−4 hours)
-EDTA,Electric Drive Transportation Association,EthyleneDiamineTetraAcetic acid,EE[edit]
-EE,Estonia (ISO 3166 digram; from the country's native name of Eesti),Electrical engineering,Electrical Engineer,E&E,Escape and Evasion (training)
+EDTA,"Electric Drive Transportation Association,EthyleneDiamineTetraAcetic acid"
+EE,"Estonia (ISO 3166 digram; from the country's native name of Eesti),Electrical engineering,Electrical Engineer,E&E,Escape and Evasion (training)"
 EEC,European Economic Community (predecessor of the EU)
 EEG,ElectroEncephaloGram
 EENT,End Evening Nautical Twilight
 EEO,Equal Employment Opportunity
 EEOC,(U.S.) Equal Employment Opportunity Commission
 EEZ,Economic Exclusion Zone or Exclusive Economic Zone
-EF,Electro-focus (Canon lens mount),Entry Foyer,Exafarad
+EF,"Electro-focus (Canon lens mount),Entry Foyer,Exafarad"
 EFF,Electronic Frontier Foundation
 EFL,English as a Foreign Language
 EFM,Enterprise Feedback Management
 EFOA,European Fuel Oxygenates Association
 EFSA,European Food Safety Authority
 EFT,Electronic Fund Transfer
-EFTA,European Free Trade Area,European Free Trade Association
+EFTA,"European Free Trade Area,European Free Trade Association"
 EFV,Expeditionary Fighting Vehicle
 EG,Egypt (ISO 3166 digram)
-EGBUS,External Genitalia,Bartholin's glands,Urethra & Skene's glands
+EGBUS,"External Genitalia,Bartholin's glands,Urethra & Skene's glands"
 EGCG,EpiGalloCatechin-3-Gallate
 EGIS,Erieye Ground Interface Segment
 EGRET,Energetic Gamma-Ray Experiment Telescope
 EGY,Egypt (ISO 3166 trigram)
-EH,Exahenry,Western Sahara (ISO 3166 digram)
-EHA,Education for All Handicapped Children Act (U.S. federal legislation; since superseded by the Individuals with Disabilities Education Act),Emotional Health Anonymous
+EH,"Exahenry,Western Sahara (ISO 3166 digram)"
+EHA,"Education for All Handicapped Children Act (U.S. federal legislation; since superseded by the Individuals with Disabilities Education Act),Emotional Health Anonymous"
 EHF,Extremely High Frequency
 EHR,Equipment History Record
 Ei,Exbi
@@ -1346,63 +1341,63 @@ ELINT,Electronic Intelligence
 ELL,English Language Learner
 ELM,Edge-Localised Mode (plasma physics)
 ELO,Electric Light Orchestra
-ELP,Emerson,Lake & Palmer,European Left Party
+ELP,"Emerson,Lake & Palmer,European Left Party"
 ELSS,Emergency Life Support Stores
 EM,ElectroMagnetism/ElectroMagnetic
 Em,Exametre
 EMA,European Medicines Agency
-Embraer,Empresa Brasileira de Aeronáutica (Portuguese,"Brazilian Aeronautics Company")
-EMC,Electric Membership Corporation,Electromagnetic Compatibility,Electro-Motive Corporation,European Muon Collaboration,Evergreen Marine Corporation
+Embraer,"Empresa Brasileira de Aeronáutica (Portuguese,'Brazilian Aeronautics Company')"
+EMC,"Electric Membership Corporation,Electromagnetic Compatibility,Electro-Motive Corporation,European Muon Collaboration,Evergreen Marine Corporation"
 EMCON,(Electromagnetic) Emissions Control
-EMD,General Motors Electro-Motive Division,Engineering and Manufacturing Development,European Missile Defence
+EMD,"General Motors Electro-Motive Division,Engineering and Manufacturing Development,European Missile Defence"
 EMDG,Euro-Missile Dynamics Group
 EMDR,Eye Movement Desensitisation and Reprocessing
 EMEA,"Europe,Middle East and Africa"
-EMF,Electromotive force,Epsom Mad Funkers (1990s-2000s indie dance band)
+EMF,"Electromotive force,Epsom Mad Funkers (1990s-2000s indie dance band)"
 EMG,ElectroMyoGraph
-EMO,Emergency Measures Organisation, Emotional
+EMO,Emergency Measures Organisation
 EMP,ElectroMagnetic Pulse
 EMS,Emergency Medical Services
 EMT,Emergency Medical Technician
-EMU,Electric Multiple Unit,a method of connecting self-propelled railway vehicles together to form a train under the control of one driver.
+EMU,Electric Multiple Unit
 EN,"Corps of Engineers,Exanewton"
 ENCODE,Encyclopedia of DNA Elements (human genome data project)
 ENE,East North-East
 ENG,England (FIFA trigram; not eligible for an ISO 3166 or IOC trigram)
-ENSATT,École nationale supérieure des arts et techniques de théâtre (French,"Higher National School of Theatrical Arts and Techniques")
-ENT,Ear,Nose and Throat
+ENSATT,"École nationale supérieure des arts et techniques de théâtre (French,'Higher National School of Theatrical Arts and Techniques')"
+ENT,"Ear,Nose and Throat"
 ENTEC,Euro NATO Training Engineer Centre
 ENVL,Envelope
 ENY,Enemy
-EO,Electro-Optics,Engagement Operations
+EO,"Electro-Optics,Engagement Operations"
 EOD,Explosive Ordnance Disposal
 EOG,ElectroOculoGraphy
 EOM,End of Message
-EOS,Earth Observation Satellite, Electro-Optical System,Canon's autofocusing system for film and digital SLR cameras,Electrophoresis Operations in Space,a space manufacturing project of the McDonnell Douglas Astronautics Company
+EOS,"Earth Observation Satellite, Electro-Optical System,Canon's autofocusing system for film and digital SLR cameras,Electrophoresis Operations in Space,a space manufacturing project of the McDonnell Douglas Astronautics Company"
 EOSAT,Earth Observation Satellite
 EOSDIS, Earth Observation Satellite Data and Information System
-EOTS,Electro-Optical Tactical Sensor, Eye Of The Storm (World of Warcraft)
+EOTS,"Electro-Optical Tactical Sensor, Eye Of The Storm (World of Warcraft)"
 EP,European Parliament
 EP,Extended play
-EPA,EicosaPentaenoic Acid,Environmental Protection Agency
+EPA,"EicosaPentaenoic Acid,Environmental Protection Agency"
 EPCOT,Experimental Prototype Community Of Tomorrow
-EPCR,Endothelial protein C receptor,European Professional Club Rugby
-EPFL,École polytechnique fédérale de Lausanne (French,"Lausanne Federal Institute of Technology")
+EPCR,"Endothelial protein C receptor,European Professional Club Rugby"
+EPFL,"École polytechnique fédérale de Lausanne (French,'Lausanne Federal Institute of Technology')"
 EPGS,EOS Polar Ground Sites
 EPIRB, Emergency Position Indicating Radio Beacon
 EPL,English Premier League
 EPLRS,Enhanced Position Location Reporting System ("ee-plarz")
-EPO,Ellinikí Podosferikí Omospondía (Greek Ελληνική Ποδοσφαιρική Ομοσπονδία,translated as "Hellenic Football Federation"),European Patent Organisation or its main organ,the European Patent Office,Erythropoietin
+EPO,"Ellinikí Podosferikí Omospondía (Greek Ελληνική Ποδοσφαιρική Ομοσπονδία,translated as 'Hellenic Football Federation'),European Patent Organisation or its main organ,the European Patent Office,Erythropoietin"
 EPOS,Electronic Point Of Sale
 EPPA,Employee Polygraph Protection Act
 EPR,European Pressurised [Nuclear] Reactor
-EPW,Earth Penetrator Weapon/Warhead,Economic and Political Weekly (Indian publication),Enemy Prisoner of War,EQ[edit]
+EPW,"Earth Penetrator Weapon/Warhead,Economic and Political Weekly (Indian publication),Enemy Prisoner of War"
 EQ,Emotional Quotient
-EQG,Equatorial Guinea (FIFA trigram,but not IOC or ISO 3166)
-ER,Emergency Room,Eritrea (ISO 3166 digram)
+EQG,"Equatorial Guinea (FIFA trigram,but not IOC or ISO 3166)"
+ER,"Emergency Room, Eritrea (ISO 3166 digram)"
 Er,Erbium
-ERA,Earned run average,Engineering Research Associates,Equal Rights Amendment,English Racing Automobiles,European Railway Agency
-ERCIM, European Research Consortium for Informatics and Mathematics
+ERA,"Earned run average,Engineering Research Associates,Equal Rights Amendment,English Racing Automobiles,European Railway Agency"
+ERCIM,European Research Consortium for Informatics and Mathematics
 ERI,Eritrea (ISO 3166 trigram)
 ERLAWS,Eastern Ruapehu Lahar Alarm and Warning System
 EROS,Earth Resources Observation System
@@ -1411,7 +1406,7 @@ ERR,Eesti Rahvusringhääling
 ERS,Earth Resources Survey
 ERTS,Earth Resources Technology Satellite (became Landsat)
 ERV,Endogenous RetroVirus
-Es,Einsteinium,Exasecond
+Es,"Einsteinium,Exasecond"
 ES,"Electronic warfare Support,Exasiemens,Spain (ISO 3166 digram; from the country's native name of España)"
 ESA,"Electro-Spark Alloying, Endangered Species Act, European Space Agency"
 ESC,"Embryonic Stem Cell, Electronic Stability Control"
@@ -1422,15 +1417,15 @@ ESL,English as a Second Language
 ESM,Electronic warfare Support Measures
 ESO,European Southern Observatory
 ESOL,English for Speakers of Other Languages
-ESP,Electronic Stability Program,Extra-sensory perception,Spain (ISO 3166 trigram)
-ESPGHAN,European Society for Paediatric Gastroenterology,Hepatology and Nutrition
+ESP,"Electronic Stability Program,Extra-sensory perception,Spain (ISO 3166 trigram)"
+ESPGHAN,"European Society for Paediatric Gastroenterology,Hepatology and Nutrition"
 ESPN,Entertainment and Sports Programming Network
 EST,"Eastern Standard Time (UTC−5 hours), Estonia (ISO 3166 trigram)"
 ESU,Emergency Services Unit
 ESV,Engineer Support Vehicle
 ET,Ethiopia (ISO 3166 digram)
-ETA,Estimated Time of Arrival,Euzkadi Ta Azkatasuna ("etta",Basque,"Basque Homeland and Freedom"),et al.,et alii/aliae/alia (Latin,"and others")
-ETF,Emergency Task Force (a special police unit,also jocularly said to stand for Extra-Thick Fuzz)
+ETA,"Estimated Time of Arrival,Euzkadi Ta Azkatasuna ('etta',Basque,'Basque Homeland and Freedom'),et al.,et alii/aliae/alia (Latin,'and others')"
+ETF,Emergency Task Force
 ETH,Ethiopia (ISO 3166 trigram)
 ETI,Extra-Terrestrial Intelligence
 ETLA,Extended TLA
@@ -1443,7 +1438,7 @@ EUUSA,European Union and United States of America
 EV,Exavolt
 EVA,"Earned Value Analysis, Economic value added, Ethylene-Vinyl Acetate, Extra-Vehicular Activity"
 EVIL,Electronic viewfinder (with) interchangeable lens (a type of digital camera)
-EW,Electronic Warfare,Exawatt
+EW,"Electronic Warfare,Exawatt"
 EWSD,"Elektronisches Wählsystem Digital (German,'Electronic Digital Switching System')"
 EWTN,Eternal Word Television Network
 Exatesla,Extra Terrestrial
@@ -4953,7 +4948,6 @@ WSDL,Web Services Description Language
 WSJ,(The) Wall Street Journal
 WSL,"White Star Line (shipping company),Women's Super League,used to describe England's top women's association football league and top women's rugby union competition,Workers' Socialist League (UK political party)"
 WSM,Samoa (ISO 3166 trigram; from Western Samoa),Winchester Short Magnum (family of rifle cartridges)
-WSMR, White Sands Missile Range ("whiz-murr")
 WSROC,Western Sydney Regional Organisation of Councils
 WSSM,Winchester Super Short Magnum (family of rifle cartridges)
 WSTC,Women Signallers Territorial Corps (World War II UK)
