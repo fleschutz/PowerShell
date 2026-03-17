@@ -43,12 +43,12 @@ try {
 			for ($i=0; $i -lt $BTDevices.Count; $i++) {
 				('{0,5} - {1} ({2}/{3}/{4})' -f ($i+1), $BTDevices[$i].FriendlyName, $BTDevices[$i].Status, $BTDevices[$i].Class, $BTDevices[$i].Address) | Write-Host
 			}
-			$selected = Read-Host "`nSelect a device to remove (0 to Exit)"
+			$selected = Read-Host "`nPlease select a device to remove (0=exit)"
 			If ([int]$selected -in 1..$BTDevices.Count) {
-				'Removing device: {0}' -f $BTDevices[$Selected-1].FriendlyName | Write-Host
+				'Removing device {0}...' -f $BTDevices[$Selected-1].FriendlyName | Write-Host
 				$Result = $BTR::Unpair($BTDevices[$Selected-1].Address)
 				If (!$Result) {
-					"Device removed successfully." | Write-Host
+					"✅ Bluetooth device removed successfully." | Write-Host
 				} Else {
 					("Sorry, an error occured. Return was: {0}" -f $Result) | Write-Host
 				}
