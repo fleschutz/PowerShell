@@ -22,7 +22,7 @@ param([string]$remoteHost = "")
 try {
 	if ($remoteHost -eq "") {
 		$remoteHost = Read-Host "Enter the remote hostname or IP address"
-		$remoteUser = Read-Host "Enter the username at $remoteHost"
+		$remoteUser = Read-Host "Enter your username at $remoteHost"
 	} elseif ($IsLinux) {
 		$remoteUser = $(whoami)
 	} else {
