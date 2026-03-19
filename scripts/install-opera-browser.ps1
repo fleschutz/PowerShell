@@ -5,6 +5,8 @@
 	This PowerShell script installs Opera Browser from Microsoft Store.
 .EXAMPLE
 	PS> ./install-opera-browser.ps1
+	⏳ Installing Opera from Microsoft Store...
+        ✅ Opera installed successfully in 23s.
 .LINK
 	https://github.com/fleschutz/PowerShell
 .NOTES
@@ -14,12 +16,14 @@
 #requires -version 5.1
 
 try {
-	"Installing Opera Browser, please wait..."
+	$stopWatch = [system.diagnostics.stopwatch]::startNew()
+	"⏳ Installing Opera from Microsoft Store..."
 
 	& winget install "Opera Browser" --source msstore --accept-package-agreements --accept-source-agreements
 	if ($lastExitCode -ne 0) { throw "'winget install' failed" }
 
-	"Opera Browser installed successfully."
+        [int]$elapsed = $stopWatch.Elapsed.TotalSeconds
+        "✅ Opera installed successfully in $($elapsed)s."
 	exit 0 # success
 } catch {
 	"⚠️ ERROR: $($Error[0]) (script line $($_.InvocationInfo.ScriptLineNumber))"
