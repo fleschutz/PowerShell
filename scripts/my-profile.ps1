@@ -1,7 +1,5 @@
 ﻿# MY POWERSHELL PROFILE 
-
-# USER GREETING
-Write-Host "✨ Welcome to $(hostname)'s PowerShell - type 'FAQ' for help." -foregroundColor green
+Write-Host "✨ Welcome to $(hostname)'s PowerShell, just type '??' for assistance." -foregroundColor green
 
 # WINDOW TITLE
 if ($IsLinux) { $username = $(whoami) } else { $username = $env:USERNAME }
@@ -12,7 +10,7 @@ function prompt { Write-Host "`n➤ " -noNewline -foregroundColor yellow; return
 
 # ALIASES
 Set-Alias -name enter -value enter-host.ps1
-Set-Alias -name FAQ -value write-help.ps1
+Set-Alias -name ?? -value write-help.ps1
 Set-Alias -name ll -value Get-ChildItem		# ll = list folder (long format)
 Del alias:ls -force -errorAction SilentlyContinue 
 Set-Alias -name ls -value list-folder.ps1	# ls = list folder (short format)
