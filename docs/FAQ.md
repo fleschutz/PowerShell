@@ -21,7 +21,7 @@
 
 <details><summary>How to learn PowerShell?</summary>
 
-* Please find **Tutorialas** at: https://www.guru99.com/powershell-tutorial.html
+* Please find **Tutorials** at: https://www.guru99.com/powershell-tutorial.html
 * Or visit **Video Tutorials** at: https://www.youtube.com/results?search_query=PowerShell
 * There's the **PowerShell Guide** at: https://powershellguide.com/PowerShell/Guide
 * And a **Cheat Sheet** at:** [PowerShell/Docs/cheat-sheet.md](cheat-sheet.md)
