@@ -21,10 +21,11 @@
 
 <details><summary>How to learn PowerShell?</summary>
 
-* **Please find tutorials at:** https://www.guru99.com/powershell-tutorial.html
-* **Video tutorials** can be found at: https://www.youtube.com/results?search_query=PowerShell
-* **There's a cheat sheet at:** [PowerShell/Docs/cheat-sheet.md](cheat-sheet.md)
-* **And the official PowerShell documentation at:** https://docs.microsoft.com/en-us/powershell/
+* Please find **Tutorials** at: https://www.guru99.com/powershell-tutorial.html
+* Or visit **Video Tutorials** at: https://www.youtube.com/results?search_query=PowerShell
+* There's the **PowerShell Guide** at: https://powershellguide.com/PowerShell/Guide
+* And a **Cheat Sheet** at:** [PowerShell/Docs/cheat-sheet.md](cheat-sheet.md)
+* The official **PowerShell Documentation** is at: https://docs.microsoft.com/en-us/powershell/
 </details>
 
 <details><summary>How to install PowerShell on Linux?</summary>
