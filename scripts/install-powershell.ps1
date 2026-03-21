@@ -253,6 +253,7 @@ function Add-PathTToSettings {
     $Key.SetValue("PATH", $NewPathValue, $PathValueKind)
 }
 
+$stopWatch = [system.diagnostics.stopwatch]::startNew()
 Write-Host "⏳ (1/6) Querying platform... " -noNewline
 if ($IsLinux) {
     $platform = (uname -m)
@@ -522,12 +523,13 @@ try {
         }
     }
 
+    [int]$elapsed = $stopWatch.Elapsed.TotalSeconds
     if (-not $UseMSI) {
-        Write-Host "✅ PowerShell $release installed at $Destination" -noNewline
+        Write-Host "✅ PowerShell $release installed at $Destination in $($elapsed)s" -noNewline
         if ($Destination -eq $PSHOME) {
             Write-Host " - Please restart pwsh now."
         } else {
-	    Write-Host " "
+	    Write-Host "."
 	}
     }
 } finally {
