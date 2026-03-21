@@ -27,7 +27,7 @@ Write-Host " (__)  \___/ |_____||_|\_)      |_|    \___/   \_/\_/  |____)|_|\_)(
 Write-Host ""
 White "█████████████████████████████████████ Version: $($PSVersionTable.PSVersion) $($PSVersionTable.PSEdition) Edition`n"
 White "█████████████████████████████████████`n"
-White "█████████████████████████████████████ Modules: $((Get-Module).Count), more at: "; Blue "https://www.powershellgallery.com`n"
+White "█████████████████████████████████████ Modules: $((Get-Module).Count), find more at: "; Blue "https://www.powershellgallery.com`n"
 White "█████████████████████████████████████`n"
 White "████ ▄▄▄▄▄ █▀ █▀▀█▀▀  ▄▄██ ▄▄▄▄▄ ████ Guide: "; Blue "https://powershellguide.com/PowerShell/Guide`n"
 White "████ █   █ █▀ ▄ █▀ ▀ ▀▄█ █ █   █ ████`n"
