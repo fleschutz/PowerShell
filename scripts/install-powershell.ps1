@@ -254,7 +254,7 @@ function Add-PathTToSettings {
 }
 
 $stopWatch = [system.diagnostics.stopwatch]::startNew()
-Write-Host "⏳ (1/6) Querying platform... " -noNewline
+Write-Host "⏳ (1/6) Querying platform...   " -noNewline
 if ($IsLinux) {
     $platform = (uname -m)
     if ($platform -eq "x86_64") { $architecture = "x64" }
@@ -360,7 +360,7 @@ try {
             tar zxf $packagePath -C $contentPath
         }
     } else {
-        Write-Host "⏳ (2/6) Querying infos from https://raw.githubusercontent.com ..."
+        Write-Host "⏳ (2/6) Querying https://raw.githubusercontent.com ..."
         $metadata = Invoke-RestMethod https://raw.githubusercontent.com/PowerShell/PowerShell/master/tools/metadata.json
         if ($Preview) {
             $release = $metadata.PreviewReleaseTag -replace '^v'
@@ -383,7 +383,7 @@ try {
         } elseif ($IsMacOSEnv) {
             $packageName = "powershell-${release}-osx-${architecture}.tar.gz"
         }
-	Write-Host "         Latest release is $release for $architecture (package name: $packageName)"
+	Write-Host "         Latest available release is $release for $architecture (package: $packageName)"
 
         $downloadURL = "https://github.com/PowerShell/PowerShell/releases/download/v${release}/${packageName}"
         Write-Host "⏳ (3/6) Loading $downloadURL"
