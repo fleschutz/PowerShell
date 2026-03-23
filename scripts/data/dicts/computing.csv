@@ -72,7 +72,6 @@ TERM,MEANING
 802.11,Wireless LAN
 8B10BLF,8 Byte 10 Byte Local Fiber
 A+,A Plus
-A.I.,Airborne Internet
 A/m,"Oe, oersted ampere per meter"
 A11Y,Accessibility
 AA,modem lights
@@ -647,8 +646,7 @@ CSO,Chief Strategy Officer
 CSP,Commerce Service Provider
 CSR,"Certificate Signing Request, Carrier Sensitive Routing, corporate social responsibility"
 CSS,"Cascading Style Sheets, Content Scrambling System, customer self-service, customer service and support"
-CSV,Cluster Shared Volumes
-CSV,Comma Separated Values (a file format)
+CSV,"Comma-separated Values (a file format), Cluster Shared Volumes"
 CTC,click-to-talk
 CTC,community technology center
 CTCI,Computer-to-computer interface
@@ -662,16 +660,16 @@ CTO,Configure To Order
 CTOps,team counterthreat operations team
 CTP,Capability To Promise
 CTP,CloudTrust Protocol
-CTP,common test platform
+CTP,Common Test Platform
 CTR,clickthrough rate
-CUE,carbon usage effectiveness
+CUI,Conversational User Interface
 CULV,consumer ultra-low voltage
 CVC,Calibrated Vectored Cooling
 CVE,Common Vulnerabilities and Exposures
-CVO,chief visionary officer
+CVO,Chief Visionary Officer
 CVS,Concurrent Versions System
-CVV,card verification value
-CWDM,coarse wavelength division multiplexing
+CVV,Card Verification Value
+CWDM,Coarse Wavelength Division Multiplexing
 CWE,Common Weakness Enumeration
 CWF,common working file
 CWNP,Certified Wireless Networking Professional
@@ -679,12 +677,10 @@ CX,consumer experience
 CXF,Credential Exchange Format
 CXO,chief experience officer
 CXP,Credential Exchange Protocol
-D-AMPS,Digital-Advanced Mobile Phone Service
-D-VHS,Digital Video Home System
 D2D,Disk to Disk
 D2D2C,Disk to Disk to Cloud
 D2D2T,Disk to Disk to Tape
-DA,data analytics
+DA,Data Analytics
 DAA,Data Access Arrangement
 DaaS,Desktop as a Service
 DAB,Digital Audio Broadcasting
@@ -1288,7 +1284,7 @@ GTAG,Global Tag
 gTLD,generic top-level domain name
 GTM,strategy go-to-market strategy
 GUA,graphical password or graphical user authentication 
-GUI,Graphical User Interface
+GUI,Graphical User Interface ("goo-ey")
 GUID,Globally Unique Identifier (see also UUID)
 GUM,Global Update Manager
 GWAC,governmentwide acquisition contract
