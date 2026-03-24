@@ -16,7 +16,7 @@
 * **It's open-source and free** - see the Github repository at: https://github.com/PowerShell/PowerShell.
 * **It supports modern features** such as Unicode, metadata header, try-catch-blocks, and a lot more.
 * **Use PowerShell scripts** to automate tasks.
-* **It's fully documented** - see the official documentation at: https://docs.microsoft.com/en-us/powershell.
+* **And it's fully documented** - see the official documentation at: https://docs.microsoft.com/en-us/powershell.
 </details>
 
 <details><summary>How to learn PowerShell?</summary>
