@@ -24,7 +24,7 @@
 * Please find **Tutorials** at: https://www.guru99.com/powershell-tutorial.html
 * Or visit **Video Tutorials** at: https://www.youtube.com/results?search_query=PowerShell
 * There's the **PowerShell Guide** at: https://powershellguide.com/PowerShell/Guide
-* And a **Cheat Sheet** at:** [PowerShell/Docs/cheat-sheet.md](cheat-sheet.md)
+* And a **Cheat Sheet** at: [PowerShell/Docs/cheat-sheet.md](cheat-sheet.md)
 * The official **PowerShell Documentation** is at: https://docs.microsoft.com/en-us/powershell/
 </details>
 
