@@ -55,13 +55,13 @@
 **NOTE:** the group policy object (GPO) settings of your organization might disallow changes. In that case contact your system administrator for help.
 </details>
 
-<details><summary>Which PowerShell version to use?</summary>
+<details><summary>Which PowerShell version is recommended?</summary>
 
-* **PowerShell up to 2.0** is out-dated and will be removed in newer Windows releases.
-* **PowerShell 5.1** is preinstalled on Windows 10 or 11.
-* **PowerShell 7.5.4** is the very latest (as of December 2025), but needs to be installed manually.
-* See also the **version history** at: https://github.com/PowerShell/PowerShell/releases
-* **Scripts** should specify the required version, e.g.: `#Requires -Version 5` (it also helps to identify out-dated scripts).  
+* **Versions up to 2.0** are out-dated and will be removed in newer Windows releases.
+* **Version 5.1** is preinstalled on Windows 10 or 11 and the standard one.
+* **Version 7.6.0** is the very latest (as of March 2026), but needs to be installed manually.
+* See the **Version History** for details at: https://github.com/PowerShell/PowerShell/releases
+* **Scripts** should specify the required version, e.g.: `#Requires -Version 5` (and this also helps to identify out-dated scripts).  
 </details>
 
 <details><summary>How to safely use PowerShell scripts?</summary>
