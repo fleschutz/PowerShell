@@ -331,8 +331,9 @@ Invoke-RestMethod @Params                                   # Call a REST API, u
 
 More Information
 ----------------
-* PowerShell documentation: https://docs.microsoft.com/en-us/powershell
 * Tutorials: https://www.guru99.com/powershell-tutorial.html
 * Video tutorials: https://www.youtube.com/results?search_query=PowerShell
+* PowerShell Guide: https://powershellguide.com/PowerShell/Guide
 * FAQ's: https://github.com/fleschutz/PowerShell/blob/main/docs/FAQ.md
 * 600+ sample scripts: https://github.com/fleschutz/PowerShell
+* Official PowerShell documentation: https://docs.microsoft.com/en-us/powershell
