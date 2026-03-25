@@ -4,10 +4,10 @@
 .DESCRIPTION
 	This PowerShell script measures the ping roundtrip times from the local computer to 10 Internet servers.
 .PARAMETER hosts
-	Specifies the hosts to ping, seperated by commata (10 Internet servers by default)
+	Specifies the hosts to ping, seperated by commata (10 popular Internet servers by default)
 .EXAMPLE
 	PS> ./ping-internet.ps1
-	✅ Internet ping at 12ms (excellent, 9...18ms range)
+	✅ Internet ping at 12ms (9...18ms range, excellent)
 .LINK
 	https://github.com/fleschutz/PowerShell
 .NOTES
@@ -43,13 +43,13 @@ try {
 	}
 	[float]$speed = [math]::round([float]$avg / [float]$success, 1)
 	if ($speed -lt 50) {
-		Write-Host "✅ Internet ping at $($speed)ms (excellent, $min...$($max)ms range)"
+		Write-Host "✅ Internet ping at $($speed)ms ($min...$($max)ms range, excellent)"
 	} elseif ($speed -lt 100) {
-		Write-Host "✅ Internet ping at $($speed)ms (good, $min...$($max)ms range)"
+		Write-Host "✅ Internet ping at $($speed)ms ($min...$($max)ms range, good)"
 	} elseif ($speed -lt 200) {
-		Write-Host "✅ Internet ping at $($speed)ms (fair, $min...$($max)ms range)"
+		Write-Host "✅ Internet ping at $($speed)ms ($min...$($max)ms range, fair)"
 	} else {
-		Write-Host "✅ Internet ping at $($speed)ms (slow, $min...$($max)ms range)"
+		Write-Host "✅ Internet ping at $($speed)ms ($min...$($max)ms range, slow)"
 	}
 	exit 0 # success
 } catch {
