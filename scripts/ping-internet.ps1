@@ -31,15 +31,27 @@ try {
 		if ($latency -lt $min) { $min = $latency }
 		if ($latency -gt $max) { $max = $latency }
 	}
-	[int]$loss = $total - $success
 	if ($success -eq 0) {
-		Write-Host "⚠️ Internet offline (100% ping loss)"
-	} elseif ($loss -gt 0) {
+		Write-Host "⚠️ No Internet (100% ping loss)"
+		exit 1
+	}
+	if ($success -ne $total) {
+		[int]$loss = $total - $success
 		[float]$speed = [math]::round([float]$avg / [float]$success, 1)
-		Write-Host "✅ Online with $loss/$total ping loss and $($min)...$($max)ms latency - $($speed)ms average"
+		Write-Host "⚠️ Internet with $loss/$total ping loss and $($speed)ms latency ($($min)...$($max)ms range)"
+		exit 1
+	}
+	[float]$speed = [math]::round([float]$avg / [float]$success, 1)
+	if ($speed -lt 20) {
+		Write-Host "✅ Internet ping at $($speed)ms (exceptional, $min...$($max)ms range)"
+	} elseif ($speed -lt 50) {
+		Write-Host "✅ Internet ping at $($speed)ms (excellent, $min...$($max)ms range)"
+	} elseif ($speed -lt 100) {
+		Write-Host "✅ Internet ping at $($speed)ms (good, $min...$($max)ms range)"
+	} elseif ($speed -lt 200) {
+		Write-Host "✅ Internet ping at $($speed)ms (fair, $min...$($max)ms range)"
 	} else {
-		[float]$speed = [math]::round([float]$avg / [float]$success, 1)
-		Write-Host "✅ Internet ping is $($speed)ms ($min...$($max)ms range)"
+		Write-Host "✅ Internet ping at $($speed)ms (poor, $min...$($max)ms range)"
 	}
 	exit 0 # success
 } catch {
