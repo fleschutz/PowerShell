@@ -307,6 +307,7 @@ function List-CLI-Tools {
 	ListTool timeout	""
 	ListTool top		"--version"
 	ListTool tracert	""
+	ListTool true		"--version"
 	ListTool tskill		""
 	ListTool typeperf	""
 	ListTool tzsync		"--version"
