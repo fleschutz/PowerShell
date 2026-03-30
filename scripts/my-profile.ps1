@@ -1,5 +1,6 @@
 ﻿# MY POWERSHELL PROFILE 
-Write-Host "✨ Welcome to $(hostname)'s PowerShell, type '??' for assistance." -foregroundColor green
+Write-Host ">_" -foregroundColor white -backgroundColor blue -noNewline
+Write-Host " Welcome to $(hostname)'s PowerShell" -foregroundColor green
 
 # WINDOW TITLE
 if ($IsLinux) { $username = $(whoami) } else { $username = $env:USERNAME }
