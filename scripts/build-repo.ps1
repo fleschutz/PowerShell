@@ -11,7 +11,7 @@
 	PS> ./build-repo.ps1 C:\Repos\ninja
 	⏳ Configuring CMake by executing 'cmake .'...
 	...
-	✅ Repo 'ninja' built successfully in 47s, results at: 📂C:\Repos\ninja\_x86_64_builds
+	✅ Repo 'ninja' built in 47s, results at: 📂C:\Repos\ninja\_x86_64_builds
 .LINK
 	https://github.com/fleschutz/PowerShell
 .NOTES
@@ -174,9 +174,9 @@ try {
 	$dirName = (Get-Item "$path").Name
 	[int]$elapsed = $stopWatch.Elapsed.TotalSeconds
 	if ($global:results -eq "") {
-		"✅ Repo '$dirName' built successfully in $($elapsed)s."
+		"✅ Repo '$dirName' built in $($elapsed)s."
 	} else {
-		"✅ Repo '$dirName' built successfully in $($elapsed)s, results at: 📂$($global:results)"
+		"✅ Repo '$dirName' built in $($elapsed)s, results at: 📂$($global:results)"
 	}
 	exit 0 # success
 } catch {
