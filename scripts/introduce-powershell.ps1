@@ -46,7 +46,7 @@ try {
 	& "$PSScriptRoot/write-typewriter.ps1" "Want a cheat sheet? See: https://github.com/fleschutz/PowerShell/blob/master/docs/cheat-sheet.md" 25
 	""
 	Write-Host " 🔷 " -noNewline
-	& "$PSScriptRoot/write-typewriter.ps1" "Got questions? See the FAQ at: https://github.com/fleschutz/PowerShell/blob/master/docs/FAQ.md" 25
+	& "$PSScriptRoot/write-typewriter.ps1" "Got questions? See the FAQs at: https://github.com/fleschutz/PowerShell/blob/master/docs/FAQs.md" 25
 	""
 	Write-Host " 🔷 " -noNewline
 	& "$PSScriptRoot/write-typewriter.ps1" "Want to support and donate? Just follow: https://www.paypal.com/paypalme/Fleschutz" 25
