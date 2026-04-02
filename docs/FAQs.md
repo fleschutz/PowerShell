@@ -1,5 +1,5 @@
-![](powershell_black_icon_64x64.png) PowerShell FAQ
-===================================================
+![](powershell_black_icon_64x64.png) PowerShell FAQs
+====================================================
 
 <sub>(click to expand)</sub>
 
