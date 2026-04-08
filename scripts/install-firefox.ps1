@@ -6,7 +6,7 @@
 .EXAMPLE
 	PS> ./install-firefox.ps1
 	⏳ Installing Mozilla Firefox from Microsoft Store...
-        ✅ Mozilla Firefox installed successfully in 25s.
+	✅ Mozilla Firefox installed successfully in 25s.
 .LINK
 	https://github.com/fleschutz/PowerShell
 .NOTES
@@ -16,14 +16,14 @@
 #requires -version 5.1
 
 try {
-	$stopWatch = [system.diagnostics.stopwatch]::startNew()
 	"⏳ Installing Mozilla Firefox from Microsoft Store..."
+	$stopWatch = [system.diagnostics.stopwatch]::startNew()
 
 	& winget install --id 9NZVDKPMR9RD --source msstore --accept-package-agreements --accept-source-agreements
 	if ($lastExitCode -ne 0) { throw "Can't install Mozilla Firefox - maybe it's already installed" }
 
-        [int]$elapsed = $stopWatch.Elapsed.TotalSeconds
-        "✅ Mozilla Firefox installed successfully in $($elapsed)s."
+	[int]$elapsed = $stopWatch.Elapsed.TotalSeconds
+	"✅ Mozilla Firefox installed successfully in $($elapsed)s."
 	exit 0 # success
 } catch {
 	"⚠️ ERROR: $($Error[0]) (in script line $($_.InvocationInfo.ScriptLineNumber))"
