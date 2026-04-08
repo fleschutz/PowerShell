@@ -22,7 +22,7 @@ try {
 	& winget install --id Google.Chrome --accept-package-agreements --accept-source-agreements
 	if ($lastExitCode -ne 0) { throw "Can't install Google Chrome - maybe it's already installed" }
 
-        [int]$elapsed = $stopWatch.Elapsed.TotalSeconds
+	[int]$elapsed = $stopWatch.Elapsed.TotalSeconds
 	"✅ Google Chrome installed successfully in $($elapsed)s."
 	exit 0 # success
 } catch {
