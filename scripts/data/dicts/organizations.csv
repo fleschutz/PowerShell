@@ -15,7 +15,7 @@ BND,Bundesnachrichtendienst (Germany)
 BVD,"Bradley, Voorhees, and Day"
 CERN,European Organization for Nuclear Research
 CIA,Central Intelligence Agency (USA)
-CISA,Cybersecurity Insurance and Security Agency (USA)
+CISA,Cybersecurity Infrastructure and Security Agency (USA)
 CPUC,California Public Utilities Commission
 DHS,Department of Homeland Security (USA)
 DOC,Department of Commerce (USA)
@@ -31,7 +31,7 @@ DOL,Department of Labor (USA)
 DOS,Department of State (USA)
 DOT,Department of Transportation (USA)
 EASA,European Aviation Safety Agency
-ED,U.S. Department of Education
+ED,Department of Education (USA)
 ESA,European Space Agency
 ESPN,Entertainment and Sports Programming Network
 FAO,Food and Agriculture Organization
@@ -40,12 +40,13 @@ FDA,Food and Drug Administration (USA)
 FIFA,Fédération Internationale de Football Association
 GEICO,Government Employees Insurance Company
 H&M,Hennes and Mauritz
-HHS,U.S. Department of Health and Human Services
+HHS,Department of Health and Human Services (USA)
 HRW,Human Rights Watch
 HSBC,Hongkong and Shanghai Banking Corporation
-HUD,U.S. Department of Housing and Urban Development
+HUD,Department of Housing and Urban Development (USA)
 IBM International Business Machines
 ICC,International Cricket Council
+ICE,Immigration and Customs Enforcement (USA)
 ICI,Imperial Chemical Industries
 ICJ,International Court of Justice
 IMF,International Monetary Fund
@@ -62,9 +63,9 @@ MILF,Moro Islamic Liberation Front
 NASA,National Aeronautics and Space Administration
 NATO,North Atlantic Treaty Organization
 NBC,National Broadcasting Company
-NIST,U.S. National Institute of Standards and Technology
+NIST,National Institute of Standards and Technology (USA)
 NIWA,National Institute of Water and Atmospheric Research Limited
-NHTSA,U.S. National Highway Traffic Safety Administration
+NHTSA,National Highway Traffic Safety Administration (USA)
 NSA,U.S. National Security Agency
 NYPD,New York Police Department
 OECD,Organization for Economic Cooperation & Development
@@ -74,6 +75,7 @@ OPEC,Organization of Petroleum Exporting Countries
 RSF,Reporters Sans Frontières (French for: Reporters Without Borders)
 SAARC,South Asian Association for Regional Cooperation
 TREAS,U.S. Department of the Treasury
+UFA,"UFA, Inc. (air traffic control simulation & training solutions)"
 ULA,United Launch Alliance
 UN,United Nations Organization
 UNCTAD,United Nations Conference on Trade & Development
@@ -85,7 +87,7 @@ USDA,United States Department of Agriculture
 UPS,United Parcel Service
 USIP,United States Institute of Peace
 USSF,"United States Soccer Federation, US Social Forum, US Sumo Federation"
-VA,U.S. Department of Veterans Affairs
+VA,Department of Veterans Affairs (USA)
 VW,Volkswagen
 WEF,World Economic Forum
 WHO,World Health Organization
