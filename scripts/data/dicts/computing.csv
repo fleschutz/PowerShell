@@ -677,9 +677,7 @@ CX,consumer experience
 CXF,Credential Exchange Format
 CXO,chief experience officer
 CXP,Credential Exchange Protocol
-D2D,Disk to Disk
-D2D2C,Disk to Disk to Cloud
-D2D2T,Disk to Disk to Tape
+D2D,"Direct to Device, Disk to Disk"
 DA,Data Analytics
 DAA,Data Access Arrangement
 DaaS,Desktop as a Service
