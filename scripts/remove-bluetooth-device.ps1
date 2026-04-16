@@ -43,11 +43,11 @@ try {
 	do {
 		if ($devices.Count) {
 			for ($i=0; $i -lt $devices.Count; $i++) {
-				('{0,5} - {1} ({2}/{3}/{4})' -f ($i+1), $devices[$i].FriendlyName, $devices[$i].Status, $devices[$i].Class, $devices[$i].Address) | Write-Host
+				("   ({0}) '{1}' device ({2}/{3}/{4})" -f ($i+1), $devices[$i].FriendlyName, $devices[$i].Status, $devices[$i].Class, $devices[$i].Address) | Write-Host
 			}
-			$selected = Read-Host "`nPlease select a device to remove (0=exit)"
+			$selected = Read-Host "`n   Please select a device to remove (0=exit)"
 			If ([int]$selected -in 1..$devices.Count) {
-				'Removing device {0}...' -f $devices[$selected-1].FriendlyName | Write-Host
+				"⏳ Removing '{0}' device..." -f $devices[$selected-1].FriendlyName | Write-Host
 				$result = $BTR::Unpair($devices[$selected-1].Address)
 				If (!$result) {
 					"✅ Bluetooth device '$($devices[$selected-1].FriendlyName)' removed."
