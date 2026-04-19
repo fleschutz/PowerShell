@@ -90,6 +90,6 @@ try {
 	Write-Host "$status $(hostname) is up for $(TimeSpanAsString $uptime) since $($lastBootTime.ToShortDateString()) $pending"
 	exit 0 # success
 } catch {
-	"⚠️ ERROR: $($Error[0]) (script line $($_.InvocationInfo.ScriptLineNumber))"
+	"⚠️ ERROR: $($Error[0]) (at line $($_.InvocationInfo.ScriptLineNumber))"
 	exit 1
 }

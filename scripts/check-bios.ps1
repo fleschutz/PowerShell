@@ -36,6 +36,6 @@ try {
 	Write-Host "✅ BIOS model $model, version $($version)$($releaseDate), S/N $serial by $manufacturer"
 	exit 0 # success
 } catch {
-	"⚠️ ERROR: $($Error[0]) (script line $($_.InvocationInfo.ScriptLineNumber))"
+	"⚠️ ERROR: $($Error[0]) (at line $($_.InvocationInfo.ScriptLineNumber))"
 	exit 1
 }

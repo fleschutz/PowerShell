@@ -20,6 +20,6 @@ try {
 	Get-PnpDevice | Where-Object {$_.Status -like "Error"} | Format-Table -property FriendlyName,Status,InstanceId
 	exit 0 # success
 } catch {
-	"⚠️ ERROR: $($Error[0]) (script line $($_.InvocationInfo.ScriptLineNumber))"
+	"⚠️ ERROR: $($Error[0]) (at line $($_.InvocationInfo.ScriptLineNumber))"
 	exit 1
 }
