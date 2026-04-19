@@ -12,16 +12,18 @@
 #>
 
 try {
-	# Get a list of local groups that have administrators 
-	$adminGroup = Get-LocalGroupMember -Group "Administrators" 
-
+	$culture = [system.threading.thread]::currentthread.currentculture
+	if ($culture.name -eq "de-de") {
+		$adminGroup = Get-LocalGroupMember -Group "Administratoren"
+	} else {
+		$adminGroup = Get-LocalGroupMember -Group "Administrators" 
+	}
 	# Output the members of the administrators group 
-	Write-Host "Users with administrator privileges:" 
 	foreach ($user in $adminGroup) { 
-	    Write-Host $user.Name 
+		Write-Host $user.Name 
 	} 
 	exit 0 # success
 } catch {
-	"⚠️ ERROR: $($Error[0]) (script line $($_.InvocationInfo.ScriptLineNumber))"
+	"⚠️ ERROR: $($Error[0]) (in line $($_.InvocationInfo.ScriptLineNumber))"
 	exit 1
 }
