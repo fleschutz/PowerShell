@@ -168,15 +168,15 @@ Want to use the PowerShell scripts everywhere on the command-line? Then you need
 
 <details><summary>How to write good PowerShell scripts?</summary>
  
-**Good scripts are both user-friendly and platform-independent. As a starting point I recommend:**
+**Good scripts are both user-friendly and platform-independent. I recommend as a starting point:**
 
-* Naming scheme `<verb>-<object>[-<detail>].ps1` for filenames, e.g. *new-symlink.ps1*. Official approved verbs can be found here: [https://learn.microsoft.com/en-us/powershell/scripting/developer/cmdlet/approved-verbs-for-windows-powershell-commands](https://learn.microsoft.com/en-us/powershell/scripting/developer/cmdlet/approved-verbs-for-windows-powershell-commands)
+* Naming scheme `<verb>-<object>[-<detail>].ps1` for the filename, e.g. *new-symlink.ps1*. Official approved verbs can be found here: [https://learn.microsoft.com/en-us/powershell/scripting/developer/cmdlet/approved-verbs-for-windows-powershell-commands](https://learn.microsoft.com/en-us/powershell/scripting/developer/cmdlet/approved-verbs-for-windows-powershell-commands)
 * File encoding **UTF-8 BOM** to support Unicode characters in your script.
-* Script starts with a **synopsis block** (comment-based help) containing: `.SYNOPSIS`, `.DESCRIPTION`, `.PARAMETER`, `.EXAMPLE`, `.LINK`, and `.NOTES`.
+* A **synopsis block** (comment-based help) at script begin which contains: `.SYNOPSIS`, `.DESCRIPTION`, `.PARAMETER`, `.EXAMPLE`, `.LINK`, and `.NOTES`.
 * Add the **requirements** for your script, e.g. `#Requires -RunAsAdministrator`, or `#Requires -Version 5`
-* Check for **command-line options**, otherwise ask the user for input.
+* Check the **command-line parameters** first, otherwise ask the user for input.
 * **No secrets** like passwords, keys, PC names, client names, sensitive information of any sort. Use parameters instead!
-* Recommended is **Set-StrictMode -Version Latest** to enable additional error checking.
+* Use **Set-StrictMode -Version Latest** to enable additional error checking.
 * Use **lowerCamelCase** to name variables/functions/etc to improve readability.
 * Set execute file permissions for Linux: **chmod a+rx <filename>**
 * On success exit with error code 0 (**exit 0**), otherwise print the error with keyword **ERROR:** (to support log parsers) and exit the error code (mostly 1)
