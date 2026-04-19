@@ -170,11 +170,12 @@ Want to use the PowerShell scripts everywhere on the command-line? Then you need
  
 **Good scripts are both user-friendly and platform-independent. As a starting point I recommend:**
 
-* Use the `<verb>-<noun>.ps1` scheme for filenames (e.g. *new-symlink.ps1*). Official approved verbs can be found here: [https://learn.microsoft.com/en-us/powershell/scripting/developer/cmdlet/approved-verbs-for-windows-powershell-commands](https://learn.microsoft.com/en-us/powershell/scripting/developer/cmdlet/approved-verbs-for-windows-powershell-commands)
-* Use **UTF-8 BOM** file encoding to support Unicode characters in your script.
-* Add a **comment-based help** at the beginning with: `.SYNOPSIS`, `.DESCRIPTION`, `.PARAMETER`, `.EXAMPLE`, `.LINK`, and `.NOTES`.
+* Naming scheme `<verb>-<object>[-<detail>].ps1` for filenames, e.g. *new-symlink.ps1*. Official approved verbs can be found here: [https://learn.microsoft.com/en-us/powershell/scripting/developer/cmdlet/approved-verbs-for-windows-powershell-commands](https://learn.microsoft.com/en-us/powershell/scripting/developer/cmdlet/approved-verbs-for-windows-powershell-commands)
+* File encoding **UTF-8 BOM** to support Unicode characters in your script.
+* Script starts with a **synopsis block** (comment-based help) containing: `.SYNOPSIS`, `.DESCRIPTION`, `.PARAMETER`, `.EXAMPLE`, `.LINK`, and `.NOTES`.
 * Add the **requirements** for your script, e.g. `#Requires -RunAsAdministrator`, or `#Requires -Version 5`
 * Check for **command-line options**, otherwise ask the user for input.
+* **No secrets** like passwords, keys, PC names, client names, sensitive information of any sort. Use parameters instead!
 * Recommended is **Set-StrictMode -Version Latest** to enable additional error checking.
 * Use **lowerCamelCase** to name variables/functions/etc to improve readability.
 * Set execute file permissions for Linux: **chmod a+rx <filename>**
