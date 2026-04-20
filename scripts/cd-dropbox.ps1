@@ -5,7 +5,7 @@
 	This PowerShell script changes the working directory to the user's Dropbox folder.
 .EXAMPLE
 	PS> ./cd-dropbox
-	📂C:\Users\Markus\Dropbox entered (has 2 files and 0 folders)
+	📂C:\Users\Markus\Dropbox entered, has 2 files and 0 folders.
 .LINK
 	https://github.com/fleschutz/PowerShell
 .NOTES
@@ -22,7 +22,7 @@ try {
 	Set-Location "$path"
 	$files = Get-ChildItem $path -attributes !Directory
 	$folders = Get-ChildItem $path -attributes Directory
-	"📂$path entered (has $($files.Count) files and $($folders.Count) folders)"
+	"📂$path entered, has $($files.Count) files and $($folders.Count) folders."
 	exit 0 # success
 } catch {
 	"⚠️ ERROR: $($Error[0])"

@@ -5,7 +5,7 @@
 	This PowerShell script sets the current working directory to the fonts folder.
 .EXAMPLE
 	PS> ./cd-fonts.ps1
-	📂C:\Windows\Fonts with 12 font files entered.
+	📂C:\Windows\Fonts entered, has 12 font files.
 .LINK
 	https://github.com/fleschutz/PowerShell
 .NOTES
@@ -21,7 +21,7 @@ try {
 	}
 	Set-Location "$path"
 	$files = Get-ChildItem $path -attributes !Directory
-	"📂$path with $($files.Count) font files entered."
+	"📂$path entered, has $($files.Count) font files."
 	exit 0 # success
 } catch {
 	"⚠️ Error: $($Error[0])"

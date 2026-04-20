@@ -5,7 +5,7 @@
 	This PowerShell script changes the working directory to the user's music folder.
 .EXAMPLE
 	PS> ./cd-music.ps1
-	📂C:\Users\Markus\Music entered (has 3 folders and 0 files)
+	📂C:\Users\Markus\Music entered, has 2 files and 3 folders.
 .LINK
 	https://github.com/fleschutz/PowerShell
 .NOTES
@@ -23,9 +23,9 @@ try {
 		if (-not(Test-Path "$path" -pathType container)) { throw "The path to music folder '$path' doesn't exist (yet)" }
 	}
 	Set-Location "$path"
-	$folders = Get-ChildItem $path -attributes Directory
 	$files = Get-ChildItem $path -attributes !Directory
-	"📂$path entered (has $($folders.Count) folders and $($files.Count) files)"
+	$folders = Get-ChildItem $path -attributes Directory
+	"📂$path entered, has $($files.Count) files and $($folders.Count) folders."
 	exit 0 # success
 } catch {
 	"⚠️ ERROR: $($Error[0])"

@@ -5,7 +5,7 @@
 	This PowerShell script sets the current working directory to the users directory.
 .EXAMPLE
 	PS> ./cd-users.ps1
-	📂C:\Users with 4 folders entered.
+	📂C:\Users entered, has 4 folders.
 .LINK
 	https://github.com/fleschutz/PowerShell
 .NOTES
@@ -20,7 +20,7 @@ try {
 
 	Set-Location "$path"
 	$folders = Get-ChildItem $path -attributes Directory
-	"📂$path with $($folders.Count) folders entered."
+	"📂$path entered, has $($folders.Count) folders."
 	exit 0 # success
 } catch {
 	"⚠️ ERROR: $($Error[0])"

@@ -5,7 +5,7 @@
 	This PowerShell script sets the current working directory to the templates folder.
 .EXAMPLE
 	PS> ./cd-templates.ps1
-	📂/home/Markus/Templates with 3 files and 0 folders entered.
+	📂/home/Markus/Templates entered, has 3 files and 0 folders.
 .LINK
 	https://github.com/fleschutz/PowerShell
 .NOTES
@@ -25,7 +25,7 @@ try {
 	Set-Location "$path"
 	$files = Get-ChildItem $path -attributes !Directory
 	$folders = Get-ChildItem $path -attributes Directory
-	"📂$path with $($files.Count) files and $($folders.Count) folders entered."
+	"📂$path entered, has $($files.Count) files and $($folders.Count) folders."
 	exit 0 # success
 } catch {
 	"⚠️ ERROR: $($Error[0])"
