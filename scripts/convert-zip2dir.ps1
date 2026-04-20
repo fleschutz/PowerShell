@@ -1,12 +1,12 @@
 ﻿<#
 .SYNOPSIS
-	Unzips a file
+	Unzips a .ZIP file
 .DESCRIPTION
 	This PowerShell script unzips a file (.ZIP suffix).
 .PARAMETER path
 	Specifies the path to the .ZIP file.
 .EXAMPLE
-	PS> ./unzip-file.ps1 C:\file.zip
+	PS> ./convert-zip2dir.ps1 C:\file.zip
 .LINK
 	https://github.com/fleschutz/PowerShell
 .NOTES
