@@ -31,7 +31,7 @@ try {
 	Remove-Item -Path "$env:LOCALAPPDATA\Microsoft\Windows\INetCache\*" -Recurse -Force -ErrorAction SilentlyContinue
 
 	[int]$elapsed = $stopWatch.Elapsed.TotalSeconds
-	"✅ Cache clearing completed in $($elapsed)s."
+	"✅ Caches cleared in $($elapsed)s."
 	exit 0 # success
 } catch {
 	"⚠️ ERROR: $($Error[0]) (at line $($_.InvocationInfo.ScriptLineNumber))"
