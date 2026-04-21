@@ -1,11 +1,10 @@
 ﻿<#
 .SYNOPSIS
-	Clears caches
+	Clear caches
 .DESCRIPTION
-	This PowerShell script empties some caches on the local computer.
+	This PowerShell script empties caches on the local computer to save space.
 .EXAMPLE
 	PS> ./clear-caches.ps1
-	✅ Caches cleared in 1s.
 .LINK
 	https://github.com/fleschutz/PowerShell
 .NOTES
@@ -15,20 +14,22 @@
 try {
 	$stopWatch = [system.diagnostics.stopwatch]::startNew()
 
-	"⏳ Clearing DNS client cache..."
+	"⏳ (1/6) Clearing DNS client cache..."
 	Clear-DnsClientCache
 
-	"⏳ Clearing Windows Prefetch..."
+	"⏳ (2/6) Clearing Windows Prefetch folder..."
 	Remove-Item -Path "$env:SystemRoot\Prefetch\*" -Force -ErrorAction SilentlyContinue
 
-	"⏳ Clearing Windows Temp..."
+	"⏳ (3/6) Clearing Windows Temp folder..."
 	Remove-Item -Path "$env:SystemRoot\Temp\*" -Recurse -Force -ErrorAction SilentlyContinue
 
-	"⏳ Clearing User Temp..."
+	"⏳ (4/6) Clearing User Temp folder..."
 	Remove-Item -Path "$env:TEMP\*" -Recurse -Force -ErrorAction SilentlyContinue
 
-	"⏳ Clearing Internet Explorer Cache..."
+	"⏳ (5/6) Clearing Internet Explorer Cache folder..."
 	Remove-Item -Path "$env:LOCALAPPDATA\Microsoft\Windows\INetCache\*" -Recurse -Force -ErrorAction SilentlyContinue
+	"⏳ (6/6) Clearing Recycle Bin..."
+	Clear-RecycleBin -Confirm:$false
 
 	[int]$elapsed = $stopWatch.Elapsed.TotalSeconds
 	"✅ Caches cleared in $($elapsed)s."
