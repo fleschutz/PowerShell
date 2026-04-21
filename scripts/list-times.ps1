@@ -15,23 +15,17 @@
 	Author: Markus Fleschutz | License: CC0
 #>
 
-function WriteTimeIn([string]$location, [string]$timeZone) {
+function TimeAs([string]$timeZone) {
 	[system.threading.thread]::currentThread.currentCulture = [system.globalization.cultureInfo]"de-de"
 	$localTime = [System.TimeZoneInfo]::ConvertTimeBySystemTimeZoneId((Get-Date), $timeZone)
-	$timeAsString = $($localTime.ToShortTimeString())
-	"🕒$timeAsString in $location"
+	return $localTime.ToShortTimeString()
 }
 
 try {
-	WriteTimeIn "Hawaii"      "Hawaiian Standard Time"
-	WriteTimeIn "Los Angeles" "Pacific Standard Time"
-	WriteTimeIn "New York"    "Eastern Standard Time"
-	WriteTimeIn "London"      "Greenwich Standard Time"
-	WriteTimeIn "Paris"       "Central Europe Standard Time"
-	WriteTimeIn "Dubai"       "Arab Standard Time"
-	WriteTimeIn "Singapore"   "Singapore Standard Time"
-	WriteTimeIn "Tokyo"       "Tokyo Standard Time"
-	WriteTimeIn "Sydney"      "AUS Eastern Standard Time"
+	Write-Host " ----------------------------------------------------------------------------- "
+	Write-Host "|  Hawaii     LA  Denver    NYC London  Paris  Dubai  Beijing  Tokyo  Sydney  |" -foregroundColor green
+	Write-Host "| 🕒$(TimeAs "Hawaiian Standard Time")  $(TimeAs "Pacific Standard Time")   $(TimeAs "Mountain Standard Time")  $(TimeAs "Eastern Standard Time")  $(TimeAs "GMT Standard Time")  $(TimeAs "Central Europe Standard Time")  $(TimeAs "Arab Standard Time")    $(TimeAs "China Standard Time")  $(TimeAs "Tokyo Standard Time")   $(TimeAs "AUS Eastern Standard Time")  |"
+	Write-Host " ----------------------------------------------------------------------------- "
 	exit 0 # success
 } catch {
 	"⚠️ ERROR: $($Error[0]) (at line $($_.InvocationInfo.ScriptLineNumber))"
