@@ -22,10 +22,10 @@ function TimeAs([string]$timeZone) {
 }
 
 try {
-	Write-Host " ----------------------------------------------------------------------------- "
-	Write-Host "|  Hawaii     LA  Denver    NYC London  Paris  Dubai  Beijing  Tokyo  Sydney  |" -foregroundColor green
-	Write-Host "| 🕒$(TimeAs "Hawaiian Standard Time")  $(TimeAs "Pacific Standard Time")   $(TimeAs "Mountain Standard Time")  $(TimeAs "Eastern Standard Time")  $(TimeAs "GMT Standard Time")  $(TimeAs "Central Europe Standard Time")  $(TimeAs "Arab Standard Time")    $(TimeAs "China Standard Time")  $(TimeAs "Tokyo Standard Time")   $(TimeAs "AUS Eastern Standard Time")  |"
-	Write-Host " ----------------------------------------------------------------------------- "
+	Write-Host " ------------------------------------------------------------------------------------- "
+	Write-Host "|  Hawaii     LA  Denver    NYC London  Paris  Dubai  Mumbai  Beijing  Tokyo  Sydney  |" -foregroundColor green
+	Write-Host "| 🕒$(TimeAs "Hawaiian Standard Time")  $(TimeAs "Pacific Standard Time")   $(TimeAs "Mountain Standard Time")  $(TimeAs "Eastern Standard Time")  $(TimeAs "GMT Standard Time")  $(TimeAs "Central Europe Standard Time")  $(TimeAs "Arabian Standard Time")   $(TimeAs "India Standard Time")    $(TimeAs "China Standard Time")  $(TimeAs "Tokyo Standard Time")   $(TimeAs "AUS Eastern Standard Time")  |"
+	Write-Host " ------------------------------------------------------------------------------------- "
 	exit 0 # success
 } catch {
 	"⚠️ ERROR: $($Error[0]) (at line $($_.InvocationInfo.ScriptLineNumber))"
