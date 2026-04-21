@@ -14,21 +14,24 @@
 try {
 	$stopWatch = [system.diagnostics.stopwatch]::startNew()
 
-	"⏳ (1/6) Clearing DNS client cache..."
+	"⏳ (1/7) Clearing DNS client cache..."
 	Clear-DnsClientCache
 
-	"⏳ (2/6) Clearing Windows Prefetch folder..."
+	"⏳ (2/7) Clearing Windows Prefetch folder..."
 	Remove-Item -Path "$env:SystemRoot\Prefetch\*" -Force -ErrorAction SilentlyContinue
 
-	"⏳ (3/6) Clearing Windows Temp folder..."
+	"⏳ (3/7) Clearing Windows Temp folder..."
 	Remove-Item -Path "$env:SystemRoot\Temp\*" -Recurse -Force -ErrorAction SilentlyContinue
 
-	"⏳ (4/6) Clearing User Temp folder..."
+	"⏳ (4/7) Clearing User Temp folder..."
 	Remove-Item -Path "$env:TEMP\*" -Recurse -Force -ErrorAction SilentlyContinue
 
-	"⏳ (5/6) Clearing Internet Explorer Cache folder..."
+	"⏳ (5/7) Clearing Internet Explorer Cache folder..."
 	Remove-Item -Path "$env:LOCALAPPDATA\Microsoft\Windows\INetCache\*" -Recurse -Force -ErrorAction SilentlyContinue
-	"⏳ (6/6) Clearing Recycle Bin..."
+	"⏳ (6/7) Performing Disk Cleanup..."
+	& cleanmgr /sagerun:1
+
+	"⏳ (7/7) Clearing Recycle Bin..."
 	Clear-RecycleBin -Confirm:$false
 
 	[int]$elapsed = $stopWatch.Elapsed.TotalSeconds
