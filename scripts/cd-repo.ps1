@@ -7,7 +7,7 @@
 	Specifies the folder name of the Git repository
 .EXAMPLE
 	PS> ./cd-repo.ps1 rust
-	📂C:\Repos\rust entered with branch at: ## main ... origin/main
+	📂C:\Repos\rust entered, branch at: ## main ... origin/main
 .LINK
 	https://github.com/fleschutz/PowerShell
 .NOTES
@@ -47,13 +47,13 @@ try {
 		if ("$($dir.Name)" -eq "$folderName") {
 			$path = Resolve-Path -Path "$path/$($dir.Name)"
 			Set-Location "$path"
-			Write-Host "📂$path entered with branch at: " -noNewline
+			Write-Host "📂$path entered, branch at: " -noNewline
 			& git status --branch --short 
 			exit 0 # success
 		}
 	}
 	throw "No folder '$folderName' in '$path' (yet)"
 } catch {
-	"⚠️ ERROR: $($Error[0])"
+	"⚠️ ERROR: $($Error[0]) (at line $($_.InvocationInfo.ScriptLineNumber))"
 	exit 1
 }
