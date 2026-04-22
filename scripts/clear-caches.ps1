@@ -28,11 +28,12 @@ try {
 
 	"⏳ (5/7) Clearing Internet Explorer Cache folder..."
 	Remove-Item -Path "$env:LOCALAPPDATA\Microsoft\Windows\INetCache\*" -Recurse -Force -ErrorAction SilentlyContinue
-	"⏳ (6/7) Performing Disk Cleanup..."
-	& cleanmgr /sagerun:1
 
-	"⏳ (7/7) Clearing Recycle Bin..."
+	"⏳ (6/7) Clearing Recycle Bin..."
 	Clear-RecycleBin -Confirm:$false
+
+	"⏳ (7/7) Performing Disk Cleanup..."
+	& cleanmgr /sagerun:1
 
 	[int]$elapsed = $stopWatch.Elapsed.TotalSeconds
 	"✅ Caches cleared in $($elapsed)s."
