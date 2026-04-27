@@ -8,7 +8,7 @@
 .EXAMPLE
 	PS> ./open-dashboards.ps1
 	⏳ Launching Web browser with 24 new tabs: Toggl Track, Google Calendar, Google Mail,...
-	💡 Hint: use './switch-tabs.ps1' to automatically switch from tab to tab.
+	💡 NOTE: Use './switch-tabs.ps1' to automatically switch from tab to tab.
 .LINK
 	https://github.com/fleschutz/PowerShell
 .NOTES
@@ -32,7 +32,7 @@ try {
 		Start-Sleep -milliseconds $timeInterval
 	}
 	Write-Host ""
-	Write-Host "💡 Hint: use './switch-tabs.ps1' to automatically switch from tab to tab."
+	Write-Host "💡 NOTE: Use './switch-tabs.ps1' to automatically switch from tab to tab."
 	exit 0 # success
 } catch {
 	"⚠️ ERROR: $($Error[0]) (script line $($_.InvocationInfo.ScriptLineNumber))"
