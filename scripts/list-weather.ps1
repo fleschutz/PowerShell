@@ -112,7 +112,7 @@ try {
 		$emoji = GetEmoji $desc
 		if ($hour -eq 0) {
 			if ($day -eq 0) {
-				Write-Host "`nTODAY  Temp  ☂️mm    💧 💨km/h   ☁️  ☀️UV 👁 km  $area ($region, $country)" -foregroundColor green
+				Write-Host "`nTODAY    🌡 °C  ☂️mm  💧% 💨km/h  ☁️%  ☀️UV 👁 km  $area ($region, $country)" -foregroundColor green
 			} elseif ($day -eq 1) {
 				$date = (Get-Date).AddDays(1)
 				[string]$dayOfWeek = $date.DayOfWeek
@@ -124,7 +124,7 @@ try {
 			}
 			$day++
 		}
-		"$(($hour.toString()).PadLeft(2))h   $($emoji)$temp°  $precip  $humidity%   $($windDir)$windSpeed   $clouds%   $UV   $visib   $desc"
+		"$(($hour.toString()).PadLeft(2)):00   $($emoji)$temp°  $precip  $humidity   $($windDir)$windSpeed   $clouds    $UV   $visib   $desc"
 	}
 	exit 0 # success
 } catch {
