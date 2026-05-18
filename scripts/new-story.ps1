@@ -41,6 +41,17 @@ function RandomParagraph {
 	return "$(RandomSentence) $(RandomSentence) $(RandomSentence) $(RandomSentence) $(RandomSentence) $(RandomSentence) $(RandomSentence) $(RandomSentence)`n"
 }
 
+function RandomChapter {
+	$global:chapter_number++
+	$title = "`nChapter $($global:chapter_number): $(RandomSentence)`n"
+	& "$PSScriptRoot/write-typewriter.ps1" $title 20
+
+	for ($i = 0; $i -lt 20; $i++) {
+		$paragraph = $(RandomParagraph)
+		& "$PSScriptRoot/write-typewriter.ps1" $paragraph 20
+	}
+}
+
 ""
 "                           An Endless Random Story"
 "                           ======================="
@@ -49,7 +60,4 @@ function RandomParagraph {
 ""
 "  Copyright © 2026 A.I. All Rights Reserved. Violators will be terminated ;-)"
 ""
-while ($true) { 
-	$paragraph = $(RandomParagraph)
-	& "$PSScriptRoot/write-typewriter.ps1" $paragraph 20
-}
+while ($true) { RandomChapter }
