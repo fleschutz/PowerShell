@@ -128,6 +128,7 @@ AOM,Airplane Operating Manual
 AOPA,Aircraft Owners and Pilots Association
 AoR,Area of Responsibility
 AP,Auto Pilot
+APAR,Active Phased Array Radar
 APIS,Aircraft Parking and Information System
 APM,Approach Path Monitor
 APP,"Approach, or Approach Area"
@@ -266,6 +267,7 @@ DZ,"Drizzle (METAR code), Drop Zone"
 EAS,Equivalent Airspeed
 EAVA,Estonian Aviation Academy
 ECAC,European Civil Aviation Conference
+ECCM,Electronic Counter-Countermeasures
 eCTOL,Electric Conventional Take-off and Landing
 ECP,Entry Control Point
 EFM,Gesellschaft für Enteisen und Flugzeugschleppen
@@ -275,7 +277,7 @@ ELBA,Emergency Location Beacon for Aircrafts
 ELEV,Field Elevation
 ELT,Emergency Locator Transmitter
 ENR,En-Route
-EOL,Engine-off landing
+EOL,Engine-off Landing
 ERAU,"Embry-Riddle Aeronautical University (Daytona Beach, Florida)"
 ERPM,Engine Rotations per Minute
 eSTOL,Electric Short Take-off and Landing
