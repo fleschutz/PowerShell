@@ -7,7 +7,7 @@
 	Specifies the file path to the directory tree
 .EXAMPLE
 	PS> ./list-dir-tree.ps1 C:\MyFolder
-	├📂Results
+	├📁Results
 	│ ├📄sales.txt (442K)
 	   (1 file, 2 folders, 1 folder level, 442K total)
 .LINK
@@ -55,7 +55,7 @@ function ListDir([string]$path, [int]$depth) {
 		if ($item.Mode -notlike "d*") {
 			Write-Host "  " -noNewline
 			for ([int]$i = 1; $i -lt $depth; $i++) { Write-Host "   " -noNewline }
-			Write-Host "├$(GetFileIcon $item.Extension)$($item.Name) ($(Bytes2String $item.Length))"
+			Write-Host "└─$(GetFileIcon $item.Extension)$($item.Name) ($(Bytes2String $item.Length))"
 			$global:files++
 			$global:bytes += $item.Length
 		}
@@ -65,7 +65,7 @@ function ListDir([string]$path, [int]$depth) {
 		if ($item.Mode -like "d*") {
 			Write-Host "  " -noNewline
 			for ([int]$i = 1; $i -lt $depth; $i++) { Write-Host "   " -noNewline }
-			Write-Host "├📂$($item.Name)"
+			Write-Host "└──📁$($item.Name)"
 			ListDir "$path\$($item.Name)" ($depth + 1)
 		}
 	}
@@ -74,7 +74,7 @@ function ListDir([string]$path, [int]$depth) {
 }
 
 try {
-	Write-Host "`n 📂$path"
+	Write-Host "`n 📁$path"
 	[int64]$global:files = $global:folders = $global:depth = $global:bytes = 0
 	ListDir $path 1
 	Write-Host "($($global:files) files, $($global:folders) folders, $($global:depth) folder levels, $(Bytes2String $global:bytes) total)"
