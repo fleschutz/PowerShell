@@ -15,7 +15,7 @@
 	Author: Markus Fleschutz | License: CC0
 #>
 
-Write-Host "`n   === S O F T W A R E ===" -foregroundColor green
+Write-Host "`n   === S O F T W A R E ===" -foregroundColor blue
 & "$PSScriptRoot/check-os.ps1"
 & "$PSScriptRoot/check-uptime.ps1"
 & "$PSScriptRoot/check-apps.ps1"

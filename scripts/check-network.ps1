@@ -15,7 +15,7 @@
 	Author: Markus Fleschutz | License: CC0
 #>
 
-Write-Host "`n   === N E T W O R K ===" -foregroundColor green
+Write-Host "`n   === N E T W O R K ===" -foregroundColor blue
 & "$PSScriptRoot/check-firewall"
 & "$PSScriptRoot/list-local-ip.ps1"
 & "$PSScriptRoot/ping-local-devices.ps1"

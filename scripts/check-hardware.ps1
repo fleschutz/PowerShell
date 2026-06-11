@@ -15,7 +15,7 @@
 	Author: Markus Fleschutz | License: CC0
 #>
 
-Write-Host "`n   === H A R D W A R E ===" -foregroundColor green
+Write-Host "`n   === H A R D W A R E ===" -foregroundColor blue
 & "$PSScriptRoot/check-cpu.ps1"
 & "$PSScriptRoot/check-ram.ps1"
 & "$PSScriptRoot/check-gpu.ps1"
