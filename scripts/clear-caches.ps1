@@ -2,9 +2,11 @@
 .SYNOPSIS
 	Clear caches
 .DESCRIPTION
-	This PowerShell script empties caches on the local computer to save space.
+	This PowerShell script empties the caches on the local computer to save space.
 .EXAMPLE
 	PS> ./clear-caches.ps1
+	⏳ (1/8) Clearing user's trash folder...
+	...
 .LINK
 	https://github.com/fleschutz/PowerShell
 .NOTES
@@ -14,29 +16,29 @@
 try {
 	$stopWatch = [system.diagnostics.stopwatch]::startNew()
 
-	"⏳ (1/8) Clearing Recycle Bin..."
+	"⏳ (1/8) Clearing user's trash folder..."
 	Clear-RecycleBin -Confirm:$false
 
-	"⏳ (2/8) Clearing DNS client cache..."
+	"⏳ (2/8) Clearing user's temporary folder..."
+	Remove-Item -Path "$env:TEMP\*" -Recurse -Force -ErrorAction SilentlyContinue
+
+	"⏳ (3/8) Clearing DNS client cache..."
 	Clear-DnsClientCache
 
-	"⏳ (3/8) Clearing Windows Prefetch folder..."
+	"⏳ (4/8) Clearing Windows prefetch folder..."
 	Remove-Item -Path "$env:SystemRoot\Prefetch\*" -Force -ErrorAction SilentlyContinue
 
-	"⏳ (4/8) Clearing Windows Temp folder..."
+	"⏳ (5/8) Clearing Windows temporary folder..."
 	Remove-Item -Path "$env:SystemRoot\Temp\*" -Recurse -Force -ErrorAction SilentlyContinue
-
-	"⏳ (5/8) Clearing User Temp folder..."
-	Remove-Item -Path "$env:TEMP\*" -Recurse -Force -ErrorAction SilentlyContinue
 
 	"⏳ (6/8) Clearing File Explorer icon cache database..."
 	Remove-Item -Path "$env:LOCALAPPDATA\IconCache.db" -Force -ErrorAction SilentlyContinue
 	Remove-Item -Path "$env:LOCALAPPDATA\Microsoft\Windows\Explorer\*.db" -Force -ErrorAction SilentlyContinue
 
-	"⏳ (7/8) Clearing Internet Explorer Cache folder..."
+	"⏳ (7/8) Clearing Internet Explorer cache folder..."
 	Remove-Item -Path "$env:LOCALAPPDATA\Microsoft\Windows\INetCache\*" -Recurse -Force -ErrorAction SilentlyContinue
 
-	"⏳ (8/8) Performing Disk Cleanup..."
+	"⏳ (8/8) Performing disk cleanup..."
 	& cleanmgr /sagerun:1
 
 	[int]$elapsed = $stopWatch.Elapsed.TotalSeconds
