@@ -7,7 +7,7 @@
 	Specifies the hostname or IP address to ping (x.com by default)
 .EXAMPLE
 	PS> ./ping-host.ps1 x.com
-	⏳ Pinging...  'Laptop' ---20ms---> 'x.com' (IP 104.244.42.1)
+	⏳ Pinging...  host 'Laptop' ---20ms---> 'x.com' (IP 104.244.42.1)
 .LINK
 	https://github.com/fleschutz/PowerShell
 .NOTES
@@ -17,7 +17,7 @@
 param([string]$hostname = "x.com")
 
 try {
-	Write-Host "⏳ Pinging...  '$(hostname)' ---" -noNewline
+	Write-Host "⏳ Pinging...  host '$(hostname)' ---" -noNewline
 	$remoteHosts = $hostname.Split(",")
 	$tasks = $remoteHosts | foreach { (New-Object Net.NetworkInformation.Ping).SendPingAsync($_,5000) }
 	[Threading.Tasks.Task]::WaitAll($tasks)

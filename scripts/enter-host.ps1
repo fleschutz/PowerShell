@@ -7,7 +7,7 @@
 	Specifies the remote hostname or IP address
 .EXAMPLE
 	PS> ./enter-host.ps1 tux
-	⏳ Pinging... 'Laptop' ---0.5ms---> 'tux' (IP 192.168.1.179)
+	⏳ Pinging... host 'Laptop' ---0.5ms---> 'tux' (IP 192.168.1.179)
 	⏳ Login...   user 'markus', OpenSSH_for_Windows_9.5p2, LibreSSL 3.8.2
 	...
 .LINK
