@@ -37,7 +37,7 @@ function GetFileIcon([string]$suffix) {
 }
 
 function Bytes2String([int64]$bytes) {
-	if ($bytes -lt 1000) { return "$bytes bytes" }
+	if ($bytes -lt 1000) { return "$($bytes)B" }
 	$bytes /= 1000
 	if ($bytes -lt 1000) { return "$($bytes)K" }
 	$bytes /= 1000
@@ -53,9 +53,8 @@ function ListDir([string]$path, [int]$depth) {
 	# files first
 	foreach($item in $items) {
 		if ($item.Mode -notlike "d*") {
-			Write-Host "  " -noNewline
-			for ([int]$i = 1; $i -lt $depth; $i++) { Write-Host "   " -noNewline }
-			Write-Host "└─$(GetFileIcon $item.Extension)$($item.Name) ($(Bytes2String $item.Length))"
+			for ([int]$i = 0; $i -lt $depth; $i++) { Write-Host "    " -noNewline }
+			Write-Host "└── $(GetFileIcon $item.Extension)$($item.Name) ($(Bytes2String $item.Length))"
 			$global:files++
 			$global:bytes += $item.Length
 		}
@@ -63,9 +62,8 @@ function ListDir([string]$path, [int]$depth) {
 	# folders second
 	foreach($item in $items) {
 		if ($item.Mode -like "d*") {
-			Write-Host "  " -noNewline
-			for ([int]$i = 1; $i -lt $depth; $i++) { Write-Host "   " -noNewline }
-			Write-Host "└──📁$($item.Name)"
+			for ([int]$i = 0; $i -lt $depth; $i++) { Write-Host "    " -noNewline }
+			Write-Host "└── 📁$($item.Name)"
 			ListDir "$path\$($item.Name)" ($depth + 1)
 		}
 	}
@@ -74,10 +72,10 @@ function ListDir([string]$path, [int]$depth) {
 }
 
 try {
-	Write-Host "`n 📁$path"
+	Write-Host "`n📁$path"
 	[int64]$global:files = $global:folders = $global:depth = $global:bytes = 0
-	ListDir $path 1
-	Write-Host "($($global:files) files, $($global:folders) folders, $($global:depth) folder levels, $(Bytes2String $global:bytes) total)"
+	ListDir $path 0
+	Write-Host "`n($($global:files) files, $($global:folders) folders, $($global:depth) folder levels, $(Bytes2String $global:bytes) total)"
 	exit 0 # success
 } catch {
 	"⚠️ ERROR: $($Error[0]) (script line $($_.InvocationInfo.ScriptLineNumber))"
