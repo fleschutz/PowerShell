@@ -16,16 +16,16 @@
 	Author: Markus Fleschutz | License: CC0
 #>
 
-function Bytes2String([int64]$bytes) {
-        if ($bytes -lt 1000) { return "$bytes bytes" }
-        $bytes /= 1000
-        if ($bytes -lt 1000) { return "$($bytes)K" }
-        $bytes /= 1000
-        if ($bytes -lt 1000) { return "$($bytes)MB" }
-        $bytes /= 1000
-        if ($bytes -lt 1000) { return "$($bytes)GB" }
-        $bytes /= 1000
-        return "$($Bytes)TB"
+function Bytes2String([int64]$num) {
+        if ($num -lt 1000) { return "$($num)B" }
+        $num /= 1000
+        if ($num -lt 1000) { return "$($num)K" }
+        $num /= 1000
+        if ($num -lt 1000) { return "$($num)MB" }
+        $num /= 1000
+        if ($num -lt 1000) { return "$($num)GB" }
+        $num /= 1000
+        return "$($num)TB"
 }
 
 function ListTool([string]$Name, [string]$VersionArg) {
@@ -164,6 +164,7 @@ function List-CLI-Tools {
 	ListTool expr		"--version"
 	ListTool factor		"--version"
 	ListTool false		"--version"
+	ListTool fbuild		"-version"
 	ListTool fido2-assert	"--version"
 	ListTool fido2-cred	"--version"
 	ListTool fido2-token	"--version"
