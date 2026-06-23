@@ -249,6 +249,7 @@ function List-CLI-Tools {
 	ListTool nmap		"--version"
 	ListTool nohup		"--version"
 	ListTool nroff		"--version"
+	ListTool ninja		"--version"
 	ListTool nslookup	""
 	ListTool openssl	""
 	ListTool pandoc		"--version"
