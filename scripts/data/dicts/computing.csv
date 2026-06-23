@@ -1347,7 +1347,9 @@ HP,High Performance
 HP-GL,Hewlett-Packard Graphics Language
 HPC,High-Performance Computing
 HPCC,High Performance Computing and Communications
+HPCG,High Performance Conjugate Gradient (benchmark)
 HPFS,High Performance File System
+HPL,High Performance Linpack (benchmark)
 HPNA,Home Phoneline Networking Alliance
 HPPS,High Performance Product Sector
 HPSS,High Performance Storage System
@@ -1846,6 +1848,7 @@ NRLA,National Labor Relations Board
 NRZ,non-return-to-zero
 NSAP,Network Service Access Point
 NSAPI,Netscape Server Application Programming Interface
+NSCCSZ,National Supercomputing Center in Shenzhen (China)
 NSIS,Next Steps in Signaling
 NSP,network service provider
 NT1,network terminator 1
