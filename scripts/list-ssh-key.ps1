@@ -13,7 +13,9 @@
 #>
 
 try {
-	if (Test-Path "~/.ssh/id_ed25519.pub") {
+	if (Test-Path "~/.ssh/id_mldsa44-ed25519.pub") {
+		$key = Get-Content "~/.ssh/id_mldsa44-ed25519.pub"
+	} elseif (Test-Path "~/.ssh/id_ed25519.pub") {
 		$key = Get-Content "~/.ssh/id_ed25519.pub"
 	} elseif (Test-Path "~/.ssh/id_rsa.pub") {
 		$key = Get-Content "~/.ssh/id_rsa.pub"	
