@@ -20,7 +20,7 @@ try {
 
 	for ($i = $Seconds; $i -gt 0; $i--) {
 		Clear-Host
-		./write-big "T-$i seconds"
+		& "$PSScriptRoot/write-big.ps1" "T-$i seconds"
 		Start-Sleep -seconds 1
 	}
 

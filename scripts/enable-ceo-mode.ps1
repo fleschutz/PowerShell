@@ -1,0 +1,34 @@
+﻿<#
+.SYNOPSIS
+	Enables CEO mode
+.DESCRIPTION
+	This PowerShell script enables the CEO mode.
+.EXAMPLE
+	./enable-ceo-mode.ps1
+#>
+
+#requires -version 5.1
+
+try {
+	Clear-Host
+	& "$PSScriptRoot/write-big.ps1" "CEO MODE"
+
+	"⏳ Minimizing all windows..."
+	& "$PSScriptRoot/minimize-all-windows.ps1"
+
+	"⏳ Opening dashboards..."
+	& "$PSScriptRoot/speak-english.ps1" "Please hold on."
+	& "$PSScriptRoot/open-dashboards.ps1"
+
+	"⏳ Playing Big Ben..."
+	& "$PSScriptRoot/play-big-ben.ps1"
+
+	"⏳ Reporting the time..."
+	& "$PSScriptRoot/speak-time.ps1"
+
+	"✅ CEO mode enabled."
+	exit 0 # success
+} catch {
+	"⚠️ ERROR: $($Error[0]) (in line $($_.InvocationInfo.ScriptLineNumber))"
+	exit 1
+}
