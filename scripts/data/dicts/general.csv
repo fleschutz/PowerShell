@@ -731,8 +731,6 @@ CEPT,"Conférence européenne des administrations des postes et des télécommun
 CERCLA,"U.S. Comprehensive Environmental Response,Compensation,and Liability Act (Superfund)"
 CERDEC,"U.S. Communications-Electronics Research,Development and Engineering Center"
 CERGA,"Centre de recherches en géodynamique et astrométrie (French,'Astrometry and Geodynamics Research Centre')"
-CERN,"Centre européen pour la recherche nucléaire (French,'European Organization for Nuclear Research')"
-CERT,Computer Emergency Response Team
 CESS,Centre for Earth Science Studies (India)
 CEST,Central European Summer Time
 CET,Central European Time
@@ -1467,7 +1465,6 @@ FAD,Flavin Adenine Dinucleotide,Fuck A Duck,Funding Authorization Document
 FAH,Federation of American Hospitals,Fine Arts and Humanities,Foreign Affairs Handbook
 FAI,Fédération Aéronautique Internationale (French,"International Aeronautics Federation"),Football Association of Ireland
 FAM,Foreign Affairs Manual
-FAO,Food and Agriculture Organization
 FAPA,Fellow of the American Psychological Association
 FAPHA,Fellow of the American Public Health Association
 FAQ,Frequently Asked Questions (sometimes pronounced "fak")
@@ -1987,7 +1984,6 @@ HMCS,Her/His Majesty's Canadian Ship,Her Majesty's Courts Service (former UK age
 HMD,Heard and McDonald Islands (ISO 3166 trigram)
 HMF,HydroxyMethyl Furfural
 HMMWV,High Mobility Multipurpose Wheeled Vehicle ("hum-vee"; "hummer")
-HMO,Health maintenance organization
 HMP,Her Majesty's Prison
 HMRC,Her/His Majesty's Revenue and Customs
 HMS,Helmet-mounted display,Her/His Majesty's Ship (Royal Navy)
@@ -2165,7 +2161,6 @@ IGNOU,Indira Gandhi National Open University
 IGS,International Ground Station
 IGY,Israeli Gay Youth,International Geophysical Year
 IHH,Idiopathic Hypogonadotropic Hypogonadism
-IHO,International Hydrographic Organization
 IHOP,International House of Pancakes,the original name of this American restaurant chain ("EYE-hop")
 IHR,Institute for Historical Review
 IHSI,Institutum Historicum Societatis Iesu (Jesuit Historical Institute)
@@ -2182,7 +2177,6 @@ IKEA,Ingvar Kamprad (the company's founder),Elmtaryd (the farm where he was born
 IL,Illinois (postal symbol),Israel (ISO 3166 digram)
 ILC,International Law Commission,International Linear Collider
 ILDS,Improved Landmine Detection System
-ILO,International Labour Organization
 ILRI,International Livestock Research Institute
 ILY,I Love You [pronounced ILL-LEE]
 IM,Instant Message (internet speech)
@@ -2318,7 +2312,6 @@ ITK,In The Know
 ITN,Independent Television News (British)
 ITS,Incompatible Time-sharing System,Individual Training Standards
 ITT,International Telephone and Telegraph (U.S.)
-ITTO,International Tropical Timber Organization
 ITU,Intent-to-Use,International Telecommunication Union (International Telegraph Union 1865-1932),IU[edit]
 IUCN,International Union for the Conservation of Nature and Natural Resources (World Conservation Union)
 IUPAC,International Union of Pure and Applied Chemistry (pronounced "eye-yoo-pac")
@@ -2484,7 +2477,6 @@ KCMO,"Kansas City,Missouri (pronounced: K-C-Moe)"
 KCS,Kansas City Southern Railway (AAR reporting mark)
 KD,"Kawasaki Disease,Kraft Dinner"
 KE,"Kenya (ISO 3166 digram),Kinetic Energy,Knowledge Engineering"
-KEDO,Korean Peninsula Energy Development Organization
 KEN,Kenya (ISO 3166 trigram)
 KERA,Kentucky Education Reform Act (of 1990)
 kerma,Kinetic Energy Released in MAterial / in MAtter / per unit MAss
@@ -3131,7 +3123,6 @@ NAEC,U.S. Naval Air Engineering Center
 NAF,NATO Architecture Framework,Naval Air Facility
 NAFERA,Native American Free Exercise of Religion Act
 NAFLD,NonAlcoholic Fatty Liver Disease
-NAFO,Northwest Atlantic Fisheries Organization
 NAFTA,North American Free Trade Agreement
 NAGPRA,Native American Graves Protection and Repatriation Act
 NAI,Named Area of Interest,Network Access Identifier
@@ -3256,7 +3247,7 @@ NGA,"U.S. National Geospatial-Intelligence Agency, Nigeria (ISO 3166 trigram)"
 NGATS,New Generation Army Targetry System
 NGH,Northern General Hospital
 NGIC,National Ground Intelligence Center ("Injick")
-NGO,non-governmental organization
+NGO,Non-Governmental Organization
 NGR,Nigeria (IOC trigram,but not ISO 3166 or FIFA)
 NGS,Naval Gunfire Support
 nH,Nanohenry
@@ -3356,7 +3347,6 @@ NORTHAG,Northern Army Group
 NOS,"Network Operating System,New Old Stock (Internet auction/trading listings),Nitric Oxide Synthase (enzyme)"
 NOSA,NATO OSI Security Architecture
 NOTAFLOF,No One Turned Away For Lack Of Funds
-NOW,National Organization for Women
 NP,"National Permit,A permit in India for trucks so they can go anywhere in the nation"
 Np,"Neap tide (nautical charts),Neptunium"
 NP,Nepal (ISO 3166 and FIPS 10-4 country code digram)
@@ -3466,12 +3456,10 @@ OA,"Operational Analysis,Overeaters Anonymous"
 OAC,On Approved Credit
 OAP,Old Age Pensioner (UK)
 OARSI,Osteoarthritis Research Society International
-OAS,Organization of American States
 OASIS,"Objects and Agents for Information Systems and Simulation,Organization for the Advancement of Structured Information Standards"
 OASIS,Ontario Agencies Supporting Individuals with Special Needs
 OASIS,Ontario Association of Sewage Industry Services
 OASP,Operational Analysis Support Paper/Plan
-OAU,Organization for African Unity
 OB,"Obedience,Obligation,Obligatory,Obsolete,Obstetrics,Ocean Beach (California),Off Break (cricket),Old Bryanstonian,Order of Battle,Outlet Box (electrical),Overbought (stock market),Oversight Board"
 ob,"obiit (Latin,'he died')"
 OBE,Officer of the Order of the British Empire
@@ -3559,8 +3547,6 @@ OP,"Observation Point/Post,Ocean Pacific (surfwear and swimwear brand),Original 
 OPA,"Other Procurement,Army"
 OPAC,Online Public Access Catalogue
 OPCON,Operational control
-OPCW,Organisation for the Prohibition of Chemical Weapons
-OPEC,Organization of the Petroleum Exporting Countries
 OPFOR,Opposing force
 OPI,"Office of Primary Interest,Open Prepress Interface"
 OPINTEL,Operational Intelligence
