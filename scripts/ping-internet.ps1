@@ -7,7 +7,7 @@
 	Specifies the hosts to ping, seperated by commata (10 popular Internet servers by default)
 .EXAMPLE
 	PS> ./ping-internet.ps1
-	✅ Internet ping at 12ms (9...18ms range, excellent)
+	✅ Internet ping is 12ms (9...18ms range, excellent)
 .LINK
 	https://github.com/fleschutz/PowerShell
 .NOTES
@@ -43,13 +43,13 @@ try {
 	}
 	[float]$speed = [math]::round([float]$avg / [float]$success, 1)
 	if ($speed -lt 50) {
-		Write-Host "✅ Internet ping at $($speed)ms ($min...$($max)ms range, excellent)"
+		Write-Host "✅ Internet ping is $($speed)ms ($min...$($max)ms range, excellent)"
 	} elseif ($speed -lt 100) {
-		Write-Host "✅ Internet ping at $($speed)ms ($min...$($max)ms range, good)"
+		Write-Host "✅ Internet ping is $($speed)ms ($min...$($max)ms range, good)"
 	} elseif ($speed -lt 200) {
-		Write-Host "✅ Internet ping at $($speed)ms ($min...$($max)ms range, fair)"
+		Write-Host "✅ Internet ping is $($speed)ms ($min...$($max)ms range, fair)"
 	} else {
-		Write-Host "✅ Internet ping at $($speed)ms ($min...$($max)ms range, slow)"
+		Write-Host "✅ Internet ping is $($speed)ms ($min...$($max)ms range, slow)"
 	}
 	exit 0 # success
 } catch {

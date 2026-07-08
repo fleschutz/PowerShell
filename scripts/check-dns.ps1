@@ -5,7 +5,7 @@
 	This PowerShell script measures the DNS lookup speed using 100 internet domains and prints it.
 .EXAMPLE
 	PS> ./check-dns.ps1
-	✅ Internet DNS lookup at 33.6ms on average (excellent)
+	✅ Internet DNS lookup is 33.6ms on average (excellent)
 .LINK
 	https://github.com/fleschutz/PowerShell
 .NOTES
@@ -26,11 +26,11 @@ try {
 	[float]$elapsed = $stopWatch.Elapsed.TotalSeconds * 1000.0
 	$speed = [math]::round($elapsed / $table.Length, 1)
 	if ($speed -lt 50.0) {
-		"✅ Internet DNS lookup at $($speed)ms on average (excellent)"
+		"✅ Internet DNS lookup is $($speed)ms on average (excellent)"
 	} elseif ($speed -lt 100.0) {
-		"✅ Internet DNS lookup at $($speed)ms on average (good)"
+		"✅ Internet DNS lookup is $($speed)ms on average (good)"
 	} else {  
-		"⚠️ Internet DNS lookup at $($speed)ms on average (slow)"
+		"⚠️ Internet DNS lookup is $($speed)ms on average (slow)"
 	}
 	exit 0 # success
 } catch {

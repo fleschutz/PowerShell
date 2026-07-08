@@ -5,7 +5,7 @@
         This PowerShell script lists the user's public SSH key which resides in the ~/.ssh folder.
 .EXAMPLE
         PS> ./list-ssh-key.ps1
-	✅ Public key: ssh-ed25519 AAAC3NzaC1lZDINTE5AAAAIKjhD0zlk9HV6OAXVtluUJ5c2BawfetGDLWu0CA1R markus@tux
+	✅ Public key is: ssh-ed25519 AAAC3NzaC1lZDINTE5AAAAIKjhD0zlk9HV6OAXVtluUJ5c2BawfetGDLWu0CA1R markus@tux
 .LINK
         https://github.com/fleschutz/PowerShell
 .NOTES
@@ -22,9 +22,9 @@ try {
 	} elseif (Test-Path "~/.ssh/id_dsa.pub") {
 		$key = Get-Content "~/.ssh/id_dsa.pub"	
 	} else {
-		throw "No public SSH key found - execute 'new-ssh-key.ps1' to create one"
+		throw "No public key at .ssh/ in home directory - execute 'new-ssh-key.ps1' to create one"
 	}
-	Write-Host "✅ Public key: $key"
+	Write-Host "✅ Public key is: $key"
 	exit 0 # success
 } catch {
 	"⚠️ ERROR: $($Error[0])"
