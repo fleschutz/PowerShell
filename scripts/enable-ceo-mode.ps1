@@ -17,7 +17,7 @@ try {
 	& "$PSScriptRoot/minimize-all-windows.ps1"
 
 	"⏳ Opening dashboards..."
-	& "$PSScriptRoot/speak-english.ps1" "Please hold on."
+	& "$PSScriptRoot/speak-english.ps1" "Just a second."
 	& "$PSScriptRoot/open-dashboards.ps1"
 
 	"⏳ Playing Big Ben..."
@@ -26,6 +26,10 @@ try {
 	"⏳ Reporting the time..."
 	& "$PSScriptRoot/speak-time.ps1"
 
+	"⏳ Open VPN settings..."
+	& "$PSScriptRoot/open-vpn-settings.ps1"
+
+	& "$PSScriptRoot/show-notification.ps1" "CEO mode enabled."
 	"✅ CEO mode enabled."
 	exit 0 # success
 } catch {
