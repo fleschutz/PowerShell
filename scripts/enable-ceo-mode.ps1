@@ -13,17 +13,18 @@ try {
 	Clear-Host
 	& "$PSScriptRoot/write-big.ps1" "CEO MODE"
 
+	& "$PSScriptRoot/list-times.ps1"
+	& "$PSScriptRoot/speak-english.ps1" "Just a second."
+
 	"⏳ Minimizing all windows..."
 	& "$PSScriptRoot/minimize-all-windows.ps1"
 
-	"⏳ Opening dashboards..."
-	& "$PSScriptRoot/speak-english.ps1" "Just a second."
 	& "$PSScriptRoot/open-dashboards.ps1"
 
 	"⏳ Playing Big Ben..."
 	& "$PSScriptRoot/play-big-ben.ps1"
 
-	"⏳ Reporting the time..."
+	"⏳ Tell the time..."
 	& "$PSScriptRoot/speak-time.ps1"
 
 	"⏳ Open VPN settings..."
