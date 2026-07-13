@@ -337,7 +337,8 @@ GND,Ground
 GP,Glide Path
 GPS,Global Positioning System
 GR,Hail (METAR code)
-GS,Ground Speed or Glideslope
+GS,"Ground Speed, Glideslope"
+GSE,Ground Service Equipment
 HEMS,Helicopter Emergency Medical Services
 HKIA,Hong Kong International Airport
 HOGE,Hover Out of Ground Effect
