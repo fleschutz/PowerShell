@@ -44,7 +44,7 @@ try {
 		$step++
 	}
 	[int]$elapsed = $stopWatch.Elapsed.TotalSeconds
-	"✅ Fetched into $numFolders Git repos at 📂$parentDirPath in $($elapsed)s."
+	"✅ Fetched updates into $numFolders Git repos at 📂$parentDirPath in $($elapsed)s."
 	exit 0 # success
 } catch {
 	"⚠️ ERROR: $($Error[0]) (script line $($_.InvocationInfo.ScriptLineNumber))"
