@@ -19,7 +19,7 @@ try {
 	"⏳ Minimizing all windows..."
 	& "$PSScriptRoot/minimize-all-windows.ps1"
 
-	& "$PSScriptRoot/open-dashboards.ps1"
+	& "$PSScriptRoot/open-URL.ps1" "https://www.youtube.com/watch?v=TZgFg0Ok7W0&list=RDTZgFg0Ok7W0&start_radio=1&t=2229s"
 
 	"⏳ Playing Big Ben..."
 	& "$PSScriptRoot/play-big-ben.ps1"
