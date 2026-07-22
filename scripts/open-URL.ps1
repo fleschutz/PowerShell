@@ -27,9 +27,9 @@ try {
 		Write-Host $URL -foregroundColor blue -noNewline
 		Write-Host " (open link with: <Ctrl> <click>)"
 	} else {
-		Start-Process $URL
-		Write-Host "✅ Launching Web browser with $text" -noNewline
+		Write-Host "⏳ Launching Web browser with $text" -noNewline
 		Write-Host $URL -foregroundColor blue
+		Start-Process $URL
 	}
 	exit 0 # success
 } catch {

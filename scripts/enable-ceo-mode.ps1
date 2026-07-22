@@ -24,13 +24,13 @@ try {
 	"⏳ Playing Big Ben..."
 	& "$PSScriptRoot/play-big-ben.ps1"
 
-	"⏳ Tell the time..."
+	"⏳ Telling the time..."
 	& "$PSScriptRoot/speak-time.ps1"
 
-	"⏳ Open VPN settings..."
+	"⏳ Launching VPN settings..."
 	& "$PSScriptRoot/open-vpn-settings.ps1"
 
-	& "$PSScriptRoot/show-notification.ps1" "CEO mode enabled."
+	& "$PSScriptRoot/show-notification.ps1" "Your CEO mode is enabled - Enjoy your day!"
 	"✅ CEO mode enabled."
 	exit 0 # success
 } catch {
