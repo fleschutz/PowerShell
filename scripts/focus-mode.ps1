@@ -2,7 +2,7 @@
 .SYNOPSIS
 	Enables the focus mode
 .DESCRIPTION
-	This PowerShell script enables the focus mode.
+	This PowerShell script activates the focus mode.
 .EXAMPLE
 	./focus-mode.ps1
 .LINK
@@ -27,14 +27,14 @@ try {
 	"⏳ Playing Big Ben..."
 	& "$PSScriptRoot/play-big-ben.ps1"
 
-	"⏳ Telling the time..."
+	"⏳ Telling the current time..."
 	& "$PSScriptRoot/speak-time.ps1"
 
 	"⏳ Launching VPN settings..."
 	& "$PSScriptRoot/open-vpn-settings.ps1"
 
-	& "$PSScriptRoot/show-notification.ps1" "Your focus mode is enabled now."
-	"✅ Focus mode enabled."
+	& "$PSScriptRoot/show-notification.ps1" "Focus mode activated."
+	"✅ Focus mode activated."
 	exit 0 # success
 } catch {
 	"⚠️ ERROR: $($Error[0]) (in line $($_.InvocationInfo.ScriptLineNumber))"
