@@ -1,20 +1,23 @@
 ﻿<#
 .SYNOPSIS
-	Enables CEO mode
+	Enables the focus mode
 .DESCRIPTION
-	This PowerShell script enables the CEO mode.
+	This PowerShell script enables the focus mode.
 .EXAMPLE
-	./enable-ceo-mode.ps1
+	./focus-mode.ps1
+.LINK
+	https://github.com/fleschutz/PowerShell
+.NOTES
+	Author: Markus Fleschutz | License: CC0
 #>
 
 #requires -version 5.1
 
 try {
 	Clear-Host
-	& "$PSScriptRoot/write-big.ps1" "CEO MODE"
+	& "$PSScriptRoot/write-big.ps1" "FOCUS MODE"
 
 	& "$PSScriptRoot/list-times.ps1"
-	& "$PSScriptRoot/speak-english.ps1" "Just a second."
 
 	"⏳ Minimizing all windows..."
 	& "$PSScriptRoot/minimize-all-windows.ps1"
@@ -30,8 +33,8 @@ try {
 	"⏳ Launching VPN settings..."
 	& "$PSScriptRoot/open-vpn-settings.ps1"
 
-	& "$PSScriptRoot/show-notification.ps1" "Your CEO mode is enabled - Enjoy your day!"
-	"✅ CEO mode enabled."
+	& "$PSScriptRoot/show-notification.ps1" "Your focus mode is enabled now."
+	"✅ Focus mode enabled."
 	exit 0 # success
 } catch {
 	"⚠️ ERROR: $($Error[0]) (in line $($_.InvocationInfo.ScriptLineNumber))"
