@@ -1,12 +1,16 @@
 ﻿<#
 .SYNOPSIS
-	Lists the submodules in a Git repository
+	Lists submodules in a Git repository
 .DESCRIPTION
-	This PowerShell script lists all submodules in the given Git repository.
+	This PowerShell script lists all submodules recursively in the given Git repository.
 .PARAMETER RepoDir
 	Specifies the path to the repository (current working directory by default)
 .EXAMPLE
 	PS> ./list-submodules.ps1 C:\MyRepo
+
+	COMMIT ID                                PATH (CURRENT HEAD)
+	---------                                -------------------
+	9f8bce66f9d170ec26cd9d8c2320740eaf4a3f57 libSI (v1.0-30-g9f8bce6)
 .LINK
 	https://github.com/fleschutz/PowerShell
 .NOTES
@@ -16,18 +20,14 @@
 param([string]$RepoDir = "$PWD")
 
 try {
-	Write-Host "⏳ (1/3) Searching for Git executable...   " -noNewline
-	& git --version
+	$null = (git --version)
 	if ($lastExitCode -ne 0) { throw "Can't execute 'git' - make sure Git is installed and available" }
 
-	$RepoDirName = (Get-Item "$RepoDir").Name
-	Write-Host "⏳ (2/3) Checking Git repository...        📂$RepoDirName"
 	if (-not(Test-Path "$RepoDir" -pathType container)) { throw "Can't access folder: $RepoDir" }
 
-	Write-Host "⏳ (3/3) Listing all submodules... "
 	""
 	" COMMIT ID                                PATH (CURRENT HEAD)"
-	" ---------------------------------------- -------------------"
+	" ---------                                -------------------"
 	& git -C "$RepoDir" submodule status --recursive
 	if ($lastExitCode -ne 0) { throw "'git submodule status' failed" }
 
