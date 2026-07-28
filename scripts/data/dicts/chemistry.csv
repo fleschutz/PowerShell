@@ -277,24 +277,16 @@ FAC,Free Available Chlorine
 FAD,Flavin Adenine Dinucleotide
 FADE,Fast Atomic Density Evaluation
 FAN,Free Amino Nitrogen
-FAS,Fluorescence Actin Staining
-FAS,Folic Acid Synthesis
+FAS,"Fluorescence Actin Staining, Folic Acid Synthesis"
 FBC,"Fesser, Bishop and Campbell model"
 FBD,Free Body Diagram
 FBR,Fast Breeder Reactor
-FC,Face Cell
-FC,Face Centered
-FC,Fragment Crystallization
-FCC,Face Centered Cubic
-FCC,Fluid Catalytic Cracking
-FCC,Food Chemical Codex
+FC,"Face Cell, Face Centered, Fragment Crystallization"
+FCC,"Face Centered Cubic, Fluid Catalytic Cracking, Food Chemical Codex"
 FCCU,Fluidized Catalytic Cracking Unit
 FCHC,Face Centered Hyper-Cubic
-FCS,Fellow of the Chemical Society
-FCS,Fire Control System
-FCS,Fluorescence Correlation Spectroscopy
-FE,Ferredoxin
-FE,Free Energy
+FCS,"Fellow of the Chemical Society, Fire Control System, Fluorescence Correlation Spectroscopy"
+FE,"Ferredoxin, Free Energy"
 Fe,Iron
 FGC,Flue Gas Conditioning
 FIGD,Flow Injection/Gas Diffusion
@@ -337,19 +329,14 @@ GER,"Gains Electrons,Reduction"
 GFM,Gram Formula Mass
 GFW,Gram Formula Weight
 GHB,Gamma-Hydroxy Butyrate
-GI,Galvanized Iron
-GI,Glycemic Index
-GLA,GaLactosidase Alpha
-GLA,Gamma-caroxyglutamic Acid
-GLA,Gamma-Linolenic Acid
+GI,"Galvanized Iron, Glycemic Index"
+GLA,"GaLactosidase Alpha, Gamma-caroxyglutamic Acid, Gamma-Linolenic Acid"
 GLC,Gas Liquid Chromatography
 Glc,Glucose
 Glk,Glucokinase
 GM,Geiger-Mueller tube
 GMM,Gram Molecular Mass
-GP,Gas Phase
-GP,Glycerate 3-Phosphate
-GP,GlycoProtein
+GP,"Gas Phase, Glycerate 3-Phosphate, GlycoProtein"
 GPC,Gel Permeation Chromatography
 GS,Guanosine Synthetase
 GT,Greater Than
@@ -359,7 +346,7 @@ Gy,"Gray (radiation unit)"
 H,"Enthalpy, Hydrogen"
 h,"hecto prefix (102), Planck’s constant, convection heat transfer coefficient"
 H2,Chemical formula for hydrogen gas (dihydrogen)
-H2O,Chemical symbol for water - each molecule of water contains two atoms of hydrogen (H) joined to a single atom of oxygen (O)
+H2O,Chemical symbol for water
 Ha,"Hahnium (initial name for dubnium)"
 HA,Hemagglutinin
 HAA,HaloAcetic Acid
@@ -392,7 +379,6 @@ HEK,HEKtoen enteric agar
 HEL,High Energy Laser
 HEMA,HydroxyEthylMethAcrylate
 HEP,Half Equivalence Point
-HEPA,High-Efficiency Particulate Air
 HEPH,Heavy Extractable Petroleum Hydrocarbons
 HEU,Highly Enriched Uranium
 Hf,Hafnium
@@ -431,9 +417,7 @@ Hs,Hassium
 HS,Hidden States
 HSAB,Hard and Soft Acids and Bases
 HSV,High Shear Viscosity
-HT,Heat Transport
-HT,Heat Treated
-HT,High Temperature
+HT,"Heat Transport, Heat Treated, High Temperature"
 HTC,Heat Transfer Coefficient
 HTGR,High Temperature Gas Reactor
 HTH,High Test Hypochlorite
