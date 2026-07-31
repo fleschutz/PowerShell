@@ -101,5 +101,5 @@ foreach($i in 1 .. $insults) {
 	$adjective1 = $adjectives | Get-Random
 	$adjective2 = $adjectives | Get-Random
 	$noun = $nouns | Get-Random
-	Write-Output "You $adjective1 $adjective2 $noun!"
+	Write-Output "You $adjective1, $adjective2 $noun!"
 }
