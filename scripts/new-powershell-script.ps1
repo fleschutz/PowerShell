@@ -7,7 +7,7 @@
 	Specifies the path and new filename ("bot.ps1" by default)
 .EXAMPLE
 	PS> ./new-powershell-script.ps1 
-	✅ New PowerShell script 'bot.ps1' created from template 'PowerShell.ps1'.
+	✅ New 'bot.ps1' created (template is from data/templates/New.ps1).
 .LINK
 	https://github.com/fleschutz/PowerShell
 .NOTES
@@ -23,7 +23,7 @@ try {
 	Copy-Item $pathToTemplate "$path"
 	if ($lastExitCode -ne 0) { throw "Can't copy to: $path" }
 
-	"✅ New '$path' created (from data/templates/New.ps1)."
+	"✅ New '$path' created (template is from data/templates/New.ps1)."
 	exit 0 # success
 } catch {
 	"⚠️ ERROR: $($Error[0]) (script line $($_.InvocationInfo.ScriptLineNumber))"

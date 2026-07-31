@@ -7,7 +7,7 @@
 	Specifies the path and new filename ('Jenkinsfile' by default)
 .EXAMPLE
 	PS> ./new-jenkinsfile.ps1 
-	✅ New 'Jenkinsfile' created (from data/templates/New.jenkinsfile).
+	✅ New 'Jenkinsfile' created (template is from data/templates/New.jenkinsfile).
 .LINK
 	https://github.com/fleschutz/PowerShell
 .NOTES
@@ -23,7 +23,7 @@ try {
 	Copy-Item $pathToTemplate "$path"
 	if ($lastExitCode -ne 0) { throw "Can't copy template to: $path" }
 
-	"✅ New '$path' created (from data/templates/)."
+	"✅ New '$path' created (template is from data/templates/)."
 	exit 0 # success
 } catch {
 	"⚠️ ERROR: $($Error[0]) (script line $($_.InvocationInfo.ScriptLineNumber))"

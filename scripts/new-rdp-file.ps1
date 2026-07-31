@@ -7,7 +7,7 @@
 	Specifies the path and new filename (SERVER.rdp by default)
 .EXAMPLE
 	PS> ./new-rdp.ps1 
-	✅ New 'SERVER.rdp' created (from data/templates/New.rdp).
+	✅ New 'SERVER.rdp' created (template is from data/templates/New.rdp).
 .LINK
 	https://github.com/fleschutz/PowerShell
 .NOTES
@@ -23,7 +23,7 @@ try {
 	Copy-Item $pathToTemplate "$path"
 	if ($lastExitCode -ne 0) { throw "Can't copy template to: $path" }
 
-	"✅ New '$path' created (from data/templates/New.rdp)."
+	"✅ New '$path' created (template is from data/templates/New.rdp)."
 	exit 0 # success
 } catch {
 	"⚠️ ERROR: $($Error[0]) (script line $($_.InvocationInfo.ScriptLineNumber))"

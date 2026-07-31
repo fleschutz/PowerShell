@@ -13,6 +13,8 @@
 	...
 .LINK
 	https://github.com/fleschutz/PowerShell
+.NOTES
+	Author: Markus Fleschutz | License: CC0
 #>
 
 param([string]$color = "green", [int]$speed = 200) # milliseconds
