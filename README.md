@@ -374,7 +374,7 @@ Mega Collection of PowerShell Scripts
 ---------------
 * Contributions, suggestions, and improvements are welcome!
 * Open an [Issue](https://github.com/fleschutz/PowerShell/issues) if you encounter bugs or have feature ideas.
-* Create a [Pull Request](https://github.com/fleschutz/PowerShell/pulls) if you'd like to improve a script.
+* Create a [Pull Request](https://github.com/fleschutz/PowerShell/pulls) if you'd like to improve something.
 
 
 📜 License & Copyright
