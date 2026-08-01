@@ -7,7 +7,7 @@
 	Specifies the path and new filename (README.md by default)
 .EXAMPLE
 	PS> ./new-markdown-file.ps1 
-	✅ New 'README.md' created (from data/templates/New.md).
+	✅ New 'README.md' created (template is from data/templates/New.md).
 .LINK
 	https://github.com/fleschutz/PowerShell
 .NOTES
@@ -23,7 +23,7 @@ try {
 	Copy-Item $pathToTemplate "$path"
 	if ($lastExitCode -ne 0) { throw "Can't copy template to: $path" }
 
-	"✅ New '$path' created (from data/templates/New.md)."
+	"✅ New '$path' created (template is from data/templates/New.md)."
 	exit 0 # success
 } catch {
 	"⚠️ ERROR: $($Error[0]) (script line $($_.InvocationInfo.ScriptLineNumber))"
