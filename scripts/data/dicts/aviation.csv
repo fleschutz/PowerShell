@@ -31,9 +31,11 @@ AAIB,Air Accidents Investigation Branch (UK)
 AAIM,Aircraft Autonomous Integrity Monitoring
 AAM,Advanced Air Mobility
 AAMS,Aircraft Arrival Management System
+AAR,"Air-to-Air Refuelling, Airport Arrival Rate"
 AARTS,Army Aviation Radar Training System
 AAO,Assumed Adverse Obstacle
 AAS,Airport Advisory Service
+AAV,Advanced Air Vehicle
 AB,"Air Base, Afterburner"
 ABI,Advanced Boundary Information
 AC,Aircraft
@@ -43,33 +45,45 @@ ACARS,Aircraft Communications Addressing and Reporting System
 ACAS,Airborne Collision Avoidance System
 ACC,Area Control Center
 ACE,Airport airside Capacity Enhancement
+ACF,Air Combat Fighter
 ACFT,Aircraft
 ACI,"Airports Council International, Area of Common Interest"
+ACIPS,Airfoil and Cowl Ice Protection System
+ACL,Anti Collision Light
 ACM,Air Combat Maneuvering
 ACP,Accept
 AD,Air Defence
 ADAC,Abu Dhabi Airports
+ADC,Air Data Computer
+ADDU,Air Data Display Unit
 ADEP,Aerodrome of Departure
 ADES,Aerodrome of Destination
 ADF,Automatic Direction Finding
 ADI,Automatic De-Ice and Inhibitor
 ADIRS,Air Data and Inertial Reference System
 ADIRU,Air Data Inertial Reference Unit
-ADIZ,Air Defense Identification Zone
+ADIZ,Air Defense (and) Identification Zone
 ADL,Aeronautical Data Link
 ADLY,Arrival Delay
 ADP,Aerodrome dé Paris (Charles de Gaulle)
 ADP,Automated Data Processing
+ADRT,Alternate Departure Route
 ADS,"Automated Distribution System, Automatic Dependent Surveillance, Aircraft Docking System"
 ADS-B,Automatic Dependent Surveillance-Broadcast
+AEIS,Aeronautical Enroute Information Service
 AENA,Aeropuertos Españoles y Navegación Aérea
-AEO,All Engines Operative
+AEO,All Engines Operating
 AERA,Automated En-Route Air Traffic Control
 AEW,Airborne Early Warning
 AF,Air Field
+AFC,Automatic Frequency Control
 AFCS,Automatic Flight Control System
+AFGS,Automatic Flight Guidance System
+AFE,Above Field Elevation
 AFI,Air Force Instruction
 AFIS,Aerodrome Flight Information Service
+AFL,Above Field Level
+AFR,Air Fuel Ratio
 AFTN,Aeronautical Fixed Telecommunication Network
 AFM,Aircraft Flight Manual
 AGAS,Action Group for ATM Safety (EUROCONTROL)
@@ -90,6 +104,7 @@ AIRMET,Airmen's Meteorological Information
 AIRNAV,Airports and Navigation Aids Database System
 AIRNET,Airport Network Simulation Model
 AIRPAC,Advisor for the Intelligent Resolution of Predicted Aircraft
+ALARP,As Low as Reasonably Practical
 ALO,Aviation Logistics Organization
 ALP,Airport Layout Plan
 ALPA,Air Line Pilots Association
@@ -223,6 +238,7 @@ CMA,Controlled Movement Area
 CMIC,Civil/Military Interface Standing Committee
 CNS,"Communication, Navigation, Surveillance"
 CODA,Central Office for Delay Analysis
+COMM,Communication
 ConOps,Concept of Operations
 COPS,Changeover Point(s)
 CORA,Conflict Resolution Advisory
