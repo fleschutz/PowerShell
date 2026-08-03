@@ -263,6 +263,7 @@ CW,Cold Weather
 CWS,Collision Warning System
 CWP,Controller Working Position
 CWY,Clearway
+CZ,Control Zone
 DA,Density Altitude
 DAS,DFS Aviation Services (DFS subcompany for services outside Germany)
 DCIA,Dependent Converging Instrument Approach
@@ -275,10 +276,13 @@ DFS,Deutsche Flugsicherung (ATC in Germany)
 DGAC,Direction Générale de l'Aviation Civile
 DLA,Defense Logistics Agency
 DLS,Data Link Service
+DMAN,Departure Manager
 DME,Distance Measuring Equipment
 DP,Departure Procedure
 DS,Dust Storm (METAR code)
 DSNA,Direction des Services de la Navigation Aérienne 
+DT,Displaced Threshold
+DTED,Digital Terrain Elevation Data
 DTI,Direction Technique Innovation
 DU,Dust (METAR code)
 DVA,Diverse Vector Area
