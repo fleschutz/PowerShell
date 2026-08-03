@@ -7,25 +7,29 @@
 	Specifies the path and new filename ('NEW.txt' by default)
 .EXAMPLE
 	PS> ./new-file.ps1 
-	✅ Created a new file 'NEW.txt' based on '.txt' template.
+	✅ New 'NEW.txt' created in 0s (based on '.txt' template).
 .LINK
 	https://github.com/fleschutz/PowerShell
 .NOTES
 	Author: Markus Fleschutz | License: CC0
 #>
 
-param([string]$path = "NEW.txt", [string]$suffix = ".txt")
+param([string]$path = "NEW.txt")
 
 try {
+	$stopWatch = [system.diagnostics.stopwatch]::startNew()
+
 	if (Test-Path "$path" -pathType leaf) { throw "File '$path' is already existing" }
 
-	$pathToTemplate = "$PSScriptRoot/data/templates/new.$($suffix)" 
-	if (-not(Test-Path "$pathToTemplate" -pathType leaf)) { throw "No template file 'new.$($suffix)' yet - Please add one" }
+	$suffix = (Split-Path -Path $path -Leaf).Split(".")[1]
 
-	Copy-Item $pathToTemplate "$path"
-	if ($lastExitCode -ne 0) { throw "Can't copy template file to: $path" }
+	$templateFile = "$PSScriptRoot/data/templates/new.$($suffix)" 
+	if (-not(Test-Path "$templateFile" -pathType leaf)) { throw "No template file 'new.$($suffix)' yet - Please add one" }
 
-	"✅ Created a new file '$path' based on '$suffix' template."
+	Copy-Item $templateFile "$path"
+
+	[int]$elapsed = $stopWatch.Elapsed.TotalSeconds
+	"✅ New '$path' created in $($elapsed)s (based on '.$suffix' template)."
 	exit 0 # success
 } catch {
 	"⚠️ ERROR: $($Error[0]) (script line $($_.InvocationInfo.ScriptLineNumber))"
