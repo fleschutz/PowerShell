@@ -124,9 +124,9 @@
 
 <details><summary>Why do some scripts show gibberish characters?</summary>
   
-**Your current terminal application doesn't support Unicode characters used by those PowerShell scripts.**
+**Older terminal applications aren't supporting Unicode characters used in the PowerShell scripts.**
 
-**Use a modern one such as *Windows Terminal*, please.**
+**Please use a modern terminal application such as *Windows Terminal*.**
 </details>
 
 <details><summary>How to set a custom PowerShell profile?</summary>
@@ -182,10 +182,6 @@ Want to use the PowerShell scripts everywhere on the command-line? Then you need
 * On success exit with error code 0 (**exit 0**), otherwise print the error with keyword **ERROR:** (to support log parsers) and exit the error code (mostly 1)
  </details>
 
-<details><summary>Where's the Star History of this repository?</summary>
-    
-[![Star History Chart](https://api.star-history.com/svg?repos=fleschutz/PowerShell&type=Date)](https://star-history.com/#fleschutz/PowerShell&Date)
-</details>
 
 <details><summary>How to contribute or how to report a bug?</summary>
 
