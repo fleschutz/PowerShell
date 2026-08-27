@@ -16,38 +16,41 @@
 try {
 	$stopWatch = [system.diagnostics.stopwatch]::startNew()
 
-	"⏳ 10% - Clearing user's trash folder..."
-	Clear-RecycleBin -Confirm:$false
+	"⏳ 00% - Clearing user's trash folder..."
+	Clear-RecycleBin -confirm:$false
 
-	"⏳ 20% - Clearing user's temporary folder..."
+	"⏳ 10% - Clearing user's temporary folder..."
 	if (Test-Path "$env:TEMP/" -pathType container) { 
-		Remove-Item -Path "$env:TEMP\*" -Recurse -Force -ErrorAction SilentlyContinue
+		Remove-Item -path "$env:TEMP\*" -recurse -force -errorAction SilentlyContinue
 	} else {
 		"  Folder is non-existing"
 	}
 	
-	"⏳ 30% - Clearing user's crash dump folder..."
+	"⏳ 20% - Clearing user's crash dump folder..."
 	if (Test-Path "~/AppData/Local/CrashDumps/" -pathType container) { 
 		Remove-Item -Path "~/AppData/Local/CrashDumps/*" -Recurse -Force -ErrorAction SilentlyContinue
 	} else {
 		"  Folder is non-existing"
 	}
 
-	"⏳ 40% - Clearing Windows temporary folder..."
-	Remove-Item -Path "$env:SystemRoot\Temp\*" -Recurse -Force -ErrorAction SilentlyContinue
+	"⏳ 30% - Clearing Windows temporary folder..."
+	Remove-Item -path "$env:SystemRoot\Temp\*" -recurse -force -errorAction SilentlyContinue
 
-	"⏳ 50% - Clearing Windows prefetch folder..."
-	Remove-Item -Path "$env:SystemRoot\Prefetch\*" -Force -ErrorAction SilentlyContinue
+	"⏳ 40% - Clearing Windows prefetch folder..."
+	Remove-Item -path "$env:SystemRoot\Prefetch\*" -force -errorAction SilentlyContinue
+
+	"⏳ 50% - Clearing Windows update cache folder..."
+	Remove-Item -path "$env:SystemRoot\SoftwareDistribution\Download\*" -recurse -force -errorAction SilentlyContinue
 
 	"⏳ 60% - Clearing Windows DNS cache..."
 	Clear-DnsClientCache
 
 	"⏳ 70% - Clearing Windows File Explorer caches..."
-	Remove-Item -Path "$env:LOCALAPPDATA\IconCache.db" -Force -ErrorAction SilentlyContinue
-	Remove-Item -Path "$env:LOCALAPPDATA\Microsoft\Windows\Explorer\*.db" -Force -ErrorAction SilentlyContinue
+	Remove-Item -path "$env:LOCALAPPDATA\IconCache.db" -force -errorAction SilentlyContinue
+	Remove-Item -path "$env:LOCALAPPDATA\Microsoft\Windows\Explorer\*.db" -force -errorAction SilentlyContinue
 
 	"⏳ 80% - Clearing Internet Explorer cache folder..."
-	Remove-Item -Path "$env:LOCALAPPDATA\Microsoft\Windows\INetCache\*" -Recurse -Force -ErrorAction SilentlyContinue
+	Remove-Item -path "$env:LOCALAPPDATA\Microsoft\Windows\INetCache\*" -recurse -force -errorAction SilentlyContinue
 
 	"⏳ 90% - Performing disk cleanup..."
 	& cleanmgr /sagerun:1
