@@ -41,9 +41,12 @@ try {
 
 	"⏳ 50% - Clearing Windows update cache folder..."
 	Remove-Item -path "$env:SystemRoot\SoftwareDistribution\Download\*" -recurse -force -errorAction SilentlyContinue
+	"⏳ 55% - Clearing Windows Store cache..."
+	& WSReset.exe
 
 	"⏳ 60% - Clearing Windows DNS cache..."
 	Clear-DnsClientCache
+	& ipconfig /flushdns
 
 	"⏳ 70% - Clearing Windows File Explorer caches..."
 	Remove-Item -path "$env:LOCALAPPDATA\IconCache.db" -force -errorAction SilentlyContinue
