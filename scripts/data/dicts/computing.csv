@@ -304,11 +304,11 @@ BEx,Business Explorer
 BGAN,Broadband Global Area Network
 BGP,Border Gateway Protocol
 BHIE,Bidirectional Health Information Exchange
-BI,business intelligence
-BIA,business impact analysis
-BIC,"bank identifier code, Best In Class, business information center"
+BI,Business Intelligence
+BIA,Business Impact Analysis
+BIC,"Bank Identifier Code, Best In Class, Business Information Center"
 BICC,Bearer Independent Call Control
-BICC,business intelligence competency center
+BICC,Business Intelligence Competency Center
 BIOS,Basic Input/Output System
 BISDN,Broadband Integrated Services Digital Network
 BIST,Built In Self Test
@@ -316,7 +316,7 @@ bit,binary digit
 BLE,Bluetooth Low Energy
 BLOB,Binary Large OBject
 BMAN,Broadband Metropolitan Area Network
-BMC,baseboard management controller
+BMC,Baseboard Management Controller
 BMP,Best Manufacturing Practices
 BMP,Bitmap
 BMS,Battery Management System
@@ -324,7 +324,7 @@ BNC,Bayonet Neil-Concelman or British Naval Connector
 BOB,Branch Office Box
 BOC,Bell operating company
 BOH,Balance On Hand
-BOL,beginning of life
+BOL,Beginning Of Life
 BOM,Bill Of Materials
 BOOTP,Bootstrap Protocol
 BP&F,"budgeting, planning and forecasting"
@@ -334,89 +334,81 @@ BPCS,Business Planning and Control System
 BPEL,Business Process Execution Language
 BPI,Business Process Improvement
 BPL,Broadband over Power Line
-BPM,business process management
+BPM,Business Process Management
 BPMI,Business Process Management Initiative
 BPML,Business Process Modeling Language
 BPMN,Business Process Modeling Notation
-BPMS,Business process management suite
-BPO,business process outsourcing
+BPMS,Business Process Management Suite
+BPO,Business Process Outsourcing
 BPR,Business Process Reengineering
-bps,bit/sec bits per second
-BPS,bulk power system
-BRE,business rules engine
+bps,bits per second (bit/sec)
+BPS,Bulk Power System
+BRE,Business Rules Engine
 BREW,Binary Runtime Environment for Wireless
 BRI,Basic Rate Interface
 BSA,Bank Secrecy Act
 BSA,Business Software Alliance
 BSD,Berkeley Software Distribution
 BSOD,Blue Screen of Death
-BSP,business service provider
-BT,business technology
+BSP,Business Service Provider
+BT,Business Technology
 BTF,Build To Forecast
-BTM,business technology management
+BTM,Business Technology Management
 BTO,Build To Order
 BTOP,Broadband Technology Opportunities Program
 BTP,Business Transaction Protocol
 BTS,Build To Stock
 Btu,British thermal unit
 BTX,Balanced Technology eXtended (a form factor for personal computer motherboards)
-BU,backup utility
-BURN-Proof,Buffer Under Run Error Proof
-burst SRAM,SynchBurst SRAM
+BU,Backup Utility
 BYOA,Bring Your Own Apps
 BYOC,Bring Your Own Cloud
 BYOD,Bring Your Own Device
 BYOE,Bring Your Own Encryption
 BYOI,Bring Your Own Identity
 BYON,Bring Your Own Network
-BYOT,bring your own technology
-BYOx,bring your own everything
-C&C,server command-and-control server
+BYOT,Bring Your Own Technology
+BYOx,Bring Your Own everything
+C&C,Command-and-Control
 C2C,Client to Client
-CA,cellular automaton
-CA,certificate authority
+CA,"Cellular Automation, Certificate Authority"
 CaaS,Communications as a Service
-CAC,call admission control
-CAC,common access card
-CACS,computer assisted coding system
+CAC,"Call Admission Control, Common Access Card"
+CACS,Computer Assisted Coding System
 CAD,Computer-Aided Design
 CAD/CAM,computer-aided design/computer-aided manufacturing
 CADE,Corporate Average Data center Efficiency
 CAE,Computer-Aided Engineering
-CAES,compressed air energy storage
+CAES,Compressed Air Energy Storage
 CAFC,Container on Flat Car
 CAFE,Corporate Average Fuel Economy
 CAGR,Compound Annual Growth Rate
 CAIV,Cost As (An) Independent Variable
 CALEA,Communications Assistance for Law Enforcement Act
 CALS,Continuous Acquisition and Life-Cycle Support
-CAM,Computer-Aided Manufacturing
-CAM,corporate account manager
+CAM,"Computer-Aided Manufacturing, Corporate Account Manager"
 CAM-I,Consortium for Advanced Manufacturing -- International
 CAMM,Common Assurance Maturity Model
 CAMU,Computerized Assembly Mock Up
-CAN,Campus Area Network
-CAN,corporate area network
-CAP,carrierless amplitude/phase
-CAP,theorem Brewer's theorem
+CAN,"Campus Area Network, Corporate Area Network"
+CAP,"Carrierless Amplitude/Phase, theorem Brewer's theorem"
 Capex,capital expenditure
 CAPI,Common Application Programming Interface
-CAPM,cloud application performance management
+CAPM,Cloud Application Performance Management
 CAPOSS,CApacity Planning and Operation Sequence Scheduling
-CAPP,Computer-aided process planning
+CAPP,Computer-Aided Process Planning
 CAPTCHA,Completely Automated Public Turing Test to tell Computers and Humans Apart
-CAS,channel-associated signaling
+CAS,Channel-Associated Signaling
 CAS,Client Access Server
-CAS,content-addressed storage
+CAS,Content-Addressed Storage
 CASA,Computer and Automated Systems Association
-CASE,computer-aided software engineering
-CASE,Computer-Aided System Engineering
-CATT,Computer Aided Test Tool
-CATV,community access television
+CASE,"Computer-Aided Software Engineering, Computer-Aided System Engineering"
+CATT,Computer-Aided Test Tool
+CATV,Community Access TeleVision
 CAVE,Cave Automatic Virtual Environment
 CB,Citizen's Band Radio
-CBA,cost-benefit analysis
-CBC,cipher block chaining
+CBA,Cost-Benefit Analysis
+CBC,Cipher Block Chaining
 CBSA,Component Based Solution Assembly
 CBT,Changed Block Tracking
 CBT,Computer-Based Training
@@ -426,73 +418,70 @@ CCD,"Charge-Coupled Device, Continuity of Care Document"
 CCEVS,Common Criteria Evaluation and Validation Scheme for IT Security
 CCIE,Cisco Certified Internetwork Expert
 CCITT,ITU-T Telecommunication Standardization Sector of the International Telecommunications
-CCJ,collaborative citizen journalism
+CCJ,Collaborative Citizen Journalism
 CCK,Complementary Code Keying
 CCM,Color Changing Material
-CCMM,cloud computing maturity model
+CCMM,Cloud Computing Maturity Model
 CCMP,Counter Mode with Cipher Block Chaining Message Authentication Code Protocol
 CCNA,Cisco Certified Network Associate 
 CCNP,Cisco Certified Network Professional
-CCO,chief customer officer
+CCO,Chief Customer Officer
 CCO,Corporate or Chief Compliance Officer
 CCR,Central Contractor Registration
 CCR,Continuity of Care Record
-CCS,common channel signaling
+CCS,Common Channel Signaling
 CCS,hundred call second or centum call second
 CCSP,Cisco Certified Security Professional
-CCTV,closed circuit television
-CD,cardholder data
-CD,Continuous Delivery
-CD,Compact Disc
+CCTV,Closed Circuit TeleVision
+CD,"Continuous Delivery, Cardholder Data, Compact Disc"
 CD-i,Compact Disc - interactive
 CD-MO,CD-Magneto Optical
 CD-R,"compact disc, recordable"
 CD-ROM XA,"Compact Disc - read-only-memory, extended architecture"
 CD-RW,"compact disc, rewriteable"
 CDA,Clinical Document Architecture
-CDC,change data capture
-CDD,contract delivery date
+CDC,Change Data Capture
+CDD,Contract Delivery Date
 CDDI,Copper Distributed Data Interface
-CDE,cardholder data environment
-CDE,Common Desktop Environment
+CDE,"Cardholder Data Environment, Common Desktop Environment"
 CDF,Channel Definition Format
-CDI,customer data integration
+CDI,Customer Data Integration
 CDMA,Code-Division Multiple Access
-CDN,content delivery network
-CDO,chief data officer
+CDN,Content Delivery Network
+CDO,Chief Data Officer
 CDO,Chief Digital Officer
 CDO,Collaboration Data Objects
-CDP,clean desk policy
+CDP,Clean Desk Policy
 CDPD,Cellular Digital Packet Data
-CDR,call detail record
+CDR,Call Detail Record
 CDR,Computed Dental Radiography
 CDSL,Consumer Digital Subscriber Line
-CDSS,clinical decision support system
+CDSS,Clinical Decision Support System
 CDU,Coolant Distribution Unit
 CdTe,cadmium telluride
-CEBP,communications-enabled business processes
+CEBP,Communications-Enabled Business Processes
 CELL,Cell processor
-CEM,customer experience management
+CEM,Customer Experience Management
 CEMS,Contract Electronic Manufacturing Services
-CEP,complex event processing
+CEP,Complex Event Processing
 CERCLA,"Comprehensive Environmental Response, Compensation and Litigation Act"
 CERT,"Computer Emergency Response Team, Computer Emergency Readiness Team"
 CES,Consumer Electronics Show
 CF,CompactFlash card
 CFAA,Computer Fraud and Abuse Act
 CFAR,Collaboration Forecasting and Replenishment
-CFB,ciphertext feedback
+CFB,Ciphertext FeedBack
 CFD,Computational Fluid Dynamics
-CFI,custom factory integration
-CFL,compact fluorescent light bulb
+CFI,Custom Factory Integration
+CFL,Compact Fluorescent Light bulb
 CFM,Continuous Flow Manufacturing
 CFML,ColdFusion Markup Language
 CFO,Chief Financial Officer
-CFR,call failure rate
+CFR,Call Failure Rate
 CG,Consumer Goods
 CGDC,Computer Game Developers Conference (became GDC in 1998)
 CGF,Computer-Generated Forces (Simulation)
-CGI,common gateway interface
+CGI,Common Gateway Interface
 CGM,Computer Graphics Metafile
 CGMP,Current Good Manufacturing Practices
 CGO,Chief Green Officer
@@ -503,12 +492,9 @@ CHI,Consolidated Health Informatics
 CHIME,College of Healthcare Information Management Executives
 CHKDSK,check disk
 chmod,change mode
-CHRO,chief human resources officer
+CHRO,Chief Human Resources Officer
 CHTML,Compact HTML
-CI,competitive intelligence
-CI,Continuous Improvement
-CI,continuous integration
-CI,customer intelligence
+CI,"competitive intelligence, Continuous Improvement, continuous integration, customer intelligence"
 CIA,"confidentiality, integrity, and availability"
 CICS,Customer Information Control System
 CIDM,Customer-Integrated Decision Making
