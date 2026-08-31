@@ -2,7 +2,8 @@
 .SYNOPSIS
         Uninstalls bloatware
 .DESCRIPTION
-        This PowerShell script uninstalls unnecessary software and applications.
+        This PowerShell script uninstalls unnecessary or unwanted software and applications.
+	Execute this script on a fresh Windows installation to get rid of all the bloatware.
 .EXAMPLE
         PS> ./uninstall-bloatware.ps1
 .LINK
@@ -77,5 +78,5 @@
 & winget uninstall 'LinkedIn'
 & winget uninstall 'Prime Video for Windows'
 
-"✅ Bloatware removed."
+"✅ All bloatware removed."
 exit 0 # success
