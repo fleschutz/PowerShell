@@ -57,7 +57,7 @@ try {
 	if ($lastExitCode -ne 0) { throw "'git push origin main' failed" }
 
 	[int]$elapsed = $stopWatch.Elapsed.TotalSeconds
-	"✅ Updated submodule '$Submodule' in Git repo 📂$RepoDir in $($elapsed)s."
+	"✅ Updated '$Submodule' submodule in Git repo 📂$RepoDir in $($elapsed)s."
 	exit 0 # success
 } catch {
 	"⚠️ ERROR: $($Error[0]) (script line $($_.InvocationInfo.ScriptLineNumber))"
