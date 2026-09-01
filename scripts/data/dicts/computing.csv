@@ -2510,14 +2510,15 @@ TMQL,Topic Map Query Language
 TMS,Transportation Management System
 TN,display twisted nematic display
 TOC,Theory of Constraints
+TOCTOU,Time of Check to Time of Use
 TOE,TCP/IP offload engine
-TOE,unified field theory or Theory of Everything
+TOE,Theory Of Everything or unified field theory
 TOGAF,The Open Group Architecture Framework
-TOLED,transparent organic light-emitting device
+TOLED,Transparent Organic Light-Emitting Device
 TOP,Technical Office Protocol
 TOPS,Team Oriented Problem Solving
-TOTP,time-based one-time password
-TP,thin provisioning
+TOTP,Time-based One-Time Password
+TP,Thin Provisioning
 TPA,Technology and Product Assurance
 TPC,Transaction Processing Performance Council
 TPI,Total Profit Improvement
@@ -2535,36 +2536,36 @@ TSAP,Transport Services Access Point
 TSCA,Toxic Substances Control Act
 TSR,terminate and stay resident
 TTL,"time-to-live, transistor-to-transistor logic"
-TTS,text-to-speech
-TtV,time to value
+TTS,Text-To-Speech
+TtV,Time to Value
 TTY,teletypewriter
 TURN,Traversal Using Relay NAT
 TVA,Throughput Value Added
-TW,tin whiskers
+TW,Tin Whiskers
 TWG,Technology Working Group
-TWT,traveling-wave tube
+TWT,Traveling-Wave Tube
 U2U,User to User
 UART,Universal Asynchronous Receiver/Transmitter
-UAT,user acceptance testing
-UBE,unsolicited bulk email
+UAT,User Acceptance Testing
+UBE,Unsolicited Bulk Email
 UBL,Universal Business Language
 UC,Unit Cost
 UCaaS,Unified Communications as a Service
-UCE,unsolicited commercial email
-UCS,unified computing system
+UCE,Unsolicited Commercial Email
+UCS,Unified Computing System
 UDA,Universal Data Access
 UDDI,"Universal Description, Discovery, and Integration"
 UDF,Universal Disk Format
-UDID,unique device identifier
-UDO,ultra density optical
+UDID,Unique Device Identifier
+UDO,Ultra Density Optical
 UDP,User Datagram Protocol
 UEFI,Unified Extensible Firmware Interface
-UGC,user-generated content
+UGC,User-Generated Content
 UHDTV,Ultra High-Definition TV
-UHDV,ultra high definition video
-UI,user interface
-UIA,user installed application
-UID,unique identifier
+UHDV,Ultra High Definition Video
+UI,User Interface
+UIA,User Installed Application
+UID,Unique Identifier
 UIML,User Interface Markup Language
 ULA,Oracle Unlimited License Agreement
 UM,unified messaging 
@@ -2582,31 +2583,31 @@ USART,"Universal Synchronous/Asynchronous Receiver/Transmitter"
 USB,Universal Serial Bus
 USGCB,United States Government Configuration Baseline
 USITC,United States International Trade Commission
-USP,unique selling point
+USP,Unique Selling Point
 USR,"Universal System Resources (the /usr directory in a *NIX filesystem)"
 USSD,Unstructured Supplementary Service Data
 UTF,Unicode Transformation Format
-UTM,unified threat management
+UTM,Unified Threat Management
 UUCP,UNIX-to-UNIX Copy Protocol
 UUID,Universally Unique Identifier (see also GUID)
 UX,user experience
 UXGA,Ultra Extended Graphics Array
-V2P,virtual to physical
-V2V,Virtual to virtual
+V2P,Virtual to Physical
+V2V,Virtual to Virtual
 VAAI,vStorage APIs for Array Integration
 VAD,Value Added Distribution
-VAD,voice activation detection 
+VAD,Voice Activation Detection 
 VAMP,vStorage API for Multipathing
-VAN,value-added network
+VAN,Value-Added Network
 VAR,Value-Added Reseller
 VASA,vStorage APIs for Storage Awareness
 VAX,Virtual Address eXtension
 VB,Visual Basic
-VBI,vertical blanking interval
-VBN,visitor-based networking
+VBI,Vertical Blanking Interval
+VBN,Visitor-Based Networking
 vBNS,very high-speed Backbone Network Service
 VBR,Vouch by Reference
-VC,venture capital
+VC,Venture Capital
 vCAC,VMware vCloud Automation Center
 VCB,VMware Consolidated Backup
 VCD,video CD or video compact disc
@@ -2615,65 +2616,63 @@ vCLI,vSphere CLI
 VCP,VMware Capacity Planner
 VCP,VMware Certified Professional
 vCPU,virtual CPU
-VCR,videocassette recorder
-VCSEL,vertical cavity surface emitting laser
+VCR,VideoCassette Recorder
+VCSEL,Vertical Cavity Surface Emitting Laser
 vCSHB,VMware vCenter Server Heartbeat
 VDA,Virtual Desktop Access
 vDGA,Virtual Dedicated Graphics Acceleration
-VDI,virtual desktop infrastructure
+VDI,Virtual Desktop Infrastructure
 VDT,"video display terminal or visual display terminal"
-VDU,video display unit
+VDU,Video Display Unit
 VE,Value Engineering
 VERIS,Vocabulary for Event Recording and Incident Sharing
 VFAT,Virtual File Allocation Table 
 VFIIP,Virtual Factory Information Interchange Project
-VFS,virtual file system
-vGPU,virtual GPU
-VHD,virtual hard disk
+VFS,Virtual File System
+vGPU,Virtual GPU
+VHD,Virtual Hard Disk
 VHDCI,Very High Density Cable Interconnect
 VHDX,Hyper-V virtual hard disk
 VHE,Virtual Home Environment
-VHF,very high frequency
+VHF,Very High Frequency
 VHS,Video Home System
 VI3,VMware Infrastructure 3
 VIM,Vendor Independent Messaging
 Vim,Vi improved
-VITC,vertical interval time code
+VITC,Vertical Interval Time Code
 VLAN,Virtual Local Area Network
 VLDB,Very Large Database
-VLE,virtual learning environment
+VLE,Virtual Learning Environment
 VLER,Virtual Lifetime Electronic Record
-VLIW,very long instruction word
-vlog,video blog
+VLIW,Very Long Instruction Word
+vlog,Video Blog
 VLOP,Very Large Online Platform
 VLSI,Very Large Scale Integration
-VLSM,variable-length subnet mask
-VM,virtual machine
+VLSM,Variable-Length Subnet Mask
+VM,Virtual Machine
 VMBus,Microsoft Virtual Machine Bus
 VMEbus,VersaModular Eurocard bus
 VMI,Vendor Managed Inventory
-VML,vector graphics rendering 
 VML,Vector Markup Language
-VMLM,virtual machine lifecycle management
-VMM,virtual machine monitor
-VMO,vendor management office
+VMLM,Virtual Machine Lifecycle Management
+VMM,Virtual Machine Monitor
+VMO,Vendor Management Office
 VMQ,Virtual Machine Queue
 VMS,Virtual Memory System
 VMUG,VMware User Group
-VMXNET3,VMXNET Generation 3
-VNC,virtual network computing
-vNUMA,virtual NUMA
+VNC,Virtual Network Computing
+vNUMA,Virtual NUMA
 VOB,Versioned Object Base
 VOC,voice of the customer
-VoD,video on demand
-VoIP,voice over IP
+VoD,Video on Demand
+VoIP,Voice over IP
 VOIPSA,Voice over IP Security Alliance
 VOVA,vSphere OpenStack Virtual Appliance
 VoWLAN,Voice over WLAN
 VoxML,Voice Markup Language
-VP,value proposition
-VPD,virtual private database
-VPD,vital product data
+VP,Value Proposition
+VPD,Virtual Private Database
+VPD,Vital Product Data
 VPDM,Virtual Product Data Management
 VPLS,virtual private LAN service
 VPM,Virtual Product Model
@@ -2683,20 +2682,20 @@ VRAM,Video RAM
 VRF,Virtual Routing and Forwarding
 VRF,virtual routing and forwarding
 VRM,"Vendor Risk Management, or Voltage Regulator Module"
-VRM,vendor risk management
-VRM,voltage regulator module
+VRM,Vendor Risk Management
+VRM,Voltage Regulator Module
 VRML,Virtual Reality Modeling Language
 VRR,"Voice Recognition and Response, or Variable Refresh Rate"
 VRRP,Virtual Router Redundancy Protocol
 VSA,"virtual SAN appliance, Virtual Storage Appliance"
 VSAM,Virtual Storage Access Method
-VSAN,virtual storage area network
+VSAN,Virtual Storage Area Network
 VSAT,Very Small Aperture Terminal
 VSB,vestigial sideband
 VSE,Visual Studio Express
-VSM,virtual systems management
+VSM,Virtual Systems Management
 VSMP,virtual symmetric multiprocessing
-VSP,vertical solutions provider
+VSP,Vertical Solutions Provider
 VSP,Virtual Storage Portal
 VSPP,VMware Service Provider Program
 VSTO,Visual Studio Tools for Office or Microsoft Visual Studio Tools
@@ -2712,8 +2711,8 @@ W3C,World Wide Web Consortium
 WAAS,Wide Area Application Services
 WaaS,Windows as a Service
 WAE,Wide Area Ethernet
-WAF,write amplification factor
-WAFS,wide-area file services 
+WAF,Write Amplification Factor
+WAFS,Wide-Area File Services 
 WAIS,Wide Area Information Servers
 WAN,Wide Area Network
 WAP,Wireless Application Protocol
@@ -2721,24 +2720,20 @@ WAPI,WLAN Authentication and Privacy Infrastructure
 WARN,Workers' Adjustment and Retraining Notification Act
 WASC,Web Application Security Consortium
 WaSP,Web Standards Project
-WASP,wireless application service provider
-WATS,wide-area telephone service
+WASP,Wireless Application Service Provider
+WATS,Wide-Area Telephone Service
 WAX,Wireless Abstract XML
 WBEM,Web-Based Enterprise Management
 WBI,Web Intermediaries
 WBMP,Wireless Bitmap
-WBS,Work Breakdown Schedule
-WBS,work breakdown structure
-WCET,worst-case execution time
+WBS,"Work Breakdown Schedule, Work Breakdown Structure"
+WCET,Worst-Case Execution Time
 WCF,Windows Communication Foundation
-WCM,web content management
-WCM,World Class Manufacturing
-WCS,Warehouse control system
-WCS,Wireless Communications Service
-WDF,web development framework
-WDM,wavelength-division multiplexing
-WDS,Windows Deployment Services
-WDS,wireless distribution system
+WCM,"Web Content Management, World Class Manufacturing"
+WCS,"Warehouse Control System, Wireless Communications Service"
+WDF,Web Development Framework
+WDM,Wavelength-Division Multiplexing
+WDS,"Windows Deployment Services, Wireless Distribution System"
 WDSC,WebSphere Development Studio Client
 WDT,watchdog timer
 WebDAV,World Wide Web Distributed Authoring and Versioning
@@ -2759,10 +2754,8 @@ WIC,WAN interface card
 WiDEN,Wideband Integrated Digital Enhanced Network
 WIM,Windows Imaging Format
 WiMAX,Worldwide Interoperability for Microwave Access
-WIMP,"windows, icons, mouse, and pull-down menus"
-WIMP,Woefully Inept Manufacturing Process
-WinDirStat,Windows Directory Statistics
-Wine,Wine is not an emulator
+WIMP,"windows, icons, mouse, and pull-down menus, or: Woefully Inept Manufacturing Process"
+Wine,Wine Is Not an Emulator
 WinFS,Windows File System
 WinFX,.NET 3.0
 WinPE,Microsoft Windows Preinstallation Environment
@@ -2790,7 +2783,7 @@ WPF,Windows Presentation Foundation
 WRAM,Window RAM
 WSA,Windows Subsystem for Android
 WSCI,Web Service Choreography Interface
-WSD,white space device
+WSD,White Space Device
 WSDL,Web Services Description Language
 WSFC,Windows Server Failover Clustering
 WSL,Windows Subsystem for Linux
