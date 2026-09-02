@@ -11,8 +11,8 @@
 	Specifies the animation speed in milliseconds (default: 10)
 .EXAMPLE
 	PS> ./watch-news.ps1
-	                  Yahoo News - Latest News & Headlines (https://www.yahoo.com/news/world, UTC times)
-                                              -----------------------------
+	                Yahoo News - Latest News & Headlines • https://www.yahoo.com/news/world • UTC times
+                                                        *
                                Swiss yodelling joins world cultural heritage list (12:07)
 	...
 .LINK
@@ -32,6 +32,7 @@ function PrintNewerHeadlines([xml]$content, [string]$latestTimestamp, [string]$i
 		if ($pubDate -le $latestTimestamp) { continue }
 		$title = $item.title -replace "â","'"
 		$time = $pubDate.Substring(11, 5)
+		& "$PSScriptRoot/write-animated.ps1" "*"
 		& "$PSScriptRoot/write-animated.ps1" "$title ($time)$icon" $speed
 		if ($pubDate -gt $newLatest) { $newLatest = $pubDate }
 	}
@@ -42,8 +43,7 @@ try {
 	[xml]$content = (Invoke-WebRequest -URI $URL -useBasicParsing).Content
 	$title = $content.rss.channel.title
 	$webLink = $content.rss.channel.link
-	& "$PSScriptRoot/write-animated.ps1" "$title ($webLink, UTC times)" $speed
-	& "$PSScriptRoot/write-animated.ps1" "-----------------------------" $speed
+	& "$PSScriptRoot/write-animated.ps1" "$title • $webLink • UTC times" $speed
 	$latestTimestamp = "2000-01-01"
 	$icon = ""
 	do {
