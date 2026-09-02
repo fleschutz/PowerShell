@@ -10,10 +10,10 @@
 .EXAMPLE
 	PS> ./watch-ping.ps1
 
-	   PING ROUNDTRIP TIMES TO: windows.com
-	#1 ██████████████ 136ms
-	#2 ████████████████ 154ms
-	#3 █████████████████████████ 234ms
+	PING ROUNDTRIP TIMES BETWEEN: Tux <-> windows.com
+	#01: ██████████████ 136ms
+	#02: ████████████████ 154ms
+	#03: █████████████████████████ 234ms
 	...
 .LINK
 	https://github.com/fleschutz/PowerShell
@@ -60,10 +60,10 @@ function WriteChartLine { param([float]$value, [float]$maxValue, [string]$text)
 }
 
 try {
-	Write-Host "`n   PING ROUNDTRIP TIMES TO: $hostname" -foregroundColor green
+	Write-Host "`nPING ROUNDTRIP TIMES BETWEEN: $(hostname) <-> $hostname" -foregroundColor green
 	[int]$count = 1
 	do {
-		Write-Host "#$count " -noNewline
+		Write-Host "#$(($count).toString('00')): " -noNewline
 		[float]$latency = GetPingLatency $hostname
 		WriteChartLine $latency 1000.0 "$($latency)ms"
 		Start-Sleep -Milliseconds $timeInterval
