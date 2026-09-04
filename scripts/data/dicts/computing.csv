@@ -1020,8 +1020,8 @@ ESE,Environmentally Sustainable Electronics
 ESI,electronically stored information
 ESMR,Enhanced Specialized Mobile Radio
 ESMTP,Extended Simple Mail Transfer Protocol
-ESP,event stream processing
-ESS,employee self-service
+ESP,Event Stream Processing
+ESS,Employee Self-Service
 ETL,"extract, transform, load"
 ETM,Enterprise Transportation Management
 ETO,Engineer To Order
@@ -1031,9 +1031,9 @@ ETSI,European Telecommunications Standards Institute
 EUC,platform end user computing platform 
 EULA,End-User License Agreement 
 EUTELSAT,European Telecommunications Satellite Organization
+EUV,extreme ultraviolet (lithography)
 EUVL,extreme ultraviolet lithography
 EV,Electric Vehicle
-EV-DO,1x Evolution-Data Optimized
 EVA,Economic Value Added
 EVM,Earned Value Management
 EWS,Exchange Web Services
@@ -1049,7 +1049,7 @@ FARM,Field Accessible Reliability Metrics
 FAS,Final Assembly Schedule
 FASAB,Federal Accounting Standards Advisory Board
 FAT,File Allocation Table
-FAWN,fast array of wimpy nodes
+FAWN,Fast Array of Wimpy Nodes
 FBE,Framework Based Environment
 FC-AL,Fibre Channel Arbitrated Loop
 FC-PGA,Flip-Chip Pin Grid Array
@@ -1059,7 +1059,7 @@ FCIA,Fibre Channel Industry Association
 FCIP,Fibre Channel over IP
 FCoE,Fibre Channel over Ethernet
 FCP,Finite Capacity Planning
-FCR,first call resolution
+FCR,First Call Resolution
 FCRA,Fair Credit Reporting Act
 FCS,Finite Capacity Scheduling
 FD,"Floppy Drive or File Descriptor"
