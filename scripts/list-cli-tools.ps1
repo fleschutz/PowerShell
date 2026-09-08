@@ -232,6 +232,7 @@ function List-CLI-Tools {
 	ListTool make		"--version"
 	ListTool mbr2gpt	""
 	ListTool md5sum		"--version"
+	ListTool microsoftstore	"--help"
 	ListTool minidumper	"--version"
 	ListTool mkdir		"--version"
 	ListTool mkfifo		"--version"
@@ -350,7 +351,7 @@ function List-CLI-Tools {
 }
  
 try {
-	List-CLI-Tools | Format-Table -property @{e='NAME';width=15},@{e='VERSION';width=16},@{e='PATH (SIZE)';width=90}
+	List-CLI-Tools | Format-Table -property @{e='NAME';width=14},@{e='VERSION';width=17},@{e='PATH (SIZE)';width=90}
 	exit 0 # success
 } catch {
 	"⚠️ ERROR: $($Error[0]) (script line $($_.InvocationInfo.ScriptLineNumber))"
