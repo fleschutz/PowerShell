@@ -52,7 +52,11 @@ try {
 		Write-Host "`n⏳ Updating software..." -foregroundColor green
 		& sudo softwareupdate -i -a
 	}
-	if (Get-Command winget -errorAction SilentlyContinue) {
+	if (Get-Command microsoftstore -errorAction SilentlyContinue) {
+		Write-Host "`n⏳ Installing updates from Microsoft Store..." -foregroundColor green
+		& microsoftstore updates 
+	}
+	elseif (Get-Command winget -errorAction SilentlyContinue) {
 		Write-Host "`n⏳ Upgrading apps from Microsoft Store..." -foregroundColor green
 		& winget upgrade --all --source=msstore --include-unknown
 	}
