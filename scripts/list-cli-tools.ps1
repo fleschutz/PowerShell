@@ -126,6 +126,7 @@ function List-CLI-Tools {
 	ListTool cpack		"--version"
 	ListTool cscript        ""
 	ListTool csplit		"--version"
+	ListTool csv2hpp	"--version"
 	ListTool ctest		"--version"
 	ListTool curl		"--version"
 	ListTool curl.exe       "--version"
