@@ -1,39 +1,39 @@
 TERM,MEANING
-.7z,Common filename extension for archive files in 7z format
-.bat,Common filename extension for Batch script files
-.bz2,Common filename extension for archive files in bzip2 format
-.c,Common filename extension for C source code files
-.cpp,Common filename extension for C++ source code files
-.csv,Common filename extension for comma-separated value files
-.cfg,Common filename extension for configuration files
-.dll,Common filename extension for dynamic-link library files on Windows
-.exe,Common filename extension for executable files on Windows
-.gif,Common filename extension for GIF image files
-.gz,Common filename extension for archive files in gzip format
-.h,Common filename extension for C/C++ header files
-.hpp,Common filename extension for C++ header files
-.ilk,Common filename extension for incremental linking files on Windows
-.jar,Common filename extension for Java archive files
-.jfif,Common filename extension for JPEG image files
-.jpeg,Common filename extension for JPEG image files
-.jpg,Common filename extension for JPEG image files
-.lib,Common filename extension for static library files on Windows
-.m3u,Common filename extension for audio playlists
-.md,Common filename extension for Markdown files
-.mp3,Common filename extension for MPEG layer 3 audio files
-.pdb,Common filename extension for program debug database files on Windows
-.ps1,Common filename extension for PowerShell script files
-.psd1,Common filename extension for PowerShell data files
-.psm1,Common filename extension for PowerShell module files
-.psxml,Common filename extension for PowerShell XML files
-.sh,Common filename extension for script files
-.sln,Common filename extension for MSBuild solution files
-.tar,Common filename extension for archive files in tar format
-.txt,Common filename extension for text files
-.vcxproj,Common filename extension for Visual Studio project files
-.xml,Common filename extension for XML files
-.xz,Common filename extension for archive files in XZ format
-.zip,Common filename extension for archive files in Zip format
+.7z,Common filename suffix for archive files in 7z format
+.bat,Common filename suffix for Batch script files
+.bz2,Common filename suffix for archive files in bzip2 format
+.c,Common filename suffix for C source code files
+.cpp,Common filename suffix for C++ source code files
+.csv,Common filename suffix for comma-separated value files
+.cfg,Common filename suffix for configuration files
+.dll,Common filename suffix for dynamic-link library files on Windows
+.exe,Common filename suffix for executable files on Windows
+.gif,Common filename suffix for GIF image files
+.gz,Common filename suffix for archive files in gzip format
+.h,Common filename suffix for C/C++ header files
+.hpp,Common filename suffix for C++ header files
+.ilk,Common filename suffix for incremental linking files on Windows
+.jar,Common filename suffix for Java archive files
+.jfif,Common filename suffix for JPEG image files
+.jpeg,Common filename suffix for JPEG image files
+.jpg,Common filename suffix for JPEG image files
+.lib,Common filename suffix for static library files on Windows
+.m3u,Common filename suffix for audio playlists
+.md,Common filename suffix for Markdown files
+.mp3,Common filename suffix for MPEG layer 3 audio files
+.pdb,Common filename suffix for program debug database files on Windows
+.ps1,Common filename suffix for PowerShell script files
+.psd1,Common filename suffix for PowerShell data files
+.psm1,Common filename suffix for PowerShell module files
+.psxml,Common filename suffix for PowerShell XML files
+.sh,Common filename suffix for script files
+.sln,Common filename suffix for MSBuild solution files
+.tar,Common filename suffix for archive files in tar format
+.txt,Common filename suffix for text files
+.vcxproj,Common filename suffix for Visual Studio project files
+.xml,Common filename suffix for XML files
+.xz,Common filename suffix for archive files in XZ format
+.zip,Common filename suffix for archive files in Zip format
 1NF,First Normal Form
 2.5D,Two-And-A-Half-Dimensional
 286,Intel 80286 processor
@@ -2128,6 +2128,7 @@ RAT,Remote Access Trojan
 RBA,Risk-Based Authentication
 RBAC,Role-Based Access Control
 RBOC,Regional Bell Operating Company
+RCA,Root Cause Analysis
 RCE,Remote Code Execution
 RCP,Rich Client Platform
 RD,Running Disparity
