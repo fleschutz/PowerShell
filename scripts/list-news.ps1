@@ -8,8 +8,8 @@
 .EXAMPLE
 	PS> ./list-news.ps1
   
-	TIME   HEADLINES         (source: https://www.nytimes.com/section/world)
-	----   ---------
+	TIME   HEADLINE          (source: https://www.nytimes.com/section/world)
+	----   --------
 	09:15  Deadly Mediterranean wildfires kill more than 40
 	...
 .LINK
@@ -24,10 +24,10 @@ try {
 	[xml]$content = (Invoke-WebRequest -URI $RSS_URL -useBasicParsing).Content
 	$title = $content.rss.channel.title
 	$URL = $content.rss.channel.link
-	Write-Host "`n TIME   HEADLINES             (source: " -noNewline
+	Write-Host "`n TIME   HEADLINE              (source: " -noNewline
         Write-Host $URL -foregroundColor blue -noNewline
         Write-Host ")"
-        Write-Host " ----   ---------"
+        Write-Host " ----   --------"
 	[int]$count = 1
 	foreach ($item in $content.rss.channel.item) {
 		$title = $item.title -replace "â","'"
