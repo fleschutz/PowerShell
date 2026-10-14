@@ -3,13 +3,13 @@
 	Pulls updates into Git repos
 .DESCRIPTION
 	This PowerShell script pulls updates into all Git repositories in a folder (including submodules).
-.PARAMETER parentDir
+.PARAMETER path
 	Specifies the path to the parent folder
 .EXAMPLE
-	PS> ./pull-repos C:\MyRepos
-	⏳ Searching for Git executable...       git version 2.43.0
-	⏳ Checking parent folder...             33 subfolders
-	⏳ Pulling into 'base256U' (1/33)...
+	PS> ./pull-repos C:\Repos
+	⏳ Searching for Git executable...       git version 2.55.0
+	⏳ Checking parent folder...             C:\Repos with 20 subfolders
+	⏳ Pulling into 📂base256U...            (1/20)
 	...
 .LINK
 	https://github.com/fleschutz/PowerShell
@@ -17,7 +17,7 @@
 	Author: Markus Fleschutz | License: CC0
 #>
 
-param([string]$parentDir = "$PWD")
+param([string]$path = "$PWD")
 
 try {
 	$stopWatch = [system.diagnostics.stopwatch]::startNew()
@@ -27,11 +27,11 @@ try {
 	if ($lastExitCode -ne 0) { throw "Can't execute 'git' - make sure Git is installed and available" }
 
 	Write-Host "⏳ Checking parent folder...`t`t`t" -noNewline
-	if (-not(Test-Path "$parentDir" -pathType container)) { throw "Can't access folder: $parentDir" }
-	$folders = (Get-ChildItem "$parentDir" -attributes Directory)
+	if (-not(Test-Path "$path" -pathType container)) { throw "Can't access parent folder: $path" }
+	$folders = (Get-ChildItem "$path" -attributes Directory)
 	$numFolders = $folders.Count
-	$parentDirName = (Get-Item "$parentDir").Name
-	Write-Host "$parentDir with $numFolders subfolders"
+	$parentDirName = (Get-Item "$path").Name
+	Write-Host "$path with $numFolders subfolders"
 
 	[int]$step = 1
 	[int]$numFailed = 0
@@ -48,10 +48,10 @@ try {
 	}
 	[int]$elapsed = $stopWatch.Elapsed.TotalSeconds
 	if ($numFailed -eq 0) {
-		"✅ $numFolders Git repos updated at $parentDir in $($elapsed)s."
+		"✅ Updated all $numFolders Git repositories at $path (took $($elapsed)s)."
 		exit 0 # success
 	} else {
-		"⚠️ $numFolders Git repos updated at $parentDir but $numFailed FAILED (took $($elapsed)s)"
+		"⚠️ $numFolders Git repos updated at $path but $numFailed FAILED (took $($elapsed)s)"
 		exit 1
 	}
 } catch {
