@@ -54,7 +54,7 @@ try {
 	}
 	if (Get-Command microsoftstore -errorAction SilentlyContinue) {
 		Write-Host "`n⏳ Installing updates from Microsoft Store..." -foregroundColor green
-		& microsoftstore updates 
+		& microsoftstore updates --apply
 	}
 	elseif (Get-Command winget -errorAction SilentlyContinue) {
 		Write-Host "`n⏳ Upgrading apps from Microsoft Store..." -foregroundColor green
