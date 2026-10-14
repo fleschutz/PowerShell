@@ -4,9 +4,9 @@
 .DESCRIPTION
 	This PowerShell script writes the given text in Morse code.
 .PARAMETER text
-	Specifies the text to write
+	Specifies the text to write (ask user by default)
 .PARAMETER speed
-	Specifies the speed of one time unit (100 ms per default)
+	Specifies the speed of one time unit (100ms per default)
 .EXAMPLE
 	PS> ./write-morse-code ABC
 	● ―   ― ● ● ●   ― ● ― ●
@@ -18,25 +18,25 @@
 
 param([string]$text = "", [int]$speed = 100) # one time unit in milliseconds
 
-function gap { param([int]$Length)
-	for ([int]$i = 0; $i -lt $Length; $i++) {
+function gap { param([int]$length)
+	for ([int]$i = 0; $i -lt $length; $i++) {
 		Write-Host " " -noNewline
 	}
-	Start-Sleep -milliseconds ($Length * $speed)
+	Start-Sleep -milliseconds ($length * $speed)
 }
 
 function dot {
 	Write-Host "●" -noNewline
-	Start-Sleep -milliseconds $speed # signal
+	Start-Sleep -milliseconds $speed
 }
 
 function dash {
 	Write-Host "―" -noNewline
-	Start-Sleep -milliseconds (3 * $speed) # signal
+	Start-Sleep -milliseconds (3 * $speed)
 }
 
-function Char2MorseCode { param([string]$Char)
-	switch($Char) {
+function WriteInMorseCode { param([string]$char)
+	switch($char) {
 	'A' { dot; gap 1; dash; gap 3 }
 	'B' { dash; gap 1; dot; gap 1; dot; gap 1; dot; gap 3 }
 	'C' { dash; gap 1; dot; gap 1; dash; gap 1; dot; gap 3 }
@@ -88,14 +88,15 @@ function Char2MorseCode { param([string]$Char)
 }
 
 try {
-	if ($text -eq "" ) { [string]$text = Read-Host "Enter text to write" }
+	if ($text -eq "" ) { $text = Read-Host "Enter the text to write" }
 
-	[char[]]$ArrayOfChars = $text.ToUpper()
-	foreach($Char in $ArrayOfChars) {
-		Char2MorseCode $Char 
+	[char[]]$arrayOfChars = $text.ToUpper()
+
+	foreach($char in $arrayOfChars) {
+		WriteInMorseCode $char 
 	}
 	exit 0 # success
 } catch {
-	"⚠️ ERROR: $($Error[0]) (script line $($_.InvocationInfo.ScriptLineNumber))"
+	"⚠️ ERROR: $($Error[0]) (in script line $($_.InvocationInfo.ScriptLineNumber))"
 	exit 1
 }
