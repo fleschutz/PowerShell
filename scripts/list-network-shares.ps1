@@ -1,11 +1,11 @@
 ﻿<#
 .SYNOPSIS
-	List network shares
+	List all network shares
 .DESCRIPTION
-	This PowerShell script lists all network shares (aka "shared folders") of the local computer.
+	This PowerShell script lists all network shares (aka "shared folders") on the local computer.
 .EXAMPLE
 	PS> ./list-network-shares.ps1
-	✅ Folder D:\Public shared as: \\LAPTOP\Public ('File transfer folder')
+	✅ Network share \\LAPTOP\Public -> D:\Public\ ('File transfer folder')
 .LINK
 	https://github.com/fleschutz/PowerShell
 .NOTES
@@ -19,14 +19,14 @@ try {
 		$shares = Get-WmiObject win32_share | where {$_.name -NotLike "*$"} 
 		foreach ($share in $shares) {
 			if ($share.Description -eq "") {
-				Write-Host "✅ Folder $($share.Path) shared as: \\$(hostname)\$($share.Name)"
+				Write-Output "✅ Network share \\$(hostname)\$($share.Name) -> $($share.Path)\"
 			} else {
-				Write-Host "✅ Folder $($share.Path) shared as: \\$(hostname)\$($share.Name) ('$($share.Description)')"
+				Write-Output "✅ Network share \\$(hostname)\$($share.Name) -> $($share.Path)\ ('$($share.Description)')"
 			}
 		}
 	}
 	exit 0 # success
 } catch {
-	"⚠️ ERROR: $($Error[0]) (script line $($_.InvocationInfo.ScriptLineNumber))"
+	Write-Output "⚠️ ERROR: $($Error[0]) (in script line $($_.InvocationInfo.ScriptLineNumber))"
 	exit 1
 }
