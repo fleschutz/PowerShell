@@ -48,7 +48,7 @@ try {
 	}
 	[int]$elapsed = $stopWatch.Elapsed.TotalSeconds
 	if ($numFailed -eq 0) {
-		"✅ Updated all $numFolders Git repositories at $path (took $($elapsed)s)."
+		"✅ Updated all $numFolders Git repositories at $path in $($elapsed)s."
 		exit 0 # success
 	} else {
 		"⚠️ $numFolders Git repos updated at $path but $numFailed FAILED (took $($elapsed)s)"
