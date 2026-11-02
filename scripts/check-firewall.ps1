@@ -5,7 +5,7 @@
 	This PowerShell script queries the status of the firewall and prints it to the console.
 .EXAMPLE
 	PS> ./check-firewall.ps1
-	✅ Firewall is on
+	✅ Local firewall is on
 .LINK
 	https://github.com/fleschutz/PowerShell
 .NOTES
@@ -19,9 +19,9 @@ try {
 	} else {
 		$enabled = (Get-ItemProperty 'HKLM:\SYSTEM\ControlSet001\Services\SharedAccess\Parameters\FirewallPolicy\DomainProfile').EnableFirewall
 		if ($enabled) {
-			Write-Host "✅ Firewall is on"
+			Write-Host "✅ Local firewall enabled"
 		} else {
-			Write-Host "⚠️ Firewall is OFF"
+			Write-Host "⚠️ Local firewall disabled!"
 		}
 	}
 	exit 0 # success
