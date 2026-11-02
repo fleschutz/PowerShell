@@ -23,7 +23,7 @@
 try {
 	$stopWatch = [system.diagnostics.stopwatch]::startNew()
 
-	Write-Host "`n⏳ Checking requirements..." -foregroundColor green
+	Write-Host "`n⏳ Checking requirements..." -foregroundColor blue
 	& "$PSScriptRoot/check-power.ps1"
 	& "$PSScriptRoot/check-smart-devices.ps1"
 	if ($IsLinux -or $IsMacOS) {
@@ -35,42 +35,42 @@ try {
 	Start-Sleep -seconds 3
 
 	if (Get-Command apt -ErrorAction SilentlyContinue) {
-		Write-Host "`n⏳ Querying APT package updates..." -foregroundColor green
+		Write-Host "`n⏳ Querying APT package updates..." -foregroundColor blue
 		& sudo apt update
 
-		Write-Host "`n⏳ Removing obsolete packages to save space..." -foregroundColor green
+		Write-Host "`n⏳ Removing obsolete packages to save space..." -foregroundColor blue
 		& sudo apt autoremove --yes
 
-		Write-Host "`n⏳ Upgrading installed packages..." -foregroundColor green
+		Write-Host "`n⏳ Upgrading installed packages..." -foregroundColor blue
 		& sudo apt upgrade --yes
 	}
 	if (Get-Command snap -ErrorAction SilentlyContinue) {
-		Write-Host "`n⏳ Upgrading installed Snaps..." -foregroundColor green
+		Write-Host "`n⏳ Upgrading installed Snaps..." -foregroundColor blue
 		& sudo snap refresh
 	}
 	if (Get-Command softwareupdate -ErrorAction SilentlyContinue) {
-		Write-Host "`n⏳ Updating software..." -foregroundColor green
+		Write-Host "`n⏳ Updating software..." -foregroundColor blue
 		& sudo softwareupdate -i -a
 	}
 	if (Get-Command microsoftstore -errorAction SilentlyContinue) {
-		Write-Host "`n⏳ Installing updates from Microsoft Store..." -foregroundColor green
+		Write-Host "`n⏳ Installing updates from Microsoft Store..." -foregroundColor blue
 		& microsoftstore updates --apply
 	}
 	elseif (Get-Command winget -errorAction SilentlyContinue) {
-		Write-Host "`n⏳ Upgrading apps from Microsoft Store..." -foregroundColor green
+		Write-Host "`n⏳ Upgrading apps from Microsoft Store..." -foregroundColor blue
 		& winget upgrade --all --source=msstore --include-unknown
 	}
 	if (Get-Command winget -errorAction SilentlyContinue) {
-		Write-Host "`n⏳ Upgrading apps from WinGet..." -foregroundColor green
+		Write-Host "`n⏳ Upgrading apps from WinGet..." -foregroundColor blue
 		& winget upgrade --all --source=winget --include-unknown
 	}
 	if (Get-Command choco -errorAction SilentlyContinue) {
-		Write-Host "`n⏳ Upgrading by Chocolatey..." -foregroundColor green
+		Write-Host "`n⏳ Upgrading by Chocolatey..." -foregroundColor blue
 		& choco upgrade all -y
 	}
-	& "$PSScriptRoot/check-pending-reboot.ps1"
 	[int]$elapsed = $stopWatch.Elapsed.TotalSeconds
-	"✅ Updates installed in $($elapsed)s."
+	Write-Host "✅ All updates installed in $($elapsed)s  " -noNewline
+	& "$PSScriptRoot/check-pending-reboot.ps1"
 	exit 0 # success
 } catch {
 	"⚠️ ERROR: $($Error[0]) (script line $($_.InvocationInfo.ScriptLineNumber))"
