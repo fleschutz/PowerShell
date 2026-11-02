@@ -4491,7 +4491,7 @@ TRASANA,TRADOC Systems Analysis Agency
 TRD,Towed Radar Decoy
 TRIGAT,Third Generation Antitank (missile)
 TRL,Technology readiness level
-TRP,Target Reference Point,Time of Reporting
+TRP,"Target Reference Point, Time of Reporting"
 Trp,Troop
 TRU,Transuranic
 TRUEX,Training in Urban Environment Exercise
@@ -4502,6 +4502,7 @@ TSA,"Theatre Storage Area,Time Slot Allocation,Transportation Security Administr
 TSCA,Toxic Substances Control Act ("tosca")
 TSEC,Transmission Security Encryption Code
 TSL,Transportation Security Laboratory
+TSM,Technical Steering Meeting
 TSN,"The Sporting News (historic name of the periodical now known as Sporting News),The Sports Network"
 TSO,"The Stationery Office (was HMSO until 1996),(U.S.) TRICARE Support Office,Trans-Siberian Orchestra (band)"
 TSOP,"Tactical Standing Operation Procedure,The Sound of Philadelphia (classic 1970s R&B instrumental)"
@@ -4585,27 +4586,27 @@ UID,User ID
 UIL,University Interscholastic League (governing body for most interscholastic activities,notably sports,in Texas public high schools)
 UIUC,University of Illinois at Urbana-Champaign
 UJTL,Universal Joint Task List
-UK,United Kingdom (also FIPS 10-4 country code),University of Kentucky
+UK,"United Kingdom (also FIPS 10-4 country code),University of Kentucky"
 UKIP,United Kingdom Independence Party
 UKR,Ukraine (ISO 3166 trigram)
 UL,Underwriters Laboratories
-ULEB,Union des ligues européens de basket-ball,French for "Union of European Basketball Leagues"
+ULEB,"Union des ligues européens de basket-ball (French for: Union of European Basketball Leagues)"
 ULF,Ultra Low Frequency
 UM,U.S. Minor Outlying Islands (postal symbol; ISO 3166 digram)
 UMBC,University of Maryland,Baltimore County
-UMC,United Microelectronics Corporation,University of Missouri-Columbia
+UMC,"United Microelectronics Corporation,University of Missouri-Columbia"
 UMCP,Unit Maintenance Collection Point
 UMES,University of Maryland Eastern Shore
 UMI,U.S. Minor Outlying Islands (ISO 3166 trigram)
 UMIST,University of Manchester Institute of Science and Technology
 UMK,Uniwersytet Mikołaja Kopernika (Polish "Nicolaus Copernicus University")
-UML,Unified Marxist-Leninist Communist Party of Nepal,Unified Modeling Language,University of Massachusetts Lowell,User-Mode Linux
+UML,"Unified Marxist-Leninist Communist Party of Nepal,Unified Modeling Language,University of Massachusetts Lowell,User-Mode Linux"
 UMTS,Universal Mobile Telecommunications System
 UN,United Nations
 UNABOM,University and airline bomber (FBI case name)
 UNAIDS,Joint United Nations Programme on HIV/AIDS
-UNaM,Universidad Nacional de Misiones (Spanish,"National University of Misiones")
-UNAM,Universidad Nacional Autónoma de México (Spanish,"National Autonomous University of Mexico")
+UNaM,Universidad Nacional de Misiones (Spanish for: National University of Misiones)
+UNAM,Universidad Nacional Autónoma de México (Spanish for: National Autonomous University of Mexico)
 UNAMSIL,United Nations Mission in Sierra Leone
 UNCF,United Negro College Fund
 UNCLOS,United Nations Convention on the Law of the Sea
@@ -4616,7 +4617,7 @@ UNDCP,United Nations Drug Control Programme
 UNDE,Union of National Defence Employees (Canada)
 UNDP,United Nations Development Programme
 UNEP,United Nations Environment Programme
-UNESCO,United Nations Educational,Scientific and Cultural Organization
+UNESCO,"United Nations Educational,Scientific and Cultural Organization"
 UNFCCC,United Nations Framework Convention on Climate Change
 UNFICYP,United Nations Peacekeeping Force in Cyprus
 UNGEGN,United Nations Group of Experts on Geographical Names
@@ -4625,10 +4626,10 @@ UNICEF,United Nations Children's Fund (originally the United Nations Internation
 UNICRI,United Nations Interregional Crime and Justice Research Institute
 UNIDO,United Nations Industrial Development Organization
 UNIFEM,United Nations Development Fund for Women (from the French Fonds de développement des Nations unies pour la femme)
-UNIS,University of Surrey,Guildford,England
+UNIS,"University of Surrey,Guildford,England"
 UNLV,"University of Nevada,Las Vegas"
 UNMIK,United Nations Interim Administration Mission in Kosovo
-UNMOVIC,United Nations Monitoring,Verification and Inspection Commission
+UNMOVIC,"United Nations Monitoring,Verification and Inspection Commission"
 UNOSOM,United Nations Operations in Somalia
 UNPROFOR,United Nations Protection Force (in former Yugoslavia)
 UNRISD,United Nations Research Institute for Social Development
@@ -4636,15 +4637,15 @@ UNSM,Union of Nova Scotian Municipalities
 UNTAC,United Nations Transitional Authority in Cambodia
 UNTAET,United Nations Transitional Administration in East Timor
 UNU,United Nations University
-UP,Ukraine (FIPS 10-4 country code),Union Pacific Railroad (AAR reporting mark),Upper Peninsula (of Michigan),Uttar Pradesh
-UPC,United Pentecostal Church,Universal Product Code
-UPDM,Uganda People's Democratic Movement,Unified Modeling Language Profile for DoDAF and MoDAF,Unité de psychiatrie du développement mental,Universal Pattern Decomposition Method,Unix Power Device Management,Unpressurized Docking Mast,Urban Planning,Design and Management
+UP,"Ukraine (FIPS 10-4 country code),Union Pacific Railroad (AAR reporting mark),Upper Peninsula (of Michigan),Uttar Pradesh"
+UPC,"United Pentecostal Church,Universal Product Code"
+UPDM,"Uganda People's Democratic Movement,Unified Modeling Language Profile for DoDAF and MoDAF,Unité de psychiatrie du développement mental,Universal Pattern Decomposition Method,Unix Power Device Management,Unpressurized Docking Mast,Urban Planning,Design and Management"
 UPdM,Università Popolare della Multimedialità
 UPF,"Universitat Pompeu Fabra (Catalan for: 'Pompeu Fabra University')"
 UPI,United Press International
 UPN,United Paramount Network
-UPS,Uninterruptible Power Supply,United Parcel Service
-UPTN,Universal Personal Telecommunications Number,Upper Peninsula Telehealth Network
+UPS,"Uninterruptible Power Supply,United Parcel Service"
+UPTN,"Universal Personal Telecommunications Number,Upper Peninsula Telehealth Network"
 UPU,Universal Postal Union
 UR,"Soviet Union (NATO country code,obsolete 1992)"
 URBSFA,Union royale belge des sociétés de football association (French for Royal Belgian Football Association)
@@ -4704,11 +4705,11 @@ UT,Universal Time
 UTC,Coordinated Universal Time 
 UTEP, University of Texas at El Paso (pronounced you-tep)
 UTM,Universal Transverse Mercator (geographical co-ordinate system)
-UU,Unitarian Universalism,University of Utah,Unseen University
+UU,"Unitarian Universalism,University of Utah,Unseen University"
 UUA,Unitarian Universalist Association
 UUV,Unmanned Underwater Vehicle
-UV,Burkina Faso (from Upper Volta),ultraviolet
-UVM,Universal Verification Methodology,Universidad del Valle de México,University of Vermont,from its Latin name of Universitas Viridis Montis ("University of the Green Mountains"),UV mapping,UW[edit]
+UV,"Burkina Faso (from Upper Volta),ultraviolet"
+UVM,"Universal Verification Methodology,Universidad del Valle de México,University of Vermont,from its Latin name of Universitas Viridis Montis ("University of the Green Mountains"),UV mapping"
 UW,University of Washington
 UWO,University of Western Ontario
 UWT,Under Water Telephone
@@ -4718,36 +4719,36 @@ UXO,Unexploded Ordnance
 UY,Uruguay (ISO 3166 and FIPS 10-4 country code digram)
 UZ,Uzbekistan (ISO 3166 and FIPS 10-4 country code digram)
 UZB,Uzbekistan (ISO 3166 trigram)
-V,5 (in Roman numerals),Vanadium,Volt
-VA,Vatican City-State (ISO 3166 digram),Veterans Affairs (U.S. Department of),Virginia (postal symbol),Various Artists
+V,"5 (in Roman numerals),Vanadium,Volt"
+VA,"Vatican City-State (ISO 3166 digram),Veterans Affairs (U.S. Department of),Virginia (postal symbol),Various Artists"
 VACIS,Vehicle And Container Inspection System
 VACIS,Victorian Ambulance Clinical Information System
 VANOS,Variable Nockenwelle System
 VAO,Vienna Art Orchestra
 VAT,Vatican City-State (ISO 3166 trigram)
-VB,Victoria Bitter (beer),Visual Basic
+VB,"Victoria Bitter (beer),Visual Basic"
 VBA,Visual Basic for Applications
-VC,Saint Vincent and the Grenadines (ISO 3166 digram),Victoria Cross
-VCDS,(Canada) Vice-Chief of the Defence Staff,VAG-COM Diagnostic System
-VCJCS,Vice Chairman,Joint Chiefs of Staff
+VC,"Saint Vincent and the Grenadines (ISO 3166 digram),Victoria Cross"
+VCDS,"(Canada) Vice-Chief of the Defence Staff,VAG-COM Diagnostic System"
+VCJCS,"Vice Chairman,Joint Chiefs of Staff"
 vCJD,Variant Creutzfeldt-Jakob Disease
 VCNO,(U.S.) Vice Chief of Naval Operations
 VCofS,Vice Chief of Staff
 VCR,Video cassette recorder
 VCT,Saint Vincent and the Grenadines (ISO 3166 trigram)
-VD,North Vietnam (ISO 3166 digram,obsolete 1977),Venereal Disease
+VD,"North Vietnam (ISO 3166 digram,obsolete 1977),Venereal Disease"
 VDFS,VisualSVN Distributed File System (VDFS)
 VDMOS,Vertical Double-diffused MOS transistor ("vee-dee-moss")
 VDOT,Virginia Department of Transportation ("vee-dot")
-VDR,North Vietnam (ISO 3166 trigram,obsolete 1977)
+VDR,"North Vietnam (ISO 3166 trigram,obsolete 1977)"
 VE,Venezuela (ISO 3166 digram)
 VEEGA,Venus Earth Earth Gravity Assist manœuvre
 VEN,Venezuela (ISO 3166 trigram)
-VERDI,Vittorio Emanuele Re D'Italia (Victor Emmanuel,King of Italy)
+VERDI,"Vittorio Emanuele Re D'Italia (Victor Emmanuel,King of Italy)"
 VERITAS,Very Energetic Radiation Imaging Telescope Array System
-VFA,Victorian Football Association (historic Australian rules football league),Volatile Fatty Acid
+VFA,"Victorian Football Association (historic Australian rules football league),Volatile Fatty Acid"
 VfD,s for deletion (used in Wikipedia)
-VFL,Victorian Football League,the name of two distinct Australian rules football leagues:
+VFL,Victorian Football League
 VFM,Value For Money
 VFMO,Very Fast Moving Object (astronomy)
 VFT,Virtual Function Table
@@ -4756,31 +4757,31 @@ VG,British Virgin Islands (ISO 3166 digram)
 VGB,British Virgin Islands (ISO 3166 trigram)
 VH1, Video Hits One
 VHF,Very High Frequency
-VI,6 (in Roman numerals),British Virgin Islands (FIPS 10-4 territory code),U.S. Virgin Islands (postal symbol; ISO 3166 digram),vide infra (Latin,"see below"),Virtual Instrument (LabVIEW)
+VI,"6 (in Roman numerals),British Virgin Islands (FIPS 10-4 territory code),U.S. Virgin Islands (postal symbol; ISO 3166 digram),vide infra (Latin,"see below"),Virtual Instrument (LabVIEW)"
 VIA,Versatile Interface Adapter
-VIC,Victoria,Australia (postal symbol),Video Interface Chip,Virginia Intermont College
+VIC,"Victoria,Australia (postal symbol),Video Interface Chip,Virginia Intermont College"
 VIDS,Visual Information Display System
 VII,7 (in Roman numerals)
 VIII,8 (in Roman numerals)
 VIN,Vehicle Identification Number (ISO 3779)
 VIP,Very Important Person
-VIR,U.S. Virgin Islands (ISO 3166 trigram),Virgin Atlantic Airways (ICAO code)
-VIS,Vavoua International School,Vienna Independent Shorts,Viewable Image Size,Visual Instruction Set
+VIR,"U.S. Virgin Islands (ISO 3166 trigram),Virgin Atlantic Airways (ICAO code)"
+VIS,"Vavoua International School,Vienna Independent Shorts,Viewable Image Size,Visual Instruction Set"
 VISCII,VIetnamese Standard Code for Information Interchange
 VIT,Vellore Institute of Technology
 VIVO,Video In Video Out
 VJ,Video Jockey
-VK,Australia (ham radio code),Västerbottens-Kuriren,a Swedish daily newspaper
-VLA,Very Large Array,(UK) Veterinary Laboratories Agency
+VK,"Australia (ham radio code),Västerbottens-Kuriren,a Swedish daily newspaper"
+VLA,"Very Large Array,(UK) Veterinary Laboratories Agency"
 VLAD, Vertical Line Array DIFAR
 VLBA,Very Long Baseline Array
 VLF,Very Low Frequency
 VLIW,Very Long Instruction Word
 VLPFC,VentroLateral PreFrontal Cortex
 VLPMC,VentroLateral PreMotor Cortex
-VLSF,Very Loud,Stink-Free
+VLSF,"Very Loud,Stink-Free"
 VLSI,Very-large-scale integration
-VLVS,Very Loud,Very Stinky
+VLVS,"Very Loud,Very Stinky"
 VM,Vietnam (FIPS 10-4 country code)
 VMASC,Virginia Modeling Analysis & Simulation Center ("vee-mask")
 VMF,Marine Fighting Squadron of the United States Marine Corps
@@ -4791,7 +4792,7 @@ VNIR,Visible and Near InfraRed
 VNM,Vietnam (ISO 3166 trigram)
 VNS,see entry
 VOA,Voice of America
-VOC,Vereenigde Oostindische Compagnie (Dutch East India Company),Volatile organic compounds
+VOC,"Vereenigde Oostindische Compagnie (Dutch East India Company),Volatile organic compounds"
 VOIP,Voice Over Internet Protocol
 VOLT,Visual OpenType Layout Tool
 Volvo,Swedish supplier of commercial vehicles owned by Ford Motor Company. "Volvo" means "I roll" in Latin.
@@ -4800,16 +4801,16 @@ VOR,Voice of Russia
 VOX,Voice Operated oscillator
 VP, Vice-President ("veep")
 VPOTUS,Vice President of the United States
-VQ,Vector Quantization,U.S. Virgin Islands (FIPS 10-4 territory code)
+VQ,"Vector Quantization,U.S. Virgin Islands (FIPS 10-4 territory code)"
 VR,Virtual Reality
 VRSG,Virtual Reality Scene Generator
-VS,Very Special (brandy grade),vide supra (Latin for 'see above')
+VS,"Very Special (brandy grade),vide supra (Latin for 'see above')"
 VSAT,Very Small Aperture Terminal ('vee-satt')
 VSHORAD,Very Short Range Air Defence
 VSO,Voluntary Services Overseas
-VSOP,Variations séculaires des orbites planétaires (French,"Planetary Orbit Secular Variations"),Very Small Outline Package (integrated circuit),Very Superior Old Pale (brandy grade),VLBI Space Observatory Programme
+VSOP,"Variations séculaires des orbites planétaires (French,'Planetary Orbit Secular Variations'),Very Small Outline Package (integrated circuit),Very Superior Old Pale (brandy grade),VLBI Space Observatory Programme"
 VSR,Very Special Relativity
-VT,Vatican City-State (FIPS 10-4 country code),Vermont (postal symbol),Video tape,Virginia Tech
+VT,"Vatican City-State (FIPS 10-4 country code),Vermont (postal symbol),Video tape,Virginia Tech"
 VTC,Video Tele-Conference
 VTEC,Variable valve Timing and Electronic lift Control
 VU,"Vanuatu (ISO 3166 digram), Vedanta University"
@@ -4831,7 +4832,7 @@ WACS,What-A-Cartoon! Show
 WAD,Weapons Alert Designator
 WAGGGS,World Association of Girl Guides and Girl Scouts
 WAGs,"Wives And Girlfriends (most notably of England national football team players at the 2006 FIFA World Cup,although the term existed earlier)"
-WAK,Wake Island (ISO 3166 trigram,obsolete 1986)
+WAK,"Wake Island (ISO 3166 trigram,obsolete 1986)"
 WAL,see entry
 WAPIMA,What a pain in my ass
 WAR,With All Respect
@@ -4940,7 +4941,7 @@ WSC,Weapon System Catalogue
 WSDL,Web Services Description Language
 WSJ,(The) Wall Street Journal
 WSL,"White Star Line (shipping company),Women's Super League,used to describe England's top women's association football league and top women's rugby union competition,Workers' Socialist League (UK political party)"
-WSM,Samoa (ISO 3166 trigram; from Western Samoa),Winchester Short Magnum (family of rifle cartridges)
+WSM,"Samoa (ISO 3166 trigram; from Western Samoa),Winchester Short Magnum (family of rifle cartridges)"
 WSROC,Western Sydney Regional Organisation of Councils
 WSSM,Winchester Super Short Magnum (family of rifle cartridges)
 WSTC,Women Signallers Territorial Corps (World War II UK)
@@ -4965,13 +4966,13 @@ WVU,West Virginia University
 WVUIT,"West Virginia University Institute of Technology (note,however,that the initialism is almost never used; the popular name of the school is "WVU Tech")"
 WW,see entry
 WWE,World Wrestling Entertainment
-WWF,World Wide Fund for Nature,from its original name of World Wildlife Fund,which remains the legal name in the U.S. and Canada,World Wrestling Federation
+WWF,"World Wide Fund for Nature,from its original name of World Wildlife Fund,which remains the legal name in the U.S. and Canada,World Wrestling Federation"
 WWI,World War I
 WWII,World War II
 WWIII,World War III
 WWJD,"What would Jesus do?"
 WWS,Wheaton Warrenville South High School
-WWV,Wagner-Werk-Verzeichnis (catalog of the works of Richard Wagner,and callsign of NIST's shortwave radio station in Fort Collins,Colorado)
+WWV,"Wagner-Werk-Verzeichnis (catalog of the works of Richard Wagner,and callsign of NIST's shortwave radio station in Fort Collins,Colorado)"
 WWWF,World Wide Wrestling Federation
 WXO,Weather [Executive] Officer
 WY,Wyoming (postal symbol)
@@ -4983,21 +4984,21 @@ XC,Ninety (in Roman numerals)
 XCBL,XML Common Business Library
 XD,Used in chatrooms or email for smiley face. X is the eyes; squinted D is the mouth; XD.
 Xe,Xenon
-XF,Automobile made by Jaguar,Truck made by DAF Trucks,IATA code for Vladivostok Air
+XF,"Automobile made by Jaguar,Truck made by DAF Trucks,IATA code for Vladivostok Air"
 XFA,XML Forms Architecture
 XFC,Xtreme Fighting Championships
 Xfe,X File Explorer
 XFF,X-Forwarded-For
 XFG,Exfoliation glaucoma
-XFH,1932 rototype U.S. Navy fighter aircraft made by Hall,X-ray fluorescence holography
+XFH,"1932 rototype U.S. Navy fighter aircraft made by Hall,X-ray fluorescence holography"
 XFN,XHTML Friends Network,
 XFR,Automobile made by Jaguar
 XFT,X FreeType interface library
 XG,Automobile made by Hyundai
 XGA,Extended Graphics Array
-XGE,Xoreax Grid Engine,Signal for "I Surrender"
+XGE,"Xoreax Grid Engine,Signal for 'I Surrender'"
 XGP,Extreme Game Player
-XHR,eXtra high Image resolution,XMLHTTPRequest
+XHR,"eXtra high Image resolution,XMLHTTPRequest"
 XHTML,eXtensible Hypertext Markup Language
 XI,Eleven (in Roman numerals)
 XII,Twelve (in Roman numerals)
@@ -5040,7 +5041,7 @@ XXX,"Hardcore pornography (film rating),Triple X (film), Thirty (in Roman numera
 Xyl,Xylobium
 XZN,Triple square screw driver
 y,Yocto-
-Y,Yotta,Yttrium
+Y,"Yotta,Yttrium"
 Y2K,Year Two Thousand
 yA,Yoctoampere
 YA,"Yottaampere,Young Adult"
