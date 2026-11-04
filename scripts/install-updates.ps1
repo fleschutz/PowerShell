@@ -69,7 +69,7 @@ try {
 		& choco upgrade all -y
 	}
 	[int]$elapsed = $stopWatch.Elapsed.TotalSeconds
-	Write-Host "✅ All updates installed in $($elapsed)s  " -noNewline
+	Write-Host "✅ Updates installed in $($elapsed)s  " -noNewline
 	& "$PSScriptRoot/check-pending-reboot.ps1"
 	exit 0 # success
 } catch {
