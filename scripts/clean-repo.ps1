@@ -8,10 +8,10 @@
 	Specifies the file path to the local Git repository (current working directory by default)
 .EXAMPLE
 	PS> ./clean-repo.ps1 C:\Repos\rust
-	⏳00% : Searching for Git executable...            git version 2.55.0
-	⏳25% : Checking local repository...        	   C:\Repos\rust
-	⏳50% : Removing untracked files in repository...
-	⏳75% : Removing untracked files in submodules...
+	⏳10% Searching for Git executable...            git version 2.55.0
+	⏳25% Checking local repository...        	   C:\Repos\rust
+	⏳50% Removing untracked files in repository...
+	⏳75% Removing untracked files in submodules...
 	✅ Repo 'rust' is clean now.
 .LINK
 	https://github.com/fleschutz/PowerShell
@@ -24,15 +24,15 @@ param([string]$path = "$PWD")
 try {
 	$stopWatch = [system.diagnostics.stopwatch]::startNew()
 
-	Write-Host "⏳00% : Searching for Git executable...          " -noNewline
+	Write-Host "⏳10% Searching for Git executable...          " -noNewline
 	& git --version
 	if ($lastExitCode -ne 0) { throw "Can't execute 'git' - make sure Git is installed and available" }
 
-	"⏳25% : Checking local repository...             $path"
+	"⏳25% Checking local repository...             $path"
 	if (-not(Test-Path "$path" -pathType container)) { throw "Can't access repo folder '$path' - maybe a typo or missing folder permissions?" }
 	$repoName = (Get-Item "$path").Name
 
-	"⏳50% : Removing untracked files in repository..."
+	"⏳50% Removing untracked files in repository..."
 	& git -C "$path" clean -xfd -f # to delete all untracked files in the main repo
 	if ($lastExitCode -ne 0) {
 		Write-Warning "'git clean' failed with exit code $lastExitCode, retrying once..."
