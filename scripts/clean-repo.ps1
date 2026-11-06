@@ -5,14 +5,14 @@
 	This PowerShell script deletes all untracked files and folders in a local Git repository (including submodules).
 	NOTE: To be used with care! This cannot be undone!
 .PARAMETER path
-	Specifies the file path to the local Git repository (current working directory by default)
+	Specifies the file path to the local Git repository (default: current working directory)
 .EXAMPLE
 	PS> ./clean-repo.ps1 C:\Repos\rust
-	⏳10% Searching for Git executable...            git version 2.55.0
-	⏳25% Checking local repository...        	   C:\Repos\rust
+	⏳10% Searching for Git executable...           git version 2.55.0
+	⏳25% Checking local repository...              C:\Repos\rust
 	⏳50% Removing untracked files in repository...
 	⏳75% Removing untracked files in submodules...
-	✅ Repo 'rust' is clean now.
+	✅ Cleaned 'rust' repository in 7s.
 .LINK
 	https://github.com/fleschutz/PowerShell
 .NOTES
@@ -24,11 +24,11 @@ param([string]$path = "$PWD")
 try {
 	$stopWatch = [system.diagnostics.stopwatch]::startNew()
 
-	Write-Host "⏳10% Searching for Git executable...          " -noNewline
+	Write-Host "⏳10% Searching for Git executable...            " -noNewline
 	& git --version
 	if ($lastExitCode -ne 0) { throw "Can't execute 'git' - make sure Git is installed and available" }
 
-	"⏳25% Checking local repository...             $path"
+	"⏳25% Checking local repository...               $path"
 	if (-not(Test-Path "$path" -pathType container)) { throw "Can't access repo folder '$path' - maybe a typo or missing folder permissions?" }
 	$repoName = (Get-Item "$path").Name
 
@@ -45,7 +45,7 @@ try {
 	if ($lastExitCode -ne 0) { throw "'git clean' in the submodules failed with exit code $lastExitCode" }
 
 	[int]$elapsed = $stopWatch.Elapsed.TotalSeconds
-	"✅ Repo '$repoName' cleaned in $($elapsed)s."
+	"✅ Cleaned '$repoName' repository in $($elapsed)s."
 	exit 0 # success
 } catch {
 	"⚠️ ERROR: $($Error[0]) (at line $($_.InvocationInfo.ScriptLineNumber))"
