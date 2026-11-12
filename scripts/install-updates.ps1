@@ -69,10 +69,10 @@ try {
 		& choco upgrade all -y
 	}
 	[int]$elapsed = $stopWatch.Elapsed.TotalSeconds
-	Write-Host "✅ Updates installed in $($elapsed)s  " -noNewline
+	Write-Host "✅ Updates installed in $($elapsed)s.   " -noNewline
 	& "$PSScriptRoot/check-pending-reboot.ps1"
 	exit 0 # success
 } catch {
-	"⚠️ ERROR: $($Error[0]) (script line $($_.InvocationInfo.ScriptLineNumber))"
+	"⚠️ ERROR: $($Error[0]) (in script line $($_.InvocationInfo.ScriptLineNumber))"
 	exit 1
 }
