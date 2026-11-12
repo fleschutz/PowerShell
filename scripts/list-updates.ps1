@@ -20,37 +20,37 @@
 
 try {
 	if (Get-Command apt -ErrorAction SilentlyContinue) {
-		Write-Host "`n⏳ Querying APT package updates..." -foregroundColor green
+		Write-Host "`n⏳ Querying APT package updates..." -foregroundColor blue
 		& sudo apt update
 		& sudo apt list --upgradable
 	}
 	if (Get-Command snap -ErrorAction SilentlyContinue) {
-		Write-Host "`n⏳ Querying Snap updates..." -foregroundColor green
+		Write-Host "`n⏳ Querying Snap updates..." -foregroundColor blue
 		& sudo snap refresh --list
 	}
 	if (Get-Command brew -ErrorAction SilentlyContinue) {
-		Write-Host "`n⏳ Querying Homebrew updates..." -foregroundColor green
+		Write-Host "`n⏳ Querying Homebrew updates..." -foregroundColor blue
 		& brew outdated
 	}
 	if (Get-Command winget -ErrorAction SilentlyContinue) {
-		Write-Host "`n⏳ Querying Microsoft Store..." -foregroundColor green
+		Write-Host "`n⏳ Querying Microsoft Store..." -foregroundColor blue
 		& winget upgrade --include-unknown --source=msstore
 
-		Write-Host "`n⏳ Querying WinGet..." -foregroundColor green
+		Write-Host "`n⏳ Querying WinGet..." -foregroundColor blue
 		& winget upgrade --include-unknown --source=winget
 	}
 	if (Get-Command choco -ErrorAction SilentlyContinue) {
-		Write-Host "`n⏳ Querying Chocolatey..." -foregroundColor green
+		Write-Host "`n⏳ Querying Chocolatey..." -foregroundColor blue
 		& choco outdated
 	}
 	if (Get-Command scoop -ErrorAction SilentlyContinue) {
-		Write-Host "`n⏳ Querying Scoop..." -foregroundColor green
+		Write-Host "`n⏳ Querying Scoop..." -foregroundColor blue
 		& scoop status
 	}
 	" "
 	"💡 Execute 'install-updates.ps1' for installation."
 	exit 0 # success
 } catch {
-	"⚠️ ERROR: $($Error[0]) (script line $($_.InvocationInfo.ScriptLineNumber))"
+	"⚠️ ERROR: $($Error[0]) (in script line $($_.InvocationInfo.ScriptLineNumber))"
 	exit 1
 }
