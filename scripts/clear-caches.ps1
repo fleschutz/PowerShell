@@ -1,6 +1,6 @@
 ﻿<#
 .SYNOPSIS
-	Clear caches
+	Clear all caches
 .DESCRIPTION
 	This PowerShell script empties all caches on the local computer to save disk space.
 .EXAMPLE
