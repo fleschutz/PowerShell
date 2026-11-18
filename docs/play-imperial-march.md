@@ -46,30 +46,25 @@ Script Content
 	Author: Markus Fleschutz | License: CC0
 #>
 
-try {
-	[System.Console]::beep(440, 500)      
-	[System.Console]::beep(440, 500)
-	[System.Console]::beep(440, 500)       
-	[System.Console]::beep(349, 350)       
-	[System.Console]::beep(523, 150)       
-	[System.Console]::beep(440, 500)       
-	[System.Console]::beep(349, 350)       
-	[System.Console]::beep(523, 150)       
-	[System.Console]::beep(440, 1000)
-	[System.Console]::beep(659, 500)       
-	[System.Console]::beep(659, 500)       
-	[System.Console]::beep(659, 500)       
-	[System.Console]::beep(698, 350)       
-	[System.Console]::beep(523, 150)       
-	[System.Console]::beep(415, 500)       
-	[System.Console]::beep(349, 350)       
-	[System.Console]::beep(523, 150)       
-	[System.Console]::beep(440, 1000)
-	exit 0 # success
-} catch {
-	"⚠️ ERROR: $($Error[0]) (script line $($_.InvocationInfo.ScriptLineNumber))"
-	exit 1
-}
+[System.Console]::beep(440, 500)      
+[System.Console]::beep(440, 500)
+[System.Console]::beep(440, 500)       
+[System.Console]::beep(349, 350)       
+[System.Console]::beep(523, 150)       
+[System.Console]::beep(440, 500)       
+[System.Console]::beep(349, 350)       
+[System.Console]::beep(523, 150)       
+[System.Console]::beep(440, 1000)
+[System.Console]::beep(659, 500)       
+[System.Console]::beep(659, 500)       
+[System.Console]::beep(659, 500)       
+[System.Console]::beep(698, 350)       
+[System.Console]::beep(523, 150)       
+[System.Console]::beep(415, 500)       
+[System.Console]::beep(349, 350)       
+[System.Console]::beep(523, 150)       
+[System.Console]::beep(440, 1000)
+exit 0 # success
 ```
 
-*(page generated from script by convert-ps2md.ps1 as of 11/16/2026 17:46:06)*
+*(page auto-generated from PowerShell script by convert-ps2md.ps1 as of 11/18/2026 14:18:50)*

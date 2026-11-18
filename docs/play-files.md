@@ -82,9 +82,9 @@ try {
 	"✅ Played $count audio files for $($elapsed)s."
 	exit 0 # success
 } catch {
-	"⚠️ ERROR: $($Error[0]) (script line $($_.InvocationInfo.ScriptLineNumber))"
+	"⚠️ ERROR: $($Error[0]) (at script line $($_.InvocationInfo.ScriptLineNumber))"
 	exit 1
 }
 ```
 
-*(page generated from script by convert-ps2md.ps1 as of 11/16/2026 17:46:06)*
+*(page auto-generated from PowerShell script by convert-ps2md.ps1 as of 11/18/2026 14:18:50)*
