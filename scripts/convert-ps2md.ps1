@@ -136,7 +136,7 @@ try {
 	"``````"
 	""
 	$now = [datetime]::Now
-	"*(page generated from script by convert-ps2md.ps1 as of $now)*"
+	"*(page auto-generated from PowerShell script by convert-ps2md.ps1 as of $now)*"
 } catch {
 	"⚠️ ERROR: $($Error[0]) (at script line $($_.InvocationInfo.ScriptLineNumber))"
         exit 1
