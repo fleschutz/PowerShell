@@ -162,6 +162,6 @@ try {
 	[System.Console]::Beep($Notes.F, $Duration.HALF)
 	exit 0 # success
 } catch {
-	"⚠️ ERROR: $($Error[0]) (script line $($_.InvocationInfo.ScriptLineNumber))"
+	"⚠️ ERROR: $($Error[0]) (at script line $($_.InvocationInfo.ScriptLineNumber))"
 	exit 1
 }

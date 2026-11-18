@@ -30,6 +30,6 @@ try {
 	}
 	throw "No Danish text-to-speech voice found - please install one"
 } catch {
-	"⚠️ ERROR: $($Error[0]) (script line $($_.InvocationInfo.ScriptLineNumber))"
+	"⚠️ ERROR: $($Error[0]) (at script line $($_.InvocationInfo.ScriptLineNumber))"
 	exit 1
 }
