@@ -172,12 +172,13 @@ Want to use the PowerShell scripts everywhere on the command-line? Then you need
 
 * Naming scheme `<verb>-<object>[-<detail>].ps1` for the filename, e.g. *new-symlink.ps1*. Official approved verbs can be found here: [https://learn.microsoft.com/en-us/powershell/scripting/developer/cmdlet/approved-verbs-for-windows-powershell-commands](https://learn.microsoft.com/en-us/powershell/scripting/developer/cmdlet/approved-verbs-for-windows-powershell-commands)
 * **UTF-8 BOM** file encoding to support Unicode characters in your script.
-* A **synopsis block** (comment-based help) at script begin which contains: `.SYNOPSIS`, `.DESCRIPTION`, `.PARAMETER`, `.EXAMPLE`, `.LINK`, and `.NOTES`.
-* Add the **requirements** for your script, e.g. `#Requires -RunAsAdministrator`, or `#Requires -Version 5`
-* Check the **command-line parameters** first, otherwise ask the user for input.
+* **Synopsis block** (a comment-based help) at script begin containing: `.SYNOPSIS`, `.DESCRIPTION`, `.PARAMETER`, `.EXAMPLE`, `.LINK`, and `.NOTES`.
+* **Requirements** listed at script begin, e.g. `#Requires -RunAsAdministrator`, or `#Requires -Version 5`
 * **No secrets** like passwords, keys, PC names, client names, sensitive information of any sort. Use parameters instead!
-* Use **Set-StrictMode -Version Latest** to enable additional error checking.
-* Use **lowerCamelCase** to name variables/functions/etc to improve readability.
+* **Set-StrictMode -Version Latest** to enable additional error checking.
+* Check the **command-line parameters** first, otherwise ask the user for input.
+* **lowerCamelCase** to name variables/functions/etc to improve readability.
+* **Announce** steps in advance with an output line, e.g. "Step 2 - Copying files..."
 * Set execute file permissions for Linux: **chmod a+rx <filename>**
 * On success exit with error code 0 (**exit 0**), otherwise print the error with keyword **ERROR:** (to support log parsers) and exit the error code (mostly 1)
  </details>
