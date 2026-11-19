@@ -105,8 +105,8 @@
  
 <details><summary>How to execute PowerShell scripts in Jenkins?</summary>
  
-1. **Install the Jenkins plugin** *"PowerShell plugin"* from https://plugins.jenkins.io/ (the plugin uses PowerShell.exe on Windows and pwsh on Linux).
-2. **Add or reference your PowerShell scripts in the Jenkins jobs or in your Jenkinsfiles.**
+1. **Install the Jenkins plugin** *"PowerShell plugin"* from https://plugins.jenkins.io/. The plugin uses PowerShell.exe on Windows and pwsh on Linux.
+2. **Add the script content to your Jenkins job or reference the script it in your Jenkinsfile.**
 </details>
 
 
