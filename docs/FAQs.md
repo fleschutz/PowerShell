@@ -171,7 +171,7 @@ Want to use the PowerShell scripts everywhere on the command-line? Then you need
 **Good scripts are both user-friendly and platform-independent. I recommend as a starting point:**
 
 * Naming scheme `<verb>-<object>[-<detail>].ps1` for the filename, e.g. *new-symlink.ps1*. Official approved verbs can be found here: [https://learn.microsoft.com/en-us/powershell/scripting/developer/cmdlet/approved-verbs-for-windows-powershell-commands](https://learn.microsoft.com/en-us/powershell/scripting/developer/cmdlet/approved-verbs-for-windows-powershell-commands)
-* File encoding **UTF-8 BOM** to support Unicode characters in your script.
+* **UTF-8 BOM** file encoding to support Unicode characters in your script.
 * A **synopsis block** (comment-based help) at script begin which contains: `.SYNOPSIS`, `.DESCRIPTION`, `.PARAMETER`, `.EXAMPLE`, `.LINK`, and `.NOTES`.
 * Add the **requirements** for your script, e.g. `#Requires -RunAsAdministrator`, or `#Requires -Version 5`
 * Check the **command-line parameters** first, otherwise ask the user for input.
