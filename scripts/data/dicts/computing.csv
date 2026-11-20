@@ -2253,9 +2253,9 @@ SAS,serial-attached SCSI
 SASID,Self-Scanned Amorphous Silicon Integrated Display
 SAX,Simple API for XML
 SBAs,search-based applications
-SBC,session border controller
+SBC,Session Border Controller
 SBIR,Small Business Innovative Research
-SBOM,Software bill of materials
+SBOM,Software Bill of Materials
 SBR,skill-based routing
 SC,"sunk cost, supply chain"
 SCA,service-component architecture
@@ -2263,9 +2263,9 @@ SCADA,Supervisory Control And Data Acquisition
 SCC,Supply Chain Council
 SCCP,Signalling Connection Control Part
 SCE,supply chain execution
-SCEM,supply chain event management
-SCI,serial communications interface
-SCL,spam confidence level
+SCEM,Supply Chain Event Management
+SCI,Serial Communications Interface
+SCL,Spam Confidence Level
 SCM,Supply Chain Management
 SCOR,Supply Chain Operations Reference model
 SCORM,Shareable Content Object Reference Model
@@ -2275,7 +2275,7 @@ SCSA,Signal Computing System Architecture
 SCSI,Small Computer System Interface 
 SCSIe,SCSI Express
 SCTP,Stream Control Transmission Protocol
-SCV,supply chain visibility
+SCV,Supply Chain Visibility
 SD2,Sound Designer II
 SDA,Smart Data Access
 SDARS,Satellite Digital Audio Radio Service
@@ -2393,18 +2393,19 @@ SP1,Service Pack 1
 SPAC,special purpose acquisition company
 SPARC,Scalable Processor Architecture
 SPC,Statistical Process Control
-SPD,Serial presence detect
+SPD,Serial Presence Detect
+SPDX,System Package Data Exchange (specification)
 SPEC,Standard Performance Evaluation Corporation
 SPF,Sender Policy Framework
 SPI,serial peripheral interface
 SPICE,Software Process Improvement and Capability dEtermination
 SPID,Service Profile Identifier
-SPIF,sales performance incentive fund
-SPIT,spam over Internet telephony
-SPM,sales performance management
+SPIF,Sales Performance Incentive Fund
+SPIT,SPam over Internet Telephony
+SPM,Sales Performance Management
 SPM,Standard Process Modules
 SPML,Services Provisioning Markup Language
-SPOF,single point of failure
+SPOF,Single Point Of Failure
 spool,simultaneous peripheral operations online
 SPS,Standard Procurement System
 SPX,Sequenced Packet Exchange
