@@ -5,6 +5,8 @@ Mega Collection of PowerShell Scripts
 
 **[Download](https://github.com/fleschutz/PowerShell/releases) | [PowerShell FAQs](docs/FAQs.md) | [PowerShell Cheat Sheet](docs/cheat-sheet.md) | [PowerShell Documentation](https://docs.microsoft.com/en-us/powershell)**
 
+NOTE: On Nov 17, 2026 Microsoft announced: [PowerShell 7 is coming to Windows](https://devblogs.microsoft.com/powershell/powershell-7-coming-to-windows/). So PowerShell 7 and PowerShell 7 scripts will be THE standard from 2027 on!
+
 🔊 Scripts for Audio & Voice 
 -----------------------------
 
