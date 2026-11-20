@@ -57,11 +57,12 @@
 
 <details><summary>Which PowerShell version to use?</summary>
 
-* **2.0 and lower** are out-dated and will be removed in newer Windows releases.
-* **5.1** is preinstalled on Windows 10 and Windows 11 and the standard one at the moment.
-* **7.7.0** is the latest as of Nov 2026, but needs to be installed manually. However, [PowerShell 7 is coming to Windows!](https://devblogs.microsoft.com/powershell/powershell-7-coming-to-windows/)
-* See the **Version History** for details at: https://github.com/PowerShell/PowerShell/releases
-* **NOTE:** It's recommended that scripts specify the required version, e.g.: `#Requires -Version 5`. This also helps to identify out-dated scripts.  
+* **2.0 and lower** are out-dated and have been removed from Windows 11 on.
+* **5.1** is preinstalled on Windows 10 and 11 and currently the standard.
+* **7.7.0** is the latest (in Nov 2026), but needs to be installed manually.
+* On Nov 17, 2026 Microsoft announced: [PowerShell 7 is coming to Windows!](https://devblogs.microsoft.com/powershell/powershell-7-coming-to-windows/). That's a big deal: PowerShell 7 and PowerShell 7 scripts will be THE standard on Linux, MacOs, and Windows from 2027 on!
+* The **Version History** including all details can be found here: https://github.com/PowerShell/PowerShell/releases
+* **NOTE:** It's strongly recommended to specify the required version in scripts, e.g.: `#Requires -Version 5`. This also helps to identify out-dated scripts.  
 </details>
 
 <details><summary>How to safely use PowerShell scripts?</summary>
