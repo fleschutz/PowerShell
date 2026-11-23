@@ -8,7 +8,7 @@
         Specifies the path to the directory tree to remove
 .EXAMPLE
         PS> ./remove-dir.ps1 C:\Temp
-	⏳ Removing directory C:\Temp and subfolder... (please wait)
+	⏳ Removing directory C:\Temp and all subfolders... (please wait)
 	✅ Directory C:\Temp\ removed in 9s.
 .LINK
         https://github.com/fleschutz/PowerShell
@@ -24,7 +24,7 @@ try {
 	$stopWatch = [system.diagnostics.stopwatch]::startNew()
 	if (!(Test-Path "$path" -pathType container)) { throw "Cannot access directory at: '$path'" }
 
-	"⏳ Removing directory $path and subfolder... (please wait)"
+	"⏳ Removing directory $path and all subfolders... (please wait)"
 	$lastExitCode = 0
 	Remove-Item -force -recurse -confirm:$false $path
 	if ($lastExitCode -ne 0) { throw "'Remove-Item $path' failed with exit code $lastExitCode" }
