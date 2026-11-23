@@ -2,12 +2,12 @@
 .SYNOPSIS
 	Creates a new file 
 .DESCRIPTION
-	This PowerShell script creates a new file from a template.
+	This PowerShell script creates a new file from a template located in the data/templates subfolder.
 .PARAMETER path
 	Specifies the path and the new filename.
 .EXAMPLE
 	PS> ./new-file.ps1 my.txt
-	✅ Created new 'my.txt' from .txt template in 0s.
+	✅ Created a new 'my.txt' file in 0s (from data/templates/new.txt)
 .LINK
 	https://github.com/fleschutz/PowerShell
 .NOTES
@@ -31,9 +31,9 @@ try {
 	Copy-Item $templateFile "$path"
 
 	[int]$elapsed = $stopWatch.Elapsed.TotalSeconds
-	"✅ Created new '$path' from .$suffix template in $($elapsed)s."
+	"✅ Created a new '$path' file in $($elapsed)s (from data/templates/new.$suffix)"
 	exit 0 # success
 } catch {
-	"⚠️ ERROR: $($Error[0]) (script line $($_.InvocationInfo.ScriptLineNumber))"
+	"⚠️ ERROR: $($Error[0]) (at script line $($_.InvocationInfo.ScriptLineNumber))"
 	exit 1
 }
