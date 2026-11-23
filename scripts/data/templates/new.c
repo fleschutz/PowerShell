@@ -1,7 +1,8 @@
-// This source code does ...
+// Source code in C
 #include <stdio.h>
 
-int main() {
-	printf("Hello World\n");
+int main(void)
+{
+	printf("Hello, World.\n");
 	return 0;
 }
