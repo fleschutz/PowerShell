@@ -3,8 +3,6 @@ Mega Collection of PowerShell Scripts
 
 **Contains 600+ free and stand-alone PowerShell scripts for Linux, macOS, and Windows. Useful on the command-line (CLI), for remote control via SSH, for automation (e.g. on startup/shutdown/login/logoff/daily/hourly or via AutoHotkey/GitHub Actions/[GUI](gui/README.md)/Jenkins/[voice commands](https://github.com/fleschutz/talk2windows)), for context menus, or simply to learn PowerShell. All scripts are located in the 📁[scripts](scripts/) subfolder and support Unicode for a modern console like *Windows Terminal*.**
 
-NOTE: Microsoft has announced: [PowerShell 7 is coming to Windows!](https://devblogs.microsoft.com/powershell/powershell-7-coming-to-windows/)
-
 **[Download](https://github.com/fleschutz/PowerShell/releases) | [PowerShell FAQs](docs/FAQs.md) | [PowerShell Cheat Sheet](docs/cheat-sheet.md) | [PowerShell Documentation](https://docs.microsoft.com/en-us/powershell)**
 
 
