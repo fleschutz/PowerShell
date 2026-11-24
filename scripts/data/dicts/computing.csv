@@ -993,10 +993,11 @@ EPG,electronic program guide
 ePHI,electronic protected health information
 EPIC,Electronic Privacy Information Center
 EPIC,Explicitly Parallel Instruction Computing
-EPOD,electronic publishing on demand
-EPOP,Ethernet point-of-presence
+EPOD,Electronic Publishing On Demand
+EPOP,Ethernet Point-Of-Presence
 EPP/ECP,Enhanced Parallel Port/Enhanced Capability Port
-EPR,endpoint reference
+EPR,EndPoint Reference
+EPSS,Exploit Prediction Scoring System
 ERA,Electronic Remittance Advice
 ERC,Engineering Reseach Center
 ERD,or ER diagram entity-relationship diagram
@@ -1102,6 +1103,7 @@ FIP,Factory Information Protocol
 FIP,Fair Information Practices
 FIPS,Federal Information Processing Standards
 FIS,Factory Information System
+FIRST,Forum of Incident Response and Security Teams
 FISMA,Federal Information Security Management Act 
 FITCE,Federation of Telecommunications Engineers of the European Community
 FLAC,Free Lossless Audio Codec
