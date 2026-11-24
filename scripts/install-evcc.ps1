@@ -21,7 +21,7 @@ try {
 		& sudo apt install -y debian-keyring debian-archive-keyring apt-transport-https curl
 
 		"⏳ (2/6) Installing keyring for evcc..."
-		& curl -1sLf 'https://dl.cloudsmith.io/public/evcc/stable/setup.deb.sh' | sudo -E bash
+		& curl -1sLf 'https://dl.evcc.io/public/evcc/stable/setup.deb.sh' | sudo -E bash
 
 		"⏳ (3/6) Updating packet list...."
 		& sudo apt update
