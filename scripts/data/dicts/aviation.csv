@@ -401,7 +401,7 @@ LITAS,Low Intensity Two Colour Approach System
 LL,Lower Limit
 LMUK,Lockheed Martin UK
 LNAV,Lateral Navigation
-LOD,Level of Detail
+LOC,Loss of Control
 LTA,Lower Traffic Area
 LTG,Lightning (METAR code)
 LUAW,Line up and wait
@@ -410,6 +410,7 @@ LVP,Low Visibility Procedures
 LWINS,Lightweight Inertial Navigation System
 LZSO,Landing Zone Safety Officer
 MA,Missed Approach (IFR)
+MAC,Mid-Air Collision
 MAFFS,Modular Airborne Fire Fighting System
 MATS,Malta Air Traffic Services
 MEA,Minimum En-route Altitude
