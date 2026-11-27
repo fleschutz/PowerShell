@@ -3274,7 +3274,8 @@ NIG,Niger (IOC and FIFA trigram,but not ISO 3166)
 NIH,National Institutes of Health,Not Invented Here
 NIIN,National Item Identification Number
 NIMA,National Imagery and Mapping Agency (became NGA)
-NIMBY,Not In My Back Yard (See NOME)
+NIMB,Not in My Backyard
+NIMBY,Not In My Back Yard
 NIMG,Not In My Generation
 NIMH,National Institute of Medical Herbalists,National Institute of Mental Health
 NiMH,nickel metal hydride ("Ni" is the chemical symbol for nickel)
@@ -3331,7 +3332,6 @@ NOLF,Navy OutLying Field
 NOM,Novus Ordo Missae or New Ordinary of the Mass (sometimes abbreviated to simply "NO")
 NoMBO,"Non-mine,Mine-like Bottom Object"
 NOME,Not on Mars Either
-NOME,Not on Mars Either (see NIMBY)
 NOPA,"National Office Products Alliance,National Office Products Association"
 NOR,Norway (ISO 3166 trigram)
 NORCECA,North,Central America and Caribbean Volleyball Confederation
